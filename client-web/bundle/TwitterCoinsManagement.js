@@ -191,6 +191,30 @@
                         );
                     };
         },
+        782642: (e, a, t) => {
+            t.d(a, { p: () => i });
+            var n = t(202784),
+                r = t(125363),
+                l = t(601576);
+            const i = () => {
+                    const e = (0, r.I0)(),
+                        a = o(),
+                        t = n.useRef(null);
+                    return (
+                        n.useEffect(() => () => clearTimeout(t.current), [a]),
+                        n.useCallback(
+                            (n) => {
+                                e((0, l.fz)(n)), (t.current = setTimeout(() => a(), 3e3));
+                            },
+                            [e, a],
+                        )
+                    );
+                },
+                o = () => {
+                    const e = (0, r.I0)();
+                    return n.useCallback(() => e((0, l.RS)()), [e]);
+                };
+        },
         97882: (e, a, t) => {
             t.d(a, { T: () => l, x: () => i });
             var n = t(111677),
@@ -691,4 +715,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.cb223c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.49121f3a.js.map

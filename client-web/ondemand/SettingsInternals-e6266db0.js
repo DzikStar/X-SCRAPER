@@ -68,11 +68,18 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -120,11 +127,11 @@
                     return { text: s ? E(a) : u(a), onClick: s ? r : t, Icon: s ? n.default : o.default };
                 },
                 _ = a().h59f52ee,
-                p = a().eea0cbee,
-                h = a().i29533b3,
+                h = a().eea0cbee,
+                p = a().i29533b3,
                 m = a().h129c3c3,
-                f = (e) => (e ? ((e) => h({ screenName: e }))(e) : _),
-                I = (e) => (e ? ((e) => m({ screenName: e }))(e) : p);
+                f = (e) => (e ? ((e) => p({ screenName: e }))(e) : _),
+                I = (e) => (e ? ((e) => m({ screenName: e }))(e) : h);
         },
         417714: (e, t, r) => {
             r.d(t, { l: () => l });
@@ -289,7 +296,7 @@
         296196: (e, t, r) => {
             r.r(t),
                 r.d(t, {
-                    GLOBAL_STATE_KEY: () => p.Yf,
+                    GLOBAL_STATE_KEY: () => h.Yf,
                     acceptConversation: () => n.tF,
                     addAvatarMedia: () => n._D,
                     addParticipants: () => n.ck,
@@ -383,23 +390,23 @@
                 E = r(312771),
                 S = r(390387),
                 _ = r(849585),
-                p = r(147143);
-            const h = "rweb.recentDMSearches",
+                h = r(147143);
+            const p = "rweb.recentDMSearches",
                 m = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
                 f = "rweb/directMessages/ADD_RECENT_SEARCHES",
                 I = (e) => ({ payload: e, type: f }),
-                C = "rweb/directMessages/CLEAR_SEARCH_CACHE",
-                A = () => ({ type: C }),
-                T = "rweb/directMessages/CLEAR_RECENT_SEARCH",
-                D = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
+                D = "rweb/directMessages/CLEAR_SEARCH_CACHE",
+                A = () => ({ type: D }),
+                C = "rweb/directMessages/CLEAR_RECENT_SEARCH",
+                T = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
                 y = { searchResults: {}, recentSearches: [] };
             function O(e = y, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case f:
-                    case T:
+                    case C:
                         return { ...e, recentSearches: t.payload || [] };
-                    case D:
+                    case T:
                         return { ...e, recentSearches: [] };
                     case m.REQUEST: {
                         const { fetchNextPage: r, preserveResults: s, query: a } = t.meta || {},
@@ -424,16 +431,16 @@
                             l = { ...e.searchResults, [r]: { ...i, lastCursor: s?.cursor, conversationIds: d, error: n, fetchStatus: E.ZP.LOADED } };
                         return { ...e, searchResults: l };
                     }
-                    case C:
+                    case D:
                     case _.t:
                         return { ...y, recentSearches: e.recentSearches };
                     default:
                         return e;
                 }
             }
-            const g = (e) => e[p.Yf].search?.recentSearches,
+            const g = (e) => e[h.Yf].search?.recentSearches,
                 w = (e, t) => {
-                    const r = e[p.Yf].search?.searchResults;
+                    const r = e[h.Yf].search?.searchResults;
                     if (r) {
                         const e = r[t];
                         return e?.fetchStatus || E.ZP.NONE;
@@ -441,7 +448,7 @@
                     return E.ZP.NONE;
                 },
                 P = (e, t) => {
-                    const r = e[p.Yf].search?.searchResults;
+                    const r = e[h.Yf].search?.searchResults;
                     return (r && r[t]?.conversationIds) || [];
                 },
                 R =
@@ -451,49 +458,49 @@
                             { fetchNextPage: n, preserveResults: o, query: c } = e || {},
                             E = { query: c, search_type: "conversations", request_id: d().v4() },
                             S = ((e, t) => {
-                                const r = e[p.Yf].search?.searchResults;
+                                const r = e[h.Yf].search?.searchResults;
                                 return (r && r[t]?.lastCursor) || null;
                             })(a, c),
-                            _ = ((e) => e[p.Yf].search?.searchResults)(a),
-                            h = _ ? _[c] : void 0,
+                            _ = ((e) => e[h.Yf].search?.searchResults)(a),
+                            p = _ ? _[c] : void 0,
                             f = !!S;
                         S && c && n && (E.cursor = S);
                         const I = u._O(t, { params: E, request: s.withEndpoint(l.Z).search }),
-                            C = (e) => {
+                            D = (e) => {
                                 if (e && e.result) {
                                     const { conversations: t } = e.result,
                                         { users: r } = e.entities;
                                     return t && Object.values(t).forEach((e) => (e.isSearchResult = !0)), t ? (0, i.s0)({ conversations: t, users: r }) : null;
                                 }
                             };
-                        return !h || h?.error || o || (n && f) ? I({ actionTypes: m, context: "SEARCH", meta: { query: E.query, cursor: E.cursor, preserveResults: o, fetchNextPage: n } }, C) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: h }, meta: { query: c, cursor: S } }), Promise.resolve());
+                        return !p || p?.error || o || (n && f) ? I({ actionTypes: m, context: "SEARCH", meta: { query: E.query, cursor: E.cursor, preserveResults: o, fetchNextPage: n } }, D) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: p }, meta: { query: c, cursor: S } }), Promise.resolve());
                     },
                 v =
                     (e) =>
                     (t, r, { featureSwitches: s, userPersistence: a }) => {
                         const n = s.getNumberValue("dm_inbox_search_max_recent_searches_stored");
-                        return a.get(h).then((r) => {
+                        return a.get(p).then((r) => {
                             const s = r?.recentSearches || [];
-                            return !s.includes(e) && s.push(e), s.length > n && s.shift(), t(I(s)), a.set(h, { recentSearches: s });
+                            return !s.includes(e) && s.push(e), s.length > n && s.shift(), t(I(s)), a.set(p, { recentSearches: s });
                         });
                     },
                 U =
                     (e) =>
                     (t, r, { userPersistence: s }) =>
-                        s.get(h).then((r) => {
+                        s.get(p).then((r) => {
                             const a = r?.recentSearches || [];
-                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: T }), s.set(h, { recentSearches: a });
+                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: C }), s.set(p, { recentSearches: a });
                         }),
                 L =
                     () =>
-                    (e, t, { userPersistence: r }) => (e({ type: D }), r.set(h, { recentSearches: [] }));
+                    (e, t, { userPersistence: r }) => (e({ type: T }), r.set(p, { recentSearches: [] }));
             a.Z.register(
-                { [p.Yf]: O },
+                { [h.Yf]: O },
                 () =>
                     (e, t, { userPersistence: r }) =>
                         S.Qb(t())
                             ? Promise.resolve(
-                                  r.get(h).then((t) => {
+                                  r.get(p).then((t) => {
                                       const r = t?.recentSearches;
                                       r && e(I(r));
                                   }),
@@ -502,7 +509,7 @@
             );
             var N = r(923965);
             const F = (0, s.UY)({ conversations: n.ZP, entries: o.ZP, inbox: i.ZP, search: O, updates: N.ZP });
-            a.Z.register({ [p.Yf]: F });
+            a.Z.register({ [h.Yf]: F });
             const b = F;
         },
         806528: (e, t, r) => {
@@ -518,11 +525,11 @@
                 u = (e) => ({ payload: e, type: l }),
                 E = "rweb/geoLocation/SET_POSITION",
                 S = () => (e, t) =>
-                    p()
+                    h()
                         .then((t) => e({ payload: t, type: E }))
                         .catch((t) => (e(u(a.S.denied)), Promise.reject(t))),
                 _ = () => (e, t) => (d(t()) ? Promise.resolve() : e(S())),
-                p = () =>
+                h = () =>
                     new Promise((e, t) =>
                         navigator.geolocation.getCurrentPosition((t) => {
                             const r = { timestamp: t.timestamp, coords: { latitude: t.coords.latitude, longitude: t.coords.longitude, altitude: t.coords.altitude, accuracy: t.coords.accuracy, altitudeAccuracy: t.coords.altitudeAccuracy, heading: t.coords.heading, speed: t.coords.speed } };
@@ -549,7 +556,7 @@
                 a = Object.freeze({ PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 });
         },
         642721: (e, t, r) => {
-            r.d(t, { $o: () => w, AE: () => F, Lk: () => T, R_: () => b, UD: () => C, UK: () => D, WW: () => I, ck: () => Z, fd: () => f, kM: () => N, mz: () => A, xZ: () => L });
+            r.d(t, { $o: () => w, AE: () => F, Lk: () => C, R_: () => b, UD: () => D, UK: () => T, WW: () => I, ck: () => M, fd: () => f, kM: () => N, mz: () => A, xZ: () => L });
             var s = r(745978),
                 a = r(499627),
                 n = r(917799),
@@ -562,9 +569,9 @@
                 E = n.dg(l, "FETCH_MUTED_KEYWORDS"),
                 S = n.dg(l, "ADD_MUTED_KEYWORD"),
                 _ = n.dg(l, "DELETE_MUTED_KEYWORD"),
-                p = n.dg(l, "UPDATE_MUTED_KEYWORD"),
-                h = { defaultOptions: { id: "", keyword: "", mute_notifications_option: "following", mute_home_timeline: !0, time_duration: "forever" }, defaultOptionsLoaded: !1, discouragedKeywords: [], fetchStatus: o.ZP.NONE, mutedKeywords: [] };
-            function m(e = h, t) {
+                h = n.dg(l, "UPDATE_MUTED_KEYWORD"),
+                p = { defaultOptions: { id: "", keyword: "", mute_notifications_option: "following", mute_home_timeline: !0, time_duration: "forever" }, defaultOptionsLoaded: !1, discouragedKeywords: [], fetchStatus: o.ZP.NONE, mutedKeywords: [] };
+            function m(e = p, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case O:
@@ -578,7 +585,7 @@
                         return { ...e, mutedKeywords: t.payload.muted_keywords, error: null, fetchStatus: o.ZP.LOADED };
                     case S.SUCCESS:
                     case _.SUCCESS:
-                    case p.SUCCESS:
+                    case h.SUCCESS:
                         return { ...e, mutedKeywords: t.payload.muted_keywords };
                     case R:
                         return { ...e, defaultOptions: t.payload.default_options };
@@ -590,10 +597,10 @@
             }
             const f = (e) => e[i].discouragedKeywords,
                 I = (e) => e[i].mutedKeywords,
-                C = (e) => e[i].fetchStatus,
+                D = (e) => e[i].fetchStatus,
                 A = (e, t) => e[i].mutedKeywords.find((e) => e.id === t),
-                T = (e, t) => e[i].defaultOptions,
-                D =
+                C = (e, t) => e[i].defaultOptions,
+                T =
                     () =>
                     (e, t, { userPersistence: r }) =>
                         f(t()).length
@@ -608,7 +615,7 @@
                         n._O(t, { params: e, request: a.withEndpoint(s.Z).fetchDiscouragedKeywords })({ actionTypes: u, context: "FETCH_DISCOURAGED_KEYWORDS" }),
                 O = `${l}/INIT_DISCOURAGED_KEYWORDS`,
                 g = (e) => ({ type: O, payload: { discouraged_keywords: e } }),
-                w = () => (e, t) => (C(t()) === o.ZP.LOADED ? Promise.resolve() : e(P())),
+                w = () => (e, t) => (D(t()) === o.ZP.LOADED ? Promise.resolve() : e(P())),
                 P =
                     (e) =>
                     (t, r, { api: a }) =>
@@ -641,14 +648,14 @@
                         const o = { ids: e.join(",") };
                         return n._O(t, { params: o, request: a.withEndpoint(s.Z).deleteMutedKeyword })({ actionTypes: _, context: "ACTION_DELETE_MUTED_KEYWORD", meta: { ids: e } });
                     },
-                Z =
+                M =
                     (e) =>
                     (t, r, { api: a }) =>
-                        n._O(t, { params: e, request: a.withEndpoint(s.Z).updateMutedKeyword })({ actionTypes: p, context: "ACTION_UPDATE_MUTED_KEYWORD", meta: { params: e } });
+                        n._O(t, { params: e, request: a.withEndpoint(s.Z).updateMutedKeyword })({ actionTypes: h, context: "ACTION_UPDATE_MUTED_KEYWORD", meta: { params: e } });
             a.Z.register({ [i]: m });
         },
         450476: (e, t, r) => {
-            r.d(t, { Ob: () => p, SW: () => f, UD: () => _, Y0: () => m, ky: () => S });
+            r.d(t, { Ob: () => h, SW: () => f, UD: () => _, Y0: () => m, ky: () => S });
             var s = r(226395),
                 a = r(499627),
                 n = r(917799),
@@ -680,11 +687,11 @@
             });
             const S = (e) => e[i].notificationFilters,
                 _ = (e) => e[i].fetchStatus,
-                p =
+                h =
                     () =>
                     (e, t, { api: r, userPersistence: s }) =>
-                        _(t()) === o.ZP.LOADED ? Promise.resolve() : s.get(c, 24e4).then((t) => e(t ? { payload: t, type: d.SUCCESS } : h())),
-                h =
+                        _(t()) === o.ZP.LOADED ? Promise.resolve() : s.get(c, 24e4).then((t) => e(t ? { payload: t, type: d.SUCCESS } : p())),
+                p =
                     () =>
                     (e, t, { api: r, userPersistence: a }) =>
                         n
@@ -708,7 +715,7 @@
                             });
         },
         694180: (e, t, r) => {
-            r.d(t, { cM: () => h, dS: () => p, iY: () => m });
+            r.d(t, { cM: () => p, dS: () => h, iY: () => m });
             var s = r(370751),
                 a = r(399896),
                 n = r(663550),
@@ -721,7 +728,7 @@
                 E = (0, s.Z)([n.AJ.TREND_VIEW, n.AJ.SPOTLIGHT_IMPRESSION]),
                 S = (e) => ({ payload: { eventKey: e }, type: l });
             const _ = (e, t) => !!e.promotedContent[t],
-                p =
+                h =
                     (e) =>
                     (t, r, { api: s }) => {
                         const { event: n, impression_id: o, promoted_trend_id: c } = e,
@@ -732,16 +739,16 @@
                             if (!t && E.has(n)) return [S(l)];
                         });
                     },
-                h =
+                p =
                     ({ disclosureType: e, itemId: t, itemType: r, params: s }) =>
                     (n, o, { api: c }) => {
                         const { event: l, impression_id: E } = s,
-                            p = `${r}-${t ?? "undefined"}-${E ?? "undefined"}-${l ?? "undefined"}`;
-                        if (u.has(l) && _(o(), p)) return Promise.resolve();
-                        const h = e && "earned" === e.toLowerCase() ? "1" : null,
-                            m = { ...s, earned: h, epoch_ms: Date.now() };
+                            h = `${r}-${t ?? "undefined"}-${E ?? "undefined"}-${l ?? "undefined"}`;
+                        if (u.has(l) && _(o(), h)) return Promise.resolve();
+                        const p = e && "earned" === e.toLowerCase() ? "1" : null,
+                            m = { ...s, earned: p, epoch_ms: Date.now() };
                         return (0, i._O)(n, { params: m, request: c.withEndpoint(a.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: m }, (e, t) => {
-                            if (!t && u.has(l)) return [S(p)];
+                            if (!t && u.has(l)) return [S(h)];
                         });
                     },
                 m =
@@ -761,7 +768,7 @@
             });
         },
         204744: (e, t, r) => {
-            r.d(t, { DI: () => C, H$: () => E, OB: () => A, Ww: () => l, YB: () => u, hj: () => h, qF: () => f });
+            r.d(t, { DI: () => D, H$: () => E, OB: () => A, Ww: () => l, YB: () => u, hj: () => p, qF: () => f });
             r(901951);
             var s = r(499627),
                 a = r(390387);
@@ -799,11 +806,11 @@
                 E = (e) => e[n].fetched,
                 S = "rweb/recentSearches/INIT_FROM_CACHE",
                 _ = (e) => ({ type: S, payload: e }),
-                p = "rweb/recentSearches/REMOVE_QUERY",
-                h =
+                h = "rweb/recentSearches/REMOVE_QUERY",
+                p =
                     (e) =>
                     (t, r, { userPersistence: s }) => {
-                        t({ payload: e, type: p });
+                        t({ payload: e, type: h });
                         const n = r(),
                             o = l(n);
                         return (0, a.Qb)(n) ? t(i(o)) : Promise.resolve();
@@ -818,7 +825,7 @@
                         return (0, a.Qb)(s) ? e(i(n)) : Promise.resolve();
                     },
                 I = "rweb/recentSearches/ADD_QUERY",
-                C =
+                D =
                     (e) =>
                     (t, r, { userPersistence: s }) => {
                         t({ payload: e, type: I });
@@ -855,7 +862,7 @@
                                 s = r ? c(r, e.recentSearches) : [];
                             return s.length > 49 && s.splice(49, 1), r && s.unshift(r), { ...e, recentSearches: s };
                         }
-                        case p: {
+                        case h: {
                             const r = t.payload,
                                 s = r ? c(r, e.recentSearches) : [];
                             return { ...e, recentSearches: s };
@@ -904,7 +911,7 @@
                     });
         },
         123072: (e, t, r) => {
-            r.d(t, { AW: () => h, UD: () => _, bP: () => p, xN: () => S });
+            r.d(t, { AW: () => p, UD: () => _, bP: () => h, xN: () => S });
             var s = r(816776),
                 a = r(499627),
                 n = r(917799),
@@ -936,14 +943,14 @@
             });
             const S = (e) => e[c].searchSettings,
                 _ = (e) => e[c].fetchStatus,
-                p =
+                h =
                     () =>
                     (e, t, { api: r }) => {
                         const a = i.x0(t());
                         if (!a) return Promise.resolve(e({ type: l.FAILURE }));
                         return n._O(e, { params: { userId: a }, request: r.withEndpoint(s.Z).fetch })({ actionTypes: l, context: "FETCH_SEARCH_SETTINGS" });
                     },
-                h =
+                p =
                     (e, t) =>
                     (r, a, { api: o }) => {
                         const c = a(),
@@ -959,7 +966,7 @@
             const s = Object.freeze({ Filtering: "optInFiltering", Blocking: "optInBlocking" });
         },
         715684: (e, t, r) => {
-            r.d(t, { Fm: () => g, TG: () => C, UD: () => T, _1: () => O, dj: () => D, kz: () => A });
+            r.d(t, { Fm: () => g, TG: () => D, UD: () => C, _1: () => O, dj: () => T, kz: () => A });
             var s = r(24949),
                 a = r(697926),
                 n = r(744531),
@@ -972,8 +979,8 @@
                 E = c.dg(u, "FETCH_SESSIONS"),
                 S = c.dg(u, "REVOKE_SESSION"),
                 _ = c.dg(u, "REVOKE_ALL_SESSIONS"),
-                p = { fetchStatus: d.ZP.NONE, sessions: {} };
-            function h(e = p, t) {
+                h = { fetchStatus: d.ZP.NONE, sessions: {} };
+            function p(e = h, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case E.REQUEST:
@@ -988,16 +995,16 @@
                         return e;
                 }
             }
-            i.Z.register({ [l]: h });
+            i.Z.register({ [l]: p });
             function m(e) {
                 return { token: e.hashed_token, name: e.device_name, summary: e.device_summary, icon_type: e.icon_type, is_current_session: e.is_current_session, location: e.location, last_seen_time_ms: e.last_seen_at };
             }
             const f = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(m) : []),
                 I = (e) => e[l].sessions,
-                C = (0, s.P1)(I, (e) => Object.values(e)),
+                D = (0, s.P1)(I, (e) => Object.values(e)),
                 A = (e, t) => I(e)[t],
-                T = (e) => e[l].fetchStatus,
-                D = (e) => (t, r) => (T(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
+                C = (e) => e[l].fetchStatus,
+                T = (e) => (t, r) => (C(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
                 y =
                     (e) =>
                     (t, r, { api: s }) =>
@@ -1016,7 +1023,7 @@
                             .then(() => y()(t, r, { api: s }));
         },
         948985: (e, t, r) => {
-            r.d(t, { $q: () => I, UD: () => C, wz: () => A, zw: () => T });
+            r.d(t, { $q: () => I, UD: () => D, wz: () => A, zw: () => C });
             var s = r(24949),
                 a = r(166852),
                 n = r(226395),
@@ -1029,8 +1036,8 @@
             const E = `${r(291020).Y}/applications`,
                 S = `rweb/${E}`,
                 _ = i.dg(S, "FETCH_APPLICATIONS"),
-                p = { fetchStatus: c.ZP.NONE };
-            function h(e = p, t) {
+                h = { fetchStatus: c.ZP.NONE };
+            function p(e = h, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case _.REQUEST:
@@ -1043,7 +1050,7 @@
                         return e;
                 }
             }
-            o.Z.register({ [E]: h });
+            o.Z.register({ [E]: p });
             const m = {
                     revokeApplication: {
                         reducer: (e, t) => {
@@ -1083,15 +1090,15 @@
                     (e, t) => Object.values(e).filter((e) => e.app_id === t),
                 ));
             const I = u.Z.register(f),
-                C = (e) => e[E].fetchStatus,
-                A = (e) => (t, r) => (C(r()) === c.ZP.LOADED ? Promise.resolve() : t(D(e))),
-                T =
+                D = (e) => e[E].fetchStatus,
+                A = (e) => (t, r) => (D(r()) === c.ZP.LOADED ? Promise.resolve() : t(T(e))),
+                C =
                     (e, t, r) =>
                     (r, s, { api: a }) => {
                         const n = s();
-                        return f.selectAppsById(n, e).length > 0 ? Promise.resolve() : r(D(t));
+                        return f.selectAppsById(n, e).length > 0 ? Promise.resolve() : r(T(t));
                     },
-                D =
+                T =
                     (e) =>
                     (t, r, { api: s }) =>
                         i._O(t, { params: e, request: s.withEndpoint(n.Z).fetchApplications })({ actionTypes: _, context: "FETCH_APPLICATIONS" }, (e, t) => {
@@ -1136,7 +1143,7 @@
                         (0, n._O)(e, { request: r.withEndpoint(s.Z).fetchNewBackupCode })({ actionTypes: c, context: "FETCH_BACKUP_CODE" });
         },
         116635: (e, t, r) => {
-            r.d(t, { Af: () => E, UD: () => S, d0: () => _, iv: () => p });
+            r.d(t, { Af: () => E, UD: () => S, d0: () => _, iv: () => h });
             var s = r(871176),
                 a = r(499627),
                 n = r(917799),
@@ -1164,13 +1171,13 @@
             });
             const E = (e) => e[c].contacts,
                 S = (e) => e[c].fetchStatus,
-                _ = (e) => (t, r) => (S(r()) === o.ZP.LOADED ? Promise.resolve() : t(h(e))),
-                p = (e) => (t, r) => {
+                _ = (e) => (t, r) => (S(r()) === o.ZP.LOADED ? Promise.resolve() : t(p(e))),
+                h = (e) => (t, r) => {
                     const s = r(),
                         a = ((e) => e[c].cursor)(s);
-                    return a && S(s) === o.ZP.LOADED ? t(h({ ...e, cursor: a })) : Promise.resolve();
+                    return a && S(s) === o.ZP.LOADED ? t(p({ ...e, cursor: a })) : Promise.resolve();
                 },
-                h =
+                p =
                     (e) =>
                     (t, r, { api: a }) =>
                         (0, n._O)(t, { request: a.withEndpoint(s.Z).fetchAddressBook, params: e })({ actionTypes: l, context: "FETCH_ADDRESS_BOOK" });
@@ -1198,7 +1205,7 @@
                         );
         },
         823647: (e, t, r) => {
-            r.d(t, { UD: () => _, jW: () => p, uc: () => h, zJ: () => f });
+            r.d(t, { UD: () => _, jW: () => h, uc: () => p, zJ: () => f });
             var s = r(327202),
                 a = r(499627),
                 n = r(917799),
@@ -1226,8 +1233,8 @@
             }
             a.Z.register({ [c]: S });
             const _ = (e) => e[c].fetchStatus,
-                p = (e) => e[c].emailSettings,
-                h = () => (e, t) => (_(t()) === o.ZP.LOADED ? Promise.resolve() : e(m())),
+                h = (e) => e[c].emailSettings,
+                p = () => (e, t) => (_(t()) === o.ZP.LOADED ? Promise.resolve() : e(m())),
                 m =
                     () =>
                     (e, t, { api: r }) => {
@@ -1242,7 +1249,7 @@
                     };
         },
         446418: (e, t, r) => {
-            r.d(t, { DG: () => C, DY: () => f, J2: () => I, UD: () => h, aX: () => A, vi: () => p, zl: () => m });
+            r.d(t, { DG: () => D, DY: () => f, J2: () => I, UD: () => p, aX: () => A, vi: () => h, zl: () => m });
             var s = r(226395),
                 a = r(499627),
                 n = r(917799),
@@ -1301,8 +1308,8 @@
                     }
                 },
             });
-            const p = (e) => e[c],
-                h = (e) => e[c].fetchStatus,
+            const h = (e) => e[c],
+                p = (e) => e[c].fetchStatus,
                 m =
                     () =>
                     (e, t, { api: r, featureSwitches: a }) => {
@@ -1317,14 +1324,14 @@
                     ({ securityKeyId: e }) =>
                     (t, r, { api: a }) =>
                         (0, n._O)(t, { request: a.withEndpoint(s.Z).disable2FAMethod, params: { methodId: e } })({ actionTypes: u, context: "DELETE_SECURITY_KEY", meta: { securityKeyId: e } }),
-                C =
+                D =
                     () =>
                     (e, t, { api: r }) =>
                         (0, n.AB)(e, { request: r.withEndpoint(s.Z).disable2FA })({ actionTypes: E, context: "DISABLE_LOGIN_VERIFICATION" }),
                 A =
                     ({ method: e }) =>
                     (t, r, { api: a }) => {
-                        const o = p(r()).methods[e];
+                        const o = h(r()).methods[e];
                         return (0, n._O)(t, { request: a.withEndpoint(s.Z).disable2FAMethod, params: { methodId: o } })({ actionTypes: S, context: "DISABLE_LOGIN_VERIFICATION_METHOD", meta: { method: e } });
                     };
         },
@@ -1457,4 +1464,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.8c1e27fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.d40bbf0a.js.map

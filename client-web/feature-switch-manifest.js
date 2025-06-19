@@ -2750,6 +2750,7 @@ var manifest = {
         subscriptions_feature_premium_people_search: { name: "subscriptions_feature_premium_people_search", type: "string" },
         subscriptions_feature_create_premium_content: { name: "subscriptions_feature_create_premium_content", type: "boolean", defaultValue: !1 },
         subscriptions_feature_offline_video: { name: "subscriptions_feature_offline_video", type: "string" },
+        subscriptions_feature_handle_marketplace: { name: "subscriptions_feature_handle_marketplace", type: "string" },
         subscriptions_feature_organization_affiliates: { name: "subscriptions_feature_organization_affiliates", type: "boolean", defaultValue: !0 },
         subscriptions_feature_organization_x_hiring: { name: "subscriptions_feature_organization_x_hiring", type: "boolean", defaultValue: !0 },
         subscriptions_gifting_premium_enabled: { name: "subscriptions_gifting_premium_enabled", type: "string" },

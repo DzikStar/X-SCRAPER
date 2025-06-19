@@ -832,7 +832,7 @@
         381904: (e, t, n) => {
             n.d(t, { e: () => q, Y: () => K });
             var o = {};
-            n.r(o), n.d(o, { buildDockConfig: () => Z, useBuildPlayerProps: () => D });
+            n.r(o), n.d(o, { buildDockConfig: () => D, useBuildPlayerProps: () => Z });
             var s = {};
             n.r(s), n.d(s, { buildDockConfig: () => R, buildPlayerProps: () => N });
             n(571372);
@@ -897,7 +897,7 @@
                 const [t] = e.activeItem;
                 return t ? { activeItem: t } : null;
             }
-            function D() {
+            function Z() {
                 const e = E.Z.useSetPlayerApi(),
                     t = E.Z.useSetPlayerState(),
                     n = (0, p.oR)();
@@ -925,7 +925,7 @@
                     [e, t, n],
                 );
             }
-            function Z({ audioDockProps: e, commonApi: t, context: n, history: o }) {
+            function D({ audioDockProps: e, commonApi: t, context: n, history: o }) {
                 const s = A(n);
                 if (!s) return null;
                 const { activeItem: i } = s;
@@ -968,7 +968,7 @@
                     { isMuted: f, isPlaying: m, isSeeking: h, volume: y } = i;
                 let g = 0,
                     b = 0;
-                F(p.tweets, ({ endMs: e, i: t }) => {
+                H(p.tweets, ({ endMs: e, i: t }) => {
                     t === u - 1 && (b = e), (g = e);
                 });
                 const k = (d && d.id_str === a.contentId && a.currentTimeMs) || 0,
@@ -994,7 +994,7 @@
                     onMuteToggle: t.toggleMute,
                     onVolumeChange: t.setVolume,
                     onSeek: function (e) {
-                        F(p.tweets, ({ durationMs: n, endMs: o, i: r, startMs: i, tweet: a }) => {
+                        H(p.tweets, ({ durationMs: n, endMs: o, i: r, startMs: i, tweet: a }) => {
                             if (e >= i && e <= o) {
                                 const o = e - i;
                                 if (r === u) {
@@ -1007,7 +1007,7 @@
                     },
                 });
             }
-            function F(e, t) {
+            function H(e, t) {
                 let n = 0;
                 for (let o = 0; o < e.length; o++) {
                     const s = e[o],
@@ -1017,7 +1017,7 @@
                     n = i;
                 }
             }
-            const H = { default: { buildDockConfig: l.Z }, space: o, voiceTweet: s };
+            const F = { default: { buildDockConfig: l.Z }, space: o, voiceTweet: s };
             function K() {
                 const e = r.useRef({}),
                     { history: t } = r.useContext(u.rC),
@@ -1068,7 +1068,7 @@
                         },
                     },
                     S = { load: _, clear: y, currentTrack: h, toggleMute: k, togglePlayback: g, setVolume: v },
-                    w = H.space.useBuildPlayerProps();
+                    w = F.space.useBuildPlayerProps();
                 return {
                     activeItem: o,
                     load: _,
@@ -1076,14 +1076,14 @@
                     player: { api: i, state: d, guests: f, currentTrack: h, toggleMute: k, togglePlayback: g },
                     config: {
                         dock: function (e) {
-                            if (!o) return H.default.buildDockConfig();
+                            if (!o) return F.default.buildDockConfig();
                             switch (o.type) {
                                 case b.W.space:
-                                    return H.space.buildDockConfig({ history: t, context: n, commonApi: S, audioDockProps: e });
+                                    return F.space.buildDockConfig({ history: t, context: n, commonApi: S, audioDockProps: e });
                                 case b.W.voiceTweet:
-                                    return H.voiceTweet.buildDockConfig({ history: t, context: n, commonApi: S, audioDockProps: e });
+                                    return F.voiceTweet.buildDockConfig({ history: t, context: n, commonApi: S, audioDockProps: e });
                                 default:
-                                    return H.default.buildDockConfig();
+                                    return F.default.buildDockConfig();
                             }
                         },
                         player: function () {
@@ -1103,7 +1103,7 @@
                                     t = w({ context: n, commonApi: S });
                                     break;
                                 case b.W.voiceTweet:
-                                    t = H.voiceTweet.buildPlayerProps({ context: n, commonApi: S });
+                                    t = F.voiceTweet.buildPlayerProps({ context: n, commonApi: S });
                                     break;
                                 default:
                                     throw new Error(`[AudioContext:Player] unhandled active item type [${o.type}]`);
@@ -1243,15 +1243,15 @@
                         }
                         return { fetch: c, get: u, subscribe: l, unsubscribe: d, audioContext: n, report: m() };
                     })(e, w),
-                    { audioContext: A, report: D, subscribe: Z, unsubscribe: L } = E,
+                    { audioContext: A, report: Z, subscribe: D, unsubscribe: L } = E,
                     M = E.get(),
                     x = M.data,
                     O = x?.state;
                 const N = { NotStarted: O === r.default.SpaceState.NotStarted, PrePublished: O === r.default.SpaceState.PrePublished, Running: O === r.default.SpaceState.Running, TimedOut: O === r.default.SpaceState.TimedOut, Ended: O === r.default.SpaceState.Ended, Canceled: O === r.default.SpaceState.Canceled, loaded: !!x || M.status === b.ZP.FAILED, loading: M.status === b.ZP.LOADING, error: M.status === b.ZP.FAILED && M.error, joined: A.activeItem?.type === _.W.space && A.activeItem?.id === e, recording: !1, joinable: !x?.disallow_join, replayable: !1, clippable: Boolean(x?.is_space_available_for_clipping), superFollowersOnly: x?.narrow_cast_space_type === r.default.AudienceEnum.superFollowersOnly };
                 x?.is_space_available_for_replay && (N.Running ? (N.recording = !0) : (N.Ended || N.TimedOut) && (N.replayable = !0));
                 const R = (0, m.E3)(x),
-                    F = (0, m.Hi)(x),
-                    H = (0, u.S)({ analytics: n, details: { broadcast_id: e, host_id: x?.host?.user_id, host_periscope_id: x?.host?.periscope_user_id, audio_space_start_type: x?.scheduled_start ? "scheduled" : "adhoc", audio_space_narrow_cast_type: F, audio_space_recording_type: R, state: O, is_logged_in: i } });
+                    H = (0, m.Hi)(x),
+                    F = (0, u.S)({ analytics: n, details: { broadcast_id: e, host_id: x?.host?.user_id, host_periscope_id: x?.host?.periscope_user_id, audio_space_start_type: x?.scheduled_start ? "scheduled" : "adhoc", audio_space_narrow_cast_type: H, audio_space_recording_type: R, state: O, is_logged_in: i } });
                 function K() {
                     const e = x?.title?.trim(),
                         t = x?.host?.display_name;
@@ -1263,7 +1263,7 @@
                         hashtags: function () {
                             return (0, c.Z)(K()).map((e) => `#${e}`);
                         },
-                        scribe: H,
+                        scribe: F,
                         state: function () {
                             const { StateEnum: e } = r.default;
                             let t;
@@ -1311,9 +1311,9 @@
                     audioContext: A,
                     utils: q,
                     handlers: {
-                        subscribe: Z,
+                        subscribe: D,
                         unsubscribe: L,
-                        report: D,
+                        report: Z,
                         join: function ({ forceReplay: t, isAnonymous: n, origin: o, role: s } = {}) {
                             x && x.media_key && N.joinable && (0, m.j)({ contentType: x?.content_type, id: e, mediaKey: x.media_key, isLive: N.Running, isReplay: t || N.replayable, isAnonymous: !!n, isSuperFollowersOnly: N.superFollowersOnly, addToast: a, scribe: q.scribe, started_at: x?.started_at, origin: o, role: s, clearAndLoadSpace: J, resetExpandedDockStore: U });
                         },
@@ -1536,8 +1536,8 @@
                 )
                     return null;
                 const A = Boolean(i && r && f),
-                    D = !A && T,
-                    Z = A ? s.W.SPACE : s.W.NORMAL;
+                    Z = !A && T,
+                    D = A ? s.W.SPACE : s.W.NORMAL;
                 const L = (function (e, t) {
                         const n = e.analytics.contextualScribeNamespace,
                             o = { isAnonymous: e.isAnonymous, enableShortFormCompleteLogging: t.isTrue("responsive_web_video_pcomplete_enabled"), periscopeAuthToken: h.w.proxsee.authToken(), scribeContext: { ...n }, userType: h.w.proxsee.userType() },
@@ -1554,17 +1554,17 @@
                         basePlayerClass: P,
                         httpClient: _,
                         onApiReady: function (t) {
-                            D || t.play(), "function" == typeof k && k(t);
+                            Z || t.play(), "function" == typeof k && k(t);
                             const n = p?.video_info?.duration_millis;
                             "number" == typeof n && "number" == typeof w && t.scrubToFraction(w / n);
                             const o = {
                                 onAutoPlayRequest: function () {
-                                    D && t.playPreview();
+                                    Z && t.playPreview();
                                 },
                                 onPauseRequest: function () {
                                     e.disablePlaybackCoordination || t.pause();
                                 },
-                                playbackPriority: Z,
+                                playbackPriority: D,
                                 canAutoplay: Boolean(T),
                                 isLooping: Boolean(d),
                             };
@@ -1611,7 +1611,7 @@
             n(202784);
             const o = (0, n(523561).Z)({
                 loader: () =>
-                    Promise.all([n.e("icons.4"), n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"), n.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"), n.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"), n.e("loader.AudioOnlyVideoPlayer")])
+                    Promise.all([n.e("icons.0"), n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-9749c7d2"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-87e5a2e7"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-44a55f38"), n.e("loader.AudioOnlyVideoPlayer")])
                         .then(n.bind(n, 744130))
                         .then((e) => ({ default: e.__DANGEROUS_IMPORT__ })),
             });
@@ -1697,7 +1697,7 @@
                     {
                         link: n,
                         onPress: () => {
-                            e(Z.viewDetailsClick);
+                            e(D.viewDetailsClick);
                         },
                         type: "onMediaOutlined",
                     },
@@ -1712,7 +1712,7 @@
                                     color: "whiteOnColor",
                                     link: `/${t}`,
                                     onPress: () => {
-                                        e(Z.viewProfileClick);
+                                        e(D.viewProfileClick);
                                     },
                                     weight: "bold",
                                 },
@@ -1723,8 +1723,8 @@
                     return s.createElement(y().I18NFormatMessage, { $i18n: "dc3a6d2d", screenName: o.screenName }, n.profileLink);
                 },
                 A = { followHost: y().a1a0e6d8, unfollowHost: y().a3c4e396, viewProfile: y().j58e7b00, viewDetails: y().eca4e32a },
-                D = { follow: A.followHost, following: "", unfollow: A.unfollowHost },
-                Z = { followHostClick: ":audiospace:audiospace_card:speaker_list:button:click", toastImpression: ":audiospace::follow_host:toast:impression", viewProfileClick: ":audiospace::follow_host:toast:click", viewDetailsClick: ":audiospace:audiospace_card:speaker_list:button:click" },
+                Z = { follow: A.followHost, following: "", unfollow: A.unfollowHost },
+                D = { followHostClick: ":audiospace:audiospace_card:speaker_list:button:click", toastImpression: ":audiospace::follow_host:toast:impression", viewProfileClick: ":audiospace::follow_host:toast:click", viewDetailsClick: ":audiospace:audiospace_card:speaker_list:button:click" },
                 L = P(function (e) {
                     const { scribe: t, spaceId: n, user: o } = e,
                         r = d()(C, o),
@@ -1737,17 +1737,17 @@
                               null,
                               s.createElement(v.Z, { displayMode: k.BH.follow, userFullName: r.core?.name ?? "", userId: r.rest_id }, (n) =>
                                   s.createElement(p.Z, {
-                                      buttonText: D,
+                                      buttonText: Z,
                                       isFollowing: r.relationship_perspectives?.following || !1,
                                       onFollow: n(() =>
                                           (() => {
-                                              t(Z.followHostClick);
+                                              t(D.followHostClick);
                                               const { addToast: n, createLocalApiErrorHandler: o, follow: s } = e;
                                               r &&
                                                   s(r.rest_id, {}).then(
                                                       () => {
                                                           const e = r.core?.screen_name;
-                                                          e && (t(Z.toastImpression), n({ text: E(t, e) }));
+                                                          e && (t(D.toastImpression), n({ text: E(t, e) }));
                                                       },
                                                       o({ showToast: !0 }),
                                                   );
@@ -1773,4 +1773,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.ca6e3d5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.5ca443ba.js.map

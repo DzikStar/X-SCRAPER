@@ -146,13 +146,13 @@
                 _ = { title: c().a01d5a7c, body: ({ screenName: e }) => i.createElement(c().I18NFormatMessage, { $i18n: "cc70dc63", screenName: e }, i.createElement(n.ZP, { link: u }, c().i859a9d4)), button: c().f277e94a },
                 P = { title: c().b2311b70, body: c().cab51f93, button: void 0 },
                 b = Object.freeze({ [d]: m, [p]: _, [y]: P }),
-                g = (e, t) => ("function" == typeof e ? (t && e({ screenName: t })) || void 0 : e),
-                E = l.default.create((e) => ({ style: { alignItems: "center", paddingHorizontal: e.spaces.space40, paddingVertical: `calc(2 * ${e.spaces.space40})` } })),
+                E = (e, t) => ("function" == typeof e ? (t && e({ screenName: t })) || void 0 : e),
+                g = l.default.create((e) => ({ style: { alignItems: "center", paddingHorizontal: e.spaces.space40, paddingVertical: `calc(2 * ${e.spaces.space40})` } })),
                 I = ({ onPress: e, screenName: t, type: a }) => {
                     const { body: s, button: n, title: l } = b[a],
-                        o = g(l, t),
-                        c = g(s, t);
-                    return i.createElement(r.Z, { buttonText: n, header: o, message: c, onButtonPress: e, style: E.style });
+                        o = E(l, t),
+                        c = E(s, t);
+                    return i.createElement(r.Z, { buttonText: n, header: o, message: c, onButtonPress: e, style: g.style });
                 };
         },
         849376: (e, t, a) => {
@@ -239,6 +239,12 @@
                 s = a(272175);
             const n = ({ description: e }) => i.createElement(s.ql, null, i.createElement("meta", { content: e, name: "description" }));
         },
+        349035: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var i = a(202784),
+                s = a(272175);
+            const n = (0, a(500002).ZP)(({ staticContext: e, status: t = 404 }) => (e && (e.statusCode = t), i.createElement(s.ql, null, i.createElement("meta", { content: "noindex, nofollow", name: "robots" }))));
+        },
         898948: (e, t, a) => {
             a.d(t, { Z: () => r });
             var i = a(202784),
@@ -305,4 +311,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-1347f5f8.2303896a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-1347f5f8.e63cf5fa.js.map

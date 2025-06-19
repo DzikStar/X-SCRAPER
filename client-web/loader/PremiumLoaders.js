@@ -1,15 +1,15 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.PremiumLoaders", "icons/IconChevronRight-js", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["loader.PremiumLoaders"],
     {
-        96768: (e, a, r) => {
-            r.d(a, { Z: () => s });
-            var n,
+        96768: (e, r, n) => {
+            n.d(r, { Z: () => s });
+            var a,
                 t,
                 i,
                 l = {
                     fragment: {
-                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "origin_product" }), (t = { defaultValue: null, kind: "LocalArgument", name: "return_url" })],
+                        argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "origin_product" }), (t = { defaultValue: null, kind: "LocalArgument", name: "return_url" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "useCreateStripePortalUrlMutation",
@@ -33,22 +33,22 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [t, n], kind: "Operation", name: "useCreateStripePortalUrlMutation", selections: i },
+                    operation: { argumentDefinitions: [t, a], kind: "Operation", name: "useCreateStripePortalUrlMutation", selections: i },
                     params: { id: "vymd-xe7b364mogIF1CoQQ", metadata: {}, name: "useCreateStripePortalUrlMutation", operationKind: "mutation", text: null },
                 };
             l.hash = "dd6e427b3b50f257ac31f7815dc841c2";
             const s = l;
         },
-        587510: (e, a, r) => {
-            r.d(a, { Z: () => g });
-            var n,
+        587510: (e, r, n) => {
+            n.d(r, { Z: () => _ });
+            var a,
                 t,
                 i,
                 l,
                 s,
                 o,
-                c,
                 u,
+                c,
                 d,
                 m,
                 p = {
@@ -62,7 +62,7 @@
                                 kind: "RequiredField",
                                 field: {
                                     alias: "viewer",
-                                    args: (n = [{ kind: "Literal", name: "s", value: "4721" }]),
+                                    args: (a = [{ kind: "Literal", name: "s", value: "4721" }]),
                                     concreteType: "Viewer",
                                     kind: "LinkedField",
                                     name: "viewer_v2",
@@ -119,7 +119,7 @@
                                                                             ],
                                                                             storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing","SuperFollows"])',
                                                                         }),
-                                                                        (c = {
+                                                                        (u = {
                                                                             alias: null,
                                                                             args: i,
                                                                             concreteType: "VerifiedUserProfile",
@@ -132,7 +132,7 @@
                                                                             ],
                                                                             storageKey: 'verified_user_profiles(verified_program_types:["AdRevenueSharing","SuperFollows"])',
                                                                         }),
-                                                                        { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified", storageKey: null }), { kind: "RequiredField", field: (d = { alias: null, args: [{ kind: "Literal", name: "view", value: { verification_flow: "CreatorIdv" } }], kind: "ScalarField", name: "identity_verification_status", storageKey: 'identity_verification_status(view:{"verification_flow":"CreatorIdv"})' }), action: "THROW" }], storageKey: null },
+                                                                        { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified", storageKey: null }), { kind: "RequiredField", field: (d = { alias: null, args: [{ kind: "Literal", name: "view", value: { verification_flow: "CreatorIdv" } }], kind: "ScalarField", name: "identity_verification_status", storageKey: 'identity_verification_status(view:{"verification_flow":"CreatorIdv"})' }), action: "THROW" }], storageKey: null },
                                                                     ],
                                                                     type: "User",
                                                                     abstractKey: null,
@@ -164,7 +164,7 @@
                         selections: [
                             {
                                 alias: "viewer",
-                                args: n,
+                                args: a,
                                 concreteType: "Viewer",
                                 kind: "LinkedField",
                                 name: "viewer_v2",
@@ -187,7 +187,7 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [t, l, s, c, { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [u, d, (m = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null }, m], type: "User", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [t, l, s, u, { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [c, d, (m = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null }, m], type: "User", abstractKey: null },
                                                 ],
                                                 storageKey: null,
                                             },
@@ -203,229 +203,180 @@
                     params: { id: "5UotOgLcDoewXEKftGMiuQ", metadata: {}, name: "useMonetizationCreatorSettingsQuery", operationKind: "query", text: null },
                 };
             p.hash = "abb37d549229c3883d2d50c7a98d76a1";
-            const g = p;
+            const _ = p;
         },
-        380327: (e, a, r) => {
-            r.d(a, { Z: () => c });
-            var n,
+        380327: (e, r, n) => {
+            n.d(r, { Z: () => u });
+            var a,
                 t,
                 i,
                 l,
                 s,
                 o = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useTotalAdCampaignsForUserQuery", selections: [{ alias: null, args: (n = [{ kind: "Literal", name: "cursor", value: "" }]), concreteType: "AdvertiserAccountsSlice", kind: "LinkedField", name: "quick_promote_advertiser_accounts", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdvertiserAccount", kind: "LinkedField", name: "items", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: (i = [{ kind: "Literal", name: "filter_by_delivered_in_interval", value: { end_date: "2025-12-31", start_date: "2024-01-01" } }]), concreteType: "CampaignView", kind: "LinkedField", name: "campaigns", plural: !1, selections: [(l = { alias: null, args: null, kind: "ScalarField", name: "total_count", storageKey: null })], storageKey: 'campaigns(filter_by_delivered_in_interval:{"end_date":"2025-12-31","start_date":"2024-01-01"})' }], storageKey: null }], storageKey: 'quick_promote_advertiser_accounts(cursor:"")' }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useTotalAdCampaignsForUserQuery", selections: [{ alias: null, args: (a = [{ kind: "Literal", name: "cursor", value: "" }]), concreteType: "AdvertiserAccountsSlice", kind: "LinkedField", name: "quick_promote_advertiser_accounts", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdvertiserAccount", kind: "LinkedField", name: "items", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: (i = [{ kind: "Literal", name: "filter_by_delivered_in_interval", value: { end_date: "2025-12-31", start_date: "2024-01-01" } }]), concreteType: "CampaignView", kind: "LinkedField", name: "campaigns", plural: !1, selections: [(l = { alias: null, args: null, kind: "ScalarField", name: "total_count", storageKey: null })], storageKey: 'campaigns(filter_by_delivered_in_interval:{"end_date":"2025-12-31","start_date":"2024-01-01"})' }], storageKey: null }], storageKey: 'quick_promote_advertiser_accounts(cursor:"")' }], type: "Query", abstractKey: null },
                     kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "useTotalAdCampaignsForUserQuery", selections: [{ alias: null, args: n, concreteType: "AdvertiserAccountsSlice", kind: "LinkedField", name: "quick_promote_advertiser_accounts", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdvertiserAccount", kind: "LinkedField", name: "items", plural: !0, selections: [t, { alias: null, args: i, concreteType: "CampaignView", kind: "LinkedField", name: "campaigns", plural: !1, selections: [l, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: 'campaigns(filter_by_delivered_in_interval:{"end_date":"2025-12-31","start_date":"2024-01-01"})' }, s], storageKey: null }], storageKey: 'quick_promote_advertiser_accounts(cursor:"")' }] },
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "useTotalAdCampaignsForUserQuery", selections: [{ alias: null, args: a, concreteType: "AdvertiserAccountsSlice", kind: "LinkedField", name: "quick_promote_advertiser_accounts", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdvertiserAccount", kind: "LinkedField", name: "items", plural: !0, selections: [t, { alias: null, args: i, concreteType: "CampaignView", kind: "LinkedField", name: "campaigns", plural: !1, selections: [l, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: 'campaigns(filter_by_delivered_in_interval:{"end_date":"2025-12-31","start_date":"2024-01-01"})' }, s], storageKey: null }], storageKey: 'quick_promote_advertiser_accounts(cursor:"")' }] },
                     params: { id: "UFD9D7pipG78WFN0SJviDg", metadata: {}, name: "useTotalAdCampaignsForUserQuery", operationKind: "query", text: null },
                 };
             o.hash = "200a7af54c9c3ed7753c0291e92e188f";
-            const c = o;
+            const u = o;
         },
-        919057: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => c });
-            var n = r(202784),
-                t = r(443781),
-                i = r(736063),
-                l = r(918588),
-                s = r(727828);
+        919057: (e, r, n) => {
+            n.r(r), n.d(r, { default: () => u });
+            var a = n(202784),
+                t = n(443781),
+                i = n(736063),
+                l = n(918588),
+                s = n(727828);
             function o() {
                 const { featureSwitches: e } = (0, t.QZ)();
-                return (0, l.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? n.createElement(s.Z, { testID: "vo-ad-credit-upsell", variant: "VerifiedOrgsAdCredit" }) : null;
+                return (0, l.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? a.createElement(s.Z, { testID: "vo-ad-credit-upsell", variant: "VerifiedOrgsAdCredit" }) : null;
             }
-            const c = function () {
-                return n.createElement(i.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, n.createElement(o, null));
+            const u = function () {
+                return a.createElement(i.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, a.createElement(o, null));
             };
         },
-        127939: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => I });
-            var n = r(202784),
-                t = r(400752),
-                i = r(325686),
-                l = r(811176),
-                s = r(420740),
-                o = r(682830),
-                c = r(392237),
-                u = r(111677),
-                d = r.n(u),
-                m = r(841972),
-                p = r(647174),
-                g = r(530813),
-                _ = r(420182),
-                y = r(443781),
-                f = r(56851),
-                v = r(736063),
-                k = r(88660),
-                h = r(39182),
-                b = r(313129),
-                w = r(738124),
-                Z = r(643426),
-                F = r(293115),
-                S = r(725405),
-                E = r(620243);
-            const C = d().f0701753,
-                K = d().j7d0e836,
-                T = d().d227d19e,
-                L = { isCollapsed: !1 },
-                P = ({ dismiss: e }) => {
-                    (0, h.E)();
-                    const { featureSwitches: a } = (0, y.QZ)(),
-                        r = a.isTrue("rweb_sourcemap_migration"),
-                        o = (0, S.Z)(),
-                        [c, u] = n.useState(!1),
-                        d = (0, t.Dv)(_.lZ),
-                        [v, k] = n.useState(null);
-                    n.useEffect(() => {
-                        d.get("rweb.premiumModule").then((e) => {
-                            k(e || L);
-                        });
-                    }, [d]);
-                    let F = "/premium/module";
-                    v?.isCollapsed && (F += "?collapsed=true");
-                    const E = (0, b._3)(F, { refreshTimeMs: 1e4 });
-                    if (!v) return null;
-                    if (!E) return n.createElement(f.Z, null);
-                    const P = () => {
-                            u(!c);
-                        },
-                        R = () => {
-                            e(), o.scribeAction("dismiss"), u(!1);
-                        },
-                        A = () => {
-                            o.scribeAction(v.isCollapsed ? "expand" : "collapse");
-                            const e = { isCollapsed: !v.isCollapsed };
-                            k(e), d.set("rweb.premiumModule", e), u(!1);
-                        };
-                    return E.jfResponse?.root.value
-                        ? n.createElement(
-                              Z.b.Provider,
-                              { value: { dismiss: P } },
-                              n.createElement(
-                                  i.Z,
-                                  { style: r ? V.containerRedesign : V.container },
-                                  c
-                                      ? n.createElement(l.Z, {
-                                            items: [
-                                                { onClick: A, text: v.isCollapsed ? K : T, Icon: v.isCollapsed ? m.default : p.default },
-                                                { onClick: R, text: C({ number: 7 }), Icon: g.default },
-                                            ],
-                                            onCloseRequested: P,
-                                        })
-                                      : null,
-                                  E.jfResponse?.root.value ? n.createElement(w.Z, { payload: E.jfResponse.root.value }) : null,
-                              ),
-                          )
-                        : n.createElement(s.Z, { onRetry: null, title: E.error });
+        127939: (e, r, n) => {
+            n.r(r), n.d(r, { default: () => k });
+            var a = n(202784),
+                t = n(400752),
+                i = n(420740),
+                l = n(682830),
+                s = (n(111677), n(420182)),
+                o = n(443781),
+                u = n(736063),
+                c = n(88660),
+                d = n(39182),
+                m = n(293115),
+                p = n(725405),
+                _ = n(620243);
+            const g = { isCollapsed: !1 },
+                f = ({ dismiss: e }) => {
+                    (0, d.E)();
+                    const { featureSwitches: r } = (0, o.QZ)(),
+                        [n, l] = (r.isTrue("rweb_sourcemap_migration"), (0, p.Z)(), a.useState(!1)),
+                        u = (0, t.Dv)(s.lZ),
+                        [c, m] = a.useState(null);
+                    if (
+                        (a.useEffect(() => {
+                            u.get("rweb.premiumModule").then((e) => {
+                                m(e || g);
+                            });
+                        }, [u]),
+                        !c)
+                    )
+                        return null;
+                    return a.createElement(i.Z, { onRetry: null });
                 },
-                R = () => {
-                    const { dismiss: e, impress: a, shouldShow: r } = (0, k.ZP)({ key: "premium_module_v1", dismissForMsec: k.IZ, showForMsec: null, reappearAfterMsec: null });
+                y = () => {
+                    const { dismiss: e, impress: r, shouldShow: n } = (0, c.ZP)({ key: "premium_module_v1", dismissForMsec: c.IZ, showForMsec: null, reappearAfterMsec: null });
                     return (
-                        n.useEffect(() => {
-                            a();
-                        }, [a]),
-                        r ? n.createElement(F.nO, { namespace: { component: "premium_module " } }, n.createElement(P, { dismiss: e })) : null
+                        a.useEffect(() => {
+                            r();
+                        }, [r]),
+                        n ? a.createElement(m.nO, { namespace: { component: "premium_module " } }, a.createElement(f, { dismiss: e })) : null
                     );
                 },
-                A = () => {
-                    const { verified_program_application_status: e, verified_program_eligibility: a, verified_user_profiles: r } = (0, E.Z)(),
-                        { featureSwitches: t } = (0, y.QZ)(),
-                        i = r?.ad_revenue_sharing_user_profile?.is_active;
-                    if ((i || (0 === a?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && t.isTrue("subscriptions_premium_module_enabled")) return n.createElement(n.Suspense, { fallback: n.createElement(o.J, null) }, n.createElement(R, null));
+                v = () => {
+                    const { verified_program_application_status: e, verified_program_eligibility: r, verified_user_profiles: n } = (0, _.Z)(),
+                        { featureSwitches: t } = (0, o.QZ)(),
+                        i = n?.ad_revenue_sharing_user_profile?.is_active;
+                    if ((i || (0 === r?.ad_revenue_sharing_eligibility?.length && "NotStarted" === e?.ad_revenue_sharing_application_status)) && t.isTrue("subscriptions_premium_module_enabled")) return a.createElement(a.Suspense, { fallback: a.createElement(l.J, null) }, a.createElement(y, null));
                 },
-                I = () => {
-                    const { featureSwitches: e, userClaims: a } = (0, y.QZ)();
-                    return a.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? n.createElement(v.H, { errorConfig: { context: "premium_module" } }, n.createElement(A, null)) : null;
-                },
-                V = c.default.create((e) => ({ container: { marginBottom: e.spaces.space12 }, containerRedesign: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 } }));
+                k = () => {
+                    const { featureSwitches: e, userClaims: r } = (0, o.QZ)();
+                    return r.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? a.createElement(u.H, { errorConfig: { context: "premium_module" } }, a.createElement(v, null)) : null;
+                };
         },
-        293605: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => F });
-            var n = r(202784),
-                t = r(325686),
-                i = r(731708),
-                l = r(154003),
-                s = r(392237),
-                o = r(111677),
-                c = r.n(o),
-                u = r(211971),
-                d = r(443781),
-                m = r(736063),
-                p = r(177210),
-                g = r(782826),
-                _ = r(725405),
-                y = r(199232);
-            const f = c().fbf83158,
-                v = c().jadeb4da,
-                k = c().bce3726a,
-                h = ({ entryPoint: e, originProduct: a }) => {
-                    const r = (0, _.Z)(),
-                        { origin: s } = g.ZP.get(),
-                        o = (0, p.Z)({ returnUrl: `${s}/i/profile`, originProduct: a }),
-                        c = `payment_failure_alert_card_${e}_sidebar`;
-                    n.useEffect(() => {
-                        r.scribe({ component: c, action: "impression" });
-                    }, [r, c]);
-                    const d = n.useCallback(() => {
-                        r.scribe({ component: c, action: "click", element: `payment_failure_${e}_sidebar` }), o?.();
-                    }, [o, r, c, e]);
-                    return n.createElement(t.Z, { style: Z.cardBlock, testID: "paymentCardBlock" }, n.createElement(t.Z, { style: Z.inner }, n.createElement(i.ZP, { size: "headline1", style: Z.heading, weight: "heavy" }, n.createElement(u.default, { style: Z.icon, testID: "errorIcon" }), f), n.createElement(i.ZP, { size: "body", style: Z.subheading }, v), n.createElement(l.ZP, { onClick: d, style: Z.button, type: "primaryFilled" }, k)));
+        293605: (e, r, n) => {
+            n.r(r), n.d(r, { default: () => F });
+            var a = n(202784),
+                t = n(325686),
+                i = n(731708),
+                l = n(154003),
+                s = n(392237),
+                o = n(111677),
+                u = n.n(o),
+                c = n(211971),
+                d = n(443781),
+                m = n(736063),
+                p = n(177210),
+                _ = n(782826),
+                g = n(725405),
+                f = n(199232);
+            const y = u().fbf83158,
+                v = u().jadeb4da,
+                k = u().bce3726a,
+                b = ({ entryPoint: e, originProduct: r }) => {
+                    const n = (0, g.Z)(),
+                        { origin: s } = _.ZP.get(),
+                        o = (0, p.Z)({ returnUrl: `${s}/i/profile`, originProduct: r }),
+                        u = `payment_failure_alert_card_${e}_sidebar`;
+                    a.useEffect(() => {
+                        n.scribe({ component: u, action: "impression" });
+                    }, [n, u]);
+                    const d = a.useCallback(() => {
+                        n.scribe({ component: u, action: "click", element: `payment_failure_${e}_sidebar` }), o?.();
+                    }, [o, n, u, e]);
+                    return a.createElement(t.Z, { style: h.cardBlock, testID: "paymentCardBlock" }, a.createElement(t.Z, { style: h.inner }, a.createElement(i.ZP, { size: "headline1", style: h.heading, weight: "heavy" }, a.createElement(c.default, { style: h.icon, testID: "errorIcon" }), y), a.createElement(i.ZP, { size: "body", style: h.subheading }, v), a.createElement(l.ZP, { onClick: d, style: h.button, type: "primaryFilled" }, k)));
                 },
-                b = ({ entryPoint: e }) => {
-                    const { featureSwitches: a } = (0, d.QZ)(),
-                        { hasPremiumPaymentFailure: r, hasVerifiedOrgPaymentFailure: i } = (0, y.Z)(["VerifiedOrganization", "Premium"]);
-                    return (i && a.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (r && a.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? n.createElement(t.Z, { style: Z.paddedContainer, testID: "paymentCardView" }, n.createElement(h, { entryPoint: e, originProduct: i ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
+                w = ({ entryPoint: e }) => {
+                    const { featureSwitches: r } = (0, d.QZ)(),
+                        { hasPremiumPaymentFailure: n, hasVerifiedOrgPaymentFailure: i } = (0, f.Z)(["VerifiedOrganization", "Premium"]);
+                    return (i && r.isTrue("subscriptions_management_failed_payment_profile_card_enabled")) || (n && r.isTrue("subscriptions_management_failed_payment_message_premium_enabled")) ? a.createElement(t.Z, { style: h.paddedContainer, testID: "paymentCardView" }, a.createElement(b, { entryPoint: e, originProduct: i ? "VerifiedOrganizations" : "TwitterBlue" })) : null;
                 },
-                w = ({ entryPoint: e }) => n.createElement(m.H, { errorConfig: { context: "payment_alert_card" } }, n.createElement(b, { entryPoint: e })),
-                Z = s.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.red0, borderColor: e.colors.red100, borderWidth: "1px", borderRadius: e.borderRadii.medium, overflow: "hidden" }, inner: { padding: e.spaces.space16, maxWidth: "100%", gap: e.spaces.space8 }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { marginBottom: e.spaces.space8 }, subheading: { marginBottom: e.spaces.space8 }, icon: { color: s.default.theme.colors.red500, marginEnd: e.spaces.space4 }, paddedContainer: { paddingBottom: e.spaces.space16 } })),
-                F = n.memo(w);
+                S = ({ entryPoint: e }) => a.createElement(m.H, { errorConfig: { context: "payment_alert_card" } }, a.createElement(w, { entryPoint: e })),
+                h = s.default.create((e) => ({ cardBlock: { backgroundColor: e.colors.red0, borderColor: e.colors.red100, borderWidth: "1px", borderRadius: e.borderRadii.medium, overflow: "hidden" }, inner: { padding: e.spaces.space16, maxWidth: "100%", gap: e.spaces.space8 }, button: { alignSelf: "flex-start", paddingHorizontal: 0, marginTop: e.spaces.space8 }, heading: { marginBottom: e.spaces.space8 }, subheading: { marginBottom: e.spaces.space8 }, icon: { color: s.default.theme.colors.red500, marginEnd: e.spaces.space4 }, paddedContainer: { paddingBottom: e.spaces.space16 } })),
+                F = a.memo(S);
         },
-        900285: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => K });
-            var n = r(202784),
-                t = r(325686),
-                i = r(731708),
-                l = r(154003),
-                s = r(167630),
-                o = r(392237),
-                c = r(111677),
-                u = r.n(c),
-                d = r(191796),
-                m = r(187669),
-                p = r(399398),
-                g = r(177210),
-                _ = r(337394),
-                y = r(147595),
-                f = r(811574),
-                v = r(293115),
-                k = r(725405),
-                h = r(443781);
-            const b = u().ie4f57d2,
-                w = u().h293aa52,
-                Z = u().j1923668,
-                F = u().ac7e97ee,
-                S = { PremiumBasic: u().f70c69b4, BlueVerified: u().f4cec4d2, BlueVerifiedPlus: u().f4cec4d2 },
-                E = ({ activeRestId: e }) => {
-                    const a = (0, k.Z)(),
-                        [r, o] = n.useState(!1);
+        900285: (e, r, n) => {
+            n.r(r), n.d(r, { default: () => Z });
+            var a = n(202784),
+                t = n(325686),
+                i = n(731708),
+                l = n(154003),
+                s = n(167630),
+                o = n(392237),
+                u = n(111677),
+                c = n.n(u),
+                d = n(191796),
+                m = n(187669),
+                p = n(399398),
+                _ = n(177210),
+                g = n(337394),
+                f = n(147595),
+                y = n(811574),
+                v = n(293115),
+                k = n(725405),
+                b = n(443781);
+            const w = c().ie4f57d2,
+                S = c().h293aa52,
+                h = c().j1923668,
+                F = c().ac7e97ee,
+                E = { PremiumBasic: c().f70c69b4, BlueVerified: c().f4cec4d2, BlueVerifiedPlus: c().f4cec4d2 },
+                K = ({ activeRestId: e }) => {
+                    const r = (0, k.Z)(),
+                        [n, o] = a.useState(!1);
                     (0, m.q)(() => {
-                        a.scribeAction("impression");
+                        r.scribeAction("impression");
                     });
-                    const c = (0, g.Z)({ returnUrl: `https://${window.location.host}/home`, originProduct: "TwitterBlue" }),
-                        u = _.v5.premium[e ?? ""];
-                    return n.createElement(
+                    const u = (0, _.Z)({ returnUrl: `https://${window.location.host}/home`, originProduct: "TwitterBlue" }),
+                        c = g.v5.premium[e ?? ""];
+                    return a.createElement(
                         p.g,
                         { testID: "renew-subscription-module" },
-                        n.createElement(
+                        a.createElement(
                             t.Z,
-                            { "aria-label": b, role: "complementary", style: T.root },
-                            n.createElement(i.ZP, { size: "headline1", weight: "heavy" }, w),
-                            n.createElement(i.ZP, null, Z, " ", S[u]),
-                            n.createElement(
+                            { "aria-label": w, role: "complementary", style: C.root },
+                            a.createElement(i.ZP, { size: "headline1", weight: "heavy" }, S),
+                            a.createElement(i.ZP, null, h, " ", E[c]),
+                            a.createElement(
                                 l.ZP,
                                 {
-                                    disabled: r,
-                                    icon: r ? n.createElement(s.Z, null) : n.createElement(d.default, null),
+                                    disabled: n,
+                                    icon: n ? a.createElement(s.Z, null) : a.createElement(d.default, null),
                                     onPress: () => {
-                                        a.scribeAction("click"), c?.(), o(!0);
+                                        r.scribeAction("click"), u?.(), o(!0);
                                     },
                                 },
                                 F,
@@ -433,177 +384,204 @@
                         ),
                     );
                 },
-                C = () => {
-                    const { featureSwitches: e } = (0, h.QZ)(),
-                        a = (0, f.Z)();
-                    if (!a) return null;
-                    const r = (0, y.R)(a);
-                    return r && "Stripe" === r.payment_source && "Expire" === r.state && e.isTrue("subscriptions_management_renew_module_enabled") ? n.createElement(v.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, n.createElement(E, { activeRestId: r?.product?.rest_id })) : null;
+                T = () => {
+                    const { featureSwitches: e } = (0, b.QZ)(),
+                        r = (0, y.Z)();
+                    if (!r) return null;
+                    const n = (0, f.R)(r);
+                    return n && "Stripe" === n.payment_source && "Expire" === n.state && e.isTrue("subscriptions_management_renew_module_enabled") ? a.createElement(v.nO, { namespace: { component: "renew-subscription-module", element: "renew-button" } }, a.createElement(K, { activeRestId: n?.product?.rest_id })) : null;
                 },
-                K = () => {
-                    const { featureSwitches: e, userClaims: a } = (0, h.QZ)();
-                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && a.isAnyPremiumSubscriber() && !a.isAnyVerifiedOrgOrAffiliate() ? n.createElement(C, null) : null;
+                Z = () => {
+                    const { featureSwitches: e, userClaims: r } = (0, b.QZ)();
+                    return e.isTrue("subscriptions_management_renew_module_api_enabled") && r.isAnyPremiumSubscriber() && !r.isAnyVerifiedOrgOrAffiliate() ? a.createElement(T, null) : null;
                 },
-                T = o.default.create((e) => ({ root: { position: "relative", alignItems: "flex-start", gap: 10, flexDirection: "column", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }));
+                C = o.default.create((e) => ({ root: { position: "relative", alignItems: "flex-start", gap: 10, flexDirection: "column", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } }));
         },
-        282559: (e, a, r) => {
-            r.d(a, { v: () => o });
-            r(571372);
-            var n = r(96768),
-                t = r(202784),
-                i = (r(585488), r(351743)),
-                l = r.n(i);
-            const s = n.Z,
-                o = ({ originProduct: e, returnUrl: a }) => {
-                    const [r, n] = l()(s);
+        282559: (e, r, n) => {
+            n.d(r, { v: () => o });
+            n(571372);
+            var a = n(96768),
+                t = n(202784),
+                i = (n(585488), n(351743)),
+                l = n.n(i);
+            const s = a.Z,
+                o = ({ originProduct: e, returnUrl: r }) => {
+                    const [n, a] = l()(s);
                     return [
                         t.useCallback(
                             () =>
-                                new Promise((n, t) => {
-                                    r({
-                                        variables: { return_url: a, origin_product: e },
-                                        onCompleted: ({ customerportalsession_create: e }, a) => {
-                                            const r = e?.customer_portal_session_url ?? void 0;
-                                            r ? n(r) : t(new Error("Missing portal URL"));
+                                new Promise((a, t) => {
+                                    n({
+                                        variables: { return_url: r, origin_product: e },
+                                        onCompleted: ({ customerportalsession_create: e }, r) => {
+                                            const n = e?.customer_portal_session_url ?? void 0;
+                                            n ? a(n) : t(new Error("Missing portal URL"));
                                         },
                                         onError: t,
                                     });
                                 }),
-                            [r, a, e],
+                            [n, r, e],
                         ),
-                        n,
+                        a,
                     ];
                 };
         },
-        177210: (e, a, r) => {
-            r.d(a, { Z: () => u });
-            var n = r(202784),
-                t = r(111677),
-                i = r.n(t),
-                l = r(782826),
-                s = r(282559),
-                o = r(782642);
-            const c = i().ef4602ec;
-            function u(e) {
-                const a = (0, o.p)(),
-                    [r, t] = (0, s.v)(e),
-                    i = n.useCallback(() => {
-                        r()
+        177210: (e, r, n) => {
+            n.d(r, { Z: () => c });
+            var a = n(202784),
+                t = n(111677),
+                i = n.n(t),
+                l = n(782826),
+                s = n(282559),
+                o = n(782642);
+            const u = i().ef4602ec;
+            function c(e) {
+                const r = (0, o.p)(),
+                    [n, t] = (0, s.v)(e),
+                    i = a.useCallback(() => {
+                        n()
                             .then((e) => {
                                 l.ZP.navigateTo(e);
                             })
                             .catch(() => {
-                                a({ text: c });
+                                r({ text: u });
                             });
-                    }, [r, a]);
+                    }, [n, r]);
                 return t ? void 0 : i;
             }
         },
-        147595: (e, a, r) => {
-            r.d(a, { R: () => t });
-            var n = r(337394);
-            const t = (e) => {
-                const a = e.find((e) => e.product?.rest_id && n.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Stripe" === e.payment_source),
-                    r = e.find((e) => e.product?.rest_id && n.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Twitter" !== e.payment_source && "Ads" !== e.payment_source),
-                    t = e.find((e) => e.product?.rest_id && n.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && ("Twitter" === e.payment_source || "Ads" === e.payment_source));
-                return a || r || t;
+        782642: (e, r, n) => {
+            n.d(r, { p: () => l });
+            var a = n(202784),
+                t = n(125363),
+                i = n(601576);
+            const l = () => {
+                    const e = (0, t.I0)(),
+                        r = s(),
+                        n = a.useRef(null);
+                    return (
+                        a.useEffect(() => () => clearTimeout(n.current), [r]),
+                        a.useCallback(
+                            (a) => {
+                                e((0, i.fz)(a)), (n.current = setTimeout(() => r(), 3e3));
+                            },
+                            [e, r],
+                        )
+                    );
+                },
+                s = () => {
+                    const e = (0, t.I0)();
+                    return a.useCallback(() => e((0, i.RS)()), [e]);
+                };
+        },
+        39182: (e, r, n) => {
+            n.d(r, { E: () => l });
+            n(571372);
+            var a = n(202784),
+                t = n(251067),
+                i = n(355335);
+            const l = () => {
+                const e = a.useRef(null),
+                    [r, n] = a.useState(Date.now()),
+                    { isDev: l } = (0, i.Z)();
+                return (
+                    a.useEffect(() => {
+                        if (!l || (0, t.fH)(t.vw.prod)) return;
+                        const r = () => {
+                            (e.current = new WebSocket("wss://localhost.x.com:3000/__dev")),
+                                (e.current.onmessage = (e) => {
+                                    if ("string" == typeof e.data) {
+                                        const e = Date.now();
+                                        n(e);
+                                    }
+                                }),
+                                (e.current.onerror = (e) => {
+                                    throw new Error(e.type);
+                                }),
+                                (e.current.onclose = () => {
+                                    setTimeout(r, 3e3);
+                                });
+                        };
+                        return (
+                            r(),
+                            () => {
+                                e.current && e.current.close();
+                            }
+                        );
+                    }, [l]),
+                    r
+                );
             };
         },
-        620243: (e, a, r) => {
-            r.d(a, { Z: () => l });
-            var n = r(587510),
-                t = (r(585488), r(535338));
-            const i = n.Z,
+        355335: (e, r, n) => {
+            n.d(r, { Z: () => o, k: () => s });
+            n(543673), n(240753), n(128399), n(136728);
+            var a = n(202784),
+                t = n(565058),
+                i = n(400752),
+                l = n(107267);
+            const s = (0, t.cn)(!1),
+                o = () => {
+                    const e = (0, l.useHistory)(),
+                        r = (0, l.useLocation)(),
+                        [n, t] = (0, i.KO)(s);
+                    a.useEffect(() => {
+                        const e = new URLSearchParams(r.search).get("jfDev"),
+                            n = sessionStorage.getItem("jfDev");
+                        let a = !1;
+                        e ? (("1" !== e && "true" !== e) || (a = !0), ("0" !== e && "false" !== e) || (a = !1)) : (a = "true" === n), a ? (t(!0), sessionStorage.setItem("jfDev", "true")) : (t(!1), sessionStorage.removeItem("jfDev"));
+                    }, [r.search, t]);
+                    const o = a.useCallback(
+                        (n) => {
+                            const a = new URLSearchParams(r.search);
+                            n ? (a.set("jfDev", "1"), sessionStorage.setItem("jfDev", "true")) : (a.delete("jfDev"), sessionStorage.removeItem("jfDev"));
+                            const i = a.toString();
+                            e.push({ pathname: r.pathname, search: i }), t(n);
+                        },
+                        [e, r.pathname, r.search, t],
+                    );
+                    return {
+                        isDev: n,
+                        enableDev: a.useCallback(() => {
+                            o(!0);
+                        }, [o]),
+                        disableDev: a.useCallback(() => {
+                            o(!1);
+                        }, [o]),
+                    };
+                };
+        },
+        147595: (e, r, n) => {
+            n.d(r, { R: () => t });
+            var a = n(337394);
+            const t = (e) => {
+                const r = e.find((e) => e.product?.rest_id && a.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Stripe" === e.payment_source),
+                    n = e.find((e) => e.product?.rest_id && a.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Twitter" !== e.payment_source && "Ads" !== e.payment_source),
+                    t = e.find((e) => e.product?.rest_id && a.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && ("Twitter" === e.payment_source || "Ads" === e.payment_source));
+                return r || n || t;
+            };
+        },
+        620243: (e, r, n) => {
+            n.d(r, { Z: () => l });
+            var a = n(587510),
+                t = (n(585488), n(535338));
+            const i = a.Z,
                 l = () => {
                     const { viewer: e } = (0, t.p)(i, {});
                     return e.user_results.result || {};
                 };
         },
-        918588: (e, a, r) => {
-            r.d(a, { Z: () => s });
-            var n = r(380327),
-                t = (r(585488), r(712696)),
-                i = r.n(t);
-            const l = n.Z;
+        918588: (e, r, n) => {
+            n.d(r, { Z: () => s });
+            var a = n(380327),
+                t = (n(585488), n(712696)),
+                i = n.n(t);
+            const l = a.Z;
             const s = function () {
                 const e = i()(l, {});
-                return (e.quick_promote_advertiser_accounts?.items ?? []).reduce((e, a) => e + (a?.campaigns?.total_count ?? 0), 0);
+                return (e.quick_promote_advertiser_accounts?.items ?? []).reduce((e, r) => e + (r?.campaigns?.total_count ?? 0), 0);
             };
-        },
-        58399: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => c });
-            var n = r(202784),
-                t = r(890601),
-                i = r(783427),
-                l = r(717683),
-                s = r(347101);
-            const o = (e = {}) => {
-                const a = n.useContext(l.Z),
-                    { direction: r } = (0, i.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, a && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
-        246492: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => o });
-            var n = r(202784),
-                t = r(890601),
-                i = r(783427),
-                l = r(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        264171: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => o });
-            var n = r(202784),
-                t = r(890601),
-                i = r(783427),
-                l = r(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        98440: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => o });
-            var n = r(202784),
-                t = r(890601),
-                i = r(783427),
-                l = r(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        262009: (e, a, r) => {
-            r.r(a), r.d(a, { default: () => o });
-            var n = r(202784),
-                t = r(890601),
-                i = r(783427),
-                l = r(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, i.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        465233: (e, a, r) => {
-            r.d(a, { Z: () => t });
-            var n = r(716406);
-            function t(e) {
-                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(t) : (0, n.Z)(e, (e) => t(e));
-            }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PremiumLoaders.de6f765a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PremiumLoaders.8ae3d5ba.js.map

@@ -45,16 +45,16 @@
         },
         6157: (e, t, s) => {
             "use strict";
-            s.d(t, { Z: () => D });
+            s.d(t, { Z: () => P });
             var a = s(468811),
                 r = s.n(a),
                 o = s(163889),
                 i = s(155074),
                 n = s.n(i),
                 _ = s(491156),
-                d = s.n(_),
-                l = s(645513),
-                c = s.n(l),
+                l = s.n(_),
+                c = s(645513),
+                d = s.n(c),
                 p = s(470969),
                 u = s.n(p),
                 m = s(374709),
@@ -75,18 +75,18 @@
                 x = s.n(E),
                 L = s(587068),
                 A = s.n(L);
-            function D({ apiClient: e }) {
+            function P({ apiClient: e }) {
                 return {
                     clearConversations: (t, s) => e.graphQL(n(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, o.ZP)("GraphQL clear grok conversations failed."), e)),
                     setPreferences: ({ grokMode: t, grokModelOptionId: s }) => e.graphQL(A(), { grokMode: t, grokModelOptionId: s }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
-                    fetchConversation: ({ restId: t }) => e.graphQL(c(), { restId: t }).then((e) => e),
+                    fetchConversation: ({ restId: t }) => e.graphQL(d(), { restId: t }).then((e) => e),
                     fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(v(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(h(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(u(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(f(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(b(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(I(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
-                    deleteMessage: ({ chat_item_id: t, conversation_id: s }) => e.graphQL(d(), { conversation_id: s, chat_item_id: t }).then((e) => e),
+                    deleteMessage: ({ chat_item_id: t, conversation_id: s }) => e.graphQL(l(), { conversation_id: s, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: s, object_id: a }) => e.graphQL(x(), { group_id: s, object_id: a, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
                     grokUnpinConversation: ({ conversationId: t }) => e.graphQL(C(), { conversationId: t }).then((e) => e),
@@ -141,6 +141,31 @@
                 return a;
             };
         },
+        782642: (e, t, s) => {
+            "use strict";
+            s.d(t, { p: () => i });
+            var a = s(202784),
+                r = s(125363),
+                o = s(601576);
+            const i = () => {
+                    const e = (0, r.I0)(),
+                        t = n(),
+                        s = a.useRef(null);
+                    return (
+                        a.useEffect(() => () => clearTimeout(s.current), [t]),
+                        a.useCallback(
+                            (a) => {
+                                e((0, o.fz)(a)), (s.current = setTimeout(() => t(), 3e3));
+                            },
+                            [e, t],
+                        )
+                    );
+                },
+                n = () => {
+                    const e = (0, r.I0)();
+                    return a.useCallback(() => e((0, o.RS)()), [e]);
+                };
+        },
         128225: (e, t, s) => {
             "use strict";
             s.d(t, { f: () => a });
@@ -163,7 +188,7 @@
         },
         397159: (e, t, s) => {
             "use strict";
-            s.d(t, { Fi: () => p, XR: () => u, fQ: () => m, iS: () => c });
+            s.d(t, { Fi: () => p, XR: () => u, fQ: () => m, iS: () => d });
             s(136728), s(574858), s(543673), s(240753), s(128399);
             var a = s(468811),
                 r = s.n(a),
@@ -171,9 +196,9 @@
                 i = s.n(o),
                 n = s(123702),
                 _ = s(187268);
-            const d = i().c3f04d9c,
-                l = i().cbdddb0a,
-                c = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
+            const l = i().c3f04d9c,
+                c = i().cbdddb0a,
+                d = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 p = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
                 u = { GenericSearchQueryFormatter: i().ie2bbeed, GenericSearchQueryMarkdownFormatter: i().b0d1e205, WebSearchQueryFormatter: i().ie2bbeed, XSearchQueryFormatter: i().bf970edd, BrowsePageFormatter: i().g008d475, GenericURLQueryFormatter: i().c91e3971, GenericURLQueryMarkdownFormatter: i().acb9b845, XUsernameSearchFormatter: i().j9006405, XUsernameQuerySearchFormatter: i().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: i().e99fb7a3 };
             class m {
@@ -181,19 +206,19 @@
                     (this.initiateFromHistoryResponses = (e, t = !1) => {
                         this.lastStreamedDataTimestamp = Date.now();
                         for (const t of e) {
-                            const e = { id: r().v4(), state: p.COMPLETED, header: t.header || d, subSteps: [] };
+                            const e = { id: r().v4(), state: p.COMPLETED, header: t.header || l, subSteps: [] };
                             for (let s = 0; s < t.steps.length; s++) {
                                 const a = t.steps[s];
                                 this.addWebResults(a.webResults || []), this.addXPostIds(a.xPostIds || []);
                                 let r = 0;
                                 if ((a.assistant && ((this.accumulatedTrace += a.assistant), (this.traceEnabled = !0)), a.summary)) {
                                     const t = (0, _.rs)(a.summary);
-                                    (this.accumulatedSummary += t), e.subSteps.push({ messageStepId: s + r, messageTag: c.SUMMARY, summary: t, webResults: a.webResults, xPostIds: a.xPostIds }), r++;
+                                    (this.accumulatedSummary += t), e.subSteps.push({ messageStepId: s + r, messageTag: d.SUMMARY, summary: t, webResults: a.webResults, xPostIds: a.xPostIds }), r++;
                                 }
                                 if (a.decision) {
                                     const t = this.parseMessageJSON(a.decision),
                                         { markdown: o, text: i } = this.getContentForDecisionAction(t);
-                                    e.subSteps.push({ messageStepId: s + r, messageTag: c.DECISION, actionIcon: this.getIconForDecisionAction(t), actionType: t?.action, actionMarkdownSummary: o, actionSummary: i, actionWebResult: this.webResults.find((e) => e.url === t?.action_input?.url), actionState: "COMPLETED", webResults: a.webResults, xPostIds: a.xPostIds }), r++;
+                                    e.subSteps.push({ messageStepId: s + r, messageTag: d.DECISION, actionIcon: this.getIconForDecisionAction(t), actionType: t?.action, actionMarkdownSummary: o, actionSummary: i, actionWebResult: this.webResults.find((e) => e.url === t?.action_input?.url), actionState: "COMPLETED", webResults: a.webResults, xPostIds: a.xPostIds }), r++;
                                 }
                             }
                             this.steps.push(e);
@@ -205,71 +230,85 @@
                         }),
                         (this.updateStepsFromRawMessage = (e) => {
                             const t = this.steps.length - 1,
-                                s = e.messageTag === c.HEADER,
+                                s = e.messageTag === d.HEADER,
                                 a = s || this.steps.length <= 0;
                             if ((this.addDebugMessageTagCount(e.messageTag), (this.lastStreamedDataTimestamp = Date.now()), "PENDING" === this.state && ((this.streamStartTimestamp = Date.now()), (this.state = "STARTED")), a)) {
-                                const a = { id: r().v4(), state: "COMPLETED" === this.state ? p.COMPLETED : p.IN_PROGRESS, header: s ? e.message : d, subSteps: [] };
+                                const a = { id: r().v4(), state: "COMPLETED" === this.state ? p.COMPLETED : p.IN_PROGRESS, header: s ? e.message : l, subSteps: [] };
                                 if (s) {
-                                    if (1 === this.steps.length && this.steps[0].header === d) return void (this.steps = [{ ...this.steps[0], header: a.header }]);
+                                    if (1 === this.steps.length && this.steps[0].header === l) return void (this.steps = [{ ...this.steps[0], header: a.header }]);
                                     this.steps = [...this.steps, a];
-                                } else e.messageTag === c.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, a]));
+                                } else e.messageTag === d.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, a]));
                                 return void (t >= 0 && this.completeStep(t));
                             }
                             const o = this.steps[t],
                                 i = o.subSteps.findLastIndex((t) => {
-                                    if (e.messageTag === c.RAW_FUNCTION_RESULT) {
+                                    if (e.messageTag === d.RAW_FUNCTION_RESULT) {
                                         const s = t.messageStepId === e.messageStepId,
                                             a = t.messageTag === e.messageTag,
-                                            r = t.messageTag === c.DECISION,
-                                            o = t.messageTag === c.SUMMARY && void 0 !== t.toolUsage;
+                                            r = t.messageTag === d.DECISION,
+                                            o = t.messageTag === d.SUMMARY && void 0 !== t.toolUsage;
                                         return s && (a || r || o);
                                     }
                                     return t.messageStepId === e.messageStepId && t.messageTag === e.messageTag;
                                 }),
-                                l = i > -1 ? o.subSteps[i] : void 0;
+                                c = i > -1 ? o.subSteps[i] : void 0;
                             let u = !1;
-                            if (l) {
+                            if (c) {
                                 switch (e.messageTag) {
-                                    case c.ASSISTANT:
+                                    case d.ASSISTANT:
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
-                                    case c.SUMMARY: {
+                                    case d.SUMMARY: {
                                         const t = (0, _.rs)(e.message);
-                                        l.summary = (l.summary || "") + t;
+                                        c.summary = (c.summary || "") + t;
                                         const s = (0, _.Bv)(e.message);
-                                        s ? (l.toolUsage = s) : ((l.bulletPoints = [...(l.bulletPoints || []), (0, n.K)(e.message)]), e.webResults && e.webResults.length && ((l.webResults = e.webResults), this.addWebResults(e.webResults || []))), (u = !0), (this.accumulatedSummary += t);
+                                        if (s) {
+                                            const e = (0, _.cU)(s);
+                                            e && (c.bulletPoints = [...(c.bulletPoints || []), e]);
+                                        } else {
+                                            const t = (0, n.K)(e.message);
+                                            t.trim() && (c.bulletPoints = [...(c.bulletPoints || []), t]), e.webResults && e.webResults.length && ((c.webResults = e.webResults), this.addWebResults(e.webResults || []));
+                                        }
+                                        (u = !0), (this.accumulatedSummary += t);
                                         break;
                                     }
-                                    case c.DECISION: {
+                                    case d.DECISION: {
                                         const t = this.parseMessageJSON(e.message),
                                             { markdown: s, text: a } = this.getContentForDecisionAction(t);
-                                        (l.actionIcon = this.getIconForDecisionAction(t)), (l.actionType = t?.action), (l.actionSummary = a), (l.actionMarkdownSummary = s), (u = !0);
+                                        (c.actionIcon = this.getIconForDecisionAction(t)), (c.actionType = t?.action), (c.actionSummary = a), (c.actionMarkdownSummary = s), (u = !0);
                                         break;
                                     }
-                                    case c.RAW_FUNCTION_RESULT:
+                                    case d.RAW_FUNCTION_RESULT:
                                         if (!((e.webResults && e.webResults.length) || (e.xPostIds && e.xPostIds.length))) break;
-                                        e.webResults && ((l.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((l.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), l.actionState, (u = !0);
+                                        e.webResults && ((c.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((c.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), c.actionState, (u = !0);
                                 }
-                                u && ((o.subSteps[i] = { ...l }), (o.subSteps = [...o.subSteps]));
+                                u && ((o.subSteps[i] = { ...c }), (o.subSteps = [...o.subSteps]));
                             } else {
                                 let t = null;
                                 switch (e.messageTag) {
-                                    case c.ASSISTANT:
+                                    case d.ASSISTANT:
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
-                                    case c.SUMMARY: {
+                                    case d.SUMMARY: {
                                         const s = (0, _.Bv)(e.message) ?? void 0,
                                             a = (0, _.rs)(e.message);
-                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsage: s };
+                                        let r = [];
+                                        if (s) {
+                                            const e = (0, _.cU)(s);
+                                            e && (r = [e]);
+                                        } else {
+                                            (0, n.K)(e.message).trim() && (r = [(0, n.K)(e.message)]);
+                                        }
+                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsage: s, bulletPoints: r };
                                         break;
                                     }
-                                    case c.DECISION: {
+                                    case d.DECISION: {
                                         const s = this.parseMessageJSON(e.message),
                                             { markdown: a, text: r } = this.getContentForDecisionAction(s);
                                         t = { messageStepId: e.messageStepId, messageTag: e.messageTag, actionIcon: this.getIconForDecisionAction(s), actionType: s?.action, actionSummary: r, actionMarkdownSummary: a, actionWebResult: this.webResults.find((e) => e.url === s?.action_input?.url), actionState: "STARTED" };
                                         break;
                                     }
-                                    case c.RAW_FUNCTION_RESULT: {
+                                    case d.RAW_FUNCTION_RESULT: {
                                         const s = e.webResults || [];
                                         this.addWebResults(s);
                                         const a = e.xPostIds || [];
@@ -286,7 +325,7 @@
                             this.steps[t] = { ...this.steps[t] };
                         }),
                         (this.sortSubstepsByStepIdMessageTag = (e) => {
-                            const t = [c.SUMMARY, c.DECISION, c.RAW_FUNCTION_RESULT];
+                            const t = [d.SUMMARY, d.DECISION, d.RAW_FUNCTION_RESULT];
                             return e.sort((e, s) => (e.messageStepId !== s.messageStepId ? e.messageStepId - s.messageStepId : t.indexOf(e.messageTag) - t.indexOf(s.messageTag)));
                         }),
                         (this.completeStep = (e) => {
@@ -347,7 +386,7 @@
                                             e.actionState = "COMPLETED";
                                         });
                                 }),
-                                e && this.steps.push({ id: r().v4(), state: p.COMPLETED, header: l, subSteps: [], isCompleteHeader: !0 }),
+                                e && this.steps.push({ id: r().v4(), state: p.COMPLETED, header: c, subSteps: [], isCompleteHeader: !0 }),
                                 (this.steps = [...this.steps]));
                         }),
                         (this.onAbort = () => {
@@ -389,4 +428,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.fc6033fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.ea98319a.js.map

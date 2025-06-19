@@ -3,28 +3,22 @@
     ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"],
     {
         247979: (e, A, a) => {
-            a.d(A, { Z: () => t });
+            a.d(A, { Z: () => d });
             var n = a(202784),
                 o = a(523561),
                 r = a(195560);
-            const t = (0, o.Z)({
+            const d = (0, o.Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.21"),
-                        a.e("icons.16"),
-                        a.e("icons.10"),
-                        a.e("icons.1"),
-                        a.e("icons.19"),
-                        a.e("icons.0"),
                         a.e("icons.23"),
-                        a.e("icons.8"),
+                        a.e("icons.0"),
                         a.e("icons.2"),
-                        a.e("icons.4"),
-                        a.e("modules.common-e907d115"),
-                        a.e("modules.common-e019dbda"),
-                        a.e("icons.9"),
-                        a.e("icons.7"),
-                        a.e("icons.26"),
+                        a.e("icons.16"),
+                        a.e("icons.19"),
+                        a.e("icons.10"),
+                        a.e("icons.22"),
+                        a.e("icons.27"),
+                        a.e("icons.11"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -35,17 +29,29 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.27"),
+                        a.e("icons.4"),
+                        a.e("icons.14"),
+                        a.e("icons.28"),
+                        a.e("icons.21"),
+                        a.e("icons.3"),
+                        a.e("icons.18"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -85,16 +91,16 @@
             var n = a(614983),
                 o = a.n(n),
                 r = a(565058),
-                t = a(400752),
-                d = a(987809),
+                d = a(400752),
+                t = a(987809),
                 s = a(910626),
                 l = a(840590),
                 c = a(776342),
                 i = a(111677),
                 u = a.n(i),
-                m = a(239496),
-                p = a(420182),
-                h = a(42134),
+                h = a(239496),
+                m = a(420182),
+                p = a(42134),
                 D = a(545937),
                 M = a(484633),
                 w = a(381904),
@@ -115,39 +121,39 @@
                 G = a(688327),
                 x = a(942428),
                 T = a(302217),
-                j = a(895229),
-                Q = a(509599),
-                P = a(261703);
-            const N = (0, r.cn)((e) => m.FH.getRegion()),
+                P = a(895229),
+                j = a(509599),
+                Q = a(261703);
+            const N = (0, r.cn)((e) => h.FH.getRegion()),
                 H = (0, r.cn)(null, (e, A, a) => {
-                    const { addToast: n, conversationControls: o, isSuperFollowersOnly: r, onClose: t, options: d, title: s } = a;
+                    const { addToast: n, conversationControls: o, isSuperFollowersOnly: r, onClose: d, options: t, title: s } = a;
                     return (
-                        d.content_type && A(b.HM, d.content_type),
+                        t.content_type && A(b.HM, t.content_type),
                         e(N)
-                            .then((e) => (A(x.WG, e.region), A(P.D, { broadcastOptions: { ...d, region: e.region }, title: s, conversationControls: o })))
-                            .then((e) => (t?.(), L({ contentType: d.content_type, id: e.audioSpaceId, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: r, mediaKey: e.mediaKey, role: M.Q.host, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), e.audioSpaceId))
+                            .then((e) => (A(x.WG, e.region), A(Q.D, { broadcastOptions: { ...t, region: e.region }, title: s, conversationControls: o })))
+                            .then((e) => (d?.(), L({ contentType: t.content_type, id: e.audioSpaceId, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: r, mediaKey: e.mediaKey, role: M.Q.host, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), e.audioSpaceId))
                             .catch(() => {
-                                t?.(), n && n({ text: $ });
+                                d?.(), n && n({ text: $ });
                             })
                     );
                 }),
                 F = (0, r.cn)(null, (e, A, { isEnded: a, isKicked: n }) => {
-                    const o = e(h.rm),
-                        r = e(h.cI);
+                    const o = e(p.rm),
+                        r = e(p.cI);
                     return A(G.Q), a && o ? l.default.push((0, _.e)(o), { forceRenderEnded: !0 }) : e(R.MG) && n && l.default.push(e(g.P)), o ? A(Z.Hs, { spaceUserRole: r, spaceId: o, wasKicked: n }) : Promise.resolve();
                 }),
                 W = (0, r.cn)(null, async (e, A, a) => {
-                    const n = e(h.cI);
+                    const n = e(p.cI);
                     A(G.Q), await A(Z.pI), await A(k.Dn, a), await A(Z.Hs, { spaceUserRole: n, spaceId: a });
                 });
             function X() {
-                return (0, t.b9)(G.R);
+                return (0, d.b9)(G.R);
             }
             const Y = (0, r.cn)(!1);
             function J() {
-                return (0, t.Dv)(Y);
+                return (0, d.Dv)(Y);
             }
-            const z = (0, d.xu)((e) =>
+            const z = (0, t.xu)((e) =>
                     (0, r.cn)(null, async (A, a) => {
                         a(R.fJ, !0), a(Y, !0);
                         const n = await A((0, R.Xk)(e));
@@ -156,25 +162,25 @@
                 ),
                 K = (0, r.cn)(null, async (e, A, { broadcastId: a, conferenceId: n }) => {
                     try {
-                        return A(R.fJ, !0), A(Y, !0), e(j.p_) || (await e((0, Q.tq)(a)), e(B.v) || (await A(E.yw))), A(U, a);
+                        return A(R.fJ, !0), A(Y, !0), e(P.p_) || (await e((0, j.tq)(a)), e(B.v) || (await A(E.yw))), A(U, a);
                     } catch (A) {
-                        throw (e(j.Fn) && l.default.goBack(), A);
+                        throw (e(P.Fn) && l.default.goBack(), A);
                     }
                 }),
                 U = (0, r.cn)(null, (e, A, a) => {
-                    e(j.p_) || A(T.FF, a), A(R.fJ, !0), A(Y, !0);
+                    e(P.p_) || A(T.FF, a), A(R.fJ, !0), A(Y, !0);
                     const n = C.P_();
-                    return e((0, Q.tq)(a))
+                    return e((0, j.tq)(a))
                         .then((n) => {
                             if (!n) return Error("failed to find space");
                             if (n.disallow_join) return Error("cannot join space");
                             if (!n.media_key) return Error("failed to find space key");
                             const o = n.media_key,
                                 r = (n.is_space_available_for_replay && [c.default.SpaceState.Ended, c.default.SpaceState.TimedOut].includes(n.state)) ?? !1,
-                                t = n.narrow_cast_space_type === c.default.AudienceEnum.superFollowersOnly,
-                                d = (0, y._h)(e(p.qc).getState()),
-                                s = n.host?.user_id === d ? M.Q.host : M.Q.speaker;
-                            return L({ contentType: n.content_type, id: a, isAnonymous: !1, isLive: n.state === c.default.SpaceState.Running, isReplay: r, isSuperFollowersOnly: t, mediaKey: o, origin: void 0, role: s, started_at: n?.started_at, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), s === M.Q.host ? A(Ae, n.rest_id) : e(j.p_) ? A(Z.Sk, { spaceId: n.rest_id, role: s }) : A(ee, { spaceId: n.rest_id, role: s, shouldAutoJoin: !0 });
+                                d = n.narrow_cast_space_type === c.default.AudienceEnum.superFollowersOnly,
+                                t = (0, y._h)(e(m.qc).getState()),
+                                s = n.host?.user_id === t ? M.Q.host : M.Q.speaker;
+                            return L({ contentType: n.content_type, id: a, isAnonymous: !1, isLive: n.state === c.default.SpaceState.Running, isReplay: r, isSuperFollowersOnly: d, mediaKey: o, origin: void 0, role: s, started_at: n?.started_at, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), s === M.Q.host ? A(Ae, n.rest_id) : e(P.p_) ? A(Z.Sk, { spaceId: n.rest_id, role: s }) : A(ee, { spaceId: n.rest_id, role: s, shouldAutoJoin: !0 });
                         })
                         .then(
                             (e) => {
@@ -184,7 +190,7 @@
                             (A) => {
                                 const a = n.end();
                                 C.IM("conferences:join:failure", a);
-                                const { dispatch: o } = e(p.qc);
+                                const { dispatch: o } = e(m.qc);
                                 o((0, f.fz)({ text: "failed to connect to the conference" })), (0, v.Hj)(A);
                             },
                         )
@@ -199,11 +205,11 @@
                 return e?.narrow_cast_space_type === c.default.AudienceEnum.superFollowersOnly ? (A = "super_followers") : e?.narrow_cast_space_type === c.default.AudienceEnum.employeesOnly ? (A = "employees") : e?.community && (A = "community"), A;
             }
             function L(e) {
-                const { contentType: A, id: a, addToast: n, isAnonymous: o, isLive: r, isReplay: t, isSuperFollowersOnly: d, mediaKey: l, origin: c, scribe: i, started_at: u, role: m = M.Q.listener, clearAndLoadSpace: p, resetExpandedDockStore: h } = e;
+                const { contentType: A, id: a, addToast: n, isAnonymous: o, isLive: r, isReplay: d, isSuperFollowersOnly: t, mediaKey: l, origin: c, scribe: i, started_at: u, role: h = M.Q.listener, clearAndLoadSpace: m, resetExpandedDockStore: p } = e;
                 S.Z.proxsee
                     .login()
                     .then(() => {
-                        l && (r || t) && (D.mc(), h({ contentType: (0, I.dW)(A), isReplay: t, isAnonymous: o, isSuperFollowersOnly: d, started_at: u }), t && i && i(":audiospace:replay:recording:play:click", { origin: c }), p({ id: a, isAnonymous: !!o, isLive: r, mediaKey: l, role: m }), i && i(":audiospace:event:join:listener:success", { origin: c }), c === s.Y.spacebar && i && i(":*:*:*:audiospace_fleet:join", { origin: c }));
+                        l && (r || d) && (D.mc(), p({ contentType: (0, I.dW)(A), isReplay: d, isAnonymous: o, isSuperFollowersOnly: t, started_at: u }), d && i && i(":audiospace:replay:recording:play:click", { origin: c }), m({ id: a, isAnonymous: !!o, isLive: r, mediaKey: l, role: h }), i && i(":audiospace:event:join:listener:success", { origin: c }), c === s.Y.spacebar && i && i(":*:*:*:audiospace_fleet:join", { origin: c }));
                     })
                     .catch(() => {
                         n && n({ text: q });
@@ -214,10 +220,10 @@
                 ee = (0, r.cn)(null, async (e, A, a) => {
                     const { role: n, spaceId: o } = a,
                         r = await A(k.Yn, a),
-                        { can_auto_join: t, session_uuid: d } = r;
-                    return t && d
+                        { can_auto_join: d, session_uuid: t } = r;
+                    return d && t
                         ? A(Z.$R, { spaceId: o, negotiate: !0, createRoom: !1 }).then(() => {
-                              A(h.cI, n);
+                              A(p.cI, n);
                           })
                         : A(k.K7, o);
                 }),
@@ -225,10 +231,10 @@
                     const n = e(k.F6),
                         r = await n.reconnectHost(a);
                     if (!r?.broadcast) return Promise.reject(new Error("Broadcast call did not return a broadcast!"));
-                    const t = r.access_token;
-                    A(k.re, ""), await e(k.yj).initialize(t);
-                    const d = { roomID: r.room_id, streamName: r.stream_name, vidManToken: r.credential, janusURL: r.webrtc_gw_url, isAudioOnly: !0, isPrivate: !1, guestServicesSessionUuid: r.session_uuid };
-                    A(Z.YX, d), await A(Z.$R, { spaceId: a, negotiate: !1, createRoom: !1 });
+                    const d = r.access_token;
+                    A(k.re, ""), await e(k.yj).initialize(d);
+                    const t = { roomID: r.room_id, streamName: r.stream_name, vidManToken: r.credential, janusURL: r.webrtc_gw_url, isAudioOnly: !0, isPrivate: !1, guestServicesSessionUuid: r.session_uuid };
+                    A(Z.YX, t), await A(Z.$R, { spaceId: a, negotiate: !1, createRoom: !1 });
                     const s = e(Z.kw),
                         l = e(Z.Eg);
                     return o()(s, "Could not reconnect to space due to lack of publisherId"), n.publishBroadcast({ broadcast_id: a, webrtc_handle_id: l.config.handlerId, webrtc_session_id: l.config.janusSessionId, janus_publisher_id: s, janus_room_id: a });
@@ -236,9 +242,9 @@
                 ae = (0, r.cn)(null, async (e, A, a) => {
                     const n = e(k.F6),
                         r = await n.prePublishScheduledAudioBroadcast(a),
-                        t = await S.Z.audioSpace(a);
-                    o()(t, "expected to get audio space metadata");
-                    const d = t;
+                        d = await S.Z.audioSpace(a);
+                    o()(d, "expected to get audio space metadata");
+                    const t = d;
                     o()(r, "expected details");
                     const s = r,
                         l = s.access_token;
@@ -247,10 +253,10 @@
                     A(Z.YX, c), await A(Z.$R, { spaceId: a, negotiate: !1, createRoom: !0 });
                     const i = e(Z.kw),
                         u = e(Z.Eg);
-                    return o()(i, "Could not create space due to lack of publisherId"), await n.publishBroadcast({ broadcast_id: a, webrtc_handle_id: u.config.handlerId, webrtc_session_id: u.config.janusSessionId, janus_publisher_id: i, janus_room_id: a, status: s.broadcast.status, conversation_controls: d?.conversation_controls || 0 }), await A(k.TM, { broadcast_id: a, twitter_user_ids: [s.broadcast.twitter_id] }), { broadcast: s.broadcast, audioSpaceMetadata: d };
+                    return o()(i, "Could not create space due to lack of publisherId"), await n.publishBroadcast({ broadcast_id: a, webrtc_handle_id: u.config.handlerId, webrtc_session_id: u.config.janusSessionId, janus_publisher_id: i, janus_room_id: a, status: s.broadcast.status, conversation_controls: t?.conversation_controls || 0 }), await A(k.TM, { broadcast_id: a, twitter_user_ids: [s.broadcast.twitter_id] }), { broadcast: s.broadcast, audioSpaceMetadata: t };
                 }),
                 ne = (0, r.cn)(null, (e, A, a) => {
-                    e((0, Q.tq)(a)).then((e) => {
+                    e((0, j.tq)(a)).then((e) => {
                         if (!e || !e.media_key || e.disallow_join) return;
                         const n = e.media_key,
                             o = (e.is_space_available_for_replay && [c.default.SpaceState.Ended, c.default.SpaceState.TimedOut].includes(e.state)) ?? !1;
@@ -259,27 +265,27 @@
                 });
         },
         625555: (e, A, a) => {
-            a.d(A, { Bl: () => y, Dn: () => Y, F6: () => z, FS: () => j, FX: () => f, H_: () => R, Ht: () => F, K7: () => b, N8: () => H, NG: () => S, Sd: () => k, TM: () => B, TU: () => x, Vp: () => g, X8: () => C, Yn: () => w, Yy: () => P, ZN: () => W, bX: () => Z, cH: () => G, fP: () => X, hs: () => Q, iq: () => v, oZ: () => _, rc: () => I, re: () => D, t9: () => J, w: () => N, wr: () => M, xB: () => E, yj: () => K });
+            a.d(A, { Bl: () => y, Dn: () => Y, F6: () => z, FS: () => P, FX: () => f, H_: () => R, Ht: () => F, K7: () => b, N8: () => H, NG: () => S, Sd: () => k, TM: () => B, TU: () => x, Vp: () => g, X8: () => C, Yn: () => w, Yy: () => Q, ZN: () => W, bX: () => Z, cH: () => G, fP: () => X, hs: () => j, iq: () => v, oZ: () => _, rc: () => I, re: () => D, t9: () => J, w: () => N, wr: () => M, xB: () => E, yj: () => K });
             var n = a(614983),
                 o = a.n(n),
                 r = a(565058),
-                t = a(741810),
-                d = a(650556),
+                d = a(741810),
+                t = a(650556),
                 s = a(304148),
                 l = a(420182),
                 c = a(42134),
                 i = a(484633),
                 u = a(390387),
-                m = a(692822),
-                p = a(536387),
-                h = a(509599);
-            const D = (0, p.Yh)(),
+                h = a(692822),
+                m = a(536387),
+                p = a(509599);
+            const D = (0, m.Yh)(),
                 M = (0, r.cn)((e) => {
                     if (e(c.lR) && e(D.isInit)) return e(D);
                 }),
                 w = (0, r.cn)(null, (e, A, a) => {
                     const { role: n, shouldAutoJoin: o, spaceId: r } = a;
-                    return e((0, h.Go)(r)).then((e) =>
+                    return e((0, p.Go)(r)).then((e) =>
                         e.joinAsSpeaker(r, { join_as_admin: n === i.Q.cohost || n === i.Q.host, should_auto_join: o }).then((e) => {
                             const { can_auto_join: a, session_uuid: n } = e;
                             return a && n && A(D, n), e;
@@ -287,7 +293,7 @@
                     );
                 }),
                 b = (0, r.cn)(null, (e, A, a) =>
-                    e((0, h.Go)(a)).then((e) =>
+                    e((0, p.Go)(a)).then((e) =>
                         e.submitSpeakerRequest(a).then((e) => {
                             A(D, e.session_uuid);
                         }),
@@ -295,25 +301,25 @@
                 ),
                 y = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.negotiateStream(n));
+                    return e((0, p.Go)(a)).then((e) => e.negotiateStream(n));
                 }),
                 f = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.muteSpeaker(n, a));
+                    return e((0, p.Go)(a)).then((e) => e.muteSpeaker(n, a));
                 }),
                 _ = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.unmuteSpeaker(n, a));
+                    return e((0, p.Go)(a)).then((e) => e.unmuteSpeaker(n, a));
                 }),
                 g = (0, r.cn)(null, (e, A) => {
                     const a = e(c.rm);
                     if (!a) return Promise.resolve();
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.cancelSpeakerRequest(a, n));
+                    return e((0, p.Go)(a)).then((e) => e.cancelSpeakerRequest(a, n));
                 }),
                 S = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.endStream({ session_uuid: n }));
+                    return e((0, p.Go)(a)).then((e) => e.endStream({ session_uuid: n }));
                 }),
                 v = (0, r.cn)(null, (e, A) => {
                     const a = e(c.rm);
@@ -323,73 +329,73 @@
                 }),
                 I = (0, r.cn)(null, (e, A, a, n) => {
                     const o = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.removeAdmin({ broadcast_id: a, twitter_user_id: n, session_uuid: o }));
+                    return e((0, p.Go)(a)).then((e) => e.removeAdmin({ broadcast_id: a, twitter_user_id: n, session_uuid: o }));
                 }),
                 C = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.lowerHand({ session_uuid: n, broadcast_id: a }));
+                    return e((0, p.Go)(a)).then((e) => e.lowerHand({ session_uuid: n, broadcast_id: a }));
                 }),
                 E = "✋",
                 k = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.raiseHand({ session_uuid: n, broadcast_id: a, emoji: E }));
+                    return e((0, p.Go)(a)).then((e) => e.raiseHand({ session_uuid: n, broadcast_id: a, emoji: E }));
                 }),
-                B = (0, r.cn)(null, (e, A, a) => e((0, h.Go)(a.broadcast_id)).then((e) => e.adminInvite(a))),
-                R = (0, r.cn)(null, (e, A, a, n, o, r) => e((0, h.Go)(a)).then((e) => e.setSpaceSettings(a, n, o, r))),
-                Z = (0, r.cn)(null, (e, A, a) => e((0, h.Go)(a)).then((e) => e.muteSpace(a))),
-                G = (0, r.cn)(null, (e, A, a) => e((0, h.Go)(a)).then((e) => e.unmuteSpace(a))),
+                B = (0, r.cn)(null, (e, A, a) => e((0, p.Go)(a.broadcast_id)).then((e) => e.adminInvite(a))),
+                R = (0, r.cn)(null, (e, A, a, n, o, r) => e((0, p.Go)(a)).then((e) => e.setSpaceSettings(a, n, o, r))),
+                Z = (0, r.cn)(null, (e, A, a) => e((0, p.Go)(a)).then((e) => e.muteSpace(a))),
+                G = (0, r.cn)(null, (e, A, a) => e((0, p.Go)(a)).then((e) => e.unmuteSpace(a))),
                 x = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, h.Go)(a)).then((e) => e.cancelSpeakerRequest(a, n));
+                    return e((0, p.Go)(a)).then((e) => e.cancelSpeakerRequest(a, n));
                 }),
                 T = (0, r.cn)((e) => {
                     const A = e(c.rm);
-                    return A ? e((0, h.Go)(A)) : Promise.resolve(e(K));
+                    return A ? e((0, p.Go)(A)) : Promise.resolve(e(K));
                 }),
-                j = (0, r.cn)(null, (e, A, a) => {
+                P = (0, r.cn)(null, (e, A, a) => {
                     const n = e(s.Cl).get(a);
                     return o()(n, "expected session"), e(T).then((e) => e.approveRequest(n.session_uuid));
                 }),
-                Q = (0, r.cn)(null, (e, A, a) => {
+                j = (0, r.cn)(null, (e, A, a) => {
                     const n = e(s.Cl).get(a);
                     return o()(n, "expected session"), e(T).then((e) => e.rejectRequest(n.session_uuid));
                 }),
-                P = (0, r.cn)(null, (e, A, a, n, o) => {
-                    const r = JSON.stringify({ guestBroadcastingEvent: m._M.InviteViewersToCallIn });
-                    return e((0, h.Go)(a)).then((e) => (e.sendPrivateMessage(r, m.gK.HydraControlMessage, o, a), e.inviteToSpeak(n, a)));
+                Q = (0, r.cn)(null, (e, A, a, n, o) => {
+                    const r = JSON.stringify({ guestBroadcastingEvent: h._M.InviteViewersToCallIn });
+                    return e((0, p.Go)(a)).then((e) => (e.sendPrivateMessage(r, h.gK.HydraControlMessage, o, a), e.inviteToSpeak(n, a)));
                 }),
-                N = (0, r.cn)(null, (e, A, a, n) => e((0, h.Go)(a)).then((e) => e.addAdmin({ broadcast_id: a, twitter_user_id: n }))),
+                N = (0, r.cn)(null, (e, A, a, n) => e((0, p.Go)(a)).then((e) => e.addAdmin({ broadcast_id: a, twitter_user_id: n }))),
                 H = (0, r.cn)(null, (e, A, a, n) => {
                     const r = e(s.Cl).get(n);
-                    return o()(r, "expected session"), e((0, h.Go)(a)).then((e) => e.muteSpeaker(r.session_uuid, a));
+                    return o()(r, "expected session"), e((0, p.Go)(a)).then((e) => e.muteSpeaker(r.session_uuid, a));
                 }),
-                F = (0, r.cn)(null, (e, A, a, n) => e((0, h.Go)(a)).then((e) => e.muteSpeaker(n, a))),
-                W = (0, r.cn)(null, (e, A, a, n) => e((0, h.Go)(a)).then((e) => e.removeParticipants([n], a))),
+                F = (0, r.cn)(null, (e, A, a, n) => e((0, p.Go)(a)).then((e) => e.muteSpeaker(n, a))),
+                W = (0, r.cn)(null, (e, A, a, n) => e((0, p.Go)(a)).then((e) => e.removeParticipants([n], a))),
                 X = (0, r.cn)(null, (e, A, a) => {
-                    const { handlerId: n, janusSessionId: r, janusTargetId: t, periscopeUserId: d, spaceId: l } = a,
-                        c = e(s.Cl).get(d);
-                    return o()(c, "expected session"), e((0, h.Go)(l)).then((e) => e.streamEject({ session_uuid: c.session_uuid, webrtc_handle_id: n, webrtc_session_id: r, janus_room_id: l, janus_participant_id: t }));
+                    const { handlerId: n, janusSessionId: r, janusTargetId: d, periscopeUserId: t, spaceId: l } = a,
+                        c = e(s.Cl).get(t);
+                    return o()(c, "expected session"), e((0, p.Go)(l)).then((e) => e.streamEject({ session_uuid: c.session_uuid, webrtc_handle_id: n, webrtc_session_id: r, janus_room_id: l, janus_participant_id: d }));
                 }),
-                Y = (0, r.cn)(null, (e, A, a) => e((0, h.Go)(a)).then((e) => e.endAudioSpace(a))),
+                Y = (0, r.cn)(null, (e, A, a) => e((0, p.Go)(a)).then((e) => e.endAudioSpace(a))),
                 J = (0, r.cn)((e) => e(z).periscopeUserId()),
-                z = (0, r.cn)((e) => t.E),
-                K = (0, r.cn)((e) => d.VI);
+                z = (0, r.cn)((e) => d.E),
+                K = (0, r.cn)((e) => t.VI);
         },
         136397: (e, A, a) => {
-            a.d(A, { D0: () => T, TP: () => W, ZJ: () => B, _j: () => Q });
+            a.d(A, { D0: () => T, TP: () => W, ZJ: () => B, _j: () => j });
             var n = a(202784),
                 o = a(400752),
                 r = a(565058),
-                t = a(325686),
-                d = a(844685),
+                d = a(325686),
+                t = a(844685),
                 s = a(154003),
                 l = a(392237),
                 c = a(111677),
                 i = a.n(c),
                 u = a(370751),
-                m = a(516951),
-                p = a(741810),
-                h = a(614646),
+                h = a(516951),
+                m = a(741810),
+                p = a(614646),
                 D = a(420182),
                 M = a(142202),
                 w = a(736063),
@@ -423,20 +429,20 @@
                         a.log({ message: "askToJoin received", chatMessage: JSON.stringify(n) });
                         const o = n.data.sender;
                         if (!o) continue;
-                        const { display_name: r, twitter_id: t, username: d } = o;
-                        if (!d || !r || !t) continue;
-                        if (e(R).includes(t)) continue;
-                        A(R, (e) => e.concat(t));
+                        const { display_name: r, twitter_id: d, username: t } = o;
+                        if (!t || !r || !d) continue;
+                        if (e(R).includes(d)) continue;
+                        A(R, (e) => e.concat(d));
                         const { dispatch: s } = e(D.qc),
-                            l = x({ displayName: r, username: d });
-                        a.log(`adding toast: ${t}`),
+                            l = x({ displayName: r, username: t });
+                        a.log(`adding toast: ${d}`),
                             s(
                                 (0, y.fz)({
                                     text: l,
                                     action: {
                                         label: "Allow",
                                         onAction: () => {
-                                            A(G, t);
+                                            A(G, d);
                                         },
                                     },
                                     autoDismissDelay: 3e4,
@@ -472,40 +478,40 @@
                     return () => n();
                 }, [a, e, A]);
             }
-            const j = (0, r.cn)(
+            const P = (0, r.cn)(
                 null,
                 (e, A, a, n) =>
                     new Promise((o, r) => {
                         l();
-                        const t = setInterval(l, 5e3),
-                            d = () => {
-                                clearInterval(t), clearTimeout(s);
+                        const d = setInterval(l, 5e3),
+                            t = () => {
+                                clearInterval(d), clearTimeout(s);
                             },
-                            s = setTimeout(d, 3e4);
+                            s = setTimeout(t, 3e4);
                         function l() {
-                            p.E.joinConference(a, { requestToJoin: !0 }).then(
+                            m.E.joinConference(a, { requestToJoin: !0 }).then(
                                 () => {
                                     A(I.oK, a).then((e) => {
-                                        A(S.HQ, e), d(), o();
+                                        A(S.HQ, e), t(), o();
                                     });
                                 },
                                 (A) => {
-                                    if (A instanceof h.$) {
+                                    if (A instanceof p.$) {
                                         if (403 === A.status) return;
                                         if (412 === A.status) {
                                             const { dispatch: A } = e(D.qc),
                                                 a = "No one is in the room to let you in";
-                                            A((0, y.fz)({ text: a })), d(), o();
+                                            A((0, y.fz)({ text: a })), t(), o();
                                         }
                                     }
-                                    d(), r(A);
+                                    t(), r(A);
                                 },
                             );
                         }
-                        n.addEventListener("abort", d, { once: !0 });
+                        n.addEventListener("abort", t, { once: !0 });
                     }),
             );
-            function Q() {
+            function j() {
                 const [e] = n.useState(() => new AbortController());
                 n.useEffect(
                     () => () => {
@@ -513,17 +519,17 @@
                     },
                     [e],
                 );
-                const A = (0, o.b9)(j),
+                const A = (0, o.b9)(P),
                     a = (0, o.Dv)(I.sB),
-                    r = (0, o.b9)(P);
+                    r = (0, o.b9)(Q);
                 return (
-                    (0, o.Dv)(P),
+                    (0, o.Dv)(Q),
                     n.useCallback(() => {
                         a && r(A(a, e.signal));
                     }, [e.signal, A, a, r])
                 );
             }
-            const P = (0, r.cn)(),
+            const Q = (0, r.cn)(),
                 N = i().c3b5b829,
                 H = "Requested to Join",
                 F = i().i22835de;
@@ -531,9 +537,9 @@
                 const e = (0, o.Dv)(R);
                 return e.length
                     ? n.createElement(
-                          t.Z,
+                          d.Z,
                           null,
-                          n.createElement(d.Z, { subtext: N({ count: e.length }), text: H }),
+                          n.createElement(t.Z, { subtext: N({ count: e.length }), text: H }),
                           e.map((e) => n.createElement(w.H, { errorConfig: X }, n.createElement(Y, { userId: e }))),
                       )
                     : null;
@@ -545,26 +551,26 @@
                     r = n.useCallback(() => {
                         a(e);
                     }, [a, e]);
-                return A ? n.createElement(t.Z, { style: z.prospectiveSpeakerUserRow }, n.createElement(f.H, { displayMode: "UserCompact", style: z.userCell, user: A, withLink: !1 }), n.createElement(t.Z, { style: z.prospectiveSpeakerUserRowButtonsContainer }, n.createElement(s.ZP, { onPress: r, size: "small", style: z.prospectiveSpeakerUserRowButton }, F))) : null;
+                return A ? n.createElement(d.Z, { style: z.prospectiveSpeakerUserRow }, n.createElement(f.H, { displayMode: "UserCompact", style: z.userCell, user: A, withLink: !1 }), n.createElement(d.Z, { style: z.prospectiveSpeakerUserRowButtonsContainer }, n.createElement(s.ZP, { onPress: r, size: "small", style: z.prospectiveSpeakerUserRowButton }, F))) : null;
             }
             const J = (0, g.v)((e, A) => {
                     const a = e(R);
-                    if (!a.length) return m.Z;
+                    if (!a.length) return h.Z;
                     const n = e(k.F$),
                         o = new Set(e(k.Xn)),
                         r = a.filter((e) => !n.has(e) && !o.has(e));
-                    return r.length !== a.length && A(R, r), m.Z;
+                    return r.length !== a.length && A(R, r), h.Z;
                 }),
                 z = l.default.create((e) => ({ userCell: { flex: 1 }, prospectiveSpeakerUserRow: { width: "100%", justifyContent: "center" }, prospectiveSpeakerUserRowButtonsContainer: { flexDirection: "row", gap: e.spaces.space16, marginStart: e.spaces.space16, marginEnd: e.spaces.space16, justifyContent: "center" }, prospectiveSpeakerUserRowButton: { flex: 1 } }));
         },
         405070: (e, A, a) => {
-            a.d(A, { U: () => d });
+            a.d(A, { U: () => t });
             var n = a(565058),
                 o = a(25252),
                 r = a(536387);
-            const t =
+            const d =
                     "data:video/mp4;base64,AAAAIGZ0eXBpc29tAAACAGlzb21pc28yYXZjMW1wNDEAAAAIZnJlZQAABC5tZGF0AAACrgYF//+q3EXpvebZSLeWLNgg2SPu73gyNjQgLSBjb3JlIDE2NCByMzEwOCAzMWUxOWY5IC0gSC4yNjQvTVBFRy00IEFWQyBjb2RlYyAtIENvcHlsZWZ0IDIwMDMtMjAyMyAtIGh0dHA6Ly93d3cudmlkZW9sYW4ub3JnL3gyNjQuaHRtbCAtIG9wdGlvbnM6IGNhYmFjPTEgcmVmPTMgZGVibG9jaz0xOjA6MCBhbmFseXNlPTB4MzoweDExMyBtZT1oZXggc3VibWU9NyBwc3k9MSBwc3lfcmQ9MS4wMDowLjAwIG1peGVkX3JlZj0xIG1lX3JhbmdlPTE2IGNocm9tYV9tZT0xIHRyZWxsaXM9MSA4eDhkY3Q9MSBjcW09MCBkZWFkem9uZT0yMSwxMSBmYXN0X3Bza2lwPTEgY2hyb21hX3FwX29mZnNldD0tMiB0aHJlYWRzPTEgbG9va2FoZWFkX3RocmVhZHM9MSBzbGljZWRfdGhyZWFkcz0wIG5yPTAgZGVjaW1hdGU9MSBpbnRlcmxhY2VkPTAgYmx1cmF5X2NvbXBhdD0wIGNvbnN0cmFpbmVkX2ludHJhPTAgYmZyYW1lcz0zIGJfcHlyYW1pZD0yIGJfYWRhcHQ9MSBiX2JpYXM9MCBkaXJlY3Q9MSB3ZWlnaHRiPTEgb3Blbl9nb3A9MCB3ZWlnaHRwPTIga2V5aW50PTI1MCBrZXlpbnRfbWluPTI1IHNjZW5lY3V0PTQwIGludHJhX3JlZnJlc2g9MCByY19sb29rYWhlYWQ9NDAgcmM9Y3JmIG1idHJlZT0xIGNyZj0yMy4wIHFjb21wPTAuNjAgcXBtaW49MCBxcG1heD02OSBxcHN0ZXA9NCBpcF9yYXRpbz0xLjQwIGFxPTE6MS4wMACAAAAAHWWIhAA7//73Tr8Cm1TCKgOSVwrqg7oK2KdPKm3dAAAACkGaJGxDv/6p06AAAAAIQZ5CeIX/ETEAAAAIAZ5hdEK/FLAAAAAIAZ5jakK/FLEAAAAQQZpoSahBaJlMCHf//qnToQAAAApBnoZFESwv/xExAAAACAGepXRCvxSxAAAACAGep2pCvxSwAAAAEEGarEmoQWyZTAh3//6p06AAAAAKQZ7KRRUsL/8RMQAAAAgBnul0Qr8UsAAAAAgBnutqQr8UsAAAABBBmvBJqEFsmUwIb//+p+5BAAAACkGfDkUVLC//ETEAAAAIAZ8tdEK/FLEAAAAIAZ8vakK/FLAAAAAQQZs0SahBbJlMCGf//p78gAAAAApBn1JFFSwv/xExAAAACAGfcXRCvxSwAAAACAGfc2pCvxSwAAAAD0GbeEmoQWyZTAhX//46UwAAAApBn5ZFFSwv/xEwAAAACAGftXRCvxSxAAAACAGft2pCvxSxAAAEZm1vb3YAAABsbXZoZAAAAAAAAAAAAAAAAAAAA+gAAAPoAAEAAAEAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAORdHJhawAAAFx0a2hkAAAAAwAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAABAAAAAJAAAAAAAJGVkdHMAAAAcZWxzdAAAAAAAAAABAAAD6AAABAAAAQAAAAADCW1kaWEAAAAgbWRoZAAAAAAAAAAAAAAAAAAAMgAAADIAVcQAAAAAAC1oZGxyAAAAAAAAAAB2aWRlAAAAAAAAAAAAAAAAVmlkZW9IYW5kbGVyAAAAArRtaW5mAAAAFHZtaGQAAAABAAAAAAAAAAAAAAAkZGluZgAAABxkcmVmAAAAAAAAAAEAAAAMdXJsIAAAAAEAAAJ0c3RibAAAAMBzdHNkAAAAAAAAAAEAAACwYXZjMQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAABAACQASAAAAEgAAAAAAAAAARVMYXZjNjEuMTkuMTAwIGxpYngyNjQAAAAAAAAAAAAAABj//wAAADZhdmNDAWQACv/hABlnZAAKrNlEf58BEAAAAwAQAAADAyDxIllgAQAGaOvjyyLA/fj4AAAAABBwYXNwAAAAAQAAAAEAAAAUYnRydAAAAAAAACEwAAAhMAAAABhzdHRzAAAAAAAAAAEAAAAZAAACAAAAABRzdHNzAAAAAAAAAAEAAAABAAAA2GN0dHMAAAAAAAAAGQAAAAEAAAQAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAAQAACgAAAAABAAAEAAAAAAEAAAAAAAAAAQAAAgAAAAABAAAKAAAAAAEAAAQAAAAAAQAAAAAAAAABAAACAAAAAAEAAAoAAAAAAQAABAAAAAABAAAAAAAAAAEAAAIAAAAAHHN0c2MAAAAAAAAAAQAAAAEAAAAZAAAAAQAAAHhzdHN6AAAAAAAAAAAAAAAZAAAC0wAAAA4AAAAMAAAADAAAAAwAAAAUAAAADgAAAAwAAAAMAAAAFAAAAA4AAAAMAAAADAAAABQAAAAOAAAADAAAAAwAAAAUAAAADgAAAAwAAAAMAAAAEwAAAA4AAAAMAAAADAAAABRzdGNvAAAAAAAAAAEAAAAwAAAAYXVkdGEAAABZbWV0YQAAAAAAAAAhaGRscgAAAAAAAAAAbWRpcmFwcGwAAAAAAAAAAAAAAAAsaWxzdAAAACSpdG9vAAAAHGRhdGEAAAABAAAAAExhdmY2MS43LjEwMA==",
-                d = (0, n.cn)((e) => {
+                t = (0, n.cn)((e) => {
                     if (e(o.Y)) return e(s), e(s.resolved);
                 }),
                 s = (0, r.K9)(() =>
@@ -575,7 +581,7 @@
                             (e.autoplay = !0),
                             (e.loop = !0),
                             (e.muted = !0),
-                            (e.src = t),
+                            (e.src = d),
                             e.play(),
                             new Promise((A) => {
                                 const a = e.captureStream();
@@ -588,25 +594,25 @@
                 );
         },
         94751: (e, A, a) => {
-            a.d(A, { Fz: () => w, Pm: () => p, U9: () => D, _$: () => y, ce: () => M, qw: () => m });
+            a.d(A, { Fz: () => w, Pm: () => m, U9: () => D, _$: () => y, ce: () => M, qw: () => h });
             var n = a(565058),
                 o = a(516951),
                 r = a(420182),
-                t = a(142202),
-                d = a(23425),
+                d = a(142202),
+                t = a(23425),
                 s = a(692822),
                 l = a(526250),
                 c = a(811322),
                 i = a(396636),
                 u = a(65178);
-            const m = (0, n.cn)([]),
-                p = (0, n.cn)(""),
-                h =
+            const h = (0, n.cn)([]),
+                m = (0, n.cn)(""),
+                p =
                     ((0, u.g)(),
                     (0, i.Q)(
-                        () => m,
+                        () => h,
                         (e, A, a) => {
-                            if (e(r.zE).get(d.xK)) return A(D, []), o.Z;
+                            if (e(r.zE).get(t.xK)) return A(D, []), o.Z;
                             A(w, !0), A(D, (e) => [...e, a]);
                             let n = setTimeout(() => {
                                 A(M(a), !0),
@@ -620,10 +626,10 @@
                 D = (0, n.cn)([]),
                 M = (0, c.X)(() => (0, n.cn)(!1)),
                 w = (0, n.cn)(!1),
-                b = (0, l.v)((e, A) => (e(d.xK) && (A(w, !1), A(D, [])), o.Z)),
+                b = (0, l.v)((e, A) => (e(t.xK) && (A(w, !1), A(D, [])), o.Z)),
                 y = (0, n.cn)(null, (e, A) => {
                     const a = e(r.zE),
-                        n = t.Z.subscribe(
+                        n = d.Z.subscribe(
                             a,
                             s.gK.Chat,
                             (e) => (
@@ -633,28 +639,28 @@
                                         o = e.data.sender?.twitter_id;
                                     if (!n || !o || !a) return;
                                     const r = { id: a, text: n, timeSent: e.data.timestamp ? e.data.timestamp / 1e6 : 0, userId: o };
-                                    A(m, (e) => [...e, r]);
+                                    A(h, (e) => [...e, r]);
                                 }),
                                 { clearHeapForMessageType: !0 }
                             ),
                         ),
-                        o = A(h),
-                        d = A(b);
+                        o = A(p),
+                        t = A(b);
                     return () => {
-                        n(), o(), d(), A(f);
+                        n(), o(), t(), A(f);
                     };
                 }),
                 f = (0, n.cn)(null, (e, A) => {
-                    A(m, []), A(D, []), A(p, "");
+                    A(h, []), A(D, []), A(m, "");
                 });
         },
         41931: (e, A, a) => {
-            a.d(A, { S: () => t, v: () => d });
+            a.d(A, { S: () => d, v: () => t });
             var n = a(565058),
                 o = a(856642),
                 r = a(4427);
-            const t = (0, n.cn)(!1),
-                d = (0, n.cn)((e) => e(r.MG) && (s || e(t))),
+            const d = (0, n.cn)(!1),
+                t = (0, n.cn)((e) => e(r.MG) && (s || e(d))),
                 s = "1" === (0, o.parse)(window.location.search.substr(1)).companion;
         },
         176559: (e, A, a) => {
@@ -662,13 +668,13 @@
             var n = a(565058),
                 o = a(516951),
                 r = a(420182),
-                t = a(526250),
-                d = a(934871),
+                d = a(526250),
+                t = a(934871),
                 s = a(251836);
-            const l = (0, t.v)((e, A) => {
+            const l = (0, d.v)((e, A) => {
                     if (!e(r.f0).isTrue("rweb_conf_composite_video_enabled")) return o.Z;
                     const a = e(s.mb),
-                        n = e(d.nq);
+                        n = e(t.nq);
                     if (a && n) {
                         const e = new MediaStream();
                         e.addTrack(a);
@@ -690,14 +696,14 @@
                     const o = document.createElement("video"),
                         r = document.createElement("video");
                     (o.muted = r.muted = !0), (o.srcObject = a), (r.srcObject = n), await Promise.all([o.play(), r.play()]);
-                    const t = document.createElement("canvas");
-                    let d = (t.width = o.videoWidth),
-                        s = (t.height = o.videoHeight);
-                    const l = t.getContext("2d");
+                    const d = document.createElement("canvas");
+                    let t = (d.width = o.videoWidth),
+                        s = (d.height = o.videoHeight);
+                    const l = d.getContext("2d");
                     o.onresize = (e) => {
-                        (d = t.width = o.videoWidth), (s = t.height = o.videoHeight);
+                        (t = d.width = o.videoWidth), (s = d.height = o.videoHeight);
                     };
-                    const c = await t.captureStream();
+                    const c = await d.captureStream();
                     let u;
                     return (
                         A(i, c),
@@ -706,21 +712,21 @@
                             const A = r.videoWidth,
                                 a = r.videoHeight,
                                 n = s / 3,
-                                t = n * (A / a);
+                                d = n * (A / a);
                             l.save();
                             const c = Math.min(A, a),
                                 i = c / 2,
-                                m = Math.min(n, t),
-                                p = m / 2;
+                                h = Math.min(n, d),
+                                m = h / 2;
                             (function (e, A) {
                                 const { radius: a, x: n, y: o } = A;
                                 e.beginPath(), e.arc(n, o, a, 0, 2 * Math.PI), e.closePath(), e.clip();
-                            })(l, { radius: p, x: d - p, y: 0 + p }),
-                                l.translate(d, 0),
+                            })(l, { radius: m, x: t - m, y: 0 + m }),
+                                l.translate(t, 0),
                                 l.scale(-1, 1);
-                            const h = A / 2 - i,
+                            const p = A / 2 - i,
                                 D = a / 2 - i;
-                            l.drawImage(r, h, D, c, c, 0, 0, m, m), l.restore(), (u = requestAnimationFrame(e));
+                            l.drawImage(r, p, D, c, c, 0, 0, h, h), l.restore(), (u = requestAnimationFrame(e));
                         })(),
                         () => {
                             e(i) === c && A(i, void 0), void 0 !== u && cancelAnimationFrame(u);
@@ -732,4 +738,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3.e973f55a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3.eb6be84a.js.map

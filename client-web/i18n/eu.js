@@ -2498,41 +2498,6 @@
                     return "Gaia: " + e.topicName;
                 }),
                 o("ic6aa5f4", "Authenticated."),
-                o("c02e7e3c", "Kargatzen..."),
-                o("c5453f28", "Round of 64"),
-                o("eb256a86", "Round of 32"),
-                o("g77adc66", "Sweet Sixteen"),
-                o("a6d2520c", "Sweet 16"),
-                o("g5b63eb6", "Elite Eight"),
-                o("d8bf2890", "Elite 8"),
-                o("f9d3d6f2", "Final Four"),
-                o("bda24f7c", "Final 4"),
-                o("i5043440", "National Championship"),
-                o("fcb16026", "Championship"),
-                o("e9c89ee8", "East"),
-                o("h259fd86", "West"),
-                o("a7b2545a", "South"),
-                o("fdf7819a", "Midwest"),
-                o("i899e9b0", "Submit Bracket"),
-                o("c5b04394", "View Picks"),
-                o("h836bbae", "View Tournament"),
-                o("e1059d6c", "1st Round"),
-                o("b1602be4", "2nd Round"),
-                o("ef7bc2c0", "Mar 20-21"),
-                o("h726aaf2", "Mar 22-23"),
-                o("ee7cd198", "Mar 27-28"),
-                o("fed91402", "Mar 29-30"),
-                o("aba0a450", "Apr 5"),
-                o("jdfba2dc", "Apr 7"),
-                o("b7c6bc12", "TBD"),
-                o("c373612c", "Pick:"),
-                o("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                o("j5db9ddd", " over "),
-                o("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 o("j4c40da4", "Send now"),
                 o("b23688c8", "Undo timer"),
                 o("cca5d499", function (e) {
@@ -2978,8 +2943,8 @@
                 o("a7de64de", "Ads info"),
                 o("jb0a4c36", "Blog"),
                 o("ce6d095a", "Lanbideak"),
-                o("e0adec82", "Markaren baliabideak");
-            o("df1b7550", "Marketing"),
+                o("e0adec82", "Markaren baliabideak"),
+                o("df1b7550", "Marketing"),
                 o("he258678", "X for Business"),
                 o("c6f58084", "Developers"),
                 o("d83f18d2", "Directory"),
@@ -3013,8 +2978,8 @@
                 }),
                 o("d6d9aab6", "Gehitu laster-marka"),
                 o("bb89cf46", "Kendu laster-marka"),
-                o("a739d4ba", "Gehitu laster-marken karpetara"),
-                o("d5270434", "Exit"),
+                o("a739d4ba", "Gehitu laster-marken karpetara");
+            o("d5270434", "Exit"),
                 o("ac85c6b2", "Errore bat gertatu da irudia kargatzean"),
                 o("b327c12a", "Irudia"),
                 o("ic76bdf0", "Recreate this with Grok"),
@@ -3890,8 +3855,8 @@
                 o("a2bf8b8a", "Switch to listening"),
                 o("caa8d928", "Toggle noise suppression"),
                 o("b5d88f0c", "Employees only"),
-                o("c855ab8e", "Subscribers only");
-            o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                o("c855ab8e", "Subscribers only"),
+                o("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 o("e111f531", function (e) {
                     return e.count + " sintonizatuta";
                 }),
@@ -3939,8 +3904,8 @@
                 o("f2333850", "Share with people outside of X"),
                 o("cddb8097", "Learn more"),
                 o("f77997b0", "Co-host"),
-                o("i48f4ed8", "Bozgorailua"),
-                o("a77c8e02", "Entzulea"),
+                o("i48f4ed8", "Bozgorailua");
+            o("a77c8e02", "Entzulea"),
                 o("bdfa93eb", function (e) {
                     return e.name + " erabiltzaileak partekatua";
                 }),
@@ -4210,6 +4175,7 @@
                 o("f794af9a", "Fun mode"),
                 o("eccf9fea", "Regular mode"),
                 o("j22655f2", "Ask anything"),
+                o("c02e7e3c", "Kargatzen..."),
                 o("h0681e3e", "Talk to Grok, our AI assistant"),
                 o("d593fd78", "It can answer your questions, search X, and generate images"),
                 o("d0205a24", "Check the Facts"),
@@ -4294,7 +4260,6 @@
                 o("afa2a58e", "See all posts"),
                 o("fc83e7e2", "See all users"),
                 o("df601d92", "Relevant Users"),
-                o("b001fa12", "Source query"),
                 o("db6c20cf", function (e) {
                     return "Show all (" + e.count + ")";
                 }),
@@ -4377,7 +4342,7 @@
                 o("g3ce0132", "Thought for"),
                 o("f8007364", "Expand for details"),
                 o("ca53f780", "Collapse details"),
-                o("b52484b6", "Searching..."),
+                o("e6d51c62", "Searching"),
                 o("ib1c5475", function (e) {
                     return "Thought for " + e.minutes + "m " + e.seconds + "s";
                 }),
@@ -4395,6 +4360,7 @@
                 o("a3186bff", function (e) {
                     return e.count + " web page" + r(e.count, "", "s");
                 }),
+                o("b52484b6", "Searching..."),
                 o("f4146dda", "Which response do you prefer?"),
                 o("a2c2be32", "This will help make Grok better."),
                 o("g01599b6", "Response 1"),
@@ -4932,8 +4898,8 @@
                 o("b649d8cc", "Subscriber Only"),
                 o("j9282130", "Broadcast thumbnail"),
                 o("g629b8b0", "Timed Out"),
-                o("eb87323c", "This shows analytics data for the selected time period since the livestream happened.");
-            o("i6a75722", "Time Range"),
+                o("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
+                o("i6a75722", "Time Range"),
                 o("c602f5b8", "Guztira"),
                 o("b35e68ae", "Total Participants"),
                 o("h78ee79a", "Total Replay Watched"),
@@ -4962,8 +4928,8 @@
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access"),
-                o("gf898b70", "Advanced Search"),
+                o("ed99baea", "Early Beta Access");
+            o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
@@ -5884,8 +5850,8 @@
                 o("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 o("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 o("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                o("cc720e6a", "Community Notes is built on data transparency");
-            o("j2fcd33a", "Datuek ekarpen hauek biltzen dituzte: "),
+                o("cc720e6a", "Community Notes is built on data transparency"),
+                o("j2fcd33a", "Datuek ekarpen hauek biltzen dituzte: "),
                 o("d4a6b322", "All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you."),
                 o("c359263a", "Learn how to use and analyze Community Notes data "),
                 o("b8a27fe2", "gure gidan"),
@@ -5918,8 +5884,8 @@
                 o("e41c9b4f", function (e) {
                     return "Hemen gordeta: " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Ezabatu karpeta"),
-                o("f4ea967a", "Karpeta ezabatu da"),
+                o("h18f86a4", "Ezabatu karpeta");
+            o("f4ea967a", "Karpeta ezabatu da"),
                 o("b670aa62", "Karpetaren izena"),
                 o("aece5462", "Karpeta izena behar bezala eguneratu da"),
                 o("e3299b94", "Arazoren bat izan da. Saiatu berriro karpeta hori eguneratzen minutu bat barru."),
@@ -6890,8 +6856,8 @@
                 o("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 o("d3a427ce", "Select the level of experience required."),
                 o("i7174442", "Job Description"),
-                o("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
-            o("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                o("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
+                o("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 o("a5244ece", "Application URL (Required)"),
                 o("g2b553f6", "Enter the public URL where candidates can apply for this job."),
                 o("c2e77608", "Job Title (Required)"),
@@ -6924,8 +6890,8 @@
                 o("c924ad84", "Keep videos playing"),
                 o("de750a3c", "Enjoy them even when your phone is locked"),
                 o("he5e87c4", "Boost your replies"),
-                o("g64a60ba", "Get a small prioritization when you reply to posts"),
-                o("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
+                o("g64a60ba", "Get a small prioritization when you reply to posts");
+            o("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
                 o("fdd77a34", "Create longer posts"),
                 o("j6d26a7a", "Write as much as you’d like to share"),
                 o("c4fd68da", "Customize your experience"),
@@ -7866,7 +7832,45 @@
                 o("cfcac293", function (e) {
                     return "Gift & Pay " + e.price;
                 }),
-                o("d7a73450", "Tier");
+                o("d7a73450", "Tier"),
+                o("hbd2c24e", "This account is not eligible for gifts at this time."),
+                o("f3fddc98", "Purchaser Terms"),
+                o("cff9c889", "Learn more"),
+                o("c65dda96", "Your gift has been sent."),
+                o("f6e2a407", function (e) {
+                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
+                }),
+                o("j8dedddd", function (e) {
+                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
+                }),
+                o("c8a513f6", "Cancel Subscription"),
+                o("ea000ec8", "Already canceled your Subscription?"),
+                o("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
+                o("f4166d9a", "Want to cancel your Subscription?"),
+                o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
+                o("ee9efbc8", "Jarraitu uzteko"),
+                o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
+                o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
+                o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                o("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                o("a76d58ba", "Ads Analytics"),
+                o("eccd0e1a", "Organization Analytics"),
+                o("deea1708", "Want to view analytics across all your X accounts?"),
+                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                o("gf67aae4", "Upgrade to Full Access"),
+                o("h75e3618", "Include organization"),
+                o("h24a8862", "About this checkbox"),
+                o("c29e3a88", "Select affiliates"),
+                o("j8318d57", function (e) {
+                    return e.number + " affiliate" + r(e.number, "", "s");
+                }),
+                o("bf809ec0", "Select Affiliates"),
+                o("b719e224", "Emaitzarik ez"),
+                o("c9938100", "Bilatu emaitzak"),
+                o("d1a35ec6", "Add accounts"),
+                o("b437adda", "Upgrade to paid");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7905,47 +7909,9 @@
                     u(e, a)
                 );
             }
-            o("hbd2c24e", "This account is not eligible for gifts at this time."),
-                o("f3fddc98", "Purchaser Terms"),
-                o("cff9c889", "Learn more"),
-                o("c65dda96", "Your gift has been sent."),
-                o("f6e2a407", function (e) {
-                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
-                }),
-                o("j8dedddd", function (e) {
-                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
-                }),
-                o("c8a513f6", "Cancel Subscription"),
-                o("ea000ec8", "Already canceled your Subscription?"),
-                o("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
-                o("f4166d9a", "Want to cancel your Subscription?"),
-                o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                o("ee9efbc8", "Jarraitu uzteko"),
-                o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
-                o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                o("a76d58ba", "Ads Analytics"),
-                o("eccd0e1a", "Organization Analytics"),
-                o("deea1708", "Want to view analytics across all your X accounts?"),
-                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                o("gf67aae4", "Upgrade to Full Access"),
-                o("h75e3618", "Include organization"),
-                o("h24a8862", "About this checkbox"),
-                o("c29e3a88", "Select affiliates"),
-                o("j8318d57", function (e) {
-                    return e.number + " affiliate" + r(e.number, "", "s");
-                }),
-                o("bf809ec0", "Select Affiliates"),
-                o("b719e224", "Emaitzarik ez"),
-                o("c9938100", "Bilatu emaitzak"),
-                o("d1a35ec6", "Add accounts"),
-                o("b437adda", "Upgrade to paid"),
-                o("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
+            o("f1f6c88b", function (e) {
+                return "Accounts (" + e.count + ")";
+            }),
                 o("b02156b8", "Invitations"),
                 o("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
@@ -8898,8 +8864,8 @@
                 o("b3160a69", function (e) {
                     return "Ehuneko " + e.volumePercent;
                 }),
-                o("fb236728", "Pausatu");
-            o("e9bd453e", "Errepikatu"),
+                o("fb236728", "Pausatu"),
+                o("e9bd453e", "Errepikatu"),
                 o("d46b00b0", "Jump to live"),
                 o("ec8ab8b4", "Isilarazi"),
                 o("b8b6344a", "Desisilarazi"),
@@ -8946,8 +8912,8 @@
                 o("a7bf9962", "Download video"),
                 o("ccc97152", "Playback speed"),
                 o("h531ade0", "Video quality"),
-                o("e8b5757c", "0,25x"),
-                o("e7e954de", "0.5x"),
+                o("e8b5757c", "0,25x");
+            o("e7e954de", "0.5x"),
                 o("g07ffe66", "0,75x"),
                 o("d8bede9e", "1x"),
                 o("j41845c8", "1,25x"),
@@ -10499,12 +10465,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["By clicking Promote post you’re agreeing to the "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13380,4 +13340,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.a139584a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.acf7516a.js.map

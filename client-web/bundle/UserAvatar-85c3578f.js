@@ -138,7 +138,14 @@
                                         const s = (0, u.rs)(e.message);
                                         m.summary = (m.summary || "") + s;
                                         const t = (0, u.Bv)(e.message);
-                                        t ? (m.toolUsage = t) : ((m.bulletPoints = [...(m.bulletPoints || []), (0, n.K)(e.message)]), e.webResults && e.webResults.length && ((m.webResults = e.webResults), this.addWebResults(e.webResults || []))), (g = !0), (this.accumulatedSummary += s);
+                                        if (t) {
+                                            const e = (0, u.cU)(t);
+                                            e && (m.bulletPoints = [...(m.bulletPoints || []), e]);
+                                        } else {
+                                            const s = (0, n.K)(e.message);
+                                            s.trim() && (m.bulletPoints = [...(m.bulletPoints || []), s]), e.webResults && e.webResults.length && ((m.webResults = e.webResults), this.addWebResults(e.webResults || []));
+                                        }
+                                        (g = !0), (this.accumulatedSummary += s);
                                         break;
                                     }
                                     case h.DECISION: {
@@ -161,7 +168,14 @@
                                     case h.SUMMARY: {
                                         const t = (0, u.Bv)(e.message) ?? void 0,
                                             a = (0, u.rs)(e.message);
-                                        s = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsage: t };
+                                        let r = [];
+                                        if (t) {
+                                            const e = (0, u.cU)(t);
+                                            e && (r = [e]);
+                                        } else {
+                                            (0, n.K)(e.message).trim() && (r = [(0, n.K)(e.message)]);
+                                        }
+                                        s = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsage: t, bulletPoints: r };
                                         break;
                                     }
                                     case h.DECISION: {
@@ -290,4 +304,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-85c3578f.e0b7faba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-85c3578f.a173967a.js.map

@@ -81,8 +81,8 @@
                 i = r(457311),
                 c = r(111677),
                 u = r.n(c),
-                p = r(516951),
-                m = r(807896),
+                m = r(516951),
+                p = r(807896),
                 h = r(154003),
                 D = r(731708),
                 M = r(174326),
@@ -108,55 +108,55 @@
                         ? n.createElement(
                               M.Z,
                               { childrenStyle: P.buttons, style: P.container },
-                              o.map((o, r) => n.createElement(f, (0, m.Z)({ key: r }, e, { position: r }))),
+                              o.map((o, r) => n.createElement(f, (0, p.Z)({ key: r }, e, { position: r }))),
                           )
                         : null;
                 },
                 P = s.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, buttons: { marginHorizontal: e.spaces.space2 } }));
-            var k = r(325686),
+            var I = r(325686),
                 A = r(143778),
                 b = r(443781);
-            const I = n.createContext(Object.create(b.wp, Object.getOwnPropertyDescriptors({ gap: void 0, horizontalPadding: void 0, numRowsFromMetadata: void 0, scrollerDisplayType: d.m.Carousel }))),
-                T = I;
+            const k = n.createContext(Object.create(b.wp, Object.getOwnPropertyDescriptors({ gap: void 0, horizontalPadding: void 0, numRowsFromMetadata: void 0, scrollerDisplayType: d.m.Carousel }))),
+                T = k;
             var R = r(332878);
-            const E = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: o = R.Z, identityFunction: r, items: a, minimumOffscreenToViewportRatio: t = 0, nearEndProximityRatio: l = 0, nearStartProximityRatio: s = 0, noItemsRenderer: i = A.Z, preferredOffscreenToViewportRatio: c = 0, onAtEnd: u = p.Z, onAtStart: m = p.Z, onNearEnd: h = p.Z, onNearStart: D = p.Z, onPositionRestored: y = p.Z, renderer: f }, w) => {
-                    const { gap: P, horizontalPadding: b, numRowsFromMetadata: T, scrollerDisplayType: E = d.m.Carousel } = n.useContext(I),
-                        G = T || Z(a.length, E),
-                        C = n.useRef(0),
-                        F = (0, g.z)();
-                    n.useImperativeHandle(w, () => ({ isAtNewest: () => !0, scrollToNewest: () => (0, p.Z)(), adjustFocusBy: (e) => (0, p.Z)() }));
+            const E = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: o = R.Z, identityFunction: r, items: a, minimumOffscreenToViewportRatio: t = 0, nearEndProximityRatio: l = 0, nearStartProximityRatio: s = 0, noItemsRenderer: i = A.Z, preferredOffscreenToViewportRatio: c = 0, onAtEnd: u = m.Z, onAtStart: p = m.Z, onNearEnd: h = m.Z, onNearStart: D = m.Z, onPositionRestored: y = m.Z, renderer: f }, w) => {
+                    const { gap: P, horizontalPadding: b, numRowsFromMetadata: T, scrollerDisplayType: E = d.m.Carousel } = n.useContext(k),
+                        C = T || Z(a.length, E),
+                        F = n.useRef(0),
+                        G = (0, g.z)();
+                    n.useImperativeHandle(w, () => ({ isAtNewest: () => !0, scrollToNewest: () => (0, m.Z)(), adjustFocusBy: (e) => (0, m.Z)() }));
                     const S = n.useMemo(() => {
                             const e = [];
-                            for (let o = 0, t = 0; o < a.length; o += G, t++) {
-                                const d = a.slice(o, o + G),
+                            for (let o = 0, t = 0; o < a.length; o += C, t++) {
+                                const d = a.slice(o, o + C),
                                     l = n.createElement(
-                                        k.Z,
+                                        I.Z,
                                         { key: t },
                                         d.map((e) => n.createElement(n.Fragment, { key: r(e) }, f(e))),
                                     );
                                 e.push(l);
                             }
-                            return (C.current = e.length), e;
-                        }, [r, a, G, f]),
+                            return (F.current = e.length), e;
+                        }, [r, a, C, f]),
                         v = n.useCallback(
                             ({ index: e, intersectionRatio: o }) => {
-                                e === C.current - 1 && 1 === o && F.scribeAction("reached_end");
+                                e === F.current - 1 && 1 === o && G.scribeAction("reached_end");
                             },
-                            [F],
+                            [G],
                         ),
                         H = n.useCallback(
                             ({ next: e, previous: o }) => {
-                                o > e ? F.scribeAction("scroll_left") : o < e && F.scribeAction("scroll_right");
+                                o > e ? G.scribeAction("scroll_left") : o < e && G.scribeAction("scroll_right");
                             },
-                            [F],
+                            [G],
                         );
                     return a.length ? n.createElement(M.Z, { buttonsContainerStyle: { gap: P, paddingHorizontal: b }, onScroll: H, onVisibleRangeChange: v }, S) : i();
                 }),
                 Z = (e, o) => (o === d.m.GridCarousel && e >= 8 ? (e < 12 ? 2 : 3) : 1),
-                G = E;
-            var C = r(523561),
-                F = r(195560);
-            const S = (0, C.Z)({
+                C = E;
+            var F = r(523561),
+                G = r(195560);
+            const S = (0, F.Z)({
                 loader: () =>
                     Promise.all([
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -164,11 +164,18 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -178,14 +185,9 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
-                        r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
-                        r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
-                        r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
-                        r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                         r.e("ondemand.CarouselScroller"),
                     ]).then(r.bind(r, 153841)),
-                renderPlaceholder: (e, o) => n.createElement(F.Z, { hasError: e, onRetry: o }),
+                renderPlaceholder: (e, o) => n.createElement(G.Z, { hasError: e, onRetry: o }),
             });
             var v = r(262785),
                 H = r(768572),
@@ -226,9 +228,9 @@
                 }
                 render() {
                     const { applyReactionInstructions: e, canRefresh: o, dismissedEntries: r, module: a, moduleEntryId: t, numRowsFromMetadata: l, perfKey: s, renderEmptyState: i, richScribeAction: c, scrollerDisplayType: u } = this.props,
-                        m = this.getEntriesToRender(),
-                        h = this.getGap(m),
-                        D = this.getHorizontalPadding(m);
+                        p = this.getEntriesToRender(),
+                        h = this.getGap(p),
+                        D = this.getHorizontalPadding(p);
                     return n.createElement(
                         T.Provider,
                         { value: { gap: h, horizontalPadding: D, numRowsFromMetadata: l, scrollerDisplayType: u, ...this.context } },
@@ -241,7 +243,7 @@
                                   selectedPillGroup: this.state.selectedPillGroup,
                               })
                             : null,
-                        n.createElement(_.Z, { dismissedEntries: r, entries: this.getEntriesToRender(), entryConfiguration: (0, x.Z)({}, (0, O.G)({}), { [z.ZP.Tweet]: { handlers: { [B.Z.Media]: (0, K.mG)({ isCarouselItem: !0 }), [B.Z.MediaShort]: (0, K.UM)({ isCarouselItem: !0 }) } }, [z.ZP.User]: (0, N.Z)({ isCarouselItem: !0 }) }), perfKey: s }, (r, l) => n.createElement(H.ZP, { identifier: t }, n.createElement(v.Z, { applyReactionInstructions: e, canRefresh: o, clearActiveCover: p.Z, entries: l, handlerRegistry: r, initialFetchStatus: V.Z.LOADED, key: this.state.selectedPillGroup, module: a, onAtTop: p.Z, onRef: p.Z, perfKey: s, processCallback: p.Z, refreshControl: null, removeAlert: p.Z, renderEmptyState: i, richScribeAction: c, scroller: u === d.m.PagedCarousel ? S : G, timelineId: t, title: j, withKeyboardShortcuts: !1 }))),
+                        n.createElement(_.Z, { dismissedEntries: r, entries: this.getEntriesToRender(), entryConfiguration: (0, x.Z)({}, (0, O.G)({}), { [z.ZP.Tweet]: { handlers: { [B.Z.Media]: (0, K.mG)({ isCarouselItem: !0 }), [B.Z.MediaShort]: (0, K.UM)({ isCarouselItem: !0 }) } }, [z.ZP.User]: (0, N.Z)({ isCarouselItem: !0 }) }), perfKey: s }, (r, l) => n.createElement(H.ZP, { identifier: t }, n.createElement(v.Z, { applyReactionInstructions: e, canRefresh: o, clearActiveCover: m.Z, entries: l, handlerRegistry: r, initialFetchStatus: V.Z.LOADED, key: this.state.selectedPillGroup, module: a, onAtTop: m.Z, onRef: m.Z, perfKey: s, processCallback: m.Z, refreshControl: null, removeAlert: m.Z, renderEmptyState: i, richScribeAction: c, scroller: u === d.m.PagedCarousel ? S : C, timelineId: t, title: j, withKeyboardShortcuts: !1 }))),
                     );
                 }
             }
@@ -260,15 +262,15 @@
                     const {
                             content: { displayType: i, items: c = ee },
                             entryId: u,
-                            itemMetadata: p,
+                            itemMetadata: m,
                         } = a,
-                        m = i,
-                        h = m === d.m.GridCarousel ? p.moduleMetadata?.gridCarouselMetadata?.numRows : void 0;
-                    return n.createElement(U, { applyReactionInstructions: e, canRefresh: o, dismissedEntries: r, items: c, module: t, moduleEntryId: u, numRowsFromMetadata: h, perfKey: l, richScribeAction: s, scrollerDisplayType: m });
+                        p = i,
+                        h = p === d.m.GridCarousel ? m.moduleMetadata?.gridCarouselMetadata?.numRows : void 0;
+                    return n.createElement(U, { applyReactionInstructions: e, canRefresh: o, dismissedEntries: r, items: c, module: t, moduleEntryId: u, numRowsFromMetadata: h, perfKey: l, richScribeAction: s, scrollerDisplayType: p });
                 },
                 re = $(n.memo(oe)),
                 ae = t.iH({ component: re, isFocusable: (0, a.Z)(!0) }).getHandler();
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.15222bca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.f202e69a.js.map

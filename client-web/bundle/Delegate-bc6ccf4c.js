@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Delegate-bc6ccf4c", "loader.AudioDock", "bundle.AudioSpaceReport", "loader.AudioContextVoiceMedia", "icons/IconChevronRight-js", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["bundle.Delegate-bc6ccf4c", "loader.AudioDock", "bundle.AudioSpaceReport", "loader.AudioContextVoiceMedia", "icons/IconExiting-js"],
     {
         242454: (e, t, n) => {
             n.d(t, { Z: () => u });
@@ -290,8 +290,8 @@
                     const { "aria-posinset": e, "aria-setsize": t, checked: n, disabled: u, helpText: p, label: g, name: f, testID: b } = this.props,
                         y = c.Z.generate({ backgroundColor: h.default.theme.colors.transparent, color: h.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
                         C = c.Z.generate({ backgroundColor: h.default.theme.colors.transparent, color: h.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
-                        v = n ? y : C;
-                    return r.createElement(s.Z, { disabled: u }, (s) => r.createElement(o.Z, { role: "label", style: [m.root, !u && m.interactive], testID: b }, r.createElement(o.Z, { style: m.topContainer }, r.createElement(i.ZP, { id: this.labelId }, g), r.createElement(o.Z, { style: m.radioContainer }, r.createElement(d.Z, { interactiveStyles: v, interactivityState: s, style: m.radioBackground }, r.createElement(o.Z, { style: [m.circle, n && m.circleActive, u && m.circleDisabled, n && u && m.circleCheckedAndDisabled] }, n ? r.createElement(a.default, { style: m.checkMark }) : null)), (0, l.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: n, disabled: u, name: f, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), p ? r.createElement(i.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, p) : null));
+                        E = n ? y : C;
+                    return r.createElement(s.Z, { disabled: u }, (s) => r.createElement(o.Z, { role: "label", style: [m.root, !u && m.interactive], testID: b }, r.createElement(o.Z, { style: m.topContainer }, r.createElement(i.ZP, { id: this.labelId }, g), r.createElement(o.Z, { style: m.radioContainer }, r.createElement(d.Z, { interactiveStyles: E, interactivityState: s, style: m.radioBackground }, r.createElement(o.Z, { style: [m.circle, n && m.circleActive, u && m.circleDisabled, n && u && m.circleCheckedAndDisabled] }, n ? r.createElement(a.default, { style: m.checkMark }) : null)), (0, l.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: n, disabled: u, name: f, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), p ? r.createElement(i.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, p) : null));
                 }
                 focus() {
                     this._ref && this._ref.focus();
@@ -451,7 +451,7 @@
                 };
         },
         40644: (e, t, n) => {
-            n.d(t, { ZP: () => E });
+            n.d(t, { ZP: () => v });
             var r = n(202784),
                 o = n(325686),
                 a = n(461756),
@@ -469,37 +469,37 @@
                 b = n(280278);
             const y = m().e8d93005,
                 C = u.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
-                v = ({ color: e, count: t }) => {
+                E = ({ color: e, count: t }) => {
                     const n = (0, g.wl)(t, !0);
                     return r.createElement(f.ZP, null, ({ containerWidth: o }) => {
                         return r.createElement(b.ZP, { color: e, count: t, size: "subtext2", style: [C.count, ((a = o), a < u.default.theme.breakpoints.small && C.narrowCount)] }, t > 0 ? (((e) => e < u.default.theme.breakpoints.xxSmall)(o) || n.length >= 5 ? y(t) : n) : void 0);
                         var a;
                     });
                 };
-            class E extends r.PureComponent {
+            class v extends r.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._renderContent = (e, t) => {
                             const { activeColor: n, color: a, decoration: l } = this.props;
-                            return r.createElement(c.ZP.Consumer, null, ({ direction: s }) => r.createElement(i.ZP, { color: e ? n : a, dir: s, style: [x.inner, e && "blue500" === n && x.blue500] }, r.createElement(o.Z, { ref: this.props.actionIconContainerRef }, t ? this._renderButton(t) : null, this._renderIcon()), l, this._renderCount()));
+                            return r.createElement(c.ZP.Consumer, null, ({ direction: s }) => r.createElement(i.ZP, { color: e ? n : a, dir: s, style: [k.inner, e && "blue500" === n && k.blue500] }, r.createElement(o.Z, { ref: this.props.actionIconContainerRef }, t ? this._renderButton(t) : null, this._renderIcon()), l, this._renderCount()));
                         }),
                         (this._renderButton = (e) => {
                             const { activeColor: t, backgroundColor: n, hoverLabel: o, iconSize: a, isActive: i, isDisabled: c, showBackgroundWhenActive: d } = this.props,
                                 h = l.Z.generate({ backgroundColor: u.default.theme.colors[n], color: u.default.theme.colors[t], insetFocusRing: !0 }),
                                 p = d && i && !e?.isHovered;
-                            return r.createElement(s.Z, { hoverLabel: o, interactiveStyles: h, interactivityState: e, style: [u.default.absoluteFill, w[p ? "haloBackground" : n], !c && x.iconBackground, "small" === a && x.iconSmallBoundingBox, p && x.haloBoundingBox] });
+                            return r.createElement(s.Z, { hoverLabel: o, interactiveStyles: h, interactivityState: e, style: [u.default.absoluteFill, x[p ? "haloBackground" : n], !c && k.iconBackground, "small" === a && k.iconSmallBoundingBox, p && k.haloBoundingBox] });
                         }),
                         (this._renderIcon = () => {
                             const { ActiveIcon: e, iconSize: t, isActive: n, isDisabled: o, isFaded: i, onAnimationEnd: l, onAnimationStart: s, onError: c, showAnimation: p, transitionAnimationUrl: m } = this.props;
                             if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && p) return r.createElement(d.ZP, { animation: m || h.Bf, animationContainerStyle: Z[t], animationStyle: _, onAnimationEnd: l, onAnimationStart: s, onError: c });
                             {
                                 const a = n && e ? e : this.props.Icon;
-                                return r.createElement(a, { style: [Z[t], !o && i && x.iconFaded] });
+                                return r.createElement(a, { style: [Z[t], !o && i && k.iconFaded] });
                             }
                         }),
                         (this._renderCount = () => {
                             const { count: e, withCount: t } = this.props;
-                            return t ? r.createElement(v, { count: e }) : null;
+                            return t ? r.createElement(E, { count: e }) : null;
                         }),
                         (this._handlePress = (e) => {
                             const { onPress: t, renderWrapper: n } = this.props;
@@ -511,13 +511,13 @@
                         C = !u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled;
                     return r.createElement(
                         o.Z,
-                        { style: [x.root, b] },
+                        { style: [k.root, b] },
                         r.createElement(
                             f,
                             null,
                             c
                                 ? this._renderContent(i)
-                                : r.createElement(s.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: l, enableKeyboardShortcuts: n, focusable: t, interactiveStyles: null, keyboardShortcut: h, link: p, onClick: this._handlePress, preventFocusShift: m, renderMenu: g, style: [x.triggerAreaRoot, x.outlineNone], testID: y }, (e) => {
+                                : r.createElement(s.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: l, enableKeyboardShortcuts: n, focusable: t, interactiveStyles: null, keyboardShortcut: h, link: p, onClick: this._handlePress, preventFocusShift: m, renderMenu: g, style: [k.triggerAreaRoot, k.outlineNone], testID: y }, (e) => {
                                       const { isFocused: t, isHovered: n, isPressed: r } = e,
                                           o = i || n || r || t;
                                       return this._renderContent(o, e);
@@ -527,12 +527,12 @@
                     );
                 }
             }
-            E.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
+            v.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
             const Z = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
-                w = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
-                x = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                k = "224.5%",
-                _ = { width: k, height: k };
+                x = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
+                k = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
+                w = "224.5%",
+                _ = { width: w, height: w };
         },
         551611: (e, t, n) => {
             n.d(t, { Bf: () => o, ZP: () => i });
@@ -545,22 +545,7 @@
             }
             const i = new a();
         },
-        58399: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(717683),
-                l = n(347101);
-            const s = (e = {}) => {
-                const t = r.useContext(i.Z),
-                    { direction: n } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
-        246492: (e, t, n) => {
+        297896: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 o = n(890601),
@@ -568,20 +553,7 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        264171: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -598,39 +570,6 @@
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
-        },
-        262009: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        452693: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        465233: (e, t, n) => {
-            n.d(t, { Z: () => o });
-            var r = n(716406);
-            function o(e) {
-                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(o) : (0, r.Z)(e, (e) => o(e));
-            }
         },
         662678: (e, t, n) => {
             n.d(t, { G: () => o, Z: () => r });
@@ -650,4 +589,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-bc6ccf4c.2303d7ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-bc6ccf4c.7ea13a0a.js.map

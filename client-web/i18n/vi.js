@@ -2494,41 +2494,6 @@
                     return n.topicName + " Chủ đề";
                 }),
                 t("ic6aa5f4", "Đã xác thực."),
-                t("c02e7e3c", "Đang tải..."),
-                t("c5453f28", "Vòng 64 đội"),
-                t("eb256a86", "Vòng 32 đội"),
-                t("g77adc66", "Sweet Sixteen"),
-                t("a6d2520c", "Sweet 16"),
-                t("g5b63eb6", "Elite Eight"),
-                t("d8bf2890", "Elite 8"),
-                t("f9d3d6f2", "Final Four"),
-                t("bda24f7c", "Final 4"),
-                t("i5043440", "Giải vô địch quốc gia"),
-                t("fcb16026", "Vô địch"),
-                t("e9c89ee8", "Đông"),
-                t("h259fd86", "Tây"),
-                t("a7b2545a", "Nam"),
-                t("fdf7819a", "Trung tây"),
-                t("i899e9b0", "Gửi bảng đấu"),
-                t("c5b04394", "Xem lựa chọn"),
-                t("h836bbae", "Xem giải đấu"),
-                t("e1059d6c", "Vòng 1"),
-                t("b1602be4", "Vòng 2"),
-                t("ef7bc2c0", "20-21/3"),
-                t("h726aaf2", "22-23/3"),
-                t("ee7cd198", "27-28/3"),
-                t("fed91402", "29-30/3"),
-                t("aba0a450", "5/4"),
-                t("jdfba2dc", "7/4"),
-                t("b7c6bc12", "TBD"),
-                t("c373612c", "Chọn:"),
-                t("e8b3cab9", function (n) {
-                    return "" + n.winner;
-                }),
-                t("j5db9ddd", " thắng "),
-                t("a638617d", function (n) {
-                    return "" + n.loser;
-                }),
                 t("j4c40da4", "Gửi bây giờ"),
                 t("b23688c8", "Hoàn tác hẹn giờ"),
                 t("cca5d499", function (n) {
@@ -2974,8 +2939,8 @@
                 t("a7de64de", "Thông tin quảng cáo"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Nghề nghiệp"),
-                t("e0adec82", "Tài nguyên thương hiệu");
-            t("df1b7550", "Tiếp thị"),
+                t("e0adec82", "Tài nguyên thương hiệu"),
+                t("df1b7550", "Tiếp thị"),
                 t("he258678", "X dành cho doanh nghiệp"),
                 t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
@@ -3009,8 +2974,8 @@
                 }),
                 t("d6d9aab6", "Thêm dấu trang"),
                 t("bb89cf46", "Xóa dấu trang"),
-                t("a739d4ba", "Thêm vào Thư mục dấu trang"),
-                t("d5270434", "Thoát"),
+                t("a739d4ba", "Thêm vào Thư mục dấu trang");
+            t("d5270434", "Thoát"),
                 t("ac85c6b2", "Đã xảy ra lỗi khi tải hình ảnh này"),
                 t("b327c12a", "Hình ảnh"),
                 t("ic76bdf0", "Tạo lại bằng Grok"),
@@ -3886,8 +3851,8 @@
                 t("a2bf8b8a", "Chuyển sang nghe"),
                 t("caa8d928", "Bật/tắt khử tiếng ồn"),
                 t("b5d88f0c", "Chỉ dành cho nhân viên"),
-                t("c855ab8e", "Chỉ dành cho Người đăng ký");
-            t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
+                t("c855ab8e", "Chỉ dành cho Người đăng ký"),
+                t("ddeb0a3c", "Đây là cộng đồng. Thích những người này? Hãy ghé xem."),
                 t("e111f531", function (n) {
                     return n.count + " đã nghe";
                 }),
@@ -3935,8 +3900,8 @@
                 t("f2333850", "Chia sẻ với những người bên ngoài X"),
                 t("cddb8097", "Tìm hiểu thêm"),
                 t("f77997b0", "Đ.chủ phòng"),
-                t("i48f4ed8", "Người nói"),
-                t("a77c8e02", "Người nghe"),
+                t("i48f4ed8", "Người nói");
+            t("a77c8e02", "Người nghe"),
                 t("bdfa93eb", function (n) {
                     return "Được chia sẻ bởi " + n.name;
                 }),
@@ -4206,6 +4171,7 @@
                 t("f794af9a", "Chế độ hài hước"),
                 t("eccf9fea", "Chế độ thường"),
                 t("j22655f2", "Yêu cầu bất kỳ điều gì"),
+                t("c02e7e3c", "Đang tải..."),
                 t("h0681e3e", "Trò chuyện với Grok, trợ lý AI của chúng tôi"),
                 t("d593fd78", "Grok có thể giải đáp câu hỏi, tìm kiếm trên X và tạo hình ảnh"),
                 t("d0205a24", "Kiểm tra thông tin thực tế"),
@@ -4290,7 +4256,6 @@
                 t("afa2a58e", "Xem tất cả bài đăng"),
                 t("fc83e7e2", "Xem tất cả người dùng"),
                 t("df601d92", "Người dùng có liên quan"),
-                t("b001fa12", "Truy vấn nguồn"),
                 t("db6c20cf", function (n) {
                     return "Hiển thị tất cả (" + n.count + ")";
                 }),
@@ -4373,7 +4338,7 @@
                 t("g3ce0132", "Đã nghĩ trong"),
                 t("f8007364", "Mở rộng để xem chi tiết"),
                 t("ca53f780", "Thu gọn chi tiết"),
-                t("b52484b6", "Đang tìm kiếm..."),
+                t("e6d51c62", "Searching"),
                 t("ib1c5475", function (n) {
                     return "Đã suy nghĩ trong " + n.minutes + " phút " + n.seconds + "giây";
                 }),
@@ -4391,6 +4356,7 @@
                 t("a3186bff", function (n) {
                     return n.count + " trang web";
                 }),
+                t("b52484b6", "Đang tìm kiếm..."),
                 t("f4146dda", "Bạn thích phản hồi nào hơn?"),
                 t("a2c2be32", "Điều này sẽ giúp cải thiện Grok."),
                 t("g01599b6", "Phản hồi 1"),
@@ -4928,8 +4894,8 @@
                 t("b649d8cc", "Chỉ người đăng ký"),
                 t("j9282130", "Hình thu nhỏ của nguồn phát"),
                 t("g629b8b0", "Hết giờ"),
-                t("eb87323c", "Phần này hiển thị dữ liệu phân tích trong khoảng thời gian đã chọn kể từ khi phát trực tuyến.");
-            t("i6a75722", "Khoảng thời gian"),
+                t("eb87323c", "Phần này hiển thị dữ liệu phân tích trong khoảng thời gian đã chọn kể từ khi phát trực tuyến."),
+                t("i6a75722", "Khoảng thời gian"),
                 t("c602f5b8", "Tổng"),
                 t("b35e68ae", "Tổng số người tham gia"),
                 t("h78ee79a", "Tổng số lượt xem lại"),
@@ -4958,8 +4924,8 @@
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
                 t("if2909ba", "Thời gian xem"),
                 t("i0e5bf4c", "Video của bạn"),
-                t("ed99baea", "Quyền truy cập sớm vào bản beta"),
-                t("gf898b70", "Tìm kiếm nâng cao"),
+                t("ed99baea", "Quyền truy cập sớm vào bản beta");
+            t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
                 t("jb6f9292", 'chứa chính xác cụm từ "công ty khởi nghiệp ai"'),
@@ -5880,8 +5846,8 @@
                 t("fb59415e", "Để được hiển thị công khai dưới dạng ngữ cảnh trên bài đăng, ghi chép cần được đánh giá là hữu ích bởi đủ số người với nhiều quan điểm khác nhau. Cách tiếp cận này giúp tránh trường hợp thiên vị và thao túng, đồng thời giúp tìm ra các ghi chép hữu ích cho nhiều người."),
                 t("f9a44022", "Công ty X không chọn nội dung hiển thị: mọi người sẽ làm việc đó"),
                 t("gdf4fbb2", "Công ty X không viết, đánh giá hoặc kiểm duyệt các ghi chép (trừ phi chúng vi phạm các Quy tắc của X). Chúng tôi tin rằng việc cho mọi người đưa ra tiếng nói của mình để cùng nhau đưa ra những lựa chọn này là cách công bằng và hiệu quả trong việc thêm thông tin để giúp mọi người được cập nhật thông tin tốt hơn."),
-                t("cc720e6a", "Ghi chép cho cộng đồng được xây dựng dựa trên tính minh bạch của dữ liệu");
-            t("j2fcd33a", "Dữ liệu bao gồm các đóng góp cho đến"),
+                t("cc720e6a", "Ghi chép cho cộng đồng được xây dựng dựa trên tính minh bạch của dữ liệu"),
+                t("j2fcd33a", "Dữ liệu bao gồm các đóng góp cho đến"),
                 t("d4a6b322", "Tất cả dữ liệu Ghi chép cho cộng đồng đều được công bố hàng ngày tại đây, do đó mọi người có quyền truy cập miễn phí để phân tích dữ liệu, xác định vấn đề và tìm ra các cơ hội để cải thiện Ghi chép cho cộng đồng. Chúng tôi rất nóng lòng được học hỏi cùng các bạn."),
                 t("c359263a", "Tìm hiểu cách sử dụng và phân tích dữ liệu Ghi chép cho cộng đồng "),
                 t("b8a27fe2", "trong hướng dẫn của chúng tôi"),
@@ -5914,8 +5880,8 @@
                 t("e41c9b4f", function (n) {
                     return "Saved to " + n.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Xóa thư mục"),
-                t("f4ea967a", "Thư mục đã bị xóa"),
+                t("h18f86a4", "Xóa thư mục");
+            t("f4ea967a", "Thư mục đã bị xóa"),
                 t("b670aa62", "Tên thư mục"),
                 t("aece5462", "Tên thư mục đã được cập nhật thành công"),
                 t("e3299b94", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
@@ -6886,8 +6852,8 @@
                 t("b36cd50e", "Chỉ định nhóm cốt lõi mà ứng viên sẽ làm việc cùng sau khi được tuyển dụng."),
                 t("d3a427ce", "Chọn mức độ kinh nghiệm cần thiết."),
                 t("i7174442", "Mô tả công việc"),
-                t("fef0cf02", "Cung cấp bản mô tả công việc chi tiết. Nêu phác thảo những trách nhiệm và trình độ chuyên môn chính để giúp ứng viên hiểu rõ ràng về vai trò này.");
-            t("b7800bec", "Giới thiệu công việc trong tối đa 200 ký tự. Hiển thị trong bài đăng, đề xuất và tìm kiếm."),
+                t("fef0cf02", "Cung cấp bản mô tả công việc chi tiết. Nêu phác thảo những trách nhiệm và trình độ chuyên môn chính để giúp ứng viên hiểu rõ ràng về vai trò này."),
+                t("b7800bec", "Giới thiệu công việc trong tối đa 200 ký tự. Hiển thị trong bài đăng, đề xuất và tìm kiếm."),
                 t("a5244ece", "URL ứng tuyển (Bắt buộc)"),
                 t("g2b553f6", "Nhập URL công khai mà ứng viên có thể ứng tuyển cho việc làm này."),
                 t("c2e77608", "Chức danh (Bắt buộc)"),
@@ -6920,8 +6886,8 @@
                 t("c924ad84", "Duy trì phát video"),
                 t("de750a3c", "Thoải mái tận hưởng kể cả khi điện thoại bị khóa"),
                 t("he5e87c4", "Ưu tiên câu trả lời của bạn"),
-                t("g64a60ba", "Được ưu tiên mức độ thấp khi bạn trả lời bài đăng"),
-                t("a7ee832a", "Sửa chính tả và lỗi sai, lên đến 60 phút"),
+                t("g64a60ba", "Được ưu tiên mức độ thấp khi bạn trả lời bài đăng");
+            t("a7ee832a", "Sửa chính tả và lỗi sai, lên đến 60 phút"),
                 t("fdd77a34", "Tạo bài đăng dài hơn"),
                 t("j6d26a7a", "Tha hồ viết bài chia sẻ"),
                 t("c4fd68da", "Tùy chỉnh trải nghiệm của bạn"),
@@ -7862,7 +7828,45 @@
                 t("cfcac293", function (n) {
                     return "Tặng và thanh toán " + n.price;
                 }),
-                t("d7a73450", "Cấp");
+                t("d7a73450", "Cấp"),
+                t("hbd2c24e", "Hiện tại, tài khoản này không đủ điều kiện nhận quà."),
+                t("f3fddc98", "Điều khoản người mua hàng"),
+                t("cff9c889", "Tìm hiểu thêm"),
+                t("c65dda96", "Quà của bạn đã được gửi đi."),
+                t("f6e2a407", function (n) {
+                    return "Cho phép mọi người nhìn thấy huy hiệu Đã đăng ký của bạn khi bạn trả lời bài đăng của @" + n.screenName;
+                }),
+                t("j8dedddd", function (n) {
+                    return "Khi bạn tắt tùy chọn này, @" + n.screenName + " và Người đăng ký theo dõi họ vẫn sẽ thấy huy hiệu của bạn nếu bạn trả lời bài đăng dành riêng cho Người đăng ký theo dõi @" + n.screenName + ". @" + n.screenName + " sẽ luôn thấy huy hiệu của bạn.";
+                }),
+                t("c8a513f6", "Hủy thuê bao"),
+                t("ea000ec8", "Bạn đã hủy Thuê bao của mình?"),
+                t("d7b8387e", "Nếu bạn đã hủy, bạn không cần phải làm gì nữa. Thuê bao của bạn sẽ tự động hết hạn vào cuối chu kỳ thanh toán."),
+                t("f4166d9a", "Bạn muốn hủy Thuê bao?"),
+                t("b74ff5fc", "Nếu bạn hủy, Thuê bao của bạn sẽ tự động hết hạn vào cuối chu kỳ thanh toán."),
+                t("ee9efbc8", "Tiếp tục hủy"),
+                t("c5d9c77a", "Có vẻ như đã gặp phải một ít trục trặc. Tuy nhiên, đừng lo lắng, đó không phải là lỗi của bạn. Hãy đóng cửa sổ này. rồi thử lại."),
+                t("jda53c24", "Bạn có thể hủy Thuê bao của mình thông qua Apple App Store."),
+                t("g0a7a53e", "Bạn có thể hủy Thuê bao của mình thông qua Google Play Store."),
+                t("i5f14be7", function (n) {
+                    return "Chào mừng quay trở lại, " + n.displayName;
+                }),
+                t("a76d58ba", "Số liệu phân tích quảng cáo"),
+                t("eccd0e1a", "Số liệu phân tích về tổ chức"),
+                t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
+                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp."),
+                t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
+                t("h75e3618", "Bao gồm tổ chức"),
+                t("h24a8862", "Giới thiệu về hộp đánh dấu này"),
+                t("c29e3a88", "Chọn bên liên kết"),
+                t("j8318d57", function (n) {
+                    return n.number + " bên liên kết";
+                }),
+                t("bf809ec0", "Chọn bên liên kết"),
+                t("b719e224", "Không có kết quả"),
+                t("c9938100", "Kết quả tìm kiếm"),
+                t("d1a35ec6", "Thêm tài khoản"),
+                t("b437adda", "Nâng cấp lên gói trả phí");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7901,47 +7905,9 @@
                     a(n, h)
                 );
             }
-            t("hbd2c24e", "Hiện tại, tài khoản này không đủ điều kiện nhận quà."),
-                t("f3fddc98", "Điều khoản người mua hàng"),
-                t("cff9c889", "Tìm hiểu thêm"),
-                t("c65dda96", "Quà của bạn đã được gửi đi."),
-                t("f6e2a407", function (n) {
-                    return "Cho phép mọi người nhìn thấy huy hiệu Đã đăng ký của bạn khi bạn trả lời bài đăng của @" + n.screenName;
-                }),
-                t("j8dedddd", function (n) {
-                    return "Khi bạn tắt tùy chọn này, @" + n.screenName + " và Người đăng ký theo dõi họ vẫn sẽ thấy huy hiệu của bạn nếu bạn trả lời bài đăng dành riêng cho Người đăng ký theo dõi @" + n.screenName + ". @" + n.screenName + " sẽ luôn thấy huy hiệu của bạn.";
-                }),
-                t("c8a513f6", "Hủy thuê bao"),
-                t("ea000ec8", "Bạn đã hủy Thuê bao của mình?"),
-                t("d7b8387e", "Nếu bạn đã hủy, bạn không cần phải làm gì nữa. Thuê bao của bạn sẽ tự động hết hạn vào cuối chu kỳ thanh toán."),
-                t("f4166d9a", "Bạn muốn hủy Thuê bao?"),
-                t("b74ff5fc", "Nếu bạn hủy, Thuê bao của bạn sẽ tự động hết hạn vào cuối chu kỳ thanh toán."),
-                t("ee9efbc8", "Tiếp tục hủy"),
-                t("c5d9c77a", "Có vẻ như đã gặp phải một ít trục trặc. Tuy nhiên, đừng lo lắng, đó không phải là lỗi của bạn. Hãy đóng cửa sổ này. rồi thử lại."),
-                t("jda53c24", "Bạn có thể hủy Thuê bao của mình thông qua Apple App Store."),
-                t("g0a7a53e", "Bạn có thể hủy Thuê bao của mình thông qua Google Play Store."),
-                t("i5f14be7", function (n) {
-                    return "Chào mừng quay trở lại, " + n.displayName;
-                }),
-                t("a76d58ba", "Số liệu phân tích quảng cáo"),
-                t("eccd0e1a", "Số liệu phân tích về tổ chức"),
-                t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
-                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp."),
-                t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
-                t("h75e3618", "Bao gồm tổ chức"),
-                t("h24a8862", "Giới thiệu về hộp đánh dấu này"),
-                t("c29e3a88", "Chọn bên liên kết"),
-                t("j8318d57", function (n) {
-                    return n.number + " bên liên kết";
-                }),
-                t("bf809ec0", "Chọn bên liên kết"),
-                t("b719e224", "Không có kết quả"),
-                t("c9938100", "Kết quả tìm kiếm"),
-                t("d1a35ec6", "Thêm tài khoản"),
-                t("b437adda", "Nâng cấp lên gói trả phí"),
-                t("f1f6c88b", function (n) {
-                    return "Tài khoản (" + n.count + ")";
-                }),
+            t("f1f6c88b", function (n) {
+                return "Tài khoản (" + n.count + ")";
+            }),
                 t("b02156b8", "Lời mời"),
                 t("gd67d29b", function (n) {
                     return "Lời mời (" + n.count + ")";
@@ -8894,8 +8860,8 @@
                 t("b3160a69", function (n) {
                     return n.volumePercent + " phần trăm";
                 }),
-                t("fb236728", "Tạm dừng");
-            t("e9bd453e", "Phát lại"),
+                t("fb236728", "Tạm dừng"),
+                t("e9bd453e", "Phát lại"),
                 t("d46b00b0", "Nhảy đến phiên phát trực tuyến"),
                 t("ec8ab8b4", "Tắt tiếng"),
                 t("b8b6344a", "Bỏ tắt tiếng"),
@@ -8942,8 +8908,8 @@
                 t("a7bf9962", "Tải xuống video"),
                 t("ccc97152", "Tốc độ phát lại"),
                 t("h531ade0", "Chất lượng video"),
-                t("e8b5757c", "0.25x"),
-                t("e7e954de", "0.5x"),
+                t("e8b5757c", "0.25x");
+            t("e7e954de", "0.5x"),
                 t("g07ffe66", "0.75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1.25x"),
@@ -10491,12 +10457,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Bằng việc nhấp vào Quảng bá bài đăng, bạn đồng ý với "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13372,4 +13332,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.0516a12a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.ae3f448a.js.map

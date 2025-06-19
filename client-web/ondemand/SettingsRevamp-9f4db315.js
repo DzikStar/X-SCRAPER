@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.SettingsRevamp-9f4db315"],
+    ["ondemand.SettingsRevamp-9f4db315", "shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows~ondemand.SettingsAwards~bundle.SuperFollow"],
     {
         155074: (e) => {
             e.exports = { queryId: "83Gg0lfI-47Z3-ZOxyUjiQ", operationName: "ClearGrokConversations", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -55,881 +55,1109 @@
         936961: (e) => {
             e.exports = { queryId: "NEMw3cw4v0-Oo-nTMI8reQ", operationName: "SwitchTier", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
-        6157: (e, t, r) => {
+        6157: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => A });
-            var n = r(468811),
-                a = r.n(n),
-                o = r(163889),
-                i = r(155074),
-                s = r.n(i),
-                c = r(491156),
-                l = r.n(c),
-                d = r(645513),
-                u = r.n(d),
-                _ = r(470969),
-                p = r.n(_),
-                m = r(374709),
-                g = r.n(m),
-                f = r(709401),
-                b = r.n(f),
-                h = r(965508),
-                y = r.n(h),
-                w = r(416024),
-                v = r.n(w),
-                k = r(716442),
-                x = r.n(k),
-                C = r(985289),
-                Z = r.n(C),
-                E = r(524816),
-                S = r.n(E),
-                P = r(917665),
-                T = r.n(P),
-                I = r(587068),
-                D = r.n(I);
-            function A({ apiClient: e }) {
+            a.d(t, { Z: () => I });
+            var r = a(468811),
+                n = a.n(r),
+                i = a(163889),
+                o = a(155074),
+                s = a.n(o),
+                c = a(491156),
+                l = a.n(c),
+                d = a(645513),
+                p = a.n(d),
+                u = a(470969),
+                _ = a.n(u),
+                g = a(374709),
+                h = a.n(g),
+                m = a(709401),
+                b = a.n(m),
+                f = a(965508),
+                A = a.n(f),
+                w = a(416024),
+                v = a.n(w),
+                y = a(716442),
+                x = a.n(y),
+                C = a(985289),
+                k = a.n(C),
+                S = a(524816),
+                T = a.n(S),
+                Z = a(917665),
+                P = a.n(Z),
+                E = a(587068),
+                B = a.n(E);
+            function I({ apiClient: e }) {
                 return {
-                    clearConversations: (t, r) => e.graphQL(s(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, o.ZP)("GraphQL clear grok conversations failed."), e)),
-                    setPreferences: ({ grokMode: t, grokModelOptionId: r }) => e.graphQL(D(), { grokMode: t, grokModelOptionId: r }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
-                    fetchConversation: ({ restId: t }) => e.graphQL(u(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(Z(), { grok_share_id: t }).then((e) => e),
-                    fetchGrokHome: () => e.graphQL(g(), {}).then((e) => e),
-                    fetchHistory: ({ cursor: t }) => e.graphQL(p(), { cursor: t }).then((e) => e),
+                    clearConversations: (t, a) => e.graphQL(s(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, i.ZP)("GraphQL clear grok conversations failed."), e)),
+                    setPreferences: ({ grokMode: t, grokModelOptionId: a }) => e.graphQL(B(), { grokMode: t, grokModelOptionId: a }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, i.ZP)("GraphQL set grok preferences failed."), e)),
+                    fetchConversation: ({ restId: t }) => e.graphQL(p(), { restId: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(k(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokHome: () => e.graphQL(h(), {}).then((e) => e),
+                    fetchHistory: ({ cursor: t }) => e.graphQL(_(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(b(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(x(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
-                    deleteMessage: ({ chat_item_id: t, conversation_id: r }) => e.graphQL(l(), { conversation_id: r, chat_item_id: t }).then((e) => e),
-                    logUserEventGrok: ({ action_type: t, group_id: r, object_id: n }) => e.graphQL(T(), { group_id: r, object_id: n, action_type: t }).then((e) => e),
-                    grokPinConversation: ({ conversationId: t }) => e.graphQL(y(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
-                    uploadFile: ({ abortController: t, file: r }) => {
-                        const n = new FormData();
-                        return n.append("image", r), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": a().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
+                    deleteMessage: ({ chat_item_id: t, conversation_id: a }) => e.graphQL(l(), { conversation_id: a, chat_item_id: t }).then((e) => e),
+                    logUserEventGrok: ({ action_type: t, group_id: a, object_id: r }) => e.graphQL(P(), { group_id: a, object_id: r, action_type: t }).then((e) => e),
+                    grokPinConversation: ({ conversationId: t }) => e.graphQL(A(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(T(), { conversationId: t }).then((e) => e),
+                    uploadFile: ({ abortController: t, file: a }) => {
+                        const r = new FormData();
+                        return r.append("image", a), e.postForm("grok/attachment", r, {}, { "x-xai-request-id": n().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
                     },
                 };
             }
         },
-        878636: (e, t, r) => {
+        878636: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => n });
-            const n = ({ apiClient: e }) => ({ register: ({ device_id: t, ...r }) => e.post("keyregistry/register", r, {}, { "X-Client-UUID": t, "content-type": "application/json" }, ""), extractPublicKeys: (t = []) => Promise.all(t.map((t) => e.get(`keyregistry/extract_public_keys/${t}`, {}, {}, "").then(({ public_keys: e = [] }) => e.map(({ identity_key: e, ...r }) => ({ user_id: t, identity_key: e, ...r }))))).then((e) => e.flat()) });
+            a.d(t, { Z: () => r });
+            const r = ({ apiClient: e }) => ({ register: ({ device_id: t, ...a }) => e.post("keyregistry/register", a, {}, { "X-Client-UUID": t, "content-type": "application/json" }, ""), extractPublicKeys: (t = []) => Promise.all(t.map((t) => e.get(`keyregistry/extract_public_keys/${t}`, {}, {}, "").then(({ public_keys: e = [] }) => e.map(({ identity_key: e, ...a }) => ({ user_id: t, identity_key: e, ...a }))))).then((e) => e.flat()) });
         },
-        372551: (e, t, r) => {
+        372551: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => p });
-            var n = r(376920),
-                a = r.n(n),
-                o = r(722687),
-                i = r.n(o),
-                s = r(758526),
-                c = r.n(s),
-                l = r(284360),
-                d = r.n(l),
-                u = r(936961),
-                _ = r.n(u);
-            const p = ({ apiClient: e, featureSwitches: t }) => ({ fetchSubscriptionProductDetails: (t) => e.graphQL(d(), t).then((e) => e.web_subscription_product_details), fetchSubscriptionProductCheckoutUrl: (t) => e.graphQL(c(), t).then((e) => e.subscriptioncheckoutsession_create_for_blue?.session_url), fetchNotABotCheckoutUrl: (t) => e.graphQL(i(), t).then((e) => e.subscriptioncheckoutsession_create_for_not_a_bot?.session_url), fetchProductSubscriptions: (t) => e.graphQL(a(), t).then((e) => e.viewer_v2?.list_product_subscriptions), switchTier: (t) => e.graphQL(_(), t).then((e) => e) });
+            a.d(t, { Z: () => _ });
+            var r = a(376920),
+                n = a.n(r),
+                i = a(722687),
+                o = a.n(i),
+                s = a(758526),
+                c = a.n(s),
+                l = a(284360),
+                d = a.n(l),
+                p = a(936961),
+                u = a.n(p);
+            const _ = ({ apiClient: e, featureSwitches: t }) => ({ fetchSubscriptionProductDetails: (t) => e.graphQL(d(), t).then((e) => e.web_subscription_product_details), fetchSubscriptionProductCheckoutUrl: (t) => e.graphQL(c(), t).then((e) => e.subscriptioncheckoutsession_create_for_blue?.session_url), fetchNotABotCheckoutUrl: (t) => e.graphQL(o(), t).then((e) => e.subscriptioncheckoutsession_create_for_not_a_bot?.session_url), fetchProductSubscriptions: (t) => e.graphQL(n(), t).then((e) => e.viewer_v2?.list_product_subscriptions), switchTier: (t) => e.graphQL(u(), t).then((e) => e) });
         },
-        290402: (e, t, r) => {
+        290402: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => m });
-            var n = r(807896),
-                a = r(202784),
-                o = r(182056),
-                i = r(879113),
-                s = r(392237),
-                c = r(111677),
-                l = r.n(c),
-                d = r(968478);
-            const u = l().aa6e3300,
-                _ = ({ retryMessage: e, ...t }, r) => {
-                    const s = o.Z.isOnline();
-                    return a.createElement(i.Z, (0, n.Z)({}, t, { icon: s ? void 0 : a.createElement(d.default, { style: p.icon }), retryMessage: s ? e : u }));
+            a.d(t, { Z: () => g });
+            var r = a(807896),
+                n = a(202784),
+                i = a(182056),
+                o = a(879113),
+                s = a(392237),
+                c = a(111677),
+                l = a.n(c),
+                d = a(968478);
+            const p = l().aa6e3300,
+                u = ({ retryMessage: e, ...t }, a) => {
+                    const s = i.Z.isOnline();
+                    return n.createElement(o.Z, (0, r.Z)({}, t, { icon: s ? void 0 : n.createElement(d.default, { style: _.icon }), retryMessage: s ? e : p }));
                 },
-                p = s.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                m = a.forwardRef(_);
+                _ = s.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                g = n.forwardRef(u);
         },
-        860747: (e, t, r) => {
+        980407: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => v });
-            var n = r(181188),
-                a = r(202784),
-                o = (r(585488), r(277660)),
-                i = r.n(o),
-                s = r(731708),
-                c = r(392237),
-                l = r(111677),
-                d = r.n(l),
-                u = r(856151),
-                _ = r(443781),
-                p = r(518180),
-                m = r(534763),
-                g = r(603e3),
-                f = r(794721);
+            a.d(t, { Z: () => h, w: () => _ });
+            var r = a(202784),
+                n = a(325686),
+                i = a(108362),
+                o = a(386802),
+                s = a(392237),
+                c = a(652904),
+                l = a(555079),
+                d = a(625661),
+                p = a(449067),
+                u = a(715601);
+            class _ extends r.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._renderChildViewAppBar = () => {
+                            const { appBarRef: e, appBarStyle: t, backButtonType: a, backLocation: i, centerTitle: o, hideBackButton: s, history: c, isFullWidth: p, isLarge: u, middleControl: _, onBackClick: h, rightControl: m, secondaryBar: b, subtitle: f, title: A } = this.props,
+                                { isModal: w } = this.context;
+                            return r.createElement(n.Z, { style: w ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, r.createElement(d.ZP, { backButtonType: a || (w ? "close" : "back"), backLocation: i, centerTitle: o, fixed: !w, hideBackButton: s, history: c, isFullWidth: p, isLarge: u, middleControl: _, onBackClick: h, ref: e, rightControl: m, secondaryBar: b, style: [w && g.appBarModal, t], subtitle: f, title: A, titleDomId: l.Q_ }));
+                        }),
+                        (this._handleLayout = (e) => {
+                            const { onLayout: t } = this.props,
+                                { isModal: a } = this.context;
+                            t && (a ? window.requestAnimationFrame(() => t(e)) : t(e));
+                        });
+                }
+                render() {
+                    const { "aria-hidden": e, bottomBar: t, children: a, containerStyle: o, documentTitle: s, isFullWidth: l, isLarge: d, renderHeader: _, title: h, withoutBottomBarMobile: m } = this.props,
+                        { isModal: b } = this.context,
+                        f = _ ? _(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return r.createElement(c.Z, null, r.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: h }), r.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, b && g.rootModal] }, !b && f, r.createElement(i.Z, { isFullWidth: l, isLarge: d, style: [g.container, b && g.containerModal, o] }, b ? r.createElement(u.Z, { style: g.viewport }, f, a) : a), t ? r.createElement(n.Z, { style: [g.bottomBarModal, !b && !m && g.bottomBarMobile] }, r.createElement(i.Z, { isFullWidth: l, isLarge: d }, t)) : null));
+                }
+            }
+            (_.defaultProps = { isFullWidth: !1, isLarge: !1 }), (_.contextType = o.Z);
+            const g = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: s.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
+                h = _;
+        },
+        860747: (e, t, a) => {
+            "use strict";
+            a.d(t, { Z: () => v });
+            var r = a(181188),
+                n = a(202784),
+                i = (a(585488), a(277660)),
+                o = a.n(i),
+                s = a(731708),
+                c = a(392237),
+                l = a(111677),
+                d = a.n(l),
+                p = a(856151),
+                u = a(443781),
+                _ = a(518180),
+                g = a(534763),
+                h = a(603e3),
+                m = a(794721);
             const b = d().j087774e,
-                h = d().df837dac,
-                y = n.Z,
+                f = d().df837dac,
+                A = r.Z,
                 w = ({ user: e }) => {
-                    const { featureSwitches: t } = a.useContext(_.rC),
-                        r = t.isTrue("creator_monetization_web_tips_dashboard_enabled"),
-                        n = i()(y, e);
-                    return r && n.award_eligible ? a.createElement(a.Fragment, null, a.createElement(m.H, { Icon: u.default, description: a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: k.spacing }, a.createElement(f.Z, { revenueType: g.AU.awards_revenue, title: h, user: n })), label: b, link: p.OB.dashboard.root })) : null;
+                    const { featureSwitches: t } = n.useContext(u.rC),
+                        a = t.isTrue("creator_monetization_web_tips_dashboard_enabled"),
+                        r = o()(A, e);
+                    return a && r.award_eligible ? n.createElement(n.Fragment, null, n.createElement(g.H, { Icon: p.default, description: n.createElement(s.ZP, { color: "gray700", size: "subtext2", style: y.spacing }, n.createElement(m.Z, { revenueType: h.AU.awards_revenue, title: f, user: r })), label: b, link: _.OB.dashboard.root })) : null;
                 },
-                v = a.memo(w),
-                k = c.default.create((e) => ({ spacing: { marginTop: e.spaces.space4 } }));
+                v = n.memo(w),
+                y = c.default.create((e) => ({ spacing: { marginTop: e.spaces.space4 } }));
         },
-        281629: (e, t, r) => {
+        281629: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => p });
-            var n = r(202784),
-                a = r(325686),
-                o = r(731708),
-                i = r(868634),
-                s = r(909377),
-                c = r(757483),
-                l = r(392237),
-                d = r(779610),
-                u = r(725405);
-            const _ = ({ disabled: e = !1, formattedPayoutAmount: t, scribeComponent: r, styleOverride: _, ...p }) => {
-                    const g = (0, u.Z)(),
-                        { Icon: f, description: b, heading: h, iconBGColor: y, id: w, link: v, pill: k } = p,
-                        x = n.useMemo(() => n.createElement(a.Z, { style: m.description }, n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, b), t && n.createElement(o.ZP, { size: "subtext2", style: m.amount, weight: "bold" }, t)), [b, t]),
-                        C = n.useMemo(() => n.createElement(a.Z, { style: m.heading }, k && n.createElement(i.ZP, { background: k.color }, n.createElement(o.ZP, { size: "subtext3", weight: "medium" }, k.label)), n.createElement(o.ZP, { weight: "bold" }, h)), [h, k]),
-                        Z = n.useMemo(() => n.createElement(s.Z, { Icon: f, shape: "square", style: { backgroundColor: c.Z.hexToCss(l.default.theme.colors[y], 0.8) } }), [f, y]),
-                        E = n.useCallback(() => {
-                            g.scribe({ component: r, action: "click" });
-                        }, [g, r]);
-                    return n.createElement(d.Z, { description: x, disabled: e, label: C, link: v, onPress: v ? E : void 0, paddingHorizontal: "space8", styleOverride: _, testID: w, thumbnail: Z });
+            a.d(t, { Z: () => _ });
+            var r = a(202784),
+                n = a(325686),
+                i = a(731708),
+                o = a(868634),
+                s = a(909377),
+                c = a(757483),
+                l = a(392237),
+                d = a(779610),
+                p = a(725405);
+            const u = ({ disabled: e = !1, formattedPayoutAmount: t, scribeComponent: a, styleOverride: u, ..._ }) => {
+                    const h = (0, p.Z)(),
+                        { Icon: m, description: b, heading: f, iconBGColor: A, id: w, link: v, pill: y } = _,
+                        x = r.useMemo(() => r.createElement(n.Z, { style: g.description }, r.createElement(i.ZP, { color: "gray700", size: "subtext2" }, b), t && r.createElement(i.ZP, { size: "subtext2", style: g.amount, weight: "bold" }, t)), [b, t]),
+                        C = r.useMemo(() => r.createElement(n.Z, { style: g.heading }, y && r.createElement(o.ZP, { background: y.color }, r.createElement(i.ZP, { size: "subtext3", weight: "medium" }, y.label)), r.createElement(i.ZP, { weight: "bold" }, f)), [f, y]),
+                        k = r.useMemo(() => r.createElement(s.Z, { Icon: m, shape: "square", style: { backgroundColor: c.Z.hexToCss(l.default.theme.colors[A], 0.8) } }), [m, A]),
+                        S = r.useCallback(() => {
+                            h.scribe({ component: a, action: "click" });
+                        }, [h, a]);
+                    return r.createElement(d.Z, { description: x, disabled: e, label: C, link: v, onPress: v ? S : void 0, paddingHorizontal: "space8", styleOverride: u, testID: w, thumbnail: k });
                 },
-                p = n.memo(_),
-                m = l.default.create((e) => ({ heading: { flexDirection: "column", gap: e.spaces.space2 }, description: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", color: e.colors.gray700 }, amount: { flexBasis: "auto", flexGrow: 0, flexShrink: 0 } }));
+                _ = r.memo(u),
+                g = l.default.create((e) => ({ heading: { flexDirection: "column", gap: e.spaces.space2 }, description: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", color: e.colors.gray700 }, amount: { flexBasis: "auto", flexGrow: 0, flexShrink: 0 } }));
         },
-        794721: (e, t, r) => {
+        794721: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => m });
-            var n = r(658156),
-                a = r(202784),
-                o = (r(585488), r(277660)),
-                i = r.n(o),
-                s = r(536606),
-                c = r(111677),
-                l = r.n(c),
-                d = r(603e3);
-            const u = l().df29646e,
-                _ = n.Z,
-                p = (e) => {
-                    const { user: t, revenueType: r = d.AU.superfollows_revenue, title: n = u } = e,
-                        o = i()(_, t),
-                        [c, l] = (0, d.$)(o, r),
-                        [p, m] = (0, d.LF)(o),
-                        g = a.useMemo(() => ({ color: "primary" }), []),
-                        f = a.useMemo(() => ({ label: `/${m}`, value: l }), [l, m]);
-                    return a.createElement(s.Z, { progressBarConfig: g, statConfig: f, title: n, valueCurrent: c, valueMax: p });
+            a.d(t, { Z: () => g });
+            var r = a(658156),
+                n = a(202784),
+                i = (a(585488), a(277660)),
+                o = a.n(i),
+                s = a(536606),
+                c = a(111677),
+                l = a.n(c),
+                d = a(603e3);
+            const p = l().df29646e,
+                u = r.Z,
+                _ = (e) => {
+                    const { user: t, revenueType: a = d.AU.superfollows_revenue, title: r = p } = e,
+                        i = o()(u, t),
+                        [c, l] = (0, d.$)(i, a),
+                        [_, g] = (0, d.LF)(i),
+                        h = n.useMemo(() => ({ color: "primary" }), []),
+                        m = n.useMemo(() => ({ label: `/${g}`, value: l }), [l, g]);
+                    return n.createElement(s.Z, { progressBarConfig: h, statConfig: m, title: r, valueCurrent: c, valueMax: _ });
                 },
-                m = a.memo(p);
+                g = n.memo(_);
         },
-        199213: (e, t, r) => {
+        199213: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => Z });
-            var n = r(202784),
-                a = r(325686),
-                o = r(844685),
-                i = r(731708),
-                s = r(154003),
-                c = r(392237),
-                l = r(111677),
-                d = r.n(l),
-                u = r(720816);
-            const _ = d().f139168e,
-                p = d().ee0510c2,
-                m = Object.freeze({ earnings: { link: "/settings/monetization/earnings", text: _, size: "xLarge" }, payoutHistory: { link: "/settings/monetization/payout_history", text: p } }),
-                g = (e) => {
+            a.d(t, { Z: () => k });
+            var r = a(202784),
+                n = a(325686),
+                i = a(844685),
+                o = a(731708),
+                s = a(154003),
+                c = a(392237),
+                l = a(111677),
+                d = a.n(l),
+                p = a(720816);
+            const u = d().f139168e,
+                _ = d().ee0510c2,
+                g = Object.freeze({ earnings: { link: "/settings/monetization/earnings", text: u, size: "xLarge" }, payoutHistory: { link: "/settings/monetization/payout_history", text: _ } }),
+                h = (e) => {
                     const { type: t } = e;
                     if (!t) return null;
-                    const { link: r, size: a, text: o } = m[t];
-                    return n.createElement(s.ZP, { link: r, size: a, style: b.button }, o);
+                    const { link: a, size: n, text: i } = g[t];
+                    return r.createElement(s.ZP, { link: a, size: n, style: b.button }, i);
                 },
-                f = n.memo(g),
+                m = r.memo(h),
                 b = c.default.create((e) => ({ button: { marginVertical: e.spaces.space16 } }));
-            var h = r(794721);
-            const y = d().b0ac642a,
+            var f = a(794721);
+            const A = d().b0ac642a,
                 w = d().df29646e,
                 v = d().c747df1c,
-                k = d().ac814a76,
-                x = { pathname: u.NW.stripeSetup, state: { cameFromEarningsDashboard: !0 } },
+                y = d().ac814a76,
+                x = { pathname: p.NW.stripeSetup, state: { cameFromEarningsDashboard: !0 } },
                 C = (e) => {
-                    const { revenueType: t, showHelperText: r, showProgress: c, stripeStatus: l, type: d, user: u } = e;
-                    return "Completed" !== l ? n.createElement(a.Z, { style: E.root }, n.createElement(o.Z, { text: w }), n.createElement(i.ZP, { color: "gray700", style: E.subtext }, k), n.createElement(s.ZP, { link: x }, v)) : n.createElement(a.Z, { style: E.root }, c && n.createElement(h.Z, { revenueType: t, user: u }), r && n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, y), n.createElement(f, { type: d }));
+                    const { revenueType: t, showHelperText: a, showProgress: c, stripeStatus: l, type: d, user: p } = e;
+                    return "Completed" !== l ? r.createElement(n.Z, { style: S.root }, r.createElement(i.Z, { text: w }), r.createElement(o.ZP, { color: "gray700", style: S.subtext }, y), r.createElement(s.ZP, { link: x }, v)) : r.createElement(n.Z, { style: S.root }, c && r.createElement(f.Z, { revenueType: t, user: p }), a && r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, A), r.createElement(m, { type: d }));
                 },
-                Z = n.memo(C),
-                E = c.default.create((e) => ({ root: { padding: e.spaces.space16 }, subtext: { marginVertical: e.spaces.space12, textAlign: "center" } }));
+                k = r.memo(C),
+                S = c.default.create((e) => ({ root: { padding: e.spaces.space16 }, subtext: { marginVertical: e.spaces.space12, textAlign: "center" } }));
         },
-        253518: (e, t, r) => {
+        253518: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => w });
-            var n = r(228820),
-                a = r(202784),
-                o = (r(585488), r(277660)),
-                i = r.n(o),
-                s = r(731708),
-                c = r(392237),
-                l = r(111677),
-                d = r.n(l),
-                u = r(491831),
-                _ = r(518180),
-                p = r(720816),
-                m = r(534763),
-                g = r(794721);
-            const f = d().d7b51c68,
+            a.d(t, { Z: () => w });
+            var r = a(228820),
+                n = a(202784),
+                i = (a(585488), a(277660)),
+                o = a.n(i),
+                s = a(731708),
+                c = a(392237),
+                l = a(111677),
+                d = a.n(l),
+                p = a(491831),
+                u = a(518180),
+                _ = a(720816),
+                g = a(534763),
+                h = a(794721);
+            const m = d().d7b51c68,
                 b = d().df837dac,
-                h = n.Z,
-                y = (e) => {
-                    const { description: t, isActiveCreator: r, user: n } = e,
-                        o = i()(h, n);
-                    return a.createElement(m.H, { Icon: u.default, description: t || (r && a.createElement(s.ZP, { color: "gray700", size: "subtext2", style: v.spacing }, a.createElement(g.Z, { title: b, user: o }))), iconColor: "plum500", label: f, link: r ? _.Vt.dashboard.root : p.Jz });
+                f = r.Z,
+                A = (e) => {
+                    const { description: t, isActiveCreator: a, user: r } = e,
+                        i = o()(f, r);
+                    return n.createElement(g.H, { Icon: p.default, description: t || (a && n.createElement(s.ZP, { color: "gray700", size: "subtext2", style: v.spacing }, n.createElement(h.Z, { title: b, user: i }))), iconColor: "plum500", label: m, link: a ? u.Vt.dashboard.root : _.Jz });
                 },
-                w = a.memo(y),
+                w = n.memo(A),
                 v = c.default.create((e) => ({ spacing: { marginTop: e.spaces.space4 } }));
         },
-        603e3: (e, t, r) => {
+        603e3: (e, t, a) => {
             "use strict";
-            r.d(t, { $: () => d, AU: () => l, Hx: () => _, LF: () => u });
-            var n = r(689438),
-                a = r(551652),
-                o = r(737722),
-                i = (r(585488), r(277660)),
-                s = r.n(i),
-                c = r(97882);
+            a.d(t, { $: () => d, AU: () => l, Hx: () => u, LF: () => p });
+            var r = a(689438),
+                n = a(551652),
+                i = a(737722),
+                o = (a(585488), a(277660)),
+                s = a.n(o),
+                c = a(97882);
             const l = { superfollows_revenue: "superfollows_revenue", awards_revenue: "awards_revenue", total_revenue: "total_revenue" },
                 d = (e, t = l.superfollows_revenue) => {
-                    const r = s()(o.Z, e),
-                        n = r[t]?.revenue_since_last_payout_in_cents ?? 0;
-                    return [n, (0, c.x)({ amount: n, formatter: 100 })];
+                    const a = s()(i.Z, e),
+                        r = a[t]?.revenue_since_last_payout_in_cents ?? 0;
+                    return [r, (0, c.x)({ amount: r, formatter: 100 })];
                 },
-                u = (e) => {
-                    const t = s()(a.Z, e).creator_payout_threshold.payout_minimum_threshold_in_usd_cents ?? 0;
+                p = (e) => {
+                    const t = s()(n.Z, e).creator_payout_threshold.payout_minimum_threshold_in_usd_cents ?? 0;
                     return [t, (0, c.x)({ amount: t, formatter: 100 })];
                 },
-                _ = (e, t = l.superfollows_revenue) => {
-                    const r = s()(n.Z, e),
-                        a = r[t]?.all_time_revenue_in_cents ?? 0;
-                    return [a, (0, c.x)({ amount: a, formatter: 100 })];
+                u = (e, t = l.superfollows_revenue) => {
+                    const a = s()(r.Z, e),
+                        n = a[t]?.all_time_revenue_in_cents ?? 0;
+                    return [n, (0, c.x)({ amount: n, formatter: 100 })];
                 };
         },
-        534763: (e, t, r) => {
+        534763: (e, t, a) => {
             "use strict";
-            r.d(t, { H: () => l, b: () => d });
-            var n = r(807896),
-                a = r(202784),
-                o = r(392237),
-                i = r(779610);
+            a.d(t, { H: () => l, b: () => d });
+            var r = a(807896),
+                n = a(202784),
+                i = a(392237),
+                o = a(779610);
             const s = (e) => {
-                    const { Icon: t, iconColor: r, testID: n } = e;
-                    return a.createElement(t, { style: r ? { color: o.default.theme.colors[r] } : c.thumbnail, testID: n });
+                    const { Icon: t, iconColor: a, testID: r } = e;
+                    return n.createElement(t, { style: a ? { color: i.default.theme.colors[a] } : c.thumbnail, testID: r });
                 },
-                c = o.default.create((e) => ({ thumbnail: { color: e.colors.gray700 } }));
+                c = i.default.create((e) => ({ thumbnail: { color: e.colors.gray700 } }));
             function l(e) {
-                const { Icon: t, iconColor: r, testID: o, ...c } = e;
-                return a.createElement(i.Z, (0, n.Z)({}, c, { thumbnail: a.createElement(s, { Icon: t, iconColor: r, testID: o }), thumbnailSize: "large" }));
+                const { Icon: t, iconColor: a, testID: i, ...c } = e;
+                return n.createElement(o.Z, (0, r.Z)({}, c, { thumbnail: n.createElement(s, { Icon: t, iconColor: a, testID: i }), thumbnailSize: "large" }));
             }
             function d(e) {
-                const { link: t, ...r } = e;
-                return a.createElement(i.Z, (0, n.Z)({}, r, { link: { external: !0, pathname: e.link } }));
+                const { link: t, ...a } = e;
+                return n.createElement(o.Z, (0, r.Z)({}, a, { link: { external: !0, pathname: e.link } }));
             }
         },
-        873372: (e, t, r) => {
+        698537: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => Z });
-            var n = r(520512),
-                a = r(795738),
-                o = r(202784),
-                i = (r(585488), r(712696)),
-                s = r.n(i),
-                c = r(351743),
-                l = r.n(c),
-                d = r(954110),
-                u = r(420412),
-                _ = r(844685),
-                p = r(943401),
-                m = r(111677),
-                g = r.n(m),
-                f = r(443781),
-                b = r(736063);
-            const h = g().b5fe50fc,
-                y = g().c31a2ea6,
-                w = g().if996630,
-                v = a.Z,
-                k = n.Z;
+            a.d(t, { j: () => vt, Z: () => yt });
+            var r = a(202784),
+                n = a(325686),
+                i = a(530525),
+                o = a(439592),
+                s = a(392237);
+            const c = a.p + "Arrow.bbf355fa.png",
+                l = a.p + "Arrow@2x.1079fd3a.png",
+                d = a.p + "Arrow@3x.4bb73bfa.png",
+                p = a.p + "Award.68be832a.png",
+                u = a.p + "Award@2x.a0c59f8a.png",
+                _ = a.p + "Award@3x.7a6f947a.png",
+                g = a.p + "Badge.22294b2a.png",
+                h = a.p + "Badge@2x.c1db7fca.png",
+                m = a.p + "Badge@3x.abdf748a.png",
+                b = a.p + "Bench.ed6113aa.png",
+                f = a.p + "Bench@2x.49eea9ea.png",
+                A = a.p + "Bench@3x.eb78fbba.png",
+                w = a.p + "Bonus.b7580a8a.png",
+                v = a.p + "Bonus@2x.be02885a.png",
+                y = a.p + "Bonus@3x.f1da98aa.png",
+                x = a.p + "Cat.581a02ca.png",
+                C = a.p + "Cat@2x.f2c0bc6a.png",
+                k = a.p + "Cat@3x.e8bbed5a.png",
+                S = a.p + "Chat.62494e6a.png",
+                T = a.p + "Chat@2x.f6eeca0a.png",
+                Z = a.p + "Chat@3x.dd8438ca.png",
+                P = a.p + "Clipboard.279374fa.png",
+                E = a.p + "Clipboard@2x.13b4b63a.png",
+                B = a.p + "Clipboard@3x.a07957da.png",
+                I = a.p + "Cog.788d351a.png",
+                D = a.p + "Cog@2x.3528d16a.png",
+                L = a.p + "Cog@3x.e4185e9a.png",
+                M = a.p + "Coin.684ea18a.png",
+                R = a.p + "Coin@2x.9e02069a.png",
+                U = a.p + "Coin@3x.d5ecbc9a.png",
+                z = a.p + "CoinPurse.5e7e5f2a.png",
+                G = a.p + "CoinPurse@2x.62abfada.png",
+                H = a.p + "CoinPurse@3x.6b9f5d0a.png",
+                N = a.p + "CoinsHand.f6f5813a.png",
+                F = a.p + "CoinsHand@2x.0da86fba.png",
+                q = a.p + "CoinsHand@3x.371d543a.png",
+                Q = a.p + "CoinsStairs.295fdeaa.png",
+                V = a.p + "CoinsStairs@2x.22eb2a2a.png",
+                K = a.p + "CoinsStairs@3x.ea04943a.png",
+                j = a.p + "CoinsThumbs.d702e22a.png",
+                O = a.p + "CoinsThumbs@2x.b8a2cd1a.png",
+                W = a.p + "CoinsThumbs@3x.695f875a.png",
+                Y = a.p + "Cone.e7e68c9a.png",
+                J = a.p + "Cone@2x.94d66a1a.png",
+                X = a.p + "Cone@3x.f471865a.png",
+                $ = a.p + "ConfusedDog.f329e38a.png",
+                ee = a.p + "ConfusedDog@2x.74c93d1a.png",
+                te = a.p + "ConfusedDog@3x.baf8e90a.png",
+                ae = a.p + "Cross.eed0ff5a.png",
+                re = a.p + "Cross@2x.6824943a.png",
+                ne = a.p + "Cross@3x.5959505a.png",
+                ie = a.p + "Crown.65bc0d5a.png",
+                oe = a.p + "DiscoGlobe.ed123c4a.png",
+                se = a.p + "DiscoGlobe@2x.525325ea.png",
+                ce = a.p + "DiscoGlobe@3x.490e4c6a.png",
+                le = a.p + "FirstAid.962ae7ea.png",
+                de = a.p + "FirstAid@2x.0964005a.png",
+                pe = a.p + "FirstAid@3x.b6884b1a.png",
+                ue = a.p + "Gem.6a25e93a.png",
+                _e = a.p + "Gem@2x.9fdab1ea.png",
+                ge = a.p + "Gem@3x.9f51f0ca.png",
+                he = a.p + "Heart.a7bdca8a.png",
+                me = a.p + "Heart@2x.a3108cea.png",
+                be = a.p + "Heart@3x.2866f2fa.png",
+                fe = a.p + "LifeSaver.19af1fba.png",
+                Ae = a.p + "LifeSaver@2x.5f9465aa.png",
+                we = a.p + "LifeSaver@3x.3cde1caa.png",
+                ve = a.p + "Lightbulb.632a0dea.png",
+                ye = a.p + "Lightbulb@2x.ea0a7dca.png",
+                xe = a.p + "Lightbulb@3x.d47fac7a.png",
+                Ce = a.p + "NoEntry.89a117aa.png",
+                ke = a.p + "NoEntry@2x.6460d27a.png",
+                Se = a.p + "NoEntry@3x.cf8e946a.png",
+                Te = a.p + "OneFinger.2700aaaa.png",
+                Ze = a.p + "OneFinger@2x.d52597aa.png",
+                Pe = a.p + "OneFinger@3x.ff8ba62a.png",
+                Ee = a.p + "PaperAirplane.89b2359a.png",
+                Be = a.p + "PaperAirplane@2x.9fec7eda.png",
+                Ie = a.p + "PaperAirplane@3x.7a3f9cfa.png",
+                De = a.p + "Pencil.6ac7a9aa.png",
+                Le = a.p + "Pencil@2x.e6d394ca.png",
+                Me = a.p + "Pencil@3x.7e45c2ea.png",
+                Re = a.p + "PiggyBank.571af82a.png",
+                Ue = a.p + "PiggyBank@2x.f6b3cb1a.png",
+                ze = a.p + "PiggyBank@3x.f166bc1a.png",
+                Ge = a.p + "Plant.2e93bbba.png",
+                He = a.p + "Plant@2x.5660c14a.png",
+                Ne = a.p + "Plant@3x.60b6685a.png",
+                Fe = a.p + "Puzzle.5148ca8a.png",
+                qe = a.p + "Puzzle@2x.33f30e6a.png",
+                Qe = a.p + "Puzzle@3x.3231b3aa.png",
+                Ve = a.p + "PuzzlePieces.5917591a.png",
+                Ke = a.p + "PuzzlePieces@2x.d239439a.png",
+                je = a.p + "PuzzlePieces@3x.ed9bd73a.png",
+                Oe = a.p + "Ribbon.a0d66a6a.png",
+                We = a.p + "Ribbon@2x.d981e09a.png",
+                Ye = a.p + "Ribbon@3x.d6c8e50a.png",
+                Je = a.p + "Spheres.c33c7b9a.png",
+                Xe = a.p + "Spheres@2x.6b6732fa.png",
+                $e = a.p + "Spheres@3x.5e58c98a.png",
+                et = a.p + "Star.2714eb9a.png",
+                tt = a.p + "Star@2x.25a57fda.png",
+                at = a.p + "Star@3x.206f9d8a.png",
+                rt = a.p + "Success.ff2ef23a.png",
+                nt = a.p + "Success@2x.97486aea.png",
+                it = a.p + "Success@3x.915e6dea.png",
+                ot = a.p + "ThumbsUp.0e3bffda.png",
+                st = a.p + "ThumbsUp@2x.38e7642a.png",
+                ct = a.p + "ThumbsUp@3x.ff9b6b0a.png",
+                lt = a.p + "TrafficBarricade.067c8a9a.png",
+                dt = a.p + "TrafficBarricade@2x.9bde865a.png",
+                pt = a.p + "TrafficBarricade@3x.338b3bea.png",
+                ut = a.p + "TrafficBarricadeAlt.926ac6aa.png",
+                _t = a.p + "TrafficBarricadeAlt@2x.6cf6d65a.png",
+                gt = a.p + "TrafficBarricadeAlt@3x.aaf995da.png",
+                ht = a.p + "TrafficLight.125db8da.png",
+                mt = a.p + "TrafficLight@2x.c00a4f7a.png",
+                bt = a.p + "TrafficLight@3x.c4bb5b8a.png",
+                ft = a.p + "TrashCan.7ed1704a.png",
+                At = a.p + "TrashCan@2x.79c8ba3a.png",
+                wt = a.p + "TrashCan@3x.91184baa.png",
+                vt = {
+                    ConfusedDog: { variants: [$, ee, te], width: 465, height: 186 },
+                    Success: { variants: [rt, nt, it], width: 465, height: 186 },
+                    Arrow: { variants: [c, l, d], width: 147, height: 100 },
+                    Bench: { variants: [b, f, A], width: 311, height: 215 },
+                    Blank: { variants: ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATcAAADXAQAAAABXaiupAAAAAnRSTlMAAHaTzTgAAAAfSURBVHgB7cExAQAAAMIg+6c2xT5gJAAAAAAAAAAADiGYAAHjEk89AAAAAElFTkSuQmCC", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAm4AAAGuAQAAAAAB07eXAAAAAnRSTlMAAHaTzTgAAAA4SURBVHgB7cEBDQAAAMIg+6c2xzdgIQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAGEsgABSmlaDAAAAABJRU5ErkJggg==", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA6UAAAKFAQAAAAAcgXJpAAAAAnRSTlMAAHaTzTgAAABfSURBVHgB7cGBAAAAAMOg+1MfZNUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIO8pXQABmRxXNgAAAABJRU5ErkJggg=="], width: 311, height: 215 },
+                    Cat: { variants: [x, C, k], width: 311, height: 215 },
+                    Clipboard: { variants: [P, E, B], width: 233, height: 161 },
+                    CoinsHand: { variants: [N, F, q], width: 233, height: 161 },
+                    CoinsStairs: { variants: [Q, V, K], width: 311, height: 215 },
+                    CoinsThumbs: { variants: [j, O, W], width: 311, height: 215 },
+                    OneFinger: { variants: [Te, Ze, Pe], width: 311, height: 215 },
+                    PaperAirplane: { variants: [Ee, Be, Ie], width: 311, height: 215 },
+                    Puzzle: { variants: [Fe, qe, Qe], width: 311, height: 215 },
+                    ThumbsUp: { variants: [ot, st, ct], width: 311, height: 215 },
+                    TrafficBarricade: { variants: [lt, dt, pt], width: 311, height: 215 },
+                    TrafficBarricadeAlt: { variants: [ut, _t, gt], width: 311, height: 215 },
+                    TrafficLight: { variants: [ht, mt, bt], width: 147, height: 100 },
+                    UTurn: { variants: [a.p + "UTurn.619b3aaa.png", a.p + "UTurn@2x.83237a8a.png", a.p + "UTurn@3x.67d2b35a.png"], width: 311, height: 215 },
+                    DiscoGlobe: { variants: [oe, se, ce], width: 311, height: 215 },
+                    Award: { variants: [p, u, _], width: 80, height: 96 },
+                    Badge: { variants: [g, h, m], width: 48, height: 48 },
+                    Crown: { variants: [ie], width: 88, height: 88 },
+                    Bonus: { variants: [w, v, y], width: 48, height: 48 },
+                    Gem: { variants: [ue, _e, ge], width: 48, height: 48 },
+                    Chat: { variants: [S, T, Z], width: 36, height: 36 },
+                    Cog: { variants: [I, D, L], width: 36, height: 36 },
+                    Coin: { variants: [M, R, U], width: 36, height: 36 },
+                    CoinPurse: { variants: [z, G, H], width: 36, height: 36 },
+                    Cone: { variants: [Y, J, X], width: 36, height: 36 },
+                    Cross: { variants: [ae, re, ne], width: 36, height: 36 },
+                    FirstAid: { variants: [le, de, pe], width: 36, height: 36 },
+                    Heart: { variants: [he, me, be], width: 36, height: 36 },
+                    LifeSaver: { variants: [fe, Ae, we], width: 36, height: 36 },
+                    Lightbulb: { variants: [ve, ye, xe], width: 36, height: 36 },
+                    NoEntry: { variants: [Ce, ke, Se], width: 36, height: 36 },
+                    Pencil: { variants: [De, Le, Me], width: 36, height: 36 },
+                    PiggyBank: { variants: [Re, Ue, ze], width: 36, height: 36 },
+                    Plant: { variants: [Ge, He, Ne], width: 36, height: 36 },
+                    PuzzlePieces: { variants: [Ve, Ke, je], width: 36, height: 36 },
+                    Ribbon: { variants: [Oe, We, Ye], width: 36, height: 36 },
+                    Spheres: { variants: [Je, Xe, $e], width: 36, height: 36 },
+                    Star: { variants: [et, tt, at], width: 36, height: 36 },
+                    TrashCan: { variants: [ft, At, wt], width: 36, height: 36 },
+                    Wallet: { variants: [a.p + "Wallet.0ca9943a.png", a.p + "Wallet@2x.d3b0554a.png", a.p + "Wallet@3x.90c942fa.png"], width: 36, height: 36 },
+                },
+                yt = (e) => {
+                    const { "aria-label": t = "", style: a, type: s, width: c = s.width } = e,
+                        {
+                            aspectRatio: l,
+                            customVariants: d,
+                            image: p,
+                        } = ((e) => {
+                            const { height: t, variants: a, width: r } = e;
+                            return { aspectRatio: r / t, image: { url: a[0], width: r * (a.length + 1), height: t * (a.length + 1) }, customVariants: a.map((e, a) => ({ uri: e, width: r * (a + 1), height: t * (a + 1) })) };
+                        })(s),
+                        u = { width: c, height: Math.round(c / l) };
+                    return r.createElement(n.Z, { style: [xt.illustration, a, u] }, r.createElement(i.Z, { "aria-label": t, aspectMode: o.Z.exact(l), customVariants: d, draggable: !1, image: p }));
+                },
+                xt = s.default.create((e) => ({ illustration: { alignSelf: "center" } }));
+        },
+        873372: (e, t, a) => {
+            "use strict";
+            a.d(t, { Z: () => k });
+            var r = a(520512),
+                n = a(795738),
+                i = a(202784),
+                o = (a(585488), a(712696)),
+                s = a.n(o),
+                c = a(351743),
+                l = a.n(c),
+                d = a(954110),
+                p = a(420412),
+                u = a(844685),
+                _ = a(943401),
+                g = a(111677),
+                h = a.n(g),
+                m = a(443781),
+                b = a(736063);
+            const f = h().b5fe50fc,
+                A = h().c31a2ea6,
+                w = h().if996630,
+                v = n.Z,
+                y = r.Z;
             function x() {
                 const e = s()(v, {}),
-                    [t] = l()(k),
-                    r = !!e.user_preferences?.allow_gambling_ads,
-                    n = o.useCallback(() => {
-                        function n(t) {
-                            const n = e.user_preferences?.__id;
-                            if (n) {
-                                const e = t.get(n);
-                                e && e.setValue(!r, "allow_gambling_ads");
+                    [t] = l()(y),
+                    a = !!e.user_preferences?.allow_gambling_ads,
+                    r = i.useCallback(() => {
+                        function r(t) {
+                            const r = e.user_preferences?.__id;
+                            if (r) {
+                                const e = t.get(r);
+                                e && e.setValue(!a, "allow_gambling_ads");
                             }
                         }
-                        t({ optimisticUpdater: n, updater: n, variables: { allowGamblingAds: !r } });
-                    }, [r, e, t]);
-                return o.createElement(d.Z, { checked: r, label: w, name: "allowGamblingPersonalization", onChange: n });
+                        t({ optimisticUpdater: r, updater: r, variables: { allowGamblingAds: !a } });
+                    }, [a, e, t]);
+                return i.createElement(d.Z, { checked: a, label: w, name: "allowGamblingPersonalization", onChange: r });
             }
             const C = { context: "ads_categories_container" };
-            function Z() {
-                const { featureSwitches: e } = (0, f.QZ)();
-                return e.isTrue("ad_categories_setting_enabled") ? o.createElement(o.Fragment, null, o.createElement(u.Z, null), o.createElement(_.Z, { text: h }), o.createElement(p.Z, { description: y }), o.createElement(b.H, { errorConfig: C }, o.createElement(x, null)), o.createElement(u.Z, null)) : null;
+            function k() {
+                const { featureSwitches: e } = (0, m.QZ)();
+                return e.isTrue("ad_categories_setting_enabled") ? i.createElement(i.Fragment, null, i.createElement(p.Z, null), i.createElement(u.Z, { text: f }), i.createElement(_.Z, { description: A }), i.createElement(b.H, { errorConfig: C }, i.createElement(x, null)), i.createElement(p.Z, null)) : null;
             }
         },
-        664918: (e, t, r) => {
+        664918: (e, t, a) => {
             "use strict";
-            r.d(t, { D0: () => c, c$: () => d, fD: () => s, iB: () => p, jk: () => l });
-            var n = r(366097),
-                a = r(163889);
-            const o = 2,
-                i = 1e3,
+            a.d(t, { D0: () => c, c$: () => d, fD: () => s, iB: () => _, jk: () => l });
+            var r = a(366097),
+                n = a(163889);
+            const i = 2,
+                o = 1e3,
                 s = Object.freeze({ AcceptAllCookies: "acceptAllCookies", RefuseNonEssentialCookies: "refuseNonEssentialCookies", Invalid: "invalid", NotSet: "notSet" });
             function c(e) {
-                const t = (0, n.bL)(e);
-                return t ? (u(t) ? (_(t) ? (t[1] ? s.AcceptAllCookies : t[2] ? s.RefuseNonEssentialCookies : ((0, a.ZP)("Invalid consent signal state"), s.Invalid)) : s.NotSet) : s.Invalid) : s.NotSet;
+                const t = (0, r.bL)(e);
+                return t ? (p(t) ? (u(t) ? (t[1] ? s.AcceptAllCookies : t[2] ? s.RefuseNonEssentialCookies : ((0, n.ZP)("Invalid consent signal state"), s.Invalid)) : s.NotSet) : s.Invalid) : s.NotSet;
             }
             function l(e) {
-                (0, n.kA)({ consent_version: o, text_version: i, 1: !0 }, e);
+                (0, r.kA)({ consent_version: i, text_version: o, 1: !0 }, e);
             }
             function d(e) {
-                (0, n.kA)({ consent_version: o, text_version: i, 2: !0 }, e);
-            }
-            function u(e) {
-                return !(e[1] && e[2]);
-            }
-            function _(e) {
-                return e[1] || e[2];
+                (0, r.kA)({ consent_version: i, text_version: o, 2: !0 }, e);
             }
             function p(e) {
-                const t = (0, n.bL)(e);
-                return !t || !u(t) || !_(t) || t.consent_version < o || t.text_version < i;
+                return !(e[1] && e[2]);
+            }
+            function u(e) {
+                return e[1] || e[2];
+            }
+            function _(e) {
+                const t = (0, r.bL)(e);
+                return !t || !p(t) || !u(t) || t.consent_version < i || t.text_version < o;
             }
         },
-        888802: (e, t, r) => {
+        888802: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => x });
-            var n = r(905402),
-                a = r(167120),
-                o = r(202784),
-                i = (r(585488), r(351743)),
-                s = r.n(i),
-                c = r(277660),
-                l = r.n(c),
-                d = r(688715),
-                u = r(954110),
-                _ = r(420412),
-                p = r(111677),
-                m = r.n(p),
-                g = r(736063);
-            const f = m().e26dbcd0,
-                b = m().aea7dda8,
-                h = (0, d.ju)("https://help.x.com/using-x/x-premium"),
-                y = a.Z,
-                w = n.Z;
+            a.d(t, { Z: () => x });
+            var r = a(905402),
+                n = a(167120),
+                i = a(202784),
+                o = (a(585488), a(351743)),
+                s = a.n(o),
+                c = a(277660),
+                l = a.n(c),
+                d = a(688715),
+                p = a(954110),
+                u = a(420412),
+                _ = a(111677),
+                g = a.n(_),
+                h = a(736063);
+            const m = g().e26dbcd0,
+                b = g().aea7dda8,
+                f = (0, d.ju)("https://help.x.com/using-x/x-premium"),
+                A = n.Z,
+                w = r.Z;
             function v({ userPreferences: e }) {
-                const { __id: t, hide_subscriptions_on_profile: r } = l()(y, e),
-                    [n] = s()(w),
-                    a = !!r,
-                    i = o.useCallback(() => {
+                const { __id: t, hide_subscriptions_on_profile: a } = l()(A, e),
+                    [r] = s()(w),
+                    n = !!a,
+                    o = i.useCallback(() => {
                         function e(e) {
                             if (t) {
-                                const r = e.get(t);
-                                r && r.setValue(!a, "hide_subscriptions_on_profile");
+                                const a = e.get(t);
+                                a && a.setValue(!n, "hide_subscriptions_on_profile");
                             }
                         }
-                        n({ optimisticUpdater: e, updater: e, variables: { hideSubscriptionsOnProfile: !a } });
-                    }, [a, t, n]);
-                return o.createElement(o.Fragment, null, o.createElement(u.Z, { checked: a, disabled: !1, helpText: b, label: f, learnMoreLink: h, name: "hideSubscriptionsCustomization", onChange: i }), o.createElement(_.Z, null));
+                        r({ optimisticUpdater: e, updater: e, variables: { hideSubscriptionsOnProfile: !n } });
+                    }, [n, t, r]);
+                return i.createElement(i.Fragment, null, i.createElement(p.Z, { checked: n, disabled: !1, helpText: b, label: m, learnMoreLink: f, name: "hideSubscriptionsCustomization", onChange: o }), i.createElement(u.Z, null));
             }
-            const k = { context: "hidden_subscriptions_container" };
+            const y = { context: "hidden_subscriptions_container" };
             function x({ userPreferences: e }) {
-                return o.createElement(g.H, { errorConfig: k }, o.createElement(v, { userPreferences: e }));
+                return i.createElement(h.H, { errorConfig: y }, i.createElement(v, { userPreferences: e }));
             }
         },
-        440630: (e, t, r) => {
+        440630: (e, t, a) => {
             "use strict";
-            r.d(t, { i: () => x });
-            var n = r(86218),
-                a = r(591668),
-                o = r(202784),
-                i = (r(585488), r(712696)),
-                s = r.n(i),
-                c = r(351743),
-                l = r.n(c),
-                d = r(954110),
-                u = r(111677),
-                _ = r.n(u),
-                p = r(944681),
-                m = r(125363),
-                g = r(919022),
-                f = r(443781),
-                b = r(736063);
-            const h = {
+            a.d(t, { i: () => x });
+            var r = a(86218),
+                n = a(591668),
+                i = a(202784),
+                o = (a(585488), a(712696)),
+                s = a.n(o),
+                c = a(351743),
+                l = a.n(c),
+                d = a(954110),
+                p = a(111677),
+                u = a.n(p),
+                _ = a(944681),
+                g = a(125363),
+                h = a(919022),
+                m = a(443781),
+                b = a(736063);
+            const f = {
                     allow_for_you_recommendations: {
                         condition: function (e, t) {
-                            return !!e.birthdate && (0, p.k)(e.birthdate.year, e.birthdate.month, e.birthdate.day) && t.isTrue("settings_for_you_recommendation_enabled");
+                            return !!e.birthdate && (0, _.k)(e.birthdate.year, e.birthdate.month, e.birthdate.day) && t.isTrue("settings_for_you_recommendation_enabled");
                         },
-                        description: _().b05b9398,
+                        description: u().b05b9398,
                         link: "https://help.x.com/resources/recommender-systems/for-you-home-timeline-recommendations",
-                        title: _().a3c1324c,
+                        title: u().a3c1324c,
                     },
                 },
-                y = a.Z,
-                w = n.Z;
+                A = n.Z,
+                w = r.Z;
             function v({ preferences: e }) {
                 const t = s()(w, {}),
-                    [r] = l()(y),
-                    { featureSwitches: n } = (0, f.QZ)(),
-                    a = (0, m.v9)(g.ZP.selectViewerUser);
-                function i(e, n) {
-                    const { __id: a, ...o } = t.user_preferences;
-                    o &&
-                        r({
-                            updater: function (r) {
-                                const a = t.user_preferences?.__id;
-                                if (a) {
-                                    const t = r.get(a);
-                                    t && t.setValue(n, e);
+                    [a] = l()(A),
+                    { featureSwitches: r } = (0, m.QZ)(),
+                    n = (0, g.v9)(h.ZP.selectViewerUser);
+                function o(e, r) {
+                    const { __id: n, ...i } = t.user_preferences;
+                    i &&
+                        a({
+                            updater: function (a) {
+                                const n = t.user_preferences?.__id;
+                                if (n) {
+                                    const t = a.get(n);
+                                    t && t.setValue(r, e);
                                 }
                             },
-                            variables: { ...o, [e]: n },
+                            variables: { ...i, [e]: r },
                         });
                 }
                 return e.map((e) => {
-                    if (a && (!h[e].condition || h[e].condition(a, n))) return o.createElement(d.Z, { checked: !!t.user_preferences[e], helpText: h[e].description, key: e, label: h[e].title, learnMoreLink: h[e].link, name: e, onChange: i });
+                    if (n && (!f[e].condition || f[e].condition(n, r))) return i.createElement(d.Z, { checked: !!t.user_preferences[e], helpText: f[e].description, key: e, label: f[e].title, learnMoreLink: f[e].link, name: e, onChange: o });
                 });
             }
-            const k = { context: "user_preferences_container" };
+            const y = { context: "user_preferences_container" };
             function x(e) {
-                return o.createElement(b.H, { errorConfig: k }, o.createElement(v, e));
+                return i.createElement(b.H, { errorConfig: y }, i.createElement(v, e));
             }
         },
-        78940: (e, t, r) => {
+        78940: (e, t, a) => {
             "use strict";
-            r.d(t, { T: () => n });
-            const n = (e, t) => {
-                const r = new Date(),
-                    n = new Date(r.getFullYear() - e, r.getMonth(), r.getDay());
-                return new Date(t.year || r.getFullYear(), t.month || r.getMonth(), t.day || r.getDay()) <= n;
+            a.d(t, { T: () => r });
+            const r = (e, t) => {
+                const a = new Date(),
+                    r = new Date(a.getFullYear() - e, a.getMonth(), a.getDay());
+                return new Date(t.year || a.getFullYear(), t.month || a.getMonth(), t.day || a.getDay()) <= r;
             };
         },
-        310116: (e, t, r) => {
+        310116: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => E });
-            var n = r(5974),
-                a = r(903423),
-                o = r(202784),
-                i = (r(585488), r(351743)),
-                s = r.n(i),
-                c = r(277660),
-                l = r.n(c),
-                d = r(688715),
-                u = r(954110),
-                _ = r(111677),
-                p = r.n(_),
-                m = r(952793),
-                g = r(125363),
-                f = r(919022),
-                b = r(736063),
-                h = r(78940);
-            const y = p().i586f3e0,
-                w = p().a8d516a4,
+            a.d(t, { Z: () => S });
+            var r = a(5974),
+                n = a(903423),
+                i = a(202784),
+                o = (a(585488), a(351743)),
+                s = a.n(o),
+                c = a(277660),
+                l = a.n(c),
+                d = a(688715),
+                p = a(954110),
+                u = a(111677),
+                _ = a.n(u),
+                g = a(952793),
+                h = a(125363),
+                m = a(919022),
+                b = a(736063),
+                f = a(78940);
+            const A = _().i586f3e0,
+                w = _().a8d516a4,
                 v = (0, d.ju)("https://help.x.com/using-x/about-grok"),
-                k = a.Z,
-                x = n.Z;
+                y = n.Z,
+                x = r.Z;
             function C({ userPreferences: e }) {
-                const t = (0, g.v9)(f.ZP.selectLoggedInUser),
-                    r = (0, m.hC)("grok_settings_age_restriction_enabled"),
-                    n = (0, m.JY)("grok_settings_restriction_age", 18),
-                    a = t?.birthdate,
-                    i = new Date(),
-                    c = { year: i.getFullYear(), month: i.getMonth(), day: i.getDay() },
-                    d = !!r && !(0, h.T)(n, a || c),
-                    { __id: _, allow_xai_data_sharing: p } = l()(k, e),
+                const t = (0, h.v9)(m.ZP.selectLoggedInUser),
+                    a = (0, g.hC)("grok_settings_age_restriction_enabled"),
+                    r = (0, g.JY)("grok_settings_restriction_age", 18),
+                    n = t?.birthdate,
+                    o = new Date(),
+                    c = { year: o.getFullYear(), month: o.getMonth(), day: o.getDay() },
+                    d = !!a && !(0, f.T)(r, n || c),
+                    { __id: u, allow_xai_data_sharing: _ } = l()(y, e),
                     [b] = s()(x),
-                    C = !!p,
-                    Z = o.useCallback(() => {
+                    C = !!_,
+                    k = i.useCallback(() => {
                         function e(e) {
-                            if (_) {
-                                const t = e.get(_);
+                            if (u) {
+                                const t = e.get(u);
                                 t && t.setValue(!C, "allow_xai_data_sharing");
                             }
                         }
                         b({ optimisticUpdater: e, updater: e, variables: { allowXaiDataSharing: !C } });
-                    }, [C, _, b]);
-                return o.createElement(o.Fragment, null, o.createElement(u.Z, { checked: C, disabled: d, helpText: w, label: y, learnMoreLink: v, name: "allowXaiDataSharingCustomization", onChange: Z }));
+                    }, [C, u, b]);
+                return i.createElement(i.Fragment, null, i.createElement(p.Z, { checked: C, disabled: d, helpText: w, label: A, learnMoreLink: v, name: "allowXaiDataSharingCustomization", onChange: k }));
             }
-            const Z = { context: "allow_xai_data_sharing_container" };
-            function E({ userPreferences: e }) {
-                return o.createElement(b.H, { errorConfig: Z }, o.createElement(C, { userPreferences: e }));
+            const k = { context: "allow_xai_data_sharing_container" };
+            function S({ userPreferences: e }) {
+                return i.createElement(b.H, { errorConfig: k }, i.createElement(C, { userPreferences: e }));
             }
         },
-        867621: (e, t, r) => {
+        867621: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => C });
-            var n = r(206878),
-                a = r(269877),
-                o = r(202784),
-                i = (r(585488), r(351743)),
-                s = r.n(i),
-                c = r(277660),
-                l = r.n(c),
-                d = r(954110),
-                u = r(111677),
-                _ = r.n(u),
-                p = r(952793),
-                m = r(125363),
-                g = r(919022),
-                f = r(736063),
-                b = r(78940);
-            const h = _().a127886c,
-                y = _().f49b39b8,
-                w = a.Z,
-                v = n.Z;
-            function k({ userPreferences: e }) {
-                const t = (0, m.v9)(g.ZP.selectLoggedInUser),
-                    r = (0, p.hC)("grok_settings_age_restriction_enabled"),
-                    n = (0, p.JY)("grok_settings_restriction_age", 18),
-                    a = (0, p.wW)("grok_settings_memory_visibility", "hide"),
-                    i = t?.birthdate,
+            a.d(t, { Z: () => C });
+            var r = a(206878),
+                n = a(269877),
+                i = a(202784),
+                o = (a(585488), a(351743)),
+                s = a.n(o),
+                c = a(277660),
+                l = a.n(c),
+                d = a(954110),
+                p = a(111677),
+                u = a.n(p),
+                _ = a(952793),
+                g = a(125363),
+                h = a(919022),
+                m = a(736063),
+                b = a(78940);
+            const f = u().a127886c,
+                A = u().f49b39b8,
+                w = n.Z,
+                v = r.Z;
+            function y({ userPreferences: e }) {
+                const t = (0, g.v9)(h.ZP.selectLoggedInUser),
+                    a = (0, _.hC)("grok_settings_age_restriction_enabled"),
+                    r = (0, _.JY)("grok_settings_restriction_age", 18),
+                    n = (0, _.wW)("grok_settings_memory_visibility", "hide"),
+                    o = t?.birthdate,
                     c = new Date(),
-                    u = { year: c.getFullYear(), month: c.getMonth(), day: c.getDay() },
-                    _ = !!r && !(0, b.T)(n, i || u),
-                    { __id: f, allow_grok_memory: k } = l()(w, e),
+                    p = { year: c.getFullYear(), month: c.getMonth(), day: c.getDay() },
+                    u = !!a && !(0, b.T)(r, o || p),
+                    { __id: m, allow_grok_memory: y } = l()(w, e),
                     [x] = s()(v),
-                    C = !!k,
-                    Z = o.useCallback(() => {
+                    C = !!y,
+                    k = i.useCallback(() => {
                         function e(e) {
-                            if (f) {
-                                const t = e.get(f);
+                            if (m) {
+                                const t = e.get(m);
                                 t && t.setValue(!C, "allow_grok_memory");
                             }
                         }
                         x({ optimisticUpdater: e, updater: e, variables: { allow_grok_memory: !C } });
-                    }, [C, f, x]);
-                return "hide" === a ? null : o.createElement(o.Fragment, null, o.createElement(d.Z, { checked: C, disabled: _ || "disable" === a, helpText: y, label: h, name: "allowXaiMemory", onChange: Z }));
+                    }, [C, m, x]);
+                return "hide" === n ? null : i.createElement(i.Fragment, null, i.createElement(d.Z, { checked: C, disabled: u || "disable" === n, helpText: A, label: f, name: "allowXaiMemory", onChange: k }));
             }
             const x = { context: "allow_xai_memory_container" };
             function C({ userPreferences: e }) {
-                return o.createElement(f.H, { errorConfig: x }, o.createElement(k, { userPreferences: e }));
+                return i.createElement(m.H, { errorConfig: x }, i.createElement(y, { userPreferences: e }));
             }
         },
-        987317: (e, t, r) => {
+        987317: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => E });
-            var n = r(599999),
-                a = r(87095),
-                o = r(202784),
-                i = (r(585488), r(351743)),
-                s = r.n(i),
-                c = r(277660),
-                l = r.n(c),
-                d = r(688715),
-                u = r(954110),
-                _ = r(111677),
-                p = r.n(_),
-                m = r(952793),
-                g = r(125363),
-                f = r(919022),
-                b = r(736063);
-            const h = (e, t) => {
-                    const r = new Date(),
-                        n = new Date(r.getFullYear() - e, r.getMonth(), r.getDay());
-                    return new Date(t.year || r.getFullYear(), t.month || r.getMonth(), t.day || r.getDay()) <= n;
+            a.d(t, { Z: () => S });
+            var r = a(599999),
+                n = a(87095),
+                i = a(202784),
+                o = (a(585488), a(351743)),
+                s = a.n(o),
+                c = a(277660),
+                l = a.n(c),
+                d = a(688715),
+                p = a(954110),
+                u = a(111677),
+                _ = a.n(u),
+                g = a(952793),
+                h = a(125363),
+                m = a(919022),
+                b = a(736063);
+            const f = (e, t) => {
+                    const a = new Date(),
+                        r = new Date(a.getFullYear() - e, a.getMonth(), a.getDay());
+                    return new Date(t.year || a.getFullYear(), t.month || a.getMonth(), t.day || a.getDay()) <= r;
                 },
-                y = p().b7de9ad2,
-                w = p().ed141096,
+                A = _().b7de9ad2,
+                w = _().ed141096,
                 v = (0, d.ju)("https://help.x.com/using-x/about-grok"),
-                k = a.Z,
-                x = n.Z;
+                y = n.Z,
+                x = r.Z;
             function C({ userPreferences: e }) {
-                const t = (0, g.v9)(f.ZP.selectLoggedInUser),
-                    r = (0, m.hC)("grok_settings_age_restriction_enabled"),
-                    n = (0, m.JY)("grok_settings_restriction_age", 18),
-                    a = t?.birthdate,
-                    i = new Date(),
-                    c = { year: i.getFullYear(), month: i.getMonth(), day: i.getDay() },
-                    d = !!r && !h(n, a || c),
-                    { __id: _, allow_xai_personalization: p } = l()(k, e),
+                const t = (0, h.v9)(m.ZP.selectLoggedInUser),
+                    a = (0, g.hC)("grok_settings_age_restriction_enabled"),
+                    r = (0, g.JY)("grok_settings_restriction_age", 18),
+                    n = t?.birthdate,
+                    o = new Date(),
+                    c = { year: o.getFullYear(), month: o.getMonth(), day: o.getDay() },
+                    d = !!a && !f(r, n || c),
+                    { __id: u, allow_xai_personalization: _ } = l()(y, e),
                     [b] = s()(x),
-                    C = !!p,
-                    Z = o.useCallback(() => {
+                    C = !!_,
+                    k = i.useCallback(() => {
                         function e(e) {
-                            if (_) {
-                                const t = e.get(_);
+                            if (u) {
+                                const t = e.get(u);
                                 t && t.setValue(!C, "allow_xai_personalization");
                             }
                         }
                         b({ optimisticUpdater: e, updater: e, variables: { allowXaiPersonalization: !C } });
-                    }, [C, _, b]);
-                return o.createElement(o.Fragment, null, o.createElement(u.Z, { checked: C, disabled: d, helpText: w, label: y, learnMoreLink: v, name: "allowXaiPersonalizationCustomization", onChange: Z }));
+                    }, [C, u, b]);
+                return i.createElement(i.Fragment, null, i.createElement(p.Z, { checked: C, disabled: d, helpText: w, label: A, learnMoreLink: v, name: "allowXaiPersonalizationCustomization", onChange: k }));
             }
-            const Z = { context: "allow_xai_personalization_container" };
-            function E({ userPreferences: e }) {
-                return o.createElement(b.H, { errorConfig: Z }, o.createElement(C, { userPreferences: e }));
+            const k = { context: "allow_xai_personalization_container" };
+            function S({ userPreferences: e }) {
+                return i.createElement(b.H, { errorConfig: k }, i.createElement(C, { userPreferences: e }));
             }
         },
-        282559: (e, t, r) => {
+        282559: (e, t, a) => {
             "use strict";
-            r.d(t, { v: () => c });
-            r(571372);
-            var n = r(96768),
-                a = r(202784),
-                o = (r(585488), r(351743)),
-                i = r.n(o);
-            const s = n.Z,
+            a.d(t, { v: () => c });
+            a(571372);
+            var r = a(96768),
+                n = a(202784),
+                i = (a(585488), a(351743)),
+                o = a.n(i);
+            const s = r.Z,
                 c = ({ originProduct: e, returnUrl: t }) => {
-                    const [r, n] = i()(s);
+                    const [a, r] = o()(s);
                     return [
-                        a.useCallback(
+                        n.useCallback(
                             () =>
-                                new Promise((n, a) => {
-                                    r({
+                                new Promise((r, n) => {
+                                    a({
                                         variables: { return_url: t, origin_product: e },
                                         onCompleted: ({ customerportalsession_create: e }, t) => {
-                                            const r = e?.customer_portal_session_url ?? void 0;
-                                            r ? n(r) : a(new Error("Missing portal URL"));
+                                            const a = e?.customer_portal_session_url ?? void 0;
+                                            a ? r(a) : n(new Error("Missing portal URL"));
                                         },
-                                        onError: a,
+                                        onError: n,
                                     });
                                 }),
-                            [r, t, e],
+                            [a, t, e],
                         ),
-                        n,
+                        r,
                     ];
                 };
         },
-        177210: (e, t, r) => {
+        177210: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => d });
-            var n = r(202784),
-                a = r(111677),
-                o = r.n(a),
-                i = r(782826),
-                s = r(282559),
-                c = r(782642);
-            const l = o().ef4602ec;
+            a.d(t, { Z: () => d });
+            var r = a(202784),
+                n = a(111677),
+                i = a.n(n),
+                o = a(782826),
+                s = a(282559),
+                c = a(782642);
+            const l = i().ef4602ec;
             function d(e) {
                 const t = (0, c.p)(),
-                    [r, a] = (0, s.v)(e),
-                    o = n.useCallback(() => {
-                        r()
+                    [a, n] = (0, s.v)(e),
+                    i = r.useCallback(() => {
+                        a()
                             .then((e) => {
-                                i.ZP.navigateTo(e);
+                                o.ZP.navigateTo(e);
                             })
                             .catch(() => {
                                 t({ text: l });
                             });
-                    }, [r, t]);
-                return a ? void 0 : o;
+                    }, [a, t]);
+                return n ? void 0 : i;
             }
         },
-        670094: (e, t, r) => {
+        670094: (e, t, a) => {
             "use strict";
-            r.d(t, { d: () => l });
-            var n = r(111677),
-                a = r.n(n),
-                o = r(88656),
-                i = r(601576),
-                s = r(163889);
-            const c = a().a5d4fda0,
+            a.d(t, { d: () => l });
+            var r = a(111677),
+                n = a.n(r),
+                i = a(88656),
+                o = a(601576),
+                s = a(163889);
+            const c = n().a5d4fda0,
                 l = (e = c, t = !0) => ({
-                    customErrorHandler: (r) => {
-                        const { context: n } = r;
-                        return (!r) instanceof o.Z && (r.message = `Strato error occurred in ${n.id}: ${n.action}`), (0, s.ZP)(r, { extra: { context: n, isStrato: !0 } }), t ? (0, i.mf)({ text: e }) : [];
+                    customErrorHandler: (a) => {
+                        const { context: r } = a;
+                        return (!a) instanceof i.Z && (a.message = `Strato error occurred in ${r.id}: ${r.action}`), (0, s.ZP)(a, { extra: { context: r, isStrato: !0 } }), t ? (0, o.mf)({ text: e }) : [];
                     },
                 });
         },
-        831558: (e, t, r) => {
+        831558: (e, t, a) => {
             "use strict";
-            r.d(t, { HI: () => l, W1: () => _, oo: () => d, pe: () => c });
-            r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157);
-            var n = r(468811),
-                a = r.n(n),
-                o = r(704879);
-            const i = new Uint8Array([0, 0, 0, 1]);
+            a.d(t, { HI: () => l, W1: () => u, oo: () => d, pe: () => c });
+            a(694898), a(38857), a(540171), a(157093), a(265688), a(270315), a(592529), a(86943), a(691157);
+            var r = a(468811),
+                n = a.n(r),
+                i = a(704879);
+            const o = new Uint8Array([0, 0, 0, 1]);
             async function s(e, t) {
-                return new Uint8Array(await crypto.subtle.digest("SHA-256", (0, o.cL)(e, i, t)));
+                return new Uint8Array(await crypto.subtle.digest("SHA-256", (0, i.cL)(e, o, t)));
             }
             const c = async (e) => {
-                const t = new Uint8Array((0, o.RG)(e)),
-                    r = await crypto.subtle.importKey("raw", t.subarray(0, 65), { name: "ECDH", namedCurve: "P-256" }, !0, []),
-                    n = await crypto.subtle.deriveBits({ name: "ECDH", public: r }, u, 256),
-                    a = await s(n, await crypto.subtle.exportKey("raw", r)),
-                    i = a.slice(0, 16),
-                    c = a.slice(16, 32),
-                    l = await crypto.subtle.importKey("raw", i, { name: "AES-GCM", length: 128 }, !0, ["decrypt"]);
-                return (0, o.Jx)(await crypto.subtle.decrypt({ name: "AES-GCM", iv: c }, l, t.subarray(65)));
+                const t = new Uint8Array((0, i.RG)(e)),
+                    a = await crypto.subtle.importKey("raw", t.subarray(0, 65), { name: "ECDH", namedCurve: "P-256" }, !0, []),
+                    r = await crypto.subtle.deriveBits({ name: "ECDH", public: a }, p, 256),
+                    n = await s(r, await crypto.subtle.exportKey("raw", a)),
+                    o = n.slice(0, 16),
+                    c = n.slice(16, 32),
+                    l = await crypto.subtle.importKey("raw", o, { name: "AES-GCM", length: 128 }, !0, ["decrypt"]);
+                return (0, i.Jx)(await crypto.subtle.decrypt({ name: "AES-GCM", iv: c }, l, t.subarray(65)));
             };
             async function l(e, t) {
-                const r = await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, !0, ["deriveBits"]),
-                    n = await crypto.subtle.deriveBits({ name: "ECDH", public: t }, r.privateKey, 256),
-                    a = await s(n, await crypto.subtle.exportKey("raw", r.publicKey)),
-                    i = a.slice(0, 16),
-                    c = a.slice(16, 32),
-                    l = await crypto.subtle.importKey("raw", i, { name: "AES-GCM", length: 128 }, !1, ["encrypt"]),
-                    d = await crypto.subtle.encrypt({ name: "AES-GCM", iv: c }, l, (0, o.cv)(e)),
-                    u = await crypto.subtle.exportKey("raw", r.publicKey);
-                return (0, o.sM)((0, o.cL)(u, d));
+                const a = await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, !0, ["deriveBits"]),
+                    r = await crypto.subtle.deriveBits({ name: "ECDH", public: t }, a.privateKey, 256),
+                    n = await s(r, await crypto.subtle.exportKey("raw", a.publicKey)),
+                    o = n.slice(0, 16),
+                    c = n.slice(16, 32),
+                    l = await crypto.subtle.importKey("raw", o, { name: "AES-GCM", length: 128 }, !1, ["encrypt"]),
+                    d = await crypto.subtle.encrypt({ name: "AES-GCM", iv: c }, l, (0, i.cv)(e)),
+                    p = await crypto.subtle.exportKey("raw", a.publicKey);
+                return (0, i.sM)((0, i.cL)(p, d));
             }
-            const d = async (e) => ({ ...(await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, !1, ["deriveBits"])), deviceId: e ?? a().v4(), isRegistered: !1 });
-            let u;
-            const _ = (e) => {
-                u = e;
+            const d = async (e) => ({ ...(await crypto.subtle.generateKey({ name: "ECDH", namedCurve: "P-256" }, !1, ["deriveBits"])), deviceId: e ?? n().v4(), isRegistered: !1 });
+            let p;
+            const u = (e) => {
+                p = e;
             };
         },
-        928233: (e, t, r) => {
+        928233: (e, t, a) => {
             "use strict";
-            r.d(t, { FM: () => m, eY: () => p, qi: () => _ });
-            r(571372);
-            var n = r(961111),
-                a = r.n(n),
-                o = r(878636),
-                i = r(390387),
-                s = r(163889),
-                c = r(831558),
-                l = r(704879);
+            a.d(t, { FM: () => g, eY: () => _, qi: () => u });
+            a(571372);
+            var r = a(961111),
+                n = a.n(r),
+                i = a(878636),
+                o = a(390387),
+                s = a(163889),
+                c = a(831558),
+                l = a(704879);
             const d = "rweb.dmCryptoKeys";
-            function u(e) {
+            function p(e) {
                 return d + 1 + e;
             }
-            const _ = async (e, t, { api: r, devicePersistence: n }) => {
+            const u = async (e, t, { api: a, devicePersistence: r }) => {
                     try {
-                        const s = i.x0(t());
+                        const s = o.x0(t());
                         if (!s) return;
-                        await n.delete(d + "" + s);
-                        const _ = u(s);
-                        let p = await n.get(_);
-                        const m = async () => {
-                            const e = (0, l.sM)(await crypto.subtle.exportKey("spki", p.publicKey));
-                            await a()(
+                        await r.delete(d + "" + s);
+                        const u = p(s);
+                        let _ = await r.get(u);
+                        const g = async () => {
+                            const e = (0, l.sM)(await crypto.subtle.exportKey("spki", _.publicKey));
+                            await n()(
                                 async (t) => {
                                     try {
-                                        await n.set(_, p), (await n.get(_)) ? await r.withEndpoint(o.Z).register({ registration_id: Math.round(1e5 * Math.random()), identity_key: e, device_id: p.deviceId }) : t(new Error("Could not set value in IndexedDB. Bailing out."));
+                                        await r.set(u, _), (await r.get(u)) ? await a.withEndpoint(i.Z).register({ registration_id: Math.round(1e5 * Math.random()), identity_key: e, device_id: _.deviceId }) : t(new Error("Could not set value in IndexedDB. Bailing out."));
                                     } catch (e) {
-                                        if ((await n.delete(_), 403 !== e.status)) throw e;
+                                        if ((await r.delete(u), 403 !== e.status)) throw e;
                                         t(e);
                                     }
                                 },
                                 { minTimeout: 2e3, retries: 2 },
                             ),
-                                await n.set(_, { ...p, isRegistered: !0 });
+                                await r.set(u, { ..._, isRegistered: !0 });
                         };
-                        p || (p = await (0, c.oo)()), p.isRegistered || (await m()), (0, c.W1)(p.privateKey), e(i.Pv(p.deviceId));
+                        _ || (_ = await (0, c.oo)()), _.isRegistered || (await g()), (0, c.W1)(_.privateKey), e(o.Pv(_.deviceId));
                     } catch (e) {
                         403 !== e.status && (0, s.Hj)(e);
                     }
                 },
-                p = async (e, t, { api: r, devicePersistence: n }) => {
-                    const a = i.x0(t());
-                    if (!a) return;
-                    const o = u(a),
-                        s = await n.get(o);
-                    s && "unregistered" !== s.status && ((s.status = "unregistered"), delete s.privateKey, delete s.publicKey, await n.set(o, s), (0, c.W1)(void 0));
+                _ = async (e, t, { api: a, devicePersistence: r }) => {
+                    const n = o.x0(t());
+                    if (!n) return;
+                    const i = p(n),
+                        s = await r.get(i);
+                    s && "unregistered" !== s.status && ((s.status = "unregistered"), delete s.privateKey, delete s.publicKey, await r.set(i, s), (0, c.W1)(void 0));
                 },
-                m = async (e, t, { api: r, devicePersistence: n }) => {
-                    const a = i.x0(t());
-                    if (!a) return;
-                    const o = u(a),
-                        s = await n.get(o);
+                g = async (e, t, { api: a, devicePersistence: r }) => {
+                    const n = o.x0(t());
+                    if (!n) return;
+                    const i = p(n),
+                        s = await r.get(i);
                     if (!s || "unregistered" !== s.status) return;
                     const l = s.deviceId,
                         d = await (0, c.oo)(l);
-                    await n.delete(o), await n.set(o, d), await e(_);
+                    await r.delete(i), await r.set(i, d), await e(u);
                 };
         },
-        704879: (e, t, r) => {
+        704879: (e, t, a) => {
             "use strict";
-            r.d(t, { Jx: () => i, RG: () => n, cL: () => s, cv: () => o, sM: () => a });
-            r(875640), r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157);
-            function n(e) {
+            a.d(t, { Jx: () => o, RG: () => r, cL: () => s, cv: () => i, sM: () => n });
+            a(875640), a(694898), a(38857), a(540171), a(157093), a(265688), a(270315), a(592529), a(86943), a(691157);
+            function r(e) {
                 const t = atob(e),
-                    r = t.length,
-                    n = new Uint8Array(r);
-                for (let e = 0; e < r; e++) n[e] = t.charCodeAt(e);
-                return n.buffer;
+                    a = t.length,
+                    r = new Uint8Array(a);
+                for (let e = 0; e < a; e++) r[e] = t.charCodeAt(e);
+                return r.buffer;
             }
-            function a(e) {
+            function n(e) {
                 let t = "";
-                const r = new Uint8Array(e),
-                    n = r.byteLength;
-                for (let e = 0; e < n; e++) t += String.fromCharCode(r[e]);
+                const a = new Uint8Array(e),
+                    r = a.byteLength;
+                for (let e = 0; e < r; e++) t += String.fromCharCode(a[e]);
                 return btoa(t);
             }
-            const o = (e) => new TextEncoder().encode(e),
-                i = (e) => new TextDecoder().decode(e);
+            const i = (e) => new TextEncoder().encode(e),
+                o = (e) => new TextDecoder().decode(e);
             function s(...e) {
                 const t = e.map((e) => (e instanceof Uint8Array ? e : new Uint8Array(e))),
-                    r = new Uint8Array(t.reduce((e, t) => e + t.length, 0));
-                let n = 0;
-                for (const e of t) r.set(e, n), (n += e.length);
-                return r;
+                    a = new Uint8Array(t.reduce((e, t) => e + t.length, 0));
+                let r = 0;
+                for (const e of t) a.set(e, r), (r += e.length);
+                return a;
             }
         },
-        97882: (e, t, r) => {
+        97882: (e, t, a) => {
             "use strict";
-            r.d(t, { T: () => o, x: () => i });
-            var n = r(111677),
-                a = r.n(n);
-            const o = { AED: a().d857e44d, ALL: a().cb87e3db, ARS: a().a9d5ffd1, AUD: a().a0e8371d, BAM: a().gcc50dc9, BDT: a().a6a43585, BGN: a().a0cc8f2d, BHD: a().i31c32c5, BRL: a().i7dc69e9, BYR: a().c14a6c03, CAD: a().jaa3d537, CHF: a().a824080b, CLP: a().d9c0bedb, CNY: a().bf8c0613, COP: a().i8163625, CZK: a().adb53ba1, DKK: a().iabf697d, DZD: a().a1a0555b, EGP: a().f266f3d9, EUR: a().a9a8652b, GBP: a().dbf40761, GHS: a().b0d993d9, GTQ: a().ac1308e1, HKD: a().a7889ab3, HRK: a().c614f5cd, HUF: a().i55d57e3, IDR: a().e4b6002b, ILS: a().d28e983b, INR: a().e8c9232d, IQD: a().c8994ae1, ISK: a().f821c2a5, JPY: a().j348b9c9, KES: a().i6f93b9b, KRW: a().c6150bd5, KWD: a().i8921e09, KZT: a().ef239279, LBP: a().hecdb149, MAD: a().fdd039b7, MKD: a().f30c2c37, MXN: a().d9ea7bff, MYR: a().ea3df4b7, NGN: a().jaac21bb, NOK: a().hb435ced, NZD: a().ce699d81, PEN: a().bc56d3d7, PHP: a().f8561913, PKR: a().g6485d53, PLN: a().ff561cc1, QAR: a().b42011d3, RON: a().a6660bcd, RSD: a().f9b80449, RUB: a().gdee4d5d, SAR: a().h36f2103, SEK: a().a19ad037, SGD: a().g713f699, THB: a().ff2e39af, TND: a().be34316d, TRY: a().aef81b75, TWD: a().fcce70a5, TZS: a().jc9d352f, UAH: a().be1cb8c5, UGX: a().j9371501, USD: a().j7d4397d, VEF: a().d61441dd, VND: a().e2a99e97, ZAR: a().f7ce19ab, ZMW: a().b2a0213f },
-                i = ({ amount: e, currencyCode: t = "USD", formatter: r = 1e6, removeTrailingZeros: n = !1, strictAmount: a = !1 }) => {
-                    const i = a ? e : parseInt(e, 10) / r,
-                        c = o[t]?.(i);
-                    return n ? s(c) : c;
+            a.d(t, { T: () => i, x: () => o });
+            var r = a(111677),
+                n = a.n(r);
+            const i = { AED: n().d857e44d, ALL: n().cb87e3db, ARS: n().a9d5ffd1, AUD: n().a0e8371d, BAM: n().gcc50dc9, BDT: n().a6a43585, BGN: n().a0cc8f2d, BHD: n().i31c32c5, BRL: n().i7dc69e9, BYR: n().c14a6c03, CAD: n().jaa3d537, CHF: n().a824080b, CLP: n().d9c0bedb, CNY: n().bf8c0613, COP: n().i8163625, CZK: n().adb53ba1, DKK: n().iabf697d, DZD: n().a1a0555b, EGP: n().f266f3d9, EUR: n().a9a8652b, GBP: n().dbf40761, GHS: n().b0d993d9, GTQ: n().ac1308e1, HKD: n().a7889ab3, HRK: n().c614f5cd, HUF: n().i55d57e3, IDR: n().e4b6002b, ILS: n().d28e983b, INR: n().e8c9232d, IQD: n().c8994ae1, ISK: n().f821c2a5, JPY: n().j348b9c9, KES: n().i6f93b9b, KRW: n().c6150bd5, KWD: n().i8921e09, KZT: n().ef239279, LBP: n().hecdb149, MAD: n().fdd039b7, MKD: n().f30c2c37, MXN: n().d9ea7bff, MYR: n().ea3df4b7, NGN: n().jaac21bb, NOK: n().hb435ced, NZD: n().ce699d81, PEN: n().bc56d3d7, PHP: n().f8561913, PKR: n().g6485d53, PLN: n().ff561cc1, QAR: n().b42011d3, RON: n().a6660bcd, RSD: n().f9b80449, RUB: n().gdee4d5d, SAR: n().h36f2103, SEK: n().a19ad037, SGD: n().g713f699, THB: n().ff2e39af, TND: n().be34316d, TRY: n().aef81b75, TWD: n().fcce70a5, TZS: n().jc9d352f, UAH: n().be1cb8c5, UGX: n().j9371501, USD: n().j7d4397d, VEF: n().d61441dd, VND: n().e2a99e97, ZAR: n().f7ce19ab, ZMW: n().b2a0213f },
+                o = ({ amount: e, currencyCode: t = "USD", formatter: a = 1e6, removeTrailingZeros: r = !1, strictAmount: n = !1 }) => {
+                    const o = n ? e : parseInt(e, 10) / a,
+                        c = i[t]?.(o);
+                    return r ? s(c) : c;
                 },
                 s = (e) => {
                     const t = e?.split(".");
                     return 2 === t?.length && "00" === t?.[1] ? t[0] : e;
                 };
         },
-        147595: (e, t, r) => {
+        147595: (e, t, a) => {
             "use strict";
-            r.d(t, { R: () => a });
-            var n = r(337394);
-            const a = (e) => {
-                const t = e.find((e) => e.product?.rest_id && n.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Stripe" === e.payment_source),
-                    r = e.find((e) => e.product?.rest_id && n.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Twitter" !== e.payment_source && "Ads" !== e.payment_source),
-                    a = e.find((e) => e.product?.rest_id && n.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && ("Twitter" === e.payment_source || "Ads" === e.payment_source));
-                return t || r || a;
+            a.d(t, { R: () => n });
+            var r = a(337394);
+            const n = (e) => {
+                const t = e.find((e) => e.product?.rest_id && r.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Stripe" === e.payment_source),
+                    a = e.find((e) => e.product?.rest_id && r.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && "Twitter" !== e.payment_source && "Ads" !== e.payment_source),
+                    n = e.find((e) => e.product?.rest_id && r.v5.premium[e.product?.rest_id] && "Inactive" !== e.state && ("Twitter" === e.payment_source || "Ads" === e.payment_source));
+                return t || a || n;
             };
         },
-        321330: (e, t, r) => {
+        321330: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => d });
-            var n = r(202784),
-                a = r(111677),
-                o = r.n(a),
-                i = r(443781);
-            const s = o().f75d1806,
-                c = o().j4a7d9a6,
-                l = o().hedf9d7c,
+            a.d(t, { Z: () => d });
+            var r = a(202784),
+                n = a(111677),
+                i = a.n(n),
+                o = a(443781);
+            const s = i().f75d1806,
+                c = i().j4a7d9a6,
+                l = i().hedf9d7c,
                 d = () => {
-                    const { userClaims: e } = n.useContext(i.rC),
+                    const { userClaims: e } = r.useContext(o.rC),
                         t = e.hasSubscription("verified_org_full_access") || e.hasSubscription("verified_org_basic") || e.hasSubscription("verified_org_free") || e.hasSubscription("verified_org_gov_paid") || e.hasSubscription("verified_org_gov_paid") || e.hasSubscription("verified_org_legacy") || e.hasSubscription("verified_org_affiliate") || e.hasSubscription("verified_org_gov_affiliate"),
-                        r = { label: s, value: "Premium" };
-                    return t || e.hasSubscription("premium_plus") ? { label: l, value: "Premium+" } : e.hasSubscription("premium_standard") ? r : e.hasSubscription("premium_basic") ? { label: c, value: "Basic" } : r;
+                        a = { label: s, value: "Premium" };
+                    return t || e.hasSubscription("premium_plus") ? { label: l, value: "Premium+" } : e.hasSubscription("premium_standard") ? a : e.hasSubscription("premium_basic") ? { label: c, value: "Basic" } : a;
                 };
         },
-        199087: (e, t, r) => {
+        199087: (e, t, a) => {
             "use strict";
-            r.d(t, { Z: () => c });
-            var n = r(626593),
-                a = r(202784),
-                o = (r(585488), r(351743)),
-                i = r.n(o);
-            const s = n.Z,
+            a.d(t, { Z: () => c });
+            var r = a(626593),
+                n = a(202784),
+                i = (a(585488), a(351743)),
+                o = a.n(i);
+            const s = r.Z,
                 c = () => {
-                    const [e, t] = i()(s);
+                    const [e, t] = o()(s);
                     return [
-                        a.useCallback(
+                        n.useCallback(
                             (t) =>
-                                new Promise((r, n) => {
-                                    e({ variables: t, onCompleted: (e, t) => r(e), onError: n });
+                                new Promise((a, r) => {
+                                    e({ variables: t, onCompleted: (e, t) => a(e), onError: r });
                                 }),
                             [e],
                         ),
@@ -937,25 +1165,25 @@
                     ];
                 };
         },
-        548797: (e, t, r) => {
+        548797: (e, t, a) => {
             "use strict";
-            r.d(t, { Ld: () => d, gS: () => l, pB: () => s, yv: () => c });
-            var n = r(111677),
-                a = r.n(n),
-                o = r(337394);
-            const i = a().b47d123d,
+            a.d(t, { Ld: () => d, gS: () => l, pB: () => s, yv: () => c });
+            var r = a(111677),
+                n = a.n(r),
+                i = a(337394);
+            const o = n().b47d123d,
                 s = (e) => {
-                    const t = e?.prices?.find((e) => e?.charge_interval === o.rv.Year),
-                        r = e?.prices?.find((e) => e?.charge_interval === o.rv.Month),
-                        n = r ? 12 * r?.amount_local_micro : 0,
-                        a = t ? Math.floor(((t.amount_local_micro - n) / n) * -100) : null;
-                    return i({ percentage: a });
+                    const t = e?.prices?.find((e) => e?.charge_interval === i.rv.Year),
+                        a = e?.prices?.find((e) => e?.charge_interval === i.rv.Month),
+                        r = a ? 12 * a?.amount_local_micro : 0,
+                        n = t ? Math.floor(((t.amount_local_micro - r) / r) * -100) : null;
+                    return o({ percentage: n });
                 },
                 c = ({ activeSubscription: e, tier: t }) => {
-                    const r = e?.product?.rest_id;
-                    if (!r) return "invalid";
-                    if (o.v5.premium[r] === t) return "active";
-                    switch (o.v5.premium[r]) {
+                    const a = e?.product?.rest_id;
+                    if (!a) return "invalid";
+                    if (i.v5.premium[a] === t) return "active";
+                    switch (i.v5.premium[a]) {
                         case "PremiumBasic":
                             if ("BlueVerified" === t || "BlueVerifiedPlus" === t) return "upgrade";
                             break;
@@ -971,71 +1199,71 @@
                     }
                     return "invalid";
                 },
-                l = (e, t, r) => {
-                    const { status: n } = r,
-                        a = Date.now(),
-                        o = e?.promotions?.filter((e) => {
-                            const r = parseInt(e.ends_at_msec, 10),
-                                o = parseInt(e.started_from_msec, 10);
-                            if (e.promotion_type === t && r > a) {
-                                if ("active" === n) return o < a;
-                                if ("pending" === n) return o > a;
+                l = (e, t, a) => {
+                    const { status: r } = a,
+                        n = Date.now(),
+                        i = e?.promotions?.filter((e) => {
+                            const a = parseInt(e.ends_at_msec, 10),
+                                i = parseInt(e.started_from_msec, 10);
+                            if (e.promotion_type === t && a > n) {
+                                if ("active" === r) return i < n;
+                                if ("pending" === r) return i > n;
                             }
                         });
-                    return o?.[0];
+                    return i?.[0];
                 },
                 d = (e) => "Twitter" === e.payment_source || "Ads" === e.payment_source;
         },
-        685731: (e, t, r) => {
+        685731: (e, t, a) => {
             "use strict";
-            r.d(t, { Gi: () => b, Mk: () => y, ZV: () => g, aU: () => m, d3: () => h, fS: () => w, pt: () => f });
-            r(202784);
-            var n = r(111677),
-                a = r.n(n),
-                o = r(336629),
-                i = r(862695),
-                s = r(97882),
-                c = r(337394),
-                l = r(548797);
-            const d = a().c6614cc0,
-                u = a().f8d3b50a,
-                _ = a().i2c32253,
-                p = a().c41e1023;
-            function m(e, t = !0, r) {
-                let n = "number" == typeof e?.amount_local_micro ? e.amount_local_micro : 0;
+            a.d(t, { Gi: () => b, Mk: () => A, ZV: () => h, aU: () => g, d3: () => f, fS: () => w, pt: () => m });
+            a(202784);
+            var r = a(111677),
+                n = a.n(r),
+                i = a(336629),
+                o = a(862695),
+                s = a(97882),
+                c = a(337394),
+                l = a(548797);
+            const d = n().c6614cc0,
+                p = n().f8d3b50a,
+                u = n().i2c32253,
+                _ = n().c41e1023;
+            function g(e, t = !0, a) {
+                let r = "number" == typeof e?.amount_local_micro ? e.amount_local_micro : 0;
                 if (
                     (t &&
-                        (n += (function (e) {
+                        (r += (function (e) {
                             return "number" == typeof e?.tax_amount_local_micro ? e.tax_amount_local_micro : 0;
                         })(e)),
-                    r)
+                    a)
                 ) {
-                    n -= n * (r / 100);
+                    r -= r * (a / 100);
                 }
-                return n;
+                return r;
             }
-            function g(e) {
-                return "number" == typeof e?.tax_amount_local_micro ? u : d;
+            function h(e) {
+                return "number" == typeof e?.tax_amount_local_micro ? p : d;
             }
-            const f = (e, t, r) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === r && e.metadata.purchasable).find((e) => (t ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
+            const m = (e, t, a) => (Array.isArray(e) ? e.filter((e) => e.charge_interval === a && e.metadata.purchasable).find((e) => (t ? !0 === e.metadata?.seated : !1 === e.metadata?.seated)) : void 0);
             function b(e, t) {
                 if (e && t) return t?.find((t) => t?.charge_interval === e);
             }
-            function h(e, t = !1, r, n = !1, a = !0) {
-                const d = (0, l.gS)(r, "Discount", { status: n ? "pending" : "active" }),
-                    u = (0, s.x)({ amount: m(e, t), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
-                return d && e.charge_interval ? (0, i.V)({ selectedInterval: e.charge_interval, duration: d.promotion_metadata?.duration_in_interval, discountedFormattedPrice: (0, o.T)({ price: e, percentOff: d.promotion_metadata?.percent_off, includeTax: t, annualPriceMonthly: !1 }), formattedPrice: u, includeDiscountedPrice: !0, includeThenLabel: a }) : e.charge_interval === c.rv.Year ? p({ price: u }) : e.charge_interval === c.rv.Month ? _({ price: u }) : "";
+            function f(e, t = !1, a, r = !1, n = !0) {
+                const d = (0, l.gS)(a, "Discount", { status: r ? "pending" : "active" }),
+                    p = (0, s.x)({ amount: g(e, t), currencyCode: e?.currency_code?.toUpperCase(), removeTrailingZeros: !0 });
+                return d && e.charge_interval ? (0, o.V)({ selectedInterval: e.charge_interval, duration: d.promotion_metadata?.duration_in_interval, discountedFormattedPrice: (0, i.T)({ price: e, percentOff: d.promotion_metadata?.percent_off, includeTax: t, annualPriceMonthly: !1 }), formattedPrice: p, includeDiscountedPrice: !0, includeThenLabel: n }) : e.charge_interval === c.rv.Year ? _({ price: p }) : e.charge_interval === c.rv.Month ? u({ price: p }) : "";
             }
-            const y = (e) => {
+            const A = (e) => {
                     const t = e.subscription_promotions?.find((e) => !!e.metadata.free_trial_days);
                     return t;
                 },
-                w = (e, t, r) => {
-                    if (!t || r) return null;
-                    const n = e.subscription_promotions?.find((e) => !(!e.metadata.duration_in_interval || !e.metadata.percent_off || !e.ends_at_msec || e.metadata.free_trial_days));
-                    return n;
+                w = (e, t, a) => {
+                    if (!t || a) return null;
+                    const r = e.subscription_promotions?.find((e) => !(!e.metadata.duration_in_interval || !e.metadata.percent_off || !e.ends_at_msec || e.metadata.free_trial_days));
+                    return r;
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-9f4db315.3cff938a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-9f4db315.9ec6f73a.js.map

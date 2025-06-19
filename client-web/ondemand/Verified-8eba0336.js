@@ -2,129 +2,9 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.Verified-8eba0336"],
     {
-        994542: (e, l, a) => {
-            a.d(l, { Z: () => m });
-            var n = a(552322),
-                i = a(596017),
-                s = a(699629),
-                t = a(534002),
-                r = a(624656),
-                c = a(202784),
-                d = a(520003),
-                o = a(430962),
-                u = a(921347);
-            const g = ({ targetDate: e }) => {
-                    const { business: l } = (0, o.M1)(),
-                        a = (0, c.useCallback)(() => {
-                            const a = new Date(),
-                                n = new Date(Number.parseInt(e, 10));
-                            return { days: { value: (0, i.j)(n, a), label: l.landing.offerBanner.days }, hours: { value: (0, s.A)(n, a) % 24, label: l.landing.offerBanner.hours }, minutes: { value: (0, t.X)(n, a) % 60, label: l.landing.offerBanner.minutes }, seconds: { value: (0, r.c)(n, a) % 60, label: l.landing.offerBanner.seconds } };
-                        }, [e, l]),
-                        [d, u] = c.useState(!1),
-                        [g, m] = (0, c.useState)(a());
-                    if (
-                        ((0, c.useEffect)(() => {
-                            u(!0);
-                            const e = setInterval(() => {
-                                m(a());
-                            }, 1e3);
-                            return () => clearInterval(e);
-                        }, [a]),
-                        d)
-                    )
-                        return (0, n.jsx)("div", { className: "rounded-xl p-px bg-gradient-to-r rtl:bg-gradient-to-l from-transparent to-[#6FCA6C]", children: (0, n.jsx)("div", { className: "rounded-[calc(1.5rem-12px)] p-3 dark:bg-black bg-white", children: (0, n.jsx)("div", { className: "flex gap-4", children: Object.entries(g).map(([e, l]) => (0, n.jsxs)("div", { className: "flex flex-col items-center text-center min-w-[50px]", children: [(0, n.jsx)("span", { className: "text-title4 font-extrabold", children: l.value }), (0, n.jsx)("span", { className: "text-subtext1 font-medium text-gray-900", children: l.label })] }, e)) }) }) });
-                },
-                m = ({ targetDate: e }) => {
-                    const { business: l } = (0, o.M1)();
-                    if (!e) return null;
-                    const a = (0, u.v)(e);
-                    return (0, n.jsxs)(d.$0, { children: [(0, n.jsx)("div", { className: "p-px rounded-2xl bg-gradient-to-r rtl:bg-gradient-to-l from-[#6FCA6C] to-transparent", children: (0, n.jsx)("div", { className: "rounded-[calc(1.5rem-8px)] p-0 dark:bg-black bg-white", children: (0, n.jsxs)("div", { className: "relative rounded-[calc(1.5rem-8px)] p-8 bg-gradient-to-r from-[rgba(118,170,153,0.2)] to-[rgba(60,154,123,0.2)]", children: [(0, n.jsx)("div", { className: "absolute md:top-1/3 md:-end-10 hidden md:flex", children: (0, n.jsx)(g, { targetDate: e }) }), (0, n.jsxs)("div", { className: "md:w-[60%]", children: [(0, n.jsx)("h2", { className: "text-title2 font-bold", children: l.landing.offerBanner.title }), (0, n.jsxs)("p", { className: "mt-4 text-[20px] font-light", children: [l.landing.offerBanner.description, " ", (0, n.jsx)("span", { className: "font-bold", children: a }), "."] })] })] }) }) }), (0, n.jsx)("div", { className: "-mt-6 md:hidden z-10", children: (0, n.jsx)(g, { targetDate: e }) })] });
-                };
-        },
-        313270: (e, l, a) => {
-            a.d(l, { n: () => f });
-            var n = a(552322),
-                i = a(261012),
-                s = a(322506),
-                t = a(993165),
-                r = a(332161),
-                c = a(305399),
-                d = a(840489),
-                o = a(202784),
-                u = a(520003),
-                g = a(430962),
-                m = a(921347),
-                x = a(699416);
-            const p = ({ SubscribeButton: e, cta: l, description: a, disclaimer: i, disclaimerLink: t, features: c, featuresTitle: o, highlight: p, priceElements: f, selectedInterval: h, selectedTier: b, title: v }) => {
-                const { business: y } = (0, g.M1)();
-                if (!f) return null;
-                const j = "Month" === h ? f.baseCost : f.annualBaseMonthly,
-                    { discountedCost: k, annualBaseMonthly: N, percentOff: w, endsAtMsec: _, promoLabel: F } = f.promotionInfo || {},
-                    C = (_ && (0, m.v)(_)) || "",
-                    L = "Custom" === f.baseCost ? null : y.landing.month,
-                    M = "Custom" === f.baseCost ? a : "Year" === h ? y.landing.pricing.billedAnnually({ cost: f.baseCost ?? "" }) : y.landing.pricing.billedMonthly,
-                    S = k && y.landing.pricing.offerAnualBilling({ discountedCost: k ?? "", baseCost: f.baseCost ?? "" });
-                return (0, n.jsxs)(u.Zb, {
-                    decoration: F,
-                    className: "flex w-full max-w-[360px] flex-col justify-between gap-8 px-7 py-6",
-                    children: [(0, n.jsxs)("div", { className: "flex flex-col gap-2", children: [(0, n.jsxs)("div", { className: "flex items-center gap-2 flex-wrap", children: [(0, n.jsx)(r.x, { size: "headline1", weight: "bold", children: v }), w ? (0, n.jsx)("div", { className: "rounded-full text-subtext3 dark:text-white text-black flex h-[18px] items-center justify-center bg-green-50 p-2 font-medium", children: y.landing.pricing.percentageOff({ percentOff: w, endDate: C }) }) : p && (0, n.jsx)("div", { className: "rounded-full text-subtext3 text-background flex h-[18px] items-center justify-center bg-green-500 px-2 font-[600]", children: p })] }), (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsxs)("div", { className: "items-baseline flex flex-row flex-wrap", children: [(0, n.jsx)("span", { className: (0, d.Z)("text-title1", k ? "md:text-title3 text-title3 line-through font-normal" : "font-extrabold"), children: j }), N && (0, n.jsx)("span", { className: "text-title3 font-extrabold text-green-500 ms-1", children: N }), L && (0, n.jsxs)(r.x, { size: "body", className: "opacity-60", children: ["/ ", L] })] }), (0, n.jsx)(r.x, { size: "body", className: "opacity-60 mt-1", children: S || M })] }), "Enterprise" !== b && "string" == typeof l ? (0, n.jsx)(e, { priceElements: f, selectedTier: b, selectedInterval: h, buttonLabel: f.buttonLabel || l }) : l, (0, n.jsxs)("div", { className: "mt-2 flex flex-col gap-2.5", children: [(0, n.jsx)(r.x, { weight: "normal", children: o }), c.map((e) => (0, n.jsxs)("div", { className: "flex items-start gap-2", children: [(0, n.jsx)(x.Z, { className: "text-text size-5 shrink-0" }), (0, n.jsx)(r.x, { weight: "normal", children: e })] }, e))] })] }), i && (0, n.jsxs)(r.x, { size: "subtext3", color: "gray700", children: [i, " ", t && (0, n.jsx)(s.r, { href: t, className: "text-blue-300", children: y.landing.pricing.learnMore })] })],
-                });
-            };
-            const f = ({ SubscribeButton: e, basicPrices: l, enterpriseUrl: a, fullAccessPrices: x, interval: f = "Year", onIntervalChange: h, showTitle: b = !0, includeHandleMarketing: v = !1 }) => {
-                const y = (0, c.a)("(max-width: 768px)"),
-                    [j, k] = (0, o.useState)(f),
-                    { business: N } = (0, g.M1)(),
-                    w = b ? N.landing.pricing.title : void 0,
-                    _ = l?.Year?.promotionInfo?.endsAtMsec || x?.Year?.promotionInfo?.endsAtMsec,
-                    F = _ && (0, m.v)(_),
-                    C = F ? (y ? N.landing.pricing.offer : N.landing.pricing.offerEnds({ endDate: F })) : void 0,
-                    L = { affiliateCost: N.landing.pricing.enterprisePrice, affiliateInterval: "month", affiliateTaxLabel: "plus any applicable tax", baseCost: N.landing.pricing.enterprisePrice, baseInterval: "month", basePriceCurrency: "USD", link: null, monthlyTaxLabel: "plus any applicable tax", percentageSavedLabel: null },
-                    M = (e) => {
-                        h ? h(e) : k(e);
-                    },
-                    S = N.landing.pricing.basicFeaturesOffer(j),
-                    B = N.landing.pricing.fullAccessFeaturesOffer(j, v);
-                return (0, n.jsxs)(u.$0, {
-                    title: w,
-                    className: "gap-5 pb-8",
-                    id: "pricing",
-                    children: [
-                        (0, n.jsxs)("div", { className: "flex items-center gap-2", children: [(0, n.jsx)("span", { className: (0, d.Z)("cursor-pointer transition-colors", { "text-gray-500": "Year" === j, "text-text": "Month" === j }), onClick: () => M("Month"), children: N.landing.pricing.monthly }), (0, n.jsx)(i.r, { checked: "Year" === j, onCheckedChange: (e) => M(e ? "Year" : "Month"), size: "small", className: "data-[state=checked]:bg-gray-400 data-[state=unchecked]:bg-gray-400", thumbClassName: "data-[state=checked]:bg-text data-[state=unchecked]:bg-text" }), (0, n.jsxs)("div", { className: (0, d.Z)("relative flex cursor-pointer items-baseline gap-1 transition-colors", { "text-gray-500": "Month" === j, "text-text": "Year" === j }), onClick: () => M("Year"), children: [N.landing.pricing.yearly, (C || l?.Year.percentageSavedLabel) && (0, n.jsx)("div", { className: (0, d.Z)("pointer-events-none absolute start-[calc(100%+8px)] cursor-default select-none transition-opacity", { "opacity-0": "Month" === j, "opacity-100": "Year" === j }), children: (0, n.jsx)("span", { className: "text-subtext2 whitespace-nowrap text-green-500", children: C || l?.Year.percentageSavedLabel }) })] })] }),
-                        (0, n.jsxs)("div", { className: "flex w-full flex-col items-center justify-center gap-12 md:flex-row md:items-stretch", children: [(0, n.jsx)(p, { title: N.landing.pricing.basic, priceElements: l?.[j], features: S, featuresTitle: N.landing.pricing.basicFeaturesTitle, SubscribeButton: e, selectedTier: "Basic", selectedInterval: j, cta: N.landing.pricing.basicCta }), (0, n.jsx)(p, { title: N.landing.pricing.fullAccess, priceElements: x?.[j], features: B, featuresTitle: N.landing.pricing.fullAccessFeaturesTitle, highlight: N.landing.pricing.highlight, SubscribeButton: e, selectedTier: "FullAccess", selectedInterval: j, cta: N.landing.pricing.fullAccessCta, disclaimer: "Month" === j ? N.landing.pricing.affiliatesDisclaimerMonthly : N.landing.pricing.affiliatesDisclaimerYearly, disclaimerLink: "https://help.x.com/en/using-x/verified-organizations#verifiedorgs-pricing" }), a && (0, n.jsx)(p, { title: N.landing.pricing.enterprise, description: N.landing.pricing.enterpriseDescription, priceElements: L, features: [...N.landing.pricing.enterpriseFeatures], featuresTitle: N.landing.pricing.enterpriseFeaturesTitle, SubscribeButton: e, selectedTier: "Enterprise", selectedInterval: j, cta: (0, n.jsx)(s.r, { href: a, className: "mt-auto w-full", children: (0, n.jsx)(t.z, { variant: "insightsBright", className: "my-4 h-[36px] w-full", children: N.landing.pricing.enterpriseCta }) }) })] }),
-                        (0, n.jsx)("div", { className: "flex flex-col items-center justify-center gap-4", children: (0, n.jsxs)(r.x, { size: "subtext2", color: "gray700", children: [N.landing.pricing.disclaimer, " ", (0, n.jsx)(s.r, { className: "text-blue-300", href: "https://help.x.com/en/using-x/verified-organizations#verifiedorgs-pricing", children: N.landing.pricing.learnMore })] }) }),
-                    ],
-                });
-            };
-        },
-        520003: (e, l, a) => {
-            a.d(l, { $0: () => o, ZQ: () => u, Zb: () => d, ad: () => c });
-            var n = a(552322),
-                i = a(993165),
-                s = a(332161),
-                t = a(31674),
-                r = a(430962);
-            const c = ({ ctaUrl: e }) => {
-                    const { business: l } = (0, r.M1)();
-                    return (0, n.jsx)("a", { href: e || "#pricing", className: "focus:outline-none", children: (0, n.jsx)(i.z, { variant: "insightsBright", className: "w-60 py-5", children: (0, n.jsx)(s.x, { size: "headline2", weight: "bold", color: "background", children: l.landing.subscribeButton }) }) });
-                },
-                d = ({ children: e, className: l, decoration: a }) => {
-                    const i = (0, n.jsx)("div", { className: (0, t.cn)("rounded-2xl bg-gray-0 from-background/50 overflow-hidden bg-gradient-to-tl from-10% to-transparent", l), children: e });
-                    return a ? (0, n.jsxs)("div", { className: "relative", children: [a && (0, n.jsx)("span", { className: "absolute -top-2 -right-2 text-subtext3 px-2 py-1 rounded border border-nested-border/25 bg-gray-100 text-text", children: a }), i] }) : i;
-                },
-                o = ({ children: e, className: l, id: a, title: i }) => (0, n.jsxs)("div", { className: (0, t.cn)("flex w-full max-w-5xl flex-col items-center", l), id: a, children: [i && (0, n.jsx)("div", { className: "relative bg-clip-text py-1 text-[40px] font-[600] leading-[40px]", children: (0, n.jsx)("span", { className: "from-text bg-gradient-to-r from-70% to-gray-500 bg-clip-text text-transparent", children: i }) }), e] }),
-                u = ({ children: e, className: l, comingSoon: a = !1, description: i, title: c }) => {
-                    const { business: o } = (0, r.M1)();
-                    return (0, n.jsxs)(d, { className: (0, t.cn)("relative flex h-full flex-col items-start", l), children: [(0, n.jsxs)("div", { className: "relative flex flex-col items-start gap-6 p-8", children: [(0, n.jsx)(s.x, { size: "title4", weight: "bold", className: "text-balance", children: c }), (0, n.jsx)(s.x, { size: "headline1", className: "opacity-60", children: i })] }), e, a && (0, n.jsx)("div", { className: "absolute top-2 flex w-full items-center justify-center", children: (0, n.jsx)("div", { className: "text-subtext3 bg-background rounded-lg px-2 py-1 text-gray-700", children: o.landing.comingSoon }) })] });
-                };
-        },
-        921347: (e, l, a) => {
-            a.d(l, { v: () => i });
-            var n = a(152935);
-            const i = (e, l = "MMMM dd, yyyy") => (0, n.WU)(new Date(Number.parseInt(e, 10)), l);
-        },
         509345: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => i });
-            const n = {
+            a.r(l), a.d(l, { default: () => s });
+            const i = {
                     argumentDefinitions: [],
                     kind: "Fragment",
                     metadata: null,
@@ -138,25 +18,25 @@
                     abstractKey: null,
                     hash: "9db7537240a533242b96d0411a860f4b",
                 },
-                i = n;
+                s = i;
         },
         971046: (e, l, a) => {
-            a.d(l, { q: () => r });
-            var n = a(552322),
-                i = a(378364),
-                s = a(889906);
+            a.d(l, { q: () => t });
+            var i = a(552322),
+                s = a(378364),
+                n = a(889906);
             a(703383);
-            const t = a(509345);
-            function r({ user: e, ...l }) {
-                const a = (0, s.useFragment)(t, e);
+            const r = a(509345);
+            function t({ user: e, ...l }) {
+                const a = (0, n.useFragment)(r, e);
                 if (!a) return null;
-                const r = "Square" === a.profile_image_shape ? "square" : "circle";
-                return (0, n.jsx)(i.q, { ...l, screenName: a.core.screen_name, shape: r, url: a.avatar.image_url });
+                const t = "Square" === a.profile_image_shape ? "square" : "circle";
+                return (0, i.jsx)(s.q, { ...l, screenName: a.core.screen_name, shape: t, url: a.avatar.image_url });
             }
         },
         340629: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => i });
-            const n = {
+            a.r(l), a.d(l, { default: () => s });
+            const i = {
                     argumentDefinitions: [],
                     kind: "Fragment",
                     metadata: null,
@@ -229,19 +109,19 @@
                     abstractKey: null,
                     hash: "4edcd837e5969a7574ad1274556b94cc",
                 },
-                i = n;
+                s = i;
         },
         323048: (e, l, a) => {
-            a.d(l, { R: () => r });
-            var n = a(552322),
-                i = a(589259),
-                s = a(889906);
+            a.d(l, { R: () => t });
+            var i = a(552322),
+                s = a(589259),
+                n = a(889906);
             a(703383);
-            const t = a(340629);
-            function r({ user: e, ...l }) {
-                const a = (0, s.useFragment)(t, e);
+            const r = a(340629);
+            function t({ user: e, ...l }) {
+                const a = (0, n.useFragment)(r, e);
                 if (!a) return null;
-                const r = (function (e) {
+                const t = (function (e) {
                     let l, a;
                     switch (("Badge" === e.affiliates_highlighted_label?.label?.user_label_display_type && "BusinessLabel" === e.affiliates_highlighted_label?.label?.user_label_type && e.affiliates_highlighted_label.label.badge && (l = { label: e.affiliates_highlighted_label.label.description, url: e.affiliates_highlighted_label.label.badge.url }), e.verification.verified_type)) {
                         case "Business":
@@ -258,29 +138,69 @@
                     }
                     return { affiliation: l, isProtected: !!e.privacy.protected, isSubscriber: !!e.super_following, verifiedType: a };
                 })(a);
-                return (0, n.jsx)(i.R, { ...l, badges: r, name: a.core.name, screenName: a.core.screen_name });
+                return (0, i.jsx)(s.R, { ...l, badges: t, name: a.core.name, screenName: a.core.screen_name });
             }
         },
+        699416: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, i.jsx)("path", { d: "M9.64 18.952l-5.55-4.861 1.317-1.504 3.951 3.459 8.459-10.948L19.4 6.32 9.64 18.952z" }) });
+        },
+        907934: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, i.jsx)("path", { d: "M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-.25 10.48L10.5 17.5l-2-1.5v-3.5L7.5 9 5.03 7.59c1.42-2.24 3.89-3.75 6.72-3.84L11 6l-2 .5L8.5 9l5 1.5-1.75 1.73zM17 14v-3l-1.5-3 2.88-1.23c1.17 1.42 1.87 3.24 1.87 5.23 0 1.3-.3 2.52-.83 3.61L17 14z" }) });
+        },
+        89596: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, i.jsx)("path", { d: "M17.5 7H17v-.25c0-2.76-2.24-5-5-5s-5 2.24-5 5V7h-.5C5.12 7 4 8.12 4 9.5v9C4 19.88 5.12 21 6.5 21h11c1.39 0 2.5-1.12 2.5-2.5v-9C20 8.12 18.89 7 17.5 7zM13 14.73V17h-2v-2.27c-.59-.34-1-.99-1-1.73 0-1.1.9-2 2-2 1.11 0 2 .9 2 2 0 .74-.4 1.39-1 1.73zM15 7H9v-.25c0-1.66 1.35-3 3-3 1.66 0 3 1.34 3 3V7z" }) });
+        },
+        611105: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, i.jsx)("path", { d: "M12 4c-4.418 0-8 3.58-8 8s3.582 8 8 8c3.806 0 6.993-2.66 7.802-6.22l1.95.44C20.742 18.67 16.76 22 12 22 6.477 22 2 17.52 2 12S6.477 2 12 2c3.272 0 6.176 1.57 8 4V3.5h2v6h-6v-2h2.616C17.175 5.39 14.749 4 12 4z" }) });
+        },
+        913577: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, i.jsx)("path", { d: "M16 6c0 2.21-1.79 4-4 4S8 8.21 8 6s1.79-4 4-4 4 1.79 4 4zm-.76 8.57l-3.95.58 2.86 2.78-.68 3.92L17 20l3.53 1.85-.68-3.92 2.86-2.78-3.95-.58L17 11l-1.76 3.57zm-.45-3.09c-.89-.32-1.86-.48-2.89-.48-2.35 0-4.37.85-5.86 2.44-1.48 1.57-2.36 3.8-2.63 6.46l-.11 1.09h8.58l.52-2.49-4.05-4.3 5.59-.99.85-1.73z" }) });
+        },
+        101680: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsxs)("svg", { fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 22 22", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: [(0, i.jsxs)("linearGradient", { id: "a", gradientUnits: "userSpaceOnUse", x1: 4.411, x2: 18.083, y1: 2.495, y2: 21.508, children: [(0, i.jsx)("stop", { offset: 0, stopColor: "#f4e72a" }), (0, i.jsx)("stop", { offset: 0.539, stopColor: "#cd8105" }), (0, i.jsx)("stop", { offset: 0.68, stopColor: "#cb7b00" }), (0, i.jsx)("stop", { offset: 1, stopColor: "#f4ec26" }), (0, i.jsx)("stop", { offset: 1, stopColor: "#f4e72a" })] }), (0, i.jsxs)("linearGradient", { id: "b", gradientUnits: "userSpaceOnUse", x1: 5.355, x2: 16.361, y1: 3.395, y2: 19.133, children: [(0, i.jsx)("stop", { offset: 0, stopColor: "#f9e87f" }), (0, i.jsx)("stop", { offset: 0.406, stopColor: "#e2b719" }), (0, i.jsx)("stop", { offset: 0.989, stopColor: "#e2b719" })] }), (0, i.jsxs)("g", { clipRule: "evenodd", fillRule: "evenodd", children: [(0, i.jsx)("path", { d: "M13.324 3.848L11 1.6 8.676 3.848l-3.201-.453-.559 3.184L2.06 8.095 3.48 11l-1.42 2.904 2.856 1.516.559 3.184 3.201-.452L11 20.4l2.324-2.248 3.201.452.559-3.184 2.856-1.516L18.52 11l1.42-2.905-2.856-1.516-.559-3.184zm-7.09 7.575l3.428 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z", fill: "url(#a)" }), (0, i.jsx)("path", { d: "M13.101 4.533L11 2.5 8.899 4.533l-2.895-.41-.505 2.88-2.583 1.37L4.2 11l-1.284 2.627 2.583 1.37.505 2.88 2.895-.41L11 19.5l2.101-2.033 2.895.41.505-2.88 2.583-1.37L17.8 11l1.284-2.627-2.583-1.37-.505-2.88zm-6.868 6.89l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z", fill: "url(#b)" }), (0, i.jsx)("path", { d: "M6.233 11.423l3.429 3.428 5.65-6.17.038-.033-.005 1.398-5.683 6.206-3.429-3.429-.003-1.405.005.003z", fill: "#d18800" })] })] });
+        },
+        490881: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 22 22", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: (0, i.jsx)("path", { clipRule: "evenodd", d: "M12.05 2.056c-.568-.608-1.532-.608-2.1 0l-1.393 1.49c-.284.303-.685.47-1.1.455L5.42 3.932c-.832-.028-1.514.654-1.486 1.486l.069 2.039c.014.415-.152.816-.456 1.1l-1.49 1.392c-.608.568-.608 1.533 0 2.101l1.49 1.393c.304.284.47.684.456 1.1l-.07 2.038c-.027.832.655 1.514 1.487 1.486l2.038-.069c.415-.014.816.152 1.1.455l1.392 1.49c.569.609 1.533.609 2.102 0l1.393-1.49c.283-.303.684-.47 1.099-.455l2.038.069c.832.028 1.515-.654 1.486-1.486L18 14.542c-.015-.415.152-.815.455-1.099l1.49-1.393c.608-.568.608-1.533 0-2.101l-1.49-1.393c-.303-.283-.47-.684-.455-1.1l.068-2.038c.029-.832-.654-1.514-1.486-1.486l-2.038.07c-.415.013-.816-.153-1.1-.456zm-5.817 9.367l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z", fill: "#829aab", fillRule: "evenodd" }) });
+        },
+        808116: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 22 22", width: "1em", height: "1em", display: "flex", role: "img", ...e, children: (0, i.jsx)("path", { d: "M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z" }) });
+        },
         177697: (e, l, a) => {
-            a.d(l, { Z: () => i });
-            var n = a(552322);
-            const i = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M18.586 7.001L16.707 8.88c-.391.391-1.024.391-1.414 0l-.172-.172c-.39-.391-.39-1.024 0-1.414L17 5.415c1.26-1.26.367-3.414-1.414-3.414h-1.118c-1.845 0-3.615.733-4.92 2.038-1.645 1.645-2.359 4.004-1.903 6.285l.217 1.086c.033.164-.019.333-.137.452l-5.372 5.372c-.976.976-.976 2.559 0 3.536l.879.879c.976.976 2.559.976 3.535 0l5.372-5.372c.118-.118.288-.17.452-.137l1.086.217c2.281.456 4.64-.258 6.285-1.903C21.267 13.149 22 11.379 22 9.534V8.416c0-1.782-2.154-2.674-3.414-1.414zm-.038 6.037c-1.172 1.172-2.853 1.681-4.479 1.356l-1.086-.217c-.82-.164-1.667.093-2.258.684l-5.372 5.372c-.195.195-.512.195-.707 0l-.879-.879c-.195-.195-.195-.512 0-.707l5.372-5.372c.591-.591.848-1.438.684-2.258l-.217-1.086c-.325-1.626.184-3.306 1.356-4.479.93-.93 2.191-1.452 3.506-1.452h1.118l-1.879 1.879c-1.172 1.172-1.172 3.071 0 4.243l.172.172c1.172 1.172 3.071 1.172 4.242 0L20 8.415v1.118c0 1.315-.522 2.576-1.452 3.506z" }) });
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, i.jsx)("path", { d: "M18.586 7.001L16.707 8.88c-.391.391-1.024.391-1.414 0l-.172-.172c-.39-.391-.39-1.024 0-1.414L17 5.415c1.26-1.26.367-3.414-1.414-3.414h-1.118c-1.845 0-3.615.733-4.92 2.038-1.645 1.645-2.359 4.004-1.903 6.285l.217 1.086c.033.164-.019.333-.137.452l-5.372 5.372c-.976.976-.976 2.559 0 3.536l.879.879c.976.976 2.559.976 3.535 0l5.372-5.372c.118-.118.288-.17.452-.137l1.086.217c2.281.456 4.64-.258 6.285-1.903C21.267 13.149 22 11.379 22 9.534V8.416c0-1.782-2.154-2.674-3.414-1.414zm-.038 6.037c-1.172 1.172-2.853 1.681-4.479 1.356l-1.086-.217c-.82-.164-1.667.093-2.258.684l-5.372 5.372c-.195.195-.512.195-.707 0l-.879-.879c-.195-.195-.195-.512 0-.707l5.372-5.372c.591-.591.848-1.438.684-2.258l-.217-1.086c-.325-1.626.184-3.306 1.356-4.479.93-.93 2.191-1.452 3.506-1.452h1.118l-1.879 1.879c-1.172 1.172-1.172 3.071 0 4.243l.172.172c1.172 1.172 3.071 1.172 4.242 0L20 8.415v1.118c0 1.315-.522 2.576-1.452 3.506z" }) });
         },
         428897: (e, l, a) => {
-            a.d(l, { Z: () => i });
-            var n = a(552322);
-            const i = (e) => (0, n.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, n.jsx)("path", { d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" }) });
+            a.d(l, { Z: () => s });
+            var i = a(552322);
+            const s = (e) => (0, i.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, i.jsx)("path", { d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" }) });
         },
         261012: (e, l, a) => {
-            a.d(l, { r: () => r });
-            var n = a(552322),
-                i = a(199237),
-                s = a(202784),
-                t = a(31674);
-            const r = (0, s.forwardRef)(function ({ className: e, size: l = "medium", thumbClassName: a, ...s }, r) {
-                return (0, n.jsx)(i.fC, { className: (0, t.cn)("focus-visible:ring-offset-background data-[state=checked]:bg-primary rounded-full focus-visible:ring-primary inline-flex shrink-0 cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=unchecked]:bg-gray-500", "medium" === l ? "h-3 w-10" : "h-2 w-6", e), ...s, ref: r, children: (0, n.jsx)(i.bU, { className: (0, t.cn)("rounded-full pointer-events-none block shadow-md ring-0 transition-transform data-[state=checked]:bg-blue-300 data-[state=unchecked]:bg-gray-50", "medium" === l ? "size-5 data-[state=checked]:translate-x-5 data-[state=checked]:rtl:-translate-x-5 data-[state=unchecked]:translate-x-0" : "size-3.5 data-[state=checked]:translate-x-2.5 data-[state=checked]:rtl:-translate-x-2.5 data-[state=unchecked]:translate-x-0", a) }) });
+            a.d(l, { r: () => t });
+            var i = a(552322),
+                s = a(199237),
+                n = a(202784),
+                r = a(31674);
+            const t = (0, n.forwardRef)(function ({ className: e, size: l = "medium", thumbClassName: a, ...n }, t) {
+                return (0, i.jsx)(s.fC, { className: (0, r.cn)("focus-visible:ring-offset-background data-[state=checked]:bg-primary rounded-full focus-visible:ring-primary inline-flex shrink-0 cursor-pointer items-center transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=unchecked]:bg-gray-500", "medium" === l ? "h-3 w-10" : "h-2 w-6", e), ...n, ref: t, children: (0, i.jsx)(s.bU, { className: (0, r.cn)("rounded-full pointer-events-none block shadow-md ring-0 transition-transform data-[state=checked]:bg-blue-300 data-[state=unchecked]:bg-gray-50", "medium" === l ? "size-5 data-[state=checked]:translate-x-5 data-[state=checked]:rtl:-translate-x-5 data-[state=unchecked]:translate-x-0" : "size-3.5 data-[state=checked]:translate-x-2.5 data-[state=checked]:rtl:-translate-x-2.5 data-[state=unchecked]:translate-x-0", a) }) });
             });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-8eba0336.3a75e59a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-8eba0336.1360ed1a.js.map

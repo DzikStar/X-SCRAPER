@@ -2495,41 +2495,6 @@
                     return "[[225547]] " + e.topicName + " Topic";
                 }),
                 a("ic6aa5f4", "[[293421]] Authenticated."),
-                a("c02e7e3c", "[[262789]] Loading..."),
-                a("c5453f28", "[[293093]] Round of 64"),
-                a("eb256a86", "[[293092]] Round of 32"),
-                a("g77adc66", "[[293095]] Sweet Sixteen"),
-                a("a6d2520c", "[[293094]] Sweet 16"),
-                a("g5b63eb6", "[[293089]] Elite Eight"),
-                a("d8bf2890", "[[293088]] Elite 8"),
-                a("f9d3d6f2", "[[293085]] Final Four"),
-                a("bda24f7c", "[[293086]] Final 4"),
-                a("i5043440", "[[293091]] National Championship"),
-                a("fcb16026", "[[293084]] Championship"),
-                a("e9c89ee8", "[[293087]] East"),
-                a("h259fd86", "[[293098]] West"),
-                a("a7b2545a", "[[293096]] South"),
-                a("fdf7819a", "[[293090]] Midwest"),
-                a("i899e9b0", "[[293520]] Submit Bracket"),
-                a("c5b04394", "[[293628]] View Picks"),
-                a("h836bbae", "[[293627]] View Tournament"),
-                a("e1059d6c", "[[293574]] 1st Round"),
-                a("b1602be4", "[[293575]] 2nd Round"),
-                a("ef7bc2c0", "[[293579]] Mar 20-21"),
-                a("h726aaf2", "[[293580]] Mar 22-23"),
-                a("ee7cd198", "[[293578]] Mar 27-28"),
-                a("fed91402", "[[293581]] Mar 29-30"),
-                a("aba0a450", "[[293577]] Apr 5"),
-                a("jdfba2dc", "[[293576]] Apr 7"),
-                a("b7c6bc12", "[[293097]] TBD"),
-                a("c373612c", "Pick:"),
-                a("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                a("j5db9ddd", " over "),
-                a("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 a("j4c40da4", "[[238312]] Send now"),
                 a("b23688c8", "[[237532]] Undo timer"),
                 a("cca5d499", function (e) {
@@ -2975,8 +2940,8 @@
                 a("a7de64de", "[[180893]] Ads info"),
                 a("jb0a4c36", "[[180896]] Blog"),
                 a("ce6d095a", "[[225663]] Careers"),
-                a("e0adec82", "[[225676]] Brand Resources");
-            a("df1b7550", "[[180908]] Marketing"),
+                a("e0adec82", "[[225676]] Brand Resources"),
+                a("df1b7550", "[[180908]] Marketing"),
                 a("he258678", "[[280696]] X for Business"),
                 a("c6f58084", "[[180900]] Developers"),
                 a("d83f18d2", "[[180901]] Directory"),
@@ -3010,8 +2975,8 @@
                 }),
                 a("d6d9aab6", "[[244742]] Add Bookmark"),
                 a("bb89cf46", "[[244743]] Remove Bookmark"),
-                a("a739d4ba", "[[244741]] Add to Bookmark Folder"),
-                a("d5270434", "[[240145]] Exit"),
+                a("a739d4ba", "[[244741]] Add to Bookmark Folder");
+            a("d5270434", "[[240145]] Exit"),
                 a("ac85c6b2", "[[177517]] An error occurred loading this image"),
                 a("b327c12a", "[[191524]] Image"),
                 a("ic76bdf0", "[[292216]] Recreate this with Grok"),
@@ -3887,8 +3852,8 @@
                 a("a2bf8b8a", "[[276611]] Switch to listening"),
                 a("caa8d928", "[[292248]] Toggle noise suppression"),
                 a("b5d88f0c", "[[283830]] Employees only"),
-                a("c855ab8e", "[[273092]] Subscribers only");
-            a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look."),
+                a("c855ab8e", "[[273092]] Subscribers only"),
+                a("ddeb0a3c", "[[271043]] Here’s the Community. Like the people? Take a look."),
                 a("e111f531", function (e) {
                     return "[[265990]] " + e.count + " tuned in";
                 }),
@@ -3936,8 +3901,8 @@
                 a("f2333850", "[[283614]] Share with people outside of X"),
                 a("cddb8097", "Learn more"),
                 a("f77997b0", "[[236782]] Co-host"),
-                a("i48f4ed8", "[[51016]] Speaker"),
-                a("a77c8e02", "[[230208]] Listener"),
+                a("i48f4ed8", "[[51016]] Speaker");
+            a("a77c8e02", "[[230208]] Listener"),
                 a("bdfa93eb", function (e) {
                     return "[[233127]] Shared by " + e.name;
                 }),
@@ -4207,6 +4172,7 @@
                 a("f794af9a", "[[285085]] Fun mode"),
                 a("eccf9fea", "[[285086]] Regular mode"),
                 a("j22655f2", "[[288852]] Ask anything"),
+                a("c02e7e3c", "[[262789]] Loading..."),
                 a("h0681e3e", "[[291529]] Talk to Grok, our AI assistant"),
                 a("d593fd78", "[[291527]] It can answer your questions, search X, and generate images"),
                 a("d0205a24", "[[291524]] Check the Facts"),
@@ -4291,7 +4257,6 @@
                 a("afa2a58e", "[[296463]] See all posts"),
                 a("fc83e7e2", "[[296470]] See all users"),
                 a("df601d92", "[[296461]] Relevant Users"),
-                a("b001fa12", "[[296472]] Source query"),
                 a("db6c20cf", function (e) {
                     return "[[296468]] Show all (" + e.count + ")";
                 }),
@@ -4374,7 +4339,7 @@
                 a("g3ce0132", "[[292985]] Thought for"),
                 a("f8007364", "[[293070]] Expand for details"),
                 a("ca53f780", "[[293067]] Collapse details"),
-                a("b52484b6", "[[291869]] Searching..."),
+                a("e6d51c62", "Searching"),
                 a("ib1c5475", function (e) {
                     return "[[294827]] Thought for " + e.minutes + "m " + e.seconds + "s";
                 }),
@@ -4392,6 +4357,7 @@
                 a("a3186bff", function (e) {
                     return "[[290890]] " + e.count + " web page" + n(e.count, "", "s");
                 }),
+                a("b52484b6", "[[291869]] Searching..."),
                 a("f4146dda", "[[292210]] Which response do you prefer?"),
                 a("a2c2be32", "[[292209]] This will help make Grok better."),
                 a("g01599b6", "[[292208]] Response 1"),
@@ -4929,8 +4895,8 @@
                 a("b649d8cc", "[[294165]] Subscriber Only"),
                 a("j9282130", "[[294433]] Broadcast thumbnail"),
                 a("g629b8b0", "[[294454]] Timed Out"),
-                a("eb87323c", "[[294449]] This shows analytics data for the selected time period since the livestream happened.");
-            a("i6a75722", "[[294453]] Time Range"),
+                a("eb87323c", "[[294449]] This shows analytics data for the selected time period since the livestream happened."),
+                a("i6a75722", "[[294453]] Time Range"),
                 a("c602f5b8", "[[246794]] Total"),
                 a("b35e68ae", "[[294169]] Total Participants"),
                 a("h78ee79a", "[[294168]] Total Replay Watched"),
@@ -4959,8 +4925,8 @@
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
                 a("if2909ba", "[[292000]] Watch Time"),
                 a("i0e5bf4c", "[[293195]] Your videos"),
-                a("ed99baea", "[[289716]] Early Beta Access"),
-                a("gf898b70", "[[289702]] Advanced Search"),
+                a("ed99baea", "[[289716]] Early Beta Access");
+            a("gf898b70", "[[289702]] Advanced Search"),
                 a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
                 a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
@@ -5881,8 +5847,8 @@
                 a("fb59415e", "[[280579]] In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 a("f9a44022", "[[280693]] X, the company, doesn’t choose what shows up: the people do"),
                 a("gdf4fbb2", "[[280691]] X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                a("cc720e6a", "[[272993]] Community Notes is built on data transparency");
-            a("j2fcd33a", "[[274806]] Data includes contributions up until"),
+                a("cc720e6a", "[[272993]] Community Notes is built on data transparency"),
+                a("j2fcd33a", "[[274806]] Data includes contributions up until"),
                 a("d4a6b322", "[[273103]] All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you."),
                 a("c359263a", "[[273006]] Learn how to use and analyze Community Notes data "),
                 a("b8a27fe2", "[[228557]] in our guide"),
@@ -5915,8 +5881,8 @@
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "[[242318]] Delete Folder"),
-                a("f4ea967a", "[[242841]] Folder has been deleted"),
+                a("h18f86a4", "[[242318]] Delete Folder");
+            a("f4ea967a", "[[242841]] Folder has been deleted"),
                 a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
                 a("e3299b94", "[[242842]] Something went wrong. Try updating that folder again in a minute."),
@@ -6887,8 +6853,8 @@
                 a("b36cd50e", "[[282471]] Specify the core team that candidates will work with once hired."),
                 a("d3a427ce", "[[282468]] Select the level of experience required."),
                 a("i7174442", "[[282455]] Job Description"),
-                a("fef0cf02", "[[282466]] Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
-            a("b7800bec", "[[282465]] Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                a("fef0cf02", "[[282466]] Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
+                a("b7800bec", "[[282465]] Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 a("a5244ece", "[[282449]] Application URL (Required)"),
                 a("g2b553f6", "[[282451]] Enter the public URL where candidates can apply for this job."),
                 a("c2e77608", "[[282454]] Job Title (Required)"),
@@ -6921,8 +6887,8 @@
                 a("c924ad84", "[[293326]] Keep videos playing"),
                 a("de750a3c", "[[293320]] Enjoy them even when your phone is locked"),
                 a("he5e87c4", "[[293316]] Boost your replies"),
-                a("g64a60ba", "[[293325]] Get a small prioritization when you reply to posts"),
-                a("a7ee832a", "[[293321]] Fix typos and mistakes, up to 60 minutes"),
+                a("g64a60ba", "[[293325]] Get a small prioritization when you reply to posts");
+            a("a7ee832a", "[[293321]] Fix typos and mistakes, up to 60 minutes"),
                 a("fdd77a34", "[[293319]] Create longer posts"),
                 a("j6d26a7a", "[[293330]] Write as much as you’d like to share"),
                 a("c4fd68da", "[[293317]] Customize your experience"),
@@ -7863,7 +7829,45 @@
                 a("cfcac293", function (e) {
                     return "[[288041]] Gift & Pay " + e.price;
                 }),
-                a("d7a73450", "[[288045]] Tier");
+                a("d7a73450", "[[288045]] Tier"),
+                a("hbd2c24e", "[[288076]] This account is not eligible for gifts at this time."),
+                a("f3fddc98", "Purchaser Terms"),
+                a("cff9c889", "Learn more"),
+                a("c65dda96", "[[288046]] Your gift has been sent."),
+                a("f6e2a407", function (e) {
+                    return "[[282202]] Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
+                }),
+                a("j8dedddd", function (e) {
+                    return "[[282043]] When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
+                }),
+                a("c8a513f6", "[[272790]] Cancel Subscription"),
+                a("ea000ec8", "[[272788]] Already canceled your Subscription?"),
+                a("d7b8387e", "[[272796]] If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
+                a("f4166d9a", "[[272806]] Want to cancel your Subscription?"),
+                a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
+                a("ee9efbc8", "[[265375]] Continue to cancellation"),
+                a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
+                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
+                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "[[288006]] Welcome back, " + e.displayName;
+                }),
+                a("a76d58ba", "[[288167]] Ads Analytics"),
+                a("eccd0e1a", "[[288001]] Organization Analytics"),
+                a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
+                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics."),
+                a("gf67aae4", "[[288005]] Upgrade to Full Access"),
+                a("h75e3618", "[[288038]] Include organization"),
+                a("h24a8862", "[[288039]] About this checkbox"),
+                a("c29e3a88", "[[288072]] Select affiliates"),
+                a("j8318d57", function (e) {
+                    return "[[288077]] " + e.number + " affiliate" + n(e.number, "", "s");
+                }),
+                a("bf809ec0", "[[288071]] Select Affiliates"),
+                a("b719e224", "[[196494]] No results"),
+                a("c9938100", "[[220491]] Search results"),
+                a("d1a35ec6", "[[274371]] Add accounts"),
+                a("b437adda", "[[281591]] Upgrade to paid");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7902,47 +7906,9 @@
                     r(e, t)
                 );
             }
-            a("hbd2c24e", "[[288076]] This account is not eligible for gifts at this time."),
-                a("f3fddc98", "Purchaser Terms"),
-                a("cff9c889", "Learn more"),
-                a("c65dda96", "[[288046]] Your gift has been sent."),
-                a("f6e2a407", function (e) {
-                    return "[[282202]] Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
-                }),
-                a("j8dedddd", function (e) {
-                    return "[[282043]] When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
-                }),
-                a("c8a513f6", "[[272790]] Cancel Subscription"),
-                a("ea000ec8", "[[272788]] Already canceled your Subscription?"),
-                a("d7b8387e", "[[272796]] If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
-                a("f4166d9a", "[[272806]] Want to cancel your Subscription?"),
-                a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                a("ee9efbc8", "[[265375]] Continue to cancellation"),
-                a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
-                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
-                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "[[288006]] Welcome back, " + e.displayName;
-                }),
-                a("a76d58ba", "[[288167]] Ads Analytics"),
-                a("eccd0e1a", "[[288001]] Organization Analytics"),
-                a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics."),
-                a("gf67aae4", "[[288005]] Upgrade to Full Access"),
-                a("h75e3618", "[[288038]] Include organization"),
-                a("h24a8862", "[[288039]] About this checkbox"),
-                a("c29e3a88", "[[288072]] Select affiliates"),
-                a("j8318d57", function (e) {
-                    return "[[288077]] " + e.number + " affiliate" + n(e.number, "", "s");
-                }),
-                a("bf809ec0", "[[288071]] Select Affiliates"),
-                a("b719e224", "[[196494]] No results"),
-                a("c9938100", "[[220491]] Search results"),
-                a("d1a35ec6", "[[274371]] Add accounts"),
-                a("b437adda", "[[281591]] Upgrade to paid"),
-                a("f1f6c88b", function (e) {
-                    return "[[274679]] Accounts (" + e.count + ")";
-                }),
+            a("f1f6c88b", function (e) {
+                return "[[274679]] Accounts (" + e.count + ")";
+            }),
                 a("b02156b8", "[[274681]] Invitations"),
                 a("gd67d29b", function (e) {
                     return "[[274680]] Invitations (" + e.count + ")";
@@ -8895,8 +8861,8 @@
                 a("b3160a69", function (e) {
                     return "[[209964]] " + e.volumePercent + " percent";
                 }),
-                a("fb236728", "[[209979]] Pause");
-            a("e9bd453e", "[[197192]] Replay"),
+                a("fb236728", "[[209979]] Pause"),
+                a("e9bd453e", "[[197192]] Replay"),
                 a("d46b00b0", "[[286554]] Jump to live"),
                 a("ec8ab8b4", "[[142349]] Mute"),
                 a("b8b6344a", "[[142439]] Unmute"),
@@ -8943,8 +8909,8 @@
                 a("a7bf9962", "[[276485]] Download video"),
                 a("ccc97152", "[[238866]] Playback speed"),
                 a("h531ade0", "[[286295]] Video quality"),
-                a("e8b5757c", "[[246420]] 0.25x"),
-                a("e7e954de", "[[238867]] 0.5x"),
+                a("e8b5757c", "[[246420]] 0.25x");
+            a("e7e954de", "[[238867]] 0.5x"),
                 a("g07ffe66", "[[246423]] 0.75x"),
                 a("d8bede9e", "[[246421]] 1x"),
                 a("j41845c8", "[[246422]] 1.25x"),
@@ -10492,12 +10458,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["[[282272]] By clicking Promote post you’re agreeing to the "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["[[293519]] ", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13374,4 +13334,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.3e60eefa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.4e27349a.js.map

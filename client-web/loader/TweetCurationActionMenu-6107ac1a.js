@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TweetCurationActionMenu-6107ac1a", "loader.FeedbackSheet"],
+    ["loader.TweetCurationActionMenu-6107ac1a", "icons/IconMegaphoneStroke-js", "icons/IconWriteStroke-js", "loader.FeedbackSheet"],
     {
         805020: (e) => {
             e.exports = { queryId: "TUo5Hk_nQNjxM9UEIasNag", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -97,13 +97,13 @@
             s.hash = "d615ae6a93ba6bd638e5ebb9a48ddee2";
             const o = s;
         },
-        656069: (e, t, i) => {
+        484636: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => T });
+            i.d(t, { Z: () => E });
             var n = i(506899),
-                a = i(414742),
-                l = i(679129),
-                r = i(805020),
+                a = i(414742);
+            const l = new n.fK.Entity("articleEntities", {}, { idAttribute: "rest_id" });
+            var r = i(805020),
                 s = i.n(r),
                 o = i(803386),
                 c = i.n(o),
@@ -122,14 +122,14 @@
                 C = i(446405),
                 k = i.n(C),
                 I = i(934309);
-            const T = ({ apiClient: e, featureSwitches: t }) => ({
+            const E = ({ apiClient: e, featureSwitches: t }) => ({
                 createDraftArticle(t) {
                     const { content_state: i, title: a } = t;
-                    return e.graphQL(_(), { content_state: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, l.Z));
+                    return e.graphQL(_(), { content_state: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_create_draft?.article_entity_results?.result, l));
                 },
                 fetchArticleEntity(t) {
                     const { articleEntityId: i } = t;
-                    return e.graphQL(b(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.article_result_by_rest_id?.result, l.Z));
+                    return e.graphQL(b(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.article_result_by_rest_id?.result, l));
                 },
                 deleteArticleEntity(t) {
                     const { articleEntityId: i } = t;
@@ -137,23 +137,23 @@
                 },
                 updateArticleEntityContent(t) {
                     const { articleEntityId: i, content_state: a } = t;
-                    return e.graphQL(g(), { content_state: a, article_entity: i }).then((e) => (0, n.Fv)(e.articleentity_update_content_state, l.Z));
+                    return e.graphQL(g(), { content_state: a, article_entity: i }).then((e) => (0, n.Fv)(e.articleentity_update_content_state, l));
                 },
                 updateArticleEntityCoverMedia(t) {
                     const { articleEntityId: i, mediaCategory: a, mediaId: r } = t;
-                    return e.graphQL(w(), { articleEntityId: i, coverMedia: r && a ? { media_id: r, media_category: a } : void 0 }).then((e) => (0, n.Fv)(e.articleentity_update_cover_media, l.Z));
+                    return e.graphQL(w(), { articleEntityId: i, coverMedia: r && a ? { media_id: r, media_category: a } : void 0 }).then((e) => (0, n.Fv)(e.articleentity_update_cover_media, l));
                 },
                 updateArticleEntityTitle(t) {
                     const { articleEntityId: i, title: a } = t;
-                    return e.graphQL(k(), { articleEntityId: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_update_title, l.Z));
+                    return e.graphQL(k(), { articleEntityId: i, title: a }).then((e) => (0, n.Fv)(e.articleentity_update_title, l));
                 },
                 publishArticleEntity(t) {
                     const { articleEntityId: i, conversationControl: a, visibilitySetting: r } = t;
-                    return e.graphQL(u(), { articleEntityId: i, visibilitySetting: r, ...(a && { conversationControl: { mode: a } }) }).then((e) => (0, n.Fv)(e.articleentity_publish?.article_entity_results?.result, l.Z));
+                    return e.graphQL(u(), { articleEntityId: i, visibilitySetting: r, ...(a && { conversationControl: { mode: a } }) }).then((e) => (0, n.Fv)(e.articleentity_publish?.article_entity_results?.result, l));
                 },
                 unpublishArticleEntity(t) {
                     const { articleEntityId: i } = t;
-                    return e.graphQL(y(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.articleentity_unpublish?.article_entity_results?.result, l.Z));
+                    return e.graphQL(y(), { articleEntityId: i }).then((e) => (0, n.Fv)(e.articleentity_unpublish?.article_entity_results?.result, l));
                 },
                 fetchArticleEntitiesSlice: (t) =>
                     t && t.lifecycle
@@ -171,7 +171,7 @@
                                           const { items: t, slice_info: i } = e,
                                               { entities: a, result: r } = (0, n.Fv)(
                                                   t?.map((e) => e.article_entity_results?.result),
-                                                  [l.Z],
+                                                  [l],
                                               );
                                           return { entities: a, result: r, slice_info: i };
                                       }
@@ -181,14 +181,9 @@
                         : Promise.resolve(I.d),
             });
         },
-        679129: (e, t, i) => {
-            "use strict";
-            i.d(t, { Z: () => n });
-            const n = new (i(506899).fK.Entity)("articleEntities", {}, { idAttribute: "rest_id" });
-        },
         683814: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => R });
+            i.d(t, { Z: () => F });
             var n = i(807896),
                 a = i(202784),
                 l = i(157130),
@@ -211,62 +206,62 @@
                 C = i(459660);
             const k = m().g6185a9e,
                 I = m().i00051cc,
-                T = m().baffe39a,
-                E = m().i9000126,
+                E = m().baffe39a,
+                T = m().i9000126,
                 x = m().dcaede8a,
                 A = m().ad85cd2e,
-                S = m().f19e4bfc,
-                Z = m().bf994ab2,
-                L = m().e7b4b30a,
-                q = m().cfd2f35e,
-                B = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
-                z = (e) => {
+                L = m().f19e4bfc,
+                S = m().bf994ab2,
+                Z = m().e7b4b30a,
+                B = m().cfd2f35e,
+                q = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
+                R = (e) => {
                     const { dismiss: t, isModal: i, midConversationTweet: n, value: l } = e,
                         { featureSwitches: r, userClaims: p } = a.useContext(w.rC),
                         u = (t) => () => {
                             e.onChange(t), e.dismiss();
                         },
-                        z = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
-                        R = !!n,
-                        F = R && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
-                    let H = x;
+                        R = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
+                        F = !!n,
+                        z = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
+                    let Q = x;
                     return (
-                        F ? (H = Z) : R && (H = L),
+                        z ? (Q = S) : F && (Q = Z),
                         a.createElement(
                             s.Z,
-                            { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [B.root, i ? B.modal : B.popover] },
-                            a.createElement(s.Z, { style: B.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
+                            { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [q.root, i ? q.modal : q.popover] },
+                            a.createElement(s.Z, { style: q.title }, a.createElement(o.ZP, { id: "conversation-controls-title", weight: "bold" }, k), a.createElement(o.ZP, { color: "gray700", id: "conversation-controls-details", size: "body" }, I)),
                             a.createElement(
                                 s.Z,
                                 null,
-                                a.createElement(c.Z, { Icon: b.default, actionText: T, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: h.default, actionText: E, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: f.default, actionText: S, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: F ? g.default : v.default, actionText: H, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: B.menuRow, withIconAsThumbnail: !0 }),
-                                z &&
+                                a.createElement(c.Z, { Icon: b.default, actionText: E, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: h.default, actionText: T, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: z ? g.default : v.default, actionText: Q, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                R &&
                                     !n &&
                                     a.createElement(d.Z, {
                                         checked: e.disallowedReplyControls.includes(C.m.Links),
                                         label: m().ca6500a8,
                                         onChange:
-                                            ((Q = C.m.Links),
+                                            ((j = C.m.Links),
                                             () => {
-                                                if (e.disallowedReplyControls.includes(Q)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== Q));
+                                                if (e.disallowedReplyControls.includes(j)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== j));
                                                 else {
                                                     const t = new Set([...e.disallowedReplyControls]);
-                                                    t.add(Q), e.setDisallowedReplyControls([...t]);
+                                                    t.add(j), e.setDisallowedReplyControls([...t]);
                                                 }
                                             }),
-                                        style: B.disallowLinkRepliesCheck,
+                                        style: q.disallowLinkRepliesCheck,
                                     }),
-                                e.isModal ? a.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: B.cancelButton, type: "primaryOutlined" }, q) : null,
+                                e.isModal ? a.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: q.cancelButton, type: "primaryOutlined" }, B) : null,
                             ),
                         )
                     );
-                    var Q;
+                    var j;
                 },
-                R = (e) => {
+                F = (e) => {
                     const { children: t, controlled: i = !1, disabled: s } = e,
                         [o, c] = a.useState(!1),
                         d = a.useCallback(() => c(!0), []),
@@ -280,7 +275,7 @@
                             onDismiss: _,
                             renderContent: (t, i) => {
                                 const { children: l, controlled: r, ...s } = e;
-                                return a.createElement(z, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
+                                return a.createElement(R, (0, n.Z)({}, s, { dismiss: t, isModal: "sheet" === i }));
                             },
                             visibilityBehavior: p,
                         },
@@ -377,7 +372,7 @@
                 p = n.createElement(o.default, { style: _.closeIcon }),
                 u = ({ onClick: e }) => n.createElement(l.ZP, { "aria-label": c, borderColor: "transparent", color: "gray1100", hoverLabel: d, icon: p, onClick: e, pullRight: !0, size: "small", style: _.button, type: "brandText" });
         },
-        648539: (e, t, i) => {
+        916910: (e, t, i) => {
             "use strict";
             i.r(t), i.d(t, { default: () => o });
             var n = i(202784),
@@ -386,11 +381,41 @@
                 r = i(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.786c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25c1.595 0 3.081-.451 4.341-1.233l1.054 1.7c-1.568.972-3.418 1.534-5.395 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.786 12 1.786s10.25 4.589 10.25 10.25c0 .901-.21 1.77-.452 2.477-.592 1.731-2.343 2.477-3.917 2.334-1.242-.113-2.307-.74-3.013-1.647-.961 1.253-2.45 2.011-4.092 1.78-2.581-.363-4.127-2.971-3.76-5.578.366-2.606 2.571-4.688 5.152-4.325 1.019.143 1.877.637 2.519 1.342l1.803.258-.507 3.549c-.187 1.31.761 2.509 2.079 2.629.915.083 1.627-.356 1.843-.99.2-.585.345-1.224.345-1.83 0-4.556-3.694-8.25-8.25-8.25zm-.111 5.274c-1.247-.175-2.645.854-2.893 2.623-.249 1.769.811 3.143 2.058 3.319 1.247.175 2.645-.854 2.893-2.623.249-1.769-.811-3.144-2.058-3.319z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
+        730873: (e, t, i) => {
+            "use strict";
+            i.r(t), i.d(t, { default: () => o });
+            var n = i(202784),
+                a = i(890601),
+                l = i(783427),
+                r = i(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M22 2.63v17.74l-7.05-2.27c-.29 1.65-1.72 2.9-3.45 2.9C9.57 21 8 19.43 8 17.5v-1.63l-1.15-.37H4.5C3.12 15.5 2 14.38 2 13v-3c0-1.38 1.12-2.5 2.5-2.5h2.35L22 2.63zM6 9.5H4.5c-.27 0-.5.22-.5.5v3c0 .28.23.5.5.5H6v-4zm2 4.27l12 3.86V5.37L8 9.23v4.54zm2 2.74v.99c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-.02l-3-.97z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        376021: (e, t, i) => {
+            "use strict";
+            i.r(t), i.d(t, { default: () => c });
+            var n = i(202784),
+                a = i(890601),
+                l = i(783427),
+                r = i(717683),
+                s = i(347101);
+            const o = (e = {}) => {
+                const t = n.useContext(r.Z),
+                    { direction: i } = (0, l.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: i });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.32ca876a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.4bfaa4ea.js.map

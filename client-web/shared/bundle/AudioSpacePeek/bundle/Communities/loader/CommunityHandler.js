@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconChevronRight-js"],
+    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconDraggable-js"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => m });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: i, hideBackButton: o, isFullWidth: a, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: h, secondaryBar: g, style: y, subtitle: b, title: f, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: w, withWideContainer: v } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: i, hideBackButton: o, isFullWidth: a, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: h, secondaryBar: g, style: y, subtitle: b, title: f, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: v, withWideContainer: w } = this.props,
                         { isModal: x } = this.context,
                         P = o ? d : r.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         k = (function (e, t, n) {
                             return e && !(t && n);
-                        })(!!w, x, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: n, isFullWidth: a, isLarge: c, leftControl: P, middleControl: m, position: u(p, x, i), rightControl: h, style: y, subtitle: b, title: f, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: k, withWideContainer: v }), g || null);
+                        })(!!v, x, !!g);
+                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: n, isFullWidth: a, isLarge: c, leftControl: P, middleControl: m, position: u(p, x, i), rightControl: h, style: y, subtitle: b, title: f, titleDomId: E, titleIconCell: C, titleIconCellSize: Z, withBackground: k, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -66,35 +66,35 @@
                 E = n(516951),
                 C = n(443781),
                 Z = n(278817);
-            const w = y().d58baa7f,
-                v = y().gfdad702,
+            const v = y().d58baa7f,
+                w = y().gfdad702,
                 x = ({ media: e, width: t }) => {
                     const { crop: n, image: o } = e,
                         d = (0, a.KU)(),
-                        u = r.useMemo(() => [A.thumbnailContainer, d && A.thumbnailContainerNarrow, t ? { width: l.default.theme.spaces[t] } : null], [d, t]);
+                        u = r.useMemo(() => [L.thumbnailContainer, d && L.thumbnailContainerNarrow, t ? { width: l.default.theme.spaces[t] } : null], [d, t]);
                     return r.createElement(i.Z, { style: u }, r.createElement(s.Z, { "aria-label": "", aspectMode: c.Z.SQUARE, backgroundColor: l.default.theme.colors.gray300, cropCandidates: n, image: o }));
                 },
                 P = ({ communityId: e, count: t }) => {
-                    const n = w(t);
+                    const n = v(t);
                     return r.createElement(d.Z.Group, null, r.createElement(d.Z, null, r.createElement(u.ZP, { color: "gray700" }, r.createElement(y().I18NFormatMessage, { $i18n: "b38e130b" }, r.createElement(d.Z.Value, null, y().ibd0106e({ formattedCount: n })), r.createElement(d.Z.Label, null, y().cface2d1({ count: t }))))));
                 },
                 k = ({ communityId: e, isNsfw: t, media: n, memberCount: o, membersFacepile: a, name: l, onActionButtonJoinClick: s, onPress: c, style: d, thumbnailSize: h, topic: g, withActionButton: y, withPinAction: b }) => {
                     const f = `/i/communities/${e}`,
                         { featureSwitches: E } = r.useContext(C.rC),
                         Z = E.isTrue("communities_adult_content_setting_display"),
-                        w = E.isTrue("communities_topic_display");
-                    return r.createElement(m.Z, { link: f, onPress: c, style: [A.root, d] }, r.createElement(i.Z, { style: A.container }, r.createElement(i.Z, { style: A.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: A.attribution }, r.createElement(i.Z, { style: A.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", v) : null), r.createElement(P, { communityId: e, count: o }), g && w ? r.createElement(i.Z, { style: A.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, g)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: A.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(L, { communityId: e, onActionButtonJoinClick: s, withActionButton: y, withPinAction: b })));
+                        v = E.isTrue("communities_topic_display");
+                    return r.createElement(m.Z, { link: f, onPress: c, style: [L.root, d] }, r.createElement(i.Z, { style: L.container }, r.createElement(i.Z, { style: L.leftColumn }, n ? r.createElement(x, { media: n, width: h }) : null, r.createElement(i.Z, { style: L.attribution }, r.createElement(i.Z, { style: L.name }, r.createElement(u.ZP, { numberOfLines: 1, weight: "bold" }, l), t && Z ? r.createElement(u.ZP, { color: "red600", size: "subtext2" }, " ", w) : null), r.createElement(P, { communityId: e, count: o }), g && v ? r.createElement(i.Z, { style: L.name }, r.createElement(u.ZP, { color: "gray700", numberOfLines: 1 }, g)) : null, Array.isArray(a) ? r.createElement(p.Z, { style: L.facepile, userAvatarSize: "large", userAvatarUrls: a }) : a)), r.createElement(M, { communityId: e, onActionButtonJoinClick: s, withActionButton: y, withPinAction: b })));
                 },
                 I = y().c5d23126,
                 S = y().j44ec610,
                 _ = { label: I },
                 B = { label: S };
-            function L(e) {
+            function M(e) {
                 const t = (0, o.useRouteMatch)(),
                     { communityId: n, onActionButtonJoinClick: a, withActionButton: l, withPinAction: s } = e;
-                return l ? r.createElement(i.Z, { style: A.rightColumn }, r.createElement(Z.ZP, { communityId: n, match: t, onCommunityMembershipChange: E.Z, onJoinClick: a })) : s ? r.createElement(M, s) : null;
+                return l ? r.createElement(i.Z, { style: L.rightColumn }, r.createElement(Z.ZP, { communityId: n, match: t, onCommunityMembershipChange: E.Z, onJoinClick: a })) : s ? r.createElement(A, s) : null;
             }
-            function M(e) {
+            function A(e) {
                 const { handlePinOrUnpin: t, isPinned: n } = e,
                     o = r.useMemo(() => (n ? r.createElement(b.default, { "aria-label": S }) : r.createElement(f.default, { "aria-label": I })), [n]),
                     a = r.useCallback(
@@ -103,10 +103,10 @@
                         },
                         [t],
                     );
-                return r.createElement(i.Z, { style: A.rightColumn }, r.createElement(h.ZP, { hoverLabel: n ? B : _, icon: o, onPress: a, type: "brandText" }));
+                return r.createElement(i.Z, { style: L.rightColumn }, r.createElement(h.ZP, { hoverLabel: n ? B : _, icon: o, onPress: a, type: "brandText" }));
             }
             const R = r.memo(k),
-                A = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, rightColumn: { alignItems: "center", justifyContent: "flex-end", flexDirection: "row", flex: 1, flexShrink: 1 }, attribution: { height: "100%", minWidth: 100 * e.scales[e.scale], justifyContent: "space-between", flexShrink: 1 }, facepile: { justifyContent: "flex-start" }, name: { marginBottom: e.spaces.space2, flexDirection: "row" }, thumbnailContainer: { width: 96 * e.scales[e.scale], marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden" }, thumbnailContainerNarrow: { width: e.spaces.space72 } }));
+                L = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, container: { flexDirection: "row" }, leftColumn: { alignItems: "center", flexDirection: "row", flex: 1, flexShrink: 1 }, rightColumn: { alignItems: "center", justifyContent: "flex-end", flexDirection: "row", flex: 1, flexShrink: 1 }, attribution: { height: "100%", minWidth: 100 * e.scales[e.scale], justifyContent: "space-between", flexShrink: 1 }, facepile: { justifyContent: "flex-start" }, name: { marginBottom: e.spaces.space2, flexDirection: "row" }, thumbnailContainer: { width: 96 * e.scales[e.scale], marginEnd: e.spaces.space12, borderRadius: e.borderRadii.large, overflow: "hidden" }, thumbnailContainerNarrow: { width: e.spaces.space72 } }));
         },
         980407: (e, t, n) => {
             n.d(t, { Z: () => g, w: () => p });
@@ -173,7 +173,7 @@
                 };
         },
         699910: (e, t, n) => {
-            n.d(t, { L: () => S, Z: () => L });
+            n.d(t, { L: () => S, Z: () => M });
             var r = n(202784),
                 i = n(325686),
                 o = n(731708),
@@ -204,14 +204,14 @@
                 E = n(386742),
                 C = n(678773);
             const Z = "rules-container",
-                w = "rules-order-badge",
-                v = "rules-reorder-item",
+                v = "rules-order-badge",
+                w = "rules-reorder-item",
                 x = l.default.create((e) => ({ icon: { color: e.colors.gray300, flexShrink: 0, paddingStart: e.spaces.space12 } })),
                 P = (e) => {
                     const { badge: t, rule: n } = e,
                         { description: i, name: a } = n,
                         l = r.createElement(o.ZP, { weight: "bold" }, a);
-                    return r.createElement(g.Z, { description: i, label: l, renderRightContent: () => r.createElement(C.default, { style: x.icon }), testID: v, thumbnail: t });
+                    return r.createElement(g.Z, { description: i, label: l, renderRightContent: () => r.createElement(C.default, { style: x.icon }), testID: w, thumbnail: t });
                 },
                 k = (e, t, n) => {
                     if (!e.destination) return;
@@ -249,10 +249,10 @@
                 S = Object.freeze({ Default: "Default", Pivot: "Pivot", Reorder: "Reorder" }),
                 _ = (e, t) => {
                     const { badgeStyle: n } = t;
-                    return r.createElement(i.Z, { style: [B.badge, n], testID: w }, r.createElement(o.ZP, { align: "center", color: "text", weight: "bold" }, e));
+                    return r.createElement(i.Z, { style: [B.badge, n], testID: v }, r.createElement(o.ZP, { align: "center", color: "text", weight: "bold" }, e));
                 },
                 B = l.default.create((e) => ({ badge: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.infinite, justifyContent: "center", overflow: "hidden", height: e.spaces.space32, width: e.spaces.space32 }, bottomMargin: { marginBottom: s.h$ } })),
-                L = ({ badgeStyle: e, displayType: t = S.Default, explanation: n, getPivotLink: o, headerContainerStyle: l, headerExplanationStyle: s, heading: c, limit: d, onReorder: u, ruleContainerStyle: m, rules: p, withBottomMargin: g = !1, withHeader: b = !0 }) => {
+                M = ({ badgeStyle: e, displayType: t = S.Default, explanation: n, getPivotLink: o, headerContainerStyle: l, headerExplanationStyle: s, heading: c, limit: d, onReorder: u, ruleContainerStyle: m, rules: p, withBottomMargin: g = !1, withHeader: b = !0 }) => {
                     const f = { badgeStyle: e },
                         E = ((e, t, n) => (t ? e.slice(0, t) : e).map((e, t) => ({ label: e.name, description: e.description, decoration: _(t + 1, n) })))(p, d, f),
                         C = (e) => _(e, f);
@@ -463,7 +463,7 @@
             }
         },
         841198: (e, t, n) => {
-            n.d(t, { Be: () => f, Er: () => v, Ev: () => y, WC: () => Z, Yf: () => u, t5: () => x });
+            n.d(t, { Be: () => f, Er: () => w, Ev: () => y, WC: () => Z, Yf: () => u, t5: () => x });
             n(571372);
             var r = n(166852),
                 i = n(370751),
@@ -504,8 +504,8 @@
                 E = "rweb/slices/RESTORE_SLICE",
                 C = "rweb/slices/INJECT_ITEMS_SLICE",
                 Z = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: C, meta: { sliceKey: n, identityFunction: e }, payload: t }),
-                w = "rweb/slices/REMOVE_ITEMS_SLICE",
-                v = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: w, meta: { sliceKey: n, identityFunction: e }, payload: t }),
+                v = "rweb/slices/REMOVE_ITEMS_SLICE",
+                w = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: v, meta: { sliceKey: n, identityFunction: e }, payload: t }),
                 x = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: p, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? s.Yj.BOTTOM : s.Yj.TOP } });
             o.Z.register({
                 [u]: function (e = c, t) {
@@ -534,7 +534,7 @@
                                 a = Array.isArray(t.payload) ? t.payload : void 0;
                             return a?.length ? { ...e, [n]: { ...i, injections: (0, r.Z)(a.concat(i.injections), o) } } : e;
                         }
-                        case w: {
+                        case v: {
                             const r = e[n] || m(),
                                 o = t.meta.identityFunction ? t.meta.identityFunction : void 0,
                                 a = Array.isArray(t.payload) ? (0, i.Z)(o ? t.payload.map(o) : t.payload) : void 0,
@@ -571,20 +571,20 @@
                 E = n(492057),
                 C = n(919022),
                 Z = n(182846);
-            const w = (0, y.Z)()
+            const v = (0, y.Z)()
                 .propsFromState(() => ({ community: E.BL, viewerUser: C.ZP.selectViewerUser, joinActionResultType: Z.HN }))
                 .adjustStateProps((e) => {
                     const { viewerUser: t, ...n } = e;
                     return { isProtectedUser: t?.protected, ...n };
                 })
                 .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("COMMUNITY_DETAIL"), join: f.Lm, requestToJoin: b.ZP.requestToJoin, leave: f.Wr }));
-            var v = n(708852),
+            var w = n(708852),
                 x = n(386802),
                 P = n(138099),
                 k = n(757700);
             function I(e) {
                 const { children: t, onMaskClick: n } = e,
-                    r = (0, v.D2)(),
+                    r = (0, w.D2)(),
                     o = i.useMemo(() => ({ isModal: r }), [r]);
                 let a = { type: "full" };
                 return r && (a = { ...a, onMaskClick: n, enableMaskForDismiss: !0, allowBackNavigation: !0, withKeyboardNavigation: !0, withMask: !0, style: k.CA[k.Cg.fixed] }), i.createElement(x.Z.Provider, { value: o }, i.createElement(P.Z, a, t));
@@ -592,10 +592,10 @@
             const S = i.memo(I);
             var _ = n(731708);
             const B = m().bc7a7af4,
-                L = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: M.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(_.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(_.ZP, null, B)),
-                M = d.default.create((e) => ({ offendingRule: { display: "flex", marginBottom: e.spaces.space12 } })),
+                M = ({ offendingRule: e }) => i.createElement(o.Z, null, e ? i.createElement(o.Z, { style: A.offendingRule }, ((e) => i.createElement(m().I18NFormatMessage, { $i18n: "jb124a07" }, i.createElement(_.ZP, { weight: "bold" }, m().a0e0a52c({ offendingRule: e }))))(e)) : null, i.createElement(_.ZP, null, B)),
+                A = d.default.create((e) => ({ offendingRule: { display: "flex", marginBottom: e.spaces.space12 } })),
                 R = m().hafa07f2,
-                A = m().e7969518,
+                L = m().e7969518,
                 T = m().c15bee32,
                 D = m().efa265fc,
                 F = i.createElement(m().I18NFormatMessage, { $i18n: "gb7eca21" }, i.createElement(_.ZP, { link: "/settings/audience_and_tagging" }, m().fe832999)),
@@ -615,12 +615,12 @@
                     const [t, n] = i.useState(void 0),
                         [d, u] = i.useState(!1),
                         m = { history: (0, a.useHistory)(), location: (0, a.useLocation)(), match: (0, a.useRouteMatch)() },
-                        { community: g, createLocalApiErrorHandler: y, isProtectedUser: b, join: f, leave: E, onCommunityMembershipChange: C, onJoinClick: Z, requestToJoin: w } = e,
-                        { actions: v, id_str: x, name: P, role: k } = g,
-                        I = v?.join_action_result,
-                        _ = v?.leave_action_result,
+                        { community: g, createLocalApiErrorHandler: y, isProtectedUser: b, join: f, leave: E, onCommunityMembershipChange: C, onJoinClick: Z, requestToJoin: v } = e,
+                        { actions: w, id_str: x, name: P, role: k } = g,
+                        I = w?.join_action_result,
+                        _ = w?.leave_action_result,
                         B = (0, p.Wh)(k),
-                        M = I?.reason === q.ViewerJoinRequestRequired,
+                        A = I?.reason === q.ViewerJoinRequestRequired,
                         Y = I?.reason === q.ViewerRequestPending,
                         Q = i.useCallback(() => {
                             const { rules: e, viewerViolatedRule: t } = g,
@@ -635,9 +635,9 @@
                                         case z.joinUnavailable:
                                             switch (a) {
                                                 case q.ViewerIsRemoved:
-                                                    return s({ headline: T, text: i.createElement(L, { offendingRule: n?.name }) });
+                                                    return s({ headline: T, text: i.createElement(M, { offendingRule: n?.name }) });
                                                 case q.ViewerNotInvited:
-                                                    return s({ headline: R, text: A });
+                                                    return s({ headline: R, text: L });
                                                 case q.ViewerIsProtected:
                                                     return t ? s({ headline: D, text: F }) : l();
                                                 case q.Unavailable:
@@ -651,8 +651,8 @@
                                             return c;
                                     }
                                 })(I, b, t);
-                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : M ? w(x).catch(y({})) : f(x).then(C).catch(y({})));
-                        }, [g, x, y, b, f, M, I, w, C, Z]),
+                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : A ? v(x).catch(y({})) : f(x).then(C).catch(y({})));
+                        }, [g, x, y, b, f, A, I, v, C, Z]),
                         X = i.useCallback(() => {
                             const { canAction: e, message: t } = (function (e) {
                                 const { __typename: t, reason: n } = e,
@@ -676,11 +676,11 @@
                         te = i.useCallback(() => {
                             u(!1);
                         }, []),
-                        ne = i.useMemo(() => (M ? { ...K, follow: W } : K), [M]);
+                        ne = i.useMemo(() => (A ? { ...K, follow: W } : K), [A]);
                     return i.createElement(o.Z, { style: G.button }, d ? i.createElement(S, { onMaskClick: te }, i.createElement(h.default, (0, r.Z)({ communityId: x, onCommunityMembershipChange: C, onDismiss: te }, m))) : null, Y ? i.createElement(l.ZP, { disabled: !0, type: "primaryOutlined" }, $) : P ? i.createElement(s.Z, { buttonText: ne, isFollowing: B, name: P, onFollow: Q, onUnfollow: X, type: "community" }) : null, t ? i.createElement(c.Z, { actionLabel: J, graphicDisplayMode: "none", headline: t.headline, onAction: ee, onClose: ee, subtext: t.text, withCloseButton: !1 }) : null);
                 },
                 G = d.default.create((e) => ({ button: { justifyContent: "right" } })),
-                Q = w((e) => {
+                Q = v((e) => {
                     const { community: t, communityId: n, match: o, ...a } = e;
                     return t ? i.createElement(Y, (0, r.Z)({ community: t }, a)) : null;
                 });
@@ -706,8 +706,8 @@
                 E = n(87063),
                 C = n(615027),
                 Z = n(71620),
-                w = n(668214),
-                v = n(491963),
+                v = n(668214),
+                w = n(491963),
                 x = n(299226),
                 P = n(492057),
                 k = n(182846);
@@ -715,19 +715,19 @@
                     const { communityId: n, location: r } = t;
                     return n ? P.BL(e, t) : r.state?.community || k.ZM(e, t);
                 },
-                S = (0, w.Z)()
+                S = (0, v.Z)()
                     .propsFromState(() => ({ community: I, fetchStatus: k.YE, isCommunityMember: k.Cp }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("COMMUNITY_RULES_SCREEN"), join: x.Lm, requestToJoin: v.ZP.requestToJoin, fetchCommunityIfNeeded: v.ZP.fetchOneIfNeeded }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("COMMUNITY_RULES_SCREEN"), join: x.Lm, requestToJoin: w.ZP.requestToJoin, fetchCommunityIfNeeded: w.ZP.fetchOneIfNeeded }))
                     .withAnalytics({ page: "community", section: "rules", component: "modal" }),
                 _ = m().h4fbfa58,
                 B = m().ea8cfb1e,
-                L = m().dc1b14a1,
-                M = m().fc2a5c92,
+                M = m().dc1b14a1,
+                A = m().fc2a5c92,
                 R = m().c966ac64,
-                A = m().g690e07e,
+                L = m().g690e07e,
                 T = m().a5d21bf4,
                 D = (e) => {
-                    const { community: t, createLocalApiErrorHandler: n, fetchCommunityIfNeeded: d, fetchStatus: u, history: m, isCommunityMember: Z, join: w, match: v, onCommunityMembershipChange: x, onDismiss: P, requestToJoin: k } = e,
+                    const { community: t, createLocalApiErrorHandler: n, fetchCommunityIfNeeded: d, fetchStatus: u, history: m, isCommunityMember: Z, join: v, match: w, onCommunityMembershipChange: x, onDismiss: P, requestToJoin: k } = e,
                         [I, S] = r.useState(""),
                         D = r.useCallback(
                             (e) => {
@@ -738,13 +738,13 @@
                         { featureSwitches: F } = r.useContext(b.rC),
                         N = F.getNumberValue("c9s_max_community_answer_length", 280),
                         j = F.isTrue("c9s_community_answer_box_join_page_enabled"),
-                        O = e.communityId || v.params.communityId,
+                        O = e.communityId || w.params.communityId,
                         U = "ViewerRequestRequired" === t?.actions?.join_action_result?.reason,
                         [z, H] = r.useState(!1);
                     r.useEffect(() => {
                         O && !t && u !== E.Z.LOADED && d(O).catch(n());
                     });
-                    const q = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, L({ communityName: e })), []),
+                    const q = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, M({ communityName: e })), []),
                         W = U ? B : _,
                         $ = r.useCallback(() => {
                             if (t) {
@@ -756,14 +756,14 @@
                                             else H(!0);
                                         })
                                         .catch(n);
-                                w(e).then(x).then(P).catch(n());
+                                v(e).then(x).then(P).catch(n());
                             }
-                        }, [I, t, n, H, w, U, x, P, k]),
+                        }, [I, t, n, H, v, U, x, P, k]),
                         K = r.useCallback(() => r.createElement(a.ZP, { onPress: $, size: "small", type: "brandFilled" }, W), [W, $]),
-                        J = z ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: M, text: R, type: "danger" })) : void 0;
+                        J = z ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: A, text: R, type: "danger" })) : void 0;
                     if (t) {
                         const { name: e, question: n, rules: a } = t;
-                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, y.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && U && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: T, label: A, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(g.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
+                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, y.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && U && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: T, label: L, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(g.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
                     }
                     return u === E.Z.LOADED ? r.createElement(C.Z, { to: "/" }) : null;
                 },
@@ -824,13 +824,13 @@
                 s = n(952428),
                 c = n(392237);
             const d = (e) => {
-                    const { decoration: t, description: n, disabled: d = !1, isActive: m = !1, label: p, link: h, onPress: g, paddingHorizontal: y, renderRightContent: b, role: f = "tab", styleOverride: E, testID: C = "pivot", thumbnail: Z, thumbnailSize: w, withoutArrow: v = !1 } = e,
-                        x = [u.thumbnailContainer, "medium" === w && u.thumbnailContainerMedium],
+                    const { decoration: t, description: n, disabled: d = !1, isActive: m = !1, label: p, link: h, onPress: g, paddingHorizontal: y, renderRightContent: b, role: f = "tab", styleOverride: E, testID: C = "pivot", thumbnail: Z, thumbnailSize: v, withoutArrow: w = !1 } = e,
+                        x = [u.thumbnailContainer, "medium" === v && u.thumbnailContainerMedium],
                         P = "string" == typeof p ? r.createElement(l.ZP, null, p) : p,
                         k = "object" == typeof h && h.external && !h.openInSameFrame,
                         I = n ? ("string" == typeof n ? r.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${C}-description` }, n) : n) : null,
                         S = r.useMemo(() => ("space0" === y ? { paddingHorizontal: 0 } : { paddingHorizontal: y ? c.default.theme.spaces[y] : c.default.theme.componentDimensions.gutterHorizontal }), [y]);
-                    return r.createElement(s.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : h, onPress: g, role: f, style: [u.root, S, d && u.disabled, E], testID: C, withInteractiveStyling: !!h || !!g }, r.createElement(i.Z, { style: u.contentContainer }, Z ? r.createElement(i.Z, { style: x }, Z) : null, r.createElement(i.Z, { style: u.content }, P, I), b ? b() : null, (!h && !g) || d || v ? null : k ? r.createElement(o.default, { style: u.icon }) : r.createElement(a.default, { style: u.icon })), t);
+                    return r.createElement(s.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : h, onPress: g, role: f, style: [u.root, S, d && u.disabled, E], testID: C, withInteractiveStyling: !!h || !!g }, r.createElement(i.Z, { style: u.contentContainer }, Z ? r.createElement(i.Z, { style: x }, Z) : null, r.createElement(i.Z, { style: u.content }, P, I), b ? b() : null, (!h && !g) || d || w ? null : k ? r.createElement(o.default, { style: u.icon }) : r.createElement(a.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -957,21 +957,19 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        58399: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
+        678773: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 i = n(890601),
                 o = n(783427),
-                a = n(717683),
-                l = n(347101);
-            const s = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: n } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: n });
+                a = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.7866f42a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.da94441a.js.map

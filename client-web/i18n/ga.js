@@ -2510,41 +2510,6 @@
                     return e.topicName + " Topaic";
                 }),
                 n("ic6aa5f4", "Authenticated."),
-                n("c02e7e3c", "Ag lódáil..."),
-                n("c5453f28", "Round of 64"),
-                n("eb256a86", "Round of 32"),
-                n("g77adc66", "Sweet Sixteen"),
-                n("a6d2520c", "Sweet 16"),
-                n("g5b63eb6", "Elite Eight"),
-                n("d8bf2890", "Elite 8"),
-                n("f9d3d6f2", "Final Four"),
-                n("bda24f7c", "Final 4"),
-                n("i5043440", "National Championship"),
-                n("fcb16026", "Championship"),
-                n("e9c89ee8", "East"),
-                n("h259fd86", "West"),
-                n("a7b2545a", "South"),
-                n("fdf7819a", "Midwest"),
-                n("i899e9b0", "Submit Bracket"),
-                n("c5b04394", "View Picks"),
-                n("h836bbae", "View Tournament"),
-                n("e1059d6c", "1st Round"),
-                n("b1602be4", "2nd Round"),
-                n("ef7bc2c0", "Mar 20-21"),
-                n("h726aaf2", "Mar 22-23"),
-                n("ee7cd198", "Mar 27-28"),
-                n("fed91402", "Mar 29-30"),
-                n("aba0a450", "Apr 5"),
-                n("jdfba2dc", "Apr 7"),
-                n("b7c6bc12", "TBD"),
-                n("c373612c", "Pick:"),
-                n("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                n("j5db9ddd", " over "),
-                n("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 n("j4c40da4", "Send now"),
                 n("b23688c8", "Undo timer"),
                 n("cca5d499", function (e) {
@@ -2990,8 +2955,8 @@
                 n("a7de64de", "Ads info"),
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Gairmeacha"),
-                n("e0adec82", "Acmhainní Branda");
-            n("df1b7550", "Marketing"),
+                n("e0adec82", "Acmhainní Branda"),
+                n("df1b7550", "Marketing"),
                 n("he258678", "X for Business"),
                 n("c6f58084", "Developers"),
                 n("d83f18d2", "Directory"),
@@ -3025,8 +2990,8 @@
                 }),
                 n("d6d9aab6", "Cuir Leabharmharc Leis"),
                 n("bb89cf46", "Bain Leabharmharc"),
-                n("a739d4ba", "Cuir é i bhFillteán na Leabharmharcanna"),
-                n("d5270434", "Exit"),
+                n("a739d4ba", "Cuir é i bhFillteán na Leabharmharcanna");
+            n("d5270434", "Exit"),
                 n("ac85c6b2", "Tharla earráid agus an t-íomhá seo á lódáil"),
                 n("b327c12a", "Íomhá"),
                 n("ic76bdf0", "Recreate this with Grok"),
@@ -3902,8 +3867,8 @@
                 n("a2bf8b8a", "Switch to listening"),
                 n("caa8d928", "Toggle noise suppression"),
                 n("b5d88f0c", "Employees only"),
-                n("c855ab8e", "Subscribers only");
-            n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                n("c855ab8e", "Subscribers only"),
+                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 n("e111f531", function (e) {
                     return e.count + " tiúnáilte isteach";
                 }),
@@ -3951,8 +3916,8 @@
                 n("f2333850", "Share with people outside of X"),
                 n("cddb8097", "Learn more"),
                 n("f77997b0", "Co-host"),
-                n("i48f4ed8", "Callaire"),
-                n("a77c8e02", "Éisteoir"),
+                n("i48f4ed8", "Callaire");
+            n("a77c8e02", "Éisteoir"),
                 n("bdfa93eb", function (e) {
                     return "Roinnte ag " + e.name;
                 }),
@@ -4222,6 +4187,7 @@
                 n("f794af9a", "Fun mode"),
                 n("eccf9fea", "Regular mode"),
                 n("j22655f2", "Ask anything"),
+                n("c02e7e3c", "Ag lódáil..."),
                 n("h0681e3e", "Talk to Grok, our AI assistant"),
                 n("d593fd78", "It can answer your questions, search X, and generate images"),
                 n("d0205a24", "Check the Facts"),
@@ -4306,7 +4272,6 @@
                 n("afa2a58e", "See all posts"),
                 n("fc83e7e2", "See all users"),
                 n("df601d92", "Relevant Users"),
-                n("b001fa12", "Source query"),
                 n("db6c20cf", function (e) {
                     return "Show all (" + e.count + ")";
                 }),
@@ -4389,7 +4354,7 @@
                 n("g3ce0132", "Thought for"),
                 n("f8007364", "Expand for details"),
                 n("ca53f780", "Collapse details"),
-                n("b52484b6", "Searching..."),
+                n("e6d51c62", "Searching"),
                 n("ib1c5475", function (e) {
                     return "Thought for " + e.minutes + "m " + e.seconds + "s";
                 }),
@@ -4407,6 +4372,7 @@
                 n("a3186bff", function (e) {
                     return e.count + " web page" + o(e.count, "", "s");
                 }),
+                n("b52484b6", "Searching..."),
                 n("f4146dda", "Which response do you prefer?"),
                 n("a2c2be32", "This will help make Grok better."),
                 n("g01599b6", "Response 1"),
@@ -4944,8 +4910,8 @@
                 n("b649d8cc", "Subscriber Only"),
                 n("j9282130", "Broadcast thumbnail"),
                 n("g629b8b0", "Timed Out"),
-                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened.");
-            n("i6a75722", "Time Range"),
+                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
+                n("i6a75722", "Time Range"),
                 n("c602f5b8", "Iomlán"),
                 n("b35e68ae", "Total Participants"),
                 n("h78ee79a", "Total Replay Watched"),
@@ -4974,8 +4940,8 @@
                 n("e41fffbc", "The total watch time of your videos."),
                 n("if2909ba", "Watch Time"),
                 n("i0e5bf4c", "Your videos"),
-                n("ed99baea", "Early Beta Access"),
-                n("gf898b70", "Advanced Search"),
+                n("ed99baea", "Early Beta Access");
+            n("gf898b70", "Advanced Search"),
                 n("d2a43a7a", 'contains both "ai" and "startup"'),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", 'contains the exact phrase "ai startup"'),
@@ -5896,8 +5862,8 @@
                 n("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 n("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 n("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                n("cc720e6a", "Community Notes is built on data transparency");
-            n("j2fcd33a", "Áirítear sna sonraí ábhar suas le "),
+                n("cc720e6a", "Community Notes is built on data transparency"),
+                n("j2fcd33a", "Áirítear sna sonraí ábhar suas le "),
                 n("d4a6b322", "All Community Notes data are published here daily, so people have free access to analyze it, identify problems, and spot opportunities to make Community Notes better. We can’t wait to learn with you."),
                 n("c359263a", "Learn how to use and analyze Community Notes data "),
                 n("b8a27fe2", "inár dtreoir"),
@@ -5930,8 +5896,8 @@
                 n("e41c9b4f", function (e) {
                     return "Sábháilte go " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Scrios an Fillteán"),
-                n("f4ea967a", "Scriosadh an fillteán"),
+                n("h18f86a4", "Scrios an Fillteán");
+            n("f4ea967a", "Scriosadh an fillteán"),
                 n("b670aa62", "Ainm an Fhillteáin"),
                 n("aece5462", "D'éirigh linn ainm an fhillteáin a nuashonrú"),
                 n("e3299b94", "Tharla earráid. Bain triail as an bhfillteán a nuashonrú arís i gceann nóiméid."),
@@ -6902,8 +6868,8 @@
                 n("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 n("d3a427ce", "Select the level of experience required."),
                 n("i7174442", "Job Description"),
-                n("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
-            n("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                n("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
+                n("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 n("a5244ece", "Application URL (Required)"),
                 n("g2b553f6", "Enter the public URL where candidates can apply for this job."),
                 n("c2e77608", "Job Title (Required)"),
@@ -6936,8 +6902,8 @@
                 n("c924ad84", "Keep videos playing"),
                 n("de750a3c", "Enjoy them even when your phone is locked"),
                 n("he5e87c4", "Boost your replies"),
-                n("g64a60ba", "Get a small prioritization when you reply to posts"),
-                n("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
+                n("g64a60ba", "Get a small prioritization when you reply to posts");
+            n("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
                 n("fdd77a34", "Create longer posts"),
                 n("j6d26a7a", "Write as much as you’d like to share"),
                 n("c4fd68da", "Customize your experience"),
@@ -7878,7 +7844,45 @@
                 n("cfcac293", function (e) {
                     return "Gift & Pay " + e.price;
                 }),
-                n("d7a73450", "Tier");
+                n("d7a73450", "Tier"),
+                n("hbd2c24e", "This account is not eligible for gifts at this time."),
+                n("f3fddc98", "Purchaser Terms"),
+                n("cff9c889", "Learn more"),
+                n("c65dda96", "Your gift has been sent."),
+                n("f6e2a407", function (e) {
+                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
+                }),
+                n("j8dedddd", function (e) {
+                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
+                }),
+                n("c8a513f6", "Cancel Subscription"),
+                n("ea000ec8", "Already canceled your Subscription?"),
+                n("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
+                n("f4166d9a", "Want to cancel your Subscription?"),
+                n("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
+                n("ee9efbc8", "Lean ar aghaidh chuig an gcealú"),
+                n("c5d9c77a", "is cosúil go raibh beagán bacainn ann. Ná bíodh imní ort, áfach, ní ortsa atá an locht. Dún an fhuinneog seo agus bain triail eile as"),
+                n("jda53c24", "You can cancel your Subscription through the Apple App Store."),
+                n("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                n("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                n("a76d58ba", "Ads Analytics"),
+                n("eccd0e1a", "Organization Analytics"),
+                n("deea1708", "Want to view analytics across all your X accounts?"),
+                n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                n("gf67aae4", "Upgrade to Full Access"),
+                n("h75e3618", "Include organization"),
+                n("h24a8862", "About this checkbox"),
+                n("c29e3a88", "Select affiliates"),
+                n("j8318d57", function (e) {
+                    return e.number + " affiliate" + o(e.number, "", "s");
+                }),
+                n("bf809ec0", "Select Affiliates"),
+                n("b719e224", "Gan toradh"),
+                n("c9938100", "Torthaí Cuardaigh"),
+                n("d1a35ec6", "Add accounts"),
+                n("b437adda", "Upgrade to paid");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7917,47 +7921,9 @@
                     c(e, a)
                 );
             }
-            n("hbd2c24e", "This account is not eligible for gifts at this time."),
-                n("f3fddc98", "Purchaser Terms"),
-                n("cff9c889", "Learn more"),
-                n("c65dda96", "Your gift has been sent."),
-                n("f6e2a407", function (e) {
-                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
-                }),
-                n("j8dedddd", function (e) {
-                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
-                }),
-                n("c8a513f6", "Cancel Subscription"),
-                n("ea000ec8", "Already canceled your Subscription?"),
-                n("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
-                n("f4166d9a", "Want to cancel your Subscription?"),
-                n("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                n("ee9efbc8", "Lean ar aghaidh chuig an gcealú"),
-                n("c5d9c77a", "is cosúil go raibh beagán bacainn ann. Ná bíodh imní ort, áfach, ní ortsa atá an locht. Dún an fhuinneog seo agus bain triail eile as"),
-                n("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                n("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
-                n("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                n("a76d58ba", "Ads Analytics"),
-                n("eccd0e1a", "Organization Analytics"),
-                n("deea1708", "Want to view analytics across all your X accounts?"),
-                n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                n("gf67aae4", "Upgrade to Full Access"),
-                n("h75e3618", "Include organization"),
-                n("h24a8862", "About this checkbox"),
-                n("c29e3a88", "Select affiliates"),
-                n("j8318d57", function (e) {
-                    return e.number + " affiliate" + o(e.number, "", "s");
-                }),
-                n("bf809ec0", "Select Affiliates"),
-                n("b719e224", "Gan toradh"),
-                n("c9938100", "Torthaí Cuardaigh"),
-                n("d1a35ec6", "Add accounts"),
-                n("b437adda", "Upgrade to paid"),
-                n("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
+            n("f1f6c88b", function (e) {
+                return "Accounts (" + e.count + ")";
+            }),
                 n("b02156b8", "Invitations"),
                 n("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
@@ -8910,8 +8876,8 @@
                 n("b3160a69", function (e) {
                     return e.volumePercent + " céatadán";
                 }),
-                n("fb236728", "Cuir ar sos");
-            n("e9bd453e", "Athsheinn"),
+                n("fb236728", "Cuir ar sos"),
+                n("e9bd453e", "Athsheinn"),
                 n("d46b00b0", "Jump to live"),
                 n("ec8ab8b4", "Balbhaigh"),
                 n("b8b6344a", "Díbhalbhaigh"),
@@ -8958,8 +8924,8 @@
                 n("a7bf9962", "Download video"),
                 n("ccc97152", "Playback speed"),
                 n("h531ade0", "Video quality"),
-                n("e8b5757c", "0.25x"),
-                n("e7e954de", "0.5x"),
+                n("e8b5757c", "0.25x");
+            n("e7e954de", "0.5x"),
                 n("g07ffe66", "0.75x"),
                 n("d8bede9e", "1x"),
                 n("j41845c8", "1.25x"),
@@ -10507,12 +10473,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["By clicking Promote post you’re agreeing to the "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13390,4 +13350,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.d7048c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.4910d5ba.js.map

@@ -4,15 +4,15 @@
     {
         524084: (e, t, r) => {
             r.d(t, { Z: () => a });
-            var s = r(202784),
-                o = r(523561),
+            var o = r(202784),
+                s = r(523561),
                 n = r(195560);
-            const a = (0, o.Z)({ loader: () => r.e("loader.AbsolutePower").then(r.bind(r, 590136)), renderPlaceholder: (e, t) => s.createElement(n.Z, { hasError: e, onRetry: t }) });
+            const a = (0, s.Z)({ loader: () => r.e("loader.AbsolutePower").then(r.bind(r, 590136)), renderPlaceholder: (e, t) => o.createElement(n.Z, { hasError: e, onRetry: t }) });
         },
         684511: (e, t, r) => {
-            r.d(t, { Z: () => s });
+            r.d(t, { Z: () => o });
             r(202784);
-            const s = (0, r(523561).Z)({
+            const o = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
                         r.e("modules.common-e907d115"),
@@ -22,11 +22,18 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -41,9 +48,9 @@
             });
         },
         376293: (e, t, r) => {
-            r.d(t, { $f: () => D, KV: () => v, LI: () => w, SC: () => C, Vt: () => y, ed: () => M, op: () => E });
-            var s = r(202784),
-                o = r(190286),
+            r.d(t, { $f: () => C, KV: () => D, LI: () => w, SC: () => _, Vt: () => y, ed: () => M, op: () => k });
+            var o = r(202784),
+                s = r(190286),
                 n = r(111677),
                 a = r.n(n),
                 i = r(616894),
@@ -55,97 +62,97 @@
                 h = a().fcd4d489,
                 p = a().a6450e84,
                 f = a().ad00a739,
-                v = a().a9fd20be,
-                g = a().j546fb79,
-                b = a().c9623eeb,
+                D = a().a9fd20be,
+                v = a().j546fb79,
+                g = a().c9623eeb,
                 y = a().e133be4e,
-                _ = a().f5f01af6,
-                C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                D = (e) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: f({ screenName: e }) }),
-                E = ({ blockAction: e, blockSubtext: t, source: r, testID: s, unblockAction: o, unblockSubtext: n, user: a }) => {
+                b = a().f5f01af6,
+                _ = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                C = (e) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: f({ screenName: e }) }),
+                k = ({ blockAction: e, blockSubtext: t, source: r, testID: o, unblockAction: s, unblockSubtext: n, user: a }) => {
                     let i,
                         d = c.Z;
                     const u = w(a);
                     switch (r) {
-                        case C.PROFILE:
-                        case C.LIST_DETAIL:
-                        case C.FOLLOWERS_LIST:
+                        case _.PROFILE:
+                        case _.LIST_DETAIL:
+                        case _.FOLLOWERS_LIST:
                             d = () => {
-                                a.blocking ? o(u) : e(u);
+                                a.blocking ? s(u) : e(u);
                             };
                             break;
-                        case C.TWEET:
-                        case C.TWEET_CARET:
-                        case C.RICH_FEEDBACK:
+                        case _.TWEET:
+                        case _.TWEET_CARET:
+                        case _.RICH_FEEDBACK:
                             (i = l.uq.block),
                                 (d = () => {
-                                    a.blocking ? o(u) : e(u);
+                                    a.blocking ? s(u) : e(u);
                                 });
                     }
-                    return { confirmation: u, onClick: d, testID: s, shortcutKey: i, Icon: k(a.blocking), text: P(a), subText: S({ user: a, blockSubtext: t, unblockSubtext: n }) };
+                    return { confirmation: u, onClick: d, testID: o, shortcutKey: i, Icon: E(a.blocking), text: S(a), subText: P({ user: a, blockSubtext: t, unblockSubtext: n }) };
                 },
-                k = (e) => (e ? d.default : i.default),
-                S = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
-                P = (e) => (e.blocking ? b({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
+                E = (e) => (e ? d.default : i.default),
+                P = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
+                S = (e) => (e.blocking ? g({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
                 w = (e) => {
-                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: g({ screenName: t }), label: y, text: _ }) : D(e.screen_name);
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: v({ screenName: t }), label: y, text: b }) : C(e.screen_name);
                     var t;
                 },
                 M = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: n, headline: a, label: i, text: d } = e;
-                    return s.createElement(o.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: n, headline: a, onCancel: r, onConfirm: t, text: d });
+                    return o.createElement(s.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: n, headline: a, onCancel: r, onConfirm: t, text: d });
                 };
         },
         545334: (e, t, r) => {
-            r.d(t, { d: () => o });
-            var s = r(111677);
-            const o = r.n(s)().gf5e9ea6;
+            r.d(t, { d: () => s });
+            var o = r(111677);
+            const s = r.n(o)().gf5e9ea6;
         },
         916585: (e, t, r) => {
             r.d(t, { k: () => a });
-            var s = r(111677),
-                o = r.n(s),
+            var o = r(111677),
+                s = r.n(o),
                 n = r(437358);
             const a = (e, t) => {
-                const { id_str: r, screen_name: s } = e,
-                    a = (0, o().d78131b9)({ screenName: s });
+                const { id_str: r, screen_name: o } = e,
+                    a = (0, s().d78131b9)({ screenName: o });
                 return { Icon: n.default, text: a, link: { pathname: "/i/lists/add_member", state: { userId: r } }, onClick: t };
             };
         },
         847607: (e, t, r) => {
-            r.d(t, { Aq: () => u, FK: () => b, GS: () => i, N1: () => h, PY: () => m, X6: () => y, cm: () => d });
+            r.d(t, { Aq: () => u, FK: () => g, GS: () => i, N1: () => h, PY: () => m, X6: () => y, cm: () => d });
             r(202784);
-            var s = r(111677),
-                o = r.n(s),
+            var o = r(111677),
+                s = r.n(o),
                 n = r(391366),
                 a = r(40904);
-            const i = o().hb568af4,
-                d = o().bb1cbeb6,
-                c = (o().h2f62206, o().e67b2d65),
-                l = o().f05597b3,
+            const i = s().hb568af4,
+                d = s().bb1cbeb6,
+                c = (s().h2f62206, s().e67b2d65),
+                l = s().f05597b3,
                 u = (e) => c({ screenName: e }),
                 m = (e) => l({ screenName: e }),
                 h = (e, t, r) => {
-                    const { muting: s, screen_name: o } = e;
-                    return { text: s ? m(o) : u(o), onClick: s ? r : t, Icon: s ? n.default : a.default };
+                    const { muting: o, screen_name: s } = e;
+                    return { text: o ? m(s) : u(s), onClick: o ? r : t, Icon: o ? n.default : a.default };
                 },
-                p = o().h59f52ee,
-                f = o().eea0cbee,
-                v = o().i29533b3,
-                g = o().h129c3c3,
-                b = (e) => (e ? ((e) => v({ screenName: e }))(e) : p),
-                y = (e) => (e ? ((e) => g({ screenName: e }))(e) : f);
+                p = s().h59f52ee,
+                f = s().eea0cbee,
+                D = s().i29533b3,
+                v = s().h129c3c3,
+                g = (e) => (e ? ((e) => D({ screenName: e }))(e) : p),
+                y = (e) => (e ? ((e) => v({ screenName: e }))(e) : f);
         },
         417714: (e, t, r) => {
             r.d(t, { l: () => l });
             r(202784);
-            var s = r(111677),
-                o = r.n(s),
+            var o = r(111677),
+                s = r.n(o),
                 n = r(224823);
-            const a = o().b3036480,
-                i = o().b3036480,
-                d = o().e68b09b4,
-                c = o().h27b7407,
+            const a = s().b3036480,
+                i = s().b3036480,
+                d = s().e68b09b4,
+                c = s().h27b7407,
                 l = ({ removeFollowerAction: e, user: t }) => {
                     const r = u(t);
                     return { Icon: n.default, text: a, onClick: () => e(r) };
@@ -153,91 +160,91 @@
                 u = (e) => ({ confirmButtonType: "destructiveFilled", headline: i, label: d, text: c({ screenName: e.screen_name }) });
         },
         712816: (e, t, r) => {
-            r.d(t, { d: () => o });
-            var s = r(111677);
-            const o = { defaultToast: { text: r.n(s)().b6878b0a }, showToast: !0 };
+            r.d(t, { d: () => s });
+            var o = r(111677);
+            const s = { defaultToast: { text: r.n(o)().b6878b0a }, showToast: !0 };
         },
         518966: (e, t, r) => {
             r.d(t, { h: () => d });
-            var s = r(111677),
-                o = r.n(s),
+            var o = r(111677),
+                s = r.n(o),
                 n = r(615656);
-            const a = o().ef504d80,
-                i = o().cef96d5a,
-                d = { defaultToast: { text: o().b2542f56 }, [n.ZP.DuplicateBookmark]: { toast: { text: i } }, [n.ZP.ProtectedTweetBookmarkError]: { toast: { text: a } }, showToast: !0 };
+            const a = s().ef504d80,
+                i = s().cef96d5a,
+                d = { defaultToast: { text: s().b2542f56 }, [n.ZP.DuplicateBookmark]: { toast: { text: i } }, [n.ZP.ProtectedTweetBookmarkError]: { toast: { text: a } }, showToast: !0 };
         },
         499456: (e, t, r) => {
             r.d(t, { f: () => c });
-            var s = r(111677),
-                o = r.n(s),
+            var o = r(111677),
+                s = r.n(o),
                 n = r(615656),
                 a = r(51525);
-            const i = o().f58dff34,
-                d = o().ad5a8e8e,
+            const i = s().f58dff34,
+                d = s().ad5a8e8e,
                 c = { [n.ZP.MissingParameter]: { toast: (0, a.j)(i) }, [n.ZP.DirectMessageDestroyPermissionsError]: { toast: { text: d } }, showToast: !0 };
         },
         8448: (e, t, r) => {
             r.d(t, { q: () => a });
-            var s = r(615656),
-                o = r(613195),
+            var o = r(615656),
+                s = r(613195),
                 n = r(51525);
-            const a = (e) => ({ [s.ZP.ClientNotPermitted]: { customAction: () => ((0, n.DR)("/messages/", { statusCode: 401 }), (0, o.Ae)(e)) } });
+            const a = (e) => ({ [o.ZP.ClientNotPermitted]: { customAction: () => ((0, n.DR)("/messages/", { statusCode: 401 }), (0, s.Ae)(e)) } });
         },
         48886: (e, t, r) => {
-            r.d(t, { q: () => o });
-            var s = r(111677);
-            const o = { defaultToast: { text: r.n(s)().a30b63da }, showToast: !0 };
+            r.d(t, { q: () => s });
+            var o = r(111677);
+            const s = { defaultToast: { text: r.n(o)().a30b63da }, showToast: !0 };
         },
         879596: (e, t, r) => {
-            r.d(t, { D: () => o });
-            var s = r(111677);
-            const o = { defaultToast: { text: r.n(s)().ca96fe6e }, showToast: !0 };
+            r.d(t, { D: () => s });
+            var o = r(111677);
+            const s = { defaultToast: { text: r.n(o)().ca96fe6e }, showToast: !0 };
         },
         349972: (e, t, r) => {
-            r.d(t, { j: () => o });
-            var s = r(111677);
-            const o = { defaultToast: { text: r.n(s)().i14d7a46 }, showToast: !0 };
+            r.d(t, { j: () => s });
+            var o = r(111677);
+            const s = { defaultToast: { text: r.n(o)().i14d7a46 }, showToast: !0 };
         },
         860174: (e, t, r) => {
             r.d(t, { Z: () => n });
-            var s = r(615656),
-                o = r(51525);
-            const n = { [s.ZP.FollowError]: { customAction: o.w1 } };
+            var o = r(615656),
+                s = r(51525);
+            const n = { [o.ZP.FollowError]: { customAction: s.w1 } };
         },
         481681: (e, t, r) => {
-            r.d(t, { Bp: () => o, NF: () => s, nO: () => n });
-            const s = "send-tweet",
-                o = "dismiss-composer",
+            r.d(t, { Bp: () => s, NF: () => o, nO: () => n });
+            const o = "send-tweet",
+                s = "dismiss-composer",
                 n = 4;
         },
         47743: (e, t, r) => {
-            r.d(t, { nO: () => s.nO, YT: () => g, yN: () => y, X2: () => _, FI: () => C });
-            var s = r(481681),
-                o = r(205074);
+            r.d(t, { nO: () => o.nO, YT: () => v, yN: () => y, X2: () => b, FI: () => _ });
+            var o = r(481681),
+                s = r(205074);
             function n(e) {
                 return (t) => t.some((t) => !!t && e(t));
             }
             const a = (e) => !!e.mediaFile?.isGif,
                 i = (e) => !!e.externalMediaDetails,
                 d = (e) => !!e.mediaFile?.isImage,
-                c = (e) => !(!e.mediaFile?.isVideo || e.mediaFile instanceof o.ZP),
+                c = (e) => !(!e.mediaFile?.isVideo || e.mediaFile instanceof s.ZP),
                 l = n((e) => a(e) || d(e) || c(e) || i(e));
             n(a), n(d), n(c), n(i);
-            s.nO;
+            o.nO;
             var u = r(175848),
                 m = r(276563),
                 h = r(166852),
                 p = r(450681),
                 f = r(575211),
-                v = r(456910);
-            const g = ({ excludeReplyUser: e, inReplyToStatus: t, viewerUserId: r }) => {
-                    const { retweeted_status: s } = t,
-                        { entities: o, unmentioned_user_ids: n, user: a } = s || t,
-                        i = s ? s.user : {},
-                        d = s ? t.user : {},
-                        c = o?.user_mentions || [],
-                        l = u.ZP.mergeTaggedUsers(o?.media || []),
-                        m = b(s || t) || {},
+                D = r(456910);
+            const v = ({ excludeReplyUser: e, inReplyToStatus: t, viewerUserId: r }) => {
+                    const { retweeted_status: o } = t,
+                        { entities: s, unmentioned_user_ids: n, user: a } = o || t,
+                        i = o ? o.user : {},
+                        d = o ? t.user : {},
+                        c = s?.user_mentions || [],
+                        l = u.ZP.mergeTaggedUsers(s?.media || []),
+                        m = g(o || t) || {},
                         f = { [i.id_str]: i, [d.id_str]: d, [a.id_str]: a, [m.id_str]: m };
                     c.forEach((e) => {
                         f[e.id_str] = e;
@@ -245,16 +252,16 @@
                         l.forEach(({ name: e, screen_name: t, user_id: r }) => {
                             f[r] = { id_str: r, name: e, screen_name: t };
                         });
-                    const v = (e) => {
+                    const D = (e) => {
                             const t = n?.includes(e.id_str),
                                 r = e.id_str === a.id_str;
                             return !t || r ? [e.id_str] : [];
                         },
-                        g = (0, h.Z)((0, p.Z)([...v(i), ...v(d), a.id_str, ...c.flatMap((e) => v(e)), ...l.map((e) => e.user_id)])).filter((e) => e !== r);
-                    let y = r && a.id_str === r ? [r, ...g] : g;
+                        v = (0, h.Z)((0, p.Z)([...D(i), ...D(d), a.id_str, ...c.flatMap((e) => D(e)), ...l.map((e) => e.user_id)])).filter((e) => e !== r);
+                    let y = r && a.id_str === r ? [r, ...v] : v;
                     return e && (y = y.filter((e) => e !== a.id_str)), y.map((e) => f[e]);
                 },
-                b = ({ card: e }) => {
+                g = ({ card: e }) => {
                     let t = null;
                     if (e) {
                         const r = m.default.getBindingValue(e.binding_values, "site");
@@ -269,23 +276,23 @@
                         if (t) {
                             return r.length <= e;
                         }
-                        const s = r.some((e) => !!e.externalMediaDetails),
-                            n = !s && r.some((e) => e.mediaFile && e.mediaFile.isGif),
-                            a = r.some((e) => e.mediaFile && !(e.mediaFile instanceof o.ZP) && e.mediaFile.isVideo);
-                        if (n || s || a) return 1 === r.length;
+                        const o = r.some((e) => !!e.externalMediaDetails),
+                            n = !o && r.some((e) => e.mediaFile && e.mediaFile.isGif),
+                            a = r.some((e) => e.mediaFile && !(e.mediaFile instanceof s.ZP) && e.mediaFile.isVideo);
+                        if (n || o || a) return 1 === r.length;
                         {
                             const t = r.length <= e,
-                                s = r.every((e) => e.mediaFile && e.mediaFile.isImage);
-                            return t && s;
+                                o = r.every((e) => e.mediaFile && e.mediaFile.isImage);
+                            return t && o;
                         }
                     },
-                _ = (e, t = !1, r = s.nO) => y({ mixedMediaUploadEnabled: t, maxNumberOfMedia: r })(e),
-                C = (e, t = !1) => {
+                b = (e, t = !1, r = o.nO) => y({ mixedMediaUploadEnabled: t, maxNumberOfMedia: r })(e),
+                _ = (e, t = !1) => {
                     const r = e.split(f.V.WordBoundary);
                     return (
                         t && r.pop(),
                         !!r.find((e) => {
-                            const t = (0, v.bR)(e, "compose");
+                            const t = (0, D.bR)(e, "compose");
                             return t && "users" === t.result_type;
                         })
                     );
@@ -293,27 +300,27 @@
         },
         973572: (e, t, r) => {
             r.d(t, { Z: () => a });
-            var s = r(476984),
-                o = r.n(s),
+            var o = r(476984),
+                s = r.n(o),
                 n = r(24949);
-            const a = (0, n.wN)(n.PW, o());
+            const a = (0, n.wN)(n.PW, s());
         },
         207137: (e, t, r) => {
-            r.d(t, { BC: () => c, FI: () => d, Pm: () => a, gO: () => n, zk: () => o });
-            const s = () => new Date(Date.now());
-            function o(e, t = s()) {
+            r.d(t, { BC: () => c, FI: () => d, Pm: () => a, gO: () => n, zk: () => s });
+            const o = () => new Date(Date.now());
+            function s(e, t = o()) {
                 return t.getFullYear() === e.getFullYear() && t.getMonth() === e.getMonth() && t.getDate() === e.getDate();
             }
-            function n(e, t = s()) {
+            function n(e, t = o()) {
                 const r = new Date(t);
-                return r.setHours(r.getHours() - 24), o(e, r);
+                return r.setHours(r.getHours() - 24), s(e, r);
             }
-            function a(e, t = s()) {
+            function a(e, t = o()) {
                 const r = new Date(t);
-                return r.setHours(r.getHours() + 24), o(e, r);
+                return r.setHours(r.getHours() + 24), s(e, r);
             }
             const i = 6048e5;
-            function d(e, t = s()) {
+            function d(e, t = o()) {
                 const r = t - e;
                 return r >= 0 && r <= i;
             }
@@ -323,21 +330,21 @@
             }
         },
         103335: (e, t, r) => {
-            r.d(t, { Z: () => o });
-            var s = r(856674);
-            const o = (e, t) => [e, t].sort(s.ZP).join("-");
+            r.d(t, { Z: () => s });
+            var o = r(856674);
+            const s = (e, t) => [e, t].sort(o.ZP).join("-");
         },
         511985: (e, t, r) => {
-            r.d(t, { AD: () => s, Qy: () => n, _f: () => a, zH: () => o });
-            const s = Object.freeze({ Composition: "composition", DMComposition: "dm_composition", NoteComposition: "note_composition" }),
-                o = 500,
-                n = (e) => Object.values(s).indexOf(e) >= 0,
+            r.d(t, { AD: () => o, Qy: () => n, _f: () => a, zH: () => s });
+            const o = Object.freeze({ Composition: "composition", DMComposition: "dm_composition", NoteComposition: "note_composition" }),
+                s = 500,
+                n = (e) => Object.values(o).indexOf(e) >= 0,
                 a = (e, t) => ("boolean" == typeof e ? e : t);
         },
         163390: (e, t, r) => {
             r.d(t, { OX: () => m, Od: () => l, PN: () => h, uq: () => c, wR: () => f });
-            var s = r(251067),
-                o = r(522171),
+            var o = r(251067),
+                s = r(522171),
                 n = r(111677),
                 a = r.n(n),
                 i = r(912021),
@@ -345,7 +352,7 @@
             const c = Object.freeze({ toggleCommandCenter: "mod+k", openKeyboardShortcuts: "?", swipeLeft: "left", swipeRight: "right", nextItem: "j", previousItem: "k", refresh: ".", nightMode: "z", bookmark: "b", block: "x", mute: "u", newTweet: "n", newMessage: "m", toggleDMDrawer: "i", goHome: "g h", goExplore: "g e", goNotifications: "g n", goMentions: "g r", goProfile: "g p", goLikes: "g l", goLists: "g i", goMessages: "g m", goGrok: "g g", goToDrafts: "g f", goToScheduled: "g t", goSettings: "g s", goToUser: "g u", goBookmarks: "g b", goTopArticles: "g a", goDisplay: "g d", search: "/", audio: { dock: "a d", play: "a space", mute: "a m" }, video: { play1: "k", play2: "space", mute: "m" }, columns: { createNewColumn: "c n", duplicateColumn: "c d", focusOnReorderButton: "c r", lastColumn: "c 0", nextColumn: "]", nthColumn: "c 1..9", prevColumn: "[", removeColumn: "c backspace", toggleColumnOptions: "c o", undoRemoveColumn: "c u" }, decks: { createNewDeck: "d n", editActiveDeck: "d e", lastPinnedDeck: "d 0", manageAllDecks: "d m", nthPinnedDeck: "d 1..9" }, labs: { openCommandCenter: ">" } }),
                 l = (0, i.Z)((e) => {
                     const t = e ? [{ description: a().b7fa0cfe, keys: c.goTopArticles, universal: !1 }] : [];
-                    return [...((0, s.fH)(s.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: a().d5696fcc, keys: c.openKeyboardShortcuts, universal: !0 }, { description: a().a83d4280, keys: c.nextItem, universal: !0 }, { description: a().g0048656, keys: c.previousItem, universal: !0 }, { description: a().a690c4d0, keys: "Space", universal: !0 }, { description: a().e893811a, keys: c.refresh, universal: !1 }, { description: a().ha8209bc, keys: c.goHome, universal: !1 }, { description: a().fcf3e54c, keys: c.goExplore, universal: !1 }, { description: a().eb75875e, keys: c.goNotifications, universal: !1 }, { description: a().cdb53d7a, keys: c.goMentions, universal: !1 }, { description: a().fa98627a, keys: c.goProfile, universal: !1 }, { description: a().d4ebc798, keys: c.goToDrafts, universal: !1 }, { description: a().fd6a3f30, keys: c.goToScheduled, universal: !1 }, { description: a().d7b8ebaa, keys: c.goLikes, universal: !1 }, { description: a().b0041756, keys: c.goLists, universal: !1 }, { description: a().d4986f86, keys: c.goMessages, universal: !1 }, { description: a().h5860a68, keys: c.goGrok, universal: !1 }, { description: a().bb081ea2, keys: c.goSettings, universal: !1 }, { description: a().i3145aa0, keys: c.goBookmarks, universal: !1 }, ...t, { description: a().eee2ed92, keys: c.goToUser, universal: !1 }, { description: a().ee5ccf3e, keys: c.goDisplay, universal: !1 }];
+                    return [...((0, o.fH)(o.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: a().d5696fcc, keys: c.openKeyboardShortcuts, universal: !0 }, { description: a().a83d4280, keys: c.nextItem, universal: !0 }, { description: a().g0048656, keys: c.previousItem, universal: !0 }, { description: a().a690c4d0, keys: "Space", universal: !0 }, { description: a().e893811a, keys: c.refresh, universal: !1 }, { description: a().ha8209bc, keys: c.goHome, universal: !1 }, { description: a().fcf3e54c, keys: c.goExplore, universal: !1 }, { description: a().eb75875e, keys: c.goNotifications, universal: !1 }, { description: a().cdb53d7a, keys: c.goMentions, universal: !1 }, { description: a().fa98627a, keys: c.goProfile, universal: !1 }, { description: a().d4ebc798, keys: c.goToDrafts, universal: !1 }, { description: a().fd6a3f30, keys: c.goToScheduled, universal: !1 }, { description: a().d7b8ebaa, keys: c.goLikes, universal: !1 }, { description: a().b0041756, keys: c.goLists, universal: !1 }, { description: a().d4986f86, keys: c.goMessages, universal: !1 }, { description: a().h5860a68, keys: c.goGrok, universal: !1 }, { description: a().bb081ea2, keys: c.goSettings, universal: !1 }, { description: a().i3145aa0, keys: c.goBookmarks, universal: !1 }, ...t, { description: a().eee2ed92, keys: c.goToUser, universal: !1 }, { description: a().ee5ccf3e, keys: c.goDisplay, universal: !1 }];
                 }),
                 u = d.ZP.isMac() ? "⌘" : "CTRL",
                 m = () => [
@@ -353,15 +360,15 @@
                     { description: a().de94bda6, keys: `${u} Enter`, universal: !1 },
                     { description: a().e736990a, keys: c.newMessage, universal: !1 },
                     { description: a().a9ae1e78, keys: c.search, universal: !1 },
-                    { description: a().fe731016, keys: o.Z.shortcuts.like, universal: !1 },
-                    { description: a().d17df548, keys: o.Z.shortcuts.reply, universal: !1 },
-                    { description: a().g062295e, keys: o.Z.shortcuts.retweet, universal: !1 },
-                    { description: a().h01621a4, keys: o.Z.shortcuts.share, universal: !0 },
+                    { description: a().fe731016, keys: s.Z.shortcuts.like, universal: !1 },
+                    { description: a().d17df548, keys: s.Z.shortcuts.reply, universal: !1 },
+                    { description: a().g062295e, keys: s.Z.shortcuts.retweet, universal: !1 },
+                    { description: a().h01621a4, keys: s.Z.shortcuts.share, universal: !0 },
                     { description: a().gb303814, keys: c.bookmark, universal: !1 },
                     { description: a().c03b1126, keys: c.mute, universal: !1 },
                     { description: a().ebd2abb2, keys: c.block, universal: !1 },
                     { description: a().hc6c5510, keys: "Enter", universal: !0 },
-                    { description: a().eebdef38, keys: o.Z.shortcuts.openMediaModal, universal: !0 },
+                    { description: a().eebdef38, keys: s.Z.shortcuts.openMediaModal, universal: !0 },
                     { description: a().b488758c, keys: c.toggleDMDrawer, universal: !1 },
                 ],
                 h = () => [
@@ -375,17 +382,17 @@
                 p = (0, i.Z)((e) => {
                     const t = l(e),
                         r = m(),
-                        s = h(),
-                        o = {};
+                        o = h(),
+                        s = {};
                     return (
-                        [...r, ...s, ...t].forEach(({ description: e, keys: t }) => {
+                        [...r, ...o, ...t].forEach(({ description: e, keys: t }) => {
                             Array.isArray(t)
                                 ? t.forEach((t) => {
-                                      o[t] = e;
+                                      s[t] = e;
                                   })
-                                : (o[t] = e);
+                                : (s[t] = e);
                         }),
-                        JSON.stringify(o)
+                        JSON.stringify(s)
                     );
                 }),
                 f = (e, t) => {
@@ -393,43 +400,43 @@
                 };
         },
         965728: (e, t, r) => {
-            r.d(t, { C_: () => g, I5: () => p, K2: () => v, L$: () => c, Rb: () => f, nk: () => h, sI: () => _, xr: () => b });
-            var s = r(202784),
-                o = r(483677),
+            r.d(t, { C_: () => v, I5: () => p, K2: () => D, L$: () => c, Rb: () => f, nk: () => h, sI: () => b, xr: () => g });
+            var o = r(202784),
+                s = r(483677),
                 n = r(782578),
                 a = r(401339),
                 i = r(521514);
             const d = (e, t) => `rgba(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue}, ${t})`,
                 c = (e) => {
-                    const t = e && o.Z.getForGallery(e);
-                    return t ? { rgb: b(t), rgba: d(t, 0.9) } : m;
+                    const t = e && s.Z.getForGallery(e);
+                    return t ? { rgb: g(t), rgba: d(t, 0.9) } : m;
                 },
                 l = i.Z.columnWidths.primary,
                 u = (e, t) => Math.min(t, e),
                 m = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
                 h = { transitionProperty: "background-color", transitionDuration: ".5s" },
                 p = (e, t) => {
-                    const { containerHeight: r, containerWidth: s, mediaHeight: o, mediaWidth: a } = e,
-                        i = a && o ? a / o : 1,
+                    const { containerHeight: r, containerWidth: o, mediaHeight: s, mediaWidth: a } = e,
+                        i = a && s ? a / s : 1,
                         d = i > 1,
                         c = t ? 400 : l,
-                        m = d && (!a || a <= c) ? u(s, c) : s,
-                        h = d || (o && !(o <= c)) ? r : u(r, c);
+                        m = d && (!a || a <= c) ? u(o, c) : o,
+                        h = d || (s && !(s <= c)) ? r : u(r, c);
                     return n.Z.getContainDimensions({ width: m, height: h }, i);
                 },
                 f = (e) => {
                     const t = e && e.ext_media_color && e.ext_media_color.palette;
                     return c(t);
                 },
-                v = (e) => {
+                D = (e) => {
                     const t = e && e.profile_image_extensions_media_color && e.profile_image_extensions_media_color.palette;
                     return c(t);
                 },
-                g = (e) => {
+                v = (e) => {
                     const t = e && e.profile_banner_extensions_media_color && e.profile_banner_extensions_media_color.palette;
                     return c(t);
                 },
-                b = (e) => `rgb(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue})`,
+                g = (e) => `rgb(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue})`,
                 y = (e, t) => {
                     switch (t.type) {
                         case "zoom":
@@ -440,8 +447,8 @@
                             return e;
                     }
                 },
-                _ = () => {
-                    const [e, t] = s.useReducer(y, { isZoomed: !1, showControls: !0 });
+                b = () => {
+                    const [e, t] = o.useReducer(y, { isZoomed: !1, showControls: !0 });
                     return {
                         hideButtons: e.isZoomed || !e.showControls,
                         handleMediaDetailZoomed: function (e) {
@@ -455,65 +462,65 @@
         },
         988566: (e, t, r) => {
             r.d(t, { D$: () => i, Du: () => l, GK: () => c, Iv: () => m, pz: () => h, rl: () => u });
-            var s = r(202784),
-                o = r(688715),
+            var o = r(202784),
+                s = r(688715),
                 n = r(946409),
                 a = r(788993);
             const i = (e, t, r) => (e.retweeted_status ? d(e, t) : e.community_id_str && r ? c(e, r) : void 0),
                 d = (e, t) => {
                     if (e.retweeted_status) return { contextType: a.Z.Retweet, isSelfRetweet: e.user.id_str === t, name: e.user.name, screenName: e.user.screen_name };
                 },
-                c = (e, t) => ({ contextType: a.Z.Community, landingUrl: { url: (0, o.ju)(`https://x.com/i/communities/${t.id_str}`), urlType: "ExternalUrl" }, text: t.name }),
+                c = (e, t) => ({ contextType: a.Z.Community, landingUrl: { url: (0, s.ju)(`https://x.com/i/communities/${t.id_str}`), urlType: "ExternalUrl" }, text: t.name }),
                 l = ({ isCellWithProminentSocialContext: e, socialContext: t, topic: r }) => {
                     if (t?.topicContext) {
-                        const s = t.topicContext;
-                        return { contextType: e ? a.Z.TextOnly : a.Z.Topic, landingUrl: { url: `twitter://topics_timeline?id=${s.topicId}`, urlType: "DeepLink" }, text: r?.name, topicContext: s };
+                        const o = t.topicContext;
+                        return { contextType: e ? a.Z.TextOnly : a.Z.Topic, landingUrl: { url: `twitter://topics_timeline?id=${o.topicId}`, urlType: "DeepLink" }, text: r?.name, topicContext: o };
                     }
                     if (t?.generalContext) return { ...t.generalContext };
                 },
                 u = (e) => {
-                    const { contextType: t, landingUrl: r, text: s } = e;
-                    return { link: r ? (0, n.s9)(r) : void 0, text: s, contextType: t };
+                    const { contextType: t, landingUrl: r, text: o } = e;
+                    return { link: r ? (0, n.s9)(r) : void 0, text: o, contextType: t };
                 },
                 m = { contextType: a.Z.Pin, text: "" },
-                h = s.createContext(void 0);
+                h = o.createContext(void 0);
         },
         16222: (e, t, r) => {
-            function s(e, t) {
+            function o(e, t) {
                 try {
                     return e();
                 } catch (e) {
                     return t(e);
                 }
             }
-            r.d(t, { o: () => s });
+            r.d(t, { o: () => o });
         },
         961104: (e, t, r) => {
-            function s(e, t) {
+            function o(e, t) {
                 return e.filter(t);
             }
-            r.d(t, { b: () => s });
+            r.d(t, { b: () => o });
         },
         409438: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            const s = Object.freeze({ User: "User", ProfileCard: "ProfileCard", UserCompact: "UserCompact", UserConcise: "UserConcise", UserDetailed: "UserDetailed", PendingFollowUser: "PendingFollowUser", SubscribableUser: "SubscribableUser" });
+            r.d(t, { Z: () => o });
+            const o = Object.freeze({ User: "User", ProfileCard: "ProfileCard", UserCompact: "UserCompact", UserConcise: "UserConcise", UserDetailed: "UserDetailed", PendingFollowUser: "PendingFollowUser", SubscribableUser: "SubscribableUser" });
         },
         988823: (e, t, r) => {
             r.d(t, { M: () => a });
-            var s = r(807896),
-                o = r(202784),
+            var o = r(807896),
+                s = r(202784),
                 n = r(190286);
             const a = (e) => (t) => {
-                const [r, a] = o.useState(null),
+                const [r, a] = s.useState(null),
                     i = (e) =>
                         new Promise((t, r) => {
                             a({ resolve: t, reject: r, confirmationSheetProps: e });
                         });
                 if (r) {
                     const { confirmationSheetProps: e, reject: t, resolve: i } = r;
-                    return o.createElement(
+                    return s.createElement(
                         n.Z,
-                        (0, s.Z)({}, e, {
+                        (0, o.Z)({}, e, {
                             onCancel: () => {
                                 t(), a(null);
                             },
@@ -523,7 +530,7 @@
                         }),
                     );
                 }
-                return o.createElement(e, (0, s.Z)({}, t, { confirm: i }));
+                return s.createElement(e, (0, o.Z)({}, t, { confirm: i }));
             };
         },
         296196: (e, t, r) => {
@@ -537,7 +544,7 @@
                     addWelcomeMessageToConversation: () => n.Qe,
                     clearRecentSearch: () => Z,
                     clearRecentSearches: () => x,
-                    clearSearchCache: () => C,
+                    clearSearchCache: () => _,
                     default: () => O,
                     deleteConversations: () => n.S9,
                     disableMentionNotifications: () => n.BW,
@@ -556,8 +563,8 @@
                     fetchTrustedInboxHistory: () => i.vC,
                     fetchUntrustedInboxHistory: () => i.kK,
                     fetchUntrustedLowQualityInboxHistory: () => i.j7,
-                    fetchUpdates: () => R.f9,
-                    fetchUpdatesIfNeeded: () => R.hd,
+                    fetchUpdates: () => A.f9,
+                    fetchUpdatesIfNeeded: () => A.hd,
                     leaveConversation: () => n.qH,
                     markAllAsRead: () => n.SF,
                     markConversationRead: () => n.v3,
@@ -588,7 +595,7 @@
                     selectLabelledConversationIds: () => i.Z3,
                     selectLastSeenEventIds: () => i.B7,
                     selectPinnedConversationIds: () => i.Kf,
-                    selectRecentSearches: () => P,
+                    selectRecentSearches: () => S,
                     selectRecipientCanNotDm: () => n.OF,
                     selectSearchConversations: () => M,
                     selectSearchFetchStatus: () => w,
@@ -599,7 +606,7 @@
                     selectUntrustedLowQualityConversationCount: () => i.ZI,
                     selectUntrustedLowQualityCursor: () => i.Gk,
                     selectUntrustedUnreadCount: () => i.k5,
-                    selectUpdates: () => R.o8,
+                    selectUpdates: () => A.o8,
                     setConversationAvatar: () => n.X5,
                     toggleNotifications: () => n.$S,
                     unmuteDMUser: () => n.GP,
@@ -611,8 +618,8 @@
                     updateTyping: () => n.lT,
                     updateUntrustedLastSeenEventId: () => i.A4,
                 });
-            var s = r(118717),
-                o = r(499627),
+            var o = r(118717),
+                s = r(499627),
                 n = r(613195),
                 a = r(627279),
                 i = r(720277),
@@ -624,54 +631,54 @@
                 h = r(390387),
                 p = r(849585),
                 f = r(147143);
-            const v = "rweb.recentDMSearches",
-                g = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
-                b = "rweb/directMessages/ADD_RECENT_SEARCHES",
-                y = (e) => ({ payload: e, type: b }),
-                _ = "rweb/directMessages/CLEAR_SEARCH_CACHE",
-                C = () => ({ type: _ }),
-                D = "rweb/directMessages/CLEAR_RECENT_SEARCH",
-                E = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
-                k = { searchResults: {}, recentSearches: [] };
-            function S(e = k, t) {
+            const D = "rweb.recentDMSearches",
+                v = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
+                g = "rweb/directMessages/ADD_RECENT_SEARCHES",
+                y = (e) => ({ payload: e, type: g }),
+                b = "rweb/directMessages/CLEAR_SEARCH_CACHE",
+                _ = () => ({ type: b }),
+                C = "rweb/directMessages/CLEAR_RECENT_SEARCH",
+                k = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
+                E = { searchResults: {}, recentSearches: [] };
+            function P(e = E, t) {
                 if (!t) return e;
                 switch (t.type) {
-                    case b:
-                    case D:
+                    case g:
+                    case C:
                         return { ...e, recentSearches: t.payload || [] };
-                    case E:
+                    case k:
                         return { ...e, recentSearches: [] };
-                    case g.REQUEST: {
-                        const { fetchNextPage: r, preserveResults: s, query: o } = t.meta || {},
-                            n = e.searchResults ? e.searchResults[o] : {},
-                            a = { ...e.searchResults, [o]: { ...n, fetchStatus: s || r ? n?.fetchStatus : m.ZP.LOADING } };
+                    case v.REQUEST: {
+                        const { fetchNextPage: r, preserveResults: o, query: s } = t.meta || {},
+                            n = e.searchResults ? e.searchResults[s] : {},
+                            a = { ...e.searchResults, [s]: { ...n, fetchStatus: o || r ? n?.fetchStatus : m.ZP.LOADING } };
                         return { ...e, searchResults: a };
                     }
-                    case g.FAILURE: {
-                        const { fetchNextPage: r, preserveResults: s, query: o } = t.meta || {},
-                            n = e.searchResults ? e.searchResults[o] : {},
-                            a = { ...e.searchResults, [o]: { ...n, fetchStatus: s || r ? n?.fetchStatus : m.ZP.FAILED, error: t.payload } };
+                    case v.FAILURE: {
+                        const { fetchNextPage: r, preserveResults: o, query: s } = t.meta || {},
+                            n = e.searchResults ? e.searchResults[s] : {},
+                            a = { ...e.searchResults, [s]: { ...n, fetchStatus: o || r ? n?.fetchStatus : m.ZP.FAILED, error: t.payload } };
                         return { ...e, searchResults: a };
                     }
-                    case g.SUCCESS: {
+                    case v.SUCCESS: {
                         const { query: r } = t.meta || {},
-                            s = t.payload && t.payload.result ? t.payload.result : null,
-                            { conversations: o, error: n } = s || {},
-                            a = s?.conversationIds ? s.conversationIds : o ? Object.keys(o) : [],
+                            o = t.payload && t.payload.result ? t.payload.result : null,
+                            { conversations: s, error: n } = o || {},
+                            a = o?.conversationIds ? o.conversationIds : s ? Object.keys(s) : [],
                             i = e.searchResults ? e.searchResults[r] : {},
                             d = i?.conversationIds || [],
                             c = d.length && a ? d.concat(a.filter((e) => !d.includes(e))) : a,
-                            l = { ...e.searchResults, [r]: { ...i, lastCursor: s?.cursor, conversationIds: c, error: n, fetchStatus: m.ZP.LOADED } };
+                            l = { ...e.searchResults, [r]: { ...i, lastCursor: o?.cursor, conversationIds: c, error: n, fetchStatus: m.ZP.LOADED } };
                         return { ...e, searchResults: l };
                     }
-                    case _:
+                    case b:
                     case p.t:
-                        return { ...k, recentSearches: e.recentSearches };
+                        return { ...E, recentSearches: e.recentSearches };
                     default:
                         return e;
                 }
             }
-            const P = (e) => e[f.Yf].search?.recentSearches,
+            const S = (e) => e[f.Yf].search?.recentSearches,
                 w = (e, t) => {
                     const r = e[f.Yf].search?.searchResults;
                     if (r) {
@@ -686,69 +693,69 @@
                 },
                 I =
                     (e) =>
-                    (t, r, { api: s }) => {
-                        const o = r(),
+                    (t, r, { api: o }) => {
+                        const s = r(),
                             { fetchNextPage: n, preserveResults: a, query: d } = e || {},
                             m = { query: d, search_type: "conversations", request_id: c().v4() },
                             h = ((e, t) => {
                                 const r = e[f.Yf].search?.searchResults;
                                 return (r && r[t]?.lastCursor) || null;
-                            })(o, d),
-                            p = ((e) => e[f.Yf].search?.searchResults)(o),
-                            v = p ? p[d] : void 0,
-                            b = !!h;
+                            })(s, d),
+                            p = ((e) => e[f.Yf].search?.searchResults)(s),
+                            D = p ? p[d] : void 0,
+                            g = !!h;
                         h && d && n && (m.cursor = h);
-                        const y = u._O(t, { params: m, request: s.withEndpoint(l.Z).search }),
-                            _ = (e) => {
+                        const y = u._O(t, { params: m, request: o.withEndpoint(l.Z).search }),
+                            b = (e) => {
                                 if (e && e.result) {
                                     const { conversations: t } = e.result,
                                         { users: r } = e.entities;
                                     return t && Object.values(t).forEach((e) => (e.isSearchResult = !0)), t ? (0, i.s0)({ conversations: t, users: r }) : null;
                                 }
                             };
-                        return !v || v?.error || a || (n && b) ? y({ actionTypes: g, context: "SEARCH", meta: { query: m.query, cursor: m.cursor, preserveResults: a, fetchNextPage: n } }, _) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: v }, meta: { query: d, cursor: h } }), Promise.resolve());
+                        return !D || D?.error || a || (n && g) ? y({ actionTypes: v, context: "SEARCH", meta: { query: m.query, cursor: m.cursor, preserveResults: a, fetchNextPage: n } }, b) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: D }, meta: { query: d, cursor: h } }), Promise.resolve());
                     },
                 T =
                     (e) =>
-                    (t, r, { featureSwitches: s, userPersistence: o }) => {
-                        const n = s.getNumberValue("dm_inbox_search_max_recent_searches_stored");
-                        return o.get(v).then((r) => {
-                            const s = r?.recentSearches || [];
-                            return !s.includes(e) && s.push(e), s.length > n && s.shift(), t(y(s)), o.set(v, { recentSearches: s });
+                    (t, r, { featureSwitches: o, userPersistence: s }) => {
+                        const n = o.getNumberValue("dm_inbox_search_max_recent_searches_stored");
+                        return s.get(D).then((r) => {
+                            const o = r?.recentSearches || [];
+                            return !o.includes(e) && o.push(e), o.length > n && o.shift(), t(y(o)), s.set(D, { recentSearches: o });
                         });
                     },
                 Z =
                     (e) =>
-                    (t, r, { userPersistence: s }) =>
-                        s.get(v).then((r) => {
-                            const o = r?.recentSearches || [];
-                            return o.splice(o.indexOf(e), 1), t({ payload: o, type: D }), s.set(v, { recentSearches: o });
+                    (t, r, { userPersistence: o }) =>
+                        o.get(D).then((r) => {
+                            const s = r?.recentSearches || [];
+                            return s.splice(s.indexOf(e), 1), t({ payload: s, type: C }), o.set(D, { recentSearches: s });
                         }),
                 x =
                     () =>
-                    (e, t, { userPersistence: r }) => (e({ type: E }), r.set(v, { recentSearches: [] }));
-            o.Z.register(
-                { [f.Yf]: S },
+                    (e, t, { userPersistence: r }) => (e({ type: k }), r.set(D, { recentSearches: [] }));
+            s.Z.register(
+                { [f.Yf]: P },
                 () =>
                     (e, t, { userPersistence: r }) =>
                         h.Qb(t())
                             ? Promise.resolve(
-                                  r.get(v).then((t) => {
+                                  r.get(D).then((t) => {
                                       const r = t?.recentSearches;
                                       r && e(y(r));
                                   }),
                               ).then(() => {})
                             : Promise.resolve(),
             );
-            var R = r(923965);
-            const A = (0, s.UY)({ conversations: n.ZP, entries: a.ZP, inbox: i.ZP, search: S, updates: R.ZP });
-            o.Z.register({ [f.Yf]: A });
-            const O = A;
+            var A = r(923965);
+            const R = (0, o.UY)({ conversations: n.ZP, entries: a.ZP, inbox: i.ZP, search: P, updates: A.ZP });
+            s.Z.register({ [f.Yf]: R });
+            const O = R;
         },
         947650: (e, t, r) => {
-            r.d(t, { Hq: () => y, c1: () => f, lP: () => g, og: () => v });
-            var s = r(745123),
-                o = r(961104),
+            r.d(t, { Hq: () => y, c1: () => f, lP: () => v, og: () => D });
+            var o = r(745123),
+                s = r(961104),
                 n = r(499627),
                 a = r(917799),
                 i = r(56519),
@@ -763,9 +770,9 @@
                     if (!t) return e;
                     if (t.type === m.SUCCESS) {
                         const r = t.payload || {},
-                            { total_count: s, users: o } = r && r.result,
+                            { total_count: o, users: s } = r && r.result,
                             { user_id: n } = t.meta || {};
-                        return n ? { ...e, [n]: { knownFollowersCount: s, knownFollowerIds: o } } : e;
+                        return n ? { ...e, [n]: { knownFollowersCount: o, knownFollowerIds: s } } : e;
                     }
                     return e;
                 },
@@ -773,34 +780,34 @@
             const p = (e, t) => e[c][t],
                 f = (e, t) => {
                     if (t) {
-                        const r = b(e, t);
-                        return (0, o.b)(d.ZP.selectMany(e, r), (e) => !!e);
+                        const r = g(e, t);
+                        return (0, s.b)(d.ZP.selectMany(e, r), (e) => !!e);
                     }
                     return u;
                 },
-                v = (e, t) => f(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
-                g = (e, t) => {
+                D = (e, t) => f(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
+                v = (e, t) => {
                     let r;
                     if (t) {
-                        const s = p(e, t);
-                        r = s?.knownFollowersCount;
+                        const o = p(e, t);
+                        r = o?.knownFollowersCount;
                     }
                     return r;
                 },
-                b = (e, t) => {
+                g = (e, t) => {
                     const r = p(e, t);
                     return r?.knownFollowerIds || u;
                 },
                 y =
                     (e) =>
-                    (t, r, { api: o }) =>
-                        void 0 !== g(r(), e)
+                    (t, r, { api: s }) =>
+                        void 0 !== v(r(), e)
                             ? Promise.resolve()
                             : t(
                                   (
                                       (e) =>
-                                      (t, r, { api: o }) =>
-                                          (0, a._O)(t, { request: o.withEndpoint(s.Z).fetchFollowersYouFollow, params: { user_id: e, count: 3, with_total_count: !0 } })({ actionTypes: m, context: "FETCH_KNOWN_FOLLOWERS", meta: { user_id: e } }, (e) => {
+                                      (t, r, { api: s }) =>
+                                          (0, a._O)(t, { request: s.withEndpoint(o.Z).fetchFollowersYouFollow, params: { user_id: e, count: 3, with_total_count: !0 } })({ actionTypes: m, context: "FETCH_KNOWN_FOLLOWERS", meta: { user_id: e } }, (e) => {
                                               if (e) {
                                                   const { entities: t } = e;
                                                   return t ? [(0, i.dP)(t)] : void 0;
@@ -811,52 +818,52 @@
         },
         465814: (e, t, r) => {
             r.d(t, { Z: () => a });
-            var s = r(502909),
-                o = r(600823);
-            const n = { ...(0, s.ZP)({ namespace: "legacyAndUnifiedCards" }) },
-                a = o.Z.register(n);
+            var o = r(502909),
+                s = r(600823);
+            const n = { ...(0, o.ZP)({ namespace: "legacyAndUnifiedCards" }) },
+                a = s.Z.register(n);
         },
         694180: (e, t, r) => {
-            r.d(t, { cM: () => v, dS: () => f, iY: () => g });
-            var s = r(370751),
-                o = r(399896),
+            r.d(t, { cM: () => D, dS: () => f, iY: () => v });
+            var o = r(370751),
+                s = r(399896),
                 n = r(663550),
                 a = r(499627),
                 i = r(917799);
             const d = {},
                 c = Object.freeze({ REQUEST: "rweb/promotedContent/LOG_REQUEST", SUCCESS: "rweb/promotedContent/LOG_SUCCESS", FAILURE: "rweb/promotedContent/LOG_FAILURE" }),
                 l = "rweb/promotedContent/LOG_UNIQUE_EVENT",
-                u = (0, s.Z)([n.dx.IMPRESSION, n.dx.DWELL]),
-                m = (0, s.Z)([n.AJ.TREND_VIEW, n.AJ.SPOTLIGHT_IMPRESSION]),
+                u = (0, o.Z)([n.dx.IMPRESSION, n.dx.DWELL]),
+                m = (0, o.Z)([n.AJ.TREND_VIEW, n.AJ.SPOTLIGHT_IMPRESSION]),
                 h = (e) => ({ payload: { eventKey: e }, type: l });
             const p = (e, t) => !!e.promotedContent[t],
                 f =
                     (e) =>
-                    (t, r, { api: s }) => {
+                    (t, r, { api: o }) => {
                         const { event: n, impression_id: a, promoted_trend_id: d } = e,
                             l = `trend-${d}-${n}`;
                         if (m.has(n) && p(r(), l)) return Promise.resolve();
                         const u = { promoted_trend_id: d, event: n, impression_id: a };
-                        return (0, i._O)(t, { params: u, request: s.withEndpoint(o.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
+                        return (0, i._O)(t, { params: u, request: o.withEndpoint(s.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
                             if (!t && m.has(n)) return [h(l)];
                         });
                     },
-                v =
-                    ({ disclosureType: e, itemId: t, itemType: r, params: s }) =>
+                D =
+                    ({ disclosureType: e, itemId: t, itemType: r, params: o }) =>
                     (n, a, { api: d }) => {
-                        const { event: l, impression_id: m } = s,
+                        const { event: l, impression_id: m } = o,
                             f = `${r}-${t ?? "undefined"}-${m ?? "undefined"}-${l ?? "undefined"}`;
                         if (u.has(l) && p(a(), f)) return Promise.resolve();
-                        const v = e && "earned" === e.toLowerCase() ? "1" : null,
-                            g = { ...s, earned: v, epoch_ms: Date.now() };
-                        return (0, i._O)(n, { params: g, request: d.withEndpoint(o.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: g }, (e, t) => {
+                        const D = e && "earned" === e.toLowerCase() ? "1" : null,
+                            v = { ...o, earned: D, epoch_ms: Date.now() };
+                        return (0, i._O)(n, { params: v, request: d.withEndpoint(s.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: v }, (e, t) => {
                             if (!t && u.has(l)) return [h(f)];
                         });
                     },
-                g =
+                v =
                     (e) =>
-                    (t, r, { api: s }) =>
-                        (0, i._O)(t, { params: e, request: s.withEndpoint(o.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
+                    (t, r, { api: o }) =>
+                        (0, i._O)(t, { params: e, request: o.withEndpoint(s.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
             a.Z.register({
                 promotedContent: function (e = d, t) {
                     if (!t) return e;
@@ -872,8 +879,8 @@
         629196: (e, t, r) => {
             r.d(t, { r: () => c });
             r(136728);
-            var s = r(161821),
-                o = r(390387),
+            var o = r(161821),
+                s = r(390387),
                 n = r(836255),
                 a = r(255117),
                 i = r(166506),
@@ -883,16 +890,16 @@
                 (r, c, { api: l, featureSwitches: u }) =>
                     r(d.ZP.mute(e, t)).then(() => {
                         const t = c(),
-                            d = (0, s.Z)(n.Z.selectAll(t)).reduce((r, s) => {
-                                if (null != s)
-                                    if (s.user === e) r[s.id_str] = !0;
-                                    else if (s.retweeted_status) {
-                                        const o = n.Z.select(t, s.retweeted_status);
-                                        o?.user === e && (r[s.id_str] = !0);
+                            d = (0, o.Z)(n.Z.selectAll(t)).reduce((r, o) => {
+                                if (null != o)
+                                    if (o.user === e) r[o.id_str] = !0;
+                                    else if (o.retweeted_status) {
+                                        const s = n.Z.select(t, o.retweeted_status);
+                                        s?.user === e && (r[o.id_str] = !0);
                                     }
                                 return r;
                             }, {}),
-                            l = (0, o._h)(c()),
+                            l = (0, s._h)(c()),
                             u = l ? [(0, a.ZP)({ useLatest: !1, userId: l }).removeTweets(d), (0, a.ZP)({ useLatest: !0, userId: l }).removeTweets(d)] : [],
                             m = (0, i.k9)();
                         if (m.selectInitialFetchStatus(t) && !m.selectCanRefresh(t)) {
@@ -904,8 +911,8 @@
         },
         818581: (e, t, r) => {
             r.d(t, { kQ: () => h, xQ: () => p });
-            var s = r(226395),
-                o = r(499627),
+            var o = r(226395),
+                s = r(499627),
                 n = r(917799),
                 a = r(312771),
                 i = r(390387);
@@ -926,52 +933,52 @@
                         return e;
                 }
             }
-            o.Z.register({ [d]: m });
+            s.Z.register({ [d]: m });
             const h = (e) => e[d].userPreferences,
                 p = () => (e, t) => (t()[d].fetchStatus === a.ZP.LOADED ? Promise.resolve() : e(f())),
                 f =
                     () =>
                     (e, t, { api: r }) => {
-                        const o = i.x0(t());
-                        return n._O(e, { params: { userId: o }, request: r.withEndpoint(s.Z).fetchUserPreferences })({ actionTypes: l, context: "FETCH_USER_PREFERENCES" });
+                        const s = i.x0(t());
+                        return n._O(e, { params: { userId: s }, request: r.withEndpoint(o.Z).fetchUserPreferences })({ actionTypes: l, context: "FETCH_USER_PREFERENCES" });
                     };
         },
         977154: (e, t, r) => {
             r.d(t, { H$: () => u, ZP: () => c, m: () => l, qk: () => m });
-            var s = r(403911),
-                o = r(750085),
+            var o = r(403911),
+                s = r(750085),
                 n = r(555875),
                 a = r(218951);
             const i = "bookmarks",
-                d = (0, a.Z)({ timelineId: i, network: { getEndpoint: (e) => e.withEndpoint(s.Z).fetchBookmarksTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: o.Z, context: "FETCH_BOOKMARKS_TIMELINE", perfKey: "bookmarksGraphQL" }),
+                d = (0, a.Z)({ timelineId: i, network: { getEndpoint: (e) => e.withEndpoint(o.Z).fetchBookmarksTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: s.Z, context: "FETCH_BOOKMARKS_TIMELINE", perfKey: "bookmarksGraphQL" }),
                 c = d,
-                l = (e) => (0, a.Z)({ timelineId: `bookmarkFolder-${e}`, network: { getEndpoint: (e) => e.withEndpoint(s.Z).fetchBookmarkFolderTimeline, getEndpointParams: ({ cursor: t }) => ({ cursor: "string" == typeof t ? t : void 0, bookmark_collection_id: e }) }, formatResponse: o.Z, context: "FETCH_BOOKMARK_FOLDER_TIMELINE", perfKey: "bookmarkFolderGraphQL" }),
+                l = (e) => (0, a.Z)({ timelineId: `bookmarkFolder-${e}`, network: { getEndpoint: (e) => e.withEndpoint(o.Z).fetchBookmarkFolderTimeline, getEndpointParams: ({ cursor: t }) => ({ cursor: "string" == typeof t ? t : void 0, bookmark_collection_id: e }) }, formatResponse: s.Z, context: "FETCH_BOOKMARK_FOLDER_TIMELINE", perfKey: "bookmarkFolderGraphQL" }),
                 u =
                     () =>
-                    (e, t, { api: r, featureSwitches: o }) =>
+                    (e, t, { api: r, featureSwitches: s }) =>
                         r
-                            .withEndpoint(s.Z)
+                            .withEndpoint(o.Z)
                             .deleteAll()
                             .then(() => e(d.deleteTimeline())),
                 m = n.CG.bind(null, i);
         },
         166506: (e, t, r) => {
             r.d(t, { du: () => l, f8: () => u, k9: () => c });
-            var s = r(503768),
-                o = r(750085),
+            var o = r(503768),
+                s = r(750085),
                 n = r(962741),
                 a = r(466015),
                 i = r(919022),
                 d = r(218951);
-            const c = () => (0, d.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(s.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: o.Z }),
+            const c = () => (0, d.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(o.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: s.Z }),
                 l = (e) => (t, r) => {
-                    const s = r();
+                    const o = r();
                     t(
                         e
-                            .selectEntries(s)
+                            .selectEntries(o)
                             .filter((e) => {
                                 const t = e.type === n.ZP.User ? e.content.id : "",
-                                    r = i.ZP.select(s, t);
+                                    r = i.ZP.select(o, t);
                                 return r && !r.muting;
                             })
                             .map((t) => e.removeEntry(t.entryId)),
@@ -980,16 +987,16 @@
                 u = (e, t, r) => {
                     if (!r.selectEntries(t).find((t) => t.type === n.ZP.User && t.content.id === e)) {
                         const t = (0, a.OD)(e),
-                            s = (0, a.$0)({ entryId: t, id: e, sortIndex: Date.now().toString() });
-                        return r.injectEntry(s);
+                            o = (0, a.$0)({ entryId: t, id: e, sortIndex: Date.now().toString() });
+                        return r.injectEntry(o);
                     }
                 };
         },
         127218: (e, t, r) => {
-            r.d(t, { C: () => g });
-            var s = r(202784),
-                o = r(614983),
-                n = r.n(o),
+            r.d(t, { C: () => v });
+            var o = r(202784),
+                s = r(614983),
+                n = r.n(s),
                 a = r(437429),
                 i = r.n(a),
                 d = r(57074),
@@ -1000,18 +1007,18 @@
                 h = r(71620),
                 p = r(163889),
                 f = r(312771),
-                v = r(535338);
-            function g(e, t, r) {
-                const [o, a] = s.useState(!1),
-                    [d, l] = s.useState(null),
-                    g = i()(),
-                    b = c()(t),
+                D = r(535338);
+            function v(e, t, r) {
+                const [s, a] = o.useState(!1),
+                    [d, l] = o.useState(null),
+                    v = i()(),
+                    g = c()(t),
                     y = (0, h.po)(),
-                    _ = (0, v.p)(e, b, r);
-                return s.useMemo(() => {
+                    b = (0, D.p)(e, g, r);
+                return o.useMemo(() => {
                     const t = (0, m.getRequest)(e).params?.metadata?.sliceInfoPath;
                     n()(!!t, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
-                    const { next_cursor: r, previous_cursor: s } =
+                    const { next_cursor: r, previous_cursor: o } =
                             (function (e, t) {
                                 try {
                                     n()("slice_info" === t[t.length - 1], "Invalid sliceInfoPath!");
@@ -1021,11 +1028,11 @@
                                 } catch (e) {
                                     return void (0, p.ZP)(e.message);
                                 }
-                            })(_, t) || {},
+                            })(b, t) || {},
                         i = (t) => {
-                            o ||
+                            s ||
                                 (a(!0),
-                                u()(g, e, { ...b, cursor: t }).subscribe({
+                                u()(v, e, { ...g, cursor: t }).subscribe({
                                     complete: () => {
                                         a(!1);
                                     },
@@ -1038,15 +1045,15 @@
                             r && i(r);
                         },
                         h = () => {
-                            s && i(s);
+                            o && i(o);
                         },
-                        v = () => {
+                        D = () => {
                             i(void 0);
                         };
-                    return d ? { subsequentFetchStatus: f.ZP.FAILED, error: d, fetchNext: c, fetchPrevious: h, refetch: v, data: _, hasNext: Boolean(r), hasPrevious: Boolean(s) } : { subsequentFetchStatus: o ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: h, refetch: v, data: _, hasNext: Boolean(r), hasPrevious: Boolean(s) };
-                }, [e, _, o, d, g, b, y]);
+                    return d ? { subsequentFetchStatus: f.ZP.FAILED, error: d, fetchNext: c, fetchPrevious: h, refetch: D, data: b, hasNext: Boolean(r), hasPrevious: Boolean(o) } : { subsequentFetchStatus: s ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: h, refetch: D, data: b, hasNext: Boolean(r), hasPrevious: Boolean(o) };
+                }, [e, b, s, d, v, g, y]);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.690c8cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.c9e8508a.js.map

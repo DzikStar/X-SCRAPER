@@ -2499,41 +2499,6 @@
                     return "Sujet " + e.topicName;
                 }),
                 n("ic6aa5f4", "Compte authentifié"),
-                n("c02e7e3c", "Chargement…"),
-                n("c5453f28", "Round of 64"),
-                n("eb256a86", "Round of 32"),
-                n("g77adc66", "Sweet Sixteen"),
-                n("a6d2520c", "Sweet 16"),
-                n("g5b63eb6", "Elite Eight"),
-                n("d8bf2890", "Elite 8"),
-                n("f9d3d6f2", "Final Four"),
-                n("bda24f7c", "Final 4"),
-                n("i5043440", "Championnat national"),
-                n("fcb16026", "Championnat"),
-                n("e9c89ee8", "Est"),
-                n("h259fd86", "Ouest"),
-                n("a7b2545a", "Sud"),
-                n("fdf7819a", "Midwest"),
-                n("i899e9b0", "Soumettre le bracket"),
-                n("c5b04394", "Afficher les choix"),
-                n("h836bbae", "Afficher le tournoi"),
-                n("e1059d6c", "Premier tour"),
-                n("b1602be4", "Deuxième tour"),
-                n("ef7bc2c0", "20-21 mars"),
-                n("h726aaf2", "22-23 mars"),
-                n("ee7cd198", "27-28 mars"),
-                n("fed91402", "29-30 mars"),
-                n("aba0a450", "5 avril"),
-                n("jdfba2dc", "7 avril"),
-                n("b7c6bc12", "À déterminer"),
-                n("c373612c", "Choix :"),
-                n("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                n("j5db9ddd", " bat "),
-                n("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 n("j4c40da4", "Envoyer"),
                 n("b23688c8", "Annuler le minuteur"),
                 n("cca5d499", function (e) {
@@ -2979,8 +2944,8 @@
                 n("a7de64de", "Informations sur les publicités"),
                 n("jb0a4c36", "Blog"),
                 n("ce6d095a", "Carrières"),
-                n("e0adec82", "Ressources de la marque");
-            n("df1b7550", "Marketing"),
+                n("e0adec82", "Ressources de la marque"),
+                n("df1b7550", "Marketing"),
                 n("he258678", "X pour les professionnels"),
                 n("c6f58084", "Développeurs"),
                 n("d83f18d2", "Répertoire"),
@@ -3014,8 +2979,8 @@
                 }),
                 n("d6d9aab6", "Ajouter un signet"),
                 n("bb89cf46", "Supprimer le signet"),
-                n("a739d4ba", "Ajouter au dossier de signets"),
-                n("d5270434", "Quitter"),
+                n("a739d4ba", "Ajouter au dossier de signets");
+            n("d5270434", "Quitter"),
                 n("ac85c6b2", "Une erreur s'est produite lors du chargement de l'image"),
                 n("b327c12a", "Image"),
                 n("ic76bdf0", "Recréer avec Grok"),
@@ -3891,8 +3856,8 @@
                 n("a2bf8b8a", "Passer en mode écoute"),
                 n("caa8d928", "Activer/désactiver la suppression du bruit"),
                 n("b5d88f0c", "Employés uniquement"),
-                n("c855ab8e", "Réservé aux Souscripteurs");
-            n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
+                n("c855ab8e", "Réservé aux Souscripteurs"),
+                n("ddeb0a3c", "Here’s the Community. Like the people? Take a look."),
                 n("e111f531", function (e) {
                     return e.count + " " + r(e.count, "a", "ont") + " écouté";
                 }),
@@ -3940,8 +3905,8 @@
                 n("f2333850", "Partager ailleurs que sur X"),
                 n("cddb8097", "En savoir plus"),
                 n("f77997b0", "Cohôte"),
-                n("i48f4ed8", "Intervenant"),
-                n("a77c8e02", "Auditeur"),
+                n("i48f4ed8", "Intervenant");
+            n("a77c8e02", "Auditeur"),
                 n("bdfa93eb", function (e) {
                     return "Partagé par " + e.name;
                 }),
@@ -4211,6 +4176,7 @@
                 n("f794af9a", "Mode Fun"),
                 n("eccf9fea", "Mode régulier"),
                 n("j22655f2", "Posez une question"),
+                n("c02e7e3c", "Chargement…"),
                 n("h0681e3e", "Parlez à Grok, notre assistant IA"),
                 n("d593fd78", "Il peut répondre à vos questions, faire des recherches sur X et générer des images."),
                 n("d0205a24", "Vérifiez les faits"),
@@ -4295,7 +4261,6 @@
                 n("afa2a58e", "Voir tous les posts"),
                 n("fc83e7e2", "Voir tous les utilisateurs"),
                 n("df601d92", "Utilisateurs pertinents"),
-                n("b001fa12", "Requête source"),
                 n("db6c20cf", function (e) {
                     return "Tout voir (" + e.count + ")";
                 }),
@@ -4378,7 +4343,7 @@
                 n("g3ce0132", "Réflexion d'une durée de"),
                 n("f8007364", "Développer pour voir les détails"),
                 n("ca53f780", "Réduire les détails"),
-                n("b52484b6", "Recherche en cours…"),
+                n("e6d51c62", "Searching"),
                 n("ib1c5475", function (e) {
                     return "Réflexion d'une durée de " + e.minutes + " m " + e.seconds + " s";
                 }),
@@ -4396,6 +4361,7 @@
                 n("a3186bff", function (e) {
                     return e.count + " page" + r(e.count, "", "s") + " Web";
                 }),
+                n("b52484b6", "Recherche en cours…"),
                 n("f4146dda", "Quelle réponse préférez‑vous ?"),
                 n("a2c2be32", "Cela permettra d'améliorer Grok."),
                 n("g01599b6", "Réponse 1"),
@@ -4933,8 +4899,8 @@
                 n("b649d8cc", "Abonné uniquement"),
                 n("j9282130", "Miniature de la diffusion"),
                 n("g629b8b0", "Expiré"),
-                n("eb87323c", "Cela montre des statistiques pour la période sélectionnée depuis la diffusion du flux en direct.");
-            n("i6a75722", "Période"),
+                n("eb87323c", "Cela montre des statistiques pour la période sélectionnée depuis la diffusion du flux en direct."),
+                n("i6a75722", "Période"),
                 n("c602f5b8", "Total"),
                 n("b35e68ae", "Nombre de participants"),
                 n("h78ee79a", "Nombre de rediffusions"),
@@ -4963,8 +4929,8 @@
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
                 n("if2909ba", "Temps de visionnage"),
                 n("i0e5bf4c", "Vos vidéos"),
-                n("ed99baea", "Accès anticipé à la version bêta"),
-                n("gf898b70", "Recherche avancée"),
+                n("ed99baea", "Accès anticipé à la version bêta");
+            n("gf898b70", "Recherche avancée"),
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
@@ -5885,8 +5851,8 @@
                 n("fb59415e", "Pour être affichée en tant que contexte public sur un post, une note doit avoir été évaluée comme utile par suffisamment de personnes ayant des points de vue divers. Cette approche permet d'éviter les partis pris et la manipulation, et de mettre en avant des notes utiles au plus grand nombre."),
                 n("f9a44022", "Ce n'est pas la société X qui choisit ce qui est affiché, mais les utilisateurs."),
                 n("gdf4fbb2", "La société X ne rédige pas de notes. Nous n'évaluons pas les notes existantes, ni ne les modérons (sauf si elles enfreignent les Règles de X). Nous pensons que permettre aux utilisateurs de faire ces choix ensemble est un moyen juste et efficace d'ajouter des informations qui contribuent à une meilleure information."),
-                n("cc720e6a", "La fonctionnalité Notes de la Communauté repose sur la transparence des données.");
-            n("j2fcd33a", "Les données incluent les contributions jusqu'au"),
+                n("cc720e6a", "La fonctionnalité Notes de la Communauté repose sur la transparence des données."),
+                n("j2fcd33a", "Les données incluent les contributions jusqu'au"),
                 n("d4a6b322", "Toutes les Notes de la Communauté sont publiées ici quotidiennement. Les utilisateurs y accèdent librement pour analyser les données, identifier les problèmes et repérer des opportunités d'amélioration. Nous sommes impatients de tirer des enseignements de vos contributions."),
                 n("c359263a", "Découvrez comment utiliser et analyser les données de la fonctionnalité Notes de la Communauté. "),
                 n("b8a27fe2", "dans notre guide"),
@@ -5919,8 +5885,8 @@
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Supprimer le dossier"),
-                n("f4ea967a", "Le dossier a été supprimé."),
+                n("h18f86a4", "Supprimer le dossier");
+            n("f4ea967a", "Le dossier a été supprimé."),
                 n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
                 n("e3299b94", "Une erreur s'est produite. Réessayez de mettre ce dossier à jour dans un moment."),
@@ -6891,8 +6857,8 @@
                 n("b36cd50e", "Indiquez l'équipe principale avec laquelle les candidats travailleront une fois recrutés."),
                 n("d3a427ce", "Sélectionnez le niveau d'expérience requis."),
                 n("i7174442", "Description du poste"),
-                n("fef0cf02", "Fournissez une description de poste détaillée. Décrivez les principales responsabilités et qualifications pour donner aux candidats une bonne vue d'ensemble de la fonction.");
-            n("b7800bec", "Présentez brièvement le poste en 200 caractères maximum. Cette description est affichée dans les posts, les recommandations et les résultats de recherche."),
+                n("fef0cf02", "Fournissez une description de poste détaillée. Décrivez les principales responsabilités et qualifications pour donner aux candidats une bonne vue d'ensemble de la fonction."),
+                n("b7800bec", "Présentez brièvement le poste en 200 caractères maximum. Cette description est affichée dans les posts, les recommandations et les résultats de recherche."),
                 n("a5244ece", "URL de candidature (requise)"),
                 n("g2b553f6", "Entrez l'URL publique sur laquelle les candidats peuvent postuler à cette offre d'emploi. "),
                 n("c2e77608", "Intitulé du poste (requis)"),
@@ -6925,8 +6891,8 @@
                 n("c924ad84", "Poursuivez la lecture des vidéos"),
                 n("de750a3c", "Profitez‑en même lorsque votre téléphone est verrouillé"),
                 n("he5e87c4", "Boostez vos réponses"),
-                n("g64a60ba", "Profitez d'une légère priorisation lorsque vous répondez à des posts"),
-                n("a7ee832a", "Profitez de la possibilité de corriger les coquilles et les erreurs pendant 60 minutes"),
+                n("g64a60ba", "Profitez d'une légère priorisation lorsque vous répondez à des posts");
+            n("a7ee832a", "Profitez de la possibilité de corriger les coquilles et les erreurs pendant 60 minutes"),
                 n("fdd77a34", "Rédigez des posts plus longs"),
                 n("j6d26a7a", "Écrivez autant que ce que vous voulez partagez"),
                 n("c4fd68da", "Personnalisez votre expérience"),
@@ -7867,7 +7833,45 @@
                 n("cfcac293", function (e) {
                     return "Offrir et payer " + e.price;
                 }),
-                n("d7a73450", "Abonnement");
+                n("d7a73450", "Abonnement"),
+                n("hbd2c24e", "Ce compte n'est pas éligible aux cadeaux pour le moment."),
+                n("f3fddc98", "Conditions d'utilisation des Services payants"),
+                n("cff9c889", "En savoir plus"),
+                n("c65dda96", "Votre cadeau a été envoyé."),
+                n("f6e2a407", function (e) {
+                    return "Permettez à tout le monde de voir votre badge Souscripteur lorsque vous répondez aux posts de @" + e.screenName + ".";
+                }),
+                n("j8dedddd", function (e) {
+                    return "Si vous désactivez cette fonction, @" + e.screenName + " et ses Souscripteurs verront toujours votre badge lorsque vous répondez aux posts réservés aux Souscripteurs de @" + e.screenName + ". @" + e.screenName + " verra votre badge quoi qu'il en soit.";
+                }),
+                n("c8a513f6", "Annuler la Souscription"),
+                n("ea000ec8", "Vous avez déjà annulé votre Souscription ?"),
+                n("d7b8387e", "Si vous avez déjà annulé, vous n'avez rien d'autre à faire. Votre Souscription expirera automatiquement à la fin du cycle de facturation."),
+                n("f4166d9a", "Vous voulez annuler votre Souscription ?"),
+                n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation."),
+                n("ee9efbc8", "Continuer pour annuler"),
+                n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
+                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
+                n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
+                n("i5f14be7", function (e) {
+                    return "Heureux de vous retrouver, " + e.displayName;
+                }),
+                n("a76d58ba", "Statistiques des publicités"),
+                n("eccd0e1a", "Statistiques de l'organisation "),
+                n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
+                n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées."),
+                n("gf67aae4", "Passez à l'Accès complet"),
+                n("h75e3618", "Inclure l'organisation"),
+                n("h24a8862", "À propos de cette case à cocher"),
+                n("c29e3a88", "Sélectionner des affiliés"),
+                n("j8318d57", function (e) {
+                    return e.number + " affilié" + r(e.number, "", "s");
+                }),
+                n("bf809ec0", "Sélectionner des affiliés"),
+                n("b719e224", "Aucun résultat"),
+                n("c9938100", "Résultats de recherche"),
+                n("d1a35ec6", "Ajouter des comptes"),
+                n("b437adda", "Mettre à niveau vers la version payante");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7906,47 +7910,9 @@
                     i(e, t)
                 );
             }
-            n("hbd2c24e", "Ce compte n'est pas éligible aux cadeaux pour le moment."),
-                n("f3fddc98", "Conditions d'utilisation des Services payants"),
-                n("cff9c889", "En savoir plus"),
-                n("c65dda96", "Votre cadeau a été envoyé."),
-                n("f6e2a407", function (e) {
-                    return "Permettez à tout le monde de voir votre badge Souscripteur lorsque vous répondez aux posts de @" + e.screenName + ".";
-                }),
-                n("j8dedddd", function (e) {
-                    return "Si vous désactivez cette fonction, @" + e.screenName + " et ses Souscripteurs verront toujours votre badge lorsque vous répondez aux posts réservés aux Souscripteurs de @" + e.screenName + ". @" + e.screenName + " verra votre badge quoi qu'il en soit.";
-                }),
-                n("c8a513f6", "Annuler la Souscription"),
-                n("ea000ec8", "Vous avez déjà annulé votre Souscription ?"),
-                n("d7b8387e", "Si vous avez déjà annulé, vous n'avez rien d'autre à faire. Votre Souscription expirera automatiquement à la fin du cycle de facturation."),
-                n("f4166d9a", "Vous voulez annuler votre Souscription ?"),
-                n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation."),
-                n("ee9efbc8", "Continuer pour annuler"),
-                n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
-                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
-                n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
-                n("i5f14be7", function (e) {
-                    return "Heureux de vous retrouver, " + e.displayName;
-                }),
-                n("a76d58ba", "Statistiques des publicités"),
-                n("eccd0e1a", "Statistiques de l'organisation "),
-                n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
-                n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées."),
-                n("gf67aae4", "Passez à l'Accès complet"),
-                n("h75e3618", "Inclure l'organisation"),
-                n("h24a8862", "À propos de cette case à cocher"),
-                n("c29e3a88", "Sélectionner des affiliés"),
-                n("j8318d57", function (e) {
-                    return e.number + " affilié" + r(e.number, "", "s");
-                }),
-                n("bf809ec0", "Sélectionner des affiliés"),
-                n("b719e224", "Aucun résultat"),
-                n("c9938100", "Résultats de recherche"),
-                n("d1a35ec6", "Ajouter des comptes"),
-                n("b437adda", "Mettre à niveau vers la version payante"),
-                n("f1f6c88b", function (e) {
-                    return "Comptes (" + e.count + ")";
-                }),
+            n("f1f6c88b", function (e) {
+                return "Comptes (" + e.count + ")";
+            }),
                 n("b02156b8", "Invitations"),
                 n("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
@@ -8899,8 +8865,8 @@
                 n("b3160a69", function (e) {
                     return e.volumePercent + " %";
                 }),
-                n("fb236728", "Pause");
-            n("e9bd453e", "Relire"),
+                n("fb236728", "Pause"),
+                n("e9bd453e", "Relire"),
                 n("d46b00b0", "Aller au direct"),
                 n("ec8ab8b4", "Masquer"),
                 n("b8b6344a", "Réafficher"),
@@ -8947,8 +8913,8 @@
                 n("a7bf9962", "Télécharger la vidéo"),
                 n("ccc97152", "Vitesse de lecture"),
                 n("h531ade0", "Qualité de la vidéo"),
-                n("e8b5757c", "x 0,25"),
-                n("e7e954de", "x0,5"),
+                n("e8b5757c", "x 0,25");
+            n("e7e954de", "x0,5"),
                 n("g07ffe66", "x 0,75"),
                 n("d8bede9e", "x 1"),
                 n("j41845c8", "x 1,25"),
@@ -10496,12 +10462,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["En cliquant sur Sponsoriser le post, vous acceptez les "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13377,4 +13337,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.1429df9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.19fcc8aa.js.map

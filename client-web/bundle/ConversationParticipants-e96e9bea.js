@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: n, hideBackButton: a, isFullWidth: s, isLarge: l, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: v, title: k, titleDomId: y, titleIconCell: g, titleIconCellSize: D, withBackground: C, withWideContainer: _ } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: n, hideBackButton: a, isFullWidth: s, isLarge: l, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: D, title: v, titleDomId: k, titleIconCell: y, titleIconCellSize: g, withBackground: C, withWideContainer: _ } = this.props,
                         { isModal: P } = this.context,
-                        S = a ? c : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        T = (function (e, t, o) {
+                        M = a ? c : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        I = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!C, P, !!f);
-                    return r.createElement(r.Fragment, null, r.createElement(d.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: l, leftControl: S, middleControl: h, position: u(p, P, n), rightControl: m, style: b, subtitle: v, title: k, titleDomId: y, titleIconCell: g, titleIconCellSize: D, withBackground: T, withWideContainer: _ }), f || null);
+                    return r.createElement(r.Fragment, null, r.createElement(d.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: l, leftControl: M, middleControl: h, position: u(p, P, n), rightControl: m, style: b, subtitle: D, title: v, titleDomId: k, titleIconCell: y, titleIconCellSize: g, withBackground: I, withWideContainer: _ }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -64,7 +64,7 @@
                 m = n.forwardRef(h);
         },
         333241: (e, t, o) => {
-            o.d(t, { Z: () => D });
+            o.d(t, { Z: () => g });
             o(136728);
             var r = o(202784),
                 n = o(638236),
@@ -80,14 +80,14 @@
             const m = "block",
                 f = "mute",
                 b = "removeFollower",
-                v = "report",
-                k = "share",
-                y = i().j7bb1a43,
-                g = i().hef5960c,
-                D = (0, p.M)((e) => {
-                    const { onBlock: t, onClose: o, onMute: s, onRemoveFollower: i, onReportUser: p, onShare: D, onUnblock: C, onUnmute: _, user: P } = e,
-                        S = [],
-                        T = (t, o) => {
+                D = "report",
+                v = "share",
+                k = i().j7bb1a43,
+                y = i().hef5960c,
+                g = (0, p.M)((e) => {
+                    const { onBlock: t, onClose: o, onMute: s, onRemoveFollower: i, onReportUser: p, onShare: g, onUnblock: C, onUnmute: _, user: P } = e,
+                        M = [],
+                        I = (t, o) => {
                             const { confirm: r, onClose: n } = e;
                             if (t) {
                                 const { label: e, ...a } = t;
@@ -100,16 +100,16 @@
                         !P.protected &&
                         !P.blocking &&
                         !P.blocked_by &&
-                        S.push({
+                        M.push({
                             Icon: n.Z,
                             onClick: () => {
-                                o(), D();
+                                o(), g();
                             },
-                            testID: k,
-                            text: g,
+                            testID: v,
+                            text: y,
                         });
                     !P.blocking &&
-                        S.push({
+                        M.push({
                             ...(0, u.N1)(
                                 P,
                                 () => {
@@ -122,26 +122,26 @@
                             testID: f,
                         });
                     P.followed_by &&
-                        S.push({
+                        M.push({
                             ...(0, h.l)({
                                 removeFollowerAction: (e) => {
-                                    T(e, i);
+                                    I(e, i);
                                 },
                                 user: P,
                             }),
                             testID: b,
                         }),
-                        S.push((0, c.op)({ blockAction: (e) => T(e, t), source: c.SC.FOLLOWERS_LIST, testID: m, unblockAction: (e) => T(e, C), user: P })),
-                        S.push({
+                        M.push((0, c.op)({ blockAction: (e) => I(e, t), source: c.SC.FOLLOWERS_LIST, testID: m, unblockAction: (e) => I(e, C), user: P })),
+                        M.push({
                             Icon: d.default,
                             onClick: () => {
                                 o(), p();
                             },
-                            testID: v,
-                            text: y({ screenName: P.screen_name }),
+                            testID: D,
+                            text: k({ screenName: P.screen_name }),
                         });
-                    const I = S.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
-                    return r.createElement(a.Z, { items: I, onCloseRequested: o });
+                    const w = M.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(a.Z, { items: w, onCloseRequested: o });
                 });
         },
         980407: (e, t, o) => {
@@ -160,9 +160,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: s, hideBackButton: i, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: f, rightControl: b, secondaryBar: v, subtitle: k, title: y } = this.props,
-                                { isModal: g } = this.context;
-                            return r.createElement(n.Z, { style: g ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(c.ZP, { backButtonType: o || (g ? "close" : "back"), backLocation: a, centerTitle: s, fixed: !g, hideBackButton: i, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: f, ref: e, rightControl: b, secondaryBar: v, style: [g && m.appBarModal, t], subtitle: k, title: y, titleDomId: l.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: s, hideBackButton: i, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: f, rightControl: b, secondaryBar: D, subtitle: v, title: k } = this.props,
+                                { isModal: y } = this.context;
+                            return r.createElement(n.Z, { style: y ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(c.ZP, { backButtonType: o || (y ? "close" : "back"), backLocation: a, centerTitle: s, fixed: !y, hideBackButton: i, history: d, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: f, ref: e, rightControl: b, secondaryBar: D, style: [y && m.appBarModal, t], subtitle: v, title: k, titleDomId: l.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -172,9 +172,9 @@
                 }
                 render() {
                     const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: s, documentTitle: i, isFullWidth: l, isLarge: c, renderHeader: p, title: f, withoutBottomBarMobile: b } = this.props,
-                        { isModal: v } = this.context,
-                        k = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(d.Z, null, r.createElement(u.Z.Configure, { documentTitle: i, headerless: !0, title: f }), r.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, v && m.rootModal] }, !v && k, r.createElement(a.Z, { isFullWidth: l, isLarge: c, style: [m.container, v && m.containerModal, s] }, v ? r.createElement(h.Z, { style: m.viewport }, k, o) : o), t ? r.createElement(n.Z, { style: [m.bottomBarModal, !v && !b && m.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: l, isLarge: c }, t)) : null));
+                        { isModal: D } = this.context,
+                        v = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return r.createElement(d.Z, null, r.createElement(u.Z.Configure, { documentTitle: i, headerless: !0, title: f }), r.createElement(n.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, D && m.rootModal] }, !D && v, r.createElement(a.Z, { isFullWidth: l, isLarge: c, style: [m.container, D && m.containerModal, s] }, D ? r.createElement(h.Z, { style: m.viewport }, v, o) : o), t ? r.createElement(n.Z, { style: [m.bottomBarModal, !D && !b && m.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: l, isLarge: c }, t)) : null));
                 }
             }
             (p.defaultProps = { isFullWidth: !1, isLarge: !1 }), (p.contextType = s.Z);
@@ -207,17 +207,17 @@
                     .propsFromState(() => ({ shouldPromptPush: f }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: m.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                v = s().bdba3e1a,
-                k = s().c4da7d28,
-                y = s().j87c21f4,
-                g = s().iebc30ca,
-                D = s().dc740eb2;
+                D = s().bdba3e1a,
+                v = s().c4da7d28,
+                k = s().j87c21f4,
+                y = s().iebc30ca,
+                g = s().dc740eb2;
             class C extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? r.createElement(n.ZP, { "aria-label": k, hoverLabel: { label: g }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": v, hoverLabel: { label: y }, icon: r.createElement(d.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? r.createElement(n.ZP, { "aria-label": v, hoverLabel: { label: y }, icon: r.createElement(i.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": D, hoverLabel: { label: k }, icon: r.createElement(d.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -235,7 +235,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(l.Z, { fullScreen: !0, message: D }) : null, this._renderButton());
+                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(l.Z, { fullScreen: !0, message: g }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: t, updateDeviceFollowing: o, userId: r } = this.props;
@@ -289,7 +289,7 @@
             const c = (0, n.ZP)(d(l));
         },
         62857: (e, t, o) => {
-            o.d(t, { Z: () => I });
+            o.d(t, { Z: () => w });
             var r = o(807896),
                 n = o(202784),
                 a = o(476984),
@@ -309,29 +309,29 @@
                     o.map((o, r) => (t ? t(o) : n.createElement(h.ZP, { decoration: h.ET, displayMode: e, isFakeButtonRoleWithListItem: !0, key: o, promotedItemType: p.bj.USER, userId: o, withFollowsYou: !0 }))),
                 );
             var b = o(312771),
-                v = o(71620),
-                k = o(973572),
-                y = o(668214),
-                g = o(919022);
-            const D = (e, t) => t.userIds,
+                D = o(71620),
+                v = o(973572),
+                k = o(668214),
+                y = o(919022);
+            const g = (e, t) => t.userIds,
                 C = (e, t) => {
                     const { filterPredicate: o = (e) => !!e, userIds: r } = t;
                     return r.filter((t) => {
-                        const r = g.ZP.select(e, t);
+                        const r = y.ZP.select(e, t);
                         return !!r && o(r);
                     });
                 },
                 _ = (e, t) => {
                     const { userIds: o } = t;
                     return o.reduce((t, o) => {
-                        const r = g.ZP.selectFetchStatus(e, o);
+                        const r = y.ZP.selectFetchStatus(e, o);
                         return r && (t[o] = r === b.ZP.NONE ? b.ZP.LOADING : r), t;
                     }, {});
                 },
-                P = (0, y.Z)()
+                P = (0, k.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, k.Z)(C, (e) => e),
-                        fetchStatus: (0, k.Z)(C, _, D, (e, t, o) => {
+                        availableUserIds: (0, v.Z)(C, (e) => e),
+                        fetchStatus: (0, v.Z)(C, _, g, (e, t, o) => {
                             let r = b.ZP.LOADED;
                             for (let n = 0; n < o.length; n++) {
                                 const a = o[n];
@@ -344,9 +344,9 @@
                             return r;
                         }),
                     }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, v.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: g.ZP.fetchManyIfNeeded })),
-                S = d().f5b426c2;
-            class T extends n.Component {
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, D.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: y.ZP.fetchManyIfNeeded })),
+                M = d().f5b426c2;
+            class I extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -365,7 +365,7 @@
                     s()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return n.createElement(c.Z, { "aria-label": S, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return n.createElement(c.Z, { "aria-label": M, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: o, userIds: r } = this.props;
@@ -388,7 +388,7 @@
                     );
                 }
             }
-            const I = P(T);
+            const w = P(I);
         },
         684511: (e, t, o) => {
             o.d(t, { Z: () => r });
@@ -403,11 +403,18 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -422,7 +429,7 @@
             });
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => C, KV: () => b, LI: () => I, SC: () => D, Vt: () => y, ed: () => w, op: () => _ });
+            o.d(t, { $f: () => C, KV: () => b, LI: () => w, SC: () => g, Vt: () => k, ed: () => S, op: () => _ });
             var r = o(202784),
                 n = o(190286),
                 a = o(111677),
@@ -437,42 +444,42 @@
                 m = s().a6450e84,
                 f = s().ad00a739,
                 b = s().a9fd20be,
-                v = s().j546fb79,
-                k = s().c9623eeb,
-                y = s().e133be4e,
-                g = s().f5f01af6,
-                D = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                D = s().j546fb79,
+                v = s().c9623eeb,
+                k = s().e133be4e,
+                y = s().f5f01af6,
+                g = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 C = (e) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: f({ screenName: e }) }),
                 _ = ({ blockAction: e, blockSubtext: t, source: o, testID: r, unblockAction: n, unblockSubtext: a, user: s }) => {
                     let i,
                         d = l.Z;
-                    const u = I(s);
+                    const u = w(s);
                     switch (o) {
-                        case D.PROFILE:
-                        case D.LIST_DETAIL:
-                        case D.FOLLOWERS_LIST:
+                        case g.PROFILE:
+                        case g.LIST_DETAIL:
+                        case g.FOLLOWERS_LIST:
                             d = () => {
                                 s.blocking ? n(u) : e(u);
                             };
                             break;
-                        case D.TWEET:
-                        case D.TWEET_CARET:
-                        case D.RICH_FEEDBACK:
+                        case g.TWEET:
+                        case g.TWEET_CARET:
+                        case g.RICH_FEEDBACK:
                             (i = c.uq.block),
                                 (d = () => {
                                     s.blocking ? n(u) : e(u);
                                 });
                     }
-                    return { confirmation: u, onClick: d, testID: r, shortcutKey: i, Icon: P(s.blocking), text: T(s), subText: S({ user: s, blockSubtext: t, unblockSubtext: a }) };
+                    return { confirmation: u, onClick: d, testID: r, shortcutKey: i, Icon: P(s.blocking), text: I(s), subText: M({ user: s, blockSubtext: t, unblockSubtext: a }) };
                 },
                 P = (e) => (e ? d.default : i.default),
-                S = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                T = (e) => (e.blocking ? k({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                I = (e) => {
-                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: v({ screenName: t }), label: y, text: g }) : C(e.screen_name);
+                M = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                I = (e) => (e.blocking ? v({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
+                w = (e) => {
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: D({ screenName: t }), label: k, text: y }) : C(e.screen_name);
                     var t;
                 },
-                w = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
+                S = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: a, headline: s, label: i, text: d } = e;
                     return r.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: a, headline: s, onCancel: o, onConfirm: t, text: d });
                 };
@@ -494,7 +501,7 @@
             };
         },
         847607: (e, t, o) => {
-            o.d(t, { Aq: () => u, FK: () => k, GS: () => i, N1: () => p, PY: () => h, X6: () => y, cm: () => d });
+            o.d(t, { Aq: () => u, FK: () => v, GS: () => i, N1: () => p, PY: () => h, X6: () => k, cm: () => d });
             o(202784);
             var r = o(111677),
                 n = o.n(r),
@@ -513,9 +520,9 @@
                 m = n().h59f52ee,
                 f = n().eea0cbee,
                 b = n().i29533b3,
-                v = n().h129c3c3,
-                k = (e) => (e ? ((e) => b({ screenName: e }))(e) : m),
-                y = (e) => (e ? ((e) => v({ screenName: e }))(e) : f);
+                D = n().h129c3c3,
+                v = (e) => (e ? ((e) => b({ screenName: e }))(e) : m),
+                k = (e) => (e ? ((e) => D({ screenName: e }))(e) : f);
         },
         417714: (e, t, o) => {
             o.d(t, { l: () => c });
@@ -658,7 +665,7 @@
             };
         },
         694180: (e, t, o) => {
-            o.d(t, { cM: () => b, dS: () => f, iY: () => v });
+            o.d(t, { cM: () => b, dS: () => f, iY: () => D });
             var r = o(370751),
                 n = o(399896),
                 a = o(663550),
@@ -689,12 +696,12 @@
                             f = `${o}-${t ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
                         if (u.has(c) && m(s(), f)) return Promise.resolve();
                         const b = e && "earned" === e.toLowerCase() ? "1" : null,
-                            v = { ...r, earned: b, epoch_ms: Date.now() };
-                        return (0, i._O)(a, { params: v, request: d.withEndpoint(n.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: v }, (e, t) => {
+                            D = { ...r, earned: b, epoch_ms: Date.now() };
+                        return (0, i._O)(a, { params: D, request: d.withEndpoint(n.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: D }, (e, t) => {
                             if (!t && u.has(c)) return [p(f)];
                         });
                     },
-                v =
+                D =
                     (e) =>
                     (t, o, { api: r }) =>
                         (0, i._O)(t, { params: e, request: r.withEndpoint(n.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -774,7 +781,7 @@
                 };
         },
         747644: (e, t, o) => {
-            o.r(t), o.d(t, { ConversationParticipantsScreen: () => T, default: () => I });
+            o.r(t), o.d(t, { ConversationParticipantsScreen: () => I, default: () => w });
             var r = o(202784),
                 n = o(111677),
                 a = o.n(n),
@@ -789,30 +796,30 @@
                 m = o(450681),
                 f = o(166852),
                 b = o(71620),
-                v = o(668214),
-                k = o(836255);
-            const y = (e, t) => t.match.params.screenName,
-                g = (e, t) => t.match.params.statusId,
-                D = (e, t) => k.Z.selectHydrated(e, t.match.params.statusId),
-                C = (e, t) => k.Z.selectFetchStatus(e, t.match.params.statusId),
-                _ = (0, v.Z)()
+                D = o(668214),
+                v = o(836255);
+            const k = (e, t) => t.match.params.screenName,
+                y = (e, t) => t.match.params.statusId,
+                g = (e, t) => v.Z.selectHydrated(e, t.match.params.statusId),
+                C = (e, t) => v.Z.selectFetchStatus(e, t.match.params.statusId),
+                _ = (0, D.Z)()
                     .propsFromState(() => ({
                         fetchStatus: C,
-                        screenName: y,
-                        statusId: g,
-                        participantIds: (0, p.P1)(D, (e) => {
+                        screenName: k,
+                        statusId: y,
+                        participantIds: (0, p.P1)(g, (e) => {
                             if (!e) return [];
                             const { user_mentions: t = [] } = e.entities || {},
                                 o = [{ id_str: e.in_reply_to_user_id_str }, ...t.filter((t) => t.indices[0] < e.display_text_range[0])];
                             return (0, m.Z)((0, f.Z)(o.map((e) => e.id_str)));
                         }),
-                        unmentionedUserIds: (0, p.P1)(D, (e) => e?.unmentioned_user_ids ?? []),
+                        unmentionedUserIds: (0, p.P1)(g, (e) => e?.unmentioned_user_ids ?? []),
                     }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("CONVERSATION_PARTICIPANTS_SCREEN"), fetchTweetIfNeeded: k.Z.fetchOneIfNeeded }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("CONVERSATION_PARTICIPANTS_SCREEN"), fetchTweetIfNeeded: v.Z.fetchOneIfNeeded }))
                     .withAnalytics({ page: "conversation_participants" }),
                 P = a().cdd4aafe,
-                S = a().aac3fad2;
-            class T extends r.Component {
+                M = a().aac3fad2;
+            class I extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderUserCell = (e) => {
@@ -831,70 +838,38 @@
                 }
                 render() {
                     const { fetchStatus: e, history: t, screenName: o, statusId: n } = this.props;
-                    return r.createElement(i.Z, { backLocation: `/${o.toLowerCase()}/status/${n}`, history: t, title: S }, r.createElement(s.Z, { "aria-label": P, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._renderList }));
+                    return r.createElement(i.Z, { backLocation: `/${o.toLowerCase()}/status/${n}`, history: t, title: M }, r.createElement(s.Z, { "aria-label": P, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._renderList }));
                 }
             }
-            const I = _(T);
+            const w = _(I);
         },
-        452661: (e, t, o) => {
-            o.d(t, { Z: () => f });
+        151624: (e, t, o) => {
+            o.d(t, { Z: () => r });
+            const r = o(454479).Z;
+        },
+        454479: (e, t, o) => {
+            o.d(t, { Z: () => m });
             var r = o(18198),
-                n = {
-                    centroidDimension: function (e, t, o, r) {
-                        var a = e.touchBank,
-                            s = 0,
-                            i = 0,
-                            d = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
-                        if (null !== d) d.touchActive && d.currentTimeStamp > t && ((s += r && o ? d.currentPageX : r && !o ? d.currentPageY : !r && o ? d.previousPageX : d.previousPageY), (i = 1));
-                        else
-                            for (var l = 0; l < a.length; l++) {
-                                var c = a[l];
-                                if (null != c && c.touchActive && c.currentTimeStamp >= t) {
-                                    (s += r && o ? c.currentPageX : r && !o ? c.currentPageY : !r && o ? c.previousPageX : c.previousPageY), i++;
-                                }
-                            }
-                        return i > 0 ? s / i : n.noCentroid;
-                    },
-                    currentCentroidXOfTouchesChangedAfter: function (e, t) {
-                        return n.centroidDimension(e, t, !0, !0);
-                    },
-                    currentCentroidYOfTouchesChangedAfter: function (e, t) {
-                        return n.centroidDimension(e, t, !1, !0);
-                    },
-                    previousCentroidXOfTouchesChangedAfter: function (e, t) {
-                        return n.centroidDimension(e, t, !0, !1);
-                    },
-                    previousCentroidYOfTouchesChangedAfter: function (e, t) {
-                        return n.centroidDimension(e, t, !1, !1);
-                    },
-                    currentCentroidX: function (e) {
-                        return n.centroidDimension(e, 0, !0, !0);
-                    },
-                    currentCentroidY: function (e) {
-                        return n.centroidDimension(e, 0, !1, !0);
-                    },
-                    noCentroid: -1,
-                };
-            const a = n;
-            var s = a.currentCentroidXOfTouchesChangedAfter,
-                i = a.currentCentroidYOfTouchesChangedAfter,
-                d = a.previousCentroidXOfTouchesChangedAfter,
-                l = a.previousCentroidYOfTouchesChangedAfter,
-                c = a.currentCentroidX,
-                u = a.currentCentroidY,
-                h = {
+                n = o(661841),
+                a = n.Z.currentCentroidXOfTouchesChangedAfter,
+                s = n.Z.currentCentroidYOfTouchesChangedAfter,
+                i = n.Z.previousCentroidXOfTouchesChangedAfter,
+                d = n.Z.previousCentroidYOfTouchesChangedAfter,
+                l = n.Z.currentCentroidX,
+                c = n.Z.currentCentroidY,
+                u = {
                     _initializeGestureState(e) {
                         (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
                     },
                     _updateGestureStateOnMove(e, t) {
-                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = s(t, e._accountsForMovesUpTo)), (e.moveY = i(t, e._accountsForMovesUpTo));
+                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = a(t, e._accountsForMovesUpTo)), (e.moveY = s(t, e._accountsForMovesUpTo));
                         var o = e._accountsForMovesUpTo,
-                            r = d(t, o),
-                            n = s(t, o),
-                            a = l(t, o),
-                            c = i(t, o),
+                            r = i(t, o),
+                            n = a(t, o),
+                            l = d(t, o),
+                            c = s(t, o),
                             u = e.dx + (n - r),
-                            h = e.dy + (c - a),
+                            h = e.dy + (c - l),
                             p = t.mostRecentTimeStamp - e._accountsForMovesUpTo;
                         (e.vx = (u - e.dx) / p), (e.vy = (h - e.dy) / p), (e.dx = u), (e.dy = h), (e._accountsForMovesUpTo = t.mostRecentTimeStamp);
                     },
@@ -905,10 +880,10 @@
                             panHandlers: {
                                 onStartShouldSetResponder: (t) => null != e.onStartShouldSetPanResponder && e.onStartShouldSetPanResponder(t, o),
                                 onMoveShouldSetResponder: (t) => null != e.onMoveShouldSetPanResponder && e.onMoveShouldSetPanResponder(t, o),
-                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && h._initializeGestureState(o), (o.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, o)),
+                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && u._initializeGestureState(o), (o.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, o)),
                                 onMoveShouldSetResponderCapture(t) {
                                     var r = t.touchHistory;
-                                    return o._accountsForMovesUpTo !== r.mostRecentTimeStamp && (h._updateGestureStateOnMove(o, r), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, o));
+                                    return o._accountsForMovesUpTo !== r.mostRecentTimeStamp && (u._updateGestureStateOnMove(o, r), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, o));
                                 },
                                 onResponderGrant: (n) => (
                                     t.handle || (t.handle = r.Z.createInteractionHandle()),
@@ -917,18 +892,18 @@
                                             clearTimeout(e.timeout);
                                         })(t),
                                     (t.shouldCancelClick = !0),
-                                    (o.x0 = c(n.touchHistory)),
-                                    (o.y0 = u(n.touchHistory)),
+                                    (o.x0 = l(n.touchHistory)),
+                                    (o.y0 = c(n.touchHistory)),
                                     (o.dx = 0),
                                     (o.dy = 0),
                                     e.onPanResponderGrant && e.onPanResponderGrant(n, o),
                                     null == e.onShouldBlockNativeResponder || e.onShouldBlockNativeResponder(n, o)
                                 ),
                                 onResponderReject(r) {
-                                    p(t, e.onPanResponderReject, r, o);
+                                    h(t, e.onPanResponderReject, r, o);
                                 },
                                 onResponderRelease(r) {
-                                    p(t, e.onPanResponderRelease, r, o), m(t), h._initializeGestureState(o);
+                                    h(t, e.onPanResponderRelease, r, o), p(t), u._initializeGestureState(o);
                                 },
                                 onResponderStart(t) {
                                     var r = t.touchHistory;
@@ -936,14 +911,14 @@
                                 },
                                 onResponderMove(t) {
                                     var r = t.touchHistory;
-                                    o._accountsForMovesUpTo !== r.mostRecentTimeStamp && (h._updateGestureStateOnMove(o, r), e.onPanResponderMove && e.onPanResponderMove(t, o));
+                                    o._accountsForMovesUpTo !== r.mostRecentTimeStamp && (u._updateGestureStateOnMove(o, r), e.onPanResponderMove && e.onPanResponderMove(t, o));
                                 },
                                 onResponderEnd(r) {
                                     var n = r.touchHistory;
-                                    (o.numberActiveTouches = n.numberActiveTouches), p(t, e.onPanResponderEnd, r, o);
+                                    (o.numberActiveTouches = n.numberActiveTouches), h(t, e.onPanResponderEnd, r, o);
                                 },
                                 onResponderTerminate(r) {
-                                    p(t, e.onPanResponderTerminate, r, o), m(t), h._initializeGestureState(o);
+                                    h(t, e.onPanResponderTerminate, r, o), p(t), u._initializeGestureState(o);
                                 },
                                 onResponderTerminationRequest: (t) => null == e.onPanResponderTerminationRequest || e.onPanResponderTerminationRequest(t, o),
                                 onClickCapture: (e) => {
@@ -954,16 +929,56 @@
                         };
                     },
                 };
-            function p(e, t, o, n) {
+            function h(e, t, o, n) {
                 e.handle && (r.Z.clearInteractionHandle(e.handle), (e.handle = null)), t && t(o, n);
             }
-            function m(e) {
+            function p(e) {
                 e.timeout = setTimeout(() => {
                     e.shouldCancelClick = !1;
                 }, 250);
             }
-            const f = h;
+            const m = u;
+        },
+        661841: (e, t, o) => {
+            o.d(t, { Z: () => n });
+            var r = {
+                centroidDimension: function (e, t, o, n) {
+                    var a = e.touchBank,
+                        s = 0,
+                        i = 0,
+                        d = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                    if (null !== d) d.touchActive && d.currentTimeStamp > t && ((s += n && o ? d.currentPageX : n && !o ? d.currentPageY : !n && o ? d.previousPageX : d.previousPageY), (i = 1));
+                    else
+                        for (var l = 0; l < a.length; l++) {
+                            var c = a[l];
+                            if (null != c && c.touchActive && c.currentTimeStamp >= t) {
+                                (s += n && o ? c.currentPageX : n && !o ? c.currentPageY : !n && o ? c.previousPageX : c.previousPageY), i++;
+                            }
+                        }
+                    return i > 0 ? s / i : r.noCentroid;
+                },
+                currentCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !0);
+                },
+                currentCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !0);
+                },
+                previousCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !1);
+                },
+                previousCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !1);
+                },
+                currentCentroidX: function (e) {
+                    return r.centroidDimension(e, 0, !0, !0);
+                },
+                currentCentroidY: function (e) {
+                    return r.centroidDimension(e, 0, !1, !0);
+                },
+                noCentroid: -1,
+            };
+            const n = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationParticipants-e96e9bea.898c1eba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationParticipants-e96e9bea.a973206a.js.map

@@ -1,335 +1,402 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.WideLayout-6107ac1a", "ondemand.Dropdown", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["loader.WideLayout-6107ac1a"],
     {
-        797553: (e, t, i) => {
+        669506: (e, l, n) => {
             "use strict";
-            i.r(t), i.d(t, { default: () => Z });
-            var n = i(807896),
-                r = i(202784),
-                o = i(878052),
-                a = i(325686),
-                s = i(666536),
-                l = i(815858),
-                c = i(67877),
-                d = i(743618),
-                h = i(745153),
-                u = i(666305),
-                p = i(667115),
-                m = i(175993),
-                v = i(365023),
-                g = i(292627),
-                f = i(224162),
-                b = i(386802),
-                w = i(537392),
-                y = i(392237);
-            const _ = y.default.create((e) => ({ rootNarrow: { maxWidth: "75%" }, rootWide: { maxWidth: `calc(${e.spaces.space64} * 6)` }, anchor: y.default.absoluteFillObject, mask: { ...y.default.absoluteFillObject, position: "fixed" }, bodyRectHelper: { ...y.default.absoluteFillObject, bottom: void 0 }, content: { borderRadius: e.borderRadii.large, position: "absolute", overflow: "hidden", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.medium }, contentInitialRender: { position: "fixed", opacity: 0 }, contentFixed: { position: "fixed", overflowY: "auto", overscrollBehavior: "contain" } }));
-            class Z extends r.Component {
-                constructor(e, t) {
-                    super(e, t),
-                        (this._handleAnimateComplete = () => {
-                            const { onAnimateComplete: e } = this.props;
-                            e && e();
-                        }),
-                        (this._handleEsc = (e) => {
-                            const { onDismiss: t } = this.props,
-                                { altKey: i, ctrlKey: n, key: r, metaKey: o } = e;
-                            !(i || n || o) && "Escape" === r && t();
-                        }),
-                        (this._receiveBodyRectHelperRef = (e) => {
-                            e && this._bodyRectHelperNode !== e && ((this._bodyRectHelperNode = e), this._scheduleUpdate());
-                        }),
-                        (this._receiveAnchorRef = (e) => {
-                            e && this._anchorNode !== e && ((this._anchorNode = e), this._scheduleUpdate());
-                        }),
-                        (this._receiveContentRef = (e) => {
-                            e && this._contentNode !== e && ((this._contentNode = e), this._scheduleUpdate(), this._observe(e));
-                        }),
-                        (this._observe = (e) => {
-                            const t = () => {
-                                this._scheduleUpdate();
-                            };
-                            u.Z.observe(e, t),
-                                this._disposeResizeObserver?.(),
-                                (this._disposeResizeObserver = () => {
-                                    u.Z.unobserve(e, t), (this._disposeResizeObserver = void 0);
-                                });
-                        }),
-                        (this._updatePosition = () => {
-                            if (!(this._mounted && (this._anchorNode || this.props.position) && this._contentNode && this._contentNode instanceof window.HTMLElement && this._bodyRectHelperNode && this._bodyRectHelperNode instanceof window.HTMLElement)) return;
-                            const e = "rtl" === this._languageDirection,
-                                t = this._contentNode.scrollHeight,
-                                i = this._contentNode.scrollWidth,
-                                { left: n, top: r, width: o } = this._bodyRectHelperNode.getBoundingClientRect(),
-                                { height: a, width: s } = (0, w.iv)();
-                            let l = { left: 0, top: 0, height: 0, width: 0 };
-                            this.props.position ? (l = { ...l, ...this.props.position }) : this._anchorNode && this._anchorNode instanceof window.HTMLElement && (l = this._anchorNode.getBoundingClientRect());
-                            const { height: c, left: d, top: h, width: u } = l,
-                                p = s - o,
-                                m = d - n,
-                                v = h - r,
-                                g = d + u >= i,
-                                f = h + c >= t,
-                                b = s - d >= i,
-                                y = a - h >= t,
-                                _ = s >= d + u / 2 + i / 2 && d >= i / 2 - u / 2,
-                                Z = this.props.preferredVerticalOrientation,
-                                E = ((e, t) => (e && "center" !== t ? ("left" === t ? "right" : "left") : t))(e, this.props.preferredHorizontalOrientation),
-                                R = this.state.verticalOrientation || (({ canOrientDown: e, canOrientUp: t, verticalPreference: i }) => ((t && e) || (!t && !e) ? i : t ? "up" : "down"))({ verticalPreference: Z, canOrientUp: f, canOrientDown: y }),
-                                D = this.state.horizontalOrientation || (({ canOrientCenter: e, canOrientLeft: t, canOrientRight: i, horizontalPreference: n }) => ("center" === n && e ? "center" : !t || ("left" !== n && i) ? "right" : "left"))({ horizontalPreference: E, canOrientLeft: g, canOrientRight: b, canOrientCenter: _ }),
-                                C = this.props.isFixed ? d : m,
-                                z = this.props.isFixed ? h : v,
-                                x = "up" === R ? z + c - t : z;
-                            let M = s - C - u - p;
-                            "center" === D && (M = s - C - u / 2 - i / 2 - p), "right" === D && (M = s - C - i - p), this.setState({ top: Math.max(x, 0), right: M, verticalOrientation: R, horizontalOrientation: D });
-                        }),
-                        (this.state = Object.freeze({})),
-                        (this._scheduleUpdate = (0, c.Z)(this._updatePosition, window.requestAnimationFrame)),
-                        (this._scheduleDebouncedUpdate = (0, s.Z)(this._scheduleUpdate, 250));
-                }
-                componentDidMount() {
-                    (this._mounted = !0), o.Z.addEventListener("change", this._scheduleDebouncedUpdate);
-                }
-                componentWillUnmount() {
-                    (this._mounted = !1), this._disposeResizeObserver?.(), o.Z.removeEventListener("change", this._scheduleDebouncedUpdate);
-                }
-                render() {
-                    const { animateInDuration: e, animateType: t, children: i, contentStyle: o, disableMask: s, isFixed: c, onDismiss: u, preventFocusShift: Z, withKeyboardNavigation: E } = this.props,
-                        { right: R, top: D, verticalOrientation: C } = this.state,
-                        z = void 0 === D,
-                        x = E ? d.Z : r.Fragment,
-                        M = `calc(100vh - ${D || 0}px)`,
-                        O = (d) => {
-                            const h = "rtl" === d,
-                                p = [_.content, z && _.contentInitialRender, c && [_.contentFixed, { maxHeight: M }], { top: D, end: h ? void 0 : R, start: h ? R : void 0 }, o];
-                            return r.createElement(
-                                r.Fragment,
-                                null,
-                                s ? null : r.createElement(a.Z, { onClick: u, style: _.mask }),
-                                r.createElement(a.Z, { ref: this._receiveBodyRectHelperRef, style: _.bodyRectHelper }),
-                                r.createElement(w.ZP, null, ({ windowWidth: o }) => r.createElement(a.Z, { onKeyUp: this._handleEsc, ref: this._receiveContentRef, role: "menu", style: [o < y.default.theme.breakpoints.medium ? _.rootNarrow : _.rootWide, p] }, z && "slide" === t ? i : r.createElement(l.Z, { animateMount: "up" !== C, duration: e, onAnimateComplete: this._handleAnimateComplete, show: !0, type: t }, ({ isAnimating: e }) => r.createElement(v.Z, { id: "Dropdown", minimizeReporting: e }, (e, t) => r.createElement(a.Z, (0, n.Z)({ ref: e() }, t({})), i))))),
-                            );
-                        };
-                    return r.createElement(
-                        f.ZP.Consumer,
-                        null,
-                        ({ direction: e }) => (
-                            (this._languageDirection = e),
-                            r.createElement(
-                                a.Z,
-                                { ref: this._receiveAnchorRef, style: _.anchor },
-                                r.createElement(
-                                    g.Z.Dropdown,
-                                    null,
-                                    r.createElement(m.Z.Consumer, null, (t) => r.createElement(b.Z.Consumer, null, ({ isModal: i }) => r.createElement(p.Z, { history: t, isModal: i, onDismiss: u }, Z ? O(e) : r.createElement(h.Z, null, r.createElement(x, null, O(e)))))),
-                                ),
-                            )
-                        ),
-                    );
-                }
-            }
-            Z.defaultProps = { preferredHorizontalOrientation: "left", preferredVerticalOrientation: "down", animateType: "slide", animateInDuration: "normal", withKeyboardNavigation: !0 };
+            n.d(l, { Z: () => d });
+            var a,
+                t,
+                r,
+                i,
+                s,
+                o,
+                u,
+                c = {
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "JobRecommendationsModuleQuery", selections: [{ kind: "RequiredField", field: { alias: null, args: (a = [{ kind: "Literal", name: "s", value: "f3d8" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(t = { alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "consented_at", storageKey: null }], storageKey: null }), { alias: null, args: (r = [{ kind: "Literal", name: "count", value: 5 }]), concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "JobSearchListItem_item" }], storageKey: null }], storageKey: "job_recommendations_results(count:5)" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"f3d8")' }, action: "THROW" }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: [],
+                        kind: "Operation",
+                        name: "JobRecommendationsModuleQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: a,
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                    {
+                                                        kind: "InlineFragment",
+                                                        selections: [
+                                                            t,
+                                                            {
+                                                                alias: null,
+                                                                args: r,
+                                                                concreteType: "ApiJobResults",
+                                                                kind: "LinkedField",
+                                                                name: "job_recommendations_results",
+                                                                plural: !0,
+                                                                selections: [
+                                                                    i,
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: null,
+                                                                        kind: "LinkedField",
+                                                                        name: "result",
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                            s,
+                                                                            { kind: "TypeDiscriminator", abstractKey: "__isJobResult" },
+                                                                            {
+                                                                                kind: "InlineFragment",
+                                                                                selections: [
+                                                                                    (o = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "JobCore",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "core",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
+                                                                                    { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [o, i, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [o, i, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                                                    { alias: null, args: null, kind: "ScalarField", name: "user_sentiment", storageKey: null },
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "UserResults",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "user_results",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            {
+                                                                                                alias: null,
+                                                                                                args: null,
+                                                                                                concreteType: null,
+                                                                                                kind: "LinkedField",
+                                                                                                name: "result",
+                                                                                                plural: !1,
+                                                                                                selections: [
+                                                                                                    s,
+                                                                                                    {
+                                                                                                        kind: "InlineFragment",
+                                                                                                        selections: [
+                                                                                                            i,
+                                                                                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, u], storageKey: null },
+                                                                                                            {
+                                                                                                                alias: null,
+                                                                                                                args: null,
+                                                                                                                concreteType: "UserVerification",
+                                                                                                                kind: "LinkedField",
+                                                                                                                name: "verification",
+                                                                                                                plural: !1,
+                                                                                                                selections: [
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                                ],
+                                                                                                                storageKey: null,
+                                                                                                            },
+                                                                                                            { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                                                                                            o,
+                                                                                                        ],
+                                                                                                        type: "User",
+                                                                                                        abstractKey: null,
+                                                                                                    },
+                                                                                                ],
+                                                                                                storageKey: null,
+                                                                                            },
+                                                                                            o,
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
+                                                                                ],
+                                                                                type: "ApiJob",
+                                                                                abstractKey: null,
+                                                                            },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
+                                                                    o,
+                                                                ],
+                                                                storageKey: "job_recommendations_results(count:5)",
+                                                            },
+                                                            o,
+                                                        ],
+                                                        type: "User",
+                                                        abstractKey: null,
+                                                    },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            o,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"f3d8")',
+                            },
+                        ],
+                    },
+                    params: { id: "0fTKmeS38bqgfttp4H1jSg", metadata: {}, name: "JobRecommendationsModuleQuery", operationKind: "query", text: null },
+                };
+            c.hash = "37b14a1d47b77462d15eba2689e65519";
+            const d = c;
         },
-        879113: (e, t, i) => {
+        879113: (e, l, n) => {
             "use strict";
-            i.d(t, { Z: () => p });
-            var n = i(202784),
-                r = i(476984),
-                o = i.n(r),
-                a = i(143778),
-                s = i(750410),
-                l = i(682830);
-            const c = "failed",
-                d = "loaded",
-                h = "loading",
-                u = "none";
-            class p extends n.Component {
+            n.d(l, { Z: () => m });
+            var a = n(202784),
+                t = n(476984),
+                r = n.n(t),
+                i = n(143778),
+                s = n(750410),
+                o = n(682830);
+            const u = "failed",
+                c = "loaded",
+                d = "loading",
+                g = "none";
+            class m extends a.Component {
                 shouldComponentUpdate(e) {
-                    const t = e.fetchStatus === d,
-                        i = this.props.fetchStatus !== e.fetchStatus;
-                    return !(!t && !i) || !o()(e, this.props);
+                    const l = e.fetchStatus === c,
+                        n = this.props.fetchStatus !== e.fetchStatus;
+                    return !(!l && !n) || !r()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: i, fetchStatus: r, icon: o, loadingMessage: a, onRequestRetry: d, render: p, renderFailure: m, retryMessage: v, retryable: g } = this.props;
-                    switch (r) {
-                        case c:
-                            return g ? n.createElement(s.Z, { icon: o, onRequestRetry: d, retryMessage: v }) : i ? n.createElement(l.m, { failureMessage: i }) : m();
-                        case h:
-                            return n.createElement(l.J, { "aria-label": e, color: t, loadingMessage: a });
+                    const { "aria-label": e, color: l, failureMessage: n, fetchStatus: t, icon: r, loadingMessage: i, onRequestRetry: c, render: m, renderFailure: p, retryMessage: y, retryable: k } = this.props;
+                    switch (t) {
                         case u:
+                            return k ? a.createElement(s.Z, { icon: r, onRequestRetry: c, retryMessage: y }) : n ? a.createElement(o.m, { failureMessage: n }) : p();
+                        case d:
+                            return a.createElement(o.J, { "aria-label": e, color: l, loadingMessage: i });
+                        case g:
                             return null;
                         default:
-                            return p();
+                            return m();
                     }
                 }
             }
-            p.defaultProps = { renderFailure: a.Z, retryable: !0 };
+            m.defaultProps = { renderFailure: i.Z, retryable: !0 };
         },
-        247056: (e, t, i) => {
+        247056: (e, l, n) => {
             "use strict";
-            i.d(t, { Z: () => c });
-            var n = i(202784),
-                r = i(111677),
-                o = i.n(r),
-                a = i(149170),
-                s = i(40644);
-            const l = o().gaeb997e;
-            const c = function ({ activeColor: e, label: t = l, Icon: i = a.default, iconSize: r = "normal", isDisabled: o, onClick: c, preventFocusShift: d, renderActionMenu: h, style: u, testID: p, withDarkBackground: m = !1 }) {
-                const v = n.useCallback(
+            n.d(l, { Z: () => u });
+            var a = n(202784),
+                t = n(111677),
+                r = n.n(t),
+                i = n(149170),
+                s = n(40644);
+            const o = r().gaeb997e;
+            const u = function ({ activeColor: e, label: l = o, Icon: n = i.default, iconSize: t = "normal", isDisabled: r, onClick: u, preventFocusShift: c, renderActionMenu: d, style: g, testID: m, withDarkBackground: p = !1 }) {
+                const y = a.useCallback(
                         (e) => {
-                            e && e.preventDefault(), c && c(e);
+                            e && e.preventDefault(), u && u(e);
                         },
-                        [c],
+                        [u],
                     ),
-                    g = n.useMemo(() => ({ label: t }), [t]);
-                return n.createElement(s.ZP, { Icon: i, activeColor: e || (m ? "white" : void 0), "aria-label": t, backgroundColor: m ? "translucentBlack77" : "transparent", color: m ? "white" : "gray700", hoverLabel: g, iconSize: r, isDisabled: o, onPress: v, preventFocusShift: d, renderMenu: h, style: u, testID: p });
+                    k = a.useMemo(() => ({ label: l }), [l]);
+                return a.createElement(s.ZP, { Icon: n, activeColor: e || (p ? "white" : void 0), "aria-label": l, backgroundColor: p ? "translucentBlack77" : "transparent", color: p ? "white" : "gray700", hoverLabel: k, iconSize: t, isDisabled: r, onPress: y, preventFocusShift: c, renderMenu: d, style: g, testID: m });
             };
         },
-        30183: (e, t, i) => {
+        30183: (e, l, n) => {
             "use strict";
-            i.d(t, { Z: () => s });
-            var n = i(202784),
-                r = i(731708),
-                o = i(952428);
-            const a = i(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, withBottomRadius: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge } })),
-                s = function ({ align: e, link: t, onPress: i, text: s, weight: l, withBottomRadius: c, withDarkerInteractiveBackground: d }) {
-                    return n.createElement(o.Z, { link: t, onPress: i, style: [a.root, c && a.withBottomRadius], withDarkerInteractiveBackground: d }, n.createElement(r.ZP, { align: e, color: "primary", weight: l }, s));
+            n.d(l, { Z: () => s });
+            var a = n(202784),
+                t = n(731708),
+                r = n(952428);
+            const i = n(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, withBottomRadius: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge } })),
+                s = function ({ align: e, link: l, onPress: n, text: s, weight: o, withBottomRadius: u, withDarkerInteractiveBackground: c }) {
+                    return a.createElement(r.Z, { link: l, onPress: n, style: [i.root, u && i.withBottomRadius], withDarkerInteractiveBackground: c }, a.createElement(t.ZP, { align: e, color: "primary", weight: o }, s));
                 };
         },
-        67877: (e, t, i) => {
+        280278: (e, l, n) => {
             "use strict";
-            i.d(t, { Z: () => n });
-            const n = (e, t) => {
-                let i = null;
-                const n = () => {
-                    (i = null), e();
+            n.d(l, { ZP: () => y });
+            var a = n(202784),
+                t = n(325686),
+                r = n(827515),
+                i = n(461756),
+                s = n(731708),
+                o = n(392237);
+            const u = "up",
+                c = "down",
+                d = (e, l, n) => {
+                    n((n) => {
+                        const a = (0, r.Z)(e) ? (e > (n.count || 0) ? u : c) : u;
+                        return { ...n, count: e, oldText: n.text, pendingCount: null, pendingText: null, text: l, transitionDirection: a };
+                    });
+                },
+                g = {};
+            [u, c].forEach((e) => {
+                const l = "0.3s";
+                g[e] = { active: { transitionProperty: "transform", transitionDuration: l, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: l } };
+            });
+            const m = { position: "absolute" },
+                p = o.default.create({ root: { overflow: "hidden" } }),
+                y = (e) => {
+                    const { children: l, containerStyle: n, count: o, ...c } = e,
+                        [y, k] = a.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
+                        f = a.useRef(!1);
+                    return (
+                        a.useEffect(
+                            () => (
+                                (f.current = !0),
+                                function () {
+                                    f.current = !1;
+                                }
+                            ),
+                            [],
+                        ),
+                        a.useEffect(() => {
+                            if (f.current)
+                                if (i.Z.reducedMotionEnabled) k((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (l !== y.pendingText) {
+                                    l === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? k((e) => ({ ...e, pendingCount: null, pendingText: null })) : (k((n) => ({ ...n, pendingCount: e.count, pendingText: l })), y.animating || d(e.count, l, k));
+                                }
+                        }, [l]),
+                        a.useEffect(() => {
+                            f.current &&
+                                !1 === y.animating &&
+                                (y.oldText
+                                    ? window.requestAnimationFrame(() =>
+                                          window.requestAnimationFrame(() => {
+                                              f.current && k((e) => ({ ...e, animating: !0 }));
+                                          }),
+                                      )
+                                    : y.pendingText && d(y.pendingCount, y.pendingText, k));
+                        }, [y.animating, y.oldText]),
+                        a.useMemo(() => {
+                            const e = g[y.transitionDirection],
+                                l = y.oldText && !i.Z.reducedMotionEnabled,
+                                r = !y.animating && y.oldText && !i.Z.reducedMotionEnabled,
+                                o = { ...m, ...(y.animating ? e.post : e.active) },
+                                u = { ...(r ? e.pre : e.active) };
+                            return a.createElement(
+                                t.Z,
+                                { style: [p.root, n] },
+                                l ? a.createElement("span", { style: o }, a.createElement(s.ZP, c, y.oldText)) : null,
+                                a.createElement(
+                                    "span",
+                                    {
+                                        "data-testid": "app-text-transition-container",
+                                        onTransitionEnd: () =>
+                                            ((e, l) => {
+                                                e && l((e) => ({ ...e, animating: !1, oldText: null }));
+                                            })(f.current, k),
+                                        style: u,
+                                    },
+                                    a.createElement(s.ZP, c, y.text),
+                                ),
+                            );
+                        }, [n, c, y, f, k])
+                    );
                 };
-                return () => (i || (i = t(n)), i);
-            };
         },
-        246492: (e, t, i) => {
+        98440: (e, l, n) => {
             "use strict";
-            i.r(t), i.d(t, { default: () => l });
-            var n = i(202784),
-                r = i(890601),
-                o = i(783427),
-                a = i(347101);
+            n.r(l), n.d(l, { default: () => o });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
+                i = n(347101);
             const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: l });
             };
             s.metadata = { width: 24, height: 24 };
-            const l = s;
+            const o = s;
         },
-        264171: (e, t, i) => {
+        226597: (e, l, n) => {
             "use strict";
-            i.r(t), i.d(t, { default: () => l });
-            var n = i(202784),
-                r = i(890601),
-                o = i(783427),
-                a = i(347101);
+            n.r(l), n.d(l, { default: () => o });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
+                i = n(347101);
             const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: l });
             };
             s.metadata = { width: 24, height: 24 };
-            const l = s;
+            const o = s;
         },
-        98440: (e, t, i) => {
+        155353: (e, l, n) => {
             "use strict";
-            i.r(t), i.d(t, { default: () => l });
-            var n = i(202784),
-                r = i(890601),
-                o = i(783427),
-                a = i(347101);
+            n.r(l), n.d(l, { default: () => o });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
+                i = n(347101);
             const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: l });
             };
             s.metadata = { width: 24, height: 24 };
-            const l = s;
+            const o = s;
         },
-        226597: (e, t, i) => {
+        666536: (e, l, n) => {
             "use strict";
-            i.r(t), i.d(t, { default: () => l });
-            var n = i(202784),
-                r = i(890601),
-                o = i(783427),
-                a = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        262009: (e, t, i) => {
-            "use strict";
-            i.r(t), i.d(t, { default: () => l });
-            var n = i(202784),
-                r = i(890601),
-                o = i(783427),
-                a = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        452693: (e, t, i) => {
-            "use strict";
-            i.r(t), i.d(t, { default: () => l });
-            var n = i(202784),
-                r = i(890601),
-                o = i(783427),
-                a = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        465233: (e, t, i) => {
-            "use strict";
-            i.d(t, { Z: () => r });
-            var n = i(716406);
-            function r(e) {
-                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(r) : (0, n.Z)(e, (e) => r(e));
-            }
-        },
-        666536: (e, t, i) => {
-            "use strict";
-            i.d(t, { Z: () => o });
-            var n = i(936386),
-                r = i.n(n);
-            const o = (e, t, i) => r()(e, t, i);
+            n.d(l, { Z: () => r });
+            var a = n(936386),
+                t = n.n(a);
+            const r = (e, l, n) => t()(e, l, n);
         },
         936386: (e) => {
-            function t(e, t, i) {
-                var n, r, o, a, s;
-                function l() {
-                    var c = Date.now() - a;
-                    c < t && c >= 0 ? (n = setTimeout(l, t - c)) : ((n = null), i || ((s = e.apply(o, r)), (o = r = null)));
+            function l(e, l, n) {
+                var a, t, r, i, s;
+                function o() {
+                    var u = Date.now() - i;
+                    u < l && u >= 0 ? (a = setTimeout(o, l - u)) : ((a = null), n || ((s = e.apply(r, t)), (r = t = null)));
                 }
-                null == t && (t = 100);
-                var c = function () {
-                    (o = this), (r = arguments), (a = Date.now());
-                    var c = i && !n;
-                    return n || (n = setTimeout(l, t)), c && ((s = e.apply(o, r)), (o = r = null)), s;
+                null == l && (l = 100);
+                var u = function () {
+                    (r = this), (t = arguments), (i = Date.now());
+                    var u = n && !a;
+                    return a || (a = setTimeout(o, l)), u && ((s = e.apply(r, t)), (r = t = null)), s;
                 };
                 return (
-                    (c.clear = function () {
-                        n && (clearTimeout(n), (n = null));
+                    (u.clear = function () {
+                        a && (clearTimeout(a), (a = null));
                     }),
-                    (c.flush = function () {
-                        n && ((s = e.apply(o, r)), (o = r = null), clearTimeout(n), (n = null));
+                    (u.flush = function () {
+                        a && ((s = e.apply(r, t)), (r = t = null), clearTimeout(a), (a = null));
                     }),
-                    c
+                    u
                 );
             }
-            (t.debounce = t), (e.exports = t);
+            (l.debounce = l), (e.exports = l);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-6107ac1a.3bcb414a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-6107ac1a.23f0648a.js.map

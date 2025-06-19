@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Grok-6107ac1a"],
+    ["bundle.Grok-6107ac1a", "loader.AudioContextVoiceMedia"],
     {
         488816: (e) => {
             e.exports = { queryId: "qaIzg304L134B5-NI43j2A", operationName: "UniversalSearchFeedbackMutation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -259,7 +259,7 @@
         },
         738310: (e, a, n) => {
             "use strict";
-            n.d(a, { Z: () => C });
+            n.d(a, { Z: () => K });
             var l,
                 t,
                 r,
@@ -280,7 +280,7 @@
                 _,
                 v,
                 F,
-                K = {
+                C = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "cursor" }]),
                         kind: "Fragment",
@@ -417,8 +417,8 @@
                     operation: { argumentDefinitions: l, kind: "Operation", name: "grokTokFeedQuery", selections: [{ alias: null, args: t, concreteType: "GrokFeed", kind: "LinkedField", name: "grok_feed", plural: !1, selections: [{ alias: null, args: null, concreteType: "GrokFeedItemWithPrompt", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "item", plural: !1, selections: [r, { kind: "InlineFragment", selections: [i, s, o, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [d, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [u, c], storageKey: null }, (v = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (F = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }, F], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [m, g, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [p, y], storageKey: null }, v, k, h, F], type: "User", abstractKey: null }], storageKey: null }, F], storageKey: null }], type: "GrokFeedImageItem", abstractKey: null }], storageKey: null }, b, f], storageKey: null }, _], storageKey: null }] },
                     params: { id: "j2kbQjoIwOzI1leopt1p7g", metadata: {}, name: "grokTokFeedQuery", operationKind: "query", text: null },
                 };
-            K.hash = "bde1e6d4c09f229863167dc092c9ef4a";
-            const C = K;
+            C.hash = "bde1e6d4c09f229863167dc092c9ef4a";
+            const K = C;
         },
         764877: (e, a, n) => {
             "use strict";
@@ -594,9 +594,42 @@
             const d = i.default.create((e) => ({ root: { display: "flex", flexDirection: "column" }, dragBorderValid: { borderStyle: "dashed", borderWidth: e.spaces.space2, borderColor: e.colors.primary }, dragBorderInvalid: { borderStyle: "dashed", borderWidth: e.spaces.space2, borderColor: e.colors.magenta500 }, inner: { flexGrow: 1 } })),
                 u = o;
         },
+        420412: (e, a, n) => {
+            "use strict";
+            n.d(a, { Z: () => o });
+            var l = n(202784),
+                t = n(325686),
+                r = n(235902),
+                i = n(885015),
+                s = n(392237);
+            function o({ borderColor: e = "borderColor", isSlim: a = !1, label: n }) {
+                const { isWebRedesign: o } = r.ZP.useProps(),
+                    u = "borderColor" === e || "nestedBorderColor" === e ? d[e] : { backgroundColor: s.default.theme.colors[e] ?? s.default.theme.colors.borderColor };
+                return n ? l.createElement(i.Z, { style: !a && d.root, withGutter: !0 }, l.createElement(t.Z, { style: d.gapColumn }, l.createElement(t.Z, { style: [d.gap, u] })), l.createElement(t.Z, { style: d.gapText }, n), l.createElement(t.Z, { style: d.gapColumn }, l.createElement(t.Z, { style: [d.gap, u] }))) : l.createElement(t.Z, { style: [!a && d.root, o() && d.rootRedesign, d.gap, u] });
+            }
+            const d = s.default.create((e) => ({ borderColor: { backgroundColor: s.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: s.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+        },
+        885015: (e, a, n) => {
+            "use strict";
+            n.d(a, { Z: () => d });
+            var l = n(807896),
+                t = n(202784),
+                r = n(325686),
+                i = n(392237);
+            class s extends t.Component {
+                render() {
+                    const { children: e, style: a, withGutter: n, ...i } = this.props,
+                        s = t.Children.map(e, (e) => e && t.cloneElement(e, { style: [e.props.style, o.column, n && o.withGutterColumn] }));
+                    return t.createElement(r.Z, (0, l.Z)({ style: [a, o.root, n && o.withGutter] }, i), s);
+                }
+            }
+            s.defaultProps = { withGutter: !1 };
+            const o = i.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
+                d = s;
+        },
         557707: (e, a, n) => {
             "use strict";
-            n.d(a, { ZP: () => K });
+            n.d(a, { ZP: () => C });
             var l = n(807896),
                 t = n(202784),
                 r = n(466999),
@@ -716,12 +749,29 @@
             }
             v.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: k.Z.ModalToasts };
             const F = b.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: e.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: e.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: e.spaces.space12, backgroundColor: e.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: e.borderRadii.small, marginBottom: e.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: e.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: e.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: e.spaces.space12 }, closeButton: { marginStart: e.spaces.space12, paddingHorizontal: e.spaces.space4 } })),
-                K = v;
+                C = v;
         },
         183806: (e, a, n) => {
             "use strict";
             n.d(a, { Z: () => l });
             const l = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+        },
+        662678: (e, a, n) => {
+            "use strict";
+            n.d(a, { G: () => t, Z: () => l });
+            n(136728);
+            const l = function (e, a) {
+                return t(e, a);
+            };
+            function t(e, a) {
+                return e.reduce(
+                    (n, l, t) => {
+                        const r = a ? a(l, t, e) : !!l;
+                        return r && n[0].push(l), !r && n[1].push(l), n;
+                    },
+                    [[], []],
+                );
+            }
         },
         706307: (e, a, n) => {
             "use strict";
@@ -749,34 +799,34 @@
                     _ = e.onPressOut,
                     v = e.rejectResponderTermination,
                     F = e.style,
-                    K = (0, t.Z)(e, c),
-                    C = (0, r.useRef)(null),
-                    L = (0, i.Z)(a, C),
+                    C = (0, t.Z)(e, c),
+                    K = (0, r.useRef)(null),
+                    L = (0, i.Z)(a, K),
                     S = (0, r.useState)("0s"),
                     D = S[0],
-                    T = S[1],
-                    w = (0, r.useState)(null),
-                    I = w[0],
-                    E = w[1],
-                    P = (0, r.useCallback)(
-                        (e, a) => {
-                            E(e), T(a ? a / 1e3 + "s" : "0s");
-                        },
-                        [E, T],
-                    ),
+                    w = S[1],
+                    T = (0, r.useState)(null),
+                    E = T[0],
+                    I = T[1],
                     x = (0, r.useCallback)(
-                        (e) => {
-                            P(null != n ? n : 0.2, e);
+                        (e, a) => {
+                            I(e), w(a ? a / 1e3 + "s" : "0s");
                         },
-                        [n, P],
+                        [I, w],
                     ),
                     G = (0, r.useCallback)(
                         (e) => {
-                            P(null, e);
+                            x(null != n ? n : 0.2, e);
                         },
-                        [P],
+                        [n, x],
                     ),
-                    V = (0, r.useMemo)(
+                    P = (0, r.useCallback)(
+                        (e) => {
+                            x(null, e);
+                        },
+                        [x],
+                    ),
+                    Z = (0, r.useMemo)(
                         () => ({
                             cancelable: !v,
                             disabled: y,
@@ -787,16 +837,16 @@
                             onPress: b,
                             onPressStart(e) {
                                 var a = null != e.dispatchConfig ? "onResponderGrant" === e.dispatchConfig.registrationName : "keydown" === e.type;
-                                x(a ? 0 : 150), null != f && f(e);
+                                G(a ? 0 : 150), null != f && f(e);
                             },
                             onPressEnd(e) {
-                                G(250), null != _ && _(e);
+                                P(250), null != _ && _(e);
                             },
                         }),
-                        [p, o, m, y, h, b, f, _, v, x, G],
+                        [p, o, m, y, h, b, f, _, v, G, P],
                     ),
-                    R = (0, s.Z)(C, V);
-                return r.createElement(d.Z, (0, l.Z)({}, K, R, { accessibilityDisabled: y, focusable: !y && !1 !== k, pointerEvents: y ? "box-none" : void 0, ref: L, style: [g.root, !y && g.actionable, F, null != I && { opacity: I }, { transitionDuration: D }] }));
+                    R = (0, s.Z)(K, Z);
+                return r.createElement(d.Z, (0, l.Z)({}, C, R, { accessibilityDisabled: y, focusable: !y && !1 !== k, pointerEvents: y ? "box-none" : void 0, ref: L, style: [g.root, !y && g.actionable, F, null != E && { opacity: E }, { transitionDuration: D }] }));
             }
             var g = o.Z.create({ root: { transitionProperty: "opacity", transitionDuration: "0.15s", userSelect: "none" }, actionable: { cursor: "pointer", touchAction: "manipulation" } }),
                 p = r.memo(r.forwardRef(m));
@@ -805,4 +855,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-6107ac1a.3e87eeca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-6107ac1a.b784533a.js.map

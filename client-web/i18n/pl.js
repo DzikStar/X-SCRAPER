@@ -2504,41 +2504,6 @@
                     return "Temat: " + e.topicName;
                 }),
                 i("ic6aa5f4", "Uwierzytelniono."),
-                i("c02e7e3c", "Wczytywanie..."),
-                i("c5453f28", "1/64 finału"),
-                i("eb256a86", "1/32 finału"),
-                i("g77adc66", "Słodka szesnastka"),
-                i("a6d2520c", "Słodka 16"),
-                i("g5b63eb6", "Elitarna ósemka"),
-                i("d8bf2890", "Elitarna 8"),
-                i("f9d3d6f2", "Finałowa czwórka"),
-                i("bda24f7c", "Finałowa 4"),
-                i("i5043440", "Mistrzostwa krajowe"),
-                i("fcb16026", "Mistrzostwa"),
-                i("e9c89ee8", "Wschód"),
-                i("h259fd86", "Zachód"),
-                i("a7b2545a", "Południe"),
-                i("fdf7819a", "Środkowy zachód"),
-                i("i899e9b0", "Prześlij drabinkę"),
-                i("c5b04394", "Wyświetl wybory"),
-                i("h836bbae", "Wyświetl turniej"),
-                i("e1059d6c", "1. runda"),
-                i("b1602be4", "2. runda"),
-                i("ef7bc2c0", "20–21 mar"),
-                i("h726aaf2", "22–23 mar"),
-                i("ee7cd198", "27–28 mar"),
-                i("fed91402", "29–30 marca"),
-                i("aba0a450", "5 kwi"),
-                i("jdfba2dc", "7 kwi"),
-                i("b7c6bc12", "TBD"),
-                i("c373612c", "Wybierz:"),
-                i("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                i("j5db9ddd", " wygrywa z "),
-                i("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 i("j4c40da4", "Wyślij teraz"),
                 i("b23688c8", "Wyłącz stoper"),
                 i("cca5d499", function (e) {
@@ -2984,8 +2949,8 @@
                 i("a7de64de", "Informacja o reklamach"),
                 i("jb0a4c36", "Blog"),
                 i("ce6d095a", "Praca"),
-                i("e0adec82", "Zasoby marki");
-            i("df1b7550", "Marketing"),
+                i("e0adec82", "Zasoby marki"),
+                i("df1b7550", "Marketing"),
                 i("he258678", "X dla firm"),
                 i("c6f58084", "Deweloperzy"),
                 i("d83f18d2", "Ścieżka"),
@@ -3019,8 +2984,8 @@
                 }),
                 i("d6d9aab6", "Dodaj Zakładkę"),
                 i("bb89cf46", "Usuń zakładkę"),
-                i("a739d4ba", "Dodaj do folderu Zakładek"),
-                i("d5270434", "Wyjdź"),
+                i("a739d4ba", "Dodaj do folderu Zakładek");
+            i("d5270434", "Wyjdź"),
                 i("ac85c6b2", "Podczas ładowania strony wystąpił błąd"),
                 i("b327c12a", "Zdjęcie"),
                 i("ic76bdf0", "Utwórz to ponownie za pomocą Groka"),
@@ -3896,8 +3861,8 @@
                 i("a2bf8b8a", "Przełącz na słuchanie"),
                 i("caa8d928", "Przełącz tłumienie hałasu"),
                 i("b5d88f0c", "Tylko dla pracowników"),
-                i("c855ab8e", "Tylko dla subskrybentów");
-            i("ddeb0a3c", "Podoba Ci się atmosfera w tej Grupie dyskusyjnej? Rozejrzyj się tu."),
+                i("c855ab8e", "Tylko dla subskrybentów"),
+                i("ddeb0a3c", "Podoba Ci się atmosfera w tej Grupie dyskusyjnej? Rozejrzyj się tu."),
                 i("e111f531", function (e) {
                     return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
                 }),
@@ -3945,8 +3910,8 @@
                 i("f2333850", "Udostępnij osobom spoza serwisu X"),
                 i("cddb8097", "Dowiedz się więcej"),
                 i("f77997b0", "Współhost"),
-                i("i48f4ed8", "Mówca"),
-                i("a77c8e02", "Słuchacz"),
+                i("i48f4ed8", "Mówca");
+            i("a77c8e02", "Słuchacz"),
                 i("bdfa93eb", function (e) {
                     return "Udostępnione przez " + e.name;
                 }),
@@ -4216,6 +4181,7 @@
                 i("f794af9a", "Tryb zabawny"),
                 i("eccf9fea", "Tryb normalny"),
                 i("j22655f2", "Zapytaj, o co chcesz"),
+                i("c02e7e3c", "Wczytywanie..."),
                 i("h0681e3e", "Porozmawiaj z Grokiem, naszym asystentem AI"),
                 i("d593fd78", "Może on odpowiadać na pytania, wyszukiwać w serwisie X i generować obrazy"),
                 i("d0205a24", "Sprawdź fakty"),
@@ -4300,7 +4266,6 @@
                 i("afa2a58e", "Zobacz wszystkie wpisy"),
                 i("fc83e7e2", "Zobacz wszystkich użytkowników"),
                 i("df601d92", "Odpowiedni użytkownicy"),
-                i("b001fa12", "Zapytanie źródłowe"),
                 i("db6c20cf", function (e) {
                     return "Pokaż wszystkie (" + e.count + ")";
                 }),
@@ -4383,7 +4348,7 @@
                 i("g3ce0132", "Myślano o:"),
                 i("f8007364", "Rozwiń, aby wyświetlić szczegóły"),
                 i("ca53f780", "Zwiń szczegóły"),
-                i("b52484b6", "Wyszukiwanie..."),
+                i("e6d51c62", "Searching"),
                 i("ib1c5475", function (e) {
                     return "Myślenie trwało " + e.minutes + " min " + e.seconds + " s";
                 }),
@@ -4401,6 +4366,7 @@
                 i("a3186bff", function (e) {
                     return e.count + " stron" + n(e.count, "y internetowe", " internetowych", "a internetowa", "y internetowej");
                 }),
+                i("b52484b6", "Wyszukiwanie..."),
                 i("f4146dda", "Którą odpowiedź wolisz?"),
                 i("a2c2be32", "Pomoże to ulepszyć Groka."),
                 i("g01599b6", "Odpowiedź 2"),
@@ -4938,8 +4904,8 @@
                 i("b649d8cc", "Tylko subskrybent"),
                 i("j9282130", "Miniatura transmisji"),
                 i("g629b8b0", "Przekroczenie limitu czasu"),
-                i("eb87323c", "Pokazuje dane analiz dotyczących wybranego okresu od momentu rozpoczęcia transmisji strumieniowej na żywo.");
-            i("i6a75722", "Zakres czasu"),
+                i("eb87323c", "Pokazuje dane analiz dotyczących wybranego okresu od momentu rozpoczęcia transmisji strumieniowej na żywo."),
+                i("i6a75722", "Zakres czasu"),
                 i("c602f5b8", "Suma"),
                 i("b35e68ae", "Łączna liczba uczestników"),
                 i("h78ee79a", "Łączna liczba wyświetleń powtórki"),
@@ -4968,8 +4934,8 @@
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
                 i("if2909ba", "Czas oglądania"),
                 i("i0e5bf4c", "Twoje filmy"),
-                i("ed99baea", "Wczesny dostęp do wersji Beta"),
-                i("gf898b70", "Wyszukiwanie zaawansowane"),
+                i("ed99baea", "Wczesny dostęp do wersji Beta");
+            i("gf898b70", "Wyszukiwanie zaawansowane"),
                 i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
@@ -5890,8 +5856,8 @@
                 i("fb59415e", "Aby uwagi były wyświetlane publicznie jako kontekst przy wpisach, muszą zostaną ocenione jako pomocne z różnych punktów widzenia przez wystarczającą liczbę osób. Pomaga to uniknąć treści, które są stronnicze lub stanowią manipulację, i ułatwia znalezienie uwag pomocnych dla wielu osób."),
                 i("f9a44022", "To nie firma X decyduje o tym, które uwagi są wyświetlane — robią to użytkownicy"),
                 i("gdf4fbb2", "Firma X nie dodaje, nie ocenia ani nie moderuje uwag (jeśli nie naruszają one Zasad serwisu X). Użytkownicy podejmują decyzje wspólnie. Wierzymy, że to sprawiedliwa i skuteczna metoda udostępniania rzetelnych informacji."),
-                i("cc720e6a", "U podstaw programu Uwagi Społeczności leży przejrzystość danych");
-            i("j2fcd33a", "Dane zawierają treści dodane do"),
+                i("cc720e6a", "U podstaw programu Uwagi Społeczności leży przejrzystość danych"),
+                i("j2fcd33a", "Dane zawierają treści dodane do"),
                 i("d4a6b322", "Wszystkie uwagi i informacje dodawane w ramach programu Uwagi Społeczności publikowane są tu codziennie, dzięki czemu użytkownicy mają pełen dostęp do wszystkich danych oraz mogą szybko identyfikować problemy i podejmować odpowiednie działania. Poznaj wszystkie opcje, jakie oferuje program Uwagi Społeczności."),
                 i("c359263a", "Dowiedz się, w jaki sposób wykorzystywać i analizować dane dotyczące programu Uwagi Społeczności "),
                 i("b8a27fe2", "naszego przewodnika"),
@@ -5924,8 +5890,8 @@
                 i("e41c9b4f", function (e) {
                     return "Zapisano w folderze " + e.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Usuń folder"),
-                i("f4ea967a", "Usunięto folder"),
+                i("h18f86a4", "Usuń folder");
+            i("f4ea967a", "Usunięto folder"),
                 i("b670aa62", "Nazwa folderu"),
                 i("aece5462", "Nazwa folderu została pomyślnie zaktualizowana"),
                 i("e3299b94", "Wystąpił błąd. Poczekaj chwilę i spróbuj ponownie zaktualizować folder."),
@@ -6896,8 +6862,8 @@
                 i("b36cd50e", "Wskaż podstawowy zespół, w którym osoby kandydujące będą pracować po zatrudnieniu."),
                 i("d3a427ce", "Wybierz wymagany poziom doświadczenia."),
                 i("i7174442", "Opis oferty pracy"),
-                i("fef0cf02", "Podaj szczegółowy opis oferty pracy. Wyróżnij najważniejsze obowiązki i kwalifikacje, aby umożliwić osobom kandydującym dokładne zapoznanie się z oferowanym stanowiskiem.");
-            i("b7800bec", "Stwórz ofertę pracy o długości do 200 znaków. Będzie ona widoczna we wpisach, rekomendacjach i wyszukiwaniu."),
+                i("fef0cf02", "Podaj szczegółowy opis oferty pracy. Wyróżnij najważniejsze obowiązki i kwalifikacje, aby umożliwić osobom kandydującym dokładne zapoznanie się z oferowanym stanowiskiem."),
+                i("b7800bec", "Stwórz ofertę pracy o długości do 200 znaków. Będzie ona widoczna we wpisach, rekomendacjach i wyszukiwaniu."),
                 i("a5244ece", "Adres URL aplikacji (wymagane)"),
                 i("g2b553f6", "Wprowadź publiczny adres URL, pod którym osoby kandydujące będą mogły składać aplikacje związane z tą ofertą pracy."),
                 i("c2e77608", "Stanowisko (wymagane)"),
@@ -6930,8 +6896,8 @@
                 i("c924ad84", "Nieprzerwane odtwarzanie filmów"),
                 i("de750a3c", "Korzystaj, nawet jeśli Twój telefon będzie zablokowany"),
                 i("he5e87c4", "Wzmacniaj swoje odpowiedzi"),
-                i("g64a60ba", "Uzyskaj małą priorytetyzację podczas odpowiadania na wpisy"),
-                i("a7ee832a", "Przez 60 minut możesz poprawiać literówki i pomyłki"),
+                i("g64a60ba", "Uzyskaj małą priorytetyzację podczas odpowiadania na wpisy");
+            i("a7ee832a", "Przez 60 minut możesz poprawiać literówki i pomyłki"),
                 i("fdd77a34", "Twórz dłuższe wpisy"),
                 i("j6d26a7a", "Pisz tyle, ile chcesz udostępnić"),
                 i("c4fd68da", "Dostosuj swoje środowisko"),
@@ -7872,7 +7838,45 @@
                 i("cfcac293", function (e) {
                     return "Daj w prezencie i zapłać " + e.price;
                 }),
-                i("d7a73450", "Poziom");
+                i("d7a73450", "Poziom"),
+                i("hbd2c24e", "To konto nie ma obecnie uprawnienia do prezentów."),
+                i("f3fddc98", "Warunki dotyczące zakupów"),
+                i("cff9c889", "Dowiedz się więcej"),
+                i("c65dda96", "Twój prezent został wysłany."),
+                i("f6e2a407", function (e) {
+                    return "Zezwalaj, aby Twoja odznaka Subskrybuje była widoczna dla wszystkich, gdy odpowiadasz na wpisy użytkownika @" + e.screenName;
+                }),
+                i("j8dedddd", function (e) {
+                    return "Jeśli wyłączysz tę opcję, użytkownik @" + e.screenName + " i jego subskrybenci będą wciąż widzieć Twoją odznakę, gdy odpowiesz na wpis przeznaczony tylko dla subskrybentów użytkownika @" + e.screenName + ". Użytkownik @" + e.screenName + " zawsze będzie widzieć Twoją odznakę.";
+                }),
+                i("c8a513f6", "Anuluj subskrypcję"),
+                i("ea000ec8", "Anulowałeś/aś już subskrypcję?"),
+                i("d7b8387e", "Jeśli anulowałeś/aś już swoją subskrypcję, nie musisz nic robić. Twoja subskrypcja wygaśnie automatycznie po zakończeniu okresu rozliczeniowego."),
+                i("f4166d9a", "Chcesz anulować subskrypcję?"),
+                i("b74ff5fc", "Jeśli anulujesz subskrypcję, wygaśnie ona automatycznie po zakończeniu okresu rozliczeniowego."),
+                i("ee9efbc8", "Przejdź dalej, by anulować"),
+                i("c5d9c77a", "Wystąpił chwilowy problem. Nie martw się, to nie Twoje wina. Zamknij to okno i spróbuj ponownie."),
+                i("jda53c24", "Możesz anulować subskrypcję w sklepie Apple App Store."),
+                i("g0a7a53e", "Możesz anulować subskrypcję w sklepie Google Play."),
+                i("i5f14be7", function (e) {
+                    return "Witaj ponownie, " + e.displayName;
+                }),
+                i("a76d58ba", "Analizy reklam"),
+                i("eccd0e1a", "Analizy organizacji"),
+                i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
+                i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy."),
+                i("gf67aae4", "Podnieś poziom do poziomu Pełny dostęp"),
+                i("h75e3618", "Uwzględnij organizację"),
+                i("h24a8862", "Informacje o tym polu wyboru"),
+                i("c29e3a88", "Wybierz konta powiązane"),
+                i("j8318d57", function (e) {
+                    return e.number + " kont" + n(e.number, "a powiązane", " powiązanych", "o powiązane", "a powiązanego");
+                }),
+                i("bf809ec0", "Wybierz konta powiązane"),
+                i("b719e224", "Brak wyników"),
+                i("c9938100", "Wyniki wyszukiwania"),
+                i("d1a35ec6", "Dodaj konta"),
+                i("b437adda", "Uaktualnij do płatnej wersji");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7911,47 +7915,9 @@
                     c(e, a)
                 );
             }
-            i("hbd2c24e", "To konto nie ma obecnie uprawnienia do prezentów."),
-                i("f3fddc98", "Warunki dotyczące zakupów"),
-                i("cff9c889", "Dowiedz się więcej"),
-                i("c65dda96", "Twój prezent został wysłany."),
-                i("f6e2a407", function (e) {
-                    return "Zezwalaj, aby Twoja odznaka Subskrybuje była widoczna dla wszystkich, gdy odpowiadasz na wpisy użytkownika @" + e.screenName;
-                }),
-                i("j8dedddd", function (e) {
-                    return "Jeśli wyłączysz tę opcję, użytkownik @" + e.screenName + " i jego subskrybenci będą wciąż widzieć Twoją odznakę, gdy odpowiesz na wpis przeznaczony tylko dla subskrybentów użytkownika @" + e.screenName + ". Użytkownik @" + e.screenName + " zawsze będzie widzieć Twoją odznakę.";
-                }),
-                i("c8a513f6", "Anuluj subskrypcję"),
-                i("ea000ec8", "Anulowałeś/aś już subskrypcję?"),
-                i("d7b8387e", "Jeśli anulowałeś/aś już swoją subskrypcję, nie musisz nic robić. Twoja subskrypcja wygaśnie automatycznie po zakończeniu okresu rozliczeniowego."),
-                i("f4166d9a", "Chcesz anulować subskrypcję?"),
-                i("b74ff5fc", "Jeśli anulujesz subskrypcję, wygaśnie ona automatycznie po zakończeniu okresu rozliczeniowego."),
-                i("ee9efbc8", "Przejdź dalej, by anulować"),
-                i("c5d9c77a", "Wystąpił chwilowy problem. Nie martw się, to nie Twoje wina. Zamknij to okno i spróbuj ponownie."),
-                i("jda53c24", "Możesz anulować subskrypcję w sklepie Apple App Store."),
-                i("g0a7a53e", "Możesz anulować subskrypcję w sklepie Google Play."),
-                i("i5f14be7", function (e) {
-                    return "Witaj ponownie, " + e.displayName;
-                }),
-                i("a76d58ba", "Analizy reklam"),
-                i("eccd0e1a", "Analizy organizacji"),
-                i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
-                i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy."),
-                i("gf67aae4", "Podnieś poziom do poziomu Pełny dostęp"),
-                i("h75e3618", "Uwzględnij organizację"),
-                i("h24a8862", "Informacje o tym polu wyboru"),
-                i("c29e3a88", "Wybierz konta powiązane"),
-                i("j8318d57", function (e) {
-                    return e.number + " kont" + n(e.number, "a powiązane", " powiązanych", "o powiązane", "a powiązanego");
-                }),
-                i("bf809ec0", "Wybierz konta powiązane"),
-                i("b719e224", "Brak wyników"),
-                i("c9938100", "Wyniki wyszukiwania"),
-                i("d1a35ec6", "Dodaj konta"),
-                i("b437adda", "Uaktualnij do płatnej wersji"),
-                i("f1f6c88b", function (e) {
-                    return "Konta (" + e.count + ")";
-                }),
+            i("f1f6c88b", function (e) {
+                return "Konta (" + e.count + ")";
+            }),
                 i("b02156b8", "Zaproszenia"),
                 i("gd67d29b", function (e) {
                     return "Zaproszenia (" + e.count + ")";
@@ -8904,8 +8870,8 @@
                 i("b3160a69", function (e) {
                     return e.volumePercent + " %";
                 }),
-                i("fb236728", "Zatrzymaj");
-            i("e9bd453e", "Odtwórz ponownie"),
+                i("fb236728", "Zatrzymaj"),
+                i("e9bd453e", "Odtwórz ponownie"),
                 i("d46b00b0", "Przejdź do transmisji na żywo"),
                 i("ec8ab8b4", "Wycisz"),
                 i("b8b6344a", "Wyłącz wyciszenie"),
@@ -8952,8 +8918,8 @@
                 i("a7bf9962", "Pobierz film"),
                 i("ccc97152", "Prędkość odtwarzania"),
                 i("h531ade0", "Jakość filmów"),
-                i("e8b5757c", "0,25 x"),
-                i("e7e954de", "0,5x"),
+                i("e8b5757c", "0,25 x");
+            i("e7e954de", "0,5x"),
                 i("g07ffe66", "0,75 x"),
                 i("d8bede9e", "1 x"),
                 i("j41845c8", "1,25 x"),
@@ -10501,12 +10467,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Klikając Promuj wpis, zgadzasz się na ", "."];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13387,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.5bfc1b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.8cfe412a.js.map

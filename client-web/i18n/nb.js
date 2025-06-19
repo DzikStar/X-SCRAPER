@@ -1280,31 +1280,31 @@
                 t("c3f04d9c", "Tenker"),
                 t("cbdddb0a", "Fullført"),
                 t("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return "Søker etter " + e.query;
                 }),
                 t("b0d1e205", function (e) {
                     return "Søker etter **«" + e.query + "»**";
                 }),
                 t("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return "Søker etter " + e.query + " på 𝕏";
                 }),
                 t("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return "Leser på " + e.url;
                 }),
                 t("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return "Leser om " + e.query + " på " + e.url;
                 }),
                 t("acb9b845", function (e) {
                     return "Slår opp " + e.url + " for **«" + e.query + "»**";
                 }),
                 t("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "Søker i 𝕏-innlegg av @" + e.username;
                 }),
                 t("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "Søker etter " + e.query + " i 𝕏-innlegg av @" + e.username + " ";
                 }),
                 t("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "Søker etter **" + e.query + "** i 𝕏-innlegg av @" + e.username + " ";
                 }),
                 t("ead81122", "Det oppstod en feil. Oppdater for å koble til på nytt, eller prøv igjen."),
                 t("f808a13a", "Du har nådd maksgrensen. Vent litt og prøv deretter på nytt."),
@@ -1316,8 +1316,8 @@
                 t("j77292b7", function (e) {
                     return "Velg kun opptil " + e.count + " fil" + i(e.count, "", "er");
                 }),
-                t("d6b533dc", "Rate this translation:"),
-                t("j2f9ab6e", "Thank you for your feedback!"),
+                t("d6b533dc", "Vurder oversettelsen:"),
+                t("j2f9ab6e", "Takk for tilbakemeldingen!"),
                 t("d56779a2", "lett å forstå"),
                 t("b6fe8a56", "forvirrende eller uklar"),
                 t("i73a7d48", "Oversatt av Google"),
@@ -1348,9 +1348,9 @@
                     return "Oversatt fra " + e.originLanguage + " av";
                 }),
                 t("b7cb4fab", "Oversatt av"),
-                t("e0bffbf8", "About automatic translation"),
+                t("e0bffbf8", "Om automatisk oversettelse"),
                 t("e839db3a", "Forkast"),
-                t("a15585b4", "Språkinnstillinger"),
+                t("a15585b4", "språkinnstillingene"),
                 t("d4c339b9", function (e) {
                     return "Innlegg fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -2494,41 +2494,6 @@
                     return "Emne: " + e.topicName;
                 }),
                 t("ic6aa5f4", "Autentisert."),
-                t("c02e7e3c", "Laster inn …"),
-                t("c5453f28", "Round of 64"),
-                t("eb256a86", "Round of 32"),
-                t("g77adc66", "Sweet Sixteen"),
-                t("a6d2520c", "Sweet 16"),
-                t("g5b63eb6", "Elite Eight"),
-                t("d8bf2890", "Elite 8"),
-                t("f9d3d6f2", "Final Four"),
-                t("bda24f7c", "Final 4"),
-                t("i5043440", "National Championship"),
-                t("fcb16026", "Championship"),
-                t("e9c89ee8", "East"),
-                t("h259fd86", "West"),
-                t("a7b2545a", "South"),
-                t("fdf7819a", "Midwest"),
-                t("i899e9b0", "Send inn diagram"),
-                t("c5b04394", "Vis utvalg"),
-                t("h836bbae", "Vis turneringen"),
-                t("e1059d6c", "Første runde"),
-                t("b1602be4", "Andre runde"),
-                t("ef7bc2c0", "20.–21. mars"),
-                t("h726aaf2", "22.–23. mars"),
-                t("ee7cd198", "27.–28. mars"),
-                t("fed91402", "29.–30. mars"),
-                t("aba0a450", "5. april"),
-                t("jdfba2dc", "7. april"),
-                t("b7c6bc12", "TBD"),
-                t("c373612c", "Velg:"),
-                t("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                t("j5db9ddd", " over "),
-                t("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 t("j4c40da4", "Send nå"),
                 t("b23688c8", "Tidsfrist for angring"),
                 t("cca5d499", function (e) {
@@ -2974,8 +2939,8 @@
                 t("a7de64de", "Informasjon om Ads"),
                 t("jb0a4c36", "Blogg"),
                 t("ce6d095a", "Jobbmuligheter"),
-                t("e0adec82", "Merkevareressurser");
-            t("df1b7550", "Markedsføring"),
+                t("e0adec82", "Merkevareressurser"),
+                t("df1b7550", "Markedsføring"),
                 t("he258678", "X for bedrifter"),
                 t("c6f58084", "Utviklere"),
                 t("d83f18d2", "Katalog"),
@@ -3009,8 +2974,8 @@
                 }),
                 t("d6d9aab6", "Legg til bokmerke"),
                 t("bb89cf46", "Fjern bokmerke"),
-                t("a739d4ba", "Legg til i bokmerkemappe"),
-                t("d5270434", "Avslutt"),
+                t("a739d4ba", "Legg til i bokmerkemappe");
+            t("d5270434", "Avslutt"),
                 t("ac85c6b2", "Det oppsto en feil under innlastingen av dette bildet"),
                 t("b327c12a", "Bilde"),
                 t("ic76bdf0", "Gjenskap dette med Grok"),
@@ -3886,8 +3851,8 @@
                 t("a2bf8b8a", "Bytt til lytting"),
                 t("caa8d928", "Veksle støydemping"),
                 t("b5d88f0c", "Bare for ansatte"),
-                t("c855ab8e", "Bare abonnenter");
-            t("ddeb0a3c", "Her er fellesskapet. Liker du medlemmene? Ta en titt."),
+                t("c855ab8e", "Bare abonnenter"),
+                t("ddeb0a3c", "Her er fellesskapet. Liker du medlemmene? Ta en titt."),
                 t("e111f531", function (e) {
                     return e.count + " lytter(e)";
                 }),
@@ -3935,8 +3900,8 @@
                 t("f2333850", "Del med andre utenfor X"),
                 t("cddb8097", "Les mer"),
                 t("f77997b0", "Medvert"),
-                t("i48f4ed8", "Taler"),
-                t("a77c8e02", "Lytter"),
+                t("i48f4ed8", "Taler");
+            t("a77c8e02", "Lytter"),
                 t("bdfa93eb", function (e) {
                     return "Delt av " + e.name;
                 }),
@@ -4206,6 +4171,7 @@
                 t("f794af9a", "Gøyal modus"),
                 t("eccf9fea", "Vanlig modus"),
                 t("j22655f2", "Spør om hva som helst"),
+                t("c02e7e3c", "Laster inn …"),
                 t("h0681e3e", "Snakk med Grok, KI-assistenten vår"),
                 t("d593fd78", "Den kan svare på spørsmålene dine, søke på X og generere bilder"),
                 t("d0205a24", "Sjekk hva som er sant"),
@@ -4216,10 +4182,10 @@
                 t("j7b5c844", "Du er ansvarlig for samtalene du deler offentlig. Ikke del sensitiv og konfidensiell informasjon om deg selv eller andre i samtaler med Grok (se hjelpesenteret vårt)."),
                 t("c9f7c196", "Hjelpesenter"),
                 t("fb3b9776", "Groks utdata har blitt tilpasset av denne brukeren."),
-                t("b0a889d4", "As Image"),
-                t("a111fb48", "As Spreadsheet"),
-                t("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                t("bd202fe6", "Generating card"),
+                t("b0a889d4", "Som bilde"),
+                t("a111fb48", "Som regneark"),
+                t("bccc65f0", "Grok kan ta feil, så du bør alltid kontrollere originalkildene."),
+                t("bd202fe6", "Genererer kort"),
                 t("bfd161bc", "Sammenlign"),
                 t("j5dcf1b2", "Oppdatert"),
                 t("a50aaa10", "Førbørs"),
@@ -4251,8 +4217,8 @@
                 t("dd679fb1", function (e) {
                     return "Laveste noensinne" + e.ttc_stock_details;
                 }),
-                t("ha9c4cf8", "View source"),
-                t("ecad5d78", "Save image"),
+                t("ha9c4cf8", "Vis kilde"),
+                t("ecad5d78", "Lagre bilde"),
                 t("d2d1d398", "Kopiert!"),
                 t("a22063d2", "Del posisjonen din for å øke nøyaktigheten."),
                 t("db3248a8", "Laster inn posisjonen"),
@@ -4287,12 +4253,11 @@
                 t("d66bf142", "To."),
                 t("dc17968a", "Fr."),
                 t("j310a2d6", "Lø."),
-                t("afa2a58e", "See all posts"),
-                t("fc83e7e2", "See all users"),
-                t("df601d92", "Relevant Users"),
-                t("b001fa12", "Source query"),
+                t("afa2a58e", "Vis alle innlegg"),
+                t("fc83e7e2", "Vis alle brukere"),
+                t("df601d92", "Relevante brukere"),
                 t("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "Vis alle (" + e.count + ")";
                 }),
                 t("d7cb5408", "Relevante nettsider"),
                 t("ca93f2ee", "Denne meldingen er slettet."),
@@ -4363,7 +4328,7 @@
                 t("db832e38", "Slå på varsler i nettleserens innstillinger"),
                 t("a910cac6", "Det oppstod et problem med å slå på varsler"),
                 t("be30b6ee", "Ustabil forbindelse"),
-                t("ge15b488", "Show thoughts"),
+                t("ge15b488", "Vis tanker"),
                 t("aa7c96bb", function (e) {
                     return "Se " + e.numResults + " mer";
                 }),
@@ -4373,7 +4338,7 @@
                 t("g3ce0132", "Tenkte i"),
                 t("f8007364", "Utvid for detaljerte opplysninger"),
                 t("ca53f780", "Skjul detaljer"),
-                t("b52484b6", "Søker …"),
+                t("e6d51c62", "Searching"),
                 t("ib1c5475", function (e) {
                     return "Tenkte i " + e.minutes + " m " + e.seconds + " s";
                 }),
@@ -4391,6 +4356,7 @@
                 t("a3186bff", function (e) {
                     return e.count + " nettside" + i(e.count, "", "r");
                 }),
+                t("b52484b6", "Søker …"),
                 t("f4146dda", "Hvilke svar foretrekker du?"),
                 t("a2c2be32", "dette vil bidra til å forbedre Grok."),
                 t("g01599b6", "Svar 1"),
@@ -4928,8 +4894,8 @@
                 t("b649d8cc", "Kun abonnent"),
                 t("j9282130", "Miniatyrbilde for sendingen"),
                 t("g629b8b0", "Tidsavbrutt"),
-                t("eb87323c", "Viser analysedata for valgt tid etter at direktestrømmen ble sendt.");
-            t("i6a75722", "Tidsomfang"),
+                t("eb87323c", "Viser analysedata for valgt tid etter at direktestrømmen ble sendt."),
+                t("i6a75722", "Tidsomfang"),
                 t("c602f5b8", "Totalt"),
                 t("b35e68ae", "Totalt antall deltakere"),
                 t("h78ee79a", "Total reprisetitting"),
@@ -4958,8 +4924,8 @@
                 t("e41fffbc", "Den totale visningstiden til videoene dine."),
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig betatilgang"),
-                t("gf898b70", "Avansert søk"),
+                t("ed99baea", "Tidlig betatilgang");
+            t("gf898b70", "Avansert søk"),
                 t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
                 t("a8584698", "ki oppstartsselskap"),
                 t("jb6f9292", "inneholder den nøyaktige frasen «ki-oppstartsselskap»"),
@@ -5880,8 +5846,8 @@
                 t("fb59415e", "For å bli vist offentlig som kontekst i et innlegg må en merknad bli vurdert som nyttig av tilstrekkelig mange med ulike synspunkter. På denne måten unngår vi partiskhet og manipulasjon og får merknader som er nyttige for mange."),
                 t("f9a44022", "X bestemmer ikke hva som vises, det gjør brukerne"),
                 t("gdf4fbb2", "Selskapet X verken skriver, vurderer eller modererer merknader (med mindre de bryter reglene til X). Vi mener at å gi folk muligheten til å ta disse avgjørelsene i fellesskap er både rettferdig og effektivt, og at det fører til informasjon som hjelper andre å holde seg bedre informert."),
-                t("cc720e6a", "Fellesskapsmerknader er basert på åpenhet rundt data");
-            t("j2fcd33a", "Dataene inneholder bidrag frem til"),
+                t("cc720e6a", "Fellesskapsmerknader er basert på åpenhet rundt data"),
+                t("j2fcd33a", "Dataene inneholder bidrag frem til"),
                 t("d4a6b322", "Her publiseres alle data fra Fellesskapsmerknader hver dag, slik at fellesskapet kan analysere dem, identifisere problemer og oppdage muligheter til å gjøre Fellesskapsmerknader bedre. Vi gleder oss til å jobbe med dette sammen med deg."),
                 t("c359263a", "Lær hvordan du bruker og analyserer data fra Fellesskapsmerknader "),
                 t("b8a27fe2", "i veiledningen"),
@@ -5914,8 +5880,8 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Slett mappe"),
-                t("f4ea967a", "Mappen er slettet"),
+                t("h18f86a4", "Slett mappe");
+            t("f4ea967a", "Mappen er slettet"),
                 t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er oppdatert"),
                 t("e3299b94", "Noe gikk galt. Prøv å oppdatere denne mappen på nytt om en liten stund."),
@@ -6886,8 +6852,8 @@
                 t("b36cd50e", "Spesifiser kjerneteamet som ansatte kandidater skal jobbe med."),
                 t("d3a427ce", "Velg det nødvendige kompetansenivået."),
                 t("i7174442", "Beskrivelse av jobben"),
-                t("fef0cf02", "Beskriv jobben i detalj, blant annet de viktigste ansvarsområdene og kvalifikasjonene, for å gi kandidater en tydelig forståelse av rollen.");
-            t("b7800bec", "Reklamer for jobben med maksimalt 200 tegn. Dette vises i innlegg, anbefalinger og søk."),
+                t("fef0cf02", "Beskriv jobben i detalj, blant annet de viktigste ansvarsområdene og kvalifikasjonene, for å gi kandidater en tydelig forståelse av rollen."),
+                t("b7800bec", "Reklamer for jobben med maksimalt 200 tegn. Dette vises i innlegg, anbefalinger og søk."),
                 t("a5244ece", "Søknadsnettadresse (obligatorisk)"),
                 t("g2b553f6", "Oppgi den offentlige nettadressen der kandidater kan søke på denne jobben."),
                 t("c2e77608", "Stillingstittel (obligatorisk)"),
@@ -6920,8 +6886,8 @@
                 t("c924ad84", "La videoene spilles av"),
                 t("de750a3c", "Les dem selv om telefonen er låst"),
                 t("he5e87c4", "Frem svarene dine"),
-                t("g64a60ba", "Få en liten prioritering når du svarer på innlegg"),
-                t("a7ee832a", "Rett opp trykkfeil og andre feil i opptil 60 minutter"),
+                t("g64a60ba", "Få en liten prioritering når du svarer på innlegg");
+            t("a7ee832a", "Rett opp trykkfeil og andre feil i opptil 60 minutter"),
                 t("fdd77a34", "Skriv lengre innlegg"),
                 t("j6d26a7a", "Skriv så mye du vil om det du har på hjertet"),
                 t("c4fd68da", "Tilpass brukeropplevelsen"),
@@ -7862,7 +7828,45 @@
                 t("cfcac293", function (e) {
                     return "Gi i gave og betal " + e.price;
                 }),
-                t("d7a73450", "Nivå");
+                t("d7a73450", "Nivå"),
+                t("hbd2c24e", "Denne kontoen kan ikke motta gaver for øyeblikket."),
+                t("f3fddc98", "kjøpsvilkår"),
+                t("cff9c889", "Les mer"),
+                t("c65dda96", "Gaven din er sendt."),
+                t("f6e2a407", function (e) {
+                    return "Tillat at alle ser abonnentmerket ditt når du svarer på innleggene til @" + e.screenName;
+                }),
+                t("j8dedddd", function (e) {
+                    return "Slår du av dette, vil @" + e.screenName + " og hens abonnenter fremdeles se merket ditt når du svarer på @" + e.screenName + " sine innlegg som bare er for abonnenter. @" + e.screenName + " vil alltid se merket ditt.";
+                }),
+                t("c8a513f6", "Kanseller abonnement"),
+                t("ea000ec8", "Har du kansellert abonnementet allerede?"),
+                t("d7b8387e", "Har du allerede kansellert, trenger du ikke gjøre noe mer. Abonnementet utløper automatisk på slutten av faktureringssyklusen."),
+                t("f4166d9a", "Vil du kansellere abonnementet ditt?"),
+                t("b74ff5fc", "Hvis du kansellerer, utløper abonnementet automatisk på slutten av faktureringssyklusen."),
+                t("ee9efbc8", "Fortsett til kansellering"),
+                t("c5d9c77a", "Det ser ut til at det oppstod et lite problem. Men slapp av, det er ikke din feil. Lukk dette vinduet og prøv på nytt."),
+                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store."),
+                t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk."),
+                t("i5f14be7", function (e) {
+                    return "Velkommen tilbake, " + e.displayName;
+                }),
+                t("a76d58ba", "Annonsestatistikk"),
+                t("eccd0e1a", "Organisasjonsstatistikk"),
+                t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
+                t("eb603ffc", "Oppgrader for å tilknytte nettverket ditt og se aggregert statistikk."),
+                t("gf67aae4", "Oppgrader til full tilgang"),
+                t("h75e3618", "Ta med organisasjon"),
+                t("h24a8862", "Om denne avmerkingsboksen"),
+                t("c29e3a88", "Velg tilknyttede kontoer"),
+                t("j8318d57", function (e) {
+                    return e.number + " tilknytte" + i(e.number, "t konto", "de kontoer");
+                }),
+                t("bf809ec0", "Velg tilknyttede kontoer"),
+                t("b719e224", "Ingen resultater"),
+                t("c9938100", "Søkeresultater"),
+                t("d1a35ec6", "Legg til kontoer"),
+                t("b437adda", "Oppgrader til betalt");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7901,47 +7905,9 @@
                     d(e, n)
                 );
             }
-            t("hbd2c24e", "Denne kontoen kan ikke motta gaver for øyeblikket."),
-                t("f3fddc98", "kjøpsvilkår"),
-                t("cff9c889", "Les mer"),
-                t("c65dda96", "Gaven din er sendt."),
-                t("f6e2a407", function (e) {
-                    return "Tillat at alle ser abonnentmerket ditt når du svarer på innleggene til @" + e.screenName;
-                }),
-                t("j8dedddd", function (e) {
-                    return "Slår du av dette, vil @" + e.screenName + " og hens abonnenter fremdeles se merket ditt når du svarer på @" + e.screenName + " sine innlegg som bare er for abonnenter. @" + e.screenName + " vil alltid se merket ditt.";
-                }),
-                t("c8a513f6", "Kanseller abonnement"),
-                t("ea000ec8", "Har du kansellert abonnementet allerede?"),
-                t("d7b8387e", "Har du allerede kansellert, trenger du ikke gjøre noe mer. Abonnementet utløper automatisk på slutten av faktureringssyklusen."),
-                t("f4166d9a", "Vil du kansellere abonnementet ditt?"),
-                t("b74ff5fc", "Hvis du kansellerer, utløper abonnementet automatisk på slutten av faktureringssyklusen."),
-                t("ee9efbc8", "Fortsett til kansellering"),
-                t("c5d9c77a", "Det ser ut til at det oppstod et lite problem. Men slapp av, det er ikke din feil. Lukk dette vinduet og prøv på nytt."),
-                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store."),
-                t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk."),
-                t("i5f14be7", function (e) {
-                    return "Velkommen tilbake, " + e.displayName;
-                }),
-                t("a76d58ba", "Annonsestatistikk"),
-                t("eccd0e1a", "Organisasjonsstatistikk"),
-                t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
-                t("eb603ffc", "Oppgrader for å tilknytte nettverket ditt og se aggregert statistikk."),
-                t("gf67aae4", "Oppgrader til full tilgang"),
-                t("h75e3618", "Ta med organisasjon"),
-                t("h24a8862", "Om denne avmerkingsboksen"),
-                t("c29e3a88", "Velg tilknyttede kontoer"),
-                t("j8318d57", function (e) {
-                    return e.number + " tilknytte" + i(e.number, "t konto", "de kontoer");
-                }),
-                t("bf809ec0", "Velg tilknyttede kontoer"),
-                t("b719e224", "Ingen resultater"),
-                t("c9938100", "Søkeresultater"),
-                t("d1a35ec6", "Legg til kontoer"),
-                t("b437adda", "Oppgrader til betalt"),
-                t("f1f6c88b", function (e) {
-                    return "Kontoer (" + e.count + ")";
-                }),
+            t("f1f6c88b", function (e) {
+                return "Kontoer (" + e.count + ")";
+            }),
                 t("b02156b8", "Invitasjoner"),
                 t("gd67d29b", function (e) {
                     return "Invitasjoner (" + e.count + ")";
@@ -8313,7 +8279,7 @@
                 t("e5e6479e", "Send oss en e-post med organisasjonens brukernavn og selve forespørselen for å få den raskeste hjelpen."),
                 t("ica8392a", "Mottatte forespørsler blir behandlet og prioritert i den rekkefølgen de mottas."),
                 t("ed37e36e", "Viktig: Behandlingen av forespørselen kan bli forsinket hvis organisasjonens brukernavn mangler, eller ved bruk av en personlig e-postadresse."),
-                t("h7e1c146", "Delegate accounts are not currently supported."),
+                t("h7e1c146", "Delegerte kontoer kan foreløpig ikke brukes."),
                 t("eb0d4fe2", "Lag en kolonne"),
                 t("e93d2f8a", "Skreddersy opplevelsen din ved å legge til kolonner som for eksempel følgende:"),
                 t("e8203d1e", "Søk"),
@@ -8894,8 +8860,8 @@
                 t("b3160a69", function (e) {
                     return e.volumePercent + " prosent";
                 }),
-                t("fb236728", "Pause");
-            t("e9bd453e", "Spill av på nytt"),
+                t("fb236728", "Pause"),
+                t("e9bd453e", "Spill av på nytt"),
                 t("d46b00b0", "Gå til direktesendingen"),
                 t("ec8ab8b4", "Skjul"),
                 t("b8b6344a", "Vis"),
@@ -8942,8 +8908,8 @@
                 t("a7bf9962", "Last ned video"),
                 t("ccc97152", "Avspillingshastighet"),
                 t("h531ade0", "Videokvalitet"),
-                t("e8b5757c", "0,25 x"),
-                t("e7e954de", "0,5 x"),
+                t("e8b5757c", "0,25 x");
+            t("e7e954de", "0,5 x"),
                 t("g07ffe66", "0,75 x"),
                 t("d8bede9e", "1 x"),
                 t("j41845c8", "1,25 x"),
@@ -10166,7 +10132,7 @@
                         {
                             key: "b6411d33",
                             get: function () {
-                                return ["Basert på bruken av X og språkinnstillingene blir " + this.props.sourceLang + " oversatt automatisk av Grok. Du kan velge språk som skal oversettes automatisk på ", "."];
+                                return ["Basert på bruken av X og språkinnstillingene blir " + this.props.sourceLang + " oversatt automatisk av Grok. Hvilke språk som skal oversettes automatisk, kan du angi i ", "."];
                             },
                         },
                         {
@@ -10491,12 +10457,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Ved å klikke på Promoter innlegg samtykker du i ", "."];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13372,4 +13332,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.de4ab11a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.cc22358a.js.map

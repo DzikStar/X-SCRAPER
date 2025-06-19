@@ -2495,41 +2495,6 @@
                     return a.topicName + " aihe";
                 }),
                 e("ic6aa5f4", "Todennettu."),
-                e("c02e7e3c", "Ladataan..."),
-                e("c5453f28", "Round of 64"),
-                e("eb256a86", "Round of 32"),
-                e("g77adc66", "Sweet Sixteen"),
-                e("a6d2520c", "Sweet 16"),
-                e("g5b63eb6", "Elite Eight"),
-                e("d8bf2890", "Elite 8"),
-                e("f9d3d6f2", "Final Four"),
-                e("bda24f7c", "Final 4"),
-                e("i5043440", "Kansallinen mestaruus"),
-                e("fcb16026", "Mestaruus"),
-                e("e9c89ee8", "Itä"),
-                e("h259fd86", "Länsi"),
-                e("a7b2545a", "Etelä"),
-                e("fdf7819a", "Keskilänsi"),
-                e("i899e9b0", "Lähetä turnauskaavio"),
-                e("c5b04394", "Näytä valinnat"),
-                e("h836bbae", "Näytä turnaus"),
-                e("e1059d6c", "1. kierros"),
-                e("b1602be4", "2. kierros"),
-                e("ef7bc2c0", "20.–21.3."),
-                e("h726aaf2", "22.–23.3."),
-                e("ee7cd198", "27.–28.3."),
-                e("fed91402", "29.–30.3."),
-                e("aba0a450", "5.4."),
-                e("jdfba2dc", "7.4."),
-                e("b7c6bc12", "Vahvistetaan myöhemmin"),
-                e("c373612c", "Valinta:"),
-                e("e8b3cab9", function (a) {
-                    return "" + a.winner;
-                }),
-                e("j5db9ddd", " voittaa, "),
-                e("a638617d", function (a) {
-                    return "" + a.loser;
-                }),
                 e("j4c40da4", "Lähetä nyt"),
                 e("b23688c8", "Twiitin kumoamisaika"),
                 e("cca5d499", function (a) {
@@ -2975,8 +2940,8 @@
                 e("a7de64de", "Tietoa mainoksista"),
                 e("jb0a4c36", "Blogi"),
                 e("ce6d095a", "Työpaikat"),
-                e("e0adec82", "Brändiresurssit");
-            e("df1b7550", "Markkinointi"),
+                e("e0adec82", "Brändiresurssit"),
+                e("df1b7550", "Markkinointi"),
                 e("he258678", "X yrityksille"),
                 e("c6f58084", "Kehittäjät"),
                 e("d83f18d2", "Hakemisto"),
@@ -3010,8 +2975,8 @@
                 }),
                 e("d6d9aab6", "Lisää fonttikoko"),
                 e("bb89cf46", "Poista kirjanmerkki"),
-                e("a739d4ba", "Lisää kirjanmerkkikansioon"),
-                e("d5270434", "Poistu"),
+                e("a739d4ba", "Lisää kirjanmerkkikansioon");
+            e("d5270434", "Poistu"),
                 e("ac85c6b2", "Kuvaa ladattaessa tapahtui virhe"),
                 e("b327c12a", "Kuva"),
                 e("ic76bdf0", "Luo oma versio Grokin avulla"),
@@ -3887,8 +3852,8 @@
                 e("a2bf8b8a", "Vaihda kuunteluun"),
                 e("caa8d928", "Säädä häiriönpoistoa"),
                 e("b5d88f0c", "Vain työntekijät"),
-                e("c855ab8e", "Vain Tilaajille");
-            e("ddeb0a3c", "Tässä on tämä Yhteisö. Pidätkö väestä? Katso ympärillesi."),
+                e("c855ab8e", "Vain Tilaajille"),
+                e("ddeb0a3c", "Tässä on tämä Yhteisö. Pidätkö väestä? Katso ympärillesi."),
                 e("e111f531", function (a) {
                     return a.count + " linjoille saapunut" + n(a.count, "", "ta");
                 }),
@@ -3936,8 +3901,8 @@
                 e("f2333850", "Jaa X:n ulkopuolelle"),
                 e("cddb8097", "Lue lisää"),
                 e("f77997b0", "Co-host"),
-                e("i48f4ed8", "Puhuja"),
-                e("a77c8e02", "Kuuntelija"),
+                e("i48f4ed8", "Puhuja");
+            e("a77c8e02", "Kuuntelija"),
                 e("bdfa93eb", function (a) {
                     return "Käyttäjän " + a.name + " jakama";
                 }),
@@ -4207,6 +4172,7 @@
                 e("f794af9a", "Hupailutila"),
                 e("eccf9fea", "Normaalitila"),
                 e("j22655f2", "Kysy mitä vain"),
+                e("c02e7e3c", "Ladataan..."),
                 e("h0681e3e", "Juttele tekoälyapuri Grokin kanssa"),
                 e("d593fd78", "Se voi vastata kysymyksiisi, tehdä hakuja X-alustalla ja muodostaa kuvia"),
                 e("d0205a24", "Tarkista faktat"),
@@ -4291,7 +4257,6 @@
                 e("afa2a58e", "See all posts"),
                 e("fc83e7e2", "See all users"),
                 e("df601d92", "Relevant Users"),
-                e("b001fa12", "Source query"),
                 e("db6c20cf", function (a) {
                     return "Show all (" + a.count + ")";
                 }),
@@ -4374,7 +4339,7 @@
                 e("g3ce0132", "Mietti"),
                 e("f8007364", "Laajenna nähdäksesi tiedot"),
                 e("ca53f780", "Pienennä tiedot"),
-                e("b52484b6", "Haetaan..."),
+                e("e6d51c62", "Searching"),
                 e("ib1c5475", function (a) {
                     return "Mietti " + a.minutes + " min " + a.seconds + " s";
                 }),
@@ -4392,6 +4357,7 @@
                 e("a3186bff", function (a) {
                     return a.count + " verkkosivu" + n(a.count, "", "a");
                 }),
+                e("b52484b6", "Haetaan..."),
                 e("f4146dda", "Kumpi vastaus on parempi?"),
                 e("a2c2be32", "Tämä auttaa tekemään Grokista paremman."),
                 e("g01599b6", "Vastaus 1"),
@@ -4929,8 +4895,8 @@
                 e("b649d8cc", "Vain tilaaja"),
                 e("j9282130", "Lähetyksen esikatselukuva"),
                 e("g629b8b0", "Aikakatkaistu"),
-                e("eb87323c", "Tämä näyttää tilastotietoa valitulta ajanjaksolta livestriimin jälkeen.");
-            e("i6a75722", "Aikaväli"),
+                e("eb87323c", "Tämä näyttää tilastotietoa valitulta ajanjaksolta livestriimin jälkeen."),
+                e("i6a75722", "Aikaväli"),
                 e("c602f5b8", "Yhteensä"),
                 e("b35e68ae", "Osallistujien kokonaismäärä"),
                 e("h78ee79a", "Katsottu uusintana yhteensä"),
@@ -4959,8 +4925,8 @@
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
                 e("if2909ba", "Katseluaika"),
                 e("i0e5bf4c", "Videosi"),
-                e("ed99baea", "Beta-ennakkokäyttö"),
-                e("gf898b70", "Tarkennettu haku"),
+                e("ed99baea", "Beta-ennakkokäyttö");
+            e("gf898b70", "Tarkennettu haku"),
                 e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
                 e("a8584698", "ai startup"),
                 e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
@@ -5881,8 +5847,8 @@
                 e("fb59415e", "Jotta huomautus näytetään julkisesti kontekstina julkaisuun, sen on oltava riittävän monen eri näkökantoja edustavan käyttäjän hyödylliseksi arvioima. Tällä lähestymistavalla pyritään välttämään puolueellisuus ja manipulointi ja löytämään huomautukset, jotka ovat hyödyksi monille."),
                 e("f9a44022", "Näytettävää kontekstia ei valitse X (yhtiö), vaan sen tekevät käyttäjät"),
                 e("gdf4fbb2", "X (yhtiö) ei kirjoita, arvioi eikä moderoi huomautuksia (paitsi jos ne rikkovat X:n sääntöjä). Uskomme siihen, että kun käyttäjät saavat tehdä nämä valinnat yhdessä, saavutetaan reilu ja tehokas tapa tuoda esiin informaatiota, jonka avulla yleisö on paremmin perillä asioista."),
-                e("cc720e6a", "Yhteisöhuomautukset rakentuu tiedon läpinäkyvyydelle");
-            e("j2fcd33a", "Tietoihin sisältyvät kontribuutiot, joiden päiväys on viimeistään"),
+                e("cc720e6a", "Yhteisöhuomautukset rakentuu tiedon läpinäkyvyydelle"),
+                e("j2fcd33a", "Tietoihin sisältyvät kontribuutiot, joiden päiväys on viimeistään"),
                 e("d4a6b322", "Kaikki Yhteisöhuomautusten data julkaistaan täällä päivittäin, jotta ihmiset voivat analysoida sitä, havaita mahdolliset ongelmat ja keksiä keinoja Yhteisöhuomautusten kehittämiseksi. Haluamme oppia yhdessä."),
                 e("c359263a", "Opi käyttämään ja analysoimaan Yhteisöhuomautusten dataa "),
                 e("b8a27fe2", "lukemalla oppaamme"),
@@ -5915,8 +5881,8 @@
                 e("e41c9b4f", function (a) {
                     return "Tallennettu kokoelmaan " + a.bookmarkFolderName;
                 }),
-                e("h18f86a4", "Poista kansio"),
-                e("f4ea967a", "Kansio on poistettu"),
+                e("h18f86a4", "Poista kansio");
+            e("f4ea967a", "Kansio on poistettu"),
                 e("b670aa62", "Kansion nimi"),
                 e("aece5462", "Kansion nimen päivitys onnistui"),
                 e("e3299b94", "Jokin meni pieleen. Yritä kansion päivittämistä hetken kuluttua uudelleen."),
@@ -6887,8 +6853,8 @@
                 e("b36cd50e", "Kuvaile ydintiimiä, jossa hakija työskentelee paikan saatuaan."),
                 e("d3a427ce", "Valitse vaadittu työkokemuksen määrä."),
                 e("i7174442", "Tehtävän kuvaus"),
-                e("fef0cf02", "Laadi yksityiskohtainen tehtävän kuvaus. Ilmoita keskeiset vastuut ja hakuedellytykset, jotta hakijat saavat roolista hyvän käsityksen.");
-            e("b7800bec", "Laadi roolista enintään 200 merkin mittainen pitch. Se näytetään julkaisuissa, suosituksissa ja haussa."),
+                e("fef0cf02", "Laadi yksityiskohtainen tehtävän kuvaus. Ilmoita keskeiset vastuut ja hakuedellytykset, jotta hakijat saavat roolista hyvän käsityksen."),
+                e("b7800bec", "Laadi roolista enintään 200 merkin mittainen pitch. Se näytetään julkaisuissa, suosituksissa ja haussa."),
                 e("a5244ece", "Sovelluksen URL (pakollinen)"),
                 e("g2b553f6", "Anna julkinen URL-osoite, jonka kautta tätä paikkaa voi hakea."),
                 e("c2e77608", "Tehtävänimike (pakollinen)"),
@@ -6921,8 +6887,8 @@
                 e("c924ad84", "Jatka videoiden toistoa"),
                 e("de750a3c", "Nauti niistä silloinkin, kun puhelin on lukittu"),
                 e("he5e87c4", "Tehosta vastauksiasi"),
-                e("g64a60ba", "Saa vähän buustia kirjoittamillesi vastauksille"),
-                e("a7ee832a", "Korjaa lyöntivirheitä ja erehdyksiä 60 minuutin ajan"),
+                e("g64a60ba", "Saa vähän buustia kirjoittamillesi vastauksille");
+            e("a7ee832a", "Korjaa lyöntivirheitä ja erehdyksiä 60 minuutin ajan"),
                 e("fdd77a34", "Laadi pidempiä julkaisuja"),
                 e("j6d26a7a", "Kirjoita niin paljon kuin haluat"),
                 e("c4fd68da", "Räätälöi käyttökokemuksesi"),
@@ -7863,7 +7829,45 @@
                 e("cfcac293", function (a) {
                     return "Anna lahjaksi ja maksa " + a.price;
                 }),
-                e("d7a73450", "Taso");
+                e("d7a73450", "Taso"),
+                e("hbd2c24e", "Tilille ei voi antaa lahjaa tällä hetkellä."),
+                e("f3fddc98", "ostajien käyttöehdot"),
+                e("cff9c889", "Lue lisää"),
+                e("c65dda96", "Lahjasi on lähetetty."),
+                e("f6e2a407", function (a) {
+                    return "Anna kenen tahansa nähdä Tilaaja-merkkisi, kun vastaat käyttäjän @" + a.screenName + " julkaisuihin";
+                }),
+                e("j8dedddd", function (a) {
+                    return "Kun poistat tämän käytöstä, @" + a.screenName + " ja hänen Tilaajansa näkevät tunnuksesi edelleen, jos vastaat käyttäjän @" + a.screenName + " vain Tilaajille laatimiin julkaisuihin. @" + a.screenName + " näkee tunnuksesi aina.";
+                }),
+                e("c8a513f6", "Peru Tilaus"),
+                e("ea000ec8", "Peruitko jo Tilauksesi?"),
+                e("d7b8387e", "Jos olet jo perunut, sinun ei tarvitse tehdä muuta. Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
+                e("f4166d9a", "Haluatko perua Tilauksesi?"),
+                e("b74ff5fc", "Jos perut, Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
+                e("ee9efbc8", "Jatka perumaan"),
+                e("c5d9c77a", "Jossain oli jotain häikkää. Älä huoli, vika ei ole sinun. Sulje tämä ikkuna ja yritä uudelleen."),
+                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta."),
+                e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta."),
+                e("i5f14be7", function (a) {
+                    return "Tervetuloa takaisin, " + a.displayName;
+                }),
+                e("a76d58ba", "Mainostilastot"),
+                e("eccd0e1a", "Organisaation analytiikka"),
+                e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
+                e("eb603ffc", "Päivittämällä saat oman verkostosi affilioitua ja näet kootut tilastot."),
+                e("gf67aae4", "Päivitä tilaus täysiin käyttöoikeuksiin"),
+                e("h75e3618", "Sisällytä organisaatio"),
+                e("h24a8862", "Tästä valintaruudusta"),
+                e("c29e3a88", "Valitse affiliaatit"),
+                e("j8318d57", function (a) {
+                    return a.number + " affiliaatti" + n(a.number, "", "a");
+                }),
+                e("bf809ec0", "Valitse affiliaatit"),
+                e("b719e224", "Ei tuloksia"),
+                e("c9938100", "Hakutulokset"),
+                e("d1a35ec6", "Lisää tilejä"),
+                e("b437adda", "Päivitä maksulliseen tiliin");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7902,47 +7906,9 @@
                     u(a, t)
                 );
             }
-            e("hbd2c24e", "Tilille ei voi antaa lahjaa tällä hetkellä."),
-                e("f3fddc98", "ostajien käyttöehdot"),
-                e("cff9c889", "Lue lisää"),
-                e("c65dda96", "Lahjasi on lähetetty."),
-                e("f6e2a407", function (a) {
-                    return "Anna kenen tahansa nähdä Tilaaja-merkkisi, kun vastaat käyttäjän @" + a.screenName + " julkaisuihin";
-                }),
-                e("j8dedddd", function (a) {
-                    return "Kun poistat tämän käytöstä, @" + a.screenName + " ja hänen Tilaajansa näkevät tunnuksesi edelleen, jos vastaat käyttäjän @" + a.screenName + " vain Tilaajille laatimiin julkaisuihin. @" + a.screenName + " näkee tunnuksesi aina.";
-                }),
-                e("c8a513f6", "Peru Tilaus"),
-                e("ea000ec8", "Peruitko jo Tilauksesi?"),
-                e("d7b8387e", "Jos olet jo perunut, sinun ei tarvitse tehdä muuta. Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
-                e("f4166d9a", "Haluatko perua Tilauksesi?"),
-                e("b74ff5fc", "Jos perut, Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
-                e("ee9efbc8", "Jatka perumaan"),
-                e("c5d9c77a", "Jossain oli jotain häikkää. Älä huoli, vika ei ole sinun. Sulje tämä ikkuna ja yritä uudelleen."),
-                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta."),
-                e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta."),
-                e("i5f14be7", function (a) {
-                    return "Tervetuloa takaisin, " + a.displayName;
-                }),
-                e("a76d58ba", "Mainostilastot"),
-                e("eccd0e1a", "Organisaation analytiikka"),
-                e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
-                e("eb603ffc", "Päivittämällä saat oman verkostosi affilioitua ja näet kootut tilastot."),
-                e("gf67aae4", "Päivitä tilaus täysiin käyttöoikeuksiin"),
-                e("h75e3618", "Sisällytä organisaatio"),
-                e("h24a8862", "Tästä valintaruudusta"),
-                e("c29e3a88", "Valitse affiliaatit"),
-                e("j8318d57", function (a) {
-                    return a.number + " affiliaatti" + n(a.number, "", "a");
-                }),
-                e("bf809ec0", "Valitse affiliaatit"),
-                e("b719e224", "Ei tuloksia"),
-                e("c9938100", "Hakutulokset"),
-                e("d1a35ec6", "Lisää tilejä"),
-                e("b437adda", "Päivitä maksulliseen tiliin"),
-                e("f1f6c88b", function (a) {
-                    return "Tilit (" + a.count + ")";
-                }),
+            e("f1f6c88b", function (a) {
+                return "Tilit (" + a.count + ")";
+            }),
                 e("b02156b8", "Kutsut"),
                 e("gd67d29b", function (a) {
                     return "Kutsut (" + a.count + ")";
@@ -8895,8 +8861,8 @@
                 e("b3160a69", function (a) {
                     return a.volumePercent + " prosentti(a)";
                 }),
-                e("fb236728", "Pysäytä");
-            e("e9bd453e", "Toista"),
+                e("fb236728", "Pysäytä"),
+                e("e9bd453e", "Toista"),
                 e("d46b00b0", "Siirry liveen"),
                 e("ec8ab8b4", "Hiljennä"),
                 e("b8b6344a", "Poista hiljennys"),
@@ -8943,8 +8909,8 @@
                 e("a7bf9962", "Lataa video"),
                 e("ccc97152", "Toistonopeus"),
                 e("h531ade0", "Videon laatu"),
-                e("e8b5757c", "0,25x"),
-                e("e7e954de", "0,5x"),
+                e("e8b5757c", "0,25x");
+            e("e7e954de", "0,5x"),
                 e("g07ffe66", "0,75x"),
                 e("d8bede9e", "1x"),
                 e("j41845c8", "1,25x"),
@@ -10505,12 +10471,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Napsauttamalla alla ”Mainosta julkaisua” hyväksyt ", "."];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", "", " häviää"];
                             },
                         },
                         {
@@ -13387,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.0163d18a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.505e45aa.js.map

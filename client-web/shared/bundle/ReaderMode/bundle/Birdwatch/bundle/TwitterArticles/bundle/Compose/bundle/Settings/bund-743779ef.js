@@ -8,25 +8,22 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.21"),
-                        d.e("icons.16"),
-                        d.e("icons.10"),
-                        d.e("icons.1"),
-                        d.e("icons.19"),
-                        d.e("icons.0"),
                         d.e("icons.23"),
-                        d.e("icons.8"),
+                        d.e("icons.0"),
                         d.e("icons.2"),
-                        d.e("icons.3"),
-                        d.e("icons.15"),
-                        d.e("icons.4"),
+                        d.e("icons.16"),
+                        d.e("icons.19"),
+                        d.e("icons.10"),
+                        d.e("icons.13"),
+                        d.e("icons.24"),
+                        d.e("icons.7"),
+                        d.e("icons.22"),
+                        d.e("icons.27"),
+                        d.e("icons.17"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.9"),
-                        d.e("icons.7"),
-                        d.e("icons.28"),
+                        d.e("icons.11"),
                         d.e("icons.26"),
-                        d.e("icons.24"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -37,21 +34,31 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
+                        d.e("icons.8"),
+                        d.e("icons.4"),
+                        d.e("icons.14"),
+                        d.e("icons.28"),
+                        d.e("icons.21"),
+                        d.e("icons.3"),
+                        d.e("icons.1"),
                         d.e("icons.18"),
-                        d.e("icons.13"),
-                        d.e("icons.29"),
-                        d.e("icons.27"),
-                        d.e("icons.25"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -61,14 +68,10 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
-                        d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
-                        d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
-                        d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
-                        d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                        d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
+                        d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -96,7 +99,6 @@
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         d.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
-                        d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader."),
                         d.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         d.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         d.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
@@ -121,8 +123,9 @@
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
+                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
-                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-63cb1cc4"),
+                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6ac0f1a5"),
                         d.e("shared~bundle.Grok~loader.Markdown-6107ac1a"),
@@ -168,23 +171,15 @@
             const o = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.21"),
-                        d.e("icons.16"),
-                        d.e("icons.10"),
-                        d.e("icons.1"),
-                        d.e("icons.19"),
-                        d.e("icons.0"),
                         d.e("icons.23"),
-                        d.e("icons.8"),
-                        d.e("icons.2"),
-                        d.e("icons.3"),
-                        d.e("icons.15"),
-                        d.e("icons.4"),
-                        d.e("icons.9"),
-                        d.e("icons.7"),
-                        d.e("icons.28"),
-                        d.e("icons.26"),
+                        d.e("icons.0"),
+                        d.e("icons.16"),
+                        d.e("icons.13"),
                         d.e("icons.24"),
+                        d.e("icons.7"),
+                        d.e("icons.22"),
+                        d.e("icons.11"),
+                        d.e("icons.26"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -195,43 +190,28 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.18"),
-                        d.e("icons.13"),
-                        d.e("icons.29"),
-                        d.e("icons.27"),
-                        d.e("icons.25"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-d9c770f1"),
-                        d.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader."),
                         d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"),
                         d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"),
                         d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"),
                         d.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"),
-                        d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-5563f741"),
-                        d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-2db8044c"),
-                        d.e("shared~loader.Dock~ondemand.InlinePlayer~bundle.DockPeek~bundle.LiveEvent~loader.AudioOnlyVideoPlaye-d8458ca7"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3db21160"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0be21f6e"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2c76ece2"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-fd191714"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-3b520976"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-624e4131"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-5f74528c"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-595f2b1d"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-0bb5e702"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-694f31ec"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-b92f6bfc"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-a1125a9a"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame~-2b9410ca"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-6107ac-34e706af"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-5e06d6-12bcec36"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-2c7fc7-61faba46"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-fdc77e-17d653ee"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-8c3bf7-5a644cb3"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-82a7f3-7d927d91"),
-                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.JetfuelFrame~loader.PremiumLoaders-782158-4b9d14dc"),
+                        d.e("shared~loader.Dock~bundle.AccountAnalytics~bundle.DockPeek~ondemand.XChat~loader.TimelineFrameHandler~loader."),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--0ac6436a"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--5e50816d"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--e485a98f"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--5cf8449f"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--3d2d491d"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--a12f12ad"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--28c121cf"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--a44521c3"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--1cdffefb"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--8285c3eb"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--2ea035ac"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--ba3e194f"),
+                        d.e("shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--d043c1bc"),
                         d.e("loader.JetfuelFrame"),
                     ]).then(d.bind(d, 654907)),
             });
@@ -239,7 +219,7 @@
         672890: (e, a, d) => {
             d.d(a, { Z: () => o });
             d(202784);
-            const o = (0, d(523561).Z)({ loader: () => Promise.all([d.e("modules.common-e907d115"), d.e("modules.common-e019dbda"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), d.e("loader.PreviewActions")]).then(d.bind(d, 58336)) });
+            const o = (0, d(523561).Z)({ loader: () => Promise.all([d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), d.e("loader.PreviewActions")]).then(d.bind(d, 58336)) });
         },
         684511: (e, a, d) => {
             d.d(a, { Z: () => o });
@@ -254,11 +234,18 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -289,7 +276,7 @@
             };
         },
         847607: (e, a, d) => {
-            d.d(a, { Aq: () => c, FK: () => k, GS: () => l, N1: () => h, PY: () => m, X6: () => w, cm: () => t });
+            d.d(a, { Aq: () => c, FK: () => w, GS: () => l, N1: () => h, PY: () => m, X6: () => g, cm: () => t });
             d(202784);
             var o = d(111677),
                 r = d.n(o),
@@ -309,8 +296,8 @@
                 D = r().eea0cbee,
                 p = r().i29533b3,
                 M = r().h129c3c3,
-                k = (e) => (e ? ((e) => p({ screenName: e }))(e) : b),
-                w = (e) => (e ? ((e) => M({ screenName: e }))(e) : D);
+                w = (e) => (e ? ((e) => p({ screenName: e }))(e) : b),
+                g = (e) => (e ? ((e) => M({ screenName: e }))(e) : D);
         },
         417714: (e, a, d) => {
             d.d(a, { l: () => u });
@@ -514,7 +501,14 @@
                                         const a = (0, t.rs)(e.message);
                                         u.summary = (u.summary || "") + a;
                                         const d = (0, t.Bv)(e.message);
-                                        d ? (u.toolUsage = d) : ((u.bulletPoints = [...(u.bulletPoints || []), (0, l.K)(e.message)]), e.webResults && e.webResults.length && ((u.webResults = e.webResults), this.addWebResults(e.webResults || []))), (h = !0), (this.accumulatedSummary += a);
+                                        if (d) {
+                                            const e = (0, t.cU)(d);
+                                            e && (u.bulletPoints = [...(u.bulletPoints || []), e]);
+                                        } else {
+                                            const a = (0, l.K)(e.message);
+                                            a.trim() && (u.bulletPoints = [...(u.bulletPoints || []), a]), e.webResults && e.webResults.length && ((u.webResults = e.webResults), this.addWebResults(e.webResults || []));
+                                        }
+                                        (h = !0), (this.accumulatedSummary += a);
                                         break;
                                     }
                                     case c.DECISION: {
@@ -537,7 +531,14 @@
                                     case c.SUMMARY: {
                                         const d = (0, t.Bv)(e.message) ?? void 0,
                                             o = (0, t.rs)(e.message);
-                                        a = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: o, toolUsage: d };
+                                        let r = [];
+                                        if (d) {
+                                            const e = (0, t.cU)(d);
+                                            e && (r = [e]);
+                                        } else {
+                                            (0, l.K)(e.message).trim() && (r = [(0, l.K)(e.message)]);
+                                        }
+                                        a = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: o, toolUsage: d, bulletPoints: r };
                                         break;
                                     }
                                     case c.DECISION: {
@@ -778,4 +779,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.191e737a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.1bfa402a.js.map

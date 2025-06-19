@@ -21,21 +21,19 @@
             const l = (0, r.Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.16"),
-                        o.e("icons.10"),
-                        o.e("icons.1"),
-                        o.e("icons.19"),
+                        o.e("icons.23"),
                         o.e("icons.0"),
-                        o.e("icons.8"),
                         o.e("icons.2"),
-                        o.e("icons.3"),
-                        o.e("icons.15"),
-                        o.e("icons.4"),
+                        o.e("icons.16"),
+                        o.e("icons.19"),
+                        o.e("icons.10"),
+                        o.e("icons.13"),
+                        o.e("icons.24"),
+                        o.e("icons.22"),
+                        o.e("icons.27"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.9"),
-                        o.e("icons.7"),
-                        o.e("icons.28"),
+                        o.e("icons.11"),
                         o.e("icons.26"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
@@ -47,19 +45,28 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.18"),
-                        o.e("icons.13"),
-                        o.e("icons.25"),
+                        o.e("icons.4"),
+                        o.e("icons.14"),
+                        o.e("icons.28"),
+                        o.e("icons.3"),
+                        o.e("icons.1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -69,13 +76,9 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("loader.AudioContextSpaceClip"),
                     ])
                         .then(o.bind(o, 189552))
@@ -91,23 +94,21 @@
             const l = (0, r.Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.21"),
-                        o.e("icons.16"),
-                        o.e("icons.10"),
-                        o.e("icons.1"),
-                        o.e("icons.19"),
-                        o.e("icons.0"),
                         o.e("icons.23"),
-                        o.e("icons.8"),
+                        o.e("icons.0"),
                         o.e("icons.2"),
-                        o.e("icons.3"),
-                        o.e("icons.15"),
-                        o.e("icons.4"),
+                        o.e("icons.16"),
+                        o.e("icons.19"),
+                        o.e("icons.10"),
+                        o.e("icons.13"),
+                        o.e("icons.24"),
+                        o.e("icons.7"),
+                        o.e("icons.22"),
+                        o.e("icons.27"),
+                        o.e("icons.17"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.9"),
-                        o.e("icons.7"),
-                        o.e("icons.28"),
+                        o.e("icons.11"),
                         o.e("icons.26"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
@@ -119,19 +120,30 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.18"),
-                        o.e("icons.13"),
-                        o.e("icons.25"),
+                        o.e("icons.8"),
+                        o.e("icons.4"),
+                        o.e("icons.14"),
+                        o.e("icons.28"),
+                        o.e("icons.21"),
+                        o.e("icons.3"),
+                        o.e("icons.1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -141,14 +153,10 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                         o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         o.e("loader.AudioContextSpaceMedia"),
                     ])
@@ -163,21 +171,19 @@
             const d = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.16"),
-                        o.e("icons.10"),
-                        o.e("icons.1"),
-                        o.e("icons.19"),
+                        o.e("icons.23"),
                         o.e("icons.0"),
-                        o.e("icons.8"),
                         o.e("icons.2"),
-                        o.e("icons.3"),
-                        o.e("icons.15"),
-                        o.e("icons.4"),
+                        o.e("icons.16"),
+                        o.e("icons.19"),
+                        o.e("icons.10"),
+                        o.e("icons.13"),
+                        o.e("icons.24"),
+                        o.e("icons.22"),
+                        o.e("icons.27"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.9"),
-                        o.e("icons.7"),
-                        o.e("icons.28"),
+                        o.e("icons.11"),
                         o.e("icons.26"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
@@ -189,19 +195,28 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.18"),
-                        o.e("icons.13"),
-                        o.e("icons.25"),
+                        o.e("icons.4"),
+                        o.e("icons.14"),
+                        o.e("icons.28"),
+                        o.e("icons.3"),
+                        o.e("icons.1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -211,13 +226,9 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("loader.AudioContextVoiceMedia"),
                     ])
                         .then(o.bind(o, 56957))
@@ -238,18 +249,18 @@
                 c = o(111677),
                 D = o.n(c),
                 h = o(597237),
-                M = o(827515),
-                m = o(321835),
+                m = o(827515),
+                M = o(321835),
                 p = o(355755),
-                k = o(982790),
+                y = o(982790),
                 f = o(87682),
-                y = o(384757),
+                k = o(384757),
                 w = o(16057),
-                b = o(265399),
-                I = (o(571372), o(363397));
-            function P(e) {
+                I = o(265399),
+                P = (o(571372), o(363397));
+            function b(e) {
                 const a = e.clipId,
-                    [o] = d.useState(() => (0, I.Z)({ id: a })),
+                    [o] = d.useState(() => (0, P.Z)({ id: a })),
                     r = { store: o, broadcastId: e.audioSpaceId, mediaKey: e.mediaKey };
                 return d.createElement(S.Provider, { value: r }, e.children);
             }
@@ -346,7 +357,7 @@
                 }
                 return T.w.proxsee.getChatHistory({ access_token: o.access_token, host: o.endpoint, path: B.tJ.CHATMAN_REPLAY, cursor: a.currentCursor, since: 1e6 * o.clipStartTimeMs }).then((e) => Z(e, a, o));
             }
-            function G() {
+            function x() {
                 const { store: e } = A(),
                     a = (function () {
                         const { store: e } = A(),
@@ -373,7 +384,7 @@
                     [n, l] = d.useState({ id: void 0, text: "", durationMs: 0 });
                 if (
                     (d.useEffect(() => {
-                        if ((0, M.Z)(r) && a && a.length) {
+                        if ((0, m.Z)(r) && a && a.length) {
                             const e = (e) => r - e.ntpTimeInSeconds;
                             let o;
                             for (const d of a) {
@@ -384,7 +395,7 @@
                                 const a = 1e3 * Math.abs(e(o)),
                                     d = (function (e, a) {
                                         const o = e.split(" ").length,
-                                            d = a >= o * x;
+                                            d = a >= o * O;
                                         return d;
                                     })(o.body.body, a);
                                 l({ text: d ? o.body.body : "", id: o.body.uuid, durationMs: a });
@@ -395,9 +406,9 @@
                 )
                     return a.length ? { text: n.text, durationMs: n.durationMs } : null;
             }
-            const x = 170;
-            function O(e) {
-                const { handlers: a, space: o, utils: r } = (0, k.$)(e.audioSpaceId),
+            const O = 170;
+            function G(e) {
+                const { handlers: a, space: o, utils: r } = (0, y.$)(e.audioSpaceId),
                     { store: s } = A(),
                     c = (function () {
                         const { broadcastId: e, store: a } = A();
@@ -405,8 +416,8 @@
                     })();
                 n()(c, "activeSpeaker should be defined");
                 const D = d.useMemo(() => ({ isHost: "host" === c.kind, periscopeUserId: c.user?.periscope_user_id }), [c.kind, c.user?.periscope_user_id]),
-                    I = s.useAudioLevel(D),
-                    P = s.useIsPlaying(),
+                    P = s.useAudioLevel(D),
+                    b = s.useIsPlaying(),
                     S = s.useIsMuted(),
                     g = r.state(),
                     _ = (function () {
@@ -419,7 +430,7 @@
                         const l = a.useCurrentTrack(),
                             { currentTimeMs: s, durationMs: i } = l || {};
                         let t = 0;
-                        if ((0, M.Z)(s) && (0, M.Z)(i)) {
+                        if ((0, m.Z)(s) && (0, m.Z)(i)) {
                             const e = Math.min(i, r);
                             t = Math.max(e - s, 0);
                         }
@@ -429,32 +440,32 @@
                     E = (function (e, a) {
                         const o = (0, l.useHistory)(),
                             r = d.useCallback(() => o.push((0, p.g)(e)), [e, o]),
-                            n = (0, y.O)(e, r, a);
+                            n = (0, k.O)(e, r, a);
                         return [{ Icon: h.default, text: H.report, isEmphasized: !0, onClick: n }];
                     })(e.audioSpaceId, e.clipMetadata.startTimecodeMillis),
                     T = (function () {
                         const { broadcastId: e } = A(),
-                            { utils: a } = (0, k.$)(e),
-                            { isPlaying: o, togglePlayback: d } = b.gt.usePlayButtonProps();
+                            { utils: a } = (0, y.$)(e),
+                            { isPlaying: o, togglePlayback: d } = I.gt.usePlayButtonProps();
                         if (a.state() === u.default.StateEnum.replay && a.is.joined) return { isPlaying: o, togglePlayback: d };
                     })(),
-                    B = G(),
+                    B = x(),
                     v = s.useToggleMute();
                 return d.createElement(
-                    m.Z,
+                    M.Z,
                     {
                         onImpression: function () {
                             r.scribe(":*:*:clipping:audiospace_card:impression");
                         },
                     },
                     d.createElement(i.Z, {
-                        audioLevel: I,
+                        audioLevel: P,
                         caption: B,
                         community: o?.community,
                         fadeInWords: !t.Z.reducedMotionEnabled,
                         isJoined: r.is.joined,
                         isMuted: S,
-                        isPlaying: P,
+                        isPlaying: b,
                         menuItems: E,
                         onButtonClick: function () {
                             T ? T.togglePlayback() : a.join();
@@ -481,14 +492,14 @@
             }
             const H = { report: D().ccf2f24e },
                 L = function (e) {
-                    const { space: a } = (0, k.$)(e.audioSpaceId);
+                    const { space: a } = (0, y.$)(e.audioSpaceId);
                     if (!a || !e.clipMetadata) return d.createElement(s.Z, null);
                     const o = a.media_key;
-                    return d.createElement(P, { audioSpaceId: e.audioSpaceId, clipId: e.clipMetadata.clipId, mediaKey: o }, d.createElement(E, null, d.createElement(O, { audioSpaceId: e.audioSpaceId, clipMetadata: e.clipMetadata, withSquareBottomBorderRadius: e.withSquareBottomBorderRadius, withStraightBorders: e.withStraightBorders })));
+                    return d.createElement(b, { audioSpaceId: e.audioSpaceId, clipId: e.clipMetadata.clipId, mediaKey: o }, d.createElement(E, null, d.createElement(G, { audioSpaceId: e.audioSpaceId, clipMetadata: e.clipMetadata, withSquareBottomBorderRadius: e.withSquareBottomBorderRadius, withStraightBorders: e.withStraightBorders })));
                 };
         },
         214196: (e, a, o) => {
-            o.r(a), o.d(a, { __DANGEROUS_IMPORT__: () => I });
+            o.r(a), o.d(a, { __DANGEROUS_IMPORT__: () => P });
             var d = o(807896),
                 r = o(202784),
                 n = o(400752),
@@ -500,31 +511,31 @@
                 c = o(712612),
                 D = o(125363),
                 h = o(390387),
-                M = o(905710),
-                m = o(484633),
+                m = o(905710),
+                M = o(484633),
                 p = o(381904),
-                k = o(982790),
+                y = o(982790),
                 f = o(89609),
-                y = o(123293),
+                k = o(123293),
                 w = o(610214),
-                b = o(265399);
-            const I = function (e) {
+                I = o(265399);
+            const P = function (e) {
                     const a = (0, D.v9)(h._h),
                         o = (0, D.v9)(h.WM),
-                        d = (0, M.e)(e.audioSpaceId),
-                        b = (0, t.p)(),
-                        I = (0, w.Hz)(),
+                        d = (0, m.e)(e.audioSpaceId),
+                        I = (0, t.p)(),
+                        P = (0, w.Hz)(),
                         g = (0, n.b9)(p.e),
-                        { handlers: _, space: C, utils: E } = (0, k.$)(e.audioSpaceId),
+                        { handlers: _, space: C, utils: E } = (0, y.$)(e.audioSpaceId),
                         T = C?.narrow_cast_space_type === s.default.AudienceEnum.employeesOnly,
                         B = (0, f.Z)(e.audioSpaceId),
                         v = C?.host?.user_id === a,
                         R = (0, l.useHistory)(),
                         Z = E.state() === s.default.StateEnum.scheduled,
-                        G = (0, n.b9)(u.aG),
-                        x = (0, n.b9)(c.F3);
-                    let O = {};
-                    O =
+                        x = (0, n.b9)(u.aG),
+                        O = (0, n.b9)(c.F3);
+                    let G = {};
+                    G =
                         !1 === e.isInteractive
                             ? { link: void 0, onButtonClick: void 0 }
                             : E.is.superFollowersOnly && !E.is.joinable
@@ -534,11 +545,11 @@
                                 : Z && v
                                   ? {
                                         onButtonClick: () => {
-                                            x().then((a) => {
+                                            O().then((a) => {
                                                 if (!a) return;
-                                                G(e.audioSpaceId).then((e) => {
+                                                x(e.audioSpaceId).then((e) => {
                                                     const { audioSpaceMetadata: a, broadcast: d } = e;
-                                                    (0, u.j)({ contentType: d.content_type, addToast: b, id: d.id, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: o && String(a?.narrow_cast_space_type) === P.SUBSCRIBERS, mediaKey: d.media_key, role: m.Q.host, clearAndLoadSpace: g, resetExpandedDockStore: I }), R.goBackThroughModals();
+                                                    (0, u.j)({ contentType: d.content_type, addToast: I, id: d.id, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: o && String(a?.narrow_cast_space_type) === b.SUBSCRIBERS, mediaKey: d.media_key, role: M.Q.host, clearAndLoadSpace: g, resetExpandedDockStore: P }), R.goBackThroughModals();
                                                 });
                                             });
                                         },
@@ -548,11 +559,11 @@
                         L = (function (e) {
                             return e ? [e.host, ...e.cohosts, ...e.participants.speakers].filter(Boolean) : [];
                         })(C),
-                        j = { disabled: B.isSubscribing, hasReminderSet: B.props.hasReminderSet, scheduledStart: B.props.scheduledStart, isJoined: E.is.joined, title: E.title(), replayStartTime: void 0, replayDuration: void 0, withSquareBottomBorderRadius: e.withSquareBottomBorderRadius, withStraightBorders: e.withStraightBorders, withoutButton: e.withoutButton, ...O },
+                        j = { disabled: B.isSubscribing, hasReminderSet: B.props.hasReminderSet, scheduledStart: B.props.scheduledStart, isJoined: E.is.joined, title: E.title(), replayStartTime: void 0, replayDuration: void 0, withSquareBottomBorderRadius: e.withSquareBottomBorderRadius, withStraightBorders: e.withStraightBorders, withoutButton: e.withoutButton, ...G },
                         { ended_at: N, started_at: U } = C || {};
                     U && N && ((j.replayStartTime = U), (j.replayDuration = N - U));
                     const q = { ...j, isHost: v, host: C?.host, community: C?.community, participants: L.slice(0, 3), palette: C?.hostPalette, total: C?.participants.total, tunedIn: E.getTunedInCount(), state: H, audience: C?.narrow_cast_space_type, button: void 0 };
-                    E.is.joined && E.is.replayable ? (q.button = r.createElement(S, q)) : E.is.Ended && !E.is.replayable && (q.button = r.createElement(y.Z, { scribe: E.scribe, space: C }));
+                    E.is.joined && E.is.replayable ? (q.button = r.createElement(S, q)) : E.is.Ended && !E.is.replayable && (q.button = r.createElement(k.Z, { scribe: E.scribe, space: C }));
                     if (Z && v) {
                         const e = B.props?.scheduledStart;
                         (!e || Date.now() + A < e) && (q.withoutButton = !0);
@@ -567,10 +578,10 @@
                         r.createElement(s.default, q),
                     );
                 },
-                P = { ALL: "0", EMPLOYEES: "1", SUBSCRIBERS: "2" },
+                b = { ALL: "0", EMPLOYEES: "1", SUBSCRIBERS: "2" },
                 A = 18e5;
             function S(e) {
-                const { isPlaying: a, togglePlayback: o } = b.gt.usePlayButtonProps();
+                const { isPlaying: a, togglePlayback: o } = I.gt.usePlayButtonProps();
                 return r.createElement(s.default.ButtonV2, (0, d.Z)({}, e, { onButtonClick: o, replayIsPlaying: a }));
             }
         },
@@ -604,4 +615,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-b953418a.4873da4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-b953418a.62b22cea.js.map

@@ -2,12 +2,12 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336"],
     {
-        841227: (e, t, r) => {
-            r.d(t, { q: () => A });
-            var s = r(552322),
-                n = r(651782),
-                a = r(369818),
-                l = r(202784);
+        841227: (e, t, n) => {
+            n.d(t, { q: () => Z });
+            var r = n(552322),
+                a = n(651782),
+                s = n(369818),
+                l = n(202784);
             const i = { currentLevel: -1, currentTime: 0, duration: 0, ended: !1, isFullscreen: !1, isPictureInPicture: !1, levels: [], muted: !0, paused: !0, volume: 0 };
             function o(e, t) {
                 switch (t.type) {
@@ -36,328 +36,273 @@
                 }
             }
             const c = (0, l.createContext)({ api: { set currentTime(e) {}, set muted(e) {}, pause: () => {}, play: () => {}, toggleFullscreen: () => {}, togglePictureInPicture: () => {}, set volume(e) {} }, state: i });
-            function d() {
+            function u() {
                 return (0, l.useContext)(c);
             }
-            function u({ children: e, className: t, src: r, startPosition: n, ...d }) {
-                const [u, m] = (0, l.useReducer)(o, i),
-                    v = (0, l.useRef)(null),
-                    h = (0, l.useRef)(),
-                    f = (0, l.useRef)(null);
+            function d({ children: e, className: t, src: n, startPosition: a, ...u }) {
+                const [d, f] = (0, l.useReducer)(o, i),
+                    m = (0, l.useRef)(null),
+                    p = (0, l.useRef)(),
+                    v = (0, l.useRef)(null);
                 (0, l.useEffect)(() => {
-                    const e = f.current;
-                    if (!r || !e) return;
+                    const e = v.current;
+                    if (!n || !e) return;
                     const t = new AbortController();
                     if (
                         (e.addEventListener(
                             "ended",
                             () => {
-                                m({ type: "SET_ENDED" });
+                                f({ type: "SET_ENDED" });
                             },
                             { signal: t.signal },
                         ),
                         e.addEventListener(
                             "pause",
                             () => {
-                                m({ payload: !0, type: "SET_PAUSED" });
+                                f({ payload: !0, type: "SET_PAUSED" });
                             },
                             { signal: t.signal },
                         ),
                         e.addEventListener(
                             "play",
                             () => {
-                                m({ payload: !1, type: "SET_PAUSED" });
+                                f({ payload: !1, type: "SET_PAUSED" });
                             },
                             { signal: t.signal },
                         ),
                         e.addEventListener(
                             "seeked",
                             () => {
-                                m({ payload: e.currentTime, type: "TIME_UPDATE" });
+                                f({ payload: e.currentTime, type: "TIME_UPDATE" });
                             },
                             { signal: t.signal },
                         ),
                         e.addEventListener(
                             "timeupdate",
                             () => {
-                                m({ payload: e.currentTime, type: "TIME_UPDATE" });
+                                f({ payload: e.currentTime, type: "TIME_UPDATE" });
                             },
                             { signal: t.signal },
                         ),
                         e.addEventListener(
                             "volumechange",
                             () => {
-                                m({ payload: e.muted, type: "SET_MUTED" }), m({ payload: e.volume, type: "SET_VOLUME" });
+                                f({ payload: e.muted, type: "SET_MUTED" }), f({ payload: e.volume, type: "SET_VOLUME" });
                             },
                             { signal: t.signal },
                         ),
                         e.addEventListener(
                             "loadedmetadata",
                             () => {
-                                m({ payload: e.duration, type: "SET_DURATION" }), m({ payload: e.muted, type: "SET_MUTED" }), m({ payload: e.volume, type: "SET_VOLUME" });
+                                f({ payload: e.duration, type: "SET_DURATION" }), f({ payload: e.muted, type: "SET_MUTED" }), f({ payload: e.volume, type: "SET_VOLUME" });
                             },
                             { signal: t.signal },
                         ),
-                        "application/x-mpegURL" !== d.type)
+                        "application/x-mpegURL" !== u.type)
                     )
-                        return void (e.src = r);
-                    const s = new a.ZP({ startLevel: -1, startPosition: n });
+                        return void (e.src = n);
+                    const r = new s.ZP({ startLevel: -1, startPosition: a });
                     return (
-                        s.on(a.ZP.Events.LEVEL_SWITCHED, (e, t) => {
-                            m({ payload: t, type: "LEVEL_SWITCHED" });
+                        r.on(s.ZP.Events.LEVEL_SWITCHED, (e, t) => {
+                            f({ payload: t, type: "LEVEL_SWITCHED" });
                         }),
-                        s.on(a.ZP.Events.MANIFEST_PARSED, (e, t) => {
-                            m({ payload: t, type: "MANIFEST_PARSED" });
+                        r.on(s.ZP.Events.MANIFEST_PARSED, (e, t) => {
+                            f({ payload: t, type: "MANIFEST_PARSED" });
                         }),
-                        s.loadSource(r),
-                        s.attachMedia(e),
-                        (h.current = s),
+                        r.loadSource(n),
+                        r.attachMedia(e),
+                        (p.current = r),
                         () => {
-                            t.abort(), s && (s.detachMedia(), s.destroy());
+                            t.abort(), r && (r.detachMedia(), r.destroy());
                         }
                     );
-                }, [d.type, r, n]);
+                }, [u.type, n, a]);
                 const x = (0, l.useMemo)(
                     () => ({
                         set currentTime(e) {
-                            f.current && (f.current.currentTime = e);
+                            v.current && (v.current.currentTime = e);
                         },
                         set muted(e) {
-                            f.current && (f.current.muted = e);
+                            v.current && (v.current.muted = e);
                         },
                         pause() {
-                            f.current?.pause();
+                            v.current?.pause();
                         },
                         play() {
-                            f.current?.play();
+                            v.current?.play();
                         },
                         toggleFullscreen() {
-                            document.fullscreenElement === v.current
-                                ? (document.exitFullscreen(), m({ payload: !1, type: "SET_FULLSCREEN" }))
-                                : v.current?.requestFullscreen().then(() => {
-                                      m({ payload: !0, type: "SET_FULLSCREEN" });
+                            document.fullscreenElement === m.current
+                                ? (document.exitFullscreen(), f({ payload: !1, type: "SET_FULLSCREEN" }))
+                                : m.current?.requestFullscreen().then(() => {
+                                      f({ payload: !0, type: "SET_FULLSCREEN" });
                                   });
                         },
                         togglePictureInPicture() {
-                            document.pictureInPictureElement === f.current
+                            document.pictureInPictureElement === v.current
                                 ? document.exitPictureInPicture().then(() => {
-                                      m({ payload: !1, type: "SET_PICTURE_IN_PICTURE" });
+                                      f({ payload: !1, type: "SET_PICTURE_IN_PICTURE" });
                                   })
-                                : f.current?.requestPictureInPicture().then(() => {
-                                      m({ payload: !0, type: "SET_PICTURE_IN_PICTURE" });
+                                : v.current?.requestPictureInPicture().then(() => {
+                                      f({ payload: !0, type: "SET_PICTURE_IN_PICTURE" });
                                   });
                         },
                         set level(e) {
-                            h.current && (h.current.currentLevel = e);
+                            p.current && (p.current.currentLevel = e);
                         },
                         set volume(e) {
-                            f.current && (f.current.volume = e);
+                            v.current && (v.current.volume = e);
                         },
                     }),
                     [],
                 );
-                return (0, s.jsxs)("div", { ref: v, className: t, children: [(0, s.jsx)("video", { height: "100%", ref: f, width: "100%", ...d }), (0, s.jsx)(c.Provider, { value: { api: x, state: u }, children: e })] });
+                return (0, r.jsxs)("div", { ref: m, className: t, children: [(0, r.jsx)("video", { height: "100%", ref: v, width: "100%", ...u }), (0, r.jsx)(c.Provider, { value: { api: x, state: d }, children: e })] });
             }
-            function m() {
-                const { api: e, state: t } = d();
-                return (0, s.jsx)("div", { className: "absolute bottom-0 end-0 start-0 top-0 cursor-pointer", onClick: t.paused ? e.play : e.pause });
+            function f() {
+                const { api: e, state: t } = u();
+                return (0, r.jsx)("div", { className: "absolute bottom-0 end-0 start-0 top-0 cursor-pointer", onClick: t.paused ? e.play : e.pause });
             }
-            var v = r(993165),
-                h = r(58124),
-                f = r(16373);
+            var m = n(993165),
+                p = n(58124),
+                v = n(16373);
             function x(e) {
-                const { api: t, state: r } = d(),
-                    n = r.isFullscreen ? (0, s.jsx)(h.Z, {}) : (0, s.jsx)(f.Z, {}),
-                    a = "Full screen";
-                return (0, s.jsx)(v.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: t.toggleFullscreen, variant: "onMediaText", ...e });
+                const { api: t, state: n } = u(),
+                    a = n.isFullscreen ? (0, r.jsx)(p.Z, {}) : (0, r.jsx)(v.Z, {}),
+                    s = "Full screen";
+                return (0, r.jsx)(m.z, { "aria-label": s, hoverLabel: s, icon: a, onClick: t.toggleFullscreen, variant: "onMediaText", ...e });
             }
-            var p = r(958959),
-                g = r(158385);
-            function w(e) {
-                const { api: t, state: r } = d(),
-                    n = "undefined" == typeof window || !document.pictureInPictureEnabled,
-                    a = r.isPictureInPicture ? (0, s.jsx)(p.Z, {}) : (0, s.jsx)(g.Z, {}),
+            var h = n(958959),
+                E = n(158385);
+            function g(e) {
+                const { api: t, state: n } = u(),
+                    a = "undefined" == typeof window || !document.pictureInPictureEnabled,
+                    s = n.isPictureInPicture ? (0, r.jsx)(h.Z, {}) : (0, r.jsx)(E.Z, {}),
                     l = "Picture-in-Picture";
-                return (0, s.jsx)(v.z, { "aria-label": l, disabled: n, hoverLabel: l, icon: a, onClick: t.togglePictureInPicture, variant: "onMediaText", ...e });
+                return (0, r.jsx)(m.z, { "aria-label": l, disabled: a, hoverLabel: l, icon: s, onClick: t.togglePictureInPicture, variant: "onMediaText", ...e });
             }
-            var E = r(611105),
-                y = r(992796),
-                j = r(231783);
-            function b(e) {
-                const { api: t, state: r } = d(),
-                    n = r.ended ? (0, s.jsx)(E.Z, {}) : r.paused ? (0, s.jsx)(y.Z, {}) : (0, s.jsx)(j.Z, {}),
-                    a = r.ended ? "Replay" : r.paused ? "Play" : "Pause";
-                return (0, s.jsx)(v.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: r.ended || r.paused ? t.play : t.pause, variant: "onMediaText", ...e });
+            var y = n(611105),
+                b = n(992796),
+                T = n(231783);
+            function S(e) {
+                const { api: t, state: n } = u(),
+                    a = n.ended ? (0, r.jsx)(y.Z, {}) : n.paused ? (0, r.jsx)(b.Z, {}) : (0, r.jsx)(T.Z, {}),
+                    s = n.ended ? "Replay" : n.paused ? "Play" : "Pause";
+                return (0, r.jsx)(m.z, { "aria-label": s, hoverLabel: s, icon: a, onClick: n.ended || n.paused ? t.play : t.pause, variant: "onMediaText", ...e });
             }
-            var S = r(840489),
-                T = r(801766),
-                N = r(644490);
-            function L({ progressColor: e = "white", thumbColor: t = "white", thumbLabels: r, trackColor: n = "gray500", withThumb: a = !0, ...i }) {
-                const o = (0, l.useContext)(T.wQ),
+            var w = n(840489),
+                j = n(801766),
+                N = n(644490);
+            function I({ progressColor: e = "white", thumbColor: t = "white", thumbLabels: n, trackColor: a = "gray500", withThumb: s = !0, ...i }) {
+                const o = (0, l.useContext)(j.wQ),
                     c = o && o.values.length > 1,
-                    d = `${((o?.values[0] ?? 0) / (i.maxValue ?? 100)) * 100}%`,
-                    u = `${(((o?.values[1] ?? 0) - (o?.values[0] ?? 0)) / (i.maxValue ?? 100)) * 100}%`,
-                    m = "vertical" === i.orientation ? { height: d } : { width: d },
-                    v = "vertical" === i.orientation ? { height: u } : { width: u };
-                return (0, s.jsx)(T.Uj, { className: (0, S.Z)("flex w-6 cursor-pointer items-center", "vertical" === i.orientation ? "h-full w-6 flex-col-reverse" : "h-6 w-full"), children: ({ state: o }) => (0, s.jsxs)(l.Fragment, { children: [(0, s.jsx)("div", { className: (0, S.Z)(N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: m }), (0, s.jsx)("div", { className: (0, S.Z)(!c && "grow", N.z7[n], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: c ? v : {} }), c && (0, s.jsx)("div", { className: (0, S.Z)("grow", N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5") }), a && o.values.map((e, n) => (0, s.jsx)(T.gs, { className: (0, S.Z)("rounded-full h-4 w-4 shadow-md", N.z7[t]), style: { transform: "none" }, index: n, ...(r?.[n] && { "aria-label": r[n] }) }, e))] }) });
+                    u = `${((o?.values[0] ?? 0) / (i.maxValue ?? 100)) * 100}%`,
+                    d = `${(((o?.values[1] ?? 0) - (o?.values[0] ?? 0)) / (i.maxValue ?? 100)) * 100}%`,
+                    f = "vertical" === i.orientation ? { height: u } : { width: u },
+                    m = "vertical" === i.orientation ? { height: d } : { width: d };
+                return (0, r.jsx)(j.Uj, { className: (0, w.Z)("flex w-6 cursor-pointer items-center", "vertical" === i.orientation ? "h-full w-6 flex-col-reverse" : "h-6 w-full"), children: ({ state: o }) => (0, r.jsxs)(l.Fragment, { children: [(0, r.jsx)("div", { className: (0, w.Z)(N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: f }), (0, r.jsx)("div", { className: (0, w.Z)(!c && "grow", N.z7[a], "vertical" === i.orientation ? "w-0.5" : "h-0.5"), style: c ? m : {} }), c && (0, r.jsx)("div", { className: (0, w.Z)("grow", N.z7[e], "vertical" === i.orientation ? "w-0.5" : "h-0.5") }), s && o.values.map((e, a) => (0, r.jsx)(j.gs, { className: (0, w.Z)("rounded-full h-4 w-4 shadow-md", N.z7[t]), style: { transform: "none" }, index: a, ...(n?.[a] && { "aria-label": n[a] }) }, e))] }) });
             }
-            function C(e) {
-                return (0, s.jsx)(T.iR, { ...e, className: (0, S.Z)("relative flex flex-col", "vertical" === e.orientation ? "h-full" : "w-full"), ref: void 0, children: (0, s.jsx)(L, { ...e }) });
+            function P(e) {
+                return (0, r.jsx)(j.iR, { ...e, className: (0, w.Z)("relative flex flex-col", "vertical" === e.orientation ? "h-full" : "w-full"), ref: void 0, children: (0, r.jsx)(I, { ...e }) });
             }
-            function I() {
+            function _() {
                 const [e, t] = (0, l.useState)(!1),
-                    [r, n] = (0, l.useState)(0),
-                    { api: a, state: i } = d();
-                return (0, s.jsx)(C, {
+                    [n, a] = (0, l.useState)(0),
+                    { api: s, state: i } = u();
+                return (0, r.jsx)(P, {
                     "aria-label": "Scrubber",
                     maxValue: i.duration,
                     minValue: 0,
                     onChange: function (e) {
-                        t(!0), Array.isArray(e) || (n(e), (a.currentTime = e));
+                        t(!0), Array.isArray(e) || (a(e), (s.currentTime = e));
                     },
                     onChangeEnd: function () {
                         t(!1);
                     },
                     step: 0.01,
-                    value: e ? r : i.currentTime,
+                    value: e ? n : i.currentTime,
                     withThumb: !1,
                 });
             }
-            var z = r(332161);
-            function M(e, t = "milliseconds") {
-                const r = [],
-                    s = e / (60 * ("milliseconds" === t ? 1e3 : 1) * 60),
-                    n = Math.floor(s),
-                    a = 60 * (s - n),
-                    l = Math.floor(a),
-                    i = 60 * (a - l),
+            var L = n(332161);
+            function C(e, t = "milliseconds") {
+                const n = [],
+                    r = e / (60 * ("milliseconds" === t ? 1e3 : 1) * 60),
+                    a = Math.floor(r),
+                    s = 60 * (r - a),
+                    l = Math.floor(s),
+                    i = 60 * (s - l),
                     o = Math.floor(i);
-                return n && r.push(n.toString().padStart(2, "0")), r.push(l.toString().padStart(2, "0")), r.push(o.toString().padStart(2, "0")), r.join(":");
+                return a && n.push(a.toString().padStart(2, "0")), n.push(l.toString().padStart(2, "0")), n.push(o.toString().padStart(2, "0")), n.join(":");
             }
-            function P() {
-                const { state: e } = d();
-                return (0, s.jsx)(z.x, { color: "white", children: `${M(e.currentTime, "seconds")} / ${M(e.duration, "seconds")}` });
+            function R() {
+                const { state: e } = u();
+                return (0, r.jsx)(L.x, { color: "white", children: `${C(e.currentTime, "seconds")} / ${C(e.duration, "seconds")}` });
             }
-            var _ = r(983666);
-            function Z() {
-                const { state: e } = d(),
+            var M = n(983666);
+            function U() {
+                const { state: e } = u(),
                     t = e.duration >= e.currentTime ? e.duration - e.currentTime : 0;
-                return (0, s.jsx)(_._, { children: M(t, "seconds") });
+                return (0, r.jsx)(M._, { children: C(t, "seconds") });
             }
-            var R = r(516718),
-                V = r(4700);
-            function U(e) {
-                const { api: t, state: r } = d(),
-                    n = r.muted ? (0, s.jsx)(R.Z, {}) : (0, s.jsx)(V.Z, {}),
-                    a = r.muted ? "Unmute" : "Mute";
-                return (0, s.jsx)(v.z, {
-                    "aria-label": a,
-                    hoverLabel: a,
-                    icon: n,
+            var A = n(516718),
+                D = n(4700);
+            function z(e) {
+                const { api: t, state: n } = u(),
+                    a = n.muted ? (0, r.jsx)(A.Z, {}) : (0, r.jsx)(D.Z, {}),
+                    s = n.muted ? "Unmute" : "Mute";
+                return (0, r.jsx)(m.z, {
+                    "aria-label": s,
+                    hoverLabel: s,
+                    icon: a,
                     onClick: function () {
-                        t.muted = !r.muted;
+                        t.muted = !n.muted;
                     },
                     variant: "onMediaText",
                     ...e,
                 });
             }
-            function A({ children: e, ...t }) {
-                const r = (0, l.useRef)(null),
-                    a = (0, n.X)(r);
-                return (0, s.jsx)(u, { className: "relative flex h-full w-full bg-black tabular-nums", ...t, children: (0, s.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 top-0 flex w-full", ref: r, children: [(0, s.jsx)(m, {}), e, a ? (0, s.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 flex flex-col bg-gradient-to-b from-transparent to-black px-1 pb-1", children: [(0, s.jsx)("div", { className: "flex w-full items-center justify-between px-2", children: (0, s.jsx)(I, {}) }), (0, s.jsxs)("div", { className: "flex w-full items-center justify-between", children: [(0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(b, {}) }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [(0, s.jsx)(P, {}), (0, s.jsxs)("div", { className: "flex", children: [(0, s.jsx)(U, {}), (0, s.jsx)(w, {}), (0, s.jsx)(x, {})] })] })] })] }) : (0, s.jsx)("div", { className: "absolute bottom-3 start-3", children: (0, s.jsx)(Z, {}) })] }) });
+            function Z({ children: e, ...t }) {
+                const n = (0, l.useRef)(null),
+                    s = (0, a.X)(n);
+                return (0, r.jsx)(d, { className: "relative flex h-full w-full bg-black tabular-nums", ...t, children: (0, r.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 top-0 flex w-full", ref: n, children: [(0, r.jsx)(f, {}), e, s ? (0, r.jsxs)("div", { className: "absolute bottom-0 end-0 start-0 flex flex-col bg-gradient-to-b from-transparent to-black px-1 pb-1", children: [(0, r.jsx)("div", { className: "flex w-full items-center justify-between px-2", children: (0, r.jsx)(_, {}) }), (0, r.jsxs)("div", { className: "flex w-full items-center justify-between", children: [(0, r.jsx)("div", { className: "flex items-center", children: (0, r.jsx)(S, {}) }), (0, r.jsxs)("div", { className: "flex items-center gap-2", children: [(0, r.jsx)(R, {}), (0, r.jsxs)("div", { className: "flex", children: [(0, r.jsx)(z, {}), (0, r.jsx)(g, {}), (0, r.jsx)(x, {})] })] })] })] }) : (0, r.jsx)("div", { className: "absolute bottom-3 start-3", children: (0, r.jsx)(U, {}) })] }) });
             }
         },
-        458872: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M7.414 13l5.043 5.04-1.414 1.42L3.586 12l7.457-7.46 1.414 1.42L7.414 11H21v2H7.414z" }) });
-        },
-        169355: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M12 3.75c-4.56 0-8.25 3.69-8.25 8.25s3.69 8.25 8.25 8.25 8.25-3.69 8.25-8.25S16.56 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12zM16.4 9.28l-5.21 7.15-4.1-3.27 1.25-1.57 2.47 1.98 3.97-5.47 1.62 1.18z" }) });
-        },
-        666200: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M15.043 3.54l1.414 1.42L9.414 12l7.043 7.04-1.414 1.42L6.586 12l8.457-8.46z" }) });
-        },
-        52053: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" }) });
-        },
-        958959: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3.457 2.04L9 7.59V3h2v8H3V9h4.586L2.043 3.46l1.414-1.42zM19.5 8H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) });
-        },
-        16373: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" }) });
-        },
-        158385: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3 3h8v2H6.414l5.543 5.54-1.414 1.42L5 6.41V11H3V3zm16.5 5H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) });
-        },
-        231783: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M4 2h5v20H4V2zm11 20h5V2h-5v20z" }) });
-        },
-        992796: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M21 12L4 2v20l17-10z" }) });
-        },
-        516718: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M15 1.06v21.88L6.68 17H3.5C2.12 17 1 15.88 1 14.5v-5C1 8.12 2.12 7 3.5 7h3.18L15 1.06zM6 9H3.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H6V9zm2 6.49l5 3.57V4.94L8 8.51v6.98zm10.5-6.9l2 2 2-2L23.91 10l-2 2 2 2-1.41 1.41-2-2-2 2L17.09 14l2-2-2-2 1.41-1.41z" }) });
-        },
-        4700: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var s = r(552322);
-            const n = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M15 22.94V1.06L6.68 7H3.5C2.12 7 1 8.12 1 9.5v5C1 15.88 2.12 17 3.5 17h3.18L15 22.94zM3.5 9H6v6H3.5c-.28 0-.5-.22-.5-.5v-5c0-.28.22-.5.5-.5zM13 19.06l-5-3.57V8.51l5-3.57v14.12zm5.95-12.01c-.24-.24-.49-.45-.75-.65l1-1.75c.41.29.8.62 1.16.99 3.52 3.51 3.52 9.21 0 12.72-.36.37-.75.7-1.16.99l-1-1.75c.26-.2.51-.41.75-.65 2.73-2.73 2.73-7.17 0-9.9zM17 12c0-.8-.31-1.52-.82-2.06l1.02-1.78c1.1.91 1.8 2.29 1.8 3.84s-.7 2.93-1.8 3.84l-1.02-1.78c.51-.54.82-1.26.82-2.06z" }) });
-        },
-        983706: (e, t, r) => {
-            r.d(t, { T: () => o });
-            var s = r(552322),
-                n = r(254073),
-                a = r.n(n),
-                l = r(202784),
-                i = r(801074);
-            function o({ api: e, className: t, footer: r, header: n, height: o = "100vh", horizontal: c, id: d, items: u, nearEndThreshold: m = 5, nearStartThreshold: v = 2, onAtEnd: h, onAtStart: f, onNearEnd: x, onNearStart: p, onScroll: g, renderItem: w, width: E = "100%", ...y }) {
-                const j = d ? `scroller-cache-${d}` : void 0,
-                    b = u.length,
-                    S = (0, l.useRef)(null),
-                    T = (0, l.useRef)(0),
-                    [N, L] = (0, l.useMemo)(() => {
-                        if (!j) return [];
+        983706: (e, t, n) => {
+            n.d(t, { T: () => o });
+            var r = n(552322),
+                a = n(254073),
+                s = n.n(a),
+                l = n(202784),
+                i = n(801074);
+            function o({ api: e, className: t, footer: n, header: a, height: o = "100vh", horizontal: c, id: u, items: d, nearEndThreshold: f = 5, nearStartThreshold: m = 2, onAtEnd: p, onAtStart: v, onNearEnd: x, onNearStart: h, onScroll: E, renderItem: g, width: y = "100%", ...b }) {
+                const T = u ? `scroller-cache-${u}` : void 0,
+                    S = d.length,
+                    w = (0, l.useRef)(null),
+                    j = (0, l.useRef)(0),
+                    [N, I] = (0, l.useMemo)(() => {
+                        if (!T) return [];
                         if ("undefined" == typeof window) return [];
-                        const e = sessionStorage.getItem(j);
+                        const e = sessionStorage.getItem(T);
                         if (!e) return [];
                         try {
                             return JSON.parse(e);
                         } catch (e) {
                             return [];
                         }
-                    }, [j]);
+                    }, [T]);
                 (0, l.useLayoutEffect)(() => {
-                    const e = S.current;
+                    const e = w.current;
                     e && void 0 !== N && e.scrollTo(N);
                 }, [N]),
                     (0, l.useEffect)(() => {
-                        const e = S.current;
+                        const e = w.current;
                         return () => {
-                            e && j && sessionStorage.setItem(j, JSON.stringify([e.scrollOffset, e.cache]));
+                            e && T && sessionStorage.setItem(T, JSON.stringify([e.scrollOffset, e.cache]));
                         };
-                    }, [j]),
+                    }, [T]),
                     (0, l.useEffect)(() => {
                         function e() {
-                            j && sessionStorage.removeItem(j);
+                            T && sessionStorage.removeItem(T);
                         }
                         return (
                             window.addEventListener("beforeunload", e),
@@ -365,9 +310,9 @@
                                 window.removeEventListener("beforeunload", e);
                             }
                         );
-                    }, [j]),
+                    }, [T]),
                     (0, l.useImperativeHandle)(e, () => {
-                        const e = S.current;
+                        const e = w.current;
                         return {
                             findEndIndex: () => e?.findEndIndex() ?? 0,
                             findStartIndex: () => e?.findStartIndex() ?? 0,
@@ -376,8 +321,8 @@
                             scrollTo(t) {
                                 e?.scrollTo(t);
                             },
-                            scrollToIndex(t, r) {
-                                e?.scrollToIndex(t, r);
+                            scrollToIndex(t, n) {
+                                e?.scrollToIndex(t, n);
                             },
                             get scrollOffset() {
                                 return e?.scrollOffset ?? 0;
@@ -390,75 +335,75 @@
                             },
                         };
                     }, []);
-                const C = (0, l.useMemo)(() => a()(() => x?.(), 500), [x]),
-                    I = (0, l.useMemo)(() => a()(() => p?.(), 500), [p]),
-                    z = (0, l.useCallback)(
+                const P = (0, l.useMemo)(() => s()(() => x?.(), 500), [x]),
+                    _ = (0, l.useMemo)(() => s()(() => h?.(), 500), [h]),
+                    L = (0, l.useCallback)(
                         (e) => {
-                            const t = S.current;
+                            const t = w.current;
                             if (!t) return;
-                            const r = e,
-                                s = r > T.current ? "forward" : "backward";
-                            g?.(e, s), "backward" === s && (0 === r && f?.(), t.findStartIndex() <= v && I()), "forward" === s && (r + t.viewportSize - t.scrollSize == 0 && h?.(), b - t.findEndIndex() <= m && C()), (T.current = r);
+                            const n = e,
+                                r = n > j.current ? "forward" : "backward";
+                            E?.(e, r), "backward" === r && (0 === n && v?.(), t.findStartIndex() <= m && _()), "forward" === r && (n + t.viewportSize - t.scrollSize == 0 && p?.(), S - t.findEndIndex() <= f && P()), (j.current = n);
                         },
-                        [b, C, I, m, v, h, f, g],
+                        [S, P, _, f, m, p, v, E],
                     );
-                return (0, s.jsxs)("div", { className: t, style: { height: o, overflowX: c ? "auto" : "hidden", overflowY: c ? "hidden" : "auto", overflowAnchor: "none", width: E }, children: [n, (0, s.jsx)(i.dM, { as: "ul", cache: L, count: b, horizontal: c, item: "li", onScroll: z, ref: S, ...y, children: (e) => w(u[e], e) }), r] });
+                return (0, r.jsxs)("div", { className: t, style: { height: o, overflowX: c ? "auto" : "hidden", overflowY: c ? "hidden" : "auto", overflowAnchor: "none", width: y }, children: [a, (0, r.jsx)(i.dM, { as: "ul", cache: I, count: S, horizontal: c, item: "li", onScroll: L, ref: w, ...b, children: (e) => g(d[e], e) }), n] });
             }
         },
-        917317: (e, t, r) => {
-            r.d(t, { Ol: () => i, SZ: () => c, Zb: () => l, aY: () => d, eW: () => u, ll: () => o });
-            var s = r(552322),
-                n = r(202784),
-                a = r(31674);
-            const l = n.forwardRef(({ className: e, ...t }, r) => (0, s.jsx)("div", { ref: r, className: (0, a.cn)("rounded-xl border bg-card text-text shadow", e), ...t }));
+        917317: (e, t, n) => {
+            n.d(t, { Ol: () => i, SZ: () => c, Zb: () => l, aY: () => u, eW: () => d, ll: () => o });
+            var r = n(552322),
+                a = n(202784),
+                s = n(31674);
+            const l = a.forwardRef(({ className: e, ...t }, n) => (0, r.jsx)("div", { ref: n, className: (0, s.cn)("rounded-xl border bg-card text-text shadow", e), ...t }));
             l.displayName = "Card";
-            const i = n.forwardRef(({ className: e, ...t }, r) => (0, s.jsx)("div", { ref: r, className: (0, a.cn)("flex flex-col space-y-1.5 p-6", e), ...t }));
+            const i = a.forwardRef(({ className: e, ...t }, n) => (0, r.jsx)("div", { ref: n, className: (0, s.cn)("flex flex-col space-y-1.5 p-6", e), ...t }));
             i.displayName = "CardHeader";
-            const o = n.forwardRef(({ className: e, ...t }, r) => (0, s.jsx)("div", { ref: r, className: (0, a.cn)("font-semibold leading-none tracking-tight", e), ...t }));
+            const o = a.forwardRef(({ className: e, ...t }, n) => (0, r.jsx)("div", { ref: n, className: (0, s.cn)("font-semibold leading-none tracking-tight", e), ...t }));
             o.displayName = "CardTitle";
-            const c = n.forwardRef(({ className: e, ...t }, r) => (0, s.jsx)("div", { ref: r, className: (0, a.cn)("text-subtext2 text-gray-700", e), ...t }));
+            const c = a.forwardRef(({ className: e, ...t }, n) => (0, r.jsx)("div", { ref: n, className: (0, s.cn)("text-subtext2 text-gray-700", e), ...t }));
             c.displayName = "CardDescription";
-            const d = n.forwardRef(({ className: e, ...t }, r) => (0, s.jsx)("div", { ref: r, className: (0, a.cn)("p-6 pt-0", e), ...t }));
-            d.displayName = "CardContent";
-            const u = n.forwardRef(({ className: e, ...t }, r) => (0, s.jsx)("div", { ref: r, className: (0, a.cn)("flex items-center p-6 pt-0", e), ...t }));
-            u.displayName = "CardFooter";
+            const u = a.forwardRef(({ className: e, ...t }, n) => (0, r.jsx)("div", { ref: n, className: (0, s.cn)("p-6 pt-0", e), ...t }));
+            u.displayName = "CardContent";
+            const d = a.forwardRef(({ className: e, ...t }, n) => (0, r.jsx)("div", { ref: n, className: (0, s.cn)("flex items-center p-6 pt-0", e), ...t }));
+            d.displayName = "CardFooter";
         },
-        476865: (e, t, r) => {
-            r.d(t, { SP: () => o, dr: () => i, mQ: () => l, nU: () => c });
-            var s = r(552322),
-                n = r(582493),
-                a = r(31674);
+        476865: (e, t, n) => {
+            n.d(t, { SP: () => o, dr: () => i, mQ: () => l, nU: () => c });
+            var r = n(552322),
+                a = n(582493),
+                s = n(31674);
             function l({ className: e, ...t }) {
-                return (0, s.jsx)(n.fC, { "data-slot": "tabs", className: (0, a.cn)("flex flex-col gap-2", e), ...t });
+                return (0, r.jsx)(a.fC, { "data-slot": "tabs", className: (0, s.cn)("flex flex-col gap-2", e), ...t });
             }
             function i({ className: e, ...t }) {
-                return (0, s.jsx)(n.aV, { "data-slot": "tabs-list", className: (0, a.cn)("bg-muted text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-lg p-1", e), ...t });
+                return (0, r.jsx)(a.aV, { "data-slot": "tabs-list", className: (0, s.cn)("bg-muted text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-lg p-1", e), ...t });
             }
             function o({ className: e, ...t }) {
-                return (0, s.jsx)(n.xz, { "data-slot": "tabs-trigger", className: (0, a.cn)("data-[state=active]:bg-background data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring inline-flex flex-1 items-center justify-center gap-1.5 rounded-md px-2 py-1 text-subtext1 font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", e), ...t });
+                return (0, r.jsx)(a.xz, { "data-slot": "tabs-trigger", className: (0, s.cn)("data-[state=active]:bg-background data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring inline-flex flex-1 items-center justify-center gap-1.5 rounded-md px-2 py-1 text-subtext1 font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", e), ...t });
             }
             function c({ className: e, ...t }) {
-                return (0, s.jsx)(n.VY, { "data-slot": "tabs-content", className: (0, a.cn)("flex-1 outline-none", e), ...t });
+                return (0, r.jsx)(a.VY, { "data-slot": "tabs-content", className: (0, s.cn)("flex-1 outline-none", e), ...t });
             }
         },
-        651782: (e, t, r) => {
-            r.d(t, { X: () => n });
-            var s = r(202784);
-            const n = (e) => {
-                const [t, r] = (0, s.useState)(!1);
+        651782: (e, t, n) => {
+            n.d(t, { X: () => a });
+            var r = n(202784);
+            const a = (e) => {
+                const [t, n] = (0, r.useState)(!1);
                 return (
-                    (0, s.useEffect)(() => {
+                    (0, r.useEffect)(() => {
                         const t = e.current;
-                        function s() {
-                            r(!0);
+                        function r() {
+                            n(!0);
                         }
-                        function n() {
-                            r(!1);
+                        function a() {
+                            n(!1);
                         }
                         return (
-                            t && (t.addEventListener("mouseenter", s), t.addEventListener("mouseleave", n)),
+                            t && (t.addEventListener("mouseenter", r), t.addEventListener("mouseleave", a)),
                             () => {
-                                t && (t.removeEventListener("mouseenter", s), t.removeEventListener("mouseleave", n));
+                                t && (t.removeEventListener("mouseenter", r), t.removeEventListener("mouseleave", a));
                             }
                         );
                     }, [e]),
@@ -468,4 +413,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.2fc3f27a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.be15c53a.js.map

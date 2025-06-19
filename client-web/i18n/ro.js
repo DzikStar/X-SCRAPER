@@ -2506,41 +2506,6 @@
                     return "Subiect – " + e.topicName;
                 }),
                 t("ic6aa5f4", "Autentificat."),
-                t("c02e7e3c", "Se încarcă..."),
-                t("c5453f28", "Round of 64"),
-                t("eb256a86", "Round of 32"),
-                t("g77adc66", "Sweet Sixteen"),
-                t("a6d2520c", "Sweet 16"),
-                t("g5b63eb6", "Elite Eight"),
-                t("d8bf2890", "Elite 8"),
-                t("f9d3d6f2", "Final Four"),
-                t("bda24f7c", "Final 4"),
-                t("i5043440", "Campionatul național"),
-                t("fcb16026", "Campionat"),
-                t("e9c89ee8", "Est"),
-                t("h259fd86", "Vest"),
-                t("a7b2545a", "Sud"),
-                t("fdf7819a", "Vestul Mijlociu"),
-                t("i899e9b0", "Trimitere tablou"),
-                t("c5b04394", "Vezi selecții"),
-                t("h836bbae", "Vezi turneu"),
-                t("e1059d6c", "Prima etapă"),
-                t("b1602be4", "A doua etapă"),
-                t("ef7bc2c0", "20–21 martie"),
-                t("h726aaf2", "22–23 martie"),
-                t("ee7cd198", "27–28 martie"),
-                t("fed91402", "29–30 martie"),
-                t("aba0a450", "5 aprilie"),
-                t("jdfba2dc", "7 aprilie"),
-                t("b7c6bc12", "TBD"),
-                t("c373612c", "Alege:"),
-                t("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                t("j5db9ddd", " din "),
-                t("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 t("j4c40da4", "Trimite acum"),
                 t("b23688c8", "Anulează cronometrul"),
                 t("cca5d499", function (e) {
@@ -2986,8 +2951,8 @@
                 t("a7de64de", "Informații despre reclame"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Cariere"),
-                t("e0adec82", "Resurse pentru branduri");
-            t("df1b7550", "Marketing"),
+                t("e0adec82", "Resurse pentru branduri"),
+                t("df1b7550", "Marketing"),
                 t("he258678", "X pentru afaceri"),
                 t("c6f58084", "Dezvoltatori"),
                 t("d83f18d2", "Director"),
@@ -3021,8 +2986,8 @@
                 }),
                 t("d6d9aab6", "Adaugă Marcaj"),
                 t("bb89cf46", "Elimină Marcajul"),
-                t("a739d4ba", "Adaugă la folderul cu Marcaje"),
-                t("d5270434", "Ieșire"),
+                t("a739d4ba", "Adaugă la folderul cu Marcaje");
+            t("d5270434", "Ieșire"),
                 t("ac85c6b2", "A apărut o eroare la încărcarea imaginii"),
                 t("b327c12a", "Imagine"),
                 t("ic76bdf0", "Recreează cu Grok"),
@@ -3898,8 +3863,8 @@
                 t("a2bf8b8a", "Comută la ascultare"),
                 t("caa8d928", "Comută Anulare zgomot"),
                 t("b5d88f0c", "Doar angajați"),
-                t("c855ab8e", "Doar Abonați");
-            t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire."),
+                t("c855ab8e", "Doar Abonați"),
+                t("ddeb0a3c", "Aceasta este Comunitatea. Îți plac membrii? Aruncă o privire."),
                 t("e111f531", function (e) {
                     return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
                 }),
@@ -3947,8 +3912,8 @@
                 t("f2333850", "Partajează cu persoane care nu sunt pe X"),
                 t("cddb8097", "Află mai multe"),
                 t("f77997b0", "Co-gazdă"),
-                t("i48f4ed8", "Vorbitor"),
-                t("a77c8e02", "Ascultător"),
+                t("i48f4ed8", "Vorbitor");
+            t("a77c8e02", "Ascultător"),
                 t("bdfa93eb", function (e) {
                     return "Distribuit de " + e.name;
                 }),
@@ -4218,6 +4183,7 @@
                 t("f794af9a", "Modul distractiv"),
                 t("eccf9fea", "Modul obișnuit"),
                 t("j22655f2", "Întreabă orice"),
+                t("c02e7e3c", "Se încarcă..."),
                 t("h0681e3e", "Vorbește cu Grok, asistentul nostru AI"),
                 t("d593fd78", "Poate răspunde la întrebări, căuta pe X și genera imagini."),
                 t("d0205a24", "Verifică informațiile"),
@@ -4302,7 +4268,6 @@
                 t("afa2a58e", "See all posts"),
                 t("fc83e7e2", "See all users"),
                 t("df601d92", "Relevant Users"),
-                t("b001fa12", "Source query"),
                 t("db6c20cf", function (e) {
                     return "Show all (" + e.count + ")";
                 }),
@@ -4385,7 +4350,7 @@
                 t("g3ce0132", "S-a gândit timp de"),
                 t("f8007364", "Extinde pentru detalii"),
                 t("ca53f780", "Restrânge detaliile"),
-                t("b52484b6", "Se caută..."),
+                t("e6d51c62", "Searching"),
                 t("ib1c5475", function (e) {
                     return "S-a gândit timp de " + e.minutes + " (de) minute și " + e.seconds + " (de) secunde";
                 }),
@@ -4403,6 +4368,7 @@
                 t("a3186bff", function (e) {
                     return e.count + " pagin" + r(e.count, "i", "ă", "i") + " web";
                 }),
+                t("b52484b6", "Se caută..."),
                 t("f4146dda", "Ce răspuns preferi?"),
                 t("a2c2be32", "Vei contribui la îmbunătățirea Grok."),
                 t("g01599b6", "Răspunsul 1"),
@@ -4940,8 +4906,8 @@
                 t("b649d8cc", "Doar abonați"),
                 t("j9282130", "Miniatură transmisiune"),
                 t("g629b8b0", "Expirat"),
-                t("eb87323c", "Afișează date de analiză pentru perioada selectată, de la difuzarea fluxului în direct.");
-            t("i6a75722", "Interval de timp"),
+                t("eb87323c", "Afișează date de analiză pentru perioada selectată, de la difuzarea fluxului în direct."),
+                t("i6a75722", "Interval de timp"),
                 t("c602f5b8", "Total"),
                 t("b35e68ae", "Nr. total de participanți"),
                 t("h78ee79a", "Nr. total de vizionări"),
@@ -4970,8 +4936,8 @@
                 t("e41fffbc", "Durata totală de vizionare a videoclipurilor."),
                 t("if2909ba", "Durată vizionare"),
                 t("i0e5bf4c", "Videoclipurile tale"),
-                t("ed99baea", "Acces timpuriu la versiunea beta"),
-                t("gf898b70", "Căutare avansată"),
+                t("ed99baea", "Acces timpuriu la versiunea beta");
+            t("gf898b70", "Căutare avansată"),
                 t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
                 t("a8584698", "start-up ai"),
                 t("jb6f9292", "conține exact structura „start-up ai”"),
@@ -5892,8 +5858,8 @@
                 t("fb59415e", "Pentru a putea fi afișată public sub formă de context la postare, o notă trebuie evaluată drept utilă de suficiente persoane cu puncte de vedere diferite. Această abordare ajută la evitarea părerilor subiective și a manipulării și la identificarea notelor care sunt utile pentru multe persoane."),
                 t("f9a44022", "Nu compania X alege ce va fi publicat, ci utilizatorii"),
                 t("gdf4fbb2", "Compania X nu scrie, nu evaluează și nu moderează notele (cu excepția cazului în care se încalcă regulile X). Credem că faptul că oferim utilizatorilor posibilitatea de a lua decizii împreună este o modalitate corectă și eficientă de a adăuga informații care îi ajută să fie mai bine informați."),
-                t("cc720e6a", "Notele Comunității se bazează pe transparența datelor");
-            t("j2fcd33a", "Datele cuprind contribuțiile oferite până la"),
+                t("cc720e6a", "Notele Comunității se bazează pe transparența datelor"),
+                t("j2fcd33a", "Datele cuprind contribuțiile oferite până la"),
                 t("d4a6b322", "Toate datele din Notele Comunității sunt publicate aici zilnic pentru ca membrii comunității noastre să aibă acces liber să le analizeze, să identifice probleme și să găsească oportunități prin care să îmbunătățească Notele Comunității. Abia așteptăm să învățăm împreună cu tine."),
                 t("c359263a", "Află cum poți utiliza și analiza datele în Notele Comunității "),
                 t("b8a27fe2", "din ghidul nostru"),
@@ -5926,8 +5892,8 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Șterge folder"),
-                t("f4ea967a", "Folderul a fost șters"),
+                t("h18f86a4", "Șterge folder");
+            t("f4ea967a", "Folderul a fost șters"),
                 t("b670aa62", "Nume folder"),
                 t("aece5462", "Denumirea folderului a fost actualizată cu succes"),
                 t("e3299b94", "Ceva nu a mers bine. Încearcă din nou să actualizezi acel folder într-un minut."),
@@ -6898,8 +6864,8 @@
                 t("b36cd50e", "Indică principala echipă cu care candidații vor lucra după angajare."),
                 t("d3a427ce", "Selectează nivelul de experiență necesar."),
                 t("i7174442", "Descrierea locului de muncă"),
-                t("fef0cf02", "Introdu o descriere detaliată a locului de muncă. Subliniază responsabilitățile și calificările cheie pentru a-i ajuta pe candidați să înțeleagă corect postul.");
-            t("b7800bec", "Descrie locul de muncă în cel mult 200 de caractere. Afișează-l în postări, recomandări și în căutări."),
+                t("fef0cf02", "Introdu o descriere detaliată a locului de muncă. Subliniază responsabilitățile și calificările cheie pentru a-i ajuta pe candidați să înțeleagă corect postul."),
+                t("b7800bec", "Descrie locul de muncă în cel mult 200 de caractere. Afișează-l în postări, recomandări și în căutări."),
                 t("a5244ece", "URL candidatură (obligatoriu)"),
                 t("g2b553f6", "Introdu URL-ul public unde candidații își pot prezenta candidaturile pentru acest loc de muncă."),
                 t("c2e77608", "Denumirea locului de muncă (obligatoriu)"),
@@ -6932,8 +6898,8 @@
                 t("c924ad84", "Continuă redarea videoclipurilor"),
                 t("de750a3c", "Bucură-te de ele chiar și când ai telefonul blocat"),
                 t("he5e87c4", "Bucură-te de prioritizarea răspunsurilor"),
-                t("g64a60ba", "Obține o prioritizare mai mică când răspunzi la postări"),
-                t("a7ee832a", "Corectează greșeli de dactilografiere și erori, până la 60 de minute"),
+                t("g64a60ba", "Obține o prioritizare mai mică când răspunzi la postări");
+            t("a7ee832a", "Corectează greșeli de dactilografiere și erori, până la 60 de minute"),
                 t("fdd77a34", "Creează postări mai lungi"),
                 t("j6d26a7a", "Scrie oricât vrei să distribui"),
                 t("c4fd68da", "Personalizează-ți experiența"),
@@ -7874,7 +7840,45 @@
                 t("cfcac293", function (e) {
                     return "Cadou și plată " + e.price;
                 }),
-                t("d7a73450", "Nivel");
+                t("d7a73450", "Nivel"),
+                t("hbd2c24e", "Acest cont nu este momentan eligibil pentru cadouri."),
+                t("f3fddc98", "Condițiile noastre de utilizare pentru cumpărători"),
+                t("cff9c889", "Aflați mai multe"),
+                t("c65dda96", "Cadoul a fost trimis."),
+                t("f6e2a407", function (e) {
+                    return "Permite tuturor să vadă ecusonul tău de Abonat când răspunzi la postările utilizatorului @" + e.screenName;
+                }),
+                t("j8dedddd", function (e) {
+                    return "Dacă dezactivezi această funcție, @" + e.screenName + " și Abonații săi vor vedea în continuare ecusonul tău când răspunzi la postările destinate doar Abonaților utilizatorului @" + e.screenName + ". @" + e.screenName + " va vedea tot timpul ecusonul tău.";
+                }),
+                t("c8a513f6", "Anulează Abonamentul"),
+                t("ea000ec8", "Ți-ai anulat deja Abonamentul?"),
+                t("d7b8387e", "Dacă ai anulat deja Abonamentul, nu mai poți face nimic. Abonamentul tău va expira automat la sfârșitul ciclului de facturare."),
+                t("f4166d9a", "Vrei să îți anulezi Abonamentul?"),
+                t("b74ff5fc", "Dacă anulezi, Abonamentul tău va expira automat la sfârșitul ciclului de facturare."),
+                t("ee9efbc8", "Continuă spre anulare"),
+                t("c5d9c77a", "Se pare că a fost o mică problemă. Dar nu-ți face griji, nu este din vina ta. Închide această fereastră și încearcă din nou."),
+                t("jda53c24", "Îți poți anula Abonamentul prin Apple App Store."),
+                t("g0a7a53e", "Îți poți anula Abonamentul prin Magazinul Google Play."),
+                t("i5f14be7", function (e) {
+                    return "Bine ai revenit, " + e.displayName;
+                }),
+                t("a76d58ba", "Analiză reclame"),
+                t("eccd0e1a", "Analiză organizații"),
+                t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
+                t("eb603ffc", "Fă upgrade pentru a adăuga afiliați la rețeaua ta și pentru a vedea analiza agregată."),
+                t("gf67aae4", "Fă upgrade pentru acces complet"),
+                t("h75e3618", "Include organizația"),
+                t("h24a8862", "Despre această casetă de selectare"),
+                t("c29e3a88", "Selectează afiliați"),
+                t("j8318d57", function (e) {
+                    return e.number + " afilia" + r(e.number, "ți", "t", "ți");
+                }),
+                t("bf809ec0", "Selectează afiliați"),
+                t("b719e224", "Niciun rezultat"),
+                t("c9938100", "Rezultatele căutării"),
+                t("d1a35ec6", "Adaugă conturi"),
+                t("b437adda", "Fă upgrade la opțiunea contra cost");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7913,47 +7917,9 @@
                     u(e, a)
                 );
             }
-            t("hbd2c24e", "Acest cont nu este momentan eligibil pentru cadouri."),
-                t("f3fddc98", "Condițiile noastre de utilizare pentru cumpărători"),
-                t("cff9c889", "Aflați mai multe"),
-                t("c65dda96", "Cadoul a fost trimis."),
-                t("f6e2a407", function (e) {
-                    return "Permite tuturor să vadă ecusonul tău de Abonat când răspunzi la postările utilizatorului @" + e.screenName;
-                }),
-                t("j8dedddd", function (e) {
-                    return "Dacă dezactivezi această funcție, @" + e.screenName + " și Abonații săi vor vedea în continuare ecusonul tău când răspunzi la postările destinate doar Abonaților utilizatorului @" + e.screenName + ". @" + e.screenName + " va vedea tot timpul ecusonul tău.";
-                }),
-                t("c8a513f6", "Anulează Abonamentul"),
-                t("ea000ec8", "Ți-ai anulat deja Abonamentul?"),
-                t("d7b8387e", "Dacă ai anulat deja Abonamentul, nu mai poți face nimic. Abonamentul tău va expira automat la sfârșitul ciclului de facturare."),
-                t("f4166d9a", "Vrei să îți anulezi Abonamentul?"),
-                t("b74ff5fc", "Dacă anulezi, Abonamentul tău va expira automat la sfârșitul ciclului de facturare."),
-                t("ee9efbc8", "Continuă spre anulare"),
-                t("c5d9c77a", "Se pare că a fost o mică problemă. Dar nu-ți face griji, nu este din vina ta. Închide această fereastră și încearcă din nou."),
-                t("jda53c24", "Îți poți anula Abonamentul prin Apple App Store."),
-                t("g0a7a53e", "Îți poți anula Abonamentul prin Magazinul Google Play."),
-                t("i5f14be7", function (e) {
-                    return "Bine ai revenit, " + e.displayName;
-                }),
-                t("a76d58ba", "Analiză reclame"),
-                t("eccd0e1a", "Analiză organizații"),
-                t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
-                t("eb603ffc", "Fă upgrade pentru a adăuga afiliați la rețeaua ta și pentru a vedea analiza agregată."),
-                t("gf67aae4", "Fă upgrade pentru acces complet"),
-                t("h75e3618", "Include organizația"),
-                t("h24a8862", "Despre această casetă de selectare"),
-                t("c29e3a88", "Selectează afiliați"),
-                t("j8318d57", function (e) {
-                    return e.number + " afilia" + r(e.number, "ți", "t", "ți");
-                }),
-                t("bf809ec0", "Selectează afiliați"),
-                t("b719e224", "Niciun rezultat"),
-                t("c9938100", "Rezultatele căutării"),
-                t("d1a35ec6", "Adaugă conturi"),
-                t("b437adda", "Fă upgrade la opțiunea contra cost"),
-                t("f1f6c88b", function (e) {
-                    return "Conturi (" + e.count + ")";
-                }),
+            t("f1f6c88b", function (e) {
+                return "Conturi (" + e.count + ")";
+            }),
                 t("b02156b8", "Invitații"),
                 t("gd67d29b", function (e) {
                     return "Invitații (" + e.count + ")";
@@ -8906,8 +8872,8 @@
                 t("b3160a69", function (e) {
                     return e.volumePercent + "%";
                 }),
-                t("fb236728", "Pauză");
-            t("e9bd453e", "Reluare"),
+                t("fb236728", "Pauză"),
+                t("e9bd453e", "Reluare"),
                 t("d46b00b0", "Treci la vizionarea în direct"),
                 t("ec8ab8b4", "Ignoră"),
                 t("b8b6344a", "Nu mai ignora"),
@@ -8954,8 +8920,8 @@
                 t("a7bf9962", "Descarcă videoclipul"),
                 t("ccc97152", "Viteză de redare"),
                 t("h531ade0", "Calitatea video"),
-                t("e8b5757c", "0,25x"),
-                t("e7e954de", "0,5x"),
+                t("e8b5757c", "0,25x");
+            t("e7e954de", "0,5x"),
                 t("g07ffe66", "0,75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1,25x"),
@@ -10503,12 +10469,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Dacă dai clic pe Promovează postarea, ești de acord cu "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13387,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.28b3a27a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.15207c7a.js.map

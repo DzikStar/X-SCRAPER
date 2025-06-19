@@ -453,65 +453,33 @@
             var r = n(157396);
             const a = (0, n(587878).Z)({ palette: r.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        452661: (e, t, n) => {
-            n.d(t, { Z: () => f });
+        151624: (e, t, n) => {
+            n.d(t, { Z: () => r });
+            const r = n(454479).Z;
+        },
+        454479: (e, t, n) => {
+            n.d(t, { Z: () => p });
             var r = n(18198),
-                a = {
-                    centroidDimension: function (e, t, n, r) {
-                        var o = e.touchBank,
-                            i = 0,
-                            s = 0,
-                            l = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
-                        if (null !== l) l.touchActive && l.currentTimeStamp > t && ((i += r && n ? l.currentPageX : r && !n ? l.currentPageY : !r && n ? l.previousPageX : l.previousPageY), (s = 1));
-                        else
-                            for (var c = 0; c < o.length; c++) {
-                                var u = o[c];
-                                if (null != u && u.touchActive && u.currentTimeStamp >= t) {
-                                    (i += r && n ? u.currentPageX : r && !n ? u.currentPageY : !r && n ? u.previousPageX : u.previousPageY), s++;
-                                }
-                            }
-                        return s > 0 ? i / s : a.noCentroid;
-                    },
-                    currentCentroidXOfTouchesChangedAfter: function (e, t) {
-                        return a.centroidDimension(e, t, !0, !0);
-                    },
-                    currentCentroidYOfTouchesChangedAfter: function (e, t) {
-                        return a.centroidDimension(e, t, !1, !0);
-                    },
-                    previousCentroidXOfTouchesChangedAfter: function (e, t) {
-                        return a.centroidDimension(e, t, !0, !1);
-                    },
-                    previousCentroidYOfTouchesChangedAfter: function (e, t) {
-                        return a.centroidDimension(e, t, !1, !1);
-                    },
-                    currentCentroidX: function (e) {
-                        return a.centroidDimension(e, 0, !0, !0);
-                    },
-                    currentCentroidY: function (e) {
-                        return a.centroidDimension(e, 0, !1, !0);
-                    },
-                    noCentroid: -1,
-                };
-            const o = a;
-            var i = o.currentCentroidXOfTouchesChangedAfter,
-                s = o.currentCentroidYOfTouchesChangedAfter,
-                l = o.previousCentroidXOfTouchesChangedAfter,
-                c = o.previousCentroidYOfTouchesChangedAfter,
-                u = o.currentCentroidX,
-                d = o.currentCentroidY,
-                h = {
+                a = n(661841),
+                o = a.Z.currentCentroidXOfTouchesChangedAfter,
+                i = a.Z.currentCentroidYOfTouchesChangedAfter,
+                s = a.Z.previousCentroidXOfTouchesChangedAfter,
+                l = a.Z.previousCentroidYOfTouchesChangedAfter,
+                c = a.Z.currentCentroidX,
+                u = a.Z.currentCentroidY,
+                d = {
                     _initializeGestureState(e) {
                         (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
                     },
                     _updateGestureStateOnMove(e, t) {
-                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = i(t, e._accountsForMovesUpTo)), (e.moveY = s(t, e._accountsForMovesUpTo));
+                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = o(t, e._accountsForMovesUpTo)), (e.moveY = i(t, e._accountsForMovesUpTo));
                         var n = e._accountsForMovesUpTo,
-                            r = l(t, n),
-                            a = i(t, n),
-                            o = c(t, n),
-                            u = s(t, n),
+                            r = s(t, n),
+                            a = o(t, n),
+                            c = l(t, n),
+                            u = i(t, n),
                             d = e.dx + (a - r),
-                            h = e.dy + (u - o),
+                            h = e.dy + (u - c),
                             m = t.mostRecentTimeStamp - e._accountsForMovesUpTo;
                         (e.vx = (d - e.dx) / m), (e.vy = (h - e.dy) / m), (e.dx = d), (e.dy = h), (e._accountsForMovesUpTo = t.mostRecentTimeStamp);
                     },
@@ -522,10 +490,10 @@
                             panHandlers: {
                                 onStartShouldSetResponder: (t) => null != e.onStartShouldSetPanResponder && e.onStartShouldSetPanResponder(t, n),
                                 onMoveShouldSetResponder: (t) => null != e.onMoveShouldSetPanResponder && e.onMoveShouldSetPanResponder(t, n),
-                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && h._initializeGestureState(n), (n.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, n)),
+                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && d._initializeGestureState(n), (n.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, n)),
                                 onMoveShouldSetResponderCapture(t) {
                                     var r = t.touchHistory;
-                                    return n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (h._updateGestureStateOnMove(n, r), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, n));
+                                    return n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (d._updateGestureStateOnMove(n, r), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, n));
                                 },
                                 onResponderGrant: (a) => (
                                     t.handle || (t.handle = r.Z.createInteractionHandle()),
@@ -534,18 +502,18 @@
                                             clearTimeout(e.timeout);
                                         })(t),
                                     (t.shouldCancelClick = !0),
-                                    (n.x0 = u(a.touchHistory)),
-                                    (n.y0 = d(a.touchHistory)),
+                                    (n.x0 = c(a.touchHistory)),
+                                    (n.y0 = u(a.touchHistory)),
                                     (n.dx = 0),
                                     (n.dy = 0),
                                     e.onPanResponderGrant && e.onPanResponderGrant(a, n),
                                     null == e.onShouldBlockNativeResponder || e.onShouldBlockNativeResponder(a, n)
                                 ),
                                 onResponderReject(r) {
-                                    m(t, e.onPanResponderReject, r, n);
+                                    h(t, e.onPanResponderReject, r, n);
                                 },
                                 onResponderRelease(r) {
-                                    m(t, e.onPanResponderRelease, r, n), p(t), h._initializeGestureState(n);
+                                    h(t, e.onPanResponderRelease, r, n), m(t), d._initializeGestureState(n);
                                 },
                                 onResponderStart(t) {
                                     var r = t.touchHistory;
@@ -553,14 +521,14 @@
                                 },
                                 onResponderMove(t) {
                                     var r = t.touchHistory;
-                                    n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (h._updateGestureStateOnMove(n, r), e.onPanResponderMove && e.onPanResponderMove(t, n));
+                                    n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (d._updateGestureStateOnMove(n, r), e.onPanResponderMove && e.onPanResponderMove(t, n));
                                 },
                                 onResponderEnd(r) {
                                     var a = r.touchHistory;
-                                    (n.numberActiveTouches = a.numberActiveTouches), m(t, e.onPanResponderEnd, r, n);
+                                    (n.numberActiveTouches = a.numberActiveTouches), h(t, e.onPanResponderEnd, r, n);
                                 },
                                 onResponderTerminate(r) {
-                                    m(t, e.onPanResponderTerminate, r, n), p(t), h._initializeGestureState(n);
+                                    h(t, e.onPanResponderTerminate, r, n), m(t), d._initializeGestureState(n);
                                 },
                                 onResponderTerminationRequest: (t) => null == e.onPanResponderTerminationRequest || e.onPanResponderTerminationRequest(t, n),
                                 onClickCapture: (e) => {
@@ -571,16 +539,56 @@
                         };
                     },
                 };
-            function m(e, t, n, a) {
+            function h(e, t, n, a) {
                 e.handle && (r.Z.clearInteractionHandle(e.handle), (e.handle = null)), t && t(n, a);
             }
-            function p(e) {
+            function m(e) {
                 e.timeout = setTimeout(() => {
                     e.shouldCancelClick = !1;
                 }, 250);
             }
-            const f = h;
+            const p = d;
+        },
+        661841: (e, t, n) => {
+            n.d(t, { Z: () => a });
+            var r = {
+                centroidDimension: function (e, t, n, a) {
+                    var o = e.touchBank,
+                        i = 0,
+                        s = 0,
+                        l = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                    if (null !== l) l.touchActive && l.currentTimeStamp > t && ((i += a && n ? l.currentPageX : a && !n ? l.currentPageY : !a && n ? l.previousPageX : l.previousPageY), (s = 1));
+                    else
+                        for (var c = 0; c < o.length; c++) {
+                            var u = o[c];
+                            if (null != u && u.touchActive && u.currentTimeStamp >= t) {
+                                (i += a && n ? u.currentPageX : a && !n ? u.currentPageY : !a && n ? u.previousPageX : u.previousPageY), s++;
+                            }
+                        }
+                    return s > 0 ? i / s : r.noCentroid;
+                },
+                currentCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !0);
+                },
+                currentCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !0);
+                },
+                previousCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !1);
+                },
+                previousCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !1);
+                },
+                currentCentroidX: function (e) {
+                    return r.centroidDimension(e, 0, !0, !0);
+                },
+                currentCentroidY: function (e) {
+                    return r.centroidDimension(e, 0, !1, !0);
+                },
+                noCentroid: -1,
+            };
+            const a = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.1e95e95a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.f0992eba.js.map

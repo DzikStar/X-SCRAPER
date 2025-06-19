@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Debugger"],
+    ["ondemand.Debugger", "icons/IconChevronDown-js"],
     {
         232678: (e, t, n) => {
             "use strict";
@@ -72,7 +72,7 @@
                         (r.src = e);
                 });
             }
-            async function _(e, t, n) {
+            async function k(e, t, n) {
                 const r = "http://www.w3.org/2000/svg",
                     o = document.createElementNS(r, "svg"),
                     a = document.createElementNS(r, "foreignObject");
@@ -95,10 +95,10 @@
                     })(o)
                 );
             }
-            const k = (e, t) => {
+            const _ = (e, t) => {
                 if (e instanceof t) return !0;
                 const n = Object.getPrototypeOf(e);
-                return null !== n && (n.constructor.name === t.name || k(n, t));
+                return null !== n && (n.constructor.name === t.name || _(n, t));
             };
             function A(e, t, n, r) {
                 const o = `.${e}:${t}`,
@@ -189,12 +189,12 @@
                 return (H[r] = o), o;
             }
             async function O(e, t) {
-                return k(e, HTMLCanvasElement)
+                return _(e, HTMLCanvasElement)
                     ? (async function (e) {
                           const t = e.toDataURL();
                           return "data:," === t ? e.cloneNode(!1) : Z(t);
                       })(e)
-                    : k(e, HTMLVideoElement)
+                    : _(e, HTMLVideoElement)
                       ? (async function (e, t) {
                             if (e.currentSrc) {
                                 const t = document.createElement("canvas"),
@@ -205,7 +205,7 @@
                                 r = I(n);
                             return Z(await B(n, r, t));
                         })(e, t)
-                      : k(e, HTMLIFrameElement)
+                      : _(e, HTMLIFrameElement)
                         ? (async function (e, t) {
                               var n;
                               try {
@@ -213,13 +213,13 @@
                               } catch (e) {}
                               return e.cloneNode(!1);
                           })(e, t)
-                        : e.cloneNode(V(e));
+                        : e.cloneNode(z(e));
             }
             const j = (e) => null != e.tagName && "SLOT" === e.tagName.toUpperCase(),
-                V = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
-            function z(e, t, n) {
+                z = (e) => null != e.tagName && "SVG" === e.tagName.toUpperCase();
+            function V(e, t, n) {
                 return (
-                    k(t, Element) &&
+                    _(t, Element) &&
                         ((function (e, t, n) {
                             const r = t.style;
                             if (!r) return;
@@ -232,17 +232,17 @@
                                           const e = Math.floor(parseFloat(a.substring(0, a.length - 2))) - 0.1;
                                           a = `${e}px`;
                                       }
-                                      k(e, HTMLIFrameElement) && "display" === n && "inline" === a && (a = "block"), "d" === n && t.getAttribute("d") && (a = `path(${t.getAttribute("d")})`), r.setProperty(n, a, o.getPropertyPriority(n));
+                                      _(e, HTMLIFrameElement) && "display" === n && "inline" === a && (a = "block"), "d" === n && t.getAttribute("d") && (a = `path(${t.getAttribute("d")})`), r.setProperty(n, a, o.getPropertyPriority(n));
                                   });
                         })(e, t, n),
                         (function (e, t, n) {
                             R(e, t, ":before", n), R(e, t, ":after", n);
                         })(e, t, n),
                         (function (e, t) {
-                            k(e, HTMLTextAreaElement) && (t.innerHTML = e.value), k(e, HTMLInputElement) && t.setAttribute("value", e.value);
+                            _(e, HTMLTextAreaElement) && (t.innerHTML = e.value), _(e, HTMLInputElement) && t.setAttribute("value", e.value);
                         })(e, t),
                         (function (e, t) {
-                            if (k(e, HTMLSelectElement)) {
+                            if (_(e, HTMLSelectElement)) {
                                 const n = t,
                                     r = Array.from(n.children).find((t) => e.value === t.getAttribute("value"));
                                 r && r.setAttribute("selected", "");
@@ -258,12 +258,12 @@
                           .then((n) =>
                               (async function (e, t, n) {
                                   var r, o;
-                                  if (V(t)) return t;
+                                  if (z(t)) return t;
                                   let a = [];
                                   return (
-                                      (a = j(e) && e.assignedNodes ? E(e.assignedNodes()) : k(e, HTMLIFrameElement) && (null === (r = e.contentDocument) || void 0 === r ? void 0 : r.body) ? E(e.contentDocument.body.childNodes) : E((null !== (o = e.shadowRoot) && void 0 !== o ? o : e).childNodes)),
+                                      (a = j(e) && e.assignedNodes ? E(e.assignedNodes()) : _(e, HTMLIFrameElement) && (null === (r = e.contentDocument) || void 0 === r ? void 0 : r.body) ? E(e.contentDocument.body.childNodes) : E((null !== (o = e.shadowRoot) && void 0 !== o ? o : e).childNodes)),
                                       0 === a.length ||
-                                          k(e, HTMLVideoElement) ||
+                                          _(e, HTMLVideoElement) ||
                                           (await a.reduce(
                                               (e, r) =>
                                                   e
@@ -277,7 +277,7 @@
                                   );
                               })(e, n, t),
                           )
-                          .then((n) => z(e, n, t))
+                          .then((n) => V(e, n, t))
                           .then((e) =>
                               (async function (e, t) {
                                   const n = e.querySelectorAll ? e.querySelectorAll("use") : [];
@@ -369,13 +369,13 @@
                 return !1;
             }
             async function Q(e, t) {
-                k(e, Element) &&
+                _(e, Element) &&
                     (await (async function (e, t) {
                         (await J("background", e, t)) || (await J("background-image", e, t)), (await J("mask", e, t)) || (await J("-webkit-mask", e, t)) || (await J("mask-image", e, t)) || (await J("-webkit-mask-image", e, t));
                     })(e, t),
                     await (async function (e, t) {
-                        const n = k(e, HTMLImageElement);
-                        if ((!n || F(e.src)) && (!k(e, SVGImageElement) || F(e.href.baseVal))) return;
+                        const n = _(e, HTMLImageElement);
+                        if ((!n || F(e.src)) && (!_(e, SVGImageElement) || F(e.href.baseVal))) return;
                         const r = n ? e.src : e.href.baseVal,
                             o = await B(r, I(r), t);
                         await new Promise((r, a) => {
@@ -548,7 +548,7 @@
                                 n[e] = r[e];
                             });
                     })(o, t);
-                return await _(o, n, r);
+                return await k(o, n, r);
             }
             async function le(e, t = {}) {
                 const { width: n, height: r } = $(e, t),
@@ -848,6 +848,31 @@
                 );
             }
         },
+        782642: (e, t, n) => {
+            "use strict";
+            n.d(t, { p: () => i });
+            var r = n(202784),
+                o = n(125363),
+                a = n(601576);
+            const i = () => {
+                    const e = (0, o.I0)(),
+                        t = s(),
+                        n = r.useRef(null);
+                    return (
+                        r.useEffect(() => () => clearTimeout(n.current), [t]),
+                        r.useCallback(
+                            (r) => {
+                                e((0, a.fz)(r)), (n.current = setTimeout(() => t(), 3e3));
+                            },
+                            [e, t],
+                        )
+                    );
+                },
+                s = () => {
+                    const e = (0, o.I0)();
+                    return r.useCallback(() => e((0, a.RS)()), [e]);
+                };
+        },
         497088: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { InMemoryCache: () => r, networkRequestLog: () => o });
@@ -1026,6 +1051,20 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        487552: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => l });
+            var r = n(202784),
+                o = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
         666536: (e, t, n) => {
             "use strict";
             n.d(t, { Z: () => a });
@@ -1092,8 +1131,8 @@
                         $ = e.thumbColor,
                         T = e.trackColor,
                         Z = e.value,
-                        _ = void 0 !== Z && Z,
-                        k = (0, a.Z)(e, h),
+                        k = void 0 !== Z && Z,
+                        _ = (0, a.Z)(e, h),
                         A = i.useRef(null);
                     function R(e) {
                         var t = "focus" === e.nativeEvent.type ? m : p;
@@ -1106,18 +1145,18 @@
                         F = c(I, 2),
                         M = D > F ? D : F,
                         N = c(I, 0.5),
-                        H = !0 === _ ? (null != T && "object" == typeof T ? T.true : null != w ? w : "#A3D3CF") : null != T && "object" == typeof T ? T.false : null != T ? T : "#939393",
-                        B = _ ? (null != l ? l : "#009688") : null != $ ? $ : "#FAFAFA",
+                        H = !0 === k ? (null != T && "object" == typeof T ? T.true : null != w ? w : "#A3D3CF") : null != T && "object" == typeof T ? T.false : null != T ? T : "#939393",
+                        B = k ? (null != l ? l : "#009688") : null != $ ? $ : "#FAFAFA",
                         O = I,
                         j = O,
-                        V = [b.root, S, E && b.cursorDefault, { height: I, width: M }],
-                        z = !0 === _ ? (("string" == typeof w && null != w) || ("object" == typeof T && null != T && T.true) ? H : g) : ("string" == typeof T && null != T) || ("object" == typeof T && null != T && T.false) ? H : g,
-                        q = !0 === _ ? (null == l ? y : B) : null == $ ? y : B,
-                        W = [b.track, { backgroundColor: E ? z : H, borderRadius: N }],
-                        U = [b.thumb, _ && b.thumbActive, { backgroundColor: E ? q : B, height: O, marginStart: _ ? c(j, -1) : 0, width: j }],
+                        z = [b.root, S, E && b.cursorDefault, { height: I, width: M }],
+                        V = !0 === k ? (("string" == typeof w && null != w) || ("object" == typeof T && null != T && T.true) ? H : g) : ("string" == typeof T && null != T) || ("object" == typeof T && null != T && T.false) ? H : g,
+                        q = !0 === k ? (null == l ? y : B) : null == $ ? y : B,
+                        W = [b.track, { backgroundColor: E ? V : H, borderRadius: N }],
+                        U = [b.thumb, k && b.thumbActive, { backgroundColor: E ? q : B, height: O, marginStart: k ? c(j, -1) : 0, width: j }],
                         X = (0, s.Z)("input", {
                             "aria-label": n || r,
-                            checked: _,
+                            checked: k,
                             disabled: E,
                             onBlur: R,
                             onChange: function (e) {
@@ -1129,7 +1168,7 @@
                             type: "checkbox",
                             role: "switch",
                         });
-                    return i.createElement(d.Z, (0, o.Z)({}, k, { style: V }), i.createElement(d.Z, { style: W }), i.createElement(d.Z, { ref: A, style: U }), X);
+                    return i.createElement(d.Z, (0, o.Z)({}, _, { style: z }), i.createElement(d.Z, { style: W }), i.createElement(d.Z, { ref: A, style: U }), X);
                 });
             w.displayName = "Switch";
             var b = u.Z.create({ root: { cursor: "pointer", userSelect: "none" }, cursorDefault: { cursor: "default" }, cursorInherit: { cursor: "inherit" }, track: (0, r.Z)((0, r.Z)({ forcedColorAdjust: "none" }, u.Z.absoluteFillObject), {}, { height: "70%", margin: "auto", transitionDuration: "0.1s", width: "100%" }), thumb: { forcedColorAdjust: "none", alignSelf: "flex-start", borderRadius: "100%", boxShadow: p, start: "0%", transform: "translateZ(0)", transitionDuration: "0.1s" }, thumbActive: { insetInlineStart: "100%" }, nativeControl: (0, r.Z)((0, r.Z)({}, u.Z.absoluteFillObject), {}, { height: "100%", margin: 0, appearance: "none", padding: 0, width: "100%" }) });
@@ -1137,4 +1176,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.4a67106a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.c160b21a.js.map

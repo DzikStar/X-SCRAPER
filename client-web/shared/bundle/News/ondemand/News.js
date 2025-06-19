@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.News~ondemand.News"],
+    ["shared~bundle.News~ondemand.News", "bundle.AudioSpaceDetail"],
     {
         529256: (e, t, n) => {
             n.d(t, { Z: () => o });
@@ -749,4 +749,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.1a4d5c6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.9fb0fc7a.js.map

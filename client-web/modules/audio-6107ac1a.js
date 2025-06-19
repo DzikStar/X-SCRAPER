@@ -76,9 +76,9 @@
                         return a;
                     })(r),
                     w = p(a.creator_results?.result),
-                    f = w?.screen_name,
-                    D = w?.profile_image_extensions_media_color?.palette,
-                    { cohosts: g, host: y } = (function (e, a) {
+                    D = w?.screen_name,
+                    f = w?.profile_image_extensions_media_color?.palette,
+                    { cohosts: y, host: g } = (function (e, a) {
                         let t;
                         const r = [];
                         a
@@ -87,8 +87,8 @@
                               })
                             : (t = e.admins[0]);
                         return { host: t, cohosts: r };
-                    })(h, f);
-                return n()(y, "host is required"), { ...o, ...a, rest_id: i, state: d, host: y, hostPalette: D, cohosts: g, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
+                    })(h, D);
+                return n()(g, "host is required"), { ...o, ...a, rest_id: i, state: d, host: g, hostPalette: f, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
             }
             function m(e, a) {
                 return e
@@ -113,19 +113,19 @@
             }
             var b = t(581364),
                 w = t.n(b),
-                f = t(8890),
-                D = t.n(f),
-                g = t(212618),
-                y = t.n(g),
+                D = t(8890),
+                f = t.n(D),
+                y = t(212618),
+                g = t.n(y),
                 v = t(320378),
                 M = t.n(v),
                 A = t(790925),
                 T = t.n(A),
                 k = t(433261),
-                S = t.n(k),
-                I = t(359215),
-                N = t.n(I),
-                P = t(389073),
+                I = t.n(k),
+                P = t(359215),
+                S = t.n(P),
+                N = t(389073),
                 x = t(615656);
             const E = ({ apiClient: e, featureSwitches: a, jotaiStore: r }) => ({
                     spacebar: () => e.getUnversioned("/fleets/v1/fleetline", { only_spaces: !0 }, {}),
@@ -134,7 +134,7 @@
                             d = n.isMetatagsQuery || !1;
                         return e
                             .graphQL(
-                                D(),
+                                f(),
                                 { id: i, isMetatagsQuery: d, ...(0, o.d)(a), withReplays: !0, withListeners: !0 },
                                 L(
                                     s,
@@ -144,25 +144,22 @@
                                             const { code: a } = e;
                                             a === x.ZP.GenericAccessDenied &&
                                                 Promise.all([
-                                                    t.e("icons.21"),
-                                                    t.e("icons.16"),
-                                                    t.e("icons.10"),
-                                                    t.e("icons.1"),
-                                                    t.e("icons.19"),
-                                                    t.e("icons.0"),
                                                     t.e("icons.23"),
-                                                    t.e("icons.8"),
+                                                    t.e("icons.0"),
                                                     t.e("icons.2"),
-                                                    t.e("icons.3"),
-                                                    t.e("icons.15"),
-                                                    t.e("icons.4"),
+                                                    t.e("icons.16"),
+                                                    t.e("icons.19"),
+                                                    t.e("icons.10"),
+                                                    t.e("icons.13"),
+                                                    t.e("icons.24"),
+                                                    t.e("icons.7"),
+                                                    t.e("icons.22"),
+                                                    t.e("icons.27"),
+                                                    t.e("icons.17"),
                                                     t.e("modules.common-e907d115"),
                                                     t.e("modules.common-e019dbda"),
-                                                    t.e("icons.9"),
-                                                    t.e("icons.7"),
-                                                    t.e("icons.28"),
+                                                    t.e("icons.11"),
                                                     t.e("icons.26"),
-                                                    t.e("icons.24"),
                                                     t.e("modules.audio-6107ac1a"),
                                                     t.e("modules.audio-b953418a"),
                                                     t.e("modules.audio-7c51e6a7"),
@@ -173,19 +170,29 @@
                                                     t.e("modules.audio-e019dbda"),
                                                     t.e("modules.audio-262c94d4"),
                                                     t.e("modules.audio-c6fe4ea4"),
-                                                    t.e("icons.18"),
-                                                    t.e("icons.13"),
-                                                    t.e("icons.25"),
+                                                    t.e("icons.8"),
+                                                    t.e("icons.4"),
+                                                    t.e("icons.14"),
+                                                    t.e("icons.28"),
+                                                    t.e("icons.3"),
+                                                    t.e("icons.1"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -195,13 +202,9 @@
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                                     t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                                                     t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
+                                                    t.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
+                                                    t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                                                     t.e("loader.AudioDock"),
                                                 ])
                                                     .then(t.bind(t, 106006))
@@ -218,7 +221,7 @@
                                     !(function (e) {
                                         if (!e) return !1;
                                         const [a] = e.errors || [];
-                                        return a?.code === P.Z.DuplicateRequest;
+                                        return a?.code === N.Z.DuplicateRequest;
                                     })(e)
                                 )
                                     throw e;
@@ -234,11 +237,11 @@
                     },
                     subscribeToScheduledSpaceById(a) {
                         const t = "subscribeToScheduledSpaceById";
-                        return e.graphQL(S(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
+                        return e.graphQL(I(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
                     },
                     unsubscribeFromScheduledSpaceById(a) {
                         const t = "unsubscribeFromScheduledSpaceById";
-                        return e.graphQL(N(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
+                        return e.graphQL(S(), { id: a }, L(t, a)).catch(C(t)).then(z(t));
                     },
                     fetchTopics: () => e.graphQL(T(), {}),
                     search(a, t) {
@@ -269,7 +272,7 @@
                             );
                     },
                     addSharing: (a, t) => e.graphQL(w(), { audio_space_id: a, sharing: { shared_tweet: { tweet_id: t } } }, L("addSharing", a)),
-                    deleteSharing: (a, t) => e.graphQL(y(), { audio_space_id: a, sharing_id: t }, L("deleteSharing", a)),
+                    deleteSharing: (a, t) => e.graphQL(g(), { audio_space_id: a, sharing_id: t }, L("deleteSharing", a)),
                 }),
                 q = (e, a) => `GQL: AudioSpaces.${e} [${a}]`;
             function C(e) {
@@ -471,6 +474,20 @@
             s.metadata = { width: 24, height: 24 };
             const d = s;
         },
+        409600: (e, a, t) => {
+            "use strict";
+            t.r(a), t.d(a, { default: () => d });
+            var r = t(202784),
+                o = t(890601),
+                i = t(783427),
+                n = t(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M8 3v18M4 9v6m8-8v10m4-12v14m4-10v6", stroke: "currentColor", strokeWidth: "2" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const d = s;
+        },
         447486: (e, a, t) => {
             "use strict";
             t.d(a, { Z: () => n });
@@ -502,4 +519,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.d9b21dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.9c5257ea.js.map

@@ -19,7 +19,7 @@
                 });
         },
         267471: (e, l, n) => {
-            n.r(l), n.d(l, { default: () => v });
+            n.r(l), n.d(l, { default: () => I });
             var t,
                 a,
                 r,
@@ -123,7 +123,7 @@
                 x = n(946409),
                 C = n(725516),
                 b = n(927389);
-            const h = ({ feedbackItems: e, icon: l, landingUrl: n, renderCustomControl: t, socialContext: a, text: r }) => {
+            const f = ({ feedbackItems: e, icon: l, landingUrl: n, renderCustomControl: t, socialContext: a, text: r }) => {
                     const i = (0, C.z)(),
                         o = s.useCallback(() => {
                             i.scribe({ element: "header", action: "click" });
@@ -141,10 +141,10 @@
                         n ? s.createElement(y.Z, { interactive: !1, onPress: o }, u) : u
                     );
                 },
-                f = s.memo(h),
-                F = d,
-                T = ({ feedbackItems: e, moduleContentRef: l, renderCustomControl: n }) => {
-                    const t = m()(F, l),
+                F = s.memo(f),
+                T = d,
+                h = ({ feedbackItems: e, moduleContentRef: l, renderCustomControl: n }) => {
+                    const t = m()(T, l),
                         { header: a } = t,
                         r = s.useMemo(() => (a?.landingUrl ? (0, g.Y)(a.landingUrl) : void 0), [a]);
                     if (!a && !a?.text) return null;
@@ -155,30 +155,17 @@
                             const l = {};
                             if (e?.text && e?.contextType) return (l.text = e?.text), (l.contextType = e?.contextType), e?.contextImageUrls && (l.contextImageUrls = e.contextImageUrls.concat()), e?.landingUrl && (l.landingUrl = (0, g.Y)(e.landingUrl)), { generalContext: l };
                         })(a.socialContext);
-                    return s.createElement(f, { feedbackItems: e, icon: i, landingUrl: r, renderCustomControl: n, socialContext: o, text: a.text });
+                    return s.createElement(F, { feedbackItems: e, icon: i, landingUrl: r, renderCustomControl: n, socialContext: o, text: a.text });
                 },
-                K = s.memo(T),
+                K = s.memo(h),
                 _ = ({ entry: e, feedbackItems: l }) => {
                     const { icon: n, landingUrl: t, renderCustomControl: a, socialContext: r, text: i } = e.content.header,
                         { moduleContentRef: o } = e.content.timelineModule;
-                    return o ? s.createElement(K, { moduleContentRef: o, renderCustomControl: a }) : s.createElement(f, { feedbackItems: l, icon: n, landingUrl: t, renderCustomControl: a, socialContext: r, text: i });
+                    return o ? s.createElement(K, { moduleContentRef: o, renderCustomControl: a }) : s.createElement(F, { feedbackItems: l, icon: n, landingUrl: t, renderCustomControl: a, socialContext: r, text: i });
                 },
                 U = s.memo(_),
-                v = o.iH({ component: U, defaultScribeNamespace: { element: "header" }, feedbackEntrySelector: (e) => e.content.timelineModule, shouldDisplayBorder: (0, i.Z)(!1) }).getHandler();
-        },
-        452693: (e, l, n) => {
-            n.r(l), n.d(l, { default: () => s });
-            var t = n(202784),
-                a = n(890601),
-                r = n(783427),
-                i = n(347101);
-            const o = (e = {}) => {
-                const { direction: l } = (0, r.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: l });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
+                I = o.iH({ component: U, defaultScribeNamespace: { element: "header" }, feedbackEntrySelector: (e) => e.content.timelineModule, shouldDisplayBorder: (0, i.Z)(!1) }).getHandler();
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ModuleHeader.050be61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ModuleHeader.9dace48a.js.map

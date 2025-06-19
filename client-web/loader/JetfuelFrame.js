@@ -2,24 +2,18 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.JetfuelFrame"],
     {
-        654907: (e, t, a) => {
-            a.r(t), a.d(t, { JetfuelFrame: () => o, default: () => u });
-            var l = a(202784),
-                r = a(163889),
-                s = a(313129),
-                n = a(738124);
-            const o = (e) => {
-                    const { payload: t } = e;
-                    let a;
-                    try {
-                        a = (0, s.$P)(t);
-                    } catch {
-                        return (0, r.ZP)("Failed to parse Jetfuel payload"), null;
-                    }
-                    return a && a.jfResponse ? l.createElement(n.Z, { payload: a.jfResponse.root.value }) : null;
+        654907: (e, t, r) => {
+            r.r(t), r.d(t, { JetfuelFrame: () => s, default: () => u });
+            var a = r(202784),
+                l = r(244448),
+                n = (r(631673), r(634125));
+            const s = (e) => {
+                    const { payload: t } = e,
+                        r = (0, l.bk)();
+                    return a.createElement(n.Z, null, a.createElement(l.kb, { payload: t, runtime: r }));
                 },
-                u = o;
+                u = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.JetfuelFrame.7343b74a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.JetfuelFrame.d3c4814a.js.map

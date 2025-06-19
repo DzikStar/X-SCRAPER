@@ -5,7 +5,7 @@
             "use strict";
             r.d(t, { Z: () => me });
             var n = {};
-            r.r(n), r.d(n, { anchorOffsetContextText: () => T, composerEditorContent: () => k, editorStateJson: () => I.G, editorState_2_json: () => I.c, parseTwitterText: () => P });
+            r.r(n), r.d(n, { anchorOffsetContextText: () => D, composerEditorContent: () => M, editorStateJson: () => I.G, editorState_2_json: () => I.c, parseTwitterText: () => T });
             var i = {};
             r.r(i), r.d(i, { ConvertEmojiEffect: () => B, DeveloperDebug: () => A, InlineStyleButton: () => N, OverflowHighlightEffect: () => X, PreserveUnstyledEntitiesEffect: () => se, Separator: () => ue, TextChangeEffect: () => ce, TrackFocusView: () => te });
             var a = {};
@@ -53,11 +53,11 @@
                 };
             }
             var S = r(301503),
-                w = r(835305);
-            function x(e) {
+                x = r(835305);
+            function w(e) {
                 return function (t) {
                     const r = e.getState(),
-                        n = w.wK(t),
+                        n = x.wK(t),
                         i = S.RichUtils.toggleInlineStyle(r.editorState, n);
                     e.mut.editorState(i);
                 };
@@ -74,13 +74,13 @@
                 };
             }
             var I = r(873793),
-                D = r(24949),
-                Z = r(791134);
-            const P = (0, D.P1)([(e) => e.editorState.getCurrentContent().getPlainText(), (e) => e.isThread, (e, t) => t.featureSwitches, (e, t) => t.userClaims], (e, t, r, n) => {
+                Z = r(24949),
+                P = r(791134);
+            const T = (0, Z.P1)([(e) => e.editorState.getCurrentContent().getPlainText(), (e) => e.isThread, (e, t) => t.featureSwitches, (e, t) => t.userClaims], (e, t, r, n) => {
                     const i = { isThread: t, featureSwitches: r, userClaims: n };
-                    return Z.k2(e, i);
+                    return P.k2(e, i);
                 }),
-                T = (0, D.P1)([(e) => e.editorState], (e) => {
+                D = (0, Z.P1)([(e) => e.editorState], (e) => {
                     const t = e.getCurrentContent(),
                         r = e.getSelection(),
                         n = r.getAnchorKey(),
@@ -94,14 +94,14 @@
                         s = t.getPlainText(),
                         l = s.length - o;
                     let d, c;
-                    l < M ? ((d = l), (c = R - l)) : o < M ? ((d = R - o), (c = o)) : ((d = M), (c = M));
+                    l < F ? ((d = l), (c = R - l)) : o < F ? ((d = R - o), (c = o)) : ((d = F), (c = F));
                     const u = o - c,
                         h = o + d;
                     return s.substring(u, h);
                 }),
                 R = 280,
-                M = R / 2,
-                k = (0, D.P1)(
+                F = R / 2,
+                M = (0, Z.P1)(
                     [
                         (e) => {
                             const t = e.editorState.getCurrentContent(),
@@ -111,7 +111,7 @@
                     ],
                     (e) => JSON.parse(e),
                 ),
-                F = (function (e, t) {
+                k = (function (e, t) {
                     const r = t || {};
                     r.name = r.name || "KonbiniNext";
                     const n = (function (e) {
@@ -230,9 +230,9 @@
                             return t.useState(n);
                         },
                     };
-                })(() => ({ editorState: s.Z.initEditorState(""), hasOverflowStyle: !1, isThread: !1, isFocused: !1, isEditorFocused: !1, isRichTextInput: !0, transform: { lookup: {}, order: [] } }), { name: "ComposerStore", freeze: !1, selectors: n, mutations: (e) => ({ editorState: E(e), editorStateRaw: _(e), toggleInlineStyle: x(e), defer_editorState: C(e) }) });
+                })(() => ({ editorState: s.Z.initEditorState(""), hasOverflowStyle: !1, isThread: !1, isFocused: !1, isEditorFocused: !1, isRichTextInput: !0, transform: { lookup: {}, order: [] } }), { name: "ComposerStore", freeze: !1, selectors: n, mutations: (e) => ({ editorState: E(e), editorStateRaw: _(e), toggleInlineStyle: w(e), defer_editorState: C(e) }) });
             function O(e, t) {
-                const r = F.useActions(),
+                const r = k.useActions(),
                     n = o.useRef(t);
                 (n.current = t),
                     o.useEffect(() => {
@@ -277,7 +277,7 @@
                     n = me.useRichEnabled(),
                     i = me.useState((e) => {
                         const r = e.editorState.getCurrentInlineStyle(),
-                            n = w.wK(t);
+                            n = x.wK(t);
                         return r.contains(n);
                     });
                 if (!n.write) return null;
@@ -287,9 +287,9 @@
                             return `(${[$, e].join("+")})`;
                         }
                         switch (e) {
-                            case w.xs.Bold:
+                            case x.xs.Bold:
                                 return t("B");
-                            case w.xs.Italic:
+                            case x.xs.Italic:
                                 return t("I");
                             default:
                                 throw new Error(`unrecognized style [${e}]`);
@@ -300,9 +300,9 @@
                     c = (0, z.Z)(d, !0),
                     u = (function (e) {
                         switch (e) {
-                            case w.xs.Bold:
+                            case x.xs.Bold:
                                 return W.default;
-                            case w.xs.Italic:
+                            case x.xs.Italic:
                                 return U.default;
                             default:
                                 throw new Error(`unrecognized style [${e}]`);
@@ -325,17 +325,17 @@
                 return (0, q[e])({ ...t, ttc_rich_text_composer: "" });
             }
             const $ = r(323265).ZP.isMac() ? "⌘" : "CTRL",
-                q = { [w.xs.Bold]: H().aeca1239, [w.xs.Italic]: H().i7dc66dd, active: H().ad89b831 },
+                q = { [x.xs.Bold]: H().aeca1239, [x.xs.Italic]: H().i7dc66dd, active: H().ad89b831 },
                 K = L.default.create((e) => {
                     const t = { borderRadius: e.borderRadiiPx.small };
                     return { iconActive: { ...t, backgroundColor: e.colors.primary, color: e.colors.navigationBackground }, newIconActive: { ...t, backgroundColor: e.colors.gray700, color: e.colors.navigationBackground }, iconInactive: { ...t, color: e.colors.primary }, newIconInactive: { ...t, color: e.colors.gray700 } };
                 });
             var Q = r(443781);
             function J() {
-                return { ...(0, Q.QZ)(), isThread: F.useState((e) => e.isThread) };
+                return { ...(0, Q.QZ)(), isThread: k.useState((e) => e.isThread) };
             }
             function X() {
-                const e = F.useActions(),
+                const e = k.useActions(),
                     t = J(),
                     r = o.useRef({ context: t, actions: e });
                 return (
@@ -366,7 +366,7 @@
             var Y = r(807896),
                 ee = r(325686);
             function te(e) {
-                const t = F.useActions(),
+                const t = k.useActions(),
                     r = o.useRef();
                 return o.createElement(
                     ee.Z,
@@ -397,11 +397,11 @@
                 ie = r(507824);
             function ae() {
                 const e = J(),
-                    t = F.useState((e) => e.isRichTextInput),
+                    t = k.useState((e) => e.isRichTextInput),
                     r = { isRichTextInput: t };
                 return ie.v$.enabled({ context: e, state: r });
             }
-            const oe = [w.DraftJS.Bold, w.DraftJS.Italic];
+            const oe = [x.DraftJS.Bold, x.DraftJS.Italic];
             function se() {
                 return O("PreserveUnstyledEntitiesEffect", ae().write ? le : f.Z), null;
             }
@@ -449,7 +449,7 @@
             }
             const he = L.default.create((e) => ({ container: { backgroundColor: e.colors.gray400, borderRadius: e.borderRadii.infinite, height: e.spaces.space16, margin: "auto", width: "2px" } }));
             var pe = r(972689);
-            const me = { ...F, ...a, ...i, T: pe };
+            const me = { ...k, ...a, ...i, T: pe };
         },
         972689: () => {},
         113545: (e, t, r) => {
@@ -598,8 +598,8 @@
                 E = r(716233),
                 _ = r(946208),
                 S = r(540387),
-                w = r(950822),
-                x = r(303186),
+                x = r(950822),
+                w = r(303186),
                 C = r(954300);
             class I extends n.Component {
                 constructor(...e) {
@@ -611,25 +611,25 @@
                 }
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: r, style: i, variants: a, ...o } = this.props,
-                        s = (0, x.IM)((0, C.rD)(a), t);
-                    return (0, w.Z)("video", { ...o, children: [s.map((e) => n.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: i });
+                        s = (0, w.IM)((0, C.rD)(a), t);
+                    return (0, x.Z)("video", { ...o, children: [s.map((e) => n.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: i });
                 }
             }
             I.defaultProps = { dataSaverMode: !1, variants: [] };
-            var D = r(959587),
-                Z = r(751170),
-                P = r(523561),
-                T = r(195560);
-            const R = (0, P.Z)({
+            var Z = r(959587),
+                P = r(751170),
+                T = r(523561),
+                D = r(195560);
+            const R = (0, T.Z)({
                     loader: () =>
-                        Promise.all([r.e("icons.21"), r.e("icons.16"), r.e("icons.10"), r.e("icons.4"), r.e("modules.common-e907d115"), r.e("modules.common-e019dbda"), r.e("icons.28"), r.e("icons.24"), r.e("modules.audio-6107ac1a"), r.e("modules.audio-b953418a"), r.e("modules.audio-7c51e6a7"), r.e("modules.audio-04db59e9"), r.e("modules.audio-76583d6c"), r.e("modules.audio-b7a8a5fb"), r.e("modules.audio-51f6e793"), r.e("modules.audio-e019dbda"), r.e("modules.audio-262c94d4"), r.e("modules.audio-c6fe4ea4"), r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"), r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"), r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"), r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"), r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), r.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), r.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([r.e("icons.0"), r.e("icons.16"), r.e("icons.10"), r.e("icons.13"), r.e("icons.22"), r.e("modules.common-e907d115"), r.e("modules.common-e019dbda"), r.e("icons.26"), r.e("modules.audio-6107ac1a"), r.e("modules.audio-b953418a"), r.e("modules.audio-7c51e6a7"), r.e("modules.audio-04db59e9"), r.e("modules.audio-76583d6c"), r.e("modules.audio-b7a8a5fb"), r.e("modules.audio-51f6e793"), r.e("modules.audio-e019dbda"), r.e("modules.audio-262c94d4"), r.e("modules.audio-c6fe4ea4"), r.e("icons.4"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), r.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), r.e("loader.MediaPreviewVideoPlayer")])
                             .then(r.bind(r, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
-                    renderPlaceholder: (e, t) => n.createElement(T.Z, { hasError: e, onRetry: t }),
+                    renderPlaceholder: (e, t) => n.createElement(D.Z, { hasError: e, onRetry: t }),
                 }),
-                M = h().gd80afba,
-                k = h().j322caee,
-                F = h().abd845fe,
+                F = h().gd80afba,
+                M = h().j322caee,
+                k = h().abd845fe,
                 O = h().df1b0708,
                 B = h().cd959e5c,
                 A = h().e68b09b4,
@@ -680,14 +680,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: r, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: h, style: b, withAltTextLabel: E, withCloseButton: _, withDragAndDropIndicator: S, withEditButton: w, withEditIcon: x, withEditSensitiveWarningButton: C } = this.props,
-                        { mediaContainerSizeStyle: I, playGif: Z } = this.state,
-                        P = r.externalMediaDetails && r.externalMediaDetails.mediaType === y.Re,
-                        T = P || (t && r.mediaFile && r.mediaFile.isGif),
+                    const { "aria-label": e, enableGif: t, mediaItem: r, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: h, style: b, withAltTextLabel: E, withCloseButton: _, withDragAndDropIndicator: S, withEditButton: x, withEditIcon: w, withEditSensitiveWarningButton: C } = this.props,
+                        { mediaContainerSizeStyle: I, playGif: P } = this.state,
+                        T = r.externalMediaDetails && r.externalMediaDetails.mediaType === y.Re,
+                        D = T || (t && r.mediaFile && r.mediaFile.isGif),
                         R = !!r.mediaFile?.isVideo;
                     return n.createElement(a.ZP, null, ({ windowWidth: t }) => {
-                        const r = void 0 !== x ? x : !v.Z.isTwoColumnLayout(t);
-                        return n.createElement(i.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: h, style: [b, V.cursor, P && V.gifPlayButton, I] }, this._renderPreview(), P && !Z && n.createElement(o.Z, { "aria-label": O, onPress: this._handleGifClick, size: "small" }), T ? n.createElement(D.ZP, { type: D.AM }) : null, E && !R ? n.createElement(s.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: V.editMedia }, S ? n.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: n.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, w && C ? n.createElement(l.ZP, { "aria-label": k, icon: n.createElement(m.default, { style: V.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, w ? n.createElement(l.ZP, { "aria-label": M, icon: r ? n.createElement(f.default, null) : void 0, onPress: d, size: r ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, r ? void 0 : F) : null), _ ? n.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: A }, icon: n.createElement(g.default, null), onPress: u, size: "small", style: V.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        const r = void 0 !== w ? w : !v.Z.isTwoColumnLayout(t);
+                        return n.createElement(i.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: h, style: [b, V.cursor, T && V.gifPlayButton, I] }, this._renderPreview(), T && !P && n.createElement(o.Z, { "aria-label": O, onPress: this._handleGifClick, size: "small" }), D ? n.createElement(Z.ZP, { type: Z.AM }) : null, E && !R ? n.createElement(s.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: V.editMedia }, S ? n.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: n.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, x && C ? n.createElement(l.ZP, { "aria-label": M, icon: n.createElement(m.default, { style: V.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, x ? n.createElement(l.ZP, { "aria-label": F, icon: r ? n.createElement(f.default, null) : void 0, onPress: d, size: r ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, r ? void 0 : k) : null), _ ? n.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: A }, icon: n.createElement(g.default, null), onPress: u, size: "small", style: V.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -706,7 +706,7 @@
                 }
                 _renderImagePreview() {
                     const { borderRadius: e, enableGif: t, imageResizeMode: r, mediaItem: i, onClick: a } = this.props;
-                    return n.createElement(Z.Z, { borderRadius: e, enableGif: t, mediaItem: i, onClick: a, resizeMode: r });
+                    return n.createElement(P.Z, { borderRadius: e, enableGif: t, mediaItem: i, onClick: a, resizeMode: r });
                 }
                 _renderVideoPreview(e, t, r, i) {
                     const { mediaItem: a } = this.props,
@@ -825,28 +825,28 @@
                         E = !!y.mediaMetadata?.sensitiveMediaWarning?.size,
                         _ = d?.(y.id),
                         S = l?.(y.id),
-                        w = p?.(y.id),
-                        x = _ && r && i,
-                        C = x && E && !!w,
-                        { containsOnlyImages: I, getDraggableIndex: D } = this.props,
-                        Z = y.originalMediaFile?.isImage,
-                        P = n.createElement(
+                        x = p?.(y.id),
+                        w = _ && r && i,
+                        C = w && E && !!x,
+                        { containsOnlyImages: I, getDraggableIndex: Z } = this.props,
+                        P = y.originalMediaFile?.isImage,
+                        T = n.createElement(
                             n.Fragment,
                             null,
-                            n.createElement(h.Z, { "aria-label": b || v, enableGif: i, mediaItem: y, mixedMediaUploadsEnabled: s, onClick: S, onEdit: _, onEditSensitiveWarning: C ? w : void 0, onRemove: f(y.id), ref: g, role: "group", style: [m.mediaContainer, t], withAltTextLabel: !!b, withCloseButton: r && i, withDragAndDropIndicator: (D || a) && Z && I, withEditButton: x, withEditSensitiveWarningButton: C }),
+                            n.createElement(h.Z, { "aria-label": b || v, enableGif: i, mediaItem: y, mixedMediaUploadsEnabled: s, onClick: S, onEdit: _, onEditSensitiveWarning: C ? x : void 0, onRemove: f(y.id), ref: g, role: "group", style: [m.mediaContainer, t], withAltTextLabel: !!b, withCloseButton: r && i, withDragAndDropIndicator: (Z || a) && P && I, withEditButton: w, withEditSensitiveWarningButton: C }),
                             (() => {
                                 const e = y.mediaMetadata?.gifMetadata;
                                 return e?.url && e?.provider && s ? n.createElement(c.Z, { gifUrl: e.url, provider: e.provider }) : null;
                             })(),
                         );
-                    if (D && Z && I) {
+                    if (Z && P && I) {
                         const t = ["MediaPreview", y.id].join("-"),
                             r = 0 === e,
                             i = 3 === o.length,
                             a = r && i && !s ? "50%" : "100%";
-                        return n.createElement(u._, { draggableId: t, flex: !0, index: D(y.id), widthOverride: a }, P);
+                        return n.createElement(u._, { draggableId: t, flex: !0, index: Z(y.id), widthOverride: a }, T);
                     }
-                    return P;
+                    return T;
                 }
             }
             p.contextType = d.rC;
@@ -976,7 +976,7 @@
         },
         490834: (e, t, r) => {
             "use strict";
-            r.d(t, { Z: () => T });
+            r.d(t, { Z: () => D });
             var n = r(202784),
                 i = r(576648),
                 a = r(811176),
@@ -1010,15 +1010,15 @@
                 E = u().e05c00b4,
                 _ = u().eabf2209,
                 S = u().a613e720,
-                w = u().f88553c8,
-                x = { riffsy: "https://abs.twimg.com/a/1501527574/img/t1/icon_riffsy.png", giphy: "https://abs.twimg.com/a/1501527574/img/t1/icon_giphy.png" };
+                x = u().f88553c8,
+                w = { riffsy: "https://abs.twimg.com/a/1501527574/img/t1/icon_riffsy.png", giphy: "https://abs.twimg.com/a/1501527574/img/t1/icon_giphy.png" };
             class C extends n.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderMenu = (e) => n.createElement(a.Z, { items: [{ text: S, Icon: h.default, onClick: this._handleCopyGifLinkButtonClick }], onCloseRequested: e })),
                         (this._handleCopyGifLinkButtonClick = (e) => {
                             const { addToast: t, gifUrl: r } = this.props;
-                            i.Z.isAvailable() ? (i.Z.setString(r), t({ text: w })) : this.setState({ showCopyLinkSheet: !0 }), e && e();
+                            i.Z.isAvailable() ? (i.Z.setString(r), t({ text: x })) : this.setState({ showCopyLinkSheet: !0 }), e && e();
                         }),
                         (this._handleCopyLinkSheetCancel = () => {
                             this.setState({ showCopyLinkSheet: !1 });
@@ -1029,7 +1029,7 @@
                     const { showCopyLinkSheet: e } = this.state,
                         { gifUrl: t, provider: r } = this.props,
                         { display_name: i, name: a } = r,
-                        s = x[a];
+                        s = w[a];
                     return s ? n.createElement(n.Fragment, null, e ? n.createElement(v, { description: _({ providerName: i }), headerText: E, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, n.createElement(o.ZP, { align: "center", color: "gray700", style: [I.root, I.verticalAlign] }, n.createElement(u().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(i, s)))) : null;
                 }
                 _renderAttribution(e, t) {
@@ -1037,10 +1037,10 @@
                 }
             }
             const I = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
-                D = C;
-            var Z = r(668214),
-                P = r(601576);
-            const T = (0, Z.Z)().propsFromActions(() => ({ addToast: P.fz }))(({ addToast: e, gifUrl: t, provider: r }) => n.createElement(D, { addToast: e, gifUrl: t, provider: r }));
+                Z = C;
+            var P = r(668214),
+                T = r(601576);
+            const D = (0, P.Z)().propsFromActions(() => ({ addToast: T.fz }))(({ addToast: e, gifUrl: t, provider: r }) => n.createElement(Z, { addToast: e, gifUrl: t, provider: r }));
         },
         26232: (e, t, r) => {
             "use strict";
@@ -1269,13 +1269,13 @@
                 l = r(952428),
                 d = r(392237);
             const c = (e) => {
-                    const { decoration: t, description: r, disabled: c = !1, isActive: h = !1, label: p, link: m, onPress: f, paddingHorizontal: g, renderRightContent: y, role: b = "tab", styleOverride: v, testID: E = "pivot", thumbnail: _, thumbnailSize: S, withoutArrow: w = !1 } = e,
-                        x = [u.thumbnailContainer, "medium" === S && u.thumbnailContainerMedium],
+                    const { decoration: t, description: r, disabled: c = !1, isActive: h = !1, label: p, link: m, onPress: f, paddingHorizontal: g, renderRightContent: y, role: b = "tab", styleOverride: v, testID: E = "pivot", thumbnail: _, thumbnailSize: S, withoutArrow: x = !1 } = e,
+                        w = [u.thumbnailContainer, "medium" === S && u.thumbnailContainerMedium],
                         C = "string" == typeof p ? n.createElement(s.ZP, null, p) : p,
                         I = "object" == typeof m && m.external && !m.openInSameFrame,
-                        D = r ? ("string" == typeof r ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, r) : r) : null,
-                        Z = n.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? d.default.theme.spaces[g] : d.default.theme.componentDimensions.gutterHorizontal }), [g]);
-                    return n.createElement(l.Z, { "aria-selected": "tab" === b ? h : null, disabled: c, link: c ? void 0 : m, onPress: f, role: b, style: [u.root, Z, c && u.disabled, v], testID: E, withInteractiveStyling: !!m || !!f }, n.createElement(i.Z, { style: u.contentContainer }, _ ? n.createElement(i.Z, { style: x }, _) : null, n.createElement(i.Z, { style: u.content }, C, D), y ? y() : null, (!m && !f) || c || w ? null : I ? n.createElement(a.default, { style: u.icon }) : n.createElement(o.default, { style: u.icon })), t);
+                        Z = r ? ("string" == typeof r ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, r) : r) : null,
+                        P = n.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? d.default.theme.spaces[g] : d.default.theme.componentDimensions.gutterHorizontal }), [g]);
+                    return n.createElement(l.Z, { "aria-selected": "tab" === b ? h : null, disabled: c, link: c ? void 0 : m, onPress: f, role: b, style: [u.root, P, c && u.disabled, v], testID: E, withInteractiveStyling: !!m || !!f }, n.createElement(i.Z, { style: u.contentContainer }, _ ? n.createElement(i.Z, { style: w }, _) : null, n.createElement(i.Z, { style: u.content }, C, Z), y ? y() : null, (!m && !f) || c || x ? null : I ? n.createElement(a.default, { style: u.icon }) : n.createElement(o.default, { style: u.icon })), t);
                 },
                 u = d.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${d.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -1325,10 +1325,10 @@
                     const { "aria-describedby": e, disabled: t, errorText: r, hasError: d, helperText: m, options: f, style: y, testID: b, value: v, withEmptyOption: E } = this.props,
                         { isFocused: _ } = this.state,
                         S = l.ZP.getLanguage(),
-                        w = void 0 === d ? !!r : d,
-                        x = new Set();
-                    r && x.add(this._errorID), e && x.add(e), m && x.add(this._helperID);
-                    const C = x.size ? [...x].join(" ") : void 0;
+                        x = void 0 === d ? !!r : d,
+                        w = new Set();
+                    r && w.add(this._errorID), e && w.add(e), m && w.add(this._helperID);
+                    const C = w.size ? [...w].join(" ") : void 0;
                     return n.createElement(
                         n.Fragment,
                         null,
@@ -1336,11 +1336,11 @@
                             const l = "ja" === S ? u.default.theme.fontFamilies.japan : "rtl" === e || o.Z.isLocaleRTL(S) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return n.createElement(
                                 i.Z,
-                                { style: [s.Z.border, g.container, t && s.Z.disabled, _ && s.Z.focusedBorderValid, w && s.Z.invalidBorderColor, _ && w && s.Z.focusedBorderInvalid, y] },
+                                { style: [s.Z.border, g.container, t && s.Z.disabled, _ && s.Z.focusedBorderValid, x && s.Z.invalidBorderColor, _ && x && s.Z.focusedBorderInvalid, y] },
                                 this._renderLabel(),
                                 n.createElement(
                                     h,
-                                    { "aria-describedby": C, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [g.select, { fontFamily: l }, t && s.Z.disabled], testID: b || "", value: v },
+                                    { "aria-describedby": C, "aria-invalid": x, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [g.select, { fontFamily: l }, t && s.Z.disabled], testID: b || "", value: v },
                                     E ? n.createElement(p, { disabled: !0, style: g.option, value: "" }) : null,
                                     f.map((e) => {
                                         const { disabled: t, label: r, value: i } = e;
@@ -1351,7 +1351,7 @@
                             );
                         }),
                         m ? this._renderHelperText() : null,
-                        w && r ? this._renderErrorText() : null,
+                        x && r ? this._renderErrorText() : null,
                     );
                 }
                 _renderLabel() {
@@ -1383,4 +1383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose.4650676a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose.a93c561a.js.map

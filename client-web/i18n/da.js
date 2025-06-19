@@ -2495,41 +2495,6 @@
                     return e.topicName + " Emne";
                 }),
                 t("ic6aa5f4", "Godkendt"),
-                t("c02e7e3c", "Indlæser …"),
-                t("c5453f28", "Runde af 64"),
-                t("eb256a86", "Runde af 32"),
-                t("g77adc66", "Sweet Sixteen"),
-                t("a6d2520c", "Sweet 16"),
-                t("g5b63eb6", "Elite Eight"),
-                t("d8bf2890", "Elite 8"),
-                t("f9d3d6f2", "Final Four"),
-                t("bda24f7c", "Final 4"),
-                t("i5043440", "Nationalt mesterskab"),
-                t("fcb16026", "Mesterskab"),
-                t("e9c89ee8", "Øst"),
-                t("h259fd86", "Vest"),
-                t("a7b2545a", "Syd"),
-                t("fdf7819a", "Midtvesten"),
-                t("i899e9b0", "Indsend turneringsplan"),
-                t("c5b04394", "Vis valg"),
-                t("h836bbae", "Vis turnering"),
-                t("e1059d6c", "1. runde"),
-                t("b1602be4", "2. runde"),
-                t("ef7bc2c0", "20-21 mar."),
-                t("h726aaf2", "22-23 mar."),
-                t("ee7cd198", "27-28 mar."),
-                t("fed91402", "29-30 mar."),
-                t("aba0a450", "5. apr."),
-                t("jdfba2dc", "7. apr."),
-                t("b7c6bc12", "TBD"),
-                t("c373612c", "Vælg:"),
-                t("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                t("j5db9ddd", " over "),
-                t("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 t("j4c40da4", "Send nu"),
                 t("b23688c8", "Fortryd tidtagning"),
                 t("cca5d499", function (e) {
@@ -2975,8 +2940,8 @@
                 t("a7de64de", "Annonceinfo"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Karrierer"),
-                t("e0adec82", "Brandressourcer");
-            t("df1b7550", "Marketing"),
+                t("e0adec82", "Brandressourcer"),
+                t("df1b7550", "Marketing"),
                 t("he258678", "X til virksomheder"),
                 t("c6f58084", "Udviklere"),
                 t("d83f18d2", "Oversigt"),
@@ -3010,8 +2975,8 @@
                 }),
                 t("d6d9aab6", "Tilføj bogmærke"),
                 t("bb89cf46", "Fjern bogmærke"),
-                t("a739d4ba", "Føj til mappe med bogmærker"),
-                t("d5270434", "Afslut"),
+                t("a739d4ba", "Føj til mappe med bogmærker");
+            t("d5270434", "Afslut"),
                 t("ac85c6b2", "Der opstod en fejl under indlæsning af dette billede"),
                 t("b327c12a", "Billede"),
                 t("ic76bdf0", "Genskab dette med Grok"),
@@ -3887,8 +3852,8 @@
                 t("a2bf8b8a", "Skift til at lytte"),
                 t("caa8d928", "Slå støjdæmpning til og fra"),
                 t("b5d88f0c", "Kun medarbejdere"),
-                t("c855ab8e", "Kun for abonnenter");
-            t("ddeb0a3c", "Her er Fællesskabet. Synes du om personerne? Tag et kig."),
+                t("c855ab8e", "Kun for abonnenter"),
+                t("ddeb0a3c", "Her er Fællesskabet. Synes du om personerne? Tag et kig."),
                 t("e111f531", function (e) {
                     return e.count + " følger med";
                 }),
@@ -3936,8 +3901,8 @@
                 t("f2333850", "Del med personer uden for X"),
                 t("cddb8097", "Læs mere"),
                 t("f77997b0", "Medvært"),
-                t("i48f4ed8", "Taler"),
-                t("a77c8e02", "Lytter"),
+                t("i48f4ed8", "Taler");
+            t("a77c8e02", "Lytter"),
                 t("bdfa93eb", function (e) {
                     return "Delt af " + e.name;
                 }),
@@ -4207,6 +4172,7 @@
                 t("f794af9a", "Tilstanden Sjov"),
                 t("eccf9fea", "Tilstanden Almindelig"),
                 t("j22655f2", "Spørg om hvad som helst"),
+                t("c02e7e3c", "Indlæser …"),
                 t("h0681e3e", "Tal med Grok, vores AI-assistent"),
                 t("d593fd78", "Den kan besvare dine spørgsmål, søge i X og generere billeder"),
                 t("d0205a24", "Tjek fakta"),
@@ -4291,7 +4257,6 @@
                 t("afa2a58e", "See all posts"),
                 t("fc83e7e2", "See all users"),
                 t("df601d92", "Relevant Users"),
-                t("b001fa12", "Source query"),
                 t("db6c20cf", function (e) {
                     return "Show all (" + e.count + ")";
                 }),
@@ -4374,7 +4339,7 @@
                 t("g3ce0132", "Tænkte i"),
                 t("f8007364", "Udvid for detaljer"),
                 t("ca53f780", "Skjul detaljer"),
-                t("b52484b6", "Søger..."),
+                t("e6d51c62", "Searching"),
                 t("ib1c5475", function (e) {
                     return "Tanke for " + e.minutes + "m " + e.seconds + "s";
                 }),
@@ -4392,6 +4357,7 @@
                 t("a3186bff", function (e) {
                     return e.count + " webside" + i(e.count, "", "r");
                 }),
+                t("b52484b6", "Søger..."),
                 t("f4146dda", "Hvilket svar foretrækker du?"),
                 t("a2c2be32", "Dette hjælper med at gøre Grok bedre."),
                 t("g01599b6", "Svar 1"),
@@ -4929,8 +4895,8 @@
                 t("b649d8cc", "Kun for abonnenter"),
                 t("j9282130", "Udsendelsesminiature"),
                 t("g629b8b0", "Time-out"),
-                t("eb87323c", "Dette viser analysedata for den valgte tidsperiode, siden livestreamen fandt sted.");
-            t("i6a75722", "Tidsinterval"),
+                t("eb87323c", "Dette viser analysedata for den valgte tidsperiode, siden livestreamen fandt sted."),
+                t("i6a75722", "Tidsinterval"),
                 t("c602f5b8", "I alt"),
                 t("b35e68ae", "Samlet antal deltagere"),
                 t("h78ee79a", "Samlet antal sete afspilninger"),
@@ -4959,8 +4925,8 @@
                 t("e41fffbc", "Den samlede visningstid for dine videoer."),
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig beta-adgang"),
-                t("gf898b70", "Avanceret søgning"),
+                t("ed99baea", "Tidlig beta-adgang");
+            t("gf898b70", "Avanceret søgning"),
                 t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'indeholder den eksakte sætning "ai startup"'),
@@ -5881,8 +5847,8 @@
                 t("fb59415e", "For at blive vist offentligt som kontekst i posten skal et notat være bedømt som nyttigt af nok personer med forskellige synspunkter. Denne tilgang hjælper med at undgå partiskhed og manipulation og hjælper med at finde notater, der er nyttige for mange mennesker."),
                 t("f9a44022", "Det er ikke virksomheden X, men folk, der bestemmer, hvad der bliver vist"),
                 t("gdf4fbb2", "Virksomheden X hverken skriver, bedømmer eller modererer notater (det ville være et brud på X-reglerne). At give folk en stemme til at træffe disse valg sammen mener vi er en retfærdig og effektiv måde at tilføje oplysninger på, der hjælper folk med at holde sig bedre informeret."),
-                t("cc720e6a", "Fællesskabsnoter bygger på datatransparens");
-            t("j2fcd33a", "Data inkluderer bidrag indtil"),
+                t("cc720e6a", "Fællesskabsnoter bygger på datatransparens"),
+                t("j2fcd33a", "Data inkluderer bidrag indtil"),
                 t("d4a6b322", "Alle data i Notater i Fællesskaber udgives her hver dag, så folk har fri adgang til at analysere dem, finde problemer og spotte muligheder for at gøre Notater i Fællesskaber bedre. Vi glæder os til at blive klogere sammen med dig."),
                 t("c359263a", "Lær, hvordan du bruger og analyserer data i Fællesskabsnoter "),
                 t("b8a27fe2", "i vores guide"),
@@ -5915,8 +5881,8 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Slet mappe"),
-                t("f4ea967a", "Mappen er blevet slettet"),
+                t("h18f86a4", "Slet mappe");
+            t("f4ea967a", "Mappen er blevet slettet"),
                 t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er blevet opdateret"),
                 t("e3299b94", "Noget gik galt. Prøv at opdatere mappen igen om et øjeblik."),
@@ -6887,8 +6853,8 @@
                 t("b36cd50e", "Angiv det primære team, som ansøgere skal arbejde sammen med, når de bliver ansat."),
                 t("d3a427ce", "Vælg det nødvendige erfaringsniveau."),
                 t("i7174442", "Stillingsbeskrivelse"),
-                t("fef0cf02", "Giv en detaljeret stillingsbeskrivelse. Beskriv de vigtigste ansvarsområder og kvalifikationer for at give ansøgerne en klar forståelse af stillingen.");
-            t("b7800bec", "Præsenter stillingen med 200 tegn eller mindre. Vises i posts, anbefalinger og søgninger."),
+                t("fef0cf02", "Giv en detaljeret stillingsbeskrivelse. Beskriv de vigtigste ansvarsområder og kvalifikationer for at give ansøgerne en klar forståelse af stillingen."),
+                t("b7800bec", "Præsenter stillingen med 200 tegn eller mindre. Vises i posts, anbefalinger og søgninger."),
                 t("a5244ece", "Ansøgnings-URL (påkrævet)"),
                 t("g2b553f6", "Angiv den offentlige URL, hvor ansøgere kan søge denne stilling."),
                 t("c2e77608", "Stillingsbetegnelse (påkrævet)"),
@@ -6921,8 +6887,8 @@
                 t("c924ad84", "Fortsæt med afspilning af videoer"),
                 t("de750a3c", "Nyd dem, selv når din telefon er låst"),
                 t("he5e87c4", "Boost dine svar"),
-                t("g64a60ba", "Få en smule prioritering, når du svarer på opslag"),
-                t("a7ee832a", "Få rettet dine stave- og slåfejl på under 60 minutter"),
+                t("g64a60ba", "Få en smule prioritering, når du svarer på opslag");
+            t("a7ee832a", "Få rettet dine stave- og slåfejl på under 60 minutter"),
                 t("fdd77a34", "Skab længere opslag"),
                 t("j6d26a7a", "Skriv ligeså meget, som du har lyst til at dele"),
                 t("c4fd68da", "Tilpas din oplevelse"),
@@ -7863,7 +7829,45 @@
                 t("cfcac293", function (e) {
                     return "Giv gave og betal " + e.price;
                 }),
-                t("d7a73450", "Niveau");
+                t("d7a73450", "Niveau"),
+                t("hbd2c24e", "Denne konto er ikke kvalificeret til gaver på nuværende tidspunkt."),
+                t("f3fddc98", "købsvilkår"),
+                t("cff9c889", "Læs mere"),
+                t("c65dda96", "Din gave er blevet sendt."),
+                t("f6e2a407", function (e) {
+                    return "Tillad alle at se dit abonnent-badge, når du svarer på @" + e.screenName + "s posts";
+                }),
+                t("j8dedddd", function (e) {
+                    return "Når du slår dette fra, kan @" + e.screenName + " og vedkommendes abonnenter stadig se dit badge, når du svarer på @" + e.screenName + "s posts, der kun er for abonnenter. @" + e.screenName + " kan altid se dit badge.";
+                }),
+                t("c8a513f6", "Annuller abonnement"),
+                t("ea000ec8", "Har du allerede annulleret dit abonnement?"),
+                t("d7b8387e", "Hvis du allerede har annulleret, er der ikke mere, du skal gøre. Dit abonnement udløber automatisk ved afslutningen af faktureringsperioden."),
+                t("f4166d9a", "Vil du annullere dit abonnement?"),
+                t("b74ff5fc", "Hvis du annullerer, udløber dit abonnement automatisk ved afslutningen af faktureringsperioden."),
+                t("ee9efbc8", "Fortsæt til annullering"),
+                t("c5d9c77a", "Det ser ud til, at der var en lille forstyrrelse. Bare rolig, det er ikke din skyld. Luk dette vindue, og prøv igen."),
+                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store."),
+                t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store."),
+                t("i5f14be7", function (e) {
+                    return "Velkommen tilbage " + e.displayName;
+                }),
+                t("a76d58ba", "Annoncestatistik"),
+                t("eccd0e1a", "Statistik for organisation"),
+                t("deea1708", "Vil du se statistik på tværs af alle dine X-konti?"),
+                t("eb603ffc", "Opgrader for at tilknytte dit netværk og se samlet statistik."),
+                t("gf67aae4", "Opgrader til fuld adgang"),
+                t("h75e3618", "Inkluder organisation"),
+                t("h24a8862", "Om dette afkrydsningsfelt"),
+                t("c29e3a88", "Vælg tilknytninger"),
+                t("j8318d57", function (e) {
+                    return e.number + " tilknytning" + i(e.number, "", "er");
+                }),
+                t("bf809ec0", "Vælg tilknytninger"),
+                t("b719e224", "Ingen resultater"),
+                t("c9938100", "Søgeresultater"),
+                t("d1a35ec6", "Tilføj konti"),
+                t("b437adda", "Opgrader til betalt");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7902,47 +7906,9 @@
                     a(e, r)
                 );
             }
-            t("hbd2c24e", "Denne konto er ikke kvalificeret til gaver på nuværende tidspunkt."),
-                t("f3fddc98", "købsvilkår"),
-                t("cff9c889", "Læs mere"),
-                t("c65dda96", "Din gave er blevet sendt."),
-                t("f6e2a407", function (e) {
-                    return "Tillad alle at se dit abonnent-badge, når du svarer på @" + e.screenName + "s posts";
-                }),
-                t("j8dedddd", function (e) {
-                    return "Når du slår dette fra, kan @" + e.screenName + " og vedkommendes abonnenter stadig se dit badge, når du svarer på @" + e.screenName + "s posts, der kun er for abonnenter. @" + e.screenName + " kan altid se dit badge.";
-                }),
-                t("c8a513f6", "Annuller abonnement"),
-                t("ea000ec8", "Har du allerede annulleret dit abonnement?"),
-                t("d7b8387e", "Hvis du allerede har annulleret, er der ikke mere, du skal gøre. Dit abonnement udløber automatisk ved afslutningen af faktureringsperioden."),
-                t("f4166d9a", "Vil du annullere dit abonnement?"),
-                t("b74ff5fc", "Hvis du annullerer, udløber dit abonnement automatisk ved afslutningen af faktureringsperioden."),
-                t("ee9efbc8", "Fortsæt til annullering"),
-                t("c5d9c77a", "Det ser ud til, at der var en lille forstyrrelse. Bare rolig, det er ikke din skyld. Luk dette vindue, og prøv igen."),
-                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store."),
-                t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store."),
-                t("i5f14be7", function (e) {
-                    return "Velkommen tilbage " + e.displayName;
-                }),
-                t("a76d58ba", "Annoncestatistik"),
-                t("eccd0e1a", "Statistik for organisation"),
-                t("deea1708", "Vil du se statistik på tværs af alle dine X-konti?"),
-                t("eb603ffc", "Opgrader for at tilknytte dit netværk og se samlet statistik."),
-                t("gf67aae4", "Opgrader til fuld adgang"),
-                t("h75e3618", "Inkluder organisation"),
-                t("h24a8862", "Om dette afkrydsningsfelt"),
-                t("c29e3a88", "Vælg tilknytninger"),
-                t("j8318d57", function (e) {
-                    return e.number + " tilknytning" + i(e.number, "", "er");
-                }),
-                t("bf809ec0", "Vælg tilknytninger"),
-                t("b719e224", "Ingen resultater"),
-                t("c9938100", "Søgeresultater"),
-                t("d1a35ec6", "Tilføj konti"),
-                t("b437adda", "Opgrader til betalt"),
-                t("f1f6c88b", function (e) {
-                    return "Konti (" + e.count + ")";
-                }),
+            t("f1f6c88b", function (e) {
+                return "Konti (" + e.count + ")";
+            }),
                 t("b02156b8", "Invitationer"),
                 t("gd67d29b", function (e) {
                     return "Invitationer (" + e.count + ")";
@@ -8895,8 +8861,8 @@
                 t("b3160a69", function (e) {
                     return e.volumePercent + " procent";
                 }),
-                t("fb236728", "Pause");
-            t("e9bd453e", "Afspil igen"),
+                t("fb236728", "Pause"),
+                t("e9bd453e", "Afspil igen"),
                 t("d46b00b0", "Gå til direkte"),
                 t("ec8ab8b4", "Skjul"),
                 t("b8b6344a", "Vis"),
@@ -8943,8 +8909,8 @@
                 t("a7bf9962", "Download video"),
                 t("ccc97152", "Afspilningshastighed"),
                 t("h531ade0", "Videokvalitet"),
-                t("e8b5757c", "0,25x"),
-                t("e7e954de", "0,5x"),
+                t("e8b5757c", "0,25x");
+            t("e7e954de", "0,5x"),
                 t("g07ffe66", "0,75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1,25x"),
@@ -10492,12 +10458,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Ved at klikke på Promover post accepterer du "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13376,4 +13336,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.d8ab24da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.ab2f1cba.js.map

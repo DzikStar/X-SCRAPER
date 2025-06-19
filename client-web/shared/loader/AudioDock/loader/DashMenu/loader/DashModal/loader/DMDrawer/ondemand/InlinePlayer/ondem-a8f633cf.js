@@ -94,6 +94,24 @@
             }
             const p = d.default.create((e) => ({ root: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: "1px", flexDirection: "row", justifyContent: "space-between", alignItems: "center", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space12 }, rootCompact: { flexDirection: "column" }, textWrapper: { display: "block", flexShrink: 1, marginHorizontal: e.spaces.space12 }, textWrapperCompact: { marginHorizontal: e.spaces.space2 }, buttonWrapper: { marginVertical: `calc(-1 * ${e.componentDimensions.gutterVertical})` }, buttonWrapperCompact: { marginTop: e.spaces.space8, marginBottom: 0 }, button: { paddingStart: e.spaces.space12, paddingEnd: e.spaces.space12 } }));
         },
+        401339: (e, t, n) => {
+            n.d(t, { Z: () => a });
+            const r = {},
+                i = ["touchend", "touchmove", "touchstart"];
+            const a = {
+                isTouchSupported: () =>
+                    i.some(
+                        (e) =>
+                            !!(function (e, t) {
+                                if (void 0 !== r[e]) return r[e];
+                                const n = document.createElement(t || "div"),
+                                    i = `on${e}`;
+                                let a = i in n;
+                                return a || (n.setAttribute(i, "return;"), (a = "function" == typeof n[i])), (r[e] = a), a;
+                            })(e),
+                    ),
+            };
+        },
         981788: (e, t, n) => {
             n.d(t, { Z: () => p });
             var r = n(202784),
@@ -996,4 +1014,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf.106fa17a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf.4d07bd7a.js.map

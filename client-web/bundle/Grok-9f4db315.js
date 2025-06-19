@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Grok-9f4db315"],
+    ["bundle.Grok-9f4db315", "bundle.AudioSpaceDetail"],
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => u });
@@ -333,4 +333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-9f4db315.839d027a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-9f4db315.648c9d5a.js.map

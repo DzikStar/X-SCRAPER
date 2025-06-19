@@ -2498,41 +2498,6 @@
                     return e.topicName + " Isiokwu";
                 }),
                 t("ic6aa5f4", "Authenticated."),
-                t("c02e7e3c", "Na-ebugo..."),
-                t("c5453f28", "Round of 64"),
-                t("eb256a86", "Round of 32"),
-                t("g77adc66", "Sweet Sixteen"),
-                t("a6d2520c", "Sweet 16"),
-                t("g5b63eb6", "Elite Eight"),
-                t("d8bf2890", "Elite 8"),
-                t("f9d3d6f2", "Final Four"),
-                t("bda24f7c", "Final 4"),
-                t("i5043440", "National Championship"),
-                t("fcb16026", "Championship"),
-                t("e9c89ee8", "East"),
-                t("h259fd86", "West"),
-                t("a7b2545a", "South"),
-                t("fdf7819a", "Midwest"),
-                t("i899e9b0", "Submit Bracket"),
-                t("c5b04394", "View Picks"),
-                t("h836bbae", "View Tournament"),
-                t("e1059d6c", "1st Round"),
-                t("b1602be4", "2nd Round"),
-                t("ef7bc2c0", "Mar 20-21"),
-                t("h726aaf2", "Mar 22-23"),
-                t("ee7cd198", "Mar 27-28"),
-                t("fed91402", "Mar 29-30"),
-                t("aba0a450", "Apr 5"),
-                t("jdfba2dc", "Apr 7"),
-                t("b7c6bc12", "TBD"),
-                t("c373612c", "Pick:"),
-                t("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                t("j5db9ddd", " over "),
-                t("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 t("j4c40da4", "Zipụ ugbu a "),
                 t("b23688c8", "Weghachite ngụ oge"),
                 t("cca5d499", function (e) {
@@ -2978,8 +2943,8 @@
                 t("a7de64de", "Ozi mgbasa ozi"),
                 t("jb0a4c36", "Blọọgụ"),
                 t("ce6d095a", "Ọrụ"),
-                t("e0adec82", "Akụrụngwa Ụdị ihe");
-            t("df1b7550", "Ahịa"),
+                t("e0adec82", "Akụrụngwa Ụdị ihe"),
+                t("df1b7550", "Ahịa"),
                 t("he258678", "X for Business"),
                 t("c6f58084", "Ndị nrụpụta"),
                 t("d83f18d2", "Ndekọ"),
@@ -3013,8 +2978,8 @@
                 }),
                 t("d6d9aab6", "Tinye Ebenrụtụakā"),
                 t("bb89cf46", "Wepụ Ebenrụtụakā"),
-                t("a739d4ba", "Tinye na Foldà Ebenrụtụakā"),
-                t("d5270434", "Ụzọ ọpụpụ"),
+                t("a739d4ba", "Tinye na Foldà Ebenrụtụakā");
+            t("d5270434", "Ụzọ ọpụpụ"),
                 t("ac85c6b2", "Enwere mperi na ibugo onyonyo a"),
                 t("b327c12a", "Onyonyo"),
                 t("ic76bdf0", "Recreate this with Grok"),
@@ -3890,8 +3855,8 @@
                 t("a2bf8b8a", "Switch to listening"),
                 t("caa8d928", "Toggle noise suppression"),
                 t("b5d88f0c", "Employees only"),
-                t("c855ab8e", "Naanị ndị debanyere aha");
-            t("ddeb0a3c", "Nke a bụ Ogbe ahụ. Ndị a ọ masịrị gị? Lenye anya."),
+                t("c855ab8e", "Naanị ndị debanyere aha"),
+                t("ddeb0a3c", "Nke a bụ Ogbe ahụ. Ndị a ọ masịrị gị? Lenye anya."),
                 t("e111f531", function (e) {
                     return e.count + " gbanyere";
                 }),
@@ -3939,8 +3904,8 @@
                 t("f2333850", "Share with people outside of X"),
                 t("cddb8097", "Learn more"),
                 t("f77997b0", "Osote onye nnabata"),
-                t("i48f4ed8", "Ọkà okwu"),
-                t("a77c8e02", "Onye na-ege ntị"),
+                t("i48f4ed8", "Ọkà okwu");
+            t("a77c8e02", "Onye na-ege ntị"),
                 t("bdfa93eb", function (e) {
                     return e.name + " kekọrịtara";
                 }),
@@ -4210,6 +4175,7 @@
                 t("f794af9a", "Fun mode"),
                 t("eccf9fea", "Regular mode"),
                 t("j22655f2", "Ask anything"),
+                t("c02e7e3c", "Na-ebugo..."),
                 t("h0681e3e", "Talk to Grok, our AI assistant"),
                 t("d593fd78", "It can answer your questions, search X, and generate images"),
                 t("d0205a24", "Check the Facts"),
@@ -4294,7 +4260,6 @@
                 t("afa2a58e", "See all posts"),
                 t("fc83e7e2", "See all users"),
                 t("df601d92", "Relevant Users"),
-                t("b001fa12", "Source query"),
                 t("db6c20cf", function (e) {
                     return "Show all (" + e.count + ")";
                 }),
@@ -4377,7 +4342,7 @@
                 t("g3ce0132", "Thought for"),
                 t("f8007364", "Expand for details"),
                 t("ca53f780", "Collapse details"),
-                t("b52484b6", "Searching..."),
+                t("e6d51c62", "Searching"),
                 t("ib1c5475", function (e) {
                     return "Thought for " + e.minutes + "m " + e.seconds + "s";
                 }),
@@ -4395,6 +4360,7 @@
                 t("a3186bff", function (e) {
                     return e.count + " web page" + i(e.count, "", "s");
                 }),
+                t("b52484b6", "Searching..."),
                 t("f4146dda", "Which response do you prefer?"),
                 t("a2c2be32", "This will help make Grok better."),
                 t("g01599b6", "Response 1"),
@@ -4932,8 +4898,8 @@
                 t("b649d8cc", "Subscriber Only"),
                 t("j9282130", "Broadcast thumbnail"),
                 t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened.");
-            t("i6a75722", "Time Range"),
+                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
+                t("i6a75722", "Time Range"),
                 t("c602f5b8", "Ngụkọta"),
                 t("b35e68ae", "Total Participants"),
                 t("h78ee79a", "Total Replay Watched"),
@@ -4962,8 +4928,8 @@
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access"),
-                t("gf898b70", "Advanced Search"),
+                t("ed99baea", "Early Beta Access");
+            t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
@@ -5884,8 +5850,8 @@
                 t("fb59415e", "In order to be shown publicly as context on the post, a note needs to be rated helpful by enough people from different points of view. This approach helps avoid bias and manipulation, and helps find notes that are helpful to many people."),
                 t("f9a44022", "X, the company, doesn’t choose what shows up: the people do"),
                 t("gdf4fbb2", "X, the company, doesn’t write, rate or moderate notes (unless they break the X Rules). We believe giving people voice to make these choices together is a fair and effective way to add information that helps people stay better informed."),
-                t("cc720e6a", "Ndetu Ọgbakọ bụ ihe banyere nhụụzọ data");
-            t("j2fcd33a", "Data includes contributions up until"),
+                t("cc720e6a", "Ndetu Ọgbakọ bụ ihe banyere nhụụzọ data"),
+                t("j2fcd33a", "Data includes contributions up until"),
                 t("d4a6b322", "A na-ebipụta data Ndetu Ọgbakọ niile ebe a kwa ụbọchị, yabụ na ndị mmadụ nwere ohere inyocha ya n'efu, chọpụta nsogbu gasi, na hụta ohere iji mee ka ndetu Ogbe ka mma. Anyị enweghị ike ichere ka anyị na gị mụkọ ihe."),
                 t("c359263a", "Mụta etu esi enyocha data Ndetu Ọgbakọ "),
                 t("b8a27fe2", "n'ime ntuziaka anyị"),
@@ -5918,8 +5884,8 @@
                 t("e41c9b4f", function (e) {
                     return "Echekwara na " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Hichapụ Foldà"),
-                t("f4ea967a", "Ehichapụla foldà"),
+                t("h18f86a4", "Hichapụ Foldà");
+            t("f4ea967a", "Ehichapụla foldà"),
                 t("b670aa62", "Aha Foldà"),
                 t("aece5462", "Emelitela aha foldà nke ọma"),
                 t("e3299b94", "Ọ nwere ihe na-agaghị nke ọma. Gbalịa imelite folda ahụ ọzọ n'otu nkeji."),
@@ -6890,8 +6856,8 @@
                 t("b36cd50e", "Specify the core team that candidates will work with once hired."),
                 t("d3a427ce", "Select the level of experience required."),
                 t("i7174442", "Job Description"),
-                t("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role.");
-            t("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
+                t("fef0cf02", "Provide a detailed job description. Outline the key responsibilities and qualifications to give candidates a clear understanding of the role."),
+                t("b7800bec", "Pitch the job in 200 characters or less. Shown in posts, recommendations, and search."),
                 t("a5244ece", "Application URL (Required)"),
                 t("g2b553f6", "Enter the public URL where candidates can apply for this job."),
                 t("c2e77608", "Job Title (Required)"),
@@ -6924,8 +6890,8 @@
                 t("c924ad84", "Keep videos playing"),
                 t("de750a3c", "Enjoy them even when your phone is locked"),
                 t("he5e87c4", "Boost your replies"),
-                t("g64a60ba", "Get a small prioritization when you reply to posts"),
-                t("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
+                t("g64a60ba", "Get a small prioritization when you reply to posts");
+            t("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
                 t("fdd77a34", "Create longer posts"),
                 t("j6d26a7a", "Write as much as you’d like to share"),
                 t("c4fd68da", "Customize your experience"),
@@ -7866,7 +7832,45 @@
                 t("cfcac293", function (e) {
                     return "Gift & Pay " + e.price;
                 }),
-                t("d7a73450", "Tier");
+                t("d7a73450", "Tier"),
+                t("hbd2c24e", "This account is not eligible for gifts at this time."),
+                t("f3fddc98", "Purchaser Terms"),
+                t("cff9c889", "Learn more"),
+                t("c65dda96", "Your gift has been sent."),
+                t("f6e2a407", function (e) {
+                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
+                }),
+                t("j8dedddd", function (e) {
+                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
+                }),
+                t("c8a513f6", "Kàgbuo Ndebanye aha"),
+                t("ea000ec8", "Ị kagbuola Ndebanye aha gị?"),
+                t("d7b8387e", "Ikàgbuolaarị ya, e nweghịzị fọdụrụnụ aga-eme. Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
+                t("f4166d9a", "I chọrọ ikàgbu Ndebanye aha gị?"),
+                t("b74ff5fc", "Ọ bụrụ na ị kàgbuo, Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
+                t("ee9efbc8", "Gaa n'ihu na nkàgbu"),
+                t("c5d9c77a", "Ọ dịka e nwetere obere ihe ọdachi. Esogbula onwe gị n'agbanyeghị, na o sighị gị n'aka. Mechie window ahụ ma nwàa ọzọ."),
+                t("jda53c24", "I nwere ike kagbuo Ndebanye aha gị site n'Ụlọahịa Ngwa Apple."),
+                t("g0a7a53e", "I nwere ike kagbuo Ndebanyeaha gị site n'Ụlọahịa Google Play."),
+                t("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                t("a76d58ba", "Ads Analytics"),
+                t("eccd0e1a", "Organization Analytics"),
+                t("deea1708", "Want to view analytics across all your X accounts?"),
+                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                t("gf67aae4", "Upgrade to Full Access"),
+                t("h75e3618", "Include organization"),
+                t("h24a8862", "About this checkbox"),
+                t("c29e3a88", "Select affiliates"),
+                t("j8318d57", function (e) {
+                    return e.number + " affiliate" + i(e.number, "", "s");
+                }),
+                t("bf809ec0", "Select Affiliates"),
+                t("b719e224", "Enweghị nsonaazụ"),
+                t("c9938100", "Chọọ nsonaazụ"),
+                t("d1a35ec6", "Gbakwunye akaụntụ gasi"),
+                t("b437adda", "Upgrade to paid");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7905,47 +7909,9 @@
                     c(e, a)
                 );
             }
-            t("hbd2c24e", "This account is not eligible for gifts at this time."),
-                t("f3fddc98", "Purchaser Terms"),
-                t("cff9c889", "Learn more"),
-                t("c65dda96", "Your gift has been sent."),
-                t("f6e2a407", function (e) {
-                    return "Allow anyone to see your Subscribed badge when you reply to @" + e.screenName + "’s posts";
-                }),
-                t("j8dedddd", function (e) {
-                    return "When you turn this off, @" + e.screenName + " and their Subscribers will still see your badge when you reply to @" + e.screenName + "’s Subscriber-only posts. @" + e.screenName + " will always see your badge.";
-                }),
-                t("c8a513f6", "Kàgbuo Ndebanye aha"),
-                t("ea000ec8", "Ị kagbuola Ndebanye aha gị?"),
-                t("d7b8387e", "Ikàgbuolaarị ya, e nweghịzị fọdụrụnụ aga-eme. Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
-                t("f4166d9a", "I chọrọ ikàgbu Ndebanye aha gị?"),
-                t("b74ff5fc", "Ọ bụrụ na ị kàgbuo, Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
-                t("ee9efbc8", "Gaa n'ihu na nkàgbu"),
-                t("c5d9c77a", "Ọ dịka e nwetere obere ihe ọdachi. Esogbula onwe gị n'agbanyeghị, na o sighị gị n'aka. Mechie window ahụ ma nwàa ọzọ."),
-                t("jda53c24", "I nwere ike kagbuo Ndebanye aha gị site n'Ụlọahịa Ngwa Apple."),
-                t("g0a7a53e", "I nwere ike kagbuo Ndebanyeaha gị site n'Ụlọahịa Google Play."),
-                t("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                t("a76d58ba", "Ads Analytics"),
-                t("eccd0e1a", "Organization Analytics"),
-                t("deea1708", "Want to view analytics across all your X accounts?"),
-                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                t("gf67aae4", "Upgrade to Full Access"),
-                t("h75e3618", "Include organization"),
-                t("h24a8862", "About this checkbox"),
-                t("c29e3a88", "Select affiliates"),
-                t("j8318d57", function (e) {
-                    return e.number + " affiliate" + i(e.number, "", "s");
-                }),
-                t("bf809ec0", "Select Affiliates"),
-                t("b719e224", "Enweghị nsonaazụ"),
-                t("c9938100", "Chọọ nsonaazụ"),
-                t("d1a35ec6", "Gbakwunye akaụntụ gasi"),
-                t("b437adda", "Upgrade to paid"),
-                t("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
+            t("f1f6c88b", function (e) {
+                return "Accounts (" + e.count + ")";
+            }),
                 t("b02156b8", "Invitations"),
                 t("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
@@ -8898,8 +8864,8 @@
                 t("b3160a69", function (e) {
                     return e.volumePercent + " percent";
                 }),
-                t("fb236728", "Kwụsịtụ");
-            t("e9bd453e", "Replay"),
+                t("fb236728", "Kwụsịtụ"),
+                t("e9bd453e", "Replay"),
                 t("d46b00b0", "Jump to live"),
                 t("ec8ab8b4", "Mee ogbi"),
                 t("b8b6344a", "Wepụ ogbi"),
@@ -8946,8 +8912,8 @@
                 t("a7bf9962", "Download video"),
                 t("ccc97152", "Playback speed"),
                 t("h531ade0", "Video quality"),
-                t("e8b5757c", "0.25x"),
-                t("e7e954de", "0.5x"),
+                t("e8b5757c", "0.25x");
+            t("e7e954de", "0.5x"),
                 t("g07ffe66", "0.75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1.25x"),
@@ -10508,12 +10474,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["By clicking Promote post you’re agreeing to the "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13389,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.db0390da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.37d02f9a.js.map

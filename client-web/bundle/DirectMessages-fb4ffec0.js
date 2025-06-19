@@ -158,7 +158,14 @@
                                         const t = (0, u.rs)(e.message);
                                         m.summary = (m.summary || "") + t;
                                         const s = (0, u.Bv)(e.message);
-                                        s ? (m.toolUsage = s) : ((m.bulletPoints = [...(m.bulletPoints || []), (0, o.K)(e.message)]), e.webResults && e.webResults.length && ((m.webResults = e.webResults), this.addWebResults(e.webResults || []))), (l = !0), (this.accumulatedSummary += t);
+                                        if (s) {
+                                            const e = (0, u.cU)(s);
+                                            e && (m.bulletPoints = [...(m.bulletPoints || []), e]);
+                                        } else {
+                                            const t = (0, o.K)(e.message);
+                                            t.trim() && (m.bulletPoints = [...(m.bulletPoints || []), t]), e.webResults && e.webResults.length && ((m.webResults = e.webResults), this.addWebResults(e.webResults || []));
+                                        }
+                                        (l = !0), (this.accumulatedSummary += t);
                                         break;
                                     }
                                     case d.DECISION: {
@@ -181,7 +188,14 @@
                                     case d.SUMMARY: {
                                         const s = (0, u.Bv)(e.message) ?? void 0,
                                             a = (0, u.rs)(e.message);
-                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsage: s };
+                                        let n = [];
+                                        if (s) {
+                                            const e = (0, u.cU)(s);
+                                            e && (n = [e]);
+                                        } else {
+                                            (0, o.K)(e.message).trim() && (n = [(0, o.K)(e.message)]);
+                                        }
+                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsage: s, bulletPoints: n };
                                         break;
                                     }
                                     case d.DECISION: {
@@ -347,18 +361,18 @@
                     S = e.concat(t);
                 }
                 return (
-                    (T = (0, i.Z)(
+                    (b = (0, i.Z)(
                         S.map((t) => {
                             const n = t.type === c.eD.GROUP;
                             let i = [];
                             return (n && a) || (n && i.push(l(t)), (!e && n) || (i = i.concat(g(n ? e : null, [t], s, !n)))), i;
                         }),
                     )),
-                    (0, r.Z)(T, ({ id: e, type: t }) => (t === u.El.DMConversation ? `c_${e}` : `u_${e}`))
+                    (0, r.Z)(b, ({ id: e, type: t }) => (t === u.El.DMConversation ? `c_${e}` : `u_${e}`))
                 );
-                var T;
+                var b;
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.b7e0661a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.a9120a5a.js.map

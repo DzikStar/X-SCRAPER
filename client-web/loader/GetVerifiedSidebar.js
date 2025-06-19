@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.GetVerifiedSidebar", "icons/IconBookmarkCollectionsStroke-js", "icons/IconFilm-js"],
+    ["loader.GetVerifiedSidebar", "icons/IconBookmarkCollectionsStroke-js", "icons/IconDocument-js", "icons/IconWriteStroke-js"],
     {
         920603: (e, r, t) => {
-            t.d(r, { Z: () => B });
+            t.d(r, { Z: () => M });
             var a = t(202784),
                 n = t(325686),
                 i = t(73664),
@@ -58,36 +58,36 @@
                 f = t(731708),
                 h = t(392237),
                 b = t(498514);
-            const _ = ({ renderProperties: e, wrapperStyles: r }) => {
+            const v = ({ renderProperties: e, wrapperStyles: r }) => {
                     const t = (0, b.U)(e.icon_type),
                         n = e.icon_color ? { color: h.default.theme.colors[e.icon_color] } : null;
-                    return a.createElement(t, { style: [r, n, "CircleFill" === e.icon_type ? v.smallIcon : null] });
+                    return a.createElement(t, { style: [r, n, "CircleFill" === e.icon_type ? C.smallIcon : null] });
                 },
-                v = h.default.create((e) => ({ smallIcon: { height: ".6em" } })),
-                C = ({ buttonProps: e, destinationLink: r, onDestinationClick: t, renderProperties: { action_label: i, icon: s } }) => a.createElement(k.ZP, { link: r, onClick: t, type: e?.type }, a.createElement(n.Z, { style: y.buttonInner }, s ? a.createElement(_, { renderProperties: s, wrapperStyles: y.iconWrapper }) : null, a.createElement(f.ZP, null, i))),
-                y = h.default.create((e) => ({ buttonInner: { flexDirection: "row", alignItems: "center" }, iconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" } }));
-            var g = t(992942),
-                P = t(439592);
-            const E = ({ destinationLink: e, onDestinationClick: r, renderProperties: { cta: t, image_url: i, primary_label: s, primary_label_icon: l, secondary_label: c } }) => {
+                C = h.default.create((e) => ({ smallIcon: { height: ".6em" } })),
+                _ = ({ buttonProps: e, destinationLink: r, onDestinationClick: t, renderProperties: { action_label: i, icon: s } }) => a.createElement(k.ZP, { link: r, onClick: t, type: e?.type }, a.createElement(n.Z, { style: g.buttonInner }, s ? a.createElement(v, { renderProperties: s, wrapperStyles: g.iconWrapper }) : null, a.createElement(f.ZP, null, i))),
+                g = h.default.create((e) => ({ buttonInner: { flexDirection: "row", alignItems: "center" }, iconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" } }));
+            var y = t(992942),
+                E = t(439592);
+            const P = ({ destinationLink: e, onDestinationClick: r, renderProperties: { cta: t, image_url: i, primary_label: s, primary_label_icon: l, secondary_label: c } }) => {
                     const o = i ? "whiteOnColor" : void 0;
-                    return a.createElement(n.Z, { style: S.cardOuter }, i ? a.createElement(g.Z, { aspectMode: P.Z.COVER, source: { uri: i }, style: S.image }) : null, a.createElement(n.Z, { style: S.cardInner }, a.createElement(n.Z, { style: S.primaryLabelContainer }, l ? a.createElement(_, { renderProperties: l, wrapperStyles: S.primaryLabelIconWrapper }) : null, a.createElement(f.ZP, { color: o, size: "headline1", weight: "heavy" }, s)), c ? a.createElement(f.ZP, { color: o }, c) : null, a.createElement(C, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: r, renderProperties: t })));
+                    return a.createElement(n.Z, { style: Z.cardOuter }, i ? a.createElement(y.Z, { aspectMode: E.Z.COVER, source: { uri: i }, style: Z.image }) : null, a.createElement(n.Z, { style: Z.cardInner }, a.createElement(n.Z, { style: Z.primaryLabelContainer }, l ? a.createElement(v, { renderProperties: l, wrapperStyles: Z.primaryLabelIconWrapper }) : null, a.createElement(f.ZP, { color: o, size: "headline1", weight: "heavy" }, s)), c ? a.createElement(f.ZP, { color: o }, c) : null, a.createElement(_, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: r, renderProperties: t })));
                 },
-                S = h.default.create((e) => ({ cardOuter: { borderRadius: e.borderRadii.large, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, backgroundColor: e.colors.cellBackground }, cardInner: { gap: e.spaces.space12, alignItems: "flex-start", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, image: { position: "absolute", width: "100%", height: "100%", borderRadius: e.borderRadii.large }, primaryLabelContainer: { flexDirection: "row", alignItems: "center" }, primaryLabelIconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" } })),
+                Z = h.default.create((e) => ({ cardOuter: { borderRadius: e.borderRadii.large, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, backgroundColor: e.colors.cellBackground }, cardInner: { gap: e.spaces.space12, alignItems: "flex-start", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, image: { position: "absolute", width: "100%", height: "100%", borderRadius: e.borderRadii.large }, primaryLabelContainer: { flexDirection: "row", alignItems: "center" }, primaryLabelIconWrapper: { paddingEnd: e.spaces.space8, verticalAlign: "middle" } })),
                 w = ({ destinationLink: e, onDestinationClick: r, renderProperties: t }) => {
                     const i = a.useMemo(() => {
                         const n = { destinationLink: e, onDestinationClick: r };
                         switch (t.__typename) {
                             case "UpsellButtonRenderProperties":
-                                return a.createElement(C, (0, m.Z)({}, n, { renderProperties: t }));
+                                return a.createElement(_, (0, m.Z)({}, n, { renderProperties: t }));
                             case "UpsellCardRenderProperties":
-                                return a.createElement(E, (0, m.Z)({}, n, { renderProperties: t }));
+                                return a.createElement(P, (0, m.Z)({}, n, { renderProperties: t }));
                             default:
                                 return null;
                         }
                     }, [t, e, r]);
                     return a.createElement(n.Z, { testID: `super-upsell-${t.__typename ?? "default"}` }, i);
                 },
-                Z = ({ attributionParams: e, trackClick: r, trackImpression: t, upsellContent: n }) => {
+                S = ({ attributionParams: e, trackClick: r, trackImpression: t, upsellContent: n }) => {
                     const l = (0, c.Z)(),
                         o = a.useRef(),
                         u = (0, i.R)(o, { threshold: 1 }),
@@ -101,14 +101,14 @@
                         }, [l, r, d]);
                     return a.createElement("div", { ref: o }, a.createElement(w, { destinationLink: m, onDestinationClick: k, renderProperties: n.render_properties }));
                 },
-                V = (e) => a.createElement(l.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, a.createElement(Z, e));
-            var D = t(722517);
-            const I = ({ attributionParams: e, surfaceKey: r, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }) => a.useMemo(() => a.createElement(V, { attributionParams: e, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }), [e, t, n, i, s]),
-                z = ({ surfaceKey: e, wrapperStyles: r }) => {
-                    const { attributionParams: t, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c } = (0, D.Z)(e);
-                    return a.useMemo(() => (c && t ? a.createElement(n.Z, { style: r }, a.createElement(I, { attributionParams: t, surfaceKey: e, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c })) : null), [t, c, e, i, s, l, r]);
+                D = (e) => a.createElement(l.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, a.createElement(S, e));
+            var I = t(722517);
+            const B = ({ attributionParams: e, surfaceKey: r, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }) => a.useMemo(() => a.createElement(D, { attributionParams: e, trackClick: t, trackDismiss: n, trackImpression: i, upsellContent: s }), [e, t, n, i, s]),
+                L = ({ surfaceKey: e, wrapperStyles: r }) => {
+                    const { attributionParams: t, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c } = (0, I.Z)(e);
+                    return a.useMemo(() => (c && t ? a.createElement(n.Z, { style: r }, a.createElement(B, { attributionParams: t, surfaceKey: e, trackClick: i, trackDismiss: s, trackImpression: l, upsellContent: c })) : null), [t, c, e, i, s, l, r]);
                 },
-                B = a.memo(z);
+                M = a.memo(L);
         },
         86029: (e, r, t) => {
             t.r(r), t.d(r, { default: () => d });
@@ -139,7 +139,7 @@
             };
         },
         498514: (e, r, t) => {
-            t.d(r, { U: () => V });
+            t.d(r, { U: () => D });
             t(202784);
             var a = t(521058),
                 n = t(847988),
@@ -156,17 +156,17 @@
                 f = t(164174),
                 h = t(926981),
                 b = t(642317),
-                _ = t(28862),
-                v = t(376278),
-                C = t(511323),
-                y = t(254944),
-                g = t(465072),
-                P = t(189700),
-                E = t(520489),
-                S = t(297938),
+                v = t(28862),
+                C = t(376278),
+                _ = t(511323),
+                g = t(254944),
+                y = t(465072),
+                E = t(189700),
+                P = t(520489),
+                Z = t(297938),
                 w = t(136483),
-                Z = t(457566);
-            const V = (e) => {
+                S = t(457566);
+            const D = (e) => {
                 switch (e) {
                     case "Fire":
                         return a.default;
@@ -189,7 +189,7 @@
                     case "NotesStroke":
                         return p.default;
                     case "Grok":
-                        return Z.x1;
+                        return S.x1;
                     case "MoneyStroke":
                         return m.default;
                     case "BarChart":
@@ -201,21 +201,21 @@
                     case "RocketStroke":
                         return b.default;
                     case "BookmarkCollectionsStroke":
-                        return _.default;
-                    case "FireStroke":
                         return v.default;
-                    case "PersonStroke":
+                    case "FireStroke":
                         return C.default;
+                    case "PersonStroke":
+                        return _.default;
                     case "PaintbrushStroke":
-                        return y.default;
-                    case "ModeratorStroke":
                         return g.default;
+                    case "ModeratorStroke":
+                        return y.default;
                     case "Document":
-                        return P.default;
-                    case "RadarStroke":
                         return E.default;
+                    case "RadarStroke":
+                        return P.default;
                     case "SearchPersonStroke":
-                        return S.default;
+                        return Z.default;
                     case "CircleFill":
                         return w.default;
                     default:
@@ -236,7 +236,7 @@
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        926981: (e, r, t) => {
+        189700: (e, r, t) => {
             t.r(r), t.d(r, { default: () => c });
             var a = t(202784),
                 n = t(890601),
@@ -244,11 +244,26 @@
                 s = t(347101);
             const l = (e = {}) => {
                 const { direction: r } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M18.5 2h-13C4.12 2 3 3.12 3 4.5v15C3 20.88 4.12 22 5.5 22h13c1.38 0 2.5-1.12 2.5-2.5v-15C21 3.12 19.88 2 18.5 2zM7 20H5.5c-.28 0-.5-.22-.5-.5v-2h2V20zm0-4.5H5V13h2v2.5zM7 11H5V8.5h2V11zm0-4.5H5v-2c0-.28.22-.5.5-.5H7v2.5zM15 20H9v-7h6v7zm0-9H9V4h6v7zm4 8.5c0 .28-.22.5-.5.5H17v-2.5h2v2zm0-4h-2V13h2v2.5zm0-4.5h-2V8.5h2V11zm0-4.5h-2V4h1.5c.28 0 .5.22.5.5v2z" })) }, { writingDirection: r });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M8 11h8v2H8zm0-4h5v2H8z" }), a.createElement("path", { d: "M17.5 2h-11C5.12 2 4 3.12 4 4.5v15C4 20.88 5.12 22 6.5 22h6c4.14 0 7.5-3.36 7.5-7.5v-10C20 3.12 18.88 2 17.5 2zm-2.52 17.41c.01-.1.02-.21.02-.32v-1.27c0-.48.32-.82.84-.82h1.28c.09 0 .19 0 .29-.01-.53 1.04-1.39 1.89-2.43 2.42zM18 14c0 .58-.46 1-.88 1h-1.28C14.26 15 13 16.19 13 17.82v1.27c0 .46-.43.91-.97.91H6.5c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h11c.27 0 .5.22.5.5V14z" })) }, { writingDirection: r });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
+        376021: (e, r, t) => {
+            t.r(r), t.d(r, { default: () => o });
+            var a = t(202784),
+                n = t(890601),
+                i = t(783427),
+                s = t(717683),
+                l = t(347101);
+            const c = (e = {}) => {
+                const r = a.useContext(s.Z),
+                    { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, r && l.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: t });
+            };
+            c.metadata = { width: 24, height: 24 };
+            const o = c;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.9456041a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.bda527aa.js.map

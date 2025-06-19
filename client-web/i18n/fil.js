@@ -2495,41 +2495,6 @@
                     return "Paksang " + a.topicName;
                 }),
                 i("ic6aa5f4", "Na-authenticate."),
-                i("c02e7e3c", "Naglo-load..."),
-                i("c5453f28", "Round of 64"),
-                i("eb256a86", "Round of 32"),
-                i("g77adc66", "Sweey Sixteen"),
-                i("a6d2520c", "Sweet 16"),
-                i("g5b63eb6", "Elite Eight"),
-                i("d8bf2890", "Elite 8"),
-                i("f9d3d6f2", "Final Four"),
-                i("bda24f7c", "Final 4"),
-                i("i5043440", "National Championship"),
-                i("fcb16026", "Championship"),
-                i("e9c89ee8", "East"),
-                i("h259fd86", "West"),
-                i("a7b2545a", "South"),
-                i("fdf7819a", "Midwest"),
-                i("i899e9b0", "Isumite ang Bracket"),
-                i("c5b04394", "Tingnan ang Mga Pinili"),
-                i("h836bbae", "Tingnan ang Tournament"),
-                i("e1059d6c", "1st Round"),
-                i("b1602be4", "2nd Round"),
-                i("ef7bc2c0", "Mar 20–21"),
-                i("h726aaf2", "Mar 22–23"),
-                i("ee7cd198", "Mar 27–28"),
-                i("fed91402", "Mar 29–30"),
-                i("aba0a450", "Abr 5"),
-                i("jdfba2dc", "Abr 7"),
-                i("b7c6bc12", "TBD"),
-                i("c373612c", "Pick:"),
-                i("e8b3cab9", function (a) {
-                    return "" + a.winner;
-                }),
-                i("j5db9ddd", " laban sa "),
-                i("a638617d", function (a) {
-                    return "" + a.loser;
-                }),
                 i("j4c40da4", "Ipadala ngayon"),
                 i("b23688c8", "I-undo ang timer"),
                 i("cca5d499", function (a) {
@@ -2975,8 +2940,8 @@
                 i("a7de64de", "Info sa ads"),
                 i("jb0a4c36", "Blog"),
                 i("ce6d095a", "Mga Career"),
-                i("e0adec82", "Mga Resource ng Brand");
-            i("df1b7550", "Marketing"),
+                i("e0adec82", "Mga Resource ng Brand"),
+                i("df1b7550", "Marketing"),
                 i("he258678", "X para sa Negosyo"),
                 i("c6f58084", "Mga developer"),
                 i("d83f18d2", "Direktoryo"),
@@ -3010,8 +2975,8 @@
                 }),
                 i("d6d9aab6", "Magdagdag ng Bookmark"),
                 i("bb89cf46", "Alisin ang Bookmark"),
-                i("a739d4ba", "Idagdag sa Folder ng Bookmark"),
-                i("d5270434", "Lumabas"),
+                i("a739d4ba", "Idagdag sa Folder ng Bookmark");
+            i("d5270434", "Lumabas"),
                 i("ac85c6b2", "May error na nangyari sa pag-load nitong imahe"),
                 i("b327c12a", "Larawan"),
                 i("ic76bdf0", "I-recreate ito gamit ang Grok"),
@@ -3887,8 +3852,8 @@
                 i("a2bf8b8a", "Lumipat sa pakikinig"),
                 i("caa8d928", "I-toggle ang pagpigil sa ingay"),
                 i("b5d88f0c", "Mga empleyado lang"),
-                i("c855ab8e", "Mga Subscriber lang");
-            i("ddeb0a3c", "Narito ang Komunidad. Gusto mo ba ang mga miyembro nito? Tingnan ito."),
+                i("c855ab8e", "Mga Subscriber lang"),
+                i("ddeb0a3c", "Narito ang Komunidad. Gusto mo ba ang mga miyembro nito? Tingnan ito."),
                 i("e111f531", function (a) {
                     return a.count + " nakatutok";
                 }),
@@ -3936,8 +3901,8 @@
                 i("f2333850", "Ibahagi sa mga tao sa labas ng X"),
                 i("cddb8097", "Matuto pa"),
                 i("f77997b0", "Co-host"),
-                i("i48f4ed8", "Tagapagsalita"),
-                i("a77c8e02", "Tagapakinig"),
+                i("i48f4ed8", "Tagapagsalita");
+            i("a77c8e02", "Tagapakinig"),
                 i("bdfa93eb", function (a) {
                     return "Ibinahagi ni " + a.name;
                 }),
@@ -4207,6 +4172,7 @@
                 i("f794af9a", "Fun mode"),
                 i("eccf9fea", "Regular mode"),
                 i("j22655f2", "Magtanong ng kahit ano"),
+                i("c02e7e3c", "Naglo-load..."),
                 i("h0681e3e", "Makipag-usap sa Grok, ang aming AI Assistant"),
                 i("d593fd78", "Masasagot nito ang mga tanong mo, makakapaghanap sa X, at makakagawa ng mga larawan"),
                 i("d0205a24", "Tingnan ang Facts"),
@@ -4291,7 +4257,6 @@
                 i("afa2a58e", "See all posts"),
                 i("fc83e7e2", "See all users"),
                 i("df601d92", "Relevant Users"),
-                i("b001fa12", "Source query"),
                 i("db6c20cf", function (a) {
                     return "Show all (" + a.count + ")";
                 }),
@@ -4374,7 +4339,7 @@
                 i("g3ce0132", "Nag-isip sa loob ng"),
                 i("f8007364", "I-expand para sa mga detalye"),
                 i("ca53f780", "I-collapse ang mga detalye"),
-                i("b52484b6", "Naghahanap..."),
+                i("e6d51c62", "Searching"),
                 i("ib1c5475", function (a) {
                     return "Nag-isip sa loob ng " + a.minutes + "m " + a.seconds + "s";
                 }),
@@ -4392,6 +4357,7 @@
                 i("a3186bff", function (a) {
                     return a.count + " " + e(a.count, "", "mga ") + "web page";
                 }),
+                i("b52484b6", "Naghahanap..."),
                 i("f4146dda", "Aling tugon ang gusto mo?"),
                 i("a2c2be32", "Makakatulong ito na mapaganda pa ang Grok."),
                 i("g01599b6", "Tugon 1"),
@@ -4929,8 +4895,8 @@
                 i("b649d8cc", "Subscriber Lang"),
                 i("j9282130", "Thumbnail ng broadcast"),
                 i("g629b8b0", "Nag-time Out"),
-                i("eb87323c", "Ipinapakita nito ang analytics data para sa pinili mong panahon simula nang mangari ang livestream.");
-            i("i6a75722", "Range ng Oras"),
+                i("eb87323c", "Ipinapakita nito ang analytics data para sa pinili mong panahon simula nang mangari ang livestream."),
+                i("i6a75722", "Range ng Oras"),
                 i("c602f5b8", "Kabuuan"),
                 i("b35e68ae", "Kabuuang Kalahok"),
                 i("h78ee79a", "Kabuuang Panonood ng Replay"),
@@ -4959,8 +4925,8 @@
                 i("e41fffbc", "Ang kabuuang tagal ng panonood ng mga video mo."),
                 i("if2909ba", "Tagal ng Panonood"),
                 i("i0e5bf4c", "Mga video mo"),
-                i("ed99baea", "Maagang Beta Access"),
-                i("gf898b70", "Advanced na Paghahanap"),
+                i("ed99baea", "Maagang Beta Access");
+            i("gf898b70", "Advanced na Paghahanap"),
                 i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
                 i("a8584698", "ai startup"),
                 i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
@@ -5881,8 +5847,8 @@
                 i("fb59415e", "Para makita ng publiko ang isang note bilang konteksto sa post, kailangan itong mabigyan ng rating na kapaki-pakinabang ng sapat na dami ng mga taong may iba't ibang pananaw. Nakakatulong ang ganitong paraan para maiwasan ang bias at manipulasyon, at nakakatulong ito na mahanap ang mga note na kapaki-pakinabang sa maraming tao."),
                 i("f9a44022", "Hindi pinipili ng X, ang kumpanya, kung ano ang lalabas: ang mga tao ang pumipili nito"),
                 i("gdf4fbb2", "Hindi sumusulat, nagbibigay ng rating, o nagmo-moderate ng mga note ang X, ang kumpanya (maliban na lang kung lumalabag ang mga ito sa Mga Patakaran ng X). Naniniwala kami sa pagbibigay ng tinig sa mga tao para sama-sama silang makapagdesisyon sa paraang patas at mabisa para makapaglagay ng impormasyong makakatulong sa mga tao na mas makaalam."),
-                i("cc720e6a", "Nakabatay ang Mga Note ng Komunidad sa transparency ng data");
-            i("j2fcd33a", "Kasama sa data ang mga kontribusyon hanggang"),
+                i("cc720e6a", "Nakabatay ang Mga Note ng Komunidad sa transparency ng data"),
+                i("j2fcd33a", "Kasama sa data ang mga kontribusyon hanggang"),
                 i("d4a6b322", "Pina-publish dito araw-araw ang data ng Mga Note ng Komunidad, kaya may libreng access ang mga tao para suriin ito, tumukoy ng mga problema, at humanap ng mga oportunidad para mas mapaganda ang Mga Note ng Komunidad. Nasasabik kaming matuto kasama ka."),
                 i("c359263a", "Alamin kung paano gamitin at suriin ang data ng Mga Note ng Komunidad "),
                 i("b8a27fe2", "sa aming gabay"),
@@ -5915,8 +5881,8 @@
                 i("e41c9b4f", function (a) {
                     return "Saved to " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "I-delete ang Folder"),
-                i("f4ea967a", "Na-delete na ang folder"),
+                i("h18f86a4", "I-delete ang Folder");
+            i("f4ea967a", "Na-delete na ang folder"),
                 i("b670aa62", "Pangalan ng Folder"),
                 i("aece5462", "Matagumpay na na-update ang pangalan ng folder"),
                 i("e3299b94", "Nagkaproblema. Subukang i-update ang folder na iyon sa loob ng ilang sandali."),
@@ -6887,8 +6853,8 @@
                 i("b36cd50e", "Ilahad ang core team kung saan magtatrabaho ang candidate kapag na-hire."),
                 i("d3a427ce", "Piliin ang antas ng karanasan na kinakailangan."),
                 i("i7174442", "Paglalarawan ng Trabaho"),
-                i("fef0cf02", "Magbigay ng detalyadong paglalarawan ng trabaho. Ilista ang mga pangunahing responsibilidad at kuwalipikasyon para bigyan ang mga candidate ng malinaw na pagkaunawa sa posisyon. ");
-            i("b7800bec", "Ilarawan ang trabaho gamit ang 200 character o wala pa. Ipinapakita sa mga post, rekomendasyon, at paghahanap."),
+                i("fef0cf02", "Magbigay ng detalyadong paglalarawan ng trabaho. Ilista ang mga pangunahing responsibilidad at kuwalipikasyon para bigyan ang mga candidate ng malinaw na pagkaunawa sa posisyon. "),
+                i("b7800bec", "Ilarawan ang trabaho gamit ang 200 character o wala pa. Ipinapakita sa mga post, rekomendasyon, at paghahanap."),
                 i("a5244ece", "URL ng Application (Kinakailangan)"),
                 i("g2b553f6", "Ilagay ang pampublikong URL kung saan mag-a-apply ang mga candidate para sa trabahong ito."),
                 i("c2e77608", "Posisyon sa Trabaho (Kinakailangan)"),
@@ -6921,8 +6887,8 @@
                 i("c924ad84", "Panatilihing nagpe-play ang mga video"),
                 i("de750a3c", "Ma-enjoy ang mga ito kahit pa naka-lock ang telepono mo"),
                 i("he5e87c4", "I-boost ang mga reply mo"),
-                i("g64a60ba", "Makakuha ng maliit na prioritization kapag nag-reply ka sa mga post"),
-                i("a7ee832a", "Ayusin ang mga typo at pagkakamali, hanggang 60 na minuto"),
+                i("g64a60ba", "Makakuha ng maliit na prioritization kapag nag-reply ka sa mga post");
+            i("a7ee832a", "Ayusin ang mga typo at pagkakamali, hanggang 60 na minuto"),
                 i("fdd77a34", "Sumulat ng mas mahahabang post"),
                 i("j6d26a7a", "Sumulat ng hanggang gusto mong ibahagi"),
                 i("c4fd68da", "I-customize ang karanasan mo"),
@@ -7863,7 +7829,45 @@
                 i("cfcac293", function (a) {
                     return "Magregalo at Magbayad ng " + a.price;
                 }),
-                i("d7a73450", "Tier");
+                i("d7a73450", "Tier"),
+                i("hbd2c24e", "Hindi kuwalipikado para sa mga regalo ang account na ito sa ngayon."),
+                i("f3fddc98", "Mga Tuntunin ng Purchaser"),
+                i("cff9c889", "Matuto pa"),
+                i("c65dda96", "Naipadala na ang regalo mo."),
+                i("f6e2a407", function (a) {
+                    return "Payagan ang kahit sino na makita ang badge mo bilang Subscriber sa tuwing magre-reply ka sa mga post ni @" + a.screenName;
+                }),
+                i("j8dedddd", function (a) {
+                    return "Kapag in-off mo ito, makikita pa rin ni @" + a.screenName + " at mga subscriber niya ang badge mo kapag nag-reply ka sa mga post na para lang sa Subscriber ni @" + a.screenName + ". Palaging makikita ni @" + a.screenName + " ang badge mo.";
+                }),
+                i("c8a513f6", "Kanselahin ang Subscription"),
+                i("ea000ec8", "Nakansela na ang iyong Subscription?"),
+                i("d7b8387e", "Kung nagkansela ka na, wala ka nang dapat pang gawin. Awtomatikong mag-e-expire ang iyong Subscription sa katapusan ng cycle ng pagsingil."),
+                i("f4166d9a", "Gusto mo bang kanselahin ang iyong Subscription?"),
+                i("b74ff5fc", "Kung magkakansela ka, awtomatikong mag-e-expire ang Subscription sa katapusan ng cycle ng pagsingil."),
+                i("ee9efbc8", "Magpatuloy sa pagkansela"),
+                i("c5d9c77a", "Mukhang nagkaroon ng kaunting problema. Huwag mag-alala, hindi ikaw ang may kasalanan. Isara ang window na ito at subukan ulit."),
+                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store."),
+                i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store."),
+                i("i5f14be7", function (a) {
+                    return "Welcome back, " + a.displayName;
+                }),
+                i("a76d58ba", "Analytics ng Ads"),
+                i("eccd0e1a", "Analytics ng Organisasyon"),
+                i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
+                i("eb603ffc", "Mag-upgrade para i-affiliate ang network mo at tingnan ang pinagsama-samang analytics."),
+                i("gf67aae4", "Mag-upgrade sa Buong Access"),
+                i("h75e3618", "Isama ang organisasyon"),
+                i("h24a8862", "Tungkol sa checkbox na ito"),
+                i("c29e3a88", "Pumili ng mga affiliate"),
+                i("j8318d57", function (a) {
+                    return a.number + " " + e(a.number, "", "(na) ") + "affiliate";
+                }),
+                i("bf809ec0", "Pumili ng Mga Affiliate"),
+                i("b719e224", "Walang resulta"),
+                i("c9938100", "Mga resulta ng paghahanap"),
+                i("d1a35ec6", "Magdagdag ng mga account"),
+                i("b437adda", "I-upgrade sa may bayad");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7902,47 +7906,9 @@
                     o(a, n)
                 );
             }
-            i("hbd2c24e", "Hindi kuwalipikado para sa mga regalo ang account na ito sa ngayon."),
-                i("f3fddc98", "Mga Tuntunin ng Purchaser"),
-                i("cff9c889", "Matuto pa"),
-                i("c65dda96", "Naipadala na ang regalo mo."),
-                i("f6e2a407", function (a) {
-                    return "Payagan ang kahit sino na makita ang badge mo bilang Subscriber sa tuwing magre-reply ka sa mga post ni @" + a.screenName;
-                }),
-                i("j8dedddd", function (a) {
-                    return "Kapag in-off mo ito, makikita pa rin ni @" + a.screenName + " at mga subscriber niya ang badge mo kapag nag-reply ka sa mga post na para lang sa Subscriber ni @" + a.screenName + ". Palaging makikita ni @" + a.screenName + " ang badge mo.";
-                }),
-                i("c8a513f6", "Kanselahin ang Subscription"),
-                i("ea000ec8", "Nakansela na ang iyong Subscription?"),
-                i("d7b8387e", "Kung nagkansela ka na, wala ka nang dapat pang gawin. Awtomatikong mag-e-expire ang iyong Subscription sa katapusan ng cycle ng pagsingil."),
-                i("f4166d9a", "Gusto mo bang kanselahin ang iyong Subscription?"),
-                i("b74ff5fc", "Kung magkakansela ka, awtomatikong mag-e-expire ang Subscription sa katapusan ng cycle ng pagsingil."),
-                i("ee9efbc8", "Magpatuloy sa pagkansela"),
-                i("c5d9c77a", "Mukhang nagkaroon ng kaunting problema. Huwag mag-alala, hindi ikaw ang may kasalanan. Isara ang window na ito at subukan ulit."),
-                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store."),
-                i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store."),
-                i("i5f14be7", function (a) {
-                    return "Welcome back, " + a.displayName;
-                }),
-                i("a76d58ba", "Analytics ng Ads"),
-                i("eccd0e1a", "Analytics ng Organisasyon"),
-                i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
-                i("eb603ffc", "Mag-upgrade para i-affiliate ang network mo at tingnan ang pinagsama-samang analytics."),
-                i("gf67aae4", "Mag-upgrade sa Buong Access"),
-                i("h75e3618", "Isama ang organisasyon"),
-                i("h24a8862", "Tungkol sa checkbox na ito"),
-                i("c29e3a88", "Pumili ng mga affiliate"),
-                i("j8318d57", function (a) {
-                    return a.number + " " + e(a.number, "", "(na) ") + "affiliate";
-                }),
-                i("bf809ec0", "Pumili ng Mga Affiliate"),
-                i("b719e224", "Walang resulta"),
-                i("c9938100", "Mga resulta ng paghahanap"),
-                i("d1a35ec6", "Magdagdag ng mga account"),
-                i("b437adda", "I-upgrade sa may bayad"),
-                i("f1f6c88b", function (a) {
-                    return "Mga Account (" + a.count + ")";
-                }),
+            i("f1f6c88b", function (a) {
+                return "Mga Account (" + a.count + ")";
+            }),
                 i("b02156b8", "Mga Imbitasyon"),
                 i("gd67d29b", function (a) {
                     return "Mga Imbitasyon (" + a.count + ")";
@@ -8895,8 +8861,8 @@
                 i("b3160a69", function (a) {
                     return a.volumePercent + " (na) porsyento";
                 }),
-                i("fb236728", "I-pause");
-            i("e9bd453e", "Replay"),
+                i("fb236728", "I-pause"),
+                i("e9bd453e", "Replay"),
                 i("d46b00b0", "Tumalon sa live"),
                 i("ec8ab8b4", "I-mute"),
                 i("b8b6344a", "I-unmute"),
@@ -8943,8 +8909,8 @@
                 i("a7bf9962", "I-download ang video"),
                 i("ccc97152", "Bilis ng playback"),
                 i("h531ade0", "Video quality"),
-                i("e8b5757c", "0.25x"),
-                i("e7e954de", "0.5x"),
+                i("e8b5757c", "0.25x");
+            i("e7e954de", "0.5x"),
                 i("g07ffe66", "0.75x"),
                 i("d8bede9e", "1x"),
                 i("j41845c8", "1.25x"),
@@ -10499,12 +10465,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Sa pag-click sa I-promote ang post, sumasang-ayon ka sa "];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13386,4 +13346,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.d2a2ef9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.0697dbaa.js.map

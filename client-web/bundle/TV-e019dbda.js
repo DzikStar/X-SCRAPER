@@ -80,7 +80,7 @@
             const f = l.default.create((e) => ({ root: { alignItems: "center", flexGrow: 1, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12 }, retryText: { marginBottom: e.spaces.space28 } }));
         },
         301410: (e, t, r) => {
-            r.d(t, { i: () => m.ZP, z: () => k });
+            r.d(t, { i: () => m.ZP, z: () => b });
             var a = r(202784),
                 s = r(928123),
                 c = r.n(s),
@@ -113,7 +113,7 @@
                     const a = c()(e, t);
                     return r({ fetchStatus: m.ZP.LOADED, data: a, error: null, retry: u.Z });
                 },
-                k = (e, t) =>
+                b = (e, t) =>
                     function ({ fetchPolicy: r = "store-or-network", render: s, variables: c }) {
                         const [n, l] = o()(e),
                             u = (0, p.n7)(t.errorConfig.context),
@@ -153,14 +153,14 @@
                 y = r(273413),
                 f = r(602737),
                 g = r(91946),
-                k = r(686010),
-                b = r(787557),
+                b = r(686010),
+                k = r(787557),
                 v = r(734261),
-                S = r(815846),
-                C = r(721152),
-                _ = r(479890),
-                E = r(183822),
-                w = r(575626),
+                C = r(815846),
+                S = r(721152),
+                w = r(479890),
+                _ = r(183822),
+                E = r(575626),
                 Z = r(898063),
                 R = r(602070),
                 T = r(883432),
@@ -169,29 +169,29 @@
                 q = r(919022),
                 $ = r(673932),
                 A = r(708411),
-                V = r(283512),
+                D = r(283512),
                 L = r(668214),
-                D = r(250901),
+                V = r(250901),
                 N = r(682461);
             const O = (0, L.Z)()
-                .propsFromState(() => ({ search: D.IF }))
+                .propsFromState(() => ({ search: V.IF }))
                 .adjustStateProps(({ search: e }) => ({ typeaheadResults: e?.typeaheadResults }))
                 .propsFromActions(() => ({ fetchTVSearchTypeaheadResults: N.H7, tvSearchStart: x.eX.tvSearchStart }))
                 .withAnalytics({ page: "tv-search" });
             var B = r(366635),
                 F = r(949626),
                 z = r(965612),
-                H = r(467537),
-                I = r(752475),
+                I = r(467537),
+                H = r(752475),
                 M = r(382880);
             var Q = r(725516);
             const U = { behavior: "smooth", block: "end", inline: "nearest" },
-                j = (e) => {
+                X = (e) => {
                     const t = "topic" === e?.type ? e?.topic : void 0,
                         r = "user" === e?.type ? e?.id_str : void 0;
                     return { profile_id: r, search_details: { query: t || r } };
                 },
-                X = ({ isSelected: e, name: t, onSelect: r, result: s }) => {
+                j = ({ isSelected: e, name: t, onSelect: r, result: s }) => {
                     const n = a.useRef(null),
                         o = (0, Q.z)();
                     (({ intersectionObserverOptions: e, onVisibleOnce: t, targetRef: r }) => {
@@ -220,23 +220,23 @@
                         targetRef: n,
                         intersectionObserverOptions: { threshold: [0.5] },
                         onVisibleOnce: a.useCallback(() => {
-                            o.scribe({ element: "typeahead", action: "impression", data: j(s) });
+                            o.scribe({ element: "typeahead", action: "impression", data: X(s) });
                         }, [o, s]),
                     });
                     const l = a.useCallback(() => {
-                            o.scribe({ element: "typeahead", action: "focus", data: j(s) });
+                            o.scribe({ element: "typeahead", action: "focus", data: X(s) });
                         }, [o, s]),
                         i = a.useCallback(() => {
-                            o.scribe({ element: "typeahead", action: "click", data: j(s) }), r?.(s);
+                            o.scribe({ element: "typeahead", action: "click", data: X(s) }), r?.(s);
                         }, [o, r, s]);
                     let u;
-                    return "user" === s?.type ? (u = a.createElement(H.C, { "aria-label": void 0, name: t, onFocus: l, onPress: i, role: "link", scrollOptions: U, style: [K.root, e && K.selected], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, s?.profile_image_url_https ? a.createElement(I.Z, { source: s?.profile_image_url_https, style: K.avatar, verifiedType: s.verified_type }) : null, a.createElement(c.Z, { style: K.userDetails }, a.createElement(B.Z, { affiliateBadgeInfo: s.highlightedLabel, badgeContext: "content", isBlueVerified: s.is_blue_verified, isProtected: s.is_protected, isVerified: s.verified, name: s.name, nameSize: "subtext1", screenName: s.screen_name, screenNameSize: "subtext2", verifiedType: s.verified_type, withLink: !1, withNameWrap: !0, withStackedLayout: !0 }))))) : "topic" === s?.type && (u = a.createElement(H.C, { "aria-label": void 0, name: t, onFocus: l, onPress: () => r?.(s), role: "link", style: [K.root, K.topicResult], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, a.createElement(g.Kh, { size: "subtext1" }, s?.topic)))), a.createElement(c.Z, { ref: n }, u);
+                    return "user" === s?.type ? (u = a.createElement(I.C, { "aria-label": void 0, name: t, onFocus: l, onPress: i, role: "link", scrollOptions: U, style: [K.root, e && K.selected], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, s?.profile_image_url_https ? a.createElement(H.Z, { source: s?.profile_image_url_https, style: K.avatar, verifiedType: s.verified_type }) : null, a.createElement(c.Z, { style: K.userDetails }, a.createElement(B.Z, { affiliateBadgeInfo: s.highlightedLabel, badgeContext: "content", isBlueVerified: s.is_blue_verified, isProtected: s.is_protected, isVerified: s.verified, name: s.name, nameSize: "subtext1", screenName: s.screen_name, screenNameSize: "subtext2", verifiedType: s.verified_type, withLink: !1, withNameWrap: !0, withStackedLayout: !0 }))))) : "topic" === s?.type && (u = a.createElement(I.C, { "aria-label": void 0, name: t, onFocus: l, onPress: () => r?.(s), role: "link", style: [K.root, K.topicResult], withBackgroundStyle: !0, withBorderStyle: !1 }, a.createElement(z.Z, { placeholder: a.createElement(F.Z, { style: K.placeholder }) }, a.createElement(g.Kh, { size: "subtext1" }, s?.topic)))), a.createElement(c.Z, { ref: n }, u);
                 },
                 K = l.default.create((e) => ({ root: { alignItems: "center", borderRadius: e.borderRadii.small, color: e.colors.text, display: "flex", flexDirection: "row", gap: e.spaces.space8, marginVertical: e.spaces.space4, paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space8, scrollMargin: e.spaces.space8, width: "100%" }, placeholder: { height: e.spaces.space48, width: 100 * e.scaleMultiplier }, topicResult: { paddingVertical: e.spaces.space12 }, selected: { backgroundColor: e.colors.gray200 }, avatar: { minWidth: e.spaces.space48, height: e.spaces.space48, width: e.spaces.space48 }, userAvatar: { borderRadius: e.borderRadii.infinite }, businessAvatar: { borderRadius: e.borderRadii.small }, userDetails: { flexDirection: "column" } })),
                 G = u().b86c2e12,
                 W = u().e5b0e544,
-                J = /https:\/\/(?:www\.)?(?:x|twitter)\.com\/i\/tv\/trending\/([0-9]*)/,
-                Y = ({ history: e }) =>
+                Y = /https:\/\/(?:www\.)?(?:x|twitter)\.com\/i\/tv\/trending\/([0-9]*)/,
+                J = ({ history: e }) =>
                     a.createElement(
                         c.Z,
                         { style: te.loggedOutSearchPrompt },
@@ -258,12 +258,12 @@
                         [u, f] = a.useState(""),
                         g = (0, P.I0)(),
                         { direction: L } = (0, n.Z)(),
-                        D = "rtl" === L,
+                        V = "rtl" === L,
                         N = a.useRef({ id: 0, lastEventTimeMs: 0, query: "" }),
                         O = new URLSearchParams(t.location.search).get("q"),
                         [B, F] = a.useState(O || ""),
                         z = a.useRef(B),
-                        [H, I] = a.useState(!1),
+                        [I, H] = a.useState(!1),
                         M = a.useCallback(
                             (e) => {
                                 F(e), (z.current = e);
@@ -290,9 +290,9 @@
                             },
                             [t, M, Q],
                         ),
-                        j = a.useCallback(
+                        X = a.useCallback(
                             (e) => {
-                                switch ((I(!1), e.value)) {
+                                switch ((H(!1), e.value)) {
                                     case "Backspace":
                                         return void U(z.current.substring(0, z.current.length - 1));
                                     case " ":
@@ -308,21 +308,21 @@
                         K = a.useCallback(
                             (e) => {
                                 let t;
-                                return (0, s.setFocus)(`${w.sN}.${$.rQ}.${_.U}`), (t = "Backspace" === e.code || "Delete" === e.code ? { displayName: "Backspace", value: "Backspace" } : "Space" === e.code ? { displayName: "Space", value: " " } : { displayName: S.y[e.key[0].toLowerCase()] || "", value: S.y[e.key[0].toLowerCase()] || "" }), j(t), !0;
+                                return (0, s.setFocus)(`${E.sN}.${$.rQ}.${w.U}`), (t = "Backspace" === e.code || "Delete" === e.code ? { displayName: "Backspace", value: "Backspace" } : "Space" === e.code ? { displayName: "Space", value: " " } : { displayName: C.y[e.key[0].toLowerCase()] || "", value: C.y[e.key[0].toLowerCase()] || "" }), X(t), !0;
                             },
-                            [j],
+                            [X],
                         ),
                         G = a.useCallback((e) => ("Backspace" === e.code || 8 === e.keyCode) && (K(e), !0), [K]);
-                    (0, Z.ZP)("AlphaNumeric", K, `${w.sN}.${$.rQ}`), (0, Z.ZP)("Space", K, `${w.sN}.${$.rQ}`), (0, Z.ZP)("Backspace", K, `${w.sN}.${$.rQ}`), (0, Z.ZP)("Delete", K, `${w.sN}.${$.rQ}`);
+                    (0, Z.ZP)("AlphaNumeric", K, `${E.sN}.${$.rQ}`), (0, Z.ZP)("Space", K, `${E.sN}.${$.rQ}`), (0, Z.ZP)("Backspace", K, `${E.sN}.${$.rQ}`), (0, Z.ZP)("Delete", K, `${E.sN}.${$.rQ}`);
                     const W = a.useCallback(
                         (e) => {
                             if ("user" === e.type) t.push((0, A.dX)(e.screen_name.toLowerCase()));
                             else if ("topic" === e.type) {
                                 f("");
                                 const r = e?.result_context?.redirect_url_tv || "",
-                                    a = J.exec(r),
+                                    a = Y.exec(r),
                                     s = a?.[1] || "";
-                                s ? t.push((0, $.Lc)(s)) : (M(e.topic), Q({ q: e.topic }, z), I(!0));
+                                s ? t.push((0, $.Lc)(s)) : (M(e.topic), Q({ q: e.topic }, z), H(!0));
                             }
                         },
                         [t, M, Q],
@@ -342,12 +342,12 @@
                         ),
                         [ee, re],
                     );
-                    const ae = a.useMemo(() => l.topics.map((e, t) => a.createElement(X, { key: `typeaheadResult-${t}`, name: `typeaheadResult-${t}`, onSelect: W, result: e })), [W, l.topics]),
+                    const ae = a.useMemo(() => l.topics.map((e, t) => a.createElement(j, { key: `typeaheadResult-${t}`, name: `typeaheadResult-${t}`, onSelect: W, result: e })), [W, l.topics]),
                         se = a.useMemo(
                             () =>
                                 l.users.map((e, t) => {
                                     const r = l.topics.length + t;
-                                    return a.createElement(X, { isSelected: u === e.screen_name, key: `typeaheadResult-${r}`, name: `typeaheadResult-${r}`, onSelect: W, result: e });
+                                    return a.createElement(j, { isSelected: u === e.screen_name, key: `typeaheadResult-${r}`, name: `typeaheadResult-${r}`, onSelect: W, result: e });
                                 }),
                             [W, u, l.topics.length, l.users],
                         ),
@@ -357,17 +357,17 @@
                         ne = a.useCallback(
                             (e) => {
                                 let t = !1;
-                                return ((!D && "ArrowLeft" === e.key) || (D && "ArrowRight" === e.key)) && ((0, s.setFocus)(`${w.sN}.${$.rQ}.${v.o}`), (t = !0)), t;
+                                return ((!V && "ArrowLeft" === e.key) || (V && "ArrowRight" === e.key)) && ((0, s.setFocus)(`${E.sN}.${$.rQ}.${v.o}`), (t = !0)), t;
                             },
-                            [D],
+                            [V],
                         );
-                    return a.createElement(E.Z, { preferredChildName: "keyboard" }, a.createElement(c.Z, { style: te.root }, a.createElement(C.o, { focusable: !0, onEscapeOrBack: G, showValue: !0, value: B }), a.createElement(c.Z, { style: te.searchPageLayout }, a.createElement(c.Z, { style: te.searchSideBar }, a.createElement(b.Z, { disabled: !i, onArrowPress: ce, onKeyPress: j }), a.createElement(k.Z, { "aria-label": void 0, focusable: !!i, name: "typeahead-results", role: "list", style: te.searchTypeaheadResults }, ae, l.topics.length > 0 && l.users.length > 0 ? a.createElement(o.Z, null) : null, se)), a.createElement(c.Z, { style: te.resultsGridContainer }, i ? a.createElement(V.Z, { autoFocus: H, debounceStateRef: N, name: "search-content", onArrowPress: ne, product: "Videos", query: B, queryRef: z, querySource: T.Z.TVSearch, searchTab: "search", style: te.content, width: 4, withCategories: !0 }) : a.createElement(Y, { history: t })))));
+                    return a.createElement(_.Z, { preferredChildName: "keyboard" }, a.createElement(c.Z, { style: te.root }, a.createElement(S.o, { focusable: !0, onEscapeOrBack: G, showValue: !0, value: B }), a.createElement(c.Z, { style: te.searchPageLayout }, a.createElement(c.Z, { style: te.searchSideBar }, a.createElement(k.Z, { disabled: !i, onArrowPress: ce, onKeyPress: X }), a.createElement(b.Z, { "aria-label": void 0, focusable: !!i, name: "typeahead-results", role: "list", style: te.searchTypeaheadResults }, ae, l.topics.length > 0 && l.users.length > 0 ? a.createElement(o.Z, null) : null, se)), a.createElement(c.Z, { style: te.resultsGridContainer }, i ? a.createElement(D.Z, { autoFocus: I, debounceStateRef: N, name: "search-content", onArrowPress: ne, product: "Videos", query: B, queryRef: z, querySource: T.Z.TVSearch, searchTab: "search", style: te.content, width: 4, withCategories: !0 }) : a.createElement(J, { history: t })))));
                 },
                 te = l.default.create((e) => ({ root: { height: "100%", paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space24, overflow: "hidden" }, searchSideBar: { height: "100%", paddingTop: e.spaces.space20, paddingEnd: e.spaces.space36 }, searchTypeaheadResults: { display: "flex", flexDirection: "column", flex: 1, overflowY: "auto", paddingHorizontal: e.spaces.space2, paddingVertical: e.spaces.space16, width: "100%" }, searchPageLayout: { display: "grid", flex: 1, gridTemplateColumns: 300 * e.scaleMultiplier + "px 3fr", maxHeight: "100%", paddingTop: e.spaces.space4 }, resultsGridContainer: { height: "100%", overflow: "hidden", paddingTop: e.spaces.space20 }, content: { paddingHorizontal: e.spacesPx.space8 + e.borderWidthsPx.medium }, loggedOutSearchPrompt: { display: "flex", flexDirection: "column", gap: e.spaces.space16, alignItems: "center", paddingTop: "20%" } })),
                 re = O(ee);
         },
         283512: (e, t, r) => {
-            r.d(t, { Z: () => k });
+            r.d(t, { Z: () => b });
             var a = r(807896),
                 s = (r(136728), r(202784)),
                 c = r(107267),
@@ -383,16 +383,16 @@
                 y = r(682461),
                 f = r(673932),
                 g = r(301410);
-            const k = function ({ autoFocus: e = !0, debounceStateRef: t, name: r, onArrowPress: k, product: b, query: v, queryRef: S, querySource: C, searchTab: _, withCategories: E, ...w }) {
+            const b = function ({ autoFocus: e = !0, debounceStateRef: t, name: r, onArrowPress: b, product: k, query: v, queryRef: C, querySource: S, searchTab: w, withCategories: _, ...E }) {
                 const Z = (0, c.useHistory)(),
                     R = (0, p.I0)(),
                     T = (0, d.z)(),
-                    P = (0, p.v9)((0, m.bW)(_)),
+                    P = (0, p.v9)((0, m.bW)(w)),
                     x = P?.cursor,
                     q = P?.lastCompletedQuery,
                     $ = P?.results,
                     A = P?.searchFetchStatus,
-                    V = s.useCallback(
+                    D = s.useCallback(
                         (e) => {
                             R(h.eX.playerOpen(e)), Z.push((0, f.X5)(e));
                         },
@@ -404,36 +404,74 @@
                         },
                         [T, R],
                     ),
-                    D = s.useMemo(
+                    V = s.useMemo(
                         () => (e) => {
                             let r = t.current.id;
                             !(function a(s) {
                                 s <= 0 ||
                                     setTimeout(() => {
-                                        if (r === t.current.id) return L({ ...e, query: S.current });
-                                        if (v === S.current) {
+                                        if (r === t.current.id) return L({ ...e, query: C.current });
+                                        if (v === C.current) {
                                             r = t.current.id;
                                             a(2e3 - (t.current.lastEventTimeMs ? Date.now() - t.current.lastEventTimeMs : 0));
                                         }
                                     }, s);
                             })(2e3);
                         },
-                        [L, t, v, S],
+                        [L, t, v, C],
                     ),
                     N = s.useCallback(() => {
-                        D({ query: v, cursor: x, product: b, querySource: C, searchTab: _, withCategories: E });
-                    }, [x, D, b, v, C, _, E]),
-                    O = s.useCallback((t = $) => (t ? s.createElement(i.Z, (0, a.Z)({}, w, { autoFocus: e, content: v ? t : void 0, name: r, onNearEnd: N, onSelectVideo: V, returnToFirstElementOnEscape: !0 })) : null), [e, N, r, V, v, w, $]),
-                    B = s.useCallback(() => (1 === $?.length && $[0].content ? O($[0].content) : s.createElement(u.Z, { autoFocus: e, categories: v && $ ? $ : [], name: r, onArrowPress: k, onSelectVideo: V, returnToFirstElementOnEscape: !0 })), [e, r, k, V, v, O, $]);
+                        V({ query: v, cursor: x, product: k, querySource: S, searchTab: w, withCategories: _ });
+                    }, [x, V, k, v, S, w, _]),
+                    O = s.useCallback((t = $) => (t ? s.createElement(i.Z, (0, a.Z)({}, E, { autoFocus: e, content: v ? t : void 0, name: r, onNearEnd: N, onSelectVideo: D, returnToFirstElementOnEscape: !0 })) : null), [e, N, r, D, v, E, $]),
+                    B = s.useCallback(() => (1 === $?.length && $[0].content ? O($[0].content) : s.createElement(u.Z, { autoFocus: e, categories: v && $ ? $ : [], name: r, onArrowPress: b, onSelectVideo: D, returnToFirstElementOnEscape: !0 })), [e, r, b, D, v, O, $]);
                 return (
                     s.useEffect(() => {
-                        void 0 !== t.current.id && v !== q && D({ cursor: x, query: v, product: b, querySource: C, searchTab: _, withCategories: E });
-                    }, [v, b, C, E, D, R, q, x, t, _]),
+                        void 0 !== t.current.id && v !== q && V({ cursor: x, query: v, product: k, querySource: S, searchTab: w, withCategories: _ });
+                    }, [v, k, S, _, V, R, q, x, t, w]),
                     (0, o.q)(() => {
-                        q && v !== q && R(h.eX.tvSearchResultsClear(_));
+                        q && v !== q && R(h.eX.tvSearchResultsClear(w));
                     }),
                     s.createElement(l.Z, { fetchStatus: x ? g.i.LOADED : A, onRequestRetry: n.Z, render: !$ || ("Carousel" !== $[0]?.displayType && "CompactCarousel" !== $[0]?.displayType && "TVCarousel" !== $[0]?.displayType && "TVShortCarousel" !== $[0]?.displayType) ? O : B, retryable: !1 })
                 );
+            };
+        },
+        648839: (e, t, r) => {
+            r.d(t, { Z: () => s });
+            var a = r(202784);
+            const s = ({ direction: e, handleFraction: t, handleSwipe: r, handleTap: s, swipeItemLength: c, swipeDistanceThreshold: n = c / 20, swipeTimeThreshold: o = 150 }) => {
+                const l = a.useRef(0),
+                    i = a.useRef(0),
+                    u = a.useRef(0),
+                    d = a.useCallback((t) => ("horizontal" === e ? t.clientX : t.clientY), [e]);
+                return [
+                    a.useCallback(
+                        (e) => {
+                            l.current || ((l.current = Date.now()), (i.current = d(e)));
+                        },
+                        [d],
+                    ),
+                    a.useCallback(
+                        (e) => {
+                            if (!l.current) return;
+                            u.current = d(e);
+                            const r = (u.current - i.current) / c;
+                            t?.(r);
+                        },
+                        [d, t, c],
+                    ),
+                    a.useCallback(
+                        (e) => {
+                            if (((u.current = d(e)), !l.current)) return;
+                            const a = Date.now() - l.current > o,
+                                c = u.current - i.current,
+                                p = Math.abs(c) > n;
+                            t?.(0), (l.current = 0), a || p ? r?.(c < 0 ? 1 : -1) : s?.(e);
+                        },
+                        [d, t, r, s, n, o],
+                    ),
+                    !!l.current,
+                ];
             };
         },
         943052: (e, t, r) => {
@@ -498,4 +536,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-e019dbda.0f44517a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TV-e019dbda.983bb36a.js.map

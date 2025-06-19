@@ -1,0 +1,308 @@
+"use strict";
+(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
+    ["shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--0ac6436a"],
+    {
+        919623: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M14.828 9.172c-1.315-1.315-3.326-1.522-4.86-.618L3.707 2.293 2.293 3.707l2.428 2.429c-2.478 2.421-3.606 5.376-3.658 5.513L.932 12l.131.351C1.196 12.704 4.394 21 12 21c2.063 0 3.989-.622 5.737-1.849l2.556 2.556 1.414-1.414-6.261-6.261c.904-1.534.698-3.545-.618-4.86zm-1.414 1.414c.522.522.695 1.264.518 1.932l-2.449-2.449c.669-.177 1.409-.005 1.931.517zM3.085 11.999c.107-.24.272-.588.497-1.002l7.993 7.992c-5.14-.279-7.85-5.563-8.489-6.989zm13.21 5.71c-.695.448-1.422.781-2.175.996L4.672 9.258c.412-.57.899-1.158 1.464-1.708l10.16 10.16h-.001zm6.772-5.71l-.131.352c-.062.164-.801 2.055-2.33 4.027l-1.438-1.438c.917-1.217 1.494-2.378 1.746-2.941-.658-1.467-3.5-7-8.915-7-.712 0-1.376.1-2 .27V3.223c.633-.131 1.291-.223 2-.223 7.605 0 10.804 8.296 10.937 8.648l.131.352z" }) });
+        },
+        38422: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M11.999 22.25c-5.652 0-10.25-4.598-10.25-10.25S6.347 1.75 11.999 1.75 22.249 6.348 22.249 12s-4.598 10.25-10.25 10.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25-3.701-8.25-8.25-8.25zm.445 6.992c1.747-.096 3.748-.689 3.768-.695l.575 1.916c-.077.022-1.616.48-3.288.689v.498c.287 1.227 1.687 2.866 2.214 3.405l-1.428 1.4c-.188-.191-1.518-1.576-2.286-3.144-.769 1.568-2.098 2.952-2.286 3.144l-1.428-1.4c.527-.54 1.927-2.178 2.214-3.405v-.498c-1.672-.209-3.211-.667-3.288-.689l.575-1.916c.02.006 2.021.6 3.768.695m0 0c.301.017.59.017.891 0M12 6.25c-.967 0-1.75.78-1.75 1.75s.783 1.75 1.75 1.75 1.75-.78 1.75-1.75-.784-1.75-1.75-1.75z" }) });
+        },
+        52452: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 3.75c-4.56 0-8.25 3.69-8.25 8.25 0 2.25.9 4.28 2.35 5.77C7.51 16.08 9.63 15 12 15s4.49 1.08 5.9 2.77c1.45-1.49 2.35-3.52 2.35-5.77 0-4.56-3.69-8.25-8.25-8.25zm4.34 15.27C15.3 17.78 13.74 17 12 17s-3.3.78-4.34 2.02c1.26.78 2.75 1.23 4.34 1.23s3.08-.45 4.34-1.23zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12c0 3.26-1.53 6.17-3.9 8.05-1.74 1.38-3.95 2.2-6.35 2.2s-4.61-.82-6.35-2.2c-2.37-1.88-3.9-4.79-3.9-8.05zM12 8.5c-.97 0-1.75.78-1.75 1.75S11.03 12 12 12s1.75-.78 1.75-1.75S12.97 8.5 12 8.5zm-3.75 1.75C8.25 8.18 9.93 6.5 12 6.5s3.75 1.68 3.75 3.75S14.07 14 12 14s-3.75-1.68-3.75-3.75z" }) });
+        },
+        692570: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M4.98 4.48C5.88 2.94 7.52 2 9.3 2h5.4c1.78 0 3.43.94 4.32 2.48l2.92 5c.91 1.56.91 3.48 0 5.04l-2.92 5c-.11.2-.24.39-.38.57-.94 1.2-2.39 1.91-3.94 1.91H9.3c-1.55 0-3-.72-3.94-1.92-.14-.17-.26-.36-.38-.56l-2.92-5c-.91-1.56-.91-3.48 0-5.04l2.92-5zM9.3 4c-1.07 0-2.05.57-2.59 1.49l-2.92 5c-.55.93-.55 2.09 0 3.02l2.41 4.14C7.61 16.03 9.68 15 12 15s4.39 1.03 5.8 2.65l2.41-4.14c.55-.93.55-2.09 0-3.02l-2.91-5C16.76 4.57 15.77 4 14.7 4H9.3zm7.28 15.34C15.55 17.92 13.88 17 12 17s-3.55.92-4.58 2.34c.52.42 1.18.66 1.88.66h5.4c.7 0 1.36-.24 1.88-.66zM12 8.5c-.97 0-1.75.78-1.75 1.75S11.03 12 12 12s1.75-.78 1.75-1.75S12.97 8.5 12 8.5zm-3.75 1.75C8.25 8.18 9.93 6.5 12 6.5s3.75 1.68 3.75 3.75S14.07 14 12 14s-3.75-1.68-3.75-3.75z" }) });
+        },
+        10281: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 3.75c-4.56 0-8.25 3.69-8.25 8.25 0 2.25.9 4.28 2.35 5.77C7.51 16.08 9.63 15 12 15s4.49 1.08 5.9 2.77c1.45-1.49 2.35-3.52 2.35-5.77 0-4.56-3.69-8.25-8.25-8.25zm4.34 15.27C15.3 17.78 13.74 17 12 17s-3.3.78-4.34 2.02c1.26.78 2.75 1.23 4.34 1.23s3.08-.45 4.34-1.23zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12c0 3.26-1.53 6.17-3.9 8.05-1.74 1.38-3.95 2.2-6.35 2.2s-4.61-.82-6.35-2.2c-2.37-1.88-3.9-4.79-3.9-8.05zM12 8.5c-.97 0-1.75.78-1.75 1.75S11.03 12 12 12s1.75-.78 1.75-1.75S12.97 8.5 12 8.5zm-3.75 1.75C8.25 8.18 9.93 6.5 12 6.5s3.75 1.68 3.75 3.75S14.07 14 12 14s-3.75-1.68-3.75-3.75z" }) });
+        },
+        381133: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M15 5V3h3V0h2v3h3v2h-3v3h-2V5h-3zm-3-1.19c-.33-.04-.66-.06-1-.06-4.56 0-8.25 3.69-8.25 8.25 0 2.25.9 4.28 2.35 5.77C6.51 16.08 8.63 15 11 15s4.49 1.08 5.9 2.77c1.45-1.49 2.35-3.52 2.35-5.77 0-.34-.02-.67-.06-1h2.01c.03.33.05.66.05 1 0 5.66-4.59 10.25-10.25 10.25S.75 17.66.75 12 5.34 1.75 11 1.75c.34 0 .67.02 1 .05v2.01zM6.66 19.02c1.26.78 2.75 1.23 4.34 1.23s3.08-.45 4.34-1.23C14.3 17.78 12.74 17 11 17s-3.3.78-4.34 2.02zm6.09-8.77c0 .97-.78 1.75-1.75 1.75s-1.75-.78-1.75-1.75S10.03 8.5 11 8.5s1.75.78 1.75 1.75zM11 14c2.07 0 3.75-1.68 3.75-3.75S13.07 6.5 11 6.5s-3.75 1.68-3.75 3.75S8.93 14 11 14z" }) });
+        },
+        650185: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M9.53 4c.41.01.77.28.91.66l4.14 11.6L16.84 11H22v2h-3.84l-2.74 6.39c-.16.38-.54.62-.95.61s-.77-.28-.91-.66L9.42 7.74 7.16 13H2v-2h3.84l2.74-6.39c.16-.38.54-.62.95-.61z" }) });
+        },
+        606884: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M6.05 2.83c-1.25.84-2.63 2.61-3.33 5.41L.78 7.76c.8-3.2 2.42-5.43 4.16-6.59l1.11 1.66zM2.86 18H7.1c.46 2.28 2.48 4 4.9 4s4.43-1.72 4.9-4h4.23l-1.14-8.96c-.51-4.02-3.94-7.04-8-7.04s-7.49 3.02-8 7.05L2.86 18zm11.97 0c-.41 1.17-1.53 2-2.83 2-1.31 0-2.42-.83-2.83-2h5.66zm8.39-10.24c-.8-3.2-2.42-5.43-4.17-6.59l-1.11 1.66c1.26.84 2.64 2.61 3.34 5.41l1.94-.48z" }) });
+        },
+        780265: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M21 6H3V4h18v2zm-4 7H7v-2h10v2zm4 7H3v-2h18v2z" }) });
+        },
+        32666: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M21 6H3V4h18v2zm-8 7H3v-2h10v2zm8 7H3v-2h18v2z" }) });
+        },
+        374477: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M21 6H3V4h18v2zm0 7H11v-2h10v2zm0 7H3v-2h18v2z" }) });
+        },
+        716432: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13zm8.267 5.921h1.447v3.457h1.337v-3.457H18V9.654h-4.233v1.267zm-1.285-1.266h-1.336v4.723h3.121v-1.349h-1.785V9.655zM7.51 9.621l-1.76 4.757h1.289l.295-.843H8.93l.301.843h1.405l-1.76-4.757H7.51zm.162 2.895l.465-1.343.461 1.343h-.926z" }) });
+        },
+        628266: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M8.598 12.516h-.926l.465-1.343.461 1.343zM18.5 3C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13C3 4.119 4.119 3 5.5 3h13zm-3.286 11.378h1.337v-3.457H18V9.654h-4.233v1.267h1.447v3.457zm-4.068 0h3.121v-1.349h-1.785V9.655h-1.336v4.723zm-4.107 0l.295-.843H8.93l.301.843h1.405l-1.76-4.757H7.51l-1.76 4.757h1.289z" }) });
+        },
+        627821: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 1.75C6.339 1.75 1.75 6.34 1.75 12S6.339 22.25 12 22.25 22.25 17.66 22.25 12 17.661 1.75 12 1.75zm0 15.66l-4.457-4.45 1.414-1.42L11 13.59V7h2v6.59l2.043-2.05 1.414 1.42L12 17.41z" }) });
+        },
+        787923: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 1.75C6.339 1.75 1.75 6.34 1.75 12S6.339 22.25 12 22.25 22.25 17.66 22.25 12 17.661 1.75 12 1.75zM17 13h-6.586l2.043 2.04-1.414 1.42-3.75-3.75-.707-.71.707-.71 3.75-3.75 1.414 1.42L10.414 11H17v2z" }) });
+        },
+        533210: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 1.75C6.339 1.75 1.75 6.34 1.75 12S6.339 22.25 12 22.25 22.25 17.66 22.25 12 17.661 1.75 12 1.75zm.957 14.71l-1.414-1.42L13.586 13H7v-2h6.586l-2.043-2.04 1.414-1.42L17.414 12l-4.457 4.46z" }) });
+        },
+        667542: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12.957 4.54L20.414 12l-7.457 7.46-1.414-1.42L16.586 13H3v-2h13.586l-5.043-5.04 1.414-1.42z" }) });
+        },
+        814926: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 1.75C6.339 1.75 1.75 6.34 1.75 12S6.339 22.25 12 22.25 22.25 17.66 22.25 12 17.661 1.75 12 1.75zm3.043 10.71L13 10.41V17h-2v-6.59l-2.043 2.05-1.414-1.42L12 6.59l4.457 4.45-1.414 1.42z" }) });
+        },
+        546465: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M13 17h-2v-6.59l-2.043 2.05-1.414-1.42L12 6.59l4.457 4.45-1.414 1.42L13 10.41V17zm-1 5.25c5.661 0 10.25-4.59 10.25-10.25S17.661 1.75 12 1.75 1.75 6.34 1.75 12 6.339 22.25 12 22.25zM20.25 12c0 4.56-3.694 8.25-8.25 8.25S3.75 16.56 3.75 12 7.444 3.75 12 3.75s8.25 3.69 8.25 8.25z" }) });
+        },
+        74939: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M6 6h10v2H9.414l10.043 10.04-1.414 1.42L8 9.41V16H6V6z" }) });
+        },
+        69716: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M8 6h10v10h-2V9.41L5.957 19.46l-1.414-1.42L14.586 8H8V6z" }) });
+        },
+        932395: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M19.518 7.57C17.542 6.582 14.883 6 12 6s-5.543.582-7.518 1.57C2.566 8.528 1 10.036 1 12c0 1.393.803 2.565 1.913 3.446 1.054.836 2.473 1.488 4.087 1.923v-2.082c-1.19-.372-2.158-.863-2.844-1.408C3.322 13.218 3 12.564 3 12c0-.798.673-1.789 2.376-2.641C7.019 8.537 9.36 8 12 8s4.98.537 6.624 1.359C20.327 10.211 21 11.202 21 12s-.673 1.789-2.376 2.641c-1.299.65-3.038 1.116-5.012 1.286l1.353-1.459-1.467-1.359-3.564 3.845 3.844 3.564 1.36-1.467-1.231-1.141c2.137-.196 4.081-.714 5.612-1.479 1.916-.958 3.482-2.466 3.482-4.43s-1.566-3.472-3.482-4.43z" }) });
+        },
+        135296: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 4.25c-4.28 0-7.75 3.47-7.75 7.75s3.47 7.75 7.75 7.75c1.499 0 2.894-.424 4.078-1.158l1.318 2.125c-1.568.972-3.418 1.534-5.396 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.75 12 1.75 22.25 6.339 22.25 12c0 .534-.032 1.061-.08 1.549-.223 2.285-2.31 3.65-4.378 3.471-1.128-.098-2.114-.621-2.817-1.396-1.008 1.136-2.467 1.802-4.077 1.576-2.748-.386-4.354-3.149-3.973-5.86s2.686-4.924 5.434-4.538c.793.111 1.491.421 2.074.87l.038-.32 2.482.298-.584 4.861c-.122 1.015.621 1.93 1.64 2.019.927.081 1.605-.515 1.674-1.223.042-.426.068-.869.068-1.306 0-4.28-3.47-7.75-7.75-7.75H12zm.01 5.026c-1.08-.152-2.377.746-2.611 2.41s.765 2.885 1.845 3.036c1.08.152 2.377-.746 2.611-2.41.234-1.664-.765-2.884-1.845-3.036z" }) });
+        },
+        930938: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M20.29 2.293L18.5 4.081C16.73 2.625 14.47 1.75 12 1.75 6.33 1.75 1.75 6.339 1.75 12c0 2.471.87 4.739 2.33 6.509l-1.79 1.784 1.42 1.414 18-18-1.42-1.414zM9.21 13.377c-.2-.498-.28-1.086-.19-1.725.25-1.769 1.65-2.798 2.89-2.623.41.057.79.242 1.12.525l-3.82 3.823zm5.24-5.245c-.6-.567-1.37-.958-2.26-1.083-2.58-.363-4.79 1.719-5.15 4.325-.18 1.243.08 2.487.68 3.487L5.5 17.086C4.4 15.685 3.75 13.919 3.75 12c0-4.556 3.69-8.25 8.25-8.25 1.91 0 3.68.655 5.08 1.754l-2.63 2.628zM7.2 21.06l1.49-1.497c1.02.442 2.13.687 3.31.687 1.59 0 3.08-.451 4.34-1.233l1.05 1.7c-1.57.972-3.42 1.533-5.39 1.533-1.74 0-3.37-.43-4.8-1.19zm4.07-4.069l4.72-4.722-.03.321c.03 1.145.92 2.122 2.1 2.23.91.083 1.62-.357 1.84-.99.2-.585.35-1.224.35-1.83 0-1.174-.25-2.29-.69-3.301l1.5-1.497c.76 1.432 1.19 3.065 1.19 4.798 0 .901-.21 1.77-.46 2.477-.59 1.731-2.34 2.478-3.91 2.334-1.24-.112-2.29-.729-3-1.626-.87 1.125-2.16 1.847-3.61 1.806z" }) });
+        },
+        607576: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(552322);
+            const s = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 3.786c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25c1.595 0 3.081-.451 4.341-1.233l1.054 1.7c-1.568.972-3.418 1.534-5.395 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.786 12 1.786s10.25 4.589 10.25 10.25c0 .901-.21 1.77-.452 2.477-.592 1.731-2.343 2.477-3.917 2.334-1.242-.113-2.307-.74-3.013-1.647-.961 1.253-2.45 2.011-4.092 1.78-2.581-.363-4.127-2.971-3.76-5.578.366-2.606 2.571-4.688 5.152-4.325 1.019.143 1.877.637 2.519 1.342l1.803.258-.507 3.549c-.187 1.31.761 2.509 2.079 2.629.915.083 1.627-.356 1.843-.99.2-.585.345-1.224.345-1.83 0-4.556-3.694-8.25-8.25-8.25zm-.111 5.274c-1.247-.175-2.645.854-2.893 2.623-.249 1.769.811 3.143 2.058 3.319 1.247.175 2.645-.854 2.893-2.623.249-1.769-.811-3.144-2.058-3.319z" }) });
+        },
+        738584: (e, t, l) => {
+            l.d(t, { o: () => m, Z: () => u });
+            var r = l(807896),
+                s = l(202784),
+                i = l(928316),
+                a = l(682474),
+                o = l(392237),
+                n = l(893164),
+                c = l(395367),
+                h = l(908478);
+            function d(e) {
+                let t = p(e);
+                return (e) => {
+                    const l = p(e);
+                    return (0, h.Z)(t, l) || (t = l), t;
+                };
+            }
+            function p(e) {
+                if (!e || "object" != typeof e) return e;
+                const t = JSON.parse(JSON.stringify(e));
+                return delete t.dataUsageBytes, (t.tracks = t.tracks.map((e) => ("number" == typeof e.currentTimeMs && delete e.currentTimeMs, e))), t;
+            }
+            function m({ children: e, periodic: t }) {
+                const l = t ? g.PeriodicContext.Consumer : g.Context.Consumer;
+                return s.createElement(l, null, (t) => {
+                    const { aspectRatio: l, containerRef: r, guestsState: s, playerApi: i, playerState: a } = t;
+                    return i && r && a ? e({ aspectRatio: l, guestsState: s, playerApi: i, playerState: a, containerRef: r }) : null;
+                });
+            }
+            class g extends s.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._cache = { stablePlayerState: d(null) }),
+                        (this.state = { hasError: null, guestsState: null, playerApi: null, playerState: null, stablePlayerState: null }),
+                        (this._renderCustomOverlay = () => {
+                            const { children: e, enablePiP: t } = this.props,
+                                { guestsState: l, playerApi: r, stablePlayerState: s } = this.state;
+                            return r && e ? ("function" == typeof e ? e({ enablePiP: t, guestsState: l, playerApi: r, playerState: s, containerRef: this._containerRef }) : e) : null;
+                        }),
+                        (this._handleReload = () => this.setState(() => ({ hasError: null }))),
+                        (this._handlePlayerApi = (e) => (t) => {
+                            const { playerId: l } = this.props;
+                            this.setState({ playerApi: t }),
+                                this.props.onApiReady && this.props.onApiReady(t),
+                                l && e && (this._unregister = e(l, t)),
+                                (this._unsubscribe = t.subscribe((e, t) => {
+                                    const l = this._cache.stablePlayerState(e);
+                                    this.setState({ stablePlayerState: l, playerState: e, guestsState: t }), this.props.onStateUpdate && this.props.onStateUpdate(e, t);
+                                }));
+                        });
+                }
+                componentWillUnmount() {
+                    this._unregister && this._unregister(), this._unsubscribe && this._unsubscribe();
+                }
+                componentDidUpdate() {
+                    if (!this._containerRef) {
+                        const e = i.findDOMNode(this);
+                        e && e instanceof HTMLElement && (this._containerRef = e);
+                    }
+                }
+                componentDidCatch(e, t) {
+                    const l = { error: e, info: t };
+                    this.setState(() => ({ hasError: l }));
+                }
+                render() {
+                    const { guestsState: e, playerApi: t, playerState: l, stablePlayerState: i } = this.state,
+                        { additionalBadges: o, aspectRatio: h, basePlayerClass: d, children: p, includeDisputeLinkInCopyrightErrorMessage: m, isFullScreen: u, objectFitVideo: w, onApiReady: x, onScroll: y, onStateUpdate: C, playerId: f, size: z, ...S } = this.props,
+                        j = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: l, containerRef: this._containerRef },
+                        M = { ...j, playerState: i };
+                    return s.createElement(
+                        a.Z,
+                        { isFullScreen: u, onScroll: y, ratio: h, style: [v.root, v[z]] },
+                        this.state.hasError
+                            ? s.createElement(n.Z, { onReloadPress: this._handleReload })
+                            : s.createElement(
+                                  g.Context.Provider,
+                                  { value: M },
+                                  s.createElement(
+                                      g.PeriodicContext.Provider,
+                                      { value: j },
+                                      s.createElement(c.Z.RegistrationContext.Consumer, null, ({ registerPlayer: e }) => s.createElement(d, (0, r.Z)({}, S, { customOverlay: this._renderCustomOverlay(), displayOptions: { objectFitVideo: w }, setPlayerApi: this._handlePlayerApi(e) }))),
+                                  ),
+                              ),
+                    );
+                }
+            }
+            (g.Consumer = m), (g.defaultProps = { aspectRatio: o.default.theme.aspectRatios.landscape, size: "fill" }), (g.Context = s.createContext({ aspectRatio: o.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null })), (g.PeriodicContext = s.createContext({ aspectRatio: o.default.theme.aspectRatios.landscape, guestsState: null, playerApi: null, playerState: null, containerRef: null }));
+            const v = o.default.create({ root: { position: "relative" }, fill: { width: "100%", height: "100%" }, small: { width: 480, height: 270 }, medium: { width: 640, height: 360 }, large: { width: 800, height: 450 } }),
+                u = g;
+        },
+        395367: (e, t, l) => {
+            l.d(t, { Z: () => a });
+            var r,
+                s = l(202784);
+            class i extends s.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.state = { playerApi: void 0, playerState: void 0, guestsState: void 0 }),
+                        (this._initializeState = (e) => {
+                            e && (this._unsubscribe && this._unsubscribe(), this.setState({ playerApi: e }), (this._unsubscribe = e.subscribe((e, t) => this.setState({ playerState: e, guestsState: t }))));
+                        });
+                }
+                componentDidMount() {
+                    this._initializeState(this.props.playerApi);
+                }
+                componentDidUpdate(e) {
+                    const { playerApi: t } = this.props;
+                    t !== e.playerApi && this._initializeState(t);
+                }
+                render() {
+                    return this.props.children(this.state);
+                }
+            }
+            class a extends s.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.state = { players: {} }),
+                        (this._mounted = !1),
+                        (this._registerPlayer = (e, t) => {
+                            const l = new Promise((l) => {
+                                setTimeout(() => {
+                                    this._mounted ? this.setState((l) => ({ players: { ...l.players, [e]: t } }), l) : l();
+                                });
+                            });
+                            return () => {
+                                l.then(() => this._unregisterPlayer(e));
+                            };
+                        }),
+                        (this._unregisterPlayer = (e) => {
+                            this._mounted &&
+                                this.setState((t) => {
+                                    const { [e]: l, ...r } = this.state.players;
+                                    return { players: r };
+                                });
+                        }),
+                        (this._registrationContext = { registerPlayer: this._registerPlayer });
+                }
+                componentDidMount() {
+                    this._mounted = !0;
+                }
+                componentWillUnmount() {
+                    this._mounted = !1;
+                }
+                render() {
+                    return s.createElement(a.RegistrationContext.Provider, { value: this._registrationContext }, s.createElement(a.ProviderContext.Provider, { value: this.state }, this.props.children));
+                }
+            }
+            (r = a), (a.MetadataSubscriber = ({ children: e, playerId: t }) => s.createElement(r.ProviderContext.Consumer, null, ({ players: l }) => s.createElement(i, { playerApi: l && l[t] }, e))), (a.RegistrationContext = s.createContext({ registerPlayer: void 0 })), (a.ProviderContext = s.createContext({ players: {} }));
+        },
+        893164: (e, t, l) => {
+            l.d(t, { Z: () => m });
+            var r = l(202784),
+                s = l(325686),
+                i = l(111677),
+                a = l.n(i),
+                o = l(355830),
+                n = l(731708),
+                c = l(154003),
+                h = l(992942),
+                d = l(392237);
+            const p = a().a9edea48;
+            function m(e) {
+                const { displayBackgroundImage: t = !1, errorMessage: l, iconPlayError: i, imageSrc: a, onReloadPress: m } = e;
+                return r.createElement(s.Z, { style: [d.default.absoluteFill, t ? null : g.blankOverlay] }, t ? r.createElement(r.Fragment, null, r.createElement(s.Z, { style: g.backgroundImage }, a && r.createElement(h.Z, { resizeMode: "cover", source: a, style: d.default.absoluteFill })), r.createElement(s.Z, { style: g.overlay })) : null, r.createElement(s.Z, { style: g.errorContainer }, r.createElement(s.Z, null, i ? r.createElement(o.default, { style: g.playErrorIcon }) : null), r.createElement(s.Z, { focusable: !0 }, r.createElement(n.ZP, { style: t ? g.errorMsgTextWhite : g.errorMsgTextGray }, l)), m ? r.createElement(c.ZP, { onPress: m, style: g.buttonContainer, type: "brandFilled" }, p) : null));
+            }
+            const g = d.default.create((e) => ({ backgroundImage: { ...d.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...d.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
+        },
+        127957: (e, t, l) => {
+            l.d(t, { Z: () => s });
+            var r = l(202784);
+            const s = (0, l(523561).Z)({ loader: () => l.e("loaders.video.VideoPlayer").then(l.bind(l, 962159)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) });
+        },
+        614425: (e, t, l) => {
+            l.d(t, { Y7: () => r });
+            const r = l(795897).default;
+        },
+    },
+]);
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--0ac6436a.a8ad287a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.LoggedOutHome"],
+    ["bundle.LoggedOutHome", "bundle.AudioSpaceDetail"],
     {
         651930: (e, t, n) => {
             n.d(t, { Z: () => l });
@@ -362,10 +362,10 @@
                 v = n(487659),
                 T = n(911318),
                 W = n(655352),
-                z = n(182495),
-                D = n(668214),
+                D = n(182495),
+                z = n(668214),
                 A = n(390387);
-            const L = (0, D.Z)()
+            const L = (0, z.Z)()
                     .propsFromState(() => ({ userLanguage: A.VT }))
                     .withAnalytics({ page: "front" }),
                 N = 380,
@@ -422,12 +422,12 @@
                         }),
                         (this._renderLoginSignupButtons = (e, t) => {
                             const n = e ? ie.ctaButton : ie.ctaButtonMobile,
-                                { signUpLabel: a } = (0, z.M5)(this.context.featureSwitches);
-                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.gapContainer }, o.createElement(c.Z, { label: o.createElement(l.ZP, { children: te }) })), o.createElement(r.ZP, { link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: z.mk }) } } }, onPress: this._handleSignupButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: j, type: "brandFilled" }, a), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [n, { width: T.fI }] }, z.K2), o.createElement(i.Z, { style: ie.signInButtonContainer }, o.createElement(l.ZP, { size: "headline2", style: n, weight: "bold" }, J), o.createElement(r.ZP, { link: "/login", onPress: this._handleLoginButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: F, type: "brandOutlined" }, Y))));
+                                { signUpLabel: a } = (0, D.M5)(this.context.featureSwitches);
+                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.gapContainer }, o.createElement(c.Z, { label: o.createElement(l.ZP, { children: te }) })), o.createElement(r.ZP, { link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: D.mk }) } } }, onPress: this._handleSignupButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: j, type: "brandFilled" }, a), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [n, { width: T.fI }] }, D.K2), o.createElement(i.Z, { style: ie.signInButtonContainer }, o.createElement(l.ZP, { size: "headline2", style: n, weight: "bold" }, J), o.createElement(r.ZP, { link: "/login", onPress: this._handleLoginButton, size: "medium", style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles], testID: F, type: "brandOutlined" }, Y))));
                         }),
                         (this._renderRedesignedLoginSignupButtons = (e, t) => {
                             const n = e ? ie.ctaButton : ie.ctaButtonMobile;
-                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.redesignedGapContainer }, o.createElement(c.Z, { borderColor: "gray400", label: o.createElement(l.ZP, { children: te, color: "alwaysDarkGray700" }) })), o.createElement(i.Z, null, o.createElement(r.ZP, { fontWeight: "medium", link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: z.mk }) } } }, onPress: this._handleSignupButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles], testID: j, textSizeOverride: "body", type: this._showBlueBrandFilledButton ? "brandFilled" : "primaryFilled" }, $), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [ie.legalText, n, { width: T.fI }] }, z.K2)), o.createElement(i.Z, { style: ie.redesignedSignInButtonContainer }, o.createElement(l.ZP, { size: "body", style: ie.labelText, weight: "bold" }, J), o.createElement(r.ZP, { backgroundColor: "light" === p.default.theme.paletteName ? "transparent" : "buttonBlack", borderColor: "light" === p.default.theme.paletteName ? void 0 : "transparent", color: "primary", fontWeight: "medium", link: "/login", onPress: this._handleLoginButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, ie.redesignedSignInButton], testID: F }, Y))));
+                            return o.createElement(i.Z, null, o.createElement(o.Fragment, null, this._renderSSOButtons(e, t), o.createElement(i.Z, { style: ie.redesignedGapContainer }, o.createElement(c.Z, { borderColor: "gray400", label: o.createElement(l.ZP, { children: te, color: "alwaysDarkGray700" }) })), o.createElement(i.Z, null, o.createElement(r.ZP, { fontWeight: "medium", link: { pathname: "/i/flow/signup", state: { input: { requested_variant: JSON.stringify({ signup_type: D.mk }) } } }, onPress: this._handleSignupButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles], testID: j, textSizeOverride: "body", type: this._showBlueBrandFilledButton ? "brandFilled" : "primaryFilled" }, $), o.createElement(l.ZP, { color: "gray700", size: "subtext3", style: [ie.legalText, n, { width: T.fI }] }, D.K2)), o.createElement(i.Z, { style: ie.redesignedSignInButtonContainer }, o.createElement(l.ZP, { size: "body", style: ie.labelText, weight: "bold" }, J), o.createElement(r.ZP, { backgroundColor: "light" === p.default.theme.paletteName ? "transparent" : "buttonBlack", borderColor: "light" === p.default.theme.paletteName ? void 0 : "transparent", color: "primary", fontWeight: "medium", link: "/login", onPress: this._handleLoginButton, style: [n, "tablet" === e && ie.ctaButtonSplitSpacing, ie.ssoButtonStyles, ie.redesignedSSOButtonStyles, ie.redesignedSignInButton], testID: F }, Y))));
                         }),
                         (this._renderSSOButtons = (e, t) => {
                             const { buttonState: n, isCookieCompliant: a } = this.state,
@@ -446,7 +446,7 @@
                         (this._handleCookieCompliance = () => {
                             this.setState({ isCookieCompliant: !0 });
                         }),
-                        (this.state = { buttonState: (0, z.BG)(this.context.featureSwitches), isCookieCompliant: (0, C.D0)(this.context.featureSwitches) === C.fD.AcceptAllCookies });
+                        (this.state = { buttonState: (0, D.BG)(this.context.featureSwitches), isCookieCompliant: (0, C.D0)(this.context.featureSwitches) === C.fD.AcceptAllCookies });
                 }
                 componentDidMount() {
                     (0, W.ZP)() && this.context.setSideNavSupport(!1);
@@ -581,4 +581,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LoggedOutHome.4a0877fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LoggedOutHome.8dafb53a.js.map

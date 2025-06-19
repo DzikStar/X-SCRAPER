@@ -32,8 +32,8 @@
                 Z = a(928831),
                 _ = a(492010),
                 z = a(207683),
-                D = a(988290),
-                R = a(813107);
+                R = a(988290),
+                D = a(813107);
             const P = /https:\/\/x\.com(?:\/[^\/]+)*\/status\/(\d+)/,
                 A = /^@([A-Za-z0-9_]{1,15})$/,
                 H = p().cfd2f35e,
@@ -47,7 +47,7 @@
                     [q, J] = n.useState(F),
                     { clearFilterKey: Y, filterKey: X, isReasoningEnabled: Q, isResearchEnabled: ee, selectDeepsearchFilterKey: te, selectReasoningFilterKey: ae } = (0, Z.w)(),
                     [ne, se] = n.useState(!1),
-                    { isEditingEnabled: oe, isGrokShare: re } = (0, D.ZP)(),
+                    { isEditingEnabled: oe, isGrokShare: re } = (0, R.ZP)(),
                     ie = (0, y.hC)("responsive_web_grok_prompt_edit_enabled"),
                     ce = (0, y.hC)("responsive_web_grok_show_citations"),
                     le = !(0, y.hC)("responsive_web_grok_url_trim_disable"),
@@ -152,7 +152,7 @@
                               }),
                           )
                         : null,
-                    ue ? n.createElement(s.Z, { style: N.userCardContainer }, n.createElement(R.I, { screenName: ue })) : null,
+                    ue ? n.createElement(s.Z, { style: N.userCardContainer }, n.createElement(D.I, { screenName: ue })) : null,
                     j ? xe : ge ? n.createElement(s.Z, { style: N.container }, n.createElement(i.Z, { duration: "long", show: G && ie && oe, type: "fade" }, n.createElement(s.Z, { style: N.editButtonContainer }, n.createElement(r.ZP, { borderColor: "transparent", icon: n.createElement(m.default, { style: N.editIcon }), onClick: be, size: "small", style: { borderRadius: 16 } }))), n.createElement(s.Z, { style: N.chatBubble }, n.createElement(c.ZP, { style: N.textContent }, n.createElement(z.default, { allowedTokenTypes: ["code", "codespan", "list", "text", "space", "paragraph"], disableLinks: g.ZP.isWebView(), isAnimated: !1, markdownText: ge })))) : null,
                     l && n.createElement(c.ZP, { color: "gray700", size: "subtext2" }, B),
                     e && e.length > 0
@@ -343,8 +343,8 @@
                 Z = a(194167),
                 _ = a(235493),
                 z = a(757483),
-                D = a(215337),
-                R = a(841972),
+                R = a(215337),
+                D = a(841972),
                 P = a(617568),
                 A = a(214997),
                 H = a(525271),
@@ -386,7 +386,7 @@
                     n.createElement(
                         s.Z,
                         { style: [O.collapsedTracePreviewTextGradientContainer, O.expandedTracePreviewTextGradientContainer, a ? { height: a } : void 0] },
-                        n.createElement(E.Z, { disabled: e, interactiveStyles: O.interactiveTracePreviewHeaderContainer, onClick: () => d(!0) }, ({ isHovered: t }) => n.createElement(s.Z, { style: O.tracePreviewTextGradientContainer }, n.createElement(s.Z, { style: O.tracePreviewScrollerContainer }, n.createElement(P.w, { charLimit: 1500, text: r })), n.createElement(D.Z, { angle: 0, colors: p(), style: O.traceGradientTop }), n.createElement(D.Z, { colors: p(), style: O.traceGradientBottom }), !e && n.createElement(R.default, { style: [O.expandThinkingTraceIcon, t ? O.hoveredExpandThinkingTraceIcon : void 0] }))),
+                        n.createElement(E.Z, { disabled: e, interactiveStyles: O.interactiveTracePreviewHeaderContainer, onClick: () => d(!0) }, ({ isHovered: t }) => n.createElement(s.Z, { style: O.tracePreviewTextGradientContainer }, n.createElement(s.Z, { style: O.tracePreviewScrollerContainer }, n.createElement(P.w, { charLimit: 1500, text: r })), n.createElement(R.Z, { angle: 0, colors: p(), style: O.traceGradientTop }), n.createElement(R.Z, { colors: p(), style: O.traceGradientBottom }), !e && n.createElement(D.default, { style: [O.expandThinkingTraceIcon, t ? O.hoveredExpandThinkingTraceIcon : void 0] }))),
                     ),
                     l && n.createElement(M, { onDismissed: () => d(!1), trace: r }),
                 );
@@ -510,7 +510,7 @@
                     [y, b] = n.useState(!1),
                     [C, _] = n.useState(!h),
                     z = (0, S.Z)(h),
-                    D = !!d && "deeper" === d.mode;
+                    R = !!d && "deeper" === d.mode;
                 return (
                     (0, T.q)(() => {
                         const e = "deep-search-summary-card-sub-step";
@@ -538,7 +538,7 @@
                             completedTimestamp: e,
                             expanded: C,
                             fromTimestamp: t,
-                            isDeeperMode: D,
+                            isDeeperMode: R,
                             isPastSummary: p,
                             numSources: a.getNumSources(),
                             onClick: () => {
@@ -605,7 +605,7 @@
                 Se = a(674756);
             const ve = l().b327c12a,
                 ke = l().ca93f2ee;
-            function Ie({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: i, id: c, isDeleted: l, isLoading: E, isAborted: w, query: x, sender: T, text: S, trace: v, tweetIds: I = [], upsell: _, webResults: z = [], citedWebResults: D = [], intermediateImageResults: R = [], promptSource: P, cardAttachments: A, followUpSuggestedMode: H, performanceMetrics: W, userChatItemId: B, mediaTweetIds: L, chatResponseAnnotations: N, isLastResponse: M, messageStepAccumulator: F, isPastThinkingTrace: O, disclaimer: $, chatItemId: V, expectedImageAspectRatio: G, memoryReferences: K, reasoningLayout: j }) {
+            function Ie({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: i, id: c, isDeleted: l, isLoading: E, isAborted: w, query: x, sender: T, text: S, trace: v, tweetIds: I = [], upsell: _, webResults: z = [], citedWebResults: R = [], intermediateImageResults: D = [], promptSource: P, cardAttachments: A, followUpSuggestedMode: H, performanceMetrics: W, userChatItemId: B, mediaTweetIds: L, chatResponseAnnotations: N, isLastResponse: M, messageStepAccumulator: F, isPastThinkingTrace: O, disclaimer: $, chatItemId: V, expectedImageAspectRatio: G, memoryReferences: K, reasoningLayout: j }) {
                 const U = (0, m.hC)("responsive_web_grok_animated_text_enabled"),
                     q = (0, m.hC)("responsive_web_grok_analyze_helpful_feedback"),
                     J = (0, m.hC)("responsive_web_grok_show_grok_performance_metrics"),
@@ -620,7 +620,7 @@
                     { completedTimestamp: ie, fromTimestamp: ce } = (0, ye.V)(a, V ?? "", W),
                     le = n.useRef(null),
                     de = q && "analyze_post" === P,
-                    pe = n.useMemo(() => [...z, ...D], [z, D]),
+                    pe = n.useMemo(() => [...z, ...R], [z, R]),
                     ue = n.useMemo(() => (A || []).filter((e) => !e.id), [A]);
                 if (!oe) return null;
                 const Ie = i && i.length > 0 && i[0].mimeType.startsWith("image"),
@@ -646,7 +646,6 @@
                             onComplete: () => te(!1),
                             reasoningLayout: j,
                             searchQuery: x,
-                            showExpand: !!F && (F.accumulatedSummary.length > 50 || "COMPLETED" === F.state || "ABORTED" === F.state),
                             shownText: ne,
                             shownTrace: se,
                             style: Ze.status,
@@ -655,7 +654,7 @@
                         F && !re && "PENDING" !== F.state && (X ? n.createElement(me, { completedTimestamp: ie, fromTimestamp: ce, messageStepAccumulator: F }) : n.createElement(Z.ZP, { completedTimestamp: ie, fromTimestamp: ce, isLoading: E, messageStepAccumulator: F })),
                         "" !== se && !re && n.createElement(fe.Z, { completed: !("" !== se && "" === ne && E), endStreamTimestamp: ie, fromTimestamp: ce, hasResponseText: !!S, id: c ?? "", isPastThinkingTrace: O, performanceMetrics: W ?? {}, shownTrace: se }),
                         Ie ? n.createElement(s.Z, { style: [Ze.textContainer, ae ? Ze.animation : null] }, n.createElement(o.ZP, { color: "gray700", size: "subtext1" }, ve)) : null,
-                        n.createElement(xe.K, { expectedImageAspectRatio: G, fileAttachments: i, intermediateImageResults: R, isAborted: w, isLoading: E, messageId: c }),
+                        n.createElement(xe.K, { expectedImageAspectRatio: G, fileAttachments: i, intermediateImageResults: D, isAborted: w, isLoading: E, messageId: c }),
                         ue.length > 0 &&
                             n.createElement(
                                 s.Z,
@@ -689,7 +688,7 @@
                 bannerIcon: { color: e.colors.gray900, fontSize: e.fontSizes.headline2 },
                 bannerText: { flex: 1, maxWidth: "100%", fontSize: e.fontSizes.subtext1, color: e.colors.gray900 },
                 deletedText: { fontStyle: "italic" },
-                content: { flexShrink: 1, width: "100%", maxWidth: h.vf },
+                content: { flexShrink: 1, width: "100%", maxWidth: h.vf, position: "relative" },
                 status: { width: "100%", maxWidth: h.vf, paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 },
                 preventPointerEvents: { pointerEvents: "none" },
                 tweets: { marginTop: e.spaces.space12 },
@@ -707,4 +706,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.58a09e9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.593b029a.js.map

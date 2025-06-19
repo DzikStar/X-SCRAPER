@@ -1,31 +1,31 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip", "icons/IconChevronRight-js", "icons/IconFollowArrowLeft-js", "icons/IconSparkle-js"],
+    ["ondemand.InlinePlayer", "loader.AudioDock", "loader.AudioContextVoiceMedia", "loader.AudioContextSpaceClip", "loader.AudioOnlyVideoPlayer"],
     {
-        541837: (e, t, i) => {
-            i.d(t, { Z: () => o });
-            var r = i(276563);
+        541837: (e, t, r) => {
+            r.d(t, { Z: () => o });
+            var i = r(276563);
             function a(e) {
                 const t = { tweet_id: e.id_str },
-                    i = e.promoted_content && e.promoted_content.impression_id;
-                return i && (t.impression_id = i), e.card && e.card.name === r.default.CardNames.LIVE_EVENT && (t.live_event_id = r.default.getBindingValue(e.card.binding_values, "event_id")), t;
+                    r = e.promoted_content && e.promoted_content.impression_id;
+                return r && (t.impression_id = r), e.card && e.card.name === i.default.CardNames.LIVE_EVENT && (t.live_event_id = i.default.getBindingValue(e.card.binding_values, "event_id")), t;
             }
             const o = ({ apiClient: e, featureSwitches: t }) => ({
                 fetch: (t) => {
-                    const i = { tweets: t.eligibleTweets.map(a) };
-                    t.trigger_preroll && (i.trigger_preroll = t.trigger_preroll), t.prerollDisplayLocation && (i.display_location = t.prerollDisplayLocation);
-                    const r = { tweets: JSON.stringify(i) };
-                    return e.post("videoads/v2/prerolls", r, {}, {});
+                    const r = { tweets: t.eligibleTweets.map(a) };
+                    t.trigger_preroll && (r.trigger_preroll = t.trigger_preroll), t.prerollDisplayLocation && (r.display_location = t.prerollDisplayLocation);
+                    const i = { tweets: JSON.stringify(r) };
+                    return e.post("videoads/v2/prerolls", i, {}, {});
                 },
             });
         },
-        90890: (e, t, i) => {
-            i.d(t, { Tc: () => l, yt: () => s });
-            i(136728), i(202784);
-            var r = i(803224),
-                a = i(67877),
-                o = i(2138);
-            const n = { autoplayPrioritizationPolicy: i(408686).Qr, minimumVisibilityForAutoplay: 0.25 };
+        90890: (e, t, r) => {
+            r.d(t, { Tc: () => l, yt: () => s });
+            r(136728), r(202784);
+            var i = r(803224),
+                a = r(67877),
+                o = r(2138);
+            const n = { autoplayPrioritizationPolicy: r(408686).Qr, minimumVisibilityForAutoplay: 0.25 };
             class s {
                 constructor(e = n) {
                     (this._players = []),
@@ -33,52 +33,52 @@
                             (e.previousPlaybackState = e.playbackState), (e.playbackState = t), this._updatePlayerStateForDocking(e, t);
                         }),
                         (this._updatePlayerStateForDocking = (e, t) => {
-                            if (t === r.q.USER_PLAYING) {
-                                const t = e.previousPlaybackState === r.q.USER_PAUSED;
+                            if (t === i.q.USER_PLAYING) {
+                                const t = e.previousPlaybackState === i.q.USER_PAUSED;
                                 if (this._updateDockedVideo && "function" == typeof e.registerDockElement && !t) {
                                     const t = e.registerDockElement();
                                     this._updateDockedVideo(t, e.id);
                                 } else this._updateIsUserPaused && this._updateIsUserPaused(!1);
-                            } else t === r.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : t === r.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
+                            } else t === i.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : t === i.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
                             this._updateInlinePlayerState && this._updateInlinePlayerState(this._players);
                         }),
                         (this._updatePlaybackStates = () => {
-                            const e = this._players.find((e) => e.playbackState === r.q.USER_PLAYING && e.playbackPriority !== r.W.SPACE);
+                            const e = this._players.find((e) => e.playbackState === i.q.USER_PLAYING && e.playbackPriority !== i.W.SPACE);
                             e && !this._canPlay(e) ? (this._pausePlayer(e), this._triggerAutoplay()) : e ? this._stopAllExcept(e) : this._triggerAutoplay();
                         }),
                         (this._scheduleUpdate = (0, o.Z)((0, a.Z)(this._updatePlaybackStates, window.requestIdleCallback ? (e) => window.requestIdleCallback(e, { timeout: 200 }) : window.requestAnimationFrame), 300, { leading: !1, trailing: !0 }));
-                    const { autoplayPrioritizationPolicy: t, minimumVisibilityForAutoplay: i } = e;
-                    (this._autoplayPrioritizationPolicy = t), (this._minimumVisibilityForAutoplay = i);
+                    const { autoplayPrioritizationPolicy: t, minimumVisibilityForAutoplay: r } = e;
+                    (this._autoplayPrioritizationPolicy = t), (this._minimumVisibilityForAutoplay = r);
                 }
-                register({ autoplayGroupOptions: e, canAutoplay: t, id: i, onAutoPlayRequest: a, onFullscreenEntered: o, onFullscreenExited: n, onPauseRequest: s, isLooping: l, registerDockElement: c, updateDockedVideo: d, updateIsUserPaused: u, playbackPriority: p = r.W.NORMAL }) {
+                register({ autoplayGroupOptions: e, canAutoplay: t, id: r, onAutoPlayRequest: a, onFullscreenEntered: o, onFullscreenExited: n, onPauseRequest: s, isLooping: l, registerDockElement: c, updateDockedVideo: d, updateIsUserPaused: u, playbackPriority: p = i.W.NORMAL }) {
                     (this._updateDockedVideo = d), (this._updateIsUserPaused = u);
-                    const h = { id: i, autoplayGroupEmitter: e?.autoplayGroupEmitter, placement: void 0, playbackPriority: p, playbackState: r.q.INITIAL, previousPlaybackState: r.q.INITIAL, commandHandlers: { onAutoPlayRequest: a, onFullscreenEntered: o, onFullscreenExited: n, onPauseRequest: s }, canAutoplay: t && p !== r.W.INELIGIBLE, isLooping: l, registerDockElement: c };
+                    const h = { id: r, autoplayGroupEmitter: e?.autoplayGroupEmitter, placement: void 0, playbackPriority: p, playbackState: i.q.INITIAL, previousPlaybackState: i.q.INITIAL, commandHandlers: { onAutoPlayRequest: a, onFullscreenEntered: o, onFullscreenExited: n, onPauseRequest: s }, canAutoplay: t && p !== i.W.INELIGIBLE, isLooping: l, registerDockElement: c };
                     return e && e.autoplayGroupEmitter.registerAutoplayGroupPlayer(h, e.mediaIndex), this._players.push(h), { reset: () => this._handleReset(h), signalFullscreenChange: (e) => this._handleFullscreenChanged(e), signalPlacementChange: (e) => this._handlePlacementChange(h, e), signalPlay: () => this._handlePlay(h), signalPause: () => this._handlePause(h), signalPlaybackFinish: (e) => this._handlePlaybackFinished(h, e), signalPlaybackPriorityChange: (e, t) => this._handlePlaybackPriorityChange(h, e, t), unregister: () => this._handleUnregister(h) };
                 }
                 _handleFullscreenChanged(e) {
                     this._players.forEach((t) => {
-                        const { onFullscreenEntered: i, onFullscreenExited: r } = t.commandHandlers;
-                        e && i ? i() : !e && r && r();
+                        const { onFullscreenEntered: r, onFullscreenExited: i } = t.commandHandlers;
+                        e && r ? r() : !e && i && i();
                     });
                 }
                 _handlePlacementChange(e, t) {
-                    const i = t.scrollY();
-                    (e.placement = t), this._scrollY !== i && (this._scrollY = i), e.playbackState === r.q.FINISHED && 0 === t.visibleFraction() && this._setPlayerState(e, r.q.INITIAL), this._scheduleUpdate();
+                    const r = t.scrollY();
+                    (e.placement = t), this._scrollY !== r && (this._scrollY = r), e.playbackState === i.q.FINISHED && 0 === t.visibleFraction() && this._setPlayerState(e, i.q.INITIAL), this._scheduleUpdate();
                 }
                 _handlePlay(e) {
-                    e.playbackState !== r.q.AUTO_PLAYING && (e.previousPlaybackState === r.q.AUTO_PLAYING && e.isLooping ? this._setPlayerState(e, r.q.AUTO_PLAYING) : this._setPlayerState(e, r.q.USER_PLAYING)), this._stopAllExcept(e);
+                    e.playbackState !== i.q.AUTO_PLAYING && (e.previousPlaybackState === i.q.AUTO_PLAYING && e.isLooping ? this._setPlayerState(e, i.q.AUTO_PLAYING) : this._setPlayerState(e, i.q.USER_PLAYING)), this._stopAllExcept(e);
                 }
                 _handlePause(e) {
-                    e.playbackState !== r.q.AUTO_PAUSED && this._setPlayerState(e, r.q.USER_PAUSED);
+                    e.playbackState !== i.q.AUTO_PAUSED && this._setPlayerState(e, i.q.USER_PAUSED);
                 }
                 _handlePlaybackFinished(e, t = !1) {
-                    this._setPlayerState(e, r.q.FINISHED), e.autoplayGroupEmitter && e.autoplayGroupEmitter.signalPlaybackComplete(t);
+                    this._setPlayerState(e, i.q.FINISHED), e.autoplayGroupEmitter && e.autoplayGroupEmitter.signalPlaybackComplete(t);
                 }
-                _handlePlaybackPriorityChange(e, t, i) {
-                    (e.playbackPriority = t), (e.canAutoplay = i && t !== r.W.INELIGIBLE), this._scheduleUpdate();
+                _handlePlaybackPriorityChange(e, t, r) {
+                    (e.playbackPriority = t), (e.canAutoplay = r && t !== i.W.INELIGIBLE), this._scheduleUpdate();
                 }
                 _handleReset(e) {
-                    this._setPlayerState(e, r.q.INITIAL), this._scheduleUpdate();
+                    this._setPlayerState(e, i.q.INITIAL), this._scheduleUpdate();
                 }
                 _handleUnregister(e) {
                     const t = this._players.indexOf(e);
@@ -88,50 +88,50 @@
                     if (document.pictureInPictureElement) return;
                     const e = new WeakMap(),
                         t = this._players.filter((t) => {
-                            const i = this._canAutoPlay(t);
-                            return t.autoplayGroupEmitter ? i && this._canGroupAutoplay(t.autoplayGroupEmitter, e) : i;
+                            const r = this._canAutoPlay(t);
+                            return t.autoplayGroupEmitter ? r && this._canGroupAutoplay(t.autoplayGroupEmitter, e) : r;
                         }),
-                        i = this._findBestAutoplayFit(t);
-                    if (i) {
-                        const { autoplayGroupEmitter: e } = i;
+                        r = this._findBestAutoplayFit(t);
+                    if (r) {
+                        const { autoplayGroupEmitter: e } = r;
                         if (e) {
                             const t = e.signalGroupAutoplayRequest();
                             t && (this._stopAllExcept(t), this._autoPlayVideo(t));
-                        } else this._stopAllExcept(i), this._autoPlayVideo(i);
+                        } else this._stopAllExcept(r), this._autoPlayVideo(r);
                     } else
                         this._players.forEach((e) => {
-                            e.playbackState === r.q.AUTO_PLAYING && this._pausePlayer(e);
+                            e.playbackState === i.q.AUTO_PLAYING && this._pausePlayer(e);
                         });
                 }
                 _canGroupAutoplay(e, t) {
                     if (t.has(e)) return t.get(e);
-                    const i = e.isAutoplayGroupEligibleForAutoplay();
-                    return t.set(e, i), i;
+                    const r = e.isAutoplayGroupEligibleForAutoplay();
+                    return t.set(e, r), r;
                 }
                 _canAutoPlay(e) {
                     const t = !!e.placement && e.placement.visibleFraction() >= this._minimumVisibilityForAutoplay,
-                        i = e.playbackState === r.q.USER_PAUSED,
-                        a = e.playbackState === r.q.FINISHED;
-                    return e.canAutoplay && t && !i && !a;
+                        r = e.playbackState === i.q.USER_PAUSED,
+                        a = e.playbackState === i.q.FINISHED;
+                    return e.canAutoplay && t && !r && !a;
                 }
                 _canPlay(e) {
                     const t = !!e.placement && e.placement.visibleFraction() >= this._minimumVisibilityForAutoplay,
-                        i = !!e.placement && e.placement.visibleFraction() > 0;
-                    return e.playbackPriority !== r.W.INELIGIBLE && (!e.placement || i || t);
+                        r = !!e.placement && e.placement.visibleFraction() > 0;
+                    return e.playbackPriority !== i.W.INELIGIBLE && (!e.placement || r || t);
                 }
                 _stopAllExcept(e) {
                     this._players.forEach((t) => {
-                        const i = t.playbackPriority !== r.W.SPACE;
-                        t === e || !i || (t.playbackState !== r.q.USER_PLAYING && t.playbackState !== r.q.AUTO_PLAYING) || this._pausePlayer(t);
+                        const r = t.playbackPriority !== i.W.SPACE;
+                        t === e || !r || (t.playbackState !== i.q.USER_PLAYING && t.playbackState !== i.q.AUTO_PLAYING) || this._pausePlayer(t);
                     });
                 }
                 _pausePlayer(e) {
                     const { onPauseRequest: t } = e.commandHandlers;
-                    this._setPlayerState(e, r.q.AUTO_PAUSED), t();
+                    this._setPlayerState(e, i.q.AUTO_PAUSED), t();
                 }
                 _autoPlayVideo(e) {
                     const { onAutoPlayRequest: t } = e.commandHandlers;
-                    this._setPlayerState(e, r.q.AUTO_PLAYING), t();
+                    this._setPlayerState(e, i.q.AUTO_PLAYING), t();
                 }
                 _findBestAutoplayFit(e) {
                     return this._autoplayPrioritizationPolicy(e);
@@ -145,16 +145,16 @@
             }
             const l = new s();
         },
-        97837: (e, t, i) => {
-            i.d(t, { Z: () => d });
-            var r = i(202784),
-                a = i(525744),
-                o = i(859799),
-                n = i(390686),
-                s = i(393495);
+        97837: (e, t, r) => {
+            r.d(t, { Z: () => d });
+            var i = r(202784),
+                a = r(525744),
+                o = r(859799),
+                n = r(390686),
+                s = r(393495);
             class l {
-                constructor(e, t, i) {
-                    (this.placement = e), (this.obstructions = t), (this.layerId = i);
+                constructor(e, t, r) {
+                    (this.placement = e), (this.obstructions = t), (this.layerId = r);
                 }
                 getPositionData() {
                     return { percentVisible: this.visibleFraction(), percentOfViewportOccupied: this.placement.viewportOccupiedFraction(), sizesInfo: { viewportSize: this.placement.viewport, mediaSize: this.placement.item } };
@@ -163,9 +163,9 @@
                     const e = this.placement.visiblePart();
                     if (!e) return 0;
                     const t = this.layerId ? this.obstructions.getObstructionAboveLayer(this.layerId, e) : this.obstructions.getTotalObstruction(e),
-                        i = s.Z.area(this.placement.item),
-                        r = (1 - t) * s.Z.area(e);
-                    return i > 0 ? r / i : 0;
+                        r = s.Z.area(this.placement.item),
+                        i = (1 - t) * s.Z.area(e);
+                    return r > 0 ? i / r : 0;
                 }
                 top() {
                     return this.placement.item.top;
@@ -180,16 +180,16 @@
                     return this.placement.scrollY;
                 }
             }
-            class c extends r.Component {
+            class c extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handlePageVisibilityChange = () => {
                             if (this._placement) {
-                                const { layerId: e, obstructionDetection: t, onPageVisibilityChange: i } = this.props,
-                                    r = document.visibilityState,
+                                const { layerId: e, obstructionDetection: t, onPageVisibilityChange: r } = this.props,
+                                    i = document.visibilityState,
                                     a = this._obstructions || t.getObstructions(),
                                     o = new l(this._placement, a, e);
-                                i && i(r, o);
+                                r && r(i, o);
                             }
                         }),
                         (this._handlePlacementChange = (e) => {
@@ -211,7 +211,7 @@
                 }
                 render() {
                     const { children: e, style: t } = this.props;
-                    return r.createElement(n.ZP, { onPlacementChange: this._handlePlacementChange, ref: this._setPlacementRef, style: t, withScrollListener: !0 }, e);
+                    return i.createElement(n.ZP, { onPlacementChange: this._handlePlacementChange, ref: this._setPlacementRef, style: t, withScrollListener: !0 }, e);
                 }
                 componentDidMount() {
                     const { obstructionDetection: e } = this.props;
@@ -220,60 +220,60 @@
                 componentWillUnmount() {
                     this._obstructionSubscription && (this._obstructionSubscription.unsubscribe(), (this._obstructionSubscription = void 0)), document.removeEventListener("visibilitychange", this._handlePageVisibilityChange);
                 }
-                _updateAndNotify({ obstructions: e, placement: t }, i) {
-                    const { layerId: r, obstructionDetection: a } = this.props;
+                _updateAndNotify({ obstructions: e, placement: t }, r) {
+                    const { layerId: i, obstructionDetection: a } = this.props;
                     (this._placement = t || this._placement),
                         (this._obstructions = e || this._obstructions || a.getObstructions()),
                         this._placement
-                            ? i(new l(this._placement, this._obstructions, r))
+                            ? r(new l(this._placement, this._obstructions, i))
                             : this._placementRef &&
                               this._placementRef.sample((e) => {
-                                  (this._placement = e), (this._obstructions = this._obstructions || a.getObstructions()), i(new l(e, this._obstructions, r));
+                                  (this._placement = e), (this._obstructions = this._obstructions || a.getObstructions()), r(new l(e, this._obstructions, i));
                               });
                 }
             }
             c.defaultProps = { obstructionDetection: a.Z };
             const d = (0, o.Z)(c);
         },
-        555492: (e, t, i) => {
-            i.d(t, { Z: () => r });
-            const r = i(202784).createContext({ heightsReady: !0 });
+        555492: (e, t, r) => {
+            r.d(t, { Z: () => i });
+            const i = r(202784).createContext({ heightsReady: !0 });
         },
-        408076: (e, t, i) => {
-            i.r(t), i.d(t, { InlinePlayerContainer: () => ie, default: () => re });
-            var r = i(807896),
-                a = i(202784),
-                o = i(565058),
-                n = i(400752),
-                s = i(421158),
-                l = i(803224),
-                c = i(516951),
-                d = i(907187),
-                u = i(741810),
-                p = i(738584),
-                h = i(682474),
-                _ = i(392237),
-                y = i(640290),
-                m = i(908478),
-                g = i(323265),
-                f = i(791632),
-                b = i(443781),
-                P = i(931162),
-                v = i(993547),
-                I = i(329491),
-                E = i(954300),
-                C = i(870976),
-                A = i(992720),
-                w = i(325686);
-            const T = (e) => {
+        408076: (e, t, r) => {
+            r.r(t), r.d(t, { InlinePlayerContainer: () => re, default: () => ie });
+            var i = r(807896),
+                a = r(202784),
+                o = r(565058),
+                n = r(400752),
+                s = r(421158),
+                l = r(803224),
+                c = r(516951),
+                d = r(907187),
+                u = r(741810),
+                p = r(738584),
+                h = r(682474),
+                y = r(392237),
+                _ = r(640290),
+                m = r(908478),
+                g = r(323265),
+                f = r(791632),
+                b = r(443781),
+                P = r(931162),
+                v = r(993547),
+                I = r(329491),
+                E = r(954300),
+                C = r(870976),
+                A = r(992720),
+                T = r(325686);
+            const w = (e) => {
                     e.stopPropagation();
                 },
-                S = ({ children: e, testID: t }) => a.createElement(w.Z, { onClick: T, style: _.default.absoluteFill, testID: t }, e);
-            var k = i(90890),
-                R = i(97837);
+                S = ({ children: e, testID: t }) => a.createElement(T.Z, { onClick: w, style: y.default.absoluteFill, testID: t }, e);
+            var k = r(90890),
+                R = r(97837);
             const L = "videoPlayer",
-                N = new y.ZP({});
-            class D extends a.Component {
+                N = new _.ZP({});
+            class O extends a.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._emitter = null),
@@ -284,7 +284,7 @@
                         (this._renderHorizonPlayer = (e) => {
                             const {
                                     additionalBadges: t,
-                                    analytics: i,
+                                    analytics: r,
                                     "aria-label": o,
                                     aspectRatio: n,
                                     displayOptions: s,
@@ -293,26 +293,26 @@
                                     includeBroadcastEventAssociation: d,
                                     intentToPlayTime: u,
                                     language: h,
-                                    mediaAvailability: _,
-                                    noAuthHttpClient: y,
+                                    mediaAvailability: y,
+                                    noAuthHttpClient: _,
                                     playerId: m,
                                     publisherId: g,
                                     source: { contentId: f, eventId: b, videoId: v, vmapUrl: I },
                                     timecode: E,
                                     twitterAuthedHttpClient: C,
                                     uiStack: A,
-                                    videoEl: w,
-                                    videoPlayer: T,
+                                    videoEl: T,
+                                    videoPlayer: w,
                                     viewCount: S,
                                     viewCountGraphData: k,
                                 } = this.props,
                                 R = this.context.featureSwitches.isTrue("rweb_video_pip_enabled"),
                                 L = this.context.featureSwitches.isTrue("rweb_live_broadcast_rewind_enabled");
-                            return a.createElement(P.R.Consumer, null, ({ prerollDisplayLocation: P }) => a.createElement(p.Z, (0, r.Z)({ adProvider: this._tweetAdProvider(P), additionalBadges: t, analytics: i, "aria-label": o, aspectRatio: n, basePlayerClass: T, configType: "static", contentId: f, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: b, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: y, includeBroadcastEventAssociation: d, intentToPlayTime: u, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: _, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: g, requestedTimecode: E, twitterAuthedHttpClient: C, videoEl: w, videoId: v, viewCount: S, viewCountGraphData: k, vmapUrl: I }, e), A));
+                            return a.createElement(P.R.Consumer, null, ({ prerollDisplayLocation: P }) => a.createElement(p.Z, (0, i.Z)({ adProvider: this._tweetAdProvider(P), additionalBadges: t, analytics: r, "aria-label": o, aspectRatio: n, basePlayerClass: w, configType: "static", contentId: f, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: b, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: _, includeBroadcastEventAssociation: d, intentToPlayTime: u, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: y, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: g, requestedTimecode: E, twitterAuthedHttpClient: C, videoEl: T, videoId: v, viewCount: S, viewCountGraphData: k, vmapUrl: I }, e), A));
                         }),
                         (this._setPlayerApi = (e) => {
-                            const { customOverlay: t, onMuteChange: i, onSetPlayerApi: r } = this.props;
-                            "function" == typeof t && ((this._playerInternal = e), this.forceUpdate()), i && (e.on("unmute", () => i({ isPlayerMuted: !1 })), e.on("mute", () => i({ isPlayerMuted: !0 }))), e && (e.on("fullscreenEntered", () => this._handleFullscreenChange({ isPlayerFullscreen: !0 })), e.on("fullscreenExited", () => this._handleFullscreenChange({ isPlayerFullscreen: !1 }))), this._setPlayerInternal(e), r && r(e);
+                            const { customOverlay: t, onMuteChange: r, onSetPlayerApi: i } = this.props;
+                            "function" == typeof t && ((this._playerInternal = e), this.forceUpdate()), r && (e.on("unmute", () => r({ isPlayerMuted: !1 })), e.on("mute", () => r({ isPlayerMuted: !0 }))), e && (e.on("fullscreenEntered", () => this._handleFullscreenChange({ isPlayerFullscreen: !0 })), e.on("fullscreenExited", () => this._handleFullscreenChange({ isPlayerFullscreen: !1 }))), this._setPlayerInternal(e), i && i(e);
                         }),
                         (this._getPlayerCTA = () => {
                             const { cta: e, promotedContent: t } = this.props;
@@ -338,8 +338,8 @@
                             this._emitter && !this._isPlayerFullscreen && this._emitter.signalPlacementChange(e), this._playerInternal && !this._isPlayerFullscreen && this._playerInternal.updatePosition(e.getPositionData());
                         }),
                         (this._handlePageVisibilityChange = (e, t) => {
-                            const i = t.getPositionData();
-                            "hidden" === e && this._playerInternal ? this._playerInternal.updatePosition({ percentVisible: 0, percentOfViewportOccupied: 0, sizesInfo: i.sizesInfo }) : "visible" === e && this._playerInternal && this._playerInternal.updatePosition(i);
+                            const r = t.getPositionData();
+                            "hidden" === e && this._playerInternal ? this._playerInternal.updatePosition({ percentVisible: 0, percentOfViewportOccupied: 0, sizesInfo: r.sizesInfo }) : "visible" === e && this._playerInternal && this._playerInternal.updatePosition(r);
                         }),
                         (this._handlePlaybackComplete = (e) => {
                             const { onPlaybackComplete: t } = this.props;
@@ -352,18 +352,18 @@
                             this._emitter && this._emitter.signalPause();
                         }),
                         (this._handlePlayerState = (e) => {
-                            const { onPlayerState: t, onProgressChange: i } = this.props;
+                            const { onPlayerState: t, onProgressChange: r } = this.props;
                             t && t(e);
-                            const r = (e.tracks || []).find((t) => t.id === e.currentTrackId);
-                            if (r) {
-                                const t = (r.currentTimeMs || 0) / r.durationMs;
-                                i && i(t, e.tracksFinished);
+                            const i = (e.tracks || []).find((t) => t.id === e.currentTrackId);
+                            if (i) {
+                                const t = (i.currentTimeMs || 0) / i.durationMs;
+                                r && r(t, e.tracksFinished);
                             }
                         }),
                         (this._handleError = (e) => {
                             const { onError: t } = this.props,
-                                { error: i } = e;
-                            i ? (this._emitter && (this._emitter.unregister(), (this._emitter = void 0), (this._hasInitialPlacementMeasurement = !1), (this._lastPlayerError = i)), e.errorInfo && !e.errorInfo.canRetry && (t && t(), this._onErrorUnsubscribe && this._onErrorUnsubscribe())) : !this._emitter && this._lastPlayerError && (this._registerPlaybackCoordination(), this._submitInitialPlacement(), (this._lastPlayerError = void 0));
+                                { error: r } = e;
+                            r ? (this._emitter && (this._emitter.unregister(), (this._emitter = void 0), (this._hasInitialPlacementMeasurement = !1), (this._lastPlayerError = r)), e.errorInfo && !e.errorInfo.canRetry && (t && t(), this._onErrorUnsubscribe && this._onErrorUnsubscribe())) : !this._emitter && this._lastPlayerError && (this._registerPlaybackCoordination(), this._submitInitialPlacement(), (this._lastPlayerError = void 0));
                         }),
                         (this._handleFullscreenChange = (e) => {
                             const { viewport: t } = this.props;
@@ -371,24 +371,24 @@
                                 if ((t.temporarilySuppressScrollListeners(2e3), g.ZP.isChrome() || g.ZP.isSafari()))
                                     if (this._isPlayerFullscreen) this._savedScrollPosition = { y: t.scrollY(), x: t.scrollX() };
                                     else if (this._savedScrollPosition) {
-                                        const { x: e, y: i } = this._savedScrollPosition;
-                                        (this._savedScrollPosition = void 0), t.scrollTo(e, i);
+                                        const { x: e, y: r } = this._savedScrollPosition;
+                                        (this._savedScrollPosition = void 0), t.scrollTo(e, r);
                                     }
                                 this._isPlayerFullscreen && this._playerInternal ? this._playerInternal.updatePosition({ percentVisible: 1, percentOfViewportOccupied: 1, sizesInfo: { viewportSize: t.getRect2D(), mediaSize: t.getRect2D() } }) : !this._isPlayerFullscreen && this._placementRef && this._placementRef.sample(this._handlePlacementChange);
                             }
-                            const { onFullscreenChange: i } = this.props;
-                            i && i(e), this._emitter && this._emitter.signalFullscreenChange(e.isPlayerFullscreen);
+                            const { onFullscreenChange: r } = this.props;
+                            r && r(e), this._emitter && this._emitter.signalFullscreenChange(e.isPlayerFullscreen);
                         }),
                         (this._registerPlaybackCoordination = () => {
                             const { history: e } = this.context,
-                                { autoplayGroupOptions: t, playbackCoordination: i, playbackPriority: r, registerDockElement: a, updateDockedVideo: o, updateIsUserPaused: n, viewport: s } = this.props,
-                                l = { autoplayGroupOptions: t, onAutoPlayRequest: this._handleAutoPlayRequest, id: e.id, onPauseRequest: this._handlePauseRequest, canAutoplay: this._shouldAutoplay, isLooping: this._isLooping, registerDockElement: a, updateDockedVideo: o, updateIsUserPaused: n, playbackPriority: r, viewport: s };
-                            i && (this._emitter = i.register(l));
+                                { autoplayGroupOptions: t, playbackCoordination: r, playbackPriority: i, registerDockElement: a, updateDockedVideo: o, updateIsUserPaused: n, viewport: s } = this.props,
+                                l = { autoplayGroupOptions: t, onAutoPlayRequest: this._handleAutoPlayRequest, id: e.id, onPauseRequest: this._handlePauseRequest, canAutoplay: this._shouldAutoplay, isLooping: this._isLooping, registerDockElement: a, updateDockedVideo: o, updateIsUserPaused: n, playbackPriority: i, viewport: s };
+                            r && (this._emitter = r.register(l));
                         }),
                         (this._setPlayerInternal = (e) => {
                             if (((this._playerInternal = e), e)) {
-                                const { onPlayerState: t, onProgressChange: i } = this.props;
-                                (t || i) && e.subscribe(this._handlePlayerState), (this._onErrorUnsubscribe = e.subscribe(this._handleError)), e.on("playbackComplete", this._handlePlaybackComplete), e.on("play", this._handlePlaybackStarted), e.on("pause", this._handlePlaybackPaused), this._registerPlaybackCoordination(), this._submitInitialPlacement();
+                                const { onPlayerState: t, onProgressChange: r } = this.props;
+                                (t || r) && e.subscribe(this._handlePlayerState), (this._onErrorUnsubscribe = e.subscribe(this._handleError)), e.on("playbackComplete", this._handlePlaybackComplete), e.on("play", this._handlePlaybackStarted), e.on("pause", this._handlePlaybackPaused), this._registerPlaybackCoordination(), this._submitInitialPlacement();
                             }
                             if (this.props.setPlayer) {
                                 const e = this._playerInternal && {
@@ -422,22 +422,22 @@
                         }),
                         (this._tweetAdProvider = (e) => {
                             const { disablePreroll: t } = this.props,
-                                i = this._getTweetId();
-                            if (i) return () => (t ? {} : this.props.tweetAdProvider(i, e));
+                                r = this._getTweetId();
+                            if (r) return () => (t ? {} : this.props.tweetAdProvider(r, e));
                         });
-                    const { autoplay: i, disableAutoplay: o, forwardPivotInfo: n } = e,
+                    const { autoplay: r, disableAutoplay: o, forwardPivotInfo: n } = e,
                         { history: s } = t;
-                    (this._disableHls = !(g.ZP.isDesktopOS() || (g.ZP.isAndroid() && this.context.featureSwitches.isTrue("web_video_hls_android_mse_enabled")))), (this._shouldAutoplay = !(0, f.HD)(s) && !o && (0, A.Z)(i, n));
+                    (this._disableHls = !(g.ZP.isDesktopOS() || (g.ZP.isAndroid() && this.context.featureSwitches.isTrue("web_video_hls_android_mse_enabled")))), (this._shouldAutoplay = !(0, f.HD)(s) && !o && (0, A.Z)(r, n));
                 }
                 componentDidUpdate(e) {
-                    const { heightsReady: t, playbackPriority: i } = this.props;
-                    !e.heightsReady && t && this._submitInitialPlacement(), !(0, m.Z)(e.source, this.props.source) && this._emitter && this._emitter.reset(), e.playbackPriority !== i && void 0 !== i && this._emitter && this._emitter.signalPlaybackPriorityChange(i, this._shouldAutoplay);
+                    const { heightsReady: t, playbackPriority: r } = this.props;
+                    !e.heightsReady && t && this._submitInitialPlacement(), !(0, m.Z)(e.source, this.props.source) && this._emitter && this._emitter.reset(), e.playbackPriority !== r && void 0 !== r && this._emitter && this._emitter.signalPlaybackPriorityChange(r, this._shouldAutoplay);
                 }
                 render() {
-                    const { aspectRatio: e, isDockedVideo: t, poster: i } = this.props,
-                        r = e,
-                        o = O.aspectRatio;
-                    return a.createElement(h.Z, { ratio: r, style: o }, a.createElement(R.Z, { onChange: this._handlePlacementChange, onPageVisibilityChange: this._handlePageVisibilityChange, ref: this._setPlacementAPI, style: _.default.absoluteFill }, this._renderPlayer()));
+                    const { aspectRatio: e, isDockedVideo: t, poster: r } = this.props,
+                        i = e,
+                        o = M.aspectRatio;
+                    return a.createElement(h.Z, { ratio: i, style: o }, a.createElement(R.Z, { onChange: this._handlePlacementChange, onPageVisibilityChange: this._handlePageVisibilityChange, ref: this._setPlacementAPI, style: y.default.absoluteFill }, this._renderPlayer()));
                 }
                 componentWillUnmount() {
                     this._emitter && (this._emitter.unregister(), (this._emitter = null)), this._onErrorUnsubscribe && this._onErrorUnsubscribe();
@@ -446,8 +446,8 @@
                     const {
                             autoplayGroupOptions: e,
                             dataSaverMode: t,
-                            durationMs: i,
-                            forceLoop: r,
+                            durationMs: r,
+                            forceLoop: i,
                             maxLoopCount: o,
                             poster: n,
                             promotedContent: s,
@@ -457,7 +457,7 @@
                         d = "animated_gif" === c,
                         u = "vine" === c,
                         p = l && l.length ? (d ? "gif" : "media_entity") : "vmap";
-                    this._isLooping = !!(r || d || u || (i && i <= this._getLoopingThreshold()));
+                    this._isLooping = !!(i || d || u || (r && r <= this._getLoopingThreshold()));
                     const h = { contentType: p, loop: this._isLooping, maxLoopCount: this._isLooping ? o : void 0, maxLoopingThresholdSec: e ? 6 : void 0, poster: n && n.url, promotedContext: s && (s.impression_id || s.disclosure_type) ? { impressionId: s.impression_id, disclosureType: s.disclosure_type } : void 0, shouldCapBitrate: t, variants: l ? (0, E.rD)(l) : [] };
                     return a.createElement(S, { testID: L }, this._renderHorizonPlayer(h));
                 }
@@ -467,65 +467,65 @@
                     this._emitter && this._placementRef && t && (this._placementRef.sample(this._handlePlacementChange), (this._hasInitialPlacementMeasurement = !0));
                 }
             }
-            (D.contextType = b.rC), (D.defaultProps = { autoplay: C.Z.Off, playbackCoordination: k.Tc, playbackPriority: l.W.NORMAL, showControls: !0, dataSaverMode: !1, geolocationPrompt: !0, heightsReady: !0, noAuthHttpClient: N, includeBroadcastEventAssociation: !1 });
-            const O = _.default.create({ aspectRatio: { zIndex: void 0 }, aspectRatioDocked: { zIndex: void 0, maxHeight: "70vh" } }),
-                M = (0, v.Z)(D);
-            var Z = i(555492),
-                x = i(513588),
-                F = i(942893),
-                U = i(625555),
-                V = i(71620),
-                G = i(668214),
-                q = i(558369),
-                H = i(109223),
-                z = i(694180),
-                B = i(390387),
-                Y = i(659773),
-                W = i(836255),
-                j = i(533128);
+            (O.contextType = b.rC), (O.defaultProps = { autoplay: C.Z.Off, playbackCoordination: k.Tc, playbackPriority: l.W.NORMAL, showControls: !0, dataSaverMode: !1, geolocationPrompt: !0, heightsReady: !0, noAuthHttpClient: N, includeBroadcastEventAssociation: !1 });
+            const M = y.default.create({ aspectRatio: { zIndex: void 0 }, aspectRatioDocked: { zIndex: void 0, maxHeight: "70vh" } }),
+                D = (0, v.Z)(O);
+            var x = r(555492),
+                F = r(513588),
+                U = r(942893),
+                Z = r(625555),
+                V = r(71620),
+                G = r(668214),
+                q = r(558369),
+                H = r(109223),
+                B = r(694180),
+                z = r(390387),
+                Y = r(659773),
+                W = r(836255),
+                j = r(533128);
             const $ =
                     () =>
-                    (e, t, { api: i }) =>
-                        i.getHttpClient(),
+                    (e, t, { api: r }) =>
+                        r.getHttpClient(),
                 Q = (e, t) => {
-                    const i = t.source && t.source.videoId;
-                    return i && "tweet" === i.type ? i.id : void 0;
+                    const r = t.source && t.source.videoId;
+                    return r && "tweet" === r.type ? r.id : void 0;
                 },
                 X = (e, t) => t.source && t.source.contentId,
                 J = (e, t) => {
-                    const i = W.Z.createHydratedTweetSelector(Q)(e, t),
-                        r = (0, q.mz)(e);
-                    return !!i && (0, j.$y)(r, i, j.d.Autoplay);
+                    const r = W.Z.createHydratedTweetSelector(Q)(e, t),
+                        i = (0, q.mz)(e);
+                    return !!r && (0, j.$y)(i, r, j.d.Autoplay);
                 },
                 K = (0, G.Z)()
-                    .propsFromState(() => ({ dataSaverMode: Y.IX, language: B.VT, sourceTweet: W.Z.createHydratedTweetSelector(Q), disableAutoplay: J, videoContentId: X }))
-                    .adjustStateProps(({ dataSaverMode: e, disableAutoplay: t, language: i, sourceTweet: r, videoContentId: a }) => ({ dataSaverMode: e, disableAutoplay: t, language: i, mediaAvailability: (r && (0, E.DY)(r, a)) || void 0, publisherId: r ? (0, E.Pz)(r) : void 0 }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, V.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: z.iY, tweetAdProvider: H.Q3 }))
+                    .propsFromState(() => ({ dataSaverMode: Y.IX, language: z.VT, sourceTweet: W.Z.createHydratedTweetSelector(Q), disableAutoplay: J, videoContentId: X }))
+                    .adjustStateProps(({ dataSaverMode: e, disableAutoplay: t, language: r, sourceTweet: i, videoContentId: a }) => ({ dataSaverMode: e, disableAutoplay: t, language: r, mediaAvailability: (i && (0, E.DY)(i, a)) || void 0, publisherId: i ? (0, E.Pz)(i) : void 0 }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, V.zr)("INLINE_PLAYER_CONTAINER"), getTwitterAuthedHttpClient: $, logPromotedVideoEvent: B.iY, tweetAdProvider: H.Q3 }))
                     .withAnalytics(),
                 ee = (0, o.cn)((e) =>
-                    e(U.F6)
+                    e(Z.F6)
                         .login()
                         .catch(() => {}),
                 ),
-                te = (0, x.J)();
-            function ie(e) {
+                te = (0, F.J)();
+            function re(e) {
                 const t = a.useContext(b.rC),
-                    i = a.useRef(),
+                    r = a.useRef(),
                     o = "broadcast" === e.source.videoId.type && !!t.viewerUserId && t.featureSwitches.isTrue("rweb_video_logged_in_analytics_enabled");
                 (0, n.Dv)(o ? ee : te);
-                const { createLocalApiErrorHandler: p, getTwitterAuthedHttpClient: h, playbackPriority: _, tweetAdProvider: y, ...m } = e,
+                const { createLocalApiErrorHandler: p, getTwitterAuthedHttpClient: h, playbackPriority: y, tweetAdProvider: _, ...m } = e,
                     g = (t) => {
-                        const { createLocalApiErrorHandler: i } = e;
-                        e.logPromotedVideoEvent(t).catch(i());
+                        const { createLocalApiErrorHandler: r } = e;
+                        e.logPromotedVideoEvent(t).catch(r());
                     },
                     f = (t) => {
-                        const { category: i, data: r, namespace: a } = t,
+                        const { category: r, data: i, namespace: a } = t,
                             { analytics: o } = e;
-                        a?.action && o.scribe({ ...a, data: { ...r, _category_: i } });
+                        a?.action && o.scribe({ ...a, data: { ...i, _category_: r } });
                     },
                     P = a.useMemo(() => h(), [h]),
-                    v = ((i) => {
-                        const r = { log: f },
+                    v = ((r) => {
+                        const i = { log: f },
                             { analytics: a } = e,
                             n = { log: t.featureSwitches.isTrue("responsive_web_video_promoted_logging_enabled") ? g : c.Z },
                             s = a.contextualScribeNamespace,
@@ -533,119 +533,119 @@
                             p = Array.isArray(l.items)
                                 ? ((t) => {
                                       const {
-                                              analytics: i,
-                                              includeBroadcastEventAssociation: r,
+                                              analytics: r,
+                                              includeBroadcastEventAssociation: i,
                                               source: { videoId: a },
                                           } = e,
-                                          { event_id: o } = i.contextualScribeData;
+                                          { event_id: o } = r.contextualScribeData;
                                       let n;
-                                      n = "broadcast" === a.type && a.tweetId ? a.tweetId : "broadcast" === a.type && r && o ? o : a.id;
+                                      n = "broadcast" === a.type && a.tweetId ? a.tweetId : "broadcast" === a.type && i && o ? o : a.id;
                                       let s = t.find((e) => e.id === n);
                                       const l = t.find((e) => e.quoted_tweet_id === n);
-                                      return l && l.quoted_tweet_id && ((s = F.Z.forQuoteTweet(l.id ? l.id : n, l.quoted_tweet_id)), (s.author_id = l.quoted_author_id)), s;
+                                      return l && l.quoted_tweet_id && ((s = U.Z.forQuoteTweet(l.id ? l.id : n, l.quoted_tweet_id)), (s.author_id = l.quoted_author_id)), s;
                                   })(l.items)
                                 : void 0,
                             h = { scribeContext: { ...s }, baseScribeItem: p, enableShortFormCompleteLogging: t.featureSwitches.isTrue("responsive_web_video_pcomplete_enabled"), ...(o && { periscopeAuthToken: u.E.authToken(), userType: u.E.userType() }) };
-                        return new d.Z(r, n, i, h);
+                        return new d.Z(i, n, r, h);
                     })(P),
                     I = (t) => {
-                        if (((i.current = t), e.setPlayer)) {
-                            const t = i &&
-                                i.current && {
+                        if (((r.current = t), e.setPlayer)) {
+                            const t = r &&
+                                r.current && {
                                     play: () => {
-                                        i.current && i.current.play();
+                                        r.current && r.current.play();
                                     },
                                     playPreview: () => {
-                                        i.current && i.current.playPreview();
+                                        r.current && r.current.playPreview();
                                     },
                                     pause: () => {
-                                        i.current && i.current.pause();
+                                        r.current && r.current.pause();
                                     },
                                     replay: () => {
-                                        i.current && i.current.replay();
+                                        r.current && r.current.replay();
                                     },
                                 };
                             e.setPlayer(t);
                         }
                     };
-                return a.createElement(Z.Z.Consumer, null, ({ heightsReady: e }) => a.createElement(s.Z.Consumer, null, ({ playbackPriority: t }) => a.createElement(M, (0, r.Z)({}, m, { analytics: v, heightsReady: e, playbackPriority: t === l.W.INELIGIBLE ? t : _, setPlayer: I, tweetAdProvider: y, twitterAuthedHttpClient: P }))));
+                return a.createElement(x.Z.Consumer, null, ({ heightsReady: e }) => a.createElement(s.Z.Consumer, null, ({ playbackPriority: t }) => a.createElement(D, (0, i.Z)({}, m, { analytics: v, heightsReady: e, playbackPriority: t === l.W.INELIGIBLE ? t : y, setPlayer: I, tweetAdProvider: _, twitterAuthedHttpClient: P }))));
             }
-            const re = K(ie);
+            const ie = K(re);
         },
-        931162: (e, t, i) => {
-            i.d(t, { D: () => o, R: () => a });
-            var r = i(202784);
-            const a = r.createContext({ prerollDisplayLocation: void 0 }),
+        931162: (e, t, r) => {
+            r.d(t, { D: () => o, R: () => a });
+            var i = r(202784);
+            const a = i.createContext({ prerollDisplayLocation: void 0 }),
                 o = ({ children: e, prerollDisplayLocation: t }) => {
-                    const i = r.useMemo(() => ({ prerollDisplayLocation: t }), [t]);
-                    return r.createElement(a.Provider, { value: i }, e);
+                    const r = i.useMemo(() => ({ prerollDisplayLocation: t }), [t]);
+                    return i.createElement(a.Provider, { value: r }, e);
                 };
         },
-        408686: (e, t, i) => {
-            i.d(t, { Qr: () => n, n8: () => o });
-            var r = i(803224),
-                a = i(411240);
+        408686: (e, t, r) => {
+            r.d(t, { Qr: () => n, n8: () => o });
+            var i = r(803224),
+                a = r(411240);
             const o = (e) => {
                     const t = e?.[0]?.placement?.scrollY();
                     return 0 === t ? (0, a.Z)(e, (e) => (e.placement ? e.placement.distanceToTop() : Number.MAX_VALUE)) : (0, a.Z)(e, (e) => (e.placement ? e.placement.distanceToCenter() : Number.MAX_VALUE));
                 },
                 n = (e) => {
-                    const t = e.filter((e) => e.playbackPriority === r.W.DOCKABLE);
+                    const t = e.filter((e) => e.playbackPriority === i.W.DOCKABLE);
                     return t.length ? t[0] : o(e);
                 };
         },
-        519896: (e, t, i) => {
-            i.d(t, { A7: () => a, Nw: () => o, Yf: () => r });
-            const r = "instreamVideo",
-                a = `rweb/${r}`,
+        519896: (e, t, r) => {
+            r.d(t, { A7: () => a, Nw: () => o, Yf: () => i });
+            const i = "instreamVideo",
+                a = `rweb/${i}`,
                 o = Object.freeze({ TIMELINE_HOME: "TIMELINE_HOME", SEARCH_TWEETS: "SEARCH_TWEETS", PROFILE_TWEETS: "PROFILE_TWEETS", OTHER: "OTHER" });
         },
-        109223: (e, t, i) => {
-            i.d(t, { jc: () => A, Q3: () => k, C: () => S });
-            i(571372), i(136728);
-            var r = i(329491),
-                a = i(962741),
-                o = i(499627),
-                n = i(312771),
-                s = i(836255),
-                l = i(519896),
-                c = i(782261),
-                d = i(276563);
+        109223: (e, t, r) => {
+            r.d(t, { jc: () => A, Q3: () => k, C: () => S });
+            r(571372), r(136728);
+            var i = r(329491),
+                a = r(962741),
+                o = r(499627),
+                n = r(312771),
+                s = r(836255),
+                l = r(519896),
+                c = r(782261),
+                d = r(276563);
             function u(e) {
                 if (null == e) return null;
                 const t = (function (e) {
-                        const { card: t, extended_entities: i = {} } = e,
-                            r =
-                                !!i.media?.length &&
-                                i.media.some((e) => {
+                        const { card: t, extended_entities: r = {} } = e,
+                            i =
+                                !!r.media?.length &&
+                                r.media.some((e) => {
                                     const t = e.additional_media_info;
                                     return t && t.monetizable;
                                 }),
                             a = c.Z.hasMixedMedia(e);
-                        return { hasMonetizableMedia: r, hasMultipleMediaItems: a, hasAmplifyCard: !!t && t.name === d.default.CardNames.AMPLIFY && !0 === d.default.getBindingValue(t.binding_values, "dynamic_ads"), hasPeriscopeCard: t?.name === d.default.CardNames.PERISCOPE_BROADCAST, hasBroadcastCard: t?.name === d.default.CardNames.BROADCAST, hasEventCard: !!t && t.name === d.default.CardNames.LIVE_EVENT && ("video" === d.default.getBindingValue(t.binding_values, "media_type") || "broadcast" === d.default.getBindingValue(t.binding_values, "media_type")) };
+                        return { hasMonetizableMedia: i, hasMultipleMediaItems: a, hasAmplifyCard: !!t && t.name === d.default.CardNames.AMPLIFY && !0 === d.default.getBindingValue(t.binding_values, "dynamic_ads"), hasPeriscopeCard: t?.name === d.default.CardNames.PERISCOPE_BROADCAST, hasBroadcastCard: t?.name === d.default.CardNames.BROADCAST, hasEventCard: !!t && t.name === d.default.CardNames.LIVE_EVENT && ("video" === d.default.getBindingValue(t.binding_values, "media_type") || "broadcast" === d.default.getBindingValue(t.binding_values, "media_type")) };
                     })(e),
-                    i = (r = t).hasMonetizableMedia || r.hasAmplifyCard || r.hasPeriscopeCard || r.hasBroadcastCard || r.hasEventCard;
-                var r;
+                    r = (i = t).hasMonetizableMedia || i.hasAmplifyCard || i.hasPeriscopeCard || i.hasBroadcastCard || i.hasEventCard;
+                var i;
                 const a =
-                        i &&
+                        r &&
                         (function (e) {
                             const t = e.hasAmplifyCard || e.hasPeriscopeCard || e.hasBroadcastCard || e.hasEventCard;
                             return e.hasMonetizableMedia && !t;
                         })(t),
                     { hasMultipleMediaItems: o } = t;
-                return { hasMultipleMediaItems: o, legacy: i, redesign: a };
+                return { hasMultipleMediaItems: o, legacy: r, redesign: a };
             }
-            var p = i(516951),
-                h = i(541837),
-                _ = i(615656),
-                y = i(71620),
-                m = i(917799);
+            var p = r(516951),
+                h = r(541837),
+                y = r(615656),
+                _ = r(71620),
+                m = r(917799);
             const g = "FETCH_PREROLLS",
                 f = (0, m.dg)(l.A7, g),
                 b = 10;
             function P(e) {
                 const t = {},
-                    i = {};
+                    r = {};
                 return (
                     Array.isArray(e.video_analytics_scribe) &&
                         e.video_analytics_scribe.length &&
@@ -655,12 +655,12 @@
                     Array.isArray(e.prerolls) &&
                         e.prerolls.length &&
                         e.prerolls.forEach((e) => {
-                            e.media_info && (i[e.tweet_id] = { ...e, videoAnalyticsScribePassthrough: t[e.tweet_id] });
+                            e.media_info && (r[e.tweet_id] = { ...e, videoAnalyticsScribePassthrough: t[e.tweet_id] });
                         }),
-                    i
+                    r
                 );
             }
-            function v(e, t, i, r, a) {
+            function v(e, t, r, i, a) {
                 if (!Array.isArray(e) || 0 === e.length) return Promise.resolve();
                 let o = [];
                 const n = [o];
@@ -670,22 +670,22 @@
                     }),
                     Promise.all(
                         n.map((e) =>
-                            (function (e, t, i, r, a) {
+                            (function (e, t, r, i, a) {
                                 if (!Array.isArray(e) || 0 === e.length) return Promise.resolve();
                                 const o = { eligibleTweets: e, prerollDisplayLocation: a };
                                 t && (o.trigger_preroll = t);
-                                const n = (0, m._O)(i, { request: r.withEndpoint(h.Z).fetch, params: o }),
-                                    s = i((0, y.zr)(g)({ showToast: !1, [_.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
+                                const n = (0, m._O)(r, { request: i.withEndpoint(h.Z).fetch, params: o }),
+                                    s = r((0, _.zr)(g)({ showToast: !1, [y.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
                                 return n({ actionTypes: f, context: "FETCH_PREROLLS" }).catch(s);
-                            })(e, t, i, r, a),
+                            })(e, t, r, i, a),
                         ),
                     ).then((e) => {
                         let t = {};
                         e.forEach((e) => {
                             e && e.prerolls && (t = { ...t, ...P(e) });
                         });
-                        const r = { type: A, payload: { ...{ dynamicIVCollection: t }, prerollDisplayLocation: a } };
-                        i(r);
+                        const i = { type: A, payload: { ...{ dynamicIVCollection: t }, prerollDisplayLocation: a } };
+                        r(i);
                     })
                 );
             }
@@ -693,27 +693,27 @@
                 E = "rweb/instreamVideo/DYNAMIC_RESET",
                 C = "rweb/instreamVideo/STORE_METADATA",
                 A = "rweb/instreamVideo/DYNAMIC_STORE",
-                w = { [l.Nw.OTHER]: I };
+                T = { [l.Nw.OTHER]: I };
             o.Z.register({
-                [l.Yf]: function (e = w, t) {
+                [l.Yf]: function (e = T, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case C:
                             if (t.payload) {
-                                const { eligibleTweets: i, prerollDisplayLocation: r, prerollEligibilityCollection: a, prerollMetadataCollection: o, promotedMetadataCollection: n } = t.payload;
-                                return { ...e, [r]: { ...I, ...e[r], eligibleTweets: i, prerollMetadataCollection: o, promotedMetadataCollection: n, prerollEligibilityCollection: a } };
+                                const { eligibleTweets: r, prerollDisplayLocation: i, prerollEligibilityCollection: a, prerollMetadataCollection: o, promotedMetadataCollection: n } = t.payload;
+                                return { ...e, [i]: { ...I, ...e[i], eligibleTweets: r, prerollMetadataCollection: o, promotedMetadataCollection: n, prerollEligibilityCollection: a } };
                             }
                             break;
                         case A:
                             if (t.payload) {
-                                const { dynamicIVCollection: i, prerollDisplayLocation: r } = t.payload;
-                                return { ...e, [r]: { ...I, ...e[r], dynamicIVCollection: i } };
+                                const { dynamicIVCollection: r, prerollDisplayLocation: i } = t.payload;
+                                return { ...e, [i]: { ...I, ...e[i], dynamicIVCollection: r } };
                             }
                             break;
                         case E:
                             if (t.payload) {
-                                const { prerollDisplayLocation: i } = t.payload;
-                                return { ...e, [i]: { ...I, ...e[i], dynamicIVCollection: {} } };
+                                const { prerollDisplayLocation: r } = t.payload;
+                                return { ...e, [r]: { ...I, ...e[r], dynamicIVCollection: {} } };
                             }
                             break;
                         default:
@@ -722,12 +722,12 @@
                     return e;
                 },
             });
-            const T = (e, t) => e[l.Yf][t] || I;
+            const w = (e, t) => e[l.Yf][t] || I;
             function S(e, t = l.Nw.OTHER) {
-                return (i, r, { api: o, featureSwitches: n }) => {
+                return (r, i, { api: o, featureSwitches: n }) => {
                     if (!Array.isArray(e)) throw new Error("unable to fetch prerolls without timeline entries");
                     if (e.length < 1) return Promise.resolve();
-                    const l = r(),
+                    const l = i(),
                         c = [],
                         d = {},
                         p = {},
@@ -735,73 +735,73 @@
                     e.forEach((e) => {
                         if (!e.content || e.type !== a.ZP.Tweet) return;
                         const t = e.content,
-                            i = s.Z.selectHydrated(l, t.id);
-                        if (!i) return;
-                        const r = i,
+                            r = s.Z.selectHydrated(l, t.id);
+                        if (!r) return;
+                        const i = r,
                             { prerollMetadata: o, promotedMetadata: n } = t;
                         if (n) {
-                            const { adMetadataContainer: e, disclosureType: t, impressionId: i } = n;
-                            (r.promoted_content = { adMetadataContainer: e, disclosure_type: t, impression_id: i }), (p[r.id_str] = n);
+                            const { adMetadataContainer: e, disclosureType: t, impressionId: r } = n;
+                            (i.promoted_content = { adMetadataContainer: e, disclosure_type: t, impression_id: r }), (p[i.id_str] = n);
                         }
-                        const _ = u(r),
-                            y = _ && _.hasMultipleMediaItems;
-                        (h[r.id_str] = _), o?.preroll?.mediaInfo && !y && (d[r.id_str] = o), _?.legacy && !y && c.push(r);
+                        const y = u(i),
+                            _ = y && y.hasMultipleMediaItems;
+                        (h[i.id_str] = y), o?.preroll?.mediaInfo && !_ && (d[i.id_str] = o), y?.legacy && !_ && c.push(i);
                     });
-                    i({ type: C, payload: { ...{ eligibleTweets: c, prerollMetadataCollection: d, promotedMetadataCollection: p, prerollEligibilityCollection: h, prerollDisplayLocation: t } } });
+                    r({ type: C, payload: { ...{ eligibleTweets: c, prerollMetadataCollection: d, promotedMetadataCollection: p, prerollEligibilityCollection: h, prerollDisplayLocation: t } } });
                     return v(
                         c.filter((e) => void 0 === d[e.id_str]),
                         null,
-                        i,
+                        r,
                         o,
                         t,
                     );
                 };
             }
             function k(e, t = l.Nw.OTHER) {
-                return (i, a, { api: o, featureSwitches: n }) => {
+                return (r, a, { api: o, featureSwitches: n }) => {
                     if (e) {
-                        const n = T(a(), t),
+                        const n = w(a(), t),
                             { dynamicIVCollection: s, eligibleTweets: l, prerollEligibilityCollection: c, prerollMetadataCollection: d, promotedMetadataCollection: u } = n,
                             p = s[e],
                             h = u[e],
-                            _ = c[e];
+                            y = c[e];
                         if (p) {
-                            i({ type: E, payload: { prerollDisplayLocation: t } });
+                            r({ type: E, payload: { prerollDisplayLocation: t } });
                             const { dynamic_preroll_type: e, preroll_id: a } = p;
                             return (
-                                v(l, { preroll_id: a, dynamic_preroll_type: e }, i, o, t),
-                                (function (e, t, i, a) {
+                                v(l, { preroll_id: a, dynamic_preroll_type: e }, r, o, t),
+                                (function (e, t, r, a) {
                                     const o = { adId: t.preroll_id, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: null, duration_millis: t.media_info.duration_millis, publisher_id_str: t.media_info.publisher_id_str, variants: t.media_info.variants }, promotedContent: { impressionId: void 0, disclosureType: void 0 }, videoAnalyticsScribePassthrough: t.videoAnalyticsScribePassthrough };
-                                    if ((t.promoted_content && !i && ((o.promotedContent.impressionId = t.promoted_content.impression_id), (o.promotedContent.disclosureType = t.promoted_content.disclosure_type)), t.media_info.call_to_action)) {
+                                    if ((t.promoted_content && !r && ((o.promotedContent.impressionId = t.promoted_content.impression_id), (o.promotedContent.disclosureType = t.promoted_content.disclosure_type)), t.media_info.call_to_action)) {
                                         const { type: e, url: a } = t.media_info.call_to_action,
-                                            n = (0, r.b)(a, i?.clickTrackingInfo),
-                                            s = i?.clickTrackingInfo ? { original_url: a, embedded_url: n, click_tracking_info: i.clickTrackingInfo, embed_status: (0, r.R)(a, i.clickTrackingInfo) } : void 0;
+                                            n = (0, i.b)(a, r?.clickTrackingInfo),
+                                            s = r?.clickTrackingInfo ? { original_url: a, embedded_url: n, click_tracking_info: r.clickTrackingInfo, embed_status: (0, i.R)(a, r.clickTrackingInfo) } : void 0;
                                         o.mediaInfo.call_to_action = { type: e, url: n, click_tracking_embed_details: s };
                                     }
                                     if (t.media_info.render_ad_by_advertiser_name) {
-                                        const { advertiser_name: e, advertiser_profile_image_url: i } = t.media_info;
-                                        (o.advertiserName = e), (o.advertiserProfileImageUrl = i);
+                                        const { advertiser_name: e, advertiser_profile_image_url: r } = t.media_info;
+                                        (o.advertiserName = e), (o.advertiserProfileImageUrl = r);
                                     }
                                     if (a?.redesign) {
                                         (o.shouldAutoAdvance = !1), (o.useRedesignedPrerollUx = !0);
-                                        const { advertiser_name: e, advertiser_profile_image_url: i } = t.media_info;
-                                        (o.advertiserName = e), (o.advertiserProfileImageUrl = i);
+                                        const { advertiser_name: e, advertiser_profile_image_url: r } = t.media_info;
+                                        (o.advertiserName = e), (o.advertiserProfileImageUrl = r);
                                     }
                                     return o;
-                                })(0, p, h, _)
+                                })(0, p, h, y)
                             );
                         }
-                        const y = d[e];
-                        if (y) {
-                            const e = (function (e, t, i, a) {
+                        const _ = d[e];
+                        if (_) {
+                            const e = (function (e, t, r, a) {
                                 if (!t.preroll || !t.preroll.mediaInfo) return null;
                                 const { mediaInfo: o, prerollId: n } = t.preroll,
                                     s = o.videoVariants.map((e) => ({ url: e.url, content_type: e.contentType, bitrate: e.bitrate })),
                                     l = { adId: n, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: o.durationMillis, publisher_id_str: o.publisherId, variants: s }, promotedContent: { impressionId: void 0, disclosureType: void 0 } };
                                 if (o.callToAction) {
                                     const { type: e, url: t } = o.callToAction,
-                                        a = (0, r.b)(t, i?.clickTrackingInfo),
-                                        n = i?.clickTrackingInfo ? { original_url: t, embedded_url: a, click_tracking_info: i.clickTrackingInfo, embed_status: (0, r.R)(t, i.clickTrackingInfo) } : void 0;
+                                        a = (0, i.b)(t, r?.clickTrackingInfo),
+                                        n = r?.clickTrackingInfo ? { original_url: t, embedded_url: a, click_tracking_info: r.clickTrackingInfo, embed_status: (0, i.R)(t, r.clickTrackingInfo) } : void 0;
                                     l.mediaInfo.call_to_action = { type: e, url: a, click_tracking_embed_details: n };
                                 }
                                 if (o.renderAdByAdvertiserName) {
@@ -814,7 +814,7 @@
                                     (l.advertiserName = e), (l.advertiserProfileImageUrl = t);
                                 }
                                 return l;
-                            })(0, y, h, _);
+                            })(0, _, h, y);
                             if (e) return e;
                         }
                     }
@@ -822,227 +822,171 @@
                 };
             }
         },
-        694180: (e, t, i) => {
-            i.d(t, { cM: () => m, dS: () => y, iY: () => g });
-            var r = i(370751),
-                a = i(399896),
-                o = i(663550),
-                n = i(499627),
-                s = i(917799);
+        694180: (e, t, r) => {
+            r.d(t, { cM: () => m, dS: () => _, iY: () => g });
+            var i = r(370751),
+                a = r(399896),
+                o = r(663550),
+                n = r(499627),
+                s = r(917799);
             const l = {},
                 c = Object.freeze({ REQUEST: "rweb/promotedContent/LOG_REQUEST", SUCCESS: "rweb/promotedContent/LOG_SUCCESS", FAILURE: "rweb/promotedContent/LOG_FAILURE" }),
                 d = "rweb/promotedContent/LOG_UNIQUE_EVENT",
-                u = (0, r.Z)([o.dx.IMPRESSION, o.dx.DWELL]),
-                p = (0, r.Z)([o.AJ.TREND_VIEW, o.AJ.SPOTLIGHT_IMPRESSION]),
+                u = (0, i.Z)([o.dx.IMPRESSION, o.dx.DWELL]),
+                p = (0, i.Z)([o.AJ.TREND_VIEW, o.AJ.SPOTLIGHT_IMPRESSION]),
                 h = (e) => ({ payload: { eventKey: e }, type: d });
-            const _ = (e, t) => !!e.promotedContent[t],
-                y =
+            const y = (e, t) => !!e.promotedContent[t],
+                _ =
                     (e) =>
-                    (t, i, { api: r }) => {
+                    (t, r, { api: i }) => {
                         const { event: o, impression_id: n, promoted_trend_id: l } = e,
                             d = `trend-${l}-${o}`;
-                        if (p.has(o) && _(i(), d)) return Promise.resolve();
+                        if (p.has(o) && y(r(), d)) return Promise.resolve();
                         const u = { promoted_trend_id: l, event: o, impression_id: n };
-                        return (0, s._O)(t, { params: u, request: r.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
+                        return (0, s._O)(t, { params: u, request: i.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
                             if (!t && p.has(o)) return [h(d)];
                         });
                     },
                 m =
-                    ({ disclosureType: e, itemId: t, itemType: i, params: r }) =>
+                    ({ disclosureType: e, itemId: t, itemType: r, params: i }) =>
                     (o, n, { api: l }) => {
-                        const { event: d, impression_id: p } = r,
-                            y = `${i}-${t ?? "undefined"}-${p ?? "undefined"}-${d ?? "undefined"}`;
-                        if (u.has(d) && _(n(), y)) return Promise.resolve();
+                        const { event: d, impression_id: p } = i,
+                            _ = `${r}-${t ?? "undefined"}-${p ?? "undefined"}-${d ?? "undefined"}`;
+                        if (u.has(d) && y(n(), _)) return Promise.resolve();
                         const m = e && "earned" === e.toLowerCase() ? "1" : null,
-                            g = { ...r, earned: m, epoch_ms: Date.now() };
+                            g = { ...i, earned: m, epoch_ms: Date.now() };
                         return (0, s._O)(o, { params: g, request: l.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: g }, (e, t) => {
-                            if (!t && u.has(d)) return [h(y)];
+                            if (!t && u.has(d)) return [h(_)];
                         });
                     },
                 g =
                     (e) =>
-                    (t, i, { api: r }) =>
-                        (0, s._O)(t, { params: e, request: r.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
+                    (t, r, { api: i }) =>
+                        (0, s._O)(t, { params: e, request: i.withEndpoint(a.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
             n.Z.register({
                 promotedContent: function (e = l, t) {
                     if (!t) return e;
                     if (t.type === d) {
                         if (!t.payload) return e;
-                        const { eventKey: i } = t.payload;
-                        return { ...e, [i]: !0 };
+                        const { eventKey: r } = t.payload;
+                        return { ...e, [r]: !0 };
                     }
                     return e;
                 },
             });
         },
-        420412: (e, t, i) => {
-            i.d(t, { Z: () => l });
-            var r = i(202784),
-                a = i(325686),
-                o = i(235902),
-                n = i(885015),
-                s = i(392237);
-            function l({ borderColor: e = "borderColor", isSlim: t = !1, label: i }) {
+        420412: (e, t, r) => {
+            r.d(t, { Z: () => l });
+            var i = r(202784),
+                a = r(325686),
+                o = r(235902),
+                n = r(885015),
+                s = r(392237);
+            function l({ borderColor: e = "borderColor", isSlim: t = !1, label: r }) {
                 const { isWebRedesign: l } = o.ZP.useProps(),
                     d = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: s.default.theme.colors[e] ?? s.default.theme.colors.borderColor };
-                return i ? r.createElement(n.Z, { style: !t && c.root, withGutter: !0 }, r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] })), r.createElement(a.Z, { style: c.gapText }, i), r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] }))) : r.createElement(a.Z, { style: [!t && c.root, l() && c.rootRedesign, c.gap, d] });
+                return r ? i.createElement(n.Z, { style: !t && c.root, withGutter: !0 }, i.createElement(a.Z, { style: c.gapColumn }, i.createElement(a.Z, { style: [c.gap, d] })), i.createElement(a.Z, { style: c.gapText }, r), i.createElement(a.Z, { style: c.gapColumn }, i.createElement(a.Z, { style: [c.gap, d] }))) : i.createElement(a.Z, { style: [!t && c.root, l() && c.rootRedesign, c.gap, d] });
             }
             const c = s.default.create((e) => ({ borderColor: { backgroundColor: s.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: s.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
-        885015: (e, t, i) => {
-            i.d(t, { Z: () => c });
-            var r = i(807896),
-                a = i(202784),
-                o = i(325686),
-                n = i(392237);
+        885015: (e, t, r) => {
+            r.d(t, { Z: () => c });
+            var i = r(807896),
+                a = r(202784),
+                o = r(325686),
+                n = r(392237);
             class s extends a.Component {
                 render() {
-                    const { children: e, style: t, withGutter: i, ...n } = this.props,
-                        s = a.Children.map(e, (e) => e && a.cloneElement(e, { style: [e.props.style, l.column, i && l.withGutterColumn] }));
-                    return a.createElement(o.Z, (0, r.Z)({ style: [t, l.root, i && l.withGutter] }, n), s);
+                    const { children: e, style: t, withGutter: r, ...n } = this.props,
+                        s = a.Children.map(e, (e) => e && a.cloneElement(e, { style: [e.props.style, l.column, r && l.withGutterColumn] }));
+                    return a.createElement(o.Z, (0, i.Z)({ style: [t, l.root, r && l.withGutter] }, n), s);
                 }
             }
             s.defaultProps = { withGutter: !1 };
             const l = n.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = s;
         },
-        58399: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => c });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(717683),
-                s = i(347101);
-            const l = (e = {}) => {
-                const t = r.useContext(n.Z),
-                    { direction: i } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: i });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
-        246492: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        264171: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        98440: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        262009: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        452693: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => l });
-            var r = i(202784),
-                a = i(890601),
-                o = i(783427),
-                n = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        465233: (e, t, i) => {
-            i.d(t, { Z: () => a });
-            var r = i(716406);
-            function a(e) {
-                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(a) : (0, r.Z)(e, (e) => a(e));
+        893164: (e, t, r) => {
+            r.d(t, { Z: () => h });
+            var i = r(202784),
+                a = r(325686),
+                o = r(111677),
+                n = r.n(o),
+                s = r(355830),
+                l = r(731708),
+                c = r(154003),
+                d = r(992942),
+                u = r(392237);
+            const p = n().a9edea48;
+            function h(e) {
+                const { displayBackgroundImage: t = !1, errorMessage: r, iconPlayError: o, imageSrc: n, onReloadPress: h } = e;
+                return i.createElement(a.Z, { style: [u.default.absoluteFill, t ? null : y.blankOverlay] }, t ? i.createElement(i.Fragment, null, i.createElement(a.Z, { style: y.backgroundImage }, n && i.createElement(d.Z, { resizeMode: "cover", source: n, style: u.default.absoluteFill })), i.createElement(a.Z, { style: y.overlay })) : null, i.createElement(a.Z, { style: y.errorContainer }, i.createElement(a.Z, null, o ? i.createElement(s.default, { style: y.playErrorIcon }) : null), i.createElement(a.Z, { focusable: !0 }, i.createElement(l.ZP, { style: t ? y.errorMsgTextWhite : y.errorMsgTextGray }, r)), h ? i.createElement(c.ZP, { onPress: h, style: y.buttonContainer, type: "brandFilled" }, p) : null));
             }
+            const y = u.default.create((e) => ({ backgroundImage: { ...u.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...u.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
         },
-        411240: (e, t, i) => {
-            i.d(t, { Z: () => r });
-            const r = (e, t) => {
+        98440: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var i = r(202784),
+                a = r(890601),
+                o = r(783427),
+                n = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        411240: (e, t, r) => {
+            r.d(t, { Z: () => i });
+            const i = (e, t) => {
                 if (0 === e.length) return;
-                let i = e[0],
-                    r = t(i);
+                let r = e[0],
+                    i = t(r);
                 for (let a = 1; a < e.length; a++) {
                     const o = e[a],
                         n = t(o);
-                    n < r && ((i = o), (r = n));
+                    n < i && ((r = o), (i = n));
                 }
-                return i;
+                return r;
             };
         },
-        662678: (e, t, i) => {
-            i.d(t, { G: () => a, Z: () => r });
-            i(136728);
-            const r = function (e, t) {
+        662678: (e, t, r) => {
+            r.d(t, { G: () => a, Z: () => i });
+            r(136728);
+            const i = function (e, t) {
                 return a(e, t);
             };
             function a(e, t) {
                 return e.reduce(
-                    (i, r, a) => {
-                        const o = t ? t(r, a, e) : !!r;
-                        return o && i[0].push(r), !o && i[1].push(r), i;
+                    (r, i, a) => {
+                        const o = t ? t(i, a, e) : !!i;
+                        return o && r[0].push(i), !o && r[1].push(i), r;
                     },
                     [[], []],
                 );
             }
         },
-        689996: (e, t, i) => {
-            var r = i(497636),
-                a = i(265968),
-                o = i(409337),
-                n = i(492991),
-                s = i(639646),
-                l = i(387501),
+        689996: (e, t, r) => {
+            var i = r(497636),
+                a = r(265968),
+                o = r(409337),
+                n = r(492991),
+                s = r(639646),
+                l = r(387501),
                 c = a([].push),
                 d = function (e) {
                     var t = 1 === e,
-                        i = 2 === e,
+                        r = 2 === e,
                         a = 3 === e,
                         d = 4 === e,
                         u = 6 === e,
                         p = 7 === e,
                         h = 5 === e || u;
-                    return function (_, y, m, g) {
-                        for (var f, b, P = n(_), v = o(P), I = r(y, m), E = s(v), C = 0, A = g || l, w = t ? A(_, E) : i || p ? A(_, 0) : void 0; E > C; C++)
+                    return function (y, _, m, g) {
+                        for (var f, b, P = n(y), v = o(P), I = i(_, m), E = s(v), C = 0, A = g || l, T = t ? A(y, E) : r || p ? A(y, 0) : void 0; E > C; C++)
                             if ((h || C in v) && ((b = I((f = v[C]), C, P)), e))
-                                if (t) w[C] = b;
+                                if (t) T[C] = b;
                                 else if (b)
                                     switch (e) {
                                         case 3:
@@ -1052,29 +996,29 @@
                                         case 6:
                                             return C;
                                         case 2:
-                                            c(w, f);
+                                            c(T, f);
                                     }
                                 else
                                     switch (e) {
                                         case 4:
                                             return !1;
                                         case 7:
-                                            c(w, f);
+                                            c(T, f);
                                     }
-                        return u ? -1 : a || d ? d : w;
+                        return u ? -1 : a || d ? d : T;
                     };
                 };
             e.exports = { forEach: d(0), map: d(1), filter: d(2), some: d(3), every: d(4), find: d(5), findIndex: d(6), filterReject: d(7) };
         },
-        331460: (e, t, i) => {
-            var r = i(824229),
-                a = i(670095),
-                o = i(406358),
+        331460: (e, t, r) => {
+            var i = r(824229),
+                a = r(670095),
+                o = r(406358),
                 n = a("species");
             e.exports = function (e) {
                 return (
                     o >= 51 ||
-                    !r(function () {
+                    !i(function () {
                         var t = [];
                         return (
                             ((t.constructor = {})[n] = function () {
@@ -1086,14 +1030,14 @@
                 );
             };
         },
-        696038: (e, t, i) => {
-            var r = i(824229);
+        696038: (e, t, r) => {
+            var i = r(824229);
             e.exports = function (e, t) {
-                var i = [][e];
+                var r = [][e];
                 return (
-                    !!i &&
-                    r(function () {
-                        i.call(
+                    !!r &&
+                    i(function () {
+                        r.call(
                             null,
                             t ||
                                 function () {
@@ -1105,74 +1049,74 @@
                 );
             };
         },
-        43143: (e, t, i) => {
-            var r = i(277111),
-                a = i(492991),
-                o = i(409337),
-                n = i(639646),
+        43143: (e, t, r) => {
+            var i = r(277111),
+                a = r(492991),
+                o = r(409337),
+                n = r(639646),
                 s = TypeError,
                 l = function (e) {
-                    return function (t, i, l, c) {
-                        r(i);
+                    return function (t, r, l, c) {
+                        i(r);
                         var d = a(t),
                             u = o(d),
                             p = n(d),
                             h = e ? p - 1 : 0,
-                            _ = e ? -1 : 1;
+                            y = e ? -1 : 1;
                         if (l < 2)
                             for (;;) {
                                 if (h in u) {
-                                    (c = u[h]), (h += _);
+                                    (c = u[h]), (h += y);
                                     break;
                                 }
-                                if (((h += _), e ? h < 0 : p <= h)) throw new s("Reduce of empty array with no initial value");
+                                if (((h += y), e ? h < 0 : p <= h)) throw new s("Reduce of empty array with no initial value");
                             }
-                        for (; e ? h >= 0 : p > h; h += _) h in u && (c = i(c, u[h], h, d));
+                        for (; e ? h >= 0 : p > h; h += y) h in u && (c = r(c, u[h], h, d));
                         return c;
                     };
                 };
             e.exports = { left: l(!1), right: l(!0) };
         },
-        1909: (e, t, i) => {
-            var r = i(265968);
-            e.exports = r([].slice);
+        1909: (e, t, r) => {
+            var i = r(265968);
+            e.exports = i([].slice);
         },
-        118760: (e, t, i) => {
-            var r = i(33718),
-                a = i(782359),
-                o = i(685052),
-                n = i(670095)("species"),
+        118760: (e, t, r) => {
+            var i = r(33718),
+                a = r(782359),
+                o = r(685052),
+                n = r(670095)("species"),
                 s = Array;
             e.exports = function (e) {
                 var t;
-                return r(e) && ((t = e.constructor), ((a(t) && (t === s || r(t.prototype))) || (o(t) && null === (t = t[n]))) && (t = void 0)), void 0 === t ? s : t;
+                return i(e) && ((t = e.constructor), ((a(t) && (t === s || i(t.prototype))) || (o(t) && null === (t = t[n]))) && (t = void 0)), void 0 === t ? s : t;
             };
         },
-        387501: (e, t, i) => {
-            var r = i(118760);
+        387501: (e, t, r) => {
+            var i = r(118760);
             e.exports = function (e, t) {
-                return new (r(e))(0 === t ? 0 : t);
+                return new (i(e))(0 === t ? 0 : t);
             };
         },
-        128801: (e, t, i) => {
-            var r = i(609859),
-                a = i(427079);
-            e.exports = "process" === a(r.process);
+        128801: (e, t, r) => {
+            var i = r(609859),
+                a = r(427079);
+            e.exports = "process" === a(i.process);
         },
-        782359: (e, t, i) => {
-            var r = i(265968),
-                a = i(824229),
-                o = i(26733),
-                n = i(781589),
-                s = i(431333),
-                l = i(108511),
+        782359: (e, t, r) => {
+            var i = r(265968),
+                a = r(824229),
+                o = r(26733),
+                n = r(781589),
+                s = r(431333),
+                l = r(108511),
                 c = function () {},
                 d = [],
                 u = s("Reflect", "construct"),
                 p = /^\s*(?:class|function)\b/,
-                h = r(p.exec),
-                _ = !p.test(c),
-                y = function (e) {
+                h = i(p.exec),
+                y = !p.test(c),
+                _ = function (e) {
                     if (!o(e)) return !1;
                     try {
                         return u(c, d, e), !0;
@@ -1189,7 +1133,7 @@
                             return !1;
                     }
                     try {
-                        return _ || !!h(p, l(e));
+                        return y || !!h(p, l(e));
                     } catch (e) {
                         return !0;
                     }
@@ -1200,35 +1144,35 @@
                     a(function () {
                         var e;
                         return (
-                            y(y.call) ||
-                            !y(Object) ||
-                            !y(function () {
+                            _(_.call) ||
+                            !_(Object) ||
+                            !_(function () {
                                 e = !0;
                             }) ||
                             e
                         );
                     })
                         ? m
-                        : y);
+                        : _);
         },
-        700047: (e, t, i) => {
-            var r = i(807400),
-                a = i(265968),
-                o = i(720266),
-                n = i(824229),
-                s = i(765632),
-                l = i(110894),
-                c = i(119195),
-                d = i(492991),
-                u = i(409337),
+        700047: (e, t, r) => {
+            var i = r(807400),
+                a = r(265968),
+                o = r(720266),
+                n = r(824229),
+                s = r(765632),
+                l = r(110894),
+                c = r(119195),
+                d = r(492991),
+                u = r(409337),
                 p = Object.assign,
                 h = Object.defineProperty,
-                _ = a([].concat);
+                y = a([].concat);
             e.exports =
                 !p ||
                 n(function () {
                     if (
-                        r &&
+                        i &&
                         1 !==
                             p(
                                 { b: 1 },
@@ -1246,62 +1190,62 @@
                         return !0;
                     var e = {},
                         t = {},
-                        i = Symbol("assign detection"),
+                        r = Symbol("assign detection"),
                         a = "abcdefghijklmnopqrst";
                     return (
-                        (e[i] = 7),
+                        (e[r] = 7),
                         a.split("").forEach(function (e) {
                             t[e] = e;
                         }),
-                        7 !== p({}, e)[i] || s(p({}, t)).join("") !== a
+                        7 !== p({}, e)[r] || s(p({}, t)).join("") !== a
                     );
                 })
                     ? function (e, t) {
-                          for (var i = d(e), a = arguments.length, n = 1, p = l.f, h = c.f; a > n; ) for (var y, m = u(arguments[n++]), g = p ? _(s(m), p(m)) : s(m), f = g.length, b = 0; f > b; ) (y = g[b++]), (r && !o(h, m, y)) || (i[y] = m[y]);
-                          return i;
+                          for (var r = d(e), a = arguments.length, n = 1, p = l.f, h = c.f; a > n; ) for (var _, m = u(arguments[n++]), g = p ? y(s(m), p(m)) : s(m), f = g.length, b = 0; f > b; ) (_ = g[b++]), (i && !o(h, m, _)) || (r[_] = m[_]);
+                          return r;
                       }
                     : p;
         },
-        849276: (e, t, i) => {
-            var r = i(609859);
-            e.exports = r;
+        849276: (e, t, r) => {
+            var i = r(609859);
+            e.exports = i;
         },
-        730895: (e, t, i) => {
-            var r = i(821176);
+        730895: (e, t, r) => {
+            var i = r(821176);
             e.exports = function () {
-                var e = r(this),
+                var e = i(this),
                     t = "";
                 return e.hasIndices && (t += "d"), e.global && (t += "g"), e.ignoreCase && (t += "i"), e.multiline && (t += "m"), e.dotAll && (t += "s"), e.unicode && (t += "u"), e.unicodeSets && (t += "v"), e.sticky && (t += "y"), t;
             };
         },
-        1017: (e, t, i) => {
-            var r = i(265968),
-                a = i(558885),
-                o = i(783326),
-                n = i(841647),
-                s = r("".replace),
+        1017: (e, t, r) => {
+            var i = r(265968),
+                a = r(558885),
+                o = r(783326),
+                n = r(841647),
+                s = i("".replace),
                 l = RegExp("^[" + n + "]+"),
                 c = RegExp("(^|[^" + n + "])[" + n + "]+$"),
                 d = function (e) {
                     return function (t) {
-                        var i = o(a(t));
-                        return 1 & e && (i = s(i, l, "")), 2 & e && (i = s(i, c, "$1")), i;
+                        var r = o(a(t));
+                        return 1 & e && (r = s(r, l, "")), 2 & e && (r = s(r, c, "$1")), r;
                     };
                 };
             e.exports = { start: d(1), end: d(2), trim: d(3) };
         },
-        890143: (e, t, i) => {
-            var r = i(265968);
-            e.exports = r((1).valueOf);
+        890143: (e, t, r) => {
+            var i = r(265968);
+            e.exports = i((1).valueOf);
         },
         841647: (e) => {
             e.exports = "\t\n\v\f\r                　\u2028\u2029\ufeff";
         },
-        543450: (e, t, i) => {
-            var r = i(23103),
-                a = i(689996).map;
-            r(
-                { target: "Array", proto: !0, forced: !i(331460)("map") },
+        543450: (e, t, r) => {
+            var i = r(23103),
+                a = r(689996).map;
+            i(
+                { target: "Array", proto: !0, forced: !r(331460)("map") },
                 {
                     map: function (e) {
                         return a(this, e, arguments.length > 1 ? arguments[1] : void 0);
@@ -1309,13 +1253,13 @@
                 },
             );
         },
-        743108: (e, t, i) => {
-            var r = i(23103),
-                a = i(43143).left,
-                o = i(696038),
-                n = i(406358);
-            r(
-                { target: "Array", proto: !0, forced: (!i(128801) && n > 79 && n < 83) || !o("reduce") },
+        743108: (e, t, r) => {
+            var i = r(23103),
+                a = r(43143).left,
+                o = r(696038),
+                n = r(406358);
+            i(
+                { target: "Array", proto: !0, forced: (!r(128801) && n > 79 && n < 83) || !o("reduce") },
                 {
                     reduce: function (e) {
                         var t = arguments.length;
@@ -1324,137 +1268,137 @@
                 },
             );
         },
-        332501: (e, t, i) => {
-            var r = i(23103),
-                a = i(33718),
-                o = i(782359),
-                n = i(685052),
-                s = i(443231),
-                l = i(639646),
-                c = i(910905),
-                d = i(462324),
-                u = i(670095),
-                p = i(331460),
-                h = i(1909),
-                _ = p("slice"),
-                y = u("species"),
+        332501: (e, t, r) => {
+            var i = r(23103),
+                a = r(33718),
+                o = r(782359),
+                n = r(685052),
+                s = r(443231),
+                l = r(639646),
+                c = r(910905),
+                d = r(462324),
+                u = r(670095),
+                p = r(331460),
+                h = r(1909),
+                y = p("slice"),
+                _ = u("species"),
                 m = Array,
                 g = Math.max;
-            r(
-                { target: "Array", proto: !0, forced: !_ },
+            i(
+                { target: "Array", proto: !0, forced: !y },
                 {
                     slice: function (e, t) {
-                        var i,
-                            r,
+                        var r,
+                            i,
                             u,
                             p = c(this),
-                            _ = l(p),
-                            f = s(e, _),
-                            b = s(void 0 === t ? _ : t, _);
-                        if (a(p) && ((i = p.constructor), ((o(i) && (i === m || a(i.prototype))) || (n(i) && null === (i = i[y]))) && (i = void 0), i === m || void 0 === i)) return h(p, f, b);
-                        for (r = new (void 0 === i ? m : i)(g(b - f, 0)), u = 0; f < b; f++, u++) f in p && d(r, u, p[f]);
-                        return (r.length = u), r;
+                            y = l(p),
+                            f = s(e, y),
+                            b = s(void 0 === t ? y : t, y);
+                        if (a(p) && ((r = p.constructor), ((o(r) && (r === m || a(r.prototype))) || (n(r) && null === (r = r[_]))) && (r = void 0), r === m || void 0 === r)) return h(p, f, b);
+                        for (i = new (void 0 === r ? m : r)(g(b - f, 0)), u = 0; f < b; f++, u++) f in p && d(i, u, p[f]);
+                        return (i.length = u), i;
                     },
                 },
             );
         },
-        271245: (e, t, i) => {
-            var r = i(23103),
-                a = i(124231),
-                o = i(807400),
-                n = i(609859),
-                s = i(849276),
-                l = i(265968),
-                c = i(46541),
-                d = i(198270),
-                u = i(720835),
-                p = i(291321),
-                h = i(349395),
-                _ = i(992066),
-                y = i(824229),
-                m = i(778151).f,
-                g = i(997933).f,
-                f = i(931787).f,
-                b = i(890143),
-                P = i(1017).trim,
+        271245: (e, t, r) => {
+            var i = r(23103),
+                a = r(124231),
+                o = r(807400),
+                n = r(609859),
+                s = r(849276),
+                l = r(265968),
+                c = r(46541),
+                d = r(198270),
+                u = r(720835),
+                p = r(291321),
+                h = r(349395),
+                y = r(992066),
+                _ = r(824229),
+                m = r(778151).f,
+                g = r(997933).f,
+                f = r(931787).f,
+                b = r(890143),
+                P = r(1017).trim,
                 v = "Number",
                 I = n[v],
                 E = s[v],
                 C = I.prototype,
                 A = n.TypeError,
-                w = l("".slice),
-                T = l("".charCodeAt),
+                T = l("".slice),
+                w = l("".charCodeAt),
                 S = function (e) {
                     var t,
-                        i,
                         r,
+                        i,
                         a,
                         o,
                         n,
                         s,
                         l,
-                        c = _(e, "number");
+                        c = y(e, "number");
                     if (h(c)) throw new A("Cannot convert a Symbol value to a number");
                     if ("string" == typeof c && c.length > 2)
-                        if (((c = P(c)), 43 === (t = T(c, 0)) || 45 === t)) {
-                            if (88 === (i = T(c, 2)) || 120 === i) return NaN;
+                        if (((c = P(c)), 43 === (t = w(c, 0)) || 45 === t)) {
+                            if (88 === (r = w(c, 2)) || 120 === r) return NaN;
                         } else if (48 === t) {
-                            switch (T(c, 1)) {
+                            switch (w(c, 1)) {
                                 case 66:
                                 case 98:
-                                    (r = 2), (a = 49);
+                                    (i = 2), (a = 49);
                                     break;
                                 case 79:
                                 case 111:
-                                    (r = 8), (a = 55);
+                                    (i = 8), (a = 55);
                                     break;
                                 default:
                                     return +c;
                             }
-                            for (n = (o = w(c, 2)).length, s = 0; s < n; s++) if ((l = T(o, s)) < 48 || l > a) return NaN;
-                            return parseInt(o, r);
+                            for (n = (o = T(c, 2)).length, s = 0; s < n; s++) if ((l = w(o, s)) < 48 || l > a) return NaN;
+                            return parseInt(o, i);
                         }
                     return +c;
                 },
                 k = c(v, !I(" 0o1") || !I("0b1") || I("+0x1")),
                 R = function (e) {
                     var t,
-                        i =
+                        r =
                             arguments.length < 1
                                 ? 0
                                 : I(
                                       (function (e) {
-                                          var t = _(e, "number");
+                                          var t = y(e, "number");
                                           return "bigint" == typeof t ? t : S(t);
                                       })(e),
                                   );
                     return p(C, (t = this)) &&
-                        y(function () {
+                        _(function () {
                             b(t);
                         })
-                        ? u(Object(i), this, R)
-                        : i;
+                        ? u(Object(r), this, R)
+                        : r;
                 };
-            (R.prototype = C), k && !a && (C.constructor = R), r({ global: !0, constructor: !0, wrap: !0, forced: k }, { Number: R });
+            (R.prototype = C), k && !a && (C.constructor = R), i({ global: !0, constructor: !0, wrap: !0, forced: k }, { Number: R });
             var L = function (e, t) {
-                for (var i, r = o ? m(t) : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,isFinite,isInteger,isNaN,isSafeInteger,parseFloat,parseInt,fromString,range".split(","), a = 0; r.length > a; a++) d(t, (i = r[a])) && !d(e, i) && f(e, i, g(t, i));
+                for (var r, i = o ? m(t) : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,isFinite,isInteger,isNaN,isSafeInteger,parseFloat,parseInt,fromString,range".split(","), a = 0; i.length > a; a++) d(t, (r = i[a])) && !d(e, r) && f(e, r, g(t, r));
             };
             a && E && L(s[v], E), (k || a) && L(s[v], I);
         },
-        43105: (e, t, i) => {
-            var r = i(23103),
-                a = i(700047);
-            r({ target: "Object", stat: !0, arity: 2, forced: Object.assign !== a }, { assign: a });
+        43105: (e, t, r) => {
+            var i = r(23103),
+                a = r(700047);
+            i({ target: "Object", stat: !0, arity: 2, forced: Object.assign !== a }, { assign: a });
         },
-        334769: (e, t, i) => {
-            var r = i(23103),
-                a = i(492991),
-                o = i(765632);
-            r(
+        334769: (e, t, r) => {
+            var i = r(23103),
+                a = r(492991),
+                o = r(765632);
+            i(
                 {
                     target: "Object",
                     stat: !0,
-                    forced: i(824229)(function () {
+                    forced: r(824229)(function () {
                         o(1);
                     }),
                 },
@@ -1467,4 +1411,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.06b36f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.0995e16a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.CommandCenter"],
+    ["ondemand.CommandCenter", "icons/IconExiting-js", "icons/IconFollowArrowLeftStroke-js"],
     {
         395337: (e, n, t) => {
             t.d(n, { Z: () => s });
@@ -48,25 +48,25 @@
                 y = t.n(w),
                 I = t(698891),
                 D = t(459679),
-                T = t(420182),
-                C = t(390387),
-                M = t(76920),
-                E = t(688715),
-                S = t(348256),
-                Z = t(956272),
-                R = t(684869),
-                x = t(717160),
+                C = t(420182),
+                M = t(390387),
+                E = t(76920),
+                T = t(688715),
+                Z = t(348256),
+                S = t(956272),
+                x = t(684869),
+                R = t(717160),
                 L = t(707570),
                 F = t(1753),
                 K = t(625271),
-                A = t(883069),
-                z = t(279849),
+                z = t(883069),
+                A = t(279849),
                 N = t(197318),
                 $ = t(689582),
-                U = t(256260),
-                H = t(511323),
-                q = t(80361),
-                j = t(856151),
+                H = t(256260),
+                U = t(511323),
+                j = t(80361),
+                q = t(856151),
                 V = t(53674),
                 O = t(520913),
                 P = t(297896),
@@ -102,49 +102,49 @@
                 ye = y().a5a30af0,
                 Ie = y().b007440a,
                 De = y().c818c60c,
-                Te = y().ha8209bc,
-                Ce = y().a2f81050,
-                Me = y().h5860a68,
-                Ee = y().eb75875e,
-                Se = y().fcf3e54c,
-                Ze = y().ded416b0,
-                Re = y().j0e2cfa8,
-                xe = (0, r.cn)((e) => {
-                    const n = e(T.qc).getState(),
+                Ce = y().ha8209bc,
+                Me = y().a2f81050,
+                Ee = y().h5860a68,
+                Te = y().eb75875e,
+                Ze = y().fcf3e54c,
+                Se = y().ded416b0,
+                xe = y().j0e2cfa8,
+                Re = (0, r.cn)((e) => {
+                    const n = e(C.qc).getState(),
                         t = le.ZP.selectViewerUser(n)?.screen_name,
                         { acceptedIds: i, ids: l } = ie.sC(n),
                         a = l.length - i.length,
-                        r = e(T.f0),
-                        o = e(T.TD),
-                        s = { icon: S.default, label: Te, link: "/home", id: "home" },
-                        d = { icon: Z.default, label: Se, link: "/explore", id: "explore" },
-                        c = r.isTrue("subscriptions_inapp_grok_upsell_enabled") || o.isTrueAndEnabled("subscriptions_inapp_grok") ? { icon: ne.x1, label: Me, link: "/i/grok", id: "grok" } : void 0,
-                        u = { icon: R.default, label: Ee, link: "/notifications", id: "notifications" },
-                        m = { icon: x.default, label: Ce, link: "/messages", id: "messages" },
-                        f = r.isTrue("voice_rooms_discovery_page_enabled") ? { icon: L.default, label: Ze, link: "/i/spaces", id: "spaces" } : void 0,
+                        r = e(C.f0),
+                        o = e(C.TD),
+                        s = { icon: Z.default, label: Ce, link: "/home", id: "home" },
+                        d = { icon: S.default, label: Ze, link: "/explore", id: "explore" },
+                        c = r.isTrue("subscriptions_inapp_grok_upsell_enabled") || o.isTrueAndEnabled("subscriptions_inapp_grok") ? { icon: ne.x1, label: Ee, link: "/i/grok", id: "grok" } : void 0,
+                        u = { icon: x.default, label: Te, link: "/notifications", id: "notifications" },
+                        m = { icon: R.default, label: Me, link: "/messages", id: "messages" },
+                        f = r.isTrue("voice_rooms_discovery_page_enabled") ? { icon: L.default, label: Se, link: "/i/spaces", id: "spaces" } : void 0,
                         p = { icon: F.default, label: ye, link: "/compose/articles", id: "article_composer" },
                         b = { icon: K.default, label: re, link: "/i/communitynotes", id: "birdwatch" },
-                        _ = { icon: A.default, label: oe, link: "/i/bookmarks", id: "bookmarks_overflow_item" },
-                        v = { icon: z.default, label: se, link: "/i/branded_likes_preview", id: "branded_likes_preview_overflow_item" },
+                        _ = { icon: z.default, label: oe, link: "/i/bookmarks", id: "bookmarks_overflow_item" },
+                        v = { icon: A.default, label: se, link: "/i/branded_likes_preview", id: "branded_likes_preview_overflow_item" },
                         g = (N.default, t ? { icon: $.default, label: ce, link: `/${t}/lists`, id: "lists_overflow_item" } : void 0),
-                        h = { badgeCount: a, icon: U.default, label: de, link: "/follower_requests", id: "follower_requests_overflow_item" },
-                        k = t ? { icon: H.default, label: fe, link: `/${t}`, id: "profile_overflow_item" } : void 0,
-                        w = { icon: q.default, label: "Money", link: "/i/xpayments", id: "payments_overflow_item" },
-                        y = { icon: j.default, label: _e, link: "/i/coins", id: "twitter_coins" },
+                        h = { badgeCount: a, icon: H.default, label: de, link: "/follower_requests", id: "follower_requests_overflow_item" },
+                        k = t ? { icon: U.default, label: fe, link: `/${t}`, id: "profile_overflow_item" } : void 0,
+                        w = { icon: j.default, label: "Money", link: "/i/xpayments", id: "payments_overflow_item" },
+                        y = { icon: q.default, label: _e, link: "/i/coins", id: "twitter_coins" },
                         D = { icon: O.default, label: ke, link: "/i/premium", id: "premium_hub" },
-                        M = { label: ue, link: "/logout", icon: P.default, id: "logout_overflow_item" },
-                        xe = { icon: B.default, label: be, link: (0, E.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), id: "twitter_ads_item" },
+                        E = { label: ue, link: "/logout", icon: P.default, id: "logout_overflow_item" },
+                        Re = { icon: B.default, label: be, link: (0, T.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), id: "twitter_ads_item" },
                         Le = r.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
                         Fe = { icon: Q.default, label: me, link: Le ? "/i/monetization" : "/settings/monetization", id: "monetization" },
                         Ke = { icon: I.default, label: pe, link: "/settings", id: "settings_overflow_item" },
-                        Ae = { label: r.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? Re : ve, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
-                        ze = { label: ve, id: "verified_organization_dashboard_item", link: "/i/verified", icon: W.default },
+                        ze = { label: r.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? xe : ve, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
+                        Ae = { label: ve, id: "verified_organization_dashboard_item", link: "/i/verified", icon: W.default },
                         Ne = { label: ge, id: "create_space_item", link: "/i/spaces/start", icon: L.default },
                         $e = t ? { label: he, id: "communities_item", link: `/${t}/communities`, icon: G.default } : void 0,
-                        Ue = (0, ae.eY)(n),
-                        He = r.isTrue("spaces_conference_enabled") || !!Ue,
-                        qe = { label: "Conferences", id: "conferences_item", link: "/i/conferences", icon: X.default },
-                        je = { label: Ie, id: "jobs_item", link: "/jobs", icon: Y.default },
+                        He = (0, ae.eY)(n),
+                        Ue = r.isTrue("spaces_conference_enabled") || !!He,
+                        je = { label: "Conferences", id: "conferences_item", link: "/i/conferences", icon: X.default },
+                        qe = { label: Ie, id: "jobs_item", link: "/jobs", icon: Y.default },
                         Ve = o.isAnyPremiumSubscriber(),
                         Oe = Ve,
                         Pe = r.isTrue("payments_enabled"),
@@ -153,7 +153,7 @@
                         We = r.isTrue("blue_business_vo_nav_for_legacy_verified"),
                         Ge = o.isVerifiedOrg(),
                         Xe = r.isTrue("tweet_awards_web_coin_purchase_enabled"),
-                        Ye = (0, C.Lz)(n),
+                        Ye = (0, M.Lz)(n),
                         Je = r.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Ye,
                         en = i.length,
                         nn = !Ve && r.isTrue("rweb_analytics_nav_item_enabled"),
@@ -182,37 +182,37 @@
                         g,
                         _,
                         Qe ? p : void 0,
-                        We ? (Ge ? ze : Ae) : void 0,
+                        We ? (Ge ? Ae : ze) : void 0,
                         Xe ? y : void 0,
                         Je ? b : void 0,
                         a || en ? h : void 0,
                         nn ? { icon: V.default, label: De, link: "/i/account_analytics", id: "analytics" } : void 0,
                         Fe,
-                        xe,
-                        tn ? je : void 0,
-                        He ? qe : void 0,
+                        Re,
+                        tn ? qe : void 0,
+                        Ue ? je : void 0,
                         rn ? Ne : void 0,
                         Ke,
-                        M,
+                        E,
                         on ? $e : void 0,
                         void 0,
                         sn ? v : void 0,
                     ].filter(Boolean);
                 }),
                 Le = (0, r.cn)(""),
-                Fe = (0, r.cn)((e) => [...e(Ae), ...e(ze), ...e(je), ...e(Pe)]),
+                Fe = (0, r.cn)((e) => [...e(ze), ...e(Ae), ...e(qe), ...e(Pe)]),
                 Ke = (0, r.cn)((e) =>
                     e(Le)
                         .split(/ +/g)
                         .filter(Boolean)
                         .map((e) => Ne(e.toLowerCase())),
                 ),
-                Ae = (0, r.cn)((e) => {
-                    const n = e(xe),
+                ze = (0, r.cn)((e) => {
+                    const n = e(Re),
                         t = e(Ke);
                     return (0, D.Z)(n, ({ icon: e, id: n, label: i, link: l }) => (t.every((e) => Ne(i.toLowerCase()).includes(e)) ? { id: `nav-${n}`, label: i, path: l, Icon: e } : void 0));
                 }),
-                ze = (0, r.cn)((e) => {
+                Ae = (0, r.cn)((e) => {
                     const n = e($e),
                         t = e(Ke);
                     return (0, D.Z)(n, (e) => {
@@ -226,7 +226,7 @@
                 return e.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             }
             const $e = (0, r.cn)((e) => {
-                    const n = e(Ue);
+                    const n = e(He);
                     return (0, D.Z)(n, (e) => {
                         if (e.isSearchable)
                             return {
@@ -240,22 +240,22 @@
                             };
                     });
                 }),
-                Ue = (0, r.cn)((e) => {
-                    const n = e(T.qc).getState(),
-                        t = (0, C.Lz)(n),
-                        i = (0, C.vd)(n),
-                        l = e(T.f0),
-                        a = e(T.TD);
-                    return (0, M.VA)({ isDelegate: t, delegateRole: i, featureSwitches: l, userClaims: a });
+                He = (0, r.cn)((e) => {
+                    const n = e(C.qc).getState(),
+                        t = (0, M.Lz)(n),
+                        i = (0, M.vd)(n),
+                        l = e(C.f0),
+                        a = e(C.TD);
+                    return (0, E.VA)({ isDelegate: t, delegateRole: i, featureSwitches: l, userClaims: a });
                 });
-            const He = (0, g.K9)((e) =>
+            const Ue = (0, g.K9)((e) =>
                     Promise.all([t.e("modules.audio-6107ac1a"), t.e("modules.audio-b953418a"), t.e("modules.audio-7c51e6a7"), t.e("modules.audio-04db59e9"), t.e("modules.audio-76583d6c"), t.e("modules.audio-b7a8a5fb"), t.e("modules.audio-51f6e793"), t.e("modules.audio-e019dbda"), t.e("modules.audio-262c94d4"), t.e("modules.audio-c6fe4ea4"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), t.e("ondemand.devItems")])
                         .then(t.bind(t, 825630))
                         .then(({ devItemsAtom: e }) => e),
                 ),
-                qe = (0, r.cn)((e) => (e(He), e(e(He.resolved) ?? (0, r.cn)(() => [])))),
-                je =
-                    ((Ve = () => qe),
+                je = (0, r.cn)((e) => (e(Ue), e(e(Ue.resolved) ?? (0, r.cn)(() => [])))),
+                qe =
+                    ((Ve = () => je),
                     (0, r.cn)((e) => {
                         const n = e(Ve()),
                             t = e(Ke);
@@ -489,7 +489,7 @@
                 }, [e.affiliations?.affiliated_account_ids_results, n]);
             }
         },
-        452693: (e, n, t) => {
+        297896: (e, n, t) => {
             t.r(n), t.d(n, { default: () => s });
             var i = t(202784),
                 l = t(890601),
@@ -497,7 +497,20 @@
                 r = t(347101);
             const o = (e = {}) => {
                 const { direction: n } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: n });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: n });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const s = o;
+        },
+        256260: (e, n, t) => {
+            t.r(n), t.d(n, { default: () => s });
+            var i = t(202784),
+                l = t(890601),
+                a = t(783427),
+                r = t(347101);
+            const o = (e = {}) => {
+                const { direction: n } = (0, a.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M10 10c2.209 0 4-1.79 4-4s-1.791-4-4-4-4 1.79-4 4 1.791 4 4 4zm0-6c1.105 0 2 .9 2 2s-.895 2-2 2-2-.9-2-2 .895-2 2-2zm5.863 9.44C14.373 11.85 12.352 11 10 11s-4.373.85-5.863 2.44c-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46zM5.596 14.81C6.682 13.65 8.162 13 10 13s3.318.65 4.404 1.81c.921.978 1.602 2.388 1.939 4.19H3.657c.337-1.802 1.018-3.212 1.939-4.19zM24 10h-4.583l1.79 1.79-1.414 1.42-3.5-3.5-.707-.71.707-.71 3.5-3.5 1.414 1.42L19.417 8H24v2z" })) }, { writingDirection: n });
             };
             o.metadata = { width: 24, height: 24 };
             const s = o;
@@ -520,4 +533,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.c20158ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.ed12faba.js.map

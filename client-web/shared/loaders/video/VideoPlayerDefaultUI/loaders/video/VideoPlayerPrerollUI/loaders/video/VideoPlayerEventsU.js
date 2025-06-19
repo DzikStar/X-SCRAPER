@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"],
+    ["shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU", "icons/IconMediaCollapse-js"],
     {
         420922: (e, t, s) => {
             s.d(t, { Z: () => c });
@@ -168,7 +168,7 @@
             (f.Context = p), (f.ObserverContext = m);
         },
         591354: (e, t, s) => {
-            s.d(t, { Be: () => y, C5: () => m, Cf: () => d, DD: () => b, DP: () => _, I_: () => h, L7: () => c, LH: () => r, PN: () => v, Pr: () => n, SH: () => a, WB: () => g, _3: () => l, bl: () => C, cB: () => f, iX: () => u, st: () => p });
+            s.d(t, { Be: () => y, C5: () => m, Cf: () => d, DD: () => b, DP: () => g, I_: () => h, L7: () => c, LH: () => r, PN: () => v, Pr: () => n, SH: () => a, WB: () => _, _3: () => l, bl: () => C, cB: () => f, iX: () => u, st: () => p });
             var o = s(111677),
                 i = s.n(o);
             const n = i().eeb64451,
@@ -185,9 +185,9 @@
                 v = i().j0c6772a,
                 b = i().f73003aa,
                 y = i().b3112b8a,
-                _ = i().h6333ad0,
+                g = i().h6333ad0,
                 C = i().c59da417,
-                g = i().c3c147cf;
+                _ = i().c3c147cf;
         },
         896988: (e, t, s) => {
             s.d(t, { T: () => C, Z: () => E });
@@ -207,9 +207,9 @@
                 v = r().j190bf1a,
                 b = r().f6dc9146,
                 y = r().d30c74fe,
-                _ = r().c9a642fa,
+                g = r().c9a642fa,
                 C = Object.freeze({ LIVE_BROADCAST: "liveBroadcast", REPLAY_BROADCAST: "replayBroadcast", VOD: "vod", GIF: "gif", SLATE: "slate" });
-            class g extends o.Component {
+            class _ extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handlePlayPress = () => {
@@ -221,7 +221,7 @@
                                 { isLive: s, mediaType: n } = this.props,
                                 r = n === C.VOD,
                                 a = e && t;
-                            return o.createElement(i.Z, { style: w.bottomRow }, this._renderMediaLabel({ isVod: r, isLive: s, withRemaining: a }), o.createElement(i.Z, { style: w.right }, o.createElement(u.Z, { accessibilityLabelIcon: y, accessibilityLabelSlider: _, isMuted: this.props.playerState.isMuted, onMuteToggle: this._handleMuteToggle, onSliderChange: this._handleSliderChange, volumePercent: 100 * this.props.playerState.volume })));
+                            return o.createElement(i.Z, { style: w.bottomRow }, this._renderMediaLabel({ isVod: r, isLive: s, withRemaining: a }), o.createElement(i.Z, { style: w.right }, o.createElement(u.Z, { accessibilityLabelIcon: y, accessibilityLabelSlider: g, isMuted: this.props.playerState.isMuted, onMuteToggle: this._handleMuteToggle, onSliderChange: this._handleSliderChange, volumePercent: 100 * this.props.playerState.volume })));
                         }),
                         (this._renderMediaLabel = ({ isLive: e, isVod: t, withRemaining: s }) => (e ? o.createElement(l.Z, { align: "left", type: "live" }, v) : o.createElement(p.o, { periodic: !0 }, ({ playerState: e }) => this._renderPlaybackTime({ isVod: t, withRemaining: s, playerState: e })))),
                         (this._renderPlaybackTime = ({ isVod: e, playerState: t, withRemaining: s }) => {
@@ -258,7 +258,7 @@
                 }
             }
             const w = h.default.create((e) => ({ overlay: { ...h.default.absoluteFillObject, flexGrow: 1 }, playButtonContainer: { alignItems: "center", flexGrow: 1, justifyContent: "center" }, bottomRow: { position: "absolute", bottom: 0, flexGrow: 1, zIndex: 1, paddingStart: e.spaces.space12, paddingEnd: e.spaces.space4, width: "100%" }, controlsContainer: { alignItems: "center", justifyContent: "space-between", flexDirection: "row", flexGrow: 1, flexShrink: 0 }, left: { alignItems: "center", flexDirection: "row", flexGrow: 1, justifyContent: "flex-start" }, right: { alignItems: "center", flexDirection: "row", flexGrow: 1, justifyContent: "flex-end" }, totalTime: { paddingHorizontal: e.spaces.space4 } })),
-                E = g;
+                E = _;
         },
         916692: (e, t, s) => {
             s.d(t, { Z: () => d });
@@ -369,6 +369,21 @@
                 }
             };
         },
+        647174: (e, t, s) => {
+            s.r(t), s.d(t, { default: () => c });
+            var o = s(202784),
+                i = s(890601),
+                n = s(783427),
+                r = s(717683),
+                a = s(347101);
+            const l = (e = {}) => {
+                const t = o.useContext(r.Z),
+                    { direction: s } = (0, n.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" })) }, { writingDirection: s });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU.b45cadea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU.d82f9c6a.js.map

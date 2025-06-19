@@ -2495,41 +2495,6 @@
                     return "Thema " + e.topicName;
                 }),
                 t("ic6aa5f4", "Authentifiziert."),
-                t("c02e7e3c", "Ladevorgang läuft..."),
-                t("c5453f28", "Round of 64"),
-                t("eb256a86", "Round of 32"),
-                t("g77adc66", "Sweet Sixteen"),
-                t("a6d2520c", "Sweet 16"),
-                t("g5b63eb6", "Elite Eight"),
-                t("d8bf2890", "Elite 8"),
-                t("f9d3d6f2", "Final Four"),
-                t("bda24f7c", "Final 4"),
-                t("i5043440", "National Championship"),
-                t("fcb16026", "Championship"),
-                t("e9c89ee8", "East"),
-                t("h259fd86", "West"),
-                t("a7b2545a", "South"),
-                t("fdf7819a", "Midwest"),
-                t("i899e9b0", "Turnierplan absenden"),
-                t("c5b04394", "Auswahl anzeigen"),
-                t("h836bbae", "Turnier anzeigen"),
-                t("e1059d6c", "1. Runde"),
-                t("b1602be4", "2. Runde"),
-                t("ef7bc2c0", "20.–21. März"),
-                t("h726aaf2", "22.–23. März"),
-                t("ee7cd198", "27.–28. März"),
-                t("fed91402", "29.–30. März"),
-                t("aba0a450", "5. April"),
-                t("jdfba2dc", "7. April"),
-                t("b7c6bc12", "TBD"),
-                t("c373612c", "Auswahl:"),
-                t("e8b3cab9", function (e) {
-                    return "" + e.winner;
-                }),
-                t("j5db9ddd", " zu "),
-                t("a638617d", function (e) {
-                    return "" + e.loser;
-                }),
                 t("j4c40da4", "Jetzt senden"),
                 t("b23688c8", "Timer rückgängig machen"),
                 t("cca5d499", function (e) {
@@ -2975,8 +2940,8 @@
                 t("a7de64de", "Anzeigen-Info"),
                 t("jb0a4c36", "Blog"),
                 t("ce6d095a", "Karriere"),
-                t("e0adec82", "Markenressourcen");
-            t("df1b7550", "Marketing"),
+                t("e0adec82", "Markenressourcen"),
+                t("df1b7550", "Marketing"),
                 t("he258678", "X für Unternehmen"),
                 t("c6f58084", "Entwickler"),
                 t("d83f18d2", "Verzeichnis"),
@@ -3010,8 +2975,8 @@
                 }),
                 t("d6d9aab6", "Lesezeichen hinzufügen"),
                 t("bb89cf46", "Lesezeichen entfernen"),
-                t("a739d4ba", "Zum Lesezeichenordner hinzufügen"),
-                t("d5270434", "Beenden"),
+                t("a739d4ba", "Zum Lesezeichenordner hinzufügen");
+            t("d5270434", "Beenden"),
                 t("ac85c6b2", "Beim Laden dieses Bildes ist ein Fehler aufgetreten."),
                 t("b327c12a", "Bild"),
                 t("ic76bdf0", "Mit Grok nachahmen"),
@@ -3887,8 +3852,8 @@
                 t("a2bf8b8a", "Zuhörer*in werden"),
                 t("caa8d928", "Rauschunterdrückung ein-/ausschalten"),
                 t("b5d88f0c", "Nur Beschäftigte"),
-                t("c855ab8e", "Nur Abonnent*innen");
-            t("ddeb0a3c", "Hier ist die Community. Magst du die Leute? Sieh's dir mal an."),
+                t("c855ab8e", "Nur Abonnent*innen"),
+                t("ddeb0a3c", "Hier ist die Community. Magst du die Leute? Sieh's dir mal an."),
                 t("e111f531", function (e) {
                     return e.count + " ha" + r(e.count, "t", "ben") + " zugehört";
                 }),
@@ -3936,8 +3901,8 @@
                 t("f2333850", "Mit Leuten außerhalb von X teilen"),
                 t("cddb8097", "Mehr erfahren"),
                 t("f77997b0", "Co-Host"),
-                t("i48f4ed8", "Sprecher"),
-                t("a77c8e02", "Zuhörer"),
+                t("i48f4ed8", "Sprecher");
+            t("a77c8e02", "Zuhörer"),
                 t("bdfa93eb", function (e) {
                     return "Geteilt von " + e.name;
                 }),
@@ -4207,6 +4172,7 @@
                 t("f794af9a", "Spaßmodus"),
                 t("eccf9fea", "Normaler Modus"),
                 t("j22655f2", "Stell eine beliebige Frage"),
+                t("c02e7e3c", "Ladevorgang läuft..."),
                 t("h0681e3e", "Unterhalte dich mit Grok, unserem KI-Assistenten"),
                 t("d593fd78", "Er kann deine Fragen beantworten, X durchsuchen und Bilder generieren"),
                 t("d0205a24", "Überprüfe die Fakten"),
@@ -4291,7 +4257,6 @@
                 t("afa2a58e", "Alle Posts anzeigen"),
                 t("fc83e7e2", "Alle Nutzer*innen anzeigen"),
                 t("df601d92", "Relevante Nutzer*innen"),
-                t("b001fa12", "Quellabfrage"),
                 t("db6c20cf", function (e) {
                     return "Alle anzeigen (" + e.count + ")";
                 }),
@@ -4374,7 +4339,7 @@
                 t("g3ce0132", "Denkprozess dauerte"),
                 t("f8007364", "Für Details erweitern"),
                 t("ca53f780", "Details ausblenden"),
-                t("b52484b6", "Suchen…"),
+                t("e6d51c62", "Searching"),
                 t("ib1c5475", function (e) {
                     return "Denkprozess dauerte " + e.minutes + " Min. " + e.seconds + " Sek.";
                 }),
@@ -4392,6 +4357,7 @@
                 t("a3186bff", function (e) {
                     return e.count + " Webseite" + r(e.count, "", "n");
                 }),
+                t("b52484b6", "Suchen…"),
                 t("f4146dda", "Welche Antwort bevorzugst du?"),
                 t("a2c2be32", "Das trägt dazu bei, Grok zu verbessern."),
                 t("g01599b6", "Antwort 1"),
@@ -4929,8 +4895,8 @@
                 t("b649d8cc", "Nur Abonnent*innen"),
                 t("j9282130", "Miniaturansicht für Live-Video"),
                 t("g629b8b0", "Zeitabschaltung"),
-                t("eb87323c", "Zeigt Statistikdaten für den ausgewählten Zeitraum seit dem Livestream an.");
-            t("i6a75722", "Zeitbereich"),
+                t("eb87323c", "Zeigt Statistikdaten für den ausgewählten Zeitraum seit dem Livestream an."),
+                t("i6a75722", "Zeitbereich"),
                 t("c602f5b8", "Gesamtbetrag"),
                 t("b35e68ae", "Gesamtzahl Teilnehmer*innen"),
                 t("h78ee79a", "Gesamtanzeige Aufzeichnung"),
@@ -4959,8 +4925,8 @@
                 t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
                 t("if2909ba", "Abspielzeit"),
                 t("i0e5bf4c", "Deine Videos"),
-                t("ed99baea", "Vorzeitiger Beta-Zugriff"),
-                t("gf898b70", "Erweiterte Suche"),
+                t("ed99baea", "Vorzeitiger Beta-Zugriff");
+            t("gf898b70", "Erweiterte Suche"),
                 t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
@@ -5881,8 +5847,8 @@
                 t("fb59415e", "Damit eine Anmerkung öffentlich als Kontext zum Post angezeigt wird, muss sie von genügend Leuten mit unterschiedlichen Sichtweisen als hilfreich bewertet werden. Dieser Ansatz wirkt Voreingenommenheit und Manipulation entgegen und hilft, Anmerkungen zu finden, die für viele Leute hilfreich sind."),
                 t("f9a44022", "Nicht X, das Unternehmen, entscheidet, was angezeigt wird: die Mitwirkenden tun es"),
                 t("gdf4fbb2", "Das Unternehmen X verfasst, bewertet oder moderiert die Anmerkungen nicht (es sei denn, sie verstoßen gegen die X Regeln). Wir überlassen den Mitwirkenden zusammen die Entscheidung. Das halten wir für eine faire und effektive Methode, Kontext zu bieten, durch den Leute besser informiert werden."),
-                t("cc720e6a", "Kollektive Anmerkungen basiert auf Datentransparenz");
-            t("j2fcd33a", "Daten umfassen Beiträge bis"),
+                t("cc720e6a", "Kollektive Anmerkungen basiert auf Datentransparenz"),
+                t("j2fcd33a", "Daten umfassen Beiträge bis"),
                 t("d4a6b322", "Alle Beiträge zu Kollektive Anmerkungen werden hier täglich veröffentlicht, sodass Mitwirkende freien Zugang haben und Daten analysieren, Probleme erkennen und Möglichkeiten zur Verbesserung von Kollektive Anmerkungen finden können. Wir freuen uns darauf, gemeinsam mit euch zu lernen."),
                 t("c359263a", "Lass dir erläutern, wie du Daten aus Kollektive Anmerkungen nutzt und analysierst "),
                 t("b8a27fe2", "in unserem Leitfaden"),
@@ -5915,8 +5881,8 @@
                 t("e41c9b4f", function (e) {
                     return "Gespeichert in " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Ordner löschen"),
-                t("f4ea967a", "Ordner wurde gelöscht"),
+                t("h18f86a4", "Ordner löschen");
+            t("f4ea967a", "Ordner wurde gelöscht"),
                 t("b670aa62", "Ordnername"),
                 t("aece5462", "Ordnername wurde erfolgreich aktualisiert"),
                 t("e3299b94", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu aktualisieren."),
@@ -6887,8 +6853,8 @@
                 t("b36cd50e", "Gib das primäre Team an, für das erfolgreiche Kandidat*innen arbeiten werden."),
                 t("d3a427ce", "Gib an, wie viel Erfahrung erforderlich ist."),
                 t("i7174442", "Jobbeschreibung"),
-                t("fef0cf02", "Gib eine detaillierte Jobbeschreibung an. Umschreibe die wichtigsten Zuständigkeiten und Qualifikationen, damit Kandidat*innen ein klares Verständnis der Rolle entwickeln können.");
-            t("b7800bec", "Beschreibe den Job in höchstens 200 Zeichen. Wird in Posts und Empfehlungen und in der Suche angezeigt."),
+                t("fef0cf02", "Gib eine detaillierte Jobbeschreibung an. Umschreibe die wichtigsten Zuständigkeiten und Qualifikationen, damit Kandidat*innen ein klares Verständnis der Rolle entwickeln können."),
+                t("b7800bec", "Beschreibe den Job in höchstens 200 Zeichen. Wird in Posts und Empfehlungen und in der Suche angezeigt."),
                 t("a5244ece", "Bewerbungs-URL (erforderlich)"),
                 t("g2b553f6", "Gib die öffentliche URL ein, unter der sich Kandidat*innen für diesen Job bewerben können."),
                 t("c2e77608", "Position (erforderlich)"),
@@ -6921,8 +6887,8 @@
                 t("c924ad84", "Videos weiter abspielen"),
                 t("de750a3c", "Nutzung selbst bei gesperrtem Handy"),
                 t("he5e87c4", "Booste deine Antworten"),
-                t("g64a60ba", "Etwas höhere Priorität, wenn du auf Posts antwortest"),
-                t("a7ee832a", "Korrigiere bis zu 60 Minuten lang Tippfehler und andere Irrtümer"),
+                t("g64a60ba", "Etwas höhere Priorität, wenn du auf Posts antwortest");
+            t("a7ee832a", "Korrigiere bis zu 60 Minuten lang Tippfehler und andere Irrtümer"),
                 t("fdd77a34", "Erstelle längere Posts"),
                 t("j6d26a7a", "Schreib so viel, wie du teilen möchtest"),
                 t("c4fd68da", "Passe deine Nutzung an"),
@@ -7863,7 +7829,45 @@
                 t("cfcac293", function (e) {
                     return "Schenken und " + e.price + " zahlen";
                 }),
-                t("d7a73450", "Stufe");
+                t("d7a73450", "Stufe"),
+                t("hbd2c24e", "Dieser Account kommt zurzeit nicht für Geschenke in Frage."),
+                t("f3fddc98", "Geschäftsbedingungen für Käufer*innen"),
+                t("cff9c889", "Mehr erfahren"),
+                t("c65dda96", "Dein Geschenk wurde gesendet."),
+                t("f6e2a407", function (e) {
+                    return "Alle dürfen dein Abonnementabzeichen sehen, wenn du auf Posts von @" + e.screenName + " antwortest";
+                }),
+                t("j8dedddd", function (e) {
+                    return "Wenn du das deaktivierst, sehen @" + e.screenName + " und seine/ihre Abonnent*innen dein Abzeichen weiterhin, wenn du auf Posts antwortest, die nur für Abonnent*innen von @" + e.screenName + " sichtbar sind. @" + e.screenName + " sieht dein Abzeichen immer.";
+                }),
+                t("c8a513f6", "Abonnement kündigen"),
+                t("ea000ec8", "Hast du dein Abonnement bereits abbestellt?"),
+                t("d7b8387e", "Wenn du bereits gekündigt hast, gibt es nichts mehr zu tun. Dein Abonnement läuft am Ende des Abrechnungszeitraums automatisch aus."),
+                t("f4166d9a", "Du möchtest dein Abonnement kündigen?"),
+                t("b74ff5fc", "Wenn du kündigst, läuft dein Abonnement automatisch am Ende des Abrechnungszeitraums aus."),
+                t("ee9efbc8", "Weiter zur Kündigung"),
+                t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
+                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen."),
+                t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
+                t("i5f14be7", function (e) {
+                    return "Willkommen zurück, " + e.displayName;
+                }),
+                t("a76d58ba", "Statistiken zur Werbung"),
+                t("eccd0e1a", "Statistiken für die Organisation"),
+                t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
+                t("eb603ffc", "Mit einem Upgrade kannst du dein Netzwerk als verbundene Accounts einrichten und aggregierte Statistiken anzeigen."),
+                t("gf67aae4", "Upgrade auf Vollzugriff"),
+                t("h75e3618", "Organisation einschließen"),
+                t("h24a8862", "Über dieses Kontrollkästchen"),
+                t("c29e3a88", "Verbundene Accounts auswählen"),
+                t("j8318d57", function (e) {
+                    return e.number + " verbundene" + r(e.number, "r Account", " Accounts");
+                }),
+                t("bf809ec0", "Verbundene Accounts auswählen"),
+                t("b719e224", "Keine Ergebnisse"),
+                t("c9938100", "Suchergebnisse"),
+                t("d1a35ec6", "Accounts hinzufügen"),
+                t("b437adda", "Upgrade auf „bezahlt“");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7902,47 +7906,9 @@
                     d(e, n)
                 );
             }
-            t("hbd2c24e", "Dieser Account kommt zurzeit nicht für Geschenke in Frage."),
-                t("f3fddc98", "Geschäftsbedingungen für Käufer*innen"),
-                t("cff9c889", "Mehr erfahren"),
-                t("c65dda96", "Dein Geschenk wurde gesendet."),
-                t("f6e2a407", function (e) {
-                    return "Alle dürfen dein Abonnementabzeichen sehen, wenn du auf Posts von @" + e.screenName + " antwortest";
-                }),
-                t("j8dedddd", function (e) {
-                    return "Wenn du das deaktivierst, sehen @" + e.screenName + " und seine/ihre Abonnent*innen dein Abzeichen weiterhin, wenn du auf Posts antwortest, die nur für Abonnent*innen von @" + e.screenName + " sichtbar sind. @" + e.screenName + " sieht dein Abzeichen immer.";
-                }),
-                t("c8a513f6", "Abonnement kündigen"),
-                t("ea000ec8", "Hast du dein Abonnement bereits abbestellt?"),
-                t("d7b8387e", "Wenn du bereits gekündigt hast, gibt es nichts mehr zu tun. Dein Abonnement läuft am Ende des Abrechnungszeitraums automatisch aus."),
-                t("f4166d9a", "Du möchtest dein Abonnement kündigen?"),
-                t("b74ff5fc", "Wenn du kündigst, läuft dein Abonnement automatisch am Ende des Abrechnungszeitraums aus."),
-                t("ee9efbc8", "Weiter zur Kündigung"),
-                t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
-                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen."),
-                t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
-                t("i5f14be7", function (e) {
-                    return "Willkommen zurück, " + e.displayName;
-                }),
-                t("a76d58ba", "Statistiken zur Werbung"),
-                t("eccd0e1a", "Statistiken für die Organisation"),
-                t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
-                t("eb603ffc", "Mit einem Upgrade kannst du dein Netzwerk als verbundene Accounts einrichten und aggregierte Statistiken anzeigen."),
-                t("gf67aae4", "Upgrade auf Vollzugriff"),
-                t("h75e3618", "Organisation einschließen"),
-                t("h24a8862", "Über dieses Kontrollkästchen"),
-                t("c29e3a88", "Verbundene Accounts auswählen"),
-                t("j8318d57", function (e) {
-                    return e.number + " verbundene" + r(e.number, "r Account", " Accounts");
-                }),
-                t("bf809ec0", "Verbundene Accounts auswählen"),
-                t("b719e224", "Keine Ergebnisse"),
-                t("c9938100", "Suchergebnisse"),
-                t("d1a35ec6", "Accounts hinzufügen"),
-                t("b437adda", "Upgrade auf „bezahlt“"),
-                t("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                }),
+            t("f1f6c88b", function (e) {
+                return "Accounts (" + e.count + ")";
+            }),
                 t("b02156b8", "Einladungen"),
                 t("gd67d29b", function (e) {
                     return "Einladungen (" + e.count + ")";
@@ -8895,8 +8861,8 @@
                 t("b3160a69", function (e) {
                     return e.volumePercent + " Prozent";
                 }),
-                t("fb236728", "Pause");
-            t("e9bd453e", "Erneut abspielen"),
+                t("fb236728", "Pause"),
+                t("e9bd453e", "Erneut abspielen"),
                 t("d46b00b0", "Zur Liveposition springen"),
                 t("ec8ab8b4", "Stummschalten"),
                 t("b8b6344a", "Stummschaltung aufheben"),
@@ -8943,8 +8909,8 @@
                 t("a7bf9962", "Video herunterladen"),
                 t("ccc97152", "Wiedergabegeschwindigkeit"),
                 t("h531ade0", "Videoqualität"),
-                t("e8b5757c", "0,25 x"),
-                t("e7e954de", "0,5 x"),
+                t("e8b5757c", "0,25 x");
+            t("e7e954de", "0,5 x"),
                 t("g07ffe66", "0,75 x"),
                 t("d8bede9e", "1 x"),
                 t("j41845c8", "1,25 x"),
@@ -10505,12 +10471,6 @@
                             key: "ff2f533f",
                             get: function () {
                                 return ["Indem du auf „Post sponsern“ klickst, stimmst du den ", " zu."];
-                            },
-                        },
-                        {
-                            key: "b74b73ad",
-                            get: function () {
-                                return ["", " ", " ", "", ""];
                             },
                         },
                         {
@@ -13387,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.73f459fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.c84ee1ca.js.map

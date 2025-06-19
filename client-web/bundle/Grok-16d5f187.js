@@ -2,12 +2,12 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Grok-16d5f187"],
     {
-        226247: (e, a, n) => {
-            n.d(a, { e: () => w });
-            var o = n(202784),
-                t = n(325686),
-                d = n(67369),
-                r = n(731708),
+        226247: (e, t, n) => {
+            n.d(t, { e: () => w });
+            var a = n(202784),
+                o = n(325686),
+                r = n(67369),
+                d = n(731708),
                 l = n(721266),
                 s = n(992942),
                 i = n(154003),
@@ -18,19 +18,19 @@
                 m = n(480241);
             const h = b().e68b09b4,
                 g = { label: h },
-                w = ({ button: e, image: a, onRemove: n, text: c, title: u }) => {
-                    const b = (0, d.yu)();
-                    return o.createElement(t.Z, { style: [D.container, b ? { zoom: 0.8 } : void 0] }, o.createElement(t.Z, { style: D.content }, o.createElement(t.Z, { style: D.textContainer }, o.createElement(r.ZP, { size: "title4", weight: "medium" }, u), o.createElement(l.Z, { size: "space4" }), o.createElement(r.ZP, { color: "gray700" }, c)), e ? o.createElement(t.Z, { style: D.buttonContainer }, e) : null), a ? o.createElement(t.Z, { style: D.imageWrapper }, a) : null, o.createElement(s.Z, { resizeMode: "cover", source: { uri: m }, style: D.bottomGrid }), n ? o.createElement(i.ZP, { "aria-label": h, hoverLabel: g, icon: o.createElement(p.default, null), onClick: n, size: "xSmall", style: D.closeButton, type: "onMediaDominantColorFilled" }) : null);
+                w = ({ button: e, image: t, onRemove: n, text: c, title: u }) => {
+                    const b = (0, r.yu)();
+                    return a.createElement(o.Z, { style: [f.container, b ? { zoom: 0.8 } : void 0] }, a.createElement(o.Z, { style: f.content }, a.createElement(o.Z, { style: f.textContainer }, a.createElement(d.ZP, { size: "title4", weight: "medium" }, u), a.createElement(l.Z, { size: "space4" }), a.createElement(d.ZP, { color: "gray700" }, c)), e ? a.createElement(o.Z, { style: f.buttonContainer }, e) : null), t ? a.createElement(o.Z, { style: f.imageWrapper }, t) : null, a.createElement(s.Z, { resizeMode: "cover", source: { uri: m }, style: f.bottomGrid }), n ? a.createElement(i.ZP, { "aria-label": h, hoverLabel: g, icon: a.createElement(p.default, null), onClick: n, size: "xSmall", style: f.closeButton, type: "onMediaDominantColorFilled" }) : null);
                 },
-                D = c.default.create((e) => ({ container: { overflow: "hidden", borderRadius: e.borderRadii.large, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, paddingHorizontal: e.spaces.space20, paddingVertical: e.spaces.space20, gap: e.spaces.space20, position: "relative", flexDirection: "row", alignItems: "center" }, content: { position: "relative", gap: e.spaces.space12, boxSizing: "border-box", flex: 1, zIndex: 100 }, textContainer: { flex: 1, gap: e.spaces.space4 }, imageWrapper: { position: "relative", paddingVertical: e.spaces.space4, zIndex: 100 }, closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 200 }, bottomGrid: { width: "100%", opacity: "light" === e.paletteName ? 0.4 : "dark" === e.paletteName ? 0.5 : 1, height: 50, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, buttonContainer: { marginTop: e.spaces.space12, position: "relative", zIndex: 100, alignItems: "flex-start" } }));
+                f = c.default.create((e) => ({ container: { overflow: "hidden", borderRadius: e.borderRadii.large, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, paddingHorizontal: e.spaces.space20, paddingVertical: e.spaces.space20, gap: e.spaces.space20, position: "relative", flexDirection: "row", alignItems: "center" }, content: { position: "relative", gap: e.spaces.space12, boxSizing: "border-box", flex: 1, zIndex: 100 }, textContainer: { flex: 1, gap: e.spaces.space4 }, imageWrapper: { position: "relative", paddingVertical: e.spaces.space4, zIndex: 100 }, closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 200 }, bottomGrid: { width: "100%", opacity: "light" === e.paletteName ? 0.4 : "dark" === e.paletteName ? 0.5 : 1, height: 50, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, buttonContainer: { marginTop: e.spaces.space12, position: "relative", zIndex: 100, alignItems: "flex-start" } }));
         },
-        246020: (e, a, n) => {
-            n.d(a, { Z: () => Ce });
+        246020: (e, t, n) => {
+            n.d(t, { Z: () => xe });
             n(543673), n(240753), n(128399);
-            var o = n(202784),
-                t = n(565058),
-                d = n(400752),
-                r = n(325686),
+            var a = n(202784),
+                o = n(565058),
+                r = n(400752),
+                d = n(325686),
                 l = n(726426),
                 s = n.n(l),
                 i = n(167630),
@@ -42,21 +42,21 @@
                 h = n(290402),
                 g = n(358493),
                 w = n(952793),
-                D = n(655352),
-                f = n(725516),
-                y = n(125363),
-                k = n(175856),
-                M = n(389071),
-                E = n(69966),
-                C = n(327597),
-                A = n(189953),
-                Z = n(601576),
-                v = n(919022),
-                x = n(312771),
-                I = n(464023),
-                P = n(574305),
-                S = n(654917),
-                N = n(354851),
+                f = n(655352),
+                y = n(725516),
+                k = n(125363),
+                E = n(175856),
+                C = n(389071),
+                Z = n(69966),
+                x = n(327597),
+                v = n(189953),
+                A = n(601576),
+                M = n(919022),
+                D = n(312771),
+                S = n(464023),
+                I = n(574305),
+                N = n(654917),
+                P = n(354851),
                 R = n(222656),
                 B = n(305442),
                 G = n(107267),
@@ -75,145 +75,145 @@
                 Q = b().f1a8218a,
                 q = b().bcbf5b6e,
                 $ = b().j7b5c844,
-                J = b().c3d89aca,
-                X = b().c9f7c196,
+                X = b().c3d89aca,
+                J = b().c9f7c196,
                 Y = ({ onContinue: e }) => {
-                    const a = (0, W.LX)();
-                    return o.createElement(r.Z, { style: ee.legalText }, o.createElement(r.Z, { style: ee.content }, o.createElement(r.Z, { style: ee.section }, o.createElement(O.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(_.ZP, { style: ee.title }, F), o.createElement(_.ZP, { style: ee.description }, V))), o.createElement(r.Z, { style: ee.section }, o.createElement(K.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(_.ZP, { style: ee.title }, U), o.createElement(_.ZP, { style: ee.description }, Q, " ", o.createElement(_.ZP, { link: "https://help.x.com/using-x/about-grok" }, X)))), o.createElement(r.Z, { style: ee.section }, o.createElement(j.default, { style: ee.titleIcon }), o.createElement(r.Z, { style: ee.sectionContent }, o.createElement(_.ZP, { style: ee.title }, q), o.createElement(_.ZP, { style: ee.description }, $, " ", o.createElement(_.ZP, { link: "https://help.x.com/using-x/about-grok" }, X))))), a ? o.createElement(L.Z, { size: "space48" }) : null, o.createElement(r.Z, { style: [ee.continueButtonContainer, a ? ee.sticky : void 0] }, o.createElement(T.ZP, { onPress: e, size: "large", style: ee.continueButton, type: "primaryFilled" }, J)));
+                    const t = (0, W.LX)();
+                    return a.createElement(d.Z, { style: ee.legalText }, a.createElement(d.Z, { style: ee.content }, a.createElement(d.Z, { style: ee.section }, a.createElement(O.default, { style: ee.titleIcon }), a.createElement(d.Z, { style: ee.sectionContent }, a.createElement(_.ZP, { style: ee.title }, F), a.createElement(_.ZP, { style: ee.description }, V))), a.createElement(d.Z, { style: ee.section }, a.createElement(K.default, { style: ee.titleIcon }), a.createElement(d.Z, { style: ee.sectionContent }, a.createElement(_.ZP, { style: ee.title }, U), a.createElement(_.ZP, { style: ee.description }, Q, " ", a.createElement(_.ZP, { link: "https://help.x.com/using-x/about-grok" }, J)))), a.createElement(d.Z, { style: ee.section }, a.createElement(j.default, { style: ee.titleIcon }), a.createElement(d.Z, { style: ee.sectionContent }, a.createElement(_.ZP, { style: ee.title }, q), a.createElement(_.ZP, { style: ee.description }, $, " ", a.createElement(_.ZP, { link: "https://help.x.com/using-x/about-grok" }, J))))), t ? a.createElement(L.Z, { size: "space48" }) : null, a.createElement(d.Z, { style: [ee.continueButtonContainer, t ? ee.sticky : void 0] }, a.createElement(T.ZP, { onPress: e, size: "large", style: ee.continueButton, type: "primaryFilled" }, X)));
                 },
-                ee = c.default.create((e) => ({ legalText: { width: "100%", maxWidth: I.vf, flexDirection: "column", alignItems: "center", justifyContent: "center" }, titleIcon: { width: e.spaces.space20, minWidth: e.spaces.space20, height: e.spaces.space20, minHeight: e.spaces.space20, marginEnd: e.spaces.space8 }, sectionContent: { flexDirection: "column", gap: e.spaces.space4, flex: 1 }, sticky: { position: "sticky", bottom: 0 }, content: { borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space24, gap: e.spaces.space16, padding: e.spaces.space24 }, continueButtonContainer: { width: "100%", paddingVertical: e.spaces.space24, alignItems: "center", justifyContent: "center", backgroundColor: e.colors.cellBackground }, continueButton: { width: "100%", maxWidth: e.breakpoints.xSmall, justifyContent: "center", alignItems: "center" }, section: { width: "100%", gap: e.spaces.space4, flexDirection: "row" }, title: { fontWeight: "bold" }, description: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 } })),
-                ae = b().h0681e3e,
+                ee = c.default.create((e) => ({ legalText: { width: "100%", maxWidth: S.vf, flexDirection: "column", alignItems: "center", justifyContent: "center" }, titleIcon: { width: e.spaces.space20, minWidth: e.spaces.space20, height: e.spaces.space20, minHeight: e.spaces.space20, marginEnd: e.spaces.space8 }, sectionContent: { flexDirection: "column", gap: e.spaces.space4, flex: 1 }, sticky: { position: "sticky", bottom: 0 }, content: { borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space24, gap: e.spaces.space16, padding: e.spaces.space24 }, continueButtonContainer: { width: "100%", paddingVertical: e.spaces.space24, alignItems: "center", justifyContent: "center", backgroundColor: e.colors.cellBackground }, continueButton: { width: "100%", maxWidth: e.breakpoints.xSmall, justifyContent: "center", alignItems: "center" }, section: { width: "100%", gap: e.spaces.space4, flexDirection: "row" }, title: { fontWeight: "bold" }, description: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 } })),
+                te = b().h0681e3e,
                 ne = b().d593fd78,
-                oe = c.default.create((e) => ({ container: { overflowY: "auto", maxHeight: "100vh", position: "relative" }, prompts: { flexDirection: "row", flexWrap: "wrap" }, header: { flexDirection: "column", justifyContent: "center", alignItems: "center", paddingHorizontal: e.spaces.space36, marginBottom: e.spaces.space24 }, closeButton: { start: e.spaces.space16, top: e.spaces.space16, width: "fit-content", zIndex: 100, backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, position: "sticky" } })),
-                te = () => {
-                    const e = (0, y.I0)(),
-                        a = (0, G.useHistory)(),
+                ae = c.default.create((e) => ({ container: { overflowY: "auto", maxHeight: "100vh", position: "relative" }, prompts: { flexDirection: "row", flexWrap: "wrap" }, header: { flexDirection: "column", justifyContent: "center", alignItems: "center", paddingHorizontal: e.spaces.space36, marginBottom: e.spaces.space24 }, closeButton: { start: e.spaces.space16, top: e.spaces.space16, width: "fit-content", zIndex: 100, backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, position: "sticky" } })),
+                oe = () => {
+                    const e = (0, k.I0)(),
+                        t = (0, G.useHistory)(),
                         n = () => {
-                            e((0, k.pj)(k.Qn));
+                            e((0, E.pj)(E.Qn));
                         };
-                    return o.createElement(H.ZP, { clickMaskToClose: !0, history: a, modalSize: "fitChildren", onMaskClick: n, withBackground: !0 }, o.createElement(r.Z, { style: oe.container }, o.createElement(r.Z, { style: oe.closeButton }, o.createElement(T.ZP, { icon: o.createElement(z.default, null), onPress: n, type: "primaryText" })), o.createElement(r.Z, { style: oe.header }, o.createElement(_.ZP, { size: "title4", weight: "medium" }, ae), o.createElement(_.ZP, { color: "gray700", size: "body" }, ne)), o.createElement(r.Z, { style: oe.prompts }, o.createElement(Y, { onContinue: n }))));
+                    return a.createElement(H.ZP, { clickMaskToClose: !0, history: t, modalSize: "fitChildren", onMaskClick: n, withBackground: !0 }, a.createElement(d.Z, { style: ae.container }, a.createElement(d.Z, { style: ae.closeButton }, a.createElement(T.ZP, { icon: a.createElement(z.default, null), onPress: n, type: "primaryText" })), a.createElement(d.Z, { style: ae.header }, a.createElement(_.ZP, { size: "title4", weight: "medium" }, te), a.createElement(_.ZP, { color: "gray700", size: "body" }, ne)), a.createElement(d.Z, { style: ae.prompts }, a.createElement(Y, { onContinue: n }))));
                 };
-            var de = n(928831),
-                re = n(204162),
+            var re = n(928831),
+                de = n(204162),
                 le = n(988290),
                 se = n(214997),
                 ie = n(976021);
-            function ce({ followup: e, onClick: a }) {
-                return o.createElement(r.Z, { style: be.animation }, o.createElement(T.ZP, { backgroundColor: "gray0", borderColor: "gray100", onClick: a, size: "xSmall", style: be.followUpBotton }, o.createElement(ie.B, { text: e.label }, o.createElement(_.ZP, { color: "gray900", selectable: !1, weight: "normal" }, e.label))));
+            function ce({ followup: e, onClick: t }) {
+                return a.createElement(d.Z, { style: be.animation }, a.createElement(T.ZP, { backgroundColor: "gray0", borderColor: "gray100", onClick: t, size: "xSmall", style: be.followUpBotton }, a.createElement(ie.B, { text: e.label }, a.createElement(_.ZP, { color: "gray900", selectable: !1, weight: "normal" }, e.label))));
             }
-            function ue({ followups: e, onSelectFollowup: a }) {
+            function ue({ followups: e, onSelectFollowup: t }) {
                 return 0 === e.length
                     ? null
-                    : o.createElement(
+                    : a.createElement(
                           se.Z,
                           { horizontal: !0, showsHorizontalScrollIndicator: !1, style: be.container },
-                          o.createElement(
-                              r.Z,
+                          a.createElement(
+                              d.Z,
                               { style: be.row },
-                              e.map((e, n) => o.createElement(ce, { followup: e, key: n, onClick: () => a(e) })),
+                              e.map((e, n) => a.createElement(ce, { followup: e, key: n, onClick: () => t(e) })),
                           ),
                       );
             }
             const be = c.default.create((e) => ({ container: { maxWidth: "100%", marginStart: "auto", marginEnd: "auto", paddingVertical: e.spaces.space4 }, row: { display: "flex", width: "fit-content", flexDirection: "row", justifyContent: "flex-start", gap: e.spaces.space12, paddingHorizontal: e.spaces.space12 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, followUpBotton: { padding: e.spaces.space8, borderRadius: e.spaces.space24 } })),
                 pe = ({ conversationKey: e }) => {
-                    const a = (0, f.z)(),
-                        n = (0, S.uf)(),
-                        t = (0, y.v9)(n.selectCurrentResponseFollowUps),
-                        d = (0, y.v9)(n.selectCurrentResponseFollowUpSuggestedMode),
-                        { isCompactLayout: r } = (0, le.ZP)(),
-                        l = (0, y.I0)(),
+                    const t = (0, y.z)(),
+                        n = (0, N.uf)(),
+                        o = (0, k.v9)(n.selectCurrentResponseFollowUps),
+                        r = (0, k.v9)(n.selectCurrentResponseFollowUpSuggestedMode),
+                        { isCompactLayout: d } = (0, le.ZP)(),
+                        l = (0, k.I0)(),
                         s = (0, w.hC)("responsive_web_grok_show_citations"),
                         i = (0, B.Z)("followup"),
-                        { isReasoningEnabled: c, isResearchEnabled: u } = (0, de.w)(),
-                        b = (0, y.v9)(n.selectLastHumanMessage),
-                        p = o.useCallback(
+                        { isReasoningEnabled: c, isResearchEnabled: u } = (0, re.w)(),
+                        b = (0, k.v9)(n.selectLastHumanMessage),
+                        p = a.useCallback(
                             (n) => {
-                                let o;
-                                a.scribe({ component: "follow_up_button", action: "click", data: { event_info: JSON.stringify({ properties: n.properties }) } });
-                                const t = "DEEPSEARCH" === n.properties?.followUpType,
-                                    d = "THINK_HARDER" === n.properties?.followUpType;
-                                (t || d) && (o = b?.message?.message), l((0, C.u)({ analytics: a, conversationKey: e })({ text: o ?? n.label, promptMetadata: { promptSource: "FOLLOW_UP", action: "INPUT", properties: n.properties }, returnCitations: s, imageGenerationCount: i, isDeepsearch: u, isReasoning: c }));
+                                let a;
+                                t.scribe({ component: "follow_up_button", action: "click", data: { event_info: JSON.stringify({ properties: n.properties }) } });
+                                const o = "DEEPSEARCH" === n.properties?.followUpType,
+                                    r = "THINK_HARDER" === n.properties?.followUpType;
+                                (o || r) && (a = b?.message?.message), l((0, x.u)({ analytics: t, conversationKey: e })({ text: a ?? n.label, promptMetadata: { promptSource: "FOLLOW_UP", action: "INPUT", properties: n.properties }, returnCitations: s, imageGenerationCount: i, isDeepsearch: u, isReasoning: c }));
                             },
-                            [b, a, l, e, s, i, c, u],
+                            [b, t, l, e, s, i, c, u],
                         );
-                    return d ? o.createElement(re.Z, { conversationKey: e, isAnimated: !0, isCompactLayout: r, suggestion: d }) : o.createElement(ue, { followups: t, onSelectFollowup: p });
+                    return r ? a.createElement(de.Z, { conversationKey: e, isAnimated: !0, isCompactLayout: d, suggestion: r }) : a.createElement(ue, { followups: o, onSelectFollowup: p });
                 };
             var me = n(791786),
                 he = n(413145),
                 ge = n(54496),
                 we = n(618132),
-                De = n(6337);
-            const fe = 53,
-                ye = b().j22655f2,
-                ke = b().c02e7e3c,
-                Me = 9e5,
-                Ee = (0, t.cn)(0);
-            function Ce({ containerStyle: e = {}, containerRef: a, conversationId: n, initialPrompt: t, mode: l, disableStartScreen: c = !1, disableEducation: u = !1, contentPadding: b }) {
-                const G = (0, f.z)(),
-                    T = (0, y.I0)();
+                fe = n(6337);
+            const ye = 53,
+                ke = b().j22655f2,
+                Ee = b().c02e7e3c,
+                Ce = 9e5,
+                Ze = (0, o.cn)(0);
+            function xe({ containerStyle: e = {}, containerRef: t, conversationId: n, initialPrompt: o, mode: l, disableStartScreen: c = !1, disableEducation: u = !1, contentPadding: b }) {
+                const G = (0, y.z)(),
+                    T = (0, k.I0)();
                 (0, R.Z)();
-                const { access: _, conversationKey: z, fetchConversationIdError: H, fetchConversationIdStatus: W, messageIds: L, status: O, ...K } = (0, S.ZP)(),
-                    j = (0, D.ZP)(),
-                    { keyboardVisible: F } = o.useContext(g.hr),
+                const { access: _, conversationKey: z, fetchConversationIdError: H, fetchConversationIdStatus: W, messageIds: L, status: O, ...K } = (0, N.ZP)(),
+                    j = (0, f.ZP)(),
+                    { keyboardVisible: F } = a.useContext(g.hr),
                     { isGrokDrawer: V } = (0, le.ZP)(),
-                    U = (0, y.v9)((e) => (0, M.Pt)(e)),
-                    [Q, q] = (0, d.KO)(Ee),
-                    $ = U === x.ZP.LOADED;
+                    U = (0, k.v9)((e) => (0, C.Pt)(e)),
+                    [Q, q] = (0, r.KO)(Ze),
+                    $ = U === D.ZP.LOADED;
                 (0, p.q)(() => {
                     const e = new Date().getTime();
-                    (!$ || Q + Me < e) && (q(e), T((0, E.C)({ analytics: G })()));
+                    (!$ || Q + Ce < e) && (q(e), T((0, Z.C)({ analytics: G })()));
                 });
-                const J = (0, y.v9)((e) => (0, k.t5)(e, k.Qn)),
-                    X = (0, w.hC)("subscriptions_inapp_grok_nux_enabled"),
-                    { isConversationLoading: Y } = (0, N.Z)({ conversationId: n }),
+                const X = (0, k.v9)((e) => (0, E.t5)(e, E.Qn)),
+                    J = (0, w.hC)("subscriptions_inapp_grok_nux_enabled"),
+                    { isConversationLoading: Y } = (0, P.Z)({ conversationId: n }),
                     ee = (0, w.hC)("responsive_web_grok_show_citations"),
-                    ae = (0, w.hC)("responsive_web_grok_new_home_layout"),
-                    ne = O === A.Q_.IDLE;
-                o.useEffect(() => {
-                    !1 !== _ && T(v.ZP.fetchOneIfNeeded(I.c0));
+                    te = (0, w.hC)("responsive_web_grok_new_home_layout"),
+                    ne = O === v.Q_.IDLE;
+                a.useEffect(() => {
+                    !1 !== _ && T(M.ZP.fetchOneIfNeeded(S.c0));
                 }, [T, _]),
-                    o.useEffect(() => {
-                        H && T((0, Z.fz)({ text: H }));
+                    a.useEffect(() => {
+                        H && T((0, A.fz)({ text: H }));
                     }, [T, H]);
-                const oe = (0, B.Z)("content");
-                o.useEffect(() => {
-                    if (!Y && t?.text) {
-                        T((0, C.u)({ analytics: G, conversationKey: z })({ text: t.text, returnCitations: ee, analysisEntityId: t.analysisEntityId, mode: l, imageGenerationCount: oe, isReasoning: t?.isReasoning, isDeepsearch: t?.isDeepsearch }));
+                const ae = (0, B.Z)("content");
+                a.useEffect(() => {
+                    if (!Y && o?.text) {
+                        T((0, x.u)({ analytics: G, conversationKey: z })({ text: o.text, returnCitations: ee, analysisEntityId: o.analysisEntityId, mode: l, imageGenerationCount: ae, isReasoning: o?.isReasoning, isDeepsearch: o?.isDeepsearch }));
                         const e = new URL(window.location);
                         e.searchParams.delete("text"), e.searchParams.delete("deepsearch"), e.searchParams.delete("think"), history.replaceState(null, "", e.toString());
                     }
-                }, [Y, t]),
-                    o.useEffect(() => {
-                        if (m.ZP.isTwitterApp() && U === x.ZP.LOADED) {
+                }, [Y, o]),
+                    a.useEffect(() => {
+                        if (m.ZP.isTwitterApp() && U === D.ZP.LOADED) {
                             const e = window.webkit?.messageHandlers?.grokWebviewEventMessageHandler;
                             if (e) {
-                                const a = { message: "initialModeSet" };
-                                e.postMessage(a);
+                                const t = { message: "initialModeSet" };
+                                e.postMessage(t);
                             }
                         }
                     }, [U]);
-                const de = o.useMemo(() => (O !== A.Q_.IDLE ? [...L, null] : L), [O, L]),
-                    re = o.useCallback(() => {
-                        T((0, M.Ki)(s()()));
+                const re = a.useMemo(() => (O !== v.Q_.IDLE ? [...L, null] : L), [O, L]),
+                    de = a.useCallback(() => {
+                        T((0, C.Ki)(s()()));
                     }, [T]),
-                    se = de.length > 0,
-                    ie = o.useMemo(() => {
-                        const e = m.ZP.isTwitterApp() || j || F ? 0 : fe;
-                        return [Ze.inputWrapper, { paddingBottom: e }];
+                    se = re.length > 0,
+                    ie = a.useMemo(() => {
+                        const e = m.ZP.isTwitterApp() || j || F ? 0 : ye;
+                        return [Ae.inputWrapper, { paddingBottom: e }];
                     }, [j, F]),
-                    ce = t?.text || se || Y,
-                    ue = o.useMemo(() => () => (Y ? o.createElement(i.Z, null) : o.createElement(o.Fragment, null, o.createElement(he.y, { contentPadding: b, conversationKey: z }), o.createElement(r.Z, { style: Ze.bottomContainer }, o.createElement(r.Z, { style: Ze.inputOuterContainer }, o.createElement(pe, { conversationKey: z }), o.createElement(r.Z, { style: Ze.inputContainer }, o.createElement(r.Z, { style: ie }, o.createElement(me.Z, { conversationKey: z, hasAccess: !1 !== _, inputAtBottom: !0, insideConversation: !0, isIdle: ne, mode: l, placeholder: ye, useDraftPersistence: !0 }))))))), [ne, l, _, z, b, ie, Y]);
-                return (0, P.Z)(!c && !V, K.conversationId, se), !1 === _ && U !== x.ZP.LOADING ? (V ? o.createElement(r.Z, { style: Ze.activityIndicatorContainer }, o.createElement(i.Z, null)) : o.createElement(De.Z, null)) : o.createElement(r.Z, { ref: a, style: [Ze.container, e] }, o.createElement(o.Fragment, null, J && X && !u ? o.createElement(te, null) : null, ce || c ? o.createElement(h.Z, { "aria-label": ke, fetchStatus: W === x.ZP.NONE ? x.ZP.LOADED : W, onRequestRetry: re, render: ue, retryMessage: H }) : ae ? o.createElement(ge.k, { access: _, conversationKey: z }) : o.createElement(we.k, { access: _, conversationKey: z })));
+                    ce = o?.text || se || Y,
+                    ue = a.useMemo(() => () => (Y ? a.createElement(i.Z, null) : a.createElement(a.Fragment, null, a.createElement(he.y, { contentPadding: b, conversationKey: z }), a.createElement(d.Z, { style: Ae.bottomContainer }, a.createElement(d.Z, { style: Ae.inputOuterContainer }, a.createElement(pe, { conversationKey: z }), a.createElement(d.Z, { style: Ae.inputContainer }, a.createElement(d.Z, { style: ie }, a.createElement(me.Z, { conversationKey: z, hasAccess: !1 !== _, inputAtBottom: !0, insideConversation: !0, isIdle: ne, mode: l, placeholder: ke, useDraftPersistence: !0 }))))))), [ne, l, _, z, b, ie, Y]);
+                return (0, I.Z)(!c && !V, K.conversationId, se), !1 === _ && U !== D.ZP.LOADING ? (V ? a.createElement(d.Z, { style: Ae.activityIndicatorContainer }, a.createElement(i.Z, null)) : a.createElement(fe.Z, null)) : a.createElement(d.Z, { ref: t, style: [Ae.container, e] }, a.createElement(a.Fragment, null, X && J && !u ? a.createElement(oe, null) : null, ce || c ? a.createElement(h.Z, { "aria-label": Ee, fetchStatus: W === D.ZP.NONE ? D.ZP.LOADED : W, onRequestRetry: de, render: ue, retryMessage: H }) : te ? a.createElement(ge.k, { access: _, conversationKey: z }) : a.createElement(we.k, { access: _, conversationKey: z })));
             }
-            const Ae = !!m.ZP.isWebView(),
-                Ze = c.default.create((e) => ({ container: { display: "grid", gridTemplateRows: "1fr auto", maxWidth: "100%", width: "100%", minHeight: `calc(100vh - ${Ae ? "0" : e.componentDimensions.appBarHeightPx}px)`, paddingBottom: c.default.iPhoneOffsetBottom }, disclaimer: { marginVertical: e.spaces.space12, marginHorizontal: e.spaces.space4 }, disclaimerNarrow: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space4 }, bottomContainer: { position: "sticky", bottom: 0, width: "100%" }, inputOuterContainer: { position: "relative" }, inputContainer: { backgroundColor: e.colors.appBarBackground, backdropFilter: "blur(12px)", justifyContent: "center", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space12 }, inputWrapper: { width: "100%", maxWidth: `calc(${I.vf}px + ${e.spaces.space32})` }, somethingWentWrongContainer: { alignItems: "center", justifyContent: "center", padding: e.spaces.space32 }, activityIndicatorContainer: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" } }));
+            const ve = !!m.ZP.isWebView(),
+                Ae = c.default.create((e) => ({ container: { display: "grid", gridTemplateRows: "1fr auto", maxWidth: "100%", width: "100%", minHeight: `calc(100vh - ${ve ? "0" : e.componentDimensions.appBarHeightPx}px)`, paddingBottom: c.default.iPhoneOffsetBottom }, disclaimer: { marginVertical: e.spaces.space12, marginHorizontal: e.spaces.space4 }, disclaimerNarrow: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space4 }, bottomContainer: { position: "sticky", bottom: 0, width: "100%" }, inputOuterContainer: { position: "relative" }, inputContainer: { backgroundColor: e.colors.appBarBackground, backdropFilter: "blur(12px)", justifyContent: "center", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space12 }, inputWrapper: { width: "100%", maxWidth: `calc(${S.vf}px + ${e.spaces.space32})` }, somethingWentWrongContainer: { alignItems: "center", justifyContent: "center", padding: e.spaces.space32 }, activityIndicatorContainer: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" } }));
         },
-        462441: (e, a, n) => {
-            n.r(a), n.d(a, { default: () => L });
-            var o = n(202784),
-                t = n(325686),
-                d = n(107267),
-                r = n(731708),
+        462441: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => L });
+            var a = n(202784),
+                o = n(325686),
+                r = n(107267),
+                d = n(731708),
                 l = n(371344),
                 s = n(661810),
                 i = n(451566),
@@ -225,21 +225,21 @@
                 h = n(323265),
                 g = n(980407),
                 w = n(15334),
-                D = n(293115),
-                f = n(125363),
-                y = n(389071),
-                k = n(184711),
-                M = n(358687),
-                E = n(565058),
-                C = n(400752),
-                A = (n(585488), n(712696)),
-                Z = n.n(A),
-                v = n(351743),
-                x = n.n(v);
-            const I = M.Z,
-                P = k.Z,
-                S = {},
-                N = (0, E.cn)(!1);
+                f = n(293115),
+                y = n(125363),
+                k = n(389071),
+                E = n(184711),
+                C = n(358687),
+                Z = n(565058),
+                x = n(400752),
+                v = (n(585488), n(712696)),
+                A = n.n(v),
+                M = n(351743),
+                D = n.n(M);
+            const S = C.Z,
+                I = E.Z,
+                N = {},
+                P = (0, Z.cn)(!1);
             const R = m().j95bac7a,
                 B = m().c5665922,
                 G = m().ff625c40,
@@ -249,100 +249,100 @@
                 H = { page: h.ZP.isTwitterApp() ? (h.ZP.isAndroid() ? "grok_custom_android" : "grok_custom_ios") : "grok_custom" },
                 W = 1500;
             function L() {
-                const e = (0, d.useHistory)(),
-                    a = (0, w.u)(),
-                    n = (0, f.v9)(y.F9),
-                    b = o.useMemo(() => ({ subscription_level: a, grok_details: { grok_mode: "regular", grok_model: n } }), [a, n]),
-                    [p, m] = o.useState(!0),
-                    [h, k, M, E] = (function ({ fetchKey: e }) {
-                        const { get_grok_customization_setting: a } = Z()(I, S, { fetchPolicy: "network-only", fetchKey: e }),
-                            [n, t] = (0, C.KO)(N);
-                        o.useEffect(() => {
-                            t(a?.enabled ?? !1);
-                        }, [a?.enabled, t]);
-                        const [d, r] = x()(P),
-                            l = o.useCallback(
+                const e = (0, r.useHistory)(),
+                    t = (0, w.u)(),
+                    n = (0, y.v9)(k.F9),
+                    b = a.useMemo(() => ({ subscription_level: t, grok_details: { grok_mode: "regular", grok_model: n } }), [t, n]),
+                    [p, m] = a.useState(!0),
+                    [h, E, C, Z] = (function ({ fetchKey: e }) {
+                        const { get_grok_customization_setting: t } = A()(S, N, { fetchPolicy: "network-only", fetchKey: e }),
+                            [n, o] = (0, x.KO)(P);
+                        a.useEffect(() => {
+                            o(t?.enabled ?? !1);
+                        }, [t?.enabled, o]);
+                        const [r, d] = D()(I),
+                            l = a.useCallback(
                                 (e) => {
-                                    d({
+                                    r({
                                         variables: { ...e },
-                                        onCompleted: (a) => {
-                                            t(e.enabled);
+                                        onCompleted: (t) => {
+                                            o(e.enabled);
                                         },
                                     });
                                 },
-                                [d, t],
+                                [r, o],
                             );
-                        return [a, l, r, n];
+                        return [t, l, d, n];
                     })({ fetchKey: "customPrompt" }),
-                    [A, v] = o.useState(""),
-                    [L, K] = o.useState(""),
-                    [j, F] = o.useState(E),
-                    [V, U] = o.useState(!1),
-                    [Q, q] = o.useState(!1);
-                o.useEffect(() => {
+                    [v, M] = a.useState(""),
+                    [L, K] = a.useState(""),
+                    [j, F] = a.useState(Z),
+                    [V, U] = a.useState(!1),
+                    [Q, q] = a.useState(!1);
+                a.useEffect(() => {
                     let e;
                     return (
-                        M ||
+                        C ||
                             p ||
                             (e = setTimeout(() => {
                                 m(!0);
                             }, 400)),
                         () => clearTimeout(e)
                     );
-                }, [M, p, m]);
-                const $ = o.useCallback(() => {
+                }, [C, p, m]);
+                const $ = a.useCallback(() => {
                         if (!V) return;
                         m(!1), U(!1);
-                        k({ enabled: j, custom_instruction: { instruction: A }, personality: { personality: L } });
-                    }, [k, V, j, L, A]),
-                    J = o.useCallback(() => {
-                        v(""), K(""), U(!0), F(!1);
+                        E({ enabled: j, custom_instruction: { instruction: v }, personality: { personality: L } });
+                    }, [E, V, j, L, v]),
+                    X = a.useCallback(() => {
+                        M(""), K(""), U(!0), F(!1);
                     }, []),
-                    X = o.useCallback(() => {
+                    J = a.useCallback(() => {
                         e.goBack(), $();
                     }, [e, $]);
                 return (
-                    o.useEffect(() => {
-                        h && (F(h.enabled || !1), K(h.personality?.personality || ""), v(h.custom_instruction?.instruction || ""));
+                    a.useEffect(() => {
+                        h && (F(h.enabled || !1), K(h.personality?.personality || ""), M(h.custom_instruction?.instruction || ""));
                     }, [h]),
-                    o.useEffect(() => {
+                    a.useEffect(() => {
                         !Q && V && $();
                     }, [$, V, Q]),
-                    o.createElement(
-                        D.nO,
+                    a.createElement(
+                        f.nO,
                         { data: b, namespace: H },
-                        o.createElement(
+                        a.createElement(
                             g.Z,
-                            { documentTitle: R, history: e, onBackClick: X, title: R },
-                            o.createElement(
-                                t.Z,
+                            { documentTitle: R, history: e, onBackClick: J, title: R },
+                            a.createElement(
+                                o.Z,
                                 { style: O.section },
-                                o.createElement(r.ZP, null, B),
-                                o.createElement(
-                                    t.Z,
+                                a.createElement(d.ZP, null, B),
+                                a.createElement(
+                                    o.Z,
                                     { style: O.textInputBox },
-                                    o.createElement(l.Z, {
+                                    a.createElement(l.Z, {
                                         maxLength: W,
                                         multiline: !0,
                                         numberOfLines: 5,
                                         onBlur: () => q(!1),
                                         onChange: (e) => {
-                                            A.length < e.target.value.length && (F(!0), U(!0)), v(e.target.value), U(!0);
+                                            v.length < e.target.value.length && (F(!0), U(!0)), M(e.target.value), U(!0);
                                         },
                                         onFocus: () => q(!0),
-                                        value: A,
+                                        value: v,
                                     }),
                                 ),
                             ),
-                            o.createElement(s.Z, null),
-                            o.createElement(
-                                t.Z,
+                            a.createElement(s.Z, null),
+                            a.createElement(
+                                o.Z,
                                 { style: O.section },
-                                o.createElement(r.ZP, null, G),
-                                o.createElement(
-                                    t.Z,
+                                a.createElement(d.ZP, null, G),
+                                a.createElement(
+                                    o.Z,
                                     { style: O.textInputBox },
-                                    o.createElement(l.Z, {
+                                    a.createElement(l.Z, {
                                         maxLength: W,
                                         multiline: !0,
                                         numberOfLines: 5,
@@ -355,85 +355,82 @@
                                     }),
                                 ),
                             ),
-                            o.createElement(
-                                t.Z,
+                            a.createElement(
+                                o.Z,
                                 { style: [O.row, O.enableRow] },
-                                o.createElement(r.ZP, { weight: "medium" }, T),
-                                o.createElement(i.Z, {
+                                a.createElement(d.ZP, { weight: "medium" }, T),
+                                a.createElement(i.Z, {
                                     onValueChange: (e) => {
                                         F(e), U(!0);
                                     },
                                     value: j,
                                 }),
                             ),
-                            o.createElement(t.Z, { style: [O.row, O.buttonRow], type: "" }, o.createElement(c.Z, { animating: !p, hidesWhenStopped: !0, style: O.indicator }), o.createElement(u.ZP, { backgroundColor: "transparent", borderColor: "transparent", onClick: J, style: O.button, textSizeOverride: "subtext2" }, _), o.createElement(u.ZP, { backgroundColor: "gray100", onClick: X, style: O.button }, o.createElement(r.ZP, { size: "subtext2", weight: "medium" }, z))),
+                            a.createElement(o.Z, { style: [O.row, O.buttonRow], type: "" }, a.createElement(c.Z, { animating: !p, hidesWhenStopped: !0, style: O.indicator }), a.createElement(u.ZP, { backgroundColor: "transparent", borderColor: "transparent", onClick: X, style: O.button, textSizeOverride: "subtext2" }, _), a.createElement(u.ZP, { backgroundColor: "gray100", onClick: J, style: O.button }, a.createElement(d.ZP, { size: "subtext2", weight: "medium" }, z))),
                         ),
                     )
                 );
             }
             const O = b.default.create((e) => ({ right: { alignItems: "end" }, row: { flexDirection: "row", width: "100%", alignItems: "center", paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space20 }, enableRow: { justifyContent: "space-between" }, buttonRow: { width: "100%", alignItems: "center", justifyContent: "end", paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space20 }, section: { padding: e.spaces.space20 }, textInputBox: { paddingTop: 10 }, button: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16, borderRadius: e.spaces.space8 }, indicator: { marginEnd: e.spaces.space16 } }));
         },
-        410490: (e, a, n) => {
-            n.d(a, { b: () => b });
-            var o = n(202784),
-                t = n(325686),
-                d = n(67369),
-                r = n(530732),
+        410490: (e, t, n) => {
+            n.d(t, { b: () => b });
+            var a = n(202784),
+                o = n(325686),
+                r = n(67369),
+                d = n(530732),
                 l = n(992942),
                 s = n(731708),
                 i = n(392237),
                 c = n(725405),
                 u = n(979512);
-            const b = ({ coverUrl: e, label: a, onClose: n, onSendPrompt: i, prompt: b }) => {
+            const b = ({ coverUrl: e, label: t, onClose: n, onSendPrompt: i, prompt: b }) => {
                     const { openGrok: m } = (0, u.Z)(),
                         h = (0, c.Z)(),
-                        g = (0, d.LX)(),
-                        w = o.useCallback(() => {
+                        g = (0, r.LX)(),
+                        w = a.useCallback(() => {
                             n(), i ? i(b, b) : m({ text: b, autoSubmit: !0 }), h.scribe({ element: "grok_onboarding_prompt", action: "click" });
                         }, [h, n, b, m, i]);
-                    return o.createElement(r.Z, { onPress: w, style: [p.container, g ? p.fullWidth : void 0] }, ({ isHovered: n }) => o.createElement(t.Z, { style: [p.content, n ? p.hovered : void 0] }, o.createElement(l.Z, { resizeMode: "cover", source: e, style: [p.image, g ? p.fullWidth : void 0] }), o.createElement(t.Z, { style: p.text }, o.createElement(s.ZP, { color: "text", size: "body" }, a))));
+                    return a.createElement(d.Z, { onPress: w, style: [p.container, g ? p.fullWidth : void 0] }, ({ isHovered: n }) => a.createElement(o.Z, { style: [p.content, n ? p.hovered : void 0] }, a.createElement(l.Z, { resizeMode: "cover", source: e, style: [p.image, g ? p.fullWidth : void 0] }), a.createElement(o.Z, { style: p.text }, a.createElement(s.ZP, { color: "text", size: "body" }, t))));
                 },
                 p = i.default.create((e) => ({ container: {}, content: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, paddingTop: e.spaces.space8, paddingHorizontal: e.spaces.space8, overflow: "hidden" }, image: { width: 235, height: 175, borderRadius: e.borderRadii.large }, fullWidth: { width: "100%" }, hovered: { backgroundColor: e.colors.gray100 }, text: { height: e.spaces.space36, justifyContent: "center", alignItems: "center" } }));
         },
-        609013: (e, a, n) => {
-            n.d(a, { T: () => c });
-            var o = n(202784),
-                t = n(111677),
-                d = n.n(t),
-                r = n(640872),
+        609013: (e, t, n) => {
+            n.d(t, { T: () => c });
+            var a = n(202784),
+                o = n(111677),
+                r = n.n(o),
+                d = n(640872),
                 l = n(449067),
                 s = n(38293);
-            const i = d().h5860a68,
+            const i = r().h5860a68,
                 c = ({ documentTitle: e }) => {
-                    const { setSideNavSupport: a } = o.useContext(r.Z);
-                    return o.useEffect(() => (a(!1), () => a(!0)), [a]), o.createElement(o.Fragment, null, o.createElement(l.Z.Configure, { headerless: !0 }), o.createElement(s.Z.Configure, { displayTitleOnly: !0, title: e || i }));
+                    const { setSideNavSupport: t } = a.useContext(d.Z);
+                    return a.useEffect(() => (t(!1), () => t(!0)), [t]), a.createElement(a.Fragment, null, a.createElement(l.Z.Configure, { headerless: !0 }), a.createElement(s.Z.Configure, { displayTitleOnly: !0, title: e || i }));
                 };
         },
-        398083: (e, a, n) => {
-            n.d(a, { Z: () => o });
+        398083: (e, t, n) => {
+            n.d(t, { Z: () => a });
             n(202784);
-            const o = (0, n(523561).Z)({
+            const a = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.10"),
-                        n.e("icons.1"),
-                        n.e("icons.19"),
-                        n.e("icons.0"),
                         n.e("icons.23"),
-                        n.e("icons.8"),
+                        n.e("icons.0"),
                         n.e("icons.2"),
-                        n.e("icons.3"),
-                        n.e("icons.15"),
-                        n.e("icons.4"),
+                        n.e("icons.16"),
+                        n.e("icons.19"),
+                        n.e("icons.10"),
+                        n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.7"),
+                        n.e("icons.22"),
+                        n.e("icons.27"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.9"),
-                        n.e("icons.7"),
-                        n.e("icons.28"),
+                        n.e("icons.11"),
                         n.e("icons.26"),
-                        n.e("icons.24"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -444,32 +441,14 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
+                        n.e("icons.8"),
+                        n.e("icons.4"),
+                        n.e("icons.14"),
+                        n.e("icons.28"),
+                        n.e("icons.21"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
                         n.e("icons.18"),
-                        n.e("icons.13"),
-                        n.e("icons.29"),
-                        n.e("icons.27"),
-                        n.e("icons.25"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
@@ -498,7 +477,6 @@
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
-                        n.e("shared~loader.Dock~bundle.GrokDrawer~bundle.DockPeek~bundle.Grok~bundle.LiveEvent~loader.JetfuelFrame~loader."),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
@@ -523,8 +501,9 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-63cb1cc4"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6ac0f1a5"),
                         n.e("shared~bundle.Grok~loader.Markdown-6107ac1a"),
@@ -545,21 +524,21 @@
                     ]).then(n.bind(n, 207683)),
             });
         },
-        661808: (e, a, n) => {
+        661808: (e, t, n) => {
             e.exports = n.p + "dimPlaceholder.a01ac5aa.png";
         },
-        433521: (e, a, n) => {
+        433521: (e, t, n) => {
             e.exports = n.p + "drawMe.943c428a.jpg";
         },
-        783444: (e, a, n) => {
+        783444: (e, t, n) => {
             e.exports = n.p + "question.49241bca.jpg";
         },
-        464279: (e, a, n) => {
+        464279: (e, t, n) => {
             e.exports = n.p + "image_gen_2.f78db95a.png";
         },
-        560619: (e, a, n) => {
+        560619: (e, t, n) => {
             e.exports = n.p + "image_understanding.e6b9fb8a.png";
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.fec603ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.213a78ea.js.map

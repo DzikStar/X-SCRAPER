@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Explore~bundle.Topics"],
+    ["shared~bundle.Explore~bundle.Topics", "bundle.AudioSpaceDetail"],
     {
         740527: (e, t, n) => {
             n.d(t, { Z: () => c });
@@ -153,8 +153,8 @@
                 u = n(33104),
                 p = n(789831),
                 m = n(252021),
-                b = n(293115),
-                h = n(87063),
+                h = n(293115),
+                b = n(87063),
                 g = n(652904),
                 f = n(507651),
                 D = n(3138),
@@ -162,18 +162,18 @@
                 y = n(503229),
                 M = n(71620),
                 C = n(668214);
-            const k = (e, t) => t.module.selectInitialFetchStatus(e),
-                E = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
+            const E = (e, t) => t.module.selectInitialFetchStatus(e),
+                I = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
                 S = (e, t) => {
                     const n = t.selectedTabId,
-                        a = E(e, t);
+                        a = I(e, t);
                     return a && a.tabs && a.tabs.tabs.find((e) => e.id === n);
                 },
-                A = (0, C.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: k, pageConfiguration: E, selectedTab: S }))
+                k = (0, C.Z)()
+                    .propsFromState(() => ({ initialFetchStatus: E, pageConfiguration: I, selectedTab: S }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, M.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
                     .withAnalytics();
-            class T extends a.Component {
+            class A extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._fetchPageModule = () => {
@@ -219,7 +219,7 @@
                 }
                 render() {
                     const { initialFetchStatus: e } = this.props;
-                    return e === h.Z.LOADED ? this._render() : null;
+                    return e === b.Z.LOADED ? this._render() : null;
                 }
                 _buildTabNamespace(e, t) {
                     let n;
@@ -232,33 +232,30 @@
                     }
                 }
             }
-            const I = A((0, y.Z)(T));
+            const T = k((0, y.Z)(A));
             var v = n(912021),
                 x = n(383675),
                 N = n(611423),
-                Z = n(443781);
-            const _ = (0, n(523561).Z)({
+                P = n(443781);
+            const Z = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.10"),
-                        n.e("icons.1"),
-                        n.e("icons.19"),
-                        n.e("icons.0"),
                         n.e("icons.23"),
-                        n.e("icons.8"),
+                        n.e("icons.0"),
                         n.e("icons.2"),
-                        n.e("icons.3"),
-                        n.e("icons.15"),
-                        n.e("icons.4"),
+                        n.e("icons.16"),
+                        n.e("icons.19"),
+                        n.e("icons.10"),
+                        n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.7"),
+                        n.e("icons.22"),
+                        n.e("icons.27"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.9"),
-                        n.e("icons.7"),
-                        n.e("icons.28"),
+                        n.e("icons.11"),
                         n.e("icons.26"),
-                        n.e("icons.24"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -269,20 +266,31 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
+                        n.e("icons.8"),
+                        n.e("icons.4"),
+                        n.e("icons.14"),
+                        n.e("icons.28"),
+                        n.e("icons.21"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
                         n.e("icons.18"),
-                        n.e("icons.13"),
-                        n.e("icons.29"),
-                        n.e("icons.25"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3fe805ff"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
@@ -292,13 +300,9 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-35700d06"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-66c34182"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-6af19649"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-f16ea073"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDraw-8e0713f9"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-fc31ced1"),
+                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -348,15 +352,15 @@
                         n.e("loader.ExploreNews"),
                     ]).then(n.bind(n, 169698)),
             });
-            var B = n(810641);
-            const P = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
+            var _ = n(810641);
+            const B = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
                 R = (e, t) => {
                     const n = t.selectedTabId,
-                        a = P(e, t);
+                        a = B(e, t);
                     return a && a.tabs && a.tabs.tabs.find((e) => e.id === n);
                 },
                 L = (0, C.Z)()
-                    .propsFromState(() => ({ pageConfiguration: P, selectedTab: R }))
+                    .propsFromState(() => ({ pageConfiguration: B, selectedTab: R }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, M.zr)("RICH_SEGMENTED_TIMELINE") }))
                     .withAnalytics();
             class G extends a.Component {
@@ -390,14 +394,14 @@
                 }
                 render() {
                     const { entryConfiguration: e, initialModule: t, pageConfiguration: n, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, selectedTab: i, timelinePrefix: s, title: c, withoutHeadroom: u } = this.props;
-                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return a.createElement(_, null);
+                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return a.createElement(Z, null);
                     const p = this._getModule(i, n?.tabs?.initialTabId, t, s),
                         m = this._getRefreshIntervalSecForCurrentTab(),
-                        h = m ? 1e3 * m : void 0;
-                    return a.createElement(b.nO, { namespace: this._getTimelineNamespace() }, a.createElement(B.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: h, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
+                        b = m ? 1e3 * m : void 0;
+                    return a.createElement(h.nO, { namespace: this._getTimelineNamespace() }, a.createElement(_.Z, { entryConfiguration: e, module: p, pollingIntervalMsOverride: b, prerollDisplayLocation: o, refreshControl: r, renderEmptyState: d, renderUnavailable: l, title: c, withoutHeadroom: u }));
                 }
             }
-            G.contextType = Z.rC;
+            G.contextType = P.rC;
             const H = L(G);
             var F = n(929482),
                 W = n(335632),
@@ -424,13 +428,13 @@
                         onHeaderVisible: l,
                     } = e,
                     { data: i, namespace: s } = V(d, t);
-                return a.createElement(O.Z, { style: K.root }, a.createElement(b.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
+                return a.createElement(O.Z, { style: K.root }, a.createElement(h.nO, { data: i, namespace: s }, a.createElement(U.Z, { displayType: n, facepile: o, onFollowHeaderOffscreen: ({ isOffscreen: e }) => l(!e), topicId: d, topicLandingContext: r, withDivider: !0 })));
             }
             const K = z.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
             var Y = n(24949);
             const J = (e, t) => t.module.selectPageConfiguration(e),
                 X = (e, t) => t.module.selectInitialFetchStatus(e),
-                ee = (0, Y.P1)(J, X, (e, t) => t !== h.Z.LOADED || (!!e && !!e.tabs)),
+                ee = (0, Y.P1)(J, X, (e, t) => t !== b.Z.LOADED || (!!e && !!e.tabs)),
                 te = (0, C.Z)()
                     .propsFromState(() => ({ hasTabNavigation: ee, pageConfiguration: J, initialFetchStatus: X }))
                     .withAnalytics();
@@ -449,8 +453,8 @@
                 ue = (0, C.Z)().propsFromState(() => ({ topic: ce })),
                 pe = (e) => (0, ne.ju)(`https://x.com/i/topics/${e}`),
                 me = (e) => `twitter://topics_timeline?id=${e}`,
-                be = i().ed88e742;
-            const he = z.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
+                he = i().ed88e742;
+            const be = z.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
                 ge = ue(function (e) {
                     const t = e.navBar.topicId ? e.navBar.topicId : "",
                         {
@@ -461,21 +465,21 @@
                             withAppLinks: l,
                             withOpenGraphMeta: i,
                         } = e,
-                        { featureSwitches: c } = a.useContext(Z.rC),
+                        { featureSwitches: c } = a.useContext(P.rC),
                         u = c.isTrue("topic_landing_page_share_enabled"),
                         { data: p, namespace: m } = V(t, o),
-                        h = (0, s.Z)({}, r, m);
-                    return d ? a.createElement(b.nO, { data: p, namespace: h }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(O.Z, { style: he.rightControl }, a.createElement(O.Z, { style: he.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: be, scribeNamespace: h, url: pe(t) }) : null))) : null;
+                        b = (0, s.Z)({}, r, m);
+                    return d ? a.createElement(h.nO, { data: p, namespace: b }, a.createElement(a.Fragment, null, i ? a.createElement(re.Z, { canonical: pe(t), description: d.description, title: d.name, type: "article" }) : null, l ? a.createElement(oe.Z, { deepLink: me(t) }) : null, a.createElement(O.Z, { style: be.rightControl }, a.createElement(O.Z, { style: be.followButtonContainer }, a.createElement(ae.Z, { animateMount: !0, show: n, type: "fade" }, a.createElement(de.ZP, { size: "medium", textMode: le.q.FollowTopic, topic: d }))), u ? a.createElement(ie.ZP, { copyLinkShareLabel: he, scribeNamespace: b, url: pe(t) }) : null))) : null;
                 }),
                 fe = i().e9f1fbcc,
                 De = a.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: k, pageConfiguration: E, prerollDisplayLocation: S, renderEmptyState: A, renderUnavailable: T, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: Z, title: _, withAppLinks: B, withBottomLoginSignupBar: P, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: W } = e,
+                    const { TabBar: t, backLocation: n, documentTitle: o, entryConfiguration: l, fab: i, getTabLink: c, hasTabNavigation: f, history: D, initialFetchStatus: w, initialPageNamespace: y, logoButton: M, module: C, onBackClick: E, pageConfiguration: I, prerollDisplayLocation: S, renderEmptyState: k, renderUnavailable: A, rightControl: v, selectedTabId: x, sidebarContent: N, timelinePrefix: P, title: Z, withAppLinks: _, withBottomLoginSignupBar: B, withDeferredView: R, withOpenGraphMeta: L, withSearchBox: G, withTweetButton: W } = e,
                         O = (0, r.tj)(),
                         z = a.useMemo(() => ({ ...l, ...(0, F.Z)({ isLegacy: !0, isWide: O }) }), [l, O]),
                         [U, $] = a.useState(!0),
-                        { header: j, navBar: q, subtitle: V, title: K } = E || {},
-                        Y = w === h.Z.LOADED ? K || _ : "",
+                        { header: j, navBar: q, subtitle: V, title: K } = I || {},
+                        Y = w === b.Z.LOADED ? K || Z : "",
                         J = ((e, t, n) => {
                             const a = t?.scribeConfig,
                                 { entityToken: o, ...r } = a || {},
@@ -484,14 +488,14 @@
                                 i = d?.tabs.find((e) => e.id === l),
                                 { entityToken: c, ...u } = i?.scribeConfig || {};
                             return (0, s.Z)({}, n, r, u);
-                        })(x, E, y),
+                        })(x, I, y),
                         X = j ? a.createElement(Q, { header: j, onHeaderVisible: $ }) : null,
-                        ee = q ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: q, pageNamespace: J, withAppLinks: B, withOpenGraphMeta: L }) : null,
+                        ee = q ? a.createElement(ge, { isHeaderOffscreen: !U, navBar: q, pageNamespace: J, withAppLinks: _, withOpenGraphMeta: L }) : null,
                         te = R ? u.Z : a.Fragment,
-                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: z, initialModule: C, prerollDisplayLocation: S, renderEmptyState: A, renderUnavailable: T, selectedTabId: x, timelinePrefix: Z, title: _, withoutHeadroom: !0 }))),
+                        ne = a.createElement(a.Fragment, null, X, a.createElement(te, null, a.createElement(H, { entryConfiguration: z, initialModule: C, prerollDisplayLocation: S, renderEmptyState: k, renderUnavailable: A, selectedTabId: x, timelinePrefix: P, title: Z, withoutHeadroom: !0 }))),
                         ae = i ? a.createElement(p.Z, { component: d.Z, fab: i }, ne) : ne,
-                        oe = c && f ? a.createElement(I, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
-                    return a.createElement(b.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: k, primaryContent: ae, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && U ? _ : Y, withBottomLoginSignupBar: P, withSearchBox: G, withTweetButton: W })));
+                        oe = c && f ? a.createElement(T, { getTabLink: c, module: C, selectedTabId: x }) : void 0;
+                    return a.createElement(h.nO, { namespace: J }, a.createElement(g.Z, null, a.createElement(m.Z, { TabBar: t, backLocation: n, documentTitle: o, history: D, logoButton: M, onBackClick: E, primaryContent: ae, rightControl: ee || v, secondaryBar: oe, sidebarContent: N, subtitle: V, title: X && U ? Z : Y, withBottomLoginSignupBar: B, withSearchBox: G, withTweetButton: W })));
                 };
             we.defaultProps = { entryConfiguration: (0, W.G)({}), renderEmptyState: () => a.createElement(o.Z, { header: fe }), sidebarContent: De, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const ye = te(we);
@@ -572,8 +576,8 @@
                 u = n(912021),
                 p = n(516951),
                 m = n(731708),
-                b = n(310088),
-                h = n(175993),
+                h = n(310088),
+                b = n(175993),
                 g = n(58881),
                 f = n(530732);
             const D = c().d2414d31,
@@ -614,16 +618,16 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: r, color: d, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: h, retainScrollPosition: M, style: k, to: E } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: r, color: d, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: p, isWebRedesign: b, retainScrollPosition: M, style: E, to: I } = this.props,
                         { location: S } = this.state,
-                        A = E ? this._getMemoizedLink(E, M) : void 0,
-                        T = s ? s(E) : S?.pathname === A?.pathname,
-                        I = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
-                        v = h ? "medium" : T ? "bold" : "medium";
-                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: I, link: A, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && T ? [C.pillActiveStyle] : []), c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, k], withoutInteractiveStyles: h }, ({ isFocused: t, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(T, s, h, u) }, c && C.compactText, h && t && C.focusedText, u && C.pillTextStyle, u && T && C.pillActiveTextStyle, u && s && C.pillHoverTextStyle], weight: v }, e && o.createElement(e, { style: C.icon }), r, h || u ? null : o.createElement(i.Z, { style: T && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(b.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : a ? o.createElement(b.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                        k = I ? this._getMemoizedLink(I, M) : void 0,
+                        A = s ? s(I) : S?.pathname === k?.pathname,
+                        T = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
+                        v = b ? "medium" : A ? "bold" : "medium";
+                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": A, focusable: !!A, interactiveStyles: T, link: k, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && A ? [C.pillActiveStyle] : []), c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, E], withoutInteractiveStyles: b }, ({ isFocused: t, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(m.ZP, { size: b ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(A, s, b, u) }, c && C.compactText, b && t && C.focusedText, u && C.pillTextStyle, u && A && C.pillActiveTextStyle, u && s && C.pillHoverTextStyle], weight: v }, e && o.createElement(e, { style: C.icon }), r, b || u ? null : o.createElement(i.Z, { style: A && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), n ? o.createElement(h.Z, { count: n, standalone: !0, style: [C.badge, n >= 10 && C.multiDigitBadge, n >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : a ? o.createElement(h.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
-            (M.contextType = h.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            (M.contextType = b.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
             const C = l.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
@@ -647,26 +651,26 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                k = M,
-                E = l.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                E = M,
+                I = l.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 S = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: l, isRoundedRect: i, links: s, style: c, visibleItemIndex: u }) => {
                     const p = s
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
                         { isWebRedesign: m } = d.ZP.useProps(),
-                        b = m() && !l,
-                        h = o.useMemo(
+                        h = m() && !l,
+                        b = o.useMemo(
                             () =>
                                 s.filter(Boolean).map(({ label: t, viewType: r, ...d }, s) => {
-                                    const c = b ? [E.linkRedesign, 0 === s && E.firstLinkRedesign, e && 0 === s && E.withNoPaddingStart] : void 0;
-                                    return o.createElement(k, (0, a.Z)({ viewType: r }, d, { isCompact: n, isPillLink: l, isRoundedRect: i, isWebRedesign: b, style: c }), t);
+                                    const c = h ? [I.linkRedesign, 0 === s && I.firstLinkRedesign, e && 0 === s && I.withNoPaddingStart] : void 0;
+                                    return o.createElement(E, (0, a.Z)({ viewType: r }, d, { isCompact: n, isPillLink: l, isRoundedRect: i, isWebRedesign: h, style: c }), t);
                                 }),
-                            [e, n, l, i, b, s],
+                            [e, n, l, i, h, s],
                         );
-                    return o.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: l && E.gap, childrenStyle: !b && E.flexGrow, key: p, style: [l ? null : E.segmentedControl, b && E.leftAligned, c], visibleItemIndex: u }, h);
+                    return o.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: l && I.gap, childrenStyle: !h && I.flexGrow, key: p, style: [l ? null : I.segmentedControl, h && I.leftAligned, c], visibleItemIndex: u }, b);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.62cc349a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.749d0bea.js.map

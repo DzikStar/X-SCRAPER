@@ -28,7 +28,7 @@
                 u = o.iH({ component: d, shouldDisplayBorder: (0, r.Z)(!1), defaultScribeNamespace: { element: "tile" } }).getHandler();
         },
         936619: (e, t, n) => {
-            n.d(t, { Z: () => w });
+            n.d(t, { Z: () => E });
             var r = n(202784),
                 o = n(157396),
                 a = n(325686),
@@ -73,10 +73,10 @@
                 y = n(151587),
                 v = n(668214),
                 k = n(919022);
-            const T = (e, t) => {
+            const Z = (e, t) => {
                     if (t.entry.content.content.broadcast) return k.ZP.select(e, t.entry.content.content.broadcast.userId);
                 },
-                E = ({ broadcastUser: e, entry: t, feedbackItems: n }) => {
+                T = ({ broadcastUser: e, entry: t, feedbackItems: n }) => {
                     let a, i, s;
                     const c = t.content,
                         { content: l, image: d, url: u } = c;
@@ -90,7 +90,7 @@
                         g = r.useMemo(() => (s ? r.createElement(b.Z, { feedbackItems: n }) : null), [s, n]);
                     return r.createElement(C, { "aria-label": a || "", attribution: e, badge: m, containerStyle: y.g.containerStyle, description: s, image: d, link: h, onClick: p, rightControl: g });
                 },
-                w = (0, v.Z)().propsFromState(() => ({ broadcastUser: T }))(r.memo(E));
+                E = (0, v.Z)().propsFromState(() => ({ broadcastUser: Z }))(r.memo(T));
         },
         407920: (e, t, n) => {
             n.r(t), n.d(t, { default: () => i });
@@ -500,65 +500,33 @@
             var r = n(157396);
             const o = (0, n(587878).Z)({ palette: r.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        452661: (e, t, n) => {
-            n.d(t, { Z: () => g });
+        151624: (e, t, n) => {
+            n.d(t, { Z: () => r });
+            const r = n(454479).Z;
+        },
+        454479: (e, t, n) => {
+            n.d(t, { Z: () => h });
             var r = n(18198),
-                o = {
-                    centroidDimension: function (e, t, n, r) {
-                        var a = e.touchBank,
-                            i = 0,
-                            s = 0,
-                            c = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
-                        if (null !== c) c.touchActive && c.currentTimeStamp > t && ((i += r && n ? c.currentPageX : r && !n ? c.currentPageY : !r && n ? c.previousPageX : c.previousPageY), (s = 1));
-                        else
-                            for (var l = 0; l < a.length; l++) {
-                                var d = a[l];
-                                if (null != d && d.touchActive && d.currentTimeStamp >= t) {
-                                    (i += r && n ? d.currentPageX : r && !n ? d.currentPageY : !r && n ? d.previousPageX : d.previousPageY), s++;
-                                }
-                            }
-                        return s > 0 ? i / s : o.noCentroid;
-                    },
-                    currentCentroidXOfTouchesChangedAfter: function (e, t) {
-                        return o.centroidDimension(e, t, !0, !0);
-                    },
-                    currentCentroidYOfTouchesChangedAfter: function (e, t) {
-                        return o.centroidDimension(e, t, !1, !0);
-                    },
-                    previousCentroidXOfTouchesChangedAfter: function (e, t) {
-                        return o.centroidDimension(e, t, !0, !1);
-                    },
-                    previousCentroidYOfTouchesChangedAfter: function (e, t) {
-                        return o.centroidDimension(e, t, !1, !1);
-                    },
-                    currentCentroidX: function (e) {
-                        return o.centroidDimension(e, 0, !0, !0);
-                    },
-                    currentCentroidY: function (e) {
-                        return o.centroidDimension(e, 0, !1, !0);
-                    },
-                    noCentroid: -1,
-                };
-            const a = o;
-            var i = a.currentCentroidXOfTouchesChangedAfter,
-                s = a.currentCentroidYOfTouchesChangedAfter,
-                c = a.previousCentroidXOfTouchesChangedAfter,
-                l = a.previousCentroidYOfTouchesChangedAfter,
-                d = a.currentCentroidX,
-                u = a.currentCentroidY,
-                m = {
+                o = n(661841),
+                a = o.Z.currentCentroidXOfTouchesChangedAfter,
+                i = o.Z.currentCentroidYOfTouchesChangedAfter,
+                s = o.Z.previousCentroidXOfTouchesChangedAfter,
+                c = o.Z.previousCentroidYOfTouchesChangedAfter,
+                l = o.Z.currentCentroidX,
+                d = o.Z.currentCentroidY,
+                u = {
                     _initializeGestureState(e) {
                         (e.moveX = 0), (e.moveY = 0), (e.x0 = 0), (e.y0 = 0), (e.dx = 0), (e.dy = 0), (e.vx = 0), (e.vy = 0), (e.numberActiveTouches = 0), (e._accountsForMovesUpTo = 0);
                     },
                     _updateGestureStateOnMove(e, t) {
-                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = i(t, e._accountsForMovesUpTo)), (e.moveY = s(t, e._accountsForMovesUpTo));
+                        (e.numberActiveTouches = t.numberActiveTouches), (e.moveX = a(t, e._accountsForMovesUpTo)), (e.moveY = i(t, e._accountsForMovesUpTo));
                         var n = e._accountsForMovesUpTo,
-                            r = c(t, n),
-                            o = i(t, n),
-                            a = l(t, n),
-                            d = s(t, n),
+                            r = s(t, n),
+                            o = a(t, n),
+                            l = c(t, n),
+                            d = i(t, n),
                             u = e.dx + (o - r),
-                            m = e.dy + (d - a),
+                            m = e.dy + (d - l),
                             p = t.mostRecentTimeStamp - e._accountsForMovesUpTo;
                         (e.vx = (u - e.dx) / p), (e.vy = (m - e.dy) / p), (e.dx = u), (e.dy = m), (e._accountsForMovesUpTo = t.mostRecentTimeStamp);
                     },
@@ -569,10 +537,10 @@
                             panHandlers: {
                                 onStartShouldSetResponder: (t) => null != e.onStartShouldSetPanResponder && e.onStartShouldSetPanResponder(t, n),
                                 onMoveShouldSetResponder: (t) => null != e.onMoveShouldSetPanResponder && e.onMoveShouldSetPanResponder(t, n),
-                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && m._initializeGestureState(n), (n.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, n)),
+                                onStartShouldSetResponderCapture: (t) => (1 === t.nativeEvent.touches.length && u._initializeGestureState(n), (n.numberActiveTouches = t.touchHistory.numberActiveTouches), null != e.onStartShouldSetPanResponderCapture && e.onStartShouldSetPanResponderCapture(t, n)),
                                 onMoveShouldSetResponderCapture(t) {
                                     var r = t.touchHistory;
-                                    return n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (m._updateGestureStateOnMove(n, r), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, n));
+                                    return n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (u._updateGestureStateOnMove(n, r), !!e.onMoveShouldSetPanResponderCapture && e.onMoveShouldSetPanResponderCapture(t, n));
                                 },
                                 onResponderGrant: (o) => (
                                     t.handle || (t.handle = r.Z.createInteractionHandle()),
@@ -581,18 +549,18 @@
                                             clearTimeout(e.timeout);
                                         })(t),
                                     (t.shouldCancelClick = !0),
-                                    (n.x0 = d(o.touchHistory)),
-                                    (n.y0 = u(o.touchHistory)),
+                                    (n.x0 = l(o.touchHistory)),
+                                    (n.y0 = d(o.touchHistory)),
                                     (n.dx = 0),
                                     (n.dy = 0),
                                     e.onPanResponderGrant && e.onPanResponderGrant(o, n),
                                     null == e.onShouldBlockNativeResponder || e.onShouldBlockNativeResponder(o, n)
                                 ),
                                 onResponderReject(r) {
-                                    p(t, e.onPanResponderReject, r, n);
+                                    m(t, e.onPanResponderReject, r, n);
                                 },
                                 onResponderRelease(r) {
-                                    p(t, e.onPanResponderRelease, r, n), h(t), m._initializeGestureState(n);
+                                    m(t, e.onPanResponderRelease, r, n), p(t), u._initializeGestureState(n);
                                 },
                                 onResponderStart(t) {
                                     var r = t.touchHistory;
@@ -600,14 +568,14 @@
                                 },
                                 onResponderMove(t) {
                                     var r = t.touchHistory;
-                                    n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (m._updateGestureStateOnMove(n, r), e.onPanResponderMove && e.onPanResponderMove(t, n));
+                                    n._accountsForMovesUpTo !== r.mostRecentTimeStamp && (u._updateGestureStateOnMove(n, r), e.onPanResponderMove && e.onPanResponderMove(t, n));
                                 },
                                 onResponderEnd(r) {
                                     var o = r.touchHistory;
-                                    (n.numberActiveTouches = o.numberActiveTouches), p(t, e.onPanResponderEnd, r, n);
+                                    (n.numberActiveTouches = o.numberActiveTouches), m(t, e.onPanResponderEnd, r, n);
                                 },
                                 onResponderTerminate(r) {
-                                    p(t, e.onPanResponderTerminate, r, n), h(t), m._initializeGestureState(n);
+                                    m(t, e.onPanResponderTerminate, r, n), p(t), u._initializeGestureState(n);
                                 },
                                 onResponderTerminationRequest: (t) => null == e.onPanResponderTerminationRequest || e.onPanResponderTerminationRequest(t, n),
                                 onClickCapture: (e) => {
@@ -618,16 +586,56 @@
                         };
                     },
                 };
-            function p(e, t, n, o) {
+            function m(e, t, n, o) {
                 e.handle && (r.Z.clearInteractionHandle(e.handle), (e.handle = null)), t && t(n, o);
             }
-            function h(e) {
+            function p(e) {
                 e.timeout = setTimeout(() => {
                     e.shouldCancelClick = !1;
                 }, 250);
             }
-            const g = m;
+            const h = u;
+        },
+        661841: (e, t, n) => {
+            n.d(t, { Z: () => o });
+            var r = {
+                centroidDimension: function (e, t, n, o) {
+                    var a = e.touchBank,
+                        i = 0,
+                        s = 0,
+                        c = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                    if (null !== c) c.touchActive && c.currentTimeStamp > t && ((i += o && n ? c.currentPageX : o && !n ? c.currentPageY : !o && n ? c.previousPageX : c.previousPageY), (s = 1));
+                    else
+                        for (var l = 0; l < a.length; l++) {
+                            var d = a[l];
+                            if (null != d && d.touchActive && d.currentTimeStamp >= t) {
+                                (i += o && n ? d.currentPageX : o && !n ? d.currentPageY : !o && n ? d.previousPageX : d.previousPageY), s++;
+                            }
+                        }
+                    return s > 0 ? i / s : r.noCentroid;
+                },
+                currentCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !0);
+                },
+                currentCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !0);
+                },
+                previousCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !1);
+                },
+                previousCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !1);
+                },
+                currentCentroidX: function (e) {
+                    return r.centroidDimension(e, 0, !0, !0);
+                },
+                currentCentroidY: function (e) {
+                    return r.centroidDimension(e, 0, !1, !0);
+                },
+                noCentroid: -1,
+            };
+            const o = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TileHandler.2096111a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TileHandler.c4133f6a.js.map
