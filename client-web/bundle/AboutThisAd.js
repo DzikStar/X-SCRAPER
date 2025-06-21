@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: a, isFullWidth: n, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: g, subtitle: b, title: w, titleDomId: B, titleIconCell: k, titleIconCellSize: y, withBackground: x, withWideContainer: C } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: a, isFullWidth: n, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: b, subtitle: g, title: w, titleDomId: B, titleIconCell: k, titleIconCellSize: y, withBackground: x, withWideContainer: C } = this.props,
                         { isModal: Z } = this.context,
                         _ = a ? c : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         L = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!x, Z, !!f);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: d, leftControl: _, middleControl: h, position: p(u, Z, i), rightControl: m, style: g, subtitle: b, title: w, titleDomId: B, titleIconCell: k, titleIconCellSize: y, withBackground: L, withWideContainer: C }), f || null);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: d, leftControl: _, middleControl: h, position: p(u, Z, i), rightControl: m, style: b, subtitle: g, title: w, titleDomId: B, titleIconCell: k, titleIconCellSize: y, withBackground: L, withWideContainer: C }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -61,9 +61,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, rightControl: g, secondaryBar: b, subtitle: w, title: B } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, rightControl: b, secondaryBar: g, subtitle: w, title: B } = this.props,
                                 { isModal: k } = this.context;
-                            return r.createElement(i.Z, { style: k ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(c.ZP, { backButtonType: o || (k ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !k, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, ref: e, rightControl: g, secondaryBar: b, style: [k && m.appBarModal, t], subtitle: w, title: B, titleDomId: d.Q_ }));
+                            return r.createElement(i.Z, { style: k ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(c.ZP, { backButtonType: o || (k ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !k, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, ref: e, rightControl: b, secondaryBar: g, style: [k && m.appBarModal, t], subtitle: w, title: B, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -72,10 +72,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: u, title: f, withoutBottomBarMobile: g } = this.props,
-                        { isModal: b } = this.context,
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: u, title: f, withoutBottomBarMobile: b } = this.props,
+                        { isModal: g } = this.context,
                         w = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(l.Z, null, r.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: f }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, b && m.rootModal] }, !b && w, r.createElement(a.Z, { isFullWidth: d, isLarge: c, style: [m.container, b && m.containerModal, n] }, b ? r.createElement(h.Z, { style: m.viewport }, w, o) : o), t ? r.createElement(i.Z, { style: [m.bottomBarModal, !b && !g && m.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: d, isLarge: c }, t)) : null));
+                    return r.createElement(l.Z, null, r.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: f }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, g && m.rootModal] }, !g && w, r.createElement(a.Z, { isFullWidth: d, isLarge: c, style: [m.container, g && m.containerModal, n] }, g ? r.createElement(h.Z, { style: m.viewport }, w, o) : o), t ? r.createElement(i.Z, { style: [m.bottomBarModal, !g && !b && m.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: d, isLarge: c }, t)) : null));
                 }
             }
             (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = n.Z);
@@ -125,17 +125,22 @@
         164169: (e, t, o) => {
             o.r(t), o.d(t, { AboutThisAdScreen: () => u, default: () => m });
             var r = o(202784),
-                i = o(362075),
-                a = o(392237),
-                n = o(111677),
-                s = o.n(n),
-                l = o(980407),
-                d = o(668214);
-            const c = (e, t) => t.match.params.impressionId,
-                p = (0, d.Z)().propsFromState(() => ({ impressionId: c })),
-                h = s().fb4ee11c,
-                u = ({ history: e, impressionId: t }) => r.createElement(l.Z, { history: e, title: h }, r.createElement(i.Z, { allowForms: !0, src: `/about-ads?aid=${t || ""}`, style: a.default.absoluteFill })),
-                m = p(u);
+                i = o(107267),
+                a = o(362075),
+                n = o(392237),
+                s = o(111677),
+                l = o.n(s),
+                d = o(980407),
+                c = o(668214);
+            const p = (e, t) => t.match.params.impressionId,
+                h = (0, c.Z)().propsFromState(() => ({ impressionId: p })),
+                u = ({ history: e, impressionId: t }) => {
+                    const o = (0, i.useLocation)(),
+                        s = o.state?.isQuickPromote,
+                        c = s ? l().b3b642fc : l().fb4ee11c;
+                    return r.createElement(d.Z, { history: e, title: c }, r.createElement(a.Z, { allowForms: !0, src: `/about-ads?aid=${t || ""}${s ? "&isQP=true" : ""}`, style: n.default.absoluteFill }));
+                },
+                m = h(u);
         },
         362075: (e, t, o) => {
             o.d(t, { Z: () => h });
@@ -191,4 +196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AboutThisAd.d1d4dfca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AboutThisAd.7b732c7a.js.map

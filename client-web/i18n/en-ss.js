@@ -1286,6 +1286,9 @@
                 a("b0d1e205", function (e) {
                     return '[[293056]] Searching for **"' + e.query + '"**';
                 }),
+                a("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 a("bf970edd", function (e) {
                     return '[[296469]] Searching 𝕏 for "' + e.query + '"';
                 }),
@@ -1918,9 +1921,9 @@
                 a("a8f09fb8", "[[287352]] Delete block"),
                 a("i89195ea", "[[287259]] Divider"),
                 a("da8ac57c", "[[284900]] Edit Caption"),
-                a("a8fdd09c", "[[284919]] Publish Article"),
-                a("d8047cc8", "[[221087]] Publish");
-            a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                a("a8fdd09c", "[[284919]] Publish Article");
+            a("d8047cc8", "[[221087]] Publish"),
+                a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
                 a("e52d4998", "[[284896]] Choose your audience"),
                 a("d7985b24", "[[288078]] Choose who can reply to this Article"),
@@ -2974,9 +2977,9 @@
                     return "[[276858]] " + e.entity + " was removed from your Bookmarks";
                 }),
                 a("d6d9aab6", "[[244742]] Add Bookmark"),
-                a("bb89cf46", "[[244743]] Remove Bookmark"),
-                a("a739d4ba", "[[244741]] Add to Bookmark Folder");
-            a("d5270434", "[[240145]] Exit"),
+                a("bb89cf46", "[[244743]] Remove Bookmark");
+            a("a739d4ba", "[[244741]] Add to Bookmark Folder"),
+                a("d5270434", "[[240145]] Exit"),
                 a("ac85c6b2", "[[177517]] An error occurred loading this image"),
                 a("b327c12a", "[[191524]] Image"),
                 a("ic76bdf0", "[[292216]] Recreate this with Grok"),
@@ -3900,9 +3903,9 @@
                 a("cd133486", "[[238308]] Invite"),
                 a("f2333850", "[[283614]] Share with people outside of X"),
                 a("cddb8097", "Learn more"),
-                a("f77997b0", "[[236782]] Co-host"),
-                a("i48f4ed8", "[[51016]] Speaker");
-            a("a77c8e02", "[[230208]] Listener"),
+                a("f77997b0", "[[236782]] Co-host");
+            a("i48f4ed8", "[[51016]] Speaker"),
+                a("a77c8e02", "[[230208]] Listener"),
                 a("bdfa93eb", function (e) {
                     return "[[233127]] Shared by " + e.name;
                 }),
@@ -4254,12 +4257,10 @@
                 a("d66bf142", "[[292553]] Thu"),
                 a("dc17968a", "[[292548]] Fri"),
                 a("j310a2d6", "[[292550]] Sat"),
-                a("afa2a58e", "[[296463]] See all posts"),
-                a("fc83e7e2", "[[296470]] See all users"),
-                a("df601d92", "[[296461]] Relevant Users"),
                 a("db6c20cf", function (e) {
                     return "[[296468]] Show all (" + e.count + ")";
                 }),
+                a("df601d92", "[[296461]] Relevant Users"),
                 a("d7cb5408", "[[290891]] Relevant Web Pages"),
                 a("ca93f2ee", "[[289932]] This message has been deleted."),
                 a("b8c06820", "[[287580]] Copy text"),
@@ -4339,7 +4340,7 @@
                 a("g3ce0132", "[[292985]] Thought for"),
                 a("f8007364", "[[293070]] Expand for details"),
                 a("ca53f780", "[[293067]] Collapse details"),
-                a("e6d51c62", "Searching"),
+                a("e6d51c62", "[[296572]] Searching"),
                 a("ib1c5475", function (e) {
                     return "[[294827]] Thought for " + e.minutes + "m " + e.seconds + "s";
                 }),
@@ -4925,9 +4926,9 @@
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
                 a("if2909ba", "[[292000]] Watch Time"),
                 a("i0e5bf4c", "[[293195]] Your videos"),
-                a("ed99baea", "[[289716]] Early Beta Access");
-            a("gf898b70", "[[289702]] Advanced Search"),
-                a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
+                a("ed99baea", "[[289716]] Early Beta Access"),
+                a("gf898b70", "[[289702]] Advanced Search");
+            a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
                 a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '[[289700]] "ai startup"'),
@@ -5881,9 +5882,9 @@
                 a("e41c9b4f", function (e) {
                     return "[[242357]] Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "[[242318]] Delete Folder");
-            a("f4ea967a", "[[242841]] Folder has been deleted"),
-                a("b670aa62", "[[242315]] Folder Name"),
+                a("h18f86a4", "[[242318]] Delete Folder"),
+                a("f4ea967a", "[[242841]] Folder has been deleted");
+            a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
                 a("e3299b94", "[[242842]] Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "[[242843]] Something went wrong. Try deleting that folder again in a minute."),
@@ -6887,9 +6888,9 @@
                 a("c924ad84", "[[293326]] Keep videos playing"),
                 a("de750a3c", "[[293320]] Enjoy them even when your phone is locked"),
                 a("he5e87c4", "[[293316]] Boost your replies"),
-                a("g64a60ba", "[[293325]] Get a small prioritization when you reply to posts");
-            a("a7ee832a", "[[293321]] Fix typos and mistakes, up to 60 minutes"),
-                a("fdd77a34", "[[293319]] Create longer posts"),
+                a("g64a60ba", "[[293325]] Get a small prioritization when you reply to posts"),
+                a("a7ee832a", "[[293321]] Fix typos and mistakes, up to 60 minutes");
+            a("fdd77a34", "[[293319]] Create longer posts"),
                 a("j6d26a7a", "[[293330]] Write as much as you’d like to share"),
                 a("c4fd68da", "[[293317]] Customize your experience"),
                 a("c0195168", "[[293318]] Change your app icon and navigation options"),
@@ -7867,7 +7868,10 @@
                 a("b719e224", "[[196494]] No results"),
                 a("c9938100", "[[220491]] Search results"),
                 a("d1a35ec6", "[[274371]] Add accounts"),
-                a("b437adda", "[[281591]] Upgrade to paid");
+                a("b437adda", "[[281591]] Upgrade to paid"),
+                a("f1f6c88b", function (e) {
+                    return "[[274679]] Accounts (" + e.count + ")";
+                });
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7906,10 +7910,7 @@
                     r(e, t)
                 );
             }
-            a("f1f6c88b", function (e) {
-                return "[[274679]] Accounts (" + e.count + ")";
-            }),
-                a("b02156b8", "[[274681]] Invitations"),
+            a("b02156b8", "[[274681]] Invitations"),
                 a("gd67d29b", function (e) {
                     return "[[274680]] Invitations (" + e.count + ")";
                 }),
@@ -8909,9 +8910,9 @@
                 a("a7bf9962", "[[276485]] Download video"),
                 a("ccc97152", "[[238866]] Playback speed"),
                 a("h531ade0", "[[286295]] Video quality"),
-                a("e8b5757c", "[[246420]] 0.25x");
-            a("e7e954de", "[[238867]] 0.5x"),
-                a("g07ffe66", "[[246423]] 0.75x"),
+                a("e8b5757c", "[[246420]] 0.25x"),
+                a("e7e954de", "[[238867]] 0.5x");
+            a("g07ffe66", "[[246423]] 0.75x"),
                 a("d8bede9e", "[[246421]] 1x"),
                 a("j41845c8", "[[246422]] 1.25x"),
                 a("e9eeed9e", "[[238868]] 1.5x"),
@@ -13334,4 +13335,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.4e27349a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.ee02baca.js.map

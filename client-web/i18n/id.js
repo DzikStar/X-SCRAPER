@@ -1280,31 +1280,34 @@
                 i("c3f04d9c", "Berpikir"),
                 i("cbdddb0a", "Selesai"),
                 i("ie2bbeed", function (a) {
-                    return 'Searching for "' + a.query + '"';
+                    return 'Mencari "' + a.query + '"';
                 }),
                 i("b0d1e205", function (a) {
                     return 'Mencari **"' + a.query + '"**';
                 }),
+                i("f259119d", function (a) {
+                    return 'Searching the web for "' + a.query + '"';
+                }),
                 i("bf970edd", function (a) {
-                    return 'Searching 𝕏 for "' + a.query + '"';
+                    return 'Mencari "' + a.query + '" di 𝕏 ';
                 }),
                 i("g008d475", function (a) {
-                    return "Browsing " + a.url;
+                    return "Menjelajah " + a.url;
                 }),
                 i("c91e3971", function (a) {
-                    return "Browsing " + a.url + ' for "' + a.query + '"';
+                    return 'Menjelajah "' + a.query + '" di ' + a.url;
                 }),
                 i("acb9b845", function (a) {
                     return 'Menjelajah **"' + a.query + '"** di ' + a.url;
                 }),
                 i("j9006405", function (a) {
-                    return "Searching 𝕏 posts by @" + a.username;
+                    return "Mencari postingan 𝕏 dari @" + a.username;
                 }),
                 i("a2dd07e5", function (a) {
-                    return "Searching 𝕏 posts by @" + a.username + ' for "' + a.query + '"';
+                    return 'Mencari "' + a.query + '" di postingan 𝕏 dari @' + a.username + " ";
                 }),
                 i("e99fb7a3", function (a) {
-                    return "Searching 𝕏 posts by @" + a.username + ' for **"' + a.query + '"**';
+                    return 'Mencari **"' + a.query + '"** di postingan 𝕏 dari @' + a.username + " ";
                 }),
                 i("ead81122", "Ada kesalahan teknis, silakan refresh untuk menyambungkan kembali atau coba lagi."),
                 i("f808a13a", "Batas maksimal tercapai. Silakan tunggu beberapa saat, lalu coba lagi."),
@@ -1316,8 +1319,8 @@
                 i("j77292b7", function (a) {
                     return "Harap pilih hingga " + a.count + " file";
                 }),
-                i("d6b533dc", "Rate this translation:"),
-                i("j2f9ab6e", "Thank you for your feedback!"),
+                i("d6b533dc", "Nilai terjemahan ini:"),
+                i("j2f9ab6e", "Terima kasih atas umpan balik Anda!"),
                 i("d56779a2", "mudah dipahami"),
                 i("b6fe8a56", "membingungkan atau tidak jelas"),
                 i("i73a7d48", "Diterjemahkan oleh Google"),
@@ -1348,7 +1351,7 @@
                     return "Diterjemahkan dari bahasa " + a.originLanguage + " oleh";
                 }),
                 i("b7cb4fab", "Diterjemahkan oleh"),
-                i("e0bffbf8", "About automatic translation"),
+                i("e0bffbf8", "Tentang terjemahan otomatis"),
                 i("e839db3a", "Tutup"),
                 i("a15585b4", "Pengaturan Bahasa"),
                 i("d4c339b9", function (a) {
@@ -1917,9 +1920,9 @@
                 i("a8f09fb8", "Hapus blok"),
                 i("i89195ea", "Pembagi"),
                 i("da8ac57c", "Edit Teks Keterangan"),
-                i("a8fdd09c", "Terbitkan Artikel"),
-                i("d8047cc8", "Terbitkan");
-            i("ff7ddca2", "Artikel Anda akan muncul sebagai postingan setelah Anda terbitkan. Anda juga dapat menemukannya di tab Artikel pada profil Anda."),
+                i("a8fdd09c", "Terbitkan Artikel");
+            i("d8047cc8", "Terbitkan"),
+                i("ff7ddca2", "Artikel Anda akan muncul sebagai postingan setelah Anda terbitkan. Anda juga dapat menemukannya di tab Artikel pada profil Anda."),
                 i("ef34d7be", "Audiens dan kontrol balasan tidak dapat diedit setelah artikel diterbitkan."),
                 i("e52d4998", "Pilih audiens Anda"),
                 i("d7985b24", "Pilih siapa yang bisa membalas Artikel ini"),
@@ -2973,9 +2976,9 @@
                     return a.entity + " dihapus dari Markah Anda";
                 }),
                 i("d6d9aab6", "Tambahkan Markah"),
-                i("bb89cf46", "Hapus Markah"),
-                i("a739d4ba", "Tambahkan ke Folder Markah");
-            i("d5270434", "Keluar"),
+                i("bb89cf46", "Hapus Markah");
+            i("a739d4ba", "Tambahkan ke Folder Markah"),
+                i("d5270434", "Keluar"),
                 i("ac85c6b2", "Terjadi kesalahan saat memuat gambar ini"),
                 i("b327c12a", "Gambar"),
                 i("ic76bdf0", "Buat ulang gambar ini dengan Grok"),
@@ -3899,9 +3902,9 @@
                 i("cd133486", "Undang"),
                 i("f2333850", "Bagikan dengan orang di luar X"),
                 i("cddb8097", "Pelajari lebih lanjut"),
-                i("f77997b0", "Co-host"),
-                i("i48f4ed8", "Pembicara");
-            i("a77c8e02", "Pendengar"),
+                i("f77997b0", "Co-host");
+            i("i48f4ed8", "Pembicara"),
+                i("a77c8e02", "Pendengar"),
                 i("bdfa93eb", function (a) {
                     return "Dibagikan oleh " + a.name;
                 }),
@@ -4182,10 +4185,10 @@
                 i("j7b5c844", "Anda bertanggung jawab atas percakapan yang Anda bagikan secara publik. Jangan membagikan informasi sensitif dan rahasia tentang diri Anda atau orang lain dalam percakapan dengan Grok (lihat Pusat Bantuan kami)."),
                 i("c9f7c196", "Pusat bantuan"),
                 i("fb3b9776", "Output Grok telah disesuaikan oleh pengguna ini."),
-                i("b0a889d4", "As Image"),
-                i("a111fb48", "As Spreadsheet"),
-                i("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                i("bd202fe6", "Generating card"),
+                i("b0a889d4", "Sebagai Gambar"),
+                i("a111fb48", "Sebagai Spreadsheet"),
+                i("bccc65f0", "Grok bisa membuat kesalahan. Selalu periksa sumber aslinya."),
+                i("bd202fe6", "Membuat kartu"),
                 i("bfd161bc", "Bandingkan"),
                 i("j5dcf1b2", "Diperbarui"),
                 i("a50aaa10", "Pra-Bursa"),
@@ -4217,8 +4220,8 @@
                 i("dd679fb1", function (a) {
                     return "Terendah Sepanjang Waktu" + a.ttc_stock_details;
                 }),
-                i("ha9c4cf8", "View source"),
-                i("ecad5d78", "Save image"),
+                i("ha9c4cf8", "Lihat sumber"),
+                i("ecad5d78", "Simpan gambar"),
                 i("d2d1d398", "Disalin!"),
                 i("a22063d2", "Bagikan lokasi Anda untuk akurasi yang lebih baik."),
                 i("db3248a8", "Memuat lokasi"),
@@ -4253,12 +4256,10 @@
                 i("d66bf142", "Kam"),
                 i("dc17968a", "Jum"),
                 i("j310a2d6", "Sab"),
-                i("afa2a58e", "See all posts"),
-                i("fc83e7e2", "See all users"),
-                i("df601d92", "Relevant Users"),
                 i("db6c20cf", function (a) {
-                    return "Show all (" + a.count + ")";
+                    return "Tampilkan semua (" + a.count + ")";
                 }),
+                i("df601d92", "Pengguna Relevan"),
                 i("d7cb5408", "Halaman Web yang Relevan"),
                 i("ca93f2ee", "Pesan ini sudah dihapus."),
                 i("b8c06820", "Salin teks"),
@@ -4328,7 +4329,7 @@
                 i("db832e38", "Harap aktifkan notifikasi di pengaturan browser"),
                 i("a910cac6", "Ada masalah saat mengaktifkan notifikasi"),
                 i("be30b6ee", "Koneksi tidak stabil"),
-                i("ge15b488", "Show thoughts"),
+                i("ge15b488", "Tampilkan pemikiran"),
                 i("aa7c96bb", function (a) {
                     return "Lihat " + a.numResults + " lainnya";
                 }),
@@ -4338,7 +4339,7 @@
                 i("g3ce0132", "Berpikir selama"),
                 i("f8007364", "Perluas untuk menampilkan detail"),
                 i("ca53f780", "Ciutkan detail"),
-                i("e6d51c62", "Searching"),
+                i("e6d51c62", "Mencari"),
                 i("ib1c5475", function (a) {
                     return "Berpikir selama " + a.minutes + " mnt " + a.seconds + " dtk";
                 }),
@@ -4924,9 +4925,9 @@
                 i("e41fffbc", "Total waktu tonton video Anda."),
                 i("if2909ba", "Waktu Tonton"),
                 i("i0e5bf4c", "Video Anda"),
-                i("ed99baea", "Akses Beta Lebih Awal");
-            i("gf898b70", "Pencarian Lanjutan"),
-                i("d2a43a7a", 'berisi "ai" dan "startup"'),
+                i("ed99baea", "Akses Beta Lebih Awal"),
+                i("gf898b70", "Pencarian Lanjutan");
+            i("d2a43a7a", 'berisi "ai" dan "startup"'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", 'berisi frasa yang sama persis dengan "startup ai"'),
                 i("j8ee77c4", '"startup ai"'),
@@ -5880,9 +5881,9 @@
                 i("e41c9b4f", function (a) {
                     return "Disimpan ke " + a.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Hapus Folder?");
-            i("f4ea967a", "Folder sudah dihapus"),
-                i("b670aa62", "Nama Folder"),
+                i("h18f86a4", "Hapus Folder?"),
+                i("f4ea967a", "Folder sudah dihapus");
+            i("b670aa62", "Nama Folder"),
                 i("aece5462", "Nama folder berhasil diperbarui"),
                 i("e3299b94", "Ada kesalahan teknis. Coba perbarui lagi folder tersebut dalam satu menit."),
                 i("c09ea714", "Ada kesalahan teknis. Coba hapus lagi folder tersebut dalam satu menit."),
@@ -6886,9 +6887,9 @@
                 i("c924ad84", "Biarkan video tetap memutar"),
                 i("de750a3c", "Nikmati bahkan ketika layar ponsel Anda terkunci"),
                 i("he5e87c4", "Boost balasan Anda"),
-                i("g64a60ba", "Dapatkan sedikit prioritas saat Anda membalas postingan");
-            i("a7ee832a", "Perbaiki kesalahan pada postingan, hingga 60 menit setelahnya"),
-                i("fdd77a34", "Buat postingan yang lebih panjang"),
+                i("g64a60ba", "Dapatkan sedikit prioritas saat Anda membalas postingan"),
+                i("a7ee832a", "Perbaiki kesalahan pada postingan, hingga 60 menit setelahnya");
+            i("fdd77a34", "Buat postingan yang lebih panjang"),
                 i("j6d26a7a", "Tulis sebanyak yang ingin Anda sebarkan"),
                 i("c4fd68da", "Sesuaikan pengalaman Anda"),
                 i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda"),
@@ -7866,7 +7867,10 @@
                 i("b719e224", "Tidak ada hasil"),
                 i("c9938100", "Hasil pencarian"),
                 i("d1a35ec6", "Tambahkan akun"),
-                i("b437adda", "Tingkatkan ke versi berbayar");
+                i("b437adda", "Tingkatkan ke versi berbayar"),
+                i("f1f6c88b", function (a) {
+                    return "Akun (" + a.count + ")";
+                });
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7905,10 +7909,7 @@
                     d(a, n)
                 );
             }
-            i("f1f6c88b", function (a) {
-                return "Akun (" + a.count + ")";
-            }),
-                i("b02156b8", "Undangan"),
+            i("b02156b8", "Undangan"),
                 i("gd67d29b", function (a) {
                     return "Undangan (" + a.count + ")";
                 }),
@@ -8279,7 +8280,7 @@
                 i("e5e6479e", "Kirimkan email kepada kami berisi pegangan organisasi Anda dan detail permintaan Anda untuk mendapatkan dukungan secepatnya."),
                 i("ica8392a", "Setelah kami menerima permintaan Anda, kami akan meninjau dan memprioritaskannya berdasarkan urutan penerimaannya."),
                 i("ed37e36e", "Penting: Tidak mencantumkan pegangan organisasi Anda atau menggunakan email pribadi dapat membuat pemrosesan permintaan Anda memakan waktu lebih lama."),
-                i("h7e1c146", "Delegate accounts are not currently supported."),
+                i("h7e1c146", "Pendelegasian akun tidak didukung untuk saat ini."),
                 i("eb0d4fe2", "Buat kolom"),
                 i("e93d2f8a", "Ciptakan pengalaman tersendiri dengan menambahkan berbagai kolom seperti:"),
                 i("e8203d1e", "Pencarian"),
@@ -8908,9 +8909,9 @@
                 i("a7bf9962", "Unduh video"),
                 i("ccc97152", "Kecepatan pemutaran"),
                 i("h531ade0", "Kualitas video"),
-                i("e8b5757c", "0,25x");
-            i("e7e954de", "0,5x"),
-                i("g07ffe66", "0,75x"),
+                i("e8b5757c", "0,25x"),
+                i("e7e954de", "0,5x");
+            i("g07ffe66", "0,75x"),
                 i("d8bede9e", "1x"),
                 i("j41845c8", "1,25x"),
                 i("e9eeed9e", "1,5x"),
@@ -9511,11 +9512,11 @@
             var u = e(202784),
                 k = [],
                 m = {};
-            function s(a) {
+            function g(a) {
                 return a;
             }
-            var g = (function (a) {
-                var n, e, i, t, g;
+            var s = (function (a) {
+                var n, e, i, t, s;
                 function b() {
                     return a.apply(this, arguments) || this;
                 }
@@ -12966,21 +12967,21 @@
                             get: function () {
                                 var a,
                                     n = u.Children.toArray(this.props.children),
-                                    e = ((a = this.props.$i18n), k[m[a]] || s);
+                                    e = ((a = this.props.$i18n), k[m[a]] || g);
                                 return function (a, i, t) {
                                     return a.concat(i, n[e(t)]);
                                 };
                             },
                         },
                     ]) && r(i.prototype, t),
-                    g && r(i, g),
+                    s && r(i, s),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     b
                 );
             })(e(111677)._ActualI18NFormatMessage || u.Component);
-            i("_ActualI18NFormatMessage", g),
+            i("_ActualI18NFormatMessage", s),
                 i("I18NFormatMessage", function (a) {
-                    return u.createElement(g, a);
+                    return u.createElement(s, a);
                 });
             var b = e(495075);
             e(800694), e(556829), e(530152), e(658610), e(492344), e(663823);
@@ -13332,4 +13333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.1787220a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.9ef1edda.js.map

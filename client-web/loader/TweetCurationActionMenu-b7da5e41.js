@@ -130,8 +130,8 @@
                 V = "pin",
                 G = "unpin",
                 X = "report",
-                K = "edit",
-                Q = "editWithPremium",
+                Q = "edit",
+                K = "editWithPremium",
                 Y = "whyThisAd",
                 J = "highlight",
                 ee = "highlightUpsell",
@@ -143,11 +143,12 @@
                 re = ({ featureSwitches: e, promotedContent: t, scribeAction: i }) => {
                     if (!t || !t.impression_id) return;
                     const { impression_id: n } = t,
-                        o = e.isTrue("responsive_web_remove_qp_ad_label_enabled");
+                        o = e.isTrue("responsive_web_remove_qp_ad_label_enabled"),
+                        s = a.Z.isQuickPromote(t);
                     return {
-                        text: ((e) => (o && a.Z.isQuickPromote(e) ? _().b3b642fc : _().fb4ee11c))(t),
+                        text: o && s ? _().b3b642fc : _().fb4ee11c,
                         Icon: j.default,
-                        link: { pathname: `/i/about-this-ad/${n}` },
+                        link: { pathname: `/i/about-this-ad/${n}`, state: { isQuickPromote: s } },
                         onClick: () => {
                             i && i({ element: "whythisad" });
                         },
@@ -225,8 +226,8 @@
                 Ve = i(757953);
             const Ge = _().c66afdc3,
                 Xe = _().hbe4feb5,
-                Ke = _().e1618e49;
-            var Qe = i(688715),
+                Qe = _().e1618e49;
+            var Ke = i(688715),
                 Ye = i(529356),
                 Je = i(190286),
                 et = i(520913),
@@ -235,7 +236,7 @@
                 nt = _().j136c720,
                 ot = _().d66f0338,
                 st = `${_().cfc8cb50}\n\n${_().if8dc5f0}`,
-                rt = (0, Qe.ju)("https://help.x.com/using-twitter/mentions-and-replies?lang=browser#hidden-reply"),
+                rt = (0, Ke.ju)("https://help.x.com/using-twitter/mentions-and-replies?lang=browser#hidden-reply"),
                 at = _().b2615c6d,
                 lt = _().i62a03aa,
                 ct = _().cfd2f35e,
@@ -380,11 +381,11 @@
                     };
                 return { confirmation: { render: (e, t) => o.createElement(qt, { isBlueUpsellEligible: n, onCancel: t, onConfirm: e, onHighlight: d, onPinTweet: u, onUndohighlight: c, tweetId: a }) }, testID: ie, text: zt, Icon: Lt.default, onClick() {} };
             };
-            var Kt = i(883437),
-                Qt = i(587103);
+            var Qt = i(883437),
+                Kt = i(587103);
             const Yt = _().bb16cc76,
                 Jt = _().de21174c,
-                ei = (e, t) => o.createElement(Qt.Z, { onCancel: t, onConfirm: e });
+                ei = (e, t) => o.createElement(Kt.Z, { onCancel: t, onConfirm: e });
             var ti = i(383494),
                 ii = i(232130),
                 ni = i(40904),
@@ -398,7 +399,7 @@
                 ui = _().j9552760,
                 hi = _().cfd2f35e,
                 mi = _().d751694c,
-                _i = (0, Qe.ju)("https://support.x.com/articles/20175032"),
+                _i = (0, Ke.ju)("https://support.x.com/articles/20175032"),
                 pi = ({ addFlag: e, addToast: t, createLocalApiErrorHandler: i, muteTweet: n, scribeAction: s, shouldShowMuteEducationTip: r, tweet: a, unmuteTweet: l }) => {
                     const c = () => {
                             e(P.EM);
@@ -504,8 +505,8 @@
             const Vi = _().ab0decc0,
                 Gi = _().d7dbb71b;
             var Xi = i(224823),
-                Ki = i(323683);
-            const Qi = _().ja66a2b5,
+                Qi = i(323683);
+            const Ki = _().ja66a2b5,
                 Yi = _().c2423b7b;
             var Ji = i(659306);
             const en = _().i31dfa4c,
@@ -711,7 +712,7 @@
                                             n = Oe.ZP.tweetTextParts(o.text, o.display_text_range, o.entities).map($e).join("");
                                         }
                                         return {
-                                            testID: K,
+                                            testID: Q,
                                             onClick: () => {
                                                 e.scribeAction({ element: "edit" });
                                             },
@@ -727,7 +728,7 @@
                                         },
                                         text: We,
                                         Icon: De.default,
-                                        testID: Q,
+                                        testID: K,
                                     }))({ tweet: e, scribeAction: s, onClick: this._openEditWithPremiumUpsell });
                             }
                             return null;
@@ -764,11 +765,11 @@
                                 $ = [],
                                 j = a.Z.isPromoted(k) && a.Z.shouldShowAdDisclosure(k),
                                 V = {},
-                                K = this._scribeAction,
-                                Q = { addToast: p, createLocalApiErrorHandler: b, scribeAction: K },
+                                Q = this._scribeAction,
+                                K = { addToast: p, createLocalApiErrorHandler: b, scribeAction: Q },
                                 Y = B.id_str === M;
                             Object.assign(V, this._getCommunityActions()),
-                                j && (V.adInfo = re({ featureSwitches: O, promotedContent: k, scribeAction: K })),
+                                j && (V.adInfo = re({ featureSwitches: O, promotedContent: k, scribeAction: Q })),
                                 Y &&
                                     !this._shouldDisable(S, N.d.ViewTweetActivity) &&
                                     (V.analytics = (({ featureSwitches: e, scribeAction: t, tweet: i }) => {
@@ -783,7 +784,7 @@
                                             Icon: ae.default,
                                             testID: q,
                                         };
-                                    })({ tweet: S, scribeAction: K, featureSwitches: O })),
+                                    })({ tweet: S, scribeAction: Q, featureSwitches: O })),
                                 O.isTrue("responsive_web_delete_tweet_stats_enabled") &&
                                     (V.viewTweetEngagements = (({ featureSwitches: e, scribeAction: t, tweet: i }) => {
                                         const n = e.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
@@ -797,7 +798,7 @@
                                             },
                                             testID: ne,
                                         };
-                                    })({ tweet: S, scribeAction: K, featureSwitches: O })),
+                                    })({ tweet: S, scribeAction: Q, featureSwitches: O })),
                                 B.protected ||
                                     this._shouldDisable(S, N.d.Embed) ||
                                     S.isPreviewDisplay ||
@@ -812,7 +813,7 @@
                                             },
                                             Icon: je.default,
                                         };
-                                    })({ permalink: S.permalink, scribeAction: K, tweet: S, featureSwitches: O }));
+                                    })({ permalink: S.permalink, scribeAction: Q, tweet: S, featureSwitches: O }));
                             const J = l.Z.isArticlePost(S) && O.isTrue("responsive_web_twitter_article_seed_tweet_enabled") && F.isTrueAndEnabled("subscriptions_feature_article_composer");
                             if (J) {
                                 const e = this._getEditArticleAction();
@@ -832,7 +833,7 @@
                                             i({ element: "similar_posts_action" });
                                         },
                                         Icon: wt.default,
-                                    }))({ landingUrl: C.url, isArticle: J, scribeAction: K })),
+                                    }))({ landingUrl: C.url, isArticle: J, scribeAction: Q })),
                                 R &&
                                     S.conversation_id_str === S.id_str &&
                                     !this._shouldDisable(S, N.d.ViewHiddenReplies) &&
@@ -843,7 +844,7 @@
                                             t({ element: "view_moderated_replies" });
                                         },
                                         Icon: tt.default,
-                                    }))({ permalink: S.permalink, scribeAction: K })),
+                                    }))({ permalink: S.permalink, scribeAction: Q })),
                                 ((e, t) => {
                                     const i = t.extended_entities?.media && t.extended_entities.media[0] && t.extended_entities.media[0].features?.all?.tags;
                                     return !!i && (0, Ui.Z)(i, (t) => t.user_id === e);
@@ -878,8 +879,8 @@
                                             ),
                                                 i({ element: "leave_conversation" });
                                         },
-                                        Icon: Kt.default,
-                                    }))({ ...Q, unmentionUserFromConversation: u, tweet: S })),
+                                        Icon: Qt.default,
+                                    }))({ ...K, unmentionUserFromConversation: u, tweet: S })),
                                 M)
                             )
                                 if (
@@ -888,9 +889,9 @@
                                         (V.addOrRemoveFromList = (({ scribeAction: e, user: t }) =>
                                             (0, W.k)(t, () => {
                                                 e({ element: "add_to_list" });
-                                            }))({ user: B, scribeAction: K })),
-                                    this._birdwatchNoteWritingEnabled && !S.isStaleEdit && (V.birdwatch = this._birdwatchAction({ scribeAction: K, tweetId: S.id_str })),
-                                    this._birdwatchNoteRequestEnabled && !S.isStaleEdit && (V.birdwatchRequest = this._birdwatchRequestAction({ scribeAction: K, tweetId: S.id_str })),
+                                            }))({ user: B, scribeAction: Q })),
+                                    this._birdwatchNoteWritingEnabled && !S.isStaleEdit && (V.birdwatch = this._birdwatchAction({ scribeAction: Q, tweetId: S.id_str })),
+                                    this._birdwatchNoteRequestEnabled && !S.isStaleEdit && (V.birdwatchRequest = this._birdwatchRequestAction({ scribeAction: Q, tweetId: S.id_str })),
                                     Y)
                                 ) {
                                     T
@@ -908,12 +909,12 @@
                                                       i({ element: "unpin" });
                                               },
                                               Icon: Lt.default,
-                                          }))({ ...Q, tweetId: S.id_str, unpin: m }))
+                                          }))({ ...K, tweetId: S.id_str, unpin: m }))
                                         : this._shouldDisable(S, N.d.PinToProfile) || (V.pinOrUnpin = this._getHighlightUpsellOnPinAction());
                                     const t = this._getHighlightOrUndoAction();
                                     t && (V.highlightOrUndo = t),
-                                        this._shouldIncludeTweetAppealOption() && (V.appealTweetWarning = Mi({ analytics: w, history: y, isAppealTweetWarning: !0, promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P })),
-                                        L && !this._shouldDisable(S, N.d.MuteConversation) && (V.muteOrUnmuteConversation = pi({ ...Q, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
+                                        this._shouldIncludeTweetAppealOption() && (V.appealTweetWarning = Mi({ analytics: w, history: y, isAppealTweetWarning: !0, promotedContent: k, scribeAction: Q, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P })),
+                                        L && !this._shouldDisable(S, N.d.MuteConversation) && (V.muteOrUnmuteConversation = pi({ ...K, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
                                         U &&
                                             !this._shouldDisable(S, N.d.ConversationControls) &&
                                             (V.changeConversationControls = (({ onChangeConversationControls: e, tweet: t }) => {
@@ -944,36 +945,36 @@
                                                     },
                                                     Icon: ge.default,
                                                 };
-                                            })({ ...Q, deleteTweet: i, onDeleteTweet: v, tweet: S, featureSwitches: O, userClaims: F }));
+                                            })({ ...K, deleteTweet: i, onDeleteTweet: v, tweet: S, featureSwitches: O, userClaims: F }));
                                 } else
                                     E && j && (V.promotedTweetDismiss = ki({ onTweetDismiss: E, hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: this.context.featureSwitches.isTrue("subscriptions_hide_ad_upsell_enabled"), history: y })),
                                         B.blocking ||
                                             this._shouldDisable(S, N.d.Follow) ||
                                             ((V.followOrUnfollow = B.following
                                                 ? (({ addToast: e, createLocalApiErrorHandler: t, promotedContent: i, scribeAction: n, unfollow: o, user: s }) => ({
-                                                      text: Qi({ screenName: s.screen_name }),
+                                                      text: Ki({ screenName: s.screen_name }),
                                                       onClick: () => {
                                                           o(s.id_str, { promotedContent: i }).then((t) => {
                                                               e({ text: Yi({ screenName: s.screen_name }) });
-                                                          }, t(Ki.X)),
+                                                          }, t(Qi.X)),
                                                               n({ element: "unfollow" }),
                                                               n({ action: "unfollow", element: "tweet_curation_action_menu" });
                                                       },
                                                       Icon: Xi.default,
-                                                  }))({ ...Q, unfollow: this.props.unfollow, promotedContent: k, user: B })
+                                                  }))({ ...K, unfollow: this.props.unfollow, promotedContent: k, user: B })
                                                 : (({ addToast: e, createLocalApiErrorHandler: t, follow: i, promotedContent: n, scribeAction: o, user: s }) => ({
                                                       text: Ge({ screenName: s.screen_name }),
                                                       onClick: () => {
                                                           i(s.id_str, { promotedContent: n }).then(
                                                               () => {
-                                                                  o({ element: "follow" }), o({ action: "follow", element: "tweet_curation_action_menu" }), s.protected ? e({ text: Xe({ screenName: s.screen_name }) }) : e({ text: Ke({ screenName: s.screen_name }) });
+                                                                  o({ element: "follow" }), o({ action: "follow", element: "tweet_curation_action_menu" }), s.protected ? e({ text: Xe({ screenName: s.screen_name }) }) : e({ text: Qe({ screenName: s.screen_name }) });
                                                               },
                                                               t({ ...Ve.H, showToast: !0 }),
                                                           ),
                                                               o({ element: "follow_attempt" });
                                                       },
                                                       Icon: ze.default,
-                                                  }))({ ...Q, follow: n, promotedContent: k, user: B })),
+                                                  }))({ ...K, follow: n, promotedContent: k, user: B })),
                                             O.allTrue(["super_follow_android_web_subscription_enabled", "creator_subscriptions_subscribe_action_tweet_menu_enabled"]) &&
                                                 B.super_follow_eligible &&
                                                 !B.super_following &&
@@ -984,10 +985,10 @@
                                                     },
                                                     Icon: zi.default,
                                                     testID: te,
-                                                }))({ scribeAction: K, history: y, user: B })),
+                                                }))({ scribeAction: Q, history: y, user: B })),
                                             (V.muteOrUnmute = this._getMuteOrUnmuteAction())),
-                                        L && (V.muteOrUnmuteConversation = pi({ ...Q, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
-                                        Z && (V.hideReply = ht({ ...Q, addFlag: _, hideReply: r, onBlock: this._handleBlock, onTweetDismiss: E, shouldShowHideReplyTip: I, tweet: S })),
+                                        L && (V.muteOrUnmuteConversation = pi({ ...K, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
+                                        Z && (V.hideReply = ht({ ...K, addFlag: _, hideReply: r, onBlock: this._handleBlock, onTweetDismiss: E, shouldShowHideReplyTip: I, tweet: S })),
                                         H &&
                                             (V.unhideReply = (({ addToast: e, createLocalApiErrorHandler: t, scribeAction: i, tweet: n, unhideReply: o }) => ({
                                                 text: en,
@@ -1001,10 +1002,10 @@
                                                         i({ element: "unmoderate_reply" });
                                                 },
                                                 Icon: Ji.default,
-                                            }))({ ...Q, tweet: S, unhideReply: this.props.unhideReply })),
+                                            }))({ ...K, tweet: S, unhideReply: this.props.unhideReply })),
                                         (V.blockOrUnblock = (0, A.op)({ blockAction: this._handleBlock, source: A.SC.TWEET_CARET, testID: z, unblockAction: this._handleUnblock, user: B }));
                             M && !Y && !S.isPreviewDisplay
-                                ? (V.report = Mi({ analytics: w, history: y, promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P }))
+                                ? (V.report = Mi({ analytics: w, history: y, promotedContent: k, scribeAction: Q, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P }))
                                 : !M &&
                                   D &&
                                   (function (e) {
@@ -1015,14 +1016,14 @@
                                           i = l.Z.getLocalizedEntityName({ tweet: e.tweet, articlesEnabled: t });
                                       return {
                                           Icon: Oi.default,
-                                          link: (0, Qe.ju)("https://help.x.com/forms"),
+                                          link: (0, Ke.ju)("https://help.x.com/forms"),
                                           onClick: () => {
                                               e.scribeAction({ element: "report_tweet" });
                                           },
                                           testID: X,
                                           text: e.promotedContent ? Bi.reportAd : Bi.reportTweet({ entity: i }),
                                       };
-                                  })({ promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O })),
+                                  })({ promotedContent: k, scribeAction: Q, tweet: S, featureSwitches: O })),
                                   O.isTrue("netzdg_in_loggedout_posts_enabled") && (V.reportNetzDG = Wi.t({ tweet: S })));
                             const ee = O.getStringValue("dsa_report_illegal_content_url");
                             return (
@@ -1048,7 +1049,7 @@
                                                 testID: oe,
                                             }
                                         );
-                                    })({ tweet: S, promotedContent: k, scribeAction: K, reportUrl: ee })),
+                                    })({ tweet: S, promotedContent: k, scribeAction: Q, reportUrl: ee })),
                                 t &&
                                     y.location.pathname.match(Dn) &&
                                     (V.downloadVideo = (({ downloadVideoLink: e, scribeAction: t }) => ({
@@ -1059,7 +1060,7 @@
                                         link: e,
                                         Icon: xe.default,
                                         testID: te,
-                                    }))({ downloadVideoLink: t, scribeAction: K })),
+                                    }))({ downloadVideoLink: t, scribeAction: Q })),
                                 Hn.forEach((e) => {
                                     if ("feedbackOptions" !== e || S.isStaleEdit) V[e] && $.push(V[e]);
                                     else {
@@ -1168,4 +1169,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-b7da5e41.f8af66ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-b7da5e41.ddcf3f1a.js.map

@@ -1280,31 +1280,34 @@
                 n("c3f04d9c", "Мисли"),
                 n("cbdddb0a", "Завършил"),
                 n("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return "Търсене за „" + e.query + "“";
                 }),
                 n("b0d1e205", function (e) {
                     return "Търсене за **„" + e.query + "“**";
                 }),
+                n("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 n("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return "Търсене на 𝕏 за „" + e.query + "“";
                 }),
                 n("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return "Разглеждане на " + e.url;
                 }),
                 n("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return "Разглеждане на " + e.url + " за „" + e.query + "“";
                 }),
                 n("acb9b845", function (e) {
                     return "Разглеждане " + e.url + " за **„" + e.query + "“**";
                 }),
                 n("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "Търсене на публикации в 𝕏 от @" + e.username;
                 }),
                 n("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "Търсене на публикации от 𝕏 по @" + e.username + " за „" + e.query + "“";
                 }),
                 n("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "Търсене на публикации от 𝕏 по @" + e.username + " за **„" + e.query + "“**";
                 }),
                 n("ead81122", "Нещо се обърка. Опресни страницата, за да се свържеш повторно, или опитай пак."),
                 n("f808a13a", "Ограничението за честота е надвишено. Моля, изчакай малко и опитай пак."),
@@ -1316,8 +1319,8 @@
                 n("j77292b7", function (e) {
                     return "Моля, изберете само до " + e.count + " файл" + t(e.count, "", "а");
                 }),
-                n("d6b533dc", "Rate this translation:"),
-                n("j2f9ab6e", "Thank you for your feedback!"),
+                n("d6b533dc", "Оцени този превод:"),
+                n("j2f9ab6e", "Благодарим за отзивите!"),
                 n("d56779a2", "разбираем"),
                 n("b6fe8a56", "объркващ или неясен"),
                 n("i73a7d48", "Преведено от Google"),
@@ -1348,7 +1351,7 @@
                     return "Преведено от " + e.originLanguage + " от";
                 }),
                 n("b7cb4fab", "Преведено от"),
-                n("e0bffbf8", "About automatic translation"),
+                n("e0bffbf8", "Относно автоматичен превод"),
                 n("e839db3a", "Отхвърляне"),
                 n("a15585b4", "Езикови настройки"),
                 n("d4c339b9", function (e) {
@@ -1917,9 +1920,9 @@
                 n("a8f09fb8", "Изтриване на блока"),
                 n("i89195ea", "Разделител"),
                 n("da8ac57c", "Редактиране на надписа"),
-                n("a8fdd09c", "Публикуване на статия"),
-                n("d8047cc8", "Публикуване");
-            n("ff7ddca2", "Статията ти ще се покаже като публикация, след като бъде публикувана. Освен това може да я намериш в раздела „Статии“ в профила си."),
+                n("a8fdd09c", "Публикуване на статия");
+            n("d8047cc8", "Публикуване"),
+                n("ff7ddca2", "Статията ти ще се покаже като публикация, след като бъде публикувана. Освен това може да я намериш в раздела „Статии“ в профила си."),
                 n("ef34d7be", "Контролите за аудитория и отговор не могат да се редактират, след като статията е публикувана."),
                 n("e52d4998", "Избери аудиторията си"),
                 n("d7985b24", "Избери кой може да отговаря на тази статия"),
@@ -2973,9 +2976,9 @@
                     return e.entity + " е премахнат от отметките ти";
                 }),
                 n("d6d9aab6", "Добавяне на отметка"),
-                n("bb89cf46", "Премахване на отметката"),
-                n("a739d4ba", "Добавяне към папка с отметки");
-            n("d5270434", "Изход"),
+                n("bb89cf46", "Премахване на отметката");
+            n("a739d4ba", "Добавяне към папка с отметки"),
+                n("d5270434", "Изход"),
                 n("ac85c6b2", "При зареждането на изображението възникна грешка"),
                 n("b327c12a", "Изображение"),
                 n("ic76bdf0", "Пресъздай това с Grok"),
@@ -3899,9 +3902,9 @@
                 n("cd133486", "Покани"),
                 n("f2333850", "Споделяне с хора извън X"),
                 n("cddb8097", "Научи повече"),
-                n("f77997b0", "Съдомакин"),
-                n("i48f4ed8", "Говорител");
-            n("a77c8e02", "Слушател"),
+                n("f77997b0", "Съдомакин");
+            n("i48f4ed8", "Говорител"),
+                n("a77c8e02", "Слушател"),
                 n("bdfa93eb", function (e) {
                     return "Споделено от " + e.name;
                 }),
@@ -4182,10 +4185,10 @@
                 n("j7b5c844", "Ти носиш отговорност за разговорите, които споделяш публично. Избягвай да споделяш чувствителна и поверителна информация за себе си или за други хора в разговорите си с Grok (виж центъра ни за помощ)."),
                 n("c9f7c196", "Център за помощ"),
                 n("fb3b9776", "Отговорът на Grok е персонализиран от потребителя."),
-                n("b0a889d4", "As Image"),
-                n("a111fb48", "As Spreadsheet"),
-                n("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                n("bd202fe6", "Generating card"),
+                n("b0a889d4", "Като изображение"),
+                n("a111fb48", "Като електронна таблица"),
+                n("bccc65f0", "Grok може да прави грешки. Винаги проверявай първоначалните източници."),
+                n("bd202fe6", "Генериране на карта"),
                 n("bfd161bc", "Сравни"),
                 n("j5dcf1b2", "Актуализирано"),
                 n("a50aaa10", "Преди часове за търгуване"),
@@ -4217,9 +4220,9 @@
                 n("dd679fb1", function (e) {
                     return "Най-ниско ниво за целия период" + e.ttc_stock_details;
                 }),
-                n("ha9c4cf8", "View source"),
-                n("ecad5d78", "Save image"),
-                n("d2d1d398", "Копиран!"),
+                n("ha9c4cf8", "Преглед на източник"),
+                n("ecad5d78", "Записване на изображение"),
+                n("d2d1d398", "Копирано!"),
                 n("a22063d2", "Сподели местоположението си за подобрена точност."),
                 n("db3248a8", "Зареждане на местоположение"),
                 n("ffe0e588", "Споделяне на местоположението"),
@@ -4253,12 +4256,10 @@
                 n("d66bf142", "чет"),
                 n("dc17968a", "пт"),
                 n("j310a2d6", "сб"),
-                n("afa2a58e", "See all posts"),
-                n("fc83e7e2", "See all users"),
-                n("df601d92", "Relevant Users"),
                 n("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "Показване на всички (" + e.count + ")";
                 }),
+                n("df601d92", "Подходящи потребители"),
                 n("d7cb5408", "Уместни уеб страници"),
                 n("ca93f2ee", "Това съобщение беше изтрито."),
                 n("b8c06820", "Копиране на текст"),
@@ -4328,7 +4329,7 @@
                 n("db832e38", "Активирай известията в настройките на браузъра"),
                 n("a910cac6", "Имаше проблем при активиране на известията"),
                 n("be30b6ee", "Връзката е нестабилна"),
-                n("ge15b488", "Show thoughts"),
+                n("ge15b488", "Показване на мислите"),
                 n("aa7c96bb", function (e) {
                     return "Виж още " + e.numResults;
                 }),
@@ -4338,7 +4339,7 @@
                 n("g3ce0132", "Мислено за"),
                 n("f8007364", "Разшири за подробности"),
                 n("ca53f780", "Свиване на подробностите"),
-                n("e6d51c62", "Searching"),
+                n("e6d51c62", "Търсене"),
                 n("ib1c5475", function (e) {
                     return "Обмисляно в продължение на " + e.minutes + " мин и " + e.seconds + " сек";
                 }),
@@ -4924,9 +4925,9 @@
                 n("e41fffbc", "Общото време на гледане на твоите видеоклипове."),
                 n("if2909ba", "Време на гледане"),
                 n("i0e5bf4c", "Вашите видеоклипове"),
-                n("ed99baea", "Ранен достъп до бета-версия");
-            n("gf898b70", "Разширено търсене"),
-                n("d2a43a7a", "съдържа „ai“ и „startup“"),
+                n("ed99baea", "Ранен достъп до бета-версия"),
+                n("gf898b70", "Разширено търсене");
+            n("d2a43a7a", "съдържа „ai“ и „startup“"),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", "съдържа точната фраза „ai startup“"),
                 n("j8ee77c4", "„ai startup“"),
@@ -5880,9 +5881,9 @@
                 n("e41c9b4f", function (e) {
                     return "Запазено в(ъв) „" + e.bookmarkFolderName + "“";
                 }),
-                n("h18f86a4", "Изтриване на папката");
-            n("f4ea967a", "Папката бе изтрита"),
-                n("b670aa62", "Име на папката"),
+                n("h18f86a4", "Изтриване на папката"),
+                n("f4ea967a", "Папката бе изтрита");
+            n("b670aa62", "Име на папката"),
                 n("aece5462", "Името на папката бе актуализирано успешно"),
                 n("e3299b94", "Възникна грешка. Опитай да актуализираш тази папка отново след малко."),
                 n("c09ea714", "Възникна грешка. Опитай да изтриеш тази папка отново след малко."),
@@ -6886,9 +6887,9 @@
                 n("c924ad84", "Продължавай да възпроизвеждаш видеоклипове"),
                 n("de750a3c", "Чети ги дори когато телефонът ти е заключен"),
                 n("he5e87c4", "Приоритизирай отговорите си"),
-                n("g64a60ba", "Получи малък приоритет, когато отговаряш на публикации");
-            n("a7ee832a", "Коригирай печатни грешки и неточности до 60 минути"),
-                n("fdd77a34", "Създавай по-дълги публикации"),
+                n("g64a60ba", "Получи малък приоритет, когато отговаряш на публикации"),
+                n("a7ee832a", "Коригирай печатни грешки и неточности до 60 минути");
+            n("fdd77a34", "Създавай по-дълги публикации"),
                 n("j6d26a7a", "Пиши толкова, колкото искаш да споделиш"),
                 n("c4fd68da", "Персонализирай работата си"),
                 n("c0195168", "Промени иконата на приложението и опциите за навигиране"),
@@ -7866,7 +7867,10 @@
                 n("b719e224", "Няма резултати"),
                 n("c9938100", "Резултати от търсенето"),
                 n("d1a35ec6", "Добавяне на профили"),
-                n("b437adda", "Надстрой до платена опция");
+                n("b437adda", "Надстрой до платена опция"),
+                n("f1f6c88b", function (e) {
+                    return "Профили (" + e.count + ")";
+                });
             function f(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7905,10 +7909,7 @@
                     r(e, c)
                 );
             }
-            n("f1f6c88b", function (e) {
-                return "Профили (" + e.count + ")";
-            }),
-                n("b02156b8", "Покани"),
+            n("b02156b8", "Покани"),
                 n("gd67d29b", function (e) {
                     return "Покани (" + e.count + ")";
                 }),
@@ -8279,7 +8280,7 @@
                 n("e5e6479e", "Изпрати ни имейл с потребителското име на организацията ти и подробностите за запитването си, за да получиш помощ бързо."),
                 n("ica8392a", "Щом получим заявката ти, ще я прегледаме и приоритизираме според реда на получаване."),
                 n("ed37e36e", "Важно: липсващото потребителско име на организацията ти или използването на личен имейл адрес може да причини забавяния при обработката на заявката ти."),
-                n("h7e1c146", "Delegate accounts are not currently supported."),
+                n("h7e1c146", "Профилите за делегиране не се поддържат в момента."),
                 n("eb0d4fe2", "Създаване на колона"),
                 n("e93d2f8a", "Персонализирай работата си, като добавиш различни колони, като например:"),
                 n("e8203d1e", "Търсения"),
@@ -8908,9 +8909,9 @@
                 n("a7bf9962", "Изтегляне на видео"),
                 n("ccc97152", "Скорост на възпроизвеждане"),
                 n("h531ade0", "Качество на видеото"),
-                n("e8b5757c", "25%");
-            n("e7e954de", "0.5x"),
-                n("g07ffe66", "75%"),
+                n("e8b5757c", "25%"),
+                n("e7e954de", "0.5x");
+            n("g07ffe66", "75%"),
                 n("d8bede9e", "100%"),
                 n("j41845c8", "1,25%"),
                 n("e9eeed9e", "1.5x"),
@@ -12991,8 +12992,8 @@
                 y = (m._currencyNameFormat, m._currencyFormatterFn),
                 k = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 p = (m._dateFormat, m._dateFormatterFn),
-                l = m._relativeTimeFormatterFn,
-                N = m._unitFormatterFn;
+                N = m._relativeTimeFormatterFn,
+                l = m._unitFormatterFn;
             (m.a1205364346 = s(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0 хил'.'", other: "0 хил'.'" }, 4: { one: "00 хил'.'", other: "00 хил'.'" }, 5: { one: "000 хил'.'", other: "000 хил'.'" }, 6: { one: "0 млн'.'", other: "0 млн'.'" }, 7: { one: "00 млн'.'", other: "00 млн'.'" }, 8: { one: "000 млн'.'", other: "000 млн'.'" }, 9: { one: "0 млрд'.'", other: "0 млрд'.'" }, 10: { one: "00 млрд'.'", other: "00 млрд'.'" }, 11: { one: "000 млрд'.'", other: "000 млрд'.'" }, 12: { one: "0 трлн'.'", other: "0 трлн'.'" }, 13: { one: "00 трлн'.'", other: "00 трлн'.'" }, 14: { one: "000 трлн'.'", other: "000 трлн'.'" }, maxExponent: 14 }], m("bg").pluralGenerator({}))),
                 (m.b560738426 = s(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
                 (m.b1229638476 = s(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ",", ",": " ", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13191,23 +13192,23 @@
                 (m.b221821786 = p(m("bg").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b781046862 = p(m("bg").dateToPartsFormatter({ date: "medium" }))),
                 (m.b1475067226 = p(m("bg").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.b1380651950 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "след {0} ден", "relativeTimePattern-count-other": "след {0} дни" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "преди {0} ден", "relativeTimePattern-count-other": "преди {0} дни" }, "relative-type--2": "онзи ден", "relative-type--1": "вчера", "relative-type-0": "днес", "relative-type-1": "утре", "relative-type-2": "вдругиден" })),
-                (m.a438588471 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "секунди", one: "{0} секунда", other: "{0} секунди", perUnitPattern: "{0} за секунда" } })),
-                (m.b1448374825 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "минути", one: "{0} минута", other: "{0} минути", perUnitPattern: "{0} на минута" } })),
-                (m.b554461657 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "часове", one: "{0} час", other: "{0} часа", perUnitPattern: "{0} за час" } })),
-                (m.b2026876488 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
-                (m.a1372562264 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
-                (m.a1429657512 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ч", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
-                (m.a60464508 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "д", one: "{0} д", other: "{0} д", perUnitPattern: "{0}/д" } })),
-                (m.a561430779 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "дни", one: "{0} ден", other: "{0} дни", perUnitPattern: "{0} на ден" } })),
-                (m.a1864654560 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "м", one: "{0} м", other: "{0} м", perUnitPattern: "{0}/месец" } })),
-                (m.b2037806241 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "месеци", one: "{0} месец", other: "{0} месеца", perUnitPattern: "{0} на месец" } })),
-                (m.b1460747391 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "г", one: "{0} г", other: "{0} г", perUnitPattern: "{0}/год." } })),
-                (m.a926327872 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "години", one: "{0} година", other: "{0} години", perUnitPattern: "{0} на година" } })),
-                (m.b1850302923 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "секунди", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
-                (m.b216622955 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
-                (m.a1724881477 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "часове", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
-                (m.b1997441506 = N(m("bg").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
+                (m.b1380651950 = N(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "след {0} ден", "relativeTimePattern-count-other": "след {0} дни" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "преди {0} ден", "relativeTimePattern-count-other": "преди {0} дни" }, "relative-type--2": "онзи ден", "relative-type--1": "вчера", "relative-type-0": "днес", "relative-type-1": "утре", "relative-type-2": "вдругиден" })),
+                (m.a438588471 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "секунди", one: "{0} секунда", other: "{0} секунди", perUnitPattern: "{0} за секунда" } })),
+                (m.b1448374825 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "минути", one: "{0} минута", other: "{0} минути", perUnitPattern: "{0} на минута" } })),
+                (m.b554461657 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "часове", one: "{0} час", other: "{0} часа", perUnitPattern: "{0} за час" } })),
+                (m.b2026876488 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
+                (m.a1372562264 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
+                (m.a1429657512 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ч", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
+                (m.a60464508 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "д", one: "{0} д", other: "{0} д", perUnitPattern: "{0}/д" } })),
+                (m.a561430779 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "дни", one: "{0} ден", other: "{0} дни", perUnitPattern: "{0} на ден" } })),
+                (m.a1864654560 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "м", one: "{0} м", other: "{0} м", perUnitPattern: "{0}/месец" } })),
+                (m.b2037806241 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "месеци", one: "{0} месец", other: "{0} месеца", perUnitPattern: "{0} на месец" } })),
+                (m.b1460747391 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "г", one: "{0} г", other: "{0} г", perUnitPattern: "{0}/год." } })),
+                (m.a926327872 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0} на {1}", unitProperties: { displayName: "години", one: "{0} година", other: "{0} години", perUnitPattern: "{0} на година" } })),
+                (m.b1850302923 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "секунди", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
+                (m.b216622955 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "мин", one: "{0} мин", other: "{0} мин", perUnitPattern: "{0}/мин" } })),
+                (m.a1724881477 = l(m("bg").numberFormatter({}), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "часове", one: "{0} ч", other: "{0} ч", perUnitPattern: "{0}/h" } })),
+                (m.b1997441506 = l(m("bg").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bg").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "с", one: "{0} с", other: "{0} с", perUnitPattern: "{0}/с" } })),
                 n("d58baa7f", m.a1205364346),
                 n("ia24dc8d", m.b560738426),
                 n("iab73d4b", m.b1229638476),
@@ -13332,4 +13333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.ae29da6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.f437610a.js.map

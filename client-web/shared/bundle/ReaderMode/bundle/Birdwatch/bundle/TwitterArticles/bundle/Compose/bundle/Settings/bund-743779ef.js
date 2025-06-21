@@ -8,27 +8,22 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.5"),
-                        d.e("icons.25"),
-                        d.e("icons.22"),
-                        d.e("icons.6"),
-                        d.e("icons.4"),
-                        d.e("icons.9"),
-                        d.e("icons.15"),
-                        d.e("icons.7"),
-                        d.e("icons.3"),
-                        d.e("icons.20"),
+                        d.e("icons.23"),
+                        d.e("icons.0"),
                         d.e("icons.2"),
-                        d.e("icons.18"),
-                        d.e("icons.27"),
+                        d.e("icons.16"),
+                        d.e("icons.19"),
+                        d.e("icons.10"),
                         d.e("icons.13"),
+                        d.e("icons.24"),
+                        d.e("icons.7"),
+                        d.e("icons.22"),
+                        d.e("icons.27"),
+                        d.e("icons.17"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.0"),
-                        d.e("icons.24"),
-                        d.e("icons.17"),
-                        d.e("icons.12"),
                         d.e("icons.11"),
+                        d.e("icons.26"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -39,17 +34,21 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.10"),
                         d.e("icons.8"),
-                        d.e("icons.26"),
-                        d.e("icons.19"),
+                        d.e("icons.4"),
+                        d.e("icons.14"),
+                        d.e("icons.28"),
+                        d.e("icons.21"),
+                        d.e("icons.3"),
+                        d.e("icons.1"),
+                        d.e("icons.18"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -124,6 +123,7 @@
                         d.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
+                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
@@ -171,14 +171,15 @@
             const o = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.25"),
-                        d.e("icons.22"),
-                        d.e("icons.4"),
-                        d.e("icons.7"),
-                        d.e("icons.3"),
-                        d.e("icons.20"),
-                        d.e("icons.18"),
+                        d.e("icons.23"),
+                        d.e("icons.0"),
+                        d.e("icons.16"),
+                        d.e("icons.13"),
                         d.e("icons.24"),
+                        d.e("icons.7"),
+                        d.e("icons.22"),
+                        d.e("icons.11"),
+                        d.e("icons.26"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -233,8 +234,8 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -438,7 +439,7 @@
                 u = s().cbdddb0a,
                 c = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 m = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
-                h = { GenericSearchQueryFormatter: s().ie2bbeed, GenericSearchQueryMarkdownFormatter: s().b0d1e205, WebSearchQueryFormatter: s().ie2bbeed, XSearchQueryFormatter: s().bf970edd, BrowsePageFormatter: s().g008d475, GenericURLQueryFormatter: s().c91e3971, GenericURLQueryMarkdownFormatter: s().acb9b845, XUsernameSearchFormatter: s().j9006405, XUsernameQuerySearchFormatter: s().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: s().e99fb7a3 };
+                h = { GenericSearchQueryFormatter: s().ie2bbeed, GenericSearchQueryMarkdownFormatter: s().b0d1e205, WebSearchQueryFormatter: s().f259119d, XSearchQueryFormatter: s().bf970edd, BrowsePageFormatter: s().g008d475, GenericURLQueryFormatter: s().c91e3971, GenericURLQueryMarkdownFormatter: s().acb9b845, XUsernameSearchFormatter: s().j9006405, XUsernameQuerySearchFormatter: s().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: s().e99fb7a3 };
             class b {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, a = !1) => {
@@ -450,7 +451,7 @@
                                 this.addWebResults(o.webResults || []), this.addXPostIds(o.xPostIds || []);
                                 let r = 0;
                                 if ((o.assistant && ((this.accumulatedTrace += o.assistant), (this.traceEnabled = !0)), o.summary)) {
-                                    const a = (0, t.rs)(o.summary);
+                                    const a = (0, t.Ez)(o.summary);
                                     (this.accumulatedSummary += a), e.subSteps.push({ messageStepId: d + r, messageTag: c.SUMMARY, summary: a, webResults: o.webResults, xPostIds: o.xPostIds }), r++;
                                 }
                                 if (o.decision) {
@@ -483,9 +484,8 @@
                                     if (e.messageTag === c.RAW_FUNCTION_RESULT) {
                                         const d = a.messageStepId === e.messageStepId,
                                             o = a.messageTag === e.messageTag,
-                                            r = a.messageTag === c.DECISION,
-                                            n = a.messageTag === c.SUMMARY && void 0 !== a.toolUsage;
-                                        return d && (o || r || n);
+                                            r = a.messageTag === c.DECISION;
+                                        return d && (o || r);
                                     }
                                     return a.messageStepId === e.messageStepId && a.messageTag === e.messageTag;
                                 }),
@@ -497,15 +497,22 @@
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case c.SUMMARY: {
-                                        const a = (0, t.rs)(e.message);
+                                        const a = (0, t.Ez)(e.message);
                                         u.summary = (u.summary || "") + a;
-                                        const d = (0, t.Bv)(e.message);
+                                        const d = (0, t.QK)(e.message);
                                         if (d) {
-                                            const e = (0, t.cU)(d);
-                                            e && (u.bulletPoints = [...(u.bulletPoints || []), e]);
+                                            const a = (0, t.CK)(d);
+                                            a && (u.bulletPoints = [...(u.bulletPoints || []), a]), (u.toolUsageCardResults = [...(u.toolUsageCardResults || []), { toolUsageCardId: d.id, webResults: e.webResults, xPostIds: e.xPostIds }]);
                                         } else {
                                             const a = (0, l.K)(e.message);
-                                            a.trim() && (u.bulletPoints = [...(u.bulletPoints || []), a]), e.webResults && e.webResults.length && ((u.webResults = e.webResults), this.addWebResults(e.webResults || []));
+                                            if ((a.trim() && (u.bulletPoints = [...(u.bulletPoints || []), a]), e.webResults && e.webResults.length && (this.addWebResults(e.webResults || []), e.toolUsageCardId))) {
+                                                const a = u.toolUsageCardResults?.map((a) => (a.toolUsageCardId === e.toolUsageCardId ? { ...a, webResults: e.webResults } : a));
+                                                u.toolUsageCardResults = a;
+                                            }
+                                            if (e.xPostIds && e.xPostIds.length && (this.addXPostIds(e.xPostIds || []), e.toolUsageCardId)) {
+                                                const a = u.toolUsageCardResults?.map((a) => (a.toolUsageCardId === e.toolUsageCardId ? { ...a, xPostIds: e.xPostIds } : a));
+                                                u.toolUsageCardResults = a;
+                                            }
                                         }
                                         (h = !0), (this.accumulatedSummary += a);
                                         break;
@@ -528,16 +535,16 @@
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case c.SUMMARY: {
-                                        const d = (0, t.Bv)(e.message) ?? void 0,
-                                            o = (0, t.rs)(e.message);
+                                        const d = (0, t.QK)(e.message) ?? void 0,
+                                            o = (0, t.Ez)(e.message);
                                         let r = [];
                                         if (d) {
-                                            const e = (0, t.cU)(d);
+                                            const e = (0, t.CK)(d);
                                             e && (r = [e]);
                                         } else {
                                             (0, l.K)(e.message).trim() && (r = [(0, l.K)(e.message)]);
                                         }
-                                        a = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: o, toolUsage: d, bulletPoints: r };
+                                        a = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: o, toolUsageCardResults: d ? [{ toolUsageCardId: d.id, webResults: e.webResults, xPostIds: e.xPostIds }] : [], bulletPoints: r };
                                         break;
                                     }
                                     case c.DECISION: {
@@ -778,4 +785,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.3dc2416a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.12971c4a.js.map

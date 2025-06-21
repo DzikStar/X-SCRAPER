@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c", "icons/IconChevronDown-js", "icons/IconDraggable-js", "icons/IconSchedule-js"],
+    ["shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c", "icons/IconChevronDown-js", "icons/IconDraggable-js", "icons/IconGifPillStroke-js"],
     {
         242454: (e, t, n) => {
             n.d(t, { Z: () => h });
@@ -82,20 +82,20 @@
             const m = u.default.create((e) => ({ root: { paddingVertical: e.spacesPx.space32 }, rootWithImage: { paddingTop: 0 }, graphic: { marginBottom: e.spacesPx.space20 }, icon: { alignSelf: "center", height: e.spacesPx.space64, width: e.spacesPx.space64 }, container: { paddingHorizontal: e.spacesPx.space32 }, description: { marginTop: e.spacesPx.space8, marginBottom: e.spacesPx.space4 }, actionButton: { marginTop: e.spacesPx.space16 } })),
                 g = ({ actionPrimary: e, actionSecondary: t, children: n, headline: g, icon: f, iconColor: y, image: C, onDismiss: x, shouldDisplay: b, text: w, withMask: v = !0 }) => {
                     const [E, S] = r.useState(!1),
-                        Z = (e) => r.createElement(h.Z, { onDismiss: T, renderContent: () => k(T), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: s.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
-                        _ = () => r.createElement(p.Z, { onMaskClick: () => T(), type: "center", withMask: !0 }, k(T)),
-                        k = (n) => r.createElement(o.Z, { style: [m.root, C && m.rootWithImage] }, D(), r.createElement(o.Z, { style: m.container }, P(), F(), I({ action: e, dismiss: n, type: t && "primaryFilled" }), I({ action: t, dismiss: n }))),
-                        D = () => {
+                        Z = (e) => r.createElement(h.Z, { onDismiss: T, renderContent: () => _(T), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: s.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
+                        k = () => r.createElement(p.Z, { onMaskClick: () => T(), type: "center", withMask: !0 }, _(T)),
+                        _ = (n) => r.createElement(o.Z, { style: [m.root, C && m.rootWithImage] }, P(), r.createElement(o.Z, { style: m.container }, D(), F(), I({ action: e, dismiss: n, type: t && "primaryFilled" }), I({ action: t, dismiss: n }))),
+                        P = () => {
                             let e = f && r.createElement(f, { style: y ? [m.icon, { color: u.default.theme.colors[y] }] : m.icon });
                             return C && !d.Z.isEnabled && (e = r.createElement(i.Z, { "aria-label": "", aspectMode: l.Z.exact(2), image: C })), e && r.createElement(o.Z, { style: m.graphic }, e);
                         },
-                        P = () => r.createElement(a.ZP, { size: "title3", weight: "heavy" }, g),
+                        D = () => r.createElement(a.ZP, { size: "title3", weight: "heavy" }, g),
                         F = () => r.createElement(a.ZP, { color: "gray700", style: m.description }, w),
                         I = ({ action: e, dismiss: t, type: n }) => e && r.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: m.actionButton, type: n }, e.text),
                         T = () => {
                             x && x(), S(!0);
                         };
-                    return b && !E ? (n ? Z(n) : _()) : n || null;
+                    return b && !E ? (n ? Z(n) : k()) : n || null;
                 };
         },
         130304: (e, t, n) => {
@@ -215,9 +215,9 @@
                         w = (0, m.b)(),
                         { direction: v } = (0, u.Z)(),
                         [E, S] = r.useState(Number.MIN_SAFE_INTEGER),
-                        [Z, _] = r.useState(Number.MIN_SAFE_INTEGER),
-                        k = "rtl" === v,
-                        D = (e) => {
+                        [Z, k] = r.useState(Number.MIN_SAFE_INTEGER),
+                        _ = "rtl" === v,
+                        P = (e) => {
                             const { top: t } = e.getBoundingClientRect();
                             return Z > t;
                         };
@@ -233,25 +233,25 @@
                                             layout: { left: t, top: n, width: r },
                                         },
                                     } = e;
-                                    _(n);
+                                    k(n);
                                     S(t + r / 2);
                                 },
                             },
                             (() => {
                                 const i = !(!t || (Z >= 0 && E >= 0)),
-                                    u = t?.current ? ((m = t.current), D(m) ? { flexDirection: "column" } : { flexDirection: "column-reverse" }) : void 0;
+                                    u = t?.current ? ((m = t.current), P(m) ? { flexDirection: "column" } : { flexDirection: "column-reverse" }) : void 0;
                                 var m;
-                                const v = !t?.current || D(t.current),
+                                const v = !t?.current || P(t.current),
                                     S = t?.current
                                         ? ((e) => {
                                               const { left: t, width: n } = e.getBoundingClientRect(),
                                                   r = t + n / 2 - E;
-                                              return { start: k ? void 0 : r, end: k ? r : void 0 };
+                                              return { start: _ ? void 0 : r, end: _ ? r : void 0 };
                                           })(t.current)
                                         : void 0,
-                                    _ = t ? ((t, n) => r.createElement(o.Z, { style: [f.arrowContainer, n, t ? f.arrowDirectionUp : f.arrowDirectionDown], testID: "tooltip-arrow" }, r.createElement(a.default, { style: [f.arrow, C[e], !t && f.arrowDown] })))(v, S) : void 0,
-                                    P = [u, i && f.hidden];
-                                return r.createElement(o.Z, { style: P, testID: "tooltip-content" }, _, r.createElement(o.Z, { style: [f.root, y[e]] }, r.createElement(o.Z, { style: f.contentContainer }, n && !s ? ((I = n), r.createElement(I, { style: [f.icon, { alignItem: "flex-start" }], testID: "tooltip-icon" })) : null, s && !n ? ((F = s), r.createElement(o.Z, { style: f.illustration, testID: "tooltip-illustration" }, r.createElement(c.Z, { "aria-label": "", aspectMode: h.Z.SQUARE, image: F }))) : null, r.createElement(o.Z, { style: f.contentTextContainer }, r.createElement(d.ZP, { id: w }, x))), g && r.createElement(o.Z, { style: f.dismissButton }, r.createElement(p.ZP, { "aria-describedby": w, "aria-label": b, icon: r.createElement(l.default, { testID: "tooltip-close-icon" }), onPress: g, size: "xSmall", type: "primaryText" }))));
+                                    k = t ? ((t, n) => r.createElement(o.Z, { style: [f.arrowContainer, n, t ? f.arrowDirectionUp : f.arrowDirectionDown], testID: "tooltip-arrow" }, r.createElement(a.default, { style: [f.arrow, C[e], !t && f.arrowDown] })))(v, S) : void 0,
+                                    D = [u, i && f.hidden];
+                                return r.createElement(o.Z, { style: D, testID: "tooltip-content" }, k, r.createElement(o.Z, { style: [f.root, y[e]] }, r.createElement(o.Z, { style: f.contentContainer }, n && !s ? ((I = n), r.createElement(I, { style: [f.icon, { alignItem: "flex-start" }], testID: "tooltip-icon" })) : null, s && !n ? ((F = s), r.createElement(o.Z, { style: f.illustration, testID: "tooltip-illustration" }, r.createElement(c.Z, { "aria-label": "", aspectMode: h.Z.SQUARE, image: F }))) : null, r.createElement(o.Z, { style: f.contentTextContainer }, r.createElement(d.ZP, { id: w }, x))), g && r.createElement(o.Z, { style: f.dismissButton }, r.createElement(p.ZP, { "aria-describedby": w, "aria-label": b, icon: r.createElement(l.default, { testID: "tooltip-close-icon" }), onPress: g, size: "xSmall", type: "primaryText" }))));
                                 var F, I;
                             })(),
                         ),
@@ -259,7 +259,7 @@
                 };
         },
         977952: (e, t, n) => {
-            n.d(t, { Z: () => P });
+            n.d(t, { Z: () => D });
             var r = n(807896),
                 o = n(202784),
                 s = (n(136728), n(301503)),
@@ -451,7 +451,7 @@
                             if (!c) return "not-handled";
                             if (!r) {
                                 const e = (function (e) {
-                                    return e.replace(k.all_newlines, " ");
+                                    return e.replace(_.all_newlines, " ");
                                 })(c.getPlainText());
                                 c = s.ContentState.createFromText(e);
                             }
@@ -460,7 +460,7 @@
                         (this._myKeyBindingFn = (e) => {
                             const { dismissComposerCommandName: t, keyBindingFn: n, sendTweetCommandName: r } = this.props,
                                 { hasCommandModifier: o } = s.KeyBindingUtil;
-                            return e.keyCode === _.enter && o(e) ? r : e.keyCode === _.esc ? t : n?.(e) || (0, s.getDefaultKeyBinding)(e);
+                            return e.keyCode === k.enter && o(e) ? r : e.keyCode === k.esc ? t : n?.(e) || (0, s.getDefaultKeyBinding)(e);
                         }),
                         (this._onKeyCommand = (e) => {
                             const { keyCommandHandlers: t } = this.props,
@@ -472,7 +472,7 @@
                             return n?.(e, t), "handled";
                         }),
                         (this._getContainerStyle = () => {
-                            const e = D[this.props.appTextSize],
+                            const e = P[this.props.appTextSize],
                                 t = d.default.theme.lineHeightsPx[e];
                             let n = 1,
                                 r = 1;
@@ -499,10 +499,10 @@
             }
             S.defaultProps = { allowExtendedPasteStyles: !1, appTextSize: "body", autoFocus: !1, keyCommandHandlers: {}, maxNumberOfLines: 30, multiline: !0, numberOfLines: 6, onFocus: i.Z, positionCursorAtEnd: !1, spellCheck: "true", stripPastedStyles: !0, withMaxHeight: !0, longformRichTextTransform: !1 };
             const Z = (e) => (0, a.Z)("div", e),
-                _ = { enter: 13, esc: 27 };
-            const k = { all_newlines: /[\r\n]/g },
-                D = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
-                P = o.forwardRef((e, t) =>
+                k = { enter: 13, esc: 27 };
+            const _ = { all_newlines: /[\r\n]/g },
+                P = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
+                D = o.forwardRef((e, t) =>
                     o.createElement(
                         S,
                         (0, r.Z)({}, e, {
@@ -550,7 +550,7 @@
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
-        674306: (e, t, n) => {
+        937450: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var r = n(202784),
                 o = n(890601),
@@ -558,7 +558,7 @@
                 i = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6 3V2h2v1h6V2h2v1h1.5C18.88 3 20 4.119 20 5.5v2h-2v-2c0-.276-.22-.5-.5-.5H16v1h-2V5H8v1H6V5H4.5c-.28 0-.5.224-.5.5v12c0 .276.22.5.5.5h3v2h-3C3.12 20 2 18.881 2 17.5v-12C2 4.119 3.12 3 4.5 3H6zm9.5 8c-2.49 0-4.5 2.015-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.01-4.5-4.5-4.5zM9 15.5C9 11.91 11.91 9 15.5 9s6.5 2.91 6.5 6.5-2.91 6.5-6.5 6.5S9 19.09 9 15.5zm5.5-2.5h2v2.086l1.71 1.707-1.42 1.414-2.29-2.293V13z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -579,4 +579,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.910772ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c.48c3d5ba.js.map

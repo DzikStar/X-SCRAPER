@@ -514,8 +514,8 @@
             r.d(t, { q: () => s });
             var n = r(552322),
                 a = r(840489),
-                i = r(322506),
-                l = r(202784);
+                i = r(202784),
+                l = r(322506);
             const o = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png";
             function s({ resolution: e, screenName: t, shape: r = "circle", size: s = "xLarge", url: u, withLink: g, className: c }) {
                 const d = u
@@ -524,8 +524,8 @@
                           })(u, e)
                         : void 0,
                     m = t && g,
-                    b = m ? i.r : "div",
-                    [x, p] = (0, l.useState)(!1);
+                    b = m ? l.r : "div",
+                    [x, p] = (0, i.useState)(!1);
                 return (0, n.jsx)(b, {
                     className: (0, a.Z)("min-size flex overflow-hidden bg-gray-300", "circle" === r && "rounded-full", "square" === r && "rounded-sm", "fill" === s && "size-full", "jumbo" === s && "min-h-16 min-w-16 size-16", "large" === s && "min-h-8 min-w-8 size-8", "medium" === s && "min-h-6 min-w-6 size-6", "small" === s && "min-h-4 min-w-4 size-4", "xLarge" === s && "min-h-10 min-w-10 size-10", "xxLarge" === s && "min-h-12 min-w-12 size-12", "xxxLarge" === s && "min-h-14 min-w-14 size-14", g && "transition duration-200 hover:brightness-90", c),
                     ...(m && { href: `https://x.com/${t}`, target: "external" === g ? "_blank" : void 0 }),
@@ -1277,4 +1277,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.74aca52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.309de45a.js.map

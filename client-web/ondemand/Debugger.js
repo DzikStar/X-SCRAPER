@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Debugger", "icons/IconChevronDown-js", "icons/IconWrench-js"],
+    ["ondemand.Debugger", "icons/IconChevronDown-js"],
     {
         232678: (e, t, n) => {
             "use strict";
@@ -209,7 +209,7 @@
                         ? (async function (e, t) {
                               var n;
                               try {
-                                  if (null === (n = null == e ? void 0 : e.contentDocument) || void 0 === n ? void 0 : n.body) return await W(e.contentDocument.body, t, !0);
+                                  if (null === (n = null == e ? void 0 : e.contentDocument) || void 0 === n ? void 0 : n.body) return await q(e.contentDocument.body, t, !0);
                               } catch (e) {}
                               return e.cloneNode(!1);
                           })(e, t)
@@ -251,7 +251,7 @@
                     t
                 );
             }
-            async function W(e, t, n) {
+            async function q(e, t, n) {
                 return n || !t.filter || t.filter(e)
                     ? Promise.resolve(e)
                           .then((e) => O(e, t))
@@ -267,7 +267,7 @@
                                           (await a.reduce(
                                               (e, r) =>
                                                   e
-                                                      .then(() => W(r, n))
+                                                      .then(() => q(r, n))
                                                       .then((e) => {
                                                           e && t.appendChild(e);
                                                       }),
@@ -288,7 +288,7 @@
                                       if (a) {
                                           const n = e.querySelector(a),
                                               o = document.querySelector(a);
-                                          n || !o || r[a] || (r[a] = await W(o, t, !0));
+                                          n || !o || r[a] || (r[a] = await q(o, t, !0));
                                       }
                                   }
                                   const o = Object.values(r);
@@ -306,7 +306,7 @@
                           )
                     : null;
             }
-            const q = /url\((['"]?)([^'"]+?)\1\)/g,
+            const W = /url\((['"]?)([^'"]+?)\1\)/g,
                 U = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,
                 X = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
             async function Y(e, t, n, r, o) {
@@ -338,7 +338,7 @@
                 return e;
             }
             function K(e) {
-                return -1 !== e.search(q);
+                return -1 !== e.search(W);
             }
             async function G(e, t, n) {
                 if (!K(e)) return e;
@@ -355,7 +355,7 @@
                     })(e, n),
                     o = (function (e) {
                         const t = [];
-                        return e.replace(q, (e, n, r) => (t.push(r), e)), t.filter((e) => !F(e));
+                        return e.replace(W, (e, n, r) => (t.push(r), e)), t.filter((e) => !F(e));
                     })(r);
                 return o.reduce((e, r) => e.then((e) => Y(e, r, t, n)), Promise.resolve(r));
             }
@@ -529,7 +529,7 @@
             }
             async function se(e, t = {}) {
                 const { width: n, height: r } = $(e, t),
-                    o = await W(e, t, !0);
+                    o = await q(e, t, !0);
                 await (async function (e, t) {
                     const n = null != t.fontEmbedCSS ? t.fontEmbedCSS : t.skipFonts ? null : await ie(e, t);
                     if (n) {
@@ -1065,20 +1065,6 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        522450: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => l });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14.355 9.649c-.773-.771-.774-2.023-.002-2.795L16.5 4.707c.37-.37.48-.926.28-1.409s-.671-.798-1.195-.798h-1.118c-1.725 0-3.346.672-4.566 1.892-1.531 1.53-2.191 3.711-1.766 5.834l.217 1.084c.065.327-.034.666-.273.905l-5.372 5.372c-.378.378-.585.88-.585 1.414s.208 1.036.585 1.414l.882.882c.378.377.88.585 1.414.585s1.036-.208 1.414-.585l5.372-5.372c.24-.24.578-.339.905-.273l1.084.217c2.123.425 4.304-.236 5.834-1.766 1.22-1.22 1.892-2.842 1.892-4.566V8.419c0-.523-.315-.995-.798-1.195s-1.039-.089-1.409.28L17.15 9.651c-.772.772-2.024.771-2.795-.002z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
         666536: (e, t, n) => {
             "use strict";
             n.d(t, { Z: () => a });
@@ -1165,9 +1151,9 @@
                         j = O,
                         z = [b.root, S, E && b.cursorDefault, { height: I, width: M }],
                         V = !0 === k ? (("string" == typeof w && null != w) || ("object" == typeof T && null != T && T.true) ? H : g) : ("string" == typeof T && null != T) || ("object" == typeof T && null != T && T.false) ? H : g,
-                        W = !0 === k ? (null == l ? y : B) : null == $ ? y : B,
-                        q = [b.track, { backgroundColor: E ? V : H, borderRadius: N }],
-                        U = [b.thumb, k && b.thumbActive, { backgroundColor: E ? W : B, height: O, marginStart: k ? c(j, -1) : 0, width: j }],
+                        q = !0 === k ? (null == l ? y : B) : null == $ ? y : B,
+                        W = [b.track, { backgroundColor: E ? V : H, borderRadius: N }],
+                        U = [b.thumb, k && b.thumbActive, { backgroundColor: E ? q : B, height: O, marginStart: k ? c(j, -1) : 0, width: j }],
                         X = (0, s.Z)("input", {
                             "aria-label": n || r,
                             checked: k,
@@ -1182,7 +1168,7 @@
                             type: "checkbox",
                             role: "switch",
                         });
-                    return i.createElement(d.Z, (0, o.Z)({}, _, { style: z }), i.createElement(d.Z, { style: q }), i.createElement(d.Z, { ref: A, style: U }), X);
+                    return i.createElement(d.Z, (0, o.Z)({}, _, { style: z }), i.createElement(d.Z, { style: W }), i.createElement(d.Z, { ref: A, style: U }), X);
                 });
             w.displayName = "Switch";
             var b = u.Z.create({ root: { cursor: "pointer", userSelect: "none" }, cursorDefault: { cursor: "default" }, cursorInherit: { cursor: "inherit" }, track: (0, r.Z)((0, r.Z)({ forcedColorAdjust: "none" }, u.Z.absoluteFillObject), {}, { height: "70%", margin: "auto", transitionDuration: "0.1s", width: "100%" }), thumb: { forcedColorAdjust: "none", alignSelf: "flex-start", borderRadius: "100%", boxShadow: p, start: "0%", transform: "translateZ(0)", transitionDuration: "0.1s" }, thumbActive: { insetInlineStart: "100%" }, nativeControl: (0, r.Z)((0, r.Z)({}, u.Z.absoluteFillObject), {}, { height: "100%", margin: 0, appearance: "none", padding: 0, width: "100%" }) });
@@ -1190,4 +1176,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.c89e441a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Debugger.c160b21a.js.map

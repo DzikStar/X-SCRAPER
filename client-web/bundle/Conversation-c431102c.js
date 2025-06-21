@@ -15,8 +15,8 @@
                 return c(r), c(o), c(i), n.createElement(n.Fragment, null);
             }
         },
-        564313: (e, t, a) => {
-            a.d(t, { ZP: () => D });
+        210081: (e, t, a) => {
+            a.d(t, { ZP: () => q });
             var n = a(202784),
                 r = a(325686),
                 o = a(782261),
@@ -41,19 +41,23 @@
                     .propsFromState(() => ({ selectedObjective: P, tweet: S }))
                     .propsFromActions(() => ({ setObjective: E.mS }))
                     .withAnalytics(f.EP);
-            var w = a(263070),
-                k = a(829077);
-            const v = d().fcc839b6,
-                I = (d().b679a538, d().cb19a2f0),
-                L = d().a2d37164,
-                x = d().cefad302,
-                T = d().b614fad0,
-                _ = c.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
-                [M, A] = [
-                    { label: (0, h.WF)(m.CH.Engagements), value: m.CH.Engagements, description: I, illustration: n.createElement(w.i, null), testID: y.Z.getObjective(m.CH.Engagements) },
-                    { label: (0, h.WF)(m.CH.WebsiteClicks), value: m.CH.WebsiteClicks, description: L, illustration: n.createElement(k.T, null), testID: y.Z.getObjective(m.CH.WebsiteClicks) },
+            var w = a(992942),
+                k = a(173324);
+            function v() {
+                return n.createElement(w.Z, { "aria-label": "", source: k, style: c.default.absoluteFill });
+            }
+            var I = a(829077);
+            const L = d().fcc839b6,
+                x = (d().b679a538, d().cb19a2f0),
+                T = d().a2d37164,
+                _ = d().cefad302,
+                M = d().b614fad0,
+                A = c.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
+                [D, B] = [
+                    { label: (0, h.WF)(m.CH.Engagements), value: m.CH.Engagements, description: x, illustration: n.createElement(v, null), testID: y.Z.getObjective(m.CH.Engagements) },
+                    { label: (0, h.WF)(m.CH.WebsiteClicks), value: m.CH.WebsiteClicks, description: T, illustration: n.createElement(I.T, null), testID: y.Z.getObjective(m.CH.WebsiteClicks) },
                 ];
-            const D = Z((e) => {
+            const q = Z((e) => {
                 const { analytics: t, selectedObjective: a, setObjective: c, tweet: l } = e,
                     d = l ? o.Z.getOriginalTweet(l) : l,
                     m = null != d?.entities?.media?.length && d?.entities?.media?.length > 0,
@@ -64,7 +68,7 @@
                 const b = n.useMemo(
                         () =>
                             (function ({ selectedObjective: e, tweetContainsLinks: t, tweetHasMedia: a }) {
-                                const r = [M, { ...A, disabled: !t, disabledInlineCallout: t ? void 0 : n.createElement(s.Z.Danger, { headline: T, text: x, withIcon: !0 }) }];
+                                const r = [D, { ...B, disabled: !t, disabledInlineCallout: t ? void 0 : n.createElement(s.Z.Danger, { headline: M, text: _, withIcon: !0 }) }];
                                 return r;
                             })({ tweetHasMedia: m, tweetContainsLinks: h, selectedObjective: a }),
                         [m, h, a],
@@ -75,7 +79,7 @@
                         },
                         [t, c],
                     );
-                return n.createElement(r.Z, { style: _.qpContainer, testID: y.Z.objectiveScreen }, n.createElement(g.O, { screenType: f.MN.Objective }), n.createElement(p.ZP, null, n.createElement(u.Y, { style: _.titleContainer, title: v }), n.createElement(i.Z, { name: "objective-picker", onChange: E, options: b, value: a })));
+                return n.createElement(r.Z, { style: A.qpContainer, testID: y.Z.objectiveScreen }, n.createElement(g.O, { screenType: f.MN.Objective }), n.createElement(p.ZP, null, n.createElement(u.Y, { style: A.titleContainer, title: L }), n.createElement(i.Z, { name: "objective-picker", onChange: E, options: b, value: a })));
             });
         },
         695823: (e, t, a) => {
@@ -736,4 +740,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.53bc994a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.37e9afea.js.map

@@ -42,6 +42,11 @@
             var r = l(552322);
             const o = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M10.59 12L4.54 5.96l1.42-1.42L12 10.59l6.04-6.05 1.42 1.42L13.41 12l6.05 6.04-1.42 1.42L12 13.41l-6.04 6.05-1.42-1.42L10.59 12z" }) });
         },
+        702823: (e, t, l) => {
+            l.d(t, { Z: () => o });
+            var r = l(552322);
+            const o = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" }) });
+        },
         907934: (e, t, l) => {
             l.d(t, { Z: () => o });
             var r = l(552322);
@@ -206,7 +211,7 @@
                     l[c] = h + 1;
                     var d = n(a),
                         v = { css: s[1], media: s[2], sourceMap: s[3] };
-                    -1 !== d ? (i[d].references++, i[d].updater(v)) : i.push({ identifier: a, updater: x(v, t), references: 1 }), r.push(a);
+                    -1 !== d ? (i[d].references++, i[d].updater(v)) : i.push({ identifier: a, updater: g(v, t), references: 1 }), r.push(a);
                 }
                 return r;
             }
@@ -256,13 +261,13 @@
                     e.appendChild(document.createTextNode(r));
                 }
             }
-            var f = null,
-                m = 0;
-            function x(e, t) {
+            var m = null,
+                x = 0;
+            function g(e, t) {
                 var l, r, o;
                 if (t.singleton) {
-                    var s = m++;
-                    (l = f || (f = h(t))), (r = v.bind(null, l, s, !1)), (o = v.bind(null, l, s, !0));
+                    var s = x++;
+                    (l = m || (m = h(t))), (r = v.bind(null, l, s, !1)), (o = v.bind(null, l, s, !0));
                 } else
                     (l = h(t)),
                         (r = w.bind(null, l, t)),
@@ -302,4 +307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.AccountAnalytics~bundle.DockPeek~ondemand.XChat~loader.TimelineFrameHandler~loader..29fbee6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.AccountAnalytics~bundle.DockPeek~ondemand.XChat~loader.TimelineFrameHandler~loader..7b63e50a.js.map

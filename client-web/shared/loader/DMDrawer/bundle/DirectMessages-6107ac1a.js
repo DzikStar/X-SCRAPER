@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a"],
+    ["shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a", "icons/IconNotificationsOff-js"],
     {
         705414: (e, l, n) => {
             n.d(l, { Z: () => D });
@@ -1140,8 +1140,8 @@
                         T = S ? this._getMemoizedLink(S, v) : void 0,
                         C = u ? u(S) : L?.pathname === T?.pathname,
                         D = k.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: c ? K.pillHoverStyle.backgroundColor : void 0 }),
-                        P = y ? "medium" : C ? "bold" : "medium";
-                    return i.createElement(_.Z, { "aria-label": l, "aria-selected": C, focusable: !!C, interactiveStyles: D, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(c ? [K.pillStyle] : [K.link]), ...(c && C ? [K.pillActiveStyle] : []), d ? (c ? K.compactPill : K.compactLink) : null, g ? K.roundedRect : null, f], withoutInteractiveStyles: y }, ({ isFocused: l, isHovered: u }) => i.createElement(o.Z, { style: c && K.flexGrow }, i.createElement(m.ZP, { size: y ? "headline2" : void 0, style: [K.text, { color: this._getTextColor(C, u, y, c) }, d && K.compactText, y && l && K.focusedText, c && K.pillTextStyle, c && C && K.pillActiveTextStyle, c && u && K.pillHoverTextStyle], weight: P }, e && i.createElement(e, { style: K.icon }), t, y || c ? null : i.createElement(o.Z, { style: C && [K.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? i.createElement(p.Z, { count: n, standalone: !0, style: [K.badge, n >= 10 && K.multiDigitBadge, n >= 20 && K.truncatedCountBadge], truncatedCountFormatter: b, unreadCountLabel: h, withBorder: !1 }) : a ? i.createElement(p.Z, { pip: !0, standalone: !0, style: K.badgePip, textColor: "red500", unreadCountLabel: F, withBorder: !1 }) : null));
+                        M = y ? "medium" : C ? "bold" : "medium";
+                    return i.createElement(_.Z, { "aria-label": l, "aria-selected": C, focusable: !!C, interactiveStyles: D, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(c ? [K.pillStyle] : [K.link]), ...(c && C ? [K.pillActiveStyle] : []), d ? (c ? K.compactPill : K.compactLink) : null, g ? K.roundedRect : null, f], withoutInteractiveStyles: y }, ({ isFocused: l, isHovered: u }) => i.createElement(o.Z, { style: c && K.flexGrow }, i.createElement(m.ZP, { size: y ? "headline2" : void 0, style: [K.text, { color: this._getTextColor(C, u, y, c) }, d && K.compactText, y && l && K.focusedText, c && K.pillTextStyle, c && C && K.pillActiveTextStyle, c && u && K.pillHoverTextStyle], weight: M }, e && i.createElement(e, { style: K.icon }), t, y || c ? null : i.createElement(o.Z, { style: C && [K.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? i.createElement(p.Z, { count: n, standalone: !0, style: [K.badge, n >= 10 && K.multiDigitBadge, n >= 20 && K.truncatedCountBadge], truncatedCountFormatter: b, unreadCountLabel: h, withBorder: !1 }) : a ? i.createElement(p.Z, { pip: !0, standalone: !0, style: K.badgePip, textColor: "red500", unreadCountLabel: F, withBorder: !1 }) : null));
                 }
             }
             (v.contextType = y.Z), (v.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1188,7 +1188,7 @@
                     return i.createElement(t.Z, { "aria-label": l, buttonsContainerStyle: r && S.gap, childrenStyle: !p && S.flexGrow, key: g, style: [r ? null : S.segmentedControl, p && S.leftAligned, d], visibleItemIndex: c }, y);
                 };
         },
-        668430: (e, l, n) => {
+        165243: (e, l, n) => {
             n.r(l), n.d(l, { default: () => o });
             var a = n(202784),
                 i = n(890601),
@@ -1196,7 +1196,7 @@
                 s = n(347101);
             const r = (e = {}) => {
                 const { direction: l } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M13 3v13.59l5.043-5.05 1.414 1.42L12 20.41l-7.457-7.45 1.414-1.42L11 16.59V3h2z" })) }, { writingDirection: l });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M20.29 2.29l-2.34 2.34C16.47 3.01 14.34 2 12 2 7.93 2 4.51 5.02 4 9.05L2.87 18h1.72l-2.3 2.29 1.42 1.42 18-18-1.42-1.42zM6.59 16H5.13l.85-6.7C6.36 6.27 8.94 4 12 4c1.79 0 3.42.78 4.54 2.05L6.59 16zM12 22c-1.57 0-2.98-.73-3.89-1.86l1.42-1.43c.55.78 1.45 1.29 2.47 1.29 1.31 0 2.42-.83 2.83-2H12v-2h6.86l-.74-5.87 1.76-1.76c.05.22.08.44.11.67L21.14 18H16.9c-.46 2.28-2.48 4-4.9 4z" })) }, { writingDirection: l });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
@@ -1217,4 +1217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a.fdd2ccaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6107ac1a.0e9e135a.js.map

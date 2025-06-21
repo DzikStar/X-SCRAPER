@@ -2,24 +2,24 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Birdwatch-e019dbda"],
     {
-        652904: (e, t, n) => {
-            n.d(t, { Z: () => c });
-            var o = n(202784),
-                a = n(500002),
-                r = n(668214),
-                s = n(997174),
-                d = n(118823);
+        652904: (e, t, o) => {
+            o.d(t, { Z: () => c });
+            var n = o(202784),
+                a = o(500002),
+                r = o(668214),
+                s = o(997174),
+                d = o(118823);
             const i = (0, r.Z)()
                 .propsFromActions(() => ({ updateLocation: d.YF, updateTweetDetailNav: s.NH }))
                 .withAnalytics();
-            class l extends o.Component {
+            class l extends n.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
                 componentDidUpdate(e) {
                     const {
                             history: { location: t },
-                            location: { pathname: n, search: o },
+                            location: { pathname: o, search: n },
                             locationKey: a,
                         } = this.props,
                         {
@@ -27,88 +27,87 @@
                             locationKey: d,
                         } = e;
                     let i = !1;
-                    t.pathname !== n ? (this._isInBackground = !0) : this._isInBackground && t.pathname === n && ((this._isInBackground = !1), (i = !0));
+                    t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (i = !0));
                     const l = a || d;
-                    ((l && a !== d) || (!l && n !== r) || o !== s || i) && this._performPageUpdates(this.props);
+                    ((l && a !== d) || (!l && o !== r) || n !== s || i) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
                 }
                 _performPageUpdates(e) {
-                    const { analytics: t, updateLocation: n, updateTweetDetailNav: o } = e;
-                    t.scribePageImpression(), n(t.contextualScribeNamespace, t.contextualScribeData), o(t.contextualScribeNamespace);
+                    const { analytics: t, updateLocation: o, updateTweetDetailNav: n } = e;
+                    t.scribePageImpression(), o(t.contextualScribeNamespace, t.contextualScribeData), n(t.contextualScribeNamespace);
                 }
             }
             l.defaultProps = { children: null };
             const c = (0, a.ZP)(i(l));
         },
-        337523: (e, t, n) => {
-            n.d(t, { Z: () => Te });
-            var o = n(202784),
-                a = n(457311),
-                r = n(708852),
-                s = n(108362),
-                d = n(111677),
-                i = n.n(d),
-                l = n(769471),
-                c = n(718e3),
-                u = n(33104),
-                E = n(789831),
-                _ = n(252021),
-                h = n(293115),
-                b = n(87063),
-                p = n(652904),
-                S = n(507651),
-                m = n(3138),
-                w = n(655352),
-                T = n(503229),
-                C = n(71620),
-                I = n(668214);
-            const A = (e, t) => t.module.selectInitialFetchStatus(e),
-                N = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
-                D = (e, t) => {
-                    const n = t.selectedTabId,
-                        o = N(e, t);
-                    return o && o.tabs && o.tabs.tabs.find((e) => e.id === n);
+        337523: (e, t, o) => {
+            o.d(t, { Z: () => Te });
+            var n = o(202784),
+                a = o(457311),
+                r = o(708852),
+                s = o(108362),
+                d = o(111677),
+                i = o.n(d),
+                l = o(769471),
+                c = o(718e3),
+                u = o(789831),
+                E = o(252021),
+                _ = o(293115),
+                b = o(87063),
+                h = o(652904),
+                p = o(507651),
+                S = o(3138),
+                m = o(655352),
+                T = o(503229),
+                w = o(71620),
+                C = o(668214);
+            const I = (e, t) => t.module.selectInitialFetchStatus(e),
+                A = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
+                N = (e, t) => {
+                    const o = t.selectedTabId,
+                        n = A(e, t);
+                    return n && n.tabs && n.tabs.tabs.find((e) => e.id === o);
                 },
-                f = (0, I.Z)()
-                    .propsFromState(() => ({ initialFetchStatus: A, pageConfiguration: N, selectedTab: D }))
-                    .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, C.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
+                D = (0, C.Z)()
+                    .propsFromState(() => ({ initialFetchStatus: I, pageConfiguration: A, selectedTab: N }))
+                    .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, w.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
                     .withAnalytics();
-            class R extends o.Component {
+            class f extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._fetchPageModule = () => {
-                            const { analytics: e, createLocalApiErrorHandler: t, fetchInitial: n, pageConfiguration: o } = this.props,
-                                a = o ? o.scribeConfig : void 0;
-                            return n().then(({ performed: t }) => {
+                            const { analytics: e, createLocalApiErrorHandler: t, fetchInitial: o, pageConfiguration: n } = this.props,
+                                a = n ? n.scribeConfig : void 0;
+                            return o().then(({ performed: t }) => {
                                 t && e.scribe({ ...this._getScribeNamespace(a), action: "get_initial" });
-                            }, t(m.M));
+                            }, t(S.M));
                         }),
                         (this._render = () => {
-                            const { analytics: e, getTabLink: t, pageConfiguration: n, selectedTab: a } = this.props,
-                                r = n?.tabs;
+                            const { analytics: e, getTabLink: t, pageConfiguration: o, selectedTab: a } = this.props,
+                                r = o?.tabs;
                             if (r && r.tabs) {
                                 const s = (a && a.id) || r.initialTabId,
-                                    d = n ? n.scribeConfig : void 0;
+                                    d = o ? o.scribeConfig : void 0;
                                 let i;
-                                const l = r.tabs.map((n, o) => {
-                                    const a = n.id === s;
+                                const l = r.tabs.map((o, n) => {
+                                    const a = o.id === s;
                                     return (
-                                        a && (i = o),
+                                        a && (i = n),
                                         {
                                             isActive: () => a,
-                                            key: n.labelText,
-                                            label: n.labelText,
+                                            key: o.labelText,
+                                            label: o.labelText,
                                             onClick: () => {
-                                                e.scribe(this._buildTabNamespace(this._getScribeNamespace(d), this._getScribeNamespace(n.scribeConfig)));
+                                                e.scribe(this._buildTabNamespace(this._getScribeNamespace(d), this._getScribeNamespace(o.scribeConfig)));
                                             },
-                                            to: t(n.id),
-                                            token: n.scribeConfig?.entityToken,
+                                            to: t(o.id),
+                                            token: o.scribeConfig?.entityToken,
                                         }
                                     );
                                 });
-                                return o.createElement(o.Fragment, null, o.createElement(S.Z, { alignFirstItem: (0, w.ZP)(), links: l, visibleItemIndex: i }));
+                                return n.createElement(n.Fragment, null, n.createElement(p.Z, { alignFirstItem: (0, m.ZP)(), links: l, visibleItemIndex: i }));
                             }
                             return null;
                         });
@@ -124,323 +123,321 @@
                     return e === b.Z.LOADED ? this._render() : null;
                 }
                 _buildTabNamespace(e, t) {
-                    let n;
-                    return e && (n = e), t && (n = { ...n, ...t }), { ...n, element: "tab", action: "navigate" };
+                    let o;
+                    return e && (o = e), t && (o = { ...o, ...t }), { ...o, element: "tab", action: "navigate" };
                 }
                 _getScribeNamespace(e) {
                     if (e) {
-                        const { entityToken: t, ...n } = e;
-                        return n;
+                        const { entityToken: t, ...o } = e;
+                        return o;
                     }
                 }
             }
-            const O = f((0, T.Z)(R));
-            var g = n(912021),
-                U = n(383675),
-                L = n(611423),
-                M = n(443781);
-            const y = (0, n(523561).Z)({
+            const R = D((0, T.Z)(f));
+            var O = o(912021),
+                g = o(383675),
+                U = o(611423),
+                L = o(443781);
+            const M = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.25"),
-                        n.e("icons.22"),
-                        n.e("icons.6"),
-                        n.e("icons.4"),
-                        n.e("icons.9"),
-                        n.e("icons.15"),
-                        n.e("icons.7"),
-                        n.e("icons.3"),
-                        n.e("icons.20"),
-                        n.e("icons.2"),
-                        n.e("icons.18"),
-                        n.e("icons.27"),
-                        n.e("icons.13"),
-                        n.e("modules.common-e907d115"),
-                        n.e("modules.common-e019dbda"),
-                        n.e("icons.0"),
-                        n.e("icons.24"),
-                        n.e("icons.17"),
-                        n.e("icons.12"),
-                        n.e("icons.11"),
-                        n.e("modules.audio-6107ac1a"),
-                        n.e("modules.audio-b953418a"),
-                        n.e("modules.audio-7c51e6a7"),
-                        n.e("modules.audio-04db59e9"),
-                        n.e("modules.audio-76583d6c"),
-                        n.e("modules.audio-b7a8a5fb"),
-                        n.e("modules.audio-51f6e793"),
-                        n.e("modules.audio-e019dbda"),
-                        n.e("modules.audio-262c94d4"),
-                        n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.10"),
-                        n.e("icons.8"),
-                        n.e("icons.26"),
-                        n.e("icons.19"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
-                        n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
-                        n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
-                        n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
-                        n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
-                        n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"),
-                        n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
-                        n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
-                        n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
-                        n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
-                        n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
-                        n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
-                        n.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b75711ed"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-eadf0bc8"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b6859af7"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-856c9f2b"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-30607449"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-ff768435"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b8a8a774"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4e7553e3"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-68027d49"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b20998b4"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-703d6ce2"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-5f0ed14e"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-bd66f825"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
-                        n.e("shared~bundle.News~ondemand.News~loader.ExploreNews"),
-                        n.e("loader.ExploreNews"),
-                    ]).then(n.bind(n, 169698)),
+                        o.e("icons.23"),
+                        o.e("icons.0"),
+                        o.e("icons.2"),
+                        o.e("icons.16"),
+                        o.e("icons.19"),
+                        o.e("icons.10"),
+                        o.e("icons.13"),
+                        o.e("icons.24"),
+                        o.e("icons.7"),
+                        o.e("icons.22"),
+                        o.e("icons.27"),
+                        o.e("icons.17"),
+                        o.e("modules.common-e907d115"),
+                        o.e("modules.common-e019dbda"),
+                        o.e("icons.11"),
+                        o.e("icons.26"),
+                        o.e("modules.audio-6107ac1a"),
+                        o.e("modules.audio-b953418a"),
+                        o.e("modules.audio-7c51e6a7"),
+                        o.e("modules.audio-04db59e9"),
+                        o.e("modules.audio-76583d6c"),
+                        o.e("modules.audio-b7a8a5fb"),
+                        o.e("modules.audio-51f6e793"),
+                        o.e("modules.audio-e019dbda"),
+                        o.e("modules.audio-262c94d4"),
+                        o.e("modules.audio-c6fe4ea4"),
+                        o.e("icons.8"),
+                        o.e("icons.4"),
+                        o.e("icons.14"),
+                        o.e("icons.28"),
+                        o.e("icons.21"),
+                        o.e("icons.3"),
+                        o.e("icons.1"),
+                        o.e("icons.18"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78c7e6e6"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c7e58553"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f7f56781"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ff4a34e0"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
+                        o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
+                        o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
+                        o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
+                        o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
+                        o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"),
+                        o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
+                        o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
+                        o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
+                        o.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
+                        o.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
+                        o.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
+                        o.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
+                        o.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b75711ed"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-eadf0bc8"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b6859af7"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-856c9f2b"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-30607449"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-ff768435"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b8a8a774"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4e7553e3"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-68027d49"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-b20998b4"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-703d6ce2"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-5f0ed14e"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-bd66f825"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-92ee7280"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-4cd14b6e"),
+                        o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
+                        o.e("shared~bundle.News~ondemand.News~loader.ExploreNews"),
+                        o.e("loader.ExploreNews"),
+                    ]).then(o.bind(o, 169698)),
             });
-            var F = n(810641);
-            const P = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
-                B = (e, t) => {
-                    const n = t.selectedTabId,
-                        o = P(e, t);
-                    return o && o.tabs && o.tabs.tabs.find((e) => e.id === n);
+            var y = o(810641);
+            const F = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
+                P = (e, t) => {
+                    const o = t.selectedTabId,
+                        n = F(e, t);
+                    return n && n.tabs && n.tabs.tabs.find((e) => e.id === o);
                 },
-                Z = (0, I.Z)()
-                    .propsFromState(() => ({ pageConfiguration: P, selectedTab: B }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, C.zr)("RICH_SEGMENTED_TIMELINE") }))
+                B = (0, C.Z)()
+                    .propsFromState(() => ({ pageConfiguration: F, selectedTab: P }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, w.zr)("RICH_SEGMENTED_TIMELINE") }))
                     .withAnalytics();
-            class v extends o.Component {
+            class Z extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getTimelineNamespace = () => {
-                            const { analytics: e, pageConfiguration: t, selectedTab: n } = this.props,
-                                o = n?.scribeConfig || t?.scribeConfig;
-                            if (o) {
-                                const { entityToken: e, ...t } = o;
+                            const { analytics: e, pageConfiguration: t, selectedTab: o } = this.props,
+                                n = o?.scribeConfig || t?.scribeConfig;
+                            if (n) {
+                                const { entityToken: e, ...t } = n;
                                 return t;
                             }
                             return e.contextualScribeNamespace;
                         }),
-                        (this._getModule = (0, g.Z)((e, t, n, o) => {
+                        (this._getModule = (0, O.Z)((e, t, o, n) => {
                             if (e?.id !== t) {
-                                if (e?.urtEndpoint) return (0, L.Z)({ urtUrl: e?.urtEndpoint, timelinePrefix: o });
-                                if (e?.graphQLTimelineId) return (0, U.R)(e.graphQLTimelineId);
+                                if (e?.urtEndpoint) return (0, U.Z)({ urtUrl: e?.urtEndpoint, timelinePrefix: n });
+                                if (e?.graphQLTimelineId) return (0, g.R)(e.graphQLTimelineId);
                             }
-                            return n;
+                            return o;
                         })),
                         (this._getRefreshIntervalSecForCurrentTab = () => {
                             const { pageConfiguration: e, selectedTab: t } = this.props,
-                                n = e?.tabs?.initialTabId;
+                                o = e?.tabs?.initialTabId;
                             if (t) return t.refreshIntervalSec;
-                            if (n) {
-                                const t = e?.tabs?.tabs.find((e) => n === e.id);
+                            if (o) {
+                                const t = e?.tabs?.tabs.find((e) => o === e.id);
                                 return t?.refreshIntervalSec;
                             }
                         });
                 }
                 render() {
-                    const { entryConfiguration: e, initialModule: t, pageConfiguration: n, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, selectedTab: i, timelinePrefix: l, title: c, withoutHeadroom: u } = this.props;
-                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return o.createElement(y, null);
-                    const E = this._getModule(i, n?.tabs?.initialTabId, t, l),
-                        _ = this._getRefreshIntervalSecForCurrentTab(),
-                        b = _ ? 1e3 * _ : void 0;
-                    return o.createElement(h.nO, { namespace: this._getTimelineNamespace() }, o.createElement(F.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: b, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, title: c, withoutHeadroom: u }));
+                    const { entryConfiguration: e, initialModule: t, pageConfiguration: o, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, selectedTab: i, timelinePrefix: l, title: c, withoutHeadroom: u } = this.props;
+                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return n.createElement(M, null);
+                    const E = this._getModule(i, o?.tabs?.initialTabId, t, l),
+                        b = this._getRefreshIntervalSecForCurrentTab(),
+                        h = b ? 1e3 * b : void 0;
+                    return n.createElement(_.nO, { namespace: this._getTimelineNamespace() }, n.createElement(y.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: h, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, title: c, withoutHeadroom: u }));
                 }
             }
-            v.contextType = M.rC;
-            const H = Z(v);
-            var k = n(929482),
-                x = n(335632),
-                G = n(325686),
-                Q = n(392237),
-                W = n(950708),
-                q = n(187669),
-                j = n(725516),
-                z = n(942893);
-            const V = (e, t) => {
-                const n = (0, j.z)(),
+            Z.contextType = L.rC;
+            const v = B(Z);
+            var H = o(929482),
+                k = o(335632),
+                x = o(325686),
+                G = o(392237),
+                Q = o(950708),
+                W = o(187669),
+                q = o(725516),
+                j = o(942893);
+            const z = (e, t) => {
+                const o = (0, q.z)(),
                     { component: a, element: r } = t || {},
-                    s = o.useMemo(() => ({ items: [z.Z.forTopic(e, t)] }), [t, e]);
+                    s = n.useMemo(() => ({ items: [j.Z.forTopic(e, t)] }), [t, e]);
                 return (
-                    (0, q.q)(() => {
-                        n.scribe({ component: a, element: r, action: "impression", data: s });
+                    (0, W.q)(() => {
+                        o.scribe({ component: a, element: r, action: "impression", data: s });
                     }),
                     { namespace: { component: a, element: r }, data: s }
                 );
             };
-            function K(e) {
+            function V(e) {
                 const {
-                        header: { clientEventInfo: t, displayType: n, facepile: a, landingContext: r, topicId: s },
+                        header: { clientEventInfo: t, displayType: o, facepile: a, landingContext: r, topicId: s },
                         onHeaderVisible: d,
                     } = e,
-                    { data: i, namespace: l } = V(s, t);
-                return o.createElement(G.Z, { style: Y.root }, o.createElement(h.nO, { data: i, namespace: l }, o.createElement(W.Z, { displayType: n, facepile: a, onFollowHeaderOffscreen: ({ isOffscreen: e }) => d(!e), topicId: s, topicLandingContext: r, withDivider: !0 })));
+                    { data: i, namespace: l } = z(s, t);
+                return n.createElement(x.Z, { style: K.root }, n.createElement(_.nO, { data: i, namespace: l }, n.createElement(Q.Z, { displayType: o, facepile: a, onFollowHeaderOffscreen: ({ isOffscreen: e }) => d(!e), topicId: s, topicLandingContext: r, withDivider: !0 })));
             }
-            const Y = Q.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
-            var $ = n(24949);
-            const J = (e, t) => t.module.selectPageConfiguration(e),
-                X = (e, t) => t.module.selectInitialFetchStatus(e),
-                ee = (0, $.P1)(J, X, (e, t) => t !== b.Z.LOADED || (!!e && !!e.tabs)),
-                te = (0, I.Z)()
-                    .propsFromState(() => ({ hasTabNavigation: ee, pageConfiguration: J, initialFetchStatus: X }))
+            const K = G.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
+            var Y = o(24949);
+            const $ = (e, t) => t.module.selectPageConfiguration(e),
+                J = (e, t) => t.module.selectInitialFetchStatus(e),
+                X = (0, Y.P1)($, J, (e, t) => t !== b.Z.LOADED || (!!e && !!e.tabs)),
+                ee = (0, C.Z)()
+                    .propsFromState(() => ({ hasTabNavigation: X, pageConfiguration: $, initialFetchStatus: J }))
                     .withAnalytics();
-            var ne = n(688715),
-                oe = n(815858),
-                ae = n(651930),
-                re = n(572067),
-                se = n(265196),
-                de = n(421575),
-                ie = n(907552),
-                le = n(466380);
-            const ce = (e, t) => {
-                    const n = t.navBar.topicId ? t.navBar.topicId : "";
-                    return le.Z.select(e, n);
+            var te = o(688715),
+                oe = o(815858),
+                ne = o(651930),
+                ae = o(572067),
+                re = o(265196),
+                se = o(421575),
+                de = o(907552),
+                ie = o(466380);
+            const le = (e, t) => {
+                    const o = t.navBar.topicId ? t.navBar.topicId : "";
+                    return ie.Z.select(e, o);
                 },
-                ue = (0, I.Z)().propsFromState(() => ({ topic: ce })),
-                Ee = (e) => (0, ne.ju)(`https://x.com/i/topics/${e}`),
-                _e = (e) => `twitter://topics_timeline?id=${e}`,
-                he = i().ed88e742;
-            const be = Q.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
-                pe = ue(function (e) {
+                ce = (0, C.Z)().propsFromState(() => ({ topic: le })),
+                ue = (e) => (0, te.ju)(`https://x.com/i/topics/${e}`),
+                Ee = (e) => `twitter://topics_timeline?id=${e}`,
+                _e = i().ed88e742;
+            const be = G.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
+                he = ce(function (e) {
                     const t = e.navBar.topicId ? e.navBar.topicId : "",
                         {
-                            isHeaderOffscreen: n,
+                            isHeaderOffscreen: o,
                             navBar: { clientEventInfo: a },
                             pageNamespace: r,
                             topic: s,
                             withAppLinks: d,
                             withOpenGraphMeta: i,
                         } = e,
-                        { featureSwitches: c } = o.useContext(M.rC),
+                        { featureSwitches: c } = n.useContext(L.rC),
                         u = c.isTrue("topic_landing_page_share_enabled"),
-                        { data: E, namespace: _ } = V(t, a),
-                        b = (0, l.Z)({}, r, _);
-                    return s ? o.createElement(h.nO, { data: E, namespace: b }, o.createElement(o.Fragment, null, i ? o.createElement(re.Z, { canonical: Ee(t), description: s.description, title: s.name, type: "article" }) : null, d ? o.createElement(ae.Z, { deepLink: _e(t) }) : null, o.createElement(G.Z, { style: be.rightControl }, o.createElement(G.Z, { style: be.followButtonContainer }, o.createElement(oe.Z, { animateMount: !0, show: n, type: "fade" }, o.createElement(se.ZP, { size: "medium", textMode: de.q.FollowTopic, topic: s }))), u ? o.createElement(ie.ZP, { copyLinkShareLabel: he, scribeNamespace: b, url: Ee(t) }) : null))) : null;
+                        { data: E, namespace: b } = z(t, a),
+                        h = (0, l.Z)({}, r, b);
+                    return s ? n.createElement(_.nO, { data: E, namespace: h }, n.createElement(n.Fragment, null, i ? n.createElement(ae.Z, { canonical: ue(t), description: s.description, title: s.name, type: "article" }) : null, d ? n.createElement(ne.Z, { deepLink: Ee(t) }) : null, n.createElement(x.Z, { style: be.rightControl }, n.createElement(x.Z, { style: be.followButtonContainer }, n.createElement(oe.Z, { animateMount: !0, show: o, type: "fade" }, n.createElement(re.ZP, { size: "medium", textMode: se.q.FollowTopic, topic: s }))), u ? n.createElement(de.ZP, { copyLinkShareLabel: _e, scribeNamespace: h, url: ue(t) }) : null))) : null;
                 }),
-                Se = i().e9f1fbcc,
-                me = o.createElement(c.Z, null),
-                we = (e) => {
-                    const { TabBar: t, backLocation: n, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: S, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: I, onBackClick: A, pageConfiguration: N, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, rightControl: g, selectedTabId: U, sidebarContent: L, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: x } = e,
-                        G = (0, r.tj)(),
-                        Q = o.useMemo(() => ({ ...d, ...(0, k.Z)({ isLegacy: !0, isWide: G }) }), [d, G]),
-                        [W, q] = o.useState(!0),
-                        { header: j, navBar: z, subtitle: V, title: Y } = N || {},
-                        $ = w === b.Z.LOADED ? Y || y : "",
-                        J = ((e, t, n) => {
-                            const o = t?.scribeConfig,
-                                { entityToken: a, ...r } = o || {},
+                pe = i().e9f1fbcc,
+                Se = n.createElement(c.Z, null),
+                me = (e) => {
+                    const { TabBar: t, backLocation: o, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: p, history: S, initialFetchStatus: m, initialPageNamespace: T, logoButton: w, module: C, onBackClick: I, pageConfiguration: A, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, rightControl: O, selectedTabId: g, sidebarContent: U, timelinePrefix: L, title: M, withAppLinks: y, withBottomLoginSignupBar: F, withOpenGraphMeta: P, withSearchBox: B, withTweetButton: Z } = e,
+                        k = (0, r.tj)(),
+                        x = n.useMemo(() => ({ ...d, ...(0, H.Z)({ isLegacy: !0, isWide: k }) }), [d, k]),
+                        [G, Q] = n.useState(!0),
+                        { header: W, navBar: q, subtitle: j, title: z } = A || {},
+                        K = m === b.Z.LOADED ? z || M : "",
+                        Y = ((e, t, o) => {
+                            const n = t?.scribeConfig,
+                                { entityToken: a, ...r } = n || {},
                                 s = t?.tabs,
                                 d = e || s?.initialTabId,
                                 i = s?.tabs.find((e) => e.id === d),
                                 { entityToken: c, ...u } = i?.scribeConfig || {};
-                            return (0, l.Z)({}, n, r, u);
-                        })(U, N, T),
-                        X = j ? o.createElement(K, { header: j, onHeaderVisible: q }) : null,
-                        ee = z ? o.createElement(pe, { isHeaderOffscreen: !W, navBar: z, pageNamespace: J, withAppLinks: F, withOpenGraphMeta: Z }) : null,
-                        te = B ? u.Z : o.Fragment,
-                        ne = o.createElement(o.Fragment, null, X, o.createElement(te, null, o.createElement(H, { entryConfiguration: Q, initialModule: I, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, selectedTabId: U, timelinePrefix: M, title: y, withoutHeadroom: !0 }))),
-                        oe = i ? o.createElement(E.Z, { component: s.Z, fab: i }, ne) : ne,
-                        ae = c && S ? o.createElement(O, { getTabLink: c, module: I, selectedTabId: U }) : void 0;
-                    return o.createElement(h.nO, { namespace: J }, o.createElement(p.Z, null, o.createElement(_.Z, { TabBar: t, backLocation: n, documentTitle: a, history: m, logoButton: C, onBackClick: A, primaryContent: oe, rightControl: ee || g, secondaryBar: ae, sidebarContent: L, subtitle: V, title: X && W ? y : $, withBottomLoginSignupBar: P, withSearchBox: v, withTweetButton: x })));
+                            return (0, l.Z)({}, o, r, u);
+                        })(g, A, T),
+                        $ = W ? n.createElement(V, { header: W, onHeaderVisible: Q }) : null,
+                        J = q ? n.createElement(he, { isHeaderOffscreen: !G, navBar: q, pageNamespace: Y, withAppLinks: y, withOpenGraphMeta: P }) : null,
+                        X = n.createElement(n.Fragment, null, $, n.createElement(v, { entryConfiguration: x, initialModule: C, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, selectedTabId: g, timelinePrefix: L, title: M, withoutHeadroom: !0 })),
+                        ee = i ? n.createElement(u.Z, { component: s.Z, fab: i }, X) : X,
+                        te = c && p ? n.createElement(R, { getTabLink: c, module: C, selectedTabId: g }) : void 0;
+                    return n.createElement(_.nO, { namespace: Y }, n.createElement(h.Z, null, n.createElement(E.Z, { TabBar: t, backLocation: o, documentTitle: a, history: S, logoButton: w, onBackClick: I, primaryContent: ee, rightControl: J || O, secondaryBar: te, sidebarContent: U, subtitle: j, title: $ && G ? M : K, withBottomLoginSignupBar: F, withSearchBox: B, withTweetButton: Z })));
                 };
-            we.defaultProps = { entryConfiguration: (0, x.G)({}), renderEmptyState: () => o.createElement(a.Z, { header: Se }), sidebarContent: me, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
-            const Te = te(we);
+            me.defaultProps = { entryConfiguration: (0, k.G)({}), renderEmptyState: () => n.createElement(a.Z, { header: pe }), sidebarContent: Se, withAppLinks: !1, withOpenGraphMeta: !1 };
+            const Te = ee(me);
         },
-        709070: (e, t, n) => {
-            n.d(t, { Z: () => r });
-            var o = n(351322);
-            const a = { loader: () => n.e("loader.PivotLabelHandler").then(n.bind(n, 901547)), loaderKey: "pivotLabelLoader", strategy: n(509738).Z.OnDemand },
-                r = o.OZ(a);
+        709070: (e, t, o) => {
+            o.d(t, { Z: () => r });
+            var n = o(351322);
+            const a = { loader: () => o.e("loader.PivotLabelHandler").then(o.bind(o, 901547)), loaderKey: "pivotLabelLoader", strategy: o(509738).Z.OnDemand },
+                r = n.OZ(a);
         },
-        26232: (e, t, n) => {
-            n.d(t, { Z: () => m });
-            var o = n(202784),
-                a = n(555874),
-                r = n(111677),
-                s = n.n(r),
-                d = n(290402),
-                i = n(965245),
-                l = n(71620),
-                c = n(668214);
+        26232: (e, t, o) => {
+            o.d(t, { Z: () => m });
+            var n = o(202784),
+                a = o(555874),
+                r = o(111677),
+                s = o.n(r),
+                d = o(290402),
+                i = o(965245),
+                l = o(71620),
+                c = o(668214);
             const u = (e, t) => t.module.selectFetchStatus(e),
                 E = (e, t) => t.module.selectItems(e),
                 _ = (0, c.Z)()
                     .propsFromState((e) => ({ fetchStatus: u, items: E }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, l.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
-                h = s().i9028824,
-                b = (e) => e,
+                b = s().i9028824,
+                h = (e) => e,
                 p = (e) => (t) => e(t.item);
-            class S extends o.Component {
+            class S extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
-                            const { footer: e, items: t, noItemsRenderer: n, numColumns: r, onScrollEnd: s, renderer: d, withoutHeadroom: l } = this.props;
-                            return !t || r < 1 ? null : 1 === r ? o.createElement(i.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: b, items: t, noItemsRenderer: n, onNearEnd: this._handleNearEnd, onScrollEnd: s, renderer: d, withoutHeadroom: l }) : o.createElement(a.Z, { ListEmptyComponent: n, data: t, keyExtractor: b, numColumns: r, renderItem: p(d) });
+                            const { footer: e, items: t, noItemsRenderer: o, numColumns: r, onScrollEnd: s, renderer: d, withoutHeadroom: l } = this.props;
+                            return !t || r < 1 ? null : 1 === r ? n.createElement(i.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: h, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: s, renderer: d, withoutHeadroom: l }) : n.createElement(a.Z, { ListEmptyComponent: o, data: t, keyExtractor: h, numColumns: r, renderItem: p(d) });
                         }),
                         (this._handleNearEnd = () => {
                             const { createLocalApiErrorHandler: e, fetchBottom: t } = this.props;
                             t().catch(e());
                         }),
                         (this._handleFetch = () => {
-                            const { alwaysFetch: e, createLocalApiErrorHandler: t, fetch: n, fetchIfNeeded: o } = this.props;
-                            (e ? n : o)().catch(t());
+                            const { alwaysFetch: e, createLocalApiErrorHandler: t, fetch: o, fetchIfNeeded: n } = this.props;
+                            (e ? o : n)().catch(t());
                         });
                 }
                 componentDidMount() {
@@ -451,115 +448,88 @@
                     e.module !== t && this._handleFetch();
                 }
                 render() {
-                    const { fetchStatus: e, module: t, retryMessage: n } = this.props;
-                    return t ? o.createElement(d.Z, { "aria-label": h, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render, retryMessage: n, retryable: !0 }) : null;
+                    const { fetchStatus: e, module: t, retryMessage: o } = this.props;
+                    return t ? n.createElement(d.Z, { "aria-label": b, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render, retryMessage: o, retryable: !0 }) : null;
                 }
             }
             S.defaultProps = { numColumns: 1, alwaysFetch: !1 };
             const m = _(S);
         },
-        890655: (e, t, n) => {
-            n.d(t, { Q: () => o });
-            const o = (e, t = !1) =>
+        890655: (e, t, o) => {
+            o.d(t, { Q: () => n });
+            const n = (e, t = !1) =>
                 e
                     .split("-")
                     .map((e) => (t ? e[0].toUpperCase() + e.substring(1) : e))
                     .join(" ");
         },
-        337455: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var o = n(202784),
-                a = n(411916),
-                r = n.n(a),
-                s = n(373463),
-                d = n.n(s);
-            function i(e) {
-                class t extends o.Component {
-                    constructor(e, t) {
-                        super(e, t), (this.state = { shouldRender: !1 }), (this._mounted = !0);
-                    }
-                    componentWillUnmount() {
-                        this._mounted = !1;
-                    }
-                    componentDidMount() {
-                        r()(() => {
-                            this._mounted && this.setState({ shouldRender: !0 });
-                        });
-                    }
-                    render() {
-                        return this.state.shouldRender ? o.createElement(e, this.props) : null;
-                    }
-                }
-                return d()(t, e);
-            }
-        },
-        553093: (e, t, n) => {
-            n.d(t, { Sz: () => o });
-            const o = (e) => {
+        553093: (e, t, o) => {
+            o.d(t, { Sz: () => n });
+            const n = (e) => {
                     const t = (JSON.stringify(e) || "").split("");
                     t.sort();
-                    const n = t.join("");
-                    return a(n, 0).toString();
+                    const o = t.join("");
+                    return a(o, 0).toString();
                 },
                 a = (e, t) => {
-                    const n = "string" == typeof e ? e : String(e);
-                    let o = t;
-                    for (let e = 0; e < n.length; e++) {
-                        (o = (o << 5) - o + n.charCodeAt(e)), (o |= 0);
+                    const o = "string" == typeof e ? e : String(e);
+                    let n = t;
+                    for (let e = 0; e < o.length; e++) {
+                        (n = (n << 5) - n + o.charCodeAt(e)), (n |= 0);
                     }
-                    return o;
+                    return n;
                 };
         },
-        68738: (e, t, n) => {
-            n.d(t, { E: () => r });
-            var o = n(106067),
-                a = n(545521);
-            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_DELETED_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(o.Z).fetchBirdwatchContributorDeletedNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorDeletedNotesSlice-${e}` });
+        68738: (e, t, o) => {
+            o.d(t, { E: () => r });
+            var n = o(106067),
+                a = o(545521);
+            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_DELETED_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchContributorDeletedNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorDeletedNotesSlice-${e}` });
         },
-        44836: (e, t, n) => {
-            n.d(t, { Z: () => c, f: () => l });
-            var o = n(979090),
-                a = n(106067),
-                r = n(917799),
-                s = n(502909),
-                d = n(600823);
+        44836: (e, t, o) => {
+            o.d(t, { Z: () => c, f: () => l });
+            var n = o(979090),
+                a = o(106067),
+                r = o(917799),
+                s = o(502909),
+                d = o(600823);
             const i = (0, s.ZP)({ namespace: "birdwatchContributorNotes" }),
                 l =
                     (e) =>
-                    (t, n, { api: s }) =>
+                    (t, o, { api: s }) =>
                         r._O(t, { request: s.withEndpoint(a.Z).deleteNote, params: { note_id: e } })({ actionTypes: i.actionTypes.OPTIMISTIC_UPDATE, context: "DELETE_NOTE" }, (t) => {
-                            if (t) return [i.deleteOne(e), (0, o.f_)(e)];
+                            if (t) return [i.deleteOne(e), (0, n.f_)(e)];
                         }),
                 c = d.Z.register(i);
         },
-        78014: (e, t, n) => {
-            n.d(t, { _: () => r });
-            var o = n(106067),
-                a = n(545521);
-            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(o.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
+        78014: (e, t, o) => {
+            o.d(t, { _: () => r });
+            var n = o(106067),
+                a = o(545521);
+            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
-        979090: (e, t, n) => {
-            n.d(t, { $e: () => Re, BG: () => ae, Bb: () => Ze, Bs: () => se, C7: () => De, EW: () => Ne, HO: () => he, JL: () => ce, Jn: () => Se, Kc: () => Le, Ld: () => Be, Lt: () => ee, Ly: () => $, OV: () => oe, PL: () => de, Pi: () => we, Qg: () => q, SZ: () => ke, V0: () => Fe, Wk: () => te, X3: () => Me, _T: () => We, _b: () => He, aZ: () => ge, ap: () => le, cS: () => re, dw: () => J, eD: () => ie, eY: () => Ce, et: () => K, f3: () => be, f_: () => ye, gH: () => _e, gP: () => Ge, jm: () => z, kT: () => Pe, kX: () => xe, lC: () => Oe, lW: () => ue, lw: () => fe, mZ: () => Qe, mv: () => Te, oV: () => qe, pN: () => Ae, qm: () => Ue, r9: () => j, sz: () => X, tk: () => Y, vF: () => me, w6: () => Ee, wK: () => ve, wd: () => pe, ww: () => Ie });
-            n(571372), n(136728);
-            var o = n(744531),
-                a = n(401388),
-                r = n(106067),
-                s = n(256563),
-                d = n(497461),
-                i = n(499627),
-                l = n(917799),
-                c = n(312771),
-                u = n(56519),
-                E = n(3693),
-                _ = n(298219);
-            const h = "birdwatchNotes",
-                b = `rweb/${h}`,
-                p = (0, l.dg)(b, "DELETE_NOTE"),
-                S = (0, l.dg)(b, "CREATE_RATING"),
-                m = (0, l.dg)(b, "DELETE_RATING"),
-                w = (0, l.dg)(b, "SELECT_ALIAS"),
-                T = (0, l.dg)(b, "CREATE_APPEAL"),
-                C = (0, l.dg)(b, "EDIT_NOTIFICATION_SETTINGS"),
+        979090: (e, t, o) => {
+            o.d(t, { $e: () => Re, BG: () => ae, Bb: () => Ze, Bs: () => se, C7: () => De, EW: () => Ne, HO: () => be, JL: () => ce, Jn: () => Se, Kc: () => Le, Ld: () => Be, Lt: () => ee, Ly: () => $, OV: () => ne, PL: () => de, Pi: () => Te, Qg: () => q, SZ: () => ke, V0: () => Fe, Wk: () => te, X3: () => Me, _T: () => We, _b: () => He, aZ: () => ge, ap: () => le, cS: () => re, dw: () => J, eD: () => ie, eY: () => Ce, et: () => K, f3: () => he, f_: () => ye, gH: () => _e, gP: () => Ge, jm: () => z, kT: () => Pe, kX: () => xe, lC: () => Oe, lW: () => ue, lw: () => fe, mZ: () => Qe, mv: () => we, oV: () => qe, pN: () => Ae, qm: () => Ue, r9: () => j, sz: () => X, tk: () => Y, vF: () => me, w6: () => Ee, wK: () => ve, wd: () => pe, ww: () => Ie });
+            o(571372), o(136728);
+            var n = o(744531),
+                a = o(401388),
+                r = o(106067),
+                s = o(256563),
+                d = o(497461),
+                i = o(499627),
+                l = o(917799),
+                c = o(312771),
+                u = o(56519),
+                E = o(3693),
+                _ = o(298219);
+            const b = "birdwatchNotes",
+                h = `rweb/${b}`,
+                p = (0, l.dg)(h, "DELETE_NOTE"),
+                S = (0, l.dg)(h, "CREATE_RATING"),
+                m = (0, l.dg)(h, "DELETE_RATING"),
+                T = (0, l.dg)(h, "SELECT_ALIAS"),
+                w = (0, l.dg)(h, "CREATE_APPEAL"),
+                C = (0, l.dg)(h, "EDIT_NOTIFICATION_SETTINGS"),
                 I = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
                 A = Object.freeze({ REQUEST: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL", FAILURE: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL" }),
                 N = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
@@ -583,200 +553,200 @@
                 G = "rweb/birdwatchNotes/SAVE_BIRDWATCH_PATH",
                 Q = { drafts: {}, notes: {}, noteRequests: {}, tweetNotes: {}, contributor: {}, publicData: {}, matchData: { fetchStatus: c.ZP.LOADING }, sourceLinks: {}, sources: {}, paths: {} };
             i.Z.register({
-                [h]: function (e = Q, t) {
+                [b]: function (e = Q, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case F.SUCCESS: {
-                            const n = t.payload?.result;
-                            if (n) {
-                                const o = t.payload?.entities?.birdwatchNotes[n],
-                                    a = o.tweet.rest_id,
-                                    r = "MisinformedOrPotentiallyMisleading" === o.data_v1?.classification;
-                                return { ...e, notes: { ...e.notes, [n]: o }, tweetNotes: { ...e.tweetNotes, [a]: { ...(e.tweetNotes && e.tweetNotes[a]), misleadingIds: r ? [...e.tweetNotes[a].misleadingIds, n] : e.tweetNotes[a].misleadingIds, notMisleadingIds: r ? e.tweetNotes[a].notMisleadingIds : [...e.tweetNotes[a].notMisleadingIds, n], ownNoteId: n, fetchStatus: c.ZP.LOADED } } };
+                            const o = t.payload?.result;
+                            if (o) {
+                                const n = t.payload?.entities?.birdwatchNotes[o],
+                                    a = n.tweet.rest_id,
+                                    r = "MisinformedOrPotentiallyMisleading" === n.data_v1?.classification;
+                                return { ...e, notes: { ...e.notes, [o]: n }, tweetNotes: { ...e.tweetNotes, [a]: { ...(e.tweetNotes && e.tweetNotes[a]), misleadingIds: r ? [...e.tweetNotes[a].misleadingIds, o] : e.tweetNotes[a].misleadingIds, notMisleadingIds: r ? e.tweetNotes[a].notMisleadingIds : [...e.tweetNotes[a].notMisleadingIds, o], ownNoteId: o, fetchStatus: c.ZP.LOADED } } };
                             }
                             return e;
                         }
                         case A.SUCCESS: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, noteRequests: (0, o.Z)(e.noteRequests, n) } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, noteRequests: (0, n.Z)(e.noteRequests, o) } : e;
                         }
                         case p.SUCCESS: {
-                            const n = t.meta?.note_id;
-                            return n ? { ...e, notes: (0, o.Z)(e.notes, n) } : e;
+                            const o = t.meta?.note_id;
+                            return o ? { ...e, notes: (0, n.Z)(e.notes, o) } : e;
                         }
                         case f.REQUEST: {
-                            const n = t.meta?.tweetId;
-                            return n ? { ...e, matchData: { fetchStatus: c.ZP.LOADING } } : e;
+                            const o = t.meta?.tweetId;
+                            return o ? { ...e, matchData: { fetchStatus: c.ZP.LOADING } } : e;
                         }
                         case f.SUCCESS: {
-                            const n = t.meta?.tweetId;
-                            return n ? { ...e, matchData: { canBeMediaNote: t.payload.tweet_result_by_rest_id.result.can_be_media_note, canBeUrlNote: t.payload.tweet_result_by_rest_id.result.can_be_url_note, mediaNoteCategory: t.payload.tweet_result_by_rest_id.result.media_note_category, noteMatchUrl: t.payload.tweet_result_by_rest_id.result.note_match_url, fetchStatus: c.ZP.LOADED } } : e;
+                            const o = t.meta?.tweetId;
+                            return o ? { ...e, matchData: { canBeMediaNote: t.payload.tweet_result_by_rest_id.result.can_be_media_note, canBeUrlNote: t.payload.tweet_result_by_rest_id.result.can_be_url_note, mediaNoteCategory: t.payload.tweet_result_by_rest_id.result.media_note_category, noteMatchUrl: t.payload.tweet_result_by_rest_id.result.note_match_url, fetchStatus: c.ZP.LOADED } } : e;
                         }
                         case R.REQUEST: {
-                            const n = t.meta?.note_id;
-                            return n ? { ...e, notes: { ...e.notes, [n]: { ...e.notes[n], noteTranslation: { fetchStatus: c.ZP.LOADING } } } } : e;
+                            const o = t.meta?.note_id;
+                            return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { fetchStatus: c.ZP.LOADING } } } } : e;
                         }
                         case R.SUCCESS: {
-                            const n = t.meta?.note_id;
-                            if (n) {
-                                const o = t.payload.birdwatch_note_by_rest_id.translated_summary;
-                                return { ...e, notes: { ...e.notes, [n]: { ...e.notes[n], noteTranslation: { result: o && (0, s.Z)((0, d.$)(), o), fetchStatus: c.ZP.LOADED } } } };
+                            const o = t.meta?.note_id;
+                            if (o) {
+                                const n = t.payload.birdwatch_note_by_rest_id.translated_summary;
+                                return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { result: n && (0, s.Z)((0, d.$)(), n), fetchStatus: c.ZP.LOADED } } } };
                             }
                             return e;
                         }
                         case R.FAILURE: {
-                            const n = t.meta?.noteId;
-                            return n ? { ...e, notes: { ...e.notes, [n]: { ...e.notes[n], noteTranslation: { fetchStatus: c.ZP.FAILED } } } } : e;
+                            const o = t.meta?.noteId;
+                            return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { fetchStatus: c.ZP.FAILED } } } } : e;
                         }
                         case L.SUCCESS: {
-                            const n = t.payload;
-                            return { ...e, signupEligibility: n?.birdwatch_sign_up_eligibility?.eligible };
+                            const o = t.payload;
+                            return { ...e, signupEligibility: o?.birdwatch_sign_up_eligibility?.eligible };
                         }
                         case N.REQUEST: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, noteRequests: { ...e.noteRequests, [n]: { fetchStatus: c.ZP.LOADING } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { fetchStatus: c.ZP.LOADING } } } : e;
                         }
                         case N.FAILURE: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, noteRequests: { ...e.noteRequests, [n]: { fetchStatus: c.ZP.FAILED } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { fetchStatus: c.ZP.FAILED } } } : e;
                         }
                         case N.SUCCESS: {
-                            const n = t.meta?.tweet_id,
-                                o = t.payload?.birdwatch_bat_signal_by_rest_id.created_at;
-                            return n ? { ...e, noteRequests: { ...e.noteRequests, [n]: { created_at: o, fetchStatus: c.ZP.LOADED } } } : e;
+                            const o = t.meta?.tweet_id,
+                                n = t.payload?.birdwatch_bat_signal_by_rest_id.created_at;
+                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { created_at: n, fetchStatus: c.ZP.LOADED } } } : e;
                         }
                         case I.SUCCESS: {
-                            const n = t.meta?.tweet_id,
-                                o = t.payload?.created_at;
-                            return n && o ? { ...e, noteRequests: { ...e.noteRequests, [n]: { created_at: o } } } : e;
+                            const o = t.meta?.tweet_id,
+                                n = t.payload?.created_at;
+                            return o && n ? { ...e, noteRequests: { ...e.noteRequests, [o]: { created_at: n } } } : e;
                         }
                         case S.SUCCESS: {
-                            const n = t.meta?.note_id,
-                                o = t.payload;
-                            return n ? { ...e, notes: { ...e.notes, [n]: { ...e.notes[n], rating: o } } } : e;
+                            const o = t.meta?.note_id,
+                                n = t.payload;
+                            return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], rating: n } } } : e;
                         }
                         case m.SUCCESS: {
-                            const n = t.meta?.note_id;
-                            if (n) {
-                                const { rating: t, ...o } = e.notes[n];
-                                return { ...e, notes: { ...e.notes, [n]: { ...o } } };
+                            const o = t.meta?.note_id;
+                            if (o) {
+                                const { rating: t, ...n } = e.notes[o];
+                                return { ...e, notes: { ...e.notes, [o]: { ...n } } };
                             }
                             return e;
                         }
                         case P.REQUEST: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, tweetNotes: { ...e.tweetNotes, [n]: { ...(e.tweetNotes && e.tweetNotes[n]), fetchStatus: c.ZP.LOADING } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, tweetNotes: { ...e.tweetNotes, [o]: { ...(e.tweetNotes && e.tweetNotes[o]), fetchStatus: c.ZP.LOADING } } } : e;
                         }
                         case P.FAILURE: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, tweetNotes: { ...e.tweetNotes, [n]: { ...e.tweetNotes[n], fetchStatus: c.ZP.FAILED } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, tweetNotes: { ...e.tweetNotes, [o]: { ...e.tweetNotes[o], fetchStatus: c.ZP.FAILED } } } : e;
                         }
                         case P.SUCCESS: {
-                            const n = t.payload?.result,
-                                o = t.meta?.tweet_id;
-                            if (n) {
-                                const a = t.payload?.entities?.birdwatchNotes[n],
+                            const o = t.payload?.result,
+                                n = t.meta?.tweet_id;
+                            if (o) {
+                                const a = t.payload?.entities?.birdwatchNotes[o],
                                     r = a?.misleading_ids || [],
                                     s = r.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
                                     d = r.map((e) => e.rest_id),
                                     i = a?.not_misleading_ids || [],
                                     l = i.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
                                     u = { misleadingIds: d, notMisleadingIds: i.map((e) => e.rest_id), fetchStatus: c.ZP.LOADED };
-                                return a?.ownNoteId && (u.ownNoteId = a?.ownNoteId), (u.canUserWriteNotesOnPost = a?.canUserWriteNotesOnPost), t.meta ? { ...e, notes: { ...e.notes, ...s, ...l }, tweetNotes: { ...e.tweetNotes, [o]: u } } : e;
+                                return a?.ownNoteId && (u.ownNoteId = a?.ownNoteId), (u.canUserWriteNotesOnPost = a?.canUserWriteNotesOnPost), t.meta ? { ...e, notes: { ...e.notes, ...s, ...l }, tweetNotes: { ...e.tweetNotes, [n]: u } } : e;
                             }
-                            return o ? { ...e, tweetNotes: { ...e.tweetNotes, [o]: { fetchStatus: c.ZP.LOADED } } } : e;
+                            return n ? { ...e, tweetNotes: { ...e.tweetNotes, [n]: { fetchStatus: c.ZP.LOADED } } } : e;
                         }
                         case B.REQUEST: {
-                            const n = t.meta?.alias;
-                            return n ? { ...e, contributor: { ...e.contributor, [n]: { ...e.contributor[n], fetchStatus: c.ZP.LOADING } } } : e;
+                            const o = t.meta?.alias;
+                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: c.ZP.LOADING } } } : e;
                         }
                         case B.FAILURE: {
-                            const n = t.meta?.alias;
-                            return n ? { ...e, contributor: { ...e.contributor, [n]: { ...e.contributor[n], fetchStatus: c.ZP.FAILED } } } : e;
+                            const o = t.meta?.alias;
+                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: c.ZP.FAILED } } } : e;
                         }
                         case B.SUCCESS: {
-                            const n = t.meta?.alias,
-                                o = t.payload?.result;
-                            if (o && t.meta) {
-                                const n = t.payload?.entities?.birdwatchNotes[o],
-                                    a = n?.notes || [],
+                            const o = t.meta?.alias,
+                                n = t.payload?.result;
+                            if (n && t.meta) {
+                                const o = t.payload?.entities?.birdwatchNotes[n],
+                                    a = o?.notes || [],
                                     r = a.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
                                     s = a.map((e) => e.rest_id),
-                                    d = n?.ratings_count,
-                                    i = n?.notes_count,
-                                    l = n?.is_top_writer;
-                                return { ...e, notes: { ...e.notes, ...r }, contributor: { ...e.contributor, [o]: { ratingsCount: d, notesCount: i, isTopWriter: l, deletedNotesCount: n?.deleted_notes_count, notes: s, fetchStatus: c.ZP.LOADED } } };
+                                    d = o?.ratings_count,
+                                    i = o?.notes_count,
+                                    l = o?.is_top_writer;
+                                return { ...e, notes: { ...e.notes, ...r }, contributor: { ...e.contributor, [n]: { ratingsCount: d, notesCount: i, isTopWriter: l, deletedNotesCount: o?.deleted_notes_count, notes: s, fetchStatus: c.ZP.LOADED } } };
                             }
-                            return n ? { ...e, contributor: { ...e.contributor, [n]: { ...e.contributor[n], fetchStatus: c.ZP.FAILED } } } : e;
+                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: c.ZP.FAILED } } } : e;
                         }
                         case U.SUCCESS: {
-                            const n = t.payload;
-                            return { ...e, contributor: { ...e.contributor, notificationSettings: n?.notification_settings?.needs_your_help_frequency, ownAlias: n?.alias, canWriteNotes: n?.can_write_notes, enrollmentStatus: n?.user_enrollment, isTopWriter: n?.is_top_writer, showMobileNavigationSettings: n?.user_settings?.show_in_app_navigation } };
+                            const o = t.payload;
+                            return { ...e, contributor: { ...e.contributor, notificationSettings: o?.notification_settings?.needs_your_help_frequency, ownAlias: o?.alias, canWriteNotes: o?.can_write_notes, enrollmentStatus: o?.user_enrollment, isTopWriter: o?.is_top_writer, showMobileNavigationSettings: o?.user_settings?.show_in_app_navigation } };
                         }
                         case Z.SUCCESS: {
-                            const n = t.payload;
-                            return { ...e, contributor: { ...e.contributor, showAliasSelfSelect: n?.can_select && !n?.has_selected } };
+                            const o = t.payload;
+                            return { ...e, contributor: { ...e.contributor, showAliasSelfSelect: o?.can_select && !o?.has_selected } };
                         }
                         case y.SUCCESS: {
-                            const n = t.payload;
-                            return { ...e, contributor: { ...e.contributor, aliasSelfSelectOptions: n } };
+                            const o = t.payload;
+                            return { ...e, contributor: { ...e.contributor, aliasSelfSelectOptions: o } };
                         }
                         case v.SUCCESS: {
-                            const n = t.payload,
-                                o = n?.result;
-                            return o ? { ...e, notes: { ...e.notes, [o]: { ...n?.entities?.birdwatchNotes[o], fetchStatus: c.ZP.LOADED } } } : e;
+                            const o = t.payload,
+                                n = o?.result;
+                            return n ? { ...e, notes: { ...e.notes, [n]: { ...o?.entities?.birdwatchNotes[n], fetchStatus: c.ZP.LOADED } } } : e;
                         }
                         case v.REQUEST: {
-                            const n = t.meta?.note_id;
-                            return { ...e, notes: { ...e.notes, [n]: { ...(e.notes && e.notes[n]), fetchStatus: c.ZP.LOADING } } };
+                            const o = t.meta?.note_id;
+                            return { ...e, notes: { ...e.notes, [o]: { ...(e.notes && e.notes[o]), fetchStatus: c.ZP.LOADING } } };
                         }
                         case v.FAILURE: {
-                            const n = t.meta?.note_id;
-                            return { ...e, notes: { ...e.notes, [n]: { ...e.notes[n], fetchStatus: c.ZP.FAILED } } };
+                            const o = t.meta?.note_id;
+                            return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], fetchStatus: c.ZP.FAILED } } };
                         }
                         case D.SUCCESS: {
-                            const n = t.payload;
-                            return n ? { ...e, publicData: n } : e;
+                            const o = t.payload;
+                            return o ? { ...e, publicData: o } : e;
                         }
-                        case w.SUCCESS: {
-                            const n = t.meta?.alias;
-                            return { ...e, contributor: { ...e.contributor, ownAlias: n } };
+                        case T.SUCCESS: {
+                            const o = t.meta?.alias;
+                            return { ...e, contributor: { ...e.contributor, ownAlias: o } };
                         }
                         case x: {
-                            const n = t.payload;
-                            if ((0, a.Z)(n)) return e;
+                            const o = t.payload;
+                            if ((0, a.Z)(o)) return e;
                             {
-                                const t = n.updates,
-                                    o = n.tweetId;
-                                return { ...e, drafts: { ...e.drafts, [o]: t } };
+                                const t = o.updates,
+                                    n = o.tweetId;
+                                return { ...e, drafts: { ...e.drafts, [n]: t } };
                             }
                         }
                         case G: {
-                            const n = t.payload;
-                            if ((0, a.Z)(n)) return e;
+                            const o = t.payload;
+                            if ((0, a.Z)(o)) return e;
                             {
-                                const t = n.count,
-                                    o = n.path;
-                                return { ...e, paths: { ...e.paths, [t]: o } };
+                                const t = o.count,
+                                    n = o.path;
+                                return { ...e, paths: { ...e.paths, [t]: n } };
                             }
                         }
                         case H.SUCCESS:
                             return { ...e, contributor: { ...e.contributor, enrollmentStatus: { ...e.contributor.enrollmentStatus, enrollment_state: "EarnedOutAcknowledged" } } };
                         case M.REQUEST: {
-                            const n = t.meta?.tweetId;
-                            return n ? { ...e, matchData: { fetchStatus: c.ZP.LOADING } } : e;
+                            const o = t.meta?.tweetId;
+                            return o ? { ...e, matchData: { fetchStatus: c.ZP.LOADING } } : e;
                         }
                         case M.FAILURE: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, sourceLinks: { ...e.sourceLinks, [n]: { fetchStatus: c.ZP.FAILED } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { fetchStatus: c.ZP.FAILED } } } : e;
                         }
                         case M.SUCCESS: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, sourceLinks: { ...e.sourceLinks, [n]: { source_preview_tweet_for_notes: t.payload.tweet_result_by_rest_id.result.source_preview_tweet_for_notes, source_tweet_count_for_notes: t.payload.tweet_result_by_rest_id.result.source_tweet_count_for_notes, has_note_request: t.payload.tweet_result_by_rest_id.result.has_note_request, fetchStatus: c.ZP.LOADED } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { source_preview_tweet_for_notes: t.payload.tweet_result_by_rest_id.result.source_preview_tweet_for_notes, source_tweet_count_for_notes: t.payload.tweet_result_by_rest_id.result.source_tweet_count_for_notes, has_note_request: t.payload.tweet_result_by_rest_id.result.has_note_request, fetchStatus: c.ZP.LOADED } } } : e;
                         }
                         case k: {
-                            const { note_id: n, translation: o } = t.payload;
-                            return { ...e, notes: { ...e.notes, [n]: { ...e.notes[n], streamedNoteTranslation: o } } };
+                            const { note_id: o, translation: n } = t.payload;
+                            return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], streamedNoteTranslation: n } } };
                         }
                         default:
                             return e;
@@ -784,116 +754,116 @@
                 },
             });
             const W = [],
-                q = (e, t) => e[h].notes[t],
-                j = (e, t) => e[h].noteRequests[t],
-                z = (e) => e[h].paths,
-                V = (e, t) => e[h].tweetNotes[t]?.misleadingIds,
-                K = (e) => e[h].matchData,
-                Y = (e, t) => e[h].sourceLinks[t],
+                q = (e, t) => e[b].notes[t],
+                j = (e, t) => e[b].noteRequests[t],
+                z = (e) => e[b].paths,
+                V = (e, t) => e[b].tweetNotes[t]?.misleadingIds,
+                K = (e) => e[b].matchData,
+                Y = (e, t) => e[b].sourceLinks[t],
                 $ = (e, t) => {
-                    const n = e[h].tweetNotes[t];
-                    return n ? n.canUserWriteNotesOnPost : void 0;
+                    const o = e[b].tweetNotes[t];
+                    return o ? o.canUserWriteNotesOnPost : void 0;
                 },
                 J = (e, t) => {
                     if (!t) return null;
-                    const n = ((e, t) => e[h].tweetNotes[t]?.ownNoteId)(e, t);
-                    return n ? q(e, n) : null;
+                    const o = ((e, t) => e[b].tweetNotes[t]?.ownNoteId)(e, t);
+                    return o ? q(e, o) : null;
                 },
-                X = (e) => e[h].publicData,
+                X = (e) => e[b].publicData,
                 ee = (e, t) => {
-                    const n = t ? V(e, t) : void 0;
-                    if (n) {
-                        return n.map((t) => q(e, t)).filter(Boolean);
+                    const o = t ? V(e, t) : void 0;
+                    if (o) {
+                        return o.map((t) => q(e, t)).filter(Boolean);
                     }
                     return W;
                 },
                 te = (e, t) => {
-                    const n = t ? ((e, t) => e[h].tweetNotes[t]?.notMisleadingIds)(e, t) : void 0;
-                    if (n) {
-                        return n.map((t) => q(e, t)).filter(Boolean);
+                    const o = t ? ((e, t) => e[b].tweetNotes[t]?.notMisleadingIds)(e, t) : void 0;
+                    if (o) {
+                        return o.map((t) => q(e, t)).filter(Boolean);
                     }
                     return W;
                 },
-                ne = (e, t) => {
-                    const n = e[h].contributor[t];
-                    return n ? n.notes : void 0;
+                oe = (e, t) => {
+                    const o = e[b].contributor[t];
+                    return o ? o.notes : void 0;
                 },
-                oe = (e) => {
-                    const t = e[h].contributor;
+                ne = (e) => {
+                    const t = e[b].contributor;
                     return t ? t.ownAlias : void 0;
                 },
                 ae = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.showAliasSelfSelect : void 0;
                 },
                 re = (e) => {
-                    const t = e[h]?.contributor?.ownAlias;
+                    const t = e[b]?.contributor?.ownAlias;
                     if (!t) return !1;
-                    const n = `birdwatchContributorNotesSlice-${t}`,
-                        o = e.slices[n];
-                    return o?.items?.length > 0 || !1;
+                    const o = `birdwatchContributorNotesSlice-${t}`,
+                        n = e.slices[o];
+                    return n?.items?.length > 0 || !1;
                 },
                 se = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.aliasSelfSelectOptions : void 0;
                 },
                 de = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.enrollmentStatus : void 0;
                 },
-                ie = (e, t) => !!(e[h].contributor[t]?.isTopWriter || e[h].contributor?.isTopWriter),
-                le = (e, t) => e[h].contributor[t]?.isTopWriter || !1,
+                ie = (e, t) => !!(e[b].contributor[t]?.isTopWriter || e[b].contributor?.isTopWriter),
+                le = (e, t) => e[b].contributor[t]?.isTopWriter || !1,
                 ce = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.notificationSettings : void 0;
                 },
                 ue = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.canWriteNotes : void 0;
                 },
                 Ee = (e, t) => {
                     if (!t) return;
-                    const n = e[h].contributor[t];
-                    return n ? n.ratingsCount : void 0;
+                    const o = e[b].contributor[t];
+                    return o ? o.ratingsCount : void 0;
                 },
                 _e = (e, t) => {
                     if (!t) return;
-                    const n = e[h].contributor[t];
-                    return n ? n.notesCount : void 0;
-                },
-                he = (e, t) => {
-                    const n = e[h].contributor[t];
-                    return n ? n.deletedNotesCount : void 0;
+                    const o = e[b].contributor[t];
+                    return o ? o.notesCount : void 0;
                 },
                 be = (e, t) => {
-                    const n = e[h].tweetNotes[t];
-                    return n ? n.fetchStatus : c.ZP.NONE;
+                    const o = e[b].contributor[t];
+                    return o ? o.deletedNotesCount : void 0;
+                },
+                he = (e, t) => {
+                    const o = e[b].tweetNotes[t];
+                    return o ? o.fetchStatus : c.ZP.NONE;
                 },
                 pe = (e, t) => {
-                    const n = e[h].notes[t];
-                    return n ? n.fetchStatus : c.ZP.NONE;
+                    const o = e[b].notes[t];
+                    return o ? o.fetchStatus : c.ZP.NONE;
                 },
                 Se = (e, t) => {
                     if (!t) return;
-                    const n = e[h].drafts;
-                    return n ? n[t] : void 0;
+                    const o = e[b].drafts;
+                    return o ? o[t] : void 0;
                 },
                 me =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchBirdwatchBatSignal, params: e })({ actionTypes: N, context: "FETCH_BIRDWATCH_BAT_SIGNAL", meta: { tweet_id: e } }),
-                we =
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchBirdwatchBatSignal, params: e })({ actionTypes: N, context: "FETCH_BIRDWATCH_BAT_SIGNAL", meta: { tweet_id: e } }),
+                Te =
                     (e) =>
-                    (t, n, { api: o }) => {
-                        const a = !!V(n(), e),
-                            s = be(n(), e) === c.ZP.LOADING;
+                    (t, o, { api: n }) => {
+                        const a = !!V(o(), e),
+                            s = he(o(), e) === c.ZP.LOADING;
                         return a || s
                             ? Promise.resolve()
                             : t(
                                   (
                                       (e) =>
-                                      (t, n, { api: o }) =>
-                                          (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchNotes, params: { tweet_id: e } })({ actionTypes: P, context: "FETCH_TWEET_NOTES", meta: { tweet_id: e } }, (e) => {
+                                      (t, o, { api: n }) =>
+                                          (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchNotes, params: { tweet_id: e } })({ actionTypes: P, context: "FETCH_TWEET_NOTES", meta: { tweet_id: e } }, (e) => {
                                               if (e) {
                                                   const { entities: t } = e;
                                                   return t ? [(0, u.dP)(t)] : void 0;
@@ -902,23 +872,23 @@
                                   )(e),
                               );
                     },
-                Te =
+                we =
                     (e) =>
-                    (t, n, { api: o }) => {
-                        const a = !!e && !!ne(n(), e),
+                    (t, o, { api: n }) => {
+                        const a = !!e && !!oe(o(), e),
                             s =
                                 ((e, t) => {
-                                    const n = e[h].contributor[t];
-                                    return n ? n.fetchStatus : c.ZP.NONE;
-                                })(n(), e) === c.ZP.LOADING;
+                                    const o = e[b].contributor[t];
+                                    return o ? o.fetchStatus : c.ZP.NONE;
+                                })(o(), e) === c.ZP.LOADING;
                         return a || s
                             ? Promise.resolve()
                             : t(
                                   (
                                       (e) =>
-                                      (t, n, { api: o }) =>
+                                      (t, o, { api: n }) =>
                                           e
-                                              ? (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchBirdwatchProfile, params: { alias: e } })({ actionTypes: B, context: "FETCH_BIRDWATCH_PROFILE", meta: { alias: e } }, (e) => {
+                                              ? (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchBirdwatchProfile, params: { alias: e } })({ actionTypes: B, context: "FETCH_BIRDWATCH_PROFILE", meta: { alias: e } }, (e) => {
                                                     if (e) {
                                                         const { entities: t } = e;
                                                         return t && [(0, u.dP)(t)];
@@ -930,52 +900,52 @@
                     },
                 Ce =
                     () =>
-                    (e, t, { api: n }) =>
+                    (e, t, { api: o }) =>
                         !!de(t()) ? Promise.resolve() : e(Oe()),
                 Ie =
                     (e) =>
-                    (t, n, { api: o }) => {
-                        const a = !!q(n(), e),
-                            s = pe(n(), e) === c.ZP.LOADING;
+                    (t, o, { api: n }) => {
+                        const a = !!q(o(), e),
+                            s = pe(o(), e) === c.ZP.LOADING;
                         return a || s
                             ? Promise.resolve()
                             : t(
                                   (
                                       (e) =>
-                                      (t, n, { api: o }) =>
-                                          (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchOneNote, params: { note_id: e } })({ actionTypes: v, context: "FETCH_NOTE", meta: { note_id: e } })
+                                      (t, o, { api: n }) =>
+                                          (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchOneNote, params: { note_id: e } })({ actionTypes: v, context: "FETCH_NOTE", meta: { note_id: e } })
                                   )(e),
                               );
                     },
                 Ae =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchCanTweetBeMediaNote, params: e })({ actionTypes: f, context: "FETCH_CAN_BE_MEDIA_NOTE", meta: { tweetId: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchCanTweetBeMediaNote, params: e })({ actionTypes: f, context: "FETCH_CAN_BE_MEDIA_NOTE", meta: { tweetId: e } }),
                 Ne =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchNoteTranslation, params: e })({ actionTypes: R, context: "FETCH_NOTE_TRANSLATION", meta: { note_id: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchNoteTranslation, params: e })({ actionTypes: R, context: "FETCH_NOTE_TRANSLATION", meta: { note_id: e } }),
                 De =
                     (e) =>
-                    async (t, n, { api: o }) => {
+                    async (t, o, { api: n }) => {
                         const a = { content_type: "COMMUNITY_NOTE", id: e },
                             r = { fetchStatus: c.ZP.LOADING, result: { text: "", entities: [] } },
-                            i = (e, n) => {
-                                var o;
-                                t(((o = { note_id: e, translation: { ...n, result: n.result ? (0, s.Z)((0, d.$)(), n.result) : void 0 } }), { type: k, payload: o }));
+                            i = (e, o) => {
+                                var n;
+                                t(((n = { note_id: e, translation: { ...o, result: o.result ? (0, s.Z)((0, d.$)(), o.result) : void 0 } }), { type: k, payload: n }));
                             };
                         i(e, r);
                         const l = new AbortController();
                         try {
-                            const t = await o.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(a), signal: l.signal }, "https://api.x.com");
+                            const t = await n.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(a), signal: l.signal });
                             if (!t.ok) throw ((r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), new Error("Failed to translate due to invalid API response."));
-                            const n = t.body?.getReader();
-                            if (!n) throw ((r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), new Error("Failed to translate because reader is not present."));
+                            const o = t.body?.getReader();
+                            if (!o) throw ((r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), new Error("Failed to translate because reader is not present."));
                             const s = new TextDecoder();
                             let d = "";
                             const u = async (t) => {
-                                const o = t ? _.T9 : _.UG,
-                                    { done: a, value: l } = await (0, _.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => n.read(), o, "Timeout between streaming chunks");
+                                const n = t ? _.T9 : _.UG,
+                                    { done: a, value: l } = await (0, _.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => o.read(), n, "Timeout between streaming chunks");
                                 if (a) {
                                     const t = 0 === (r.result?.text.length ?? 0);
                                     return (r.state = t ? E.H.ERROR : E.H.SUCCESS), (r.fetchStatus = t ? c.ZP.FAILED : c.ZP.LOADED), void i(e, r);
@@ -985,8 +955,8 @@
                                     if (((d += t), d.includes("\n"))) {
                                         const t = d.split("\n");
                                         d = t.pop();
-                                        for (const n of t) {
-                                            const t = JSON.parse(n);
+                                        for (const o of t) {
+                                            const t = JSON.parse(o);
                                             if (t.error) throw new Error(t.error);
                                             t.result && r.result && (t.result.text && (r.result.text += t.result.text), t.result.rich_text_entities && r.result.entities.push(...t.result.rich_text_entities)), i(e, r);
                                         }
@@ -1001,41 +971,41 @@
                     },
                 fe =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).fetchTweetSourceLink, params: e })({ actionTypes: M, context: "FETCH_SOURCE_LINK_TWEET", meta: { tweet_id: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchTweetSourceLink, params: e })({ actionTypes: M, context: "FETCH_SOURCE_LINK_TWEET", meta: { tweet_id: e } }),
                 Re =
                     () =>
-                    (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: L, context: "FETCH_SIGNUP_ELIGIBILITY" }),
+                    (e, t, { api: o }) =>
+                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: L, context: "FETCH_SIGNUP_ELIGIBILITY" }),
                 Oe =
                     () =>
-                    (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchAuthenticatedUserProfile, params: {} })({ actionTypes: U, context: "FETCH_AUTHENTICATED_USER_PROFILE" }),
+                    (e, t, { api: o }) =>
+                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchAuthenticatedUserProfile, params: {} })({ actionTypes: U, context: "FETCH_AUTHENTICATED_USER_PROFILE" }),
                 ge =
                     () =>
-                    (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchAliasSelfSelectStatus, params: {} })({ actionTypes: Z, context: "FETCH_SHOW_ALIAS_SELECT", meta: {} }),
+                    (e, t, { api: o }) =>
+                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchAliasSelfSelectStatus, params: {} })({ actionTypes: Z, context: "FETCH_SHOW_ALIAS_SELECT", meta: {} }),
                 Ue =
                     () =>
-                    (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchAliasSelfSelectOptions, params: {} })({ actionTypes: y, context: "FETCH_ALIAS_SELECT_OPTIONS", meta: {} }),
+                    (e, t, { api: o }) =>
+                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchAliasSelfSelectOptions, params: {} })({ actionTypes: y, context: "FETCH_ALIAS_SELECT_OPTIONS", meta: {} }),
                 Le =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).selectAlias, params: { alias: e } })({ actionTypes: w, context: "SELECT_ALIAS", meta: { alias: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).selectAlias, params: { alias: e } })({ actionTypes: T, context: "SELECT_ALIAS", meta: { alias: e } }),
                 Me =
                     () =>
-                    (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).acknowledgeEarnOut, params: {} })({ actionTypes: H, context: "PROFILE_ACKNOWLEDGE_EARN_OUT", meta: {} }),
+                    (e, t, { api: o }) =>
+                        (0, l._O)(e, { request: o.withEndpoint(r.Z).acknowledgeEarnOut, params: {} })({ actionTypes: H, context: "PROFILE_ACKNOWLEDGE_EARN_OUT", meta: {} }),
                 ye = (e) => ({ meta: { note_id: e }, type: p.SUCCESS }),
                 Fe =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).deleteBirdwatchBatSignal, params: { tweet_id: e } })({ actionTypes: A, context: "DELETE_BIRDWATCH_BATSIGNAL", meta: { tweet_id: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).deleteBirdwatchBatSignal, params: { tweet_id: e } })({ actionTypes: A, context: "DELETE_BIRDWATCH_BATSIGNAL", meta: { tweet_id: e } }),
                 Pe =
-                    (e, t, n, o) =>
+                    (e, t, o, n) =>
                     (a, s, { api: d }) =>
-                        (0, l._O)(a, { request: d.withEndpoint(r.Z).createNote, params: { tweet_id: e, is_media_note: n, is_helpful_for_all_posts: o, data: t } })({ actionTypes: F, context: "CREATE_NOTE" }),
+                        (0, l._O)(a, { request: d.withEndpoint(r.Z).createNote, params: { tweet_id: e, is_media_note: o, is_helpful_for_all_posts: n, data: t } })({ actionTypes: F, context: "CREATE_NOTE" }),
                 Be = (e) => (t) => {
                     t(((e) => ({ type: x, payload: e }))(e));
                 },
@@ -1043,56 +1013,56 @@
                     t(((e) => ({ type: G, payload: e }))(e));
                 },
                 ve =
-                    (e, t, n, o, a) =>
+                    (e, t, o, n, a) =>
                     (s, d, { api: i }) =>
-                        (0, l._O)(s, { request: i.withEndpoint(r.Z).createRating, params: { note_id: e, tweet_id: n, data: t, rating_source: o, source_platform: a } })({ actionTypes: S, context: "CREATE_RATING", meta: { note_id: e } }),
+                        (0, l._O)(s, { request: i.withEndpoint(r.Z).createRating, params: { note_id: e, tweet_id: o, data: t, rating_source: n, source_platform: a } })({ actionTypes: S, context: "CREATE_RATING", meta: { note_id: e } }),
                 He =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).deleteRating, params: { note_id: e } })({ actionTypes: m, context: "DELETE_RATING", meta: { note_id: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).deleteRating, params: { note_id: e } })({ actionTypes: m, context: "DELETE_RATING", meta: { note_id: e } }),
                 ke =
                     (e, t) =>
-                    (n, o, { api: a }) =>
-                        (0, l._O)(n, { request: a.withEndpoint(r.Z).admitUser, params: { admit_date: e, user_id: t } })({ actionTypes: O, context: "ADMIT_USER", meta: { admit_date: e, user_id: t } }),
+                    (o, n, { api: a }) =>
+                        (0, l._O)(o, { request: a.withEndpoint(r.Z).admitUser, params: { admit_date: e, user_id: t } })({ actionTypes: O, context: "ADMIT_USER", meta: { admit_date: e, user_id: t } }),
                 xe =
                     () =>
-                    (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).removeUser, params: {} })({ actionTypes: g, context: "REMOVE_USER", meta: {} }),
+                    (e, t, { api: o }) =>
+                        (0, l._O)(e, { request: o.withEndpoint(r.Z).removeUser, params: {} })({ actionTypes: g, context: "REMOVE_USER", meta: {} }),
                 Ge =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).createAppeal, params: { note_id: e } })({ actionTypes: T, context: "CREATE_APPEAL", meta: { note_id: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).createAppeal, params: { note_id: e } })({ actionTypes: w, context: "CREATE_APPEAL", meta: { note_id: e } }),
                 Qe =
                     (e, t) =>
-                    (n, o, { api: a }) =>
-                        (0, l._O)(n, { request: a.withEndpoint(r.Z).createBirdwatchBatSignal, params: { tweet_id: e, source_link: t } })({ actionTypes: I, context: "CREATE_BAT_SIGNAL", meta: { tweet_id: e } }),
+                    (o, n, { api: a }) =>
+                        (0, l._O)(o, { request: a.withEndpoint(r.Z).createBirdwatchBatSignal, params: { tweet_id: e, source_link: t } })({ actionTypes: I, context: "CREATE_BAT_SIGNAL", meta: { tweet_id: e } }),
                 We =
                     (e) =>
-                    (t, n, { api: o }) =>
-                        (0, l._O)(t, { request: o.withEndpoint(r.Z).editNotificationSettings, params: { settings: e } })({ actionTypes: C, context: "EDIT_NOTIFICATION_SETTINGS", meta: { settings: e } }),
+                    (t, o, { api: n }) =>
+                        (0, l._O)(t, { request: n.withEndpoint(r.Z).editNotificationSettings, params: { settings: e } })({ actionTypes: C, context: "EDIT_NOTIFICATION_SETTINGS", meta: { settings: e } }),
                 qe =
                     () =>
-                    (e, t, { api: n }) =>
-                        (0, l._O)(e, { request: n.withEndpoint(r.Z).fetchPublicData, params: {} })({ actionTypes: D, context: "FETCH_DATA", meta: {} });
+                    (e, t, { api: o }) =>
+                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchPublicData, params: {} })({ actionTypes: D, context: "FETCH_DATA", meta: {} });
         },
-        302101: (e, t, n) => {
-            n.d(t, { N: () => r });
-            var o = n(106067),
-                a = n(545521);
-            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_NOTE_MATCHES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(o.Z).fetchAuthenticatedBirdwatchMatchSlice, getEndpointParams: (t) => ({ ...t, note_id: e }), sliceKey: `birdwatchNoteMatchesSlice-${e}` });
+        302101: (e, t, o) => {
+            o.d(t, { N: () => r });
+            var n = o(106067),
+                a = o(545521);
+            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_NOTE_MATCHES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchAuthenticatedBirdwatchMatchSlice, getEndpointParams: (t) => ({ ...t, note_id: e }), sliceKey: `birdwatchNoteMatchesSlice-${e}` });
         },
-        304373: (e, t, n) => {
-            n.d(t, { d: () => r });
-            var o = n(106067),
-                a = n(545521);
-            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_SOURCE_LINKS_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(o.Z).fetchBirdwatchSourceLinkSlice, getEndpointParams: (t) => ({ ...t, tweet_id: e }), sliceKey: `birdwatchSourceLinkSlice-${e}` });
+        304373: (e, t, o) => {
+            o.d(t, { d: () => r });
+            var n = o(106067),
+                a = o(545521);
+            const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_SOURCE_LINKS_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchSourceLinkSlice, getEndpointParams: (t) => ({ ...t, tweet_id: e }), sliceKey: `birdwatchSourceLinkSlice-${e}` });
         },
-        245422: (e, t, n) => {
-            n.d(t, { K2: () => b, Sl: () => _, aC: () => h, oI: () => E });
-            var o = n(717193),
-                a = n(499627),
-                r = n(917799),
-                s = n(312771);
+        245422: (e, t, o) => {
+            o.d(t, { K2: () => h, Sl: () => _, aC: () => b, oI: () => E });
+            var n = o(717193),
+                a = o(499627),
+                r = o(917799),
+                s = o(312771);
             const d = "communityBoost",
                 i = Object.freeze({ REQUEST: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_REQUEST", SUCCESS: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_SUCCESS", FAILURE: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_FAILURE" }),
                 l = Object.freeze({ REQUEST: "rweb/communityBoost/CREATE_COMMUNITYBOOST_PIVOT_RATING_REQUEST", SUCCESS: "rweb/communityBoost/CREATE_COMMUNITYBOOST_PIVOT_RATING_SUCCESS", FAILURE: "rweb/communityBoost/CREATE_COMMUNITYBOOST_PIVOT_RATING_FAILURE" }),
@@ -1103,31 +1073,31 @@
                     if (!t) return e;
                     switch (t.type) {
                         case i.REQUEST: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, pivots: { ...e.pivots, [n]: { fetchStatus: s.ZP.LOADING } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, pivots: { ...e.pivots, [o]: { fetchStatus: s.ZP.LOADING } } } : e;
                         }
                         case i.FAILURE: {
-                            const n = t.meta?.tweet_id;
-                            return n ? { ...e, pivots: { ...e.pivots, [n]: { fetchStatus: s.ZP.FAILED } } } : e;
+                            const o = t.meta?.tweet_id;
+                            return o ? { ...e, pivots: { ...e.pivots, [o]: { fetchStatus: s.ZP.FAILED } } } : e;
                         }
                         case i.SUCCESS: {
-                            const n = t.meta?.tweet_id,
-                                o = t.payload?.community_boost_pivot_by_rest_id,
-                                a = o?.like_tags,
-                                r = o?.has_pivot,
-                                d = o?.dislike_tags,
-                                i = o?.boost_id,
-                                l = o?.rating;
-                            return n ? { ...e, pivots: { ...e.pivots, [n]: { like_tags: a, dislike_tags: d, has_pivot: r, boost_id: i, rating: l, fetchStatus: s.ZP.LOADED } } } : e;
+                            const o = t.meta?.tweet_id,
+                                n = t.payload?.community_boost_pivot_by_rest_id,
+                                a = n?.like_tags,
+                                r = n?.has_pivot,
+                                d = n?.dislike_tags,
+                                i = n?.boost_id,
+                                l = n?.rating;
+                            return o ? { ...e, pivots: { ...e.pivots, [o]: { like_tags: a, dislike_tags: d, has_pivot: r, boost_id: i, rating: l, fetchStatus: s.ZP.LOADED } } } : e;
                         }
                         case l.SUCCESS: {
-                            const n = t.meta?.post_id,
-                                o = t.payload;
-                            return n ? { ...e, pivots: { ...e.pivots, [n]: { ...e.pivots[n], rating: o } } } : e;
+                            const o = t.meta?.post_id,
+                                n = t.payload;
+                            return o ? { ...e, pivots: { ...e.pivots, [o]: { ...e.pivots[o], rating: n } } } : e;
                         }
                         case c.SUCCESS: {
-                            const n = t.meta?.post_id;
-                            return n ? { ...e, pivots: { ...e.pivots, [n]: { ...e.pivots[n], rating: void 0 } } } : e;
+                            const o = t.meta?.post_id;
+                            return o ? { ...e, pivots: { ...e.pivots, [o]: { ...e.pivots[o], rating: void 0 } } } : e;
                         }
                         default:
                             return e;
@@ -1135,35 +1105,35 @@
                 },
             });
             const E =
-                    (e, t, n) =>
+                    (e, t, o) =>
                     (a, s, { api: d }) =>
-                        (0, r._O)(a, { request: d.withEndpoint(o.Z).createBoostRating, params: { postId: e, boostId: t, data: n } })({ actionTypes: l, context: "CREATE_COMMUNITYBOOST_PIVOT_RATING", meta: { post_id: e } }),
+                        (0, r._O)(a, { request: d.withEndpoint(n.Z).createBoostRating, params: { postId: e, boostId: t, data: o } })({ actionTypes: l, context: "CREATE_COMMUNITYBOOST_PIVOT_RATING", meta: { post_id: e } }),
                 _ =
                     (e, t) =>
-                    (n, a, { api: s }) =>
-                        (0, r._O)(n, { request: s.withEndpoint(o.Z).deleteBoostRating, params: { boost_id: t } })({ actionTypes: c, context: "DELETE_COMMUNITYBOOST_PIVOT_RATING", meta: { post_id: e } }),
-                h =
+                    (o, a, { api: s }) =>
+                        (0, r._O)(o, { request: s.withEndpoint(n.Z).deleteBoostRating, params: { boost_id: t } })({ actionTypes: c, context: "DELETE_COMMUNITYBOOST_PIVOT_RATING", meta: { post_id: e } }),
+                b =
                     (e) =>
-                    (t, n, { api: a }) =>
-                        (0, r._O)(t, { request: a.withEndpoint(o.Z).fetchCommunityBoostPivot, params: e })({ actionTypes: i, context: "FETCH_COMMUNITYBOOST_PIVOT", meta: { tweet_id: e } }),
-                b = (e, t) => e[d].pivots[t];
+                    (t, o, { api: a }) =>
+                        (0, r._O)(t, { request: a.withEndpoint(n.Z).fetchCommunityBoostPivot, params: e })({ actionTypes: i, context: "FETCH_COMMUNITYBOOST_PIVOT", meta: { tweet_id: e } }),
+                h = (e, t) => e[d].pivots[t];
         },
-        371184: (e, t, n) => {
-            n.d(t, { Z: () => s });
-            var o = n(106067),
-                a = n(740527),
-                r = n(218951);
-            const s = (e) => (0, r.Z)({ timelineId: "birdwatch-global-timeline", network: { getEndpoint: (e) => e.withEndpoint(o.Z).fetchGlobalTimeline, getEndpointParams: () => ({ tabId: e }) }, context: "FETCH_BIRDWATCH_GLOBAL_TIMELINE", perfKey: "birdwatch-global-timeline", formatResponse: a.Z });
+        371184: (e, t, o) => {
+            o.d(t, { Z: () => s });
+            var n = o(106067),
+                a = o(740527),
+                r = o(218951);
+            const s = (e) => (0, r.Z)({ timelineId: "birdwatch-global-timeline", network: { getEndpoint: (e) => e.withEndpoint(n.Z).fetchGlobalTimeline, getEndpointParams: () => ({ tabId: e }) }, context: "FETCH_BIRDWATCH_GLOBAL_TIMELINE", perfKey: "birdwatch-global-timeline", formatResponse: a.Z });
         },
-        383675: (e, t, n) => {
-            n.d(t, { R: () => i, Z: () => d });
-            var o = n(503768),
-                a = n(644829),
-                r = n(750085),
-                s = n(218951);
-            const d = ({ endpointParams: e, endpointUrl: t, isUserRefreshable: n, timelineId: o }) => (0, s.Z)({ timelineId: o, isUserRefreshable: n, network: { getEndpoint: (e) => e.withEndpoint(a.Z).fetchGeneric, getEndpointParams: ({ count: n, cursor: o }) => ({ ...e, cursor: "string" == typeof o ? o : void 0, count: n, endpointUrl: t }) }, context: "FETCH_TIMELINE", perfKey: "generic" }),
-                i = (e, t) => (0, s.Z)({ timelineId: `generic-graphql-timeline-${e}`, isUserRefreshable: t, network: { getEndpoint: (e) => e.withEndpoint(o.ZP).fetchGenericTimelineById, getEndpointParams: ({ count: t, cursor: n }) => ({ cursor: "string" == typeof n ? n : void 0, count: t, timelineId: e }) }, formatResponse: r.Z, context: "FETCH_GENERIC_TIMELINE_GQL", perfKey: "genericGQL" });
+        383675: (e, t, o) => {
+            o.d(t, { R: () => i, Z: () => d });
+            var n = o(503768),
+                a = o(644829),
+                r = o(750085),
+                s = o(218951);
+            const d = ({ endpointParams: e, endpointUrl: t, isUserRefreshable: o, timelineId: n }) => (0, s.Z)({ timelineId: n, isUserRefreshable: o, network: { getEndpoint: (e) => e.withEndpoint(a.Z).fetchGeneric, getEndpointParams: ({ count: o, cursor: n }) => ({ ...e, cursor: "string" == typeof n ? n : void 0, count: o, endpointUrl: t }) }, context: "FETCH_TIMELINE", perfKey: "generic" }),
+                i = (e, t) => (0, s.Z)({ timelineId: `generic-graphql-timeline-${e}`, isUserRefreshable: t, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchGenericTimelineById, getEndpointParams: ({ count: t, cursor: o }) => ({ cursor: "string" == typeof o ? o : void 0, count: t, timelineId: e }) }, formatResponse: r.Z, context: "FETCH_GENERIC_TIMELINE_GQL", perfKey: "genericGQL" });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.a59062ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.fa7acc5a.js.map

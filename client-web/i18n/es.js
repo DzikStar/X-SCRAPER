@@ -1280,31 +1280,34 @@
                 o("c3f04d9c", "Pensando"),
                 o("cbdddb0a", "Finalizado"),
                 o("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return 'Buscando "' + e.query + '"';
                 }),
                 o("b0d1e205", function (e) {
                     return 'Buscando **"' + e.query + '"**';
                 }),
+                o("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 o("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return 'Buscando "' + e.query + '" en 𝕏';
                 }),
                 o("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return "Explorando " + e.url;
                 }),
                 o("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return "Explorando " + e.url + ' en busca de "' + e.query + '"';
                 }),
                 o("acb9b845", function (e) {
                     return "Explorando " + e.url + ' en busca de **"' + e.query + '"**';
                 }),
                 o("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "Buscando posts de @" + e.username + " en 𝕏";
                 }),
                 o("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "Buscando posts de @" + e.username + ' en relación con "' + e.query + '" en 𝕏';
                 }),
                 o("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "Buscando posts de @" + e.username + ' en relación con **"' + e.query + '"**  en 𝕏';
                 }),
                 o("ead81122", "Algo salió mal. Actualiza para reconectarte o inténtalo de nuevo."),
                 o("f808a13a", "Se superó el límite de velocidad. Espera unos minutos e inténtalo de nuevo."),
@@ -1316,8 +1319,8 @@
                 o("j77292b7", function (e) {
                     return "Selecciona solo hasta " + e.count + " archivo" + r(e.count, "", "s");
                 }),
-                o("d6b533dc", "Rate this translation:"),
-                o("j2f9ab6e", "Thank you for your feedback!"),
+                o("d6b533dc", "Califica esta traducción:"),
+                o("j2f9ab6e", "¡Gracias por tus comentarios!"),
                 o("d56779a2", "fácil de comprender"),
                 o("b6fe8a56", "confuso o poco claro"),
                 o("i73a7d48", "Traducido por Google"),
@@ -1348,7 +1351,7 @@
                     return "Traducido del " + e.originLanguage + " al";
                 }),
                 o("b7cb4fab", "Traducido por"),
-                o("e0bffbf8", "About automatic translation"),
+                o("e0bffbf8", "Acerca de la traducción automática"),
                 o("e839db3a", "Descartar"),
                 o("a15585b4", "Configuración de idioma"),
                 o("d4c339b9", function (e) {
@@ -1917,9 +1920,9 @@
                 o("a8f09fb8", "Eliminar bloque"),
                 o("i89195ea", "Separador"),
                 o("da8ac57c", "Editar descripción"),
-                o("a8fdd09c", "Publicar Artículo"),
-                o("d8047cc8", "Publicar");
-            o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil."),
+                o("a8fdd09c", "Publicar Artículo");
+            o("d8047cc8", "Publicar"),
+                o("ff7ddca2", "Tu Artículo aparecerá como un post una vez que lo publiques. También lo encontrarás en la pestaña Artículos de tu perfil."),
                 o("ef34d7be", "Los controles de Audiencia y respuesta no son editables una vez que se publica un Artículo."),
                 o("e52d4998", "Elige tu audiencia"),
                 o("d7985b24", "Elige quién puede responder a este artículo"),
@@ -2973,9 +2976,9 @@
                     return e.entity + " se eliminó de tus Elementos guardados";
                 }),
                 o("d6d9aab6", "Agregar Elemento guardado"),
-                o("bb89cf46", "Eliminar Elemento guardado"),
-                o("a739d4ba", "Agregar a carpeta Elementos guardados");
-            o("d5270434", "Salir"),
+                o("bb89cf46", "Eliminar Elemento guardado");
+            o("a739d4ba", "Agregar a carpeta Elementos guardados"),
+                o("d5270434", "Salir"),
                 o("ac85c6b2", "Ocurrió un error al cargar esta imagen"),
                 o("b327c12a", "Imagen"),
                 o("ic76bdf0", "Recrea esto con Grok"),
@@ -3899,9 +3902,9 @@
                 o("cd133486", "Invitar"),
                 o("f2333850", "Compartir con gente fuera de X"),
                 o("cddb8097", "Más información"),
-                o("f77997b0", "Coanfitrión"),
-                o("i48f4ed8", "Hablante");
-            o("a77c8e02", "Oyente"),
+                o("f77997b0", "Coanfitrión");
+            o("i48f4ed8", "Hablante"),
+                o("a77c8e02", "Oyente"),
                 o("bdfa93eb", function (e) {
                     return "Compartido por " + e.name;
                 }),
@@ -4182,10 +4185,10 @@
                 o("j7b5c844", "Eres responsable de las conversaciones que compartes públicamente. Evita compartir información sensible y confidencial sobre ti u otras personas en tus conversaciones con Grok (consulta nuestro Centro de ayuda)."),
                 o("c9f7c196", "Centro de Ayuda"),
                 o("fb3b9776", "Este usuario personalizó los resultados de Grok."),
-                o("b0a889d4", "As Image"),
-                o("a111fb48", "As Spreadsheet"),
-                o("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                o("bd202fe6", "Generating card"),
+                o("b0a889d4", "Como imagen"),
+                o("a111fb48", "Como hoja de cálculo"),
+                o("bccc65f0", "Grok puede cometer errores. Consulta siempre las fuentes originales."),
+                o("bd202fe6", "Generando tarjeta"),
                 o("bfd161bc", "Comparar"),
                 o("j5dcf1b2", "Actualizado"),
                 o("a50aaa10", "Preapertura"),
@@ -4217,8 +4220,8 @@
                 o("dd679fb1", function (e) {
                     return "Mínimo histórico" + e.ttc_stock_details;
                 }),
-                o("ha9c4cf8", "View source"),
-                o("ecad5d78", "Save image"),
+                o("ha9c4cf8", "Ver fuente"),
+                o("ecad5d78", "Guardar imagen"),
                 o("d2d1d398", "¡Copiado!"),
                 o("a22063d2", "Comparte tu ubicación para mayor precisión."),
                 o("db3248a8", "Cargando ubicación"),
@@ -4253,12 +4256,10 @@
                 o("d66bf142", "Jue"),
                 o("dc17968a", "Vie"),
                 o("j310a2d6", "Sáb"),
-                o("afa2a58e", "See all posts"),
-                o("fc83e7e2", "See all users"),
-                o("df601d92", "Relevant Users"),
                 o("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "Mostrar todo (" + e.count + ")";
                 }),
+                o("df601d92", "Usuarios relevantes"),
                 o("d7cb5408", "Páginas web relevantes"),
                 o("ca93f2ee", "Este mensaje ha sido eliminado."),
                 o("b8c06820", "Copiar texto"),
@@ -4328,7 +4329,7 @@
                 o("db832e38", "Activa las notificaciones en la configuración del navegador"),
                 o("a910cac6", "Ocurrió un problema al activar las notificaciones"),
                 o("be30b6ee", "Conexión inestable"),
-                o("ge15b488", "Show thoughts"),
+                o("ge15b488", "Mostrar pensamientos"),
                 o("aa7c96bb", function (e) {
                     return "Ver " + e.numResults + " más";
                 }),
@@ -4338,7 +4339,7 @@
                 o("g3ce0132", "Se ejecutó el modo Thinking durante"),
                 o("f8007364", "Expandir para ver detalles"),
                 o("ca53f780", "Contraer detalles"),
-                o("e6d51c62", "Searching"),
+                o("e6d51c62", "Buscando"),
                 o("ib1c5475", function (e) {
                     return "Se ejecutó Pensar durante " + e.minutes + "min " + e.seconds + "s";
                 }),
@@ -4924,9 +4925,9 @@
                 o("e41fffbc", "El tiempo total de reproducción de tus videos."),
                 o("if2909ba", "Tiempo de reproducción"),
                 o("i0e5bf4c", "Tus videos"),
-                o("ed99baea", "Acceso anticipado a la versión beta");
-            o("gf898b70", "Búsqueda avanzada"),
-                o("d2a43a7a", 'contiene "ai" y "startup"'),
+                o("ed99baea", "Acceso anticipado a la versión beta"),
+                o("gf898b70", "Búsqueda avanzada");
+            o("d2a43a7a", 'contiene "ai" y "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contiene la frase exacta "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
@@ -5880,9 +5881,9 @@
                 o("e41c9b4f", function (e) {
                     return "Guardado en " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Eliminar carpeta");
-            o("f4ea967a", "Se eliminó la carpeta"),
-                o("b670aa62", "Nombre de carpeta"),
+                o("h18f86a4", "Eliminar carpeta"),
+                o("f4ea967a", "Se eliminó la carpeta");
+            o("b670aa62", "Nombre de carpeta"),
                 o("aece5462", "El nombre de la carpeta se actualizó correctamente"),
                 o("e3299b94", "Algo salió mal. Intenta actualizar esa carpeta de nuevo dentro de un minuto."),
                 o("c09ea714", "Algo salió mal. Intenta eliminar esa carpeta de nuevo dentro de un minuto."),
@@ -6886,9 +6887,9 @@
                 o("c924ad84", "Mantén la reproducción de los videos"),
                 o("de750a3c", "Disfrútalos incluso cuando tu teléfono está bloqueado"),
                 o("he5e87c4", "Prioriza tus respuestas"),
-                o("g64a60ba", "Obtén un cierto grado de priorización cuando respondes a los posts");
-            o("a7ee832a", "Corrige faltas y errores en un plazo de hasta 60 minutos"),
-                o("fdd77a34", "Crea posts más largos"),
+                o("g64a60ba", "Obtén un cierto grado de priorización cuando respondes a los posts"),
+                o("a7ee832a", "Corrige faltas y errores en un plazo de hasta 60 minutos");
+            o("fdd77a34", "Crea posts más largos"),
                 o("j6d26a7a", "Escribe tanto como quieras compartir"),
                 o("c4fd68da", "Personaliza tu experiencia"),
                 o("c0195168", "Cambia el ícono y las opciones de navegación de tu app"),
@@ -7866,7 +7867,10 @@
                 o("b719e224", "No hay resultados."),
                 o("c9938100", "Resultados de búsqueda"),
                 o("d1a35ec6", "Añadir cuentas"),
-                o("b437adda", "Actualizar a la versión de pago");
+                o("b437adda", "Actualizar a la versión de pago"),
+                o("f1f6c88b", function (e) {
+                    return "Cuentas (" + e.count + ")";
+                });
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7905,10 +7909,7 @@
                     i(e, a)
                 );
             }
-            o("f1f6c88b", function (e) {
-                return "Cuentas (" + e.count + ")";
-            }),
-                o("b02156b8", "Invitaciones"),
+            o("b02156b8", "Invitaciones"),
                 o("gd67d29b", function (e) {
                     return "Invitaciones (" + e.count + ")";
                 }),
@@ -8279,7 +8280,7 @@
                 o("e5e6479e", "Envíanos un correo electrónico con el nombre de usuario de tu organización y los detalles de tu consulta para recibir el soporte más rápido."),
                 o("ica8392a", "Una vez que recibamos tu solicitud, la revisaremos y priorizaremos en el orden recibido."),
                 o("ed37e36e", "Importante: la falta del nombre de usuario de tu organización o el uso de un correo electrónico personal puede causar retrasos en el procesamiento de tu solicitud."),
-                o("h7e1c146", "Delegate accounts are not currently supported."),
+                o("h7e1c146", "Actualmente no se admiten las cuentas delegadas."),
                 o("eb0d4fe2", "Hacer una columna"),
                 o("e93d2f8a", "Personaliza tu experiencia añadiendo una variedad de columnas, por ejemplo:"),
                 o("e8203d1e", "Búsquedas"),
@@ -8908,9 +8909,9 @@
                 o("a7bf9962", "Descargar video"),
                 o("ccc97152", "Velocidad de reproducción"),
                 o("h531ade0", "Calidad del video"),
-                o("e8b5757c", "0.25x");
-            o("e7e954de", "0.5x"),
-                o("g07ffe66", "0.75x"),
+                o("e8b5757c", "0.25x"),
+                o("e7e954de", "0.5x");
+            o("g07ffe66", "0.75x"),
                 o("d8bede9e", "1x"),
                 o("j41845c8", "1.25x"),
                 o("e9eeed9e", "1.5x"),
@@ -13345,4 +13346,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.a5d64cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.2cefde3a.js.map

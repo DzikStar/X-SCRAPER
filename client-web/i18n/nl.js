@@ -1286,6 +1286,9 @@
                 a("b0d1e205", function (e) {
                     return "Zoeken naar **'" + e.query + "'**";
                 }),
+                a("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 a("bf970edd", function (e) {
                     return "Zoeken op X naar '" + e.query + "'";
                 }),
@@ -1918,9 +1921,9 @@
                 a("a8f09fb8", "Blok verwijderen"),
                 a("i89195ea", "Verdeler"),
                 a("da8ac57c", "Bijschrift bewerken"),
-                a("a8fdd09c", "Artikel publiceren"),
-                a("d8047cc8", "Publiceren");
-            a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
+                a("a8fdd09c", "Artikel publiceren");
+            a("d8047cc8", "Publiceren"),
+                a("ff7ddca2", "Je Artikel verschijnt als post zodra je het publiceert. Je kan het ook terugvinden in het tabblad Artikelen in je profiel."),
                 a("ef34d7be", "Je kan publiek- en antwoordinstellingen niet meer bewerken nadat een Artikel is gepubliceerd."),
                 a("e52d4998", "Kies je publiek"),
                 a("d7985b24", "Kies wie op dit Artikel mag antwoorden"),
@@ -2974,9 +2977,9 @@
                     return e.entity + " is verwijderd uit je bladwijzers";
                 }),
                 a("d6d9aab6", "Bladwijzer toevoegen"),
-                a("bb89cf46", "Bladwijzer verwijderen"),
-                a("a739d4ba", "Aan bladwijzermap toevoegen");
-            a("d5270434", "Afsluiten"),
+                a("bb89cf46", "Bladwijzer verwijderen");
+            a("a739d4ba", "Aan bladwijzermap toevoegen"),
+                a("d5270434", "Afsluiten"),
                 a("ac85c6b2", "Er is een fout opgetreden tijdens het laden van deze afbeelding"),
                 a("b327c12a", "Afbeelding"),
                 a("ic76bdf0", "Opnieuw maken met Grok"),
@@ -3900,9 +3903,9 @@
                 a("cd133486", "Uitnodigen"),
                 a("f2333850", "Delen met mensen buiten X"),
                 a("cddb8097", "Meer informatie"),
-                a("f77997b0", "Co-host"),
-                a("i48f4ed8", "Spreker");
-            a("a77c8e02", "Luisteraar"),
+                a("f77997b0", "Co-host");
+            a("i48f4ed8", "Spreker"),
+                a("a77c8e02", "Luisteraar"),
                 a("bdfa93eb", function (e) {
                     return "Gedeeld door " + e.name;
                 }),
@@ -4254,12 +4257,10 @@
                 a("d66bf142", "Do"),
                 a("dc17968a", "Vr"),
                 a("j310a2d6", "Za"),
-                a("afa2a58e", "Alle posts bekijken"),
-                a("fc83e7e2", "Alle gebruikers bekijken"),
-                a("df601d92", "Relevante gebruikers"),
                 a("db6c20cf", function (e) {
                     return "Alles weergeven (" + e.count + ")";
                 }),
+                a("df601d92", "Relevante gebruikers"),
                 a("d7cb5408", "Relevante webpagina's"),
                 a("ca93f2ee", "Dit bericht is verwijderd."),
                 a("b8c06820", "Tekst kopiëren"),
@@ -4339,7 +4340,7 @@
                 a("g3ce0132", "Nagedacht over"),
                 a("f8007364", "Uitklappen voor details"),
                 a("ca53f780", "Details inklappen"),
-                a("e6d51c62", "Searching"),
+                a("e6d51c62", "Zoeken"),
                 a("ib1c5475", function (e) {
                     return e.minutes + "m " + e.seconds + "s nagedacht";
                 }),
@@ -4925,9 +4926,9 @@
                 a("e41fffbc", "De totale kijktijd van je video's."),
                 a("if2909ba", "Kijktijd"),
                 a("i0e5bf4c", "Jouw video's"),
-                a("ed99baea", "Vroege bèta-toegang");
-            a("gf898b70", "Geavanceerd zoeken"),
-                a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
+                a("ed99baea", "Vroege bèta-toegang"),
+                a("gf898b70", "Geavanceerd zoeken");
+            a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
                 a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
                 a("j8ee77c4", '"ai start-up"'),
@@ -5881,9 +5882,9 @@
                 a("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                a("h18f86a4", "Map verwijderen");
-            a("f4ea967a", "Map is verwijderd"),
-                a("b670aa62", "Naam map"),
+                a("h18f86a4", "Map verwijderen"),
+                a("f4ea967a", "Map is verwijderd");
+            a("b670aa62", "Naam map"),
                 a("aece5462", "Mapnaam is bijgewerkt"),
                 a("e3299b94", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw bij te werken."),
                 a("c09ea714", "Er ging iets mis. Probeer deze map over een paar minuten opnieuw te verwijderen."),
@@ -6887,9 +6888,9 @@
                 a("c924ad84", "Blijf video's afspelen"),
                 a("de750a3c", "Geniet ervan, zelfs wanneer je telefoon is vergrendeld"),
                 a("he5e87c4", "Boost je antwoorden"),
-                a("g64a60ba", "Krijg een beetje voorrang wanneer je antwoordt op posts");
-            a("a7ee832a", "Herstel typfouten en vergissingen, tot 60 minuten lang"),
-                a("fdd77a34", "Maak langere posts"),
+                a("g64a60ba", "Krijg een beetje voorrang wanneer je antwoordt op posts"),
+                a("a7ee832a", "Herstel typfouten en vergissingen, tot 60 minuten lang");
+            a("fdd77a34", "Maak langere posts"),
                 a("j6d26a7a", "Schrijf zoveel als je wil delen"),
                 a("c4fd68da", "Zorg voor een ervaring op maat"),
                 a("c0195168", "Wijzig je app-pictogram en navigatiemogelijkheden"),
@@ -7867,7 +7868,10 @@
                 a("b719e224", "Geen resultaten"),
                 a("c9938100", "Zoekresultaten"),
                 a("d1a35ec6", "Accounts toevoegen"),
-                a("b437adda", "Upgrade naar betaald");
+                a("b437adda", "Upgrade naar betaald"),
+                a("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                });
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7906,10 +7910,7 @@
                     o(e, n)
                 );
             }
-            a("f1f6c88b", function (e) {
-                return "Accounts (" + e.count + ")";
-            }),
-                a("b02156b8", "Uitnodigingen"),
+            a("b02156b8", "Uitnodigingen"),
                 a("gd67d29b", function (e) {
                     return "Uitnodigingen (" + e.count + ")";
                 }),
@@ -8909,9 +8910,9 @@
                 a("a7bf9962", "Video downloaden"),
                 a("ccc97152", "Afspeelsnelheid"),
                 a("h531ade0", "Videokwaliteit"),
-                a("e8b5757c", "0,25 x");
-            a("e7e954de", "0,5 x"),
-                a("g07ffe66", "0,75 x"),
+                a("e8b5757c", "0,25 x"),
+                a("e7e954de", "0,5 x");
+            a("g07ffe66", "0,75 x"),
                 a("d8bede9e", "1 x"),
                 a("j41845c8", "1,25 x"),
                 a("e9eeed9e", "1,5 x"),
@@ -13347,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.0f93511a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.efce541a.js.map

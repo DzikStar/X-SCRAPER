@@ -1286,6 +1286,9 @@
                 t("b0d1e205", function (e) {
                     return "Suche nach **„" + e.query + "“**";
                 }),
+                t("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 t("bf970edd", function (e) {
                     return "𝕏 wird nach „" + e.query + "“ durchsucht";
                 }),
@@ -1918,9 +1921,9 @@
                 t("a8f09fb8", "Block löschen"),
                 t("i89195ea", "Trennelement"),
                 t("da8ac57c", "Beschriftung bearbeiten"),
-                t("a8fdd09c", "Artikel veröffentlichen"),
-                t("d8047cc8", "Veröffentlichen");
-            t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil."),
+                t("a8fdd09c", "Artikel veröffentlichen");
+            t("d8047cc8", "Veröffentlichen"),
+                t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil."),
                 t("ef34d7be", "Steueroptionen für Zielgruppe und Antworten können nicht mehr bearbeitet werden, nachdem ein Artikel veröffentlicht wurde."),
                 t("e52d4998", "Deine Zielgruppe wählen"),
                 t("d7985b24", "Wählen, wer auf diesen Artikel antworten kann"),
@@ -2974,9 +2977,9 @@
                     return e.entity + " wurde aus deinen Lesezeichen entfernt";
                 }),
                 t("d6d9aab6", "Lesezeichen hinzufügen"),
-                t("bb89cf46", "Lesezeichen entfernen"),
-                t("a739d4ba", "Zum Lesezeichenordner hinzufügen");
-            t("d5270434", "Beenden"),
+                t("bb89cf46", "Lesezeichen entfernen");
+            t("a739d4ba", "Zum Lesezeichenordner hinzufügen"),
+                t("d5270434", "Beenden"),
                 t("ac85c6b2", "Beim Laden dieses Bildes ist ein Fehler aufgetreten."),
                 t("b327c12a", "Bild"),
                 t("ic76bdf0", "Mit Grok nachahmen"),
@@ -3900,9 +3903,9 @@
                 t("cd133486", "Einladen"),
                 t("f2333850", "Mit Leuten außerhalb von X teilen"),
                 t("cddb8097", "Mehr erfahren"),
-                t("f77997b0", "Co-Host"),
-                t("i48f4ed8", "Sprecher");
-            t("a77c8e02", "Zuhörer"),
+                t("f77997b0", "Co-Host");
+            t("i48f4ed8", "Sprecher"),
+                t("a77c8e02", "Zuhörer"),
                 t("bdfa93eb", function (e) {
                     return "Geteilt von " + e.name;
                 }),
@@ -4254,12 +4257,10 @@
                 t("d66bf142", "Do"),
                 t("dc17968a", "Fr"),
                 t("j310a2d6", "Sa"),
-                t("afa2a58e", "Alle Posts anzeigen"),
-                t("fc83e7e2", "Alle Nutzer*innen anzeigen"),
-                t("df601d92", "Relevante Nutzer*innen"),
                 t("db6c20cf", function (e) {
                     return "Alle anzeigen (" + e.count + ")";
                 }),
+                t("df601d92", "Relevante Nutzer*innen"),
                 t("d7cb5408", "Relevante Webseiten"),
                 t("ca93f2ee", "Diese Nachricht wurde gelöscht."),
                 t("b8c06820", "Text kopieren"),
@@ -4339,7 +4340,7 @@
                 t("g3ce0132", "Denkprozess dauerte"),
                 t("f8007364", "Für Details erweitern"),
                 t("ca53f780", "Details ausblenden"),
-                t("e6d51c62", "Searching"),
+                t("e6d51c62", "Suche läuft"),
                 t("ib1c5475", function (e) {
                     return "Denkprozess dauerte " + e.minutes + " Min. " + e.seconds + " Sek.";
                 }),
@@ -4925,9 +4926,9 @@
                 t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
                 t("if2909ba", "Abspielzeit"),
                 t("i0e5bf4c", "Deine Videos"),
-                t("ed99baea", "Vorzeitiger Beta-Zugriff");
-            t("gf898b70", "Erweiterte Suche"),
-                t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
+                t("ed99baea", "Vorzeitiger Beta-Zugriff"),
+                t("gf898b70", "Erweiterte Suche");
+            t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
                 t("j8ee77c4", '"ai startup"'),
@@ -5881,9 +5882,9 @@
                 t("e41c9b4f", function (e) {
                     return "Gespeichert in " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Ordner löschen");
-            t("f4ea967a", "Ordner wurde gelöscht"),
-                t("b670aa62", "Ordnername"),
+                t("h18f86a4", "Ordner löschen"),
+                t("f4ea967a", "Ordner wurde gelöscht");
+            t("b670aa62", "Ordnername"),
                 t("aece5462", "Ordnername wurde erfolgreich aktualisiert"),
                 t("e3299b94", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu aktualisieren."),
                 t("c09ea714", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu löschen."),
@@ -6491,7 +6492,7 @@
                 t("e5f4eac0", "Deine Inhalte sind leichter zu entdecken und du erscheinst in Suchergebnissen und Trends."),
                 t("c7832a72", "Direkt Verbindung mit anderen aufnehmen"),
                 t("i1ccd17a", "Sende Direktnachrichten an Leute, die dir nicht folgen, ohne dass deine Nachricht automatisch gefiltert wird."),
-                t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                t("f7cf3d36", "Grok ist ein Gratis-KI-Assistent, der von xAI im Hinblick auf Wahrheit und Objektivität entwickelt wurde. Grok bietet Echtzeitsuche, Bildgenerierung, Trendanalyse und mehr."),
                 t("hc965308", "Spaß"),
                 t("eb78b77e", "Spaßmodus"),
                 t("aa8ece10", "grok.com ausprobieren"),
@@ -6887,9 +6888,9 @@
                 t("c924ad84", "Videos weiter abspielen"),
                 t("de750a3c", "Nutzung selbst bei gesperrtem Handy"),
                 t("he5e87c4", "Booste deine Antworten"),
-                t("g64a60ba", "Etwas höhere Priorität, wenn du auf Posts antwortest");
-            t("a7ee832a", "Korrigiere bis zu 60 Minuten lang Tippfehler und andere Irrtümer"),
-                t("fdd77a34", "Erstelle längere Posts"),
+                t("g64a60ba", "Etwas höhere Priorität, wenn du auf Posts antwortest"),
+                t("a7ee832a", "Korrigiere bis zu 60 Minuten lang Tippfehler und andere Irrtümer");
+            t("fdd77a34", "Erstelle längere Posts"),
                 t("j6d26a7a", "Schreib so viel, wie du teilen möchtest"),
                 t("c4fd68da", "Passe deine Nutzung an"),
                 t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen"),
@@ -7867,7 +7868,10 @@
                 t("b719e224", "Keine Ergebnisse"),
                 t("c9938100", "Suchergebnisse"),
                 t("d1a35ec6", "Accounts hinzufügen"),
-                t("b437adda", "Upgrade auf „bezahlt“");
+                t("b437adda", "Upgrade auf „bezahlt“"),
+                t("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                });
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7906,10 +7910,7 @@
                     d(e, n)
                 );
             }
-            t("f1f6c88b", function (e) {
-                return "Accounts (" + e.count + ")";
-            }),
-                t("b02156b8", "Einladungen"),
+            t("b02156b8", "Einladungen"),
                 t("gd67d29b", function (e) {
                     return "Einladungen (" + e.count + ")";
                 }),
@@ -8909,9 +8910,9 @@
                 t("a7bf9962", "Video herunterladen"),
                 t("ccc97152", "Wiedergabegeschwindigkeit"),
                 t("h531ade0", "Videoqualität"),
-                t("e8b5757c", "0,25 x");
-            t("e7e954de", "0,5 x"),
-                t("g07ffe66", "0,75 x"),
+                t("e8b5757c", "0,25 x"),
+                t("e7e954de", "0,5 x");
+            t("g07ffe66", "0,75 x"),
                 t("d8bede9e", "1 x"),
                 t("j41845c8", "1,25 x"),
                 t("e9eeed9e", "1,5 x"),
@@ -13347,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.c84ee1ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.33d17a8a.js.map

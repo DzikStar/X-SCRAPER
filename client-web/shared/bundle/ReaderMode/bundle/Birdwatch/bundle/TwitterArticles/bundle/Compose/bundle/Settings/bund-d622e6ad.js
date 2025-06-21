@@ -66,17 +66,17 @@
                 l = "rweb/promotedContent/LOG_UNIQUE_EVENT",
                 u = (0, s.Z)([i.dx.IMPRESSION, i.dx.DWELL]),
                 p = (0, s.Z)([i.AJ.TREND_VIEW, i.AJ.SPOTLIGHT_IMPRESSION]),
-                m = (e) => ({ payload: { eventKey: e }, type: l });
-            const E = (e, t) => !!e.promotedContent[t],
+                E = (e) => ({ payload: { eventKey: e }, type: l });
+            const m = (e, t) => !!e.promotedContent[t],
                 T =
                     (e) =>
                     (t, n, { api: s }) => {
                         const { event: i, impression_id: o, promoted_trend_id: c } = e,
                             l = `trend-${c}-${i}`;
-                        if (p.has(i) && E(n(), l)) return Promise.resolve();
+                        if (p.has(i) && m(n(), l)) return Promise.resolve();
                         const u = { promoted_trend_id: c, event: i, impression_id: o };
                         return (0, a._O)(t, { params: u, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
-                            if (!t && p.has(i)) return [m(l)];
+                            if (!t && p.has(i)) return [E(l)];
                         });
                     },
                 y =
@@ -84,11 +84,11 @@
                     (i, o, { api: c }) => {
                         const { event: l, impression_id: p } = s,
                             T = `${n}-${t ?? "undefined"}-${p ?? "undefined"}-${l ?? "undefined"}`;
-                        if (u.has(l) && E(o(), T)) return Promise.resolve();
+                        if (u.has(l) && m(o(), T)) return Promise.resolve();
                         const y = e && "earned" === e.toLowerCase() ? "1" : null,
                             f = { ...s, earned: y, epoch_ms: Date.now() };
                         return (0, a._O)(i, { params: f, request: c.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: f }, (e, t) => {
-                            if (!t && u.has(l)) return [m(T)];
+                            if (!t && u.has(l)) return [E(T)];
                         });
                     },
                 f =
@@ -151,17 +151,17 @@
                 d = n(877848);
             const l = (e) => [(0, c.dP)(e)];
             function u({ contextSuffix: e, getEndpointParams: t, getFetchApiEndpoint: n, mapEntitiesToActions: c = l, sliceKey: u, injectionOptions: { identityFunction: p } = {} }) {
-                const m = [],
-                    E = (e) => e[i.Yf]?.[u],
+                const E = [],
+                    m = (e) => e[i.Yf]?.[u],
                     T = (e) => {
-                        const t = E(e);
-                        if (!t) return m;
-                        const n = t.items || m,
+                        const t = m(e);
+                        if (!t) return E;
+                        const n = t.items || E,
                             s = t.injections;
                         return s?.length > 0 ? (0, r.Z)(s.concat(n), p) : n;
                     },
                     y = (e) => {
-                        const t = E(e),
+                        const t = m(e),
                             n = T(e),
                             s = n?.length > 0;
                         return t ? (0, a.ke)(t.fetchStatus, s) : a.ZP.NONE;
@@ -175,21 +175,21 @@
                             });
                         };
                 return {
-                    select: E,
+                    select: m,
                     selectItems: T,
                     selectFetchStatus: y,
                     fetch: f,
                     fetchIfNeeded: (e) => (t, n) => {
                         const r = n(),
-                            i = E(r),
+                            i = m(r),
                             o = y(r);
                         return !i || (o !== a.ZP.LOADING && o !== a.ZP.LOADED) ? t(f(e)) : s.O4.resolve();
                     },
                     fetchBottom: (e) => (t, n) => {
                         const r = n(),
-                            i = E(r),
+                            i = m(r),
                             o = ((e) => {
-                                const t = E(e);
+                                const t = m(e);
                                 return t?.cursors?.next_cursor;
                             })(r);
                         return i.fetchStatus[d.Yj.BOTTOM] !== a.ZP.LOADING && o ? t(f({ ...e, cursor: o })) : s.O4.resolve();
@@ -212,21 +212,21 @@
                 l = [],
                 u = "slices",
                 p = () => ({ cursors: {}, fetchStatus: { top: a.ZP.NONE, bottom: a.ZP.NONE }, items: l, injections: l }),
-                m = (0, o.dg)("rweb/slices", "FETCH");
-            const E = (e, t) => {
+                E = (0, o.dg)("rweb/slices", "FETCH");
+            const m = (e, t) => {
                     if (!t) return e;
                     switch (t.type) {
-                        case m.REQUEST: {
+                        case E.REQUEST: {
                             const { direction: n } = t.meta;
                             return n ? { ...e, fetchStatus: { ...e.fetchStatus, [n]: a.ZP.LOADING } } : e;
                         }
-                        case m.SUCCESS: {
+                        case E.SUCCESS: {
                             const { direction: n } = t.meta,
                                 r = t.payload,
                                 i = e.items;
                             return !n || r instanceof Error ? e : { ...e, items: (0, s.Z)(i.concat(r?.result)), cursors: { ...r?.slice_info }, error: null, fetchStatus: { ...e.fetchStatus, [n]: a.ZP.LOADED } };
                         }
-                        case m.FAILURE: {
+                        case E.FAILURE: {
                             const { direction: n } = t.meta;
                             return n ? { ...e, error: t.payload, fetchStatus: { ...e.fetchStatus, [n]: a.ZP.FAILED } } : e;
                         }
@@ -243,7 +243,7 @@
                 O = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: w, meta: { sliceKey: n, identityFunction: e }, payload: t }),
                 S = "rweb/slices/REMOVE_ITEMS_SLICE",
                 I = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: S, meta: { sliceKey: n, identityFunction: e }, payload: t }),
-                g = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
+                g = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: E, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
             i.Z.register({
                 [u]: function (e = d, t) {
                     if (!t) return e;
@@ -280,7 +280,7 @@
                         }
                         default: {
                             const s = e[n] || p(),
-                                r = E(s, t);
+                                r = m(s, t);
                             return { ...e, [n]: { ...r } };
                         }
                     }
@@ -300,33 +300,33 @@
                 l = n(600823),
                 u = n(3693),
                 p = n(298219);
-            const m = (0, d.ZP)({ namespace: "translationsTweets", fetchOneContext: "FETCH_TWEET_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(i.ZP).fetchTranslation(t, n).then(f), fetchOneParams: (e, t) => ({ id: e, ...t }) });
-            m.fetchStreamedGrokTranslation =
+            const E = (0, d.ZP)({ namespace: "translationsTweets", fetchOneContext: "FETCH_TWEET_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(i.ZP).fetchTranslation(t, n).then(f), fetchOneParams: (e, t) => ({ id: e, ...t }) });
+            E.fetchStreamedGrokTranslation =
                 (e, t, n) =>
                 async (n, s, { api: r }) => {
                     const i = { content_type: "POST", id: e, dst_lang: t.userLanguage, include_polls: t.includePolls },
                         o = { id: e, id_str: e, entities: { symbols: [], hashtags: [], user_mentions: [], urls: [], media: [], timestamps: [] }, streamedTranslationFetchStatus: c.iF.LOADING, sourceLanguage: t.lang, destinationLanguage: t.userLanguage, translationSource: "Grok", text: "", pollTranslations: [] };
-                    n(m.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
+                    n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
                     const a = new AbortController();
                     try {
-                        const t = await r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(i), signal: a.signal }, "https://api.x.com");
-                        if (!t.ok) throw ((o.translationState = u.H.ERROR), (o.streamedTranslationFetchStatus = c.iF.FAILED), n(m.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), new Error("Failed to translate due to invalid API response."));
+                        const t = await r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(i), signal: a.signal });
+                        if (!t.ok) throw ((o.translationState = u.H.ERROR), (o.streamedTranslationFetchStatus = c.iF.FAILED), n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), new Error("Failed to translate due to invalid API response."));
                         const s = t.body?.getReader();
-                        if (!s) throw ((o.translationState = u.H.ERROR), (o.streamedTranslationFetchStatus = c.iF.FAILED), n(m.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), new Error("Failed to translate because reader is not present."));
+                        if (!s) throw ((o.translationState = u.H.ERROR), (o.streamedTranslationFetchStatus = c.iF.FAILED), n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), new Error("Failed to translate because reader is not present."));
                         const d = new TextDecoder();
                         let l = "",
-                            E = "";
+                            m = "";
                         const T = async (t) => {
                             const r = t ? p.T9 : p.UG,
                                 { done: i, value: a } = await (0, p.yE)("POST_TIMEOUT_BETWEEN_CHUNKS", () => s.read(), r, "Timeout between streaming chunks");
                             if (i || !a) {
                                 const t = 0 === l.length;
-                                return (o.translationState = t ? u.H.ERROR : u.H.SUCCESS), (o.streamedTranslationFetchStatus = t ? c.iF.FAILED : c.iF.LOADED), (o.text = l), void n(m.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
+                                return (o.translationState = t ? u.H.ERROR : u.H.SUCCESS), (o.streamedTranslationFetchStatus = t ? c.iF.FAILED : c.iF.LOADED), (o.text = l), void n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
                             }
                             const f = d.decode(a);
-                            if (((E += f), E.includes("\n"))) {
-                                const t = E.split("\n");
-                                E = t.pop();
+                            if (((m += f), m.includes("\n"))) {
+                                const t = m.split("\n");
+                                m = t.pop();
                                 for (const s of t) {
                                     const t = JSON.parse(s);
                                     if (t.error) throw new Error(t.error);
@@ -335,26 +335,26 @@
                                             s = e - 1;
                                         null == o.pollTranslations && (o.pollTranslations = []), null == o.pollTranslations[s] ? (o.pollTranslations[s] = n) : (o.pollTranslations[s] += n);
                                     }
-                                    n(m.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
+                                    n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
                                 }
                             }
                             await T();
                         };
                         await T(!0);
                     } catch (t) {
-                        (o.translationState = u.H.ERROR), (o.streamedTranslationFetchStatus = c.iF.FAILED), n(m.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), a.abort();
+                        (o.translationState = u.H.ERROR), (o.streamedTranslationFetchStatus = c.iF.FAILED), n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), a.abort();
                     }
                 };
-            const E = new a.W(2),
+            const m = new a.W(2),
                 T = new Set([]);
-            m.fetchGrokTranslationAndForget =
+            E.fetchGrokTranslationAndForget =
                 (e, t, n) =>
                 (n, s, { api: r }) => {
                     T.has(e) ||
                         (T.add(e),
-                        E.addTask(() => {
+                        m.addTask(() => {
                             const n = { content_type: "POST", id: e, dst_lang: t.userLanguage, include_polls: t.includePolls };
-                            return r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(n) }, "https://api.x.com").then((e) => e.text());
+                            return r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(n) }).then((e) => e.text());
                         }));
                 };
             const y = ({ translatedTweet: e, tweetId: t }) => (0, s.Fv)(e, o.Z).entities.tweets[`${t}`],
@@ -362,7 +362,7 @@
                     const t = Array.isArray(e) ? e : [e];
                     return { entities: { translationsTweets: (0, r.Z)(t, (e) => e.id_str) } };
                 },
-                _ = l.Z.register(m);
+                _ = l.Z.register(E);
         },
         3693: (e, t, n) => {
             n.d(t, { H: () => s });
@@ -465,4 +465,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.c003612a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.d80eac3a.js.map

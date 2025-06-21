@@ -247,12 +247,12 @@
                 l = r(988290),
                 u = r(520595),
                 p = r(299631);
-            const d = c().afa2a58e;
+            const d = c().db6c20cf;
             function m({ cardAttachment: e }) {
                 const [t, r] = a.useState(!1),
                     { isCompactLayout: s, isGrokDrawer: i } = (0, l.ZP)(),
                     c = s || i ? 1 : 2;
-                return a.createElement(n.Z, { style: h.container }, a.createElement(p.V, { dynamicLayoutEnabled: !0, postIds: e.post_ids.slice(0, c) }), e.post_ids.length > c && a.createElement(o.ZP, { backgroundColor: "transparent", borderColor: "gray200", color: "gray900", fontWeight: "normal", hoverLabel: { label: d }, onClick: () => r(!0), style: h.seeAllPostsButton, textSizeOverride: "subtext1" }, d), t && a.createElement(u.a, { onDrawerDismiss: () => r(!1), postIds: e.post_ids }));
+                return a.createElement(n.Z, { style: h.container }, a.createElement(p.V, { dynamicLayoutEnabled: !0, postIds: e.post_ids.slice(0, c) }), e.post_ids.length > c && a.createElement(o.ZP, { backgroundColor: "transparent", borderColor: "gray200", color: "gray900", fontWeight: "normal", onClick: () => r(!0), style: h.seeAllPostsButton, textSizeOverride: "subtext1" }, d({ count: e.post_ids.length })), t && a.createElement(u.a, { onDrawerDismiss: () => r(!1), postIds: e.post_ids }));
             }
             const h = s.default.create((e) => ({ container: { marginTop: e.spaces.space12, marginBottom: e.spaces.space16, display: "flex", flexDirection: "column", gap: e.spaces.space12 }, seeAllPostsButton: { width: "fit-content" } }));
         },
@@ -273,7 +273,7 @@
                 f = r(919022),
                 g = r(988290),
                 y = r(486557);
-            const w = m().fc83e7e2;
+            const w = m().db6c20cf;
             function b({ cardAttachment: e }) {
                 const { isCompactLayout: t, isGrokDrawer: r } = (0, g.ZP)(),
                     [i, c] = a.useState(!1),
@@ -290,7 +290,7 @@
                                   ),
                         [u, t],
                     );
-                return a.createElement(n.Z, { style: x.container }, p, e.user_handles.length > l && a.createElement(s.ZP, { backgroundColor: "transparent", borderColor: "gray200", color: "gray900", fontWeight: "normal", hoverLabel: { label: w }, onClick: () => c(!0), style: x.seeAllUsersButton, textSizeOverride: "subtext1" }, w), i && a.createElement(y.S, { onDrawerDismiss: () => c(!1), userHandles: e.user_handles }));
+                return a.createElement(n.Z, { style: x.container }, p, e.user_handles.length > l && a.createElement(s.ZP, { backgroundColor: "transparent", borderColor: "gray200", color: "gray900", fontWeight: "normal", onClick: () => c(!0), style: x.seeAllUsersButton, textSizeOverride: "subtext1" }, w({ count: e.user_handles.length })), i && a.createElement(y.S, { onDrawerDismiss: () => c(!1), userHandles: e.user_handles }));
             }
             function C({ showPreview: e = !1, style: t, useConciseDescription: r, userHandle: o, withStackedUserNameLayout: s = !1 }) {
                 const p = (0, h.v9)((e) => f.ZP.selectByScreenName(e, o));
@@ -312,4 +312,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-f29574de.ff58a0da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-f29574de.7180cf5a.js.map

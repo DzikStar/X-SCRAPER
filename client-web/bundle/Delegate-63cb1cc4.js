@@ -512,7 +512,7 @@
             );
         },
         838737: (e, t, n) => {
-            n.d(t, { Z: () => pe });
+            n.d(t, { Z: () => ge });
             var a = n(937202),
                 r = n(202784),
                 l = n(325686),
@@ -529,17 +529,16 @@
                 E = n(392237),
                 f = n(111677),
                 h = n.n(f),
-                C = n(33104),
-                Z = n(980407),
-                y = n(757700),
-                v = n(339110),
-                _ = n(725516),
-                k = n(874088),
-                w = n(27951);
-            const x = [v.my.Users],
-                P = h().fc9dd578,
-                S = E.default.create((e) => ({ root: { flex: 1 } })),
-                I = ({ disabledUserIds: e, onDropdownScrollableCheck: t, onSelect: n, source: a }) => {
+                C = n(980407),
+                Z = n(757700),
+                y = n(339110),
+                v = n(725516),
+                _ = n(874088),
+                k = n(27951);
+            const w = [y.my.Users],
+                x = h().fc9dd578,
+                P = E.default.create((e) => ({ root: { flex: 1 } })),
+                S = ({ disabledUserIds: e, onDropdownScrollableCheck: t, onSelect: n, source: a }) => {
                     const o = r.useRef(null),
                         c = r.useCallback(
                             (e) => {
@@ -560,73 +559,73 @@
                             },
                             [t],
                         );
-                    return r.createElement(l.Z, { ref: o, style: S.root }, r.createElement(k.default, { alwaysOpen: !0, disableClearButton: !0, filter: x, getItemIsDisabled: s, isModal: !0, onItemClick: c, onItemsChanged: i, onQueryChange: m, placeholder: P, renderUserDecoration: w.ib, shouldAutoFocus: !0, shouldClearOnSelect: !0, shouldFocusOnClear: !0, source: a, withSectionDivider: !1 }));
+                    return r.createElement(l.Z, { ref: o, style: P.root }, r.createElement(_.default, { alwaysOpen: !0, disableClearButton: !0, filter: w, getItemIsDisabled: s, isModal: !0, onItemClick: c, onItemsChanged: i, onQueryChange: m, placeholder: x, renderUserDecoration: k.ib, shouldAutoFocus: !0, shouldClearOnSelect: !0, shouldFocusOnClear: !0, source: a, withSectionDivider: !1 }));
                 };
-            var R = n(147935),
-                A = n(16046),
-                M = n(299640),
-                L = n(51545),
-                z = n(351743),
-                D = n.n(z),
-                F = n(88656);
-            const O = h().e4a6e006,
-                N = h().b5faf216,
-                T = h().hcc3b4ce,
-                B = h().ace0f0a4,
+            var I = n(147935),
+                R = n(16046),
+                A = n(299640),
+                M = n(51545),
+                L = n(351743),
+                z = n.n(L),
+                D = n(88656);
+            const F = h().e4a6e006,
+                O = h().b5faf216,
+                N = h().hcc3b4ce,
+                T = h().ace0f0a4,
+                B = h().e4a6e006,
                 G = h().e4a6e006,
-                j = h().e4a6e006,
-                U = Object.freeze({ DELEGATE_ERR_002: N, DELEGATE_ERR_003: T, DELEGATE_ERR_004: B, DELEGATE_ERR_005: G, DELEGATE_ERR_006: j }),
-                H = L.Z;
-            const V = Object.freeze({ memberSelection: "MemberSelection", roleSelection: "RoleSelection", inviteSent: "InviteSent", adminConfirmation: "AdminConfirmation", inviteError: "InviteError" }),
-                $ = h().efee0a50,
-                Q = h().ja0a1aa6,
-                W = h().db4f623a,
-                q = h().be7350e3,
-                J = h().b7aa7642,
-                Y = h().cfd2f35e,
-                K = h().edbca224,
-                X = h().cb70b894,
-                ee = h().f4834ca6,
-                te = h().b772cd66,
-                ne = h().cb04a824,
-                ae = h().c3153100,
-                re = h().d4b3abde,
-                le = h().b92e2700,
-                oe = h().hbbbf908,
-                ce = h().d8eda249,
-                se = ({ disabledUserIds: e, isOwner: t, onDropdownScrollableCheck: n, onSelect: a }) => r.createElement(r.Fragment, null, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, t ? $ : Q), r.createElement(I, { disabledUserIds: e, onDropdownScrollableCheck: n, onSelect: a, source: v._4.Unknown })),
-                ie = ({ isOwner: e, onRoleChange: t, selectedRole: n, user: a }) => {
+                j = Object.freeze({ DELEGATE_ERR_002: O, DELEGATE_ERR_003: N, DELEGATE_ERR_004: T, DELEGATE_ERR_005: B, DELEGATE_ERR_006: G }),
+                U = M.Z;
+            const H = Object.freeze({ memberSelection: "MemberSelection", roleSelection: "RoleSelection", inviteSent: "InviteSent", adminConfirmation: "AdminConfirmation", inviteError: "InviteError" }),
+                V = h().efee0a50,
+                $ = h().ja0a1aa6,
+                Q = h().db4f623a,
+                W = h().be7350e3,
+                q = h().b7aa7642,
+                J = h().cfd2f35e,
+                Y = h().edbca224,
+                K = h().cb70b894,
+                X = h().f4834ca6,
+                ee = h().b772cd66,
+                te = h().cb04a824,
+                ne = h().c3153100,
+                ae = h().d4b3abde,
+                re = h().b92e2700,
+                le = h().hbbbf908,
+                oe = h().d8eda249,
+                ce = ({ disabledUserIds: e, isOwner: t, onDropdownScrollableCheck: n, onSelect: a }) => r.createElement(r.Fragment, null, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, t ? V : $), r.createElement(S, { disabledUserIds: e, onDropdownScrollableCheck: n, onSelect: a, source: y._4.Unknown })),
+                se = ({ isOwner: e, onRoleChange: t, selectedRole: n, user: a }) => {
                     const o = [
-                            { label: ne, value: "Contributor", helpText: re },
-                            { label: ae, value: "Admin", helpText: le },
+                            { label: te, value: "Contributor", helpText: ae },
+                            { label: ne, value: "Admin", helpText: re },
                         ],
                         { id_str: c, name: s, profile_image_url_https: d, screen_name: g } = a;
-                    return r.createElement(r.Fragment, null, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, e ? W : Q), r.createElement(l.Z, { style: ge.userCellContainer }, r.createElement(m.ZP, { avatarUri: d, name: s, screenName: g, style: ge.userCell, userId: c })), e ? r.createElement(l.Z, { style: ge.selectionGroupContainer }, r.createElement(u.Z, { name: "role", onChange: t, options: o, value: n })) : null);
+                    return r.createElement(r.Fragment, null, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, e ? Q : $), r.createElement(l.Z, { style: de.userCellContainer }, r.createElement(m.ZP, { avatarUri: d, name: s, screenName: g, style: de.userCell, userId: c })), e ? r.createElement(l.Z, { style: de.selectionGroupContainer }, r.createElement(u.Z, { name: "role", onChange: t, options: o, value: n })) : null);
                 },
-                me = ({ screenName: e }) => r.createElement(r.Fragment, null, r.createElement(l.Z, { style: ge.imageContainer }, r.createElement(d.Z, { source: R, style: ge.adminImage })), r.createElement(l.Z, { style: ge.titleContainer }, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, q({ screenName: e }))), r.createElement(l.Z, { style: ge.textContainer }, r.createElement(i.ZP, { color: "gray700" }, oe))),
-                ue = ({ screenName: e }) => r.createElement(r.Fragment, null, r.createElement(l.Z, { style: ge.imageContainer }, r.createElement(d.Z, { source: A, style: ge.image })), r.createElement(l.Z, { style: ge.titleContainer }, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, J)), r.createElement(l.Z, { style: ge.textContainer }, r.createElement(i.ZP, { color: "gray700" }, ce({ screenName: e })))),
-                de = ({ message: e }) => r.createElement(r.Fragment, null, r.createElement(l.Z, { style: ge.imageContainer }, r.createElement(d.Z, { source: M, style: ge.image })), r.createElement(l.Z, { style: ge.titleContainer }, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, e)));
-            const ge = E.default.create((e) => ({ activityIndicatorContainer: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center" }, modal: { minWidth: "initial" }, modalLarge: { minWidth: 600, minHeight: 600, maxHeight: 600 }, modalContent: { position: "relative", paddingHorizontal: e.spacesPx.space32, paddingVertical: e.spacesPx.space36, flex: 1, overflowY: "auto" }, modalContentLarge: { paddingHorizontal: 2 * e.spacesPx.space48, paddingVertical: e.spacesPx.space32 }, modalContentMemberSelection: { paddingBottom: 0 }, modalContentError: { minHeight: "initial" }, imageContainer: { display: "flex", justifyContent: "center", alignItems: "center" }, image: { width: 175, height: 200 }, adminImage: { width: 175, height: 160 }, titleContainer: { marginTop: e.spaces.space32 }, textContainer: { marginTop: e.spaces.space16 }, actionsContainer: { paddingVertical: e.spacesPx.space24, paddingHorizontal: 2 * e.spacesPx.space48 }, actionsContainerWithOverflow: { boxShadow: "0px 0px 3px rgb(15 20 25 / 15%), 0px 0px 16px rgb(15 20 25 / 10%)" }, secondaryAction: { marginTop: e.spacesPx.space16 }, userCell: { paddingHorizontal: 0 }, userCellContainer: { marginTop: e.spacesPx.space24 }, selectionGroupContainer: { marginTop: e.spacesPx.space12 } })),
-                pe = (0, _.Z)(
+                ie = ({ screenName: e }) => r.createElement(r.Fragment, null, r.createElement(l.Z, { style: de.imageContainer }, r.createElement(d.Z, { source: I, style: de.adminImage })), r.createElement(l.Z, { style: de.titleContainer }, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, W({ screenName: e }))), r.createElement(l.Z, { style: de.textContainer }, r.createElement(i.ZP, { color: "gray700" }, le))),
+                me = ({ screenName: e }) => r.createElement(r.Fragment, null, r.createElement(l.Z, { style: de.imageContainer }, r.createElement(d.Z, { source: R, style: de.image })), r.createElement(l.Z, { style: de.titleContainer }, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, q)), r.createElement(l.Z, { style: de.textContainer }, r.createElement(i.ZP, { color: "gray700" }, oe({ screenName: e })))),
+                ue = ({ message: e }) => r.createElement(r.Fragment, null, r.createElement(l.Z, { style: de.imageContainer }, r.createElement(d.Z, { source: A, style: de.image })), r.createElement(l.Z, { style: de.titleContainer }, r.createElement(i.ZP, { size: "title2", weight: "heavy" }, e)));
+            const de = E.default.create((e) => ({ activityIndicatorContainer: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center" }, modal: { minWidth: "initial" }, modalLarge: { minWidth: 600, minHeight: 600, maxHeight: 600 }, modalContent: { position: "relative", paddingHorizontal: e.spacesPx.space32, paddingVertical: e.spacesPx.space36, flex: 1, overflowY: "auto" }, modalContentLarge: { paddingHorizontal: 2 * e.spacesPx.space48, paddingVertical: e.spacesPx.space32 }, modalContentMemberSelection: { paddingBottom: 0 }, modalContentError: { minHeight: "initial" }, imageContainer: { display: "flex", justifyContent: "center", alignItems: "center" }, image: { width: 175, height: 200 }, adminImage: { width: 175, height: 160 }, titleContainer: { marginTop: e.spaces.space32 }, textContainer: { marginTop: e.spaces.space16 }, actionsContainer: { paddingVertical: e.spacesPx.space24, paddingHorizontal: 2 * e.spacesPx.space48 }, actionsContainerWithOverflow: { boxShadow: "0px 0px 3px rgb(15 20 25 / 15%), 0px 0px 16px rgb(15 20 25 / 10%)" }, secondaryAction: { marginTop: e.spacesPx.space16 }, userCell: { paddingHorizontal: 0 }, userCellContainer: { marginTop: e.spacesPx.space24 }, selectionGroupContainer: { marginTop: e.spacesPx.space12 } })),
+                ge = (0, v.Z)(
                     function ({ analytics: e, delegationGroup: t, delegationGroupId: n, isOwner: o, onDismiss: i, refetchMembers: m }) {
                         const u = (0, s.useHistory)(),
                             d = c()(a.Z, t),
                             E = r.useMemo(() => d?.members?.map((e) => e.user_results?.result?.rest_id || "") || [], [d?.members]),
-                            [f, h] = r.useState(V.memberSelection),
-                            [_, k] = r.useState(null),
-                            [w, x] = r.useState("Contributor"),
-                            [P, S] = r.useState(null),
-                            [I, R] = (function (e, t) {
-                                const [n, a] = D()(H);
+                            [f, h] = r.useState(H.memberSelection),
+                            [v, _] = r.useState(null),
+                            [k, w] = r.useState("Contributor"),
+                            [x, P] = r.useState(null),
+                            [S, I] = (function (e, t) {
+                                const [n, a] = z()(U);
                                 return [
                                     (a) =>
                                         n({
                                             variables: a,
                                             onError: (t) => {
-                                                if (t instanceof F.Z) {
+                                                if (t instanceof D.Z) {
                                                     const n = t.errors[0] || null;
-                                                    e((n?.message && U[n.message]) || O);
-                                                } else e(O);
+                                                    e((n?.message && j[n.message]) || F);
+                                                } else e(F);
                                             },
                                             onCompleted: () => {
                                                 t();
@@ -634,70 +633,70 @@
                                         }),
                                     a,
                                 ];
-                            })(S, () => {
-                                h(V.inviteSent), m();
+                            })(P, () => {
+                                h(H.inviteSent), m();
                             }),
-                            [A, M] = r.useState(!1);
+                            [R, A] = r.useState(!1);
                         r.useEffect(() => {
-                            h(null !== _ ? V.roleSelection : V.memberSelection);
-                        }, [_]),
+                            h(null !== v ? H.roleSelection : H.memberSelection);
+                        }, [v]),
                             r.useEffect(() => {
-                                P && h(V.inviteError);
-                            }, [P]);
-                        const L = r.useCallback((e) => {
-                                e.type === v.El.User && k(e);
+                                x && h(H.inviteError);
+                            }, [x]);
+                        const M = r.useCallback((e) => {
+                                e.type === y.El.User && _(e);
                             }, []),
-                            z = r.useCallback(() => {
-                                f === V.roleSelection ? k(null) : f === V.adminConfirmation ? h(V.roleSelection) : (S(null), i());
+                            L = r.useCallback(() => {
+                                f === H.roleSelection ? _(null) : f === H.adminConfirmation ? h(H.roleSelection) : (P(null), i());
                             }, [f, i]),
-                            N = r.useCallback(() => {
-                                if ("Admin" === w && f !== V.adminConfirmation) h(V.adminConfirmation);
-                                else if (null !== _) {
-                                    e.scribe({ element: `${w}_invite_sent_by_${o ? "Owner" : "Admin"}`, action: "click" });
-                                    const t = _.data.id_str;
-                                    I({ userId: t, delegationGroupId: n, selectedRole: w });
+                            O = r.useCallback(() => {
+                                if ("Admin" === k && f !== H.adminConfirmation) h(H.adminConfirmation);
+                                else if (null !== v) {
+                                    e.scribe({ element: `${k}_invite_sent_by_${o ? "Owner" : "Admin"}`, action: "click" });
+                                    const t = v.data.id_str;
+                                    S({ userId: t, delegationGroupId: n, selectedRole: k });
                                 }
-                            }, [e, I, f, n, w, _, o]),
-                            T = r.useCallback(() => {
-                                S(null), k(null);
+                            }, [e, S, f, n, k, v, o]),
+                            N = r.useCallback(() => {
+                                P(null), _(null);
                             }, []),
-                            B = r.useCallback((e, t) => {
-                                "Contributor" === t ? x("Contributor") : "Admin" === t && x("Admin");
+                            T = r.useCallback((e, t) => {
+                                "Contributor" === t ? w("Contributor") : "Admin" === t && w("Admin");
                             }, []),
+                            B = r.useMemo(() => {
+                                switch (f) {
+                                    case H.memberSelection:
+                                        return r.createElement(ce, { disabledUserIds: [n, ...E], isOwner: o, onDropdownScrollableCheck: A, onSelect: M });
+                                    case H.roleSelection:
+                                        return v ? r.createElement(se, { isOwner: o, onRoleChange: T, selectedRole: k, user: v.data }) : null;
+                                    case H.adminConfirmation:
+                                        return v ? r.createElement(ie, { screenName: v.data.screen_name }) : null;
+                                    case H.inviteSent:
+                                        return v ? r.createElement(me, { screenName: v.data.screen_name }) : null;
+                                    case H.inviteError:
+                                        return x ? r.createElement(ue, { message: x }) : null;
+                                    default:
+                                        return null;
+                                }
+                            }, [f, n, E, x, T, M, o, k, v]),
                             G = r.useMemo(() => {
                                 switch (f) {
-                                    case V.memberSelection:
-                                        return r.createElement(se, { disabledUserIds: [n, ...E], isOwner: o, onDropdownScrollableCheck: M, onSelect: L });
-                                    case V.roleSelection:
-                                        return _ ? r.createElement(ie, { isOwner: o, onRoleChange: B, selectedRole: w, user: _.data }) : null;
-                                    case V.adminConfirmation:
-                                        return _ ? r.createElement(me, { screenName: _.data.screen_name }) : null;
-                                    case V.inviteSent:
-                                        return _ ? r.createElement(ue, { screenName: _.data.screen_name }) : null;
-                                    case V.inviteError:
-                                        return P ? r.createElement(de, { message: P }) : null;
+                                    case H.memberSelection:
+                                        return r.createElement(g.ZP, { onPress: i, size: "xLarge", type: "primaryOutlined" }, J);
+                                    case H.roleSelection:
+                                        return r.createElement(g.ZP, { onPress: O, size: "xLarge", type: "primaryFilled" }, Y);
+                                    case H.adminConfirmation:
+                                        return r.createElement(r.Fragment, null, r.createElement(g.ZP, { onPress: O, size: "xLarge", type: "primaryFilled" }, Y), r.createElement(l.Z, { style: de.secondaryAction }, r.createElement(g.ZP, { onPress: L, size: "xLarge", type: "primaryOutlined" }, K)));
+                                    case H.inviteError:
+                                    case H.inviteSent:
+                                        return r.createElement(r.Fragment, null, r.createElement(g.ZP, { onPress: N, size: "xLarge", type: "primaryFilled" }, X), r.createElement(l.Z, { style: de.secondaryAction }, r.createElement(g.ZP, { onPress: L, size: "xLarge", type: "primaryOutlined" }, ee)));
                                     default:
                                         return null;
                                 }
-                            }, [f, n, E, P, B, L, o, w, _]),
-                            j = r.useMemo(() => {
-                                switch (f) {
-                                    case V.memberSelection:
-                                        return r.createElement(g.ZP, { onPress: i, size: "xLarge", type: "primaryOutlined" }, Y);
-                                    case V.roleSelection:
-                                        return r.createElement(g.ZP, { onPress: N, size: "xLarge", type: "primaryFilled" }, K);
-                                    case V.adminConfirmation:
-                                        return r.createElement(r.Fragment, null, r.createElement(g.ZP, { onPress: N, size: "xLarge", type: "primaryFilled" }, K), r.createElement(l.Z, { style: ge.secondaryAction }, r.createElement(g.ZP, { onPress: z, size: "xLarge", type: "primaryOutlined" }, X)));
-                                    case V.inviteError:
-                                    case V.inviteSent:
-                                        return r.createElement(r.Fragment, null, r.createElement(g.ZP, { onPress: T, size: "xLarge", type: "primaryFilled" }, ee), r.createElement(l.Z, { style: ge.secondaryAction }, r.createElement(g.ZP, { onPress: z, size: "xLarge", type: "primaryOutlined" }, te)));
-                                    default:
-                                        return null;
-                                }
-                            }, [f, z, T, N, i]),
-                            $ = f === V.memberSelection || f === V.inviteSent ? "close" : "back",
-                            Q = (0, p.Ji)();
-                        return r.createElement(y.ZP, { clickMaskToClose: !0, history: u, modalSize: Q ? y.Cg.fitChildren : y.Cg.full, onMaskClick: i, style: Q ? ge.modalLarge : ge.modal }, r.createElement(Z.Z, { backButtonType: $, onBackClick: z }, r.createElement(C.Z, { style: [ge.modalContent, Q ? ge.modalContentLarge : null, f === V.memberSelection ? ge.modalContentMemberSelection : null, P ? ge.modalContentError : null] }, R ? r.createElement(l.Z, { style: ge.activityIndicatorContainer }, r.createElement(b.Z, null)) : G), r.createElement(l.Z, { style: [ge.actionsContainer, A ? ge.actionsContainerWithOverflow : null] }, j)));
+                            }, [f, L, N, O, i]),
+                            V = f === H.memberSelection || f === H.inviteSent ? "close" : "back",
+                            $ = (0, p.Ji)();
+                        return r.createElement(Z.ZP, { clickMaskToClose: !0, history: u, modalSize: $ ? Z.Cg.fitChildren : Z.Cg.full, onMaskClick: i, style: $ ? de.modalLarge : de.modal }, r.createElement(C.Z, { backButtonType: V, onBackClick: L }, r.createElement(l.Z, { style: [de.modalContent, $ ? de.modalContentLarge : null, f === H.memberSelection ? de.modalContentMemberSelection : null, x ? de.modalContentError : null] }, I ? r.createElement(l.Z, { style: de.activityIndicatorContainer }, r.createElement(b.Z, null)) : B), r.createElement(l.Z, { style: [de.actionsContainer, R ? de.actionsContainerWithOverflow : null] }, G)));
                     },
                     { page: "settings", section: "delegate", component: "add-member-modal" },
                 );
@@ -1122,4 +1121,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-63cb1cc4.e11306aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-63cb1cc4.c2afc2ca.js.map

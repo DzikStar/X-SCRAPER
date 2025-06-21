@@ -32,6 +32,12 @@
                             var t = n >>> 0;
                             return 0 === t ? 32 : (31 - ((i(t) / e) | 0)) | 0;
                         })),
+                void 0 === String.prototype.startsWith &&
+                    Object.defineProperty(String.prototype, "startsWith", {
+                        value: function (n, t) {
+                            return (t = t || 0), this.lastIndexOf(n, t) === t;
+                        },
+                    }),
                 void 0 === String.prototype.endsWith &&
                     Object.defineProperty(String.prototype, "endsWith", {
                         value: function (n, t) {
@@ -39,12 +45,6 @@
                             (void 0 === t || t > r.length) && (t = r.length), (t -= n.length);
                             var i = r.indexOf(n, t);
                             return -1 !== i && i === t;
-                        },
-                    }),
-                void 0 === String.prototype.startsWith &&
-                    Object.defineProperty(String.prototype, "startsWith", {
-                        value: function (n, t) {
-                            return (t = t || 0), this.lastIndexOf(n, t) === t;
                         },
                     }),
                 (function (n) {
@@ -11932,4 +11932,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-ba4d44ff.fe77e66a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-ba4d44ff.caa237fa.js.map

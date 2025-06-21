@@ -328,10 +328,10 @@
                         [R, x] = n.useState(!1),
                         M = s()(),
                         q = E === d.kW.auth,
-                        N = E === d.kW.forgotPin,
-                        z = (E ? ce[E] : void 0) ?? d.P_.challenge,
-                        H = ie.includes(E),
-                        D = (E ? oe[E] : void 0) ?? w,
+                        N = (E ? ce[E] : void 0) ?? d.P_.challenge,
+                        z = ie.includes(E),
+                        H = (E ? oe[E] : void 0) ?? w,
+                        D = q,
                         L = n.useCallback((e) => {
                             F(e.loginRequestId), T(h.q9.complete2fa), x(!1);
                         }, []),
@@ -340,16 +340,16 @@
                                 const { authStatus: t, challengeId: n, message: s } = e.data;
                                 switch (s) {
                                     case se.T.success:
-                                        q && 1 === t && u.Z.updateSessionStatus(c.c.Active), C ? (0, p.Se)(M, C) : E === d.kW.activateCard ? (0, p.uN)(M) : (0, p.J$)(M), P ? r.replace(P, k) : a ? a() : r.goBack(), D && _({ text: D });
+                                        q && 1 === t && u.Z.updateSessionStatus(c.c.Active), C ? (0, p.Se)(M, C) : E === d.kW.activateCard ? (0, p.uN)(M) : (0, p.J$)(M), P ? r.replace(P, k) : a ? a() : r.goBack(), H && _({ text: H });
                                         break;
                                     case se.T.docvChallenge:
-                                        r.replace(d.AU.tier3.verifyIdentityPath, { ...g, challengeInitiator: E });
+                                        r.replace(d.AU.tier3.verifyIdentityPath, { ...g, challengeId: I ?? n, challengeInitiator: E });
                                         break;
                                     case se.T.kycChallenge:
-                                        r.replace(d.AU.tier2.verifyIdentityPath, { ...g, challengeInitiator: E });
+                                        r.replace(d.AU.tier2.verifyIdentityPath, { ...g, challengeId: I ?? n, challengeInitiator: E });
                                         break;
                                     case se.T.selfieChallenge:
-                                        r.replace(d.AU.selfie.verifyIdentityPath, { ...g, challengeInitiator: E });
+                                        r.replace(d.AU.selfie.verifyIdentityPath, { ...g, challengeId: I ?? n, challengeInitiator: E });
                                         break;
                                     case se.T.twoFactorChallenge:
                                         Z(n), x(!0);
@@ -364,11 +364,12 @@
                                         (0, p.qc)({ environment: M, closePath: b, challengeInitiator: E, history: r });
                                 }
                             },
-                            [q, C, E, P, a, D, r, g, M, b, k, _],
+                            [q, C, E, P, a, H, r, g, I, M, b, k, _],
                         );
-                    n.useEffect(() => {
-                        i && i.scribe({ page: "money", section: "verify-challenge", action: "impression" });
-                    }, [i]),
+                    return (
+                        n.useEffect(() => {
+                            i && i.scribe({ page: "money", section: "verify-challenge", action: "impression" });
+                        }, [i]),
                         n.useEffect(
                             () => (
                                 E === d.kW.auth && u.Z.loadChallenge(),
@@ -377,9 +378,9 @@
                                 }
                             ),
                             [E],
-                        );
-                    const U = q || N;
-                    return n.createElement(n.Fragment, null, I && R ? n.createElement(re, { challengeId: I, isNonModalScreen: U, onSuccess: L }) : null, I || H ? n.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: R, isNonModalScreen: U, linkType: z, payload: { challengeId: I, loginRequestId: A, message: S, embeddedFlow: U }, redirectPath: P, redirectState: k }) : null);
+                        ),
+                        n.createElement(n.Fragment, null, I && R ? n.createElement(re, { challengeId: I, isNonModalScreen: D, onSuccess: L }) : null, I || z ? n.createElement(se.Z, { closePath: b, eventCallback: O, isBackgroundHidden: R, isNonModalScreen: D, linkType: N, payload: { challengeId: I, loginRequestId: A, message: S, embeddedFlow: D }, redirectPath: P, redirectState: k }) : null)
+                    );
                 },
                 de = { context: "VerifyChallenge" };
             function ue(e) {
@@ -403,7 +404,7 @@
                 h = a(655352),
                 p = a(163889),
                 _ = a(514639),
-                g = a(412450),
+                g = a(351990),
                 f = a(441484),
                 y = a(99387),
                 b = a(743080),
@@ -452,52 +453,52 @@
                     return o || s || a ? v : n.createElement(u.Z, { history: d, renderHeader: () => null }, n.createElement(r.Z, { style: g ? T.modalContainer : T.modalContainerNarrow }, v));
                 },
                 Z = (e) => {
-                    const { additionalParams: t, linkType: a = _.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: h, challengeInitiator: p, challengeId: b } = e,
-                        C = (0, c.useHistory)(),
-                        { paymentsOrigin: Z } = (0, g.Z)(),
-                        E = f.Z.getSession(),
-                        S = f.Z.getProviderToken(),
-                        T = (0, v.gh)(),
-                        [A, F] = n.useState(!1),
-                        R = o()(),
-                        { allowClipboardWrite: x, defaultClosePath: M, invalidateOnClose: q, isInlineFrame: N, path: z, redirectOnCompletion: H } = _.QU[a],
-                        D = n.useCallback(
+                    const { additionalParams: t, linkType: a = _.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: h, challengeInitiator: p, challengeId: b, setPort: C } = e,
+                        Z = (0, c.useHistory)(),
+                        { paymentsOrigin: E } = (0, g.Z)(),
+                        S = f.Z.getSession(),
+                        T = f.Z.getProviderToken(),
+                        A = (0, v.gh)(),
+                        [F, R] = n.useState(!1),
+                        x = o()(),
+                        { allowClipboardWrite: M, defaultClosePath: q, invalidateOnClose: N, isInlineFrame: z, path: H, redirectOnCompletion: D } = _.QU[a],
+                        L = n.useCallback(
                             (e) => {
                                 const { errors: t, message: a, url: n } = e.data;
                                 switch (a) {
                                     case k.initPorts: {
                                         const t = e.ports?.[0];
-                                        t && (u && t.postMessage(u), (t.onmessage = d));
+                                        t && (C?.(t), u && t.postMessage(u), (t.onmessage = d));
                                         break;
                                     }
                                     case k.changePhone:
-                                        C.push("/settings/phone");
+                                        Z.push("/settings/phone");
                                         break;
                                     case k.success:
-                                        H && F(!0);
+                                        D && R(!0);
                                         break;
                                     case k.failure:
-                                        H && C.replace(s ?? _.D$, { errors: t });
+                                        D && Z.replace(s ?? _.D$, { errors: t });
                                         break;
                                     case k.ineligible:
-                                        (0, v.J$)(R), C.replace(_.R);
+                                        (0, v.J$)(x), Z.replace(_.R);
                                         break;
                                     case k.pendingReview:
-                                        (0, v.J$)(R), C.replace(_.vr);
+                                        (0, v.J$)(x), Z.replace(_.vr);
                                         break;
                                     case k.redirect:
                                         w && (window.location.href = n);
                                         break;
                                     case k.close:
-                                        q && (0, v.J$)(R), C.replace(l ?? M);
+                                        N && (0, v.J$)(x), Z.replace(l ?? q);
                                 }
                                 d?.(e);
                             },
-                            [d, C, H, R, q, l, M, u, s],
+                            [d, Z, D, x, N, l, q, C, u, s],
                         );
-                    P({ allowedOrigin: Z, handler: D, linkType: a });
-                    const L = n.useMemo(() => {
-                        if (!E || !Z || !S) return;
+                    P({ allowedOrigin: E, handler: L, linkType: a });
+                    const O = n.useMemo(() => {
+                        if (!S || !E || !T) return;
                         const e = new Map();
                         return (
                             t?.forEach(({ key: t, value: a }) => {
@@ -511,10 +512,10 @@
                                         return e && a.searchParams.set("challengeId", e), t && a.searchParams.set("challengeInitiator", t), a.href;
                                     })({ challengeId: b, challengeInitiator: p }),
                                 ),
-                            (0, v.uG)({ basePath: `/${z}`, xPaymentsSession: E, theme: T, paymentsOrigin: Z, moreSearchParams: e, providerToken: S })
+                            (0, v.uG)({ basePath: `/${H}`, xPaymentsSession: S, theme: A, paymentsOrigin: E, moreSearchParams: e, providerToken: T })
                         );
-                    }, [E, Z, S, t, z, T, b, p]);
-                    return A ? n.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: a, redirectPath: r, redirectState: i }) : n.createElement(I, { allowClipboardWrite: x, iframeUrl: L, isBackgroundHidden: h, isInlineFrame: N, isNonModalScreen: m });
+                    }, [S, E, T, t, H, A, b, p]);
+                    return F ? n.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: a, redirectPath: r, redirectState: i }) : n.createElement(I, { allowClipboardWrite: M, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: z, isNonModalScreen: m });
                 },
                 E = (e) => {
                     const t = n.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
@@ -924,7 +925,7 @@
         137882: (e, t, a) => {
             a.d(t, { bR: () => c, ig: () => o, vN: () => i });
             a(543673), a(240753), a(128399);
-            var n = a(412450),
+            var n = a(351990),
                 r = a(125363),
                 s = a(390387);
             const o = (e) => {
@@ -1222,4 +1223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.1439dfea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.2aaa9eea.js.map

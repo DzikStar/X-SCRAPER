@@ -1290,6 +1290,9 @@
                 n("b0d1e205", function (e) {
                     return 'Recherche de **"' + e.query + '"**';
                 }),
+                n("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 n("bf970edd", function (e) {
                     return 'Recherche de "' + e.query + '" sur 𝕏';
                 }),
@@ -1922,9 +1925,9 @@
                 n("a8f09fb8", "Supprimer le bloc"),
                 n("i89195ea", "Séparateur"),
                 n("da8ac57c", "Éditer la légende"),
-                n("a8fdd09c", "Publier l'Article"),
-                n("d8047cc8", "Publier");
-            n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
+                n("a8fdd09c", "Publier l'Article");
+            n("d8047cc8", "Publier"),
+                n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
                 n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
                 n("e52d4998", "Choisissez votre audience"),
                 n("d7985b24", "Choisissez qui peut répondre à cet Article"),
@@ -2978,9 +2981,9 @@
                     return e.entity + " a été retiré de vos signets";
                 }),
                 n("d6d9aab6", "Ajouter un signet"),
-                n("bb89cf46", "Supprimer le signet"),
-                n("a739d4ba", "Ajouter au dossier de signets");
-            n("d5270434", "Quitter"),
+                n("bb89cf46", "Supprimer le signet");
+            n("a739d4ba", "Ajouter au dossier de signets"),
+                n("d5270434", "Quitter"),
                 n("ac85c6b2", "Une erreur s'est produite lors du chargement de l'image"),
                 n("b327c12a", "Image"),
                 n("ic76bdf0", "Recréer avec Grok"),
@@ -3904,9 +3907,9 @@
                 n("cd133486", "Inviter"),
                 n("f2333850", "Partager ailleurs que sur X"),
                 n("cddb8097", "En savoir plus"),
-                n("f77997b0", "Cohôte"),
-                n("i48f4ed8", "Intervenant");
-            n("a77c8e02", "Auditeur"),
+                n("f77997b0", "Cohôte");
+            n("i48f4ed8", "Intervenant"),
+                n("a77c8e02", "Auditeur"),
                 n("bdfa93eb", function (e) {
                     return "Partagé par " + e.name;
                 }),
@@ -4258,12 +4261,10 @@
                 n("d66bf142", "Jeu"),
                 n("dc17968a", "Ven"),
                 n("j310a2d6", "Sam"),
-                n("afa2a58e", "Voir tous les posts"),
-                n("fc83e7e2", "Voir tous les utilisateurs"),
-                n("df601d92", "Utilisateurs pertinents"),
                 n("db6c20cf", function (e) {
                     return "Tout voir (" + e.count + ")";
                 }),
+                n("df601d92", "Utilisateurs pertinents"),
                 n("d7cb5408", "pages Web pertinentes"),
                 n("ca93f2ee", "Ce message a été supprimé."),
                 n("b8c06820", "Copier le texte"),
@@ -4343,7 +4344,7 @@
                 n("g3ce0132", "Réflexion d'une durée de"),
                 n("f8007364", "Développer pour voir les détails"),
                 n("ca53f780", "Réduire les détails"),
-                n("e6d51c62", "Searching"),
+                n("e6d51c62", "Recherche en cours"),
                 n("ib1c5475", function (e) {
                     return "Réflexion d'une durée de " + e.minutes + " m " + e.seconds + " s";
                 }),
@@ -4929,9 +4930,9 @@
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
                 n("if2909ba", "Temps de visionnage"),
                 n("i0e5bf4c", "Vos vidéos"),
-                n("ed99baea", "Accès anticipé à la version bêta");
-            n("gf898b70", "Recherche avancée"),
-                n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
+                n("ed99baea", "Accès anticipé à la version bêta"),
+                n("gf898b70", "Recherche avancée");
+            n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
                 n("j8ee77c4", '"startup ia"'),
@@ -5885,9 +5886,9 @@
                 n("e41c9b4f", function (e) {
                     return "Enregistré dans le dossier " + e.bookmarkFolderName;
                 }),
-                n("h18f86a4", "Supprimer le dossier");
-            n("f4ea967a", "Le dossier a été supprimé."),
-                n("b670aa62", "Nom du dossier"),
+                n("h18f86a4", "Supprimer le dossier"),
+                n("f4ea967a", "Le dossier a été supprimé.");
+            n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
                 n("e3299b94", "Une erreur s'est produite. Réessayez de mettre ce dossier à jour dans un moment."),
                 n("c09ea714", "Une erreur s'est produite. Réessayez de supprimer ce dossier dans un moment."),
@@ -6891,9 +6892,9 @@
                 n("c924ad84", "Poursuivez la lecture des vidéos"),
                 n("de750a3c", "Profitez‑en même lorsque votre téléphone est verrouillé"),
                 n("he5e87c4", "Boostez vos réponses"),
-                n("g64a60ba", "Profitez d'une légère priorisation lorsque vous répondez à des posts");
-            n("a7ee832a", "Profitez de la possibilité de corriger les coquilles et les erreurs pendant 60 minutes"),
-                n("fdd77a34", "Rédigez des posts plus longs"),
+                n("g64a60ba", "Profitez d'une légère priorisation lorsque vous répondez à des posts"),
+                n("a7ee832a", "Profitez de la possibilité de corriger les coquilles et les erreurs pendant 60 minutes");
+            n("fdd77a34", "Rédigez des posts plus longs"),
                 n("j6d26a7a", "Écrivez autant que ce que vous voulez partagez"),
                 n("c4fd68da", "Personnalisez votre expérience"),
                 n("c0195168", "Modifiez l'icône de votre application et les options de navigation"),
@@ -7871,7 +7872,10 @@
                 n("b719e224", "Aucun résultat"),
                 n("c9938100", "Résultats de recherche"),
                 n("d1a35ec6", "Ajouter des comptes"),
-                n("b437adda", "Mettre à niveau vers la version payante");
+                n("b437adda", "Mettre à niveau vers la version payante"),
+                n("f1f6c88b", function (e) {
+                    return "Comptes (" + e.count + ")";
+                });
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7910,10 +7914,7 @@
                     i(e, t)
                 );
             }
-            n("f1f6c88b", function (e) {
-                return "Comptes (" + e.count + ")";
-            }),
-                n("b02156b8", "Invitations"),
+            n("b02156b8", "Invitations"),
                 n("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
                 }),
@@ -8913,9 +8914,9 @@
                 n("a7bf9962", "Télécharger la vidéo"),
                 n("ccc97152", "Vitesse de lecture"),
                 n("h531ade0", "Qualité de la vidéo"),
-                n("e8b5757c", "x 0,25");
-            n("e7e954de", "x0,5"),
-                n("g07ffe66", "x 0,75"),
+                n("e8b5757c", "x 0,25"),
+                n("e7e954de", "x0,5");
+            n("g07ffe66", "x 0,75"),
                 n("d8bede9e", "x 1"),
                 n("j41845c8", "x 1,25"),
                 n("e9eeed9e", "x1,5"),
@@ -13337,4 +13338,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.19fcc8aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.ea053d0a.js.map

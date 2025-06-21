@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TryNewsSidebar", "icons/IconChevronLeft-js"],
+    ["loader.TryNewsSidebar"],
     {
         960334: (e, t, n) => {
             n.r(t), n.d(t, { default: () => Z });
@@ -16,14 +16,14 @@
                 m = n(507504),
                 p = (n(136728), n(107267)),
                 g = n(530732),
-                h = n(125363),
-                y = n(836255),
+                y = n(125363),
+                h = n(836255),
                 f = n(448301),
                 k = n(695356),
                 b = n(287627);
             function _({ article: e, onClick: t, style: n }) {
                 const s = (0, u.Z)(),
-                    i = (0, h.I0)(),
+                    i = (0, y.I0)(),
                     o = (0, p.useHistory)(),
                     c = a.useMemo(() => {
                         if (!e) return [];
@@ -42,7 +42,7 @@
                         return t.push(...c.slice(0, 3)), t;
                     }, [e, c]);
                 a.useEffect(() => {
-                    i(y.Z.fetchMultipleIfNeeded(m));
+                    i(h.Z.fetchMultipleIfNeeded(m));
                 }, [i, m]);
                 const _ = a.useCallback(() => {
                         t && t(), o.push(`/i/news/article/${e.id}`);
@@ -56,8 +56,8 @@
             var C = n(399398);
             const x = c().j66b95a2,
                 E = c().ad35153e,
-                v = "/i/news",
-                S = c().d228a9a0;
+                S = "/i/news",
+                v = c().d228a9a0;
             function Z() {
                 const e = (0, u.Z)(),
                     t = (0, m.Z)({ limit: 3 }),
@@ -87,7 +87,7 @@
                                       }),
                                   ),
                               ),
-                              a.createElement(s.Z, { link: v, text: S, withBottomRadius: !0, withDarkerInteractiveBackground: !0 }),
+                              a.createElement(s.Z, { link: S, text: v, withBottomRadius: !0, withDarkerInteractiveBackground: !0 }),
                           ),
                       )
                     : null;
@@ -114,10 +114,10 @@
                     g = a.useCallback(() => {
                         e < m - 1 && n(e + 1);
                     }, [e, n, m]),
-                    h = a.useCallback(() => {
+                    y = a.useCallback(() => {
                         e > 0 && n(e - 1);
                     }, [e, n]),
-                    y = a.useMemo(() => {
+                    h = a.useMemo(() => {
                         const t = [];
                         let n = Math.max(0, e - Math.floor(c / 2));
                         const a = Math.min(m - 1, n + c - 1);
@@ -128,11 +128,11 @@
                 return a.createElement(
                     l.Z,
                     { style: [u.container, s] },
-                    a.createElement(r.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e <= 0, icon: a.createElement(i.default, { style: u.chevron }), onClick: h, size: "small", style: u.button }),
+                    a.createElement(r.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e <= 0, icon: a.createElement(i.default, { style: u.chevron }), onClick: y, size: "small", style: u.button }),
                     a.createElement(
                         l.Z,
                         { style: u.pageNumContainer },
-                        y.map((e) => a.createElement(r.ZP, { borderColor: "transparent", color: e.isSelected ? "text" : "gray700", key: `page_${e.text}`, onClick: () => n(e.idx), size: "small", style: u.button }, e.text)),
+                        h.map((e) => a.createElement(r.ZP, { borderColor: "transparent", color: e.isSelected ? "text" : "gray700", key: `page_${e.text}`, onClick: () => n(e.idx), size: "small", style: u.button }, e.text)),
                     ),
                     a.createElement(r.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e >= m - 1, icon: a.createElement(o.default, { style: u.chevron }), onClick: g, size: "small", style: u.button }),
                 );
@@ -171,24 +171,24 @@
                         { align: "right", buttonType: "primaryText", onDismissed: e, style: s, title: i || p, topBarStyle: o, withTransparentMask: c },
                         a.createElement(
                             l.Z,
-                            { style: y.container },
+                            { style: h.container },
                             k && a.createElement(m.Z, { currentPageIdx: d, numPerPage: t?.numResultsPerPage || 0, onPageIdxChange: b, total: n.length }),
-                            g.map((e) => a.createElement(h, { key: `post_${e}`, postId: e })),
+                            g.map((e) => a.createElement(y, { key: `post_${e}`, postId: e })),
                         ),
                     );
                 },
-                h = ({ postId: e }) => {
+                y = ({ postId: e }) => {
                     const t = a.useRef(!1),
                         n = (0, u.Z)(),
                         r = a.useCallback(() => {
                             t.current || ((t.current = !0), n.scribe({ action: "impression", component: "post", data: { tweet_id: e } }));
                         }, [n, e]);
-                    return a.createElement(l.Z, { key: `post_${e}`, style: y.post }, a.createElement(c.ZP, { displayPromotedContent: !0, tweetId: e, withActions: !0 }), a.createElement(d.D, { id: `post_${e}`, onFullyVisible: r, position: "bottom", testID: `post_${e}` }));
+                    return a.createElement(l.Z, { key: `post_${e}`, style: h.post }, a.createElement(c.ZP, { displayPromotedContent: !0, tweetId: e, withActions: !0 }), a.createElement(d.D, { id: `post_${e}`, onFullyVisible: r, position: "bottom", testID: `post_${e}` }));
                 },
-                y = s.default.create((e) => ({ container: { width: "100%", maxWidth: 500, marginBottom: e.spaces.space12 }, post: { borderBottomWidth: 1, borderBottomColor: e.colors.borderColor }, mediaContent: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space8, borderRadius: e.borderRadii.large, overflow: "hidden" } }));
+                h = s.default.create((e) => ({ container: { width: "100%", maxWidth: 500, marginBottom: e.spaces.space12 }, post: { borderBottomWidth: 1, borderBottomColor: e.colors.borderColor }, mediaContent: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space8, borderRadius: e.borderRadii.large, overflow: "hidden" } }));
         },
         507504: (e, t, n) => {
-            n.d(t, { Z: () => S });
+            n.d(t, { Z: () => v });
             n(136728);
             var a,
                 l,
@@ -202,8 +202,8 @@
                 m,
                 p,
                 g,
-                h,
                 y,
+                h,
                 f,
                 k,
                 b,
@@ -261,8 +261,8 @@
                                                                     (u = { alias: null, args: null, kind: "ScalarField", name: "last_updated_at", storageKey: null }),
                                                                     (m = { alias: null, args: null, kind: "ScalarField", name: "total_trend_posts", storageKey: null }),
                                                                     (p = { alias: null, args: null, kind: "ScalarField", name: "live_article", storageKey: null }),
-                                                                    (h = { alias: null, args: null, concreteType: "NewsTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ alias: null, args: null, concreteType: "NewsTimelineEvent", kind: "LinkedField", name: "events", plural: !0, selections: [d, (g = { alias: null, args: null, kind: "ScalarField", name: "timestamp", storageKey: null })], storageKey: null }, c], storageKey: null }),
-                                                                    (y = {
+                                                                    (y = { alias: null, args: null, concreteType: "NewsTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ alias: null, args: null, concreteType: "NewsTimelineEvent", kind: "LinkedField", name: "events", plural: !0, selections: [d, (g = { alias: null, args: null, kind: "ScalarField", name: "timestamp", storageKey: null })], storageKey: null }, c], storageKey: null }),
+                                                                    (h = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: "GrokBraveSearch",
@@ -314,7 +314,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: a, kind: "Operation", name: "useHomeNewsArticlesQuery", selections: [{ alias: "deepsearchArticlesHomePageResult", args: l, concreteType: "DeepsearchArticleHomePage", kind: "LinkedField", name: "deepsearch_articles_home_page", plural: !0, selections: [{ alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "NewsArticle", kind: "LinkedField", name: "deepsearch_news_articles", plural: !1, selections: [r, s, o, c, d, u, m, p, h, y, f, { alias: null, args: null, concreteType: "NewsArticleSection", kind: "LinkedField", name: "sections", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "content", plural: !1, selections: [_, k], storageKey: null }], storageKey: null }], storageKey: null }, b, r], type: "AiTrend", abstractKey: null }], storageKey: null }, r], storageKey: null }], storageKey: null }] },
+                    operation: { argumentDefinitions: a, kind: "Operation", name: "useHomeNewsArticlesQuery", selections: [{ alias: "deepsearchArticlesHomePageResult", args: l, concreteType: "DeepsearchArticleHomePage", kind: "LinkedField", name: "deepsearch_articles_home_page", plural: !0, selections: [{ alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "NewsArticle", kind: "LinkedField", name: "deepsearch_news_articles", plural: !1, selections: [r, s, o, c, d, u, m, p, y, h, f, { alias: null, args: null, concreteType: "NewsArticleSection", kind: "LinkedField", name: "sections", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "content", plural: !1, selections: [_, k], storageKey: null }], storageKey: null }], storageKey: null }, b, r], type: "AiTrend", abstractKey: null }], storageKey: null }, r], storageKey: null }], storageKey: null }] },
                     params: { id: "gTItUBXHQzDYz5zGcfHOSw", metadata: {}, name: "useHomeNewsArticlesQuery", operationKind: "query", text: null },
                 };
             w.hash = "3801ff63426a8e5a7f7864683169d9be";
@@ -322,9 +322,9 @@
             n(585488);
             var x = n(712696),
                 E = n.n(x);
-            const v = C;
-            const S = function ({ limit: e }) {
-                const t = E()(v, { limit: e }).deepsearchArticlesHomePageResult || [],
+            const S = C;
+            const v = function ({ limit: e }) {
+                const t = E()(S, { limit: e }).deepsearchArticlesHomePageResult || [],
                     n = [];
                 return (
                     t.forEach((e) => {
@@ -401,7 +401,7 @@
             };
         },
         287627: (e, t, n) => {
-            n.d(t, { Z: () => h });
+            n.d(t, { Z: () => y });
             var a = n(202784),
                 l = n(325686),
                 r = n(731708),
@@ -414,7 +414,7 @@
                 m = n(448301);
             const p = 100,
                 g = 3;
-            function h({ containerStyle: e, disableClick: t, numPosts: n, postIds: s, style: i, textStyle: c, userAvatarShape: d, userAvatarSize: h, variant: k }) {
+            function y({ containerStyle: e, disableClick: t, numPosts: n, postIds: s, style: i, textStyle: c, userAvatarShape: d, userAvatarSize: y, variant: k }) {
                 const [b, _] = a.useState(!1),
                     w = { filled: { commentsContainer: f.filledMetadataContainer }, outline: { commentsContainer: f.outlineMetadataContainer } }[k || "outline"],
                     C = a.useMemo(() => (0, o.Z)(s).slice(0, p), [s]);
@@ -432,7 +432,7 @@
                                       a.createElement(
                                           l.Z,
                                           { style: f.postAvatars },
-                                          C.slice(0, g).map((e, t) => a.createElement(y, { key: e, postId: e, shape: d, size: h, style: [f.postAvatar, { animationDelay: 0.1 * t + "s" }] })),
+                                          C.slice(0, g).map((e, t) => a.createElement(h, { key: e, postId: e, shape: d, size: y, style: [f.postAvatar, { animationDelay: 0.1 * t + "s" }] })),
                                       ),
                                   a.createElement(r.ZP, { style: [f.commentsText, c] }, `${(0, m.uf)(n)} comments`),
                               ),
@@ -441,7 +441,7 @@
                       )
                     : null;
             }
-            function y({ postId: e, shape: t, size: n, style: l }) {
+            function h({ postId: e, shape: t, size: n, style: l }) {
                 const r = a.useMemo(() => d.Z.createHydratorForTweet(e), [e]),
                     i = (0, c.v9)(r);
                 return i && i.user.profile_image_url_https ? a.createElement(s.default, { backgroundColor: "transparent", borderColor: "transparent", borderWidth: "small", shape: t || "circle", size: n || "medium", style: [f.userAvatar, l], uri: i.user.profile_image_url_https }) : null;
@@ -462,8 +462,8 @@
                 m = n(743618),
                 p = n(745153),
                 g = n(292627),
-                h = n(224162),
-                y = n(392237);
+                y = n(224162),
+                h = n(392237);
             const f = s().af8fa2ae,
                 k = a.createElement(i.default, null);
             class b extends a.Component {
@@ -497,15 +497,15 @@
                     this._isMounted = !1;
                 }
                 render() {
-                    const { additionalControl: e, align: t, buttonType: n, children: r, style: s, subtitle: i, title: d, topBarStyle: y, withBackgroundBlur: f, withTopBar: k, withTransparentMask: b } = this.props,
+                    const { additionalControl: e, align: t, buttonType: n, children: r, style: s, subtitle: i, title: d, topBarStyle: h, withBackgroundBlur: f, withTopBar: k, withTransparentMask: b } = this.props,
                         { isVisible: C } = this.state;
-                    return a.createElement(h.ZP.Consumer, null, ({ direction: h }) => {
-                        const x = "rtl" === h,
+                    return a.createElement(y.ZP.Consumer, null, ({ direction: y }) => {
+                        const x = "rtl" === y,
                             E = C ? w.visibleDrawer : ("left" === t) === x ? w.offscreenRightDrawer : w.offscreenLeftDrawer,
-                            v = C && !b ? w.maskWithBg : w.maskTransparent,
-                            S = C ? w.animateOpen : w.animateClose,
-                            Z = o.Z.reducedMotionEnabled ? null : S;
-                        return a.createElement(g.Z.Modal, null, a.createElement(p.Z, null, a.createElement(m.Z, null, a.createElement(l.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, v, Z, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: _, style: [w.root, f ? w.backgroundRootBlur : null, E, Z, s], children: a.createElement(a.Fragment, null, k ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: y, subtitle: i, title: d }) : null, a.createElement(l.Z, { style: w.contentContainer }, r)) })))));
+                            S = C && !b ? w.maskWithBg : w.maskTransparent,
+                            v = C ? w.animateOpen : w.animateClose,
+                            Z = o.Z.reducedMotionEnabled ? null : v;
+                        return a.createElement(g.Z.Modal, null, a.createElement(p.Z, null, a.createElement(m.Z, null, a.createElement(l.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, S, Z, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: _, style: [w.root, f ? w.backgroundRootBlur : null, E, Z, s], children: a.createElement(a.Fragment, null, k ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: h, subtitle: i, title: d }) : null, a.createElement(l.Z, { style: w.contentContainer }, r)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -516,7 +516,7 @@
             const _ = (e) => {
                     e.stopPropagation();
                 },
-                w = y.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...y.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
+                w = h.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...h.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
                 C = b;
         },
         420412: (e, t, n) => {
@@ -560,21 +560,6 @@
                     return a.createElement(r.Z, { link: t, onPress: n, style: [s.root, c && s.withBottomRadius], withDarkerInteractiveBackground: d }, a.createElement(l.ZP, { align: e, color: "primary", weight: o }, i));
                 };
         },
-        97301: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var a = n(202784),
-                l = n(890601),
-                r = n(783427),
-                s = n(717683),
-                i = n(347101);
-            const o = (e = {}) => {
-                const t = a.useContext(s.Z),
-                    { direction: n } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style, t && i.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15.043 3.54l1.414 1.42L9.414 12l7.043 7.04-1.414 1.42L6.586 12l8.457-8.46z" })) }, { writingDirection: n });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.bd2837ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.94c5a69a.js.map

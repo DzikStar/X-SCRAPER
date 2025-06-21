@@ -1285,6 +1285,9 @@
                 t("b0d1e205", function (n) {
                     return 'Đang tìm kiếm **"' + n.query + '"**';
                 }),
+                t("f259119d", function (n) {
+                    return 'Searching the web for "' + n.query + '"';
+                }),
                 t("bf970edd", function (n) {
                     return 'Đang tìm kiếm "' + n.query + '" trên 𝕏';
                 }),
@@ -1301,10 +1304,10 @@
                     return "Đang tìm kiếm bài đăng trên X của @" + n.username;
                 }),
                 t("a2dd07e5", function (n) {
-                    return 'Đang tìm "' + n.query + '" trong các bài đăng trên 𝕏 của @' + n.username + " for";
+                    return 'Đang tìm "' + n.query + '" trong các bài đăng trên 𝕏 của @' + n.username;
                 }),
                 t("e99fb7a3", function (n) {
-                    return 'Tìm kiếm **"' + n.query + '"** trong các bài đăng trên X của @' + n.username;
+                    return 'Đang tìm kiếm **"' + n.query + '"** trong các bài đăng trên X của @' + n.username;
                 }),
                 t("ead81122", "Đã xảy ra lỗi, vui lòng làm mới để kết nối lại hoặc thử lại."),
                 t("f808a13a", "Bạn đã vượt quá giới hạn số lượng. Vui lòng chờ giây lát rồi thử lại."),
@@ -1917,9 +1920,9 @@
                 t("a8f09fb8", "Xóa khối"),
                 t("i89195ea", "Dải phân cách"),
                 t("da8ac57c", "Chỉnh sửa chú thích"),
-                t("a8fdd09c", "Xuất bản Bài viết"),
-                t("d8047cc8", "Đăng");
-            t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
+                t("a8fdd09c", "Xuất bản Bài viết");
+            t("d8047cc8", "Đăng"),
+                t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
                 t("ef34d7be", "Sau khi đã xuất bản Bài viết, bạn sẽ không thể chỉnh sửa phần kiểm soát đối tượng người xem và câu trả lời."),
                 t("e52d4998", "Chọn đối tượng người xem"),
                 t("d7985b24", "Chọn đối tượng có thể trả lời Bài viết này"),
@@ -2973,9 +2976,9 @@
                     return n.entity + " đã được xóa khỏi mục Dấu trang";
                 }),
                 t("d6d9aab6", "Thêm dấu trang"),
-                t("bb89cf46", "Xóa dấu trang"),
-                t("a739d4ba", "Thêm vào Thư mục dấu trang");
-            t("d5270434", "Thoát"),
+                t("bb89cf46", "Xóa dấu trang");
+            t("a739d4ba", "Thêm vào Thư mục dấu trang"),
+                t("d5270434", "Thoát"),
                 t("ac85c6b2", "Đã xảy ra lỗi khi tải hình ảnh này"),
                 t("b327c12a", "Hình ảnh"),
                 t("ic76bdf0", "Tạo lại bằng Grok"),
@@ -3899,9 +3902,9 @@
                 t("cd133486", "Mời"),
                 t("f2333850", "Chia sẻ với những người bên ngoài X"),
                 t("cddb8097", "Tìm hiểu thêm"),
-                t("f77997b0", "Đ.chủ phòng"),
-                t("i48f4ed8", "Người nói");
-            t("a77c8e02", "Người nghe"),
+                t("f77997b0", "Đ.chủ phòng");
+            t("i48f4ed8", "Người nói"),
+                t("a77c8e02", "Người nghe"),
                 t("bdfa93eb", function (n) {
                     return "Được chia sẻ bởi " + n.name;
                 }),
@@ -4253,12 +4256,10 @@
                 t("d66bf142", "Thứ 5"),
                 t("dc17968a", "Thứ 6"),
                 t("j310a2d6", "Thứ 7"),
-                t("afa2a58e", "Xem tất cả bài đăng"),
-                t("fc83e7e2", "Xem tất cả người dùng"),
-                t("df601d92", "Người dùng có liên quan"),
                 t("db6c20cf", function (n) {
                     return "Hiển thị tất cả (" + n.count + ")";
                 }),
+                t("df601d92", "Người dùng có liên quan"),
                 t("d7cb5408", "Trang web có liên quan"),
                 t("ca93f2ee", "Tin nhắn này đã bị xóa."),
                 t("b8c06820", "Sao chép văn bản"),
@@ -4338,7 +4339,7 @@
                 t("g3ce0132", "Đã nghĩ trong"),
                 t("f8007364", "Mở rộng để xem chi tiết"),
                 t("ca53f780", "Thu gọn chi tiết"),
-                t("e6d51c62", "Searching"),
+                t("e6d51c62", "Đang tìm kiếm"),
                 t("ib1c5475", function (n) {
                     return "Đã suy nghĩ trong " + n.minutes + " phút " + n.seconds + "giây";
                 }),
@@ -4924,9 +4925,9 @@
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
                 t("if2909ba", "Thời gian xem"),
                 t("i0e5bf4c", "Video của bạn"),
-                t("ed99baea", "Quyền truy cập sớm vào bản beta");
-            t("gf898b70", "Tìm kiếm nâng cao"),
-                t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
+                t("ed99baea", "Quyền truy cập sớm vào bản beta"),
+                t("gf898b70", "Tìm kiếm nâng cao");
+            t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
                 t("jb6f9292", 'chứa chính xác cụm từ "công ty khởi nghiệp ai"'),
                 t("j8ee77c4", '"công ty khởi nghiệp ai"'),
@@ -5880,9 +5881,9 @@
                 t("e41c9b4f", function (n) {
                     return "Saved to " + n.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Xóa thư mục");
-            t("f4ea967a", "Thư mục đã bị xóa"),
-                t("b670aa62", "Tên thư mục"),
+                t("h18f86a4", "Xóa thư mục"),
+                t("f4ea967a", "Thư mục đã bị xóa");
+            t("b670aa62", "Tên thư mục"),
                 t("aece5462", "Tên thư mục đã được cập nhật thành công"),
                 t("e3299b94", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
                 t("c09ea714", "Đã xảy ra lỗi. Hãy thử cập nhật lại thư mục đó sau ít phút nữa."),
@@ -6886,9 +6887,9 @@
                 t("c924ad84", "Duy trì phát video"),
                 t("de750a3c", "Thoải mái tận hưởng kể cả khi điện thoại bị khóa"),
                 t("he5e87c4", "Ưu tiên câu trả lời của bạn"),
-                t("g64a60ba", "Được ưu tiên mức độ thấp khi bạn trả lời bài đăng");
-            t("a7ee832a", "Sửa chính tả và lỗi sai, lên đến 60 phút"),
-                t("fdd77a34", "Tạo bài đăng dài hơn"),
+                t("g64a60ba", "Được ưu tiên mức độ thấp khi bạn trả lời bài đăng"),
+                t("a7ee832a", "Sửa chính tả và lỗi sai, lên đến 60 phút");
+            t("fdd77a34", "Tạo bài đăng dài hơn"),
                 t("j6d26a7a", "Tha hồ viết bài chia sẻ"),
                 t("c4fd68da", "Tùy chỉnh trải nghiệm của bạn"),
                 t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng"),
@@ -7866,7 +7867,10 @@
                 t("b719e224", "Không có kết quả"),
                 t("c9938100", "Kết quả tìm kiếm"),
                 t("d1a35ec6", "Thêm tài khoản"),
-                t("b437adda", "Nâng cấp lên gói trả phí");
+                t("b437adda", "Nâng cấp lên gói trả phí"),
+                t("f1f6c88b", function (n) {
+                    return "Tài khoản (" + n.count + ")";
+                });
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7905,10 +7909,7 @@
                     a(n, h)
                 );
             }
-            t("f1f6c88b", function (n) {
-                return "Tài khoản (" + n.count + ")";
-            }),
-                t("b02156b8", "Lời mời"),
+            t("b02156b8", "Lời mời"),
                 t("gd67d29b", function (n) {
                     return "Lời mời (" + n.count + ")";
                 }),
@@ -8908,9 +8909,9 @@
                 t("a7bf9962", "Tải xuống video"),
                 t("ccc97152", "Tốc độ phát lại"),
                 t("h531ade0", "Chất lượng video"),
-                t("e8b5757c", "0.25x");
-            t("e7e954de", "0.5x"),
-                t("g07ffe66", "0.75x"),
+                t("e8b5757c", "0.25x"),
+                t("e7e954de", "0.5x");
+            t("g07ffe66", "0.75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1.25x"),
                 t("e9eeed9e", "1.5x"),
@@ -13332,4 +13333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.ae3f448a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.2b0cc1da.js.map

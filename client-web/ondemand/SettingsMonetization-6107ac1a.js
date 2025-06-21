@@ -162,7 +162,7 @@
             const f = d().d2414d31,
                 k = () => d().ce4e85ae,
                 x = d().fb9f6f39;
-            class C extends n.Component {
+            class w extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizedLink = (0, u.Z)((e, t) => {
@@ -197,17 +197,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: a, badgePip: l, children: r, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: h, retainScrollPosition: C, style: v, to: S } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: a, badgePip: l, children: r, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: h, retainScrollPosition: w, style: v, to: S } = this.props,
                         { location: _ } = this.state,
-                        Z = S ? this._getMemoizedLink(S, C) : void 0,
+                        Z = S ? this._getMemoizedLink(S, w) : void 0,
                         R = c ? c(S) : _?.pathname === Z?.pathname,
-                        E = y.Z.generate({ backgroundColor: "transparent", color: o.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? w.pillHoverStyle.backgroundColor : void 0 }),
-                        L = h ? "medium" : R ? "bold" : "medium";
-                    return n.createElement(b.Z, { "aria-label": t, "aria-selected": R, focusable: !!R, interactiveStyles: E, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [w.pillStyle] : [w.link]), ...(u && R ? [w.pillActiveStyle] : []), d ? (u ? w.compactPill : w.compactLink) : null, p ? w.roundedRect : null, v], withoutInteractiveStyles: h }, ({ isFocused: t, isHovered: c }) => n.createElement(i.Z, { style: u && w.flexGrow }, n.createElement(m.ZP, { size: h ? "headline2" : void 0, style: [w.text, { color: this._getTextColor(R, c, h, u) }, d && w.compactText, h && t && w.focusedText, u && w.pillTextStyle, u && R && w.pillActiveTextStyle, u && c && w.pillHoverTextStyle], weight: L }, e && n.createElement(e, { style: w.icon }), r, h || u ? null : n.createElement(i.Z, { style: R && [w.border, { backgroundColor: o.default.theme.colors[s] }] })), a ? n.createElement(g.Z, { count: a, standalone: !0, style: [w.badge, a >= 10 && w.multiDigitBadge, a >= 20 && w.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: f, withBorder: !1 }) : l ? n.createElement(g.Z, { pip: !0, standalone: !0, style: w.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
+                        E = y.Z.generate({ backgroundColor: "transparent", color: o.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
+                        P = h ? "medium" : R ? "bold" : "medium";
+                    return n.createElement(b.Z, { "aria-label": t, "aria-selected": R, focusable: !!R, interactiveStyles: E, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && R ? [C.pillActiveStyle] : []), d ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, v], withoutInteractiveStyles: h }, ({ isFocused: t, isHovered: c }) => n.createElement(i.Z, { style: u && C.flexGrow }, n.createElement(m.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(R, c, h, u) }, d && C.compactText, h && t && C.focusedText, u && C.pillTextStyle, u && R && C.pillActiveTextStyle, u && c && C.pillHoverTextStyle], weight: P }, e && n.createElement(e, { style: C.icon }), r, h || u ? null : n.createElement(i.Z, { style: R && [C.border, { backgroundColor: o.default.theme.colors[s] }] })), a ? n.createElement(g.Z, { count: a, standalone: !0, style: [C.badge, a >= 10 && C.multiDigitBadge, a >= 20 && C.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: f, withBorder: !1 }) : l ? n.createElement(g.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
                 }
             }
-            (C.contextType = h.Z), (C.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const w = o.default.create((e) => ({
+            (w.contextType = h.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            const C = o.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -230,7 +230,7 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                v = C,
+                v = w,
                 S = o.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 _ = ({ alignFirstItem: e, "aria-label": t, isCompact: a, isPillLink: o, isRoundedRect: i, links: c, style: d, visibleItemIndex: u }) => {
                     const p = c
@@ -250,7 +250,7 @@
                     return n.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: o && S.gap, childrenStyle: !g && S.flexGrow, key: p, style: [o ? null : S.segmentedControl, g && S.leftAligned, d], visibleItemIndex: u }, h);
                 };
         },
-        76388: (e, t, a) => {
+        98440: (e, t, a) => {
             a.r(t), a.d(t, { default: () => i });
             var l = a(202784),
                 n = a(890601),
@@ -258,7 +258,7 @@
                 s = a(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const i = o;
@@ -281,4 +281,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-6107ac1a.fe06b9ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-6107ac1a.ba984c4a.js.map

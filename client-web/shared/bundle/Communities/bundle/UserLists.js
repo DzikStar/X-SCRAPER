@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.Communities~bundle.UserLists", "icons/IconCropSquare-js"],
+    ["shared~bundle.Communities~bundle.UserLists", "icons/IconSearchMinusStroke-js"],
     {
         229333: (e, t, o) => {
             o.d(t, { Z: () => h });
@@ -114,10 +114,10 @@
                 const b = s.useCallback(() => {
                         p(!1), d({ status: c.Completed, croppedMediaId: t.id }), o();
                     }, [o, t]),
-                    _ = s.useCallback(() => {
+                    y = s.useCallback(() => {
                         p(!1), m(!0);
                     }, []),
-                    y = s.useCallback(() => {
+                    _ = s.useCallback(() => {
                         m(!1), p(!0);
                     }, []),
                     v = s.useCallback(() => {
@@ -130,7 +130,7 @@
                         [i, t],
                     ),
                     S = { ...t, id: Number.MAX_SAFE_INTEGER, originalMediaFile: t.mediaFile, cropData: void 0 };
-                return s.createElement(s.Fragment, null, h ? s.createElement(n.Z, { defaultAspectRatio: e, media: t, onCancel: b, onDone: _, title: r }) : null, u ? s.createElement(n.Z, { defaultAspectRatio: 1, media: S, onCancel: y, onCropDone: C, onDone: v, title: l }) : null);
+                return s.createElement(s.Fragment, null, h ? s.createElement(n.Z, { defaultAspectRatio: e, media: t, onCancel: b, onDone: y, title: r }) : null, u ? s.createElement(n.Z, { defaultAspectRatio: 1, media: S, onCancel: _, onCropDone: C, onDone: v, title: l }) : null);
             }
         },
         965245: (e, t, o) => {
@@ -175,17 +175,17 @@
             const m = l.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${l.default.iPhoneOffsetBottom} - ${h.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 g = (e) => {
                     const { "aria-label": t, label: o, onPress: g, scribeComponent: f, ...b } = e,
-                        { loggedInUserId: _ } = i.useContext(u.rC),
-                        y = (0, p.z)(),
+                        { loggedInUserId: y } = i.useContext(u.rC),
+                        _ = (0, p.z)(),
                         v = i.useCallback(
                             (e) => {
-                                y.scribe({ component: f, action: "click" }), g && g(e);
+                                _.scribe({ component: f, action: "click" }), g && g(e);
                             },
-                            [y, g, f],
+                            [_, g, f],
                         ),
                         C = h.ZM.useCollapsibleNavBars(),
                         S = [...h.Ah({ elementPosition: "bottom" }), C && m.fabStaysAboveSafeArea];
-                    return _
+                    return y
                         ? i.createElement(
                               n.Z.FloatingAction,
                               null,
@@ -246,7 +246,7 @@
             const s = { createList: "FloatingActionButtons_CreateList_Button", tweet: "FloatingActionButtons_Tweet_Button", message: "FloatingActionButtons_Message_Button" };
         },
         989816: (e, t, o) => {
-            o.d(t, { Z: () => _ });
+            o.d(t, { Z: () => y });
             var s = o(202784),
                 i = o(970187),
                 a = o(392237),
@@ -264,19 +264,19 @@
                 g = { followIcon: s.createElement(n.default, null), followingIcon: s.createElement(r.default, null) },
                 f = (e) => {
                     const { analytics: t, createLocalApiErrorHandler: o, disabled: a, follow: n, isFollowing: r, isMinimal: h, listId: p, listName: u, unfollow: m, user: f } = e,
-                        _ = s.useCallback(() => {
+                        y = s.useCallback(() => {
                             t.scribeAction("follow"), n(p).catch(o(l.lg));
                         }, [t, o, n, p]),
-                        y = s.useCallback(() => {
+                        _ = s.useCallback(() => {
                             t.scribeAction("unfollow"), m(p).catch(o(l.Sm));
                         }, [t, o, p, m]);
-                    return s.createElement(d.Z, { customText: u, displayMode: c.BH.subscribe, userFullName: f?.name }, (e) => s.createElement(i.Z, { buttonIcons: h ? g : void 0, disabled: a, displayMode: h ? "only-icon" : void 0, isFollowing: r, onFollow: e(_), onUnfollow: e(y), showRelationshipChangeConfirmation: !1, size: "small", style: b.followButton, type: "list" }));
+                    return s.createElement(d.Z, { customText: u, displayMode: c.BH.subscribe, userFullName: f?.name }, (e) => s.createElement(i.Z, { buttonIcons: h ? g : void 0, disabled: a, displayMode: h ? "only-icon" : void 0, isFollowing: r, onFollow: e(y), onUnfollow: e(_), showRelationshipChangeConfirmation: !1, size: "small", style: b.followButton, type: "list" }));
                 },
                 b = a.default.create((e) => ({ followButton: { marginStart: e.spaces.space12 } })),
-                _ = m(s.memo(f));
+                y = m(s.memo(f));
         },
         330815: (e, t, o) => {
-            o.d(t, { Z: () => x });
+            o.d(t, { Z: () => Z });
             var s = o(202784),
                 i = o(392237),
                 a = o(154003),
@@ -295,8 +295,8 @@
                     .withAnalytics({ page: "media", section: "edit" }),
                 f = "applyButton",
                 b = r().gd80afba,
-                _ = r().a753a870;
-            class y extends s.Component {
+                y = r().a753a870;
+            class _ extends s.Component {
                 constructor(e) {
                     super(e),
                         (this._getMedia = () => {
@@ -305,7 +305,7 @@
                         }),
                         (this._renderAppBarRightControl = () => {
                             const { isProcessing: e } = this.state;
-                            return s.createElement(a.ZP, { disabled: e, onPress: this._handleApplyButtonClick, size: "small", testID: f, type: "primaryFilled" }, _);
+                            return s.createElement(a.ZP, { disabled: e, onPress: this._handleApplyButtonClick, size: "small", testID: f, type: "primaryFilled" }, y);
                         }),
                         (this._handleBackClick = () => {
                             const { analytics: e, onCancel: t } = this.props;
@@ -340,10 +340,10 @@
                 }
             }
             const v = i.default.create((e) => ({ root: { flexShrink: 1, height: 650 } })),
-                C = g(y);
+                C = g(_);
             var S = o(757700);
             const w = i.default.create((e) => ({ modal: { width: 600, maxWidth: "90vw" } })),
-                x = (e) => s.createElement(S.ZP, { clickMaskToClose: !1, modalSize: "fitChildren", style: w.modal }, s.createElement(C, e));
+                Z = (e) => s.createElement(S.ZP, { clickMaskToClose: !1, modalSize: "fitChildren", style: w.modal }, s.createElement(C, e));
         },
         320588: (e, t, o) => {
             o.d(t, { Mt: () => u, Sm: () => p, lg: () => h });
@@ -387,9 +387,9 @@
                 const [i, n] = s.useState(!1),
                     [l, d] = s.useState(null),
                     b = r()(),
-                    _ = c()(t),
-                    y = (0, u.po)(),
-                    v = (0, f.p)(e, _, o);
+                    y = c()(t),
+                    _ = (0, u.po)(),
+                    v = (0, f.p)(e, y, o);
                 return s.useMemo(() => {
                     const t = (0, p.getRequest)(e).params?.metadata?.sliceInfoPath;
                     a()(!!t, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
@@ -407,12 +407,12 @@
                         r = (t) => {
                             i ||
                                 (n(!0),
-                                h()(b, e, { ..._, cursor: t }).subscribe({
+                                h()(b, e, { ...y, cursor: t }).subscribe({
                                     complete: () => {
                                         n(!1);
                                     },
                                     error: (e) => {
-                                        n(!1), d(e), y(e);
+                                        n(!1), d(e), _(e);
                                     },
                                 }));
                         },
@@ -426,7 +426,7 @@
                             r(void 0);
                         };
                     return l ? { subsequentFetchStatus: g.ZP.FAILED, error: l, fetchNext: c, fetchPrevious: u, refetch: f, data: v, hasNext: Boolean(o), hasPrevious: Boolean(s) } : { subsequentFetchStatus: i ? g.ZP.LOADING : g.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: u, refetch: f, data: v, hasNext: Boolean(o), hasPrevious: Boolean(s) };
-                }, [e, v, i, l, b, _, y]);
+                }, [e, v, i, l, b, y, _]);
             }
         },
         392027: (e, t, o) => {
@@ -493,14 +493,14 @@
                 g = o(992942),
                 f = o(782578),
                 b = o(173739),
-                _ = o(392237),
-                y = o(401339);
-            const v = _.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
+                y = o(392237),
+                _ = o(401339);
+            const v = y.default.create((e) => ({ mask: { backgroundColor: "transparent", borderWidth: e.spaces.space4, borderColor: e.colors.primary, boxShadow: `0 0 0 9999px ${e.colors.activeFaintGray}` }, circle: { borderRadius: e.borderRadii.infinite } })),
                 C = ({ circle: e, height: t, width: o }) => s.createElement(a.Z, { pointerEvents: "none", style: [v.mask, { width: o, height: t }, e && v.circle] });
             var S = o(807896),
                 w = o(151624),
-                x = o(933895);
-            class Z extends s.Component {
+                Z = o(933895);
+            class x extends s.Component {
                 constructor(e) {
                     super(e),
                         (this._previousTouchDistance = 0),
@@ -511,7 +511,7 @@
                         (this._setRef = (e) => {
                             const { onPanEnd: t, onPanMove: o, onPinchMove: s, onWheel: i } = this.props;
                             if (e) {
-                                (o || t || s) && (this._removeTouchMoveToScrollListener = (0, x.O)(e, this._preventDefaultEvent, !1)), i && (this._removeScrollToScaleListener = (0, x.Y)(e, this._preventDefaultEvent, !1));
+                                (o || t || s) && (this._removeTouchMoveToScrollListener = (0, Z.O)(e, this._preventDefaultEvent, !1)), i && (this._removeScrollToScaleListener = (0, Z.Y)(e, this._preventDefaultEvent, !1));
                                 const a = e.getBoundingClientRect();
                                 this._centerPosition = { x: a.width / 2 + a.left, y: a.height / 2 + a.top };
                             }
@@ -558,15 +558,15 @@
                     this._removeTouchMoveToScrollListener && this._removeTouchMoveToScrollListener(), this._removeScrollToScaleListener && this._removeScrollToScaleListener(), this._removeSelectStartListener();
                 }
             }
-            const P = Z,
+            const P = x,
                 E = r().d85bc1b8,
                 M = r().f596ace8,
                 k = r().df031fca,
                 R = r().b40332c6,
                 D = r().e547b368,
                 I = r().f7571204,
-                T = r().e6e16812,
-                B =
+                B = r().e6e16812,
+                T =
                     Math.log2 ||
                     function (e) {
                         return Math.log(e) * Math.LOG2E;
@@ -578,13 +578,13 @@
                         (this._previousLeft = 0),
                         (this._previousTop = 0),
                         (this._panStyles = { top: 0, left: 0 }),
-                        (this._shouldShowZoomControl = () => (!u.ZP.isMobileOS() || !y.Z.isTouchSupported()) && this.props.withZoomControl),
+                        (this._shouldShowZoomControl = () => (!u.ZP.isMobileOS() || !_.Z.isTouchSupported()) && this.props.withZoomControl),
                         (this._renderControls = () => {
                             const { image: e, withAspectRatioOptions: t } = this.props,
                                 { aspectRatio: o } = this.state,
                                 i = e.width / e.height,
                                 n = this._shouldShowZoomControl();
-                            return t || n ? s.createElement(a.Z, { style: A.controlsContainer }, t ? s.createElement(a.Z, { style: A.ratioContainer }, s.createElement(m.ZP, { "aria-label": M, borderColor: "transparent", color: o === i ? "primary" : "gray700", hoverLabel: { label: D }, icon: s.createElement(l.default, null), onPress: this._setAspectRatio(i), size: "medium" }), s.createElement(m.ZP, { "aria-label": k, borderColor: "transparent", color: o === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: I }, icon: s.createElement(c.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), s.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: 1 === o ? "primary" : "gray700", hoverLabel: { label: T }, icon: s.createElement(d.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, n ? s.createElement(a.Z, { style: A.zoomContainer }, s.createElement(b.Z, { "aria-label": E, max: this._maxScale, maxIcon: s.createElement(h.default, { style: A.icon }), min: 0, minIcon: s.createElement(p.default, { style: A.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
+                            return t || n ? s.createElement(a.Z, { style: A.controlsContainer }, t ? s.createElement(a.Z, { style: A.ratioContainer }, s.createElement(m.ZP, { "aria-label": M, borderColor: "transparent", color: o === i ? "primary" : "gray700", hoverLabel: { label: D }, icon: s.createElement(l.default, null), onPress: this._setAspectRatio(i), size: "medium" }), s.createElement(m.ZP, { "aria-label": k, borderColor: "transparent", color: o === 16 / 9 ? "primary" : "gray700", hoverLabel: { label: I }, icon: s.createElement(c.default, null), onPress: this._setAspectRatio(16 / 9), size: "medium" }), s.createElement(m.ZP, { "aria-label": R, borderColor: "transparent", color: 1 === o ? "primary" : "gray700", hoverLabel: { label: B }, icon: s.createElement(d.default, null), onPress: this._setAspectRatio(1), size: "medium" })) : null, n ? s.createElement(a.Z, { style: A.zoomContainer }, s.createElement(b.Z, { "aria-label": E, max: this._maxScale, maxIcon: s.createElement(h.default, { style: A.icon }), min: 0, minIcon: s.createElement(p.default, { style: A.icon }), onChange: this._handleScaleChange, step: "any", value: this.state.imageScale })) : null) : null;
                         }),
                         (this._handleScaleChange = (e) => {
                             this.setState({ imageScale: e });
@@ -611,7 +611,7 @@
                             const { width: o } = this._getImageDimensions(),
                                 { width: s } = this._getMaskDimensions(),
                                 i = o / t.width,
-                                a = B(s / (e.width * i));
+                                a = T(s / (e.width * i));
                             this.setState({ imageScale: a });
                             const { left: n, top: r } = this._getUnscaledCropData();
                             (this._panStyles.top = r - e.top * i * Math.pow(2, a)), (this._previousTop = this._panStyles.top), (this._panStyles.left = n - e.left * i * Math.pow(2, a)), (this._previousLeft = this._panStyles.left), this._updateStyles();
@@ -666,7 +666,7 @@
                             this.setState({ aspectRatio: e });
                         }),
                         (this.state = { aspectRatio: e.defaultAspectRatio || e.image.width / e.image.height, imageScale: 0, containerHeight: 0, containerWidth: 0 }),
-                        (this._maxScale = ((t = e.image), Math.max(Math.min(B(t.width / 150), B(t.height / 150), 3), 0.5)));
+                        (this._maxScale = ((t = e.image), Math.max(Math.min(T(t.width / 150), T(t.height / 150), 3), 0.5)));
                 }
                 render() {
                     const { circle: e, image: t, withZoomControl: o } = this.props,
@@ -687,11 +687,11 @@
                 }
             }
             L.defaultProps = { circle: !1, withZoomControl: !0 };
-            const A = _.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
+            const A = y.default.create((e) => ({ container: { flexGrow: 1, flexShrink: 1 }, controlsContainer: { backgroundColor: e.colors.navigationBackground, minHeight: e.spaces.space20, flexDirection: "row", paddingVertical: e.spaces.space4, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, ratioContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 0, flexDirection: "row", justifyContent: "space-around" }, zoomContainer: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center", height: e.spaces.space40, paddingHorizontal: e.spaces.space20, maxWidth: 400 }, root: { flexGrow: 1, flexShrink: 1, overflow: "hidden", justifyContent: "center", alignItems: "center", cursor: "move" }, image: { position: "absolute" }, icon: { color: e.colors.gray700 } })),
                 W = L;
         },
         403556: (e, t, o) => {
-            o.d(t, { Z: () => Z });
+            o.d(t, { Z: () => x });
             var s = o(807896),
                 i = o(202784),
                 a = o(194504),
@@ -707,8 +707,8 @@
                 g = o(175993),
                 f = o(58881),
                 b = o(530732);
-            const _ = d().d2414d31,
-                y = () => d().ce4e85ae,
+            const y = d().d2414d31,
+                _ = () => d().ce4e85ae,
                 v = d().fb9f6f39;
             class C extends i.Component {
                 constructor(...e) {
@@ -745,13 +745,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: s, children: a, color: n, isActive: c, isCompact: d, isPillLink: h, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: C, style: w, to: x } = this.props,
-                        { location: Z } = this.state,
-                        P = x ? this._getMemoizedLink(x, C) : void 0,
-                        E = c ? c(x) : Z?.pathname === P?.pathname,
+                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: s, children: a, color: n, isActive: c, isCompact: d, isPillLink: h, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: C, style: w, to: Z } = this.props,
+                        { location: x } = this.state,
+                        P = Z ? this._getMemoizedLink(Z, C) : void 0,
+                        E = c ? c(Z) : x?.pathname === P?.pathname,
                         M = f.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: h ? S.pillHoverStyle.backgroundColor : void 0 }),
                         k = g ? "medium" : E ? "bold" : "medium";
-                    return i.createElement(b.Z, { "aria-label": t, "aria-selected": E, focusable: !!E, interactiveStyles: M, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(h ? [S.pillStyle] : [S.link]), ...(h && E ? [S.pillActiveStyle] : []), d ? (h ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, w], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => i.createElement(l.Z, { style: h && S.flexGrow }, i.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(E, c, g, h) }, d && S.compactText, g && t && S.focusedText, h && S.pillTextStyle, h && E && S.pillActiveTextStyle, h && c && S.pillHoverTextStyle], weight: k }, e && i.createElement(e, { style: S.icon }), a, g || h ? null : i.createElement(l.Z, { style: E && [S.border, { backgroundColor: r.default.theme.colors[n] }] })), o ? i.createElement(m.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: v, unreadCountLabel: _, withBorder: !1 }) : s ? i.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
+                    return i.createElement(b.Z, { "aria-label": t, "aria-selected": E, focusable: !!E, interactiveStyles: M, link: P, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(h ? [S.pillStyle] : [S.link]), ...(h && E ? [S.pillActiveStyle] : []), d ? (h ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, w], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => i.createElement(l.Z, { style: h && S.flexGrow }, i.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(E, c, g, h) }, d && S.compactText, g && t && S.focusedText, h && S.pillTextStyle, h && E && S.pillActiveTextStyle, h && c && S.pillHoverTextStyle], weight: k }, e && i.createElement(e, { style: S.icon }), a, g || h ? null : i.createElement(l.Z, { style: E && [S.border, { backgroundColor: r.default.theme.colors[n] }] })), o ? i.createElement(m.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: v, unreadCountLabel: y, withBorder: !1 }) : s ? i.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: _, withBorder: !1 }) : null));
                 }
             }
             (C.contextType = g.Z), (C.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -779,8 +779,8 @@
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
                 w = C,
-                x = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                Z = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: r, isRoundedRect: l, links: c, style: d, visibleItemIndex: h }) => {
+                Z = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                x = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: r, isRoundedRect: l, links: c, style: d, visibleItemIndex: h }) => {
                     const p = c
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -790,15 +790,15 @@
                         g = i.useMemo(
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: a, ...n }, c) => {
-                                    const d = m ? [x.linkRedesign, 0 === c && x.firstLinkRedesign, e && 0 === c && x.withNoPaddingStart] : void 0;
+                                    const d = m ? [Z.linkRedesign, 0 === c && Z.firstLinkRedesign, e && 0 === c && Z.withNoPaddingStart] : void 0;
                                     return i.createElement(w, (0, s.Z)({ viewType: a }, n, { isCompact: o, isPillLink: r, isRoundedRect: l, isWebRedesign: m, style: d }), t);
                                 }),
                             [e, o, r, l, m, c],
                         );
-                    return i.createElement(a.Z, { "aria-label": t, buttonsContainerStyle: r && x.gap, childrenStyle: !m && x.flexGrow, key: p, style: [r ? null : x.segmentedControl, m && x.leftAligned, d], visibleItemIndex: h }, g);
+                    return i.createElement(a.Z, { "aria-label": t, buttonsContainerStyle: r && Z.gap, childrenStyle: !m && Z.flexGrow, key: p, style: [r ? null : Z.segmentedControl, m && Z.leftAligned, d], visibleItemIndex: h }, g);
                 };
         },
-        390587: (e, t, o) => {
+        98440: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var s = o(202784),
                 i = o(890601),
@@ -806,11 +806,24 @@
                 n = o(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            r.metadata = { width: 24, height: 24 };
+            const l = r;
+        },
+        614991: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var s = o(202784),
+                i = o(890601),
+                a = o(783427),
+                n = o(347101);
+            const r = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm12.5 1h-7v-2h7v2z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const l = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~bundle.UserLists.93ec8b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Communities~bundle.UserLists.65805b2a.js.map

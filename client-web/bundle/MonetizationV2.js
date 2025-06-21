@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.MonetizationV2", "icons/IconPlayCircle-js"],
+    ["bundle.MonetizationV2"],
     {
         587510: (e, t, i) => {
             i.d(t, { Z: () => g });
@@ -376,16 +376,16 @@
             const L = l.default.create((e) => ({ content: { marginTop: e.spaces.space16, width: "100%" } })),
                 A = s().bfb6be8a,
                 $ = s().ed6c6da2,
-                D = s().bee20918,
-                q = s().h93b6580,
+                q = s().bee20918,
+                D = s().h93b6580,
                 U = s().eea6d8f8,
                 V = s().a0e8811e,
-                M = s().e1a74ac0,
-                j = s().cd3a6f9a,
-                B = s().c35e6144,
-                H = s().b9dbeb34,
-                W = s().b2d41138,
-                G = s().defa7f12,
+                j = s().e1a74ac0,
+                H = s().cd3a6f9a,
+                W = s().c35e6144,
+                B = s().b9dbeb34,
+                G = s().b2d41138,
+                M = s().defa7f12,
                 O = () => {
                     const e = (0, z.Z)();
                     n.useEffect(() => {
@@ -421,7 +421,7 @@
                                         { style: u },
                                         n.createElement(b.Z, { style: N.header }, n.createElement(y.ZP, { align: t ? "left" : "center", size: t ? "title2" : "title1", weight: t ? "bold" : "medium" }, A), n.createElement(_.Z, { size: "space8" }), n.createElement(y.ZP, { align: t ? "left" : "center", color: "gray700", size: t ? "headline2" : "headline1" }, $), t ? null : n.createElement(n.Fragment, null, n.createElement(_.Z, { size: "space36" }), n.createElement(b.Z, { style: N.upsellButtonContainer }, p))),
                                         n.createElement(_.Z, { size: t ? "space32" : "space80" }),
-                                        n.createElement(b.Z, { style: N.upsellBlocks }, n.createElement(T, { description: q, title: D }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": D, aspectMode: v.Z.exact(2), image: S })), n.createElement(k.Z, { renderContent: () => n.createElement(K.Z, { failedRequirements: c }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: U, onPress: m, paddingHorizontal: "space0", styleOverride: N.pivot }))), n.createElement(T, { description: M, title: V }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": V, aspectMode: v.Z.exact(2), image: F })), n.createElement(k.Z, { renderContent: () => n.createElement(I.Z, { failedRequirements: d }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: j, onPress: g, styleOverride: N.pivot }))), n.createElement(T, { description: H, title: B }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": B, aspectMode: v.Z.exact(2), image: C }))), n.createElement(T, { description: G, title: W }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: Z })))),
+                                        n.createElement(b.Z, { style: N.upsellBlocks }, n.createElement(T, { description: D, title: q }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": q, aspectMode: v.Z.exact(2), image: S })), n.createElement(k.Z, { renderContent: () => n.createElement(K.Z, { failedRequirements: c }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: U, onPress: m, paddingHorizontal: "space0", styleOverride: N.pivot }))), n.createElement(T, { description: j, title: V }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": V, aspectMode: v.Z.exact(2), image: F })), n.createElement(k.Z, { renderContent: () => n.createElement(I.Z, { failedRequirements: d }), wrapperStyle: N.popoverContent }, n.createElement(w.Z, { label: H, onPress: g, styleOverride: N.pivot }))), n.createElement(T, { description: B, title: W }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: C }))), n.createElement(T, { description: M, title: G }, n.createElement(b.Z, { style: N.imageContainer }, n.createElement(h.Z, { "aria-label": G, aspectMode: v.Z.exact(2), image: Z })))),
                                         n.createElement(y.ZP, { color: "gray700", style: N.disclaimer }, n.createElement(s().I18NFormatMessage, { $i18n: "gbef9649" }, n.createElement(y.ZP, { link: "https://help.x.com/using-x/x-premium-faq#item2" }, s().i3e4955d))),
                                     ),
                                 ),
@@ -626,32 +626,6 @@
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
-        711223: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => o });
-            var n = i(202784),
-                r = i(890601),
-                l = i(783427),
-                a = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        234558: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => o });
-            var n = i(202784),
-                r = i(890601),
-                l = i(783427),
-                a = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M9.5 16.45v-8.9l7 4.45-7 4.45zM22.25 12c0 5.66-4.589 10.25-10.25 10.25S1.75 17.66 1.75 12 6.339 1.75 12 1.75 22.25 6.34 22.25 12zM12 20.25c4.556 0 8.25-3.69 8.25-8.25S16.556 3.75 12 3.75 3.75 7.44 3.75 12s3.694 8.25 8.25 8.25z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.6a24d4fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.e971112a.js.map

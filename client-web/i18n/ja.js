@@ -1280,31 +1280,34 @@
                 f("c3f04d9c", "考え中"),
                 f("cbdddb0a", "終了"),
                 f("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return "「" + e.query + "」を検索中";
                 }),
                 f("b0d1e205", function (e) {
                     return "**「" + e.query + "」**を検索中";
                 }),
+                f("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 f("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return " 𝕏で「" + e.query + "」を検索中";
                 }),
                 f("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return e.url + "でブラウジング中";
                 }),
                 f("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return "「" + e.query + "」について" + e.url + "でブラウジング中";
                 }),
                 f("acb9b845", function (e) {
                     return e.url + "で**「" + e.query + "」**をブラウジング中";
                 }),
                 f("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "@" + e.username + "さんの𝕏ポストを検索中";
                 }),
                 f("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "@" + e.username + "さんの𝕏ポストで「" + e.query + "」を検索中";
                 }),
                 f("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "@" + e.username + "さんの𝕏ポストで**「" + e.query + "」**を検索中";
                 }),
                 f("ead81122", "問題が発生しました。やりなおすか、再接続するために更新してください。"),
                 f("f808a13a", "レート制限を超えました。しばらくしてからやりなおしてください。"),
@@ -1316,8 +1319,8 @@
                 f("j77292b7", function (e) {
                     return "最大" + e.count + " 件のファイルを選択してください";
                 }),
-                f("d6b533dc", "Rate this translation:"),
-                f("j2f9ab6e", "Thank you for your feedback!"),
+                f("d6b533dc", "この翻訳を評価:"),
+                f("j2f9ab6e", "ご協力ありがとうございました。"),
                 f("d56779a2", "わかりやすい"),
                 f("b6fe8a56", "わかりにくい"),
                 f("i73a7d48", "Googleによる翻訳"),
@@ -1348,7 +1351,7 @@
                     return "による" + e.originLanguage + "からの翻訳";
                 }),
                 f("b7cb4fab", "による翻訳"),
-                f("e0bffbf8", "About automatic translation"),
+                f("e0bffbf8", "自動翻訳について"),
                 f("e839db3a", "非表示にする"),
                 f("a15585b4", "言語設定"),
                 f("d4c339b9", function (e) {
@@ -1917,9 +1920,9 @@
                 f("a8f09fb8", "ブロックを削除"),
                 f("i89195ea", "仕切り"),
                 f("da8ac57c", "キャプションを編集"),
-                f("a8fdd09c", "記事を公開"),
-                f("d8047cc8", "公開");
-            f("ff7ddca2", "記事は、公開するとポストとして表示されます。さらに、プロフィールの [記事] タブにも表示されます。"),
+                f("a8fdd09c", "記事を公開");
+            f("d8047cc8", "公開"),
+                f("ff7ddca2", "記事は、公開するとポストとして表示されます。さらに、プロフィールの [記事] タブにも表示されます。"),
                 f("ef34d7be", "公開範囲と返信の設定は、記事を公開した後は変更できません。"),
                 f("e52d4998", "公開範囲を選択"),
                 f("d7985b24", "この記事に返信できるユーザーを選択"),
@@ -2973,9 +2976,9 @@
                     return e.entity + "をブックマークから削除しました";
                 }),
                 f("d6d9aab6", "ブックマークを追加"),
-                f("bb89cf46", "ブックマークを削除"),
-                f("a739d4ba", "ブックマークフォルダに追加");
-            f("d5270434", "終了"),
+                f("bb89cf46", "ブックマークを削除");
+            f("a739d4ba", "ブックマークフォルダに追加"),
+                f("d5270434", "終了"),
                 f("ac85c6b2", "この画像を読み込み中にエラーが発生しました"),
                 f("b327c12a", "画像"),
                 f("ic76bdf0", "Grokで作り直す"),
@@ -3899,9 +3902,9 @@
                 f("cd133486", "招待"),
                 f("f2333850", "X外で共有する"),
                 f("cddb8097", "詳細はこちら"),
-                f("f77997b0", "共同ホスト"),
-                f("i48f4ed8", "スピーカー");
-            f("a77c8e02", "リスナー"),
+                f("f77997b0", "共同ホスト");
+            f("i48f4ed8", "スピーカー"),
+                f("a77c8e02", "リスナー"),
                 f("bdfa93eb", function (e) {
                     return e.name + "さんが共有";
                 }),
@@ -4182,10 +4185,10 @@
                 f("j7b5c844", "会話を公開する際は、責任を持って共有してください。Grokとの会話であなたや他の人のセンシティブな情報または機密情報を共有しないでください（ヘルプセンターを参照）。"),
                 f("c9f7c196", "ヘルプセンター"),
                 f("fb3b9776", "Grokの出力はこのユーザーによりカスタマイズされています。"),
-                f("b0a889d4", "As Image"),
-                f("a111fb48", "As Spreadsheet"),
-                f("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                f("bd202fe6", "Generating card"),
+                f("b0a889d4", "画像として"),
+                f("a111fb48", "スプレッドシートとして"),
+                f("bccc65f0", "Grokは誤った回答をすることがあります。必ず元の情報源を確認してください。"),
+                f("bd202fe6", "カードを生成中"),
                 f("bfd161bc", "比較"),
                 f("j5dcf1b2", "更新済み"),
                 f("a50aaa10", "プレマーケット"),
@@ -4217,8 +4220,8 @@
                 f("dd679fb1", function (e) {
                     return "過去最低値" + e.ttc_stock_details;
                 }),
-                f("ha9c4cf8", "View source"),
-                f("ecad5d78", "Save image"),
+                f("ha9c4cf8", "ソースを表示"),
+                f("ecad5d78", "画像を保存"),
                 f("d2d1d398", "コピーしました"),
                 f("a22063d2", "位置情報を共有すると精度が向上します。"),
                 f("db3248a8", "位置情報を読み込み中"),
@@ -4253,12 +4256,10 @@
                 f("d66bf142", "木"),
                 f("dc17968a", "金"),
                 f("j310a2d6", "土"),
-                f("afa2a58e", "See all posts"),
-                f("fc83e7e2", "See all users"),
-                f("df601d92", "Relevant Users"),
                 f("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "すべて表示（" + e.count + "）";
                 }),
+                f("df601d92", "関連ユーザー"),
                 f("d7cb5408", "関連するウェブページ"),
                 f("ca93f2ee", "このメッセージは削除されました。"),
                 f("b8c06820", "テキストをコピー"),
@@ -4328,7 +4329,7 @@
                 f("db832e38", "ブラウザの設定で通知を有効にしてください"),
                 f("a910cac6", "通知を有効にしているときに問題が発生しました"),
                 f("be30b6ee", "接続が不安定です"),
-                f("ge15b488", "Show thoughts"),
+                f("ge15b488", "シンキング結果を表示"),
                 f("aa7c96bb", function (e) {
                     return "他" + e.numResults + "件を表示";
                 }),
@@ -4338,7 +4339,7 @@
                 f("g3ce0132", "シンキングした時間:"),
                 f("f8007364", "展開して詳細を表示"),
                 f("ca53f780", "詳細を閉じる"),
-                f("e6d51c62", "Searching"),
+                f("e6d51c62", "検索中"),
                 f("ib1c5475", function (e) {
                     return e.minutes + "分" + e.seconds + "秒間シンキングしました";
                 }),
@@ -4924,9 +4925,9 @@
                 f("e41fffbc", "動画の合計再生時間です。"),
                 f("if2909ba", "再生時間"),
                 f("i0e5bf4c", "動画"),
-                f("ed99baea", "ベータ版をいち早く利用する");
-            f("gf898b70", "高度な検索"),
-                f("d2a43a7a", "「ai」と「スタートアップ」の両方を含む"),
+                f("ed99baea", "ベータ版をいち早く利用する"),
+                f("gf898b70", "高度な検索");
+            f("d2a43a7a", "「ai」と「スタートアップ」の両方を含む"),
                 f("a8584698", "aiスタートアップ"),
                 f("jb6f9292", "「aiスタートアップ」というキーワード全体を含む"),
                 f("j8ee77c4", '"aiスタートアップ"'),
@@ -5880,9 +5881,9 @@
                 f("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + "に保存しました";
                 }),
-                f("h18f86a4", "フォルダを削除");
-            f("f4ea967a", "フォルダを削除しました"),
-                f("b670aa62", "フォルダ名"),
+                f("h18f86a4", "フォルダを削除"),
+                f("f4ea967a", "フォルダを削除しました");
+            f("b670aa62", "フォルダ名"),
                 f("aece5462", "フォルダ名を更新しました"),
                 f("e3299b94", "問題が発生しました。しばらくしてから、フォルダを更新しなおしてください。"),
                 f("c09ea714", "問題が発生しました。しばらくしてから、フォルダを削除しなおしてください。"),
@@ -6886,9 +6887,9 @@
                 f("c924ad84", "動画再生の継続"),
                 f("de750a3c", "携帯電話がロックされているときでも利用できます"),
                 f("he5e87c4", "返信の強化"),
-                f("g64a60ba", "ポストに返信した場合の優先表示: 低");
-            f("a7ee832a", "最大60分間、入力ミスや間違いを修正できます"),
-                f("fdd77a34", "長いポストの作成"),
+                f("g64a60ba", "ポストに返信した場合の優先表示: 低"),
+                f("a7ee832a", "最大60分間、入力ミスや間違いを修正できます");
+            f("fdd77a34", "長いポストの作成"),
                 f("j6d26a7a", "長いコンテンツを作成して共有する"),
                 f("c4fd68da", "タイムラインのカスタマイズ"),
                 f("c0195168", "アプリのアイコンとナビゲーションオプションの変更"),
@@ -7866,7 +7867,10 @@
                 f("b719e224", "結果なし"),
                 f("c9938100", "検索結果"),
                 f("d1a35ec6", "アカウント追加"),
-                f("b437adda", "有料版にアップグレード");
+                f("b437adda", "有料版にアップグレード"),
+                f("f1f6c88b", function (e) {
+                    return "アカウント（" + e.count + "）";
+                });
             function t(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var f = a[c];
@@ -7905,10 +7909,7 @@
                     r(e, a)
                 );
             }
-            f("f1f6c88b", function (e) {
-                return "アカウント（" + e.count + "）";
-            }),
-                f("b02156b8", "招待"),
+            f("b02156b8", "招待"),
                 f("gd67d29b", function (e) {
                     return "招待（" + e.count + "）";
                 }),
@@ -8279,7 +8280,7 @@
                 f("e5e6479e", "できるだけ早くサポートを提供するため、組織のユーザー名とお問い合わせ内容の詳細を記載してメールをお送りください。"),
                 f("ica8392a", "リクエストがXに届いたら、受領順に確認いたします。"),
                 f("ed37e36e", "重要: 組織のユーザー名がない場合や個人用メールアドレスを使用した場合は、リクエストの処理が遅れることがあります。"),
-                f("h7e1c146", "Delegate accounts are not currently supported."),
+                f("h7e1c146", "委任アカウントは現在サポートされていません。"),
                 f("eb0d4fe2", "列を作成"),
                 f("e93d2f8a", "次のようなさまざまな列を追加して表示内容をカスタマイズします。"),
                 f("e8203d1e", "検索"),
@@ -8908,9 +8909,9 @@
                 f("a7bf9962", "動画をダウンロード"),
                 f("ccc97152", "再生速度"),
                 f("h531ade0", "画質"),
-                f("e8b5757c", "0.25倍");
-            f("e7e954de", "0.5倍"),
-                f("g07ffe66", "0.75倍"),
+                f("e8b5757c", "0.25倍"),
+                f("e7e954de", "0.5倍");
+            f("g07ffe66", "0.75倍"),
                 f("d8bede9e", "1倍"),
                 f("j41845c8", "1.25倍"),
                 f("e9eeed9e", "1.5倍"),
@@ -13339,4 +13340,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.66c5034a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.b687a0ba.js.map

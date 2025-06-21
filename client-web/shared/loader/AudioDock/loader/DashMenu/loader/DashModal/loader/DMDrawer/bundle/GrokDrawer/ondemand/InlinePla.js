@@ -49,7 +49,7 @@
                         return t.colors.alwaysBlack;
                 }
             }
-            function k({ event: t, isCarouselLocked: e }) {
+            function B({ event: t, isCarouselLocked: e }) {
                 const { key: i, target: n } = t;
                 return (
                     [_.Z.ArrowLeft, _.Z.ArrowRight].includes(i) &&
@@ -64,7 +64,7 @@
                     )
                 );
             }
-            class B extends n.Component {
+            class k extends n.Component {
                 constructor(...t) {
                     super(...t),
                         (this._list = n.createRef()),
@@ -111,7 +111,7 @@
                             const { key: e } = t,
                                 { isLocked: i } = this.props,
                                 n = this._isRTL();
-                            !k({ event: t, isCarouselLocked: i }) || (t.preventDefault(), ((!n && e === _.Z.ArrowLeft) || (n && e === _.Z.ArrowRight)) && this._goToPreviousIndex(), ((!n && e === _.Z.ArrowRight) || (n && e === _.Z.ArrowLeft)) && this._goToNextIndex());
+                            !B({ event: t, isCarouselLocked: i }) || (t.preventDefault(), ((!n && e === _.Z.ArrowLeft) || (n && e === _.Z.ArrowRight)) && this._goToPreviousIndex(), ((!n && e === _.Z.ArrowRight) || (n && e === _.Z.ArrowLeft)) && this._goToNextIndex());
                         }),
                         (this._setupIntersectionObserver = () => {
                             window.IntersectionObserver && ((this._observer = new window.IntersectionObserver(this._handleIntersection, { root: this._list.current, rootMargin: "5px", threshold: [0.5, 1] })), this._observeChildRefs());
@@ -300,9 +300,24 @@
                     return e ? n.createElement(o.Z, { style: [L.leftGradientOverlay, t, !p.Z.reducedMotionEnabled && L.shadowAnimation, i && L.hiddenShadow] }) : null;
                 }
             }
-            (B.contextType = w.ZP), (B.defaultProps = { children: [], dominantButtonColor: g.default.theme.colors.alwaysBaseGray1100, isLocked: !1, scrollToCenter: !1, showNavButtonsOnHover: !0, withAddedNavButtonClickArea: !1, withGlobalKeyboardNavigation: !1, withOffscreenItems: !1, withScrollIntoView: !0, withWraparound: !0, withShadow: !1, shadowStyle: void 0 });
+            (k.contextType = w.ZP), (k.defaultProps = { children: [], dominantButtonColor: g.default.theme.colors.alwaysBaseGray1100, isLocked: !1, scrollToCenter: !1, showNavButtonsOnHover: !0, withAddedNavButtonClickArea: !1, withGlobalKeyboardNavigation: !1, withOffscreenItems: !1, withScrollIntoView: !0, withWraparound: !0, withShadow: !1, shadowStyle: void 0 });
             const L = g.default.create((t) => ({ root: { alignItems: "center", flexDirection: "row" }, swipeable: { display: "block", flexGrow: 1, flexShrink: 1, height: "100%" }, swipeableContainer: { alignItems: "center", flexGrow: 1, flexBasis: "0%", flexDirection: "row", height: "100%" }, list: { flexGrow: 1, flexDirection: "row", flexShrink: 1, flexWrap: "nowrap", height: "100%", scrollSnapType: "x mandatory", scrollbarWidth: "none", transform: [{ translate3d: "0,0,0" }], overflowY: "hidden" }, scrollable: { overflowX: "auto" }, notScrollable: { overflowX: "hidden" }, listSafariRtl: { scrollSnapType: "none" }, item: { paddingHorizontal: "0", scrollSnapAlign: "start" }, navButton: { marginHorizontal: t.spaces.space4, position: "absolute", zIndex: 1 }, hiddenNavButton: { opacity: 0, pointerEvents: "none" }, navButtonNext: { end: 0 }, navButtonIcon: { color: t.colors.white }, navButtonIconDisabled: { color: t.colors.gray200 }, navButtonAnimation: { transitionProperty: "opacity", transitionDuration: "0.2s" }, navClickableArea: { justifyContent: "center", height: "50%", width: "auto", zIndex: 1 }, navClickableAreaNext: { paddingStart: t.spaces.space12 }, navClickableAreaPrev: { paddingEnd: t.spaces.space12 }, addRoomForOffscreenItems: { marginStart: "-100%", marginEnd: "-100%", paddingStart: "100%", paddingEnd: "100%" }, rightGradientOverlay: { position: "absolute", top: 0, end: 0, width: t.spaces.space80, height: "100%", pointerEvents: "none", backgroundImage: `linear-gradient(90deg, transparent 0%, ${C(t)} 100%)`, zIndex: 0 }, leftGradientOverlay: { position: "absolute", top: 0, start: 0, width: t.spaces.space80, height: "100%", pointerEvents: "none", backgroundImage: `linear-gradient(90deg, ${C(t)} 0%, transparent 100%)`, zIndex: 0 }, shadowAnimation: { transitionProperty: "opacity", transitionDuration: "0.2s" }, hiddenShadow: { opacity: 0 } })),
-                E = B;
+                E = k;
+        },
+        568320: (t, e, i) => {
+            i.r(e), i.d(e, { default: () => d });
+            var n = i(202784),
+                o = i(890601),
+                s = i(783427),
+                r = i(717683),
+                l = i(347101);
+            const a = (t = {}) => {
+                const e = n.useContext(r.Z),
+                    { direction: i } = (0, s.Z)();
+                return (0, o.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [l.Z.root, t.style, e && l.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.957 4.54L20.414 12l-7.457 7.46-1.414-1.42L16.586 13H3v-2h13.586l-5.043-5.04 1.414-1.42z" })) }, { writingDirection: i });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const d = a;
         },
         263272: (t, e, i) => {
             i.r(e), i.d(e, { default: () => a });
@@ -319,4 +334,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla.d3b441ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla.4032b37a.js.map

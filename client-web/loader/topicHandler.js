@@ -3,7 +3,7 @@
     ["loader.topicHandler"],
     {
         812736: (e, t, o) => {
-            o.d(t, { Z: () => k });
+            o.d(t, { Z: () => S });
             var r = o(202784),
                 n = o(325686),
                 c = o(952428),
@@ -45,11 +45,11 @@
                     const { educateOnFollow: e, isInSidebar: t, nameWeight: o, notInterestedOnClick: a, topic: s } = this.props,
                         { description: l, name: d } = s,
                         { loggedInUserId: p } = this.context;
-                    return r.createElement(c.Z, { "aria-labelledby": [this._topicDomId, this._nameDomId, this._descriptionDomId, this._followButtonDomId, this._notInterestedButtonDomId].join(" "), interactiveStyles: this._topicLink ? void 0 : null, link: this._topicLink, onClick: this._topicLink ? this._handleOnClick : void 0, style: [S.root, S.flexStart], withDarkerInteractiveBackground: t }, r.createElement(n.Z, { style: S.topic }, r.createElement(n.Z, { "aria-label": g, id: this._topicDomId }), this._renderIcon(), r.createElement(n.Z, { style: S.text }, r.createElement(i.ZP, { id: this._nameDomId, weight: o, withInteractiveStyling: !!this._topicLink }, d), l ? r.createElement(i.ZP, { color: "gray700", id: this._descriptionDomId, numberOfLines: 2 }, l) : null)), r.createElement(n.Z, { style: S.buttons }, r.createElement(h.ZP, { educateOnFollow: e, id: this._followButtonDomId, topic: s }), p && a ? r.createElement(u.Z, { id: this._notInterestedButtonDomId, onPress: a, style: S.marginStart, topicId: s.id }) : null));
+                    return r.createElement(c.Z, { "aria-labelledby": [this._topicDomId, this._nameDomId, this._descriptionDomId, this._followButtonDomId, this._notInterestedButtonDomId].join(" "), interactiveStyles: this._topicLink ? void 0 : null, link: this._topicLink, onClick: this._topicLink ? this._handleOnClick : void 0, style: [k.root, k.flexStart], withDarkerInteractiveBackground: t }, r.createElement(n.Z, { style: k.topic }, r.createElement(n.Z, { "aria-label": g, id: this._topicDomId }), this._renderIcon(), r.createElement(n.Z, { style: k.text }, r.createElement(i.ZP, { id: this._nameDomId, weight: o, withInteractiveStyling: !!this._topicLink }, d), l ? r.createElement(i.ZP, { color: "gray700", id: this._descriptionDomId, numberOfLines: 2 }, l) : null)), r.createElement(n.Z, { style: k.buttons }, r.createElement(h.ZP, { educateOnFollow: e, id: this._followButtonDomId, topic: s }), p && a ? r.createElement(u.Z, { id: this._notInterestedButtonDomId, onPress: a, style: k.marginStart, topicId: s.id }) : null));
                 }
                 _renderIcon() {
                     const { withIcon: e } = this.props;
-                    return e ? r.createElement(a.Z, { Icon: p.default, size: "large", style: S.icon }) : null;
+                    return e ? r.createElement(a.Z, { Icon: p.default, size: "large", style: k.icon }) : null;
                 }
                 _handleScribe(e) {
                     const { analytics: t } = this.props;
@@ -57,8 +57,8 @@
                 }
             }
             (v.contextType = m.rC), (v.defaultProps = { nameWeight: "bold", withIcon: !0 });
-            const S = s.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, flexStart: { alignItems: "flex-start" }, icon: { alignSelf: "flex-start", marginEnd: e.spaces.space12 }, customIcon: { borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32 }, text: { flexShrink: 1 }, buttons: { alignItems: "center", alignSelf: "center", flexDirection: "row", paddingStart: e.spaces.space8 }, marginStart: { marginStart: e.spaces.space4 }, topic: { alignItems: "center", flexDirection: "row", flexShrink: 1, paddingEnd: e.spaces.space4 } })),
-                k = (0, I.Z)((0, b.Z)(v));
+            const k = s.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, flexStart: { alignItems: "flex-start" }, icon: { alignSelf: "flex-start", marginEnd: e.spaces.space12 }, customIcon: { borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32 }, text: { flexShrink: 1 }, buttons: { alignItems: "center", alignSelf: "center", flexDirection: "row", paddingStart: e.spaces.space8 }, marginStart: { marginStart: e.spaces.space4 }, topic: { alignItems: "center", flexDirection: "row", flexShrink: 1, paddingEnd: e.spaces.space4 } })),
+                S = (0, I.Z)((0, b.Z)(v));
         },
         542981: (e, t, o) => {
             o.r(t), o.d(t, { default: () => y });
@@ -110,7 +110,7 @@
                 i = (e) => r.Z.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo);
         },
         117004: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => B });
+            o.r(t), o.d(t, { default: () => L });
             var r = o(459643),
                 n = o(351322),
                 c = o(202784),
@@ -130,10 +130,10 @@
                 g = o(71620),
                 w = o(668214),
                 v = o(466380);
-            const S = (0, w.Z)()
+            const k = (0, w.Z)()
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("TOPIC_PILL_CONTEXT"), follow: v.Z.follow, unfollow: v.Z.unfollow }))
                     .withAnalytics(),
-                k = u().ge8f3043,
+                S = u().ge8f3043,
                 C = u().aa576cbf,
                 x = u().i77347d1,
                 E = u().e839db3a,
@@ -142,10 +142,10 @@
                         { analytics: o, createLocalApiErrorHandler: r, follow: n, notInterestedOnClick: a, topic: s, unfollow: l, withActionIcon: d } = e,
                         { following: h, id: u, name: g, not_interested: w } = s,
                         v = c.useRef(!1),
-                        [S, Z] = c.useState(0),
+                        [k, Z] = c.useState(0),
                         D = c.useCallback(
                             (e) => {
-                                if (0 === S) {
+                                if (0 === k) {
                                     const {
                                         nativeEvent: {
                                             layout: { width: t },
@@ -154,7 +154,7 @@
                                     Z(t);
                                 }
                             },
-                            [S],
+                            [k],
                         ),
                         A = (e) => {
                             if (!w && d) return h ? p.D.Active : p.D.Expand;
@@ -175,11 +175,11 @@
                         O = (e, o, r) => {
                             if (t && a) return { mode: p.D.Remove, onSecondaryClick: a, "aria-label": x({ topicName: g }), hoverLabel: E, disabled: h || w };
                         };
-                    return c.createElement(I.Z, { customText: g, displayMode: b.BH.topic }, (e) => c.createElement(f.m.Consumer, null, ({ onFollow: t, onInitialize: o, onUnfollow: r }) => (o && !v.current && (o(u, h), (v.current = !0)), c.createElement(i.Z, { onLayout: D, style: [_.root, { minWidth: S }] }, c.createElement(m.Z, { "aria-label": h ? C({ topicName: g }) : k({ topicName: g }), disabled: w, key: u, mode: A(), onClick: P(e, t, r), secondaryAction: O(), selected: h, style: _.pill, text: g })))));
+                    return c.createElement(I.Z, { customText: g, displayMode: b.BH.topic }, (e) => c.createElement(f.m.Consumer, null, ({ onFollow: t, onInitialize: o, onUnfollow: r }) => (o && !v.current && (o(u, h), (v.current = !0)), c.createElement(i.Z, { onLayout: D, style: [_.root, { minWidth: k }] }, c.createElement(m.Z, { "aria-label": h ? C({ topicName: g }) : S({ topicName: g }), disabled: w, key: u, mode: A(), onClick: P(e, t, r), secondaryAction: O(), selected: h, style: _.pill, text: g })))));
                 };
             Z.defaultProps = { withActionIcon: !0 };
             const _ = s.default.create((e) => ({ root: { marginHorizontal: e.spaces.space4, marginVertical: e.spaces.space4 }, pill: { textOverflow: "ellipsis" }, roundIcon: { borderRadius: e.borderRadii.infinite, height: "100%", width: "100%" } })),
-                D = S(Z);
+                D = k(Z);
             var A = o(373867);
             const P = (e, t) => v.Z.select(e, t.entry.content.topicId),
                 R = (0, w.Z)().propsFromState(() => ({ topic: P })),
@@ -200,8 +200,8 @@
                     return p === l.xV.Pivot ? c.createElement(i.Z, { style: O.root }, c.createElement(a.Z, { link: `/i/topics/${n.id}`, onClick: m, text: n.name })) : c.createElement(D, { notInterestedOnClick: h, topic: n, withActionIcon: u });
                 },
                 O = s.default.create((e) => ({ root: { margin: e.spaces.space4 } })),
-                L = R(c.memo(H)),
-                B = ({ shouldDisplayBorder: e = !1 }) => n.iH({ component: L, isFocusable: (0, r.Z)(!0), getScribeDataItem: A.H, shouldDisplayBorder: (0, r.Z)(e) }).getHandler();
+                B = R(c.memo(H)),
+                L = ({ shouldDisplayBorder: e = !1 }) => n.iH({ component: B, isFocusable: (0, r.Z)(!0), getScribeDataItem: A.H, shouldDisplayBorder: (0, r.Z)(e) }).getHandler();
         },
         204744: (e, t, o) => {
             o.d(t, { DI: () => w, H$: () => m, OB: () => v, Ww: () => d, YB: () => p, hj: () => y, qF: () => I });
@@ -364,10 +364,10 @@
                     const { "aria-label": e, avatar: t, compact: o, disabled: c, link: i, mode: a, onClick: s, secondaryAction: l, selected: u, style: y, testID: I, text: g } = this.props,
                         w = this._renderIcon(!0, a),
                         v = l && this._renderIcon(!1, l.mode),
-                        S = [b.root, o && b.compact, c && b.disabled, u && b.selected, y],
-                        k = [b.content, !!w && b.withIcon, !!t && ((o && b.withAvatarImageCompact) || b.withAvatarImage)],
+                        k = [b.root, o && b.compact, c && b.disabled, u && b.selected, y],
+                        S = [b.content, !!w && b.withIcon, !!t && ((o && b.withAvatarImageCompact) || b.withAvatarImage)],
                         C = p.Z.generate({ backgroundColor: u ? h.default.theme.colors.primary : "transparent", color: u ? h.default.theme.colors.white : h.default.theme.colors.primary });
-                    return r.createElement(n.Z, { style: S, testID: I }, r.createElement(m.Z, { "aria-label": e || (a ? f[a] : ""), disabled: c, interactiveStyles: C, link: i, onPress: s, style: k }, this._renderAvatar(), r.createElement(d.ZP, { color: u ? "whiteOnColor" : "text", numberOfLines: 1, selectable: !1, style: b.text, weight: "bold" }, g), w), l ? r.createElement(m.Z, { "aria-label": l["aria-label"] || (l.mode ? f[l.mode] : ""), disabled: c || l.disabled, hoverLabel: { label: l.hoverLabel || (l.mode ? f[l.mode] : "") }, interactiveStyles: C, onPress: this._handleSecondaryClick, style: b.secondaryControl }, r.createElement(n.Z, { style: b.secondaryBorder }, v)) : null);
+                    return r.createElement(n.Z, { style: k, testID: I }, r.createElement(m.Z, { "aria-label": e || (a ? f[a] : ""), disabled: c, interactiveStyles: C, link: i, onPress: s, style: S }, this._renderAvatar(), r.createElement(d.ZP, { color: u ? "whiteOnColor" : "text", numberOfLines: 1, selectable: !1, style: b.text, weight: "bold" }, g), w), l ? r.createElement(m.Z, { "aria-label": l["aria-label"] || (l.mode ? f[l.mode] : ""), disabled: c || l.disabled, hoverLabel: { label: l.hoverLabel || (l.mode ? f[l.mode] : "") }, interactiveStyles: C, onPress: this._handleSecondaryClick, style: b.secondaryControl }, r.createElement(n.Z, { style: b.secondaryBorder }, v)) : null);
                 }
                 _renderIcon(e = !0, t) {
                     const { selected: o } = this.props,
@@ -397,7 +397,7 @@
             o.d(t, { D: () => r });
             const r = Object.freeze({ Active: "active", Expand: "expand", Remove: "remove" });
         },
-        76388: (e, t, o) => {
+        98440: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 n = o(890601),
@@ -405,11 +405,11 @@
                 i = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, c.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const s = a;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicHandler.3ccc86ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicHandler.437e44aa.js.map

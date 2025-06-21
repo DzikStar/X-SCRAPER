@@ -8,34 +8,29 @@
             const n = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.5"),
-                        a.e("icons.25"),
-                        a.e("icons.22"),
-                        a.e("icons.6"),
-                        a.e("icons.4"),
-                        a.e("icons.9"),
-                        a.e("icons.15"),
-                        a.e("icons.7"),
-                        a.e("icons.3"),
-                        a.e("icons.20"),
+                        a.e("icons.23"),
+                        a.e("icons.0"),
                         a.e("icons.2"),
-                        a.e("icons.27"),
+                        a.e("icons.16"),
+                        a.e("icons.19"),
+                        a.e("icons.10"),
                         a.e("icons.13"),
+                        a.e("icons.24"),
+                        a.e("icons.7"),
+                        a.e("icons.22"),
+                        a.e("icons.27"),
+                        a.e("icons.17"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.0"),
-                        a.e("icons.24"),
-                        a.e("icons.17"),
-                        a.e("icons.12"),
-                        a.e("icons.11"),
-                        a.e("icons.26"),
+                        a.e("icons.21"),
+                        a.e("icons.18"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -56,9 +51,10 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         a.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                        a.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
                         a.e("loader.WideLayout-6107ac1a"),
-                        a.e("loader.WideLayout-2e365fe7"),
                         a.e("loader.WideLayout-9f4db315"),
                     ]).then(a.bind(a, 616753)),
             });
@@ -106,7 +102,7 @@
                 l = a(250781);
             const s =
                 ({ analytics: e, conversationKey: t }) =>
-                ({ analysisEntityId: a, editingMessageId: s, fileAttachments: d, mode: c, onStart: m, returnCitations: u, returnSearchResults: p = !0, features: h = { eagerTweets: !0, serverHistory: !0 }, text: g, trendPromptIdStr: y, imageGenerationCount: b, isReasoning: f, isDeepsearch: w, personalityId: D }) =>
+                ({ analysisEntityId: a, editingMessageId: s, fileAttachments: d, mode: c, onStart: m, returnCitations: u, returnSearchResults: p = !0, features: h = { eagerTweets: !0, serverHistory: !0 }, text: g, trendPromptIdStr: y, imageGenerationCount: b, isReasoning: f, isDeepsearch: D, personalityId: w }) =>
                 async (c, y, { api: M, featureSwitches: I }) => {
                     const v = !n.ZP.isTwitterApp() && I.isTrue("responsive_web_grok_api_enable_grok_host"),
                         k = (0, o.bD)(t),
@@ -123,13 +119,13 @@
                     const U = Z[x];
                     let L = { promptSource: "NATURAL", action: "EDIT" };
                     "IMAGE_EDIT" === U?.promptMetadata?.promptSource ? (L = { ...U.promptMetadata, action: "EDIT" }) : "FOLLOW_UP" === U?.promptMetadata?.promptSource && "IMAGE_GEN" === U?.promptMetadata?.properties?.messageType && (L = { promptSource: "FOLLOW_UP", action: "INPUT", properties: { followUpType: "MODIFY", messageType: "IMAGE_GEN" } });
-                    const S = [...Z.slice(0, x).map((e) => ({ message: e.message, fileAttachments: e.fileAttachments, sender: e.sender, isDeepsearch: e.isDeepsearch, isReasoning: e.isReasoning })), { sender: U.sender, fileAttachments: d, message: g, isDeepsearch: w, isReasoning: f }],
+                    const S = [...Z.slice(0, x).map((e) => ({ message: e.message, fileAttachments: e.fileAttachments, sender: e.sender, isDeepsearch: e.isDeepsearch, isReasoning: e.isReasoning })), { sender: U.sender, fileAttachments: d, message: g, isDeepsearch: D, isReasoning: f }],
                         T = (0, o.en)(y());
                     let z = {};
                     T && T.toolOverrides && (z = T.toolOverrides);
-                    const F = { responses: S, systemPromptName: A, conversationId: E, grokModelOptionId: _, resampleResponseId: U.userChatItemId, returnSearchResults: p, returnCitations: u, requestFeatures: h, ...(a && 1 === S.length ? { analysisEntityId: a } : void 0), promptMetadata: L, imageGenerationCount: b, enableSideBySide: !P && !C, isDeepsearch: w, isReasoning: f, personalityId: D, toolOverrides: z, deepsearchArgs: w ? T?.deepsearchArgs : void 0 };
+                    const F = { responses: S, systemPromptName: A, conversationId: E, grokModelOptionId: _, resampleResponseId: U.userChatItemId, returnSearchResults: p, returnCitations: u, requestFeatures: h, ...(a && 1 === S.length ? { analysisEntityId: a } : void 0), promptMetadata: L, imageGenerationCount: b, enableSideBySide: !P && !C, isDeepsearch: D, isReasoning: f, personalityId: w, toolOverrides: z, deepsearchArgs: D ? T?.deepsearchArgs : void 0 };
                     null != k.selectCurrentResponseMessage(y()) && (await c((0, i.I)({ analytics: e, conversationKey: t }))), g && c(k.commitEditChanges(s, g, d)), (0, r.dd)(e, { conversationLength: S.length, isDeepsearch: F.isDeepsearch || void 0, isReasoning: F.isReasoning || void 0 }), m?.();
-                    const O = I.isTrue("responsive_web_grok_enable_add_response_keepalive") && (w || f),
+                    const O = I.isTrue("responsive_web_grok_enable_add_response_keepalive") && (D || f),
                         j = I.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
                     (0, l.D)({ grokModule: k, requestBody: F, analytics: e, dispatch: c, api: M, eventTag: "rewrite", flags: { enableGrokApiHost: v, enableKeepalive: O, numRetries: j } });
                 };
@@ -186,8 +182,8 @@
                 y = a(47086),
                 b = a(161335),
                 f = a(149170),
-                w = a(837020),
-                D = a(189700),
+                D = a(837020),
+                w = a(189700),
                 M = a(839090),
                 I = a(928831),
                 v = a(45843),
@@ -196,7 +192,7 @@
             const P = ({ status: e, expectedChunks: t = [0.25, 0.5, 0.75, 1], intermediateResults: a = [], url: n, aspectRatio: r, isModerated: l, withActionRow: s, openMediaToEdit: c, onImageSize: m, mediaId: u, mediaUrl: p, allMediaIds: h, allMediaUrls: g }) => {
                     const [y, b] = o.useState(0),
                         f = A({ expectedChunks: t, progress: y }),
-                        w = o.useMemo(
+                        D = o.useMemo(
                             () =>
                                 [...a]
                                     .sort((e, t) => e.progress - t.progress)
@@ -217,7 +213,7 @@
                                     }),
                             [a, y, r],
                         ),
-                        D = a.length > 0 && y > 0,
+                        w = a.length > 0 && y > 0,
                         M = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transitionProperty: "height, mask", transitionDuration: `${f}ms`, transitionTimingFunction: 1 === y ? "ease-in" : "linear", zIndex: 50, mask: y < 1 ? "linear-gradient(\n        to bottom,\n        rgba(0, 0, 0, 1) 0%,\n        rgba(0, 0, 0, 1) calc(100% - 5px),\n        rgba(0, 0, 0, 0) 100%\n      )" : void 0 }), [y, f]),
                         I = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transform: "translate3d(0,0,0)", transitionProperty: "height", transitionDuration: f / 1.5 + "ms", transitionTimingFunction: "linear", filter: "blur(70px) contrast(2)", zIndex: 10 }), [y, f]),
                         [P, R] = o.useState(0);
@@ -232,7 +228,7 @@
                                     (e) => {},
                                 );
                         }, [n, R]),
-                        o.createElement(i.Z, { style: C.container }, "loading" === e ? o.createElement(i.Z, { style: C.logoContainer }, o.createElement(k.x1, { style: C.grokIcon })) : null, "loading" === e || "aborted" === e || D ? o.createElement(o.Fragment, null, o.createElement(i.Z, { style: [C.content, M] }, o.createElement(i.Z, { style: l || "aborted" === e ? C.contentModerated : void 0 }, w)), o.createElement(i.Z, { style: [C.content, I] }, w)) : null, o.createElement(d.Z, { resizeMode: "cover", source: D || l ? void 0 : n, style: [C.finalImage, { aspectRatio: r ?? (P || 4 / 3) }] }), s && "aborted" !== e ? o.createElement(i.Z, { style: [C.actionRow, C.animation] }, o.createElement(E.rO, { allMediaIds: h, allMediaUrls: g, buttonSize: "medium", buttonType: "onMediaText", contentUrl: n, isLoading: "ready" !== e, mediaId: u, mediaUrl: p, setEditMode: c || (() => {}), withStartAlignment: !0 })) : null)
+                        o.createElement(i.Z, { style: C.container }, "loading" === e ? o.createElement(i.Z, { style: C.logoContainer }, o.createElement(k.x1, { style: C.grokIcon })) : null, "loading" === e || "aborted" === e || w ? o.createElement(o.Fragment, null, o.createElement(i.Z, { style: [C.content, M] }, o.createElement(i.Z, { style: l || "aborted" === e ? C.contentModerated : void 0 }, D)), o.createElement(i.Z, { style: [C.content, I] }, D)) : null, o.createElement(d.Z, { resizeMode: "cover", source: w || l ? void 0 : n, style: [C.finalImage, { aspectRatio: r ?? (P || 4 / 3) }] }), s && "aborted" !== e ? o.createElement(i.Z, { style: [C.actionRow, C.animation] }, o.createElement(E.rO, { allMediaIds: h, allMediaUrls: g, buttonSize: "medium", buttonType: "onMediaText", contentUrl: n, isLoading: "ready" !== e, mediaId: u, mediaUrl: p, setEditMode: c || (() => {}), withStartAlignment: !0 })) : null)
                     );
                 },
                 C = c.default.create((e) => ({ animation: { opacity: 1, animationDuration: ".3s", animationTimingFunction: "ease-out", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, actionRow: { position: "absolute", bottom: 0, width: "100%", backdropFilter: "blur(4px) brightness(70%)", zIndex: 300 }, content: { position: "absolute", height: "100%", width: "100%", start: 0, opacity: 1 }, contentModerated: { transitionProperty: "opacity", transitionDuration: "500ms", transitionTimingFunction: "linear", opacity: 0 }, image: { position: "absolute", start: 0, top: 0, width: "100%", zIndex: 100 }, transparent: { opacity: 0 }, finalImage: { position: "relative", zIndex: 200, width: "100%" }, container: { borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray50, transform: "translate3d(0,0,0)", width: "100%", overflow: "hidden", position: "relative" }, logoContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", justifyContent: "center", alignItems: "center", opacity: 0, animationIterationCount: "infinite", animationDuration: "1.5s", animationKeyframes: [{ "0%": { opacity: "0" }, "50%": { opacity: "1" }, "100%": { opacity: "0" } }] }, grokIcon: { color: e.colors.gray200, width: "20%", maxWidth: e.spaces.space64, height: "20%", maxHeight: e.spaces.space64 } })),
@@ -261,27 +257,29 @@
                     [ee, te] = o.useState(!1),
                     ae = O && O.length > 0,
                     [ne, oe] = o.useState(!1),
-                    re = Q ? 60 : 80,
-                    ie = { width: 1.5 * re, height: re },
-                    le = o.useCallback((e) => {
+                    re = "error" === K,
+                    ie = "aborted" === K,
+                    le = Q ? 60 : 80,
+                    se = { width: 1.5 * le, height: le },
+                    de = o.useCallback((e) => {
                         e.stopPropagation(), te(!0);
                     }, []),
-                    se = o.useCallback(() => te(!1), []),
-                    de = !X || !k || (X > 200 && k > 150),
-                    ce = o.useMemo(() => ({ width: X ?? "auto", height: k ?? "auto", outline: "none" }), [X, k]),
-                    me = o.useCallback(
+                    ce = o.useCallback(() => te(!1), []),
+                    me = !X || !k || (X > 200 && k > 150),
+                    ue = o.useMemo(() => ({ width: X ?? "100%", height: k ?? "auto", outline: "none" }), [X, k]),
+                    pe = o.useCallback(
                         (e) => {
                             e.stopPropagation(), e.preventDefault(), G?.();
                         },
                         [G],
                     ),
-                    { isInputFocused: ue } = (0, I.w)();
+                    { isInputFocused: he } = (0, I.w)();
                 if (S.includes(j)) {
                     const l = "ready" === K && ae && q.isHovered && !$;
                     return o.createElement(
                         r.Z,
-                        (0, n.Z)({ disabled: (g && !V) || "aborted" === K }, Y, {
-                            onLongPress: Q ? le : void 0,
+                        (0, n.Z)({ disabled: (g && !V) || ie }, Y, {
+                            onLongPress: Q ? de : void 0,
                             onMouseEnter: () => {
                                 oe(!0);
                             },
@@ -289,11 +287,11 @@
                                 oe(!1);
                             },
                             onPress: N,
-                            style: [h && { justifyContent: "center" }, ce, A ? z.noClick : void 0, J],
+                            style: [h && { justifyContent: "center" }, ue, A || re || ie ? z.noClick : void 0, J],
                         }),
-                        C ? (!V || V.startsWith("blob:") ? o.createElement(i.Z, { style: [z.inputAttachmentPreview, z.inputAttachmentPreviewPlaceholder, { width: X ?? re, height: k ?? re }] }) : o.createElement(d.Z, { resizeMode: "cover", source: H || V, style: [z.inputAttachmentPreview, { width: X ?? re, height: k ?? re }] })) : o.createElement(P, { allMediaIds: e, allMediaUrls: t, aspectRatio: a, intermediateResults: E, isModerated: A, mediaId: T, mediaUrl: F, onImageSize: B, openMediaToEdit: W, resizeMode: "cover", status: K, url: H || V, withActionRow: $ && q.isHovered }),
-                        "error" === K ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(y.default, { color: c.default.theme.colors.gray600, style: z.errorIcon }), de ? o.createElement(m.ZP, { size: "body", style: z.errorMessage }, x) : null) : A || "aborted" === K ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(b.default, { color: c.default.theme.colors.text, style: z.errorIconLarge })) : null,
-                        o.createElement(i.Z, { style: z.imageButtonContainer }, l ? o.createElement(u.ZP, { "aria-label": U, hoverLabel: L, icon: o.createElement(f.default, null), onClick: le, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, ae && ee ? o.createElement(M.Z, { onDismiss: se }, o.createElement(r.Z, { onPress: se }, O)) : null, G && (Q || (!Q && ne)) ? o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(w.default, null), onClick: me, size: "xSmall", style: z.removeBtn, type: "onMediaDominantColorFilled" }) : null),
+                        C ? (!V || V.startsWith("blob:") ? o.createElement(i.Z, { style: [z.inputAttachmentPreview, z.inputAttachmentPreviewPlaceholder, { width: X ?? le, height: k ?? le }] }) : o.createElement(d.Z, { resizeMode: "cover", source: H || V, style: [z.inputAttachmentPreview, { width: X ?? le, height: k ?? le }] })) : o.createElement(P, { allMediaIds: e, allMediaUrls: t, aspectRatio: a, intermediateResults: E, isModerated: A, mediaId: T, mediaUrl: F, onImageSize: B, openMediaToEdit: W, resizeMode: "cover", status: K, url: H || V, withActionRow: $ && q.isHovered }),
+                        re ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(y.default, { color: c.default.theme.colors.gray600, style: z.errorIcon }), me ? o.createElement(m.ZP, { size: "body", style: z.errorMessage }, x) : null) : A || ie ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(b.default, { color: c.default.theme.colors.text, style: z.errorIconLarge })) : null,
+                        o.createElement(i.Z, { style: z.imageButtonContainer }, l ? o.createElement(u.ZP, { "aria-label": U, hoverLabel: L, icon: o.createElement(f.default, null), onClick: de, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, ae && ee ? o.createElement(M.Z, { onDismiss: ce }, o.createElement(r.Z, { onPress: ce }, O)) : null, G && (Q || (!Q && ne)) ? o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(D.default, null), onClick: pe, size: "xSmall", style: z.removeBtn, type: "onMediaDominantColorFilled" }) : null),
                     );
                 }
                 if (C) {
@@ -312,13 +310,13 @@
                             onMouseLeave: () => {
                                 oe(!1);
                             },
-                            style: [z.inputAttachmentPreviewFileContainer, { width: X ?? ie.width, height: k ?? ie.height }, J],
+                            style: [z.inputAttachmentPreviewFileContainer, { width: X ?? se.width, height: k ?? se.height }, J],
                         },
-                        o.createElement(i.Z, { style: z.inputAttachmentPreviewFileContainerContent }, o.createElement(m.ZP, { hoverLabel: { label: v }, numberOfLines: 2, selectable: !1, size: "subtext2" }, v), o.createElement(i.Z, { style: z.inputAttachmentPreviewBottomContainer }, o.createElement(i.Z, { style: z.inputAttachmentPreviewFileIconContainer }, o.createElement(D.default, { style: z.inputAttachmentPreviewFileIcon })), o.createElement(m.ZP, { numberOfLines: 1, size: "subtext3" }, e.toUpperCase()))),
-                        G && (Q || (!Q && ne)) ? o.createElement(o.Fragment, null, o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(w.default, null), onClick: me, size: "xSmall", style: [z.removeBtn, z.inputAttachmentPreviewRemoveBtn], type: "onMediaDominantColorFilled" })) : null,
+                        o.createElement(i.Z, { style: z.inputAttachmentPreviewFileContainerContent }, o.createElement(m.ZP, { hoverLabel: { label: v }, numberOfLines: 2, selectable: !1, size: "subtext2" }, v), o.createElement(i.Z, { style: z.inputAttachmentPreviewBottomContainer }, o.createElement(i.Z, { style: z.inputAttachmentPreviewFileIconContainer }, o.createElement(w.default, { style: z.inputAttachmentPreviewFileIcon })), o.createElement(m.ZP, { numberOfLines: 1, size: "subtext3" }, e.toUpperCase()))),
+                        G && (Q || (!Q && ne)) ? o.createElement(o.Fragment, null, o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(D.default, null), onClick: pe, size: "xSmall", style: [z.removeBtn, z.inputAttachmentPreviewRemoveBtn], type: "onMediaDominantColorFilled" })) : null,
                     );
                 }
-                return o.createElement(i.Z, { style: [z.documentContainer, ue ? z.documentContainerActive : null, J] }, o.createElement(i.Z, { style: z.iconContainer }, o.createElement(D.default, { style: z.documentIcon })), o.createElement(i.Z, { style: z.documentNameContainer }, o.createElement(m.ZP, { hoverLabel: { label: v }, numberOfLines: 1, selectable: !1, size: "subtext2", weight: "medium" }, v), o.createElement(p.Z, { size: "space4" }), o.createElement(m.ZP, { color: "gray700", selectable: !1, size: "subtext3", weight: "normal" }, Z)), G && (Q || (!Q && ne)) ? o.createElement(o.Fragment, null, o.createElement(p.Z, { size: "space4" }), o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(w.default, null), onClick: me, size: "xSmall", style: z.removeBtn, type: "primaryText" })) : null);
+                return o.createElement(i.Z, { style: [z.documentContainer, he ? z.documentContainerActive : null, J] }, o.createElement(i.Z, { style: z.iconContainer }, o.createElement(w.default, { style: z.documentIcon })), o.createElement(i.Z, { style: z.documentNameContainer }, o.createElement(m.ZP, { hoverLabel: { label: v }, numberOfLines: 1, selectable: !1, size: "subtext2", weight: "medium" }, v), o.createElement(p.Z, { size: "space4" }), o.createElement(m.ZP, { color: "gray700", selectable: !1, size: "subtext3", weight: "normal" }, Z)), G && (Q || (!Q && ne)) ? o.createElement(o.Fragment, null, o.createElement(p.Z, { size: "space4" }), o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(D.default, null), onClick: pe, size: "xSmall", style: z.removeBtn, type: "primaryText" })) : null);
             }
             const z = c.default.create((e) => ({
                 documentContainer: { flexDirection: "row", alignItems: "center", width: "100%", maxWidth: "100%", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12, gap: e.spaces.space8, backgroundColor: "light" === e.paletteName ? e.colors.gray50 : e.colors.gray100, borderRadius: e.spaces.space12, flexGrow: 1, flexShrink: 0 },
@@ -400,8 +398,8 @@
                 y = a(725516),
                 b = a(125363),
                 f = a(270172),
-                w = a(601576),
-                D = a(654917),
+                D = a(601576),
+                w = a(654917),
                 M = a(246277);
             const I = l().j826e722,
                 v = l().a9325f10,
@@ -435,7 +433,7 @@
                                 Y(!1);
                             });
                 }, [R.url, R.isPublic, Y, oe, R.mimeType, J]);
-                const { conversationKey: ie } = (0, D.ZP)(),
+                const { conversationKey: ie } = (0, w.ZP)(),
                     le = n.useCallback(
                         ({ editMode: a } = {}) => {
                             let n = R.mediaId;
@@ -488,10 +486,10 @@
                                                           t = URL.createObjectURL(e);
                                                       (0, u.VJ)(t)
                                                           .then(() => {
-                                                              J((0, w.fz)({ text: k }));
+                                                              J((0, D.fz)({ text: k }));
                                                           })
                                                           .catch((e) => {
-                                                              J((0, w.fz)({ text: E }));
+                                                              J((0, D.fz)({ text: E }));
                                                           });
                                                   }
                                               })();
@@ -539,8 +537,8 @@
                 y = a(276259),
                 b = a(323265),
                 f = a(952793),
-                w = a(128225),
-                D = a(725405),
+                D = a(128225),
+                w = a(725405),
                 M = a(125363),
                 I = a(270172),
                 v = a(327597),
@@ -582,7 +580,7 @@
             }
             function B({ allMediaIds: e, allMediaUrls: t, buttonSize: a = "xLarge", buttonType: s = "alwaysBlack", contentUrl: d, isLoading: c, mediaId: m, mediaUrl: b, setEditMode: I, withStartAlignment: v }) {
                 const E = (0, M.I0)(),
-                    P = (0, D.Z)(),
+                    P = (0, w.Z)(),
                     A = (0, o.useHistory)(),
                     { isGrokDrawer: R } = (0, C.ZP)(),
                     O = (0, f.hC)("responsive_web_grok_image_edit");
@@ -601,7 +599,7 @@
                                 onClick: (a) => {
                                     (async () => {
                                         if ((P.scribe({ page: _, element: "save_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: b, allMediaIds: e, allMediaUrls: t }) } }), d)) {
-                                            const e = await (0, w.f)(d, !0, !0),
+                                            const e = await (0, D.f)(d, !0, !0),
                                                 t = URL.createObjectURL(e);
                                             (0, y.uv)(t, "image.jpg");
                                         }
@@ -619,7 +617,7 @@
                                 onClick: (a) => {
                                     (async () => {
                                         if ((P.scribe({ page: _, element: "copy_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: b, allMediaIds: e, allMediaUrls: t }) } }), d)) {
-                                            const e = await (0, w.f)(d, !0, !0),
+                                            const e = await (0, D.f)(d, !0, !0),
                                                 t = URL.createObjectURL(e);
                                             (0, y.VJ)(t)
                                                 .then(() => {
@@ -643,7 +641,7 @@
                                 onClick: (a) => {
                                     (async () => {
                                         if ((P.scribe({ page: _, element: "post_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: b, allMediaIds: e, allMediaUrls: t }) } }), !d)) return;
-                                        const a = await (0, w.f)(d, !0, !0),
+                                        const a = await (0, D.f)(d, !0, !0),
                                             n = URL.createObjectURL(a);
                                         A.push({ pathname: "/compose/post", state: { externalMedia: [n], positionCursorAtBeginning: !0 } });
                                     })();
@@ -678,7 +676,7 @@
             function G({ contentUrl: e, conversationKey: t, grokFile: a, onSend: o, setEditMode: i }) {
                 const l = (0, A.k)(),
                     d = (0, M.I0)(),
-                    c = (0, D.Z)(),
+                    c = (0, w.Z)(),
                     { isImageEditEnabled: m, selectImageEditFilterKey: u } = (0, P.w)(),
                     p = (0, R.Z)("image_edit"),
                     h = n.useRef(!1),
@@ -690,7 +688,7 @@
                                     const r = [];
                                     if (a && a.mediaId) r.push(a);
                                     else {
-                                        const t = await (0, w.f)(e, !0, !0),
+                                        const t = await (0, D.f)(e, !0, !0),
                                             a = new AbortController(),
                                             n = await l(((i = t), (s = "edit_grok.jpeg"), new File([i], s, { type: i.type })), a);
                                         r.push(n);
@@ -708,4 +706,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb.4237d75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb.92935e8a.js.map

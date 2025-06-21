@@ -1290,6 +1290,9 @@
                 t("b0d1e205", function (e) {
                     return 'Searching for **"' + e.query + '"**';
                 }),
+                t("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 t("bf970edd", function (e) {
                     return 'Searching 𝕏 for "' + e.query + '"';
                 }),
@@ -1922,9 +1925,9 @@
                 t("a8f09fb8", "Delete block"),
                 t("i89195ea", "Divider"),
                 t("da8ac57c", "Edit Caption"),
-                t("a8fdd09c", "Publish Article"),
-                t("d8047cc8", "Publicar");
-            t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("a8fdd09c", "Publish Article");
+            t("d8047cc8", "Publicar"),
+                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
@@ -2978,9 +2981,9 @@
                     return e.entity + " was removed from your Bookmarks";
                 }),
                 t("d6d9aab6", "Engadir marcador"),
-                t("bb89cf46", "Eliminar marcador"),
-                t("a739d4ba", "Engadir ao cartafol de marcadores");
-            t("d5270434", "Exit"),
+                t("bb89cf46", "Eliminar marcador");
+            t("a739d4ba", "Engadir ao cartafol de marcadores"),
+                t("d5270434", "Exit"),
                 t("ac85c6b2", "Produciuse un erro ao cargar esta imaxe"),
                 t("b327c12a", "Imaxe"),
                 t("ic76bdf0", "Recreate this with Grok"),
@@ -3904,9 +3907,9 @@
                 t("cd133486", "Invite"),
                 t("f2333850", "Share with people outside of X"),
                 t("cddb8097", "Learn more"),
-                t("f77997b0", "Co-host"),
-                t("i48f4ed8", "Altofalante");
-            t("a77c8e02", "Oínte"),
+                t("f77997b0", "Co-host");
+            t("i48f4ed8", "Altofalante"),
+                t("a77c8e02", "Oínte"),
                 t("bdfa93eb", function (e) {
                     return "Compartido por " + e.name;
                 }),
@@ -4258,12 +4261,10 @@
                 t("d66bf142", "Thu"),
                 t("dc17968a", "Fri"),
                 t("j310a2d6", "Sat"),
-                t("afa2a58e", "See all posts"),
-                t("fc83e7e2", "See all users"),
-                t("df601d92", "Relevant Users"),
                 t("db6c20cf", function (e) {
                     return "Show all (" + e.count + ")";
                 }),
+                t("df601d92", "Relevant Users"),
                 t("d7cb5408", "Relevant Web Pages"),
                 t("ca93f2ee", "This message has been deleted."),
                 t("b8c06820", "Copy text"),
@@ -4929,9 +4930,9 @@
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access");
-            t("gf898b70", "Advanced Search"),
-                t("d2a43a7a", 'contains both "ai" and "startup"'),
+                t("ed99baea", "Early Beta Access"),
+                t("gf898b70", "Advanced Search");
+            t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5885,9 +5886,9 @@
                 t("e41c9b4f", function (e) {
                     return "Gardouse en " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Eliminar cartafol");
-            t("f4ea967a", "Eliminouse o cartafol"),
-                t("b670aa62", "Nome do cartafol"),
+                t("h18f86a4", "Eliminar cartafol"),
+                t("f4ea967a", "Eliminouse o cartafol");
+            t("b670aa62", "Nome do cartafol"),
                 t("aece5462", "O nome do cartafol actualizouse correctamente"),
                 t("e3299b94", "Houbo algún problema. Tenta actualizar o cartafol de novo dentro dun minuto."),
                 t("c09ea714", "Houbo algún problema. Tenta eliminar o cartafol de novo dentro dun minuto."),
@@ -6891,9 +6892,9 @@
                 t("c924ad84", "Keep videos playing"),
                 t("de750a3c", "Enjoy them even when your phone is locked"),
                 t("he5e87c4", "Boost your replies"),
-                t("g64a60ba", "Get a small prioritization when you reply to posts");
-            t("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
-                t("fdd77a34", "Create longer posts"),
+                t("g64a60ba", "Get a small prioritization when you reply to posts"),
+                t("a7ee832a", "Fix typos and mistakes, up to 60 minutes");
+            t("fdd77a34", "Create longer posts"),
                 t("j6d26a7a", "Write as much as you’d like to share"),
                 t("c4fd68da", "Customize your experience"),
                 t("c0195168", "Change your app icon and navigation options"),
@@ -7871,7 +7872,10 @@
                 t("b719e224", "Non hai resultados"),
                 t("c9938100", "Resultados da procura"),
                 t("d1a35ec6", "Add accounts"),
-                t("b437adda", "Upgrade to paid");
+                t("b437adda", "Upgrade to paid"),
+                t("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                });
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7910,10 +7914,7 @@
                     s(e, a)
                 );
             }
-            t("f1f6c88b", function (e) {
-                return "Accounts (" + e.count + ")";
-            }),
-                t("b02156b8", "Invitations"),
+            t("b02156b8", "Invitations"),
                 t("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
                 }),
@@ -8913,9 +8914,9 @@
                 t("a7bf9962", "Download video"),
                 t("ccc97152", "Playback speed"),
                 t("h531ade0", "Video quality"),
-                t("e8b5757c", "×0,25");
-            t("e7e954de", "0.5x"),
-                t("g07ffe66", "×0,75"),
+                t("e8b5757c", "×0,25"),
+                t("e7e954de", "0.5x");
+            t("g07ffe66", "×0,75"),
                 t("d8bede9e", "×1"),
                 t("j41845c8", "×1,25"),
                 t("e9eeed9e", "1.5x"),
@@ -13338,4 +13339,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.d6ed99ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.ac74caaa.js.map

@@ -75,7 +75,7 @@
             });
         },
         795036: (e, t, n) => {
-            n.d(t, { Z: () => Je });
+            n.d(t, { Z: () => Xe });
             var r = n(202784),
                 a = n(614983),
                 s = n.n(a),
@@ -92,34 +92,33 @@
                 E = n(956272),
                 I = n(827515),
                 _ = n(666536),
-                C = n(33104),
-                b = n(290402),
-                f = n(822228),
-                S = n(965245),
-                v = n(507651),
-                y = n(443781),
-                Z = n(144256),
-                P = n(500002),
-                R = n(275365),
-                T = n(147143),
-                M = n(622333),
-                x = n(11582),
-                F = n(511495),
-                N = n(340130),
-                k = n(886559),
-                D = n(257444),
-                w = n(420412),
-                $ = n(430895),
-                A = n(125966),
-                q = n(25001),
-                H = n(246851),
-                L = n(87063),
-                O = n(71620),
-                Q = n(668214);
-            const z = (e, { module: t }) => t.selectItems(e),
-                B = (e, { module: t }) => t.selectFetchStatus(e),
-                G = (0, Q.Z)()
-                    .propsFromState(() => ({ fetchStatus: B, sliceItems: z }))
+                C = n(290402),
+                b = n(822228),
+                f = n(965245),
+                S = n(507651),
+                v = n(443781),
+                y = n(144256),
+                Z = n(500002),
+                P = n(275365),
+                R = n(147143),
+                T = n(622333),
+                M = n(11582),
+                x = n(511495),
+                F = n(340130),
+                N = n(886559),
+                k = n(257444),
+                D = n(420412),
+                w = n(430895),
+                $ = n(125966),
+                A = n(25001),
+                q = n(246851),
+                H = n(87063),
+                L = n(71620),
+                O = n(668214);
+            const Q = (e, { module: t }) => t.selectItems(e),
+                z = (e, { module: t }) => t.selectFetchStatus(e),
+                B = (0, O.Z)()
+                    .propsFromState(() => ({ fetchStatus: z, sliceItems: Q }))
                     .adjustStateProps(({ fetchStatus: e, sliceItems: t }) => {
                         const n = ((e) => e.find((e) => e.groupData)?.groupData?.result || [])(t),
                             r = ((e) => e.find((e) => e.peopleData)?.peopleData?.result || [])(t),
@@ -130,20 +129,20 @@
                             l = ((e) => e.find((e) => e.peopleData)?.peopleData?.highlightingTokens)(t);
                         return { entryIds: s, fetchStatus: e, groupConversationIds: n, groupHighlightingTokens: o, messageConversationIds: a, messageHighlightingTokens: c, peopleHighlightingTokens: l, peopleSearchConversationIds: r, sliceItems: t };
                     })
-                    .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, O.zr)("DM_SEARCH_ALL_CONTEXT"), fetchSearchIfNeeded: e.fetchIfNeeded })),
-                U = p().ffd9cfe6;
-            function V(e) {
+                    .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, L.zr)("DM_SEARCH_ALL_CONTEXT"), fetchSearchIfNeeded: e.fetchIfNeeded })),
+                G = p().ffd9cfe6;
+            function U(e) {
                 const { location: t, tabLabel: n } = e;
-                return r.createElement(o.Z, { style: W.footer }, r.createElement(l.ZP, { link: { pathname: t.pathname, state: { tab: n } } }, U));
+                return r.createElement(o.Z, { style: V.footer }, r.createElement(l.ZP, { link: { pathname: t.pathname, state: { tab: n } } }, G));
             }
-            const W = m.default.create((e) => ({ footer: { backgroundColor: e.colors.cellBackground, paddingStart: e.spaces.space16, paddingVertical: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderTopColor: e.colors.borderColor } })),
-                j = p().c94ac69e,
-                K = p().a2f81050,
-                X = p().g2fd3206;
-            const J = G(function (e) {
-                    const t = r.useContext(y.rC),
+            const V = m.default.create((e) => ({ footer: { backgroundColor: e.colors.cellBackground, paddingStart: e.spaces.space16, paddingVertical: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderTopColor: e.colors.borderColor } })),
+                W = p().c94ac69e,
+                j = p().a2f81050,
+                K = p().g2fd3206;
+            const X = B(function (e) {
+                    const t = r.useContext(v.rC),
                         { fetchStatus: n, loadingLabel: a, module: s } = e,
-                        o = (0, H.Z)(s),
+                        o = (0, q.Z)(s),
                         c = t.featureSwitches.getNumberValue("dm_inbox_search_groups_bucket_size"),
                         l = t.featureSwitches.getNumberValue("dm_inbox_search_messages_bucket_size"),
                         i = t.featureSwitches.getNumberValue("dm_inbox_search_people_bucket_size"),
@@ -152,14 +151,14 @@
                             n().catch(t());
                         }, [e]);
                     r.useEffect(() => {
-                        o !== s && n !== L.Z.FAILED && h();
+                        o !== s && n !== H.Z.FAILED && h();
                     }, [n, h, s, o]);
-                    const d = ({ headerText: e, icon: t }) => r.createElement(x.ZP, { headerText: e, icon: t }),
+                    const d = ({ headerText: e, icon: t }) => r.createElement(M.ZP, { headerText: e, icon: t }),
                         m = () => {
                             const { entryIds: t, messageConversationIds: n, messageHighlightingTokens: a, pinConversation: s, renderInboxItem: o, unpinConversation: c } = e;
-                            return r.createElement(r.Fragment, null, d({ icon: A.default, headerText: K }), t.map((e, r) => (e ? ((e) => o({ conversationIds: n, isMessageItem: !0, messageIds: t, pinConversation: s, unpinConversation: c, highlightingTokens: a })(e))(e) : null)).slice(0, l));
+                            return r.createElement(r.Fragment, null, d({ icon: $.default, headerText: j }), t.map((e, r) => (e ? ((e) => o({ conversationIds: n, isMessageItem: !0, messageIds: t, pinConversation: s, unpinConversation: c, highlightingTokens: a })(e))(e) : null)).slice(0, l));
                         };
-                    return r.createElement(b.Z, {
+                    return r.createElement(C.Z, {
                         "aria-label": a,
                         fetchStatus: n,
                         onRequestRetry: h,
@@ -176,65 +175,65 @@
                                       s.length
                                           ? (() => {
                                                 const { peopleHighlightingTokens: t, peopleSearchConversationIds: n, pinConversation: a, renderInboxItem: s, unpinConversation: o } = e;
-                                                return r.createElement(r.Fragment, null, d({ icon: q.default, headerText: X }), n.map((e, r) => (e ? s({ conversationIds: n, pinConversation: a, unpinConversation: o, highlightingTokens: t })(e) : null)).slice(0, i));
+                                                return r.createElement(r.Fragment, null, d({ icon: A.default, headerText: K }), n.map((e, r) => (e ? s({ conversationIds: n, pinConversation: a, unpinConversation: o, highlightingTokens: t })(e) : null)).slice(0, i));
                                             })()
                                           : null,
-                                      h && !g ? r.createElement(w.Z, null) : null,
-                                      g ? r.createElement(V, { location: n, tabLabel: X }) : null,
+                                      h && !g ? r.createElement(D.Z, null) : null,
+                                      g ? r.createElement(U, { location: n, tabLabel: K }) : null,
                                       t.length
                                           ? (() => {
                                                 const { groupConversationIds: t, groupHighlightingTokens: n, pinConversation: a, renderInboxItem: s, unpinConversation: o } = e;
-                                                return r.createElement(r.Fragment, null, d({ icon: $.default, headerText: j }), t.map((e, r) => (e ? s({ conversationIds: t, pinConversation: a, unpinConversation: o, highlightingTokens: n })(e) : null)).slice(0, c));
+                                                return r.createElement(r.Fragment, null, d({ icon: w.default, headerText: W }), t.map((e, r) => (e ? s({ conversationIds: t, pinConversation: a, unpinConversation: o, highlightingTokens: n })(e) : null)).slice(0, c));
                                             })()
                                           : null,
-                                      u ? r.createElement(V, { location: n, tabLabel: j }) : null,
+                                      u ? r.createElement(U, { location: n, tabLabel: W }) : null,
                                       a.length ? m() : null,
-                                      p ? r.createElement(V, { location: n, tabLabel: K }) : null,
+                                      p ? r.createElement(U, { location: n, tabLabel: j }) : null,
                                   )
                                 : o();
                         },
                     });
                 }),
-                Y = J;
-            var ee = n(24949),
-                te = n(599138);
-            const ne = (e, t) => t.query,
-                re = (0, Q.Z)().propsFromState(() => ({ sliceModule: (0, ee.P1)(ne, (e) => (e ? (0, te.Z)(e) : void 0)) }))((e) => {
+                J = X;
+            var Y = n(24949),
+                ee = n(599138);
+            const te = (e, t) => t.query,
+                ne = (0, O.Z)().propsFromState(() => ({ sliceModule: (0, Y.P1)(te, (e) => (e ? (0, ee.Z)(e) : void 0)) }))((e) => {
                     const { loadingLabel: t, location: n, pinConversation: a, query: s, renderEmptyState: o, renderInboxItem: c, sliceModule: l, unpinConversation: i } = e;
-                    return l ? r.createElement(Y, { loadingLabel: t, location: n, module: l, pinConversation: a, query: s, renderEmptyState: o, renderInboxItem: c, unpinConversation: i }) : o();
+                    return l ? r.createElement(J, { loadingLabel: t, location: n, module: l, pinConversation: a, query: s, renderEmptyState: o, renderInboxItem: c, unpinConversation: i }) : o();
                 }),
-                ae = re;
-            var se = n(296196),
-                oe = n(312771);
-            const ce = se.selectRecentSearches,
-                le = (e, t) => (t.query ? se.selectSearchConversations(e, t.query) : []),
-                ie = (e, t) => (t.query ? se.selectSearchFetchStatus(e, t.query) : oe.ZP.LOADED),
-                he = (e, t) => t.conversationIds || [],
-                de = (e, t) => (e?.length ? t.filter((t) => e.indexOf(t) > -1) : e),
-                me = (0, Q.Z)()
-                    .propsFromState(() => ({ conversationIds: he, recentSearches: ce, searchFetchStatus: ie, searchConversationIds: le }))
-                    .adjustStateProps(({ conversationIds: e, recentSearches: t, searchConversationIds: n, searchFetchStatus: r }) => ({ conversationIds: e, recentSearches: t, searchFetchStatus: r, searchConversationIds: de(n, e) }))
-                    .propsFromActions(() => ({ addRecentSearch: se.addRecentSearches, createLocalApiErrorHandler: (0, O.zr)("DIRECT_MESSAGES_SEARCH"), search: se.searchConversations, clearRecentSearch: se.clearRecentSearch, clearRecentSearches: se.clearRecentSearches }));
-            var ue = n(618012),
-                pe = n(705414),
-                ge = n(506899),
-                Ee = (n(585488), n(908478)),
-                Ie = n(771613),
-                _e = n(736063),
-                Ce = n(125363),
-                be = n(674420),
-                fe = n(127218);
-            const Se = pe.Z,
-                ve = ue.Z,
-                ye = "DM_CONVERSATION_SEARCH",
-                Ze = { context: ye },
-                Pe = (e) => e,
-                Re = (e) => {
+                re = ne;
+            var ae = n(296196),
+                se = n(312771);
+            const oe = ae.selectRecentSearches,
+                ce = (e, t) => (t.query ? ae.selectSearchConversations(e, t.query) : []),
+                le = (e, t) => (t.query ? ae.selectSearchFetchStatus(e, t.query) : se.ZP.LOADED),
+                ie = (e, t) => t.conversationIds || [],
+                he = (e, t) => (e?.length ? t.filter((t) => e.indexOf(t) > -1) : e),
+                de = (0, O.Z)()
+                    .propsFromState(() => ({ conversationIds: ie, recentSearches: oe, searchFetchStatus: le, searchConversationIds: ce }))
+                    .adjustStateProps(({ conversationIds: e, recentSearches: t, searchConversationIds: n, searchFetchStatus: r }) => ({ conversationIds: e, recentSearches: t, searchFetchStatus: r, searchConversationIds: he(n, e) }))
+                    .propsFromActions(() => ({ addRecentSearch: ae.addRecentSearches, createLocalApiErrorHandler: (0, L.zr)("DIRECT_MESSAGES_SEARCH"), search: ae.searchConversations, clearRecentSearch: ae.clearRecentSearch, clearRecentSearches: ae.clearRecentSearches }));
+            var me = n(618012),
+                ue = n(705414),
+                pe = n(506899),
+                ge = (n(585488), n(908478)),
+                Ee = n(771613),
+                Ie = n(736063),
+                _e = n(125363),
+                Ce = n(674420),
+                be = n(127218);
+            const fe = ue.Z,
+                Se = me.Z,
+                ve = "DM_CONVERSATION_SEARCH",
+                ye = { context: ve },
+                Ze = (e) => e,
+                Pe = (e) => {
                     const { footer: t, noItemsRenderer: n, onScrollEnd: a, pinConversation: s, renderInboxItem: o, searchTerm: c, tabType: l, unpinConversation: i } = e,
-                        h = (0, Ce.I0)(),
+                        h = (0, _e.I0)(),
                         d = !0,
-                        m = l === N.TG.GROUPS ? Se : ve,
-                        { data: u, fetchNext: p, hasNext: g } = (0, fe.C)(m, { query: c, withConversationQueryHighlights: d });
+                        m = l === F.TG.GROUPS ? fe : Se,
+                        { data: u, fetchNext: p, hasNext: g } = (0, be.C)(m, { query: c, withConversationQueryHighlights: d });
                     let E;
                     u?.dm_group_convo_slice_result ? (E = u?.dm_group_convo_slice_result?.items) : u?.dm_people_convo_slice_result && (E = u?.dm_people_convo_slice_result?.items);
                     const {
@@ -244,29 +243,29 @@
                         } = r.useMemo(() => {
                             const e = E?.map((e) => e?.dm_convo_search) || {},
                                 t = E?.map((e) => e?.highlighting?.query_tokens),
-                                n = (0, ge.Fv)(e, [Ie.ZP]);
+                                n = (0, pe.Fv)(e, [Ee.ZP]);
                             return { normalizedConversations: n, entities: { ...n?.entities }, highlightingTokens: t };
                         }, [E, d]),
-                        b = (0, H.Z)(u);
+                        b = (0, q.Z)(u);
                     return (
                         r.useEffect(() => {
-                            (0, Ee.Z)(u, b) || h((0, be.f)(I, !0));
+                            (0, ge.Z)(u, b) || h((0, Ce.f)(I, !0));
                         }, [I, u, b, h]),
-                        r.createElement(S.Z, { cacheKey: ye, footer: g ? null : t, identityFunction: Pe, items: C?.result, noItemsRenderer: n, onNearEnd: p, onScrollEnd: a, renderer: o({ conversationIds: C?.result, isMessageItem: !1, pinConversation: s, unpinConversation: i, highlightingTokens: _ }), withoutHeadroom: !0 })
+                        r.createElement(f.Z, { cacheKey: ve, footer: g ? null : t, identityFunction: Ze, items: C?.result, noItemsRenderer: n, onNearEnd: p, onScrollEnd: a, renderer: o({ conversationIds: C?.result, isMessageItem: !1, pinConversation: s, unpinConversation: i, highlightingTokens: _ }), withoutHeadroom: !0 })
                     );
                 };
-            function Te(e) {
-                return r.createElement(_e.H, { errorConfig: Ze }, r.createElement(Re, e));
+            function Re(e) {
+                return r.createElement(Ie.H, { errorConfig: ye }, r.createElement(Pe, e));
             }
-            const Me = n(463450).Z,
-                xe = "DM_MESSAGE_SEARCH",
-                Fe = { context: xe },
-                Ne = (e) => e,
-                ke = (e) => {
+            const Te = n(463450).Z,
+                Me = "DM_MESSAGE_SEARCH",
+                xe = { context: Me },
+                Fe = (e) => e,
+                Ne = (e) => {
                     const { footer: t, noItemsRenderer: n, onScrollEnd: a, pinConversation: s, renderInboxItem: o, searchTerm: c, unpinConversation: l } = e,
-                        i = (0, Ce.I0)(),
+                        i = (0, _e.I0)(),
                         h = !0,
-                        { data: d, fetchNext: m, hasNext: u } = (0, fe.C)(Me, { query: c, withAttachments: !0, withMessageQueryHighlights: h }),
+                        { data: d, fetchNext: m, hasNext: u } = (0, be.C)(Te, { query: c, withAttachments: !0, withMessageQueryHighlights: h }),
                         {
                             entities: p,
                             highlightingTokens: g,
@@ -276,37 +275,37 @@
                             const e = d?.dm_message_slice_result?.items?.map((e) => e?.dm_event?.legacy?.conversation),
                                 t = d?.dm_message_slice_result?.items,
                                 n = t?.map((e) => e?.highlighting?.query_tokens),
-                                r = (0, ge.Fv)(e, [Ie.ZP]),
-                                a = (0, ge.Fv)(t, [Ie.JJ]);
+                                r = (0, pe.Fv)(e, [Ee.ZP]),
+                                a = (0, pe.Fv)(t, [Ee.JJ]);
                             return { normalizedConversations: r, normalizedMessages: a, entities: { ...r?.entities, ...a?.entities }, highlightingTokens: n };
                         }, [d?.dm_message_slice_result?.items, h]),
-                        _ = (0, H.Z)(d);
+                        _ = (0, q.Z)(d);
                     return (
                         r.useEffect(() => {
-                            (0, Ee.Z)(d, _) || i((0, be.f)(p, !0));
+                            (0, ge.Z)(d, _) || i((0, Ce.f)(p, !0));
                         }, [p, d, _, i]),
-                        r.createElement(S.Z, { cacheKey: xe, footer: u ? null : t, identityFunction: Ne, items: I?.result, noItemsRenderer: n, onNearEnd: m, onScrollEnd: a, renderer: o({ conversationIds: E?.result, isMessageItem: !0, messageIds: I?.result, pinConversation: s, unpinConversation: l, highlightingTokens: g }), withoutHeadroom: !0 })
+                        r.createElement(f.Z, { cacheKey: Me, footer: u ? null : t, identityFunction: Fe, items: I?.result, noItemsRenderer: n, onNearEnd: m, onScrollEnd: a, renderer: o({ conversationIds: E?.result, isMessageItem: !0, messageIds: I?.result, pinConversation: s, unpinConversation: l, highlightingTokens: g }), withoutHeadroom: !0 })
                     );
                 };
-            function De(e) {
-                return r.createElement(_e.H, { errorConfig: Fe }, r.createElement(ke, e));
+            function ke(e) {
+                return r.createElement(Ie.H, { errorConfig: xe }, r.createElement(Ne, e));
             }
-            const we = (e) => e,
-                $e = p().b08821f4,
-                Ae = p().a66ac766,
-                qe = p().a846382a,
-                He = p().b9dae4f4,
-                Le = p().e7fb2028,
-                Oe = p().ae111c99,
-                Qe = p().e8581cce,
-                ze = p().f08940ac,
-                Be = p().i5d7593a,
-                Ge = p().f8321d82,
-                Ue = p().c94ac69e,
-                Ve = p().a2f81050,
-                We = p().g2fd3206,
-                je = p().fb3c8e74;
-            class Ke extends r.Component {
+            const De = (e) => e,
+                we = p().b08821f4,
+                $e = p().a66ac766,
+                Ae = p().a846382a,
+                qe = p().b9dae4f4,
+                He = p().e7fb2028,
+                Le = p().ae111c99,
+                Oe = p().e8581cce,
+                Qe = p().f08940ac,
+                ze = p().i5d7593a,
+                Be = p().f8321d82,
+                Ge = p().c94ac69e,
+                Ue = p().a2f81050,
+                Ve = p().g2fd3206,
+                We = p().fb3c8e74;
+            class je extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { debouncedQuery: "", isLoadingMore: !1, isRefreshing: !1 }),
@@ -316,13 +315,13 @@
                         (this._handleConversationClick = (e, t, n, r) => {
                             const { analytics: a } = this.props,
                                 s = n?.participants.length || 0,
-                                o = n?.type === R.eD.GROUP;
-                            a.scribe({ element: "thread", action: "click", data: { event_value: this.props.query.length, conversation_id: t, conversation_participant_count: s, conversation_type: o ? N.NK.GROUP : N.NK.ONE_TO_ONE, position: r } });
+                                o = n?.type === P.eD.GROUP;
+                            a.scribe({ element: "thread", action: "click", data: { event_value: this.props.query.length, conversation_id: t, conversation_participant_count: s, conversation_type: o ? F.NK.GROUP : F.NK.ONE_TO_ONE, position: r } });
                         }),
                         (this._renderEmptyDMSearchInbox = () => {
                             const { analytics: e, query: t } = this.props,
                                 { debouncedQuery: n } = this.state;
-                            return n && t ? (e.scribe({ component: "search", element: "results", action: "empty" }), r.createElement(c.Z, { buttonLink: "/messages/compose", buttonText: ze, header: Oe({ query: n }), message: Qe, onButtonPress: this._handleComposeButtonPress })) : r.createElement(o.Z, { style: Xe.emptyState }, r.createElement(l.ZP, { align: "center", color: "gray700" }, Be));
+                            return n && t ? (e.scribe({ component: "search", element: "results", action: "empty" }), r.createElement(c.Z, { buttonLink: "/messages/compose", buttonText: Qe, header: Le({ query: n }), message: Oe, onButtonPress: this._handleComposeButtonPress })) : r.createElement(o.Z, { style: Ke.emptyState }, r.createElement(l.ZP, { align: "center", color: "gray700" }, ze));
                         }),
                         (this._renderRecentSearches = () => {
                             const { analytics: e, query: t, recentSearches: n } = this.props;
@@ -330,8 +329,8 @@
                                 ? r.createElement(
                                       r.Fragment,
                                       null,
-                                      r.createElement(x.ZP, { analytics: e, clearRecentSearches: this._clearRecentSearches, headerText: je, withClearButton: !0 }),
-                                      n.map((e) => r.createElement(F.Z, { clearRecentSearch: (t) => this._handleClearRecentSearch(t, e), handleRecentSearchClick: () => this._handleRecentSearchClick(e), key: e, recentSearch: e })),
+                                      r.createElement(M.ZP, { analytics: e, clearRecentSearches: this._clearRecentSearches, headerText: We, withClearButton: !0 }),
+                                      n.map((e) => r.createElement(x.Z, { clearRecentSearch: (t) => this._handleClearRecentSearch(t, e), handleRecentSearchClick: () => this._handleRecentSearchClick(e), key: e, recentSearch: e })),
                                   )
                                 : this._renderEmptyDMSearchInbox();
                         }),
@@ -342,27 +341,27 @@
                         (this._renderAllDMSearchResults = () => {
                             const { location: e, pinConversation: t, unpinConversation: n } = this.props,
                                 { debouncedQuery: a } = this.state;
-                            return r.createElement(ae, { loadingLabel: Ae, location: e, pinConversation: t, query: a, renderEmptyState: this._renderEmptyDMSearchInbox, renderInboxItem: this._renderSearchInboxItem, unpinConversation: n });
+                            return r.createElement(re, { loadingLabel: $e, location: e, pinConversation: t, query: a, renderEmptyState: this._renderEmptyDMSearchInbox, renderInboxItem: this._renderSearchInboxItem, unpinConversation: n });
                         }),
                         (this._renderConversationsTab = (e) => {
                             const { pinConversation: t, unpinConversation: n } = this.props,
                                 { debouncedQuery: a } = this.state;
-                            return r.createElement(Te, { footer: this._renderFooter(), noItemsRenderer: this._renderEmptyDMSearchInbox, onScrollEnd: this._handleScrollEnd, pinConversation: t, renderInboxItem: this._renderSearchInboxItem, searchTerm: a, tabType: e ? N.TG.GROUPS : N.TG.PEOPLE, unpinConversation: n });
+                            return r.createElement(Re, { footer: this._renderFooter(), noItemsRenderer: this._renderEmptyDMSearchInbox, onScrollEnd: this._handleScrollEnd, pinConversation: t, renderInboxItem: this._renderSearchInboxItem, searchTerm: a, tabType: e ? F.TG.GROUPS : F.TG.PEOPLE, unpinConversation: n });
                         }),
                         (this._renderMessagesTab = () => {
                             const { pinConversation: e, unpinConversation: t } = this.props,
                                 { debouncedQuery: n } = this.state;
-                            return n ? r.createElement(De, { footer: this._renderFooter(), noItemsRenderer: this._renderEmptyDMSearchInbox, onScrollEnd: this._handleScrollEnd, pinConversation: e, renderInboxItem: this._renderSearchInboxItem, searchTerm: n, unpinConversation: t }) : this._renderEmptyDMSearchInbox();
+                            return n ? r.createElement(ke, { footer: this._renderFooter(), noItemsRenderer: this._renderEmptyDMSearchInbox, onScrollEnd: this._handleScrollEnd, pinConversation: e, renderInboxItem: this._renderSearchInboxItem, searchTerm: n, unpinConversation: t }) : this._renderEmptyDMSearchInbox();
                         }),
                         (this._renderTabContent = () => {
                             const { location: e } = this.props,
                                 { tab: t } = e?.state || {};
                             switch (t) {
-                                case We:
-                                    return this._renderConversationsTab(!1);
-                                case Ue:
-                                    return this._renderConversationsTab(!0);
                                 case Ve:
+                                    return this._renderConversationsTab(!1);
+                                case Ge:
+                                    return this._renderConversationsTab(!0);
+                                case Ue:
                                     return this._renderMessagesTab();
                                 default:
                                     return this._renderAllDMSearchResultsTab();
@@ -380,18 +379,18 @@
                                     E = p || l,
                                     _ = { pathname: `/messages/${E}`, state: { ...d?.state, entryPoint: null, searchQuery: m } },
                                     C = E && e?.length ? e.indexOf(E) : null,
-                                    b = C ? C + 1 : 0;
+                                    f = C ? C + 1 : 0;
                                 s()(!!h, "viewerUserId must be defined"), i && i(!0);
                                 const S = t?.length && (0, I.Z)(C) && C >= 0 ? t[C] : void 0,
-                                    v = (e) => r.createElement(D.Z, { conversationId: E, highlightingTokens: S, inboxType: T._2.PRIMARY, isActive: e, isMessageItem: n, key: E, link: _, messageId: g, onClick: this._handleConversationClick, perspective: h, pinConversation: o, position: b, searchQuery: m, unpinConversation: c });
-                                return r.createElement(f.Z, { exact: !1, path: _.pathname }, v);
+                                    v = (e) => r.createElement(k.Z, { conversationId: E, highlightingTokens: S, inboxType: R._2.PRIMARY, isActive: e, isMessageItem: n, key: E, link: _, messageId: g, onClick: this._handleConversationClick, perspective: h, pinConversation: o, position: f, searchQuery: m, unpinConversation: c });
+                                return r.createElement(b.Z, { exact: !1, path: _.pathname }, v);
                             }),
                         (this._renderSearchResults = () => {
                             const { accessibilityTitle: e, pinConversation: t, searchConversationIds: n, unpinConversation: a } = this.props,
                                 { isRefreshing: s } = this.state;
-                            return r.createElement(C.Z, null, r.createElement(Z.Z, { isRefreshing: s, onRefresh: this._handlePullToRefresh }, r.createElement(S.Z, { accessibilityTitle: e, anchoring: k.Z, assumedItemHeight: 100, cacheKey: "dmSearchInbox", footer: this._renderFooter(), identityFunction: we, items: n, noItemsRenderer: this._renderRecentSearches, onNearEnd: this._handleNearEnd, onScrollEnd: this._handleScrollEnd, renderer: this._renderSearchInboxItem({ conversationIds: n, pinConversation: t, unpinConversation: a }), role: "tablist", withoutHeadroom: !0 })));
+                            return r.createElement(o.Z, null, r.createElement(y.Z, { isRefreshing: s, onRefresh: this._handlePullToRefresh }, r.createElement(f.Z, { accessibilityTitle: e, anchoring: N.Z, assumedItemHeight: 100, cacheKey: "dmSearchInbox", footer: this._renderFooter(), identityFunction: De, items: n, noItemsRenderer: this._renderRecentSearches, onNearEnd: this._handleNearEnd, onScrollEnd: this._handleScrollEnd, renderer: this._renderSearchInboxItem({ conversationIds: n, pinConversation: t, unpinConversation: a }), role: "tablist", withoutHeadroom: !0 })));
                         }),
-                        (this._renderFooter = () => (this.state.isLoadingMore ? r.createElement(M.Z, null) : r.createElement(o.Z, { style: Xe.footerContainer }, r.createElement(l.ZP, { align: "center", size: "body", weight: "bold" }, Le), r.createElement(i.Z, { interactiveStyles: null }, r.createElement(l.ZP, { align: "center", color: "primary", onPress: this._handleFooterClick, size: "subtext2", withInteractiveStyling: !0 }, He))))),
+                        (this._renderFooter = () => (this.state.isLoadingMore ? r.createElement(T.Z, null) : r.createElement(o.Z, { style: Ke.footerContainer }, r.createElement(l.ZP, { align: "center", size: "body", weight: "bold" }, He), r.createElement(i.Z, { interactiveStyles: null }, r.createElement(l.ZP, { align: "center", color: "primary", onPress: this._handleFooterClick, size: "subtext2", withInteractiveStyling: !0 }, qe))))),
                         (this._clearRecentSearches = () => {
                             const { analytics: e, clearRecentSearches: t } = this.props;
                             e.scribe({ component: "recent_search", action: "clear" }), t();
@@ -466,14 +465,14 @@
                 render() {
                     const { location: e, query: t, searchFetchStatus: n } = this.props,
                         { tab: a } = e?.state || {},
-                        s = [Ge, We, Ue, Ve].map((t) => ({ key: t, label: t, "aria-label": t, isActive: () => a === t || (!a && t === Ge), to: { ...e, state: { ...e.state, tab: t } } }));
-                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { style: Xe.searchInput }, r.createElement(h.ZP, { "aria-label": $e, icon: r.createElement(g.default, null), onPress: this._handleHideRecentSearches, pullLeft: !0, type: "primaryText" }), r.createElement(d.Z, { Icon: E.default, autoComplete: "off", onChange: this._handleSearchChange, onClear: this._handleSearchClear, onSubmitEditing: this._handleAddRecentSearch, placeholder: qe, ref: this._setInputRef, value: t, withClearButton: !0 })), t || a === We || a === Ue || a === Ve ? r.createElement(r.Fragment, null, r.createElement(v.Z, { links: s }), this._renderTabContent()) : r.createElement(b.Z, { "aria-label": Ae, fetchStatus: n, onRequestRetry: this._handleRefetchSearch, render: this._renderSearchResults }));
+                        s = [Be, Ve, Ge, Ue].map((t) => ({ key: t, label: t, "aria-label": t, isActive: () => a === t || (!a && t === Be), to: { ...e, state: { ...e.state, tab: t } } }));
+                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { style: Ke.searchInput }, r.createElement(h.ZP, { "aria-label": we, icon: r.createElement(g.default, null), onPress: this._handleHideRecentSearches, pullLeft: !0, type: "primaryText" }), r.createElement(d.Z, { Icon: E.default, autoComplete: "off", onChange: this._handleSearchChange, onClear: this._handleSearchClear, onSubmitEditing: this._handleAddRecentSearch, placeholder: Ae, ref: this._setInputRef, value: t, withClearButton: !0 })), t || a === Ve || a === Ge || a === Ue ? r.createElement(r.Fragment, null, r.createElement(S.Z, { links: s }), this._renderTabContent()) : r.createElement(C.Z, { "aria-label": $e, fetchStatus: n, onRequestRetry: this._handleRefetchSearch, render: this._renderSearchResults }));
                 }
             }
-            (Ke.contextType = y.rC), (Ke.defaultProps = { recentSearches: [], searchConversationIds: [], query: "" });
-            const Xe = m.default.create((e) => ({ emptyState: { marginTop: e.spaces.space32 }, searchInput: { backgroundColor: e.colors.cellBackground, padding: e.spaces.space12, flexDirection: "row", alignItems: "center", zIndex: 1 }, searchInputBorder: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small }, footerContainer: { marginVertical: e.spaces.space32 } })),
-                Je = (0, P.ZP)(me(Ke));
+            (je.contextType = v.rC), (je.defaultProps = { recentSearches: [], searchConversationIds: [], query: "" });
+            const Ke = m.default.create((e) => ({ emptyState: { marginTop: e.spaces.space32 }, searchInput: { backgroundColor: e.colors.cellBackground, padding: e.spaces.space12, flexDirection: "row", alignItems: "center", zIndex: 1 }, searchInputBorder: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small }, footerContainer: { marginVertical: e.spaces.space32 } })),
+                Xe = (0, Z.ZP)(de(je));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6195aaff.51bab2da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages-6195aaff.7148647a.js.map

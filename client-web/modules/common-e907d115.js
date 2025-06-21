@@ -203,24 +203,50 @@
             const L = f.default.create((e) => ({ container: { flexDirection: "row", flexGrow: 1, flexShrink: 1, overflow: "hidden", paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space12, marginTop: e.spaces.space16 }, root: { backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, boxSizing: "border-box", color: "inherit", fontFamily: "inherit", fontSize: "inherit", textAlign: "inherit", outlineStyle: "none", padding: 0 }, wrapper: { alignItems: "center", display: "flex", fontSize: e.fontSizes.headline2, width: "100%" }, disabled: { color: e.colors.gray700 } })),
                 I = f.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, textInputFormStyle: { flexDirection: "row" }, textInputFormWrapper: { flexGrow: 1, flexShrink: 1 }, textInputHeader: { flexDirection: "row", justifyContent: "space-between", position: "absolute", height: "100%", width: "100%" }, textInputHeaderItem: { paddingTop: e.spaces.space8, paddingHorizontal: e.spaces.space8, fontSize: "small" }, placeholderText: { paddingTop: e.spaces.space16, fontSize: e.fontSizes.headline2, userSelect: "none" }, displayCount: { flexGrow: 1, alignItems: "flex-end" }, sidePadding: { paddingHorizontal: e.spaces.space8 }, underTextInputForm: { flexDirection: "row" }, subtextWrapper: { flexDirection: "column", flex: 1, paddingEnd: e.spaces.space20, paddingTop: e.spaces.space4 }, subtext: { alignSelf: "flex-start" }, focusedIcon: { color: e.colors.primary }, icon: { alignSelf: "center", color: e.colors.gray700, paddingEnd: e.spaces.space4 }, validationIcon: { alignSelf: "center", paddingStart: e.spaces.space4 }, transition: { transition: "transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), font-size 150ms cubic-bezier(0.4, 0, 0.2, 1), padding-top 150ms cubic-bezier(0.4, 0, 0.2, 1)" }, passwordVisibilityIconContainer: { alignSelf: "center", paddingStart: e.spaces.space4 }, passwordVisibilityIcon: { color: e.colors.gray700 } }));
         },
-        308158: (e, t, n) => {
-            n.d(t, { Z: () => a });
-            var i = n(202784),
-                s = n(731708),
-                r = n(669474);
-            function a({ role: e, align: t, color: n, dir: a, entities: o, id: l, onEntityClick: c, renderFragment: h = {}, size: d, style: u, text: p, weight: m, withHashflags: g }) {
-                const b = (0, r.ZP)(p, o);
-                return i.createElement(
-                    s.ZP,
-                    { align: t, color: n, dir: a, id: l, role: e, size: d, style: u, weight: m, withHashflags: g },
-                    b.map((e, t) => {
-                        const n = h[e.type],
-                            r = { children: e.text, color: e.color, dir: e.dir, link: e.link, onClick: e.link ? c : void 0, weight: e.weight, withHashflags: g };
-                        return i.createElement(i.Fragment, { key: `${e.text}:${t}` }, n ? n(r, e.ref) : i.createElement(s.ZP, r));
-                    }),
+        557487: (e, t, n) => {
+            n.d(t, { Z: () => l });
+            var i = n(807896),
+                s = n(202784),
+                r = n(731708),
+                a = n(392237),
+                o = n(669474);
+            n(136728);
+            function l({ role: e, align: t, color: n, dir: a, entities: l, id: h, onEntityClick: d, renderFragment: u = {}, size: p, style: m, text: g, weight: b, withHashflags: y, animateIn: _ }) {
+                let f = (0, o.ZP)(g, l);
+                return (
+                    _ &&
+                        (f = f
+                            .map((e) => {
+                                if ("text" === e.type) {
+                                    return (function (e) {
+                                        if (0 === e.length) return [""];
+                                        const t = [];
+                                        let n = "",
+                                            i = !0,
+                                            s = 0;
+                                        for (; s < e.length; ) {
+                                            const r = e[s];
+                                            /\s/.test(r) ? (i ? (n += r) : (t.push(n), (n = r)), (i = !0)) : (i && n.length > 0 ? (t.push(n), (n = r)) : (n += r), (i = !1)), s++;
+                                        }
+                                        return n.length > 0 && t.push(n), t;
+                                    })(e.text).map((t) => ({ ...e, text: t }));
+                                }
+                                return e;
+                            })
+                            .flat()),
+                    s.createElement(
+                        r.ZP,
+                        { align: t, color: n, dir: a, id: h, role: e, size: p, style: m, weight: b, withHashflags: y },
+                        f.map((e, t) => {
+                            const n = u[e.type],
+                                a = { children: e.text, color: e.color, dir: e.dir, link: e.link, onClick: e.link ? d : void 0, weight: e.weight, withHashflags: y };
+                            return s.createElement(s.Fragment, { key: `${e.text}:${t}` }, n ? n(a, e.ref) : s.createElement(r.ZP, (0, i.Z)({ style: _ && c.animateIn }, a)));
+                        }),
+                    )
                 );
             }
-            (a.makeEntityLink = r.ie), (a.internal_parseRichTextEntities = r.ZP), (a.TextFragment = s.ZP);
+            (l.makeEntityLink = o.ie), (l.internal_parseRichTextEntities = o.ZP), (l.TextFragment = r.ZP);
+            const c = a.default.create((e) => ({ animateIn: { animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease-out", animationFillMode: "both" } }));
         },
         669474: (e, t, n) => {
             n.d(t, { ZP: () => p, ie: () => h, nt: () => c });
@@ -719,4 +745,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e907d115.f816d9da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e907d115.4589b68a.js.map

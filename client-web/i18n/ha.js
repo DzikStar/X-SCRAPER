@@ -1289,6 +1289,9 @@
                 t("b0d1e205", function (a) {
                     return 'Searching for **"' + a.query + '"**';
                 }),
+                t("f259119d", function (a) {
+                    return 'Searching the web for "' + a.query + '"';
+                }),
                 t("bf970edd", function (a) {
                     return 'Searching 𝕏 for "' + a.query + '"';
                 }),
@@ -1921,9 +1924,9 @@
                 t("a8f09fb8", "Delete block"),
                 t("i89195ea", "Divider"),
                 t("da8ac57c", "Edit Caption"),
-                t("a8fdd09c", "Publish Article"),
-                t("d8047cc8", "Buga");
-            t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                t("a8fdd09c", "Publish Article");
+            t("d8047cc8", "Buga"),
+                t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
                 t("d7985b24", "Choose who can reply to this Article"),
@@ -2977,9 +2980,9 @@
                     return a.entity + " was removed from your Bookmarks";
                 }),
                 t("d6d9aab6", "Ƙara Alama"),
-                t("bb89cf46", "Cire Alama"),
-                t("a739d4ba", "Ƙara Folda mai Alama");
-            t("d5270434", "Fita"),
+                t("bb89cf46", "Cire Alama");
+            t("a739d4ba", "Ƙara Folda mai Alama"),
+                t("d5270434", "Fita"),
                 t("ac85c6b2", "Wani kuskure ya auku a yayin loda wannan hoto"),
                 t("b327c12a", "Hoto"),
                 t("ic76bdf0", "Recreate this with Grok"),
@@ -3903,9 +3906,9 @@
                 t("cd133486", "Gayyaci"),
                 t("f2333850", "Share with people outside of X"),
                 t("cddb8097", "Learn more"),
-                t("f77997b0", "Masu masaukin baki"),
-                t("i48f4ed8", "Sifika");
-            t("a77c8e02", "Mai saurare"),
+                t("f77997b0", "Masu masaukin baki");
+            t("i48f4ed8", "Sifika"),
+                t("a77c8e02", "Mai saurare"),
                 t("bdfa93eb", function (a) {
                     return "Rabawa daga " + a.name;
                 }),
@@ -4257,12 +4260,10 @@
                 t("d66bf142", "Thu"),
                 t("dc17968a", "Fri"),
                 t("j310a2d6", "Sat"),
-                t("afa2a58e", "See all posts"),
-                t("fc83e7e2", "See all users"),
-                t("df601d92", "Relevant Users"),
                 t("db6c20cf", function (a) {
                     return "Show all (" + a.count + ")";
                 }),
+                t("df601d92", "Relevant Users"),
                 t("d7cb5408", "Relevant Web Pages"),
                 t("ca93f2ee", "This message has been deleted."),
                 t("b8c06820", "Copy text"),
@@ -4928,9 +4929,9 @@
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access");
-            t("gf898b70", "Advanced Search"),
-                t("d2a43a7a", 'contains both "ai" and "startup"'),
+                t("ed99baea", "Early Beta Access"),
+                t("gf898b70", "Advanced Search");
+            t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5884,9 +5885,9 @@
                 t("e41c9b4f", function (a) {
                     return "Ana dana a " + a.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Share Folda");
-            t("f4ea967a", "An share folda"),
-                t("b670aa62", "Sunan Folda"),
+                t("h18f86a4", "Share Folda"),
+                t("f4ea967a", "An share folda");
+            t("b670aa62", "Sunan Folda"),
                 t("aece5462", "An yi nasarar sabunta sunan folda"),
                 t("e3299b94", "Wata matsala ta faru. Sake gwada sabunta wannan folda a cikin minti ɗaya."),
                 t("c09ea714", "Wata matsala ta faru. Sake gwada share wannan folda a cikin minti ɗaya."),
@@ -6890,9 +6891,9 @@
                 t("c924ad84", "Keep videos playing"),
                 t("de750a3c", "Enjoy them even when your phone is locked"),
                 t("he5e87c4", "Boost your replies"),
-                t("g64a60ba", "Get a small prioritization when you reply to posts");
-            t("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
-                t("fdd77a34", "Create longer posts"),
+                t("g64a60ba", "Get a small prioritization when you reply to posts"),
+                t("a7ee832a", "Fix typos and mistakes, up to 60 minutes");
+            t("fdd77a34", "Create longer posts"),
                 t("j6d26a7a", "Write as much as you’d like to share"),
                 t("c4fd68da", "Customize your experience"),
                 t("c0195168", "Change your app icon and navigation options"),
@@ -7870,7 +7871,10 @@
                 t("b719e224", "Babu sakamako"),
                 t("c9938100", "Bincike sakamako"),
                 t("d1a35ec6", "Ƙara asusu"),
-                t("b437adda", "Upgrade to paid");
+                t("b437adda", "Upgrade to paid"),
+                t("f1f6c88b", function (a) {
+                    return "Accounts (" + a.count + ")";
+                });
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7909,10 +7913,7 @@
                     u(a, e)
                 );
             }
-            t("f1f6c88b", function (a) {
-                return "Accounts (" + a.count + ")";
-            }),
-                t("b02156b8", "Invitations"),
+            t("b02156b8", "Invitations"),
                 t("gd67d29b", function (a) {
                     return "Invitations (" + a.count + ")";
                 }),
@@ -8912,9 +8913,9 @@
                 t("a7bf9962", "Download video"),
                 t("ccc97152", "Playback speed"),
                 t("h531ade0", "Video quality"),
-                t("e8b5757c", "0.25x");
-            t("e7e954de", "0.5x"),
-                t("g07ffe66", "0.75x"),
+                t("e8b5757c", "0.25x"),
+                t("e7e954de", "0.5x");
+            t("g07ffe66", "0.75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1.25x"),
                 t("e9eeed9e", "1.5x"),
@@ -13336,4 +13337,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.40c3be7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.9c6cb33a.js.map

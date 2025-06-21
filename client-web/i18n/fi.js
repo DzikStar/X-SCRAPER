@@ -1281,31 +1281,34 @@
                 e("c3f04d9c", "Miettii"),
                 e("cbdddb0a", "Valmis"),
                 e("ie2bbeed", function (a) {
-                    return 'Searching for "' + a.query + '"';
+                    return 'Haetaan haulla "' + a.query + '"';
                 }),
                 e("b0d1e205", function (a) {
                     return 'Haetaan haulla **"' + a.query + '"**';
                 }),
+                e("f259119d", function (a) {
+                    return 'Searching the web for "' + a.query + '"';
+                }),
                 e("bf970edd", function (a) {
-                    return 'Searching 𝕏 for "' + a.query + '"';
+                    return 'Haetaan 𝕏-alustalta haulla "' + a.query + '"';
                 }),
                 e("g008d475", function (a) {
-                    return "Browsing " + a.url;
+                    return "Selataan " + a.url;
                 }),
                 e("c91e3971", function (a) {
-                    return "Browsing " + a.url + ' for "' + a.query + '"';
+                    return "Selataan " + a.url + ' haulla "' + a.query + '"';
                 }),
                 e("acb9b845", function (a) {
                     return "Selataan " + a.url + ' haulla **"' + a.query + '"** ';
                 }),
                 e("j9006405", function (a) {
-                    return "Searching 𝕏 posts by @" + a.username;
+                    return "Haetaan käyttäjän @" + a.username + " 𝕏-julkaisuista";
                 }),
                 e("a2dd07e5", function (a) {
-                    return "Searching 𝕏 posts by @" + a.username + ' for "' + a.query + '"';
+                    return "Haetaan käyttäjän @" + a.username + ' 𝕏-julkaisuista hakusanalla "' + a.query + '"';
                 }),
                 e("e99fb7a3", function (a) {
-                    return "Searching 𝕏 posts by @" + a.username + ' for **"' + a.query + '"**';
+                    return "Haetaan käyttäjän @" + a.username + ' 𝕏-julkaisuista hakusanalla **"' + a.query + '"**';
                 }),
                 e("ead81122", "Jokin meni pieleen. Muodosta yhteys uudelleen päivittämällä tai yritä uudelleen."),
                 e("f808a13a", "Toimintojen määrää on rajoitettu. Odota muutama hetki ja yritä sitten uudelleen."),
@@ -1317,8 +1320,8 @@
                 e("j77292b7", function (a) {
                     return "Valitse enintään " + a.count + " tiedosto" + n(a.count, "", "a");
                 }),
-                e("d6b533dc", "Rate this translation:"),
-                e("j2f9ab6e", "Thank you for your feedback!"),
+                e("d6b533dc", "Anna tälle käännökselle arvio:"),
+                e("j2f9ab6e", "Kiitos palautteestasi!"),
                 e("d56779a2", "helppo ymmärtää"),
                 e("b6fe8a56", "sekava tai epäselvä"),
                 e("i73a7d48", "Kääntänyt Google"),
@@ -1349,7 +1352,7 @@
                     return "Kielestä " + a.originLanguage + " kääntänyt";
                 }),
                 e("b7cb4fab", "Kääntänyt"),
-                e("e0bffbf8", "About automatic translation"),
+                e("e0bffbf8", "Tietoja automatisoidusta kääntämisestä"),
                 e("e839db3a", "Hylkää"),
                 e("a15585b4", "kieliasetuksista"),
                 e("d4c339b9", function (a) {
@@ -1918,9 +1921,9 @@
                 e("a8f09fb8", "Poista katkelma"),
                 e("i89195ea", "Jakaja"),
                 e("da8ac57c", "Muokkaa kuvatekstiä"),
-                e("a8fdd09c", "Julkaise artikkeli"),
-                e("d8047cc8", "Julkaise");
-            e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä."),
+                e("a8fdd09c", "Julkaise artikkeli");
+            e("d8047cc8", "Julkaise"),
+                e("ff7ddca2", "Artikkelisi ilmestyy julkaisuna, kun olet julkaissut sen. Löydät sen myös profiilisi Artikkelit-välilehdeltä."),
                 e("ef34d7be", "Yleisö- ja vastausvalintoja ei voi muuttaa artikkelin julkaisun jälkeen."),
                 e("e52d4998", "Valitse yleisösi"),
                 e("d7985b24", "Valitse, ketkä voivat vastata tähän artikkeliin"),
@@ -2974,9 +2977,9 @@
                     return a.entity + " poistettiin kirjanmerkeistäsi";
                 }),
                 e("d6d9aab6", "Lisää fonttikoko"),
-                e("bb89cf46", "Poista kirjanmerkki"),
-                e("a739d4ba", "Lisää kirjanmerkkikansioon");
-            e("d5270434", "Poistu"),
+                e("bb89cf46", "Poista kirjanmerkki");
+            e("a739d4ba", "Lisää kirjanmerkkikansioon"),
+                e("d5270434", "Poistu"),
                 e("ac85c6b2", "Kuvaa ladattaessa tapahtui virhe"),
                 e("b327c12a", "Kuva"),
                 e("ic76bdf0", "Luo oma versio Grokin avulla"),
@@ -3900,9 +3903,9 @@
                 e("cd133486", "Kutsu"),
                 e("f2333850", "Jaa X:n ulkopuolelle"),
                 e("cddb8097", "Lue lisää"),
-                e("f77997b0", "Co-host"),
-                e("i48f4ed8", "Puhuja");
-            e("a77c8e02", "Kuuntelija"),
+                e("f77997b0", "Co-host");
+            e("i48f4ed8", "Puhuja"),
+                e("a77c8e02", "Kuuntelija"),
                 e("bdfa93eb", function (a) {
                     return "Käyttäjän " + a.name + " jakama";
                 }),
@@ -4183,10 +4186,10 @@
                 e("j7b5c844", "Olet itse vastuussa keskusteluista, jotka jaat julkisesti. Vältä kertomasta arkaluonteista ja luottamuksellista tietoa itsestäsi tai muista keskustellessasi Grokin kanssa (lisätietoa ohjekeskuksesta)."),
                 e("c9f7c196", "Ohjekeskus"),
                 e("fb3b9776", "Tämä käyttäjä on mukauttanut Grokin vastauksia."),
-                e("b0a889d4", "As Image"),
-                e("a111fb48", "As Spreadsheet"),
-                e("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                e("bd202fe6", "Generating card"),
+                e("b0a889d4", "Kuvana"),
+                e("a111fb48", "Laskentataulukkona"),
+                e("bccc65f0", "Grok voi tehdä virheitä. Tarkista aina alkuperäiset lähteet."),
+                e("bd202fe6", "Korttia luodaan"),
                 e("bfd161bc", "Vertaa"),
                 e("j5dcf1b2", "Päivitetty"),
                 e("a50aaa10", "Pre-market"),
@@ -4218,8 +4221,8 @@
                 e("dd679fb1", function (a) {
                     return "Kaikkien aikojen alin" + a.ttc_stock_details;
                 }),
-                e("ha9c4cf8", "View source"),
-                e("ecad5d78", "Save image"),
+                e("ha9c4cf8", "Näytä lähde"),
+                e("ecad5d78", "Tallenna kuva"),
                 e("d2d1d398", "Kopioitu!"),
                 e("a22063d2", "Jakamalla sijaintisi saat tarkempia tuloksia."),
                 e("db3248a8", "Ladataan sijaintia"),
@@ -4254,12 +4257,10 @@
                 e("d66bf142", "to"),
                 e("dc17968a", "pe"),
                 e("j310a2d6", "la"),
-                e("afa2a58e", "See all posts"),
-                e("fc83e7e2", "See all users"),
-                e("df601d92", "Relevant Users"),
                 e("db6c20cf", function (a) {
-                    return "Show all (" + a.count + ")";
+                    return "Näytä kaikki (" + a.count + ")";
                 }),
+                e("df601d92", "Tarkoituksenmukaiset käyttäjät"),
                 e("d7cb5408", "Asiaan liittyvät verkkosivut"),
                 e("ca93f2ee", "Tämä viesti on poistettu."),
                 e("b8c06820", "Kopioi teksti"),
@@ -4329,7 +4330,7 @@
                 e("db832e38", "Salli ilmoitukset selaimen asetuksista"),
                 e("a910cac6", "Ilmoitusten käyttöönotossa oli ongelmia"),
                 e("be30b6ee", "Yhteys on epävakaa"),
-                e("ge15b488", "Show thoughts"),
+                e("ge15b488", "Näytä mietteet"),
                 e("aa7c96bb", function (a) {
                     return "Näytä " + a.numResults + " lisää";
                 }),
@@ -4339,7 +4340,7 @@
                 e("g3ce0132", "Mietti"),
                 e("f8007364", "Laajenna nähdäksesi tiedot"),
                 e("ca53f780", "Pienennä tiedot"),
-                e("e6d51c62", "Searching"),
+                e("e6d51c62", "Haetaan"),
                 e("ib1c5475", function (a) {
                     return "Mietti " + a.minutes + " min " + a.seconds + " s";
                 }),
@@ -4925,9 +4926,9 @@
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
                 e("if2909ba", "Katseluaika"),
                 e("i0e5bf4c", "Videosi"),
-                e("ed99baea", "Beta-ennakkokäyttö");
-            e("gf898b70", "Tarkennettu haku"),
-                e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
+                e("ed99baea", "Beta-ennakkokäyttö"),
+                e("gf898b70", "Tarkennettu haku");
+            e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
                 e("a8584698", "ai startup"),
                 e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
                 e("j8ee77c4", '"ai startup"'),
@@ -5881,9 +5882,9 @@
                 e("e41c9b4f", function (a) {
                     return "Tallennettu kokoelmaan " + a.bookmarkFolderName;
                 }),
-                e("h18f86a4", "Poista kansio");
-            e("f4ea967a", "Kansio on poistettu"),
-                e("b670aa62", "Kansion nimi"),
+                e("h18f86a4", "Poista kansio"),
+                e("f4ea967a", "Kansio on poistettu");
+            e("b670aa62", "Kansion nimi"),
                 e("aece5462", "Kansion nimen päivitys onnistui"),
                 e("e3299b94", "Jokin meni pieleen. Yritä kansion päivittämistä hetken kuluttua uudelleen."),
                 e("c09ea714", "Jokin meni pieleen. Yritä kansion poistamista hetken kuluttua uudelleen."),
@@ -6887,9 +6888,9 @@
                 e("c924ad84", "Jatka videoiden toistoa"),
                 e("de750a3c", "Nauti niistä silloinkin, kun puhelin on lukittu"),
                 e("he5e87c4", "Tehosta vastauksiasi"),
-                e("g64a60ba", "Saa vähän buustia kirjoittamillesi vastauksille");
-            e("a7ee832a", "Korjaa lyöntivirheitä ja erehdyksiä 60 minuutin ajan"),
-                e("fdd77a34", "Laadi pidempiä julkaisuja"),
+                e("g64a60ba", "Saa vähän buustia kirjoittamillesi vastauksille"),
+                e("a7ee832a", "Korjaa lyöntivirheitä ja erehdyksiä 60 minuutin ajan");
+            e("fdd77a34", "Laadi pidempiä julkaisuja"),
                 e("j6d26a7a", "Kirjoita niin paljon kuin haluat"),
                 e("c4fd68da", "Räätälöi käyttökokemuksesi"),
                 e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja"),
@@ -7867,7 +7868,10 @@
                 e("b719e224", "Ei tuloksia"),
                 e("c9938100", "Hakutulokset"),
                 e("d1a35ec6", "Lisää tilejä"),
-                e("b437adda", "Päivitä maksulliseen tiliin");
+                e("b437adda", "Päivitä maksulliseen tiliin"),
+                e("f1f6c88b", function (a) {
+                    return "Tilit (" + a.count + ")";
+                });
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7906,10 +7910,7 @@
                     u(a, t)
                 );
             }
-            e("f1f6c88b", function (a) {
-                return "Tilit (" + a.count + ")";
-            }),
-                e("b02156b8", "Kutsut"),
+            e("b02156b8", "Kutsut"),
                 e("gd67d29b", function (a) {
                     return "Kutsut (" + a.count + ")";
                 }),
@@ -8280,7 +8281,7 @@
                 e("e5e6479e", "Lähetä meille sähköpostitse organisaatiosi käyttäjätunnus ja tiedustelusi saadaksesi avun nopeimmin."),
                 e("ica8392a", "Kun saamme pyyntösi, arvioimme ja priorisoimme sen saapumisjärjestyksessä."),
                 e("ed37e36e", "Tärkeää: Organisaatiosi käyttäjätunnuksen puuttuminen tai henkilökohtaisen sähköpostiosoitteen käyttö saattaa viivästyttää pyynnön käsittelyä."),
-                e("h7e1c146", "Delegate accounts are not currently supported."),
+                e("h7e1c146", "Delegointitilejä ei tällä hetkellä tueta."),
                 e("eb0d4fe2", "Luo palsta"),
                 e("e93d2f8a", "Räätälöi oma käyttökokemuksesi lisäämällä erilaisia palstoja, kuten:"),
                 e("e8203d1e", "Haut"),
@@ -8909,9 +8910,9 @@
                 e("a7bf9962", "Lataa video"),
                 e("ccc97152", "Toistonopeus"),
                 e("h531ade0", "Videon laatu"),
-                e("e8b5757c", "0,25x");
-            e("e7e954de", "0,5x"),
-                e("g07ffe66", "0,75x"),
+                e("e8b5757c", "0,25x"),
+                e("e7e954de", "0,5x");
+            e("g07ffe66", "0,75x"),
                 e("d8bede9e", "1x"),
                 e("j41845c8", "1,25x"),
                 e("e9eeed9e", "1,5x"),
@@ -13347,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.505e45aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.2655335a.js.map

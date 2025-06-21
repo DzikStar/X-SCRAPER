@@ -1289,6 +1289,9 @@
                 o("b0d1e205", function (e) {
                     return 'Searching for **"' + e.query + '"**';
                 }),
+                o("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 o("bf970edd", function (e) {
                     return 'Searching 𝕏 for "' + e.query + '"';
                 }),
@@ -1921,9 +1924,9 @@
                 o("a8f09fb8", "Delete block"),
                 o("i89195ea", "Divider"),
                 o("da8ac57c", "Edit Caption"),
-                o("a8fdd09c", "Publish Article"),
-                o("d8047cc8", "Argitaratu");
-            o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
+                o("a8fdd09c", "Publish Article");
+            o("d8047cc8", "Argitaratu"),
+                o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 o("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 o("e52d4998", "Choose your audience"),
                 o("d7985b24", "Choose who can reply to this Article"),
@@ -2977,9 +2980,9 @@
                     return e.entity + " was removed from your Bookmarks";
                 }),
                 o("d6d9aab6", "Gehitu laster-marka"),
-                o("bb89cf46", "Kendu laster-marka"),
-                o("a739d4ba", "Gehitu laster-marken karpetara");
-            o("d5270434", "Exit"),
+                o("bb89cf46", "Kendu laster-marka");
+            o("a739d4ba", "Gehitu laster-marken karpetara"),
+                o("d5270434", "Exit"),
                 o("ac85c6b2", "Errore bat gertatu da irudia kargatzean"),
                 o("b327c12a", "Irudia"),
                 o("ic76bdf0", "Recreate this with Grok"),
@@ -3903,9 +3906,9 @@
                 o("cd133486", "Invite"),
                 o("f2333850", "Share with people outside of X"),
                 o("cddb8097", "Learn more"),
-                o("f77997b0", "Co-host"),
-                o("i48f4ed8", "Bozgorailua");
-            o("a77c8e02", "Entzulea"),
+                o("f77997b0", "Co-host");
+            o("i48f4ed8", "Bozgorailua"),
+                o("a77c8e02", "Entzulea"),
                 o("bdfa93eb", function (e) {
                     return e.name + " erabiltzaileak partekatua";
                 }),
@@ -4257,12 +4260,10 @@
                 o("d66bf142", "Thu"),
                 o("dc17968a", "Fri"),
                 o("j310a2d6", "Sat"),
-                o("afa2a58e", "See all posts"),
-                o("fc83e7e2", "See all users"),
-                o("df601d92", "Relevant Users"),
                 o("db6c20cf", function (e) {
                     return "Show all (" + e.count + ")";
                 }),
+                o("df601d92", "Relevant Users"),
                 o("d7cb5408", "Relevant Web Pages"),
                 o("ca93f2ee", "This message has been deleted."),
                 o("b8c06820", "Copy text"),
@@ -4928,9 +4929,9 @@
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access");
-            o("gf898b70", "Advanced Search"),
-                o("d2a43a7a", 'contains both "ai" and "startup"'),
+                o("ed99baea", "Early Beta Access"),
+                o("gf898b70", "Advanced Search");
+            o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
@@ -5884,9 +5885,9 @@
                 o("e41c9b4f", function (e) {
                     return "Hemen gordeta: " + e.bookmarkFolderName;
                 }),
-                o("h18f86a4", "Ezabatu karpeta");
-            o("f4ea967a", "Karpeta ezabatu da"),
-                o("b670aa62", "Karpetaren izena"),
+                o("h18f86a4", "Ezabatu karpeta"),
+                o("f4ea967a", "Karpeta ezabatu da");
+            o("b670aa62", "Karpetaren izena"),
                 o("aece5462", "Karpeta izena behar bezala eguneratu da"),
                 o("e3299b94", "Arazoren bat izan da. Saiatu berriro karpeta hori eguneratzen minutu bat barru."),
                 o("c09ea714", "Arazoren bat izan da. Saiatu berriro karpeta hori ezabatzen minutu bat barru."),
@@ -6890,9 +6891,9 @@
                 o("c924ad84", "Keep videos playing"),
                 o("de750a3c", "Enjoy them even when your phone is locked"),
                 o("he5e87c4", "Boost your replies"),
-                o("g64a60ba", "Get a small prioritization when you reply to posts");
-            o("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
-                o("fdd77a34", "Create longer posts"),
+                o("g64a60ba", "Get a small prioritization when you reply to posts"),
+                o("a7ee832a", "Fix typos and mistakes, up to 60 minutes");
+            o("fdd77a34", "Create longer posts"),
                 o("j6d26a7a", "Write as much as you’d like to share"),
                 o("c4fd68da", "Customize your experience"),
                 o("c0195168", "Change your app icon and navigation options"),
@@ -7870,7 +7871,10 @@
                 o("b719e224", "Emaitzarik ez"),
                 o("c9938100", "Bilatu emaitzak"),
                 o("d1a35ec6", "Add accounts"),
-                o("b437adda", "Upgrade to paid");
+                o("b437adda", "Upgrade to paid"),
+                o("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                });
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7909,10 +7913,7 @@
                     u(e, a)
                 );
             }
-            o("f1f6c88b", function (e) {
-                return "Accounts (" + e.count + ")";
-            }),
-                o("b02156b8", "Invitations"),
+            o("b02156b8", "Invitations"),
                 o("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
                 }),
@@ -8912,9 +8913,9 @@
                 o("a7bf9962", "Download video"),
                 o("ccc97152", "Playback speed"),
                 o("h531ade0", "Video quality"),
-                o("e8b5757c", "0,25x");
-            o("e7e954de", "0.5x"),
-                o("g07ffe66", "0,75x"),
+                o("e8b5757c", "0,25x"),
+                o("e7e954de", "0.5x");
+            o("g07ffe66", "0,75x"),
                 o("d8bede9e", "1x"),
                 o("j41845c8", "1,25x"),
                 o("e9eeed9e", "1.5x"),
@@ -13340,4 +13341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.acf7516a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.55cc95ea.js.map

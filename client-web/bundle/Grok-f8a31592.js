@@ -3,7 +3,7 @@
     ["bundle.Grok-f8a31592"],
     {
         94693: (e, t, a) => {
-            a.d(t, { Z: () => U });
+            a.d(t, { Z: () => J });
             var n = a(202784),
                 o = a(744610),
                 s = a(325686),
@@ -55,8 +55,8 @@
             var A = a(557707),
                 B = a(165243),
                 M = a(74514),
-                V = a(405303),
-                _ = a(125363),
+                _ = a(405303),
+                V = a(125363),
                 L = a(654917);
             const H = m().e258000e,
                 $ = m().d591a772,
@@ -68,7 +68,7 @@
             function K({ analyticsMetricPrefix: e = "message-steps", completed: t }) {
                 const a = (0, y.z)(),
                     o = (0, L.uf)(),
-                    r = (0, _.v9)(o.selectLastHumanMessage),
+                    r = (0, V.v9)(o.selectLastHumanMessage),
                     [l, c] = n.useState(!1),
                     [m, d] = n.useState(!1),
                     [p, u] = n.useState(!1),
@@ -109,7 +109,7 @@
                                     borderColor: "transparent",
                                     color: "gray700",
                                     hoverLabel: { label: H },
-                                    icon: n.createElement(V.default, { style: j.icon }),
+                                    icon: n.createElement(_.default, { style: j.icon }),
                                     onClick: () => {
                                         (async () => {
                                             "granted" === Notification.permission ? (b(!0), c(!0)) : "default" === Notification.permission && ("granted" === (await Notification.requestPermission()) ? (b(!0), c(!0)) : (b(!1), g(!0)));
@@ -132,8 +132,8 @@
                 const A = (0, y.z)(),
                     B = n.useRef(new o.Z.Value(0)).current,
                     M = n.useMemo(() => h.slice(void 0, -1), [h]),
-                    V = n.useMemo(() => h[h.length - 1], [h]),
-                    _ = n.useCallback(
+                    _ = n.useMemo(() => h[h.length - 1], [h]),
+                    V = n.useCallback(
                         (e) => {
                             o.Z.spring(B, { toValue: e.nativeEvent.layout.height, useNativeDriver: !1, speed: 5 }).start();
                         },
@@ -141,52 +141,52 @@
                     );
                 return n.createElement(
                     s.Z,
-                    { style: [J.container, D] },
+                    { style: [U.container, D] },
                     !b && n.createElement(E, { aborted: e, completed: l, completedTimestamp: c, fromTimestamp: g, isPast: C, numSources: w, title: z || "" }),
                     n.createElement(
                         v.Z,
-                        { gradientColor: "transparent", onCancelAutoScroll: S, onRestartAutoScroll: T, scrollViewContentContainerStyle: J.scrollViewContentContainerStyle, scrollViewRef: P },
+                        { gradientColor: "transparent", onCancelAutoScroll: S, onRestartAutoScroll: T, scrollViewContentContainerStyle: U.scrollViewContentContainerStyle, scrollViewRef: P },
                         n.createElement(
                             s.Z,
-                            { onLayout: _, style: J.headerSteps },
-                            n.createElement(o.Z.View, { style: [J.lineContainer, { height: B }] }, n.createElement(s.Z, { style: J.line })),
-                            M.map((e, a) => n.createElement(R, { active: t === e.id, header: e, key: e.id, onStepClick: k, style: J.stepHeaderStatusContainer })),
+                            { onLayout: V, style: U.headerSteps },
+                            n.createElement(o.Z.View, { style: [U.lineContainer, { height: B }] }, n.createElement(s.Z, { style: U.line })),
+                            M.map((e, a) => n.createElement(R, { active: t === e.id, header: e, key: e.id, onStepClick: k, style: U.stepHeaderStatusContainer })),
                         ),
-                        V && n.createElement(R, { header: V, key: V.id, onStepClick: k, style: J.stepHeaderStatusContainer }),
+                        _ && n.createElement(R, { header: _, key: _.id, onStepClick: k, style: U.stepHeaderStatusContainer }),
                         n.createElement(r.Z, { size: "space8" }),
                     ),
                     n.createElement(
                         s.Z,
-                        { style: J.buttonsContainer },
+                        { style: U.buttonsContainer },
                         n.createElement(i.ZP, {
                             borderColor: "transparent",
                             color: "gray700",
                             hoverLabel: { label: X },
-                            icon: m ? n.createElement(d.default, { style: J.icon }) : n.createElement(p.default, { style: J.icon }),
+                            icon: m ? n.createElement(d.default, { style: U.icon }) : n.createElement(p.default, { style: U.icon }),
                             onClick: () => {
                                 I(!m), A.scribe({ element: `${a}-expand`, action: "click", data: { event_info: (!m).toString() } });
                             },
                             size: "small",
-                            style: J.button,
+                            style: U.button,
                         }),
                         Z &&
                             n.createElement(i.ZP, {
                                 borderColor: "transparent",
                                 color: "gray700",
                                 hoverLabel: { label: Y },
-                                icon: n.createElement(u.default, { style: J.icon }),
+                                icon: n.createElement(u.default, { style: U.icon }),
                                 onClick: () => {
                                     x(), A.scribe({ element: `${a}-open-trace`, action: "click" });
                                 },
                                 size: "small",
-                                style: J.button,
+                                style: U.button,
                             }),
                         !C && n.createElement(K, { analyticsMetricPrefix: a, completed: l && f }),
                     ),
                 );
             }
-            const J = l.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space4, backgroundColor: e.colors.gray50, padding: e.spaces.space20, paddingBottom: e.spaces.space8 }, scrollViewContentContainerStyle: { paddingEnd: e.spaces.space12 }, headerSteps: { position: "relative" }, lineContainer: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: e.spaces.space20, position: "absolute", start: 0, top: 0, height: "100%", paddingTop: e.spaces.space8 }, line: { width: 2, height: "100%", backgroundColor: e.colors.gray300 }, step: { marginBottom: e.spaces.space16 }, buttonsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, button: { borderRadius: e.borderRadii.xLarge }, icon: {}, stepHeaderStatusContainer: { paddingBottom: e.spaces.space16 } })),
-                U = n.memo(q);
+            const U = l.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space4, backgroundColor: e.colors.gray50, padding: e.spaces.space20, paddingBottom: e.spaces.space8 }, scrollViewContentContainerStyle: { paddingEnd: e.spaces.space12 }, headerSteps: { position: "relative" }, lineContainer: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: e.spaces.space20, position: "absolute", start: 0, top: 0, height: "100%", paddingTop: e.spaces.space8 }, line: { width: 2, height: "100%", backgroundColor: e.colors.gray300 }, step: { marginBottom: e.spaces.space16 }, buttonsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, button: { borderRadius: e.borderRadii.xLarge }, icon: {}, stepHeaderStatusContainer: { paddingBottom: e.spaces.space16 } })),
+                J = n.memo(q);
         },
         791278: (e, t, a) => {
             a.d(t, { Z: () => f });
@@ -268,27 +268,38 @@
                 h = a(103737),
                 b = a(125363),
                 C = a(836255);
-            function w({ onClick: e, style: t, xPostId: a }) {
-                const o = n.useMemo(() => C.Z.createHydratorForTweet(a || ""), [a]),
-                    r = (0, b.v9)(o);
-                if (!r) return null;
-                const { created_at: i, text: l, user: c } = r;
-                return n.createElement(d.Z, { interactiveStyles: S.interactiveContainer, onClick: e }, ({ isHovered: a }) =>
-                    n.createElement(
-                        s.Z,
-                        { style: [S.container, a ? S.hoveredContainer : void 0, t] },
-                        n.createElement(s.Z, { style: S.headerContainer }, n.createElement(s.Z, { style: S.nameContainer }, n.createElement(p.default, { "aria-label": c.name, borderColor: "gray700", borderWidth: "small", screenName: c.screen_name, size: "medium", uri: c.profile_image_url_https }), n.createElement(u.Z, { affiliateBadgeInfo: c.highlightedLabel, isBlueVerified: c.is_blue_verified, isVerified: c.verified, name: c.name, nameSize: "subtext2", screenName: c.screen_name, screenNameSize: "subtext3", screenNameStyle: S.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: c.verified_type, withHoverCard: !0, withStackedLayout: !0 })), n.createElement(y.Z, { humanReadable: !1, onPress: e, style: S.timestamp, timestamp: i })),
-                        r.in_reply_to_screen_name && n.createElement(f.ZP, { displayTextRange: r.display_text_range, inReplyToName: r.in_reply_to_name, inReplyToScreenName: r.in_reply_to_screen_name, inReplyToUserIdStr: r.in_reply_to_user_id_str, linkType: f.ZP.ReplyContextLinkTypes.none, size: "subtext2", tweetPermalink: r.permalink }),
-                        n.createElement(g.Z, { displayTextRange: r.display_text_range, entities: r.entities, isCondensed: !0, numberOfLines: 3, style: S.tweetText, text: l }),
-                        !l &&
-                            (r.extended_entities?.media ?? []).map((e) => {
-                                const t = { ...e, ext_alt_text: void 0 };
-                                return n.createElement(h.Z, { displayMediaTags: !1, hasSensitiveMedia: r.possibly_sensitive, isCondensed: !0, key: `media_${r.id_str}_${e.id_str}`, mediaContentStyles: S.media, mediaDetails: [t], mediaVisibilityResults: r.mediaVisibilityResults, preventPlayback: !0, shouldShowAltLabelAlways: !1, showAltTranslation: !1, showBorder: !1, singleImageMaxAspectRatio: 2, singleImageMinAspectRatio: 2, tweetId: r.id_str, videoAspectRatio: 2, videoOptions: { displayOptions: { badgeConfiguration: { hideDataSize: !0, hideViewCount: !0, hideDuration: !0 } }, hidePreviewPlayButton: !0 }, withCenterCrop: !0, withMediaTagsIcon: !1 });
+            function w({ onClick: e, outerContainerStyle: t, style: a, xPostId: o }) {
+                const r = n.useMemo(() => C.Z.createHydratorForTweet(o || ""), [o]),
+                    i = (0, b.v9)(r);
+                if (!i) return null;
+                const { created_at: l, text: c, user: m } = i;
+                return n.createElement(
+                    d.Z,
+                    {
+                        onClick:
+                            e ||
+                            (() => {
+                                window.open(i.permalink, "_blank");
                             }),
-                    ),
+                        style: [S.outerContainer, t],
+                        withoutInteractiveStyles: !0,
+                    },
+                    ({ isHovered: t }) =>
+                        n.createElement(
+                            s.Z,
+                            { style: [S.container, t ? S.hoveredContainer : void 0, a] },
+                            n.createElement(s.Z, { style: S.headerContainer }, n.createElement(s.Z, { style: S.nameContainer }, n.createElement(p.default, { "aria-label": m.name, borderColor: "gray700", borderWidth: "small", screenName: m.screen_name, size: "medium", uri: m.profile_image_url_https }), n.createElement(u.Z, { affiliateBadgeInfo: m.highlightedLabel, isBlueVerified: m.is_blue_verified, isVerified: m.verified, name: m.name, nameSize: "subtext2", screenName: m.screen_name, screenNameSize: "subtext3", screenNameStyle: S.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: m.verified_type, withHoverCard: !0, withStackedLayout: !0 })), n.createElement(y.Z, { humanReadable: !1, onPress: e, style: S.timestamp, timestamp: l })),
+                            i.in_reply_to_screen_name && n.createElement(f.ZP, { displayTextRange: i.display_text_range, inReplyToName: i.in_reply_to_name, inReplyToScreenName: i.in_reply_to_screen_name, inReplyToUserIdStr: i.in_reply_to_user_id_str, linkType: f.ZP.ReplyContextLinkTypes.none, size: "subtext2", tweetPermalink: i.permalink }),
+                            n.createElement(g.Z, { displayTextRange: i.display_text_range, entities: i.entities, isCondensed: !0, numberOfLines: 3, style: S.tweetText, text: c }),
+                            !c &&
+                                (i.extended_entities?.media ?? []).map((e) => {
+                                    const t = { ...e, ext_alt_text: void 0 };
+                                    return n.createElement(h.Z, { displayMediaTags: !1, hasSensitiveMedia: i.possibly_sensitive, isCondensed: !0, key: `media_${i.id_str}_${e.id_str}`, mediaContentStyles: S.media, mediaDetails: [t], mediaVisibilityResults: i.mediaVisibilityResults, preventPlayback: !0, shouldShowAltLabelAlways: !1, showAltTranslation: !1, showBorder: !1, singleImageMaxAspectRatio: 2, singleImageMinAspectRatio: 2, tweetId: i.id_str, videoAspectRatio: 2, videoOptions: { displayOptions: { badgeConfiguration: { hideDataSize: !0, hideViewCount: !0, hideDuration: !0 } }, hidePreviewPlayButton: !0 }, withCenterCrop: !0, withMediaTagsIcon: !1 });
+                                }),
+                        ),
                 );
             }
-            const S = i.default.create((e) => ({ interactiveContainer: { backgroundColor: "transparent", height: "100%", overflow: "hidden" }, container: { borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray50, padding: e.spaces.space12, textOverflow: "ellipsis", cursor: "pointer", transition: "background-color 0.2s ease", display: "flex", flexDirection: "column", gap: e.spaces.space8, width: 250, height: "100%" }, hoveredContainer: { backgroundColor: e.colors.gray100 }, headerContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space8, textOverflow: "ellipsis", overflow: "hidden" }, nameContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, textOverflow: "ellipsis" }, screenName: { color: e.colors.gray700 }, timestamp: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, textOverflow: "ellipsis", position: "relative", top: 3 }, tweetText: { fontSize: e.fontSizes.subtext2, color: e.colors.gray900 }, media: {} }));
+            const S = i.default.create((e) => ({ outerContainer: { height: "100%", overflow: "hidden" }, container: { borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray50, padding: e.spaces.space12, textOverflow: "ellipsis", cursor: "pointer", transition: "background-color 0.2s ease", display: "flex", flexDirection: "column", gap: e.spaces.space8, width: 250, height: "100%" }, hoveredContainer: { backgroundColor: e.colors.gray100 }, headerContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space8, textOverflow: "ellipsis", overflow: "hidden" }, nameContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, textOverflow: "ellipsis" }, screenName: { color: e.colors.gray700 }, timestamp: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, textOverflow: "ellipsis", position: "relative", top: 3 }, tweetText: { fontSize: e.fontSizes.subtext2, color: e.colors.gray900 }, media: {} }));
             function x({ analyticsMetricPrefix: e = "message-steps", isAnimated: t, scrollViewContentContainerStyle: a, seeMoreButtonStyle: i, style: d, xPostIds: p }) {
                 const u = (0, l.z)(),
                     [y, f] = n.useState(null),
@@ -359,16 +370,16 @@
                     [P, I] = n.useState(!1),
                     { accumulatedTrace: D, isPastSummary: R, state: z, steps: A, traceEnabled: B } = p,
                     M = "COMPLETED" === z,
-                    V = "ABORTED" === z,
-                    _ = n.useRef(null);
+                    _ = "ABORTED" === z,
+                    V = n.useRef(null);
                 n.useEffect(() => {
                     const e = () => {
                         b.current && !x && b.current.scrollToEnd({ animated: !0 }), h.current && !w && h.current.scrollToEnd({ animated: !0 });
                     };
-                    return R || (_.current = window.setInterval(e, 1e3)), () => window.clearInterval(_.current);
+                    return R || (V.current = window.setInterval(e, 1e3)), () => window.clearInterval(V.current);
                 }, [w, x, R]),
                     n.useEffect(() => {
-                        M && !R && window.clearInterval(_.current);
+                        M && !R && window.clearInterval(V.current);
                     }, [M, x, w, R]);
                 const L = n.useCallback((e) => {
                         b.current && b.current.scrollTo({ y: e, animated: !0 });
@@ -389,7 +400,7 @@
                     { style: [u.container, P ? u.expandedContainer : void 0, f ? u.drawerContainer : y ? u.mobileContainer : void 0] },
                     !a &&
                         n.createElement(l.Z, {
-                            aborted: V,
+                            aborted: _,
                             activeStepId: v,
                             completed: M,
                             completedTimestamp: e,
@@ -472,7 +483,7 @@
             function v({ analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: a, isCompactLayout: r, step: i, style: l }) {
                 const c = n.useCallback(
                         (e) => {
-                            if (e.summary) return n.createElement(o.Z, { style: [P.subStepContainer, r && P.compactSubStepContainer] }, n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(S.default, { citations: e.webResults, disableLinks: b.ZP.isWebView(), isAnimated: a, markdownText: e.summary || "" })));
+                            if (e.summary) return n.createElement(o.Z, { style: [P.subStepContainer, r && P.compactSubStepContainer] }, n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(S.default, { citations: e.webResults, disableLinks: b.ZP.isWebView(), isAnimated: a, markdownText: e.summary || "", toolUsageCardResults: e.toolUsageCardResults })));
                         },
                         [a, r],
                     ),
@@ -526,7 +537,7 @@
                     const e = "message-steps-card-sub-step";
                     if (document.getElementById(e)) return;
                     const t = document.createElement("style");
-                    t.setAttribute("id", e), (t.textContent = `\n        .message-steps-card-sub-step-markdown-text {\n          flex: 1;\n          max-width: 100%;\n        }\n  \n        .message-steps-card-sub-step-markdown-text li {\n          margin-top: 4px !important;\n          padding-left: 5px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text ul {\n          margin-bottom: 0px !important;\n          position: relative !important;\n          left: -4px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text span {\n          ${E || x ? `font-size: ${s.default.theme.fontSizes.subtext1} !important;` : ""}\n          line-height: 24px;\n        }\n  \n        .message-steps-card-sub-step-markdown-text a {\n          text-decoration: underline;\n        }\n      `);
+                    t.setAttribute("id", e), (t.textContent = `\n        .message-steps-card-sub-step-markdown-text {\n          flex: 1;\n          max-width: 100%;\n        }\n  \n        .message-steps-card-sub-step-markdown-text li {\n          margin-top: 4px !important;\n          padding-left: 5px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text ul {\n          margin-bottom: 0px !important;\n          position: relative !important;\n          left: -4px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text span {\n          ${E || x ? `font-size: ${s.default.theme.fontSizes.subtext1} !important;` : ""}\n        }\n      `);
                     const a = document.head;
                     return (
                         a && a.appendChild(t),
@@ -937,8 +948,8 @@
                     [Z, P] = n.useState(!1),
                     { accumulatedTrace: I, deepsearchArgs: D, isPastSummary: R, state: z, steps: A, traceEnabled: B } = s,
                     M = "COMPLETED" === z,
-                    V = "ABORTED" === z,
-                    _ = !!D && "deeper" === D.mode,
+                    _ = "ABORTED" === z,
+                    V = !!D && "deeper" === D.mode,
                     L = n.useRef(null);
                 n.useEffect(() => {
                     const e = () => {
@@ -967,7 +978,7 @@
                     o.Z,
                     { style: [v.container, Z ? v.expandedContainer : void 0] },
                     n.createElement(m.Z, {
-                        aborted: V,
+                        aborted: _,
                         activeStepId: w,
                         analyticsMetricPrefix: S,
                         completed: M,
@@ -990,7 +1001,7 @@
                         scrollViewRef: i,
                         setExpanded: P,
                         style: v.leftPanel,
-                        title: x(M, !1, _),
+                        title: x(M, !1, V),
                     }),
                     n.createElement(g.Z, {
                         analyticsMetricPrefix: S,
@@ -1092,4 +1103,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.c7b1230a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.f54a511a.js.map

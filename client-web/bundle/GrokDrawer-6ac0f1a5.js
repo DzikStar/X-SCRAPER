@@ -3,56 +3,69 @@
     ["bundle.GrokDrawer-6ac0f1a5"],
     {
         187268: (e, a, n) => {
-            n.d(a, { Bv: () => f, Jw: () => D, cU: () => k, eC: () => g, rs: () => p, w$: () => y });
+            n.d(a, { CK: () => k, Ez: () => f, QK: () => w, Sd: () => D, eC: () => g, w$: () => y });
             n(543673), n(240753), n(128399);
             var o = n(202784),
                 r = n(392237),
-                d = n(956272),
-                t = n(520913),
-                l = n(913315),
-                s = n(355586),
-                i = n(14284),
+                d = n(784732),
+                t = n(14284),
+                l = n(520913),
+                s = n(913315),
+                i = n(355586),
                 c = n(492244),
                 u = n(397159);
-            const h = /<xai:tool_usage_card>\s*(?:<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)*)<\/xai:tool_usage_card>/g,
-                b = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
-                m = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/;
-            function p(e) {
+            const h = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
+                m = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
+                b = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
+                p = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
+            function f(e) {
                 return e.replace(h, (e) => {
                     const a = (function (e) {
-                        const { toolArgs: a, toolName: n } = w(e);
-                        let o = `<tool_usage_card><tool_name>${n}</tool_name>`;
-                        return (o += `<tool_args>${a}</tool_args>`), (o += "</tool_usage_card>"), o;
+                        const a = e.match(m),
+                            n = e.match(b),
+                            o = e.match(p),
+                            r = a ? a[1] : "",
+                            d = n ? n[1] : "",
+                            t = o ? o[1] : "";
+                        let l = "<tool_usage_card>";
+                        return t && (l += `<tool_usage_card_id>${t}</tool_usage_card_id>`), (l += `<tool_name>${r}</tool_name>`), (l += `<tool_args>${d}</tool_args>`), (l += "</tool_usage_card>"), l;
                     })(e);
                     return a ?? e;
                 });
             }
-            function f(e) {
+            function w(e) {
                 const a = e.match(h);
                 if (a) {
-                    const { toolArgs: e, toolName: n } = w(a[0]);
-                    return D(n, e);
+                    const {
+                        args: e,
+                        id: n,
+                        name: o,
+                    } = (function (e) {
+                        let a = "",
+                            n = "",
+                            o = "";
+                        const r = e.match(p);
+                        r && (a = r[1]);
+                        const d = e.match(m);
+                        d && (n = d[1]);
+                        const t = e.match(b);
+                        t && (o = t[1].trim());
+                        return { id: a, name: n, args: o };
+                    })(a[0]);
+                    return D(n, o, e);
                 }
                 return null;
             }
-            function w(e) {
-                let a = "",
-                    n = "";
-                const o = e.match(b);
-                o && (a = o[1]);
-                const r = e.match(m);
-                return r && (n = r[1].trim()), { toolName: a, toolArgs: n };
-            }
-            function D(e, a) {
-                const n = a.match(/^<!\[CDATA\[(.*?)\]\]>/ms);
-                let o = {};
-                if (n)
+            function D(e, a, n) {
+                const o = n.match(/^<!\[CDATA\[(.*?)\]\]>/ms);
+                let r = {};
+                if (o)
                     try {
-                        o = JSON.parse(n[1]);
+                        r = JSON.parse(o[1]);
                     } catch (e) {
-                        o = {};
+                        r = {};
                     }
-                return { name: e, args: o };
+                return { id: e, name: a, args: r };
             }
             const g = "Using tools";
             function k(e) {
@@ -60,6 +73,9 @@
                     case "web_search":
                         return u.XR.WebSearchQueryFormatter({ query: e.args.query });
                     case "x_search":
+                    case "x_keyword_search":
+                    case "x_semantic_search":
+                    case "x_user_search":
                         return u.XR.XSearchQueryFormatter({ query: e.args.query });
                     case "browse_page": {
                         let a = e.args.url || "";
@@ -78,16 +94,19 @@
                 const a = { style: { width: r.default.theme.spaces.space16, height: r.default.theme.spaces.space16 } };
                 switch (e) {
                     case "search_news":
-                    case "web_search":
                         return o.createElement(d.default, a);
+                    case "web_search":
+                    case "browse_page":
+                        return o.createElement(t.default, a);
                     case "x_search":
                     case "get_x_user_timeline":
-                        return o.createElement(t.default, a);
-                    case "call_finance_api":
+                    case "x_keyword_search":
+                    case "x_semantic_search":
+                    case "x_user_search":
                         return o.createElement(l.default, a);
-                    case "call_sports_api":
+                    case "call_finance_api":
                         return o.createElement(s.default, a);
-                    case "browse_page":
+                    case "call_sports_api":
                         return o.createElement(i.default, a);
                     default:
                         return o.createElement(c.default, a);
@@ -106,8 +125,8 @@
                 c = n(461756),
                 u = n(292484),
                 h = n(528840),
-                b = n(293115),
-                m = n(125363),
+                m = n(293115),
+                b = n(125363),
                 p = n(456228),
                 f = n(551864),
                 w = n(537392),
@@ -116,17 +135,17 @@
                 k = n(786998),
                 y = n(392237),
                 M = n(457566),
-                v = n(725405),
+                _ = n(725405),
                 x = n(550293),
-                A = n(511582);
-            const _ = { header: "GrokDrawerHeader", headerHighlighted: "GrokDrawerHeaderHighlighted", root: "GrokDrawer" };
+                v = n(511582);
+            const A = { header: "GrokDrawerHeader", headerHighlighted: "GrokDrawerHeaderHighlighted", root: "GrokDrawer" };
             var E = n(731708),
                 S = n(111677),
                 C = n.n(S),
                 I = n(952793),
-                N = n(389071),
+                G = n(389071),
                 P = n(189953);
-            function G({ children: e, size: a, weight: n }) {
+            function N({ children: e, size: a, weight: n }) {
                 return r.createElement(d.Z, { style: T.container }, r.createElement(E.ZP, { size: a, style: T.label, weight: n || "normal" }, r.createElement("span", null, e)));
             }
             const T = y.default.create((e) => ({ container: { position: "relative", width: "fit-content", animationDuration: "0.3s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, label: { color: e.colors.transparent, backgroundColor: e.colors.gray600, backgroundImage: `linear-gradient(to right, ${e.colors.gray600} 0%, ${e.colors.gray900} 20%, ${e.colors.gray500} 40%, ${e.colors.gray600} 100%)`, opacity: 1, display: "inline-block", backgroundClip: "text", animationDuration: "0.7s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { backgroundPositionX: "-2em" }, "100%": { backgroundPositionX: "7em" } }] } })),
@@ -135,17 +154,17 @@
                 B = C().d1d92e40;
             function O() {
                 const e = (0, I.hC)("responsive_web_grok_analyze_animation"),
-                    a = (0, m.v9)(N.Es),
-                    n = (0, N.f)({ conversationKey: a }),
-                    o = -1 !== (0, m.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
-                    t = (0, m.v9)(n.selectStatus),
+                    a = (0, b.v9)(G.Es),
+                    n = (0, G.f)({ conversationKey: a }),
+                    o = -1 !== (0, b.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
+                    t = (0, b.v9)(n.selectStatus),
                     l = t === P.Q_.TYPING || t === P.Q_.WAITING;
-                return r.createElement(d.Z, { style: F.titleTextRoot }, o && e ? (l ? r.createElement(G, { size: "headline2", weight: "bold" }, `${Z}...`) : r.createElement(E.ZP, { size: "headline2", style: F.animation }, B)) : r.createElement(E.ZP, null, R));
+                return r.createElement(d.Z, { style: F.titleTextRoot }, o && e ? (l ? r.createElement(N, { size: "headline2", weight: "bold" }, `${Z}...`) : r.createElement(E.ZP, { size: "headline2", style: F.animation }, B)) : r.createElement(E.ZP, null, R));
             }
             const F = y.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(136728);
-            var J = n(154003),
-                L = n(715614),
+            var L = n(154003),
+                J = n(715614),
                 W = n(530243),
                 H = n(52735),
                 X = n(487552),
@@ -155,9 +174,9 @@
             const z = C().fbc79f6a,
                 q = C().a6e89af8,
                 Q = C().d227d19e,
-                Y = C().j7d0e836,
-                K = C().ica55d24,
-                V = { label: K };
+                K = C().j7d0e836,
+                Y = C().ica55d24,
+                V = { label: Y };
             function ee({ conversationUrl: e, handleToggleVisibility: a, isExpanded: n, onClose: o }) {
                 const l = (0, t.useHistory)(),
                     [s, i] = r.useState(!1),
@@ -165,25 +184,25 @@
                         e && (l.push(e), a());
                     }, [a, e, l]),
                     { canClearConversation: u, handleClearConversationClickWithoutNav: h } = (0, U.Z)();
-                return r.createElement(d.Z, { style: ae.rightControls }, r.createElement(J.ZP, { "aria-label": z, hoverLabel: { label: z }, icon: r.createElement(L.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: () => i(!0), type: "primaryText" }), n && e && r.createElement(J.ZP, { "aria-label": q, hoverLabel: { label: q }, icon: r.createElement(W.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: c, type: "primaryText" }), n && u && r.createElement(J.ZP, { "aria-label": K, disabled: !u, hoverLabel: V, icon: r.createElement(H.default, { style: ae.composeIcon }), onPress: h, type: "primaryText" }), n && r.createElement(J.ZP, { "aria-label": Q, hoverLabel: { label: Q }, icon: r.createElement(X.default, null), onPress: a, type: "primaryText" }), !n && r.createElement(J.ZP, { "aria-label": Y, hoverLabel: { label: Y }, icon: r.createElement($.default, null), onPress: a, type: "primaryText" }), s ? r.createElement(j.O, { onDrawerDismiss: () => i(!1) }) : null);
+                return r.createElement(d.Z, { style: ae.rightControls }, r.createElement(L.ZP, { "aria-label": z, hoverLabel: { label: z }, icon: r.createElement(J.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: () => i(!0), type: "primaryText" }), n && e && r.createElement(L.ZP, { "aria-label": q, hoverLabel: { label: q }, icon: r.createElement(W.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: c, type: "primaryText" }), n && u && r.createElement(L.ZP, { "aria-label": Y, disabled: !u, hoverLabel: V, icon: r.createElement(H.default, { style: ae.composeIcon }), onPress: h, type: "primaryText" }), n && r.createElement(L.ZP, { "aria-label": Q, hoverLabel: { label: Q }, icon: r.createElement(X.default, null), onPress: a, type: "primaryText" }), !n && r.createElement(L.ZP, { "aria-label": K, hoverLabel: { label: K }, icon: r.createElement($.default, null), onPress: a, type: "primaryText" }), s ? r.createElement(j.O, { onDrawerDismiss: () => i(!1) }) : null);
             }
             const ae = y.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function ne({ conversationUrl: e }) {
                 const a = r.createRef(),
-                    n = (0, m.I0)(),
-                    o = (0, m.v9)(p.kX) === f.j.EXPANDED,
-                    t = (0, m.v9)(x.kX) === A.S.EXPANDED,
+                    n = (0, b.I0)(),
+                    o = (0, b.v9)(p.kX) === f.j.EXPANDED,
+                    t = (0, b.v9)(x.kX) === v.S.EXPANDED,
                     l = r.useCallback(() => {
                         const e = o ? f.j.COLLAPSED : f.j.EXPANDED;
-                        e === f.j.EXPANDED && t && n(x.bi(A.S.COLLAPSED)), n(p.bi(e));
+                        e === f.j.EXPANDED && t && n(x.bi(v.S.COLLAPSED)), n(p.bi(e));
                     }, [o, n, t]),
                     s = r.useCallback(() => {
                         n(p.bi(f.j.CLOSED));
                     }, [n]),
-                    i = (0, v.Z)();
+                    i = (0, _.Z)();
                 return r.createElement(
                     d.Z,
-                    { ref: a, style: [oe.headerRoot, !o && oe.headerBorderClosed, oe.cursor], testID: _.header },
+                    { ref: a, style: [oe.headerRoot, !o && oe.headerBorderClosed, oe.cursor], testID: A.header },
                     o
                         ? r.createElement(k.Z, { onMiddleControlClick: l, rightControl: r.createElement(ee, { conversationUrl: e, handleToggleVisibility: l, isExpanded: o, onClose: s }), style: oe.roundedAppBarCorners, title: r.createElement(d.Z, { style: oe.titleContainer }, r.createElement(M.x1, null), r.createElement(O, null)) })
                         : r.createElement(
@@ -203,27 +222,22 @@
             const de = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.25"),
-                        n.e("icons.22"),
-                        n.e("icons.6"),
-                        n.e("icons.4"),
-                        n.e("icons.9"),
-                        n.e("icons.15"),
-                        n.e("icons.7"),
-                        n.e("icons.3"),
-                        n.e("icons.20"),
+                        n.e("icons.23"),
+                        n.e("icons.0"),
                         n.e("icons.2"),
-                        n.e("icons.18"),
-                        n.e("icons.27"),
+                        n.e("icons.16"),
+                        n.e("icons.19"),
+                        n.e("icons.10"),
                         n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.7"),
+                        n.e("icons.22"),
+                        n.e("icons.27"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.0"),
-                        n.e("icons.24"),
-                        n.e("icons.17"),
-                        n.e("icons.12"),
                         n.e("icons.11"),
+                        n.e("icons.26"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -234,17 +248,21 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.10"),
                         n.e("icons.8"),
-                        n.e("icons.26"),
-                        n.e("icons.19"),
+                        n.e("icons.4"),
+                        n.e("icons.14"),
+                        n.e("icons.28"),
+                        n.e("icons.21"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
+                        n.e("icons.18"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -319,6 +337,7 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
@@ -366,12 +385,12 @@
                             return a ? e * Math.max(a, 0.5) : Math.min(k, Math.ceil(D.T6 * e));
                         }));
                 var k;
-                const y = (0, m.v9)((e) => p.kX(e)),
+                const y = (0, b.v9)((e) => p.kX(e)),
                     M = y === f.j.EXPANDED,
-                    v = y === f.j.CLOSED;
+                    _ = y === f.j.CLOSED;
                 r.useEffect(() => {
-                    v && l(0);
-                }, [v]);
+                    _ && l(0);
+                }, [_]);
                 const x = r.useCallback(
                         (e) => {
                             const {
@@ -383,19 +402,19 @@
                         },
                         [l],
                     ),
-                    A = r.useMemo(() => [D.ZP.allowPointer, D.ZP.main, M ? { minHeight: g, maxWidth: null } : D.ZP.collapsedSmall], [M, g]);
+                    v = r.useMemo(() => [D.ZP.allowPointer, D.ZP.main, M ? { minHeight: g, maxWidth: null } : D.ZP.collapsedSmall], [M, g]);
                 return (function () {
                     const e = (0, t.useHistory)(),
                         a = e.getLastNonModalLocationPathname() ?? e.location.pathname;
                     return r.useMemo(() => (0, h.z)(a) || a.startsWith("/i/chat") || a.startsWith("/i/communitynotes") || a.startsWith("/messages") || a.startsWith("/i/radar") || a.startsWith("/i/money") || a.startsWith("/i/verified") || a.startsWith("/i/broadcasts/") || a.startsWith("/compose/articles") || a.startsWith("/i/account_analytics") || a.startsWith("/i/conferences-room") || a.startsWith("/i/premium/hiring") || a.startsWith("/i/grok") || a.endsWith("/live"), [a]);
                 })() ||
-                    v ||
+                    _ ||
                     !a
                     ? null
                     : r.createElement(
                           s.Z.GrokDrawer,
                           null,
-                          r.createElement(i.Z, { id: "GrokDrawer" }, (a, t) => r.createElement(b.nO, { namespace: re }, r.createElement(d.Z, (0, o.Z)({ ref: a() }, t({ style: [D.ZP.denyPointer, D.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && D.ZP.reducedMotion], testID: _.root })), r.createElement(d.Z, { onLayout: x, style: A }, r.createElement(ne, { conversationUrl: "/i/grok" }), M && r.createElement(de, null))))),
+                          r.createElement(i.Z, { id: "GrokDrawer" }, (a, t) => r.createElement(m.nO, { namespace: re }, r.createElement(d.Z, (0, o.Z)({ ref: a() }, t({ style: [D.ZP.denyPointer, D.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && D.ZP.reducedMotion], testID: A.root })), r.createElement(d.Z, { onLayout: x, style: v }, r.createElement(ne, { conversationUrl: "/i/grok" }), M && r.createElement(de, null))))),
                       );
             }
         },
@@ -413,8 +432,8 @@
                 u = n(725405);
             n(571372);
             var h = n(623494),
-                b = n(737368);
-            const m = 4,
+                m = n(737368);
+            const b = 4,
                 p = l().h4d7cbcc,
                 f = l().j77292b7,
                 w = { onGrokFileSelected: (e) => new Promise((e) => e()), onFileSelected: (e, a) => new Promise((e) => e()), selectedFiles: {}, clearSelectedFile: () => {} },
@@ -423,8 +442,8 @@
                 const [a, n] = o.useState({}),
                     r = (0, c.p)(),
                     t = (0, u.Z)(),
-                    l = (0, b.k)(),
-                    w = (0, i.JY)("responsive_web_grok_file_upload_max_files", m),
+                    l = (0, m.k)(),
+                    w = (0, i.JY)("responsive_web_grok_file_upload_max_files", b),
                     g = o.useCallback(
                         (e) => {
                             const o = a[e];
@@ -518,15 +537,15 @@
                 c = n(125363),
                 u = n(458810),
                 h = n(623494),
-                b = n(620988);
-            const m = d().c74e87e0,
+                m = n(620988);
+            const b = d().c74e87e0,
                 p = d().bea50a2a,
                 f = (e) => e.toLowerCase().replace(/\/$/, ""),
                 w = () => {
                     const e = (0, s.p)(),
                         a = (0, i.z)(),
                         n = (0, c.I0)(),
-                        r = (0, b.x9)(),
+                        r = (0, m.x9)(),
                         d = (0, l.hC)("responsive_web_grok_file_compression_enabled"),
                         w = (0, l.JY)("responsive_web_grok_file_max_size", 5242880);
                     return o.useCallback(
@@ -551,9 +570,9 @@
                                 try {
                                     n = await (0, t.hv)(o, w);
                                 } catch (e) {}
-                                if (!n) throw (e({ text: m }), (0, h.op)(a, "failed to compress the file"), new Error());
+                                if (!n) throw (e({ text: b }), (0, h.op)(a, "failed to compress the file"), new Error());
                                 s = n;
-                            } else if (o.size > w) throw (e({ text: m }), (0, h.op)(a, "file is too large"), new Error());
+                            } else if (o.size > w) throw (e({ text: b }), (0, h.op)(a, "file is too large"), new Error());
                             const i = await n((0, u.t)(s, l));
                             return (0, h.Jm)(a), i;
                         },
@@ -562,7 +581,7 @@
                 };
         },
         654917: (e, a, n) => {
-            n.d(a, { ZP: () => p, eX: () => b, uf: () => m });
+            n.d(a, { ZP: () => p, eX: () => m, uf: () => b });
             var o = n(202784),
                 r = n(107267),
                 d = n(323265),
@@ -573,21 +592,21 @@
                 c = n(389071),
                 u = n(63538),
                 h = n(623494);
-            function b() {
+            function m() {
                 const e = (0, r.useHistory)(),
                     a = (0, i.v9)(c.Es);
                 return (0, t.HD)(e) ? (0, t.tT)(e) : a;
             }
-            function m() {
-                const e = b(),
+            function b() {
+                const e = m(),
                     a = (0, i.I0)(),
                     n = (0, i.v9)((a) => (0, c.YJ)(a, e));
                 return (0, i.v9)(n.selectIsInitialized) || a((0, c.Ki)(e)), n;
             }
             function p() {
                 const { userClaims: e } = (0, l.QZ)(),
-                    a = b(),
-                    n = m(),
+                    a = m(),
+                    n = b(),
                     r = (0, i.v9)(n.selectMessageIds),
                     t = (0, i.I0)(),
                     p = (0, i.v9)(n.selectFetchConversationIdStatus),
@@ -598,25 +617,25 @@
                     k = (0, i.v9)(n.selectConversationId),
                     y = (0, i.v9)(c.pZ),
                     M = (0, i.v9)(c.uF),
-                    v = (0, i.v9)(c.F9),
+                    _ = (0, i.v9)(c.F9),
                     x = (0, i.v9)(n.selectAnalysisEntityId),
-                    A = (0, i.v9)(n.selectUsingExperiment);
-                let _ = !1;
+                    v = (0, i.v9)(n.selectUsingExperiment);
+                let A = !1;
                 const E = (0, s.hC)("responsive_web_grok_general_availability");
-                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (_ = "premium") : (E || M) && (_ = y.length > 0 ? "restricted" : "free");
+                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (A = "premium") : (E || M) && (A = y.length > 0 ? "restricted" : "free");
                 const S = o.useCallback(
                         async (e, a) => {
-                            w !== e && (t(n.setMode(e)), d.ZP.isTwitterApp() || (await t((0, u.O)(e, v))), (0, h.RC)(a, e));
+                            w !== e && (t(n.setMode(e)), d.ZP.isTwitterApp() || (await t((0, u.O)(e, _))), (0, h.RC)(a, e));
                         },
-                        [t, n, w, v],
+                        [t, n, w, _],
                     ),
                     C = o.useCallback(
                         async (e, a, n) => {
-                            e !== v && (t((0, c.j1)(e, a)), d.ZP.isTwitterApp() || (await t((0, u.O)(w, e))), (0, h.JO)(n, e));
+                            e !== _ && (t((0, c.j1)(e, a)), d.ZP.isTwitterApp() || (await t((0, u.O)(w, e))), (0, h.JO)(n, e));
                         },
-                        [t, w, v],
+                        [t, w, _],
                     );
-                return { messageIds: r, access: _, status: D, grokSettingsStatus: g, conversationKey: a, conversationId: k, analysisEntityId: x, accessRestrictedReasons: y, fetchConversationIdStatus: p, fetchConversationIdError: f, mode: w, model: v, changeMode: S, changeModel: C, usingExperiment: A };
+                return { messageIds: r, access: A, status: D, grokSettingsStatus: g, conversationKey: a, conversationId: k, analysisEntityId: x, accessRestrictedReasons: y, fetchConversationIdStatus: p, fetchConversationIdError: f, mode: w, model: _, changeMode: S, changeModel: C, usingExperiment: v };
             }
         },
         305442: (e, a, n) => {
@@ -627,7 +646,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => m, G$: () => l, HO: () => _, HR: () => I, JO: () => w, Jm: () => x, NH: () => N, RC: () => f, S7: () => C, UV: () => G, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => b, eS: () => v, eV: () => A, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => P, zX: () => T });
+            n.d(a, { DE: () => b, G$: () => l, HO: () => A, HR: () => I, JO: () => w, Jm: () => x, NH: () => G, RC: () => f, S7: () => C, UV: () => N, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => m, eS: () => _, eV: () => v, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => P, zX: () => T });
             var o = n(163889);
             function r() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -656,10 +675,10 @@
             function h(e, a, n) {
                 Z(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: a, error: n }) } });
             }
-            function b(e, a) {
+            function m(e, a) {
                 Z(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(a) } });
             }
-            function m(e) {
+            function b(e) {
                 Z(e)({ element: "abort", action: "click" });
             }
             function p(e) {
@@ -686,16 +705,16 @@
             function M(e, a) {
                 Z(e)({ element: "api-add-response", action: "fail", data: { event_info: `${a}\n${r()}` } });
             }
-            function v(e, a) {
+            function _(e, a) {
                 Z(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: a ? "first_chunk" : void 0 } });
             }
             function x(e) {
                 Z(e)({ element: "file-upload", action: "success" });
             }
-            function A(e, a) {
+            function v(e, a) {
                 Z(e)({ element: "file-upload", action: "fail", data: { event_info: a } });
             }
-            function _(e, a) {
+            function A(e, a) {
                 Z(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: a ? "post_details" : "timeline" } });
             }
             function E(e, a, n) {
@@ -710,13 +729,13 @@
             function I(e, a, n) {
                 Z(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant, followUpText: n }) } });
             }
-            function N(e) {
+            function G(e) {
                 Z(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
             function P(e, a) {
                 Z(e)({ element: "grok-memory-detail", action: "click", data: { event_info: a } });
             }
-            function G(e, a) {
+            function N(e, a) {
                 Z(e)({ element: "grok-memory-forget", action: "click", data: { event_info: a } });
             }
             function T(e, a, n) {
@@ -731,4 +750,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.15a342ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.c5af306a.js.map

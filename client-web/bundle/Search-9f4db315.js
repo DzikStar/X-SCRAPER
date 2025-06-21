@@ -49,12 +49,6 @@
             }
             (u.contextType = c.Z), (u.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
-        33104: (e, t, a) => {
-            a.d(t, { Z: () => r });
-            a(202784);
-            var o = a(325686);
-            const r = (0, a(337455).Z)(o.Z);
-        },
         789831: (e, t, a) => {
             a.d(t, { Z: () => l });
             var o = a(807896),
@@ -644,33 +638,6 @@
             const d = r().i1801686,
                 i = { [n.ZP.GenericForbidden]: { toast: (0, s.j)() }, [n.ZP.InvalidRequestUrl]: { toast: { text: d, withClearButton: !0 } }, showToast: !0 };
         },
-        337455: (e, t, a) => {
-            a.d(t, { Z: () => i });
-            var o = a(202784),
-                r = a(411916),
-                n = a.n(r),
-                s = a(373463),
-                d = a.n(s);
-            function i(e) {
-                class t extends o.Component {
-                    constructor(e, t) {
-                        super(e, t), (this.state = { shouldRender: !1 }), (this._mounted = !0);
-                    }
-                    componentWillUnmount() {
-                        this._mounted = !1;
-                    }
-                    componentDidMount() {
-                        n()(() => {
-                            this._mounted && this.setState({ shouldRender: !0 });
-                        });
-                    }
-                    render() {
-                        return this.state.shouldRender ? o.createElement(e, this.props) : null;
-                    }
-                }
-                return d()(t, e);
-            }
-        },
         951790: (e, t, a) => {
             a.d(t, { Z: () => s });
             var o = a(323265);
@@ -851,27 +818,22 @@
             const g = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.5"),
-                        a.e("icons.25"),
-                        a.e("icons.22"),
-                        a.e("icons.6"),
-                        a.e("icons.4"),
-                        a.e("icons.9"),
-                        a.e("icons.15"),
-                        a.e("icons.7"),
-                        a.e("icons.3"),
-                        a.e("icons.20"),
+                        a.e("icons.23"),
+                        a.e("icons.0"),
                         a.e("icons.2"),
-                        a.e("icons.18"),
-                        a.e("icons.27"),
+                        a.e("icons.16"),
+                        a.e("icons.19"),
+                        a.e("icons.10"),
                         a.e("icons.13"),
+                        a.e("icons.24"),
+                        a.e("icons.7"),
+                        a.e("icons.22"),
+                        a.e("icons.27"),
+                        a.e("icons.17"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.0"),
-                        a.e("icons.24"),
-                        a.e("icons.17"),
-                        a.e("icons.12"),
                         a.e("icons.11"),
+                        a.e("icons.26"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -882,17 +844,21 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.10"),
                         a.e("icons.8"),
-                        a.e("icons.26"),
-                        a.e("icons.19"),
+                        a.e("icons.4"),
+                        a.e("icons.14"),
+                        a.e("icons.28"),
+                        a.e("icons.21"),
+                        a.e("icons.3"),
+                        a.e("icons.1"),
+                        a.e("icons.18"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -967,6 +933,7 @@
                         a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         a.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         a.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
+                        a.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         a.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
                         a.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         a.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
@@ -1045,8 +1012,8 @@
                     .propsFromActions(() => ({ addToast: D.fz, createLocalApiErrorHandler: (0, L.zr)("SEARCH_SCREEN"), deleteSavedSearch: q.k9, fetchSavedSearchesIfNeeded: q.l9, saveSearch: q.GL, scribeAction: R.n }))
                     .withAnalytics({ page: "search" });
             a(136728), a(901951);
-            var W = a(811176),
-                Q = a(517747),
+            var Q = a(811176),
+                W = a(517747),
                 j = a(956272),
                 J = a(698891),
                 K = a(982866),
@@ -1068,7 +1035,7 @@
                     l = (0, ee.hC)("responsive_web_saved_search_enabled"),
                     c = [];
                 return (
-                    n || c.push({ Icon: Q.default, testID: te, text: de, link: { pathname: "/i/search_filters", query: s.query } }),
+                    n || c.push({ Icon: W.default, testID: te, text: de, link: { pathname: "/i/search_filters", query: s.query } }),
                     c.push({ Icon: j.default, testID: ae, text: ie, link: { pathname: "/search-advanced", query: { ...(0, Y.Z)(s.query, ["src"]) } } }),
                     a &&
                         (c.unshift({ Icon: J.default, testID: oe, text: se, link: "/settings/search" }),
@@ -1091,13 +1058,13 @@
                                           e(), i();
                                       },
                                   }))),
-                    o.createElement(W.Z, { items: c, onCloseRequested: d })
+                    o.createElement(Q.Z, { items: c, onCloseRequested: d })
                 );
             };
             var ue = a(476984),
                 pe = a.n(ue),
-                me = a(842623),
-                be = a(33104),
+                me = a(108362),
+                be = a(842623),
                 Se = a(789831),
                 we = a(959658),
                 _e = a(32677),
@@ -1113,7 +1080,7 @@
                 Ce = (0, F.Z)()
                     .propsFromState(() => ({ dataLookupId: Z.XN, isBackNavigation: ke, searchMode: Z.Jm, urtEndpointOptions: Ee }))
                     .propsFromActions(() => ({ clearTimelineCache: ({ fetchOptions: e, module: t }) => (0, De.Z)(t, e), createLocalApiErrorHandler: (0, L.zr)("SEARCH_RESULTS_SCREEN") })),
-                Ae = (e) => (e && (0, me.Z)(e) ? { defaultText: ` ${e}`, positionCursorAtBeginning: !0 } : void 0);
+                Ae = (e) => (e && (0, be.Z)(e) ? { defaultText: ` ${e}`, positionCursorAtBeginning: !0 } : void 0);
             class Me extends o.Component {
                 constructor(...e) {
                     super(...e),
@@ -1141,7 +1108,7 @@
                         { featureSwitches: d, viewerUserId: i } = this.context,
                         l = !(!i || !d.isTrue("voice_rooms_search_results_page_audiospace_ring_enabled")),
                         c = this._getSearchMode();
-                    return o.createElement(Se.Z, { component: be.Z, fab: this._renderFloatingComposeButton(), shouldRenderFab: !r }, o.createElement(we.b.Provider, { query: e }, o.createElement(ye.Z, { fetchOptions: this._getFetchOptions(), query: e, querySrc: t, searchFilters: a, searchMode: c, urtEndpointOptions: n, vertical: s, withUserPresence: l })));
+                    return o.createElement(Se.Z, { component: me.Z, fab: this._renderFloatingComposeButton(), shouldRenderFab: !r }, o.createElement(we.b.Provider, { query: e }, o.createElement(ye.Z, { fetchOptions: this._getFetchOptions(), query: e, querySrc: t, searchFilters: a, searchMode: c, urtEndpointOptions: n, vertical: s, withUserPresence: l })));
                 }
                 _renderFloatingComposeButton() {
                     const { history: e } = this.props;
@@ -1315,4 +1282,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-9f4db315.06af54aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Search-9f4db315.f6df6bea.js.map

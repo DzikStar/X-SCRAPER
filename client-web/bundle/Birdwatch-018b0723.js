@@ -3,7 +3,7 @@
     ["bundle.Birdwatch-018b0723"],
     {
         333577: (e, t, a) => {
-            a.d(t, { Z: () => V });
+            a.d(t, { Z: () => U });
             var n = a(202784),
                 i = a(325686),
                 o = a(731708),
@@ -23,25 +23,26 @@
                 g = a(720728),
                 E = a(942893),
                 y = a(556303),
-                Z = a(933610),
-                C = a(531187),
-                S = a(921068),
-                v = a(318124),
-                T = a(978163),
-                x = a(819119),
-                k = a(4076),
-                B = a(300698),
-                P = a(584364),
-                I = a(214748),
-                N = a(694461),
-                A = a(950492),
-                H = a(606121),
-                R = a(357972);
-            const O = p().bd7eb888,
-                L = n.createElement(o.ZP, { color: "primary" }, O),
-                F = p().i97b83f6,
-                D = p().a038ab9a;
-            class M extends n.Component {
+                Z = a(312771),
+                C = a(933610),
+                S = a(531187),
+                v = a(921068),
+                T = a(318124),
+                x = a(978163),
+                k = a(819119),
+                B = a(4076),
+                P = a(300698),
+                I = a(584364),
+                N = a(214748),
+                A = a(694461),
+                H = a(950492),
+                R = a(606121),
+                O = a(357972);
+            const L = p().bd7eb888,
+                F = n.createElement(o.ZP, { color: "primary" }, L),
+                D = p().i97b83f6,
+                M = p().a038ab9a;
+            class z extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._updateShowSignupPrompt = (e) => {
@@ -121,7 +122,7 @@
                                 .then(() => {
                                     this.setState({ appealsRequestOpen: !1 }), this.setState({ appealRequested: !0 });
                                 })
-                                .catch(t({ defaultToast: { text: F, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }));
+                                .catch(t({ defaultToast: { text: D, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }));
                         }),
                         (this._handleOpenAppealsModal = () => {
                             this.setState({ appealsRequestOpen: !0 });
@@ -133,7 +134,7 @@
                             const {
                                 note: { is_media_note: t, is_url_note: a, max_match_post_id_from_crh: n, rating_status: i, time_to_crh_from_note: o, time_to_crh_from_post: l },
                             } = this.props;
-                            if (i !== C.VE.CurrentlyRatedHelpful) return !1;
+                            if (i !== S.VE.CurrentlyRatedHelpful) return !1;
                             const { featureSwitches: r } = this.context,
                                 s = r.getNumberValue("responsive_web_birdwatch_fast_crh_time_from_note_cutoff"),
                                 c = r.getNumberValue("responsive_web_birdwatch_fast_crh_time_from_post_cutoff");
@@ -144,7 +145,7 @@
                             const {
                                 note: { data_v1: e, rating_status: t },
                             } = this.props;
-                            return t === C.VE.CurrentlyRatedHelpful && e?.classification === Z.pq;
+                            return t === S.VE.CurrentlyRatedHelpful && e?.classification === C.pq;
                         }),
                         (this._renderTweet = (e, t, a, i) => (t && void 0 === e ? n.createElement(w.Z, { inline: !0 }) : t && a ? n.createElement(_.Z, { isCondensed: !0, shouldShowBorder: !i, tweetId: e, withBirdwatchPivot: !1 }) : null)),
                         (this._isInlineTranslationEnabled = () => {
@@ -165,79 +166,80 @@
                 render() {
                     const {
                             note: e,
-                            note: { is_media_note: t, is_url_note: a, display_url: c, media_note_matches_v2: d, created_at: p, data_v1: b, helpful_tags: _ = [], impression_count: E, not_helpful_tags: Z = [], rating: C, rating_status: H, rest_id: O, tombstone: F, tweetId: M, tweet: V, fully_visible_model: U },
-                            tweetIdForRating: W,
-                            showPivot: $,
+                            note: { is_media_note: t, is_url_note: a, display_url: c, media_note_matches_v2: d, created_at: p, data_v1: b, helpful_tags: _ = [], impression_count: E, not_helpful_tags: C = [], rating: S, rating_status: R, rest_id: L, tombstone: D, tweetId: z, tweet: U, fully_visible_model: W },
+                            tweetIdForRating: $,
+                            showPivot: G,
                             showRating: j,
                             showTweet: q,
-                            isNotePage: G,
+                            isNotePage: Y,
                         } = this.props,
-                        { featureSwitches: Y } = this.context,
-                        Q = (0, y.F)(Y, "") ? "button" : void 0,
-                        K = V?.media_note_category,
-                        J = !1 === e?.is_in_account_language,
-                        X = e?.noteTranslation,
-                        ee = e?.streamedNoteTranslation,
-                        te = W || M || V?.rest_id,
-                        ae = b?.summary?.text || "",
-                        ne = b?.summary?.entities || [],
-                        ie = Y.isTrue("responsive_web_birdwatch_media_notes_enabled"),
-                        oe = Y.getNumberValue("responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff") >= 0,
-                        le = Y.isTrue("responsive_web_birdwatch_rating_participant_enabled"),
-                        re = Y.isTrue("responsive_web_birdwatch_rating_crowd_enabled"),
-                        se = Y.isTrue("responsive_web_birdwatch_signup_prompt_enabled"),
-                        ce = Y.isTrue("responsive_web_birdwatch_note_writing_enabled"),
-                        de = Y.isTrue("responsive_web_birdwatch_translation_enabled"),
-                        pe = (le || Y.isTrue("responsive_web_birdwatch_rating_crowd_enabled")) && !this._isOwner() && j && !F,
-                        ue = de && J,
-                        he = ue && this._isInlineTranslationEnabled(),
-                        me = Q ? ee?.result?.text || "" : X?.result?.text || "",
-                        be = Q ? ee?.result?.entities || [] : X?.result?.entities || [],
-                        _e = G && void 0 !== C,
-                        fe = this.state.showSignupPrompt && G && re && se && !ce && void 0 !== C,
-                        we = this.state.appealsRequestOpen,
-                        { birdwatch_profile: ge } = this.props.note,
-                        Ee = ge?.alias || "",
-                        ye = ge?.notes_count ? (0, m.u)(ge.notes_count) : 0,
-                        Ze = ge?.ratings_count ? (0, m.v)(ge.ratings_count) : 0;
+                        { featureSwitches: Q } = this.context,
+                        K = (0, y.F)(Q, "") ? "button" : void 0,
+                        J = U?.media_note_category,
+                        X = !1 === e?.is_in_account_language,
+                        ee = e?.noteTranslation,
+                        te = e?.streamedNoteTranslation,
+                        ae = $ || z || U?.rest_id,
+                        ne = b?.summary?.text || "",
+                        ie = b?.summary?.entities || [],
+                        oe = Q.isTrue("responsive_web_birdwatch_media_notes_enabled"),
+                        le = Q.getNumberValue("responsive_web_birdwatch_media_note_eligible_writer_impact_cutoff") >= 0,
+                        re = Q.isTrue("responsive_web_birdwatch_rating_participant_enabled"),
+                        se = Q.isTrue("responsive_web_birdwatch_rating_crowd_enabled"),
+                        ce = Q.isTrue("responsive_web_birdwatch_signup_prompt_enabled"),
+                        de = Q.isTrue("responsive_web_birdwatch_note_writing_enabled"),
+                        pe = Q.isTrue("responsive_web_birdwatch_translation_enabled"),
+                        ue = (re || Q.isTrue("responsive_web_birdwatch_rating_crowd_enabled")) && !this._isOwner() && j && !D,
+                        he = pe && X,
+                        me = he && this._isInlineTranslationEnabled(),
+                        be = K ? te?.result?.text || "" : ee?.result?.text || "",
+                        _e = K && te?.fetchStatus === Z.ZP.LOADING,
+                        fe = K ? te?.result?.entities || [] : ee?.result?.entities || [],
+                        we = Y && void 0 !== S,
+                        ge = this.state.showSignupPrompt && Y && se && ce && !de && void 0 !== S,
+                        Ee = this.state.appealsRequestOpen,
+                        { birdwatch_profile: ye } = this.props.note,
+                        Ze = ye?.alias || "",
+                        Ce = ye?.notes_count ? (0, m.u)(ye.notes_count) : 0,
+                        Se = ye?.ratings_count ? (0, m.v)(ye.ratings_count) : 0;
                     return n.createElement(
                         i.Z,
-                        { key: O, styles: "noteContainer" },
-                        this.state.noteDetailsOpen && n.createElement(T.Z, { alias: Ee, closeNoteDetails: () => this.setState({ noteDetailsOpen: !1 }), created_at: p, note: e, ratingImpact: Ze, rest_id: O, tweet: V, tweetIdForRating: te, writingImpact: ye }),
-                        we && n.createElement(S.Z, { handleCloseAppealsModal: this._handleCloseAppealsModal, handleRequestAppeal: this._handleRequestAppeal }),
+                        { key: L, styles: "noteContainer" },
+                        this.state.noteDetailsOpen && n.createElement(x.Z, { alias: Ze, closeNoteDetails: () => this.setState({ noteDetailsOpen: !1 }), created_at: p, note: e, ratingImpact: Se, rest_id: L, tweet: U, tweetIdForRating: ae, writingImpact: Ce }),
+                        Ee && n.createElement(v.Z, { handleCloseAppealsModal: this._handleCloseAppealsModal, handleRequestAppeal: this._handleRequestAppeal }),
                         n.createElement(
                             i.Z,
-                            { style: [z.noteTweetAndRatingContainer, G && z.noteTweetAndRatingContainerWithBorder] },
-                            this._renderTweet(te, q, b, G),
-                            G && n.createElement(l.Z, null),
+                            { style: [V.noteTweetAndRatingContainer, Y && V.noteTweetAndRatingContainerWithBorder] },
+                            this._renderTweet(ae, q, b, Y),
+                            Y && n.createElement(l.Z, null),
                             n.createElement(
                                 i.Z,
-                                { style: [q && z.noteWithQT, G && z.noteAndHeaderWithBorder] },
-                                n.createElement(i.Z, { style: z.noteHeader }, n.createElement(P.w, { createdAt: p, isShownOnTwitter: this._isShownOnTwitter(), onNoteDetailsClick: this._onNoteDetailsClick, ownNote: this.props.ownNote, ratingStatus: H, shouldShowFastBadge: this._shouldShowFastBadge(te) }), F ? null : n.createElement(i.Z, { style: z.menu }, n.createElement(x.Z, { handleDeleteConfirm: this._handleDeleteConfirm, handleOpenNoteDetails: this._onNoteDetailsClick, isOwner: this._isOwner(), note: e, scribeOnClick: this._scribeOnClick, style: z.menu }))),
+                                { style: [q && V.noteWithQT, Y && V.noteAndHeaderWithBorder] },
+                                n.createElement(i.Z, { style: V.noteHeader }, n.createElement(I.w, { createdAt: p, isShownOnTwitter: this._isShownOnTwitter(), onNoteDetailsClick: this._onNoteDetailsClick, ownNote: this.props.ownNote, ratingStatus: R, shouldShowFastBadge: this._shouldShowFastBadge(ae) }), D ? null : n.createElement(i.Z, { style: V.menu }, n.createElement(k.Z, { handleDeleteConfirm: this._handleDeleteConfirm, handleOpenNoteDetails: this._onNoteDetailsClick, isOwner: this._isOwner(), note: e, scribeOnClick: this._scribeOnClick, style: V.menu }))),
                                 n.createElement(r.Z, { size: "space4" }),
-                                n.createElement(N.t, { fullyVisibleModel: U, impressionCount: E, isShownOnTwitter: this._isShownOnTwitter() }),
+                                n.createElement(A.t, { fullyVisibleModel: W, impressionCount: E, isShownOnTwitter: this._isShownOnTwitter() }),
                                 n.createElement(r.Z, { size: "space4" }),
-                                n.createElement(i.Z, { style: z.noteBody }, F ? n.createElement(w.Z, { inline: !0 }, n.createElement(f.Z, { entities: F.entities, rtl: F.rtl, text: F.text })) : n.createElement(n.Fragment, null, n.createElement(I.c, { helpful_tags: _, not_helpful_tags: Z, rating_status: H }), (t || a) && ie && H && n.createElement(i.Z, { style: z.mediaNoteContainer }, t ? n.createElement(u.default, { style: z.icon }) : n.createElement(h.default, { style: z.icon }), n.createElement(r.Z, { size: "space8" }), n.createElement(o.ZP, { color: "gray700", size: "subtext2", style: z.subtext }, (0, R.L)(d, K, H, V?.rest_id, te, O, a, c, oe)), n.createElement(r.Z, { size: "space8" })), n.createElement(r.Z, { size: "space8" }), n.createElement(i.Z, { style: z.noteTextSection }, !he && n.createElement(f.Z, { entities: ne, onEntityClick: this._handleEntityClick, text: ae }), ue ? n.createElement(i.Z, { style: z.translatedNoteTextSection }, n.createElement(g.Z, { fetchTranslation: this._fetchNoteTranslation, streamedTranslationFetchStatus: ee?.fetchStatus, translateButtonText: D, translateTargetType: "community_note", translatedMessage: "" !== me ? n.createElement(f.Z, { animateIn: !0, entities: be, onEntityClick: this._handleEntityClick, text: me }) : void 0, translationFetchStatus: X?.fetchStatus, translationSource: Q ? "Grok" : "Google", useGrokTranslation: Q, withOriginalText: he }, he ? n.createElement(f.Z, { entities: ne, onEntityClick: this._handleEntityClick, text: ae }) : void 0)) : null))),
+                                n.createElement(i.Z, { style: V.noteBody }, D ? n.createElement(w.Z, { inline: !0 }, n.createElement(f.Z, { entities: D.entities, rtl: D.rtl, text: D.text })) : n.createElement(n.Fragment, null, n.createElement(N.c, { helpful_tags: _, not_helpful_tags: C, rating_status: R }), (t || a) && oe && R && n.createElement(i.Z, { style: V.mediaNoteContainer }, t ? n.createElement(u.default, { style: V.icon }) : n.createElement(h.default, { style: V.icon }), n.createElement(r.Z, { size: "space8" }), n.createElement(o.ZP, { color: "gray700", size: "subtext2", style: V.subtext }, (0, O.L)(d, J, R, U?.rest_id, ae, L, a, c, le)), n.createElement(r.Z, { size: "space8" })), n.createElement(r.Z, { size: "space8" }), n.createElement(i.Z, { style: V.noteTextSection }, !me && n.createElement(f.Z, { entities: ie, onEntityClick: this._handleEntityClick, text: ne }), he ? n.createElement(i.Z, { style: V.translatedNoteTextSection }, n.createElement(g.Z, { fetchTranslation: this._fetchNoteTranslation, streamedTranslationFetchStatus: te?.fetchStatus, translateButtonText: M, translateTargetType: "community_note", translatedMessage: "" !== be ? n.createElement(f.Z, { animateIn: _e, entities: fe, onEntityClick: this._handleEntityClick, text: be }) : void 0, translationFetchStatus: ee?.fetchStatus, translationSource: K ? "Grok" : "Google", useGrokTranslation: K, withOriginalText: me }, me ? n.createElement(f.Z, { entities: ie, onEntityClick: this._handleEntityClick, text: ne }) : void 0)) : null))),
                             ),
-                            pe ? n.createElement(B._, { hasVisitedEntity: this.state.hasVisitedEntity, isNotePage: G, note: e, setHasVisitedEntity: this._setHasVisitedEntity, tweetId: te, updateShowSignupPrompt: this._updateShowSignupPrompt }) : null,
+                            ue ? n.createElement(P._, { hasVisitedEntity: this.state.hasVisitedEntity, isNotePage: Y, note: e, setHasVisitedEntity: this._setHasVisitedEntity, tweetId: ae, updateShowSignupPrompt: this._updateShowSignupPrompt }) : null,
                         ),
-                        _e && n.createElement(k.Q, null),
-                        fe && n.createElement(A.Z, null),
-                        n.createElement(v.F, { appealRequested: this.state.appealRequested, canAppeal: !!e.can_appeal, handleOpenAppealsModal: this._handleOpenAppealsModal }),
-                        $ && te && le && n.createElement(s.Z, null, n.createElement(o.ZP, { link: `/i/communitynotes/t/${te}`, onPress: this._scribeOnClick("pivot"), style: [z.pivot, q && z.pivotWithQT], withInteractiveStyling: !1 }, L)),
+                        we && n.createElement(B.Q, null),
+                        ge && n.createElement(H.Z, null),
+                        n.createElement(T.F, { appealRequested: this.state.appealRequested, canAppeal: !!e.can_appeal, handleOpenAppealsModal: this._handleOpenAppealsModal }),
+                        G && ae && re && n.createElement(s.Z, null, n.createElement(o.ZP, { link: `/i/communitynotes/t/${ae}`, onPress: this._scribeOnClick("pivot"), style: [V.pivot, q && V.pivotWithQT], withInteractiveStyling: !1 }, F)),
                     );
                 }
             }
-            (M.defaultProps = { showPivot: !1, showRating: !0, showTweet: !1 }), (M.contextType = b.rC);
-            const z = c.default.create((e) => ({ noteHeader: { display: "flex", flexDirection: "row", justifyContent: "space-between", wrap: "wrap" }, rightControls: { flexDirection: "row" }, noteBody: { flex: 9, flexBasis: "0%" }, noteInfoMiddots: { alignItems: "center", flexDirection: "row", overflow: "hidden", flexWrap: "wrap" }, noteTweetAndRatingContainer: { margin: e.spaces.space12 }, noteTweetAndRatingContainerWithBorder: { overflow: "hidden", borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, marginTop: 0 }, noteTextSection: { display: "inline", flexDirection: "row", paddingBottom: e.spaces.space4, paddingTop: e.spaces.space4 }, noteTextSectionInlineTranslation: { display: "flex", flexDirection: "column-reverse" }, translatedNoteTextSection: { marginTop: e.spaces.space4 }, mediaNoteContainer: { flexDirection: "row" }, noteContainer: { marginStart: e.spaces.space12, marginEnd: e.spaces.space12, backgroundColor: "red" }, noteAndHeaderWithBorder: { marginBottom: e.spaces.space4, padding: e.spaces.space12, paddingTop: e.spaces.space8 }, noteWithQT: { paddingTop: e.spaces.space12, paddingStart: e.spaces.space12 }, pivot: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, pivotWithQT: { paddingHorizontal: e.spaces.space28 }, subtext: { paddingBottom: e.spaces.space4 }, timestamp: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, icon: { flexShrink: "0", height: e.spaces.space16, width: e.spaces.space16, color: e.colors.gray700 }, menu: { flexShrink: "0", alignItems: "flex-start" } })),
-                V = (0, H.Z)(M);
+            (z.defaultProps = { showPivot: !1, showRating: !0, showTweet: !1 }), (z.contextType = b.rC);
+            const V = c.default.create((e) => ({ noteHeader: { display: "flex", flexDirection: "row", justifyContent: "space-between", wrap: "wrap" }, rightControls: { flexDirection: "row" }, noteBody: { flex: 9, flexBasis: "0%" }, noteInfoMiddots: { alignItems: "center", flexDirection: "row", overflow: "hidden", flexWrap: "wrap" }, noteTweetAndRatingContainer: { margin: e.spaces.space12 }, noteTweetAndRatingContainerWithBorder: { overflow: "hidden", borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, marginTop: 0 }, noteTextSection: { display: "inline", flexDirection: "row", paddingBottom: e.spaces.space4, paddingTop: e.spaces.space4 }, noteTextSectionInlineTranslation: { display: "flex", flexDirection: "column-reverse" }, translatedNoteTextSection: { marginTop: e.spaces.space4 }, mediaNoteContainer: { flexDirection: "row" }, noteContainer: { marginStart: e.spaces.space12, marginEnd: e.spaces.space12, backgroundColor: "red" }, noteAndHeaderWithBorder: { marginBottom: e.spaces.space4, padding: e.spaces.space12, paddingTop: e.spaces.space8 }, noteWithQT: { paddingTop: e.spaces.space12, paddingStart: e.spaces.space12 }, pivot: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, pivotWithQT: { paddingHorizontal: e.spaces.space28 }, subtext: { paddingBottom: e.spaces.space4 }, timestamp: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, icon: { flexShrink: "0", height: e.spaces.space16, width: e.spaces.space16, color: e.colors.gray700 }, menu: { flexShrink: "0", alignItems: "flex-start" } })),
+                U = (0, R.Z)(z);
         },
         452066: (e, t, a) => {
             a.d(t, { Z: () => n });
             const n = { helpfulRatingTags: "helpfulRatingTags", notHelpfulRatingTags: "notHelpfulRatingTags", ratedHelpfulLabel: "ratedHelpfulLabel", ratingStatus: "ratingStatus" };
         },
         832762: (e, t, a) => {
-            a.r(t), a.d(t, { BirdwatchNotificationSettingsScreen: () => G, default: () => K });
+            a.r(t), a.d(t, { BirdwatchNotificationSettingsScreen: () => q, default: () => K });
             var n = a(807896),
                 i = (a(136728), a(202784)),
                 o = a(325686),
@@ -288,15 +290,15 @@
                 U = b().c23420ec,
                 W = b().c76031ee,
                 $ = b().be4f9106,
-                j = b().fae059c6,
-                q = b().cfd2f35e,
-                G = (e) => {
+                G = b().fae059c6,
+                j = b().cfd2f35e,
+                q = (e) => {
                     const { featureSwitches: t } = i.useContext(g.rC),
                         { addToast: a, createLocalApiErrorHandler: h, editNotificationSettings: m, fetchAuthenticatedUserProfile: b, notificationSettings: S, removeUser: v } = e,
                         T = (0, l.useHistory)(),
                         [x, k] = i.useState(S),
                         [B, N] = i.useState(!1),
-                        G = () => {
+                        q = () => {
                             N(!0);
                         },
                         K = () => {
@@ -328,7 +330,7 @@
                         }, [S]);
                     const ee = t.isTrue("responsive_web_birdwatch_self_remove_enabled"),
                         te = i.createElement(o.Z, null, i.createElement(r.Z, null), i.createElement(s.ZP, { style: Y.selfRemoveConfirmationText, weight: "heavy" }, z), i.createElement(r.Z, null), i.createElement(s.ZP, { size: "subtext2", style: Y.selfRemoveConfirmationText }, V), i.createElement(r.Z, null), i.createElement(s.ZP, { size: "subtext2", style: Y.selfRemoveConfirmationText }, U), i.createElement(r.Z, null), i.createElement(s.ZP, { size: "subtext2", style: Y.selfRemoveConfirmationText }, W), i.createElement(r.Z, null), i.createElement(s.ZP, { size: "subtext2", style: Y.selfRemoveConfirmationText }, $), i.createElement(r.Z, null)),
-                        ae = () => i.createElement(i.Fragment, null, i.createElement(c.Z, { text: O }), i.createElement(d.Z, { description: Q, label: I, name: "nyh_notification_settings", onChange: X, options: A, value: x }), i.createElement(r.Z, null), i.createElement(c.Z, { text: L }), i.createElement(p.Z, { label: F, link: "/i/flow/language_selector" }), ee ? i.createElement(o.Z, { style: Y.selfRemovePivot }, i.createElement(p.Z, { label: D, onPress: G })) : null, ee && B ? i.createElement(u.Z, { actionLabel: j, graphicDisplayMode: "none", headline: M, onAction: K, onSecondaryAction: J, secondaryActionLabel: q, subtext: te }) : null),
+                        ae = () => i.createElement(i.Fragment, null, i.createElement(c.Z, { text: O }), i.createElement(d.Z, { description: Q, label: I, name: "nyh_notification_settings", onChange: X, options: A, value: x }), i.createElement(r.Z, null), i.createElement(c.Z, { text: L }), i.createElement(p.Z, { label: F, link: "/i/flow/language_selector" }), ee ? i.createElement(o.Z, { style: Y.selfRemovePivot }, i.createElement(p.Z, { label: D, onPress: q })) : null, ee && B ? i.createElement(u.Z, { actionLabel: G, graphicDisplayMode: "none", headline: M, onAction: K, onSecondaryAction: J, secondaryActionLabel: j, subtext: te }) : null),
                         ne = () => i.createElement(Z.Z, null);
                     return i.createElement(
                         E.Z,
@@ -341,7 +343,7 @@
                 },
                 Y = h.default.create((e) => ({ appBar: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, settingsContainer: { marginHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16 }, subtext: { paddingBottom: e.spaces.space8 }, selfRemovePivot: { cursor: "pointer" }, selfRemoveConfirmationText: { paddingBottom: e.spaces.space8, paddingTop: e.spaces.space8 } })),
                 Q = i.createElement(o.Z, { style: Y.subtext }, i.createElement(s.ZP, null, N)),
-                K = B(G);
+                K = B(q);
         },
         539429: (e, t, a) => {
             a.d(t, { Z: () => ae });
@@ -396,18 +398,18 @@
                 U = b().ca6f04ec,
                 W = b().j24c37b2,
                 $ = n.createElement(o.ZP, { color: "gray700", link: (0, l.ju)("https://communitynotes.x.com/guide"), withInteractiveStyling: !0, withUnderline: !0 }),
-                j = n.createElement(b().I18NFormatMessage, { $i18n: "i8fa1313" }, n.cloneElement($, null, b().af198630)),
+                G = n.createElement(b().I18NFormatMessage, { $i18n: "i8fa1313" }, n.cloneElement($, null, b().af198630)),
+                j = n.createElement(o.ZP, { weight: "bold" }),
                 q = n.createElement(o.ZP, { weight: "bold" }),
-                G = n.createElement(o.ZP, { weight: "bold" }),
                 Y = n.createElement(o.ZP, { weight: "bold" }),
-                Q = n.createElement(b().I18NFormatMessage, { $i18n: "had203a9" }, n.cloneElement(q, null, b().d39720d3)),
-                K = n.createElement(b().I18NFormatMessage, { $i18n: "h42a21df" }, n.cloneElement(G, null, b().i7d91dc9)),
+                Q = n.createElement(b().I18NFormatMessage, { $i18n: "had203a9" }, n.cloneElement(j, null, b().d39720d3)),
+                K = n.createElement(b().I18NFormatMessage, { $i18n: "h42a21df" }, n.cloneElement(q, null, b().i7d91dc9)),
                 J = n.createElement(b().I18NFormatMessage, { $i18n: "c3d1a1b1" }, n.cloneElement(Y, null, b().c75b7fb4)),
                 X = { 0: "BirdwatchNyhNotification", 1: "BirdwatchHomeRatedHelpful", 2: "BirdwatchHomeNew", 3: "BirdwatchHomeNeedsYourHelp", 4: "BirdwatchHomeNoteRequest", 5: "BirdwatchOverflowMenu", 6: "BirdwatchForYouTimeline", 7: "BirdwatchFollowingTimeline", 8: "BirdwatchPostDetail", 9: "BirdwatchUnknown", 10: "BirdwatchCorrectionNotification" },
                 ee = { "/i/communitynotes/recent_note_request": "BirdwatchHomeNoteRequest", "/i/birdwatch/recent_note_request": "BirdwatchHomeNoteRequest", "/i/communitynotes/new": "BirdwatchHomeNew", "/i/birdwatch/new": "BirdwatchHomeNew", "/i/communitynotes/needs_your_help": "BirdwatchHomeNeedsYourHelp", "/i/birdwatch/needs_your_help": "BirdwatchHomeNeedsYourHelp", "/i/communitynotes": "BirdwatchHomeNeedsYourHelp", "/i/communitynotes/rated_helpful": "BirdwatchHomeRatedHelpful", "/i/birdwatch/rated_helpful": "BirdwatchHomeRatedHelpful" },
                 te = h.default.create((e) => ({ button: { alignSelf: "center" }, checkbox: { paddingVertical: e.spaces.space8 }, checkboxContainer: { paddingTop: e.spaces.space12 }, helpfulButtons: { flex: "auto", marginHorizontal: e.spaces.space2 }, helpfulContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, helpfulOptions: { flexDirection: "row" }, helpfulQuestionMobile: { paddingBottom: e.spaces.space8 }, icon: { color: e.colors.text, paddingEnd: e.spaces.space12 }, iconDataPrivacy: { color: e.colors.primary, height: e.spaces.space20, width: e.spaces.space20, paddingTop: e.spaces.space4, paddingEnd: e.spaces.space20 }, anonymousCrowdText: { display: "inline" }, infoItemContainer: { paddingHorizontal: 0 }, root: { backgroundColor: e.colors.gray0, padding: e.spaces.space16 }, withBorderRadius: { borderRadius: e.borderRadii.medium }, row: { alignItems: "center", flex: 1, flexDirection: "row", width: "100%" }, showSubmittedRating: { backgroundColor: e.colors.green0, flexDirection: "row", justifyContent: "space-between" }, privacyWarning: { paddingVertical: e.spaces.space24 }, matchGroupView: { paddingTop: e.spaces.space8, paddingBottom: e.spaces.space12 }, matchGroupText: { paddingVertical: e.spaces.space4 } })),
                 ae = I((e) => {
-                    const { addFlag: t, analytics: a, birdwatchPath: l, classifiedMisleading: h, createLocalApiErrorHandler: m, createRating: x, deleteRating: k, fetchSignupEligiblity: B, hasVisitedEntity: P, note: I, noteHasSources: $, noteId: q, noteRatingStatus: G, rating: Y, setShowSignupPrompt: ae, shouldShowDataPrivacyPrompt: ne, tweetId: ie, withBorderRadius: oe = !0 } = e,
+                    const { addFlag: t, analytics: a, birdwatchPath: l, classifiedMisleading: h, createLocalApiErrorHandler: m, createRating: x, deleteRating: k, fetchSignupEligiblity: B, hasVisitedEntity: P, note: I, noteHasSources: $, noteId: j, noteRatingStatus: q, rating: Y, setShowSignupPrompt: ae, shouldShowDataPrivacyPrompt: ne, tweetId: ie, withBorderRadius: oe = !0 } = e,
                         { featureSwitches: le } = n.useContext(C.rC),
                         [re, se] = n.useState(Y),
                         [ce, de] = n.useState((0, g.Z)(Y)),
@@ -440,7 +442,7 @@
                         },
                         Te = () => {
                             ve("delete"),
-                                k(q)
+                                k(j)
                                     .then((e) => {
                                         if ("Done" === e.birdwatchnote_rating_delete) {
                                             const e = Object.freeze({});
@@ -455,7 +457,7 @@
                         ke = () => {
                             const e = E.ZP.isTwitterApp() ? (E.ZP.isAndroid() ? "BirdwatchAndroid" : "BirdwatchIos") : "BirdwatchWeb";
                             ve("submit"),
-                                x(q, re, ie, ge, e)
+                                x(j, re, ie, ge, e)
                                     .then((e) => {
                                         const { error_code: t } = e;
                                         t && v.h.hasOwnProperty(t)
@@ -495,7 +497,7 @@
                         },
                         Ae = (e) => () => {
                             var t;
-                            (t = e), !$ || null === Ce || "control" === Ce || "Helpful" !== t || P || G !== T.VE.NeedsMoreRatings || ("soft_nudge" === Ce && be) || (be && "require_click" !== Ce) ? (I.is_url_note ? se((t) => ({ ...t, helpfulness_level: e, note_match: { all_url_note_match: !0 } })) : I.is_media_note ? se((t) => ({ ...t, helpfulness_level: e, note_match: { all_media_note_match: !0 } })) : se((t) => ({ ...t, helpfulness_level: e }))) : ue(!0);
+                            (t = e), !$ || null === Ce || "control" === Ce || "Helpful" !== t || P || q !== T.VE.NeedsMoreRatings || ("soft_nudge" === Ce && be) || (be && "require_click" !== Ce) ? (I.is_url_note ? se((t) => ({ ...t, helpfulness_level: e, note_match: { all_url_note_match: !0 } })) : I.is_media_note ? se((t) => ({ ...t, helpfulness_level: e, note_match: { all_media_note_match: !0 } })) : se((t) => ({ ...t, helpfulness_level: e }))) : ue(!0);
                         },
                         He = (0, c.yu)(),
                         Re = n.createElement(
@@ -508,7 +510,7 @@
                                 H.map((e) => n.createElement(d.ZP, { key: e.value, onClick: Ae(e.value), size: "small", style: te.helpfulButtons, type: re?.helpfulness_level === e.value ? "brandFilled" : "brandOutlined" }, e.label)),
                             ),
                         ),
-                        Oe = ye && n.createElement(o.ZP, { color: "gray700", style: te.privacyWarning }, j),
+                        Oe = ye && n.createElement(o.ZP, { color: "gray700", style: te.privacyWarning }, G),
                         Le = void 0 !== re?.helpfulness_level,
                         Fe = Le && ("Helpful" === re?.helpfulness_level || "SomewhatHelpful" === re?.helpfulness_level),
                         De = Le && ("NotHelpful" === re?.helpfulness_level || "SomewhatHelpful" === re?.helpfulness_level),
@@ -550,7 +552,7 @@
                                           const e = I.media_note_matches_v2?.match_count || 0,
                                               t = I.tweet?.media_note_category,
                                               a = I.display_url || "",
-                                              l = { matchesLink: Number(e) > 0 ? n.createElement(o.ZP, { color: "blue500", link: `/i/communitynotes/m/${q}`, withInteractiveStyling: !0, withUnderline: !0 }) : n.createElement(o.ZP, { color: "gray700" }), displayUrlLink: n.createElement(o.ZP, { color: "blue500", link: I.display_url, withInteractiveStyling: !0, withUnderline: !0 }) },
+                                              l = { matchesLink: Number(e) > 0 ? n.createElement(o.ZP, { color: "blue500", link: `/i/communitynotes/m/${j}`, withInteractiveStyling: !0, withUnderline: !0 }) : n.createElement(o.ZP, { color: "gray700" }), displayUrlLink: n.createElement(o.ZP, { color: "blue500", link: I.display_url, withInteractiveStyling: !0, withUnderline: !0 }) },
                                               r = [
                                                   { label: b().b7ec04f4, helpText: I.is_url_note ? b().dc9c823a : "SingleVideo" === t ? b().da0bb868 : "SingleImage" === t ? b().e8694748 : b().b487e12e, value: "Yes" },
                                                   { label: b().i62a03aa, helpText: I.is_url_note ? b().hfdb963e : "SingleVideo" === t ? b().bd6742c2 : "SingleImage" === t ? b().ded3a8a2 : b().c1e42c92, value: "No" },
@@ -877,7 +879,7 @@
                 ];
         },
         283369: (e, t, a) => {
-            a.d(t, { Uu: () => K, UB: () => G, wy: () => Y, tF: () => q, Bk: () => J });
+            a.d(t, { Uu: () => K, UB: () => q, wy: () => Y, tF: () => j, Bk: () => J });
             var n = a(807896),
                 i = a(202784),
                 o = a(325686),
@@ -934,14 +936,14 @@
                         { label: (0, m.Z)({ label: H }), description: i.createElement(V, null), decoration: i.createElement(h.Z, { content: U(), style: _.grayBadge }) },
                     ],
                 },
-                j = ({ buttonType: e = "primaryFilled", ctaButtonLabel: t, ctaLink: a, infoGroupProps: c, subtitle: d, title: p }) => i.createElement(o.Z, { style: _.infoGroupWithTitleAndCTAContainer }, i.createElement(l.ZP, { color: "text", size: "title2", weight: "heavy" }, p), d && i.createElement(l.ZP, { color: "gray700", size: "subtext2" }, d), c && i.createElement(r.Z, (0, n.Z)({ containerStyle: _.infoGroupContainer }, c)), a && i.createElement(o.Z, null, i.createElement(s.ZP, { alignContent: "center", link: a, type: e }, t))),
-                q = () => i.createElement(j, { ctaButtonLabel: C, ctaLink: S, infoGroupProps: W, title: f }),
-                G = () => i.createElement(j, { infoGroupProps: $, title: x }),
-                Y = () => i.createElement(i.Fragment, null, i.createElement(j, { ctaButtonLabel: T, ctaLink: S, title: v }), i.createElement(o.Z, { style: _.inlineCalloutNoteStatuses }, i.createElement(b.Z, null))),
+                G = ({ buttonType: e = "primaryFilled", ctaButtonLabel: t, ctaLink: a, infoGroupProps: c, subtitle: d, title: p }) => i.createElement(o.Z, { style: _.infoGroupWithTitleAndCTAContainer }, i.createElement(l.ZP, { color: "text", size: "title2", weight: "heavy" }, p), d && i.createElement(l.ZP, { color: "gray700", size: "subtext2" }, d), c && i.createElement(r.Z, (0, n.Z)({ containerStyle: _.infoGroupContainer }, c)), a && i.createElement(o.Z, null, i.createElement(s.ZP, { alignContent: "center", link: a, type: e }, t))),
+                j = () => i.createElement(G, { ctaButtonLabel: C, ctaLink: S, infoGroupProps: W, title: f }),
+                q = () => i.createElement(G, { infoGroupProps: $, title: x }),
+                Y = () => i.createElement(i.Fragment, null, i.createElement(G, { ctaButtonLabel: T, ctaLink: S, title: v }), i.createElement(o.Z, { style: _.inlineCalloutNoteStatuses }, i.createElement(b.Z, null))),
                 Q = (0, u.h)({ decorationStyle: _.blueBadge }),
-                K = () => i.createElement(j, { buttonType: "primaryOutlined", ctaButtonLabel: D, ctaLink: "https://twitter.github.io/communitynotes/examples", infoGroupProps: Q, subtitle: F, title: L }),
-                J = () => i.createElement(o.Z, { style: _.emptyStateContainer }, i.createElement(j, { subtitle: z, title: M }));
+                K = () => i.createElement(G, { buttonType: "primaryOutlined", ctaButtonLabel: D, ctaLink: "https://twitter.github.io/communitynotes/examples", infoGroupProps: Q, subtitle: F, title: L }),
+                J = () => i.createElement(o.Z, { style: _.emptyStateContainer }, i.createElement(G, { subtitle: z, title: M }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.13af827a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.7959fb5a.js.map

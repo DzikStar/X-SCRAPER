@@ -1281,31 +1281,34 @@
                 t("c3f04d9c", "Tænker"),
                 t("cbdddb0a", "Fuldført"),
                 t("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return 'Søger efter "' + e.query + '"';
                 }),
                 t("b0d1e205", function (e) {
                     return 'Søger efter **"' + e.query + '"**';
                 }),
+                t("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 t("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return 'Søger på 𝕏 efter "' + e.query + '"';
                 }),
                 t("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return "Gennemser " + e.url;
                 }),
                 t("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return "Gennemser " + e.url + ' efter "' + e.query + '"';
                 }),
                 t("acb9b845", function (e) {
                     return "Gennemser " + e.url + ' for **"' + e.query + '"**';
                 }),
                 t("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "Søger i 𝕏-posts af @" + e.username;
                 }),
                 t("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "Søger i 𝕏-posts af @" + e.username + ' efter "' + e.query + '"';
                 }),
                 t("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "Søger i 𝕏-posts af @" + e.username + ' efter **"' + e.query + '"**';
                 }),
                 t("ead81122", "Noget gik galt, opdater venligst for at genoprette forbindelsen eller prøv igen. "),
                 t("f808a13a", "Begrænsning overskredet. Vent et øjeblik, og prøv igen."),
@@ -1317,8 +1320,8 @@
                 t("j77292b7", function (e) {
                     return "Vælg kun op til " + e.count + " fil" + i(e.count, "", "er");
                 }),
-                t("d6b533dc", "Rate this translation:"),
-                t("j2f9ab6e", "Thank you for your feedback!"),
+                t("d6b533dc", "Bedøm denne oversættelse:"),
+                t("j2f9ab6e", "Tak for din feedback!"),
                 t("d56779a2", "nem at forstå"),
                 t("b6fe8a56", "forvirrende eller uklar"),
                 t("i73a7d48", "Oversat af Google"),
@@ -1349,7 +1352,7 @@
                     return "Oversat fra " + e.originLanguage + " af";
                 }),
                 t("b7cb4fab", "Oversat af"),
-                t("e0bffbf8", "About automatic translation"),
+                t("e0bffbf8", "Om automatisk oversættelse"),
                 t("e839db3a", "Afvis"),
                 t("a15585b4", "Sprogindstillinger"),
                 t("d4c339b9", function (e) {
@@ -1918,9 +1921,9 @@
                 t("a8f09fb8", "Slet blok"),
                 t("i89195ea", "Skillelinje"),
                 t("da8ac57c", "Rediger billedtekst"),
-                t("a8fdd09c", "Udgiv Artikel"),
-                t("d8047cc8", "Udgiv");
-            t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
+                t("a8fdd09c", "Udgiv Artikel");
+            t("d8047cc8", "Udgiv"),
+                t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
                 t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet."),
                 t("e52d4998", "Vælg din målgruppe"),
                 t("d7985b24", "Vælg, hvem der kan svare på denne artikel"),
@@ -2974,9 +2977,9 @@
                     return e.entity + " blev fjernet fra dine bogmærker";
                 }),
                 t("d6d9aab6", "Tilføj bogmærke"),
-                t("bb89cf46", "Fjern bogmærke"),
-                t("a739d4ba", "Føj til mappe med bogmærker");
-            t("d5270434", "Afslut"),
+                t("bb89cf46", "Fjern bogmærke");
+            t("a739d4ba", "Føj til mappe med bogmærker"),
+                t("d5270434", "Afslut"),
                 t("ac85c6b2", "Der opstod en fejl under indlæsning af dette billede"),
                 t("b327c12a", "Billede"),
                 t("ic76bdf0", "Genskab dette med Grok"),
@@ -3900,9 +3903,9 @@
                 t("cd133486", "Inviter"),
                 t("f2333850", "Del med personer uden for X"),
                 t("cddb8097", "Læs mere"),
-                t("f77997b0", "Medvært"),
-                t("i48f4ed8", "Taler");
-            t("a77c8e02", "Lytter"),
+                t("f77997b0", "Medvært");
+            t("i48f4ed8", "Taler"),
+                t("a77c8e02", "Lytter"),
                 t("bdfa93eb", function (e) {
                     return "Delt af " + e.name;
                 }),
@@ -4183,10 +4186,10 @@
                 t("j7b5c844", "Du er ansvarlig for de samtaler, du deler offentligt. Undgå at dele følsomme og fortrolige oplysninger om dig selv eller andre i dine samtaler med Grok (se vores hjælpecenter)."),
                 t("c9f7c196", "Hjælpecenter"),
                 t("fb3b9776", "Groks output er blevet tilpasset af denne bruger."),
-                t("b0a889d4", "As Image"),
-                t("a111fb48", "As Spreadsheet"),
-                t("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                t("bd202fe6", "Generating card"),
+                t("b0a889d4", "Som billede"),
+                t("a111fb48", "Som regneark"),
+                t("bccc65f0", "Grok kan begå fejl. Tjek altid de originale kilder."),
+                t("bd202fe6", "Genererer kort"),
                 t("bfd161bc", "Sammenlign"),
                 t("j5dcf1b2", "Opdateret"),
                 t("a50aaa10", "Formarked"),
@@ -4218,8 +4221,8 @@
                 t("dd679fb1", function (e) {
                     return "Laveste niveau nogensinde" + e.ttc_stock_details;
                 }),
-                t("ha9c4cf8", "View source"),
-                t("ecad5d78", "Save image"),
+                t("ha9c4cf8", "Vis kilde"),
+                t("ecad5d78", "Gem billede"),
                 t("d2d1d398", "Kopieret!"),
                 t("a22063d2", "Del din lokalitet for bedre nøjagtighed."),
                 t("db3248a8", "Indlæser lokalitet"),
@@ -4254,12 +4257,10 @@
                 t("d66bf142", "tor"),
                 t("dc17968a", "fre"),
                 t("j310a2d6", "lør"),
-                t("afa2a58e", "See all posts"),
-                t("fc83e7e2", "See all users"),
-                t("df601d92", "Relevant Users"),
                 t("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "Vis alle (" + e.count + ")";
                 }),
+                t("df601d92", "Relevante brugere"),
                 t("d7cb5408", "Relevante websider"),
                 t("ca93f2ee", "Denne besked er blevet slettet."),
                 t("b8c06820", "Kopiér teksten"),
@@ -4329,7 +4330,7 @@
                 t("db832e38", "Aktiver meddelelser i browserindstillingerne"),
                 t("a910cac6", "Der opstod et problem ved aktivering af meddelelser"),
                 t("be30b6ee", "Ustabil forbindelse"),
-                t("ge15b488", "Show thoughts"),
+                t("ge15b488", "Vis tanker"),
                 t("aa7c96bb", function (e) {
                     return "Se " + e.numResults + " mere";
                 }),
@@ -4339,7 +4340,7 @@
                 t("g3ce0132", "Tænkte i"),
                 t("f8007364", "Udvid for detaljer"),
                 t("ca53f780", "Skjul detaljer"),
-                t("e6d51c62", "Searching"),
+                t("e6d51c62", "Søger"),
                 t("ib1c5475", function (e) {
                     return "Tanke for " + e.minutes + "m " + e.seconds + "s";
                 }),
@@ -4925,9 +4926,9 @@
                 t("e41fffbc", "Den samlede visningstid for dine videoer."),
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig beta-adgang");
-            t("gf898b70", "Avanceret søgning"),
-                t("d2a43a7a", 'indeholder både "ai" og "startup"'),
+                t("ed99baea", "Tidlig beta-adgang"),
+                t("gf898b70", "Avanceret søgning");
+            t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'indeholder den eksakte sætning "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5881,9 +5882,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Slet mappe");
-            t("f4ea967a", "Mappen er blevet slettet"),
-                t("b670aa62", "Mappenavn"),
+                t("h18f86a4", "Slet mappe"),
+                t("f4ea967a", "Mappen er blevet slettet");
+            t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er blevet opdateret"),
                 t("e3299b94", "Noget gik galt. Prøv at opdatere mappen igen om et øjeblik."),
                 t("c09ea714", "Noget gik galt. Prøv at slette mappen igen om et øjeblik."),
@@ -6887,9 +6888,9 @@
                 t("c924ad84", "Fortsæt med afspilning af videoer"),
                 t("de750a3c", "Nyd dem, selv når din telefon er låst"),
                 t("he5e87c4", "Boost dine svar"),
-                t("g64a60ba", "Få en smule prioritering, når du svarer på opslag");
-            t("a7ee832a", "Få rettet dine stave- og slåfejl på under 60 minutter"),
-                t("fdd77a34", "Skab længere opslag"),
+                t("g64a60ba", "Få en smule prioritering, når du svarer på opslag"),
+                t("a7ee832a", "Få rettet dine stave- og slåfejl på under 60 minutter");
+            t("fdd77a34", "Skab længere opslag"),
                 t("j6d26a7a", "Skriv ligeså meget, som du har lyst til at dele"),
                 t("c4fd68da", "Tilpas din oplevelse"),
                 t("c0195168", "Skift dit app-ikon og dine navigationsmuligheder"),
@@ -7867,7 +7868,10 @@
                 t("b719e224", "Ingen resultater"),
                 t("c9938100", "Søgeresultater"),
                 t("d1a35ec6", "Tilføj konti"),
-                t("b437adda", "Opgrader til betalt");
+                t("b437adda", "Opgrader til betalt"),
+                t("f1f6c88b", function (e) {
+                    return "Konti (" + e.count + ")";
+                });
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7906,10 +7910,7 @@
                     a(e, r)
                 );
             }
-            t("f1f6c88b", function (e) {
-                return "Konti (" + e.count + ")";
-            }),
-                t("b02156b8", "Invitationer"),
+            t("b02156b8", "Invitationer"),
                 t("gd67d29b", function (e) {
                     return "Invitationer (" + e.count + ")";
                 }),
@@ -8280,7 +8281,7 @@
                 t("e5e6479e", "Send os en e-mail med navnet på din organisation og nærmere oplysninger om din forespørgsel for at få den hurtigste support."),
                 t("ica8392a", "Når vi har modtaget din anmodning, gennemgår og prioriterer vi den i den rækkefølge, vi har modtaget den."),
                 t("ed37e36e", "Vigtigt: Hvis brugernavnet på din organisation mangler, eller du bruger en personlig e-mail, kan det medføre forsinkelser i behandlingen af din anmodning."),
-                t("h7e1c146", "Delegate accounts are not currently supported."),
+                t("h7e1c146", "Uddelegerede konti understøttes ikke i øjeblikket."),
                 t("eb0d4fe2", "Opret en kolonne"),
                 t("e93d2f8a", "Tilpas din oplevelse ved at tilføje forskellige kolonner såsom:"),
                 t("e8203d1e", "Søgninger"),
@@ -8909,9 +8910,9 @@
                 t("a7bf9962", "Download video"),
                 t("ccc97152", "Afspilningshastighed"),
                 t("h531ade0", "Videokvalitet"),
-                t("e8b5757c", "0,25x");
-            t("e7e954de", "0,5x"),
-                t("g07ffe66", "0,75x"),
+                t("e8b5757c", "0,25x"),
+                t("e7e954de", "0,5x");
+            t("g07ffe66", "0,75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1,25x"),
                 t("e9eeed9e", "1,5x"),
@@ -13336,4 +13337,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.ab2f1cba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.2bb88aca.js.map

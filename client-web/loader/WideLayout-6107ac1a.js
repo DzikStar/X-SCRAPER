@@ -1,488 +1,402 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.WideLayout-6107ac1a"],
     {
-        879113: (e, t, n) => {
+        669506: (e, l, n) => {
             "use strict";
-            n.d(t, { Z: () => h });
-            var r = n(202784),
-                o = n(476984),
-                a = n.n(o),
+            n.d(l, { Z: () => d });
+            var a,
+                t,
+                r,
+                i,
+                s,
+                o,
+                u,
+                c = {
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "JobRecommendationsModuleQuery", selections: [{ kind: "RequiredField", field: { alias: null, args: (a = [{ kind: "Literal", name: "s", value: "f3d8" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(t = { alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "consented_at", storageKey: null }], storageKey: null }), { alias: null, args: (r = [{ kind: "Literal", name: "count", value: 5 }]), concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "JobSearchListItem_item" }], storageKey: null }], storageKey: "job_recommendations_results(count:5)" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"f3d8")' }, action: "THROW" }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: [],
+                        kind: "Operation",
+                        name: "JobRecommendationsModuleQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: a,
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                    {
+                                                        kind: "InlineFragment",
+                                                        selections: [
+                                                            t,
+                                                            {
+                                                                alias: null,
+                                                                args: r,
+                                                                concreteType: "ApiJobResults",
+                                                                kind: "LinkedField",
+                                                                name: "job_recommendations_results",
+                                                                plural: !0,
+                                                                selections: [
+                                                                    i,
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: null,
+                                                                        kind: "LinkedField",
+                                                                        name: "result",
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                            s,
+                                                                            { kind: "TypeDiscriminator", abstractKey: "__isJobResult" },
+                                                                            {
+                                                                                kind: "InlineFragment",
+                                                                                selections: [
+                                                                                    (o = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "JobCore",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "core",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "redirect_url", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
+                                                                                    { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [o, i, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [o, i, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                                                    { alias: null, args: null, kind: "ScalarField", name: "user_sentiment", storageKey: null },
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "UserResults",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "user_results",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            {
+                                                                                                alias: null,
+                                                                                                args: null,
+                                                                                                concreteType: null,
+                                                                                                kind: "LinkedField",
+                                                                                                name: "result",
+                                                                                                plural: !1,
+                                                                                                selections: [
+                                                                                                    s,
+                                                                                                    {
+                                                                                                        kind: "InlineFragment",
+                                                                                                        selections: [
+                                                                                                            i,
+                                                                                                            { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, u], storageKey: null },
+                                                                                                            {
+                                                                                                                alias: null,
+                                                                                                                args: null,
+                                                                                                                concreteType: "UserVerification",
+                                                                                                                kind: "LinkedField",
+                                                                                                                name: "verification",
+                                                                                                                plural: !1,
+                                                                                                                selections: [
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                                ],
+                                                                                                                storageKey: null,
+                                                                                                            },
+                                                                                                            { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }], storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                                                                                            o,
+                                                                                                        ],
+                                                                                                        type: "User",
+                                                                                                        abstractKey: null,
+                                                                                                    },
+                                                                                                ],
+                                                                                                storageKey: null,
+                                                                                            },
+                                                                                            o,
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
+                                                                                ],
+                                                                                type: "ApiJob",
+                                                                                abstractKey: null,
+                                                                            },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
+                                                                    o,
+                                                                ],
+                                                                storageKey: "job_recommendations_results(count:5)",
+                                                            },
+                                                            o,
+                                                        ],
+                                                        type: "User",
+                                                        abstractKey: null,
+                                                    },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            o,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"f3d8")',
+                            },
+                        ],
+                    },
+                    params: { id: "0fTKmeS38bqgfttp4H1jSg", metadata: {}, name: "JobRecommendationsModuleQuery", operationKind: "query", text: null },
+                };
+            c.hash = "37b14a1d47b77462d15eba2689e65519";
+            const d = c;
+        },
+        879113: (e, l, n) => {
+            "use strict";
+            n.d(l, { Z: () => m });
+            var a = n(202784),
+                t = n(476984),
+                r = n.n(t),
                 i = n(143778),
-                c = n(750410),
-                l = n(682830);
-            const s = "failed",
-                u = "loaded",
+                s = n(750410),
+                o = n(682830);
+            const u = "failed",
+                c = "loaded",
                 d = "loading",
-                m = "none";
-            class h extends r.Component {
+                g = "none";
+            class m extends a.Component {
                 shouldComponentUpdate(e) {
-                    const t = e.fetchStatus === u,
+                    const l = e.fetchStatus === c,
                         n = this.props.fetchStatus !== e.fetchStatus;
-                    return !(!t && !n) || !a()(e, this.props);
+                    return !(!l && !n) || !r()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: n, fetchStatus: o, icon: a, loadingMessage: i, onRequestRetry: u, render: h, renderFailure: p, retryMessage: f, retryable: g } = this.props;
-                    switch (o) {
-                        case s:
-                            return g ? r.createElement(c.Z, { icon: a, onRequestRetry: u, retryMessage: f }) : n ? r.createElement(l.m, { failureMessage: n }) : p();
+                    const { "aria-label": e, color: l, failureMessage: n, fetchStatus: t, icon: r, loadingMessage: i, onRequestRetry: c, render: m, renderFailure: p, retryMessage: y, retryable: k } = this.props;
+                    switch (t) {
+                        case u:
+                            return k ? a.createElement(s.Z, { icon: r, onRequestRetry: c, retryMessage: y }) : n ? a.createElement(o.m, { failureMessage: n }) : p();
                         case d:
-                            return r.createElement(l.J, { "aria-label": e, color: t, loadingMessage: i });
-                        case m:
+                            return a.createElement(o.J, { "aria-label": e, color: l, loadingMessage: i });
+                        case g:
                             return null;
                         default:
-                            return h();
+                            return m();
                     }
                 }
             }
-            h.defaultProps = { renderFailure: i.Z, retryable: !0 };
+            m.defaultProps = { renderFailure: i.Z, retryable: !0 };
         },
-        89217: (e, t, n) => {
+        247056: (e, l, n) => {
             "use strict";
-            n.d(t, { Ju: () => m, Qw: () => h, eo: () => s });
-            var r = n(111677),
-                o = n.n(r);
-            const a = o().c69eb656,
-                i = o().g46ae43c,
-                c = o().jf7d4cc6,
-                l = o().b2214572,
-                s = Object.freeze({ full_time: a, full_time_contract: i, part_time: c, contract_to_hire: l }),
-                u = o().f8337bd6,
-                d = o().i935bf88,
-                m = Object.freeze({ 1: u, 2: d }),
-                h = Object.freeze({ annually: { label: u, value: 1 }, hourly: { label: d, value: 2 } });
-        },
-        457458: (e, t, n) => {
-            "use strict";
-            n.d(t, { G: () => s, M: () => l });
-            n(571372);
-            var r = n(301503),
-                o = n(111677),
-                a = n.n(o),
-                i = n(89217);
-            const c = a().b75b8ffd,
-                l = (e, t = 1) => {
-                    const n = t ?? 1;
-                    return i.Ju[n.toString()] ? c({ salary: e, interval: i.Ju[n.toString()] }) : e;
-                },
-                s = (e) => {
-                    if (e)
-                        try {
-                            const t = JSON.parse(e);
-                            if (!t.entityMap || !t.blocks) throw new Error("Malformed RawDraftContentState");
-                            if (!(0, r.convertFromRaw)(t).hasText()) return;
-                            return t;
-                        } catch (e) {}
-                };
-        },
-        941978: (e, t, n) => {
-            "use strict";
-            n.d(t, { C: () => r });
-            class r {
-                constructor() {
-                    this._cache = {};
-                }
-                get(e) {
-                    return this._cache[e];
-                }
-                check(e) {
-                    const t = this._load(e);
-                    return !(t instanceof Promise) && !!t;
-                }
-                reset() {
-                    this._cache = {};
-                }
-                _loadCache(e, t) {
-                    if (this._cache[e]) return this._cache[e];
-                    const n = t().then((t) => {
-                        this._cache[e] = t;
-                    });
-                    return this._cache[e] || (this._cache[e] = n), this._cache[e];
-                }
-                _load(e) {
-                    return this._loadCache(
-                        e,
-                        () =>
-                            new Promise((t) => {
-                                window.fetch
-                                    ? fetch(e)
-                                          .then((e) => e.json())
-                                          .then(t)
-                                          .catch(() => t(!1))
-                                    : t(!0);
-                            }),
-                    );
-                }
-            }
-            new r();
-        },
-        491915: (e, t, n) => {
-            "use strict";
-            n.d(t, { ZP: () => g });
-            n(571372);
-            var r = n(202784),
-                o = n(325686),
-                a = n(392237),
-                i = n(111677),
-                c = n.n(i),
-                l = n(643442),
-                s = n(466445),
-                u = n(731708),
-                d = n(154003),
-                m = n(173739);
-            const h = c().jcf3e7a2;
-            function p({ animation: e, autoplay: t }) {
-                const [n, a] = r.useState(t),
-                    [i, c] = r.useState(0);
-                return (
-                    r.useEffect(() => {
-                        e.addEventListener("enterFrame", (e) => {
-                            e && c(Math.round(e.currentTime));
-                        });
-                    }, [e]),
-                    r.createElement(
-                        o.Z,
-                        { style: f.container },
-                        r.createElement(d.ZP, {
-                            "aria-label": n ? "Pause" : "Play",
-                            icon: n ? r.createElement(l.default, null) : r.createElement(s.default, null),
-                            onClick: function () {
-                                n ? (e.pause(), a(!1)) : (e.play(), a(!0));
-                            },
-                            type: "primaryText",
-                        }),
-                        r.createElement(u.ZP, { style: f.frames }, `${i}/${e.totalFrames}`),
-                        r.createElement(
-                            o.Z,
-                            { style: f.slider },
-                            r.createElement(m.Z, {
-                                "aria-label": h,
-                                max: e.totalFrames,
-                                min: 0,
-                                onChange: function (t) {
-                                    e.goToAndStop(t, !0), a(!1);
-                                },
-                                value: i,
-                            }),
-                        ),
-                    )
-                );
-            }
-            const f = a.default.create((e) => ({ container: { width: "100%", flexDirection: "row", alignItems: "center" }, frames: { marginStart: e.spaces.space12 }, slider: { flex: 1, marginStart: e.spaces.space12 } }));
-            function g(e) {
-                const { autoplay: t = !0, loop: n = !1, onAnimationEnd: a, onAnimationStart: i, onError: c, withControls: l } = e,
-                    s = r.useRef(void 0),
-                    u = r.useRef({ animationLoaded: !1 }),
-                    d = r.useRef(null),
-                    [m, h] = r.useState(!1);
-                return (
-                    r.useEffect(() => {
-                        function r(e, t) {
-                            "function" == typeof a && a(t), e && e.destroy();
-                        }
-                        const { animationLoaded: o } = u.current;
-                        o ||
-                            ((u.current.animationLoaded = !0),
-                            b.load().then((o) => {
-                                if (o && d.current) {
-                                    const a = { container: d.current, renderer: "svg", loop: n, autoplay: !1, ...("object" == typeof e.animation ? { animationData: e.animation } : { path: e.animation }) },
-                                        l = o.loadAnimation(a);
-                                    (s.current = l),
-                                        (l.onError = (e) => {
-                                            const t = new y(e);
-                                            "function" == typeof c && c(t), r(l, t);
-                                        }),
-                                        l.addEventListener("DOMLoaded", () => {
-                                            h(!0), t && (l.play(), i && i());
-                                        }),
-                                        l.addEventListener("complete", () => {
-                                            r(l);
-                                        });
-                                }
-                            }));
-                    }, [e.animation, t, n, a, i, c, l]),
-                    r.useEffect(
-                        () =>
-                            function () {
-                                s.current && s.current.destroy();
-                            },
-                        [s],
-                    ),
-                    r.createElement(o.Z, null, r.createElement(o.Z, { style: [e.animationContainerStyle, E.centerAnimation] }, r.createElement("div", { ref: d, style: e.animationStyle }), l && s.current && m && r.createElement(p, { animation: s.current, autoplay: t })))
-                );
-            }
-            g.Prepare = function () {
-                return (
-                    r.useEffect(() => {
-                        b.load();
-                    }, []),
-                    null
-                );
-            };
-            const b = { load: () => n.e("ondemand.LottieWeb").then(n.t.bind(n, 548888, 23)) };
-            class y extends Error {
-                constructor(e, ...t) {
-                    super(...t), Error.captureStackTrace && Error.captureStackTrace(this, y), (this.name = "LottieAnimationError"), (this.lottieError = e);
-                }
-            }
-            const E = a.default.create((e) => ({ centerAnimation: { alignItems: "center", justifyContent: "center" } }));
-        },
-        247056: (e, t, n) => {
-            "use strict";
-            n.d(t, { Z: () => s });
-            var r = n(202784),
-                o = n(111677),
-                a = n.n(o),
+            n.d(l, { Z: () => u });
+            var a = n(202784),
+                t = n(111677),
+                r = n.n(t),
                 i = n(149170),
-                c = n(40644);
-            const l = a().gaeb997e;
-            const s = function ({ activeColor: e, label: t = l, Icon: n = i.default, iconSize: o = "normal", isDisabled: a, onClick: s, preventFocusShift: u, renderActionMenu: d, style: m, testID: h, withDarkBackground: p = !1 }) {
-                const f = r.useCallback(
+                s = n(40644);
+            const o = r().gaeb997e;
+            const u = function ({ activeColor: e, label: l = o, Icon: n = i.default, iconSize: t = "normal", isDisabled: r, onClick: u, preventFocusShift: c, renderActionMenu: d, style: g, testID: m, withDarkBackground: p = !1 }) {
+                const y = a.useCallback(
                         (e) => {
-                            e && e.preventDefault(), s && s(e);
+                            e && e.preventDefault(), u && u(e);
                         },
-                        [s],
+                        [u],
                     ),
-                    g = r.useMemo(() => ({ label: t }), [t]);
-                return r.createElement(c.ZP, { Icon: n, activeColor: e || (p ? "white" : void 0), "aria-label": t, backgroundColor: p ? "translucentBlack77" : "transparent", color: p ? "white" : "gray700", hoverLabel: g, iconSize: o, isDisabled: a, onPress: f, preventFocusShift: u, renderMenu: d, style: m, testID: h });
+                    k = a.useMemo(() => ({ label: l }), [l]);
+                return a.createElement(s.ZP, { Icon: n, activeColor: e || (p ? "white" : void 0), "aria-label": l, backgroundColor: p ? "translucentBlack77" : "transparent", color: p ? "white" : "gray700", hoverLabel: k, iconSize: t, isDisabled: r, onPress: y, preventFocusShift: c, renderMenu: d, style: g, testID: m });
             };
         },
-        30183: (e, t, n) => {
+        30183: (e, l, n) => {
             "use strict";
-            n.d(t, { Z: () => c });
-            var r = n(202784),
-                o = n(731708),
-                a = n(952428);
+            n.d(l, { Z: () => s });
+            var a = n(202784),
+                t = n(731708),
+                r = n(952428);
             const i = n(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, withBottomRadius: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge } })),
-                c = function ({ align: e, link: t, onPress: n, text: c, weight: l, withBottomRadius: s, withDarkerInteractiveBackground: u }) {
-                    return r.createElement(a.Z, { link: t, onPress: n, style: [i.root, s && i.withBottomRadius], withDarkerInteractiveBackground: u }, r.createElement(o.ZP, { align: e, color: "primary", weight: l }, c));
+                s = function ({ align: e, link: l, onPress: n, text: s, weight: o, withBottomRadius: u, withDarkerInteractiveBackground: c }) {
+                    return a.createElement(r.Z, { link: l, onPress: n, style: [i.root, u && i.withBottomRadius], withDarkerInteractiveBackground: c }, a.createElement(t.ZP, { align: e, color: "primary", weight: o }, s));
                 };
         },
-        280278: (e, t, n) => {
+        280278: (e, l, n) => {
             "use strict";
-            n.d(t, { ZP: () => f });
-            var r = n(202784),
-                o = n(325686),
-                a = n(827515),
+            n.d(l, { ZP: () => y });
+            var a = n(202784),
+                t = n(325686),
+                r = n(827515),
                 i = n(461756),
-                c = n(731708),
-                l = n(392237);
-            const s = "up",
-                u = "down",
-                d = (e, t, n) => {
+                s = n(731708),
+                o = n(392237);
+            const u = "up",
+                c = "down",
+                d = (e, l, n) => {
                     n((n) => {
-                        const r = (0, a.Z)(e) ? (e > (n.count || 0) ? s : u) : s;
-                        return { ...n, count: e, oldText: n.text, pendingCount: null, pendingText: null, text: t, transitionDirection: r };
+                        const a = (0, r.Z)(e) ? (e > (n.count || 0) ? u : c) : u;
+                        return { ...n, count: e, oldText: n.text, pendingCount: null, pendingText: null, text: l, transitionDirection: a };
                     });
                 },
-                m = {};
-            [s, u].forEach((e) => {
-                const t = "0.3s";
-                m[e] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === s ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === s ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
+                g = {};
+            [u, c].forEach((e) => {
+                const l = "0.3s";
+                g[e] = { active: { transitionProperty: "transform", transitionDuration: l, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: l } };
             });
-            const h = { position: "absolute" },
-                p = l.default.create({ root: { overflow: "hidden" } }),
-                f = (e) => {
-                    const { children: t, containerStyle: n, count: l, ...u } = e,
-                        [f, g] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: s }),
-                        b = r.useRef(!1);
+            const m = { position: "absolute" },
+                p = o.default.create({ root: { overflow: "hidden" } }),
+                y = (e) => {
+                    const { children: l, containerStyle: n, count: o, ...c } = e,
+                        [y, k] = a.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
+                        f = a.useRef(!1);
                     return (
-                        r.useEffect(
+                        a.useEffect(
                             () => (
-                                (b.current = !0),
+                                (f.current = !0),
                                 function () {
-                                    b.current = !1;
+                                    f.current = !1;
                                 }
                             ),
                             [],
                         ),
-                        r.useEffect(() => {
-                            if (b.current)
-                                if (i.Z.reducedMotionEnabled) g((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (t !== f.pendingText) {
-                                    t === f.text || ((0, a.Z)(e.count) && f.count === e.count) ? g((e) => ({ ...e, pendingCount: null, pendingText: null })) : (g((n) => ({ ...n, pendingCount: e.count, pendingText: t })), f.animating || d(e.count, t, g));
+                        a.useEffect(() => {
+                            if (f.current)
+                                if (i.Z.reducedMotionEnabled) k((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (l !== y.pendingText) {
+                                    l === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? k((e) => ({ ...e, pendingCount: null, pendingText: null })) : (k((n) => ({ ...n, pendingCount: e.count, pendingText: l })), y.animating || d(e.count, l, k));
                                 }
-                        }, [t]),
-                        r.useEffect(() => {
-                            b.current &&
-                                !1 === f.animating &&
-                                (f.oldText
+                        }, [l]),
+                        a.useEffect(() => {
+                            f.current &&
+                                !1 === y.animating &&
+                                (y.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
-                                              b.current && g((e) => ({ ...e, animating: !0 }));
+                                              f.current && k((e) => ({ ...e, animating: !0 }));
                                           }),
                                       )
-                                    : f.pendingText && d(f.pendingCount, f.pendingText, g));
-                        }, [f.animating, f.oldText]),
-                        r.useMemo(() => {
-                            const e = m[f.transitionDirection],
-                                t = f.oldText && !i.Z.reducedMotionEnabled,
-                                a = !f.animating && f.oldText && !i.Z.reducedMotionEnabled,
-                                l = { ...h, ...(f.animating ? e.post : e.active) },
-                                s = { ...(a ? e.pre : e.active) };
-                            return r.createElement(
-                                o.Z,
+                                    : y.pendingText && d(y.pendingCount, y.pendingText, k));
+                        }, [y.animating, y.oldText]),
+                        a.useMemo(() => {
+                            const e = g[y.transitionDirection],
+                                l = y.oldText && !i.Z.reducedMotionEnabled,
+                                r = !y.animating && y.oldText && !i.Z.reducedMotionEnabled,
+                                o = { ...m, ...(y.animating ? e.post : e.active) },
+                                u = { ...(r ? e.pre : e.active) };
+                            return a.createElement(
+                                t.Z,
                                 { style: [p.root, n] },
-                                t ? r.createElement("span", { style: l }, r.createElement(c.ZP, u, f.oldText)) : null,
-                                r.createElement(
+                                l ? a.createElement("span", { style: o }, a.createElement(s.ZP, c, y.oldText)) : null,
+                                a.createElement(
                                     "span",
                                     {
                                         "data-testid": "app-text-transition-container",
                                         onTransitionEnd: () =>
-                                            ((e, t) => {
-                                                e && t((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(b.current, g),
-                                        style: s,
+                                            ((e, l) => {
+                                                e && l((e) => ({ ...e, animating: !1, oldText: null }));
+                                            })(f.current, k),
+                                        style: u,
                                     },
-                                    r.createElement(c.ZP, u, f.text),
+                                    a.createElement(s.ZP, c, y.text),
                                 ),
                             );
-                        }, [n, u, f, b, g])
+                        }, [n, c, y, f, k])
                     );
                 };
         },
-        40644: (e, t, n) => {
+        98440: (e, l, n) => {
             "use strict";
-            n.d(t, { ZP: () => w });
-            var r = n(202784),
-                o = n(325686),
-                a = n(461756),
-                i = n(731708),
-                c = n(58881),
-                l = n(530732),
-                s = n(224162),
-                u = n(491915),
-                d = n(392237),
-                m = n(551611),
-                h = n(111677),
-                p = n.n(h),
-                f = n(891198),
-                g = n(537392),
-                b = n(280278);
-            const y = p().e8d93005,
-                E = d.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
-                v = ({ color: e, count: t }) => {
-                    const n = (0, f.wl)(t, !0);
-                    return r.createElement(g.ZP, null, ({ containerWidth: o }) => {
-                        return r.createElement(b.ZP, { color: e, count: t, size: "subtext2", style: [E.count, ((a = o), a < d.default.theme.breakpoints.small && E.narrowCount)] }, t > 0 ? (((e) => e < d.default.theme.breakpoints.xxSmall)(o) || n.length >= 5 ? y(t) : n) : void 0);
-                        var a;
-                    });
-                };
-            class w extends r.PureComponent {
-                constructor(...e) {
-                    super(...e),
-                        (this._renderContent = (e, t) => {
-                            const { activeColor: n, color: a, decoration: c } = this.props;
-                            return r.createElement(s.ZP.Consumer, null, ({ direction: l }) => r.createElement(i.ZP, { color: e ? n : a, dir: l, style: [S.inner, e && "blue500" === n && S.blue500] }, r.createElement(o.Z, { ref: this.props.actionIconContainerRef }, t ? this._renderButton(t) : null, this._renderIcon()), c, this._renderCount()));
-                        }),
-                        (this._renderButton = (e) => {
-                            const { activeColor: t, backgroundColor: n, hoverLabel: o, iconSize: a, isActive: i, isDisabled: s, showBackgroundWhenActive: u } = this.props,
-                                m = c.Z.generate({ backgroundColor: d.default.theme.colors[n], color: d.default.theme.colors[t], insetFocusRing: !0 }),
-                                h = u && i && !e?.isHovered;
-                            return r.createElement(l.Z, { hoverLabel: o, interactiveStyles: m, interactivityState: e, style: [d.default.absoluteFill, x[h ? "haloBackground" : n], !s && S.iconBackground, "small" === a && S.iconSmallBoundingBox, h && S.haloBoundingBox] });
-                        }),
-                        (this._renderIcon = () => {
-                            const { ActiveIcon: e, iconSize: t, isActive: n, isDisabled: o, isFaded: i, onAnimationEnd: c, onAnimationStart: l, onError: s, showAnimation: h, transitionAnimationUrl: p } = this.props;
-                            if (!d.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && h) return r.createElement(u.ZP, { animation: p || m.Bf, animationContainerStyle: C[t], animationStyle: Z, onAnimationEnd: c, onAnimationStart: l, onError: s });
-                            {
-                                const a = n && e ? e : this.props.Icon;
-                                return r.createElement(a, { style: [C[t], !o && i && S.iconFaded] });
-                            }
-                        }),
-                        (this._renderCount = () => {
-                            const { count: e, withCount: t } = this.props;
-                            return t ? r.createElement(v, { count: e }) : null;
-                        }),
-                        (this._handlePress = (e) => {
-                            const { onPress: t, renderWrapper: n } = this.props;
-                            n || (e.stopPropagation(), t && t(e));
-                        });
-                }
-                render() {
-                    const { "aria-label": e, focusable: t, enableKeyboardShortcuts: n, isActive: i, isDisabled: c, isPresentational: s, keyboardShortcut: m, link: h, preventFocusShift: p, renderMenu: f, renderWrapper: g = r.Fragment, style: b, testID: y } = this.props,
-                        E = !d.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled;
-                    return r.createElement(
-                        o.Z,
-                        { style: [S.root, b] },
-                        r.createElement(
-                            g,
-                            null,
-                            s
-                                ? this._renderContent(i)
-                                : r.createElement(l.Z, { "aria-haspopup": f ? "menu" : void 0, "aria-label": e, disabled: c, enableKeyboardShortcuts: n, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: h, onClick: this._handlePress, preventFocusShift: p, renderMenu: f, style: [S.triggerAreaRoot, S.outlineNone], testID: y }, (e) => {
-                                      const { isFocused: t, isHovered: n, isPressed: r } = e,
-                                          o = i || n || r || t;
-                                      return this._renderContent(o, e);
-                                  }),
-                        ),
-                        E ? r.createElement(u.ZP.Prepare, null) : null,
-                    );
-                }
-            }
-            w.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
-            const C = d.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
-                x = d.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
-                S = d.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                k = "224.5%",
-                Z = { width: k, height: k };
-        },
-        551611: (e, t, n) => {
-            "use strict";
-            n.d(t, { Bf: () => o, ZP: () => i });
-            var r = n(941978);
-            const o = "https://abs.twimg.com/sticky/animations/like.4.json";
-            class a extends r.C {
-                check(e) {
-                    return super.check(e ?? o);
-                }
-            }
-            const i = new a();
-        },
-        76388: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => l });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
+            n.r(l), n.d(l, { default: () => o });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
                 i = n(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+            const s = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: l });
             };
-            c.metadata = { width: 24, height: 24 };
-            const l = c;
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
         },
-        666536: (e, t, n) => {
+        226597: (e, l, n) => {
             "use strict";
-            n.d(t, { Z: () => a });
-            var r = n(936386),
-                o = n.n(r);
-            const a = (e, t, n) => o()(e, t, n);
+            n.r(l), n.d(l, { default: () => o });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        155353: (e, l, n) => {
+            "use strict";
+            n.r(l), n.d(l, { default: () => o });
+            var a = n(202784),
+                t = n(890601),
+                r = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        666536: (e, l, n) => {
+            "use strict";
+            n.d(l, { Z: () => r });
+            var a = n(936386),
+                t = n.n(a);
+            const r = (e, l, n) => t()(e, l, n);
         },
         936386: (e) => {
-            function t(e, t, n) {
-                var r, o, a, i, c;
-                function l() {
-                    var s = Date.now() - i;
-                    s < t && s >= 0 ? (r = setTimeout(l, t - s)) : ((r = null), n || ((c = e.apply(a, o)), (a = o = null)));
+            function l(e, l, n) {
+                var a, t, r, i, s;
+                function o() {
+                    var u = Date.now() - i;
+                    u < l && u >= 0 ? (a = setTimeout(o, l - u)) : ((a = null), n || ((s = e.apply(r, t)), (r = t = null)));
                 }
-                null == t && (t = 100);
-                var s = function () {
-                    (a = this), (o = arguments), (i = Date.now());
-                    var s = n && !r;
-                    return r || (r = setTimeout(l, t)), s && ((c = e.apply(a, o)), (a = o = null)), c;
+                null == l && (l = 100);
+                var u = function () {
+                    (r = this), (t = arguments), (i = Date.now());
+                    var u = n && !a;
+                    return a || (a = setTimeout(o, l)), u && ((s = e.apply(r, t)), (r = t = null)), s;
                 };
                 return (
-                    (s.clear = function () {
-                        r && (clearTimeout(r), (r = null));
+                    (u.clear = function () {
+                        a && (clearTimeout(a), (a = null));
                     }),
-                    (s.flush = function () {
-                        r && ((c = e.apply(a, o)), (a = o = null), clearTimeout(r), (r = null));
+                    (u.flush = function () {
+                        a && ((s = e.apply(r, t)), (r = t = null), clearTimeout(a), (a = null));
                     }),
-                    s
+                    u
                 );
             }
-            (t.debounce = t), (e.exports = t);
+            (l.debounce = l), (e.exports = l);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-6107ac1a.43c75c0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-6107ac1a.23f0648a.js.map

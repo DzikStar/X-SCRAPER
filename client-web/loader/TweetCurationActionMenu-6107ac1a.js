@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TweetCurationActionMenu-6107ac1a", "icons/IconModerationPlus-js", "loader.FeedbackSheet"],
+    ["loader.TweetCurationActionMenu-6107ac1a", "icons/IconMegaphoneStroke-js", "icons/IconWriteStroke-js", "loader.FeedbackSheet"],
     {
         805020: (e) => {
             e.exports = { queryId: "TUo5Hk_nQNjxM9UEIasNag", operationName: "ArticleEntitiesSlice", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -183,7 +183,7 @@
         },
         683814: (e, t, i) => {
             "use strict";
-            i.d(t, { Z: () => z });
+            i.d(t, { Z: () => F });
             var n = i(807896),
                 a = i(202784),
                 l = i(157130),
@@ -210,10 +210,10 @@
                 T = m().i9000126,
                 x = m().dcaede8a,
                 A = m().ad85cd2e,
-                S = m().f19e4bfc,
-                L = m().bf994ab2,
-                B = m().e7b4b30a,
-                Z = m().cfd2f35e,
+                L = m().f19e4bfc,
+                S = m().bf994ab2,
+                Z = m().e7b4b30a,
+                B = m().cfd2f35e,
                 q = p.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space16, paddingBottom: e.spaces.space4, borderRadius: e.borderRadii.xLarge }, popover: { maxWidth: 5 * e.spacesPx.space64 }, modal: { borderRadius: e.borderRadii.none }, title: { flexDirection: "column", paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, menuRow: { flexDirection: "row", paddingTop: e.spaces.space12, paddingBottom: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.small }, disallowLinkRepliesCheck: { paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space16 }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
                 R = (e) => {
                     const { dismiss: t, isModal: i, midConversationTweet: n, value: l } = e,
@@ -222,11 +222,11 @@
                             e.onChange(t), e.dismiss();
                         },
                         R = r.isTrue("disallowed_reply_controls_enabled") && p.isAnyPremiumSubscriber(),
-                        z = !!n,
-                        F = z && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
+                        F = !!n,
+                        z = F && !n?.entities?.user_mentions?.some((e) => e.id_str !== n.user.id_str);
                     let Q = x;
                     return (
-                        F ? (Q = L) : z && (Q = B),
+                        z ? (Q = S) : F && (Q = Z),
                         a.createElement(
                             s.Z,
                             { "aria-describedby": "conversation-controls-details", "aria-labelledby": "conversation-controls-title", role: "dialog", style: [q.root, i ? q.modal : q.popover] },
@@ -237,31 +237,31 @@
                                 a.createElement(c.Z, { Icon: b.default, actionText: E, isSelected: C.k.all === l, onClick: u(C.k.all), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
                                 a.createElement(c.Z, { Icon: h.default, actionText: T, isSelected: C.k.community === l, onClick: u(C.k.community), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
                                 e.isActiveCreator && a.createElement(c.Z, { Icon: y.default, actionText: A, isSelected: C.k.subscribers === l, onClick: u(C.k.subscribers), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: f.default, actionText: S, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
-                                a.createElement(c.Z, { Icon: F ? g.default : v.default, actionText: Q, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: f.default, actionText: L, isSelected: C.k.verified === l, onClick: u(C.k.verified), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
+                                a.createElement(c.Z, { Icon: z ? g.default : v.default, actionText: Q, isSelected: C.k.by_invitation === l, onClick: u(C.k.by_invitation), selectable: !0, style: q.menuRow, withIconAsThumbnail: !0 }),
                                 R &&
                                     !n &&
                                     a.createElement(d.Z, {
                                         checked: e.disallowedReplyControls.includes(C.m.Links),
                                         label: m().ca6500a8,
                                         onChange:
-                                            ((M = C.m.Links),
+                                            ((j = C.m.Links),
                                             () => {
-                                                if (e.disallowedReplyControls.includes(M)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== M));
+                                                if (e.disallowedReplyControls.includes(j)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== j));
                                                 else {
                                                     const t = new Set([...e.disallowedReplyControls]);
-                                                    t.add(M), e.setDisallowedReplyControls([...t]);
+                                                    t.add(j), e.setDisallowedReplyControls([...t]);
                                                 }
                                             }),
                                         style: q.disallowLinkRepliesCheck,
                                     }),
-                                e.isModal ? a.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: q.cancelButton, type: "primaryOutlined" }, Z) : null,
+                                e.isModal ? a.createElement(_.ZP, { key: "button_cancel", onPress: t, size: "large", style: q.cancelButton, type: "primaryOutlined" }, B) : null,
                             ),
                         )
                     );
-                    var M;
+                    var j;
                 },
-                z = (e) => {
+                F = (e) => {
                     const { children: t, controlled: i = !1, disabled: s } = e,
                         [o, c] = a.useState(!1),
                         d = a.useCallback(() => c(!0), []),
@@ -372,7 +372,7 @@
                 p = n.createElement(o.default, { style: _.closeIcon }),
                 u = ({ onClick: e }) => n.createElement(l.ZP, { "aria-label": c, borderColor: "transparent", color: "gray1100", hoverLabel: d, icon: p, onClick: e, pullRight: !0, size: "small", style: _.button, type: "brandText" });
         },
-        711223: (e, t, i) => {
+        916910: (e, t, i) => {
             "use strict";
             i.r(t), i.d(t, { default: () => o });
             var n = i(202784),
@@ -381,12 +381,12 @@
                 r = i(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.786c-4.556 0-8.25 3.694-8.25 8.25s3.694 8.25 8.25 8.25c1.595 0 3.081-.451 4.341-1.233l1.054 1.7c-1.568.972-3.418 1.534-5.395 1.534-5.661 0-10.25-4.589-10.25-10.25S6.339 1.786 12 1.786s10.25 4.589 10.25 10.25c0 .901-.21 1.77-.452 2.477-.592 1.731-2.343 2.477-3.917 2.334-1.242-.113-2.307-.74-3.013-1.647-.961 1.253-2.45 2.011-4.092 1.78-2.581-.363-4.127-2.971-3.76-5.578.366-2.606 2.571-4.688 5.152-4.325 1.019.143 1.877.637 2.519 1.342l1.803.258-.507 3.549c-.187 1.31.761 2.509 2.079 2.629.915.083 1.627-.356 1.843-.99.2-.585.345-1.224.345-1.83 0-4.556-3.694-8.25-8.25-8.25zm-.111 5.274c-1.247-.175-2.645.854-2.893 2.623-.249 1.769.811 3.143 2.058 3.319 1.247.175 2.645-.854 2.893-2.623.249-1.769-.811-3.144-2.058-3.319z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        659306: (e, t, i) => {
+        730873: (e, t, i) => {
             "use strict";
             i.r(t), i.d(t, { default: () => o });
             var n = i(202784),
@@ -395,11 +395,27 @@
                 r = i(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v6.5c0 1.379-1.122 2.5-2.5 2.5h-15C2.122 23 1 21.879 1 20.5v-15C1 4.121 2.122 3 3.5 3H10v2H3.5c-.276 0-.5.225-.5.5v15c0 .275.224.5.5.5h15c.276 0 .5-.225.5-.5V14zm5.1-8c0 3.363-2.736 6.1-6.1 6.1S11.9 9.364 11.9 6 14.636-.1 18-.1s6.1 2.736 6.1 6.1zm-2 0c0-2.261-1.839-4.1-4.1-4.1S13.9 3.739 13.9 6s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1zM19 5V3h-2v2h-2v2h2v2h2V7h2V5h-2zM6 14h7v-2H6v2zm5 2H6v2h5v-2zm-5-6h4V8H6v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M22 2.63v17.74l-7.05-2.27c-.29 1.65-1.72 2.9-3.45 2.9C9.57 21 8 19.43 8 17.5v-1.63l-1.15-.37H4.5C3.12 15.5 2 14.38 2 13v-3c0-1.38 1.12-2.5 2.5-2.5h2.35L22 2.63zM6 9.5H4.5c-.27 0-.5.22-.5.5v3c0 .28.23.5.5.5H6v-4zm2 4.27l12 3.86V5.37L8 9.23v4.54zm2 2.74v.99c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-.02l-3-.97z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
+        },
+        376021: (e, t, i) => {
+            "use strict";
+            i.r(t), i.d(t, { default: () => c });
+            var n = i(202784),
+                a = i(890601),
+                l = i(783427),
+                r = i(717683),
+                s = i(347101);
+            const o = (e = {}) => {
+                const t = n.useContext(r.Z),
+                    { direction: i } = (0, l.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: i });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.6e24706a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-6107ac1a.4bfaa4ea.js.map

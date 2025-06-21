@@ -1280,31 +1280,34 @@
                 n("c3f04d9c", "Düşünüyor"),
                 n("cbdddb0a", "Tamamlandı"),
                 n("ie2bbeed", function (e) {
-                    return 'Searching for "' + e.query + '"';
+                    return '"' + e.query + '" için arama yapılıyor';
                 }),
                 n("b0d1e205", function (e) {
                     return '**"' + e.query + '"** için arama yapılıyor';
                 }),
+                n("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 n("bf970edd", function (e) {
-                    return 'Searching 𝕏 for "' + e.query + '"';
+                    return "𝕏'te \"" + e.query + '" için arama yapılıyor';
                 }),
                 n("g008d475", function (e) {
-                    return "Browsing " + e.url;
+                    return e.url + " adresine göz atılıyor";
                 }),
                 n("c91e3971", function (e) {
-                    return "Browsing " + e.url + ' for "' + e.query + '"';
+                    return e.url + ' adresinde "' + e.query + '" ifadesi aranıyor';
                 }),
                 n("acb9b845", function (e) {
                     return '**"' + e.query + '"** için ' + e.url + " adresine göz atılıyor";
                 }),
                 n("j9006405", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username;
+                    return "@" + e.username + " adlı kullanıcının 𝕏 gönderileri aranıyor";
                 }),
                 n("a2dd07e5", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for "' + e.query + '"';
+                    return "@" + e.username + ' adlı kullanıcının 𝕏 gönderilerinde "' + e.query + '" ifadesi aranıyor';
                 }),
                 n("e99fb7a3", function (e) {
-                    return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                    return "@" + e.username + ' adlı kullanıcının 𝕏 gönderilerinde **"' + e.query + '"** ifadesi aranıyor';
                 }),
                 n("ead81122", "Bir sorun oluştu. Yeniden bağlanmak için yenile veya tekrar dene."),
                 n("f808a13a", "Kullanım limiti aşıldı. Lütfen biraz bekleyip tekrar dene."),
@@ -1316,8 +1319,8 @@
                 n("j77292b7", function (e) {
                     return "Lütfen en fazla " + e.count + " dosya seç";
                 }),
-                n("d6b533dc", "Rate this translation:"),
-                n("j2f9ab6e", "Thank you for your feedback!"),
+                n("d6b533dc", "Bu çeviriyi değerlendir:"),
+                n("j2f9ab6e", "Geri bildirimin için teşekkürler!"),
                 n("d56779a2", "kolay anlaşılır"),
                 n("b6fe8a56", "kafa karıştırıcı veya anlaşılmıyor"),
                 n("i73a7d48", "Google tarafından çevrildi"),
@@ -1348,7 +1351,7 @@
                     return "tarafından " + e.originLanguage + " dilinden çevrildi";
                 }),
                 n("b7cb4fab", "tarafından çevrildi"),
-                n("e0bffbf8", "About automatic translation"),
+                n("e0bffbf8", "Otomatik çeviri hakkında"),
                 n("e839db3a", "Gizle"),
                 n("a15585b4", "Dil Ayarları"),
                 n("d4c339b9", function (e) {
@@ -1917,9 +1920,9 @@
                 n("a8f09fb8", "Bloku sil"),
                 n("i89195ea", "Ayırıcı"),
                 n("da8ac57c", "Altyazıyı Düzenle"),
-                n("a8fdd09c", "Makaleyi Yayınla"),
-                n("d8047cc8", "Yayınla");
-            n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
+                n("a8fdd09c", "Makaleyi Yayınla");
+            n("d8047cc8", "Yayınla"),
+                n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
                 n("ef34d7be", "Bir makale yayınlandıktan sonra hedef kitle ve yanıt denetimleri düzenlenemez."),
                 n("e52d4998", "Hedef kitleni seç"),
                 n("d7985b24", "Bu makaleye kimlerin yanıt verebileceğini seç"),
@@ -2973,9 +2976,9 @@
                     return e.entity + " Yer İşaretlerinden kaldırıldı";
                 }),
                 n("d6d9aab6", "Yer İşareti Ekle"),
-                n("bb89cf46", "Yer İşaretini Kaldır"),
-                n("a739d4ba", "Yer İşareti Klasörüne Ekle");
-            n("d5270434", "Çıkış"),
+                n("bb89cf46", "Yer İşaretini Kaldır");
+            n("a739d4ba", "Yer İşareti Klasörüne Ekle"),
+                n("d5270434", "Çıkış"),
                 n("ac85c6b2", "Bu resmi yüklerken bir hata oluştu"),
                 n("b327c12a", "Resim"),
                 n("ic76bdf0", "Bunu Grok ile yeniden oluştur"),
@@ -3899,9 +3902,9 @@
                 n("cd133486", "Davet et"),
                 n("f2333850", "X dışındaki kişilerle paylaş,"),
                 n("cddb8097", "Daha fazla bilgi al"),
-                n("f77997b0", "Yardımcı"),
-                n("i48f4ed8", "Konuşmacı");
-            n("a77c8e02", "Dinleyici"),
+                n("f77997b0", "Yardımcı");
+            n("i48f4ed8", "Konuşmacı"),
+                n("a77c8e02", "Dinleyici"),
                 n("bdfa93eb", function (e) {
                     return e.name + " tarafından paylaşıldı";
                 }),
@@ -4182,10 +4185,10 @@
                 n("j7b5c844", "Herkese açık olarak paylaştığın sohbetlerin sorumluluğu sana aittir. Grok ile yaptığın sohbetlerde kendinle ya da başkalarıyla ilgili hassas ve gizli bilgiler paylaşmaktan kaçın (Yardım Merkezimize bak)."),
                 n("c9f7c196", "Yardım merkezi"),
                 n("fb3b9776", "Grok'un verdiği çıktı, bu kullanıcı tarafından özelleştirildi."),
-                n("b0a889d4", "As Image"),
-                n("a111fb48", "As Spreadsheet"),
-                n("bccc65f0", "Grok can make mistakes. Always check original sources."),
-                n("bd202fe6", "Generating card"),
+                n("b0a889d4", "Resim Olarak"),
+                n("a111fb48", "Elektronik Tablo Olarak"),
+                n("bccc65f0", "Grok hata yapabilir. Orijinal kaynakları mutlaka kontrol edin."),
+                n("bd202fe6", "Kart oluşturuluyor"),
                 n("bfd161bc", "Karşılaştır"),
                 n("j5dcf1b2", "Güncellendi"),
                 n("a50aaa10", "Açılış Öncesi"),
@@ -4217,8 +4220,8 @@
                 n("dd679fb1", function (e) {
                     return "Tüm zamanların en düşüğü" + e.ttc_stock_details;
                 }),
-                n("ha9c4cf8", "View source"),
-                n("ecad5d78", "Save image"),
+                n("ha9c4cf8", "Kaynağı görüntüle"),
+                n("ecad5d78", "Resmi kaydet"),
                 n("d2d1d398", "Kopyalandı!"),
                 n("a22063d2", "Daha yüksek doğruluk için konumunu paylaş."),
                 n("db3248a8", "Konum yükleniyor"),
@@ -4253,12 +4256,10 @@
                 n("d66bf142", "Perşembe"),
                 n("dc17968a", "Cuma"),
                 n("j310a2d6", "Cumartesi"),
-                n("afa2a58e", "See all posts"),
-                n("fc83e7e2", "See all users"),
-                n("df601d92", "Relevant Users"),
                 n("db6c20cf", function (e) {
-                    return "Show all (" + e.count + ")";
+                    return "Tümünü göster (" + e.count + ")";
                 }),
+                n("df601d92", "Alakalı Kullanıcılar"),
                 n("d7cb5408", "Alakalı Web Sayfaları"),
                 n("ca93f2ee", "Bu mesaj silindi."),
                 n("b8c06820", "Metni kopyala"),
@@ -4328,7 +4329,7 @@
                 n("db832e38", "Lütfen tarayıcı ayarlarından bildirimleri etkinleştir"),
                 n("a910cac6", "Bildirimler etkinleştirilirken bir sorun oluştu"),
                 n("be30b6ee", "Bağlantı stabil değil"),
-                n("ge15b488", "Show thoughts"),
+                n("ge15b488", "Düşünceleri göster"),
                 n("aa7c96bb", function (e) {
                     return "Diğer " + e.numResults + " sonucu göster";
                 }),
@@ -4338,7 +4339,7 @@
                 n("g3ce0132", "Düşünme süresi:"),
                 n("f8007364", "Ayrıntılar için genişlet"),
                 n("ca53f780", "Ayrıntıları daralt"),
-                n("e6d51c62", "Searching"),
+                n("e6d51c62", "Aranıyor"),
                 n("ib1c5475", function (e) {
                     return e.minutes + " dakika " + e.seconds + " saniye düşünüldü";
                 }),
@@ -4924,9 +4925,9 @@
                 n("e41fffbc", "Videolarının toplam izlenme süresi."),
                 n("if2909ba", "İzlenme Süresi"),
                 n("i0e5bf4c", "Videoların"),
-                n("ed99baea", "Erken Beta Erişimi");
-            n("gf898b70", "Gelişmiş Arama"),
-                n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
+                n("ed99baea", "Erken Beta Erişimi"),
+                n("gf898b70", "Gelişmiş Arama");
+            n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
                 n("a8584698", "ai girişimi"),
                 n("jb6f9292", '"ai girişimi" ifadesini tam olarak içerir'),
                 n("j8ee77c4", '"ai girişimi"'),
@@ -5880,9 +5881,9 @@
                 n("e41c9b4f", function (e) {
                     return e.bookmarkFolderName + " içeriğine kaydedildi";
                 }),
-                n("h18f86a4", "Klasörü sil");
-            n("f4ea967a", "Klasör silindi"),
-                n("b670aa62", "Klasör Adı"),
+                n("h18f86a4", "Klasörü sil"),
+                n("f4ea967a", "Klasör silindi");
+            n("b670aa62", "Klasör Adı"),
                 n("aece5462", "Klasör adı başarıyla güncellendi"),
                 n("e3299b94", "Bir sorun oluştu. Birkaç dakika içinde bu klasörü güncellemeyi tekrar dene."),
                 n("c09ea714", "Bir sorun oluştu. Birkaç dakika içinde bu klasörü silmeyi tekrar dene."),
@@ -6886,9 +6887,9 @@
                 n("c924ad84", "Videoları oynatmaya devam et"),
                 n("de750a3c", "Telefonun kilitliyken bile keyfini çıkar"),
                 n("he5e87c4", "Yanıtlarını öne çıkar"),
-                n("g64a60ba", "Gönderilere yanıt verdiğinde az miktarda önceliklendirme al");
-            n("a7ee832a", "60 dakikaya varan süreyle yazım hatalarını ve yanlışları düzelt"),
-                n("fdd77a34", "Daha uzun gönderiler oluştur"),
+                n("g64a60ba", "Gönderilere yanıt verdiğinde az miktarda önceliklendirme al"),
+                n("a7ee832a", "60 dakikaya varan süreyle yazım hatalarını ve yanlışları düzelt");
+            n("fdd77a34", "Daha uzun gönderiler oluştur"),
                 n("j6d26a7a", "Paylaşmak istediğin kadar içerik yaz"),
                 n("c4fd68da", "Deneyimini özelleştir"),
                 n("c0195168", "Uygulama simgeni ve gezinme seçeneklerini değiştir"),
@@ -7866,7 +7867,10 @@
                 n("b719e224", "Sonuç yok"),
                 n("c9938100", "Arama sonuçları"),
                 n("d1a35ec6", "Hesap ekle"),
-                n("b437adda", "Ücretli aboneliğe yükselt");
+                n("b437adda", "Ücretli aboneliğe yükselt"),
+                n("f1f6c88b", function (e) {
+                    return "Hesaplar (" + e.count + ")";
+                });
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7905,10 +7909,7 @@
                     t(e, a)
                 );
             }
-            n("f1f6c88b", function (e) {
-                return "Hesaplar (" + e.count + ")";
-            }),
-                n("b02156b8", "Davetler"),
+            n("b02156b8", "Davetler"),
                 n("gd67d29b", function (e) {
                     return "Davetler (" + e.count + ")";
                 }),
@@ -8279,7 +8280,7 @@
                 n("e5e6479e", "En hızlı desteği almak için bize kuruluşunun kullanıcı adı ve sorunun ayrıntılarını içeren bir e-posta gönder."),
                 n("ica8392a", "Talebin bize ulaştığında, talebi alınma sırasına göre inceleyip önceliklendireceğiz."),
                 n("ed37e36e", "Önemli: Kuruluşunun kullanıcı adını eklememek veya kişisel e-posta kullanmak talebinin işlenmesinde gecikmelere yol açabilir."),
-                n("h7e1c146", "Delegate accounts are not currently supported."),
+                n("h7e1c146", "Temsilci hesapları şu anda desteklenmiyor."),
                 n("eb0d4fe2", "Sütun oluştur"),
                 n("e93d2f8a", "Şunlar gibi çeşitli sütunlar ekleyerek deneyimini kişiselleştir:"),
                 n("e8203d1e", "Aramalar"),
@@ -8908,9 +8909,9 @@
                 n("a7bf9962", "Videoyu indir"),
                 n("ccc97152", "Oynatma hızı"),
                 n("h531ade0", "Video kalitesi"),
-                n("e8b5757c", "0,25x");
-            n("e7e954de", "0,5x"),
-                n("g07ffe66", "0,75x"),
+                n("e8b5757c", "0,25x"),
+                n("e7e954de", "0,5x");
+            n("g07ffe66", "0,75x"),
                 n("d8bede9e", "1x"),
                 n("j41845c8", "1,25x"),
                 n("e9eeed9e", "1,5x"),
@@ -13342,4 +13343,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.5640870a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.ae06069a.js.map

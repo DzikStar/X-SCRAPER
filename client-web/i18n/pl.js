@@ -1295,6 +1295,9 @@
                 i("b0d1e205", function (e) {
                     return "Wyszukiwanie **„" + e.query + "”**";
                 }),
+                i("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
+                }),
                 i("bf970edd", function (e) {
                     return "Wyszukiwanie „" + e.query + "” w serwisie 𝕏";
                 }),
@@ -1927,9 +1930,9 @@
                 i("a8f09fb8", "Usuń blok"),
                 i("i89195ea", "Rozdzielacz"),
                 i("da8ac57c", "Edytuj podpis"),
-                i("a8fdd09c", "Opublikuj artykuł"),
-                i("d8047cc8", "Opublikuj");
-            i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
+                i("a8fdd09c", "Opublikuj artykuł");
+            i("d8047cc8", "Opublikuj"),
+                i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
                 i("ef34d7be", "Kontrolek Odbiorcy i Odpowiedź nie można edytować po opublikowaniu artykułu."),
                 i("e52d4998", "Wybierz odbiorców"),
                 i("d7985b24", "Określ, kto może odpowiadać na ten artykuł"),
@@ -2983,9 +2986,9 @@
                     return e.entity + " został usunięty z Zakładek";
                 }),
                 i("d6d9aab6", "Dodaj Zakładkę"),
-                i("bb89cf46", "Usuń zakładkę"),
-                i("a739d4ba", "Dodaj do folderu Zakładek");
-            i("d5270434", "Wyjdź"),
+                i("bb89cf46", "Usuń zakładkę");
+            i("a739d4ba", "Dodaj do folderu Zakładek"),
+                i("d5270434", "Wyjdź"),
                 i("ac85c6b2", "Podczas ładowania strony wystąpił błąd"),
                 i("b327c12a", "Zdjęcie"),
                 i("ic76bdf0", "Utwórz to ponownie za pomocą Groka"),
@@ -3909,9 +3912,9 @@
                 i("cd133486", "Zaproś"),
                 i("f2333850", "Udostępnij osobom spoza serwisu X"),
                 i("cddb8097", "Dowiedz się więcej"),
-                i("f77997b0", "Współhost"),
-                i("i48f4ed8", "Mówca");
-            i("a77c8e02", "Słuchacz"),
+                i("f77997b0", "Współhost");
+            i("i48f4ed8", "Mówca"),
+                i("a77c8e02", "Słuchacz"),
                 i("bdfa93eb", function (e) {
                     return "Udostępnione przez " + e.name;
                 }),
@@ -4263,12 +4266,10 @@
                 i("d66bf142", "Cz"),
                 i("dc17968a", "Pt"),
                 i("j310a2d6", "So"),
-                i("afa2a58e", "Zobacz wszystkie wpisy"),
-                i("fc83e7e2", "Zobacz wszystkich użytkowników"),
-                i("df601d92", "Odpowiedni użytkownicy"),
                 i("db6c20cf", function (e) {
                     return "Pokaż wszystkie (" + e.count + ")";
                 }),
+                i("df601d92", "Odpowiedni użytkownicy"),
                 i("d7cb5408", "Odpowiednie strony internetowe"),
                 i("ca93f2ee", "Ta wiadomość została usunięta."),
                 i("b8c06820", "Kopiuj tekst"),
@@ -4348,7 +4349,7 @@
                 i("g3ce0132", "Myślano o:"),
                 i("f8007364", "Rozwiń, aby wyświetlić szczegóły"),
                 i("ca53f780", "Zwiń szczegóły"),
-                i("e6d51c62", "Searching"),
+                i("e6d51c62", "Wyszukiwanie"),
                 i("ib1c5475", function (e) {
                     return "Myślenie trwało " + e.minutes + " min " + e.seconds + " s";
                 }),
@@ -4934,9 +4935,9 @@
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
                 i("if2909ba", "Czas oglądania"),
                 i("i0e5bf4c", "Twoje filmy"),
-                i("ed99baea", "Wczesny dostęp do wersji Beta");
-            i("gf898b70", "Wyszukiwanie zaawansowane"),
-                i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
+                i("ed99baea", "Wczesny dostęp do wersji Beta"),
+                i("gf898b70", "Wyszukiwanie zaawansowane");
+            i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
                 i("j8ee77c4", '"startup ai"'),
@@ -5890,9 +5891,9 @@
                 i("e41c9b4f", function (e) {
                     return "Zapisano w folderze " + e.bookmarkFolderName;
                 }),
-                i("h18f86a4", "Usuń folder");
-            i("f4ea967a", "Usunięto folder"),
-                i("b670aa62", "Nazwa folderu"),
+                i("h18f86a4", "Usuń folder"),
+                i("f4ea967a", "Usunięto folder");
+            i("b670aa62", "Nazwa folderu"),
                 i("aece5462", "Nazwa folderu została pomyślnie zaktualizowana"),
                 i("e3299b94", "Wystąpił błąd. Poczekaj chwilę i spróbuj ponownie zaktualizować folder."),
                 i("c09ea714", "Wystąpił błąd. Poczekaj chwilę i spróbuj ponownie usunąć folder."),
@@ -6896,9 +6897,9 @@
                 i("c924ad84", "Nieprzerwane odtwarzanie filmów"),
                 i("de750a3c", "Korzystaj, nawet jeśli Twój telefon będzie zablokowany"),
                 i("he5e87c4", "Wzmacniaj swoje odpowiedzi"),
-                i("g64a60ba", "Uzyskaj małą priorytetyzację podczas odpowiadania na wpisy");
-            i("a7ee832a", "Przez 60 minut możesz poprawiać literówki i pomyłki"),
-                i("fdd77a34", "Twórz dłuższe wpisy"),
+                i("g64a60ba", "Uzyskaj małą priorytetyzację podczas odpowiadania na wpisy"),
+                i("a7ee832a", "Przez 60 minut możesz poprawiać literówki i pomyłki");
+            i("fdd77a34", "Twórz dłuższe wpisy"),
                 i("j6d26a7a", "Pisz tyle, ile chcesz udostępnić"),
                 i("c4fd68da", "Dostosuj swoje środowisko"),
                 i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji"),
@@ -7876,7 +7877,10 @@
                 i("b719e224", "Brak wyników"),
                 i("c9938100", "Wyniki wyszukiwania"),
                 i("d1a35ec6", "Dodaj konta"),
-                i("b437adda", "Uaktualnij do płatnej wersji");
+                i("b437adda", "Uaktualnij do płatnej wersji"),
+                i("f1f6c88b", function (e) {
+                    return "Konta (" + e.count + ")";
+                });
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7915,10 +7919,7 @@
                     c(e, a)
                 );
             }
-            i("f1f6c88b", function (e) {
-                return "Konta (" + e.count + ")";
-            }),
-                i("b02156b8", "Zaproszenia"),
+            i("b02156b8", "Zaproszenia"),
                 i("gd67d29b", function (e) {
                     return "Zaproszenia (" + e.count + ")";
                 }),
@@ -8918,9 +8919,9 @@
                 i("a7bf9962", "Pobierz film"),
                 i("ccc97152", "Prędkość odtwarzania"),
                 i("h531ade0", "Jakość filmów"),
-                i("e8b5757c", "0,25 x");
-            i("e7e954de", "0,5x"),
-                i("g07ffe66", "0,75 x"),
+                i("e8b5757c", "0,25 x"),
+                i("e7e954de", "0,5x");
+            i("g07ffe66", "0,75 x"),
                 i("d8bede9e", "1 x"),
                 i("j41845c8", "1,25 x"),
                 i("e9eeed9e", "1,5x"),
@@ -13347,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.8cfe412a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.27fcf3aa.js.map

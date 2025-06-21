@@ -8,19 +8,19 @@
             e.exports = { queryId: "-Ja49b1NyF9nkZtiMQ4iiw", operationName: "GeneratePinCode", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         742710: (e) => {
-            e.exports = { queryId: "SZWJiXuWiKIXx9RYKW1pHg", operationName: "ImmersiveMedia", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "NZ2bCMRVEMlEylKjdT9PVw", operationName: "ImmersiveMedia", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         209857: (e) => {
-            e.exports = { queryId: "jgQbrsJbEHL0P4oP25H__A", operationName: "ImmersiveProfile", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "otF3xfwLcwZs-exq-0sgJg", operationName: "ImmersiveProfile", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         535203: (e) => {
-            e.exports = { queryId: "rYZICDKuT7pL0Qk2Rsuyaw", operationName: "TVTrend", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "q2fXkmOqG6phMG2LxwsWKA", operationName: "TVTrend", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         762611: (e) => {
-            e.exports = { queryId: "yDzV8Sngt9pKOgt27JU6-w", operationName: "TVUserProfile", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "rweb_video_screen_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "LfGDpQcJSXwOWNEVBPZ0Rw", operationName: "TVUserProfile", operationType: "query", metadata: { featureSwitches: ["payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "rweb_video_screen_enabled", "responsive_web_graphql_timeline_navigation_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         623114: (e) => {
-            e.exports = { queryId: "dgsXjwCQRCfkXfFKpVEXSw", operationName: "TweetRelatedVideos", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "xtDIH4COY_SDezHerichzQ", operationName: "TweetRelatedVideos", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         768727: (e, a, r) => {
             "use strict";
@@ -99,8 +99,8 @@
                 h = r(762611),
                 _ = r.n(h),
                 b = r(623114),
-                p = r.n(b),
-                D = r(934309);
+                D = r.n(b),
+                p = r(934309);
             const w = ({ apiClient: e, featureSwitches: a }) => ({
                 fetchTVHomeMixerGraphQL: () =>
                     e
@@ -111,7 +111,7 @@
                         )
                         .then((e) => {
                             const a = e.tv_home_video_mixer_timeline?.timeline;
-                            return a || D.cY;
+                            return a || p.cY;
                         }),
                 fetchTVUserProfileGraphQL: ({ count: a, cursor: r, screenName: n }) =>
                     e.graphQL(
@@ -128,13 +128,13 @@
                 fetchTweetRelatedVideosGraphQL: ({ count: r, cursor: o, tweetId: l }) =>
                     e
                         .graphQL(
-                            p(),
+                            D(),
                             { tweetId: l, cursor: o, count: r, ...(0, n.d)(a) },
                             (0, d.kj)((e) => !e?.tweetResult?.result?.related_videos_timeline?.timeline, "GQL URT: Failed to render TweetRelatedVideos GraphQL"),
                         )
                         .then((e) => {
                             const a = e.tweetResult?.result?.related_videos_timeline?.timeline;
-                            return a || D.cY;
+                            return a || p.cY;
                         }),
                 generatePinCodeGraphQL: ({ deviceId: a }) =>
                     e.graphQL(
@@ -171,11 +171,11 @@
                     c = e.pathname.startsWith("/i/lists");
                 return l && r && !t && (i || c) ? d.createElement(h, null) : null;
             }
-            const h = (0, c.Z)({ loader: () => Promise.all([r.e("icons.5"), r.e("icons.25"), r.e("icons.22"), r.e("icons.6"), r.e("icons.7"), r.e("icons.3"), r.e("icons.20"), r.e("icons.2"), r.e("icons.18"), r.e("icons.13"), r.e("icons.26"), r.e("loader.GetVerifiedSidebar")]).then(r.bind(r, 86029)) });
+            const h = (0, c.Z)({ loader: () => Promise.all([r.e("icons.0"), r.e("icons.10"), r.e("icons.13"), r.e("icons.24"), r.e("icons.22"), r.e("icons.27"), r.e("icons.17"), r.e("icons.4"), r.e("icons.14"), r.e("icons.28"), r.e("loader.GetVerifiedSidebar")]).then(r.bind(r, 86029)) });
             var _ = r(791983),
                 b = r(680961),
-                p = r(293115),
-                D = r(312771),
+                D = r(293115),
+                p = r(312771),
                 w = r(810641),
                 M = r(668214);
             const f = (e, a) => a.module.selectIsEmptyTimeline(e),
@@ -188,11 +188,11 @@
             const k = { ...(0, r(335632).G)({ isInSidebar: !0 }) },
                 A = v((e) => {
                     const { initialFetchStatus: a, isTimelineEmpty: r, module: n, scribeNamespace: o } = e;
-                    if ((a === D.ZP.LOADED || a === D.ZP.FAILED) && r) return null;
+                    if ((a === p.ZP.LOADED || a === p.ZP.FAILED) && r) return null;
                     const l = d.createElement(w.Z, { entryConfiguration: k, module: n, scroller: b.Z, showLoadingFooter: !1, title: "", withKeyboardShortcuts: !1 });
-                    return o ? d.createElement(p.nO, { namespace: o }, l) : l;
+                    return o ? d.createElement(D.nO, { namespace: o }, l) : l;
                 }),
-                I = (0, c.Z)({ loader: () => Promise.all([r.e("icons.7"), r.e("loader.VerifiedOrgSidebarModule")]).then(r.bind(r, 482234)) }),
+                I = (0, c.Z)({ loader: () => Promise.all([r.e("icons.23"), r.e("loader.VerifiedOrgSidebarModule")]).then(r.bind(r, 482234)) }),
                 P = () => d.createElement(I, null);
             var S = r(807896),
                 E = r(154003),
@@ -204,15 +204,15 @@
                 B = r(837020),
                 N = r(144251),
                 L = r(187669),
-                j = r(399398),
-                z = r(88660),
+                z = r(399398),
+                j = r(88660),
                 U = r(725405),
-                F = r(125363),
-                q = r(919022);
-            const Q = R().da1aa48f,
+                q = r(125363),
+                F = r(919022);
+            const O = R().da1aa48f,
                 V = R().b68c3784,
-                H = "get_verified_profile_sidebar",
-                O = ({ dismiss: e, profileUser: { screen_name: a }, viewerUser: { name: r, profile_image_url_https: o } }) => {
+                Q = "get_verified_profile_sidebar",
+                H = ({ dismiss: e, profileUser: { screen_name: a }, viewerUser: { name: r, profile_image_url_https: o } }) => {
                     const l = (0, U.Z)(),
                         { featureSwitches: t } = (0, s.QZ)(),
                         i = t.getStringValue("subscriptions_upsells_verified_profile_sidebar_variant"),
@@ -236,34 +236,34 @@
                     (0, L.q)(() => {
                         l.scribeAction("impression");
                     });
-                    const { description: u, header: m, withAnimatedBadge: h, withAvatar: _, withUsername: b } = ((e, a) => ({ variant_a: { header: R().e4a7a968, description: Q({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: R().id9c1e82, description: Q({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: R().d43b0edc, description: Q({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: R().d4ea0ed4, description: Q({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: R().cffeaeae, description: Q({ screenName: a }), withAvatar: !0 }, variant_f: { header: R().cffeaeae, description: Q({ screenName: a }), withUsername: !0 } })[e])(c, a);
+                    const { description: u, header: m, withAnimatedBadge: h, withAvatar: _, withUsername: b } = ((e, a) => ({ variant_a: { header: R().e4a7a968, description: O({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: R().id9c1e82, description: O({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: R().d43b0edc, description: O({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: R().d4ea0ed4, description: O({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: R().cffeaeae, description: O({ screenName: a }), withAvatar: !0 }, variant_f: { header: R().cffeaeae, description: O({ screenName: a }), withUsername: !0 } })[e])(c, a);
                     return d.createElement(
-                        j.g,
+                        z.g,
                         { testID: "verified_profile_upsell" },
                         d.createElement(
                             n.Z,
-                            { role: "complementary", style: K.root },
+                            { role: "complementary", style: Y.root },
                             d.createElement(E.ZP, {
                                 icon: d.createElement(B.default, null),
                                 onPress: () => {
                                     e(), l.scribeAction("dismiss");
                                 },
                                 size: "xSmall",
-                                style: K.closeButton,
+                                style: Y.closeButton,
                                 type: "primaryText",
                             }),
-                            b ? d.createElement(n.Z, { style: K.displayName }, d.createElement(x.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(n.Z, { style: K.userName }, d.createElement(C.ZP, { size: "headline2", weight: "medium" }, r), d.createElement(N.default, { style: K.iconVerified }))) : null,
+                            b ? d.createElement(n.Z, { style: Y.displayName }, d.createElement(x.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(n.Z, { style: Y.userName }, d.createElement(C.ZP, { size: "headline2", weight: "medium" }, r), d.createElement(N.default, { style: Y.iconVerified }))) : null,
                             d.createElement(
                                 n.Z,
-                                { style: K.inner },
-                                h ? d.createElement(n.Z, { style: K.image }, d.createElement(T.Z, { "aria-label": V, image: "https://abs.twimg.com/responsive-web/client-web/verification-card-v2@3x.8ebee019.png" })) : null,
-                                _ ? d.createElement(n.Z, { style: K.userAvatar }, d.createElement(x.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(N.default, { style: [K.iconVerified, K.iconOverlap] })) : null,
+                                { style: Y.inner },
+                                h ? d.createElement(n.Z, { style: Y.image }, d.createElement(T.Z, { "aria-label": V, image: "https://abs.twimg.com/responsive-web/client-web/verification-card-v2@3x.8ebee019.png" })) : null,
+                                _ ? d.createElement(n.Z, { style: Y.userAvatar }, d.createElement(x.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(N.default, { style: [Y.iconVerified, Y.iconOverlap] })) : null,
                                 d.createElement(C.ZP, { size: "headline1", weight: "heavy" }, m),
                                 d.createElement(C.ZP, null, u),
                                 d.createElement(
                                     E.ZP,
                                     {
-                                        link: { pathname: "/i/premium_sign_up", state: { referring_page: H } },
+                                        link: { pathname: "/i/premium_sign_up", state: { referring_page: Q } },
                                         onPress: () => {
                                             l.scribeAction("click");
                                         },
@@ -276,61 +276,56 @@
                     );
                 },
                 G = (e) => {
-                    const { dismiss: a, impress: r, shouldShow: n } = (0, z.ZP)({ showForMsec: null, reappearAfterMsec: null, dismissForMsec: z.IZ, key: "verified_profile_sidebar" });
+                    const { dismiss: a, impress: r, shouldShow: n } = (0, j.ZP)({ showForMsec: null, reappearAfterMsec: null, dismissForMsec: j.IZ, key: "verified_profile_sidebar" });
                     return (
                         (0, L.q)(() => {
                             r();
                         }),
-                        n ? d.createElement(p.nO, { data: { referer: H }, namespace: { component: "unified-upsell" } }, d.createElement(O, (0, S.Z)({ dismiss: a }, e))) : null
+                        n ? d.createElement(D.nO, { data: { referer: Q }, namespace: { component: "unified-upsell" } }, d.createElement(H, (0, S.Z)({ dismiss: a }, e))) : null
                     );
                 },
                 W = ({ screenName: e }) => {
                     const { featureSwitches: a, userClaims: r } = (0, s.QZ)(),
-                        n = (0, F.I0)(),
-                        o = (0, F.v9)(q.ZP.selectViewerUser),
-                        l = (0, F.v9)((a) => q.ZP.selectByScreenName(a, e));
+                        n = (0, q.I0)(),
+                        o = (0, q.v9)(F.ZP.selectViewerUser),
+                        l = (0, q.v9)((a) => F.ZP.selectByScreenName(a, e));
                     d.useEffect(() => {
-                        n(q.ZP.fetchOneByScreenNameIfNeeded(e));
+                        n(F.ZP.fetchOneByScreenNameIfNeeded(e));
                     }, [n, e]);
                     const t = o?.screen_name === l?.screen_name,
                         i = l && l.is_blue_verified;
                     return !o || !l || "Business" === l?.verified_type || "Government" === l?.verified_type || !i || t || r.isAnyPremiumSubscriber() ? null : a.isTrue("subscriptions_upsells_verified_profile_sidebar_enabled") ? d.createElement(G, { profileUser: l, viewerUser: o }) : null;
                 },
-                K = i.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 1 }, root: { position: "relative", flexDirection: "column" }, inner: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, gap: e.spaces.space12, alignItems: "flex-start" }, image: { width: "100px", animationDuration: "8s", animationKeyframes: [{ "0%": { transform: "scale(0.9)" }, "25%": { transform: "scale(1)" }, "60%": { transform: "scale(0.9)" }, "100%": { transform: "scale(0.9)" } }], animationTimingFunction: "ease-in-out", animationIterationCount: "infinite" }, displayName: { backgroundColor: e.colors.gray50, padding: e.spaces.space16, width: "100%", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, alignItems: "center", gap: e.spaces.space8 }, iconVerified: { color: e.colors.blue500 }, userName: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" }, userAvatar: {}, iconOverlap: { position: "absolute", fontSize: e.fontSizes.title1, end: "-28px" } })),
-                X = (0, c.Z)({ loader: () => r.e("loader.ExploreSidebar").then(r.bind(r, 657346)) }),
-                Y = (0, c.Z)({ loader: () => Promise.all([r.e("icons.25"), r.e("loader.SignupModule")]).then(r.bind(r, 173446)) });
+                Y = i.default.create((e) => ({ closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 1 }, root: { position: "relative", flexDirection: "column" }, inner: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, gap: e.spaces.space12, alignItems: "flex-start" }, image: { width: "100px", animationDuration: "8s", animationKeyframes: [{ "0%": { transform: "scale(0.9)" }, "25%": { transform: "scale(1)" }, "60%": { transform: "scale(0.9)" }, "100%": { transform: "scale(0.9)" } }], animationTimingFunction: "ease-in-out", animationIterationCount: "infinite" }, displayName: { backgroundColor: e.colors.gray50, padding: e.spaces.space16, width: "100%", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, alignItems: "center", gap: e.spaces.space8 }, iconVerified: { color: e.colors.blue500 }, userName: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" }, userAvatar: {}, iconOverlap: { position: "absolute", fontSize: e.fontSizes.title1, end: "-28px" } })),
+                K = (0, c.Z)({ loader: () => r.e("loader.ExploreSidebar").then(r.bind(r, 657346)) }),
+                X = (0, c.Z)({ loader: () => Promise.all([r.e("icons.19"), r.e("loader.SignupModule")]).then(r.bind(r, 173446)) });
             var $ = r(597496);
             const J = (0, c.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.5"),
-                        r.e("icons.25"),
-                        r.e("icons.22"),
-                        r.e("icons.6"),
-                        r.e("icons.4"),
-                        r.e("icons.9"),
-                        r.e("icons.15"),
-                        r.e("icons.7"),
-                        r.e("icons.3"),
-                        r.e("icons.20"),
+                        r.e("icons.23"),
+                        r.e("icons.0"),
                         r.e("icons.2"),
-                        r.e("icons.27"),
+                        r.e("icons.16"),
+                        r.e("icons.19"),
+                        r.e("icons.10"),
                         r.e("icons.13"),
+                        r.e("icons.24"),
+                        r.e("icons.7"),
+                        r.e("icons.22"),
+                        r.e("icons.27"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.0"),
-                        r.e("icons.24"),
-                        r.e("icons.17"),
-                        r.e("icons.12"),
-                        r.e("icons.11"),
-                        r.e("icons.26"),
+                        r.e("icons.21"),
+                        r.e("icons.18"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -351,9 +346,10 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                        r.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
                         r.e("loader.WideLayout-6107ac1a"),
-                        r.e("loader.WideLayout-2e365fe7"),
                         r.e("loader.WideLayout-9f4db315"),
                     ]).then(r.bind(r, 912937)),
             });
@@ -373,8 +369,8 @@
                 he = r(290402),
                 _e = (r(136728), r(530732)),
                 be = r(992942),
-                pe = r(366635),
-                De = r(451051),
+                De = r(366635),
+                pe = r(451051),
                 we = r(379990);
             const Me = R().ic1e826e,
                 fe = ({ isFocused: e, isHovered: a, isPressed: r, onPress: o, style: l }) => d.createElement(n.Z, { "aria-label": Me, onPress: o }, d.createElement(we.Z, { isFocused: e, isHovered: a, isPressed: r, style: l })),
@@ -391,18 +387,18 @@
                               n.Z,
                               { style: ye.container },
                               d.createElement(_e.Z, { "aria-label": t.ext_alt_text, onClick: l, ref: a, role: "link", style: ye.videoContainer, testID: `suggested-video-card-${e?.id_str}` }, ({ isFocused: e, isHovered: a, isPressed: r }) => d.createElement(d.Fragment, null, d.createElement(be.Z, { "aria-label": t?.ext_alt_text, role: "img", source: t?.media_url_https, style: ye.backgroundImage }), d.createElement(n.Z, { style: ye.innerContentContainer }, d.createElement(fe, { isFocused: e, isHovered: a, isPressed: r, onPress: l, style: ye.button })))),
-                              d.createElement(n.Z, { style: ye.userRow }, d.createElement(x.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: ye.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), d.createElement(pe.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
-                              d.createElement(n.Z, null, d.createElement(De.Z, { color: "gray700", displayTextRange: e?.display_text_range, isCondensed: !0, numberOfLines: 2, size: "subtext2", text: e?.text })),
+                              d.createElement(n.Z, { style: ye.userRow }, d.createElement(x.default, { "aria-label": e?.user?.name, screenName: e?.user?.screen_name, size: "medium", style: ye.userAvatar, uri: e?.user?.profile_image_url_https, withLink: !0 }), d.createElement(De.Z, { affiliateBadgeInfo: e.user.highlightedLabel, badgeContext: "content", isBlueVerified: e.user.is_blue_verified, isProtected: e.user.protected, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", screenName: e.user.screen_name, verifiedType: e.user.verified_type, withLink: !0, withScreenName: !1 })),
+                              d.createElement(n.Z, null, d.createElement(pe.Z, { color: "gray700", displayTextRange: e?.display_text_range, isCondensed: !0, numberOfLines: 2, size: "subtext2", text: e?.text })),
                           )
                         : null;
                 },
                 ye = i.default.create((e) => ({ container: {}, videoContainer: { aspectRatio: 0.8, color: e.colors.whiteOnColor, borderRadius: e.borderRadii.medium }, innerContentContainer: { padding: e.spaces.space12, display: "flex", height: "100%", justifyContent: "center", alignItems: "center" }, backgroundImage: { position: "absolute", width: "100%", height: "100%", borderRadius: e.spaces.space12 }, button: { width: e.spaces.space32, height: e.spaces.space32 }, userRow: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space4 }, userAvatar: { marginEnd: e.spaces.space4 } })),
                 ve = R().fce9ecce,
                 ke = () => {
-                    const e = (0, F.I0)(),
-                        a = (0, F.v9)(ue.jK),
-                        r = (0, F.v9)(ue.UD),
-                        o = (0, F.v9)(re.op),
+                    const e = (0, q.I0)(),
+                        a = (0, q.v9)(ue.jK),
+                        r = (0, q.v9)(ue.UD),
+                        o = (0, q.v9)(re.op),
                         l = (0, se.hC)("rweb_sourcemap_migration_side_expand_by_default"),
                         t = (0, te.Z)(),
                         i = ce.Z.isTwoColumnWiderLayoutRedesign(t.width, o ?? l),
@@ -446,27 +442,22 @@
                 Ie = (0, c.Z)({
                     loader: () =>
                         Promise.all([
-                            r.e("icons.5"),
-                            r.e("icons.25"),
-                            r.e("icons.22"),
-                            r.e("icons.6"),
-                            r.e("icons.4"),
-                            r.e("icons.9"),
-                            r.e("icons.15"),
-                            r.e("icons.7"),
-                            r.e("icons.3"),
-                            r.e("icons.20"),
+                            r.e("icons.23"),
+                            r.e("icons.0"),
                             r.e("icons.2"),
-                            r.e("icons.18"),
-                            r.e("icons.27"),
+                            r.e("icons.16"),
+                            r.e("icons.19"),
+                            r.e("icons.10"),
                             r.e("icons.13"),
+                            r.e("icons.24"),
+                            r.e("icons.7"),
+                            r.e("icons.22"),
+                            r.e("icons.27"),
+                            r.e("icons.17"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
-                            r.e("icons.0"),
-                            r.e("icons.24"),
-                            r.e("icons.17"),
-                            r.e("icons.12"),
                             r.e("icons.11"),
+                            r.e("icons.26"),
                             r.e("modules.audio-6107ac1a"),
                             r.e("modules.audio-b953418a"),
                             r.e("modules.audio-7c51e6a7"),
@@ -477,17 +468,21 @@
                             r.e("modules.audio-e019dbda"),
                             r.e("modules.audio-262c94d4"),
                             r.e("modules.audio-c6fe4ea4"),
-                            r.e("icons.10"),
                             r.e("icons.8"),
-                            r.e("icons.26"),
-                            r.e("icons.19"),
+                            r.e("icons.4"),
+                            r.e("icons.14"),
+                            r.e("icons.28"),
+                            r.e("icons.21"),
+                            r.e("icons.3"),
+                            r.e("icons.1"),
+                            r.e("icons.18"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -545,27 +540,22 @@
             const Se = (0, c.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.5"),
-                        r.e("icons.25"),
-                        r.e("icons.22"),
-                        r.e("icons.6"),
-                        r.e("icons.4"),
-                        r.e("icons.9"),
-                        r.e("icons.15"),
-                        r.e("icons.7"),
-                        r.e("icons.3"),
-                        r.e("icons.20"),
+                        r.e("icons.23"),
+                        r.e("icons.0"),
                         r.e("icons.2"),
-                        r.e("icons.18"),
-                        r.e("icons.27"),
+                        r.e("icons.16"),
+                        r.e("icons.19"),
+                        r.e("icons.10"),
                         r.e("icons.13"),
+                        r.e("icons.24"),
+                        r.e("icons.7"),
+                        r.e("icons.22"),
+                        r.e("icons.27"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.0"),
-                        r.e("icons.24"),
-                        r.e("icons.17"),
-                        r.e("icons.12"),
                         r.e("icons.11"),
+                        r.e("icons.26"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -576,14 +566,17 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
-                        r.e("icons.26"),
+                        r.e("icons.8"),
+                        r.e("icons.14"),
+                        r.e("icons.21"),
+                        r.e("icons.18"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -606,6 +599,7 @@
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                         r.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -660,29 +654,29 @@
             const Ne = d.memo(function (e) {
                 const a = { ...Re, ...e },
                     r = (0, Ee.Ct)();
-                return d.createElement(n.Z, { ref: r, style: [Ge.root, e.withMaxHeight && Ge.rootWithMaxHeight], testID: a.testID }, d.createElement(je, a), d.createElement(ze, a), e.withRadarUpsell && d.createElement(n.Z, { style: Ge.paddedContainer }, d.createElement(oe.Z, { variant: "RadarUpsell" })), d.createElement(Ue, a), d.createElement(Le, a), d.createElement(Oe, a));
+                return d.createElement(n.Z, { ref: r, style: [Ge.root, e.withMaxHeight && Ge.rootWithMaxHeight], testID: a.testID }, d.createElement(ze, a), d.createElement(je, a), e.withRadarUpsell && d.createElement(n.Z, { style: Ge.paddedContainer }, d.createElement(oe.Z, { variant: "RadarUpsell" })), d.createElement(Ue, a), d.createElement(Le, a), d.createElement(He, a));
             });
             function Le(e) {
                 const { featureSwitches: a, userClaims: r } = (0, s.QZ)(),
-                    l = (0, F.v9)(q.ZP.selectViewerUser),
+                    l = (0, q.v9)(F.ZP.selectViewerUser),
                     t = r.isAnyPremiumSubscriber(),
                     i = r.isPaidVerifiedOrg(),
                     c = a.isTrue("rweb_sourcemap_migration"),
                     u = a.isTrue("rweb_sourcemap_migration_enable_suggested_video"),
                     h = (0, o.useLocation)(),
                     b = "/home" === h.pathname && a.isTrue("user_ad_accounts_config_enabled") && r.isAnyPremiumSubscriber() && !r.isAnyVerifiedOrgOrAffiliate() && "business" !== l?.verified_type?.toLowerCase() && "government" !== l?.verified_type?.toLowerCase(),
-                    p = (0, le.Z)(),
-                    D = !e.withSearchBox && !e.withTrends && p && a.isTrue("subscriptions_upsells_explore_sidebar_analytics_upsell_enabled"),
-                    w = e.isOwnProfile && p && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
+                    D = (0, le.Z)(),
+                    p = !e.withSearchBox && !e.withTrends && D && a.isTrue("subscriptions_upsells_explore_sidebar_analytics_upsell_enabled"),
+                    w = e.isOwnProfile && D && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
                     M = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
                     f = t && !i && "/home" === h.pathname;
-                if (e.profileUserId) return d.createElement(d.Fragment, null, b && d.createElement(Ce, null), d.createElement(m, null), e.profileScreenName ? d.createElement(W, { screenName: e.profileScreenName }) : null, d.createElement(_.O, null), c && u && d.createElement(qe, e), e.isOwnProfile ? d.createElement(Te, { entryPoint: "profile" }) : null, w && d.createElement(n.Z, { style: Ge.paddedContainer, testID: "profileAnalyticsUpsell" }, d.createElement(oe.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), d.createElement(Qe, e), d.createElement(Fe, e), d.createElement(Ve, e));
-                let g = d.createElement(d.Fragment, null, e.withNews && d.createElement(He, e), d.createElement(Fe, e), d.createElement(Qe, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (g = d.createElement(d.Fragment, null, d.createElement(Qe, e), e.withNews && d.createElement(He, e), d.createElement(Fe, e))), c && (g = d.createElement(d.Fragment, null, u && d.createElement(qe, e), e.withNews && d.createElement(He, e), d.createElement(Fe, e), d.createElement(Qe, e))), d.createElement(d.Fragment, null, "/home" === h.pathname ? d.createElement(xe, null) : null, b && d.createElement(Ce, null), f && d.createElement(Te, { entryPoint: "home" }), d.createElement(m, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), d.createElement(Ze, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? d.createElement(P, null) : null, "/home" === h.pathname && M && d.createElement(Pe.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Pe.c.MarchMadness, withBackgroundImage: !0 }), d.createElement(_.O, null), g, D && d.createElement(n.Z, { style: Ge.paddedContainer, testID: "exploreAnalyticsUpsell" }, d.createElement(oe.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), d.createElement(Ve, e));
+                if (e.profileUserId) return d.createElement(d.Fragment, null, b && d.createElement(Ce, null), d.createElement(m, null), e.profileScreenName ? d.createElement(W, { screenName: e.profileScreenName }) : null, d.createElement(_.O, null), c && u && d.createElement(Fe, e), e.isOwnProfile ? d.createElement(Te, { entryPoint: "profile" }) : null, w && d.createElement(n.Z, { style: Ge.paddedContainer, testID: "profileAnalyticsUpsell" }, d.createElement(oe.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), d.createElement(Oe, e), d.createElement(qe, e), d.createElement(Ve, e));
+                let g = d.createElement(d.Fragment, null, e.withNews && d.createElement(Qe, e), d.createElement(qe, e), d.createElement(Oe, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (g = d.createElement(d.Fragment, null, d.createElement(Oe, e), e.withNews && d.createElement(Qe, e), d.createElement(qe, e))), c && (g = d.createElement(d.Fragment, null, u && d.createElement(Fe, e), e.withNews && d.createElement(Qe, e), d.createElement(qe, e), d.createElement(Oe, e))), d.createElement(d.Fragment, null, "/home" === h.pathname ? d.createElement(xe, null) : null, b && d.createElement(Ce, null), f && d.createElement(Te, { entryPoint: "home" }), d.createElement(m, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), d.createElement(Ze, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? d.createElement(P, null) : null, "/home" === h.pathname && M && d.createElement(Pe.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Pe.c.MarchMadness, withBackgroundImage: !0 }), d.createElement(_.O, null), g, p && d.createElement(n.Z, { style: Ge.paddedContainer, testID: "exploreAnalyticsUpsell" }, d.createElement(oe.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), d.createElement(Ve, e));
             }
-            function je(e) {
+            function ze(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    o = (0, F.v9)(re.op);
+                    o = (0, q.v9)(re.op);
                 if (!r && !a.isTrue("rweb_enable_logged_out_search_search_bar_enabled")) return null;
                 if (!(0, ee.ZP)() || !e.withSearchBox) return null;
                 const t = a.isTrue("rweb_sourcemap_migration"),
@@ -694,30 +688,30 @@
                     d.createElement(n.Z, { style: Ge.searchPlaceholder }),
                 );
             }
-            function ze(e) {
+            function je(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
                     n = (0, o.useLocation)();
                 if (r) return null;
                 if (n.pathname.startsWith("/i/jf/onboarding")) return null;
                 const l = a.isTrue("march_madness_brackets_enabled_logout_popup");
-                return d.createElement(t.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(Y, null)), l && d.createElement(Pe.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Pe.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
+                return d.createElement(t.Z, { hideOnError: !0 }, d.createElement(z.g, null, d.createElement(X, null)), l && d.createElement(Pe.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: Pe.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
             }
             function Ue(e) {
-                return e.children ? d.Children.map(e.children, (e) => (e ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(j.g, null, e)) : null)) : null;
-            }
-            function Fe(e) {
-                const { isRestrictedSession: a } = (0, s.QZ)();
-                return !e.withTrends || a ? null : d.createElement(t.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(X, { focalTweetId: e.focalTweetId, profileUserId: e.profileUserId })));
+                return e.children ? d.Children.map(e.children, (e) => (e ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(z.g, null, e)) : null)) : null;
             }
             function qe(e) {
-                const { viewerUserId: a } = (0, s.QZ)(),
-                    r = e.profileUserId || a;
-                return e.withSuggestedVideos && r ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(ke, null))) : null;
+                const { isRestrictedSession: a } = (0, s.QZ)();
+                return !e.withTrends || a ? null : d.createElement(t.Z, { hideOnError: !0 }, d.createElement(z.g, null, d.createElement(K, { focalTweetId: e.focalTweetId, profileUserId: e.profileUserId })));
             }
-            function Qe(e) {
+            function Fe(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     r = e.profileUserId || a;
-                return e.withWhoToFollow && r ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(J, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
+                return e.withSuggestedVideos && r ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(z.g, null, d.createElement(ke, null))) : null;
+            }
+            function Oe(e) {
+                const { viewerUserId: a } = (0, s.QZ)(),
+                    r = e.profileUserId || a;
+                return e.withWhoToFollow && r ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(z.g, null, d.createElement(J, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
             }
             function Ve(e) {
                 const { featureSwitches: a, isRestrictedSession: r, viewerUserId: n } = (0, s.QZ)(),
@@ -725,23 +719,23 @@
                     l = d.useMemo(() => {
                         if (o) return (0, de.Z)(o);
                     }, [o]);
-                return !r && e.withTopicsToFollow && l && a.isTrue("responsive_web_sidebar_ttf_enabled") ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(j.g, null, d.createElement(A, { module: l }))) : null;
+                return !r && e.withTopicsToFollow && l && a.isTrue("responsive_web_sidebar_ttf_enabled") ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(z.g, null, d.createElement(A, { module: l }))) : null;
             }
-            function He(e) {
+            function Qe(e) {
                 const a = (0, o.useLocation)(),
                     { featureSwitches: r } = (0, s.QZ)(),
                     n = r.isTrue("responsive_web_grok_05221996"),
                     l = a.pathname.startsWith("/home") || a.pathname.startsWith("/explore");
                 return n && l ? d.createElement(t.Z, { hideOnError: !0 }, d.createElement(Ie, null)) : null;
             }
-            function Oe(e) {
-                return d.createElement(j.g, { type: "transparent" }, d.createElement(ne.Z, { textColor: "gray700", withOverflow: !0 }));
+            function He(e) {
+                return d.createElement(z.g, { type: "transparent" }, d.createElement(ne.Z, { textColor: "gray700", withOverflow: !0 }));
             }
             const Ge = i.default.create((e) => ({ root: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 }, rootWithMaxHeight: { height: "100vh", overflowX: "hidden", overflowY: "auto" }, searchContainer: { alignItems: "center", backfaceVisibility: "hidden", backgroundColor: e.colors.cellBackground, flexDirection: "row", height: e.componentDimensions.appBarHeight, marginBottom: e.spaces.space12, minHeight: e.spaces.space32, position: "fixed", top: 0, zIndex: e.componentZIndices.appBarZIndex }, withHorizontalPadding: { paddingHorizontal: e.spaces.space16 }, paddedContainer: { paddingBottom: e.spaces.space16 }, searchPlaceholder: { height: e.componentDimensions.appBarHeight } }));
         },
         169576: (e, a, r) => {
             "use strict";
-            r.d(a, { c: () => p, Z: () => D });
+            r.d(a, { c: () => D, Z: () => p });
             var d = r(202784),
                 n = r(325686),
                 o = r(392237),
@@ -755,22 +749,22 @@
             const h = r.p + "MarchMadnessBannerDark.42aa2dea.png",
                 _ = r.p + "MarchMadnessBannerLight.02bf82ca.png",
                 b = { header: m().d231a76a, description: m().heaba5d8, legalDisclaimer: m().i57d3ea0, buttonText: m().a0440af6, image: { darkMode: h, lightMode: _ } },
-                p = Object.freeze({ MarchMadness: "MarchMadness" }),
-                D = ({ buttonOnSameLine: e, link: a, occasion: r, styleOverrides: u, withBackgroundImage: m }) => {
+                D = Object.freeze({ MarchMadness: "MarchMadness" }),
+                p = ({ buttonOnSameLine: e, link: a, occasion: r, styleOverrides: u, withBackgroundImage: m }) => {
                     const h = (0, c.z)(),
-                        _ = p[r] || "Occasion",
-                        D = m ? `${_}WithBackgroundImage` : _;
+                        _ = D[r] || "Occasion",
+                        p = m ? `${_}WithBackgroundImage` : _;
                     d.useEffect(() => {
-                        h.scribe({ component: D, action: "impression" });
-                    }, [h, D]);
+                        h.scribe({ component: p, action: "impression" });
+                    }, [h, p]);
                     const M = () => {
-                            h.scribe({ component: D, action: "click", element: "card" });
+                            h.scribe({ component: p, action: "click", element: "card" });
                         },
                         { backgroundcolor: f, buttonSize: g, cardWidth: y, marginbottom: v, textcolor: k } = u ?? {},
                         A = f ? o.default.theme.colors[f] : o.default.theme.colors.gray0,
                         I = k ? o.default.theme.colors[k] : o.default.theme.colors.gray900,
                         P = v ? o.default.theme.spaces[v] : o.default.theme.spaces.space16,
-                        S = { [p.MarchMadness]: { header: b.header, description: b.description, legalDisclaimer: b.legalDisclaimer, buttonText: b.buttonText, image: b.image } }[r];
+                        S = { [D.MarchMadness]: { header: b.header, description: b.description, legalDisclaimer: b.legalDisclaimer, buttonText: b.buttonText, image: b.image } }[r];
                     return m ? d.createElement(l.Z, { interactiveStyles: null, link: a, onPress: M, style: w.bannerContainer }, d.createElement(t.Z, { resizeMode: "contain", source: { uri: "light" === o.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : d.createElement(n.Z, { style: [w.card, { backgroundColor: A }, { maxWidth: y }, { marginBottom: P }], testID: "popupCard" }, d.createElement(n.Z, { style: e ? w.horizontalContent : w.verticalContent }, d.createElement(n.Z, { style: e ? w.textContainer : null }, d.createElement(i.ZP, { size: "headline2", style: [w.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), d.createElement(i.ZP, { size: "subtext1", style: [w.popupDescription, { color: I }] }, S.description, " ", e ? null : S.legalDisclaimer)), d.createElement(n.Z, { style: w.buttonContainer }, d.createElement(s.ZP, { backgroundColor: "light" === o.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: M, size: "medium", style: [w.popupButton, { width: g }] }, S.buttonText), e && d.createElement(i.ZP, { size: "subtext3", style: [w.legalDisclaimer, { color: I }] }, S.legalDisclaimer))));
                 },
                 w = o.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
@@ -796,8 +790,8 @@
                 h = { id: "imprint", featureSwitch: "dash_region_specific_de_and_tr_media_transparency_items_enabled", text: o().aeede01a, visibleLoggedIn: !0, legal: !0, link: (0, d.ju)("https://legal.x.com/imprint.html") },
                 _ = { id: "accessibility", text: o().e3719c16, visibleLoggedIn: !0, neverHidden: !0, link: (0, d.ju)("https://help.x.com/resources/accessibility") },
                 b = { id: "adsInfo", text: o().a7de64de, visibleLoggedIn: !0, legal: !0, link: (0, d.ju)("https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo") },
-                p = { id: "grok", text: o().h5860a68, link: (0, d.ju)("https://grok.com/"), mobileLink: "https://grok.com/download" },
-                D = { id: "blog", text: o().jb0a4c36, link: (0, d.ju)("https://blog.x.com") },
+                D = { id: "grok", text: o().h5860a68, link: (0, d.ju)("https://grok.com/"), mobileLink: "https://grok.com/download" },
+                p = { id: "blog", text: o().jb0a4c36, link: (0, d.ju)("https://blog.x.com") },
                 w = { id: "careers", text: o().ce6d095a, link: (0, d.ju)("https://careers.x.com") },
                 M = { id: "brandResources", text: o().e0adec82, link: (0, d.ju)("https://about.x.com/press/brand-assets") },
                 f = { id: "advertising", text: o().a4cf866e, link: (0, d.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
@@ -806,7 +800,7 @@
                 v = { id: "developers", text: o().c6f58084, visibleLoggedIn: !0, link: (0, d.ju)("https://developer.x.com") },
                 k = { id: "directory", text: o().d83f18d2, link: (0, d.ju)("https://x.com/i/directory/profiles") },
                 A = { id: "settings", text: o().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
-                I = (e) => (e ? ((t.text = o().hc5aa17c), (p.text = o().j0693948), [l, t, p, w, s, c, u, v, f, m, h, A]) : [l, t, p, i, s, c, u, m, h, _, b, D, w, M, f, g, y, v, k, A]);
+                I = (e) => (e ? ((t.text = o().hc5aa17c), (D.text = o().j0693948), [l, t, D, w, s, c, u, v, f, m, h, A]) : [l, t, D, i, s, c, u, m, h, _, b, p, w, M, f, g, y, v, k, A]);
         },
         788994: (e, a, r) => {
             "use strict";
@@ -824,8 +818,8 @@
                 h = r(721754),
                 _ = r(393805);
             const b = s().b7388a56,
-                p = s().h63a5c3c,
-                D = `© ${String(new Date().getFullYear())} X Corp.`;
+                D = s().h63a5c3c,
+                p = `© ${String(new Date().getFullYear())} X Corp.`;
             class w extends d.Component {
                 constructor(...e) {
                     super(...e),
@@ -876,7 +870,7 @@
                         i = (0, _.ZP)(t).filter(this._filterFeatureSwitch),
                         s = o ? i.filter(({ visibleLoggedIn: e }) => e) : i,
                         [m, w] = (0, u.Z)(s, ({ legal: e, neverHidden: a }) => e || a || !o);
-                    return d.createElement(n.Z, { "aria-label": b, role: "navigation", style: [M.root, "center" === e && M.alignCenter, "vertical" === a && M.itemLayoutVertical] }, m.map(this._renderItem), w.length > 0 ? d.createElement(h.Z, { renderMenu: this._renderMenu(w), style: [M.item, this._getItemAlignStyle()] }, d.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, p, d.createElement(c.default, { style: M.icon }))) : null, d.createElement(l.ZP, { color: r, size: "subtext3", style: [M.item, this._getItemAlignStyle()] }, D));
+                    return d.createElement(n.Z, { "aria-label": b, role: "navigation", style: [M.root, "center" === e && M.alignCenter, "vertical" === a && M.itemLayoutVertical] }, m.map(this._renderItem), w.length > 0 ? d.createElement(h.Z, { renderMenu: this._renderMenu(w), style: [M.item, this._getItemAlignStyle()] }, d.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, D, d.createElement(c.default, { style: M.icon }))) : null, d.createElement(l.ZP, { color: r, size: "subtext3", style: [M.item, this._getItemAlignStyle()] }, p));
                 }
             }
             (w.contextType = m.rC), (w.defaultProps = { textColor: "gray700" });
@@ -974,26 +968,21 @@
             const i = (0, o.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.5"),
-                        r.e("icons.25"),
-                        r.e("icons.22"),
-                        r.e("icons.6"),
-                        r.e("icons.4"),
-                        r.e("icons.9"),
-                        r.e("icons.7"),
-                        r.e("icons.3"),
-                        r.e("icons.20"),
-                        r.e("icons.2"),
-                        r.e("icons.18"),
-                        r.e("icons.27"),
+                        r.e("icons.23"),
+                        r.e("icons.0"),
+                        r.e("icons.16"),
+                        r.e("icons.19"),
+                        r.e("icons.10"),
                         r.e("icons.13"),
+                        r.e("icons.24"),
+                        r.e("icons.7"),
+                        r.e("icons.22"),
+                        r.e("icons.27"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.0"),
-                        r.e("icons.24"),
-                        r.e("icons.17"),
-                        r.e("icons.12"),
                         r.e("icons.11"),
+                        r.e("icons.26"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -1004,14 +993,19 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
-                        r.e("icons.10"),
+                        r.e("icons.8"),
+                        r.e("icons.4"),
+                        r.e("icons.14"),
+                        r.e("icons.28"),
+                        r.e("icons.3"),
+                        r.e("icons.1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -1051,26 +1045,21 @@
             const m = (0, o.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.5"),
-                        r.e("icons.25"),
-                        r.e("icons.22"),
-                        r.e("icons.6"),
-                        r.e("icons.4"),
-                        r.e("icons.9"),
-                        r.e("icons.7"),
-                        r.e("icons.3"),
-                        r.e("icons.20"),
-                        r.e("icons.2"),
-                        r.e("icons.18"),
-                        r.e("icons.27"),
+                        r.e("icons.23"),
+                        r.e("icons.0"),
+                        r.e("icons.16"),
+                        r.e("icons.19"),
+                        r.e("icons.10"),
                         r.e("icons.13"),
+                        r.e("icons.24"),
+                        r.e("icons.7"),
+                        r.e("icons.22"),
+                        r.e("icons.27"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.0"),
-                        r.e("icons.24"),
-                        r.e("icons.17"),
-                        r.e("icons.12"),
                         r.e("icons.11"),
+                        r.e("icons.26"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -1081,14 +1070,19 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
-                        r.e("icons.10"),
+                        r.e("icons.8"),
+                        r.e("icons.4"),
+                        r.e("icons.14"),
+                        r.e("icons.28"),
+                        r.e("icons.3"),
+                        r.e("icons.1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -1164,4 +1158,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749.bf90ee8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749.4ee38eea.js.map

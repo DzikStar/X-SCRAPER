@@ -1286,6 +1286,9 @@
                 s("b0d1e205", function (t) {
                     return '[Séêåärchïíng föør **"' + t.query + '"**]';
                 }),
+                s("f259119d", function (t) {
+                    return 'Searching the web for "' + t.query + '"';
+                }),
                 s("bf970edd", function (t) {
                     return '[Séêåärchïíng 𝕏 föør "' + t.query + '"]';
                 }),
@@ -1918,9 +1921,9 @@
                 s("a8f09fb8", "[Déêléêtéê blöøck]"),
                 s("i89195ea", "[Dïívïídéêr]"),
                 s("da8ac57c", "[Edïít Cåäptïíöøn]"),
-                s("a8fdd09c", "[Püblïísh Artïícléê]"),
-                s("d8047cc8", "[Püblïísh]");
-            s("ff7ddca2", "[Yöøür Artïícléê wïíll åäppéêåär åäs åä pöøst öøncéê yöøü püblïísh. Alsöø, fïínd ïít ündéêr théê Artïícléês tåäb öøn yöøür pröøfïíléê.]"),
+                s("a8fdd09c", "[Püblïísh Artïícléê]");
+            s("d8047cc8", "[Püblïísh]"),
+                s("ff7ddca2", "[Yöøür Artïícléê wïíll åäppéêåär åäs åä pöøst öøncéê yöøü püblïísh. Alsöø, fïínd ïít ündéêr théê Artïícléês tåäb öøn yöøür pröøfïíléê.]"),
                 s("ef34d7be", "[Aüdïíéêncéê åänd réêply cöøntröøls åäréê nöøt éêdïítåäbléê åäftéêr åän åärtïícléê håäs béêéên püblïíshéêd.]"),
                 s("e52d4998", "[Chöøöøséê yöøür åäüdïíéêncéê]"),
                 s("d7985b24", "[Chöøöøséê whöø cåän réêply töø thïís Artïícléê]"),
@@ -2974,9 +2977,9 @@
                     return "[" + t.entity + " wåäs réêmöøvéêd fröøm yöøür Böøöøkmåärks]";
                 }),
                 s("d6d9aab6", "[Add Böøöøkmåärk]"),
-                s("bb89cf46", "[Réêmöøvéê Böøöøkmåärk]"),
-                s("a739d4ba", "[Add töø Böøöøkmåärk Föøldéêr]");
-            s("d5270434", "[Exïít]"),
+                s("bb89cf46", "[Réêmöøvéê Böøöøkmåärk]");
+            s("a739d4ba", "[Add töø Böøöøkmåärk Föøldéêr]"),
+                s("d5270434", "[Exïít]"),
                 s("ac85c6b2", "[An éêrröør öøccürréêd löøåädïíng thïís ïímåägéê]"),
                 s("b327c12a", "[Imåägéê]"),
                 s("ic76bdf0", "[Réêcréêåätéê thïís wïíth Gröøk]"),
@@ -3900,9 +3903,9 @@
                 s("cd133486", "[Invïítéê]"),
                 s("f2333850", "[Shåäréê wïíth péêöøpléê öøütsïídéê öøf X]"),
                 s("cddb8097", "Léêåärn möøréê"),
-                s("f77997b0", "[Cöø-höøst]"),
-                s("i48f4ed8", "[Spéêåäkéêr]");
-            s("a77c8e02", "[Lïístéênéêr]"),
+                s("f77997b0", "[Cöø-höøst]");
+            s("i48f4ed8", "[Spéêåäkéêr]"),
+                s("a77c8e02", "[Lïístéênéêr]"),
                 s("bdfa93eb", function (t) {
                     return "[Shåäréêd by " + t.name + "]";
                 }),
@@ -4254,12 +4257,10 @@
                 s("d66bf142", "[Thü]"),
                 s("dc17968a", "[Frïí]"),
                 s("j310a2d6", "[Såät]"),
-                s("afa2a58e", "[Séêéê åäll pöøsts]"),
-                s("fc83e7e2", "[Séêéê åäll üséêrs]"),
-                s("df601d92", "[Réêléêvåänt Uséêrs]"),
                 s("db6c20cf", function (t) {
                     return "[Shöøw åäll (" + t.count + ")]";
                 }),
+                s("df601d92", "[Réêléêvåänt Uséêrs]"),
                 s("d7cb5408", "[Réêléêvåänt Wéêb Påägéês]"),
                 s("ca93f2ee", "[Thïís méêssåägéê håäs béêéên déêléêtéêd.]"),
                 s("b8c06820", "[Cöøpy téêxt]"),
@@ -4339,7 +4340,7 @@
                 s("g3ce0132", "[Thöøüght föør]"),
                 s("f8007364", "[Expåänd föør déêtåäïíls]"),
                 s("ca53f780", "[Cöøllåäpséê déêtåäïíls]"),
-                s("e6d51c62", "Searching"),
+                s("e6d51c62", "[Séêåärchïíng]"),
                 s("ib1c5475", function (t) {
                     return "[Thöøüght föør " + t.minutes + "m " + t.seconds + "s]";
                 }),
@@ -4925,9 +4926,9 @@
                 s("e41fffbc", "[Théê töøtåäl wåätch tïíméê öøf yöøür vïídéêöøs.]"),
                 s("if2909ba", "[Wåätch Tïíméê]"),
                 s("i0e5bf4c", "[Yöøür vïídéêöøs]"),
-                s("ed99baea", "[Eåärly Béêtåä Accéêss]");
-            s("gf898b70", "[Advåäncéêd Séêåärch]"),
-                s("d2a43a7a", '[cöøntåäïíns böøth "åäïí" åänd "ståärtüp"]'),
+                s("ed99baea", "[Eåärly Béêtåä Accéêss]"),
+                s("gf898b70", "[Advåäncéêd Séêåärch]");
+            s("d2a43a7a", '[cöøntåäïíns böøth "åäïí" åänd "ståärtüp"]'),
                 s("a8584698", "[åäïí ståärtüp]"),
                 s("jb6f9292", '[cöøntåäïíns théê éêxåäct phråäséê "åäïí ståärtüp"]'),
                 s("j8ee77c4", '["åäïí ståärtüp"]'),
@@ -5881,9 +5882,9 @@
                 s("e41c9b4f", function (t) {
                     return "[Såävéêd töø " + t.bookmarkFolderName + "]";
                 }),
-                s("h18f86a4", "[Déêléêtéê Föøldéêr]");
-            s("f4ea967a", "[Föøldéêr håäs béêéên déêléêtéêd]"),
-                s("b670aa62", "[Föøldéêr Nåäméê]"),
+                s("h18f86a4", "[Déêléêtéê Föøldéêr]"),
+                s("f4ea967a", "[Föøldéêr håäs béêéên déêléêtéêd]");
+            s("b670aa62", "[Föøldéêr Nåäméê]"),
                 s("aece5462", "[Föøldéêr nåäméê håäs béêéên üpdåätéêd süccéêssfülly]"),
                 s("e3299b94", "[Söøméêthïíng wéênt wröøng. Try üpdåätïíng thåät föøldéêr åägåäïín ïín åä mïínütéê.]"),
                 s("c09ea714", "[Söøméêthïíng wéênt wröøng. Try déêléêtïíng thåät föøldéêr åägåäïín ïín åä mïínütéê.]"),
@@ -6887,9 +6888,9 @@
                 s("c924ad84", "[Kéêéêp vïídéêöøs plåäyïíng]"),
                 s("de750a3c", "[Enjöøy théêm éêvéên whéên yöøür phöønéê ïís löøckéêd]"),
                 s("he5e87c4", "[Böøöøst yöøür réêplïíéês]"),
-                s("g64a60ba", "[Géêt åä småäll prïíöørïítïízåätïíöøn whéên yöøü réêply töø pöøsts]");
-            s("a7ee832a", "[Fïíx typöøs åänd mïíståäkéês, üp töø 60 mïínütéês]"),
-                s("fdd77a34", "[Créêåätéê löøngéêr pöøsts]"),
+                s("g64a60ba", "[Géêt åä småäll prïíöørïítïízåätïíöøn whéên yöøü réêply töø pöøsts]"),
+                s("a7ee832a", "[Fïíx typöøs åänd mïíståäkéês, üp töø 60 mïínütéês]");
+            s("fdd77a34", "[Créêåätéê löøngéêr pöøsts]"),
                 s("j6d26a7a", "[Wrïítéê åäs müch åäs yöøü’d lïíkéê töø shåäréê]"),
                 s("c4fd68da", "[Cüstöømïízéê yöøür éêxpéêrïíéêncéê]"),
                 s("c0195168", "[Chåängéê yöøür åäpp ïícöøn åänd nåävïígåätïíöøn öøptïíöøns]"),
@@ -7867,7 +7868,10 @@
                 s("b719e224", "[Nöø réêsülts]"),
                 s("c9938100", "[Séêåärch réêsülts]"),
                 s("d1a35ec6", "[Add åäccöøünts]"),
-                s("b437adda", "[Upgråädéê töø påäïíd]");
+                s("b437adda", "[Upgråädéê töø påäïíd]"),
+                s("f1f6c88b", function (t) {
+                    return "[Accöøünts (" + t.count + ")]";
+                });
             function d(t, n) {
                 for (var r = 0; r < n.length; r++) {
                     var s = n[r];
@@ -7906,10 +7910,7 @@
                     e(t, n)
                 );
             }
-            s("f1f6c88b", function (t) {
-                return "[Accöøünts (" + t.count + ")]";
-            }),
-                s("b02156b8", "[Invïítåätïíöøns]"),
+            s("b02156b8", "[Invïítåätïíöøns]"),
                 s("gd67d29b", function (t) {
                     return "[Invïítåätïíöøns (" + t.count + ")]";
                 }),
@@ -8909,9 +8910,9 @@
                 s("a7bf9962", "[Döøwnlöøåäd vïídéêöø]"),
                 s("ccc97152", "[Plåäybåäck spéêéêd]"),
                 s("h531ade0", "[Vïídéêöø qüåälïíty]"),
-                s("e8b5757c", "[0.25x]");
-            s("e7e954de", "[0.5x]"),
-                s("g07ffe66", "[0.75x]"),
+                s("e8b5757c", "[0.25x]"),
+                s("e7e954de", "[0.5x]");
+            s("g07ffe66", "[0.75x]"),
                 s("d8bede9e", "[1x]"),
                 s("j41845c8", "[1.25x]"),
                 s("e9eeed9e", "[1.5x]"),
@@ -13334,4 +13335,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.c631b07a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.8a3dcbba.js.map

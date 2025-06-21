@@ -22,8 +22,8 @@
                 t("f377195c", "X er overbelastet. Prøv på nytt om noen strakser."),
                 t("d67f9456", "Du er blokkert fra å utføre denne handlingen."),
                 t("e0ece1b6", "Kan ikke legge til media, prøv på nytt."),
-                t("i82e8f04", "Denne kontoen er midlertidig blokkert fra å følge flere kontoer. Dette er for å beskytte brukerne våre mot spam og annen ondsinnet aktivitet. Forsikre deg om at du forstår X sine regler."),
-                t("jf7be47a", "Denne kontoen er midlertidig blokkert fra å sende innlegg. Dette er for å beskytte brukerne våre mot spam og annen ondsinnet aktivitet. Forsikre deg om at du forstår X sine regler."),
+                t("i82e8f04", "Denne kontoen er midlertidig blokkert fra å følge flere kontoer. Dette er for å beskytte brukerne våre mot nettsøppel og annen ondsinnet aktivitet. Forsikre deg om at du forstår X sine regler."),
+                t("jf7be47a", "Denne kontoen er midlertidig blokkert fra å sende innlegg. Dette er for å beskytte brukerne våre mot nettsøppel og annen ondsinnet aktivitet. Forsikre deg om at du forstår X sine regler."),
                 t("g75fec74", "Du har nådd din daglige grense for denne handlingen. Vennligst knytt en telefon til kontoen din for å fjerne grensen."),
                 t("abb8b6e0", "Dette telefonnummeret er allerede registrert."),
                 t("f30bd1fc", "Vi kan ikke sende en tekstmelding til dette telefonnummeret fordi operatøren ikke støttes."),
@@ -42,7 +42,7 @@
                 t("ce482c36", "Ett eller flere felt er ugyldige. Sjekk det du har skrevet, og prøv igjen."),
                 t("db626d88", "Legg til telefonnummer for å fullføre kontoen din"),
                 t("i3ee2550", "Vennligst fyll ut alle påkrevde felter."),
-                t("cf18a258", "Forespørselen ser ut til å være automatisert. For å beskytte brukerne våre mot spam og annen skadelig aktivitet kan vi ikke fullføre denne handlingen akkurat nå. Prøv igjen senere."),
+                t("cf18a258", "Forespørselen ser ut til å være automatisert. For å beskytte brukerne våre mot nettsøppel og annen skadelig aktivitet kan vi ikke fullføre denne handlingen akkurat nå. Prøv igjen senere."),
                 t("h7ffa648", "Grensen for antall SMS-bekreftelser er overskredet."),
                 t("b87ceb1c", "PIN-koden for SMS-bekreftelse er ugyldig."),
                 t("f87e2faa", "Beklager, vi finner ikke brukeren."),
@@ -571,7 +571,7 @@
                 t("hf05f59e", "Teksten i innlegget ditt inneholder for mange cashtagger."),
                 t("dffb84c6", "Teksten i innlegget ditt inneholder en hashtagg som er for lang."),
                 t("d7b21bc8", "Innlegget overskrider antallet tillatte vedleggstyper."),
-                t("e4672ac2", "Au da! En nettadresse i innlegget ditt ser ut til å lede til en side med utrygt innhold eller spam."),
+                t("e4672ac2", "Au da! En nettadresse i innlegget ditt ser ut til å lede til en side med utrygt innhold eller nettsøppel."),
                 t("he5ecf52", "Teksten i innlegget ditt er for lang."),
                 t("ac78e602", "Innholdet i innlegget ditt er ugyldig."),
                 t("i251c738", "Du prøvde å laste opp en video med for høy bildefrekvens."),
@@ -1133,7 +1133,7 @@
                 t("da813d22", "Verifiserte brukere"),
                 t("baffe39a", "Alle"),
                 t("b3d8566e", "Filtrer bort meldinger av lav kvalitet"),
-                t("cfda8c44", "Skjul meldingsforespørsler vi har identifisert som potensiell spam eller av lav kvalitet. Disse sendes til en separat innboks nederst i meldingsforespørslene dine. Du kan fremdeles åpne dem hvis du vil."),
+                t("cfda8c44", "Skjul meldingsforespørsler vi har identifisert som potensiell nettsøppel eller av lav kvalitet. Disse sendes til en separat innboks nederst i meldingsforespørslene dine. Du kan fremdeles åpne dem hvis du vil."),
                 t("f4c91f40", "Tillat meldinger fra abonnentene mine"),
                 t("bf0c4336", "Abonnentene dine kan alltid sende deg meldinger, uavhengig av andre meldingsinnstillinger."),
                 t("e6c411d8", "Filtrer bort grafiske medier"),
@@ -1284,6 +1284,9 @@
                 }),
                 t("b0d1e205", function (e) {
                     return "Søker etter **«" + e.query + "»**";
+                }),
+                t("f259119d", function (e) {
+                    return 'Searching the web for "' + e.query + '"';
                 }),
                 t("bf970edd", function (e) {
                     return "Søker etter " + e.query + " på 𝕏";
@@ -1917,9 +1920,9 @@
                 t("a8f09fb8", "Slett blokk"),
                 t("i89195ea", "Skillelinje"),
                 t("da8ac57c", "Rediger bildetekst"),
-                t("a8fdd09c", "Publiser artikkel"),
-                t("d8047cc8", "Publiser");
-            t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din."),
+                t("a8fdd09c", "Publiser artikkel");
+            t("d8047cc8", "Publiser"),
+                t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din."),
                 t("ef34d7be", "Målgruppe og svarkontroller kan ikke endres etter at en artikkel er publisert."),
                 t("e52d4998", "Velg målgruppe"),
                 t("d7985b24", "Velg hvem som kan svare på denne artikkelen"),
@@ -2973,9 +2976,9 @@
                     return e.entity + " er fjernet fra bokmerkene dine";
                 }),
                 t("d6d9aab6", "Legg til bokmerke"),
-                t("bb89cf46", "Fjern bokmerke"),
-                t("a739d4ba", "Legg til i bokmerkemappe");
-            t("d5270434", "Avslutt"),
+                t("bb89cf46", "Fjern bokmerke");
+            t("a739d4ba", "Legg til i bokmerkemappe"),
+                t("d5270434", "Avslutt"),
                 t("ac85c6b2", "Det oppsto en feil under innlastingen av dette bildet"),
                 t("b327c12a", "Bilde"),
                 t("ic76bdf0", "Gjenskap dette med Grok"),
@@ -3899,9 +3902,9 @@
                 t("cd133486", "Inviter"),
                 t("f2333850", "Del med andre utenfor X"),
                 t("cddb8097", "Les mer"),
-                t("f77997b0", "Medvert"),
-                t("i48f4ed8", "Taler");
-            t("a77c8e02", "Lytter"),
+                t("f77997b0", "Medvert");
+            t("i48f4ed8", "Taler"),
+                t("a77c8e02", "Lytter"),
                 t("bdfa93eb", function (e) {
                     return "Delt av " + e.name;
                 }),
@@ -3973,7 +3976,7 @@
                     return "Svarer til " + e.name;
                 }),
                 t("f5a07f7c", "Vedlegg"),
-                t("fd079470", "Dette er spam"),
+                t("fd079470", "Dette er nettsøppel"),
                 t("c7a92dca", "Meldingen er OK"),
                 t("fb3ccb56", "Meldingen er skjult grunnet mistenkelig innhold"),
                 t("c94b7d8a", "Spill av talemelding"),
@@ -4044,7 +4047,7 @@
                 t("ad63377e", "Slett samtalen"),
                 t("h09b49f8", "Denne samtalen vil slettes fra innboksen din. Andre folk i samtalen vil fortsatt kunne se den."),
                 t("i6b19b08", "Rapporter samtalen"),
-                t("cdb1a05a", "Informer X om spam eller trakassering, slik at vi kan beskytte andre mot kontoer som denne."),
+                t("cdb1a05a", "Informer X om nettsøppel eller trakassering, slik at vi kan beskytte andre mot kontoer som denne."),
                 t("d6b11d9c", "Direktemeldingen din ble ikke sendt fordi enkelte mediefiler ikke ble lastet opp."),
                 t("c64c1884", "Skriv en ny melding"),
                 t("cdcebd22", "Ny melding"),
@@ -4253,12 +4256,10 @@
                 t("d66bf142", "To."),
                 t("dc17968a", "Fr."),
                 t("j310a2d6", "Lø."),
-                t("afa2a58e", "Vis alle innlegg"),
-                t("fc83e7e2", "Vis alle brukere"),
-                t("df601d92", "Relevante brukere"),
                 t("db6c20cf", function (e) {
                     return "Vis alle (" + e.count + ")";
                 }),
+                t("df601d92", "Relevante brukere"),
                 t("d7cb5408", "Relevante nettsider"),
                 t("ca93f2ee", "Denne meldingen er slettet."),
                 t("b8c06820", "Kopier tekst"),
@@ -4338,7 +4339,7 @@
                 t("g3ce0132", "Tenkte i"),
                 t("f8007364", "Utvid for detaljerte opplysninger"),
                 t("ca53f780", "Skjul detaljer"),
-                t("e6d51c62", "Searching"),
+                t("e6d51c62", "Søker"),
                 t("ib1c5475", function (e) {
                     return "Tenkte i " + e.minutes + " m " + e.seconds + " s";
                 }),
@@ -4924,9 +4925,9 @@
                 t("e41fffbc", "Den totale visningstiden til videoene dine."),
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig betatilgang");
-            t("gf898b70", "Avansert søk"),
-                t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
+                t("ed99baea", "Tidlig betatilgang"),
+                t("gf898b70", "Avansert søk");
+            t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
                 t("a8584698", "ki oppstartsselskap"),
                 t("jb6f9292", "inneholder den nøyaktige frasen «ki-oppstartsselskap»"),
                 t("j8ee77c4", '"ki-oppstartsselskap"'),
@@ -5462,7 +5463,7 @@
                 t("i7eb7900", "Den daglige grensen din økes hvis innlegg får nyttige merknader på grunn av forespørslene dine."),
                 t("d1a3817e", "Dette bidrar til å belønne brukere som er gode til å finne potensielt villedende innlegg som kan trenge mer kontekst."),
                 t("c031c77a", "Den daglige grensen din kan reduseres hvis du kommer med for mange forespørsler angående innlegg som andre mener ikke trenger noen merknad."),
-                t("f87129d2", "Dette bidrar til å hindre spam og holde merknadsskrivere fokusert på innlegg som kan trenge nyttige merknader."),
+                t("f87129d2", "Dette bidrar til å hindre nettsøppel og holde merknadsskrivere fokusert på innlegg som kan trenge nyttige merknader."),
                 t("jdd4a572", "Kontoen din må ha et verifisert telefonnummer"),
                 t("i0f07c07", "Verifiser telefonnummeret ditt"),
                 t("i157c1a8", "Denne forespørselen har blitt slettet."),
@@ -5880,9 +5881,9 @@
                 t("e41c9b4f", function (e) {
                     return "Saved to " + e.bookmarkFolderName;
                 }),
-                t("h18f86a4", "Slett mappe");
-            t("f4ea967a", "Mappen er slettet"),
-                t("b670aa62", "Mappenavn"),
+                t("h18f86a4", "Slett mappe"),
+                t("f4ea967a", "Mappen er slettet");
+            t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er oppdatert"),
                 t("e3299b94", "Noe gikk galt. Prøv å oppdatere denne mappen på nytt om en liten stund."),
                 t("c09ea714", "Noe gikk galt. Prøv å slette denne mappen på nytt om en liten stund."),
@@ -6697,8 +6698,8 @@
                 t("i3e4955d", "her"),
                 t("fdc5d06c", "Avslutt fullskjerm"),
                 t("cea1c00e", "Få muligheten til å engasjere deg"),
-                t("f8e6a280", "Nye kontoer må betale en liten årsavgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden spam og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
-                t("h968efc6", "Nye kontoer må betale en liten avgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden spam og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
+                t("f8e6a280", "Nye kontoer må betale en liten årsavgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden nettsøppel og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
+                t("h968efc6", "Nye kontoer må betale en liten avgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden nettsøppel og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
                 t("b66b62a4", "Bruksvilkår for kjøpere"),
                 t("e5b5faa6", "Vilkår for Ikke en robot"),
                 t("i61a221c", "Abonner og betal"),
@@ -6886,9 +6887,9 @@
                 t("c924ad84", "La videoene spilles av"),
                 t("de750a3c", "Les dem selv om telefonen er låst"),
                 t("he5e87c4", "Frem svarene dine"),
-                t("g64a60ba", "Få en liten prioritering når du svarer på innlegg");
-            t("a7ee832a", "Rett opp trykkfeil og andre feil i opptil 60 minutter"),
-                t("fdd77a34", "Skriv lengre innlegg"),
+                t("g64a60ba", "Få en liten prioritering når du svarer på innlegg"),
+                t("a7ee832a", "Rett opp trykkfeil og andre feil i opptil 60 minutter");
+            t("fdd77a34", "Skriv lengre innlegg"),
                 t("j6d26a7a", "Skriv så mye du vil om det du har på hjertet"),
                 t("c4fd68da", "Tilpass brukeropplevelsen"),
                 t("c0195168", "Endre appikonet og navigasjonsvalgene"),
@@ -7866,7 +7867,10 @@
                 t("b719e224", "Ingen resultater"),
                 t("c9938100", "Søkeresultater"),
                 t("d1a35ec6", "Legg til kontoer"),
-                t("b437adda", "Oppgrader til betalt");
+                t("b437adda", "Oppgrader til betalt"),
+                t("f1f6c88b", function (e) {
+                    return "Kontoer (" + e.count + ")";
+                });
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7905,10 +7909,7 @@
                     d(e, n)
                 );
             }
-            t("f1f6c88b", function (e) {
-                return "Kontoer (" + e.count + ")";
-            }),
-                t("b02156b8", "Invitasjoner"),
+            t("b02156b8", "Invitasjoner"),
                 t("gd67d29b", function (e) {
                     return "Invitasjoner (" + e.count + ")";
                 }),
@@ -8908,9 +8909,9 @@
                 t("a7bf9962", "Last ned video"),
                 t("ccc97152", "Avspillingshastighet"),
                 t("h531ade0", "Videokvalitet"),
-                t("e8b5757c", "0,25 x");
-            t("e7e954de", "0,5 x"),
-                t("g07ffe66", "0,75 x"),
+                t("e8b5757c", "0,25 x"),
+                t("e7e954de", "0,5 x");
+            t("g07ffe66", "0,75 x"),
                 t("d8bede9e", "1 x"),
                 t("j41845c8", "1,25 x"),
                 t("e9eeed9e", "1,5 x"),
@@ -9086,10 +9087,10 @@
                 t("f8e8e32e", "Du"),
                 t("df6703d3", "Du"),
                 t("c20f7e9f", function (e) {
-                    return i(e.otherUsersCount, s.createElement(s.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
+                    return i(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
                 }),
                 t("he26f627", function (e) {
-                    return i(e.otherUsersCount, s.createElement(s.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
+                    return i(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
                 }),
                 t("gea7aa3c", "Neste"),
                 t("b6462b32", "Forrige"),
@@ -9508,8 +9509,8 @@
                 t("acddd4d4", "Rød"),
                 t("cef9b062", "Blågrønn"),
                 t("d9daefca", "Mørk grå");
-            var s = r(202784),
-                l = [],
+            var l = r(202784),
+                s = [],
                 o = {};
             function g(e) {
                 return e;
@@ -9525,7 +9526,7 @@
                     (n.prototype.constructor = n),
                     d(n, r),
                     (u.prototype.render = function () {
-                        return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]));
+                        return l.createElement.apply(l, this[this.props.$i18n].reduce(this.templateReducer, [l.Fragment, null]));
                     }),
                     (t = u),
                     (k = [
@@ -9544,7 +9545,7 @@
                         {
                             key: "e60e51b3",
                             get: function () {
-                                return ["X beholder alltid kopier av områder i en begrenset periode for å sjekke dem for spam og trakassering. "];
+                                return ["X beholder alltid kopier av områder i en begrenset periode for å sjekke dem for nettsøppel og trakassering. "];
                             },
                         },
                         {
@@ -11278,7 +11279,7 @@
                         {
                             key: "fa4f5b49",
                             get: function () {
-                                return ["X sine systemer skanner delte lenker og mediefiler for spam, trakassering og forbudt innhold. Vi analyserer også bruksmønstre for å oppdage mistenkelig oppførsel og forbedre brukeropplevelsen din. Direktemeldinger kan bli sjekket manuelt i forbindelse med rapporter om regelbrudd og misbruk av tjenesten vår eller for å overholde lover eller forespørsler fra myndighetene. Vil du vite mer, kan du se ", " vår."];
+                                return ["X sine systemer skanner delte lenker og mediefiler for nettsøppel, trakassering og forbudt innhold. Vi analyserer også bruksmønstre for å oppdage mistenkelig oppførsel og forbedre brukeropplevelsen din. Direktemeldinger kan bli sjekket manuelt i forbindelse med rapporter om regelbrudd og misbruk av tjenesten vår eller for å overholde lover eller forespørsler fra myndighetene. Vil du vite mer, kan du se ", " vår."];
                             },
                         },
                         {
@@ -11386,7 +11387,7 @@
                         {
                             key: "iddf579b",
                             get: function () {
-                                return ["Noen kan ha oppgitt e-postadressen din ved et uhell under registreringen av X-kontoen sin. Eller noen kan bruke den til å spamme. Du kan rapportere kontoen for å hjelpe oss å identifisere og fjerne spam fra X. "];
+                                return ["Noen kan ha oppgitt e-postadressen din ved et uhell under registreringen av X-kontoen sin. Eller noen kan bruke den til å sende nettsøppel. Du kan rapportere kontoen for å hjelpe oss å identifisere og fjerne nettsøppel fra X. "];
                             },
                         },
                         {
@@ -11488,7 +11489,7 @@
                         {
                             key: "c815dfaf",
                             get: function () {
-                                return ["For å holde kvaliteten på forespørsler høy og forhindre spam må kontoer ha et verifisert telefonnummer for å be om en fellesskapsmerknad. "];
+                                return ["For å holde kvaliteten på forespørsler høy og forhindre nettsøppel må kontoer ha et verifisert telefonnummer for å be om en fellesskapsmerknad. "];
                             },
                         },
                         {
@@ -12965,8 +12966,8 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    n = s.Children.toArray(this.props.children),
-                                    r = ((e = this.props.$i18n), l[o[e]] || g);
+                                    n = l.Children.toArray(this.props.children),
+                                    r = ((e = this.props.$i18n), s[o[e]] || g);
                                 return function (e, t, i) {
                                     return e.concat(t, n[r(i)]);
                                 };
@@ -12977,10 +12978,10 @@
                     Object.defineProperty(t, "prototype", { writable: !1 }),
                     u
                 );
-            })(r(111677)._ActualI18NFormatMessage || s.Component);
+            })(r(111677)._ActualI18NFormatMessage || l.Component);
             t("_ActualI18NFormatMessage", k),
                 t("I18NFormatMessage", function (e) {
-                    return s.createElement(k, e);
+                    return l.createElement(k, e);
                 });
             var f = r(495075);
             r(800694), r(556829), r(530152), r(658610), r(492344), r(663823);
@@ -13332,4 +13333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.cc22358a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.de20043a.js.map

@@ -1,11 +1,11 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown", "icons/IconBookmarkCollections-js", "icons/IconCropSquare-js", "icons/IconDraggable-js", "icons/IconFolderArrowLeft-js", "icons/IconMediaCollapse-js"],
+    ["shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown", "icons/IconDraggable-js", "icons/IconMediaCollapse-js", "icons/IconSearchMinusStroke-js"],
     {
         65469: (e, t, n) => {
             n.d(t, { Z: () => s });
             n(202784);
-            const s = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.12"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), n.e("loader.CodeBlock-49d0a293"), n.e("loader.CodeBlock-354a642d"), n.e("loader.CodeBlock-e96e9bea")]).then(n.bind(n, 896867)) });
+            const s = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.24"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), n.e("loader.CodeBlock-49d0a293"), n.e("loader.CodeBlock-354a642d"), n.e("loader.CodeBlock-e96e9bea")]).then(n.bind(n, 896867)) });
         },
         169576: (e, t, n) => {
             n.d(t, { c: () => f, Z: () => m });
@@ -34,11 +34,11 @@
                             d.scribe({ component: m, action: "click", element: "card" });
                         },
                         { backgroundcolor: w, buttonSize: y, cardWidth: _, marginbottom: $, textcolor: z } = p ?? {},
-                        v = w ? i.default.theme.colors[w] : i.default.theme.colors.gray0,
-                        T = z ? i.default.theme.colors[z] : i.default.theme.colors.gray900,
-                        S = $ ? i.default.theme.spaces[$] : i.default.theme.spaces.space16,
-                        R = { [f.MarchMadness]: { header: k.header, description: k.description, legalDisclaimer: k.legalDisclaimer, buttonText: k.buttonText, image: k.image } }[n];
-                    return u ? s.createElement(l.Z, { interactiveStyles: null, link: t, onPress: b, style: x.bannerContainer }, s.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? R.image.lightMode : R.image.darkMode }, style: { height: 85 } })) : s.createElement(r.Z, { style: [x.card, { backgroundColor: v }, { maxWidth: _ }, { marginBottom: S }], testID: "popupCard" }, s.createElement(r.Z, { style: e ? x.horizontalContent : x.verticalContent }, s.createElement(r.Z, { style: e ? x.textContainer : null }, s.createElement(o.ZP, { size: "headline2", style: [x.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, R.header), s.createElement(o.ZP, { size: "subtext1", style: [x.popupDescription, { color: T }] }, R.description, " ", e ? null : R.legalDisclaimer)), s.createElement(r.Z, { style: x.buttonContainer }, s.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [x.popupButton, { width: y }] }, R.buttonText), e && s.createElement(o.ZP, { size: "subtext3", style: [x.legalDisclaimer, { color: T }] }, R.legalDisclaimer))));
+                        T = w ? i.default.theme.colors[w] : i.default.theme.colors.gray0,
+                        S = z ? i.default.theme.colors[z] : i.default.theme.colors.gray900,
+                        R = $ ? i.default.theme.spaces[$] : i.default.theme.spaces.space16,
+                        v = { [f.MarchMadness]: { header: k.header, description: k.description, legalDisclaimer: k.legalDisclaimer, buttonText: k.buttonText, image: k.image } }[n];
+                    return u ? s.createElement(l.Z, { interactiveStyles: null, link: t, onPress: b, style: x.bannerContainer }, s.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? v.image.lightMode : v.image.darkMode }, style: { height: 85 } })) : s.createElement(r.Z, { style: [x.card, { backgroundColor: T }, { maxWidth: _ }, { marginBottom: R }], testID: "popupCard" }, s.createElement(r.Z, { style: e ? x.horizontalContent : x.verticalContent }, s.createElement(r.Z, { style: e ? x.textContainer : null }, s.createElement(o.ZP, { size: "headline2", style: [x.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, v.header), s.createElement(o.ZP, { size: "subtext1", style: [x.popupDescription, { color: S }] }, v.description, " ", e ? null : v.legalDisclaimer)), s.createElement(r.Z, { style: x.buttonContainer }, s.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [x.popupButton, { width: y }] }, v.buttonText), e && s.createElement(o.ZP, { size: "subtext3", style: [x.legalDisclaimer, { color: S }] }, v.legalDisclaimer))));
                 },
                 x = i.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -99,32 +99,6 @@
             const d = c.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
                 g = u;
         },
-        322771: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
-            var s = n(202784),
-                r = n(890601),
-                i = n(783427),
-                l = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M2.998 8.5c0-1.38 1.119-2.5 2.5-2.5h9c1.381 0 2.5 1.12 2.5 2.5v14.12l-7-3.5-7 3.5V8.5zM18.5 2H8.998c-1.105 0-2 .9-2 2H18.5c.276 0 .5.22.5.5v9.82l-.002-.01v2.28L21 17.68V4.5C21 3.12 19.881 2 18.5 2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const o = a;
-        },
-        390587: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
-            var s = n(202784),
-                r = n(890601),
-                i = n(783427),
-                l = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const o = a;
-        },
         678773: (e, t, n) => {
             n.r(t), n.d(t, { default: () => o });
             var s = n(202784),
@@ -134,19 +108,6 @@
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
                 return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const o = a;
-        },
-        745088: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
-            var s = n(202784),
-                r = n(890601),
-                i = n(783427),
-                l = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M11 18v2H4.502c-1.378 0-2.5-1.121-2.5-2.5V3h8.535l2 3h9.465v7h-2V8h-8.535l-2-3H4.002v12.5c0 .275.224.5.5.5H11zm8.502 0h-2.073l2-2-1.414-1.414L13.601 19l4.414 4.414L19.429 22l-2-2H23v-2h-3.498z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const o = a;
@@ -166,11 +127,24 @@
             o.metadata = { width: 24, height: 24 };
             const c = o;
         },
+        614991: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => o });
+            var s = n(202784),
+                r = n(890601),
+                i = n(783427),
+                l = n(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm12.5 1h-7v-2h7v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const o = a;
+        },
         719870: (e, t, n) => {
             function s() {
                 return { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             }
-            n.d(t, { TU: () => A });
+            n.d(t, { TU: () => I });
             let r = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             function i(e) {
                 r = e;
@@ -732,7 +706,7 @@
                     return t;
                 }
             }
-            class v {
+            class T {
                 options;
                 constructor(e) {
                     this.options = e || r;
@@ -807,7 +781,7 @@
                     return e;
                 }
             }
-            class T {
+            class S {
                 strong(e) {
                     return e;
                 }
@@ -836,18 +810,18 @@
                     return "";
                 }
             }
-            class S {
+            class R {
                 options;
                 renderer;
                 textRenderer;
                 constructor(e) {
-                    (this.options = e || r), (this.options.renderer = this.options.renderer || new v()), (this.renderer = this.options.renderer), (this.renderer.options = this.options), (this.textRenderer = new T());
+                    (this.options = e || r), (this.options.renderer = this.options.renderer || new T()), (this.renderer = this.options.renderer), (this.renderer.options = this.options), (this.textRenderer = new S());
                 }
                 static parse(e, t) {
-                    return new S(t).parse(e);
+                    return new R(t).parse(e);
                 }
                 static parseInline(e, t) {
-                    return new S(t).parseInline(e);
+                    return new R(t).parseInline(e);
                 }
                 parse(e, t = !0) {
                     let n = "";
@@ -1020,7 +994,7 @@
                     return n;
                 }
             }
-            class R {
+            class v {
                 options;
                 constructor(e) {
                     this.options = e || r;
@@ -1033,17 +1007,17 @@
                     return e;
                 }
             }
-            const Z = new (class {
+            const A = new (class {
                 defaults = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
                 options = this.setOptions;
-                parse = this.#e(z.lex, S.parse);
-                parseInline = this.#e(z.lexInline, S.parseInline);
-                Parser = S;
-                Renderer = v;
-                TextRenderer = T;
+                parse = this.#e(z.lex, R.parse);
+                parseInline = this.#e(z.lexInline, R.parseInline);
+                Parser = R;
+                Renderer = T;
+                TextRenderer = S;
                 Lexer = z;
                 Tokenizer = y;
-                Hooks = R;
+                Hooks = v;
                 constructor(...e) {
                     this.use(...e);
                 }
@@ -1102,7 +1076,7 @@
                                     (n.extensions = t)),
                                 e.renderer)
                             ) {
-                                const t = this.defaults.renderer || new v(this.defaults);
+                                const t = this.defaults.renderer || new T(this.defaults);
                                 for (const n in e.renderer) {
                                     const s = e.renderer[n],
                                         r = n,
@@ -1128,12 +1102,12 @@
                                 n.tokenizer = t;
                             }
                             if (e.hooks) {
-                                const t = this.defaults.hooks || new R();
+                                const t = this.defaults.hooks || new v();
                                 for (const n in e.hooks) {
                                     const s = e.hooks[n],
                                         r = n,
                                         i = t[r];
-                                    R.passThroughHooks.has(n)
+                                    v.passThroughHooks.has(n)
                                         ? (t[r] = (e) => {
                                               if (this.defaults.async) return Promise.resolve(s.call(t, e)).then((e) => i.call(t, e));
                                               const n = s.call(t, e);
@@ -1166,7 +1140,7 @@
                     return z.lex(e, t ?? this.defaults);
                 }
                 parser(e, t) {
-                    return S.parse(e, t ?? this.defaults);
+                    return R.parse(e, t ?? this.defaults);
                 }
                 #e(e, t) {
                     return (n, s) => {
@@ -1205,33 +1179,33 @@
                     };
                 }
             })();
-            function A(e, t) {
-                return Z.parse(e, t);
+            function I(e, t) {
+                return A.parse(e, t);
             }
-            (A.options = A.setOptions =
+            (I.options = I.setOptions =
                 function (e) {
-                    return Z.setOptions(e), (A.defaults = Z.defaults), i(A.defaults), A;
+                    return A.setOptions(e), (I.defaults = A.defaults), i(I.defaults), I;
                 }),
-                (A.getDefaults = s),
-                (A.defaults = r),
-                (A.use = function (...e) {
-                    return Z.use(...e), (A.defaults = Z.defaults), i(A.defaults), A;
+                (I.getDefaults = s),
+                (I.defaults = r),
+                (I.use = function (...e) {
+                    return A.use(...e), (I.defaults = A.defaults), i(I.defaults), I;
                 }),
-                (A.walkTokens = function (e, t) {
-                    return Z.walkTokens(e, t);
+                (I.walkTokens = function (e, t) {
+                    return A.walkTokens(e, t);
                 }),
-                (A.parseInline = Z.parseInline),
-                (A.Parser = S),
-                (A.parser = S.parse),
-                (A.Renderer = v),
-                (A.TextRenderer = T),
-                (A.Lexer = z),
-                (A.lexer = z.lex),
-                (A.Tokenizer = y),
-                (A.Hooks = R),
-                (A.parse = A);
-            A.options, A.setOptions, A.use, A.walkTokens, A.parseInline, S.parse, z.lex;
+                (I.parseInline = A.parseInline),
+                (I.Parser = R),
+                (I.parser = R.parse),
+                (I.Renderer = T),
+                (I.TextRenderer = S),
+                (I.Lexer = z),
+                (I.lexer = z.lex),
+                (I.Tokenizer = y),
+                (I.Hooks = v),
+                (I.parse = I);
+            I.options, I.setOptions, I.use, I.walkTokens, I.parseInline, R.parse, z.lex;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.c2772b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.4a0a952a.js.map

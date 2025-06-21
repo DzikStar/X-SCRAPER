@@ -5,8 +5,8 @@
         343697: (e, t, a) => {
             a.r(t), a.d(t, { default: () => h });
             var n = a(807896),
-                o = (a(136728), a(202784)),
-                r = a(107267),
+                r = (a(136728), a(202784)),
+                o = a(107267),
                 l = a(717988),
                 d = a(923128),
                 s = a(221716),
@@ -16,27 +16,22 @@
             const p = (0, l.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.5"),
-                            a.e("icons.25"),
-                            a.e("icons.22"),
-                            a.e("icons.6"),
-                            a.e("icons.4"),
-                            a.e("icons.9"),
-                            a.e("icons.15"),
-                            a.e("icons.7"),
-                            a.e("icons.3"),
-                            a.e("icons.20"),
+                            a.e("icons.23"),
+                            a.e("icons.0"),
                             a.e("icons.2"),
-                            a.e("icons.18"),
-                            a.e("icons.27"),
+                            a.e("icons.16"),
+                            a.e("icons.19"),
+                            a.e("icons.10"),
                             a.e("icons.13"),
+                            a.e("icons.24"),
+                            a.e("icons.7"),
+                            a.e("icons.22"),
+                            a.e("icons.27"),
+                            a.e("icons.17"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.0"),
-                            a.e("icons.24"),
-                            a.e("icons.17"),
-                            a.e("icons.12"),
                             a.e("icons.11"),
+                            a.e("icons.26"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -47,17 +42,21 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.10"),
                             a.e("icons.8"),
-                            a.e("icons.26"),
-                            a.e("icons.19"),
+                            a.e("icons.4"),
+                            a.e("icons.14"),
+                            a.e("icons.28"),
+                            a.e("icons.21"),
+                            a.e("icons.3"),
+                            a.e("icons.1"),
+                            a.e("icons.18"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -120,21 +119,21 @@
                         t.push(a.getRoute?.(a.path)), a.synonyms.push((0, i.Bz)(a.title));
                         for (const e of a.items) t.push(e.getRoute?.(e.path)), e.synonyms.push((0, i.Bz)(e.title));
                     }
-                    const a = o.useCallback(
+                    const a = r.useCallback(
                         (t) => {
                             const a = e.filter((e) => e.isSearchable).map((e) => ({ ...e, items: e.items.filter((e) => e.isSearchable) }));
-                            return o.createElement(p, (0, n.Z)({}, t, { searchIndex: a }));
+                            return r.createElement(p, (0, n.Z)({}, t, { searchIndex: a }));
                         },
                         [e],
                     );
-                    return o.createElement(s.Z, { rootComponent: a, rootDetailContent: c.vB }, t, o.createElement(r.Route, { component: d.Z }));
+                    return r.createElement(s.Z, { rootComponent: a, rootDetailContent: c.vB }, t, r.createElement(o.Route, { component: d.Z }));
                 };
         },
         634238: (e, t, a) => {
             a.r(t), a.d(t, { default: () => f });
             var n = a(807896),
-                o = a(202784),
-                r = a(107267),
+                r = a(202784),
+                o = a(107267),
                 l = a(202336),
                 d = a(923128),
                 s = a(300497),
@@ -142,18 +141,18 @@
                 c = a(1167),
                 u = a(903360),
                 p = a(430717);
-            const h = (e) => o.createElement(c.ZP, (0, n.Z)({}, e, { component: u.N$, subscriptionNames: p.Vt })),
-                m = (e) => o.createElement(c.ZP, (0, n.Z)({}, e, { component: u.LY, subscriptionNames: p.Vt })),
-                b = (e) => o.createElement(s.Z, (0, n.Z)({}, e, { component: m, fallbackComponent: d.Z, featureSwitchName: "recruiting_promoted_jobs_enabled" })),
+            const h = (e) => r.createElement(c.ZP, (0, n.Z)({}, e, { component: u.N$, subscriptionNames: p.Vt })),
+                m = (e) => r.createElement(c.ZP, (0, n.Z)({}, e, { component: u.LY, subscriptionNames: p.Vt })),
+                b = (e) => r.createElement(s.Z, (0, n.Z)({}, e, { component: m, fallbackComponent: d.Z, featureSwitchName: "recruiting_promoted_jobs_enabled" })),
                 g = () => null,
-                f = () => o.createElement(i.Z, { rootComponent: h, rootDetailContent: g }, o.createElement(r.Route, { component: b, key: l.f.JOB_PROMOTION_SETTINGS, path: l.f.JOB_PROMOTION_SETTINGS }), o.createElement(r.Route, { component: d.Z }));
+                f = () => r.createElement(i.Z, { rootComponent: h, rootDetailContent: g }, r.createElement(o.Route, { component: b, key: l.f.JOB_PROMOTION_SETTINGS, path: l.f.JOB_PROMOTION_SETTINGS }), r.createElement(o.Route, { component: d.Z }));
         },
         249546: (e, t, a) => {
             a.r(t), a.d(t, { AppInfo: () => k, SettingsAboutScreen: () => M, default: () => A });
             a(136728);
             var n = a(202784),
-                o = a(325686),
-                r = a(844685),
+                r = a(325686),
+                o = a(844685),
                 l = a(779610),
                 d = a(688715),
                 s = a(943401),
@@ -175,7 +174,7 @@
                 _ = p().c0398892;
             function k(e) {
                 const t = [];
-                return t.push(n.createElement(r.Z, { text: _ })), t.push(n.createElement(l.Z, { label: _, link: { external: !0, pathname: (0, d.ju)("https://x.com/i/release_notes") } })), n.Children.toArray(t);
+                return t.push(n.createElement(o.Z, { text: _ })), t.push(n.createElement(l.Z, { label: _, link: { external: !0, pathname: (0, d.ju)("https://x.com/i/release_notes") } })), n.Children.toArray(t);
             }
             function M(e) {
                 const { location: t } = e,
@@ -193,16 +192,16 @@
                         f.Z,
                         { location: t, screenType: "primaryDetail", title: E },
                         n.createElement(
-                            o.Z,
+                            r.Z,
                             { testID: y.aboutScreen },
                             n.createElement(s.Z, { description: Z }),
                             n.createElement(k, null),
                             n.createElement(i.Z, null),
-                            n.createElement(r.Z, { text: S }),
+                            n.createElement(o.Z, { text: S }),
                             u.map((e, t) => n.createElement(l.Z, { key: e.text, label: e.text, link: { external: !0, pathname: e.link } })),
                             g.map((e) => n.createElement(c.ZP, { color: "gray700", key: e.text, size: "subtext2", style: [D.Z.infoText, D.Z.bottomBorder] }, e.text)),
                             n.createElement(i.Z, null),
-                            n.createElement(r.Z, { text: w }),
+                            n.createElement(o.Z, { text: w }),
                             p.map((e, t) => n.createElement(l.Z, { key: e.text, label: e.text, link: { external: !0, pathname: e.link } })),
                         ),
                     ),
@@ -213,8 +212,8 @@
         337947: (e, t, a) => {
             a.r(t), a.d(t, { AccessibilityScreen: () => G, default: () => q });
             var n = a(202784),
-                o = a(325686),
-                r = a(688715),
+                r = a(325686),
+                o = a(688715),
                 l = a(461756),
                 d = a(392237),
                 s = a(943401),
@@ -257,7 +256,7 @@
                 V = m().a776eed8,
                 j = m().bbd1fc7c,
                 U = m().ac865cf0,
-                W = (0, r.ju)("https://help.x.com/resources/accessibility");
+                W = (0, o.ju)("https://help.x.com/resources/accessibility");
             class G extends n.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -269,13 +268,13 @@
                             this._handleSettingChanged(e, t), d.default.setHighContrast(t);
                         }),
                         (this._handleAltTextNudgeTypeChanged = (e, t) => {
-                            const { analytics: a, createLocalApiErrorHandler: n, updateAltTextPromptPreference: o } = this.props,
-                                r = t ? D.f.Prompt : null;
-                            a.scribe({ element: `${e}_${r || "off"}`, action: "selected" }), o(r).catch(n({ showToast: !0 }));
+                            const { analytics: a, createLocalApiErrorHandler: n, updateAltTextPromptPreference: r } = this.props,
+                                o = t ? D.f.Prompt : null;
+                            a.scribe({ element: `${e}_${o || "off"}`, action: "selected" }), r(o).catch(n({ showToast: !0 }));
                         }),
                         (this._handleSettingChanged = (e, t) => {
-                            const { analytics: a, createLocalApiErrorHandler: n, updateSettings: o } = this.props;
-                            a.scribe({ element: e, action: t ? "on" : "off" }), o({ [e]: t }).catch(n({ showToast: !0 }));
+                            const { analytics: a, createLocalApiErrorHandler: n, updateSettings: r } = this.props;
+                            a.scribe({ element: e, action: t ? "on" : "off" }), r({ [e]: t }).catch(n({ showToast: !0 }));
                         }),
                         (this._showVideoAutoplaySetting = (0, E.Z)());
                 }
@@ -284,11 +283,11 @@
                     this._showAltTextPromptPreferenceSetting && e({ shouldImpress: !0 });
                 }
                 render() {
-                    const { altTextNudgeType: e, dataSaverMode: t, highContrastEnabled: a, location: r, reducedMotionEnabled: l, videoAutoplay: d } = this.props,
+                    const { altTextNudgeType: e, dataSaverMode: t, highContrastEnabled: a, location: o, reducedMotionEnabled: l, videoAutoplay: d } = this.props,
                         h = window.matchMedia && window.matchMedia("(prefers-reduced-motion)").matches,
                         m = this._showAltTextPromptPreferenceSetting,
                         g = d ?? (0, y.i)();
-                    return n.createElement(f.Z, null, n.createElement(S.Z, { location: r, screenType: "secondaryDetail", title: x }, n.createElement(o.Z, { testID: P }, n.createElement(s.Z, { description: T }), n.createElement(i.Z, { text: I }), n.createElement(c.Z, { checked: a, helpText: R, label: L, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: v }), n.createElement(c.Z, { checked: l || h, disabled: h, helpText: h ? F : N, label: z, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: w.Z[g], disabled: t, label: V, link: "/settings/autoplay" })) : null, m ? n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: B }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === D.f.Prompt, helpText: O, label: H, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: j }), n.createElement(b.b, { label: U, link: W }))));
+                    return n.createElement(f.Z, null, n.createElement(S.Z, { location: o, screenType: "secondaryDetail", title: x }, n.createElement(r.Z, { testID: P }, n.createElement(s.Z, { description: T }), n.createElement(i.Z, { text: I }), n.createElement(c.Z, { checked: a, helpText: R, label: L, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: v }), n.createElement(c.Z, { checked: l || h, disabled: h, helpText: h ? F : N, label: z, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: w.Z[g], disabled: t, label: V, link: "/settings/autoplay" })) : null, m ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: B }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === D.f.Prompt, helpText: O, label: H, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: j }), n.createElement(b.b, { label: U, link: W }))));
                 }
             }
             G.contextType = g.rC;
@@ -297,8 +296,8 @@
         167783: (e, t, a) => {
             a.r(t), a.d(t, { DataUsageScreen: () => A, default: () => C });
             var n = a(202784),
-                o = a(943401),
-                r = a(954110),
+                r = a(943401),
+                o = a(954110),
                 l = a(779610),
                 d = a(111677),
                 s = a.n(d),
@@ -327,8 +326,8 @@
                 constructor(e, t) {
                     super(e, t),
                         (this._handleDataSaverChanged = (e, t) => {
-                            const { analytics: a, createLocalApiErrorHandler: n, updateDataSaverMode: o } = this.props;
-                            a.scribe({ element: e, action: t ? "on" : "off" }), o({ enabled: t }).catch(n({ ...(0, u.d)(), showToast: !0 }));
+                            const { analytics: a, createLocalApiErrorHandler: n, updateDataSaverMode: r } = this.props;
+                            a.scribe({ element: e, action: t ? "on" : "off" }), r({ enabled: t }).catch(n({ ...(0, u.d)(), showToast: !0 }));
                         }),
                         (this._showVideoAutoplaySetting = (0, b.Z)());
                 }
@@ -339,7 +338,7 @@
                 render() {
                     const { dataSaverMode: e, location: t, videoAutoplay: a } = this.props,
                         d = a ?? (0, p.i)();
-                    return n.createElement(c.Z, null, n.createElement(h.Z, { location: t, screenType: "secondaryDetail", title: E }, n.createElement(o.Z, { description: Z }), n.createElement(r.Z, { checked: e, helpText: k, label: _, name: "dataSaverMode", onChange: this._handleDataSaverChanged, testID: w }), this._showVideoAutoplaySetting && n.createElement(l.Z, { description: m.Z[d], disabled: e, label: M, link: "/settings/autoplay" })));
+                    return n.createElement(c.Z, null, n.createElement(h.Z, { location: t, screenType: "secondaryDetail", title: E }, n.createElement(r.Z, { description: Z }), n.createElement(o.Z, { checked: e, helpText: k, label: _, name: "dataSaverMode", onChange: this._handleDataSaverChanged, testID: w }), this._showVideoAutoplaySetting && n.createElement(l.Z, { description: m.Z[d], disabled: e, label: M, link: "/settings/autoplay" })));
                 }
             }
             A.contextType = i.rC;
@@ -348,8 +347,8 @@
         145711: (e, t, a) => {
             a.r(t), a.d(t, { DisplayScreen: () => k, default: () => A });
             var n = a(202784),
-                o = a(325686),
-                r = a(731708),
+                r = a(325686),
+                o = a(731708),
                 l = a(420412),
                 d = a(844685),
                 s = a(392237),
@@ -369,17 +368,17 @@
                 E = c().c783d45e,
                 Z = c().h306a358,
                 _ = { page: "settings", section: "display" },
-                k = ({ location: e }) => n.createElement(g.nO, { namespace: _ }, n.createElement(u.Z, null, n.createElement(f.Z, { location: e, screenType: "secondaryDetail", title: y }, n.createElement(r.ZP, { color: "gray700", size: "subtext2", style: M.aboutText, testID: D }, S), n.createElement(b.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: w }), n.createElement(p.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: E }), n.createElement(o.Z, { style: M.colorPicker }, n.createElement(m.Z, null)), n.createElement(l.Z, null), n.createElement(d.Z, { text: Z }), n.createElement(o.Z, { style: M.backgroundPicker }, n.createElement(h.Z, null))))),
+                k = ({ location: e }) => n.createElement(g.nO, { namespace: _ }, n.createElement(u.Z, null, n.createElement(f.Z, { location: e, screenType: "secondaryDetail", title: y }, n.createElement(o.ZP, { color: "gray700", size: "subtext2", style: M.aboutText, testID: D }, S), n.createElement(b.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: w }), n.createElement(p.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: E }), n.createElement(r.Z, { style: M.colorPicker }, n.createElement(m.Z, null)), n.createElement(l.Z, null), n.createElement(d.Z, { text: Z }), n.createElement(r.Z, { style: M.backgroundPicker }, n.createElement(h.Z, null))))),
                 M = s.default.create((e) => ({ aboutText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, backgroundPicker: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space4 }, colorPicker: { paddingVertical: e.spaces.space4 } })),
                 A = k;
         },
         754393: (e, t, a) => {
             a.d(t, { o: () => s, s: () => i });
             var n = a(111677),
-                o = a.n(n);
-            const r = o().dae57a42,
-                l = o().i7cbc154,
-                d = o().e3a761ee,
+                r = a.n(n);
+            const o = r().dae57a42,
+                l = r().i7cbc154,
+                d = r().e3a761ee,
                 s = (e) => {
                     const t = ((e) => Object.keys(e).reduce((t, a) => (e[a] ? t + 1 : t), 0))(e);
                     switch (t) {
@@ -391,13 +390,13 @@
                             return "some";
                     }
                 },
-                i = (e) => ({ some: l, none: d, all: r })[s(e)];
+                i = (e) => ({ some: l, none: d, all: o })[s(e)];
         },
         177790: (e, t, a) => {
             a.r(t), a.d(t, { DownloadTwitterArchiveDetailedScreen: () => V, default: () => U });
             var n = a(202784),
-                o = a(325686),
-                r = a(731708),
+                r = a(325686),
+                o = a(731708),
                 l = a(154003),
                 d = a(392237),
                 s = a(111677),
@@ -438,11 +437,11 @@
                     const {
                             disabled: e,
                             onConfirm: t,
-                            url: { size_b: a, url: r },
+                            url: { size_b: a, url: o },
                         } = this.props,
                         d = w({ size: _.getSizeLabel(a) }),
                         s = e ? y : D;
-                    return n.createElement(o.Z, null, this._shouldDisplayConfirmation ? n.createElement(o.Z, null, n.createElement(l.ZP, { disabled: e, onPress: this._handleNeedsConfirmationActionCellPress, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, s), this.state.showConfirmation && !e ? n.createElement(u.Z, { cancelButtonLabel: g, confirmButtonLabel: f, confirmButtonLink: { pathname: (0, p.ju)(r) || "", external: !0 }, headline: S, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: d }) : null) : n.createElement(l.ZP, { disabled: e, link: r ? { pathname: (0, p.ju)(r), external: !0 } : void 0, onPress: t, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, s));
+                    return n.createElement(r.Z, null, this._shouldDisplayConfirmation ? n.createElement(r.Z, null, n.createElement(l.ZP, { disabled: e, onPress: this._handleNeedsConfirmationActionCellPress, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, s), this.state.showConfirmation && !e ? n.createElement(u.Z, { cancelButtonLabel: g, confirmButtonLabel: f, confirmButtonLink: { pathname: (0, p.ju)(o) || "", external: !0 }, headline: S, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: d }) : null) : n.createElement(l.ZP, { disabled: e, link: o ? { pathname: (0, p.ju)(o), external: !0 } : void 0, onPress: t, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, s));
                 }
             }
             _.getSizeLabel = (e) => {
@@ -476,9 +475,9 @@
                             const {
                                 downloads: { nonFailed: e },
                             } = this.props;
-                            return e.length ? n.createElement(o.Z, null, e.map(this._renderDownloadItems)) : this._renderEmptyState();
+                            return e.length ? n.createElement(r.Z, null, e.map(this._renderDownloadItems)) : this._renderEmptyState();
                         }),
-                        (this._renderDownloadItems = (e, t) => n.createElement(o.Z, { key: t }, e.urls && "COMPLETED" === e.status ? e.urls.map(this._renderDownloadButtons.bind(this, e)) : this._renderUnavailableButton(e))),
+                        (this._renderDownloadItems = (e, t) => n.createElement(r.Z, { key: t }, e.urls && "COMPLETED" === e.status ? e.urls.map(this._renderDownloadButtons.bind(this, e)) : this._renderUnavailableButton(e))),
                         (this._handleConfirm = (e) => () => {
                             const { analytics: t, createLocalApiErrorHandler: a, fetchDownloads: n } = this.props;
                             !e.downloaded_at && e.url && this.props.markDataAsDownloaded({ url: e.url }).then(n).catch(a()), t.scribe({ element: "download_button", action: "click" });
@@ -493,16 +492,16 @@
                     return n.createElement(k.Z, { location: a, title: T }, n.createElement(M.Z, { fetch: e, fetchStatus: t, renderChildren: this._render }));
                 }
                 _renderEmptyState() {
-                    return n.createElement(o.Z, { style: j.emptyState }, n.createElement(r.ZP, { size: "title4" }, B), n.createElement(r.ZP, { color: "gray700", style: j.emptyStateDescription }, R), n.createElement(l.ZP, { link: "/settings/download_your_data", size: "small", style: b.Z.narrowButton, type: "brandFilled" }, L));
+                    return n.createElement(r.Z, { style: j.emptyState }, n.createElement(o.ZP, { size: "title4" }, B), n.createElement(o.ZP, { color: "gray700", style: j.emptyStateDescription }, R), n.createElement(l.ZP, { link: "/settings/download_your_data", size: "small", style: b.Z.narrowButton, type: "brandFilled" }, L));
                 }
                 _renderDownloadButtons(e, t, a, l) {
                     const d = a + 1,
                         s = l.length,
                         i = !!t?.url;
-                    return n.createElement(o.Z, { key: `${d}`, style: [b.Z.narrowButtonRow, b.Z.bottomBorder, b.Z.labelContainer] }, n.createElement(o.Z, null, n.createElement(r.ZP, { weight: "bold" }, O({ currentIndex: d, count: s })), e.generated ? n.createElement(r.ZP, { color: "gray700" }, N({ date: z(new Date(e.generated)) })) : null, e.expires ? n.createElement(r.ZP, { color: "gray700" }, F({ date: z(new Date(e.expires)) })) : null, t.size_b ? n.createElement(r.ZP, { color: "gray700" }, H({ size: _.getSizeLabel(t.size_b) })) : null), n.createElement(_, { disabled: !i, onConfirm: this._handleConfirm(t), url: t }));
+                    return n.createElement(r.Z, { key: `${d}`, style: [b.Z.narrowButtonRow, b.Z.bottomBorder, b.Z.labelContainer] }, n.createElement(r.Z, null, n.createElement(o.ZP, { weight: "bold" }, O({ currentIndex: d, count: s })), e.generated ? n.createElement(o.ZP, { color: "gray700" }, N({ date: z(new Date(e.generated)) })) : null, e.expires ? n.createElement(o.ZP, { color: "gray700" }, F({ date: z(new Date(e.expires)) })) : null, t.size_b ? n.createElement(o.ZP, { color: "gray700" }, H({ size: _.getSizeLabel(t.size_b) })) : null), n.createElement(_, { disabled: !i, onConfirm: this._handleConfirm(t), url: t }));
                 }
                 _renderUnavailableButton(e) {
-                    return n.createElement(o.Z, { style: [b.Z.narrowButtonRow, b.Z.bottomBorder, b.Z.labelContainer] }, n.createElement(r.ZP, { weight: "bold" }, O({ currentIndex: 1, count: 1 })), n.createElement(l.ZP, { disabled: !0, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, "INPROGRESS" === e.status ? I : v));
+                    return n.createElement(r.Z, { style: [b.Z.narrowButtonRow, b.Z.bottomBorder, b.Z.labelContainer] }, n.createElement(o.ZP, { weight: "bold" }, O({ currentIndex: 1, count: 1 })), n.createElement(l.ZP, { disabled: !0, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, "INPROGRESS" === e.status ? I : v));
                 }
             }
             V.contextType = c.rC;
@@ -510,27 +509,27 @@
                 U = x(V);
         },
         342453: (e, t, a) => {
-            a.d(t, { Z: () => r });
+            a.d(t, { Z: () => o });
             var n = a(392237);
-            const o = (e) => ({ borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: "1px" }),
-                r = n.default.create((e) => ({ labelContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", width: "100%" }, helpText: { display: "block", fontSize: e.fontSizes.subtext2, lineHeight: "1.55" }, titleCase: { textTransform: "capitalize" }, floatingLink: { paddingStart: e.spaces.space20 }, infoItem: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, locationInfo: { alignItems: "center", flexDirection: "row", width: "100%" }, locationIcon: { marginEnd: e.spaces.space12 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space20 }, noLeftPadding: { paddingStart: 0 }, narrowButtonRow: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { ...o(e) }, narrowButton: { alignSelf: "center", marginStart: e.spaces.space12, paddingStart: e.spaces.space20 }, helpTextExtraPadded: { paddingTop: e.spaces.space12 }, featureDisabledCallout: { paddingHorizontal: 70, paddingTop: e.spaces.space48 }, featureDisabledTitle: { paddingBottom: e.spaces.space4 }, cursor: { cursor: "pointer" } }));
+            const r = (e) => ({ borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: "1px" }),
+                o = n.default.create((e) => ({ labelContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", width: "100%" }, helpText: { display: "block", fontSize: e.fontSizes.subtext2, lineHeight: "1.55" }, titleCase: { textTransform: "capitalize" }, floatingLink: { paddingStart: e.spaces.space20 }, infoItem: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, locationInfo: { alignItems: "center", flexDirection: "row", width: "100%" }, locationIcon: { marginEnd: e.spaces.space12 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space20 }, noLeftPadding: { paddingStart: 0 }, narrowButtonRow: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { ...r(e) }, narrowButton: { alignSelf: "center", marginStart: e.spaces.space12, paddingStart: e.spaces.space20 }, helpTextExtraPadded: { paddingTop: e.spaces.space12 }, featureDisabledCallout: { paddingHorizontal: 70, paddingTop: e.spaces.space48 }, featureDisabledTitle: { paddingBottom: e.spaces.space4 }, cursor: { cursor: "pointer" } }));
         },
         669504: (e, t, a) => {
             a.d(t, { Z: () => i });
             var n = a(111677),
-                o = a.n(n),
-                r = a(870976);
-            const l = o().g1888dc2,
-                d = o().f724d1aa,
-                s = o().cf6472c2,
-                i = { [r.Z.Off]: l, [r.Z.WiFiOnly]: d, [r.Z.Always]: s };
+                r = a.n(n),
+                o = a(870976);
+            const l = r().g1888dc2,
+                d = r().f724d1aa,
+                s = r().cf6472c2,
+                i = { [o.Z.Off]: l, [o.Z.WiFiOnly]: d, [o.Z.Always]: s };
         },
         924455: (e, t, a) => {
             a.r(t), a.d(t, { SettingsVideoAutoplay: () => A, default: () => C });
             a(136728);
             var n = a(202784),
-                o = a(325686),
-                r = a(688715),
+                r = a(325686),
+                o = a(688715),
                 l = a(101890),
                 d = a(731708),
                 s = a(111677),
@@ -553,14 +552,14 @@
             const E = i().a776eed8,
                 Z = i().ede134f2,
                 _ = i().i859a9d4,
-                k = (0, r.ju)("https://help.x.com/using-twitter/twitter-videos"),
+                k = (0, o.ju)("https://help.x.com/using-twitter/twitter-videos"),
                 M = (e) => ({ value: e, label: g.Z[e] });
             class A extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleItemChanged = (e, t) => {
-                            const { analytics: a, createLocalApiErrorHandler: n, updateVideoAutoplay: o } = this.props;
-                            a.scribe({ element: "videoAutoplay", action: t.toLowerCase() }), o(h.Z[t]).catch(n({ ...(0, p.d)(), showToast: !0 }));
+                            const { analytics: a, createLocalApiErrorHandler: n, updateVideoAutoplay: r } = this.props;
+                            a.scribe({ element: "videoAutoplay", action: t.toLowerCase() }), r(h.Z[t]).catch(n({ ...(0, p.d)(), showToast: !0 }));
                         });
                 }
                 componentDidMount() {
@@ -574,24 +573,24 @@
                 render() {
                     const { location: e, videoAutoplay: t } = this.props,
                         a = t ?? (0, m.i)();
-                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, title: E }, n.createElement(o.Z, null, n.createElement(l.Z, { description: n.createElement(n.Fragment, null, `${Z} `, n.createElement(d.ZP, { link: k }, _)), label: E, name: "video_autoplay", onChange: this._handleItemChanged, options: this._getOptions(a), value: a }))));
+                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, title: E }, n.createElement(r.Z, null, n.createElement(l.Z, { description: n.createElement(n.Fragment, null, `${Z} `, n.createElement(d.ZP, { link: k }, _)), label: E, name: "video_autoplay", onChange: this._handleItemChanged, options: this._getOptions(a), value: a }))));
                 }
             }
             A.contextType = c.rC;
             const C = S(A);
         },
         228149: (e, t, a) => {
-            a.d(t, { Z: () => o });
+            a.d(t, { Z: () => r });
             var n = a(172459);
-            function o() {
+            function r() {
                 return (0, n.Z)();
             }
         },
         264922: (e, t, a) => {
             a.d(t, { Z: () => w });
             var n = a(202784),
-                o = a(108362),
-                r = a(420412),
+                r = a(108362),
+                o = a(420412),
                 l = a(154003),
                 d = a(392237),
                 s = a(111677),
@@ -616,7 +615,7 @@
                         }),
                         (this._render = () => {
                             const { children: e, onSubmit: t, submitDisabled: a, submitLabel: d, submitType: s, withMarginBottom: i } = this.props;
-                            return n.createElement(o.Z, { style: [S.contentRoot, i && S.withMarginBottom] }, e, t ? n.createElement(n.Fragment, null, n.createElement(r.Z, null), n.createElement(o.Z, { style: S.buttonContainer }, n.createElement(l.ZP, { disabled: a, onPress: t, style: S.button, testID: f, type: s }, d))) : null);
+                            return n.createElement(r.Z, { style: [S.contentRoot, i && S.withMarginBottom] }, e, t ? n.createElement(n.Fragment, null, n.createElement(o.Z, null), n.createElement(r.Z, { style: S.buttonContainer }, n.createElement(l.ZP, { disabled: a, onPress: t, style: S.button, testID: f, type: s }, d))) : null);
                         }),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
@@ -632,10 +631,10 @@
                     return e && e.pathname === a ? "/" : a;
                 }
                 render() {
-                    const { onBackClick: e, rightControl: t, screenType: a, secondaryBar: o, title: r, viewerUser: l, withBottomBorder: d } = this.props,
+                    const { onBackClick: e, rightControl: t, screenType: a, secondaryBar: r, title: o, viewerUser: l, withBottomBorder: d } = this.props,
                         s = this.getBackLocation(),
                         i = l ? `@${l.screen_name}` : void 0;
-                    return n.createElement(u.Z, { backLocation: s, onBackClick: e, rightControl: t, screenType: a, secondaryBar: o, showSubtitleOnWideDetail: !1, subtitle: i, title: r, withBottomBorder: d }, l ? this._renderWithFetchSettings() : this._render());
+                    return n.createElement(u.Z, { backLocation: s, onBackClick: e, rightControl: t, screenType: a, secondaryBar: r, showSubtitleOnWideDetail: !1, subtitle: i, title: o, withBottomBorder: d }, l ? this._renderWithFetchSettings() : this._render());
                 }
             }
             y.defaultProps = { submitLabel: D, submitType: "brandFilled", withMarginBottom: !0 };
@@ -645,8 +644,8 @@
         569291: (e, t, a) => {
             a.d(t, { Z: () => p });
             var n = a(202784),
-                o = a(615656),
-                r = a(290402),
+                r = a(615656),
+                o = a(290402),
                 l = a(312771),
                 d = a(615027),
                 s = a(71620),
@@ -664,12 +663,12 @@
                                 })
                                 .catch(
                                     e({
-                                        [o.ZP.GenericForbidden]: {
+                                        [r.ZP.GenericForbidden]: {
                                             customAction: () => {
                                                 this.setState({ verificationRequired: !0 });
                                             },
                                         },
-                                        [o.ZP.PasswordVerificationRequired]: {
+                                        [r.ZP.PasswordVerificationRequired]: {
                                             customAction: () => {
                                                 this.setState({ verificationRequired: !0 });
                                             },
@@ -685,8 +684,8 @@
                 render() {
                     const { fetchStatus: e, renderChildren: t } = this.props,
                         { verificationRequired: a } = this.state,
-                        o = e === l.ZP.FAILED && a;
-                    return n.createElement(n.Fragment, null, o ? n.createElement(d.Z, { to: "/i/flow/verify_account_ownership" }) : n.createElement(r.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: t }));
+                        r = e === l.ZP.FAILED && a;
+                    return n.createElement(n.Fragment, null, r ? n.createElement(d.Z, { to: "/i/flow/verify_account_ownership" }) : n.createElement(o.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: t }));
                 }
             }
             const p = c.forwardRef(u);
@@ -694,8 +693,8 @@
         855632: (e, t, a) => {
             a.r(t), a.d(t, { SettingsPage: () => xe, default: () => Te });
             var n = a(202784),
-                o = a(99107),
-                r = a(325686),
+                r = a(99107),
+                o = a(325686),
                 l = a(688715),
                 d = a(537392),
                 s = a(779610),
@@ -733,7 +732,7 @@
                 z = 500,
                 N = 100;
             function F(e) {
-                const { isSearching: t, onChange: a, searchIndex: o } = e,
+                const { isSearching: t, onChange: a, searchIndex: r } = e,
                     l = (0, x.z)(),
                     d = (0, Z.useHistory)(),
                     [s, i] = n.useState(""),
@@ -752,7 +751,7 @@
                 n.useEffect(() => {
                     if (y) {
                         const e = [];
-                        for (const t of o) {
+                        for (const t of r) {
                             let a = !1;
                             Array.isArray(t.items) &&
                                 t.items.forEach((n) => {
@@ -762,7 +761,7 @@
                         }
                         g(e), D !== u && (p(D), f(e.length));
                     } else g([]);
-                }, [D, y, o, u, f]);
+                }, [D, y, r, u, f]);
                 const S = n.useCallback(() => {
                         a(!1);
                     }, [a]),
@@ -801,7 +800,7 @@
                     },
                     onQueryChange: O,
                     placeholder: L,
-                    renderEmptyState: ({ style: e }) => (y ? n.createElement(_.Z, { header: v({ query: s }), message: B, style: e }) : n.createElement(r.Z, { style: [e, H.emptyState] }, n.createElement(c.ZP, { align: "center", color: "gray700" }, I))),
+                    renderEmptyState: ({ style: e }) => (y ? n.createElement(_.Z, { header: v({ query: s }), message: B, style: e }) : n.createElement(o.Z, { style: [e, H.emptyState] }, n.createElement(c.ZP, { align: "center", color: "gray700" }, I))),
                     rounded: !0,
                     shouldRenderEmptyState: t && (!y || 0 === b.length),
                     source: P._4.SearchBox,
@@ -829,8 +828,8 @@
                 te = h().f66d24be,
                 ae = h().e3719c16,
                 ne = h().cad53944,
-                oe = h().bb081ea2,
-                re = h().e95b9448,
+                re = h().bb081ea2,
+                oe = h().e95b9448,
                 le = h().eb75875e,
                 de = h().c4881c66,
                 se = h().eafe3288,
@@ -862,8 +861,8 @@
                         t = (0, d.iv)().width,
                         a = S.Z.isOneColumnLayout(t) || S.Z.isOneColumnSquishedLayout(t);
                     return Ce.map((t) => {
-                        const { featureSwitch: o, link: r, text: l } = t;
-                        if (e.featureSwitches.isTrue(o) && a) return n.createElement(s.Z, { key: l, label: l, link: r });
+                        const { featureSwitch: r, link: o, text: l } = t;
+                        if (e.featureSwitches.isTrue(r) && a) return n.createElement(s.Z, { key: l, label: l, link: o });
                     });
                 };
             function xe(e) {
@@ -874,8 +873,8 @@
                 }, [e, e.viewerUser]);
                 const d = (0, b.Z)(),
                     p = () => {
-                        const e = (0, w.Xh)(o.b7, t.featureSwitches);
-                        return n.createElement(r.Z, { testID: ee.loggedOutPrivacySection }, n.createElement(i.Z, { text: ie }), n.createElement(g.Z, { description: e ? x() : void 0, label: ce, link: "/settings/account/personalization" }), n.createElement(g.Z, { label: ue, link: "/settings/your_twitter_data" }), t.featureSwitches.isTrue("responsive_web_cookie_compliance_banner_enabled") ? n.createElement(g.Z, { description: me, label: he, link: "/settings/cookie_preferences" }) : null, n.createElement(c.ZP, { style: K.Z.descriptionText }, pe), Z(), n.createElement(Pe, null));
+                        const e = (0, w.Xh)(r.b7, t.featureSwitches);
+                        return n.createElement(o.Z, { testID: ee.loggedOutPrivacySection }, n.createElement(i.Z, { text: ie }), n.createElement(g.Z, { description: e ? x() : void 0, label: ce, link: "/settings/account/personalization" }), n.createElement(g.Z, { label: ue, link: "/settings/your_twitter_data" }), t.featureSwitches.isTrue("responsive_web_cookie_compliance_banner_enabled") ? n.createElement(g.Z, { description: me, label: he, link: "/settings/cookie_preferences" }) : null, n.createElement(c.ZP, { style: K.Z.descriptionText }, pe), Z(), n.createElement(Pe, null));
                     },
                     { delegateRole: h } = e,
                     S = () => {
@@ -888,7 +887,7 @@
                             searchIndex: t,
                         });
                     },
-                    Z = () => n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: re }), _(), T() ? n.createElement(g.Z, { label: de, link: "/settings/display", testID: ee.displayLink }) : null, T() ? n.createElement(g.Z, { label: se, link: "/settings/data", testID: ee.dataLink }) : null, T() ? n.createElement(g.Z, { label: ae, link: "/settings/accessibility", testID: ee.accessibilityLink }) : null, n.createElement(g.Z, { label: De, link: "/settings/about", testID: ee.aboutLink })),
+                    Z = () => n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: oe }), _(), T() ? n.createElement(g.Z, { label: de, link: "/settings/display", testID: ee.displayLink }) : null, T() ? n.createElement(g.Z, { label: se, link: "/settings/data", testID: ee.dataLink }) : null, T() ? n.createElement(g.Z, { label: ae, link: "/settings/accessibility", testID: ee.accessibilityLink }) : null, n.createElement(g.Z, { label: De, link: "/settings/about", testID: ee.aboutLink })),
                     _ = () => (e.withEditableFSes ? n.createElement(n.Fragment, null, n.createElement(g.Z, { label: Se, link: "/settings/feature_switches" }), n.createElement(g.Z, { label: ye, link: "/settings/earlybird_settings" })) : null),
                     k = () => {
                         const { userClaims: e } = t;
@@ -896,21 +895,21 @@
                     },
                     M = () => {
                         const { searchIndex: a } = e,
-                            { featureSwitches: o, userClaims: r } = t,
+                            { featureSwitches: r, userClaims: o } = t,
                             l = a.find((e) => e.id === E.VZ.TwitterBlue)?.path;
-                        if (r.isAnyPremiumSubscriber() || (!r.isAnyPremiumSubscriber() && o.isTrue("subscriptions_sign_up_enabled"))) return l ? n.createElement(g.Z, { label: _e, link: l }) : null;
+                        if (o.isAnyPremiumSubscriber() || (!o.isAnyPremiumSubscriber() && r.isTrue("subscriptions_sign_up_enabled"))) return l ? n.createElement(g.Z, { label: _e, link: l }) : null;
                     },
                     A = (a) => {
-                        const { featureSwitches: o } = t,
-                            { searchIndex: r } = e,
-                            l = r.find((e) => e.id === E.VZ.Analytics)?.path;
-                        if (a && o.isTrue("subscriptions_upsells_settings_analytics_upsell_enabled")) return l ? n.createElement(g.Z, { label: Ee, link: l }) : null;
+                        const { featureSwitches: r } = t,
+                            { searchIndex: o } = e,
+                            l = o.find((e) => e.id === E.VZ.Analytics)?.path;
+                        if (a && r.isTrue("subscriptions_upsells_settings_analytics_upsell_enabled")) return l ? n.createElement(g.Z, { label: Ee, link: l }) : null;
                     },
                     C = () => {
                         const { searchIndex: a } = e,
-                            { featureSwitches: o } = t,
-                            r = a.find((e) => e.id === E.VZ.Subscription)?.path;
-                        if (o.isTrue("responsive_web_subscriptions_setting_enabled")) return r ? n.createElement(g.Z, { label: Me, link: r }) : null;
+                            { featureSwitches: r } = t,
+                            o = a.find((e) => e.id === E.VZ.Subscription)?.path;
+                        if (r.isTrue("responsive_web_subscriptions_setting_enabled")) return o ? n.createElement(g.Z, { label: Me, link: o }) : null;
                     },
                     P = () => (t.featureSwitches.isTrue("report_center_mvp_r2_enabled") ? n.createElement(g.Z, { label: ke, link: "/settings/report-center" }) : null),
                     x = () => {
@@ -931,7 +930,7 @@
                                 a ? l(!1) : t.goBack();
                             },
                             screenType: "root",
-                            title: oe,
+                            title: re,
                         },
                         T() || (0, D.D0)(t.featureSwitches) === D.fD.AcceptAllCookies
                             ? n.createElement(m.Z, {
@@ -939,7 +938,7 @@
                                   onRequestRetry: () => {
                                       e.fetchPreferencesIfNeeded().catch(e.createLocalApiErrorHandler());
                                   },
-                                  render: t.viewerUserId ? (v ? () => n.createElement(n.Fragment, null, a ? null : n.createElement(r.Z, { role: "tablist" }, "Admin" === h && n.createElement(g.Z, { label: ge, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }))) : () => n.createElement(n.Fragment, null, S(), a ? null : n.createElement(r.Z, { role: "tablist" }, n.createElement(g.Z, { label: be, link: "/settings/account", testID: ee.accountLink }), A(d), n.createElement(g.Z, { label: Ze, link: "/settings/monetization" }), M(), C(), n.createElement(g.Z, { label: ge, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }), n.createElement(g.Z, { label: ne, link: "/settings/privacy_and_safety", testID: ee.privacyAndSafetyLink }), P(), n.createElement(g.Z, { label: le, link: "/settings/notifications", testID: ee.notificationsLink }), n.createElement(g.Z, { label: fe, link: "/settings/accessibility_display_and_languages", testID: ee.accessibilityLink }), k(), n.createElement(g.Z, { label: De, link: "/settings/about", testID: ee.aboutLink }), n.createElement(s.Z, { label: te, link: Ae, testID: ee.helpCenterLink }), _()))) : p,
+                                  render: t.viewerUserId ? (v ? () => n.createElement(n.Fragment, null, a ? null : n.createElement(o.Z, { role: "tablist" }, "Admin" === h && n.createElement(g.Z, { label: ge, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }))) : () => n.createElement(n.Fragment, null, S(), a ? null : n.createElement(o.Z, { role: "tablist" }, n.createElement(g.Z, { label: be, link: "/settings/account", testID: ee.accountLink }), A(d), n.createElement(g.Z, { label: Ze, link: "/settings/monetization" }), M(), C(), n.createElement(g.Z, { label: ge, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }), n.createElement(g.Z, { label: ne, link: "/settings/privacy_and_safety", testID: ee.privacyAndSafetyLink }), P(), n.createElement(g.Z, { label: le, link: "/settings/notifications", testID: ee.notificationsLink }), n.createElement(g.Z, { label: fe, link: "/settings/accessibility_display_and_languages", testID: ee.accessibilityLink }), k(), n.createElement(g.Z, { label: De, link: "/settings/about", testID: ee.aboutLink }), n.createElement(s.Z, { label: te, link: Ae, testID: ee.helpCenterLink }), _()))) : p,
                               })
                             : p(),
                     ),
@@ -948,11 +947,11 @@
             const Te = Q(xe);
         },
         267966: (e, t, a) => {
-            a.d(t, { Z: () => r });
+            a.d(t, { Z: () => o });
             var n = a(392237);
-            const o = (e) => ({ borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: "1px" }),
-                r = n.default.create((e) => ({ descriptionText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, searchBox: { margin: e.spaces.space4 }, infoText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, linkItem: { padding: e.spaces.space12, backgroundColor: e.colors.cellBackground }, viewItem: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, backgroundColor: e.colors.cellBackground }, calloutTextBlock: { paddingVertical: e.spaces.space20, paddingHorizontal: e.componentDimensions.gutterHorizontal }, bottomBorder: { ...o(e) } }));
+            const r = (e) => ({ borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: "1px" }),
+                o = n.default.create((e) => ({ descriptionText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, searchBox: { margin: e.spaces.space4 }, infoText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, linkItem: { padding: e.spaces.space12, backgroundColor: e.colors.cellBackground }, viewItem: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, backgroundColor: e.colors.cellBackground }, calloutTextBlock: { paddingVertical: e.spaces.space20, paddingHorizontal: e.componentDimensions.gutterHorizontal }, bottomBorder: { ...r(e) } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-63cb1cc4.b3d6800a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-63cb1cc4.e87758fa.js.map

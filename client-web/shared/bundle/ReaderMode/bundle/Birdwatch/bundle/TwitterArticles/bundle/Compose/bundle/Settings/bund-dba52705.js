@@ -117,7 +117,7 @@
                 b = n(352924),
                 y = n(521288),
                 v = n(912838),
-                x = n(308158),
+                x = n(557487),
                 M = n(287826),
                 k = n(392237),
                 I = n(54989),
@@ -329,4 +329,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705.8a22969a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705.d75a292a.js.map
