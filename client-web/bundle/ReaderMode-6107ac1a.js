@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ReaderMode-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia", "icons/IconBook-js"],
+    ["bundle.ReaderMode-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia", "icons/IconDrafts-js"],
     {
         169576: (e, t, o) => {
             o.d(t, { c: () => _, Z: () => f });
@@ -28,17 +28,17 @@
                     const b = () => {
                             m.scribe({ component: f, action: "click", element: "card" });
                         },
-                        { backgroundcolor: C, buttonSize: Z, cardWidth: v, marginbottom: w, textcolor: x } = h ?? {},
+                        { backgroundcolor: C, buttonSize: v, cardWidth: Z, marginbottom: w, textcolor: x } = h ?? {},
                         T = C ? s.default.theme.colors[C] : s.default.theme.colors.gray0,
                         E = x ? s.default.theme.colors[x] : s.default.theme.colors.gray900,
                         D = w ? s.default.theme.spaces[w] : s.default.theme.spaces.space16,
                         S = { [_.MarchMadness]: { header: g.header, description: g.description, legalDisclaimer: g.legalDisclaimer, buttonText: g.buttonText, image: g.image } }[o];
-                    return u ? n.createElement(r.Z, { interactiveStyles: null, link: t, onPress: b, style: y.bannerContainer }, n.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === s.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : n.createElement(i.Z, { style: [y.card, { backgroundColor: T }, { maxWidth: v }, { marginBottom: D }], testID: "popupCard" }, n.createElement(i.Z, { style: e ? y.horizontalContent : y.verticalContent }, n.createElement(i.Z, { style: e ? y.textContainer : null }, n.createElement(l.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), n.createElement(l.ZP, { size: "subtext1", style: [y.popupDescription, { color: E }] }, S.description, " ", e ? null : S.legalDisclaimer)), n.createElement(i.Z, { style: y.buttonContainer }, n.createElement(c.ZP, { backgroundColor: "light" === s.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [y.popupButton, { width: Z }] }, S.buttonText), e && n.createElement(l.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: E }] }, S.legalDisclaimer))));
+                    return u ? n.createElement(r.Z, { interactiveStyles: null, link: t, onPress: b, style: y.bannerContainer }, n.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === s.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : n.createElement(i.Z, { style: [y.card, { backgroundColor: T }, { maxWidth: Z }, { marginBottom: D }], testID: "popupCard" }, n.createElement(i.Z, { style: e ? y.horizontalContent : y.verticalContent }, n.createElement(i.Z, { style: e ? y.textContainer : null }, n.createElement(l.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), n.createElement(l.ZP, { size: "subtext1", style: [y.popupDescription, { color: E }] }, S.description, " ", e ? null : S.legalDisclaimer)), n.createElement(i.Z, { style: y.buttonContainer }, n.createElement(c.ZP, { backgroundColor: "light" === s.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [y.popupButton, { width: v }] }, S.buttonText), e && n.createElement(l.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: E }] }, S.legalDisclaimer))));
                 },
                 y = s.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
         300234: (e, t, o) => {
-            o.d(t, { Z: () => O });
+            o.d(t, { Z: () => G });
             var n = o(202784),
                 i = o(325686),
                 s = o(284702),
@@ -57,7 +57,7 @@
                 y = o.n(f),
                 b = o(965728);
             const C = { startX: 0, startY: 0 };
-            class Z extends n.Component {
+            class v extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._pullDistanceY = 0),
@@ -92,31 +92,31 @@
                     return n.createElement(i.Z, { onLayout: o, onTouchEnd: r ? this._handleTouchEnd : void 0, onTouchMove: r ? this._handleTouchMove : void 0, onTouchStart: r ? this._handleTouchStart : void 0, style: s, testID: "swipe-to-dismiss" }, e);
                 }
             }
-            const v = Z;
+            const Z = v;
             var w = o(992942),
                 x = o(7022),
                 T = o(309854),
                 E = o(351686),
                 D = o(822399);
             const S = y().b327c12a,
-                I = y().gff1f69e;
-            class P extends n.PureComponent {
+                z = y().gff1f69e;
+            class I extends n.PureComponent {
                 constructor(...e) {
                     super(...e), (this.state = { loadingVariant: null, imageLoading: !1 }), (this._handleLoadStart = () => this.setState({ imageLoading: !0 })), (this._handleLoadEnd = () => this.setState({ imageLoading: !1 }));
                 }
                 componentDidMount() {
-                    this._mountPromiseForTesting = P._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
+                    this._mountPromiseForTesting = I._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
                 }
                 componentDidUpdate(e, t) {
-                    (0, c.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), P._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
+                    (0, c.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), I._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
                 }
                 render() {
                     const { dataSaver: e, imageStyle: t, onError: o, onLoad: s, onTap: r, onZoomed: a, photo: l, resetZoom: c, style: d, zoomable: h } = this.props,
                         { loadingVariant: u } = this.state,
-                        m = (e && u && Math.max(u.width, u.height) >= 680 ? u.uri : null) || P._selectSource(l);
+                        m = (e && u && Math.max(u.width, u.height) >= 680 ? u.uri : null) || I._selectSource(l);
                     if (!m || null === u) return null;
-                    const p = n.createElement(w.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : S, defaultSource: u && u.uri, draggable: !0, onError: u ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: m, style: [k.img, t] });
-                    return n.createElement(i.Z, { style: d }, this.state.imageLoading ? z : null, h ? n.createElement(x.Z, { onTap: r, onZoomed: a, resetZoom: c }, p) : p);
+                    const p = n.createElement(w.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : S, defaultSource: u && u.uri, draggable: !0, onError: u ? void 0 : o, onLoad: s, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: m, style: [P.img, t] });
+                    return n.createElement(i.Z, { style: d }, this.state.imageLoading ? k : null, h ? n.createElement(x.Z, { onTap: r, onZoomed: a, resetZoom: c }, p) : p);
                 }
                 static _selectCachedVariant(e) {
                     const t = T.Z.getOriginalImage(e);
@@ -127,10 +127,10 @@
                     return t && E.Z.selectLargestUrl(t);
                 }
             }
-            P.defaultProps = { zoomable: !1 };
-            const k = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
-                z = n.createElement(D.Z, { ariaValueText: I, indeterminate: !0, style: k.progressBar }),
-                M = P;
+            I.defaultProps = { zoomable: !1 };
+            const P = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
+                k = n.createElement(D.Z, { ariaValueText: z, indeterminate: !0, style: P.progressBar }),
+                M = I;
             var B = o(310453);
             class V extends n.PureComponent {
                 constructor(...e) {
@@ -164,16 +164,16 @@
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: c, promotedContent: d, videoId: h, ...u } = e,
                         [m, f] = n.useState(null),
                         [y, C] = n.useState({ width: 0, height: 0 }),
-                        { isModal: Z } = n.useContext(g.Z),
+                        { isModal: v } = n.useContext(g.Z),
                         { height: w, width: x } = a.original_info || {},
                         { height: T, width: E } = y,
-                        D = Z || o ? (0, b.I5)({ mediaWidth: x, mediaHeight: w, containerWidth: E, containerHeight: T }, o) : X.mediaItem;
+                        D = v || o ? (0, b.I5)({ mediaWidth: x, mediaHeight: w, containerWidth: E, containerHeight: T }, o) : X.mediaItem;
                     return n.createElement(
-                        v,
+                        Z,
                         {
                             onDismiss: l,
                             onLayout:
-                                Z || o
+                                v || o
                                     ? (e) => {
                                           const {
                                               nativeEvent: {
@@ -229,8 +229,8 @@
                     );
                 },
                 X = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                R = n.memo(Y, (e, t) => (0, c.Z)(e, t));
-            class A extends n.Component {
+                H = n.memo(Y, (e, t) => (0, c.Z)(e, t));
+            class R extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -281,20 +281,20 @@
                             const u = s.Z.isVideo(i),
                                 m = this._getItemVideoId(i),
                                 p = o === h;
-                            return u && !m ? null : n.createElement(R, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: p, key: h, mediaDetail: r[h], onDismiss: d ? void 0 : a, onTap: l, onZoomed: p ? this._handleMediaDetailZoomed : void 0, promotedContent: c, resetZoom: o !== h, videoId: m });
+                            return u && !m ? null : n.createElement(H, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: p, key: h, mediaDetail: r[h], onDismiss: d ? void 0 : a, onTap: l, onZoomed: p ? this._handleMediaDetailZoomed : void 0, promotedContent: c, resetZoom: o !== h, videoId: m });
                         });
-                    return n.createElement(i.Z, { style: G.root }, r.length > 1 ? this._renderCarousel(h) : h);
+                    return n.createElement(i.Z, { style: A.root }, r.length > 1 ? this._renderCarousel(h) : h);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: i, onMediaItemChanged: l } = this.props,
                         { isZoomed: c } = this.state,
                         d = s.Z.isVideo(i[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [G.dimensions, G.scrollSnap], dominantButtonColor: t, isLocked: c, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: G.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !d, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: c, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(r.Z, { childrenStyle: [A.dimensions, A.scrollSnap], dominantButtonColor: t, isLocked: c, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: A.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !d, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(a.ZP, { currentSlide: o, dominantColor: t, locked: c, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (A.contextType = u.rC), (A.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: d.Z, onMediaItemChanged: d.Z });
-            const G = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                O = m(A);
+            (R.contextType = u.rC), (R.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: d.Z, onMediaItemChanged: d.Z });
+            const A = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                G = m(R);
         },
         827094: (e, t, o) => {
             o.d(t, { Z: () => y });
@@ -329,11 +329,11 @@
                         });
                 }
                 render() {
-                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: c, hideButtons: d, mediaItem: h, mediaUrl: g, overlayFooter: y, topRightButton: Z } = this.props,
-                        { isModal: v } = this.context,
+                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: c, hideButtons: d, mediaItem: h, mediaUrl: g, overlayFooter: y, topRightButton: v } = this.props,
+                        { isModal: Z } = this.context,
                         w = { backgroundColor: e.rgba, ...p.nk },
                         x = { backgroundColor: e.rgb, ...p.nk },
-                        T = [b.root, v ? w : x, { position: v || c ? "relative" : "fixed" }],
+                        T = [b.root, Z ? w : x, { position: Z || c ? "relative" : "fixed" }],
                         E = h,
                         D = E?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
@@ -341,7 +341,7 @@
                         null,
                         n.createElement(i.Z, { onClick: this._handleBackgroundPress, style: T }, t, o ? n.createElement(i.Z, { pointerEvents: d ? "none" : void 0, style: [b.footerButtons, y && w, y && b.footerButtonsAbsolute, d && b.fadeOut] }, n.createElement(s.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(r.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: d ? "none" : void 0, role: "none", style: [b.buttonWrapper, b.buttonWrapperLeft, p.nk, d && b.fadeOut] }, (t) => n.createElement(a.ZP, { "aria-label": _, dominantColor: e.rgb, hoverLabel: { label: _ }, icon: n.createElement(u.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: h || g || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
-                        Z ? n.createElement(i.Z, { pointerEvents: d ? "none" : void 0, style: [b.buttonWrapper, b.buttonWrapperRight, p.nk, d && b.fadeOut] }, Z) : null,
+                        v ? n.createElement(i.Z, { pointerEvents: d ? "none" : void 0, style: [b.buttonWrapper, b.buttonWrapperRight, p.nk, d && b.fadeOut] }, v) : null,
                         D
                             ? n.createElement(
                                   i.Z,
@@ -660,7 +660,7 @@
             const f = c.default.create((e) => ({ fill: { flex: 1 } })),
                 y = _;
         },
-        899174: (e, t, o) => {
+        266151: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 i = o(890601),
@@ -668,12 +668,12 @@
                 r = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M9.909 4.14C9.541 4.05 9.157 4 8.766 4H1.002v16h8.146c.758 0 1.45.43 1.789 1.11l.065.13V5.76c0-.73-.388-1.44-1.093-1.62zM8 15H4v-2h4v2zm0-4H4V9h4v2zm7.238-7c-.391 0-.774.05-1.143.14-.705.18-1.093.89-1.093 1.62v15.49c.461-.82 1.076-1.25 1.854-1.25h8.146V4h-7.764zM20 15h-4v-2h4v2zm0-4h-4V9h4v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M10 5H2V3h8v2zM7 7H2v2h5V7zm12.94 4.946C19.48 15.918 16.1 19 12 19H8.19c-.12.988-.19 1.993-.19 3H6c0-4.669 1.29-9.39 3.95-12.97C12.62 5.421 16.38 2.9 23 3c.17 3.359-.21 7.147-3.06 8.946zM21 5.033c-4.16.276-7.29 2.275-9.45 5.187-1.43 1.929-2.43 4.268-3 6.78H12c2.68 0 4.95-1.76 5.72-4.188-.52.108-1.09.172-1.72.188h-1.5v-2H16c3.9 0 4.95-2.921 5-5.967z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
-        98440: (e, t, o) => {
+        748138: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 i = o(890601),
@@ -681,7 +681,20 @@
                 r = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        452693: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var n = o(202784),
+                i = o(890601),
+                s = o(783427),
+                r = o(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -704,4 +717,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.e7c893ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReaderMode-6107ac1a.308154ba.js.map

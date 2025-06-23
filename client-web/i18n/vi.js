@@ -6491,7 +6491,7 @@
                 t("e5f4eac0", "Nội dung của bạn sẽ được tìm thấy dễ dàng hơn. Và bạn sẽ xuất hiện trong các kết quả và xu hướng tìm kiếm."),
                 t("c7832a72", "Kết nối trực tiếp với những người khác"),
                 t("i1ccd17a", "Gửi Tin nhắn trực tiếp cho mọi người không theo dõi bạn mà không bị lọc tự động."),
-                t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                t("f7cf3d36", "Grok là trợ lý AI miễn phí do xAI thiết kế để tối đa hóa sự thật và tính khách quan. Grok cung cấp tính năng tìm kiếm theo thời gian thực, tạo hình ảnh, phân tích xu hướng và nhiều tính năng khác."),
                 t("hc965308", "Hài hước"),
                 t("eb78b77e", "Chế độ hài hước"),
                 t("aa8ece10", "Dùng thử grok.com"),
@@ -13333,4 +13333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.2b0cc1da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.2504d88a.js.map

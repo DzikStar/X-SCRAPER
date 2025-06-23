@@ -42,8 +42,8 @@
                 D = l().j7bb1a43,
                 v = l().hef5960c,
                 k = (0, h.M)((e) => {
-                    const { onBlock: t, onClose: o, onMute: s, onRemoveFollower: l, onReportUser: h, onShare: k, onUnblock: E, onUnmute: w, user: P } = e,
-                        C = [],
+                    const { onBlock: t, onClose: o, onMute: s, onRemoveFollower: l, onReportUser: h, onShare: k, onUnblock: E, onUnmute: w, user: C } = e,
+                        P = [],
                         M = (t, o) => {
                             const { confirm: n, onClose: r } = e;
                             if (t) {
@@ -54,10 +54,10 @@
                             } else o();
                         };
                     !!window.navigator.share &&
-                        !P.protected &&
-                        !P.blocking &&
-                        !P.blocked_by &&
-                        C.push({
+                        !C.protected &&
+                        !C.blocking &&
+                        !C.blocked_by &&
+                        P.push({
                             Icon: r.Z,
                             onClick: () => {
                                 o(), k();
@@ -65,10 +65,10 @@
                             testID: g,
                             text: v,
                         });
-                    !P.blocking &&
-                        C.push({
+                    !C.blocking &&
+                        P.push({
                             ...(0, u.N1)(
-                                P,
+                                C,
                                 () => {
                                     o(), s();
                                 },
@@ -78,26 +78,26 @@
                             ),
                             testID: f,
                         });
-                    P.followed_by &&
-                        C.push({
+                    C.followed_by &&
+                        P.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
                                     M(e, l);
                                 },
-                                user: P,
+                                user: C,
                             }),
                             testID: b,
                         }),
-                        C.push((0, d.op)({ blockAction: (e) => M(e, t), source: d.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => M(e, E), user: P })),
-                        C.push({
+                        P.push((0, d.op)({ blockAction: (e) => M(e, t), source: d.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => M(e, E), user: C })),
+                        P.push({
                             Icon: i.default,
                             onClick: () => {
                                 o(), h();
                             },
                             testID: y,
-                            text: D({ screenName: P.screen_name }),
+                            text: D({ screenName: C.screen_name }),
                         });
-                    const I = C.map(({ Icon: e, onClick: t, testID: o, text: n }) => ({ text: n, onClick: t, Icon: e, testID: o }));
+                    const I = P.map(({ Icon: e, onClick: t, testID: o, text: n }) => ({ text: n, onClick: t, Icon: e, testID: o }));
                     return n.createElement(a.Z, { items: I, onCloseRequested: o });
                 });
         },
@@ -277,7 +277,7 @@
                         return n && (t[o] = n === b.ZP.NONE ? b.ZP.LOADING : n), t;
                     }, {});
                 },
-                P = (0, D.Z)()
+                C = (0, D.Z)()
                     .propsFromState(() => ({
                         availableUserIds: (0, g.Z)(E, (e) => e),
                         fetchStatus: (0, g.Z)(E, w, k, (e, t, o) => {
@@ -294,7 +294,7 @@
                         }),
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: v.ZP.fetchManyIfNeeded })),
-                C = i().f5b426c2;
+                P = i().f5b426c2;
             class M extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -314,7 +314,7 @@
                     s()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return r.createElement(d.Z, { "aria-label": C, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return r.createElement(d.Z, { "aria-label": P, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: o, userIds: n } = this.props;
@@ -337,7 +337,7 @@
                     );
                 }
             }
-            const I = P(M);
+            const I = C(M);
         },
         684511: (e, t, o) => {
             o.d(t, { Z: () => n });
@@ -350,15 +350,14 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -419,10 +418,10 @@
                                     s.blocking ? r(u) : e(u);
                                 });
                     }
-                    return { confirmation: u, onClick: i, testID: n, shortcutKey: l, Icon: P(s.blocking), text: M(s), subText: C({ user: s, blockSubtext: t, unblockSubtext: a }) };
+                    return { confirmation: u, onClick: i, testID: n, shortcutKey: l, Icon: C(s.blocking), text: M(s), subText: P({ user: s, blockSubtext: t, unblockSubtext: a }) };
                 },
-                P = (e) => (e ? i.default : l.default),
-                C = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                C = (e) => (e ? i.default : l.default),
+                P = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
                 M = (e) => (e.blocking ? g({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
                 I = (e) => {
                     return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: y({ screenName: t }), label: D, text: v }) : E(e.screen_name);
@@ -988,20 +987,20 @@
                     super(...e),
                         (this._renderContent = (e, t) => {
                             const { activeColor: o, color: a, decoration: l } = this.props;
-                            return n.createElement(c.ZP.Consumer, null, ({ direction: i }) => n.createElement(s.ZP, { color: e ? o : a, dir: i, style: [P.inner, e && "blue500" === o && P.blue500] }, n.createElement(r.Z, { ref: this.props.actionIconContainerRef }, t ? this._renderButton(t) : null, this._renderIcon()), l, this._renderCount()));
+                            return n.createElement(c.ZP.Consumer, null, ({ direction: i }) => n.createElement(s.ZP, { color: e ? o : a, dir: i, style: [C.inner, e && "blue500" === o && C.blue500] }, n.createElement(r.Z, { ref: this.props.actionIconContainerRef }, t ? this._renderButton(t) : null, this._renderIcon()), l, this._renderCount()));
                         }),
                         (this._renderButton = (e) => {
                             const { activeColor: t, backgroundColor: o, hoverLabel: r, iconSize: a, isActive: s, isDisabled: c, showBackgroundWhenActive: d } = this.props,
                                 m = l.Z.generate({ backgroundColor: u.default.theme.colors[o], color: u.default.theme.colors[t], insetFocusRing: !0 }),
                                 h = d && s && !e?.isHovered;
-                            return n.createElement(i.Z, { hoverLabel: r, interactiveStyles: m, interactivityState: e, style: [u.default.absoluteFill, w[h ? "haloBackground" : o], !c && P.iconBackground, "small" === a && P.iconSmallBoundingBox, h && P.haloBoundingBox] });
+                            return n.createElement(i.Z, { hoverLabel: r, interactiveStyles: m, interactivityState: e, style: [u.default.absoluteFill, w[h ? "haloBackground" : o], !c && C.iconBackground, "small" === a && C.iconSmallBoundingBox, h && C.haloBoundingBox] });
                         }),
                         (this._renderIcon = () => {
                             const { ActiveIcon: e, iconSize: t, isActive: o, isDisabled: r, isFaded: s, onAnimationEnd: l, onAnimationStart: i, onError: c, showAnimation: h, transitionAnimationUrl: p } = this.props;
                             if (!u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled && e && h) return n.createElement(d.ZP, { animation: p || m.Bf, animationContainerStyle: E[t], animationStyle: M, onAnimationEnd: l, onAnimationStart: i, onError: c });
                             {
                                 const a = o && e ? e : this.props.Icon;
-                                return n.createElement(a, { style: [E[t], !r && s && P.iconFaded] });
+                                return n.createElement(a, { style: [E[t], !r && s && C.iconFaded] });
                             }
                         }),
                         (this._renderCount = () => {
@@ -1018,13 +1017,13 @@
                         D = !u.default.theme.highContrastEnabled && !a.Z.reducedMotionEnabled;
                     return n.createElement(
                         r.Z,
-                        { style: [P.root, y] },
+                        { style: [C.root, y] },
                         n.createElement(
                             b,
                             null,
                             c
                                 ? this._renderContent(s)
-                                : n.createElement(i.Z, { "aria-haspopup": f ? "menu" : void 0, "aria-label": e, disabled: l, enableKeyboardShortcuts: o, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: h, onClick: this._handlePress, preventFocusShift: p, renderMenu: f, style: [P.triggerAreaRoot, P.outlineNone], testID: g }, (e) => {
+                                : n.createElement(i.Z, { "aria-haspopup": f ? "menu" : void 0, "aria-label": e, disabled: l, enableKeyboardShortcuts: o, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: h, onClick: this._handlePress, preventFocusShift: p, renderMenu: f, style: [C.triggerAreaRoot, C.outlineNone], testID: g }, (e) => {
                                       const { isFocused: t, isHovered: o, isPressed: n } = e,
                                           r = s || o || n || t;
                                       return this._renderContent(r, e);
@@ -1037,9 +1036,9 @@
             k.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
             const E = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
                 w = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
-                P = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                C = "224.5%",
-                M = { width: C, height: C };
+                C = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
+                P = "224.5%",
+                M = { width: P, height: P };
         },
         551611: (e, t, o) => {
             o.d(t, { Bf: () => r, ZP: () => s });
@@ -1052,7 +1051,7 @@
             }
             const s = new a();
         },
-        98440: (e, t, o) => {
+        314948: (e, t, o) => {
             o.r(t), o.d(t, { default: () => i });
             var n = o(202784),
                 r = o(890601),
@@ -1060,12 +1059,12 @@
                 s = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
-        226597: (e, t, o) => {
+        74514: (e, t, o) => {
             o.r(t), o.d(t, { default: () => i });
             var n = o(202784),
                 r = o(890601),
@@ -1073,7 +1072,7 @@
                 s = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
@@ -1087,6 +1086,19 @@
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
                 return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const i = l;
+        },
+        452693: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => i });
+            var n = o(202784),
+                r = o(890601),
+                a = o(783427),
+                s = o(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
@@ -1109,4 +1121,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.e44a564a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.08846c6a.js.map

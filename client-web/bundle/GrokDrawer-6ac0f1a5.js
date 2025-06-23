@@ -15,14 +15,14 @@
                 c = n(492244),
                 u = n(397159);
             const h = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
-                m = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
-                b = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
+                b = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
+                m = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
                 p = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
             function f(e) {
                 return e.replace(h, (e) => {
                     const a = (function (e) {
-                        const a = e.match(m),
-                            n = e.match(b),
+                        const a = e.match(b),
+                            n = e.match(m),
                             o = e.match(p),
                             r = a ? a[1] : "",
                             d = n ? n[1] : "",
@@ -46,9 +46,9 @@
                             o = "";
                         const r = e.match(p);
                         r && (a = r[1]);
-                        const d = e.match(m);
+                        const d = e.match(b);
                         d && (n = d[1]);
-                        const t = e.match(b);
+                        const t = e.match(m);
                         t && (o = t[1].trim());
                         return { id: a, name: n, args: o };
                     })(a[0]);
@@ -125,8 +125,8 @@
                 c = n(461756),
                 u = n(292484),
                 h = n(528840),
-                m = n(293115),
-                b = n(125363),
+                b = n(293115),
+                m = n(125363),
                 p = n(456228),
                 f = n(551864),
                 w = n(537392),
@@ -142,8 +142,8 @@
             var E = n(731708),
                 S = n(111677),
                 C = n.n(S),
-                I = n(952793),
-                G = n(389071),
+                G = n(952793),
+                I = n(389071),
                 P = n(189953);
             function N({ children: e, size: a, weight: n }) {
                 return r.createElement(d.Z, { style: T.container }, r.createElement(E.ZP, { size: a, style: T.label, weight: n || "normal" }, r.createElement("span", null, e)));
@@ -153,11 +153,11 @@
                 Z = C().ed93de0c,
                 B = C().d1d92e40;
             function O() {
-                const e = (0, I.hC)("responsive_web_grok_analyze_animation"),
-                    a = (0, b.v9)(G.Es),
-                    n = (0, G.f)({ conversationKey: a }),
-                    o = -1 !== (0, b.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
-                    t = (0, b.v9)(n.selectStatus),
+                const e = (0, G.hC)("responsive_web_grok_analyze_animation"),
+                    a = (0, m.v9)(I.Es),
+                    n = (0, I.f)({ conversationKey: a }),
+                    o = -1 !== (0, m.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
+                    t = (0, m.v9)(n.selectStatus),
                     l = t === P.Q_.TYPING || t === P.Q_.WAITING;
                 return r.createElement(d.Z, { style: F.titleTextRoot }, o && e ? (l ? r.createElement(N, { size: "headline2", weight: "bold" }, `${Z}...`) : r.createElement(E.ZP, { size: "headline2", style: F.animation }, B)) : r.createElement(E.ZP, null, R));
             }
@@ -189,9 +189,9 @@
             const ae = y.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function ne({ conversationUrl: e }) {
                 const a = r.createRef(),
-                    n = (0, b.I0)(),
-                    o = (0, b.v9)(p.kX) === f.j.EXPANDED,
-                    t = (0, b.v9)(x.kX) === v.S.EXPANDED,
+                    n = (0, m.I0)(),
+                    o = (0, m.v9)(p.kX) === f.j.EXPANDED,
+                    t = (0, m.v9)(x.kX) === v.S.EXPANDED,
                     l = r.useCallback(() => {
                         const e = o ? f.j.COLLAPSED : f.j.EXPANDED;
                         e === f.j.EXPANDED && t && n(x.bi(v.S.COLLAPSED)), n(p.bi(e));
@@ -222,22 +222,24 @@
             const de = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.23"),
                         n.e("icons.0"),
+                        n.e("icons.5"),
+                        n.e("icons.12"),
+                        n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.16"),
-                        n.e("icons.19"),
+                        n.e("icons.21"),
+                        n.e("icons.28"),
                         n.e("icons.10"),
-                        n.e("icons.13"),
-                        n.e("icons.24"),
-                        n.e("icons.7"),
-                        n.e("icons.22"),
-                        n.e("icons.27"),
                         n.e("icons.17"),
+                        n.e("icons.9"),
+                        n.e("icons.23"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.11"),
-                        n.e("icons.26"),
+                        n.e("icons.22"),
+                        n.e("icons.24"),
+                        n.e("icons.14"),
+                        n.e("icons.25"),
+                        n.e("icons.13"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -248,26 +250,24 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.8"),
-                        n.e("icons.4"),
-                        n.e("icons.14"),
-                        n.e("icons.28"),
-                        n.e("icons.21"),
+                        n.e("icons.6"),
                         n.e("icons.3"),
+                        n.e("icons.4"),
                         n.e("icons.1"),
+                        n.e("icons.8"),
                         n.e("icons.18"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -285,7 +285,6 @@
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -338,8 +337,9 @@
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-54234235"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e96e9bea"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-fc794e30"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6ac0f1a5"),
                         n.e("shared~bundle.Grok~loader.Markdown-6107ac1a"),
@@ -385,7 +385,7 @@
                             return a ? e * Math.max(a, 0.5) : Math.min(k, Math.ceil(D.T6 * e));
                         }));
                 var k;
-                const y = (0, b.v9)((e) => p.kX(e)),
+                const y = (0, m.v9)((e) => p.kX(e)),
                     M = y === f.j.EXPANDED,
                     _ = y === f.j.CLOSED;
                 r.useEffect(() => {
@@ -414,7 +414,7 @@
                     : r.createElement(
                           s.Z.GrokDrawer,
                           null,
-                          r.createElement(i.Z, { id: "GrokDrawer" }, (a, t) => r.createElement(m.nO, { namespace: re }, r.createElement(d.Z, (0, o.Z)({ ref: a() }, t({ style: [D.ZP.denyPointer, D.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && D.ZP.reducedMotion], testID: A.root })), r.createElement(d.Z, { onLayout: x, style: v }, r.createElement(ne, { conversationUrl: "/i/grok" }), M && r.createElement(de, null))))),
+                          r.createElement(i.Z, { id: "GrokDrawer" }, (a, t) => r.createElement(b.nO, { namespace: re }, r.createElement(d.Z, (0, o.Z)({ ref: a() }, t({ style: [D.ZP.denyPointer, D.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && D.ZP.reducedMotion], testID: A.root })), r.createElement(d.Z, { onLayout: x, style: v }, r.createElement(ne, { conversationUrl: "/i/grok" }), M && r.createElement(de, null))))),
                       );
             }
         },
@@ -432,8 +432,8 @@
                 u = n(725405);
             n(571372);
             var h = n(623494),
-                m = n(737368);
-            const b = 4,
+                b = n(737368);
+            const m = 4,
                 p = l().h4d7cbcc,
                 f = l().j77292b7,
                 w = { onGrokFileSelected: (e) => new Promise((e) => e()), onFileSelected: (e, a) => new Promise((e) => e()), selectedFiles: {}, clearSelectedFile: () => {} },
@@ -442,8 +442,8 @@
                 const [a, n] = o.useState({}),
                     r = (0, c.p)(),
                     t = (0, u.Z)(),
-                    l = (0, m.k)(),
-                    w = (0, i.JY)("responsive_web_grok_file_upload_max_files", b),
+                    l = (0, b.k)(),
+                    w = (0, i.JY)("responsive_web_grok_file_upload_max_files", m),
                     g = o.useCallback(
                         (e) => {
                             const o = a[e];
@@ -537,15 +537,15 @@
                 c = n(125363),
                 u = n(458810),
                 h = n(623494),
-                m = n(620988);
-            const b = d().c74e87e0,
+                b = n(620988);
+            const m = d().c74e87e0,
                 p = d().bea50a2a,
                 f = (e) => e.toLowerCase().replace(/\/$/, ""),
                 w = () => {
                     const e = (0, s.p)(),
                         a = (0, i.z)(),
                         n = (0, c.I0)(),
-                        r = (0, m.x9)(),
+                        r = (0, b.x9)(),
                         d = (0, l.hC)("responsive_web_grok_file_compression_enabled"),
                         w = (0, l.JY)("responsive_web_grok_file_max_size", 5242880);
                     return o.useCallback(
@@ -570,9 +570,9 @@
                                 try {
                                     n = await (0, t.hv)(o, w);
                                 } catch (e) {}
-                                if (!n) throw (e({ text: b }), (0, h.op)(a, "failed to compress the file"), new Error());
+                                if (!n) throw (e({ text: m }), (0, h.op)(a, "failed to compress the file"), new Error());
                                 s = n;
-                            } else if (o.size > w) throw (e({ text: b }), (0, h.op)(a, "file is too large"), new Error());
+                            } else if (o.size > w) throw (e({ text: m }), (0, h.op)(a, "file is too large"), new Error());
                             const i = await n((0, u.t)(s, l));
                             return (0, h.Jm)(a), i;
                         },
@@ -581,7 +581,7 @@
                 };
         },
         654917: (e, a, n) => {
-            n.d(a, { ZP: () => p, eX: () => m, uf: () => b });
+            n.d(a, { ZP: () => p, eX: () => b, uf: () => m });
             var o = n(202784),
                 r = n(107267),
                 d = n(323265),
@@ -592,21 +592,21 @@
                 c = n(389071),
                 u = n(63538),
                 h = n(623494);
-            function m() {
+            function b() {
                 const e = (0, r.useHistory)(),
                     a = (0, i.v9)(c.Es);
                 return (0, t.HD)(e) ? (0, t.tT)(e) : a;
             }
-            function b() {
-                const e = m(),
+            function m() {
+                const e = b(),
                     a = (0, i.I0)(),
                     n = (0, i.v9)((a) => (0, c.YJ)(a, e));
                 return (0, i.v9)(n.selectIsInitialized) || a((0, c.Ki)(e)), n;
             }
             function p() {
                 const { userClaims: e } = (0, l.QZ)(),
-                    a = m(),
-                    n = b(),
+                    a = b(),
+                    n = m(),
                     r = (0, i.v9)(n.selectMessageIds),
                     t = (0, i.I0)(),
                     p = (0, i.v9)(n.selectFetchConversationIdStatus),
@@ -646,7 +646,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => b, G$: () => l, HO: () => A, HR: () => I, JO: () => w, Jm: () => x, NH: () => G, RC: () => f, S7: () => C, UV: () => N, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => m, eS: () => _, eV: () => v, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => P, zX: () => T });
+            n.d(a, { DE: () => m, G$: () => l, HO: () => A, HR: () => G, JO: () => w, Jm: () => x, NH: () => I, RC: () => f, S7: () => C, UV: () => N, Uk: () => M, YI: () => c, YW: () => S, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => b, eS: () => _, eV: () => v, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => E, y6: () => u, zC: () => P, zX: () => T });
             var o = n(163889);
             function r() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -675,10 +675,10 @@
             function h(e, a, n) {
                 Z(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: a, error: n }) } });
             }
-            function m(e, a) {
+            function b(e, a) {
                 Z(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(a) } });
             }
-            function b(e) {
+            function m(e) {
                 Z(e)({ element: "abort", action: "click" });
             }
             function p(e) {
@@ -726,10 +726,10 @@
             function C(e, a) {
                 Z(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant }) } });
             }
-            function I(e, a, n) {
+            function G(e, a, n) {
                 Z(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant, followUpText: n }) } });
             }
-            function G(e) {
+            function I(e) {
                 Z(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
             function P(e, a) {
@@ -750,4 +750,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.c5af306a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.a3bb679a.js.map

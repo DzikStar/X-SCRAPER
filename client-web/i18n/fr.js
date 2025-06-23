@@ -6496,7 +6496,7 @@
                 n("e5f4eac0", "Votre contenu sera découvert plus facilement. Et vous apparaîtrez dans les résultats de recherche et les tendances."),
                 n("c7832a72", "Entrez directement en lien avec les autres"),
                 n("i1ccd17a", "Envoyez des Messages Privés à des personnes qui ne vous suivent pas sans qu'ils soient automatiquement filtrés."),
-                n("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                n("f7cf3d36", "Grok est un assistant IA gratuit conçu par xAI pour optimiser la vérité et l'objectivité. Grok propose de la recherche en temps réel, de la génération d'images, de l'analyse des tendances et plus encore."),
                 n("hc965308", "Fun"),
                 n("eb78b77e", "Mode Fun"),
                 n("aa8ece10", "Essayer grok.com"),
@@ -13338,4 +13338,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.ea053d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.19c4946a.js.map

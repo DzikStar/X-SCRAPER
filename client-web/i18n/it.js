@@ -271,7 +271,7 @@
                 o("b81135bc", "Ultimo giorno!"),
                 o("a8b4b878", "Scopri il meglio di X in questo giorno del Ringraziamento."),
                 o("df7fb242", "Offerta per il Ringraziamento"),
-                o("aeaf14a6", "Ottieni un 40% di sconto su Premium. Scade presto!"),
+                o("aeaf14a6", "Ottieni un 40% di sconto su Premium. Scade tra poco!"),
                 o("ca8cbf78", "Ottieni uno sconto del 40% su Premium e Premium+"),
                 o("j88ba18e", "Riscatta l'offerta"),
                 o("f4dc8ea3", function (i) {
@@ -2386,7 +2386,7 @@
                     return i.distance + " km";
                 }),
                 o("b211849f", function (i) {
-                    return i.distance + " m";
+                    return i.distance + "m";
                 }),
                 o("fd391b9f", function (i) {
                     return "Incorpora " + i.entity;
@@ -4041,7 +4041,7 @@
                     return "Vuoi consentire a " + i.senderName + " di inviarti messaggi? Non saprà che hai visto il suo messaggio finché non accetti.";
                 }),
                 o("gdf4b790", "Vuoi abbandonare la conversazione?"),
-                o("bbf83d84", "L'azione non potrà essere annullata e la conversazione sarà eliminata dalla tua casella dei messaggi."),
+                o("bbf83d84", "L'azione non potrà essere annullata e la cronologia di conversazione verrà eliminata dalla casella dei messaggi."),
                 o("ib3fe8aa", "Blocca o segnala"),
                 o("gbed8594", "Se lo blocchi, questo account non potrà inviarti richieste di messaggi in futuro."),
                 o("g9074da4", "Abbandona conversazione"),
@@ -6492,7 +6492,7 @@
                 o("e5f4eac0", "I tuoi contenuti saranno reperibili più facilmente e apparirai nei risultati di ricerca e nelle tendenze."),
                 o("c7832a72", "Connettiti direttamente con gli altri"),
                 o("i1ccd17a", "Invia Messaggi Diretti agli utenti che non ti seguono senza che i tuoi messaggi vengano filtrati automaticamente."),
-                o("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                o("f7cf3d36", "Grok è un assistente IA gratuito progettato da xAI per essere il più veritiero e obiettivo possibile. Grok può eseguire ricerche in tempo reale, generare immagini, analizzare tendenze e molto altro."),
                 o("hc965308", "Divertente"),
                 o("eb78b77e", "Modalità divertente"),
                 o("aa8ece10", "Prova grok.com"),
@@ -9511,8 +9511,8 @@
                 o("cef9b062", "Foglia di tè"),
                 o("d9daefca", "Grigio scuro");
             var c = a(202784),
-                u = [],
-                l = {};
+                l = [],
+                u = {};
             function s(i) {
                 return i;
             }
@@ -12968,7 +12968,7 @@
                             get: function () {
                                 var i,
                                     e = c.Children.toArray(this.props.children),
-                                    a = ((i = this.props.$i18n), u[l[i]] || s);
+                                    a = ((i = this.props.$i18n), l[u[i]] || s);
                                 return function (i, o, t) {
                                     return i.concat(o, e[a(t)]);
                                 };
@@ -13335,4 +13335,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.5499416a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.c347286a.js.map

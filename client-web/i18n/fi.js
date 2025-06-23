@@ -6492,7 +6492,7 @@
                 e("e5f4eac0", "Sisältösi on helpommin löydettävissä. Lisäksi näyt hakutuloksissa ja suosituissa puheenaiheissa."),
                 e("c7832a72", "Tavoita muut yksityisviestillä"),
                 e("i1ccd17a", "Lähetä yksityisviestejä ihmisille, jotka eivät seuraa sinua, ilman että viestisi suodatetaan automaattisesti."),
-                e("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                e("f7cf3d36", "Grok on xAI:n maksuton tekoälyapuri, jonka tarkoitus on maksimoida totuudenmukaisuus ja objektiivisuus. Grok tarjoaa reaaliaikaista hakua, kuvanmuodostusta, trendianalyysia ym."),
                 e("hc965308", "Hupailu"),
                 e("eb78b77e", "Hupailutila"),
                 e("aa8ece10", "Kokeile grok.comia"),
@@ -13348,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.2655335a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.100c56ca.js.map

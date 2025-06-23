@@ -6503,7 +6503,7 @@
                 t("e5f4eac0", "Conținutul tău va putea fi descoperit mai ușor, iar tu vei apărea în rezultatele căutărilor și în tendințe."),
                 t("c7832a72", "Conectează-te direct cu ceilalți"),
                 t("i1ccd17a", "Trimite mesaje directe utilizatorilor care nu te urmăresc, fără ca mesajul tău să fie filtrat automat."),
-                t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                t("f7cf3d36", "Grok este un asistent AI gratuit, conceput de xAI pentru a maximiza adevărul și obiectivitatea. Grok oferă căutări în timp real, generare de imagini, analiza tendințelor și multe altele."),
                 t("hc965308", "Distractiv"),
                 t("eb78b77e", "Modul distractiv"),
                 t("aa8ece10", "Încearcă grok.com"),
@@ -13348,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.d1c3102a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.9754d56a.js.map

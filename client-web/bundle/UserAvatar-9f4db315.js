@@ -11,7 +11,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         645513: (e) => {
-            e.exports = { queryId: "NS-xp6AJT5wt_LyRS_UjRA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "_v1krzee5g5usd5t70TEFA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         470969: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -32,7 +32,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         985289: (e) => {
-            e.exports = { queryId: "35pL_F5A2NdP7FuXgHHOuQ", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "xuFDPunCIN3nYooaVUkzaA", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         524816: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -68,26 +68,26 @@
                 k = o(716442),
                 C = o.n(k),
                 I = o(985289),
-                S = o.n(I),
-                x = o(524816),
-                Z = o.n(x),
+                x = o.n(I),
+                S = o(524816),
+                Z = o.n(S),
                 T = o(917665),
-                L = o.n(T),
-                E = o(587068),
-                P = o.n(E);
+                E = o.n(T),
+                L = o(587068),
+                P = o.n(L);
             function D({ apiClient: e }) {
                 return {
                     clearConversations: (t, o) => e.graphQL(s(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, r.ZP)("GraphQL clear grok conversations failed."), e)),
                     setPreferences: ({ grokMode: t, grokModelOptionId: o }) => e.graphQL(P(), { grokMode: t, grokModelOptionId: o }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, r.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(_(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(S(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(x(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(m(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(h(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(b(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(C(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
                     deleteMessage: ({ chat_item_id: t, conversation_id: o }) => e.graphQL(d(), { conversation_id: o, chat_item_id: t }).then((e) => e),
-                    logUserEventGrok: ({ action_type: t, group_id: o, object_id: n }) => e.graphQL(L(), { group_id: o, object_id: n, action_type: t }).then((e) => e),
+                    logUserEventGrok: ({ action_type: t, group_id: o, object_id: n }) => e.graphQL(E(), { group_id: o, object_id: n, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(y(), { conversationId: t }).then((e) => e),
                     grokUnpinConversation: ({ conversationId: t }) => e.graphQL(Z(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: o }) => {
@@ -162,7 +162,7 @@
         },
         300234: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => Q });
+            o.d(t, { Z: () => N });
             var n = o(202784),
                 a = o(325686),
                 r = o(284702),
@@ -219,42 +219,42 @@
             const k = v;
             var C = o(992942),
                 I = o(7022),
-                S = o(309854),
-                x = o(351686),
+                x = o(309854),
+                S = o(351686),
                 Z = o(822399);
             const T = f().b327c12a,
-                L = f().gff1f69e;
-            class E extends n.PureComponent {
+                E = f().gff1f69e;
+            class L extends n.PureComponent {
                 constructor(...e) {
                     super(...e), (this.state = { loadingVariant: null, imageLoading: !1 }), (this._handleLoadStart = () => this.setState({ imageLoading: !0 })), (this._handleLoadEnd = () => this.setState({ imageLoading: !1 }));
                 }
                 componentDidMount() {
-                    this._mountPromiseForTesting = E._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
+                    this._mountPromiseForTesting = L._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e }));
                 }
                 componentDidUpdate(e, t) {
-                    (0, d.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), E._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
+                    (0, d.Z)(e.photo, this.props.photo) || (this.setState({ loadingVariant: null }), L._selectCachedVariant(this.props.photo).then((e) => this.setState({ loadingVariant: e })));
                 }
                 render() {
                     const { dataSaver: e, imageStyle: t, onError: o, onLoad: r, onTap: i, onZoomed: s, photo: l, resetZoom: d, style: p, zoomable: _ } = this.props,
                         { loadingVariant: c } = this.state,
-                        h = (e && c && Math.max(c.width, c.height) >= 680 ? c.uri : null) || E._selectSource(l);
+                        h = (e && c && Math.max(c.width, c.height) >= 680 ? c.uri : null) || L._selectSource(l);
                     if (!h || null === c) return null;
                     const u = n.createElement(C.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : T, defaultSource: c && c.uri, draggable: !0, onError: c ? void 0 : o, onLoad: r, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: h, style: [P.img, t] });
                     return n.createElement(a.Z, { style: p }, this.state.imageLoading ? D : null, _ ? n.createElement(I.Z, { onTap: i, onZoomed: s, resetZoom: d }, u) : u);
                 }
                 static _selectCachedVariant(e) {
-                    const t = S.Z.getOriginalImage(e);
-                    return t ? x.Z.selectLargestCachedVariant(t) : Promise.resolve();
+                    const t = x.Z.getOriginalImage(e);
+                    return t ? S.Z.selectLargestCachedVariant(t) : Promise.resolve();
                 }
                 static _selectSource(e) {
-                    const t = S.Z.getOriginalImage(e);
-                    return t && x.Z.selectLargestUrl(t);
+                    const t = x.Z.getOriginalImage(e);
+                    return t && S.Z.selectLargestUrl(t);
                 }
             }
-            E.defaultProps = { zoomable: !1 };
+            L.defaultProps = { zoomable: !1 };
             const P = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
-                D = n.createElement(Z.Z, { ariaValueText: L, indeterminate: !0, style: P.progressBar }),
-                A = E;
+                D = n.createElement(Z.Z, { ariaValueText: E, indeterminate: !0, style: P.progressBar }),
+                A = L;
             var G = o(310453);
             class q extends n.PureComponent {
                 constructor(...e) {
@@ -290,8 +290,8 @@
                         [f, w] = n.useState({ width: 0, height: 0 }),
                         { isModal: v } = n.useContext(m.Z),
                         { height: C, width: I } = s.original_info || {},
-                        { height: S, width: x } = f,
-                        Z = v || o ? (0, y.I5)({ mediaWidth: I, mediaHeight: C, containerWidth: x, containerHeight: S }, o) : U.mediaItem;
+                        { height: x, width: S } = f,
+                        Z = v || o ? (0, y.I5)({ mediaWidth: I, mediaHeight: C, containerWidth: S, containerHeight: x }, o) : U.mediaItem;
                     return n.createElement(
                         k,
                         {
@@ -354,7 +354,7 @@
                 },
                 U = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
                 W = n.memo(V, (e, t) => (0, d.Z)(e, t));
-            class R extends n.Component {
+            class z extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -407,18 +407,18 @@
                                 u = o === _;
                             return c && !h ? null : n.createElement(W, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: u, key: _, mediaDetail: i[_], onDismiss: p ? void 0 : s, onTap: l, onZoomed: u ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== _, videoId: h });
                         });
-                    return n.createElement(a.Z, { style: N.root }, i.length > 1 ? this._renderCarousel(_) : _);
+                    return n.createElement(a.Z, { style: R.root }, i.length > 1 ? this._renderCarousel(_) : _);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: a, onMediaItemChanged: l } = this.props,
                         { isZoomed: d } = this.state,
                         p = r.Z.isVideo(a[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(i.Z, { childrenStyle: [N.dimensions, N.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: N.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !p, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(i.Z, { childrenStyle: [R.dimensions, R.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: R.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !p, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (R.contextType = c.rC), (R.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: p.Z, onMediaItemChanged: p.Z });
-            const N = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                Q = h(R);
+            (z.contextType = c.rC), (z.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: p.Z, onMediaItemChanged: p.Z });
+            const R = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                N = h(z);
         },
         827094: (e, t, o) => {
             "use strict";
@@ -458,13 +458,13 @@
                         { isModal: k } = this.context,
                         C = { backgroundColor: e.rgba, ...u.nk },
                         I = { backgroundColor: e.rgb, ...u.nk },
-                        S = [y.root, k ? C : I, { position: k || d ? "relative" : "fixed" }],
-                        x = _,
-                        Z = x?.media_results?.result?.grok_image_annotation;
+                        x = [y.root, k ? C : I, { position: k || d ? "relative" : "fixed" }],
+                        S = _,
+                        Z = S?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(a.Z, { onClick: this._handleBackgroundPress, style: S }, t, o ? n.createElement(a.Z, { pointerEvents: p ? "none" : void 0, style: [y.footerButtons, f && C, f && y.footerButtonsAbsolute, p && y.fadeOut] }, n.createElement(r.Z, { withGutter: !0 }, o)) : null),
+                        n.createElement(a.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(a.Z, { pointerEvents: p ? "none" : void 0, style: [y.footerButtons, f && C, f && y.footerButtonsAbsolute, p && y.fadeOut] }, n.createElement(r.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(i.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: p ? "none" : void 0, role: "none", style: [y.buttonWrapper, y.buttonWrapperLeft, u.nk, p && y.fadeOut] }, (t) => n.createElement(s.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(c.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: _ || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
                         v ? n.createElement(a.Z, { pointerEvents: p ? "none" : void 0, style: [y.buttonWrapper, y.buttonWrapperRight, u.nk, p && y.fadeOut] }, v) : null,
                         Z
@@ -507,4 +507,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-9f4db315.2ba1428a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-9f4db315.35ef3d8a.js.map

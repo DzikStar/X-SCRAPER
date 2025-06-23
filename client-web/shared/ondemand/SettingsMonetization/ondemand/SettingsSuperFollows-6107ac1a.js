@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a", "icons/IconChevronDown-js"],
+    ["shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a"],
     {
         829028: (e, a, n) => {
             n.d(a, { Z: () => l });
@@ -733,15 +733,15 @@
                 b = n(420412),
                 y = n(954110),
                 F = n(111677),
-                h = n.n(F),
-                k = n(125363),
+                k = n.n(F),
+                h = n(125363),
                 _ = n(390387);
-            const S = h().g40b2b30,
-                w = h().c1521804,
+            const S = k().g40b2b30,
+                w = k().c1521804,
                 v = o,
                 C = s;
             function D() {
-                const e = (0, k.v9)(_.x0);
+                const e = (0, h.v9)(_.x0);
                 c()(e, "UserID must be defined");
                 const a = g()(v, { userId: e }),
                     [n] = f()(C),
@@ -783,13 +783,13 @@
                 y = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivateMutation", selections: (b = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "deactivate_super_follows_creator", storageKey: 'deactivate_super_follows_creator(s:"4721")' }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useSuperFollowsDeactivateMutation", selections: b }, params: { id: "K5_KjMpjdtjQXzKGLqyFXw", metadata: {}, name: "useSuperFollowsDeactivateMutation", operationKind: "mutation", text: null } };
             y.hash = "c33de27607da73145e2d32d5855eaa27";
             const F = y;
-            var h = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivate_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "be30a750d32c634903dac132ededc4bf" };
-            const k = h;
+            var k = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivate_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "be30a750d32c634903dac132ededc4bf" };
+            const h = k;
             var _ = n(614983),
                 S = n.n(_),
                 w = n(351743),
                 v = n.n(w);
-            const C = k,
+            const C = h,
                 D = F,
                 Z = (e) => {
                     const a = o()(C, e),
@@ -830,7 +830,7 @@
                         F = s.useCallback(() => {
                             f(!0);
                         }, []),
-                        h = s.useCallback(() => {
+                        k = s.useCallback(() => {
                             b()
                                 .then(() => {
                                     f(!1), a({ text: x }), i?.();
@@ -839,10 +839,10 @@
                                     a({ text: B });
                                 });
                         }, [a, b, i]),
-                        k = s.useCallback(() => {
+                        h = s.useCallback(() => {
                             f(!1), t?.();
                         }, [t]);
-                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: y || n, onPress: F, type: "destructiveOutlined" }), l), p && s.createElement(u.Z, { cancelButtonLabel: P, confirmButtonLabel: O, confirmButtonType: "destructiveFilled", headline: K, onCancel: k, onConfirm: h, text: E }));
+                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: y || n, onPress: F, type: "destructiveOutlined" }), l), p && s.createElement(u.Z, { cancelButtonLabel: P, confirmButtonLabel: O, confirmButtonType: "destructiveFilled", headline: K, onCancel: h, onConfirm: k, text: E }));
                 });
         },
         879113: (e, a, n) => {
@@ -952,7 +952,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: a, errorText: n, hasError: d, helperText: p, options: f, style: y, testID: F, value: h, withEmptyOption: k } = this.props,
+                    const { "aria-describedby": e, disabled: a, errorText: n, hasError: d, helperText: p, options: f, style: y, testID: F, value: k, withEmptyOption: h } = this.props,
                         { isFocused: _ } = this.state,
                         S = o.ZP.getLanguage(),
                         w = void 0 === d ? !!n : d,
@@ -970,8 +970,8 @@
                                 this._renderLabel(),
                                 r.createElement(
                                     m,
-                                    { "aria-describedby": C, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, a && i.Z.disabled], testID: F || "", value: h },
-                                    k ? r.createElement(g, { disabled: !0, style: b.option, value: "" }) : null,
+                                    { "aria-describedby": C, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: a, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, a && i.Z.disabled], testID: F || "", value: k },
+                                    h ? r.createElement(g, { disabled: !0, style: b.option, value: "" }) : null,
                                     f.map((e) => {
                                         const { disabled: a, label: n, value: l } = e;
                                         return r.createElement(g, { disabled: a, key: `${n}-${l}`, style: b.option, value: l }, n);
@@ -1000,19 +1000,6 @@
             const b = c.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
                 y = f;
         },
-        487552: (e, a, n) => {
-            n.r(a), n.d(a, { default: () => o });
-            var r = n(202784),
-                l = n(890601),
-                t = n(783427),
-                s = n(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, t.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.4b0b373a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.ca51ecea.js.map

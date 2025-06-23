@@ -89,7 +89,7 @@
                                 let r = 0;
                                 if ((a.assistant && ((this.accumulatedTrace += a.assistant), (this.traceEnabled = !0)), a.summary)) {
                                     const s = (0, u.Ez)(a.summary);
-                                    (this.accumulatedSummary += s), e.subSteps.push({ messageStepId: t + r, messageTag: m.SUMMARY, summary: s, webResults: a.webResults, xPostIds: a.xPostIds }), r++;
+                                    (this.accumulatedSummary += s), e.subSteps.push({ messageStepId: t + r, messageTag: m.SUMMARY, summary: s, webResults: a.webResults, xPostIds: a.xPostIds, toolUsageCardResults: a.toolUsageCardResults }), r++;
                                 }
                                 if (a.decision) {
                                     const s = this.parseMessageJSON(a.decision),
@@ -310,4 +310,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-85c3578f.5e4fb67a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-85c3578f.6cfce5fa.js.map

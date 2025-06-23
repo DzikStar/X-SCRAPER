@@ -38,7 +38,7 @@
             e.exports = { queryId: "a6kPp1cS1Dgbsjhapz1PNw", operationName: "EditBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         645513: (e) => {
-            e.exports = { queryId: "NS-xp6AJT5wt_LyRS_UjRA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "_v1krzee5g5usd5t70TEFA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         470969: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -59,7 +59,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         985289: (e) => {
-            e.exports = { queryId: "35pL_F5A2NdP7FuXgHHOuQ", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "xuFDPunCIN3nYooaVUkzaA", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         524816: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -125,7 +125,7 @@
         },
         403911: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => C });
+            a.d(t, { Z: () => A });
             var o = a(506899),
                 r = a(163889),
                 n = a(414742),
@@ -148,25 +148,25 @@
                 y = a(734701),
                 T = a.n(y),
                 q = a(630986),
-                S = a.n(q),
+                I = a.n(q),
                 x = a(934309);
-            const I = { result: [], entities: {}, slice_info: {} },
-                F = (e, t) => {
+            const F = { result: [], entities: {}, slice_info: {} },
+                S = (e, t) => {
                     const a = t?.bookmark_all_delete,
                         o = "Done" === a;
                     return o || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, n.jB)(e) || !o;
                 },
-                L = (0, n.kj)((e) => {
+                C = (0, n.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         a = "User" === t?.__typename ? t : void 0,
                         o = a?.bookmark_collections_slice?.items;
                     return !o;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                A = (0, n.kj)((e) => {
+                L = (0, n.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                C = ({ apiClient: e, featureSwitches: t }) => ({
+                A = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
                             u(),
@@ -179,7 +179,7 @@
                             { ...t },
                             (0, n.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(k(), {}, F).then((e) => e),
+                    deleteAll: () => e.graphQL(k(), {}, S).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: a } = t;
                         return e.graphQL(v(), { bookmark_collection_id: a });
@@ -190,13 +190,13 @@
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: a, tweetId: o } = t;
-                        return e.graphQL(S(), { bookmark_collection_id: a, tweet_id: o });
+                        return e.graphQL(I(), { bookmark_collection_id: a, tweet_id: o });
                     },
                     fetchBookmarksTimeline: ({ count: a, cursor: o }) => e.graphQL(m(), { count: a, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || x.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: o }) => e.graphQL(p(), { bookmark_collection_id: a, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, A).then((e) => e?.bookmark_collection_timeline?.timeline || x.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: o }) => e.graphQL(p(), { bookmark_collection_id: a, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, L).then((e) => e?.bookmark_collection_timeline?.timeline || x.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(l(), t, L).then((e) => {
+                            ? e.graphQL(l(), t, C).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       a = "User" === t?.__typename ? t : void 0,
                                       r = a?.bookmark_collections_slice;
@@ -204,9 +204,9 @@
                                       const { entities: e, result: t } = (0, o.Fv)(r.items, [_]);
                                       return { entities: e, result: t, slice_info: r.slice_info };
                                   }
-                                  return I;
+                                  return F;
                               })
-                            : Promise.resolve(I),
+                            : Promise.resolve(F),
                 });
         },
         6157: (e, t, a) => {
@@ -234,28 +234,28 @@
                 y = a(716442),
                 T = a.n(y),
                 q = a(985289),
-                S = a.n(q),
+                I = a.n(q),
                 x = a(524816),
-                I = a.n(x),
-                F = a(917665),
-                L = a.n(F),
-                A = a(587068),
-                C = a.n(A);
+                F = a.n(x),
+                S = a(917665),
+                C = a.n(S),
+                L = a(587068),
+                A = a.n(L);
             function Q({ apiClient: e }) {
                 return {
                     clearConversations: (t, a) => e.graphQL(_(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, n.ZP)("GraphQL clear grok conversations failed."), e)),
-                    setPreferences: ({ grokMode: t, grokModelOptionId: a }) => e.graphQL(C(), { grokMode: t, grokModelOptionId: a }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, n.ZP)("GraphQL set grok preferences failed."), e)),
+                    setPreferences: ({ grokMode: t, grokModelOptionId: a }) => e.graphQL(A(), { grokMode: t, grokModelOptionId: a }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, n.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(p(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(S(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(I(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(u(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(m(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(g(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(T(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
                     deleteMessage: ({ chat_item_id: t, conversation_id: a }) => e.graphQL(l(), { conversation_id: a, chat_item_id: t }).then((e) => e),
-                    logUserEventGrok: ({ action_type: t, group_id: a, object_id: o }) => e.graphQL(L(), { group_id: a, object_id: o, action_type: t }).then((e) => e),
+                    logUserEventGrok: ({ action_type: t, group_id: a, object_id: o }) => e.graphQL(C(), { group_id: a, object_id: o, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(k(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(I(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(F(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: a }) => {
                         const o = new FormData();
                         return o.append("image", a), e.postForm("grok/attachment", o, {}, { "x-xai-request-id": r().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
@@ -331,4 +331,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.9ab5751a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.f235d9ba.js.map

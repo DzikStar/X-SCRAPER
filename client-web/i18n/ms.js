@@ -6491,7 +6491,7 @@
                 i("e5f4eac0", "Kandungan anda akan lebih mudah ditemukan, dan anda juga akan muncul dalam hasil carian dan trend."),
                 i("c7832a72", "Berhubung secara terus dengan orang lain"),
                 i("i1ccd17a", "Hantar Mesej Langsung kepada orang, yang tidak mengikuti anda, tanpa mesej anda ditapis secara automatik."),
-                i("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                i("f7cf3d36", "Grok ialah pembantu AI percuma yang direka bentuk oleh xAI untuk memaksimumkan kebenaran dan keobjektifan. Grok menawarkan carian dalam masa nyata, penjanaan imej, analisis trend dan banyak lagi."),
                 i("hc965308", "Seronok"),
                 i("eb78b77e", "Mod Seronok"),
                 i("aa8ece10", "Cuba grok.com"),
@@ -13333,4 +13333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.42e7d5ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.9e7faeaa.js.map

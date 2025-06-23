@@ -6492,7 +6492,7 @@
                 a("e5f4eac0", "Je content is beter te vinden. En je verschijnt in zoekresultaten en trends."),
                 a("c7832a72", "Rechtstreeks contact leggen met anderen"),
                 a("i1ccd17a", "Stuur Privéberichten naar mensen die jou niet volgen, zonder dat je bericht automatisch wordt gefilterd."),
-                a("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                a("f7cf3d36", "Grok is een gratis AI-assistent ontworpen door xAI om waarheid en objectiviteit te maximaliseren. Grok biedt realtime zoeken, afbeeldingen genereren, trendanalyses en meer."),
                 a("hc965308", "Fun"),
                 a("eb78b77e", "Funmodus"),
                 a("aa8ece10", "Probeer grok.com"),
@@ -13348,4 +13348,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.efce541a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.ad6ccaea.js.map

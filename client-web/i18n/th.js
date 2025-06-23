@@ -2,14 +2,14 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/th"],
     {
-        743834: (e, a, c) => {
-            var n = c(292426)._register("th", {
+        743834: (e, c, a) => {
+            var n = a(292426)._register("th", {
                 get emoji() {
-                    return c.e("i18n/emoji-th").then(c.t.bind(c, 953899, 23));
+                    return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
                 },
             });
-            function t(e, a) {
-                return a;
+            function t(e, c) {
+                return c;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "ไม่มี"),
@@ -6491,7 +6491,7 @@
                 n("e5f4eac0", "เนื้อหาของคุณจะสามารถค้นพบได้มากขึ้น และคุณจะปรากฏในผลการค้นหาและความนิยม"),
                 n("c7832a72", "เชื่อมต่อโดยตรงกับผู้อื่น"),
                 n("i1ccd17a", "ส่งข้อความส่วนตัวถึงผู้คนที่ไม่ได้ติดตามคุณ โดยข้อความของคุณจะไม่ถูกกรองโดยอัตโนมัติ"),
-                n("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                n("f7cf3d36", "Grok คือผู้ช่วย AI ฟรีที่ออกแบบโดย xAI เพื่อมุ่งเน้นความจริงและความเป็นกลางในระดับสูงสุด โดย Grok มีฟีเจอร์การค้นหาแบบเรียลไทม์ การสร้างรูปภาพ การวิเคราะห์เทรนด์ และอื่นๆ อีกมากมาย"),
                 n("hc965308", "สนุกสนาน"),
                 n("eb78b77e", "โหมดสนุกสนาน"),
                 n("aa8ece10", "ลองใช้งาน grok.com"),
@@ -7871,9 +7871,9 @@
                 n("f1f6c88b", function (e) {
                     return "บัญชี (" + e.count + ")";
                 });
-            function f(e, a) {
-                for (var c = 0; c < a.length; c++) {
-                    var n = a[c];
+            function f(e, c) {
+                for (var a = 0; a < c.length; a++) {
+                    var n = c[a];
                     (n.enumerable = n.enumerable || !1),
                         (n.configurable = !0),
                         "value" in n && (n.writable = !0),
@@ -7882,15 +7882,15 @@
                             ((t = n.key),
                             (f = void 0),
                             "symbol" ==
-                            typeof (f = (function (e, a) {
+                            typeof (f = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
-                                var c = e[Symbol.toPrimitive];
-                                if (void 0 !== c) {
-                                    var n = c.call(e, a || "default");
+                                var a = e[Symbol.toPrimitive];
+                                if (void 0 !== a) {
+                                    var n = a.call(e, c || "default");
                                     if ("object" != typeof n) return n;
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
-                                return ("string" === a ? String : Number)(e);
+                                return ("string" === c ? String : Number)(e);
                             })(t, "string"))
                                 ? f
                                 : String(f)),
@@ -7899,14 +7899,14 @@
                 }
                 var t, f;
             }
-            function r(e, a) {
+            function r(e, c) {
                 return (
                     (r = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
-                        : function (e, a) {
-                              return (e.__proto__ = a), e;
+                        : function (e, c) {
+                              return (e.__proto__ = c), e;
                           }),
-                    r(e, a)
+                    r(e, c)
                 );
             }
             n("b02156b8", "คําเชิญ"),
@@ -9509,22 +9509,22 @@
                 n("acddd4d4", "สีแดง"),
                 n("cef9b062", "สีน้ำเงินอมเขียว"),
                 n("d9daefca", "สีเทาเข้ม");
-            var d = c(202784),
+            var d = a(202784),
                 b = [],
                 u = {};
             function i(e) {
                 return e;
             }
             var o = (function (e) {
-                var a, c, n, t, o;
+                var c, a, n, t, o;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
                 return (
-                    (c = e),
-                    ((a = m).prototype = Object.create(c.prototype)),
-                    (a.prototype.constructor = a),
-                    r(a, c),
+                    (a = e),
+                    ((c = m).prototype = Object.create(a.prototype)),
+                    (c.prototype.constructor = c),
+                    r(c, a),
                     (m.prototype.render = function () {
                         return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
                     }),
@@ -12966,10 +12966,10 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    a = d.Children.toArray(this.props.children),
-                                    c = ((e = this.props.$i18n), b[u[e]] || i);
+                                    c = d.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), b[u[e]] || i);
                                 return function (e, n, t) {
-                                    return e.concat(n, a[c(t)]);
+                                    return e.concat(n, c[a(t)]);
                                 };
                             },
                         },
@@ -12978,13 +12978,13 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(c(111677)._ActualI18NFormatMessage || d.Component);
+            })(a(111677)._ActualI18NFormatMessage || d.Component);
             n("_ActualI18NFormatMessage", o),
                 n("I18NFormatMessage", function (e) {
                     return d.createElement(o, e);
                 });
-            var m = c(495075);
-            c(800694), c(556829), c(530152), c(658610), c(492344), c(663823);
+            var m = a(495075);
+            a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
             m._validateParameterTypeNumber, m._validateParameterPresence;
             var g = m._numberRound,
                 h = (m._numberFormat, m._numberFormatterFn),
@@ -13333,4 +13333,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.ff14194a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.a9795f5a.js.map

@@ -81,7 +81,7 @@
                 D = o(277660),
                 T = o.n(D),
                 k = o(731708),
-                P = o(451566),
+                P = o(401705),
                 B = o(242454),
                 A = o(800536);
             const H = { spotlightConfigRow: "spotlight_config_row" },
@@ -223,4 +223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-8ed0fac5.00b5eb7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileProfileSpotlight-8ed0fac5.770fc73a.js.map

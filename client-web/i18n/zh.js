@@ -6491,7 +6491,7 @@
                 f("e5f4eac0", "你的内容会更容易被发现。而且你会出现在搜索结果和趋势中。"),
                 f("c7832a72", "直接与其他人联系"),
                 f("i1ccd17a", "向没有关注你的人发送私信而不会被自动过滤。"),
-                f("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                f("f7cf3d36", "Grok 是 xAI 设计的一款免费 AI 助手，旨在尽可能提高真实性和客观性。Grok 提供实时搜索、图像生成、趋势分析等功能。"),
                 f("hc965308", "趣味"),
                 f("eb78b77e", "趣味模式"),
                 f("aa8ece10", "尝试 grok.com"),
@@ -13349,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.d98a569a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.7dd42bca.js.map

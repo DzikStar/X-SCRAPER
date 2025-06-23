@@ -6495,7 +6495,7 @@
                 n("e5f4eac0", "내 콘텐츠의 검색 가능성이 커집니다. 검색 결과와 트렌드에도 내 계정이 표시됩니다."),
                 n("c7832a72", "다른 사람들과 직접 소통하세요"),
                 n("i1ccd17a", "나를 팔로우하지 않는 사람들에게도 자동 필터링될 걱정 없이 쪽지를 보내세요."),
-                n("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                n("f7cf3d36", "Grok는 진실성과 객관성을 극대화하기 위해 xAI가 개발한 무료 AI 어시스턴트입니다. Grok는 실시간 검색, 이미지 생성, 트렌드 분석 등 다양한 기능을 제공합니다."),
                 n("hc965308", "재미"),
                 n("eb78b77e", "재미 모드"),
                 n("aa8ece10", "grok.com 사용해 보기"),
@@ -13353,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.05b4818a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.4313d35a.js.map

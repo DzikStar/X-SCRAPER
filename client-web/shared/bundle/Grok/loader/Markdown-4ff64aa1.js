@@ -257,16 +257,16 @@
                 f = a(125363),
                 h = a(836255);
             function b({ allowMedia: e = !0, containerStyle: t, hoverStyle: a, isPreview: s = !1, numberOfLines: o = 5, onClick: b, postId: x, preventPlayback: C = !0, showActionsBar: _ = !0, style: P, tweetTextStyle: S }) {
-                const k = n.useMemo(() => h.Z.createHydratorForTweet(x), [x]),
-                    v = (0, f.v9)(k);
-                if (!v) return null;
-                const { created_at: E, text: Z, user: I } = v,
-                    R = (v.extended_entities?.media || []).slice(0, 1);
+                const v = n.useMemo(() => h.Z.createHydratorForTweet(x), [x]),
+                    k = (0, f.v9)(v);
+                if (!k) return null;
+                const { created_at: E, text: Z, user: I } = k,
+                    R = (k.extended_entities?.media || []).slice(0, 1);
                 return n.createElement(
                     l.Z,
                     {
                         onClick: () => {
-                            b && b(), window.open(`https://x.com${v.permalink}`, "_blank");
+                            b && b(), window.open(`https://x.com${k.permalink}`, "_blank");
                         },
                         style: [w.interactiveContainer, t],
                         withoutInteractiveStyles: !0,
@@ -276,38 +276,38 @@
                             i.Z,
                             { style: [w.container, t ? w.hoveredContainer : void 0, P, t && a] },
                             n.createElement(i.Z, { style: w.headerContainer }, n.createElement(i.Z, { style: w.nameContainer }, n.createElement(c.default, { "aria-label": I.name, borderColor: "gray700", borderWidth: "small", screenName: I.screen_name, size: s ? "medium" : "large", uri: I.profile_image_url_https, withHoverCard: !0, withLink: !0 }), n.createElement(d.Z, { affiliateBadgeInfo: I.highlightedLabel, isBlueVerified: I.is_blue_verified, isVerified: I.verified, name: I.name, nameSize: s ? "subtext2" : "subtext1", screenName: I.screen_name, screenNameSize: s ? "subtext3" : "subtext2", screenNameStyle: w.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: I.verified_type, withHoverCard: !0, withLink: !0, withStackedLayout: !0 })), n.createElement(m.Z, { humanReadable: !1, style: [w.timestamp, { fontSize: s ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2, lineHeight: s ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2 }], timestamp: E })),
-                            v.in_reply_to_screen_name && n.createElement(p.ZP, { displayTextRange: v.display_text_range, inReplyToName: v.in_reply_to_name, inReplyToScreenName: v.in_reply_to_screen_name, inReplyToUserIdStr: v.in_reply_to_user_id_str, linkType: p.ZP.ReplyContextLinkTypes.none, size: s ? "subtext2" : "subtext1", tweetPermalink: v.permalink }),
-                            n.createElement(u.Z, { displayTextRange: v.display_text_range, entities: v.entities, isCondensed: s, numberOfLines: o, style: [w.tweetText, S], text: Z }),
+                            k.in_reply_to_screen_name && n.createElement(p.ZP, { displayTextRange: k.display_text_range, inReplyToName: k.in_reply_to_name, inReplyToScreenName: k.in_reply_to_screen_name, inReplyToUserIdStr: k.in_reply_to_user_id_str, linkType: p.ZP.ReplyContextLinkTypes.none, size: s ? "subtext2" : "subtext1", tweetPermalink: k.permalink }),
+                            n.createElement(u.Z, { displayTextRange: k.display_text_range, entities: k.entities, isCondensed: s, numberOfLines: o, style: [w.tweetText, S], text: Z }),
                             e &&
                                 (!s || !Z) &&
                                 R.map((e) => {
                                     const t = { ...e, ext_alt_text: void 0 };
-                                    return n.createElement(y.Z, { displayMediaTags: !1, hasSensitiveMedia: v.possibly_sensitive, isCondensed: s, key: `media_${v.id_str}_${e.id_str}`, mediaContentStyles: w.media, mediaDetails: [t], mediaVisibilityResults: v.mediaVisibilityResults, preventPlayback: C, shouldShowAltLabelAlways: !1, showAltTranslation: !1, showBorder: !1, singleImageMaxAspectRatio: 2, singleImageMinAspectRatio: 2, tweetId: v.id_str, videoAspectRatio: 2, videoOptions: { displayOptions: { badgeConfiguration: { hideDataSize: !0, hideViewCount: !0, hideDuration: !0 } }, hidePreviewPlayButton: !0 }, withCenterCrop: !0, withMediaTagsIcon: !s });
+                                    return n.createElement(y.Z, { displayMediaTags: !1, hasSensitiveMedia: k.possibly_sensitive, isCondensed: s, key: `media_${k.id_str}_${e.id_str}`, mediaContentStyles: w.media, mediaDetails: [t], mediaVisibilityResults: k.mediaVisibilityResults, preventPlayback: C, shouldShowAltLabelAlways: !1, showAltTranslation: !1, showBorder: !1, singleImageMaxAspectRatio: 2, singleImageMinAspectRatio: 2, tweetId: k.id_str, videoAspectRatio: 2, videoOptions: { displayOptions: { badgeConfiguration: { hideDataSize: !0, hideViewCount: !0, hideDuration: !0 } }, hidePreviewPlayButton: !0 }, withCenterCrop: !0, withMediaTagsIcon: !s });
                                 }),
-                            _ && n.createElement(g.Z, { allowBookmarkInActionsBar: !0, style: w.actionBar, tweet: v, withAnalyticsAction: !0, withCount: !0 }),
+                            _ && n.createElement(g.Z, { allowBookmarkInActionsBar: !0, style: w.actionBar, tweet: k, withAnalyticsAction: !0, withCount: !0 }),
                         ),
                 );
             }
             const w = r.default.create((e) => ({ interactiveContainer: { flex: 1 }, container: { borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, borderRadius: e.borderRadii.large, padding: e.spaces.space12, textOverflow: "ellipsis", cursor: "pointer", transition: "background-color 0.2s ease", display: "flex", flexDirection: "column", gap: e.spaces.space8, height: "100%", flex: 1 }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space8, textOverflow: "ellipsis", overflow: "hidden" }, nameContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, textOverflow: "ellipsis" }, screenName: { color: e.colors.gray700 }, timestamp: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, textOverflow: "ellipsis", position: "relative", top: 3 }, tweetText: { fontSize: e.fontSizes.subtext2, flex: 1 }, media: {}, actionBar: {} })),
-                x = ({ allowMedia: e = !0, dynamicLayoutEnabled: t = !1, enableActions: a = !0, numberOfLines: r, postHoverStyle: l, postIds: c, postStyle: d, style: m }) => {
-                    const { isCompactLayout: p } = (0, o.ZP)();
+                x = ({ allowMedia: e = !0, dynamicLayoutEnabled: t = !1, enableActions: a = !0, isPreview: r = !1, numberOfLines: l, postHoverStyle: c, postIds: d, postStyle: m, style: p, tweetTextStyle: u }) => {
+                    const { isCompactLayout: y } = (0, o.ZP)();
                     if (t) {
-                        if (1 === c.length) return n.createElement(i.Z, { style: [C.singlePostOuterContainer, m] }, n.createElement(i.Z, { style: [C.singlePostContainer, p && C.compactSinglePostContainer] }, n.createElement(s.ZP, { displayPromotedContent: !1, tweetId: c[0], withActions: a })));
-                        if (2 === c.length)
+                        if (1 === d.length) return n.createElement(i.Z, { style: [C.singlePostOuterContainer, p] }, n.createElement(i.Z, { style: [C.singlePostContainer, y && C.compactSinglePostContainer] }, n.createElement(s.ZP, { displayPromotedContent: !1, tweetId: d[0], withActions: a })));
+                        if (2 === d.length)
                             return n.createElement(
                                 i.Z,
-                                { style: [C.doublePostOuterContainer, m] },
-                                c.map((t, i) => n.createElement(b, { allowMedia: e, containerStyle: C.doublePostContainer, hoverStyle: l, key: t, numberOfLines: r, postId: t, preventPlayback: !1, showActionsBar: a, style: [C.post, { animationDelay: 0.1 * i + "s" }, d], tweetTextStyle: C.postText })),
+                                { style: [C.doublePostOuterContainer, p] },
+                                d.map((t, i) => n.createElement(b, { allowMedia: e, containerStyle: C.doublePostContainer, hoverStyle: c, isPreview: r, key: t, numberOfLines: l, postId: t, preventPlayback: !1, showActionsBar: a, style: [C.post, { animationDelay: 0.1 * i + "s" }, m], tweetTextStyle: [C.postText, u] })),
                             );
                     }
                     return n.createElement(
                         i.Z,
-                        { style: [C.container, m] },
-                        c.map((t, i) => n.createElement(b, { allowMedia: e, containerStyle: C.postContainer, hoverStyle: l, key: t, numberOfLines: r, postId: t, preventPlayback: !1, showActionsBar: a, style: [C.post, { animationDelay: 0.1 * i + "s" }, d], tweetTextStyle: C.postText })),
+                        { style: [C.container, p] },
+                        d.map((t, i) => n.createElement(b, { allowMedia: e, containerStyle: C.postContainer, hoverStyle: c, isPreview: r, key: t, numberOfLines: l, postId: t, preventPlayback: !1, showActionsBar: a, style: [C.post, { animationDelay: 0.1 * i + "s" }, m], tweetTextStyle: [C.postText, u] })),
                     );
                 },
                 C = r.default.create((e) => ({ singlePostOuterContainer: { width: "100%", display: "flex", flexDirection: "column", alignItems: "center" }, singlePostContainer: { width: "70%", borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, borderRadius: e.borderRadii.large, overflow: "hidden" }, compactSinglePostContainer: { width: "100%" }, doublePostOuterContainer: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space12 }, doublePostContainer: { flex: 1 }, container: { width: "100%", display: "flex", flexDirection: "row", flex: 1, gap: e.spaces.space12 }, postContainer: { flex: 1 }, post: { animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, postText: { fontSize: e.fontSizes.subtext1 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-4ff64aa1.8f7437fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-4ff64aa1.d092856a.js.map
