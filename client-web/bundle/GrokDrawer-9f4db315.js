@@ -51,8 +51,8 @@
                 o = s(163889),
                 i = s(155074),
                 n = s.n(i),
-                l = s(491156),
-                d = s.n(l),
+                d = s(491156),
+                l = s.n(d),
                 _ = s(645513),
                 c = s.n(_),
                 p = s(470969),
@@ -86,7 +86,7 @@
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(I(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(b(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(y(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
-                    deleteMessage: ({ chat_item_id: t, conversation_id: s }) => e.graphQL(d(), { conversation_id: s, chat_item_id: t }).then((e) => e),
+                    deleteMessage: ({ chat_item_id: t, conversation_id: s }) => e.graphQL(l(), { conversation_id: s, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: s, object_id: a }) => e.graphQL(E(), { group_id: s, object_id: a, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
                     grokUnpinConversation: ({ conversationId: t }) => e.graphQL(v(), { conversationId: t }).then((e) => e),
@@ -195,24 +195,24 @@
                 o = s(111677),
                 i = s.n(o),
                 n = s(123702),
-                l = s(187268);
-            const d = i().c3f04d9c,
+                d = s(187268);
+            const l = i().c3f04d9c,
                 _ = i().cbdddb0a,
                 c = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 p = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
-                u = { GenericSearchQueryFormatter: i().ie2bbeed, GenericSearchQueryMarkdownFormatter: i().b0d1e205, WebSearchQueryFormatter: i().f259119d, XSearchQueryFormatter: i().bf970edd, BrowsePageFormatter: i().g008d475, GenericURLQueryFormatter: i().c91e3971, GenericURLQueryMarkdownFormatter: i().acb9b845, XUsernameSearchFormatter: i().j9006405, XUsernameQuerySearchFormatter: i().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: i().e99fb7a3 };
+                u = { GenericSearchQueryFormatter: i().ie2bbeed, GenericSearchQueryMarkdownFormatter: i().b0d1e205, WebSearchQueryFormatter: i().ie2bbeed, XSearchQueryFormatter: i().bf970edd, XUserSearchFormatter: i().ad342369, BrowsePageFormatter: i().g008d475, GenericURLQueryFormatter: i().c91e3971, GenericURLQueryMarkdownFormatter: i().acb9b845, XUsernameSearchFormatter: i().j9006405, XUsernameQuerySearchFormatter: i().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: i().e99fb7a3, CodeExecutionFormatter: i().a02d1657 };
             class m {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, t = !1) => {
                         this.lastStreamedDataTimestamp = Date.now();
                         for (const t of e) {
-                            const e = { id: r().v4(), state: p.COMPLETED, header: t.header || d, subSteps: [] };
+                            const e = { id: r().v4(), state: p.COMPLETED, header: t.header || l, subSteps: [] };
                             for (let s = 0; s < t.steps.length; s++) {
                                 const a = t.steps[s];
                                 this.addWebResults(a.webResults || []), this.addXPostIds(a.xPostIds || []);
                                 let r = 0;
                                 if ((a.assistant && ((this.accumulatedTrace += a.assistant), (this.traceEnabled = !0)), a.summary)) {
-                                    const t = (0, l.Ez)(a.summary);
+                                    const t = (0, d.Ez)(a.summary);
                                     (this.accumulatedSummary += t), e.subSteps.push({ messageStepId: s + r, messageTag: c.SUMMARY, summary: t, webResults: a.webResults, xPostIds: a.xPostIds, toolUsageCardResults: a.toolUsageCardResults }), r++;
                                 }
                                 if (a.decision) {
@@ -233,9 +233,9 @@
                                 s = e.messageTag === c.HEADER,
                                 a = s || this.steps.length <= 0;
                             if ((this.addDebugMessageTagCount(e.messageTag), (this.lastStreamedDataTimestamp = Date.now()), "PENDING" === this.state && ((this.streamStartTimestamp = Date.now()), (this.state = "STARTED")), a)) {
-                                const a = { id: r().v4(), state: "COMPLETED" === this.state ? p.COMPLETED : p.IN_PROGRESS, header: s ? e.message : d, subSteps: [] };
+                                const a = { id: r().v4(), state: "COMPLETED" === this.state ? p.COMPLETED : p.IN_PROGRESS, header: s ? e.message : l, subSteps: [] };
                                 if (s) {
-                                    if (1 === this.steps.length && this.steps[0].header === d) return void (this.steps = [{ ...this.steps[0], header: a.header }]);
+                                    if (1 === this.steps.length && this.steps[0].header === l) return void (this.steps = [{ ...this.steps[0], header: a.header }]);
                                     this.steps = [...this.steps, a];
                                 } else e.messageTag === c.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, a]));
                                 return void (t >= 0 && this.completeStep(t));
@@ -258,11 +258,11 @@
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case c.SUMMARY: {
-                                        const t = (0, l.Ez)(e.message);
+                                        const t = (0, d.Ez)(e.message);
                                         _.summary = (_.summary || "") + t;
-                                        const s = (0, l.QK)(e.message);
+                                        const s = (0, d.QK)(e.message);
                                         if (s) {
-                                            const t = (0, l.CK)(s);
+                                            const t = (0, d.CK)(s);
                                             t && (_.bulletPoints = [...(_.bulletPoints || []), t]), (_.toolUsageCardResults = [...(_.toolUsageCardResults || []), { toolUsageCardId: s.id, webResults: e.webResults, xPostIds: e.xPostIds }]);
                                         } else {
                                             const t = (0, n.K)(e.message);
@@ -296,11 +296,11 @@
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case c.SUMMARY: {
-                                        const s = (0, l.QK)(e.message) ?? void 0,
-                                            a = (0, l.Ez)(e.message);
+                                        const s = (0, d.QK)(e.message) ?? void 0,
+                                            a = (0, d.Ez)(e.message);
                                         let r = [];
                                         if (s) {
-                                            const e = (0, l.CK)(s);
+                                            const e = (0, d.CK)(s);
                                             e && (r = [e]);
                                         } else {
                                             (0, n.K)(e.message).trim() && (r = [(0, n.K)(e.message)]);
@@ -434,4 +434,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.738cd10a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.d7e1c79a.js.map

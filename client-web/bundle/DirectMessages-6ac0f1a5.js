@@ -3,38 +3,40 @@
     ["bundle.DirectMessages-6ac0f1a5"],
     {
         187268: (e, t, a) => {
-            a.d(t, { CK: () => w, Ez: () => f, QK: () => g, Sd: () => x, eC: () => v, w$: () => y });
+            a.d(t, { CK: () => k, Ez: () => x, QK: () => v, Sd: () => w, eC: () => y, ky: () => m, w$: () => b });
             a(543673), a(240753), a(128399);
             var n = a(202784),
                 o = a(392237),
-                s = a(784732),
-                r = a(14284),
+                r = a(784732),
+                s = a(956272),
                 i = a(520913),
                 c = a(913315),
                 l = a(355586),
-                u = a(492244),
-                d = a(397159);
-            const p = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
-                m = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
-                _ = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
-                h = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
-            function f(e) {
-                return e.replace(p, (e) => {
+                u = a(14284),
+                d = a(492244),
+                p = a(397159);
+            const m = { CodeExecution: "code_execution", BrowsePage: "browse_page", XSearch: "x_search", WebSearch: "web_search", XKeywordSearch: "x_keyword_search", XSemanticSearch: "x_semantic_search", XUserSearch: "x_user_search", GetXUserTimeline: "get_x_user_timeline" },
+                h = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
+                _ = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
+                f = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
+                g = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
+            function x(e) {
+                return e.replace(h, (e) => {
                     const t = (function (e) {
-                        const t = e.match(m),
-                            a = e.match(_),
-                            n = e.match(h),
+                        const t = e.match(_),
+                            a = e.match(f),
+                            n = e.match(g),
                             o = t ? t[1] : "",
-                            s = a ? a[1] : "",
-                            r = n ? n[1] : "";
+                            r = a ? a[1] : "",
+                            s = n ? n[1] : "";
                         let i = "<tool_usage_card>";
-                        return r && (i += `<tool_usage_card_id>${r}</tool_usage_card_id>`), (i += `<tool_name>${o}</tool_name>`), (i += `<tool_args>${s}</tool_args>`), (i += "</tool_usage_card>"), i;
+                        return s && (i += `<tool_usage_card_id>${s}</tool_usage_card_id>`), (i += `<tool_name>${o}</tool_name>`), (i += `<tool_args>${r}</tool_args>`), (i += "</tool_usage_card>"), i;
                     })(e);
                     return t ?? e;
                 });
             }
-            function g(e) {
-                const t = e.match(p);
+            function v(e) {
+                const t = e.match(h);
                 if (t) {
                     const {
                         args: e,
@@ -44,19 +46,19 @@
                         let t = "",
                             a = "",
                             n = "";
-                        const o = e.match(h);
+                        const o = e.match(g);
                         o && (t = o[1]);
-                        const s = e.match(m);
-                        s && (a = s[1]);
                         const r = e.match(_);
-                        r && (n = r[1].trim());
+                        r && (a = r[1]);
+                        const s = e.match(f);
+                        s && (n = s[1].trim());
                         return { id: t, name: a, args: n };
                     })(t[0]);
-                    return x(a, n, e);
+                    return w(a, n, e);
                 }
                 return null;
             }
-            function x(e, t, a) {
+            function w(e, t, a) {
                 const n = a.match(/^<!\[CDATA\[(.*?)\]\]>/ms);
                 let o = {};
                 if (n)
@@ -67,37 +69,39 @@
                     }
                 return { id: e, name: t, args: o };
             }
-            const v = "Using tools";
-            function w(e) {
+            const y = "Using tools";
+            function k(e) {
                 switch (e.name) {
-                    case "web_search":
-                        return d.XR.WebSearchQueryFormatter({ query: e.args.query });
-                    case "x_search":
-                    case "x_keyword_search":
-                    case "x_semantic_search":
-                    case "x_user_search":
-                        return d.XR.XSearchQueryFormatter({ query: e.args.query });
-                    case "browse_page": {
+                    case m.WebSearch:
+                        return p.XR.WebSearchQueryFormatter({ query: e.args.query });
+                    case m.XSearch:
+                    case m.XKeywordSearch:
+                    case m.XSemanticSearch:
+                        return p.XR.XSearchQueryFormatter({ query: e.args.query });
+                    case m.XUserSearch:
+                        return p.XR.XUserSearchFormatter({ query: e.args.query });
+                    case m.BrowsePage: {
                         let t = e.args.url || "";
                         try {
                             t = new URL(t).hostname.replace("www.", "");
                         } catch (e) {}
-                        return e.args.query ? d.XR.GenericURLQueryFormatter({ url: t, query: e.args.query }) : d.XR.BrowsePageFormatter({ url: t });
+                        return e.args.query ? p.XR.GenericURLQueryFormatter({ url: t, query: e.args.query }) : p.XR.BrowsePageFormatter({ url: t });
                     }
-                    case "get_x_user_timeline":
-                        return d.XR.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
+                    case m.GetXUserTimeline:
+                        return p.XR.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
+                    case m.CodeExecution:
+                        return p.XR.CodeExecutionFormatter({ ttc_tool_usage_card: "" });
                     default:
-                        return e.name ?? v;
+                        return e.name ?? y;
                 }
             }
-            function y(e) {
+            function b(e) {
                 const t = { style: { width: o.default.theme.spaces.space16, height: o.default.theme.spaces.space16 } };
                 switch (e) {
                     case "search_news":
-                        return n.createElement(s.default, t);
-                    case "web_search":
-                    case "browse_page":
                         return n.createElement(r.default, t);
+                    case "web_search":
+                        return n.createElement(s.default, t);
                     case "x_search":
                     case "get_x_user_timeline":
                     case "x_keyword_search":
@@ -108,8 +112,10 @@
                         return n.createElement(c.default, t);
                     case "call_sports_api":
                         return n.createElement(l.default, t);
-                    default:
+                    case "browse_page":
                         return n.createElement(u.default, t);
+                    default:
+                        return n.createElement(d.default, t);
                 }
             }
         },
@@ -118,9 +124,9 @@
             a(136728);
             var n = a(202784),
                 o = a(726426),
-                s = a.n(o),
-                r = a(111677),
-                i = a.n(r),
+                r = a.n(o),
+                s = a(111677),
+                i = a.n(s),
                 c = a(88656),
                 l = a(952793),
                 u = a(782642),
@@ -128,17 +134,17 @@
             a(571372);
             var p = a(623494),
                 m = a(737368);
-            const _ = 4,
-                h = i().h4d7cbcc,
+            const h = 4,
+                _ = i().h4d7cbcc,
                 f = i().j77292b7,
                 g = { onGrokFileSelected: (e) => new Promise((e) => e()), onFileSelected: (e, t) => new Promise((e) => e()), selectedFiles: {}, clearSelectedFile: () => {} },
                 x = n.createContext(g);
             function v({ children: e }) {
                 const [t, a] = n.useState({}),
                     o = (0, u.p)(),
-                    r = (0, d.Z)(),
+                    s = (0, d.Z)(),
                     i = (0, m.k)(),
-                    g = (0, l.JY)("responsive_web_grok_file_upload_max_files", _),
+                    g = (0, l.JY)("responsive_web_grok_file_upload_max_files", h),
                     v = n.useCallback(
                         (e) => {
                             const n = t[e];
@@ -153,7 +159,7 @@
                     ),
                     w = n.useCallback(
                         async (e, t) => {
-                            const n = s()(),
+                            const n = r()(),
                                 l = new AbortController(),
                                 u = { abortController: l, isUploading: !0, isPendingAutomaticPromptSend: t?.awaitPromptSend, local: e };
                             if (e.type.startsWith("image/"))
@@ -182,11 +188,11 @@
                             a((e) => (Object.keys(e).length >= g ? (o({ text: f({ count: g }) }), e) : { ...e, [n]: u }));
                             try {
                                 const t = await i(e, l);
-                                (0, p.Jm)(r), (u.remote = { ...t, dimensions: u.dimensions }), a((e) => (e[n] ? { ...e, [n]: u } : e));
+                                (0, p.Jm)(s), (u.remote = { ...t, dimensions: u.dimensions }), a((e) => (e[n] ? { ...e, [n]: u } : e));
                             } catch (e) {
                                 if (e instanceof c.Z && 0 === e.status) return;
-                                (0, p.eV)(r, e.message),
-                                    o({ text: h }),
+                                (0, p.eV)(s, e.message),
+                                    o({ text: _ }),
                                     a((e) => {
                                         const t = { ...e };
                                         return delete t[n], t;
@@ -195,11 +201,11 @@
                                 (u.isUploading = !1), a((e) => (e[n] ? { ...e, [n]: u } : e));
                             }
                         },
-                        [g, o, i, r],
+                        [g, o, i, s],
                     ),
                     y = n.useCallback(
                         async (e) => {
-                            const n = s()(),
+                            const n = r()(),
                                 o = { abortController: new AbortController(), isUploading: !1, remote: e };
                             a({ ...t, [n]: o });
                         },
@@ -224,8 +230,8 @@
             a(571372);
             var n = a(202784),
                 o = a(111677),
-                s = a.n(o),
-                r = a(276259),
+                r = a.n(o),
+                s = a(276259),
                 i = a(952793),
                 c = a(782642),
                 l = a(725516),
@@ -233,15 +239,15 @@
                 d = a(458810),
                 p = a(623494),
                 m = a(620988);
-            const _ = s().c74e87e0,
-                h = s().bea50a2a,
+            const h = r().c74e87e0,
+                _ = r().bea50a2a,
                 f = (e) => e.toLowerCase().replace(/\/$/, ""),
                 g = () => {
                     const e = (0, c.p)(),
                         t = (0, l.z)(),
                         a = (0, u.I0)(),
                         o = (0, m.x9)(),
-                        s = (0, i.hC)("responsive_web_grok_file_compression_enabled"),
+                        r = (0, i.hC)("responsive_web_grok_file_compression_enabled"),
                         g = (0, i.JY)("responsive_web_grok_file_max_size", 5242880);
                     return n.useCallback(
                         async (n, i) => {
@@ -259,28 +265,28 @@
                                     });
                                 })(o, n.type)
                             )
-                                throw (e({ text: h }), (0, p.op)(t, `file has unsupported type: ${n.type}`), new Error());
-                            if (s) {
+                                throw (e({ text: _ }), (0, p.op)(t, `file has unsupported type: ${n.type}`), new Error());
+                            if (r) {
                                 let a;
                                 try {
-                                    a = await (0, r.hv)(n, g);
+                                    a = await (0, s.hv)(n, g);
                                 } catch (e) {}
-                                if (!a) throw (e({ text: _ }), (0, p.op)(t, "failed to compress the file"), new Error());
+                                if (!a) throw (e({ text: h }), (0, p.op)(t, "failed to compress the file"), new Error());
                                 c = a;
-                            } else if (n.size > g) throw (e({ text: _ }), (0, p.op)(t, "file is too large"), new Error());
+                            } else if (n.size > g) throw (e({ text: h }), (0, p.op)(t, "file is too large"), new Error());
                             const l = await a((0, d.t)(c, i));
                             return (0, p.Jm)(t), l;
                         },
-                        [e, t, a, s, g, o],
+                        [e, t, a, r, g, o],
                     );
                 };
         },
         654917: (e, t, a) => {
-            a.d(t, { ZP: () => h, eX: () => m, uf: () => _ });
+            a.d(t, { ZP: () => _, eX: () => m, uf: () => h });
             var n = a(202784),
                 o = a(107267),
-                s = a(323265),
-                r = a(791632),
+                r = a(323265),
+                s = a(791632),
                 i = a(443781),
                 c = a(952793),
                 l = a(125363),
@@ -290,21 +296,21 @@
             function m() {
                 const e = (0, o.useHistory)(),
                     t = (0, l.v9)(u.Es);
-                return (0, r.HD)(e) ? (0, r.tT)(e) : t;
+                return (0, s.HD)(e) ? (0, s.tT)(e) : t;
             }
-            function _() {
+            function h() {
                 const e = m(),
                     t = (0, l.I0)(),
                     a = (0, l.v9)((t) => (0, u.YJ)(t, e));
                 return (0, l.v9)(a.selectIsInitialized) || t((0, u.Ki)(e)), a;
             }
-            function h() {
+            function _() {
                 const { userClaims: e } = (0, i.QZ)(),
                     t = m(),
-                    a = _(),
+                    a = h(),
                     o = (0, l.v9)(a.selectMessageIds),
-                    r = (0, l.I0)(),
-                    h = (0, l.v9)(a.selectFetchConversationIdStatus),
+                    s = (0, l.I0)(),
+                    _ = (0, l.v9)(a.selectFetchConversationIdStatus),
                     f = (0, l.v9)(a.selectFetchConversationIdError),
                     g = (0, l.v9)(a.selectMode),
                     x = (0, l.v9)(a.selectStatus),
@@ -313,33 +319,33 @@
                     y = (0, l.v9)(u.pZ),
                     k = (0, l.v9)(u.uF),
                     b = (0, l.v9)(u.F9),
-                    C = (0, l.v9)(a.selectAnalysisEntityId),
-                    S = (0, l.v9)(a.selectUsingExperiment);
+                    S = (0, l.v9)(a.selectAnalysisEntityId),
+                    C = (0, l.v9)(a.selectUsingExperiment);
                 let E = !1;
-                const I = (0, c.hC)("responsive_web_grok_general_availability");
-                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (E = "premium") : (I || k) && (E = y.length > 0 ? "restricted" : "free");
-                const F = n.useCallback(
+                const F = (0, c.hC)("responsive_web_grok_general_availability");
+                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (E = "premium") : (F || k) && (E = y.length > 0 ? "restricted" : "free");
+                const I = n.useCallback(
                         async (e, t) => {
-                            g !== e && (r(a.setMode(e)), s.ZP.isTwitterApp() || (await r((0, d.O)(e, b))), (0, p.RC)(t, e));
+                            g !== e && (s(a.setMode(e)), r.ZP.isTwitterApp() || (await s((0, d.O)(e, b))), (0, p.RC)(t, e));
                         },
-                        [r, a, g, b],
+                        [s, a, g, b],
                     ),
                     R = n.useCallback(
                         async (e, t, a) => {
-                            e !== b && (r((0, u.j1)(e, t)), s.ZP.isTwitterApp() || (await r((0, d.O)(g, e))), (0, p.JO)(a, e));
+                            e !== b && (s((0, u.j1)(e, t)), r.ZP.isTwitterApp() || (await s((0, d.O)(g, e))), (0, p.JO)(a, e));
                         },
-                        [r, g, b],
+                        [s, g, b],
                     );
-                return { messageIds: o, access: E, status: x, grokSettingsStatus: v, conversationKey: t, conversationId: w, analysisEntityId: C, accessRestrictedReasons: y, fetchConversationIdStatus: h, fetchConversationIdError: f, mode: g, model: b, changeMode: F, changeModel: R, usingExperiment: S };
+                return { messageIds: o, access: E, status: x, grokSettingsStatus: v, conversationKey: t, conversationId: w, analysisEntityId: S, accessRestrictedReasons: y, fetchConversationIdStatus: _, fetchConversationIdError: f, mode: g, model: b, changeMode: I, changeModel: R, usingExperiment: C };
             }
         },
         979512: (e, t, a) => {
-            a.d(t, { Z: () => J });
+            a.d(t, { Z: () => O });
             a(136728);
             var n = a(202784),
                 o = a(107267),
-                s = a(726426),
-                r = a.n(s),
+                r = a(726426),
+                s = a.n(r),
                 i = a(111677),
                 c = a.n(i),
                 l = a(122123),
@@ -347,8 +353,8 @@
                 d = a(292484),
                 p = a(952793),
                 m = a(782642),
-                _ = a(293115),
-                h = a(252352),
+                h = a(293115),
+                _ = a(252352),
                 f = a(125363),
                 g = a(550293),
                 x = a(511582),
@@ -357,57 +363,57 @@
                 y = a(327597),
                 k = a(189953),
                 b = a(456228),
-                C = a(551864),
-                S = a(623494),
+                S = a(551864),
+                C = a(623494),
                 E = a(461900),
-                I = a(737368),
-                F = a(654917),
+                F = a(737368),
+                I = a(654917),
                 R = a(305442);
-            const O = c().h4d7cbcc;
-            function J() {
-                const e = n.useContext(_.ge),
+            const X = c().h4d7cbcc;
+            function O() {
+                const e = n.useContext(h.ge),
                     t = n.useMemo(() => {
                         const { data: t, flushMethod: a, scribeMethod: n } = e;
-                        return new h.Z(n, { page: "grok-drawer" }, t, a);
+                        return new _.Z(n, { page: "grok-drawer" }, t, a);
                     }, [e]),
                     a = (0, u.QZ)(),
-                    s = (0, f.I0)(),
+                    r = (0, f.I0)(),
                     i = (0, m.p)(),
                     c = (0, o.useLocation)(),
-                    J = (0, p.hC)("responsive_web_grok_show_citations"),
-                    { conversationKey: P } = (0, F.ZP)(),
-                    M = (0, d.cm)(),
-                    A = !c.pathname.startsWith("/messages") && !c.pathname.match(".*/status/.+/photo/.+") && !c.pathname.startsWith("/i/grok/feed"),
-                    N = (0, o.useHistory)(),
-                    U = (0, I.k)(),
-                    Z = (0, R.Z)("drawer"),
-                    $ = (0, f.v9)(g.kX) === x.S.EXPANDED;
+                    O = (0, p.hC)("responsive_web_grok_show_citations"),
+                    { conversationKey: J } = (0, I.ZP)(),
+                    U = (0, d.cm)(),
+                    P = !c.pathname.startsWith("/messages") && !c.pathname.match(".*/status/.+/photo/.+") && !c.pathname.startsWith("/i/grok/feed"),
+                    M = (0, o.useHistory)(),
+                    A = (0, F.k)(),
+                    N = (0, R.Z)("drawer"),
+                    Z = (0, f.v9)(g.kX) === x.S.EXPANDED;
                 return {
                     openGrok: n.useCallback(
-                        async ({ autoSubmit: e, conversationId: n, imageUrl: o, isDeepsearch: u, isImageEdit: d, isReasoning: p, mediaId: m, promptMetadata: _, source: h, text: f }) => {
-                            if (!(0, E.$)(a)) return void N.push("/i/grok");
-                            let I;
-                            if ((("post_analysis_timeline" !== h && "post_analysis_details_page" !== h) || (0, S.HO)(t, "post_analysis_details_page" === h), o))
+                        async ({ autoSubmit: e, conversationId: n, imageUrl: o, isDeepsearch: u, isImageEdit: d, isReasoning: p, mediaId: m, promptMetadata: h, source: _, text: f }) => {
+                            if (!(0, E.$)(a)) return void M.push("/i/grok");
+                            let F;
+                            if ((("post_analysis_timeline" !== _ && "post_analysis_details_page" !== _) || (0, C.HO)(t, "post_analysis_details_page" === _), o))
                                 try {
                                     const e = await (0, l.o2)(o);
-                                    I = await U(e, new AbortController());
+                                    F = await A(e, new AbortController());
                                 } catch (e) {
-                                    i({ text: O });
+                                    i({ text: X });
                                 }
-                            const F = {};
-                            if ((("post_image_annotation" !== h && "post_image_annotation_fullscreen" !== h) || ((F.imageGen = !0), (0, S.u1)(t, "post_image_annotation_fullscreen" === h, m)), "grok_image_feed" === h && (F.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void s((0, y.u)({ analytics: t, conversationKey: P })({ text: f, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, returnCitations: J, promptMetadata: _, imageGenerationCount: Z, toolOverrides: F, source: h, isDeepsearch: u, isReasoning: p }));
-                            const R = n ?? r()();
+                            const I = {};
+                            if ((("post_image_annotation" !== _ && "post_image_annotation_fullscreen" !== _) || ((I.imageGen = !0), (0, C.u1)(t, "post_image_annotation_fullscreen" === _, m)), "grok_image_feed" === _ && (I.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void r((0, y.u)({ analytics: t, conversationKey: J })({ text: f, attachments: F ? [F] : void 0, mode: k.IK.REGULAR, returnCitations: O, promptMetadata: h, imageGenerationCount: N, toolOverrides: I, source: _, isDeepsearch: u, isReasoning: p }));
+                            const R = n ?? s()();
                             if (n) {
                                 const e = n || "";
-                                await s((0, w.d)(e, t));
-                            } else s((0, v.Ki)(R));
-                            if ((M && A ? ((0, S.YW)(t, h), $ && s(g.bi(x.S.COLLAPSED)), s((0, b.bi)(C.j.EXPANDED))) : N.push("/i/grok"), e)) s((0, y.u)({ analytics: t, conversationKey: R })({ text: f, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, promptMetadata: _, returnCitations: J, imageGenerationCount: Z, toolOverrides: F, source: h, isDeepsearch: u, isReasoning: p }));
+                                await r((0, w.d)(e, t));
+                            } else r((0, v.Ki)(R));
+                            if ((U && P ? ((0, C.YW)(t, _), Z && r(g.bi(x.S.COLLAPSED)), r((0, b.bi)(S.j.EXPANDED))) : M.push("/i/grok"), e)) r((0, y.u)({ analytics: t, conversationKey: R })({ text: f, attachments: F ? [F] : void 0, mode: k.IK.REGULAR, promptMetadata: h, returnCitations: O, imageGenerationCount: N, toolOverrides: I, source: _, isDeepsearch: u, isReasoning: p }));
                             else {
-                                const e = { text: f, attachments: I ? [I] : [] };
-                                d && I ? (e.modeButtonFilterKey = "ImageEdit") : u ? (e.modeButtonFilterKey = "Research") : p && (e.modeButtonFilterKey = "Reasoning"), s((0, v.Uo)(R, e));
+                                const e = { text: f, attachments: F ? [F] : [] };
+                                d && F ? (e.modeButtonFilterKey = "ImageEdit") : u ? (e.modeButtonFilterKey = "Research") : p && (e.modeButtonFilterKey = "Reasoning"), r((0, v.Uo)(R, e));
                             }
                         },
-                        [$, i, s, t, a, N, U, M, P, J, A, c.pathname, Z],
+                        [Z, i, r, t, a, M, A, U, J, O, P, c.pathname, N],
                     ),
                 };
             }
@@ -420,108 +426,108 @@
             }
         },
         623494: (e, t, a) => {
-            a.d(t, { DE: () => _, G$: () => i, HO: () => E, HR: () => O, JO: () => g, Jm: () => C, NH: () => J, RC: () => f, S7: () => R, UV: () => M, Uk: () => k, YI: () => u, YW: () => F, ZY: () => h, az: () => c, c3: () => r, dP: () => v, dd: () => m, eS: () => b, eV: () => S, hf: () => x, hq: () => l, kl: () => y, mm: () => p, op: () => w, pv: () => s, qQ: () => N, u1: () => I, y6: () => d, zC: () => P, zX: () => A });
+            a.d(t, { DE: () => h, G$: () => i, HO: () => E, HR: () => X, JO: () => g, Jm: () => S, NH: () => O, RC: () => f, S7: () => R, UV: () => U, Uk: () => k, YI: () => u, YW: () => I, ZY: () => _, az: () => c, c3: () => s, dP: () => v, dd: () => m, eS: () => b, eV: () => C, hf: () => x, hq: () => l, kl: () => y, mm: () => p, op: () => w, pv: () => r, qQ: () => M, u1: () => F, y6: () => d, zC: () => J, zX: () => P });
             var n = a(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
             }
-            function s(e, t) {
-                U(e)({ element: "api-add-response", action: "start", data: { event_info: JSON.stringify(t) } });
-            }
             function r(e, t) {
-                U(e)({ element: "api-add-response-regenerate", action: "start", data: { event_info: JSON.stringify(t) } });
+                A(e)({ element: "api-add-response", action: "start", data: { event_info: JSON.stringify(t) } });
+            }
+            function s(e, t) {
+                A(e)({ element: "api-add-response-regenerate", action: "start", data: { event_info: JSON.stringify(t) } });
             }
             function i(e, t) {
-                U(e)({ element: "selected-side-by-side", action: "click", data: { event_info: JSON.stringify(t) } });
+                A(e)({ element: "selected-side-by-side", action: "click", data: { event_info: JSON.stringify(t) } });
             }
             function c(e, t, a) {
-                U(e)({ element: "client-home-log", action: t, data: { event_info: JSON.stringify(a) } });
+                A(e)({ element: "client-home-log", action: t, data: { event_info: JSON.stringify(a) } });
             }
             function l(e, t) {
-                U(e)({ element: "deepsearch-premature-stream-close-log", action: "error", data: { event_info: JSON.stringify({ errorMessage: t.errorMessage }), duration_ms: t.durationMs } });
+                A(e)({ element: "deepsearch-premature-stream-close-log", action: "error", data: { event_info: JSON.stringify({ errorMessage: t.errorMessage }), duration_ms: t.durationMs } });
             }
             function u(e, t) {
-                U(e)({ element: "deepsearch-premature-manual-stream-stop", action: "click", data: { event_info: JSON.stringify(t.messageTagCounts), duration_ms: t.durationMs } });
+                A(e)({ element: "deepsearch-premature-manual-stream-stop", action: "click", data: { event_info: JSON.stringify(t.messageTagCounts), duration_ms: t.durationMs } });
             }
             function d(e, t) {
-                U(e)({ element: "deepsearch-duration", action: "complete", data: { duration_ms: t } });
+                A(e)({ element: "deepsearch-duration", action: "complete", data: { duration_ms: t } });
             }
             function p(e, t, a) {
-                U(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: t, error: a }) } });
+                A(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: t, error: a }) } });
             }
             function m(e, t) {
-                U(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(t) } });
-            }
-            function _(e) {
-                U(e)({ element: "abort", action: "click" });
+                A(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(t) } });
             }
             function h(e) {
-                U(e)({ element: "clear-conversation", action: "click" });
+                A(e)({ element: "abort", action: "click" });
+            }
+            function _(e) {
+                A(e)({ element: "clear-conversation", action: "click" });
             }
             function f(e, t) {
-                U(e)({ element: "grok_mode", action: "change", data: { event_info: t } });
+                A(e)({ element: "grok_mode", action: "change", data: { event_info: t } });
             }
             function g(e, t) {
-                U(e)({ element: "grok_model", action: "change", data: { event_info: t } });
+                A(e)({ element: "grok_model", action: "change", data: { event_info: t } });
             }
             function x(e, t) {
-                U(e)({ element: "tweet-carousel", action: "change", data: { event_info: t.toString() } });
+                A(e)({ element: "tweet-carousel", action: "change", data: { event_info: t.toString() } });
             }
             function v(e, t) {
-                U(e)({ element: "file-attachment", action: "add", data: { event_info: t } });
+                A(e)({ element: "file-attachment", action: "add", data: { event_info: t } });
             }
             function w(e, t) {
-                U(e)({ element: "file-attachment", action: "fail", data: { event_info: t } });
+                A(e)({ element: "file-attachment", action: "fail", data: { event_info: t } });
             }
             function y(e, t, a) {
-                U(e)({ element: "api-add-response", action: "error", data: { event_info: `${t.message}\n${t.stack}\n${o()}` } }), (0, n.Hj)(t, { level: "warning", extra: a });
+                A(e)({ element: "api-add-response", action: "error", data: { event_info: `${t.message}\n${t.stack}\n${o()}` } }), (0, n.Hj)(t, { level: "warning", extra: a });
             }
             function k(e, t) {
-                U(e)({ element: "api-add-response", action: "fail", data: { event_info: `${t}\n${o()}` } });
+                A(e)({ element: "api-add-response", action: "fail", data: { event_info: `${t}\n${o()}` } });
             }
             function b(e, t) {
-                U(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: t ? "first_chunk" : void 0 } });
+                A(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: t ? "first_chunk" : void 0 } });
             }
-            function C(e) {
-                U(e)({ element: "file-upload", action: "success" });
+            function S(e) {
+                A(e)({ element: "file-upload", action: "success" });
             }
-            function S(e, t) {
-                U(e)({ element: "file-upload", action: "fail", data: { event_info: t } });
+            function C(e, t) {
+                A(e)({ element: "file-upload", action: "fail", data: { event_info: t } });
             }
             function E(e, t) {
-                U(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: t ? "post_details" : "timeline" } });
+                A(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: t ? "post_details" : "timeline" } });
             }
-            function I(e, t, a) {
-                U(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: t ? "post_details" : "timeline", event_info: a ? JSON.stringify({ mediaId: a }) : void 0 } });
+            function F(e, t, a) {
+                A(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: t ? "post_details" : "timeline", event_info: a ? JSON.stringify({ mediaId: a }) : void 0 } });
             }
-            function F(e, t) {
-                U(e)({ element: "grok-drawer-open", action: "success", data: { event_source: t } });
+            function I(e, t) {
+                A(e)({ element: "grok-drawer-open", action: "success", data: { event_source: t } });
             }
             function R(e, t) {
-                U(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant }) } });
+                A(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant }) } });
             }
-            function O(e, t, a) {
-                U(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant, followUpText: a }) } });
+            function X(e, t, a) {
+                A(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant, followUpText: a }) } });
             }
-            function J(e) {
-                U(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
+            function O(e) {
+                A(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
-            function P(e, t) {
-                U(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
+            function J(e, t) {
+                A(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
+            }
+            function U(e, t) {
+                A(e)({ element: "grok-memory-forget", action: "click", data: { event_info: t } });
+            }
+            function P(e, t, a) {
+                A(e)({ element: "grok-memory-forget", action: "error", data: { event_info: JSON.stringify({ conversationId: t, error: a }) } });
             }
             function M(e, t) {
-                U(e)({ element: "grok-memory-forget", action: "click", data: { event_info: t } });
+                A(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
             }
-            function A(e, t, a) {
-                U(e)({ element: "grok-memory-forget", action: "error", data: { event_info: JSON.stringify({ conversationId: t, error: a }) } });
-            }
-            function N(e, t) {
-                U(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
-            }
-            const U = (e) => (t) => {
+            const A = (e) => (t) => {
                 e.scribe({ ...t, data: { url: window.location.href, ...t.data } });
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6ac0f1a5.88fa93fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6ac0f1a5.7a7482da.js.map

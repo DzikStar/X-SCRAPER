@@ -16,24 +16,22 @@
             const p = (0, l.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.0"),
-                            a.e("icons.5"),
-                            a.e("icons.12"),
-                            a.e("icons.20"),
-                            a.e("icons.2"),
-                            a.e("icons.21"),
-                            a.e("icons.28"),
-                            a.e("icons.10"),
-                            a.e("icons.17"),
-                            a.e("icons.9"),
                             a.e("icons.23"),
+                            a.e("icons.0"),
+                            a.e("icons.2"),
+                            a.e("icons.16"),
+                            a.e("icons.19"),
+                            a.e("icons.10"),
+                            a.e("icons.13"),
+                            a.e("icons.24"),
+                            a.e("icons.7"),
+                            a.e("icons.22"),
+                            a.e("icons.27"),
+                            a.e("icons.17"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.22"),
-                            a.e("icons.24"),
-                            a.e("icons.14"),
-                            a.e("icons.25"),
-                            a.e("icons.13"),
+                            a.e("icons.11"),
+                            a.e("icons.26"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -44,24 +42,26 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.6"),
-                            a.e("icons.3"),
-                            a.e("icons.4"),
-                            a.e("icons.1"),
                             a.e("icons.8"),
+                            a.e("icons.4"),
+                            a.e("icons.14"),
+                            a.e("icons.28"),
+                            a.e("icons.21"),
+                            a.e("icons.3"),
+                            a.e("icons.1"),
                             a.e("icons.18"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -79,6 +79,7 @@
                             a.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                             a.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                             a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                             a.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -105,7 +106,7 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-214ae749"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2c2ff023"),
                             a.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
-                            a.e("bundle.Settings-bc6ccf4c"),
+                            a.e("bundle.Settings-e907d115"),
                             a.e("bundle.Settings-9f4db315"),
                             a.e("bundle.Settings-63cb1cc4"),
                         ]).then(a.bind(a, 855632)),
@@ -167,8 +168,8 @@
                 D = a(267966);
             const y = { aboutScreen: "aboutScreen" },
                 S = p().cedbb01c,
-                E = p().b4f917d0,
-                w = p().bdfa2b8c,
+                w = p().b4f917d0,
+                E = p().bdfa2b8c,
                 Z = p().b8692262,
                 _ = p().c0398892;
             function k(e) {
@@ -189,7 +190,7 @@
                     null,
                     n.createElement(
                         f.Z,
-                        { location: t, screenType: "primaryDetail", title: w },
+                        { location: t, screenType: "primaryDetail", title: E },
                         n.createElement(
                             r.Z,
                             { testID: y.aboutScreen },
@@ -200,7 +201,7 @@
                             u.map((e, t) => n.createElement(l.Z, { key: e.text, label: e.text, link: { external: !0, pathname: e.link } })),
                             g.map((e) => n.createElement(c.ZP, { color: "gray700", key: e.text, size: "subtext2", style: [D.Z.infoText, D.Z.bottomBorder] }, e.text)),
                             n.createElement(i.Z, null),
-                            n.createElement(o.Z, { text: E }),
+                            n.createElement(o.Z, { text: w }),
                             p.map((e, t) => n.createElement(l.Z, { key: e.text, label: e.text, link: { external: !0, pathname: e.link } })),
                         ),
                     ),
@@ -228,8 +229,8 @@
                 D = a(697702),
                 y = a(961817),
                 S = a(264922),
-                E = a(669504),
-                w = a(228149),
+                w = a(669504),
+                E = a(228149),
                 Z = a(71620),
                 _ = a(668214),
                 k = a(38562),
@@ -275,7 +276,7 @@
                             const { analytics: a, createLocalApiErrorHandler: n, updateSettings: r } = this.props;
                             a.scribe({ element: e, action: t ? "on" : "off" }), r({ [e]: t }).catch(n({ showToast: !0 }));
                         }),
-                        (this._showVideoAutoplaySetting = (0, w.Z)());
+                        (this._showVideoAutoplaySetting = (0, E.Z)());
                 }
                 componentDidMount() {
                     const { fetchAltTextPromptPreferenceIfNeeded: e } = this.props;
@@ -286,7 +287,7 @@
                         h = window.matchMedia && window.matchMedia("(prefers-reduced-motion)").matches,
                         m = this._showAltTextPromptPreferenceSetting,
                         g = d ?? (0, y.i)();
-                    return n.createElement(f.Z, null, n.createElement(S.Z, { location: o, screenType: "secondaryDetail", title: x }, n.createElement(r.Z, { testID: P }, n.createElement(s.Z, { description: T }), n.createElement(i.Z, { text: I }), n.createElement(c.Z, { checked: a, helpText: R, label: L, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: v }), n.createElement(c.Z, { checked: l || h, disabled: h, helpText: h ? F : N, label: z, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: E.Z[g], disabled: t, label: V, link: "/settings/autoplay" })) : null, m ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: B }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === D.f.Prompt, helpText: O, label: H, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: j }), n.createElement(b.b, { label: U, link: W }))));
+                    return n.createElement(f.Z, null, n.createElement(S.Z, { location: o, screenType: "secondaryDetail", title: x }, n.createElement(r.Z, { testID: P }, n.createElement(s.Z, { description: T }), n.createElement(i.Z, { text: I }), n.createElement(c.Z, { checked: a, helpText: R, label: L, name: "highContrastEnabled", onChange: this._handleHighContrastChanged })), this._showVideoAutoplaySetting ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: v }), n.createElement(c.Z, { checked: l || h, disabled: h, helpText: h ? F : N, label: z, name: "reducedMotionEnabled", onChange: this._handleReducedMotionChanged }), n.createElement(p.Z, { description: w.Z[g], disabled: t, label: V, link: "/settings/autoplay" })) : null, m ? n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: B }), this._showAltTextPromptPreferenceSetting ? n.createElement(c.Z, { checked: e === D.f.Prompt, helpText: O, label: H, name: "altTextNudgeType", onChange: this._handleAltTextNudgeTypeChanged }) : null) : null, n.createElement(r.Z, null, n.createElement(u.Z, null), n.createElement(i.Z, { text: j }), n.createElement(b.b, { label: U, link: W }))));
                 }
             }
             G.contextType = g.rC;
@@ -315,8 +316,8 @@
                     .propsFromState(() => ({ dataSaverMode: y.IX, videoAutoplay: y.oO }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("DATA_USAGE_SETTINGS_SCREEN"), fetchDataUsageSettingsIfNeeded: y.MJ, updateDataSaverMode: y.Nb, updateSettings: D.VP }))
                     .withAnalytics({ page: "settings", section: "data" }),
-                E = "dataSaverBooleanItem",
-                w = s().eafe3288,
+                w = "dataSaverBooleanItem",
+                E = s().eafe3288,
                 Z = s().cc2973a8,
                 _ = s().a57a341c,
                 k = s().ab6505a8,
@@ -337,7 +338,7 @@
                 render() {
                     const { dataSaverMode: e, location: t, videoAutoplay: a } = this.props,
                         d = a ?? (0, p.i)();
-                    return n.createElement(c.Z, null, n.createElement(h.Z, { location: t, screenType: "secondaryDetail", title: w }, n.createElement(r.Z, { description: Z }), n.createElement(o.Z, { checked: e, helpText: k, label: _, name: "dataSaverMode", onChange: this._handleDataSaverChanged, testID: E }), this._showVideoAutoplaySetting && n.createElement(l.Z, { description: m.Z[d], disabled: e, label: M, link: "/settings/autoplay" })));
+                    return n.createElement(c.Z, null, n.createElement(h.Z, { location: t, screenType: "secondaryDetail", title: E }, n.createElement(r.Z, { description: Z }), n.createElement(o.Z, { checked: e, helpText: k, label: _, name: "dataSaverMode", onChange: this._handleDataSaverChanged, testID: w }), this._showVideoAutoplaySetting && n.createElement(l.Z, { description: m.Z[d], disabled: e, label: M, link: "/settings/autoplay" })));
                 }
             }
             A.contextType = i.rC;
@@ -363,11 +364,11 @@
             const D = "aboutText",
                 y = c().c4881c66,
                 S = c().a257ecae,
-                E = c().ce494bb4,
-                w = c().c783d45e,
+                w = c().ce494bb4,
+                E = c().c783d45e,
                 Z = c().h306a358,
                 _ = { page: "settings", section: "display" },
-                k = ({ location: e }) => n.createElement(g.nO, { namespace: _ }, n.createElement(u.Z, null, n.createElement(f.Z, { location: e, screenType: "secondaryDetail", title: y }, n.createElement(o.ZP, { color: "gray700", size: "subtext2", style: M.aboutText, testID: D }, S), n.createElement(b.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: E }), n.createElement(p.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: w }), n.createElement(r.Z, { style: M.colorPicker }, n.createElement(m.Z, null)), n.createElement(l.Z, null), n.createElement(d.Z, { text: Z }), n.createElement(r.Z, { style: M.backgroundPicker }, n.createElement(h.Z, null))))),
+                k = ({ location: e }) => n.createElement(g.nO, { namespace: _ }, n.createElement(u.Z, null, n.createElement(f.Z, { location: e, screenType: "secondaryDetail", title: y }, n.createElement(o.ZP, { color: "gray700", size: "subtext2", style: M.aboutText, testID: D }, S), n.createElement(b.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: w }), n.createElement(p.Z, null), n.createElement(l.Z, null), n.createElement(d.Z, { text: E }), n.createElement(r.Z, { style: M.colorPicker }, n.createElement(m.Z, null)), n.createElement(l.Z, null), n.createElement(d.Z, { text: Z }), n.createElement(r.Z, { style: M.backgroundPicker }, n.createElement(h.Z, null))))),
                 M = s.default.create((e) => ({ aboutText: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, backgroundPicker: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space4 }, colorPicker: { paddingVertical: e.spaces.space4 } })),
                 A = k;
         },
@@ -411,8 +412,8 @@
                 D = i().gee8110e,
                 y = i().c326f156,
                 S = i().c9fe9b56,
-                E = i().j54b679b,
-                w = i().ac63840d,
+                w = i().j54b679b,
+                E = i().ac63840d,
                 Z = i().bcd9b0ed;
             class _ extends n.Component {
                 constructor(...e) {
@@ -438,14 +439,14 @@
                             onConfirm: t,
                             url: { size_b: a, url: o },
                         } = this.props,
-                        d = E({ size: _.getSizeLabel(a) }),
+                        d = w({ size: _.getSizeLabel(a) }),
                         s = e ? y : D;
                     return n.createElement(r.Z, null, this._shouldDisplayConfirmation ? n.createElement(r.Z, null, n.createElement(l.ZP, { disabled: e, onPress: this._handleNeedsConfirmationActionCellPress, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, s), this.state.showConfirmation && !e ? n.createElement(u.Z, { cancelButtonLabel: g, confirmButtonLabel: f, confirmButtonLink: { pathname: (0, p.ju)(o) || "", external: !0 }, headline: S, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: d }) : null) : n.createElement(l.ZP, { disabled: e, link: o ? { pathname: (0, p.ju)(o), external: !0 } : void 0, onPress: t, size: "small", style: b.Z.narrowButton, type: "brandFilled" }, s));
                 }
             }
             _.getSizeLabel = (e) => {
                 const t = Number(e) / 1024;
-                return t < 1024 ? w({ size: h.ZP.getFormattedCount(t) }) : Z({ size: h.ZP.getFormattedCount(Math.round(t / 1024)) });
+                return t < 1024 ? E({ size: h.ZP.getFormattedCount(t) }) : Z({ size: h.ZP.getFormattedCount(Math.round(t / 1024)) });
             };
             var k = a(264922),
                 M = a(569291),
@@ -547,8 +548,8 @@
                 .propsFromState(() => ({ videoAutoplay: y.oO, dataSaverMode: y.IX }))
                 .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("DATA_USAGE_SETTINGS_SCREEN"), updateVideoAutoplay: y.Qo }))
                 .withAnalytics({ page: "settings", section: "autoplay" });
-            var E = a(228149);
-            const w = i().a776eed8,
+            var w = a(228149);
+            const E = i().a776eed8,
                 Z = i().ede134f2,
                 _ = i().i859a9d4,
                 k = (0, o.ju)("https://help.x.com/using-twitter/twitter-videos"),
@@ -563,7 +564,7 @@
                 }
                 componentDidMount() {
                     const { dataSaverMode: e } = this.props;
-                    (!e && (0, E.Z)()) || this.props.history.replace("/settings/data");
+                    (!e && (0, w.Z)()) || this.props.history.replace("/settings/data");
                 }
                 _getOptions(e) {
                     const t = [];
@@ -572,7 +573,7 @@
                 render() {
                     const { location: e, videoAutoplay: t } = this.props,
                         a = t ?? (0, m.i)();
-                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, title: w }, n.createElement(r.Z, null, n.createElement(l.Z, { description: n.createElement(n.Fragment, null, `${Z} `, n.createElement(d.ZP, { link: k }, _)), label: w, name: "video_autoplay", onChange: this._handleItemChanged, options: this._getOptions(a), value: a }))));
+                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, title: E }, n.createElement(r.Z, null, n.createElement(l.Z, { description: n.createElement(n.Fragment, null, `${Z} `, n.createElement(d.ZP, { link: k }, _)), label: E, name: "video_autoplay", onChange: this._handleItemChanged, options: this._getOptions(a), value: a }))));
                 }
             }
             A.contextType = c.rC;
@@ -586,7 +587,7 @@
             }
         },
         264922: (e, t, a) => {
-            a.d(t, { Z: () => E });
+            a.d(t, { Z: () => w });
             var n = a(202784),
                 r = a(108362),
                 o = a(420412),
@@ -638,7 +639,7 @@
             }
             y.defaultProps = { submitLabel: D, submitType: "brandFilled", withMarginBottom: !0 };
             const S = d.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${d.default.iPhoneOffsetBottom})` } })),
-                E = g(y);
+                w = g(y);
         },
         569291: (e, t, a) => {
             a.d(t, { Z: () => p });
@@ -709,8 +710,8 @@
                 D = a(664918),
                 y = a(652904),
                 S = a(880647),
-                E = a(918621),
-                w = a(528603),
+                w = a(918621),
+                E = a(528603),
                 Z = (a(136728), a(107267)),
                 _ = a(457311),
                 k = a(392237),
@@ -754,9 +755,9 @@
                             let a = !1;
                             Array.isArray(t.items) &&
                                 t.items.forEach((n) => {
-                                    (0, w.Ik)(D, n) && (a || ((a = !0), T({ results: e, setting: t, type: "setting_group" })), T({ results: e, setting: n, type: "setting" }));
+                                    (0, E.Ik)(D, n) && (a || ((a = !0), T({ results: e, setting: t, type: "setting_group" })), T({ results: e, setting: n, type: "setting" }));
                                 }),
-                                !a && (0, w.Ik)(D, t) && T({ results: e, setting: t, type: "setting_group" });
+                                !a && (0, E.Ik)(D, t) && T({ results: e, setting: t, type: "setting_group" });
                         }
                         g(e), D !== u && (p(D), f(e.length));
                     } else g([]);
@@ -764,7 +765,7 @@
                 const S = n.useCallback(() => {
                         a(!1);
                     }, [a]),
-                    E = n.useCallback(() => {
+                    w = n.useCallback(() => {
                         a(!0);
                     }, [a]),
                     k = n.useCallback(() => {
@@ -789,7 +790,7 @@
                     inputStyle: H.input,
                     items: b,
                     onBackClicked: (0, C.ZP)() ? S : void 0,
-                    onClick: E,
+                    onClick: w,
                     onFocus: k,
                     onItemClick: (e) => {
                         if ("setting" === e.type || "setting_group" === e.type) {
@@ -844,8 +845,8 @@
                 De = h().bdfa2b8c,
                 ye = h().ea848de8,
                 Se = h().df483b48,
-                Ee = h().bd05add8,
-                we = h().c818c60c,
+                we = h().bd05add8,
+                Ee = h().c818c60c,
                 Ze = h().d299431c,
                 _e = h().f75d1806,
                 ke = h().gaac710a,
@@ -872,7 +873,7 @@
                 }, [e, e.viewerUser]);
                 const d = (0, b.Z)(),
                     p = () => {
-                        const e = (0, E.Xh)(r.b7, t.featureSwitches);
+                        const e = (0, w.Xh)(r.b7, t.featureSwitches);
                         return n.createElement(o.Z, { testID: ee.loggedOutPrivacySection }, n.createElement(i.Z, { text: ie }), n.createElement(g.Z, { description: e ? x() : void 0, label: ce, link: "/settings/account/personalization" }), n.createElement(g.Z, { label: ue, link: "/settings/your_twitter_data" }), t.featureSwitches.isTrue("responsive_web_cookie_compliance_banner_enabled") ? n.createElement(g.Z, { description: me, label: he, link: "/settings/cookie_preferences" }) : null, n.createElement(c.ZP, { style: K.Z.descriptionText }, pe), Z(), n.createElement(Pe, null));
                     },
                     { delegateRole: h } = e,
@@ -890,24 +891,24 @@
                     _ = () => (e.withEditableFSes ? n.createElement(n.Fragment, null, n.createElement(g.Z, { label: Se, link: "/settings/feature_switches" }), n.createElement(g.Z, { label: ye, link: "/settings/earlybird_settings" })) : null),
                     k = () => {
                         const { userClaims: e } = t;
-                        return e.hasSubscription("one_dollar") ? n.createElement(g.Z, { label: Ee, link: "/settings/not_a_bot" }) : null;
+                        return e.hasSubscription("one_dollar") ? n.createElement(g.Z, { label: we, link: "/settings/not_a_bot" }) : null;
                     },
                     M = () => {
                         const { searchIndex: a } = e,
                             { featureSwitches: r, userClaims: o } = t,
-                            l = a.find((e) => e.id === w.VZ.TwitterBlue)?.path;
+                            l = a.find((e) => e.id === E.VZ.TwitterBlue)?.path;
                         if (o.isAnyPremiumSubscriber() || (!o.isAnyPremiumSubscriber() && r.isTrue("subscriptions_sign_up_enabled"))) return l ? n.createElement(g.Z, { label: _e, link: l }) : null;
                     },
                     A = (a) => {
                         const { featureSwitches: r } = t,
                             { searchIndex: o } = e,
-                            l = o.find((e) => e.id === w.VZ.Analytics)?.path;
-                        if (a && r.isTrue("subscriptions_upsells_settings_analytics_upsell_enabled")) return l ? n.createElement(g.Z, { label: we, link: l }) : null;
+                            l = o.find((e) => e.id === E.VZ.Analytics)?.path;
+                        if (a && r.isTrue("subscriptions_upsells_settings_analytics_upsell_enabled")) return l ? n.createElement(g.Z, { label: Ee, link: l }) : null;
                     },
                     C = () => {
                         const { searchIndex: a } = e,
                             { featureSwitches: r } = t,
-                            o = a.find((e) => e.id === w.VZ.Subscription)?.path;
+                            o = a.find((e) => e.id === E.VZ.Subscription)?.path;
                         if (r.isTrue("responsive_web_subscriptions_setting_enabled")) return o ? n.createElement(g.Z, { label: Me, link: o }) : null;
                     },
                     P = () => (t.featureSwitches.isTrue("report_center_mvp_r2_enabled") ? n.createElement(g.Z, { label: ke, link: "/settings/report-center" }) : null),
@@ -953,4 +954,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-63cb1cc4.a2b6287a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-63cb1cc4.e87758fa.js.map

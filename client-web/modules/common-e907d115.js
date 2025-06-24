@@ -130,7 +130,7 @@
                     const { "aria-label": e, editable: t, errorText: n, helperText: i, style: r } = this.props,
                         { isFocused: a } = this.state,
                         l = this._isFormInvalid();
-                    return s.createElement(o.Z, { style: [I.root, r] }, s.createElement(o.Z, { "aria-label": e, role: "label", style: [g.Z.border, I.textInputFormStyle, l && g.Z.invalidBorderColor, a && l && g.Z.focusedBorderInvalid, a && !l && g.Z.focusedBorderValid, !t && g.Z.disabled] }, s.createElement(o.Z, { style: I.textInputFormWrapper }, s.createElement(o.Z, { style: I.textInputHeader }, this._renderLabel(), this._shouldRenderDisplayCount() ? this._renderDisplayCount() : null), this._renderTextInput())), s.createElement(o.Z, { style: [I.sidePadding, I.underTextInputForm] }, s.createElement(o.Z, { style: I.subtextWrapper }, i ? this._renderHelperText() : null, l && n ? this._renderErrorText() : null)));
+                    return s.createElement(o.Z, { style: [k.root, r] }, s.createElement(o.Z, { "aria-label": e, role: "label", style: [g.Z.border, k.textInputFormStyle, l && g.Z.invalidBorderColor, a && l && g.Z.focusedBorderInvalid, a && !l && g.Z.focusedBorderValid, !t && g.Z.disabled] }, s.createElement(o.Z, { style: k.textInputFormWrapper }, s.createElement(o.Z, { style: k.textInputHeader }, this._renderLabel(), this._shouldRenderDisplayCount() ? this._renderDisplayCount() : null), this._renderTextInput())), s.createElement(o.Z, { style: [k.sidePadding, k.underTextInputForm] }, s.createElement(o.Z, { style: k.subtextWrapper }, i ? this._renderHelperText() : null, l && n ? this._renderErrorText() : null)));
                 }
                 _renderLabel() {
                     const { label: e } = this.props,
@@ -138,22 +138,22 @@
                         n = t ? "primary" : "gray700",
                         i = this._isFormInvalid() ? "red500" : n,
                         r = this._isLabelLarge();
-                    return s.createElement(y.ZP, { color: r ? "gray700" : i, numberOfLines: 1, size: r ? "headline1" : "subtext2", style: [I.textInputHeaderItem, r && I.placeholderText, !b.Z.reducedMotionEnabled && I.transition] }, e);
+                    return s.createElement(y.ZP, { color: r ? "gray700" : i, numberOfLines: 1, size: r ? "headline1" : "subtext2", style: [k.textInputHeaderItem, r && k.placeholderText, !b.Z.reducedMotionEnabled && k.transition] }, e);
                 }
                 _renderTextInput() {
-                    const { Icon: e, "aria-label": t, calculateLength: n, editable: r, endContent: a, errorText: l, helperText: c, invalid: h, label: d, maxLength: u, onBlur: p, onChange: m, onFocus: g, onKeyDown: b, onKeyPress: _, onKeyUp: f, onSubmitEditing: v, showPasswordVisibilityIcon: C, showValidationIcon: T, startContent: S, style: w, type: I, validLength: k, ...R } = this.props;
+                    const { Icon: e, "aria-label": t, calculateLength: n, editable: r, endContent: a, errorText: l, helperText: c, invalid: h, label: d, maxLength: u, onBlur: p, onChange: m, onFocus: g, onKeyDown: b, onKeyPress: _, onKeyUp: f, onSubmitEditing: v, showPasswordVisibilityIcon: C, showValidationIcon: T, startContent: S, style: w, type: k, validLength: I, ...R } = this.props;
                     return s.createElement(o.Z, { style: L.container }, e && !this._isLabelLarge() ? this._renderIcon() : null, S ? this._renderStartContent() : null, s.createElement(y.ZP, { size: "headline1", style: L.wrapper }, s.createElement(x.Z, (0, i.Z)({}, R, { editable: r, maxLength: this._getAdjustedMaxLength(), onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, onKeyDown: this._handleKeyDown, onKeyPress: this._handleKeyPress, onKeyUp: this._handleKeyUp, ref: this._setTextInputRef, style: this._getTextInputStyle(r), type: this._getTextInputType() }))), a ? this._renderEndContent() : null, T && !this._isLabelLarge() ? this._renderValidationIcon() : null, this._renderPasswordVisibilityIcon());
                 }
                 _renderPasswordVisibilityIcon() {
                     const { showPasswordVisibilityIcon: e, type: t } = this.props,
                         { isPasswordRevealed: n } = this.state;
-                    return "password" === t && e ? s.createElement(o.Z, { style: I.passwordVisibilityIconContainer }, s.createElement(_.ZP, { "aria-label": n ? S : T, focusable: !0, hoverLabel: { label: n ? S : T }, icon: n ? s.createElement(h.default, null) : s.createElement(d.default, null), onPress: this._handlePasswordVisibilityClick, size: "smallCompact", type: "primaryText" })) : null;
+                    return "password" === t && e ? s.createElement(o.Z, { style: k.passwordVisibilityIconContainer }, s.createElement(_.ZP, { "aria-label": n ? S : T, focusable: !0, hoverLabel: { label: n ? S : T }, icon: n ? s.createElement(h.default, null) : s.createElement(d.default, null), onPress: this._handlePasswordVisibilityClick, size: "smallCompact", type: "primaryText" })) : null;
                 }
                 _renderHelperText() {
-                    return s.createElement(o.Z, { "aria-live": "polite" }, s.createElement(y.ZP, { color: "gray700", size: "subtext2", style: I.subtext }, this.props.helperText));
+                    return s.createElement(o.Z, { "aria-live": "polite" }, s.createElement(y.ZP, { color: "gray700", size: "subtext2", style: k.subtext }, this.props.helperText));
                 }
                 _renderErrorText() {
-                    return s.createElement(o.Z, { "aria-live": "assertive" }, s.createElement(y.ZP, { color: "red500", size: "subtext2", style: I.subtext }, this.props.errorText));
+                    return s.createElement(o.Z, { "aria-live": "assertive" }, s.createElement(y.ZP, { color: "red500", size: "subtext2", style: k.subtext }, this.props.errorText));
                 }
                 _renderDisplayCount() {
                     const { displayCount: e } = this.state,
@@ -161,12 +161,12 @@
                         n = this._exceedsValidLength(e),
                         i = t && c().ia24dc8d(t),
                         r = c().ia24dc8d(e);
-                    return s.createElement(o.Z, { "aria-live": "polite", style: [I.textInputHeaderItem, I.displayCount] }, s.createElement(y.ZP, { color: n ? "red500" : "gray700", size: "subtext2" }, i ? `${r} / ${i}` : ""));
+                    return s.createElement(o.Z, { "aria-live": "polite", style: [k.textInputHeaderItem, k.displayCount] }, s.createElement(y.ZP, { color: n ? "red500" : "gray700", size: "subtext2" }, i ? `${r} / ${i}` : ""));
                 }
                 _renderIcon() {
                     const { Icon: e } = this.props,
                         { isFocused: t } = this.state,
-                        n = [I.icon, t && I.focusedIcon];
+                        n = [k.icon, t && k.focusedIcon];
                     return e && s.createElement(e, { style: n });
                 }
                 _renderStartContent() {
@@ -178,7 +178,7 @@
                     return e;
                 }
                 _renderValidationIcon() {
-                    return this._isFormInvalid() ? s.createElement(u.default, { style: [I.validationIcon, g.Z.invalidColor] }) : s.createElement(p.default, { style: [I.validationIcon, g.Z.validIconColor] });
+                    return this._isFormInvalid() ? s.createElement(u.default, { style: [k.validationIcon, g.Z.invalidColor] }) : s.createElement(p.default, { style: [k.validationIcon, g.Z.validIconColor] });
                 }
                 _isFormInvalid() {
                     const { displayCount: e } = this.state;
@@ -201,52 +201,65 @@
             }
             w.defaultProps = { autoComplete: "on", autoCorrect: !0, autoFocus: !1, editable: !0, invalid: !1 };
             const L = f.default.create((e) => ({ container: { flexDirection: "row", flexGrow: 1, flexShrink: 1, overflow: "hidden", paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space12, marginTop: e.spaces.space16 }, root: { backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, boxSizing: "border-box", color: "inherit", fontFamily: "inherit", fontSize: "inherit", textAlign: "inherit", outlineStyle: "none", padding: 0 }, wrapper: { alignItems: "center", display: "flex", fontSize: e.fontSizes.headline2, width: "100%" }, disabled: { color: e.colors.gray700 } })),
-                I = f.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, textInputFormStyle: { flexDirection: "row" }, textInputFormWrapper: { flexGrow: 1, flexShrink: 1 }, textInputHeader: { flexDirection: "row", justifyContent: "space-between", position: "absolute", height: "100%", width: "100%" }, textInputHeaderItem: { paddingTop: e.spaces.space8, paddingHorizontal: e.spaces.space8, fontSize: "small" }, placeholderText: { paddingTop: e.spaces.space16, fontSize: e.fontSizes.headline2, userSelect: "none" }, displayCount: { flexGrow: 1, alignItems: "flex-end" }, sidePadding: { paddingHorizontal: e.spaces.space8 }, underTextInputForm: { flexDirection: "row" }, subtextWrapper: { flexDirection: "column", flex: 1, paddingEnd: e.spaces.space20, paddingTop: e.spaces.space4 }, subtext: { alignSelf: "flex-start" }, focusedIcon: { color: e.colors.primary }, icon: { alignSelf: "center", color: e.colors.gray700, paddingEnd: e.spaces.space4 }, validationIcon: { alignSelf: "center", paddingStart: e.spaces.space4 }, transition: { transition: "transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), font-size 150ms cubic-bezier(0.4, 0, 0.2, 1), padding-top 150ms cubic-bezier(0.4, 0, 0.2, 1)" }, passwordVisibilityIconContainer: { alignSelf: "center", paddingStart: e.spaces.space4 }, passwordVisibilityIcon: { color: e.colors.gray700 } }));
+                k = f.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, textInputFormStyle: { flexDirection: "row" }, textInputFormWrapper: { flexGrow: 1, flexShrink: 1 }, textInputHeader: { flexDirection: "row", justifyContent: "space-between", position: "absolute", height: "100%", width: "100%" }, textInputHeaderItem: { paddingTop: e.spaces.space8, paddingHorizontal: e.spaces.space8, fontSize: "small" }, placeholderText: { paddingTop: e.spaces.space16, fontSize: e.fontSizes.headline2, userSelect: "none" }, displayCount: { flexGrow: 1, alignItems: "flex-end" }, sidePadding: { paddingHorizontal: e.spaces.space8 }, underTextInputForm: { flexDirection: "row" }, subtextWrapper: { flexDirection: "column", flex: 1, paddingEnd: e.spaces.space20, paddingTop: e.spaces.space4 }, subtext: { alignSelf: "flex-start" }, focusedIcon: { color: e.colors.primary }, icon: { alignSelf: "center", color: e.colors.gray700, paddingEnd: e.spaces.space4 }, validationIcon: { alignSelf: "center", paddingStart: e.spaces.space4 }, transition: { transition: "transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), font-size 150ms cubic-bezier(0.4, 0, 0.2, 1), padding-top 150ms cubic-bezier(0.4, 0, 0.2, 1)" }, passwordVisibilityIconContainer: { alignSelf: "center", paddingStart: e.spaces.space4 }, passwordVisibilityIcon: { color: e.colors.gray700 } }));
         },
-        557487: (e, t, n) => {
+        316046: (e, t, n) => {
             n.d(t, { Z: () => l });
             var i = n(807896),
                 s = n(202784),
                 r = n(731708),
                 a = n(392237),
                 o = n(669474);
-            n(136728);
-            function l({ role: e, align: t, color: n, dir: a, entities: l, id: h, onEntityClick: d, renderFragment: u = {}, size: p, style: m, text: g, weight: b, withHashflags: y, animateIn: _ }) {
-                let f = (0, o.ZP)(g, l);
-                return (
-                    _ &&
-                        (f = f
-                            .map((e) => {
-                                if ("text" === e.type) {
-                                    return (function (e) {
-                                        if (0 === e.length) return [""];
-                                        const t = [];
-                                        let n = "",
-                                            i = !0,
-                                            s = 0;
-                                        for (; s < e.length; ) {
-                                            const r = e[s];
-                                            /\s/.test(r) ? (i ? (n += r) : (t.push(n), (n = r)), (i = !0)) : (i && n.length > 0 ? (t.push(n), (n = r)) : (n += r), (i = !1)), s++;
-                                        }
-                                        return n.length > 0 && t.push(n), t;
-                                    })(e.text).map((t) => ({ ...e, text: t }));
+            function l(e) {
+                return e.animateIn ? s.createElement(c, e) : s.createElement(h, e);
+            }
+            function c(e) {
+                const t = (0, o.ZP)(e.text, e.entities),
+                    n = (function (e, t) {
+                        const n = s.useRef(null),
+                            i = s.useMemo(() => new Map(), []);
+                        s.useLayoutEffect(() => {
+                            var t, s;
+                            (t = n.current), (s = e), !t || 0 === s.indexOf(t) || i.clear();
+                        }, [i, e]);
+                        const r = t.map((e, t) => {
+                            if ("text" === e.type) {
+                                const n = i.get(t);
+                                if (n && n.text.length > 0 && 0 === e.text.indexOf(n.text)) {
+                                    const t = n.text === e.text ? n.chunks : [...n.chunks, e.text.slice(n.text.length)];
+                                    return { text: e.text, chunks: t };
                                 }
-                                return e;
-                            })
-                            .flat()),
-                    s.createElement(
-                        r.ZP,
-                        { align: t, color: n, dir: a, id: h, role: e, size: p, style: m, weight: b, withHashflags: y },
-                        f.map((e, t) => {
-                            const n = u[e.type],
-                                a = { children: e.text, color: e.color, dir: e.dir, link: e.link, onClick: e.link ? d : void 0, weight: e.weight, withHashflags: y };
-                            return s.createElement(s.Fragment, { key: `${e.text}:${t}` }, n ? n(a, e.ref) : s.createElement(r.ZP, (0, i.Z)({ style: _ && c.animateIn }, a)));
-                        }),
-                    )
+                            }
+                            return { text: e.text, chunks: [e.text] };
+                        });
+                        return (
+                            s.useLayoutEffect(() => {
+                                r.forEach((e, t) => {
+                                    i.set(t, e);
+                                });
+                            }, [r, i]),
+                            r.flatMap((e, n) => e.chunks.map((e) => ({ ...t[n], text: e })))
+                        );
+                    })(e.text, t);
+                return s.createElement(d, (0, i.Z)({}, e, { fragments: n }));
+            }
+            function h(e) {
+                const t = (0, o.ZP)(e.text, e.entities);
+                return s.createElement(d, (0, i.Z)({}, e, { fragments: t }));
+            }
+            function d({ role: e, align: t, color: n, dir: a, entities: o, id: l, onEntityClick: c, renderFragment: h = {}, size: d, style: p, weight: m, withHashflags: g, animateIn: b, fragments: y }) {
+                return s.createElement(
+                    r.ZP,
+                    { align: t, color: n, dir: a, id: l, role: e, size: d, style: p, weight: m, withHashflags: g },
+                    y.map((e, t) => {
+                        const n = h[e.type],
+                            a = { children: e.text, color: e.color, dir: e.dir, link: e.link, onClick: e.link ? c : void 0, weight: e.weight, withHashflags: g };
+                        return s.createElement(s.Fragment, { key: `${e.text}:${t}` }, n ? n(a, e.ref) : s.createElement(r.ZP, (0, i.Z)({ style: b && u.animateIn }, a)));
+                    }),
                 );
             }
             (l.makeEntityLink = o.ie), (l.internal_parseRichTextEntities = o.ZP), (l.TextFragment = r.ZP);
-            const c = a.default.create((e) => ({ animateIn: { animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease-out", animationFillMode: "both" } }));
+            const u = a.default.create((e) => ({ animateIn: { animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease-out", animationFillMode: "both" } }));
         },
         669474: (e, t, n) => {
             n.d(t, { ZP: () => p, ie: () => h, nt: () => c });
@@ -305,7 +318,7 @@
             }
         },
         673510: (e, t, n) => {
-            n.d(t, { ZP: () => I });
+            n.d(t, { ZP: () => k });
             var i = n(807896),
                 s = n(202784),
                 r = n(325686),
@@ -333,8 +346,8 @@
                     super(...e),
                         (this._renderUserName = () => {
                             const { affiliateBadgeInfo: e, badgeContext: t, disabledMessage: n, displayNameLabel: i, displayNameLabelType: a, isBlocking: l, isBlueVerified: c, isDisabled: h, isFollowedBy: d, isProtected: u, isVerified: p, name: m, onScreenNameClick: g, promotedContent: b, promotedItemType: y, screenName: _, screenNameSuffix: f, translatorType: x, verifiedType: T, withFollowsYou: S, withLink: w } = this.props,
-                                I = s.createElement(v.Z, { affiliateBadgeInfo: e, badgeContext: t, displayNameLabel: i, displayNameLabelType: a, isBlueVerified: c, isProtected: u, isVerified: p, name: m, onLinkClick: g, promotedContent: y === C.TWEET ? b : void 0, screenName: _, screenNameSuffix: f, translatorType: x, verifiedType: T, withFollowsYou: S && d, withHoverCard: !l && !h && w, withLink: !h && w, withScreenName: !n, withStackedLayout: !0 });
-                            return n ? s.createElement(r.Z, { style: L.disabledMessageContainer }, I, s.createElement(o.ZP, { color: "gray700" }, n)) : I;
+                                k = s.createElement(v.Z, { affiliateBadgeInfo: e, badgeContext: t, displayNameLabel: i, displayNameLabelType: a, isBlueVerified: c, isProtected: u, isVerified: p, name: m, onLinkClick: g, promotedContent: y === C.TWEET ? b : void 0, screenName: _, screenNameSuffix: f, translatorType: x, verifiedType: T, withFollowsYou: S && d, withHoverCard: !l && !h && w, withLink: !h && w, withScreenName: !n, withStackedLayout: !0 });
+                            return n ? s.createElement(r.Z, { style: L.disabledMessageContainer }, k, s.createElement(o.ZP, { color: "gray700" }, n)) : k;
                         }),
                         (this._renderSocialContext = () => {
                             const { avatarSize: e, socialContext: t } = this.props;
@@ -370,12 +383,12 @@
                     return null != e || null != t;
                 }
                 render() {
-                    const { "aria-checked": e, "aria-label": t, avatarDecoration: n, avatarShape: a, avatarSize: o, avatarUri: h, bottomControl: d, decoration: u, displayMode: g, isBlocking: b, isDisabled: y, isFakeButtonRoleWithListItem: x, onAvatarClick: v, onCellClick: w, onScreenNameClick: I, presenceIndicator: k, promotedContent: R, promotedItemType: E, screenName: D, style: P, testID: Z, userId: V, withBottomSocialContext: M, withDarkerInteractiveBackground: z, withInteractiveStyling: H, withLink: B, withUsernameCenterAligned: F } = this.props,
+                    const { "aria-checked": e, "aria-label": t, avatarDecoration: n, avatarShape: a, avatarSize: o, avatarUri: h, bottomControl: d, decoration: u, displayMode: g, isBlocking: b, isDisabled: y, isFakeButtonRoleWithListItem: x, onAvatarClick: v, onCellClick: w, onScreenNameClick: k, presenceIndicator: I, promotedContent: R, promotedItemType: E, screenName: D, style: P, testID: Z, userId: V, withBottomSocialContext: M, withDarkerInteractiveBackground: z, withInteractiveStyling: H, withLink: B, withUsernameCenterAligned: F } = this.props,
                         U = B && !b,
                         K = g === T.UserCompact || F,
                         A = R && E === C.USER && "earned" !== (R.disclosure_type && R.disclosure_type.toLowerCase()) ? s.createElement(m.Z, { contentAuthorId: V, promotedContent: R, style: L.promotedIndicator }) : null,
-                        N = { "aria-hidden": !0, decoration: n, focusable: !1, imageLayoutCache: S, onClick: v, onHoverCardScreenNameClick: I, promotedContent: R, screenName: D, style: L.avatar, uri: h, withHoverCard: U, withLink: B, shape: a },
-                        $ = s.createElement(c.Z.Consumer, null, ({ avatarSize: e }) => (k ? s.createElement(f.Z, (0, i.Z)({}, N, k, { size: e })) : s.createElement(_.default, (0, i.Z)({ size: e }, N)))),
+                        N = { "aria-hidden": !0, decoration: n, focusable: !1, imageLayoutCache: S, onClick: v, onHoverCardScreenNameClick: k, promotedContent: R, screenName: D, style: L.avatar, uri: h, withHoverCard: U, withLink: B, shape: a },
+                        $ = s.createElement(c.Z.Consumer, null, ({ avatarSize: e }) => (I ? s.createElement(f.Z, (0, i.Z)({}, N, I, { size: e })) : s.createElement(_.default, (0, i.Z)({ size: e }, N)))),
                         O = this._getAccessibilityRole(),
                         W = this._getIsFocusable(),
                         G = this._renderUserName(),
@@ -392,14 +405,14 @@
             }
             w.defaultProps = { testID: "UserCell", withLink: !0 };
             const L = y.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, avatarColumn: { justifyContent: "flex-start" }, bodyColumn: { flexGrow: 1 }, bodyColumnCentered: { justifyContent: "center" }, avatar: { display: "block", width: "100%" }, bio: { paddingTop: e.spaces.space4, whiteSpace: "normal" }, socialContext: { marginBottom: e.spaces.space4 }, userTypeaheadSocialContext: { alignItems: "center", flexDirection: "row", textColor: e.colors.gray700 }, userTypeaheadSocialContextIcon: { flexShrink: 0 }, userTypeaheadSocialContextText: { paddingStart: e.spaces.space2 }, body: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, promotedIndicator: { margin: 0, paddingTop: e.spaces.space4, paddingBottom: 0, paddingHorizontal: 0 }, bottomControl: { paddingTop: e.spaces.space4 }, disabledMessageContainer: { flexShrink: 1 } })),
-                I = w;
+                k = w;
         },
         31501: (e, t, n) => {
             n.d(t, { Z: () => w });
             var i = n(807896),
                 s = n(202784),
                 r = n(928316),
-                a = n(452661),
+                a = n(151624),
                 o = n(325686),
                 l = n(731708),
                 c = n(483054),
@@ -460,10 +473,10 @@
                                 endThumbLabel: T,
                                 onDarkBackground: w,
                                 isSingleSlider: L,
-                                disabled: I,
+                                disabled: k,
                             } = this.props;
                             if (L && e) return null;
-                            const k = e ? a : h,
+                            const I = e ? a : h,
                                 R = e ? r : c,
                                 E = e ? b : y,
                                 D = this._shouldOverrideRTL(),
@@ -477,7 +490,7 @@
                                 { positionStyle: F } = this._getPositionStyleForValue({ value: E, positionStyleDirection: V }),
                                 U = e ? C : T,
                                 K = e ? this._handleFocusRingGainedStart : this._handleFocusRingGainedEnd;
-                            return s.createElement(p.Z, { "aria-label": R, "aria-valuemax": g, "aria-valuemin": d, "aria-valuenow": E, "aria-valuetext": k || E.toString(), focusable: !I, hoverLabel: i ? { label: i[E] } : void 0, interactive: !I, interactiveStyles: Z, onFocusRingGained: K, onFocusRingLost: this._handleFocusRingLost, onKeyUp: this._handleKeyUp, onMouseDown: this._handleMouseDown, ref: this._handleThumbRef(e), role: "adjustable", style: [B, F] }, s.createElement(o.Z, { style: [S.thumb, H && S.thumbHidden, M && S.thumbActive, n] }), U ? s.createElement(l.ZP, { color: w ? "white" : void 0, size: "subtext2", style: [S.thumbLabel, z ? S.thumbLabelLeftRTL : S.thumbLabelLeft] }, U) : null);
+                            return s.createElement(p.Z, { "aria-label": R, "aria-valuemax": g, "aria-valuemin": d, "aria-valuenow": E, "aria-valuetext": I || E.toString(), focusable: !k, hoverLabel: i ? { label: i[E] } : void 0, interactive: !k, interactiveStyles: Z, onFocusRingGained: K, onFocusRingLost: this._handleFocusRingLost, onKeyUp: this._handleKeyUp, onMouseDown: this._handleMouseDown, ref: this._handleThumbRef(e), role: "adjustable", style: [B, F] }, s.createElement(o.Z, { style: [S.thumb, H && S.thumbHidden, M && S.thumbActive, n] }), U ? s.createElement(l.ZP, { color: w ? "white" : void 0, size: "subtext2", style: [S.thumbLabel, z ? S.thumbLabelLeftRTL : S.thumbLabelLeft] }, U) : null);
                         }),
                         (this._getPositionStyleForValue = ({ positionStyleDirection: e, value: t }) => {
                             const { max: n, min: i } = this.props,
@@ -661,20 +674,20 @@
                         T = { backgroundColor: y },
                         w = { backgroundColor: C },
                         L = { backgroundColor: x },
-                        I = this._shouldOverrideRTL(),
-                        k = this.props.isVertical ? "bottom" : I ? "end" : "start";
+                        k = this._shouldOverrideRTL(),
+                        I = this.props.isVertical ? "bottom" : k ? "end" : "start";
                     return s.createElement(
                         o.Z,
-                        { style: [S.root, r && S.verticalRoot, I && S.ltr, t && S.disabled] },
+                        { style: [S.root, r && S.verticalRoot, k && S.ltr, t && S.disabled] },
                         this._renderIcon(!0),
                         s.createElement(d.Z, null, ({ isHovered: l }) => {
                             const c = this.state.focusedThumb || this._activeThumb,
                                 h = p && !l && !c,
-                                { valuePosition: d } = this._getPositionStyleForValue({ value: g, positionStyleDirection: k }),
-                                { valuePosition: u } = this._getPositionStyleForValue({ value: b, positionStyleDirection: k }),
+                                { valuePosition: d } = this._getPositionStyleForValue({ value: g, positionStyleDirection: I }),
+                                { valuePosition: u } = this._getPositionStyleForValue({ value: b, positionStyleDirection: I }),
                                 m = { flexGrow: d },
                                 _ = { flexGrow: u - d };
-                            return s.createElement(o.Z, (0, i.Z)({}, this._panResponder.panHandlers, { onLayout: this._handleLayout, ref: this._handleRootRef, style: [S.slider, r ? S.verticalSlider : S.horizontalSlider, r || (!a && !n) ? null : S.horizontalSliderWithLabel, t && S.sliderDisabled] }), s.createElement(o.Z, { style: [S.track, r ? S.verticalTrack : S.horizontalTrack, h && (r ? S.verticalTrackWithHiddenThumb : S.horizontalTrackWithHiddenThumb), "white" === e ? L : w] }, s.createElement(o.Z, { style: [S.hiddenTrack, m] }), s.createElement(o.Z, { style: [S.progress, T, _] }), this._renderThumb(!0, { solidBackgroundColorStyle: T, isTrackHovered: l }), this._renderThumb(!1, { solidBackgroundColorStyle: T, isTrackHovered: l }), this._renderInteractiveMarkers({ cssColor: y, positionStyleDirection: k, solidBackgroundColorStyle: T, dimmedBackgroundColorStyle: w })));
+                            return s.createElement(o.Z, (0, i.Z)({}, this._panResponder.panHandlers, { onLayout: this._handleLayout, ref: this._handleRootRef, style: [S.slider, r ? S.verticalSlider : S.horizontalSlider, r || (!a && !n) ? null : S.horizontalSliderWithLabel, t && S.sliderDisabled] }), s.createElement(o.Z, { style: [S.track, r ? S.verticalTrack : S.horizontalTrack, h && (r ? S.verticalTrackWithHiddenThumb : S.horizontalTrackWithHiddenThumb), "white" === e ? L : w] }, s.createElement(o.Z, { style: [S.hiddenTrack, m] }), s.createElement(o.Z, { style: [S.progress, T, _] }), this._renderThumb(!0, { solidBackgroundColorStyle: T, isTrackHovered: l }), this._renderThumb(!1, { solidBackgroundColorStyle: T, isTrackHovered: l }), this._renderInteractiveMarkers({ cssColor: y, positionStyleDirection: I, solidBackgroundColorStyle: T, dimmedBackgroundColorStyle: w })));
                         }),
                         this._renderIcon(!1),
                     );
@@ -745,4 +758,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e907d115.75b9e44a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e907d115.fdeaaeda.js.map

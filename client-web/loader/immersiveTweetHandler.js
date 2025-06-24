@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.immersiveTweetHandler"],
+    ["loader.immersiveTweetHandler", "icons/IconChevronDown-js"],
     {
         311554: (e, t, n) => {
             n.r(t), n.d(t, { DEFAULT_SCRIBE_NAMESPACE: () => tt, default: () => ot, getScribeDataItem: () => nt });
@@ -28,9 +28,9 @@
                 S = n(366635),
                 _ = n(366985),
                 k = n(731708),
-                x = n(451051),
-                Z = n(111677),
-                P = n.n(Z),
+                Z = n(451051),
+                x = n(111677),
+                P = n.n(x),
                 I = n(894966),
                 M = n(899667),
                 A = n(487552),
@@ -40,8 +40,8 @@
                 O = n(466445),
                 F = n(498844),
                 $ = n(38502),
-                H = n(804579),
-                V = n(149170),
+                V = n(804579),
+                H = n(149170),
                 W = n(382880),
                 N = n(609927),
                 z = n(756632),
@@ -141,10 +141,10 @@
                 Se = P().ic1e826e,
                 _e = P().b89c5a50;
             function ke(e) {
-                const { analytics: t, isActiveCreator: n, isNsfwUser: o, isPinned: r, mediaType: a, photo: l, style: c, tweet: d, userCountry: Z, userLanguage: P, videoPlayerApi: I, videoPlayerState: M, videoProps: A } = e,
-                    { featureSwitches: V } = i.useContext(j.rC),
+                const { analytics: t, isActiveCreator: n, isNsfwUser: o, isPinned: r, mediaType: a, photo: l, style: c, tweet: d, userCountry: x, userLanguage: P, videoPlayerApi: I, videoPlayerState: M, videoProps: A } = e,
+                    { featureSwitches: H } = i.useContext(j.rC),
                     Y = i.useContext(p.Z),
-                    J = V.isTrue("explore_relaunch_enable_immersive_web_navigation_button"),
+                    J = H.isTrue("explore_relaunch_enable_immersive_web_navigation_button"),
                     { adjustFocusBy: K, currentIndex: Q, totalItems: ee } = (0, N.Y)(),
                     { forwardPivotInfo: te, hasClosedCaptioning: ne, isMuted: oe, isTweetContentHidden: re, onMuteToggle: ke, onTweetUpdate: Pe, setBlockedOrMutedEntry: Ie, setHasClosedCaptioning: Me } = (0, R.V)(),
                     Ae = i.useRef(null),
@@ -164,17 +164,17 @@
                 });
                 const Fe = d.id_str,
                     $e = d.user.blocking,
-                    He = d.user.muting;
+                    Ve = d.user.muting;
                 i.useEffect(() => {
-                    Ie(`tweet-${Fe}`, $e || He || !1);
-                }, [$e, He, Fe]),
+                    Ie(`tweet-${Fe}`, $e || Ve || !1);
+                }, [$e, Ve, Fe]),
                     i.useEffect(() => {
                         Le && oe !== M?.isMuted && (oe ? I?.mute() : I?.unmute());
                     }, [oe, Le, I, M?.isMuted]),
                     i.useEffect(() => {
                         Le && Oe?.hasCaptions && ne !== M?.areCaptionsShown && I?.toggleCaptions();
                     }, [Oe?.hasCaptions, ne, Le, I, M?.areCaptionsShown]);
-                const Ve = V.isTrue("explore_relaunch_enable_auto_play"),
+                const He = H.isTrue("explore_relaunch_enable_auto_play"),
                     We = i.useMemo(
                         () =>
                             (0, W.Z)(() => {
@@ -183,12 +183,12 @@
                         [K],
                     );
                 i.useEffect(() => {
-                    Ve &&
+                    He &&
                         I &&
                         I.subscribe((e) => {
                             e.tracksFinished && void 0 !== Q && void 0 !== ee && Q < ee && We();
                         });
-                }, [Ve, I, K, We, Q, ee]);
+                }, [He, I, K, We, Q, ee]);
                 const Ne = i.useMemo(() => ({ pathname: (0, h.ju)(`https://x.com/${d.user.screen_name || ""}`), state: d.promoted_content ? { promotedTweetState: d.promoted_content } : void 0 }), [d.promoted_content, d.user.screen_name]),
                     ze = (e, t) => {
                         const n = e[0].intersectionRatio >= 0.98;
@@ -225,10 +225,10 @@
                         },
                         [Me, ne],
                     ),
-                    Ye = i.useMemo(() => [xe.container, c || void 0], [c]),
-                    Je = i.useMemo(() => [xe.button, xe.navigationButtonBottom], []),
-                    Ke = i.useMemo(() => [xe.button, xe.navigationButtonTop], []),
-                    Qe = i.useMemo(() => [xe.navigationButtonContainer, xe.topNavigationButtonContainer], []),
+                    Ye = i.useMemo(() => [Ze.container, c || void 0], [c]),
+                    Je = i.useMemo(() => [Ze.button, Ze.navigationButtonBottom], []),
+                    Ke = i.useMemo(() => [Ze.button, Ze.navigationButtonTop], []),
+                    Qe = i.useMemo(() => [Ze.navigationButtonContainer, Ze.topNavigationButtonContainer], []),
                     et = i.useMemo(() => ({ label: oe ? ce : le }), [oe]),
                     tt = i.useMemo(() => (oe ? i.createElement(B.default, { testID: `immersive-tweet-unmute-icon-${Fe}` }) : i.createElement(D.default, { testID: `immersive-tweet-mute-icon-${Fe}` })), [oe, Fe]),
                     nt = i.useMemo(() => !!Q && 0 !== Q, [Q]),
@@ -245,21 +245,21 @@
                     it = i.useCallback(() => rt(1), [rt]),
                     st = i.useMemo(() => (M?.isPlaying ? i.createElement(L.default, { testID: `immersive-tweet-pause-button-${Fe}` }) : i.createElement(O.default, { testID: `immersive-tweet-play-button-${Fe}` })), [M?.isPlaying, Fe]),
                     lt = i.useMemo(() => ({ label: M?.areCaptionsShown ? ue : de }), [M?.areCaptionsShown]),
-                    ct = i.useMemo(() => (Oe?.hasCaptions ? (M?.areCaptionsShown ? i.createElement($.default, { testID: `immersive-tweet-remove-captions-icon-${Fe}` }) : i.createElement(H.default, { testID: `immersive-tweet-add-captions-icon-${Fe}` })) : i.createElement(F.default, { testID: `immersive-tweet-no-captions-icon-${Fe}` })), [Oe?.hasCaptions, M?.areCaptionsShown, Fe]),
+                    ct = i.useMemo(() => (Oe?.hasCaptions ? (M?.areCaptionsShown ? i.createElement($.default, { testID: `immersive-tweet-remove-captions-icon-${Fe}` }) : i.createElement(V.default, { testID: `immersive-tweet-add-captions-icon-${Fe}` })) : i.createElement(F.default, { testID: `immersive-tweet-no-captions-icon-${Fe}` })), [Oe?.hasCaptions, M?.areCaptionsShown, Fe]),
                     ut = i.useCallback(() => {
                         t.scribe({ element: "avatar", action: "profile_click" });
                     }, [t]),
-                    dt = i.useMemo(() => i.createElement(s.Z, { style: xe.screenNameSuffix }, i.createElement(b.Z, { style: xe.relativeTimestamp, timestamp: d.created_at }), i.createElement(y.Z, null), i.createElement(U.C, { isTransparent: !0, promotedContent: d.promoted_content, size: "medium", style: xe.followUserButton, userId: d.user.id_str })), [d.created_at, d.user.id_str, d.promoted_content]),
+                    dt = i.useMemo(() => i.createElement(s.Z, { style: Ze.screenNameSuffix }, i.createElement(b.Z, { style: Ze.relativeTimestamp, timestamp: d.created_at }), i.createElement(y.Z, null), i.createElement(U.C, { isTransparent: !0, promotedContent: d.promoted_content, size: "medium", style: Ze.followUserButton, userId: d.user.id_str })), [d.created_at, d.user.id_str, d.promoted_content]),
                     mt = w.Z.isPromoted(d.promoted_content);
                 return i.createElement(
                     s.Z,
                     { ref: Ae, style: Ye },
                     i.createElement(
                         s.Z,
-                        { style: xe.immersiveBlurContainer },
+                        { style: Ze.immersiveBlurContainer },
                         i.createElement(
                             s.Z,
-                            { style: xe.mediaContentContainer },
+                            { style: Ze.mediaContentContainer },
                             (({ featureSwitches: e, hasFocus: t, mediaType: n, photo: o, tweetId: r, userLanguage: a, videoProps: s }) => {
                                 const l = { maxLoopingThresholdSec: e.getNumberValue("explore_relaunch_max_video_loop_threshold_sec", 5) };
                                 switch (n) {
@@ -269,35 +269,35 @@
                                     default:
                                         return i.createElement(i.Fragment, null);
                                 }
-                            })({ mediaType: a, videoProps: A, hasFocus: Be, photo: l, tweetId: Fe, userLanguage: P, featureSwitches: V }),
+                            })({ mediaType: a, videoProps: A, hasFocus: Be, photo: l, tweetId: Fe, userLanguage: P, featureSwitches: H }),
                         ),
                         i.createElement(
                             s.Z,
-                            { style: xe.tweetForegroundContainer },
-                            i.createElement(s.Z, { style: xe.tweetTopContent }, J && i.createElement(s.Z, { style: Qe }, i.createElement(C.Z, { duration: "longer", show: !re, type: "fade" }, i.createElement(f.ZP, { "aria-label": he, disabled: !nt, hoverLabel: Ce, icon: ve, onClick: at, size: "xSmall", style: Ke, testID: `immersive-tweet-previous-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" }))), i.createElement(f.ZP, { "aria-label": se, hoverLabel: ye, icon: fe, onClick: Ge, style: xe.backButton, testID: `immersive-tweet-back-button-${Fe}`, type: "onMediaDominantColorFilled" })),
+                            { style: Ze.tweetForegroundContainer },
+                            i.createElement(s.Z, { style: Ze.tweetTopContent }, J && i.createElement(s.Z, { style: Qe }, i.createElement(C.Z, { duration: "longer", show: !re, type: "fade" }, i.createElement(f.ZP, { "aria-label": he, disabled: !nt, hoverLabel: Ce, icon: ve, onClick: at, size: "xSmall", style: Ke, testID: `immersive-tweet-previous-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" }))), i.createElement(f.ZP, { "aria-label": se, hoverLabel: ye, icon: fe, onClick: Ge, style: Ze.backButton, testID: `immersive-tweet-back-button-${Fe}`, type: "onMediaDominantColorFilled" })),
                             i.createElement(
                                 C.Z,
                                 { duration: "longer", show: !re, type: "fade" },
                                 i.createElement(
                                     s.Z,
-                                    { style: xe.bottomContainer, testID: `immersive-tweet-ui-content-container-${Fe}` },
+                                    { style: Ze.bottomContainer, testID: `immersive-tweet-ui-content-container-${Fe}` },
                                     i.createElement(
                                         s.Z,
-                                        { onLayout: Xe, style: xe.tweetContentContainer },
-                                        Le && i.createElement(s.Z, { style: xe.verticalButtonContainer }, i.createElement(f.ZP, { "aria-label": oe ? ce : le, hoverLabel: et, icon: tt, onClick: je, size: "xSmall", style: xe.button, testID: `immersive-tweet-mute-button-${Fe}`, type: "onMediaDominantColorFilled" }), i.createElement(f.ZP, { "aria-label": M?.areCaptionsShown ? ue : de, disabled: !Oe?.hasCaptions, hoverLabel: lt, icon: ct, onClick: qe, size: "xSmall", style: xe.button, testID: `immersive-tweet-closed-captioning-button-${Fe}`, type: "onMediaDominantColorFilled" })),
-                                        !!I && i.createElement(s.Z, { style: xe.scrubberContainerWithPlayButton }, i.createElement(f.ZP, { "aria-label": M?.isPlaying ? _e : Se, icon: st, onClick: M?.isPlaying ? I?.pause : I?.play, size: "medium", style: xe.playPauseButton, type: "onMediaText" }), i.createElement(s.Z, { style: xe.scrubberFlexContainer }, i.createElement(v.Z, { "aria-label": me, currentTime: Oe ? (0, ie.Ot)(Oe) || 0 : void 0, duration: Oe ? (0, ie.MU)(Oe) : void 0, isScrubbing: !!M?.isScrubbing && M.isScrubbing, isSeeking: !!M?.isSeeking && M.isSeeking, playerApi: I }))),
-                                        i.createElement(s.Z, { style: xe.userInfoContainer }, i.createElement(s.Z, null, i.createElement(E.Z.Provider, { value: Te }, i.createElement(z.Z, { onClick: ut, promotedContent: d.promoted_content, screenName: d.user.screen_name, uri: d.user.profile_image_url_https, userId: d.user.id_str, withLink: !0 }))), i.createElement(s.Z, { style: xe.userNameContainer }, i.createElement(T.Z, { link: Ne }, i.createElement(S.Z, { color: "white", isBlueVerified: d.user.is_blue_verified, isVerified: d.user.verified, name: d.user.name, screenName: d.user.screen_name, screenNameSize: "body", screenNameSuffix: dt, weight: "bold", withName: !0, withScreenName: !0, withStackedLayout: !0 }))), i.createElement(s.Z, { style: xe.promotedLabel }, mt ? i.createElement(_.j, { tweet: d }, ([e]) => (e ? i.createElement(k.ZP, { "aria-label": e.promotedLabel, color: "gray700", testID: "immersive-tweet-ad-label" }, ge) : null)) : null), i.createElement(s.Z, { style: xe.tweetActionMenuContainer }, i.createElement(q.g, { downloadLink: A?.source.downloadLink }, i.createElement(G.Z, { isActiveCreator: n || !1, isNsfwUser: o || !1, isPinned: r, menuControlProps: Ze, onMenuClick: Re, promotedContent: d.promoted_content, tweet: d, userCountry: Z, userLanguage: P, withMuteConversation: !1 })))),
-                                        i.createElement(s.Z, { style: xe.tweetTextContainer }, i.createElement(x.Z, { displayTextRange: d.display_text_range, entities: d.entities, lang: d.lang, link: d.permalink, linkify: !0, numberOfLines: 5, onEntityClick: Ue, style: xe.tweetText, testID: `immersive-tweet-text-${Fe}`, text: d.text })),
+                                        { onLayout: Xe, style: Ze.tweetContentContainer },
+                                        Le && i.createElement(s.Z, { style: Ze.verticalButtonContainer }, i.createElement(f.ZP, { "aria-label": oe ? ce : le, hoverLabel: et, icon: tt, onClick: je, size: "xSmall", style: Ze.button, testID: `immersive-tweet-mute-button-${Fe}`, type: "onMediaDominantColorFilled" }), i.createElement(f.ZP, { "aria-label": M?.areCaptionsShown ? ue : de, disabled: !Oe?.hasCaptions, hoverLabel: lt, icon: ct, onClick: qe, size: "xSmall", style: Ze.button, testID: `immersive-tweet-closed-captioning-button-${Fe}`, type: "onMediaDominantColorFilled" })),
+                                        !!I && i.createElement(s.Z, { style: Ze.scrubberContainerWithPlayButton }, i.createElement(f.ZP, { "aria-label": M?.isPlaying ? _e : Se, icon: st, onClick: M?.isPlaying ? I?.pause : I?.play, size: "medium", style: Ze.playPauseButton, type: "onMediaText" }), i.createElement(s.Z, { style: Ze.scrubberFlexContainer }, i.createElement(v.Z, { "aria-label": me, currentTime: Oe ? (0, ie.Ot)(Oe) || 0 : void 0, duration: Oe ? (0, ie.MU)(Oe) : void 0, isScrubbing: !!M?.isScrubbing && M.isScrubbing, isSeeking: !!M?.isSeeking && M.isSeeking, playerApi: I }))),
+                                        i.createElement(s.Z, { style: Ze.userInfoContainer }, i.createElement(s.Z, null, i.createElement(E.Z.Provider, { value: Te }, i.createElement(z.Z, { onClick: ut, promotedContent: d.promoted_content, screenName: d.user.screen_name, uri: d.user.profile_image_url_https, userId: d.user.id_str, withLink: !0 }))), i.createElement(s.Z, { style: Ze.userNameContainer }, i.createElement(T.Z, { link: Ne }, i.createElement(S.Z, { color: "white", isBlueVerified: d.user.is_blue_verified, isVerified: d.user.verified, name: d.user.name, screenName: d.user.screen_name, screenNameSize: "body", screenNameSuffix: dt, weight: "bold", withName: !0, withScreenName: !0, withStackedLayout: !0 }))), i.createElement(s.Z, { style: Ze.promotedLabel }, mt ? i.createElement(_.j, { tweet: d }, ([e]) => (e ? i.createElement(k.ZP, { "aria-label": e.promotedLabel, color: "gray700", testID: "immersive-tweet-ad-label" }, ge) : null)) : null), i.createElement(s.Z, { style: Ze.tweetActionMenuContainer }, i.createElement(q.g, { downloadLink: A?.source.downloadLink }, i.createElement(G.Z, { isActiveCreator: n || !1, isNsfwUser: o || !1, isPinned: r, menuControlProps: xe, onMenuClick: Re, promotedContent: d.promoted_content, tweet: d, userCountry: x, userLanguage: P, withMuteConversation: !1 })))),
+                                        i.createElement(s.Z, { style: Ze.tweetTextContainer }, i.createElement(Z.Z, { displayTextRange: d.display_text_range, entities: d.entities, lang: d.lang, link: d.permalink, linkify: !0, numberOfLines: 5, onEntityClick: Ue, style: Ze.tweetText, testID: `immersive-tweet-text-${Fe}`, text: d.text })),
                                     ),
-                                    i.createElement(s.Z, { style: xe.tweetActionsBarContainer }, i.createElement(s.Z, { style: xe.primaryTweetActionsContainer }, i.createElement(X.Z, { activeColor: "white", allowBookmarkInActionsBar: !0, color: "white", forwardPivotInfo: d.softIntervention || te, style: xe.actionsBar, tweet: d, withAnalyticsAction: !0, withCount: !0 }))),
-                                    J && i.createElement(s.Z, { style: xe.navigationButtonContainer }, i.createElement(f.ZP, { "aria-label": pe, disabled: !ot, hoverLabel: we, icon: Ee, onClick: it, size: "xSmall", style: Je, testID: `immersive-tweet-next-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" })),
+                                    i.createElement(s.Z, { style: Ze.tweetActionsBarContainer }, i.createElement(s.Z, { style: Ze.primaryTweetActionsContainer }, i.createElement(X.Z, { activeColor: "white", allowBookmarkInActionsBar: !0, color: "white", forwardPivotInfo: d.softIntervention || te, style: Ze.actionsBar, tweet: d, withAnalyticsAction: !0, withCount: !0 }))),
+                                    J && i.createElement(s.Z, { style: Ze.navigationButtonContainer }, i.createElement(f.ZP, { "aria-label": pe, disabled: !ot, hoverLabel: we, icon: Ee, onClick: it, size: "xSmall", style: Je, testID: `immersive-tweet-next-tweet-button-${Fe}`, type: "onMediaDominantColorFilled" })),
                                 ),
                             ),
                         ),
                     ),
                 );
             }
-            const xe = l.default.create((e) => ({
+            const Ze = l.default.create((e) => ({
                     actionsBar: { maxWidth: "none", paddingHorizontal: e.spaces.space16 },
                     container: { height: "100%", width: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end" },
                     replyContext: { marginBottom: e.spaces.space2 },
@@ -339,7 +339,7 @@
                     topNavigationButtonContainer: { position: "absolute", top: 0 },
                     navigationButtonBottom: { marginBottom: e.spaces.space12 },
                 })),
-                Ze = { withDarkBackground: !1, style: xe.overflowMenuIcon, Icon: () => i.createElement(V.default, { color: "white", size: "large" }) };
+                xe = { withDarkBackground: !1, style: Ze.overflowMenuIcon, Icon: () => i.createElement(H.default, { color: "white", size: "large" }) };
             var Pe = n(499627),
                 Ie = n(312771);
             const Me = "immersiveViewer",
@@ -364,8 +364,8 @@
             );
             var Fe = n(80890),
                 $e = n(390387),
-                He = n(38562),
-                Ve = n(836255),
+                Ve = n(38562),
+                He = n(836255),
                 We = n(919022);
             const Ne = (e, t) => t.entry.content.id,
                 ze = (e, t) => (0, Fe.MW)(e, t.entry.content.id),
@@ -382,7 +382,7 @@
                     return e;
                 },
                 Ue = (0, Q.Z)()
-                    .propsFromState(() => ({ tweet: Ve.Z.createHydratedTweetSelector(Ne), isActiveCreator: $e.WM, isNsfwUser: He.EF, isPinned: ze, onboardingMobileViewCount: Le, userCountry: $e.GG, userLanguage: $e.VT, urtAdvertiser: Re, urtPromotedContent: Ge }))
+                    .propsFromState(() => ({ tweet: He.Z.createHydratedTweetSelector(Ne), isActiveCreator: $e.WM, isNsfwUser: Ve.EF, isPinned: ze, onboardingMobileViewCount: Le, userCountry: $e.GG, userLanguage: $e.VT, urtAdvertiser: Re, urtPromotedContent: Ge }))
                     .adjustStateProps((e) => {
                         const { tweet: t, urtAdvertiser: n, urtPromotedContent: o, ...r } = e;
                         return { tweet: je(t, { urtPromotedContent: o, urtAdvertiser: n }), ...r };
@@ -531,7 +531,7 @@
                 l = 720;
         },
         424713: (e, t, n) => {
-            n.d(t, { Ci: () => I, Fv: () => B, MU: () => S, Ot: () => v, Ov: () => k, SY: () => T, XE: () => w, _5: () => A, aZ: () => Z, c9: () => C, mr: () => D, sI: () => P, us: () => x, xB: () => M, zm: () => _ });
+            n.d(t, { Ci: () => I, Fv: () => B, MU: () => S, Ot: () => v, Ov: () => k, SY: () => T, XE: () => w, _5: () => A, aZ: () => x, c9: () => C, mr: () => D, sI: () => P, us: () => Z, xB: () => M, zm: () => _ });
             n(136728);
             var o = n(111677),
                 r = n.n(o),
@@ -569,7 +569,7 @@
                         }
                         const l = r && w(r);
                         return l && a.push(l), a.join(". ");
-                    })({ isLive: e.isLive, isBroadcast: e.contentType === s.wF.BROADCAST, durationSeconds: x(e), timecode: A(e), videoTrack: e });
+                    })({ isLive: e.isLive, isBroadcast: e.contentType === s.wF.BROADCAST, durationSeconds: Z(e), timecode: A(e), videoTrack: e });
                 },
                 f = (e) => {
                     const { hours: t, minutes: n, seconds: o } = L(e),
@@ -598,11 +598,11 @@
                     const t = v(e);
                     return t && Math.round(t);
                 },
-                x = (e) => {
+                Z = (e) => {
                     const t = S(e);
                     return t && Math.round(t);
                 },
-                Z = (e, t) => {
+                x = (e, t) => {
                     const n = S(I(e));
                     if (!n) return;
                     const o = ((e?.controls?.playbackTimeRange?.startTimeS ?? 0) + t) / n;
@@ -644,7 +644,7 @@
             }
             const h = d.default.create((e) => ({ backgroundImage: { ...d.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...d.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
         },
-        452693: (e, t, n) => {
+        487552: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -652,7 +652,20 @@
                 i = n(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        98440: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -663,4 +676,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.6bc5431a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.1e9ad6da.js.map

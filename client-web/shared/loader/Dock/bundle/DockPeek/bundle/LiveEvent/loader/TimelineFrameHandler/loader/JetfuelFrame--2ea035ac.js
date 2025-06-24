@@ -3,7 +3,7 @@
     ["shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--2ea035ac"],
     {
         907490: (r, a, o) => {
-            o.d(a, { G: () => u, r: () => j });
+            o.d(a, { G: () => u, r: () => m });
             var e = o(752659);
             const t = {
                     black: { "": "rgba(0, 0, 0, var(--jbgo))" },
@@ -93,7 +93,7 @@
                         const [o, e] = r;
                         b(`text-${o}`, (r) => (r["font-size"] = a(e)));
                     }
-                    b("underline", (r) => (r["text-decoration-line"] = "underline"));
+                    b("underline", (r) => (r["text-decoration-line"] = "underline")), b("no-underline", (r) => (r["text-decoration-line"] = "none")), b("italic", (r) => (r["font-style"] = "italic")), b("not-italic", (r) => (r["font-style"] = "normal")), b("line-through", (r) => (r["text-decoration-line"] = "line-through")), b("font-sans", (r) => (r["font-family"] = "ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'")), b("font-serif", (r) => (r["font-family"] = "ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif")), b("font-mono", (r) => (r["font-family"] = "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"));
                     for (const r of ["left", "center", "right"]) b(`text-${r}`, (a) => (a["text-align"] = r));
                     b("whitespace-normal", (r) => (r["white-space"] = "normal")), b("whitespace-nowrap", (r) => (r["white-space"] = "nowrap")), b("whitespace-pre", (r) => (r["white-space"] = "pre")), b("whitespace-pre-line", (r) => (r["white-space"] = "pre-line")), b("whitespace-pre-wrap", (r) => (r["white-space"] = "pre-wrap")), b("whitespace-break-spaces", (r) => (r["white-space"] = "break-spaces"));
                     for (const r of [
@@ -263,7 +263,7 @@
                 },
                 d = new Set(),
                 v = new Set();
-            function j(r, a) {
+            function m(r, a) {
                 const o = a.map((a) => `${r}:${a}`);
                 let e = !1;
                 for (const r of o) v.has(r) || (d.add(r), (e = !0));
@@ -282,177 +282,185 @@
                             d.clear();
                     });
             }
-            const m = new Set(),
+            const j = new Set(),
                 f = new Set();
             function u(r) {
                 let a = !1;
                 for (const [o, e] of r) {
                     const r = `${o}:${e}`;
-                    f.has(r) || (m.add(r), (a = !0));
+                    f.has(r) || (j.add(r), (a = !0));
                 }
                 a &&
                     queueMicrotask(() => {
-                        if (!m.size) return;
+                        if (!j.size) return;
                         const r = document.createElement("style"),
                             a = [];
-                        for (const r of m) {
+                        for (const r of j) {
                             const [o, e] = r.split(":"),
                                 t = `${o}${e}`.replace(/[^a-zA-Z0-9]/g, "");
                             a.push(`.${t} { ${o}: ${e ? parseFloat(e) : e}; }`), f.add(r);
                         }
-                        (r.innerText = a.join("")), document.head.appendChild(r), m.clear();
+                        (r.innerText = a.join("")), document.head.appendChild(r), j.clear();
                     });
             }
         },
         705156: (r, a, o) => {
-            o.d(a, { O: () => Y });
+            o.d(a, { O: () => ar });
             var e = o(552322),
-                t = o(960546),
+                t = o(404446),
                 g = o(655419),
-                n = o(110972),
-                b = o(897531),
+                n = o(165893),
+                b = o(888348),
                 i = o(746066),
                 s = o(173590),
                 l = o(261925),
                 c = o(22588),
                 d = o(166490),
                 v = o(161276),
-                j = o(399762),
-                m = o(631389),
+                m = o(399762),
+                j = o(631389),
                 f = o(723395),
                 u = o(140682),
                 p = o(315111),
                 _ = o(971668),
                 h = o(790119),
                 w = o(550932),
-                $ = o(514378),
-                x = o(608594),
-                k = o(96675),
-                y = o(324212),
-                Z = o(379265),
-                S = o(447763),
-                I = o(553366),
-                C = o(969517),
-                F = o(547645),
-                T = o(229476),
-                R = o(849957),
-                M = o(128069),
-                P = o(475122),
-                O = o(771017),
-                V = o(315198),
-                E = o(70477),
+                $ = o(592910),
+                x = o(405943),
+                y = o(96675),
+                k = o(324212),
+                Z = o(128881),
+                S = o(140063),
+                I = o(137087),
+                T = o(611294),
+                C = o(956227),
+                R = o(969677),
+                F = o(877511),
+                M = o(837260),
+                E = o(110959),
+                P = o(978342),
+                O = o(700916),
+                V = o(70477),
                 G = o(31450),
-                z = o(374417),
-                A = o(88214),
-                D = o(272403),
-                q = o(64614),
-                B = o(26296),
-                L = o(472036),
-                N = o(400441),
-                H = o(696281),
-                J = o(752659);
-            const U = {
+                A = o(374417),
+                z = o(569251),
+                D = o(303533),
+                q = o(979959),
+                B = o(778581),
+                L = o(799245),
+                N = o(224989),
+                U = o(527138),
+                H = o(752659),
+                J = o(545576),
+                W = o(866371),
+                X = o(232977),
+                Y = o(618196);
+            const Q = {
                     ActionResponder: i.Z,
-                    AdaptiveView: rr,
+                    AdaptiveView: tr,
                     Button: g.Z,
-                    ContextMenu: rr,
+                    ContextMenu: tr,
                     Cover: n.Z,
-                    DebugProps: rr,
-                    Divider: ar,
-                    Ellipse: ar,
+                    DebugProps: tr,
+                    Divider: gr,
+                    Ellipse: gr,
                     Feed: b.Z,
-                    "Feed.Item": rr,
+                    "Feed.Item": tr,
                     FeedPage: function (r) {
-                        return (0, e.jsx)(Q, { ...r, desc: "not for render - sth went wrong" });
+                        return (0, e.jsx)(or, { ...r, desc: "not for render - sth went wrong" });
                     },
-                    FocusImage: K,
+                    FocusImage: er,
                     Form: s.Z,
-                    "Form.AsYouType": K,
-                    "Form.Group": rr,
-                    "Form.Group.Reset": rr,
-                    "Form.GroupCounter": K,
-                    "Form.Reset": rr,
-                    "Form.Result": ar,
+                    "Form.AsYouType": er,
+                    "Form.Group": tr,
+                    "Form.Group.Reset": tr,
+                    "Form.GroupCounter": er,
+                    "Form.Reset": tr,
+                    "Form.Result": gr,
                     "Form.Selection": l.Z,
                     "Form.Submit": c.Z,
-                    GlassMorphicView: K,
+                    GlassMorphicView: er,
                     Grid: _.Z,
                     "Grid.Cell": h.Z,
                     "Grid.Row": w.Z,
                     HScroller: $.Z,
-                    HStack: ar,
-                    Icon: x.C,
-                    If: k.Z,
-                    Image: y.Z,
+                    HStack: gr,
+                    Icon: x.ZP,
+                    If: y.Z,
+                    Image: k.Z,
                     Input: d.Z,
                     "Input.Checkbox": v.Z,
-                    "Input.Code": j.Z,
-                    "Input.Multiline": m.Z,
+                    "Input.Code": m.Z,
+                    "Input.Multiline": j.Z,
                     "Input.Option": f.Z,
                     "Input.Phone": u.Z,
-                    "Input.Reset": rr,
+                    "Input.Reset": tr,
                     "Input.Select": p.Z,
-                    Label: K,
+                    Label: er,
                     Link: Z.Z,
                     List: S.Z,
                     List2: t.Z,
-                    Markdown: K,
-                    Menu: K,
+                    Markdown: er,
+                    Menu: er,
                     Nav: I.Z,
-                    Overlay: rr,
-                    Page: C.Z,
-                    "Page.Section": C.Z,
-                    Pager: F.Z,
-                    ParticleChaos: K,
-                    Popover: T.Z,
-                    Rect: ar,
-                    Remote: R.Z,
+                    Overlay: tr,
+                    Page: T.Z,
+                    "Page.Section": T.Z,
+                    Pager: C.Z,
+                    ParticleChaos: er,
+                    Popover: R.Z,
+                    Rect: gr,
+                    Remote: F.Z,
                     RichText: M.Z,
-                    ShareLink: P.Z,
-                    Sheet: O.Z,
-                    SignInWithAppleButton: K,
-                    SignupArkoseSecurityChallenge: or,
-                    Space: ar,
-                    Spinner: V.Z,
-                    StoryPager: z.Z,
+                    ShareLink: E.Z,
+                    Sheet: P.Z,
+                    SignInWithAppleButton: er,
+                    SignupArkoseSecurityChallenge: nr,
+                    Space: gr,
+                    Spinner: O.Z,
+                    StoryPager: A.Z,
                     "StoryPager.Element": G.Z,
-                    "StoryPager.Story": E.Z,
-                    Text: A.Z,
-                    TiledView: K,
+                    "StoryPager.Story": V.Z,
+                    Text: z.Z,
+                    TiledView: er,
                     Time: D.Z,
                     Timer: q.Z,
-                    Toggle: K,
-                    TournamentBracket: K,
+                    Toggle: er,
+                    TournamentBracket: er,
                     VScroller: N.Z,
-                    VStack: ar,
+                    VStack: gr,
                     Video: B.Z,
                     View: L.Z,
-                    XClipAppStoreOverlay: rr,
-                    ZStack: H.Z,
-                    Zoomable: K,
-                    "x.com.Broadcast": K,
-                    "x.com.GenericURT": or,
-                    "x.com.ImmersiveVideo": K,
-                    "x.com.Video": or,
-                    "x.com.WebView": K,
+                    XClipAppStoreOverlay: tr,
+                    ZStack: U.Z,
+                    Zoomable: er,
+                    "x.com.Broadcast": er,
+                    "x.com.GenericURT": nr,
+                    "x.com.ImmersiveVideo": er,
+                    "x.com.Video": nr,
+                    "x.com.WebView": er,
+                    RichText2: J.Z,
+                    "RichText.Icon": W.Z,
+                    "RichText.Text": X.Z,
+                    "RichText.Time": Y.Z,
                 },
-                W = new Map(Object.entries(U).map(([r, a]) => [(0, J.$3)(r), a])),
-                X = new Map(Object.entries(U).map(([r]) => [(0, J.$3)(r), r])),
-                Y = (r) => (r ? (W.get(r.type) ?? K) : K);
-            function Q({ el: r, desc: a = "not found - fix it" }) {
-                return (0, e.jsxs)("h3", { children: ["[", X.get(r?.type ?? 0) ?? r?.type ?? "unknown", "]:", a] });
+                K = new Map(Object.entries(Q).map(([r, a]) => [(0, H.$3)(r), a])),
+                rr = new Map(Object.entries(Q).map(([r]) => [(0, H.$3)(r), r])),
+                ar = (r) => (r ? (K.get(r.type) ?? er) : er);
+            function or({ el: r, desc: a = "not found - fix it" }) {
+                return (0, e.jsxs)("h3", { children: ["[", rr.get(r?.type ?? 0) ?? r?.type ?? "unknown", "]:", a] });
             }
-            function K(r) {
-                return (0, e.jsx)(Q, { ...r });
+            function er(r) {
+                return (0, e.jsx)(or, { ...r });
             }
-            function rr(r) {
-                return (0, e.jsx)(Q, { ...r });
+            function tr(r) {
+                return (0, e.jsx)(or, { ...r });
             }
-            function ar(r) {
-                return (0, e.jsx)(Q, { ...r, desc: "deprecated - remove it" });
+            function gr(r) {
+                return (0, e.jsx)(or, { ...r, desc: "deprecated - remove it" });
             }
-            function or(r) {
-                return (0, e.jsx)(Q, { ...r, desc: "should be in web - implement it." });
+            function nr(r) {
+                return (0, e.jsx)(or, { ...r, desc: "should be in web - implement it." });
             }
         },
         869593: (r, a, o) => {
@@ -465,24 +473,24 @@
         424012: (r, a, o) => {
             var e, t, g, n, b, i, s, l, c, d;
             function v(r) {
-                const [a, o, g, c, d, v, j, m, f, u, p, _, h, w, $, x, k] = r,
-                    y = g,
+                const [a, o, g, c, d, v, m, j, f, u, p, _, h, w, $, x, y] = r,
+                    k = g,
                     Z = f,
-                    S = a({ type: j, props: c(j, y), children: d(y), id: v(Z), extend: v(y) }),
-                    I = w({ [b.atom]: _(b.atom, a({ id: Z })), [b.atom_with_root]: _(b.atom_with_root, a({ id: Z, root: y })), [b.bag_key]: _(b.bag_key, a({ id: Z, key: j, root: y })), [b.str_key]: _(b.str_key, a({ id: Z, key: h, root: y })), [b.url_param]: _(b.url_param, a({ id: Z, key: h, root: y })), [b.transforming_str_to_int]: _(b.transforming_str_to_int, a({ id: Z, root: y })), [b.transforming_int_to_str]: _(b.transforming_int_to_str, a({ id: Z, root: y })) }),
-                    C = a({ ref: I, prop_ref: y, is_default: p }),
-                    F = w({ [n.null]: _(n.null, I), [n.set]: _(n.set, $(I, y)), [n.inc]: _(n.inc, $(I, j)), [n.str_append]: _(n.str_append, $(I, h)), [n.list_insert]: _(n.list_insert, x(I, y, v(j))), [n.list_remove]: _(n.list_remove, $(I, y)), [n.toggle]: _(n.toggle, $(I, v($(y, y)))), [n.merge_bag]: _(n.merge_bag, $(I, y)), [n.merge_str_dict]: _(n.merge_str_dict, $(I, y)) }),
-                    T = w({ [i.page]: _(i.page, a({ url: y, preview: v(y), replace: p })), [i.page_reset_to]: _(i.page_reset_to, a({ url: y, preview: v(y), replace: p })), [i.page_post]: _(i.page_post, a({ url: y, body: v(y), preview: v(y), replace: p })), [i.dismiss]: k([i.dismiss]), [i.link]: _(i.link, a({ url: y })), [i.back]: k([i.back]), [i.back_root]: k([i.back_root]), [i.scroll_top]: k([i.scroll_top]), [i.scroll_bottom]: k([i.scroll_bottom]), [i.scroll_id]: _(i.scroll_id, a({ id: y })) }),
-                    R = w((r) => ({ [t.change]: _(t.change, F), [t.confirm]: _(t.confirm, a({ ref: y, action: r, cancel: v(r) })), [t.multi]: _(t.multi, d(r)), [t.post_request]: _(t.post_request, a({ url: y, body: y, complete: v(r), error: v(r), optimistic: v(r) })), [t.haptic]: _(t.haptic, a({ action: r, intensity: j })), [t.present]: _(t.present, a({ ref: y, type: o })), [t.navigate]: _(t.navigate, T), [t.refresh]: _(t.refresh, a({ type: o, id: v(Z) })), [t.cache_clear]: _(t.cache_clear, h), [t.prefetch]: _(t.prefetch, a({ urls: d(h), priority: o })), [t.scribe]: _(t.scribe, y), [t.system]: _(t.system, a({ type: o, ref: y })), [t.delayed]: _(t.delayed, a({ action: r, delaySeconds: j })), [t.auth]: _(t.auth, a({ data: h, secret: h, knownDeviceToken: h })) })),
-                    M = w((r) => ({ [s.null]: _(s.null, a({ ref: I })), [s.not_null]: _(s.not_null, a({ ref: I })), [s.is]: _(s.is, a({ ref: I, value: y })), [s.is_not]: _(s.is_not, a({ ref: I, value: y })), [s.in]: _(s.in, a({ ref: I, value: d(y) })), [s.not_in]: _(s.not_in, a({ ref: I, value: d(y) })), [s.gt]: _(s.gt, a({ ref: I, value: y })), [s.gte]: _(s.gte, a({ ref: I, value: y })), [s.lt]: _(s.lt, a({ ref: I, value: y })), [s.lte]: _(s.lte, a({ ref: I, value: y })), [s.starts_with]: _(s.starts_with, a({ ref: I, value: h })), [s.ends_with]: _(s.ends_with, a({ ref: I, value: h })), [s.includes]: _(s.includes, a({ ref: I, value: h })), [s.and]: _(s.and, $(r, r)), [s.or]: _(s.or, $(r, r)), [s.not]: _(s.not, r) })),
-                    P = d(d(m)),
-                    O = d(x(o, h, v(h))),
-                    V = w({ [e.str]: _(e.str, h), [e.int]: _(e.int, m), [e.mods]: _(e.mods, P), [e.conditional_mods]: _(e.conditional_mods, d($(P, M))), [e.id]: _(e.id, Z), [e.f64]: _(e.f64, u), [e.bool]: _(e.bool, p), [e.element]: _(e.element, y), [e.elements]: _(e.elements, d(y)), [e.enum]: _(e.enum, g), [e.url]: _(e.url, h), [e.rich_text]: _(e.rich_text, O), [e.date]: _(e.date, f), [e.scribe]: _(e.scribe, y), [e.bag]: _(e.bag, c(j, y)), [e.str_dict]: _(e.str_dict, c(h, h)), [e.atom]: _(e.atom, C), [e.action]: _(e.action, R), [e.list]: _(e.list, d(y)), [e.predicate]: _(e.predicate, M), [e.feed]: _(e.feed, d(y)), [e.str_list]: _(e.str_list, d(h)), [e.int_list]: _(e.int_list, d(m)), [e.f64_list]: _(e.f64_list, d(u)), [e.bool_list]: _(e.bool_list, d(p)), [e.__notfound]: _(e.__notfound, k(void 0)) }),
-                    E = a({ els: d(S), props: d(V), ts: m }),
-                    G = a({ ref: y, t: v(m) });
-                return w({ [l.dom_data]: _(l.dom_data, E), [l.dom_ready]: _(l.dom_ready, G), [l.action]: _(l.action, R) });
+                    S = a({ type: m, props: c(m, k), children: d(k), id: v(Z), extend: v(k) }),
+                    I = w({ [b.atom]: _(b.atom, a({ id: Z })), [b.atom_with_root]: _(b.atom_with_root, a({ id: Z, root: k })), [b.bag_key]: _(b.bag_key, a({ id: Z, key: m, root: k })), [b.str_key]: _(b.str_key, a({ id: Z, key: h, root: k })), [b.url_param]: _(b.url_param, a({ id: Z, key: h, root: k })), [b.transforming_str_to_int]: _(b.transforming_str_to_int, a({ id: Z, root: k })), [b.transforming_int_to_str]: _(b.transforming_int_to_str, a({ id: Z, root: k })) }),
+                    T = a({ ref: I, prop_ref: k, is_default: p }),
+                    C = w({ [n.null]: _(n.null, I), [n.set]: _(n.set, $(I, k)), [n.inc]: _(n.inc, $(I, m)), [n.str_append]: _(n.str_append, $(I, h)), [n.list_insert]: _(n.list_insert, x(I, k, v(m))), [n.list_remove]: _(n.list_remove, $(I, k)), [n.toggle]: _(n.toggle, $(I, v($(k, k)))), [n.merge_bag]: _(n.merge_bag, $(I, k)), [n.merge_str_dict]: _(n.merge_str_dict, $(I, k)) }),
+                    R = w({ [i.page]: _(i.page, a({ url: k, preview: v(k), replace: p })), [i.page_reset_to]: _(i.page_reset_to, a({ url: k, preview: v(k), replace: p })), [i.page_post]: _(i.page_post, a({ url: k, body: v(k), preview: v(k), replace: p })), [i.dismiss]: y([i.dismiss]), [i.link]: _(i.link, a({ url: k })), [i.back]: y([i.back]), [i.back_root]: y([i.back_root]), [i.scroll_top]: y([i.scroll_top]), [i.scroll_bottom]: y([i.scroll_bottom]), [i.scroll_id]: _(i.scroll_id, a({ id: k })) }),
+                    F = w((r) => ({ [t.change]: _(t.change, C), [t.confirm]: _(t.confirm, a({ ref: k, action: r, cancel: v(r) })), [t.multi]: _(t.multi, d(r)), [t.post_request]: _(t.post_request, a({ url: k, body: k, complete: v(r), error: v(r), optimistic: v(r) })), [t.haptic]: _(t.haptic, a({ action: r, intensity: m })), [t.present]: _(t.present, a({ ref: k, type: o })), [t.navigate]: _(t.navigate, R), [t.refresh]: _(t.refresh, a({ type: o, id: v(Z) })), [t.cache_clear]: _(t.cache_clear, h), [t.prefetch]: _(t.prefetch, a({ urls: d(h), priority: o })), [t.scribe]: _(t.scribe, k), [t.system]: _(t.system, a({ type: o, ref: k })), [t.delayed]: _(t.delayed, a({ action: r, delaySeconds: m })), [t.auth]: _(t.auth, a({ data: h, secret: h, knownDeviceToken: h })) })),
+                    M = w((r) => ({ [s.null]: _(s.null, a({ ref: I })), [s.not_null]: _(s.not_null, a({ ref: I })), [s.is]: _(s.is, a({ ref: I, value: k })), [s.is_not]: _(s.is_not, a({ ref: I, value: k })), [s.in]: _(s.in, a({ ref: I, value: d(k) })), [s.not_in]: _(s.not_in, a({ ref: I, value: d(k) })), [s.gt]: _(s.gt, a({ ref: I, value: k })), [s.gte]: _(s.gte, a({ ref: I, value: k })), [s.lt]: _(s.lt, a({ ref: I, value: k })), [s.lte]: _(s.lte, a({ ref: I, value: k })), [s.starts_with]: _(s.starts_with, a({ ref: I, value: h })), [s.ends_with]: _(s.ends_with, a({ ref: I, value: h })), [s.includes]: _(s.includes, a({ ref: I, value: h })), [s.and]: _(s.and, $(r, r)), [s.or]: _(s.or, $(r, r)), [s.not]: _(s.not, r) })),
+                    E = d(d(j)),
+                    P = d(x(o, h, v(h))),
+                    O = w({ [e.str]: _(e.str, h), [e.int]: _(e.int, j), [e.mods]: _(e.mods, E), [e.conditional_mods]: _(e.conditional_mods, d($(E, M))), [e.id]: _(e.id, Z), [e.f64]: _(e.f64, u), [e.bool]: _(e.bool, p), [e.element]: _(e.element, k), [e.elements]: _(e.elements, d(k)), [e.enum]: _(e.enum, g), [e.url]: _(e.url, h), [e.rich_text]: _(e.rich_text, P), [e.date]: _(e.date, f), [e.scribe]: _(e.scribe, k), [e.bag]: _(e.bag, c(m, k)), [e.str_dict]: _(e.str_dict, c(h, h)), [e.atom]: _(e.atom, T), [e.action]: _(e.action, F), [e.list]: _(e.list, d(k)), [e.predicate]: _(e.predicate, M), [e.feed]: _(e.feed, d(k)), [e.str_list]: _(e.str_list, d(h)), [e.int_list]: _(e.int_list, d(j)), [e.f64_list]: _(e.f64_list, d(u)), [e.bool_list]: _(e.bool_list, d(p)), [e.__notfound]: _(e.__notfound, y(void 0)) }),
+                    V = a({ els: d(S), props: d(O), ts: j }),
+                    G = a({ ref: k, t: v(j) });
+                return w({ [l.dom_data]: _(l.dom_data, V), [l.dom_ready]: _(l.dom_ready, G), [l.action]: _(l.action, F) });
             }
-            function j() {
+            function m() {
                 const r = (r) => r.uint(),
                     a = (r) => r.u8(),
                     o = (r) => r.bool(),
@@ -525,7 +533,7 @@
                     ]);
                 return { decodeMessage: (r) => g(r) };
             }
-            function m(r) {
+            function j(r) {
                 const a = new DataView(r);
                 let o = 0;
                 const e = () => a.getUint8(o++),
@@ -565,7 +573,7 @@
                     uint: t,
                 };
             }
-            o.d(a, { J: () => i, RB: () => s, ZI: () => l, _I: () => e, ai: () => c, aw: () => n, fx: () => b, je: () => t, r1: () => m, xv: () => j }),
+            o.d(a, { J: () => i, RB: () => s, ZI: () => l, _I: () => e, ai: () => c, aw: () => n, fx: () => b, je: () => t, r1: () => j, xv: () => m }),
                 (function (r) {
                     (r[(r.str = 0)] = "str"), (r[(r.int = 1)] = "int"), (r[(r.mods = 3)] = "mods"), (r[(r.id = 4)] = "id"), (r[(r.f64 = 5)] = "f64"), (r[(r.bool = 6)] = "bool"), (r[(r.element = 7)] = "element"), (r[(r.elements = 8)] = "elements"), (r[(r.enum = 10)] = "enum"), (r[(r.url = 11)] = "url"), (r[(r.rich_text = 12)] = "rich_text"), (r[(r.date = 14)] = "date"), (r[(r.scribe = 15)] = "scribe"), (r[(r.bag = 16)] = "bag"), (r[(r.str_dict = 17)] = "str_dict"), (r[(r.atom = 18)] = "atom"), (r[(r.action = 19)] = "action"), (r[(r.list = 21)] = "list"), (r[(r.predicate = 22)] = "predicate"), (r[(r.feed = 24)] = "feed"), (r[(r.conditional_mods = 25)] = "conditional_mods"), (r[(r.str_list = 26)] = "str_list"), (r[(r.int_list = 27)] = "int_list"), (r[(r.f64_list = 28)] = "f64_list"), (r[(r.bool_list = 29)] = "bool_list"), (r[(r.__notfound = 13)] = "__notfound");
                 })(e || (e = {})),
@@ -653,4 +661,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--2ea035ac.8c213cba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--2ea035ac.e62a55fa.js.map

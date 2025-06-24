@@ -3,9 +3,9 @@
     ["modules.common-e019dbda"],
     {
         176376: (e, t, o) => {
-            o.d(t, { Z: () => g });
+            o.d(t, { Z: () => f });
             var r = o(202784),
-                n = o(557487),
+                n = o(316046),
                 s = o(731708),
                 i = o(519172),
                 l = o(392237),
@@ -22,22 +22,22 @@
             class b extends r.PureComponent {
                 render() {
                     const { color: e, link: t, onClick: o, screenName: s, text: i, weight: l, withHashflags: c } = this.props,
-                        d = r.createElement(n.Z.TextFragment, { color: e, link: t, onClick: o, style: f.wordBreak, weight: l, withHashflags: c }, i, this._renderBadges());
+                        d = r.createElement(n.Z.TextFragment, { color: e, link: t, onClick: o, style: g.wordBreak, weight: l, withHashflags: c }, i, this._renderBadges());
                     return s ? r.createElement(a.Z, { screenName: s }, d) : d;
                 }
                 _renderBadges() {
                     const { badging: e } = this.props;
-                    return e ? r.createElement(s.ZP, { style: f.badges }, r.createElement(i.Z, e)) : null;
+                    return e ? r.createElement(s.ZP, { style: g.badges }, r.createElement(i.Z, e)) : null;
                 }
             }
-            const f = l.default.create((e) => ({ wordBreak: { wordBreak: "break-word", display: "inline-flex", flexWrap: "wrap" }, badges: { position: "relative", top: 1 } })),
-                g = _(b);
+            const g = l.default.create((e) => ({ wordBreak: { wordBreak: "break-word", display: "inline-flex", flexWrap: "wrap" }, badges: { position: "relative", top: 1 } })),
+                f = _(b);
         },
         686689: (e, t, o) => {
             o.d(t, { Z: () => u });
             var r = o(807896),
                 n = o(202784),
-                s = o(557487),
+                s = o(316046),
                 i = o(392237),
                 l = o(946409),
                 a = o(176376);
@@ -45,10 +45,10 @@
                 d = "Natural";
             class h extends n.PureComponent {
                 render() {
-                    const { alignment: e, animateIn: t, color: o, entities: i, forceAutoTextDirection: d, id: h, onEntityClick: u, role: m, rtl: _, size: b, style: f, text: g, weight: C, withHashflags: w } = this.props,
+                    const { alignment: e, animateIn: t, color: o, entities: i, forceAutoTextDirection: d, id: h, onEntityClick: u, role: m, rtl: _, size: b, style: g, text: f, weight: C, withHashflags: w } = this.props,
                         k = e === c ? "center" : void 0,
                         I = d ? "auto" : _ ? "rtl" : "ltr";
-                    return n.createElement(s.Z, { align: k, animateIn: t, color: o, dir: I, entities: i, id: h, onEntityClick: u, renderFragment: { user: (e, t) => n.createElement(a.Z, (0, r.Z)({}, e, { color: "text", entityId: t.id })), url: (e, t) => n.createElement(s.Z.TextFragment, (0, r.Z)({}, e, { link: (0, l.s9)(t) })) }, role: m, size: b, style: [p.hideOverflow, f], text: g, weight: C, withHashflags: w });
+                    return n.createElement(s.Z, { align: k, animateIn: t, color: o, dir: I, entities: i, id: h, onEntityClick: u, renderFragment: { user: (e, t) => n.createElement(a.Z, (0, r.Z)({}, e, { color: "text", entityId: t.id })), url: (e, t) => n.createElement(s.Z.TextFragment, (0, r.Z)({}, e, { link: (0, l.s9)(t) })) }, role: m, size: b, style: [p.hideOverflow, g], text: f, weight: C, withHashflags: w });
                 }
             }
             h.defaultProps = { alignment: d };
@@ -72,8 +72,8 @@
                 m = o(226597),
                 _ = o(155353),
                 b = o(630715),
-                f = o(516951),
-                g = o(376293),
+                g = o(516951),
+                f = o(376293),
                 C = o(946099),
                 w = o(916585),
                 k = o(847607),
@@ -82,7 +82,7 @@
             const x = "block",
                 y = "mute",
                 E = "reportIllegalContentProfile",
-                R = l().hef5960c,
+                R = l().g00b4c55,
                 U = l().ibd0b842,
                 A = l().b9c26480,
                 Z = l().e922ce0c,
@@ -97,7 +97,7 @@
                             return { Icon: e, text: r, onClick: t, testID: o };
                         },
                         a = () => {
-                            const { Icon: e, onClick: t, testID: o, text: r } = (0, g.op)({ blockAction: q, source: g.SC.PROFILE, testID: x, unblockAction: z, user: i });
+                            const { Icon: e, onClick: t, testID: o, text: r } = (0, f.op)({ blockAction: q, source: f.SC.PROFILE, testID: x, unblockAction: z, user: i });
                             return { Icon: e, text: r, onClick: t, testID: o };
                         },
                         v = () => ({ Icon: h.default, text: T, onClick: O, link: `/${i.screen_name}/lists` }),
@@ -134,7 +134,7 @@
                         }),
                         H = () => ({
                             Icon: c.Z,
-                            text: R,
+                            text: R({ screenName: i.screen_name }),
                             onClick: () => {
                                 e.onClose(), e.onShare();
                             },
@@ -178,7 +178,7 @@
                             if (t) {
                                 const { label: e, ...s } = t;
                                 r({ confirmButtonLabel: e, ...s })
-                                    .then(o, f.Z)
+                                    .then(o, g.Z)
                                     .finally(n);
                             } else o();
                         };
@@ -352,8 +352,8 @@
                 m = o(942893),
                 _ = o(903019),
                 b = o(409438),
-                f = o(443781),
-                g = o(293988),
+                g = o(443781),
+                f = o(293988),
                 C = o(23134),
                 w = o(325686),
                 k = o(247056),
@@ -379,7 +379,7 @@
                     return t && t.profile_image_url_https ? n.createElement(D, (0, r.Z)({}, e, { avatarUri: t.profile_image_url_https, description: t.description, entities: t.entities, followRequestReceived: t.follow_request_received, highlightedLabel: t.highlightedLabel, isBlockedBy: t.blocked_by, isBlocking: t.blocking, isBlueVerified: t.is_blue_verified, isDeviceFollowing: t.notifications, isFollowedBy: t.followed_by, isFollowing: t.following, isProtected: t.protected, isVerified: t.verified, name: t.name, screenName: t.screen_name, translatorType: t.translator_type, user: t, verifiedType: t.verified_type, withheldDescription: t.withheld_description, withheldEntities: t.withheld_entities })) : null;
                 };
             T.defaultProps = { cellClickable: !0, decoration: null, displayMode: b.Z.UserCompact, followRequestReceived: !1, hideBlocked: !1, promotedItemType: h.bj.USER, shouldScribeProfileClick: !0, shouldScribeImpression: !1, withFollowsYou: !1 };
-            const F = ({ isDeviceFollowing: e, userId: t }) => n.createElement(g.Z, { isFollowing: e, style: N.followButton, userId: t }),
+            const F = ({ isDeviceFollowing: e, userId: t }) => n.createElement(f.Z, { isFollowing: e, style: N.followButton, userId: t }),
                 P = ({ onFollowClick: e, promotedContent: t, userId: o, viewerUserId: r }) => (r !== o ? n.createElement(C.C, { onFollowClick: e, promotedContent: t, size: "small", style: N.followButton, userId: o }) : null),
                 L = ({ referringPage: e, userId: t, viewerUserId: o }) => (o !== t ? n.createElement(C.C, { buttonType: "primaryFilled", isSuperFollowSubscriptionEnabled: !0, referringPage: e, relationshipMode: "subscribe", size: "small", style: N.followButton, userId: t }) : null),
                 B = (e) => n.createElement(v, { promotedContent: e.promotedContent, user: e.user }, P(e));
@@ -419,8 +419,8 @@
                     return !(0, a.Z)(this.props, e);
                 }
                 render() {
-                    const { analytics: e, avatarDecoration: t, bottomControl: o, cellClickable: l, createLocalApiErrorHandler: a, decoration: c, followRequestReceived: h, hideBlocked: p, highlightedLabel: u, isBlockedBy: m, isBlocking: _, isDeviceFollowing: b, isFollowing: f, isInSidebar: g, log: C, onClick: w, onFollowClick: k, promotedItemId: I, referringPage: v, saveAsRecentSearch: x, shouldScribeImpression: y, shouldScribeProfileClick: E, shouldStoreTypeaheadItem: R, socialContext: U, user: A, ...Z } = this.props;
-                    return this._shouldRender() ? n.createElement(s.ZP.Provider, { value: { socialContextRefreshEnabled: () => this.context.featureSwitches.isTrue("social_context_and_topic_context_refresh_alignment_enabled") } }, n.createElement(i.ZP, (0, r.Z)({}, Z, { affiliateBadgeInfo: A.highlightedLabel, avatarDecoration: t, bottomControl: this._renderBottomControl(), decoration: this._renderDecoration(), highlightedLabel: A.highlightedLabel, isBlocking: A.blocking, onAvatarClick: this._handleAvatarClick, onCellClick: l ? this._handleCellClick : void 0, onScreenNameClick: this._handleScreenNameClick, socialContext: U ? { contextType: U.contextType, text: U.text, link: U.landingUrl ? (0, d.s9)(U.landingUrl) : void 0 } : void 0, withDarkerInteractiveBackground: g }))) : null;
+                    const { analytics: e, avatarDecoration: t, bottomControl: o, cellClickable: l, createLocalApiErrorHandler: a, decoration: c, followRequestReceived: h, hideBlocked: p, highlightedLabel: u, isBlockedBy: m, isBlocking: _, isDeviceFollowing: b, isFollowing: g, isInSidebar: f, log: C, onClick: w, onFollowClick: k, promotedItemId: I, referringPage: v, saveAsRecentSearch: x, shouldScribeImpression: y, shouldScribeProfileClick: E, shouldStoreTypeaheadItem: R, socialContext: U, user: A, ...Z } = this.props;
+                    return this._shouldRender() ? n.createElement(s.ZP.Provider, { value: { socialContextRefreshEnabled: () => this.context.featureSwitches.isTrue("social_context_and_topic_context_refresh_alignment_enabled") } }, n.createElement(i.ZP, (0, r.Z)({}, Z, { affiliateBadgeInfo: A.highlightedLabel, avatarDecoration: t, bottomControl: this._renderBottomControl(), decoration: this._renderDecoration(), highlightedLabel: A.highlightedLabel, isBlocking: A.blocking, onAvatarClick: this._handleAvatarClick, onCellClick: l ? this._handleCellClick : void 0, onScreenNameClick: this._handleScreenNameClick, socialContext: U ? { contextType: U.contextType, text: U.text, link: U.landingUrl ? (0, d.s9)(U.landingUrl) : void 0 } : void 0, withDarkerInteractiveBackground: f }))) : null;
                 }
                 _renderBottomControl() {
                     return this._renderControl(this.props.bottomControl || null);
@@ -461,7 +461,7 @@
                     } else n && this._scribeAction({ action: "impression" });
                 }
             }
-            (D.contextType = f.rC), (D.defaultProps = T.defaultProps);
+            (D.contextType = g.rC), (D.defaultProps = T.defaultProps);
             const N = l.default.create((e) => ({ followButton: { marginStart: e.spaces.space12 } })),
                 H = (0, c.Z)(S(T)),
                 M = (e) => n.createElement(p.nO, { namespace: { element: "user" } }, n.createElement(H, e));
@@ -473,7 +473,7 @@
                 s = o(202784),
                 i = (o(585488), o(277660)),
                 l = o.n(i),
-                a = o(557487),
+                a = o(316046),
                 c = o(256563),
                 d = o(176376),
                 h = o(946409);
@@ -583,9 +583,9 @@
                 render(e) {
                     const { align: t, "aria-level": o, color: l, id: d, role: h, size: p, style: u, testID: m, weight: _ } = e,
                         b = this._renderChildren(e),
-                        f = (0, i.eU)(u),
-                        g = `${this.fromIndex},${this.toIndex}`;
-                    return this.rangeObject?.type || this.rangeObject?.styling_type ? r.createElement(c, (0, n.Z)({}, e, { fromIndex: this.fromIndex, key: g, stylingRange: this.rangeObject, toIndex: this.toIndex }), b) : this.rangeObject ? r.createElement(a, (0, n.Z)({}, e, { entity: this.rangeObject, fromIndex: this.fromIndex, key: g, toIndex: this.toIndex }), b) : r.createElement(s.ZP, { align: t, "aria-level": o, color: l, id: d, key: g, role: h, size: p, style: u, testID: m, weight: f || _ }, b);
+                        g = (0, i.eU)(u),
+                        f = `${this.fromIndex},${this.toIndex}`;
+                    return this.rangeObject?.type || this.rangeObject?.styling_type ? r.createElement(c, (0, n.Z)({}, e, { fromIndex: this.fromIndex, key: f, stylingRange: this.rangeObject, toIndex: this.toIndex }), b) : this.rangeObject ? r.createElement(a, (0, n.Z)({}, e, { entity: this.rangeObject, fromIndex: this.fromIndex, key: f, toIndex: this.toIndex }), b) : r.createElement(s.ZP, { align: t, "aria-level": o, color: l, id: d, key: f, role: h, size: p, style: u, testID: m, weight: g || _ }, b);
                 }
             }
             class h extends r.PureComponent {
@@ -611,4 +611,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.5bf5daca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.850926ea.js.map

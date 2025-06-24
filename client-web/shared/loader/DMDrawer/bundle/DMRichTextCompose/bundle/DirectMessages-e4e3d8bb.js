@@ -20,14 +20,15 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -47,7 +48,7 @@
             });
         },
         376293: (e, t, r) => {
-            r.d(t, { $f: () => C, KV: () => v, LI: () => w, SC: () => _, Vt: () => y, ed: () => M, op: () => k });
+            r.d(t, { $f: () => k, KV: () => D, LI: () => w, SC: () => C, Vt: () => y, ed: () => M, op: () => _ });
             var o = r(202784),
                 s = r(190286),
                 n = r(111677),
@@ -61,28 +62,28 @@
                 h = a().fcd4d489,
                 p = a().a6450e84,
                 f = a().ad00a739,
-                v = a().a9fd20be,
-                D = a().j546fb79,
+                D = a().a9fd20be,
+                v = a().j546fb79,
                 g = a().c9623eeb,
                 y = a().e133be4e,
                 b = a().f5f01af6,
-                _ = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                C = (e) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: f({ screenName: e }) }),
-                k = ({ blockAction: e, blockSubtext: t, source: r, testID: o, unblockAction: s, unblockSubtext: n, user: a }) => {
+                C = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                k = (e) => ({ confirmButtonType: "destructiveFilled", headline: m({ screenName: e }), label: p, text: f({ screenName: e }) }),
+                _ = ({ blockAction: e, blockSubtext: t, source: r, testID: o, unblockAction: s, unblockSubtext: n, user: a }) => {
                     let i,
                         d = c.Z;
                     const u = w(a);
                     switch (r) {
-                        case _.PROFILE:
-                        case _.LIST_DETAIL:
-                        case _.FOLLOWERS_LIST:
+                        case C.PROFILE:
+                        case C.LIST_DETAIL:
+                        case C.FOLLOWERS_LIST:
                             d = () => {
                                 a.blocking ? s(u) : e(u);
                             };
                             break;
-                        case _.TWEET:
-                        case _.TWEET_CARET:
-                        case _.RICH_FEEDBACK:
+                        case C.TWEET:
+                        case C.TWEET_CARET:
+                        case C.RICH_FEEDBACK:
                             (i = l.uq.block),
                                 (d = () => {
                                     a.blocking ? s(u) : e(u);
@@ -94,7 +95,7 @@
                 P = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
                 S = (e) => (e.blocking ? g({ screenName: e.screen_name }) : h({ screenName: e.screen_name })),
                 w = (e) => {
-                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: D({ screenName: t }), label: y, text: b }) : C(e.screen_name);
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: v({ screenName: t }), label: y, text: b }) : k(e.screen_name);
                     var t;
                 },
                 M = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
@@ -113,13 +114,13 @@
                 s = r.n(o),
                 n = r(437358);
             const a = (e, t) => {
-                const { id_str: r, screen_name: o } = e,
-                    a = (0, s().d78131b9)({ screenName: o });
-                return { Icon: n.default, text: a, link: { pathname: "/i/lists/add_member", state: { userId: r } }, onClick: t };
+                const { id_str: r } = e,
+                    o = s().a599bbfa;
+                return { Icon: n.default, text: o, link: { pathname: "/i/lists/add_member", state: { userId: r } }, onClick: t };
             };
         },
         847607: (e, t, r) => {
-            r.d(t, { Aq: () => u, FK: () => g, GS: () => i, N1: () => h, PY: () => m, X6: () => y, cm: () => d });
+            r.d(t, { FK: () => p, GS: () => i, N1: () => c, X6: () => f, cm: () => d });
             r(202784);
             var o = r(111677),
                 s = r.n(o),
@@ -127,20 +128,18 @@
                 a = r(40904);
             const i = s().hb568af4,
                 d = s().bb1cbeb6,
-                c = (s().h2f62206, s().e67b2d65),
-                l = s().f05597b3,
-                u = (e) => c({ screenName: e }),
-                m = (e) => l({ screenName: e }),
-                h = (e, t, r) => {
-                    const { muting: o, screen_name: s } = e;
-                    return { text: o ? m(s) : u(s), onClick: o ? r : t, Icon: o ? n.default : a.default };
-                },
-                p = s().h59f52ee,
-                f = s().eea0cbee,
-                v = s().i29533b3,
-                D = s().h129c3c3,
-                g = (e) => (e ? ((e) => v({ screenName: e }))(e) : p),
-                y = (e) => (e ? ((e) => D({ screenName: e }))(e) : f);
+                c =
+                    (s().h2f62206,
+                    (e, t, r) => {
+                        const { muting: o } = e;
+                        return { text: o ? d : i, onClick: o ? r : t, Icon: o ? n.default : a.default };
+                    }),
+                l = s().h59f52ee,
+                u = s().eea0cbee,
+                m = s().i29533b3,
+                h = s().h129c3c3,
+                p = (e) => (e ? ((e) => m({ screenName: e }))(e) : l),
+                f = (e) => (e ? ((e) => h({ screenName: e }))(e) : u);
         },
         417714: (e, t, r) => {
             r.d(t, { l: () => l });
@@ -217,7 +216,7 @@
                 n = 4;
         },
         47743: (e, t, r) => {
-            r.d(t, { nO: () => o.nO, YT: () => D, yN: () => y, X2: () => b, FI: () => _ });
+            r.d(t, { nO: () => o.nO, YT: () => v, yN: () => y, X2: () => b, FI: () => C });
             var o = r(481681),
                 s = r(205074);
             function n(e) {
@@ -235,8 +234,8 @@
                 h = r(166852),
                 p = r(450681),
                 f = r(575211),
-                v = r(456910);
-            const D = ({ excludeReplyUser: e, inReplyToStatus: t, viewerUserId: r }) => {
+                D = r(456910);
+            const v = ({ excludeReplyUser: e, inReplyToStatus: t, viewerUserId: r }) => {
                     const { retweeted_status: o } = t,
                         { entities: s, unmentioned_user_ids: n, user: a } = o || t,
                         i = o ? o.user : {},
@@ -251,13 +250,13 @@
                         l.forEach(({ name: e, screen_name: t, user_id: r }) => {
                             f[r] = { id_str: r, name: e, screen_name: t };
                         });
-                    const v = (e) => {
+                    const D = (e) => {
                             const t = n?.includes(e.id_str),
                                 r = e.id_str === a.id_str;
                             return !t || r ? [e.id_str] : [];
                         },
-                        D = (0, h.Z)((0, p.Z)([...v(i), ...v(d), a.id_str, ...c.flatMap((e) => v(e)), ...l.map((e) => e.user_id)])).filter((e) => e !== r);
-                    let y = r && a.id_str === r ? [r, ...D] : D;
+                        v = (0, h.Z)((0, p.Z)([...D(i), ...D(d), a.id_str, ...c.flatMap((e) => D(e)), ...l.map((e) => e.user_id)])).filter((e) => e !== r);
+                    let y = r && a.id_str === r ? [r, ...v] : v;
                     return e && (y = y.filter((e) => e !== a.id_str)), y.map((e) => f[e]);
                 },
                 g = ({ card: e }) => {
@@ -286,12 +285,12 @@
                         }
                     },
                 b = (e, t = !1, r = o.nO) => y({ mixedMediaUploadEnabled: t, maxNumberOfMedia: r })(e),
-                _ = (e, t = !1) => {
+                C = (e, t = !1) => {
                     const r = e.split(f.V.WordBoundary);
                     return (
                         t && r.pop(),
                         !!r.find((e) => {
-                            const t = (0, v.bR)(e, "compose");
+                            const t = (0, D.bR)(e, "compose");
                             return t && "users" === t.result_type;
                         })
                     );
@@ -399,7 +398,7 @@
                 };
         },
         965728: (e, t, r) => {
-            r.d(t, { C_: () => D, I5: () => p, K2: () => v, L$: () => c, Rb: () => f, nk: () => h, sI: () => b, xr: () => g });
+            r.d(t, { C_: () => v, I5: () => p, K2: () => D, L$: () => c, Rb: () => f, nk: () => h, sI: () => b, xr: () => g });
             var o = r(202784),
                 s = r(483677),
                 n = r(782578),
@@ -427,11 +426,11 @@
                     const t = e && e.ext_media_color && e.ext_media_color.palette;
                     return c(t);
                 },
-                v = (e) => {
+                D = (e) => {
                     const t = e && e.profile_image_extensions_media_color && e.profile_image_extensions_media_color.palette;
                     return c(t);
                 },
-                D = (e) => {
+                v = (e) => {
                     const t = e && e.profile_banner_extensions_media_color && e.profile_banner_extensions_media_color.palette;
                     return c(t);
                 },
@@ -543,7 +542,7 @@
                     addWelcomeMessageToConversation: () => n.Qe,
                     clearRecentSearch: () => Z,
                     clearRecentSearches: () => x,
-                    clearSearchCache: () => _,
+                    clearSearchCache: () => C,
                     default: () => O,
                     deleteConversations: () => n.S9,
                     disableMentionNotifications: () => n.BW,
@@ -630,36 +629,36 @@
                 h = r(390387),
                 p = r(849585),
                 f = r(147143);
-            const v = "rweb.recentDMSearches",
-                D = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
+            const D = "rweb.recentDMSearches",
+                v = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
                 g = "rweb/directMessages/ADD_RECENT_SEARCHES",
                 y = (e) => ({ payload: e, type: g }),
                 b = "rweb/directMessages/CLEAR_SEARCH_CACHE",
-                _ = () => ({ type: b }),
-                C = "rweb/directMessages/CLEAR_RECENT_SEARCH",
-                k = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
+                C = () => ({ type: b }),
+                k = "rweb/directMessages/CLEAR_RECENT_SEARCH",
+                _ = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
                 E = { searchResults: {}, recentSearches: [] };
             function P(e = E, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case g:
-                    case C:
-                        return { ...e, recentSearches: t.payload || [] };
                     case k:
+                        return { ...e, recentSearches: t.payload || [] };
+                    case _:
                         return { ...e, recentSearches: [] };
-                    case D.REQUEST: {
+                    case v.REQUEST: {
                         const { fetchNextPage: r, preserveResults: o, query: s } = t.meta || {},
                             n = e.searchResults ? e.searchResults[s] : {},
                             a = { ...e.searchResults, [s]: { ...n, fetchStatus: o || r ? n?.fetchStatus : m.ZP.LOADING } };
                         return { ...e, searchResults: a };
                     }
-                    case D.FAILURE: {
+                    case v.FAILURE: {
                         const { fetchNextPage: r, preserveResults: o, query: s } = t.meta || {},
                             n = e.searchResults ? e.searchResults[s] : {},
                             a = { ...e.searchResults, [s]: { ...n, fetchStatus: o || r ? n?.fetchStatus : m.ZP.FAILED, error: t.payload } };
                         return { ...e, searchResults: a };
                     }
-                    case D.SUCCESS: {
+                    case v.SUCCESS: {
                         const { query: r } = t.meta || {},
                             o = t.payload && t.payload.result ? t.payload.result : null,
                             { conversations: s, error: n } = o || {},
@@ -701,7 +700,7 @@
                                 return (r && r[t]?.lastCursor) || null;
                             })(s, d),
                             p = ((e) => e[f.Yf].search?.searchResults)(s),
-                            v = p ? p[d] : void 0,
+                            D = p ? p[d] : void 0,
                             g = !!h;
                         h && d && n && (m.cursor = h);
                         const y = u._O(t, { params: m, request: o.withEndpoint(l.Z).search }),
@@ -712,34 +711,34 @@
                                     return t && Object.values(t).forEach((e) => (e.isSearchResult = !0)), t ? (0, i.s0)({ conversations: t, users: r }) : null;
                                 }
                             };
-                        return !v || v?.error || a || (n && g) ? y({ actionTypes: D, context: "SEARCH", meta: { query: m.query, cursor: m.cursor, preserveResults: a, fetchNextPage: n } }, b) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: v }, meta: { query: d, cursor: h } }), Promise.resolve());
+                        return !D || D?.error || a || (n && g) ? y({ actionTypes: v, context: "SEARCH", meta: { query: m.query, cursor: m.cursor, preserveResults: a, fetchNextPage: n } }, b) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: D }, meta: { query: d, cursor: h } }), Promise.resolve());
                     },
                 T =
                     (e) =>
                     (t, r, { featureSwitches: o, userPersistence: s }) => {
                         const n = o.getNumberValue("dm_inbox_search_max_recent_searches_stored");
-                        return s.get(v).then((r) => {
+                        return s.get(D).then((r) => {
                             const o = r?.recentSearches || [];
-                            return !o.includes(e) && o.push(e), o.length > n && o.shift(), t(y(o)), s.set(v, { recentSearches: o });
+                            return !o.includes(e) && o.push(e), o.length > n && o.shift(), t(y(o)), s.set(D, { recentSearches: o });
                         });
                     },
                 Z =
                     (e) =>
                     (t, r, { userPersistence: o }) =>
-                        o.get(v).then((r) => {
+                        o.get(D).then((r) => {
                             const s = r?.recentSearches || [];
-                            return s.splice(s.indexOf(e), 1), t({ payload: s, type: C }), o.set(v, { recentSearches: s });
+                            return s.splice(s.indexOf(e), 1), t({ payload: s, type: k }), o.set(D, { recentSearches: s });
                         }),
                 x =
                     () =>
-                    (e, t, { userPersistence: r }) => (e({ type: k }), r.set(v, { recentSearches: [] }));
+                    (e, t, { userPersistence: r }) => (e({ type: _ }), r.set(D, { recentSearches: [] }));
             s.Z.register(
                 { [f.Yf]: P },
                 () =>
                     (e, t, { userPersistence: r }) =>
                         h.Qb(t())
                             ? Promise.resolve(
-                                  r.get(v).then((t) => {
+                                  r.get(D).then((t) => {
                                       const r = t?.recentSearches;
                                       r && e(y(r));
                                   }),
@@ -752,7 +751,7 @@
             const O = R;
         },
         947650: (e, t, r) => {
-            r.d(t, { Hq: () => y, c1: () => f, lP: () => D, og: () => v });
+            r.d(t, { Hq: () => y, c1: () => f, lP: () => v, og: () => D });
             var o = r(745123),
                 s = r(961104),
                 n = r(499627),
@@ -784,8 +783,8 @@
                     }
                     return u;
                 },
-                v = (e, t) => f(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
-                D = (e, t) => {
+                D = (e, t) => f(e, t).filter(({ name: e, profile_image_url_https: t }) => !!t?.length && !!e?.length),
+                v = (e, t) => {
                     let r;
                     if (t) {
                         const o = p(e, t);
@@ -800,7 +799,7 @@
                 y =
                     (e) =>
                     (t, r, { api: s }) =>
-                        void 0 !== D(r(), e)
+                        void 0 !== v(r(), e)
                             ? Promise.resolve()
                             : t(
                                   (
@@ -823,7 +822,7 @@
                 a = s.Z.register(n);
         },
         694180: (e, t, r) => {
-            r.d(t, { cM: () => v, dS: () => f, iY: () => D });
+            r.d(t, { cM: () => D, dS: () => f, iY: () => v });
             var o = r(370751),
                 s = r(399896),
                 n = r(663550),
@@ -847,19 +846,19 @@
                             if (!t && m.has(n)) return [h(l)];
                         });
                     },
-                v =
+                D =
                     ({ disclosureType: e, itemId: t, itemType: r, params: o }) =>
                     (n, a, { api: d }) => {
                         const { event: l, impression_id: m } = o,
                             f = `${r}-${t ?? "undefined"}-${m ?? "undefined"}-${l ?? "undefined"}`;
                         if (u.has(l) && p(a(), f)) return Promise.resolve();
-                        const v = e && "earned" === e.toLowerCase() ? "1" : null,
-                            D = { ...o, earned: v, epoch_ms: Date.now() };
-                        return (0, i._O)(n, { params: D, request: d.withEndpoint(s.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: D }, (e, t) => {
+                        const D = e && "earned" === e.toLowerCase() ? "1" : null,
+                            v = { ...o, earned: D, epoch_ms: Date.now() };
+                        return (0, i._O)(n, { params: v, request: d.withEndpoint(s.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: v }, (e, t) => {
                             if (!t && u.has(l)) return [h(f)];
                         });
                     },
-                D =
+                v =
                     (e) =>
                     (t, r, { api: o }) =>
                         (0, i._O)(t, { params: e, request: o.withEndpoint(s.Z).log })({ actionTypes: c, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -992,7 +991,7 @@
                 };
         },
         127218: (e, t, r) => {
-            r.d(t, { C: () => D });
+            r.d(t, { C: () => v });
             var o = r(202784),
                 s = r(614983),
                 n = r.n(s),
@@ -1006,14 +1005,14 @@
                 h = r(71620),
                 p = r(163889),
                 f = r(312771),
-                v = r(535338);
-            function D(e, t, r) {
+                D = r(535338);
+            function v(e, t, r) {
                 const [s, a] = o.useState(!1),
                     [d, l] = o.useState(null),
-                    D = i()(),
+                    v = i()(),
                     g = c()(t),
                     y = (0, h.po)(),
-                    b = (0, v.p)(e, g, r);
+                    b = (0, D.p)(e, g, r);
                 return o.useMemo(() => {
                     const t = (0, m.getRequest)(e).params?.metadata?.sliceInfoPath;
                     n()(!!t, "The provided query does not have an associated sliceInfoPath. Make sure you are using the `@slice` directive with your query.");
@@ -1031,7 +1030,7 @@
                         i = (t) => {
                             s ||
                                 (a(!0),
-                                u()(D, e, { ...g, cursor: t }).subscribe({
+                                u()(v, e, { ...g, cursor: t }).subscribe({
                                     complete: () => {
                                         a(!1);
                                     },
@@ -1046,13 +1045,13 @@
                         h = () => {
                             o && i(o);
                         },
-                        v = () => {
+                        D = () => {
                             i(void 0);
                         };
-                    return d ? { subsequentFetchStatus: f.ZP.FAILED, error: d, fetchNext: c, fetchPrevious: h, refetch: v, data: b, hasNext: Boolean(r), hasPrevious: Boolean(o) } : { subsequentFetchStatus: s ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: h, refetch: v, data: b, hasNext: Boolean(r), hasPrevious: Boolean(o) };
-                }, [e, b, s, d, D, g, y]);
+                    return d ? { subsequentFetchStatus: f.ZP.FAILED, error: d, fetchNext: c, fetchPrevious: h, refetch: D, data: b, hasNext: Boolean(r), hasPrevious: Boolean(o) } : { subsequentFetchStatus: s ? f.ZP.LOADING : f.ZP.NONE, error: void 0, fetchNext: c, fetchPrevious: h, refetch: D, data: b, hasNext: Boolean(r), hasPrevious: Boolean(o) };
+                }, [e, b, s, d, v, g, y]);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.0908bafa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-e4e3d8bb.a96ab32a.js.map

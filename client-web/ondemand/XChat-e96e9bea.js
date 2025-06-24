@@ -549,7 +549,7 @@
                         _ = (0, x.hC)("rweb_xchat_fs_worker");
                     (0, d.MQ)();
                     const E = (0, f.v9)(p.Lz);
-                    return n.createElement(m.i, null, n.createElement(h.Z, { headerless: j && w, history: t, isFullWidth: !0, primaryContent: () => (E ? n.createElement(b.x, null) : n.createElement(i.Z, { style: v.root }, n.createElement(s.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: k, logLevel: N ? a.B$.INFO : a.B$.WARN, newDBWorker: C, fsWorker: _, rwebElements: { dashMenuButton: j && y ? n.createElement(g.Z, null) : void 0 } } }))), sidebarContent: null, withTopNav: !1 }));
+                    return n.createElement(m.i, null, n.createElement(h.Z, { headerless: j && w, history: t, isFullWidth: !0, primaryContent: () => (E ? n.createElement(b.x, null) : n.createElement(i.Z, { style: v.root }, n.createElement(s.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: k, logLevel: N ? a.B$.DEBUG : a.B$.WARN, newDBWorker: C, fsWorker: _, rwebElements: { dashMenuButton: j && y ? n.createElement(g.Z, null) : void 0 } } }))), sidebarContent: null, withTopNav: !1 }));
                 };
         },
         115290: (e, t, r) => {
@@ -593,4 +593,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.3ef2545a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.daa9bf4a.js.map

@@ -250,7 +250,7 @@
                     return n.createElement(r.Z, { "aria-label": t, buttonsContainerStyle: o && S.gap, childrenStyle: !g && S.flexGrow, key: p, style: [o ? null : S.segmentedControl, g && S.leftAligned, d], visibleItemIndex: u }, h);
                 };
         },
-        452693: (e, t, a) => {
+        98440: (e, t, a) => {
             a.r(t), a.d(t, { default: () => i });
             var l = a(202784),
                 n = a(890601),
@@ -258,7 +258,7 @@
                 s = a(347101);
             const o = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             o.metadata = { width: 24, height: 24 };
             const i = o;
@@ -281,4 +281,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-6107ac1a.9d2a3a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-6107ac1a.ba984c4a.js.map

@@ -837,7 +837,7 @@
                 u = n(32471),
                 m = n(966582),
                 b = n(966886),
-                p = n(557487),
+                p = n(316046),
                 h = n(126962),
                 f = n(54989),
                 y = n(366985),
@@ -976,4 +976,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b.b49d0b7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b.bb77508a.js.map

@@ -240,6 +240,11 @@
                 n("f65e7e91", function (e) {
                     return e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
+                n("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                n("he77d8e6", "Limited-time offer"),
+                n("adf3410a", "Subscribe to unlock new features and if eligible, receive a share of revenue."),
                 n("a84a736e", "Get Free Ad Credit"),
                 n("a0713d76", "Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 n("a07e13fc", "Become a Premium Creator"),
@@ -275,7 +280,6 @@
                 n("ed534c78", "Only X Premium subscribers have access to bookmark folders. Upgrade to continue."),
                 n("ed924940", "Remove all ads with Premium+"),
                 n("dccdb326", "Only Premium+ subscribers see no ads. Upgrade to continue."),
-                n("adf3410a", "Subscribe to unlock new features and if eligible, receive a share of revenue."),
                 n("d8661dd4", "For a limited time. Unlock the best of X."),
                 n("fe7fd234", "Try Premium Basic for free today"),
                 n("a2f86dda", "Enhance your experience with Bookmark folders, Edit post, Custom app icons, and more with Premium Basic."),
@@ -914,10 +918,10 @@
                 n("bf9e181b", "Tuilleadh faisnéise"),
                 n("e8e39f95", "Tuilleadh eolais"),
                 n("e126dd3f", "Tuilleadh eolais"),
-                n("i821844f", "Tuilleadh eolais"),
-                n("b0abbb17", "Tuilleadh eolais"),
-                n("e7e0d88b", "Tuilleadh eolais");
-            n("i560665f", "Tuilleadh eolais"),
+                n("i821844f", "Tuilleadh eolais");
+            n("b0abbb17", "Tuilleadh eolais"),
+                n("e7e0d88b", "Tuilleadh eolais"),
+                n("i560665f", "Tuilleadh eolais"),
                 n("f6e774d9", "Tuilleadh eolais"),
                 n("h486f755", "Tuilleadh eolais"),
                 n("bab41dab", "Tuilleadh eolais"),
@@ -1301,11 +1305,11 @@
                 n("b0d1e205", function (e) {
                     return 'Searching for **"' + e.query + '"**';
                 }),
-                n("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 n("bf970edd", function (e) {
                     return 'Searching 𝕏 for "' + e.query + '"';
+                }),
+                n("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 n("g008d475", function (e) {
                     return "Browsing " + e.url;
@@ -1324,6 +1328,9 @@
                 }),
                 n("e99fb7a3", function (e) {
                     return "Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                }),
+                n("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 n("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 n("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1357,11 +1364,12 @@
                 n("deaf5b16", "Bain triail as arís"),
                 n("a66d80d0", "Translate post"),
                 n("be9b9fb8", "Translated by Grok"),
+                n("ba10dab6", "Auto-translated by Grok"),
                 n("he9c9634", "Níorbh fhéidir teacht ar an aistriúchán"),
                 n("j2198c98", "Hide translated post"),
                 n("d4d35bea", "Translating..."),
-                n("i7ac410e", "Show Original"),
-                n("c67f09e8", "Show Translation"),
+                n("f4f69be8", "Show original"),
+                n("e3097a5c", "Show auto-translated post"),
                 n("e0f81ff3", "Translation:"),
                 n("j2862695", function (e) {
                     return "Aistrithe ó " + e.originLanguage + " ag";
@@ -1746,9 +1754,7 @@
                 n("f5b3dc1e", "B'fhéidir níos déanaí"),
                 n("ae0c5fbe", "Tharla earráid agus cé atá ábalta freagairt á athrú"),
                 n("bae0cbc0", "Athraigh iad siúd ar féidir leo freagra a thabhairt"),
-                n("d78131b9", function (e) {
-                    return "Cuir leis/bain @" + e.screenName + " ó Liostaí";
-                }),
+                n("a599bbfa", "Cuir le/Bain de Liostaí"),
                 n("b3b642fc", "Why this post?"),
                 n("fb4ee11c", "Cén fáth leis an bhfógra seo?"),
                 n("ad50e7d9", function (e) {
@@ -1810,15 +1816,11 @@
                 n("j7bb1a43", function (e) {
                     return "Tuairiscigh @" + e.screenName;
                 }),
-                n("hef5960c", "Roinn próifíl trí..."),
+                n("g00b4c55", function (e) {
+                    return "Share @" + e.screenName + " via...";
+                }),
                 n("bb1cbeb6", "Díbhalbhaigh"),
                 n("h2f62206", "Úsáideoir á bhalbhú"),
-                n("e67b2d65", function (e) {
-                    return "Balbhaigh @" + e.screenName;
-                }),
-                n("f05597b3", function (e) {
-                    return "Díbhalbhaigh @" + e.screenName;
-                }),
                 n("h59f52ee", "D'éirigh leat é a bhalbhú."),
                 n("eea0cbee", "D'éirigh leat é a dhíbhalbhú."),
                 n("i29533b3", function (e) {
@@ -1934,10 +1936,10 @@
                 }),
                 n("jcd5ee8a", "Edit block"),
                 n("a8f09fb8", "Delete block"),
-                n("i89195ea", "Divider"),
-                n("da8ac57c", "Edit Caption"),
-                n("a8fdd09c", "Publish Article");
-            n("d8047cc8", "Foilsigh"),
+                n("i89195ea", "Divider");
+            n("da8ac57c", "Edit Caption"),
+                n("a8fdd09c", "Publish Article"),
+                n("d8047cc8", "Foilsigh"),
                 n("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 n("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 n("e52d4998", "Choose your audience"),
@@ -2990,10 +2992,10 @@
                 }),
                 n("e64de8a9", function (e) {
                     return e.entity + " was removed from your Bookmarks";
-                }),
-                n("d6d9aab6", "Cuir Leabharmharc Leis"),
-                n("bb89cf46", "Bain Leabharmharc");
-            n("a739d4ba", "Cuir é i bhFillteán na Leabharmharcanna"),
+                });
+            n("d6d9aab6", "Cuir Leabharmharc Leis"),
+                n("bb89cf46", "Bain Leabharmharc"),
+                n("a739d4ba", "Cuir é i bhFillteán na Leabharmharcanna"),
                 n("d5270434", "Exit"),
                 n("ac85c6b2", "Tharla earráid agus an t-íomhá seo á lódáil"),
                 n("b327c12a", "Íomhá"),
@@ -3916,10 +3918,10 @@
                 n("fe7a1910", "Send invites"),
                 n("ic3c757e", "Search for users"),
                 n("cd133486", "Invite"),
-                n("f2333850", "Share with people outside of X"),
-                n("cddb8097", "Learn more"),
-                n("f77997b0", "Co-host");
-            n("i48f4ed8", "Callaire"),
+                n("f2333850", "Share with people outside of X");
+            n("cddb8097", "Learn more"),
+                n("f77997b0", "Co-host"),
+                n("i48f4ed8", "Callaire"),
                 n("a77c8e02", "Éisteoir"),
                 n("bdfa93eb", function (e) {
                     return "Roinnte ag " + e.name;
@@ -4276,6 +4278,7 @@
                     return "Show all (" + e.count + ")";
                 }),
                 n("df601d92", "Relevant Users"),
+                n("a4cfb8a8", "Browsing"),
                 n("d7cb5408", "Relevant Web Pages"),
                 n("ca93f2ee", "This message has been deleted."),
                 n("b8c06820", "Copy text"),
@@ -4939,11 +4942,11 @@
                 n("d9f9dec0", "View Space"),
                 n("h0c1f37a", "View Space Analytics"),
                 n("e41fffbc", "The total watch time of your videos."),
-                n("if2909ba", "Watch Time"),
-                n("i0e5bf4c", "Your videos"),
+                n("if2909ba", "Watch Time");
+            n("i0e5bf4c", "Your videos"),
                 n("ed99baea", "Early Beta Access"),
-                n("gf898b70", "Advanced Search");
-            n("d2a43a7a", 'contains both "ai" and "startup"'),
+                n("gf898b70", "Advanced Search"),
+                n("d2a43a7a", 'contains both "ai" and "startup"'),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", 'contains the exact phrase "ai startup"'),
                 n("j8ee77c4", '"ai startup"'),
@@ -5893,13 +5896,13 @@
                 n("f191a2ba", " shocruithe Cuardach "),
                 n("a068008a", "Folders aren`t loading right now"),
                 n("f075b0e8", "Cuir an Fillteán in Eagar"),
-                n("beba2a0e", "Cruthaigh Fillteán Leabharmharcanna nua"),
-                n("e41c9b4f", function (e) {
-                    return "Sábháilte go " + e.bookmarkFolderName;
-                }),
+                n("beba2a0e", "Cruthaigh Fillteán Leabharmharcanna nua");
+            n("e41c9b4f", function (e) {
+                return "Sábháilte go " + e.bookmarkFolderName;
+            }),
                 n("h18f86a4", "Scrios an Fillteán"),
-                n("f4ea967a", "Scriosadh an fillteán");
-            n("b670aa62", "Ainm an Fhillteáin"),
+                n("f4ea967a", "Scriosadh an fillteán"),
+                n("b670aa62", "Ainm an Fhillteáin"),
                 n("aece5462", "D'éirigh linn ainm an fhillteáin a nuashonrú"),
                 n("e3299b94", "Tharla earráid. Bain triail as an bhfillteán a nuashonrú arís i gceann nóiméid."),
                 n("c09ea714", "Tharla earráid. Bain triail as an bhfillteán a scriosadh arís i gceann nóiméid."),
@@ -6510,7 +6513,7 @@
                 n("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 n("hc965308", "Fun"),
                 n("eb78b77e", "Fun Mode"),
-                n("aa8ece10", "Try grok.com"),
+                n("ac164552", "Go to grok.com"),
                 n("gb5fb7d0", "Focus Mode"),
                 n("g5665caa", "Exit Focus Mode"),
                 n("a372681e", "Copy share link"),
@@ -6901,11 +6904,11 @@
                     return e.percentage + "% off a year of Premium";
                 }),
                 n("c924ad84", "Keep videos playing"),
-                n("de750a3c", "Enjoy them even when your phone is locked"),
-                n("he5e87c4", "Boost your replies"),
+                n("de750a3c", "Enjoy them even when your phone is locked");
+            n("he5e87c4", "Boost your replies"),
                 n("g64a60ba", "Get a small prioritization when you reply to posts"),
-                n("a7ee832a", "Fix typos and mistakes, up to 60 minutes");
-            n("fdd77a34", "Create longer posts"),
+                n("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
+                n("fdd77a34", "Create longer posts"),
                 n("j6d26a7a", "Write as much as you’d like to share"),
                 n("c4fd68da", "Customize your experience"),
                 n("c0195168", "Change your app icon and navigation options"),
@@ -6933,8 +6936,6 @@
                 n("c3148608", "Get faster assistance when you need help"),
                 n("b485ca6e", "Highlights tab"),
                 n("d438955e", "Showcase your top posts"),
-                n("f373a352", "Encrypted DMs"),
-                n("g7405aca", "Chat securely with end-to-end encryption"),
                 n("j659fa0c", "The best of Grok 3"),
                 n("ibff5694", "Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 n("i824f4da", "Fewer ads"),
@@ -7003,6 +7004,10 @@
                 n("gd573390", "And everything in Basic..."),
                 n("ef94bbd4", "Get Premium+"),
                 n("dcd830ce", "And everything in Premium..."),
+                n("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                n("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 n("b7dde622", "Happy Thanksgiving! Offer ends in:"),
                 n("i0180ca1", function (e) {
                     return "Until " + e.date + ". Happy Thanksgiving!";
@@ -7881,12 +7886,7 @@
                 }),
                 n("bf809ec0", "Select Affiliates"),
                 n("b719e224", "Gan toradh"),
-                n("c9938100", "Torthaí Cuardaigh"),
-                n("d1a35ec6", "Add accounts"),
-                n("b437adda", "Upgrade to paid"),
-                n("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                });
+                n("c9938100", "Torthaí Cuardaigh");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7925,7 +7925,12 @@
                     c(e, a)
                 );
             }
-            n("b02156b8", "Invitations"),
+            n("d1a35ec6", "Add accounts"),
+                n("b437adda", "Upgrade to paid"),
+                n("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                n("b02156b8", "Invitations"),
                 n("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
                 }),
@@ -8923,11 +8928,11 @@
                     return "Auto (" + e.quality + ")";
                 }),
                 n("a7bf9962", "Download video"),
-                n("ccc97152", "Playback speed"),
-                n("h531ade0", "Video quality"),
+                n("ccc97152", "Playback speed");
+            n("h531ade0", "Video quality"),
                 n("e8b5757c", "0.25x"),
-                n("e7e954de", "0.5x");
-            n("g07ffe66", "0.75x"),
+                n("e7e954de", "0.5x"),
+                n("g07ffe66", "0.75x"),
                 n("d8bede9e", "1x"),
                 n("j41845c8", "1.25x"),
                 n("e9eeed9e", "1.5x"),
@@ -13351,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.9723c1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.edfbfaca.js.map

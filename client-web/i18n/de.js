@@ -225,6 +225,11 @@
                 t("f65e7e91", function (e) {
                     return e.percentage + " % Rabatt " + e.tier + " " + e.plan;
                 }),
+                t("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                t("he77d8e6", "Limited-time offer"),
+                t("adf3410a", "Hol dir ein Abonnement, wenn du an neuen Funktionen interessiert bist und, falls du dafür in Frage kommst, einen Anteil der Einnahmen erhalten möchtest."),
                 t("a84a736e", "Gratis-Werbeguthaben holen"),
                 t("a0713d76", "Hol dir ein Upgrade auf Verifizierte Organisationen, wenn du ein Gratis-Werbeguthaben und eine Tool-Suite für geschäftliches Wachstum haben möchtest."),
                 t("a07e13fc", "Premium-Gestalter*in werden"),
@@ -260,7 +265,6 @@
                 t("ed534c78", "Nur Abonnent*innen von X Premium haben Zugriff auf Lesezeichenordner. Mit einem Upgrade kannst du fortfahren."),
                 t("ed924940", "Werbefrei mit Premium+"),
                 t("dccdb326", "Nur Abonnent*innen von Premium+ sehen keine Werbung. Mit einem Upgrade kannst du fortfahren."),
-                t("adf3410a", "Hol dir ein Abonnement, wenn du an neuen Funktionen interessiert bist und, falls du dafür in Frage kommst, einen Anteil der Einnahmen erhalten möchtest."),
                 t("d8661dd4", "Nur für kurze Zeit. Hol dir das Beste von X."),
                 t("fe7fd234", "Premium Basis gratis zur Probe"),
                 t("a2f86dda", "Verbessere deine Nutzung mit Lesezeichenordnern, Post-Bearbeitung, angepassten App-Symbolen und mehr mit Premium Basis."),
@@ -899,10 +903,10 @@
                 t("bf9e181b", "Mehr erfahren"),
                 t("e8e39f95", "Mehr erfahren"),
                 t("e126dd3f", "Mehr erfahren"),
-                t("i821844f", "Mehr erfahren"),
-                t("b0abbb17", "Mehr erfahren"),
-                t("e7e0d88b", "Mehr erfahren");
-            t("i560665f", "Mehr erfahren"),
+                t("i821844f", "Mehr erfahren");
+            t("b0abbb17", "Mehr erfahren"),
+                t("e7e0d88b", "Mehr erfahren"),
+                t("i560665f", "Mehr erfahren"),
                 t("f6e774d9", "Mehr erfahren"),
                 t("h486f755", "Mehr erfahren"),
                 t("bab41dab", "Mehr erfahren"),
@@ -1286,11 +1290,11 @@
                 t("b0d1e205", function (e) {
                     return "Suche nach **„" + e.query + "“**";
                 }),
-                t("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 t("bf970edd", function (e) {
                     return "𝕏 wird nach „" + e.query + "“ durchsucht";
+                }),
+                t("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 t("g008d475", function (e) {
                     return e.url + " wird durchsucht";
@@ -1309,6 +1313,9 @@
                 }),
                 t("e99fb7a3", function (e) {
                     return "𝕏-Posts von @" + e.username + " werden nach** „" + e.query + "“** durchsucht";
+                }),
+                t("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 t("ead81122", "Etwas ist schief gegangen. Bitte stelle die Verbindung durch eine Aktualisierung wieder her oder versuche es erneut."),
                 t("f808a13a", "Das Zugriffslimit ist erreicht. Bitte versuche es in ein paar Minuten erneut."),
@@ -1342,11 +1349,12 @@
                 t("deaf5b16", "Erneut versuchen"),
                 t("a66d80d0", "Post übersetzen"),
                 t("be9b9fb8", "Übersetzt von Grok"),
+                t("ba10dab6", "Auto-translated by Grok"),
                 t("he9c9634", "Übersetzung konnte nicht abgerufen werden"),
                 t("j2198c98", "Übersetzten Post ausblenden"),
                 t("d4d35bea", "Übersetzung läuft..."),
-                t("i7ac410e", "Original zeigen"),
-                t("c67f09e8", "Übersetzung zeigen"),
+                t("f4f69be8", "Show original"),
+                t("e3097a5c", "Show auto-translated post"),
                 t("e0f81ff3", "Übersetzung:"),
                 t("j2862695", function (e) {
                     return "Original (" + e.originLanguage + ") übersetzt von";
@@ -1731,9 +1739,7 @@
                 t("f5b3dc1e", "Vielleicht später"),
                 t("ae0c5fbe", "Fehler bei der Änderung, wer antworten kann"),
                 t("bae0cbc0", "Ändern, wer antworten kann"),
-                t("d78131b9", function (e) {
-                    return "@" + e.screenName + " zu Listen hinzufügen oder aus ihnen entfernen";
-                }),
+                t("a599bbfa", "Einfügen in/Entfernen aus Listen"),
                 t("b3b642fc", "Warum dieser Post?"),
                 t("fb4ee11c", "Warum diese Anzeige?"),
                 t("ad50e7d9", function (e) {
@@ -1795,15 +1801,11 @@
                 t("j7bb1a43", function (e) {
                     return "@" + e.screenName + " melden";
                 }),
-                t("hef5960c", "Profil teilen über..."),
+                t("g00b4c55", function (e) {
+                    return "@" + e.screenName + " teilen via...";
+                }),
                 t("bb1cbeb6", "Stummschaltung aufheben"),
                 t("h2f62206", "Nutzer wird stummgeschaltet"),
-                t("e67b2d65", function (e) {
-                    return "@" + e.screenName + " stummschalten";
-                }),
-                t("f05597b3", function (e) {
-                    return "Stummschaltung von @" + e.screenName + " aufheben";
-                }),
                 t("h59f52ee", "Erfolgreich stummgeschaltet."),
                 t("eea0cbee", "Stummschaltung erfolgreich aufgehoben."),
                 t("i29533b3", function (e) {
@@ -1919,10 +1921,10 @@
                 }),
                 t("jcd5ee8a", "Block bearbeiten"),
                 t("a8f09fb8", "Block löschen"),
-                t("i89195ea", "Trennelement"),
-                t("da8ac57c", "Beschriftung bearbeiten"),
-                t("a8fdd09c", "Artikel veröffentlichen");
-            t("d8047cc8", "Veröffentlichen"),
+                t("i89195ea", "Trennelement");
+            t("da8ac57c", "Beschriftung bearbeiten"),
+                t("a8fdd09c", "Artikel veröffentlichen"),
+                t("d8047cc8", "Veröffentlichen"),
                 t("ff7ddca2", "Dein Artikel erscheint als Post, wenn du ihn veröffentlichst. Außerdem findest du ihn im Tab „Artikel“ in deinem Profil."),
                 t("ef34d7be", "Steueroptionen für Zielgruppe und Antworten können nicht mehr bearbeitet werden, nachdem ein Artikel veröffentlicht wurde."),
                 t("e52d4998", "Deine Zielgruppe wählen"),
@@ -2975,10 +2977,10 @@
                 }),
                 t("e64de8a9", function (e) {
                     return e.entity + " wurde aus deinen Lesezeichen entfernt";
-                }),
-                t("d6d9aab6", "Lesezeichen hinzufügen"),
-                t("bb89cf46", "Lesezeichen entfernen");
-            t("a739d4ba", "Zum Lesezeichenordner hinzufügen"),
+                });
+            t("d6d9aab6", "Lesezeichen hinzufügen"),
+                t("bb89cf46", "Lesezeichen entfernen"),
+                t("a739d4ba", "Zum Lesezeichenordner hinzufügen"),
                 t("d5270434", "Beenden"),
                 t("ac85c6b2", "Beim Laden dieses Bildes ist ein Fehler aufgetreten."),
                 t("b327c12a", "Bild"),
@@ -3901,10 +3903,10 @@
                 t("fe7a1910", "Einladungen senden"),
                 t("ic3c757e", "Nach Nutzer*innen suchen"),
                 t("cd133486", "Einladen"),
-                t("f2333850", "Mit Leuten außerhalb von X teilen"),
-                t("cddb8097", "Mehr erfahren"),
-                t("f77997b0", "Co-Host");
-            t("i48f4ed8", "Sprecher"),
+                t("f2333850", "Mit Leuten außerhalb von X teilen");
+            t("cddb8097", "Mehr erfahren"),
+                t("f77997b0", "Co-Host"),
+                t("i48f4ed8", "Sprecher"),
                 t("a77c8e02", "Zuhörer"),
                 t("bdfa93eb", function (e) {
                     return "Geteilt von " + e.name;
@@ -4261,6 +4263,7 @@
                     return "Alle anzeigen (" + e.count + ")";
                 }),
                 t("df601d92", "Relevante Nutzer*innen"),
+                t("a4cfb8a8", "Browsing"),
                 t("d7cb5408", "Relevante Webseiten"),
                 t("ca93f2ee", "Diese Nachricht wurde gelöscht."),
                 t("b8c06820", "Text kopieren"),
@@ -4924,11 +4927,11 @@
                 t("d9f9dec0", "Space anzeigen"),
                 t("h0c1f37a", "Space-Statistiken anzeigen"),
                 t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
-                t("if2909ba", "Abspielzeit"),
-                t("i0e5bf4c", "Deine Videos"),
+                t("if2909ba", "Abspielzeit");
+            t("i0e5bf4c", "Deine Videos"),
                 t("ed99baea", "Vorzeitiger Beta-Zugriff"),
-                t("gf898b70", "Erweiterte Suche");
-            t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
+                t("gf898b70", "Erweiterte Suche"),
+                t("d2a43a7a", "enthält sowohl „ai“ als auch „startup“"),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", "enthält genau die Wortfolge „ai startup“"),
                 t("j8ee77c4", '"ai startup"'),
@@ -5878,13 +5881,13 @@
                 t("f191a2ba", "Sucheinstellungen"),
                 t("a068008a", "Ordner können im Moment nicht geladen werden"),
                 t("f075b0e8", "Ordner bearbeiten"),
-                t("beba2a0e", "Neuen Lesezeichenordner erstellen"),
-                t("e41c9b4f", function (e) {
-                    return "Gespeichert in " + e.bookmarkFolderName;
-                }),
+                t("beba2a0e", "Neuen Lesezeichenordner erstellen");
+            t("e41c9b4f", function (e) {
+                return "Gespeichert in " + e.bookmarkFolderName;
+            }),
                 t("h18f86a4", "Ordner löschen"),
-                t("f4ea967a", "Ordner wurde gelöscht");
-            t("b670aa62", "Ordnername"),
+                t("f4ea967a", "Ordner wurde gelöscht"),
+                t("b670aa62", "Ordnername"),
                 t("aece5462", "Ordnername wurde erfolgreich aktualisiert"),
                 t("e3299b94", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu aktualisieren."),
                 t("c09ea714", "Etwas ist schiefgelaufen. Warte etwas und versuche dann erneut, diesen Ordner zu löschen."),
@@ -6495,7 +6498,7 @@
                 t("f7cf3d36", "Grok ist ein Gratis-KI-Assistent, der von xAI im Hinblick auf Wahrheit und Objektivität entwickelt wurde. Grok bietet Echtzeitsuche, Bildgenerierung, Trendanalyse und mehr."),
                 t("hc965308", "Spaß"),
                 t("eb78b77e", "Spaßmodus"),
-                t("aa8ece10", "grok.com ausprobieren"),
+                t("ac164552", "Go to grok.com"),
                 t("gb5fb7d0", "Fokusmodus"),
                 t("g5665caa", "Fokusmodus beenden"),
                 t("a372681e", "Link kopieren und teilen"),
@@ -6886,11 +6889,11 @@
                     return e.percentage + " % Rabatt auf ein Jahresabo von Premium";
                 }),
                 t("c924ad84", "Videos weiter abspielen"),
-                t("de750a3c", "Nutzung selbst bei gesperrtem Handy"),
-                t("he5e87c4", "Booste deine Antworten"),
+                t("de750a3c", "Nutzung selbst bei gesperrtem Handy");
+            t("he5e87c4", "Booste deine Antworten"),
                 t("g64a60ba", "Etwas höhere Priorität, wenn du auf Posts antwortest"),
-                t("a7ee832a", "Korrigiere bis zu 60 Minuten lang Tippfehler und andere Irrtümer");
-            t("fdd77a34", "Erstelle längere Posts"),
+                t("a7ee832a", "Korrigiere bis zu 60 Minuten lang Tippfehler und andere Irrtümer"),
+                t("fdd77a34", "Erstelle längere Posts"),
                 t("j6d26a7a", "Schreib so viel, wie du teilen möchtest"),
                 t("c4fd68da", "Passe deine Nutzung an"),
                 t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen"),
@@ -6918,8 +6921,6 @@
                 t("c3148608", "Schnellere Hilfe, wenn du sie brauchst"),
                 t("b485ca6e", "Tab „Highlights“"),
                 t("d438955e", "Präsentiere deine besten Posts"),
-                t("f373a352", "Verschlüsselte Direktnachrichten"),
-                t("g7405aca", "Chatte sicher mit durchgehender Verschlüsselung"),
                 t("j659fa0c", "Das Beste von Grok 3"),
                 t("ibff5694", "Hol dir die höchsten Nutzungslimits, DeepSearch und Denken, sowie vorzeitigen Zugriff auf neue Funktionen"),
                 t("i824f4da", "Weniger Werbung"),
@@ -6988,6 +6989,10 @@
                 t("gd573390", "Und alles in Basis..."),
                 t("ef94bbd4", "Hol dir Premium+"),
                 t("dcd830ce", "Und alles in Premium..."),
+                t("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                t("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 t("b7dde622", "Happy Thanksgiving! Angebot endet in:"),
                 t("i0180ca1", function (e) {
                     return "Bis " + e.date + ". Happy Thanksgiving!";
@@ -7866,12 +7871,7 @@
                 }),
                 t("bf809ec0", "Verbundene Accounts auswählen"),
                 t("b719e224", "Keine Ergebnisse"),
-                t("c9938100", "Suchergebnisse"),
-                t("d1a35ec6", "Accounts hinzufügen"),
-                t("b437adda", "Upgrade auf „bezahlt“"),
-                t("f1f6c88b", function (e) {
-                    return "Accounts (" + e.count + ")";
-                });
+                t("c9938100", "Suchergebnisse");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7910,7 +7910,12 @@
                     d(e, n)
                 );
             }
-            t("b02156b8", "Einladungen"),
+            t("d1a35ec6", "Accounts hinzufügen"),
+                t("b437adda", "Upgrade auf „bezahlt“"),
+                t("f1f6c88b", function (e) {
+                    return "Accounts (" + e.count + ")";
+                }),
+                t("b02156b8", "Einladungen"),
                 t("gd67d29b", function (e) {
                     return "Einladungen (" + e.count + ")";
                 }),
@@ -8908,11 +8913,11 @@
                     return "Automatisch (" + e.quality + ")";
                 }),
                 t("a7bf9962", "Video herunterladen"),
-                t("ccc97152", "Wiedergabegeschwindigkeit"),
-                t("h531ade0", "Videoqualität"),
+                t("ccc97152", "Wiedergabegeschwindigkeit");
+            t("h531ade0", "Videoqualität"),
                 t("e8b5757c", "0,25 x"),
-                t("e7e954de", "0,5 x");
-            t("g07ffe66", "0,75 x"),
+                t("e7e954de", "0,5 x"),
+                t("g07ffe66", "0,75 x"),
                 t("d8bede9e", "1 x"),
                 t("j41845c8", "1,25 x"),
                 t("e9eeed9e", "1,5 x"),
@@ -13348,4 +13353,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.33d17a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.e810c8ea.js.map

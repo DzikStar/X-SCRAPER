@@ -228,6 +228,11 @@
                 n("f65e7e91", function (e) {
                     return e.tier + " " + e.plan + " " + e.percentage + "% 할인";
                 }),
+                n("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                n("he77d8e6", "Limited-time offer"),
+                n("adf3410a", "구독하여 새로운 기능을 이용해 보세요. 자격을 충족하는 경우 수익 배분금도 받을 수 있습니다."),
                 n("a84a736e", "무료 광고 크레딧 받기"),
                 n("a0713d76", "인증된 조직으로 업그레이드하여 무료 광고 크레딧과 다양한 비즈니스 성장 도구를 받으세요."),
                 n("a07e13fc", "Premium 크리에이터 되기"),
@@ -263,7 +268,6 @@
                 n("ed534c78", "X Premium 구독자만 북마크 폴더 기능을 이용할 수 있습니다. 계속하려면 업그레이드하세요."),
                 n("ed924940", "Premium+으로 모든 광고 없애기"),
                 n("dccdb326", "Premium+ 구독자만 광고가 표시되지 않습니다. 계속하려면 업그레이드하세요."),
-                n("adf3410a", "구독하여 새로운 기능을 이용해 보세요. 자격을 충족하는 경우 수익 배분금도 받을 수 있습니다."),
                 n("d8661dd4", "기간 한정 혜택. X에서 최고의 서비스를 누리세요."),
                 n("fe7fd234", "오늘 하루 무료로 Premium 베이직을 경험해 보세요"),
                 n("a2f86dda", "Premium 베이직으로 북마크 폴더, 게시물 수정, 맞춤 앱 아이콘 등의 기능을 이용하고 사용 환경을 개선하세요."),
@@ -902,10 +906,10 @@
                 n("bf9e181b", "자세히 알아보기"),
                 n("e8e39f95", "Learn more"),
                 n("e126dd3f", "Learn more"),
-                n("i821844f", "Learn more"),
-                n("b0abbb17", "Learn more"),
-                n("e7e0d88b", "Learn more");
-            n("i560665f", "Learn more"),
+                n("i821844f", "Learn more");
+            n("b0abbb17", "Learn more"),
+                n("e7e0d88b", "Learn more"),
+                n("i560665f", "Learn more"),
                 n("f6e774d9", "Learn more"),
                 n("h486f755", "Learn more"),
                 n("bab41dab", "Learn more"),
@@ -1289,11 +1293,11 @@
                 n("b0d1e205", function (e) {
                     return '**"' + e.query + '"** 검색 중';
                 }),
-                n("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 n("bf970edd", function (e) {
                     return "𝕏에서 '" + e.query + "' 검색 중";
+                }),
+                n("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 n("g008d475", function (e) {
                     return e.url + " 탐색하기";
@@ -1312,6 +1316,9 @@
                 }),
                 n("e99fb7a3", function (e) {
                     return "**'" + e.query + "'**'에 대해 @" + e.username + " 님의 𝕏 게시물 검색 중";
+                }),
+                n("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 n("ead81122", "문제가 발생했습니다. 새로고침하여 다시 연결하거나 다시 시도해 주세요."),
                 n("f808a13a", "요청 한도를 초과했습니다. 잠시 기다린 후 다시 시도해주세요."),
@@ -1345,11 +1352,12 @@
                 n("deaf5b16", "다시 시도"),
                 n("a66d80d0", "게시물 번역하기"),
                 n("be9b9fb8", "번역 제공: Grok"),
+                n("ba10dab6", "Auto-translated by Grok"),
                 n("he9c9634", "번역을 불러올 수 없습니다."),
                 n("j2198c98", "번역된 게시물 숨기기"),
                 n("d4d35bea", "번역 중"),
-                n("i7ac410e", "원본 보기"),
-                n("c67f09e8", "번역 보기"),
+                n("f4f69be8", "Show original"),
+                n("e3097a5c", "Show auto-translated post"),
                 n("e0f81ff3", "번역:"),
                 n("j2862695", function (e) {
                     return e.originLanguage + "에서 번역";
@@ -1734,9 +1742,7 @@
                 n("f5b3dc1e", "나중에 하기"),
                 n("ae0c5fbe", "답글을 달 수 있는 사람을 변경하는 데 실패했습니다"),
                 n("bae0cbc0", "답글을 달 수 있는 사람 변경하기"),
-                n("d78131b9", function (e) {
-                    return "리스트에서 @" + e.screenName + " 추가/삭제하기";
-                }),
+                n("a599bbfa", "리스트에서 추가/제거하기"),
                 n("b3b642fc", "이 게시물이 표시된 이유"),
                 n("fb4ee11c", "왜 이 광고가 표시되나요?"),
                 n("ad50e7d9", function (e) {
@@ -1798,15 +1804,11 @@
                 n("j7bb1a43", function (e) {
                     return "@" + e.screenName + " 님 신고하기";
                 }),
-                n("hef5960c", "다음을 통해 프로필 공유하기"),
+                n("g00b4c55", function (e) {
+                    return "@" + e.screenName + " 님의 프로필을 다음을 통해 공유하기";
+                }),
                 n("bb1cbeb6", "언뮤트"),
                 n("h2f62206", "사용자 뮤트하기"),
-                n("e67b2d65", function (e) {
-                    return "@" + e.screenName + " 님 뮤트하기";
-                }),
-                n("f05597b3", function (e) {
-                    return "@" + e.screenName + " 님 언뮤트하기";
-                }),
                 n("h59f52ee", "뮤트에 성공했습니다."),
                 n("eea0cbee", "언뮤트에 성공했습니다."),
                 n("i29533b3", function (e) {
@@ -1922,10 +1924,10 @@
                 }),
                 n("jcd5ee8a", "블록 수정하기"),
                 n("a8f09fb8", "블록 삭제하기"),
-                n("i89195ea", "구분선"),
-                n("da8ac57c", "캡션 수정"),
-                n("a8fdd09c", "아티클 게시하기");
-            n("d8047cc8", "게시"),
+                n("i89195ea", "구분선");
+            n("da8ac57c", "캡션 수정"),
+                n("a8fdd09c", "아티클 게시하기"),
+                n("d8047cc8", "게시"),
                 n("ff7ddca2", "아티클을 게시하면 게시물로 표시됩니다. 내 프로필의 아티클 탭에서도 찾을 수 있습니다."),
                 n("ef34d7be", "아티클이 게시된 후에는 오디언스 및 답글 컨트롤을 수정할 수 없습니다."),
                 n("e52d4998", "오디언스를 선택하세요"),
@@ -2978,10 +2980,10 @@
                 }),
                 n("e64de8a9", function (e) {
                     return e.entity + "을(를) 북마크에서 삭제했습니다";
-                }),
-                n("d6d9aab6", "북마크 추가"),
-                n("bb89cf46", "북마크 삭제");
-            n("a739d4ba", "북마크 폴더에 추가하기"),
+                });
+            n("d6d9aab6", "북마크 추가"),
+                n("bb89cf46", "북마크 삭제"),
+                n("a739d4ba", "북마크 폴더에 추가하기"),
                 n("d5270434", "나가기"),
                 n("ac85c6b2", "이 이미지를 불러오는 도중 오류가 발생했습니다."),
                 n("b327c12a", "이미지"),
@@ -3904,10 +3906,10 @@
                 n("fe7a1910", "초대 보내기"),
                 n("ic3c757e", "사용자 검색"),
                 n("cd133486", "초대하기"),
-                n("f2333850", "X 외부로 공유"),
-                n("cddb8097", "자세히 알아보기"),
-                n("f77997b0", "공동 진행자");
-            n("i48f4ed8", "발언자"),
+                n("f2333850", "X 외부로 공유");
+            n("cddb8097", "자세히 알아보기"),
+                n("f77997b0", "공동 진행자"),
+                n("i48f4ed8", "발언자"),
                 n("a77c8e02", "청취자"),
                 n("bdfa93eb", function (e) {
                     return e.name + " 님이 공유했습니다";
@@ -4264,6 +4266,7 @@
                     return "모두 보기(" + e.count + ")";
                 }),
                 n("df601d92", "관련 사용자"),
+                n("a4cfb8a8", "Browsing"),
                 n("d7cb5408", "관련 웹페이지"),
                 n("ca93f2ee", "이 쪽지가 삭제되었습니다."),
                 n("b8c06820", "텍스트 복사"),
@@ -4927,11 +4930,11 @@
                 n("d9f9dec0", "스페이스 보기"),
                 n("h0c1f37a", "스페이스 애널리틱스 보기"),
                 n("e41fffbc", "내 동영상의 총 시청 시간입니다."),
-                n("if2909ba", "시청 시간"),
-                n("i0e5bf4c", "내 동영상"),
+                n("if2909ba", "시청 시간");
+            n("i0e5bf4c", "내 동영상"),
                 n("ed99baea", "사전 베타 체험"),
-                n("gf898b70", "고급 검색");
-            n("d2a43a7a", '"AI" 및 "스타트업" 모두 포함'),
+                n("gf898b70", "고급 검색"),
+                n("d2a43a7a", '"AI" 및 "스타트업" 모두 포함'),
                 n("a8584698", "AI 스타트업"),
                 n("jb6f9292", '정확한 구문 "AI 스타트업" 포함'),
                 n("j8ee77c4", '"AI 스타트업"'),
@@ -5881,13 +5884,13 @@
                 n("f191a2ba", "검색 설정"),
                 n("a068008a", "지금은 폴더를 불러올 수 없습니다"),
                 n("f075b0e8", "폴더 수정하기"),
-                n("beba2a0e", "새 북마크 폴더 만들기"),
-                n("e41c9b4f", function (e) {
-                    return "Saved to " + e.bookmarkFolderName;
-                }),
+                n("beba2a0e", "새 북마크 폴더 만들기");
+            n("e41c9b4f", function (e) {
+                return "Saved to " + e.bookmarkFolderName;
+            }),
                 n("h18f86a4", "폴더 삭제하기"),
-                n("f4ea967a", "폴더가 삭제되었습니다");
-            n("b670aa62", "폴더 이름"),
+                n("f4ea967a", "폴더가 삭제되었습니다"),
+                n("b670aa62", "폴더 이름"),
                 n("aece5462", "폴더 이름이 업데이트되었습니다"),
                 n("e3299b94", "문제가 발생했습니다. 잠시 후 폴더를 다시 업데이트하세요."),
                 n("c09ea714", "문제가 발생했습니다. 잠시 후 폴더를 다시 삭제해 보세요."),
@@ -6495,10 +6498,10 @@
                 n("e5f4eac0", "내 콘텐츠의 검색 가능성이 커집니다. 검색 결과와 트렌드에도 내 계정이 표시됩니다."),
                 n("c7832a72", "다른 사람들과 직접 소통하세요"),
                 n("i1ccd17a", "나를 팔로우하지 않는 사람들에게도 자동 필터링될 걱정 없이 쪽지를 보내세요."),
-                n("f7cf3d36", "Grok는 진실성과 객관성을 극대화하기 위해 xAI가 개발한 무료 AI 어시스턴트입니다. Grok는 실시간 검색, 이미지 생성, 트렌드 분석 등 다양한 기능을 제공합니다."),
+                n("f7cf3d36", "Grok은 진실성과 객관성을 극대화하기 위해 xAI에서 개발한 무료 AI 어시스턴트입니다. Grok은 실시간 검색, 이미지 생성, 트렌드 분석 등 다양한 기능을 제공합니다."),
                 n("hc965308", "재미"),
                 n("eb78b77e", "재미 모드"),
-                n("aa8ece10", "grok.com 사용해 보기"),
+                n("ac164552", "Go to grok.com"),
                 n("gb5fb7d0", "집중 모드"),
                 n("g5665caa", "집중 모드 종료"),
                 n("a372681e", "공유 링크 복사"),
@@ -6889,11 +6892,11 @@
                     return "Premium 1주년 기념 " + e.percentage + "% 할인";
                 }),
                 n("c924ad84", "동영상 계속 재생하기"),
-                n("de750a3c", "휴대폰이 잠겨 있을 때도 사용 가능"),
-                n("he5e87c4", "답글 부스트"),
+                n("de750a3c", "휴대폰이 잠겨 있을 때도 사용 가능");
+            n("he5e87c4", "답글 부스트"),
                 n("g64a60ba", "게시물에 작성한 답글의 게재 순위 상향"),
-                n("a7ee832a", "최대 60분 동안 오타와 실수 수정");
-            n("fdd77a34", "긴 게시물 작성"),
+                n("a7ee832a", "최대 60분 동안 오타와 실수 수정"),
+                n("fdd77a34", "긴 게시물 작성"),
                 n("j6d26a7a", "공유하고 싶은 만큼 게시글 작성"),
                 n("c4fd68da", "환경 맞춤 설정하기"),
                 n("c0195168", "앱 아이콘과 탐색 옵션 변경"),
@@ -6921,8 +6924,6 @@
                 n("c3148608", "도움이 필요할 때 보다 빠르게 지원을 받으세요"),
                 n("b485ca6e", "하이라이트 탭"),
                 n("d438955e", "인기 게시물을 눈에 띄게 표시하세요"),
-                n("f373a352", "암호화된 DM"),
-                n("g7405aca", "엔드 투 엔드 암호화로 안전하게 대화하세요"),
                 n("j659fa0c", "Grok 3의 모든 혜택"),
                 n("ibff5694", "최고 사용 한도, DeepSearch 및 Think + 새로운 기능 사전 체험"),
                 n("i824f4da", "줄어든 광고"),
@@ -6991,6 +6992,10 @@
                 n("gd573390", "+ Basic의 모든 기능"),
                 n("ef94bbd4", "Premium+ 받기"),
                 n("dcd830ce", "+ Premium의 모든 기능"),
+                n("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                n("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 n("b7dde622", "추수감사절 기념 할인 종료까지 남은 시간"),
                 n("i0180ca1", function (e) {
                     return e.date + "까지 추수감사절 기념 할인";
@@ -7869,12 +7874,7 @@
                 }),
                 n("bf809ec0", "제휴 계정 선택"),
                 n("b719e224", "결과가 없습니다"),
-                n("c9938100", "검색 결과"),
-                n("d1a35ec6", "계정 추가하기"),
-                n("b437adda", "유료 모델로 업그레이드"),
-                n("f1f6c88b", function (e) {
-                    return "계정(" + e.count + ")";
-                });
+                n("c9938100", "검색 결과");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7913,7 +7913,12 @@
                     d(e, c)
                 );
             }
-            n("b02156b8", "초대"),
+            n("d1a35ec6", "계정 추가하기"),
+                n("b437adda", "유료 모델로 업그레이드"),
+                n("f1f6c88b", function (e) {
+                    return "계정(" + e.count + ")";
+                }),
+                n("b02156b8", "초대"),
                 n("gd67d29b", function (e) {
                     return "초대(" + e.count + ")";
                 }),
@@ -8911,11 +8916,11 @@
                     return "자동(" + e.quality + ")";
                 }),
                 n("a7bf9962", "동영상 다운로드하기"),
-                n("ccc97152", "재생 속도"),
-                n("h531ade0", "동영상 화질"),
+                n("ccc97152", "재생 속도");
+            n("h531ade0", "동영상 화질"),
                 n("e8b5757c", "0.25배속"),
-                n("e7e954de", "0.5x");
-            n("g07ffe66", "0.75배속"),
+                n("e7e954de", "0.5x"),
+                n("g07ffe66", "0.75배속"),
                 n("d8bede9e", "1배속"),
                 n("j41845c8", "1.25배속"),
                 n("e9eeed9e", "1.5x"),
@@ -13353,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.4313d35a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.47ccc84a.js.map

@@ -232,6 +232,11 @@
                 o("f65e7e91", function (a) {
                     return a.percentage + " % popusta na " + a.tier + " " + a.plan;
                 }),
+                o("b28602eb", function (a) {
+                    return "Get " + a.percentage + "% off this summer";
+                }),
+                o("he77d8e6", "Limited-time offer"),
+                o("adf3410a", "Pretplatite se da biste otključali nove značajke i, ako ispunjavate uvjete, primali udio u prihodu."),
                 o("a84a736e", "Ostvarite besplatni kredit za oglase"),
                 o("a0713d76", "Nadogradite na Provjerene organizacije da biste dobili besplatni kredit za oglase i paket alata za rast poslovanja."),
                 o("a07e13fc", "Postanite Premium autor sadržaja"),
@@ -267,7 +272,6 @@
                 o("ed534c78", "Samo pretplatnici na X Premium imaju pristup mapama knjižnih oznaka. Nadogradite za nastavak."),
                 o("ed924940", "Uklonite sve oglase uz Premium+"),
                 o("dccdb326", "Samo pretplatnici na Premium+ imaju iskustvo bez oglasa. Nadogradite za nastavak."),
-                o("adf3410a", "Pretplatite se da biste otključali nove značajke i, ako ispunjavate uvjete, primali udio u prihodu."),
                 o("d8661dd4", "Tijekom ograničenog vremena. Otključajte najbolje što platforma X pruža."),
                 o("fe7fd234", "Besplatno isprobajte Premium Basic već danas"),
                 o("a2f86dda", "Poboljšajte svoje iskustvo uz mape knjižnih oznaka, uređivanje objava, prilagođene ikone aplikacija i još puno toga pretplatom na Premium Basic."),
@@ -906,10 +910,10 @@
                 o("bf9e181b", "Saznajte više"),
                 o("e8e39f95", "Saznajte više"),
                 o("e126dd3f", "Saznajte više"),
-                o("i821844f", "Saznajte više"),
-                o("b0abbb17", "Saznajte više"),
-                o("e7e0d88b", "Saznajte više");
-            o("i560665f", "Saznajte više"),
+                o("i821844f", "Saznajte više");
+            o("b0abbb17", "Saznajte više"),
+                o("e7e0d88b", "Saznajte više"),
+                o("i560665f", "Saznajte više"),
                 o("f6e774d9", "Saznajte više"),
                 o("h486f755", "Saznajte više"),
                 o("bab41dab", "Saznajte više"),
@@ -1293,11 +1297,11 @@
                 o("b0d1e205", function (a) {
                     return 'Traži se **"' + a.query + '"**';
                 }),
-                o("f259119d", function (a) {
-                    return 'Searching the web for "' + a.query + '"';
-                }),
                 o("bf970edd", function (a) {
                     return 'Pretražuje se upit "' + a.query + '" na platformi 𝕏';
+                }),
+                o("ad342369", function (a) {
+                    return 'Searching 𝕏 users for "' + a.query + '"';
                 }),
                 o("g008d475", function (a) {
                     return "Pregledavanje web-mjesta " + a.url;
@@ -1316,6 +1320,9 @@
                 }),
                 o("e99fb7a3", function (a) {
                     return "Pretražuju se objave korisnika @" + a.username + ' za upit **"' + a.query + '"** na platformi 𝕏';
+                }),
+                o("a02d1657", function (a) {
+                    return "Executing code" + a.ttc_tool_usage_card;
                 }),
                 o("ead81122", "Nešto nije u redu. Osvježite za ponovno povezivanje ili pokušajte ponovno."),
                 o("f808a13a", "Prekoračeno je ograničenje brzine. Pričekajte nekoliko minuta pa pokušajte ponovno."),
@@ -1349,11 +1356,12 @@
                 o("deaf5b16", "Pokušaj ponovno"),
                 o("a66d80d0", "Prevedi objavu"),
                 o("be9b9fb8", "Preveo Grok"),
+                o("ba10dab6", "Auto-translated by Grok"),
                 o("he9c9634", "Nije moguće dohvatiti prijevod"),
                 o("j2198c98", "Sakrij prevedenu objavu"),
                 o("d4d35bea", "Prevođenje..."),
-                o("i7ac410e", "Prikaži izvorno"),
-                o("c67f09e8", "Prikaži prijevod"),
+                o("f4f69be8", "Show original"),
+                o("e3097a5c", "Show auto-translated post"),
                 o("e0f81ff3", "Prijevod:"),
                 o("j2862695", function (a) {
                     return "Translated from " + a.originLanguage + " by";
@@ -1738,9 +1746,7 @@
                 o("f5b3dc1e", "Možda poslije"),
                 o("ae0c5fbe", "Prilikom promjene postavke o korisnicima koji mogu odgovoriti dogodila se pogreška"),
                 o("bae0cbc0", "Promijenite tko može odgovoriti"),
-                o("d78131b9", function (a) {
-                    return "Dodaj/ukloni korisnika/cu @" + a.screenName + " s popisa";
-                }),
+                o("a599bbfa", "Dodaj/ukloni s popisa"),
                 o("b3b642fc", "Zašto ova objava?"),
                 o("fb4ee11c", "Zašto se taj oglas pojavljuje?"),
                 o("ad50e7d9", function (a) {
@@ -1802,15 +1808,11 @@
                 o("j7bb1a43", function (a) {
                     return "Prijavi korisnika/cu @" + a.screenName;
                 }),
-                o("hef5960c", "Podijeli profil putem..."),
+                o("g00b4c55", function (a) {
+                    return "Podijeli @" + a.screenName + " putem...";
+                }),
                 o("bb1cbeb6", "Omogući prikaz tweetova"),
                 o("h2f62206", "Onemogućivanje korisnika"),
-                o("e67b2d65", function (a) {
-                    return "Onemogući korisnika/cu @" + a.screenName;
-                }),
-                o("f05597b3", function (a) {
-                    return "Omogući prikaz tweetova korisnika/ce @" + a.screenName;
-                }),
                 o("h59f52ee", "Uspješno onemogućen prikaz tweetova."),
                 o("eea0cbee", "Uspješno omogućen prikaz tweetova."),
                 o("i29533b3", function (a) {
@@ -1926,10 +1928,10 @@
                 }),
                 o("jcd5ee8a", "Uredi blok"),
                 o("a8f09fb8", "Izbriši blok"),
-                o("i89195ea", "Razdjelnik"),
-                o("da8ac57c", "Uredi titlove"),
-                o("a8fdd09c", "Objavi članak");
-            o("d8047cc8", "Objavi"),
+                o("i89195ea", "Razdjelnik");
+            o("da8ac57c", "Uredi titlove"),
+                o("a8fdd09c", "Objavi članak"),
+                o("d8047cc8", "Objavi"),
                 o("ff7ddca2", "Vaš će se članak prikazati kao objava nakon što ga objavite. Možete ga pronaći i na kartici Članci na svom profilu."),
                 o("ef34d7be", "Kontrole za publiku i odgovor ne mogu se uređivati nakon objave članka."),
                 o("e52d4998", "Odaberite publiku"),
@@ -2982,10 +2984,10 @@
                 }),
                 o("e64de8a9", function (a) {
                     return "Stavka " + a.entity + " uklonjena je iz knjižnih oznaka";
-                }),
-                o("d6d9aab6", "Dodaj knjižnu oznaku"),
-                o("bb89cf46", "Ukloni knjižnu oznaku");
-            o("a739d4ba", "Dodaj u mapu s knjižnim oznakama"),
+                });
+            o("d6d9aab6", "Dodaj knjižnu oznaku"),
+                o("bb89cf46", "Ukloni knjižnu oznaku"),
+                o("a739d4ba", "Dodaj u mapu s knjižnim oznakama"),
                 o("d5270434", "Izlaz"),
                 o("ac85c6b2", "Prilikom učitavanja slike došlo je do pogreške"),
                 o("b327c12a", "Slika"),
@@ -3908,10 +3910,10 @@
                 o("fe7a1910", "Slanje pozivnica"),
                 o("ic3c757e", "Pretražite korisnike"),
                 o("cd133486", "Pozovi"),
-                o("f2333850", "Podijeli s korisnicima izvan platforme X"),
-                o("cddb8097", "Saznajte više"),
-                o("f77997b0", "Suvoditelj");
-            o("i48f4ed8", "Govornik"),
+                o("f2333850", "Podijeli s korisnicima izvan platforme X");
+            o("cddb8097", "Saznajte više"),
+                o("f77997b0", "Suvoditelj"),
+                o("i48f4ed8", "Govornik"),
                 o("a77c8e02", "Slušatelj"),
                 o("bdfa93eb", function (a) {
                     return "Podijelio/la " + a.name;
@@ -4268,6 +4270,7 @@
                     return "Prikaži sve (" + a.count + ")";
                 }),
                 o("df601d92", "Relevantni korisnici"),
+                o("a4cfb8a8", "Browsing"),
                 o("d7cb5408", "Relevantne web-stranice"),
                 o("ca93f2ee", "Ta je poruka izbrisana."),
                 o("b8c06820", "Kopiraj tekst"),
@@ -4931,11 +4934,11 @@
                 o("d9f9dec0", "Prikaži Prostor"),
                 o("h0c1f37a", "Prikaži analitičke podatke o Prostoru"),
                 o("e41fffbc", "Ukupno vrijeme gledanja vaših videozapisa."),
-                o("if2909ba", "Vrijeme gledanja"),
-                o("i0e5bf4c", "Vaši videozapisi"),
+                o("if2909ba", "Vrijeme gledanja");
+            o("i0e5bf4c", "Vaši videozapisi"),
                 o("ed99baea", "Rani pristup beta verziji"),
-                o("gf898b70", "Napredno pretraživanje");
-            o("d2a43a7a", "sadrži i „ai” i „pokretanje”"),
+                o("gf898b70", "Napredno pretraživanje"),
+                o("d2a43a7a", "sadrži i „ai” i „pokretanje”"),
                 o("a8584698", "AI pokretanje"),
                 o("jb6f9292", "sadrži točan izraz „ai pokretanje”"),
                 o("j8ee77c4", "„ai pokretanje”"),
@@ -5885,13 +5888,13 @@
                 o("f191a2ba", "postavkama pretraživanja"),
                 o("a068008a", "Mape se trenutno ne učitavaju"),
                 o("f075b0e8", "Uređivanje mape"),
-                o("beba2a0e", "Stvori novu mapu s knjižnim oznakama"),
-                o("e41c9b4f", function (a) {
-                    return "Saved to " + a.bookmarkFolderName;
-                }),
+                o("beba2a0e", "Stvori novu mapu s knjižnim oznakama");
+            o("e41c9b4f", function (a) {
+                return "Saved to " + a.bookmarkFolderName;
+            }),
                 o("h18f86a4", "Izbriši mapu"),
-                o("f4ea967a", "Mapa je izbrisana");
-            o("b670aa62", "Naziv mape"),
+                o("f4ea967a", "Mapa je izbrisana"),
+                o("b670aa62", "Naziv mape"),
                 o("aece5462", "Naziv mape uspješno je ažuriran"),
                 o("e3299b94", "Došlo je do pogreške. Ponovno pokušajte tu mapu ažurirati za koju minutu."),
                 o("c09ea714", "Došlo je do pogreške. Ponovno pokušajte tu mapu izbrisati za koju minutu."),
@@ -6499,10 +6502,10 @@
                 o("e5f4eac0", "Vaš će sadržaj moći pronaći više ljudi, a vi ćete se pojavljivati u rezultatima pretraživanja i popularnim temama."),
                 o("c7832a72", "Izravno se povežite s drugim korisnicima"),
                 o("i1ccd17a", "Osobama koje vas ne prate šaljite privatne poruke koje se neće automatski filtrirati."),
-                o("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                o("f7cf3d36", "Grok je besplatni AI asistent kojeg pruža xAI radi povećavanja istinitosti i objektivnosti objava. Grok nudi pretraživanje u stvarnom vremenu, generiranje slika, analiziranje trendova i još mnogo toga."),
                 o("hc965308", "Zabava"),
                 o("eb78b77e", "Zabavni način rada"),
-                o("aa8ece10", "Isprobajte grok.com"),
+                o("ac164552", "Go to grok.com"),
                 o("gb5fb7d0", "Način rada za fokusiranje"),
                 o("g5665caa", "Izlaz iz načina rada za fokusiranje"),
                 o("a372681e", "Kopiraj poveznicu za dijeljenje"),
@@ -6893,11 +6896,11 @@
                     return a.percentage + " % popusta na godinu dana pretplate na Premium";
                 }),
                 o("c924ad84", "Neka se videozapisi nastave reproducirati"),
-                o("de750a3c", "Uživajte u njima čak i kad je vaš telefon zaključan"),
-                o("he5e87c4", "Istaknite svoje odgovore"),
+                o("de750a3c", "Uživajte u njima čak i kad je vaš telefon zaključan");
+            o("he5e87c4", "Istaknite svoje odgovore"),
                 o("g64a60ba", "Ostvarite mali prioritet kada odgovarate na objave"),
-                o("a7ee832a", "Ispravite pravopisne i druge pogreške u roku od najviše 60 minuta");
-            o("fdd77a34", "Pišite dulje objave"),
+                o("a7ee832a", "Ispravite pravopisne i druge pogreške u roku od najviše 60 minuta"),
+                o("fdd77a34", "Pišite dulje objave"),
                 o("j6d26a7a", "Pišite onoliko koliko želite podijeliti"),
                 o("c4fd68da", "Prilagodba sučelja"),
                 o("c0195168", "Promijenite ikonu aplikacije i opcije navigacije"),
@@ -6925,8 +6928,6 @@
                 o("c3148608", "Brže dobijte pomoć kada vam je potrebna"),
                 o("b485ca6e", "Kartica Istaknuto"),
                 o("d438955e", "Istaknite najpopularnije objave"),
-                o("f373a352", "Šifrirane izravne poruke"),
-                o("g7405aca", "Sigurno razgovarajte uz sveobuhvatno šifriranje"),
                 o("j659fa0c", "Najbolje od značajke Grok 3"),
                 o("ibff5694", "Otključajte najveća ograničenja upotrebe, DeepSearch i Razmišljanje, plus rani pristup novim značajkama"),
                 o("i824f4da", "Manje oglasa"),
@@ -6995,6 +6996,10 @@
                 o("gd573390", "I sve u pretplati Osnovno..."),
                 o("ef94bbd4", "Nadogradite na Premium+"),
                 o("dcd830ce", "I sve u pretplati Premium..."),
+                o("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                o("f8a50ba7", function (a) {
+                    return "Summer offer ending on " + a.date + ".";
+                }),
                 o("b7dde622", "Sretan Dan zahvalnosti! Ponuda završava za:"),
                 o("i0180ca1", function (a) {
                     return "Do " + a.date + ". Sretan Dan zahvalnosti!";
@@ -7873,12 +7878,7 @@
                 }),
                 o("bf809ec0", "Odaberite povezane račune"),
                 o("b719e224", "Nema rezultata"),
-                o("c9938100", "Rezultati pretraživanja"),
-                o("d1a35ec6", "Dodaj račune"),
-                o("b437adda", "Nadogradite da biste primali isplatu"),
-                o("f1f6c88b", function (a) {
-                    return "Računi (" + a.count + ")";
-                });
+                o("c9938100", "Rezultati pretraživanja");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7917,7 +7917,12 @@
                     r(a, e)
                 );
             }
-            o("b02156b8", "Pozivnice"),
+            o("d1a35ec6", "Dodaj račune"),
+                o("b437adda", "Nadogradite da biste primali isplatu"),
+                o("f1f6c88b", function (a) {
+                    return "Računi (" + a.count + ")";
+                }),
+                o("b02156b8", "Pozivnice"),
                 o("gd67d29b", function (a) {
                     return "Pozivnice (" + a.count + ")";
                 }),
@@ -8915,11 +8920,11 @@
                     return "Automatski (" + a.quality + ")";
                 }),
                 o("a7bf9962", "Preuzmi videozapis"),
-                o("ccc97152", "Brzina reprodukcije"),
-                o("h531ade0", "Kvaliteta videozapisa"),
+                o("ccc97152", "Brzina reprodukcije");
+            o("h531ade0", "Kvaliteta videozapisa"),
                 o("e8b5757c", "0,25x"),
-                o("e7e954de", "0,5x");
-            o("g07ffe66", "0,75x"),
+                o("e7e954de", "0,5x"),
+                o("g07ffe66", "0,75x"),
                 o("d8bede9e", "1x"),
                 o("j41845c8", "1,25x"),
                 o("e9eeed9e", "1,5x"),
@@ -13356,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.78a3c40a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.b137e13a.js.map

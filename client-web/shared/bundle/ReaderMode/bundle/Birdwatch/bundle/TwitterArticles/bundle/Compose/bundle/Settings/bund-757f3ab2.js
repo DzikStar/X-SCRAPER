@@ -306,7 +306,7 @@
                                 const { showGrokTranslation: e } = this.state,
                                     n = e ? Ue.ZP.LOADED : Ue.ZP.NONE,
                                     o = t ? (0, Ce.t)(t, i) : void 0;
-                                return r.createElement(le.O, { handleCollapseTranslation: () => this.setState({ showGrokTranslation: !1 }), handleGetTranslationClick: () => this.setState({ showGrokTranslation: !0 }), position: "top", showInfoButton: this.props.isFocal && e, sourceLanguageDisplayName: o, translateButtonText: ae.VW, translateTargetType: "post", translationStatus: n, useGrokTranslation: "auto" });
+                                return r.createElement(le.O, { handleCollapseTranslation: () => this.setState({ showGrokTranslation: !1 }), handleGetTranslationClick: () => this.setState({ showGrokTranslation: !0 }), position: "top", showInfoButton: this.props.isFocal || !e, sourceLanguageDisplayName: o, translateButtonText: ae.WJ, translateTargetType: "post", translationStatus: n, useGrokTranslation: "auto" });
                             }
                             if ("quote-text" === e && this.props.tweet.quoted_status?.grok_translated_post) return r.createElement(le.O, { position: "top", style: Lt.translationHeaderInQuote, translateTargetType: "post", translationStatus: "loaded", useGrokTranslation: "auto", withAction: !1 });
                         }),
@@ -940,4 +940,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.9e51f52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.c0ee06fa.js.map

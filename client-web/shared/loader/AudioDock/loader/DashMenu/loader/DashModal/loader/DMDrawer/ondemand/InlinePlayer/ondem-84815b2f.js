@@ -2,121 +2,121 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"],
     {
-        744610: (t, n, e) => {
-            e.d(n, { Z: () => F });
-            var i = e(133028),
-                r = e(33229),
-                a = e(553615),
-                o = e(408839),
-                s = e(59335),
-                u = e(349887),
-                v = e(101443),
-                c = e(89554),
-                f = e(265937),
-                l = e(978735),
-                d = e(419534),
-                h = e(225266),
-                p = e(138280),
-                _ = e(668637),
-                Z = e(64650),
-                g = e(211804),
-                m = e(104377),
-                N = e(794167),
-                w = e(588016),
-                E = e(377715),
-                L = e(900299),
-                y = e(77593),
-                V = e(521858),
-                D = e(409140),
-                A = e(411193),
-                k = function (t, n) {
-                    return t && n.onComplete
+        744610: (t, e, n) => {
+            n.d(e, { Z: () => B });
+            var i = n(133028),
+                r = n(33229),
+                a = n(553615),
+                o = n(408839),
+                s = n(59335),
+                u = n(349887),
+                l = n(101443),
+                c = n(89554),
+                v = n(265937),
+                f = n(978735),
+                d = n(419534),
+                h = n(225266),
+                p = n(138280),
+                Z = n(668637),
+                _ = n(64650),
+                g = n(211804),
+                m = n(104377),
+                b = n(794167),
+                w = n(588016),
+                y = n(377715),
+                E = n(900299),
+                N = n(77593),
+                C = n(521858),
+                D = n(409140),
+                k = n(411193),
+                A = function (t, e) {
+                    return t && e.onComplete
                         ? function () {
-                              n.onComplete && n.onComplete(...arguments), t && t(...arguments);
+                              e.onComplete && e.onComplete(...arguments), t && t(...arguments);
                           }
-                        : t || n.onComplete;
+                        : t || e.onComplete;
                 },
-                b = function (t, n, e) {
-                    if (t instanceof E.Z) {
-                        var r = (0, i.Z)({}, n),
-                            a = (0, i.Z)({}, n);
-                        for (var o in n) {
-                            var s = n[o],
+                L = function (t, e, n) {
+                    if (t instanceof y.Z) {
+                        var r = (0, i.Z)({}, e),
+                            a = (0, i.Z)({}, e);
+                        for (var o in e) {
+                            var s = e[o],
                                 u = s.x,
-                                v = s.y;
-                            void 0 !== u && void 0 !== v && ((r[o] = u), (a[o] = v));
+                                l = s.y;
+                            void 0 !== u && void 0 !== l && ((r[o] = u), (a[o] = l));
                         }
-                        var c = e(t.x, r),
-                            f = e(t.y, a);
-                        return I([c, f], { stopTogether: !1 });
+                        var c = n(t.x, r),
+                            v = n(t.y, a);
+                        return I([c, v], { stopTogether: !1 });
                     }
-                    if (t instanceof A.Z) {
-                        var l = (0, i.Z)({}, n),
-                            d = (0, i.Z)({}, n),
-                            h = (0, i.Z)({}, n),
-                            p = (0, i.Z)({}, n);
-                        for (var _ in n) {
-                            var Z = n[_],
-                                g = Z.r,
-                                m = Z.g,
-                                N = Z.b,
-                                w = Z.a;
-                            void 0 !== g && void 0 !== m && void 0 !== N && void 0 !== w && ((l[_] = g), (d[_] = m), (h[_] = N), (p[_] = w));
+                    if (t instanceof k.Z) {
+                        var f = (0, i.Z)({}, e),
+                            d = (0, i.Z)({}, e),
+                            h = (0, i.Z)({}, e),
+                            p = (0, i.Z)({}, e);
+                        for (var Z in e) {
+                            var _ = e[Z],
+                                g = _.r,
+                                m = _.g,
+                                b = _.b,
+                                w = _.a;
+                            void 0 !== g && void 0 !== m && void 0 !== b && void 0 !== w && ((f[Z] = g), (d[Z] = m), (h[Z] = b), (p[Z] = w));
                         }
-                        var L = e(t.r, l),
-                            y = e(t.g, d),
-                            V = e(t.b, h),
-                            D = e(t.a, p);
-                        return I([L, y, V, D], { stopTogether: !1 });
+                        var E = n(t.r, f),
+                            N = n(t.g, d),
+                            C = n(t.b, h),
+                            D = n(t.a, p);
+                        return I([E, N, C, D], { stopTogether: !1 });
                     }
                     return null;
                 },
-                C = function t(n, e) {
-                    var r = function (t, n, e) {
-                        e = k(e, n);
+                V = function t(e, n) {
+                    var r = function (t, e, n) {
+                        n = A(n, e);
                         var i = t,
-                            r = n;
-                        i.stopTracking(), n.toValue instanceof g.Z ? i.track(new N.Z(i, n.toValue, V.Z, r, e)) : i.animate(new V.Z(r), e);
+                            r = e;
+                        i.stopTracking(), e.toValue instanceof g.Z ? i.track(new b.Z(i, e.toValue, C.Z, r, n)) : i.animate(new C.Z(r), n);
                     };
                     return (
-                        b(n, e, t) || {
+                        L(e, n, t) || {
                             start: function (t) {
-                                r(n, e, t);
+                                r(e, n, t);
                             },
                             stop: function () {
-                                n.stopAnimation();
+                                e.stopAnimation();
                             },
                             reset: function () {
-                                n.resetAnimation();
+                                e.resetAnimation();
                             },
                             _startNativeLoop: function (t) {
-                                var a = (0, i.Z)((0, i.Z)({}, e), {}, { iterations: t });
-                                r(n, a);
+                                var a = (0, i.Z)((0, i.Z)({}, n), {}, { iterations: t });
+                                r(e, a);
                             },
                             _isUsingNativeDriver: function () {
-                                return e.useNativeDriver || !1;
+                                return n.useNativeDriver || !1;
                             },
                         }
                     );
                 },
                 T = function (t) {
-                    var n = 0;
+                    var e = 0;
                     return {
-                        start: function (e) {
+                        start: function (n) {
                             0 === t.length
-                                ? e && e({ finished: !0 })
-                                : t[n].start(function i(r) {
-                                      r.finished && ++n !== t.length ? t[n].start(i) : e && e(r);
+                                ? n && n({ finished: !0 })
+                                : t[e].start(function i(r) {
+                                      r.finished && ++e !== t.length ? t[e].start(i) : n && n(r);
                                   });
                         },
                         stop: function () {
-                            n < t.length && t[n].stop();
+                            e < t.length && t[e].stop();
                         },
                         reset: function () {
-                            t.forEach((t, e) => {
-                                e <= n && t.reset();
+                            t.forEach((t, n) => {
+                                n <= e && t.reset();
                             }),
-                                (n = 0);
+                                (e = 0);
                         },
                         _startNativeLoop: function () {
                             throw new Error("Loops run using the native driver cannot contain Animated.sequence animations");
@@ -126,30 +126,30 @@
                         },
                     };
                 },
-                I = function (t, n) {
-                    var e = 0,
+                I = function (t, e) {
+                    var n = 0,
                         i = {},
-                        r = !(n && !1 === n.stopTogether),
+                        r = !(e && !1 === e.stopTogether),
                         a = {
-                            start: function (n) {
-                                e !== t.length
+                            start: function (e) {
+                                n !== t.length
                                     ? t.forEach((o, s) => {
                                           var u = function (o) {
-                                              if (((i[s] = !0), ++e === t.length)) return (e = 0), void (n && n(o));
+                                              if (((i[s] = !0), ++n === t.length)) return (n = 0), void (e && e(o));
                                               !o.finished && r && a.stop();
                                           };
                                           o ? o.start(u) : u({ finished: !0 });
                                       })
-                                    : n && n({ finished: !0 });
+                                    : e && e({ finished: !0 });
                             },
                             stop: function () {
-                                t.forEach((t, n) => {
-                                    !i[n] && t.stop(), (i[n] = !0);
+                                t.forEach((t, e) => {
+                                    !i[e] && t.stop(), (i[e] = !0);
                                 });
                             },
                             reset: function () {
-                                t.forEach((t, n) => {
-                                    t.reset(), (i[n] = !1), (e = 0);
+                                t.forEach((t, e) => {
+                                    t.reset(), (i[e] = !1), (n = 0);
                                 });
                             },
                             _startNativeLoop: function () {
@@ -161,113 +161,113 @@
                         };
                     return a;
                 },
-                U = function (t) {
-                    return C(new w.Z(0), { toValue: 0, delay: t, duration: 0, useNativeDriver: !1 });
+                x = function (t) {
+                    return V(new w.Z(0), { toValue: 0, delay: t, duration: 0, useNativeDriver: !1 });
                 };
-            const M = {
+            const F = {
                 Value: w.Z,
-                ValueXY: E.Z,
-                Color: A.Z,
+                ValueXY: y.Z,
+                Color: k.Z,
                 Interpolation: p.Z,
                 Node: g.Z,
-                decay: function t(n, e) {
-                    var r = function (t, n, e) {
-                        e = k(e, n);
+                decay: function t(e, n) {
+                    var r = function (t, e, n) {
+                        n = A(n, e);
                         var i = t,
-                            r = n;
-                        i.stopTracking(), i.animate(new L.Z(r), e);
+                            r = e;
+                        i.stopTracking(), i.animate(new E.Z(r), n);
                     };
                     return (
-                        b(n, e, t) || {
+                        L(e, n, t) || {
                             start: function (t) {
-                                r(n, e, t);
+                                r(e, n, t);
                             },
                             stop: function () {
-                                n.stopAnimation();
+                                e.stopAnimation();
                             },
                             reset: function () {
-                                n.resetAnimation();
+                                e.resetAnimation();
                             },
                             _startNativeLoop: function (t) {
-                                var a = (0, i.Z)((0, i.Z)({}, e), {}, { iterations: t });
-                                r(n, a);
+                                var a = (0, i.Z)((0, i.Z)({}, n), {}, { iterations: t });
+                                r(e, a);
                             },
                             _isUsingNativeDriver: function () {
-                                return e.useNativeDriver || !1;
+                                return n.useNativeDriver || !1;
                             },
                         }
                     );
                 },
-                timing: C,
-                spring: function t(n, e) {
-                    var r = function (t, n, e) {
-                        e = k(e, n);
+                timing: V,
+                spring: function t(e, n) {
+                    var r = function (t, e, n) {
+                        n = A(n, e);
                         var i = t,
-                            r = n;
-                        i.stopTracking(), n.toValue instanceof g.Z ? i.track(new N.Z(i, n.toValue, y.Z, r, e)) : i.animate(new y.Z(r), e);
+                            r = e;
+                        i.stopTracking(), e.toValue instanceof g.Z ? i.track(new b.Z(i, e.toValue, N.Z, r, n)) : i.animate(new N.Z(r), n);
                     };
                     return (
-                        b(n, e, t) || {
+                        L(e, n, t) || {
                             start: function (t) {
-                                r(n, e, t);
+                                r(e, n, t);
                             },
                             stop: function () {
-                                n.stopAnimation();
+                                e.stopAnimation();
                             },
                             reset: function () {
-                                n.resetAnimation();
+                                e.resetAnimation();
                             },
                             _startNativeLoop: function (t) {
-                                var a = (0, i.Z)((0, i.Z)({}, e), {}, { iterations: t });
-                                r(n, a);
+                                var a = (0, i.Z)((0, i.Z)({}, n), {}, { iterations: t });
+                                r(e, a);
                             },
                             _isUsingNativeDriver: function () {
-                                return e.useNativeDriver || !1;
+                                return n.useNativeDriver || !1;
                             },
                         }
                     );
                 },
-                add: function (t, n) {
-                    return new l.Z(t, n);
+                add: function (t, e) {
+                    return new f.Z(t, e);
                 },
-                subtract: function (t, n) {
-                    return new m.Z(t, n);
+                subtract: function (t, e) {
+                    return new m.Z(t, e);
                 },
-                divide: function (t, n) {
-                    return new h.Z(t, n);
+                divide: function (t, e) {
+                    return new h.Z(t, e);
                 },
-                multiply: function (t, n) {
-                    return new Z.Z(t, n);
+                multiply: function (t, e) {
+                    return new _.Z(t, e);
                 },
-                modulo: function (t, n) {
-                    return new _.Z(t, n);
+                modulo: function (t, e) {
+                    return new Z.Z(t, e);
                 },
-                diffClamp: function (t, n, e) {
-                    return new d.Z(t, n, e);
+                diffClamp: function (t, e, n) {
+                    return new d.Z(t, e, n);
                 },
-                delay: U,
+                delay: x,
                 sequence: T,
                 parallel: I,
-                stagger: function (t, n) {
-                    return I(n.map((n, e) => T([U(t * e), n])));
+                stagger: function (t, e) {
+                    return I(e.map((e, n) => T([x(t * n), e])));
                 },
-                loop: function (t, n) {
-                    var e = void 0 === n ? {} : n,
-                        i = e.iterations,
+                loop: function (t, e) {
+                    var n = void 0 === e ? {} : e,
+                        i = n.iterations,
                         r = void 0 === i ? -1 : i,
-                        a = e.resetBeforeIteration,
+                        a = n.resetBeforeIteration,
                         o = void 0 === a || a,
                         s = !1,
                         u = 0;
                     return {
-                        start: function (n) {
+                        start: function (e) {
                             t && 0 !== r
                                 ? t._isUsingNativeDriver()
                                     ? t._startNativeLoop(r)
-                                    : (function e(i) {
-                                          void 0 === i && (i = { finished: !0 }), s || u === r || !1 === i.finished ? n && n(i) : (u++, o && t.reset(), t.start(e));
+                                    : (function n(i) {
+                                          void 0 === i && (i = { finished: !0 }), s || u === r || !1 === i.finished ? e && e(i) : (u++, o && t.reset(), t.start(n));
                                       })()
-                                : n && n({ finished: !0 });
+                                : e && e({ finished: !0 });
                         },
                         stop: function () {
                             (s = !0), t.stop();
@@ -283,195 +283,275 @@
                         },
                     };
                 },
-                event: function (t, n) {
-                    var e = new f.Q(t, n);
-                    return e.__isNative ? e : e.__getHandler();
+                event: function (t, e) {
+                    var n = new v.Q(t, e);
+                    return n.__isNative ? n : n.__getHandler();
                 },
                 createAnimatedComponent: D.Z,
-                attachNativeEvent: f.I,
-                forkEvent: function (t, n) {
+                attachNativeEvent: v.I,
+                forkEvent: function (t, e) {
                     return t
-                        ? t instanceof f.Q
-                            ? (t.__addListener(n), t)
+                        ? t instanceof v.Q
+                            ? (t.__addListener(e), t)
                             : function () {
-                                  "function" == typeof t && t(...arguments), n(...arguments);
+                                  "function" == typeof t && t(...arguments), e(...arguments);
                               }
-                        : n;
+                        : e;
                 },
-                unforkEvent: function (t, n) {
-                    t && t instanceof f.Q && t.__removeListener(n);
+                unforkEvent: function (t, e) {
+                    t && t instanceof v.Q && t.__removeListener(e);
                 },
-                Event: f.Q,
+                Event: v.Q,
             };
-            var P = !1;
-            function Q(t) {
-                return (n) => {
-                    var e =
-                        null == n
-                            ? n
+            var j = !1;
+            function S(t) {
+                return (e) => {
+                    var n =
+                        null == e
+                            ? e
                             : function () {
-                                  if (!P) {
-                                      P = !0;
+                                  if (!j) {
+                                      j = !0;
                                       try {
-                                          n(...arguments);
+                                          e(...arguments);
                                       } finally {
-                                          P = !1;
+                                          j = !1;
                                       }
                                   }
                               };
-                    t(e);
+                    t(n);
                 };
             }
-            var q = { start: () => {}, stop: () => {}, reset: () => {}, _startNativeLoop: () => {}, _isUsingNativeDriver: () => !1 },
-                x = (t) =>
+            var U = { start: () => {}, stop: () => {}, reset: () => {}, _startNativeLoop: () => {}, _isUsingNativeDriver: () => !1 },
+                M = (t) =>
                     (0, i.Z)(
-                        (0, i.Z)({}, q),
+                        (0, i.Z)({}, U),
                         {},
                         {
-                            start: Q((n) => {
-                                t.forEach((t) => t.start()), null == n || n({ finished: !0 });
+                            start: S((e) => {
+                                t.forEach((t) => t.start()), null == e || e({ finished: !0 });
                             }),
                         },
                     );
-            const H = {
+            const P = {
                 Value: w.Z,
-                ValueXY: E.Z,
-                Color: A.Z,
+                ValueXY: y.Z,
+                Color: k.Z,
                 Interpolation: p.Z,
                 Node: g.Z,
-                decay: function (t, n) {
-                    return q;
+                decay: function (t, e) {
+                    return U;
                 },
-                timing: function (t, n) {
-                    var e = t;
+                timing: function (t, e) {
+                    var n = t;
                     return (0, i.Z)(
-                        (0, i.Z)({}, q),
+                        (0, i.Z)({}, U),
                         {},
                         {
-                            start: Q((t) => {
-                                e.setValue(n.toValue), null == t || t({ finished: !0 });
+                            start: S((t) => {
+                                n.setValue(e.toValue), null == t || t({ finished: !0 });
                             }),
                         },
                     );
                 },
-                spring: function (t, n) {
-                    var e = t;
+                spring: function (t, e) {
+                    var n = t;
                     return (0, i.Z)(
-                        (0, i.Z)({}, q),
+                        (0, i.Z)({}, U),
                         {},
                         {
-                            start: Q((t) => {
-                                e.setValue(n.toValue), null == t || t({ finished: !0 });
+                            start: S((t) => {
+                                n.setValue(e.toValue), null == t || t({ finished: !0 });
                             }),
                         },
                     );
                 },
-                add: M.add,
-                subtract: M.subtract,
-                divide: M.divide,
-                multiply: M.multiply,
-                modulo: M.modulo,
-                diffClamp: M.diffClamp,
+                add: F.add,
+                subtract: F.subtract,
+                divide: F.divide,
+                multiply: F.multiply,
+                modulo: F.modulo,
+                diffClamp: F.diffClamp,
                 delay: function (t) {
-                    return q;
+                    return U;
                 },
                 sequence: function (t) {
-                    return x(t);
+                    return M(t);
                 },
-                parallel: function (t, n) {
-                    return x(t);
+                parallel: function (t, e) {
+                    return M(t);
                 },
-                stagger: function (t, n) {
-                    return x(n);
+                stagger: function (t, e) {
+                    return M(e);
                 },
-                loop: function (t, n) {
-                    (void 0 === n ? {} : n).iterations;
-                    return q;
+                loop: function (t, e) {
+                    (void 0 === e ? {} : e).iterations;
+                    return U;
                 },
-                event: M.event,
+                event: F.event,
                 createAnimatedComponent: D.Z,
-                attachNativeEvent: f.I,
-                forkEvent: M.forkEvent,
-                unforkEvent: M.unforkEvent,
-                Event: f.Q,
+                attachNativeEvent: v.I,
+                forkEvent: F.forkEvent,
+                unforkEvent: F.unforkEvent,
+                Event: v.Q,
             };
-            var j = r.Z.isTesting ? H : M;
-            const F = (0, i.Z)({ FlatList: a.Z, Image: o.Z, ScrollView: s.Z, SectionList: u.Z, Text: v.Z, View: c.Z }, j);
+            var Q = r.Z.isTesting ? P : F;
+            const B = (0, i.Z)({ FlatList: a.Z, Image: o.Z, ScrollView: s.Z, SectionList: u.Z, Text: l.Z, View: c.Z }, Q);
         },
-        137937: (t, n, e) => {
-            e.d(n, { Z: () => i });
-            const i = e(169758).Z;
+        137937: (t, e, n) => {
+            n.d(e, { Z: () => i });
+            const i = n(169758).Z;
         },
-        472302: (t, n, e) => {
-            e.d(n, { Z: () => i });
-            const i = e(975064).Z;
+        151624: (t, e, n) => {
+            n.d(e, { Z: () => i });
+            const i = n(454479).Z;
         },
-        265937: (t, n, e) => {
-            e.d(n, { I: () => s, Q: () => u });
-            var i = e(588016),
-                r = e(889441),
-                a = e(614983),
-                o = e.n(a);
-            function s(t, n, e) {
+        472302: (t, e, n) => {
+            n.d(e, { Z: () => i });
+            const i = n(975064).Z;
+        },
+        372612: (t, e, n) => {
+            n.d(e, { Z: () => b });
+            var i = n(133028),
+                r = n(807896),
+                a = n(231461),
+                o = n(202784),
+                s = n(890601),
+                u = /^[+-]?\d*(?:\.\d+)?(?:[Ee][+-]?\d+)?(%|\w*)/;
+            const l = (t, e) => {
+                var n;
+                return "string" == typeof t ? "" + parseFloat(t) * e + t.match(u)[1] : ((n = t), !isNaN(parseFloat(n)) && isFinite(n) ? t * e : void 0);
+            };
+            var c = n(297689),
+                v = n(325686),
+                f = ["aria-label", "accessibilityLabel", "activeThumbColor", "activeTrackColor", "disabled", "onValueChange", "style", "thumbColor", "trackColor", "value"],
+                d = {},
+                h = "0px 1px 3px rgba(0,0,0,0.5)",
+                p = h + ", 0 0 0 10px rgba(0,0,0,0.1)",
+                Z = "#D5D5D5",
+                _ = "#BDBDBD",
+                g = o.forwardRef((t, e) => {
+                    var n = t["aria-label"],
+                        i = t.accessibilityLabel,
+                        u = t.activeThumbColor,
+                        g = t.activeTrackColor,
+                        b = t.disabled,
+                        w = void 0 !== b && b,
+                        y = t.onValueChange,
+                        E = t.style,
+                        N = void 0 === E ? d : E,
+                        C = t.thumbColor,
+                        D = t.trackColor,
+                        k = t.value,
+                        A = void 0 !== k && k,
+                        L = (0, a.Z)(t, f),
+                        V = o.useRef(null);
+                    function T(t) {
+                        var e = "focus" === t.nativeEvent.type ? p : h;
+                        null != V.current && (V.current.style.boxShadow = e);
+                    }
+                    var I = c.Z.flatten(N),
+                        x = I.height,
+                        F = I.width,
+                        j = x || "20px",
+                        S = l(j, 2),
+                        U = F > S ? F : S,
+                        M = l(j, 0.5),
+                        P = !0 === A ? (null != D && "object" == typeof D ? D.true : null != g ? g : "#A3D3CF") : null != D && "object" == typeof D ? D.false : null != D ? D : "#939393",
+                        Q = A ? (null != u ? u : "#009688") : null != C ? C : "#FAFAFA",
+                        B = j,
+                        O = B,
+                        R = [m.root, N, w && m.cursorDefault, { height: j, width: U }],
+                        q = !0 === A ? (("string" == typeof g && null != g) || ("object" == typeof D && null != D && D.true) ? P : Z) : ("string" == typeof D && null != D) || ("object" == typeof D && null != D && D.false) ? P : Z,
+                        H = !0 === A ? (null == u ? _ : Q) : null == C ? _ : Q,
+                        X = [m.track, { backgroundColor: w ? q : P, borderRadius: M }],
+                        Y = [m.thumb, A && m.thumbActive, { backgroundColor: w ? H : Q, height: B, marginStart: A ? l(O, -1) : 0, width: O }],
+                        z = (0, s.Z)("input", {
+                            "aria-label": n || i,
+                            checked: A,
+                            disabled: w,
+                            onBlur: T,
+                            onChange: function (t) {
+                                null != y && y(t.nativeEvent.target.checked);
+                            },
+                            onFocus: T,
+                            ref: e,
+                            style: [m.nativeControl, m.cursorInherit],
+                            type: "checkbox",
+                            role: "switch",
+                        });
+                    return o.createElement(v.Z, (0, r.Z)({}, L, { style: R }), o.createElement(v.Z, { style: X }), o.createElement(v.Z, { ref: V, style: Y }), z);
+                });
+            g.displayName = "Switch";
+            var m = c.Z.create({ root: { cursor: "pointer", userSelect: "none" }, cursorDefault: { cursor: "default" }, cursorInherit: { cursor: "inherit" }, track: (0, i.Z)((0, i.Z)({ forcedColorAdjust: "none" }, c.Z.absoluteFillObject), {}, { height: "70%", margin: "auto", transitionDuration: "0.1s", width: "100%" }), thumb: { forcedColorAdjust: "none", alignSelf: "flex-start", borderRadius: "100%", boxShadow: h, start: "0%", transform: "translateZ(0)", transitionDuration: "0.1s" }, thumbActive: { insetInlineStart: "100%" }, nativeControl: (0, i.Z)((0, i.Z)({}, c.Z.absoluteFillObject), {}, { height: "100%", margin: 0, appearance: "none", padding: 0, width: "100%" }) });
+            const b = g;
+        },
+        265937: (t, e, n) => {
+            n.d(e, { I: () => s, Q: () => u });
+            var i = n(588016),
+                r = n(889441),
+                a = n(614983),
+                o = n.n(a);
+            function s(t, e, n) {
                 var a = [],
-                    s = (t, n) => {
-                        if (t instanceof i.Z) t.__makeNative(), a.push({ nativeEventPath: n, animatedValueTag: t.__getNativeTag() });
-                        else if ("object" == typeof t) for (var e in t) s(t[e], n.concat(e));
+                    s = (t, e) => {
+                        if (t instanceof i.Z) t.__makeNative(), a.push({ nativeEventPath: e, animatedValueTag: t.__getNativeTag() });
+                        else if ("object" == typeof t) for (var n in t) s(t[n], e.concat(n));
                     };
                 return (
-                    o()(e[0] && e[0].nativeEvent, "Native driven events only support animated values contained inside `nativeEvent`."),
-                    s(e[0].nativeEvent, []),
+                    o()(n[0] && n[0].nativeEvent, "Native driven events only support animated values contained inside `nativeEvent`."),
+                    s(n[0].nativeEvent, []),
                     null != t &&
-                        a.forEach((e) => {
-                            r.ZP.API.addAnimatedEventToView(t, n, e);
+                        a.forEach((n) => {
+                            r.ZP.API.addAnimatedEventToView(t, e, n);
                         }),
                     {
                         detach() {
                             null != t &&
-                                a.forEach((e) => {
-                                    r.ZP.API.removeAnimatedEventFromView(t, n, e.animatedValueTag);
+                                a.forEach((n) => {
+                                    r.ZP.API.removeAnimatedEventFromView(t, e, n.animatedValueTag);
                                 });
                         },
                     }
                 );
             }
             class u {
-                constructor(t, n) {
-                    (this._listeners = []), (this._argMapping = t), null == n && (n = { useNativeDriver: !1 }), n.listener && this.__addListener(n.listener), (this._callListeners = this._callListeners.bind(this)), (this._attachedEvent = null), (this.__isNative = (0, r.lH)(n));
+                constructor(t, e) {
+                    (this._listeners = []), (this._argMapping = t), null == e && (e = { useNativeDriver: !1 }), e.listener && this.__addListener(e.listener), (this._callListeners = this._callListeners.bind(this)), (this._attachedEvent = null), (this.__isNative = (0, r.lH)(e));
                 }
                 __addListener(t) {
                     this._listeners.push(t);
                 }
                 __removeListener(t) {
-                    this._listeners = this._listeners.filter((n) => n !== t);
+                    this._listeners = this._listeners.filter((e) => e !== t);
                 }
-                __attach(t, n) {
-                    o()(this.__isNative, "Only native driven events need to be attached."), (this._attachedEvent = s(t, n, this._argMapping));
+                __attach(t, e) {
+                    o()(this.__isNative, "Only native driven events need to be attached."), (this._attachedEvent = s(t, e, this._argMapping));
                 }
-                __detach(t, n) {
+                __detach(t, e) {
                     o()(this.__isNative, "Only native driven events need to be detached."), this._attachedEvent && this._attachedEvent.detach();
                 }
                 __getHandler() {
                     var t = this;
                     if (this.__isNative) return this._callListeners;
                     return function () {
-                        for (var n = arguments.length, e = new Array(n), r = 0; r < n; r++) e[r] = arguments[r];
-                        var a = (t, n, e) => {
-                            if (t instanceof i.Z) "number" == typeof n && t.setValue(n);
-                            else if ("object" == typeof t) for (var r in t) a(t[r], n[r], r);
+                        for (var e = arguments.length, n = new Array(e), r = 0; r < e; r++) n[r] = arguments[r];
+                        var a = (t, e, n) => {
+                            if (t instanceof i.Z) "number" == typeof e && t.setValue(e);
+                            else if ("object" == typeof t) for (var r in t) a(t[r], e[r], r);
                         };
-                        t._argMapping.forEach((t, n) => {
-                            a(t, e[n], "arg" + n);
+                        t._argMapping.forEach((t, e) => {
+                            a(t, n[e], "arg" + e);
                         }),
-                            t._callListeners(...e);
+                            t._callListeners(...n);
                     };
                 }
                 _callListeners() {
-                    for (var t = arguments.length, n = new Array(t), e = 0; e < t; e++) n[e] = arguments[e];
-                    this._listeners.forEach((t) => t(...n));
+                    for (var t = arguments.length, e = new Array(t), n = 0; n < t; n++) e[n] = arguments[n];
+                    this._listeners.forEach((t) => t(...e));
                 }
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f.6a66930a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f.79dc510a.js.map

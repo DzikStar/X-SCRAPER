@@ -225,6 +225,11 @@
                 a("f65e7e91", function (e) {
                     return "[[290850]] " + e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
+                a("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                a("he77d8e6", "Limited-time offer"),
+                a("adf3410a", "[[290067]] Subscribe to unlock new features and if eligible, receive a share of revenue."),
                 a("a84a736e", "[[292315]] Get Free Ad Credit"),
                 a("a0713d76", "[[292316]] Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 a("a07e13fc", "[[289978]] Become a Premium Creator"),
@@ -260,7 +265,6 @@
                 a("ed534c78", "[[286455]] Only X Premium subscribers have access to bookmark folders. Upgrade to continue."),
                 a("ed924940", "[[289074]] Remove all ads with Premium+"),
                 a("dccdb326", "[[289072]] Only Premium+ subscribers see no ads. Upgrade to continue."),
-                a("adf3410a", "[[290067]] Subscribe to unlock new features and if eligible, receive a share of revenue."),
                 a("d8661dd4", "[[291038]] For a limited time. Unlock the best of X."),
                 a("fe7fd234", "[[288648]] Try Premium Basic for free today"),
                 a("a2f86dda", "[[288644]] Enhance your experience with Bookmark folders, Edit post, Custom app icons, and more with Premium Basic."),
@@ -899,10 +903,10 @@
                 a("bf9e181b", "Learn more"),
                 a("e8e39f95", "Learn more"),
                 a("e126dd3f", "Learn more"),
-                a("i821844f", "Learn more"),
-                a("b0abbb17", "Learn more"),
-                a("e7e0d88b", "Learn more");
-            a("i560665f", "Learn more"),
+                a("i821844f", "Learn more");
+            a("b0abbb17", "Learn more"),
+                a("e7e0d88b", "Learn more"),
+                a("i560665f", "Learn more"),
                 a("f6e774d9", "Learn more"),
                 a("h486f755", "Learn more"),
                 a("bab41dab", "Learn more"),
@@ -1286,11 +1290,11 @@
                 a("b0d1e205", function (e) {
                     return '[[293056]] Searching for **"' + e.query + '"**';
                 }),
-                a("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 a("bf970edd", function (e) {
                     return '[[296469]] Searching 𝕏 for "' + e.query + '"';
+                }),
+                a("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 a("g008d475", function (e) {
                     return "[[296453]] Browsing " + e.url;
@@ -1309,6 +1313,9 @@
                 }),
                 a("e99fb7a3", function (e) {
                     return "[[296471]] Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
+                }),
+                a("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 a("ead81122", "[[294249]] Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "[[285363]] Rate limit exceeded. Please wait a few moments then try again."),
@@ -1342,11 +1349,12 @@
                 a("deaf5b16", "[[176304]] Retry"),
                 a("a66d80d0", "[[281783]] Translate post"),
                 a("be9b9fb8", "[[292374]] Translated by Grok"),
+                a("ba10dab6", "Auto-translated by Grok"),
                 a("he9c9634", "[[190233]] Unable to fetch translation"),
                 a("j2198c98", "[[283742]] Hide translated post"),
                 a("d4d35bea", "[[292636]] Translating..."),
-                a("i7ac410e", "[[293587]] Show Original"),
-                a("c67f09e8", "[[293586]] Show Translation"),
+                a("f4f69be8", "Show original"),
+                a("e3097a5c", "Show auto-translated post"),
                 a("e0f81ff3", "Translation:"),
                 a("j2862695", function (e) {
                     return "Translated from " + e.originLanguage + " by";
@@ -1731,9 +1739,7 @@
                 a("f5b3dc1e", "[[258870]] Maybe later"),
                 a("ae0c5fbe", "[[234224]] Error changing who can reply"),
                 a("bae0cbc0", "[[233826]] Change who can reply"),
-                a("d78131b9", function (e) {
-                    return "[[229376]] Add/remove @" + e.screenName + " from Lists";
-                }),
+                a("a599bbfa", "[[208522]] Add/remove from Lists"),
                 a("b3b642fc", "[[294702]] Why this post?"),
                 a("fb4ee11c", "[[229082]] Why this ad?"),
                 a("ad50e7d9", function (e) {
@@ -1795,15 +1801,11 @@
                 a("j7bb1a43", function (e) {
                     return "[[190994]] Report @" + e.screenName;
                 }),
-                a("hef5960c", "[[209670]] Share profile via..."),
+                a("g00b4c55", function (e) {
+                    return "[[296583]] Share @" + e.screenName + " via...";
+                }),
                 a("bb1cbeb6", "[[142439]] Unmute"),
                 a("h2f62206", "[[226319]] Muting user"),
-                a("e67b2d65", function (e) {
-                    return "[[175764]] Mute @" + e.screenName;
-                }),
-                a("f05597b3", function (e) {
-                    return "[[175768]] Unmute @" + e.screenName;
-                }),
                 a("h59f52ee", "[[142400]] Successfully muted."),
                 a("eea0cbee", "[[142401]] Successfully unmuted."),
                 a("i29533b3", function (e) {
@@ -1919,10 +1921,10 @@
                 }),
                 a("jcd5ee8a", "[[287353]] Edit block"),
                 a("a8f09fb8", "[[287352]] Delete block"),
-                a("i89195ea", "[[287259]] Divider"),
-                a("da8ac57c", "[[284900]] Edit Caption"),
-                a("a8fdd09c", "[[284919]] Publish Article");
-            a("d8047cc8", "[[221087]] Publish"),
+                a("i89195ea", "[[287259]] Divider");
+            a("da8ac57c", "[[284900]] Edit Caption"),
+                a("a8fdd09c", "[[284919]] Publish Article"),
+                a("d8047cc8", "[[221087]] Publish"),
                 a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 a("ef34d7be", "[[284897]] Audience and reply controls are not editable after an article has been published."),
                 a("e52d4998", "[[284896]] Choose your audience"),
@@ -2975,10 +2977,10 @@
                 }),
                 a("e64de8a9", function (e) {
                     return "[[276858]] " + e.entity + " was removed from your Bookmarks";
-                }),
-                a("d6d9aab6", "[[244742]] Add Bookmark"),
-                a("bb89cf46", "[[244743]] Remove Bookmark");
-            a("a739d4ba", "[[244741]] Add to Bookmark Folder"),
+                });
+            a("d6d9aab6", "[[244742]] Add Bookmark"),
+                a("bb89cf46", "[[244743]] Remove Bookmark"),
+                a("a739d4ba", "[[244741]] Add to Bookmark Folder"),
                 a("d5270434", "[[240145]] Exit"),
                 a("ac85c6b2", "[[177517]] An error occurred loading this image"),
                 a("b327c12a", "[[191524]] Image"),
@@ -3901,10 +3903,10 @@
                 a("fe7a1910", "[[287271]] Send invites"),
                 a("ic3c757e", "[[287270]] Search for users"),
                 a("cd133486", "[[238308]] Invite"),
-                a("f2333850", "[[283614]] Share with people outside of X"),
-                a("cddb8097", "Learn more"),
-                a("f77997b0", "[[236782]] Co-host");
-            a("i48f4ed8", "[[51016]] Speaker"),
+                a("f2333850", "[[283614]] Share with people outside of X");
+            a("cddb8097", "Learn more"),
+                a("f77997b0", "[[236782]] Co-host"),
+                a("i48f4ed8", "[[51016]] Speaker"),
                 a("a77c8e02", "[[230208]] Listener"),
                 a("bdfa93eb", function (e) {
                     return "[[233127]] Shared by " + e.name;
@@ -4261,6 +4263,7 @@
                     return "[[296468]] Show all (" + e.count + ")";
                 }),
                 a("df601d92", "[[296461]] Relevant Users"),
+                a("a4cfb8a8", "Browsing"),
                 a("d7cb5408", "[[290891]] Relevant Web Pages"),
                 a("ca93f2ee", "[[289932]] This message has been deleted."),
                 a("b8c06820", "[[287580]] Copy text"),
@@ -4924,11 +4927,11 @@
                 a("d9f9dec0", "[[294167]] View Space"),
                 a("h0c1f37a", "[[294166]] View Space Analytics"),
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
-                a("if2909ba", "[[292000]] Watch Time"),
-                a("i0e5bf4c", "[[293195]] Your videos"),
+                a("if2909ba", "[[292000]] Watch Time");
+            a("i0e5bf4c", "[[293195]] Your videos"),
                 a("ed99baea", "[[289716]] Early Beta Access"),
-                a("gf898b70", "[[289702]] Advanced Search");
-            a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
+                a("gf898b70", "[[289702]] Advanced Search"),
+                a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
                 a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '[[289700]] "ai startup"'),
@@ -5878,13 +5881,13 @@
                 a("f191a2ba", "Search settings"),
                 a("a068008a", "[[290206]] Folders aren`t loading right now"),
                 a("f075b0e8", "[[241449]] Edit Folder"),
-                a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
-                a("e41c9b4f", function (e) {
-                    return "[[242357]] Saved to " + e.bookmarkFolderName;
-                }),
+                a("beba2a0e", "[[242311]] Create a new Bookmark Folder");
+            a("e41c9b4f", function (e) {
+                return "[[242357]] Saved to " + e.bookmarkFolderName;
+            }),
                 a("h18f86a4", "[[242318]] Delete Folder"),
-                a("f4ea967a", "[[242841]] Folder has been deleted");
-            a("b670aa62", "[[242315]] Folder Name"),
+                a("f4ea967a", "[[242841]] Folder has been deleted"),
+                a("b670aa62", "[[242315]] Folder Name"),
                 a("aece5462", "[[242839]] Folder name has been updated successfully"),
                 a("e3299b94", "[[242842]] Something went wrong. Try updating that folder again in a minute."),
                 a("c09ea714", "[[242843]] Something went wrong. Try deleting that folder again in a minute."),
@@ -6495,7 +6498,7 @@
                 a("f7cf3d36", "[[296553]] Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 a("hc965308", "[[285237]] Fun"),
                 a("eb78b77e", "[[285228]] Fun Mode"),
-                a("aa8ece10", "[[293512]] Try grok.com"),
+                a("ac164552", "Go to grok.com"),
                 a("gb5fb7d0", "[[291144]] Focus Mode"),
                 a("g5665caa", "[[291143]] Exit Focus Mode"),
                 a("a372681e", "[[293160]] Copy share link"),
@@ -6886,11 +6889,11 @@
                     return "[[290946]] " + e.percentage + "% off a year of Premium";
                 }),
                 a("c924ad84", "[[293326]] Keep videos playing"),
-                a("de750a3c", "[[293320]] Enjoy them even when your phone is locked"),
-                a("he5e87c4", "[[293316]] Boost your replies"),
+                a("de750a3c", "[[293320]] Enjoy them even when your phone is locked");
+            a("he5e87c4", "[[293316]] Boost your replies"),
                 a("g64a60ba", "[[293325]] Get a small prioritization when you reply to posts"),
-                a("a7ee832a", "[[293321]] Fix typos and mistakes, up to 60 minutes");
-            a("fdd77a34", "[[293319]] Create longer posts"),
+                a("a7ee832a", "[[293321]] Fix typos and mistakes, up to 60 minutes"),
+                a("fdd77a34", "[[293319]] Create longer posts"),
                 a("j6d26a7a", "[[293330]] Write as much as you’d like to share"),
                 a("c4fd68da", "[[293317]] Customize your experience"),
                 a("c0195168", "[[293318]] Change your app icon and navigation options"),
@@ -6918,8 +6921,6 @@
                 a("c3148608", "[[293228]] Get faster assistance when you need help"),
                 a("b485ca6e", "[[290025]] Highlights tab"),
                 a("d438955e", "[[293238]] Showcase your top posts"),
-                a("f373a352", "[[290030]] Encrypted DMs"),
-                a("g7405aca", "[[293224]] Chat securely with end-to-end encryption"),
                 a("j659fa0c", "[[293164]] The best of Grok 3"),
                 a("ibff5694", "[[293165]] Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 a("i824f4da", "[[290861]] Fewer ads"),
@@ -6988,6 +6989,10 @@
                 a("gd573390", "[[291019]] And everything in Basic..."),
                 a("ef94bbd4", "[[289852]] Get Premium+"),
                 a("dcd830ce", "[[291020]] And everything in Premium..."),
+                a("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                a("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 a("b7dde622", "[[290743]] Happy Thanksgiving! Offer ends in:"),
                 a("i0180ca1", function (e) {
                     return "[[290853]] Until " + e.date + ". Happy Thanksgiving!";
@@ -7866,12 +7871,7 @@
                 }),
                 a("bf809ec0", "[[288071]] Select Affiliates"),
                 a("b719e224", "[[196494]] No results"),
-                a("c9938100", "[[220491]] Search results"),
-                a("d1a35ec6", "[[274371]] Add accounts"),
-                a("b437adda", "[[281591]] Upgrade to paid"),
-                a("f1f6c88b", function (e) {
-                    return "[[274679]] Accounts (" + e.count + ")";
-                });
+                a("c9938100", "[[220491]] Search results");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7910,7 +7910,12 @@
                     r(e, t)
                 );
             }
-            a("b02156b8", "[[274681]] Invitations"),
+            a("d1a35ec6", "[[274371]] Add accounts"),
+                a("b437adda", "[[281591]] Upgrade to paid"),
+                a("f1f6c88b", function (e) {
+                    return "[[274679]] Accounts (" + e.count + ")";
+                }),
+                a("b02156b8", "[[274681]] Invitations"),
                 a("gd67d29b", function (e) {
                     return "[[274680]] Invitations (" + e.count + ")";
                 }),
@@ -8908,11 +8913,11 @@
                     return "[[286308]] Auto (" + e.quality + ")";
                 }),
                 a("a7bf9962", "[[276485]] Download video"),
-                a("ccc97152", "[[238866]] Playback speed"),
-                a("h531ade0", "[[286295]] Video quality"),
+                a("ccc97152", "[[238866]] Playback speed");
+            a("h531ade0", "[[286295]] Video quality"),
                 a("e8b5757c", "[[246420]] 0.25x"),
-                a("e7e954de", "[[238867]] 0.5x");
-            a("g07ffe66", "[[246423]] 0.75x"),
+                a("e7e954de", "[[238867]] 0.5x"),
+                a("g07ffe66", "[[246423]] 0.75x"),
                 a("d8bede9e", "[[246421]] 1x"),
                 a("j41845c8", "[[246422]] 1.25x"),
                 a("e9eeed9e", "[[238868]] 1.5x"),
@@ -13335,4 +13340,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.ee02baca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.3ca076ca.js.map

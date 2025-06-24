@@ -225,6 +225,11 @@
                 t("f65e7e91", function (e) {
                     return e.percentage + " % rabat " + e.tier + " " + e.plan;
                 }),
+                t("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                t("he77d8e6", "Limited-time offer"),
+                t("adf3410a", "Abonner for at låse op for nye funktioner, og få en andel af indtægterne, hvis du er kvalificeret."),
                 t("a84a736e", "Få gratis annoncekredit"),
                 t("a0713d76", "Opgrader til Verificerede organisationer for at få gratis annoncekredit og en pakke med virksomhedsfunktioner til at skabe vækst."),
                 t("a07e13fc", "Bliv en Premium-skaber"),
@@ -260,7 +265,6 @@
                 t("ed534c78", "Kun X Premium-abonnenter har adgang til bogmærkemapper. Opgrader for at fortsætte."),
                 t("ed924940", "Fjern alle annoncer med Premium+"),
                 t("dccdb326", "Kun abonnenter på Premium+ ser ingen annoncer. Opgrader for at fortsætte."),
-                t("adf3410a", "Abonner for at låse op for nye funktioner, og få en andel af indtægterne, hvis du er kvalificeret."),
                 t("d8661dd4", "I en begrænset periode. Lås op for det bedste på X."),
                 t("fe7fd234", "Prøv Premium Basis gratis i dag"),
                 t("a2f86dda", "Gør din oplevelse bedre med bogmærkemapper, redigering af posts, brugerdefinerede  appikoner og meget mere med Premium Basis."),
@@ -899,10 +903,10 @@
                 t("bf9e181b", "Lær mere"),
                 t("e8e39f95", "Learn more"),
                 t("e126dd3f", "Learn more"),
-                t("i821844f", "Learn more"),
-                t("b0abbb17", "Learn more"),
-                t("e7e0d88b", "Learn more");
-            t("i560665f", "Learn more"),
+                t("i821844f", "Learn more");
+            t("b0abbb17", "Learn more"),
+                t("e7e0d88b", "Learn more"),
+                t("i560665f", "Learn more"),
                 t("f6e774d9", "Learn more"),
                 t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
@@ -1286,11 +1290,11 @@
                 t("b0d1e205", function (e) {
                     return 'Søger efter **"' + e.query + '"**';
                 }),
-                t("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 t("bf970edd", function (e) {
                     return 'Søger på 𝕏 efter "' + e.query + '"';
+                }),
+                t("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 t("g008d475", function (e) {
                     return "Gennemser " + e.url;
@@ -1309,6 +1313,9 @@
                 }),
                 t("e99fb7a3", function (e) {
                     return "Søger i 𝕏-posts af @" + e.username + ' efter **"' + e.query + '"**';
+                }),
+                t("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 t("ead81122", "Noget gik galt, opdater venligst for at genoprette forbindelsen eller prøv igen. "),
                 t("f808a13a", "Begrænsning overskredet. Vent et øjeblik, og prøv igen."),
@@ -1342,11 +1349,12 @@
                 t("deaf5b16", "Prøv igen"),
                 t("a66d80d0", "Oversæt post"),
                 t("be9b9fb8", "Oversat af Grok"),
+                t("ba10dab6", "Auto-translated by Grok"),
                 t("he9c9634", "Oversættelsen kunne ikke hentes"),
                 t("j2198c98", "Skjul oversat post"),
                 t("d4d35bea", "Oversætter ..."),
-                t("i7ac410e", "Vis original"),
-                t("c67f09e8", "Vis oversættelse"),
+                t("f4f69be8", "Show original"),
+                t("e3097a5c", "Show auto-translated post"),
                 t("e0f81ff3", "Oversættelse:"),
                 t("j2862695", function (e) {
                     return "Oversat fra " + e.originLanguage + " af";
@@ -1731,9 +1739,7 @@
                 t("f5b3dc1e", "Måske senere"),
                 t("ae0c5fbe", "Fejl under ændring af, hvem der kan svare"),
                 t("bae0cbc0", "Rediger, hvem der kan svare"),
-                t("d78131b9", function (e) {
-                    return "Tilføj/fjern @" + e.screenName + " fra Lister";
-                }),
+                t("a599bbfa", "Føj til/fjern fra lister"),
                 t("b3b642fc", "Hvorfor denne post?"),
                 t("fb4ee11c", "Hvorfor vises denne annonce?"),
                 t("ad50e7d9", function (e) {
@@ -1795,15 +1801,11 @@
                 t("j7bb1a43", function (e) {
                     return "Indberet @" + e.screenName;
                 }),
-                t("hef5960c", "Del profil via..."),
+                t("g00b4c55", function (e) {
+                    return "Del @" + e.screenName + " via ...";
+                }),
                 t("bb1cbeb6", "Vis"),
                 t("h2f62206", "Skjul bruger"),
-                t("e67b2d65", function (e) {
-                    return "Skjul @" + e.screenName;
-                }),
-                t("f05597b3", function (e) {
-                    return "Vis @" + e.screenName;
-                }),
                 t("h59f52ee", "Skjult."),
                 t("eea0cbee", "Vises."),
                 t("i29533b3", function (e) {
@@ -1919,10 +1921,10 @@
                 }),
                 t("jcd5ee8a", "Rediger blok"),
                 t("a8f09fb8", "Slet blok"),
-                t("i89195ea", "Skillelinje"),
-                t("da8ac57c", "Rediger billedtekst"),
-                t("a8fdd09c", "Udgiv Artikel");
-            t("d8047cc8", "Udgiv"),
+                t("i89195ea", "Skillelinje");
+            t("da8ac57c", "Rediger billedtekst"),
+                t("a8fdd09c", "Udgiv Artikel"),
+                t("d8047cc8", "Udgiv"),
                 t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
                 t("ef34d7be", "Indstillingerne for målgruppe og svar kan ikke ændres, når en Artikel er blevet udgivet."),
                 t("e52d4998", "Vælg din målgruppe"),
@@ -2975,10 +2977,10 @@
                 }),
                 t("e64de8a9", function (e) {
                     return e.entity + " blev fjernet fra dine bogmærker";
-                }),
-                t("d6d9aab6", "Tilføj bogmærke"),
-                t("bb89cf46", "Fjern bogmærke");
-            t("a739d4ba", "Føj til mappe med bogmærker"),
+                });
+            t("d6d9aab6", "Tilføj bogmærke"),
+                t("bb89cf46", "Fjern bogmærke"),
+                t("a739d4ba", "Føj til mappe med bogmærker"),
                 t("d5270434", "Afslut"),
                 t("ac85c6b2", "Der opstod en fejl under indlæsning af dette billede"),
                 t("b327c12a", "Billede"),
@@ -3901,10 +3903,10 @@
                 t("fe7a1910", "Send invitationer"),
                 t("ic3c757e", "Søg efter brugere"),
                 t("cd133486", "Inviter"),
-                t("f2333850", "Del med personer uden for X"),
-                t("cddb8097", "Læs mere"),
-                t("f77997b0", "Medvært");
-            t("i48f4ed8", "Taler"),
+                t("f2333850", "Del med personer uden for X");
+            t("cddb8097", "Læs mere"),
+                t("f77997b0", "Medvært"),
+                t("i48f4ed8", "Taler"),
                 t("a77c8e02", "Lytter"),
                 t("bdfa93eb", function (e) {
                     return "Delt af " + e.name;
@@ -4261,6 +4263,7 @@
                     return "Vis alle (" + e.count + ")";
                 }),
                 t("df601d92", "Relevante brugere"),
+                t("a4cfb8a8", "Browsing"),
                 t("d7cb5408", "Relevante websider"),
                 t("ca93f2ee", "Denne besked er blevet slettet."),
                 t("b8c06820", "Kopiér teksten"),
@@ -4924,11 +4927,11 @@
                 t("d9f9dec0", "Se Rum"),
                 t("h0c1f37a", "Se rumanalysen"),
                 t("e41fffbc", "Den samlede visningstid for dine videoer."),
-                t("if2909ba", "Visningstid"),
-                t("i0e5bf4c", "Dine videoer"),
+                t("if2909ba", "Visningstid");
+            t("i0e5bf4c", "Dine videoer"),
                 t("ed99baea", "Tidlig beta-adgang"),
-                t("gf898b70", "Avanceret søgning");
-            t("d2a43a7a", 'indeholder både "ai" og "startup"'),
+                t("gf898b70", "Avanceret søgning"),
+                t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'indeholder den eksakte sætning "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5878,13 +5881,13 @@
                 t("f191a2ba", "søgeindstillinger"),
                 t("a068008a", "Mapper indlæses ikke lige nu"),
                 t("f075b0e8", "Rediger mappe"),
-                t("beba2a0e", "Opret en ny mappe til bogmærker"),
-                t("e41c9b4f", function (e) {
-                    return "Saved to " + e.bookmarkFolderName;
-                }),
+                t("beba2a0e", "Opret en ny mappe til bogmærker");
+            t("e41c9b4f", function (e) {
+                return "Saved to " + e.bookmarkFolderName;
+            }),
                 t("h18f86a4", "Slet mappe"),
-                t("f4ea967a", "Mappen er blevet slettet");
-            t("b670aa62", "Mappenavn"),
+                t("f4ea967a", "Mappen er blevet slettet"),
+                t("b670aa62", "Mappenavn"),
                 t("aece5462", "Mappenavnet er blevet opdateret"),
                 t("e3299b94", "Noget gik galt. Prøv at opdatere mappen igen om et øjeblik."),
                 t("c09ea714", "Noget gik galt. Prøv at slette mappen igen om et øjeblik."),
@@ -6492,10 +6495,10 @@
                 t("e5f4eac0", "Dit indhold vil blive mere synligt. Og du vil blive vist i søgeresultater og tendenser."),
                 t("c7832a72", "Kom i direkte kontakt med andre"),
                 t("i1ccd17a", "Send direkte beskeder til personer, der ikke følger dig, uden at din besked automatisk bliver filtreret."),
-                t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                t("f7cf3d36", "Grok er en gratis AI-assistent designet af xAI for at maksimere sandhed og objektivitet. Grok tilbyder realtids-søgning, billedgenerering, trendanalyse og meget mere."),
                 t("hc965308", "Sjov"),
                 t("eb78b77e", "Tilstanden Sjov"),
-                t("aa8ece10", "Prøv grok.com"),
+                t("ac164552", "Go to grok.com"),
                 t("gb5fb7d0", "Fokustilstand"),
                 t("g5665caa", "Afslut fokustilstand"),
                 t("a372681e", "Kopiér link til deling"),
@@ -6886,11 +6889,11 @@
                     return e.percentage + " % rabat på Premium i et år";
                 }),
                 t("c924ad84", "Fortsæt med afspilning af videoer"),
-                t("de750a3c", "Nyd dem, selv når din telefon er låst"),
-                t("he5e87c4", "Boost dine svar"),
+                t("de750a3c", "Nyd dem, selv når din telefon er låst");
+            t("he5e87c4", "Boost dine svar"),
                 t("g64a60ba", "Få en smule prioritering, når du svarer på opslag"),
-                t("a7ee832a", "Få rettet dine stave- og slåfejl på under 60 minutter");
-            t("fdd77a34", "Skab længere opslag"),
+                t("a7ee832a", "Få rettet dine stave- og slåfejl på under 60 minutter"),
+                t("fdd77a34", "Skab længere opslag"),
                 t("j6d26a7a", "Skriv ligeså meget, som du har lyst til at dele"),
                 t("c4fd68da", "Tilpas din oplevelse"),
                 t("c0195168", "Skift dit app-ikon og dine navigationsmuligheder"),
@@ -6918,8 +6921,6 @@
                 t("c3148608", "Få hurtigere hjælp, når du har brug for det"),
                 t("b485ca6e", "Fanen Højdepunkter"),
                 t("d438955e", "Vis dine bedste posts frem"),
-                t("f373a352", "Krypterede direkte beskeder"),
-                t("g7405aca", "Chat sikkert med end-to-end-kryptering"),
                 t("j659fa0c", "Det bedste fra Grok 3"),
                 t("ibff5694", "Lås op for de højeste brugsgrænser, DeepSearch og Tænk, plus tidlig adgang til nye funktioner"),
                 t("i824f4da", "Færre annoncer"),
@@ -6988,6 +6989,10 @@
                 t("gd573390", "Og alt i Basis ..."),
                 t("ef94bbd4", "Få Premium+"),
                 t("dcd830ce", "Og alt i Premium ..."),
+                t("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                t("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 t("b7dde622", "Glædelig Thanksgiving! Tilbuddet slutter om:"),
                 t("i0180ca1", function (e) {
                     return "Indtil " + e.date + ". Glædelig thanksgiving!";
@@ -7866,12 +7871,7 @@
                 }),
                 t("bf809ec0", "Vælg tilknytninger"),
                 t("b719e224", "Ingen resultater"),
-                t("c9938100", "Søgeresultater"),
-                t("d1a35ec6", "Tilføj konti"),
-                t("b437adda", "Opgrader til betalt"),
-                t("f1f6c88b", function (e) {
-                    return "Konti (" + e.count + ")";
-                });
+                t("c9938100", "Søgeresultater");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7910,7 +7910,12 @@
                     a(e, r)
                 );
             }
-            t("b02156b8", "Invitationer"),
+            t("d1a35ec6", "Tilføj konti"),
+                t("b437adda", "Opgrader til betalt"),
+                t("f1f6c88b", function (e) {
+                    return "Konti (" + e.count + ")";
+                }),
+                t("b02156b8", "Invitationer"),
                 t("gd67d29b", function (e) {
                     return "Invitationer (" + e.count + ")";
                 }),
@@ -8908,11 +8913,11 @@
                     return "Automatisk (" + e.quality + ")";
                 }),
                 t("a7bf9962", "Download video"),
-                t("ccc97152", "Afspilningshastighed"),
-                t("h531ade0", "Videokvalitet"),
+                t("ccc97152", "Afspilningshastighed");
+            t("h531ade0", "Videokvalitet"),
                 t("e8b5757c", "0,25x"),
-                t("e7e954de", "0,5x");
-            t("g07ffe66", "0,75x"),
+                t("e7e954de", "0,5x"),
+                t("g07ffe66", "0,75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1,25x"),
                 t("e9eeed9e", "1,5x"),
@@ -13337,4 +13342,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.2bb88aca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.8522b50a.js.map

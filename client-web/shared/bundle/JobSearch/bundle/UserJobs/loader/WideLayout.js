@@ -19,18 +19,18 @@
                 y = t(535338),
                 g = t(665971),
                 b = (t(136728), t(107267)),
-                h = t(731708),
-                k = t(519172),
+                k = t(731708),
+                h = t(519172),
                 f = t(601413),
                 v = t(952428),
                 _ = t(823161),
                 S = t(757483),
                 E = t(457458),
                 F = t(412876),
-                w = t(910113);
-            const I = ({ fallbackName: e, user: n }) => {
-                    const t = d()(w.fR, n);
-                    return t && t.core && t.core.name && t.core.screen_name ? o.createElement(h.ZP, { size: "subtext2", style: C.userName }, o.createElement(c.Z, { style: C.name }, o.createElement(h.ZP, { numberOfLines: 1 }, t.core.name), o.createElement(k.Z, { isVerified: t.verification?.verified ?? !1, verifiedType: t.verification?.verified_type ?? void 0 })), o.createElement(f.Z, { screenName: t.core.screen_name, size: "subtext2" })) : e ? o.createElement(h.ZP, { size: "subtext2", weight: "normal" }, e) : null;
+                I = t(910113);
+            const w = ({ fallbackName: e, user: n }) => {
+                    const t = d()(I.fR, n);
+                    return t && t.core && t.core.name && t.core.screen_name ? o.createElement(k.ZP, { size: "subtext2", style: C.userName }, o.createElement(c.Z, { style: C.name }, o.createElement(k.ZP, { numberOfLines: 1 }, t.core.name), o.createElement(h.Z, { isVerified: t.verification?.verified ?? !1, verifiedType: t.verification?.verified_type ?? void 0 })), o.createElement(f.Z, { screenName: t.core.screen_name, size: "subtext2" })) : e ? o.createElement(k.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
                 C = m.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, inactiveItem: { borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, activeItem: { backgroundColor: S.Z.hexToCss(e.colors.primary, 0.25) }, itemRow: { display: "flex", flexDirection: "row", gap: 16 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, userName: { alignItems: "center", display: "flex", flexWrap: "wrap", gap: 4 }, name: { flexWrap: "nowrap", flexDirection: "row", flexShrink: 1 } })),
                 K = ({ companyProfile: e, formattedSalary: n, jobId: t, jobLocation: a, jobTitle: l, onClick: r, renderActions: i, salaryInterval: s, user: u, withBottomBorder: d = !0 }) => {
@@ -40,21 +40,21 @@
                             const e = [C.listContainer];
                             return m === t ? e.push(C.activeItem) : d && e.push(C.inactiveItem), e;
                         }, [m, t, d]);
-                    return o.createElement(v.Z, { onClick: r, role: "listitem", style: y }, o.createElement(c.Z, { style: C.itemRow }, u ? o.createElement(F.Y, { size: "xLarge", user: u }) : o.createElement(_.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(c.Z, { style: C.items }, o.createElement(h.ZP, { hoverLabel: p, numberOfLines: 2, size: "subtext1", weight: "bold" }, l), o.createElement(I, { fallbackName: e?.core?.name, user: u }), o.createElement(h.ZP, { color: "gray700", size: "subtext2" }, a), n ? o.createElement(h.ZP, { color: "gray700", size: "subtext2" }, (0, E.M)(n, s)) : null)), i && o.createElement(c.Z, null, i()));
+                    return o.createElement(v.Z, { onClick: r, role: "listitem", style: y }, o.createElement(c.Z, { style: C.itemRow }, u ? o.createElement(F.Y, { size: "xLarge", user: u }) : o.createElement(_.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(c.Z, { style: C.items }, o.createElement(k.ZP, { hoverLabel: p, numberOfLines: 2, size: "subtext1", weight: "bold" }, l), o.createElement(w, { fallbackName: e?.core?.name, user: u }), o.createElement(k.ZP, { color: "gray700", size: "subtext2" }, a), n ? o.createElement(k.ZP, { color: "gray700", size: "subtext2" }, (0, E.M)(n, s)) : null)), i && o.createElement(c.Z, null, i()));
                 },
                 L = s,
                 x = m.default.create((e) => ({ actions: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, marginStart: e.spaces.space56, marginTop: e.spaces.space12 } })),
                 P = ({ actions: e, companyProfile: n, job: t, jobId: a, jobIndex: l, onClick: r, relayId: i, user: s, userSentiment: u, withBottomBorder: m = !0 }) => {
                     const b = (0, p.Z)(),
-                        { viewer: h } = (0, y.p)(L, {}),
-                        k = d()(w.qV, t),
-                        f = d()(w.dB, n),
-                        v = h?.user_results?.result?.__id,
+                        { viewer: k } = (0, y.p)(L, {}),
+                        h = d()(I.qV, t),
+                        f = d()(I.dB, n),
+                        v = k?.user_results?.result?.__id,
                         _ = o.useCallback(() => {
                             b.scribe({ action: "click", component: "job_search_list_item", element: "job", data: { items: [{ id: a, position: l }] } }), r();
                         }, [b, a, l, r]),
                         S = o.useCallback(() => o.createElement(c.Z, { style: x.actions }, o.createElement(g.ZP, { actions: e, jobId: a, relayId: i, userRelayId: v, userSentiment: u })), [e, a, i, v, u]);
-                    return k && k.title && k.location ? o.createElement(K, { companyProfile: f, formattedSalary: k.formatted_salary, jobId: a, jobLocation: k.location, jobTitle: k.title, onClick: _, renderActions: S, salaryInterval: k.salary_interval, user: s, withBottomBorder: m }) : null;
+                    return h && h.title && h.location ? o.createElement(K, { companyProfile: f, formattedSalary: h.formatted_salary, jobId: a, jobLocation: h.location, jobTitle: h.title, onClick: _, renderActions: S, salaryInterval: h.salary_interval, user: s, withBottomBorder: m }) : null;
                 };
         },
         910113: (e, n, t) => {
@@ -193,15 +193,15 @@
                 y = (t(585488), t(277660)),
                 g = t.n(y),
                 b = t(107267),
-                h = t(708852),
-                k = t(822502),
+                k = t(708852),
+                h = t(822502),
                 f = t(318178);
             const v = m,
                 _ = u,
                 S = o,
                 E = i,
                 F = ({ item: e, itemId: n, itemIndex: t }) => {
-                    const a = (0, h.Ji)(),
+                    const a = (0, k.Ji)(),
                         l = (0, b.useHistory)(),
                         r = (0, b.useLocation)(),
                         i = g()(E, e),
@@ -213,11 +213,11 @@
                         m = p.useCallback(() => {
                             a ? l.push({ pathname: `/jobs/${n}`, query: r.query }) : l.push({ pathname: `/m/jobs/${n}`, query: r.query });
                         }, [l, a, n, r.query]);
-                    return i && s ? p.createElement(k.Z, { actions: [f.h5], companyProfile: c, job: s, jobId: n, jobIndex: t, onClick: m, relayId: u, user: o, userSentiment: d }) : null;
+                    return i && s ? p.createElement(h.Z, { actions: [f.h5], companyProfile: c, job: s, jobId: n, jobIndex: t, onClick: m, relayId: u, user: o, userSentiment: d }) : null;
                 };
         },
         318178: (e, n, t) => {
-            t.d(n, { pN: () => w, h5: () => F, ZP: () => K, tv: () => E });
+            t.d(n, { pN: () => I, h5: () => F, ZP: () => K, tv: () => E });
             var a,
                 l,
                 r,
@@ -263,8 +263,8 @@
                 y = t(530732),
                 g = t(731708),
                 b = t(392237),
-                h = t(106186),
-                k = t(258292),
+                k = t(106186),
+                h = t(258292),
                 f = t(616894),
                 v = t(443781),
                 _ = t(292546);
@@ -292,8 +292,8 @@
                     );
                 },
                 F = "like",
-                w = "dislike",
-                I = ({ Icon: e, SelectedIcon: n, activeStyle: t, hoverStyle: a, isSelected: l, label: r, onClick: i, sentiment: s }) => {
+                I = "dislike",
+                w = ({ Icon: e, SelectedIcon: n, activeStyle: t, hoverStyle: a, isSelected: l, label: r, onClick: i, sentiment: s }) => {
                     const o = (e) => (e ? a : l ? t : {});
                     return u.createElement(
                         d.Z,
@@ -311,7 +311,7 @@
                             },
                             [r, l],
                         );
-                    return t === F ? u.createElement(I, { Icon: h.default, SelectedIcon: k.default, activeStyle: C.likeActive, hoverStyle: C.likeHover, isSelected: l === F, label: "Save job", onClick: i, sentiment: F }) : t === w ? u.createElement(I, { Icon: f.default, SelectedIcon: f.default, activeStyle: C.dislikeActive, hoverStyle: C.dislikeHover, isSelected: l === w, label: "Not interested", onClick: i, sentiment: w }) : null;
+                    return t === F ? u.createElement(w, { Icon: k.default, SelectedIcon: h.default, activeStyle: C.likeActive, hoverStyle: C.likeHover, isSelected: l === F, label: "Save job", onClick: i, sentiment: F }) : t === I ? u.createElement(w, { Icon: f.default, SelectedIcon: f.default, activeStyle: C.dislikeActive, hoverStyle: C.dislikeHover, isSelected: l === I, label: "Not interested", onClick: i, sentiment: I }) : null;
                 };
         },
         292546: (e, n, t) => {
@@ -337,7 +337,7 @@
             };
         },
         665971: (e, n, t) => {
-            t.d(n, { r1: () => k, ZP: () => v });
+            t.d(n, { r1: () => h, ZP: () => v });
             var a,
                 l,
                 r,
@@ -389,9 +389,9 @@
                 y = (t(585488), t(318178)),
                 g = t(952793),
                 b = t(535338);
-            const h = m,
-                k = ({ actions: e, jobId: n }) => {
-                    const { jobData: t, viewer: a } = (0, b.p)(h, { jobId: n }),
+            const k = m,
+                h = ({ actions: e, jobId: n }) => {
+                    const { jobData: t, viewer: a } = (0, b.p)(k, { jobId: n }),
                         l = t?.result?.id ?? "",
                         r = t?.result?.user_sentiment;
                     return p.createElement(f, { actions: e, jobId: n, relayId: l, userRelayId: a?.user_results?.result?.__id, userSentiment: r });
@@ -544,13 +544,13 @@
                         const { animationLoaded: l } = u.current;
                         l ||
                             ((u.current.animationLoaded = !0),
-                            h.load().then((l) => {
+                            k.load().then((l) => {
                                 if (l && d.current) {
                                     const r = { container: d.current, renderer: "svg", loop: t, autoplay: !1, ...("object" == typeof e.animation ? { animationData: e.animation } : { path: e.animation }) },
                                         o = l.loadAnimation(r);
                                     (c.current = o),
                                         (o.onError = (e) => {
-                                            const n = new k(e);
+                                            const n = new h(e);
                                             "function" == typeof s && s(n), a(o, n);
                                         }),
                                         o.addEventListener("DOMLoaded", () => {
@@ -575,15 +575,15 @@
             b.Prepare = function () {
                 return (
                     a.useEffect(() => {
-                        h.load();
+                        k.load();
                     }, []),
                     null
                 );
             };
-            const h = { load: () => t.e("ondemand.LottieWeb").then(t.t.bind(t, 548888, 23)) };
-            class k extends Error {
+            const k = { load: () => t.e("ondemand.LottieWeb").then(t.t.bind(t, 548888, 23)) };
+            class h extends Error {
                 constructor(e, ...n) {
-                    super(...n), Error.captureStackTrace && Error.captureStackTrace(this, k), (this.name = "LottieAnimationError"), (this.lottieError = e);
+                    super(...n), Error.captureStackTrace && Error.captureStackTrace(this, h), (this.name = "LottieAnimationError"), (this.lottieError = e);
                 }
             }
             const f = r.default.create((e) => ({ centerAnimation: { alignItems: "center", justifyContent: "center" } }));
@@ -604,13 +604,13 @@
                 y = t.n(p),
                 g = t(891198),
                 b = t(537392),
-                h = t(280278);
-            const k = y().e8d93005,
+                k = t(280278);
+            const h = y().e8d93005,
                 f = d.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
                 v = ({ color: e, count: n }) => {
                     const t = (0, g.wl)(n, !0);
                     return a.createElement(b.ZP, null, ({ containerWidth: l }) => {
-                        return a.createElement(h.ZP, { color: e, count: n, size: "subtext2", style: [f.count, ((r = l), r < d.default.theme.breakpoints.small && f.narrowCount)] }, n > 0 ? (((e) => e < d.default.theme.breakpoints.xxSmall)(l) || t.length >= 5 ? k(n) : t) : void 0);
+                        return a.createElement(k.ZP, { color: e, count: n, size: "subtext2", style: [f.count, ((r = l), r < d.default.theme.breakpoints.small && f.narrowCount)] }, n > 0 ? (((e) => e < d.default.theme.breakpoints.xxSmall)(l) || t.length >= 5 ? h(n) : t) : void 0);
                         var r;
                     });
                 };
@@ -629,7 +629,7 @@
                         }),
                         (this._renderIcon = () => {
                             const { ActiveIcon: e, iconSize: n, isActive: t, isDisabled: l, isFaded: i, onAnimationEnd: s, onAnimationStart: o, onError: c, showAnimation: p, transitionAnimationUrl: y } = this.props;
-                            if (!d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled && e && p) return a.createElement(u.ZP, { animation: y || m.Bf, animationContainerStyle: S[n], animationStyle: I, onAnimationEnd: s, onAnimationStart: o, onError: c });
+                            if (!d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled && e && p) return a.createElement(u.ZP, { animation: y || m.Bf, animationContainerStyle: S[n], animationStyle: w, onAnimationEnd: s, onAnimationStart: o, onError: c });
                             {
                                 const r = t && e ? e : this.props.Icon;
                                 return a.createElement(r, { style: [S[n], !l && i && F.iconFaded] });
@@ -645,17 +645,17 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, focusable: n, enableKeyboardShortcuts: t, isActive: i, isDisabled: s, isPresentational: c, keyboardShortcut: m, link: p, preventFocusShift: y, renderMenu: g, renderWrapper: b = a.Fragment, style: h, testID: k } = this.props,
+                    const { "aria-label": e, focusable: n, enableKeyboardShortcuts: t, isActive: i, isDisabled: s, isPresentational: c, keyboardShortcut: m, link: p, preventFocusShift: y, renderMenu: g, renderWrapper: b = a.Fragment, style: k, testID: h } = this.props,
                         f = !d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled;
                     return a.createElement(
                         l.Z,
-                        { style: [F.root, h] },
+                        { style: [F.root, k] },
                         a.createElement(
                             b,
                             null,
                             c
                                 ? this._renderContent(i)
-                                : a.createElement(o.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: s, enableKeyboardShortcuts: t, focusable: n, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: y, renderMenu: g, style: [F.triggerAreaRoot, F.outlineNone], testID: k }, (e) => {
+                                : a.createElement(o.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: s, enableKeyboardShortcuts: t, focusable: n, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: y, renderMenu: g, style: [F.triggerAreaRoot, F.outlineNone], testID: h }, (e) => {
                                       const { isFocused: n, isHovered: t, isPressed: a } = e,
                                           l = i || t || a || n;
                                       return this._renderContent(l, e);
@@ -669,8 +669,8 @@
             const S = d.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
                 E = d.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
                 F = d.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                w = "224.5%",
-                I = { width: w, height: w };
+                I = "224.5%",
+                w = { width: I, height: I };
         },
         551611: (e, n, t) => {
             t.d(n, { Bf: () => l, ZP: () => i });
@@ -683,19 +683,6 @@
             }
             const i = new r();
         },
-        748138: (e, n, t) => {
-            t.r(n), t.d(n, { default: () => o });
-            var a = t(202784),
-                l = t(890601),
-                r = t(783427),
-                i = t(347101);
-            const s = (e = {}) => {
-                const { direction: n } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: n });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.769d82aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.4f691bfa.js.map

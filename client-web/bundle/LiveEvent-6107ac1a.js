@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.LiveEvent-6107ac1a", "shared~loader.Dock~bundle.AccountAnalytics~bundle.DockPeek~ondemand.XChat~loader.TimelineFrameHandler~loader."],
+    ["bundle.LiveEvent-6107ac1a", "icons/IconGifPillStroke-js", "shared~loader.Dock~bundle.AccountAnalytics~bundle.DockPeek~ondemand.XChat~loader.TimelineFrameHandler~loader."],
     {
         97759: (e, t, l) => {
             l.d(t, { Z: () => i });
@@ -572,9 +572,9 @@
                         { location: k } = this.state,
                         L = S ? this._getMemoizedLink(S, b) : void 0,
                         P = c ? c(S) : k?.pathname === L?.pathname,
-                        z = v.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
-                        T = g ? "medium" : P ? "bold" : "medium";
-                    return i.createElement(f.Z, { "aria-label": t, "aria-selected": P, focusable: !!P, interactiveStyles: z, link: L, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && P ? [C.pillActiveStyle] : []), d ? (u ? C.compactPill : C.compactLink) : null, h ? C.roundedRect : null, _], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => i.createElement(o.Z, { style: u && C.flexGrow }, i.createElement(p.ZP, { size: g ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(P, c, g, u) }, d && C.compactText, g && t && C.focusedText, u && C.pillTextStyle, u && P && C.pillActiveTextStyle, u && c && C.pillHoverTextStyle], weight: T }, e && i.createElement(e, { style: C.icon }), a, g || u ? null : i.createElement(o.Z, { style: P && [C.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? i.createElement(m.Z, { count: l, standalone: !0, style: [C.badge, l >= 10 && C.multiDigitBadge, l >= 20 && C.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : n ? i.createElement(m.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                        T = v.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? C.pillHoverStyle.backgroundColor : void 0 }),
+                        z = g ? "medium" : P ? "bold" : "medium";
+                    return i.createElement(f.Z, { "aria-label": t, "aria-selected": P, focusable: !!P, interactiveStyles: T, link: L, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [C.pillStyle] : [C.link]), ...(u && P ? [C.pillActiveStyle] : []), d ? (u ? C.compactPill : C.compactLink) : null, h ? C.roundedRect : null, _], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => i.createElement(o.Z, { style: u && C.flexGrow }, i.createElement(p.ZP, { size: g ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(P, c, g, u) }, d && C.compactText, g && t && C.focusedText, u && C.pillTextStyle, u && P && C.pillActiveTextStyle, u && c && C.pillHoverTextStyle], weight: z }, e && i.createElement(e, { style: C.icon }), a, g || u ? null : i.createElement(o.Z, { style: P && [C.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? i.createElement(m.Z, { count: l, standalone: !0, style: [C.badge, l >= 10 && C.multiDigitBadge, l >= 20 && C.truncatedCountBadge], truncatedCountFormatter: x, unreadCountLabel: y, withBorder: !1 }) : n ? i.createElement(m.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
             (b.contextType = g.Z), (b.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -658,9 +658,9 @@
         874090: (e, t, l) => {
             l.d(t, { Z: () => i });
             var n = l(202784);
-            const i = (0, l(523561).Z)({ loader: () => Promise.all([l.e("icons.17"), l.e("icons.23"), l.e("modules.audio-6107ac1a"), l.e("modules.audio-b953418a"), l.e("modules.audio-7c51e6a7"), l.e("modules.audio-04db59e9"), l.e("modules.audio-76583d6c"), l.e("modules.audio-b7a8a5fb"), l.e("modules.audio-51f6e793"), l.e("modules.audio-e019dbda"), l.e("modules.audio-262c94d4"), l.e("modules.audio-c6fe4ea4"), l.e("icons.4"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI"), l.e("loaders.video.VideoPlayerEventsUI")]).then(l.bind(l, 374749)), renderPlaceholder: () => n.createElement("div", null) });
+            const i = (0, l(523561).Z)({ loader: () => Promise.all([l.e("icons.2"), l.e("icons.10"), l.e("icons.24"), l.e("modules.audio-6107ac1a"), l.e("modules.audio-b953418a"), l.e("modules.audio-7c51e6a7"), l.e("modules.audio-04db59e9"), l.e("modules.audio-76583d6c"), l.e("modules.audio-b7a8a5fb"), l.e("modules.audio-51f6e793"), l.e("modules.audio-e019dbda"), l.e("modules.audio-262c94d4"), l.e("modules.audio-c6fe4ea4"), l.e("icons.28"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI"), l.e("loaders.video.VideoPlayerEventsUI")]).then(l.bind(l, 374749)), renderPlaceholder: () => n.createElement("div", null) });
         },
-        784732: (e, t, l) => {
+        937450: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var n = l(202784),
                 i = l(890601),
@@ -668,7 +668,7 @@
                 s = l(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
@@ -876,4 +876,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.e429056a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.03a95d9a.js.map

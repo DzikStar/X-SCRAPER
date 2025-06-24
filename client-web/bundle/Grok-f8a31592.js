@@ -55,9 +55,9 @@
             var A = a(557707),
                 B = a(165243),
                 M = a(74514),
-                _ = a(405303),
-                V = a(125363),
-                L = a(654917);
+                L = a(405303),
+                _ = a(125363),
+                V = a(654917);
             const H = m().e258000e,
                 $ = m().d591a772,
                 O = m().bc49b728,
@@ -67,8 +67,8 @@
                 G = m().cbdddb0a;
             function K({ analyticsMetricPrefix: e = "message-steps", completed: t }) {
                 const a = (0, y.z)(),
-                    o = (0, L.uf)(),
-                    r = (0, V.v9)(o.selectLastHumanMessage),
+                    o = (0, V.uf)(),
+                    r = (0, _.v9)(o.selectLastHumanMessage),
                     [l, c] = n.useState(!1),
                     [m, d] = n.useState(!1),
                     [p, u] = n.useState(!1),
@@ -109,7 +109,7 @@
                                     borderColor: "transparent",
                                     color: "gray700",
                                     hoverLabel: { label: H },
-                                    icon: n.createElement(_.default, { style: j.icon }),
+                                    icon: n.createElement(L.default, { style: j.icon }),
                                     onClick: () => {
                                         (async () => {
                                             "granted" === Notification.permission ? (b(!0), c(!0)) : "default" === Notification.permission && ("granted" === (await Notification.requestPermission()) ? (b(!0), c(!0)) : (b(!1), g(!0)));
@@ -132,8 +132,8 @@
                 const A = (0, y.z)(),
                     B = n.useRef(new o.Z.Value(0)).current,
                     M = n.useMemo(() => h.slice(void 0, -1), [h]),
-                    _ = n.useMemo(() => h[h.length - 1], [h]),
-                    V = n.useCallback(
+                    L = n.useMemo(() => h[h.length - 1], [h]),
+                    _ = n.useCallback(
                         (e) => {
                             o.Z.spring(B, { toValue: e.nativeEvent.layout.height, useNativeDriver: !1, speed: 5 }).start();
                         },
@@ -148,11 +148,11 @@
                         { gradientColor: "transparent", onCancelAutoScroll: S, onRestartAutoScroll: T, scrollViewContentContainerStyle: U.scrollViewContentContainerStyle, scrollViewRef: P },
                         n.createElement(
                             s.Z,
-                            { onLayout: V, style: U.headerSteps },
+                            { onLayout: _, style: U.headerSteps },
                             n.createElement(o.Z.View, { style: [U.lineContainer, { height: B }] }, n.createElement(s.Z, { style: U.line })),
                             M.map((e, a) => n.createElement(R, { active: t === e.id, header: e, key: e.id, onStepClick: k, style: U.stepHeaderStatusContainer })),
                         ),
-                        _ && n.createElement(R, { header: _, key: _.id, onStepClick: k, style: U.stepHeaderStatusContainer }),
+                        L && n.createElement(R, { header: L, key: L.id, onStepClick: k, style: U.stepHeaderStatusContainer }),
                         n.createElement(r.Z, { size: "space8" }),
                     ),
                     n.createElement(
@@ -370,29 +370,29 @@
                     [P, I] = n.useState(!1),
                     { accumulatedTrace: D, isPastSummary: R, state: z, steps: A, traceEnabled: B } = p,
                     M = "COMPLETED" === z,
-                    _ = "ABORTED" === z,
-                    V = n.useRef(null);
+                    L = "ABORTED" === z,
+                    _ = n.useRef(null);
                 n.useEffect(() => {
                     const e = () => {
                         b.current && !x && b.current.scrollToEnd({ animated: !0 }), h.current && !w && h.current.scrollToEnd({ animated: !0 });
                     };
-                    return R || (V.current = window.setInterval(e, 1e3)), () => window.clearInterval(V.current);
+                    return R || (_.current = window.setInterval(e, 1e3)), () => window.clearInterval(_.current);
                 }, [w, x, R]),
                     n.useEffect(() => {
-                        M && !R && window.clearInterval(V.current);
+                        M && !R && window.clearInterval(_.current);
                     }, [M, x, w, R]);
-                const L = n.useCallback((e) => {
+                const V = n.useCallback((e) => {
                         b.current && b.current.scrollTo({ y: e, animated: !0 });
                     }, []),
                     H = n.useCallback(
                         (e) => {
                             if ((T(e), void 0 !== C.current[e])) {
                                 const t = 40;
-                                L(Math.max(C.current[e] - t, 0));
+                                V(Math.max(C.current[e] - t, 0));
                             }
                             g.scribe({ component: "message-steps-header-click", action: "click", element: A.find((t) => t.id === e)?.header || "" });
                         },
-                        [L, g, A],
+                        [V, g, A],
                     ),
                     $ = n.useMemo(() => A.map((e) => ({ id: e.id, label: e.header, state: e.state, isCompleteHeader: e.isCompleteHeader })), [A]);
                 return n.createElement(
@@ -400,7 +400,7 @@
                     { style: [u.container, P ? u.expandedContainer : void 0, f ? u.drawerContainer : y ? u.mobileContainer : void 0] },
                     !a &&
                         n.createElement(l.Z, {
-                            aborted: _,
+                            aborted: L,
                             activeStepId: v,
                             completed: M,
                             completedTimestamp: e,
@@ -431,6 +431,7 @@
                                 C.current[e] = a.y;
                             }
                         },
+                        isLoading: s,
                         messageStepAccumulator: p,
                         onCancelAutoScroll: () => {
                             E(!0);
@@ -480,14 +481,14 @@
                 S = a(207683),
                 x = a(791278),
                 E = a(229177);
-            function v({ analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: a, isCompactLayout: r, step: i, style: l }) {
-                const c = n.useCallback(
+            function v({ analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: a, isCompactLayout: r, isLoading: i, step: l, style: c }) {
+                const m = n.useCallback(
                         (e) => {
-                            if (e.summary) return n.createElement(o.Z, { style: [P.subStepContainer, r && P.compactSubStepContainer] }, n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(S.default, { citations: e.webResults, disableLinks: b.ZP.isWebView(), isAnimated: a, markdownText: e.summary || "", toolUsageCardResults: e.toolUsageCardResults })));
+                            if (e.summary) return n.createElement(o.Z, { style: [P.subStepContainer, r && P.compactSubStepContainer] }, n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(S.default, { citations: e.webResults, disableLinks: b.ZP.isWebView(), isAnimated: a, isStreaming: i, markdownText: e.summary || "", toolUsageCardResults: e.toolUsageCardResults })));
                         },
-                        [a, r],
+                        [a, r, i],
                     ),
-                    m = n.useCallback(
+                    d = n.useCallback(
                         (e) => {
                             if (e.actionMarkdownSummary) {
                                 const t = e.actionIcon,
@@ -499,11 +500,11 @@
                         },
                         [r],
                     ),
-                    d = n.useCallback((t) => (t.webResults && t.webResults.length > 0 ? n.createElement(o.Z, { style: [P.subStepContainer, P.resultsSubStepContainer, r && P.compactSubStepContainer] }, n.createElement(o.Z, { style: P.subStepIconContainer }), n.createElement(x.Z, { analyticsMetricPrefix: e, isAnimated: a, style: P.resultsContainer, webResults: t.webResults })) : t.xPostIds && t.xPostIds.length > 0 ? n.createElement(E.Z, { analyticsMetricPrefix: e, isAnimated: a, scrollViewContentContainerStyle: [P.xPostsScrollViewContentContainer, r && P.compactXPostsScrollViewContentContainer], seeMoreButtonStyle: [P.xPostsSeeMoreButton, r && P.compactXPostsSeeMoreButton], style: P.resultsContainer, xPostIds: t.xPostIds }) : void 0), [a, e, r]);
+                    p = n.useCallback((t) => (t.webResults && t.webResults.length > 0 ? n.createElement(o.Z, { style: [P.subStepContainer, P.resultsSubStepContainer, r && P.compactSubStepContainer] }, n.createElement(o.Z, { style: P.subStepIconContainer }), n.createElement(x.Z, { analyticsMetricPrefix: e, isAnimated: a, style: P.resultsContainer, webResults: t.webResults })) : t.xPostIds && t.xPostIds.length > 0 ? n.createElement(E.Z, { analyticsMetricPrefix: e, isAnimated: a, scrollViewContentContainerStyle: [P.xPostsScrollViewContentContainer, r && P.compactXPostsScrollViewContentContainer], seeMoreButtonStyle: [P.xPostsSeeMoreButton, r && P.compactXPostsSeeMoreButton], style: P.resultsContainer, xPostIds: t.xPostIds }) : void 0), [a, e, r]);
                 return n.createElement(
                     o.Z,
-                    { onLayout: t && t(i.id), style: [P.step, l] },
-                    i.subSteps.map((e, t) => n.createElement(o.Z, { key: `${i.id}-${e.messageTag}-${e.messageStepId}-${t}` }, e.messageTag === C.iS.SUMMARY && c(e), e.messageTag === C.iS.DECISION && n.createElement(n.Fragment, null, m(e), d(e)))),
+                    { onLayout: t && t(l.id), style: [P.step, c] },
+                    l.subSteps.map((e, t) => n.createElement(o.Z, { key: `${l.id}-${e.messageTag}-${e.messageStepId}-${t}` }, e.messageTag === C.iS.SUMMARY && m(e), e.messageTag === C.iS.DECISION && n.createElement(n.Fragment, null, d(e), p(e)))),
                 );
             }
             const T = s.default.theme.spacesPx.space20,
@@ -529,15 +530,15 @@
                 })),
                 I = n.memo(v),
                 D = m().ge15b488;
-            function R({ analyticsMetricPrefix: e = "message-steps", handleStepLayout: t, messageStepAccumulator: a, onCancelAutoScroll: c, onRestartAutoScroll: m, onShowTrace: g, scrollViewRef: h, style: b }) {
-                const { isPastSummary: C, steps: w, traceEnabled: S } = a,
-                    { isCompactLayout: x, isGrokDrawer: E } = (0, y.ZP)(),
-                    v = (0, u.hC)("responsive_web_grok_animated_text_enabled");
+            function R({ analyticsMetricPrefix: e = "message-steps", handleStepLayout: t, isLoading: a, messageStepAccumulator: c, onCancelAutoScroll: m, onRestartAutoScroll: g, onShowTrace: h, scrollViewRef: b, style: C }) {
+                const { isPastSummary: w, steps: S, traceEnabled: x } = c,
+                    { isCompactLayout: E, isGrokDrawer: v } = (0, y.ZP)(),
+                    T = (0, u.hC)("responsive_web_grok_animated_text_enabled");
                 (0, p.q)(() => {
                     const e = "message-steps-card-sub-step";
                     if (document.getElementById(e)) return;
                     const t = document.createElement("style");
-                    t.setAttribute("id", e), (t.textContent = `\n        .message-steps-card-sub-step-markdown-text {\n          flex: 1;\n          max-width: 100%;\n        }\n  \n        .message-steps-card-sub-step-markdown-text li {\n          margin-top: 4px !important;\n          padding-left: 5px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text ul {\n          margin-bottom: 0px !important;\n          position: relative !important;\n          left: -4px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text span {\n          ${E || x ? `font-size: ${s.default.theme.fontSizes.subtext1} !important;` : ""}\n        }\n      `);
+                    t.setAttribute("id", e), (t.textContent = `\n        .message-steps-card-sub-step-markdown-text {\n          flex: 1;\n          max-width: 100%;\n        }\n  \n        .message-steps-card-sub-step-markdown-text li {\n          margin-top: 4px !important;\n          padding-left: 5px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text ul {\n          margin-bottom: 0px !important;\n          position: relative !important;\n          left: -4px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text span {\n          ${v || E ? `font-size: ${s.default.theme.fontSizes.subtext1} !important;` : ""}\n        }\n      `);
                     const a = document.head;
                     return (
                         a && a.appendChild(t),
@@ -547,27 +548,27 @@
                         }
                     );
                 });
-                const T = v && !C,
-                    k = n.useMemo(() => {
+                const k = T && !w,
+                    Z = n.useMemo(() => {
                         const e = [];
-                        for (let t = 0; t < 3 * w.length; t += 3) e.push(t);
+                        for (let t = 0; t < 3 * S.length; t += 3) e.push(t);
                         return e;
-                    }, [w]);
+                    }, [S]);
                 return n.createElement(
                     o.Z,
-                    { style: [z.container, b] },
+                    { style: [z.container, C] },
                     n.createElement(r.Z, { size: "space8" }),
                     n.createElement(
                         f.Z,
-                        { gradientColor: "transparent", onCancelAutoScroll: c, onRestartAutoScroll: m, scrollViewContentContainerStyle: z.scrollViewContentContainerStyle, scrollViewRef: h, stickyHeaderIndices: k },
+                        { gradientColor: "transparent", onCancelAutoScroll: m, onRestartAutoScroll: g, scrollViewContentContainerStyle: z.scrollViewContentContainerStyle, scrollViewRef: b, stickyHeaderIndices: Z },
                         n.createElement(
                             n.Fragment,
                             null,
-                            w.flatMap((a, s) => [n.createElement(o.Z, { key: `${a.id}-header`, style: [z.headerContainer, { zIndex: s + 1 }] }, n.createElement(i.ZP, { style: z.header, weight: "bold" }, a.header)), n.createElement(I, { analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: T, isCompactLayout: x, key: `${a.id}-step`, step: a }), n.createElement(r.Z, { key: `${a.id}-spacer`, size: "space20" })]),
+                            S.flatMap((s, l) => [n.createElement(o.Z, { key: `${s.id}-header`, style: [z.headerContainer, { zIndex: l + 1 }] }, n.createElement(i.ZP, { style: z.header, weight: "bold" }, s.header)), n.createElement(I, { analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: k, isCompactLayout: E, isLoading: a, key: `${s.id}-step`, step: s }), n.createElement(r.Z, { key: `${s.id}-spacer`, size: "space20" })]),
                             n.createElement(r.Z, { size: "space48" }),
                         ),
                     ),
-                    S && g && n.createElement(l.ZP, { backgroundColor: "gray0", borderColor: "gray200", icon: n.createElement(d.default, { style: z.traceIcon }), onClick: g, size: "small", style: z.traceButton }, n.createElement(i.ZP, { style: z.traceText }, D)),
+                    x && h && n.createElement(l.ZP, { backgroundColor: "gray0", borderColor: "gray200", icon: n.createElement(d.default, { style: z.traceIcon }), onClick: h, size: "small", style: z.traceButton }, n.createElement(i.ZP, { style: z.traceText }, D)),
                 );
             }
             const z = s.default.create((e) => ({ container: { flex: 1, position: "relative" }, scrollViewContentContainerStyle: { display: "flex", flexDirection: "column" }, headerContainer: { paddingHorizontal: e.spacesPx.space20, backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space12, opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, compactHeaderContainer: { paddingHorizontal: e.spacesPx.space12 }, header: {}, traceButton: { width: "max-content", position: "absolute", bottom: e.spaces.space16, end: e.spaces.space16 }, traceIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, traceText: { fontWeight: e.fontWeights.regular, color: e.colors.gray900, fontSize: e.fontSizes.subtext2 } }));
@@ -948,17 +949,17 @@
                     [Z, P] = n.useState(!1),
                     { accumulatedTrace: I, deepsearchArgs: D, isPastSummary: R, state: z, steps: A, traceEnabled: B } = s,
                     M = "COMPLETED" === z,
-                    _ = "ABORTED" === z,
-                    V = !!D && "deeper" === D.mode,
-                    L = n.useRef(null);
+                    L = "ABORTED" === z,
+                    _ = !!D && "deeper" === D.mode,
+                    V = n.useRef(null);
                 n.useEffect(() => {
                     const e = () => {
                         c.current && !f && c.current.scrollToEnd({ animated: !0 }), i.current && !p && i.current.scrollToEnd({ animated: !0 });
                     };
-                    return R || (L.current = window.setInterval(e, 1e3)), () => window.clearInterval(L.current);
+                    return R || (V.current = window.setInterval(e, 1e3)), () => window.clearInterval(V.current);
                 }, [p, f, R]),
                     n.useEffect(() => {
-                        M && !R && (c.current && !f && c.current.scrollToEnd({ animated: !0 }), i.current && !p && i.current.scrollToEnd({ animated: !0 }), window.clearInterval(L.current));
+                        M && !R && (c.current && !f && c.current.scrollToEnd({ animated: !0 }), i.current && !p && i.current.scrollToEnd({ animated: !0 }), window.clearInterval(V.current));
                     }, [M, f, p, R]);
                 const H = n.useCallback((e) => {
                         c.current && c.current.scrollTo({ y: e, animated: !0 });
@@ -978,7 +979,7 @@
                     o.Z,
                     { style: [v.container, Z ? v.expandedContainer : void 0] },
                     n.createElement(m.Z, {
-                        aborted: _,
+                        aborted: L,
                         activeStepId: w,
                         analyticsMetricPrefix: S,
                         completed: M,
@@ -1001,7 +1002,7 @@
                         scrollViewRef: i,
                         setExpanded: P,
                         style: v.leftPanel,
-                        title: x(M, !1, V),
+                        title: x(M, !1, _),
                     }),
                     n.createElement(g.Z, {
                         analyticsMetricPrefix: S,
@@ -1103,4 +1104,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.f54a511a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.b2cafbfa.js.map

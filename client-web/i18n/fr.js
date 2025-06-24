@@ -229,6 +229,11 @@
                 n("f65e7e91", function (e) {
                     return e.percentage + " % de remise sur l'abonnement " + e.tier + " " + e.plan;
                 }),
+                n("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                n("he77d8e6", "Limited-time offer"),
+                n("adf3410a", "Abonnez‑vous pour profiter de nouvelles fonctionnalités et recevoir une part des revenus si vous respectez les critères."),
                 n("a84a736e", "Profitez d'un crédit publicitaire offert"),
                 n("a0713d76", "Abonnez‑vous au service Organisations certifiées pour profiter d'un crédit publicitaire offert et d'une suite d'outils conçus pour booster la croissance de votre entreprise."),
                 n("a07e13fc", "Devenir créateur Premium"),
@@ -264,7 +269,6 @@
                 n("ed534c78", "Seuls les abonnés à X Premium ont accès aux dossiers de signets. Mettez à niveau pour continuer."),
                 n("ed924940", "Supprimez toutes les publicités avec Premium+"),
                 n("dccdb326", "Seuls les abonnés à Premium+ ne voient aucune publicité. Mettez à niveau pour continuer."),
-                n("adf3410a", "Abonnez‑vous pour profiter de nouvelles fonctionnalités et recevoir une part des revenus si vous respectez les critères."),
                 n("d8661dd4", "Pour une période limitée. Profitez du meilleur de X."),
                 n("fe7fd234", "Essayez gratuitement Premium Basic aujourd'hui"),
                 n("a2f86dda", "Améliorez votre expérience en profitant notamment des dossiers de signets, de l'édition de posts et des icônes d'application personnalisées avec Premium Basic."),
@@ -903,10 +907,10 @@
                 n("bf9e181b", "En savoir plus"),
                 n("e8e39f95", "En savoir plus"),
                 n("e126dd3f", "En savoir plus"),
-                n("i821844f", "En savoir plus"),
-                n("b0abbb17", "En savoir plus"),
-                n("e7e0d88b", "En savoir plus");
-            n("i560665f", "En savoir plus"),
+                n("i821844f", "En savoir plus");
+            n("b0abbb17", "En savoir plus"),
+                n("e7e0d88b", "En savoir plus"),
+                n("i560665f", "En savoir plus"),
                 n("f6e774d9", "En savoir plus"),
                 n("h486f755", "En savoir plus"),
                 n("bab41dab", "En savoir plus"),
@@ -1290,11 +1294,11 @@
                 n("b0d1e205", function (e) {
                     return 'Recherche de **"' + e.query + '"**';
                 }),
-                n("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 n("bf970edd", function (e) {
                     return 'Recherche de "' + e.query + '" sur 𝕏';
+                }),
+                n("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 n("g008d475", function (e) {
                     return "Navigation sur " + e.url;
@@ -1313,6 +1317,9 @@
                 }),
                 n("e99fb7a3", function (e) {
                     return "Recherche de posts 𝕏 de @" + e.username + ' pour la requête **"' + e.query + '"**';
+                }),
+                n("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 n("ead81122", "Une erreur est survenue. Veuillez rafraîchir la page pour vous reconnecter ou réessayer."),
                 n("f808a13a", "Vous avez atteint la limite. Veuillez patienter quelques instants et réessayer."),
@@ -1346,11 +1353,12 @@
                 n("deaf5b16", "Réessayer"),
                 n("a66d80d0", "Traduire le post"),
                 n("be9b9fb8", "Traduit par Grok"),
+                n("ba10dab6", "Auto-translated by Grok"),
                 n("he9c9634", "Impossible de récupérer la traduction"),
                 n("j2198c98", "Masquer le post traduit"),
                 n("d4d35bea", "Traduction en cours…"),
-                n("i7ac410e", "Afficher l'original"),
-                n("c67f09e8", "Afficher la traduction"),
+                n("f4f69be8", "Show original"),
+                n("e3097a5c", "Show auto-translated post"),
                 n("e0f81ff3", "Traduction :"),
                 n("j2862695", function (e) {
                     return "À l'origine en " + e.originLanguage + " et traduit par";
@@ -1735,9 +1743,7 @@
                 n("f5b3dc1e", "Peut-être plus tard"),
                 n("ae0c5fbe", "Erreur lors de la modification des personnes qui peuvent répondre"),
                 n("bae0cbc0", "Modifier qui peut répondre"),
-                n("d78131b9", function (e) {
-                    return "Ajouter @" + e.screenName + " à des Listes/le retirer de Listes";
-                }),
+                n("a599bbfa", "Ajouter aux/retirer des listes"),
                 n("b3b642fc", "Pourquoi voyez-vous cette publication ?"),
                 n("fb4ee11c", "Pourquoi cette publicité ?"),
                 n("ad50e7d9", function (e) {
@@ -1799,15 +1805,11 @@
                 n("j7bb1a43", function (e) {
                     return "Signaler @" + e.screenName;
                 }),
-                n("hef5960c", "Partager le profil via…"),
+                n("g00b4c55", function (e) {
+                    return "Partager @" + e.screenName + " via…";
+                }),
                 n("bb1cbeb6", "Réafficher"),
                 n("h2f62206", "Masquage de l'utilisateur"),
-                n("e67b2d65", function (e) {
-                    return "Masquer @" + e.screenName;
-                }),
-                n("f05597b3", function (e) {
-                    return "Réafficher @" + e.screenName;
-                }),
                 n("h59f52ee", "Masqué avec succès."),
                 n("eea0cbee", "Réaffiché avec succès."),
                 n("i29533b3", function (e) {
@@ -1923,10 +1925,10 @@
                 }),
                 n("jcd5ee8a", "Éditer le bloc"),
                 n("a8f09fb8", "Supprimer le bloc"),
-                n("i89195ea", "Séparateur"),
-                n("da8ac57c", "Éditer la légende"),
-                n("a8fdd09c", "Publier l'Article");
-            n("d8047cc8", "Publier"),
+                n("i89195ea", "Séparateur");
+            n("da8ac57c", "Éditer la légende"),
+                n("a8fdd09c", "Publier l'Article"),
+                n("d8047cc8", "Publier"),
                 n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
                 n("ef34d7be", "Les options d'audience et de réponse ne peuvent pas être modifiées une fois qu'un Article a été publié."),
                 n("e52d4998", "Choisissez votre audience"),
@@ -2979,10 +2981,10 @@
                 }),
                 n("e64de8a9", function (e) {
                     return e.entity + " a été retiré de vos signets";
-                }),
-                n("d6d9aab6", "Ajouter un signet"),
-                n("bb89cf46", "Supprimer le signet");
-            n("a739d4ba", "Ajouter au dossier de signets"),
+                });
+            n("d6d9aab6", "Ajouter un signet"),
+                n("bb89cf46", "Supprimer le signet"),
+                n("a739d4ba", "Ajouter au dossier de signets"),
                 n("d5270434", "Quitter"),
                 n("ac85c6b2", "Une erreur s'est produite lors du chargement de l'image"),
                 n("b327c12a", "Image"),
@@ -3905,10 +3907,10 @@
                 n("fe7a1910", "Envoyer des invitations"),
                 n("ic3c757e", "Rechercher des utilisateurs"),
                 n("cd133486", "Inviter"),
-                n("f2333850", "Partager ailleurs que sur X"),
-                n("cddb8097", "En savoir plus"),
-                n("f77997b0", "Cohôte");
-            n("i48f4ed8", "Intervenant"),
+                n("f2333850", "Partager ailleurs que sur X");
+            n("cddb8097", "En savoir plus"),
+                n("f77997b0", "Cohôte"),
+                n("i48f4ed8", "Intervenant"),
                 n("a77c8e02", "Auditeur"),
                 n("bdfa93eb", function (e) {
                     return "Partagé par " + e.name;
@@ -4265,6 +4267,7 @@
                     return "Tout voir (" + e.count + ")";
                 }),
                 n("df601d92", "Utilisateurs pertinents"),
+                n("a4cfb8a8", "Browsing"),
                 n("d7cb5408", "pages Web pertinentes"),
                 n("ca93f2ee", "Ce message a été supprimé."),
                 n("b8c06820", "Copier le texte"),
@@ -4928,11 +4931,11 @@
                 n("d9f9dec0", "Voir l'Espace"),
                 n("h0c1f37a", "Voir les statistiques de l'Espace"),
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
-                n("if2909ba", "Temps de visionnage"),
-                n("i0e5bf4c", "Vos vidéos"),
+                n("if2909ba", "Temps de visionnage");
+            n("i0e5bf4c", "Vos vidéos"),
                 n("ed99baea", "Accès anticipé à la version bêta"),
-                n("gf898b70", "Recherche avancée");
-            n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
+                n("gf898b70", "Recherche avancée"),
+                n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
                 n("j8ee77c4", '"startup ia"'),
@@ -5882,13 +5885,13 @@
                 n("f191a2ba", "paramètres de recherche"),
                 n("a068008a", "Les dossiers ne se chargent pas pour le moment."),
                 n("f075b0e8", "Éditer le dossier"),
-                n("beba2a0e", "Créer un dossier de signets"),
-                n("e41c9b4f", function (e) {
-                    return "Enregistré dans le dossier " + e.bookmarkFolderName;
-                }),
+                n("beba2a0e", "Créer un dossier de signets");
+            n("e41c9b4f", function (e) {
+                return "Enregistré dans le dossier " + e.bookmarkFolderName;
+            }),
                 n("h18f86a4", "Supprimer le dossier"),
-                n("f4ea967a", "Le dossier a été supprimé.");
-            n("b670aa62", "Nom du dossier"),
+                n("f4ea967a", "Le dossier a été supprimé."),
+                n("b670aa62", "Nom du dossier"),
                 n("aece5462", "Le nom du dossier a bien été mis à jour."),
                 n("e3299b94", "Une erreur s'est produite. Réessayez de mettre ce dossier à jour dans un moment."),
                 n("c09ea714", "Une erreur s'est produite. Réessayez de supprimer ce dossier dans un moment."),
@@ -6496,10 +6499,10 @@
                 n("e5f4eac0", "Votre contenu sera découvert plus facilement. Et vous apparaîtrez dans les résultats de recherche et les tendances."),
                 n("c7832a72", "Entrez directement en lien avec les autres"),
                 n("i1ccd17a", "Envoyez des Messages Privés à des personnes qui ne vous suivent pas sans qu'ils soient automatiquement filtrés."),
-                n("f7cf3d36", "Grok est un assistant IA gratuit conçu par xAI pour optimiser la vérité et l'objectivité. Grok propose de la recherche en temps réel, de la génération d'images, de l'analyse des tendances et plus encore."),
+                n("f7cf3d36", "Grok est un assistant IA gratuit conçu par xAI pour favoriser la vérité et l'objectivité. Grok propose de la recherche en temps réel, de la génération d'images, de l'analyse des tendances et plus encore."),
                 n("hc965308", "Fun"),
                 n("eb78b77e", "Mode Fun"),
-                n("aa8ece10", "Essayer grok.com"),
+                n("ac164552", "Go to grok.com"),
                 n("gb5fb7d0", "Mode Centrer"),
                 n("g5665caa", "Quitter le mode Centrer"),
                 n("a372681e", "Copier le lien de partage"),
@@ -6890,11 +6893,11 @@
                     return e.percentage + " % de remise sur l'abonnement annuel à Premium";
                 }),
                 n("c924ad84", "Poursuivez la lecture des vidéos"),
-                n("de750a3c", "Profitez‑en même lorsque votre téléphone est verrouillé"),
-                n("he5e87c4", "Boostez vos réponses"),
+                n("de750a3c", "Profitez‑en même lorsque votre téléphone est verrouillé");
+            n("he5e87c4", "Boostez vos réponses"),
                 n("g64a60ba", "Profitez d'une légère priorisation lorsque vous répondez à des posts"),
-                n("a7ee832a", "Profitez de la possibilité de corriger les coquilles et les erreurs pendant 60 minutes");
-            n("fdd77a34", "Rédigez des posts plus longs"),
+                n("a7ee832a", "Profitez de la possibilité de corriger les coquilles et les erreurs pendant 60 minutes"),
+                n("fdd77a34", "Rédigez des posts plus longs"),
                 n("j6d26a7a", "Écrivez autant que ce que vous voulez partagez"),
                 n("c4fd68da", "Personnalisez votre expérience"),
                 n("c0195168", "Modifiez l'icône de votre application et les options de navigation"),
@@ -6922,8 +6925,6 @@
                 n("c3148608", "Profitez d'une assistance plus rapide en cas de besoin."),
                 n("b485ca6e", "Onglet Posts marquants"),
                 n("d438955e", "Mettez vos meilleurs posts en avant."),
-                n("f373a352", "MP chiffrés"),
-                n("g7405aca", "Discutez en toute sécurité grâce au chiffrement de bout en bout."),
                 n("j659fa0c", "Le meilleur de Grok 3"),
                 n("ibff5694", "Profitez des limites d'utilisation les plus élevées, des modes DeepSearch et Réflexion ainsi que d'un accès anticipé aux nouvelles fonctionnalités."),
                 n("i824f4da", "Moins de publicités"),
@@ -6992,6 +6993,10 @@
                 n("gd573390", "Et tous les avantages de l'abonnement Basique…"),
                 n("ef94bbd4", "Obtenez Premium+"),
                 n("dcd830ce", "Et tous les avantages de l'abonnement Premium…"),
+                n("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                n("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 n("b7dde622", "Joyeux Thanksgiving ! L'offre se termine dans :"),
                 n("i0180ca1", function (e) {
                     return "Jusqu'au " + e.date + ". Joyeux Thanksgiving !";
@@ -7870,12 +7875,7 @@
                 }),
                 n("bf809ec0", "Sélectionner des affiliés"),
                 n("b719e224", "Aucun résultat"),
-                n("c9938100", "Résultats de recherche"),
-                n("d1a35ec6", "Ajouter des comptes"),
-                n("b437adda", "Mettre à niveau vers la version payante"),
-                n("f1f6c88b", function (e) {
-                    return "Comptes (" + e.count + ")";
-                });
+                n("c9938100", "Résultats de recherche");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7914,7 +7914,12 @@
                     i(e, t)
                 );
             }
-            n("b02156b8", "Invitations"),
+            n("d1a35ec6", "Ajouter des comptes"),
+                n("b437adda", "Mettre à niveau vers la version payante"),
+                n("f1f6c88b", function (e) {
+                    return "Comptes (" + e.count + ")";
+                }),
+                n("b02156b8", "Invitations"),
                 n("gd67d29b", function (e) {
                     return "Invitations (" + e.count + ")";
                 }),
@@ -8912,11 +8917,11 @@
                     return "Automatique (" + e.quality + ")";
                 }),
                 n("a7bf9962", "Télécharger la vidéo"),
-                n("ccc97152", "Vitesse de lecture"),
-                n("h531ade0", "Qualité de la vidéo"),
+                n("ccc97152", "Vitesse de lecture");
+            n("h531ade0", "Qualité de la vidéo"),
                 n("e8b5757c", "x 0,25"),
-                n("e7e954de", "x0,5");
-            n("g07ffe66", "x 0,75"),
+                n("e7e954de", "x0,5"),
+                n("g07ffe66", "x 0,75"),
                 n("d8bede9e", "x 1"),
                 n("j41845c8", "x 1,25"),
                 n("e9eeed9e", "x1,5"),
@@ -13338,4 +13343,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.19c4946a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.65bf812a.js.map

@@ -5,7 +5,7 @@
             "use strict";
             r.d(t, { Z: () => me });
             var n = {};
-            r.r(n), r.d(n, { anchorOffsetContextText: () => T, composerEditorContent: () => F, editorStateJson: () => I.G, editorState_2_json: () => I.c, parseTwitterText: () => D });
+            r.r(n), r.d(n, { anchorOffsetContextText: () => D, composerEditorContent: () => M, editorStateJson: () => I.G, editorState_2_json: () => I.c, parseTwitterText: () => T });
             var i = {};
             r.r(i), r.d(i, { ConvertEmojiEffect: () => B, DeveloperDebug: () => A, InlineStyleButton: () => N, OverflowHighlightEffect: () => X, PreserveUnstyledEntitiesEffect: () => se, Separator: () => ue, TextChangeEffect: () => ce, TrackFocusView: () => te });
             var a = {};
@@ -74,13 +74,13 @@
                 };
             }
             var I = r(873793),
-                P = r(24949),
-                Z = r(791134);
-            const D = (0, P.P1)([(e) => e.editorState.getCurrentContent().getPlainText(), (e) => e.isThread, (e, t) => t.featureSwitches, (e, t) => t.userClaims], (e, t, r, n) => {
+                Z = r(24949),
+                P = r(791134);
+            const T = (0, Z.P1)([(e) => e.editorState.getCurrentContent().getPlainText(), (e) => e.isThread, (e, t) => t.featureSwitches, (e, t) => t.userClaims], (e, t, r, n) => {
                     const i = { isThread: t, featureSwitches: r, userClaims: n };
-                    return Z.k2(e, i);
+                    return P.k2(e, i);
                 }),
-                T = (0, P.P1)([(e) => e.editorState], (e) => {
+                D = (0, Z.P1)([(e) => e.editorState], (e) => {
                     const t = e.getCurrentContent(),
                         r = e.getSelection(),
                         n = r.getAnchorKey(),
@@ -94,14 +94,14 @@
                         s = t.getPlainText(),
                         l = s.length - o;
                     let d, c;
-                    l < M ? ((d = l), (c = R - l)) : o < M ? ((d = R - o), (c = o)) : ((d = M), (c = M));
+                    l < F ? ((d = l), (c = R - l)) : o < F ? ((d = R - o), (c = o)) : ((d = F), (c = F));
                     const u = o - c,
                         h = o + d;
                     return s.substring(u, h);
                 }),
                 R = 280,
-                M = R / 2,
-                F = (0, P.P1)(
+                F = R / 2,
+                M = (0, Z.P1)(
                     [
                         (e) => {
                             const t = e.editorState.getCurrentContent(),
@@ -616,19 +616,19 @@
                 }
             }
             I.defaultProps = { dataSaverMode: !1, variants: [] };
-            var P = r(959587),
-                Z = r(751170),
-                D = r(523561),
-                T = r(195560);
-            const R = (0, D.Z)({
+            var Z = r(959587),
+                P = r(751170),
+                T = r(523561),
+                D = r(195560);
+            const R = (0, T.Z)({
                     loader: () =>
-                        Promise.all([r.e("icons.5"), r.e("icons.28"), r.e("icons.17"), r.e("modules.common-e907d115"), r.e("modules.common-e019dbda"), r.e("icons.25"), r.e("icons.13"), r.e("modules.audio-6107ac1a"), r.e("modules.audio-b953418a"), r.e("modules.audio-7c51e6a7"), r.e("modules.audio-04db59e9"), r.e("modules.audio-76583d6c"), r.e("modules.audio-b7a8a5fb"), r.e("modules.audio-51f6e793"), r.e("modules.audio-e019dbda"), r.e("modules.audio-262c94d4"), r.e("modules.audio-c6fe4ea4"), r.e("icons.4"), r.e("icons.1"), r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), r.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), r.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([r.e("icons.0"), r.e("icons.16"), r.e("icons.10"), r.e("icons.13"), r.e("icons.22"), r.e("modules.common-e907d115"), r.e("modules.common-e019dbda"), r.e("icons.26"), r.e("modules.audio-6107ac1a"), r.e("modules.audio-b953418a"), r.e("modules.audio-7c51e6a7"), r.e("modules.audio-04db59e9"), r.e("modules.audio-76583d6c"), r.e("modules.audio-b7a8a5fb"), r.e("modules.audio-51f6e793"), r.e("modules.audio-e019dbda"), r.e("modules.audio-262c94d4"), r.e("modules.audio-c6fe4ea4"), r.e("icons.4"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), r.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), r.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), r.e("loader.MediaPreviewVideoPlayer")])
                             .then(r.bind(r, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
-                    renderPlaceholder: (e, t) => n.createElement(T.Z, { hasError: e, onRetry: t }),
+                    renderPlaceholder: (e, t) => n.createElement(D.Z, { hasError: e, onRetry: t }),
                 }),
-                M = h().gd80afba,
-                F = h().j322caee,
+                F = h().gd80afba,
+                M = h().j322caee,
                 k = h().abd845fe,
                 O = h().df1b0708,
                 B = h().cd959e5c,
@@ -681,13 +681,13 @@
                 }
                 render() {
                     const { "aria-label": e, enableGif: t, mediaItem: r, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: h, style: b, withAltTextLabel: E, withCloseButton: _, withDragAndDropIndicator: S, withEditButton: x, withEditIcon: w, withEditSensitiveWarningButton: C } = this.props,
-                        { mediaContainerSizeStyle: I, playGif: Z } = this.state,
-                        D = r.externalMediaDetails && r.externalMediaDetails.mediaType === y.Re,
-                        T = D || (t && r.mediaFile && r.mediaFile.isGif),
+                        { mediaContainerSizeStyle: I, playGif: P } = this.state,
+                        T = r.externalMediaDetails && r.externalMediaDetails.mediaType === y.Re,
+                        D = T || (t && r.mediaFile && r.mediaFile.isGif),
                         R = !!r.mediaFile?.isVideo;
                     return n.createElement(a.ZP, null, ({ windowWidth: t }) => {
                         const r = void 0 !== w ? w : !v.Z.isTwoColumnLayout(t);
-                        return n.createElement(i.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: h, style: [b, V.cursor, D && V.gifPlayButton, I] }, this._renderPreview(), D && !Z && n.createElement(o.Z, { "aria-label": O, onPress: this._handleGifClick, size: "small" }), T ? n.createElement(P.ZP, { type: P.AM }) : null, E && !R ? n.createElement(s.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: V.editMedia }, S ? n.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: n.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, x && C ? n.createElement(l.ZP, { "aria-label": F, icon: n.createElement(m.default, { style: V.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, x ? n.createElement(l.ZP, { "aria-label": M, icon: r ? n.createElement(f.default, null) : void 0, onPress: d, size: r ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, r ? void 0 : k) : null), _ ? n.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: A }, icon: n.createElement(g.default, null), onPress: u, size: "small", style: V.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return n.createElement(i.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: h, style: [b, V.cursor, T && V.gifPlayButton, I] }, this._renderPreview(), T && !P && n.createElement(o.Z, { "aria-label": O, onPress: this._handleGifClick, size: "small" }), D ? n.createElement(Z.ZP, { type: Z.AM }) : null, E && !R ? n.createElement(s.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: V.editMedia }, S ? n.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: G }, icon: n.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, x && C ? n.createElement(l.ZP, { "aria-label": M, icon: n.createElement(m.default, { style: V.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, x ? n.createElement(l.ZP, { "aria-label": F, icon: r ? n.createElement(f.default, null) : void 0, onPress: d, size: r ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, r ? void 0 : k) : null), _ ? n.createElement(l.ZP, { "aria-label": B, hoverLabel: { label: A }, icon: n.createElement(g.default, null), onPress: u, size: "small", style: V.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -706,7 +706,7 @@
                 }
                 _renderImagePreview() {
                     const { borderRadius: e, enableGif: t, imageResizeMode: r, mediaItem: i, onClick: a } = this.props;
-                    return n.createElement(Z.Z, { borderRadius: e, enableGif: t, mediaItem: i, onClick: a, resizeMode: r });
+                    return n.createElement(P.Z, { borderRadius: e, enableGif: t, mediaItem: i, onClick: a, resizeMode: r });
                 }
                 _renderVideoPreview(e, t, r, i) {
                     const { mediaItem: a } = this.props,
@@ -828,25 +828,25 @@
                         x = p?.(y.id),
                         w = _ && r && i,
                         C = w && E && !!x,
-                        { containsOnlyImages: I, getDraggableIndex: P } = this.props,
-                        Z = y.originalMediaFile?.isImage,
-                        D = n.createElement(
+                        { containsOnlyImages: I, getDraggableIndex: Z } = this.props,
+                        P = y.originalMediaFile?.isImage,
+                        T = n.createElement(
                             n.Fragment,
                             null,
-                            n.createElement(h.Z, { "aria-label": b || v, enableGif: i, mediaItem: y, mixedMediaUploadsEnabled: s, onClick: S, onEdit: _, onEditSensitiveWarning: C ? x : void 0, onRemove: f(y.id), ref: g, role: "group", style: [m.mediaContainer, t], withAltTextLabel: !!b, withCloseButton: r && i, withDragAndDropIndicator: (P || a) && Z && I, withEditButton: w, withEditSensitiveWarningButton: C }),
+                            n.createElement(h.Z, { "aria-label": b || v, enableGif: i, mediaItem: y, mixedMediaUploadsEnabled: s, onClick: S, onEdit: _, onEditSensitiveWarning: C ? x : void 0, onRemove: f(y.id), ref: g, role: "group", style: [m.mediaContainer, t], withAltTextLabel: !!b, withCloseButton: r && i, withDragAndDropIndicator: (Z || a) && P && I, withEditButton: w, withEditSensitiveWarningButton: C }),
                             (() => {
                                 const e = y.mediaMetadata?.gifMetadata;
                                 return e?.url && e?.provider && s ? n.createElement(c.Z, { gifUrl: e.url, provider: e.provider }) : null;
                             })(),
                         );
-                    if (P && Z && I) {
+                    if (Z && P && I) {
                         const t = ["MediaPreview", y.id].join("-"),
                             r = 0 === e,
                             i = 3 === o.length,
                             a = r && i && !s ? "50%" : "100%";
-                        return n.createElement(u._, { draggableId: t, flex: !0, index: P(y.id), widthOverride: a }, D);
+                        return n.createElement(u._, { draggableId: t, flex: !0, index: Z(y.id), widthOverride: a }, T);
                     }
-                    return D;
+                    return T;
                 }
             }
             p.contextType = d.rC;
@@ -976,7 +976,7 @@
         },
         490834: (e, t, r) => {
             "use strict";
-            r.d(t, { Z: () => T });
+            r.d(t, { Z: () => D });
             var n = r(202784),
                 i = r(576648),
                 a = r(811176),
@@ -1037,10 +1037,10 @@
                 }
             }
             const I = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
-                P = C;
-            var Z = r(668214),
-                D = r(601576);
-            const T = (0, Z.Z)().propsFromActions(() => ({ addToast: D.fz }))(({ addToast: e, gifUrl: t, provider: r }) => n.createElement(P, { addToast: e, gifUrl: t, provider: r }));
+                Z = C;
+            var P = r(668214),
+                T = r(601576);
+            const D = (0, P.Z)().propsFromActions(() => ({ addToast: T.fz }))(({ addToast: e, gifUrl: t, provider: r }) => n.createElement(Z, { addToast: e, gifUrl: t, provider: r }));
         },
         26232: (e, t, r) => {
             "use strict";
@@ -1273,9 +1273,9 @@
                         w = [u.thumbnailContainer, "medium" === S && u.thumbnailContainerMedium],
                         C = "string" == typeof p ? n.createElement(s.ZP, null, p) : p,
                         I = "object" == typeof m && m.external && !m.openInSameFrame,
-                        P = r ? ("string" == typeof r ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, r) : r) : null,
-                        Z = n.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? d.default.theme.spaces[g] : d.default.theme.componentDimensions.gutterHorizontal }), [g]);
-                    return n.createElement(l.Z, { "aria-selected": "tab" === b ? h : null, disabled: c, link: c ? void 0 : m, onPress: f, role: b, style: [u.root, Z, c && u.disabled, v], testID: E, withInteractiveStyling: !!m || !!f }, n.createElement(i.Z, { style: u.contentContainer }, _ ? n.createElement(i.Z, { style: w }, _) : null, n.createElement(i.Z, { style: u.content }, C, P), y ? y() : null, (!m && !f) || c || x ? null : I ? n.createElement(a.default, { style: u.icon }) : n.createElement(o.default, { style: u.icon })), t);
+                        Z = r ? ("string" == typeof r ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, r) : r) : null,
+                        P = n.useMemo(() => ("space0" === g ? { paddingHorizontal: 0 } : { paddingHorizontal: g ? d.default.theme.spaces[g] : d.default.theme.componentDimensions.gutterHorizontal }), [g]);
+                    return n.createElement(l.Z, { "aria-selected": "tab" === b ? h : null, disabled: c, link: c ? void 0 : m, onPress: f, role: b, style: [u.root, P, c && u.disabled, v], testID: E, withInteractiveStyling: !!m || !!f }, n.createElement(i.Z, { style: u.contentContainer }, _ ? n.createElement(i.Z, { style: w }, _) : null, n.createElement(i.Z, { style: u.content }, C, Z), y ? y() : null, (!m && !f) || c || x ? null : I ? n.createElement(a.default, { style: u.icon }) : n.createElement(o.default, { style: u.icon })), t);
                 },
                 u = d.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${d.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -1383,4 +1383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose.c5bb246a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose.a93c561a.js.map

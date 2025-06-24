@@ -1,27 +1,67 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"],
+    ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c", "bundle.GrokDrawer-8caf98f2"],
     {
-        337925: (e, t, r) => {
-            r.d(t, { U: () => n });
-            r(614983);
-            function n(e) {
+        661841: (e, t, n) => {
+            n.d(t, { Z: () => o });
+            var r = {
+                centroidDimension: function (e, t, n, o) {
+                    var i = e.touchBank,
+                        a = 0,
+                        s = 0,
+                        l = 1 === e.numberActiveTouches ? e.touchBank[e.indexOfSingleActiveTouch] : null;
+                    if (null !== l) l.touchActive && l.currentTimeStamp > t && ((a += o && n ? l.currentPageX : o && !n ? l.currentPageY : !o && n ? l.previousPageX : l.previousPageY), (s = 1));
+                    else
+                        for (var c = 0; c < i.length; c++) {
+                            var u = i[c];
+                            if (null != u && u.touchActive && u.currentTimeStamp >= t) {
+                                (a += o && n ? u.currentPageX : o && !n ? u.currentPageY : !o && n ? u.previousPageX : u.previousPageY), s++;
+                            }
+                        }
+                    return s > 0 ? a / s : r.noCentroid;
+                },
+                currentCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !0);
+                },
+                currentCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !0);
+                },
+                previousCentroidXOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !0, !1);
+                },
+                previousCentroidYOfTouchesChangedAfter: function (e, t) {
+                    return r.centroidDimension(e, t, !1, !1);
+                },
+                currentCentroidX: function (e) {
+                    return r.centroidDimension(e, 0, !0, !0);
+                },
+                currentCentroidY: function (e) {
+                    return r.centroidDimension(e, 0, !1, !0);
+                },
+                noCentroid: -1,
+            };
+            const o = r;
+        },
+        337925: (e, t, n) => {
+            n.d(t, { U: () => r });
+            n(614983);
+            function r(e) {
                 return null;
             }
         },
-        874028: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            const n = r(33229).Z;
+        874028: (e, t, n) => {
+            n.d(t, { Z: () => r });
+            const r = n(33229).Z;
         },
-        881806: (e, t, r) => {
-            r.d(t, { Z: () => o });
-            var n = r(202784);
+        881806: (e, t, n) => {
+            n.d(t, { Z: () => o });
+            var r = n(202784);
             function o() {
-                for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
-                return (0, n.useCallback)(
+                for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+                return (0, r.useCallback)(
                     (e) => {
-                        for (var r = 0, n = t; r < n.length; r++) {
-                            var o = n[r];
+                        for (var n = 0, r = t; n < r.length; n++) {
+                            var o = r[n];
                             null != o && ("function" == typeof o ? o(e) : (o.current = e));
                         }
                     },
@@ -29,59 +69,59 @@
                 );
             }
         },
-        920863: (e, t, r) => {
-            r.d(t, { Z: () => o });
-            var n = r(202784);
+        920863: (e, t, n) => {
+            n.d(t, { Z: () => o });
+            var r = n(202784);
             function o(e) {
-                var t = (0, n.useRef)(void 0);
-                return (0, n.useCallback)(
-                    (r) => {
-                        t.current && (t.current(), (t.current = void 0)), null != r && (t.current = e(r));
+                var t = (0, r.useRef)(void 0);
+                return (0, r.useCallback)(
+                    (n) => {
+                        t.current && (t.current(), (t.current = void 0)), null != n && (t.current = e(n));
                     },
                     [e],
                 );
             }
         },
-        582975: (e, t, r) => {
-            r.d(t, { Z: () => f });
-            var n = r(807896),
-                o = r(77325),
-                i = r(231461),
-                a = r(133028),
-                s = r(325686),
-                l = r(703185),
-                p = r(280652),
-                d = r(614983),
-                c = r.n(d),
-                u = r(202784),
+        582975: (e, t, n) => {
+            n.d(t, { Z: () => f });
+            var r = n(807896),
+                o = n(77325),
+                i = n(231461),
+                a = n(133028),
+                s = n(325686),
+                l = n(703185),
+                c = n(280652),
+                u = n(614983),
+                p = n.n(u),
+                d = n(202784),
                 h = ["ItemSeparatorComponent", "SectionSeparatorComponent", "renderItem", "renderSectionFooter", "renderSectionHeader", "sections", "stickySectionHeadersEnabled"];
-            class m extends u.PureComponent {
+            class m extends d.PureComponent {
                 constructor() {
                     super(...arguments),
                         (this._keyExtractor = (e, t) => {
-                            var r = this._subExtractor(t);
-                            return (r && r.key) || String(t);
+                            var n = this._subExtractor(t);
+                            return (n && n.key) || String(t);
                         }),
                         (this._convertViewable = (e) => {
                             var t;
-                            c()(null != e.index, "Received a broken ViewToken");
-                            var r = this._subExtractor(e.index);
-                            if (!r) return null;
-                            var n = r.section.keyExtractor,
-                                o = this.props.keyExtractor || p.jn,
-                                i = null != n ? n(e.item, r.index) : o(e.item, null !== (t = r.index) && void 0 !== t ? t : 0);
-                            return (0, a.Z)((0, a.Z)({}, e), {}, { index: r.index, key: i, section: r.section });
+                            p()(null != e.index, "Received a broken ViewToken");
+                            var n = this._subExtractor(e.index);
+                            if (!n) return null;
+                            var r = n.section.keyExtractor,
+                                o = this.props.keyExtractor || c.jn,
+                                i = null != r ? r(e.item, n.index) : o(e.item, null !== (t = n.index) && void 0 !== t ? t : 0);
+                            return (0, a.Z)((0, a.Z)({}, e), {}, { index: n.index, key: i, section: n.section });
                         }),
                         (this._onViewableItemsChanged = (e) => {
                             var t = e.viewableItems,
-                                r = e.changed,
-                                n = this.props.onViewableItemsChanged;
-                            null != n && n({ viewableItems: t.map(this._convertViewable, this).filter(Boolean), changed: r.map(this._convertViewable, this).filter(Boolean) });
+                                n = e.changed,
+                                r = this.props.onViewableItemsChanged;
+                            null != r && r({ viewableItems: t.map(this._convertViewable, this).filter(Boolean), changed: n.map(this._convertViewable, this).filter(Boolean) });
                         }),
                         (this._renderItem = (e) => (t) => {
-                            var r = t.item,
-                                n = t.index,
-                                o = this._subExtractor(n);
+                            var n = t.item,
+                                r = t.index,
+                                o = this._subExtractor(r);
                             if (!o) return null;
                             var i = o.index;
                             if (null == i) {
@@ -93,17 +133,17 @@
                                 var l = this.props.renderSectionFooter;
                                 return l ? l({ section: a }) : null;
                             }
-                            var p = o.section.renderItem || this.props.renderItem,
-                                d = this._getSeparatorComponent(n, o, e);
-                            return c()(p, "no renderItem!"), u.createElement(g, { SeparatorComponent: d, LeadingSeparatorComponent: 0 === i ? this.props.SectionSeparatorComponent : void 0, cellKey: o.key, index: i, item: r, leadingItem: o.leadingItem, leadingSection: o.leadingSection, prevCellKey: (this._subExtractor(n - 1) || {}).key, setSelfHighlightCallback: this._setUpdateHighlightFor, setSelfUpdatePropsCallback: this._setUpdatePropsFor, updateHighlightFor: this._updateHighlightFor, updatePropsFor: this._updatePropsFor, renderItem: p, section: o.section, trailingItem: o.trailingItem, trailingSection: o.trailingSection, inverted: !!this.props.inverted });
+                            var c = o.section.renderItem || this.props.renderItem,
+                                u = this._getSeparatorComponent(r, o, e);
+                            return p()(c, "no renderItem!"), d.createElement(g, { SeparatorComponent: u, LeadingSeparatorComponent: 0 === i ? this.props.SectionSeparatorComponent : void 0, cellKey: o.key, index: i, item: n, leadingItem: o.leadingItem, leadingSection: o.leadingSection, prevCellKey: (this._subExtractor(r - 1) || {}).key, setSelfHighlightCallback: this._setUpdateHighlightFor, setSelfUpdatePropsCallback: this._setUpdatePropsFor, updateHighlightFor: this._updateHighlightFor, updatePropsFor: this._updatePropsFor, renderItem: c, section: o.section, trailingItem: o.trailingItem, trailingSection: o.trailingSection, inverted: !!this.props.inverted });
                         }),
                         (this._updatePropsFor = (e, t) => {
-                            var r = this._updatePropsMap[e];
-                            null != r && r(t);
+                            var n = this._updatePropsMap[e];
+                            null != n && n(t);
                         }),
                         (this._updateHighlightFor = (e, t) => {
-                            var r = this._updateHighlightMap[e];
-                            null != r && r(t);
+                            var n = this._updateHighlightMap[e];
+                            null != n && n(t);
                         }),
                         (this._setUpdateHighlightFor = (e, t) => {
                             null != t ? (this._updateHighlightMap[e] = t) : delete this._updateHighlightFor[e];
@@ -118,11 +158,11 @@
                         });
                 }
                 scrollToLocation(e) {
-                    for (var t = e.itemIndex, r = 0; r < e.sectionIndex; r++) t += this.props.getItemCount(this.props.sections[r].data) + 2;
-                    var n = e.viewOffset || 0;
+                    for (var t = e.itemIndex, n = 0; n < e.sectionIndex; n++) t += this.props.getItemCount(this.props.sections[n].data) + 2;
+                    var r = e.viewOffset || 0;
                     if (null != this._listRef) {
-                        if (e.itemIndex > 0 && this.props.stickySectionHeadersEnabled) n += this._listRef.__getFrameMetricsApprox(t - e.itemIndex, this._listRef.props).length;
-                        var o = (0, a.Z)((0, a.Z)({}, e), {}, { viewOffset: n, index: t });
+                        if (e.itemIndex > 0 && this.props.stickySectionHeadersEnabled) r += this._listRef.__getFrameMetricsApprox(t - e.itemIndex, this._listRef.props).length;
+                        var o = (0, a.Z)((0, a.Z)({}, e), {}, { viewOffset: r, index: t });
                         this._listRef.scrollToIndex(o);
                     }
                 }
@@ -130,128 +170,128 @@
                     return this._listRef;
                 }
                 render() {
-                    for (var e, t = this.props, r = (t.ItemSeparatorComponent, t.SectionSeparatorComponent, t.renderItem, t.renderSectionFooter, t.renderSectionHeader, t.sections, t.stickySectionHeadersEnabled, (0, i.Z)(t, h)), a = this.props.ListHeaderComponent ? 1 : 0, s = this.props.stickySectionHeadersEnabled ? [] : void 0, p = 0, d = (0, o.Z)(this.props.sections); !(e = d()).done; ) {
-                        var c = e.value;
-                        null != s && s.push(p + a), (p += 2), (p += this.props.getItemCount(c.data));
+                    for (var e, t = this.props, n = (t.ItemSeparatorComponent, t.SectionSeparatorComponent, t.renderItem, t.renderSectionFooter, t.renderSectionHeader, t.sections, t.stickySectionHeadersEnabled, (0, i.Z)(t, h)), a = this.props.ListHeaderComponent ? 1 : 0, s = this.props.stickySectionHeadersEnabled ? [] : void 0, c = 0, u = (0, o.Z)(this.props.sections); !(e = u()).done; ) {
+                        var p = e.value;
+                        null != s && s.push(c + a), (c += 2), (c += this.props.getItemCount(p.data));
                     }
-                    var m = this._renderItem(p);
-                    return u.createElement(l.Z, (0, n.Z)({}, r, { keyExtractor: this._keyExtractor, stickyHeaderIndices: s, renderItem: m, data: this.props.sections, getItem: (e, t) => this._getItem(this.props, e, t), getItemCount: () => p, onViewableItemsChanged: this.props.onViewableItemsChanged ? this._onViewableItemsChanged : void 0, ref: this._captureRef }));
+                    var m = this._renderItem(c);
+                    return d.createElement(l.Z, (0, r.Z)({}, n, { keyExtractor: this._keyExtractor, stickyHeaderIndices: s, renderItem: m, data: this.props.sections, getItem: (e, t) => this._getItem(this.props, e, t), getItemCount: () => c, onViewableItemsChanged: this.props.onViewableItemsChanged ? this._onViewableItemsChanged : void 0, ref: this._captureRef }));
                 }
-                _getItem(e, t, r) {
+                _getItem(e, t, n) {
                     if (!t) return null;
-                    for (var n = r - 1, o = 0; o < t.length; o++) {
+                    for (var r = n - 1, o = 0; o < t.length; o++) {
                         var i = t[o],
                             a = i.data,
                             s = e.getItemCount(a);
-                        if (-1 === n || n === s) return i;
-                        if (n < s) return e.getItem(a, n);
-                        n -= s + 2;
+                        if (-1 === r || r === s) return i;
+                        if (r < s) return e.getItem(a, r);
+                        r -= s + 2;
                     }
                     return null;
                 }
                 _subExtractor(e) {
-                    for (var t = e, r = this.props, n = r.getItem, o = r.getItemCount, i = r.keyExtractor, a = r.sections, s = 0; s < a.length; s++) {
+                    for (var t = e, n = this.props, r = n.getItem, o = n.getItemCount, i = n.keyExtractor, a = n.sections, s = 0; s < a.length; s++) {
                         var l = a[s],
-                            d = l.data,
-                            c = l.key || String(s);
-                        if (!((t -= 1) >= o(d) + 1)) return -1 === t ? { section: l, key: c + ":header", index: null, header: !0, trailingSection: a[s + 1] } : t === o(d) ? { section: l, key: c + ":footer", index: null, header: !1, trailingSection: a[s + 1] } : { section: l, key: c + ":" + (l.keyExtractor || i || p.jn)(n(d, t), t), index: t, leadingItem: n(d, t - 1), leadingSection: a[s - 1], trailingItem: n(d, t + 1), trailingSection: a[s + 1] };
-                        t -= o(d) + 1;
+                            u = l.data,
+                            p = l.key || String(s);
+                        if (!((t -= 1) >= o(u) + 1)) return -1 === t ? { section: l, key: p + ":header", index: null, header: !0, trailingSection: a[s + 1] } : t === o(u) ? { section: l, key: p + ":footer", index: null, header: !1, trailingSection: a[s + 1] } : { section: l, key: p + ":" + (l.keyExtractor || i || c.jn)(r(u, t), t), index: t, leadingItem: r(u, t - 1), leadingSection: a[s - 1], trailingItem: r(u, t + 1), trailingSection: a[s + 1] };
+                        t -= o(u) + 1;
                     }
                 }
-                _getSeparatorComponent(e, t, r) {
+                _getSeparatorComponent(e, t, n) {
                     if (!(t = t || this._subExtractor(e))) return null;
-                    var n = t.section.ItemSeparatorComponent || this.props.ItemSeparatorComponent,
+                    var r = t.section.ItemSeparatorComponent || this.props.ItemSeparatorComponent,
                         o = this.props.SectionSeparatorComponent,
-                        i = e === r - 1,
+                        i = e === n - 1,
                         a = t.index === this.props.getItemCount(t.section.data) - 1;
-                    return o && a ? o : !n || a || i ? null : n;
+                    return o && a ? o : !r || a || i ? null : r;
                 }
             }
             function g(e) {
                 var t = e.LeadingSeparatorComponent,
-                    r = e.SeparatorComponent,
+                    n = e.SeparatorComponent,
                     o = e.cellKey,
                     i = e.prevCellKey,
                     l = e.setSelfHighlightCallback,
-                    p = e.updateHighlightFor,
-                    d = e.setSelfUpdatePropsCallback,
-                    c = e.updatePropsFor,
+                    c = e.updateHighlightFor,
+                    u = e.setSelfUpdatePropsCallback,
+                    p = e.updatePropsFor,
                     h = e.item,
                     m = e.index,
                     g = e.section,
                     f = e.inverted,
-                    v = u.useState(!1),
-                    _ = v[0],
+                    v = d.useState(!1),
+                    P = v[0],
                     S = v[1],
-                    P = u.useState(!1),
-                    I = P[0],
-                    y = P[1],
-                    b = u.useState({ leadingItem: e.leadingItem, leadingSection: e.leadingSection, section: e.section, trailingItem: e.item, trailingSection: e.trailingSection }),
-                    C = b[0],
-                    w = b[1],
-                    x = u.useState({ leadingItem: e.item, leadingSection: e.leadingSection, section: e.section, trailingItem: e.trailingItem, trailingSection: e.trailingSection }),
-                    E = x[0],
-                    k = x[1];
-                u.useEffect(
+                    _ = d.useState(!1),
+                    C = _[0],
+                    I = _[1],
+                    y = d.useState({ leadingItem: e.leadingItem, leadingSection: e.leadingSection, section: e.section, trailingItem: e.item, trailingSection: e.trailingSection }),
+                    b = y[0],
+                    w = y[1],
+                    x = d.useState({ leadingItem: e.item, leadingSection: e.leadingSection, section: e.section, trailingItem: e.trailingItem, trailingSection: e.trailingSection }),
+                    k = x[0],
+                    E = x[1];
+                d.useEffect(
                     () => (
-                        l(o, y),
-                        d(o, k),
+                        l(o, I),
+                        u(o, E),
                         () => {
-                            d(o, null), l(o, null);
+                            u(o, null), l(o, null);
                         }
                     ),
-                    [o, l, k, d],
+                    [o, l, E, u],
                 );
-                var H = {
+                var Z = {
                         highlight: () => {
-                            S(!0), y(!0), null != i && p(i, !0);
+                            S(!0), I(!0), null != i && c(i, !0);
                         },
                         unhighlight: () => {
-                            S(!1), y(!1), null != i && p(i, !1);
+                            S(!1), I(!1), null != i && c(i, !1);
                         },
-                        updateProps: (e, n) => {
-                            "leading" === e ? (null != t ? w((0, a.Z)((0, a.Z)({}, C), n)) : null != i && c(i, (0, a.Z)((0, a.Z)({}, C), n))) : "trailing" === e && null != r && k((0, a.Z)((0, a.Z)({}, E), n));
+                        updateProps: (e, r) => {
+                            "leading" === e ? (null != t ? w((0, a.Z)((0, a.Z)({}, b), r)) : null != i && p(i, (0, a.Z)((0, a.Z)({}, b), r))) : "trailing" === e && null != n && E((0, a.Z)((0, a.Z)({}, k), r));
                         },
                     },
-                    Z = e.renderItem({ item: h, index: m, section: g, separators: H }),
-                    N = null != t && u.createElement(t, (0, n.Z)({ highlighted: _ }, C)),
-                    F = null != r && u.createElement(r, (0, n.Z)({ highlighted: I }, E));
-                return N || F ? u.createElement(s.Z, null, !1 === f ? N : F, Z, !1 === f ? F : N) : Z;
+                    H = e.renderItem({ item: h, index: m, section: g, separators: Z }),
+                    D = null != t && d.createElement(t, (0, r.Z)({ highlighted: P }, b)),
+                    N = null != n && d.createElement(n, (0, r.Z)({ highlighted: C }, k));
+                return D || N ? d.createElement(s.Z, null, !1 === f ? D : N, H, !1 === f ? N : D) : H;
             }
             const f = m;
         },
-        702239: (e, t, r) => {
-            r.d(t, { Nq: () => d, oD: () => u, t0: () => c });
-            var n,
-                o = r(202784),
-                i = r(928316),
+        702239: (e, t, n) => {
+            n.d(t, { Nq: () => u, oD: () => d, t0: () => p });
+            var r,
+                o = n(202784),
+                i = n(928316),
                 a =
-                    ((n = function (e, t) {
+                    ((r = function (e, t) {
                         return (
-                            (n =
+                            (r =
                                 Object.setPrototypeOf ||
                                 ({ __proto__: [] } instanceof Array &&
                                     function (e, t) {
                                         e.__proto__ = t;
                                     }) ||
                                 function (e, t) {
-                                    for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
+                                    for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n]);
                                 }),
-                            n(e, t)
+                            r(e, t)
                         );
                     }),
                     function (e, t) {
                         if ("function" != typeof t && null !== t) throw new TypeError("Class extends value " + String(t) + " is not a constructor or null");
-                        function r() {
+                        function n() {
                             this.constructor = e;
                         }
-                        n(e, t), (e.prototype = null === t ? Object.create(t) : ((r.prototype = t.prototype), new r()));
+                        r(e, t), (e.prototype = null === t ? Object.create(t) : ((n.prototype = t.prototype), new n()));
                     }),
                 s = "html",
                 l = "svg",
-                p = function (e, t) {
-                    var r,
-                        n,
+                c = function (e, t) {
+                    var n,
+                        r,
                         o,
                         i = {};
                     if (e === s) o = document.createElement("div");
@@ -260,11 +300,11 @@
                         o = document.createElementNS("http://www.w3.org/2000/svg", "g");
                     }
                     if (t && "object" == typeof t)
-                        for (var a = 0, p = Object.entries(t.attributes); a < p.length; a++) {
-                            var d = p[a],
-                                c = d[0],
-                                u = d[1];
-                            o.setAttribute(c, u);
+                        for (var a = 0, c = Object.entries(t.attributes); a < c.length; a++) {
+                            var u = c[a],
+                                p = u[0],
+                                d = u[1];
+                            o.setAttribute(p, d);
                         }
                     var h = {
                         element: o,
@@ -276,44 +316,44 @@
                             return i;
                         },
                         mount: function (t, o) {
-                            if (o !== n) {
+                            if (o !== r) {
                                 if (
                                     (h.unmount(),
-                                    t !== r &&
+                                    t !== n &&
                                         !(function (e, t) {
-                                            var r,
-                                                n,
+                                            var n,
+                                                r,
                                                 o,
-                                                i = null !== (r = e.ownerDocument) && void 0 !== r ? r : document,
-                                                a = null !== (o = null !== (n = i.defaultView) && void 0 !== n ? n : i.parentWindow) && void 0 !== o ? o : window;
+                                                i = null !== (n = e.ownerDocument) && void 0 !== n ? n : document,
+                                                a = null !== (o = null !== (r = i.defaultView) && void 0 !== r ? r : i.parentWindow) && void 0 !== o ? o : window;
                                             if (t === s) return e instanceof a.HTMLElement;
                                             if (t === l) return e instanceof a.SVGElement;
                                             throw new Error('Unrecognized element type "'.concat(t, '" for validateElementType.'));
                                         })(t, e))
                                 )
                                     throw new Error('Invalid element type for portal: "'.concat(e, '" portalNodes must be used with ').concat(e, " elements, but OutPortal is within <").concat(t.tagName, ">."));
-                                t.replaceChild(h.element, o), (r = t), (n = o);
+                                t.replaceChild(h.element, o), (n = t), (r = o);
                             }
                         },
                         unmount: function (e) {
-                            (e && e !== n) || (r && n && (r.replaceChild(n, h.element), (r = void 0), (n = void 0)));
+                            (e && e !== r) || (n && r && (n.replaceChild(r, h.element), (n = void 0), (r = void 0)));
                         },
                     };
                     return h;
                 },
-                d = (function (e) {
+                u = (function (e) {
                     function t(t) {
-                        var r = e.call(this, t) || this;
+                        var n = e.call(this, t) || this;
                         return (
-                            (r.addPropsChannel = function () {
-                                Object.assign(r.props.node, {
+                            (n.addPropsChannel = function () {
+                                Object.assign(n.props.node, {
                                     setPortalProps: function (e) {
-                                        r.setState({ nodeProps: e });
+                                        n.setState({ nodeProps: e });
                                     },
                                 });
                             }),
-                            (r.state = { nodeProps: r.props.node.getInitialPortalProps() }),
-                            r
+                            (n.state = { nodeProps: n.props.node.getInitialPortalProps() }),
+                            n
                         );
                     }
                     return (
@@ -327,22 +367,22 @@
                         (t.prototype.render = function () {
                             var e = this,
                                 t = this.props,
-                                r = t.children,
-                                n = t.node;
+                                n = t.children,
+                                r = t.node;
                             return i.createPortal(
-                                o.Children.map(r, function (t) {
+                                o.Children.map(n, function (t) {
                                     return o.isValidElement(t) ? o.cloneElement(t, e.state.nodeProps) : t;
                                 }),
-                                n.element,
+                                r.element,
                             );
                         }),
                         t
                     );
                 })(o.PureComponent),
-                c = (function (e) {
+                p = (function (e) {
                     function t(t) {
-                        var r = e.call(this, t) || this;
-                        return (r.placeholderNode = o.createRef()), r.passPropsThroughPortal(), r;
+                        var n = e.call(this, t) || this;
+                        return (n.placeholderNode = o.createRef()), n.passPropsThroughPortal(), n;
                     }
                     return (
                         a(t, e),
@@ -354,15 +394,15 @@
                             var e = this.props.node;
                             this.currentPortalNode = e;
                             var t = this.placeholderNode.current,
-                                r = t.parentNode;
-                            e.mount(r, t), this.passPropsThroughPortal();
+                                n = t.parentNode;
+                            e.mount(n, t), this.passPropsThroughPortal();
                         }),
                         (t.prototype.componentDidUpdate = function () {
                             var e = this.props.node;
                             this.currentPortalNode && e !== this.currentPortalNode && (this.currentPortalNode.unmount(this.placeholderNode.current), this.currentPortalNode.setPortalProps({}), (this.currentPortalNode = e));
                             var t = this.placeholderNode.current,
-                                r = t.parentNode;
-                            e.mount(r, t), this.passPropsThroughPortal();
+                                n = t.parentNode;
+                            e.mount(n, t), this.passPropsThroughPortal();
                         }),
                         (t.prototype.componentWillUnmount = function () {
                             var e = this.props.node;
@@ -374,9 +414,9 @@
                         t
                     );
                 })(o.PureComponent),
-                u = p.bind(null, s);
-            p.bind(null, l);
+                d = c.bind(null, s);
+            c.bind(null, l);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c.7fe6ecaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c.821aa58a.js.map

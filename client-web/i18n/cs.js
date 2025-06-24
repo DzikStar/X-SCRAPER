@@ -234,6 +234,11 @@
                 a("f65e7e91", function (e) {
                     return e.percentage + "% sleva " + e.tier + " " + e.plan;
                 }),
+                a("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                a("he77d8e6", "Limited-time offer"),
+                a("adf3410a", "Přihlaste se k odběru a odemkněte nové funkce, a pokud splňujete podmínky, získejte podíl z příjmů."),
                 a("a84a736e", "Získejte kredit na reklamu zdarma"),
                 a("a0713d76", "Upgradujte si účet na ověřenou organizaci abyste získali kredit na reklamu zdarma a sadu nástrojů pro růst podnikání."),
                 a("a07e13fc", "Staňte se tvůrcem Premium"),
@@ -269,7 +274,6 @@
                 a("ed534c78", "Pouze předplatitelé X Premium mají přístup ke složkám záložek. Pokud chcete pokračovat, tak upgradujte."),
                 a("ed924940", "Zbavte se všech reklam s Premium+"),
                 a("dccdb326", "Pouze předplatitelům Premium+ se nezobrazují žádné reklamy. Pokud chcete pokračovat, upgradujte."),
-                a("adf3410a", "Přihlaste se k odběru a odemkněte nové funkce, a pokud splňujete podmínky, získejte podíl z příjmů."),
                 a("d8661dd4", "Po omezenou dobu. Odemkněte to nejlepší na X."),
                 a("fe7fd234", "Vyzkoušejte předplatné Premium Basic zdarma ještě dnes"),
                 a("a2f86dda", "Zlepšete si práci díky složkám záložek, úpravám příspěvků, vlastním ikonám aplikací a dalším funkcím s předplatným Premium Basic."),
@@ -908,10 +912,10 @@
                 a("bf9e181b", "Další informace"),
                 a("e8e39f95", "Další informace"),
                 a("e126dd3f", "Další informace"),
-                a("i821844f", "Další informace"),
-                a("b0abbb17", "Další informace"),
-                a("e7e0d88b", "Další informace");
-            a("i560665f", "Další informace"),
+                a("i821844f", "Další informace");
+            a("b0abbb17", "Další informace"),
+                a("e7e0d88b", "Další informace"),
+                a("i560665f", "Další informace"),
                 a("f6e774d9", "Další informace"),
                 a("h486f755", "Další informace"),
                 a("bab41dab", "Další informace"),
@@ -1295,11 +1299,11 @@
                 a("b0d1e205", function (e) {
                     return 'Vyhledávání **"' + e.query + '"**';
                 }),
-                a("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 a("bf970edd", function (e) {
                     return "Prohledávání  𝕏  na dotaz „" + e.query + "“";
+                }),
+                a("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 a("g008d475", function (e) {
                     return "Procházení " + e.url;
@@ -1318,6 +1322,9 @@
                 }),
                 a("e99fb7a3", function (e) {
                     return "Prohledávání postů na  𝕏  uživatelem @" + e.username + " na dotaz **„" + e.query + "“**";
+                }),
+                a("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 a("ead81122", "Něco se pokazilo, obnovte stránku pro opětovné připojení nebo to zkuste znovu."),
                 a("f808a13a", "Překročili jste maximální počet pokusů. Chvíli počkejte a zkuste to znovu."),
@@ -1351,11 +1358,12 @@
                 a("deaf5b16", "Opakovat"),
                 a("a66d80d0", "Přeložit post"),
                 a("be9b9fb8", "Přeložil Grok"),
+                a("ba10dab6", "Auto-translated by Grok"),
                 a("he9c9634", "Nemůžeme načíst překlad."),
                 a("j2198c98", "Skrýt přeložený post"),
                 a("d4d35bea", "Překládání..."),
-                a("i7ac410e", "Zobrazit originál"),
-                a("c67f09e8", "Zobrazit překlad"),
+                a("f4f69be8", "Show original"),
+                a("e3097a5c", "Show auto-translated post"),
                 a("e0f81ff3", "Překlad:"),
                 a("j2862695", function (e) {
                     return "Překlad z " + e.originLanguage + " od";
@@ -1740,9 +1748,7 @@
                 a("f5b3dc1e", "Možná později"),
                 a("ae0c5fbe", "Nepodařilo se změnit, kdo může odpovědět."),
                 a("bae0cbc0", "Změnit, kdo může odpovědět"),
-                a("d78131b9", function (e) {
-                    return "Přidat uživatele @" + e.screenName + " do seznamů nebo ho odebrat";
-                }),
+                a("a599bbfa", "Přidat na seznam / Odebrat ze seznamu"),
                 a("b3b642fc", "Proč toto postovat?"),
                 a("fb4ee11c", "Proč tato reklama?"),
                 a("ad50e7d9", function (e) {
@@ -1804,15 +1810,11 @@
                 a("j7bb1a43", function (e) {
                     return "Nahlásit uživatele @" + e.screenName;
                 }),
-                a("hef5960c", "Sdílet profil přes..."),
+                a("g00b4c55", function (e) {
+                    return "Sdílet profil @" + e.screenName + " prostřednictvím…";
+                }),
                 a("bb1cbeb6", "Znovu zobrazit"),
                 a("h2f62206", "Skrývání uživatele"),
-                a("e67b2d65", function (e) {
-                    return "Skrýt uživatele @" + e.screenName;
-                }),
-                a("f05597b3", function (e) {
-                    return "Znovu zobrazit uživatele @" + e.screenName;
-                }),
                 a("h59f52ee", "Skrytí bylo úspěšné."),
                 a("eea0cbee", "Opětovné zobrazení bylo úspěšné."),
                 a("i29533b3", function (e) {
@@ -1928,10 +1930,10 @@
                 }),
                 a("jcd5ee8a", "Upravit blok"),
                 a("a8f09fb8", "Odstranit blok"),
-                a("i89195ea", "Dělič"),
-                a("da8ac57c", "Upravit popisek"),
-                a("a8fdd09c", "Zveřejnit článek");
-            a("d8047cc8", "Publikovat"),
+                a("i89195ea", "Dělič");
+            a("da8ac57c", "Upravit popisek"),
+                a("a8fdd09c", "Zveřejnit článek"),
+                a("d8047cc8", "Publikovat"),
                 a("ff7ddca2", "Po zveřejnění se váš článek zobrazí jako post. Najdete jej také ve svém profilu na kartě Články."),
                 a("ef34d7be", "Ovládací prvky publika a odpovědí nelze po zveřejnění článku upravovat."),
                 a("e52d4998", "Zvolte cílovou skupinu"),
@@ -2984,10 +2986,10 @@
                 }),
                 a("e64de8a9", function (e) {
                     return e.entity + " již není ve vašich záložkách.";
-                }),
-                a("d6d9aab6", "Přidat záložku"),
-                a("bb89cf46", "Odstranit záložku");
-            a("a739d4ba", "Přidat do složky pro záložky"),
+                });
+            a("d6d9aab6", "Přidat záložku"),
+                a("bb89cf46", "Odstranit záložku"),
+                a("a739d4ba", "Přidat do složky pro záložky"),
                 a("d5270434", "Ukončit"),
                 a("ac85c6b2", "Při načítání tohoto obrázku došlo k chybě."),
                 a("b327c12a", "Obrázek"),
@@ -3910,10 +3912,10 @@
                 a("fe7a1910", "Odeslat pozvánky"),
                 a("ic3c757e", "Hledat uživatele"),
                 a("cd133486", "Pozvat"),
-                a("f2333850", "Sdílet s lidmi mimo platformu X"),
-                a("cddb8097", "Další informace"),
-                a("f77997b0", "Spoluhostitel");
-            a("i48f4ed8", "Mluvčí"),
+                a("f2333850", "Sdílet s lidmi mimo platformu X");
+            a("cddb8097", "Další informace"),
+                a("f77997b0", "Spoluhostitel"),
+                a("i48f4ed8", "Mluvčí"),
                 a("a77c8e02", "Posluchač"),
                 a("bdfa93eb", function (e) {
                     return "Sdíleno uživatelem " + e.name;
@@ -4270,6 +4272,7 @@
                     return "Ukázat vše (" + e.count + ")";
                 }),
                 a("df601d92", "Relevantní uživatelé"),
+                a("a4cfb8a8", "Browsing"),
                 a("d7cb5408", "Relevantní webové stránky"),
                 a("ca93f2ee", "Zpráva byla odstraněna."),
                 a("b8c06820", "Zkopírovat text"),
@@ -4933,11 +4936,11 @@
                 a("d9f9dec0", "Zobrazit Prostor"),
                 a("h0c1f37a", "Zobrazit analýzu Prostoru"),
                 a("e41fffbc", "Celkový čas sledování vašich videí."),
-                a("if2909ba", "Čas sledování"),
-                a("i0e5bf4c", "Vaše videa"),
+                a("if2909ba", "Čas sledování");
+            a("i0e5bf4c", "Vaše videa"),
                 a("ed99baea", "Brzký přístup k beta verzi"),
-                a("gf898b70", "Pokročilé hledání");
-            a("d2a43a7a", "obsahuje jak „ai“, tak i „startup“"),
+                a("gf898b70", "Pokročilé hledání"),
+                a("d2a43a7a", "obsahuje jak „ai“, tak i „startup“"),
                 a("a8584698", "ai startup"),
                 a("jb6f9292", "obsahuje přesně frázi „ai startup“"),
                 a("j8ee77c4", "„ai startup“"),
@@ -5887,13 +5890,13 @@
                 a("f191a2ba", "nastaveních hledání"),
                 a("a068008a", "Složky v tuto chvíli nejde načíst"),
                 a("f075b0e8", "Upravit složku"),
-                a("beba2a0e", "Vytvořit novou složku pro záložky"),
-                a("e41c9b4f", function (e) {
-                    return "Uloženo do kolekce " + e.bookmarkFolderName;
-                }),
+                a("beba2a0e", "Vytvořit novou složku pro záložky");
+            a("e41c9b4f", function (e) {
+                return "Uloženo do kolekce " + e.bookmarkFolderName;
+            }),
                 a("h18f86a4", "Smazat složku"),
-                a("f4ea967a", "Složka byla smazána");
-            a("b670aa62", "Název složky"),
+                a("f4ea967a", "Složka byla smazána"),
+                a("b670aa62", "Název složky"),
                 a("aece5462", "Název složky byl úspěšně aktualizován"),
                 a("e3299b94", "Něco se pokazilo. Zkuste složku aktualizovat znovu za minutku."),
                 a("c09ea714", "Něco se pokazilo. Zkuste složku smazat znovu za minutku."),
@@ -6504,7 +6507,7 @@
                 a("f7cf3d36", "Grok je bezplatný asistent s umělou inteligencí navržený xAI pro maximalizaci pravdivosti a objektivity. Grok nabízí hledání v reálném čase, generování obrázků, analýzu trendů a další."),
                 a("hc965308", "Zábava"),
                 a("eb78b77e", "Režim Zábava"),
-                a("aa8ece10", "Vyzkoušejte grok.com"),
+                a("ac164552", "Go to grok.com"),
                 a("gb5fb7d0", "Režim Soustředit se"),
                 a("g5665caa", "Ukončit režim Soustředit se"),
                 a("a372681e", "Kopírovat odkaz na sdílení"),
@@ -6895,11 +6898,11 @@
                     return e.percentage + "% sleva na roční předplatné Premium";
                 }),
                 a("c924ad84", "Nechte video hrát"),
-                a("de750a3c", "Užijte si je, i když je váš telefon zamčený"),
-                a("he5e87c4", "Boostujte svoje odpovědi"),
+                a("de750a3c", "Užijte si je, i když je váš telefon zamčený");
+            a("he5e87c4", "Boostujte svoje odpovědi"),
                 a("g64a60ba", "Získejte malou prioritu, když odpovídáte na posty"),
-                a("a7ee832a", "Opravte překlepy a chyby, po dobu až 60 minut");
-            a("fdd77a34", "Vytvářejte delší posty"),
+                a("a7ee832a", "Opravte překlepy a chyby, po dobu až 60 minut"),
+                a("fdd77a34", "Vytvářejte delší posty"),
                 a("j6d26a7a", "Pište tolik obsahu, kolik ho chcete sdílet"),
                 a("c4fd68da", "Přizpůsobte si uživatelské prostředí"),
                 a("c0195168", "Změňte ikonu aplikace a možnosti navigace"),
@@ -6927,8 +6930,6 @@
                 a("c3148608", "Získejte rychlejší pomoc, když ji potřebujete"),
                 a("b485ca6e", "Karta Nejzajímavější"),
                 a("d438955e", "Předveďte své nejlepší posty"),
-                a("f373a352", "Zašifrované SZ"),
-                a("g7405aca", "Chatujte bezpečně pomocí kompletního šifrování"),
                 a("j659fa0c", "To nejlepší z funkce Grok 3"),
                 a("ibff5694", "Odemkněte omezení nejvyššího počtu použití, funkce DeepSearch a Přemýšlet a brzký přístup k novým funkcím"),
                 a("i824f4da", "Méně reklam"),
@@ -6997,6 +6998,10 @@
                 a("gd573390", "A to vše v předplatném Basic..."),
                 a("ef94bbd4", "Získejte Premium+"),
                 a("dcd830ce", "A to vše v předplatném Premium..."),
+                a("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                a("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 a("b7dde622", "Šťastné Díkuvzdání! Nabídka končí za:"),
                 a("i0180ca1", function (e) {
                     return "Do " + e.date + ". Šťastné Díkůvzdání!";
@@ -7875,12 +7880,7 @@
                 }),
                 a("bf809ec0", "Vyberte si partnerské účty"),
                 a("b719e224", "Žádné výsledky"),
-                a("c9938100", "Výsledky hledání"),
-                a("d1a35ec6", "Přidat účty"),
-                a("b437adda", "Upgradujte k platbě"),
-                a("f1f6c88b", function (e) {
-                    return "Účty (" + e.count + ")";
-                });
+                a("c9938100", "Výsledky hledání");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7919,7 +7919,12 @@
                     i(e, o)
                 );
             }
-            a("b02156b8", "Pozvánky"),
+            a("d1a35ec6", "Přidat účty"),
+                a("b437adda", "Upgradujte k platbě"),
+                a("f1f6c88b", function (e) {
+                    return "Účty (" + e.count + ")";
+                }),
+                a("b02156b8", "Pozvánky"),
                 a("gd67d29b", function (e) {
                     return "Pozvánky (" + e.count + ")";
                 }),
@@ -8917,11 +8922,11 @@
                     return "Auto (" + e.quality + ")";
                 }),
                 a("a7bf9962", "Stáhnout video"),
-                a("ccc97152", "Rychlost přehrávání"),
-                a("h531ade0", "Kvalita videa"),
+                a("ccc97152", "Rychlost přehrávání");
+            a("h531ade0", "Kvalita videa"),
                 a("e8b5757c", "0,25x"),
-                a("e7e954de", "0,5x");
-            a("g07ffe66", "0,75x"),
+                a("e7e954de", "0,5x"),
+                a("g07ffe66", "0,75x"),
                 a("d8bede9e", "1x"),
                 a("j41845c8", "1,25x"),
                 a("e9eeed9e", "1,5x"),
@@ -13346,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.72cc1b2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.fb3fa92a.js.map

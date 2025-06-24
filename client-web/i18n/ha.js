@@ -228,6 +228,11 @@
                 t("f65e7e91", function (a) {
                     return a.percentage + "% off " + a.tier + " " + a.plan;
                 }),
+                t("b28602eb", function (a) {
+                    return "Get " + a.percentage + "% off this summer";
+                }),
+                t("he77d8e6", "Limited-time offer"),
+                t("adf3410a", "Subscribe to unlock new features and if eligible, receive a share of revenue."),
                 t("a84a736e", "Get Free Ad Credit"),
                 t("a0713d76", "Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
                 t("a07e13fc", "Become a Premium Creator"),
@@ -263,7 +268,6 @@
                 t("ed534c78", "Only X Premium subscribers have access to bookmark folders. Upgrade to continue."),
                 t("ed924940", "Remove all ads with Premium+"),
                 t("dccdb326", "Only Premium+ subscribers see no ads. Upgrade to continue."),
-                t("adf3410a", "Subscribe to unlock new features and if eligible, receive a share of revenue."),
                 t("d8661dd4", "For a limited time. Unlock the best of X."),
                 t("fe7fd234", "Try Premium Basic for free today"),
                 t("a2f86dda", "Enhance your experience with Bookmark folders, Edit post, Custom app icons, and more with Premium Basic."),
@@ -902,10 +906,10 @@
                 t("bf9e181b", "Ƙara koyo"),
                 t("e8e39f95", "Ƙara koyo"),
                 t("e126dd3f", "Ƙara koyo"),
-                t("i821844f", "Ƙara koyo"),
-                t("b0abbb17", "Ƙara koyo"),
-                t("e7e0d88b", "Ƙara koyo");
-            t("i560665f", "Ƙara koyo"),
+                t("i821844f", "Ƙara koyo");
+            t("b0abbb17", "Ƙara koyo"),
+                t("e7e0d88b", "Ƙara koyo"),
+                t("i560665f", "Ƙara koyo"),
                 t("f6e774d9", "Ƙara koyo"),
                 t("h486f755", "Ƙara koyo"),
                 t("bab41dab", "Ƙara koyo"),
@@ -1289,11 +1293,11 @@
                 t("b0d1e205", function (a) {
                     return 'Searching for **"' + a.query + '"**';
                 }),
-                t("f259119d", function (a) {
-                    return 'Searching the web for "' + a.query + '"';
-                }),
                 t("bf970edd", function (a) {
                     return 'Searching 𝕏 for "' + a.query + '"';
+                }),
+                t("ad342369", function (a) {
+                    return 'Searching 𝕏 users for "' + a.query + '"';
                 }),
                 t("g008d475", function (a) {
                     return "Browsing " + a.url;
@@ -1312,6 +1316,9 @@
                 }),
                 t("e99fb7a3", function (a) {
                     return "Searching 𝕏 posts by @" + a.username + ' for **"' + a.query + '"**';
+                }),
+                t("a02d1657", function (a) {
+                    return "Executing code" + a.ttc_tool_usage_card;
                 }),
                 t("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 t("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1345,11 +1352,12 @@
                 t("deaf5b16", "Sake gwadawa"),
                 t("a66d80d0", "Translate post"),
                 t("be9b9fb8", "Translated by Grok"),
+                t("ba10dab6", "Auto-translated by Grok"),
                 t("he9c9634", "An kasa ɗebo fassara"),
                 t("j2198c98", "Hide translated post"),
                 t("d4d35bea", "Translating..."),
-                t("i7ac410e", "Show Original"),
-                t("c67f09e8", "Show Translation"),
+                t("f4f69be8", "Show original"),
+                t("e3097a5c", "Show auto-translated post"),
                 t("e0f81ff3", "Translation:"),
                 t("j2862695", function (a) {
                     return "Fassarawa daga " + a.originLanguage + " daga";
@@ -1734,9 +1742,7 @@
                 t("f5b3dc1e", "Wataƙila wani lokaci"),
                 t("ae0c5fbe", "Kuskuren yayin sauya wanda zai bayar da amsa"),
                 t("bae0cbc0", "Sauya wanda zai iya amsawa"),
-                t("d78131b9", function (a) {
-                    return "Ƙara/cire @" + a.screenName + " daga Jere-jere";
-                }),
+                t("a599bbfa", "Add/remove from Lists"),
                 t("b3b642fc", "Why this post?"),
                 t("fb4ee11c", "Me ya sa wannan talla?"),
                 t("ad50e7d9", function (a) {
@@ -1798,15 +1804,11 @@
                 t("j7bb1a43", function (a) {
                     return "Yi rahoton @" + a.screenName;
                 }),
-                t("hef5960c", "Raba furofayil ta hanyar..."),
+                t("g00b4c55", function (a) {
+                    return "Share @" + a.screenName + " via...";
+                }),
                 t("bb1cbeb6", "Cire tsit"),
                 t("h2f62206", "Ana sa mai amfani tsit"),
-                t("e67b2d65", function (a) {
-                    return "Sa tsit ga @" + a.screenName;
-                }),
-                t("f05597b3", function (a) {
-                    return "Cire tsit ga @" + a.screenName;
-                }),
                 t("h59f52ee", "An yi nasarar sa tsit."),
                 t("eea0cbee", "An yi nasarar cire tsit."),
                 t("i29533b3", function (a) {
@@ -1922,10 +1924,10 @@
                 }),
                 t("jcd5ee8a", "Edit block"),
                 t("a8f09fb8", "Delete block"),
-                t("i89195ea", "Divider"),
-                t("da8ac57c", "Edit Caption"),
-                t("a8fdd09c", "Publish Article");
-            t("d8047cc8", "Buga"),
+                t("i89195ea", "Divider");
+            t("da8ac57c", "Edit Caption"),
+                t("a8fdd09c", "Publish Article"),
+                t("d8047cc8", "Buga"),
                 t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
                 t("ef34d7be", "Audience and reply controls are not editable after an article has been published."),
                 t("e52d4998", "Choose your audience"),
@@ -2978,10 +2980,10 @@
                 }),
                 t("e64de8a9", function (a) {
                     return a.entity + " was removed from your Bookmarks";
-                }),
-                t("d6d9aab6", "Ƙara Alama"),
-                t("bb89cf46", "Cire Alama");
-            t("a739d4ba", "Ƙara Folda mai Alama"),
+                });
+            t("d6d9aab6", "Ƙara Alama"),
+                t("bb89cf46", "Cire Alama"),
+                t("a739d4ba", "Ƙara Folda mai Alama"),
                 t("d5270434", "Fita"),
                 t("ac85c6b2", "Wani kuskure ya auku a yayin loda wannan hoto"),
                 t("b327c12a", "Hoto"),
@@ -3904,10 +3906,10 @@
                 t("fe7a1910", "Send invites"),
                 t("ic3c757e", "Search for users"),
                 t("cd133486", "Gayyaci"),
-                t("f2333850", "Share with people outside of X"),
-                t("cddb8097", "Learn more"),
-                t("f77997b0", "Masu masaukin baki");
-            t("i48f4ed8", "Sifika"),
+                t("f2333850", "Share with people outside of X");
+            t("cddb8097", "Learn more"),
+                t("f77997b0", "Masu masaukin baki"),
+                t("i48f4ed8", "Sifika"),
                 t("a77c8e02", "Mai saurare"),
                 t("bdfa93eb", function (a) {
                     return "Rabawa daga " + a.name;
@@ -4264,6 +4266,7 @@
                     return "Show all (" + a.count + ")";
                 }),
                 t("df601d92", "Relevant Users"),
+                t("a4cfb8a8", "Browsing"),
                 t("d7cb5408", "Relevant Web Pages"),
                 t("ca93f2ee", "This message has been deleted."),
                 t("b8c06820", "Copy text"),
@@ -4927,11 +4930,11 @@
                 t("d9f9dec0", "View Space"),
                 t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time"),
-                t("i0e5bf4c", "Your videos"),
+                t("if2909ba", "Watch Time");
+            t("i0e5bf4c", "Your videos"),
                 t("ed99baea", "Early Beta Access"),
-                t("gf898b70", "Advanced Search");
-            t("d2a43a7a", 'contains both "ai" and "startup"'),
+                t("gf898b70", "Advanced Search"),
+                t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5881,13 +5884,13 @@
                 t("f191a2ba", " Saitunan bincikenka"),
                 t("a068008a", "Folders aren`t loading right now"),
                 t("f075b0e8", "Gyara Folda"),
-                t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama"),
-                t("e41c9b4f", function (a) {
-                    return "Ana dana a " + a.bookmarkFolderName;
-                }),
+                t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama");
+            t("e41c9b4f", function (a) {
+                return "Ana dana a " + a.bookmarkFolderName;
+            }),
                 t("h18f86a4", "Share Folda"),
-                t("f4ea967a", "An share folda");
-            t("b670aa62", "Sunan Folda"),
+                t("f4ea967a", "An share folda"),
+                t("b670aa62", "Sunan Folda"),
                 t("aece5462", "An yi nasarar sabunta sunan folda"),
                 t("e3299b94", "Wata matsala ta faru. Sake gwada sabunta wannan folda a cikin minti ɗaya."),
                 t("c09ea714", "Wata matsala ta faru. Sake gwada share wannan folda a cikin minti ɗaya."),
@@ -6498,7 +6501,7 @@
                 t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 t("hc965308", "Fun"),
                 t("eb78b77e", "Fun Mode"),
-                t("aa8ece10", "Try grok.com"),
+                t("ac164552", "Go to grok.com"),
                 t("gb5fb7d0", "Focus Mode"),
                 t("g5665caa", "Exit Focus Mode"),
                 t("a372681e", "Copy share link"),
@@ -6889,11 +6892,11 @@
                     return a.percentage + "% off a year of Premium";
                 }),
                 t("c924ad84", "Keep videos playing"),
-                t("de750a3c", "Enjoy them even when your phone is locked"),
-                t("he5e87c4", "Boost your replies"),
+                t("de750a3c", "Enjoy them even when your phone is locked");
+            t("he5e87c4", "Boost your replies"),
                 t("g64a60ba", "Get a small prioritization when you reply to posts"),
-                t("a7ee832a", "Fix typos and mistakes, up to 60 minutes");
-            t("fdd77a34", "Create longer posts"),
+                t("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
+                t("fdd77a34", "Create longer posts"),
                 t("j6d26a7a", "Write as much as you’d like to share"),
                 t("c4fd68da", "Customize your experience"),
                 t("c0195168", "Change your app icon and navigation options"),
@@ -6921,8 +6924,6 @@
                 t("c3148608", "Get faster assistance when you need help"),
                 t("b485ca6e", "Highlights tab"),
                 t("d438955e", "Showcase your top posts"),
-                t("f373a352", "Encrypted DMs"),
-                t("g7405aca", "Chat securely with end-to-end encryption"),
                 t("j659fa0c", "The best of Grok 3"),
                 t("ibff5694", "Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 t("i824f4da", "Fewer ads"),
@@ -6991,6 +6992,10 @@
                 t("gd573390", "And everything in Basic..."),
                 t("ef94bbd4", "Get Premium+"),
                 t("dcd830ce", "And everything in Premium..."),
+                t("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                t("f8a50ba7", function (a) {
+                    return "Summer offer ending on " + a.date + ".";
+                }),
                 t("b7dde622", "Happy Thanksgiving! Offer ends in:"),
                 t("i0180ca1", function (a) {
                     return "Until " + a.date + ". Happy Thanksgiving!";
@@ -7869,12 +7874,7 @@
                 }),
                 t("bf809ec0", "Select Affiliates"),
                 t("b719e224", "Babu sakamako"),
-                t("c9938100", "Bincike sakamako"),
-                t("d1a35ec6", "Ƙara asusu"),
-                t("b437adda", "Upgrade to paid"),
-                t("f1f6c88b", function (a) {
-                    return "Accounts (" + a.count + ")";
-                });
+                t("c9938100", "Bincike sakamako");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7913,7 +7913,12 @@
                     u(a, e)
                 );
             }
-            t("b02156b8", "Invitations"),
+            t("d1a35ec6", "Ƙara asusu"),
+                t("b437adda", "Upgrade to paid"),
+                t("f1f6c88b", function (a) {
+                    return "Accounts (" + a.count + ")";
+                }),
+                t("b02156b8", "Invitations"),
                 t("gd67d29b", function (a) {
                     return "Invitations (" + a.count + ")";
                 }),
@@ -8911,11 +8916,11 @@
                     return "Auto (" + a.quality + ")";
                 }),
                 t("a7bf9962", "Download video"),
-                t("ccc97152", "Playback speed"),
-                t("h531ade0", "Video quality"),
+                t("ccc97152", "Playback speed");
+            t("h531ade0", "Video quality"),
                 t("e8b5757c", "0.25x"),
-                t("e7e954de", "0.5x");
-            t("g07ffe66", "0.75x"),
+                t("e7e954de", "0.5x"),
+                t("g07ffe66", "0.75x"),
                 t("d8bede9e", "1x"),
                 t("j41845c8", "1.25x"),
                 t("e9eeed9e", "1.5x"),
@@ -13337,4 +13342,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.9c6cb33a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.b26592ca.js.map

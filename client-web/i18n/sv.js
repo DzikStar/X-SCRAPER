@@ -225,6 +225,11 @@
                 t("f65e7e91", function (e) {
                     return e.percentage + " % rabatt på " + e.tier + " " + e.plan;
                 }),
+                t("b28602eb", function (e) {
+                    return "Get " + e.percentage + "% off this summer";
+                }),
+                t("he77d8e6", "Limited-time offer"),
+                t("adf3410a", "Prenumerera för att komma åt nya funktioner och, om du är behörig, få en del av intäkterna."),
                 t("a84a736e", "Få en kostnadsfri annonskredit"),
                 t("a0713d76", "Uppgradera till Verifierade organisationer så får du en kostnadsfri annonskredit och ett antal verktyg för att få verksamheten att växa."),
                 t("a07e13fc", "Bli Premium-kreatör"),
@@ -260,7 +265,6 @@
                 t("ed534c78", "Bara prenumeranter på X Premium har tillgång till bokmärkesmappar. Uppgradera om du vill gå vidare."),
                 t("ed924940", "Ta bort alla annonser med Premium+"),
                 t("dccdb326", "Enbart prenumeranter på Premium+ slipper annonser. Uppgradera om du vill gå vidare."),
-                t("adf3410a", "Prenumerera för att komma åt nya funktioner och, om du är behörig, få en del av intäkterna."),
                 t("d8661dd4", "Under begränsad tid. Kom åt det bästa på X."),
                 t("fe7fd234", "Testa Premium Basic kostnadsfritt i dag"),
                 t("a2f86dda", "Utnyttja bokmärkesmappar, redigera inlägg och använd anpassade appikoner och mycket annat med Premium Basic."),
@@ -899,10 +903,10 @@
                 t("bf9e181b", "Läs mer"),
                 t("e8e39f95", "Läs mer"),
                 t("e126dd3f", "Läs mer"),
-                t("i821844f", "Läs mer"),
-                t("b0abbb17", "Läs mer"),
-                t("e7e0d88b", "Läs mer");
-            t("i560665f", "Läs mer"),
+                t("i821844f", "Läs mer");
+            t("b0abbb17", "Läs mer"),
+                t("e7e0d88b", "Läs mer"),
+                t("i560665f", "Läs mer"),
                 t("f6e774d9", "Läs mer"),
                 t("h486f755", "Läs mer"),
                 t("bab41dab", "Läs mer"),
@@ -1286,11 +1290,11 @@
                 t("b0d1e205", function (e) {
                     return "Söker efter **" + e.query + "**";
                 }),
-                t("f259119d", function (e) {
-                    return 'Searching the web for "' + e.query + '"';
-                }),
                 t("bf970edd", function (e) {
                     return "Söker på 𝕏 efter " + e.query;
+                }),
+                t("ad342369", function (e) {
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 t("g008d475", function (e) {
                     return "Besöker " + e.url;
@@ -1309,6 +1313,9 @@
                 }),
                 t("e99fb7a3", function (e) {
                     return "Söker 𝕏-inlägg av @" + e.username + " efter **" + e.query + "**";
+                }),
+                t("a02d1657", function (e) {
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 t("ead81122", "Något gick fel. Uppdatera för att återansluta eller försök igen."),
                 t("f808a13a", "Gränsen har överskridits. Försök igen om en liten stund."),
@@ -1342,11 +1349,12 @@
                 t("deaf5b16", "Försök igen"),
                 t("a66d80d0", "Översätt inlägget"),
                 t("be9b9fb8", "Översatt av Grok"),
+                t("ba10dab6", "Auto-translated by Grok"),
                 t("he9c9634", "Det gick inte att hämta översättningen"),
                 t("j2198c98", "Dölj det översatta inlägget"),
                 t("d4d35bea", "Översätter …"),
-                t("i7ac410e", "Visa originalet"),
-                t("c67f09e8", "Visa översättningen"),
+                t("f4f69be8", "Show original"),
+                t("e3097a5c", "Show auto-translated post"),
                 t("e0f81ff3", "Översättning:"),
                 t("j2862695", function (e) {
                     return "Översatt från " + e.originLanguage + " av";
@@ -1731,9 +1739,7 @@
                 t("f5b3dc1e", "Kanske senare"),
                 t("ae0c5fbe", "Det gick inte att ändra vilka som får svara"),
                 t("bae0cbc0", "Ändra vilka som får svara"),
-                t("d78131b9", function (e) {
-                    return "Lägg till/ta bort @" + e.screenName + " från listor";
-                }),
+                t("a599bbfa", "Lägg till/ta bort från listor"),
                 t("b3b642fc", "Varför detta inlägg?"),
                 t("fb4ee11c", "Varför visas denna annons?"),
                 t("ad50e7d9", function (e) {
@@ -1795,15 +1801,11 @@
                 t("j7bb1a43", function (e) {
                     return "Rapportera @" + e.screenName;
                 }),
-                t("hef5960c", "Dela profilen via …"),
+                t("g00b4c55", function (e) {
+                    return "Dela @" + e.screenName + " via …";
+                }),
                 t("bb1cbeb6", "Sluta ignorera"),
                 t("h2f62206", "Ignorerar användaren"),
-                t("e67b2d65", function (e) {
-                    return "Ignorera @" + e.screenName;
-                }),
-                t("f05597b3", function (e) {
-                    return "Sluta ignorera @" + e.screenName;
-                }),
                 t("h59f52ee", "Ignorerad."),
                 t("eea0cbee", "Du slutade ignorera."),
                 t("i29533b3", function (e) {
@@ -1919,10 +1921,10 @@
                 }),
                 t("jcd5ee8a", "Redigera blocket"),
                 t("a8f09fb8", "Radera blocket"),
-                t("i89195ea", "Delare"),
-                t("da8ac57c", "Redigera överskriften"),
-                t("a8fdd09c", "Publicera artikeln");
-            t("d8047cc8", "Publicera"),
+                t("i89195ea", "Delare");
+            t("da8ac57c", "Redigera överskriften"),
+                t("a8fdd09c", "Publicera artikeln"),
+                t("d8047cc8", "Publicera"),
                 t("ff7ddca2", "Din artikel visas som ett inlägg när du har publicerat den. Du hittar den även på fliken Artiklar i din profil."),
                 t("ef34d7be", "Målgrupps- och svarskontroller går inte att redigera efter att en artikel har publicerats."),
                 t("e52d4998", "Välj målgrupp"),
@@ -2975,10 +2977,10 @@
                 }),
                 t("e64de8a9", function (e) {
                     return e.entity + " har tagits bort från dina bokmärken";
-                }),
-                t("d6d9aab6", "Lägg till bokmärke"),
-                t("bb89cf46", "Ta bort bokmärket");
-            t("a739d4ba", "Lägg till i bokmärkesmappen"),
+                });
+            t("d6d9aab6", "Lägg till bokmärke"),
+                t("bb89cf46", "Ta bort bokmärket"),
+                t("a739d4ba", "Lägg till i bokmärkesmappen"),
                 t("d5270434", "Avsluta"),
                 t("ac85c6b2", "Ett fel inträffade när den här bilden skulle läsas in"),
                 t("b327c12a", "Bild"),
@@ -3901,10 +3903,10 @@
                 t("fe7a1910", "Skicka inbjudningar"),
                 t("ic3c757e", "Sök efter användare"),
                 t("cd133486", "Bjud in"),
-                t("f2333850", "Dela med folk utanför X"),
-                t("cddb8097", "Läs mer"),
-                t("f77997b0", "Medvärd");
-            t("i48f4ed8", "Talare"),
+                t("f2333850", "Dela med folk utanför X");
+            t("cddb8097", "Läs mer"),
+                t("f77997b0", "Medvärd"),
+                t("i48f4ed8", "Talare"),
                 t("a77c8e02", "Åhörare"),
                 t("bdfa93eb", function (e) {
                     return "Delades av " + e.name;
@@ -4261,6 +4263,7 @@
                     return "Visa alla (" + e.count + ")";
                 }),
                 t("df601d92", "Relevanta användare"),
+                t("a4cfb8a8", "Browsing"),
                 t("d7cb5408", "Relevanta webbsidor"),
                 t("ca93f2ee", "Detta meddelande har raderats."),
                 t("b8c06820", "Kopiera texten"),
@@ -4924,11 +4927,11 @@
                 t("d9f9dec0", "Visa området"),
                 t("h0c1f37a", "Visa områdesstatistik"),
                 t("e41fffbc", "Den totala tiden som folk har sett på dina videor."),
-                t("if2909ba", "Tittad tid"),
-                t("i0e5bf4c", "Dina videor"),
+                t("if2909ba", "Tittad tid");
+            t("i0e5bf4c", "Dina videor"),
                 t("ed99baea", "Tidig betaåtkomst"),
-                t("gf898b70", "Avancerad sökning");
-            t("d2a43a7a", "innehåller både ”ai” och ”nystartat”"),
+                t("gf898b70", "Avancerad sökning"),
+                t("d2a43a7a", "innehåller både ”ai” och ”nystartat”"),
                 t("a8584698", "nystartat ai-bolag"),
                 t("jb6f9292", "innehåller den exakta frasen ”nystartat ai-bolag”"),
                 t("j8ee77c4", "”nystartat ai-bolag”"),
@@ -5878,13 +5881,13 @@
                 t("f191a2ba", "sökinställningarna"),
                 t("a068008a", "Mappar går inte att läsa in nu"),
                 t("f075b0e8", "Redigera mappen"),
-                t("beba2a0e", "Skapa en ny mapp med bokmärken"),
-                t("e41c9b4f", function (e) {
-                    return "Sparat på " + e.bookmarkFolderName;
-                }),
+                t("beba2a0e", "Skapa en ny mapp med bokmärken");
+            t("e41c9b4f", function (e) {
+                return "Sparat på " + e.bookmarkFolderName;
+            }),
                 t("h18f86a4", "Radera mappen"),
-                t("f4ea967a", "Mappen har raderats");
-            t("b670aa62", "Mappnamn"),
+                t("f4ea967a", "Mappen har raderats"),
+                t("b670aa62", "Mappnamn"),
                 t("aece5462", "Mappnamnet har ändrats"),
                 t("e3299b94", "Något gick fel. Försök uppdatera mappen igen om en stund."),
                 t("c09ea714", "Något gick fel. Försök radera mappen igen om en stund."),
@@ -6492,10 +6495,10 @@
                 t("e5f4eac0", "Ditt innehåll blir lättare att upptäcka. Och du kommer att visas i sökresultat och trender."),
                 t("c7832a72", "Kom i direktkontakt med andra"),
                 t("i1ccd17a", "Skicka direktmeddelanden till folk som inte följer dig utan att ditt meddelande filtreras automatiskt."),
-                t("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                t("f7cf3d36", "Grok är en kostnadsfri AI-assistent som har konstruerats av xAI för maximal sanning och objektivitet. Grok erbjuder realtidssökningar, bildgenerering, trendanalyser och annat."),
                 t("hc965308", "Roligt"),
                 t("eb78b77e", "Roligt läge"),
-                t("aa8ece10", "Testa grok.com"),
+                t("ac164552", "Go to grok.com"),
                 t("gb5fb7d0", "Fokusläge"),
                 t("g5665caa", "Avsluta fokusläget"),
                 t("a372681e", "Kopiera delningslänken"),
@@ -6886,11 +6889,11 @@
                     return e.percentage + " % rabatt på ett år med Premium";
                 }),
                 t("c924ad84", "Håll videor igång"),
-                t("de750a3c", "Ha glädje av dem även när din telefon är låst"),
-                t("he5e87c4", "Boosta dina svar"),
+                t("de750a3c", "Ha glädje av dem även när din telefon är låst");
+            t("he5e87c4", "Boosta dina svar"),
                 t("g64a60ba", "Bli en aning prioriterad när du svarar på inlägg"),
-                t("a7ee832a", "Rätta till slagfel och misstag i upp till en timme");
-            t("fdd77a34", "Skriv längre inlägg"),
+                t("a7ee832a", "Rätta till slagfel och misstag i upp till en timme"),
+                t("fdd77a34", "Skriv längre inlägg"),
                 t("j6d26a7a", "Skriv så mycket som du vill dela med dig av"),
                 t("c4fd68da", "Anpassa tidslinjen"),
                 t("c0195168", "Ändra din appikon och dina navigeringsalternativ"),
@@ -6918,8 +6921,6 @@
                 t("c3148608", "Få hjälp snabbare när du behöver det"),
                 t("b485ca6e", "Fliken Höjdpunkter"),
                 t("d438955e", "Visa upp dina främsta inlägg"),
-                t("f373a352", "Krypterade direktmeddelanden"),
-                t("g7405aca", "Chatta säkert med kryptering från källa till mål"),
                 t("j659fa0c", "Det bästa från Grok 3"),
                 t("ibff5694", "Kom åt de högsta användningsgränserna, DeepSearch och Tänk samt få tidig åtkomst till nya funktioner"),
                 t("i824f4da", "Färre annonser"),
@@ -6988,6 +6989,10 @@
                 t("gd573390", "Lägg till allt i grundversionen …"),
                 t("ef94bbd4", "Skaffa Premium+"),
                 t("dcd830ce", "Lägg till allt i premiumversionen …"),
+                t("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                t("f8a50ba7", function (e) {
+                    return "Summer offer ending on " + e.date + ".";
+                }),
                 t("b7dde622", "Glad thanksgiving! Erbjudandet upphör om"),
                 t("i0180ca1", function (e) {
                     return "Fram till " + e.date + ". Glad thanksgiving!";
@@ -7866,12 +7871,7 @@
                 }),
                 t("bf809ec0", "Välj anknutna konton"),
                 t("b719e224", "Inga resultat"),
-                t("c9938100", "Sökresultat"),
-                t("d1a35ec6", "Lägg till konton"),
-                t("b437adda", "Uppgradera till betalversionen"),
-                t("f1f6c88b", function (e) {
-                    return "Konton (" + e.count + ")";
-                });
+                t("c9938100", "Sökresultat");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7910,7 +7910,12 @@
                     d(e, a)
                 );
             }
-            t("b02156b8", "Inbjudningar"),
+            t("d1a35ec6", "Lägg till konton"),
+                t("b437adda", "Uppgradera till betalversionen"),
+                t("f1f6c88b", function (e) {
+                    return "Konton (" + e.count + ")";
+                }),
+                t("b02156b8", "Inbjudningar"),
                 t("gd67d29b", function (e) {
                     return "Inbjudningar (" + e.count + ")";
                 }),
@@ -8908,11 +8913,11 @@
                     return "Auto (" + e.quality + ")";
                 }),
                 t("a7bf9962", "Hämta videon"),
-                t("ccc97152", "Uppspelningstakt"),
-                t("h531ade0", "Videokvalitet"),
+                t("ccc97152", "Uppspelningstakt");
+            t("h531ade0", "Videokvalitet"),
                 t("e8b5757c", "0,25 ×"),
-                t("e7e954de", "0,5×");
-            t("g07ffe66", "0,75 ×"),
+                t("e7e954de", "0,5×"),
+                t("g07ffe66", "0,75 ×"),
                 t("d8bede9e", "1 ×"),
                 t("j41845c8", "1,25 ×"),
                 t("e9eeed9e", "1,5×"),
@@ -13335,4 +13340,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.68a0982a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.80ad8eda.js.map

@@ -3,7 +3,7 @@
     ["bundle.PaymentsHandoff"],
     {
         625661: (e, t, o) => {
-            o.d(t, { ZP: () => h });
+            o.d(t, { ZP: () => u });
             var r = o(202784),
                 a = o(614983),
                 i = o.n(a),
@@ -15,7 +15,7 @@
             function p(e, t, o) {
                 return e || (!t && o ? "fixed" : void 0);
             }
-            class h extends r.Component {
+            class u extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: n, isLarge: c, leftControl: d, middleControl: h, position: u, rightControl: m, secondaryBar: b, style: g, subtitle: k, title: y, titleDomId: B, titleIconCell: f, titleIconCellSize: w, withBackground: C, withWideContainer: Z } = this.props,
-                        { isModal: x } = this.context,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: n, isLarge: c, leftControl: d, middleControl: u, position: h, rightControl: m, secondaryBar: b, style: g, subtitle: k, title: y, titleDomId: B, titleIconCell: f, titleIconCellSize: w, withBackground: C, withWideContainer: x } = this.props,
+                        { isModal: Z } = this.context,
                         L = i ? d : r.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         E = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!C, x, !!b);
-                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: c, leftControl: L, middleControl: h, position: p(u, x, a), rightControl: m, style: g, subtitle: k, title: y, titleDomId: B, titleIconCell: f, titleIconCellSize: w, withBackground: E, withWideContainer: Z }), b || null);
+                        })(!!C, Z, !!b);
+                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: c, leftControl: L, middleControl: u, position: p(h, Z, a), rightControl: m, style: g, subtitle: k, title: y, titleDomId: B, titleIconCell: f, titleIconCellSize: w, withBackground: E, withWideContainer: x }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -43,10 +43,10 @@
                     return t ? r.createElement(n.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
                 }
             }
-            (h.contextType = d.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (u.contextType = d.Z), (u.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         980407: (e, t, o) => {
-            o.d(t, { Z: () => b, w: () => u });
+            o.d(t, { Z: () => b, w: () => h });
             var r = o(202784),
                 a = o(325686),
                 i = o(108362),
@@ -56,14 +56,14 @@
                 c = o(555079),
                 d = o(625661),
                 p = o(449067),
-                h = o(715601);
-            class u extends r.Component {
+                u = o(715601);
+            class h extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: n, hideBackButton: l, history: s, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: b, rightControl: g, secondaryBar: k, subtitle: y, title: B } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: n, hideBackButton: l, history: s, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: b, rightControl: g, secondaryBar: k, subtitle: y, title: B } = this.props,
                                 { isModal: f } = this.context;
-                            return r.createElement(a.Z, { style: f ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: i, centerTitle: n, fixed: !f, hideBackButton: l, history: s, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: b, ref: e, rightControl: g, secondaryBar: k, style: [f && m.appBarModal, t], subtitle: y, title: B, titleDomId: c.Q_ }));
+                            return r.createElement(a.Z, { style: f ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: i, centerTitle: n, fixed: !f, hideBackButton: l, history: s, isFullWidth: p, isLarge: u, middleControl: h, onBackClick: b, ref: e, rightControl: g, secondaryBar: k, style: [f && m.appBarModal, t], subtitle: y, title: B, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -72,15 +72,15 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: u, title: b, withoutBottomBarMobile: g } = this.props,
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: l, isFullWidth: c, isLarge: d, renderHeader: h, title: b, withoutBottomBarMobile: g } = this.props,
                         { isModal: k } = this.context,
-                        y = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(s.Z, null, r.createElement(p.Z.Configure, { documentTitle: l, headerless: !0, title: b }), r.createElement(a.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, k && m.rootModal] }, !k && y, r.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [m.container, k && m.containerModal, n] }, k ? r.createElement(h.Z, { style: m.viewport }, y, o) : o), t ? r.createElement(a.Z, { style: [m.bottomBarModal, !k && !g && m.bottomBarMobile] }, r.createElement(i.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                        y = h ? h(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return r.createElement(s.Z, null, r.createElement(p.Z.Configure, { documentTitle: l, headerless: !0, title: b }), r.createElement(a.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, k && m.rootModal] }, !k && y, r.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [m.container, k && m.containerModal, n] }, k ? r.createElement(u.Z, { style: m.viewport }, y, o) : o), t ? r.createElement(a.Z, { style: [m.bottomBarModal, !k && !g && m.bottomBarMobile] }, r.createElement(i.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
-            (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = n.Z);
+            (h.defaultProps = { isFullWidth: !1, isLarge: !1 }), (h.contextType = n.Z);
             const m = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: l.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
-                b = u;
+                b = h;
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => d });
@@ -166,12 +166,12 @@
                 c = o(392237),
                 d = o(111677),
                 p = o.n(d),
-                h = o(261214),
-                u = o(760286),
+                u = o(261214),
+                h = o(760286),
                 m = o(980407),
                 b = o(951790);
             const g = { android: p().i8385a2c, ios: p().h201c4c2 },
-                k = { android: { downloadLabel: "Download X for Android" }, ios: { downloadLabel: "Download X for iOS", Icon: h.default } },
+                k = { android: { downloadLabel: "Download X for Android" }, ios: { downloadLabel: "Download X for iOS", Icon: u.default } },
                 y = () => {
                     const e = (0, i.useHistory)(),
                         t = b.Z.getAppStoreURLs("download"),
@@ -189,7 +189,7 @@
                         r.createElement(
                             a.Z,
                             { style: f.content },
-                            r.createElement(u.default, { style: f.illustration }),
+                            r.createElement(h.default, { style: f.illustration }),
                             r.createElement(n.ZP, { size: "title1", weight: "bold" }, o ? (({ platformLabel: e }) => `Download X for ${e} to get access to Money`)({ platformLabel: g[c] }) : "Download the X mobile app to get access to Money"),
                             r.createElement(
                                 a.Z,
@@ -217,19 +217,6 @@
             }
             const l = i.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
-        748138: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
-            var r = o(202784),
-                a = o(890601),
-                i = o(783427),
-                n = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PaymentsHandoff.7085f20a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PaymentsHandoff.0ca5e1ca.js.map

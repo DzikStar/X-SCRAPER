@@ -65,13 +65,13 @@
             });
             var _ = r(731708),
                 E = r(279046),
-                P = r(124964);
-            function Z(e) {
-                return a.createElement(u.Z, { style: x.pillTextContent }, a.createElement(_.ZP, { align: "left", color: "white", numberOfLines: 1, size: "subtext2", style: x.pillTextContent_title }, e.count ? a.createElement(_.ZP, { weight: "bold" }, a.createElement(E.Z.ParticipantsCount, { count: e.count, labelType: "plusCount" })) : null, a.createElement(P.Z, { color: "white" }), e.title));
+                Z = r(124964);
+            function w(e) {
+                return a.createElement(u.Z, { style: x.pillTextContent }, a.createElement(_.ZP, { align: "left", color: "white", numberOfLines: 1, size: "subtext2", style: x.pillTextContent_title }, e.count ? a.createElement(_.ZP, { weight: "bold" }, a.createElement(E.Z.ParticipantsCount, { count: e.count, labelType: "plusCount" })) : null, a.createElement(Z.Z, { color: "white" }), e.title));
             }
             const x = n.default.create((e) => ({ pillTextContent: { flex: 1, marginStart: e.spaces.space4, marginEnd: e.spaces.space8 }, pillTextContent_title: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: "100%", display: "inline-block" } }));
             r(136728);
-            var w = r(400752),
+            var P = r(400752),
                 k = r(107267),
                 S = r(910626);
             const I = Object.freeze({ host: "host", cohost: "cohost", speaker: "speaker", listener: "listener" });
@@ -80,8 +80,8 @@
                 R = r.n(M),
                 T = r(292484),
                 z = r(952793),
-                A = r(479506),
-                D = r(582129),
+                D = r(479506),
+                A = r(582129),
                 V = r(725516),
                 N = r(125363),
                 H = r(390387),
@@ -99,10 +99,10 @@
                     n = (0, N.v9)(H.Qb),
                     s = (0, z.hC)("rweb_live_dock_enabled"),
                     i = (0, T.cm)() && s,
-                    l = (0, w.b9)(D.dq),
+                    l = (0, P.b9)(A.dq),
                     c = (function () {
                         const e = (0, N.I0)(),
-                            t = (0, w.b9)(F.wQ);
+                            t = (0, P.b9)(F.wQ);
                         return a.useCallback(
                             (r, a) => {
                                 t({ videoId: r, isLiveVideo: a }), e(W.bi($.N.EXPANDED));
@@ -110,7 +110,7 @@
                             [e, t],
                         );
                     })(),
-                    d = (0, w.Dv)(F.Tc),
+                    d = (0, P.Dv)(F.Tc),
                     { participants_str: u, user_id: p, user_id_str: m } = e,
                     f = e.live_content.audiospace,
                     h = e.live_content.livevideo,
@@ -121,29 +121,29 @@
                     C = f?.total_participating ?? h?.n_total_watching ?? 0,
                     _ = a.useMemo(() => (f ? "audiospace" : h ? "livevideo" : void 0), [f, h]),
                     E = a.useMemo(() => (u ? u.slice(0, 3) : []), [u]),
-                    P = a.useMemo(() => (f?.social_proof?.length ? f.social_proof[0] : h ? { role: I.host, user_id: p, user_id_str: m } : void 0), [f, h, p, m]);
+                    Z = a.useMemo(() => (f?.social_proof?.length ? f.social_proof[0] : h ? { role: I.host, user_id: p, user_id_str: m } : void 0), [f, h, p, m]);
                 a.useEffect(() => {
                     if (E.length) {
                         const e = [m, ...E];
-                        P && e.push(P.user_id_str), r(L.ZP.fetchManyIfNeeded(E));
+                        Z && e.push(Z.user_id_str), r(L.ZP.fetchManyIfNeeded(E));
                     }
-                }, [r, P, E, m]);
-                const Z = Math.max(0, C - E.length),
+                }, [r, Z, E, m]);
+                const w = Math.max(0, C - E.length),
                     x = (0, N.v9)((e) => L.ZP.selectMany(e, E)),
                     M = a.useMemo(() => (x.length ? x.map((e) => e.profile_image_url_https ?? U) : Array(E.length).fill(U)), [E, x]),
                     R = a.useMemo(() => (x.length && "Square" === x[0].profile_image_shape ? "xSmall" : "infinite"), [x]),
-                    G = (0, N.v9)((e) => (P ? L.ZP.select(e, P?.user_id_str) : void 0)),
+                    G = (0, N.v9)((e) => (Z ? L.ZP.select(e, Z?.user_id_str) : void 0)),
                     K = a.useMemo(() => {
-                        if (P && G) {
-                            if (P.role === I.host) return j.socialProof.isHosting({ name: G.name });
-                            if (P.role === I.cohost) return j.socialProof.isCohosting({ name: G.name });
-                            if (P.role === I.speaker) return j.socialProof.isSpeaking({ name: G.name });
-                            if (P.role === I.listener) return j.socialProof.isListening({ name: G.name });
+                        if (Z && G) {
+                            if (Z.role === I.host) return j.socialProof.isHosting({ name: G.name });
+                            if (Z.role === I.cohost) return j.socialProof.isCohosting({ name: G.name });
+                            if (Z.role === I.speaker) return j.socialProof.isSpeaking({ name: G.name });
+                            if (Z.role === I.listener) return j.socialProof.isListening({ name: G.name });
                         }
-                    }, [P, G]),
+                    }, [Z, G]),
                     q = a.useMemo(() => {
-                        if (P && G && K) return { label: K, role: P.role, user: G };
-                    }, [P, K, G]),
+                        if (Z && G && K) return { label: K, role: Z.role, user: G };
+                    }, [Z, K, G]),
                     Q = (0, N.v9)((e) => L.ZP.select(e, m));
                 let J = "";
                 y ? (J = y) : Q && (f && (J = j.HostsSpace({ hostName: Q.name })), h && (J = j.HostsBroadcast({ hostName: Q.name })));
@@ -153,9 +153,9 @@
                         t = (0, B.Z)(e);
                     Y.push(j.WithParticipants({ listOfPeople: t }));
                 }
-                x.length || Z || Y.push(j.BeFirstJoin);
+                x.length || w || Y.push(j.BeFirstJoin);
                 const X = (0, B.Z)(Y, !0),
-                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? A.Z.ItemType.PERISCOPE_BROADCAST : A.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
+                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? D.Z.ItemType.PERISCOPE_BROADCAST : D.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
                 return {
                     "aria-label": X,
                     borderRadius: R,
@@ -170,7 +170,7 @@
                         },
                         [t, f, i, d, o, b, l, h, c, ee],
                     ),
-                    otherParticipantsCount: Z,
+                    otherParticipantsCount: w,
                     socialProof: q,
                     title: J,
                     type: _,
@@ -195,8 +195,8 @@
                         v(K.start);
                     }, [v]),
                     E = a.useMemo(() => [Q.animatedViewPress, { transform: [{ scale: g }] }], [g]),
-                    P = a.useMemo(() => [{ borderRadius: n.default.theme.borderRadiiPx[c] }, e && { paddingStart: n.default.theme.spaces.space16 }, Q.rootContainer], [c, e]);
-                return a.createElement(i.Z, { onImpression: u }, a.createElement(s.Z, { "aria-label": r, onPress: p, onPressIn: C, onPressOut: _, style: P }, a.createElement(o.Z.View, { style: E }, a.createElement(y, { borderRadius: c, type: h, userAvatarUrls: b }, a.createElement(Z, { count: m, title: f }), a.createElement(d, null), a.createElement(l.L, { size: "space8" })))));
+                    Z = a.useMemo(() => [{ borderRadius: n.default.theme.borderRadiiPx[c] }, e && { paddingStart: n.default.theme.spaces.space16 }, Q.rootContainer], [c, e]);
+                return a.createElement(i.Z, { onImpression: u }, a.createElement(s.Z, { "aria-label": r, onPress: p, onPressIn: C, onPressOut: _, style: Z }, a.createElement(o.Z.View, { style: E }, a.createElement(y, { borderRadius: c, type: h, userAvatarUrls: b }, a.createElement(w, { count: m, title: f }), a.createElement(d, null), a.createElement(l.L, { size: "space8" })))));
             }
             const Q = n.default.create((e) => ({ rootContainer: { display: "flex", flexDirection: "row", alignItems: "center", width: "100%", userSelect: "none" }, animatedViewPress: { width: "100%" } }));
             var J = r(952428),
@@ -279,17 +279,17 @@
                         clearInterval(r);
                     };
                 }),
-                P = (0, f.W)((e, t) => {
+                Z = (0, f.W)((e, t) => {
                     const r = (0, g._h)(e(c.qc).getState());
                     if (!r) return i.Z;
                     const a = `/live_content/${r}`;
                     return (0, d.Cg)({ topic: a, featureSwitches: e(c.f0), onTopic: () => t(_) });
                 }),
-                Z = (0, o.cn)((e) => (e(v), e(v.resolved)));
+                w = (0, o.cn)((e) => (e(v), e(v.resolved)));
             function x() {
-                const e = (0, n.Dv)(Z),
+                const e = (0, n.Dv)(w),
                     t = (0, n.b9)(E);
-                (0, m.N)(P);
+                (0, m.N)(Z);
                 const r = (0, u.mr)();
                 return (
                     a.useEffect(() => {
@@ -330,6 +330,19 @@
             const l = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = i;
         },
+        98440: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var a = r(202784),
+                o = r(890601),
+                n = r(783427),
+                s = r(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const l = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.f377ad6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.ff85d64a.js.map

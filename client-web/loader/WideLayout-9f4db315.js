@@ -49,7 +49,7 @@
                 g = "report",
                 b = "share",
                 y = i().j7bb1a43,
-                D = i().hef5960c,
+                D = i().g00b4c55,
                 w = (0, h.M)((e) => {
                     const { onBlock: t, onClose: o, onMute: a, onRemoveFollower: i, onReportUser: h, onShare: w, onUnblock: k, onUnmute: E, user: I } = e,
                         v = [],
@@ -72,7 +72,7 @@
                                 o(), w();
                             },
                             testID: b,
-                            text: D,
+                            text: D({ screenName: I.screen_name }),
                         });
                     !I.blocking &&
                         v.push({
@@ -386,8 +386,8 @@
                 v = f().de0a4a72,
                 P = f().fc5bfd96,
                 S = n.Z,
-                Z = () => s.createElement(r.Z, null, s.createElement(d.Z, { text: k }), s.createElement(r.Z, { style: M.content }, s.createElement(r.Z, { style: M.bulletRow }, s.createElement(c.ZP, null, s.createElement(_.default, null)), s.createElement(c.ZP, { size: "subtext1" }, E)), s.createElement(r.Z, { style: M.bulletRow }, s.createElement(c.ZP, null, s.createElement(_.default, null)), s.createElement(c.ZP, { size: "subtext1" }, I)), s.createElement(r.Z, { style: M.bulletRow }, s.createElement(c.ZP, null, s.createElement(_.default, null)), s.createElement(c.ZP, { size: "subtext1" }, v)), s.createElement(u.ZP, { link: "/jobs/get-recommendations", size: "small", type: "brandFilled" }, P))),
-                T = ({ recommendation: e, recommendationId: t, recommendationIndex: o }) => {
+                Z = () => s.createElement(r.Z, null, s.createElement(d.Z, { text: k }), s.createElement(r.Z, { style: T.content }, s.createElement(r.Z, { style: T.bulletRow }, s.createElement(c.ZP, null, s.createElement(_.default, null)), s.createElement(c.ZP, { size: "subtext1" }, E)), s.createElement(r.Z, { style: T.bulletRow }, s.createElement(c.ZP, null, s.createElement(_.default, null)), s.createElement(c.ZP, { size: "subtext1" }, I)), s.createElement(r.Z, { style: T.bulletRow }, s.createElement(c.ZP, null, s.createElement(_.default, null)), s.createElement(c.ZP, { size: "subtext1" }, v)), s.createElement(u.ZP, { link: "/jobs/get-recommendations", size: "small", type: "brandFilled" }, P))),
+                M = ({ recommendation: e, recommendationId: t, recommendationIndex: o }) => {
                     const n = (0, m.Ji)(),
                         r = (0, l.useHistory)(),
                         a = i()(y.KM, e),
@@ -401,7 +401,7 @@
                         }, [r, n, t]);
                     return a && d ? s.createElement(b.Z, { actions: [], companyProfile: u, job: d, jobId: t, jobIndex: o, onClick: f, relayId: h, user: c, userSentiment: p, withBottomBorder: !1 }) : null;
                 },
-                M = h.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
+                T = h.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16, gap: e.spaces.space16 }, bulletRow: { flexDirection: "row", gap: e.spaces.space4, alignItems: "center" } })),
                 C = ({ isSidebarModule: e }) => {
                     const t = (0, D.p)(S, {}),
                         o = t?.viewer_v2.user_results.result.matching_profile,
@@ -417,7 +417,7 @@
                                   r.Z,
                                   null,
                                   s.createElement(d.Z, { text: "Recommended jobs" }),
-                                  n.map((e, t) => (e.result ? s.createElement(T, { key: e.rest_id, recommendation: e.result, recommendationId: e.rest_id, recommendationIndex: t }) : null)),
+                                  n.map((e, t) => (e.result ? s.createElement(M, { key: e.rest_id, recommendation: e.result, recommendationId: e.rest_id, recommendationIndex: t }) : null)),
                               )
                             : null,
                     );
@@ -642,8 +642,8 @@
                     return n.createElement(s.Z, { "aria-label": I, role: "complementary" }, n.createElement(d.Z, { text: r ? v : I }), n.createElement(u.Z, { displayMode: h.Z.UserCompact, userIds: o }), a && l && n.createElement(E, { fallbackSlotId: "div-gpt-ad-1740520505566-0", primarySlotId: "div-gpt-ad-1738265577622-0" }), l && n.createElement(c.Z, { link: i, text: P, withBottomRadius: !0, withDarkerInteractiveBackground: e }));
                 });
             var Z = o(967977),
-                T = o(942893),
-                M = o(312771),
+                M = o(942893),
+                T = o(312771),
                 C = o(71620),
                 A = o(973572),
                 L = o(668214),
@@ -679,11 +679,11 @@
                         }),
                         (this._handleImpression = (e) => {
                             const { analytics: t, users: o } = this.props,
-                                n = e && e.map((e) => ({ ...T.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
+                                n = e && e.map((e) => ({ ...M.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
                             t.scribe({ ...j, data: { items: n } }),
                                 o &&
                                     o.map((e) => {
-                                        const o = e ? [T.Z.forUser(e.id_str)] : [];
+                                        const o = e ? [M.Z.forUser(e.id_str)] : [];
                                         e.following ? t.scribe({ element: "followed_user", action: "impression", data: { items: o } }) : e.muting ? t.scribe({ element: "muted_user", action: "impression", data: { items: o } }) : e.blocking && t.scribe({ element: "blocked_user", action: "impression", data: { items: o } });
                                     });
                         });
@@ -698,7 +698,7 @@
                 }
                 render() {
                     const { fetchStatus: e, style: t } = this.props;
-                    return e === M.ZP.FAILED || this._hasEmptySuggestionList() ? null : n.createElement(s.Z, { style: [q.root, t] }, n.createElement(l.Z, { "aria-label": B, fetchStatus: e, render: this._renderContent }));
+                    return e === T.ZP.FAILED || this._hasEmptySuggestionList() ? null : n.createElement(s.Z, { style: [q.root, t] }, n.createElement(l.Z, { "aria-label": B, fetchStatus: e, render: this._renderContent }));
                 }
                 _fetchRecommendations(e) {
                     const { createLocalApiErrorHandler: t, fetchRecommendationsIfNeeded: o, userId: n } = e;
@@ -706,7 +706,7 @@
                 }
                 _hasEmptySuggestionList() {
                     const { fetchStatus: e, recommendations: t } = this.props;
-                    return e === M.ZP.LOADED && 0 === t.length;
+                    return e === T.ZP.LOADED && 0 === t.length;
                 }
             }
             const q = r.default.create((e) => ({ root: { minHeight: "15rem" } })),
@@ -724,14 +724,15 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -820,14 +821,14 @@
                 s = o.n(n),
                 r = o(437358);
             const a = (e, t) => {
-                const { id_str: o, screen_name: n } = e,
-                    a = (0, s().d78131b9)({ screenName: n });
-                return { Icon: r.default, text: a, link: { pathname: "/i/lists/add_member", state: { userId: o } }, onClick: t };
+                const { id_str: o } = e,
+                    n = s().a599bbfa;
+                return { Icon: r.default, text: n, link: { pathname: "/i/lists/add_member", state: { userId: o } }, onClick: t };
             };
         },
         847607: (e, t, o) => {
             "use strict";
-            o.d(t, { Aq: () => u, FK: () => b, GS: () => i, N1: () => h, PY: () => m, X6: () => y, cm: () => l });
+            o.d(t, { FK: () => p, GS: () => i, N1: () => d, X6: () => f, cm: () => l });
             o(202784);
             var n = o(111677),
                 s = o.n(n),
@@ -835,20 +836,18 @@
                 a = o(40904);
             const i = s().hb568af4,
                 l = s().bb1cbeb6,
-                d = (s().h2f62206, s().e67b2d65),
-                c = s().f05597b3,
-                u = (e) => d({ screenName: e }),
-                m = (e) => c({ screenName: e }),
-                h = (e, t, o) => {
-                    const { muting: n, screen_name: s } = e;
-                    return { text: n ? m(s) : u(s), onClick: n ? o : t, Icon: n ? r.default : a.default };
-                },
-                p = s().h59f52ee,
-                f = s().eea0cbee,
-                _ = s().i29533b3,
-                g = s().h129c3c3,
-                b = (e) => (e ? ((e) => _({ screenName: e }))(e) : p),
-                y = (e) => (e ? ((e) => g({ screenName: e }))(e) : f);
+                d =
+                    (s().h2f62206,
+                    (e, t, o) => {
+                        const { muting: n } = e;
+                        return { text: n ? l : i, onClick: n ? o : t, Icon: n ? r.default : a.default };
+                    }),
+                c = s().h59f52ee,
+                u = s().eea0cbee,
+                m = s().i29533b3,
+                h = s().h129c3c3,
+                p = (e) => (e ? ((e) => m({ screenName: e }))(e) : c),
+                f = (e) => (e ? ((e) => h({ screenName: e }))(e) : u);
         },
         417714: (e, t, o) => {
             "use strict";
@@ -1056,7 +1055,7 @@
         },
         994305: (e, t, o) => {
             "use strict";
-            o.d(t, { yY: () => A, UD: () => C, Ic: () => M });
+            o.d(t, { yY: () => A, UD: () => C, Ic: () => T });
             var n = o(360917),
                 s = o.n(n),
                 r = o(506899),
@@ -1116,7 +1115,7 @@
                         case I: {
                             const o = S(t.meta),
                                 n = t.payload && t.payload.entities ? t.payload.entities : { recommendations: s() },
-                                r = (t.payload && t.payload.result ? t.payload.result : T).map((e) => n.recommendations[e]);
+                                r = (t.payload && t.payload.result ? t.payload.result : M).map((e) => n.recommendations[e]);
                             return { ...e, [o]: { ...e[o], fetchStatus: y.ZP.LOADED, recommendations: r } };
                         }
                         default:
@@ -1125,8 +1124,8 @@
                 },
             });
             const Z = [],
-                T = [],
-                M = (e, { displayLocation: t, similarToUserId: o }) => {
+                M = [],
+                T = (e, { displayLocation: t, similarToUserId: o }) => {
                     const n = e[w][S({ displayLocation: t, similarToUserId: o })];
                     return n && n.recommendations ? n.recommendations : Z;
                 },
@@ -1137,7 +1136,7 @@
                 A = (e) => (t, o, n) => {
                     const r = o(),
                         { displayLocation: a, similarToUserId: i } = e,
-                        l = M(r, { displayLocation: a, similarToUserId: i }),
+                        l = T(r, { displayLocation: a, similarToUserId: i }),
                         d = C(r, { displayLocation: a, similarToUserId: i }) === y.ZP.LOADED;
                     return l && d
                         ? Promise.resolve(s())
@@ -1222,4 +1221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-9f4db315.b0704baa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.WideLayout-9f4db315.12165a7a.js.map

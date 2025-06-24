@@ -3,28 +3,28 @@
     ["bundle.TwitterBlue-3db873ec"],
     {
         512923: (e, t, a) => {
-            a.d(t, { WL: () => c, _f: () => o, lO: () => u, oD: () => n });
+            a.d(t, { WL: () => c, _f: () => s, lO: () => u, oD: () => n });
             var i = a(427369),
-                l = a(461904),
-                r = a(553659),
+                r = a(461904),
+                l = a(553659),
                 d = a(391416);
             a(585488);
             const c = d.Z,
-                n = r.Z,
-                u = l.Z,
-                o = i.Z;
+                n = l.Z,
+                u = r.Z,
+                s = i.Z;
         },
         733569: (e, t, a) => {
-            a.d(t, { N3: () => wt, ZP: () => Et, jc: () => jt });
+            a.d(t, { N3: () => vt, ZP: () => _t, jc: () => wt });
             var i = a(202784),
-                l = a(392237),
-                r = a(111677),
-                d = a.n(r),
+                r = a(392237),
+                l = a(111677),
+                d = a.n(l),
                 c = a(468670),
                 n = a(234558),
                 u = a(194661),
-                o = a(168661),
-                s = a(763569),
+                s = a(168661),
+                o = a(763569),
                 f = a(517747),
                 m = a(144251),
                 b = a(748138),
@@ -32,222 +32,222 @@
                 h = a(80361),
                 g = a(266550),
                 v = a(322771),
-                _ = a(492244),
-                w = a(846191),
-                j = a(876048),
-                E = a(412515),
+                w = a(492244),
+                _ = a(846191),
+                j = a(412515),
                 k = a(616894),
-                B = a(376021),
+                E = a(376021),
                 C = a(916092),
-                P = a(839),
-                V = a(520489),
-                y = a(164174),
-                Z = a(593875),
-                F = a(491831),
-                S = a(605879),
-                L = a(70375),
-                A = a(656415),
-                N = a(269541),
-                T = a(671809),
-                O = a(219759),
-                R = a(51959),
-                x = a(165806),
-                H = a(473301),
-                I = a(603044),
-                U = a(757771),
-                G = a(822669),
-                M = a(249202),
-                Y = a(748234),
-                q = a(837835),
-                z = a(951737),
-                W = a(872211),
-                D = a(468573),
-                Q = a(809369);
-            const J = l.default.create((e) => ({ lock: { color: e.colors.gray700, fontSize: e.fontSizes.headline1 } })),
-                K = i.createElement(c.default, { style: J.lock }),
-                X = d().af7286b7,
-                $ = { label: d().f75d1806, targetTier: "BlueVerified" },
-                ee = { label: d().hedf9d7c, targetTier: "BlueVerifiedPlus" },
-                te = { header: d().c924ad84, description: d().de750a3c, emoji: "▶️", icon: i.createElement(n.default, null) },
-                ae = { header: d().he5e87c4, description: d().g64a60ba, emoji: "🚀", icon: i.createElement(u.default, null) },
-                ie = { header: d().fb656858, description: d().a7ee832a, emoji: "✍️", icon: i.createElement(o.default, null) },
-                le = { header: d().fdd77a34, description: d().j6d26a7a, emoji: "📄", icon: i.createElement(s.default, null) },
+                B = a(839),
+                P = a(520489),
+                V = a(164174),
+                y = a(593875),
+                Z = a(491831),
+                F = a(605879),
+                S = a(70375),
+                L = a(656415),
+                T = a(269541),
+                A = a(671809),
+                N = a(219759),
+                I = a(51959),
+                O = a(165806),
+                R = a(473301),
+                U = a(603044),
+                x = a(757771),
+                H = a(822669),
+                G = a(249202),
+                M = a(748234),
+                Y = a(837835),
+                q = a(951737),
+                z = a(872211),
+                W = a(468573),
+                D = a(809369);
+            const Q = r.default.create((e) => ({ lock: { color: e.colors.gray700, fontSize: e.fontSizes.headline1 } })),
+                J = i.createElement(c.default, { style: Q.lock }),
+                K = d().af7286b7,
+                X = { label: d().f75d1806, targetTier: "BlueVerified" },
+                $ = { label: d().hedf9d7c, targetTier: "BlueVerifiedPlus" },
+                ee = { header: d().c924ad84, description: d().de750a3c, emoji: "▶️", icon: i.createElement(n.default, null) },
+                te = { header: d().he5e87c4, description: d().g64a60ba, emoji: "🚀", icon: i.createElement(u.default, null) },
+                ae = { header: d().fb656858, description: d().a7ee832a, emoji: "✍️", icon: i.createElement(s.default, null) },
+                ie = { header: d().fdd77a34, description: d().j6d26a7a, emoji: "📄", icon: i.createElement(o.default, null) },
                 re = { header: d().c4fd68da, description: d().c0195168, emoji: "🎨", icon: i.createElement(f.default, null) },
-                de = { header: d().b6b5dc94, description: d().b06db848, icon: i.createElement(m.default, null), iconColor: "blue500" },
-                ce = { header: d().bee20918, description: d().e3e3a97c, emoji: "💰", icon: i.createElement(b.default, null) },
-                ne = { header: d().f15bc24e, description: d().c4666e1c, emoji: "🤖", icon: i.createElement(p.default, null) },
-                ue = { header: d().he74ae7a, description: d().f5732cd4, emoji: "🤖", icon: i.createElement(p.default, null) },
-                oe = { header: d().bee20918, description: d().e0198956, emoji: "💰", icon: i.createElement(h.default, null) },
+                le = { header: d().b6b5dc94, description: d().b06db848, icon: i.createElement(m.default, null), iconColor: "blue500" },
+                de = { header: d().bee20918, description: d().e3e3a97c, emoji: "💰", icon: i.createElement(b.default, null) },
+                ce = { header: d().f15bc24e, description: d().c4666e1c, emoji: "🤖", icon: i.createElement(p.default, null) },
+                ne = { header: d().he74ae7a, description: d().f5732cd4, emoji: "🤖", icon: i.createElement(p.default, null) },
+                ue = { header: d().bee20918, description: d().e0198956, emoji: "💰", icon: i.createElement(h.default, null) },
                 se = { header: d().iadf78e2, description: d().ee54c3de, emoji: "💾", icon: i.createElement(n.default, null) },
-                fe = { header: d().ae03594c, description: d().e6bb08c0, emoji: "✨", icon: i.createElement(g.default, null) },
-                me = { header: d().bf2a6acc, description: d().c2059276, emoji: "🚀", icon: i.createElement(g.default, null) },
-                be = { header: d().b023ec20, description: d().g337328e, emoji: "🔥", icon: i.createElement(g.default, null) },
-                pe = { header: d().fa006202, description: d().jf389778, emoji: "🔄", icon: i.createElement(n.default, null) },
-                he = { header: d().f2977d80, description: d().j1d3d910, emoji: "📚", icon: i.createElement(v.default, null) },
-                ge = { header: d().f0f48668, description: d().c3148608, emoji: "💬", icon: i.createElement(_.default, null) },
-                ve = { header: d().b485ca6e, description: d().d438955e, emoji: "🌟", icon: i.createElement(w.default, null) },
-                _e = { header: d().f373a352, description: d().g7405aca, emoji: "✉️", icon: i.createElement(j.default, null) },
-                we = { header: d().j659fa0c, icon: i.createElement(E.default, null), emoji: "🤖", subtext: d().ibff5694, description: d().ibff5694 },
-                je = { header: d().i824f4da, description: d().bd17076c, emoji: "🙅‍♂️", icon: i.createElement(k.default, null) },
-                Ee = { header: d().d7a124d8, description: d().cef2cac8, emoji: "🙂", icon: i.createElement(k.default, null) },
-                ke = { header: d().c97920c0, description: d().i4379b18, emoji: "🎥", icon: i.createElement(n.default, null) },
-                Be = { header: d().f94c6bae, description: d().d72055d6, icon: i.createElement(m.default, null), iconColor: "blue500" },
-                Ce = { header: d().f54af178, description: d().c5cd5d42, emoji: "📝", icon: i.createElement(B.default, null) },
-                Pe = { header: d().a47a20d4, description: d().jbdb08cc, emoji: "📈", icon: i.createElement(C.default, null) },
-                Ve = { header: d().deaf7e0a, description: d().fd1a47b4, emoji: "📀", icon: i.createElement(P.default, null) },
-                ye = { header: d().id067c96, description: d().jf991d48, emoji: "🎯", icon: i.createElement(V.default, null) },
-                Ze = { header: d().c244210c, icon: i.createElement(y.default, null), description: d().a90f2e8a },
-                Fe = { header: d().b3e50ef2, description: d().bb1a4e44, emoji: "👨‍👩‍👧", icon: i.createElement(Z.default, null) },
-                Se = { header: d().c429e3ba, description: d().j010228e, icon: i.createElement(F.default, null), iconColor: "magenta500" },
-                Le = d().h0e1730e,
-                Ae = d().c4a37384,
-                Ne = d().cb817dae,
+                oe = { header: d().ae03594c, description: d().e6bb08c0, emoji: "✨", icon: i.createElement(g.default, null) },
+                fe = { header: d().bf2a6acc, description: d().c2059276, emoji: "🚀", icon: i.createElement(g.default, null) },
+                me = { header: d().b023ec20, description: d().g337328e, emoji: "🔥", icon: i.createElement(g.default, null) },
+                be = { header: d().fa006202, description: d().jf389778, emoji: "🔄", icon: i.createElement(n.default, null) },
+                pe = { header: d().f2977d80, description: d().j1d3d910, emoji: "📚", icon: i.createElement(v.default, null) },
+                he = { header: d().f0f48668, description: d().c3148608, emoji: "💬", icon: i.createElement(w.default, null) },
+                ge = { header: d().b485ca6e, description: d().d438955e, emoji: "🌟", icon: i.createElement(_.default, null) },
+                ve = { header: d().j659fa0c, icon: i.createElement(j.default, null), emoji: "🤖", subtext: d().ibff5694, description: d().ibff5694 },
+                we = { header: d().i824f4da, description: d().bd17076c, emoji: "🙅‍♂️", icon: i.createElement(k.default, null) },
+                _e = { header: d().d7a124d8, description: d().cef2cac8, emoji: "🙂", icon: i.createElement(k.default, null) },
+                je = { header: d().c97920c0, description: d().i4379b18, emoji: "🎥", icon: i.createElement(n.default, null) },
+                ke = { header: d().f94c6bae, description: d().d72055d6, icon: i.createElement(m.default, null), iconColor: "blue500" },
+                Ee = { header: d().f54af178, description: d().c5cd5d42, emoji: "📝", icon: i.createElement(E.default, null) },
+                Ce = { header: d().a47a20d4, description: d().jbdb08cc, emoji: "📈", icon: i.createElement(C.default, null) },
+                Be = { header: d().deaf7e0a, description: d().fd1a47b4, emoji: "📀", icon: i.createElement(B.default, null) },
+                Pe = { header: d().id067c96, description: d().jf991d48, emoji: "🎯", icon: i.createElement(P.default, null) },
+                Ve = { header: d().c244210c, icon: i.createElement(V.default, null), description: d().a90f2e8a },
+                ye = { header: d().b3e50ef2, description: d().bb1a4e44, emoji: "👨‍👩‍👧", icon: i.createElement(y.default, null) },
+                Ze = { header: d().c429e3ba, description: d().j010228e, icon: i.createElement(Z.default, null), iconColor: "magenta500" },
+                Fe = d().h0e1730e,
+                Se = d().c4a37384,
+                Le = d().cb817dae,
                 Te = d().jf7f743c,
-                Oe = d().fa006202,
-                Re = d().c0c25b6c,
-                xe = d().ab31c79e,
-                He = d().a8a702ae,
-                Ie = d().d5ab1b50,
+                Ae = d().fa006202,
+                Ne = d().c0c25b6c,
+                Ie = d().ab31c79e,
+                Oe = d().a8a702ae,
+                Re = d().d5ab1b50,
                 Ue = d().ac298984,
-                Ge = d().g20df450,
-                Me = d().h8dfc4de,
-                Ye = d().bee20918,
-                qe = d().bf7614d4,
-                ze = d().c244210c,
-                We = d().deaf7e0a,
-                De = d().c818c60c,
-                Qe = d().gadc9f4a,
-                Je = d().c127c5c2,
-                Ke = d().he74ae7a,
-                Xe = d().c1e0f3c8,
-                $e = d().aac0bbb6,
-                et = d().a6722922,
-                tt = d().ba016532,
-                at = d().a06f8a3e,
-                it = d().h3290872,
-                lt = d().f8321d82,
-                rt = d().ca1180a0,
-                dt = d().b9e16610,
-                ct = d().b1492c6c,
-                nt = (e, t) => ({ ...e, cta: t, locked: !0, icon: K }),
-                ut = [ie, se, re],
-                ot = [le, pe, he, ve, _e, Fe],
-                st = [Le, Ae, Ne, Te, Oe, Re, xe, He],
-                ft = [Ie, Ue, Ge, Me, Ye, qe, ze, We, De],
-                mt = [Qe, Je, Ke, Xe, $e],
-                bt = [Pe, Be, oe],
-                pt = [je, me, ke, Ze, Se, ge],
-                ht = [we, be, Ee, ye, Ce],
-                gt = [nt(Be, $), nt(oe, $), nt(je, $), nt(Pe, $), nt(Se, $), nt(Ze, $), nt(Ve, $)],
-                vt = [nt(we, ee), nt(Ee, ee), nt(be, ee), nt(ye, ee), nt(Ce, ee)],
-                _t = {
-                    refererContent: { tweet_highlight_action_upsell: { title: d().fb5e2c14, subtitle: d().gd1f4cfa }, dm_encrypted_upsell: { title: d().h59250bc, subtitle: null }, "post-composer": { title: d().ed62d546, subtitle: null }, two_factor_authentication: { title: d().ca447200, subtitle: null }, edit_post: { title: d().af2b99ea, subtitle: null }, bookmark_folders: { title: d().ha265914, subtitle: null }, communities: { title: d().gda940ae, subtitle: null }, DismissAd: { title: d().c7e5ac54, subtitle: null }, mute_ad: { title: d().c7e5ac54, subtitle: null }, block_ad: { title: d().c7e5ac54, subtitle: null }, quick_promote: { title: d().e03589ba, subtitle: null }, report_ad: { title: d().c7e5ac54, subtitle: null }, periscope_watch: { title: d().f0f8c82a, subtitle: null }, full_hd_video_upload: { title: d().fecf5aaa, subtitle: null }, video_trimmer: { title: d().c00d2be2, subtitle: null }, grok: { title: d().cd360b86, subtitle: d().d2e1a7a2 }, offline_videos: { title: d().e664abe2, subtitle: d().e595a3e2, features: [ke, pe, se] }, richtext: { title: d().i3c9329a, subtitle: d().cc9def68 }, account_analytics: { title: d().ee87f95e, subtitle: null }, video_download: { title: d().hdef5966, subtitle: null, features: [se] }, background_video: { title: d().e664abe2, subtitle: d().e595a3e2, features: [pe, ke, se] }, fallback: { title: d().c748224a, subtitle: d().ebfc88bc } },
-                    productContent: { PremiumBasic: { header: d().fc785aec, productName: d().j4a7d9a6, features: [fe, ...ut], upsellFeature: { targetTier: "BlueVerified", header: d().f652e9ac, icon: "➕" }, extraFeatures: [{ features: ot }, { label: d().d67e94c0, features: [...gt, ...vt] }] }, BlueVerified: { header: d().j34ad558, productName: d().f75d1806, features: bt, upsellFeature: { targetTier: "BlueVerifiedPlus", header: d().j1d3098c, icon: "➕" }, featureAddOnLabel: "All upgrades from Basic, plus ...", extraFeatures: [{ features: [...pt] }, { label: d().gd573390, features: [...ut, ...ot] }, { label: d().d67e94c0, features: [...vt] }] }, BlueVerifiedPlus: { header: d().ef94bbd4, productName: d().hedf9d7c, features: ht, featureAddOnLabel: "All upgrades from Basic and Premium, plus ...", extraFeatures: [{ label: d().dcd830ce, features: [...bt, ...pt, ...ut, ...ot] }] } },
-                    offerContent: { thanksgiving: { title: X({ percentage: "40" }), subtitle: d().b7dde622, cardTitle: d().f65e7e91, cardSubtitle: d().i0180ca1, wideImageUrl: "https://abs.twimg.com/images/thanksgiving-wide-header-v3.png", narrowImageUrl: "https://abs.twimg.com/images/thanksgiving-mobile-header-v2.png" }, anniversary: { title: X({ percentage: "40" }), subtitle: d().hb9d0e00, cardTitle: d().f65e7e91, cardSubtitle: d().d2b23e0d, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" }, generic: { title: X({ percentage: "40" }), subtitle: d().d8661dd4, cardTitle: d().f65e7e91, cardSubtitle: d().bb4998fb, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" } },
+                xe = d().g20df450,
+                He = d().h8dfc4de,
+                Ge = d().bee20918,
+                Me = d().bf7614d4,
+                Ye = d().c244210c,
+                qe = d().deaf7e0a,
+                ze = d().c818c60c,
+                We = d().gadc9f4a,
+                De = d().c127c5c2,
+                Qe = d().he74ae7a,
+                Je = d().c1e0f3c8,
+                Ke = d().aac0bbb6,
+                Xe = d().a6722922,
+                $e = d().ba016532,
+                et = d().a06f8a3e,
+                tt = d().h3290872,
+                at = d().f8321d82,
+                it = d().ca1180a0,
+                rt = d().b9e16610,
+                lt = d().b1492c6c,
+                dt = (e, t) => ({ ...e, cta: t, locked: !0, icon: J }),
+                ct = [ae, se, re],
+                nt = [ie, be, pe, ge, ye],
+                ut = [Fe, Se, Le, Te, Ae, Ne, Ie, Oe],
+                st = [Re, Ue, xe, He, Ge, Me, Ye, qe, ze],
+                ot = [We, De, Qe, Je, Ke],
+                ft = [Ce, ke, ue],
+                mt = [we, fe, je, Ve, Ze, he],
+                bt = [ve, me, _e, Pe, Ee],
+                pt = [dt(ke, X), dt(ue, X), dt(we, X), dt(Ce, X), dt(Ze, X), dt(Ve, X), dt(Be, X)],
+                ht = [dt(ve, $), dt(_e, $), dt(me, $), dt(Pe, $), dt(Ee, $)],
+                gt = {
+                    refererContent: { tweet_highlight_action_upsell: { title: d().fb5e2c14, subtitle: d().gd1f4cfa }, dm_encrypted_upsell: { title: d().h59250bc, subtitle: null }, "post-composer": { title: d().ed62d546, subtitle: null }, two_factor_authentication: { title: d().ca447200, subtitle: null }, edit_post: { title: d().af2b99ea, subtitle: null }, bookmark_folders: { title: d().ha265914, subtitle: null }, communities: { title: d().gda940ae, subtitle: null }, DismissAd: { title: d().c7e5ac54, subtitle: null }, mute_ad: { title: d().c7e5ac54, subtitle: null }, block_ad: { title: d().c7e5ac54, subtitle: null }, quick_promote: { title: d().e03589ba, subtitle: null }, report_ad: { title: d().c7e5ac54, subtitle: null }, periscope_watch: { title: d().f0f8c82a, subtitle: null }, full_hd_video_upload: { title: d().fecf5aaa, subtitle: null }, video_trimmer: { title: d().c00d2be2, subtitle: null }, grok: { title: d().cd360b86, subtitle: d().d2e1a7a2 }, offline_videos: { title: d().e664abe2, subtitle: d().e595a3e2, features: [je, be, se] }, richtext: { title: d().i3c9329a, subtitle: d().cc9def68 }, account_analytics: { title: d().ee87f95e, subtitle: null }, video_download: { title: d().hdef5966, subtitle: null, features: [se] }, background_video: { title: d().e664abe2, subtitle: d().e595a3e2, features: [be, je, se] }, fallback: { title: d().c748224a, subtitle: d().ebfc88bc } },
+                    productContent: { PremiumBasic: { header: d().fc785aec, productName: d().j4a7d9a6, features: [oe, ...ct], upsellFeature: { targetTier: "BlueVerified", header: d().f652e9ac, icon: "➕" }, extraFeatures: [{ features: nt }, { label: d().d67e94c0, features: [...pt, ...ht] }] }, BlueVerified: { header: d().j34ad558, productName: d().f75d1806, features: ft, upsellFeature: { targetTier: "BlueVerifiedPlus", header: d().j1d3098c, icon: "➕" }, featureAddOnLabel: "All upgrades from Basic, plus ...", extraFeatures: [{ features: [...mt] }, { label: d().gd573390, features: [...ct, ...nt] }, { label: d().d67e94c0, features: [...ht] }] }, BlueVerifiedPlus: { header: d().ef94bbd4, productName: d().hedf9d7c, features: bt, featureAddOnLabel: "All upgrades from Basic and Premium, plus ...", extraFeatures: [{ label: d().dcd830ce, features: [...ft, ...mt, ...ct, ...nt] }] } },
+                    offerContent: { summer: { title: K({ percentage: "30" }), subtitle: d().dde0dbe0, cardTitle: d().f65e7e91, cardSubtitle: d().f8a50ba7, wideImageUrl: "https://abs.twimg.com/images/thanksgiving-wide-header-v3.png", narrowImageUrl: "https://abs.twimg.com/images/thanksgiving-mobile-header-v2.png" }, thanksgiving: { title: K({ percentage: "40" }), subtitle: d().b7dde622, cardTitle: d().f65e7e91, cardSubtitle: d().i0180ca1, wideImageUrl: "https://abs.twimg.com/images/thanksgiving-wide-header-v3.png", narrowImageUrl: "https://abs.twimg.com/images/thanksgiving-mobile-header-v2.png" }, anniversary: { title: K({ percentage: "40" }), subtitle: d().hb9d0e00, cardTitle: d().f65e7e91, cardSubtitle: d().d2b23e0d, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" }, generic: { title: K({ percentage: "40" }), subtitle: d().d8661dd4, cardTitle: d().f65e7e91, cardSubtitle: d().bb4998fb, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" } },
                 },
-                wt = {
+                vt = {
                     refererContent: {},
                     productContent: {
-                        PremiumBasic: { header: d().fc785aec, productName: d().j4a7d9a6, features: [te, ae, ie, le, re], allFeatureHeaders: st },
+                        PremiumBasic: { header: d().fc785aec, productName: d().j4a7d9a6, features: [ee, te, ae, ie, re], allFeatureHeaders: ut },
                         BlueVerified: {
                             header: d().j34ad558,
                             productName: d().f75d1806,
-                            features: [de, ce, ne, te, ie, re],
+                            features: [le, de, ce, ee, ae, re],
                             featureAddOnLabel: d().c0847ebc,
                             FeatureGraphics: [
-                                { id: "adsRemoved", image: { dark: S, light: L }, label: et },
-                                { id: "boostedReplies", image: { dark: A, light: N }, label: tt, level: rt },
+                                { id: "adsRemoved", image: { dark: F, light: S }, label: Xe },
+                                { id: "boostedReplies", image: { dark: L, light: T }, label: $e, level: it },
                             ],
-                            allFeatureHeaders: ft,
+                            allFeatureHeaders: st,
                         },
                         BlueVerifiedPlus: {
                             header: d().ef94bbd4,
                             productName: d().hedf9d7c,
-                            features: [de, ce, ue, te, ie, re],
+                            features: [le, de, ne, ee, ae, re],
                             FeatureGraphics: [
-                                { id: "adsRemoved", image: { dark: T, light: O }, label: et, level: lt },
-                                { id: "boostedReplies", image: { dark: R, light: x }, label: tt, level: dt },
-                                { id: "grok", image: { dark: H, light: I }, label: at, level: ct },
+                                { id: "adsRemoved", image: { dark: A, light: N }, label: Xe, level: at },
+                                { id: "boostedReplies", image: { dark: I, light: O }, label: $e, level: rt },
+                                { id: "grok", image: { dark: R, light: U }, label: et, level: lt },
                             ],
                             featureAddOnLabel: d().ed672bfa,
-                            allFeatureHeaders: mt,
+                            allFeatureHeaders: ot,
                         },
                     },
                     offerContent: {},
                 },
-                jt = {
+                wt = {
                     refererContent: { fallback: { title: d().db63fa1c, subtitle: d().b128c6bc } },
                     productContent: {
-                        PremiumBasic: { header: d().fc785aec, productName: d().j4a7d9a6, features: [te, ae, ie, le, re], allFeatureHeaders: st },
+                        PremiumBasic: { header: d().fc785aec, productName: d().j4a7d9a6, features: [ee, te, ae, ie, re], allFeatureHeaders: ut },
                         BlueVerified: {
                             header: d().j34ad558,
                             productName: d().f75d1806,
-                            features: [ce, ne, te, ie, re],
+                            features: [de, ce, ee, ae, re],
                             featureAddOnLabel: d().c0847ebc,
                             FeatureGraphics: [
-                                { id: "adsRemoved", image: { dark: M, light: Y }, label: et },
-                                { id: "boostedReplies", image: { dark: D, light: Q }, label: tt, level: rt },
-                                { id: "verified", image: {}, label: it },
+                                { id: "adsRemoved", image: { dark: G, light: M }, label: Xe },
+                                { id: "boostedReplies", image: { dark: W, light: D }, label: $e, level: it },
+                                { id: "verified", image: {}, label: tt },
                             ],
-                            allFeatureHeaders: ft,
+                            allFeatureHeaders: st,
                         },
                         BlueVerifiedPlus: {
                             header: d().ef94bbd4,
                             productName: d().hedf9d7c,
-                            features: [de, ce, ue, te, ie, re],
+                            features: [le, de, ne, ee, ae, re],
                             FeatureGraphics: [
-                                { id: "adsRemoved", image: { dark: q, light: q }, label: et, level: lt },
-                                { id: "boostedReplies", image: { dark: z, light: W }, label: tt, level: dt },
-                                { id: "grok", image: { dark: U, light: G }, label: at, level: ct },
+                                { id: "adsRemoved", image: { dark: Y, light: Y }, label: Xe, level: at },
+                                { id: "boostedReplies", image: { dark: q, light: z }, label: $e, level: rt },
+                                { id: "grok", image: { dark: x, light: H }, label: et, level: lt },
                             ],
                             featureAddOnLabel: d().ed672bfa,
-                            allFeatureHeaders: mt,
+                            allFeatureHeaders: ot,
                         },
                     },
                     offerContent: {},
                 },
-                Et = _t;
+                _t = gt;
         },
         367664: (e, t, a) => {
             a.d(t, { Z: () => d });
             var i = a(107267),
-                l = a(443781),
-                r = a(337394);
+                r = a(443781),
+                l = a(337394);
             const d = (e) => {
                 const t = (0, i.useLocation)(),
-                    { featureSwitches: a } = (0, l.QZ)();
+                    { featureSwitches: a } = (0, r.QZ)();
                 if (e) return e.chargeInterval;
                 let d;
                 switch (a.getStringValue("subscriptions_premium_tiers_default_interval", "Year")) {
                     case "Year":
                     default:
-                        d = r.rv.Year;
+                        d = l.rv.Year;
                         break;
                     case "Month":
-                        d = r.rv.Month;
+                        d = l.rv.Month;
                 }
                 switch (t.state?.plan || t.query?.plan) {
                     case "annual":
-                        return r.rv.Year;
+                        return l.rv.Year;
                     case "monthly":
-                        return r.rv.Month;
+                        return l.rv.Month;
                     default:
                         return d;
                 }
             };
         },
         968831: (e, t, a) => {
-            a.d(t, { Z: () => r });
+            a.d(t, { Z: () => l });
             var i = a(202784),
-                l = a(952793);
-            const r = ({ content: e }) => {
-                const t = (0, l.wW)("premium_webview_paywall_offer_variant");
+                r = a(952793);
+            const l = ({ content: e }) => {
+                const t = (0, r.wW)("premium_webview_paywall_offer_variant");
                 return i.useMemo(() => {
                     switch (t) {
                         case "anniversary":
                             return e.localContent.offerContent.anniversary;
                         case "thanksgiving":
                             return e.localContent.offerContent.thanksgiving;
+                        case "summer":
+                            return e.localContent.offerContent.summer;
                         default:
                             return e.localContent.offerContent.generic;
                     }
@@ -257,17 +257,17 @@
         347561: (e, t, a) => {
             a.d(t, { Z: () => c });
             var i = a(202784),
-                l = a(323265),
-                r = a(806859);
+                r = a(323265),
+                l = a(806859);
             const d = "premium-signup-webview-event-handler",
                 c = () => {
                     const [e, t] = i.useState(),
                         [a, c] = i.useState();
                     return (
                         i.useEffect(() => {
-                            if (l.ZP.isTwitterApp()) {
+                            if (r.ZP.isTwitterApp()) {
                                 const e = (e) => {
-                                    if (e.detail && e.detail.message && "updated-paywall-state" === e.detail.message) e.detail.data && (t((0, r.Z)(e.detail.data)), c(e.detail.data));
+                                    if (e.detail && e.detail.message && "updated-paywall-state" === e.detail.message) e.detail.data && (t((0, l.Z)(e.detail.data)), c(e.detail.data));
                                 };
                                 return window.addEventListener(d, e), () => window.removeEventListener(d, e);
                             }
@@ -277,31 +277,31 @@
                 };
         },
         19578: (e, t, a) => {
-            a.d(t, { P: () => l, Z: () => r });
+            a.d(t, { P: () => r, Z: () => l });
             var i = a(202784);
-            const l = i.createContext(),
-                r = () => i.useContext(l);
+            const r = i.createContext(),
+                l = () => i.useContext(r);
         },
         573540: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => _ });
+            a.r(t), a.d(t, { default: () => w });
             var i = a(807896),
-                l = a(202784),
-                r = a(107267),
+                r = a(202784),
+                l = a(107267),
                 d = a(323265),
                 c = a(782826),
                 n = a(293115),
                 u = a(725516),
-                o = a(535338),
-                s = a(733569),
+                s = a(535338),
+                o = a(733569),
                 f = a(512923);
             const m = () => {
-                const e = (0, r.useLocation)(),
+                const e = (0, l.useLocation)(),
                     t = (0, c.d)(e);
-                return { apiContent: (0, o.p)(f._f, { referringPage: t }).blue_marketing_page_config, localContent: s.ZP };
+                return { apiContent: (0, s.p)(f._f, { referringPage: t }).blue_marketing_page_config, localContent: o.ZP };
             };
             var b = a(443781);
             const p = (e) => {
-                const t = (0, r.useLocation)(),
+                const t = (0, l.useLocation)(),
                     { featureSwitches: a } = (0, b.QZ)();
                 if (e && 1 === e.length && e[0] && e[0].product_category) return e[0].product_category;
                 let i;
@@ -331,24 +331,24 @@
                 g = a(320479);
             const v = (e) => {
                     const t = (0, u.z)(),
-                        a = (0, r.useHistory)(),
-                        o = (0, r.useLocation)(),
-                        s = d.ZP.isWebView(),
-                        f = (0, c.G3)(o),
-                        b = l.useMemo(() => a.location.pathname.includes("premium_tier_switch"), [a]),
+                        a = (0, l.useHistory)(),
+                        s = (0, l.useLocation)(),
+                        o = d.ZP.isWebView(),
+                        f = (0, c.G3)(s),
+                        b = r.useMemo(() => a.location.pathname.includes("premium_tier_switch"), [a]),
                         v = m(),
-                        _ = p(v.apiContent?.products),
-                        [w, j] = l.useState(_),
-                        E = s ? "subscriptions_webview" : "subscriptions",
-                        k = b ? "tier_switch" : "marketing";
-                    l.useEffect(() => {
-                        t.scribe({ page: E, section: k, action: "impression", data: { referer: f, referring_page: f } });
-                    }, [t, b, f, E, s, k]);
-                    const B = { content: v, selectedProduct: w, setSelectedProduct: j, referringPage: f };
-                    return l.createElement(n.nO, { namespace: { page: E, section: k } }, s && !b ? l.createElement(g.Z, B) : l.createElement(h.Z, (0, i.Z)({}, B, { isTierSwitching: b })));
+                        w = p(v.apiContent?.products),
+                        [_, j] = r.useState(w),
+                        k = o ? "subscriptions_webview" : "subscriptions",
+                        E = b ? "tier_switch" : "marketing";
+                    r.useEffect(() => {
+                        t.scribe({ page: k, section: E, action: "impression", data: { referer: f, referring_page: f } });
+                    }, [t, b, f, k, o, E]);
+                    const C = { content: v, selectedProduct: _, setSelectedProduct: j, referringPage: f };
+                    return r.createElement(n.nO, { namespace: { page: k, section: E } }, o && !b ? r.createElement(g.Z, C) : r.createElement(h.Z, (0, i.Z)({}, C, { isTierSwitching: b })));
                 },
-                _ = l.memo(v);
+                w = r.memo(v);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-3db873ec.15da832a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-3db873ec.114f969a.js.map
