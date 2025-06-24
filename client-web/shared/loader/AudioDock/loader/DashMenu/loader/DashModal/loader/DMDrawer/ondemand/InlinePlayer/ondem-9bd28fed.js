@@ -1,350 +1,775 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed", "icons/IconBirdwatchFlagStroke-js", "icons/IconCameraVideo-js", "icons/IconClipStroke-js", "icons/IconClosedcaptioningNone-js", "icons/IconFeedback-js", "icons/IconFlask-js", "icons/IconGovernmentFlag-js", "icons/IconPencilStroke-js", "icons/IconSkipForward-js", "icons/IconStarRising-js"],
+    ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed", "icons/IconChevronDownNoMargin-js", "icons/IconPlus-js"],
     {
-        796684: (e, t, r) => {
-            r.d(t, { Z: () => h });
-            var a = r(202784),
-                n = r(325686),
-                l = r(913973),
-                o = r(516951),
-                i = r(731708),
-                c = r(454740),
-                s = r(58881),
-                d = r(530732),
-                u = r(392237);
-            const h = (e) => {
-                    const { "aria-label": t, "aria-posinset": r, "aria-setsize": h, checked: v, containerStyle: p, decoration: b, description: y, disabled: f, label: Z, name: w, onChange: E, testID: C } = e,
-                        z = "string" == typeof Z ? a.createElement(i.ZP, { weight: "bold" }, Z) : Z,
-                        k = "string" == typeof y,
-                        S = y ? (k ? a.createElement(i.ZP, { color: "gray700", style: c.W.description }, y) : a.createElement(n.Z, { style: g.descriptionComponent }, y)) : null,
-                        M = s.Z.generate({ backgroundColor: u.default.theme.colors.transparent, color: u.default.theme.colors.primary, customHoverBackgroundColor: u.default.theme.colors.transparent, customPressedBackgroundColor: u.default.theme.colors.transparent }),
-                        D = s.Z.generate({ backgroundColor: u.default.theme.colors.transparent, color: v ? u.default.theme.colors.primary : u.default.theme.colors.gray700, withFocusWithinFocusRing: !0 });
-                    return a.createElement(
-                        a.Fragment,
+        433460: (e, t, i) => {
+            i.d(t, { Z: () => h });
+            var n = i(807896),
+                r = i(202784),
+                a = i(325686),
+                o = i(111677),
+                s = i.n(o),
+                l = i(404971),
+                c = i(868634),
+                d = i(336373),
+                u = i(181054),
+                p = i(392237),
+                m = i(823161);
+            const h = function (e) {
+                const t = d.Z.useAnalytics(),
+                    [i, a] = r.useState(),
+                    o = !!(i && i > 70),
+                    { "aria-label": s, presenceRingType: l, spaceId: c, ...p } = e,
+                    h =
+                        s ||
+                        (function (e, t) {
+                            switch (e) {
+                                case "audiospace":
+                                    return y.activeAudioSpace({ screenName: t });
+                                case "livevideo":
+                                    return y.activeLiveVideo({ screenName: t });
+                                default:
+                                    return;
+                            }
+                        })(l, e.screenName);
+                r.useEffect(() => {
+                    switch (l) {
+                        case "audiospace":
+                            t.scribe({ action: "impression", element: "audiospace_ring" });
+                            break;
+                        case "livevideo":
+                            t.scribe({ action: "impression", element: "livevideo_ring" });
+                    }
+                }, [t, l]);
+                const f = r.useCallback((e) => r.createElement(u.Z.Default, (0, n.Z)({}, e, { type: l })), [l]);
+                return r.createElement(
+                    m.default,
+                    (0, n.Z)({}, p, {
+                        BorderComponent: f,
+                        "aria-label": h,
+                        avatarRef: function (e) {
+                            if (e) {
+                                const t = e.getBoundingClientRect();
+                                t.width !== i && a(t.width);
+                            }
+                        },
+                        borderWidth: o ? "large" : "medium",
+                        decoration: r.createElement(g, { isWide: o, type: l }),
+                        gapWidth: o ? "space4" : "space2",
+                        onClick: function () {
+                            switch (l) {
+                                case "audiospace":
+                                    t.scribe({ action: "click", element: "audiospace_ring" });
+                                    break;
+                                case "livevideo":
+                                    t.scribe({ action: "click", element: "livevideo_ring" });
+                            }
+                        },
+                        withLink: !0,
+                    }),
+                );
+            };
+            function g(e) {
+                switch (e.type) {
+                    case "audiospace":
+                    case "livevideo":
+                        return r.createElement(f, e);
+                    default:
+                        return null;
+                }
+            }
+            function f(e) {
+                return "livevideo" === e.type ? r.createElement(c.ZP, { fontSize: e.isWide ? "subtext2" : "subtext3", style: [b.liveVideoLabelContainer, b.borderNarrow, e.isWide ? b.liveVideoLabel : b.liveVideoLabelNarrow], type: "live" }) : r.createElement(a.Z, { style: [b.root, e.isWide ? b.rootWide : b.rootNarrow] }, r.createElement(u.Z.Default, { style: [b.spaceGradient, e.isWide ? b.borderWide : b.borderNarrow] }, r.createElement(l.default, { style: b.spaceIcon })));
+            }
+            const b = p.default.create((e) => {
+                    const t = e.spacesPx.space16 + e.spacesPx.space2,
+                        i = "100%",
+                        n = e.spacesPx.space4,
+                        r = e.spacesPx.space2;
+                    return { root: { borderRadius: e.borderRadii.infinite, bottom: 0, end: 0, height: "30%", minHeight: t, minWidth: t, pointerEvents: "none", position: "absolute", width: "30%" }, liveVideoLabelContainer: { maxWidth: "120%" }, liveVideoLabel: { borderColor: e.colors.cellBackground, bottom: 0, start: "50%", position: "absolute", transform: [{ translateX: "-50%" }, { translateY: "25%" }] }, liveVideoLabelNarrow: { borderColor: e.colors.cellBackground, bottom: 0, start: "50%", position: "absolute", transform: [{ translateX: "-50%" }, { translateY: "30%" }], paddingHorizontal: e.spaces.space2, paddingVertical: 0 }, rootWide: { end: -1 * n, bottom: -1 * n }, rootNarrow: { end: -1 * r, bottom: -1 * r }, borderWide: { borderWidth: n }, borderNarrow: { borderWidth: r }, spaceGradient: { justifyContent: "center", width: i, height: i, borderRadius: e.borderRadii.infinite, borderColor: e.colors.cellBackground }, spaceIcon: { padding: e.spaces.space2, color: e.colors.white } };
+                }),
+                y = { withoutUsernameFallback: s().b3688156, activeAudioSpace: s().c0eb8825, activeLiveVideo: s().d068dc6d };
+        },
+        238406: (e, t, i) => {
+            i.d(t, { Z: () => l });
+            var n = i(202784),
+                r = i(731708),
+                a = i(354149),
+                o = i(310452),
+                s = i(720283);
+            const l = ({ animateIn: e, description: t, entities: i, isConcise: l, style: c, testID: d, userId: u, withheldDescription: p, withheldEntities: m }) => {
+                const { description: h, entities: g } = (0, s.H)({ description: t, entities: i, withheldDescription: p, withheldEntities: m }),
+                    f = o.ZP.descriptionTextParts(h, g);
+                return f.length
+                    ? n.createElement(
+                          r.ZP,
+                          { dir: "auto", numberOfLines: l ? 2 : void 0, style: c, testID: d },
+                          f.map((t, i) => n.createElement(a.ZP, { animateIn: e, key: `user_${u}_textpart_${i}`, linkify: !0, part: t })),
+                      )
+                    : null;
+            };
+        },
+        720283: (e, t, i) => {
+            i.d(t, { H: () => n });
+            const n = ({ description: e, entities: t, withheldDescription: i, withheldEntities: n }) => (i ? { description: i, entities: n } : { description: e, entities: t });
+        },
+        81400: (e, t, i) => {
+            i.d(t, { Z: () => s });
+            i(136728);
+            var n = i(803224);
+            const r = (e) => {
+                    if (0 === e.length) return null;
+                    const t = e[0],
+                        { playbackState: i } = t.playerState;
+                    if (i === n.q.FINISHED) {
+                        const t = e.splice(0, 1)[0];
+                        e.push(t);
+                    }
+                    return e[0];
+                },
+                a = { roundRobin: r },
+                o = { autoplaySelectionPolicy: r, minimumVisibilityForAutoplay: 0.25 };
+            class s {
+                constructor(e = o) {
+                    this._playerQueue = [];
+                    const { autoplaySelectionPolicy: t, minimumVisibilityForAutoplay: i } = e;
+                    (this._autoplaySelectionPolicy = t), (this._minimumVisibilityForAutoplay = i);
+                }
+                isAutoplayGroupEligibleForAutoplay() {
+                    return this._playerQueue.filter((e) => !e.playerState.placement || e.playerState.placement.visibleFraction() >= this._minimumVisibilityForAutoplay).length === this._playerQueue.length;
+                }
+                registerAutoplayGroupPlayer(e, t) {
+                    let i = !1;
+                    if (void 0 !== t) {
+                        const n = this._playerQueue.findIndex((e) => void 0 !== e.mediaIndex && e.mediaIndex > t);
+                        n >= 0 && (this._playerQueue.splice(n, 0, { playerState: e, mediaIndex: t }), (i = !0));
+                    }
+                    i || this._playerQueue.push({ playerState: e, mediaIndex: t });
+                }
+                signalGroupAutoplayRequest() {
+                    const e = this._autoplaySelectionPolicy(this._playerQueue);
+                    return e ? e.playerState : null;
+                }
+                signalPlaybackComplete(e) {
+                    if (!e) {
+                        const e = this.signalGroupAutoplayRequest();
+                        e && (e.commandHandlers.onAutoPlayRequest(), (e.playbackState = n.q.AUTO_PLAYING));
+                    }
+                }
+                unregisterAutoplayGroupPlayer(e) {
+                    const t = this._playerQueue.findIndex((t) => t.playerState === e);
+                    this._playerQueue.splice(t, 1);
+                }
+            }
+            s.policies = a;
+        },
+        794294: (e, t, i) => {
+            i.d(t, { Z: () => n });
+            const n = i(392237).default.create((e) => ({ transitionTransform: { transitionProperty: "transform", transitionDuration: "400ms", transitionTimingFunction: "cubic-bezier(0.215, 0.610, 0.355, 1.000)" } }));
+        },
+        707816: (e, t, i) => {
+            i.d(t, { EO: () => n, M8: () => a, TN: () => r });
+            const n = () => (Math.random() > 0.5 ? 1 : -1);
+            function r(e = 1, t = 0) {
+                return Math.random() * (e - t) + t;
+            }
+            const a = (e) => ({ width: e, height: e });
+        },
+        421158: (e, t, i) => {
+            i.d(t, { Z: () => a });
+            var n = i(202784),
+                r = i(803224);
+            const a = n.createContext({ playbackPriority: r.W.NORMAL });
+        },
+        425474: (e, t, i) => {
+            i.d(t, { Z: () => x });
+            var n = i(807896),
+                r = (i(571372), i(202784)),
+                a = i(325686),
+                o = i(111677),
+                s = i.n(o),
+                l = i(38502),
+                c = i(498844),
+                d = i(83515),
+                u = i(926628),
+                p = i(520913),
+                m = i(643442),
+                h = i(466445),
+                g = i(461756),
+                f = i(731708),
+                b = i(682474),
+                y = i(384153),
+                v = i(483677),
+                w = i(530732),
+                k = i(392237),
+                E = i(794215),
+                S = i(823161),
+                Z = i(272594),
+                C = i(586035);
+            function x(e) {
+                const [t, i] = r.useState(null);
+                const o =
+                    ((s = e.onPress),
+                    y.Z.selectiveClickHandler((e) => {
+                        "function" == typeof s && s();
+                    }));
+                var s;
+                const l = e.withStraightBorders ? null : D.radius;
+                return r.createElement(
+                    w.Z,
+                    {
+                        "aria-label": T.voiceTweet,
+                        link: e.link,
+                        onLayout: function ({ nativeEvent: e }) {
+                            const { width: t } = e.layout,
+                                n = t < _.largeWidthBreakpoint;
+                            i(n);
+                        },
+                        onPress: o,
+                        role: "button",
+                        style: [D.interactiveViewRoot, l],
+                    },
+                    r.createElement(a.Z, { style: l }, r.createElement(b.Z, { ratio: k.default.theme.aspectRatios.landscape }, null === t ? null : r.createElement(P, (0, n.Z)({}, e, { isNarrow: t })))),
+                );
+            }
+            function P(e) {
+                const { captionsState: t, isNarrow: i, tweet: n, withStraightBorders: o } = e,
+                    [s, b] = r.useState(1);
+                if (!C.B(n) || !n.voiceInfo) throw new Error("VoiceMedia tweet prop must have voiceInfo");
+                const y = n.voiceInfo,
+                    P = e.onMuteToggle,
+                    { isMuted: M, isPlaying: R } = e;
+                let A = k.default.theme.colors.primary;
+                const B = n.user.profile_image_extensions_media_color?.palette;
+                if (B) {
+                    const e = v.Z.get(B);
+                    e && (A = I(e.rgb));
+                }
+                const L = e.durationMs || x.getVoiceTweetDuration(n),
+                    V = e.progressMs || 0,
+                    z = Math.max(0, L - V);
+                let W = 0;
+                if (R) {
+                    const e = y.audiowaveValues;
+                    if (Array.isArray(e)) {
+                        W = e[Math.floor(z) % e.length] / 100;
+                    }
+                }
+                const H = i ? _.mobile : _.desktop,
+                    N = i ? "subtext2" : "body",
+                    F = [D.container, o ? null : D.radius, i ? D.containerMobile : D.containerDesktop],
+                    j = [{ height: k.default.theme.fontSizesPx[N] }, D.lighter, D.white],
+                    q = i ? "subtext3" : "body",
+                    G = [{ height: H.captionsIcon }, D.white],
+                    $ = [D.playbackToggle, { width: H.playbackToggle, height: H.playbackToggle, borderRadius: H.playbackToggle }],
+                    O = [D.white, { width: H.playbackToggleIcon, height: H.playbackToggleIcon }];
+                const U = void 0 === t || t === x.CaptionsState.unavailable,
+                    Q = t === x.CaptionsState.on,
+                    K = t === x.CaptionsState.off;
+                let Y = T.captionsUnavailable;
+                return (
+                    Q ? (Y = T.hideCaptions) : K && (Y = T.showCaptions),
+                    r.createElement(
+                        a.Z,
+                        {
+                            onLayout: function ({ nativeEvent: e }) {
+                                const { height: t } = e.layout,
+                                    i = 0.7 * t,
+                                    n = Math.floor(i / k.default.theme.lineHeightsPx[q]);
+                                b(n);
+                            },
+                            style: [F, { backgroundColor: A }],
+                        },
+                        r.createElement(a.Z, { style: D.innerContainer }, r.createElement(a.Z, { style: D.topLeft }, r.createElement(f.ZP, { color: "white", size: N, style: D.clipIndex, weight: "heavy" }, y.clipIndex, "/", y.numberOfClips)), r.createElement(w.Z, { "aria-label": Y, disabled: U, onClick: e.onCaptionsToggle, style: D.topRight, testID: "captionsToggle" }, Q ? r.createElement(l.default, { style: G }) : r.createElement(c.default, { style: G })), r.createElement(a.Z, { style: D.bottomLeft }, r.createElement(f.ZP, { color: "white", size: N, style: D.lighter }, r.createElement(E.Z, { countdown: !0, timeMs: z })), r.createElement(a.Z, { style: D.muteButton }, r.createElement(w.Z, { "aria-label": M ? T.unmute : T.mute, onPress: P }, M ? r.createElement(d.default, { style: j }) : r.createElement(u.default, { style: j })))), r.createElement(a.Z, { style: D.bottomRight }, r.createElement(p.default, { style: [...j, D.twitterIcon] }), r.createElement(f.ZP, { color: "white", size: N, style: D.lighter, weight: "heavy" }, T.voice)), r.createElement(a.Z, null, g.Z.reducedMotionEnabled ? null : r.createElement(a.Z, { style: [D.voiceIndicator, R ? D.activeVoiceIndicator : D.inactiveVoiceIndicator] }, r.createElement(Z.Z, { audioLevel: W, color: k.default.theme.colors.white, paused: !R, size: H.avatar })), r.createElement(S.default, { size: "custom", style: { width: H.avatar, height: H.avatar }, uri: n.user.profile_image_url_https }), r.createElement(a.Z, { style: D.playbackToggleContainer }, r.createElement(a.Z, { style: $ }, R ? r.createElement(m.default, { style: O }) : r.createElement(h.default, { style: O })))), Q && e.caption ? r.createElement(a.Z, { style: D.captionViewer, testID: "captionsViewer" }, r.createElement(f.ZP, { align: "center", color: "whiteOnColor", numberOfLines: s, size: q }, e.caption)) : null),
+                    )
+                );
+            }
+            x.getVoiceTweetDuration = function (e) {
+                const [t] = e.extended_entities?.media || [];
+                let i;
+                return t && "photo" !== t.type && t.video_info && (i = t.video_info.duration_millis), void 0 !== i ? i : -1;
+            };
+            const _ = { largeWidthBreakpoint: 400, mobile: { avatar: 90, playbackToggle: 38, playbackToggleIcon: 17, captionsIcon: 22 }, desktop: { avatar: 165, playbackToggle: 69, playbackToggleIcon: 31, captionsIcon: 40 } },
+                D = k.default.create((e) => ({ interactiveViewRoot: { width: "100%", height: "100%" }, radius: { borderRadius: e.borderRadii.large }, container: { width: "100%", height: "100%" }, containerMobile: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, width: "100%", height: "100%" }, containerDesktop: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, innerContainer: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" }, topLeft: { position: "absolute", top: 0, start: 0 }, topRight: { position: "absolute", top: 0, end: 0 }, captionViewer: { position: "absolute", bottom: "10%", padding: e.spaces.space8, backgroundColor: e.colors.translucentBlack77, borderRadius: e.borderRadii.small, marginHorizontal: "auto", width: "fit-content" }, bottomLeft: { position: "absolute", bottom: 0, start: 0, flexDirection: "row", justifyContent: "center", alignItems: "center" }, bottomRight: { position: "absolute", bottom: 0, end: 0, flexDirection: "row", justifyContent: "center", alignItems: "center" }, clipIndex: { letterSpacing: e.spaces.space2 }, captionsLabel: { letterSpacing: e.spaces.space2, marginTop: e.spaces.space4, textTransform: "uppercase" }, voiceIndicator: { transition: "opacity 0.2s 0s ease-in-out" }, activeVoiceIndicator: { opacity: 1 }, inactiveVoiceIndicator: { opacity: 0 }, playbackToggleContainer: { position: "absolute", top: 0, start: 0, width: "100%", height: "100%", justifyContent: "center", alignItems: "center" }, playbackToggle: { backgroundColor: e.colors.translucentBlack77, justifyContent: "center", alignItems: "center" }, muteButton: { marginStart: e.spaces.space4 }, twitterIcon: { marginEnd: e.spaces.space4 }, white: { color: e.colors.white }, lighter: { opacity: 0.5 } })),
+                T = { voice: s().h13ffc88, voiceTweet: s().c8c4600e, mute: s().ec8ab8b4, unmute: s().b8b6344a, play: s().de8c5eb2, pause: s().ec286028, showCaptions: s().a858b25c, hideCaptions: s().j25d7cca, captionsUnavailable: s().ad77feb6 };
+            x.CaptionsState = Object.freeze({ on: "on", off: "off", unavailable: "unavailable" });
+            const I = (e, t = 1) => `rgba(${e.red}, ${e.green}, ${e.blue}, ${t})`;
+        },
+        625881: (e, t, i) => {
+            i.d(t, { S: () => u });
+            var n = i(202784),
+                r = i(325686),
+                a = i(111677),
+                o = i.n(a),
+                s = i(184605),
+                l = i(173739),
+                c = i(392237),
+                d = i(794215);
+            function u(e) {
+                const [t, i] = n.useState(e.progressMs),
+                    [a, o] = n.useState(!1),
+                    c = n.useRef(!1);
+                n.useEffect(() => {
+                    e.externalSeeking && (c.current = !1);
+                }, [e.externalSeeking]);
+                const u = (e.externalSeeking && c.current) || a ? t : e.progressMs,
+                    h = n.createElement(l.Z, {
+                        "aria-label": m.seekSlider,
+                        color: "purple500",
+                        keepLTR: !0,
+                        keyboardStep: 5e3,
+                        max: e.durationMs,
+                        min: 0,
+                        onActive: function (i) {
+                            if ((e.onSliderActive?.(i), !i)) {
+                                const i = t;
+                                e.onSeek(i), (c.current = !0);
+                            }
+                            o(i);
+                        },
+                        onChange: function (t) {
+                            a || e.onSeek(t), i(t);
+                        },
+                        step: "any",
+                        value: u,
+                        withGrayBackground: !0,
+                        withHidingThumb: !0,
+                    });
+                if (!e.withTimes) return h;
+                const g = e.durationMs - u;
+                return n.createElement(r.Z, null, n.createElement(r.Z, { style: p.sliderRow }, n.createElement(r.Z, { style: p.slider }, h)), n.createElement(r.Z, { style: p.sliderTimes }, n.createElement(d.Z, { size: "subtext2", timeMs: (0, s.Z)(u) ? u : 0 }), n.createElement(d.Z, { countdown: !0, size: "subtext2", timeMs: (0, s.Z)(g) ? g : 0, withCountdownSymbol: !0 })));
+            }
+            const p = c.default.create((e) => ({ sliderRow: { flexDirection: "row" }, slider: { flex: 1 }, sliderTimes: { flexDirection: "row", justifyContent: "space-between" } })),
+                m = { seekSlider: o().hea01798 };
+        },
+        118149: (e, t, i) => {
+            i.d(t, { uP: () => D });
+            var n = i(807896),
+                r = i(202784),
+                a = i(325686),
+                o = i(111677),
+                s = i.n(o),
+                l = i(643442),
+                c = i(466445),
+                d = i(837020),
+                u = i(731708),
+                p = i(154003),
+                m = i(384153),
+                h = i(483677),
+                g = i(530732),
+                f = i(522171),
+                b = i(365023),
+                y = i(292627),
+                v = i(470397),
+                w = i(392237),
+                k = i(794215),
+                E = i(823161),
+                S = i(366635),
+                Z = i(41871),
+                C = i(625881);
+            function x(e) {
+                const t = A(e.onDockPress),
+                    i = A(e.onUserPress),
+                    o = A(e.onRequestClose),
+                    s = A(e.onTogglePlayback);
+                return r.createElement(r.Fragment, null, r.createElement(a.Z, { style: M.sliderContainer }, r.createElement(C.S, { durationMs: e.durationMs, externalSeeking: e.isSeeking, onSeek: e.onSeek, onSliderActive: e.onSliderActive, progressMs: e.progressMs })), r.createElement(a.Z, { style: M.dockContentRow }, r.createElement(E.default, { "aria-hidden": !0, focusable: !1, onClick: i, screenName: e.user.screen_name, size: "large", uri: e.user.profile_image_url_https, withLink: !0 }), r.createElement(a.Z, { style: M.dockContentTitle }, r.createElement(v.Z, { size: "subtext2" }, r.createElement(S.Z, { isBlueVerified: e.user.is_blue_verified, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", onLinkClick: i, screenName: e.user.screen_name, screenNameSize: "subtext2", verifiedType: e.user.verified_type, weight: "normal", withLink: !0 }), r.createElement(k.Z, { size: "subtext2", timeMs: e.durationMs })), r.createElement(u.ZP, { numberOfLines: 1, onPress: t, size: "subtext2", weight: "bold" }, e.title)), r.createElement(p.ZP, (0, n.Z)({ "aria-label": e.isPlaying ? T.pause : T.play, icon: e.isPlaying ? r.createElement(l.default, null) : r.createElement(c.default, null), onPress: s, testID: "togglePlayback" }, I)), r.createElement(a.Z, { style: M.dockContentButtonSpacer }), r.createElement(p.ZP, (0, n.Z)({ "aria-label": T.close, icon: r.createElement(d.default, null), onPress: o, testID: "close" }, I))));
+            }
+            function P(e) {
+                const t = A(e.onDockPress),
+                    i = A(e.onRequestClose),
+                    o = A(e.onTogglePlayback),
+                    s = A(e.onUserPress),
+                    m = r.useMemo(() => {
+                        const t = e.user.profile_image_extensions_media_color?.palette;
+                        if (t) {
+                            const e = h.Z.get(t);
+                            if (e) return B(e.rgb);
+                        }
+                        return w.default.theme.colors.primary;
+                    }, [e.user]),
+                    g = e.isMuted ? T.unmute : T.mute;
+                return r.createElement(a.Z, { style: [R.wideContainer, R.wideContainerBorderRadius] }, r.createElement(a.Z, { style: R.mainContentContainer }, r.createElement(a.Z, { style: [R.wideAvatarContainer, { backgroundColor: m }] }, r.createElement(E.default, { "aria-hidden": !0, focusable: !1, onClick: s, screenName: e.user.screen_name, size: "xLarge", uri: e.user.profile_image_url_https, withLink: !0 })), r.createElement(a.Z, { style: R.mainContent }, r.createElement(S.Z, { isBlueVerified: e.user.is_blue_verified, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", onLinkClick: s, screenName: e.user.screen_name, screenNameSize: "subtext2", verifiedType: e.user.verified_type, weight: "normal", withLink: !0, withScreenName: !0 }), r.createElement(u.ZP, { numberOfLines: 2, onPress: t, size: "subtext2", weight: "bold" }, e.title))), r.createElement(a.Z, { style: R.belowMainContent }, r.createElement(a.Z, { style: R.slider }, r.createElement(C.S, { durationMs: e.durationMs, externalSeeking: e.isSeeking, onSeek: e.onSeek, onSliderActive: e.onSliderActive, progressMs: e.progressMs, withTimes: !0 })), r.createElement(a.Z, { style: R.iconRow }, r.createElement(Z.Z, (0, n.Z)({ accessibilityLabelIcon: g, accessibilityLabelSlider: T.volumeSlider, isMuted: e.isMuted, onMuteToggle: e.onMuteToggle, onSliderChange: e.onVolumeChange, sliderColor: "purple500", type: void 0, volumePercent: e.volume, withGraySliderTrack: !0, withNavigationSliderBackground: !0 }, I)), r.createElement(p.ZP, (0, n.Z)({ "aria-label": e.isPlaying ? T.pause : T.play, icon: e.isPlaying ? r.createElement(l.default, null) : r.createElement(c.default, null), onPress: o, testID: "togglePlayback" }, I)))), r.createElement(p.ZP, (0, n.Z)({ "aria-label": T.close, icon: r.createElement(d.default, null), onPress: i, style: R.closeIcon, testID: "close" }, I)));
+            }
+            function _(e) {
+                const t = r.useRef({}),
+                    i = r.useRef(null),
+                    n = e.isWide && R.wideContainerBorderRadius,
+                    o = A(() => {
+                        t.current.isSliderActive || e.onDockPress();
+                    }),
+                    s = r.useMemo(
+                        () =>
+                            function () {
+                                i.current && i.current.focus();
+                            },
+                        [],
+                    );
+                r.useEffect(() => {
+                    const t = (function (e) {
+                        return function (t) {
+                            if ("Space" === t.code)
+                                return (
+                                    (function (e) {
+                                        e.preventDefault(), e.stopPropagation();
+                                    })(t),
+                                    e.onTogglePlayback()
+                                );
+                        };
+                    })(e);
+                    return (
+                        i.current && i.current.addEventListener("keydown", t),
+                        function () {
+                            i.current && i.current.removeEventListener("keydown", t);
+                        }
+                    );
+                }, [i.current, e.onTogglePlayback]),
+                    r.useEffect(
+                        () =>
+                            function () {
+                                clearTimeout(t.current.onSliderActiveTimeout);
+                            },
+                        [],
+                    );
+                const l = e.title || T.untitled,
+                    c = {
+                        ...e,
+                        title: l,
+                        onSliderActive: function (e) {
+                            clearTimeout(t.current.onSliderActiveTimeout),
+                                e
+                                    ? (t.current.isSliderActive = e)
+                                    : (t.current.onSliderActiveTimeout = setTimeout(() => {
+                                          t.current.isSliderActive = e;
+                                      }, L));
+                        },
+                    };
+                return r.createElement(
+                    f.Z,
+                    { enabled: !0, handlers: { [f.Z.shortcuts.audio.dock]: s, [f.Z.shortcuts.audio.play]: e.onTogglePlayback } },
+                    r.createElement(
+                        g.Z,
+                        {
+                            "aria-label": T.voiceDock,
+                            onPress: o,
+                            ref: function (e) {
+                                i.current = e;
+                            },
+                            style: [M.container, n],
+                        },
+                        r.createElement(a.Z, { style: [M.innerContainer, n] }, e.isWide ? r.createElement(P, c) : r.createElement(x, c)),
+                    ),
+                );
+            }
+            function D(e) {
+                const t = e.isWide ? y.Z.DesktopVoiceTweetDock : y.Z.MobileVoiceTweetDock,
+                    i = [e.isWide ? [R.root, { maxWidth: e.width }] : M.root];
+                return r.createElement(
+                    t,
+                    null,
+                    r.createElement(b.Z, { id: "VoiceTweetDock" }, (t, o) => r.createElement(a.Z, (0, n.Z)({ ref: t() }, o({ style: i })), r.createElement(_, e))),
+                );
+            }
+            const T = { untitled: s().gfaaead8, close: s().af8fa2ae, pause: s().fb236728, play: s().f17dfdb6, voiceDock: s().cfd13f46, unmute: s().b8b6344a, mute: s().ec8ab8b4, volumeSlider: s().c9a642fa, seekSlider: s().hea01798 },
+                I = { borderColor: "transparent", color: "text", size: "medium" },
+                M = w.default.create((e) => ({ root: {}, container: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall }, innerContainer: { backgroundColor: e.colors.navigationBackground }, sliderContainer: { position: "absolute", zIndex: 1, top: 0, start: 0, end: 0, marginTop: -1 * e.spacesPx.space20, transform: [{ translateY: e.spacesPx.space20 / 2 }] }, dockContentRow: { padding: e.spaces.space4, flexDirection: "row", justifyContent: "center", alignItems: "center" }, dockContentTitle: { marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space4, flexDirection: "column", flex: 1 }, dockContentButtonSpacer: { width: e.spaces.space12 } })),
+                R = w.default.create((e) => {
+                    const t = e.spaces.space16,
+                        i = e.borderRadii.xLarge,
+                        n = e.spaces.space4;
+                    return { root: { alignSelf: "flex-end", width: "100%", marginVertical: e.spaces.space20, marginEnd: e.spaces.space20 }, wideContainerBorderRadius: { borderRadius: i }, wideContainer: { padding: t, paddingEnd: n }, wideAvatarContainer: { borderRadius: e.borderRadii.medium, padding: e.spaces.space12 }, mainContentContainer: { flexDirection: "row" }, mainContent: { marginStart: e.spaces.space12, marginEnd: e.spaces.space40, flex: 1, flexDirection: "column" }, username: { color: e.colors.gray700 }, closeIcon: { position: "absolute", top: n, end: n }, belowMainContent: { marginTop: e.spaces.space12, flexDirection: "row" }, slider: { flex: 1 }, iconRow: { marginStart: e.spaces.space12, flexDirection: "row", justifyContent: "center" } };
+                });
+            function A(e) {
+                return m.Z.selectiveClickHandler((t) => {
+                    "function" == typeof e && e();
+                });
+            }
+            const B = (e, t = 1) => `rgba(${e.red}, ${e.green}, ${e.blue}, ${t})`,
+                L = 200;
+        },
+        41871: (e, t, i) => {
+            i.d(t, { Z: () => v });
+            var n = i(807896),
+                r = i(202784),
+                a = i(325686),
+                o = i(111677),
+                s = i.n(o),
+                l = i(83515),
+                c = i(926628),
+                d = i(301049),
+                u = i(154003),
+                p = i(466792),
+                m = i(173739),
+                h = i(392237);
+            const g = s().b3160a69;
+            class f extends r.PureComponent {
+                constructor(...e) {
+                    super(...e),
+                        (this.state = { showSlider: !1, isSliderActive: !1 }),
+                        (this._handleButtonLayoutChange = (e) => {
+                            const { containerHeight: t } = this.props,
+                                { sliderMaxHeight: i } = this.state,
+                                { height: n } = e.nativeEvent.layout;
+                            if (t) {
+                                const e = t - n - h.default.theme.spacesPx.space20 + "px";
+                                e !== i && this.setState({ sliderMaxHeight: e });
+                            }
+                        }),
+                        (this._handleSliderActive = (e) => this.setState({ isSliderActive: e })),
+                        (this._showSlider = () => this.setState({ showSlider: !0 })),
+                        (this._hideSlider = () => this.setState({ showSlider: !1 })),
+                        (this._shouldShowSlider = (e) => e.showSlider || e.isSliderActive),
+                        (this._normalizeValue = (e) => Math.max(0, Math.min(e, 100))),
+                        (this._getSliderMarginStyles = (e) => {
+                            const t = e ?? "medium";
+                            return y["large" === t ? "xLarge" : t];
+                        }),
+                        (this._handleKeyDown = (e) => {
+                            const { onSliderChange: t, volumePercent: i } = this.props,
+                                { altKey: n, ctrlKey: r, metaKey: a } = e;
+                            if (n || r || a) return;
+                            const o = e.key === d.Z.ArrowUp || e.key === d.Z.ArrowRight,
+                                s = e.key === d.Z.ArrowDown || e.key === d.Z.ArrowLeft;
+                            if (o || s) {
+                                const n = this._normalizeValue(i + 10 * (o ? 1 : -1));
+                                t && t(n), e.preventDefault();
+                            }
+                        });
+                }
+                componentDidUpdate(e, t) {
+                    const { onHideSlider: i, onShowSlider: n, onSliderChange: r } = this.props;
+                    if (r) {
+                        const e = this._shouldShowSlider(t),
+                            r = this._shouldShowSlider(this.state);
+                        !e && r && n && n(), e && !r && i && i();
+                    }
+                }
+                render() {
+                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: i, isMuted: o, onHideSlider: s, onMuteToggle: d, onShowSlider: f, onSliderChange: y, pullRight: v, sliderColor: w, volumePercent: k, withGraySliderTrack: E, withNavigationSliderBackground: S, ...Z } = this.props,
+                        C = o ? r.createElement(l.default, null) : r.createElement(c.default, null),
+                        x = S ? b.sliderWithNavigationBackground : b.sliderWithDefaultBackground;
+                    return r.createElement(p.Z, { disabled: !y, onFocusRingGained: y ? this._showSlider : void 0, onFocusRingLost: y ? this._hideSlider : void 0, onHoverIn: y ? this._showSlider : void 0, onHoverOut: y ? this._hideSlider : void 0 }, r.createElement(a.Z, { onKeyDown: y ? this._handleKeyDown : void 0 }, r.createElement(u.ZP, (0, n.Z)({ "aria-label": e, icon: C, onLayout: this._handleButtonLayoutChange, onPress: d, pullRight: v, type: "onMediaText" }, Z)), y && r.createElement(p.Z, { onFocusRingGained: f, onFocusRingLost: s }, ({ isFocusedWithin: e }) => r.createElement(a.Z, { style: [b.sliderBackground, x, this._getSliderMarginStyles(Z.size), e || this._shouldShowSlider(this.state) ? null : h.default.visuallyHidden, !!i && { maxHeight: this.state.sliderMaxHeight }] }, r.createElement(m.Z, { accessibilityLabelValueText: g({ volumePercent: k }), "aria-label": t, color: w || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: y, step: 1, value: o ? 0 : k || 0, withGrayBackground: E })))));
+                }
+            }
+            f.defaultProps = { pullRight: !1 };
+            const b = h.default.create((e) => ({ sliderBackground: { bottom: 0, borderRadius: e.borderRadii.xLarge, height: `calc(${e.spaces.space64}*2)`, start: e.spaces.space4, position: "absolute", padding: e.spaces.space12, paddingVertical: e.spaces.space16, end: e.spaces.space4 }, sliderWithDefaultBackground: { backgroundColor: e.colors.translucentBlack30 }, sliderWithNavigationBackground: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall } })),
+                y = h.default.create(({ spaces: e, spacesPx: t }) => {
+                    const i = `${t.space16 + t.space4 + t.space2}px`,
+                        n = `${t.space20 + t.space24}px`,
+                        r = `${t.space12 + t.space40}px`;
+                    return { xSmall: { marginBottom: e.space24 }, small: { marginBottom: e.space32 }, medium: { marginBottom: e.space36 }, large: { marginBottom: n }, xLarge: { marginBotom: r }, smallCompact: { marginBottom: i }, DEPRECATED_normalCompact: { marginBottom: e.space32 }, DEPRECATED_normal: { marginBottom: e.space40 } };
+                }),
+                v = f;
+        },
+        67877: (e, t, i) => {
+            i.d(t, { Z: () => n });
+            const n = (e, t) => {
+                let i = null;
+                const n = () => {
+                    (i = null), e();
+                };
+                return () => (i || (i = t(n)), i);
+            };
+        },
+        796684: (e, t, i) => {
+            i.d(t, { Z: () => p });
+            var n = i(202784),
+                r = i(325686),
+                a = i(913973),
+                o = i(516951),
+                s = i(731708),
+                l = i(454740),
+                c = i(58881),
+                d = i(530732),
+                u = i(392237);
+            const p = (e) => {
+                    const { "aria-label": t, "aria-posinset": i, "aria-setsize": p, checked: g, containerStyle: f, decoration: b, description: y, disabled: v, label: w, name: k, onChange: E, testID: S } = e,
+                        Z = "string" == typeof w ? n.createElement(s.ZP, { weight: "bold" }, w) : w,
+                        C = "string" == typeof y,
+                        x = y ? (C ? n.createElement(s.ZP, { color: "gray700", style: l.W.description }, y) : n.createElement(r.Z, { style: m.descriptionComponent }, y)) : null,
+                        P = c.Z.generate({ backgroundColor: u.default.theme.colors.transparent, color: u.default.theme.colors.primary, customHoverBackgroundColor: u.default.theme.colors.transparent, customPressedBackgroundColor: u.default.theme.colors.transparent }),
+                        _ = c.Z.generate({ backgroundColor: u.default.theme.colors.transparent, color: g ? u.default.theme.colors.primary : u.default.theme.colors.gray700, withFocusWithinFocusRing: !0 });
+                    return n.createElement(
+                        n.Fragment,
                         null,
-                        a.createElement(d.Z, { disabled: f, interactiveStyles: M, role: "label", style: [c.W.root, p], testID: C }, (e) => a.createElement(a.Fragment, null, b ? a.createElement(n.Z, { style: c.W.decorationContainer }, b) : null, a.createElement(n.Z, { style: c.W.content }, z, k && S), a.createElement(n.Z, { style: g.radioContainer }, a.createElement(d.Z, { disabled: f, interactiveStyles: D, interactivityState: e, style: g.radioBackground }, a.createElement(n.Z, { style: [g.circle, v && g.circleActive, f && g.circleDisabled, v && f && g.circleCheckedAndDisabled] }, v ? a.createElement(l.default, { style: g.checkMark }) : null)), a.createElement("input", { "aria-label": t, "aria-posinset": r, "aria-setsize": h, checked: v, disabled: f, name: w, onChange: v ? o.Z : E, style: m, type: "radio" })))),
-                        k ? null : S,
+                        n.createElement(d.Z, { disabled: v, interactiveStyles: P, role: "label", style: [l.W.root, f], testID: S }, (e) => n.createElement(n.Fragment, null, b ? n.createElement(r.Z, { style: l.W.decorationContainer }, b) : null, n.createElement(r.Z, { style: l.W.content }, Z, C && x), n.createElement(r.Z, { style: m.radioContainer }, n.createElement(d.Z, { disabled: v, interactiveStyles: _, interactivityState: e, style: m.radioBackground }, n.createElement(r.Z, { style: [m.circle, g && m.circleActive, v && m.circleDisabled, g && v && m.circleCheckedAndDisabled] }, g ? n.createElement(a.default, { style: m.checkMark }) : null)), n.createElement("input", { "aria-label": t, "aria-posinset": i, "aria-setsize": p, checked: g, disabled: v, name: k, onChange: g ? o.Z : E, style: h, type: "radio" })))),
+                        C ? null : x,
                     );
                 },
-                g = u.default.create((e) => ({ radioBackground: { borderRadius: e.borderRadii.infinite, margin: `-${e.spaces.space8}`, padding: e.spaces.space8 }, radioContainer: { userSelect: "none", marginStart: e.spaces.space24 }, nativeControl: { ...u.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" }, circleDisabled: { borderColor: e.colors.gray200 }, circleCheckedAndDisabled: { backgroundColor: e.colors.gray300, borderColor: e.colors.gray300 }, circle: { alignItems: "center", backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray700, borderStyle: "solid", borderWidth: e.borderWidths.medium, borderRadius: e.spaces.space32, height: e.spaces.space20, justifyContent: "center", width: e.spaces.space20 }, circleActive: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, checkMark: { width: "18px", height: "18px", color: e.colors.whiteOnColor }, descriptionComponent: { marginHorizontal: e.spaces.space32 } })),
-                m = { ...u.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" };
+                m = u.default.create((e) => ({ radioBackground: { borderRadius: e.borderRadii.infinite, margin: `-${e.spaces.space8}`, padding: e.spaces.space8 }, radioContainer: { userSelect: "none", marginStart: e.spaces.space24 }, nativeControl: { ...u.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" }, circleDisabled: { borderColor: e.colors.gray200 }, circleCheckedAndDisabled: { backgroundColor: e.colors.gray300, borderColor: e.colors.gray300 }, circle: { alignItems: "center", backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray700, borderStyle: "solid", borderWidth: e.borderWidths.medium, borderRadius: e.spaces.space32, height: e.spaces.space20, justifyContent: "center", width: e.spaces.space20 }, circleActive: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, checkMark: { width: "18px", height: "18px", color: e.colors.whiteOnColor }, descriptionComponent: { marginHorizontal: e.spaces.space32 } })),
+                h = { ...u.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" };
         },
-        896632: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var a = r(202784),
-                n = r(325686),
-                l = r(731708),
-                o = r(392237);
-            let i = 1;
-            const c = o.default.create((e) => ({ header: { alignItems: "flex-start" }, row: { flexDirection: "row" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 }, switchVariant: { padding: e.spaces.space2, backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.large } })),
-                s = (e) => {
-                    const { "aria-label": t, backgroundStyles: r, description: o, disabled: s, horizontal: d, label: u, name: h, onChange: g, options: m, renderBorderWhenSelected: v, renderSelector: p, selectorBackgroundStyles: b, switchStyle: y, value: f } = e,
-                        Z = (() => {
-                            const e = a.useRef("");
-                            return (
-                                a.useEffect(() => {
-                                    (e.current = `CONTROL_${i}_LABEL`), (i += 1);
-                                }, []),
-                                e
-                            );
-                        })(),
-                        w = (e) => () => {
-                            g(h, e);
-                        };
-                    return a.createElement(
-                        n.Z,
-                        { "aria-label": t, "aria-labelledby": u && !t ? Z.current : void 0, role: "radiogroup", style: s && c.disabled },
-                        u ? a.createElement(n.Z, { id: Z.current, role: "label", style: c.header }, a.createElement(l.ZP, { style: c.label, weight: "bold" }, u), o ? a.createElement(l.ZP, { color: "gray700", size: "subtext2" }, o) : null) : null,
-                        a.createElement(
-                            n.Z,
-                            { style: [d && c.row, y && c.switchVariant, r] },
-                            m.map((e, t) => p({ "aria-posinset": t + 1, "aria-setsize": m.length, checked: e.value === f, disabled: s, name: h, switchStyle: y, horizontal: d, renderBorderWhenSelected: v, selectorBackgroundStyles: b, onChange: w(e.value), ...e })),
-                        ),
-                    );
-                };
-        },
-        27137: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var a = r(157396);
-            const n = (0, r(587878).Z)({ palette: a.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
-        },
-        806143: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M18.425 10.77h.001c.182.372.025.82-.348 1-.372.182-.822.025-1.002-.348-.78-1.61-2.878-1.556-3.575.124l-.306.74c-.116.281-.391.463-.694.463s-.577-.184-.693-.464l-.308-.74c-.697-1.679-2.795-1.733-3.575-.123-.182.373-.629.529-1.002.347-.373-.18-.528-.628-.348-1 1.23-2.542 4.46-2.648 5.925-.495 1.465-2.154 4.695-2.047 5.925.496zM22 2.439v14.205l-.579.269c-1.803.837-3.466 1.11-5.015 1.11-1.561 0-3.005-.278-4.359-.539-2.443-.471-4.581-.863-7.047.17V22H3V2h2v1.514c2.705-.89 5.1-.443 7.425.005 2.633.509 5.12.988 8.154-.422L22 2.438zM20 5.47c-3.009.967-5.616.464-7.953.014-2.443-.471-4.581-.863-7.047.17v9.86c2.705-.891 5.1-.442 7.425.005 2.462.475 4.798.925 7.575-.173V5.47z" })) }, { writingDirection: t });
+        63274: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => l });
+            var n = i(202784),
+                r = i(890601),
+                a = i(783427),
+                o = i(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 17 10", children: n.createElement("g", null, n.createElement("path", { d: "M.043 1.485L1.457.065 8.5 7.115l7.043-7.05 1.414 1.42L8.5 9.935.043 1.485z" })) }, { writingDirection: t });
             };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
+            s.metadata = { width: 17, height: 10 };
+            const l = s;
         },
-        213279: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M2.008 6.5c0-1.381 1.119-2.5 2.5-2.5h11c1.381 0 2.5 1.119 2.5 2.5v1.882l4-2v11.236l-4-2V17.5c0 1.381-1.119 2.5-2.5 2.5h-11c-1.381 0-2.5-1.119-2.5-2.5v-11zm7.992 9c1.933 0 3.5-1.567 3.5-3.5S11.933 8.5 10 8.5 6.5 10.067 6.5 12s1.567 3.5 3.5 3.5z" })) }, { writingDirection: t });
+        379327: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => l });
+            var n = i(202784),
+                r = i(890601),
+                a = i(783427),
+                o = i(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
             };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
-        804417: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23.367 8.254l-3.455-2.878c-.73-.608-1.763-.751-2.63-.358L12.471 7.19c-.895.403-1.472 1.298-1.472 2.279v.692l-1.771-.8c.492-.673.771-1.496.771-2.361 0-2.206-1.794-4-4-4S2 4.794 2 7s1.794 4 4 4c.486 0 .969-.089 1.421-.261L10.212 12l-2.791 1.261C6.968 13.089 6.485 13 6 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4c0-.865-.278-1.688-.771-2.361l1.771-.8v.692c0 .981.578 1.876 1.471 2.278l4.812 2.173c.869.393 1.9.25 2.629-.357l3.455-2.879L15.073 12l8.294-3.746zm-16.42.509C6.654 8.92 6.335 9 6 9c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2c0 .736-.403 1.412-1.053 1.763zM6 19c-1.103 0-2-.897-2-2s.897-2 2-2c.335 0 .654.08.947.237C7.596 15.588 8 16.263 8 17c0 1.103-.897 2-2 2zm7-9.531c0-.196.115-.375.294-.456l4.812-2.173c.065-.029.135-.044.205-.044.116 0 .23.04.321.116l1.001.834L13 10.741V9.469zm6.633 6.785l-1.001.835c-.146.121-.352.149-.525.071l-4.812-2.174c-.178-.08-.293-.259-.293-.455v-1.272l6.633 2.995z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        498844: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M16.043 6.54l4.75-4.75 1.414 1.42-4.75 4.75-1.414-1.42zM3.207 22.21l4.75-4.75-1.414-1.42-4.75 4.75 1.414 1.42zm5.727-7h.002c1.369 0 2.154-.59 2.737-1.39l-1.22-.87c-.303.44-.812.73-1.39.73-.93 0-1.685-.75-1.685-1.68s.754-1.69 1.684-1.69c.559 0 1.051.28 1.357.7l1.207-.94c-.545-.76-1.36-1.29-2.62-1.29-1.872 0-3.26 1.42-3.26 3.22v.02c0 1.84 1.421 3.19 3.187 3.19zm9.319-1.39l-1.22-.87c-.304.44-.813.73-1.39.73-.93 0-1.684-.75-1.684-1.68s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.94c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.42-3.258 3.22v.02c0 1.84 1.421 3.19 3.185 3.19 1.368 0 2.154-.59 2.738-1.39zM3 5.74V15h2V5.74c0-.27.224-.5.5-.5h9.258l2-2H5.5C4.119 3.24 3 4.36 3 5.74zM18.5 19H9.243l-2 2H18.5c1.381 0 2.5-1.12 2.5-2.5V9h-2v9.5c0 .28-.224.5-.5.5z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        790093: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        373595: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M7 6h10v2h-1v2.7l3.316 4.97c.446.67.684 1.46.684 2.26 0 2.25-1.822 4.07-4.07 4.07H8.07C5.822 22 4 20.18 4 17.93c0-.8.238-1.59.684-2.26L8 10.7V8H7V6zm9.742 9.42c-.227-.04-.531-.08-.873-.12-.757-.08-1.62-.13-2.25-.06-.572.07-.983.15-1.424.24h-.005c-.445.09-.92.19-1.571.26-.869.11-1.922.03-2.707-.05-.288-.04-.55-.07-.769-.1l-.795 1.19c-.227.34-.348.74-.348 1.15C6 19.07 6.927 20 8.07 20h7.86c1.143 0 2.07-.93 2.07-2.07 0-.41-.121-.81-.348-1.15l-.91-1.36zM10 3c-.552 0-1 .45-1 1s.448 1 1 1 1-.45 1-1-.448-1-1-1zm3.5-2c-.828 0-1.5.67-1.5 1.5S12.672 4 13.5 4 15 3.33 15 2.5 14.328 1 13.5 1z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        410547: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6 3v1.5S7.504 4 8.5 4c3 0 4.5 2 7 2 1.782 0 4.5-.75 4.5-.75v11s-2.7.75-4.5.75c-3 0-4.756-2-7-2-1 0-2.5.75-2.5.75V21H4V3h2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        885724: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        415269: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15.457.04L19.414 4l-3.957 3.96-1.414-1.42L15.586 5H12c-4.142 0-7.5 3.36-7.5 7.5S7.858 20 12 20s7.5-3.36 7.5-7.5v-1h2v1c0 5.25-4.253 9.5-9.5 9.5s-9.5-4.25-9.5-9.5S6.753 3 12 3h3.586l-1.543-1.54L15.457.04zM9.046 9.5c-.245.65-.659.91-1.394.94H7.5v1.3h.228c.414 0 .811-.11 1.048-.31v3.94h1.454V9.5H9.046zm5.005 1.84c-.6 0-1.048.19-1.31.54l.152-1.25h2.738V9.5h-3.803l-.363 3.35 1.284.11c.135-.38.431-.59.879-.59.549 0 .87.41.87 1.03 0 .61-.329.98-.887.98-.473 0-.786-.26-.879-.66l-1.394.28c.177.93 1.039 1.5 2.29 1.5 1.445 0 2.324-.81 2.324-2.14 0-1.25-.718-2.02-1.901-2.02z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        17412: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => c });
-            var a = r(202784),
-                n = r(890601),
-                l = r(783427),
-                o = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M16.81 1.11l1.39 4.78 4.73 1.57-4.11 2.8-.03 4.98-3.94-3.05-4.74 1.52 1.68-4.69-2.91-4.04 4.98.15 2.95-4.02zM7.05 9.54l-4.5 4.5 1.41 1.42 4.5-4.5-1.41-1.42zm1 5l-5.5 5.5 1.41 1.42 5.5-5.5-1.41-1.42zm5 1l-4.5 4.5 1.41 1.42 4.5-4.5-1.41-1.42z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
-        364837: (e, t, r) => {
-            r.d(t, { R: () => s });
-            var a = r(19697),
-                n = r(549755),
-                l = r(205074);
+        364837: (e, t, i) => {
+            i.d(t, { R: () => c });
+            var n = i(19697),
+                r = i(549755),
+                a = i(205074);
             const o = 1,
-                i = 2,
-                c = 3,
-                s = (e) => {
-                    if ((0, l.DS)(e)) {
+                s = 2,
+                l = 3,
+                c = (e) => {
+                    if ((0, a.DS)(e)) {
                         if (e.isGif) {
-                            const { height: t, img: r, orientation: l, width: o } = e;
-                            return (0, a.$i)(r, o, t, l).then(
-                                (e) => (0, a.q8)(e),
+                            const { height: t, img: i, orientation: a, width: o } = e;
+                            return (0, n.$i)(i, o, t, a).then(
+                                (e) => (0, n.q8)(e),
                                 (e) => {
-                                    throw new n.Z("Gif preview could not be generated", c);
+                                    throw new r.Z("Gif preview could not be generated", l);
                                 },
                             );
                         }
                         {
-                            const e = new n.Z("The provided image must be a gif", i);
+                            const e = new r.Z("The provided image must be a gif", s);
                             return Promise.reject(e);
                         }
                     }
                     {
-                        const e = new n.Z("The provided file is not a valid image", o);
+                        const e = new r.Z("The provided file is not a valid image", o);
                         return Promise.reject(e);
                     }
                 };
         },
-        220760: (e, t, r) => {
-            r.d(t, { E: () => i });
-            var a = r(202784),
-                n = r(715729),
-                l = r(465233),
-                o = r(516951);
-            function i(e) {
+        220760: (e, t, i) => {
+            i.d(t, { E: () => s });
+            var n = i(202784),
+                r = i(715729),
+                a = i(465233),
+                o = i(516951);
+            function s(e) {
                 const t = e || {},
-                    r = (0, l.Z)(t);
-                let i = (0, l.Z)(r);
-                const s = new Set();
+                    i = (0, a.Z)(t);
+                let s = (0, a.Z)(i);
+                const c = new Set();
                 function d(e) {
                     return (
-                        s.add(e),
+                        c.add(e),
                         function () {
-                            s.delete(e);
+                            c.delete(e);
                         }
                     );
                 }
                 function u() {
-                    s.forEach((e) => {
-                        e(i);
+                    c.forEach((e) => {
+                        e(s);
                     });
                 }
-                function h(e) {
+                function p(e) {
                     return function (t) {
-                        const r = e.current.slice,
-                            a = e.current.state,
-                            n = e.current.selector(t);
-                        e.current.equality(n, r, t, a) || ((e.current.slice = n), (e.current.state = t), e.current.onUpdate(e.current.slice));
+                        const i = e.current.slice,
+                            n = e.current.state,
+                            r = e.current.selector(t);
+                        e.current.equality(r, i, t, n) || ((e.current.slice = r), (e.current.state = t), e.current.onUpdate(e.current.slice));
                     };
                 }
                 return {
                     getState: function () {
-                        return i;
+                        return s;
                     },
                     setState: function (e) {
-                        (i = (0, n.ZP)(i, (t) => e(t))), u();
+                        (s = (0, r.ZP)(s, (t) => e(t))), u();
                     },
                     reset: function () {
-                        (i = (0, l.Z)(r)), u();
+                        (s = (0, a.Z)(i)), u();
                     },
                     useSlice: function (e, t) {
-                        const r = t?.equalityFn || c.equality,
-                            n = o.Z,
-                            l = a.useRef({ state: i, slice: e(i), selector: e, equality: r, onUpdate: n });
-                        (l.current.selector = e), (l.current.equality = r);
-                        const [s, u] = a.useState(() => l.current.slice);
+                        const i = t?.equalityFn || l.equality,
+                            r = o.Z,
+                            a = n.useRef({ state: s, slice: e(s), selector: e, equality: i, onUpdate: r });
+                        (a.current.selector = e), (a.current.equality = i);
+                        const [c, u] = n.useState(() => a.current.slice);
                         return (
-                            a.useEffect(() => {
+                            n.useEffect(() => {
                                 let e = !0;
-                                l.current.onUpdate = (e) => u(() => e);
-                                const t = h(l);
-                                function r(r) {
-                                    e && t(r);
+                                a.current.onUpdate = (e) => u(() => e);
+                                const t = p(a);
+                                function i(i) {
+                                    e && t(i);
                                 }
-                                r(i);
-                                const a = d(r);
+                                i(s);
+                                const n = d(i);
                                 return function () {
-                                    (e = !1), a();
+                                    (e = !1), n();
                                 };
                             }, []),
-                            s
+                            c
                         );
                     },
-                    subscribe: function (e, t, r) {
-                        const a = r?.equalityFn || c.equality,
-                            n = { current: { state: i, slice: e(i), selector: e, equality: a, onUpdate: t } },
-                            l = d(h(n));
-                        return n.current.onUpdate(n.current.slice), l;
+                    subscribe: function (e, t, i) {
+                        const n = i?.equalityFn || l.equality,
+                            r = { current: { state: s, slice: e(s), selector: e, equality: n, onUpdate: t } },
+                            a = d(p(r));
+                        return r.current.onUpdate(r.current.slice), a;
                     },
                 };
             }
-            (0, n.GP)();
-            const c = { equality: (e, t, r, a) => e === t };
+            (0, r.GP)();
+            const l = { equality: (e, t, i, n) => e === t };
         },
-        193089: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            const a = (e) => {
+        193089: (e, t, i) => {
+            i.d(t, { Z: () => n });
+            const n = (e) => {
                 const t = new Map();
                 return (
-                    e.forEach(([e, r]) => {
-                        t.set(e, r);
+                    e.forEach(([e, i]) => {
+                        t.set(e, i);
                     }),
                     t
                 );
             };
         },
-        166502: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            const a = (e, t) => {
-                const r = null == e ? 0 : e.length;
-                if (!r || t < 1) return [];
-                let a = 0,
-                    n = 0;
-                const l = new Array(Math.ceil(r / t));
-                for (; a < r; ) (l[n] = e.slice(a, (a += t))), (n += 1);
-                return l;
+        166502: (e, t, i) => {
+            i.d(t, { Z: () => n });
+            const n = (e, t) => {
+                const i = null == e ? 0 : e.length;
+                if (!i || t < 1) return [];
+                let n = 0,
+                    r = 0;
+                const a = new Array(Math.ceil(i / t));
+                for (; n < i; ) (a[r] = e.slice(n, (n += t))), (r += 1);
+                return a;
             };
         },
-        465233: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var a = r(716406);
-            function n(e) {
-                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(n) : (0, a.Z)(e, (e) => n(e));
+        465233: (e, t, i) => {
+            i.d(t, { Z: () => r });
+            var n = i(716406);
+            function r(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(r) : (0, n.Z)(e, (e) => r(e));
             }
         },
-        326399: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var a = r(827515),
-                n = r(676145);
-            const l = (e, t) => {
-                if ((0, a.Z)(e) && (0, a.Z)(t)) {
+        326399: (e, t, i) => {
+            i.d(t, { Z: () => s });
+            var n = i(827515),
+                r = i(676145);
+            const a = (e, t) => {
+                if ((0, n.Z)(e) && (0, n.Z)(t)) {
                     if (e > t) return 1;
                     if (e < t) return -1;
-                } else if ((0, n.Z)(e) && (0, n.Z)(t)) {
+                } else if ((0, r.Z)(e) && (0, r.Z)(t)) {
                     if (e > t) return 1;
                     if (e < t) return -1;
                 } else if (o(e) && o(t)) {
@@ -356,46 +781,46 @@
             function o(e) {
                 return "boolean" == typeof e;
             }
-            const i = (e, t, r) => {
-                const i = (0, n.Z)(r) ? Array(t.length).fill(r) : r,
-                    c = t.map((e) =>
-                        (0, n.Z)(e)
+            const s = (e, t, i) => {
+                const s = (0, r.Z)(i) ? Array(t.length).fill(i) : i,
+                    l = t.map((e) =>
+                        (0, r.Z)(e)
                             ? (t) => {
-                                  const r = "object" == typeof t ? t?.[e] : void 0;
-                                  return (0, n.Z)(r) || (0, a.Z)(r) || o(r) ? r : void 0;
+                                  const i = "object" == typeof t ? t?.[e] : void 0;
+                                  return (0, r.Z)(i) || (0, n.Z)(i) || o(i) ? i : void 0;
                               }
                             : e,
                     );
                 return e.concat().sort(
-                    ((e, t) => (r, a) => {
-                        for (let n = 0; n < e.length; n++) {
-                            const o = e[n],
-                                i = t[n] || "asc",
-                                c = l(o(r), o(a));
-                            if (0 !== c) return "desc" === i ? -1 * c : c;
+                    ((e, t) => (i, n) => {
+                        for (let r = 0; r < e.length; r++) {
+                            const o = e[r],
+                                s = t[r] || "asc",
+                                l = a(o(i), o(n));
+                            if (0 !== l) return "desc" === s ? -1 * l : l;
                         }
                         return 0;
-                    })(c, i),
+                    })(l, s),
                 );
             };
         },
-        822240: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            r(136728);
-            const a = (e, t, r = 1) => {
-                const a = [];
-                for (let n = e; r > 0 ? n < t : n > t; n += r) a.push(n);
-                return a;
+        822240: (e, t, i) => {
+            i.d(t, { Z: () => n });
+            i(136728);
+            const n = (e, t, i = 1) => {
+                const n = [];
+                for (let r = e; i > 0 ? r < t : r > t; r += i) n.push(r);
+                return n;
             };
         },
-        684565: (e, t, r) => {
-            r.d(t, { C: () => a });
-            const a = (e, t) =>
-                e.reduce((e, r) => {
-                    const a = t(r);
-                    return "number" == typeof a ? e + a : e;
+        684565: (e, t, i) => {
+            i.d(t, { C: () => n });
+            const n = (e, t) =>
+                e.reduce((e, i) => {
+                    const n = t(i);
+                    return "number" == typeof n ? e + n : e;
                 }, 0);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed.823b753a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed.54ff79da.js.map
