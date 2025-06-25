@@ -69,7 +69,7 @@
                 m = o;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => je, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => Me, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => qe, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => Y, fq: () => St, gh: () => ht, gx: () => X, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Ye, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Xe, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
+            n.d(t, { BC: () => Ae, BR: () => Se, Bj: () => Dt, Bl: () => Oe, DK: () => Ve, DO: () => mt, Dc: () => Q, EQ: () => Ke, FW: () => yt, Fs: () => it, GU: () => pe, Gl: () => je, Gs: () => ot, H_: () => nt, Ix: () => Tt, J$: () => at, M9: () => De, MO: () => ft, Mw: () => Je, NG: () => _e, Oc: () => rt, Ou: () => Me, Q1: () => be, QE: () => Ze, Qu: () => bt, Se: () => tt, So: () => dt, T3: () => Ne, T7: () => kt, Tp: () => ke, Ts: () => Ge, UM: () => Ie, UV: () => Ct, V9: () => qe, XT: () => Ue, _T: () => ze, aY: () => ct, ab: () => ut, bI: () => st, dN: () => X, fq: () => St, gh: () => ht, gx: () => Y, i7: () => Pe, iv: () => lt, jm: () => pt, lD: () => de, lw: () => ne, nV: () => J, p2: () => Z, p6: () => xe, pQ: () => ee, qK: () => te, qQ: () => Xe, qU: () => Fe, qc: () => Rt, uG: () => wt, uN: () => Qe, ve: () => Ye, vw: () => G, wg: () => Ce, wu: () => xt, xe: () => $e, y4: () => At, yH: () => gt, zK: () => Ee, zx: () => ae });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(617374),
                 r = n.n(a),
@@ -117,7 +117,7 @@
                 H = l().g727ddcf,
                 L = l().da44942d,
                 Z = ({ amount: e, currency: t }) => {
-                    const n = Y({ amount: e, formatter: 1e6 });
+                    const n = X({ amount: e, formatter: 1e6 });
                     return (0, z.x)({ currencyCode: t?.toUpperCase(), amount: n, formatter: 1, strictAmount: !0, removeTrailingZeros: !0 });
                 },
                 G = ({ amount: e, currency: t }) => {
@@ -128,11 +128,11 @@
                     const t = new (r())(e);
                     return new (r())(t.toFixed(2, r().ROUND_DOWN)).times(1e6).toDecimalPlaces(0).toNumber();
                 },
-                X = (e) => {
+                Y = (e) => {
                     const t = parseFloat(e);
-                    return Y({ amount: t });
+                    return X({ amount: t });
                 },
-                Y = ({ amount: e, formatter: t = 1e6 }) => e / t;
+                X = ({ amount: e, formatter: t = 1e6 }) => e / t;
             function J(e) {
                 const t = new Date(parseInt(e, 10));
                 return t.setDate(0), H(t);
@@ -362,12 +362,12 @@
                         Ge(e);
                     });
                 },
-                Xe = (e) => {
+                Ye = (e) => {
                     i()(e, (e) => {
                         Ze(e);
                     });
                 },
-                Ye = (e) => {
+                Xe = (e) => {
                     const t = (0, o.getStorageKey)(O.Z.fragment.selections[0], { search_filter_id: W.$W });
                     Le(e, t);
                     const n = (0, o.getStorageKey)(S.Z.fragment.selections[0], {});
@@ -376,7 +376,7 @@
                     Le(e, a), et(e);
                 },
                 Je = (e) => {
-                    const t = (0, o.getStorageKey)(A.Z.fragment.selections[0], { count: 10, safetyLevel: "XPayments" });
+                    const t = (0, o.getStorageKey)(A.Z.fragment.selections[0], {});
                     Le(e, t);
                 },
                 et = (e) => {
@@ -390,12 +390,12 @@
                                 const n = e.get(t);
                                 n && n.invalidateRecord();
                             })(e, t),
-                            Ye(e),
+                            Xe(e),
                             et(e);
                     });
                 },
                 nt = (e, { reasonCode: t, recordId: n, status: a }) => {
-                    if ((Pe({ status: a }) || (Ye(e), et(e)), n && a)) {
+                    if ((Pe({ status: a }) || (Xe(e), et(e)), n && a)) {
                         const r = e.get(n);
                         r && (r.setValue(a, "transaction_status"), r.setValue(t, "reason_code"));
                     }
@@ -406,8 +406,9 @@
                             const t = (0, o.getStorageKey)(I.Z.fragment.selections[0], {});
                             Le(e, t);
                         })(e),
-                            Ye(e),
-                            et(e);
+                            Xe(e),
+                            et(e),
+                            Je(e);
                     });
                 },
                 rt = (e) => {
@@ -442,7 +443,7 @@
                 },
                 Ct = ({ amount: e, balanceAmountMicro: t }) => {
                     const n = parseFloat(t);
-                    return parseFloat(e) <= Y({ amount: n });
+                    return parseFloat(e) <= X({ amount: n });
                 },
                 bt = (e) => new Date(e.year, e.month - 1, e.day),
                 xt = ({ challengeId: e, status: t }) => (Pe({ status: t }) && e ? j.vw : null),
@@ -477,4 +478,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.548d042a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.3fb71f1a.js.map

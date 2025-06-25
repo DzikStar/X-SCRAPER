@@ -2,52 +2,6 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsRevamp-960914ab"],
     {
-        520512: (e, a, n) => {
-            n.d(a, { Z: () => r });
-            var l,
-                i,
-                t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "allowGamblingAds" }]), kind: "Fragment", metadata: null, name: "AdsCategoriesMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_gambling_ads", variableName: "allowGamblingAds" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "AdsCategoriesMutation", selections: i }, params: { id: "eRWyTnzFgPgv9D4W8ujf6A", metadata: {}, name: "AdsCategoriesMutation", operationKind: "mutation", text: null } };
-            t.hash = "58347e2cd632b3c8fb00f7f08a6b5c7d";
-            const r = t;
-        },
-        795738: (e, a, n) => {
-            n.d(a, { Z: () => t });
-            var l,
-                i = {
-                    fragment: {
-                        argumentDefinitions: [],
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "AdsCategoriesQuery",
-                        selections: [
-                            {
-                                kind: "RequiredField",
-                                field: (l = {
-                                    alias: null,
-                                    args: null,
-                                    concreteType: "UserPreferences",
-                                    kind: "LinkedField",
-                                    name: "user_preferences",
-                                    plural: !1,
-                                    selections: [
-                                        { alias: null, args: null, kind: "ScalarField", name: "allow_gambling_ads", storageKey: null },
-                                        { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
-                                    ],
-                                    storageKey: null,
-                                }),
-                                action: "THROW",
-                            },
-                        ],
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "AdsCategoriesQuery", selections: [l] },
-                    params: { id: "FO_KX1o77E3vYL14rATn9Q", metadata: {}, name: "AdsCategoriesQuery", operationKind: "query", text: null },
-                };
-            i.hash = "5cedb9567de269f8e1609fd181602c63";
-            const t = i;
-        },
         767758: (e, a, n) => {
             n.d(a, { Z: () => r });
             var l,
@@ -1353,4 +1307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-960914ab.5f8a5aaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-960914ab.911a73fa.js.map

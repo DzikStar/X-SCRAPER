@@ -768,4 +768,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.BadgeViolationsNotification~bundle.SettingsRevamp.a5cdc23a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.BadgeViolationsNotification~bundle.SettingsRevamp.68dc676a.js.map

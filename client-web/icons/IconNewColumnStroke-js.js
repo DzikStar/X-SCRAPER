@@ -17,4 +17,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons/IconNewColumnStroke-js.3938198a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons/IconNewColumnStroke-js.c02fc5aa.js.map

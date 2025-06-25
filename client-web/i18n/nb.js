@@ -1361,7 +1361,12 @@
                 t("b7cb4fab", "Oversatt av"),
                 t("e0bffbf8", "Om automatisk oversettelse"),
                 t("e839db3a", "Forkast"),
-                t("a15585b4", "språkinnstillingene"),
+                t("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                t("c60b9e5c", "Changes will take effect for newly loaded content."),
+                t("c6ad999b", "languages settings"),
+                t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (e) {
                     return "Innlegg fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1917,11 +1922,11 @@
                 }),
                 t("ad89b831", function (e) {
                     return "aktiv" + e.ttc_rich_text_composer;
-                }),
-                t("jcd5ee8a", "Rediger blokk"),
+                });
+            t("jcd5ee8a", "Rediger blokk"),
                 t("a8f09fb8", "Slett blokk"),
-                t("i89195ea", "Skillelinje");
-            t("da8ac57c", "Rediger bildetekst"),
+                t("i89195ea", "Skillelinje"),
+                t("da8ac57c", "Rediger bildetekst"),
                 t("a8fdd09c", "Publiser artikkel"),
                 t("d8047cc8", "Publiser"),
                 t("ff7ddca2", "Artikkelen din vises som et innlegg når du har publisert den. Du finner den også under fanen Artikler i profilen din."),
@@ -2969,15 +2974,15 @@
                 t("j43f99be", "Relevans"),
                 t("ad6e11ac", "Sorter svar etter"),
                 t("b2311b70", "Dette er ikke tilgjengelig for deg."),
-                t("j88f27d8", "Relevante personer"),
-                t("i31dcd22", "Artikkel"),
+                t("j88f27d8", "Relevante personer");
+            t("i31dcd22", "Artikkel"),
                 t("e3de2f6f", function (e) {
                     return e.entity + " er lagt til i bokmerkene dine";
                 }),
                 t("e64de8a9", function (e) {
                     return e.entity + " er fjernet fra bokmerkene dine";
-                });
-            t("d6d9aab6", "Legg til bokmerke"),
+                }),
+                t("d6d9aab6", "Legg til bokmerke"),
                 t("bb89cf46", "Fjern bokmerke"),
                 t("a739d4ba", "Legg til i bokmerkemappe"),
                 t("d5270434", "Avslutt"),
@@ -3899,11 +3904,11 @@
                 t("c3b5b829", function (e) {
                     return e.count + " forespørs" + i(e.count, "el", "ler");
                 }),
-                t("fe7a1910", "Send invitasjoner"),
-                t("ic3c757e", "Søk etter brukere"),
+                t("fe7a1910", "Send invitasjoner");
+            t("ic3c757e", "Søk etter brukere"),
                 t("cd133486", "Inviter"),
-                t("f2333850", "Del med andre utenfor X");
-            t("cddb8097", "Les mer"),
+                t("f2333850", "Del med andre utenfor X"),
+                t("cddb8097", "Les mer"),
                 t("f77997b0", "Medvert"),
                 t("i48f4ed8", "Taler"),
                 t("a77c8e02", "Lytter"),
@@ -4923,11 +4928,11 @@
                 t("c8410542", "Antall ganger videoen din har blitt vist."),
                 t("a532072a", "Seere"),
                 t("d9508ab0", "visninger"),
-                t("d9f9dec0", "Vis område"),
-                t("h0c1f37a", "Vis områdestatistikk"),
+                t("d9f9dec0", "Vis område");
+            t("h0c1f37a", "Vis områdestatistikk"),
                 t("e41fffbc", "Den totale visningstiden til videoene dine."),
-                t("if2909ba", "Visningstid");
-            t("i0e5bf4c", "Dine videoer"),
+                t("if2909ba", "Visningstid"),
+                t("i0e5bf4c", "Dine videoer"),
                 t("ed99baea", "Tidlig betatilgang"),
                 t("gf898b70", "Avansert søk"),
                 t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
@@ -5877,13 +5882,13 @@
                 t("b92a21d9", function (e) {
                     return "Ingen resultater for «" + e.query + "»";
                 }),
-                t("f191a2ba", "søkeinnstillingene"),
-                t("a068008a", "Mapper kan ikke lastes inn nå"),
+                t("f191a2ba", "søkeinnstillingene");
+            t("a068008a", "Mapper kan ikke lastes inn nå"),
                 t("f075b0e8", "Rediger mappe"),
-                t("beba2a0e", "Opprett en ny bokmerkemappe");
-            t("e41c9b4f", function (e) {
-                return "Saved to " + e.bookmarkFolderName;
-            }),
+                t("beba2a0e", "Opprett en ny bokmerkemappe"),
+                t("e41c9b4f", function (e) {
+                    return "Saved to " + e.bookmarkFolderName;
+                }),
                 t("h18f86a4", "Slett mappe"),
                 t("f4ea967a", "Mappen er slettet"),
                 t("b670aa62", "Mappenavn"),
@@ -6883,13 +6888,13 @@
                 t("eef1ae76", "Tilkoblet for øyeblikket"),
                 t("a915f5c1", function (e) {
                     return e.ats + " er tilkoblet";
-                }),
-                t("af7286b7", function (e) {
-                    return "Spar " + e.percentage + " % på et år med Premium";
-                }),
+                });
+            t("af7286b7", function (e) {
+                return "Spar " + e.percentage + " % på et år med Premium";
+            }),
                 t("c924ad84", "La videoene spilles av"),
-                t("de750a3c", "Les dem selv om telefonen er låst");
-            t("he5e87c4", "Frem svarene dine"),
+                t("de750a3c", "Les dem selv om telefonen er låst"),
+                t("he5e87c4", "Frem svarene dine"),
                 t("g64a60ba", "Få en liten prioritering når du svarer på innlegg"),
                 t("a7ee832a", "Rett opp trykkfeil og andre feil i opptil 60 minutter"),
                 t("fdd77a34", "Skriv lengre innlegg"),
@@ -7386,6 +7391,11 @@
                 t("bd05add8", "Ikke en robot"),
                 t("d94f12b6", "Prøv å søke etter varsler, personvern osv."),
                 t("ba8f6f82", "Søk i innstillinger"),
+                t("ibf92e4a", "Payment Successful"),
+                t("bdf0fb06", "Your subscription has been activated."),
+                t("ddfd6718", "Betalingen mislyktes"),
+                t("d42fa852", "There was an issue processing your payment. Please try again."),
+                t("g055a9ce", "Open 𝕏 App"),
                 t("g931a6e5", function (e) {
                     return "Du følger " + e.topic;
                 }),
@@ -7860,17 +7870,7 @@
                 t("a76d58ba", "Annonsestatistikk"),
                 t("eccd0e1a", "Organisasjonsstatistikk"),
                 t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
-                t("eb603ffc", "Oppgrader for å tilknytte nettverket ditt og se aggregert statistikk."),
-                t("gf67aae4", "Oppgrader til full tilgang"),
-                t("h75e3618", "Ta med organisasjon"),
-                t("h24a8862", "Om denne avmerkingsboksen"),
-                t("c29e3a88", "Velg tilknyttede kontoer"),
-                t("j8318d57", function (e) {
-                    return e.number + " tilknytte" + i(e.number, "t konto", "de kontoer");
-                }),
-                t("bf809ec0", "Velg tilknyttede kontoer"),
-                t("b719e224", "Ingen resultater"),
-                t("c9938100", "Søkeresultater");
+                t("eb603ffc", "Oppgrader for å tilknytte nettverket ditt og se aggregert statistikk.");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7909,7 +7909,17 @@
                     d(e, n)
                 );
             }
-            t("d1a35ec6", "Legg til kontoer"),
+            t("gf67aae4", "Oppgrader til full tilgang"),
+                t("h75e3618", "Ta med organisasjon"),
+                t("h24a8862", "Om denne avmerkingsboksen"),
+                t("c29e3a88", "Velg tilknyttede kontoer"),
+                t("j8318d57", function (e) {
+                    return e.number + " tilknytte" + i(e.number, "t konto", "de kontoer");
+                }),
+                t("bf809ec0", "Velg tilknyttede kontoer"),
+                t("b719e224", "Ingen resultater"),
+                t("c9938100", "Søkeresultater"),
+                t("d1a35ec6", "Legg til kontoer"),
                 t("b437adda", "Oppgrader til betalt"),
                 t("f1f6c88b", function (e) {
                     return "Kontoer (" + e.count + ")";
@@ -7963,7 +7973,6 @@
                 t("b4fef99e", "Når støtteteamet vårt har mottatt forespørselen, vil vi gå gjennom informasjonen og hjelpe deg å konfigurere integrasjonen din."),
                 t("h37f2d96", "Vær obs på at ikke alle kandidatsystemer støttes for øyeblikket."),
                 t("ce102a20", "Omdirigerer til Stripe"),
-                t("ddfd6718", "Betalingen mislyktes"),
                 t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
                 t("a62359e6", "Innstillinger for verifisert organisasjon"),
                 t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
@@ -8899,10 +8908,10 @@
                 t("j0c6772a", "Besøk nettstedet"),
                 t("f73003aa", "Videoen spilles av etter annonsen"),
                 t("b3112b8a", "Hopp over"),
-                t("h6333ad0", "Hopp over annonse"),
-                t("c59da417", function (e) {
-                    return "Hopp over annonse om " + e.seconds;
-                }),
+                t("h6333ad0", "Hopp over annonse");
+            t("c59da417", function (e) {
+                return "Hopp over annonse om " + e.seconds;
+            }),
                 t("c3c147cf", function (e) {
                     return "Hopp over " + e.seconds;
                 }),
@@ -8912,8 +8921,8 @@
                     return "Automatisk (" + e.quality + ")";
                 }),
                 t("a7bf9962", "Last ned video"),
-                t("ccc97152", "Avspillingshastighet");
-            t("h531ade0", "Videokvalitet"),
+                t("ccc97152", "Avspillingshastighet"),
+                t("h531ade0", "Videokvalitet"),
                 t("e8b5757c", "0,25 x"),
                 t("e7e954de", "0,5 x"),
                 t("g07ffe66", "0,75 x"),
@@ -10136,9 +10145,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Basert på bruken av X og språkinnstillingene blir " + this.props.sourceLang + " oversatt automatisk av Grok. Hvilke språk som skal oversettes automatisk, kan du angi i ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13338,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.778adcca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.8bd5666a.js.map

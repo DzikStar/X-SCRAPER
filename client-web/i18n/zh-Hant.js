@@ -225,9 +225,9 @@
                     return e.tier + " " + e.plan + " " + e.percentage + "% 折扣";
                 }),
                 n("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "在今年夏天享有 " + e.percentage + "% 折扣";
                 }),
-                n("he77d8e6", "Limited-time offer"),
+                n("he77d8e6", "限時優惠"),
                 n("adf3410a", "訂閱即可解鎖新功能，若符合資格，還可獲得收益分成。"),
                 n("a84a736e", "獲得免費廣告抵用金"),
                 n("a0713d76", "升級至已認證組織，即可獲得免費廣告抵用金和一套業務成長工具。"),
@@ -1293,7 +1293,7 @@
                     return "正在 𝕏 中搜尋「" + e.query + "」";
                 }),
                 n("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return "正在 𝕏 使用者中搜尋「" + e.query + "」";
                 }),
                 n("g008d475", function (e) {
                     return "正在瀏覽 " + e.url;
@@ -1314,7 +1314,7 @@
                     return "正在 @" + e.username + " 的 𝕏 貼文中搜尋**「" + e.query + "」**";
                 }),
                 n("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "正在執行程式碼" + e.ttc_tool_usage_card;
                 }),
                 n("ead81122", "發生錯誤，請重新整理以重新連線或再試一次。"),
                 n("f808a13a", "已超出使用頻率限制。請稍後再試。"),
@@ -1348,12 +1348,12 @@
                 n("deaf5b16", "重試"),
                 n("a66d80d0", "翻譯貼文"),
                 n("be9b9fb8", "由 Grok 翻譯"),
-                n("ba10dab6", "Auto-translated by Grok"),
+                n("ba10dab6", "由 Grok 自動翻譯"),
                 n("he9c9634", "無法取得翻譯"),
                 n("j2198c98", "隱藏翻譯的貼文"),
                 n("d4d35bea", "翻譯中…"),
-                n("f4f69be8", "Show original"),
-                n("e3097a5c", "Show auto-translated post"),
+                n("f4f69be8", "顯示原文"),
+                n("e3097a5c", "顯示自動翻譯的貼文"),
                 n("e0f81ff3", "翻譯："),
                 n("j2862695", function (e) {
                     return "Translated from " + e.originLanguage + " by";
@@ -1361,7 +1361,12 @@
                 n("b7cb4fab", "由"),
                 n("e0bffbf8", "關於自動翻譯"),
                 n("e839db3a", "關閉"),
-                n("a15585b4", "語言設定"),
+                n("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                n("c60b9e5c", "Changes will take effect for newly loaded content."),
+                n("c6ad999b", "languages settings"),
+                n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return "來自 " + e.fullName + " (@" + e.screenName + ") 的貼文";
                 }),
@@ -1917,11 +1922,11 @@
                 }),
                 n("ad89b831", function (e) {
                     return "已啟用" + e.ttc_rich_text_composer;
-                }),
-                n("jcd5ee8a", "編輯區塊"),
+                });
+            n("jcd5ee8a", "編輯區塊"),
                 n("a8f09fb8", "刪除區塊"),
-                n("i89195ea", "分隔線");
-            n("da8ac57c", "編輯說明文字"),
+                n("i89195ea", "分隔線"),
+                n("da8ac57c", "編輯說明文字"),
                 n("a8fdd09c", "發佈文章"),
                 n("d8047cc8", "發佈"),
                 n("ff7ddca2", "發佈後，你的文章將顯示為貼文。此外，你可以在個人資料的「文章」標籤下找到它。"),
@@ -2969,15 +2974,15 @@
                 n("j43f99be", "相關性"),
                 n("ad6e11ac", "回覆排序方式"),
                 n("b2311b70", "你無法查看此內容"),
-                n("j88f27d8", "相關人士"),
-                n("i31dcd22", "文章"),
+                n("j88f27d8", "相關人士");
+            n("i31dcd22", "文章"),
                 n("e3de2f6f", function (e) {
                     return e.entity + "已加入至你的書籤";
                 }),
                 n("e64de8a9", function (e) {
                     return e.entity + "已從你的書籤中移除";
-                });
-            n("d6d9aab6", "加入書籤"),
+                }),
+                n("d6d9aab6", "加入書籤"),
                 n("bb89cf46", "移除書籤"),
                 n("a739d4ba", "加入至書籤資料夾"),
                 n("d5270434", "結束"),
@@ -3899,11 +3904,11 @@
                 n("c3b5b829", function (e) {
                     return e.count + " 個請求";
                 }),
-                n("fe7a1910", "發送邀請"),
-                n("ic3c757e", "搜尋使用者"),
+                n("fe7a1910", "發送邀請");
+            n("ic3c757e", "搜尋使用者"),
                 n("cd133486", "邀請"),
-                n("f2333850", "與 X 平台外的人分享");
-            n("cddb8097", "了解更多"),
+                n("f2333850", "與 X 平台外的人分享"),
+                n("cddb8097", "了解更多"),
                 n("f77997b0", "共同主持人"),
                 n("i48f4ed8", "說話者"),
                 n("a77c8e02", "聆聽者"),
@@ -4262,7 +4267,7 @@
                     return "顯示全部 (" + e.count + ")";
                 }),
                 n("df601d92", "相關使用者"),
-                n("a4cfb8a8", "Browsing"),
+                n("a4cfb8a8", "正在瀏覽"),
                 n("d7cb5408", "個相關網頁"),
                 n("ca93f2ee", "此訊息已被刪除。"),
                 n("b8c06820", "複製文字"),
@@ -4923,11 +4928,11 @@
                 n("c8410542", "你影片獲得觀看的次數。"),
                 n("a532072a", "觀眾"),
                 n("d9508ab0", "次觀看"),
-                n("d9f9dec0", "查看音訊空間"),
-                n("h0c1f37a", "查看音訊空間分析"),
+                n("d9f9dec0", "查看音訊空間");
+            n("h0c1f37a", "查看音訊空間分析"),
                 n("e41fffbc", "你影片的總觀看時間。"),
-                n("if2909ba", "觀看時間");
-            n("i0e5bf4c", "你的影片"),
+                n("if2909ba", "觀看時間"),
+                n("i0e5bf4c", "你的影片"),
                 n("ed99baea", "搶先體驗 Beta 版"),
                 n("gf898b70", "進階搜尋"),
                 n("d2a43a7a", '同時包含 "ai" 和 "啟動"'),
@@ -5877,13 +5882,13 @@
                 n("b92a21d9", function (e) {
                     return "沒有與「" + e.query + "」相符的結果";
                 }),
-                n("f191a2ba", "搜尋設定"),
-                n("a068008a", "資料夾目前無法載入"),
+                n("f191a2ba", "搜尋設定");
+            n("a068008a", "資料夾目前無法載入"),
                 n("f075b0e8", "編輯資料夾"),
-                n("beba2a0e", "建立新的書籤資料夾");
-            n("e41c9b4f", function (e) {
-                return "Saved to " + e.bookmarkFolderName;
-            }),
+                n("beba2a0e", "建立新的書籤資料夾"),
+                n("e41c9b4f", function (e) {
+                    return "Saved to " + e.bookmarkFolderName;
+                }),
                 n("h18f86a4", "刪除資料夾"),
                 n("f4ea967a", "資料夾已刪除"),
                 n("b670aa62", "資料夾名稱"),
@@ -6497,7 +6502,7 @@
                 n("f7cf3d36", "Grok 是由 xAI 設計的免費 AI 助理，旨在大幅提高真實性和客觀性。Grok 提供即時搜尋、圖片產生、趨勢分析及更多功能。"),
                 n("hc965308", "趣味"),
                 n("eb78b77e", "趣味模式"),
-                n("ac164552", "Go to grok.com"),
+                n("ac164552", "前往 grok.com"),
                 n("gb5fb7d0", "聚焦模式"),
                 n("g5665caa", "退出聚焦模式"),
                 n("a372681e", "複製分享連結"),
@@ -6883,13 +6888,13 @@
                 n("eef1ae76", "目前已連線"),
                 n("a915f5c1", function (e) {
                     return e.ats + " 已連線";
-                }),
-                n("af7286b7", function (e) {
-                    return "取得一年份 Premium 可享 " + e.percentage + "% 折扣";
-                }),
+                });
+            n("af7286b7", function (e) {
+                return "取得一年份 Premium 可享 " + e.percentage + "% 折扣";
+            }),
                 n("c924ad84", "保持影片播放"),
-                n("de750a3c", "即使手機處於鎖定狀態也能享用");
-            n("he5e87c4", "提升你的回覆"),
+                n("de750a3c", "即使手機處於鎖定狀態也能享用"),
+                n("he5e87c4", "提升你的回覆"),
                 n("g64a60ba", "在回覆貼文時，獲得較小的優先權"),
                 n("a7ee832a", "修正錯字和錯誤，最長 60 分鐘"),
                 n("fdd77a34", "建立更長的貼文"),
@@ -6988,9 +6993,9 @@
                 n("gd573390", "以及基本方案中的一切…"),
                 n("ef94bbd4", "取得 Premium+"),
                 n("dcd830ce", "以及 Premium 中的一切…"),
-                n("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                n("dde0dbe0", "享有夏季優惠，剩餘時間："),
                 n("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "夏季優惠將於 " + e.date + "截止。";
                 }),
                 n("b7dde622", "感恩節快樂！優惠時間還剩："),
                 n("i0180ca1", function (e) {
@@ -7386,6 +7391,11 @@
                 n("bd05add8", "不是機器人"),
                 n("d94f12b6", "嘗試搜尋通知、隱私等。"),
                 n("ba8f6f82", "搜尋設定"),
+                n("ibf92e4a", "付款成功"),
+                n("bdf0fb06", "Your subscription has been activated."),
+                n("ddfd6718", "付款失敗"),
+                n("d42fa852", "處理你的付款時出現問題。請再試一次。"),
+                n("g055a9ce", "Open 𝕏 App"),
                 n("g931a6e5", function (e) {
                     return "你正在跟隨 " + e.topic;
                 }),
@@ -7860,17 +7870,7 @@
                 n("a76d58ba", "廣告分析"),
                 n("eccd0e1a", "組織分析"),
                 n("deea1708", "想要查看你的所有 X 帳戶的分析嗎？"),
-                n("eb603ffc", "升級以建立附屬網路並查看彙總分析。"),
-                n("gf67aae4", "升級至完整權益"),
-                n("h75e3618", "包含組織"),
-                n("h24a8862", "關於此核取方塊"),
-                n("c29e3a88", "選取附屬帳戶"),
-                n("j8318d57", function (e) {
-                    return e.number + " 個附屬帳戶";
-                }),
-                n("bf809ec0", "選取附屬帳戶"),
-                n("b719e224", "沒有結果"),
-                n("c9938100", "搜尋結果");
+                n("eb603ffc", "升級以建立附屬網路並查看彙總分析。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7909,7 +7909,17 @@
                     r(e, c)
                 );
             }
-            n("d1a35ec6", "加入帳戶"),
+            n("gf67aae4", "升級至完整權益"),
+                n("h75e3618", "包含組織"),
+                n("h24a8862", "關於此核取方塊"),
+                n("c29e3a88", "選取附屬帳戶"),
+                n("j8318d57", function (e) {
+                    return e.number + " 個附屬帳戶";
+                }),
+                n("bf809ec0", "選取附屬帳戶"),
+                n("b719e224", "沒有結果"),
+                n("c9938100", "搜尋結果"),
+                n("d1a35ec6", "加入帳戶"),
                 n("b437adda", "升級至付費"),
                 n("f1f6c88b", function (e) {
                     return "帳戶 (" + e.count + ")";
@@ -7963,7 +7973,6 @@
                 n("b4fef99e", "在我們的支援團隊收到你的請求後，將會審核你的資訊並協助設定整合。"),
                 n("h37f2d96", "請注意，並非所有應徵者追蹤系統目前均受支援。"),
                 n("ce102a20", "正在重新導向到 Stripe"),
-                n("ddfd6718", "付款失敗"),
                 n("i90ea7d2", "請立即更新你的帳單資訊以保留你的權益。"),
                 n("a62359e6", "已認證組織設定"),
                 n("ge221b7c", "升級「已認證組織」訂閱，以存取附屬帳戶並獲得更多廣告抵用金。"),
@@ -8899,10 +8908,10 @@
                 n("j0c6772a", "造訪網站"),
                 n("f73003aa", "影片將在廣告之後播放"),
                 n("b3112b8a", "略過"),
-                n("h6333ad0", "略過廣告"),
-                n("c59da417", function (e) {
-                    return e.seconds + "後略過廣告";
-                }),
+                n("h6333ad0", "略過廣告");
+            n("c59da417", function (e) {
+                return e.seconds + "後略過廣告";
+            }),
                 n("c3c147cf", function (e) {
                     return e.seconds + "後略過";
                 }),
@@ -8912,8 +8921,8 @@
                     return "自動 (" + e.quality + ")";
                 }),
                 n("a7bf9962", "下載影片"),
-                n("ccc97152", "播放速度");
-            n("h531ade0", "影片畫質"),
+                n("ccc97152", "播放速度"),
+                n("h531ade0", "影片畫質"),
                 n("e8b5757c", "0.25 倍"),
                 n("e7e954de", "0.5 倍"),
                 n("g07ffe66", "0.75 倍"),
@@ -10146,9 +10155,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["根據你的 X 使用情況和語言設定，Grok 將自動翻譯" + this.props.sourceLang + "。若要選取自動翻譯的語言，請造訪", "。"];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13007,8 +13016,8 @@
                 y = (m._currencyNameFormat, m._currencyFormatterFn),
                 k = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 p = (m._dateFormat, m._dateFormatterFn),
-                j = m._relativeTimeFormatterFn,
-                l = m._unitFormatterFn;
+                l = m._relativeTimeFormatterFn,
+                j = m._unitFormatterFn;
             (m.a1844743793 = h(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { other: "0" }, 4: { other: "0萬" }, 5: { other: "00萬" }, 6: { other: "000萬" }, 7: { other: "0000萬" }, 8: { other: "0億" }, 9: { other: "00億" }, 10: { other: "000億" }, 11: { other: "0000億" }, 12: { other: "0兆" }, 13: { other: "00兆" }, 14: { other: "000兆" }, maxExponent: 14 }], m("zh-Hant").pluralGenerator({}))),
                 (m.a1393757629 = h(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
                 (m.a917643357 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13207,23 +13216,23 @@
                 (m.a2136887717 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b166302607 = p(m("zh-Hant").dateToPartsFormatter({ date: "medium" }))),
                 (m.a883642277 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.a913265705 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
-                (m.a1728784644 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "每秒 {0}" } })),
-                (m.b158178652 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "每分鐘 {0}" } })),
-                (m.b1120716236 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "每小時 {0}" } })),
-                (m.a901064517 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
-                (m.a5535973 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
-                (m.b1575113611 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
-                (m.b313558257 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "{0}/天" } })),
-                (m.a266069838 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "每天 {0}" } })),
-                (m.b1088937037 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "{0}/月" } })),
-                (m.a1883138290 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "每月 {0}" } })),
-                (m.b170551218 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "{0}/年" } })),
-                (m.a360073293 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "每年 {0}" } })),
-                (m.b508927224 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
-                (m.a1124752744 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
-                (m.a1350858712 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
-                (m.b197980252 = l(m("zh-Hant").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a913265705 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
+                (m.a1728784644 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "每秒 {0}" } })),
+                (m.b158178652 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "每分鐘 {0}" } })),
+                (m.b1120716236 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "每小時 {0}" } })),
+                (m.a901064517 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a5535973 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
+                (m.b1575113611 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
+                (m.b313558257 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "{0}/天" } })),
+                (m.a266069838 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "每天 {0}" } })),
+                (m.b1088937037 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "{0}/月" } })),
+                (m.a1883138290 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "每月 {0}" } })),
+                (m.b170551218 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "{0}/年" } })),
+                (m.a360073293 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "每年 {0}" } })),
+                (m.b508927224 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a1124752744 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
+                (m.a1350858712 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
+                (m.b197980252 = j(m("zh-Hant").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
                 n("d58baa7f", m.a1844743793),
                 n("ia24dc8d", m.a1393757629),
                 n("iab73d4b", m.a917643357),
@@ -13348,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.3a20b61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.c642504a.js.map

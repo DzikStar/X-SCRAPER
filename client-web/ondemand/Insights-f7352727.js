@@ -18,10 +18,10 @@
                 p = n(749612),
                 h = n(970430),
                 y = n(332161),
-                f = n(31674),
-                x = n(947727),
-                k = n(733936),
-                v = n(968025),
+                f = n(905394),
+                x = n(31674),
+                k = n(947727),
+                v = n(733936),
                 b = n(759397),
                 _ = n(256958),
                 F = n(993165),
@@ -35,7 +35,7 @@
                         [c] = (0, w.useMutation)(L),
                         { deleteInsight: g, insightList: m, setInsightList: p } = (0, I.wQ)(),
                         [h, y] = r.useState(!1),
-                        x = (0, t.$8)();
+                        f = (0, t.$8)();
                     return (0, a.jsx)(T, {
                         isOpen: h,
                         setIsOpen: y,
@@ -45,10 +45,10 @@
                             g(n),
                                 c({
                                     onCompleted: (l) => {
-                                        "InsightRuleFailure" === l.delete_insight_rule_v2?.__typename ? (p(e), (0, _.Am)(u.radar.failedToDeleteQuery), x.scribe({ action: "delete_failure", element: "insight_list_item", page: "insights_list" })) : x.scribe({ action: "delete", element: "insight_list_item", page: "insights_list" });
+                                        "InsightRuleFailure" === l.delete_insight_rule_v2?.__typename ? (p(e), (0, _.Am)(u.radar.failedToDeleteQuery), f.scribe({ action: "delete_failure", element: "insight_list_item", page: "insights_list" })) : f.scribe({ action: "delete", element: "insight_list_item", page: "insights_list" });
                                     },
                                     onError: () => {
-                                        p(e), (0, _.Am)(u.radar.failedToDeleteQuery), x.scribe({ action: "delete_failure", element: "insight_list_item", page: "insights_list" });
+                                        p(e), (0, _.Am)(u.radar.failedToDeleteQuery), f.scribe({ action: "delete_failure", element: "insight_list_item", page: "insights_list" });
                                     },
                                     variables: { id: n },
                                 });
@@ -57,7 +57,7 @@
                             onClick: (e) => {
                                 e.stopPropagation(), y(!0), i?.(e);
                             },
-                            className: (0, f.cn)("text-gray-1000 hover:bg-gray-0 flex items-center gap-1 rounded border bg-gray-50/50 p-1", l),
+                            className: (0, x.cn)("text-gray-1000 hover:bg-gray-0 flex items-center gap-1 rounded border bg-gray-50/50 p-1", l),
                             style: s,
                             type: "button",
                             children: e || (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(K.Z, { className: "brightness-75" }), (0, a.jsx)("div", { className: "text-subtext3 font-normal", children: u.radar.delete })] }),
@@ -124,11 +124,11 @@
                     i = (0, p.$W)(),
                     s = (0, p.No)(),
                     o = (0, p.CM)(),
-                    u = (0, v.t)(),
+                    u = (0, f.d)(),
                     c = (0, p.nO)(),
                     g = +e.id.slice(-1) % 2 == 1 ? "#D1C6AA" : "#AACFD1",
-                    m = (0, r.useMemo)(() => (0, x.T)(new h.eJ()), []),
-                    _ = (0, r.useMemo)(() => (0, k.k)(m, 7), [m]),
+                    m = (0, r.useMemo)(() => (0, k.T)(new h.eJ()), []),
+                    _ = (0, r.useMemo)(() => (0, v.k)(m, 7), [m]),
                     [F, j] = (0, r.useState)(null),
                     [K, w] = (0, r.useState)(0),
                     I = (0, r.useRef)(null),
@@ -169,7 +169,7 @@
                                 0 === K ? (n.scribe({ action: "click", data: { rule_id: e.id }, element: "insight_list_item", page: "insights_list" }), u.push(`${c}/${e.id}`)) : w(0);
                             },
                             children: [
-                                (0, a.jsxs)("div", { className: "flex h-full w-full flex-col gap-2", children: [(0, a.jsxs)("div", { className: "flex flex-col gap-1 md:flex-row md:items-center md:gap-4", children: [(0, a.jsx)("div", { className: (0, f.cn)("text-headline2 line-clamp-1 font-bold", { "text-gray-600": 0 === e.title.length, "text-text": e.title.length > 0 }), children: e.title.length > 0 ? e.title : l.radar.untitledQuery }), (0, a.jsx)(y.x, { color: "gray600", size: "subtext3", children: new Intl.DateTimeFormat("en-US", { day: "numeric", month: "short", year: "numeric" }).format(new Date(e.createdAt)) })] }), (0, a.jsx)("div", { className: "flex gap-2", children: e.advancedQuery ? (0, a.jsx)(y.x, { size: "subtext2", color: "gray800", numberOfLines: 1, children: e.advancedQuery }) : e.tags?.map((e) => (0, a.jsx)("div", { className: "flex h-6 items-center rounded border px-2", children: (0, a.jsx)(y.x, { size: "subtext3", children: e }) }, e)) }), (0, a.jsxs)("div", { className: "flex-2 hidden gap-2 md:flex", children: [(0, a.jsx)("div", { className: "flex items-center gap-2", children: (0, a.jsx)(N, { id: e.id, title: e.title.length > 0 ? e.title : l.radar.untitledQuery, className: "h-full opacity-0 transition-opacity hover:bg-gray-100 group-hover:opacity-100" }) }), o && (0, a.jsx)("div", { className: "flex items-center gap-2", children: (0, a.jsx)(Q.s, { id: e.id, advancedQuery: e.advancedQuery || "", notificationsEnabled: e.notificationsEnabled, className: (0, f.cn)("h-full opacity-0 transition-opacity hover:bg-gray-100 group-hover:opacity-100", "flex items-center gap-1 rounded border p-1"), displayInfo: !1, page: "insights_list" }) })] })] }),
+                                (0, a.jsxs)("div", { className: "flex h-full w-full flex-col gap-2", children: [(0, a.jsxs)("div", { className: "flex flex-col gap-1 md:flex-row md:items-center md:gap-4", children: [(0, a.jsx)("div", { className: (0, x.cn)("text-headline2 line-clamp-1 font-bold", { "text-gray-600": 0 === e.title.length, "text-text": e.title.length > 0 }), children: e.title.length > 0 ? e.title : l.radar.untitledQuery }), (0, a.jsx)(y.x, { color: "gray600", size: "subtext3", children: new Intl.DateTimeFormat("en-US", { day: "numeric", month: "short", year: "numeric" }).format(new Date(e.createdAt)) })] }), (0, a.jsx)("div", { className: "flex gap-2", children: e.advancedQuery ? (0, a.jsx)(y.x, { size: "subtext2", color: "gray800", numberOfLines: 1, children: e.advancedQuery }) : e.tags?.map((e) => (0, a.jsx)("div", { className: "flex h-6 items-center rounded border px-2", children: (0, a.jsx)(y.x, { size: "subtext3", children: e }) }, e)) }), (0, a.jsxs)("div", { className: "flex-2 hidden gap-2 md:flex", children: [(0, a.jsx)("div", { className: "flex items-center gap-2", children: (0, a.jsx)(N, { id: e.id, title: e.title.length > 0 ? e.title : l.radar.untitledQuery, className: "h-full opacity-0 transition-opacity hover:bg-gray-100 group-hover:opacity-100" }) }), o && (0, a.jsx)("div", { className: "flex items-center gap-2", children: (0, a.jsx)(Q.s, { id: e.id, advancedQuery: e.advancedQuery || "", notificationsEnabled: e.notificationsEnabled, className: (0, x.cn)("h-full opacity-0 transition-opacity hover:bg-gray-100 group-hover:opacity-100", "flex items-center gap-1 rounded border p-1"), displayInfo: !1, page: "insights_list" }) })] })] }),
                                 (0, a.jsxs)("div", { className: "flex h-full justify-end gap-12", children: [i && (0, a.jsx)("div", { className: "hidden w-36 flex-col gap-2 md:flex", children: s && (0, a.jsx)("div", { children: (0, a.jsx)(b.g, { ruleId: e.id, fetchKey: e.advancedQuery, timeRange: { fromDate: _, toDate: m } }) }) }), e.preview && (0, a.jsx)("div", { className: "flex w-24 flex-col items-end md:w-72", children: (0, a.jsx)(C, { preview: e.preview, color: g }) })] }),
                             ],
                         }),
@@ -543,4 +543,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-f7352727.86d5698a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-f7352727.5c150e4a.js.map

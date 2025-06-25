@@ -43,7 +43,7 @@
             const c = (0, a.ZP)(i(l));
         },
         337523: (e, t, o) => {
-            o.d(t, { Z: () => Te });
+            o.d(t, { Z: () => we });
             var n = o(202784),
                 a = o(457311),
                 r = o(708852),
@@ -60,8 +60,8 @@
                 p = o(507651),
                 S = o(3138),
                 m = o(655352),
-                T = o(503229),
-                w = o(71620),
+                w = o(503229),
+                T = o(71620),
                 C = o(668214);
             const I = (e, t) => t.module.selectInitialFetchStatus(e),
                 A = (e, t) => t.module.selectPageConfiguration && t.module.selectPageConfiguration(e),
@@ -72,7 +72,7 @@
                 },
                 D = (0, C.Z)()
                     .propsFromState(() => ({ initialFetchStatus: I, pageConfiguration: A, selectedTab: N }))
-                    .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, w.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
+                    .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, T.zr)("RICH_SEGMENTED_TIMELINE"), fetchInitial: e.fetchInitial }))
                     .withAnalytics();
             class f extends n.Component {
                 constructor(...e) {
@@ -133,31 +133,31 @@
                     }
                 }
             }
-            const R = D((0, T.Z)(f));
+            const R = D((0, w.Z)(f));
             var O = o(912021),
                 g = o(383675),
                 U = o(611423),
                 L = o(443781);
-            const M = (0, o(523561).Z)({
+            const y = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.21"),
-                        o.e("icons.16"),
-                        o.e("icons.10"),
-                        o.e("icons.19"),
-                        o.e("icons.1"),
                         o.e("icons.0"),
-                        o.e("icons.8"),
+                        o.e("icons.5"),
+                        o.e("icons.12"),
+                        o.e("icons.20"),
                         o.e("icons.2"),
+                        o.e("icons.21"),
+                        o.e("icons.28"),
+                        o.e("icons.10"),
+                        o.e("icons.17"),
+                        o.e("icons.9"),
                         o.e("icons.23"),
-                        o.e("icons.3"),
-                        o.e("icons.4"),
-                        o.e("icons.15"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.9"),
-                        o.e("icons.7"),
-                        o.e("icons.28"),
+                        o.e("icons.22"),
+                        o.e("icons.14"),
+                        o.e("icons.25"),
+                        o.e("icons.13"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -168,25 +168,24 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.26"),
-                        o.e("icons.24"),
-                        o.e("icons.29"),
+                        o.e("icons.6"),
+                        o.e("icons.3"),
+                        o.e("icons.4"),
+                        o.e("icons.1"),
+                        o.e("icons.8"),
                         o.e("icons.18"),
-                        o.e("icons.13"),
-                        o.e("icons.25"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -203,7 +202,6 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -251,9 +249,9 @@
                         o.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         o.e("shared~bundle.News~ondemand.News~loader.ExploreNews"),
                         o.e("loader.ExploreNews"),
-                    ]).then(o.bind(o, 169698)),
+                    ]).then(o.bind(o, 568527)),
             });
-            var y = o(810641);
+            var M = o(810641);
             const F = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
                 P = (e, t) => {
                     const o = t.selectedTabId,
@@ -262,7 +260,7 @@
                 },
                 B = (0, C.Z)()
                     .propsFromState(() => ({ pageConfiguration: F, selectedTab: P }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, w.zr)("RICH_SEGMENTED_TIMELINE") }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, T.zr)("RICH_SEGMENTED_TIMELINE") }))
                     .withAnalytics();
             class Z extends n.Component {
                 constructor(...e) {
@@ -295,11 +293,11 @@
                 }
                 render() {
                     const { entryConfiguration: e, initialModule: t, pageConfiguration: o, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, selectedTab: i, timelinePrefix: l, title: c, withoutHeadroom: u } = this.props;
-                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return n.createElement(M, null);
+                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return n.createElement(y, null);
                     const E = this._getModule(i, o?.tabs?.initialTabId, t, l),
                         b = this._getRefreshIntervalSecForCurrentTab(),
                         h = b ? 1e3 * b : void 0;
-                    return n.createElement(_.nO, { namespace: this._getTimelineNamespace() }, n.createElement(y.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: h, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, title: c, withoutHeadroom: u }));
+                    return n.createElement(_.nO, { namespace: this._getTimelineNamespace() }, n.createElement(M.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: h, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, title: c, withoutHeadroom: u }));
                 }
             }
             Z.contextType = L.rC;
@@ -375,12 +373,12 @@
                 pe = i().e9f1fbcc,
                 Se = n.createElement(c.Z, null),
                 me = (e) => {
-                    const { TabBar: t, backLocation: o, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: p, history: S, initialFetchStatus: m, initialPageNamespace: T, logoButton: w, module: C, onBackClick: I, pageConfiguration: A, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, rightControl: O, selectedTabId: g, sidebarContent: U, timelinePrefix: L, title: M, withAppLinks: y, withBottomLoginSignupBar: F, withOpenGraphMeta: P, withSearchBox: B, withTweetButton: Z } = e,
+                    const { TabBar: t, backLocation: o, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: p, history: S, initialFetchStatus: m, initialPageNamespace: w, logoButton: T, module: C, onBackClick: I, pageConfiguration: A, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, rightControl: O, selectedTabId: g, sidebarContent: U, timelinePrefix: L, title: y, withAppLinks: M, withBottomLoginSignupBar: F, withOpenGraphMeta: P, withSearchBox: B, withTweetButton: Z } = e,
                         k = (0, r.tj)(),
                         x = n.useMemo(() => ({ ...d, ...(0, H.Z)({ isLegacy: !0, isWide: k }) }), [d, k]),
                         [G, Q] = n.useState(!0),
                         { header: W, navBar: q, subtitle: j, title: z } = A || {},
-                        K = m === b.Z.LOADED ? z || M : "",
+                        K = m === b.Z.LOADED ? z || y : "",
                         Y = ((e, t, o) => {
                             const n = t?.scribeConfig,
                                 { entityToken: a, ...r } = n || {},
@@ -389,16 +387,16 @@
                                 i = s?.tabs.find((e) => e.id === d),
                                 { entityToken: c, ...u } = i?.scribeConfig || {};
                             return (0, l.Z)({}, o, r, u);
-                        })(g, A, T),
+                        })(g, A, w),
                         $ = W ? n.createElement(V, { header: W, onHeaderVisible: Q }) : null,
-                        J = q ? n.createElement(he, { isHeaderOffscreen: !G, navBar: q, pageNamespace: Y, withAppLinks: y, withOpenGraphMeta: P }) : null,
-                        X = n.createElement(n.Fragment, null, $, n.createElement(v, { entryConfiguration: x, initialModule: C, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, selectedTabId: g, timelinePrefix: L, title: M, withoutHeadroom: !0 })),
+                        J = q ? n.createElement(he, { isHeaderOffscreen: !G, navBar: q, pageNamespace: Y, withAppLinks: M, withOpenGraphMeta: P }) : null,
+                        X = n.createElement(n.Fragment, null, $, n.createElement(v, { entryConfiguration: x, initialModule: C, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, selectedTabId: g, timelinePrefix: L, title: y, withoutHeadroom: !0 })),
                         ee = i ? n.createElement(u.Z, { component: s.Z, fab: i }, X) : X,
                         te = c && p ? n.createElement(R, { getTabLink: c, module: C, selectedTabId: g }) : void 0;
-                    return n.createElement(_.nO, { namespace: Y }, n.createElement(h.Z, null, n.createElement(E.Z, { TabBar: t, backLocation: o, documentTitle: a, history: S, logoButton: w, onBackClick: I, primaryContent: ee, rightControl: J || O, secondaryBar: te, sidebarContent: U, subtitle: j, title: $ && G ? M : K, withBottomLoginSignupBar: F, withSearchBox: B, withTweetButton: Z })));
+                    return n.createElement(_.nO, { namespace: Y }, n.createElement(h.Z, null, n.createElement(E.Z, { TabBar: t, backLocation: o, documentTitle: a, history: S, logoButton: T, onBackClick: I, primaryContent: ee, rightControl: J || O, secondaryBar: te, sidebarContent: U, subtitle: j, title: $ && G ? y : K, withBottomLoginSignupBar: F, withSearchBox: B, withTweetButton: Z })));
                 };
             me.defaultProps = { entryConfiguration: (0, k.G)({}), renderEmptyState: () => n.createElement(a.Z, { header: pe }), sidebarContent: Se, withAppLinks: !1, withOpenGraphMeta: !1 };
-            const Te = ee(me);
+            const we = ee(me);
         },
         709070: (e, t, o) => {
             o.d(t, { Z: () => r });
@@ -509,123 +507,124 @@
             const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
         979090: (e, t, o) => {
-            o.d(t, { $e: () => Re, BG: () => ae, Bb: () => Ze, Bs: () => se, C7: () => De, EW: () => Ne, HO: () => be, JL: () => ce, Jn: () => Se, Kc: () => Le, Ld: () => Be, Lt: () => ee, Ly: () => $, OV: () => ne, PL: () => de, Pi: () => Te, Qg: () => q, SZ: () => ke, V0: () => Fe, Wk: () => te, X3: () => Me, _T: () => We, _b: () => He, aZ: () => ge, ap: () => le, cS: () => re, dw: () => J, eD: () => ie, eY: () => Ce, et: () => K, f3: () => he, f_: () => ye, gH: () => _e, gP: () => Ge, jm: () => z, kT: () => Pe, kX: () => xe, lC: () => Oe, lW: () => ue, lw: () => fe, mZ: () => Qe, mv: () => we, oV: () => qe, pN: () => Ae, qm: () => Ue, r9: () => j, sz: () => X, tk: () => Y, vF: () => me, w6: () => Ee, wK: () => ve, wd: () => pe, ww: () => Ie });
+            o.d(t, { $e: () => Oe, BG: () => re, Bb: () => ve, Bs: () => de, C7: () => fe, EW: () => De, HO: () => he, JL: () => ue, Jn: () => me, Kc: () => ye, Ld: () => Ze, Lt: () => te, Ly: () => J, OV: () => ae, PL: () => ie, Pi: () => Te, Qg: () => j, SZ: () => xe, V0: () => Pe, Wk: () => oe, X3: () => Me, _T: () => qe, _b: () => ke, aZ: () => Ue, ap: () => ce, cS: () => se, dw: () => X, eD: () => le, eY: () => Ie, et: () => Y, f3: () => pe, f_: () => Fe, gH: () => be, gP: () => Qe, jm: () => V, kT: () => Be, kX: () => Ge, lC: () => ge, lW: () => Ee, lw: () => Re, mZ: () => We, mv: () => Ce, oV: () => je, pN: () => Ne, qm: () => Le, r9: () => z, sz: () => ee, tk: () => $, vF: () => we, w6: () => _e, wK: () => He, wd: () => Se, ww: () => Ae });
             o(571372), o(136728);
             var n = o(744531),
                 a = o(401388),
                 r = o(106067),
                 s = o(256563),
                 d = o(497461),
-                i = o(499627),
-                l = o(917799),
-                c = o(312771),
-                u = o(56519),
-                E = o(3693),
-                _ = o(298219);
-            const b = "birdwatchNotes",
-                h = `rweb/${b}`,
-                p = (0, l.dg)(h, "DELETE_NOTE"),
-                S = (0, l.dg)(h, "CREATE_RATING"),
-                m = (0, l.dg)(h, "DELETE_RATING"),
-                T = (0, l.dg)(h, "SELECT_ALIAS"),
-                w = (0, l.dg)(h, "CREATE_APPEAL"),
-                C = (0, l.dg)(h, "EDIT_NOTIFICATION_SETTINGS"),
-                I = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
-                A = Object.freeze({ REQUEST: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL", FAILURE: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL" }),
-                N = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
-                D = (Object.freeze({ REQUEST: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_REQUEST", SUCCESS: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_SUCCESS", FAILURE: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_FAILURE" }), Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_DATA_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_DATA_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_DATA_FAILURE" })),
-                f = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_FAILURE" }),
-                R = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_FAILURE" }),
-                O = Object.freeze({ REQUEST: "rweb/birdwatchNotes/ADMIT_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/ADMIT_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/ADMIT_USER_FAILURE" }),
-                g = Object.freeze({ REQUEST: "rweb/birdwatchNotes/REMOVE_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/REMOVE_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/REMOVE_USER_FAILURE" }),
-                U = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_FAILURE" }),
-                L = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_FAILURE" }),
+                i = o(163889),
+                l = o(499627),
+                c = o(917799),
+                u = o(312771),
+                E = o(56519),
+                _ = o(3693),
+                b = o(298219);
+            const h = "birdwatchNotes",
+                p = `rweb/${h}`,
+                S = (0, c.dg)(p, "DELETE_NOTE"),
+                m = (0, c.dg)(p, "CREATE_RATING"),
+                w = (0, c.dg)(p, "DELETE_RATING"),
+                T = (0, c.dg)(p, "SELECT_ALIAS"),
+                C = (0, c.dg)(p, "CREATE_APPEAL"),
+                I = (0, c.dg)(p, "EDIT_NOTIFICATION_SETTINGS"),
+                A = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
+                N = Object.freeze({ REQUEST: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL", FAILURE: "rweb/birdwatchNotes/DELETE_BIRDWATCH_BAT_SIGNAL" }),
+                D = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_BAT_SIGNAL_FAILURE" }),
+                f = (Object.freeze({ REQUEST: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_REQUEST", SUCCESS: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_SUCCESS", FAILURE: "rweb/birdwatchNotes/EDIT_SHOW_MOBILE_NAVIGATION_SETTINGS_FAILURE" }), Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_DATA_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_DATA_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_DATA_FAILURE" })),
+                R = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_CAN_BE_MEDIA_NOTE_FAILURE" }),
+                O = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_TRANSLATION_FAILURE" }),
+                g = Object.freeze({ REQUEST: "rweb/birdwatchNotes/ADMIT_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/ADMIT_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/ADMIT_USER_FAILURE" }),
+                U = Object.freeze({ REQUEST: "rweb/birdwatchNotes/REMOVE_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/REMOVE_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/REMOVE_USER_FAILURE" }),
+                L = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_FAILURE" }),
+                y = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_FAILURE" }),
                 M = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_FAILURE" }),
-                y = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_FAILURE" }),
-                F = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_NOTE_FAILURE" }),
-                P = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_FAILURE" }),
-                B = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_FAILURE" }),
-                Z = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_FAILURE" }),
-                v = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_FAILURE" }),
-                H = Object.freeze({ REQUEST: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_REQUEST", SUCCESS: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_SUCCESS", FAILURE: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_FAILURE" }),
-                k = "rweb/birdwatchNotes/UPDATE_STREAMED_NOTE_TRANSLATION",
-                x = "rweb/birdwatchNotes/SAVE_FORM_DRAFT",
-                G = "rweb/birdwatchNotes/SAVE_BIRDWATCH_PATH",
-                Q = { drafts: {}, notes: {}, noteRequests: {}, tweetNotes: {}, contributor: {}, publicData: {}, matchData: { fetchStatus: c.ZP.LOADING }, sourceLinks: {}, sources: {}, paths: {} };
-            i.Z.register({
-                [b]: function (e = Q, t) {
+                F = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_FAILURE" }),
+                P = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_NOTE_FAILURE" }),
+                B = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_FAILURE" }),
+                Z = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_FAILURE" }),
+                v = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_FAILURE" }),
+                H = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_FAILURE" }),
+                k = Object.freeze({ REQUEST: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_REQUEST", SUCCESS: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_SUCCESS", FAILURE: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_FAILURE" }),
+                x = "rweb/birdwatchNotes/UPDATE_STREAMED_NOTE_TRANSLATION",
+                G = "rweb/birdwatchNotes/SAVE_FORM_DRAFT",
+                Q = "rweb/birdwatchNotes/SAVE_BIRDWATCH_PATH",
+                W = { drafts: {}, notes: {}, noteRequests: {}, tweetNotes: {}, contributor: {}, publicData: {}, matchData: { fetchStatus: u.ZP.LOADING }, sourceLinks: {}, sources: {}, paths: {} };
+            l.Z.register({
+                [h]: function (e = W, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case F.SUCCESS: {
+                        case P.SUCCESS: {
                             const o = t.payload?.result;
                             if (o) {
                                 const n = t.payload?.entities?.birdwatchNotes[o],
                                     a = n.tweet.rest_id,
                                     r = "MisinformedOrPotentiallyMisleading" === n.data_v1?.classification;
-                                return { ...e, notes: { ...e.notes, [o]: n }, tweetNotes: { ...e.tweetNotes, [a]: { ...(e.tweetNotes && e.tweetNotes[a]), misleadingIds: r ? [...e.tweetNotes[a].misleadingIds, o] : e.tweetNotes[a].misleadingIds, notMisleadingIds: r ? e.tweetNotes[a].notMisleadingIds : [...e.tweetNotes[a].notMisleadingIds, o], ownNoteId: o, fetchStatus: c.ZP.LOADED } } };
+                                return { ...e, notes: { ...e.notes, [o]: n }, tweetNotes: { ...e.tweetNotes, [a]: { ...(e.tweetNotes && e.tweetNotes[a]), misleadingIds: r ? [...e.tweetNotes[a].misleadingIds, o] : e.tweetNotes[a].misleadingIds, notMisleadingIds: r ? e.tweetNotes[a].notMisleadingIds : [...e.tweetNotes[a].notMisleadingIds, o], ownNoteId: o, fetchStatus: u.ZP.LOADED } } };
                             }
                             return e;
                         }
-                        case A.SUCCESS: {
+                        case N.SUCCESS: {
                             const o = t.meta?.tweet_id;
                             return o ? { ...e, noteRequests: (0, n.Z)(e.noteRequests, o) } : e;
                         }
-                        case p.SUCCESS: {
+                        case S.SUCCESS: {
                             const o = t.meta?.note_id;
                             return o ? { ...e, notes: (0, n.Z)(e.notes, o) } : e;
                         }
-                        case f.REQUEST: {
-                            const o = t.meta?.tweetId;
-                            return o ? { ...e, matchData: { fetchStatus: c.ZP.LOADING } } : e;
-                        }
-                        case f.SUCCESS: {
-                            const o = t.meta?.tweetId;
-                            return o ? { ...e, matchData: { canBeMediaNote: t.payload.tweet_result_by_rest_id.result.can_be_media_note, canBeUrlNote: t.payload.tweet_result_by_rest_id.result.can_be_url_note, mediaNoteCategory: t.payload.tweet_result_by_rest_id.result.media_note_category, noteMatchUrl: t.payload.tweet_result_by_rest_id.result.note_match_url, fetchStatus: c.ZP.LOADED } } : e;
-                        }
                         case R.REQUEST: {
-                            const o = t.meta?.note_id;
-                            return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { fetchStatus: c.ZP.LOADING } } } } : e;
+                            const o = t.meta?.tweetId;
+                            return o ? { ...e, matchData: { fetchStatus: u.ZP.LOADING } } : e;
                         }
                         case R.SUCCESS: {
+                            const o = t.meta?.tweetId;
+                            return o ? { ...e, matchData: { canBeMediaNote: t.payload.tweet_result_by_rest_id.result.can_be_media_note, canBeUrlNote: t.payload.tweet_result_by_rest_id.result.can_be_url_note, mediaNoteCategory: t.payload.tweet_result_by_rest_id.result.media_note_category, noteMatchUrl: t.payload.tweet_result_by_rest_id.result.note_match_url, fetchStatus: u.ZP.LOADED } } : e;
+                        }
+                        case O.REQUEST: {
+                            const o = t.meta?.note_id;
+                            return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { fetchStatus: u.ZP.LOADING } } } } : e;
+                        }
+                        case O.SUCCESS: {
                             const o = t.meta?.note_id;
                             if (o) {
                                 const n = t.payload.birdwatch_note_by_rest_id.translated_summary;
-                                return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { result: n && (0, s.Z)((0, d.$)(), n), fetchStatus: c.ZP.LOADED } } } };
+                                return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { result: n && (0, s.Z)((0, d.$)(), n), fetchStatus: u.ZP.LOADED } } } };
                             }
                             return e;
                         }
-                        case R.FAILURE: {
+                        case O.FAILURE: {
                             const o = t.meta?.noteId;
-                            return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { fetchStatus: c.ZP.FAILED } } } } : e;
+                            return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { fetchStatus: u.ZP.FAILED } } } } : e;
                         }
-                        case L.SUCCESS: {
+                        case y.SUCCESS: {
                             const o = t.payload;
                             return { ...e, signupEligibility: o?.birdwatch_sign_up_eligibility?.eligible };
                         }
-                        case N.REQUEST: {
+                        case D.REQUEST: {
                             const o = t.meta?.tweet_id;
-                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { fetchStatus: c.ZP.LOADING } } } : e;
+                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { fetchStatus: u.ZP.LOADING } } } : e;
                         }
-                        case N.FAILURE: {
+                        case D.FAILURE: {
                             const o = t.meta?.tweet_id;
-                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { fetchStatus: c.ZP.FAILED } } } : e;
+                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { fetchStatus: u.ZP.FAILED } } } : e;
                         }
-                        case N.SUCCESS: {
+                        case D.SUCCESS: {
                             const o = t.meta?.tweet_id,
                                 n = t.payload?.birdwatch_bat_signal_by_rest_id.created_at;
-                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { created_at: n, fetchStatus: c.ZP.LOADED } } } : e;
+                            return o ? { ...e, noteRequests: { ...e.noteRequests, [o]: { created_at: n, fetchStatus: u.ZP.LOADED } } } : e;
                         }
-                        case I.SUCCESS: {
+                        case A.SUCCESS: {
                             const o = t.meta?.tweet_id,
                                 n = t.payload?.created_at;
                             return o && n ? { ...e, noteRequests: { ...e.noteRequests, [o]: { created_at: n } } } : e;
                         }
-                        case S.SUCCESS: {
+                        case m.SUCCESS: {
                             const o = t.meta?.note_id,
                                 n = t.payload;
                             return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], rating: n } } } : e;
                         }
-                        case m.SUCCESS: {
+                        case w.SUCCESS: {
                             const o = t.meta?.note_id;
                             if (o) {
                                 const { rating: t, ...n } = e.notes[o];
@@ -633,15 +632,15 @@
                             }
                             return e;
                         }
-                        case P.REQUEST: {
+                        case B.REQUEST: {
                             const o = t.meta?.tweet_id;
-                            return o ? { ...e, tweetNotes: { ...e.tweetNotes, [o]: { ...(e.tweetNotes && e.tweetNotes[o]), fetchStatus: c.ZP.LOADING } } } : e;
+                            return o ? { ...e, tweetNotes: { ...e.tweetNotes, [o]: { ...(e.tweetNotes && e.tweetNotes[o]), fetchStatus: u.ZP.LOADING } } } : e;
                         }
-                        case P.FAILURE: {
+                        case B.FAILURE: {
                             const o = t.meta?.tweet_id;
-                            return o ? { ...e, tweetNotes: { ...e.tweetNotes, [o]: { ...e.tweetNotes[o], fetchStatus: c.ZP.FAILED } } } : e;
+                            return o ? { ...e, tweetNotes: { ...e.tweetNotes, [o]: { ...e.tweetNotes[o], fetchStatus: u.ZP.FAILED } } } : e;
                         }
-                        case P.SUCCESS: {
+                        case B.SUCCESS: {
                             const o = t.payload?.result,
                                 n = t.meta?.tweet_id;
                             if (o) {
@@ -651,20 +650,20 @@
                                     d = r.map((e) => e.rest_id),
                                     i = a?.not_misleading_ids || [],
                                     l = i.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
-                                    u = { misleadingIds: d, notMisleadingIds: i.map((e) => e.rest_id), fetchStatus: c.ZP.LOADED };
-                                return a?.ownNoteId && (u.ownNoteId = a?.ownNoteId), (u.canUserWriteNotesOnPost = a?.canUserWriteNotesOnPost), t.meta ? { ...e, notes: { ...e.notes, ...s, ...l }, tweetNotes: { ...e.tweetNotes, [n]: u } } : e;
+                                    c = { misleadingIds: d, notMisleadingIds: i.map((e) => e.rest_id), fetchStatus: u.ZP.LOADED };
+                                return a?.ownNoteId && (c.ownNoteId = a?.ownNoteId), (c.canUserWriteNotesOnPost = a?.canUserWriteNotesOnPost), t.meta ? { ...e, notes: { ...e.notes, ...s, ...l }, tweetNotes: { ...e.tweetNotes, [n]: c } } : e;
                             }
-                            return n ? { ...e, tweetNotes: { ...e.tweetNotes, [n]: { fetchStatus: c.ZP.LOADED } } } : e;
+                            return n ? { ...e, tweetNotes: { ...e.tweetNotes, [n]: { fetchStatus: u.ZP.LOADED } } } : e;
                         }
-                        case B.REQUEST: {
+                        case Z.REQUEST: {
                             const o = t.meta?.alias;
-                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: c.ZP.LOADING } } } : e;
+                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: u.ZP.LOADING } } } : e;
                         }
-                        case B.FAILURE: {
+                        case Z.FAILURE: {
                             const o = t.meta?.alias;
-                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: c.ZP.FAILED } } } : e;
+                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: u.ZP.FAILED } } } : e;
                         }
-                        case B.SUCCESS: {
+                        case Z.SUCCESS: {
                             const o = t.meta?.alias,
                                 n = t.payload?.result;
                             if (n && t.meta) {
@@ -675,36 +674,36 @@
                                     d = o?.ratings_count,
                                     i = o?.notes_count,
                                     l = o?.is_top_writer;
-                                return { ...e, notes: { ...e.notes, ...r }, contributor: { ...e.contributor, [n]: { ratingsCount: d, notesCount: i, isTopWriter: l, deletedNotesCount: o?.deleted_notes_count, notes: s, fetchStatus: c.ZP.LOADED } } };
+                                return { ...e, notes: { ...e.notes, ...r }, contributor: { ...e.contributor, [n]: { ratingsCount: d, notesCount: i, isTopWriter: l, deletedNotesCount: o?.deleted_notes_count, notes: s, fetchStatus: u.ZP.LOADED } } };
                             }
-                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: c.ZP.FAILED } } } : e;
+                            return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: u.ZP.FAILED } } } : e;
                         }
-                        case U.SUCCESS: {
+                        case L.SUCCESS: {
                             const o = t.payload;
                             return { ...e, contributor: { ...e.contributor, notificationSettings: o?.notification_settings?.needs_your_help_frequency, ownAlias: o?.alias, canWriteNotes: o?.can_write_notes, enrollmentStatus: o?.user_enrollment, isTopWriter: o?.is_top_writer, showMobileNavigationSettings: o?.user_settings?.show_in_app_navigation } };
                         }
-                        case Z.SUCCESS: {
+                        case v.SUCCESS: {
                             const o = t.payload;
                             return { ...e, contributor: { ...e.contributor, showAliasSelfSelect: o?.can_select && !o?.has_selected } };
                         }
-                        case y.SUCCESS: {
+                        case F.SUCCESS: {
                             const o = t.payload;
                             return { ...e, contributor: { ...e.contributor, aliasSelfSelectOptions: o } };
                         }
-                        case v.SUCCESS: {
+                        case H.SUCCESS: {
                             const o = t.payload,
                                 n = o?.result;
-                            return n ? { ...e, notes: { ...e.notes, [n]: { ...o?.entities?.birdwatchNotes[n], fetchStatus: c.ZP.LOADED } } } : e;
+                            return n ? { ...e, notes: { ...e.notes, [n]: { ...o?.entities?.birdwatchNotes[n], fetchStatus: u.ZP.LOADED } } } : e;
                         }
-                        case v.REQUEST: {
+                        case H.REQUEST: {
                             const o = t.meta?.note_id;
-                            return { ...e, notes: { ...e.notes, [o]: { ...(e.notes && e.notes[o]), fetchStatus: c.ZP.LOADING } } };
+                            return { ...e, notes: { ...e.notes, [o]: { ...(e.notes && e.notes[o]), fetchStatus: u.ZP.LOADING } } };
                         }
-                        case v.FAILURE: {
+                        case H.FAILURE: {
                             const o = t.meta?.note_id;
-                            return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], fetchStatus: c.ZP.FAILED } } };
+                            return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], fetchStatus: u.ZP.FAILED } } };
                         }
-                        case D.SUCCESS: {
+                        case f.SUCCESS: {
                             const o = t.payload;
                             return o ? { ...e, publicData: o } : e;
                         }
@@ -712,7 +711,7 @@
                             const o = t.meta?.alias;
                             return { ...e, contributor: { ...e.contributor, ownAlias: o } };
                         }
-                        case x: {
+                        case G: {
                             const o = t.payload;
                             if ((0, a.Z)(o)) return e;
                             {
@@ -721,7 +720,7 @@
                                 return { ...e, drafts: { ...e.drafts, [n]: t } };
                             }
                         }
-                        case G: {
+                        case Q: {
                             const o = t.payload;
                             if ((0, a.Z)(o)) return e;
                             {
@@ -730,21 +729,21 @@
                                 return { ...e, paths: { ...e.paths, [t]: n } };
                             }
                         }
-                        case H.SUCCESS:
+                        case k.SUCCESS:
                             return { ...e, contributor: { ...e.contributor, enrollmentStatus: { ...e.contributor.enrollmentStatus, enrollment_state: "EarnedOutAcknowledged" } } };
                         case M.REQUEST: {
                             const o = t.meta?.tweetId;
-                            return o ? { ...e, matchData: { fetchStatus: c.ZP.LOADING } } : e;
+                            return o ? { ...e, matchData: { fetchStatus: u.ZP.LOADING } } : e;
                         }
                         case M.FAILURE: {
                             const o = t.meta?.tweet_id;
-                            return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { fetchStatus: c.ZP.FAILED } } } : e;
+                            return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { fetchStatus: u.ZP.FAILED } } } : e;
                         }
                         case M.SUCCESS: {
                             const o = t.meta?.tweet_id;
-                            return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { source_preview_tweet_for_notes: t.payload.tweet_result_by_rest_id.result.source_preview_tweet_for_notes, source_tweet_count_for_notes: t.payload.tweet_result_by_rest_id.result.source_tweet_count_for_notes, has_note_request: t.payload.tweet_result_by_rest_id.result.has_note_request, fetchStatus: c.ZP.LOADED } } } : e;
+                            return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { source_preview_tweet_for_notes: t.payload.tweet_result_by_rest_id.result.source_preview_tweet_for_notes, source_tweet_count_for_notes: t.payload.tweet_result_by_rest_id.result.source_tweet_count_for_notes, has_note_request: t.payload.tweet_result_by_rest_id.result.has_note_request, fetchStatus: u.ZP.LOADED } } } : e;
                         }
-                        case k: {
+                        case x: {
                             const { note_id: o, translation: n } = t.payload;
                             return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], streamedNoteTranslation: n } } };
                         }
@@ -753,134 +752,134 @@
                     }
                 },
             });
-            const W = [],
-                q = (e, t) => e[b].notes[t],
-                j = (e, t) => e[b].noteRequests[t],
-                z = (e) => e[b].paths,
-                V = (e, t) => e[b].tweetNotes[t]?.misleadingIds,
-                K = (e) => e[b].matchData,
-                Y = (e, t) => e[b].sourceLinks[t],
-                $ = (e, t) => {
-                    const o = e[b].tweetNotes[t];
+            const q = [],
+                j = (e, t) => e[h].notes[t],
+                z = (e, t) => e[h].noteRequests[t],
+                V = (e) => e[h].paths,
+                K = (e, t) => e[h].tweetNotes[t]?.misleadingIds,
+                Y = (e) => e[h].matchData,
+                $ = (e, t) => e[h].sourceLinks[t],
+                J = (e, t) => {
+                    const o = e[h].tweetNotes[t];
                     return o ? o.canUserWriteNotesOnPost : void 0;
                 },
-                J = (e, t) => {
+                X = (e, t) => {
                     if (!t) return null;
-                    const o = ((e, t) => e[b].tweetNotes[t]?.ownNoteId)(e, t);
-                    return o ? q(e, o) : null;
+                    const o = ((e, t) => e[h].tweetNotes[t]?.ownNoteId)(e, t);
+                    return o ? j(e, o) : null;
                 },
-                X = (e) => e[b].publicData,
-                ee = (e, t) => {
-                    const o = t ? V(e, t) : void 0;
-                    if (o) {
-                        return o.map((t) => q(e, t)).filter(Boolean);
-                    }
-                    return W;
-                },
+                ee = (e) => e[h].publicData,
                 te = (e, t) => {
-                    const o = t ? ((e, t) => e[b].tweetNotes[t]?.notMisleadingIds)(e, t) : void 0;
+                    const o = t ? K(e, t) : void 0;
                     if (o) {
-                        return o.map((t) => q(e, t)).filter(Boolean);
+                        return o.map((t) => j(e, t)).filter(Boolean);
                     }
-                    return W;
+                    return q;
                 },
                 oe = (e, t) => {
-                    const o = e[b].contributor[t];
+                    const o = t ? ((e, t) => e[h].tweetNotes[t]?.notMisleadingIds)(e, t) : void 0;
+                    if (o) {
+                        return o.map((t) => j(e, t)).filter(Boolean);
+                    }
+                    return q;
+                },
+                ne = (e, t) => {
+                    const o = e[h].contributor[t];
                     return o ? o.notes : void 0;
                 },
-                ne = (e) => {
-                    const t = e[b].contributor;
+                ae = (e) => {
+                    const t = e[h].contributor;
                     return t ? t.ownAlias : void 0;
                 },
-                ae = (e) => {
-                    const t = e[b].contributor;
+                re = (e) => {
+                    const t = e[h].contributor;
                     return t ? t.showAliasSelfSelect : void 0;
                 },
-                re = (e) => {
-                    const t = e[b]?.contributor?.ownAlias;
+                se = (e) => {
+                    const t = e[h]?.contributor?.ownAlias;
                     if (!t) return !1;
                     const o = `birdwatchContributorNotesSlice-${t}`,
                         n = e.slices[o];
                     return n?.items?.length > 0 || !1;
                 },
-                se = (e) => {
-                    const t = e[b].contributor;
+                de = (e) => {
+                    const t = e[h].contributor;
                     return t ? t.aliasSelfSelectOptions : void 0;
                 },
-                de = (e) => {
-                    const t = e[b].contributor;
+                ie = (e) => {
+                    const t = e[h].contributor;
                     return t ? t.enrollmentStatus : void 0;
                 },
-                ie = (e, t) => !!(e[b].contributor[t]?.isTopWriter || e[b].contributor?.isTopWriter),
-                le = (e, t) => e[b].contributor[t]?.isTopWriter || !1,
-                ce = (e) => {
-                    const t = e[b].contributor;
+                le = (e, t) => !!(e[h].contributor[t]?.isTopWriter || e[h].contributor?.isTopWriter),
+                ce = (e, t) => e[h].contributor[t]?.isTopWriter || !1,
+                ue = (e) => {
+                    const t = e[h].contributor;
                     return t ? t.notificationSettings : void 0;
                 },
-                ue = (e) => {
-                    const t = e[b].contributor;
+                Ee = (e) => {
+                    const t = e[h].contributor;
                     return t ? t.canWriteNotes : void 0;
-                },
-                Ee = (e, t) => {
-                    if (!t) return;
-                    const o = e[b].contributor[t];
-                    return o ? o.ratingsCount : void 0;
                 },
                 _e = (e, t) => {
                     if (!t) return;
-                    const o = e[b].contributor[t];
-                    return o ? o.notesCount : void 0;
+                    const o = e[h].contributor[t];
+                    return o ? o.ratingsCount : void 0;
                 },
                 be = (e, t) => {
-                    const o = e[b].contributor[t];
-                    return o ? o.deletedNotesCount : void 0;
+                    if (!t) return;
+                    const o = e[h].contributor[t];
+                    return o ? o.notesCount : void 0;
                 },
                 he = (e, t) => {
-                    const o = e[b].tweetNotes[t];
-                    return o ? o.fetchStatus : c.ZP.NONE;
+                    const o = e[h].contributor[t];
+                    return o ? o.deletedNotesCount : void 0;
                 },
                 pe = (e, t) => {
-                    const o = e[b].notes[t];
-                    return o ? o.fetchStatus : c.ZP.NONE;
+                    const o = e[h].tweetNotes[t];
+                    return o ? o.fetchStatus : u.ZP.NONE;
                 },
                 Se = (e, t) => {
+                    const o = e[h].notes[t];
+                    return o ? o.fetchStatus : u.ZP.NONE;
+                },
+                me = (e, t) => {
                     if (!t) return;
-                    const o = e[b].drafts;
+                    const o = e[h].drafts;
                     return o ? o[t] : void 0;
                 },
-                me =
+                we =
                     (e) =>
                     (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchBirdwatchBatSignal, params: e })({ actionTypes: N, context: "FETCH_BIRDWATCH_BAT_SIGNAL", meta: { tweet_id: e } }),
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchBirdwatchBatSignal, params: e })({ actionTypes: D, context: "FETCH_BIRDWATCH_BAT_SIGNAL", meta: { tweet_id: e } }),
                 Te =
                     (e) =>
                     (t, o, { api: n }) => {
-                        const a = !!V(o(), e),
-                            s = he(o(), e) === c.ZP.LOADING;
+                        const a = !!K(o(), e),
+                            s = pe(o(), e) === u.ZP.LOADING;
                         return a || s
                             ? Promise.resolve()
                             : t(
                                   (
                                       (e) =>
                                       (t, o, { api: n }) =>
-                                          (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchNotes, params: { tweet_id: e } })({ actionTypes: P, context: "FETCH_TWEET_NOTES", meta: { tweet_id: e } }, (e) => {
+                                          (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchNotes, params: { tweet_id: e } })({ actionTypes: B, context: "FETCH_TWEET_NOTES", meta: { tweet_id: e } }, (e) => {
                                               if (e) {
                                                   const { entities: t } = e;
-                                                  return t ? [(0, u.dP)(t)] : void 0;
+                                                  return t ? [(0, E.dP)(t)] : void 0;
                                               }
                                           })
                                   )(e),
                               );
                     },
-                we =
+                Ce =
                     (e) =>
                     (t, o, { api: n }) => {
-                        const a = !!e && !!oe(o(), e),
+                        const a = !!e && !!ne(o(), e),
                             s =
                                 ((e, t) => {
-                                    const o = e[b].contributor[t];
-                                    return o ? o.fetchStatus : c.ZP.NONE;
-                                })(o(), e) === c.ZP.LOADING;
+                                    const o = e[h].contributor[t];
+                                    return o ? o.fetchStatus : u.ZP.NONE;
+                                })(o(), e) === u.ZP.LOADING;
                         return a || s
                             ? Promise.resolve()
                             : t(
@@ -888,162 +887,162 @@
                                       (e) =>
                                       (t, o, { api: n }) =>
                                           e
-                                              ? (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchBirdwatchProfile, params: { alias: e } })({ actionTypes: B, context: "FETCH_BIRDWATCH_PROFILE", meta: { alias: e } }, (e) => {
+                                              ? (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchBirdwatchProfile, params: { alias: e } })({ actionTypes: Z, context: "FETCH_BIRDWATCH_PROFILE", meta: { alias: e } }, (e) => {
                                                     if (e) {
                                                         const { entities: t } = e;
-                                                        return t && [(0, u.dP)(t)];
+                                                        return t && [(0, E.dP)(t)];
                                                     }
                                                 })
                                               : Promise.resolve()
                                   )(e),
                               );
                     },
-                Ce =
+                Ie =
                     () =>
                     (e, t, { api: o }) =>
-                        !!de(t()) ? Promise.resolve() : e(Oe()),
-                Ie =
+                        !!ie(t()) ? Promise.resolve() : e(ge()),
+                Ae =
                     (e) =>
                     (t, o, { api: n }) => {
-                        const a = !!q(o(), e),
-                            s = pe(o(), e) === c.ZP.LOADING;
+                        const a = !!j(o(), e),
+                            s = Se(o(), e) === u.ZP.LOADING;
                         return a || s
                             ? Promise.resolve()
                             : t(
                                   (
                                       (e) =>
                                       (t, o, { api: n }) =>
-                                          (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchOneNote, params: { note_id: e } })({ actionTypes: v, context: "FETCH_NOTE", meta: { note_id: e } })
+                                          (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchOneNote, params: { note_id: e } })({ actionTypes: H, context: "FETCH_NOTE", meta: { note_id: e } })
                                   )(e),
                               );
                     },
-                Ae =
-                    (e) =>
-                    (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchCanTweetBeMediaNote, params: e })({ actionTypes: f, context: "FETCH_CAN_BE_MEDIA_NOTE", meta: { tweetId: e } }),
                 Ne =
                     (e) =>
                     (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchNoteTranslation, params: e })({ actionTypes: R, context: "FETCH_NOTE_TRANSLATION", meta: { note_id: e } }),
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchCanTweetBeMediaNote, params: e })({ actionTypes: R, context: "FETCH_CAN_BE_MEDIA_NOTE", meta: { tweetId: e } }),
                 De =
+                    (e) =>
+                    (t, o, { api: n }) =>
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchNoteTranslation, params: e })({ actionTypes: O, context: "FETCH_NOTE_TRANSLATION", meta: { note_id: e } }),
+                fe =
                     (e) =>
                     async (t, o, { api: n }) => {
                         const a = { content_type: "COMMUNITY_NOTE", id: e },
-                            r = { fetchStatus: c.ZP.LOADING, result: { text: "", entities: [] } },
-                            i = (e, o) => {
+                            r = { fetchStatus: u.ZP.LOADING, result: { text: "", entities: [] } },
+                            l = (e, o) => {
                                 var n;
-                                t(((n = { note_id: e, translation: { ...o, result: o.result ? (0, s.Z)((0, d.$)(), o.result) : void 0 } }), { type: k, payload: n }));
+                                t(((n = { note_id: e, translation: { ...o, result: o.result ? (0, s.Z)((0, d.$)(), o.result) : void 0 } }), { type: x, payload: n }));
                             };
-                        i(e, r);
-                        const l = new AbortController();
+                        l(e, r);
+                        const c = new AbortController();
                         try {
-                            const t = await n.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(a), signal: l.signal });
-                            if (!t.ok) throw ((r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), new Error("Failed to translate due to invalid API response."));
+                            const t = await n.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(a), signal: c.signal });
+                            if (!t.ok) throw ((r.state = _.H.ERROR), (r.fetchStatus = u.ZP.FAILED), l(e, r), new Error(`invalid response ${t.status}`));
                             const o = t.body?.getReader();
-                            if (!o) throw ((r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), new Error("Failed to translate because reader is not present."));
+                            if (!o) throw ((r.state = _.H.ERROR), (r.fetchStatus = u.ZP.FAILED), l(e, r), new Error("reader not present"));
                             const s = new TextDecoder();
                             let d = "";
-                            const u = async (t) => {
-                                const n = t ? _.T9 : _.UG,
-                                    { done: a, value: l } = await (0, _.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => o.read(), n, "Timeout between streaming chunks");
+                            const i = async (t) => {
+                                const n = t ? b.T9 : b.UG,
+                                    { done: a, value: c } = await (0, b.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => o.read(), n, t ? "timeout to first chunk" : "timeout between chunks");
                                 if (a) {
-                                    const t = 0 === (r.result?.text.length ?? 0);
-                                    return (r.state = t ? E.H.ERROR : E.H.SUCCESS), (r.fetchStatus = t ? c.ZP.FAILED : c.ZP.LOADED), void i(e, r);
+                                    if (0 === (r.result?.text.length ?? 0)) throw new Error("empty string when done");
+                                    return (r.state = _.H.SUCCESS), (r.fetchStatus = u.ZP.LOADED), void l(e, r);
                                 }
-                                if (l) {
-                                    const t = s.decode(l);
+                                if (c) {
+                                    const t = s.decode(c);
                                     if (((d += t), d.includes("\n"))) {
                                         const t = d.split("\n");
                                         d = t.pop();
                                         for (const o of t) {
                                             const t = JSON.parse(o);
                                             if (t.error) throw new Error(t.error);
-                                            t.result && r.result && (t.result.text && (r.result.text += t.result.text), t.result.rich_text_entities && r.result.entities.push(...t.result.rich_text_entities)), i(e, r);
+                                            t.result && r.result && (t.result.text && (r.result.text += t.result.text), t.result.rich_text_entities && r.result.entities.push(...t.result.rich_text_entities)), l(e, r);
                                         }
                                     }
                                 }
-                                await u();
+                                await i();
                             };
-                            await u(!0);
+                            await i(!0);
                         } catch (t) {
-                            (r.state = E.H.ERROR), (r.fetchStatus = c.ZP.FAILED), i(e, r), l.abort();
+                            (r.state = _.H.ERROR), (r.fetchStatus = u.ZP.FAILED), l(e, r), (0, i.ZP)(`Failed to translate community note:${e} - ${String(t)}`), c.abort();
                         }
                     },
-                fe =
+                Re =
                     (e) =>
                     (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchTweetSourceLink, params: e })({ actionTypes: M, context: "FETCH_SOURCE_LINK_TWEET", meta: { tweet_id: e } }),
-                Re =
-                    () =>
-                    (e, t, { api: o }) =>
-                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: L, context: "FETCH_SIGNUP_ELIGIBILITY" }),
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchTweetSourceLink, params: e })({ actionTypes: M, context: "FETCH_SOURCE_LINK_TWEET", meta: { tweet_id: e } }),
                 Oe =
                     () =>
                     (e, t, { api: o }) =>
-                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchAuthenticatedUserProfile, params: {} })({ actionTypes: U, context: "FETCH_AUTHENTICATED_USER_PROFILE" }),
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: y, context: "FETCH_SIGNUP_ELIGIBILITY" }),
                 ge =
                     () =>
                     (e, t, { api: o }) =>
-                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchAliasSelfSelectStatus, params: {} })({ actionTypes: Z, context: "FETCH_SHOW_ALIAS_SELECT", meta: {} }),
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchAuthenticatedUserProfile, params: {} })({ actionTypes: L, context: "FETCH_AUTHENTICATED_USER_PROFILE" }),
                 Ue =
                     () =>
                     (e, t, { api: o }) =>
-                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchAliasSelfSelectOptions, params: {} })({ actionTypes: y, context: "FETCH_ALIAS_SELECT_OPTIONS", meta: {} }),
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchAliasSelfSelectStatus, params: {} })({ actionTypes: v, context: "FETCH_SHOW_ALIAS_SELECT", meta: {} }),
                 Le =
+                    () =>
+                    (e, t, { api: o }) =>
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchAliasSelfSelectOptions, params: {} })({ actionTypes: F, context: "FETCH_ALIAS_SELECT_OPTIONS", meta: {} }),
+                ye =
                     (e) =>
                     (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).selectAlias, params: { alias: e } })({ actionTypes: T, context: "SELECT_ALIAS", meta: { alias: e } }),
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).selectAlias, params: { alias: e } })({ actionTypes: T, context: "SELECT_ALIAS", meta: { alias: e } }),
                 Me =
                     () =>
                     (e, t, { api: o }) =>
-                        (0, l._O)(e, { request: o.withEndpoint(r.Z).acknowledgeEarnOut, params: {} })({ actionTypes: H, context: "PROFILE_ACKNOWLEDGE_EARN_OUT", meta: {} }),
-                ye = (e) => ({ meta: { note_id: e }, type: p.SUCCESS }),
-                Fe =
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).acknowledgeEarnOut, params: {} })({ actionTypes: k, context: "PROFILE_ACKNOWLEDGE_EARN_OUT", meta: {} }),
+                Fe = (e) => ({ meta: { note_id: e }, type: S.SUCCESS }),
+                Pe =
                     (e) =>
                     (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).deleteBirdwatchBatSignal, params: { tweet_id: e } })({ actionTypes: A, context: "DELETE_BIRDWATCH_BATSIGNAL", meta: { tweet_id: e } }),
-                Pe =
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).deleteBirdwatchBatSignal, params: { tweet_id: e } })({ actionTypes: N, context: "DELETE_BIRDWATCH_BATSIGNAL", meta: { tweet_id: e } }),
+                Be =
                     (e, t, o, n) =>
                     (a, s, { api: d }) =>
-                        (0, l._O)(a, { request: d.withEndpoint(r.Z).createNote, params: { tweet_id: e, is_media_note: o, is_helpful_for_all_posts: n, data: t } })({ actionTypes: F, context: "CREATE_NOTE" }),
-                Be = (e) => (t) => {
-                    t(((e) => ({ type: x, payload: e }))(e));
-                },
+                        (0, c._O)(a, { request: d.withEndpoint(r.Z).createNote, params: { tweet_id: e, is_media_note: o, is_helpful_for_all_posts: n, data: t } })({ actionTypes: P, context: "CREATE_NOTE" }),
                 Ze = (e) => (t) => {
                     t(((e) => ({ type: G, payload: e }))(e));
                 },
-                ve =
+                ve = (e) => (t) => {
+                    t(((e) => ({ type: Q, payload: e }))(e));
+                },
+                He =
                     (e, t, o, n, a) =>
                     (s, d, { api: i }) =>
-                        (0, l._O)(s, { request: i.withEndpoint(r.Z).createRating, params: { note_id: e, tweet_id: o, data: t, rating_source: n, source_platform: a } })({ actionTypes: S, context: "CREATE_RATING", meta: { note_id: e } }),
-                He =
-                    (e) =>
-                    (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).deleteRating, params: { note_id: e } })({ actionTypes: m, context: "DELETE_RATING", meta: { note_id: e } }),
+                        (0, c._O)(s, { request: i.withEndpoint(r.Z).createRating, params: { note_id: e, tweet_id: o, data: t, rating_source: n, source_platform: a } })({ actionTypes: m, context: "CREATE_RATING", meta: { note_id: e } }),
                 ke =
-                    (e, t) =>
-                    (o, n, { api: a }) =>
-                        (0, l._O)(o, { request: a.withEndpoint(r.Z).admitUser, params: { admit_date: e, user_id: t } })({ actionTypes: O, context: "ADMIT_USER", meta: { admit_date: e, user_id: t } }),
+                    (e) =>
+                    (t, o, { api: n }) =>
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).deleteRating, params: { note_id: e } })({ actionTypes: w, context: "DELETE_RATING", meta: { note_id: e } }),
                 xe =
-                    () =>
-                    (e, t, { api: o }) =>
-                        (0, l._O)(e, { request: o.withEndpoint(r.Z).removeUser, params: {} })({ actionTypes: g, context: "REMOVE_USER", meta: {} }),
-                Ge =
-                    (e) =>
-                    (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).createAppeal, params: { note_id: e } })({ actionTypes: w, context: "CREATE_APPEAL", meta: { note_id: e } }),
-                Qe =
                     (e, t) =>
                     (o, n, { api: a }) =>
-                        (0, l._O)(o, { request: a.withEndpoint(r.Z).createBirdwatchBatSignal, params: { tweet_id: e, source_link: t } })({ actionTypes: I, context: "CREATE_BAT_SIGNAL", meta: { tweet_id: e } }),
-                We =
-                    (e) =>
-                    (t, o, { api: n }) =>
-                        (0, l._O)(t, { request: n.withEndpoint(r.Z).editNotificationSettings, params: { settings: e } })({ actionTypes: C, context: "EDIT_NOTIFICATION_SETTINGS", meta: { settings: e } }),
-                qe =
+                        (0, c._O)(o, { request: a.withEndpoint(r.Z).admitUser, params: { admit_date: e, user_id: t } })({ actionTypes: g, context: "ADMIT_USER", meta: { admit_date: e, user_id: t } }),
+                Ge =
                     () =>
                     (e, t, { api: o }) =>
-                        (0, l._O)(e, { request: o.withEndpoint(r.Z).fetchPublicData, params: {} })({ actionTypes: D, context: "FETCH_DATA", meta: {} });
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).removeUser, params: {} })({ actionTypes: U, context: "REMOVE_USER", meta: {} }),
+                Qe =
+                    (e) =>
+                    (t, o, { api: n }) =>
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).createAppeal, params: { note_id: e } })({ actionTypes: C, context: "CREATE_APPEAL", meta: { note_id: e } }),
+                We =
+                    (e, t) =>
+                    (o, n, { api: a }) =>
+                        (0, c._O)(o, { request: a.withEndpoint(r.Z).createBirdwatchBatSignal, params: { tweet_id: e, source_link: t } })({ actionTypes: A, context: "CREATE_BAT_SIGNAL", meta: { tweet_id: e } }),
+                qe =
+                    (e) =>
+                    (t, o, { api: n }) =>
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).editNotificationSettings, params: { settings: e } })({ actionTypes: I, context: "EDIT_NOTIFICATION_SETTINGS", meta: { settings: e } }),
+                je =
+                    () =>
+                    (e, t, { api: o }) =>
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchPublicData, params: {} })({ actionTypes: f, context: "FETCH_DATA", meta: {} });
         },
         302101: (e, t, o) => {
             o.d(t, { N: () => r });
@@ -1136,4 +1135,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.1d72859a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.314c9caa.js.map

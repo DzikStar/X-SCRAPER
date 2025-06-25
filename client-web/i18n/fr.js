@@ -1366,7 +1366,12 @@
                 n("b7cb4fab", "Traduit par"),
                 n("e0bffbf8", "À propos de la traduction automatique"),
                 n("e839db3a", "Ignorer"),
-                n("a15585b4", "Paramètres de langue"),
+                n("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                n("c60b9e5c", "Changes will take effect for newly loaded content."),
+                n("c6ad999b", "languages settings"),
+                n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1922,11 +1927,11 @@
                 }),
                 n("ad89b831", function (e) {
                     return "actif" + e.ttc_rich_text_composer;
-                }),
-                n("jcd5ee8a", "Éditer le bloc"),
+                });
+            n("jcd5ee8a", "Éditer le bloc"),
                 n("a8f09fb8", "Supprimer le bloc"),
-                n("i89195ea", "Séparateur");
-            n("da8ac57c", "Éditer la légende"),
+                n("i89195ea", "Séparateur"),
+                n("da8ac57c", "Éditer la légende"),
                 n("a8fdd09c", "Publier l'Article"),
                 n("d8047cc8", "Publier"),
                 n("ff7ddca2", "Votre Article apparaîtra comme un post une fois publié. Par ailleurs, vous le trouverez sous l'onglet Articles de votre profil."),
@@ -2974,15 +2979,15 @@
                 n("j43f99be", "Pertinence"),
                 n("ad6e11ac", "Trier les réponses par"),
                 n("b2311b70", "Vous ne pouvez pas accéder à ceci."),
-                n("j88f27d8", "Personnes pertinentes"),
-                n("i31dcd22", "Article"),
+                n("j88f27d8", "Personnes pertinentes");
+            n("i31dcd22", "Article"),
                 n("e3de2f6f", function (e) {
                     return e.entity + " a été ajouté à vos signets";
                 }),
                 n("e64de8a9", function (e) {
                     return e.entity + " a été retiré de vos signets";
-                });
-            n("d6d9aab6", "Ajouter un signet"),
+                }),
+                n("d6d9aab6", "Ajouter un signet"),
                 n("bb89cf46", "Supprimer le signet"),
                 n("a739d4ba", "Ajouter au dossier de signets"),
                 n("d5270434", "Quitter"),
@@ -3904,11 +3909,11 @@
                 n("c3b5b829", function (e) {
                     return e.count + " " + r(e.count, "demande", "nouvelles demandes");
                 }),
-                n("fe7a1910", "Envoyer des invitations"),
-                n("ic3c757e", "Rechercher des utilisateurs"),
+                n("fe7a1910", "Envoyer des invitations");
+            n("ic3c757e", "Rechercher des utilisateurs"),
                 n("cd133486", "Inviter"),
-                n("f2333850", "Partager ailleurs que sur X");
-            n("cddb8097", "En savoir plus"),
+                n("f2333850", "Partager ailleurs que sur X"),
+                n("cddb8097", "En savoir plus"),
                 n("f77997b0", "Cohôte"),
                 n("i48f4ed8", "Intervenant"),
                 n("a77c8e02", "Auditeur"),
@@ -4928,11 +4933,11 @@
                 n("c8410542", "Le nombre de fois que votre vidéo a été vue."),
                 n("a532072a", "Spectateurs"),
                 n("d9508ab0", "vues"),
-                n("d9f9dec0", "Voir l'Espace"),
-                n("h0c1f37a", "Voir les statistiques de l'Espace"),
+                n("d9f9dec0", "Voir l'Espace");
+            n("h0c1f37a", "Voir les statistiques de l'Espace"),
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
-                n("if2909ba", "Temps de visionnage");
-            n("i0e5bf4c", "Vos vidéos"),
+                n("if2909ba", "Temps de visionnage"),
+                n("i0e5bf4c", "Vos vidéos"),
                 n("ed99baea", "Accès anticipé à la version bêta"),
                 n("gf898b70", "Recherche avancée"),
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
@@ -5882,13 +5887,13 @@
                 n("b92a21d9", function (e) {
                     return "Aucun résultat pour " + e.query;
                 }),
-                n("f191a2ba", "paramètres de recherche"),
-                n("a068008a", "Les dossiers ne se chargent pas pour le moment."),
+                n("f191a2ba", "paramètres de recherche");
+            n("a068008a", "Les dossiers ne se chargent pas pour le moment."),
                 n("f075b0e8", "Éditer le dossier"),
-                n("beba2a0e", "Créer un dossier de signets");
-            n("e41c9b4f", function (e) {
-                return "Enregistré dans le dossier " + e.bookmarkFolderName;
-            }),
+                n("beba2a0e", "Créer un dossier de signets"),
+                n("e41c9b4f", function (e) {
+                    return "Enregistré dans le dossier " + e.bookmarkFolderName;
+                }),
                 n("h18f86a4", "Supprimer le dossier"),
                 n("f4ea967a", "Le dossier a été supprimé."),
                 n("b670aa62", "Nom du dossier"),
@@ -6888,13 +6893,13 @@
                 n("eef1ae76", "Actuellement connecté"),
                 n("a915f5c1", function (e) {
                     return e.ats + " connecté";
-                }),
-                n("af7286b7", function (e) {
-                    return e.percentage + " % de remise sur l'abonnement annuel à Premium";
-                }),
+                });
+            n("af7286b7", function (e) {
+                return e.percentage + " % de remise sur l'abonnement annuel à Premium";
+            }),
                 n("c924ad84", "Poursuivez la lecture des vidéos"),
-                n("de750a3c", "Profitez‑en même lorsque votre téléphone est verrouillé");
-            n("he5e87c4", "Boostez vos réponses"),
+                n("de750a3c", "Profitez‑en même lorsque votre téléphone est verrouillé"),
+                n("he5e87c4", "Boostez vos réponses"),
                 n("g64a60ba", "Profitez d'une légère priorisation lorsque vous répondez à des posts"),
                 n("a7ee832a", "Profitez de la possibilité de corriger les coquilles et les erreurs pendant 60 minutes"),
                 n("fdd77a34", "Rédigez des posts plus longs"),
@@ -7391,6 +7396,11 @@
                 n("bd05add8", "Pas un bot"),
                 n("d94f12b6", "Essayez de chercher les notifications, la confidentialité, etc."),
                 n("ba8f6f82", "Recherchez des paramètres"),
+                n("ibf92e4a", "Payment Successful"),
+                n("bdf0fb06", "Your subscription has been activated."),
+                n("ddfd6718", "Échec du paiement"),
+                n("d42fa852", "There was an issue processing your payment. Please try again."),
+                n("g055a9ce", "Open 𝕏 App"),
                 n("g931a6e5", function (e) {
                     return "Vous suivez " + e.topic;
                 }),
@@ -7865,17 +7875,7 @@
                 n("a76d58ba", "Statistiques des publicités"),
                 n("eccd0e1a", "Statistiques de l'organisation "),
                 n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
-                n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées."),
-                n("gf67aae4", "Passez à l'Accès complet"),
-                n("h75e3618", "Inclure l'organisation"),
-                n("h24a8862", "À propos de cette case à cocher"),
-                n("c29e3a88", "Sélectionner des affiliés"),
-                n("j8318d57", function (e) {
-                    return e.number + " affilié" + r(e.number, "", "s");
-                }),
-                n("bf809ec0", "Sélectionner des affiliés"),
-                n("b719e224", "Aucun résultat"),
-                n("c9938100", "Résultats de recherche");
+                n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7914,7 +7914,17 @@
                     i(e, t)
                 );
             }
-            n("d1a35ec6", "Ajouter des comptes"),
+            n("gf67aae4", "Passez à l'Accès complet"),
+                n("h75e3618", "Inclure l'organisation"),
+                n("h24a8862", "À propos de cette case à cocher"),
+                n("c29e3a88", "Sélectionner des affiliés"),
+                n("j8318d57", function (e) {
+                    return e.number + " affilié" + r(e.number, "", "s");
+                }),
+                n("bf809ec0", "Sélectionner des affiliés"),
+                n("b719e224", "Aucun résultat"),
+                n("c9938100", "Résultats de recherche"),
+                n("d1a35ec6", "Ajouter des comptes"),
                 n("b437adda", "Mettre à niveau vers la version payante"),
                 n("f1f6c88b", function (e) {
                     return "Comptes (" + e.count + ")";
@@ -7968,7 +7978,6 @@
                 n("b4fef99e", "Après réception de votre demande par notre équipe d'assistance, nous examinerons vos informations et vous aiderons à configurer votre intégration."),
                 n("h37f2d96", "Veuillez noter que les systèmes de suivi des candidatures ne sont actuellement pas tous pris en charge."),
                 n("ce102a20", "Redirection vers Stripe"),
-                n("ddfd6718", "Échec du paiement"),
                 n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
                 n("a62359e6", "Paramètres d'organisation certifiée"),
                 n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
@@ -8904,10 +8913,10 @@
                 n("j0c6772a", "Visiter le site Web"),
                 n("f73003aa", "La vidéo sera lue après la publicité."),
                 n("b3112b8a", "Passer"),
-                n("h6333ad0", "Ignorer la publicité"),
-                n("c59da417", function (e) {
-                    return "Ignorer la publicité dans " + e.seconds;
-                }),
+                n("h6333ad0", "Ignorer la publicité");
+            n("c59da417", function (e) {
+                return "Ignorer la publicité dans " + e.seconds;
+            }),
                 n("c3c147cf", function (e) {
                     return "Ignorer " + e.seconds;
                 }),
@@ -8917,8 +8926,8 @@
                     return "Automatique (" + e.quality + ")";
                 }),
                 n("a7bf9962", "Télécharger la vidéo"),
-                n("ccc97152", "Vitesse de lecture");
-            n("h531ade0", "Qualité de la vidéo"),
+                n("ccc97152", "Vitesse de lecture"),
+                n("h531ade0", "Qualité de la vidéo"),
                 n("e8b5757c", "x 0,25"),
                 n("e7e954de", "x0,5"),
                 n("g07ffe66", "x 0,75"),
@@ -10141,9 +10150,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["En fonction de votre utilisation de X et de vos paramètres de langue, la langue " + this.props.sourceLang + " sera traduite automatiquement par Grok. Pour sélectionner les langues traduites automatiquement, accédez aux ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13343,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.65bf812a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.55020d0a.js.map

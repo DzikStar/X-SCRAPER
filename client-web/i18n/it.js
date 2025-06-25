@@ -1362,7 +1362,12 @@
                 o("b7cb4fab", "Traduzione di"),
                 o("e0bffbf8", "Informazioni sulla traduzione automatica"),
                 o("e839db3a", "Chiudi"),
-                o("a15585b4", "impostazioni sulla lingua"),
+                o("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                o("c60b9e5c", "Changes will take effect for newly loaded content."),
+                o("c6ad999b", "languages settings"),
+                o("hba0547a", "Unable to update settings. Please try again later."),
                 o("d4c339b9", function (e) {
                     return "Post di " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1918,11 +1923,11 @@
                 }),
                 o("ad89b831", function (e) {
                     return "attiva" + e.ttc_rich_text_composer;
-                }),
-                o("jcd5ee8a", "Modifica blocco"),
+                });
+            o("jcd5ee8a", "Modifica blocco"),
                 o("a8f09fb8", "Elimina blocco"),
-                o("i89195ea", "Divisore");
-            o("da8ac57c", "Modifica didascalia"),
+                o("i89195ea", "Divisore"),
+                o("da8ac57c", "Modifica didascalia"),
                 o("a8fdd09c", "Pubblica articolo"),
                 o("d8047cc8", "Pubblica"),
                 o("ff7ddca2", "L'articolo apparirà come post una volta pubblicato. Inoltre, sarà disponibile nella scheda Articoli del tuo profilo."),
@@ -2970,15 +2975,15 @@
                 o("j43f99be", "Pertinenza"),
                 o("ad6e11ac", "Ordina risposte per"),
                 o("b2311b70", "Contenuto non disponibile per te"),
-                o("j88f27d8", "Persone pertinenti"),
-                o("i31dcd22", "Articolo"),
+                o("j88f27d8", "Persone pertinenti");
+            o("i31dcd22", "Articolo"),
                 o("e3de2f6f", function (e) {
                     return "Salvataggio " + e.entity + " nei segnalibri eseguito";
                 }),
                 o("e64de8a9", function (e) {
                     return "Rimozione " + e.entity + " dai segnalibri eseguita";
-                });
-            o("d6d9aab6", "Aggiungi segnalibro"),
+                }),
+                o("d6d9aab6", "Aggiungi segnalibro"),
                 o("bb89cf46", "Rimuovi segnalibro"),
                 o("a739d4ba", "Aggiungi alla cartella di segnalibri"),
                 o("d5270434", "Esci"),
@@ -3900,11 +3905,11 @@
                 o("c3b5b829", function (e) {
                     return e.count + " " + t(e.count, "richiesta", "nuove richieste");
                 }),
-                o("fe7a1910", "Spedisci inviti"),
-                o("ic3c757e", "Cerca utenti"),
+                o("fe7a1910", "Spedisci inviti");
+            o("ic3c757e", "Cerca utenti"),
                 o("cd133486", "Invita"),
-                o("f2333850", "Condividi con persone esterne a X");
-            o("cddb8097", "Scopri di più"),
+                o("f2333850", "Condividi con persone esterne a X"),
+                o("cddb8097", "Scopri di più"),
                 o("f77997b0", "Cohost"),
                 o("i48f4ed8", "Partecipante attivo"),
                 o("a77c8e02", "Ascoltatore"),
@@ -4924,11 +4929,11 @@
                 o("c8410542", "Il numero di volte in cui il tuo video è stato visualizzato."),
                 o("a532072a", "Spettatori"),
                 o("d9508ab0", "visualizzazioni"),
-                o("d9f9dec0", "Visualizza spazio"),
-                o("h0c1f37a", "Visualizza statistiche spazio"),
+                o("d9f9dec0", "Visualizza spazio");
+            o("h0c1f37a", "Visualizza statistiche spazio"),
                 o("e41fffbc", "Il tempo complessivo di visione dei tuoi video."),
-                o("if2909ba", "Tempo di visione");
-            o("i0e5bf4c", "I tuoi video"),
+                o("if2909ba", "Tempo di visione"),
+                o("i0e5bf4c", "I tuoi video"),
                 o("ed99baea", "Accesso beta in anteprima"),
                 o("gf898b70", "Ricerca avanzata"),
                 o("d2a43a7a", 'include sia "startup" sia "ia"'),
@@ -5878,13 +5883,13 @@
                 o("b92a21d9", function (e) {
                     return "Nessun risultato per " + e.query;
                 }),
-                o("f191a2ba", "impostazioni di ricerca"),
-                o("a068008a", "Attualmente non è possibile caricare le cartelle"),
+                o("f191a2ba", "impostazioni di ricerca");
+            o("a068008a", "Attualmente non è possibile caricare le cartelle"),
                 o("f075b0e8", "Modifica cartella"),
-                o("beba2a0e", "Crea una nuova cartella di segnalibri");
-            o("e41c9b4f", function (e) {
-                return "Saved to " + e.bookmarkFolderName;
-            }),
+                o("beba2a0e", "Crea una nuova cartella di segnalibri"),
+                o("e41c9b4f", function (e) {
+                    return "Saved to " + e.bookmarkFolderName;
+                }),
                 o("h18f86a4", "Elimina cartella"),
                 o("f4ea967a", "La cartella è stata eliminata"),
                 o("b670aa62", "Nome cartella"),
@@ -6884,13 +6889,13 @@
                 o("eef1ae76", "Collegamento attivo"),
                 o("a915f5c1", function (e) {
                     return "Collegamento a " + e.ats + " attivo";
-                }),
-                o("af7286b7", function (e) {
-                    return e.percentage + "% di sconto su Premium annuale";
-                }),
+                });
+            o("af7286b7", function (e) {
+                return e.percentage + "% di sconto su Premium annuale";
+            }),
                 o("c924ad84", "Continua a riprodurre i video"),
-                o("de750a3c", "Godine anche quando lo smartphone è bloccato");
-            o("he5e87c4", "Metti in risalto le tue risposte"),
+                o("de750a3c", "Godine anche quando lo smartphone è bloccato"),
+                o("he5e87c4", "Metti in risalto le tue risposte"),
                 o("g64a60ba", "Lascia che le tue risposte ai post vengano messe leggermente in risalto"),
                 o("a7ee832a", "Correggi refusi ed errori entro 60 minuti dall'invio"),
                 o("fdd77a34", "Crea post più lunghi"),
@@ -7387,6 +7392,11 @@
                 o("bd05add8", "Non sono un bot"),
                 o("d94f12b6", "Prova a cercare notifiche, privacy, ecc."),
                 o("ba8f6f82", "Cerca nelle impostazioni"),
+                o("ibf92e4a", "Payment Successful"),
+                o("bdf0fb06", "Your subscription has been activated."),
+                o("ddfd6718", "Pagamento non riuscito"),
+                o("d42fa852", "There was an issue processing your payment. Please try again."),
+                o("g055a9ce", "Open 𝕏 App"),
                 o("g931a6e5", function (e) {
                     return "Stai seguendo " + e.topic;
                 }),
@@ -7861,17 +7871,7 @@
                 o("a76d58ba", "Statistiche annunci"),
                 o("eccd0e1a", "Statistiche dell'organizzazione"),
                 o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
-                o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate."),
-                o("gf67aae4", "Esegui l'upgrade a Full access"),
-                o("h75e3618", "Includi organizzazione"),
-                o("h24a8862", "Info su questa casella"),
-                o("c29e3a88", "Seleziona affiliati"),
-                o("j8318d57", function (e) {
-                    return e.number + " affiliat" + t(e.number, "o", "i");
-                }),
-                o("bf809ec0", "Seleziona affiliati"),
-                o("b719e224", "Nessun risultato"),
-                o("c9938100", "Risultati di ricerca");
+                o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate.");
             function n(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7910,7 +7910,17 @@
                     r(e, i)
                 );
             }
-            o("d1a35ec6", "Aggiungi account"),
+            o("gf67aae4", "Esegui l'upgrade a Full access"),
+                o("h75e3618", "Includi organizzazione"),
+                o("h24a8862", "Info su questa casella"),
+                o("c29e3a88", "Seleziona affiliati"),
+                o("j8318d57", function (e) {
+                    return e.number + " affiliat" + t(e.number, "o", "i");
+                }),
+                o("bf809ec0", "Seleziona affiliati"),
+                o("b719e224", "Nessun risultato"),
+                o("c9938100", "Risultati di ricerca"),
+                o("d1a35ec6", "Aggiungi account"),
                 o("b437adda", "Esegui l'upgrade alla versione a pagamento"),
                 o("f1f6c88b", function (e) {
                     return "Account (" + e.count + ")";
@@ -7964,7 +7974,6 @@
                 o("b4fef99e", "Non appena il nostro team di assistenza riceverà la richiesta, esamineremo le tue informazioni e ti aiuteremo a configurare l'integrazione."),
                 o("h37f2d96", "Nota: attualmente non tutti i sistemi di monitoraggio dei candidati sono supportati."),
                 o("ce102a20", "Reindirizzamento a Stripe in corso"),
-                o("ddfd6718", "Pagamento non riuscito"),
                 o("i90ea7d2", "Aggiorna al più presto i dettagli di fatturazione per continuare a godere dei benefici."),
                 o("a62359e6", "Impostazioni di Organizzazioni verificate"),
                 o("ge221b7c", "Per ottenere l'accesso agli affiliati e altri crediti pubblicitari, esegui l'upgrade dell'abbonamento a Organizzazioni verificate."),
@@ -8900,10 +8909,10 @@
                 o("j0c6772a", "Visita il sito Web"),
                 o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
                 o("b3112b8a", "Salta"),
-                o("h6333ad0", "Salta annuncio"),
-                o("c59da417", function (e) {
-                    return "Salta annuncio tra " + e.seconds;
-                }),
+                o("h6333ad0", "Salta annuncio");
+            o("c59da417", function (e) {
+                return "Salta annuncio tra " + e.seconds;
+            }),
                 o("c3c147cf", function (e) {
                     return "Salta " + e.seconds;
                 }),
@@ -8913,8 +8922,8 @@
                     return "Automatica (" + e.quality + ")";
                 }),
                 o("a7bf9962", "Scarica video"),
-                o("ccc97152", "Velocità di riproduzione");
-            o("h531ade0", "Qualità video"),
+                o("ccc97152", "Velocità di riproduzione"),
+                o("h531ade0", "Qualità video"),
                 o("e8b5757c", "0,25x"),
                 o("e7e954de", "0,5x"),
                 o("g07ffe66", "0,75x"),
@@ -10137,9 +10146,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["In base al tuo utilizzo di X e alle impostazioni sulla lingua, Grok tradurrà automaticamente dalla seguente lingua: " + this.props.sourceLang + ". Per selezionare le lingue da tradurre automaticamente, apri le ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13340,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.0ada494a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.7e5268ba.js.map

@@ -1371,7 +1371,12 @@
                 i("b7cb4fab", "Źródło tłumaczenia"),
                 i("e0bffbf8", "Automatyczne tłumaczenie — informacje"),
                 i("e839db3a", "Odrzuć"),
-                i("a15585b4", "Ustawienia języka"),
+                i("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                i("c60b9e5c", "Changes will take effect for newly loaded content."),
+                i("c6ad999b", "languages settings"),
+                i("hba0547a", "Unable to update settings. Please try again later."),
                 i("d4c339b9", function (e) {
                     return "Wpis użytkownika " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1927,11 +1932,11 @@
                 }),
                 i("ad89b831", function (e) {
                     return "aktywne" + e.ttc_rich_text_composer;
-                }),
-                i("jcd5ee8a", "Edytuj blok"),
+                });
+            i("jcd5ee8a", "Edytuj blok"),
                 i("a8f09fb8", "Usuń blok"),
-                i("i89195ea", "Rozdzielacz");
-            i("da8ac57c", "Edytuj podpis"),
+                i("i89195ea", "Rozdzielacz"),
+                i("da8ac57c", "Edytuj podpis"),
                 i("a8fdd09c", "Opublikuj artykuł"),
                 i("d8047cc8", "Opublikuj"),
                 i("ff7ddca2", "Opublikowany artykuł będzie widoczny jako wpis. Będzie go też można znaleźć na karcie Artykuły w Twoim profilu."),
@@ -2979,15 +2984,15 @@
                 i("j43f99be", "Trafność"),
                 i("ad6e11ac", "Sortuj odpowiedzi wg"),
                 i("b2311b70", "Te treści są niedostępne"),
-                i("j88f27d8", "Powiązane osoby"),
-                i("i31dcd22", "Artykuł"),
+                i("j88f27d8", "Powiązane osoby");
+            i("i31dcd22", "Artykuł"),
                 i("e3de2f6f", function (e) {
                     return e.entity + " został dodany do Zakładek";
                 }),
                 i("e64de8a9", function (e) {
                     return e.entity + " został usunięty z Zakładek";
-                });
-            i("d6d9aab6", "Dodaj Zakładkę"),
+                }),
+                i("d6d9aab6", "Dodaj Zakładkę"),
                 i("bb89cf46", "Usuń zakładkę"),
                 i("a739d4ba", "Dodaj do folderu Zakładek"),
                 i("d5270434", "Wyjdź"),
@@ -3909,11 +3914,11 @@
                 i("c3b5b829", function (e) {
                     return e.count + " zaproszeni" + n(e.count, "a", "a", "e", "a");
                 }),
-                i("fe7a1910", "Wyślij zaproszenia"),
-                i("ic3c757e", "Wyszukaj użytkowników"),
+                i("fe7a1910", "Wyślij zaproszenia");
+            i("ic3c757e", "Wyszukaj użytkowników"),
                 i("cd133486", "Zaproś"),
-                i("f2333850", "Udostępnij osobom spoza serwisu X");
-            i("cddb8097", "Dowiedz się więcej"),
+                i("f2333850", "Udostępnij osobom spoza serwisu X"),
+                i("cddb8097", "Dowiedz się więcej"),
                 i("f77997b0", "Współhost"),
                 i("i48f4ed8", "Mówca"),
                 i("a77c8e02", "Słuchacz"),
@@ -4933,11 +4938,11 @@
                 i("c8410542", "Liczba wyświetleń Twojego filmu."),
                 i("a532072a", "Oglądający"),
                 i("d9508ab0", "wyświetl."),
-                i("d9f9dec0", "Wyświetl pokój"),
-                i("h0c1f37a", "Wyświetl analizy pokoju"),
+                i("d9f9dec0", "Wyświetl pokój");
+            i("h0c1f37a", "Wyświetl analizy pokoju"),
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
-                i("if2909ba", "Czas oglądania");
-            i("i0e5bf4c", "Twoje filmy"),
+                i("if2909ba", "Czas oglądania"),
+                i("i0e5bf4c", "Twoje filmy"),
                 i("ed99baea", "Wczesny dostęp do wersji Beta"),
                 i("gf898b70", "Wyszukiwanie zaawansowane"),
                 i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
@@ -5887,13 +5892,13 @@
                 i("b92a21d9", function (e) {
                     return "Nie znaleziono wyników dla hasła " + e.query;
                 }),
-                i("f191a2ba", "Ustawienia wyszukiwania"),
-                i("a068008a", "Foldery nie są obecnie ładowane"),
+                i("f191a2ba", "Ustawienia wyszukiwania");
+            i("a068008a", "Foldery nie są obecnie ładowane"),
                 i("f075b0e8", "Edytuj folder"),
-                i("beba2a0e", "Utwórz nowy folder Zakładki");
-            i("e41c9b4f", function (e) {
-                return "Zapisano w folderze " + e.bookmarkFolderName;
-            }),
+                i("beba2a0e", "Utwórz nowy folder Zakładki"),
+                i("e41c9b4f", function (e) {
+                    return "Zapisano w folderze " + e.bookmarkFolderName;
+                }),
                 i("h18f86a4", "Usuń folder"),
                 i("f4ea967a", "Usunięto folder"),
                 i("b670aa62", "Nazwa folderu"),
@@ -6893,13 +6898,13 @@
                 i("eef1ae76", "Aktualnie połączono"),
                 i("a915f5c1", function (e) {
                     return "Połączono: " + e.ats;
-                }),
-                i("af7286b7", function (e) {
-                    return e.percentage + "% zniżki za rok subskrypcji Premium";
-                }),
+                });
+            i("af7286b7", function (e) {
+                return e.percentage + "% zniżki za rok subskrypcji Premium";
+            }),
                 i("c924ad84", "Nieprzerwane odtwarzanie filmów"),
-                i("de750a3c", "Korzystaj, nawet jeśli Twój telefon będzie zablokowany");
-            i("he5e87c4", "Wzmacniaj swoje odpowiedzi"),
+                i("de750a3c", "Korzystaj, nawet jeśli Twój telefon będzie zablokowany"),
+                i("he5e87c4", "Wzmacniaj swoje odpowiedzi"),
                 i("g64a60ba", "Uzyskaj małą priorytetyzację podczas odpowiadania na wpisy"),
                 i("a7ee832a", "Przez 60 minut możesz poprawiać literówki i pomyłki"),
                 i("fdd77a34", "Twórz dłuższe wpisy"),
@@ -7396,6 +7401,11 @@
                 i("bd05add8", "Nie jestem botem"),
                 i("d94f12b6", "Spróbuj wyszukać powiadomienia, ustawienia prywatności itd."),
                 i("ba8f6f82", "Ustawienia wyszukiwania"),
+                i("ibf92e4a", "Payment Successful"),
+                i("bdf0fb06", "Your subscription has been activated."),
+                i("ddfd6718", "Realizacja płatności nie powiodła się"),
+                i("d42fa852", "There was an issue processing your payment. Please try again."),
+                i("g055a9ce", "Open 𝕏 App"),
                 i("g931a6e5", function (e) {
                     return "Obserwujesz " + e.topic;
                 }),
@@ -7870,17 +7880,7 @@
                 i("a76d58ba", "Analizy reklam"),
                 i("eccd0e1a", "Analizy organizacji"),
                 i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
-                i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy."),
-                i("gf67aae4", "Podnieś poziom do poziomu Pełny dostęp"),
-                i("h75e3618", "Uwzględnij organizację"),
-                i("h24a8862", "Informacje o tym polu wyboru"),
-                i("c29e3a88", "Wybierz konta powiązane"),
-                i("j8318d57", function (e) {
-                    return e.number + " kont" + n(e.number, "a powiązane", " powiązanych", "o powiązane", "a powiązanego");
-                }),
-                i("bf809ec0", "Wybierz konta powiązane"),
-                i("b719e224", "Brak wyników"),
-                i("c9938100", "Wyniki wyszukiwania");
+                i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7919,7 +7919,17 @@
                     c(e, a)
                 );
             }
-            i("d1a35ec6", "Dodaj konta"),
+            i("gf67aae4", "Podnieś poziom do poziomu Pełny dostęp"),
+                i("h75e3618", "Uwzględnij organizację"),
+                i("h24a8862", "Informacje o tym polu wyboru"),
+                i("c29e3a88", "Wybierz konta powiązane"),
+                i("j8318d57", function (e) {
+                    return e.number + " kont" + n(e.number, "a powiązane", " powiązanych", "o powiązane", "a powiązanego");
+                }),
+                i("bf809ec0", "Wybierz konta powiązane"),
+                i("b719e224", "Brak wyników"),
+                i("c9938100", "Wyniki wyszukiwania"),
+                i("d1a35ec6", "Dodaj konta"),
                 i("b437adda", "Uaktualnij do płatnej wersji"),
                 i("f1f6c88b", function (e) {
                     return "Konta (" + e.count + ")";
@@ -7973,7 +7983,6 @@
                 i("b4fef99e", "Gdy nasz zespół pomocy technicznej otrzyma Twoje żądanie, przejrzymy Twoje informacje i pomożemy Ci w skonfigurowaniu integracji."),
                 i("h37f2d96", "Pamiętaj, że nie wszystkie systemy śledzenia osób aplikujących są aktualnie obsługiwane."),
                 i("ce102a20", "Przekierowywanie do usługi Stripe"),
-                i("ddfd6718", "Realizacja płatności nie powiodła się"),
                 i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
                 i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
                 i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
@@ -8909,10 +8918,10 @@
                 i("j0c6772a", "Odwiedź stronę"),
                 i("f73003aa", "Film rozpocznie się po reklamie"),
                 i("b3112b8a", "Pomiń"),
-                i("h6333ad0", "Pomiń reklamę"),
-                i("c59da417", function (e) {
-                    return "Pomiń reklamę za " + e.seconds;
-                }),
+                i("h6333ad0", "Pomiń reklamę");
+            i("c59da417", function (e) {
+                return "Pomiń reklamę za " + e.seconds;
+            }),
                 i("c3c147cf", function (e) {
                     return "Pomiń " + e.seconds;
                 }),
@@ -8922,8 +8931,8 @@
                     return "Automatyczna (" + e.quality + ")";
                 }),
                 i("a7bf9962", "Pobierz film"),
-                i("ccc97152", "Prędkość odtwarzania");
-            i("h531ade0", "Jakość filmów"),
+                i("ccc97152", "Prędkość odtwarzania"),
+                i("h531ade0", "Jakość filmów"),
                 i("e8b5757c", "0,25 x"),
                 i("e7e954de", "0,5x"),
                 i("g07ffe66", "0,75 x"),
@@ -10146,9 +10155,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Zgodnie z Twoimi ustawieniami języka oraz tym, jak używasz serwisu X, Grok będzie automatycznie tłumaczył treści w języku " + this.props.sourceLang + ". Aby wybrać języki, które będą tłumaczone automatycznie, przejdź na stronę ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13353,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.2201fc5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.0972145a.js.map

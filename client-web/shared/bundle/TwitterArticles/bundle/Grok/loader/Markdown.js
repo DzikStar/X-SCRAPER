@@ -1,11 +1,11 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown", "icons/IconCameraPlusStroke-js", "icons/IconFilm-js", "icons/IconSearchPlusStroke-js"],
+    ["shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown", "icons/IconCropSquare-js", "icons/IconMediaExpand-js"],
     {
         65469: (e, t, n) => {
             n.d(t, { Z: () => s });
             n(202784);
-            const s = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.24"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), n.e("loader.CodeBlock-49d0a293"), n.e("loader.CodeBlock-354a642d"), n.e("loader.CodeBlock-e96e9bea")]).then(n.bind(n, 896867)) });
+            const s = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), n.e("loader.CodeBlock-6107ac1a"), n.e("loader.CodeBlock-354a642d"), n.e("loader.CodeBlock-e96e9bea")]).then(n.bind(n, 896867)) });
         },
         169576: (e, t, n) => {
             n.d(t, { c: () => f, Z: () => m });
@@ -34,11 +34,11 @@
                             d.scribe({ component: m, action: "click", element: "card" });
                         },
                         { backgroundcolor: w, buttonSize: y, cardWidth: _, marginbottom: $, textcolor: z } = p ?? {},
-                        v = w ? i.default.theme.colors[w] : i.default.theme.colors.gray0,
+                        T = w ? i.default.theme.colors[w] : i.default.theme.colors.gray0,
                         S = z ? i.default.theme.colors[z] : i.default.theme.colors.gray900,
-                        T = $ ? i.default.theme.spaces[$] : i.default.theme.spaces.space16,
-                        R = { [f.MarchMadness]: { header: k.header, description: k.description, legalDisclaimer: k.legalDisclaimer, buttonText: k.buttonText, image: k.image } }[n];
-                    return u ? s.createElement(l.Z, { interactiveStyles: null, link: t, onPress: b, style: x.bannerContainer }, s.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? R.image.lightMode : R.image.darkMode }, style: { height: 85 } })) : s.createElement(r.Z, { style: [x.card, { backgroundColor: v }, { maxWidth: _ }, { marginBottom: T }], testID: "popupCard" }, s.createElement(r.Z, { style: e ? x.horizontalContent : x.verticalContent }, s.createElement(r.Z, { style: e ? x.textContainer : null }, s.createElement(o.ZP, { size: "headline2", style: [x.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, R.header), s.createElement(o.ZP, { size: "subtext1", style: [x.popupDescription, { color: S }] }, R.description, " ", e ? null : R.legalDisclaimer)), s.createElement(r.Z, { style: x.buttonContainer }, s.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [x.popupButton, { width: y }] }, R.buttonText), e && s.createElement(o.ZP, { size: "subtext3", style: [x.legalDisclaimer, { color: S }] }, R.legalDisclaimer))));
+                        R = $ ? i.default.theme.spaces[$] : i.default.theme.spaces.space16,
+                        A = { [f.MarchMadness]: { header: k.header, description: k.description, legalDisclaimer: k.legalDisclaimer, buttonText: k.buttonText, image: k.image } }[n];
+                    return u ? s.createElement(l.Z, { interactiveStyles: null, link: t, onPress: b, style: x.bannerContainer }, s.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? A.image.lightMode : A.image.darkMode }, style: { height: 85 } })) : s.createElement(r.Z, { style: [x.card, { backgroundColor: T }, { maxWidth: _ }, { marginBottom: R }], testID: "popupCard" }, s.createElement(r.Z, { style: e ? x.horizontalContent : x.verticalContent }, s.createElement(r.Z, { style: e ? x.textContainer : null }, s.createElement(o.ZP, { size: "headline2", style: [x.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, A.header), s.createElement(o.ZP, { size: "subtext1", style: [x.popupDescription, { color: S }] }, A.description, " ", e ? null : A.legalDisclaimer)), s.createElement(r.Z, { style: x.buttonContainer }, s.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [x.popupButton, { width: y }] }, A.buttonText), e && s.createElement(o.ZP, { size: "subtext3", style: [x.legalDisclaimer, { color: S }] }, A.legalDisclaimer))));
                 },
                 x = i.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -99,7 +99,7 @@
             const d = c.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
                 g = u;
         },
-        293615: (e, t, n) => {
+        390587: (e, t, n) => {
             n.r(t), n.d(t, { default: () => o });
             var s = n(202784),
                 r = n(890601),
@@ -107,42 +107,31 @@
                 l = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const o = a;
         },
-        926981: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
+        841972: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
             var s = n(202784),
                 r = n(890601),
                 i = n(783427),
-                l = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M18.5 2h-13C4.12 2 3 3.12 3 4.5v15C3 20.88 4.12 22 5.5 22h13c1.38 0 2.5-1.12 2.5-2.5v-15C21 3.12 19.88 2 18.5 2zM7 20H5.5c-.28 0-.5-.22-.5-.5v-2h2V20zm0-4.5H5V13h2v2.5zM7 11H5V8.5h2V11zm0-4.5H5v-2c0-.28.22-.5.5-.5H7v2.5zM15 20H9v-7h6v7zm0-9H9V4h6v7zm4 8.5c0 .28-.22.5-.5.5H17v-2.5h2v2zm0-4h-2V13h2v2.5zm0-4.5h-2V8.5h2V11zm0-4.5h-2V4h1.5c.28 0 .5.22.5.5v2z" })) }, { writingDirection: t });
+                l = n(717683),
+                a = n(347101);
+            const o = (e = {}) => {
+                const t = s.useContext(l.Z),
+                    { direction: n } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" })) }, { writingDirection: n });
             };
-            a.metadata = { width: 24, height: 24 };
-            const o = a;
-        },
-        158910: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
-            var s = n(202784),
-                r = n(890601),
-                i = n(783427),
-                l = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm8-1V7.5h2V10h2.5v2H12v2.5h-2V12H7.5v-2H10z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const o = a;
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
         },
         719870: (e, t, n) => {
             function s() {
                 return { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             }
-            n.d(t, { TU: () => I });
+            n.d(t, { TU: () => v });
             let r = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             function i(e) {
                 r = e;
@@ -704,7 +693,7 @@
                     return t;
                 }
             }
-            class v {
+            class T {
                 options;
                 constructor(e) {
                     this.options = e || r;
@@ -808,18 +797,18 @@
                     return "";
                 }
             }
-            class T {
+            class R {
                 options;
                 renderer;
                 textRenderer;
                 constructor(e) {
-                    (this.options = e || r), (this.options.renderer = this.options.renderer || new v()), (this.renderer = this.options.renderer), (this.renderer.options = this.options), (this.textRenderer = new S());
+                    (this.options = e || r), (this.options.renderer = this.options.renderer || new T()), (this.renderer = this.options.renderer), (this.renderer.options = this.options), (this.textRenderer = new S());
                 }
                 static parse(e, t) {
-                    return new T(t).parse(e);
+                    return new R(t).parse(e);
                 }
                 static parseInline(e, t) {
-                    return new T(t).parseInline(e);
+                    return new R(t).parseInline(e);
                 }
                 parse(e, t = !0) {
                     let n = "";
@@ -992,7 +981,7 @@
                     return n;
                 }
             }
-            class R {
+            class A {
                 options;
                 constructor(e) {
                     this.options = e || r;
@@ -1005,17 +994,17 @@
                     return e;
                 }
             }
-            const A = new (class {
+            const I = new (class {
                 defaults = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
                 options = this.setOptions;
-                parse = this.#e(z.lex, T.parse);
-                parseInline = this.#e(z.lexInline, T.parseInline);
-                Parser = T;
-                Renderer = v;
+                parse = this.#e(z.lex, R.parse);
+                parseInline = this.#e(z.lexInline, R.parseInline);
+                Parser = R;
+                Renderer = T;
                 TextRenderer = S;
                 Lexer = z;
                 Tokenizer = y;
-                Hooks = R;
+                Hooks = A;
                 constructor(...e) {
                     this.use(...e);
                 }
@@ -1074,7 +1063,7 @@
                                     (n.extensions = t)),
                                 e.renderer)
                             ) {
-                                const t = this.defaults.renderer || new v(this.defaults);
+                                const t = this.defaults.renderer || new T(this.defaults);
                                 for (const n in e.renderer) {
                                     const s = e.renderer[n],
                                         r = n,
@@ -1100,12 +1089,12 @@
                                 n.tokenizer = t;
                             }
                             if (e.hooks) {
-                                const t = this.defaults.hooks || new R();
+                                const t = this.defaults.hooks || new A();
                                 for (const n in e.hooks) {
                                     const s = e.hooks[n],
                                         r = n,
                                         i = t[r];
-                                    R.passThroughHooks.has(n)
+                                    A.passThroughHooks.has(n)
                                         ? (t[r] = (e) => {
                                               if (this.defaults.async) return Promise.resolve(s.call(t, e)).then((e) => i.call(t, e));
                                               const n = s.call(t, e);
@@ -1138,7 +1127,7 @@
                     return z.lex(e, t ?? this.defaults);
                 }
                 parser(e, t) {
-                    return T.parse(e, t ?? this.defaults);
+                    return R.parse(e, t ?? this.defaults);
                 }
                 #e(e, t) {
                     return (n, s) => {
@@ -1177,33 +1166,33 @@
                     };
                 }
             })();
-            function I(e, t) {
-                return A.parse(e, t);
+            function v(e, t) {
+                return I.parse(e, t);
             }
-            (I.options = I.setOptions =
+            (v.options = v.setOptions =
                 function (e) {
-                    return A.setOptions(e), (I.defaults = A.defaults), i(I.defaults), I;
+                    return I.setOptions(e), (v.defaults = I.defaults), i(v.defaults), v;
                 }),
-                (I.getDefaults = s),
-                (I.defaults = r),
-                (I.use = function (...e) {
-                    return A.use(...e), (I.defaults = A.defaults), i(I.defaults), I;
+                (v.getDefaults = s),
+                (v.defaults = r),
+                (v.use = function (...e) {
+                    return I.use(...e), (v.defaults = I.defaults), i(v.defaults), v;
                 }),
-                (I.walkTokens = function (e, t) {
-                    return A.walkTokens(e, t);
+                (v.walkTokens = function (e, t) {
+                    return I.walkTokens(e, t);
                 }),
-                (I.parseInline = A.parseInline),
-                (I.Parser = T),
-                (I.parser = T.parse),
-                (I.Renderer = v),
-                (I.TextRenderer = S),
-                (I.Lexer = z),
-                (I.lexer = z.lex),
-                (I.Tokenizer = y),
-                (I.Hooks = R),
-                (I.parse = I);
-            I.options, I.setOptions, I.use, I.walkTokens, I.parseInline, T.parse, z.lex;
+                (v.parseInline = I.parseInline),
+                (v.Parser = R),
+                (v.parser = R.parse),
+                (v.Renderer = T),
+                (v.TextRenderer = S),
+                (v.Lexer = z),
+                (v.lexer = z.lex),
+                (v.Tokenizer = y),
+                (v.Hooks = A),
+                (v.parse = v);
+            v.options, v.setOptions, v.use, v.walkTokens, v.parseInline, R.parse, z.lex;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.209f157a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.807fb17a.js.map

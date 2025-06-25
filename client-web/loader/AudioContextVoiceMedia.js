@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.AudioContextVoiceMedia", "loader.AudioDock"],
+    ["loader.AudioContextVoiceMedia"],
     {
         420412: (e, t, r) => {
             r.d(t, { Z: () => c });
@@ -51,4 +51,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextVoiceMedia.810828da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextVoiceMedia.276c72ea.js.map

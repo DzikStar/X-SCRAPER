@@ -1361,7 +1361,12 @@
                 f("b7cb4fab", "による翻訳"),
                 f("e0bffbf8", "自動翻訳について"),
                 f("e839db3a", "非表示にする"),
-                f("a15585b4", "言語設定"),
+                f("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                f("c60b9e5c", "Changes will take effect for newly loaded content."),
+                f("c6ad999b", "languages settings"),
+                f("hba0547a", "Unable to update settings. Please try again later."),
                 f("d4c339b9", function (e) {
                     return e.fullName + "さん（@" + e.screenName + "）からのポスト";
                 }),
@@ -1917,11 +1922,11 @@
                 }),
                 f("ad89b831", function (e) {
                     return "有効" + e.ttc_rich_text_composer;
-                }),
-                f("jcd5ee8a", "ブロックを編集"),
+                });
+            f("jcd5ee8a", "ブロックを編集"),
                 f("a8f09fb8", "ブロックを削除"),
-                f("i89195ea", "仕切り");
-            f("da8ac57c", "キャプションを編集"),
+                f("i89195ea", "仕切り"),
+                f("da8ac57c", "キャプションを編集"),
                 f("a8fdd09c", "記事を公開"),
                 f("d8047cc8", "公開"),
                 f("ff7ddca2", "記事は、公開するとポストとして表示されます。さらに、プロフィールの [記事] タブにも表示されます。"),
@@ -2969,15 +2974,15 @@
                 f("j43f99be", "関連性"),
                 f("ad6e11ac", "返信の並べ替え基準"),
                 f("b2311b70", "表示できません"),
-                f("j88f27d8", "関連性の高いアカウント"),
-                f("i31dcd22", "記事"),
+                f("j88f27d8", "関連性の高いアカウント");
+            f("i31dcd22", "記事"),
                 f("e3de2f6f", function (e) {
                     return e.entity + "をブックマークに追加しました";
                 }),
                 f("e64de8a9", function (e) {
                     return e.entity + "をブックマークから削除しました";
-                });
-            f("d6d9aab6", "ブックマークを追加"),
+                }),
+                f("d6d9aab6", "ブックマークを追加"),
                 f("bb89cf46", "ブックマークを削除"),
                 f("a739d4ba", "ブックマークフォルダに追加"),
                 f("d5270434", "終了"),
@@ -3899,11 +3904,11 @@
                 f("c3b5b829", function (e) {
                     return e.count + " 件のリクエスト";
                 }),
-                f("fe7a1910", "招待状を送信"),
-                f("ic3c757e", "ユーザーを検索"),
+                f("fe7a1910", "招待状を送信");
+            f("ic3c757e", "ユーザーを検索"),
                 f("cd133486", "招待"),
-                f("f2333850", "X外で共有する");
-            f("cddb8097", "詳細はこちら"),
+                f("f2333850", "X外で共有する"),
+                f("cddb8097", "詳細はこちら"),
                 f("f77997b0", "共同ホスト"),
                 f("i48f4ed8", "スピーカー"),
                 f("a77c8e02", "リスナー"),
@@ -4923,11 +4928,11 @@
                 f("c8410542", "動画が再生された回数です。"),
                 f("a532072a", "視聴者"),
                 f("d9508ab0", "件の表示"),
-                f("d9f9dec0", "スペースを表示"),
-                f("h0c1f37a", "スペースのアナリティクスを表示"),
+                f("d9f9dec0", "スペースを表示");
+            f("h0c1f37a", "スペースのアナリティクスを表示"),
                 f("e41fffbc", "動画の合計再生時間です。"),
-                f("if2909ba", "再生時間");
-            f("i0e5bf4c", "動画"),
+                f("if2909ba", "再生時間"),
+                f("i0e5bf4c", "動画"),
                 f("ed99baea", "ベータ版をいち早く利用する"),
                 f("gf898b70", "高度な検索"),
                 f("d2a43a7a", "「ai」と「スタートアップ」の両方を含む"),
@@ -5877,13 +5882,13 @@
                 f("b92a21d9", function (e) {
                     return "「" + e.query + "」の検索結果はありません";
                 }),
-                f("f191a2ba", "検索設定"),
-                f("a068008a", "フォルダを読み込めません"),
+                f("f191a2ba", "検索設定");
+            f("a068008a", "フォルダを読み込めません"),
                 f("f075b0e8", "フォルダを編集"),
-                f("beba2a0e", "新しいブックマークフォルダを作成");
-            f("e41c9b4f", function (e) {
-                return e.bookmarkFolderName + "に保存しました";
-            }),
+                f("beba2a0e", "新しいブックマークフォルダを作成"),
+                f("e41c9b4f", function (e) {
+                    return e.bookmarkFolderName + "に保存しました";
+                }),
                 f("h18f86a4", "フォルダを削除"),
                 f("f4ea967a", "フォルダを削除しました"),
                 f("b670aa62", "フォルダ名"),
@@ -6883,13 +6888,13 @@
                 f("eef1ae76", "現在連携中"),
                 f("a915f5c1", function (e) {
                     return e.ats + "と連携中";
-                }),
-                f("af7286b7", function (e) {
-                    return "プレミアムが年間" + e.percentage + "%の割引";
-                }),
+                });
+            f("af7286b7", function (e) {
+                return "プレミアムが年間" + e.percentage + "%の割引";
+            }),
                 f("c924ad84", "動画再生の継続"),
-                f("de750a3c", "携帯電話がロックされているときでも利用できます");
-            f("he5e87c4", "返信の強化"),
+                f("de750a3c", "携帯電話がロックされているときでも利用できます"),
+                f("he5e87c4", "返信の強化"),
                 f("g64a60ba", "ポストに返信した場合の優先表示: 低"),
                 f("a7ee832a", "最大60分間、入力ミスや間違いを修正できます"),
                 f("fdd77a34", "長いポストの作成"),
@@ -7386,6 +7391,11 @@
                 f("bd05add8", "スターター"),
                 f("d94f12b6", "通知、プライバシーなどを検索してみてください。"),
                 f("ba8f6f82", "検索設定"),
+                f("ibf92e4a", "Payment Successful"),
+                f("bdf0fb06", "Your subscription has been activated."),
+                f("ddfd6718", "お支払いに失敗しました"),
+                f("d42fa852", "There was an issue processing your payment. Please try again."),
+                f("g055a9ce", "Open 𝕏 App"),
                 f("g931a6e5", function (e) {
                     return e.topic + "をフォローしています";
                 }),
@@ -7860,17 +7870,7 @@
                 f("a76d58ba", "広告のアナリティクス"),
                 f("eccd0e1a", "組織のアナリティクス"),
                 f("deea1708", "ご利用のすべてのXアカウントのアナリティクスを表示しますか？"),
-                f("eb603ffc", "アップグレードして関連アカウントを追加すると、集計されたアナリティクスを表示できます。"),
-                f("gf67aae4", "フルアクセスにアップグレード"),
-                f("h75e3618", "組織を含める"),
-                f("h24a8862", "このチェックボックスについて"),
-                f("c29e3a88", "関連アカウントを選択"),
-                f("j8318d57", function (e) {
-                    return e.number + " 件の関連アカウント";
-                }),
-                f("bf809ec0", "関連アカウントを選択"),
-                f("b719e224", "結果なし"),
-                f("c9938100", "検索結果");
+                f("eb603ffc", "アップグレードして関連アカウントを追加すると、集計されたアナリティクスを表示できます。");
             function t(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var f = a[c];
@@ -7909,7 +7909,17 @@
                     r(e, a)
                 );
             }
-            f("d1a35ec6", "アカウント追加"),
+            f("gf67aae4", "フルアクセスにアップグレード"),
+                f("h75e3618", "組織を含める"),
+                f("h24a8862", "このチェックボックスについて"),
+                f("c29e3a88", "関連アカウントを選択"),
+                f("j8318d57", function (e) {
+                    return e.number + " 件の関連アカウント";
+                }),
+                f("bf809ec0", "関連アカウントを選択"),
+                f("b719e224", "結果なし"),
+                f("c9938100", "検索結果"),
+                f("d1a35ec6", "アカウント追加"),
                 f("b437adda", "有料版にアップグレード"),
                 f("f1f6c88b", function (e) {
                     return "アカウント（" + e.count + "）";
@@ -7963,7 +7973,6 @@
                 f("b4fef99e", "サポートチームがリクエストを受け取った後、情報を確認し、統合の設定をお手伝いいたします。"),
                 f("h37f2d96", "現時点では、すべての採用管理システムがサポートされているわけではない点にご注意ください。"),
                 f("ce102a20", "Stripeに移動中"),
-                f("ddfd6718", "お支払いに失敗しました"),
                 f("i90ea7d2", "特典を維持するには、請求情報を至急更新してください。"),
                 f("a62359e6", "認証済み組織の設定"),
                 f("ge221b7c", "認証済み組織サブスクリプションをアップグレードすると、関連アカウントや追加の広告クレジットをご利用いただけます。"),
@@ -8899,10 +8908,10 @@
                 f("j0c6772a", "ウェブサイトに移動"),
                 f("f73003aa", "動画は広告の後に再生されます"),
                 f("b3112b8a", "スキップ"),
-                f("h6333ad0", "広告をスキップ"),
-                f("c59da417", function (e) {
-                    return "広告を" + e.seconds + "スキップ";
-                }),
+                f("h6333ad0", "広告をスキップ");
+            f("c59da417", function (e) {
+                return "広告を" + e.seconds + "スキップ";
+            }),
                 f("c3c147cf", function (e) {
                     return e.seconds + "スキップ";
                 }),
@@ -8912,8 +8921,8 @@
                     return "自動（" + e.quality + "）";
                 }),
                 f("a7bf9962", "動画をダウンロード"),
-                f("ccc97152", "再生速度");
-            f("h531ade0", "画質"),
+                f("ccc97152", "再生速度"),
+                f("h531ade0", "画質"),
                 f("e8b5757c", "0.25倍"),
                 f("e7e954de", "0.5倍"),
                 f("g07ffe66", "0.75倍"),
@@ -10143,9 +10152,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["お客様によるXのご利用状況と言語設定にもとづき、" + this.props.sourceLang + "はGrokにより自動的に翻訳されます。自動翻訳対象の言語を選択するには、", "に移動してください。"];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13345,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.ed1267fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.41c35aba.js.map

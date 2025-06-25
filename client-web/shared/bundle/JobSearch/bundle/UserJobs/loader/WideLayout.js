@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout", "icons/IconStar-js", "icons/IconStarStroke-js"],
+    ["shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"],
     {
         822502: (e, n, t) => {
-            t.d(n, { Z: () => Z });
+            t.d(n, { Z: () => P });
             var a,
                 l,
                 r,
@@ -26,39 +26,39 @@
                 _ = t(823161),
                 S = t(757483),
                 E = t(457458),
-                w = t(412876),
-                F = t(910113);
+                F = t(412876),
+                w = t(910113);
             const I = ({ fallbackName: e, user: n }) => {
-                    const t = d()(F.fR, n);
+                    const t = d()(w.fR, n);
                     return t && t.core && t.core.name && t.core.screen_name ? o.createElement(h.ZP, { size: "subtext2", style: C.userName }, o.createElement(c.Z, { style: C.name }, o.createElement(h.ZP, { numberOfLines: 1 }, t.core.name), o.createElement(k.Z, { isVerified: t.verification?.verified ?? !1, verifiedType: t.verification?.verified_type ?? void 0 })), o.createElement(f.Z, { screenName: t.core.screen_name, size: "subtext2" })) : e ? o.createElement(h.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
                 C = m.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space20 }, inactiveItem: { borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, activeItem: { backgroundColor: S.Z.hexToCss(e.colors.primary, 0.25) }, itemRow: { display: "flex", flexDirection: "row", gap: 16 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, userName: { alignItems: "center", display: "flex", flexWrap: "wrap", gap: 4 }, name: { flexWrap: "nowrap", flexDirection: "row", flexShrink: 1 } })),
-                L = ({ companyProfile: e, formattedSalary: n, jobId: t, jobLocation: a, jobTitle: l, onClick: r, renderActions: i, salaryInterval: s, user: u, withBottomBorder: d = !0 }) => {
+                K = ({ companyProfile: e, formattedSalary: n, jobId: t, jobLocation: a, jobTitle: l, onClick: r, renderActions: i, salaryInterval: s, user: u, withBottomBorder: d = !0 }) => {
                     const { jobId: m } = (0, b.useParams)(),
                         p = o.useMemo(() => ({ label: l }), [l]),
                         y = o.useMemo(() => {
                             const e = [C.listContainer];
                             return m === t ? e.push(C.activeItem) : d && e.push(C.inactiveItem), e;
                         }, [m, t, d]);
-                    return o.createElement(v.Z, { onClick: r, role: "listitem", style: y }, o.createElement(c.Z, { style: C.itemRow }, u ? o.createElement(w.Y, { size: "xLarge", user: u }) : o.createElement(_.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(c.Z, { style: C.items }, o.createElement(h.ZP, { hoverLabel: p, numberOfLines: 2, size: "subtext1", weight: "bold" }, l), o.createElement(I, { fallbackName: e?.core?.name, user: u }), o.createElement(h.ZP, { color: "gray700", size: "subtext2" }, a), n ? o.createElement(h.ZP, { color: "gray700", size: "subtext2" }, (0, E.M)(n, s)) : null)), i && o.createElement(c.Z, null, i()));
+                    return o.createElement(v.Z, { onClick: r, role: "listitem", style: y }, o.createElement(c.Z, { style: C.itemRow }, u ? o.createElement(F.Y, { size: "xLarge", user: u }) : o.createElement(_.default, { shape: "square", size: "xLarge", uri: e?.logo?.normal_url || "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }), o.createElement(c.Z, { style: C.items }, o.createElement(h.ZP, { hoverLabel: p, numberOfLines: 2, size: "subtext1", weight: "bold" }, l), o.createElement(I, { fallbackName: e?.core?.name, user: u }), o.createElement(h.ZP, { color: "gray700", size: "subtext2" }, a), n ? o.createElement(h.ZP, { color: "gray700", size: "subtext2" }, (0, E.M)(n, s)) : null)), i && o.createElement(c.Z, null, i()));
                 },
-                K = s,
+                L = s,
                 x = m.default.create((e) => ({ actions: { display: "flex", flexDirection: "row", justifyContent: "space-between", flex: 1, marginStart: e.spaces.space56, marginTop: e.spaces.space12 } })),
-                Z = ({ actions: e, companyProfile: n, job: t, jobId: a, jobIndex: l, onClick: r, relayId: i, user: s, userSentiment: u, withBottomBorder: m = !0 }) => {
+                P = ({ actions: e, companyProfile: n, job: t, jobId: a, jobIndex: l, onClick: r, relayId: i, user: s, userSentiment: u, withBottomBorder: m = !0 }) => {
                     const b = (0, p.Z)(),
-                        { viewer: h } = (0, y.p)(K, {}),
-                        k = d()(F.qV, t),
-                        f = d()(F.dB, n),
+                        { viewer: h } = (0, y.p)(L, {}),
+                        k = d()(w.qV, t),
+                        f = d()(w.dB, n),
                         v = h?.user_results?.result?.__id,
                         _ = o.useCallback(() => {
                             b.scribe({ action: "click", component: "job_search_list_item", element: "job", data: { items: [{ id: a, position: l }] } }), r();
                         }, [b, a, l, r]),
                         S = o.useCallback(() => o.createElement(c.Z, { style: x.actions }, o.createElement(g.ZP, { actions: e, jobId: a, relayId: i, userRelayId: v, userSentiment: u })), [e, a, i, v, u]);
-                    return k && k.title && k.location ? o.createElement(L, { companyProfile: f, formattedSalary: k.formatted_salary, jobId: a, jobLocation: k.location, jobTitle: k.title, onClick: _, renderActions: S, salaryInterval: k.salary_interval, user: s, withBottomBorder: m }) : null;
+                    return k && k.title && k.location ? o.createElement(K, { companyProfile: f, formattedSalary: k.formatted_salary, jobId: a, jobLocation: k.location, jobTitle: k.title, onClick: _, renderActions: S, salaryInterval: k.salary_interval, user: s, withBottomBorder: m }) : null;
                 };
         },
         910113: (e, n, t) => {
-            t.d(n, { ZP: () => w, dB: () => _, KM: () => E, qV: () => v, fR: () => S });
+            t.d(n, { ZP: () => F, dB: () => _, KM: () => E, qV: () => v, fR: () => S });
             t(136728);
             var a,
                 l,
@@ -200,7 +200,7 @@
                 _ = u,
                 S = o,
                 E = i,
-                w = ({ item: e, itemId: n, itemIndex: t }) => {
+                F = ({ item: e, itemId: n, itemIndex: t }) => {
                     const a = (0, h.Ji)(),
                         l = (0, b.useHistory)(),
                         r = (0, b.useLocation)(),
@@ -217,7 +217,7 @@
                 };
         },
         318178: (e, n, t) => {
-            t.d(n, { pN: () => F, h5: () => w, ZP: () => L, tv: () => E });
+            t.d(n, { pN: () => w, h5: () => F, ZP: () => K, tv: () => E });
             var a,
                 l,
                 r,
@@ -291,8 +291,8 @@
                         [l, s, e, i, a],
                     );
                 },
-                w = "like",
-                F = "dislike",
+                F = "like",
+                w = "dislike",
                 I = ({ Icon: e, SelectedIcon: n, activeStyle: t, hoverStyle: a, isSelected: l, label: r, onClick: i, sentiment: s }) => {
                     const o = (e) => (e ? a : l ? t : {});
                     return u.createElement(
@@ -302,7 +302,7 @@
                     );
                 },
                 C = b.default.create((e) => ({ sentimentActionContainer: { display: "flex", flexDirection: "row", flex: 1, gap: 6, alignItems: "center", cursor: "pointer" }, sentimentActionText: { marginTop: e.spaces.space4 }, likeActive: { color: e.colors.blue500 }, likeHover: { color: e.colors.blue700 }, dislikeActive: { color: e.colors.red500 }, dislikeHover: { color: e.colors.red700 } })),
-                L = ({ jobId: e, relayId: n, type: t, userRelayId: a, userSentiment: l }) => {
+                K = ({ jobId: e, relayId: n, type: t, userRelayId: a, userSentiment: l }) => {
                     const r = E(e, n, a),
                         i = u.useCallback(
                             (e, n) => {
@@ -311,7 +311,7 @@
                             },
                             [r, l],
                         );
-                    return t === w ? u.createElement(I, { Icon: h.default, SelectedIcon: k.default, activeStyle: C.likeActive, hoverStyle: C.likeHover, isSelected: l === w, label: "Save job", onClick: i, sentiment: w }) : t === F ? u.createElement(I, { Icon: f.default, SelectedIcon: f.default, activeStyle: C.dislikeActive, hoverStyle: C.dislikeHover, isSelected: l === F, label: "Not interested", onClick: i, sentiment: F }) : null;
+                    return t === F ? u.createElement(I, { Icon: h.default, SelectedIcon: k.default, activeStyle: C.likeActive, hoverStyle: C.likeHover, isSelected: l === F, label: "Save job", onClick: i, sentiment: F }) : t === w ? u.createElement(I, { Icon: f.default, SelectedIcon: f.default, activeStyle: C.dislikeActive, hoverStyle: C.dislikeHover, isSelected: l === w, label: "Not interested", onClick: i, sentiment: w }) : null;
                 };
         },
         292546: (e, n, t) => {
@@ -619,20 +619,20 @@
                     super(...e),
                         (this._renderContent = (e, n) => {
                             const { activeColor: t, color: r, decoration: s } = this.props;
-                            return a.createElement(c.ZP.Consumer, null, ({ direction: o }) => a.createElement(i.ZP, { color: e ? t : r, dir: o, style: [w.inner, e && "blue500" === t && w.blue500] }, a.createElement(l.Z, { ref: this.props.actionIconContainerRef }, n ? this._renderButton(n) : null, this._renderIcon()), s, this._renderCount()));
+                            return a.createElement(c.ZP.Consumer, null, ({ direction: o }) => a.createElement(i.ZP, { color: e ? t : r, dir: o, style: [F.inner, e && "blue500" === t && F.blue500] }, a.createElement(l.Z, { ref: this.props.actionIconContainerRef }, n ? this._renderButton(n) : null, this._renderIcon()), s, this._renderCount()));
                         }),
                         (this._renderButton = (e) => {
                             const { activeColor: n, backgroundColor: t, hoverLabel: l, iconSize: r, isActive: i, isDisabled: c, showBackgroundWhenActive: u } = this.props,
                                 m = s.Z.generate({ backgroundColor: d.default.theme.colors[t], color: d.default.theme.colors[n], insetFocusRing: !0 }),
                                 p = u && i && !e?.isHovered;
-                            return a.createElement(o.Z, { hoverLabel: l, interactiveStyles: m, interactivityState: e, style: [d.default.absoluteFill, E[p ? "haloBackground" : t], !c && w.iconBackground, "small" === r && w.iconSmallBoundingBox, p && w.haloBoundingBox] });
+                            return a.createElement(o.Z, { hoverLabel: l, interactiveStyles: m, interactivityState: e, style: [d.default.absoluteFill, E[p ? "haloBackground" : t], !c && F.iconBackground, "small" === r && F.iconSmallBoundingBox, p && F.haloBoundingBox] });
                         }),
                         (this._renderIcon = () => {
                             const { ActiveIcon: e, iconSize: n, isActive: t, isDisabled: l, isFaded: i, onAnimationEnd: s, onAnimationStart: o, onError: c, showAnimation: p, transitionAnimationUrl: y } = this.props;
                             if (!d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled && e && p) return a.createElement(u.ZP, { animation: y || m.Bf, animationContainerStyle: S[n], animationStyle: I, onAnimationEnd: s, onAnimationStart: o, onError: c });
                             {
                                 const r = t && e ? e : this.props.Icon;
-                                return a.createElement(r, { style: [S[n], !l && i && w.iconFaded] });
+                                return a.createElement(r, { style: [S[n], !l && i && F.iconFaded] });
                             }
                         }),
                         (this._renderCount = () => {
@@ -649,13 +649,13 @@
                         f = !d.default.theme.highContrastEnabled && !r.Z.reducedMotionEnabled;
                     return a.createElement(
                         l.Z,
-                        { style: [w.root, h] },
+                        { style: [F.root, h] },
                         a.createElement(
                             b,
                             null,
                             c
                                 ? this._renderContent(i)
-                                : a.createElement(o.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: s, enableKeyboardShortcuts: t, focusable: n, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: y, renderMenu: g, style: [w.triggerAreaRoot, w.outlineNone], testID: k }, (e) => {
+                                : a.createElement(o.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: s, enableKeyboardShortcuts: t, focusable: n, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: y, renderMenu: g, style: [F.triggerAreaRoot, F.outlineNone], testID: k }, (e) => {
                                       const { isFocused: n, isHovered: t, isPressed: a } = e,
                                           l = i || t || a || n;
                                       return this._renderContent(l, e);
@@ -668,9 +668,9 @@
             _.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
             const S = d.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
                 E = d.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
-                w = d.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
-                F = "224.5%",
-                I = { width: F, height: F };
+                F = d.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
+                w = "224.5%",
+                I = { width: w, height: w };
         },
         551611: (e, n, t) => {
             t.d(n, { Bf: () => l, ZP: () => i });
@@ -683,7 +683,7 @@
             }
             const i = new r();
         },
-        258292: (e, n, t) => {
+        748138: (e, n, t) => {
             t.r(n), t.d(n, { default: () => o });
             var a = t(202784),
                 l = t(890601),
@@ -691,24 +691,11 @@
                 i = t(347101);
             const s = (e = {}) => {
                 const { direction: n } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: n });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        106186: (e, n, t) => {
-            t.r(n), t.d(n, { default: () => o });
-            var a = t(202784),
-                l = t(890601),
-                r = t(783427),
-                i = t(347101);
-            const s = (e = {}) => {
-                const { direction: n } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23.426 9.29L15.54 8.15 12.013 1 8.486 8.15.6 9.29l5.707 5.56-1.348 7.86L12.013 19l7.053 3.71-1.347-7.86 5.707-5.56zm-11.413 7.45l-4.397 2.31.84-4.89-3.558-3.47 4.916-.72 2.199-4.45 2.198 4.45 4.917.72-3.558 3.47.84 4.89-4.397-2.31z" })) }, { writingDirection: n });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: n });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.289b792a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout.2ff0d05a.js.map

@@ -46,18 +46,19 @@
                 );
             }
         },
-        217849: (e, t, n) => {
-            n.d(t, { aV: () => f, Bq: () => v });
+        482915: (e, t, n) => {
+            n.d(t, { aV: () => f, Bq: () => p });
             var i = n(202784);
             const r = (0, i.createContext)({});
             function o() {
                 var e;
                 return null !== (e = (0, i.useContext)(r)) && void 0 !== e ? e : {};
             }
-            var s = n(613853);
+            const s = i.createContext({ register: () => {} });
+            s.displayName = "PressResponderContext";
             function l({ children: e }) {
                 let t = (0, i.useMemo)(() => ({ register: () => {} }), []);
-                return i.createElement(s.O.Provider, { value: t }, e);
+                return i.createElement(s.Provider, { value: t }, e);
             }
             var d = n(390478),
                 a = n(928316),
@@ -69,12 +70,12 @@
                     { portalContainer: n = t ? null : document.body, isExiting: r } = e,
                     [s, c] = (0, i.useState)(!1),
                     f = (0, i.useMemo)(() => ({ contain: s, setContain: c }), [s, c]),
-                    { getContainer: v } = o();
-                if ((!e.portalContainer && v && (n = v()), !n)) return null;
-                let p = e.children;
-                return e.disableFocusManagement || (p = i.createElement(d.MT, { restoreFocus: !0, contain: s && !r }, p)), (p = i.createElement(m.Provider, { value: f }, i.createElement(l, null, p))), a.createPortal(p, n);
+                    { getContainer: p } = o();
+                if ((!e.portalContainer && p && (n = p()), !n)) return null;
+                let v = e.children;
+                return e.disableFocusManagement || (v = i.createElement(d.MT, { restoreFocus: !0, contain: s && !r }, v)), (v = i.createElement(m.Provider, { value: f }, i.createElement(l, null, v))), a.createPortal(v, n);
             }
-            function v() {
+            function p() {
                 let e = (0, i.useContext)(m),
                     t = null == e ? void 0 : e.setContain;
                 (0, c.b)(() => {
@@ -83,7 +84,7 @@
             }
         },
         864295: (e, t, n) => {
-            n.d(t, { N: () => A });
+            n.d(t, { N: () => S });
             let i = new WeakMap(),
                 r = [];
             function o(e, t = document.body) {
@@ -197,7 +198,7 @@
             }
             var m = n(525757);
             const f = [];
-            function v(e, t) {
+            function p(e, t) {
                 let { onClose: n, shouldCloseOnBlur: i, isOpen: r, isDismissable: o = !1, isKeyboardDismissDisabled: d = !1, shouldCloseOnInteractOutside: a } = e;
                 (0, l.useEffect)(
                     () => (
@@ -224,7 +225,7 @@
                         (a && !a(e.target)) || (f[f.length - 1] === t && (e.stopPropagation(), e.preventDefault()));
                     },
                 });
-                let { focusWithinProps: v } = (0, m.L)({
+                let { focusWithinProps: p } = (0, m.L)({
                     isDisabled: !i,
                     onBlurWithin: (e) => {
                         e.relatedTarget && !(0, s.cW)(e.relatedTarget) && ((a && !a(e.relatedTarget)) || n());
@@ -235,7 +236,7 @@
                         onKeyDown: (e) => {
                             "Escape" !== e.key || d || e.nativeEvent.isComposing || (e.stopPropagation(), e.preventDefault(), c());
                         },
-                        ...v,
+                        ...p,
                     },
                     underlayProps: {
                         onPointerDown: (e) => {
@@ -244,7 +245,7 @@
                     },
                 };
             }
-            var p = n(217849),
+            var v = n(482915),
                 E = n(426636),
                 h = n(979870),
                 g = n(760080);
@@ -274,7 +275,7 @@
                                           let e,
                                               t,
                                               n = (n) => {
-                                                  (e = b(n.target, !0)), (e === document.documentElement && e === document.body) || (e instanceof HTMLElement && "auto" === window.getComputedStyle(e).overscrollBehavior && (t = O(e, "overscrollBehavior", "contain")));
+                                                  (e = b(n.target, !0)), (e === document.documentElement && e === document.body) || (e instanceof HTMLElement && "auto" === window.getComputedStyle(e).overscrollBehavior && (t = P(e, "overscrollBehavior", "contain")));
                                               },
                                               i = (t) => {
                                                   e && e !== document.documentElement && e !== document.body ? e.scrollHeight === e.clientHeight && e.scrollWidth === e.clientWidth && t.preventDefault() : t.preventDefault();
@@ -315,24 +316,24 @@
                                                       },
                                                       t = window.pageXOffset,
                                                       n = window.pageYOffset;
-                                                  (s = (0, g.t)(P(window, "scroll", e), O(document.documentElement, "paddingRight", window.innerWidth - document.documentElement.clientWidth + "px"), O(document.documentElement, "overflow", "hidden"), O(document.body, "marginTop", `-${n}px`), () => {
+                                                  (s = (0, g.t)(O(window, "scroll", e), P(document.documentElement, "paddingRight", window.innerWidth - document.documentElement.clientWidth + "px"), P(document.documentElement, "overflow", "hidden"), P(document.body, "marginTop", `-${n}px`), () => {
                                                       window.scrollTo(t, n);
                                                   })),
                                                       window.scrollTo(0, 0);
                                               },
-                                              d = (0, g.t)(P(document, "touchstart", n, { passive: !1, capture: !0 }), P(document, "touchmove", i, { passive: !1, capture: !0 }), P(document, "touchend", r, { passive: !1, capture: !0 }), P(document, "focus", o, !0));
+                                              d = (0, g.t)(O(document, "touchstart", n, { passive: !1, capture: !0 }), O(document, "touchmove", i, { passive: !1, capture: !0 }), O(document, "touchend", r, { passive: !1, capture: !0 }), O(document, "focus", o, !0));
                                           return () => {
                                               null == t || t(), null == s || s(), d();
                                           };
                                       })()
-                                    : (0, g.t)(O(document.documentElement, "paddingRight", window.innerWidth - document.documentElement.clientWidth + "px"), O(document.documentElement, "overflow", "hidden"))),
+                                    : (0, g.t)(P(document.documentElement, "paddingRight", window.innerWidth - document.documentElement.clientWidth + "px"), P(document.documentElement, "overflow", "hidden"))),
                             () => {
                                 T--, 0 === T && C();
                             }
                         );
                 }, [t]);
             }
-            function O(e, t, n) {
+            function P(e, t, n) {
                 let i = e.style[t];
                 return (
                     (e.style[t] = n),
@@ -341,7 +342,7 @@
                     }
                 );
             }
-            function P(e, t, n, i) {
+            function O(e, t, n, i) {
                 return (
                     e.addEventListener(t, n, i),
                     () => {
@@ -364,16 +365,16 @@
             function k(e) {
                 return (e instanceof HTMLInputElement && !y.has(e.type)) || e instanceof HTMLTextAreaElement || (e instanceof HTMLElement && e.isContentEditable);
             }
-            var S = n(277108);
-            function A(e, t, n) {
-                let { overlayProps: i, underlayProps: r } = v({ ...e, isOpen: t.isOpen, onClose: t.close }, n);
+            var N = n(277108);
+            function S(e, t, n) {
+                let { overlayProps: i, underlayProps: r } = p({ ...e, isOpen: t.isOpen, onClose: t.close }, n);
                 return (
                     D({ isDisabled: !t.isOpen }),
-                    (0, p.Bq)(),
+                    (0, v.Bq)(),
                     (0, l.useEffect)(() => {
                         if (t.isOpen) return o([n.current]);
                     }, [t.isOpen, n]),
-                    { modalProps: (0, S.d)(i), underlayProps: r }
+                    { modalProps: (0, N.d)(i), underlayProps: r }
                 );
             }
         },
@@ -427,4 +428,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f46dc3dc.1b7276ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f46dc3dc.79e9f23a.js.map

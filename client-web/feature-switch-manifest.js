@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "b0800b76153b4f053a39cb8fd2ff42c4270c0b0e",
+    feature_set_token: "9553424e7545727342850f1caaae2d82fa76cda7",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -774,10 +774,8 @@ var manifest = {
         rweb_video_vertical_aspect_ratio_enabled: { value: !1 },
         rweb_xchat_debug_enabled: { value: !1 },
         rweb_xchat_enabled: { value: !1 },
-        rweb_xchat_fs_worker: { value: !0 },
         rweb_xchat_logs: { value: !1 },
         rweb_xchat_messages_sidebar_enabled: { value: !1 },
-        rweb_xchat_new_db_worker_enabled: { value: !0 },
         rweb_xchat_old_dms_inbox_item: { value: !1 },
         rweb_xp_forwarded_for_enabled: { value: !1 },
         sc_mock_data_enabled: { value: !1 },
@@ -2496,8 +2494,8 @@ var manifest = {
         rweb_xchat_old_dms_inbox_item: { name: "rweb_xchat_old_dms_inbox_item", type: "boolean", defaultValue: !1 },
         rweb_xchat_messages_sidebar_enabled: { name: "rweb_xchat_messages_sidebar_enabled", type: "boolean", defaultValue: !1 },
         rweb_xchat_logs: { name: "rweb_xchat_logs", type: "boolean", defaultValue: !1 },
-        rweb_xchat_new_db_worker_enabled: { name: "rweb_xchat_new_db_worker_enabled", type: "boolean", defaultValue: !0 },
-        rweb_xchat_fs_worker: { name: "rweb_xchat_fs_worker", type: "boolean", defaultValue: !0 },
+        rweb_xchat_new_db_worker_enabled: { name: "rweb_xchat_new_db_worker_enabled", type: "string" },
+        rweb_xchat_fs_worker: { name: "rweb_xchat_fs_worker", type: "string" },
         rweb_xp_forwarded_for_enabled: { name: "rweb_xp_forwarded_for_enabled", type: "boolean", defaultValue: !1 },
         sc_mock_data_enabled: { name: "sc_mock_data_enabled", type: "boolean", defaultValue: !1 },
         sc_r4_dash_badge_enabled: { name: "sc_r4_dash_badge_enabled", type: "string" },

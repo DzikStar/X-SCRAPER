@@ -1365,7 +1365,12 @@
                 t("b7cb4fab", "Fassarawa daga"),
                 t("e0bffbf8", "About automatic translation"),
                 t("e839db3a", "Kore"),
-                t("a15585b4", "Language Settings"),
+                t("e7a86c77", function (a) {
+                    return "Automatically translate " + a.language;
+                }),
+                t("c60b9e5c", "Changes will take effect for newly loaded content."),
+                t("c6ad999b", "languages settings"),
+                t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (a) {
                     return "Post from " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -1921,11 +1926,11 @@
                 }),
                 t("ad89b831", function (a) {
                     return "active" + a.ttc_rich_text_composer;
-                }),
-                t("jcd5ee8a", "Edit block"),
+                });
+            t("jcd5ee8a", "Edit block"),
                 t("a8f09fb8", "Delete block"),
-                t("i89195ea", "Divider");
-            t("da8ac57c", "Edit Caption"),
+                t("i89195ea", "Divider"),
+                t("da8ac57c", "Edit Caption"),
                 t("a8fdd09c", "Publish Article"),
                 t("d8047cc8", "Buga"),
                 t("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
@@ -2973,15 +2978,15 @@
                 t("j43f99be", "Relevancy"),
                 t("ad6e11ac", "Sort replies by"),
                 t("b2311b70", "Wannan ba ya samuwa gare ka"),
-                t("j88f27d8", "Mutane da suka dace"),
-                t("i31dcd22", "Maƙala"),
+                t("j88f27d8", "Mutane da suka dace");
+            t("i31dcd22", "Maƙala"),
                 t("e3de2f6f", function (a) {
                     return a.entity + " was added to your Bookmarks";
                 }),
                 t("e64de8a9", function (a) {
                     return a.entity + " was removed from your Bookmarks";
-                });
-            t("d6d9aab6", "Ƙara Alama"),
+                }),
+                t("d6d9aab6", "Ƙara Alama"),
                 t("bb89cf46", "Cire Alama"),
                 t("a739d4ba", "Ƙara Folda mai Alama"),
                 t("d5270434", "Fita"),
@@ -3903,11 +3908,11 @@
                 t("c3b5b829", function (a) {
                     return a.count + " request" + o(a.count, "", "s");
                 }),
-                t("fe7a1910", "Send invites"),
-                t("ic3c757e", "Search for users"),
+                t("fe7a1910", "Send invites");
+            t("ic3c757e", "Search for users"),
                 t("cd133486", "Gayyaci"),
-                t("f2333850", "Share with people outside of X");
-            t("cddb8097", "Learn more"),
+                t("f2333850", "Share with people outside of X"),
+                t("cddb8097", "Learn more"),
                 t("f77997b0", "Masu masaukin baki"),
                 t("i48f4ed8", "Sifika"),
                 t("a77c8e02", "Mai saurare"),
@@ -4927,11 +4932,11 @@
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
-                t("d9f9dec0", "View Space"),
-                t("h0c1f37a", "View Space Analytics"),
+                t("d9f9dec0", "View Space");
+            t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
-                t("if2909ba", "Watch Time");
-            t("i0e5bf4c", "Your videos"),
+                t("if2909ba", "Watch Time"),
+                t("i0e5bf4c", "Your videos"),
                 t("ed99baea", "Early Beta Access"),
                 t("gf898b70", "Advanced Search"),
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
@@ -5881,13 +5886,13 @@
                 t("b92a21d9", function (a) {
                     return "Babu sakamako na " + a.query;
                 }),
-                t("f191a2ba", " Saitunan bincikenka"),
-                t("a068008a", "Folders aren`t loading right now"),
+                t("f191a2ba", " Saitunan bincikenka");
+            t("a068008a", "Folders aren`t loading right now"),
                 t("f075b0e8", "Gyara Folda"),
-                t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama");
-            t("e41c9b4f", function (a) {
-                return "Ana dana a " + a.bookmarkFolderName;
-            }),
+                t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama"),
+                t("e41c9b4f", function (a) {
+                    return "Ana dana a " + a.bookmarkFolderName;
+                }),
                 t("h18f86a4", "Share Folda"),
                 t("f4ea967a", "An share folda"),
                 t("b670aa62", "Sunan Folda"),
@@ -6887,13 +6892,13 @@
                 t("eef1ae76", "Currently connected"),
                 t("a915f5c1", function (a) {
                     return a.ats + " connected";
-                }),
-                t("af7286b7", function (a) {
-                    return a.percentage + "% off a year of Premium";
-                }),
+                });
+            t("af7286b7", function (a) {
+                return a.percentage + "% off a year of Premium";
+            }),
                 t("c924ad84", "Keep videos playing"),
-                t("de750a3c", "Enjoy them even when your phone is locked");
-            t("he5e87c4", "Boost your replies"),
+                t("de750a3c", "Enjoy them even when your phone is locked"),
+                t("he5e87c4", "Boost your replies"),
                 t("g64a60ba", "Get a small prioritization when you reply to posts"),
                 t("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
                 t("fdd77a34", "Create longer posts"),
@@ -7390,6 +7395,11 @@
                 t("bd05add8", "Not a Bot"),
                 t("d94f12b6", "Gwada neman sanarwa, sirri, da sauransu."),
                 t("ba8f6f82", "Saitunan Nema"),
+                t("ibf92e4a", "Payment Successful"),
+                t("bdf0fb06", "Your subscription has been activated."),
+                t("ddfd6718", "Payment Failed"),
+                t("d42fa852", "There was an issue processing your payment. Please try again."),
+                t("g055a9ce", "Open 𝕏 App"),
                 t("g931a6e5", function (a) {
                     return "Kana bin " + a.topic;
                 }),
@@ -7864,17 +7874,7 @@
                 t("a76d58ba", "Ads Analytics"),
                 t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
-                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                t("gf67aae4", "Upgrade to Full Access"),
-                t("h75e3618", "Include organization"),
-                t("h24a8862", "About this checkbox"),
-                t("c29e3a88", "Select affiliates"),
-                t("j8318d57", function (a) {
-                    return a.number + " affiliate" + o(a.number, "", "s");
-                }),
-                t("bf809ec0", "Select Affiliates"),
-                t("b719e224", "Babu sakamako"),
-                t("c9938100", "Bincike sakamako");
+                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7913,7 +7913,17 @@
                     u(a, e)
                 );
             }
-            t("d1a35ec6", "Ƙara asusu"),
+            t("gf67aae4", "Upgrade to Full Access"),
+                t("h75e3618", "Include organization"),
+                t("h24a8862", "About this checkbox"),
+                t("c29e3a88", "Select affiliates"),
+                t("j8318d57", function (a) {
+                    return a.number + " affiliate" + o(a.number, "", "s");
+                }),
+                t("bf809ec0", "Select Affiliates"),
+                t("b719e224", "Babu sakamako"),
+                t("c9938100", "Bincike sakamako"),
+                t("d1a35ec6", "Ƙara asusu"),
                 t("b437adda", "Upgrade to paid"),
                 t("f1f6c88b", function (a) {
                     return "Accounts (" + a.count + ")";
@@ -7967,7 +7977,6 @@
                 t("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 t("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 t("ce102a20", "Redirecting to Stripe"),
-                t("ddfd6718", "Payment Failed"),
                 t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 t("a62359e6", "Verified Organization Settings"),
                 t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
@@ -8903,10 +8912,10 @@
                 t("j0c6772a", "Visit website"),
                 t("f73003aa", "Video will play after ad"),
                 t("b3112b8a", "Tsallake"),
-                t("h6333ad0", "Skip Ad"),
-                t("c59da417", function (a) {
-                    return "Skip Ad in " + a.seconds;
-                }),
+                t("h6333ad0", "Skip Ad");
+            t("c59da417", function (a) {
+                return "Skip Ad in " + a.seconds;
+            }),
                 t("c3c147cf", function (a) {
                     return "Skip " + a.seconds;
                 }),
@@ -8916,8 +8925,8 @@
                     return "Auto (" + a.quality + ")";
                 }),
                 t("a7bf9962", "Download video"),
-                t("ccc97152", "Playback speed");
-            t("h531ade0", "Video quality"),
+                t("ccc97152", "Playback speed"),
+                t("h531ade0", "Video quality"),
                 t("e8b5757c", "0.25x"),
                 t("e7e954de", "0.5x"),
                 t("g07ffe66", "0.75x"),
@@ -10140,9 +10149,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13342,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.b26592ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.775d133a.js.map

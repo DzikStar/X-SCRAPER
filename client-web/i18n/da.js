@@ -226,9 +226,9 @@
                     return e.percentage + " % rabat " + e.tier + " " + e.plan;
                 }),
                 t("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "Få " + e.percentage + " % rabat denne sommer";
                 }),
-                t("he77d8e6", "Limited-time offer"),
+                t("he77d8e6", "Tidsbegrænset tilbud"),
                 t("adf3410a", "Abonner for at låse op for nye funktioner, og få en andel af indtægterne, hvis du er kvalificeret."),
                 t("a84a736e", "Få gratis annoncekredit"),
                 t("a0713d76", "Opgrader til Verificerede organisationer for at få gratis annoncekredit og en pakke med virksomhedsfunktioner til at skabe vækst."),
@@ -1294,7 +1294,7 @@
                     return 'Søger på 𝕏 efter "' + e.query + '"';
                 }),
                 t("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return 'Søger i 𝕏-brugere efter "' + e.query + '"';
                 }),
                 t("g008d475", function (e) {
                     return "Gennemser " + e.url;
@@ -1315,7 +1315,7 @@
                     return "Søger i 𝕏-posts af @" + e.username + ' efter **"' + e.query + '"**';
                 }),
                 t("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "Eksekverer kode" + e.ttc_tool_usage_card;
                 }),
                 t("ead81122", "Noget gik galt, opdater venligst for at genoprette forbindelsen eller prøv igen. "),
                 t("f808a13a", "Begrænsning overskredet. Vent et øjeblik, og prøv igen."),
@@ -1349,12 +1349,12 @@
                 t("deaf5b16", "Prøv igen"),
                 t("a66d80d0", "Oversæt post"),
                 t("be9b9fb8", "Oversat af Grok"),
-                t("ba10dab6", "Auto-translated by Grok"),
+                t("ba10dab6", "Automatisk oversat af Grok"),
                 t("he9c9634", "Oversættelsen kunne ikke hentes"),
                 t("j2198c98", "Skjul oversat post"),
                 t("d4d35bea", "Oversætter ..."),
-                t("f4f69be8", "Show original"),
-                t("e3097a5c", "Show auto-translated post"),
+                t("f4f69be8", "Vis original"),
+                t("e3097a5c", "Vis automatisk oversat post"),
                 t("e0f81ff3", "Oversættelse:"),
                 t("j2862695", function (e) {
                     return "Oversat fra " + e.originLanguage + " af";
@@ -1362,7 +1362,12 @@
                 t("b7cb4fab", "Oversat af"),
                 t("e0bffbf8", "Om automatisk oversættelse"),
                 t("e839db3a", "Afvis"),
-                t("a15585b4", "Sprogindstillinger"),
+                t("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                t("c60b9e5c", "Changes will take effect for newly loaded content."),
+                t("c6ad999b", "languages settings"),
+                t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (e) {
                     return "Post fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1918,11 +1923,11 @@
                 }),
                 t("ad89b831", function (e) {
                     return "aktiv" + e.ttc_rich_text_composer;
-                }),
-                t("jcd5ee8a", "Rediger blok"),
+                });
+            t("jcd5ee8a", "Rediger blok"),
                 t("a8f09fb8", "Slet blok"),
-                t("i89195ea", "Skillelinje");
-            t("da8ac57c", "Rediger billedtekst"),
+                t("i89195ea", "Skillelinje"),
+                t("da8ac57c", "Rediger billedtekst"),
                 t("a8fdd09c", "Udgiv Artikel"),
                 t("d8047cc8", "Udgiv"),
                 t("ff7ddca2", "Din Artikel vil blive vist som en post, når du udgiver den. Du kan også finde den på fanen Artikler på din profil."),
@@ -2970,15 +2975,15 @@
                 t("j43f99be", "Relevans"),
                 t("ad6e11ac", "Sortér svar efter"),
                 t("b2311b70", "Dette er ikke tilgængeligt for dig"),
-                t("j88f27d8", "Relevante personer"),
-                t("i31dcd22", "Artikel"),
+                t("j88f27d8", "Relevante personer");
+            t("i31dcd22", "Artikel"),
                 t("e3de2f6f", function (e) {
                     return e.entity + " blev føjet til dine bogmærker";
                 }),
                 t("e64de8a9", function (e) {
                     return e.entity + " blev fjernet fra dine bogmærker";
-                });
-            t("d6d9aab6", "Tilføj bogmærke"),
+                }),
+                t("d6d9aab6", "Tilføj bogmærke"),
                 t("bb89cf46", "Fjern bogmærke"),
                 t("a739d4ba", "Føj til mappe med bogmærker"),
                 t("d5270434", "Afslut"),
@@ -3900,11 +3905,11 @@
                 t("c3b5b829", function (e) {
                     return e.count + " anmodning" + i(e.count, "", "er");
                 }),
-                t("fe7a1910", "Send invitationer"),
-                t("ic3c757e", "Søg efter brugere"),
+                t("fe7a1910", "Send invitationer");
+            t("ic3c757e", "Søg efter brugere"),
                 t("cd133486", "Inviter"),
-                t("f2333850", "Del med personer uden for X");
-            t("cddb8097", "Læs mere"),
+                t("f2333850", "Del med personer uden for X"),
+                t("cddb8097", "Læs mere"),
                 t("f77997b0", "Medvært"),
                 t("i48f4ed8", "Taler"),
                 t("a77c8e02", "Lytter"),
@@ -4263,7 +4268,7 @@
                     return "Vis alle (" + e.count + ")";
                 }),
                 t("df601d92", "Relevante brugere"),
-                t("a4cfb8a8", "Browsing"),
+                t("a4cfb8a8", "Gennemser"),
                 t("d7cb5408", "Relevante websider"),
                 t("ca93f2ee", "Denne besked er blevet slettet."),
                 t("b8c06820", "Kopiér teksten"),
@@ -4924,11 +4929,11 @@
                 t("c8410542", "Antallet af gange, din video er blevet vist."),
                 t("a532072a", "Seere"),
                 t("d9508ab0", "visninger"),
-                t("d9f9dec0", "Se Rum"),
-                t("h0c1f37a", "Se rumanalysen"),
+                t("d9f9dec0", "Se Rum");
+            t("h0c1f37a", "Se rumanalysen"),
                 t("e41fffbc", "Den samlede visningstid for dine videoer."),
-                t("if2909ba", "Visningstid");
-            t("i0e5bf4c", "Dine videoer"),
+                t("if2909ba", "Visningstid"),
+                t("i0e5bf4c", "Dine videoer"),
                 t("ed99baea", "Tidlig beta-adgang"),
                 t("gf898b70", "Avanceret søgning"),
                 t("d2a43a7a", 'indeholder både "ai" og "startup"'),
@@ -5878,13 +5883,13 @@
                 t("b92a21d9", function (e) {
                     return "Ingen resultater for " + e.query;
                 }),
-                t("f191a2ba", "søgeindstillinger"),
-                t("a068008a", "Mapper indlæses ikke lige nu"),
+                t("f191a2ba", "søgeindstillinger");
+            t("a068008a", "Mapper indlæses ikke lige nu"),
                 t("f075b0e8", "Rediger mappe"),
-                t("beba2a0e", "Opret en ny mappe til bogmærker");
-            t("e41c9b4f", function (e) {
-                return "Saved to " + e.bookmarkFolderName;
-            }),
+                t("beba2a0e", "Opret en ny mappe til bogmærker"),
+                t("e41c9b4f", function (e) {
+                    return "Saved to " + e.bookmarkFolderName;
+                }),
                 t("h18f86a4", "Slet mappe"),
                 t("f4ea967a", "Mappen er blevet slettet"),
                 t("b670aa62", "Mappenavn"),
@@ -6498,7 +6503,7 @@
                 t("f7cf3d36", "Grok er en gratis AI-assistent designet af xAI for at maksimere sandhed og objektivitet. Grok tilbyder realtids-søgning, billedgenerering, trendanalyse og meget mere."),
                 t("hc965308", "Sjov"),
                 t("eb78b77e", "Tilstanden Sjov"),
-                t("ac164552", "Go to grok.com"),
+                t("ac164552", "Gå til grok.com"),
                 t("gb5fb7d0", "Fokustilstand"),
                 t("g5665caa", "Afslut fokustilstand"),
                 t("a372681e", "Kopiér link til deling"),
@@ -6884,13 +6889,13 @@
                 t("eef1ae76", "I øjeblikket tilsluttet"),
                 t("a915f5c1", function (e) {
                     return e.ats + " tilknyttet";
-                }),
-                t("af7286b7", function (e) {
-                    return e.percentage + " % rabat på Premium i et år";
-                }),
+                });
+            t("af7286b7", function (e) {
+                return e.percentage + " % rabat på Premium i et år";
+            }),
                 t("c924ad84", "Fortsæt med afspilning af videoer"),
-                t("de750a3c", "Nyd dem, selv når din telefon er låst");
-            t("he5e87c4", "Boost dine svar"),
+                t("de750a3c", "Nyd dem, selv når din telefon er låst"),
+                t("he5e87c4", "Boost dine svar"),
                 t("g64a60ba", "Få en smule prioritering, når du svarer på opslag"),
                 t("a7ee832a", "Få rettet dine stave- og slåfejl på under 60 minutter"),
                 t("fdd77a34", "Skab længere opslag"),
@@ -6989,9 +6994,9 @@
                 t("gd573390", "Og alt i Basis ..."),
                 t("ef94bbd4", "Få Premium+"),
                 t("dcd830ce", "Og alt i Premium ..."),
-                t("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                t("dde0dbe0", "Nyd vores sommertilbud, der slutter om:"),
                 t("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "Sommertilbuddet slutter den " + e.date + ".";
                 }),
                 t("b7dde622", "Glædelig Thanksgiving! Tilbuddet slutter om:"),
                 t("i0180ca1", function (e) {
@@ -7387,6 +7392,11 @@
                 t("bd05add8", "Ikke en bot"),
                 t("d94f12b6", "Prøv at søge efter meddelelser, privatliv osv."),
                 t("ba8f6f82", "Søg efter indstillinger"),
+                t("ibf92e4a", "Betaling gennemført"),
+                t("bdf0fb06", "Your subscription has been activated."),
+                t("ddfd6718", "Betalingen mislykkedes"),
+                t("d42fa852", "Der opstod et problem under behandlingen af din betaling. Prøv igen."),
+                t("g055a9ce", "Open 𝕏 App"),
                 t("g931a6e5", function (e) {
                     return "Du følger " + e.topic;
                 }),
@@ -7861,17 +7871,7 @@
                 t("a76d58ba", "Annoncestatistik"),
                 t("eccd0e1a", "Statistik for organisation"),
                 t("deea1708", "Vil du se statistik på tværs af alle dine X-konti?"),
-                t("eb603ffc", "Opgrader for at tilknytte dit netværk og se samlet statistik."),
-                t("gf67aae4", "Opgrader til fuld adgang"),
-                t("h75e3618", "Inkluder organisation"),
-                t("h24a8862", "Om dette afkrydsningsfelt"),
-                t("c29e3a88", "Vælg tilknytninger"),
-                t("j8318d57", function (e) {
-                    return e.number + " tilknytning" + i(e.number, "", "er");
-                }),
-                t("bf809ec0", "Vælg tilknytninger"),
-                t("b719e224", "Ingen resultater"),
-                t("c9938100", "Søgeresultater");
+                t("eb603ffc", "Opgrader for at tilknytte dit netværk og se samlet statistik.");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7910,7 +7910,17 @@
                     a(e, r)
                 );
             }
-            t("d1a35ec6", "Tilføj konti"),
+            t("gf67aae4", "Opgrader til fuld adgang"),
+                t("h75e3618", "Inkluder organisation"),
+                t("h24a8862", "Om dette afkrydsningsfelt"),
+                t("c29e3a88", "Vælg tilknytninger"),
+                t("j8318d57", function (e) {
+                    return e.number + " tilknytning" + i(e.number, "", "er");
+                }),
+                t("bf809ec0", "Vælg tilknytninger"),
+                t("b719e224", "Ingen resultater"),
+                t("c9938100", "Søgeresultater"),
+                t("d1a35ec6", "Tilføj konti"),
                 t("b437adda", "Opgrader til betalt"),
                 t("f1f6c88b", function (e) {
                     return "Konti (" + e.count + ")";
@@ -7964,7 +7974,6 @@
                 t("b4fef99e", "Når vores supportteam har modtaget din anmodning, gennemgår vi dine oplysninger og hjælper dig med at konfigurere din integration."),
                 t("h37f2d96", "Bemærk, at ikke alle ansøgersporingssystemer understøttes i øjeblikket."),
                 t("ce102a20", "Omdirigering til Stripe"),
-                t("ddfd6718", "Betalingen mislykkedes"),
                 t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele."),
                 t("a62359e6", "Indstillinger for verificeret organisation"),
                 t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
@@ -8900,10 +8909,10 @@
                 t("j0c6772a", "Besøg webstedet"),
                 t("f73003aa", "Videoen afspilles efter annoncen"),
                 t("b3112b8a", "Spring over"),
-                t("h6333ad0", "Spring annonce over"),
-                t("c59da417", function (e) {
-                    return "Spring annoncen over om " + e.seconds;
-                }),
+                t("h6333ad0", "Spring annonce over");
+            t("c59da417", function (e) {
+                return "Spring annoncen over om " + e.seconds;
+            }),
                 t("c3c147cf", function (e) {
                     return "Spring over " + e.seconds;
                 }),
@@ -8913,8 +8922,8 @@
                     return "Automatisk (" + e.quality + ")";
                 }),
                 t("a7bf9962", "Download video"),
-                t("ccc97152", "Afspilningshastighed");
-            t("h531ade0", "Videokvalitet"),
+                t("ccc97152", "Afspilningshastighed"),
+                t("h531ade0", "Videokvalitet"),
                 t("e8b5757c", "0,25x"),
                 t("e7e954de", "0,5x"),
                 t("g07ffe66", "0,75x"),
@@ -10137,9 +10146,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Baseret på din X-brug og dine sprogindstillinger vil " + this.props.sourceLang + " være automatisk oversat af Grok. Gå til ", " for at vælge automatisk oversatte sprog."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13342,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.8522b50a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.e2c1541a.js.map

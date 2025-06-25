@@ -63,7 +63,7 @@
                 oe = i(177371),
                 se = i(41803),
                 ae = i(818065),
-                le = i(198052),
+                le = i(574663),
                 de = i(900813),
                 ce = i(306677),
                 he = i(778955),
@@ -270,43 +270,43 @@
                             this._isMounted && this.setState({ width: e.nativeEvent.layout.width });
                         }),
                         (this._renderTweetTextHWTweet = (e) => {
-                            const { hitHighlights: t, isFocal: i, linkify: o, onEntityClick: s, onShowMoreClick: a, to: l, tweet: c, tweetTextSize: h, withCardLinks: u, withInlineMedia: p, withQuotedTweetLinks: _, withReaderModeActive: m } = this.props,
-                                { isExpanded: w, showGrokTranslation: g } = this.state,
-                                T = d.Z.getOriginalTweet(c),
-                                b = !!T.grok_translated_post,
-                                C = this.context.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_summary_enabled");
-                            let k;
-                            k = h || e.size;
-                            const f = T?.community_id_str,
-                                y = f ? (e, t) => new URL(`/i/communities/${f}/hashtag/${t}`, e) : void 0;
-                            let E;
-                            const x = T.note_tweet && T.note_tweet.is_expandable,
-                                S = null != T.grok_translated_post?.preview_translation;
-                            w ||
-                                m ||
-                                !(g ? S : x) ||
-                                (E = this.context.featureSwitches.isTrue("rweb_timeline_inline_show_more_enabled")
+                            const { hitHighlights: t, isFocal: i, linkify: o, onEntityClick: s, onShowMoreClick: a, to: l, tweet: c, tweetTextSize: h, userLanguage: u, withCardLinks: p, withInlineMedia: _, withQuotedTweetLinks: m, withReaderModeActive: w } = this.props,
+                                { isExpanded: g, showGrokTranslation: T } = this.state,
+                                b = d.Z.getOriginalTweet(c),
+                                C = !!b.grok_translated_post,
+                                k = this.context.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_summary_enabled");
+                            let f;
+                            f = h || e.size;
+                            const y = b?.community_id_str,
+                                E = y ? (e, t) => new URL(`/i/communities/${y}/hashtag/${t}`, e) : void 0;
+                            let x;
+                            const S = b.note_tweet && b.note_tweet.is_expandable,
+                                I = null != b.grok_translated_post?.preview_translation;
+                            g ||
+                                w ||
+                                !(T ? I : S) ||
+                                (x = this.context.featureSwitches.isTrue("rweb_timeline_inline_show_more_enabled")
                                     ? () => {
                                           a && a(), this.setState({ isExpanded: !0 });
                                       }
                                     : this._getMaybeRedirectedTweetLink(l, !0));
-                            const I = !this.state.showGrokTranslation,
-                                Z = { ...e, transformHashtagLink: y, hitHighlights: I ? t : void 0, linkify: o, onEntityClick: s, size: k, transformUrl: this._transformUrl, unmentionedUserIds: T.unmentioned_user_ids, withCardLinks: u, withMediaLinks: !p, withShowMore: E, withQuoteLinks: _ || d.Z.isQuotedTweetUnavailable(T), withUnicodeEmojis: !1, article: C ? T?.article : void 0 };
-                            let P;
-                            P = w || m ? fe.Bq(T, { featureSwitches: this.context.featureSwitches }) : { text: T.text, entities: T.entities, display_text_range: T.display_text_range };
-                            const A = !i && !this.context.featureSwitches.isTrue("longform_notetweets_rich_text_timeline_enabled");
-                            let L = null;
-                            T.note_tweet && (L = { ...T.note_tweet, richtext_tags: A ? [] : T.note_tweet.richtext_tags });
-                            const R = m ? this._getInlineMediaSpec(L, T) : void 0,
-                                U = { text: (S && !w ? T.grok_translated_post?.preview_translation : T.grok_translated_post?.translation) ?? "", destinationLanguage: T.grok_translated_post?.destination_language ?? "", entities: T.grok_translated_post?.entities ?? {}, display_text_range: [0, T.grok_translated_post?.translation?.length ?? 0] };
-                            return r.createElement(r.Fragment, null, r.createElement(Me.Z, null, r.createElement(v.z, { context: L }, r.createElement(Oe.Z, null, r.createElement(de.Z, (0, n.Z)({}, Z, { disableTranslation: b || T.user.protected, displayTextRange: this.state.showGrokTranslation ? U.display_text_range : P.display_text_range, entities: this.state.showGrokTranslation ? U.entities : P.entities, inlineMediaSpec: R, isFocal: i, isGrokAutoTranslated: b, isPreviewDisplay: T.isPreviewDisplay, isTranslatable: !b && T.is_translatable, lang: this.state.showGrokTranslation ? U.destinationLanguage : T.lang, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: T.permalink, renderGrokAutoTranslationHeader: b ? () => this._renderGrokTranslationHeader("text") : void 0, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), supplementalLang: T.supplemental_language, text: this.state.showGrokTranslation ? U.text : P.text, tweetId: T.id_str, withOriginalText: i }))))), T.isPreviewDisplay && this._renderPreviewCta(), this._renderAtGrokPromo());
+                            const Z = !this.state.showGrokTranslation,
+                                P = { ...e, transformHashtagLink: E, hitHighlights: Z ? t : void 0, linkify: o, onEntityClick: s, size: f, transformUrl: this._transformUrl, unmentionedUserIds: b.unmentioned_user_ids, withCardLinks: p, withMediaLinks: !_, withShowMore: x, withQuoteLinks: m || d.Z.isQuotedTweetUnavailable(b), withUnicodeEmojis: !1, article: k ? b?.article : void 0 };
+                            let A;
+                            A = g || w ? fe.Bq(b, { featureSwitches: this.context.featureSwitches }) : { text: b.text, entities: b.entities, display_text_range: b.display_text_range };
+                            const L = !i && !this.context.featureSwitches.isTrue("longform_notetweets_rich_text_timeline_enabled");
+                            let R = null;
+                            b.note_tweet && (R = { ...b.note_tweet, richtext_tags: L ? [] : b.note_tweet.richtext_tags });
+                            const U = w ? this._getInlineMediaSpec(R, b) : void 0,
+                                F = { text: (I && !g ? b.grok_translated_post?.preview_translation : b.grok_translated_post?.translation) ?? "", destinationLanguage: b.grok_translated_post?.destination_language ?? "", entities: b.grok_translated_post?.entities ?? {}, display_text_range: [0, b.grok_translated_post?.translation?.length ?? 0] };
+                            return r.createElement(r.Fragment, null, r.createElement(Me.Z, null, r.createElement(v.z, { context: R }, r.createElement(Oe.Z, null, r.createElement(de.Z, (0, n.Z)({}, P, { disableTranslation: C || b.user.protected, displayTextRange: this.state.showGrokTranslation ? F.display_text_range : A.display_text_range, entities: this.state.showGrokTranslation ? F.entities : A.entities, inlineMediaSpec: U, isFocal: i, isGrokAutoTranslated: C, isPreviewDisplay: b.isPreviewDisplay, isTranslatable: !C && b.is_translatable, lang: this.state.showGrokTranslation ? F.destinationLanguage : b.lang, onMediaTranslation: this._handleMediaTranslations, onToggleTranslation: this._handleTranslationToggle, permalink: b.permalink, renderGrokAutoTranslationHeader: C ? () => this._renderGrokTranslationHeader("text", u, b.lang) : void 0, renderTranslationFeedback: this._getTranslationFeedbackRenderer("inside-text"), supplementalLang: b.supplemental_language, text: this.state.showGrokTranslation ? F.text : A.text, tweetId: b.id_str, withOriginalText: i }))))), b.isPreviewDisplay && this._renderPreviewCta(), this._renderAtGrokPromo());
                         }),
                         (this._renderGrokTranslationHeader = (e, t, i) => {
                             if ("text" === e) {
                                 const { showGrokTranslation: e } = this.state,
                                     n = e ? Ue.ZP.LOADED : Ue.ZP.NONE,
                                     o = t ? (0, Ce.t)(t, i) : void 0;
-                                return r.createElement(le.O, { handleCollapseTranslation: () => this.setState({ showGrokTranslation: !1 }), handleGetTranslationClick: () => this.setState({ showGrokTranslation: !0 }), position: "top", showInfoButton: this.props.isFocal || !e, sourceLanguageDisplayName: o, translateButtonText: ae.WJ, translateTargetType: "post", translationStatus: n, useGrokTranslation: "auto" });
+                                return r.createElement(le.O, { handleCollapseTranslation: () => this.setState({ showGrokTranslation: !1 }), handleGetTranslationClick: () => this.setState({ showGrokTranslation: !0 }), position: "top", showInfoButton: this.props.isFocal || !e, sourceLanguage: i, sourceLanguageDisplayName: o, translateButtonText: ae.WJ, translateTargetType: "post", translationStatus: n, useGrokTranslation: "auto" });
                             }
                             if ("quote-text" === e && this.props.tweet.quoted_status?.grok_translated_post) return r.createElement(le.O, { position: "top", style: Lt.translationHeaderInQuote, translateTargetType: "post", translationStatus: "loaded", useGrokTranslation: "auto", withAction: !1 });
                         }),
@@ -940,4 +940,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.c0ee06fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.fff5e75a.js.map

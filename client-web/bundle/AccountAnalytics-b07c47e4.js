@@ -615,8 +615,8 @@
         945402: (e, t, a) => {
             a.d(t, { v: () => c });
             var i = a(552322),
-                r = a(202784),
-                s = a(768246),
+                r = a(604840),
+                s = a(202784),
                 o = a(598705),
                 n = a(712667);
             const l = 30;
@@ -632,13 +632,13 @@
                 ).sort((e, t) => t.createdAt - e.createdAt);
             }
             function c({ children: e }) {
-                const t = "true" === (0, s.l)().get("monetized"),
-                    [a, o] = (0, r.useState)([]),
-                    [c, d] = (0, r.useState)(!0);
-                (0, r.useEffect)(() => {
+                const t = "true" === (0, r.l)().get("monetized"),
+                    [a, o] = (0, s.useState)([]),
+                    [c, d] = (0, s.useState)(!0);
+                (0, s.useEffect)(() => {
                     o(u(0, l, t));
                 }, [t]);
-                const m = (0, r.useCallback)(() => {
+                const m = (0, s.useCallback)(() => {
                         if (!c) return;
                         const e = u(a.length, l, t);
                         o((t) => [...t, ...e]), d(a.length + e.length < 100);
@@ -705,4 +705,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-b07c47e4.91d53a1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-b07c47e4.a173272a.js.map

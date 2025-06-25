@@ -182,7 +182,7 @@
             var X = o(855488),
                 $ = o(96083),
                 G = o(260706),
-                ee = o(601289),
+                ee = o(924108),
                 te = o(664052),
                 oe = o(998693),
                 re = o(944681),
@@ -687,4 +687,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-63cb1cc4.eb1d2d7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.WorkHistory-63cb1cc4.824c449a.js.map

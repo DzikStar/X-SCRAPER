@@ -225,9 +225,9 @@
                     return e.percentage + "% kedvezmény " + e.tier + " " + e.plan;
                 }),
                 s("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "Kapj " + e.percentage + "% kedvezményt idén nyáron";
                 }),
-                s("he77d8e6", "Limited-time offer"),
+                s("he77d8e6", "Korlátozott idejű ajánlat"),
                 s("adf3410a", "Fizess elő az új funkciók kihasználásához, és ha jogosult vagy rá, részesedést kaphatsz a bevételekből."),
                 s("a84a736e", "Szerezz ingyenes hirdetési krediteket!"),
                 s("a0713d76", "Válts Ellenőrzött szervezetek szolgáltatásra, és ingyenes hirdetési krediteket, valamint számos, az üzleti növekedést segítő eszközt kaphatsz."),
@@ -1293,7 +1293,7 @@
                     return "Keresés az 𝕏-en erre: „" + e.query + "”";
                 }),
                 s("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return "Az 𝕏 felhasználóinak keresése: „" + e.query + "”";
                 }),
                 s("g008d475", function (e) {
                     return "A(z) " + e.url + " böngészése";
@@ -1314,7 +1314,7 @@
                     return "@" + e.username + " 𝕏-bejegyzéseinek keresése erre: **„" + e.query + "”**";
                 }),
                 s("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "Kód végrehajtása" + e.ttc_tool_usage_card;
                 }),
                 s("ead81122", "Valami hiba történt; frissíts az újracsatlakozáshoz, hogy próbálkozz újra!"),
                 s("f808a13a", "Túllépted az értékelési korlátot. Várj pár pillanatot, és próbálkozz újra!"),
@@ -1348,12 +1348,12 @@
                 s("deaf5b16", "Újrapróbálkozás"),
                 s("a66d80d0", "Bejegyzés lefordítása"),
                 s("be9b9fb8", "A Grok fordítása"),
-                s("ba10dab6", "Auto-translated by Grok"),
+                s("ba10dab6", "Automatikusan fordította a Grok"),
                 s("he9c9634", "A fordítás nem olvasható be"),
                 s("j2198c98", "Lefordított bejegyzés elrejtése"),
                 s("d4d35bea", "Fordítás..."),
-                s("f4f69be8", "Show original"),
-                s("e3097a5c", "Show auto-translated post"),
+                s("f4f69be8", "Eredeti megjelenítése"),
+                s("e3097a5c", "Automatikusan fordított bejegyzés megjelenítése"),
                 s("e0f81ff3", "Fordítás:"),
                 s("j2862695", function (e) {
                     return e.originLanguage + " nyelvről fordította a(z)";
@@ -1361,7 +1361,12 @@
                 s("b7cb4fab", "A(z)"),
                 s("e0bffbf8", "Az Automatikus fordítás ismertetése"),
                 s("e839db3a", "Kihagyás"),
-                s("a15585b4", "Nyelvi beállítások"),
+                s("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                s("c60b9e5c", "Changes will take effect for newly loaded content."),
+                s("c6ad999b", "languages settings"),
+                s("hba0547a", "Unable to update settings. Please try again later."),
                 s("d4c339b9", function (e) {
                     return e.fullName + " bejegyzése (@" + e.screenName + ")";
                 }),
@@ -1917,11 +1922,11 @@
                 }),
                 s("ad89b831", function (e) {
                     return "aktív" + e.ttc_rich_text_composer;
-                }),
-                s("jcd5ee8a", "Blokk szerkesztése"),
+                });
+            s("jcd5ee8a", "Blokk szerkesztése"),
                 s("a8f09fb8", "Blokk törlése"),
-                s("i89195ea", "Elválasztó");
-            s("da8ac57c", "Felirat szerkesztése"),
+                s("i89195ea", "Elválasztó"),
+                s("da8ac57c", "Felirat szerkesztése"),
                 s("a8fdd09c", "Cikk közzététele"),
                 s("d8047cc8", "Közzététel"),
                 s("ff7ddca2", "A Cikked a közzétételt követően bejegyzésként jelenik meg. Ezenkívül a profilod Cikkek részén is megtalálod."),
@@ -2969,15 +2974,15 @@
                 s("j43f99be", "Relevancia"),
                 s("ad6e11ac", "Válaszok rendezése a következő szerint"),
                 s("b2311b70", "Ezt nem tekintheted meg"),
-                s("j88f27d8", "Releváns felhasználók"),
-                s("i31dcd22", "Cikk"),
+                s("j88f27d8", "Releváns felhasználók");
+            s("i31dcd22", "Cikk"),
                 s("e3de2f6f", function (e) {
                     return "A(z) " + e.entity + " hozzá lett adva a könyvjelzőkhöz";
                 }),
                 s("e64de8a9", function (e) {
                     return "A(z) " + e.entity + " Tweet el lett távolítva a könyvjelzőkből";
-                });
-            s("d6d9aab6", "Könyvjelző hozzáadása"),
+                }),
+                s("d6d9aab6", "Könyvjelző hozzáadása"),
                 s("bb89cf46", "Könyvjelző eltávolítása"),
                 s("a739d4ba", "Hozzáadás a Könyvjelző mappához"),
                 s("d5270434", "Kilépés"),
@@ -3899,11 +3904,11 @@
                 s("c3b5b829", function (e) {
                     return e.count + " kérés";
                 }),
-                s("fe7a1910", "Meghívók küldése"),
-                s("ic3c757e", "Felhasználók keresése"),
+                s("fe7a1910", "Meghívók küldése");
+            s("ic3c757e", "Felhasználók keresése"),
                 s("cd133486", "Meghívás"),
-                s("f2333850", "Megosztás az X-en kívüli emberekkel");
-            s("cddb8097", "Tudj meg többet"),
+                s("f2333850", "Megosztás az X-en kívüli emberekkel"),
+                s("cddb8097", "Tudj meg többet"),
                 s("f77997b0", "Társhoszt"),
                 s("i48f4ed8", "Hozzászóló"),
                 s("a77c8e02", "Hallgató"),
@@ -4262,7 +4267,7 @@
                     return "Összes megjelenítése (" + e.count + ")";
                 }),
                 s("df601d92", "Releváns felhasználók"),
-                s("a4cfb8a8", "Browsing"),
+                s("a4cfb8a8", "Böngészés"),
                 s("d7cb5408", "Kapcsolód weboldalak"),
                 s("ca93f2ee", "Ezt az üzenetet törölték."),
                 s("b8c06820", "Szöveg másolása"),
@@ -4923,11 +4928,11 @@
                 s("c8410542", "A videód megtekintéseinek száma."),
                 s("a532072a", "Nézők"),
                 s("d9508ab0", "megtekintés"),
-                s("d9f9dec0", "Tér megtekintése"),
-                s("h0c1f37a", "A Tér adatainak megtekintése"),
+                s("d9f9dec0", "Tér megtekintése");
+            s("h0c1f37a", "A Tér adatainak megtekintése"),
                 s("e41fffbc", "A videóid teljes megtekintési ideje."),
-                s("if2909ba", "Megtekintési idő");
-            s("i0e5bf4c", "Saját videók"),
+                s("if2909ba", "Megtekintési idő"),
+                s("i0e5bf4c", "Saját videók"),
                 s("ed99baea", "Korai bétahozzáférés"),
                 s("gf898b70", "Összetett keresés"),
                 s("d2a43a7a", "mind az „ai”, mind a „startup” szót tartalmazza"),
@@ -5877,13 +5882,13 @@
                 s("b92a21d9", function (e) {
                     return "Nincs találat erre: " + e.query;
                 }),
-                s("f191a2ba", "Keresési beállításokban"),
-                s("a068008a", "A mappák jelenleg nem tölthetők be"),
+                s("f191a2ba", "Keresési beállításokban");
+            s("a068008a", "A mappák jelenleg nem tölthetők be"),
                 s("f075b0e8", "Mappa szerkesztése"),
-                s("beba2a0e", "Új könyvjelzőmappa létrehozása");
-            s("e41c9b4f", function (e) {
-                return "Saved to " + e.bookmarkFolderName;
-            }),
+                s("beba2a0e", "Új könyvjelzőmappa létrehozása"),
+                s("e41c9b4f", function (e) {
+                    return "Saved to " + e.bookmarkFolderName;
+                }),
                 s("h18f86a4", "Mappa törlése"),
                 s("f4ea967a", "A mappa törlésre került"),
                 s("b670aa62", "Mappanév"),
@@ -6497,7 +6502,7 @@
                 s("f7cf3d36", "A Grok az xAI által tervezett, díjmentesen használható AI asszisztens, amely a bizalom és az objektivitás maximalizálására készült. A Grok valós idejű keresést, képgenerálást, trendelemzést és még sok mást kínál."),
                 s("hc965308", "Szórakoztató"),
                 s("eb78b77e", "Szórakoztató mód"),
-                s("ac164552", "Go to grok.com"),
+                s("ac164552", "Nyisd meg a grok.com oldalt!"),
                 s("gb5fb7d0", "Fókusz mód"),
                 s("g5665caa", "Kilépés a Fókusz módból"),
                 s("a372681e", "Megosztási hivatkozás másolása"),
@@ -6883,13 +6888,13 @@
                 s("eef1ae76", "Jelenleg csatlakoztatva"),
                 s("a915f5c1", function (e) {
                     return e.ats + " csatlakoztatva";
-                }),
-                s("af7286b7", function (e) {
-                    return e.percentage + "% kedvezmény a Premium éves előfizetéséből";
-                }),
+                });
+            s("af7286b7", function (e) {
+                return e.percentage + "% kedvezmény a Premium éves előfizetéséből";
+            }),
                 s("c924ad84", "A videók lejátszásának folytatása"),
-                s("de750a3c", "Élvezd őket még akkor is, ha a telefonod zárolva van");
-            s("he5e87c4", "Lendítsd fel a válaszaidat!"),
+                s("de750a3c", "Élvezd őket még akkor is, ha a telefonod zárolva van"),
+                s("he5e87c4", "Lendítsd fel a válaszaidat!"),
                 s("g64a60ba", "Előnyösebb helyzetbe kerülhetsz, amikor bejegyzésekre válaszolsz"),
                 s("a7ee832a", "60 percen belül javíthatod az elírásokat és hibákat"),
                 s("fdd77a34", "Hosszabb bejegyzések írása"),
@@ -6988,9 +6993,9 @@
                 s("gd573390", "És minden, ami az Alap csomagban van..."),
                 s("ef94bbd4", "Premium+ előfizetés"),
                 s("dcd830ce", "És minden, ami a Premium csomagban van..."),
-                s("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                s("dde0dbe0", "Használd ki a nyári ajánlatot, amelynek vége:"),
                 s("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "A nyári ajánlat " + e.date + " napján véget ér.";
                 }),
                 s("b7dde622", "Boldog hálaadást! Az ajánlat véget ér:"),
                 s("i0180ca1", function (e) {
@@ -7386,6 +7391,11 @@
                 s("bd05add8", "Nem robot"),
                 s("d94f12b6", "Keress rá az értesítésekre, az adatvédelmi nyilatkozatra stb."),
                 s("ba8f6f82", "Beállítások keresése"),
+                s("ibf92e4a", "Sikeres fizetés"),
+                s("bdf0fb06", "Your subscription has been activated."),
+                s("ddfd6718", "A fizetés sikertelen"),
+                s("d42fa852", "Hiba történt a fizetés feldolgozása során. Próbálkozz újra!"),
+                s("g055a9ce", "Open 𝕏 App"),
                 s("g931a6e5", function (e) {
                     return "Követed a következőt: " + e.topic;
                 }),
@@ -7860,17 +7870,7 @@
                 s("a76d58ba", "Hirdetési elemzések"),
                 s("eccd0e1a", "Szervezeti elemzések"),
                 s("deea1708", "Meg szeretnéd tekinteni az összes X-fiókod elemzését?"),
-                s("eb603ffc", "Válts magasabb csomagra, hogy partneri hálózatot építhess és megtekinthesd az összevont elemzéseket."),
-                s("gf67aae4", "Fizess elő teljes körű hozzáférésre"),
-                s("h75e3618", "Szervezet belfogalása"),
-                s("h24a8862", "A jelölőnégyzet ismertetése"),
-                s("c29e3a88", "Partnerek kiválasztása"),
-                s("j8318d57", function (e) {
-                    return e.number + " partner";
-                }),
-                s("bf809ec0", "Partnerek kiválasztása"),
-                s("b719e224", "Nincs találat"),
-                s("c9938100", "Keresési találatok");
+                s("eb603ffc", "Válts magasabb csomagra, hogy partneri hálózatot építhess és megtekinthesd az összevont elemzéseket.");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7909,7 +7909,17 @@
                     z(e, t)
                 );
             }
-            s("d1a35ec6", "Felhasználói fiókok hozzáadása"),
+            s("gf67aae4", "Fizess elő teljes körű hozzáférésre"),
+                s("h75e3618", "Szervezet belfogalása"),
+                s("h24a8862", "A jelölőnégyzet ismertetése"),
+                s("c29e3a88", "Partnerek kiválasztása"),
+                s("j8318d57", function (e) {
+                    return e.number + " partner";
+                }),
+                s("bf809ec0", "Partnerek kiválasztása"),
+                s("b719e224", "Nincs találat"),
+                s("c9938100", "Keresési találatok"),
+                s("d1a35ec6", "Felhasználói fiókok hozzáadása"),
                 s("b437adda", "Frissítés előfizetésre"),
                 s("f1f6c88b", function (e) {
                     return "Felhasználói fiókok (" + e.count + ")";
@@ -7963,7 +7973,6 @@
                 s("b4fef99e", "Miután a támogatási csapatunk megkapta a kérésedet, áttekintjük az információkat, és segítünk az integráció konfigurálásában."),
                 s("h37f2d96", "Tájékoztatunk, hogy jelenleg nem minden pályázói nyomkövetési rendszer támogatott."),
                 s("ce102a20", "Átirányítás a Stripe-ra"),
-                s("ddfd6718", "A fizetés sikertelen"),
                 s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében."),
                 s("a62359e6", "Ellenőrzött szervezet beállításai"),
                 s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj."),
@@ -8899,10 +8908,10 @@
                 s("j0c6772a", "Weboldal megtekintése"),
                 s("f73003aa", "A videó lejátszása a hirdetés után indul"),
                 s("b3112b8a", "Kihagyás"),
-                s("h6333ad0", "Hirdetés átugrása"),
-                s("c59da417", function (e) {
-                    return "Hirdetés kihagyása: " + e.seconds;
-                }),
+                s("h6333ad0", "Hirdetés átugrása");
+            s("c59da417", function (e) {
+                return "Hirdetés kihagyása: " + e.seconds;
+            }),
                 s("c3c147cf", function (e) {
                     return "Kihagyás " + e.seconds;
                 }),
@@ -8912,8 +8921,8 @@
                     return "Auto (" + e.quality + ")";
                 }),
                 s("a7bf9962", "Videó letöltése"),
-                s("ccc97152", "Visszajátszás sebessége");
-            s("h531ade0", "Videóminőség"),
+                s("ccc97152", "Visszajátszás sebessége"),
+                s("h531ade0", "Videóminőség"),
                 s("e8b5757c", "0,25x"),
                 s("e7e954de", "0,5x"),
                 s("g07ffe66", "0,75x"),
@@ -10146,9 +10155,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Az X használata és a nyelvi beállítások alapján a(z) " + this.props.sourceLang + " nyelvet a Grok automatikusan lefordítja. Az automatikusan lefordított nyelvek kiválasztásához nyisd meg a ", " részt"];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13348,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.a5b1ca0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.339a6d2a.js.map

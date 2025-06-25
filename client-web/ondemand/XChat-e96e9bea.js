@@ -35,20 +35,21 @@
             var n = r(552322),
                 s = r(34681),
                 a = r(993165);
-            const i = ({ open: e, defaultOpen: t, onOpenChange: r, modal: i, title: l, message: o, onConfirm: c, confirmText: d = "Confirm", cancelText: u = "Cancel", trigger: h }) => (0, n.jsxs)(s.Vq, { defaultOpen: t, open: e, onOpenChange: r, modal: i, children: [(0, n.jsx)(s.hg, { asChild: !0, children: h }), (0, n.jsxs)(s.cZ, { className: "max-w-md md:max-w-2xl [&>button]:hidden p-6", children: [(0, n.jsx)(s.fK, { children: (0, n.jsx)(s.$N, { children: l }) }), (0, n.jsx)(s.Be, { children: o }), (0, n.jsxs)(s.cN, { className: "gap-4", children: [(0, n.jsx)(s.GG, { asChild: !0, children: (0, n.jsxs)(a.z, { type: "button", size: "xxLargeCompact", children: [(0, n.jsx)("span", { className: "sr-only", children: u }), u] }) }), (0, n.jsxs)(a.z, { type: "submit", size: "xxLargeCompact", onClick: c, variant: "destructiveFilled", children: [(0, n.jsx)("span", { className: "sr-only", children: d }), d] })] })] })] });
+            const i = ({ open: e, defaultOpen: t, onOpenChange: r, modal: i, title: l, message: o, onConfirm: c, confirmText: d = "Confirm", cancelText: u = "Cancel", trigger: h }) => (0, n.jsxs)(s.Vq, { defaultOpen: t, open: e, onOpenChange: r, modal: i, children: [(0, n.jsx)(s.hg, { asChild: !0, children: h }), (0, n.jsxs)(s.cZ, { className: "max-w-sm [&>button]:hidden p-6", children: [(0, n.jsx)(s.fK, { children: (0, n.jsx)(s.$N, { children: l }) }), (0, n.jsx)(s.Be, { children: o }), (0, n.jsxs)(s.cN, { className: "gap-4 flex !flex-col-reverse", children: [(0, n.jsx)(s.GG, { asChild: !0, children: (0, n.jsxs)(a.z, { type: "button", size: "xxLargeCompact", children: [(0, n.jsx)("span", { className: "sr-only", children: u }), u] }) }), (0, n.jsxs)(a.z, { type: "submit", size: "xxLargeCompact", onClick: c, variant: "destructiveFilled", className: "!ml-0", children: [(0, n.jsx)("span", { className: "sr-only", children: d }), d] })] })] })] });
         },
         388414: (e, t, r) => {
             "use strict";
-            r.d(t, { I: () => d });
+            r.d(t, { I: () => u });
             var n = r(552322),
                 s = r(966830),
                 a = r(110929),
                 i = r(202784),
-                l = r(332161);
-            const o = ({ destructive: e, icon: t, onClick: r, text: a }) => (0, n.jsxs)(s.ck, { className: "focus-visible:outline-none cursor-pointer px-6 flex items-center h-10 min-w-10 gap-3 w-full justify-start border-transparent hover:bg-gray-50 focus:brightness-100 " + (e ? "text-destructive" : "text-text"), onClick: r, children: [t && (0, i.cloneElement)(t, { className: "size-[22px]" }), (0, n.jsx)(l.x, { color: "inherit", numberOfLines: 1, size: "body", weight: "bold", children: a })] }),
-                c = (0, a.j)("bg-background z-50 overflow-hidden shadow-md outline-none", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" } } });
-            function d({ borderRadius: e = "2xLarge", items: t, onOpenChange: r, trigger: a, ...i }) {
-                return (0, n.jsxs)(s.fC, { onOpenChange: r, children: [(0, n.jsx)(s.xz, { asChild: !0, children: a }), (0, n.jsx)(s.Uv, { children: (0, n.jsx)(s.VY, { ...i, className: c({ borderRadius: e }), children: (0, n.jsx)("div", { className: "overflow-hidden flex flex-col items-start justify-start rounded-2xl border border-gray-200 gap-1", children: t.map((e) => (0, n.jsx)(o, { ...e }, e.text)) }) }) })] });
+                l = r(332161),
+                o = r(840489);
+            const c = ({ destructive: e, icon: t, onClick: r, text: a }) => (0, n.jsxs)(s.ck, { className: (0, o.Z)("focus-visible:outline-none cursor-pointer px-6 flex items-center h-10 min-w-10 gap-3 w-full justify-start border-transparent hover:bg-gray-50 focus:brightness-100", { "text-red-500 hover:bg-mix-red-500 hover:bg-mix-amount-15": e }), onClick: r, children: [t && (0, i.cloneElement)(t, { className: "size-[22px]" }), (0, n.jsx)(l.x, { color: "inherit", numberOfLines: 1, size: "body", weight: "bold", children: a })] }),
+                d = (0, a.j)("bg-background z-50 overflow-hidden shadow-md outline-none", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" } } });
+            function u({ borderRadius: e = "2xLarge", items: t, onOpenChange: r, trigger: a, ...i }) {
+                return (0, n.jsxs)(s.fC, { onOpenChange: r, children: [(0, n.jsx)(s.xz, { asChild: !0, children: a }), (0, n.jsx)(s.Uv, { children: (0, n.jsx)(s.VY, { ...i, className: d({ borderRadius: e }), children: (0, n.jsx)("div", { className: "overflow-hidden flex flex-col items-start justify-start rounded-2xl border border-gray-200 gap-1", children: t.map((e) => (0, n.jsx)(c, { ...e }, e.text)) }) }) })] });
             }
         },
         470851: (e, t, r) => {
@@ -202,7 +203,7 @@
             "use strict";
             r.d(t, { o: () => a });
             var n = r(552322),
-                s = r(378364);
+                s = r(6937);
             function a({ size: e = "medium", spacing: t = 12, urls: r, resolution: a, stackOrder: i = "descending" }) {
                 const l = (function (e, t) {
                     if ("ascending" === t) return e.map((e, t) => ({ index: t, scale: "scale-80" }));
@@ -400,7 +401,7 @@
             "use strict";
             r.d(t, { h: () => d });
             var n = r(552322),
-                s = r(305399),
+                s = r(3577),
                 a = r(110929),
                 i = r(194787);
             const l = (0, a.j)("bg-background h-fit fixed bottom-0 left-0 right-0 outline-none", { variants: { borderRadius: { "2xLarge": "rounded-t-2xl", "3xLarge": "rounded-t-3xl", full: "rounded-t-full", large: "rounded-t-lg", medium: "rounded-t-md", none: "rounded-t-none", small: "rounded-t-sm", xLarge: "rounded-t-xl", true: "rounded-t" } } });
@@ -409,7 +410,7 @@
             }
             var c = r(437712);
             function d({ children: e, open: t, onOpenChange: r, trigger: a, borderRadius: i }) {
-                return (0, s.a)("(min-width: 768px)") ? (0, n.jsx)(c.J, { open: t, onOpenChange: r, trigger: a, withArrow: !0, borderRadius: i, children: e }) : (0, n.jsx)(o, { open: t, onOpenChange: r, trigger: a, children: e });
+                return (0, s.a)("(min-width: 768px)") ? (0, n.jsx)(c.J, { open: t, onOpenChange: r, trigger: a, withArrow: "none" === i, borderRadius: i, children: e }) : (0, n.jsx)(o, { open: t, onOpenChange: r, trigger: a, children: e });
             }
         },
         880605: (e, t, r) => {
@@ -544,12 +545,10 @@
                         y = "/i/chat/" === r.pathname || "/i/chat" === r.pathname,
                         w = !y,
                         k = j && !w ? u.h$ : 0,
-                        N = (0, x.hC)("rweb_xchat_logs"),
-                        C = (0, x.hC)("rweb_xchat_new_db_worker_enabled"),
-                        _ = (0, x.hC)("rweb_xchat_fs_worker");
+                        N = (0, x.hC)("rweb_xchat_logs");
                     (0, d.MQ)();
-                    const E = (0, f.v9)(p.Lz);
-                    return n.createElement(m.i, null, n.createElement(h.Z, { headerless: j && w, history: t, isFullWidth: !0, primaryContent: () => (E ? n.createElement(b.x, null) : n.createElement(i.Z, { style: v.root }, n.createElement(s.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: k, logLevel: N ? a.B$.DEBUG : a.B$.WARN, newDBWorker: C, fsWorker: _, rwebElements: { dashMenuButton: j && y ? n.createElement(g.Z, null) : void 0 } } }))), sidebarContent: null, withTopNav: !1 }));
+                    const C = (0, f.v9)(p.Lz);
+                    return n.createElement(m.i, null, n.createElement(h.Z, { headerless: j && w, history: t, isFullWidth: !0, primaryContent: () => (C ? n.createElement(b.x, null) : n.createElement(i.Z, { style: v.root }, n.createElement(s.H, { settings: { path: "/i/chat", showDebugOptions: c, bottomBarHeight: k, logLevel: N ? a.B$.DEBUG : a.B$.WARN, rwebElements: { dashMenuButton: j && y ? n.createElement(g.Z, null) : void 0 } } }))), sidebarContent: null, withTopNav: !1 }));
                 };
         },
         115290: (e, t, r) => {
@@ -593,4 +592,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.daa9bf4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.8231fb2a.js.map

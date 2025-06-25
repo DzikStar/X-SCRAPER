@@ -1366,7 +1366,12 @@
                 o("b7cb4fab", "ترجمہ شدہ از"),
                 o("e0bffbf8", "About automatic translation"),
                 o("e839db3a", "بند کریں"),
-                o("a15585b4", "Language Settings"),
+                o("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                o("c60b9e5c", "Changes will take effect for newly loaded content."),
+                o("c6ad999b", "languages settings"),
+                o("hba0547a", "Unable to update settings. Please try again later."),
                 o("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1922,11 +1927,11 @@
                 }),
                 o("ad89b831", function (e) {
                     return "active" + e.ttc_rich_text_composer;
-                }),
-                o("jcd5ee8a", "Edit block"),
+                });
+            o("jcd5ee8a", "Edit block"),
                 o("a8f09fb8", "Delete block"),
-                o("i89195ea", "Divider");
-            o("da8ac57c", "Edit Caption"),
+                o("i89195ea", "Divider"),
+                o("da8ac57c", "Edit Caption"),
                 o("a8fdd09c", "Publish Article"),
                 o("d8047cc8", "شائع کریں"),
                 o("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
@@ -2974,15 +2979,15 @@
                 o("j43f99be", "Relevancy"),
                 o("ad6e11ac", "Sort replies by"),
                 o("b2311b70", "یہ آپ کے لیے دستیاب نہیں ہے"),
-                o("j88f27d8", "متعلقہ لوگ"),
-                o("i31dcd22", "مضمون"),
+                o("j88f27d8", "متعلقہ لوگ");
+            o("i31dcd22", "مضمون"),
                 o("e3de2f6f", function (e) {
                     return e.entity + " was added to your Bookmarks";
                 }),
                 o("e64de8a9", function (e) {
                     return e.entity + " was removed from your Bookmarks";
-                });
-            o("d6d9aab6", "بک مارک شامل کریں"),
+                }),
+                o("d6d9aab6", "بک مارک شامل کریں"),
                 o("bb89cf46", "بک مارک ہٹائیں"),
                 o("a739d4ba", "بک مارک کے فولڈر میں شامل کریں"),
                 o("d5270434", "اخراج کریں"),
@@ -3904,11 +3909,11 @@
                 o("c3b5b829", function (e) {
                     return e.count + " request" + r(e.count, "", "s");
                 }),
-                o("fe7a1910", "Send invites"),
-                o("ic3c757e", "Search for users"),
+                o("fe7a1910", "Send invites");
+            o("ic3c757e", "Search for users"),
                 o("cd133486", "مدعو کریں"),
-                o("f2333850", "Share with people outside of X");
-            o("cddb8097", "Learn more"),
+                o("f2333850", "Share with people outside of X"),
+                o("cddb8097", "Learn more"),
                 o("f77997b0", "ساتھی میزبان"),
                 o("i48f4ed8", "مقرر"),
                 o("a77c8e02", "سامع"),
@@ -4928,11 +4933,11 @@
                 o("c8410542", "The number of times your video was viewed."),
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
-                o("d9f9dec0", "View Space"),
-                o("h0c1f37a", "View Space Analytics"),
+                o("d9f9dec0", "View Space");
+            o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
-                o("if2909ba", "Watch Time");
-            o("i0e5bf4c", "Your videos"),
+                o("if2909ba", "Watch Time"),
+                o("i0e5bf4c", "Your videos"),
                 o("ed99baea", "Early Beta Access"),
                 o("gf898b70", "Advanced Search"),
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
@@ -5882,13 +5887,13 @@
                 o("b92a21d9", function (e) {
                     return e.query + " کے لیے  کوئی نتائج نہیں";
                 }),
-                o("f191a2ba", "تلاش کی ترتیبات"),
-                o("a068008a", "Folders aren`t loading right now"),
+                o("f191a2ba", "تلاش کی ترتیبات");
+            o("a068008a", "Folders aren`t loading right now"),
                 o("f075b0e8", "فولڈر میں ترمیم کریں"),
-                o("beba2a0e", "بک مارک کا نیا فولڈر بنائيں");
-            o("e41c9b4f", function (e) {
-                return e.bookmarkFolderName + " میں محفوظ کر دیا گیا";
-            }),
+                o("beba2a0e", "بک مارک کا نیا فولڈر بنائيں"),
+                o("e41c9b4f", function (e) {
+                    return e.bookmarkFolderName + " میں محفوظ کر دیا گیا";
+                }),
                 o("h18f86a4", "فولڈر حذف کریں"),
                 o("f4ea967a", "فولڈر حذف کر دیا گیا ہے"),
                 o("b670aa62", "فولڈر کا نام"),
@@ -6888,13 +6893,13 @@
                 o("eef1ae76", "Currently connected"),
                 o("a915f5c1", function (e) {
                     return e.ats + " connected";
-                }),
-                o("af7286b7", function (e) {
-                    return e.percentage + "% off a year of Premium";
-                }),
+                });
+            o("af7286b7", function (e) {
+                return e.percentage + "% off a year of Premium";
+            }),
                 o("c924ad84", "Keep videos playing"),
-                o("de750a3c", "Enjoy them even when your phone is locked");
-            o("he5e87c4", "Boost your replies"),
+                o("de750a3c", "Enjoy them even when your phone is locked"),
+                o("he5e87c4", "Boost your replies"),
                 o("g64a60ba", "Get a small prioritization when you reply to posts"),
                 o("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
                 o("fdd77a34", "Create longer posts"),
@@ -7391,6 +7396,11 @@
                 o("bd05add8", "Not a Bot"),
                 o("d94f12b6", "اطلاعات، رازداری وغیرہ تلاش کر کے دیکھیں۔"),
                 o("ba8f6f82", "سیٹنگز تلاش کریں"),
+                o("ibf92e4a", "Payment Successful"),
+                o("bdf0fb06", "Your subscription has been activated."),
+                o("ddfd6718", "Payment Failed"),
+                o("d42fa852", "There was an issue processing your payment. Please try again."),
+                o("g055a9ce", "Open 𝕏 App"),
                 o("g931a6e5", function (e) {
                     return "آپ " + e.topic + " کو فالو کر رہے ہیں";
                 }),
@@ -7865,17 +7875,7 @@
                 o("a76d58ba", "Ads Analytics"),
                 o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
-                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                o("gf67aae4", "Upgrade to Full Access"),
-                o("h75e3618", "Include organization"),
-                o("h24a8862", "About this checkbox"),
-                o("c29e3a88", "Select affiliates"),
-                o("j8318d57", function (e) {
-                    return e.number + " affiliate" + r(e.number, "", "s");
-                }),
-                o("bf809ec0", "Select Affiliates"),
-                o("b719e224", "کوئی نتائج نہیں"),
-                o("c9938100", "تلاش کے نتائج");
+                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7914,7 +7914,17 @@
                     c(e, t)
                 );
             }
-            o("d1a35ec6", "اکاؤنٹس شامل کریں"),
+            o("gf67aae4", "Upgrade to Full Access"),
+                o("h75e3618", "Include organization"),
+                o("h24a8862", "About this checkbox"),
+                o("c29e3a88", "Select affiliates"),
+                o("j8318d57", function (e) {
+                    return e.number + " affiliate" + r(e.number, "", "s");
+                }),
+                o("bf809ec0", "Select Affiliates"),
+                o("b719e224", "کوئی نتائج نہیں"),
+                o("c9938100", "تلاش کے نتائج"),
+                o("d1a35ec6", "اکاؤنٹس شامل کریں"),
                 o("b437adda", "Upgrade to paid"),
                 o("f1f6c88b", function (e) {
                     return "Accounts (" + e.count + ")";
@@ -7968,7 +7978,6 @@
                 o("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 o("ce102a20", "Redirecting to Stripe"),
-                o("ddfd6718", "Payment Failed"),
                 o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 o("a62359e6", "Verified Organization Settings"),
                 o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
@@ -8904,10 +8913,10 @@
                 o("j0c6772a", "ویب سائٹ ملاحظہ کریں"),
                 o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
                 o("b3112b8a", "چھوڑ دیں"),
-                o("h6333ad0", "اشتہار چھوڑیں"),
-                o("c59da417", function (e) {
-                    return e.seconds + " میں اشتہار نظر انداز کریں";
-                }),
+                o("h6333ad0", "اشتہار چھوڑیں");
+            o("c59da417", function (e) {
+                return e.seconds + " میں اشتہار نظر انداز کریں";
+            }),
                 o("c3c147cf", function (e) {
                     return e.seconds + " کو نظر انداز کریں";
                 }),
@@ -8917,8 +8926,8 @@
                     return "Auto (" + e.quality + ")";
                 }),
                 o("a7bf9962", "Download video"),
-                o("ccc97152", "Playback speed");
-            o("h531ade0", "Video quality"),
+                o("ccc97152", "Playback speed"),
+                o("h531ade0", "Video quality"),
                 o("e8b5757c", "0.25x"),
                 o("e7e954de", "0.5x"),
                 o("g07ffe66", "0.75x"),
@@ -10145,9 +10154,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13348,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.9f90136a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.ff96fc0a.js.map

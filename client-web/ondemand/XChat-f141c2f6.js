@@ -10,7 +10,7 @@
                 l = n(332161),
                 i = n(466285),
                 o = n(759746),
-                c = n(263033);
+                c = n(455091);
             const u = ({ onClick: e, isSelected: t, suggestion: n }) => {
                     const { t: u } = (0, c.$G)();
                     return n instanceof r.com.x.dms.NewDmSuggestion.User || n instanceof r.com.x.dms.addparticipants.AddParticipantSuggestion
@@ -18,7 +18,7 @@
                               onClick: () => {
                                   e();
                                   const t = d(n.user.cannotMessageReason);
-                                  t && (0, s.Am)(t);
+                                  t && (0, s.Am)(u(t));
                               },
                               isSelected: t,
                               user: n.user,
@@ -68,7 +68,7 @@
             n.d(t, { K: () => d });
             var a = n(552322),
                 r = n(322506),
-                s = n(378364),
+                s = n(6937),
                 l = n(589259),
                 i = n(253511),
                 o = n(123010),
@@ -84,7 +84,7 @@
             var a = n(552322),
                 r = n(202784),
                 s = n(167285),
-                l = n(263033);
+                l = n(455091);
             const i = ({ timestamp: e, updateIntervalMs: t = 3e4 }) => {
                 const [n, i] = (0, r.useState)(Date.now() / 1e3 - e.epochSeconds),
                     { t: o } = (0, l.$G)(),
@@ -139,7 +139,7 @@
                 m = n(718278),
                 g = n(664147),
                 p = n(155369);
-            const h = () =>
+            const f = () =>
                 (0, a.jsx)(l.z, {
                     onClick: () => {
                         (0, p.Iv)()
@@ -150,13 +150,13 @@
                     },
                     children: "Reset",
                 });
-            function f() {
-                return (0, a.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, a.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, a.jsx)(h, {}), (0, a.jsx)(m.o, {})] }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(g.i, {}) })] });
+            function h() {
+                return (0, a.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, a.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, a.jsx)(f, {}), (0, a.jsx)(m.o, {})] }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(g.i, {}) })] });
             }
             const y = () => {
                 const [e, t] = (0, u.useState)(!1),
                     { showDebugOptions: n } = (0, d.XE)();
-                return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(l.z, { icon: (0, a.jsx)(r.Z, { className: "h-5 w-5" }), variant: "primaryText", onClick: () => t(!0) }), e && (0, a.jsx)(i.s, { isOpen: !0, onOpenChange: t, isDismissable: !0, children: (0, a.jsxs)("div", { className: "flex flex-1 flex-col w-[40rem] h-[40rem] transition-colors", children: [(0, a.jsx)(o.x, { title: "Settings", leftContent: (0, a.jsx)(l.z, { variant: "primaryText", icon: (0, a.jsx)(s.Z, {}), onClick: () => t(!1) }) }), (0, a.jsx)("div", { className: "flex flex-col items-start gap-3 p-4 border-t overflow-y-auto", children: n && (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(c.x, { size: "headline2", weight: "bold", children: "Debug Options" }), (0, a.jsx)(f, {})] }) })] }) })] });
+                return (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(l.z, { icon: (0, a.jsx)(r.Z, { className: "h-5 w-5" }), variant: "primaryText", onClick: () => t(!0) }), e && (0, a.jsx)(i.s, { isOpen: !0, onOpenChange: t, isDismissable: !0, children: (0, a.jsxs)("div", { className: "flex flex-1 flex-col w-[40rem] h-[40rem] transition-colors", children: [(0, a.jsx)(o.x, { title: "Settings", leftContent: (0, a.jsx)(l.z, { variant: "primaryText", icon: (0, a.jsx)(s.Z, {}), onClick: () => t(!1) }) }), (0, a.jsx)("div", { className: "flex flex-col items-start gap-3 p-4 border-t overflow-y-auto", children: n && (0, a.jsxs)(a.Fragment, { children: [(0, a.jsx)(c.x, { size: "headline2", weight: "bold", children: "Debug Options" }), (0, a.jsx)(h, {})] }) })] }) })] });
             };
         },
         165272: (e, t, n) => {
@@ -188,7 +188,7 @@
             n.d(t, { N: () => l });
             var a = n(552322),
                 r = n(125550),
-                s = n(792901);
+                s = n(657556);
             const l = ({ groupId: e, token: t, settings: n }) => (e && t ? (0, a.jsx)(s.A, { settings: n, children: (0, a.jsx)(r.M, { groupId: e, token: t }) }) : null);
         },
         671889: (e, t, n) => {
@@ -203,27 +203,23 @@
         700931: (e, t, n) => {
             n.d(t, { H: () => l });
             var a = n(552322),
-                r = n(792901),
+                r = n(657556),
                 s = n(92184);
             const l = ({ settings: e }) => (0, a.jsx)(r.A, { settings: e, children: (0, a.jsx)(s.p, {}) });
         },
-        792901: (e, t, n) => {
+        657556: (e, t, n) => {
             n.d(t, { A: () => y });
             var a = n(552322),
                 r = n(446368),
-                s = n(263033),
-                l = n(19745),
-                i = n(202784),
-                o = n(107267),
-                c = n(607499),
-                u = n(968025),
-                d = n(727071),
-                m = n(768246),
-                g = n(264531),
-                p = n(155369),
-                h = n(84504);
-            async function f() {
-                const e = (0, h.n5)();
+                s = n(455091),
+                l = n(202784),
+                i = n(109871),
+                o = n(607499),
+                c = n(264531),
+                u = n(155369),
+                d = n(84504);
+            async function m() {
+                const e = (0, d.n5)();
                 await (async function (e) {
                     try {
                         const t = await navigator.storage.getDirectory();
@@ -250,28 +246,68 @@
                         } catch (e) {}
                     })();
             }
-            const y = ({ children: e, settings: t }) => {
-                const n = (0, o.useLocation)(),
-                    h = (0, o.useHistory)(),
-                    [y, x] = (0, i.useState)(new URLSearchParams(n.search)),
-                    v = (0, o.useParams)(),
-                    { t: b } = (0, s.$G)();
-                (0, i.useEffect)(() => {
-                    x(new URLSearchParams(n.search));
-                }, [n.search]);
-                const w = (0, i.useMemo)(() => ({ push: (e, t) => h.push(e, t) }), [h]);
+            var g = n(34681),
+                p = n(332161),
+                f = n(993165);
+            function h({ children: e }) {
+                const [t, n] = (0, l.useState)(!1),
+                    r = (0, u.n4)(),
+                    { t: i } = (0, s.$G)();
                 return (
-                    (0, i.useEffect)(() => {
-                        f();
+                    (0, l.useEffect)(() => {
+                        const e = r.databaseDowngradeObservable.subscribe((e) => {
+                            n(e);
+                        });
+                        return () => {
+                            e.cancel();
+                        };
+                    }, [r]),
+                    t
+                        ? (0, a.jsxs)(g.Vq, {
+                              open: t,
+                              children: [
+                                  (0, a.jsx)(g.t9, { className: "bg-gray-0" }),
+                                  (0, a.jsxs)(g.cZ, {
+                                      className: "max-w-sm p-8 flex flex-col items-center text-center gap-6",
+                                      withCloseButton: !1,
+                                      children: [
+                                          (0, a.jsx)(p.x, { className: "text-start", children: i("Your database version is newer than the app expects, please reset database and start from scratch.") }),
+                                          (0, a.jsx)(f.z, {
+                                              onClick: function () {
+                                                  (0, u.Iv)()
+                                                      .then(() => {
+                                                          window.location.reload();
+                                                      })
+                                                      .catch((e) => {});
+                                              },
+                                              backgroundColor: "gray700",
+                                              color: "background",
+                                              size: "xLarge",
+                                              className: "w-full rounded-full mx-4 border-transparent outline-text active:bg-mix-text active:bg-mix-amount-15 focus:bg-mix-text focus:bg-mix-amount-10 hover:bg-mix-text hover:bg-mix-amount-10",
+                                              children: i("Reset"),
+                                          }),
+                                          (0, a.jsx)(p.x, { size: "subtext2", weight: "medium", children: i("All your data is safely stored") }),
+                                      ],
+                                  }),
+                              ],
+                          })
+                        : (0, a.jsx)(a.Fragment, { children: e })
+                );
+            }
+            const y = ({ children: e, settings: t }) => {
+                const { t: n } = (0, s.$G)();
+                return (
+                    (0, l.useEffect)(() => {
+                        m();
                     }, []),
-                    (0, a.jsx)(c.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, a.jsx)(u.p, { router: w, children: (0, a.jsx)(r.ng, { children: (0, a.jsx)(d.d, { useParams: () => v, children: (0, a.jsx)(m.x, { searchParams: y, children: (0, a.jsx)(g.mp, { settings: t, children: (0, a.jsxs)(p.Us, { children: [e, (0, a.jsx)(l.x, {})] }) }) }) }) }) }) })
+                    (0, a.jsx)(o.S, { message: n("Something went wrong while loading Chat. Please try again later."), children: (0, a.jsx)(i.L, { children: (0, a.jsx)(r.ng, { children: (0, a.jsx)(c.mp, { settings: t, children: (0, a.jsx)(u.Us, { children: (0, a.jsxs)(h, { children: [e, " "] }) }) }) }) }) })
                 );
             };
         },
         850697: (e, t, n) => {
-            n.d(t, { x: () => E });
+            n.d(t, { x: () => T });
             var a = n(552322),
-                r = n(792901),
+                r = n(657556),
                 s = n(159603),
                 l = n(202784),
                 i = n(155369),
@@ -279,11 +315,11 @@
                 c = n(332161),
                 u = n(993165),
                 d = n(533476),
-                m = n(263033),
+                m = n(455091),
                 g = n(788452),
-                p = n(305399),
-                h = n(671889),
-                f = n(31674);
+                p = n(3577),
+                f = n(671889),
+                h = n(31674);
             function y({ value: e, onChange: t, digitVisible: n = !1, className: r, length: s = 4, autoFocus: i = !1 }) {
                 const o = (0, l.useRef)([]),
                     u = (0, l.useRef)(!1);
@@ -330,7 +366,7 @@
                         [e, t, s],
                     );
                 return (0, a.jsx)("div", {
-                    className: (0, f.cn)("flex gap-3", r),
+                    className: (0, h.cn)("flex gap-3", r),
                     children: Array.from({ length: s }).map((t, r) =>
                         (0, a.jsxs)(
                             "div",
@@ -348,7 +384,7 @@
                                         value: "",
                                         onChange: (e) => m(e, r),
                                         onKeyDown: (e) => d(e, r),
-                                        className: (0, f.cn)("absolute inset-0 w-full h-full text-transparent caret-primary bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors z-10 text-center", e[r] && "text-left pl-7"),
+                                        className: (0, h.cn)("absolute inset-0 w-full h-full text-transparent caret-primary bg-transparent border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition-colors z-10 text-center", e[r] && "text-left pl-7"),
                                         placeholder: " ",
                                     }),
                                     (0, a.jsx)("div", { className: "absolute inset-0 flex items-center justify-center z-0", children: n ? (0, a.jsx)(c.x, { size: "title4", weight: "bold", children: e[r] || "" }) : (0, a.jsx)("div", { className: "flex items-center justify-center w-full", children: e[r] ? (0, a.jsx)("div", { className: "h-3 w-3 rounded-full bg-text" }) : null }) }),
@@ -371,8 +407,8 @@
                     i.current && i.current.focus();
                 }, []);
                 return r.isProcessing
-                    ? (0, a.jsx)(h.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, a.jsx)(o.P, {}) })
-                    : (0, a.jsxs)(h.g, {
+                    ? (0, a.jsx)(f.g, { className: "flex w-full min-h-dvh md:h-dvh items-center", children: (0, a.jsx)(o.P, {}) })
+                    : (0, a.jsxs)(f.g, {
                           className: `flex flex-col min-h-dvh md:h-dvh w-full ${n ? "items-start py-12" : "items-center justify-center py-0"} flex-grow gap-4  px-12`,
                           children: [
                               (0, a.jsx)(g.Z, { width: 76, height: 76, className: "rotate-[-8.29deg]" }),
@@ -492,15 +528,15 @@
                 k = n(264531),
                 j = n(70625),
                 F = n(867400),
-                S = n(231037);
-            const N = s.com.x.dms.pin.PinEntryMode;
+                N = n(231037);
+            const S = s.com.x.dms.pin.PinEntryMode;
             function C({ mode: e }) {
                 const [t, n] = (0, l.useState)(null),
                     r = (0, i.n4)(),
                     o = (0, _.s)(),
                     { showDebugOptions: u } = (0, k.XE)(),
                     d = (0, F.a)(),
-                    m = (0, S.l)();
+                    m = (0, N.l)();
                 return (
                     (0, l.useEffect)(() => {
                         const t = new s.com.x.export.CancellationSignal(),
@@ -508,13 +544,13 @@
                                 (function (e, t, n) {
                                     switch (e) {
                                         case "recovery":
-                                            return N.Recovery;
+                                            return S.Recovery;
                                         case "new":
-                                            return N.NewKeypair;
+                                            return S.NewKeypair;
                                         case "forgot":
-                                            return N.ForgotPin;
+                                            return S.ForgotPin;
                                         case "verify":
-                                            return new N.Verify(!!t, !!n);
+                                            return new S.Verify(!!t, !!n);
                                     }
                                 })(e, d, m),
                                 new s.com.x.dms.pin.DmPinEntryCallbacks(
@@ -537,8 +573,8 @@
                     (0, a.jsxs)(a.Fragment, { children: [u && (0, a.jsx)("div", { className: "absolute top-4 right-4", children: (0, a.jsx)(j.Z, {}) }), null != t ? (0, a.jsx)(w, { component: t }) : (0, a.jsx)(c.x, { children: "Loading" })] })
                 );
             }
-            const T = ["recovery", "new", "forgot", "verify"],
-                E = ({ mode: e, settings: t }) => (T.includes(e) ? (0, a.jsx)(r.A, { settings: t, children: (0, a.jsx)(C, { mode: e }) }) : null);
+            const E = ["recovery", "new", "forgot", "verify"],
+                T = ({ mode: e, settings: t }) => (E.includes(e) ? (0, a.jsx)(r.A, { settings: t, children: (0, a.jsx)(C, { mode: e }) }) : null);
         },
         664147: (e, t, n) => {
             n.d(t, { e: () => i, i: () => o });
@@ -564,7 +600,7 @@
                 };
         },
         686524: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => h });
+            n.r(t), n.d(t, { default: () => f });
             const a = {
                 fragment: {
                     argumentDefinitions: (r = [{ defaultValue: null, kind: "LocalArgument", name: "id" }]),
@@ -755,7 +791,7 @@
             };
             var r, s, l, i, o, c, u, d, m, g, p;
             a.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
-            const h = a;
+            const f = a;
         },
         84504: (e, t, n) => {
             n.d(t, { n5: () => r });
@@ -763,6 +799,19 @@
             function r() {
                 const e = (0, a.Qc)(document.cookie);
                 return e.twid?.slice(2) || "0";
+            }
+        },
+        565991: (e, t, n) => {
+            n.d(t, { c: () => s, j: () => l });
+            var a = n(84504);
+            const r = "xchat_database_backup_event";
+            function s() {
+                window.dispatchEvent(new Event(r));
+            }
+            function l(e) {
+                window.addEventListener(r, () => {
+                    e.postMessage({ action: "backup_db", userId: (0, a.n5)(), id: "backup_1" });
+                });
             }
         },
         842898: (e, t, n) => {
@@ -835,23 +884,23 @@
                     if (e < 60) return i("Now");
                     if (e < a) {
                         const t = Math.floor(e / 60);
-                        return "narrow" === n ? i("{minutes} m", { minutes: t }) : i("{count} {count, plural, one {minute} other {minutes}}", { count: t });
+                        return "narrow" === n ? i("{minutes}m", { minutes: t }) : i("{count} {count, plural, one {minute} other {minutes}}", { count: t });
                     }
                     if (e < r) {
                         const t = Math.floor(e / a);
-                        return "narrow" === n ? i("{hours} h", { hours: t }) : i("{count} {count, plural, one {hour} other {hours}}", { count: t });
+                        return "narrow" === n ? i("{hours}h", { hours: t }) : i("{count} {count, plural, one {hour} other {hours}}", { count: t });
                     }
                     if (e < s) {
                         const t = Math.floor(e / r);
-                        return "narrow" === n ? i("{days} d", { days: t }) : i("{count} {count, plural, one {day} other {days}}", { count: t });
+                        return "narrow" === n ? i("{days}d", { days: t }) : i("{count} {count, plural, one {day} other {days}}", { count: t });
                     }
                     if (e < l) {
                         const t = Math.floor(e / s);
-                        return "narrow" === n ? i("{weeks} w", { weeks: t }) : i("{count} {count, plural, one {week} other {weeks}}", { count: t });
+                        return "narrow" === n ? i("{weeks}w", { weeks: t }) : i("{count} {count, plural, one {week} other {weeks}}", { count: t });
                     }
                     if (!t || e < 31536e3) {
                         const t = Math.floor(e / l);
-                        return "narrow" === n ? i("{months} mo", { months: t }) : i("{count} {count, plural, one {month} other {months}}", { count: t });
+                        return "narrow" === n ? i("{months}mo", { months: t }) : i("{count} {count, plural, one {month} other {months}}", { count: t });
                     }
                     return new Date(1e3 * t).toLocaleDateString("en-US");
                 },
@@ -999,68 +1048,70 @@
             }
         },
         658358: (e, t, n) => {
-            n.d(t, { e: () => m });
+            n.d(t, { e: () => g });
             var a = n(159603),
                 r = n(256958),
-                s = n(202784);
-            const l = a.com.x.dms.composer.composer.ComposerToastType,
-                i = a.com.x.dms.convinfo.ConversationInfoToast,
-                o = a.com.x.dms.ParticipantMenuItem,
-                c = a.com.x.dms.newdm.NewDmToast,
-                u = a.com.x.dms.addparticipants.AddGroupParticipantsToastType,
-                d = a.com.x.dms.convlist.ConvListToastType;
-            function m(e) {
+                s = n(202784),
+                l = n(455091);
+            const i = a.com.x.dms.composer.composer.ComposerToastType,
+                o = a.com.x.dms.convinfo.ConversationInfoToast,
+                c = a.com.x.dms.ParticipantMenuItem,
+                u = a.com.x.dms.newdm.NewDmToast,
+                d = a.com.x.dms.addparticipants.AddGroupParticipantsToastType,
+                m = a.com.x.dms.convlist.ConvListToastType;
+            function g(e) {
+                const { t } = (0, l.$G)();
                 (0, s.useEffect)(() => {
-                    const t = e.subscribe((e) => {
-                        const t = (function (e) {
+                    const n = e.subscribe((e) => {
+                        const n = (function (e, t) {
                             switch (e) {
-                                case l.ATTACHMENT_FAILED:
-                                    return "Unable to load attachment";
-                                case l.EDIT_MESSAGE_FAILED:
-                                    return "Edit failed. Please try again later.";
-                                case i.ResignAdminFailed:
-                                    return "Unable to resign as Admin";
-                                case i.DeleteConversationFailed:
-                                    return "Unable to delete conversation";
-                                case i.LeaveGroupFailed:
-                                    return "Unable to leave conversation";
-                                case c.FetchError:
-                                    return "An error occurred";
-                                case c.CreateGroupFailed:
-                                    return "Unable to create group";
-                                case c.CreateOneOnOneFailed:
-                                    return "Unable to start conversation.";
-                                case d.PIN_CONVO_FAILED:
-                                    return "Unable to pin conversation";
-                                case d.UNPIN_CONVO_FAILED:
-                                    return "Unable to unpin conversation";
+                                case i.ATTACHMENT_FAILED:
+                                    return t("Unable to load attachment");
+                                case i.EDIT_MESSAGE_FAILED:
+                                    return t("Edit failed. Please try again later.");
+                                case o.ResignAdminFailed:
+                                    return t("Unable to resign as Admin");
+                                case o.DeleteConversationFailed:
+                                    return t("Unable to delete conversation");
+                                case o.LeaveGroupFailed:
+                                    return t("Unable to leave conversation");
+                                case u.FetchError:
+                                    return t("An error occurred");
+                                case u.CreateGroupFailed:
+                                    return t("Unable to create group");
+                                case u.CreateOneOnOneFailed:
+                                    return t("Unable to start conversation.");
+                                case m.PIN_CONVO_FAILED:
+                                    return t("Unable to pin conversation");
+                                case m.UNPIN_CONVO_FAILED:
+                                    return t("Unable to unpin conversation");
                             }
                             if (e instanceof a.com.x.dms.convinfo.ConversationInfoToast.ParticipantMenuItemFailed)
                                 switch (e.item) {
-                                    case o.AddAsAdmin:
-                                        return "Unable to add user as Admin";
-                                    case o.RemoveAsAdmin:
-                                        return "Unable to remove user as Admin";
-                                    case o.RemoveFromGroup:
-                                        return "Unable to remove user from group";
+                                    case c.AddAsAdmin:
+                                        return t("Unable to add user as Admin");
+                                    case c.RemoveAsAdmin:
+                                        return t("Unable to remove user as Admin");
+                                    case c.RemoveFromGroup:
+                                        return t("Unable to remove user from group");
                                 }
-                            if (e instanceof u)
+                            if (e instanceof d)
                                 switch (e.name) {
                                     case "ADD_PARTICIPANTS_FAILURE":
-                                        return "Unable to add user";
+                                        return t("Unable to add user");
                                     case "SEARCH_FAILURE":
-                                        return "Something went wrong while searching";
+                                        return t("Something went wrong while searching");
                                     case "TOO_MANY_MEMBERS":
-                                        return "Unable to add user. Too many members";
+                                        return t("Unable to add user. Too many members");
                                 }
                             return null;
-                        })(e);
-                        t && (0, r.Am)(t);
+                        })(e, t);
+                        n && (0, r.Am)(n);
                     });
                     return () => {
-                        t.cancel();
+                        n.cancel();
                     };
-                }, [e]);
+                }, [e, t]);
             }
         },
         858108: (e, t, n) => {
@@ -1071,4 +1122,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.77bec84a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.fecee17a.js.map

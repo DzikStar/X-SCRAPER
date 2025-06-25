@@ -1361,7 +1361,12 @@
                 n("b7cb4fab", "tarafından çevrildi"),
                 n("e0bffbf8", "Otomatik çeviri hakkında"),
                 n("e839db3a", "Gizle"),
-                n("a15585b4", "Dil Ayarları"),
+                n("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                n("c60b9e5c", "Changes will take effect for newly loaded content."),
+                n("c6ad999b", "languages settings"),
+                n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return e.fullName + " (@" + e.screenName + ") adlı kullanıcıdan gönderi";
                 }),
@@ -1917,11 +1922,11 @@
                 }),
                 n("ad89b831", function (e) {
                     return "etkin" + e.ttc_rich_text_composer;
-                }),
-                n("jcd5ee8a", "Bloku düzenle"),
+                });
+            n("jcd5ee8a", "Bloku düzenle"),
                 n("a8f09fb8", "Bloku sil"),
-                n("i89195ea", "Ayırıcı");
-            n("da8ac57c", "Altyazıyı Düzenle"),
+                n("i89195ea", "Ayırıcı"),
+                n("da8ac57c", "Altyazıyı Düzenle"),
                 n("a8fdd09c", "Makaleyi Yayınla"),
                 n("d8047cc8", "Yayınla"),
                 n("ff7ddca2", "Makalen yayınlandıktan sonra gönderi olarak görünecek. Ayrıca, profilindeki Makaleler sekmesinde de bulunabilecek."),
@@ -2969,15 +2974,15 @@
                 n("j43f99be", "Alaka düzeyi"),
                 n("ad6e11ac", "Yanıtları sıralama ölçütü"),
                 n("b2311b70", "Bu içerik senin erişimine açık değil"),
-                n("j88f27d8", "Alakalı kişiler"),
-                n("i31dcd22", "Makale"),
+                n("j88f27d8", "Alakalı kişiler");
+            n("i31dcd22", "Makale"),
                 n("e3de2f6f", function (e) {
                     return e.entity + " Yer İşaretlerine eklendi";
                 }),
                 n("e64de8a9", function (e) {
                     return e.entity + " Yer İşaretlerinden kaldırıldı";
-                });
-            n("d6d9aab6", "Yer İşareti Ekle"),
+                }),
+                n("d6d9aab6", "Yer İşareti Ekle"),
                 n("bb89cf46", "Yer İşaretini Kaldır"),
                 n("a739d4ba", "Yer İşareti Klasörüne Ekle"),
                 n("d5270434", "Çıkış"),
@@ -3899,11 +3904,11 @@
                 n("c3b5b829", function (e) {
                     return e.count + " istek";
                 }),
-                n("fe7a1910", "Davetiye gönder"),
-                n("ic3c757e", "Kullanıcıları ara"),
+                n("fe7a1910", "Davetiye gönder");
+            n("ic3c757e", "Kullanıcıları ara"),
                 n("cd133486", "Davet et"),
-                n("f2333850", "X dışındaki kişilerle paylaş,");
-            n("cddb8097", "Daha fazla bilgi al"),
+                n("f2333850", "X dışındaki kişilerle paylaş,"),
+                n("cddb8097", "Daha fazla bilgi al"),
                 n("f77997b0", "Yardımcı"),
                 n("i48f4ed8", "Konuşmacı"),
                 n("a77c8e02", "Dinleyici"),
@@ -4923,11 +4928,11 @@
                 n("c8410542", "Videonun görüntülenme sayısı."),
                 n("a532072a", "İzleyiciler"),
                 n("d9508ab0", "görüntülenme"),
-                n("d9f9dec0", "Sohbet Odasını Görüntüle"),
-                n("h0c1f37a", "Sohbet Odası İstatistiklerini Görüntüle"),
+                n("d9f9dec0", "Sohbet Odasını Görüntüle");
+            n("h0c1f37a", "Sohbet Odası İstatistiklerini Görüntüle"),
                 n("e41fffbc", "Videolarının toplam izlenme süresi."),
-                n("if2909ba", "İzlenme Süresi");
-            n("i0e5bf4c", "Videoların"),
+                n("if2909ba", "İzlenme Süresi"),
+                n("i0e5bf4c", "Videoların"),
                 n("ed99baea", "Erken Beta Erişimi"),
                 n("gf898b70", "Gelişmiş Arama"),
                 n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
@@ -5877,13 +5882,13 @@
                 n("b92a21d9", function (e) {
                     return e.query + " için sonuç bulunamadı";
                 }),
-                n("f191a2ba", "Arama ayarlarını"),
-                n("a068008a", "Klasörler şu anda yüklenmiyor"),
+                n("f191a2ba", "Arama ayarlarını");
+            n("a068008a", "Klasörler şu anda yüklenmiyor"),
                 n("f075b0e8", "Klasörü Düzenle"),
-                n("beba2a0e", "Yeni bir Yer İşareti Klasörü oluştur");
-            n("e41c9b4f", function (e) {
-                return e.bookmarkFolderName + " içeriğine kaydedildi";
-            }),
+                n("beba2a0e", "Yeni bir Yer İşareti Klasörü oluştur"),
+                n("e41c9b4f", function (e) {
+                    return e.bookmarkFolderName + " içeriğine kaydedildi";
+                }),
                 n("h18f86a4", "Klasörü sil"),
                 n("f4ea967a", "Klasör silindi"),
                 n("b670aa62", "Klasör Adı"),
@@ -6883,13 +6888,13 @@
                 n("eef1ae76", "Şu anda bağlı"),
                 n("a915f5c1", function (e) {
                     return e.ats + " bağlandı";
-                }),
-                n("af7286b7", function (e) {
-                    return "Yıllık Premium aboneliğinde %" + e.percentage + " indirim";
-                }),
+                });
+            n("af7286b7", function (e) {
+                return "Yıllık Premium aboneliğinde %" + e.percentage + " indirim";
+            }),
                 n("c924ad84", "Videoları oynatmaya devam et"),
-                n("de750a3c", "Telefonun kilitliyken bile keyfini çıkar");
-            n("he5e87c4", "Yanıtlarını öne çıkar"),
+                n("de750a3c", "Telefonun kilitliyken bile keyfini çıkar"),
+                n("he5e87c4", "Yanıtlarını öne çıkar"),
                 n("g64a60ba", "Gönderilere yanıt verdiğinde az miktarda önceliklendirme al"),
                 n("a7ee832a", "60 dakikaya varan süreyle yazım hatalarını ve yanlışları düzelt"),
                 n("fdd77a34", "Daha uzun gönderiler oluştur"),
@@ -7386,6 +7391,11 @@
                 n("bd05add8", "Bot Değilim"),
                 n("d94f12b6", "Bildirimler, gizlilik vb. hakkında arama yapmayı dene"),
                 n("ba8f6f82", "Ayarlarda Ara"),
+                n("ibf92e4a", "Payment Successful"),
+                n("bdf0fb06", "Your subscription has been activated."),
+                n("ddfd6718", "Ödeme Başarısız Oldu"),
+                n("d42fa852", "There was an issue processing your payment. Please try again."),
+                n("g055a9ce", "Open 𝕏 App"),
                 n("g931a6e5", function (e) {
                     return e.topic + " konusunu takip ediyorsun";
                 }),
@@ -7860,17 +7870,7 @@
                 n("a76d58ba", "Reklam İstatistikleri"),
                 n("eccd0e1a", "Kuruluş İstatistikleri"),
                 n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
-                n("eb603ffc", "Ağını ilişkilendirmek ve toplu istatistikleri görüntülemek için hesabını yükselt."),
-                n("gf67aae4", "Tam Erişime Yükselt"),
-                n("h75e3618", "Kuruluşu dahil et"),
-                n("h24a8862", "Bu onay kutusu hakkında"),
-                n("c29e3a88", "İlişkili hesapları seç"),
-                n("j8318d57", function (e) {
-                    return e.number + " ilişkili hesap";
-                }),
-                n("bf809ec0", "İlişkili Hesapları Seç"),
-                n("b719e224", "Sonuç yok"),
-                n("c9938100", "Arama sonuçları");
+                n("eb603ffc", "Ağını ilişkilendirmek ve toplu istatistikleri görüntülemek için hesabını yükselt.");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7909,7 +7909,17 @@
                     t(e, a)
                 );
             }
-            n("d1a35ec6", "Hesap ekle"),
+            n("gf67aae4", "Tam Erişime Yükselt"),
+                n("h75e3618", "Kuruluşu dahil et"),
+                n("h24a8862", "Bu onay kutusu hakkında"),
+                n("c29e3a88", "İlişkili hesapları seç"),
+                n("j8318d57", function (e) {
+                    return e.number + " ilişkili hesap";
+                }),
+                n("bf809ec0", "İlişkili Hesapları Seç"),
+                n("b719e224", "Sonuç yok"),
+                n("c9938100", "Arama sonuçları"),
+                n("d1a35ec6", "Hesap ekle"),
                 n("b437adda", "Ücretli aboneliğe yükselt"),
                 n("f1f6c88b", function (e) {
                     return "Hesaplar (" + e.count + ")";
@@ -7963,7 +7973,6 @@
                 n("b4fef99e", "Destek ekibimiz talebini aldıktan sonra bilgilerin incelenir ve entegrasyonunu yapılandırman için destek sunulur."),
                 n("h37f2d96", "Şu anda tüm başvuru takip sistemlerinin desteklenmediğini lütfen unutma."),
                 n("ce102a20", "Stripe'a yönlendiriliyor"),
-                n("ddfd6718", "Ödeme Başarısız Oldu"),
                 n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle."),
                 n("a62359e6", "Onaylı Kuruluş Ayarları"),
                 n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
@@ -8899,10 +8908,10 @@
                 n("j0c6772a", "İnternet sitesini ziyaret et"),
                 n("f73003aa", "Video reklamdan sonra oynatılacak"),
                 n("b3112b8a", "Atla"),
-                n("h6333ad0", "Reklamı Atla"),
-                n("c59da417", function (e) {
-                    return "Reklamı Atla: " + e.seconds;
-                }),
+                n("h6333ad0", "Reklamı Atla");
+            n("c59da417", function (e) {
+                return "Reklamı Atla: " + e.seconds;
+            }),
                 n("c3c147cf", function (e) {
                     return "Geç " + e.seconds;
                 }),
@@ -8912,8 +8921,8 @@
                     return "Otomatik (" + e.quality + ")";
                 }),
                 n("a7bf9962", "Videoyu indir"),
-                n("ccc97152", "Oynatma hızı");
-            n("h531ade0", "Video kalitesi"),
+                n("ccc97152", "Oynatma hızı"),
+                n("h531ade0", "Video kalitesi"),
                 n("e8b5757c", "0,25x"),
                 n("e7e954de", "0,5x"),
                 n("g07ffe66", "0,75x"),
@@ -10146,9 +10155,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return [this.props.sourceLang + ", X kullanımın ve dil ayarlarına göre Grok tarafından otomatik olarak çevrilecek. Otomatik çevrilecek dilleri seçmek için ", " sayfasını ziyaret et."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13348,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.4c13809a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.42a0fc4a.js.map

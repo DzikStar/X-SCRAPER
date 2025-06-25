@@ -861,7 +861,7 @@
                 be = a(167630),
                 ge = a(883229),
                 Ee = a(943914),
-                fe = a(412450),
+                fe = a(351990),
                 Ce = a(529438);
             const Ze = a(456221).Z,
                 Pe = () => {
@@ -987,4 +987,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.a95cf7ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.bad3025a.js.map

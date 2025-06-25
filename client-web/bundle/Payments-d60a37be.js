@@ -263,20 +263,20 @@
             var $ = a(800697),
                 B = a(482924);
             const Y = $.Z,
-                Q = ({ challengeId: e }) => {
+                G = ({ challengeId: e }) => {
                     const { data: t } = (0, B.A)(Y, { challengeId: e }, { fetchPolicy: "network-only" }),
                         a = t?.viewer_v2?.xp_start_two_factor_auth_challenge;
                     if (!a) return {};
                     const { error: n, login_request: r } = a;
                     return { error: n, ...(r && { challenge: r.challenge, loginRequestId: r.id, twoFactor: { id: r.two_factor_auth_method.id, type: r.two_factor_auth_method.two_factor_type }, verified: !!r.verified }) };
                 },
-                G = "Please try again later or contact support team.",
-                K = "The request expired, try again.",
-                X = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
-                J = "Too many attempts, try again later.",
-                ee = { DuplicatedRenameTwoFactorMethodDisplayName: X, ExpiredLoginVerification: K, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: X, InvalidRenameTwoFactorMethodDisplayName: X, LoginVerificationUserReactivationRequired: X, NoSecretForUser: X, NoTwoFactorAuthMethod: X, NotAllowed: X, NotValidForTokenExchange: X, NotYetApprovedLoginVerification: X, OfflineCodeSync: X, OverLoginVerificationAttemptLimit: J, OverLoginVerificationConvertLimit: J, OverResendLimit: J, SmsOverPerUserLimit: J, TwoFactorAuthMethodExpired: K, FailureSendingLoginVerificationRequest: G, OverLoginVerificationStartLimit: J, SmsVerPerUserLimit: J, TwoFactorAuthMethodDoesNotExist: X },
+                Q = "Please try again later or contact support team.",
+                X = "The request expired, try again.",
+                J = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
+                K = "Too many attempts, try again later.",
+                ee = { DuplicatedRenameTwoFactorMethodDisplayName: J, ExpiredLoginVerification: X, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: J, InvalidRenameTwoFactorMethodDisplayName: J, LoginVerificationUserReactivationRequired: J, NoSecretForUser: J, NoTwoFactorAuthMethod: J, NotAllowed: J, NotValidForTokenExchange: J, NotYetApprovedLoginVerification: J, OfflineCodeSync: J, OverLoginVerificationAttemptLimit: K, OverLoginVerificationConvertLimit: K, OverResendLimit: K, SmsOverPerUserLimit: K, TwoFactorAuthMethodExpired: X, FailureSendingLoginVerificationRequest: Q, OverLoginVerificationStartLimit: K, SmsVerPerUserLimit: K, TwoFactorAuthMethodDoesNotExist: J },
                 te = ({ challengeId: e, isNonModalScreen: t, onSuccess: a }) => {
-                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = Q({ challengeId: e }),
+                    const { challenge: r, error: c, loginRequestId: i, twoFactor: d } = G({ challengeId: e }),
                         u = (0, o.useHistory)(),
                         h = (0, l.p)(),
                         b = u.location?.state,
@@ -291,10 +291,10 @@
                                     ? k({ environment: v, challengeId: e, loginRequestId: i, challengeResponse: t })
                                           .then((e) => {
                                               const { error: t, id: n, verified: r } = e;
-                                              return n === i && r ? a({ loginRequestId: i }) : t && h({ text: ee[t] ?? G }), e;
+                                              return n === i && r ? a({ loginRequestId: i }) : t && h({ text: ee[t] ?? Q }), e;
                                           })
                                           .catch(() => {
-                                              h({ text: G });
+                                              h({ text: Q });
                                           })
                                     : Promise.resolve(),
                             [i, v, e, a, h],
@@ -303,7 +303,7 @@
                         Z = n.useCallback(() => {
                             (0, p.qc)({ environment: v, closePath: I, challengeInitiator: w, history: u });
                         }, [w, I, v, u]),
-                        E = n.useMemo(() => (d?.type === g.O.BackupCode ? n.createElement(q, { onClose: Z, onSubmit: P }) : r && d?.type === g.O.Passkey ? n.createElement(O, { challenge: r, onClose: Z, onSubmit: P }) : d?.type === g.O.Sms ? n.createElement(V, { onClose: Z, onSubmit: P }) : d?.type === g.O.Totp ? n.createElement(F, { onClose: Z, onSubmit: P }) : n.createElement(D, { error: c ? (ee[c] ?? G) : G, onClose: Z })), [r, c, Z, P, d?.type]);
+                        E = n.useMemo(() => (d?.type === g.O.BackupCode ? n.createElement(q, { onClose: Z, onSubmit: P }) : r && d?.type === g.O.Passkey ? n.createElement(O, { challenge: r, onClose: Z, onSubmit: P }) : d?.type === g.O.Sms ? n.createElement(V, { onClose: Z, onSubmit: P }) : d?.type === g.O.Totp ? n.createElement(F, { onClose: Z, onSubmit: P }) : n.createElement(D, { error: c ? (ee[c] ?? Q) : Q, onClose: Z })), [r, c, Z, P, d?.type]);
                     return t ? n.createElement(_.Z, { style: y.ZP.nonModalMargin }, E) : n.createElement(f.Z, { backButtonType: "close", history: u, onBackClick: Z }, E);
                 },
                 ae = { context: "VerifyTwoFactorAuth" };
@@ -404,7 +404,7 @@
                 h = a(655352),
                 p = a(163889),
                 _ = a(514639),
-                g = a(412450),
+                g = a(351990),
                 f = a(441484),
                 y = a(99387),
                 b = a(743080),
@@ -797,21 +797,27 @@
                 m = () => d({ decision: c.n.UnrecognizedPaymentDecisionReject });
         },
         856228: (e, t, a) => {
-            a.d(t, { Z: () => i });
+            a.d(t, { Z: () => d });
             var n = a(942512),
-                r = (a(585488), a(353391)),
-                s = a.n(r),
-                o = a(482924);
-            const c = n.Z,
-                i = () => {
-                    const { data: e, refetch: t } = (0, o.A)(c, {}, { fetchKey: "money-customer-tasks" }),
-                        a = ((e) => (e.get_payments_customer_tasks ? e.get_payments_customer_tasks : null))(e),
-                        n = e?.get_payments_customer_tasks?.__id ?? "useCustomerTasksCarouselQuery_customer_tasks";
+                r = a(202784),
+                s = (a(585488), a(353391)),
+                o = a.n(s),
+                c = a(312771),
+                i = a(482924);
+            const l = n.Z,
+                d = () => {
+                    const { data: e, refetch: t, refetchStatus: a } = (0, i.A)(l, {}),
+                        n = r.useMemo(() => ((e) => (e.get_payments_customer_tasks && e.get_payments_customer_tasks?.items) || [])(e), [e]),
+                        [s, d] = r.useState(n),
+                        u = e?.get_payments_customer_tasks?.__id ?? "useCustomerTasksCarouselQuery_customer_tasks";
                     return (
-                        s()([n], () => {
+                        r.useEffect(() => {
+                            a !== c.iF.LOADING && d(n);
+                        }, [n, a]),
+                        o()([u], () => {
                             t();
                         }),
-                        { data: a, refetch: t }
+                        { customerTasks: s, refetch: t, setCustomerTasks: d }
                     );
                 };
         },
@@ -925,7 +931,7 @@
         137882: (e, t, a) => {
             a.d(t, { bR: () => c, ig: () => o, vN: () => i });
             a(543673), a(240753), a(128399);
-            var n = a(412450),
+            var n = a(351990),
                 r = a(125363),
                 s = a(390387);
             const o = (e) => {
@@ -1223,4 +1229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.83c37bea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.6a0d806a.js.map

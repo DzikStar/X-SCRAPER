@@ -836,24 +836,6 @@
             };
             const i = a;
         },
-        642153: (e, l, n) => {
-            n.d(l, { Z: () => s });
-            var a = n(202784),
-                i = n(325686),
-                t = n(392237),
-                r = n(823161);
-            const s = (e) => {
-                    const { borderColor: l = "cellBackground", borderWidth: n = "small", style: s, userAvatarSize: o = "medium", userAvatarUrls: d, withIncreasedSpacing: m } = e,
-                        c = d.length,
-                        g = "transparent" === l;
-                    return a.createElement(
-                        i.Z,
-                        { style: [u.root, s, { height: r.default.getSizeStyle(o)?.height }] },
-                        d.map((e, i) => a.createElement(r.default, { backgroundColor: l, borderColor: l, borderWidth: g ? "none" : n, key: i, size: o, style: [0 !== i && { marginStart: -1 * t.default.theme.spacesPx[m ? "space4" : "space12"] }, { zIndex: c - i }], uri: e })),
-                    );
-                },
-                u = t.default.create((e) => ({ root: { flexDirection: "row", flexShrink: 0, overflow: "hidden", flexWrap: "wrap", justifyContent: "center" } }));
-        },
         280278: (e, l, n) => {
             n.d(l, { ZP: () => p });
             var a = n(202784),
@@ -992,4 +974,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-6107ac1a.4ed6121a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-6107ac1a.37d0473a.js.map

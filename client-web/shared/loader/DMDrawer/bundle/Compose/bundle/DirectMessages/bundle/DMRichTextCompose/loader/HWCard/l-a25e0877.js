@@ -11,7 +11,7 @@
             var a = n(202784),
                 i = n(503229),
                 r = n(379869),
-                o = n(538619),
+                o = n(836938),
                 s = n(85375),
                 l = n(596036),
                 d = n(542908);
@@ -196,7 +196,7 @@
                 p = n(815858),
                 u = n(154003),
                 m = n(392237),
-                h = n(538619),
+                h = n(836938),
                 g = n(596036),
                 b = n(747101),
                 _ = n(542908),
@@ -269,7 +269,7 @@
                 h = n(235902),
                 g = n(868634),
                 b = n(392237),
-                _ = n(538619),
+                _ = n(836938),
                 y = n(596036),
                 f = n(542908);
             const C = s().b74bf8b8,
@@ -435,7 +435,7 @@
                 c = n(530732),
                 p = n(891198),
                 u = n(392237),
-                m = n(538619),
+                m = n(836938),
                 h = n(94909),
                 g = n(747101),
                 b = n(615919);
@@ -455,7 +455,7 @@
                 o = n(530732),
                 s = n(392237),
                 l = n(366635),
-                d = n(538619),
+                d = n(836938),
                 c = n(94909),
                 p = n(747101),
                 u = n(615919);
@@ -490,7 +490,7 @@
                 s = n(470397),
                 l = n(537392),
                 d = n(392237),
-                c = n(538619),
+                c = n(836938),
                 p = n(94909),
                 u = n(747101),
                 m = n(615919);
@@ -525,10 +525,10 @@
                 i = n(325686),
                 r = n(336373),
                 o = n(392237),
-                s = n(538619);
+                s = n(836938);
             const l = o.default.create((e) => ({ wrapper: { padding: e.spaces.space12 } })),
                 d = ({ promotedContent: e, userId: t }) => a.createElement(r.Z.Provider, { namespace: { element: "user_recommendation" } }, a.createElement(i.Z, { style: l.wrapper }, s.v.renderFollowButton({ userId: t, promotedContent: e })));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a25e0877.12a25d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a25e0877.61037f2a.js.map

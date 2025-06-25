@@ -2,7 +2,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"],
     {
-        538619: (t, e, a) => {
+        836938: (t, e, a) => {
             a.d(e, { Z: () => L, v: () => b });
             var i = a(202784),
                 r = a(111677),
@@ -114,7 +114,7 @@
         },
         701805: (t, e, a) => {
             a.d(e, { F: () => d, V: () => s });
-            var i = a(538619),
+            var i = a(836938),
                 r = a(542908),
                 n = a(85375),
                 _ = a(94909);
@@ -132,7 +132,7 @@
         784444: (t, e, a) => {
             a.d(e, { K: () => T, Q: () => I });
             var i = a(392237),
-                r = a(538619),
+                r = a(836938),
                 n = a(801340),
                 _ = a(542908),
                 s = a(85375),
@@ -159,7 +159,7 @@
         },
         480878: (t, e, a) => {
             a.d(e, { B: () => s, T: () => d });
-            var i = a(538619),
+            var i = a(836938),
                 r = a(542908),
                 n = a(85375),
                 _ = a(94909);
@@ -176,7 +176,7 @@
         },
         610488: (t, e, a) => {
             a.d(e, { R: () => s, a: () => d });
-            var i = a(538619),
+            var i = a(836938),
                 r = a(542908),
                 n = a(85375),
                 _ = a(94909);
@@ -258,7 +258,7 @@
         },
         499078: (t, e, a) => {
             a.d(e, { I: () => o, i: () => d });
-            var i = a(538619),
+            var i = a(836938),
                 r = a(542908),
                 n = a(85375),
                 _ = a(94909);
@@ -297,4 +297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2.fa695efa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2.40a4f21a.js.map

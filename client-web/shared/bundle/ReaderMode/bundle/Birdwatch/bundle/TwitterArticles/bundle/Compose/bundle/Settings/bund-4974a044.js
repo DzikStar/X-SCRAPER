@@ -73,14 +73,108 @@
         587068: (e) => {
             e.exports = { queryId: "NqLS09LPofalCjVhFolKtA", operationName: "SetGrokPreferences", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
+        945907: (e, t, a) => {
+            "use strict";
+            a.d(t, { Z: () => _ });
+            var n,
+                r,
+                o,
+                i = {
+                    fragment: {
+                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "enable" }), (r = { defaultValue: null, kind: "LocalArgument", name: "language" })],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "GrokAutoTranslationToggleMutation",
+                        selections: (o = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "enable", variableName: "enable" },
+                                    { kind: "Variable", name: "language", variableName: "language" },
+                                    { kind: "Literal", name: "s", value: "4721" },
+                                ],
+                                kind: "ScalarField",
+                                name: "graphqlquery_user_auto_translate_language_control",
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [r, n], kind: "Operation", name: "GrokAutoTranslationToggleMutation", selections: o },
+                    params: { id: "3f9Qr6WPCh76-ip7h2r-tA", metadata: {}, name: "GrokAutoTranslationToggleMutation", operationKind: "mutation", text: null },
+                };
+            i.hash = "03dfec5c41bccdb78519052bb68587ce";
+            const _ = i;
+        },
+        794966: (e, t, a) => {
+            "use strict";
+            a.d(t, { Z: () => s });
+            var n,
+                r,
+                o,
+                i,
+                _,
+                l = {
+                    fragment: { argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "lang" }]), kind: "Fragment", metadata: null, name: "GrokAutoTranslationToggleQuery", selections: [{ alias: null, args: (r = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(o = { alias: null, args: [{ kind: "Variable", name: "view", variableName: "lang" }], kind: "ScalarField", name: "user_auto_translate_language_enabled", storageKey: null }), (i = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: n,
+                        kind: "Operation",
+                        name: "GrokAutoTranslationToggleQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: r,
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                                    { kind: "InlineFragment", selections: [o, i, (_ = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            _,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"4721")',
+                            },
+                        ],
+                    },
+                    params: { id: "J0iibs_CtTMRvj1R7Iykmg", metadata: {}, name: "GrokAutoTranslationToggleQuery", operationKind: "query", text: null },
+                };
+            l.hash = "0695c549c4023b47bfedf6c4de51448a";
+            const s = l;
+        },
         262324: (e, t, a) => {
             "use strict";
             a.d(t, { Z: () => i });
-            var o,
+            var n,
                 r,
-                n = {
+                o = {
                     fragment: {
-                        argumentDefinitions: (o = [
+                        argumentDefinitions: (n = [
                             { defaultValue: null, kind: "LocalArgument", name: "feedback_enum" },
                             { defaultValue: null, kind: "LocalArgument", name: "source" },
                             { defaultValue: null, kind: "LocalArgument", name: "tweet_id" },
@@ -105,170 +199,170 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: o, kind: "Operation", name: "TranslationFeedbackProvideFeedbackMutation", selections: r },
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "TranslationFeedbackProvideFeedbackMutation", selections: r },
                     params: { id: "5sPWsMj6Tl23V6v_0CEUsQ", metadata: {}, name: "TranslationFeedbackProvideFeedbackMutation", operationKind: "mutation", text: null },
                 };
-            n.hash = "aa37bac46970b94970a7a8b24894b04e";
-            const i = n;
+            o.hash = "aa37bac46970b94970a7a8b24894b04e";
+            const i = o;
         },
         19640: (e, t, a) => {
             "use strict";
-            a.d(t, { f: () => o });
-            const o = Object.freeze({ Draft: "Draft", Published: "Published", SoftDeleted: "SoftDeleted" });
+            a.d(t, { f: () => n });
+            const n = Object.freeze({ Draft: "Draft", Published: "Published", SoftDeleted: "SoftDeleted" });
         },
         337511: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => n });
-            var o = a(139343),
-                r = a.n(o);
-            const n = ({ apiClient: e, featureSwitches: t }) => ({ fetchArticleDomainsGraphQL: () => e.graphQL(r(), {}).then((e) => e.viewer?.article_nudge_domains) });
+            a.d(t, { Z: () => o });
+            var n = a(139343),
+                r = a.n(n);
+            const o = ({ apiClient: e, featureSwitches: t }) => ({ fetchArticleDomainsGraphQL: () => e.graphQL(r(), {}).then((e) => e.viewer?.article_nudge_domains) });
         },
         403911: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => A });
-            var o = a(506899),
+            a.d(t, { Z: () => C });
+            var n = a(506899),
                 r = a(163889),
-                n = a(414742),
+                o = a(414742),
                 i = a(703710);
-            const _ = new o.fK.Entity("bookmarkFolders", {});
-            var s = a(218276),
-                l = a.n(s),
+            const _ = new n.fK.Entity("bookmarkFolders", {});
+            var l = a(218276),
+                s = a.n(l),
                 d = a(721879),
                 p = a.n(d),
                 c = a(549186),
-                m = a.n(c),
-                b = a(295904),
-                u = a.n(b),
-                w = a(769948),
-                g = a.n(w),
-                h = a(871585),
-                k = a.n(h),
+                u = a.n(c),
+                m = a(295904),
+                b = a.n(m),
+                g = a(769948),
+                w = a.n(g),
+                k = a(871585),
+                h = a.n(k),
                 f = a(418631),
                 v = a.n(f),
                 y = a(734701),
                 T = a.n(y),
                 q = a(630986),
-                I = a.n(q),
-                x = a(934309);
-            const F = { result: [], entities: {}, slice_info: {} },
+                F = a.n(q),
+                I = a(934309);
+            const L = { result: [], entities: {}, slice_info: {} },
                 S = (e, t) => {
                     const a = t?.bookmark_all_delete,
-                        o = "Done" === a;
-                    return o || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, n.jB)(e) || !o;
+                        n = "Done" === a;
+                    return n || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, o.jB)(e) || !n;
                 },
-                C = (0, n.kj)((e) => {
+                x = (0, o.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         a = "User" === t?.__typename ? t : void 0,
-                        o = a?.bookmark_collections_slice?.items;
-                    return !o;
+                        n = a?.bookmark_collections_slice?.items;
+                    return !n;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                L = (0, n.kj)((e) => {
+                A = (0, o.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                A = ({ apiClient: e, featureSwitches: t }) => ({
+                C = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
-                            u(),
+                            b(),
                             { ...t },
-                            (0, n.kj)((e) => !e.bookmark_collection_tweet_put, "GQL Bookmark Folders: failed to Add Tweet to Bookmark Folder"),
+                            (0, o.kj)((e) => !e.bookmark_collection_tweet_put, "GQL Bookmark Folders: failed to Add Tweet to Bookmark Folder"),
                         ),
                     createBookmarkFolder: (t) =>
                         e.graphQL(
-                            g(),
+                            w(),
                             { ...t },
-                            (0, n.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
+                            (0, o.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(k(), {}, S).then((e) => e),
+                    deleteAll: () => e.graphQL(h(), {}, S).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: a } = t;
                         return e.graphQL(v(), { bookmark_collection_id: a });
                     },
                     editBookmarkFolder(t) {
-                        const { bookmarkFolderId: a, name: o } = t;
-                        return e.graphQL(T(), { bookmark_collection_id: a, name: o });
+                        const { bookmarkFolderId: a, name: n } = t;
+                        return e.graphQL(T(), { bookmark_collection_id: a, name: n });
                     },
                     removeTweetFromBookmarkFolder(t) {
-                        const { bookmarkFolderId: a, tweetId: o } = t;
-                        return e.graphQL(I(), { bookmark_collection_id: a, tweet_id: o });
+                        const { bookmarkFolderId: a, tweetId: n } = t;
+                        return e.graphQL(F(), { bookmark_collection_id: a, tweet_id: n });
                     },
-                    fetchBookmarksTimeline: ({ count: a, cursor: o }) => e.graphQL(m(), { count: a, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || x.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: o }) => e.graphQL(p(), { bookmark_collection_id: a, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, L).then((e) => e?.bookmark_collection_timeline?.timeline || x.cY),
+                    fetchBookmarksTimeline: ({ count: a, cursor: n }) => e.graphQL(u(), { count: a, cursor: n, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || I.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: n }) => e.graphQL(p(), { bookmark_collection_id: a, cursor: n, includePromotedContent: !0, ...(0, i.d)(t) }, A).then((e) => e?.bookmark_collection_timeline?.timeline || I.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(l(), t, C).then((e) => {
+                            ? e.graphQL(s(), t, x).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       a = "User" === t?.__typename ? t : void 0,
                                       r = a?.bookmark_collections_slice;
                                   if (r) {
-                                      const { entities: e, result: t } = (0, o.Fv)(r.items, [_]);
+                                      const { entities: e, result: t } = (0, n.Fv)(r.items, [_]);
                                       return { entities: e, result: t, slice_info: r.slice_info };
                                   }
-                                  return F;
+                                  return L;
                               })
-                            : Promise.resolve(F),
+                            : Promise.resolve(L),
                 });
         },
         6157: (e, t, a) => {
             "use strict";
             a.d(t, { Z: () => Q });
-            var o = a(468811),
-                r = a.n(o),
-                n = a(163889),
+            var n = a(468811),
+                r = a.n(n),
+                o = a(163889),
                 i = a(155074),
                 _ = a.n(i),
-                s = a(491156),
-                l = a.n(s),
+                l = a(491156),
+                s = a.n(l),
                 d = a(645513),
                 p = a.n(d),
                 c = a(470969),
-                m = a.n(c),
-                b = a(374709),
-                u = a.n(b),
-                w = a(709401),
-                g = a.n(w),
-                h = a(965508),
-                k = a.n(h),
+                u = a.n(c),
+                m = a(374709),
+                b = a.n(m),
+                g = a(709401),
+                w = a.n(g),
+                k = a(965508),
+                h = a.n(k),
                 f = a(416024),
                 v = a.n(f),
                 y = a(716442),
                 T = a.n(y),
                 q = a(985289),
-                I = a.n(q),
-                x = a(524816),
-                F = a.n(x),
+                F = a.n(q),
+                I = a(524816),
+                L = a.n(I),
                 S = a(917665),
-                C = a.n(S),
-                L = a(587068),
-                A = a.n(L);
+                x = a.n(S),
+                A = a(587068),
+                C = a.n(A);
             function Q({ apiClient: e }) {
                 return {
-                    clearConversations: (t, a) => e.graphQL(_(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, n.ZP)("GraphQL clear grok conversations failed."), e)),
-                    setPreferences: ({ grokMode: t, grokModelOptionId: a }) => e.graphQL(A(), { grokMode: t, grokModelOptionId: a }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, n.ZP)("GraphQL set grok preferences failed."), e)),
+                    clearConversations: (t, a) => e.graphQL(_(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, o.ZP)("GraphQL clear grok conversations failed."), e)),
+                    setPreferences: ({ grokMode: t, grokModelOptionId: a }) => e.graphQL(C(), { grokMode: t, grokModelOptionId: a }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(p(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(I(), { grok_share_id: t }).then((e) => e),
-                    fetchGrokHome: () => e.graphQL(u(), {}).then((e) => e),
-                    fetchHistory: ({ cursor: t }) => e.graphQL(m(), { cursor: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(F(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokHome: () => e.graphQL(b(), {}).then((e) => e),
+                    fetchHistory: ({ cursor: t }) => e.graphQL(u(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
-                    fetchMediaHistory: ({ cursor: t }) => e.graphQL(g(), { cursor: t }).then((e) => e),
+                    fetchMediaHistory: ({ cursor: t }) => e.graphQL(w(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(T(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
-                    deleteMessage: ({ chat_item_id: t, conversation_id: a }) => e.graphQL(l(), { conversation_id: a, chat_item_id: t }).then((e) => e),
-                    logUserEventGrok: ({ action_type: t, group_id: a, object_id: o }) => e.graphQL(C(), { group_id: a, object_id: o, action_type: t }).then((e) => e),
-                    grokPinConversation: ({ conversationId: t }) => e.graphQL(k(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(F(), { conversationId: t }).then((e) => e),
+                    deleteMessage: ({ chat_item_id: t, conversation_id: a }) => e.graphQL(s(), { conversation_id: a, chat_item_id: t }).then((e) => e),
+                    logUserEventGrok: ({ action_type: t, group_id: a, object_id: n }) => e.graphQL(x(), { group_id: a, object_id: n, action_type: t }).then((e) => e),
+                    grokPinConversation: ({ conversationId: t }) => e.graphQL(h(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(L(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: a }) => {
-                        const o = new FormData();
-                        return o.append("image", a), e.postForm("grok/attachment", o, {}, { "x-xai-request-id": r().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
+                        const n = new FormData();
+                        return n.append("image", a), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": r().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
                     },
                 };
             }
         },
         449633: (e) => {
-            e.exports = function (e, t, a, o) {
-                function r(e, t, a, o) {
-                    return e < 20 ? (t & a) | (~t & o) : e < 40 ? t ^ a ^ o : e < 60 ? (t & a) | (t & o) | (a & o) : t ^ a ^ o;
+            e.exports = function (e, t, a, n) {
+                function r(e, t, a, n) {
+                    return e < 20 ? (t & a) | (~t & n) : e < 40 ? t ^ a ^ n : e < 60 ? (t & a) | (t & n) | (a & n) : t ^ a ^ n;
                 }
-                function n(e) {
+                function o(e) {
                     return e < 20 ? 1518500249 : e < 40 ? 1859775393 : e < 60 ? -1894007588 : -899497514;
                 }
                 function i(e, t) {
@@ -278,36 +372,36 @@
                 function _(e, t) {
                     return (e << t) | (e >>> (32 - t));
                 }
-                function s(e, t) {
+                function l(e, t) {
                     (e[t >> 5] |= 128 << (24 - (t % 32))), (e[15 + (((t + 64) >> 9) << 4)] = t);
-                    for (var a = [80], o = 1732584193, s = -271733879, l = -1732584194, d = 271733878, p = -1009589776, c = 0; c < e.length; c += 16) {
-                        for (var m = o, b = s, u = l, w = d, g = p, h = 0; h < 80; h++) {
-                            a[h] = h < 16 ? e[c + h] : _(a[h - 3] ^ a[h - 8] ^ a[h - 14] ^ a[h - 16], 1);
-                            var k = i(i(_(o, 5), r(h, s, l, d)), i(i(p, a[h]), n(h)));
-                            (p = d), (d = l), (l = _(s, 30)), (s = o), (o = k);
+                    for (var a = [80], n = 1732584193, l = -271733879, s = -1732584194, d = 271733878, p = -1009589776, c = 0; c < e.length; c += 16) {
+                        for (var u = n, m = l, b = s, g = d, w = p, k = 0; k < 80; k++) {
+                            a[k] = k < 16 ? e[c + k] : _(a[k - 3] ^ a[k - 8] ^ a[k - 14] ^ a[k - 16], 1);
+                            var h = i(i(_(n, 5), r(k, l, s, d)), i(i(p, a[k]), o(k)));
+                            (p = d), (d = s), (s = _(l, 30)), (l = n), (n = h);
                         }
-                        (o = i(o, m)), (s = i(s, b)), (l = i(l, u)), (d = i(d, w)), (p = i(p, g));
+                        (n = i(n, u)), (l = i(l, m)), (s = i(s, b)), (d = i(d, g)), (p = i(p, w));
                     }
-                    return [o, s, l, d, p];
+                    return [n, l, s, d, p];
                 }
-                function l(e) {
-                    for (var t = [], a = (1 << o) - 1, r = 0; r < e.length * o; r += o) t[r >> 5] |= (e.charCodeAt(r / 8) & a) << (32 - o - (r % 32));
+                function s(e) {
+                    for (var t = [], a = (1 << n) - 1, r = 0; r < e.length * n; r += n) t[r >> 5] |= (e.charCodeAt(r / 8) & a) << (32 - n - (r % 32));
                     return t;
                 }
                 return (
                     a || (a = "="),
-                    o || (o = 8),
+                    n || (n = 8),
                     (function (e, t) {
                         return (function (e) {
-                            for (var t = "", o = 0; o < 4 * e.length; o += 3) for (var r = (((e[o >> 2] >> (8 * (3 - (o % 4)))) & 255) << 16) | (((e[(o + 1) >> 2] >> (8 * (3 - ((o + 1) % 4)))) & 255) << 8) | ((e[(o + 2) >> 2] >> (8 * (3 - ((o + 2) % 4)))) & 255), n = 0; n < 4; n++) 8 * o + 6 * n > 32 * e.length ? (t += a) : (t += "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt((r >> (6 * (3 - n))) & 63));
+                            for (var t = "", n = 0; n < 4 * e.length; n += 3) for (var r = (((e[n >> 2] >> (8 * (3 - (n % 4)))) & 255) << 16) | (((e[(n + 1) >> 2] >> (8 * (3 - ((n + 1) % 4)))) & 255) << 8) | ((e[(n + 2) >> 2] >> (8 * (3 - ((n + 2) % 4)))) & 255), o = 0; o < 4; o++) 8 * n + 6 * o > 32 * e.length ? (t += a) : (t += "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt((r >> (6 * (3 - o))) & 63));
                             return t;
                         })(
                             (function (e, t) {
-                                var a = l(e);
-                                a.length > 16 && (a = s(a, e.length * o));
-                                for (var r = [16], n = [16], i = 0; i < 16; i++) (r[i] = 909522486 ^ a[i]), (n[i] = 1549556828 ^ a[i]);
-                                var _ = s(r.concat(l(t)), 512 + t.length * o);
-                                return s(n.concat(_), 672);
+                                var a = s(e);
+                                a.length > 16 && (a = l(a, e.length * n));
+                                for (var r = [16], o = [16], i = 0; i < 16; i++) (r[i] = 909522486 ^ a[i]), (o[i] = 1549556828 ^ a[i]);
+                                var _ = l(r.concat(s(t)), 512 + t.length * n);
+                                return l(o.concat(_), 672);
                             })(e, t),
                         );
                     })(e, t)
@@ -317,18 +411,18 @@
         900664: (e, t, a) => {
             "use strict";
             a.d(t, { Z: () => r });
-            var o = (e) => {
+            var n = (e) => {
                 "vibrate" in window.navigator && window.navigator.vibrate(e);
             };
             const r = {
                 cancel() {
-                    o(0);
+                    n(0);
                 },
                 vibrate(e) {
-                    void 0 === e && (e = 400), o(e);
+                    void 0 === e && (e = 400), n(e);
                 },
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.f235d9ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.b0bb9aea.js.map

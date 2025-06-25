@@ -467,7 +467,7 @@
                 );
             }
             const D = m.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", gap: e.spaces.space4 }, article: { flex: 1 }, articleHeaderImg: { minHeight: 250 } }));
-            function K() {
+            function B() {
                 const e = (0, g.Z)({ limit: 19 }),
                     t = (0, d.Z)(),
                     { isCompactLayout: a } = (0, h.Z)();
@@ -495,14 +495,14 @@
                         ? n.createElement(v, { articles: e })
                         : n.createElement(
                               c.Z,
-                              { style: B.container },
+                              { style: K.container },
                               l &&
                                   n.createElement(
                                       c.Z,
-                                      { style: B.highlightedArticle },
+                                      { style: K.highlightedArticle },
                                       n.createElement(u.Z, {
                                           article: l,
-                                          headerImgContainerStyle: B.highlightedArticleHeaderImg,
+                                          headerImgContainerStyle: K.highlightedArticleHeaderImg,
                                           hoveredBgColor: "transparent",
                                           layout: "full",
                                           onClick: () => {
@@ -572,9 +572,9 @@
                           )
                     : null;
             }
-            const B = m.default.create((e) => ({ container: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space24, paddingBottom: e.spaces.space80, maxWidth: 1200 }, highlightedArticle: { width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both" }, highlightedArticleHeaderImg: { minHeight: 350 } }));
-            var P = a(305179);
-            const M = "News",
+            const K = m.default.create((e) => ({ container: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space24, paddingBottom: e.spaces.space80, maxWidth: 1200 }, highlightedArticle: { width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1, animationFillMode: "both" }, highlightedArticleHeaderImg: { minHeight: 350 } }));
+            var M = a(305179);
+            const P = "News",
                 H = "The latest realtime information.",
                 R = { width: 600, height: 315, url: "https://abs.twimg.com/grok-news/article-x-banner" },
                 W = { context: "NEWS" };
@@ -584,7 +584,7 @@
                     n.useEffect(() => {
                         (0, o.jW)("news-content-ready");
                     }, []),
-                    n.createElement(s.H, { errorConfig: W }, n.createElement(l.Z, { description: H, includeOpenGraphMeta: !1, title: M }), n.createElement(r.Z, { canonical: (0, i.ju)(window.location.href), description: H, image: R.url, imageH: R.height, imageW: R.width, title: M, type: "article" }), n.createElement(P.Z, { scribeNamespace: "news" }, n.createElement(K, null)))
+                    n.createElement(s.H, { errorConfig: W }, n.createElement(l.Z, { description: H, includeOpenGraphMeta: !1, title: P }), n.createElement(r.Z, { canonical: (0, i.ju)(window.location.href), description: H, image: R.url, imageH: R.height, imageW: R.width, title: P, type: "article" }), n.createElement(M.Z, { scribeNamespace: "news" }, n.createElement(B, null)))
                 );
             }
         },
@@ -612,8 +612,8 @@
             var b = a(477575),
                 _ = a(858496),
                 v = a(978086);
-            function k({ article: e, commentsStyle: t, containerStyle: a, headerImgContainerStyle: r, headerImgStyle: h, hideDefaultImg: y, hideImg: w, hideReactions: k, hideSummary: x, hoveredBgColor: E, infoContainerStyle: S, layout: T = "imageTop", onClick: I, reactionsContainerStyle: Z, routeToExploreNews: A, sentimentStyle: F, showSentiment: N, size: z = "normal", style: L, summaryNumLines: D, titleNumLines: K, titleStyle: B, useRowReactions: P }) {
-                const M = (0, o.Z)(),
+            function k({ article: e, commentsStyle: t, containerStyle: a, headerImgContainerStyle: r, headerImgStyle: h, hideDefaultImg: y, hideImg: w, hideReactions: k, hideSummary: x, hoveredBgColor: E, infoContainerStyle: S, layout: T = "imageTop", onClick: I, reactionsContainerStyle: Z, routeToExploreNews: A, sentimentStyle: F, showSentiment: N, size: z = "normal", style: L, summaryNumLines: D, titleNumLines: B, titleStyle: K, useRowReactions: M }) {
+                const P = (0, o.Z)(),
                     H = (0, c.I0)(),
                     { isCompactLayout: R } = (0, d.Z)(),
                     W = n.useMemo(() => {
@@ -641,14 +641,14 @@
                         I && I();
                     }, [I]),
                     $ = n.useCallback(() => {
-                        (0, u._$)(M, { articleId: e.id });
-                    }, [e, M]),
+                        (0, u._$)(P, { articleId: e.id });
+                    }, [e, P]),
                     J = j[T],
                     V = U[z],
                     Y = e.header_img_url || "",
                     q = !w && Y,
                     Q = A ? `/i/news/a/${e.id}` : `/i/news/article/${e.id}`,
-                    X = n.createElement(i.Z, { style: [C.infoContainer, R ? C.compactInfoContainer : void 0, S] }, n.createElement(v.Z, { numberOfLines: K, text: e.title, textStyle: [V.title, B] }), "imageBelowTitle" === T && q && n.createElement(f, { imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y }), n.createElement(b.Z, { isLive: !!e.live_article, textStyle: V.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !x && n.createElement(p.Z, { numberOfLines: D, sources: [], style: [C.summary, V.summary], text: e.summary }), !k && n.createElement(i.Z, { style: [C.reactionsContainer, P ? C.rowReactionsContainer : void 0, Z] }, e.sentiment && N && n.createElement(_.Z, { articleId: e.id, sentiment: e.sentiment, showPercentages: !0, style: F }), n.createElement(g.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: W, style: [V.comments, t], textStyle: C.commentsText, variant: "outline" })));
+                    X = n.createElement(i.Z, { style: [C.infoContainer, R ? C.compactInfoContainer : void 0, S] }, n.createElement(v.Z, { numberOfLines: B, text: e.title, textStyle: [V.title, K] }), "imageBelowTitle" === T && q && n.createElement(f, { imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y }), n.createElement(b.Z, { isLive: !!e.live_article, textStyle: V.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !x && n.createElement(p.Z, { numberOfLines: D, sources: [], style: [C.summary, V.summary], text: e.summary }), !k && n.createElement(i.Z, { style: [C.reactionsContainer, M ? C.rowReactionsContainer : void 0, Z] }, e.sentiment && N && n.createElement(_.Z, { articleId: e.id, sentiment: e.sentiment, showPercentages: !0, style: F }), n.createElement(g.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: W, style: [V.comments, t], textStyle: C.commentsText, variant: "outline" })));
                 return n.createElement(l.Z, { link: Q, onClick: G, style: [C.interactiveContainer, a], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(i.Z, { style: [C.container, J.container, V.container, e ? C.hoveredContainer : void 0, e && E ? { backgroundColor: E } : void 0, L] }, n.createElement(s.D, { id: "news_article_card", onFullyVisible: $, position: "top", testID: "news_article_card" }), X, q && "imageBelowTitle" !== T && n.createElement(f, { hideDefault: y, hovered: e, imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y })));
             }
             const C = r.default.create((e) => ({ interactiveContainer: { display: "flex", width: "100%" }, container: { flex: 1, display: "flex", width: "100%", gap: e.spaces.space16, backgroundColor: "transparent", borderRadius: e.borderRadii.large, transition: "all 0.2s ease", padding: e.spaces.space12 }, hoveredContainer: { backgroundColor: "light" === e.paletteName ? e.colors.gray0 : "transparent", cursor: "pointer" }, largeContainer: { gap: e.spaces.space36 }, fullContainer: { flexDirection: "row" }, imageLeftContainer: { flexDirection: "row-reverse" }, imageTopContainer: { flexDirection: "column-reverse" }, imageBelowTitleContainer: { flexDirection: "column" }, fullHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, imageLeftHeaderImgContainer: { flex: 1, width: "100%", height: "100%" }, imageTopHeaderImgContainer: { flex: 1, width: "100%", minHeight: 200 }, imageBelowTitleHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, infoContainer: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space8 }, compactInfoContainer: { padding: e.spaces.space8 }, summary: { color: e.colors.gray900 }, largeSummary: {}, headerImgContainer: { flex: 1 }, headerImgInteractiveContainer: { width: "100%", flex: 1 }, reactionsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, rowReactionsContainer: { flexDirection: "row" }, largeTitle: { fontSize: e.fontSizes.title1, lineHeight: 40 }, largeLastUpdated: { fontSize: e.fontSizes.subtext1 }, largeComments: { fontSize: e.fontSizes.subtext2 }, commentsText: { color: e.colors.gray900 } }));
@@ -758,6 +758,19 @@
                 );
             };
         },
+        452693: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                l = a(783427),
+                r = a(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
         662678: (e, t, a) => {
             a.d(t, { G: () => i, Z: () => n });
             a(136728);
@@ -802,4 +815,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.bfd46d9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.3d5f314a.js.map

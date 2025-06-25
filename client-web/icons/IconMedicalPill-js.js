@@ -17,4 +17,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons/IconMedicalPill-js.f6f004fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/icons/IconMedicalPill-js.f99a3f8a.js.map

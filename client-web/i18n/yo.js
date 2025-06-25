@@ -1365,7 +1365,12 @@
                 a("b7cb4fab", "Túmọ̀ nípasẹ̀"),
                 a("e0bffbf8", "About automatic translation"),
                 a("e839db3a", "Pa á tì"),
-                a("a15585b4", "Language Settings"),
+                a("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                a("c60b9e5c", "Changes will take effect for newly loaded content."),
+                a("c6ad999b", "languages settings"),
+                a("hba0547a", "Unable to update settings. Please try again later."),
                 a("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1921,11 +1926,11 @@
                 }),
                 a("ad89b831", function (e) {
                     return "active" + e.ttc_rich_text_composer;
-                }),
-                a("jcd5ee8a", "Edit block"),
+                });
+            a("jcd5ee8a", "Edit block"),
                 a("a8f09fb8", "Delete block"),
-                a("i89195ea", "Divider");
-            a("da8ac57c", "Edit Caption"),
+                a("i89195ea", "Divider"),
+                a("da8ac57c", "Edit Caption"),
                 a("a8fdd09c", "Publish Article"),
                 a("d8047cc8", "Tẹ̀ ẹ́ jáde"),
                 a("ff7ddca2", "Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
@@ -2973,15 +2978,15 @@
                 a("j43f99be", "Relevancy"),
                 a("ad6e11ac", "Sort replies by"),
                 a("b2311b70", "Èyí kò sí nílẹ̀ fún ọ"),
-                a("j88f27d8", "Àwọn ènìyàn tó ṣe kókó"),
-                a("i31dcd22", "Àpilẹ̀kọ"),
+                a("j88f27d8", "Àwọn ènìyàn tó ṣe kókó");
+            a("i31dcd22", "Àpilẹ̀kọ"),
                 a("e3de2f6f", function (e) {
                     return e.entity + " was added to your Bookmarks";
                 }),
                 a("e64de8a9", function (e) {
                     return e.entity + " was removed from your Bookmarks";
-                });
-            a("d6d9aab6", "Ṣafikún Búkúmaàkì"),
+                }),
+                a("d6d9aab6", "Ṣafikún Búkúmaàkì"),
                 a("bb89cf46", "Yọ Búkúmaàkì kúrò"),
                 a("a739d4ba", "Ṣàfikún sí Fódà Bukumákì"),
                 a("d5270434", "Jáde"),
@@ -3903,11 +3908,11 @@
                 a("c3b5b829", function (e) {
                     return e.count + " request" + i(e.count, "", "s");
                 }),
-                a("fe7a1910", "Send invites"),
-                a("ic3c757e", "Search for users"),
+                a("fe7a1910", "Send invites");
+            a("ic3c757e", "Search for users"),
                 a("cd133486", "Pè"),
-                a("f2333850", "Share with people outside of X");
-            a("cddb8097", "Learn more"),
+                a("f2333850", "Share with people outside of X"),
+                a("cddb8097", "Learn more"),
                 a("f77997b0", "Ajọgbàlejò"),
                 a("i48f4ed8", "Ẹrọ gbohùngbohùn"),
                 a("a77c8e02", "Olùgbọ́"),
@@ -4927,11 +4932,11 @@
                 a("c8410542", "The number of times your video was viewed."),
                 a("a532072a", "Viewers"),
                 a("d9508ab0", "views"),
-                a("d9f9dec0", "View Space"),
-                a("h0c1f37a", "View Space Analytics"),
+                a("d9f9dec0", "View Space");
+            a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
-                a("if2909ba", "Watch Time");
-            a("i0e5bf4c", "Your videos"),
+                a("if2909ba", "Watch Time"),
+                a("i0e5bf4c", "Your videos"),
                 a("ed99baea", "Early Beta Access"),
                 a("gf898b70", "Advanced Search"),
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
@@ -5881,13 +5886,13 @@
                 a("b92a21d9", function (e) {
                     return "Kò si àbájáde mọ́ fún " + e.query;
                 }),
-                a("f191a2ba", " wò "),
-                a("a068008a", "Folders aren`t loading right now"),
+                a("f191a2ba", " wò ");
+            a("a068008a", "Folders aren`t loading right now"),
                 a("f075b0e8", "Ṣàtúnse Fódà"),
-                a("beba2a0e", "Ṣẹe ìdásílẹ̀ Fódà Búkúmaakì tuntun kan");
-            a("e41c9b4f", function (e) {
-                return "Fipamọ̀ sí " + e.bookmarkFolderName;
-            }),
+                a("beba2a0e", "Ṣẹe ìdásílẹ̀ Fódà Búkúmaakì tuntun kan"),
+                a("e41c9b4f", function (e) {
+                    return "Fipamọ̀ sí " + e.bookmarkFolderName;
+                }),
                 a("h18f86a4", "Pa Fódà rẹ́"),
                 a("f4ea967a", "A ti pa fódà rẹ́"),
                 a("b670aa62", "Orúkọ Fódà"),
@@ -6887,13 +6892,13 @@
                 a("eef1ae76", "Currently connected"),
                 a("a915f5c1", function (e) {
                     return e.ats + " connected";
-                }),
-                a("af7286b7", function (e) {
-                    return e.percentage + "% off a year of Premium";
-                }),
+                });
+            a("af7286b7", function (e) {
+                return e.percentage + "% off a year of Premium";
+            }),
                 a("c924ad84", "Keep videos playing"),
-                a("de750a3c", "Enjoy them even when your phone is locked");
-            a("he5e87c4", "Boost your replies"),
+                a("de750a3c", "Enjoy them even when your phone is locked"),
+                a("he5e87c4", "Boost your replies"),
                 a("g64a60ba", "Get a small prioritization when you reply to posts"),
                 a("a7ee832a", "Fix typos and mistakes, up to 60 minutes"),
                 a("fdd77a34", "Create longer posts"),
@@ -7390,6 +7395,11 @@
                 a("bd05add8", "Not a Bot"),
                 a("d94f12b6", "Gbìyànjú láti wá àwọn ìfitónilétí, àdáni, ati bẹ́ẹ̀ bẹ́ẹ̀ lọ."),
                 a("ba8f6f82", "Ṣàwárí àwọn Ààtò"),
+                a("ibf92e4a", "Payment Successful"),
+                a("bdf0fb06", "Your subscription has been activated."),
+                a("ddfd6718", "Payment Failed"),
+                a("d42fa852", "There was an issue processing your payment. Please try again."),
+                a("g055a9ce", "Open 𝕏 App"),
                 a("g931a6e5", function (e) {
                     return "Ò ń tẹ̀lé " + e.topic;
                 }),
@@ -7864,17 +7874,7 @@
                 a("a76d58ba", "Ads Analytics"),
                 a("eccd0e1a", "Organization Analytics"),
                 a("deea1708", "Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
-                a("gf67aae4", "Upgrade to Full Access"),
-                a("h75e3618", "Include organization"),
-                a("h24a8862", "About this checkbox"),
-                a("c29e3a88", "Select affiliates"),
-                a("j8318d57", function (e) {
-                    return e.number + " affiliate" + i(e.number, "", "s");
-                }),
-                a("bf809ec0", "Select Affiliates"),
-                a("b719e224", "Kò sí àbájáde"),
-                a("c9938100", "Àwọn àbájáde nnkan wíwá");
+                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7913,7 +7913,17 @@
                     s(e, n)
                 );
             }
-            a("d1a35ec6", "Ṣe àfikún àwọn àkántì"),
+            a("gf67aae4", "Upgrade to Full Access"),
+                a("h75e3618", "Include organization"),
+                a("h24a8862", "About this checkbox"),
+                a("c29e3a88", "Select affiliates"),
+                a("j8318d57", function (e) {
+                    return e.number + " affiliate" + i(e.number, "", "s");
+                }),
+                a("bf809ec0", "Select Affiliates"),
+                a("b719e224", "Kò sí àbájáde"),
+                a("c9938100", "Àwọn àbájáde nnkan wíwá"),
+                a("d1a35ec6", "Ṣe àfikún àwọn àkántì"),
                 a("b437adda", "Upgrade to paid"),
                 a("f1f6c88b", function (e) {
                     return "Accounts (" + e.count + ")";
@@ -7967,7 +7977,6 @@
                 a("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 a("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 a("ce102a20", "Redirecting to Stripe"),
-                a("ddfd6718", "Payment Failed"),
                 a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 a("a62359e6", "Verified Organization Settings"),
                 a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
@@ -8903,10 +8912,10 @@
                 a("j0c6772a", "Visit website"),
                 a("f73003aa", "Video will play after ad"),
                 a("b3112b8a", "Fò ó"),
-                a("h6333ad0", "Skip Ad"),
-                a("c59da417", function (e) {
-                    return "Skip Ad in " + e.seconds;
-                }),
+                a("h6333ad0", "Skip Ad");
+            a("c59da417", function (e) {
+                return "Skip Ad in " + e.seconds;
+            }),
                 a("c3c147cf", function (e) {
                     return "Skip " + e.seconds;
                 }),
@@ -8916,8 +8925,8 @@
                     return "Auto (" + e.quality + ")";
                 }),
                 a("a7bf9962", "Download video"),
-                a("ccc97152", "Playback speed");
-            a("h531ade0", "Video quality"),
+                a("ccc97152", "Playback speed"),
+                a("h531ade0", "Video quality"),
                 a("e8b5757c", "0.25x"),
                 a("e7e954de", "0.5x"),
                 a("g07ffe66", "0.75x"),
@@ -10140,9 +10149,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13342,4 +13351,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.19fcd2ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.7cd6f50a.js.map

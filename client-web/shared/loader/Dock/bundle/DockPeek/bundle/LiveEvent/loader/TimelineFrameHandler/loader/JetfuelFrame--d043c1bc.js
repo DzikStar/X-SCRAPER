@@ -95,30 +95,30 @@
                 g = a(390387),
                 b = a(929378),
                 y = a(163889),
-                k = a(725516);
-            const v = Object.freeze({ light: "default", dark: "dim", darker: "dark", business: "business" }),
+                v = a(725516);
+            const k = Object.freeze({ light: "default", dark: "dim", darker: "dark", business: "business" }),
                 w = u().ic6aa5f4,
                 E = 327,
                 S = 468,
-                C = 500,
-                Z = 523,
-                I = l.default.create((e) => ({ container: { position: "relative", alignItems: "center" }, spinner: { alignItems: "center", position: "absolute", start: 0, end: 0, justifyContent: "center" }, label: { color: e.colors.text } })),
+                I = 500,
+                C = 523,
+                Z = l.default.create((e) => ({ container: { position: "relative", alignItems: "center" }, spinner: { alignItems: "center", position: "absolute", start: 0, end: 0, justifyContent: "center" }, label: { color: e.colors.text } })),
                 _ = ({ p: e }) => {
                     const t = e.str("publicKey") ?? e.str("webKey"),
                         { featureSwitches: a } = s.useContext(h.rC),
-                        d = (0, k.z)(),
+                        d = (0, v.z)(),
                         u = (0, f.v9)(g.OW),
                         _ = (0, i.useLocation)(),
                         P = e.str("dataExchangeToken") ?? "",
                         R = e.str("name") ?? "arkose_token",
                         x = t ? a.getStringValue(t) : "",
                         M = s.useMemo(() => p.ZP.isWebView(), []),
-                        T = M ? (window.matchMedia("(prefers-color-scheme: dark)") ? "dark" : "default") : v[l.default.theme.paletteName],
-                        j = s.useMemo(() => M || window.innerWidth < S, [M]),
-                        [O, D] = s.useState(j ? C : Z),
-                        [F, L] = s.useState(j ? E : S),
+                        T = M ? (window.matchMedia("(prefers-color-scheme: dark)") ? "dark" : "default") : k[l.default.theme.paletteName],
+                        O = s.useMemo(() => M || window.innerWidth < S, [M]),
+                        [j, D] = s.useState(O ? I : C),
+                        [F, L] = s.useState(O ? E : S),
                         [H, N] = s.useState(b.t.passive),
-                        A = s.useMemo(() => (j ? Math.min((window.innerWidth - 32) / E, (window.innerHeight - 32) / C) : 1), [j]),
+                        A = s.useMemo(() => (O ? Math.min((window.innerWidth - 32) / E, (window.innerHeight - 32) / I) : 1), [O]),
                         z = _.query?.guestId,
                         G = s.useMemo(() => (M && "string" == typeof z ? z : M ? "" : u || ""), [M, z, u]),
                         U = s.useCallback(() => {
@@ -174,7 +174,7 @@
                         s.useEffect(() => {
                             q && !Q.current && ((Q.current = !0), B());
                         }, [q, B]),
-                        s.createElement(n.Z, { style: I.container }, s.createElement(n.Z, { style: [I.spinner, { height: O }] }, "loading" === V || "loaded" === V ? s.createElement(c.Z, null) : "complete" === V ? s.createElement(o.Z, { style: I.label }, w) : null), s.createElement("iframe", { height: O, id: "arkoseFrame", onLoad: U, src: [`https://iframe.arkoselabs.com/${x}/index.html?theme=${T}`, P && `&data=${P}`].filter(Boolean).join(""), style: { MozTransform: `scale(${A})`, OTransform: `scale(${A})`, WebkitTransform: `scale(${A})`, borderWidth: 0, MozTransformOrigin: "50% 0", OTransformOrigin: "50% 0", WebkitTransformOrigin: "50% 0", alignSelf: "center" }, title: "arkoseFrame", width: F }))
+                        s.createElement(n.Z, { style: Z.container }, s.createElement(n.Z, { style: [Z.spinner, { height: j }] }, "loading" === V || "loaded" === V ? s.createElement(c.Z, null) : "complete" === V ? s.createElement(o.Z, { style: Z.label }, w) : null), s.createElement("iframe", { height: j, id: "arkoseFrame", onLoad: U, src: [`https://iframe.arkoselabs.com/${x}/index.html?theme=${T}`, P && `&data=${P}`].filter(Boolean).join(""), style: { MozTransform: `scale(${A})`, OTransform: `scale(${A})`, WebkitTransform: `scale(${A})`, borderWidth: 0, MozTransformOrigin: "50% 0", OTransformOrigin: "50% 0", WebkitTransformOrigin: "50% 0", alignSelf: "center" }, title: "arkoseFrame", width: F }))
                     );
                 };
         },
@@ -197,8 +197,8 @@
                 g = a(725102),
                 b = a(325686),
                 y = a(731708),
-                k = a(127957),
-                v = a(125363);
+                v = a(127957),
+                k = a(125363);
             const w = { base: { display: "flex", flexShrink: 1, flexBasis: "auto", width: "100%", height: "100%", overflow: "hidden" } },
                 E = ({ p: e }) => {
                     const t = e.str("broadcastId"),
@@ -206,16 +206,16 @@
                         r = e.bool("muted") ?? !0,
                         n = e.bool("minimal") ?? !1,
                         o = e.bool("enablePip") ?? !1,
-                        i = (0, v.I0)(),
+                        i = (0, k.I0)(),
                         l = s.useMemo(() => i((e, t, { api: a }) => a.getHttpClient()), [i]);
                     if (!t) return s.createElement(y.ZP, null, "Broadcast not provided");
                     const c = { type: "broadcast", id: t };
-                    return s.createElement(b.Z, { style: [w.base].filter(Boolean) }, s.createElement(k.Z, { autoplay: a, config: "auto", controls: n, displayOptions: { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 }, enablePip: o, httpClient: l, initiallyMuted: r, precache: !0, size: "fill", twitterAuthedHttpClient: l, videoId: c }));
+                    return s.createElement(b.Z, { style: [w.base].filter(Boolean) }, s.createElement(v.Z, { autoplay: a, config: "auto", controls: n, displayOptions: { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 }, enablePip: o, httpClient: l, initiallyMuted: r, precache: !0, size: "fill", twitterAuthedHttpClient: l, videoId: c }));
                 };
             var S = a(45843),
-                C = a(738584),
-                Z = a(872415),
-                I = a(614425);
+                I = a(738584),
+                C = a(872415),
+                Z = a(614425);
             const _ = { base: { display: "flex", flexShrink: 1, flexBasis: "auto", width: "100%", height: "100%", overflow: "hidden", maxWidth: "100vw" }, aspectRatioStyle: (e) => ({ aspectRatio: `${e ?? "auto"}` }), posterImage: { height: "100%", width: "100%", zIndex: -1, position: "absolute" } },
                 P = ({ p: e }) => {
                     const t = e.url("src"),
@@ -227,48 +227,72 @@
                         d = e.int("duration"),
                         u = e.url("poster"),
                         m = e.str("postId"),
-                        p = e.bool("autoplay") ?? !0,
+                        p = e.enum("autoplay") ?? 0,
                         h = e.bool("muted") ?? !0,
                         f = e.bool("loop") ?? !1,
                         g = e.bool("showControls") ?? !1,
-                        k = (0, v.I0)(),
-                        { featureSwitches: w } = (0, c.QZ)(),
-                        E = s.useMemo(() => k((e, t, { api: a }) => a.getHttpClient()), [k]),
-                        { isFocused: P, isMuted: R, setCurrentTimeMs: x, setDurationMs: M, setTracksFinished: T } = (0, r.wR)(),
-                        j = s.useRef(),
-                        O = s.useRef();
+                        [v, w] = s.useState(!1),
+                        E = s.useRef(null),
+                        P = (0, k.I0)(),
+                        { featureSwitches: R } = (0, c.QZ)(),
+                        x = s.useMemo(() => P((e, t, { api: a }) => a.getHttpClient()), [P]),
+                        { isFocused: M, isMuted: T, setCurrentTimeMs: O, setDurationMs: j, setTracksFinished: D } = (0, r.wR)(),
+                        F = s.useRef(),
+                        L = s.useRef();
                     s.useEffect(() => {
-                        p && j.current?.playPreview();
+                        2 === p && F.current?.playPreview();
                     }, [p]),
                         s.useEffect(() => {
-                            P && j.current?.play();
-                        }, [P]);
-                    const D = s.useRef(!1);
+                            M && F.current?.play();
+                        }, [M]),
+                        s.useEffect(() => {
+                            1 === p && (v ? F.current?.pause() : F.current?.playPreview());
+                        }, [v, p]);
+                    const H = s.useRef(!1);
                     s.useEffect(() => {
-                        const e = j.current,
-                            t = O.current;
-                        t && e && (D.current || R ? R !== t.isMuted && (R ? ((D.current = !0), e.mute()) : e.unmute()) : (D.current = !0));
-                    }, [R]);
-                    const F = s.useCallback(
+                        const e = F.current,
+                            t = L.current;
+                        t && e && (H.current || T ? T !== t.isMuted && (T ? ((H.current = !0), e.mute()) : e.unmute()) : (H.current = !0));
+                    }, [T]),
+                        s.useEffect(() => {
+                            if (1 === p) {
+                                const e = E.current,
+                                    t = new IntersectionObserver(
+                                        (e) => {
+                                            e.forEach((e) => {
+                                                F.current && (e.isIntersecting ? w(!1) : e.isIntersecting || w(!0));
+                                            });
+                                        },
+                                        { root: null, threshold: 0.5 },
+                                    );
+                                return (
+                                    e && t.observe(e),
+                                    () => {
+                                        e && t.unobserve(e);
+                                    }
+                                );
+                            }
+                        }, [p]);
+                    const N = s.useCallback(
                             (e) => {
-                                (j.current = e), P || e.pause();
+                                (F.current = e), M || e.pause();
                             },
-                            [P],
+                            [M],
                         ),
-                        L = s.useCallback(
+                        A = s.useCallback(
                             (e) => {
-                                O.current = e;
+                                L.current = e;
                                 const t = e.tracks?.[0]?.currentTimeMs,
                                     a = e.tracks?.[0]?.durationMs;
-                                T?.(e.tracksFinished), x?.(t), M?.(a);
+                                D?.(e.tracksFinished), O?.(t), j?.(a);
                             },
-                            [x, M, T],
+                            [O, j, D],
                         );
                     return t
                         ? s.createElement(
                               b.Z,
-                              { style: [_.base, i ? _.aspectRatioStyle(n ?? 1) : null, l ? _.aspectRatioStyle(o ?? 1) : null].filter(Boolean) },
-                              s.createElement(C.Z, { "aria-label": a ?? "video", autoplay: p, basePlayerClass: I.Y7, configType: "static", contentId: m ?? "", contentType: "media_entity", displayOptions: { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 }, durationMs: d ?? 0, enableVideoPlayerCaptionRendering: !0, featureProvider: w, httpClient: E, initiallyMuted: h, loop: f, onApiReady: F, onStateUpdate: L, playbackSessionId: m ?? "", poster: u ?? "", precache: !0, size: "fill", twitterAuthedHttpClient: E, variants: [{ src: t, type: "application/x-mpegURL" }] }, ({ containerRef: e, guestsState: t, playerApi: a, playerState: r }) => (g ? s.createElement(Z.Z, { containerRef: e, enablePiP: !0, guestsState: t, playerApi: a, playerState: r, useKeyboardShortcuts: !0 }) : null)),
+                              { ref: E, style: [_.base, i ? _.aspectRatioStyle(n ?? 1) : null, l ? _.aspectRatioStyle(o ?? 1) : null].filter(Boolean) },
+                              s.createElement(I.Z, { "aria-label": a ?? "video", autoplay: 2 === p, basePlayerClass: Z.Y7, configType: "static", contentId: m ?? "", contentType: "media_entity", displayOptions: { objectFitVideo: "cover", hideLeftBadges: !0, hidePosterImage: !0 }, durationMs: d ?? 0, enableVideoPlayerCaptionRendering: !0, featureProvider: R, httpClient: x, initiallyMuted: h, loop: f, onApiReady: N, onStateUpdate: A, playbackSessionId: m ?? "", poster: u ?? "", precache: !0, size: "fill", twitterAuthedHttpClient: x, variants: [{ src: t, type: "application/x-mpegURL" }] }, ({ containerRef: e, guestsState: t, playerApi: a, playerState: r }) => (g ? s.createElement(C.Z, { containerRef: e, enablePiP: !0, guestsState: t, playerApi: a, playerState: r, useKeyboardShortcuts: !0 }) : null)),
                               u && s.createElement(S.Z, { source: u, style: _.posterImage }),
                           )
                         : s.createElement(y.ZP, null, "Video not provided");
@@ -281,18 +305,18 @@
                         [p] = (0, n.KO)(l.qc),
                         b = p.getState(),
                         y = (0, o.useHistory)(),
-                        k = (0, u.F5)(b),
-                        v = Intl.DateTimeFormat().resolvedOptions().timeZone,
+                        v = (0, u.F5)(b),
+                        k = Intl.DateTimeFormat().resolvedOptions().timeZone,
                         w = (0, m.Z)(),
                         [S] = (0, n.KO)(h.k),
-                        { featureSwitches: C } = s.useContext(c.rC),
-                        Z = location.host.includes("x.com") && C.isTrue("x_jetfuel_enable_test_cluster"),
-                        I = "darker" === i.default.theme.paletteName ? "dark" : "dark" === i.default.theme.paletteName ? "dim" : i.default.theme.paletteName,
+                        { featureSwitches: I } = s.useContext(c.rC),
+                        C = location.host.includes("x.com") && I.isTrue("x_jetfuel_enable_test_cluster"),
+                        Z = "darker" === i.default.theme.paletteName ? "dark" : "dark" === i.default.theme.paletteName ? "dim" : i.default.theme.paletteName,
                         _ = s.useMemo(() => {
                             const e = {};
-                            return (e["x-jf-client-theme"] = I), (e["x-jf-v"] = "JP-4"), v && (e.timezone = v), k && (e["accept-language"] = (0, d.o)(k)), e;
-                        }, [I, v, k]),
-                        M = x(S, Z),
+                            return (e["x-jf-client-theme"] = Z), (e["x-jf-v"] = "JP-4"), k && (e.timezone = k), v && (e["accept-language"] = (0, d.o)(v)), e;
+                        }, [Z, k, v]),
+                        M = x(S, C),
                         T = s.useMemo(
                             () => ({
                                 httpPOST: async (e, t) => {
@@ -321,14 +345,14 @@
                             [a, _, M],
                         );
                     s.useEffect(() => {
-                        document.body.setAttribute("data-theme", I ?? "light");
-                    }, [I]);
-                    const j = s.useMemo(() => {
+                        document.body.setAttribute("data-theme", Z ?? "light");
+                    }, [Z]);
+                    const O = s.useMemo(() => {
                         (R.net = T), (R.history = y), (R.analytics = w);
                         const e = { "x.com.GenericURT": f.Z, "x.com.Video": P, "x.com.Broadcast": E, SignupArkoseSecurityChallenge: g.Z };
                         return R.addComponentOverride(e), R;
                     }, [T, y, w]);
-                    return "undefined" == typeof window ? e : s.createElement(r.N_, { analytics: w, runtime: j }, e);
+                    return "undefined" == typeof window ? e : s.createElement(r.N_, { analytics: w, runtime: O }, e);
                 };
         },
         383675: (e, t, a) => {
@@ -381,4 +405,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--d043c1bc.83d7edca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~bundle.DockPeek~bundle.LiveEvent~loader.TimelineFrameHandler~loader.JetfuelFrame--d043c1bc.39e4a07a.js.map

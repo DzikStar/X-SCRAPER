@@ -1362,7 +1362,12 @@
                 a("b7cb4fab", "Translated by"),
                 a("e0bffbf8", "[[296322]] About automatic translation"),
                 a("e839db3a", "[[192595]] Dismiss"),
-                a("a15585b4", "Language Settings"),
+                a("e7a86c77", function (e) {
+                    return "Automatically translate " + e.language;
+                }),
+                a("c60b9e5c", "Changes will take effect for newly loaded content."),
+                a("c6ad999b", "languages settings"),
+                a("hba0547a", "Unable to update settings. Please try again later."),
                 a("d4c339b9", function (e) {
                     return "[[281741]] Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1918,11 +1923,11 @@
                 }),
                 a("ad89b831", function (e) {
                     return "[[275307]] active" + e.ttc_rich_text_composer;
-                }),
-                a("jcd5ee8a", "[[287353]] Edit block"),
+                });
+            a("jcd5ee8a", "[[287353]] Edit block"),
                 a("a8f09fb8", "[[287352]] Delete block"),
-                a("i89195ea", "[[287259]] Divider");
-            a("da8ac57c", "[[284900]] Edit Caption"),
+                a("i89195ea", "[[287259]] Divider"),
+                a("da8ac57c", "[[284900]] Edit Caption"),
                 a("a8fdd09c", "[[284919]] Publish Article"),
                 a("d8047cc8", "[[221087]] Publish"),
                 a("ff7ddca2", "[[284961]] Your Article will appear as a post once you publish. Also, find it under the Articles tab on your profile."),
@@ -2970,15 +2975,15 @@
                 a("j43f99be", "[[288862]] Relevancy"),
                 a("ad6e11ac", "[[289697]] Sort replies by"),
                 a("b2311b70", "[[187546]] This is not available to you"),
-                a("j88f27d8", "[[193641]] Relevant people"),
-                a("i31dcd22", "[[225789]] Article"),
+                a("j88f27d8", "[[193641]] Relevant people");
+            a("i31dcd22", "[[225789]] Article"),
                 a("e3de2f6f", function (e) {
                     return "[[276859]] " + e.entity + " was added to your Bookmarks";
                 }),
                 a("e64de8a9", function (e) {
                     return "[[276858]] " + e.entity + " was removed from your Bookmarks";
-                });
-            a("d6d9aab6", "[[244742]] Add Bookmark"),
+                }),
+                a("d6d9aab6", "[[244742]] Add Bookmark"),
                 a("bb89cf46", "[[244743]] Remove Bookmark"),
                 a("a739d4ba", "[[244741]] Add to Bookmark Folder"),
                 a("d5270434", "[[240145]] Exit"),
@@ -3900,11 +3905,11 @@
                 a("c3b5b829", function (e) {
                     return "[[281952]] " + e.count + " request" + n(e.count, "", "s");
                 }),
-                a("fe7a1910", "[[287271]] Send invites"),
-                a("ic3c757e", "[[287270]] Search for users"),
+                a("fe7a1910", "[[287271]] Send invites");
+            a("ic3c757e", "[[287270]] Search for users"),
                 a("cd133486", "[[238308]] Invite"),
-                a("f2333850", "[[283614]] Share with people outside of X");
-            a("cddb8097", "Learn more"),
+                a("f2333850", "[[283614]] Share with people outside of X"),
+                a("cddb8097", "Learn more"),
                 a("f77997b0", "[[236782]] Co-host"),
                 a("i48f4ed8", "[[51016]] Speaker"),
                 a("a77c8e02", "[[230208]] Listener"),
@@ -4924,11 +4929,11 @@
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
                 a("a532072a", "[[294256]] Viewers"),
                 a("d9508ab0", "[[293196]] views"),
-                a("d9f9dec0", "[[294167]] View Space"),
-                a("h0c1f37a", "[[294166]] View Space Analytics"),
+                a("d9f9dec0", "[[294167]] View Space");
+            a("h0c1f37a", "[[294166]] View Space Analytics"),
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
-                a("if2909ba", "[[292000]] Watch Time");
-            a("i0e5bf4c", "[[293195]] Your videos"),
+                a("if2909ba", "[[292000]] Watch Time"),
+                a("i0e5bf4c", "[[293195]] Your videos"),
                 a("ed99baea", "[[289716]] Early Beta Access"),
                 a("gf898b70", "[[289702]] Advanced Search"),
                 a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
@@ -5878,13 +5883,13 @@
                 a("b92a21d9", function (e) {
                     return "[[232023]] No results for " + e.query;
                 }),
-                a("f191a2ba", "Search settings"),
-                a("a068008a", "[[290206]] Folders aren`t loading right now"),
+                a("f191a2ba", "Search settings");
+            a("a068008a", "[[290206]] Folders aren`t loading right now"),
                 a("f075b0e8", "[[241449]] Edit Folder"),
-                a("beba2a0e", "[[242311]] Create a new Bookmark Folder");
-            a("e41c9b4f", function (e) {
-                return "[[242357]] Saved to " + e.bookmarkFolderName;
-            }),
+                a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
+                a("e41c9b4f", function (e) {
+                    return "[[242357]] Saved to " + e.bookmarkFolderName;
+                }),
                 a("h18f86a4", "[[242318]] Delete Folder"),
                 a("f4ea967a", "[[242841]] Folder has been deleted"),
                 a("b670aa62", "[[242315]] Folder Name"),
@@ -6884,13 +6889,13 @@
                 a("eef1ae76", "[[285947]] Currently connected"),
                 a("a915f5c1", function (e) {
                     return "[[285941]] " + e.ats + " connected";
-                }),
-                a("af7286b7", function (e) {
-                    return "[[290946]] " + e.percentage + "% off a year of Premium";
-                }),
+                });
+            a("af7286b7", function (e) {
+                return "[[290946]] " + e.percentage + "% off a year of Premium";
+            }),
                 a("c924ad84", "[[293326]] Keep videos playing"),
-                a("de750a3c", "[[293320]] Enjoy them even when your phone is locked");
-            a("he5e87c4", "[[293316]] Boost your replies"),
+                a("de750a3c", "[[293320]] Enjoy them even when your phone is locked"),
+                a("he5e87c4", "[[293316]] Boost your replies"),
                 a("g64a60ba", "[[293325]] Get a small prioritization when you reply to posts"),
                 a("a7ee832a", "[[293321]] Fix typos and mistakes, up to 60 minutes"),
                 a("fdd77a34", "[[293319]] Create longer posts"),
@@ -7387,6 +7392,11 @@
                 a("bd05add8", "[[283916]] Not a Bot"),
                 a("d94f12b6", "[[258378]] Try searching for notifications, privacy, etc."),
                 a("ba8f6f82", "[[245100]] Search Settings"),
+                a("ibf92e4a", "[[296677]] Payment Successful"),
+                a("bdf0fb06", "Your subscription has been activated."),
+                a("ddfd6718", "[[293516]] Payment Failed"),
+                a("d42fa852", "[[296679]] There was an issue processing your payment. Please try again."),
+                a("g055a9ce", "Open 𝕏 App"),
                 a("g931a6e5", function (e) {
                     return "[[213579]] You’re following " + e.topic;
                 }),
@@ -7861,17 +7871,7 @@
                 a("a76d58ba", "[[288167]] Ads Analytics"),
                 a("eccd0e1a", "[[288001]] Organization Analytics"),
                 a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics."),
-                a("gf67aae4", "[[288005]] Upgrade to Full Access"),
-                a("h75e3618", "[[288038]] Include organization"),
-                a("h24a8862", "[[288039]] About this checkbox"),
-                a("c29e3a88", "[[288072]] Select affiliates"),
-                a("j8318d57", function (e) {
-                    return "[[288077]] " + e.number + " affiliate" + n(e.number, "", "s");
-                }),
-                a("bf809ec0", "[[288071]] Select Affiliates"),
-                a("b719e224", "[[196494]] No results"),
-                a("c9938100", "[[220491]] Search results");
+                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7910,7 +7910,17 @@
                     r(e, t)
                 );
             }
-            a("d1a35ec6", "[[274371]] Add accounts"),
+            a("gf67aae4", "[[288005]] Upgrade to Full Access"),
+                a("h75e3618", "[[288038]] Include organization"),
+                a("h24a8862", "[[288039]] About this checkbox"),
+                a("c29e3a88", "[[288072]] Select affiliates"),
+                a("j8318d57", function (e) {
+                    return "[[288077]] " + e.number + " affiliate" + n(e.number, "", "s");
+                }),
+                a("bf809ec0", "[[288071]] Select Affiliates"),
+                a("b719e224", "[[196494]] No results"),
+                a("c9938100", "[[220491]] Search results"),
+                a("d1a35ec6", "[[274371]] Add accounts"),
                 a("b437adda", "[[281591]] Upgrade to paid"),
                 a("f1f6c88b", function (e) {
                     return "[[274679]] Accounts (" + e.count + ")";
@@ -7964,7 +7974,6 @@
                 a("b4fef99e", "[[287372]] After our support team receives your request, we will review your information and will assist with configuring your integration."),
                 a("h37f2d96", "[[287376]] Please note not all applicant tracking systems are currently supported."),
                 a("ce102a20", "[[293426]] Redirecting to Stripe"),
-                a("ddfd6718", "[[293516]] Payment Failed"),
                 a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits."),
                 a("a62359e6", "[[289188]] Verified Organization Settings"),
                 a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
@@ -8900,10 +8909,10 @@
                 a("j0c6772a", "[[223886]] Visit website"),
                 a("f73003aa", "[[225566]] Video will play after ad"),
                 a("b3112b8a", "[[153003]] Skip"),
-                a("h6333ad0", "[[209963]] Skip Ad"),
-                a("c59da417", function (e) {
-                    return "[[217358]] Skip Ad in " + e.seconds;
-                }),
+                a("h6333ad0", "[[209963]] Skip Ad");
+            a("c59da417", function (e) {
+                return "[[217358]] Skip Ad in " + e.seconds;
+            }),
                 a("c3c147cf", function (e) {
                     return "[[217359]] Skip " + e.seconds;
                 }),
@@ -8913,8 +8922,8 @@
                     return "[[286308]] Auto (" + e.quality + ")";
                 }),
                 a("a7bf9962", "[[276485]] Download video"),
-                a("ccc97152", "[[238866]] Playback speed");
-            a("h531ade0", "[[286295]] Video quality"),
+                a("ccc97152", "[[238866]] Playback speed"),
+                a("h531ade0", "[[286295]] Video quality"),
                 a("e8b5757c", "[[246420]] 0.25x"),
                 a("e7e954de", "[[238867]] 0.5x"),
                 a("g07ffe66", "[[246423]] 0.75x"),
@@ -10137,9 +10146,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["[[296323]] Based on your X usage and languages settings, " + this.props.sourceLang + " will be automatically translated by Grok. To select automatically-translated languages, visit ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13340,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.0a63e3da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.12e7d1ea.js.map

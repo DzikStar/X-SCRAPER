@@ -377,7 +377,7 @@
                 return a.createElement(h.H, { errorConfig: we }, a.createElement(xe, { communityId: e }));
             }
             var Se = n(507651),
-                ke = n(979227),
+                ke = n(282904),
                 Pe = n(26232),
                 Fe = n(4452),
                 $e = n(24949),
@@ -587,7 +587,7 @@
                         a.createElement(I.Z, null, a.createElement(Z.Z, { backLocation: `/i/communities/${l}`, history: n, primaryContent: u, sidebarContent: a.createElement(v.Z, { communityId: l, moderatorArea: !0 }), subtitle: c, title: Ht }))
                     );
                 });
-            var Gt = n(714955);
+            var Gt = n(103686);
             const Qt = (e, t) => {
                     const { community: n } = t;
                     return n ? n.id_str : void 0;
@@ -963,4 +963,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-ef6409a7.c5a8b08a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-ef6409a7.8f7a9f5a.js.map

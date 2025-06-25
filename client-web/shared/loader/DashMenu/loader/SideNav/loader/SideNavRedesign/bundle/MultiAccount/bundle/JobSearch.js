@@ -1,19 +1,19 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch"],
+    ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch", "icons/IconExiting-js"],
     {
         110512: (e, l, a) => {
-            a.d(l, { ZP: () => V, V7: () => M });
+            a.d(l, { ZP: () => z, V7: () => W });
             a(136728);
             var n,
-                s,
                 i,
-                r,
                 t,
+                r,
+                s,
                 o,
-                u,
                 d,
                 c,
+                u,
                 g,
                 p = {
                     fragment: {
@@ -32,7 +32,7 @@
                                 selections: [
                                     {
                                         alias: null,
-                                        args: (s = [{ kind: "Literal", name: "status", value: "Accepted" }]),
+                                        args: (i = [{ kind: "Literal", name: "status", value: "Accepted" }]),
                                         concreteType: "DelegationGroup",
                                         kind: "LinkedField",
                                         name: "list_delegation_groups",
@@ -54,12 +54,12 @@
                                                         name: "result",
                                                         plural: !1,
                                                         selections: [
-                                                            (i = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                            (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: [
                                                                     (r = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
-                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ kind: "RequiredField", field: (t = { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }), action: "THROW" }], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [{ kind: "RequiredField", field: (s = { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }), action: "THROW" }], storageKey: null },
                                                                     {
                                                                         kind: "RequiredField",
                                                                         field: {
@@ -71,13 +71,13 @@
                                                                             plural: !1,
                                                                             selections: [
                                                                                 { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), action: "THROW" },
-                                                                                { kind: "RequiredField", field: (u = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), action: "THROW" },
+                                                                                { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), action: "THROW" },
                                                                             ],
                                                                             storageKey: null,
                                                                         },
                                                                         action: "THROW",
                                                                     },
-                                                                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW" }], storageKey: null }, action: "THROW" },
+                                                                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW" }], storageKey: null }, action: "THROW" },
                                                                     { args: null, kind: "FragmentSpread", name: "UserCell_user" },
                                                                 ],
                                                                 type: "User",
@@ -115,7 +115,7 @@
                                 selections: [
                                     {
                                         alias: null,
-                                        args: s,
+                                        args: i,
                                         concreteType: "DelegationGroup",
                                         kind: "LinkedField",
                                         name: "list_delegation_groups",
@@ -137,14 +137,14 @@
                                                         name: "result",
                                                         plural: !1,
                                                         selections: [
-                                                            i,
+                                                            t,
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: [
                                                                     r,
-                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [t], storageKey: null },
-                                                                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [o, u], storageKey: null },
-                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [d], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserAvatar", kind: "LinkedField", name: "avatar", plural: !1, selections: [s], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserCore", kind: "LinkedField", name: "core", plural: !1, selections: [o, d], storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c], storageKey: null },
                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                     { alias: null, args: null, concreteType: "UserPrivacy", kind: "LinkedField", name: "privacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }], storageKey: null },
@@ -172,7 +172,7 @@
                                                                                         name: "url",
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                            (c = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
+                                                                                            (u = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
                                                                                             { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null },
                                                                                             {
                                                                                                 alias: "urtEndpointOptions",
@@ -205,7 +205,7 @@
                                                                                         ],
                                                                                         storageKey: null,
                                                                                     },
-                                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [c], storageKey: null },
+                                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [u], storageKey: null },
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                                                                     { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
                                                                                     { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
@@ -253,85 +253,85 @@
                     params: { id: "vPrfbpPK7KoeIHlqqoHLbA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
                 };
             p.hash = "1e0a77d9768f003fab71a100e8291dbc";
-            const y = p;
-            var m = a(202784),
+            const m = p;
+            var y = a(202784),
                 k = a(325686),
                 _ = (a(585488), a(712696)),
-                F = a.n(_),
-                v = a(107267),
-                h = a(731708),
+                v = a.n(_),
+                h = a(107267),
+                F = a(731708),
                 b = a(661810),
                 f = a(642153),
                 K = a(392237),
-                T = a(111677),
-                S = a.n(T),
-                L = a(899667),
-                U = a(487552),
-                w = a(516951),
+                w = a(111677),
+                L = a.n(w),
+                T = a(899667),
+                S = a(487552),
+                U = a(516951),
                 E = a(621416),
                 C = a(125363),
                 A = a(175856),
                 I = a(390387),
-                R = a(114084),
-                D = a(736063);
+                D = a(114084),
+                R = a(736063);
             const H = (0, a(668214).Z)()
                     .propsFromActions(() => ({ setDelegateUser: I.vU }))
                     .withAnalytics({ component: "delegated_account_list" }),
-                Z = y,
-                q = S().daffabde,
-                P = S().eccbfa26,
-                O = S().a1b7a904,
-                W = { context: "DelegateGroups" },
-                x = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: s, setDelegateUser: i }) => {
+                Z = m,
+                q = L().daffabde,
+                P = L().eccbfa26,
+                x = L().a1b7a904,
+                M = { context: "DelegateGroups" },
+                O = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: i, setDelegateUser: t }) => {
                     const r = (0, C.I0)(),
-                        t = (0, v.useHistory)(),
+                        s = (0, h.useHistory)(),
                         [o] = (0, E.m)(A.s7),
-                        [u, d] = m.useState(!0),
-                        c = F()(Z, {}),
-                        g = m.useMemo(() => {
+                        [d, c] = y.useState(!0),
+                        u = v()(Z, {}),
+                        g = y.useMemo(() => {
                             const l = [];
                             return (
-                                c.viewer_v2?.list_delegation_groups?.forEach((a) => {
+                                u.viewer_v2?.list_delegation_groups?.forEach((a) => {
                                     const { result: n } = a.handle || {};
                                     ("User" === n?.__typename && n?.rest_id === e) || ("User" === n?.__typename && l.push(n));
                                 }),
                                 l
                             );
-                        }, [e, c.viewer_v2?.list_delegation_groups]),
-                        p = m.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
-                        y = m.useCallback(() => {
-                            d(!u);
-                        }, [u]);
-                    m.useEffect(() => {
+                        }, [e, u.viewer_v2?.list_delegation_groups]),
+                        p = y.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
+                        m = y.useCallback(() => {
+                            c(!d);
+                        }, [d]);
+                    y.useEffect(() => {
                         r(I.po(g.length));
                     }, [g, r]);
-                    const _ = m.useCallback(
+                    const _ = y.useCallback(
                         (e) => () => {
-                            o ? t.push("/i/delegate/switch", { delegateUser: e }) : i && i(e), n();
+                            o ? s.push("/i/delegate/switch", { delegateUser: e }) : t && t(e), n();
                         },
-                        [o, i, n, t],
+                        [o, t, n, s],
                     );
                     return g.length < 1
                         ? null
-                        : m.createElement(
-                              m.Fragment,
+                        : y.createElement(
+                              y.Fragment,
                               null,
-                              a ? m.createElement(k.Z, { style: Q.updatedDelegateAccountsLabel }, m.createElement(h.ZP, { color: "gray700", weight: "bold" }, P)) : m.createElement(k.Z, { onClick: y, style: Q.delegateAccountsLabel }, m.createElement(h.ZP, { color: "gray700", weight: "bold" }, p ? q : P), !p && (u ? m.createElement(L.default, { style: Q.IconChevronUp }) : m.createElement(U.default, { style: Q.IconChevronDown }))),
-                              a || u || p
+                              a ? y.createElement(k.Z, { style: V.updatedDelegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, P)) : y.createElement(k.Z, { onClick: m, style: V.delegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : P), !p && (d ? y.createElement(T.default, { style: V.IconChevronUp }) : y.createElement(S.default, { style: V.IconChevronDown }))),
+                              a || d || p
                                   ? g.map((e) => {
                                         const { id_str: n } = e.legacy,
-                                            i = n === l?.userId,
-                                            r = s ? s({ withBadges: !1, isActiveUser: i }) : void 0,
-                                            t = _({ userId: n });
-                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(R.Z, { "aria-label": O, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: i ? w.Z : t, user: e, withInteractiveStyling: !i, withLink: !1 }), a && m.createElement(b.Z, { style: Q.accountDivider }));
+                                            t = n === l?.userId,
+                                            r = i ? i({ withBadges: !1, isActiveUser: t }) : void 0,
+                                            s = _({ userId: n });
+                                        return y.createElement(y.Fragment, { key: e.rest_id }, y.createElement(D.Z, { "aria-label": x, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: t ? U.Z : s, user: e, withInteractiveStyling: !t, withLink: !1 }), a && y.createElement(b.Z, { style: V.accountDivider }));
                                     })
-                                  : m.createElement(k.Z, { style: Q.facePileContainer }, m.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
+                                  : y.createElement(k.Z, { style: V.facePileContainer }, y.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
                           );
                 };
-            function M() {
-                const e = F()(Z, {}),
+            function W() {
+                const e = v()(Z, {}),
                     l = (0, C.v9)(I.x0);
-                return m.useMemo(() => {
+                return y.useMemo(() => {
                     const a = [];
                     return (
                         e.viewer_v2?.list_delegation_groups?.forEach((e) => {
@@ -342,16 +342,16 @@
                     );
                 }, [e.viewer_v2?.list_delegation_groups, l]);
             }
-            const Q = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                V = H((e) => m.createElement(D.H, { errorConfig: W }, m.createElement(x, e)));
+            const V = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
+                z = H((e) => y.createElement(R.H, { errorConfig: M }, y.createElement(O, e)));
         },
         621416: (e, l, a) => {
-            a.d(l, { m: () => i });
+            a.d(l, { m: () => t });
             a(890103);
             var n = a(202784),
-                s = a(175698);
-            function i(e) {
-                const l = (0, s.A)();
+                i = a(175698);
+            function t(e) {
+                const l = (0, i.A)();
                 return [
                     !!l && !l.flags[e],
                     n.useCallback(() => {
@@ -363,26 +363,26 @@
         380155: (e, l, a) => {
             a.d(l, { y: () => o });
             var n = a(111677),
-                s = a.n(n),
-                i = a(615656),
+                i = a.n(n),
+                t = a(615656),
                 r = a(51525);
-            const t = s().b20a3894,
-                o = { [i.ZP.AppInReadOnlyMode]: { customAction: r.w1 }, [i.ZP.TargetUserNotFound]: { toast: { text: t } }, showToast: !0 };
+            const s = i().b20a3894,
+                o = { [t.ZP.AppInReadOnlyMode]: { customAction: r.w1 }, [t.ZP.TargetUserNotFound]: { toast: { text: s } }, showToast: !0 };
         },
         956817: (e, l, a) => {
             a.d(l, { y: () => o });
             var n = a(734540),
-                s = a(917799),
-                i = a(24546),
+                i = a(917799),
+                t = a(24546),
                 r = a(923488);
-            const t = { REQUEST: "rweb/multiAccount/SWITCH_REQUEST", SUCCESS: "rweb/multiAccount/SWITCH_SUCCESS", FAILURE: "rweb/multiAccount/SWITCH_FAILURE" },
+            const s = { REQUEST: "rweb/multiAccount/SWITCH_REQUEST", SUCCESS: "rweb/multiAccount/SWITCH_SUCCESS", FAILURE: "rweb/multiAccount/SWITCH_FAILURE" },
                 o =
                     (e) =>
                     (l, a, { api: o }) => {
-                        const u = (0, s._O)(l, { request: o.withEndpoint(n.Z).switch, params: e });
-                        return l((0, i.MH)()).then(() =>
+                        const d = (0, i._O)(l, { request: o.withEndpoint(n.Z).switch, params: e });
+                        return l((0, t.MH)()).then(() =>
                             l((0, r.nB)()).then(() =>
-                                u({ actionTypes: t, context: "SWITCH" }).then(() => {
+                                d({ actionTypes: s, context: "SWITCH" }).then(() => {
                                     window.location.assign("/home");
                                 }),
                             ),
@@ -392,13 +392,39 @@
         661810: (e, l, a) => {
             a.d(l, { Z: () => r });
             var n = a(202784),
-                s = a(325686),
-                i = a(392237);
+                i = a(325686),
+                t = a(392237);
             function r({ spacing: e, style: l }) {
-                return n.createElement(s.Z, { role: "separator", style: [t.divider, { marginVertical: null != e ? i.default.theme.spaces[e] : void 0 }, l] });
+                return n.createElement(i.Z, { role: "separator", style: [s.divider, { marginVertical: null != e ? t.default.theme.spaces[e] : void 0 }, l] });
             }
-            const t = i.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
+            const s = t.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
+        },
+        297896: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                t = a(783427),
+                r = a(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, t.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
+        452693: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                t = a(783427),
+                r = a(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, t.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.126ad2ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.a28d213a.js.map

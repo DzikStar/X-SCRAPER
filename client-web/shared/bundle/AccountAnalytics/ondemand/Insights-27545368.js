@@ -5,7 +5,7 @@
         72100: (e, t, r) => {
             r.d(t, { S: () => p });
             var n = r(552322),
-                i = r(378364),
+                i = r(6937),
                 o = r(589259),
                 a = r(123010),
                 c = r(553453),
@@ -1306,4 +1306,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights-27545368.b5177ada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights-27545368.8223939a.js.map

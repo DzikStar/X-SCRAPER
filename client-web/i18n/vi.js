@@ -1361,7 +1361,12 @@
                 t("b7cb4fab", "Được dịch bởi"),
                 t("e0bffbf8", "Giới thiệu về bản dịch tự động"),
                 t("e839db3a", "Hủy bỏ"),
-                t("a15585b4", "Cài đặt ngôn ngữ"),
+                t("e7a86c77", function (n) {
+                    return "Automatically translate " + n.language;
+                }),
+                t("c60b9e5c", "Changes will take effect for newly loaded content."),
+                t("c6ad999b", "languages settings"),
+                t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (n) {
                     return "Bài đăng từ " + n.fullName + " (@" + n.screenName + ")";
                 }),
@@ -1917,11 +1922,11 @@
                 }),
                 t("ad89b831", function (n) {
                     return "đang hoạt động" + n.ttc_rich_text_composer;
-                }),
-                t("jcd5ee8a", "Chỉnh sửa khối"),
+                });
+            t("jcd5ee8a", "Chỉnh sửa khối"),
                 t("a8f09fb8", "Xóa khối"),
-                t("i89195ea", "Dải phân cách");
-            t("da8ac57c", "Chỉnh sửa chú thích"),
+                t("i89195ea", "Dải phân cách"),
+                t("da8ac57c", "Chỉnh sửa chú thích"),
                 t("a8fdd09c", "Xuất bản Bài viết"),
                 t("d8047cc8", "Đăng"),
                 t("ff7ddca2", "Sau khi xuất bản, Bài viết của bạn sẽ xuất hiện dưới dạng bài đăng. Ngoài ra, bạn có thể tìm thấy Bài viết này trong tab Bài viết trên hồ sơ của mình."),
@@ -2969,15 +2974,15 @@
                 t("j43f99be", "Mức độ liên quan"),
                 t("ad6e11ac", "Sắp xếp câu trả lời theo"),
                 t("b2311b70", "Điều này không khả dụng với bạn"),
-                t("j88f27d8", "Người liên quan"),
-                t("i31dcd22", "Bài viết"),
+                t("j88f27d8", "Người liên quan");
+            t("i31dcd22", "Bài viết"),
                 t("e3de2f6f", function (n) {
                     return n.entity + " đã được thêm vào mục Dấu trang";
                 }),
                 t("e64de8a9", function (n) {
                     return n.entity + " đã được xóa khỏi mục Dấu trang";
-                });
-            t("d6d9aab6", "Thêm dấu trang"),
+                }),
+                t("d6d9aab6", "Thêm dấu trang"),
                 t("bb89cf46", "Xóa dấu trang"),
                 t("a739d4ba", "Thêm vào Thư mục dấu trang"),
                 t("d5270434", "Thoát"),
@@ -3899,11 +3904,11 @@
                 t("c3b5b829", function (n) {
                     return n.count + " yêu cầu";
                 }),
-                t("fe7a1910", "Gửi lời mời"),
-                t("ic3c757e", "Tìm kiếm người dùng"),
+                t("fe7a1910", "Gửi lời mời");
+            t("ic3c757e", "Tìm kiếm người dùng"),
                 t("cd133486", "Mời"),
-                t("f2333850", "Chia sẻ với những người bên ngoài X");
-            t("cddb8097", "Tìm hiểu thêm"),
+                t("f2333850", "Chia sẻ với những người bên ngoài X"),
+                t("cddb8097", "Tìm hiểu thêm"),
                 t("f77997b0", "Đ.chủ phòng"),
                 t("i48f4ed8", "Người nói"),
                 t("a77c8e02", "Người nghe"),
@@ -4923,11 +4928,11 @@
                 t("c8410542", "Số lượt xem video của bạn."),
                 t("a532072a", "Người xem"),
                 t("d9508ab0", "lượt xem"),
-                t("d9f9dec0", "Xem phòng"),
-                t("h0c1f37a", "Xem số liệu phân tích phòng"),
+                t("d9f9dec0", "Xem phòng");
+            t("h0c1f37a", "Xem số liệu phân tích phòng"),
                 t("e41fffbc", "Tổng thời gian xem video của bạn."),
-                t("if2909ba", "Thời gian xem");
-            t("i0e5bf4c", "Video của bạn"),
+                t("if2909ba", "Thời gian xem"),
+                t("i0e5bf4c", "Video của bạn"),
                 t("ed99baea", "Quyền truy cập sớm vào bản beta"),
                 t("gf898b70", "Tìm kiếm nâng cao"),
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
@@ -5877,13 +5882,13 @@
                 t("b92a21d9", function (n) {
                     return "Không có kết quả cho " + n.query;
                 }),
-                t("f191a2ba", "Cài đặt tìm kiếm"),
-                t("a068008a", "Thư mục hiện chưa tải"),
+                t("f191a2ba", "Cài đặt tìm kiếm");
+            t("a068008a", "Thư mục hiện chưa tải"),
                 t("f075b0e8", "Chỉnh sửa thư mục"),
-                t("beba2a0e", "Tạo Thư mục dấu trang mới");
-            t("e41c9b4f", function (n) {
-                return "Saved to " + n.bookmarkFolderName;
-            }),
+                t("beba2a0e", "Tạo Thư mục dấu trang mới"),
+                t("e41c9b4f", function (n) {
+                    return "Saved to " + n.bookmarkFolderName;
+                }),
                 t("h18f86a4", "Xóa thư mục"),
                 t("f4ea967a", "Thư mục đã bị xóa"),
                 t("b670aa62", "Tên thư mục"),
@@ -6883,13 +6888,13 @@
                 t("eef1ae76", "Hiện đã kết nối"),
                 t("a915f5c1", function (n) {
                     return "Đã kết nối với " + n.ats;
-                }),
-                t("af7286b7", function (n) {
-                    return "Giảm " + n.percentage + "% một năm cho gói Premium";
-                }),
+                });
+            t("af7286b7", function (n) {
+                return "Giảm " + n.percentage + "% một năm cho gói Premium";
+            }),
                 t("c924ad84", "Duy trì phát video"),
-                t("de750a3c", "Thoải mái tận hưởng kể cả khi điện thoại bị khóa");
-            t("he5e87c4", "Ưu tiên câu trả lời của bạn"),
+                t("de750a3c", "Thoải mái tận hưởng kể cả khi điện thoại bị khóa"),
+                t("he5e87c4", "Ưu tiên câu trả lời của bạn"),
                 t("g64a60ba", "Được ưu tiên mức độ thấp khi bạn trả lời bài đăng"),
                 t("a7ee832a", "Sửa chính tả và lỗi sai, lên đến 60 phút"),
                 t("fdd77a34", "Tạo bài đăng dài hơn"),
@@ -7386,6 +7391,11 @@
                 t("bd05add8", "Không phải bot"),
                 t("d94f12b6", "Thử tìm kiếm thông báo, quyền riêng tư, v.v."),
                 t("ba8f6f82", "Tìm kiếm Cài đặt"),
+                t("ibf92e4a", "Payment Successful"),
+                t("bdf0fb06", "Your subscription has been activated."),
+                t("ddfd6718", "Thanh toán không thành công"),
+                t("d42fa852", "There was an issue processing your payment. Please try again."),
+                t("g055a9ce", "Open 𝕏 App"),
                 t("g931a6e5", function (n) {
                     return "Bạn đang theo dõi " + n.topic;
                 }),
@@ -7860,17 +7870,7 @@
                 t("a76d58ba", "Số liệu phân tích quảng cáo"),
                 t("eccd0e1a", "Số liệu phân tích về tổ chức"),
                 t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
-                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp."),
-                t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
-                t("h75e3618", "Bao gồm tổ chức"),
-                t("h24a8862", "Giới thiệu về hộp đánh dấu này"),
-                t("c29e3a88", "Chọn bên liên kết"),
-                t("j8318d57", function (n) {
-                    return n.number + " bên liên kết";
-                }),
-                t("bf809ec0", "Chọn bên liên kết"),
-                t("b719e224", "Không có kết quả"),
-                t("c9938100", "Kết quả tìm kiếm");
+                t("eb603ffc", "Hãy nâng cấp để liên kết mạng lưới của bạn và xem số liệu phân tích tổng hợp.");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7909,7 +7909,17 @@
                     a(n, h)
                 );
             }
-            t("d1a35ec6", "Thêm tài khoản"),
+            t("gf67aae4", "Nâng cấp lên gói Toàn quyền truy cập"),
+                t("h75e3618", "Bao gồm tổ chức"),
+                t("h24a8862", "Giới thiệu về hộp đánh dấu này"),
+                t("c29e3a88", "Chọn bên liên kết"),
+                t("j8318d57", function (n) {
+                    return n.number + " bên liên kết";
+                }),
+                t("bf809ec0", "Chọn bên liên kết"),
+                t("b719e224", "Không có kết quả"),
+                t("c9938100", "Kết quả tìm kiếm"),
+                t("d1a35ec6", "Thêm tài khoản"),
                 t("b437adda", "Nâng cấp lên gói trả phí"),
                 t("f1f6c88b", function (n) {
                     return "Tài khoản (" + n.count + ")";
@@ -7963,7 +7973,6 @@
                 t("b4fef99e", "Sau khi nhóm hỗ trợ của chúng tôi nhận được yêu cầu của bạn, chúng tôi sẽ xem xét thông tin và hỗ trợ định cấu hình phần tích hợp của bạn."),
                 t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
                 t("ce102a20", "Đang chuyển hướng đến Stripe"),
-                t("ddfd6718", "Thanh toán không thành công"),
                 t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
                 t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
                 t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
@@ -8899,10 +8908,10 @@
                 t("j0c6772a", "Truy cập website"),
                 t("f73003aa", "Video sẽ phát sau quảng cáo"),
                 t("b3112b8a", "Bỏ qua"),
-                t("h6333ad0", "Bỏ qua quảng cáo"),
-                t("c59da417", function (n) {
-                    return "Bỏ qua quảng cáo trong " + n.seconds;
-                }),
+                t("h6333ad0", "Bỏ qua quảng cáo");
+            t("c59da417", function (n) {
+                return "Bỏ qua quảng cáo trong " + n.seconds;
+            }),
                 t("c3c147cf", function (n) {
                     return "Bỏ qua " + n.seconds;
                 }),
@@ -8912,8 +8921,8 @@
                     return "Tự động (" + n.quality + ")";
                 }),
                 t("a7bf9962", "Tải xuống video"),
-                t("ccc97152", "Tốc độ phát lại");
-            t("h531ade0", "Chất lượng video"),
+                t("ccc97152", "Tốc độ phát lại"),
+                t("h531ade0", "Chất lượng video"),
                 t("e8b5757c", "0.25x"),
                 t("e7e954de", "0.5x"),
                 t("g07ffe66", "0.75x"),
@@ -10136,9 +10145,9 @@
                             },
                         },
                         {
-                            key: "b6411d33",
+                            key: "g545a661",
                             get: function () {
-                                return ["Dựa trên cài đặt ngôn ngữ và hoạt động sử dụng X của bạn, Grok sẽ tự động dịch " + this.props.sourceLang + ". Để chọn các ngôn ngữ được dịch tự động, hãy truy cập vào phần ", "."];
+                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -13338,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.550e2b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.4ab0de6a.js.map

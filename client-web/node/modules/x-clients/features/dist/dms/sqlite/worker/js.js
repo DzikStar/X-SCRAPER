@@ -12,13 +12,13 @@
                     } else r = Object.assign(Object.create(null), e.defaultConfig, r);
                     const t = Object.create(null),
                         a = function () {},
-                        o = r.onerror || a,
-                        n = r.debug || a,
-                        s = r.generateMessageId ? void 0 : Object.create(null),
-                        i =
+                        i = r.onerror || a,
+                        o = r.debug || a,
+                        n = r.generateMessageId ? void 0 : Object.create(null),
+                        s =
                             r.generateMessageId ||
                             function (e) {
-                                return e.type + "#" + (s[e.type] = (s[e.type] || 0) + 1);
+                                return e.type + "#" + (n[e.type] = (n[e.type] || 0) + 1);
                             },
                         c = (...e) => {
                             throw new Error(e.join(" "));
@@ -28,9 +28,9 @@
                         r.worker || (r.worker = e.defaultConfig.worker),
                         "function" == typeof r.worker && (r.worker = r.worker()),
                         (r.worker.onmessage = function (e) {
-                            (e = e.data), n("worker1.onmessage", e);
+                            (e = e.data), o("worker1.onmessage", e);
                             let a = t[e.messageId];
-                            if (!a) return e && "sqlite3-api" === e.type && "worker1-ready" === e.result ? void (r.onready && r.onready(d)) : ((a = t[e.type]), a && a.onrow ? void a.onrow(e) : void (r.onunhandled ? r.onunhandled(arguments[0]) : o("sqlite3Worker1Promiser() unhandled worker message:", e)));
+                            if (!a) return e && "sqlite3-api" === e.type && "worker1-ready" === e.result ? void (r.onready && r.onready(d)) : ((a = t[e.type]), a && a.onrow ? void a.onrow(e) : void (r.onunhandled ? r.onunhandled(arguments[0]) : i("sqlite3Worker1Promiser() unhandled worker message:", e)));
                             switch ((delete t[e.messageId], e.type)) {
                                 case "error":
                                     return void a.reject(e);
@@ -48,14 +48,14 @@
                         }),
                         (d = function () {
                             let e;
-                            1 === arguments.length ? (e = arguments[0]) : 2 === arguments.length ? ((e = Object.create(null)), (e.type = arguments[0]), (e.args = arguments[1]), (e.dbId = e.args.dbId)) : c("Invalid arguments for sqlite3Worker1Promiser()-created factory."), e.dbId || "open" === e.type || (e.dbId = l), (e.messageId = i(e)), (e.departureTime = performance.now());
+                            1 === arguments.length ? (e = arguments[0]) : 2 === arguments.length ? ((e = Object.create(null)), (e.type = arguments[0]), (e.args = arguments[1]), (e.dbId = e.args.dbId)) : c("Invalid arguments for sqlite3Worker1Promiser()-created factory."), e.dbId || "open" === e.type || (e.dbId = l), (e.messageId = s(e)), (e.departureTime = performance.now());
                             const a = Object.create(null);
-                            let o;
-                            (a.message = e), "exec" === e.type && e.args && ("function" == typeof e.args.callback ? ((o = e.messageId + ":row"), (a.onrow = e.args.callback), (e.args.callback = o), (t[o] = a)) : "string" == typeof e.args.callback && c("exec callback may not be a string when using the Promise interface."));
-                            let s = new Promise(function (o, s) {
-                                (a.resolve = o), (a.reject = s), (t[e.messageId] = a), n("Posting", e.type, "message to Worker dbId=" + (l || "default") + ":", e), r.worker.postMessage(e);
+                            let i;
+                            (a.message = e), "exec" === e.type && e.args && ("function" == typeof e.args.callback ? ((i = e.messageId + ":row"), (a.onrow = e.args.callback), (e.args.callback = i), (t[i] = a)) : "string" == typeof e.args.callback && c("exec callback may not be a string when using the Promise interface."));
+                            let n = new Promise(function (i, n) {
+                                (a.resolve = i), (a.reject = n), (t[e.messageId] = a), o("Posting", e.type, "message to Worker dbId=" + (l || "default") + ":", e), r.worker.postMessage(e);
                             });
-                            return o && (s = s.finally(() => delete t[o])), s;
+                            return i && (n = n.finally(() => delete t[i])), n;
                         })
                     );
                 }),
@@ -89,50 +89,52 @@
                         return a;
                     }.bind({ original: sqlite3Worker1Promiser }));
                 sqlite3Worker1Promiser.v2, globalThis.sqlite3Worker1Promiser;
-                const o = a.Z,
-                    n = "SQLite module is not initialized",
-                    s = "SQL query is missing",
-                    i = "Unsupported action received",
+                const i = a.Z,
+                    o = "SQLite module is not initialized",
+                    n = "SQL query is missing",
+                    s = "Unsupported action received",
                     c = "Failed to create database backup",
                     l = "Invalid message: missing id or action",
                     d = "Missing userId for init_db or backup_db",
-                    u = [300, 5e3];
-                let f = null,
-                    w = null,
+                    u = "Database not initialized",
+                    f = [300, 5e3];
+                let w = null,
                     b = null,
-                    m = !1,
+                    m = null,
                     g = !1,
-                    p = null,
-                    y = null;
-                const h = "localhost.x.com" === self.location.hostname;
-                function _(e) {
-                    h && self.performance.mark(`start_${e}`);
-                }
+                    p = !1,
+                    y = null,
+                    h = null;
+                const _ = "localhost.x.com" === self.location.hostname;
                 function k(e) {
+                    _ && self.performance.mark(`start_${e}`);
+                }
+                function v(e) {
                     try {
-                        h && self.performance.mark(`end_${e}`), h && self.performance.measure(`${e}`, `start_${e}`, `end_${e}`);
+                        _ && self.performance.mark(`end_${e}`), _ && self.performance.measure(`${e}`, `start_${e}`, `end_${e}`);
                     } catch (e) {
-                        q("Couldn't end section", e);
+                        I("Couldn't end section", e);
                     }
                 }
-                function v(e, r = {}) {
+                function q(e, r = {}) {
                     new Date();
                 }
-                function q(e, r, t = {}) {}
-                function I(e) {
+                function I(e, r, t = {}) {}
+                function E(e) {
                     self.postMessage(e);
                 }
-                async function E(e) {
-                    if (!f || !w) return void new Error("Invalid state");
-                    if (m) return (g = !0), void v();
-                    g = !1;
-                    const r = `sqlite_leader_${w}`,
+                async function j(e) {
+                    if (!w || !b) return void new Error("Invalid state");
+                    if (g) return (p = !0), void q();
+                    if (!(await A())) return;
+                    p = !1;
+                    const r = `sqlite_leader_${b}`,
                         t = await (async function () {
-                            if (!f || !w) return 50;
+                            if (!w || !b) return 50;
                             let e = 0;
                             try {
-                                const r = ((await f.db.exec({ sql: "PRAGMA page_size;", returnValue: "resultRows" })[0][0]) * (await f.db.exec({ sql: "PRAGMA page_count;", returnValue: "resultRows" })[0][0])) / 1024;
-                                r < u[0] ? (e += 300) : r < u[1] && (e += 100);
+                                const r = ((await w.db.exec({ sql: "PRAGMA page_size;", returnValue: "resultRows" })[0][0]) * (await w.db.exec({ sql: "PRAGMA page_count;", returnValue: "resultRows" })[0][0])) / 1024;
+                                r < f[0] ? (e += 300) : r < f[1] && (e += 100);
                             } catch (r) {
                                 e += 300;
                             }
@@ -141,141 +143,157 @@
                     await new Promise((e) => setTimeout(e, t));
                     try {
                         await navigator.locks.request(r, async () => {
-                            v(0, { userId: w, workerId: b });
+                            q(0, { userId: b, workerId: m });
                             try {
-                                await (async function (e, r) {
-                                    const t = await O(r, !0),
-                                        a = y.wasm,
-                                        o = a.alloc(8);
-                                    try {
-                                        const r = y.capi.sqlite3_serialize(e.pointer, "main", o, 0);
-                                        if (!r) throw new Error("Failed to serialize database");
-                                        const n = new DataView(a.memory.buffer, o, 8),
-                                            s = Number(n.getBigUint64(0, !0));
-                                        if (!s) throw (y.capi.sqlite3_free(r), new Error("Serialized database size is zero"));
-                                        const i = new Uint8Array(a.memory.buffer, r, s),
-                                            c = await t.createSyncAccessHandle();
-                                        try {
-                                            c.write(i, { at: 0 }), c.truncate(s), c.flush();
-                                        } finally {
-                                            c.close(), y.capi.sqlite3_free(r);
-                                        }
-                                    } finally {
-                                        a.dealloc(o);
-                                    }
-                                })(f.db, w),
-                                    v(0, { userId: w }),
-                                    I({ id: "auto_backup", type: "backup_success" });
+                                await P(w.db, b), q(0, { userId: b }), E({ id: "auto_backup", type: "backup_success" });
                             } catch (e) {
-                                I({ id: "auto_backup", type: "backup_error", error: c });
+                                E({ id: "auto_backup", type: "backup_error", error: c });
                             }
                             await new Promise((r) => setTimeout(r, e));
                         });
                     } catch (e) {}
                 }
-                async function j(e, r) {
+                async function O(e, r) {
                     if (!e) throw (new Error(d), new Error(d));
-                    if (f) I({ id: r });
+                    if (w) E({ id: r });
                     else
                         try {
                             let t;
-                            y = await o({ print: () => {}, printErr: () => {} });
+                            h = await i({ print: () => {}, printErr: () => {} });
                             try {
-                                const r = await O(e, !1),
+                                const r = await x(e, !1),
                                     a = await r.getFile(),
-                                    o = await a.arrayBuffer();
-                                if (o.byteLength > 0) {
-                                    t = new y.oo1.DB("/xchat.sqlite3", "c");
-                                    const e = y.wasm,
-                                        r = e.alloc(o.byteLength);
+                                    i = await a.arrayBuffer();
+                                if (i.byteLength > 0) {
+                                    t = new h.oo1.DB("/xchat.sqlite3", "c");
+                                    const e = h.wasm,
+                                        r = e.alloc(i.byteLength);
                                     try {
-                                        new Uint8Array(e.memory.buffer, r, o.byteLength).set(new Uint8Array(o));
-                                        if (y.capi.sqlite3_deserialize(t.pointer, "main", r, o.byteLength, o.byteLength, y.capi.SQLITE_DESERIALIZE_FREEONCLOSE | y.capi.SQLITE_DESERIALIZE_RESIZEABLE) !== y.capi.SQLITE_OK) {
-                                            const e = y.capi.sqlite3_errmsg(t.pointer);
+                                        new Uint8Array(e.memory.buffer, r, i.byteLength).set(new Uint8Array(i));
+                                        if (h.capi.sqlite3_deserialize(t.pointer, "main", r, i.byteLength, i.byteLength, h.capi.SQLITE_DESERIALIZE_FREEONCLOSE | h.capi.SQLITE_DESERIALIZE_RESIZEABLE) !== h.capi.SQLITE_OK) {
+                                            const e = h.capi.sqlite3_errmsg(t.pointer);
                                             throw new Error(`Failed to deserialize database: ${e}`);
                                         }
                                     } catch (t) {
                                         throw (e.dealloc(r), t);
                                     }
-                                } else t = new y.oo1.DB("/xchat.sqlite3", "c");
+                                } else t = new h.oo1.DB("/xchat.sqlite3", "c");
                             } catch (e) {
-                                t = new y.oo1.DB("/xchat.sqlite3", "c");
+                                t = new h.oo1.DB("/xchat.sqlite3", "c");
                             }
-                            (f = { db: t }),
-                                (w = e),
-                                (b = Math.random().toString(36).slice(2) + Date.now().toString(36)),
-                                (m = !1),
+                            (w = { db: t }),
+                                (b = e),
+                                (m = Math.random().toString(36).slice(2) + Date.now().toString(36)),
+                                (g = !1),
                                 (function () {
-                                    if (!f || !w) return void new Error("Invalid state");
-                                    p && clearInterval(p);
+                                    if (!w || !b) return void new Error("Invalid state");
+                                    y && clearInterval(y);
                                     const e = [3e4, 6e4, 12e4, 18e4, 3e5, 6e5];
                                     let r = 0;
-                                    p = setTimeout(function t() {
+                                    y = setTimeout(function t() {
                                         const a = e[Math.min(r, e.length - 1)];
-                                        E(a), r++, (p = setTimeout(t, a));
+                                        j(a), r++, (y = setTimeout(t, a));
                                     }, e[0]);
                                 })(),
-                                I({ id: r });
+                                E({ id: r });
                         } catch (e) {
                             throw e;
                         }
                 }
-                async function O(e, r) {
+                async function x(e, r) {
                     const t = await navigator.storage.getDirectory(),
                         a = await t.getDirectoryHandle("backups", { create: r }),
-                        o = `chat_${e}.db`;
-                    return await a.getFileHandle(o, { create: r });
+                        i = `chat_${e}.db`;
+                    return await a.getFileHandle(i, { create: r });
+                }
+                async function P(e, r) {
+                    const t = await x(r, !0),
+                        a = h.wasm,
+                        i = a.alloc(8);
+                    try {
+                        const r = h.capi.sqlite3_serialize(e.pointer, "main", i, 0);
+                        if (!r) throw new Error("Failed to serialize database");
+                        const o = new DataView(a.memory.buffer, i, 8),
+                            n = Number(o.getBigUint64(0, !0));
+                        if (!n) throw (h.capi.sqlite3_free(r), new Error("Serialized database size is zero"));
+                        const s = new Uint8Array(a.memory.buffer, r, n),
+                            c = await t.createSyncAccessHandle();
+                        try {
+                            c.write(s, { at: 0 }), c.truncate(n), c.flush();
+                        } finally {
+                            c.close(), h.capi.sqlite3_free(r);
+                        }
+                    } finally {
+                        a.dealloc(i);
+                    }
+                }
+                async function A() {
+                    try {
+                        const e = await x(b, !1),
+                            r = (await e.getFile()).lastModified;
+                        if (r > 0) {
+                            if (Date.now() - r < 3e4) return !1;
+                        }
+                        return !0;
+                    } catch (e) {
+                        return !0;
+                    }
                 }
                 self.onmessage = async (e) => {
                     const { data: r } = e,
-                        { action: t, id: a, userId: o, sql: c, params: d } = r || {};
-                    if (void 0 === a || void 0 === t) return new Error("Missing id or action"), void I({ id: a || "", error: l });
+                        { action: t, id: a, userId: i, sql: c, params: d } = r || {};
+                    if (void 0 === a || void 0 === t) return new Error("Missing id or action"), void E({ id: a || "", error: l });
                     try {
                         if ("before_logout" === t) return;
-                        if ("init_db" === t) return void (await j(o, a));
-                        if (!f) throw new Error(n);
+                        if ("init_db" === t) return void (await O(i, a));
+                        if ("backup_db" === t) {
+                            if (!i || !w) throw new Error(u);
+                            if (i !== b) throw new Error("UserId mismatch for backup");
+                            return (await A()) ? (await P(w.db, i), void E({ id: a })) : void E({ id: a, error: "Backup throttled. Please wait before trying again." });
+                        }
+                        if (!w) throw new Error(o);
                         switch (t) {
                             case "exec":
-                                if ((_("sqliteWorker#exec"), !c)) throw new Error(s);
-                                I({ id: a, results: { values: await f.db.exec({ sql: c, bind: d, returnValue: "resultRows" }) } }), k("sqliteWorker#exec");
+                                if ((k("sqliteWorker#exec"), !c)) throw new Error(n);
+                                E({ id: a, results: { values: await w.db.exec({ sql: c, bind: d, returnValue: "resultRows" }) } }), v("sqliteWorker#exec");
                                 break;
                             case "begin_transaction":
-                                _("sqliteWorker#transaction"), await f.db.exec("BEGIN TRANSACTION;"), (m = !0), I({ id: a, results: { values: [] } });
+                                k("sqliteWorker#transaction"), await w.db.exec("BEGIN TRANSACTION;"), (g = !0), E({ id: a, results: { values: [] } });
                                 break;
                             case "end_transaction":
-                                await f.db.exec("END TRANSACTION;"), (m = !1), g && (await E(3e4)), I({ id: a, results: { values: [] } }), k("sqliteWorker#transaction");
+                                await w.db.exec("END TRANSACTION;"), (g = !1), p && (await j(3e4)), E({ id: a, results: { values: [] } }), v("sqliteWorker#transaction");
                                 break;
                             case "rollback_transaction":
-                                await f.db.exec("ROLLBACK TRANSACTION;"), (m = !1), I({ id: a, results: { values: [] } });
+                                await w.db.exec("ROLLBACK TRANSACTION;"), (g = !1), E({ id: a, results: { values: [] } });
                                 break;
                             default:
-                                throw new Error(`${i}: ${t}`);
+                                throw new Error(`${s}: ${t}`);
                         }
                     } catch (e) {
-                        I({ id: a, error: e instanceof Error ? e.message : String(e) });
+                        E({ id: a, error: e instanceof Error ? e.message : String(e) });
                     }
                 };
             },
         },
         a = {};
-    function o(e) {
+    function i(e) {
         var r = a[e];
         if (void 0 !== r) return r.exports;
-        var n = (a[e] = { exports: {} });
-        return t[e](n, n.exports, o), n.exports;
+        var o = (a[e] = { exports: {} });
+        return t[e](o, o.exports, i), o.exports;
     }
-    (o.m = t),
-        (o.x = () => {
-            var e = o.O(void 0, ["shared~~-5a94f17d", "shared~~-ab3eb430"], () => o(670995));
-            return (e = o.O(e));
+    (i.m = t),
+        (i.x = () => {
+            var e = i.O(void 0, ["shared~~-5a94f17d", "shared~~-ab3eb430"], () => i(670995));
+            return (e = i.O(e));
         }),
         (e = []),
-        (o.O = (r, t, a, n) => {
+        (i.O = (r, t, a, o) => {
             if (!t) {
-                var s = 1 / 0;
+                var n = 1 / 0;
                 for (d = 0; d < e.length; d++) {
-                    for (var [t, a, n] = e[d], i = !0, c = 0; c < t.length; c++) (!1 & n || s >= n) && Object.keys(o.O).every((e) => o.O[e](t[c])) ? t.splice(c--, 1) : ((i = !1), n < s && (s = n));
-                    if (i) {
+                    for (var [t, a, o] = e[d], s = !0, c = 0; c < t.length; c++) (!1 & o || n >= o) && Object.keys(i.O).every((e) => i.O[e](t[c])) ? t.splice(c--, 1) : ((s = !1), o < n && (n = o));
+                    if (s) {
                         e.splice(d--, 1);
                         var l = a();
                         void 0 !== l && (r = l);
@@ -283,35 +301,35 @@
                 }
                 return r;
             }
-            n = n || 0;
-            for (var d = e.length; d > 0 && e[d - 1][2] > n; d--) e[d] = e[d - 1];
-            e[d] = [t, a, n];
+            o = o || 0;
+            for (var d = e.length; d > 0 && e[d - 1][2] > o; d--) e[d] = e[d - 1];
+            e[d] = [t, a, o];
         }),
-        (o.d = (e, r) => {
-            for (var t in r) o.o(r, t) && !o.o(e, t) && Object.defineProperty(e, t, { enumerable: !0, get: r[t] });
+        (i.d = (e, r) => {
+            for (var t in r) i.o(r, t) && !i.o(e, t) && Object.defineProperty(e, t, { enumerable: !0, get: r[t] });
         }),
-        (o.f = {}),
-        (o.e = (e) => Promise.all(Object.keys(o.f).reduce((r, t) => (o.f[t](e, r), r), []))),
-        (o.u = (e) => e + "." + { "shared~~-5a94f17d": "147e5ba", "shared~~-ab3eb430": "feaa89b", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs": "251011c" }[e] + "a.js"),
-        (o.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
-        (o.p = "https://abs.twimg.com/responsive-web/client-web/"),
+        (i.f = {}),
+        (i.e = (e) => Promise.all(Object.keys(i.f).reduce((r, t) => (i.f[t](e, r), r), []))),
+        (i.u = (e) => e + "." + { "shared~~-5a94f17d": "147e5ba", "shared~~-ab3eb430": "cfd6d73", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs": "ffa5d54" }[e] + "a.js"),
+        (i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
+        (i.p = "https://abs.twimg.com/responsive-web/client-web/"),
         (() => {
-            o.b = self.location + "";
+            i.b = self.location + "";
             var e = { "node_modules_x-clients_features_dist_dms_sqlite_worker_js": 1 };
-            o.f.i = (r, t) => {
-                e[r] || importScripts(o.p + o.u(r));
+            i.f.i = (r, t) => {
+                e[r] || importScripts(i.p + i.u(r));
             };
             var r = (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []),
                 t = r.push.bind(r);
             r.push = (r) => {
-                var [a, n, s] = r;
-                for (var i in n) o.o(n, i) && (o.m[i] = n[i]);
-                for (s && s(o); a.length; ) e[a.pop()] = 1;
+                var [a, o, n] = r;
+                for (var s in o) i.o(o, s) && (i.m[s] = o[s]);
+                for (n && n(i); a.length; ) e[a.pop()] = 1;
                 t(r);
             };
         })(),
-        (r = o.x),
-        (o.x = () => Promise.all([o.e("shared~~-5a94f17d"), o.e("shared~~-ab3eb430")]).then(r));
-    o.x();
+        (r = i.x),
+        (i.x = () => Promise.all([i.e("shared~~-5a94f17d"), i.e("shared~~-ab3eb430")]).then(r));
+    i.x();
 })();
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite_worker_js.4022200a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite_worker_js.71f407ba.js.map
