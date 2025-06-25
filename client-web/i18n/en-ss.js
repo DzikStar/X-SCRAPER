@@ -226,9 +226,9 @@
                     return "[[290850]] " + e.percentage + "% off " + e.tier + " " + e.plan;
                 }),
                 a("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "[[296651]] Get " + e.percentage + "% off this summer";
                 }),
-                a("he77d8e6", "Limited-time offer"),
+                a("he77d8e6", "[[296652]] Limited-time offer"),
                 a("adf3410a", "[[290067]] Subscribe to unlock new features and if eligible, receive a share of revenue."),
                 a("a84a736e", "[[292315]] Get Free Ad Credit"),
                 a("a0713d76", "[[292316]] Upgrade to Verified Organizations to get free ad credit & a suite of business growth tools."),
@@ -1294,7 +1294,7 @@
                     return '[[296469]] Searching 𝕏 for "' + e.query + '"';
                 }),
                 a("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return '[[296692]] Searching 𝕏 users for "' + e.query + '"';
                 }),
                 a("g008d475", function (e) {
                     return "[[296453]] Browsing " + e.url;
@@ -1315,7 +1315,7 @@
                     return "[[296471]] Searching 𝕏 posts by @" + e.username + ' for **"' + e.query + '"**';
                 }),
                 a("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "[[296690]] Executing code" + e.ttc_tool_usage_card;
                 }),
                 a("ead81122", "[[294249]] Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "[[285363]] Rate limit exceeded. Please wait a few moments then try again."),
@@ -1349,12 +1349,12 @@
                 a("deaf5b16", "[[176304]] Retry"),
                 a("a66d80d0", "[[281783]] Translate post"),
                 a("be9b9fb8", "[[292374]] Translated by Grok"),
-                a("ba10dab6", "Auto-translated by Grok"),
+                a("ba10dab6", "[[296668]] Auto-translated by Grok"),
                 a("he9c9634", "[[190233]] Unable to fetch translation"),
                 a("j2198c98", "[[283742]] Hide translated post"),
                 a("d4d35bea", "[[292636]] Translating..."),
-                a("f4f69be8", "Show original"),
-                a("e3097a5c", "Show auto-translated post"),
+                a("f4f69be8", "[[296669]] Show original"),
+                a("e3097a5c", "[[296670]] Show auto-translated post"),
                 a("e0f81ff3", "Translation:"),
                 a("j2862695", function (e) {
                     return "Translated from " + e.originLanguage + " by";
@@ -4263,7 +4263,7 @@
                     return "[[296468]] Show all (" + e.count + ")";
                 }),
                 a("df601d92", "[[296461]] Relevant Users"),
-                a("a4cfb8a8", "Browsing"),
+                a("a4cfb8a8", "[[296689]] Browsing"),
                 a("d7cb5408", "[[290891]] Relevant Web Pages"),
                 a("ca93f2ee", "[[289932]] This message has been deleted."),
                 a("b8c06820", "[[287580]] Copy text"),
@@ -6498,7 +6498,7 @@
                 a("f7cf3d36", "[[296553]] Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
                 a("hc965308", "[[285237]] Fun"),
                 a("eb78b77e", "[[285228]] Fun Mode"),
-                a("ac164552", "Go to grok.com"),
+                a("ac164552", "[[296691]] Go to grok.com"),
                 a("gb5fb7d0", "[[291144]] Focus Mode"),
                 a("g5665caa", "[[291143]] Exit Focus Mode"),
                 a("a372681e", "[[293160]] Copy share link"),
@@ -6989,9 +6989,9 @@
                 a("gd573390", "[[291019]] And everything in Basic..."),
                 a("ef94bbd4", "[[289852]] Get Premium+"),
                 a("dcd830ce", "[[291020]] And everything in Premium..."),
-                a("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                a("dde0dbe0", "[[296664]] Enjoy our Summer offer, ending in:"),
                 a("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "[[296665]] Summer offer ending on " + e.date + ".";
                 }),
                 a("b7dde622", "[[290743]] Happy Thanksgiving! Offer ends in:"),
                 a("i0180ca1", function (e) {
@@ -13340,4 +13340,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.3ca076ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.0a63e3da.js.map

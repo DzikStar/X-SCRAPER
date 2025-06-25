@@ -6495,7 +6495,7 @@
                 n("e5f4eac0", "તમારી સામગ્રી વધુ શોધવા યોગ્ય હશે. અને તમે શોધ પરિણામો અને વર્તમાનપ્રવાહોમાં દેખાશો."),
                 n("c7832a72", "અન્યો સાથે સીધા જ જોડાણ કરો"),
                 n("i1ccd17a", "તમારો સંદેશો આપમેળે ફિલ્ટર કરવામાં આવ્યા વિના, જેઓ તમને અનુસરતાં નથી તે લોકોને સીધા સંદેશા મોકલો."),
-                n("f7cf3d36", "Grok is a free AI assistant designed by xAI to maximize truth and objectivity. Grok offers real-time search, image generation, trend analysis, and more."),
+                n("f7cf3d36", "Grok એ xAI દ્વારા ડિઝાઇન કરાયેલ એક મફત AI સહાયક છે, જેનો ઉદ્દેશ સત્ય અને નિષ્પક્ષતાનું મહત્તમ પ્રમાણ જાળવવો છે. Grok રિયલટાઈમ સર્ચ, ઈમેજ જનરેશન, ટ્રેન્ડ વિશ્લેષણ અને વધુ સેવાઓ પ્રદાન કરે છે."),
                 n("hc965308", "મજા"),
                 n("eb78b77e", "આનંદ મોડ"),
                 n("ac164552", "Go to grok.com"),
@@ -13355,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.2b14ed2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.e2cf205a.js.map

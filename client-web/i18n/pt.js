@@ -6495,7 +6495,7 @@
                 s("e5f4eac0", "Seu conteúdo terá mais visibilidade e você aparecerá nos resultados de busca e nos assuntos."),
                 s("c7832a72", "Conecte-se diretamente com outras pessoas"),
                 s("i1ccd17a", "Envie Mensagens Diretas a pessoas que não seguem você sem que sua mensagem seja automaticamente filtrada."),
-                s("f7cf3d36", "O Grok é um assistente de IA gratuito desenvolvido pela xAI focado em promover a verdade e a objetividade. Ele oferece pesquisa em tempo real, geração de imagens, análise de tendências e muito mais."),
+                s("f7cf3d36", "Grok é um assistente de IA gratuito desenvolvido pela xAI que tem como objetivo promover a verdade e a objetividade. Ele oferece pesquisa em tempo real, geração de imagens, análise de tendências e muito mais."),
                 s("hc965308", "Diversão"),
                 s("eb78b77e", "Modo Divertido"),
                 s("ac164552", "Go to grok.com"),
@@ -13340,4 +13340,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.a070e43a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.19bfe84a.js.map

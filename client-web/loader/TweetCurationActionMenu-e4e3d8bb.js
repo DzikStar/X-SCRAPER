@@ -5,7 +5,7 @@
         587103: (e, t, i) => {
             i.d(t, { Z: () => n });
             i(202784);
-            const n = (0, i(523561).Z)({ loader: () => Promise.all([i.e("icons.0"), i.e("icons.9"), i.e("ondemand.LeaveThisConversation")]).then(i.bind(i, 265008)) });
+            const n = (0, i(523561).Z)({ loader: () => Promise.all([i.e("icons.16"), i.e("icons.25"), i.e("ondemand.LeaveThisConversation")]).then(i.bind(i, 265008)) });
         },
         376293: (e, t, i) => {
             i.d(t, { $f: () => b, KV: () => T, LI: () => S, SC: () => A, Vt: () => g, ed: () => C, op: () => k });
@@ -381,4 +381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e4e3d8bb.0f9962ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e4e3d8bb.6767243a.js.map

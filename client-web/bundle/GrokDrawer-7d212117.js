@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.GrokDrawer-7d212117", "loader.Dock-7d212117", "shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"],
+    ["bundle.GrokDrawer-7d212117", "shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"],
     {
         337886: (t, e, i) => {
             i.d(e, { Z: () => n });
@@ -493,7 +493,7 @@
             var V = i(920863),
                 y = i(202784),
                 Z = i(156905);
-            function b(t) {
+            function A(t) {
                 var e = (0, y.useReducer)((t) => t + 1, 0)[1],
                     i = (0, y.useRef)(null),
                     a = (0, y.useMemo)(() => new N(t, () => (null == i.current ? void 0 : i.current())), [t]);
@@ -548,16 +548,16 @@
                         [t, a],
                     ),
                     n = (0, V.Z)(s);
-                return [A(a), n];
+                return [b(a), n];
             }
-            function A(t) {
+            function b(t) {
                 return (0, n.Z)((0, n.Z)({}, t.__getValue()), {}, { collapsable: !1 });
             }
             var C = i(881806),
                 T = ["style"];
             function w(t) {
                 return y.forwardRef((e, i) => {
-                    var n = b(e),
+                    var n = A(e),
                         r = n[0],
                         _ = n[1],
                         o = (0, C.Z)(_, i),
@@ -1306,10 +1306,6 @@
                 }
             }
         },
-        472822: (t, e, i) => {
-            i.d(e, { Z: () => a });
-            const a = { isLayoutAnimationEnabled: () => !0, shouldEmitW3CPointerEvents: () => !1, shouldPressibilityUseW3CPointerEventsForHover: () => !1, animatedShouldDebounceQueueFlush: () => !1, animatedShouldUseSingleOp: () => !1 };
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-7d212117.b1081cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-7d212117.18f0b0ea.js.map

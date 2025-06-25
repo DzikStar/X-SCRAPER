@@ -84,7 +84,7 @@
                 r = n(107267),
                 o = n(736063),
                 c = n(514639),
-                s = n(351990),
+                s = n(412450),
                 l = n(725516),
                 i = n(615027),
                 u = n(43429),
@@ -564,4 +564,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-49827288.93ec49aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-49827288.37df414a.js.map

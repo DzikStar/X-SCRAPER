@@ -226,9 +226,9 @@
                     return "[" + t.percentage + "% öøff " + t.tier + " " + t.plan + "]";
                 }),
                 s("b28602eb", function (t) {
-                    return "Get " + t.percentage + "% off this summer";
+                    return "[Géêt " + t.percentage + "% öøff thïís sümméêr]";
                 }),
-                s("he77d8e6", "Limited-time offer"),
+                s("he77d8e6", "[Lïímïítéêd-tïíméê öøfféêr]"),
                 s("adf3410a", "[Sübscrïíbéê töø ünlöøck néêw féêåätüréês åänd ïíf éêlïígïíbléê, réêcéêïívéê åä shåäréê öøf réêvéênüéê.]"),
                 s("a84a736e", "[Géêt Fréêéê Ad Créêdïít]"),
                 s("a0713d76", "[Upgråädéê töø Véêrïífïíéêd Orgåänïízåätïíöøns töø géêt fréêéê åäd créêdïít & åä süïítéê öøf büsïínéêss gröøwth töøöøls.]"),
@@ -1294,7 +1294,7 @@
                     return '[Séêåärchïíng 𝕏 föør "' + t.query + '"]';
                 }),
                 s("ad342369", function (t) {
-                    return 'Searching 𝕏 users for "' + t.query + '"';
+                    return '[Séêåärchïíng 𝕏 üséêrs föør "' + t.query + '"]';
                 }),
                 s("g008d475", function (t) {
                     return "[Bröøwsïíng " + t.url + "]";
@@ -1315,7 +1315,7 @@
                     return "[Séêåärchïíng 𝕏 pöøsts by @" + t.username + ' föør **"' + t.query + '"**]';
                 }),
                 s("a02d1657", function (t) {
-                    return "Executing code" + t.ttc_tool_usage_card;
+                    return "[Exéêcütïíng cöødéê" + t.ttc_tool_usage_card + "]";
                 }),
                 s("ead81122", "[Söøméêthïíng wéênt wröøng, pléêåäséê réêfréêsh töø réêcöønnéêct öør try åägåäïín.]"),
                 s("f808a13a", "[Råätéê lïímïít éêxcéêéêdéêd. Pléêåäséê wåäïít åä féêw möøméênts théên try åägåäïín.]"),
@@ -1349,12 +1349,12 @@
                 s("deaf5b16", "[Réêtry]"),
                 s("a66d80d0", "[Tråänslåätéê pöøst]"),
                 s("be9b9fb8", "[Tråänslåätéêd by Gröøk]"),
-                s("ba10dab6", "Auto-translated by Grok"),
+                s("ba10dab6", "[Aütöø-tråänslåätéêd by Gröøk]"),
                 s("he9c9634", "[Unåäbléê töø féêtch tråänslåätïíöøn]"),
                 s("j2198c98", "[Hïídéê tråänslåätéêd pöøst]"),
                 s("d4d35bea", "[Tråänslåätïíng...]"),
-                s("f4f69be8", "Show original"),
-                s("e3097a5c", "Show auto-translated post"),
+                s("f4f69be8", "[Shöøw öørïígïínåäl]"),
+                s("e3097a5c", "[Shöøw åäütöø-tråänslåätéêd pöøst]"),
                 s("e0f81ff3", "Tråänslåätïíöøn:"),
                 s("j2862695", function (t) {
                     return "Tråänslåätéêd fröøm " + t.originLanguage + " by";
@@ -4263,7 +4263,7 @@
                     return "[Shöøw åäll (" + t.count + ")]";
                 }),
                 s("df601d92", "[Réêléêvåänt Uséêrs]"),
-                s("a4cfb8a8", "Browsing"),
+                s("a4cfb8a8", "[Bröøwsïíng]"),
                 s("d7cb5408", "[Réêléêvåänt Wéêb Påägéês]"),
                 s("ca93f2ee", "[Thïís méêssåägéê håäs béêéên déêléêtéêd.]"),
                 s("b8c06820", "[Cöøpy téêxt]"),
@@ -6498,7 +6498,7 @@
                 s("f7cf3d36", "[Gröøk ïís åä fréêéê AI åässïíståänt déêsïígnéêd by xAI töø måäxïímïízéê trüth åänd öøbjéêctïívïíty. Gröøk öøfféêrs réêåäl-tïíméê séêåärch, ïímåägéê géênéêråätïíöøn, tréênd åänåälysïís, åänd möøréê.]"),
                 s("hc965308", "[Fün]"),
                 s("eb78b77e", "[Fün Möødéê]"),
-                s("ac164552", "Go to grok.com"),
+                s("ac164552", "[Göø töø gröøk.cöøm]"),
                 s("gb5fb7d0", "[Föøcüs Möødéê]"),
                 s("g5665caa", "[Exïít Föøcüs Möødéê]"),
                 s("a372681e", "[Cöøpy shåäréê lïínk]"),
@@ -6989,9 +6989,9 @@
                 s("gd573390", "[And éêvéêrythïíng ïín Båäsïíc...]"),
                 s("ef94bbd4", "[Géêt Préêmïíüm+]"),
                 s("dcd830ce", "[And éêvéêrythïíng ïín Préêmïíüm...]"),
-                s("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                s("dde0dbe0", "[Enjöøy öøür Sümméêr öøfféêr, éêndïíng ïín:]"),
                 s("f8a50ba7", function (t) {
-                    return "Summer offer ending on " + t.date + ".";
+                    return "[Sümméêr öøfféêr éêndïíng öøn " + t.date + ".]";
                 }),
                 s("b7dde622", "[Håäppy Thåänksgïívïíng! Offéêr éênds ïín:]"),
                 s("i0180ca1", function (t) {
@@ -13340,4 +13340,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.3a6e552a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.e2de27fa.js.map

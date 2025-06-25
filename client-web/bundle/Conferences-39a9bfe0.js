@@ -66,15 +66,15 @@
                 b = n(447735),
                 Z = n(908599),
                 v = n(965728),
-                C = n(582129),
-                k = n(625555),
+                k = n(582129),
+                C = n(625555),
                 S = n(4427),
                 D = n(838859),
                 x = n(895229),
                 T = n(741881),
                 P = n(125363),
-                _ = n(601576),
-                L = n(919022),
+                L = n(601576),
+                _ = n(919022),
                 I = n(115307),
                 z = n(923128),
                 R = n(477403),
@@ -91,7 +91,7 @@
                         return (0, H.Z)(t.result.items, (e) => {
                             const t = e.conferenceData?.entryPoints.find(({ entryPointType: e, uri: t }) => "video" === e && t.startsWith("https://x.com"))?.uri,
                                 n = "declined" === e.attendees?.find((e) => e.self)?.responseStatus;
-                            if (!t || n) return;
+                            if (!t) return;
                             const r = /conferences\/(\w+)/.exec(t)?.[1];
                             if (!r) return;
                             const l = t.replace("/conferences/", "/conferences-room/"),
@@ -106,14 +106,14 @@
                                           return t.toLocaleString(void 0, { dateStyle: r ? "short" : void 0, timeStyle: "short" });
                                       })(o)
                                     : "";
-                            return { id: e.id, conferenceId: r, link: t, roomLink: l, title: a, time: s, startDateTime: o, endDateTime: c };
+                            return { id: e.id, conferenceId: r, link: t, roomLink: l, title: a, time: s, startDateTime: o, endDateTime: c, isDeclined: n };
                         });
                 }),
                 G = (0, o.cn)(null, (e, t, n) => {
                     null === J().client.getToken() && t(K, !0);
                 });
             const K = (0, o.cn)(!1),
-                M = (0, N.K9)((e) => e(k.F6).getCalendarToken()),
+                M = (0, N.K9)((e) => e(C.F6).getCalendarToken()),
                 q = (0, W.v)((e, t) => {
                     const n = setInterval(() => {
                         t(M), e(O).catch(F.Z);
@@ -130,7 +130,7 @@
                         try {
                             return await J().client.calendar.events.list(n);
                         } catch (t) {
-                            J().client.setToken(null), 401 === t.status && e(k.F6).deleteCalendarToken();
+                            J().client.setToken(null), 401 === t.status && e(C.F6).deleteCalendarToken();
                         }
                     }
                 }),
@@ -214,13 +214,13 @@
                       : null;
             }
             function re({ calendarEvent: e }) {
-                const { conferenceId: t, link: n, roomLink: r, time: o, title: s } = e,
-                    u = (0, Q.gt)(),
-                    d = (0, a.b9)((0, C.Tx)(t)),
-                    m = l.useCallback(() => {
-                        d();
-                    }, [d]);
-                return l.createElement(E.Z, { link: u ? r : n, onPress: u ? m : void 0, style: de.item }, l.createElement(c.Z, { style: de.flexShrink }, l.createElement(i.ZP, { numberOfLines: 2, size: "headline1", weight: "bold" }, s)), l.createElement(c.Z, null, l.createElement(i.ZP, { size: "headline1" }, o)));
+                const { conferenceId: t, isDeclined: n, link: r, roomLink: o, time: s, title: u } = e,
+                    d = (0, Q.gt)(),
+                    m = (0, a.b9)((0, k.Tx)(t)),
+                    f = l.useCallback(() => {
+                        m();
+                    }, [m]);
+                return l.createElement(E.Z, { link: d ? o : r, onPress: d ? f : void 0, style: n ? de.itemStrikethrough : de.item }, l.createElement(c.Z, { style: de.flexShrink }, l.createElement(i.ZP, { numberOfLines: 2, size: "headline1", weight: "bold" }, u)), l.createElement(c.Z, null, l.createElement(i.ZP, { size: "headline1" }, s)));
             }
             function le() {
                 return l.createElement(l.Suspense, { fallback: null }, l.createElement(oe, null));
@@ -242,7 +242,10 @@
                 return l.createElement(p.ZP, { disabled: !0, icon: ue, style: de.flexStart }, "Show calendar");
             }
             const ue = l.createElement(j.default, null),
-                de = y.default.create((e) => ({ container: { width: "100%", maxWidth: 600 * e.scaleMultiplier }, roomContainer: {}, calendarList: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, item: { padding: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: e.spaces.space8, borderTopWidth: 1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor }, flexStart: { alignSelf: "flex-start" }, flexShrink: { flexShrink: 1 } }));
+                de = y.default.create((e) => {
+                    const t = { padding: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: e.spaces.space8, borderTopWidth: 1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor };
+                    return { container: { width: "100%", maxWidth: 600 * e.scaleMultiplier }, roomContainer: {}, calendarList: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, item: t, itemStrikethrough: { ...t, textDecorationLine: "line-through" }, flexStart: { alignSelf: "flex-start" }, flexShrink: { flexShrink: 1 } };
+                });
             var me = n(371344),
                 fe = n(131907),
                 pe = n(163889);
@@ -258,7 +261,7 @@
                     );
                 })();
                 const t = (0, a.b9)(Pe),
-                    n = (0, a.b9)(_e),
+                    n = (0, a.b9)(Le),
                     r = (0, a.Dv)(xe),
                     o = (0, s.useHistory)(),
                     c = l.useCallback(
@@ -275,7 +278,7 @@
                 return l.createElement(l.Suspense, { fallback: be }, Ze);
             }
             const we = l.createElement(he, null),
-                be = l.createElement(Ce, null),
+                be = l.createElement(ke, null),
                 Ze = l.createElement(ve, null);
             function ve() {
                 const [, e] = (0, a.KO)(Te),
@@ -283,13 +286,13 @@
                     n = l.useCallback(() => {
                         e(t);
                     }, [t, e]);
-                return l.createElement(p.ZP, { "aria-label": ke, hoverLabel: Se, icon: ye, onPress: n, size: "medium", style: Le.button, type: "primaryText" });
+                return l.createElement(p.ZP, { "aria-label": Ce, hoverLabel: Se, icon: ye, onPress: n, size: "medium", style: _e.button, type: "primaryText" });
             }
-            function Ce() {
-                return l.createElement(p.ZP, { "aria-label": ke, disabled: !0, hoverLabel: Se, icon: ye, size: "medium", style: Le.button, type: "primaryText" });
+            function ke() {
+                return l.createElement(p.ZP, { "aria-label": Ce, disabled: !0, hoverLabel: Se, icon: ye, size: "medium", style: _e.button, type: "primaryText" });
             }
-            const ke = "Join",
-                Se = { label: ke },
+            const Ce = "Join",
+                Se = { label: Ce },
                 De = (0, o.cn)(""),
                 xe = (0, o.cn)(!1),
                 Te = (0, Z.Y)(async (e, t, n) => {
@@ -297,7 +300,7 @@
                     return t((0, S.Xk)(r)).then(
                         (l) => {
                             const a = `${n.location.pathname}/${r}`;
-                            n.push(a), e(Q.o3) && t(C.V$, { conferenceId: r, broadcastId: l });
+                            n.push(a), e(Q.o3) && t(k.V$, { conferenceId: r, broadcastId: l });
                         },
                         (e) => {
                             (0, pe.Hj)(e, { extra: { input_code: !0 }, level: "warning" }), t(xe, !0);
@@ -307,10 +310,10 @@
             const Pe = (0, o.cn)(null, (e, t, n, r) => {
                     "Enter" !== r.key || r.shiftKey || (r.preventDefault(), t(Te, n));
                 }),
-                _e = (0, o.cn)(null, (e, t, n) => {
+                Le = (0, o.cn)(null, (e, t, n) => {
                     t(xe, !1), t(De, n.target.value);
                 }),
-                Le = y.default.create((e) => ({ button: { marginStart: e.spaces.space4 } }));
+                _e = y.default.create((e) => ({ button: { marginStart: e.spaces.space4 } }));
             function Ie() {
                 return l.createElement(p.ZP, { onClick: () => window.open("/i/conferences"), tabIndex: -1, type: "primaryText" });
             }
@@ -344,7 +347,7 @@
                 const e = (0, a.Dv)(x.p_),
                     t = (0, a.Dv)(x.lY),
                     n = (0, a.Dv)(S.fJ),
-                    r = (0, P.v9)(L.ZP.selectViewerUser),
+                    r = (0, P.v9)(_.ZP.selectViewerUser),
                     o = (0, v.C_)(r).rgb;
                 if (!r) return null;
                 const s = r.profile_banner_url;
@@ -427,14 +430,14 @@
                 return l.createElement(p.ZP, { disabled: !0, type: "primaryFilled" }, "New conference");
             }
             const $e = (0, Z.Y)((e, t, n, r) =>
-                    e(k.F6)
+                    e(C.F6)
                         .scheduleConference({ attendeesUserIds: [], orgId: r })
                         .then(async ({ key: r }) => {
                             const l = await e((0, S.Xk)(r));
-                            n.push(e((0, Q.je)(r))), t(C.V$, { conferenceId: r, broadcastId: l });
+                            n.push(e((0, Q.je)(r))), t(k.V$, { conferenceId: r, broadcastId: l });
                         })
                         .catch(() => {
-                            (0, _.fz)({ text: "something went wrong" });
+                            (0, L.fz)({ text: "something went wrong" });
                         }),
                 ),
                 Ae = y.default.create((e) => {
@@ -491,9 +494,9 @@
                             () => {},
                         ),
                 ),
-                { ThemeScaleNames: C } = a.default,
-                k = Object.freeze({ [C.xSmall]: 1.3, [C.small]: 1.4, [C.normal]: 1.5, [C.large]: 1.5, [C.xLarge]: 1.6 }),
-                S = Object.freeze({ [C.xSmall]: 1.8, [C.small]: 1.9, [C.normal]: 2, [C.large]: 2, [C.xLarge]: 2.1 });
+                { ThemeScaleNames: k } = a.default,
+                C = Object.freeze({ [k.xSmall]: 1.3, [k.small]: 1.4, [k.normal]: 1.5, [k.large]: 1.5, [k.xLarge]: 1.6 }),
+                S = Object.freeze({ [k.xSmall]: 1.8, [k.small]: 1.9, [k.normal]: 2, [k.large]: 2, [k.xLarge]: 2.1 });
             function D() {
                 const { setSideNavSupport: e } = r.useContext(i.Z),
                     t = (0, f.gt)(),
@@ -520,10 +523,10 @@
                     r.useLayoutEffect(() => {
                         if (!t || p) return s.Z;
                         const e = c.default.theme.scales;
-                        c.default.setScales(n ? S : k);
+                        c.default.setScales(n ? S : C);
                         const r = c.default.theme.scale;
                         return (
-                            c.default.setScale(C.large),
+                            c.default.setScale(k.large),
                             () => {
                                 (function (e) {
                                     return e.pathname.startsWith("/i/conferences-room");
@@ -538,4 +541,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.91d856ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.3e78648a.js.map

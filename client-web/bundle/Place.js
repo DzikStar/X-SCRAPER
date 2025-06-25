@@ -7,12 +7,12 @@
             var r = o(807896),
                 i = o(202784),
                 a = o(107267),
-                n = o(403556),
-                s = o(791632);
+                s = o(403556),
+                n = o(791632);
             const c = (e) => {
                     const t = (0, a.useHistory)(),
                         { isCompact: o, ...c } = e;
-                    return i.createElement(n.Z, (0, r.Z)({}, c, { isCompact: o || (0, s.HD)(t) }));
+                    return i.createElement(s.Z, (0, r.Z)({}, c, { isCompact: o || (0, n.HD)(t) }));
                 },
                 l = i.memo(c);
         },
@@ -21,10 +21,10 @@
             var r = o(202784),
                 i = o(500002),
                 a = o(668214),
-                n = o(997174),
-                s = o(118823);
+                s = o(997174),
+                n = o(118823);
             const c = (0, a.Z)()
-                .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: n.NH }))
+                .propsFromActions(() => ({ updateLocation: n.YF, updateTweetDetailNav: s.NH }))
                 .withAnalytics();
             class l extends r.Component {
                 componentDidMount() {
@@ -37,13 +37,13 @@
                             locationKey: i,
                         } = this.props,
                         {
-                            location: { pathname: a, search: n },
-                            locationKey: s,
+                            location: { pathname: a, search: s },
+                            locationKey: n,
                         } = e;
                     let c = !1;
                     t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (c = !0));
-                    const l = i || s;
-                    ((l && i !== s) || (!l && o !== a) || r !== n || c) && this._performPageUpdates(this.props);
+                    const l = i || n;
+                    ((l && i !== n) || (!l && o !== a) || r !== s || c) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -61,35 +61,35 @@
             var r = o(202784),
                 i = o(731708),
                 a = o(457311),
-                n = o(111677),
-                s = o.n(n),
+                s = o(111677),
+                n = o.n(s),
                 c = o(912021),
                 l = o(864702),
                 d = o(479506),
                 p = o(903019),
                 h = o(519896),
-                m = o(774006),
-                u = o(443781),
+                u = o(774006),
+                m = o(443781),
                 g = o(810641),
                 f = o(335632);
-            const y = s().c09de2d4,
-                v = s().ae111c99,
-                b = r.createElement(s().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(i.ZP, { link: "/settings/search" }, s().f191a2ba));
+            const y = n().c09de2d4,
+                b = n().ae111c99,
+                v = r.createElement(n().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(i.ZP, { link: "/settings/search" }, n().f191a2ba));
             class _ extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._shouldStoreTypeaheadItem = (e) => e === d.Z.ItemType.USER || e === d.Z.ItemType.TOPIC || e === d.Z.ItemType.EVENT),
                         (this._getModule = () => {
                             const { query: e, querySrc: t, searchFilters: o, searchMode: r, urtEndpointOptions: i, vertical: a } = this.props,
-                                { featureSwitches: n } = this.context,
-                                s = n.isTrue("search_timelines_graphql_enabled");
-                            return this._getMemoizedModule(e, t, r, o, a, i, s);
+                                { featureSwitches: s } = this.context,
+                                n = s.isTrue("search_timelines_graphql_enabled");
+                            return this._getMemoizedModule(e, t, r, o, a, i, n);
                         }),
                         (this._renderEmptyTimeline = () => {
                             const { emptyStateComponent: e, query: t } = this.props;
-                            return e || r.createElement(a.Z, { header: v({ query: t }), message: b });
+                            return e || r.createElement(a.Z, { header: b({ query: t }), message: v });
                         }),
-                        (this._getMemoizedModule = (0, c.Z)((e, t, o, r, i, a, n) => (0, m.Z)({ query: e, searchMode: o, querySource: t, searchFilters: r, vertical: i, urtEndpointOptions: a, searchTimelinesGraphQLEnabled: n }))),
+                        (this._getMemoizedModule = (0, c.Z)((e, t, o, r, i, a, s) => (0, u.Z)({ query: e, searchMode: o, querySource: t, searchFilters: r, vertical: i, urtEndpointOptions: a, searchTimelinesGraphQLEnabled: s }))),
                         (this._getMemoizedEntryConfiguration = (0, c.Z)((e) => (({ shouldStoreTypeaheadItem: e, withUserPresence: t }) => ({ ...(0, f.G)({ tweetDismissable: !0, displayBlocked: !0, shouldStoreTypeaheadItem: e, withUserPresence: t }) }))({ shouldStoreTypeaheadItem: this._shouldStoreTypeaheadItem, withUserPresence: e })));
                 }
                 render() {
@@ -97,7 +97,7 @@
                     return r.createElement(g.Z, { apiErrorHandlerMap: l.d, entryConfiguration: this._getMemoizedEntryConfiguration(this.props.withUserPresence), fetchOptions: this.props.fetchOptions, isSingleDirection: e, module: this._getModule(), prerollDisplayLocation: h.Nw.SEARCH_TWEETS, renderEmptyState: this._renderEmptyTimeline, title: y });
                 }
             }
-            _.contextType = u.rC;
+            _.contextType = m.rC;
             const C = _;
         },
         864702: (e, t, o) => {
@@ -105,43 +105,43 @@
             var r = o(111677),
                 i = o.n(r),
                 a = o(615656),
-                n = o(51525);
-            const s = i().i1801686,
-                c = { [a.ZP.GenericForbidden]: { toast: (0, n.j)() }, [a.ZP.InvalidRequestUrl]: { toast: { text: s, withClearButton: !0 } }, showToast: !0 };
+                s = o(51525);
+            const n = i().i1801686,
+                c = { [a.ZP.GenericForbidden]: { toast: (0, s.j)() }, [a.ZP.InvalidRequestUrl]: { toast: { text: n, withClearButton: !0 } }, showToast: !0 };
         },
         883432: (e, t, o) => {
             o.d(t, { Z: () => r });
             const r = { AdvancedSearchPage: "advanced_search_page", CashtagClick: "cashtag_click", HashtagClick: "hashtag_click", PromotedTrendClick: "promoted_trend_click", RecentSearchClick: "recent_search_click", SavedSearchClick: "saved_search_click", RelatedQueryClick: "related_query_click", SpellingCorrectionClick: "spelling_correction_click", SpellingCorrectionRevertClick: "spelling_suggestion_revert_click", SpellingExpansionClick: "spelling_expansion_click", SpellingExpansionRevertClick: "spelling_expansion_revert_click", SpellingSuggestionClick: "spelling_suggestion_click", TrendClick: "trend_click", TrendView: "trend_view", TypeaheadClick: "typeahead_click", Typed: "typed_query", TVSearch: "TvSearch", TweetDetailQuoteTweet: "tdqt", TweetDetailSimilarPost: "tweet_detail_similar_posts" };
         },
         774006: (e, t, o) => {
-            o.d(t, { Z: () => g, u: () => u });
+            o.d(t, { Z: () => g, u: () => m });
             var r = o(644829),
                 i = o(750085),
                 a = o(903019),
-                n = o(883432),
-                s = o(555875),
+                s = o(883432),
+                n = o(555875),
                 c = o(218951);
             const l = "search-",
                 d = " near:me",
                 p = " filter:follows",
                 h = { [a.N3.Image]: { result_filter: a.N3.Image }, [a.N3.List]: { result_filter: a.N3.List }, [a.N3.Live]: { tweet_search_mode: a.N3.Live }, [a.N3.Media]: { result_filter: a.N3.Media }, [a.N3.Top]: {}, [a.N3.User]: { result_filter: a.N3.User }, [a.N3.Video]: { result_filter: a.N3.Video } },
-                m = (e) => (((e) => e === n.Z.SpellingCorrectionRevertClick || e === n.Z.SpellingExpansionRevertClick)(e) ? "-revert" : ""),
-                u = () => (e, t) => {
+                u = (e) => (((e) => e === s.Z.SpellingCorrectionRevertClick || e === s.Z.SpellingExpansionRevertClick)(e) ? "-revert" : ""),
+                m = () => (e, t) => {
                     e(
-                        (0, s.CY)(t())
+                        (0, n.CY)(t())
                             .filter((e) => 0 === e.indexOf(l))
-                            .map((e) => (0, s.$q)(e)),
+                            .map((e) => (0, n.$q)(e)),
                     );
                 },
-                g = ({ query: e, searchMode: t = a.N3.Top, querySource: o, searchFilters: n, vertical: s, urtEndpointOptions: u, searchTimelinesGraphQLEnabled: g }) => {
-                    const f = m(o),
-                        y = n && n.peopleFilter ? "searcher_follows" : void 0,
-                        v = y ? "-pf" : "",
-                        b = n && n.locationFilter && !e.includes(d) ? `${e}${d}` : e,
-                        _ = { timelineId: `${l}${b}-${t}${f}${v}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearch, getEndpointParams: (e) => ({ ...u?.requestParams, q: b, social_filter: y, vertical: s, ...h[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === a.N3.Live ? 5e3 : void 0, timelineType: "search" };
+                g = ({ query: e, searchMode: t = a.N3.Top, querySource: o, searchFilters: s, vertical: n, urtEndpointOptions: m, searchTimelinesGraphQLEnabled: g }) => {
+                    const f = u(o),
+                        y = s && s.peopleFilter ? "searcher_follows" : void 0,
+                        b = y ? "-pf" : "",
+                        v = s && s.locationFilter && !e.includes(d) ? `${e}${d}` : e,
+                        _ = { timelineId: `${l}${v}-${t}${f}${b}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearch, getEndpointParams: (e) => ({ ...m?.requestParams, q: v, social_filter: y, vertical: n, ...h[t], ...e }) }, context: "FETCH_SEARCH_TIMELINE", perfKey: "search", staleIntervalMs: t === a.N3.Live ? 5e3 : void 0, timelineType: "search" };
                     if (g) {
-                        const e = y && !b.includes(p) ? `${b}${p}` : b,
-                            n = ((e) => {
+                        const e = y && !v.includes(p) ? `${v}${p}` : v,
+                            s = ((e) => {
                                 switch (e) {
                                     case a.N3.Image:
                                         return "Photos";
@@ -160,64 +160,64 @@
                                         return "Latest";
                                 }
                             })(t),
-                            s = `gql-${l}${b}-${t}${f}${v}`;
-                        return (0, c.Z)({ ..._, timelineId: s, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: i.Z, network: { getEndpointParams: ({ count: t, cursor: r }) => ({ rawQuery: e, count: t, product: n, querySource: o, cursor: "string" == typeof r ? r : void 0 }), getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearchGraphQL } });
+                            n = `gql-${l}${v}-${t}${f}${b}`;
+                        return (0, c.Z)({ ..._, timelineId: n, context: "FETCH_SEARCH_GRAPHQL_TIMELINE", formatResponse: i.Z, network: { getEndpointParams: ({ count: t, cursor: r }) => ({ rawQuery: e, count: t, product: s, querySource: o, cursor: "string" == typeof r ? r : void 0 }), getEndpoint: (e) => e.withEndpoint(r.Z).fetchSearchGraphQL } });
                     }
                     return (0, c.Z)(_);
                 };
         },
         230558: (e, t, o) => {
-            o.r(t), o.d(t, { PlaceScreen: () => q, default: () => D });
+            o.r(t), o.d(t, { PlaceScreen: () => B, default: () => D });
             var r = o(202784),
                 i = o(325686),
                 a = o(154003),
-                n = o(731708),
-                s = o(392237),
+                s = o(731708),
+                n = o(392237),
                 c = o(111677),
                 l = o.n(c),
                 d = o(171709),
                 p = o(718e3),
                 h = o(290402),
-                m = o(252021),
-                u = o(507651),
+                u = o(252021),
+                m = o(507651),
                 g = o(652904),
                 f = o(886191),
                 y = o(292484),
-                v = o(903019),
-                b = o(503229),
+                b = o(903019),
+                v = o(503229),
                 _ = o(71620),
                 C = o(668214),
                 S = o(242419),
-                x = o(502909),
-                k = o(600823);
-            const E = (0, x.ZP)({ namespace: "places" }),
-                Z = (0, x.tb)(E, { context: "FETCH_PLACE", endpoint: (e) => e.withEndpoint(S.Z).fetchPlace }),
-                T = { ...E, ...Z },
-                w = k.Z.register(T),
+                k = o(502909),
+                x = o(600823);
+            const E = (0, k.ZP)({ namespace: "places" }),
+                T = (0, k.tb)(E, { context: "FETCH_PLACE", endpoint: (e) => e.withEndpoint(S.Z).fetchPlace }),
+                Z = { ...E, ...T },
+                w = x.Z.register(Z),
                 P = (e, t) => t.match.params.placeId,
                 I = (e, t) => w.select(e, P(0, t)),
-                z = (e, t) => w.selectFetchStatus(e, P(0, t)),
-                N = (0, C.Z)()
-                    .propsFromState(() => ({ place: I, placeFetchStatus: z, placeId: P }))
+                N = (e, t) => w.selectFetchStatus(e, P(0, t)),
+                R = (0, C.Z)()
+                    .propsFromState(() => ({ place: I, placeFetchStatus: N, placeId: P }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("PLACE_SCREEN"), fetchPlaceIfNeeded: w.fetchOneIfNeeded }))
                     .withAnalytics({ page: "place" }),
-                H = l().jaaa8984,
-                R = l().fa4e68ca,
-                L = l().add55c98,
+                z = l().jaaa8984,
+                L = l().fa4e68ca,
+                H = l().add55c98,
                 M = l().f4a654a4,
-                B = (e) => {
+                q = (e) => {
                     let t = {};
                     "foursquare" === e.vendor &&
                         (t = ((e) => {
                             const { venue_id: t } = e.data;
                             return { attributionDetails: r.createElement(d.default, { style: $.icon }), href: `https://foursquare.com/v/${t}`, buttonText: M };
                         })(e));
-                    const { attributionDetails: o, buttonText: n, href: s } = t;
-                    return r.createElement(i.Z, { style: $.attribution }, r.createElement(i.Z, { style: $.attributionDetails }, o), r.createElement(a.ZP, { link: s, size: "xSmall", type: "brandOutlined" }, n));
+                    const { attributionDetails: o, buttonText: s, href: n } = t;
+                    return r.createElement(i.Z, { style: $.attribution }, r.createElement(i.Z, { style: $.attributionDetails }, o), r.createElement(a.ZP, { link: n, size: "xSmall", type: "brandOutlined" }, s));
                 },
-                q = (e) => {
-                    const { createLocalApiErrorHandler: t, fetchPlaceIfNeeded: o, history: a, location: s, place: c, placeFetchStatus: l, placeId: d } = e,
-                        b = c ? c.full_name : H;
+                B = (e) => {
+                    const { createLocalApiErrorHandler: t, fetchPlaceIfNeeded: o, history: a, location: n, place: c, placeFetchStatus: l, placeId: d } = e,
+                        v = c ? c.full_name : z;
                     r.useEffect(() => {
                         o(d).catch(t());
                     }, [t, o, d]);
@@ -225,46 +225,46 @@
                             if (!c) return null;
                             const { attributes: e, vendor_info: t } = c,
                                 { street_address: o } = e;
-                            return r.createElement(i.Z, { style: $.locationDetails }, r.createElement(n.ZP, { size: "headline1", weight: "bold" }, c.full_name), o ? r.createElement(n.ZP, { color: "gray700", size: "body" }, o) : null, t ? B(t) : null);
+                            return r.createElement(i.Z, { style: $.locationDetails }, r.createElement(s.ZP, { size: "headline1", weight: "bold" }, c.full_name), o ? r.createElement(s.ZP, { color: "gray700", size: "body" }, o) : null, t ? q(t) : null);
                         },
-                        C = () => "media" === (s.query && s.query.f),
+                        C = () => "media" === (n.query && n.query.f),
                         S = () => {
                             const e = [
-                                { isActive: k, key: R, retainScrollPosition: !1, to: s.pathname, label: R },
-                                { isActive: C, key: L, retainScrollPosition: !1, to: { query: { f: "media" }, pathname: s.pathname }, label: L },
+                                { isActive: x, key: L, retainScrollPosition: !1, to: n.pathname, label: L },
+                                { isActive: C, key: H, retainScrollPosition: !1, to: { query: { f: "media" }, pathname: n.pathname }, label: H },
                             ];
-                            return r.createElement(u.Z, { links: e });
+                            return r.createElement(m.Z, { links: e });
                         },
-                        x = () => {
+                        k = () => {
                             const e = C() ? `place:${d} filter:media` : `place:${d}`;
-                            return r.createElement(f.Z, { query: e, searchMode: v.N3.Top });
+                            return r.createElement(f.Z, { query: e, searchMode: b.N3.Top });
                         },
-                        k = () => "media" !== (s.query && s.query.f),
+                        x = () => "media" !== (n.query && n.query.f),
                         E = (0, y.hx)();
-                    return r.createElement(g.Z, null, r.createElement(m.Z, { backLocation: E ? void 0 : "/home", documentTitle: b, history: a, primaryContent: r.createElement(r.Fragment, null, r.createElement(i.Z, { style: $.header }, r.createElement(h.Z, { fetchStatus: l, render: _ }), S()), x()), sidebarContent: r.createElement(p.Z, null), title: E ? null : H }));
+                    return r.createElement(g.Z, null, r.createElement(u.Z, { backLocation: E ? void 0 : "/home", documentTitle: v, history: a, primaryContent: r.createElement(r.Fragment, null, r.createElement(i.Z, { style: $.header }, r.createElement(h.Z, { fetchStatus: l, render: _ }), S()), k()), sidebarContent: r.createElement(p.Z, null), title: E ? null : z }));
                 },
-                $ = s.default.create((e) => ({ header: { backgroundColor: e.colors.cellBackground, zIndex: e.componentZIndices.appBarZIndex }, locationDetails: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, icon: { color: e.colors.gray700 }, attribution: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginTop: e.spaces.space12 }, attributionDetails: { flexShrink: 1, marginEnd: e.spaces.space12 } })),
-                D = N((0, b.Z)(q));
+                $ = n.default.create((e) => ({ header: { backgroundColor: e.colors.cellBackground, zIndex: e.componentZIndices.appBarZIndex }, locationDetails: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space16 }, icon: { color: e.colors.gray700 }, attribution: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginTop: e.spaces.space12 }, attributionDetails: { flexShrink: 1, marginEnd: e.spaces.space12 } })),
+                D = R((0, v.Z)(B));
         },
         403556: (e, t, o) => {
             o.d(t, { Z: () => E });
             var r = o(807896),
                 i = o(202784),
                 a = o(194504),
-                n = o(235902),
-                s = o(392237),
+                s = o(235902),
+                n = o(392237),
                 c = o(325686),
                 l = o(111677),
                 d = o.n(l),
                 p = o(912021),
                 h = o(516951),
-                m = o(731708),
-                u = o(310088),
+                u = o(731708),
+                m = o(310088),
                 g = o(175993),
                 f = o(58881),
                 y = o(530732);
-            const v = d().d2414d31,
-                b = () => d().ce4e85ae,
+            const b = d().d2414d31,
+                v = () => d().ce4e85ae,
                 _ = d().fb9f6f39;
             class C extends i.Component {
                 constructor(...e) {
@@ -276,8 +276,8 @@
                         (this._unlisten = h.Z),
                         (this.state = { location: this.context.location }),
                         (this._getTextColor = (e, t, o, r) => {
-                            const i = s.default.theme.colors.text,
-                                a = s.default.theme.colors.gray700;
+                            const i = n.default.theme.colors.text,
+                                a = n.default.theme.colors.gray700;
                             return o || r ? (e || t ? i : a) : e ? i : a;
                         }),
                         (this._setRef = (e) => {
@@ -301,17 +301,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: r, children: a, color: n, isActive: l, isCompact: d, isPillLink: p, isRoundedRect: h, isWebRedesign: g, retainScrollPosition: C, style: x, to: k } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: o, badgePip: r, children: a, color: s, isActive: l, isCompact: d, isPillLink: p, isRoundedRect: h, isWebRedesign: g, retainScrollPosition: C, style: k, to: x } = this.props,
                         { location: E } = this.state,
-                        Z = k ? this._getMemoizedLink(k, C) : void 0,
-                        T = l ? l(k) : E?.pathname === Z?.pathname,
-                        w = f.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? S.pillHoverStyle.backgroundColor : void 0 }),
-                        P = g ? "medium" : T ? "bold" : "medium";
-                    return i.createElement(y.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: w, link: Z, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [S.pillStyle] : [S.link]), ...(p && T ? [S.pillActiveStyle] : []), d ? (p ? S.compactPill : S.compactLink) : null, h ? S.roundedRect : null, x], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: l }) => i.createElement(c.Z, { style: p && S.flexGrow }, i.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(T, l, g, p) }, d && S.compactText, g && t && S.focusedText, p && S.pillTextStyle, p && T && S.pillActiveTextStyle, p && l && S.pillHoverTextStyle], weight: P }, e && i.createElement(e, { style: S.icon }), a, g || p ? null : i.createElement(c.Z, { style: T && [S.border, { backgroundColor: s.default.theme.colors[n] }] })), o ? i.createElement(u.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: v, withBorder: !1 }) : r ? i.createElement(u.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: b, withBorder: !1 }) : null));
+                        T = x ? this._getMemoizedLink(x, C) : void 0,
+                        Z = l ? l(x) : E?.pathname === T?.pathname,
+                        w = f.Z.generate({ backgroundColor: "transparent", color: n.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: p ? S.pillHoverStyle.backgroundColor : void 0 }),
+                        P = g ? "medium" : Z ? "bold" : "medium";
+                    return i.createElement(y.Z, { "aria-label": t, "aria-selected": Z, focusable: !!Z, interactiveStyles: w, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(p ? [S.pillStyle] : [S.link]), ...(p && Z ? [S.pillActiveStyle] : []), d ? (p ? S.compactPill : S.compactLink) : null, h ? S.roundedRect : null, k], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: l }) => i.createElement(c.Z, { style: p && S.flexGrow }, i.createElement(u.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(Z, l, g, p) }, d && S.compactText, g && t && S.focusedText, p && S.pillTextStyle, p && Z && S.pillActiveTextStyle, p && l && S.pillHoverTextStyle], weight: P }, e && i.createElement(e, { style: S.icon }), a, g || p ? null : i.createElement(c.Z, { style: Z && [S.border, { backgroundColor: n.default.theme.colors[s] }] })), o ? i.createElement(m.Z, { count: o, standalone: !0, style: [S.badge, o >= 10 && S.multiDigitBadge, o >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: b, withBorder: !1 }) : r ? i.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
                 }
             }
             (C.contextType = g.Z), (C.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const S = s.default.create((e) => ({
+            const S = n.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -334,24 +334,24 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                x = C,
-                k = s.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                E = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: s, isRoundedRect: c, links: l, style: d, visibleItemIndex: p }) => {
+                k = C,
+                x = n.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                E = ({ alignFirstItem: e, "aria-label": t, isCompact: o, isPillLink: n, isRoundedRect: c, links: l, style: d, visibleItemIndex: p }) => {
                     const h = l
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
-                        { isWebRedesign: m } = n.ZP.useProps(),
-                        u = m() && !s,
+                        { isWebRedesign: u } = s.ZP.useProps(),
+                        m = u() && !n,
                         g = i.useMemo(
                             () =>
-                                l.filter(Boolean).map(({ label: t, viewType: a, ...n }, l) => {
-                                    const d = u ? [k.linkRedesign, 0 === l && k.firstLinkRedesign, e && 0 === l && k.withNoPaddingStart] : void 0;
-                                    return i.createElement(x, (0, r.Z)({ viewType: a }, n, { isCompact: o, isPillLink: s, isRoundedRect: c, isWebRedesign: u, style: d }), t);
+                                l.filter(Boolean).map(({ label: t, viewType: a, ...s }, l) => {
+                                    const d = m ? [x.linkRedesign, 0 === l && x.firstLinkRedesign, e && 0 === l && x.withNoPaddingStart] : void 0;
+                                    return i.createElement(k, (0, r.Z)({ viewType: a }, s, { isCompact: o, isPillLink: n, isRoundedRect: c, isWebRedesign: m, style: d }), t);
                                 }),
-                            [e, o, s, c, u, l],
+                            [e, o, n, c, m, l],
                         );
-                    return i.createElement(a.Z, { "aria-label": t, buttonsContainerStyle: s && k.gap, childrenStyle: !u && k.flexGrow, key: h, style: [s ? null : k.segmentedControl, u && k.leftAligned, d], visibleItemIndex: p }, g);
+                    return i.createElement(a.Z, { "aria-label": t, buttonsContainerStyle: n && x.gap, childrenStyle: !m && x.flexGrow, key: h, style: [n ? null : x.segmentedControl, m && x.leftAligned, d], visibleItemIndex: p }, g);
                 };
         },
         171709: (e, t, o) => {
@@ -359,8 +359,8 @@
             var r = o(202784),
                 i = o(890601),
                 a = o(783427),
-                n = o(347101);
-            const s = (e = {}) => {
+                s = o(347101);
+            const n = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
                 return (0, i.Z)(
                     "svg",
@@ -368,7 +368,7 @@
                         ...e,
                         role: e["aria-label"] ? e.role || "img" : void 0,
                         "aria-hidden": void 0 === e["aria-label"],
-                        style: [n.Z.root, e.style],
+                        style: [s.Z.root, e.style],
                         viewBox: "0 0 158 20",
                         children: r.createElement(
                             "g",
@@ -381,22 +381,9 @@
                     { writingDirection: t },
                 );
             };
-            s.metadata = { width: 158, height: 20 };
-            const c = s;
-        },
-        748138: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => c });
-            var r = o(202784),
-                i = o(890601),
-                a = o(783427),
-                n = o(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
+            n.metadata = { width: 158, height: 20 };
+            const c = n;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Place.083f30ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Place.55c7a8ea.js.map

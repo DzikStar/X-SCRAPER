@@ -1,24 +1,24 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Settings-bc6ccf4c", "icons/IconDrafts-js"],
+    ["bundle.Settings-bc6ccf4c"],
     {
         661810: (e, t, r) => {
-            r.d(t, { Z: () => i });
+            r.d(t, { Z: () => l });
             var a = r(202784),
                 o = r(325686),
                 n = r(392237);
-            function i({ spacing: e, style: t }) {
-                return a.createElement(o.Z, { role: "separator", style: [l.divider, { marginVertical: null != e ? n.default.theme.spaces[e] : void 0 }, t] });
+            function l({ spacing: e, style: t }) {
+                return a.createElement(o.Z, { role: "separator", style: [i.divider, { marginVertical: null != e ? n.default.theme.spaces[e] : void 0 }, t] });
             }
-            const l = n.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
+            const i = n.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         879113: (e, t, r) => {
             r.d(t, { Z: () => p });
             var a = r(202784),
                 o = r(476984),
                 n = r.n(o),
-                i = r(143778),
-                l = r(750410),
+                l = r(143778),
+                i = r(750410),
                 s = r(682830);
             const c = "failed",
                 d = "loaded",
@@ -31,12 +31,12 @@
                     return !(!t && !r) || !n()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: o, icon: n, loadingMessage: i, onRequestRetry: d, render: p, renderFailure: m, retryMessage: g, retryable: b } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: o, icon: n, loadingMessage: l, onRequestRetry: d, render: p, renderFailure: m, retryMessage: g, retryable: b } = this.props;
                     switch (o) {
                         case c:
-                            return b ? a.createElement(l.Z, { icon: n, onRequestRetry: d, retryMessage: g }) : r ? a.createElement(s.m, { failureMessage: r }) : m();
+                            return b ? a.createElement(i.Z, { icon: n, onRequestRetry: d, retryMessage: g }) : r ? a.createElement(s.m, { failureMessage: r }) : m();
                         case u:
-                            return a.createElement(s.J, { "aria-label": e, color: t, loadingMessage: i });
+                            return a.createElement(s.J, { "aria-label": e, color: t, loadingMessage: l });
                         case h:
                             return null;
                         default:
@@ -44,25 +44,25 @@
                     }
                 }
             }
-            p.defaultProps = { renderFailure: i.Z, retryable: !0 };
+            p.defaultProps = { renderFailure: l.Z, retryable: !0 };
         },
         779610: (e, t, r) => {
             r.d(t, { Z: () => d });
             var a = r(202784),
                 o = r(325686),
                 n = r(191796),
-                i = r(58399),
-                l = r(731708),
+                l = r(58399),
+                i = r(731708),
                 s = r(952428),
                 c = r(392237);
             const d = (e) => {
-                    const { decoration: t, description: r, disabled: d = !1, isActive: h = !1, label: p, link: m, onPress: g, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: C, testID: k = "pivot", thumbnail: v, thumbnailSize: w, withoutArrow: Z = !1 } = e,
-                        E = [u.thumbnailContainer, "medium" === w && u.thumbnailContainerMedium],
-                        x = "string" == typeof p ? a.createElement(l.ZP, null, p) : p,
+                    const { decoration: t, description: r, disabled: d = !1, isActive: h = !1, label: p, link: m, onPress: g, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: C, testID: v = "pivot", thumbnail: k, thumbnailSize: w, withoutArrow: E = !1 } = e,
+                        Z = [u.thumbnailContainer, "medium" === w && u.thumbnailContainerMedium],
+                        x = "string" == typeof p ? a.createElement(i.ZP, null, p) : p,
                         R = "object" == typeof m && m.external && !m.openInSameFrame,
-                        _ = r ? ("string" == typeof r ? a.createElement(l.ZP, { color: "gray700", size: "subtext2", testID: `${k}-description` }, r) : r) : null,
+                        _ = r ? ("string" == typeof r ? a.createElement(i.ZP, { color: "gray700", size: "subtext2", testID: `${v}-description` }, r) : r) : null,
                         I = a.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [u.root, I, d && u.disabled, C], testID: k, withInteractiveStyling: !!m || !!g }, a.createElement(o.Z, { style: u.contentContainer }, v ? a.createElement(o.Z, { style: E }, v) : null, a.createElement(o.Z, { style: u.content }, x, _), f ? f() : null, (!m && !g) || d || Z ? null : R ? a.createElement(n.default, { style: u.icon }) : a.createElement(i.default, { style: u.icon })), t);
+                    return a.createElement(s.Z, { "aria-selected": "tab" === y ? h : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [u.root, I, d && u.disabled, C], testID: v, withInteractiveStyling: !!m || !!g }, a.createElement(o.Z, { style: u.contentContainer }, k ? a.createElement(o.Z, { style: Z }, k) : null, a.createElement(o.Z, { style: u.content }, x, _), f ? f() : null, (!m && !g) || d || E ? null : R ? a.createElement(n.default, { style: u.icon }) : a.createElement(l.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -71,8 +71,8 @@
             var a = r(202784),
                 o = r(325686),
                 n = r(913973),
-                i = r(731708),
-                l = r(950822),
+                l = r(731708),
+                i = r(950822),
                 s = r(466792),
                 c = r(58881),
                 d = r(530732),
@@ -95,8 +95,8 @@
                     const { "aria-posinset": e, "aria-setsize": t, checked: r, disabled: u, helpText: p, label: g, name: b, testID: f } = this.props,
                         y = c.Z.generate({ backgroundColor: h.default.theme.colors.transparent, color: h.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
                         C = c.Z.generate({ backgroundColor: h.default.theme.colors.transparent, color: h.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
-                        k = r ? y : C;
-                    return a.createElement(s.Z, { disabled: u }, (s) => a.createElement(o.Z, { role: "label", style: [m.root, !u && m.interactive], testID: f }, a.createElement(o.Z, { style: m.topContainer }, a.createElement(i.ZP, { id: this.labelId }, g), a.createElement(o.Z, { style: m.radioContainer }, a.createElement(d.Z, { interactiveStyles: k, interactivityState: s, style: m.radioBackground }, a.createElement(o.Z, { style: [m.circle, r && m.circleActive, u && m.circleDisabled, r && u && m.circleCheckedAndDisabled] }, r ? a.createElement(n.default, { style: m.checkMark }) : null)), (0, l.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: r, disabled: u, name: b, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), p ? a.createElement(i.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, p) : null));
+                        v = r ? y : C;
+                    return a.createElement(s.Z, { disabled: u }, (s) => a.createElement(o.Z, { role: "label", style: [m.root, !u && m.interactive], testID: f }, a.createElement(o.Z, { style: m.topContainer }, a.createElement(l.ZP, { id: this.labelId }, g), a.createElement(o.Z, { style: m.radioContainer }, a.createElement(d.Z, { interactiveStyles: v, interactivityState: s, style: m.radioBackground }, a.createElement(o.Z, { style: [m.circle, r && m.circleActive, u && m.circleDisabled, r && u && m.circleCheckedAndDisabled] }, r ? a.createElement(n.default, { style: m.checkMark }) : null)), (0, i.Z)("input", { "aria-posinset": e, "aria-setsize": t, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: r, disabled: u, name: b, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), p ? a.createElement(l.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, p) : null));
                 }
                 focus() {
                     this._ref && this._ref.focus();
@@ -127,12 +127,12 @@
                         (f += 1);
                 }
                 render() {
-                    const { "aria-label": e, description: t, disabled: r, label: n, name: l, options: s, value: c } = this.props;
+                    const { "aria-label": e, description: t, disabled: r, label: n, name: i, options: s, value: c } = this.props;
                     return a.createElement(
                         o.Z,
-                        { "aria-label": e, "aria-labelledby": n && !e ? this._labelId : void 0, role: "radiogroup", style: r && C.disabled, testID: `${b}${l}` },
-                        n ? a.createElement(o.Z, { id: this._labelId, role: "label", style: C.header }, a.createElement(i.ZP, { style: C.label, weight: "bold" }, n), t ? a.createElement(i.ZP, { color: "gray700", size: "subtext2" }, t) : null) : null,
-                        s.map((e, t) => a.createElement(g, { "aria-posinset": t + 1, "aria-setsize": s.length, checked: e.value === c, disabled: r, helpText: e.helpText, key: e.value, label: e.label, name: l, onChange: this._handleItemChanged(e.value), ref: this._setRadioRef(t, e.value === c), testID: e.testID })),
+                        { "aria-label": e, "aria-labelledby": n && !e ? this._labelId : void 0, role: "radiogroup", style: r && C.disabled, testID: `${b}${i}` },
+                        n ? a.createElement(o.Z, { id: this._labelId, role: "label", style: C.header }, a.createElement(l.ZP, { style: C.label, weight: "bold" }, n), t ? a.createElement(l.ZP, { color: "gray700", size: "subtext2" }, t) : null) : null,
+                        s.map((e, t) => a.createElement(g, { "aria-posinset": t + 1, "aria-setsize": s.length, checked: e.value === c, disabled: r, helpText: e.helpText, key: e.value, label: e.label, name: i, onChange: this._handleItemChanged(e.value), ref: this._setRadioRef(t, e.value === c), testID: e.testID })),
                     );
                 }
             }
@@ -144,7 +144,7 @@
             var a = r(202784),
                 o = r(731708),
                 n = r(392237);
-            class i extends a.Component {
+            class l extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderLearnMore = () => {
@@ -154,29 +154,29 @@
                 }
                 render() {
                     const { description: e, learnMoreLabel: t, learnMoreLink: r } = this.props,
-                        n = l.root;
+                        n = i.root;
                     return t && r ? a.createElement(o.ZP, { color: "gray700", size: "subtext2", style: n }, e, " ", this._renderLearnMore()) : a.createElement(o.ZP, { color: "gray700", size: "subtext2", style: n }, e);
                 }
             }
-            const l = n.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
-                s = i;
+            const i = n.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
+                s = l;
         },
         101890: (e, t, r) => {
-            r.d(t, { Z: () => l });
+            r.d(t, { Z: () => i });
             var a = r(202784),
                 o = r(325686),
                 n = r(449479),
-                i = r(392237);
-            const l = (e) => a.createElement(o.Z, { style: s.root }, a.createElement(n.Z, e)),
-                s = i.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } }));
+                l = r(392237);
+            const i = (e) => a.createElement(o.Z, { style: s.root }, a.createElement(n.Z, e)),
+                s = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } }));
         },
         16790: (e, t, r) => {
             r.d(t, { Z: () => g });
             var a = r(202784),
                 o = r(325686),
                 n = r(392237),
-                i = r(913973),
-                l = r(803993),
+                l = r(913973),
+                i = r(803993),
                 s = r(731708),
                 c = r(950822),
                 d = r(58881),
@@ -186,14 +186,14 @@
                 m = function ({ "aria-label": e, autoFocus: t, backgroundName: r, isSelected: m, label: g, name: b, onChange: f }) {
                     const y = a.createRef(),
                         C = a.useMemo(() => d.Z.generate({ backgroundColor: n.default.theme.colors.transparent, color: n.default.theme.colors.primary, withFocusWithinFocusRing: !0 }), []),
-                        k = a.useMemo(() => {
+                        v = a.useMemo(() => {
                             d.Z.generate({ backgroundColor: n.default.theme.colors.transparent, color: n.default.theme.colors.gray700, withFocusWithinFocusRing: !0 });
                         }, []),
-                        v = a.useMemo(() => (r === h.CV.dark ? l.Vi : r === h.CV.darker ? l.SR : l.vh), [r]),
-                        w = a.useMemo(() => ({ backgroundColor: v.cellBackground, borderColor: m ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: m ? "2px" : "1px" }), [m, v.cellBackground]),
-                        Z = a.useMemo(() => ({ backgroundColor: m ? n.default.theme.colors.primary : n.default.theme.colors.transparent, borderColor: m ? n.default.theme.colors.primary : v.gray300 }), [m, v.gray300]),
-                        E = a.useMemo(() => (m ? C : k), [m, C, k]),
-                        x = a.useMemo(() => ({ color: v.text }), [v.text]);
+                        k = a.useMemo(() => (r === h.CV.dark ? i.Vi : r === h.CV.darker ? i.SR : i.vh), [r]),
+                        w = a.useMemo(() => ({ backgroundColor: k.cellBackground, borderColor: m ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: m ? "2px" : "1px" }), [m, k.cellBackground]),
+                        E = a.useMemo(() => ({ backgroundColor: m ? n.default.theme.colors.primary : n.default.theme.colors.transparent, borderColor: m ? n.default.theme.colors.primary : k.gray300 }), [m, k.gray300]),
+                        Z = a.useMemo(() => (m ? C : v), [m, C, v]),
+                        x = a.useMemo(() => ({ color: k.text }), [k.text]);
                     function R(e) {
                         f && !m && f(r);
                     }
@@ -201,19 +201,19 @@
                         a.useEffect(() => {
                             t && y.current && y.current.focus();
                         }, [t, y]),
-                        a.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [p.root, w] }, (t) => a.createElement(a.Fragment, null, a.createElement(u.Z, { focusable: !1, interactiveStyles: E, interactivityState: t, role: "radio", style: p.radioOuterCircle }, a.createElement(o.Z, { style: [p.radioInnerCircle, Z] }, m ? a.createElement(i.default, { style: p.checkMark }) : null)), a.createElement(o.Z, { "aria-hidden": !0, style: p.text }, a.createElement(s.ZP, { numberOfLines: 1, style: x, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: m, name: b, style: p.nativeControl, type: "radio", onChange: R, ref: y })))
+                        a.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [p.root, w] }, (t) => a.createElement(a.Fragment, null, a.createElement(u.Z, { focusable: !1, interactiveStyles: Z, interactivityState: t, role: "radio", style: p.radioOuterCircle }, a.createElement(o.Z, { style: [p.radioInnerCircle, E] }, m ? a.createElement(l.default, { style: p.checkMark }) : null)), a.createElement(o.Z, { "aria-hidden": !0, style: p.text }, a.createElement(s.ZP, { numberOfLines: 1, style: x, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: m, name: b, style: p.nativeControl, type: "radio", onChange: R, ref: y })))
                     );
                 };
-            function g({ "aria-label": e, autoFocus: t, layout: r, onChange: n, options: i, value: l }) {
+            function g({ "aria-label": e, autoFocus: t, layout: r, onChange: n, options: l, value: i }) {
                 return a.createElement(
                     o.Z,
                     { "aria-label": e, role: "radiogroup", style: "row" === r ? b.row : b.column },
-                    i.map((e) => {
+                    l.map((e) => {
                         return a.createElement(m, {
                             "aria-label": e["aria-label"],
-                            autoFocus: t && e.backgroundName === l,
+                            autoFocus: t && e.backgroundName === i,
                             backgroundName: e.backgroundName,
-                            isSelected: e.backgroundName === l,
+                            isSelected: e.backgroundName === i,
                             key: e.backgroundName,
                             label: e.label,
                             name: "background-picker",
@@ -234,8 +234,8 @@
             var a = r(202784),
                 o = r(325686),
                 n = r(392237),
-                i = r(136483),
-                l = r(913973),
+                l = r(136483),
+                i = r(913973),
                 s = r(950822),
                 c = r(58881),
                 d = r(530732);
@@ -255,7 +255,7 @@
                     const { "aria-label": e, colorName: t, isSelected: r, name: u, style: p } = this.props,
                         m = n.default.theme.colors[t],
                         g = c.Z.generate({ backgroundColor: n.default.theme.colors.transparent, color: m, withFocusWithinFocusRing: !0 });
-                    return a.createElement(o.Z, { style: [h.container, p] }, a.createElement(d.Z, { interactiveStyles: g, role: "label", style: [h.choice, h.choiceContainer] }, a.createElement(i.default, { style: [h.choice, { color: m }] }), (0, s.Z)("input", { "aria-label": e, name: u, checked: r, onChange: this._handleChange, ref: this._radioRef, style: h.nativeControl, type: "radio" })), r && a.createElement(o.Z, { style: [h.choice, h.checkMarkContainer] }, a.createElement(l.default, { style: [h.choiceSelected, { backgroundColor: m }] })));
+                    return a.createElement(o.Z, { style: [h.container, p] }, a.createElement(d.Z, { interactiveStyles: g, role: "label", style: [h.choice, h.choiceContainer] }, a.createElement(l.default, { style: [h.choice, { color: m }] }), (0, s.Z)("input", { "aria-label": e, name: u, checked: r, onChange: this._handleChange, ref: this._radioRef, style: h.nativeControl, type: "radio" })), r && a.createElement(o.Z, { style: [h.choice, h.checkMarkContainer] }, a.createElement(i.default, { style: [h.choiceSelected, { backgroundColor: m }] })));
                 }
             }
             const h = n.default.create((e) => ({ container: { alignItems: "center", paddingVertical: e.spaces.space4, userSelect: "none" }, choice: { cursor: "pointer", height: 45, width: 45 }, checkMarkContainer: { alignItems: "center", justifyContent: "center", position: "absolute" }, choiceSelected: { color: e.colors.whiteOnColor, height: 25, width: 25 }, choiceContainer: { borderRadius: e.borderRadii.infinite }, transitionStyle: { transitionProperty: "transform", transitionDuration: "0.1s" }, focusedStyle: { outlineStyle: "none" }, hoverStyle: { transform: [{ scale: 1.1 }] }, pressedStyle: { transform: [{ scale: 0.95 }] }, nativeControl: { ...n.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" } })),
@@ -266,14 +266,14 @@
                     super(), (this._colorPickerId = `COLOR_PICKER_${m}_LABEL`), (m += 1);
                 }
                 render() {
-                    const { "aria-label": e, autoFocus: t, layout: r, onChange: n, options: i, value: l } = this.props,
+                    const { "aria-label": e, autoFocus: t, layout: r, onChange: n, options: l, value: i } = this.props,
                         s = "two-rows" === r,
                         c = [b.root, s && b.flexWrap],
-                        d = s ? { width: (2 / i.length) * 100 + "%" } : void 0;
+                        d = s ? { width: (2 / l.length) * 100 + "%" } : void 0;
                     return a.createElement(
                         o.Z,
                         { "aria-label": e, role: "radiogroup", style: c },
-                        i.map(({ "aria-label": e, colorName: r }) => a.createElement(p, { "aria-label": e, autoFocus: t && l === r, colorName: r, isSelected: l === r, key: r, name: this._colorPickerId, onChange: n, style: d })),
+                        l.map(({ "aria-label": e, colorName: r }) => a.createElement(p, { "aria-label": e, autoFocus: t && i === r, colorName: r, isSelected: i === r, key: r, name: this._colorPickerId, onChange: n, style: d })),
                     );
                 }
             }
@@ -281,32 +281,19 @@
             const b = n.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-around" }, flexWrap: { flexWrap: "wrap" } })),
                 f = g;
         },
-        266151: (e, t, r) => {
+        648539: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var a = r(202784),
                 o = r(890601),
                 n = r(783427),
-                i = r(347101);
-            const l = (e = {}) => {
+                l = r(347101);
+            const i = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M10 5H2V3h8v2zM7 7H2v2h5V7zm12.94 4.946C19.48 15.918 16.1 19 12 19H8.19c-.12.988-.19 1.993-.19 3H6c0-4.669 1.29-9.39 3.95-12.97C12.62 5.421 16.38 2.9 23 3c.17 3.359-.21 7.147-3.06 8.946zM21 5.033c-4.16.276-7.29 2.275-9.45 5.187-1.43 1.929-2.43 4.268-3 6.78H12c2.68 0 4.95-1.76 5.72-4.188-.52.108-1.09.172-1.72.188h-1.5v-2H16c3.9 0 4.95-2.921 5-5.967z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
             };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        314948: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => s });
-            var a = r(202784),
-                o = r(890601),
-                n = r(783427),
-                i = r(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-bc6ccf4c.b90d12aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-bc6ccf4c.bd076aea.js.map

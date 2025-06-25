@@ -147,13 +147,13 @@
                 E = a(125363),
                 v = a(601576),
                 M = a(919022);
-            const Z = m().ia5e7488,
-                P = { label: Z },
+            const P = m().ia5e7488,
+                Z = { label: P },
                 T = m().j33d8902,
-                C = { label: T },
-                I = m().a8ab3d08,
-                x = m().d740d2d9,
-                k = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(f.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(D.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
+                I = { label: T },
+                C = m().a8ab3d08,
+                k = m().d740d2d9,
+                x = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(f.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(D.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
             function A({ style: e, userId: t }) {
                 const a = (0, E.I0)(),
                     [s, c] = r.useState(!1),
@@ -171,7 +171,7 @@
                     null,
                     r.createElement(l.ZP, {
                         "aria-label": T,
-                        hoverLabel: C,
+                        hoverLabel: I,
                         icon: r.createElement(w.default, null),
                         onPress: function () {
                             c((e) => !e);
@@ -182,17 +182,17 @@
                         ? r.createElement(
                               i.Z,
                               { onMaskClick: b, style: S.sheet, type: "bottom", withMask: !0 },
-                              r.createElement(l.ZP, { "aria-label": Z, hoverLabel: P, icon: r.createElement(y.default, null), onPress: b, style: S.close, type: "primaryText" }),
-                              r.createElement(o.Z, { style: S.header }, r.createElement(d.ZP, { weight: "bold" }, I), r.createElement(d.ZP, null, `@${m.screen_name}`)),
+                              r.createElement(l.ZP, { "aria-label": P, hoverLabel: Z, icon: r.createElement(y.default, null), onPress: b, style: S.close, type: "primaryText" }),
+                              r.createElement(o.Z, { style: S.header }, r.createElement(d.ZP, { weight: "bold" }, C), r.createElement(d.ZP, null, `@${m.screen_name}`)),
                               Object.entries(p)
                                   .filter(([e, t]) => t)
                                   .map(([e, t]) => {
-                                      const o = k[e];
+                                      const o = x[e];
                                       if (o) {
                                           const l = o.url
                                                   ? void 0
                                                   : function () {
-                                                        n.Z.setString(String(t)), a((0, v.fz)({ text: x({ service: o.label }) }));
+                                                        n.Z.setString(String(t)), a((0, v.fz)({ text: k({ service: o.label }) }));
                                                     },
                                               i = o.url ? `${o.url}${String(t)}` : void 0;
                                           return r.createElement(d.ZP, { color: "text", key: e, link: i, onPress: l, style: S.service, withInteractiveStyling: !1 }, o.icon, o.label);
@@ -213,16 +213,17 @@
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -368,7 +369,7 @@
                 n = { Canceled: "CANCELED", Ended: "ENDED", NotStarted: "NOT_STARTED", PrePublished: "PRE_PUBLISHED", Running: "RUNNING", TimedOut: "TIMED_OUT" };
         },
         365470: (e, t, a) => {
-            a.r(t), a.d(t, { LiveScreen: () => Be, default: () => Ue });
+            a.r(t), a.d(t, { LiveScreen: () => Be, default: () => Oe });
             var r = a(202784),
                 n = a(272175),
                 o = a(325686),
@@ -391,32 +392,32 @@
                 E = a(38293),
                 v = a(652904),
                 M = a(382285),
-                Z = a(181142),
-                P = a(310453),
+                P = a(181142),
+                Z = a(310453),
                 T = a(51525),
-                C = a(655352),
-                I = a(293115),
-                x = a(503229),
-                k = a(10195),
+                I = a(655352),
+                C = a(293115),
+                k = a(503229),
+                x = a(10195),
                 A = a(679180),
                 S = a(386592),
                 N = a(807896),
                 L = a(666305);
             const F = r.memo(({ ...e }) => {
-                    const { ref: t, style: a } = z(),
+                    const { ref: t, style: a } = U(),
                         n = r.useMemo(() => [a, e.style], [a, e.style]);
                     return r.createElement(o.Z, (0, N.Z)({ ref: t }, e, { style: n }));
                 }),
                 B = 16 / 9,
-                z = () => {
+                U = () => {
                     const e = r.useRef(null),
                         [t, a] = r.useState(!0),
                         n = r.useCallback(() => {
                             const t = e.current,
                                 r = t?.parentElement;
                             if (!t || !r) return;
-                            const n = U(r),
-                                o = U(t);
+                            const n = O(r),
+                                o = O(t);
                             a(o >= n);
                         }, []);
                     r.useEffect(() => {
@@ -431,23 +432,23 @@
                                 }
                             );
                     }, [n]);
-                    const o = r.useMemo(() => (t ? O.widthConstrained : O.heightConstrained), [t]);
+                    const o = r.useMemo(() => (t ? R.widthConstrained : R.heightConstrained), [t]);
                     return { ref: e, style: o };
                 },
-                U = (e) => {
+                O = (e) => {
                     const { height: t, width: a } = e.getBoundingClientRect();
                     return a / t;
                 },
-                O = m.default.create((e) => {
+                R = m.default.create((e) => {
                     const t = { aspectRatio: B, marginHorizontal: "auto", top: 0 };
                     return { widthConstrained: { ...t, width: "100%", height: "auto" }, heightConstrained: { ...t, height: "100%", width: "auto" } };
                 });
-            var R = a(400752),
-                H = a(107267),
-                W = a(154003),
-                j = a(978053),
-                V = a(673510),
-                $ = a(366635),
+            var W = a(400752),
+                z = a(107267),
+                j = a(154003),
+                H = a(978053),
+                $ = a(673510),
+                V = a(366635),
                 q = a(360816),
                 Y = a(293988),
                 G = a(23134),
@@ -464,17 +465,17 @@
                 le = b().daca8a2c,
                 ie = r.memo(({ broadcast: e, broadcastId: t, broadcaster: a, isLive: n }) => {
                     const { featureSwitches: i, viewerUserId: d } = (0, y.QZ)(),
-                        s = (0, H.useHistory)(),
+                        s = (0, z.useHistory)(),
                         c = (0, X.I0)(),
-                        m = (0, R.b9)(te.Tc),
+                        m = (0, W.b9)(te.Tc),
                         h = r.useCallback(() => {
                             t && (m(t), c(J.bi(ee.N.EXPANDED)), s.goBack());
                         }, [t, c, s, m]),
-                        p = r.useCallback(() => r.createElement(W.ZP, { "aria-label": le, hoverLabel: { label: le }, icon: r.createElement(q.default, null), onPress: h, type: "primaryOutlined" }), [h]),
+                        p = r.useCallback(() => r.createElement(j.ZP, { "aria-label": le, hoverLabel: { label: le }, icon: r.createElement(q.default, null), onPress: h, type: "primaryOutlined" }), [h]),
                         b = r.useCallback((e) => {
                             const t = new Date(),
                                 a = new Date(e);
-                            return t.getTime() - a.getTime() > 2592e6 ? ae(a) : j.default.formatTimeSinceDate(a);
+                            return t.getTime() - a.getTime() > 2592e6 ? ae(a) : H.default.formatTimeSinceDate(a);
                         }, []),
                         f = r.useMemo(() => {
                             const t = e?.end_time ?? e?.timedout_time ?? e?.start_time;
@@ -483,7 +484,7 @@
                             return r.createElement(u.ZP, { color: "gray700", size: "subtext1" }, n ? re({ timestamp: a }) : ne({ timestamp: a }));
                         }, [e, b, n]),
                         g = r.useCallback(() => (!a || d === a.id_str || a.blocked_by ? null : r.createElement(o.Z, { style: de.userActionsWrapper }, r.createElement(p, null), i.isTrue("rweb_tipjar_consumption_enabled") && r.createElement(Q.Z, { userId: a.id_str }), a.following && r.createElement(Y.Z, { allowPromptForPush: !0, isFollowing: a.notifications, userId: a.id_str }), r.createElement(G.C, { isSuperFollowSubscriptionEnabled: i.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: a.promoted_content, userId: a.id_str }))), [p, a, i, d]),
-                        D = r.useMemo(() => (a ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement(V.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: g(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: de.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement($.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [g, a]);
+                        D = r.useMemo(() => (a ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement($.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: g(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: de.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: de.userNameWrapper }, r.createElement(V.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [g, a]);
                     return r.createElement(o.Z, { style: de.header }, D, r.createElement(o.Z, { style: de.timeAndShareWrapper }, f, t && r.createElement(K.Tz, { scribeNamespace: oe, url: (0, l.ju)(`https://x.com/i/broadcasts/${t}`) })));
                 }),
                 de = m.default.create((e) => ({ header: { flexDirection: "column", gap: e.spaces.space12, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, marginBottom: e.spaces.space48 }, userCell: { paddingHorizontal: 0, paddingVertical: 0, width: "100%" }, userActionsWrapper: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space8 }, userNameWrapper: { alignItems: "flex-start", flex: 1, justifyContent: "center" }, timeAndShareWrapper: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } }));
@@ -531,37 +532,37 @@
                     .propsFromState(() => ({ broadcast: _e, broadcastId: ge, broadcaster: De, fetchStatus: Ee, latestBroadcastFetched: ye, screenName: fe, timecode: be, viewerUser: we }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, se.zr)("LIVE_SCREEN"), fetchBroadcast: ue.Z.fetchOneIfNeeded, fetchLatestBroadcast: ue.Z.fetchLatestBroadcast })),
                 Me = 16 / 9,
-                Ze = { objectFitVideo: "contain" },
-                Pe = ({ windowWidth: e }) => e >= 920,
+                Pe = { objectFitVideo: "contain" },
+                Ze = ({ windowWidth: e }) => e >= 920,
                 Te = (e) => (e ? { url: e.image_url, width: e.width, height: e.height } : null),
-                Ce = b().hd0bc1eb,
-                Ie = b().bea1f26b,
-                xe = b().jceadc3e,
-                ke = b().ab3ee97f,
+                Ie = b().hd0bc1eb,
+                Ce = b().bea1f26b,
+                ke = b().jceadc3e,
+                xe = b().ab3ee97f,
                 Ae = b().ac4c73d8,
                 Se = b().i9028824,
                 Ne = { page: "broadcast" },
                 Le = { url: "https://pbs.twimg.com/lex/placeholder_live_nomargin.png", width: 1920, height: 1080 },
                 Fe = (e, t) => (0, l.ju)(`https://x.com/i/broadcasts/${e}${t ? `?t=${t}` : ""}`);
             function Be(e) {
-                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: x, fetchLatestBroadcast: N, fetchStatus: L, latestBroadcastFetched: B, screenName: z, timecode: U } = e,
-                    O = r.useContext(y.rC),
-                    { viewerUserId: R } = O,
-                    H = l?.id_str === R,
-                    W = (0, i.Zx)(Pe),
-                    j = (0, C.ZP)();
+                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: k, fetchLatestBroadcast: N, fetchStatus: L, latestBroadcastFetched: B, screenName: U, timecode: O } = e,
+                    R = r.useContext(y.rC),
+                    { viewerUserId: W } = R,
+                    z = l?.id_str === W,
+                    j = (0, i.Zx)(Ze),
+                    H = (0, I.ZP)();
                 (0, D.ph)(),
                     (0, D.hB)(),
                     r.useEffect(() => {
-                        z && N(z);
-                    }, [N, z]);
-                const V = r.useCallback(() => {
-                    a && x(a).catch(p({ [g.ZP.GenericNotFound]: { customAction: T.vv } }));
-                }, [a, p, x]);
+                        U && N(U);
+                    }, [N, U]);
+                const $ = r.useCallback(() => {
+                    a && k(a).catch(p({ [g.ZP.GenericNotFound]: { customAction: T.vv } }));
+                }, [a, p, k]);
                 r.useEffect(() => {
-                    V();
-                }, [V, a]);
-                const $ = r.useMemo(() => {
+                    $();
+                }, [$, a]);
+                const V = r.useMemo(() => {
                         if (t && l) {
                             const { state: e, status: a } = t,
                                 { name: r } = l;
@@ -569,23 +570,23 @@
                             if (r)
                                 switch (e) {
                                     case S.N8.Running:
-                                        return Ce({ name: r });
+                                        return Ie({ name: r });
                                     case S.N8.Ended:
                                     case S.N8.TimedOut:
-                                        return Ie({ name: r });
+                                        return Ce({ name: r });
                                     case S.N8.NotStarted:
                                     default:
-                                        return xe;
+                                        return ke;
                                 }
                         }
-                        return xe;
+                        return ke;
                     }, [t, l]),
                     q = b().d980e29f,
                     Y = b().fc209bb7,
                     G = r.useCallback(() => {
                         const e = t && t.scheduled_start_time ? new Date(parseInt(t.scheduled_start_time, 10)) : void 0,
                             a = e ? q({ date: Y(e) }) : void 0;
-                        return a ? r.createElement(o.Z, { style: ze.labelOverlay }, r.createElement(d.ZP, null, a)) : null;
+                        return a ? r.createElement(o.Z, { style: Ue.labelOverlay }, r.createElement(d.ZP, null, a)) : null;
                     }, [t, Y, q]),
                     K = r.useCallback(() => {
                         const e = t && t.pre_live_slate_url ? { url: t.pre_live_slate_url, width: 600, height: 337 } : Le;
@@ -595,12 +596,12 @@
                         const e = t && t.media_key,
                             i = !a && l && B,
                             d = Te(t);
-                        return t && t.state === S.N8.NotStarted ? K() : i ? r.createElement(o.Z, { style: ze.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, ke({ screenName: z }))) : t && l && a && d && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: d.url, property: "og:image" }), r.createElement("meta", { content: d.width, property: "og:image:width" }), r.createElement("meta", { content: d.height, property: "og:image:height" })), r.createElement(P.Z, { "aria-label": Ae, aspectRatio: Me, displayOptions: Ze, poster: d, source: { variants: [], videoId: f.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
-                    }, [t, a, l, B, K, z]),
-                    X = r.useMemo(() => r.createElement(o.Z, { style: ze.chat }, r.createElement(M.Z, { broadcastId: a ?? "", defaultChatNotice: ke({ screenName: z }) })), [a, z]),
-                    J = r.useCallback(() => r.createElement(Z.aM, null, r.createElement(o.Z, { style: [ze.container, j ? ze.navBorder : void 0] }, r.createElement(o.Z, { style: ze.videoContainer }, r.createElement(F, null, Q), a && r.createElement(o.Z, { style: ze.title }, r.createElement(A.H, { broadcastId: a, canEdit: H, remoteTitle: $ })), r.createElement(ie, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), W && X)), [X, Q, t, a, l, H, W, j, $]);
+                        return t && t.state === S.N8.NotStarted ? K() : i ? r.createElement(o.Z, { style: Ue.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, xe({ screenName: U }))) : t && l && a && d && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: d.url, property: "og:image" }), r.createElement("meta", { content: d.width, property: "og:image:width" }), r.createElement("meta", { content: d.height, property: "og:image:height" })), r.createElement(Z.Z, { "aria-label": Ae, aspectRatio: Me, displayOptions: Pe, poster: d, source: { variants: [], videoId: f.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
+                    }, [t, a, l, B, K, U]),
+                    X = r.useMemo(() => r.createElement(o.Z, { style: Ue.chat }, r.createElement(M.Z, { broadcastId: a ?? "", defaultChatNotice: xe({ screenName: U }) })), [a, U]),
+                    J = r.useCallback(() => r.createElement(P.aM, null, r.createElement(o.Z, { style: [Ue.container, H ? Ue.navBorder : void 0] }, r.createElement(o.Z, { style: Ue.videoContainer }, r.createElement(F, null, Q), a && r.createElement(o.Z, { style: Ue.title }, r.createElement(A.H, { broadcastId: a, canEdit: z, remoteTitle: V })), r.createElement(ie, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), j && X)), [X, Q, t, a, l, z, j, H, V]);
                 return r.createElement(
-                    I.nO,
+                    C.nO,
                     { namespace: Ne },
                     r.createElement(
                         v.Z,
@@ -609,16 +610,16 @@
                             const n = l?.name,
                                 o = `twitter://broadcasts/${a || ""}`,
                                 i = Fe(a || ""),
-                                d = Fe(a || "", U);
-                            return l ? r.createElement(r.Fragment, null, r.createElement(w.Z, { canonical: i, description: e, title: n, type: "article" }), r.createElement(_.Z, { deepLink: o }), r.createElement(k.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: U, title: e, url: d })) : null;
-                        })($),
-                        r.createElement(E.Z, { title: $, withMeta: !1 }),
-                        r.createElement(h.Z, { "aria-label": Se, fetchStatus: L, onRequestRetry: V, render: J }),
+                                d = Fe(a || "", O);
+                            return l ? r.createElement(r.Fragment, null, r.createElement(w.Z, { canonical: i, description: e, title: n, type: "article" }), r.createElement(_.Z, { deepLink: o }), r.createElement(x.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: O, title: e, url: d })) : null;
+                        })(V),
+                        r.createElement(E.Z, { title: V, withMeta: !1 }),
+                        r.createElement(h.Z, { "aria-label": Se, fetchStatus: L, onRequestRetry: $, render: J }),
                     ),
                 );
             }
-            const ze = m.default.create((e) => ({ container: { display: "flex", flexDirection: "row", height: "100vh", overflow: "hidden" }, chat: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor, height: "100vh", width: "340px" }, labelOverlay: { position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12 }, navBorder: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, title: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-between", paddingHorizontal: e.spaces.space12, paddingTop: e.spaces.space12 }, offlineContainer: { aspectRatio: Me, backgroundColor: e.colors.gray0, flex: 1, justifyContent: "center", alignItems: "center" }, videoContainer: { flex: 1, WebkitOverflowScrolling: "touch", scrollbarWidth: "none", msOverflowStyle: "none", overflow: "auto" } })),
-                Ue = ve((0, x.Z)(Be));
+            const Ue = m.default.create((e) => ({ container: { display: "flex", flexDirection: "row", height: "100vh", overflow: "hidden" }, chat: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor, height: "100vh", width: "340px" }, labelOverlay: { position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12 }, navBorder: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, title: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-between", paddingHorizontal: e.spaces.space12, paddingTop: e.spaces.space12 }, offlineContainer: { aspectRatio: Me, backgroundColor: e.colors.gray0, flex: 1, justifyContent: "center", alignItems: "center" }, videoContainer: { flex: 1, WebkitOverflowScrolling: "touch", scrollbarWidth: "none", msOverflowStyle: "none", overflow: "auto" } })),
+                Oe = ve((0, k.Z)(Be));
         },
         978053: (e, t, a) => {
             a.d(t, { default: () => b });
@@ -691,7 +692,7 @@
             i.metadata = { width: 24, height: 24 };
             const d = i;
         },
-        748138: (e, t, a) => {
+        70962: (e, t, a) => {
             a.r(t), a.d(t, { default: () => d });
             var r = a(202784),
                 n = a(890601),
@@ -699,37 +700,11 @@
                 l = a(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const d = i;
-        },
-        74514: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => d });
-            var r = a(202784),
-                n = a(890601),
-                o = a(783427),
-                l = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const d = i;
-        },
-        707305: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => d });
-            var r = a(202784),
-                n = a(890601),
-                o = a(783427),
-                l = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.1 4c.62 1.02.9 2.072.9 3.4 0 4.235-3.629 9.737-6.574 13.6H6.698L4 4.927l5.89-.557 1.427 11.437c1.333-2.163 2.978-5.563 2.978-7.88 0-1.27-.218-2.134-.56-2.845L19.1 4z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M11.749 1.072c.072-.046.157-.07.243-.072.089-.001.176.022.251.068.076.045.136.11.175.189l6.494 10.018.014.021.002.004.003.004.022.038v.003h.002l.012.03.005.012.004.01.01.034v.001l.008.039v.005l.003.029.002.027v.045l-.005.035-.008.042-.001.003-.001.002-.01.031-.003.01-.004.01-.014.034-.022.036v.003h-.002c-.008.014-.016.026-.025.038l-.03.034c-.01.01-.019.02-.029.028l-.005.005-.002.002-.028.02-.007.005-.009.007-.03.018-.01.006-6.468 3.629c-.082.063-.184.097-.288.097-.105 0-.206-.036-.288-.099l-6.474-3.632-.008-.004v-.001c-.027-.015-.052-.034-.075-.054-.012-.01-.022-.021-.032-.033l-.017-.02-.014-.016-.025-.038-.022-.04-.017-.043-.004-.013c-.007-.022-.013-.044-.016-.067l-.002-.009L5 11.557c0-.03.001-.06.007-.09.005-.031.013-.06.024-.09l.018-.04.001-.001c.01-.017.019-.033.03-.049l6.5-10.027c.037-.077.096-.142.169-.188z" }), r.createElement("path", { d: "M18.301 13.435c.072-.04.153-.062.235-.061.086 0 .17.024.244.069.073.045.132.109.17.184.04.076.056.16.048.245-.007.084-.039.165-.09.233l-6.503 8.663c-.04.07-.1.13-.17.17-.072.04-.153.062-.236.062-.083 0-.164-.022-.235-.063-.071-.04-.13-.1-.17-.17L5.09 14.105c-.051-.07-.082-.15-.09-.236-.006-.085.011-.17.051-.247.04-.076.101-.14.176-.183.075-.044.16-.066.248-.064.078.001.155.022.222.06L12 16.97l6.301-3.535z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const d = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.LiveEvent~bundle.Live.ff07c40a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.LiveEvent~bundle.Live.db267bda.js.map

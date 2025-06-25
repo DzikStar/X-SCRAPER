@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "b1c6c6d683770d515d68c461cb854428a9d265c0",
+    feature_set_token: "b0800b76153b4f053a39cb8fd2ff42c4270c0b0e",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -944,7 +944,7 @@ var manifest = {
         subscriptions_marketing_page_web_refresh_enabled: { value: !0 },
         subscriptions_mute_ad_upsell_enabled: { value: !0 },
         subscriptions_offers_churn_prevention_enabled: { value: !1 },
-        subscriptions_offers_dynamic_upsells_enabled: { value: !1 },
+        subscriptions_offers_dynamic_upsells_enabled: { value: !0 },
         subscriptions_offers_localized_pricing_enabled: { value: !1 },
         subscriptions_premium_experiment_nav_text: { value: !1 },
         subscriptions_premium_hub_insights_block_enabled: { value: !0 },
@@ -2835,7 +2835,7 @@ var manifest = {
         subscriptions_offers_promotional_premium_monthly_enabled: { name: "subscriptions_offers_promotional_premium_monthly_enabled", type: "string" },
         subscriptions_offers_group_id_key: { name: "subscriptions_offers_group_id_key", type: "string" },
         subscriptions_offers_churn_prevention_enabled: { name: "subscriptions_offers_churn_prevention_enabled", type: "boolean", defaultValue: !1 },
-        subscriptions_offers_dynamic_upsells_enabled: { name: "subscriptions_offers_dynamic_upsells_enabled", type: "boolean", defaultValue: !1 },
+        subscriptions_offers_dynamic_upsells_enabled: { name: "subscriptions_offers_dynamic_upsells_enabled", type: "boolean", defaultValue: !0 },
         subscriptions_offers_localized_pricing_enabled: { name: "subscriptions_offers_localized_pricing_enabled", type: "boolean", defaultValue: !1 },
         subscriptions_premium_experiment_nav_text: { name: "subscriptions_premium_experiment_nav_text", type: "boolean", defaultValue: !1 },
         subscriptions_premium_hub_enabled: { name: "subscriptions_premium_hub_enabled", type: "string" },

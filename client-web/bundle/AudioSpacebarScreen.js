@@ -19,12 +19,12 @@
             var a = n(202784),
                 r = n(272175);
             const o = (e) => {
-                const { canonical: t, description: n = "", image: o, imageAlt: c, imageH: i, imageType: l, imageW: s, title: p, ttl: m, type: d } = e;
-                return a.createElement(r.ql, null, d ? a.createElement("meta", { content: d, property: "og:type" }) : null, t ? a.createElement("meta", { content: t, property: "og:url" }) : null, p ? a.createElement("meta", { content: p, property: "og:title" }) : null, a.createElement("meta", { content: n, property: "og:description" }), o ? a.createElement("meta", { content: o, property: "og:image" }) : null, l ? a.createElement("meta", { content: l, property: "og:image:type" }) : null, s ? a.createElement("meta", { content: s, property: "og:image:width" }) : null, i ? a.createElement("meta", { content: i, property: "og:image:height" }) : null, c ? a.createElement("meta", { content: c, property: "og:image:alt" }) : null, m ? a.createElement("meta", { content: m, property: "og:ttl" }) : null);
+                const { canonical: t, description: n = "", image: o, imageAlt: c, imageH: i, imageType: l, imageW: p, title: s, ttl: u, type: m } = e;
+                return a.createElement(r.ql, null, m ? a.createElement("meta", { content: m, property: "og:type" }) : null, t ? a.createElement("meta", { content: t, property: "og:url" }) : null, s ? a.createElement("meta", { content: s, property: "og:title" }) : null, a.createElement("meta", { content: n, property: "og:description" }), o ? a.createElement("meta", { content: o, property: "og:image" }) : null, l ? a.createElement("meta", { content: l, property: "og:image:type" }) : null, p ? a.createElement("meta", { content: p, property: "og:image:width" }) : null, i ? a.createElement("meta", { content: i, property: "og:image:height" }) : null, c ? a.createElement("meta", { content: c, property: "og:image:alt" }) : null, u ? a.createElement("meta", { content: u, property: "og:ttl" }) : null);
             };
         },
         652904: (e, t, n) => {
-            n.d(t, { Z: () => p });
+            n.d(t, { Z: () => s });
             var a = n(202784),
                 r = n(500002),
                 o = n(668214),
@@ -33,7 +33,7 @@
             const l = (0, o.Z)()
                 .propsFromActions(() => ({ updateLocation: i.YF, updateTweetDetailNav: c.NH }))
                 .withAnalytics();
-            class s extends a.Component {
+            class p extends a.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
@@ -49,8 +49,8 @@
                         } = e;
                     let l = !1;
                     t.pathname !== n ? (this._isInBackground = !0) : this._isInBackground && t.pathname === n && ((this._isInBackground = !1), (l = !0));
-                    const s = r || i;
-                    ((s && r !== i) || (!s && n !== o) || a !== c || l) && this._performPageUpdates(this.props);
+                    const p = r || i;
+                    ((p && r !== i) || (!p && n !== o) || a !== c || l) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -60,46 +60,46 @@
                     t.scribePageImpression(), n(t.contextualScribeNamespace, t.contextualScribeData), a(t.contextualScribeNamespace);
                 }
             }
-            s.defaultProps = { children: null };
-            const p = (0, r.ZP)(l(s));
+            p.defaultProps = { children: null };
+            const s = (0, r.ZP)(l(p));
         },
         805137: (e, t, n) => {
-            n.d(t, { B: () => v });
+            n.d(t, { B: () => y });
             var a = n(807896),
                 r = (n(136728), n(202784)),
                 o = n(555874),
                 c = n(537392),
                 i = n(457311),
                 l = n(108362),
-                s = n(392237),
-                p = n(776342),
-                m = n(111677),
-                d = n.n(m),
-                u = n(774654),
+                p = n(392237),
+                s = n(668260),
+                u = n(111677),
+                m = n.n(u),
+                d = n(774654),
                 h = n(755988),
                 g = n(22492),
                 f = n(109808);
-            function v() {
-                const e = u.ZM.getAppBarHeight(),
+            function y() {
+                const e = d.ZM.getAppBarHeight(),
                     t = { minHeight: (0, c.iv)().height - e, paddingBottom: e },
                     n = (0, f.e)(),
-                    s = n?.threads || [];
-                if (!s.length) return r.createElement(i.Z, { header: _.Nothing_to_see_here });
-                const p = [];
+                    p = n?.threads || [];
+                if (!p.length) return r.createElement(i.Z, { header: v.Nothing_to_see_here });
+                const s = [];
                 return (
-                    s.forEach((e) => {
+                    p.forEach((e) => {
                         if (e.live_content.audiospace) {
                             const t = e.live_content.audiospace.broadcast_id;
-                            p.push({ audioSpaceId: t });
+                            s.push({ audioSpaceId: t });
                         }
                     }),
-                    r.createElement(l.Z, { withGutter: !0 }, r.createElement(o.Z, (0, a.Z)({}, E, { data: p, style: [t, y.flatList] })), r.createElement(E.ItemSeparatorComponent, null))
+                    r.createElement(l.Z, { withGutter: !0 }, r.createElement(o.Z, (0, a.Z)({}, _, { data: s, style: [t, E.flatList] })), r.createElement(_.ItemSeparatorComponent, null))
                 );
             }
-            const y = s.default.create((e) => ({ flatList: { scrollbarWidth: "none" } })),
-                E = {
+            const E = p.default.create((e) => ({ flatList: { scrollbarWidth: "none" } })),
+                _ = {
                     getItemLayout: function (e, t) {
-                        const n = p.default.getMinHeight(!1);
+                        const n = s.default.getMinHeight(!1);
                         return { index: t, length: n, offset: n * t };
                     },
                     ItemSeparatorComponent: function (e) {
@@ -113,7 +113,7 @@
                     },
                     windowSize: 2,
                 },
-                _ = { Nothing_to_see_here: d().e9f1fbcc };
+                v = { Nothing_to_see_here: m().e9f1fbcc };
         },
         22492: (e, t, n) => {
             n.d(t, { L: () => c });
@@ -138,55 +138,55 @@
                 c = n(987809),
                 i = n(516951),
                 l = n(176340),
-                s = n(420182),
-                p = n(385322),
-                m = n(333259),
-                d = n(536387),
-                u = n(526250),
+                p = n(420182),
+                s = n(385322),
+                u = n(333259),
+                m = n(536387),
+                d = n(526250),
                 h = n(901910),
                 g = n(2138);
             function f(e, t, n) {
                 return (0, r.cn)(null, (0, g.Z)(e, t, n));
             }
-            var v = n(390387);
-            const y = (0, d.K9)((e) => e(s.dd).withEndpoint(l.Z).spacebar()),
-                E = (0, c.xu)((e) =>
+            var y = n(390387);
+            const E = (0, m.K9)((e) => e(p.dd).withEndpoint(l.Z).spacebar()),
+                _ = (0, c.xu)((e) =>
                     f(
                         (e, t) => {
-                            t(y);
+                            t(E);
                         },
                         e,
                         { leading: !0, trailing: !1 },
                     ),
                 ),
-                _ = (0, r.cn)((e) => {
-                    const t = e(y.resolved)?.refresh_delay_secs;
-                    return t ? E(t) : (0, r.cn)(null, () => {});
+                v = (0, r.cn)((e) => {
+                    const t = e(E.resolved)?.refresh_delay_secs;
+                    return t ? _(t) : (0, r.cn)(null, () => {});
                 }),
                 b = f((e, t) => {
-                    t(y);
+                    t(E);
                 }, 1e4),
                 w = (0, h.W)((e, t) => {
-                    t(e(_));
+                    t(e(v));
                     const n = setInterval(() => {
-                        t(e(_));
+                        t(e(v));
                     }, 3e5);
                     return () => {
                         clearInterval(n);
                     };
                 }),
                 Z = (0, h.W)((e, t) => {
-                    const n = (0, v._h)(e(s.qc).getState());
+                    const n = (0, y._h)(e(p.qc).getState());
                     if (!n) return i.Z;
                     const a = `/live_content/${n}`;
-                    return (0, p.Cg)({ topic: a, featureSwitches: e(s.f0), onTopic: () => t(b) });
+                    return (0, s.Cg)({ topic: a, featureSwitches: e(p.f0), onTopic: () => t(b) });
                 }),
-                S = (0, r.cn)((e) => (e(y), e(y.resolved)));
+                S = (0, r.cn)((e) => (e(E), e(E.resolved)));
             function I() {
                 const e = (0, o.Dv)(S),
                     t = (0, o.b9)(w);
-                (0, u.N)(Z);
-                const n = (0, m.mr)();
+                (0, d.N)(Z);
+                const n = (0, u.mr)();
                 return (
                     a.useEffect(() => {
                         if ("active" === n) return t();
@@ -195,19 +195,6 @@
                 );
             }
         },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var a = n(202784),
-                r = n(890601),
-                o = n(783427),
-                c = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacebarScreen.d70697ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacebarScreen.c4728eba.js.map

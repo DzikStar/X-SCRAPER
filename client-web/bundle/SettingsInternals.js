@@ -223,7 +223,7 @@
                               }));
         },
         772113: (e, t, n) => {
-            n.r(t), n.d(t, { CountryScreen: () => R, default: () => x });
+            n.r(t), n.d(t, { CountryScreen: () => R, default: () => P });
             var r = n(202784),
                 a = n(325686),
                 o = n(688715),
@@ -249,13 +249,13 @@
                     return Array.isArray(t) ? (0, g.t)(t, n) : S;
                 },
                 Z = (e, t) => t.location?.query?.flow_status,
-                v = (0, b.Z)()
+                L = (0, b.Z)()
                     .propsFromState(() => ({ countryCode: C.eV, countryList: _, changeCountryFlowStatus: Z, lang: y.VT }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("SETTINGS_COUNTRY_SCREEN"), fetchCountryNamesIfNeeded: f.Po, updateSettings: C.VP, fetchSettings: C.wv }))
                     .withAnalytics({ page: "settings", section: "country" }),
-                L = "Settings_Country_Selector",
-                w = d().c21037d0,
-                A = d().i2209530,
+                v = "Settings_Country_Selector",
+                A = d().c21037d0,
+                w = d().i2209530,
                 T = d().j924d222,
                 I = (0, o.ju)("https://support.x.com/articles/20169220");
             class R extends r.Component {
@@ -277,14 +277,14 @@
                 render() {
                     const { countryCode: e, countryList: t, location: n } = this.props,
                         o = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: I }, d().e9310157));
-                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: A, title: T }, r.createElement(a.Z, { style: F.countrySelector }, r.createElement(i.ZP, { helperText: o, label: w, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
+                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: w, title: T }, r.createElement(a.Z, { style: F.countrySelector }, r.createElement(i.ZP, { helperText: o, label: A, onChange: this._handleCountryChange, options: t, testID: v, value: e || "" }))));
                 }
             }
             const F = c.default.create((e) => ({ countrySelector: { margin: e.spaces.space20 } })),
-                x = v(R);
+                P = L(R);
         },
         539863: (e, t, n) => {
-            n.r(t), n.d(t, { LanguageScreen: () => Z, default: () => L });
+            n.r(t), n.d(t, { LanguageScreen: () => Z, default: () => v });
             var r = n(202784),
                 a = n(325686),
                 o = n(466818),
@@ -343,12 +343,12 @@
                                 submitLabel: C,
                                 title: S,
                             },
-                            r.createElement(a.Z, { style: v.languageSelector }, r.createElement(o.ZP, { helperText: _, label: y, onChange: p, options: i, value: u })),
+                            r.createElement(a.Z, { style: L.languageSelector }, r.createElement(o.ZP, { helperText: _, label: y, onChange: p, options: i, value: u })),
                         ),
                     );
                 },
-                v = s.default.create((e) => ({ languageSelector: { margin: e.spaces.space20 } })),
-                L = E(Z);
+                L = s.default.create((e) => ({ languageSelector: { margin: e.spaces.space20 } })),
+                v = E(Z);
         },
         879113: (e, t, n) => {
             n.d(t, { Z: () => p });
@@ -461,9 +461,9 @@
                         { isFocused: S } = this.state,
                         _ = c.ZP.getLanguage(),
                         Z = void 0 === l ? !!n : l,
-                        v = new Set();
-                    n && v.add(this._errorID), e && v.add(e), m && v.add(this._helperID);
-                    const L = v.size ? [...v].join(" ") : void 0;
+                        L = new Set();
+                    n && L.add(this._errorID), e && L.add(e), m && L.add(this._helperID);
+                    const v = L.size ? [...L].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
                         null,
@@ -475,7 +475,7 @@
                                 this._renderLabel(),
                                 r.createElement(
                                     h,
-                                    { "aria-describedby": L, "aria-invalid": Z, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: c }, t && i.Z.disabled], testID: E || "", value: y },
+                                    { "aria-describedby": v, "aria-invalid": Z, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: c }, t && i.Z.disabled], testID: E || "", value: y },
                                     C ? r.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
                                     g.map((e) => {
                                         const { disabled: t, label: n, value: a } = e;
@@ -509,19 +509,6 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                a = n(890601),
-                o = n(783427),
-                s = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.5a2434ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.c875ba8a.js.map

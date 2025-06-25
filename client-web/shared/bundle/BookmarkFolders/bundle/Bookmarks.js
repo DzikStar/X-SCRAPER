@@ -43,17 +43,17 @@
                 m = o(549186),
                 u = o.n(m),
                 p = o(295904),
-                h = o.n(p),
-                b = o(769948),
-                k = o.n(b),
+                b = o.n(p),
+                h = o(769948),
+                k = o.n(h),
                 f = o(871585),
                 w = o.n(f),
                 E = o(418631),
                 y = o.n(E),
                 g = o(734701),
-                v = o.n(g),
-                F = o(630986),
-                T = o.n(F),
+                F = o.n(g),
+                v = o(630986),
+                T = o.n(v),
                 S = o(934309);
             const I = { result: [], entities: {}, slice_info: {} },
                 Z = (e, t) => {
@@ -74,7 +74,7 @@
                 R = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
-                            h(),
+                            b(),
                             { ...t },
                             (0, i.kj)((e) => !e.bookmark_collection_tweet_put, "GQL Bookmark Folders: failed to Add Tweet to Bookmark Folder"),
                         ),
@@ -91,7 +91,7 @@
                     },
                     editBookmarkFolder(t) {
                         const { bookmarkFolderId: o, name: r } = t;
-                        return e.graphQL(v(), { bookmark_collection_id: o, name: r });
+                        return e.graphQL(F(), { bookmark_collection_id: o, name: r });
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: o, tweetId: r } = t;
@@ -304,32 +304,32 @@
                     );
                 };
             var p = o(731708),
-                h = o(457311),
-                b = o(644829),
+                b = o(457311),
+                h = o(644829),
                 k = o(750085),
                 f = o(218951);
             var w = o(810641),
                 E = o(71620),
                 y = o(668214),
                 g = o(735313);
-            const v = (0, y.Z)()
+            const F = (0, y.Z)()
                     .propsFromActions(() => ({ clearTimelineCache: (e) => (0, g.Z)(e), createLocalApiErrorHandler: (0, E.zr)("BOOKMARK_SEARCH_CONTAINER") }))
                     .withAnalytics(),
-                F = l().e9c65c4a,
+                v = l().e9c65c4a,
                 T = l().b92a21d9,
                 S = r.createElement(l().I18NFormatMessage, { $i18n: "e7e44bab" }, r.createElement(p.ZP, { link: "/settings/search" }, l().f191a2ba)),
-                I = v(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
+                I = F(({ clearTimelineCache: e, createLocalApiErrorHandler: t, query: o }) => {
                     const n = r.useMemo(
                         () =>
                             (function (e) {
-                                return (0, f.Z)({ timelineId: "bookmark-search-timeline", context: "FETCH_BOOKMARK_SEARCH_TIMELINE", formatResponse: k.Z, network: { getEndpointParams: ({ count: t, cursor: o }) => ({ count: t, cursor: "string" == typeof o ? o : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(b.Z).fetchBookmarkSearch }, perfKey: "bookmark-search" });
+                                return (0, f.Z)({ timelineId: "bookmark-search-timeline", context: "FETCH_BOOKMARK_SEARCH_TIMELINE", formatResponse: k.Z, network: { getEndpointParams: ({ count: t, cursor: o }) => ({ count: t, cursor: "string" == typeof o ? o : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(h.Z).fetchBookmarkSearch }, perfKey: "bookmark-search" });
                             })(o),
                         [o],
                     );
                     r.useEffect(() => {
                         e(n).catch(t());
                     }, [n, e, t]);
-                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(h.Z, { header: T({ query: o }), message: S }), title: F });
+                    return r.createElement(w.Z, { module: n, renderEmptyState: () => r.createElement(b.Z, { header: T({ query: o }), message: S }), title: v });
                 });
         },
         652904: (e, t, o) => {
@@ -390,14 +390,14 @@
                     .propsFromState((e) => ({ fetchStatus: _, items: m }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, c.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
                 p = a().i9028824,
-                h = (e) => e,
-                b = (e) => (t) => e(t.item);
+                b = (e) => e,
+                h = (e) => (t) => e(t.item);
             class k extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
                             const { footer: e, items: t, noItemsRenderer: o, numColumns: i, onScrollEnd: a, renderer: s, withoutHeadroom: c } = this.props;
-                            return !t || i < 1 ? null : 1 === i ? r.createElement(l.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: h, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: a, renderer: s, withoutHeadroom: c }) : r.createElement(n.Z, { ListEmptyComponent: o, data: t, keyExtractor: h, numColumns: i, renderItem: b(s) });
+                            return !t || i < 1 ? null : 1 === i ? r.createElement(l.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: b, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: a, renderer: s, withoutHeadroom: c }) : r.createElement(n.Z, { ListEmptyComponent: o, data: t, keyExtractor: b, numColumns: i, renderItem: h(s) });
                         }),
                         (this._handleNearEnd = () => {
                             const { createLocalApiErrorHandler: e, fetchBottom: t } = this.props;
@@ -432,7 +432,7 @@
         },
         482176: (e, t, o) => {
             "use strict";
-            o.d(t, { SS: () => E, ZP: () => v, aL: () => y, zs: () => w });
+            o.d(t, { SS: () => E, ZP: () => F, aL: () => y, zs: () => w });
             var r = o(912021),
                 n = o(744531),
                 i = o(403911),
@@ -445,11 +445,11 @@
                 m = o(977154),
                 u = o(583790);
             const p = Object.freeze({ REQUEST: "rweb/bookmarkFolders/FETCH_BOOKMARK_FOLDERS_REQUEST", SUCCESS: "rweb/bookmarkFolders/FETCH_BOOKMARK_FOLDERS_SUCCESS", FAILURE: "rweb/bookmarkFolders/FETCH_BOOKMARK_FOLDERS_FAILURE" }),
-                h = Object.freeze({ REQUEST: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_REQUEST", SUCCESS: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_SUCCESS", FAILURE: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_FAILURE" }),
-                b = (0, c.ZP)({ namespace: "bookmarkFolders" }),
+                b = Object.freeze({ REQUEST: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_REQUEST", SUCCESS: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_SUCCESS", FAILURE: "rweb/bookmarkFolders/CREATE_BOOKMARK_FOLDERS_FAILURE" }),
+                h = (0, c.ZP)({ namespace: "bookmarkFolders" }),
                 k = (0, r.Z)((e) => (0, u.Z)(e)),
                 f = {
-                    deleteBookmarkFolder: (0, c.Tx)(b, "deleteBookmarkFolder", {
+                    deleteBookmarkFolder: (0, c.Tx)(h, "deleteBookmarkFolder", {
                         context: "DELETE_BOOKMARK_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).deleteBookmarkFolder,
                         getParams: (e) => ({ bookmarkFolderId: e }),
@@ -467,7 +467,7 @@
                             }
                         },
                     }),
-                    editBookmarkFolder: (0, c.Tx)(b, "editBookmarkFolder", {
+                    editBookmarkFolder: (0, c.Tx)(h, "editBookmarkFolder", {
                         context: "EDIT_BOOKMARK_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).editBookmarkFolder,
                         getParams: (e, { name: t } = {}) => ({ bookmarkFolderId: e, name: t }),
@@ -488,7 +488,7 @@
                             return { ...e, entities: { ...e.entities, [n.id]: { ...n, ...i } } };
                         },
                     }),
-                    removeTweetFromBookmarkFolder: (0, c.Tx)(b, "removeTweetFromBookmarkFolder", {
+                    removeTweetFromBookmarkFolder: (0, c.Tx)(h, "removeTweetFromBookmarkFolder", {
                         context: "REMOVE_TWEET_FROM_BOOKMARK_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).removeTweetFromBookmarkFolder,
                         getParams: (e, { tweetId: t } = {}) => ({ bookmarkFolderId: e, tweetId: t }),
@@ -506,7 +506,7 @@
                         },
                         reducer: (e, t) => e,
                     }),
-                    addTweetToBookmarkFolder: (0, c.Tx)(b, "addTweetToBookmarkFolder", {
+                    addTweetToBookmarkFolder: (0, c.Tx)(h, "addTweetToBookmarkFolder", {
                         context: "BOOKMARK_TWEET_TO_FOLDER",
                         getApiMethod: (e) => e.withEndpoint(i.Z).bookmarkTweetToFolder,
                         getParams: (e, { tweetId: t } = {}) => ({ bookmark_collection_id: e, tweet_id: t }),
@@ -537,13 +537,13 @@
                 E =
                     (e) =>
                     (t, o, { api: r }) =>
-                        (0, s._O)(t, { request: r.withEndpoint(i.Z).createBookmarkFolder, params: { name: e } })({ actionTypes: h, context: "CREATE_BOOKMARK_FOLDER" }, (e) => {
+                        (0, s._O)(t, { request: r.withEndpoint(i.Z).createBookmarkFolder, params: { name: e } })({ actionTypes: b, context: "CREATE_BOOKMARK_FOLDER" }, (e) => {
                             if (e) {
                                 const t = e?.bookmark_collection_create,
                                     r = (0, _.x0)(o());
                                 if (t && r) {
                                     const e = k(r);
-                                    return [b.add({ [t.id]: t }), e.injectItems([t.id])];
+                                    return [h.add({ [t.id]: t }), e.injectItems([t.id])];
                                 }
                             }
                         }),
@@ -551,8 +551,8 @@
                     const n = k(o);
                     return Promise.resolve(r([(0, m.m)(e).removeTweets({ [t]: !0 }), n.injectItems([e])]));
                 },
-                g = { ...b, ...f, customActionTypes: (0, c.X7)(f) },
-                v = d.Z.register(g);
+                g = { ...h, ...f, customActionTypes: (0, c.X7)(f) },
+                F = d.Z.register(g);
         },
         545521: (e, t, o) => {
             "use strict";
@@ -568,16 +568,16 @@
             function _({ contextSuffix: e, getEndpointParams: t, getFetchApiEndpoint: o, mapEntitiesToActions: l = d, sliceKey: _, injectionOptions: { identityFunction: m } = {} }) {
                 const u = [],
                     p = (e) => e[i.Yf]?.[_],
-                    h = (e) => {
+                    b = (e) => {
                         const t = p(e);
                         if (!t) return u;
                         const o = t.items || u,
                             r = t.injections;
                         return r?.length > 0 ? (0, n.Z)(r.concat(o), m) : o;
                     },
-                    b = (e) => {
+                    h = (e) => {
                         const t = p(e),
-                            o = h(e),
+                            o = b(e),
                             r = o?.length > 0;
                         return t ? (0, s.ke)(t.fetchStatus, r) : s.ZP.NONE;
                     },
@@ -591,13 +591,13 @@
                         };
                 return {
                     select: p,
-                    selectItems: h,
-                    selectFetchStatus: b,
+                    selectItems: b,
+                    selectFetchStatus: h,
                     fetch: k,
                     fetchIfNeeded: (e) => (t, o) => {
                         const n = o(),
                             i = p(n),
-                            a = b(n);
+                            a = h(n);
                         return !i || (a !== s.ZP.LOADING && a !== s.ZP.LOADED) ? t(k(e)) : r.O4.resolve();
                     },
                     fetchBottom: (e) => (t, o) => {
@@ -616,7 +616,7 @@
         },
         841198: (e, t, o) => {
             "use strict";
-            o.d(t, { Be: () => f, Er: () => v, Ev: () => b, WC: () => y, Yf: () => _, t5: () => F });
+            o.d(t, { Be: () => f, Er: () => F, Ev: () => h, WC: () => y, Yf: () => _, t5: () => v });
             o(571372);
             var r = o(166852),
                 n = o(370751),
@@ -650,16 +650,16 @@
                             return e;
                     }
                 },
-                h = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
-                b = (e) => ({ type: h, meta: { sliceKey: e } }),
+                b = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
+                h = (e) => ({ type: b, meta: { sliceKey: e } }),
                 k = "rweb/slices/DELETE_SLICE",
                 f = (e) => ({ type: k, meta: { sliceKey: e } }),
                 w = "rweb/slices/RESTORE_SLICE",
                 E = "rweb/slices/INJECT_ITEMS_SLICE",
                 y = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: E, meta: { sliceKey: o, identityFunction: e }, payload: t }),
                 g = "rweb/slices/REMOVE_ITEMS_SLICE",
-                v = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: g, meta: { sliceKey: o, identityFunction: e }, payload: t }),
-                F = ({ contextSuffix: e, params: t, sliceKey: o }) => ({ actionTypes: u, context: `FETCH_${e}`, meta: { sliceKey: o, direction: t?.cursor ? l.Yj.BOTTOM : l.Yj.TOP } });
+                F = ({ identityFunction: e, items: t, sliceKey: o }) => ({ type: g, meta: { sliceKey: o, identityFunction: e }, payload: t }),
+                v = ({ contextSuffix: e, params: t, sliceKey: o }) => ({ actionTypes: u, context: `FETCH_${e}`, meta: { sliceKey: o, direction: t?.cursor ? l.Yj.BOTTOM : l.Yj.TOP } });
             i.Z.register({
                 [_]: function (e = c, t) {
                     if (!t) return e;
@@ -672,7 +672,7 @@
                         }
                         case w:
                             return { ...e, [o]: t.payload };
-                        case h: {
+                        case b: {
                             const t = { ...e };
                             return (
                                 Object.keys(t).forEach((e) => {
@@ -734,30 +734,16 @@
                 l = o(952428),
                 c = o(392237);
             const d = (e) => {
-                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: h, paddingHorizontal: b, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: v = !1 } = e,
-                        F = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
+                    const { decoration: t, description: o, disabled: d = !1, isActive: m = !1, label: u, link: p, onPress: b, paddingHorizontal: h, renderRightContent: k, role: f = "tab", styleOverride: w, testID: E = "pivot", thumbnail: y, thumbnailSize: g, withoutArrow: F = !1 } = e,
+                        v = [_.thumbnailContainer, "medium" === g && _.thumbnailContainerMedium],
                         T = "string" == typeof u ? r.createElement(s.ZP, null, u) : u,
                         S = "object" == typeof p && p.external && !p.openInSameFrame,
                         I = o ? ("string" == typeof o ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${E}-description` }, o) : o) : null,
-                        Z = r.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: h, role: f, style: [_.root, Z, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!h }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: F }, y) : null, r.createElement(n.Z, { style: _.content }, T, I), k ? k() : null, (!p && !h) || d || v ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
+                        Z = r.useMemo(() => ("space0" === h ? { paddingHorizontal: 0 } : { paddingHorizontal: h ? c.default.theme.spaces[h] : c.default.theme.componentDimensions.gutterHorizontal }), [h]);
+                    return r.createElement(l.Z, { "aria-selected": "tab" === f ? m : null, disabled: d, link: d ? void 0 : p, onPress: b, role: f, style: [_.root, Z, d && _.disabled, w], testID: E, withInteractiveStyling: !!p || !!b }, r.createElement(n.Z, { style: _.contentContainer }, y ? r.createElement(n.Z, { style: v }, y) : null, r.createElement(n.Z, { style: _.content }, T, I), k ? k() : null, (!p && !b) || d || F ? null : S ? r.createElement(i.default, { style: _.icon }) : r.createElement(a.default, { style: _.icon })), t);
                 },
                 _ = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
-        748138: (e, t, o) => {
-            "use strict";
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                n = o(890601),
-                i = o(783427),
-                a = o(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.d12c03da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.bed8f40a.js.map
