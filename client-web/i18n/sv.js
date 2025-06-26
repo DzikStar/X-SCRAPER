@@ -226,9 +226,9 @@
                     return e.percentage + " % rabatt på " + e.tier + " " + e.plan;
                 }),
                 t("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "Få " + e.percentage + " % rabatt i sommar";
                 }),
-                t("he77d8e6", "Limited-time offer"),
+                t("he77d8e6", "Tidsbegränsat erbjudande"),
                 t("adf3410a", "Prenumerera för att komma åt nya funktioner och, om du är behörig, få en del av intäkterna."),
                 t("a84a736e", "Få en kostnadsfri annonskredit"),
                 t("a0713d76", "Uppgradera till Verifierade organisationer så får du en kostnadsfri annonskredit och ett antal verktyg för att få verksamheten att växa."),
@@ -1294,7 +1294,7 @@
                     return "Söker på 𝕏 efter " + e.query;
                 }),
                 t("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return "Söker bland 𝕏-användare efter " + e.query;
                 }),
                 t("g008d475", function (e) {
                     return "Besöker " + e.url;
@@ -1315,7 +1315,7 @@
                     return "Söker 𝕏-inlägg av @" + e.username + " efter **" + e.query + "**";
                 }),
                 t("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "Kör kod" + e.ttc_tool_usage_card;
                 }),
                 t("ead81122", "Något gick fel. Uppdatera för att återansluta eller försök igen."),
                 t("f808a13a", "Gränsen har överskridits. Försök igen om en liten stund."),
@@ -1349,12 +1349,12 @@
                 t("deaf5b16", "Försök igen"),
                 t("a66d80d0", "Översätt inlägget"),
                 t("be9b9fb8", "Översatt av Grok"),
-                t("ba10dab6", "Auto-translated by Grok"),
+                t("ba10dab6", "Automatiskt översatt av Grok"),
                 t("he9c9634", "Det gick inte att hämta översättningen"),
                 t("j2198c98", "Dölj det översatta inlägget"),
                 t("d4d35bea", "Översätter …"),
-                t("f4f69be8", "Show original"),
-                t("e3097a5c", "Show auto-translated post"),
+                t("f4f69be8", "Visa originalet"),
+                t("e3097a5c", "Visa det automatiskt översatta inlägget"),
                 t("e0f81ff3", "Översättning:"),
                 t("j2862695", function (e) {
                     return "Översatt från " + e.originLanguage + " av";
@@ -4268,7 +4268,7 @@
                     return "Visa alla (" + e.count + ")";
                 }),
                 t("df601d92", "Relevanta användare"),
-                t("a4cfb8a8", "Browsing"),
+                t("a4cfb8a8", "Besöker"),
                 t("d7cb5408", "Relevanta webbsidor"),
                 t("ca93f2ee", "Detta meddelande har raderats."),
                 t("b8c06820", "Kopiera texten"),
@@ -6503,7 +6503,7 @@
                 t("f7cf3d36", "Grok är en kostnadsfri AI-assistent som har konstruerats av xAI för maximal sanning och objektivitet. Grok erbjuder realtidssökningar, bildgenerering, trendanalyser och annat."),
                 t("hc965308", "Roligt"),
                 t("eb78b77e", "Roligt läge"),
-                t("ac164552", "Go to grok.com"),
+                t("ac164552", "Gå till grok.com"),
                 t("gb5fb7d0", "Fokusläge"),
                 t("g5665caa", "Avsluta fokusläget"),
                 t("a372681e", "Kopiera delningslänken"),
@@ -6994,9 +6994,9 @@
                 t("gd573390", "Lägg till allt i grundversionen …"),
                 t("ef94bbd4", "Skaffa Premium+"),
                 t("dcd830ce", "Lägg till allt i premiumversionen …"),
-                t("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                t("dde0dbe0", "Nyttja vårt sommarerbjudande som upphör"),
                 t("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "Sommarerbjudande som upphör " + e.date + ".";
                 }),
                 t("b7dde622", "Glad thanksgiving! Erbjudandet upphör om"),
                 t("i0180ca1", function (e) {
@@ -7392,10 +7392,10 @@
                 t("bd05add8", "Inte en bot"),
                 t("d94f12b6", "Försök söka efter notiser, integritet och annat."),
                 t("ba8f6f82", "Sökinställningar"),
-                t("ibf92e4a", "Payment Successful"),
+                t("ibf92e4a", "Betalningen lyckades"),
                 t("bdf0fb06", "Your subscription has been activated."),
                 t("ddfd6718", "Betalningen misslyckades"),
-                t("d42fa852", "There was an issue processing your payment. Please try again."),
+                t("d42fa852", "Det gick inte att bearbeta betalningen. Försök igen."),
                 t("g055a9ce", "Open 𝕏 App"),
                 t("g931a6e5", function (e) {
                     return "Du följer " + e.topic;
@@ -13349,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.c98ac5da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.7922507a.js.map

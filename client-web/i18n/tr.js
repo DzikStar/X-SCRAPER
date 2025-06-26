@@ -225,9 +225,9 @@
                     return e.tier + " " + e.plan + " için %" + e.percentage + " indirim";
                 }),
                 n("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "Bu yaz %" + e.percentage + " indirimden yararlan";
                 }),
-                n("he77d8e6", "Limited-time offer"),
+                n("he77d8e6", "Teklif yalnızca sınırlı süreyle geçerlidir"),
                 n("adf3410a", "Yeni özellikleri açmak için abone ol ve uygun olman durumunda içerik üreticisi gelir payı kazan."),
                 n("a84a736e", "Ücretsiz Reklam Kredisi Kazan"),
                 n("a0713d76", "Ücretsiz reklam kredisi kazanmak ve bir dizi iş büyütme aracından yararlanmak için hesabını Onaylı Kuruluşlar'a yükselt."),
@@ -1293,7 +1293,7 @@
                     return "𝕏'te \"" + e.query + '" için arama yapılıyor';
                 }),
                 n("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return '𝕏 kullanıcıları arasında "' + e.query + '" aranıyor';
                 }),
                 n("g008d475", function (e) {
                     return e.url + " adresine göz atılıyor";
@@ -1314,7 +1314,7 @@
                     return "@" + e.username + ' adlı kullanıcının 𝕏 gönderilerinde **"' + e.query + '"** ifadesi aranıyor';
                 }),
                 n("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "Kod yürütülüyor" + e.ttc_tool_usage_card;
                 }),
                 n("ead81122", "Bir sorun oluştu. Yeniden bağlanmak için yenile veya tekrar dene."),
                 n("f808a13a", "Kullanım limiti aşıldı. Lütfen biraz bekleyip tekrar dene."),
@@ -1348,12 +1348,12 @@
                 n("deaf5b16", "Yeniden dene"),
                 n("a66d80d0", "Gönderiyi çevir"),
                 n("be9b9fb8", "Grok tarafından çevrildi"),
-                n("ba10dab6", "Auto-translated by Grok"),
+                n("ba10dab6", "Otomatik çeviri Grok tarafından yapılmıştır"),
                 n("he9c9634", "Çeviri alınamadı"),
                 n("j2198c98", "Gönderi çevirisini gizle"),
                 n("d4d35bea", "Çevriliyor..."),
-                n("f4f69be8", "Show original"),
-                n("e3097a5c", "Show auto-translated post"),
+                n("f4f69be8", "Orijinali göster"),
+                n("e3097a5c", "Otomatik çevrilen gönderiyi göster"),
                 n("e0f81ff3", "Çeviri:"),
                 n("j2862695", function (e) {
                     return "tarafından " + e.originLanguage + " dilinden çevrildi";
@@ -4267,7 +4267,7 @@
                     return "Tümünü göster (" + e.count + ")";
                 }),
                 n("df601d92", "Alakalı Kullanıcılar"),
-                n("a4cfb8a8", "Browsing"),
+                n("a4cfb8a8", "Şu adrese göz atılıyor:"),
                 n("d7cb5408", "Alakalı Web Sayfaları"),
                 n("ca93f2ee", "Bu mesaj silindi."),
                 n("b8c06820", "Metni kopyala"),
@@ -6502,7 +6502,7 @@
                 n("f7cf3d36", "Grok, doğruyu ve tarafsızlığı en üst düzeye çıkarmak için xAI tarafından tasarlanan ücretsiz bir yapay zeka asistandır. Grok gerçek zamanlı arama, görsel oluşturma, trend analizi ve daha birçok özellik sunar."),
                 n("hc965308", "Eğlenceli"),
                 n("eb78b77e", "Eğlence Modu"),
-                n("ac164552", "Go to grok.com"),
+                n("ac164552", "grok.com'a git"),
                 n("gb5fb7d0", "Odak Modu"),
                 n("g5665caa", "Odak Modundan Çık"),
                 n("a372681e", "Paylaşım bağlantısını kopyala"),
@@ -6993,9 +6993,9 @@
                 n("gd573390", "Ve Basic planındaki her şey..."),
                 n("ef94bbd4", "Premium+'ı edin"),
                 n("dcd830ce", "Ve Premium planındaki her şey..."),
-                n("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                n("dde0dbe0", "Yaz fırsatını kaçırma. Son tarih:"),
                 n("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "Yaz fırsatı " + e.date + " tarihinde sona eriyor.";
                 }),
                 n("b7dde622", "Şükran Günün kutlu olsun! Teklif şu süre sonunda sona erecek:"),
                 n("i0180ca1", function (e) {
@@ -7391,10 +7391,10 @@
                 n("bd05add8", "Bot Değilim"),
                 n("d94f12b6", "Bildirimler, gizlilik vb. hakkında arama yapmayı dene"),
                 n("ba8f6f82", "Ayarlarda Ara"),
-                n("ibf92e4a", "Payment Successful"),
+                n("ibf92e4a", "Ödeme Başarılı"),
                 n("bdf0fb06", "Your subscription has been activated."),
                 n("ddfd6718", "Ödeme Başarısız Oldu"),
-                n("d42fa852", "There was an issue processing your payment. Please try again."),
+                n("d42fa852", "Ödemen işlenirken bir sorun oluştu. Lütfen tekrar dene."),
                 n("g055a9ce", "Open 𝕏 App"),
                 n("g931a6e5", function (e) {
                     return e.topic + " konusunu takip ediyorsun";
@@ -13357,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.42a0fc4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.4a20f57a.js.map
