@@ -1300,7 +1300,7 @@
                     return e.url + " doorzoeken";
                 }),
                 a("c91e3971", function (e) {
-                    return e.url + " doorzoeken naar '" + e.query + "'";
+                    return e.url + " doorzoeken naar '" + e.query + "''";
                 }),
                 a("acb9b845", function (e) {
                     return e.url + " browsen over **'" + e.query + "'**";
@@ -13362,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.aa4af4ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.7f92848a.js.map

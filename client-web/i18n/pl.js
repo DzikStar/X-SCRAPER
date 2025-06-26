@@ -235,9 +235,9 @@
                     return e.percentage + "% zniżki " + e.tier + " " + e.plan;
                 }),
                 i("b28602eb", function (e) {
-                    return "Skorzystaj z " + e.percentage + "% zniżki tego lata";
+                    return "Get " + e.percentage + "% off this summer";
                 }),
-                i("he77d8e6", "Oferta ograniczona czasowo"),
+                i("he77d8e6", "Limited-time offer"),
                 i("adf3410a", "Kup subskrypcję, aby odblokować nowe funkcje i otrzymywać udział w dochodach (jeśli uzyskasz uprawnienie)."),
                 i("a84a736e", "Skorzystaj z bezpłatnego kredytu reklamowego"),
                 i("a0713d76", "Przejdź na poziom Zweryfikowane Organizacje, aby otrzymać bezpłatny kredyt reklamowy oraz możliwość używania pakietu narzędzi do rozwijania firmy."),
@@ -1303,7 +1303,7 @@
                     return "Wyszukiwanie „" + e.query + "” w serwisie 𝕏";
                 }),
                 i("ad342369", function (e) {
-                    return "Wyszukiwanie użytkownika „" + e.query + "” w serwisie 𝕏";
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 i("g008d475", function (e) {
                     return "Przeglądanie witryny " + e.url;
@@ -1324,7 +1324,7 @@
                     return "Wyszukiwanie terminu **„" + e.query + "”** we wpisach użytkownika @" + e.username + " w serwisie 𝕏";
                 }),
                 i("a02d1657", function (e) {
-                    return "Wykonywanie kodu" + e.ttc_tool_usage_card;
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 i("ead81122", "Coś poszło nie tak. Odśwież, aby ponownie nawiązać połączenie lub spróbuj ponownie."),
                 i("f808a13a", "Przekroczono limit częstotliwości. Zaczekaj chwilę i spróbuj ponownie."),
@@ -1358,12 +1358,12 @@
                 i("deaf5b16", "Ponów próbę"),
                 i("a66d80d0", "Przetłumacz wpis"),
                 i("be9b9fb8", "Przetłumaczone przez Groka"),
-                i("ba10dab6", "Automatyczne tłumaczenie wykonane przez Groka"),
+                i("ba10dab6", "Auto-translated by Grok"),
                 i("he9c9634", "Nie udało się pobrać tłumaczenia"),
                 i("j2198c98", "Ukryj przetłumaczony wpis"),
                 i("d4d35bea", "Trwa tłumaczenie..."),
-                i("f4f69be8", "Pokaż oryginał"),
-                i("e3097a5c", "Pokaż automatycznie przetłumaczony wpis"),
+                i("f4f69be8", "Show original"),
+                i("e3097a5c", "Show auto-translated post"),
                 i("e0f81ff3", "Tłumaczenie:"),
                 i("j2862695", function (e) {
                     return "Przetłumaczone z " + e.originLanguage + " przez";
@@ -4277,7 +4277,7 @@
                     return "Pokaż wszystkie (" + e.count + ")";
                 }),
                 i("df601d92", "Odpowiedni użytkownicy"),
-                i("a4cfb8a8", "Przeglądanie"),
+                i("a4cfb8a8", "Browsing"),
                 i("d7cb5408", "Odpowiednie strony internetowe"),
                 i("ca93f2ee", "Ta wiadomość została usunięta."),
                 i("b8c06820", "Kopiuj tekst"),
@@ -6512,7 +6512,7 @@
                 i("f7cf3d36", "Grok to bezpłatny asystent AI zaprojektowany przez firmę xAI w celu dostarczania maksymalnie prawdziwych i obiektywnych informacji. Grok oferuje wyszukiwanie w czasie rzeczywistym, analizy trendów i nie tylko."),
                 i("hc965308", "Zabawny"),
                 i("eb78b77e", "Tryb zabawny"),
-                i("ac164552", "Przejdź do witryny grok.com"),
+                i("ac164552", "Go to grok.com"),
                 i("gb5fb7d0", "Tryb skupienia"),
                 i("g5665caa", "Wyjdź z trybu skupienia"),
                 i("a372681e", "Kopiuj link udostępniania"),
@@ -7003,9 +7003,9 @@
                 i("gd573390", "Oraz wszystkie funkcje wersji Basic..."),
                 i("ef94bbd4", "Uzyskaj subskrypcję Premium+"),
                 i("dcd830ce", "Oraz wszystkie funkcje wersji Premium..."),
-                i("dde0dbe0", "Skorzystaj z oferty na lato, która obowiązuje do:"),
+                i("dde0dbe0", "Enjoy our Summer offer, ending in:"),
                 i("f8a50ba7", function (e) {
-                    return "Oferta na lato obowiązuje do " + e.date + ".";
+                    return "Summer offer ending on " + e.date + ".";
                 }),
                 i("b7dde622", "Wszystkiego najlepszego z okazji Święta Dziękczynienia! Oferta kończy się za:"),
                 i("i0180ca1", function (e) {
@@ -7401,10 +7401,10 @@
                 i("bd05add8", "Nie jestem botem"),
                 i("d94f12b6", "Spróbuj wyszukać powiadomienia, ustawienia prywatności itd."),
                 i("ba8f6f82", "Ustawienia wyszukiwania"),
-                i("ibf92e4a", "Realizacja płatności zakończyła się pomyślnie"),
+                i("ibf92e4a", "Payment Successful"),
                 i("bdf0fb06", "Your subscription has been activated."),
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
-                i("d42fa852", "Wystąpił problem podczas przetwarzania Twojej płatności. Spróbuj ponownie."),
+                i("d42fa852", "There was an issue processing your payment. Please try again."),
                 i("g055a9ce", "Open 𝕏 App"),
                 i("g931a6e5", function (e) {
                     return "Obserwujesz " + e.topic;
@@ -13362,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.6c26defa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.0972145a.js.map

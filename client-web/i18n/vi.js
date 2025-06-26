@@ -225,9 +225,9 @@
                     return "Giảm " + n.percentage + "% cho " + n.tier + " " + n.plan;
                 }),
                 t("b28602eb", function (n) {
-                    return "Giảm giá " + n.percentage + "% mùa hè này";
+                    return "Get " + n.percentage + "% off this summer";
                 }),
-                t("he77d8e6", "Ưu đãi trong thời gian có hạn"),
+                t("he77d8e6", "Limited-time offer"),
                 t("adf3410a", "Đăng ký để mở khóa các tính năng mới và nếu đủ điều kiện, bạn sẽ được nhận một khoản chia sẻ doanh thu cho người sáng tạo nội dung."),
                 t("a84a736e", "Nhận tín dụng quảng cáo miễn phí"),
                 t("a0713d76", "Nâng cấp lên Tổ chức đã xác nhận để nhận tín dụng quảng cáo miễn phí và bộ công cụ phát triển doanh nghiệp."),
@@ -1293,7 +1293,7 @@
                     return 'Đang tìm kiếm "' + n.query + '" trên 𝕏';
                 }),
                 t("ad342369", function (n) {
-                    return 'Đang tìm kiếm "' + n.query + '" trong người dùng 𝕏';
+                    return 'Searching 𝕏 users for "' + n.query + '"';
                 }),
                 t("g008d475", function (n) {
                     return "Đang duyệt " + n.url;
@@ -1314,7 +1314,7 @@
                     return 'Đang tìm kiếm **"' + n.query + '"** trong các bài đăng trên X của @' + n.username;
                 }),
                 t("a02d1657", function (n) {
-                    return "Đang thực thi mã" + n.ttc_tool_usage_card;
+                    return "Executing code" + n.ttc_tool_usage_card;
                 }),
                 t("ead81122", "Đã xảy ra lỗi, vui lòng làm mới để kết nối lại hoặc thử lại."),
                 t("f808a13a", "Bạn đã vượt quá giới hạn số lượng. Vui lòng chờ giây lát rồi thử lại."),
@@ -1348,12 +1348,12 @@
                 t("deaf5b16", "Thử lại"),
                 t("a66d80d0", "Dịch bài đăng"),
                 t("be9b9fb8", "Bản dịch của Grok"),
-                t("ba10dab6", "Do Grok tự động dịch"),
+                t("ba10dab6", "Auto-translated by Grok"),
                 t("he9c9634", "Không thể tải phần dịch"),
                 t("j2198c98", "Ẩn bài đăng đã dịch"),
                 t("d4d35bea", "Đang dịch..."),
-                t("f4f69be8", "Hiện bản gốc"),
-                t("e3097a5c", "Hiện bài đăng được dịch tự động"),
+                t("f4f69be8", "Show original"),
+                t("e3097a5c", "Show auto-translated post"),
                 t("e0f81ff3", "Bản dịch:"),
                 t("j2862695", function (n) {
                     return "Được dịch từ " + n.originLanguage + " bởi";
@@ -4267,7 +4267,7 @@
                     return "Hiển thị tất cả (" + n.count + ")";
                 }),
                 t("df601d92", "Người dùng có liên quan"),
-                t("a4cfb8a8", "Đang duyệt"),
+                t("a4cfb8a8", "Browsing"),
                 t("d7cb5408", "Trang web có liên quan"),
                 t("ca93f2ee", "Tin nhắn này đã bị xóa."),
                 t("b8c06820", "Sao chép văn bản"),
@@ -6502,7 +6502,7 @@
                 t("f7cf3d36", "Grok là trợ lý AI miễn phí do xAI thiết kế để tối đa hóa sự thật và tính khách quan. Grok cung cấp tính năng tìm kiếm theo thời gian thực, tạo hình ảnh, phân tích xu hướng và nhiều tính năng khác."),
                 t("hc965308", "Hài hước"),
                 t("eb78b77e", "Chế độ hài hước"),
-                t("ac164552", "Truy cập vào grok.com"),
+                t("ac164552", "Go to grok.com"),
                 t("gb5fb7d0", "Chế độ tập trung"),
                 t("g5665caa", "Thoát chế độ tập trung"),
                 t("a372681e", "Sao chép liên kết chia sẻ"),
@@ -6993,9 +6993,9 @@
                 t("gd573390", "Và mọi thứ có trong gói Cơ bản..."),
                 t("ef94bbd4", "Mua gói Premium+"),
                 t("dcd830ce", "Và mọi thứ có trong gói Premium..."),
-                t("dde0dbe0", "Tận hưởng ưu đãi Mùa hè, kết thúc vào:"),
+                t("dde0dbe0", "Enjoy our Summer offer, ending in:"),
                 t("f8a50ba7", function (n) {
-                    return "Ưu đãi mùa hè kết thúc vào " + n.date + ".";
+                    return "Summer offer ending on " + n.date + ".";
                 }),
                 t("b7dde622", "Chúc mừng Lễ tạ ơn! Ưu đãi kết thúc sau:"),
                 t("i0180ca1", function (n) {
@@ -7391,10 +7391,10 @@
                 t("bd05add8", "Không phải bot"),
                 t("d94f12b6", "Thử tìm kiếm thông báo, quyền riêng tư, v.v."),
                 t("ba8f6f82", "Tìm kiếm Cài đặt"),
-                t("ibf92e4a", "Thanh toán thành công"),
+                t("ibf92e4a", "Payment Successful"),
                 t("bdf0fb06", "Your subscription has been activated."),
                 t("ddfd6718", "Thanh toán không thành công"),
-                t("d42fa852", "Đã xảy ra sự cố khi xử lý khoản thanh toán của bạn. Vui lòng thử lại."),
+                t("d42fa852", "There was an issue processing your payment. Please try again."),
                 t("g055a9ce", "Open 𝕏 App"),
                 t("g931a6e5", function (n) {
                     return "Bạn đang theo dõi " + n.topic;
@@ -13347,4 +13347,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.b0b05d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.4ab0de6a.js.map
