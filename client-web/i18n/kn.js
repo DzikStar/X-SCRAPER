@@ -1349,7 +1349,7 @@
                 n("deaf5b16", "ಮರುಪ್ರಯತ್ನಿಸಿ"),
                 n("a66d80d0", "ಪೋಸ್ಟ್ ಅನ್ನು ಅನುವಾದಿಸಿ"),
                 n("be9b9fb8", "Grok ಮೂಲಕ ಅನುವಾದಿಸಲಾಗಿದೆ"),
-                n("ba10dab6", "Grok ನಿಂದ  ಸ್ವಯಂ ಅನುವಾದಗೊಂಡಿದೆ"),
+                n("ba10dab6", "Grok ನಿಂದ ಸ್ವಯಂ ಅನುವಾದಗೊಂಡಿದೆ"),
                 n("he9c9634", "ಅನುವಾದ ಪಡೆಯಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"),
                 n("j2198c98", "ಅನುವಾದಿಸಿದ ಪೋಸ್ಟ್ ಅನ್ನು ಮರೆಮಾಡಿ"),
                 n("d4d35bea", "ಅನುವಾದಿಸಲಾಗುತ್ತಿದೆ..."),
@@ -13361,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.4330b7fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.a6c8bf9a.js.map
