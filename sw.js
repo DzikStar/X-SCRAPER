@@ -3,7 +3,7 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/loader.FwdForSdk-594367b3.8584ff9a.js",
     "https://abs.twimg.com/responsive-web/client-web/loader.Confetti-5ccade72.b221850a.js",
     "https://abs.twimg.com/responsive-web/client-web/loaders.video.PlayerHls1.5-996b2f5e.3ee752da.js",
-    "https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.15b090fa.js",
+    "https://abs.twimg.com/responsive-web/client-web/feature-switch-manifest.cb22609a.js",
     "https://abs.twimg.com/responsive-web/client-web/shared~bundle.Grok~loader.Markdown-57c2c4a2.060ea4ca.js",
     "https://abs.twimg.com/responsive-web/client-web/shared~~-ab3eb430.cfd6d73a.js",
     "https://abs.twimg.com/responsive-web/client-web/noise-suppressor.worklet.666eba9a.js",
@@ -55,8 +55,8 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/bundle.Communities-8825d936.87df260a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Ocf-9f4db315.25dda4da.js",
     "https://abs.twimg.com/responsive-web/client-web/vendor-38c57b44.7266e9ba.js",
-    "https://abs.twimg.com/responsive-web/client-web/bundle.UserProfile-e019dbda.29ea3e7a.js",
-    "https://abs.twimg.com/responsive-web/client-web/bundle.Birdwatch-018b0723.ea6d37aa.js",
+    "https://abs.twimg.com/responsive-web/client-web/bundle.UserProfile-e019dbda.1e08525a.js",
+    "https://abs.twimg.com/responsive-web/client-web/bundle.Birdwatch-018b0723.d68b0bba.js",
     "https://abs.twimg.com/responsive-web/client-web/shared~bundle.Grok~loader.Markdown-63cb1cc4.f1d52fda.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.UserLists-63cb1cc4.40b53ffa.js",
     "https://abs.twimg.com/responsive-web/client-web/shared~bundle.Grok~loader.Markdown-d49ace54.7c12523a.js",
@@ -661,6 +661,6 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/loader.JetfuelFrame.e78a731a.js",
     "https://abs.twimg.com/responsive-web/client-web/loaders.video.PlayerHls1.5-dcf6fa52.55b4b94a.js",
 ];
-self.__META_DATA__ = { env: "prod", isCanary: false, sha: "f63f55cfd2cae2f924dff12b0e1bb355f6f06d4a", isTwoffice: false };
+self.__META_DATA__ = { env: "prod", isCanary: false, sha: "0b7b80b6c9e91148d3c69b1d60b4c0465708f2b4", isTwoffice: false };
 self.__INITIAL_STATE__ = {};
 importScripts("https://abs.twimg.com/responsive-web/client-serviceworker/serviceworker.34011f0a.js");

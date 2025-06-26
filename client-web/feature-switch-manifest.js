@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "ef014e1d20b0be3a7c82c34aad7e80662dec0ce4",
+    feature_set_token: "9553424e7545727342850f1caaae2d82fa76cda7",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -268,7 +268,7 @@ var manifest = {
         ocf_2fa_enrollment_bouncer_enabled: { value: !0 },
         ocf_2fa_enrollment_enabled: { value: !0 },
         ocf_2fa_unenrollment_enabled: { value: !0 },
-        onboarding_project_uls_enabled: { value: !0 },
+        onboarding_project_uls_enabled: { value: !1 },
         optimized_sru_parameters_client_side_timeout_ms: { value: 6e5 },
         optimized_sru_parameters_enabled: { value: 1 },
         optimized_sru_parameters_ideal_upload_time_ms: { value: 8e4 },
@@ -1501,7 +1501,6 @@ var manifest = {
         ecd_dispute_form_link_enabled: { name: "ecd_dispute_form_link_enabled", type: "boolean", defaultValue: !0 },
         enable_label_appealing_misinfo_enabled: { name: "enable_label_appealing_misinfo_enabled", type: "boolean", defaultValue: !1 },
         enable_label_appealing_sensitive_content_enabled: { name: "enable_label_appealing_sensitive_content_enabled", type: "boolean", defaultValue: !1 },
-        evergreen_cross_border_ja_us_17447: { name: "evergreen_cross_border_ja_us_17447", type: "experiment", enumeration_values: ["control", "evergreen"] },
         explore_graphql_enabled: { name: "explore_graphql_enabled", type: "boolean", defaultValue: !0 },
         explore_relaunch_enable_immersive_web: { name: "explore_relaunch_enable_immersive_web", type: "boolean", defaultValue: !1 },
         explore_relaunch_enable_immersive_web_from_video_carousels: { name: "explore_relaunch_enable_immersive_web_from_video_carousels", type: "string" },
@@ -1826,7 +1825,7 @@ var manifest = {
         ocf_2fa_enrollment_web_security_key_flow_enabled: { name: "ocf_2fa_enrollment_web_security_key_flow_enabled", type: "string" },
         ocf_2fa_unenrollment_enabled: { name: "ocf_2fa_unenrollment_enabled", type: "boolean", defaultValue: !0 },
         onboarding_chrome_sms_autoverify_9851: { name: "onboarding_chrome_sms_autoverify_9851", type: "experiment", enumeration_values: [] },
-        onboarding_project_uls_enabled: { name: "onboarding_project_uls_enabled", type: "boolean", defaultValue: !0 },
+        onboarding_project_uls_enabled: { name: "onboarding_project_uls_enabled", type: "boolean", defaultValue: !1 },
         optimized_sru_parameters_enabled: { name: "optimized_sru_parameters_enabled", type: "number", defaultValue: 1 },
         optimized_sru_parameters_min_segment_bytes: { name: "optimized_sru_parameters_min_segment_bytes", type: "number", defaultValue: 4194304 },
         optimized_sru_parameters_ideal_upload_time_ms: { name: "optimized_sru_parameters_ideal_upload_time_ms", type: "number", defaultValue: 8e4 },

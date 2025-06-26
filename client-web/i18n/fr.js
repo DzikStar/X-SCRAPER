@@ -230,9 +230,9 @@
                     return e.percentage + " % de remise sur l'abonnement " + e.tier + " " + e.plan;
                 }),
                 n("b28602eb", function (e) {
-                    return "Profitez de " + e.percentage + " % de remise cet été.";
+                    return "Get " + e.percentage + "% off this summer";
                 }),
-                n("he77d8e6", "Offre limitée dans le temps"),
+                n("he77d8e6", "Limited-time offer"),
                 n("adf3410a", "Abonnez‑vous pour profiter de nouvelles fonctionnalités et recevoir une part des revenus si vous respectez les critères."),
                 n("a84a736e", "Profitez d'un crédit publicitaire offert"),
                 n("a0713d76", "Abonnez‑vous au service Organisations certifiées pour profiter d'un crédit publicitaire offert et d'une suite d'outils conçus pour booster la croissance de votre entreprise."),
@@ -1298,7 +1298,7 @@
                     return 'Recherche de "' + e.query + '" sur 𝕏';
                 }),
                 n("ad342369", function (e) {
-                    return 'Recherche de "' + e.query + '" parmi les utilisateurs de 𝕏';
+                    return 'Searching 𝕏 users for "' + e.query + '"';
                 }),
                 n("g008d475", function (e) {
                     return "Navigation sur " + e.url;
@@ -1319,7 +1319,7 @@
                     return "Recherche de posts 𝕏 de @" + e.username + ' pour la requête **"' + e.query + '"**';
                 }),
                 n("a02d1657", function (e) {
-                    return "Exécution du code" + e.ttc_tool_usage_card;
+                    return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 n("ead81122", "Une erreur est survenue. Veuillez rafraîchir la page pour vous reconnecter ou réessayer."),
                 n("f808a13a", "Vous avez atteint la limite. Veuillez patienter quelques instants et réessayer."),
@@ -1353,12 +1353,12 @@
                 n("deaf5b16", "Réessayer"),
                 n("a66d80d0", "Traduire le post"),
                 n("be9b9fb8", "Traduit par Grok"),
-                n("ba10dab6", "Traduit automatiquement par Grok"),
+                n("ba10dab6", "Auto-translated by Grok"),
                 n("he9c9634", "Impossible de récupérer la traduction"),
                 n("j2198c98", "Masquer le post traduit"),
                 n("d4d35bea", "Traduction en cours…"),
-                n("f4f69be8", "Afficher l'original"),
-                n("e3097a5c", "Afficher le post traduit automatiquement"),
+                n("f4f69be8", "Show original"),
+                n("e3097a5c", "Show auto-translated post"),
                 n("e0f81ff3", "Traduction :"),
                 n("j2862695", function (e) {
                     return "À l'origine en " + e.originLanguage + " et traduit par";
@@ -4272,7 +4272,7 @@
                     return "Tout voir (" + e.count + ")";
                 }),
                 n("df601d92", "Utilisateurs pertinents"),
-                n("a4cfb8a8", "Navigation sur"),
+                n("a4cfb8a8", "Browsing"),
                 n("d7cb5408", "pages Web pertinentes"),
                 n("ca93f2ee", "Ce message a été supprimé."),
                 n("b8c06820", "Copier le texte"),
@@ -6507,7 +6507,7 @@
                 n("f7cf3d36", "Grok est un assistant IA gratuit conçu par xAI pour favoriser la vérité et l'objectivité. Grok propose de la recherche en temps réel, de la génération d'images, de l'analyse des tendances et plus encore."),
                 n("hc965308", "Fun"),
                 n("eb78b77e", "Mode Fun"),
-                n("ac164552", "Accéder à grok.com"),
+                n("ac164552", "Go to grok.com"),
                 n("gb5fb7d0", "Mode Centrer"),
                 n("g5665caa", "Quitter le mode Centrer"),
                 n("a372681e", "Copier le lien de partage"),
@@ -6998,9 +6998,9 @@
                 n("gd573390", "Et tous les avantages de l'abonnement Basique…"),
                 n("ef94bbd4", "Obtenez Premium+"),
                 n("dcd830ce", "Et tous les avantages de l'abonnement Premium…"),
-                n("dde0dbe0", "Profitez de notre offre estivale, qui se termine dans :"),
+                n("dde0dbe0", "Enjoy our Summer offer, ending in:"),
                 n("f8a50ba7", function (e) {
-                    return "Offre estivale se terminant le " + e.date + ".";
+                    return "Summer offer ending on " + e.date + ".";
                 }),
                 n("b7dde622", "Joyeux Thanksgiving ! L'offre se termine dans :"),
                 n("i0180ca1", function (e) {
@@ -7396,10 +7396,10 @@
                 n("bd05add8", "Pas un bot"),
                 n("d94f12b6", "Essayez de chercher les notifications, la confidentialité, etc."),
                 n("ba8f6f82", "Recherchez des paramètres"),
-                n("ibf92e4a", "Paiement effectué"),
+                n("ibf92e4a", "Payment Successful"),
                 n("bdf0fb06", "Your subscription has been activated."),
                 n("ddfd6718", "Échec du paiement"),
-                n("d42fa852", "Une erreur s'est produite lors du traitement de votre paiement. Veuillez réessayer."),
+                n("d42fa852", "There was an issue processing your payment. Please try again."),
                 n("g055a9ce", "Open 𝕏 App"),
                 n("g931a6e5", function (e) {
                     return "Vous suivez " + e.topic;
@@ -13352,4 +13352,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.9cfe6b1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.55020d0a.js.map
