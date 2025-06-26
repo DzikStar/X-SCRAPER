@@ -226,9 +226,9 @@
                     return e.percentage + "% de desconto " + e.tier + " " + e.plan;
                 }),
                 s("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "Receba " + e.percentage + "% de desconto neste verão";
                 }),
-                s("he77d8e6", "Limited-time offer"),
+                s("he77d8e6", "Oferta por tempo limitado"),
                 s("adf3410a", "Assine para desbloquear novos recursos e, se elegível, receba uma parte da receita."),
                 s("a84a736e", "Ganhe crédito de anúncio"),
                 s("a0713d76", "Faça upgrade para Organizações Verificadas para obter crédito de anúncio e um conjunto de ferramentas de crescimento empresarial."),
@@ -1294,7 +1294,7 @@
                     return 'Pesquisando "' + e.query + '" no 𝕏';
                 }),
                 s("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return 'Pesquisando "' + e.query + '" nos usuários do 𝕏';
                 }),
                 s("g008d475", function (e) {
                     return "Consultando " + e.url;
@@ -1315,7 +1315,7 @@
                     return "Pesquisando posts no 𝕏 de @" + e.username + ' sobre **"' + e.query + '"**';
                 }),
                 s("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "Executando código" + e.ttc_tool_usage_card;
                 }),
                 s("ead81122", "Algo deu errado. Atualize para reconectar ou tente novamente."),
                 s("f808a13a", "Limite de taxa excedido. Aguarde alguns instantes e tente novamente."),
@@ -1349,12 +1349,12 @@
                 s("deaf5b16", "Tentar novamente"),
                 s("a66d80d0", "Traduzir post"),
                 s("be9b9fb8", "Traduzido pelo Grok"),
-                s("ba10dab6", "Auto-translated by Grok"),
+                s("ba10dab6", "Traduzido automaticamente pelo Grok"),
                 s("he9c9634", "Não foi possível obter a tradução"),
                 s("j2198c98", "Ocultar post traduzido"),
                 s("d4d35bea", "Traduzindo..."),
-                s("f4f69be8", "Show original"),
-                s("e3097a5c", "Show auto-translated post"),
+                s("f4f69be8", "Mostrar original"),
+                s("e3097a5c", "Mostrar post traduzido automaticamente"),
                 s("e0f81ff3", "Tradução:"),
                 s("j2862695", function (e) {
                     return "Traduzido do " + e.originLanguage + " por";
@@ -4268,7 +4268,7 @@
                     return "Mostrar tudo (" + e.count + ")";
                 }),
                 s("df601d92", "Usuários relevantes"),
-                s("a4cfb8a8", "Browsing"),
+                s("a4cfb8a8", "Consultando"),
                 s("d7cb5408", "Páginas Relevantes da Web"),
                 s("ca93f2ee", "Esta mensagem foi excluída."),
                 s("b8c06820", "Copiar texto"),
@@ -6503,7 +6503,7 @@
                 s("f7cf3d36", "Grok é um assistente de IA gratuito desenvolvido pela xAI que tem como objetivo promover a verdade e a objetividade. Ele oferece pesquisa em tempo real, geração de imagens, análise de tendências e muito mais."),
                 s("hc965308", "Diversão"),
                 s("eb78b77e", "Modo Divertido"),
-                s("ac164552", "Go to grok.com"),
+                s("ac164552", "Acessar grok.com"),
                 s("gb5fb7d0", "Modo de Foco"),
                 s("g5665caa", "Sair do Modo de Foco"),
                 s("a372681e", "Copie o link para compartilhar"),
@@ -6994,9 +6994,9 @@
                 s("gd573390", "E tudo no Basic..."),
                 s("ef94bbd4", "Obtenha o Premium+"),
                 s("dcd830ce", "E tudo no Premium..."),
-                s("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                s("dde0dbe0", "Aproveite nossa oferta de verão que vai até:"),
                 s("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "A oferta de verão vai até " + e.date + ".";
                 }),
                 s("b7dde622", "Feliz Dia de Ação de Graças! A oferta termina em:"),
                 s("i0180ca1", function (e) {
@@ -7392,10 +7392,10 @@
                 s("bd05add8", "Não sou um robô"),
                 s("d94f12b6", "Procure pesquisar por notificações, privacidade etc."),
                 s("ba8f6f82", "Buscar configuração"),
-                s("ibf92e4a", "Payment Successful"),
+                s("ibf92e4a", "Pagamento realizado"),
                 s("bdf0fb06", "Your subscription has been activated."),
                 s("ddfd6718", "O pagamento falhou"),
-                s("d42fa852", "There was an issue processing your payment. Please try again."),
+                s("d42fa852", "Ocorreu um problema ao processar seu pagamento. Tente novamente."),
                 s("g055a9ce", "Open 𝕏 App"),
                 s("g931a6e5", function (e) {
                     return "Você está seguindo " + e.topic;
@@ -13349,4 +13349,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.dd2320da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.1711ce5a.js.map
