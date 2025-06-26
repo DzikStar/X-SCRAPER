@@ -68,9 +68,9 @@
                 k = o(716442),
                 C = o.n(k),
                 I = o(985289),
-                x = o.n(I),
-                S = o(524816),
-                Z = o.n(S),
+                S = o.n(I),
+                x = o(524816),
+                Z = o.n(x),
                 T = o(917665),
                 E = o.n(T),
                 L = o(587068),
@@ -80,7 +80,7 @@
                     clearConversations: (t, o) => e.graphQL(s(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, r.ZP)("GraphQL clear grok conversations failed."), e)),
                     setPreferences: ({ grokMode: t, grokModelOptionId: o }) => e.graphQL(P(), { grokMode: t, grokModelOptionId: o }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, r.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(_(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(x(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(S(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(m(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(h(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
@@ -122,7 +122,7 @@
             const n = function (e, t = {}) {
                 const o = { listUnicodeChar: t.listUnicodeChar ?? void 0, stripListLeaders: t.stripListLeaders ?? !0, gfm: t.gfm ?? !0, useImgAltText: t.useImgAltText ?? !0, abbr: t.abbr ?? !1, replaceLinksWithURL: t.replaceLinksWithURL ?? !1, htmlTagsToSkip: t.htmlTagsToSkip ?? [], throwError: t.throwError ?? !1 };
                 let n = e || "";
-                n = n.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, "");
+                (n = n.replace(/<grok:render[^>]*>[\s\S]*?<\/grok:render>/gi, "")), (n = n.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, ""));
                 try {
                     o.stripListLeaders && (n = o.listUnicodeChar ? n.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, `${o.listUnicodeChar} $1`) : n.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, "$1")),
                         o.gfm &&
@@ -219,8 +219,8 @@
             const k = v;
             var C = o(992942),
                 I = o(7022),
-                x = o(309854),
-                S = o(351686),
+                S = o(309854),
+                x = o(351686),
                 Z = o(822399);
             const T = f().b327c12a,
                 E = f().gff1f69e;
@@ -243,12 +243,12 @@
                     return n.createElement(a.Z, { style: p }, this.state.imageLoading ? D : null, _ ? n.createElement(I.Z, { onTap: i, onZoomed: s, resetZoom: d }, u) : u);
                 }
                 static _selectCachedVariant(e) {
-                    const t = x.Z.getOriginalImage(e);
-                    return t ? S.Z.selectLargestCachedVariant(t) : Promise.resolve();
+                    const t = S.Z.getOriginalImage(e);
+                    return t ? x.Z.selectLargestCachedVariant(t) : Promise.resolve();
                 }
                 static _selectSource(e) {
-                    const t = x.Z.getOriginalImage(e);
-                    return t && S.Z.selectLargestUrl(t);
+                    const t = S.Z.getOriginalImage(e);
+                    return t && x.Z.selectLargestUrl(t);
                 }
             }
             L.defaultProps = { zoomable: !1 };
@@ -290,8 +290,8 @@
                         [f, w] = n.useState({ width: 0, height: 0 }),
                         { isModal: v } = n.useContext(m.Z),
                         { height: C, width: I } = s.original_info || {},
-                        { height: x, width: S } = f,
-                        Z = v || o ? (0, y.I5)({ mediaWidth: I, mediaHeight: C, containerWidth: S, containerHeight: x }, o) : U.mediaItem;
+                        { height: S, width: x } = f,
+                        Z = v || o ? (0, y.I5)({ mediaWidth: I, mediaHeight: C, containerWidth: x, containerHeight: S }, o) : U.mediaItem;
                     return n.createElement(
                         k,
                         {
@@ -458,13 +458,13 @@
                         { isModal: k } = this.context,
                         C = { backgroundColor: e.rgba, ...u.nk },
                         I = { backgroundColor: e.rgb, ...u.nk },
-                        x = [y.root, k ? C : I, { position: k || d ? "relative" : "fixed" }],
-                        S = _,
-                        Z = S?.media_results?.result?.grok_image_annotation;
+                        S = [y.root, k ? C : I, { position: k || d ? "relative" : "fixed" }],
+                        x = _,
+                        Z = x?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(a.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(a.Z, { pointerEvents: p ? "none" : void 0, style: [y.footerButtons, f && C, f && y.footerButtonsAbsolute, p && y.fadeOut] }, n.createElement(r.Z, { withGutter: !0 }, o)) : null),
+                        n.createElement(a.Z, { onClick: this._handleBackgroundPress, style: S }, t, o ? n.createElement(a.Z, { pointerEvents: p ? "none" : void 0, style: [y.footerButtons, f && C, f && y.footerButtonsAbsolute, p && y.fadeOut] }, n.createElement(r.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(i.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: p ? "none" : void 0, role: "none", style: [y.buttonWrapper, y.buttonWrapperLeft, u.nk, p && y.fadeOut] }, (t) => n.createElement(s.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(c.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: _ || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
                         v ? n.createElement(a.Z, { pointerEvents: p ? "none" : void 0, style: [y.buttonWrapper, y.buttonWrapperRight, u.nk, p && y.fadeOut] }, v) : null,
                         Z
@@ -507,4 +507,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-9f4db315.134d53da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-9f4db315.dbd7e43a.js.map

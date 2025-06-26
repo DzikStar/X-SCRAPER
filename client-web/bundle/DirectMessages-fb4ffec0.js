@@ -3,39 +3,39 @@
     ["bundle.DirectMessages-fb4ffec0"],
     {
         778729: (e, t, s) => {
-            s.d(t, { Z: () => n });
+            s.d(t, { Z: () => r });
             var a = s(103335);
-            const n = (e, t) => `e${(0, a.Z)(e, t)}`;
+            const r = (e, t) => `e${(0, a.Z)(e, t)}`;
         },
         943245: (e, t, s) => {
-            s.d(t, { It: () => m, mD: () => c, sE: () => o, t: () => u });
+            s.d(t, { It: () => m, mD: () => c, sE: () => i, t: () => d });
             var a = s(899492),
-                n = s(733357);
-            const r = ["da", "de", "en", "en-gb", "es", "et", "eu", "fi", "fil", "fr", "ga", "gl", "ht", "hu", "id", "it", "lt", "lv", "nl", "no", "ms", "pl", "pt", "sk", "sl", "sv", "tr", "vi"],
-                i = { "en-gb": "en", "en-ss": "en", fil: "tl", he: "iw", id: "in", msa: "ms", "xx-lc": "en" },
-                o = (e) => {
+                r = s(733357);
+            const n = ["da", "de", "en", "en-gb", "es", "et", "eu", "fi", "fil", "fr", "ga", "gl", "ht", "hu", "id", "it", "lt", "lv", "nl", "no", "ms", "pl", "pt", "sk", "sl", "sv", "tr", "vi"],
+                o = { "en-gb": "en", "en-ss": "en", fil: "tl", he: "iw", id: "in", msa: "ms", "xx-lc": "en" },
+                i = (e) => {
                     const t = e.toLowerCase();
-                    return i[t] || t;
-                },
-                u = (e, t) => {
-                    if (t) return new Intl.DisplayNames([e], { type: "language" }).of(t);
+                    return o[t] || t;
                 },
                 d = (e, t) => {
-                    const s = o(e);
-                    return !(r.indexOf(s) > -1 && t < 20) && !("und" === e);
+                    if (t) return new Intl.DisplayNames([e], { type: "language" }).of(t);
                 },
-                c = ({ displayTextRange: e, entities: t, language: s, text: r }) => {
-                    if (!e || !d(s, e[1] - e[0])) return !1;
-                    const i = ((e, t) => {
+                u = (e, t) => {
+                    const s = i(e);
+                    return !(n.indexOf(s) > -1 && t < 20) && !("und" === e);
+                },
+                c = ({ displayTextRange: e, entities: t, language: s, text: n }) => {
+                    if (!e || !u(s, e[1] - e[0])) return !1;
+                    const o = ((e, t) => {
                             let s = a.Z.getTwemojiEntities(e).map((e) => e.indices);
                             for (const e in t) s = s.concat(t[e].map((e) => e.indices));
                             return s.sort((e, t) => e[0] - t[0]), s;
-                        })(r, t),
-                        o = ((e, t, s) => {
-                            const { accText: a, lastIndex: n } = s.reduce(({ accText: s, lastIndex: a }, n) => (n[1] <= a || t[1] <= n[0] ? { lastIndex: a, accText: s } : { accText: s + e.slice(a, n[0]), lastIndex: n[1] }), { accText: "", lastIndex: t[0] });
-                            return a + e.slice(n, t[1]);
-                        })(r, e, i);
-                    return !(0, n.Z)(o) && d(s, o.length);
+                        })(n, t),
+                        i = ((e, t, s) => {
+                            const { accText: a, lastIndex: r } = s.reduce(({ accText: s, lastIndex: a }, r) => (r[1] <= a || t[1] <= r[0] ? { lastIndex: a, accText: s } : { accText: s + e.slice(a, r[0]), lastIndex: r[1] }), { accText: "", lastIndex: t[0] });
+                            return a + e.slice(r, t[1]);
+                        })(n, e, o);
+                    return !(0, r.Z)(i) && u(s, i.length);
                 },
                 m = (e) => {
                     if (e.includes("-")) return e;
@@ -48,10 +48,10 @@
                 };
         },
         552378: (e, t, s) => {
-            s.d(t, { C: () => i });
+            s.d(t, { C: () => o });
             var a = s(807896),
-                n = s(202784);
-            class r extends n.Component {
+                r = s(202784);
+            class n extends r.Component {
                 constructor(...e) {
                     super(...e), (this.state = { isLoaded: !1 });
                 }
@@ -78,43 +78,44 @@
                 render() {
                     const { isLoaded: e } = this.state,
                         t = e ? this.state.modules : {};
-                    return n.Children.only(this.props.children(t || {}));
+                    return r.Children.only(this.props.children(t || {}));
                 }
             }
-            const i = (e, t) => (s) => n.createElement(r, { modules: t }, (t) => n.createElement(e, (0, a.Z)({}, t, s)));
+            const o = (e, t) => (s) => r.createElement(n, { modules: t }, (t) => r.createElement(e, (0, a.Z)({}, t, s)));
         },
         397159: (e, t, s) => {
-            s.d(t, { Fi: () => l, XR: () => h, fQ: () => g, iS: () => m });
+            s.d(t, { B2: () => g, Fi: () => l, fQ: () => p, iS: () => m, uk: () => h });
             s(136728), s(574858), s(543673), s(240753), s(128399);
             var a = s(468811),
-                n = s.n(a),
-                r = s(111677),
-                i = s.n(r),
-                o = s(123702),
-                u = s(187268);
-            const d = i().c3f04d9c,
-                c = i().cbdddb0a,
+                r = s.n(a),
+                n = s(111677),
+                o = s.n(n),
+                i = s(123702),
+                d = s(187268);
+            const u = o().c3f04d9c,
+                c = o().cbdddb0a,
                 m = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 l = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
-                h = { GenericSearchQueryFormatter: i().ie2bbeed, GenericSearchQueryMarkdownFormatter: i().b0d1e205, WebSearchQueryFormatter: i().ie2bbeed, XSearchQueryFormatter: i().bf970edd, XUserSearchFormatter: i().ad342369, BrowsePageFormatter: i().g008d475, GenericURLQueryFormatter: i().c91e3971, GenericURLQueryMarkdownFormatter: i().acb9b845, XUsernameSearchFormatter: i().j9006405, XUsernameQuerySearchFormatter: i().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: i().e99fb7a3, CodeExecutionFormatter: i().a02d1657 };
-            class g {
+                h = { GenericSearchQueryFormatter: o().ie2bbeed, GenericSearchQueryMarkdownFormatter: o().b0d1e205, WebSearchQueryFormatter: o().ie2bbeed, XSearchQueryFormatter: o().bf970edd, XUserSearchFormatter: o().ad342369, BrowsePageFormatter: o().g008d475, GenericURLQueryFormatter: o().c91e3971, GenericURLQueryMarkdownFormatter: o().acb9b845, XUsernameSearchFormatter: o().j9006405, XUsernameQuerySearchFormatter: o().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: o().e99fb7a3, CodeExecutionFormatter: o().a02d1657 },
+                g = { WebSearchQueryFormatter: o().aa9d42c0, XSearchQueryFormatter: o().dce1817a, XUserSearchFormatter: o().f7151564, BrowsePageFormatter: o().c43ef93e, XUsernameSearchFormatter: o().dce1817a, XUsernameQuerySearchFormatter: o().dce1817a, XUsernameQuerySearchMarkdownFormatter: o().dce1817a, CodeExecutionFormatter: o().jb097f6e };
+            class p {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, t = !1) => {
                         this.lastStreamedDataTimestamp = Date.now();
                         for (const t of e) {
-                            const e = { id: n().v4(), state: l.COMPLETED, header: t.header || d, subSteps: [] };
+                            const e = { id: r().v4(), state: l.COMPLETED, header: t.header || u, subSteps: [] };
                             for (let s = 0; s < t.steps.length; s++) {
                                 const a = t.steps[s];
                                 this.addWebResults(a.webResults || []), this.addXPostIds(a.xPostIds || []);
-                                let n = 0;
+                                let r = 0;
                                 if ((a.assistant && ((this.accumulatedTrace += a.assistant), (this.traceEnabled = !0)), a.summary)) {
-                                    const t = (0, u.Ez)(a.summary);
-                                    (this.accumulatedSummary += t), e.subSteps.push({ messageStepId: s + n, messageTag: m.SUMMARY, summary: t, webResults: a.webResults, xPostIds: a.xPostIds, toolUsageCardResults: a.toolUsageCardResults }), n++;
+                                    const t = (0, d.Ez)(a.summary);
+                                    (this.accumulatedSummary += t), e.subSteps.push({ messageStepId: s + r, messageTag: m.SUMMARY, summary: t, webResults: a.webResults, xPostIds: a.xPostIds, toolUsageCardResults: a.toolUsageCardResults }), r++;
                                 }
                                 if (a.decision) {
                                     const t = this.parseMessageJSON(a.decision),
-                                        { markdown: r, text: i } = this.getContentForDecisionAction(t);
-                                    e.subSteps.push({ messageStepId: s + n, messageTag: m.DECISION, actionIcon: this.getIconForDecisionAction(t), actionType: t?.action, actionMarkdownSummary: r, actionSummary: i, actionWebResult: this.webResults.find((e) => e.url === t?.action_input?.url), actionState: "COMPLETED", webResults: a.webResults, xPostIds: a.xPostIds }), n++;
+                                        { markdown: n, text: o } = this.getContentForDecisionAction(t);
+                                    e.subSteps.push({ messageStepId: s + r, messageTag: m.DECISION, actionIcon: this.getIconForDecisionAction(t), actionType: t?.action, actionMarkdownSummary: n, actionSummary: o, actionWebResult: this.webResults.find((e) => e.url === t?.action_input?.url), actionState: "COMPLETED", webResults: a.webResults, xPostIds: a.xPostIds }), r++;
                                 }
                             }
                             this.steps.push(e);
@@ -125,28 +126,29 @@
                             e && (this.debugMessageTagCount[e] || (this.debugMessageTagCount[e] = 0), this.debugMessageTagCount[e]++, (this.debugMessageTagCount = { ...this.debugMessageTagCount }));
                         }),
                         (this.updateStepsFromRawMessage = (e) => {
+                            e.messageTag && (e.messageTag = e.messageTag.toLowerCase());
                             const t = this.steps.length - 1,
                                 s = e.messageTag === m.HEADER,
                                 a = s || this.steps.length <= 0;
                             if ((this.addDebugMessageTagCount(e.messageTag), (this.lastStreamedDataTimestamp = Date.now()), "PENDING" === this.state && ((this.streamStartTimestamp = Date.now()), (this.state = "STARTED")), a)) {
-                                const a = { id: n().v4(), state: "COMPLETED" === this.state ? l.COMPLETED : l.IN_PROGRESS, header: s ? e.message : d, subSteps: [] };
+                                const a = { id: r().v4(), state: "COMPLETED" === this.state ? l.COMPLETED : l.IN_PROGRESS, header: s ? e.message : u, subSteps: [] };
                                 if (s) {
-                                    if (1 === this.steps.length && this.steps[0].header === d) return void (this.steps = [{ ...this.steps[0], header: a.header }]);
+                                    if (1 === this.steps.length && this.steps[0].header === u) return void (this.steps = [{ ...this.steps[0], header: a.header }]);
                                     this.steps = [...this.steps, a];
                                 } else e.messageTag === m.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, a]));
                                 return void (t >= 0 && this.completeStep(t));
                             }
-                            const r = this.steps[t],
-                                i = r.subSteps.findLastIndex((t) => {
+                            const n = this.steps[t],
+                                o = n.subSteps.findLastIndex((t) => {
                                     if (e.messageTag === m.RAW_FUNCTION_RESULT) {
                                         const s = t.messageStepId === e.messageStepId,
                                             a = t.messageTag === e.messageTag,
-                                            n = t.messageTag === m.DECISION;
-                                        return s && (a || n);
+                                            r = t.messageTag === m.DECISION;
+                                        return s && (a || r);
                                     }
                                     return t.messageStepId === e.messageStepId && t.messageTag === e.messageTag;
                                 }),
-                                c = i > -1 ? r.subSteps[i] : void 0;
+                                c = o > -1 ? n.subSteps[o] : void 0;
                             let h = !1;
                             if (c) {
                                 switch (e.messageTag) {
@@ -154,24 +156,29 @@
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case m.SUMMARY: {
-                                        const t = (0, u.Ez)(e.message);
-                                        c.summary = (c.summary || "") + t;
-                                        const s = (0, u.QK)(e.message);
+                                        const t = (0, d.Ez)(e.message);
+                                        (this.accumulatedSummary += t), (c.summary = (c.summary || "") + t);
+                                        const s = (0, d.QK)(e.message);
                                         if (s) {
-                                            const t = (0, u.CK)(s);
-                                            t && (c.bulletPoints = [...(c.bulletPoints || []), t]), (c.toolUsageCardResults = [...(c.toolUsageCardResults || []), { toolUsageCardId: s.id, webResults: e.webResults, xPostIds: e.xPostIds }]);
-                                        } else {
-                                            const t = (0, o.K)(e.message);
-                                            if ((t.trim() && (c.bulletPoints = [...(c.bulletPoints || []), t]), e.webResults && e.webResults.length && (this.addWebResults(e.webResults || []), e.toolUsageCardId))) {
-                                                const t = c.toolUsageCardResults?.map((t) => (t.toolUsageCardId === e.toolUsageCardId ? { ...t, webResults: e.webResults } : t));
-                                                c.toolUsageCardResults = t;
+                                            const t = (0, d.j)(s);
+                                            if (t) {
+                                                c.statusHeaders = [...(c.statusHeaders || []), t];
+                                                const e = (0, d.jU)(s);
+                                                c.orderedContentToPreview = [...(c.orderedContentToPreview || []), { header: e, type: "TOOL_USAGE", toolUsageCard: s }];
                                             }
-                                            if (e.xPostIds && e.xPostIds.length && (this.addXPostIds(e.xPostIds || []), e.toolUsageCardId)) {
-                                                const t = c.toolUsageCardResults?.map((t) => (t.toolUsageCardId === e.toolUsageCardId ? { ...t, xPostIds: e.xPostIds } : t));
-                                                c.toolUsageCardResults = t;
+                                            c.toolUsageCardResults = [...(c.toolUsageCardResults || []), { toolUsageCardId: s.id, webResults: e.webResults, xPostIds: e.xPostIds }];
+                                        } else {
+                                            const t = (0, i.K)(e.message);
+                                            if ((t.trim() && ((c.statusHeaders = [...(c.statusHeaders || []), t]), (c.summaryBulletPoints = [...(c.summaryBulletPoints || []), t]), (c.orderedContentToPreview = [...(c.orderedContentToPreview || []), { header: n.header, summary: t, type: "SUMMARY" }])), (e.webResults && e.webResults.length) || (e.xPostIds && e.xPostIds.length))) {
+                                                if ((this.addWebResults(e.webResults || []), this.addXPostIds(e.xPostIds || []), e.toolUsageCardId)) {
+                                                    const t = c.toolUsageCardResults?.map((t) => (t.toolUsageCardId === e.toolUsageCardId ? { ...t, webResults: e.webResults, xPostIds: e.xPostIds } : t));
+                                                    c.toolUsageCardResults = t;
+                                                }
+                                                const t = c.orderedContentToPreview?.find((t) => t.toolUsageCard?.id === e.toolUsageCardId);
+                                                t && (c.orderedContentToPreview = [...(c.orderedContentToPreview || []), { header: t.header, type: "TOOL_USAGE_RESULT", toolUsageCard: t.toolUsageCard, toolUsageCardResult: { toolUsageCardId: t.toolUsageCard?.id || "", webResults: e.webResults, xPostIds: e.xPostIds } }]);
                                             }
                                         }
-                                        (h = !0), (this.accumulatedSummary += t);
+                                        h = !0;
                                         break;
                                     }
                                     case m.DECISION: {
@@ -184,7 +191,7 @@
                                         if (!((e.webResults && e.webResults.length) || (e.xPostIds && e.xPostIds.length))) break;
                                         e.webResults && ((c.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((c.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), c.actionState, (h = !0);
                                 }
-                                h && ((r.subSteps[i] = { ...c }), (r.subSteps = [...r.subSteps]));
+                                h && ((n.subSteps[o] = { ...c }), (n.subSteps = [...n.subSteps]));
                             } else {
                                 let t = null;
                                 switch (e.messageTag) {
@@ -192,22 +199,26 @@
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case m.SUMMARY: {
-                                        const s = (0, u.QK)(e.message) ?? void 0,
-                                            a = (0, u.Ez)(e.message);
-                                        let n = [];
+                                        const s = (0, d.QK)(e.message) ?? void 0,
+                                            a = (0, d.Ez)(e.message);
+                                        this.accumulatedSummary += a;
+                                        let r = [],
+                                            o = [],
+                                            u = [];
                                         if (s) {
-                                            const e = (0, u.CK)(s);
-                                            e && (n = [e]);
+                                            const e = (0, d.j)(s);
+                                            e && ((r = [e]), (u = [{ header: e, toolUsageCard: s, type: "TOOL_USAGE" }]));
                                         } else {
-                                            (0, o.K)(e.message).trim() && (n = [(0, o.K)(e.message)]);
+                                            const t = (0, i.K)(e.message);
+                                            t.trim() && ((r = [(0, i.K)(e.message)]), (o = [...(o || []), t]), (u = [{ header: n.header, summary: t, type: "SUMMARY" }]));
                                         }
-                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsageCardResults: s ? [{ toolUsageCardId: s.id, webResults: e.webResults, xPostIds: e.xPostIds }] : [], bulletPoints: n };
+                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: a, toolUsageCardResults: s ? [{ toolUsageCardId: s.id, webResults: e.webResults, xPostIds: e.xPostIds }] : [], statusHeaders: r, summaryBulletPoints: o, orderedContentToPreview: u };
                                         break;
                                     }
                                     case m.DECISION: {
                                         const s = this.parseMessageJSON(e.message),
-                                            { markdown: a, text: n } = this.getContentForDecisionAction(s);
-                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, actionIcon: this.getIconForDecisionAction(s), actionType: s?.action, actionSummary: n, actionMarkdownSummary: a, actionWebResult: this.webResults.find((e) => e.url === s?.action_input?.url), actionState: "STARTED" };
+                                            { markdown: a, text: r } = this.getContentForDecisionAction(s);
+                                        t = { messageStepId: e.messageStepId, messageTag: e.messageTag, actionIcon: this.getIconForDecisionAction(s), actionType: s?.action, actionSummary: r, actionMarkdownSummary: a, actionWebResult: this.webResults.find((e) => e.url === s?.action_input?.url), actionState: "STARTED" };
                                         break;
                                     }
                                     case m.RAW_FUNCTION_RESULT: {
@@ -219,9 +230,9 @@
                                     }
                                 }
                                 if (t) {
-                                    const e = [...r.subSteps];
+                                    const e = [...n.subSteps];
                                     for (const t of e) t.actionState = "COMPLETED";
-                                    (r.subSteps = [...e, t]), (r.subSteps = this.sortSubstepsByStepIdMessageTag(r.subSteps)), (this.steps = [...this.steps]);
+                                    (n.subSteps = [...e, t]), (n.subSteps = this.sortSubstepsByStepIdMessageTag(n.subSteps)), (this.steps = [...this.steps]);
                                 }
                             }
                             this.steps[t] = { ...this.steps[t] };
@@ -288,7 +299,7 @@
                                             e.actionState = "COMPLETED";
                                         });
                                 }),
-                                e && this.steps.push({ id: n().v4(), state: l.COMPLETED, header: c, subSteps: [], isCompleteHeader: !0 }),
+                                e && this.steps.push({ id: r().v4(), state: l.COMPLETED, header: c, subSteps: [], isCompleteHeader: !0 }),
                                 (this.steps = [...this.steps]));
                         }),
                         (this.onAbort = () => {
@@ -332,53 +343,53 @@
             s.d(t, { i: () => g, w: () => p });
             s(136728);
             var a = s(548102),
-                n = s.n(a),
-                r = s(817480),
-                i = s(166852),
-                o = s(662678),
-                u = s(339110),
-                d = s(275365),
+                r = s.n(a),
+                n = s(817480),
+                o = s(166852),
+                i = s(662678),
+                d = s(339110),
+                u = s(275365),
                 c = s(17243),
                 m = s(234296),
                 l = s(198506);
-            const h = (e) => ({ data: { name: e.name || "", conversationId: e.conversation_id }, id: e.conversation_id, type: u.El.DMConversation }),
+            const h = (e) => ({ data: { name: e.name || "", conversationId: e.conversation_id }, id: e.conversation_id, type: d.El.DMConversation }),
                 g = (e, t, s, a = !1) => {
-                    const o = e && new RegExp(`(^|.*\\s)${n()(e)}.*`, "i"),
-                        d = ((e, t) => (0, r.Z)(e.map((e) => (0, l.Z)(e, t).map((e) => e.user))))(t.sort(m.Z), s)
-                            .filter((e) => (!o || o.test(e.screen_name) || o.test(e.name)) && (e.followed_by || a))
-                            .map((e) => (0, c.z4)(e, u.vA.DMInjected));
-                    return (0, i.Z)(d, (e) => e.id);
+                    const i = e && new RegExp(`(^|.*\\s)${r()(e)}.*`, "i"),
+                        u = ((e, t) => (0, n.Z)(e.map((e) => (0, l.Z)(e, t).map((e) => e.user))))(t.sort(m.Z), s)
+                            .filter((e) => (!i || i.test(e.screen_name) || i.test(e.name)) && (e.followed_by || a))
+                            .map((e) => (0, c.z4)(e, d.vA.DMInjected));
+                    return (0, o.Z)(u, (e) => e.id);
                 };
             function p(e, t, s, a) {
-                const c = e && new RegExp(`(^|.*\\s)${n()(e)}.*`, "i"),
+                const c = e && new RegExp(`(^|.*\\s)${r()(e)}.*`, "i"),
                     p = t
                         .filter((e) => e.trusted)
                         .filter((t) => {
                             if (!e) return !0;
                             const a = c && t.name && c.test(t.name),
-                                n = (0, l.Z)(t, s).map((e) => e.user),
-                                r = c && n.some((e) => c.test(e.screen_name) || c.test(e.name));
-                            return a || r;
+                                r = (0, l.Z)(t, s).map((e) => e.user),
+                                n = c && r.some((e) => c.test(e.screen_name) || c.test(e.name));
+                            return a || n;
                         })
                         .sort(m.Z);
                 let S = p;
                 if (e) {
-                    const [e, t] = (0, o.Z)(p, (e) => e.type === d.eD.ONE_TO_ONE);
+                    const [e, t] = (0, i.Z)(p, (e) => e.type === u.eD.ONE_TO_ONE);
                     S = e.concat(t);
                 }
                 return (
-                    (I = (0, r.Z)(
+                    (I = (0, n.Z)(
                         S.map((t) => {
-                            const n = t.type === d.eD.GROUP;
-                            let r = [];
-                            return (n && a) || (n && r.push(h(t)), (!e && n) || (r = r.concat(g(n ? e : null, [t], s, !n)))), r;
+                            const r = t.type === u.eD.GROUP;
+                            let n = [];
+                            return (r && a) || (r && n.push(h(t)), (!e && r) || (n = n.concat(g(r ? e : null, [t], s, !r)))), n;
                         }),
                     )),
-                    (0, i.Z)(I, ({ id: e, type: t }) => (t === u.El.DMConversation ? `c_${e}` : `u_${e}`))
+                    (0, o.Z)(I, ({ id: e, type: t }) => (t === d.El.DMConversation ? `c_${e}` : `u_${e}`))
                 );
                 var I;
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.970ffd9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.ca978d6a.js.map

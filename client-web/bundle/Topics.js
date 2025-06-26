@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: n, isFullWidth: a, isLarge: l, leftControl: d, middleControl: h, position: m, rightControl: u, secondaryBar: g, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: T, titleIconCellSize: y, withBackground: Z, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: n, isFullWidth: a, isLarge: l, leftControl: d, middleControl: h, position: m, rightControl: u, secondaryBar: g, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: y, titleIconCellSize: T, withBackground: Z, withWideContainer: w } = this.props,
                         { isModal: k } = this.context,
                         C = n ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         I = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!Z, k, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(c.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: l, leftControl: C, middleControl: h, position: p(m, k, i), rightControl: u, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: T, titleIconCellSize: y, withBackground: I, withWideContainer: w }), g || null);
+                    return r.createElement(r.Fragment, null, r.createElement(c.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: l, leftControl: C, middleControl: h, position: p(m, k, i), rightControl: u, style: E, subtitle: f, title: _, titleDomId: b, titleIconCell: y, titleIconCellSize: T, withBackground: I, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -62,8 +62,8 @@
                     super(...e),
                         (this._renderChildViewAppBar = () => {
                             const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: n, centerTitle: a, hideBackButton: s, history: c, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, rightControl: E, secondaryBar: f, subtitle: _, title: b } = this.props,
-                                { isModal: T } = this.context;
-                            return r.createElement(i.Z, { style: T ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (T ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !T, hideBackButton: s, history: c, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, ref: e, rightControl: E, secondaryBar: f, style: [T && u.appBarModal, t], subtitle: _, title: b, titleDomId: l.Q_ }));
+                                { isModal: y } = this.context;
+                            return r.createElement(i.Z, { style: y ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (y ? "close" : "back"), backLocation: n, centerTitle: a, fixed: !y, hideBackButton: s, history: c, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, ref: e, rightControl: E, secondaryBar: f, style: [y && u.appBarModal, t], subtitle: _, title: b, titleDomId: l.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -110,7 +110,7 @@
                 };
         },
         371493: (e, t, o) => {
-            o.d(t, { $N: () => b, G0: () => _, Jj: () => T, O9: () => u, S: () => g, fy: () => E, jz: () => y, nm: () => f, qk: () => p, uI: () => h });
+            o.d(t, { $N: () => b, G0: () => _, Jj: () => y, O9: () => u, S: () => g, fy: () => E, jz: () => T, nm: () => f, qk: () => p, uI: () => h });
             var r = o(912021),
                 i = o(644829),
                 n = o(740527),
@@ -144,15 +144,15 @@
                             .filter((e) => 0 === e.indexOf(h))
                             .map((e) => (0, s.$q)(e)),
                     ),
-                T = (e) => {
+                y = (e) => {
                     const t = `trend-relevant-users-${e}-gql`,
                         o = { timelineId: t, formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchTrendRelevantUsersGraphQL, getEndpointParams: () => ({ trendId: e }) }, context: "FETCH_TREND_RELEVANT_USERS", perfKey: t, staleIntervalMs: m };
                     return (0, l.Z)(o);
                 },
-                y = (e) => (0, l.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: a.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
+                T = (e) => (0, l.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(i.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: a.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         642081: (e, t, o) => {
-            o.r(t), o.d(t, { TopicLandingPage: () => z, default: () => q });
+            o.r(t), o.d(t, { TopicLandingPage: () => Q, default: () => q });
             var r = o(202784),
                 i = o(688715),
                 n = o(457311),
@@ -170,15 +170,15 @@
             const f = "topic-landing-page";
             var _ = o(912021),
                 b = o(903019),
-                T = o(668214),
-                y = o(466380);
+                y = o(668214),
+                T = o(466380);
             const Z = (e, t) => t.location.state?.referringScribeNamespace,
                 w = (e, t) => t.match.params.topicId,
                 k = (e, t) => {
                     const o = w(0, t);
-                    return o ? y.Z.select(e, o) : void 0;
+                    return o ? T.Z.select(e, o) : void 0;
                 },
-                C = (0, T.Z)().propsFromState(() => {
+                C = (0, y.Z)().propsFromState(() => {
                     const e = (0, _.Z)((e, t) => (({ params: e, topicId: t }) => (0, E.Z)({ context: "FETCH_TOPIC_TIMELINE", network: { getEndpoint: (e) => e.withEndpoint(u.ZP).fetchTopicLandingPage, getEndpointParams: ({ cursor: o, ...r }) => ({ ...r, ...e, cursor: "string" == typeof o ? o : void 0, topicId: t }) }, formatResponse: g.Z, perfKey: f, timelineId: `${f}-${t}` }))({ topicId: e, params: t ? { data_lookup_id: t } : void 0 }));
                     return {
                         module: (t, o) => {
@@ -216,16 +216,16 @@
                 G = "Be the first to post about this Topic and see it here.",
                 U = "/",
                 W = r.createElement(c.Z, { withWhoToFollow: !1 }),
-                Q = { page: "topic_landing", section: "main" };
-            function z({ history: e, module: t, referringScribeNamespace: o, topic: i, topicId: a }) {
+                z = { page: "topic_landing", section: "main" };
+            function Q({ history: e, module: t, referringScribeNamespace: o, topic: i, topicId: a }) {
                 const s = i?.name ? O({ topicName: i?.name }) : M,
                     c = i?.name ? H({ topicName: i?.name }) : $;
-                return r.createElement(m.nO, { data: L(o, a) }, r.createElement(r.Fragment, null, r.createElement(d.Z, { description: c }), r.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), r.createElement(l.Z, { deepLink: F(a) }), r.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: v, history: e, initialPageNamespace: Q, module: t, renderEmptyState: () => r.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
+                return r.createElement(m.nO, { data: L(o, a) }, r.createElement(r.Fragment, null, r.createElement(d.Z, { description: c }), r.createElement(p.Z, { canonical: N(a), description: c, title: s, type: "article" }), r.createElement(l.Z, { deepLink: F(a) }), r.createElement(h.Z, { backLocation: U, documentTitle: s, entryConfiguration: v, history: e, initialPageNamespace: z, module: t, renderEmptyState: () => r.createElement(n.Z, { header: A, message: G }), sidebarContent: W, timelinePrefix: f, title: R })));
             }
-            const q = C(z);
+            const q = C(Q);
         },
         204819: (e, t, o) => {
-            o.r(t), o.d(t, { TopicsEducationScreen: () => T, default: () => Z });
+            o.r(t), o.d(t, { TopicsEducationScreen: () => y, default: () => Z });
             var r = o(202784),
                 i = o(325686),
                 n = o(731708),
@@ -246,7 +246,7 @@
                 f = l().j24c37b2,
                 _ = l().h3f9027a,
                 b = l().e241095e;
-            class T extends r.Component {
+            class y extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderHeader = (e) => null),
@@ -254,7 +254,7 @@
                             const { history: e } = this.props;
                             e.goBack();
                         }),
-                        (this._getSubtext = () => r.createElement(i.Z, null, r.createElement(n.ZP, { color: "gray700" }, _), r.createElement(n.ZP, { color: "gray700", style: y.paddingTop }, this._getSecondaryText()))),
+                        (this._getSubtext = () => r.createElement(i.Z, null, r.createElement(n.ZP, { color: "gray700" }, _), r.createElement(n.ZP, { color: "gray700", style: T.paddingTop }, this._getSecondaryText()))),
                         (this._getSecondaryText = () => {
                             const { screenName: e } = this.props,
                                 t = { pathname: e ? `/${e}/topics` : "/home", method: "replace" },
@@ -270,8 +270,8 @@
                     return r.createElement(a.Z, { actionLabel: f, graphic: d.default, headline: E({ topic: e }), onAction: this._handleClose, onClose: this._handleClose, subtext: this._getSubtext() });
                 }
             }
-            const y = s.default.create((e) => ({ paddingTop: { paddingTop: e.spaces.space16 } })),
-                Z = g(T);
+            const T = s.default.create((e) => ({ paddingTop: { paddingTop: e.spaces.space16 } })),
+                Z = g(y);
         },
         191855: (e, t, o) => {
             o.r(t), o.d(t, { TopicsPicker: () => I, default: () => P });
@@ -296,10 +296,10 @@
                         return (t = e), (0, u.Z)({ context: "FETCH_TOPICS_PICKER_PAGE", network: { getEndpoint: (e) => e.withEndpoint(h.ZP).fetchTopicsPickerPage, getEndpointParams: () => ({ topicId: t }) }, perfKey: "topics-picker", formatResponse: m.Z, timelineId: `topics-picker-${t || "home"}` });
                         var t;
                     }),
-                T = (0, p.Z)()
+                y = (0, p.Z)()
                     .propsFromState(() => ({ isForwardNavigation: E, module: b(), previousPath: f, selectedTabId: _ }))
                     .propsFromActions(() => ({ clearTimelineCache: g.Z })),
-                y = n().d094c720,
+                T = n().d094c720,
                 Z = { page: "topics_picker", section: "main" },
                 w = (e) => (e ? `twitter://topics/picker/${e}` : "twitter://topics/picker"),
                 k = (e) => ({ pathname: `/i/topics/picker/${e}` }),
@@ -310,10 +310,10 @@
                         (0, a.q)(() => {
                             i && !s?.includes("/i/topics/picker") && t(n);
                         }),
-                        r.createElement(r.Fragment, null, r.createElement(c.Z, { deepLink: w(d) }), r.createElement(l.Z, { backLocation: "/home", getTabLink: k, history: o, initialPageNamespace: Z, module: n, selectedTabId: d, sidebarContent: C, timelinePrefix: "topics-picker-", title: y }))
+                        r.createElement(r.Fragment, null, r.createElement(c.Z, { deepLink: w(d) }), r.createElement(l.Z, { backLocation: "/home", getTabLink: k, history: o, initialPageNamespace: Z, module: n, selectedTabId: d, sidebarContent: C, timelinePrefix: "topics-picker-", title: T }))
                     );
                 },
-                P = T(I);
+                P = y(I);
         },
         55123: (e, t, o) => {
             o.r(t), o.d(t, { TrendingEventHistoryScreen: () => Z, default: () => w });
@@ -336,12 +336,12 @@
                     .propsFromState(() => ({ trendId: E, scribeNamespace: f }))
                     .withAnalytics(g),
                 b = a().e44b4256,
-                T = a().a74af3f8,
-                y = () => r.createElement(i.Z, { header: T });
+                y = a().a74af3f8,
+                T = () => r.createElement(i.Z, { header: y });
             class Z extends r.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._render = () => r.createElement(h.Z, { module: this._getModule(), renderEmptyState: y, title: "Story History" })),
+                        (this._render = () => r.createElement(h.Z, { module: this._getModule(), renderEmptyState: T, title: "Story History" })),
                         (this._getMemoizedModule = (0, s.Z)((e) => (0, m.jz)(e))),
                         (this._getModule = () => {
                             const { trendId: e } = this.props;
@@ -375,14 +375,14 @@
                 f = o(71620),
                 _ = o(668214),
                 b = o(735313),
-                T = o(919022);
-            const y = (e, t) => t.location.pathname,
+                y = o(919022);
+            const T = (e, t) => t.location.pathname,
                 Z = (e, t) => "PUSH" === t.history.action || "REPLACE" === t.history.action,
                 w = (e, t) => t.match.params.tabId || void 0,
-                k = (e, t) => T.ZP.selectByScreenName(e, t.match.params.screenName),
+                k = (e, t) => y.ZP.selectByScreenName(e, t.match.params.screenName),
                 C = (0, _.Z)()
-                    .propsFromState(() => ({ isForwardNavigation: Z, pathname: y, selectedTabId: w, user: k }))
-                    .propsFromActions(() => ({ clearTimelineCache: b.Z, createLocalApiErrorHandler: (0, f.zr)("USER_TOPICS_SCREEN"), fetchUserByScreenNameIfNeeded: T.ZP.fetchOneByScreenNameIfNeeded })),
+                    .propsFromState(() => ({ isForwardNavigation: Z, pathname: T, selectedTabId: w, user: k }))
+                    .propsFromActions(() => ({ clearTimelineCache: b.Z, createLocalApiErrorHandler: (0, f.zr)("USER_TOPICS_SCREEN"), fetchUserByScreenNameIfNeeded: y.ZP.fetchOneByScreenNameIfNeeded })),
                 I = a().b8533bac,
                 P = "topics-management-",
                 S = "viewing-other-users-topics-",
@@ -446,6 +446,19 @@
             x.contextType = l.rC;
             const B = C(x);
         },
+        76388: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => c });
+            var r = o(202784),
+                i = o(890601),
+                n = o(783427),
+                a = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.778c45ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.64698b5a.js.map

@@ -3,18 +3,18 @@
     ["shared~bundle.Payments~bundle.TV"],
     {
         420412: (t, e, r) => {
-            r.d(e, { Z: () => u });
+            r.d(e, { Z: () => c });
             var n = r(202784),
                 o = r(325686),
                 i = r(235902),
                 l = r(885015),
-                c = r(392237);
-            function u({ borderColor: t = "borderColor", isSlim: e = !1, label: r }) {
-                const { isWebRedesign: u } = i.ZP.useProps(),
-                    a = "borderColor" === t || "nestedBorderColor" === t ? s[t] : { backgroundColor: c.default.theme.colors[t] ?? c.default.theme.colors.borderColor };
-                return r ? n.createElement(l.Z, { style: !e && s.root, withGutter: !0 }, n.createElement(o.Z, { style: s.gapColumn }, n.createElement(o.Z, { style: [s.gap, a] })), n.createElement(o.Z, { style: s.gapText }, r), n.createElement(o.Z, { style: s.gapColumn }, n.createElement(o.Z, { style: [s.gap, a] }))) : n.createElement(o.Z, { style: [!e && s.root, u() && s.rootRedesign, s.gap, a] });
+                u = r(392237);
+            function c({ borderColor: t = "borderColor", isSlim: e = !1, label: r }) {
+                const { isWebRedesign: c } = i.ZP.useProps(),
+                    a = "borderColor" === t || "nestedBorderColor" === t ? s[t] : { backgroundColor: u.default.theme.colors[t] ?? u.default.theme.colors.borderColor };
+                return r ? n.createElement(l.Z, { style: !e && s.root, withGutter: !0 }, n.createElement(o.Z, { style: s.gapColumn }, n.createElement(o.Z, { style: [s.gap, a] })), n.createElement(o.Z, { style: s.gapText }, r), n.createElement(o.Z, { style: s.gapColumn }, n.createElement(o.Z, { style: [s.gap, a] }))) : n.createElement(o.Z, { style: [!e && s.root, c() && s.rootRedesign, s.gap, a] });
             }
-            const s = c.default.create((t) => ({ borderColor: { backgroundColor: c.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: c.default.theme.colors.nestedBorderColor }, gap: { height: t.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: t.spaces.space4 }, rootRedesign: { marginHorizontal: t.spaces.space16 } }));
+            const s = u.default.create((t) => ({ borderColor: { backgroundColor: u.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: u.default.theme.colors.nestedBorderColor }, gap: { height: t.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: t.spaces.space4 }, rootRedesign: { marginHorizontal: t.spaces.space16 } }));
         },
         885015: (t, e, r) => {
             r.d(e, { Z: () => s });
@@ -22,16 +22,16 @@
                 o = r(202784),
                 i = r(325686),
                 l = r(392237);
-            class c extends o.Component {
+            class u extends o.Component {
                 render() {
                     const { children: t, style: e, withGutter: r, ...l } = this.props,
-                        c = o.Children.map(t, (t) => t && o.cloneElement(t, { style: [t.props.style, u.column, r && u.withGutterColumn] }));
-                    return o.createElement(i.Z, (0, n.Z)({ style: [e, u.root, r && u.withGutter] }, l), c);
+                        u = o.Children.map(t, (t) => t && o.cloneElement(t, { style: [t.props.style, c.column, r && c.withGutterColumn] }));
+                    return o.createElement(i.Z, (0, n.Z)({ style: [e, c.root, r && c.withGutter] }, l), u);
                 }
             }
-            c.defaultProps = { withGutter: !1 };
-            const u = l.default.create((t) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${t.spaces.space4}` }, withGutterColumn: { marginHorizontal: t.spaces.space4 } })),
-                s = c;
+            u.defaultProps = { withGutter: !1 };
+            const c = l.default.create((t) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${t.spaces.space4}` }, withGutterColumn: { marginHorizontal: t.spaces.space4 } })),
+                s = u;
         },
         429371: (t, e, r) => {
             r.d(e, { Z: () => s });
@@ -44,12 +44,12 @@
                 l = (t, e, r, n, o, i) => {
                     t.beginPath(), t.translate(e, r), t.rotate(n), t.arc(0, 0, o / 2, 0, 2 * Math.PI), t.closePath(), t.rotate(-n), t.translate(-e, -r), (t.strokeStyle = i), (t.fillStyle = i), t.fill("evenodd");
                 },
-                c = async (t, e, r) => {
+                u = async (t, e, r) => {
                     const n = e.getModuleCount(),
-                        c = Math.floor(r.dimension / n),
-                        u = r.imageSize * o[r.errorCorrectionLevel],
-                        s = Math.floor(u * n * n),
-                        a = { ...r, count: n, dotSize: c },
+                        u = Math.floor(r.dimension / n),
+                        c = r.imageSize * o[r.errorCorrectionLevel],
+                        s = Math.floor(c * n * n),
+                        a = { ...r, count: n, dotSize: u },
                         f = await (async (t) =>
                             new Promise((e) => {
                                 const r = new Image(),
@@ -64,11 +64,11 @@
                         h = ((t, e, r, n) => {
                             const { height: o, width: i } = t,
                                 l = o / i,
-                                c = Math.min(Math.max(Math.floor(Math.sqrt(e / l)), 1), r),
-                                u = c * l - 1,
-                                s = (c - 5) * n;
-                            return { width: s, height: Math.round(s * l), numYDotHidden: u, numXDotHidden: c };
-                        })(f, s, n - 14, c);
+                                u = Math.min(Math.max(Math.floor(Math.sqrt(e / l)), 1), r),
+                                c = u * l - 1,
+                                s = (u - 5) * n;
+                            return { width: s, height: Math.round(s * l), numYDotHidden: c, numXDotHidden: u };
+                        })(f, s, n - 14, u);
                     ((t, e) => {
                         t.clearRect(0, 0, e.dimension, e.dimension);
                     })(t, a),
@@ -76,38 +76,38 @@
                             (t.fillStyle = e.backgroundColor), t.fillRect(0, 0, e.dimension, e.dimension);
                         })(t, a),
                         ((t, e, r, n) => {
-                            const { count: o, dimension: i, dotSize: c, fillColor: u } = n,
+                            const { count: o, dimension: i, dotSize: u, fillColor: c } = n,
                                 { numXDotHidden: s, numYDotHidden: a } = r,
-                                f = Math.floor((i - o * c) / 2);
-                            for (let r = 0; r < o; r++) for (let n = 0; n < o; n++) e.isDark(r, n) && ((r >= (o - s) / 2 && r < (o + s) / 2 && n >= (o - a) / 2 && n < (o + a) / 2) || (r < 7 && n < 7) || (r < 7 && n >= o - 7) || (n < 7 && r >= o - 7) || l(t, f + r * c + c / 2, f + n * c + c / 2, 0, c, u));
+                                f = Math.floor((i - o * u) / 2);
+                            for (let r = 0; r < o; r++) for (let n = 0; n < o; n++) e.isDark(r, n) && ((r >= (o - s) / 2 && r < (o + s) / 2 && n >= (o - a) / 2 && n < (o + a) / 2) || (r < 7 && n < 7) || (r < 7 && n >= o - 7) || (n < 7 && r >= o - 7) || l(t, f + r * u + u / 2, f + n * u + u / 2, 0, u, c));
                         })(t, e, h, a),
                         ((t, e, r, n) => {
                             const { dimension: o, dotSize: i } = n,
-                                { height: l, width: c } = r,
-                                u = (o - c + i) / 2,
+                                { height: l, width: u } = r,
+                                c = (o - u + i) / 2,
                                 s = (o - l + i) / 2;
-                            t.drawImage(e, u, s, c, l);
+                            t.drawImage(e, c, s, u, l);
                         })(t, f, h, a),
                         ((t, e) => {
-                            const { count: r, dimension: n, dotSize: o, fillColor: c } = e,
-                                u = Math.floor((n - r * o) / 2),
+                            const { count: r, dimension: n, dotSize: o, fillColor: u } = e,
+                                c = Math.floor((n - r * o) / 2),
                                 s = 7 * o,
                                 a = 3 * o,
                                 f = { 0: [0, 0, 0], 1: [1, 0, Math.PI / 2], 2: [0, 1, -Math.PI / 2] };
                             for (let e = 0; e < 3; e++) {
                                 const [n, h, g] = f[e],
-                                    d = u + n * o * (r - 7),
-                                    w = u + h * o * (r - 7);
-                                i(t, d + s / 2, w + s / 2, g, o, c), l(t, d + 2 * o + a / 2, w + 2 * o + a / 2, g, a, c);
+                                    d = c + n * o * (r - 7),
+                                    w = c + h * o * (r - 7);
+                                i(t, d + s / 2, w + s / 2, g, o, u), l(t, d + 2 * o + a / 2, w + 2 * o + a / 2, g, a, u);
                             }
                         })(t, a);
                 };
-            var u = r(144739);
+            var c = r(144739);
             const s = (t) => {
                 const { backgroundColor: e = "#000", dimension: r = 512, errorCorrectionLevel: o = "Q", fillColor: i = "#fff", imageSize: l = 0.5, link: s, mode: a = "Byte", typeNumber: f = 0 } = t,
                     h = n.useRef(null),
                     g = n.useMemo(() => {
-                        const t = (0, u.r)(f, o);
+                        const t = (0, c.r)(f, o);
                         return t.addData(s, a), t.make(), t;
                     }, [s, f, o, a]);
                 return (
@@ -117,7 +117,7 @@
                         const n = t.getContext("2d");
                         if (!n) return;
                         (t.width = r), (t.height = r);
-                        c(n, g, { dimension: r, imageSize: l, errorCorrectionLevel: o, backgroundColor: e, fillColor: i });
+                        u(n, g, { dimension: r, imageSize: l, errorCorrectionLevel: o, backgroundColor: e, fillColor: i });
                     }, [h, g, r, o, l, e, i]),
                     n.createElement("canvas", { ref: h })
                 );
@@ -133,8 +133,8 @@
                     const n = i[e];
                     let o = null,
                         l = 0,
-                        c = null;
-                    const u = [],
+                        u = null;
+                    const c = [],
                         s = {},
                         a = function (t, e) {
                             (l = 4 * r + 17),
@@ -153,8 +153,8 @@
                                 h(),
                                 B(t, e),
                                 r >= 7 && w(t),
-                                null === c && (c = A(r, n, u)),
-                                x(c, e);
+                                null === u && (u = A(r, n, c)),
+                                x(u, e);
                         },
                         f = function (t, e) {
                             for (let r = -1; r <= 7; r += 1) if (!(t + r <= -1 || l <= t + r)) for (let n = -1; n <= 7; n += 1) e + n <= -1 || l <= e + n || (o[t + r][e + n] = (r >= 0 && r <= 6 && (0 === n || 6 === n)) || (n >= 0 && n <= 6 && (0 === r || 6 === r)) || (r >= 2 && r <= 4 && n >= 2 && n <= 4));
@@ -200,15 +200,15 @@
                             let r = -1,
                                 n = l - 1,
                                 i = 7,
-                                c = 0;
-                            const u = d.getMaskFunction(e);
+                                u = 0;
+                            const c = d.getMaskFunction(e);
                             for (let e = l - 1; e > 0; e -= 2)
                                 for (6 === e && (e -= 1); ; ) {
                                     for (let r = 0; r < 2; r += 1)
                                         if (null === o[n][e - r]) {
                                             let l = !1;
-                                            c < t.length && (l = 1 == ((t[c] >>> i) & 1));
-                                            u(n, e - r) && (l = !l), (o[n][e - r] = l), (i -= 1), -1 === i && ((c += 1), (i = 7));
+                                            u < t.length && (l = 1 == ((t[u] >>> i) & 1));
+                                            c(n, e - r) && (l = !l), (o[n][e - r] = l), (i -= 1), -1 === i && ((u += 1), (i = 7));
                                         }
                                     if (((n += r), n < 0 || l <= n)) {
                                         (n -= r), (r = -r);
@@ -217,8 +217,8 @@
                                 }
                         },
                         A = function (t, e, r) {
-                            const n = m.getRSBlocks(t, e),
-                                o = y();
+                            const n = y.getRSBlocks(t, e),
+                                o = m();
                             for (let e = 0; e < r.length; e += 1) {
                                 const n = r[e];
                                 o.put(n.getMode(), 4), o.put(n.getLength(), d.getLengthInBits(n.getMode(), t)), n.write(o);
@@ -234,27 +234,27 @@
                                     o = 0;
                                 const i = new Array(e.length),
                                     l = new Array(e.length);
-                                for (let c = 0; c < e.length; c += 1) {
-                                    const u = e[c].dataCount,
-                                        s = e[c].totalCount - u;
-                                    (n = Math.max(n, u)), (o = Math.max(o, s)), (i[c] = new Array(u));
-                                    for (let e = 0; e < i[c].length; e += 1) i[c][e] = 255 & t.getBuffer()[e + r];
-                                    r += u;
+                                for (let u = 0; u < e.length; u += 1) {
+                                    const c = e[u].dataCount,
+                                        s = e[u].totalCount - c;
+                                    (n = Math.max(n, c)), (o = Math.max(o, s)), (i[u] = new Array(c));
+                                    for (let e = 0; e < i[u].length; e += 1) i[u][e] = 255 & t.getBuffer()[e + r];
+                                    r += c;
                                     const a = d.getErrorCorrectPolynomial(s),
-                                        f = p(i[c], a.getLength() - 1).mod(a);
-                                    l[c] = new Array(a.getLength() - 1);
-                                    for (let t = 0; t < l[c].length; t += 1) {
-                                        const e = t + f.getLength() - l[c].length;
-                                        l[c][t] = e >= 0 ? f.getAt(e) : 0;
+                                        f = p(i[u], a.getLength() - 1).mod(a);
+                                    l[u] = new Array(a.getLength() - 1);
+                                    for (let t = 0; t < l[u].length; t += 1) {
+                                        const e = t + f.getLength() - l[u].length;
+                                        l[u][t] = e >= 0 ? f.getAt(e) : 0;
                                     }
                                 }
-                                let c = 0;
-                                for (let t = 0; t < e.length; t += 1) c += e[t].totalCount;
-                                const u = new Array(c);
+                                let u = 0;
+                                for (let t = 0; t < e.length; t += 1) u += e[t].totalCount;
+                                const c = new Array(u);
                                 let s = 0;
-                                for (let t = 0; t < n; t += 1) for (let r = 0; r < e.length; r += 1) t < i[r].length && ((u[s] = i[r][t]), (s += 1));
-                                for (let t = 0; t < o; t += 1) for (let r = 0; r < e.length; r += 1) t < l[r].length && ((u[s] = l[r][t]), (s += 1));
-                                return u;
+                                for (let t = 0; t < n; t += 1) for (let r = 0; r < e.length; r += 1) t < i[r].length && ((c[s] = i[r][t]), (s += 1));
+                                for (let t = 0; t < o; t += 1) for (let r = 0; r < e.length; r += 1) t < l[r].length && ((c[s] = l[r][t]), (s += 1));
+                                return c;
                             })(o, n);
                         };
                     (s.addData = function (t, e) {
@@ -264,10 +264,10 @@
                                 r = C(t);
                                 break;
                             case "Alphanumeric":
-                                r = M(t);
+                                r = b(t);
                                 break;
                             case "Byte":
-                                r = b(t);
+                                r = M(t);
                                 break;
                             case "Kanji":
                                 r = k(t);
@@ -275,7 +275,7 @@
                             default:
                                 throw new Error(`mode:${e}`);
                         }
-                        u.push(r), (c = null);
+                        c.push(r), (u = null);
                     }),
                         (s.isDark = function (t, e) {
                             if (t < 0 || l <= t || e < 0 || l <= e) throw new Error(`${t},${e}`);
@@ -288,10 +288,10 @@
                             if (r < 1) {
                                 let t = 1;
                                 for (; t < 40; t++) {
-                                    const e = m.getRSBlocks(t, n),
-                                        r = y();
-                                    for (let e = 0; e < u.length; e++) {
-                                        const n = u[e];
+                                    const e = y.getRSBlocks(t, n),
+                                        r = m();
+                                    for (let e = 0; e < c.length; e++) {
+                                        const n = c[e];
                                         r.put(n.getMode(), 4), r.put(n.getLength(), d.getLengthInBits(n.getMode(), t)), n.write(r);
                                     }
                                     let o = 0;
@@ -330,12 +330,12 @@
                             "object" == typeof rest[0] && ((o = rest[0]), (t = o.cellSize), (e = o.margin), (r = o.alt), (n = o.title)), (t = t || 2), (e = void 0 === e ? 4 * t : e), ((r = "string" == typeof r ? { text: r } : r || {}).text = r.text || null), (r.id = r.text ? r.id || "qrcode-description" : null), ((n = "string" == typeof n ? { text: n } : n || {}).text = n.text || null), (n.id = n.text ? n.id || "qrcode-title" : null);
                             const i = s.getModuleCount() * t + 2 * e;
                             let l,
-                                c,
                                 u,
+                                c,
                                 a,
                                 f = "";
                             const h = `l${t},0 0,${t} -${t},0 0,-${t}z `;
-                            for (f += '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"', f += o.scalable ? "" : ` width="${i}px" height="${i}px"`, f += ` viewBox="0 0 ${i} ${i}" `, f += ' preserveAspectRatio="xMinYMin meet"', f += n.text || r.text ? ` role="img" aria-labelledby="${v([n.id, r.id].join(" ").trim())}"` : "", f += ">", f += n.text ? `<title id="${v(n.id)}">${v(n.text)}</title>` : "", f += r.text ? `<description id="${v(r.id)}">${v(r.text)}</description>` : "", f += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>', f += '<path d="', u = 0; u < s.getModuleCount(); u += 1) for (a = u * t + e, l = 0; l < s.getModuleCount(); l += 1) s.isDark(u, l) && ((c = l * t + e), (f += `M${c},${a}${h}`));
+                            for (f += '<svg version="1.1" xmlns="http://www.w3.org/2000/svg"', f += o.scalable ? "" : ` width="${i}px" height="${i}px"`, f += ` viewBox="0 0 ${i} ${i}" `, f += ' preserveAspectRatio="xMinYMin meet"', f += n.text || r.text ? ` role="img" aria-labelledby="${L([n.id, r.id].join(" ").trim())}"` : "", f += ">", f += n.text ? `<title id="${L(n.id)}">${L(n.text)}</title>` : "", f += r.text ? `<description id="${L(r.id)}">${L(r.text)}</description>` : "", f += '<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>', f += '<path d="', c = 0; c < s.getModuleCount(); c += 1) for (a = c * t + e, l = 0; l < s.getModuleCount(); l += 1) s.isDark(c, l) && ((u = l * t + e), (f += `M${u},${a}${h}`));
                             return (f += '" stroke="transparent" fill="black"/>'), (f += "</svg>"), f;
                         }),
                         (s.createDataURL = function (t, e) {
@@ -356,9 +356,9 @@
                             (t = t || 2), (e = void 0 === e ? 4 * t : e);
                             const n = s.getModuleCount() * t + 2 * e;
                             let o = "";
-                            return (o += "<img"), (o += ' src="'), (o += s.createDataURL(t, e)), (o += '"'), (o += ' width="'), (o += n), (o += '"'), (o += ' height="'), (o += n), (o += '"'), r && ((o += ' alt="'), (o += v(r)), (o += '"')), (o += "/>"), o;
+                            return (o += "<img"), (o += ' src="'), (o += s.createDataURL(t, e)), (o += '"'), (o += ' width="'), (o += n), (o += '"'), (o += ' height="'), (o += n), (o += '"'), r && ((o += ' alt="'), (o += L(r)), (o += '"')), (o += "/>"), o;
                         });
-                    const v = function (t) {
+                    const L = function (t) {
                         let e = "";
                         for (let r = 0; r < t.length; r += 1) {
                             const n = t.charAt(r);
@@ -389,12 +389,12 @@
                                     const e = 1 * s.getModuleCount() + 2 * t,
                                         r = t,
                                         n = e - t;
-                                    let o, i, l, c, u;
+                                    let o, i, l, u, c;
                                     const a = { "██": "█", "█ ": "▀", " █": "▄", "  ": " " },
                                         f = { "██": "▀", "█ ": "▀", " █": " ", "  ": " " };
                                     let h = "";
                                     for (o = 0; o < e; o += 2) {
-                                        for (l = Math.floor((o - r) / 1), c = Math.floor((o + 1 - r) / 1), i = 0; i < e; i += 1) (u = "█"), r <= i && i < n && r <= o && o < n && s.isDark(l, Math.floor((i - r) / 1)) && (u = " "), r <= i && i < n && r <= o + 1 && o + 1 < n && s.isDark(c, Math.floor((i - r) / 1)) ? (u += " ") : (u += "█"), (h += t < 1 && o + 1 >= n ? f[u] : a[u]);
+                                        for (l = Math.floor((o - r) / 1), u = Math.floor((o + 1 - r) / 1), i = 0; i < e; i += 1) (c = "█"), r <= i && i < n && r <= o && o < n && s.isDark(l, Math.floor((i - r) / 1)) && (c = " "), r <= i && i < n && r <= o + 1 && o + 1 < n && s.isDark(u, Math.floor((i - r) / 1)) ? (c += " ") : (c += "█"), (h += t < 1 && o + 1 >= n ? f[c] : a[c]);
                                         h += "\n";
                                     }
                                     return e % 2 && t > 0 ? h.substring(0, h.length - e - 1) + Array(e + 1).join("▀") : h.substring(0, h.length - 1);
@@ -403,14 +403,14 @@
                             const r = s.getModuleCount() * t + 2 * e,
                                 n = e,
                                 o = r - e;
-                            let i, l, c, u;
+                            let i, l, u, c;
                             const a = Array(t + 1).join("██"),
                                 f = Array(t + 1).join("  ");
                             let h = "",
                                 g = "";
                             for (i = 0; i < r; i += 1) {
-                                for (c = Math.floor((i - n) / t), g = "", l = 0; l < r; l += 1) (u = 1), n <= l && l < o && n <= i && i < o && s.isDark(c, Math.floor((l - n) / t)) && (u = 0), (g += u ? a : f);
-                                for (c = 0; c < t; c += 1) h += `${g}\n`;
+                                for (u = Math.floor((i - n) / t), g = "", l = 0; l < r; l += 1) (c = 1), n <= l && l < o && n <= i && i < o && s.isDark(u, Math.floor((l - n) / t)) && (c = 0), (g += c ? a : f);
+                                for (u = 0; u < t; u += 1) h += `${g}\n`;
                             }
                             return h.substring(0, h.length - 1);
                         }),
@@ -472,8 +472,8 @@
                     o = 8,
                     i = { L: 1, M: 0, Q: 3, H: 2 },
                     l = 0,
-                    c = 1,
-                    u = 2,
+                    u = 1,
+                    c = 2,
                     s = 3,
                     a = 4,
                     f = 5,
@@ -483,37 +483,37 @@
                         const t = [[], [6, 18], [6, 22], [6, 26], [6, 30], [6, 34], [6, 22, 38], [6, 24, 42], [6, 26, 46], [6, 28, 50], [6, 30, 54], [6, 32, 58], [6, 34, 62], [6, 26, 46, 66], [6, 26, 48, 70], [6, 26, 50, 74], [6, 30, 54, 78], [6, 30, 56, 82], [6, 30, 58, 86], [6, 34, 62, 90], [6, 28, 50, 72, 94], [6, 26, 50, 74, 98], [6, 30, 54, 78, 102], [6, 28, 54, 80, 106], [6, 32, 58, 84, 110], [6, 30, 58, 86, 114], [6, 34, 62, 90, 118], [6, 26, 50, 74, 98, 122], [6, 30, 54, 78, 102, 126], [6, 26, 52, 78, 104, 130], [6, 30, 56, 82, 108, 134], [6, 34, 60, 86, 112, 138], [6, 30, 58, 86, 114, 142], [6, 34, 62, 90, 118, 146], [6, 30, 54, 78, 102, 126, 150], [6, 24, 50, 76, 102, 128, 154], [6, 28, 54, 80, 106, 132, 158], [6, 32, 58, 84, 110, 136, 162], [6, 26, 54, 82, 110, 138, 166], [6, 30, 58, 86, 114, 142, 170]],
                             i = 1335,
                             d = 7973,
-                            m = {},
-                            y = function (t) {
+                            y = {},
+                            m = function (t) {
                                 let e = 0;
                                 for (; 0 !== t; ) (e += 1), (t >>>= 1);
                                 return e;
                             };
                         return (
-                            (m.getBCHTypeInfo = function (t) {
+                            (y.getBCHTypeInfo = function (t) {
                                 let e = t << 10;
-                                for (; y(e) - y(i) >= 0; ) e ^= i << (y(e) - y(i));
+                                for (; m(e) - m(i) >= 0; ) e ^= i << (m(e) - m(i));
                                 return 21522 ^ ((t << 10) | e);
                             }),
-                            (m.getBCHTypeNumber = function (t) {
+                            (y.getBCHTypeNumber = function (t) {
                                 let e = t << 12;
-                                for (; y(e) - y(d) >= 0; ) e ^= d << (y(e) - y(d));
+                                for (; m(e) - m(d) >= 0; ) e ^= d << (m(e) - m(d));
                                 return (t << 12) | e;
                             }),
-                            (m.getPatternPosition = function (e) {
+                            (y.getPatternPosition = function (e) {
                                 return t[e - 1];
                             }),
-                            (m.getMaskFunction = function (t) {
+                            (y.getMaskFunction = function (t) {
                                 switch (t) {
                                     case l:
                                         return function (t, e) {
                                             return (t + e) % 2 == 0;
                                         };
-                                    case c:
+                                    case u:
                                         return function (t, e) {
                                             return t % 2 == 0;
                                         };
-                                    case u:
+                                    case c:
                                         return function (t, e) {
                                             return e % 3 == 0;
                                         };
@@ -541,12 +541,12 @@
                                         throw new Error(`bad maskPattern:${t}`);
                                 }
                             }),
-                            (m.getErrorCorrectPolynomial = function (t) {
+                            (y.getErrorCorrectPolynomial = function (t) {
                                 let e = p([1], 0);
                                 for (let r = 0; r < t; r += 1) e = e.multiply(p([1, w.gexp(r)], 0));
                                 return e;
                             }),
-                            (m.getLengthInBits = function (t, i) {
+                            (y.getLengthInBits = function (t, i) {
                                 if (i >= 1 && i < 10)
                                     switch (t) {
                                         case e:
@@ -588,14 +588,14 @@
                                     }
                                 }
                             }),
-                            (m.getLostPoint = function (t) {
+                            (y.getLostPoint = function (t) {
                                 const e = t.getModuleCount();
                                 let r = 0;
                                 for (let n = 0; n < e; n += 1)
                                     for (let o = 0; o < e; o += 1) {
                                         let i = 0;
                                         const l = t.isDark(n, o);
-                                        for (let r = -1; r <= 1; r += 1) if (!(n + r < 0 || e <= n + r)) for (let c = -1; c <= 1; c += 1) o + c < 0 || e <= o + c || (0 === r && 0 === c) || (l === t.isDark(n + r, o + c) && (i += 1));
+                                        for (let r = -1; r <= 1; r += 1) if (!(n + r < 0 || e <= n + r)) for (let u = -1; u <= 1; u += 1) o + u < 0 || e <= o + u || (0 === r && 0 === u) || (l === t.isDark(n + r, o + u) && (i += 1));
                                         i > 5 && (r += 3 + i - 5);
                                     }
                                 for (let n = 0; n < e - 1; n += 1)
@@ -609,7 +609,7 @@
                                 for (let r = 0; r < e; r += 1) for (let o = 0; o < e; o += 1) t.isDark(o, r) && (n += 1);
                                 return (r += 10 * (Math.abs((100 * n) / e / e - 50) / 5)), r;
                             }),
-                            m
+                            y
                         );
                     })(),
                     w = (function () {
@@ -663,7 +663,7 @@
                         };
                     return n;
                 }
-                const m = (function () {
+                const y = (function () {
                         const t = [
                                 [1, 26, 19],
                                 [1, 26, 16],
@@ -849,19 +849,19 @@
                                 })(r, n);
                                 if (void 0 === o) throw new Error(`bad rs block @ typeNumber:${r}/errorCorrectionLevel:${n}`);
                                 const l = o.length / 3,
-                                    c = [];
+                                    u = [];
                                 for (let t = 0; t < l; t += 1) {
                                     const r = o[3 * t + 0],
                                         n = o[3 * t + 1],
                                         i = o[3 * t + 2];
-                                    for (let t = 0; t < r; t += 1) c.push(e(n, i));
+                                    for (let t = 0; t < r; t += 1) u.push(e(n, i));
                                 }
-                                return c;
+                                return u;
                             }),
                             r
                         );
                     })(),
-                    y = function () {
+                    m = function () {
                         const t = [];
                         let e = 0;
                         const r = {
@@ -913,7 +913,7 @@
                             };
                         return o;
                     },
-                    M = function (t) {
+                    b = function (t) {
                         const e = r,
                             n = t,
                             o = {
@@ -958,7 +958,7 @@
                             };
                         return o;
                     },
-                    b = function (e) {
+                    M = function (e) {
                         const r = n,
                             o = t.stringToBytes(e),
                             i = {
@@ -1086,11 +1086,11 @@
                                 const e = 1 << t,
                                     r = 1 + (1 << t);
                                 let n = t + 1;
-                                const i = c();
+                                const i = u();
                                 for (let t = 0; t < e; t += 1) i.add(String.fromCharCode(t));
                                 i.add(String.fromCharCode(e)), i.add(String.fromCharCode(r));
                                 const l = B(),
-                                    u = (function (t) {
+                                    c = (function (t) {
                                         const e = t;
                                         let r = 0,
                                             n = 0;
@@ -1106,16 +1106,16 @@
                                         };
                                         return o;
                                     })(l);
-                                u.write(e, n);
+                                c.write(e, n);
                                 let s = 0,
                                     a = String.fromCharCode(o[s]);
                                 for (s += 1; s < o.length; ) {
                                     const t = String.fromCharCode(o[s]);
-                                    (s += 1), i.contains(a + t) ? (a += t) : (u.write(i.indexOf(a), n), i.size() < 4095 && (i.size() === 1 << n && (n += 1), i.add(a + t)), (a = t));
+                                    (s += 1), i.contains(a + t) ? (a += t) : (c.write(i.indexOf(a), n), i.size() < 4095 && (i.size() === 1 << n && (n += 1), i.add(a + t)), (a = t));
                                 }
-                                return u.write(i.indexOf(a), n), u.write(r, n), u.flush(), l.toByteArray();
+                                return c.write(i.indexOf(a), n), c.write(r, n), c.flush(), l.toByteArray();
                             },
-                            c = function () {
+                            u = function () {
                                 const t = {};
                                 let e = 0;
                                 const r = {
@@ -1200,19 +1200,6 @@
                 }),
                 "function" == typeof define && r.amdO ? define([], o) : "object" == typeof exports && (t.exports = o());
         },
-        748138: (t, e, r) => {
-            r.r(e), r.d(e, { default: () => u });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                l = r(347101);
-            const c = (t = {}) => {
-                const { direction: e } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [l.Z.root, t.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: e });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const u = c;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.TV.c0e5e50a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.TV.e00fb00a.js.map

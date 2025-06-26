@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.Dock-64a82a81", "bundle.GrokDrawer-64a82a81"],
+    ["loader.Dock-64a82a81"],
     {
         975064: (e, t, r) => {
             r.d(t, { Z: () => p });
@@ -228,16 +228,16 @@
                     v = S[1],
                     I = h.useState(!1),
                     C = I[0],
-                    b = I[1],
-                    k = h.useState({ leadingItem: e.leadingItem, leadingSection: e.leadingSection, section: e.section, trailingItem: e.item, trailingSection: e.trailingSection }),
-                    x = k[0],
-                    w = k[1],
+                    x = I[1],
+                    b = h.useState({ leadingItem: e.leadingItem, leadingSection: e.leadingSection, section: e.section, trailingItem: e.item, trailingSection: e.trailingSection }),
+                    k = b[0],
+                    w = b[1],
                     R = h.useState({ leadingItem: e.item, leadingSection: e.leadingSection, section: e.section, trailingItem: e.trailingItem, trailingSection: e.trailingSection }),
                     y = R[0],
                     E = R[1];
                 h.useEffect(
                     () => (
-                        l(n, b),
+                        l(n, x),
                         c(n, E),
                         () => {
                             c(n, null), l(n, null);
@@ -247,17 +247,17 @@
                 );
                 var Z = {
                         highlight: () => {
-                            v(!0), b(!0), null != o && p(o, !0);
+                            v(!0), x(!0), null != o && p(o, !0);
                         },
                         unhighlight: () => {
-                            v(!1), b(!1), null != o && p(o, !1);
+                            v(!1), x(!1), null != o && p(o, !1);
                         },
                         updateProps: (e, i) => {
-                            "leading" === e ? (null != t ? w((0, a.Z)((0, a.Z)({}, x), i)) : null != o && d(o, (0, a.Z)((0, a.Z)({}, x), i))) : "trailing" === e && null != r && E((0, a.Z)((0, a.Z)({}, y), i));
+                            "leading" === e ? (null != t ? w((0, a.Z)((0, a.Z)({}, k), i)) : null != o && d(o, (0, a.Z)((0, a.Z)({}, k), i))) : "trailing" === e && null != r && E((0, a.Z)((0, a.Z)({}, y), i));
                         },
                     },
                     H = e.renderItem({ item: u, index: g, section: m, separators: Z }),
-                    L = null != t && h.createElement(t, (0, i.Z)({ highlighted: _ }, x)),
+                    L = null != t && h.createElement(t, (0, i.Z)({ highlighted: _ }, k)),
                     F = null != r && h.createElement(r, (0, i.Z)({ highlighted: C }, y));
                 return L || F ? h.createElement(s.Z, null, !1 === f ? L : F, H, !1 === f ? F : L) : H;
             }
@@ -265,4 +265,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Dock-64a82a81.a49bbd3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Dock-64a82a81.7bfe990a.js.map

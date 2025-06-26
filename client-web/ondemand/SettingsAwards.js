@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: l, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: g, secondaryBar: h, style: y, subtitle: k, title: b, titleDomId: f, titleIconCell: w, titleIconCellSize: v, withBackground: _, withWideContainer: E } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: a, fixed: l, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: m, position: p, rightControl: g, secondaryBar: h, style: y, subtitle: k, title: b, titleDomId: f, titleIconCell: w, titleIconCellSize: _, withBackground: v, withWideContainer: E } = this.props,
                         { isModal: C } = this.context,
                         Z = i ? d : n.createElement(r.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        x = (function (e, t, a) {
+                        F = (function (e, t, a) {
                             return e && !(t && a);
-                        })(!!_, C, !!h);
-                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: t, centeredLogo: a, isFullWidth: s, isLarge: c, leftControl: Z, middleControl: m, position: u(p, C, l), rightControl: g, style: y, subtitle: k, title: b, titleDomId: f, titleIconCell: w, titleIconCellSize: v, withBackground: x, withWideContainer: E }), h || null);
+                        })(!!v, C, !!h);
+                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: t, centeredLogo: a, isFullWidth: s, isLarge: c, leftControl: Z, middleControl: m, position: u(p, C, l), rightControl: g, style: y, subtitle: k, title: b, titleDomId: f, titleIconCell: w, titleIconCellSize: _, withBackground: F, withWideContainer: E }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -177,34 +177,34 @@
                 b = a(731708),
                 f = a(154003),
                 w = a(167630),
-                v = a(392237),
-                _ = a(111677),
-                E = a.n(_),
+                _ = a(392237),
+                v = a(111677),
+                E = a.n(v),
                 C = a(980407),
                 Z = a(698537),
-                x = a(782642),
-                F = a(892541),
+                F = a(782642),
+                x = a(892541),
                 B = a(87908),
                 T = a(491369);
-            const z = v.default.create((e) => ({ list: { gap: e.spaces.space24 }, listItem: { flexDirection: "row", gap: e.spaces.space16 }, listItemContent: { flex: 1 }, listItemTitle: { marginBottom: e.spaces.space4 }, illustration: { height: "50px", width: "50px" } })),
-                I = [
-                    { illustration: c.createElement(F.default, { style: z.illustration }), title: E().d520d188, description: E().ea770766 },
-                    { illustration: c.createElement(B.default, { style: z.illustration }), title: E().d27f5ac6, description: E().h1d66df0 },
-                    { illustration: c.createElement(T.default, { style: z.illustration }), title: E().f85fb0a2, description: E().d1433e24 },
+            const I = _.default.create((e) => ({ list: { gap: e.spaces.space24 }, listItem: { flexDirection: "row", gap: e.spaces.space16 }, listItemContent: { flex: 1 }, listItemTitle: { marginBottom: e.spaces.space4 }, illustration: { height: "50px", width: "50px" } })),
+                S = [
+                    { illustration: c.createElement(x.default, { style: I.illustration }), title: E().d520d188, description: E().ea770766 },
+                    { illustration: c.createElement(B.default, { style: I.illustration }), title: E().d27f5ac6, description: E().h1d66df0 },
+                    { illustration: c.createElement(T.default, { style: I.illustration }), title: E().f85fb0a2, description: E().d1433e24 },
                 ],
-                S = () =>
+                K = () =>
                     c.createElement(
                         y.Z,
-                        { role: "list", style: z.list },
-                        I.map((e) => c.createElement(y.Z, { key: e.title, role: "listitem", style: z.listItem }, e.illustration, c.createElement(y.Z, { style: z.listItemContent }, c.createElement(b.ZP, { style: z.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
+                        { role: "list", style: I.list },
+                        S.map((e) => c.createElement(y.Z, { key: e.title, role: "listitem", style: I.listItem }, e.illustration, c.createElement(y.Z, { style: I.listItemContent }, c.createElement(b.ZP, { style: I.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
                     ),
-                K = "/settings/monetization";
-            var R = (function () {
+                R = "/settings/monetization";
+            var A = (function () {
                 var e = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "awards_feature_activate", storageKey: 'awards_feature_activate(s:"4721")' }];
                 return { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivateMutation", selections: e, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useAwardsActivateMutation", selections: e }, params: { id: "ql0nbxLYZcgEQyw5Z0PlWw", metadata: {}, name: "useAwardsActivateMutation", operationKind: "mutation", text: null } };
             })();
-            R.hash = "aaaa1c71aa5e6b2e3a109a5b37594b3f";
-            const A = R;
+            A.hash = "aaaa1c71aa5e6b2e3a109a5b37594b3f";
+            const z = A;
             var L = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "eaa526ce3924dce881ea12c7b2d29239" };
             const P = L;
             var D = a(614983),
@@ -212,12 +212,12 @@
                 M = a(277660),
                 W = a.n(M),
                 q = a(351743),
-                V = a.n(q);
-            const U = P,
-                N = A,
-                Q = (e) => {
-                    const t = W()(U, e),
-                        [a, n] = V()(N);
+                U = a.n(q);
+            const N = P,
+                Q = z,
+                V = (e) => {
+                    const t = W()(N, e),
+                        [a, n] = U()(Q);
                     return [
                         c.useCallback(
                             () =>
@@ -245,16 +245,16 @@
                 Y = E().db3f0bbe,
                 X = E().a1f40cf8,
                 $ = (0, k.ju)("https://legal.x.com/creator-terms"),
-                J = v.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space64, paddingTop: e.spaces.space8, paddingBottom: "120px" }, iconTwitter: { color: e.colors.primary }, headline: { marginVertical: e.spaces.space16 }, spacing: { marginBottom: e.spaces.space8 }, footer: { marginHorizontal: e.spaces.space64, marginVertical: e.spaces.space16 } })),
+                J = _.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space64, paddingTop: e.spaces.space8, paddingBottom: "120px" }, iconTwitter: { color: e.colors.primary }, headline: { marginVertical: e.spaces.space16 }, spacing: { marginBottom: e.spaces.space8 }, footer: { marginHorizontal: e.spaces.space64, marginVertical: e.spaces.space16 } })),
                 ee = c.memo(
                     (0, p.Z)(
                         ({ user: e }) => {
                             const t = (0, d.useHistory)(),
                                 a = c.useCallback(() => {
-                                    t.push(K);
+                                    t.push(R);
                                 }, [t]),
-                                n = (0, x.p)(),
-                                [l, i] = Q(e),
+                                n = (0, F.p)(),
+                                [l, i] = V(e),
                                 s = c.useCallback(() => {
                                     l()
                                         .then(() => {
@@ -266,7 +266,7 @@
                                 }, [n, l, t]),
                                 r = c.useMemo(() => ({ link: c.createElement(b.ZP, { link: $, weight: "bold" }) }), []),
                                 o = c.useMemo(() => c.createElement(y.Z, { style: J.footer }, c.createElement(b.ZP, { align: "center", color: "gray700", style: J.spacing }, c.createElement(E().I18NFormatMessage, { $i18n: "d4b0b963" }, c.cloneElement(r.link, null, E().d604fb32))), c.createElement(f.ZP, { disabled: i, onPress: s, type: "primaryFilled" }, i ? c.createElement(w.Z, null) : X)), [i, s, r]);
-                            return c.createElement(C.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(y.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, Y), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(S, null)));
+                            return c.createElement(C.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(y.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, Y), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(K, null)));
                         },
                         { page: "onboarding", section: "Coins" },
                     ),
@@ -280,7 +280,7 @@
                         l = n.user_results.result,
                         i = a && l.award_eligible,
                         s = 0 === l.awards_eligibility?.length;
-                    return c.createElement(d.Switch, null, t && s && !i ? null : c.createElement(d.Route, null, c.createElement(h.Z, { to: K })), c.createElement(d.Route, { exact: !0, path: "/settings/awards" }, c.createElement(ee, { user: l })));
+                    return c.createElement(d.Switch, null, t && s && !i ? null : c.createElement(d.Route, null, c.createElement(h.Z, { to: R })), c.createElement(d.Route, { exact: !0, path: "/settings/awards" }, c.createElement(ee, { user: l })));
                 },
                 ne = { context: "AWARD_SETTINGS" },
                 le = { type: "CustomRetry", content: () => null },
@@ -299,19 +299,6 @@
             r.metadata = { width: 50, height: 50 };
             const o = r;
         },
-        748138: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => o });
-            var n = a(202784),
-                l = a(890601),
-                i = a(783427),
-                s = a(347101);
-            const r = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            r.metadata = { width: 24, height: 24 };
-            const o = r;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.a2b7cc3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.7ab5d7ca.js.map

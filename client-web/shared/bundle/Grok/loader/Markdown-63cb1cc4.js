@@ -14,17 +14,17 @@
                 c = n(250781);
             const d =
                 ({ analytics: e, conversationKey: t, userChatItemId: n }) =>
-                ({ analysisEntityId: d, returnCitations: m, returnSearchResults: u = !0, trendPromptIdStr: g, features: p = { eagerTweets: !0, serverHistory: !0 }, imageGenerationCount: h, toolOverrides: y, personalityId: f }) =>
-                (g, k, { api: C, featureSwitches: b }) => {
-                    const E = !o.ZP.isTwitterApp() && b.isTrue("responsive_web_grok_api_enable_grok_host"),
-                        w = (0, a.bD)(t),
-                        v = w.selectConversationId(k());
+                ({ analysisEntityId: d, returnCitations: m, returnSearchResults: u = !0, trendPromptIdStr: p, features: g = { eagerTweets: !0, serverHistory: !0 }, imageGenerationCount: h, toolOverrides: y, personalityId: f }) =>
+                (p, k, { api: b, featureSwitches: C }) => {
+                    const w = !o.ZP.isTwitterApp() && C.isTrue("responsive_web_grok_api_enable_grok_host"),
+                        v = (0, a.bD)(t),
+                        E = v.selectConversationId(k());
                     return new Promise((t) => {
-                        v || (0, r.Uk)(e, "regenerate function failed to find a conversationId"), t(v);
+                        E || (0, r.Uk)(e, "regenerate function failed to find a conversationId"), t(E);
                     }).then(async (o) => {
                         if ("string" == typeof o) {
-                            const v = w.selectMode(k()),
-                                x = w.selectConversationWithLocalMessages(k()),
+                            const E = v.selectMode(k()),
+                                x = v.selectConversationWithLocalMessages(k()),
                                 Z = (0, a.F9)(k()),
                                 _ = x.findLastIndex((e) => e.sender === s.CI.ASSISTANT && e.userChatItemId === n);
                             if (-1 === _) return void (0, r.Uk)(e, "regenerate function couldn't find an actionable response");
@@ -32,7 +32,7 @@
                                 I = S.promptMetadata ? { ...S.promptMetadata, action: "REGENERATE" } : void 0,
                                 R = x.slice(0, _).map((e) => ({ message: e.message, sender: e.sender, fileAttachments: e.fileAttachments }));
                             let P;
-                            const T = b.isTrue("responsive_web_grok_location_enabled");
+                            const T = C.isTrue("responsive_web_grok_location_enabled");
                             if (T) {
                                 const e = (0, i.fw)(k())?.position;
                                 e && (P = { latitude: e.coords.latitude, longitude: e.coords.longitude, accuracy: e.coords.accuracy });
@@ -47,19 +47,19 @@
                             }
                             const $ = S.isDeepsearch,
                                 H = S.isReasoning,
-                                B = { responses: R, systemPromptName: v, conversationId: o, grokModelOptionId: Z, returnSearchResults: u, returnCitations: m, requestFeatures: p, resampleResponseId: n, imageGenerationCount: h, ...(d && 1 === R.length ? { analysisEntityId: d } : void 0), promptMetadata: I, toolOverrides: L, geoLocation: P, enableSideBySide: !1, isDeepsearch: $, isReasoning: H, personalityId: f, deepsearchArgs: $ ? M?.deepsearchArgs : void 0 };
-                            null != w.selectCurrentResponseMessage(k()) && (await g((0, l.I)({ analytics: e, conversationKey: t }))), g(w.regenerateResponse(S));
-                            const { mediaIds: z, mediaUrls: D } = (0, s.VU)(S);
-                            (0, r.c3)(e, { conversationLength: R.length + 1, isDeepsearch: $ || void 0, isReasoning: H || void 0, allMediaIds: z.length > 0 ? z : void 0, allMediaUrls: D.length > 0 ? D : void 0 });
-                            const A = b.isTrue("responsive_web_grok_enable_add_response_keepalive") && ($ || H),
-                                U = b.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
-                            return (0, c.D)({ grokModule: w, requestBody: B, analytics: e, dispatch: g, api: C, eventTag: "regenerate", flags: { enableLocation: T, enableGrokApiHost: E, numRetries: U, enableKeepalive: A } });
+                                B = { responses: R, systemPromptName: E, conversationId: o, grokModelOptionId: Z, returnSearchResults: u, returnCitations: m, requestFeatures: g, resampleResponseId: n, imageGenerationCount: h, ...(d && 1 === R.length ? { analysisEntityId: d } : void 0), promptMetadata: I, toolOverrides: L, geoLocation: P, enableSideBySide: !1, isDeepsearch: $, isReasoning: H, personalityId: f, deepsearchArgs: $ ? M?.deepsearchArgs : void 0 };
+                            null != v.selectCurrentResponseMessage(k()) && (await p((0, l.I)({ analytics: e, conversationKey: t }))), p(v.regenerateResponse(S));
+                            const { mediaIds: D, mediaUrls: z } = (0, s.VU)(S);
+                            (0, r.c3)(e, { conversationLength: R.length + 1, isDeepsearch: $ || void 0, isReasoning: H || void 0, allMediaIds: D.length > 0 ? D : void 0, allMediaUrls: z.length > 0 ? z : void 0 });
+                            const A = C.isTrue("responsive_web_grok_enable_add_response_keepalive") && ($ || H),
+                                U = C.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
+                            return (0, c.D)({ grokModule: v, requestBody: B, analytics: e, dispatch: p, api: b, eventTag: "regenerate", flags: { enableLocation: T, enableGrokApiHost: w, numRetries: U, enableKeepalive: A }, featureSwitches: C });
                         }
                     });
                 };
         },
         207683: (e, t, n) => {
-            n.r(t), n.d(t, { GrokMarkdown: () => et, default: () => tt });
+            n.r(t), n.d(t, { GrokMarkdown: () => nt, default: () => ot });
             var o = n(202784),
                 a = n(719870),
                 r = n(325686),
@@ -86,67 +86,77 @@
                         if (t) return { type: "grokRichContent", raw: t[0], id: t[1], contentType: t[2], text: "" };
                     },
                 },
-                g = /^<grok:render\s+card_id="([^"]+)"\s+card_type="([^"]+)"\s*>([\s\S]*?)<\/grok:render>/,
-                p = {
+                p = /^<grok:render\s+card_id="([^"]+)"\s+card_type="(?!citation_card)([^"]+)"(?:\s+type="([^"]+)")?\s*>([\s\S]*?)<\/grok:render>/,
+                g = {
                     name: "grokRichContent",
                     level: "block",
                     start: (e) => e.indexOf("<grok:render"),
                     tokenizer(e) {
-                        const t = g.exec(e);
+                        const t = p.exec(e);
                         if (t) return { type: "grokRichContent", raw: t[0], id: t[1], contentType: t[2], text: "" };
                     },
                 },
-                h = /^<images_search_card\s+id="([^"]+)"\s+query="([^"]+)"\s+size="([^"]+)"\s+position="([^"]+)"\s*>([\s\S]*?)<\/images_search_card>/,
+                h = /^<grok:render\s+card_id="([^"]+)"\s+card_type="citation_card"(?:\s+type="([^"]+)")?\s*>([\s\S]*?)<\/grok:render>/,
                 y = {
+                    name: "link",
+                    level: "inline",
+                    start: (e) => e.indexOf("<grok:render"),
+                    tokenizer(e) {
+                        const t = h.exec(e);
+                        if (t) return { type: "link", raw: t[0], id: t[1], contentType: "citation_card", href: "", text: "" };
+                    },
+                },
+                f = /^<images_search_card\s+id="([^"]+)"\s+query="([^"]+)"\s+size="([^"]+)"\s+position="([^"]+)"\s*>([\s\S]*?)<\/images_search_card>/,
+                k = {
                     name: "grokRichContent",
                     level: "block",
                     start: (e) => e.indexOf("<images_search_card"),
                     tokenizer(e) {
-                        const t = h.exec(e);
+                        const t = f.exec(e);
                         if (t) return { type: "grokRichContent", raw: t[0], id: t[1], size: t[3], position: t[4], text: "", contentType: "images_search_card" };
                     },
                 },
-                f = /^<image_generation_card\s+id="([^"]+)"(?:\s+query="([^"]+)")?(?:\s+size="([^"]+)")?(?:\s+position="([^"]+)")?\s*><\/image_generation_card>/,
-                k = {
+                b = /^<image_generation_card\s+id="([^"]+)"(?:\s+query="([^"]+)")?(?:\s+size="([^"]+)")?(?:\s+position="([^"]+)")?\s*><\/image_generation_card>/,
+                C = {
                     name: "grokRichContent",
                     level: "block",
                     start: (e) => e.indexOf("<image_generation_card"),
                     tokenizer(e) {
-                        const t = f.exec(e);
+                        const t = b.exec(e);
                         if (t) return { type: "grokRichContent", raw: t[0], id: t[1], query: t[2] || void 0, size: t[3] || void 0, position: t[4] || void 0, text: "", contentType: "image_generation_card" };
                     },
                 };
-            var C = n(978921),
-                b = n(187268);
+            var w = n(978921),
+                v = n(187268);
             const E = /^<tool_usage_card>\s*(?:<tool_usage_card_id>([0-9a-f-]{36})<\/tool_usage_card_id>\s*)?<tool_name>([^<]+)<\/tool_name>\s*<tool_args>([\s\S]*?)<\/tool_args>\s*<\/tool_usage_card>/ms,
-                w = {
+                x = {
                     name: "toolUsageCard",
                     level: "inline",
                     start: (e) => e.indexOf("<tool_usage_card"),
                     tokenizer(e) {
                         const t = E.exec(e);
                         if (t) {
-                            const e = (0, b.Sd)(t[1], t[2], t[3]);
+                            const e = (0, v.Sd)(t[1], t[2], t[3]);
                             return { type: "toolUsageCard", raw: t[0], toolUsageCard: e };
                         }
                     },
                 };
-            var v = n(170676),
-                x = n(122670),
-                Z = n(595080),
-                _ = (n(136728), n(731708)),
-                S = n(392237),
-                I = n(807896),
-                R = n(154003),
-                P = n(797553),
-                T = n(143670),
-                M = n(111677),
-                L = n.n(M),
-                $ = n(473026),
-                H = n(689582),
-                B = n(72591);
-            const z = "https://artifacts.grokusercontent.com/chartjs";
-            function D({ chartJSConfig: e, iframeRef: t, messageHandlers: n }) {
+            var Z = n(170676),
+                _ = n(122670),
+                S = n(595080),
+                I = (n(136728), n(731708)),
+                R = n(392237),
+                P = n(807896),
+                T = n(154003),
+                M = n(797553),
+                L = n(143670),
+                $ = n(111677),
+                H = n.n($),
+                B = n(473026),
+                D = n(689582),
+                z = n(72591);
+            const A = "https://artifacts.grokusercontent.com/chartjs";
+            function U({ chartJSConfig: e, iframeRef: t, messageHandlers: n }) {
                 const a = o.useRef(null),
                     i = t ?? a,
                     [s, l] = o.useState(!1);
@@ -163,7 +173,7 @@
                 }, [i.current]);
                 const c = o.useCallback(
                     (e) => {
-                        i.current?.contentWindow && i.current.contentWindow.postMessage({ type: "chartjs", chartJSConfig: e, isDarkTheme: "light" === !S.default.theme.paletteName, backgroundColor: S.default.theme.colors.gray0 }, z);
+                        i.current?.contentWindow && i.current.contentWindow.postMessage({ type: "chartjs", chartJSConfig: e, isDarkTheme: "light" === !R.default.theme.paletteName, backgroundColor: R.default.theme.colors.gray0 }, A);
                     },
                     [i],
                 );
@@ -189,23 +199,23 @@
                         };
                         return window.addEventListener("message", e), () => window.removeEventListener("message", e);
                     }, [n, i, s]),
-                    o.createElement(r.Z, { style: A.container }, o.createElement("iframe", { ref: i, sandbox: "allow-scripts allow-same-origin", src: z, style: A.iframe, title: "chartjs" }))
+                    o.createElement(r.Z, { style: F.container }, o.createElement("iframe", { ref: i, sandbox: "allow-scripts allow-same-origin", src: A, style: F.iframe, title: "chartjs" }))
                 );
             }
-            const A = S.default.create((e) => ({ container: { flex: 1 }, iframe: { width: "100%", flex: 1, border: "none" } })),
-                U = L().g49741e8,
-                F = L().b0a889d4,
-                O = L().a111fb48,
-                W = L().bccc65f0;
-            function K({ chartJSConfig: e }) {
+            const F = R.default.create((e) => ({ container: { flex: 1 }, iframe: { width: "100%", flex: 1, border: "none" } })),
+                O = H().g49741e8,
+                W = H().b0a889d4,
+                K = H().a111fb48,
+                N = H().bccc65f0;
+            function j({ chartJSConfig: e }) {
                 const [t, n] = o.useState(!1),
                     [a, i] = o.useState(!1),
                     [s, l] = o.useState(null),
                     [c, d] = o.useState(null),
                     m = o.useRef(null),
-                    [u, g] = o.useState(!1),
-                    p = o.useCallback(() => {
-                        g(!u);
+                    [u, p] = o.useState(!1),
+                    g = o.useCallback(() => {
+                        p(!u);
                     }, [u]),
                     h = o.useMemo(
                         () => ({
@@ -241,35 +251,35 @@
                     }, [c]),
                     k = o.useMemo(
                         () => [
-                            { actionText: F, onClick: y, Icon: $.default },
-                            { actionText: O, onClick: f, Icon: H.default },
+                            { actionText: W, onClick: y, Icon: B.default },
+                            { actionText: K, onClick: f, Icon: D.default },
                         ],
                         [y, f],
                     );
                 return e
                     ? o.createElement(
                           r.Z,
-                          { style: N.container },
+                          { style: G.container },
                           a
-                              ? o.createElement(r.Z, { style: N.failedContainer })
+                              ? o.createElement(r.Z, { style: G.failedContainer })
                               : o.createElement(
                                     r.Z,
-                                    { style: [N.chartContainer, t ? void 0 : { opacity: 0 }] },
-                                    o.createElement(r.Z, { style: N.chartIframe }, o.createElement(D, { chartJSConfig: e, iframeRef: m, messageHandlers: h })),
-                                    o.createElement(r.Z, { style: N.divider }),
+                                    { style: [G.chartContainer, t ? void 0 : { opacity: 0 }] },
+                                    o.createElement(r.Z, { style: G.chartIframe }, o.createElement(U, { chartJSConfig: e, iframeRef: m, messageHandlers: h })),
+                                    o.createElement(r.Z, { style: G.divider }),
                                     o.createElement(
                                         r.Z,
-                                        { style: N.menuContainer },
-                                        o.createElement(_.ZP, { style: N.disclaimerText }, W),
+                                        { style: G.menuContainer },
+                                        o.createElement(I.ZP, { style: G.disclaimerText }, N),
                                         o.createElement(
                                             o.Fragment,
                                             null,
-                                            o.createElement(R.ZP, { "aria-label": U, backgroundColor: "gray50", borderColor: "transparent", fontWeight: "normal", hoverLabel: { label: U }, icon: o.createElement(B.default, null), onPress: p, size: "small" }, U),
+                                            o.createElement(T.ZP, { "aria-label": O, backgroundColor: "gray50", borderColor: "transparent", fontWeight: "normal", hoverLabel: { label: O }, icon: o.createElement(z.default, null), onPress: g, size: "small" }, O),
                                             u &&
                                                 o.createElement(
-                                                    P.default,
-                                                    { isFixed: !0, onDismiss: p },
-                                                    k.map((e) => o.createElement(T.Z, (0, I.Z)({}, e, { key: e.actionText }))),
+                                                    M.default,
+                                                    { isFixed: !0, onDismiss: g },
+                                                    k.map((e) => o.createElement(L.Z, (0, P.Z)({}, e, { key: e.actionText }))),
                                                 ),
                                         ),
                                     ),
@@ -277,83 +287,83 @@
                       )
                     : null;
             }
-            const N = S.default.create((e) => ({ container: { flex: 1, borderRadius: e.spaces.space24, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, backgroundColor: e.colors.gray0, marginBottom: e.spaces.space16, overflow: "hidden", height: 500, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both" }, failedContainer: {}, chartContainer: { flex: 1 }, chartIframe: { flex: 1, padding: e.spaces.space16 }, divider: { height: 1, width: "100%", backgroundColor: e.colors.gray200 }, menuContainer: { padding: e.spaces.space16, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, disclaimerText: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 } }));
-            var j = n(67369),
-                G = n(65469),
-                J = n(988290);
-            function q({ token: e }) {
-                const t = (0, j.Zz)(),
-                    { isGrokDrawer: n, isGrokShare: a } = (0, J.ZP)(),
-                    { disableCodeBlockStickyHeader: i } = o.useContext(Z.$);
-                return "chartjs" === e.lang ? o.createElement(K, { chartJSConfig: e.text }) : o.createElement(r.Z, { style: V.codeContainer }, o.createElement(G.Z, { code: e.text, headerBarStyle: i ? void 0 : n || a || t ? V.drawerStickyContainer : V.stickyContainer, language: e.lang }));
-            }
-            const V = S.default.create((e) => ({ stickyContainer: { position: "sticky", top: `calc(${e.componentDimensions.appBarHeight} - ${e.spaces.space2})`, zIndex: e.componentZIndices.appBarZIndex - 1 }, drawerStickyContainer: { position: "sticky", top: `calc(-${e.spaces.space2})`, zIndex: e.componentZIndices.appBarZIndex - 1 }, codeContainer: { maxWidth: "100%", paddingVertical: "0.2em", marginBottom: "1em" } }));
+            const G = R.default.create((e) => ({ container: { flex: 1, borderRadius: e.spaces.space24, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, backgroundColor: e.colors.gray0, marginBottom: e.spaces.space16, overflow: "hidden", height: 500, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both" }, failedContainer: {}, chartContainer: { flex: 1 }, chartIframe: { flex: 1, padding: e.spaces.space16 }, divider: { height: 1, width: "100%", backgroundColor: e.colors.gray200 }, menuContainer: { padding: e.spaces.space16, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, disclaimerText: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 } }));
+            var J = n(67369),
+                q = n(65469),
+                V = n(988290);
             function X({ token: e }) {
-                const { isAnimated: t } = o.useContext(Z.$),
-                    n = o.useMemo(() => [Y.codeSpan, t ? Y.animation : null], [t]);
-                return o.createElement(_.ZP, { style: n }, e.text);
+                const t = (0, J.Zz)(),
+                    { isGrokDrawer: n, isGrokShare: a } = (0, V.ZP)(),
+                    { disableCodeBlockStickyHeader: i } = o.useContext(S.$);
+                return "chartjs" === e.lang ? o.createElement(j, { chartJSConfig: e.text }) : o.createElement(r.Z, { style: Y.codeContainer }, o.createElement(q.Z, { code: e.text, headerBarStyle: i ? void 0 : n || a || t ? Y.drawerStickyContainer : Y.stickyContainer, language: e.lang }));
             }
-            const Y = S.default.create((e) => ({ codeSpan: { display: "inline", fontWeight: e.fontWeights.regular, fontFamily: "monospace", fontSize: "90%", color: S.default.isDarkMode() ? "rgb(247, 170, 125)" : "rgb(158, 63, 0)", paddingTop: e.spaces.space1, paddingBottom: e.spaces.space1, paddingStart: e.spaces.space4, paddingEnd: e.spaces.space4, borderRadius: e.borderRadii.small, backgroundColor: S.default.isDarkMode() ? "rgba(219, 133, 87, 0.2)" : "rgba(206, 96, 28, 0.1)" }, animation: { animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" } }));
-            var Q = n(33474);
-            function ee() {
-                return o.createElement("hr", { style: te.horizontalRule });
+            const Y = R.default.create((e) => ({ stickyContainer: { position: "sticky", top: `calc(${e.componentDimensions.appBarHeight} - ${e.spaces.space2})`, zIndex: e.componentZIndices.appBarZIndex - 1 }, drawerStickyContainer: { position: "sticky", top: `calc(-${e.spaces.space2})`, zIndex: e.componentZIndices.appBarZIndex - 1 }, codeContainer: { maxWidth: "100%", paddingVertical: "0.2em", marginBottom: "1em" } }));
+            function Q({ token: e }) {
+                const { isAnimated: t } = o.useContext(S.$),
+                    n = o.useMemo(() => [ee.codeSpan, t ? ee.animation : null], [t]);
+                return o.createElement(I.ZP, { style: n }, e.text);
             }
-            const te = S.default.create((e) => ({ horizontalRule: { marginTop: "3em", marginBottom: "3em", marginStart: 0, marginEnd: 0, borderColor: e.colors.gray300 } }));
-            var ne = n(342430),
-                oe = n(910594),
-                ae = n(488684);
-            function re({ token: e }) {
+            const ee = R.default.create((e) => ({ codeSpan: { display: "inline", fontWeight: e.fontWeights.regular, fontFamily: "monospace", fontSize: "90%", color: R.default.isDarkMode() ? "rgb(247, 170, 125)" : "rgb(158, 63, 0)", paddingTop: e.spaces.space1, paddingBottom: e.spaces.space1, paddingStart: e.spaces.space4, paddingEnd: e.spaces.space4, borderRadius: e.borderRadii.small, backgroundColor: R.default.isDarkMode() ? "rgba(219, 133, 87, 0.2)" : "rgba(206, 96, 28, 0.1)" }, animation: { animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" } }));
+            var te = n(33474);
+            function ne() {
+                return o.createElement("hr", { style: oe.horizontalRule });
+            }
+            const oe = R.default.create((e) => ({ horizontalRule: { marginTop: "3em", marginBottom: "3em", marginStart: 0, marginEnd: 0, borderColor: e.colors.gray300 } }));
+            var ae = n(342430),
+                re = n(910594),
+                ie = n(488684);
+            function se({ token: e }) {
                 const t = e.handle ? `/${e.handle}` : void 0;
-                return o.createElement(ae.Z, { screenName: e.handle || "" }, o.createElement(_.ZP, { link: t }, e.text));
+                return o.createElement(ie.Z, { screenName: e.handle || "" }, o.createElement(I.ZP, { link: t }, e.text));
             }
-            const ie = { level: 0 },
-                se = o.createContext(ie);
-            function le({ token: e }) {
-                const { level: t } = o.useContext(se),
+            const le = { level: 0 },
+                ce = o.createContext(le);
+            function de({ token: e }) {
+                const { level: t } = o.useContext(ce),
                     n = [];
                 e.items?.length &&
                     e.items.forEach((e, a) => {
-                        n.push(o.createElement(se.Provider, { key: `li-${a.toString()}`, value: { level: t + 1 } }, o.createElement(ce, { isFirst: 0 === a, item: e, level: t })));
+                        n.push(o.createElement(ce.Provider, { key: `li-${a.toString()}`, value: { level: t + 1 } }, o.createElement(me, { isFirst: 0 === a, item: e, level: t })));
                     });
                 const a = o.useMemo(
                     () =>
                         [
-                            { ...de.list, ...de.level1 },
-                            { ...de.list, ...de.level2 },
-                            { ...de.list, ...de.level3 },
-                        ][t] ?? { ...de.list, ...de.level4 },
+                            { ...ue.list, ...ue.level1 },
+                            { ...ue.list, ...ue.level2 },
+                            { ...ue.list, ...ue.level3 },
+                        ][t] ?? { ...ue.list, ...ue.level4 },
                     [t],
                 );
-                return e.ordered ? o.createElement(se.Provider, { value: { level: t + 1 } }, o.createElement("ol", { dir: e.direction, start: e.start, style: a }, n)) : o.createElement(se.Provider, { value: { level: t + 1 } }, o.createElement("ul", { dir: e.direction, style: a }, n));
+                return e.ordered ? o.createElement(ce.Provider, { value: { level: t + 1 } }, o.createElement("ol", { dir: e.direction, start: e.start, style: a }, n)) : o.createElement(ce.Provider, { value: { level: t + 1 } }, o.createElement("ul", { dir: e.direction, style: a }, n));
             }
-            const ce = ({ isFirst: e, item: t, level: n }) => {
+            const me = ({ isFirst: e, item: t, level: n }) => {
                     const a = [];
                     t.tokens?.length &&
                         t.tokens.forEach((e, t) => {
-                            a.push(o.createElement(qe, { key: `token-${t}`, token: e }));
+                            a.push(o.createElement(Xe, { key: `token-${t}`, token: e }));
                         });
                     const r = o.useMemo(() => ({ marginTop: "0.5em", ...(e ? { marginTop: 0 } : {}) }), [e]);
-                    return o.createElement("li", { style: { ...de.listItem, ...r } }, a);
+                    return o.createElement("li", { style: { ...ue.listItem, ...r } }, a);
                 },
-                de = S.default.create((e) => ({ list: { display: "block", paddingInlineStart: "2em", listStyleType: "disc" }, level1: { marginBlockStart: 0, marginBlockEnd: "1.25em" }, level2: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level3: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level4: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, listItem: { fontFamily: e.fontFamilies.normal, marginTop: "0.5em" }, firstListItem: { marginTop: 0 } }));
-            var me = n(444342);
-            function ue({ children: e, isRootLevel: t, style: n, token: a }) {
-                return o.createElement(l.P, { direction: a.direction }, o.createElement(_.ZP, { style: [t && ge.paragraph, n] }, o.createElement(me.Z, { token: a }, e)));
+                ue = R.default.create((e) => ({ list: { display: "block", paddingInlineStart: "2em", listStyleType: "disc" }, level1: { marginBlockStart: 0, marginBlockEnd: "1.25em" }, level2: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level3: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level4: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, listItem: { fontFamily: e.fontFamilies.normal, marginTop: "0.5em" }, firstListItem: { marginTop: 0 } }));
+            var pe = n(444342);
+            function ge({ children: e, isRootLevel: t, style: n, token: a }) {
+                return o.createElement(l.P, { direction: a.direction }, o.createElement(I.ZP, { style: [t && he.paragraph, n] }, o.createElement(pe.Z, { token: a }, e)));
             }
-            const ge = S.default.create((e) => ({ paragraph: { display: "block", marginBottom: "0.5em" } }));
-            function pe({ children: e, isRootLevel: t, token: n }) {
-                return o.createElement(r.Z, { style: he.container }, o.createElement(_.ZP, { style: he.quoteText }, e));
+            const he = R.default.create((e) => ({ paragraph: { display: "block", marginBottom: "0.5em" } }));
+            function ye({ children: e, isRootLevel: t, token: n }) {
+                return o.createElement(r.Z, { style: fe.container }, o.createElement(I.ZP, { style: fe.quoteText }, e));
             }
-            const he = S.default.create((e) => ({ container: { borderStartWidth: e.borderWidths.large, borderColor: e.colors.gray100, paddingStart: "1em", paddingVertical: e.spaces.space4, marginVertical: "0.5em" }, quoteText: { fontStyle: "italic" } }));
-            var ye = n(908629),
-                fe = n(654917),
-                ke = n(983650),
-                Ce = n(572929),
-                be = n(340690);
-            const Ee = L().bd202fe6;
-            function we({ token: e }) {
-                const { cardAttachments: t, isAborted: n, isAnimated: a, isStreaming: i, messageId: s } = o.useContext(Z.$),
-                    l = (0, fe.eX)(),
+            const fe = R.default.create((e) => ({ container: { borderStartWidth: e.borderWidths.large, borderColor: e.colors.gray100, paddingStart: "1em", paddingVertical: e.spaces.space4, marginVertical: "0.5em" }, quoteText: { fontStyle: "italic" } }));
+            var ke = n(908629),
+                be = n(654917),
+                Ce = n(983650),
+                we = n(572929),
+                ve = n(340690);
+            const Ee = H().bd202fe6;
+            function xe({ token: e }) {
+                const { cardAttachments: t, isAborted: n, isAnimated: a, isStreaming: i, messageId: s } = o.useContext(S.$),
+                    l = (0, be.eX)(),
                     c = o.useMemo(() => (t || []).find((t) => t.id === e.id) || null, [t, e.id]),
                     d = o.useMemo(() => {
                         const e = [];
@@ -364,23 +374,23 @@
                             e
                         );
                     }, [t]);
-                return "image_generation_card" === e.contentType ? o.createElement(be.Z, { cardAttachments: d, isAborted: n, isStreaming: i, messageId: s }) : o.createElement(r.Z, { style: [ve.container, i && ve.streamingContainer] }, o.createElement(ye.Z, { show: !!i && !c }, o.createElement(Ce.Z, { isAnimated: !0, isInline: !0, style: ve.loadingCardContainer }, o.createElement(_.ZP, { style: ve.loadingText }, Ee))), c && o.createElement(ke.Z, { cardAttachment: c, conversationKey: l, isAnimated: a, isInline: !0 }));
+                return "image_generation_card" === e.contentType ? o.createElement(ve.Z, { cardAttachments: d, isAborted: n, isStreaming: i, messageId: s }) : o.createElement(r.Z, { style: [Ze.container, i && Ze.streamingContainer] }, o.createElement(ke.Z, { show: !!i && !c }, o.createElement(we.Z, { isAnimated: !0, isInline: !0, style: Ze.loadingCardContainer }, o.createElement(I.ZP, { style: Ze.loadingText }, Ee))), c && o.createElement(Ce.Z, { cardAttachment: c, conversationKey: l, isAnimated: a, isInline: !0 }));
             }
-            const ve = S.default.create((e) => ({ container: { position: "relative", width: "100%" }, streamingContainer: { minHeight: 50, marginBottom: e.spaces.space12 }, loadingCardContainer: { position: "absolute", top: 0, start: 0, zIndex: 10, borderWidth: 0, display: "flex", justifyContent: "center", alignItems: "center", width: "max-content", height: "100%" }, loadingText: { color: e.colors.gray500, fontSize: e.fontSizes.subtext1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 1 }, "50%": { opacity: 0.5 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease-out", animationFillMode: "both", animationIterationCount: "infinite" }, imageGenPlaceholderContainer: { backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space12, marginBottom: e.spaces.space12, padding: e.spaces.space16, borderRadius: e.spaces.space24 } }));
-            var xe = n(5741);
-            function Ze({ token: e }) {
+            const Ze = R.default.create((e) => ({ container: { position: "relative", width: "100%" }, streamingContainer: { minHeight: 50, marginBottom: e.spaces.space12 }, loadingCardContainer: { position: "absolute", top: 0, start: 0, zIndex: 10, borderWidth: 0, display: "flex", justifyContent: "center", alignItems: "center", width: "max-content", height: "100%" }, loadingText: { color: e.colors.gray500, fontSize: e.fontSizes.subtext1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 1 }, "50%": { opacity: 0.5 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease-out", animationFillMode: "both", animationIterationCount: "infinite" }, imageGenPlaceholderContainer: { backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space12, marginBottom: e.spaces.space12, padding: e.spaces.space16, borderRadius: e.spaces.space24 } }));
+            var _e = n(5741);
+            function Se({ token: e }) {
                 const t = e.header
                         ? o.createElement(
                               "tr",
-                              { style: _e.tableRow },
+                              { style: Ie.tableRow },
                               e.header?.map((e, t) =>
                                   o.createElement(
                                       "th",
-                                      { style: _e.tableHeaderCell },
+                                      { style: Ie.tableHeaderCell },
                                       o.createElement(
                                           r.Z,
-                                          { style: _e.cellContent },
-                                          e.tokens?.map((e, n) => o.createElement(qe, { key: `th-${t}-${n}`, token: e })),
+                                          { style: Ie.cellContent },
+                                          e.tokens?.map((e, n) => o.createElement(Xe, { key: `th-${t}-${n}`, token: e })),
                                       ),
                                   ),
                               ),
@@ -390,116 +400,117 @@
                         ? e.rows?.map((e, t) =>
                               o.createElement(
                                   "tr",
-                                  { style: _e.tableRow },
+                                  { style: Ie.tableRow },
                                   e.map((e, n) =>
                                       o.createElement(
                                           "td",
-                                          { style: _e.tableCell },
+                                          { style: Ie.tableCell },
                                           o.createElement(
                                               r.Z,
-                                              { style: _e.cellContent },
-                                              e.tokens?.map((e, a) => o.createElement(qe, { key: `td-${t}-${n}-${a}`, token: e })),
+                                              { style: Ie.cellContent },
+                                              e.tokens?.map((e, a) => o.createElement(Xe, { key: `td-${t}-${n}-${a}`, token: e })),
                                           ),
                                       ),
                                   ),
                               ),
                           )
                         : null;
-                return o.createElement(r.Z, { style: _e.tableContainer }, o.createElement("table", { style: _e.table }, t, n));
+                return o.createElement(r.Z, { style: Ie.tableContainer }, o.createElement("table", { style: Ie.table }, t, n));
             }
-            const _e = S.default.create((e) => ({ tableContainer: { paddingBottom: e.spaces.space16, width: "100%", overflowX: "auto" }, table: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.medium, borderCollapse: "collapse" }, tableRow: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse" }, tableHeaderCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", fontWeight: e.fontWeights.bold, backgroundColor: e.colors.gray50 }, tableCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space2 }, cellContent: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, display: "block" } }));
+            const Ie = R.default.create((e) => ({ tableContainer: { paddingBottom: e.spaces.space16, width: "100%", overflowX: "auto" }, table: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.medium, borderCollapse: "collapse" }, tableRow: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse" }, tableHeaderCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", fontWeight: e.fontWeights.bold, backgroundColor: e.colors.gray50 }, tableCell: { borderStyle: "solid", borderColor: e.colors.gray200, borderWidth: e.borderWidths.small, borderCollapse: "collapse", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space2 }, cellContent: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, display: "block" } }));
             n(543673), n(240753), n(128399);
-            var Se = n(530732),
-                Ie = n(815858),
-                Re = n(818199),
-                Pe = n(992942),
-                Te = n(58399),
-                Me = n(630715),
-                Le = n(323265),
-                $e = n(301758),
-                He = n(125363),
-                Be = n(836255),
-                ze = n(916559),
-                De = n(520595),
-                Ae = n(809311);
-            const Ue = L().db6c20cf,
-                Fe = L().a4cfb8a8,
-                Oe = [b.ky.CodeExecution],
-                We = [b.ky.BrowsePage];
-            function Ke({ token: e }) {
-                const { isCompactLayout: t, isGrokDrawer: n } = (0, J.ZP)(),
+            var Re = n(530732),
+                Pe = n(815858),
+                Te = n(818199),
+                Me = n(992942),
+                Le = n(58399),
+                $e = n(630715),
+                He = n(323265),
+                Be = n(301758),
+                De = n(125363),
+                ze = n(836255),
+                Ae = n(916559),
+                Ue = n(520595),
+                Fe = n(809311);
+            const Oe = H().db6c20cf,
+                We = H().a4cfb8a8,
+                Ke = [v.ky.CodeExecution],
+                Ne = [v.ky.BrowsePage];
+            function je({ token: e }) {
+                const { isCompactLayout: t, isGrokDrawer: n } = (0, V.ZP)(),
                     [a, i] = o.useState(!1),
                     [s, l] = o.useState(!1),
                     [c, d] = o.useState(!1),
                     m = n || t ? 2 : 4,
-                    { toolUsageCardResults: u } = o.useContext(Z.$),
-                    g = u?.find((t) => t.toolUsageCardId === e.toolUsageCard?.id),
-                    p = o.useMemo(() => g?.webResults || [], [g]),
-                    h = p.slice(0, m),
-                    y = o.useMemo(() => g?.xPostIds || [], [g]),
+                    { toolUsageCardResults: u } = o.useContext(S.$),
+                    p = u?.find((t) => t.toolUsageCardId === e.toolUsageCard?.id),
+                    g = o.useMemo(() => p?.webResults || [], [p]),
+                    h = g.slice(0, m),
+                    y = o.useMemo(() => p?.xPostIds || [], [p]),
                     f = y.slice(0, m),
-                    k = p.length > 0 || y.length > 0,
-                    C = We.includes(e.toolUsageCard?.name),
-                    E = o.useCallback(() => {
-                        if (!e.toolUsageCard) return o.createElement(_.ZP, { style: Ge.toolHeader, weight: "bold" }, b.eC);
-                        if (e.toolUsageCard.name === b.ky.BrowsePage && e.toolUsageCard.args.url) {
+                    k = g.length > 0 || y.length > 0,
+                    b = Ne.includes(e.toolUsageCard?.name),
+                    C = o.useCallback(() => {
+                        if (!e.toolUsageCard) return o.createElement(I.ZP, { style: qe.toolHeader, weight: "bold" }, v.eC);
+                        if (e.toolUsageCard.name === v.ky.BrowsePage && e.toolUsageCard.args.url) {
                             const t = e.toolUsageCard.args.url;
                             let n = t || "";
                             try {
                                 n = new URL(n).hostname.replace("www.", "");
                             } catch (e) {}
-                            return o.createElement(_.ZP, { style: Ge.toolHeader, weight: "bold" }, Fe, " ", o.createElement(_.ZP, { link: t, style: Ge.toolHeader, underlineWeight: "normal", weight: "normal", withUnderline: !0 }, n));
+                            return o.createElement(I.ZP, { style: qe.toolHeader, weight: "bold" }, We, " ", o.createElement(I.ZP, { link: t, style: qe.toolHeader, underlineWeight: "normal", weight: "normal", withUnderline: !0 }, n));
                         }
-                        return o.createElement(_.ZP, { style: Ge.toolHeader, weight: "bold" }, (0, b.CK)(e.toolUsageCard));
+                        return o.createElement(I.ZP, { style: qe.toolHeader, weight: "bold" }, (0, v.j)(e.toolUsageCard));
                     }, [e.toolUsageCard]),
-                    w = o.useCallback(() => (Oe.includes(e.toolUsageCard?.name) ? o.createElement(Se.Z, { onPress: () => i(!a), style: Ge.headerContainer, withoutInteractiveStyles: !0 }, ({ isHovered: t }) => o.createElement(o.Fragment, null, o.createElement(r.Z, { style: Ge.headerIconContainer }, o.createElement(ye.Z, { show: t }, o.createElement(Te.default, { style: [Ge.headerIcon, Ge.chevronIcon, a && Ge.openChevronIcon] })), o.createElement(ye.Z, { show: !t }, o.createElement(r.Z, { style: Ge.headerIcon }, (0, b.w$)(e.toolUsageCard?.name || "")))), o.createElement(_.ZP, { style: [Ge.toolHeader, t && Ge.toolHeaderHovered], weight: "bold" }, E()))) : o.createElement(r.Z, { style: Ge.headerContainer }, o.createElement(r.Z, { style: Ge.headerIconContainer }, o.createElement(r.Z, { style: Ge.headerIcon }, (0, b.w$)(e.toolUsageCard?.name || ""))), E())), [E, e.toolUsageCard?.name, a]),
-                    v = o.useCallback(() => {
-                        if (e.toolUsageCard?.name !== b.ky.CodeExecution) return null;
+                    w = o.useCallback(() => (Ke.includes(e.toolUsageCard?.name) ? o.createElement(Re.Z, { onPress: () => i(!a), style: qe.headerContainer, withoutInteractiveStyles: !0 }, ({ isHovered: t }) => o.createElement(o.Fragment, null, o.createElement(r.Z, { style: qe.headerIconContainer }, o.createElement(ke.Z, { show: t }, o.createElement(Le.default, { style: [qe.headerIcon, qe.chevronIcon, a && qe.openChevronIcon] })), o.createElement(ke.Z, { show: !t }, o.createElement(r.Z, { style: qe.headerIcon }, (0, v.w$)(e.toolUsageCard?.name || "")))), o.createElement(I.ZP, { style: [qe.toolHeader, t && qe.toolHeaderHovered], weight: "bold" }, C()))) : o.createElement(r.Z, { style: qe.headerContainer }, o.createElement(r.Z, { style: qe.headerIconContainer }, o.createElement(r.Z, { style: qe.headerIcon }, (0, v.w$)(e.toolUsageCard?.name || ""))), C())), [C, e.toolUsageCard?.name, a]),
+                    E = o.useCallback(() => {
+                        if (e.toolUsageCard?.name !== v.ky.CodeExecution) return null;
                         const t = e.toolUsageCard?.args?.code || JSON.stringify(e.toolUsageCard?.args || {}, null, 2);
-                        return o.createElement(Ie.Z, { childrenOuterStyle: Ge.codeBlockOuterContainer, show: a, type: "slide" }, o.createElement(r.Z, { style: Ge.codeBlockContainer }, o.createElement(G.Z, { backgroundColor: S.default.theme.colors.gray100, code: t, headerBarStyle: { backgroundColor: S.default.theme.colors.gray200 }, language: e.toolUsageCard?.args?.language })));
+                        return o.createElement(Pe.Z, { childrenOuterStyle: qe.codeBlockOuterContainer, show: a, type: "slide" }, o.createElement(r.Z, { style: qe.codeBlockContainer }, o.createElement(q.Z, { backgroundColor: R.default.theme.colors.gray100, code: t, headerBarStyle: { backgroundColor: R.default.theme.colors.gray200 }, language: e.toolUsageCard?.args?.language })));
                     }, [e.toolUsageCard, a]),
                     x = o.useCallback(
                         () =>
-                            !k || C || 0 === h.length
+                            !k || b || 0 === h.length
                                 ? null
                                 : o.createElement(
                                       r.Z,
-                                      { style: Ge.toolResultsContainer },
+                                      { style: qe.toolResultsContainer },
                                       o.createElement(
                                           r.Z,
-                                          { style: Ge.toolResultPills },
-                                          h.map((e, t) => o.createElement(Ne, { key: `${e.url}-${t}`, webResult: e })),
-                                          p.length > m && o.createElement(Se.Z, { onPress: () => l(!0), style: Ge.seeMoreButton, withoutInteractiveStyles: !0 }, ({ isHovered: e }) => o.createElement(_.ZP, { style: [Ge.seeMoreText, e && Ge.seeMoreTextHovered], weight: "normal" }, Ue({ count: p.length }))),
+                                          { style: qe.toolResultPills },
+                                          h.map((e, t) => o.createElement(Ge, { key: `${e.url}-${t}`, webResult: e })),
+                                          g.length > m && o.createElement(Re.Z, { onPress: () => l(!0), style: qe.seeMoreButton, withoutInteractiveStyles: !0 }, ({ isHovered: e }) => o.createElement(I.ZP, { style: [qe.seeMoreText, e && qe.seeMoreTextHovered], weight: "normal" }, Oe({ count: g.length }))),
                                       ),
                                   ),
-                        [k, C, h, p, m, l],
+                        [k, b, h, g, m, l],
                     ),
-                    I = o.useCallback(
+                    Z = o.useCallback(
                         () =>
-                            !k || C || 0 === f.length
+                            !k || b || 0 === f.length
                                 ? null
                                 : o.createElement(
                                       r.Z,
-                                      { style: Ge.toolResultsContainer },
+                                      { style: qe.toolResultsContainer },
                                       o.createElement(
                                           r.Z,
-                                          { style: Ge.toolResultPills },
-                                          f.map((e, t) => o.createElement(je, { key: `${e}-${t}`, xPostId: e })),
-                                          y.length > m && o.createElement(Se.Z, { onPress: () => d(!0), style: Ge.seeMoreButton, withoutInteractiveStyles: !0 }, ({ isHovered: e }) => o.createElement(_.ZP, { style: [Ge.seeMoreText, e && Ge.seeMoreTextHovered], weight: "normal" }, Ue({ count: y.length }))),
+                                          { style: qe.toolResultPills },
+                                          f.map((e, t) => o.createElement(Je, { key: `${e}-${t}`, xPostId: e })),
+                                          y.length > m && o.createElement(Re.Z, { onPress: () => d(!0), style: qe.seeMoreButton, withoutInteractiveStyles: !0 }, ({ isHovered: e }) => o.createElement(I.ZP, { style: [qe.seeMoreText, e && qe.seeMoreTextHovered], weight: "normal" }, Oe({ count: y.length }))),
                                       ),
                                   ),
-                        [k, C, f, y, m, d],
+                        [k, b, f, y, m, d],
                     );
-                return o.createElement(r.Z, { style: Ge.container }, w(), x(), I(), v(), s ? o.createElement(ze.E, { onDrawerDismiss: () => l(!1), paginationOptions: { numResultsPerPage: 25 }, webResults: p }) : null, c ? o.createElement(De.a, { onDrawerDismiss: () => d(!1), paginationOptions: { numResultsPerPage: 25 }, postIds: y }) : null);
+                return o.createElement(r.Z, { style: qe.container }, w(), x(), Z(), E(), s ? o.createElement(Ae.E, { onDrawerDismiss: () => l(!1), paginationOptions: { numResultsPerPage: 25 }, webResults: g }) : null, c ? o.createElement(Ue.a, { onDrawerDismiss: () => d(!1), paginationOptions: { numResultsPerPage: 25 }, postIds: y }) : null);
             }
-            const Ne = o.memo(({ webResult: e }) => {
-                    const t = e.favicon_base64 || e.favicon,
-                        n = o.useCallback(() => o.createElement(r.Z, { style: Ge.hoverCardContainer }, o.createElement(Ae.p, { item: e })), [e]);
+            const Ge = o.memo(({ webResult: e }) => {
+                    const [t, n] = o.useState(!1),
+                        a = e.favicon_base64 || e.favicon,
+                        i = o.useCallback(() => o.createElement(r.Z, { style: qe.hoverCardContainer }, o.createElement(Fe.p, { item: e })), [e]);
                     return o.createElement(
-                        Re.Z,
-                        { renderContent: n },
+                        Te.Z,
+                        { renderContent: i },
                         o.createElement(
-                            R.ZP,
+                            T.ZP,
                             {
                                 backgroundColor: "gray100",
                                 borderColor: "gray200",
@@ -507,23 +518,23 @@
                                     window.open(e.url, "_blank");
                                 },
                                 size: "small",
-                                style: Ge.toolResultPill,
+                                style: qe.toolResultPill,
                             },
-                            o.createElement(r.Z, { style: Ge.toolResultPillContent }, t ? o.createElement(Pe.Z, { source: { uri: t }, style: Ge.toolResultPillImage }) : o.createElement(Me.default, { style: Ge.linkIcon }), o.createElement(r.Z, null, o.createElement(_.ZP, { numberOfLines: 1, style: Ge.toolResultPillText, weight: "normal" }, new URL(e.url).hostname.replace("www.", "")))),
+                            o.createElement(r.Z, { style: qe.toolResultPillContent }, a && !t ? o.createElement(Me.Z, { onError: () => n(!0), source: a, style: qe.toolResultPillImage }) : o.createElement($e.default, { style: qe.linkIcon }), o.createElement(r.Z, null, o.createElement(I.ZP, { numberOfLines: 1, style: qe.toolResultPillText, weight: "normal" }, new URL(e.url).hostname.replace("www.", "")))),
                         ),
                     );
                 }),
-                je = o.memo(({ xPostId: e }) => {
-                    const t = o.useMemo(() => Be.Z.createHydratorForTweet(e), [e]),
+                Je = o.memo(({ xPostId: e }) => {
+                    const t = o.useMemo(() => ze.Z.createHydratorForTweet(e), [e]),
                         n = o.useCallback(
                             () =>
                                 o.createElement(
                                     r.Z,
-                                    { style: Ge.hoverCardContainer },
-                                    o.createElement($e.Z, {
+                                    { style: qe.hoverCardContainer },
+                                    o.createElement(Be.Z, {
                                         isCondensed: !0,
                                         onPress: (e) => {
-                                            Le.ZP.isTwitterApp();
+                                            He.ZP.isTwitterApp();
                                         },
                                         tweetId: e,
                                         withBirdwatchPivot: !1,
@@ -533,13 +544,13 @@
                                 ),
                             [e],
                         ),
-                        a = (0, He.v9)(t);
+                        a = (0, De.v9)(t);
                     return a
                         ? o.createElement(
-                              Re.Z,
+                              Te.Z,
                               { renderContent: n },
                               o.createElement(
-                                  R.ZP,
+                                  T.ZP,
                                   {
                                       backgroundColor: "gray100",
                                       borderColor: "gray200",
@@ -547,14 +558,14 @@
                                           window.open(a.permalink, "_blank");
                                       },
                                       size: "small",
-                                      style: Ge.toolResultPill,
+                                      style: qe.toolResultPill,
                                   },
-                                  o.createElement(r.Z, { style: Ge.toolResultPillContent }, o.createElement(Pe.Z, { source: { uri: a.user.profile_image_url_https }, style: Ge.toolResultPillImage }), o.createElement(r.Z, null, o.createElement(_.ZP, { numberOfLines: 1, style: Ge.toolResultPillText, weight: "normal" }, `@${a.user.screen_name}`))),
+                                  o.createElement(r.Z, { style: qe.toolResultPillContent }, o.createElement(Me.Z, { source: { uri: a.user.profile_image_url_https }, style: qe.toolResultPillImage }), o.createElement(r.Z, null, o.createElement(I.ZP, { numberOfLines: 1, style: qe.toolResultPillText, weight: "normal" }, `@${a.user.screen_name}`))),
                               ),
                           )
                         : null;
                 }),
-                Ge = S.default.create((e) => ({
+                qe = R.default.create((e) => ({
                     container: { width: "100%", flex: 1, flexDirection: "column", overflow: "hidden", borderRadius: e.spaces.space16, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, padding: e.spaces.space8, backgroundColor: e.colors.gray50, animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both", marginVertical: e.spaces.space4 },
                     headerContainer: { flexDirection: "row", gap: e.spaces.space8 },
                     headerIconContainer: { position: "relative", width: e.spaces.space16, height: e.spaces.space16 },
@@ -579,92 +590,93 @@
                     codeBlockContainer: { maxWidth: "100%" },
                     hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" },
                 })),
-                Je = o.memo(
+                Ve = o.memo(
                     ({ isLast: e, isRootLevel: t, token: n }) => {
-                        const { allowedTokenTypes: a } = o.useContext(Z.$),
+                        const { allowedTokenTypes: a } = o.useContext(S.$),
                             r = o.useMemo(() => {
                                 const e = [];
                                 return (
                                     n.tokens?.length &&
                                         n.tokens.forEach((t, n) => {
                                             const a = `${n}`;
-                                            e.push(o.createElement(Je, { key: a, token: t }));
+                                            e.push(o.createElement(Ve, { key: a, token: t }));
                                         }),
                                     e
                                 );
                             }, [n.tokens]),
-                            i = o.createElement(ue, { isRootLevel: t, style: [Ve.expandedLineHeight, e ? Ve.noMarginBottom : void 0], token: n }, r);
-                        if (a && !a.includes(n.type)) return o.createElement(_.ZP, { style: Ve.expandedLineHeight }, n.raw);
+                            i = o.createElement(ge, { isRootLevel: t, style: [Ye.expandedLineHeight, e ? Ye.noMarginBottom : void 0], token: n }, r);
+                        if (a && !a.includes(n.type)) return o.createElement(I.ZP, { style: Ye.expandedLineHeight }, n.raw);
                         switch (n.type) {
                             case "x-handle":
-                                return o.createElement(re, { token: n });
+                                return o.createElement(se, { token: n });
                             case "code":
-                                return "indented" === n.codeBlockStyle ? i : o.createElement(q, { token: n });
+                                return "indented" === n.codeBlockStyle ? i : o.createElement(X, { token: n });
                             case "codespan":
-                                return o.createElement(X, { token: n });
+                                return o.createElement(Q, { token: n });
                             case "list":
-                                return o.createElement(le, { token: n });
+                                return o.createElement(de, { token: n });
                             case "blockquote":
-                                return o.createElement(pe, { token: n }, r);
+                                return o.createElement(ye, { token: n }, r);
                             case "table":
-                                return o.createElement(Ze, { token: n });
+                                return o.createElement(Se, { token: n });
                             case "space":
                                 return null;
                             case "br":
                                 return o.createElement("br", null);
                             case "hr":
-                                return o.createElement(ee, null);
+                                return o.createElement(ne, null);
                             case "text":
-                                return o.createElement(me.Z, { token: n }, r);
+                                return o.createElement(pe.Z, { token: n }, r);
                             case "link":
-                                return o.createElement(oe.Z, { token: n });
+                                return o.createElement(re.Z, { token: n });
                             case "heading":
-                                return o.createElement(Q.X, { token: n }, r);
+                                return o.createElement(te.X, { token: n }, r);
                             case "strong":
-                                return o.createElement(_.ZP, { style: Ve.expandedLineHeight, weight: "bold" }, o.createElement(me.Z, { token: n }, r));
+                                return o.createElement(I.ZP, { style: Ye.expandedLineHeight, weight: "bold" }, o.createElement(pe.Z, { token: n }, r));
                             case "em":
-                                return o.createElement(_.ZP, { style: [Ve.expandedLineHeight, Ve.italic] }, o.createElement(me.Z, { token: n }, r));
+                                return o.createElement(I.ZP, { style: [Ye.expandedLineHeight, Ye.italic] }, o.createElement(pe.Z, { token: n }, r));
                             case "emStrong":
-                                return o.createElement(_.ZP, { style: [Ve.expandedLineHeight, Ve.italic], weight: "bold" }, o.createElement(me.Z, { token: n }, r));
+                                return o.createElement(I.ZP, { style: [Ye.expandedLineHeight, Ye.italic], weight: "bold" }, o.createElement(pe.Z, { token: n }, r));
                             case "blockLatex":
-                                return o.createElement(ne.Z, { content: n.text, isBlock: !0 });
+                                return o.createElement(ae.Z, { content: n.text, isBlock: !0 });
                             case "inlineLatex":
-                                return o.createElement(ne.Z, { content: n.text });
+                                return o.createElement(ae.Z, { content: n.text });
                             case "grokRichContent":
-                                return o.createElement(we, { token: n });
+                                return o.createElement(xe, { token: n });
                             case "renderChart":
-                                return o.createElement(K, { chartJSConfig: n.chartJSConfig || "" });
+                                return o.createElement(j, { chartJSConfig: n.chartJSConfig || "" });
                             case "toolUsageCard":
-                                return o.createElement(Ke, { token: n });
+                                return o.createElement(je, { token: n });
                             default:
                                 return i;
                         }
                     },
                     (e, t) => e.token.raw === t.token.raw,
                 ),
-                qe = Je,
-                Ve = S.default.create((e) => ({ italic: { fontStyle: "italic" }, expandedLineHeight: { lineHeight: xe.Y }, noMarginBottom: { marginBottom: 0 } }));
-            function Xe(e) {
-                return e.items && e.items.length ? Xe(e.items[0]) : e.tokens && e.tokens.length ? Xe(e.tokens[0]) : e.text || "";
+                Xe = Ve,
+                Ye = R.default.create((e) => ({ italic: { fontStyle: "italic" }, expandedLineHeight: { lineHeight: _e.Y }, noMarginBottom: { marginBottom: 0 } }));
+            function Qe(e) {
+                return e.items && e.items.length ? Qe(e.items[0]) : e.tokens && e.tokens.length ? Qe(e.tokens[0]) : e.text || "";
             }
-            function Ye(e) {
+            function et(e) {
                 return (
                     e.forEach((e, t) => {
                         switch (e.type) {
                             case "list":
                             case "paragraph":
                             case "heading":
-                                (e.isFirst = 0 === t), (e.direction = i.Z.getTextDirection(Xe(e)));
+                                (e.isFirst = 0 === t), (e.direction = i.Z.getTextDirection(Qe(e)));
                         }
                     }),
                     e
                 );
             }
-            a.TU.use({ extensions: [x._, v.Im, ...C.Z, u, p, k, y, d, w] });
-            const Qe = [],
-                et = o.memo(({ allowedTokenTypes: e, cardAttachments: t, chatResponseAnnotations: n, citations: c, disableCodeBlockStickyHeader: d, disableLinks: m, isAborted: u, isAnimated: g, isStreaming: p, markdownText: h, messageId: y, style: f, toolUsageCardResults: k }) => {
-                    const C = (0, s.hC)("responsive_web_grok_links") && !g,
-                        b = o.useMemo(() => {
+            a.TU.use({ extensions: [_._, Z.Im, ...w.Z, u, g, y, C, k, d, x] });
+            const tt = [],
+                nt = o.memo(({ allowedTokenTypes: e, cardAttachments: t, chatResponseAnnotations: n, citations: c, disableCodeBlockStickyHeader: d, disableLinks: m, isAborted: u, isAnimated: p, isStreaming: g, markdownText: h, messageId: y, style: f, toolUsageCardResults: k }) => {
+                    const b = (0, s.hC)("responsive_web_grok_links") && !p,
+                        C = (0, s.hC)("responsive_web_grok_download_favicons"),
+                        w = o.useMemo(() => {
                             const e = (function (e, t) {
                                 if (!t) return e;
                                 t.sort((e, t) => e.startIndex - t.startIndex);
@@ -678,25 +690,25 @@
                                     }),
                                     n
                                 );
-                            })(h, C ? n : void 0);
-                            return Ye(a.TU.lexer(e ?? ""));
-                        }, [h, n, C]),
-                        E = o.useMemo(() => b.map((e, t) => o.createElement(qe, { isLast: t === b.length - 1, isRootLevel: !0, key: `parsedToken-${t}`, token: e })), [b]);
-                    return o.createElement(Z.Z, { allowedTokenTypes: e, cardAttachments: t, citations: c ?? Qe, disableCodeBlockStickyHeader: d, disableLinks: m, isAborted: u, isAnimated: g, isStreaming: p, messageId: y, toolUsageCardResults: k }, o.createElement(l.P, { direction: i.Z.getTextDirection(h ?? "") }, o.createElement(r.Z, { style: [{ display: "block" }, f] }, E)));
+                            })(h, b ? n : void 0);
+                            return et(a.TU.lexer(e ?? ""));
+                        }, [h, n, b]),
+                        v = o.useMemo(() => w.map((e, t) => o.createElement(Xe, { isLast: t === w.length - 1, isRootLevel: !0, key: `parsedToken-${t}`, token: e })), [w]);
+                    return o.createElement(S.Z, { allowedTokenTypes: e, cardAttachments: t, citations: c ?? tt, disableCodeBlockStickyHeader: d, disableLinks: m, enableFaviconDownload: C, isAborted: u, isAnimated: p, isStreaming: g, messageId: y, toolUsageCardResults: k }, o.createElement(l.P, { direction: i.Z.getTextDirection(h ?? "") }, o.createElement(r.Z, { style: [{ display: "block" }, f] }, v)));
                 }),
-                tt = et;
+                ot = nt;
         },
         595080: (e, t, n) => {
             n.d(t, { $: () => s, Z: () => l });
             var o = n(202784);
             const a = [],
                 r = [],
-                i = { isAnimated: !1, citations: a, disableCodeBlockStickyHeader: !1, allowedTokenTypes: void 0, cardAttachments: r, isStreaming: !1, messageId: void 0, isAborted: !1, toolUsageCardResults: [] },
+                i = { isAnimated: !1, citations: a, disableCodeBlockStickyHeader: !1, allowedTokenTypes: void 0, cardAttachments: r, isStreaming: !1, messageId: void 0, isAborted: !1, toolUsageCardResults: [], enableFaviconDownload: !1 },
                 s = o.createContext(i);
-            function l({ children: e, disableLinks: t, isAnimated: n, citations: i = a, disableCodeBlockStickyHeader: l, allowedTokenTypes: c, cardAttachments: d = r, isStreaming: m, messageId: u, isAborted: g, toolUsageCardResults: p }) {
-                const h = i.length ? i : a,
-                    y = o.useMemo(() => ({ isAnimated: n, disableLinks: t, citations: h, disableCodeBlockStickyHeader: l, allowedTokenTypes: c, cardAttachments: d, isStreaming: m, messageId: u, isAborted: g, toolUsageCardResults: p }), [n, t, h, l, c, d, m, u, g, p]);
-                return o.createElement(s.Provider, { value: y }, e);
+            function l({ children: e, disableLinks: t, isAnimated: n, citations: i = a, disableCodeBlockStickyHeader: l, allowedTokenTypes: c, cardAttachments: d = r, isStreaming: m, messageId: u, isAborted: p, toolUsageCardResults: g, enableFaviconDownload: h }) {
+                const y = i.length ? i : a,
+                    f = o.useMemo(() => ({ isAnimated: n, disableLinks: t, citations: y, disableCodeBlockStickyHeader: l, allowedTokenTypes: c, cardAttachments: d, isStreaming: m, messageId: u, isAborted: p, toolUsageCardResults: g, enableFaviconDownload: h }), [n, t, y, l, c, d, m, u, p, g, h]);
+                return o.createElement(s.Provider, { value: f }, e);
             }
         },
         33474: (e, t, n) => {
@@ -752,7 +764,7 @@
             const d = s.default.create((e) => ({ block: { flex: 1, flexDirection: "row", justifyContent: "center", width: "100%", paddingTop: "0.75rem", paddingBottom: "1.75rem" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
         },
         910594: (e, t, n) => {
-            n.d(t, { Z: () => O });
+            n.d(t, { Z: () => K });
             n(543673), n(240753), n(128399);
             var o = n(202784),
                 a = n(731708),
@@ -764,71 +776,75 @@
                 d = n(952793),
                 m = n(725516),
                 u = n(125363),
-                g = n(327597),
-                p = n(654917),
-                h = n(170676),
-                y = n(595080),
-                f = n(5741),
-                k = n(45843),
+                p = n(327597),
+                g = n(155918),
+                h = n(654917),
+                y = n(170676),
+                f = n(595080),
+                k = n(5741),
+                b = n(45843),
                 C = n(325686),
-                b = n(818199),
-                E = n(530732),
-                w = n(630715),
-                v = n(725405),
-                x = n(809311);
-            const Z = "grok_citation_web_result",
-                _ = ({ link: e }) => {
-                    const { isAnimated: t } = o.useContext(y.$),
+                w = n(530732),
+                v = n(818199),
+                E = n(630715),
+                x = n(725405),
+                Z = n(809311);
+            const _ = "grok_citation_web_result",
+                S = ({ link: e }) => {
+                    const { isAnimated: t } = o.useContext(f.$),
                         [n, a] = o.useState(!1),
-                        r = (0, v.Z)(),
-                        i = o.useCallback(() => {
-                            a(!0), r.scribe({ action: "hover", component: Z, data: { url: e.url } });
-                        }, [a, r, e.url]),
-                        s = o.useCallback(() => a(!1), [a]),
+                        [r, i] = o.useState(!1),
+                        s = (0, x.Z)(),
                         l = o.useCallback(() => {
-                            r.scribe({ action: "click", component: Z, data: { url: e.url } });
-                        }, [r, e.url]);
-                    let c = new URL(e.url).hostname;
-                    c.startsWith("www.") && (c = c.slice(4));
-                    const d = o.useCallback(() => o.createElement(S, { webResult: e }), [e]);
-                    return o.createElement("div", { className: "omit-from-copy", style: I.inlineContainer }, o.createElement(C.Z, { style: [I.inlineContainer, t ? I.animation : null] }, o.createElement(b.Z, { renderContent: d }, o.createElement(E.Z, { link: e.url, onMouseEnter: i, onMouseLeave: s, onPress: l, style: [I.content, e.favicon_base64 ? I.faviconContainer : I.iconContainer, n ? I.containerHovered : void 0], withoutInteractiveStyles: !0 }, e.favicon_base64 ? o.createElement(k.Z, { source: e.favicon_base64, style: I.favicon }) : o.createElement(w.default, { style: I.linkIcon })))));
+                            a(!0), s.scribe({ action: "hover", component: _, data: { url: e.url } });
+                        }, [a, s, e.url]),
+                        c = o.useCallback(() => a(!1), [a]),
+                        d = o.useCallback(() => {
+                            s.scribe({ action: "click", component: _, data: { url: e.url } });
+                        }, [s, e.url]);
+                    let m = new URL(e.url).hostname;
+                    m.startsWith("www.") && (m = m.slice(4));
+                    const u = o.useCallback(() => o.createElement(I, { webResult: e }), [e]),
+                        p = e.url && (e.title || e.snippet),
+                        g = o.createElement(w.Z, { link: e.url, onMouseEnter: l, onMouseLeave: c, onPress: d, style: [R.content, e.favicon_base64 ? R.faviconContainer : R.iconContainer, n ? R.containerHovered : void 0], withoutInteractiveStyles: !0 }, (!e.favicon_base64 && !e.favicon) || r ? o.createElement(E.default, { style: R.linkIcon }) : o.createElement(b.Z, { onError: () => i(!0), source: e.favicon_base64 || e.favicon, style: R.favicon }));
+                    return o.createElement("div", { className: "omit-from-copy", style: R.inlineContainer }, o.createElement(C.Z, { style: [R.inlineContainer, t ? R.animation : null] }, p ? o.createElement(v.Z, { renderContent: u }, g) : g));
                 },
-                S = ({ webResult: e }) => o.createElement(C.Z, { style: I.hoverCardContainer }, o.createElement(x.p, { item: e })),
-                I = s.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, faviconContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.small, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, favicon: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } }));
-            var R = n(323265),
-                P = n(301758),
-                T = n(836255);
-            const M = "grok_citation_post",
-                L = ({ postId: e }) => {
+                I = ({ webResult: e }) => o.createElement(C.Z, { style: R.hoverCardContainer }, o.createElement(Z.p, { item: e })),
+                R = s.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, faviconContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.small, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, favicon: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } }));
+            var P = n(323265),
+                T = n(301758),
+                M = n(836255);
+            const L = "grok_citation_post",
+                $ = ({ postId: e }) => {
                     const t = (0, u.oR)(),
                         n = (0, u.I0)(),
-                        { isAnimated: a } = o.useContext(y.$),
+                        { isAnimated: a } = o.useContext(f.$),
                         [r, i] = o.useState(!1),
-                        s = (0, v.Z)(),
+                        s = (0, x.Z)(),
                         l = o.useCallback(() => {
-                            i(!0), s.scribe({ action: "hover", component: M, data: { tweet_id: e } });
+                            i(!0), s.scribe({ action: "hover", component: L, data: { tweet_id: e } });
                         }, [i, s, e]),
                         c = o.useCallback(() => i(!1), [i]),
                         d = o.useCallback(() => {
-                            i(!0), s.scribe({ action: "click", component: M, data: { tweet_id: e } });
+                            i(!0), s.scribe({ action: "click", component: L, data: { tweet_id: e } });
                         }, [i, s, e]);
                     o.useEffect(() => {
-                        e && n(T.Z.fetchOneIfNeeded(e));
+                        e && n(M.Z.fetchOneIfNeeded(e));
                     }, [n, e]);
-                    const m = T.Z.selectHydrated(t.getState(), e),
-                        g = o.useCallback(() => o.createElement($, { postId: e }), [e]);
+                    const m = M.Z.selectHydrated(t.getState(), e),
+                        p = o.useCallback(() => o.createElement(H, { postId: e }), [e]);
                     if (!m) return null;
-                    const p = m?.user?.profile_image_url_https;
-                    return o.createElement("div", { className: "omit-from-copy", style: H.inlineContainer }, o.createElement(C.Z, { style: [H.inlineContainer, a ? H.animation : null] }, o.createElement(b.Z, { renderContent: g }, o.createElement(E.Z, { link: m.permalink, onMouseEnter: l, onMouseLeave: c, onPress: d, style: [H.content, p ? H.avatarContainer : H.iconContainer, r ? H.containerHovered : void 0], withoutInteractiveStyles: !0 }, p ? o.createElement(k.Z, { source: p, style: H.avatar }) : o.createElement(w.default, { style: H.linkIcon })))));
+                    const g = m?.user?.profile_image_url_https;
+                    return o.createElement("div", { className: "omit-from-copy", style: B.inlineContainer }, o.createElement(C.Z, { style: [B.inlineContainer, a ? B.animation : null] }, o.createElement(v.Z, { renderContent: p }, o.createElement(w.Z, { link: m.permalink, onMouseEnter: l, onMouseLeave: c, onPress: d, style: [B.content, g ? B.avatarContainer : B.iconContainer, r ? B.containerHovered : void 0], withoutInteractiveStyles: !0 }, g ? o.createElement(b.Z, { source: g, style: B.avatar }) : o.createElement(E.default, { style: B.linkIcon })))));
                 },
-                $ = ({ postId: e }) =>
+                H = ({ postId: e }) =>
                     o.createElement(
                         C.Z,
-                        { style: H.hoverCardContainer },
-                        o.createElement(P.Z, {
+                        { style: B.hoverCardContainer },
+                        o.createElement(T.Z, {
                             isCondensed: !0,
                             onPress: (e) => {
-                                R.ZP.isTwitterApp();
+                                P.ZP.isTwitterApp();
                             },
                             tweetId: e,
                             withBirdwatchPivot: !1,
@@ -836,75 +852,92 @@
                             withUserHoverCard: !1,
                         }),
                     ),
-                H = s.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, avatarContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.infinite, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, avatar: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } })),
-                B = (e) => {
+                B = s.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, avatarContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.infinite, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, avatar: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } })),
+                D = (e) => {
                     const t = e.match(/https:\/\/x\.com(?:\/[^\/]+)*\/status\/(\d+)/);
                     return t ? t[1] : void 0;
                 },
                 z = { label: c().dc0c8266 },
-                D = /^https?:\/\/x\.com\/(?!home|explore|notifications|messages|bookmarks|lists|more)(\w+[-\w]*)?\/?$/,
-                A = /https:\/\/x\.com\/.*\?text=([^&]*)/;
-            const U = ["http:", "https:"],
-                F = (e) => {
+                A = /^https?:\/\/x\.com\/(?!home|explore|notifications|messages|bookmarks|lists|more)(\w+[-\w]*)?\/?$/,
+                U = /https:\/\/x\.com\/.*\?text=([^&]*)/;
+            const F = ["http:", "https:"],
+                O = "grok:render:card_id=",
+                W = (e) => {
                     e && e._textRef && e._textRef && (e._textRef.dataset.copyPreserve = "1");
                 };
-            function O({ token: e }) {
-                const { citations: t } = o.useContext(y.$),
-                    n = (0, m.z)(),
-                    s = (0, u.I0)(),
-                    [l, c] = o.useState(!1),
-                    f = o.useMemo(
-                        () =>
-                            (function (e) {
-                                const t = e.match(D);
-                                return t ? t[1] : void 0;
-                            })(e.href || ""),
-                        [e.href],
-                    ),
-                    k = o.useMemo(
+            function K({ token: e }) {
+                const { cardAttachments: t, citations: n, enableFaviconDownload: s } = o.useContext(f.$),
+                    l = (0, m.z)(),
+                    c = (0, u.I0)(),
+                    [k, b] = o.useState(!1);
+                let C = e.href;
+                const w = o.useMemo(
                         () =>
                             (function (e) {
                                 const t = e.match(A);
                                 return t ? t[1] : void 0;
-                            })(e.href || ""),
-                        [e.href],
+                            })(C || ""),
+                        [C],
                     ),
-                    C = t.find((t) => t.url === e.href),
-                    b = (0, d.hC)("responsive_web_grok_show_citations"),
-                    E = (0, p.eX)(),
-                    w = o.useCallback(
+                    v = o.useMemo(
+                        () =>
+                            (function (e) {
+                                const t = e.match(U);
+                                return t ? t[1] : void 0;
+                            })(C || ""),
+                        [C],
+                    ),
+                    E = o.useMemo(() => {
+                        if (C && C.startsWith(O)) {
+                            const e = /card_id=([a-zA-Z0-9]+)/,
+                                n = C.match(e),
+                                o = n ? n[1] : null,
+                                a = t?.find((e) => e.id === o);
+                            if (a && "citation_card" === a.cardType) {
+                                const e = a.url;
+                                return { url: e, favicon: s ? (0, g.TK)(e) : void 0 };
+                            }
+                            return null;
+                        }
+                        return n.find((e) => e.url === C);
+                    }, [t, n, C, s]);
+                E?.url && (C = E.url);
+                const x = (0, d.hC)("responsive_web_grok_show_citations"),
+                    Z = (0, h.eX)(),
+                    _ = o.useCallback(
                         (e) => {
-                            e.preventDefault(), k && (n.scribe({ element: "annotation_text_link", action: "click" }), s((0, g.u)({ analytics: n, conversationKey: E })({ text: decodeURIComponent(k), returnCitations: b })));
+                            e.preventDefault(), v && (l.scribe({ element: "annotation_text_link", action: "click" }), c((0, p.u)({ analytics: l, conversationKey: Z })({ text: decodeURIComponent(v), returnCitations: x })));
                         },
-                        [k, E, n, s, b],
+                        [v, Z, l, c, x],
                     );
-                let v;
+                if (C && C.startsWith(O) && !E) return null;
+                let I;
                 try {
-                    e.href && (v = new URL(e.href));
+                    C && (I = new URL(C));
                 } catch (e) {}
-                if (!v || !U.includes(v.protocol)) {
+                if (!I || !F.includes(I.protocol)) {
                     let t;
-                    return (t = e.text === e.href ? e.text : !e.text && e.href && C ? `(${e.href})` : `${e.text} ${e.href ? `(${e.href})` : ""}`), o.createElement(a.ZP, null, t);
+                    return (t = e.text === C ? e.text : !e.text && C && E ? `(${C})` : `${e.text} ${C ? `(${C})` : ""}`), o.createElement(a.ZP, null, t);
                 }
-                const x = (0, h.TP)(e.raw) || (0, h.sN)(e.raw);
-                if (e.href && (!e.text || x)) {
-                    if (C) return o.createElement(_, { link: C });
-                    const t = B(e.href);
-                    if (t) return o.createElement(L, { postId: t });
+                const R = (0, y.TP)(e.raw) || (0, y.sN)(e.raw);
+                if (C && (!e.text || R)) {
+                    if (E) return o.createElement(S, { link: E });
+                    const e = D(C);
+                    if (e) return o.createElement($, { postId: e });
                 }
-                return k
-                    ? o.createElement(a.ZP, { hoverLabel: z, link: e.href, onClick: w, onMouseEnter: () => c(!0), onMouseLeave: () => c(!1), style: [W.expandedLineHeight, W.promptLink, l && W.hoverStyle], withInteractiveStyling: !1 }, e.text)
-                    : f
+                return v
+                    ? o.createElement(a.ZP, { hoverLabel: z, link: C, onClick: _, onMouseEnter: () => b(!0), onMouseLeave: () => b(!1), style: [N.expandedLineHeight, N.promptLink, k && N.hoverStyle], withInteractiveStyling: !1 }, e.text)
+                    : w
                       ? o.createElement(
                             r.Z,
-                            { screenName: f },
-                            o.createElement(i.Z, null, ({ isHovered: t }) => o.createElement(a.ZP, { link: e.href, style: [W.link, t && W.hoveredLink], withInteractiveStyling: !1 }, e.text)),
+                            { screenName: w },
+                            o.createElement(i.Z, null, ({ isHovered: t }) => o.createElement(a.ZP, { link: C, style: [N.link, t && N.hoveredLink], withInteractiveStyling: !1 }, e.text)),
                         )
-                      : o.createElement(i.Z, null, ({ isHovered: t }) => o.createElement(a.ZP, { link: e.href, ref: F, style: [W.link, t && W.hoveredLink], withInteractiveStyling: !1 }, e.text));
+                      : o.createElement(i.Z, null, ({ isHovered: t }) => o.createElement(a.ZP, { link: C, ref: W, style: [N.link, t && N.hoveredLink], withInteractiveStyling: !1 }, e.text));
             }
-            const W = s.default.create((e) => {
+            const N = s.default.create((e) => {
                 const t = "light" === s.default.theme.paletteName ? 0.2 : 0.33;
-                return { expandedLineHeight: { lineHeight: f.Y }, hoverStyle: { color: e.colors.blue600, shadowColor: e.colors.blue600, animationKeyframes: [{ "0%": { shadowOpacity: t, color: e.colors.gray900, shadowColor: e.colors.gray900 }, "100%": { color: e.colors.blue600, shadowColor: e.colors.blue600, shadowOpacity: 1 } }], textDecorationLine: "none", shadowOffset: { width: 0, height: 1 }, animationDuration: "0.25s", shadowOpacity: 1, shadowRadius: 0 }, promptLink: { animationKeyframes: [{ "0%": { color: e.colors.text, shadowColor: "transparent" }, "100%": { color: e.colors.gray900, shadowColor: e.colors.gray900, shadowOpacity: t } }], animationDuration: "2s", color: e.colors.gray900, cursor: "pointer", textDecorationLine: "none", shadowColor: e.colors.gray900, shadowOffset: { width: 0, height: 1 }, shadowOpacity: t, shadowRadius: 0 }, link: { color: e.colors.brandColor, textDecorationLine: "underline", textDecorationColor: e.colors.gray600, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease-out", animationFillMode: "both" }, hoveredLink: { textDecorationColor: e.colors.brandColor } };
+                return { expandedLineHeight: { lineHeight: k.Y }, hoverStyle: { color: e.colors.blue600, shadowColor: e.colors.blue600, animationKeyframes: [{ "0%": { shadowOpacity: t, color: e.colors.gray900, shadowColor: e.colors.gray900 }, "100%": { color: e.colors.blue600, shadowColor: e.colors.blue600, shadowOpacity: 1 } }], textDecorationLine: "none", shadowOffset: { width: 0, height: 1 }, animationDuration: "0.25s", shadowOpacity: 1, shadowRadius: 0 }, promptLink: { animationKeyframes: [{ "0%": { color: e.colors.text, shadowColor: "transparent" }, "100%": { color: e.colors.gray900, shadowColor: e.colors.gray900, shadowOpacity: t } }], animationDuration: "2s", color: e.colors.gray900, cursor: "pointer", textDecorationLine: "none", shadowColor: e.colors.gray900, shadowOffset: { width: 0, height: 1 }, shadowOpacity: t, shadowRadius: 0 }, link: { color: e.colors.brandColor, textDecorationLine: "underline", textDecorationColor: e.colors.gray600, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease-out", animationFillMode: "both" }, hoveredLink: { textDecorationColor: e.colors.brandColor } };
             });
         },
         444342: (e, t, n) => {
@@ -1033,4 +1066,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-63cb1cc4.f1d52fda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-63cb1cc4.e83b98ba.js.map

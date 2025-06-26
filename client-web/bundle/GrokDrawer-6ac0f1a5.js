@@ -3,7 +3,7 @@
     ["bundle.GrokDrawer-6ac0f1a5"],
     {
         187268: (e, a, n) => {
-            n.d(a, { CK: () => M, Ez: () => D, QK: () => g, Sd: () => k, eC: () => y, ky: () => m, w$: () => _ });
+            n.d(a, { Ez: () => g, QK: () => k, Sd: () => y, eC: () => M, j: () => _, jU: () => x, ky: () => b, w$: () => v });
             n(543673), n(240753), n(128399);
             var r = n(202784),
                 o = n(392237),
@@ -13,19 +13,20 @@
                 s = n(913315),
                 i = n(355586),
                 c = n(14284),
-                u = n(492244),
-                h = n(397159);
-            const m = { CodeExecution: "code_execution", BrowsePage: "browse_page", XSearch: "x_search", WebSearch: "web_search", XKeywordSearch: "x_keyword_search", XSemanticSearch: "x_semantic_search", XUserSearch: "x_user_search", GetXUserTimeline: "get_x_user_timeline" },
-                b = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
-                p = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
-                f = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
-                w = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
-            function D(e) {
-                return e.replace(b, (e) => {
+                u = n(976898),
+                h = n(492244),
+                m = n(397159);
+            const b = Object.freeze({ CodeExecution: "code_execution", BrowsePage: "browse_page", XSearch: "x_search", WebSearch: "web_search", XKeywordSearch: "x_keyword_search", XSemanticSearch: "x_semantic_search", XUserSearch: "x_user_search", GetXUserTimeline: "get_x_user_timeline", WebSearchWithSnippets: "web_search_with_snippets" }),
+                p = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
+                f = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
+                w = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
+                D = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
+            function g(e) {
+                return e.replace(p, (e) => {
                     const a = (function (e) {
-                        const a = e.match(p),
-                            n = e.match(f),
-                            r = e.match(w),
+                        const a = e.match(f),
+                            n = e.match(w),
+                            r = e.match(D),
                             o = a ? a[1] : "",
                             d = n ? n[1] : "",
                             t = r ? r[1] : "";
@@ -35,8 +36,8 @@
                     return a ?? e;
                 });
             }
-            function g(e) {
-                const a = e.match(b);
+            function k(e) {
+                const a = e.match(p);
                 if (a) {
                     const {
                         args: e,
@@ -46,19 +47,19 @@
                         let a = "",
                             n = "",
                             r = "";
-                        const o = e.match(w);
+                        const o = e.match(D);
                         o && (a = o[1]);
-                        const d = e.match(p);
+                        const d = e.match(f);
                         d && (n = d[1]);
-                        const t = e.match(f);
+                        const t = e.match(w);
                         t && (r = t[1].trim());
                         return { id: a, name: n, args: r };
                     })(a[0]);
-                    return k(n, r, e);
+                    return y(n, r, e);
                 }
                 return null;
             }
-            function k(e, a, n) {
+            function y(e, a, n) {
                 const r = n.match(/^<!\[CDATA\[(.*?)\]\]>/ms);
                 let o = {};
                 if (r)
@@ -69,53 +70,77 @@
                     }
                 return { id: e, name: a, args: o };
             }
-            const y = "Using tools";
-            function M(e) {
+            const M = "Using tools";
+            function _(e) {
                 switch (e.name) {
-                    case m.WebSearch:
-                        return h.XR.WebSearchQueryFormatter({ query: e.args.query });
-                    case m.XSearch:
-                    case m.XKeywordSearch:
-                    case m.XSemanticSearch:
-                        return h.XR.XSearchQueryFormatter({ query: e.args.query });
-                    case m.XUserSearch:
-                        return h.XR.XUserSearchFormatter({ query: e.args.query });
-                    case m.BrowsePage: {
+                    case b.WebSearch:
+                    case b.WebSearchWithSnippets:
+                        return m.uk.WebSearchQueryFormatter({ query: e.args.query });
+                    case b.XSearch:
+                    case b.XKeywordSearch:
+                    case b.XSemanticSearch:
+                        return m.uk.XSearchQueryFormatter({ query: e.args.query });
+                    case b.XUserSearch:
+                        return m.uk.XUserSearchFormatter({ query: e.args.query });
+                    case b.BrowsePage: {
                         let a = e.args.url || "";
                         try {
                             a = new URL(a).hostname.replace("www.", "");
                         } catch (e) {}
-                        return e.args.query ? h.XR.GenericURLQueryFormatter({ url: a, query: e.args.query }) : h.XR.BrowsePageFormatter({ url: a });
+                        return e.args.query ? m.uk.GenericURLQueryFormatter({ url: a, query: e.args.query }) : m.uk.BrowsePageFormatter({ url: a });
                     }
-                    case m.GetXUserTimeline:
-                        return h.XR.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
-                    case m.CodeExecution:
-                        return h.XR.CodeExecutionFormatter({ ttc_tool_usage_card: "" });
+                    case b.GetXUserTimeline:
+                        return m.uk.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
+                    case b.CodeExecution:
+                        return m.uk.CodeExecutionFormatter({ ttc_tool_usage_card: "" });
                     default:
-                        return e.name ?? y;
+                        return e.name ?? M;
                 }
             }
-            function _(e) {
-                const a = { style: { width: o.default.theme.spaces.space16, height: o.default.theme.spaces.space16 } };
+            function x(e) {
+                switch (e.name) {
+                    case b.WebSearch:
+                    case b.WebSearchWithSnippets:
+                        return m.B2.WebSearchQueryFormatter;
+                    case b.XSearch:
+                    case b.XKeywordSearch:
+                    case b.XSemanticSearch:
+                        return m.B2.XSearchQueryFormatter;
+                    case b.XUserSearch:
+                        return m.B2.XUserSearchFormatter;
+                    case b.BrowsePage:
+                        return m.B2.BrowsePageFormatter;
+                    case b.GetXUserTimeline:
+                        return m.B2.XUsernameQuerySearchFormatter;
+                    case b.CodeExecution:
+                        return m.B2.CodeExecutionFormatter;
+                    default:
+                        return e.name ?? M;
+                }
+            }
+            function v(e, a) {
+                const n = { style: { width: a || o.default.theme.spaces.space16, height: a || o.default.theme.spaces.space16 } };
                 switch (e) {
                     case "search_news":
-                        return r.createElement(d.default, a);
+                        return r.createElement(d.default, n);
                     case "web_search":
-                        return r.createElement(t.default, a);
+                        return r.createElement(t.default, n);
                     case "x_search":
                     case "get_x_user_timeline":
                     case "x_keyword_search":
                     case "x_semantic_search":
                     case "x_user_search":
-                        return r.createElement(l.default, a);
+                        return r.createElement(l.default, n);
                     case "call_finance_api":
-                        return r.createElement(s.default, a);
+                        return r.createElement(s.default, n);
                     case "call_sports_api":
-                        return r.createElement(i.default, a);
+                        return r.createElement(i.default, n);
                     case "browse_page":
-                        return r.createElement(c.default, a);
+                        return r.createElement(c.default, n);
+                    case "code_execution":
+                        return r.createElement(u.default, n);
                     default:
-                        return r.createElement(u.default, a);
+                        return r.createElement(h.default, n);
                 }
             }
         },
@@ -148,39 +173,39 @@
             var S = n(731708),
                 E = n(111677),
                 C = n.n(E),
-                G = n(952793),
-                I = n(389071),
-                P = n(189953);
+                P = n(952793),
+                G = n(389071),
+                I = n(189953);
             function N({ children: e, size: a, weight: n }) {
                 return o.createElement(d.Z, { style: T.container }, o.createElement(S.ZP, { size: a, style: T.label, weight: n || "normal" }, o.createElement("span", null, e)));
             }
             const T = y.default.create((e) => ({ container: { position: "relative", width: "fit-content", animationDuration: "0.3s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, label: { color: e.colors.transparent, backgroundColor: e.colors.gray600, backgroundImage: `linear-gradient(to right, ${e.colors.gray600} 0%, ${e.colors.gray900} 20%, ${e.colors.gray500} 40%, ${e.colors.gray600} 100%)`, opacity: 1, display: "inline-block", backgroundClip: "text", animationDuration: "0.7s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { backgroundPositionX: "-2em" }, "100%": { backgroundPositionX: "7em" } }] } })),
                 R = C().h5860a68,
                 Z = C().ed93de0c,
-                X = C().d1d92e40;
-            function B() {
-                const e = (0, G.hC)("responsive_web_grok_analyze_animation"),
-                    a = (0, b.v9)(I.Es),
-                    n = (0, I.f)({ conversationKey: a }),
+                B = C().d1d92e40;
+            function X() {
+                const e = (0, P.hC)("responsive_web_grok_analyze_animation"),
+                    a = (0, b.v9)(G.Es),
+                    n = (0, G.f)({ conversationKey: a }),
                     r = -1 !== (0, b.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
                     t = (0, b.v9)(n.selectStatus),
-                    l = t === P.Q_.TYPING || t === P.Q_.WAITING;
-                return o.createElement(d.Z, { style: O.titleTextRoot }, r && e ? (l ? o.createElement(N, { size: "headline2", weight: "bold" }, `${Z}...`) : o.createElement(S.ZP, { size: "headline2", style: O.animation }, X)) : o.createElement(S.ZP, null, R));
+                    l = t === I.Q_.TYPING || t === I.Q_.WAITING;
+                return o.createElement(d.Z, { style: F.titleTextRoot }, r && e ? (l ? o.createElement(N, { size: "headline2", weight: "bold" }, `${Z}...`) : o.createElement(S.ZP, { size: "headline2", style: F.animation }, B)) : o.createElement(S.ZP, null, R));
             }
-            const O = y.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
+            const F = y.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(136728);
-            var F = n(154003),
-                W = n(715614),
-                L = n(530243),
-                J = n(52735),
-                U = n(487552),
-                H = n(899667),
-                $ = n(917270),
-                j = n(807901);
-            const q = C().fbc79f6a,
-                z = C().a6e89af8,
-                K = C().d227d19e,
-                Q = C().j7d0e836,
+            var W = n(154003),
+                O = n(715614),
+                U = n(530243),
+                L = n(52735),
+                J = n(487552),
+                j = n(899667),
+                H = n(917270),
+                $ = n(807901);
+            const z = C().fbc79f6a,
+                q = C().a6e89af8,
+                Q = C().d227d19e,
+                K = C().j7d0e836,
                 Y = C().ica55d24,
                 V = { label: Y };
             function ee({ conversationUrl: e, handleToggleVisibility: a, isExpanded: n, onClose: r }) {
@@ -189,8 +214,8 @@
                     c = o.useCallback(() => {
                         e && (l.push(e), a());
                     }, [a, e, l]),
-                    { canClearConversation: u, handleClearConversationClickWithoutNav: h } = (0, j.Z)();
-                return o.createElement(d.Z, { style: ae.rightControls }, o.createElement(F.ZP, { "aria-label": q, hoverLabel: { label: q }, icon: o.createElement(W.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: () => i(!0), type: "primaryText" }), n && e && o.createElement(F.ZP, { "aria-label": z, hoverLabel: { label: z }, icon: o.createElement(L.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: c, type: "primaryText" }), n && u && o.createElement(F.ZP, { "aria-label": Y, disabled: !u, hoverLabel: V, icon: o.createElement(J.default, { style: ae.composeIcon }), onPress: h, type: "primaryText" }), n && o.createElement(F.ZP, { "aria-label": K, hoverLabel: { label: K }, icon: o.createElement(U.default, null), onPress: a, type: "primaryText" }), !n && o.createElement(F.ZP, { "aria-label": Q, hoverLabel: { label: Q }, icon: o.createElement(H.default, null), onPress: a, type: "primaryText" }), s ? o.createElement($.O, { onDrawerDismiss: () => i(!1) }) : null);
+                    { canClearConversation: u, handleClearConversationClickWithoutNav: h } = (0, $.Z)();
+                return o.createElement(d.Z, { style: ae.rightControls }, o.createElement(W.ZP, { "aria-label": z, hoverLabel: { label: z }, icon: o.createElement(O.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: () => i(!0), type: "primaryText" }), n && e && o.createElement(W.ZP, { "aria-label": q, hoverLabel: { label: q }, icon: o.createElement(U.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: c, type: "primaryText" }), n && u && o.createElement(W.ZP, { "aria-label": Y, disabled: !u, hoverLabel: V, icon: o.createElement(L.default, { style: ae.composeIcon }), onPress: h, type: "primaryText" }), n && o.createElement(W.ZP, { "aria-label": Q, hoverLabel: { label: Q }, icon: o.createElement(J.default, null), onPress: a, type: "primaryText" }), !n && o.createElement(W.ZP, { "aria-label": K, hoverLabel: { label: K }, icon: o.createElement(j.default, null), onPress: a, type: "primaryText" }), s ? o.createElement(H.O, { onDrawerDismiss: () => i(!1) }) : null);
             }
             const ae = y.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function ne({ conversationUrl: e }) {
@@ -210,7 +235,7 @@
                     d.Z,
                     { ref: a, style: [re.headerRoot, !r && re.headerBorderClosed, re.cursor], testID: A.header },
                     r
-                        ? o.createElement(k.Z, { onMiddleControlClick: l, rightControl: o.createElement(ee, { conversationUrl: e, handleToggleVisibility: l, isExpanded: r, onClose: s }), style: re.roundedAppBarCorners, title: o.createElement(d.Z, { style: re.titleContainer }, o.createElement(M.x1, null), o.createElement(B, null)) })
+                        ? o.createElement(k.Z, { onMiddleControlClick: l, rightControl: o.createElement(ee, { conversationUrl: e, handleToggleVisibility: l, isExpanded: r, onClose: s }), style: re.roundedAppBarCorners, title: o.createElement(d.Z, { style: re.titleContainer }, o.createElement(M.x1, null), o.createElement(X, null)) })
                         : o.createElement(
                               g.Z,
                               {
@@ -228,24 +253,27 @@
             const de = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.0"),
                         n.e("icons.5"),
-                        n.e("icons.12"),
+                        n.e("icons.25"),
+                        n.e("icons.22"),
+                        n.e("icons.6"),
+                        n.e("icons.4"),
+                        n.e("icons.9"),
+                        n.e("icons.15"),
+                        n.e("icons.7"),
+                        n.e("icons.3"),
                         n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.21"),
-                        n.e("icons.28"),
-                        n.e("icons.10"),
-                        n.e("icons.17"),
-                        n.e("icons.9"),
-                        n.e("icons.23"),
+                        n.e("icons.18"),
+                        n.e("icons.27"),
+                        n.e("icons.13"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
+                        n.e("icons.0"),
                         n.e("icons.24"),
-                        n.e("icons.14"),
-                        n.e("icons.25"),
-                        n.e("icons.13"),
+                        n.e("icons.17"),
+                        n.e("icons.12"),
+                        n.e("icons.11"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -256,24 +284,22 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.6"),
-                        n.e("icons.3"),
-                        n.e("icons.4"),
-                        n.e("icons.1"),
+                        n.e("icons.10"),
                         n.e("icons.8"),
-                        n.e("icons.18"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
+                        n.e("icons.26"),
+                        n.e("icons.19"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -291,6 +317,7 @@
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -342,10 +369,8 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-54234235"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e96e9bea"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-fc794e30"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6ac0f1a5"),
                         n.e("shared~bundle.Grok~loader.Markdown-6107ac1a"),
@@ -373,6 +398,7 @@
                         n.e("bundle.Grok-1d830d6b"),
                         n.e("bundle.Grok-7bc92c09"),
                         n.e("bundle.Grok-f8a31592"),
+                        n.e("bundle.Grok-bd027025"),
                         n.e("bundle.Grok-7a6ce5c4"),
                         n.e("bundle.Grok-cebf58fc"),
                         n.e("bundle.Grok-29bebf45"),
@@ -652,7 +678,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => b, G$: () => l, HO: () => A, HR: () => G, JO: () => w, Jm: () => x, NH: () => I, RC: () => f, S7: () => C, UV: () => N, Uk: () => M, YI: () => c, YW: () => E, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => m, eS: () => _, eV: () => v, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => S, y6: () => u, zC: () => P, zX: () => T });
+            n.d(a, { DE: () => b, G$: () => l, HO: () => A, HR: () => P, JO: () => w, Jm: () => x, NH: () => G, RC: () => f, S7: () => C, UV: () => N, Uk: () => M, YI: () => c, YW: () => E, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => m, eS: () => _, eV: () => v, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => S, y6: () => u, zC: () => I, zX: () => T });
             var r = n(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -732,13 +758,13 @@
             function C(e, a) {
                 Z(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant }) } });
             }
-            function G(e, a, n) {
+            function P(e, a, n) {
                 Z(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant, followUpText: n }) } });
             }
-            function I(e) {
+            function G(e) {
                 Z(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
-            function P(e, a) {
+            function I(e, a) {
                 Z(e)({ element: "grok-memory-detail", action: "click", data: { event_info: a } });
             }
             function N(e, a) {
@@ -756,4 +782,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.774936aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.def8faea.js.map

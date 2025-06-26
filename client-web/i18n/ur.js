@@ -1321,6 +1321,11 @@
                 o("a02d1657", function (e) {
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
+                o("aa9d42c0", "Searching the web"),
+                o("dce1817a", "Searching on 𝕏"),
+                o("f7151564", "Searching users on 𝕏"),
+                o("c43ef93e", "Browsing web page"),
+                o("jb097f6e", "Executing code"),
                 o("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 o("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
                 o("e0481e5a", "Grok is not supported in your country at this time."),
@@ -1914,10 +1919,10 @@
                 o("aefd89c8", "نیویگیشن"),
                 o("cafdefb2", "کارروائیاں"),
                 o("dda42cf2", "کالمز اور Decks"),
-                o("e8a12604", "کیپشن فراہم کریں (اختیاری)"),
-                o("eabf2209", function (e) {
-                    return e.providerName + " کا فراہم کردہ GIF";
-                }),
+                o("e8a12604", "کیپشن فراہم کریں (اختیاری)");
+            o("eabf2209", function (e) {
+                return e.providerName + " کا فراہم کردہ GIF";
+            }),
                 o("a613e720", "GIF کا لنک کاپی کریں"),
                 o("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -1927,8 +1932,8 @@
                 }),
                 o("ad89b831", function (e) {
                     return "active" + e.ttc_rich_text_composer;
-                });
-            o("jcd5ee8a", "Edit block"),
+                }),
+                o("jcd5ee8a", "Edit block"),
                 o("a8f09fb8", "Delete block"),
                 o("i89195ea", "Divider"),
                 o("da8ac57c", "Edit Caption"),
@@ -2974,13 +2979,13 @@
                 o("a078ff70", "اس تھریڈ میں آپ نے جن سے تعامل کیا ہے کیا آپ ان کا مزید مواد دیکھنا چاہتے ہیں؟ نئے اکاؤنٹس سے مواد تلاش کرنا شروع کریں۔"),
                 o("cb80300e", "ہوم ٹائم لائن پر جائیں"),
                 o("ea5cd098", "ٹرینڈنگ پر جائیں"),
-                o("c67e3fc2", "ہوم ٹائم لائن"),
-                o("d601fc20", "تازہ ترین"),
+                o("c67e3fc2", "ہوم ٹائم لائن");
+            o("d601fc20", "تازہ ترین"),
                 o("j43f99be", "Relevancy"),
                 o("ad6e11ac", "Sort replies by"),
                 o("b2311b70", "یہ آپ کے لیے دستیاب نہیں ہے"),
-                o("j88f27d8", "متعلقہ لوگ");
-            o("i31dcd22", "مضمون"),
+                o("j88f27d8", "متعلقہ لوگ"),
+                o("i31dcd22", "مضمون"),
                 o("e3de2f6f", function (e) {
                     return e.entity + " was added to your Bookmarks";
                 }),
@@ -3896,10 +3901,10 @@
                 }),
                 o("fc56c8b1", function (e) {
                     return "co-host" + r(e.count, "", "s");
-                }),
-                o("iba0f45d", function (e) {
-                    return "speaker" + r(e.count, "", "s");
-                }),
+                });
+            o("iba0f45d", function (e) {
+                return "speaker" + r(e.count, "", "s");
+            }),
                 o("dc066955", function (e) {
                     return "listener" + r(e.count, "", "s");
                 }),
@@ -3909,8 +3914,8 @@
                 o("c3b5b829", function (e) {
                     return e.count + " request" + r(e.count, "", "s");
                 }),
-                o("fe7a1910", "Send invites");
-            o("ic3c757e", "Search for users"),
+                o("fe7a1910", "Send invites"),
+                o("ic3c757e", "Search for users"),
                 o("cd133486", "مدعو کریں"),
                 o("f2333850", "Share with people outside of X"),
                 o("cddb8097", "Learn more"),
@@ -4342,7 +4347,6 @@
                 o("db832e38", "Please enable notifications in browser settings"),
                 o("a910cac6", "There was an issue enabling notifications"),
                 o("be30b6ee", "Unstable connection"),
-                o("ge15b488", "Show thoughts"),
                 o("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
@@ -4358,6 +4362,10 @@
                 }),
                 o("a15d62db", function (e) {
                     return "Thought for " + e.seconds + "s";
+                }),
+                o("f26fc748", "Script"),
+                o("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 o("ha8fbe22", "Generate more images with Premium"),
                 o("d95c232a", "You’ve reached your limit. Upgrade now to generate more."),
@@ -4927,14 +4935,14 @@
                 o("ff95a9cc", "Video ID"),
                 o("a97e358e", "Video Link"),
                 o("e10e8b46", "Only showing the videos from the last 100 days."),
-                o("ba37f6da", "Video overview"),
-                o("f19846b2", "Video thumbnail"),
+                o("ba37f6da", "Video overview");
+            o("f19846b2", "Video thumbnail"),
                 o("ccd6f4a8", "Video title"),
                 o("c8410542", "The number of times your video was viewed."),
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
-                o("d9f9dec0", "View Space");
-            o("h0c1f37a", "View Space Analytics"),
+                o("d9f9dec0", "View Space"),
+                o("h0c1f37a", "View Space Analytics"),
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
@@ -5879,16 +5887,16 @@
                 o("af781666", "What do people think?"),
                 o("a1f414ee", "Share thoughts"),
                 o("ed88e742", "موضوع ی لنک کو کاپی کریں"),
-                o("h92fe1be", "بدقسمتی سے، اس وقت کمیونٹی نوٹس آپ کیلئے دستیاب نہیں ہیں۔"),
-                o("f0dc1434", "کمیونٹٰی نوٹس فی الحال صرف امریکہ میں دستیاب ہیں"),
+                o("h92fe1be", "بدقسمتی سے، اس وقت کمیونٹی نوٹس آپ کیلئے دستیاب نہیں ہیں۔");
+            o("f0dc1434", "کمیونٹٰی نوٹس فی الحال صرف امریکہ میں دستیاب ہیں"),
                 o("f8fc0b48", "فولڈر بنائیں"),
                 o("c14bcdde", "بک مارکس تلاش کریں"),
                 o("e9c65c4a", "Bookmarks search"),
                 o("b92a21d9", function (e) {
                     return e.query + " کے لیے  کوئی نتائج نہیں";
                 }),
-                o("f191a2ba", "تلاش کی ترتیبات");
-            o("a068008a", "Folders aren`t loading right now"),
+                o("f191a2ba", "تلاش کی ترتیبات"),
+                o("a068008a", "Folders aren`t loading right now"),
                 o("f075b0e8", "فولڈر میں ترمیم کریں"),
                 o("beba2a0e", "بک مارک کا نیا فولڈر بنائيں"),
                 o("e41c9b4f", function (e) {
@@ -6885,18 +6893,18 @@
                 o("b8cbb51a", "Job Summary"),
                 o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
-                o("d4b6a6e0", "پروفائل اسپاٹ لائٹ"),
-                o("j2dd3686", "Highlight featured jobs above my posts."),
+                o("d4b6a6e0", "پروفائل اسپاٹ لائٹ");
+            o("j2dd3686", "Highlight featured jobs above my posts."),
                 o("af1cfd46", "ATS integration"),
                 o("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 o("h99f11fa", "Delete integration"),
                 o("eef1ae76", "Currently connected"),
                 o("a915f5c1", function (e) {
                     return e.ats + " connected";
-                });
-            o("af7286b7", function (e) {
-                return e.percentage + "% off a year of Premium";
-            }),
+                }),
+                o("af7286b7", function (e) {
+                    return e.percentage + "% off a year of Premium";
+                }),
                 o("c924ad84", "Keep videos playing"),
                 o("de750a3c", "Enjoy them even when your phone is locked"),
                 o("he5e87c4", "Boost your replies"),
@@ -7867,15 +7875,7 @@
                 o("b74ff5fc", "اگر آپ منسوخ کرتے ہیں، تو آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔"),
                 o("ee9efbc8", "کینسلیشن جاری رکھیں"),
                 o("c5d9c77a", "لگتا ہے ہلکی سی آواڑ آئی ہے۔ پریشان نہ ہوں، یہ آپ کی غلطی نہیں ہے۔ اس ونڈو کو بند کریں اور دوبارہ کوشش کریں۔"),
-                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
-                o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
-                o("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                o("a76d58ba", "Ads Analytics"),
-                o("eccd0e1a", "Organization Analytics"),
-                o("deea1708", "Want to view analytics across all your X accounts?"),
-                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7914,7 +7914,15 @@
                     c(e, t)
                 );
             }
-            o("gf67aae4", "Upgrade to Full Access"),
+            o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
+                o("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                o("a76d58ba", "Ads Analytics"),
+                o("eccd0e1a", "Organization Analytics"),
+                o("deea1708", "Want to view analytics across all your X accounts?"),
+                o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                o("gf67aae4", "Upgrade to Full Access"),
                 o("h75e3618", "Include organization"),
                 o("h24a8862", "About this checkbox"),
                 o("c29e3a88", "Select affiliates"),
@@ -8907,16 +8915,16 @@
                     return e.advertiserName + " ملاحظہ کریں";
                 }),
                 o("c67e71aa", "ابھی دیکھیں"),
-                o("a6ada13e", "Shop now"),
-                o("j0f12222", "مزید دیکھیں"),
+                o("a6ada13e", "Shop now");
+            o("j0f12222", "مزید دیکھیں"),
                 o("f569f7c8", "ویب سائٹ پر جائیں"),
                 o("j0c6772a", "ویب سائٹ ملاحظہ کریں"),
                 o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
                 o("b3112b8a", "چھوڑ دیں"),
-                o("h6333ad0", "اشتہار چھوڑیں");
-            o("c59da417", function (e) {
-                return e.seconds + " میں اشتہار نظر انداز کریں";
-            }),
+                o("h6333ad0", "اشتہار چھوڑیں"),
+                o("c59da417", function (e) {
+                    return e.seconds + " میں اشتہار نظر انداز کریں";
+                }),
                 o("c3c147cf", function (e) {
                     return e.seconds + " کو نظر انداز کریں";
                 }),
@@ -13357,4 +13365,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.ff96fc0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.6b55e6fa.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconEye-js"],
+    ["shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler", "icons/IconDraggable-js"],
     {
         625661: (e, t, n) => {
             n.d(t, { ZP: () => m });
@@ -602,9 +602,9 @@
                 V = m().fc2a5c92,
                 N = m().f9cecf48,
                 j = m().bf7bdb60,
-                z = m().h27d6950,
-                O = m().b02360f6,
-                U = Object.freeze({ joinAvailable: "CommunityJoinAction", joinUnavailable: "CommunityJoinActionUnavailable", leaveAvailable: "CommunityLeaveAction", leaveUnavailable: "CommunityLeaveActionUnavailable" }),
+                O = m().h27d6950,
+                U = m().b02360f6,
+                z = Object.freeze({ joinAvailable: "CommunityJoinAction", joinUnavailable: "CommunityJoinActionUnavailable", leaveAvailable: "CommunityLeaveAction", leaveUnavailable: "CommunityLeaveActionUnavailable" }),
                 H = Object.freeze({ Unavailable: "Unavailable", ViewerNotMember: "ViewerNotMember", ViewerIsSoleAdmin: "ViewerIsSoleAdmin" }),
                 q = Object.freeze({ Unavailable: "Unavailable", ViewerIsMember: "ViewerIsMember", ViewerIsRemoved: "ViewerIsRemoved", ViewerNotInvited: "ViewerNotInvited", ViewerIsProtected: "ViewerIsProtected", ViewerRequestPending: "ViewerRequestPending", ViewerJoinRequestRequired: "ViewerRequestRequired" });
             const W = m().e6057014,
@@ -630,9 +630,9 @@
                                         s = (e) => ({ canAction: !1, message: e }),
                                         c = s({ headline: N, text: j });
                                     switch (r) {
-                                        case U.joinAvailable:
+                                        case z.joinAvailable:
                                             return l();
-                                        case U.joinUnavailable:
+                                        case z.joinUnavailable:
                                             switch (a) {
                                                 case q.ViewerIsRemoved:
                                                     return s({ headline: T, text: i.createElement(M, { offendingRule: n?.name }) });
@@ -659,10 +659,10 @@
                                     r = (e) => ({ canAction: !1, message: e }),
                                     i = r({ headline: V, text: j });
                                 switch (t) {
-                                    case U.leaveAvailable:
+                                    case z.leaveAvailable:
                                         return { canAction: !0, message: o };
-                                    case U.leaveUnavailable:
-                                        return n === H.ViewerIsSoleAdmin ? r({ headline: z, text: O }) : i;
+                                    case z.leaveUnavailable:
+                                        return n === H.ViewerIsSoleAdmin ? r({ headline: O, text: U }) : i;
                                     default:
                                         return i;
                                 }
@@ -738,18 +738,18 @@
                         { featureSwitches: F } = r.useContext(b.rC),
                         N = F.getNumberValue("c9s_max_community_answer_length", 280),
                         j = F.isTrue("c9s_community_answer_box_join_page_enabled"),
-                        z = e.communityId || w.params.communityId,
-                        O = "ViewerRequestRequired" === t?.actions?.join_action_result?.reason,
-                        [U, H] = r.useState(!1);
+                        O = e.communityId || w.params.communityId,
+                        U = "ViewerRequestRequired" === t?.actions?.join_action_result?.reason,
+                        [z, H] = r.useState(!1);
                     r.useEffect(() => {
-                        z && !t && u !== E.Z.LOADED && d(z).catch(n());
+                        O && !t && u !== E.Z.LOADED && d(O).catch(n());
                     });
                     const q = r.useCallback((e) => r.createElement(o.ZP, { size: "title4", weight: "bold" }, M({ communityName: e })), []),
-                        W = O ? B : _,
+                        W = U ? B : _,
                         $ = r.useCallback(() => {
                             if (t) {
                                 const { id_str: e } = t;
-                                if (O)
+                                if (U)
                                     return void k(e, { answer: I })
                                         .then((e) => {
                                             if ("CommunityJoinRequest" === e?.type) P();
@@ -758,12 +758,12 @@
                                         .catch(n);
                                 v(e).then(x).then(P).catch(n());
                             }
-                        }, [I, t, n, H, v, O, x, P, k]),
+                        }, [I, t, n, H, v, U, x, P, k]),
                         K = r.useCallback(() => r.createElement(a.ZP, { onPress: $, size: "small", type: "brandFilled" }, W), [W, $]),
-                        J = U ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: A, text: R, type: "danger" })) : void 0;
+                        J = z ? r.createElement(i.Z, { style: V.error }, r.createElement(l.Z, { Icon: p.default, headline: A, text: R, type: "danger" })) : void 0;
                     if (t) {
                         const { name: e, question: n, rules: a } = t;
-                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, y.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && O && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: T, label: L, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(g.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
+                        return a && a.length && !Z ? r.createElement(h.Z, { history: m, onBackClick: P, rightControl: K(), title: (0, y.E)({ communityName: e }) }, r.createElement(s.Z, { spacing: "space2" }), n && "" !== n?.trim() && U && j && r.createElement(i.Z, null, r.createElement(o.ZP, { size: "title4", style: V.divStyles, weight: "bold" }, n), r.createElement(c.Z, { calculateLength: f.Z, helperText: T, label: L, maxLength: N, multiline: !0, name: "typedJoinRequestAnswer", numberOfLines: 3, onChange: D }), r.createElement(s.Z, { spacing: "space2" })), J, r.createElement(g.Z, { badgeStyle: V.badgeStyle, headerContainerStyle: V.containerStyle, headerExplanationStyle: V.headerExplanationStyle, heading: q(e), rules: a })) : r.createElement(C.Z, { to: `/i/communities/${t.id_str}` });
                     }
                     return u === E.Z.LOADED ? r.createElement(C.Z, { to: "/" }) : null;
                 },
@@ -957,7 +957,7 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        988227: (e, t, n) => {
+        678773: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 i = n(890601),
@@ -965,12 +965,12 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        748138: (e, t, n) => {
+        76388: (e, t, n) => {
             n.r(t), n.d(t, { default: () => s });
             var r = n(202784),
                 i = n(890601),
@@ -978,11 +978,11 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.5f932eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.161b07ea.js.map

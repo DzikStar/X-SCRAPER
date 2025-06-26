@@ -1317,6 +1317,11 @@
                 t("a02d1657", function (e) {
                     return "Code wird ausgeführt" + e.ttc_tool_usage_card;
                 }),
+                t("aa9d42c0", "Searching the web"),
+                t("dce1817a", "Searching on 𝕏"),
+                t("f7151564", "Searching users on 𝕏"),
+                t("c43ef93e", "Browsing web page"),
+                t("jb097f6e", "Executing code"),
                 t("ead81122", "Etwas ist schief gegangen. Bitte stelle die Verbindung durch eine Aktualisierung wieder her oder versuche es erneut."),
                 t("f808a13a", "Das Zugriffslimit ist erreicht. Bitte versuche es in ein paar Minuten erneut."),
                 t("e0481e5a", "Grok wird in deinem Land zurzeit nicht unterstützt."),
@@ -1910,10 +1915,10 @@
                 t("aefd89c8", "Navigation"),
                 t("cafdefb2", "Aktionen"),
                 t("dda42cf2", "Spalten und Decks"),
-                t("e8a12604", "Gib eine Beschriftung an (optional)"),
-                t("eabf2209", function (e) {
-                    return "GIF bereitgestellt von " + e.providerName;
-                }),
+                t("e8a12604", "Gib eine Beschriftung an (optional)");
+            t("eabf2209", function (e) {
+                return "GIF bereitgestellt von " + e.providerName;
+            }),
                 t("a613e720", "Link zum GIF kopieren"),
                 t("aeca1239", function (e) {
                     return "Fett" + e.ttc_rich_text_composer;
@@ -1923,8 +1928,8 @@
                 }),
                 t("ad89b831", function (e) {
                     return "aktiv" + e.ttc_rich_text_composer;
-                });
-            t("jcd5ee8a", "Block bearbeiten"),
+                }),
+                t("jcd5ee8a", "Block bearbeiten"),
                 t("a8f09fb8", "Block löschen"),
                 t("i89195ea", "Trennelement"),
                 t("da8ac57c", "Beschriftung bearbeiten"),
@@ -2970,13 +2975,13 @@
                 t("a078ff70", "Möchtest du noch mehr Inhalte von den Leuten sehen, mit denen du in diesem Thread interagiert hast? Erkunde die Inhalte von neuen Accounts."),
                 t("cb80300e", "Direkt zur Startseiten-Timeline"),
                 t("ea5cd098", "Direkt zu Trends"),
-                t("c67e3fc2", "Home-Timeline"),
-                t("d601fc20", "Neueste"),
+                t("c67e3fc2", "Home-Timeline");
+            t("d601fc20", "Neueste"),
                 t("j43f99be", "Relevanz"),
                 t("ad6e11ac", "Antworten sortieren nach"),
                 t("b2311b70", "Dieser Inhalt ist für dich nicht verfügbar."),
-                t("j88f27d8", "Relevante Personen");
-            t("i31dcd22", "Artikel"),
+                t("j88f27d8", "Relevante Personen"),
+                t("i31dcd22", "Artikel"),
                 t("e3de2f6f", function (e) {
                     return e.entity + " wurde zu deinen Lesezeichen hinzugefügt";
                 }),
@@ -3892,10 +3897,10 @@
                 }),
                 t("fc56c8b1", function (e) {
                     return "Co-Host" + r(e.count, "", "s");
-                }),
-                t("iba0f45d", function (e) {
-                    return "Sprecher*in" + r(e.count, "", "nen");
-                }),
+                });
+            t("iba0f45d", function (e) {
+                return "Sprecher*in" + r(e.count, "", "nen");
+            }),
                 t("dc066955", function (e) {
                     return "Zuhörer*in" + r(e.count, "", "nen");
                 }),
@@ -3905,8 +3910,8 @@
                 t("c3b5b829", function (e) {
                     return e.count + " Anfrage" + r(e.count, "", "n");
                 }),
-                t("fe7a1910", "Einladungen senden");
-            t("ic3c757e", "Nach Nutzer*innen suchen"),
+                t("fe7a1910", "Einladungen senden"),
+                t("ic3c757e", "Nach Nutzer*innen suchen"),
                 t("cd133486", "Einladen"),
                 t("f2333850", "Mit Leuten außerhalb von X teilen"),
                 t("cddb8097", "Mehr erfahren"),
@@ -4338,7 +4343,6 @@
                 t("db832e38", "Bitte aktiviere Mitteilungen in den Browsereinstellungen"),
                 t("a910cac6", "Problem bei der Aktivierung der Mitteilungen"),
                 t("be30b6ee", "Verbindung instabil"),
-                t("ge15b488", "Gedanken anzeigen"),
                 t("aa7c96bb", function (e) {
                     return e.numResults + " weitere sehen";
                 }),
@@ -4354,6 +4358,10 @@
                 }),
                 t("a15d62db", function (e) {
                     return "Denkprozess dauerte " + e.seconds + " Sek.";
+                }),
+                t("f26fc748", "Script"),
+                t("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 t("ha8fbe22", "Mehr Bilder generieren mit Premium"),
                 t("d95c232a", "Du hast dein Limit erreicht. Führe jetzt ein Upgrade durch, wenn du mehr generieren möchtest."),
@@ -4923,14 +4931,14 @@
                 t("ff95a9cc", "Video-ID"),
                 t("a97e358e", "Video-Link"),
                 t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
-                t("ba37f6da", "Videoübersicht"),
-                t("f19846b2", "Video-Miniaturbild"),
+                t("ba37f6da", "Videoübersicht");
+            t("f19846b2", "Video-Miniaturbild"),
                 t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Wie oft dein Video angezeigt wurde."),
                 t("a532072a", "Zuschauer*innen"),
                 t("d9508ab0", "Mal angezeigt"),
-                t("d9f9dec0", "Space anzeigen");
-            t("h0c1f37a", "Space-Statistiken anzeigen"),
+                t("d9f9dec0", "Space anzeigen"),
+                t("h0c1f37a", "Space-Statistiken anzeigen"),
                 t("e41fffbc", "Wie lange deine Videos insgesamt angezeigt wurden."),
                 t("if2909ba", "Abspielzeit"),
                 t("i0e5bf4c", "Deine Videos"),
@@ -5875,16 +5883,16 @@
                 t("af781666", "Was halten Leute davon?"),
                 t("a1f414ee", "Meinung teilen"),
                 t("ed88e742", "Link zum Thema kopieren"),
-                t("h92fe1be", "Leider ist Kollektive Anmerkungen zurzeit für dich nicht verfügbar."),
-                t("f0dc1434", "Kollektive Anmerkungen ist derzeit nur in den USA verfügbar"),
+                t("h92fe1be", "Leider ist Kollektive Anmerkungen zurzeit für dich nicht verfügbar.");
+            t("f0dc1434", "Kollektive Anmerkungen ist derzeit nur in den USA verfügbar"),
                 t("f8fc0b48", "Ordner erstellen"),
                 t("c14bcdde", "Lesezeichen durchsuchen"),
                 t("e9c65c4a", "Lesezeichensuche"),
                 t("b92a21d9", function (e) {
                     return "Keine Ergebnisse für " + e.query;
                 }),
-                t("f191a2ba", "Sucheinstellungen");
-            t("a068008a", "Ordner können im Moment nicht geladen werden"),
+                t("f191a2ba", "Sucheinstellungen"),
+                t("a068008a", "Ordner können im Moment nicht geladen werden"),
                 t("f075b0e8", "Ordner bearbeiten"),
                 t("beba2a0e", "Neuen Lesezeichenordner erstellen"),
                 t("e41c9b4f", function (e) {
@@ -6881,18 +6889,18 @@
                 t("b8cbb51a", "Jobzusammenfassung"),
                 t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können."),
                 t("b075c68a", "Job bearbeiten"),
-                t("d4b6a6e0", "Profil-Spotlight"),
-                t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen."),
+                t("d4b6a6e0", "Profil-Spotlight");
+            t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen."),
                 t("af1cfd46", "ATS-Integration"),
                 t("d6fa2944", "Wenn du deine Integration löschst, werden deine importierten Jobs dadurch nicht gelöscht."),
                 t("h99f11fa", "Integration löschen"),
                 t("eef1ae76", "Derzeit verbunden"),
                 t("a915f5c1", function (e) {
                     return e.ats + " verbunden";
-                });
-            t("af7286b7", function (e) {
-                return e.percentage + " % Rabatt auf ein Jahresabo von Premium";
-            }),
+                }),
+                t("af7286b7", function (e) {
+                    return e.percentage + " % Rabatt auf ein Jahresabo von Premium";
+                }),
                 t("c924ad84", "Videos weiter abspielen"),
                 t("de750a3c", "Nutzung selbst bei gesperrtem Handy"),
                 t("he5e87c4", "Booste deine Antworten"),
@@ -7863,15 +7871,7 @@
                 t("b74ff5fc", "Wenn du kündigst, läuft dein Abonnement automatisch am Ende des Abrechnungszeitraums aus."),
                 t("ee9efbc8", "Weiter zur Kündigung"),
                 t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
-                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen."),
-                t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
-                t("i5f14be7", function (e) {
-                    return "Willkommen zurück, " + e.displayName;
-                }),
-                t("a76d58ba", "Statistiken zur Werbung"),
-                t("eccd0e1a", "Statistiken für die Organisation"),
-                t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
-                t("eb603ffc", "Mit einem Upgrade kannst du dein Netzwerk als verbundene Accounts einrichten und aggregierte Statistiken anzeigen.");
+                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen.");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7910,7 +7910,15 @@
                     d(e, n)
                 );
             }
-            t("gf67aae4", "Upgrade auf Vollzugriff"),
+            t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
+                t("i5f14be7", function (e) {
+                    return "Willkommen zurück, " + e.displayName;
+                }),
+                t("a76d58ba", "Statistiken zur Werbung"),
+                t("eccd0e1a", "Statistiken für die Organisation"),
+                t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
+                t("eb603ffc", "Mit einem Upgrade kannst du dein Netzwerk als verbundene Accounts einrichten und aggregierte Statistiken anzeigen."),
+                t("gf67aae4", "Upgrade auf Vollzugriff"),
                 t("h75e3618", "Organisation einschließen"),
                 t("h24a8862", "Über dieses Kontrollkästchen"),
                 t("c29e3a88", "Verbundene Accounts auswählen"),
@@ -8903,16 +8911,16 @@
                     return e.advertiserName + " besuchen";
                 }),
                 t("c67e71aa", "Jetzt ansehen"),
-                t("a6ada13e", "Jetzt kaufen"),
-                t("j0f12222", "Mehr anzeigen"),
+                t("a6ada13e", "Jetzt kaufen");
+            t("j0f12222", "Mehr anzeigen"),
                 t("f569f7c8", "Zu Website wechseln"),
                 t("j0c6772a", "Website besuchen"),
                 t("f73003aa", "Video wird nach der Anzeige abgespielt"),
                 t("b3112b8a", "Überspringen"),
-                t("h6333ad0", "Anzeige überspringen");
-            t("c59da417", function (e) {
-                return "Anzeige überspringen in " + e.seconds;
-            }),
+                t("h6333ad0", "Anzeige überspringen"),
+                t("c59da417", function (e) {
+                    return "Anzeige überspringen in " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Überspringen: " + e.seconds;
                 }),
@@ -13362,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.e64c438a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.050eebba.js.map

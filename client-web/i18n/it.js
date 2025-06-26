@@ -1317,6 +1317,11 @@
                 o("a02d1657", function (e) {
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
+                o("aa9d42c0", "Searching the web"),
+                o("dce1817a", "Searching on 𝕏"),
+                o("f7151564", "Searching users on 𝕏"),
+                o("c43ef93e", "Browsing web page"),
+                o("jb097f6e", "Executing code"),
                 o("ead81122", "Qualcosa è andato storto. Aggiorna per riconnetterti o riprova."),
                 o("f808a13a", "Limite di frequenza superato. Riprova tra qualche istante."),
                 o("e0481e5a", "Attualmente Grok non è supportato nel tuo Paese."),
@@ -1910,10 +1915,10 @@
                 o("aefd89c8", "Navigazione"),
                 o("cafdefb2", "Azioni"),
                 o("dda42cf2", "Colonne e deck"),
-                o("e8a12604", "Indica una didascalia (facoltativo)"),
-                o("eabf2209", function (e) {
-                    return "GIF fornita da " + e.providerName;
-                }),
+                o("e8a12604", "Indica una didascalia (facoltativo)");
+            o("eabf2209", function (e) {
+                return "GIF fornita da " + e.providerName;
+            }),
                 o("a613e720", "Copia link della GIF"),
                 o("aeca1239", function (e) {
                     return "Grassetto" + e.ttc_rich_text_composer;
@@ -1923,8 +1928,8 @@
                 }),
                 o("ad89b831", function (e) {
                     return "attiva" + e.ttc_rich_text_composer;
-                });
-            o("jcd5ee8a", "Modifica blocco"),
+                }),
+                o("jcd5ee8a", "Modifica blocco"),
                 o("a8f09fb8", "Elimina blocco"),
                 o("i89195ea", "Divisore"),
                 o("da8ac57c", "Modifica didascalia"),
@@ -2970,13 +2975,13 @@
                 o("a078ff70", "Vuoi vedere più contenuti degli utenti con cui hai interagito in questa discussione? Inizia a esplorare contenuti di nuovi account."),
                 o("cb80300e", "Passa alla cronologia principale"),
                 o("ea5cd098", "Passa alle tendenze"),
-                o("c67e3fc2", "Cronologia principale"),
-                o("d601fc20", "Recenti"),
+                o("c67e3fc2", "Cronologia principale");
+            o("d601fc20", "Recenti"),
                 o("j43f99be", "Pertinenza"),
                 o("ad6e11ac", "Ordina risposte per"),
                 o("b2311b70", "Contenuto non disponibile per te"),
-                o("j88f27d8", "Persone pertinenti");
-            o("i31dcd22", "Articolo"),
+                o("j88f27d8", "Persone pertinenti"),
+                o("i31dcd22", "Articolo"),
                 o("e3de2f6f", function (e) {
                     return "Salvataggio " + e.entity + " nei segnalibri eseguito";
                 }),
@@ -3892,10 +3897,10 @@
                 }),
                 o("fc56c8b1", function (e) {
                     return "cohost";
-                }),
-                o("iba0f45d", function (e) {
-                    return "partecipant" + t(e.count, "e attivo", "i attivi");
-                }),
+                });
+            o("iba0f45d", function (e) {
+                return "partecipant" + t(e.count, "e attivo", "i attivi");
+            }),
                 o("dc066955", function (e) {
                     return "ascoltator" + t(e.count, "e", "i");
                 }),
@@ -3905,8 +3910,8 @@
                 o("c3b5b829", function (e) {
                     return e.count + " " + t(e.count, "richiesta", "nuove richieste");
                 }),
-                o("fe7a1910", "Spedisci inviti");
-            o("ic3c757e", "Cerca utenti"),
+                o("fe7a1910", "Spedisci inviti"),
+                o("ic3c757e", "Cerca utenti"),
                 o("cd133486", "Invita"),
                 o("f2333850", "Condividi con persone esterne a X"),
                 o("cddb8097", "Scopri di più"),
@@ -4338,7 +4343,6 @@
                 o("db832e38", "Abilita le notifiche nelle impostazioni del browser"),
                 o("a910cac6", "Si è verificato un problema durante l'abilitazione delle notifiche"),
                 o("be30b6ee", "Connessione non stabile"),
-                o("ge15b488", "Mostra i ragionamenti"),
                 o("aa7c96bb", function (e) {
                     return "Consulta " + e.numResults + " in più";
                 }),
@@ -4354,6 +4358,10 @@
                 }),
                 o("a15d62db", function (e) {
                     return "Ragionamento elaborato in " + e.seconds + " sec.";
+                }),
+                o("f26fc748", "Script"),
+                o("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 o("ha8fbe22", "Genera più immagini con Premium"),
                 o("d95c232a", "Hai raggiunto il limite. Esegui ora l'upgrade per generarne di più."),
@@ -4923,14 +4931,14 @@
                 o("ff95a9cc", "ID video"),
                 o("a97e358e", "Link video"),
                 o("e10e8b46", "Vengono mostrati solo i video degli ultimi 100 giorni."),
-                o("ba37f6da", "Riepilogo video"),
-                o("f19846b2", "Miniatura video"),
+                o("ba37f6da", "Riepilogo video");
+            o("f19846b2", "Miniatura video"),
                 o("ccd6f4a8", "Titolo video"),
                 o("c8410542", "Il numero di volte in cui il tuo video è stato visualizzato."),
                 o("a532072a", "Spettatori"),
                 o("d9508ab0", "visualizzazioni"),
-                o("d9f9dec0", "Visualizza spazio");
-            o("h0c1f37a", "Visualizza statistiche spazio"),
+                o("d9f9dec0", "Visualizza spazio"),
+                o("h0c1f37a", "Visualizza statistiche spazio"),
                 o("e41fffbc", "Il tempo complessivo di visione dei tuoi video."),
                 o("if2909ba", "Tempo di visione"),
                 o("i0e5bf4c", "I tuoi video"),
@@ -5875,16 +5883,16 @@
                 o("af781666", "Cosa pensano gli altri?"),
                 o("a1f414ee", "Condividi la tua opinione"),
                 o("ed88e742", "Copia link dell'argomento"),
-                o("h92fe1be", "Purtroppo, al momento, Note della collettività non è disponibile per te."),
-                o("f0dc1434", "Attualmente Note della collettività è disponibile solo negli Stati Uniti"),
+                o("h92fe1be", "Purtroppo, al momento, Note della collettività non è disponibile per te.");
+            o("f0dc1434", "Attualmente Note della collettività è disponibile solo negli Stati Uniti"),
                 o("f8fc0b48", "Crea una cartella"),
                 o("c14bcdde", "Cerca nei segnalibri"),
                 o("e9c65c4a", "Ricerca nei segnalibri"),
                 o("b92a21d9", function (e) {
                     return "Nessun risultato per " + e.query;
                 }),
-                o("f191a2ba", "impostazioni di ricerca");
-            o("a068008a", "Attualmente non è possibile caricare le cartelle"),
+                o("f191a2ba", "impostazioni di ricerca"),
+                o("a068008a", "Attualmente non è possibile caricare le cartelle"),
                 o("f075b0e8", "Modifica cartella"),
                 o("beba2a0e", "Crea una nuova cartella di segnalibri"),
                 o("e41c9b4f", function (e) {
@@ -6881,18 +6889,18 @@
                 o("b8cbb51a", "Riepilogo offerta"),
                 o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
                 o("b075c68a", "Modifica offerta"),
-                o("d4b6a6e0", "Profile Spotlight"),
-                o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post."),
+                o("d4b6a6e0", "Profile Spotlight");
+            o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post."),
                 o("af1cfd46", "Integrazione ATS"),
                 o("d6fa2944", "L'eliminazione dell'integrazione non comporterà l'eliminazione delle offerte di lavoro importate."),
                 o("h99f11fa", "Elimina integrazione"),
                 o("eef1ae76", "Collegamento attivo"),
                 o("a915f5c1", function (e) {
                     return "Collegamento a " + e.ats + " attivo";
-                });
-            o("af7286b7", function (e) {
-                return e.percentage + "% di sconto su Premium annuale";
-            }),
+                }),
+                o("af7286b7", function (e) {
+                    return e.percentage + "% di sconto su Premium annuale";
+                }),
                 o("c924ad84", "Continua a riprodurre i video"),
                 o("de750a3c", "Godine anche quando lo smartphone è bloccato"),
                 o("he5e87c4", "Metti in risalto le tue risposte"),
@@ -7863,15 +7871,7 @@
                 o("b74ff5fc", "Se disdici, il tuo abbonamento scadrà automaticamente al termine del ciclo di fatturazione."),
                 o("ee9efbc8", "Procedi con la disdetta"),
                 o("c5d9c77a", "Sembra ci sia un problemino, ma non preoccuparti perché non è colpa tua. Chiudi questa finestra e riprova."),
-                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple."),
-                o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return "È bello rivederti, " + e.displayName;
-                }),
-                o("a76d58ba", "Statistiche annunci"),
-                o("eccd0e1a", "Statistiche dell'organizzazione"),
-                o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
-                o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate.");
+                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple.");
             function n(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7910,7 +7910,15 @@
                     r(e, i)
                 );
             }
-            o("gf67aae4", "Esegui l'upgrade a Full access"),
+            o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
+                o("i5f14be7", function (e) {
+                    return "È bello rivederti, " + e.displayName;
+                }),
+                o("a76d58ba", "Statistiche annunci"),
+                o("eccd0e1a", "Statistiche dell'organizzazione"),
+                o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
+                o("eb603ffc", "Esegui l'upgrade per affiliare la tua rete e visualizzare le statistiche aggregate."),
+                o("gf67aae4", "Esegui l'upgrade a Full access"),
                 o("h75e3618", "Includi organizzazione"),
                 o("h24a8862", "Info su questa casella"),
                 o("c29e3a88", "Seleziona affiliati"),
@@ -8903,16 +8911,16 @@
                     return "Visita " + e.advertiserName;
                 }),
                 o("c67e71aa", "Guarda ora"),
-                o("a6ada13e", "Compra ora"),
-                o("j0f12222", "Approfondisci"),
+                o("a6ada13e", "Compra ora");
+            o("j0f12222", "Approfondisci"),
                 o("f569f7c8", "Passa al sito Web"),
                 o("j0c6772a", "Visita il sito Web"),
                 o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
                 o("b3112b8a", "Salta"),
-                o("h6333ad0", "Salta annuncio");
-            o("c59da417", function (e) {
-                return "Salta annuncio tra " + e.seconds;
-            }),
+                o("h6333ad0", "Salta annuncio"),
+                o("c59da417", function (e) {
+                    return "Salta annuncio tra " + e.seconds;
+                }),
                 o("c3c147cf", function (e) {
                     return "Salta " + e.seconds;
                 }),
@@ -13349,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.7e5268ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.524ec43a.js.map

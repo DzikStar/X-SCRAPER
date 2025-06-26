@@ -1316,6 +1316,11 @@
                 i("a02d1657", function (a) {
                     return "Kode eksekusi" + a.ttc_tool_usage_card;
                 }),
+                i("aa9d42c0", "Searching the web"),
+                i("dce1817a", "Searching on 𝕏"),
+                i("f7151564", "Searching users on 𝕏"),
+                i("c43ef93e", "Browsing web page"),
+                i("jb097f6e", "Executing code"),
                 i("ead81122", "Ada kesalahan teknis, silakan refresh untuk menyambungkan kembali atau coba lagi."),
                 i("f808a13a", "Batas maksimal tercapai. Silakan tunggu beberapa saat, lalu coba lagi."),
                 i("e0481e5a", "Grok belum didukung di negara Anda saat ini."),
@@ -1909,10 +1914,10 @@
                 i("aefd89c8", "Navigasi"),
                 i("cafdefb2", "Tindakan"),
                 i("dda42cf2", "Kolom & Deck"),
-                i("e8a12604", "Berikan keterangan (opsional)"),
-                i("eabf2209", function (a) {
-                    return "GIF disediakan oleh " + a.providerName;
-                }),
+                i("e8a12604", "Berikan keterangan (opsional)");
+            i("eabf2209", function (a) {
+                return "GIF disediakan oleh " + a.providerName;
+            }),
                 i("a613e720", "Salin tautan ke GIF"),
                 i("aeca1239", function (a) {
                     return "Tebal" + a.ttc_rich_text_composer;
@@ -1922,8 +1927,8 @@
                 }),
                 i("ad89b831", function (a) {
                     return "aktif" + a.ttc_rich_text_composer;
-                });
-            i("jcd5ee8a", "Edit blok"),
+                }),
+                i("jcd5ee8a", "Edit blok"),
                 i("a8f09fb8", "Hapus blok"),
                 i("i89195ea", "Pembagi"),
                 i("da8ac57c", "Edit Teks Keterangan"),
@@ -2969,13 +2974,13 @@
                 i("a078ff70", "Ingin melihat lebih banyak konten dari orang yang berinteraksi dengan Anda dalam utas ini? Mulai jelajahi konten dari akun baru."),
                 i("cb80300e", "Langsung ke timeline Beranda"),
                 i("ea5cd098", "Langsung ke bagian sedang tren"),
-                i("c67e3fc2", "Timeline beranda"),
-                i("d601fc20", "Terbaru"),
+                i("c67e3fc2", "Timeline beranda");
+            i("d601fc20", "Terbaru"),
                 i("j43f99be", "Relevansi"),
                 i("ad6e11ac", "Urutkan balasan berdasarkan"),
                 i("b2311b70", "Halaman ini tidak tersedia untuk Anda"),
-                i("j88f27d8", "Orang yang relevan");
-            i("i31dcd22", "Artikel"),
+                i("j88f27d8", "Orang yang relevan"),
+                i("i31dcd22", "Artikel"),
                 i("e3de2f6f", function (a) {
                     return a.entity + " ditambahkan ke Markah Anda";
                 }),
@@ -3891,10 +3896,10 @@
                 }),
                 i("fc56c8b1", function (a) {
                     return "co-host";
-                }),
-                i("iba0f45d", function (a) {
-                    return "pembicara";
-                }),
+                });
+            i("iba0f45d", function (a) {
+                return "pembicara";
+            }),
                 i("dc066955", function (a) {
                     return "pendengar";
                 }),
@@ -3904,8 +3909,8 @@
                 i("c3b5b829", function (a) {
                     return a.count + " permintaan";
                 }),
-                i("fe7a1910", "Kirim undangan");
-            i("ic3c757e", "Cari pengguna"),
+                i("fe7a1910", "Kirim undangan"),
+                i("ic3c757e", "Cari pengguna"),
                 i("cd133486", "Undang"),
                 i("f2333850", "Bagikan dengan orang di luar X"),
                 i("cddb8097", "Pelajari lebih lanjut"),
@@ -4337,7 +4342,6 @@
                 i("db832e38", "Harap aktifkan notifikasi di pengaturan browser"),
                 i("a910cac6", "Ada masalah saat mengaktifkan notifikasi"),
                 i("be30b6ee", "Koneksi tidak stabil"),
-                i("ge15b488", "Tampilkan pemikiran"),
                 i("aa7c96bb", function (a) {
                     return "Lihat " + a.numResults + " lainnya";
                 }),
@@ -4353,6 +4357,10 @@
                 }),
                 i("a15d62db", function (a) {
                     return "Berpikir selama " + a.seconds + " dtk";
+                }),
+                i("f26fc748", "Script"),
+                i("h26fa43f", function (a) {
+                    return a.count + " more";
                 }),
                 i("ha8fbe22", "Buat lebih banyak gambar dengan Premium"),
                 i("d95c232a", "Batas maksimal sudah tercapai. Tingkatkan sekarang untuk membuat lebih banyak."),
@@ -4922,14 +4930,14 @@
                 i("ff95a9cc", "ID video"),
                 i("a97e358e", "Tautan Video"),
                 i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
-                i("ba37f6da", "Ikhtisar video"),
-                i("f19846b2", "Thumbnail video"),
+                i("ba37f6da", "Ikhtisar video");
+            i("f19846b2", "Thumbnail video"),
                 i("ccd6f4a8", "Judul video"),
                 i("c8410542", "Berapa kali video Anda dilihat."),
                 i("a532072a", "Penonton"),
                 i("d9508ab0", "tayangan"),
-                i("d9f9dec0", "Lihat Space");
-            i("h0c1f37a", "Lihat Analitik Space"),
+                i("d9f9dec0", "Lihat Space"),
+                i("h0c1f37a", "Lihat Analitik Space"),
                 i("e41fffbc", "Total waktu tonton video Anda."),
                 i("if2909ba", "Waktu Tonton"),
                 i("i0e5bf4c", "Video Anda"),
@@ -5874,16 +5882,16 @@
                 i("af781666", "Apa pendapat orang-orang?"),
                 i("a1f414ee", "Sampaikan pendapat"),
                 i("ed88e742", "Salin tautan ke Topik"),
-                i("h92fe1be", "Maaf, Catatan Komunitas belum tersedia untuk Anda saat ini."),
-                i("f0dc1434", "Catatan Komunitas saat ini hanya tersedia di AS."),
+                i("h92fe1be", "Maaf, Catatan Komunitas belum tersedia untuk Anda saat ini.");
+            i("f0dc1434", "Catatan Komunitas saat ini hanya tersedia di AS."),
                 i("f8fc0b48", "Buat Folder"),
                 i("c14bcdde", "Cari Markah"),
                 i("e9c65c4a", "Pencarian Markah"),
                 i("b92a21d9", function (a) {
                     return "Tidak ada hasil untuk " + a.query;
                 }),
-                i("f191a2ba", "pengaturan Pencarian");
-            i("a068008a", "Tidak dapat memuat Folder sekarang"),
+                i("f191a2ba", "pengaturan Pencarian"),
+                i("a068008a", "Tidak dapat memuat Folder sekarang"),
                 i("f075b0e8", "Edit Folder"),
                 i("beba2a0e", "Buat Folder Markah baru"),
                 i("e41c9b4f", function (a) {
@@ -6880,18 +6888,18 @@
                 i("b8cbb51a", "Ringkasan Pekerjaan"),
                 i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
                 i("b075c68a", "Edit lowongan kerja"),
-                i("d4b6a6e0", "Spotlight Profil"),
-                i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda."),
+                i("d4b6a6e0", "Spotlight Profil");
+            i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda."),
                 i("af1cfd46", "Integrasi ATS"),
                 i("d6fa2944", "Menghapus integrasi tidak akan menghapus lowongan yang diimpor."),
                 i("h99f11fa", "Hapus integrasi"),
                 i("eef1ae76", "Saat ini terhubung"),
                 i("a915f5c1", function (a) {
                     return a.ats + " terhubung";
-                });
-            i("af7286b7", function (a) {
-                return "Diskon Premium " + a.percentage + "% untuk satu tahun";
-            }),
+                }),
+                i("af7286b7", function (a) {
+                    return "Diskon Premium " + a.percentage + "% untuk satu tahun";
+                }),
                 i("c924ad84", "Biarkan video tetap memutar"),
                 i("de750a3c", "Nikmati bahkan ketika layar ponsel Anda terkunci"),
                 i("he5e87c4", "Boost balasan Anda"),
@@ -7862,15 +7870,7 @@
                 i("b74ff5fc", "Jika Anda membatalkan, Langganan Anda akan otomatis berakhir pada akhir siklus penagihan."),
                 i("ee9efbc8", "Lanjutkan ke pembatalan"),
                 i("c5d9c77a", "Tampaknya ada sedikit gangguan. Jangan khawatir, kami sedang mengatasinya. Tutup jendela ini lalu coba lagi."),
-                i("jda53c24", "Anda bisa membatalkan Langganan melalui Apple App Store."),
-                i("g0a7a53e", "Anda bisa membatalkan Langganan melalui Google Play Store."),
-                i("i5f14be7", function (a) {
-                    return "Selamat datang, " + a.displayName;
-                }),
-                i("a76d58ba", "Analitik Iklan"),
-                i("eccd0e1a", "Analitik Organisasi"),
-                i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
-                i("eb603ffc", "Tingkatkan untuk mengafiliasikan jaringan Anda dan melihat analitik gabungan.");
+                i("jda53c24", "Anda bisa membatalkan Langganan melalui Apple App Store.");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7909,7 +7909,15 @@
                     d(a, n)
                 );
             }
-            i("gf67aae4", "Tingkatkan ke Akses Penuh"),
+            i("g0a7a53e", "Anda bisa membatalkan Langganan melalui Google Play Store."),
+                i("i5f14be7", function (a) {
+                    return "Selamat datang, " + a.displayName;
+                }),
+                i("a76d58ba", "Analitik Iklan"),
+                i("eccd0e1a", "Analitik Organisasi"),
+                i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
+                i("eb603ffc", "Tingkatkan untuk mengafiliasikan jaringan Anda dan melihat analitik gabungan."),
+                i("gf67aae4", "Tingkatkan ke Akses Penuh"),
                 i("h75e3618", "Sertakan organisasi"),
                 i("h24a8862", "Tentang kotak centang ini"),
                 i("c29e3a88", "Pilih Afiliasi"),
@@ -8902,16 +8910,16 @@
                     return "Kunjungi " + a.advertiserName;
                 }),
                 i("c67e71aa", "Tonton sekarang"),
-                i("a6ada13e", "Belanja sekarang"),
-                i("j0f12222", "Lihat selengkapnya"),
+                i("a6ada13e", "Belanja sekarang");
+            i("j0f12222", "Lihat selengkapnya"),
                 i("f569f7c8", "Kunjungi situs web"),
                 i("j0c6772a", "Kunjungi situs web"),
                 i("f73003aa", "Video akan diputar setelah iklan"),
                 i("b3112b8a", "Lewati"),
-                i("h6333ad0", "Lewati Iklan");
-            i("c59da417", function (a) {
-                return "Lewati Iklan dalam " + a.seconds;
-            }),
+                i("h6333ad0", "Lewati Iklan"),
+                i("c59da417", function (a) {
+                    return "Lewati Iklan dalam " + a.seconds;
+                }),
                 i("c3c147cf", function (a) {
                     return "Lewati " + a.seconds;
                 }),
@@ -13347,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.838c562a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.94aafe0a.js.map

@@ -1317,6 +1317,11 @@
                 a("a02d1657", function (e) {
                     return "[[296690]] Executing code" + e.ttc_tool_usage_card;
                 }),
+                a("aa9d42c0", "Searching the web"),
+                a("dce1817a", "Searching on 𝕏"),
+                a("f7151564", "Searching users on 𝕏"),
+                a("c43ef93e", "Browsing web page"),
+                a("jb097f6e", "Executing code"),
                 a("ead81122", "[[294249]] Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "[[285363]] Rate limit exceeded. Please wait a few moments then try again."),
                 a("e0481e5a", "[[285414]] Grok is not supported in your country at this time."),
@@ -1910,10 +1915,10 @@
                 a("aefd89c8", "[[190618]] Navigation"),
                 a("cafdefb2", "[[190614]] Actions"),
                 a("dda42cf2", "[[244267]] Columns & Decks"),
-                a("e8a12604", "[[268857]] Provide a caption (optional)"),
-                a("eabf2209", function (e) {
-                    return "[[178885]] GIF provided by " + e.providerName;
-                }),
+                a("e8a12604", "[[268857]] Provide a caption (optional)");
+            a("eabf2209", function (e) {
+                return "[[178885]] GIF provided by " + e.providerName;
+            }),
                 a("a613e720", "[[178734]] Copy link to GIF"),
                 a("aeca1239", function (e) {
                     return "[[275273]] Bold" + e.ttc_rich_text_composer;
@@ -1923,8 +1928,8 @@
                 }),
                 a("ad89b831", function (e) {
                     return "[[275307]] active" + e.ttc_rich_text_composer;
-                });
-            a("jcd5ee8a", "[[287353]] Edit block"),
+                }),
+                a("jcd5ee8a", "[[287353]] Edit block"),
                 a("a8f09fb8", "[[287352]] Delete block"),
                 a("i89195ea", "[[287259]] Divider"),
                 a("da8ac57c", "[[284900]] Edit Caption"),
@@ -2970,13 +2975,13 @@
                 a("a078ff70", "[[267427]] Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts."),
                 a("cb80300e", "[[264540]] Skip to home timeline"),
                 a("ea5cd098", "[[262681]] Skip to trending"),
-                a("c67e3fc2", "[[142317]] Home timeline"),
-                a("d601fc20", "[[171086]] Latest"),
+                a("c67e3fc2", "[[142317]] Home timeline");
+            a("d601fc20", "[[171086]] Latest"),
                 a("j43f99be", "[[288862]] Relevancy"),
                 a("ad6e11ac", "[[289697]] Sort replies by"),
                 a("b2311b70", "[[187546]] This is not available to you"),
-                a("j88f27d8", "[[193641]] Relevant people");
-            a("i31dcd22", "[[225789]] Article"),
+                a("j88f27d8", "[[193641]] Relevant people"),
+                a("i31dcd22", "[[225789]] Article"),
                 a("e3de2f6f", function (e) {
                     return "[[276859]] " + e.entity + " was added to your Bookmarks";
                 }),
@@ -3892,10 +3897,10 @@
                 }),
                 a("fc56c8b1", function (e) {
                     return "[[281001]] co-host" + n(e.count, "", "s");
-                }),
-                a("iba0f45d", function (e) {
-                    return "[[281003]] speaker" + n(e.count, "", "s");
-                }),
+                });
+            a("iba0f45d", function (e) {
+                return "[[281003]] speaker" + n(e.count, "", "s");
+            }),
                 a("dc066955", function (e) {
                     return "[[281002]] listener" + n(e.count, "", "s");
                 }),
@@ -3905,8 +3910,8 @@
                 a("c3b5b829", function (e) {
                     return "[[281952]] " + e.count + " request" + n(e.count, "", "s");
                 }),
-                a("fe7a1910", "[[287271]] Send invites");
-            a("ic3c757e", "[[287270]] Search for users"),
+                a("fe7a1910", "[[287271]] Send invites"),
+                a("ic3c757e", "[[287270]] Search for users"),
                 a("cd133486", "[[238308]] Invite"),
                 a("f2333850", "[[283614]] Share with people outside of X"),
                 a("cddb8097", "Learn more"),
@@ -4338,7 +4343,6 @@
                 a("db832e38", "[[293416]] Please enable notifications in browser settings"),
                 a("a910cac6", "[[293417]] There was an issue enabling notifications"),
                 a("be30b6ee", "[[293472]] Unstable connection"),
-                a("ge15b488", "[[296465]] Show thoughts"),
                 a("aa7c96bb", function (e) {
                     return "[[293054]] See " + e.numResults + " more";
                 }),
@@ -4354,6 +4358,10 @@
                 }),
                 a("a15d62db", function (e) {
                     return "[[294826]] Thought for " + e.seconds + "s";
+                }),
+                a("f26fc748", "Script"),
+                a("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 a("ha8fbe22", "[[290824]] Generate more images with Premium"),
                 a("d95c232a", "[[291591]] You’ve reached your limit. Upgrade now to generate more."),
@@ -4923,14 +4931,14 @@
                 a("ff95a9cc", "[[293572]] Video ID"),
                 a("a97e358e", "[[293570]] Video Link"),
                 a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
-                a("ba37f6da", "[[292001]] Video overview"),
-                a("f19846b2", "[[293573]] Video thumbnail"),
+                a("ba37f6da", "[[292001]] Video overview");
+            a("f19846b2", "[[293573]] Video thumbnail"),
                 a("ccd6f4a8", "[[293571]] Video title"),
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
                 a("a532072a", "[[294256]] Viewers"),
                 a("d9508ab0", "[[293196]] views"),
-                a("d9f9dec0", "[[294167]] View Space");
-            a("h0c1f37a", "[[294166]] View Space Analytics"),
+                a("d9f9dec0", "[[294167]] View Space"),
+                a("h0c1f37a", "[[294166]] View Space Analytics"),
                 a("e41fffbc", "[[291999]] The total watch time of your videos."),
                 a("if2909ba", "[[292000]] Watch Time"),
                 a("i0e5bf4c", "[[293195]] Your videos"),
@@ -5875,16 +5883,16 @@
                 a("af781666", "[[294695]] What do people think?"),
                 a("a1f414ee", "[[295480]] Share thoughts"),
                 a("ed88e742", "[[224922]] Copy link to Topic"),
-                a("h92fe1be", "[[273025]] Unfortunately, Community Notes is not available to you at this time."),
-                a("f0dc1434", "[[272991]] Community Notes is currently only available in the U.S."),
+                a("h92fe1be", "[[273025]] Unfortunately, Community Notes is not available to you at this time.");
+            a("f0dc1434", "[[272991]] Community Notes is currently only available in the U.S."),
                 a("f8fc0b48", "[[240892]] Create a Folder"),
                 a("c14bcdde", "[[220245]] Search Bookmarks"),
                 a("e9c65c4a", "[[288250]] Bookmarks search"),
                 a("b92a21d9", function (e) {
                     return "[[232023]] No results for " + e.query;
                 }),
-                a("f191a2ba", "Search settings");
-            a("a068008a", "[[290206]] Folders aren`t loading right now"),
+                a("f191a2ba", "Search settings"),
+                a("a068008a", "[[290206]] Folders aren`t loading right now"),
                 a("f075b0e8", "[[241449]] Edit Folder"),
                 a("beba2a0e", "[[242311]] Create a new Bookmark Folder"),
                 a("e41c9b4f", function (e) {
@@ -6881,18 +6889,18 @@
                 a("b8cbb51a", "[[282457]] Job Summary"),
                 a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "[[276392]] Edit job"),
-                a("d4b6a6e0", "[[249571]] Profile Spotlight"),
-                a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
+                a("d4b6a6e0", "[[249571]] Profile Spotlight");
+            a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
                 a("af1cfd46", "[[285940]] ATS integration"),
                 a("d6fa2944", "[[285945]] Deleting your integration will not delete your imported jobs."),
                 a("h99f11fa", "[[285943]] Delete integration"),
                 a("eef1ae76", "[[285947]] Currently connected"),
                 a("a915f5c1", function (e) {
                     return "[[285941]] " + e.ats + " connected";
-                });
-            a("af7286b7", function (e) {
-                return "[[290946]] " + e.percentage + "% off a year of Premium";
-            }),
+                }),
+                a("af7286b7", function (e) {
+                    return "[[290946]] " + e.percentage + "% off a year of Premium";
+                }),
                 a("c924ad84", "[[293326]] Keep videos playing"),
                 a("de750a3c", "[[293320]] Enjoy them even when your phone is locked"),
                 a("he5e87c4", "[[293316]] Boost your replies"),
@@ -7863,15 +7871,7 @@
                 a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 a("ee9efbc8", "[[265375]] Continue to cancellation"),
                 a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
-                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
-                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "[[288006]] Welcome back, " + e.displayName;
-                }),
-                a("a76d58ba", "[[288167]] Ads Analytics"),
-                a("eccd0e1a", "[[288001]] Organization Analytics"),
-                a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics.");
+                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7910,7 +7910,15 @@
                     r(e, t)
                 );
             }
-            a("gf67aae4", "[[288005]] Upgrade to Full Access"),
+            a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "[[288006]] Welcome back, " + e.displayName;
+                }),
+                a("a76d58ba", "[[288167]] Ads Analytics"),
+                a("eccd0e1a", "[[288001]] Organization Analytics"),
+                a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
+                a("eb603ffc", "[[288007]] Upgrade to affiliate your network and view aggregated analytics."),
+                a("gf67aae4", "[[288005]] Upgrade to Full Access"),
                 a("h75e3618", "[[288038]] Include organization"),
                 a("h24a8862", "[[288039]] About this checkbox"),
                 a("c29e3a88", "[[288072]] Select affiliates"),
@@ -8903,16 +8911,16 @@
                     return "[[223889]] Visit " + e.advertiserName;
                 }),
                 a("c67e71aa", "[[223887]] Watch now"),
-                a("a6ada13e", "[[142677]] Shop now"),
-                a("j0f12222", "[[223888]] See more"),
+                a("a6ada13e", "[[142677]] Shop now");
+            a("j0f12222", "[[223888]] See more"),
                 a("f569f7c8", "[[223884]] Go to website"),
                 a("j0c6772a", "[[223886]] Visit website"),
                 a("f73003aa", "[[225566]] Video will play after ad"),
                 a("b3112b8a", "[[153003]] Skip"),
-                a("h6333ad0", "[[209963]] Skip Ad");
-            a("c59da417", function (e) {
-                return "[[217358]] Skip Ad in " + e.seconds;
-            }),
+                a("h6333ad0", "[[209963]] Skip Ad"),
+                a("c59da417", function (e) {
+                    return "[[217358]] Skip Ad in " + e.seconds;
+                }),
                 a("c3c147cf", function (e) {
                     return "[[217359]] Skip " + e.seconds;
                 }),
@@ -13349,4 +13357,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.12e7d1ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.62ffac4a.js.map

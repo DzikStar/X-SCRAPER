@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TryNewsSidebar"],
+    ["loader.TryNewsSidebar", "icons/IconChevronLeft-js"],
     {
         960334: (e, t, n) => {
             n.r(t), n.d(t, { default: () => Z });
@@ -560,19 +560,21 @@
                     return a.createElement(r.Z, { link: t, onPress: n, style: [s.root, c && s.withBottomRadius], withDarkerInteractiveBackground: d }, a.createElement(l.ZP, { align: e, color: "primary", weight: o }, i));
                 };
         },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
+        97301: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
             var a = n(202784),
                 l = n(890601),
                 r = n(783427),
-                s = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                s = n(717683),
+                i = n(347101);
+            const o = (e = {}) => {
+                const t = a.useContext(s.Z),
+                    { direction: n } = (0, r.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style, t && i.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15.043 3.54l1.414 1.42L9.414 12l7.043 7.04-1.414 1.42L6.586 12l8.457-8.46z" })) }, { writingDirection: n });
             };
-            i.metadata = { width: 24, height: 24 };
-            const o = i;
+            o.metadata = { width: 24, height: 24 };
+            const c = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.4ecc9aca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.eb2a606a.js.map

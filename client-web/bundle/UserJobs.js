@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.UserJobs"],
+    ["bundle.UserJobs", "icons/IconChevronDown-js"],
     {
         42508: (e, l, a) => {
             "use strict";
@@ -8,18 +8,18 @@
         },
         835546: (e, l, a) => {
             "use strict";
-            a.d(l, { ZP: () => t, n5: () => s });
+            a.d(l, { ZP: () => t, n5: () => i });
             var n = a(42508);
-            const t = ({ displaySensitiveMedia: e, isNotFound: l, isSuspended: a, isWithheld: n, user: t, userProfileInterstitialType: s, viewerUserId: i }) => {
-                    const o = !!i && i === t.id_str,
+            const t = ({ displaySensitiveMedia: e, isNotFound: l, isSuspended: a, isWithheld: n, user: t, userProfileInterstitialType: i, viewerUserId: s }) => {
+                    const o = !!s && s === t.id_str,
                         c = t.blocked_by,
                         u = t.blocking,
-                        d = r({ displaySensitiveMedia: e, isOwnProfile: o, user: t, userProfileInterstitialType: s }),
+                        d = r({ displaySensitiveMedia: e, isOwnProfile: o, user: t, userProfileInterstitialType: i }),
                         m = (o || !n) && !a;
                     return { avatar: o || (!d && !l && !a && !n), badges: o || !n, description: o || (!u && !c && !d && !a && !n), followButton: !(o || c || d || l || a || n), followersYouKnow: !o && !c && !u && !d && !l && !a && !n && (t.following || !t.protected), followIndicator: !n, fullName: m, label: m, stats: o || (!c && !d && !a && !n), subscriptionsCount: o || !t.has_hidden_subscriptions_on_profile };
                 },
                 r = ({ displaySensitiveMedia: e, isOwnProfile: l, user: a, userProfileInterstitialType: t }) => (t === n.Z.SensitiveMedia || t === n.Z.OffensiveProfileContent) && !(l || a.following || e),
-                s = ({ isOwnProfile: e, user: l }) => {
+                i = ({ isOwnProfile: e, user: l }) => {
                     const a = l.protected && !l.following;
                     return e || !a;
                 };
@@ -30,8 +30,8 @@
             var n = a(202784),
                 t = a(107267),
                 r = a(371344),
-                s = a(956272),
-                i = a(666536),
+                i = a(956272),
+                s = a(666536),
                 o = a(943052);
             const c = ({ basePath: e, isCompact: l = !1, resetPageOnSearch: a = !1, styleType: c }) => {
                     const [u, d, m] = (0, o.Z)(),
@@ -52,7 +52,7 @@
                         }, [e, y]),
                         h = n.useMemo(
                             () =>
-                                (0, i.Z)((e) => {
+                                (0, s.Z)((e) => {
                                     f.current && (e.length > 0 ? (a ? m({ q: e, p: "1" }) : d("q", e)) : b());
                                 }, 1e3),
                             [b, d, m, a],
@@ -64,7 +64,7 @@
                             },
                             [h],
                         );
-                    return n.createElement(r.Z, { Icon: s.default, autoComplete: "off", isCompact: l, leftAligned: !0, onChange: _, onClear: b, placeholder: "Search jobs", styleType: c || "pill", testID: "search-jobs-input", value: p, withClearButton: !0 });
+                    return n.createElement(r.Z, { Icon: i.default, autoComplete: "off", isCompact: l, leftAligned: !0, onChange: _, onClear: b, placeholder: "Search jobs", styleType: c || "pill", testID: "search-jobs-input", value: p, withClearButton: !0 });
                 },
                 u = n.memo(c);
         },
@@ -74,8 +74,8 @@
             var n = a(202784),
                 t = a(325686),
                 r = a(457311),
-                s = a(823161),
-                i = a(731708),
+                i = a(823161),
+                s = a(731708),
                 o = a(601413),
                 c = a(392237),
                 u = a(111677),
@@ -99,8 +99,8 @@
                     .propsFromActions(() => ({ fetchOneUserByScreenNameIfNeeded: k.ZP.fetchOneByScreenNameIfNeeded }));
             var v,
                 x,
-                Z,
                 w,
+                Z,
                 C,
                 T,
                 K,
@@ -109,12 +109,12 @@
                 z,
                 j,
                 P,
-                R,
                 D,
+                R,
                 N = a(807896),
                 U = {
                     fragment: {
-                        argumentDefinitions: [(v = { defaultValue: null, kind: "LocalArgument", name: "count" }), (x = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (Z = { defaultValue: null, kind: "LocalArgument", name: "searchParams" }), (w = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
+                        argumentDefinitions: [(v = { defaultValue: null, kind: "LocalArgument", name: "count" }), (x = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (w = { defaultValue: null, kind: "LocalArgument", name: "searchParams" }), (Z = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "UserJobListQueryScreenJobsQuery",
@@ -222,7 +222,7 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: [w, v, x, Z],
+                        argumentDefinitions: [Z, v, x, w],
                         kind: "Operation",
                         name: "UserJobListQueryScreenJobsQuery",
                         selections: [
@@ -299,7 +299,7 @@
                                                                         selections: [
                                                                             {
                                                                                 alias: null,
-                                                                                args: (R = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, L]),
+                                                                                args: (D = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, L]),
                                                                                 concreteType: "JobSearchSlice",
                                                                                 kind: "LinkedField",
                                                                                 name: "consumer_job_search",
@@ -313,7 +313,7 @@
                                                                                         name: "items_results",
                                                                                         plural: !0,
                                                                                         selections: [
-                                                                                            (D = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                                                            (R = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                                                             I,
                                                                                             {
                                                                                                 alias: null,
@@ -351,7 +351,7 @@
                                                                                                                 ],
                                                                                                                 storageKey: null,
                                                                                                             },
-                                                                                                            D,
+                                                                                                            R,
                                                                                                         ],
                                                                                                         type: "ApiJob",
                                                                                                         abstractKey: null,
@@ -367,8 +367,8 @@
                                                                                 ],
                                                                                 storageKey: null,
                                                                             },
-                                                                            { alias: null, args: R, filters: ["search_params"], handle: "slice", key: "UserJobListQueryScreen_consumer_job_search_slice", kind: "LinkedHandle", name: "consumer_job_search", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
-                                                                            D,
+                                                                            { alias: null, args: D, filters: ["search_params"], handle: "slice", key: "UserJobListQueryScreen_consumer_job_search_slice", kind: "LinkedHandle", name: "consumer_job_search", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
+                                                                            R,
                                                                         ],
                                                                         type: "ApiRecruitingOrganization",
                                                                         abstractKey: null,
@@ -376,11 +376,11 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            D,
+                                                            R,
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    D,
+                                                    R,
                                                 ],
                                                 type: "User",
                                                 abstractKey: null,
@@ -389,7 +389,7 @@
                                         ],
                                         storageKey: null,
                                     },
-                                    D,
+                                    R,
                                 ],
                                 storageKey: null,
                             },
@@ -401,8 +401,8 @@
             const J = U;
             a(585488);
             var O = a(38293),
-                A = a(652904),
-                B = a(736063),
+                B = a(652904),
+                A = a(736063),
                 M = a(943052),
                 H = a(293115),
                 V = a(127218),
@@ -466,70 +466,70 @@
             var ne = a(301503),
                 te = a(366635),
                 re = a(989272),
-                se = a(925873),
-                ie = a(952428),
+                ie = a(925873),
+                se = a(952428),
                 oe = a(457458),
                 ce = a(524496),
                 ue = a(966886),
                 de = a(187669),
                 me = a(949626),
                 pe = a(856438),
-                ge = a(910113),
+                ge = a(549599),
                 ye = a(478414),
                 fe = a(28135);
             const be = ({ fallbackName: e, user: l }) => {
                     const a = Q()(ge.fR, l);
-                    return a && a.core && a.core.name && a.core.screen_name ? n.createElement(te.Z, { avatarSize: "small", isVerified: a.verification?.verified ?? !1, name: a.core.name, nameSize: "subtext2", screenName: a.core.screen_name, screenNameSize: "subtext2", verifiedType: a.verification?.verified_type ?? void 0, weight: "normal" }) : e ? n.createElement(i.ZP, { size: "subtext2", weight: "normal" }, e) : null;
+                    return a && a.core && a.core.name && a.core.screen_name ? n.createElement(te.Z, { avatarSize: "small", isVerified: a.verification?.verified ?? !1, name: a.core.name, nameSize: "subtext2", screenName: a.core.screen_name, screenNameSize: "subtext2", verifiedType: a.verification?.verified_type ?? void 0, weight: "normal" }) : e ? n.createElement(s.ZP, { size: "subtext2", weight: "normal" }, e) : null;
                 },
                 he = { h1FontSize: "headline1", h2FontSize: "headline2", paragraphFontSize: "subtext2" },
                 _e = "user-job-list-item-short-description",
                 ke = c.default.create((e) => ({ listContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, borderBottomColor: e.colors.borderColor, borderBottomWidth: 1 }, itemRow: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 8 }, items: { display: "flex", flexDirection: "column", gap: 4, flex: 1 }, shortDescription: { color: e.colors.text }, timestamp: { fontSize: e.fontSizes.subtext3 }, lastRow: { marginTop: e.spaces.space4 } })),
-                Fe = ({ allowShare: e = !1, companyName: l, createdAt: a, formattedSalary: r, isFeatured: s, isVerifiedOrg: o, jobId: c, jobTitle: u, location: d, onClick: m, profileId: p, redirectUrl: g, salaryInterval: y, shortDescription: f, user: b, withUserInfo: h = !1 }) => {
+                Fe = ({ allowShare: e = !1, companyName: l, createdAt: a, formattedSalary: r, isFeatured: i, isVerifiedOrg: o, jobId: c, jobTitle: u, location: d, onClick: m, profileId: p, redirectUrl: g, salaryInterval: y, shortDescription: f, user: b, withUserInfo: h = !1 }) => {
                     (0, de.q)(() => {
                         (0, re.fH)((0, ye.yW)(_e, he), _e);
                     });
                     const _ = n.useMemo(() => ({ label: u }), [u]),
-                        k = n.useMemo(() => se.Z.getContentStateFromRaw(f), [f]),
+                        k = n.useMemo(() => ie.Z.getContentStateFromRaw(f), [f]),
                         F = n.useMemo(() => k && (0, ne.convertFromRaw)(k).hasText(), [k]),
                         S = n.useMemo(() => `/i/jobs/${c}`, [c]);
-                    return n.createElement(ie.Z, { interactive: !0, link: o ? { pathname: S, external: !0 } : g || "", onClick: m, style: ke.listContainer }, n.createElement(t.Z, { style: ke.items }, n.createElement(i.ZP, { hoverLabel: _, numberOfLines: 2, size: "subtext1", weight: "bold" }, u), h ? n.createElement(be, { fallbackName: l, user: b }) : null, n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, d), r ? n.createElement(i.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, oe.M)(r, y)) : null, k && F ? n.createElement(t.Z, { style: ke.shortDescription }, n.createElement(me.Z, { className: _e }, n.createElement(ce.Z, { contentState: k, paragraphFontSizeOverride: he.paragraphFontSize }))) : null), n.createElement(t.Z, { style: ke.lastRow }, n.createElement(t.Z, { style: ke.itemRow }, n.createElement(t.Z, { style: ke.itemRow }, a ? n.createElement(ue.Z, { cutoff: "years", humanReadable: !0, style: ke.timestamp, timestamp: a }) : null, s ? n.createElement(pe.Z, null) : null), e ? n.createElement(fe.Z, { iconSize: "small", jobId: c, jobUserId: p }) : null)));
+                    return n.createElement(se.Z, { interactive: !0, link: o ? { pathname: S, external: !0 } : g || "", onClick: m, style: ke.listContainer }, n.createElement(t.Z, { style: ke.items }, n.createElement(s.ZP, { hoverLabel: _, numberOfLines: 2, size: "subtext1", weight: "bold" }, u), h ? n.createElement(be, { fallbackName: l, user: b }) : null, n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, d), r ? n.createElement(s.ZP, { color: "text", size: "subtext2", weight: "normal" }, (0, oe.M)(r, y)) : null, k && F ? n.createElement(t.Z, { style: ke.shortDescription }, n.createElement(me.Z, { className: _e }, n.createElement(ce.Z, { contentState: k, paragraphFontSizeOverride: he.paragraphFontSize }))) : null), n.createElement(t.Z, { style: ke.lastRow }, n.createElement(t.Z, { style: ke.itemRow }, n.createElement(t.Z, { style: ke.itemRow }, a ? n.createElement(ue.Z, { cutoff: "years", humanReadable: !0, style: ke.timestamp, timestamp: a }) : null, i ? n.createElement(pe.Z, null) : null), e ? n.createElement(fe.Z, { iconSize: "small", jobId: c, jobUserId: p }) : null)));
                 },
                 Se = ae,
-                Ee = ({ isViewerFollowsUser: e, item: l, jobId: a, jobIndex: t, profileId: r, user: s }) => {
-                    const i = (0, G.z)(),
+                Ee = ({ isViewerFollowsUser: e, item: l, jobId: a, jobIndex: t, profileId: r, user: i }) => {
+                    const s = (0, G.z)(),
                         o = Q()(Se, l),
                         c = n.useCallback(() => {
-                            i.scribe({ action: "click", component: "job_list_item", element: "job", data: { profile_id: r, items: [{ id: a, position: t, is_viewer_follows_user: e }] } });
-                        }, [i, e, a, t, r]),
-                        u = Boolean(s?.is_verified_organization);
-                    return o && o.title && o.location ? n.createElement(Fe, { allowShare: u, createdAt: o.created_at, formattedSalary: o.formatted_salary, isFeatured: Boolean(o.featured), isVerifiedOrg: s?.is_verified_organization, jobId: a, jobTitle: o.title, location: o.location, onClick: c, profileId: r, redirectUrl: o.redirect_url || "", salaryInterval: o.salary_interval, salaryMax: o.salary_max, salaryMin: o.salary_min, shortDescription: o.short_description, user: s }) : null;
+                            s.scribe({ action: "click", component: "job_list_item", element: "job", data: { profile_id: r, items: [{ id: a, position: t, is_viewer_follows_user: e }] } });
+                        }, [s, e, a, t, r]),
+                        u = Boolean(i?.is_verified_organization);
+                    return o && o.title && o.location ? n.createElement(Fe, { allowShare: u, createdAt: o.created_at, formattedSalary: o.formatted_salary, isFeatured: Boolean(o.featured), isVerifiedOrg: i?.is_verified_organization, jobId: a, jobTitle: o.title, location: o.location, onClick: c, profileId: r, redirectUrl: o.redirect_url || "", salaryInterval: o.salary_interval, salaryMax: o.salary_max, salaryMin: o.salary_min, shortDescription: o.short_description, user: i }) : null;
                 },
                 ve = n.memo(Ee),
                 xe = $,
-                Ze = (e) => e.rest_id,
-                we = ({ fetchNext: e, isViewerFollowsUser: l, profileId: a, slice: t, user: s }) => {
-                    const i = (0, G.z)(),
+                we = (e) => e.rest_id,
+                Ze = ({ fetchNext: e, isViewerFollowsUser: l, profileId: a, slice: t, user: i }) => {
+                    const s = (0, G.z)(),
                         o = Q()(xe, t).items_results,
                         c = n.useCallback(
                             (e) => {
                                 const t = e.result?.core;
-                                return t ? n.createElement(ve, { isViewerFollowsUser: l, item: t, jobId: e.rest_id, jobIndex: o.findIndex((l) => l.rest_id === e.rest_id), profileId: a, user: s }) : null;
+                                return t ? n.createElement(ve, { isViewerFollowsUser: l, item: t, jobId: e.rest_id, jobIndex: o.findIndex((l) => l.rest_id === e.rest_id), profileId: a, user: i }) : null;
                             },
-                            [l, o, a, s],
+                            [l, o, a, i],
                         ),
                         [u, d] = n.useState([]),
                         m = n.useCallback(
                             (e) => {
                                 e.positions.forEach((n, t) => {
-                                    var r, s, o;
-                                    n.rectangle.getTop() + n.rectangle.getHeight() < e.viewport.getHeight() + e.viewport.getTop() && n.id && !u.includes(n.id) && (i.scribe({ ...((r = "job_list"), (s = "impression"), (o = "job"), { section: "jobs_list", component: r, element: o, action: s }), data: { ...ee(n.id, t, l, a) } }), d((e) => [...e, n.id]));
+                                    var r, i, o;
+                                    n.rectangle.getTop() + n.rectangle.getHeight() < e.viewport.getHeight() + e.viewport.getTop() && n.id && !u.includes(n.id) && (s.scribe({ ...((r = "job_list"), (i = "impression"), (o = "job"), { section: "jobs_list", component: r, element: o, action: i }), data: { ...ee(n.id, t, l, a) } }), d((e) => [...e, n.id]));
                                 });
                             },
-                            [i, u, l, a],
+                            [s, u, l, a],
                         );
-                    return o ? (o.length ? n.createElement(Y.Z, { cacheKey: "userJobList", footer: null, identityFunction: Ze, items: o, onItemsRendered: m, onNearEnd: e, renderer: c }) : n.createElement(r.Z, { header: "No jobs" })) : null;
+                    return o ? (o.length ? n.createElement(Y.Z, { cacheKey: "userJobList", footer: null, identityFunction: we, items: o, onItemsRendered: m, onNearEnd: e, renderer: c }) : n.createElement(r.Z, { header: "No jobs" })) : null;
                 },
-                Ce = n.memo(we),
+                Ce = n.memo(Ze),
                 Te = { page: "jobs_list", section: "all" },
                 Ke = (e = "") => (e ? `Jobs created by ${e}` : "Jobs"),
                 Ie = J,
@@ -539,19 +539,19 @@
                             const e = l?.keyword ? { keyword: l.keyword } : null;
                             return { userId: t.id_str, count: 50, cursor: null, searchParams: e };
                         }, [l, t.id_str]),
-                        { data: s, fetchNext: i } = (0, V.C)(Ie, r),
-                        o = s?.data?.result?.recruiting_organization_results?.result?.consumer_job_search;
-                    return o ? n.createElement(H.nO, { namespace: Te }, n.createElement(A.Z, null, n.createElement(n.Fragment, null, n.createElement(O.Z, { title: Ke(a) }), n.createElement(Ce, { fetchNext: i, isViewerFollowsUser: t.following, profileId: t.id_str, slice: o, user: s.data.result })))) : null;
+                        { data: i, fetchNext: s } = (0, V.C)(Ie, r),
+                        o = i?.data?.result?.recruiting_organization_results?.result?.consumer_job_search;
+                    return o ? n.createElement(H.nO, { namespace: Te }, n.createElement(B.Z, null, n.createElement(n.Fragment, null, n.createElement(O.Z, { title: Ke(a) }), n.createElement(Ce, { fetchNext: s, isViewerFollowsUser: t.following, profileId: t.id_str, slice: o, user: i.data.result })))) : null;
                 },
                 ze = { context: "UserJobs" },
                 je = (e) => {
                     const [l] = (0, M.Z)(),
                         a = n.useMemo(() => ({ keyword: l.get("q") }), [l]);
-                    return n.createElement(B.H, { errorConfig: ze }, n.createElement(Le, (0, N.Z)({}, e, { query: a })));
+                    return n.createElement(A.H, { errorConfig: ze }, n.createElement(Le, (0, N.Z)({}, e, { query: a })));
                 },
                 Pe = n.memo(je);
-            var Re = a(138099),
-                De = a(154003),
+            var De = a(138099),
+                Re = a(154003),
                 Ne = a(466818),
                 Ue = a(985124);
             const Je = () => {
@@ -565,9 +565,9 @@
                         t = n.useMemo(() => e.get("t") ?? "", [e]);
                     return n.createElement(Ne.ZP, { label: "Job category", onChange: a, options: Ue.pg, testID: "select-team", value: t, withEmptyOption: !0 });
                 },
-                Oe = ({ onDismiss: e, screenName: l }) => n.createElement(Re.Z, { onMaskClick: e, style: Ae.modalContainer, type: "full", withMask: !0 }, n.createElement(t.Z, { style: Ae.modalContent }, n.createElement(i.ZP, null, "Search jobs")), n.createElement(h.Z, { basePath: `/${l}/jobs` }), n.createElement(Je, null), n.createElement(De.ZP, { onClick: e, type: "brandFilled" }, "Done")),
-                Ae = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space16 }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", marginTop: e.spaces.space16 }, actions: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, iconActions: { display: "flex", flexDirection: "row" }, modalContainer: { display: "flex", gap: e.spaces.space32, padding: e.spacesPx.space32 }, modalContent: { display: "flex", gap: e.spaces.space16 }, modalActionsContainer: {} })),
-                Be = n.memo(Oe),
+                Oe = ({ onDismiss: e, screenName: l }) => n.createElement(De.Z, { onMaskClick: e, style: Be.modalContainer, type: "full", withMask: !0 }, n.createElement(t.Z, { style: Be.modalContent }, n.createElement(s.ZP, null, "Search jobs")), n.createElement(h.Z, { basePath: `/${l}/jobs` }), n.createElement(Je, null), n.createElement(Re.ZP, { onClick: e, type: "brandFilled" }, "Done")),
+                Be = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space16 }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", marginTop: e.spaces.space16 }, actions: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, iconActions: { display: "flex", flexDirection: "row" }, modalContainer: { display: "flex", gap: e.spaces.space32, padding: e.spacesPx.space32 }, modalContent: { display: "flex", gap: e.spaces.space16 }, modalActionsContainer: {} })),
+                Ae = n.memo(Oe),
                 Me = d().b007440a,
                 He = d().c5fb5a1a,
                 Ve = c.default.create((e) => ({ rightControlContainer: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, searchContainer: { borderTopColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, paddingVertical: e.spaces.space4, width: "100%" }, titleContent: { flexDirection: "row" }, sidebarRoot: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 } })),
@@ -588,9 +588,9 @@
                     if (d) {
                         const e = () => {
                             const e = "Business" === _?.verified_type || "Square" === _?.profile_image_shape ? "square" : "circle";
-                            return n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, null, _ ? n.createElement(s.default, { screenName: d, shape: e, size: "large", uri: _.profile_image_url_https }) : n.createElement(s.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), n.createElement(t.Z, null, n.createElement(i.ZP, { size: "body", weight: "bold" }, Me), n.createElement(o.Z, { screenName: d, size: "subtext1", style: { fontWeight: "normal" } })));
+                            return n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, null, _ ? n.createElement(i.default, { screenName: d, shape: e, size: "large", uri: _.profile_image_url_https }) : n.createElement(i.default, { shape: "square", size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" })), n.createElement(t.Z, null, n.createElement(s.ZP, { size: "body", weight: "bold" }, Me), n.createElement(o.Z, { screenName: d, size: "subtext1", style: { fontWeight: "normal" } })));
                         };
-                        return v ? n.createElement(n.Fragment, null, n.createElement(p.Z, { backLocation: "/", history: u, primaryContent: _ ? (!_?.protected || _?.following || E ? n.createElement(n.Fragment, null, F && d ? n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, { style: Ve.searchContainer }, n.createElement(h.Z, { basePath: `/${d}/jobs`, styleType: "selection" }))) : null, n.createElement(Pe, { screenName: d, user: _ })) : n.createElement(r.Z, { header: He })) : null, primaryContentLabel: Me, sidebarContent: S ? n.createElement(t.Z, { style: Ve.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), l ? n.createElement(Be, { onDismiss: x, screenName: d }) : null) : n.createElement(b.Z, { to: `/${d}` });
+                        return v ? n.createElement(n.Fragment, null, n.createElement(p.Z, { backLocation: "/", history: u, primaryContent: _ ? (!_?.protected || _?.following || E ? n.createElement(n.Fragment, null, F && d ? n.createElement(t.Z, { style: Ve.rightControlContainer }, n.createElement(t.Z, { style: Ve.searchContainer }, n.createElement(h.Z, { basePath: `/${d}/jobs`, styleType: "selection" }))) : null, n.createElement(Pe, { screenName: d, user: _ })) : n.createElement(r.Z, { header: He })) : null, primaryContentLabel: Me, sidebarContent: S ? n.createElement(t.Z, { style: Ve.sidebarRoot }, n.createElement(m.Z, { isSidebarModule: !0 })) : null, title: e() }), l ? n.createElement(Ae, { onDismiss: x, screenName: d }) : null) : n.createElement(b.Z, { to: `/${d}` });
                     }
                     return null;
                 });
@@ -601,8 +601,8 @@
             var n = a(202784),
                 t = a(325686),
                 r = a(487552),
-                s = a(302752),
-                i = a(183806),
+                i = a(302752),
+                s = a(183806),
                 o = a(731708),
                 c = a(950822),
                 u = a(224162),
@@ -649,21 +649,21 @@
                         n.Fragment,
                         null,
                         n.createElement(u.ZP.Consumer, null, ({ direction: e }) => {
-                            const o = "ja" === S ? d.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(S) ? d.default.theme.fontFamilies.rtl : d.default.theme.fontFamilies.normal;
+                            const o = "ja" === S ? d.default.theme.fontFamilies.japan : "rtl" === e || i.Z.isLocaleRTL(S) ? d.default.theme.fontFamilies.rtl : d.default.theme.fontFamilies.normal;
                             return n.createElement(
                                 t.Z,
-                                { style: [i.Z.border, f.container, l && i.Z.disabled, F && i.Z.focusedBorderValid, E && i.Z.invalidBorderColor, F && E && i.Z.focusedBorderInvalid, b] },
+                                { style: [s.Z.border, f.container, l && s.Z.disabled, F && s.Z.focusedBorderValid, E && s.Z.invalidBorderColor, F && E && s.Z.focusedBorderInvalid, b] },
                                 this._renderLabel(),
                                 n.createElement(
                                     m,
-                                    { "aria-describedby": x, "aria-invalid": E, "aria-labelledby": this._labelID, disabled: l, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, l && i.Z.disabled], testID: h || "", value: _ },
+                                    { "aria-describedby": x, "aria-invalid": E, "aria-labelledby": this._labelID, disabled: l, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [f.select, { fontFamily: o }, l && s.Z.disabled], testID: h || "", value: _ },
                                     k ? n.createElement(p, { disabled: !0, style: f.option, value: "" }) : null,
                                     y.map((e) => {
                                         const { disabled: l, label: a, value: t } = e;
                                         return n.createElement(p, { disabled: l, key: `${a}-${t}`, style: f.option, value: t }, a);
                                     }),
                                 ),
-                                n.createElement(r.default, { style: [f.dropdownCaret, F && i.Z.validColor, !(!c && !a) && i.Z.invalidColor] }),
+                                n.createElement(r.default, { style: [f.dropdownCaret, F && s.Z.validColor, !(!c && !a) && s.Z.invalidColor] }),
                             );
                         }),
                         g ? this._renderHelperText() : null,
@@ -692,8 +692,8 @@
             var n = a(202784),
                 t = a(325686),
                 r = a(827515),
-                s = a(461756),
-                i = a(731708),
+                i = a(461756),
+                s = a(731708),
                 o = a(392237);
             const c = "up",
                 u = "down",
@@ -726,7 +726,7 @@
                         ),
                         n.useEffect(() => {
                             if (b.current)
-                                if (s.Z.reducedMotionEnabled) f((a) => ({ ...a, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
+                                if (i.Z.reducedMotionEnabled) f((a) => ({ ...a, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
                                 else if (l !== y.pendingText) {
                                     l === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? f((e) => ({ ...e, pendingCount: null, pendingText: null })) : (f((a) => ({ ...a, pendingCount: e.count, pendingText: l })), y.animating || d(e.count, l, f));
                                 }
@@ -744,14 +744,14 @@
                         }, [y.animating, y.oldText]),
                         n.useMemo(() => {
                             const e = m[y.transitionDirection],
-                                l = y.oldText && !s.Z.reducedMotionEnabled,
-                                r = !y.animating && y.oldText && !s.Z.reducedMotionEnabled,
+                                l = y.oldText && !i.Z.reducedMotionEnabled,
+                                r = !y.animating && y.oldText && !i.Z.reducedMotionEnabled,
                                 o = { ...p, ...(y.animating ? e.post : e.active) },
                                 c = { ...(r ? e.pre : e.active) };
                             return n.createElement(
                                 t.Z,
                                 { style: [g.root, a] },
-                                l ? n.createElement("span", { style: o }, n.createElement(i.ZP, u, y.oldText)) : null,
+                                l ? n.createElement("span", { style: o }, n.createElement(s.ZP, u, y.oldText)) : null,
                                 n.createElement(
                                     "span",
                                     {
@@ -762,12 +762,26 @@
                                             })(b.current, f),
                                         style: c,
                                     },
-                                    n.createElement(i.ZP, u, y.text),
+                                    n.createElement(s.ZP, u, y.text),
                                 ),
                             );
                         }, [a, u, y, b, f])
                     );
                 };
+        },
+        487552: (e, l, a) => {
+            "use strict";
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                t = a(890601),
+                r = a(783427),
+                i = a(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, r.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
         },
         666536: (e, l, a) => {
             "use strict";
@@ -778,23 +792,23 @@
         },
         936386: (e) => {
             function l(e, l, a) {
-                var n, t, r, s, i;
+                var n, t, r, i, s;
                 function o() {
-                    var c = Date.now() - s;
-                    c < l && c >= 0 ? (n = setTimeout(o, l - c)) : ((n = null), a || ((i = e.apply(r, t)), (r = t = null)));
+                    var c = Date.now() - i;
+                    c < l && c >= 0 ? (n = setTimeout(o, l - c)) : ((n = null), a || ((s = e.apply(r, t)), (r = t = null)));
                 }
                 null == l && (l = 100);
                 var c = function () {
-                    (r = this), (t = arguments), (s = Date.now());
+                    (r = this), (t = arguments), (i = Date.now());
                     var c = a && !n;
-                    return n || (n = setTimeout(o, l)), c && ((i = e.apply(r, t)), (r = t = null)), i;
+                    return n || (n = setTimeout(o, l)), c && ((s = e.apply(r, t)), (r = t = null)), s;
                 };
                 return (
                     (c.clear = function () {
                         n && (clearTimeout(n), (n = null));
                     }),
                     (c.flush = function () {
-                        n && ((i = e.apply(r, t)), (r = t = null), clearTimeout(n), (n = null));
+                        n && ((s = e.apply(r, t)), (r = t = null), clearTimeout(n), (n = null));
                     }),
                     c
                 );
@@ -803,4 +817,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.1a96cdca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserJobs.f137f24a.js.map

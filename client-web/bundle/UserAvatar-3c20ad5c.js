@@ -3,7 +3,7 @@
     ["bundle.UserAvatar-3c20ad5c", "bundle.DirectMessages-6ac0f1a5"],
     {
         187268: (e, t, a) => {
-            a.d(t, { CK: () => S, Ez: () => x, QK: () => v, Sd: () => y, eC: () => w, ky: () => p, w$: () => k });
+            a.d(t, { Ez: () => v, QK: () => y, Sd: () => w, eC: () => S, j: () => k, jU: () => b, ky: () => h, w$: () => E });
             a(543673), a(240753), a(128399);
             var n = a(202784),
                 r = a(392237),
@@ -13,19 +13,20 @@
                 c = a(913315),
                 l = a(355586),
                 u = a(14284),
-                d = a(492244),
-                m = a(397159);
-            const p = { CodeExecution: "code_execution", BrowsePage: "browse_page", XSearch: "x_search", WebSearch: "web_search", XKeywordSearch: "x_keyword_search", XSemanticSearch: "x_semantic_search", XUserSearch: "x_user_search", GetXUserTimeline: "get_x_user_timeline" },
-                h = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
-                _ = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
-                f = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
-                g = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
-            function x(e) {
-                return e.replace(h, (e) => {
+                d = a(976898),
+                m = a(492244),
+                p = a(397159);
+            const h = Object.freeze({ CodeExecution: "code_execution", BrowsePage: "browse_page", XSearch: "x_search", WebSearch: "web_search", XKeywordSearch: "x_keyword_search", XSemanticSearch: "x_semantic_search", XUserSearch: "x_user_search", GetXUserTimeline: "get_x_user_timeline", WebSearchWithSnippets: "web_search_with_snippets" }),
+                _ = /<xai:tool_usage_card>\s*(?:<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>\s*)?<xai:tool_name>([\w-]+)<\/xai:tool_name>\s*(?:<xai:tool_args>([\s\S]*?)<\/xai:tool_args>\s*)<\/xai:tool_usage_card>/g,
+                f = /<xai:tool_name>([\w-]+)<\/xai:tool_name>/,
+                g = /<xai:tool_args>([\s\S]*?)<\/xai:tool_args>/,
+                x = /<xai:tool_usage_card_id>([0-9a-f-]{36})<\/xai:tool_usage_card_id>/;
+            function v(e) {
+                return e.replace(_, (e) => {
                     const t = (function (e) {
-                        const t = e.match(_),
-                            a = e.match(f),
-                            n = e.match(g),
+                        const t = e.match(f),
+                            a = e.match(g),
+                            n = e.match(x),
                             r = t ? t[1] : "",
                             o = a ? a[1] : "",
                             s = n ? n[1] : "";
@@ -35,8 +36,8 @@
                     return t ?? e;
                 });
             }
-            function v(e) {
-                const t = e.match(h);
+            function y(e) {
+                const t = e.match(_);
                 if (t) {
                     const {
                         args: e,
@@ -46,19 +47,19 @@
                         let t = "",
                             a = "",
                             n = "";
-                        const r = e.match(g);
+                        const r = e.match(x);
                         r && (t = r[1]);
-                        const o = e.match(_);
+                        const o = e.match(f);
                         o && (a = o[1]);
-                        const s = e.match(f);
+                        const s = e.match(g);
                         s && (n = s[1].trim());
                         return { id: t, name: a, args: n };
                     })(t[0]);
-                    return y(a, n, e);
+                    return w(a, n, e);
                 }
                 return null;
             }
-            function y(e, t, a) {
+            function w(e, t, a) {
                 const n = a.match(/^<!\[CDATA\[(.*?)\]\]>/ms);
                 let r = {};
                 if (n)
@@ -69,53 +70,77 @@
                     }
                 return { id: e, name: t, args: r };
             }
-            const w = "Using tools";
-            function S(e) {
+            const S = "Using tools";
+            function k(e) {
                 switch (e.name) {
-                    case p.WebSearch:
-                        return m.XR.WebSearchQueryFormatter({ query: e.args.query });
-                    case p.XSearch:
-                    case p.XKeywordSearch:
-                    case p.XSemanticSearch:
-                        return m.XR.XSearchQueryFormatter({ query: e.args.query });
-                    case p.XUserSearch:
-                        return m.XR.XUserSearchFormatter({ query: e.args.query });
-                    case p.BrowsePage: {
+                    case h.WebSearch:
+                    case h.WebSearchWithSnippets:
+                        return p.uk.WebSearchQueryFormatter({ query: e.args.query });
+                    case h.XSearch:
+                    case h.XKeywordSearch:
+                    case h.XSemanticSearch:
+                        return p.uk.XSearchQueryFormatter({ query: e.args.query });
+                    case h.XUserSearch:
+                        return p.uk.XUserSearchFormatter({ query: e.args.query });
+                    case h.BrowsePage: {
                         let t = e.args.url || "";
                         try {
                             t = new URL(t).hostname.replace("www.", "");
                         } catch (e) {}
-                        return e.args.query ? m.XR.GenericURLQueryFormatter({ url: t, query: e.args.query }) : m.XR.BrowsePageFormatter({ url: t });
+                        return e.args.query ? p.uk.GenericURLQueryFormatter({ url: t, query: e.args.query }) : p.uk.BrowsePageFormatter({ url: t });
                     }
-                    case p.GetXUserTimeline:
-                        return m.XR.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
-                    case p.CodeExecution:
-                        return m.XR.CodeExecutionFormatter({ ttc_tool_usage_card: "" });
+                    case h.GetXUserTimeline:
+                        return p.uk.XUsernameQuerySearchFormatter({ query: e.args.query, username: e.args.username });
+                    case h.CodeExecution:
+                        return p.uk.CodeExecutionFormatter({ ttc_tool_usage_card: "" });
                     default:
-                        return e.name ?? w;
+                        return e.name ?? S;
                 }
             }
-            function k(e) {
-                const t = { style: { width: r.default.theme.spaces.space16, height: r.default.theme.spaces.space16 } };
+            function b(e) {
+                switch (e.name) {
+                    case h.WebSearch:
+                    case h.WebSearchWithSnippets:
+                        return p.B2.WebSearchQueryFormatter;
+                    case h.XSearch:
+                    case h.XKeywordSearch:
+                    case h.XSemanticSearch:
+                        return p.B2.XSearchQueryFormatter;
+                    case h.XUserSearch:
+                        return p.B2.XUserSearchFormatter;
+                    case h.BrowsePage:
+                        return p.B2.BrowsePageFormatter;
+                    case h.GetXUserTimeline:
+                        return p.B2.XUsernameQuerySearchFormatter;
+                    case h.CodeExecution:
+                        return p.B2.CodeExecutionFormatter;
+                    default:
+                        return e.name ?? S;
+                }
+            }
+            function E(e, t) {
+                const a = { style: { width: t || r.default.theme.spaces.space16, height: t || r.default.theme.spaces.space16 } };
                 switch (e) {
                     case "search_news":
-                        return n.createElement(o.default, t);
+                        return n.createElement(o.default, a);
                     case "web_search":
-                        return n.createElement(s.default, t);
+                        return n.createElement(s.default, a);
                     case "x_search":
                     case "get_x_user_timeline":
                     case "x_keyword_search":
                     case "x_semantic_search":
                     case "x_user_search":
-                        return n.createElement(i.default, t);
+                        return n.createElement(i.default, a);
                     case "call_finance_api":
-                        return n.createElement(c.default, t);
+                        return n.createElement(c.default, a);
                     case "call_sports_api":
-                        return n.createElement(l.default, t);
+                        return n.createElement(l.default, a);
                     case "browse_page":
-                        return n.createElement(u.default, t);
+                        return n.createElement(u.default, a);
+                    case "code_execution":
+                        return n.createElement(d.default, a);
                     default:
-                        return n.createElement(d.default, t);
+                        return n.createElement(m.default, a);
                 }
             }
         },
@@ -330,17 +355,17 @@
                         },
                         [s, a, g, k],
                     ),
-                    Z = n.useCallback(
+                    F = n.useCallback(
                         async (e, t, a) => {
                             e !== k && (s((0, u.j1)(e, t)), o.ZP.isTwitterApp() || (await s((0, d.O)(g, e))), (0, m.JO)(a, e));
                         },
                         [s, g, k],
                     );
-                return { messageIds: r, access: C, status: x, grokSettingsStatus: v, conversationKey: t, conversationId: y, analysisEntityId: b, accessRestrictedReasons: w, fetchConversationIdStatus: _, fetchConversationIdError: f, mode: g, model: k, changeMode: N, changeModel: Z, usingExperiment: E };
+                return { messageIds: r, access: C, status: x, grokSettingsStatus: v, conversationKey: t, conversationId: y, analysisEntityId: b, accessRestrictedReasons: w, fetchConversationIdStatus: _, fetchConversationIdError: f, mode: g, model: k, changeMode: N, changeModel: F, usingExperiment: E };
             }
         },
         979512: (e, t, a) => {
-            a.d(t, { Z: () => R });
+            a.d(t, { Z: () => U });
             a(136728);
             var n = a(202784),
                 r = a(107267),
@@ -368,9 +393,9 @@
                 C = a(461900),
                 I = a(737368),
                 N = a(654917),
-                Z = a(305442);
-            const F = c().h4d7cbcc;
-            function R() {
+                F = a(305442);
+            const Z = c().h4d7cbcc;
+            function U() {
                 const e = n.useContext(h.ge),
                     t = n.useMemo(() => {
                         const { data: t, flushMethod: a, scribeMethod: n } = e;
@@ -380,13 +405,13 @@
                     o = (0, f.I0)(),
                     i = (0, p.p)(),
                     c = (0, r.useLocation)(),
-                    R = (0, m.hC)("responsive_web_grok_show_citations"),
-                    { conversationKey: U } = (0, N.ZP)(),
-                    A = (0, d.cm)(),
+                    U = (0, m.hC)("responsive_web_grok_show_citations"),
+                    { conversationKey: A } = (0, N.ZP)(),
+                    B = (0, d.cm)(),
                     O = !c.pathname.startsWith("/messages") && !c.pathname.match(".*/status/.+/photo/.+") && !c.pathname.startsWith("/i/grok/feed"),
                     P = (0, r.useHistory)(),
                     X = (0, I.k)(),
-                    B = (0, Z.Z)("drawer"),
+                    R = (0, F.Z)("drawer"),
                     M = (0, f.v9)(g.kX) === x.S.EXPANDED;
                 return {
                     openGrok: n.useCallback(
@@ -398,22 +423,22 @@
                                     const e = await (0, l.o2)(r);
                                     I = await X(e, new AbortController());
                                 } catch (e) {
-                                    i({ text: F });
+                                    i({ text: Z });
                                 }
                             const N = {};
-                            if ((("post_image_annotation" !== _ && "post_image_annotation_fullscreen" !== _) || ((N.imageGen = !0), (0, E.u1)(t, "post_image_annotation_fullscreen" === _, p)), "grok_image_feed" === _ && (N.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void o((0, w.u)({ analytics: t, conversationKey: U })({ text: f, attachments: I ? [I] : void 0, mode: S.IK.REGULAR, returnCitations: R, promptMetadata: h, imageGenerationCount: B, toolOverrides: N, source: _, isDeepsearch: u, isReasoning: m }));
-                            const Z = n ?? s()();
+                            if ((("post_image_annotation" !== _ && "post_image_annotation_fullscreen" !== _) || ((N.imageGen = !0), (0, E.u1)(t, "post_image_annotation_fullscreen" === _, p)), "grok_image_feed" === _ && (N.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void o((0, w.u)({ analytics: t, conversationKey: A })({ text: f, attachments: I ? [I] : void 0, mode: S.IK.REGULAR, returnCitations: U, promptMetadata: h, imageGenerationCount: R, toolOverrides: N, source: _, isDeepsearch: u, isReasoning: m }));
+                            const F = n ?? s()();
                             if (n) {
                                 const e = n || "";
                                 await o((0, y.d)(e, t));
-                            } else o((0, v.Ki)(Z));
-                            if ((A && O ? ((0, E.YW)(t, _), M && o(g.bi(x.S.COLLAPSED)), o((0, k.bi)(b.j.EXPANDED))) : P.push("/i/grok"), e)) o((0, w.u)({ analytics: t, conversationKey: Z })({ text: f, attachments: I ? [I] : void 0, mode: S.IK.REGULAR, promptMetadata: h, returnCitations: R, imageGenerationCount: B, toolOverrides: N, source: _, isDeepsearch: u, isReasoning: m }));
+                            } else o((0, v.Ki)(F));
+                            if ((B && O ? ((0, E.YW)(t, _), M && o(g.bi(x.S.COLLAPSED)), o((0, k.bi)(b.j.EXPANDED))) : P.push("/i/grok"), e)) o((0, w.u)({ analytics: t, conversationKey: F })({ text: f, attachments: I ? [I] : void 0, mode: S.IK.REGULAR, promptMetadata: h, returnCitations: U, imageGenerationCount: R, toolOverrides: N, source: _, isDeepsearch: u, isReasoning: m }));
                             else {
                                 const e = { text: f, attachments: I ? [I] : [] };
-                                d && I ? (e.modeButtonFilterKey = "ImageEdit") : u ? (e.modeButtonFilterKey = "Research") : m && (e.modeButtonFilterKey = "Reasoning"), o((0, v.Uo)(Z, e));
+                                d && I ? (e.modeButtonFilterKey = "ImageEdit") : u ? (e.modeButtonFilterKey = "Research") : m && (e.modeButtonFilterKey = "Reasoning"), o((0, v.Uo)(F, e));
                             }
                         },
-                        [M, i, o, t, a, P, X, A, U, R, O, c.pathname, B],
+                        [M, i, o, t, a, P, X, B, A, U, O, c.pathname, R],
                     ),
                 };
             }
@@ -426,7 +451,7 @@
             }
         },
         623494: (e, t, a) => {
-            a.d(t, { DE: () => h, G$: () => i, HO: () => C, HR: () => F, JO: () => g, Jm: () => b, NH: () => R, RC: () => f, S7: () => Z, UV: () => A, Uk: () => S, YI: () => u, YW: () => N, ZY: () => _, az: () => c, c3: () => s, dP: () => v, dd: () => p, eS: () => k, eV: () => E, hf: () => x, hq: () => l, kl: () => w, mm: () => m, op: () => y, pv: () => o, qQ: () => P, u1: () => I, y6: () => d, zC: () => U, zX: () => O });
+            a.d(t, { DE: () => h, G$: () => i, HO: () => C, HR: () => Z, JO: () => g, Jm: () => b, NH: () => U, RC: () => f, S7: () => F, UV: () => B, Uk: () => S, YI: () => u, YW: () => N, ZY: () => _, az: () => c, c3: () => s, dP: () => v, dd: () => p, eS: () => k, eV: () => E, hf: () => x, hq: () => l, kl: () => w, mm: () => m, op: () => y, pv: () => o, qQ: () => P, u1: () => I, y6: () => d, zC: () => A, zX: () => O });
             var n = a(163889);
             function r() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -503,19 +528,19 @@
             function N(e, t) {
                 X(e)({ element: "grok-drawer-open", action: "success", data: { event_source: t } });
             }
-            function Z(e, t) {
+            function F(e, t) {
                 X(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant }) } });
             }
-            function F(e, t, a) {
+            function Z(e, t, a) {
                 X(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: t.cardType, variant: t.variant, followUpText: a }) } });
             }
-            function R(e) {
+            function U(e) {
                 X(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
-            function U(e, t) {
+            function A(e, t) {
                 X(e)({ element: "grok-memory-detail", action: "click", data: { event_info: t } });
             }
-            function A(e, t) {
+            function B(e, t) {
                 X(e)({ element: "grok-memory-forget", action: "click", data: { event_info: t } });
             }
             function O(e, t, a) {
@@ -645,4 +670,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-3c20ad5c.0f38ecfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-3c20ad5c.c11ed51a.js.map

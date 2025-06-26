@@ -56,8 +56,8 @@
                 B = a(165243),
                 M = a(74514),
                 L = a(405303),
-                _ = a(125363),
-                V = a(654917);
+                V = a(125363),
+                _ = a(654917);
             const H = m().e258000e,
                 $ = m().d591a772,
                 O = m().bc49b728,
@@ -67,8 +67,8 @@
                 G = m().cbdddb0a;
             function K({ analyticsMetricPrefix: e = "message-steps", completed: t }) {
                 const a = (0, y.z)(),
-                    o = (0, V.uf)(),
-                    r = (0, _.v9)(o.selectLastHumanMessage),
+                    o = (0, _.uf)(),
+                    r = (0, V.v9)(o.selectLastHumanMessage),
                     [l, c] = n.useState(!1),
                     [m, d] = n.useState(!1),
                     [p, u] = n.useState(!1),
@@ -133,7 +133,7 @@
                     B = n.useRef(new o.Z.Value(0)).current,
                     M = n.useMemo(() => h.slice(void 0, -1), [h]),
                     L = n.useMemo(() => h[h.length - 1], [h]),
-                    _ = n.useCallback(
+                    V = n.useCallback(
                         (e) => {
                             o.Z.spring(B, { toValue: e.nativeEvent.layout.height, useNativeDriver: !1, speed: 5 }).start();
                         },
@@ -148,7 +148,7 @@
                         { gradientColor: "transparent", onCancelAutoScroll: S, onRestartAutoScroll: T, scrollViewContentContainerStyle: U.scrollViewContentContainerStyle, scrollViewRef: P },
                         n.createElement(
                             s.Z,
-                            { onLayout: _, style: U.headerSteps },
+                            { onLayout: V, style: U.headerSteps },
                             n.createElement(o.Z.View, { style: [U.lineContainer, { height: B }] }, n.createElement(s.Z, { style: U.line })),
                             M.map((e, a) => n.createElement(R, { active: t === e.id, header: e, key: e.id, onStepClick: k, style: U.stepHeaderStatusContainer })),
                         ),
@@ -189,7 +189,7 @@
                 J = n.memo(q);
         },
         791278: (e, t, a) => {
-            a.d(t, { Z: () => f });
+            a.d(t, { Z: () => g });
             a(543673), a(240753), a(128399);
             var n = a(202784),
                 o = a(325686),
@@ -197,57 +197,59 @@
                 r = a(530732),
                 i = a(731708),
                 l = a(392237),
-                c = a(725516),
-                m = a(916559),
-                d = a(966488);
-            function p({ analyticsMetricPrefix: e = "message-steps", isAnimated: t, style: a, webResults: l }) {
-                const p = (0, c.z)(),
-                    [y, f] = n.useState(null),
-                    [g, h] = n.useState(!1),
-                    b = n.useCallback((e) => {
-                        f(e);
+                c = a(630715),
+                m = a(725516),
+                d = a(916559),
+                p = a(966488);
+            function u({ analyticsMetricPrefix: e = "message-steps", isAnimated: t, style: a, webResults: l }) {
+                const u = (0, m.z)(),
+                    [f, g] = n.useState(null),
+                    [h, b] = n.useState(!1),
+                    [C, w] = n.useState(!1),
+                    S = n.useCallback((e) => {
+                        g(e);
                     }, []);
                 return n.createElement(
                     o.Z,
-                    { style: [u.container, a] },
+                    { style: [y.container, a] },
                     n.createElement(
                         o.Z,
-                        { style: u.results },
+                        { style: y.results },
                         l.slice(0, 5).map((a, l) =>
                             n.createElement(
                                 o.Z,
-                                { key: a.url, style: [u.webResultContainer, t ? [u.animatedWebResultContainer, { animationDelay: 0.1 * l + 0.5 + "s" }] : void 0] },
-                                a.favicon_base64 ? n.createElement(s.Z, { source: { uri: a.favicon_base64 }, style: u.favicon }) : null,
+                                { key: a.url, style: [y.webResultContainer, t ? [y.animatedWebResultContainer, { animationDelay: 0.1 * l + 0.5 + "s" }] : void 0] },
+                                a.favicon && !C ? n.createElement(s.Z, { onError: () => w(!0), source: a.favicon, style: y.favicon }) : n.createElement(c.default, { style: y.favicon }),
                                 a.title &&
                                     n.createElement(
                                         r.Z,
                                         {
-                                            interactiveStyles: u.interactiveWebResultContainer,
+                                            interactiveStyles: y.interactiveWebResultContainer,
                                             onClick: () => {
-                                                b(a), p.scribe({ element: `${e}-web-results`, action: "click", data: { event_info: a.url } });
+                                                S(a), u.scribe({ element: `${e}-web-results`, action: "click", data: { event_info: a.url } });
                                             },
-                                            style: u.titleContainer,
+                                            style: y.titleContainer,
                                         },
-                                        ({ isHovered: e }) => n.createElement(i.ZP, { numberOfLines: 1, style: [u.title, e ? u.hoveredTitle : void 0] }, a.title),
+                                        ({ isHovered: e }) => n.createElement(i.ZP, { numberOfLines: 1, style: [y.title, e ? y.hoveredTitle : void 0] }, a.title),
                                     ),
-                                n.createElement(o.Z, { style: u.urlContainer }, n.createElement(i.ZP, { numberOfLines: 1, style: u.url }, new URL(a.url).hostname)),
+                                n.createElement(o.Z, { style: y.urlContainer }, n.createElement(i.ZP, { numberOfLines: 1, style: y.url }, new URL(a.url).hostname)),
                             ),
                         ),
                         l.length > 5 &&
-                            n.createElement(d.Z, {
+                            n.createElement(p.Z, {
                                 count: l.length - 5,
                                 onClick: () => {
-                                    h(!0), p.scribe({ element: `${e}-web-results`, action: "click", data: { event_info: "see-all" } });
+                                    b(!0), u.scribe({ element: `${e}-web-results`, action: "click", data: { event_info: "see-all" } });
                                 },
                             }),
                     ),
-                    y ? n.createElement(m.E, { onDrawerDismiss: () => f(null), webResults: [y] }) : null,
-                    g ? n.createElement(m.E, { onDrawerDismiss: () => h(!1), paginationOptions: { numResultsPerPage: 25 }, webResults: l }) : null,
+                    f ? n.createElement(d.E, { onDrawerDismiss: () => g(null), webResults: [f] }) : null,
+                    h ? n.createElement(d.E, { onDrawerDismiss: () => b(!1), paginationOptions: { numResultsPerPage: 25 }, webResults: l }) : null,
                 );
             }
-            const u = l.default.create((e) => ({ container: { display: "flex", flex: 1, opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, results: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, interactiveWebResultContainer: { backgroundColor: "transparent" }, webResultContainer: { display: "flex", flexDirection: "row", alignItems: "center", maxWidth: "100%", gap: e.spaces.space8, borderBottomWidth: 1, borderBottomColor: "transparent", borderBottomStyle: "solid", transition: "border-bottom-color 0.1s ease" }, animatedWebResultContainer: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { backgroundColor: e.colors.gray50 }, "50%": { backgroundColor: e.colors.gray100 }, "100%": { backgroundColor: e.colors.gray50 } }] }, favicon: { width: e.spaces.space12, height: e.spaces.space12, borderRadii: e.borderRadii.medium }, titleContainer: { maxWidth: "100%", textOverflow: "ellipsis", overflow: "hidden", flexGrow: 0, flexShrink: 1 }, title: { fontSize: e.fontSizes.subtext2, color: e.colors.gray900, cursor: "pointer" }, hoveredTitle: { textDecorationLine: "underline" }, urlContainer: {}, url: { fontSize: e.fontSizes.subtext2, color: e.colors.gray700 } })),
-                y = (e, t) => e.webResults.length === t.webResults.length && e.style === t.style && e.isAnimated === t.isAnimated,
-                f = n.memo(p, y);
+            const y = l.default.create((e) => ({ container: { display: "flex", flex: 1, opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, results: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, interactiveWebResultContainer: { backgroundColor: "transparent" }, webResultContainer: { display: "flex", flexDirection: "row", alignItems: "center", maxWidth: "100%", gap: e.spaces.space8, borderBottomWidth: 1, borderBottomColor: "transparent", borderBottomStyle: "solid", transition: "border-bottom-color 0.1s ease" }, animatedWebResultContainer: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { backgroundColor: e.colors.gray50 }, "50%": { backgroundColor: e.colors.gray100 }, "100%": { backgroundColor: e.colors.gray50 } }] }, favicon: { width: e.spaces.space12, height: e.spaces.space12, borderRadii: e.borderRadii.medium }, titleContainer: { maxWidth: "100%", textOverflow: "ellipsis", overflow: "hidden", flexGrow: 0, flexShrink: 1 }, title: { fontSize: e.fontSizes.subtext2, color: e.colors.gray900, cursor: "pointer" }, hoveredTitle: { textDecorationLine: "underline" }, urlContainer: {}, url: { fontSize: e.fontSizes.subtext2, color: e.colors.gray700 } })),
+                f = (e, t) => e.webResults.length === t.webResults.length && e.style === t.style && e.isAnimated === t.isAnimated,
+                g = n.memo(u, f);
         },
         229177: (e, t, a) => {
             a.d(t, { Z: () => T });
@@ -371,28 +373,28 @@
                     { accumulatedTrace: D, isPastSummary: R, state: z, steps: A, traceEnabled: B } = p,
                     M = "COMPLETED" === z,
                     L = "ABORTED" === z,
-                    _ = n.useRef(null);
+                    V = n.useRef(null);
                 n.useEffect(() => {
                     const e = () => {
                         b.current && !x && b.current.scrollToEnd({ animated: !0 }), h.current && !w && h.current.scrollToEnd({ animated: !0 });
                     };
-                    return R || (_.current = window.setInterval(e, 1e3)), () => window.clearInterval(_.current);
+                    return R || (V.current = window.setInterval(e, 1e3)), () => window.clearInterval(V.current);
                 }, [w, x, R]),
                     n.useEffect(() => {
-                        M && !R && window.clearInterval(_.current);
+                        M && !R && window.clearInterval(V.current);
                     }, [M, x, w, R]);
-                const V = n.useCallback((e) => {
+                const _ = n.useCallback((e) => {
                         b.current && b.current.scrollTo({ y: e, animated: !0 });
                     }, []),
                     H = n.useCallback(
                         (e) => {
                             if ((T(e), void 0 !== C.current[e])) {
                                 const t = 40;
-                                V(Math.max(C.current[e] - t, 0));
+                                _(Math.max(C.current[e] - t, 0));
                             }
                             g.scribe({ component: "message-steps-header-click", action: "click", element: A.find((t) => t.id === e)?.header || "" });
                         },
-                        [V, g, A],
+                        [_, g, A],
                     ),
                     $ = n.useMemo(() => A.map((e) => ({ id: e.id, label: e.header, state: e.state, isCompleteHeader: e.isCompleteHeader })), [A]);
                 return n.createElement(
@@ -458,33 +460,29 @@
             const u = s.default.create((e) => ({ container: { marginBottom: e.spaces.space16, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], overflow: "hidden", borderWidth: 1, borderStyle: "solid", borderColor: e.colors.gray300, borderRadius: e.spaces.space24, marginHorizontal: e.spaces.space16, display: "flex", flexDirection: "row", height: 400, backgroundColor: e.colors.gray0, transition: "all 0.2s ease", start: 0 }, expandedContainer: { height: 500, width: "110%", start: -40 }, drawerContainer: { height: 230 }, mobileContainer: { height: 350 }, leftPanel: { width: 200 }, rightPanel: { flex: 1 } }));
         },
         673787: (e, t, a) => {
-            a.d(t, { Z: () => R });
+            a.d(t, { Z: () => k });
             a(136728);
             var n = a(202784),
                 o = a(325686),
                 s = a(392237),
                 r = a(721266),
                 i = a(731708),
-                l = a(154003),
-                c = a(111677),
-                m = a.n(c),
-                d = a(19197),
-                p = a(187669),
-                u = a(952793),
-                y = a(988290),
-                f = a(630961),
-                g = a(25825),
-                h = a(956272),
-                b = a(323265),
-                C = a(397159),
-                w = a(20716),
-                S = a(207683),
-                x = a(791278),
-                E = a(229177);
-            function v({ analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: a, isCompactLayout: r, isLoading: i, step: l, style: c }) {
+                l = a(187669),
+                c = a(952793),
+                m = a(988290),
+                d = a(630961),
+                p = a(25825),
+                u = a(956272),
+                y = a(323265),
+                f = a(397159),
+                g = a(20716),
+                h = a(207683),
+                b = a(791278),
+                C = a(229177);
+            function w({ analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: a, isCompactLayout: r, isLoading: i, step: l, style: c }) {
                 const m = n.useCallback(
                         (e) => {
-                            if (e.summary) return n.createElement(o.Z, { style: [P.subStepContainer, r && P.compactSubStepContainer] }, n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(S.default, { citations: e.webResults, disableLinks: b.ZP.isWebView(), isAnimated: a, isStreaming: i, markdownText: e.summary || "", toolUsageCardResults: e.toolUsageCardResults })));
+                            if (e.summary) return n.createElement(o.Z, { style: [v.subStepContainer, r && v.compactSubStepContainer] }, n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(h.default, { citations: e.webResults, disableLinks: y.ZP.isWebView(), isAnimated: a, isStreaming: i, markdownText: e.summary || "", toolUsageCardResults: e.toolUsageCardResults })));
                         },
                         [a, r, i],
                     ),
@@ -494,51 +492,50 @@
                                 const t = e.actionIcon,
                                     a = e.actionMarkdownSummary,
                                     i = e.actionState,
-                                    l = (t && (0, w.wG)(t)) || h.default;
-                                return n.createElement(o.Z, { style: [P.subStepContainer, P.decisionSubStepContainer, r && P.compactSubStepContainer] }, n.createElement(o.Z, { style: P.subStepIconContainer }, n.createElement(g.Z, { color: s.default.theme.colors.gray900, size: "small", style: [P.decisionIcon, "STARTED" === i ? P.showActivityDecisionIcon : void 0, "STARTED" !== i ? P.hideActivityDecisionIcon : void 0] }), n.createElement(l, { style: [P.subStepIcon, P.decisionIcon, "COMPLETED" === i ? P.showDecisionIcon : void 0] })), n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(S.default, { disableLinks: b.ZP.isWebView(), isAnimated: !1, markdownText: a })));
+                                    l = (t && (0, g.wG)(t)) || u.default;
+                                return n.createElement(o.Z, { style: [v.subStepContainer, v.decisionSubStepContainer, r && v.compactSubStepContainer] }, n.createElement(o.Z, { style: v.subStepIconContainer }, n.createElement(p.Z, { color: s.default.theme.colors.gray900, size: "small", style: [v.decisionIcon, "STARTED" === i ? v.showActivityDecisionIcon : void 0, "STARTED" !== i ? v.hideActivityDecisionIcon : void 0] }), n.createElement(l, { style: [v.subStepIcon, v.decisionIcon, "COMPLETED" === i ? v.showDecisionIcon : void 0] })), n.createElement("div", { className: "message-steps-card-sub-step-markdown-text" }, n.createElement(h.default, { disableLinks: y.ZP.isWebView(), isAnimated: !1, markdownText: a })));
                             }
                         },
                         [r],
                     ),
-                    p = n.useCallback((t) => (t.webResults && t.webResults.length > 0 ? n.createElement(o.Z, { style: [P.subStepContainer, P.resultsSubStepContainer, r && P.compactSubStepContainer] }, n.createElement(o.Z, { style: P.subStepIconContainer }), n.createElement(x.Z, { analyticsMetricPrefix: e, isAnimated: a, style: P.resultsContainer, webResults: t.webResults })) : t.xPostIds && t.xPostIds.length > 0 ? n.createElement(E.Z, { analyticsMetricPrefix: e, isAnimated: a, scrollViewContentContainerStyle: [P.xPostsScrollViewContentContainer, r && P.compactXPostsScrollViewContentContainer], seeMoreButtonStyle: [P.xPostsSeeMoreButton, r && P.compactXPostsSeeMoreButton], style: P.resultsContainer, xPostIds: t.xPostIds }) : void 0), [a, e, r]);
+                    w = n.useCallback((t) => (t.webResults && t.webResults.length > 0 ? n.createElement(o.Z, { style: [v.subStepContainer, v.resultsSubStepContainer, r && v.compactSubStepContainer] }, n.createElement(o.Z, { style: v.subStepIconContainer }), n.createElement(b.Z, { analyticsMetricPrefix: e, isAnimated: a, style: v.resultsContainer, webResults: t.webResults })) : t.xPostIds && t.xPostIds.length > 0 ? n.createElement(C.Z, { analyticsMetricPrefix: e, isAnimated: a, scrollViewContentContainerStyle: [v.xPostsScrollViewContentContainer, r && v.compactXPostsScrollViewContentContainer], seeMoreButtonStyle: [v.xPostsSeeMoreButton, r && v.compactXPostsSeeMoreButton], style: v.resultsContainer, xPostIds: t.xPostIds }) : void 0), [a, e, r]);
                 return n.createElement(
                     o.Z,
-                    { onLayout: t && t(l.id), style: [P.step, c] },
-                    l.subSteps.map((e, t) => n.createElement(o.Z, { key: `${l.id}-${e.messageTag}-${e.messageStepId}-${t}` }, e.messageTag === C.iS.SUMMARY && m(e), e.messageTag === C.iS.DECISION && n.createElement(n.Fragment, null, d(e), p(e)))),
+                    { onLayout: t && t(l.id), style: [v.step, c] },
+                    l.subSteps.map((e, t) => n.createElement(o.Z, { key: `${l.id}-${e.messageTag}-${e.messageStepId}-${t}` }, e.messageTag === f.iS.SUMMARY && m(e), e.messageTag === f.iS.DECISION && n.createElement(n.Fragment, null, d(e), w(e)))),
                 );
             }
-            const T = s.default.theme.spacesPx.space20,
-                k = s.default.theme.spacesPx.space12,
-                Z = s.default.theme.spacesPx.space16,
-                P = s.default.create((e) => ({
+            const S = s.default.theme.spacesPx.space20,
+                x = s.default.theme.spacesPx.space12,
+                E = s.default.theme.spacesPx.space16,
+                v = s.default.create((e) => ({
                     step: { display: "flex", flexDirection: "column", gap: e.spaces.space12 },
-                    subStepContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingHorizontal: T },
+                    subStepContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingHorizontal: S },
                     decisionSubStepContainer: { paddingHorizontal: e.spaces.space28 },
                     resultsSubStepContainer: { paddingHorizontal: e.spaces.space28 },
-                    compactSubStepContainer: { paddingHorizontal: k },
-                    subStepIconContainer: { width: Z, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" },
+                    compactSubStepContainer: { paddingHorizontal: x },
+                    subStepIconContainer: { width: E, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" },
                     subStepIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 },
                     decisionIcon: { position: "absolute", top: "50%", start: "50%", transform: "translate(-50%, -50%) scale(0)", opacity: 0 },
                     showDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(1)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(1.1)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(1)" } }] },
                     showActivityDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(0.8)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" } }] },
                     hideActivityDecisionIcon: { opacity: 0, transform: "translate(-50%, -50%) scale(0)", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" }, "100%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" } }] },
                     resultsContainer: { marginTop: e.spaces.space12 },
-                    xPostsScrollViewContentContainer: { paddingHorizontal: T + Z + e.spacesPx.space8 },
-                    compactXPostsScrollViewContentContainer: { paddingHorizontal: k + Z + e.spacesPx.space8 },
-                    xPostsSeeMoreButton: { marginStart: T + Z + e.spacesPx.space8 },
-                    compactXPostsSeeMoreButton: { marginStart: k + Z + e.spacesPx.space8 },
+                    xPostsScrollViewContentContainer: { paddingHorizontal: S + E + e.spacesPx.space8 },
+                    compactXPostsScrollViewContentContainer: { paddingHorizontal: x + E + e.spacesPx.space8 },
+                    xPostsSeeMoreButton: { marginStart: S + E + e.spacesPx.space8 },
+                    compactXPostsSeeMoreButton: { marginStart: x + E + e.spacesPx.space8 },
                 })),
-                I = n.memo(v),
-                D = m().ge15b488;
-            function R({ analyticsMetricPrefix: e = "message-steps", handleStepLayout: t, isLoading: a, messageStepAccumulator: c, onCancelAutoScroll: m, onRestartAutoScroll: g, onShowTrace: h, scrollViewRef: b, style: C }) {
-                const { isPastSummary: w, steps: S, traceEnabled: x } = c,
-                    { isCompactLayout: E, isGrokDrawer: v } = (0, y.ZP)(),
-                    T = (0, u.hC)("responsive_web_grok_animated_text_enabled");
-                (0, p.q)(() => {
+                T = n.memo(w);
+            function k({ analyticsMetricPrefix: e = "message-steps", handleStepLayout: t, isLoading: a, messageStepAccumulator: p, onCancelAutoScroll: u, onRestartAutoScroll: y, onShowTrace: f, scrollViewRef: g, style: h }) {
+                const { isPastSummary: b, steps: C } = p,
+                    { isCompactLayout: w, isGrokDrawer: S } = (0, m.ZP)(),
+                    x = (0, c.hC)("responsive_web_grok_animated_text_enabled");
+                (0, l.q)(() => {
                     const e = "message-steps-card-sub-step";
                     if (document.getElementById(e)) return;
                     const t = document.createElement("style");
-                    t.setAttribute("id", e), (t.textContent = `\n        .message-steps-card-sub-step-markdown-text {\n          flex: 1;\n          max-width: 100%;\n        }\n  \n        .message-steps-card-sub-step-markdown-text li {\n          margin-top: 4px !important;\n          padding-left: 5px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text ul {\n          margin-bottom: 0px !important;\n          position: relative !important;\n          left: -4px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text span {\n          ${v || E ? `font-size: ${s.default.theme.fontSizes.subtext1} !important;` : ""}\n        }\n      `);
+                    t.setAttribute("id", e), (t.textContent = `\n        .message-steps-card-sub-step-markdown-text {\n          flex: 1;\n          max-width: 100%;\n        }\n  \n        .message-steps-card-sub-step-markdown-text li {\n          margin-top: 4px !important;\n          padding-left: 5px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text ul {\n          margin-bottom: 0px !important;\n          position: relative !important;\n          left: -4px !important;\n        }\n  \n        .message-steps-card-sub-step-markdown-text span {\n          ${S || w ? `font-size: ${s.default.theme.fontSizes.subtext1} !important;` : ""}\n        }\n      `);
                     const a = document.head;
                     return (
                         a && a.appendChild(t),
@@ -548,30 +545,29 @@
                         }
                     );
                 });
-                const k = T && !w,
-                    Z = n.useMemo(() => {
+                const E = x && !b,
+                    v = n.useMemo(() => {
                         const e = [];
-                        for (let t = 0; t < 3 * S.length; t += 3) e.push(t);
+                        for (let t = 0; t < 3 * C.length; t += 3) e.push(t);
                         return e;
-                    }, [S]);
+                    }, [C]);
                 return n.createElement(
                     o.Z,
-                    { style: [z.container, C] },
+                    { style: [Z.container, h] },
                     n.createElement(r.Z, { size: "space8" }),
                     n.createElement(
-                        f.Z,
-                        { gradientColor: "transparent", onCancelAutoScroll: m, onRestartAutoScroll: g, scrollViewContentContainerStyle: z.scrollViewContentContainerStyle, scrollViewRef: b, stickyHeaderIndices: Z },
+                        d.Z,
+                        { gradientColor: "transparent", onCancelAutoScroll: u, onRestartAutoScroll: y, scrollViewContentContainerStyle: Z.scrollViewContentContainerStyle, scrollViewRef: g, stickyHeaderIndices: v },
                         n.createElement(
                             n.Fragment,
                             null,
-                            S.flatMap((s, l) => [n.createElement(o.Z, { key: `${s.id}-header`, style: [z.headerContainer, { zIndex: l + 1 }] }, n.createElement(i.ZP, { style: z.header, weight: "bold" }, s.header)), n.createElement(I, { analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: k, isCompactLayout: E, isLoading: a, key: `${s.id}-step`, step: s }), n.createElement(r.Z, { key: `${s.id}-spacer`, size: "space20" })]),
+                            C.flatMap((s, l) => [n.createElement(o.Z, { key: `${s.id}-header`, style: [Z.headerContainer, { zIndex: l + 1 }] }, n.createElement(i.ZP, { style: Z.header, weight: "bold" }, s.header)), n.createElement(T, { analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: E, isCompactLayout: w, isLoading: a, key: `${s.id}-step`, step: s }), n.createElement(r.Z, { key: `${s.id}-spacer`, size: "space20" })]),
                             n.createElement(r.Z, { size: "space48" }),
                         ),
                     ),
-                    x && h && n.createElement(l.ZP, { backgroundColor: "gray0", borderColor: "gray200", icon: n.createElement(d.default, { style: z.traceIcon }), onClick: h, size: "small", style: z.traceButton }, n.createElement(i.ZP, { style: z.traceText }, D)),
                 );
             }
-            const z = s.default.create((e) => ({ container: { flex: 1, position: "relative" }, scrollViewContentContainerStyle: { display: "flex", flexDirection: "column" }, headerContainer: { paddingHorizontal: e.spacesPx.space20, backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space12, opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, compactHeaderContainer: { paddingHorizontal: e.spacesPx.space12 }, header: {}, traceButton: { width: "max-content", position: "absolute", bottom: e.spaces.space16, end: e.spaces.space16 }, traceIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, traceText: { fontWeight: e.fontWeights.regular, color: e.colors.gray900, fontSize: e.fontSizes.subtext2 } }));
+            const Z = s.default.create((e) => ({ container: { flex: 1, position: "relative" }, scrollViewContentContainerStyle: { display: "flex", flexDirection: "column" }, headerContainer: { paddingHorizontal: e.spacesPx.space20, backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space12, opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, compactHeaderContainer: { paddingHorizontal: e.spacesPx.space12 }, header: {}, traceButton: { width: "max-content", position: "absolute", bottom: e.spaces.space16, end: e.spaces.space16 }, traceIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, traceText: { fontWeight: e.fontWeights.regular, color: e.colors.gray900, fontSize: e.fontSizes.subtext2 } }));
         },
         767075: (e, t, a) => {
             a.d(t, { Z: () => r });
@@ -950,16 +946,16 @@
                     { accumulatedTrace: I, deepsearchArgs: D, isPastSummary: R, state: z, steps: A, traceEnabled: B } = s,
                     M = "COMPLETED" === z,
                     L = "ABORTED" === z,
-                    _ = !!D && "deeper" === D.mode,
-                    V = n.useRef(null);
+                    V = !!D && "deeper" === D.mode,
+                    _ = n.useRef(null);
                 n.useEffect(() => {
                     const e = () => {
                         c.current && !f && c.current.scrollToEnd({ animated: !0 }), i.current && !p && i.current.scrollToEnd({ animated: !0 });
                     };
-                    return R || (V.current = window.setInterval(e, 1e3)), () => window.clearInterval(V.current);
+                    return R || (_.current = window.setInterval(e, 1e3)), () => window.clearInterval(_.current);
                 }, [p, f, R]),
                     n.useEffect(() => {
-                        M && !R && (c.current && !f && c.current.scrollToEnd({ animated: !0 }), i.current && !p && i.current.scrollToEnd({ animated: !0 }), window.clearInterval(V.current));
+                        M && !R && (c.current && !f && c.current.scrollToEnd({ animated: !0 }), i.current && !p && i.current.scrollToEnd({ animated: !0 }), window.clearInterval(_.current));
                     }, [M, f, p, R]);
                 const H = n.useCallback((e) => {
                         c.current && c.current.scrollTo({ y: e, animated: !0 });
@@ -1002,7 +998,7 @@
                         scrollViewRef: i,
                         setExpanded: P,
                         style: v.leftPanel,
-                        title: x(M, !1, _),
+                        title: x(M, !1, V),
                     }),
                     n.createElement(g.Z, {
                         analyticsMetricPrefix: S,
@@ -1104,4 +1100,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.71d9621a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.1331f3aa.js.map

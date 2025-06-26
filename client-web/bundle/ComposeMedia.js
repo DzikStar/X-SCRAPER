@@ -1,21 +1,101 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ComposeMedia"],
+    ["bundle.ComposeMedia", "icons/IconCropSquare-js", "icons/IconDraggable-js"],
     {
-        751170: (e, t, i) => {
-            i.d(t, { A: () => h, Z: () => y });
+        625661: (e, t, i) => {
+            i.d(t, { ZP: () => h });
             var a = i(202784),
-                s = i(325686),
-                n = i(167630),
-                o = i(992942),
-                r = i(392237),
+                o = i(614983),
+                r = i.n(o),
+                n = i(325686),
+                s = i(370006),
+                l = i(786998),
+                d = i(929028),
+                c = i(386802);
+            function u(e, t, i) {
+                return e || (!t && i ? "fixed" : void 0);
+            }
+            class h extends a.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._handleBackClick = () => {
+                            const { history: e, onBackClick: t } = this.props;
+                            r()(t || e, "Either onBackClick must be specified, or history should be supplied"), t ? t(this.goBack) : this.goBack();
+                        }),
+                        (this.goBack = () => {
+                            const { backLocation: e, history: t } = this.props;
+                            t && t.goBack({ backLocation: e });
+                        });
+                }
+                _renderContent() {
+                    const { backButtonType: e, centerTitle: t, centeredLogo: i, fixed: o, hideBackButton: r, isFullWidth: n, isLarge: d, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: b, style: g, subtitle: f, title: y, titleDomId: v, titleIconCell: C, titleIconCellSize: _, withBackground: w, withWideContainer: P } = this.props,
+                        { isModal: E } = this.context,
+                        M = r ? c : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        B = (function (e, t, i) {
+                            return e && !(t && i);
+                        })(!!w, E, !!b);
+                    return a.createElement(a.Fragment, null, a.createElement(l.Z, { centerTitle: t, centeredLogo: i, isFullWidth: n, isLarge: d, leftControl: M, middleControl: h, position: u(p, E, o), rightControl: m, style: g, subtitle: f, title: y, titleDomId: v, titleIconCell: C, titleIconCellSize: _, withBackground: B, withWideContainer: P }), b || null);
+                }
+                render() {
+                    const { secondaryBar: e } = this.props,
+                        { isModal: t } = this.context,
+                        i = d.Z.getBackgroundStyles();
+                    return t ? a.createElement(n.Z, { style: !!e && i }, this._renderContent()) : this._renderContent();
+                }
+            }
+            (h.contextType = c.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+        },
+        980407: (e, t, i) => {
+            i.d(t, { Z: () => b, w: () => p });
+            var a = i(202784),
+                o = i(325686),
+                r = i(108362),
+                n = i(386802),
+                s = i(392237),
+                l = i(652904),
+                d = i(555079),
+                c = i(625661),
+                u = i(449067),
+                h = i(715601);
+            class p extends a.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._renderChildViewAppBar = () => {
+                            const { appBarRef: e, appBarStyle: t, backButtonType: i, backLocation: r, centerTitle: n, hideBackButton: s, history: l, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: b, rightControl: g, secondaryBar: f, subtitle: y, title: v } = this.props,
+                                { isModal: C } = this.context;
+                            return a.createElement(o.Z, { style: C ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, a.createElement(c.ZP, { backButtonType: i || (C ? "close" : "back"), backLocation: r, centerTitle: n, fixed: !C, hideBackButton: s, history: l, isFullWidth: u, isLarge: h, middleControl: p, onBackClick: b, ref: e, rightControl: g, secondaryBar: f, style: [C && m.appBarModal, t], subtitle: y, title: v, titleDomId: d.Q_ }));
+                        }),
+                        (this._handleLayout = (e) => {
+                            const { onLayout: t } = this.props,
+                                { isModal: i } = this.context;
+                            t && (i ? window.requestAnimationFrame(() => t(e)) : t(e));
+                        });
+                }
+                render() {
+                    const { "aria-hidden": e, bottomBar: t, children: i, containerStyle: n, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: p, title: b, withoutBottomBarMobile: g } = this.props,
+                        { isModal: f } = this.context,
+                        y = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return a.createElement(l.Z, null, a.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: b }), a.createElement(o.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, f && m.rootModal] }, !f && y, a.createElement(r.Z, { isFullWidth: d, isLarge: c, style: [m.container, f && m.containerModal, n] }, f ? a.createElement(h.Z, { style: m.viewport }, y, i) : i), t ? a.createElement(o.Z, { style: [m.bottomBarModal, !f && !g && m.bottomBarMobile] }, a.createElement(r.Z, { isFullWidth: d, isLarge: c }, t)) : null));
+                }
+            }
+            (p.defaultProps = { isFullWidth: !1, isLarge: !1 }), (p.contextType = n.Z);
+            const m = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: s.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
+                b = p;
+        },
+        751170: (e, t, i) => {
+            i.d(t, { A: () => m, Z: () => y });
+            var a = i(202784),
+                o = i(325686),
+                r = i(167630),
+                n = i(992942),
+                s = i(392237),
                 l = i(111677),
                 d = i.n(l),
                 c = i(205074),
                 u = i(364837),
-                m = i(908478);
+                h = i(908478);
             const p = d().gff1f69e,
-                h = Object.freeze({ INFINITE: "infinite", MEDIUM: "medium", NONE: "none" });
+                m = Object.freeze({ INFINITE: "infinite", MEDIUM: "medium", NONE: "none" });
             class b extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -41,49 +121,49 @@
                             }));
                 }
                 shouldComponentUpdate(e, t) {
-                    return !(0, m.Z)(e, this.props) || !(0, m.Z)(t, this.state);
+                    return !(0, h.Z)(e, this.props) || !(0, h.Z)(t, this.state);
                 }
                 render() {
-                    const { borderRadius: e, enableGif: t, mediaItem: i, onClick: r, resizeMode: l } = this.props,
+                    const { borderRadius: e, enableGif: t, mediaItem: i, onClick: s, resizeMode: l } = this.props,
                         { imagePreviewUrl: d } = this.state || {},
                         c = i.mediaFile && i.mediaFile.isGif && !t && !d,
                         u = i.needsProcessing || c,
-                        m = [g.root, f[e], u && g.loadingBorder],
-                        h = this._getImageSrc();
-                    return a.createElement(s.Z, { onClick: r, style: m }, u || !h ? a.createElement(n.Z, { "aria-label": p, style: g.activityIndicator }) : a.createElement(o.Z, { resizeMode: l, source: h, style: g.image }));
+                        h = [f.root, g[e], u && f.loadingBorder],
+                        m = this._getImageSrc();
+                    return a.createElement(o.Z, { onClick: s, style: h }, u || !m ? a.createElement(r.Z, { "aria-label": p, style: f.activityIndicator }) : a.createElement(n.Z, { resizeMode: l, source: m, style: f.image }));
                 }
             }
-            b.defaultProps = { borderRadius: h.NONE, enableGif: !0, resizeMode: "cover" };
-            const f = r.default.create((e) => ({ [h.INFINITE]: { borderRadius: e.borderRadii.infinite }, [h.MEDIUM]: { borderRadius: e.borderRadii.small }, [h.NONE]: { borderRadius: e.borderRadii.none } })),
-                g = r.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
+            b.defaultProps = { borderRadius: m.NONE, enableGif: !0, resizeMode: "cover" };
+            const g = s.default.create((e) => ({ [m.INFINITE]: { borderRadius: e.borderRadii.infinite }, [m.MEDIUM]: { borderRadius: e.borderRadii.small }, [m.NONE]: { borderRadius: e.borderRadii.none } })),
+                f = s.default.create((e) => ({ root: { borderRadius: e.borderRadii.xLarge, borderStyle: "solid", borderWidth: e.borderWidths.none, borderColor: "transparent", maxWidth: "100%", height: "100%", overflow: "hidden" }, image: { display: "block", height: "100%", width: "100%" }, loadingBorder: { borderColor: e.colors.gray300 }, activityIndicator: { height: "100%" } })),
                 y = b;
         },
         304059: (e, t, i) => {
-            i.d(t, { Z: () => L });
+            i.d(t, { Z: () => U });
             var a = i(202784),
-                s = i(325686),
-                n = i(537392),
-                o = i(336961),
-                r = i(659651),
+                o = i(325686),
+                r = i(537392),
+                n = i(336961),
+                s = i(659651),
                 l = i(154003),
                 d = i(392237),
                 c = i(992942),
                 u = i(111677),
-                m = i.n(u),
+                h = i.n(u),
                 p = i(678773),
-                h = i(597237),
+                m = i(597237),
                 b = i(254944),
-                f = i(837020),
-                g = i(276259),
+                g = i(837020),
+                f = i(276259),
                 y = i(443781),
                 v = i(10656),
-                _ = i(716233),
-                P = i(946208),
-                M = i(540387),
-                E = i(950822),
-                w = i(303186),
-                I = i(954300);
-            class C extends a.Component {
+                C = i(716233),
+                _ = i(946208),
+                w = i(540387),
+                P = i(950822),
+                E = i(303186),
+                M = i(954300);
+            class B extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -92,32 +172,32 @@
                         });
                 }
                 render() {
-                    const { children: e, dataSaverMode: t, getVideoRef: i, style: s, variants: n, ...o } = this.props,
-                        r = (0, w.IM)((0, I.rD)(n), t);
-                    return (0, E.Z)("video", { ...o, children: [r.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: s });
+                    const { children: e, dataSaverMode: t, getVideoRef: i, style: o, variants: r, ...n } = this.props,
+                        s = (0, E.IM)((0, M.rD)(r), t);
+                    return (0, P.Z)("video", { ...n, children: [s.map((e) => a.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: o });
                 }
             }
-            C.defaultProps = { dataSaverMode: !1, variants: [] };
-            var Z = i(959587),
-                S = i(751170),
-                D = i(523561),
-                F = i(195560);
-            const x = (0, D.Z)({
+            B.defaultProps = { dataSaverMode: !1, variants: [] };
+            var I = i(959587),
+                Z = i(751170),
+                k = i(523561),
+                x = i(195560);
+            const S = (0, k.Z)({
                     loader: () =>
-                        Promise.all([i.e("icons.5"), i.e("icons.28"), i.e("icons.17"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.25"), i.e("icons.13"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.4"), i.e("icons.1"), i.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([i.e("icons.25"), i.e("icons.22"), i.e("icons.6"), i.e("icons.2"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.0"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
                             .then(i.bind(i, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
-                    renderPlaceholder: (e, t) => a.createElement(F.Z, { hasError: e, onRetry: t }),
+                    renderPlaceholder: (e, t) => a.createElement(x.Z, { hasError: e, onRetry: t }),
                 }),
-                k = m().gd80afba,
-                R = m().j322caee,
-                T = m().abd845fe,
-                V = m().df1b0708,
-                G = m().cd959e5c,
-                B = m().e68b09b4,
-                z = m().add55c98,
-                A = m().f350cf46;
-            class U extends a.Component {
+                T = h().gd80afba,
+                F = h().j322caee,
+                R = h().abd845fe,
+                D = h().df1b0708,
+                L = h().cd959e5c,
+                V = h().e68b09b4,
+                z = h().add55c98,
+                A = h().f350cf46;
+            class G extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { isVideoPaused: !0, playGif: !1 }),
@@ -130,12 +210,12 @@
                             if (!a) return;
                             const {
                                     nativeEvent: {
-                                        layout: { height: s, width: n },
+                                        layout: { height: o, width: r },
                                     },
                                 } = e,
-                                { height: o, width: r } = a,
-                                l = r / o;
-                            Math.abs(l - n / s) > 0.05 && ("width" === i ? this.setState({ mediaContainerSizeStyle: { width: s * l } }) : "height" === i && this.setState({ mediaContainerSizeStyle: { height: n / l } }));
+                                { height: n, width: s } = a,
+                                l = s / n;
+                            Math.abs(l - r / o) > 0.05 && ("width" === i ? this.setState({ mediaContainerSizeStyle: { width: o * l } }) : "height" === i && this.setState({ mediaContainerSizeStyle: { height: r / l } }));
                         }),
                         (this._handleVideoOnPlay = (e) => {
                             this.setState({ isVideoPaused: !1 });
@@ -162,14 +242,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: m, style: y, withAltTextLabel: _, withCloseButton: P, withDragAndDropIndicator: M, withEditButton: E, withEditIcon: w, withEditSensitiveWarningButton: I } = this.props,
-                        { mediaContainerSizeStyle: C, playGif: S } = this.state,
-                        D = i.externalMediaDetails && i.externalMediaDetails.mediaType === g.Re,
-                        F = D || (t && i.mediaFile && i.mediaFile.isGif),
-                        x = !!i.mediaFile?.isVideo;
-                    return a.createElement(n.ZP, null, ({ windowWidth: t }) => {
-                        const i = void 0 !== w ? w : !v.Z.isTwoColumnLayout(t);
-                        return a.createElement(s.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: m, style: [y, O.cursor, D && O.gifPlayButton, C] }, this._renderPreview(), D && !S && a.createElement(o.Z, { "aria-label": V, onPress: this._handleGifClick, size: "small" }), F ? a.createElement(Z.ZP, { type: Z.AM }) : null, _ && !x ? a.createElement(r.Z, { align: "left", altLabel: e }) : null, a.createElement(s.Z, { style: O.editMedia }, M ? a.createElement(l.ZP, { "aria-label": A, hoverLabel: { label: A }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && I ? a.createElement(l.ZP, { "aria-label": R, icon: a.createElement(h.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(l.ZP, { "aria-label": k, icon: i ? a.createElement(b.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : T) : null), P ? a.createElement(l.ZP, { "aria-label": G, hoverLabel: { label: B }, icon: a.createElement(f.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                    const { "aria-label": e, enableGif: t, mediaItem: i, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: h, style: y, withAltTextLabel: C, withCloseButton: _, withDragAndDropIndicator: w, withEditButton: P, withEditIcon: E, withEditSensitiveWarningButton: M } = this.props,
+                        { mediaContainerSizeStyle: B, playGif: Z } = this.state,
+                        k = i.externalMediaDetails && i.externalMediaDetails.mediaType === f.Re,
+                        x = k || (t && i.mediaFile && i.mediaFile.isGif),
+                        S = !!i.mediaFile?.isVideo;
+                    return a.createElement(r.ZP, null, ({ windowWidth: t }) => {
+                        const i = void 0 !== E ? E : !v.Z.isTwoColumnLayout(t);
+                        return a.createElement(o.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: h, style: [y, W.cursor, k && W.gifPlayButton, B] }, this._renderPreview(), k && !Z && a.createElement(n.Z, { "aria-label": D, onPress: this._handleGifClick, size: "small" }), x ? a.createElement(I.ZP, { type: I.AM }) : null, C && !S ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(o.Z, { style: W.editMedia }, w ? a.createElement(l.ZP, { "aria-label": A, hoverLabel: { label: A }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && M ? a.createElement(l.ZP, { "aria-label": F, icon: a.createElement(m.default, { style: W.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? a.createElement(l.ZP, { "aria-label": T, icon: i ? a.createElement(b.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : R) : null), _ ? a.createElement(l.ZP, { "aria-label": L, hoverLabel: { label: V }, icon: a.createElement(g.default, null), onPress: u, size: "small", style: W.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -179,79 +259,119 @@
                             i = e.externalMediaDetails.stillMediaUrl;
                         return this._renderGifPreview(t, i);
                     }
-                    return e.mediaFile?.isVideo ? this._renderVideoPreview(e.mediaFile.type, e.mediaFile.url, e.id, e.mediaFile) : a.createElement(s.Z, { style: d.default.absoluteFill }, this._renderImagePreview());
+                    return e.mediaFile?.isVideo ? this._renderVideoPreview(e.mediaFile.type, e.mediaFile.url, e.id, e.mediaFile) : a.createElement(o.Z, { style: d.default.absoluteFill }, this._renderImagePreview());
                 }
                 _renderGifPreview(e, t) {
                     const { playGif: i } = this.state,
-                        n = { uri: i ? e : t };
-                    return a.createElement(s.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: n, style: O.video }));
+                        r = { uri: i ? e : t };
+                    return a.createElement(o.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, a.createElement(c.Z, { resizeMode: "cover", source: r, style: W.video }));
                 }
                 _renderImagePreview() {
-                    const { borderRadius: e, enableGif: t, imageResizeMode: i, mediaItem: s, onClick: n } = this.props;
-                    return a.createElement(S.Z, { borderRadius: e, enableGif: t, mediaItem: s, onClick: n, resizeMode: i });
+                    const { borderRadius: e, enableGif: t, imageResizeMode: i, mediaItem: o, onClick: r } = this.props;
+                    return a.createElement(Z.Z, { borderRadius: e, enableGif: t, mediaItem: o, onClick: r, resizeMode: i });
                 }
-                _renderVideoPreview(e, t, i, s) {
-                    const { mediaItem: n } = this.props,
-                        o = n.mediaMetadata?.subtitles;
-                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && s instanceof M.ZP) {
-                        let o = [];
-                        (0, _.TO)(s.fileHandle) && (o = [{ src: t, type: e }]);
-                        const r = n.mediaMetadata?.subtitles,
-                            l = n?.trimData;
-                        return a.createElement(x, { mediaFile: s, mediaId: String(i), mediaItem: n, subtitles: r, trimData: l, variants: o });
+                _renderVideoPreview(e, t, i, o) {
+                    const { mediaItem: r } = this.props,
+                        n = r.mediaMetadata?.subtitles;
+                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && o instanceof w.ZP) {
+                        let n = [];
+                        (0, C.TO)(o.fileHandle) && (n = [{ src: t, type: e }]);
+                        const s = r.mediaMetadata?.subtitles,
+                            l = r?.trimData;
+                        return a.createElement(S, { mediaFile: o, mediaId: String(i), mediaItem: r, subtitles: s, trimData: l, variants: n });
                     }
                     {
-                        const i = (0, _.TO)(s.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return a.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: s instanceof M.ZP ? s.thumbnail : "", style: O.video, variants: i }, o?.upload?.mediaFile instanceof P.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        const i = (0, C.TO)(o.fileHandle) ? [{ content_type: e, url: t }] : [];
+                        return a.createElement(B, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: o instanceof w.ZP ? o.thumbnail : "", style: W.video, variants: i }, n?.upload?.mediaFile instanceof _.ZP ? a.createElement("track", { default: !0, kind: "subtitles", label: n.displayName, src: n.upload.mediaFile.vtt, srcLang: n.lang }) : null);
                     }
                 }
             }
-            (U.contextType = y.rC), (U.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
-            const O = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
-                L = U;
+            (G.contextType = y.rC), (G.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
+            const W = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
+                U = G;
         },
         959587: (e, t, i) => {
-            i.d(t, { AM: () => l, ZP: () => m, pX: () => d });
+            i.d(t, { AM: () => l, ZP: () => h, pX: () => d });
             var a = i(202784),
-                s = i(731708),
-                n = i(659651),
-                o = i(392237),
-                r = i(548721);
+                o = i(731708),
+                r = i(659651),
+                n = i(392237),
+                s = i(548721);
             const l = "animated_gif",
                 d = "video",
                 c = (e) => {
                     const { durationInMilliseconds: t, type: i } = e;
-                    let o;
-                    if (i === l) o = a.createElement(s.ZP, { weight: "bold" }, "GIF");
-                    else if ("vine" === i) o = a.createElement(r.default, { "aria-label": "Vine", style: u.icon });
+                    let n;
+                    if (i === l) n = a.createElement(o.ZP, { weight: "bold" }, "GIF");
+                    else if ("vine" === i) n = a.createElement(s.default, { "aria-label": "Vine", style: u.icon });
                     else if (i === d && t) {
                         const e = Math.trunc(t / 6e4).toString(),
                             i = Math.trunc((t % 6e4) / 1e3)
                                 .toString()
                                 .padStart(2, "0");
-                        o = a.createElement(s.ZP, { color: "white" }, `${e}:${i}`);
+                        n = a.createElement(o.ZP, { color: "white" }, `${e}:${i}`);
                     }
-                    return o ? a.createElement(n.Z, { align: "left" }, o) : null;
+                    return n ? a.createElement(r.Z, { align: "left" }, n) : null;
                 },
-                u = o.default.create((e) => ({ icon: { color: e.colors.white } })),
-                m = a.memo(c);
+                u = n.default.create((e) => ({ icon: { color: e.colors.white } })),
+                h = a.memo(c);
+        },
+        652904: (e, t, i) => {
+            i.d(t, { Z: () => c });
+            var a = i(202784),
+                o = i(500002),
+                r = i(668214),
+                n = i(997174),
+                s = i(118823);
+            const l = (0, r.Z)()
+                .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: n.NH }))
+                .withAnalytics();
+            class d extends a.Component {
+                componentDidMount() {
+                    this._performPageUpdates(this.props);
+                }
+                componentDidUpdate(e) {
+                    const {
+                            history: { location: t },
+                            location: { pathname: i, search: a },
+                            locationKey: o,
+                        } = this.props,
+                        {
+                            location: { pathname: r, search: n },
+                            locationKey: s,
+                        } = e;
+                    let l = !1;
+                    t.pathname !== i ? (this._isInBackground = !0) : this._isInBackground && t.pathname === i && ((this._isInBackground = !1), (l = !0));
+                    const d = o || s;
+                    ((d && o !== s) || (!d && i !== r) || a !== n || l) && this._performPageUpdates(this.props);
+                }
+                render() {
+                    return this.props.children;
+                }
+                _performPageUpdates(e) {
+                    const { analytics: t, updateLocation: i, updateTweetDetailNav: a } = e;
+                    t.scribePageImpression(), i(t.contextualScribeNamespace, t.contextualScribeData), a(t.contextualScribeNamespace);
+                }
+            }
+            d.defaultProps = { children: null };
+            const c = (0, o.ZP)(l(d));
         },
         513313: (e, t, i) => {
             i.d(t, { P: () => a });
             const a = Object.freeze({ Crop: "crop", AltText: "alt_text", SensitiveMedia: "sensitive_media", Subtitles: "subtitles", Trimmer: "trimmer" });
         },
         343362: (e, t, i) => {
-            i.r(t), i.d(t, { TabbedMediaEditScreen: () => b, default: () => f });
+            i.r(t), i.d(t, { TabbedMediaEditScreen: () => b, default: () => g });
             var a = i(807896),
-                s = i(202784),
-                n = i(443781),
-                o = i(536210),
-                r = (i(136728), i(668214)),
+                o = i(202784),
+                r = i(443781),
+                n = i(536210),
+                s = (i(136728), i(668214)),
                 l = i(497294),
                 d = i(632960);
             const c = (e, t) => {
                     const i = t.location?.state?.showAllMedia;
-                    return i ? u(e) : m(e);
+                    return i ? u(e) : h(e);
                 },
                 u = (e) => {
                     const t = d.tS(e),
@@ -262,50 +382,50 @@
                     }
                     return (0, l.m3)(e, i);
                 },
-                m = (e) => {
+                h = (e) => {
                     const t = d.E_(e),
                         i = d.tS(e)[t].mediaIds || [];
                     return (0, l.m3)(e, i);
                 },
                 p = (e, t) => t.location?.state?.mediaId,
-                h = (0, r.Z)()
+                m = (0, s.Z)()
                     .propsFromState(() => ({ initialMediaId: p, media: c }))
                     .propsFromActions(() => ({ setMediaMetadata: l._B, processMedia: l.C4, updateMediaUpload: l._J }))
                     .withAnalytics({ page: "tabbed_media" });
-            class b extends s.Component {
+            class b extends o.Component {
                 constructor(e, t) {
                     super(e, t);
-                    const { history: i, initialMediaId: a, media: s } = e;
-                    (s.length <= 0 || !a) && i.replace("/");
+                    const { history: i, initialMediaId: a, media: o } = e;
+                    (o.length <= 0 || !a) && i.replace("/");
                 }
                 render() {
                     const e = this.context.featureSwitches.isTrue("sensitive_tweet_warnings_enabled"),
-                        { match: t, staticContext: i, ...n } = this.props;
-                    return s.createElement(o.Z, (0, a.Z)({}, n, { sensitiveMediaTabEnabled: e }));
+                        { match: t, staticContext: i, ...r } = this.props;
+                    return o.createElement(n.Z, (0, a.Z)({}, r, { sensitiveMediaTabEnabled: e }));
                 }
             }
-            b.contextType = n.rC;
-            const f = h(b);
+            b.contextType = r.rC;
+            const g = m(b);
         },
         583813: (e, t, i) => {
-            i.r(t), i.d(t, { TabbedMediaEditScreen: () => m, default: () => p });
+            i.r(t), i.d(t, { TabbedMediaEditScreen: () => h, default: () => p });
             var a = i(807896),
-                s = i(202784),
-                n = i(536210),
-                o = i(668214),
-                r = i(798538),
+                o = i(202784),
+                r = i(536210),
+                n = i(668214),
+                s = i(798538),
                 l = i(497294);
             const d = (e, t) => t.location && t.location.state && t.location.state.mediaId,
                 c = (e, t) => {
                     const i = ((e, t) => t.location?.state?.conversationId)(0, t);
-                    return (0, r.W8)(e, i);
+                    return (0, s.W8)(e, i);
                 },
-                u = (0, o.Z)()
+                u = (0, n.Z)()
                     .propsFromState(() => ({ media: c, initialMediaId: d }))
                     .adjustStateProps(({ initialMediaId: e, media: t }) => ({ media: t ? [t] : [], initialMediaId: e }))
                     .propsFromActions(() => ({ setMediaMetadata: l._B, processMedia: l.C4, updateMediaUpload: l._J }))
                     .withAnalytics({ page: "tabbed_media_dm" });
-            class m extends s.Component {
+            class h extends o.Component {
                 constructor(e) {
                     super(e);
                     const { history: t, initialMediaId: i, media: a } = e;
@@ -313,38 +433,38 @@
                 }
                 render() {
                     const { match: e, staticContext: t, ...i } = this.props;
-                    return s.createElement(n.Z, (0, a.Z)({}, i, { sensitiveMediaTabEnabled: !1 }));
+                    return o.createElement(r.Z, (0, a.Z)({}, i, { sensitiveMediaTabEnabled: !1 }));
                 }
             }
-            const p = u(m);
+            const p = u(h);
         },
         109006: (e, t, i) => {
-            i.r(t), i.d(t, { PhotoTagsScreen: () => Z, default: () => D });
+            i.r(t), i.d(t, { PhotoTagsScreen: () => I, default: () => k });
             var a = i(202784),
-                s = i(325686),
-                n = i(834324),
-                o = i(154003),
-                r = i(392237),
+                o = i(325686),
+                r = i(834324),
+                n = i(154003),
+                s = i(392237),
                 l = i(111677),
                 d = i.n(l),
                 c = i(47086),
                 u = i(908478),
-                m = i(625661),
+                h = i(625661),
                 p = i(980407),
-                h = i(597496),
+                m = i(597496),
                 b = i(339110),
-                f = i(161821),
-                g = i(668214),
+                g = i(161821),
+                f = i(668214),
                 y = i(632960),
                 v = i(104140);
-            const _ = (e) => {
+            const C = (e) => {
                     const t = y.E_(e);
                     return y.tS(e)[t].mediaTags;
                 },
-                P = (e) => {
+                _ = (e) => {
                     const t = ((e) => {
                         const t = (0, v.sM)(e),
-                            i = (t && (0, f.Z)(t)) || [];
+                            i = (t && (0, g.Z)(t)) || [];
                         return (0, b.It)(i);
                     })(e)
                         .filter((e) => e && e.rounded_score)
@@ -353,75 +473,75 @@
                         });
                     return t.slice(0, 12);
                 },
-                M = (0, g.Z)()
-                    .propsFromState(() => ({ existingTags: _, injections: P }))
+                w = (0, f.Z)()
+                    .propsFromState(() => ({ existingTags: C, injections: _ }))
                     .propsFromActions(() => ({ updateSingleComposer: y.zi }))
                     .withAnalytics({ page: "media_tag", component: "media_tagger" }),
-                E = d().b772cd66,
-                w = d().c20dc654,
-                I = d().d1175c78,
-                C = d().ae0831ab;
-            function Z(e) {
-                const { history: t, injections: i, existingTags: r = [], updateSingleComposer: l } = e,
-                    [d, f] = a.useState(r),
-                    [g, y] = a.useState(""),
+                P = d().b772cd66,
+                E = d().c20dc654,
+                M = d().d1175c78,
+                B = d().ae0831ab;
+            function I(e) {
+                const { history: t, injections: i, existingTags: s = [], updateSingleComposer: l } = e,
+                    [d, g] = a.useState(s),
+                    [f, y] = a.useState(""),
                     v = (e) => {
-                        f(d.filter(({ id: t }) => t !== e.id));
+                        g(d.filter(({ id: t }) => t !== e.id));
+                    },
+                    C = () => {
+                        const e = d.map((e) => e.data.id_str).sort(),
+                            t = s.map((e) => e.data.id_str).sort(),
+                            i = e.length === t.length && (0, u.Z)(e, t);
+                        return a.createElement(o.Z, { style: Z.rightColumn }, a.createElement(n.ZP, { disabled: i, onPress: w, size: "small", type: "primaryFilled" }, P));
                     },
                     _ = () => {
-                        const e = d.map((e) => e.data.id_str).sort(),
-                            t = r.map((e) => e.data.id_str).sort(),
-                            i = e.length === t.length && (0, u.Z)(e, t);
-                        return a.createElement(s.Z, { style: S.rightColumn }, a.createElement(o.ZP, { disabled: i, onPress: M, size: "small", type: "primaryFilled" }, E));
-                    },
-                    P = () => {
                         t.goBack();
                     },
-                    M = () => {
+                    w = () => {
                         l({ updates: { mediaTags: d } }), t.goBack();
                     };
                 return a.createElement(
                     p.Z,
-                    { documentTitle: I, history: t, renderHeader: () => a.createElement(m.ZP, { backButtonType: "close", history: t, onBackClick: P, rightControl: _(), title: I }) },
-                    a.createElement(h.fb, {
+                    { documentTitle: M, history: t, renderHeader: () => a.createElement(h.ZP, { backButtonType: "close", history: t, onBackClick: _, rightControl: C(), title: M }) },
+                    a.createElement(m.fb, {
                         getItemDisabledMessage: (e) => {
                             let t;
-                            return e.type !== b.El.User || e.data.can_media_tag || (t = C({ screenName: e.data.screen_name })), t;
+                            return e.type !== b.El.User || e.data.can_media_tag || (t = B({ screenName: e.data.screen_name })), t;
                         },
                         getItemIsDisabled: (e) => {
                             const t = d.length >= 10;
                             return e.type === b.El.User && (!e.data.can_media_tag || !!t);
                         },
-                        injections: g ? void 0 : i,
+                        injections: f ? void 0 : i,
                         onQueryChange: (e) => {
                             y(e);
                         },
                         onRemove: v,
                         onSelect: (e) => {
-                            e.type === b.El.User && (d.find(({ id: t }) => t === e.id) ? v(e) : d.length < 10 && f([...d, e]));
+                            e.type === b.El.User && (d.find(({ id: t }) => t === e.id) ? v(e) : d.length < 10 && g([...d, e]));
                         },
-                        renderCallout: () => (d.length >= 10 ? a.createElement(s.Z, { style: S.inlineCallout }, a.createElement(n.Z, { Icon: c.default, headline: w, type: "warning" })) : null),
+                        renderCallout: () => (d.length >= 10 ? a.createElement(o.Z, { style: Z.inlineCallout }, a.createElement(r.Z, { Icon: c.default, headline: E, type: "warning" })) : null),
                         selectedUsers: d,
                         source: b._4.ComposeMediaTagging,
                         withCompactPills: !0,
                     }),
                 );
             }
-            const S = r.default.create((e) => ({ rightColumn: { flexDirection: "row", flexGrow: 1, alignItems: "center" }, inlineCallout: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space4, paddingTop: e.spaces.space8 } })),
-                D = M(Z);
+            const Z = s.default.create((e) => ({ rightColumn: { flexDirection: "row", flexGrow: 1, alignItems: "center" }, inlineCallout: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space4, paddingTop: e.spaces.space8 } })),
+                k = w(I);
         },
         449161: (e, t, i) => {
-            i.d(t, { Z: () => h });
+            i.d(t, { Z: () => m });
             var a = i(807896),
-                s = i(202784),
-                n = i(111677),
-                o = i.n(n),
-                r = i(154003),
+                o = i(202784),
+                r = i(111677),
+                n = i.n(r),
+                s = i(154003),
                 l = i(950822),
                 d = i(392237);
-            const c = o().i5450bec,
-                u = o().f7432494;
-            class m extends s.Component {
+            const c = n().i5450bec,
+                u = n().f7432494;
+            class h extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handlePress = (e) => {
@@ -439,15 +559,45 @@
                         });
                 }
                 render() {
-                    const { accept: e, disabled: t, multiple: i, onChange: n, testID: o, ...d } = this.props,
-                        m = !(e?.includes("video") || e?.includes("gif"));
-                    return s.createElement(s.Fragment, null, s.createElement(r.ZP, (0, a.Z)({ hoverLabel: e ? { label: m ? u : c } : void 0 }, d, { disabled: t, onPress: this._handlePress })), (0, l.Z)("input", { accept: e, disabled: t, multiple: i, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: p.input, tabIndex: -1, testID: o, type: "file" }));
+                    const { accept: e, disabled: t, multiple: i, onChange: r, testID: n, ...d } = this.props,
+                        h = !(e?.includes("video") || e?.includes("gif"));
+                    return o.createElement(o.Fragment, null, o.createElement(s.ZP, (0, a.Z)({ hoverLabel: e ? { label: h ? u : c } : void 0 }, d, { disabled: t, onPress: this._handlePress })), (0, l.Z)("input", { accept: e, disabled: t, multiple: i, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: p.input, tabIndex: -1, testID: n, type: "file" }));
                 }
             }
-            m.defaultProps = { disabled: !1, multiple: !1 };
+            h.defaultProps = { disabled: !1, multiple: !1 };
             const p = d.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
-                h = m;
+                m = h;
+        },
+        183806: (e, t, i) => {
+            i.d(t, { Z: () => a });
+            const a = i(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+        },
+        390587: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => l });
+            var a = i(202784),
+                o = i(890601),
+                r = i(783427),
+                n = i(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        678773: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => l });
+            var a = i(202784),
+                o = i(890601),
+                r = i(783427),
+                n = i(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ComposeMedia.b0b2b45a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ComposeMedia.a2da026a.js.map

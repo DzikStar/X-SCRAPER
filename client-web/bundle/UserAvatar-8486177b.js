@@ -3,7 +3,7 @@
     ["bundle.UserAvatar-8486177b", "bundle.GrokDrawer-8486177b", "bundle.DirectMessages-8486177b", "shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => D, Es: () => E, F0: () => te, F9: () => q, JE: () => x, JU: () => T, Ki: () => V, NV: () => N, OR: () => w, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => U, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => K, j1: () => J, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => $, vf: () => B, zO: () => M });
+            s.d(t, { BU: () => K, Es: () => E, F0: () => te, F9: () => $, JE: () => x, JU: () => T, Ki: () => V, NV: () => N, OR: () => H, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => w, X4: () => X, YJ: () => W, bD: () => b, bv: () => U, en: () => ee, f: () => S, hi: () => D, j1: () => q, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => J, vf: () => B, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -523,13 +523,13 @@
             function P(e) {
                 return e[m.Yf].fetchHomeStatus;
             }
-            function H(e) {
+            function U(e) {
                 return e[m.Yf].conversationHistory.items;
             }
-            function w(e) {
+            function H(e) {
                 return e[m.Yf].pinnedConversations.items;
             }
-            function U(e) {
+            function w(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
             function N(e) {
@@ -538,10 +538,10 @@
             function x(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
-            function D(e) {
+            function K(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
-            function K(e) {
+            function D(e) {
                 return e[m.Yf].mediaHistory.status;
             }
             function O(e) {
@@ -571,13 +571,13 @@
             function B(e) {
                 return e[m.Yf].modelOptions;
             }
-            function q(e) {
+            function $(e) {
                 const t = e[m.Yf].modelOptions,
                     s = e[m.Yf].selectedModel,
                     n = !!t.find((e) => e.id === s);
                 return (s && n ? s : t[0]?.id) ?? void 0;
             }
-            function J(e, t) {
+            function q(e, t) {
                 if (c.ZP.isTwitterApp()) {
                     const s = window.webkit?.messageHandlers?.grokWebviewEventMessageHandler;
                     if (s) {
@@ -587,7 +587,7 @@
                 }
                 return { type: m.WK, payload: e };
             }
-            function $(e) {
+            function J(e) {
                 return { type: m.BA, payload: e };
             }
             function j(e) {
@@ -746,7 +746,7 @@
             );
         },
         155918: (e, t, s) => {
-            s.d(t, { CI: () => r, EG: () => a, VU: () => i, dj: () => o });
+            s.d(t, { CI: () => r, EG: () => a, TK: () => c, VU: () => i, dj: () => o });
             s(136728);
             var n = s(623494);
             const r = Object.freeze({ HUMAN: 1, ASSISTANT: 2 });
@@ -783,7 +783,10 @@
                 const t = e.fileAttachments && e.fileAttachments.length > 0 && e.fileAttachments.every((e) => e.mimeType.startsWith("image"));
                 return { mediaIds: t ? (e.fileAttachments || []).map((e) => e.mediaId).filter(Boolean) : [], mediaUrls: t ? (e.fileAttachments || []).map((e) => e.url).filter(Boolean) : [] };
             }
+            function c(e) {
+                return `https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(e)}&size=256`;
+            }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8486177b.eba195ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8486177b.1ecaeb3a.js.map

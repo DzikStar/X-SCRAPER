@@ -314,7 +314,7 @@
             const p = r.default.create((e) => ({ container: { width: "100%", maxWidth: "100%" }, contentContainer: { width: "100%", maxWidth: "100%", overflow: "hidden" }, contentWrapper: { width: "100%", maxWidth: "100%", position: "relative" }, foldShadow: { position: "absolute", zIndex: 100, bottom: "100%", start: 0, width: "100%", maxWidth: "100%", height: e.spaces.space36 }, seeMoreLabel: { marginTop: e.spaces.space8, marginBottom: e.spaces.space12, cursor: "pointer" }, seeMoreContainer: { position: "absolute", width: "100%", bottom: 0, backgroundColor: e.colors.cellBackground, overflow: "visible", zIndex: 100 } }));
         },
         667945: (e, t, a) => {
-            a.d(t, { Z: () => Ie });
+            a.d(t, { Z: () => _e });
             var n = a(202784),
                 s = a(325686),
                 o = a(731708),
@@ -597,87 +597,90 @@
                 fe = a(299399),
                 ye = a(545519),
                 be = a(468603),
-                Ce = a(567778),
-                Ee = a(986274),
-                we = a(915066),
-                xe = a(618770),
-                Te = a(917118),
-                Se = a(674756);
-            const ve = l().b327c12a,
-                ke = l().ca93f2ee;
-            function Ie({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: i, id: c, isDeleted: l, isLoading: E, isAborted: w, query: x, sender: T, text: S, trace: v, tweetIds: I = [], upsell: _, webResults: z = [], citedWebResults: R = [], intermediateImageResults: D = [], promptSource: P, cardAttachments: A, followUpSuggestedMode: H, performanceMetrics: W, userChatItemId: B, mediaTweetIds: L, chatResponseAnnotations: N, isLastResponse: M, messageStepAccumulator: F, isPastThinkingTrace: O, disclaimer: $, chatItemId: V, expectedImageAspectRatio: G, memoryReferences: K, reasoningLayout: j }) {
+                Ce = a(159210),
+                Ee = a(567778),
+                we = a(997041),
+                xe = a(986274),
+                Te = a(915066),
+                Se = a(618770),
+                ve = a(917118),
+                ke = a(674756);
+            const Ie = l().b327c12a,
+                Ze = l().ca93f2ee;
+            function _e({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: i, id: c, isDeleted: l, isLoading: E, isAborted: w, query: x, sender: T, text: S, trace: v, tweetIds: I = [], upsell: _, webResults: z = [], citedWebResults: R = [], intermediateImageResults: D = [], promptSource: P, cardAttachments: A, followUpSuggestedMode: H, performanceMetrics: W, userChatItemId: B, mediaTweetIds: L, chatResponseAnnotations: N, isLastResponse: M, messageStepAccumulator: F, isPastThinkingTrace: O, disclaimer: $, chatItemId: V, expectedImageAspectRatio: G, memoryReferences: K, reasoningLayout: j }) {
                 const U = (0, m.hC)("responsive_web_grok_animated_text_enabled"),
                     q = (0, m.hC)("responsive_web_grok_analyze_helpful_feedback"),
                     J = (0, m.hC)("responsive_web_grok_show_grok_performance_metrics"),
                     Y = (0, m.hC)("responsive_web_grok_show_grok_tweet_media"),
-                    { isCompactLayout: X, isShowButtons: Q } = (0, k.ZP)(),
-                    [ee, te] = n.useState(!1),
-                    ae = U && !!E,
-                    ne = (0, ge.u)(S || "", ae),
-                    se = (0, ge.u)(v || "", ae),
-                    oe = (0, u.v9)((e) => g.ZP.select(e, h.c0)),
-                    re = "UNIFIED" === j,
-                    { completedTimestamp: ie, fromTimestamp: ce } = (0, ye.V)(a, V ?? "", W),
-                    le = n.useRef(null),
-                    de = q && "analyze_post" === P,
-                    pe = n.useMemo(() => [...z, ...R], [z, R]),
-                    ue = n.useMemo(() => (A || []).filter((e) => !e.id), [A]);
-                if (!oe) return null;
-                const Ie = i && i.length > 0 && i[0].mimeType.startsWith("image"),
-                    _e = $ ? [...t, $] : t,
-                    ze = I.length > 0 || z.length > 0;
+                    X = (0, m.hC)("responsive_web_grok_use_collapsed_preview"),
+                    { isCompactLayout: Q, isShowButtons: ee } = (0, k.ZP)(),
+                    [te, ae] = n.useState(!1),
+                    ne = U && !!E,
+                    se = (0, ge.u)((0, we.M)(S || ""), ne),
+                    oe = (0, ge.u)(v || "", ne),
+                    re = (0, u.v9)((e) => g.ZP.select(e, h.c0)),
+                    ie = "UNIFIED" === j,
+                    { completedTimestamp: ce, fromTimestamp: le } = (0, ye.V)(a, V ?? "", W),
+                    de = n.useRef(null),
+                    pe = q && "analyze_post" === P,
+                    ue = n.useMemo(() => [...z, ...R], [z, R]),
+                    _e = n.useMemo(() => (A || []).filter((e) => !e.id), [A]);
+                if (!re) return null;
+                const Re = i && i.length > 0 && i[0].mimeType.startsWith("image"),
+                    De = $ ? [...t, $] : t,
+                    Pe = I.length > 0 || z.length > 0;
                 return n.createElement(
                     s.Z,
-                    { style: [Ze.container, X ? Ze.compactContainer : void 0] },
+                    { style: [ze.container, Q ? ze.compactContainer : void 0] },
                     n.createElement(
                         s.Z,
-                        { style: Ze.content },
+                        { style: ze.content },
                         n.createElement(be.ZP, {
-                            completedTimestamp: ie,
-                            expanded: ee,
-                            fromTimestamp: ce,
+                            completedTimestamp: ce,
+                            expanded: te,
+                            fromTimestamp: le,
                             hasCardAttachments: A && A.length > 0,
-                            isImageResponse: Ie,
+                            isImageResponse: Re,
                             isLoading: E,
                             messageStepAccumulator: F,
                             onClick: () => {
-                                te(!ee);
+                                ae(!te);
                             },
-                            onComplete: () => te(!1),
+                            onComplete: () => ae(!1),
                             reasoningLayout: j,
                             searchQuery: x,
-                            shownText: ne,
-                            shownTrace: se,
-                            style: Ze.status,
+                            shownText: se,
+                            shownTrace: oe,
+                            style: ze.status,
+                            useTypingStatus: !X,
                         }),
-                        F && re && n.createElement(r.Z, { show: ee, type: "slide" }, n.createElement(he.Z, { completedTimestamp: ie, fromTimestamp: ce, hideSidePanel: !0, isLoading: E, messageStepAccumulator: F })),
-                        F && !re && "PENDING" !== F.state && (X ? n.createElement(me, { completedTimestamp: ie, fromTimestamp: ce, messageStepAccumulator: F }) : n.createElement(Z.ZP, { completedTimestamp: ie, fromTimestamp: ce, isLoading: E, messageStepAccumulator: F })),
-                        "" !== se && !re && n.createElement(fe.Z, { completed: !("" !== se && "" === ne && E), endStreamTimestamp: ie, fromTimestamp: ce, hasResponseText: !!S, id: c ?? "", isPastThinkingTrace: O, performanceMetrics: W ?? {}, shownTrace: se }),
-                        Ie ? n.createElement(s.Z, { style: [Ze.textContainer, ae ? Ze.animation : null] }, n.createElement(o.ZP, { color: "gray700", size: "subtext1" }, ve)) : null,
-                        n.createElement(xe.K, { expectedImageAspectRatio: G, fileAttachments: i, intermediateImageResults: D, isAborted: w, isLoading: E, messageId: c }),
-                        ue.length > 0 &&
+                        F && n.createElement(n.Fragment, null, ie && (X ? n.createElement(Ce.Z, { completedTimestamp: ce, expanded: te, fromTimestamp: le, isLoading: E, isStatusExpanded: te, messageStepAccumulator: F }) : n.createElement(r.Z, { show: te, type: "slide" }, n.createElement(he.Z, { completedTimestamp: ce, fromTimestamp: le, hideSidePanel: !0, isLoading: E, messageStepAccumulator: F }))), !ie && "PENDING" !== F.state && (Q ? n.createElement(me, { completedTimestamp: ce, fromTimestamp: le, messageStepAccumulator: F }) : n.createElement(Z.ZP, { completedTimestamp: ce, fromTimestamp: le, isLoading: E, messageStepAccumulator: F }))),
+                        "" !== oe && !ie && n.createElement(fe.Z, { completed: !("" !== oe && "" === se && E), endStreamTimestamp: ce, fromTimestamp: le, hasResponseText: !!S, id: c ?? "", isPastThinkingTrace: O, performanceMetrics: W ?? {}, shownTrace: oe }),
+                        Re ? n.createElement(s.Z, { style: [ze.textContainer, ne ? ze.animation : null] }, n.createElement(o.ZP, { color: "gray700", size: "subtext1" }, Ie)) : null,
+                        n.createElement(Se.K, { expectedImageAspectRatio: G, fileAttachments: i, intermediateImageResults: D, isAborted: w, isLoading: E, messageId: c }),
+                        _e.length > 0 &&
                             n.createElement(
                                 s.Z,
-                                { style: Ze.cards },
-                                ue.map((t) => n.createElement(C.Z, { analysisEntityId: e, cardAttachment: t, conversationKey: a, isAnimated: ae, key: `${t.cardType}-${t.variant || ""}-${t.created_at || ""}`, userChatItemId: B })),
+                                { style: ze.cards },
+                                _e.map((t) => n.createElement(C.Z, { analysisEntityId: e, cardAttachment: t, conversationKey: a, isAnimated: ne, key: `${t.cardType}-${t.variant || ""}-${t.created_at || ""}`, userChatItemId: B })),
                             ),
-                        _e.length > 0
+                        De.length > 0
                             ? n.createElement(
                                   s.Z,
-                                  { style: Ze.bannerMessages },
-                                  _e.map((e) => n.createElement(s.Z, { key: e, style: Ze.banner }, n.createElement(d.default, { style: Ze.bannerIcon }), n.createElement(o.ZP, { style: Ze.bannerText }, e))),
+                                  { style: ze.bannerMessages },
+                                  De.map((e) => n.createElement(s.Z, { key: e, style: ze.banner }, n.createElement(d.default, { style: ze.bannerIcon }), n.createElement(o.ZP, { style: ze.bannerText }, e))),
                               )
                             : null,
-                        L?.length && Y ? n.createElement(Te.e, { isAnimated: ae, mediaIds: L }) : null,
-                        n.createElement(s.Z, { ref: le, style: Ze.textContainer }, Ie ? null : l ? n.createElement(o.ZP, { style: Ze.deletedText }, ke) : n.createElement(f.default, { cardAttachments: A, chatResponseAnnotations: N, citations: pe, disableLinks: p.ZP.isWebView(), isAborted: w, isAnimated: ae, isStreaming: E, key: "normal-answer", markdownText: ne, messageId: c || "" })),
+                        L?.length && Y ? n.createElement(ve.e, { isAnimated: ne, mediaIds: L }) : null,
+                        n.createElement(s.Z, { ref: de, style: ze.textContainer }, Re ? null : l ? n.createElement(o.ZP, { style: ze.deletedText }, Ze) : n.createElement(f.default, { cardAttachments: A, chatResponseAnnotations: N, citations: ue, disableLinks: p.ZP.isWebView(), isAborted: w, isAnimated: ne, isStreaming: E, key: "normal-answer", markdownText: se, messageId: c || "" })),
                     ),
-                    !E && n.createElement(we.U, { postIds: I ?? [], response: ne, style: Ze.embeddedContent, webResults: z ?? [] }),
-                    ze && !E ? n.createElement(s.Z, { style: Ze.searchButtonsContainer }, n.createElement(Se.R, { isAnimated: !0, postIds: I ?? [], webResults: z ?? [] })) : null,
-                    Q && !_ ? n.createElement(s.Z, { style: de ? Ze.helpfulFooterContainer : Ze.footerContainer }, n.createElement(s.Z, { style: Ze.messageButtonsContainer }, de ? n.createElement(b.W, { conversationKey: a, messageId: c }) : n.createElement(y.Z, { analysisEntityId: e, conversationKey: a, customLeftContent: !E && J && W ? n.createElement(Ee.E, { performanceMetrics: W, userChatItemId: B }) : null, messageId: c, promptSource: P, showPostButton: M, textContainer: le }))) : null,
-                    _ ? n.createElement(s.Z, { style: Ze.upsellContainer }, n.createElement(Ce.w, { upsell: _ })) : null,
+                    !E && n.createElement(Te.U, { postIds: I ?? [], response: se, style: ze.embeddedContent, webResults: z ?? [] }),
+                    Pe && !E ? n.createElement(s.Z, { style: ze.searchButtonsContainer }, n.createElement(ke.R, { isAnimated: !0, postIds: I ?? [], webResults: z ?? [] })) : null,
+                    ee && !_ ? n.createElement(s.Z, { style: pe ? ze.helpfulFooterContainer : ze.footerContainer }, n.createElement(s.Z, { style: ze.messageButtonsContainer }, pe ? n.createElement(b.W, { conversationKey: a, messageId: c }) : n.createElement(y.Z, { analysisEntityId: e, conversationKey: a, customLeftContent: !E && J && W ? n.createElement(xe.E, { performanceMetrics: W, userChatItemId: B }) : null, messageId: c, promptSource: P, showPostButton: M, textContainer: de }))) : null,
+                    _ ? n.createElement(s.Z, { style: ze.upsellContainer }, n.createElement(Ee.w, { upsell: _ })) : null,
                 );
             }
-            const Ze = i.default.create((e) => ({
+            const ze = i.default.create((e) => ({
                 container: { width: "100%", alignItems: "center", marginBottom: e.spaces.space48 },
                 compactContainer: {},
                 textContainer: { paddingHorizontal: e.spaces.space16 },
@@ -706,4 +709,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.e3a1af3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.2f8d6d0a.js.map

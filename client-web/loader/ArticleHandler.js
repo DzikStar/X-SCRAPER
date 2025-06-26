@@ -13,7 +13,7 @@
                 s = ({ children: e, ...t }) => i.createElement(o.Z, t, (t) => i.createElement(a.Z, { style: t && c.activeRoot, testID: l }, "function" == typeof e ? e(t) : e, t ? i.createElement(a.Z, { pointerEvents: "none", style: c.overlay }) : null));
         },
         546608: (e, t, r) => {
-            r.d(t, { Z: () => P });
+            r.d(t, { Z: () => R });
             var i = r(202784),
                 a = r(325686),
                 n = r(638009),
@@ -31,55 +31,55 @@
                 Z = r(530732),
                 x = r(111677),
                 E = r.n(x),
-                v = r(490359),
-                y = r(769471),
-                C = r(415725),
+                y = r(490359),
+                C = r(769471),
+                v = r(415725),
                 w = r(725405),
                 f = r(500002),
                 _ = r(71620),
                 k = r(668214),
                 z = r(502909),
-                I = r(600823);
-            const S = (0, z.ZP)({ namespace: "articles" }),
-                A = I.Z.register(S),
+                S = r(600823);
+            const I = (0, z.ZP)({ namespace: "articles" }),
+                A = S.Z.register(I),
                 D = (e, t) => A.select(e, t.id.toString()),
-                H = (0, k.Z)()
+                L = (0, k.Z)()
                     .propsFromState(() => ({ article: D }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("ARTICLE_SUMMARY") })),
                 B = E().afb7e8f8,
-                L = u.default.create((e) => ({ horizontalContainer: { flex: 1, flexDirection: "row" }, textContainer: { flex: 1 }, text: { marginBottom: e.spaces.space4 }, buttonContainer: { alignItems: "flex-start", marginTop: e.spaces.space12, marginBottom: e.spaces.space16 }, imageContainer: { borderRadius: e.borderRadii.large, height: 100, marginStart: e.componentDimensions.gutterHorizontal, overflow: "hidden", width: 100 }, container: { flexDirection: "column", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small }, middotGroup: { marginBottom: e.spaces.space8 } })),
-                P = (0, f.ZP)(
-                    H(({ article: e, createLocalApiErrorHandler: t, id: r, location: x, socialContext: E, withInternalLink: f }) => {
+                P = u.default.create((e) => ({ horizontalContainer: { flex: 1, flexDirection: "row" }, textContainer: { flex: 1 }, text: { marginBottom: e.spaces.space4 }, buttonContainer: { alignItems: "flex-start", marginTop: e.spaces.space12, marginBottom: e.spaces.space16 }, imageContainer: { borderRadius: e.borderRadii.large, height: 100, marginStart: e.componentDimensions.gutterHorizontal, overflow: "hidden", width: 100 }, container: { flexDirection: "column", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small }, middotGroup: { marginBottom: e.spaces.space8 } })),
+                R = (0, f.ZP)(
+                    L(({ article: e, createLocalApiErrorHandler: t, id: r, location: x, socialContext: E, withInternalLink: f }) => {
                         const _ = (0, w.Z)(),
                             k = i.useContext(n.ZP),
-                            { article_url: z, description: I, domain: S, image_url: A, publish_date: D, title: H } = e || {},
-                            P = { domain: o.b(), timestamp: o.b(), title: o.b(), description: o.b(), adFree: o.b(), socialContext: o.b() },
-                            R = [P.domain, P.timestamp, P.title, P.description, P.socialContext],
-                            F = i.useMemo(() => {
-                                const e = (0, v.Z)(_.contextualScribeData.items || []) || {};
-                                return { url: z, items: [(0, y.Z)({}, e, { article_details: { publisher_name: S, is_showing_label: !1, is_ad_free: !1 } })] };
-                            }, [_.contextualScribeData.items, z, S]),
-                            M = i.useCallback(() => {
-                                _.scribe({ action: "impression", data: F });
-                            }, [_, F]);
+                            { article_url: z, description: S, domain: I, image_url: A, publish_date: D, title: L } = e || {},
+                            R = { domain: o.b(), timestamp: o.b(), title: o.b(), description: o.b(), adFree: o.b(), socialContext: o.b() },
+                            F = [R.domain, R.timestamp, R.title, R.description, R.socialContext],
+                            H = i.useMemo(() => {
+                                const e = (0, y.Z)(_.contextualScribeData.items || []) || {};
+                                return { url: z, items: [(0, C.Z)({}, e, { article_details: { publisher_name: I, is_showing_label: !1, is_ad_free: !1 } })] };
+                            }, [_.contextualScribeData.items, z, I]),
+                            U = i.useCallback(() => {
+                                _.scribe({ action: "impression", data: H });
+                            }, [_, H]);
                         if (
                             (i.useEffect(() => {
-                                M();
-                            }, [M]),
+                                U();
+                            }, [U]),
                             !e)
                         )
                             return null;
-                        const { contextImageUrls: U, landingUrl: O, text: T } = E || {},
+                        const { contextImageUrls: M, landingUrl: O, text: T } = E || {},
                             W = A ? { url: A, height: 750, width: 1250 } : void 0,
-                            V = { pathname: z, external: !0 },
-                            j = (e) => {
-                                _.scribe({ element: f ? "read_article" : "article_header", action: "open_link", data: F });
+                            j = { pathname: z, external: !0 },
+                            q = (e) => {
+                                _.scribe({ element: f ? "read_article" : "article_header", action: "open_link", data: H });
                             },
-                            q = () => {
-                                _.scribe({ element: "conversation_view", action: "click", data: F });
+                            G = () => {
+                                _.scribe({ element: "conversation_view", action: "click", data: H });
                             },
-                            G = O ? k.getLinkFromUrtUrl(O) : void 0,
-                            $ = G ? k.withAnchorless(G) : void 0,
+                            V = O ? k.getLinkFromUrtUrl(O) : void 0,
+                            $ = V ? k.withAnchorless(V) : void 0,
                             N = $
                                 ? {
                                       ...$,
@@ -89,8 +89,8 @@
                                       })()}`,
                                   }
                                 : void 0,
-                            Q = i.createElement(i.Fragment, null, i.createElement(a.Z, { style: L.horizontalContainer }, i.createElement(a.Z, { style: L.textContainer }, i.createElement(l.Z, { style: L.middotGroup }, S && i.createElement(c.ZP, { color: "gray700", id: P.domain, size: "subtext2", weight: "bold" }, S), D && i.createElement(c.ZP, { color: "gray700", id: P.timestamp, size: "subtext2" }, i.createElement(s.Z, { timestamp: D }))), i.createElement(c.ZP, { color: "text", id: P.title, link: N, numberOfLines: 3, size: "headline2", style: L.text, weight: "bold", withInteractiveStyling: !1 }, H), I ? i.createElement(c.ZP, { id: P.description, numberOfLines: 2 }, I) : null, f ? i.createElement(a.Z, { style: L.buttonContainer }, i.createElement(d.ZP, { link: V, onClick: j, size: "xSmall", type: "primaryOutlined" }, B)) : null), W ? i.createElement(a.Z, { style: L.imageContainer }, i.createElement(m.Z, { ratio: u.default.theme.aspectRatios.square }, i.createElement(p.Z, { "aria-label": "", aspectMode: b.Z.SQUARE, image: W }))) : null), i.createElement(h.Z, { contextType: "Facepile", iconSize: "large", id: P.socialContext, text: T, textSize: "subtext2", userAvatarUrls: U, withLeftPadding: !1, withTextCentered: !0 }));
-                        return f ? i.createElement(C.Z, { exact: !1, path: N?.pathname || "" }, (e) => i.createElement(g.Z, { "aria-labelledby": R.join(" "), "aria-selected": e, link: N, onClick: q, role: "article", style: L.container }, Q)) : i.createElement(Z.Z, { link: V, onClick: j, style: [L.container, L.bottomBorder] }, Q);
+                            Q = i.createElement(i.Fragment, null, i.createElement(a.Z, { style: P.horizontalContainer }, i.createElement(a.Z, { style: P.textContainer }, i.createElement(l.Z, { style: P.middotGroup }, I && i.createElement(c.ZP, { color: "gray700", id: R.domain, size: "subtext2", weight: "bold" }, I), D && i.createElement(c.ZP, { color: "gray700", id: R.timestamp, size: "subtext2" }, i.createElement(s.Z, { timestamp: D }))), i.createElement(c.ZP, { color: "text", id: R.title, link: N, numberOfLines: 3, size: "headline2", style: P.text, weight: "bold", withInteractiveStyling: !1 }, L), S ? i.createElement(c.ZP, { id: R.description, numberOfLines: 2 }, S) : null, f ? i.createElement(a.Z, { style: P.buttonContainer }, i.createElement(d.ZP, { link: j, onClick: q, size: "xSmall", type: "primaryOutlined" }, B)) : null), W ? i.createElement(a.Z, { style: P.imageContainer }, i.createElement(m.Z, { ratio: u.default.theme.aspectRatios.square }, i.createElement(p.Z, { "aria-label": "", aspectMode: b.Z.SQUARE, image: W }))) : null), i.createElement(h.Z, { contextType: "Facepile", iconSize: "large", id: R.socialContext, text: T, textSize: "subtext2", userAvatarUrls: M, withLeftPadding: !1, withTextCentered: !0 }));
+                        return f ? i.createElement(v.Z, { exact: !1, path: N?.pathname || "" }, (e) => i.createElement(g.Z, { "aria-labelledby": F.join(" "), "aria-selected": e, link: N, onClick: G, role: "article", style: P.container }, Q)) : i.createElement(Z.Z, { link: j, onClick: q, style: [P.container, P.bottomBorder] }, Q);
                     }),
                 );
         },
@@ -118,7 +118,7 @@
                     })
                     .getHandler();
         },
-        452693: (e, t, r) => {
+        76388: (e, t, r) => {
             r.r(t), r.d(t, { default: () => c });
             var i = r(202784),
                 a = r(890601),
@@ -126,7 +126,7 @@
                 o = r(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
@@ -137,4 +137,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ArticleHandler.173c54ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ArticleHandler.e164edea.js.map

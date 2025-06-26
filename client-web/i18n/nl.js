@@ -1317,6 +1317,11 @@
                 a("a02d1657", function (e) {
                     return "Code uitvoeren" + e.ttc_tool_usage_card;
                 }),
+                a("aa9d42c0", "Searching the web"),
+                a("dce1817a", "Searching on 𝕏"),
+                a("f7151564", "Searching users on 𝕏"),
+                a("c43ef93e", "Browsing web page"),
+                a("jb097f6e", "Executing code"),
                 a("ead81122", "Er is iets misgegaan. Vernieuw om opnieuw verbinding te maken of probeer het opnieuw."),
                 a("f808a13a", "De limiet is overschreden. Wacht een paar minuten en probeer het opnieuw."),
                 a("e0481e5a", "Grok wordt in jouw land momenteel niet ondersteund."),
@@ -1910,10 +1915,10 @@
                 a("aefd89c8", "Navigatie"),
                 a("cafdefb2", "Acties"),
                 a("dda42cf2", "Kolommen en Decks"),
-                a("e8a12604", "Een onderschrift toevoegen (optioneel)"),
-                a("eabf2209", function (e) {
-                    return "GIF verzorgd door " + e.providerName;
-                }),
+                a("e8a12604", "Een onderschrift toevoegen (optioneel)");
+            a("eabf2209", function (e) {
+                return "GIF verzorgd door " + e.providerName;
+            }),
                 a("a613e720", "GIF-URL kopiëren"),
                 a("aeca1239", function (e) {
                     return "Vet" + e.ttc_rich_text_composer;
@@ -1923,8 +1928,8 @@
                 }),
                 a("ad89b831", function (e) {
                     return "actief" + e.ttc_rich_text_composer;
-                });
-            a("jcd5ee8a", "Blok bewerken"),
+                }),
+                a("jcd5ee8a", "Blok bewerken"),
                 a("a8f09fb8", "Blok verwijderen"),
                 a("i89195ea", "Verdeler"),
                 a("da8ac57c", "Bijschrift bewerken"),
@@ -2970,13 +2975,13 @@
                 a("a078ff70", "Wil je meer content bekijken van de mensen die een interactie zijn aangegaan met deze collectie? Ga content ontdekken van nieuwe accounts."),
                 a("cb80300e", "Doorgaan naar tijdlijn startpagina"),
                 a("ea5cd098", "Doorgaan naar Trending"),
-                a("c67e3fc2", "Startpaginatijdlijn"),
-                a("d601fc20", "Nieuwste"),
+                a("c67e3fc2", "Startpaginatijdlijn");
+            a("d601fc20", "Nieuwste"),
                 a("j43f99be", "Relevantie"),
                 a("ad6e11ac", "Antwoorden sorteren op"),
                 a("b2311b70", "Dit is niet beschikbaar voor jou"),
-                a("j88f27d8", "Relevante personen");
-            a("i31dcd22", "Artikel"),
+                a("j88f27d8", "Relevante personen"),
+                a("i31dcd22", "Artikel"),
                 a("e3de2f6f", function (e) {
                     return e.entity + " is toegevoegd aan je bladwijzers";
                 }),
@@ -3892,10 +3897,10 @@
                 }),
                 a("fc56c8b1", function (e) {
                     return "co-host" + r(e.count, "", "s");
-                }),
-                a("iba0f45d", function (e) {
-                    return "spreker" + r(e.count, "", "s");
-                }),
+                });
+            a("iba0f45d", function (e) {
+                return "spreker" + r(e.count, "", "s");
+            }),
                 a("dc066955", function (e) {
                     return "luisteraar" + r(e.count, "", "s");
                 }),
@@ -3905,8 +3910,8 @@
                 a("c3b5b829", function (e) {
                     return e.count + " verzoek" + r(e.count, "", "en");
                 }),
-                a("fe7a1910", "Uitnodigingen versturen");
-            a("ic3c757e", "Gebruikers zoeken"),
+                a("fe7a1910", "Uitnodigingen versturen"),
+                a("ic3c757e", "Gebruikers zoeken"),
                 a("cd133486", "Uitnodigen"),
                 a("f2333850", "Delen met mensen buiten X"),
                 a("cddb8097", "Meer informatie"),
@@ -4338,7 +4343,6 @@
                 a("db832e38", "Schakel meldingen in je browserinstellingen in"),
                 a("a910cac6", "Er is een probleem opgetreden bij het inschakelen van meldingen"),
                 a("be30b6ee", "Instabiele verbinding"),
-                a("ge15b488", "Gedachten weergeven"),
                 a("aa7c96bb", function (e) {
                     return "Nog " + e.numResults + " meer bekijken";
                 }),
@@ -4354,6 +4358,10 @@
                 }),
                 a("a15d62db", function (e) {
                     return e.seconds + "s nagedacht";
+                }),
+                a("f26fc748", "Script"),
+                a("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 a("ha8fbe22", "Genereer meer afbeeldingen met Premium"),
                 a("d95c232a", "Je hebt je limiet bereikt. Upgrade nu om meer te genereren."),
@@ -4923,14 +4931,14 @@
                 a("ff95a9cc", "Video-ID"),
                 a("a97e358e", "Videolink"),
                 a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond."),
-                a("ba37f6da", "Video-overzicht"),
-                a("f19846b2", "Videominiatuur"),
+                a("ba37f6da", "Video-overzicht");
+            a("f19846b2", "Videominiatuur"),
                 a("ccd6f4a8", "Videotitel"),
                 a("c8410542", "Het aantal keer dat je video is bekeken"),
                 a("a532072a", "Kijkers"),
                 a("d9508ab0", "weergaven"),
-                a("d9f9dec0", "Space weergeven");
-            a("h0c1f37a", "Space-analyses bekijken"),
+                a("d9f9dec0", "Space weergeven"),
+                a("h0c1f37a", "Space-analyses bekijken"),
                 a("e41fffbc", "De totale kijktijd van je video's."),
                 a("if2909ba", "Kijktijd"),
                 a("i0e5bf4c", "Jouw video's"),
@@ -5875,16 +5883,16 @@
                 a("af781666", "Wat vinden mensen?"),
                 a("a1f414ee", "Gedachten delen"),
                 a("ed88e742", "Link naar Onderwerp kopiëren"),
-                a("h92fe1be", "Helaas is Community Notes momenteel niet voor jou beschikbaar"),
-                a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten"),
+                a("h92fe1be", "Helaas is Community Notes momenteel niet voor jou beschikbaar");
+            a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten"),
                 a("f8fc0b48", "Map maken"),
                 a("c14bcdde", "Bladwijzers doorzoeken"),
                 a("e9c65c4a", "Bladwijzers doorzoeken"),
                 a("b92a21d9", function (e) {
                     return "Geen resultaten gevonden voor " + e.query;
                 }),
-                a("f191a2ba", "zoekinstellingen");
-            a("a068008a", "Mappen worden momenteel niet geladen"),
+                a("f191a2ba", "zoekinstellingen"),
+                a("a068008a", "Mappen worden momenteel niet geladen"),
                 a("f075b0e8", "Map bewerken"),
                 a("beba2a0e", "Een nieuwe map voor je bladwijzers maken"),
                 a("e41c9b4f", function (e) {
@@ -6881,18 +6889,18 @@
                 a("b8cbb51a", "Samenvatting vacature"),
                 a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
                 a("b075c68a", "Vacature bewerken"),
-                a("d4b6a6e0", "Profielspotlight"),
-                a("j2dd3686", "Licht vacatures uit boven mijn posts."),
+                a("d4b6a6e0", "Profielspotlight");
+            a("j2dd3686", "Licht vacatures uit boven mijn posts."),
                 a("af1cfd46", "ATS-integratie"),
                 a("d6fa2944", "Als je je integratie verwijdert, worden je geïmporteerde vacatures niet verwijderd."),
                 a("h99f11fa", "Integratie verwijderen"),
                 a("eef1ae76", "Momenteel verbonden"),
                 a("a915f5c1", function (e) {
                     return e.ats + " verbonden";
-                });
-            a("af7286b7", function (e) {
-                return e.percentage + "% korting op een jaarabonnement op Premium";
-            }),
+                }),
+                a("af7286b7", function (e) {
+                    return e.percentage + "% korting op een jaarabonnement op Premium";
+                }),
                 a("c924ad84", "Blijf video's afspelen"),
                 a("de750a3c", "Geniet ervan, zelfs wanneer je telefoon is vergrendeld"),
                 a("he5e87c4", "Boost je antwoorden"),
@@ -7863,15 +7871,7 @@
                 a("b74ff5fc", "Als je opzegt, wordt je Abonnement automatisch beëindigd aan het einde van de factureringsperiode."),
                 a("ee9efbc8", "Doorgaan naar opzeggen"),
                 a("c5d9c77a", "Het lijkt erop dat er even iets misging. Maak je geen zorgen, dat ligt niet aan jou. Sluit dit venster en probeer het opnieuw."),
-                a("jda53c24", "Je kan je Abonnement opzeggen via de Apple App Store."),
-                a("g0a7a53e", "Je kan je Abonnement opzeggen via de Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "Welkom terug, " + e.displayName;
-                }),
-                a("a76d58ba", "Advertentie-analyses"),
-                a("eccd0e1a", "Organisatie-analyses"),
-                a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
-                a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken.");
+                a("jda53c24", "Je kan je Abonnement opzeggen via de Apple App Store.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7910,7 +7910,15 @@
                     o(e, n)
                 );
             }
-            a("gf67aae4", "Upgrade naar volledige toegang"),
+            a("g0a7a53e", "Je kan je Abonnement opzeggen via de Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "Welkom terug, " + e.displayName;
+                }),
+                a("a76d58ba", "Advertentie-analyses"),
+                a("eccd0e1a", "Organisatie-analyses"),
+                a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
+                a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken."),
+                a("gf67aae4", "Upgrade naar volledige toegang"),
                 a("h75e3618", "Organisatie opnemen"),
                 a("h24a8862", "Over dit selectievakje"),
                 a("c29e3a88", "Gelieerde accounts selecteren"),
@@ -8903,16 +8911,16 @@
                     return e.advertiserName + " bezoeken";
                 }),
                 a("c67e71aa", "Nu bekijken"),
-                a("a6ada13e", "Winkel nu"),
-                a("j0f12222", "Meer bekijken"),
+                a("a6ada13e", "Winkel nu");
+            a("j0f12222", "Meer bekijken"),
                 a("f569f7c8", "Naar website gaan"),
                 a("j0c6772a", "Website bekijken"),
                 a("f73003aa", "Video wordt afgespeeld na de advertentie"),
                 a("b3112b8a", "Overslaan"),
-                a("h6333ad0", "Advertentie overslaan");
-            a("c59da417", function (e) {
-                return "Advertentie overslaan over " + e.seconds;
-            }),
+                a("h6333ad0", "Advertentie overslaan"),
+                a("c59da417", function (e) {
+                    return "Advertentie overslaan over " + e.seconds;
+                }),
                 a("c3c147cf", function (e) {
                     return "Overslaan " + e.seconds;
                 }),
@@ -13362,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.aa4af4ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.52146e7a.js.map

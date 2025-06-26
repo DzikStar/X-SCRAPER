@@ -1321,6 +1321,11 @@
                 t("a02d1657", function (e) {
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
+                t("aa9d42c0", "Searching the web"),
+                t("dce1817a", "Searching on 𝕏"),
+                t("f7151564", "Searching users on 𝕏"),
+                t("c43ef93e", "Browsing web page"),
+                t("jb097f6e", "Executing code"),
                 t("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 t("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
                 t("e0481e5a", "Grok is not supported in your country at this time."),
@@ -1914,10 +1919,10 @@
                 t("aefd89c8", "Navegación"),
                 t("cafdefb2", "Accións"),
                 t("dda42cf2", "Columnas e paneis"),
-                t("e8a12604", "Provide a caption (optional)"),
-                t("eabf2209", function (e) {
-                    return "GIF fornecido por " + e.providerName;
-                }),
+                t("e8a12604", "Provide a caption (optional)");
+            t("eabf2209", function (e) {
+                return "GIF fornecido por " + e.providerName;
+            }),
                 t("a613e720", "Copiar ligazón ao GIF"),
                 t("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -1927,8 +1932,8 @@
                 }),
                 t("ad89b831", function (e) {
                     return "active" + e.ttc_rich_text_composer;
-                });
-            t("jcd5ee8a", "Edit block"),
+                }),
+                t("jcd5ee8a", "Edit block"),
                 t("a8f09fb8", "Delete block"),
                 t("i89195ea", "Divider"),
                 t("da8ac57c", "Edit Caption"),
@@ -2974,13 +2979,13 @@
                 t("a078ff70", "Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts."),
                 t("cb80300e", "Ir á cronoloxía do Inicio"),
                 t("ea5cd098", "Ir ás tendencias"),
-                t("c67e3fc2", "Cronoloxía de Inicio"),
-                t("d601fc20", "Máis recente"),
+                t("c67e3fc2", "Cronoloxía de Inicio");
+            t("d601fc20", "Máis recente"),
                 t("j43f99be", "Relevancy"),
                 t("ad6e11ac", "Sort replies by"),
                 t("b2311b70", "Non podes ver este contido"),
-                t("j88f27d8", "Persoas relevantes");
-            t("i31dcd22", "Artigo"),
+                t("j88f27d8", "Persoas relevantes"),
+                t("i31dcd22", "Artigo"),
                 t("e3de2f6f", function (e) {
                     return e.entity + " was added to your Bookmarks";
                 }),
@@ -3896,10 +3901,10 @@
                 }),
                 t("fc56c8b1", function (e) {
                     return "co-host" + i(e.count, "", "s");
-                }),
-                t("iba0f45d", function (e) {
-                    return "speaker" + i(e.count, "", "s");
-                }),
+                });
+            t("iba0f45d", function (e) {
+                return "speaker" + i(e.count, "", "s");
+            }),
                 t("dc066955", function (e) {
                     return "listener" + i(e.count, "", "s");
                 }),
@@ -3909,8 +3914,8 @@
                 t("c3b5b829", function (e) {
                     return e.count + " request" + i(e.count, "", "s");
                 }),
-                t("fe7a1910", "Send invites");
-            t("ic3c757e", "Search for users"),
+                t("fe7a1910", "Send invites"),
+                t("ic3c757e", "Search for users"),
                 t("cd133486", "Invite"),
                 t("f2333850", "Share with people outside of X"),
                 t("cddb8097", "Learn more"),
@@ -4342,7 +4347,6 @@
                 t("db832e38", "Please enable notifications in browser settings"),
                 t("a910cac6", "There was an issue enabling notifications"),
                 t("be30b6ee", "Unstable connection"),
-                t("ge15b488", "Show thoughts"),
                 t("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
@@ -4358,6 +4362,10 @@
                 }),
                 t("a15d62db", function (e) {
                     return "Thought for " + e.seconds + "s";
+                }),
+                t("f26fc748", "Script"),
+                t("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 t("ha8fbe22", "Generate more images with Premium"),
                 t("d95c232a", "You’ve reached your limit. Upgrade now to generate more."),
@@ -4927,14 +4935,14 @@
                 t("ff95a9cc", "Video ID"),
                 t("a97e358e", "Video Link"),
                 t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview"),
-                t("f19846b2", "Video thumbnail"),
+                t("ba37f6da", "Video overview");
+            t("f19846b2", "Video thumbnail"),
                 t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
-                t("d9f9dec0", "View Space");
-            t("h0c1f37a", "View Space Analytics"),
+                t("d9f9dec0", "View Space"),
+                t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
@@ -5879,16 +5887,16 @@
                 t("af781666", "What do people think?"),
                 t("a1f414ee", "Share thoughts"),
                 t("ed88e742", "Copiar ligazón ao tema"),
-                t("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
-                t("f0dc1434", "Community Notes is currently only available in the U.S."),
+                t("h92fe1be", "Unfortunately, Community Notes is not available to you at this time.");
+            t("f0dc1434", "Community Notes is currently only available in the U.S."),
                 t("f8fc0b48", "Crear un cartafol"),
                 t("c14bcdde", "Procurar marcadores"),
                 t("e9c65c4a", "Bookmarks search"),
                 t("b92a21d9", function (e) {
                     return "Non hai resultados de " + e.query;
                 }),
-                t("f191a2ba", "configuración da procura");
-            t("a068008a", "Folders aren`t loading right now"),
+                t("f191a2ba", "configuración da procura"),
+                t("a068008a", "Folders aren`t loading right now"),
                 t("f075b0e8", "Editar cartafol"),
                 t("beba2a0e", "Crear cartafol de marcadores"),
                 t("e41c9b4f", function (e) {
@@ -6885,18 +6893,18 @@
                 t("b8cbb51a", "Job Summary"),
                 t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
-                t("d4b6a6e0", "Detalles principais do perfil"),
-                t("j2dd3686", "Highlight featured jobs above my posts."),
+                t("d4b6a6e0", "Detalles principais do perfil");
+            t("j2dd3686", "Highlight featured jobs above my posts."),
                 t("af1cfd46", "ATS integration"),
                 t("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 t("h99f11fa", "Delete integration"),
                 t("eef1ae76", "Currently connected"),
                 t("a915f5c1", function (e) {
                     return e.ats + " connected";
-                });
-            t("af7286b7", function (e) {
-                return e.percentage + "% off a year of Premium";
-            }),
+                }),
+                t("af7286b7", function (e) {
+                    return e.percentage + "% off a year of Premium";
+                }),
                 t("c924ad84", "Keep videos playing"),
                 t("de750a3c", "Enjoy them even when your phone is locked"),
                 t("he5e87c4", "Boost your replies"),
@@ -7867,15 +7875,7 @@
                 t("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 t("ee9efbc8", "Continuar coa cancelación"),
                 t("c5d9c77a", "Semella que houbo algún problemiña. Non te preocupes, non foi culta túa. Pecha esta ventá e téntao de novo."),
-                t("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                t("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
-                t("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                t("a76d58ba", "Ads Analytics"),
-                t("eccd0e1a", "Organization Analytics"),
-                t("deea1708", "Want to view analytics across all your X accounts?"),
-                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                t("jda53c24", "You can cancel your Subscription through the Apple App Store.");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7914,7 +7914,15 @@
                     s(e, a)
                 );
             }
-            t("gf67aae4", "Upgrade to Full Access"),
+            t("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                t("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                t("a76d58ba", "Ads Analytics"),
+                t("eccd0e1a", "Organization Analytics"),
+                t("deea1708", "Want to view analytics across all your X accounts?"),
+                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                t("gf67aae4", "Upgrade to Full Access"),
                 t("h75e3618", "Include organization"),
                 t("h24a8862", "About this checkbox"),
                 t("c29e3a88", "Select affiliates"),
@@ -8907,16 +8915,16 @@
                     return "Visitar " + e.advertiserName;
                 }),
                 t("c67e71aa", "Ver agora"),
-                t("a6ada13e", "Mercar agora"),
-                t("j0f12222", "Ver máis"),
+                t("a6ada13e", "Mercar agora");
+            t("j0f12222", "Ver máis"),
                 t("f569f7c8", "Ir ao sitio web"),
                 t("j0c6772a", "Visitar sitio web"),
                 t("f73003aa", "O vídeo reproducirase despois do anuncio"),
                 t("b3112b8a", "Omitir"),
-                t("h6333ad0", "Omitir anuncio");
-            t("c59da417", function (e) {
-                return "Omitir anuncio dentro de " + e.seconds;
-            }),
+                t("h6333ad0", "Omitir anuncio"),
+                t("c59da417", function (e) {
+                    return "Omitir anuncio dentro de " + e.seconds;
+                }),
                 t("c3c147cf", function (e) {
                     return "Omitir " + e.seconds;
                 }),
@@ -13353,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.f0968ada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.6962ce4a.js.map

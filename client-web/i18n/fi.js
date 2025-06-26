@@ -1317,6 +1317,11 @@
                 e("a02d1657", function (a) {
                     return "Suoritetaan koodia" + a.ttc_tool_usage_card;
                 }),
+                e("aa9d42c0", "Searching the web"),
+                e("dce1817a", "Searching on 𝕏"),
+                e("f7151564", "Searching users on 𝕏"),
+                e("c43ef93e", "Browsing web page"),
+                e("jb097f6e", "Executing code"),
                 e("ead81122", "Jokin meni pieleen. Muodosta yhteys uudelleen päivittämällä tai yritä uudelleen."),
                 e("f808a13a", "Toimintojen määrää on rajoitettu. Odota muutama hetki ja yritä sitten uudelleen."),
                 e("e0481e5a", "Grok ei tällä hetkellä ole tuettu ominaisuus maassasi."),
@@ -1910,10 +1915,10 @@
                 e("aefd89c8", "Navigointi"),
                 e("cafdefb2", "Toiminnot"),
                 e("dda42cf2", "Sarakkeet ja dekit"),
-                e("e8a12604", "Lisää kuvateksti (valinnainen)"),
-                e("eabf2209", function (a) {
-                    return "GIF lähteestä " + a.providerName;
-                }),
+                e("e8a12604", "Lisää kuvateksti (valinnainen)");
+            e("eabf2209", function (a) {
+                return "GIF lähteestä " + a.providerName;
+            }),
                 e("a613e720", "Kopioi GIFin linkki"),
                 e("aeca1239", function (a) {
                     return "Lihavointi" + a.ttc_rich_text_composer;
@@ -1923,8 +1928,8 @@
                 }),
                 e("ad89b831", function (a) {
                     return "aktiivinen" + a.ttc_rich_text_composer;
-                });
-            e("jcd5ee8a", "Muokkaa katkelmaa"),
+                }),
+                e("jcd5ee8a", "Muokkaa katkelmaa"),
                 e("a8f09fb8", "Poista katkelma"),
                 e("i89195ea", "Jakaja"),
                 e("da8ac57c", "Muokkaa kuvatekstiä"),
@@ -2970,13 +2975,13 @@
                 e("a078ff70", "Haluatko nähdä enemmän sisältöä niiltä ihmisiltä, joiden kanssa keskustelit tässä ketjussa? Ala lukea sisältöä uusilta tileiltä."),
                 e("cb80300e", "Siirry etusivun aikajanalle"),
                 e("ea5cd098", "Siirry suosittuihin puheenaiheisiin"),
-                e("c67e3fc2", "Etusivun aikajana"),
-                e("d601fc20", "Uusimmat"),
+                e("c67e3fc2", "Etusivun aikajana");
+            e("d601fc20", "Uusimmat"),
                 e("j43f99be", "Relevanssi"),
                 e("ad6e11ac", "Vastausten lajittelutapa"),
                 e("b2311b70", "Tätä sisältöä ei näytetä sinulle"),
-                e("j88f27d8", "Merkityksellisiä henkilöitä");
-            e("i31dcd22", "Artikkeli"),
+                e("j88f27d8", "Merkityksellisiä henkilöitä"),
+                e("i31dcd22", "Artikkeli"),
                 e("e3de2f6f", function (a) {
                     return a.entity + " lisättiin kirjanmerkkeihisi";
                 }),
@@ -3892,10 +3897,10 @@
                 }),
                 e("fc56c8b1", function (a) {
                     return "co-host" + n(a.count, "", "ia");
-                }),
-                e("iba0f45d", function (a) {
-                    return "puhuja" + n(a.count, "", "a");
-                }),
+                });
+            e("iba0f45d", function (a) {
+                return "puhuja" + n(a.count, "", "a");
+            }),
                 e("dc066955", function (a) {
                     return "kuuntelija" + n(a.count, "", "a");
                 }),
@@ -3905,8 +3910,8 @@
                 e("c3b5b829", function (a) {
                     return a.count + " pyyntö" + n(a.count, "", "ä");
                 }),
-                e("fe7a1910", "Lähetä kutsuja");
-            e("ic3c757e", "Hae käyttäjiä"),
+                e("fe7a1910", "Lähetä kutsuja"),
+                e("ic3c757e", "Hae käyttäjiä"),
                 e("cd133486", "Kutsu"),
                 e("f2333850", "Jaa X:n ulkopuolelle"),
                 e("cddb8097", "Lue lisää"),
@@ -4338,7 +4343,6 @@
                 e("db832e38", "Salli ilmoitukset selaimen asetuksista"),
                 e("a910cac6", "Ilmoitusten käyttöönotossa oli ongelmia"),
                 e("be30b6ee", "Yhteys on epävakaa"),
-                e("ge15b488", "Näytä mietteet"),
                 e("aa7c96bb", function (a) {
                     return "Näytä " + a.numResults + " lisää";
                 }),
@@ -4354,6 +4358,10 @@
                 }),
                 e("a15d62db", function (a) {
                     return "Mietti " + a.seconds + " s";
+                }),
+                e("f26fc748", "Script"),
+                e("h26fa43f", function (a) {
+                    return a.count + " more";
                 }),
                 e("ha8fbe22", "Premium-tilaajana voit muodostaa enemmän kuvia"),
                 e("d95c232a", "Raja tuli täyteen. Päivitä tilaus saadaksesi muodostaa lisää."),
@@ -4923,14 +4931,14 @@
                 e("ff95a9cc", "Videon tunnus"),
                 e("a97e358e", "Videon linkki"),
                 e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
-                e("ba37f6da", "Yhteenveto videoista"),
-                e("f19846b2", "Videon esikatselukuva"),
+                e("ba37f6da", "Yhteenveto videoista");
+            e("f19846b2", "Videon esikatselukuva"),
                 e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
                 e("a532072a", "Katsojat"),
                 e("d9508ab0", "näyttöä"),
-                e("d9f9dec0", "Näytä huone");
-            e("h0c1f37a", "Näytä huoneen tilastot"),
+                e("d9f9dec0", "Näytä huone"),
+                e("h0c1f37a", "Näytä huoneen tilastot"),
                 e("e41fffbc", "Videoittesi katseluaika yhteensä."),
                 e("if2909ba", "Katseluaika"),
                 e("i0e5bf4c", "Videosi"),
@@ -5875,16 +5883,16 @@
                 e("af781666", "Mitä ihmiset miettivät?"),
                 e("a1f414ee", "Kerro mielipiteesi"),
                 e("ed88e742", "Kopioi linkki aiheeseen"),
-                e("h92fe1be", "Valitettavasti Yhteisöhuomautukset ei vielä ole käytettävissäsi."),
-                e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa."),
+                e("h92fe1be", "Valitettavasti Yhteisöhuomautukset ei vielä ole käytettävissäsi.");
+            e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa."),
                 e("f8fc0b48", "Luo kansio"),
                 e("c14bcdde", "Hae kirjanmerkeistä"),
                 e("e9c65c4a", "Haku kirjanmerkeistä"),
                 e("b92a21d9", function (a) {
                     return "Ei tuloksia haulla " + a.query;
                 }),
-                e("f191a2ba", "Hakuasetuksesi");
-            e("a068008a", "Kansiot eivät nyt lataudu"),
+                e("f191a2ba", "Hakuasetuksesi"),
+                e("a068008a", "Kansiot eivät nyt lataudu"),
                 e("f075b0e8", "Muokkaa kansiota"),
                 e("beba2a0e", "Luo uusi kirjanmerkkikansio"),
                 e("e41c9b4f", function (a) {
@@ -6881,18 +6889,18 @@
                 e("b8cbb51a", "Tehtävän yhteenveto"),
                 e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata."),
                 e("b075c68a", "Muokkaa työpaikkaa"),
-                e("d4b6a6e0", "Profiilivalokeila"),
-                e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella."),
+                e("d4b6a6e0", "Profiilivalokeila");
+            e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella."),
                 e("af1cfd46", "ATS-integraatio"),
                 e("d6fa2944", "Integroinnin poistaminen ei poista jo tuotuja työpaikkoja."),
                 e("h99f11fa", "Poista integraatio"),
                 e("eef1ae76", "Yhdistetty nyt"),
                 e("a915f5c1", function (a) {
                     return a.ats + " yhdistetty";
-                });
-            e("af7286b7", function (a) {
-                return a.percentage + " %:n alennus Premium-vuositilauksesta";
-            }),
+                }),
+                e("af7286b7", function (a) {
+                    return a.percentage + " %:n alennus Premium-vuositilauksesta";
+                }),
                 e("c924ad84", "Jatka videoiden toistoa"),
                 e("de750a3c", "Nauti niistä silloinkin, kun puhelin on lukittu"),
                 e("he5e87c4", "Tehosta vastauksiasi"),
@@ -7863,15 +7871,7 @@
                 e("b74ff5fc", "Jos perut, Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
                 e("ee9efbc8", "Jatka perumaan"),
                 e("c5d9c77a", "Jossain oli jotain häikkää. Älä huoli, vika ei ole sinun. Sulje tämä ikkuna ja yritä uudelleen."),
-                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta."),
-                e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta."),
-                e("i5f14be7", function (a) {
-                    return "Tervetuloa takaisin, " + a.displayName;
-                }),
-                e("a76d58ba", "Mainostilastot"),
-                e("eccd0e1a", "Organisaation analytiikka"),
-                e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
-                e("eb603ffc", "Päivittämällä saat oman verkostosi affilioitua ja näet kootut tilastot.");
+                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta.");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7910,7 +7910,15 @@
                     u(a, t)
                 );
             }
-            e("gf67aae4", "Päivitä tilaus täysiin käyttöoikeuksiin"),
+            e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta."),
+                e("i5f14be7", function (a) {
+                    return "Tervetuloa takaisin, " + a.displayName;
+                }),
+                e("a76d58ba", "Mainostilastot"),
+                e("eccd0e1a", "Organisaation analytiikka"),
+                e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
+                e("eb603ffc", "Päivittämällä saat oman verkostosi affilioitua ja näet kootut tilastot."),
+                e("gf67aae4", "Päivitä tilaus täysiin käyttöoikeuksiin"),
                 e("h75e3618", "Sisällytä organisaatio"),
                 e("h24a8862", "Tästä valintaruudusta"),
                 e("c29e3a88", "Valitse affiliaatit"),
@@ -8903,16 +8911,16 @@
                     return "Käy paikassa " + a.advertiserName;
                 }),
                 e("c67e71aa", "Katso nyt"),
-                e("a6ada13e", "Osta nyt"),
-                e("j0f12222", "Näe lisää"),
+                e("a6ada13e", "Osta nyt");
+            e("j0f12222", "Näe lisää"),
                 e("f569f7c8", "Siirry sivustolle"),
                 e("j0c6772a", "Käy sivustolla"),
                 e("f73003aa", "Video näytetään mainoksen jälkeen"),
                 e("b3112b8a", "Ohita"),
-                e("h6333ad0", "Ohita mainos");
-            e("c59da417", function (a) {
-                return "Ohita mainos " + a.seconds + " kuluttua";
-            }),
+                e("h6333ad0", "Ohita mainos"),
+                e("c59da417", function (a) {
+                    return "Ohita mainos " + a.seconds + " kuluttua";
+                }),
                 e("c3c147cf", function (a) {
                     return "Ohita " + a.seconds;
                 }),
@@ -13362,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.f771bcea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.9eeabc5a.js.map

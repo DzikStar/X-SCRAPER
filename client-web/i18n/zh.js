@@ -225,9 +225,9 @@
                     return e.tier + " " + e.plan + "可享 " + e.percentage + "% 优惠";
                 }),
                 f("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "今夏享受 " + e.percentage + "% 优惠";
                 }),
-                f("he77d8e6", "Limited-time offer"),
+                f("he77d8e6", "限时优惠"),
                 f("adf3410a", "订阅以解锁新功能，如果符合条件，还可获得收入分成。"),
                 f("a84a736e", "获取免费广告积分"),
                 f("a0713d76", "升级为“认证组织 ”可获得免费广告积分和一整套业务增长工具。"),
@@ -1293,7 +1293,7 @@
                     return "正在搜索 𝕏 上的“" + e.query + "”";
                 }),
                 f("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return "正在搜索 𝕏 用户中的“" + e.query + "”";
                 }),
                 f("g008d475", function (e) {
                     return "正在浏览 " + e.url;
@@ -1314,8 +1314,13 @@
                     return "正在搜索 @" + e.username + " 的 𝕏 帖子中的**“" + e.query + "”**";
                 }),
                 f("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "正在执行代码" + e.ttc_tool_usage_card;
                 }),
+                f("aa9d42c0", "Searching the web"),
+                f("dce1817a", "Searching on 𝕏"),
+                f("f7151564", "Searching users on 𝕏"),
+                f("c43ef93e", "Browsing web page"),
+                f("jb097f6e", "Executing code"),
                 f("ead81122", "出错了，请刷新以重新连接或重试。"),
                 f("f808a13a", "超过频率限制。请稍后再试。"),
                 f("e0481e5a", "你所在的国家/地区暂时不支持 Grok。"),
@@ -1348,12 +1353,12 @@
                 f("deaf5b16", "重试"),
                 f("a66d80d0", "翻译帖子"),
                 f("be9b9fb8", "由 Grok 翻译"),
-                f("ba10dab6", "Auto-translated by Grok"),
+                f("ba10dab6", "由 Grok 自动翻译"),
                 f("he9c9634", "无法获取翻译"),
                 f("j2198c98", "隐藏已翻译帖子"),
                 f("d4d35bea", "正在翻译..."),
-                f("f4f69be8", "Show original"),
-                f("e3097a5c", "Show auto-translated post"),
+                f("f4f69be8", "显示原文"),
+                f("e3097a5c", "显示自动翻译帖子"),
                 f("e0f81ff3", "翻译："),
                 f("j2862695", function (e) {
                     return "翻译自 " + e.originLanguage;
@@ -1909,10 +1914,10 @@
                 f("aefd89c8", "导航"),
                 f("cafdefb2", "操作"),
                 f("dda42cf2", "列和栏目面板"),
-                f("e8a12604", "提供字幕（可选）"),
-                f("eabf2209", function (e) {
-                    return "GIF 由 " + e.providerName + " 提供";
-                }),
+                f("e8a12604", "提供字幕（可选）");
+            f("eabf2209", function (e) {
+                return "GIF 由 " + e.providerName + " 提供";
+            }),
                 f("a613e720", "复制链接至 GIF"),
                 f("aeca1239", function (e) {
                     return "粗体" + e.ttc_rich_text_composer;
@@ -1922,8 +1927,8 @@
                 }),
                 f("ad89b831", function (e) {
                     return "活跃" + e.ttc_rich_text_composer;
-                });
-            f("jcd5ee8a", "编辑块"),
+                }),
+                f("jcd5ee8a", "编辑块"),
                 f("a8f09fb8", "删除块"),
                 f("i89195ea", "分割线"),
                 f("da8ac57c", "编辑字幕"),
@@ -2969,13 +2974,13 @@
                 f("a078ff70", "想查看与你在这个主题帖中互动的用户的更多内容吗？开始探索新账号的内容。"),
                 f("cb80300e", "跳至主页时间线"),
                 f("ea5cd098", "跳至当前趋势"),
-                f("c67e3fc2", "主页时间线"),
-                f("d601fc20", "最新"),
+                f("c67e3fc2", "主页时间线");
+            f("d601fc20", "最新"),
                 f("j43f99be", "相关性"),
                 f("ad6e11ac", "回复排序依据"),
                 f("b2311b70", "此内容对你不可用"),
-                f("j88f27d8", "相关用户");
-            f("i31dcd22", "文章"),
+                f("j88f27d8", "相关用户"),
+                f("i31dcd22", "文章"),
                 f("e3de2f6f", function (e) {
                     return e.entity + " 已被添加到你的书签";
                 }),
@@ -3891,10 +3896,10 @@
                 }),
                 f("fc56c8b1", function (e) {
                     return "共同主持人";
-                }),
-                f("iba0f45d", function (e) {
-                    return "发言人";
-                }),
+                });
+            f("iba0f45d", function (e) {
+                return "发言人";
+            }),
                 f("dc066955", function (e) {
                     return "听众";
                 }),
@@ -3904,8 +3909,8 @@
                 f("c3b5b829", function (e) {
                     return e.count + " 请求";
                 }),
-                f("fe7a1910", "发送邀请");
-            f("ic3c757e", "搜索用户"),
+                f("fe7a1910", "发送邀请"),
+                f("ic3c757e", "搜索用户"),
                 f("cd133486", "邀请"),
                 f("f2333850", "与 X 之外的人分享"),
                 f("cddb8097", "了解更多"),
@@ -4267,7 +4272,7 @@
                     return "显示全部 (" + e.count + ")";
                 }),
                 f("df601d92", "相关用户"),
-                f("a4cfb8a8", "Browsing"),
+                f("a4cfb8a8", "正在浏览"),
                 f("d7cb5408", "相关网页"),
                 f("ca93f2ee", "私信已被删除。"),
                 f("b8c06820", "复制文本"),
@@ -4337,7 +4342,6 @@
                 f("db832e38", "请在浏览器设置中启用通知"),
                 f("a910cac6", "启用通知时遇到问题"),
                 f("be30b6ee", "连接不稳定"),
-                f("ge15b488", "显示想法"),
                 f("aa7c96bb", function (e) {
                     return "查看另外 " + e.numResults + " 条";
                 }),
@@ -4353,6 +4357,10 @@
                 }),
                 f("a15d62db", function (e) {
                     return "已经思考 " + e.seconds + " 秒";
+                }),
+                f("f26fc748", "Script"),
+                f("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 f("ha8fbe22", "升级 Premium 以生成更多图片"),
                 f("d95c232a", "你已达到限额。立即升级以生成更多内容。"),
@@ -4922,14 +4930,14 @@
                 f("ff95a9cc", "视频 ID"),
                 f("a97e358e", "视频链接"),
                 f("e10e8b46", "只显示最近 100 天的视频。"),
-                f("ba37f6da", "视频概览"),
-                f("f19846b2", "视频缩略图"),
+                f("ba37f6da", "视频概览");
+            f("f19846b2", "视频缩略图"),
                 f("ccd6f4a8", "视频标题"),
                 f("c8410542", "你的视频被观看的次数。"),
                 f("a532072a", "观众"),
                 f("d9508ab0", "次观看"),
-                f("d9f9dec0", "查看空间");
-            f("h0c1f37a", "查看空间分析"),
+                f("d9f9dec0", "查看空间"),
+                f("h0c1f37a", "查看空间分析"),
                 f("e41fffbc", "你视频的总观看时间。"),
                 f("if2909ba", "观看时间"),
                 f("i0e5bf4c", "您的视频"),
@@ -5874,16 +5882,16 @@
                 f("af781666", "人们怎么看？"),
                 f("a1f414ee", "分享想法"),
                 f("ed88e742", "复制话题链接"),
-                f("h92fe1be", "很遗憾，你目前还无法使用社群笔记。"),
-                f("f0dc1434", "社群附注目前仅在美国推出"),
+                f("h92fe1be", "很遗憾，你目前还无法使用社群笔记。");
+            f("f0dc1434", "社群附注目前仅在美国推出"),
                 f("f8fc0b48", "创建文件夹"),
                 f("c14bcdde", "搜索书签"),
                 f("e9c65c4a", "书签搜索"),
                 f("b92a21d9", function (e) {
                     return e.query + " 没有搜索到结果";
                 }),
-                f("f191a2ba", "搜索设置");
-            f("a068008a", "文件夹暂时无法载入"),
+                f("f191a2ba", "搜索设置"),
+                f("a068008a", "文件夹暂时无法载入"),
                 f("f075b0e8", "编辑文件夹"),
                 f("beba2a0e", "创建新书签文件夹"),
                 f("e41c9b4f", function (e) {
@@ -6502,7 +6510,7 @@
                 f("f7cf3d36", "Grok 是 xAI 设计的一款免费 AI 助手，旨在尽可能提高真实性和客观性。Grok 提供实时搜索、图像生成、趋势分析等功能。"),
                 f("hc965308", "趣味"),
                 f("eb78b77e", "趣味模式"),
-                f("ac164552", "Go to grok.com"),
+                f("ac164552", "转到 grok.com"),
                 f("gb5fb7d0", "专注模式"),
                 f("g5665caa", "退出专注模式"),
                 f("a372681e", "复制分享链接"),
@@ -6880,18 +6888,18 @@
                 f("b8cbb51a", "工作摘要"),
                 f("bda6881e", "这个工作机会已从你的申请人跟踪系统 (ATS) 导入。请注意，只有特定字段可修改。"),
                 f("b075c68a", "编辑工作机会"),
-                f("d4b6a6e0", "个人资料聚焦"),
-                f("j2dd3686", "在我的帖子上方突出显示精选工作机会。"),
+                f("d4b6a6e0", "个人资料聚焦");
+            f("j2dd3686", "在我的帖子上方突出显示精选工作机会。"),
                 f("af1cfd46", "ATS 集成"),
                 f("d6fa2944", "删除集成不会删除导入的工作机会。"),
                 f("h99f11fa", "删除集成"),
                 f("eef1ae76", "当前已连接"),
                 f("a915f5c1", function (e) {
                     return e.ats + " 已连接";
-                });
-            f("af7286b7", function (e) {
-                return "订阅一年 Premium 可享 " + e.percentage + "% 优惠";
-            }),
+                }),
+                f("af7286b7", function (e) {
+                    return "订阅一年 Premium 可享 " + e.percentage + "% 优惠";
+                }),
                 f("c924ad84", "保持视频播放"),
                 f("de750a3c", "即使手机已上锁，也能轻松查看"),
                 f("he5e87c4", "推广你的回复"),
@@ -6993,9 +7001,9 @@
                 f("gd573390", "以及基础订阅的全部内容..."),
                 f("ef94bbd4", "获取 Premium+"),
                 f("dcd830ce", "以及 Premium 订阅的全部内容..."),
-                f("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                f("dde0dbe0", "享受我们的夏季优惠，截止时间："),
                 f("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "夏季优惠将于 " + e.date + "结束。";
                 }),
                 f("b7dde622", "感恩节快乐！优惠截止日期："),
                 f("i0180ca1", function (e) {
@@ -7391,10 +7399,10 @@
                 f("bd05add8", "不是机器人"),
                 f("d94f12b6", "尝试搜索通知、隐私等"),
                 f("ba8f6f82", "搜索设置"),
-                f("ibf92e4a", "Payment Successful"),
+                f("ibf92e4a", "支付成功"),
                 f("bdf0fb06", "Your subscription has been activated."),
                 f("ddfd6718", "付款失败"),
-                f("d42fa852", "There was an issue processing your payment. Please try again."),
+                f("d42fa852", "处理你的支付时出现问题。请稍后重试。"),
                 f("g055a9ce", "Open 𝕏 App"),
                 f("g931a6e5", function (e) {
                     return "你正在关注 " + e.topic;
@@ -7862,15 +7870,7 @@
                 f("b74ff5fc", "如果取消，你的订阅将在账单周期结束时自动失效。"),
                 f("ee9efbc8", "继续取消"),
                 f("c5d9c77a", "看起来有点小插曲。不过别担心，这不是你的错。关闭这个窗口并重试。"),
-                f("jda53c24", "你可以通过 Apple App Store 来取消订阅。"),
-                f("g0a7a53e", "你可以通过 Google Play Store 来取消订阅。"),
-                f("i5f14be7", function (e) {
-                    return "欢迎回来，" + e.displayName;
-                }),
-                f("a76d58ba", "广告分析"),
-                f("eccd0e1a", "组织分析"),
-                f("deea1708", "想要查看所有 X 账号的分析？"),
-                f("eb603ffc", "升级以加入你的网络并查看汇总分析。");
+                f("jda53c24", "你可以通过 Apple App Store 来取消订阅。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7909,7 +7909,15 @@
                     r(e, c)
                 );
             }
-            f("gf67aae4", "升级为完全功能"),
+            f("g0a7a53e", "你可以通过 Google Play Store 来取消订阅。"),
+                f("i5f14be7", function (e) {
+                    return "欢迎回来，" + e.displayName;
+                }),
+                f("a76d58ba", "广告分析"),
+                f("eccd0e1a", "组织分析"),
+                f("deea1708", "想要查看所有 X 账号的分析？"),
+                f("eb603ffc", "升级以加入你的网络并查看汇总分析。"),
+                f("gf67aae4", "升级为完全功能"),
                 f("h75e3618", "包括组织"),
                 f("h24a8862", "关于此复选框"),
                 f("c29e3a88", "选择附属账号"),
@@ -8902,16 +8910,16 @@
                     return "访问 " + e.advertiserName;
                 }),
                 f("c67e71aa", "立即观看"),
-                f("a6ada13e", "立即选购"),
-                f("j0f12222", "查看更多"),
+                f("a6ada13e", "立即选购");
+            f("j0f12222", "查看更多"),
                 f("f569f7c8", "访问网站"),
                 f("j0c6772a", "访问网站"),
                 f("f73003aa", "视频将在广告后播放"),
                 f("b3112b8a", "跳过"),
-                f("h6333ad0", "跳过广告");
-            f("c59da417", function (e) {
-                return e.seconds + " 秒内跳过广告";
-            }),
+                f("h6333ad0", "跳过广告"),
+                f("c59da417", function (e) {
+                    return e.seconds + " 秒内跳过广告";
+                }),
                 f("c3c147cf", function (e) {
                     return "跳过 " + e.seconds;
                 }),
@@ -13023,7 +13031,7 @@
                 k = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 p = (m._dateFormat, m._dateFormatterFn),
                 N = m._relativeTimeFormatterFn,
-                l = m._unitFormatterFn;
+                j = m._unitFormatterFn;
             (m.b840332509 = h(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { other: "0" }, 4: { other: "0万" }, 5: { other: "00万" }, 6: { other: "000万" }, 7: { other: "0000万" }, 8: { other: "0亿" }, 9: { other: "00亿" }, 10: { other: "000亿" }, 11: { other: "0000亿" }, 12: { other: "0兆" }, 13: { other: "00兆" }, 14: { other: "000兆" }, maxExponent: 14 }], m("zh").pluralGenerator({}))),
                 (m.a127284719 = h(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
                 (m.a1939888235 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13223,22 +13231,22 @@
                 (m.b412416471 = p(m("zh").dateToPartsFormatter({ date: "medium" }))),
                 (m.a591420253 = p(m("zh").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (m.b79618053 = N(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0}天后" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0}天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "后天" })),
-                (m.b418507296 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "秒钟", other: "{0}秒钟", perUnitPattern: "{0}/秒" } })),
-                (m.a1989496704 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "分钟", other: "{0}分钟", perUnitPattern: "每分钟{0}" } })),
-                (m.b1887195632 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "小时", other: "{0}小时", perUnitPattern: "每小时{0}" } })),
-                (m.b1062187743 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0}秒", perUnitPattern: "{0}/秒" } })),
-                (m.b1957716287 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分钟", other: "{0}分钟", perUnitPattern: "{0}/分钟" } })),
-                (m.a572561745 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小时", other: "{0}小时", perUnitPattern: "{0}/小时" } })),
-                (m.a1695384243 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0}天", perUnitPattern: "{0}/天" } })),
-                (m.b2113959950 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "天", other: "{0}天", perUnitPattern: "每天{0}" } })),
-                (m.a1064489559 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "个月", other: "{0}个月", perUnitPattern: "{0}/月" } })),
-                (m.b402886506 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "个月", other: "{0}个月", perUnitPattern: "每月{0}" } })),
-                (m.a1977124138 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0}年", perUnitPattern: "{0}/年" } })),
-                (m.b406406103 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "年", other: "{0}年", perUnitPattern: "每年{0}" } })),
-                (m.a1644499372 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0}秒", perUnitPattern: "{0}/秒" } })),
-                (m.b1016787956 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分钟", other: "{0}分钟", perUnitPattern: "{0}/分钟" } })),
-                (m.b935166084 = l(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小时", other: "{0}小时", perUnitPattern: "{0}/小时" } })),
-                (m.a1442023906 = l(m("zh").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0}秒", perUnitPattern: "{0}/秒" } })),
+                (m.b418507296 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "秒钟", other: "{0}秒钟", perUnitPattern: "{0}/秒" } })),
+                (m.a1989496704 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "分钟", other: "{0}分钟", perUnitPattern: "每分钟{0}" } })),
+                (m.b1887195632 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "小时", other: "{0}小时", perUnitPattern: "每小时{0}" } })),
+                (m.b1062187743 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0}秒", perUnitPattern: "{0}/秒" } })),
+                (m.b1957716287 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分钟", other: "{0}分钟", perUnitPattern: "{0}/分钟" } })),
+                (m.a572561745 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小时", other: "{0}小时", perUnitPattern: "{0}/小时" } })),
+                (m.a1695384243 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0}天", perUnitPattern: "{0}/天" } })),
+                (m.b2113959950 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "天", other: "{0}天", perUnitPattern: "每天{0}" } })),
+                (m.a1064489559 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "个月", other: "{0}个月", perUnitPattern: "{0}/月" } })),
+                (m.b402886506 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "个月", other: "{0}个月", perUnitPattern: "每月{0}" } })),
+                (m.a1977124138 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0}年", perUnitPattern: "{0}/年" } })),
+                (m.b406406103 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "每{1}{0}", unitProperties: { displayName: "年", other: "{0}年", perUnitPattern: "每年{0}" } })),
+                (m.a1644499372 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0}秒", perUnitPattern: "{0}/秒" } })),
+                (m.b1016787956 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分钟", other: "{0}分钟", perUnitPattern: "{0}/分钟" } })),
+                (m.b935166084 = j(m("zh").numberFormatter({}), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小时", other: "{0}小时", perUnitPattern: "{0}/小时" } })),
+                (m.a1442023906 = j(m("zh").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0}秒", perUnitPattern: "{0}/秒" } })),
                 f("d58baa7f", m.b840332509),
                 f("ia24dc8d", m.a127284719),
                 f("iab73d4b", m.a1939888235),
@@ -13363,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.b105d73a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.c812357a.js.map

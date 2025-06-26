@@ -424,7 +424,7 @@
                 h = n(980407),
                 g = n(514639),
                 b = n(445664),
-                E = n(351990),
+                E = n(412450),
                 f = n(535338),
                 P = n(615027),
                 Z = n(281838),
@@ -902,4 +902,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.dd19d07a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.653a943a.js.map

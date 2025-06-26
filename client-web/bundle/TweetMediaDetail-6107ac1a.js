@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.TweetMediaDetail-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
+    ["bundle.TweetMediaDetail-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconDoubleChevronLeft-js", "icons/IconFilter-js"],
     {
         300234: (e, t, o) => {
             o.d(t, { Z: () => U });
@@ -96,8 +96,8 @@
             const M = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
                 A = n.createElement(P.Z, { ariaValueText: I, indeterminate: !0, style: M.progressBar }),
                 k = D;
-            var F = o(310453);
-            class B extends n.PureComponent {
+            var L = o(310453);
+            class F extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handlePlaybackStarted = () => {
@@ -109,7 +109,7 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: L.root }, this._renderVideo()));
+                    return n.createElement(i.Z, { style: e }, n.createElement(i.Z, { style: B.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
@@ -119,11 +119,11 @@
                     const { promotedContent: e, video: t, videoId: o } = this.props,
                         [i, r] = t.video_info.aspect_ratio,
                         a = s.Z.extractVideoProps(o, t);
-                    return (a.aspectRatio = i / r), n.createElement(F.Z, (0, m.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
+                    return (a.aspectRatio = i / r), n.createElement(L.Z, (0, m.Z)({}, a, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const L = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                R = B,
+            const B = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                R = F,
                 z = y().ac85c6b2,
                 N = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: r, mediaDetail: a, onDismiss: l, onTap: c, promotedContent: d, videoId: h, ...p } = e,
@@ -463,9 +463,9 @@
                 M = ({ customText: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "ccc1f303" }, n.createElement(i.ZP, null, e)) : void 0),
                 A = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "ce02fabf" }, n.createElement(i.ZP, null, e)) : void 0),
                 k = a().e6d43d06,
-                F = ({ customText: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "a85608a7" }, n.createElement(i.ZP, null, e)) : void 0),
-                B = a().ic848090,
-                L = a().f9ebe066,
+                L = ({ customText: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "a85608a7" }, n.createElement(i.ZP, null, e)) : void 0),
+                F = a().ic848090,
+                B = a().f9ebe066,
                 R = ({ userFullName: e }) => (e ? n.createElement(a().I18NFormatMessage, { $i18n: "c76865b7" }, n.createElement(i.ZP, null, e)) : void 0),
                 z = a().je3d93e2,
                 N = a().ea88ce2e,
@@ -486,9 +486,9 @@
                         case H.subscribe:
                             return { icon: u.default, text: M, subtext: A, iconStyle: j.iconOther };
                         case H.topic:
-                            return { icon: m.default, text: k, subtext: F, iconStyle: j.iconTopics };
+                            return { icon: m.default, text: k, subtext: L, iconStyle: j.iconTopics };
                         case H.community:
-                            return { icon: _.default, text: B, subtext: L, iconStyle: j.iconOther };
+                            return { icon: _.default, text: F, subtext: B, iconStyle: j.iconOther };
                         case H.search:
                             return { icon: g.default, text: R, subtext: z, iconStyle: j.iconOther };
                         default:
@@ -500,7 +500,7 @@
                 j = s.default.create((e) => ({ iconOther: { color: e.colors.blue500 }, iconLike: { color: e.colors.magenta500 }, iconTwitter: { color: e.colors.brandColor }, iconRetweet: { color: e.colors.green500 }, iconTopics: { color: e.colors.blue500 } }));
         },
         369241: (e, t, o) => {
-            o.d(t, { BH: () => P.BH, ZP: () => B });
+            o.d(t, { BH: () => P.BH, ZP: () => F });
             o(875640);
             var n = o(202784),
                 i = o(529356),
@@ -542,7 +542,7 @@
                 M = r().hd50e064,
                 A = r().a565833e,
                 k = r().e919c3bc;
-            class F extends n.Component {
+            class L extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getFullSheetDisplayElements = P.Wc.bind(null, this.context.featureSwitches)),
@@ -625,8 +625,8 @@
                     t.scribe({ component: "login_signup_sheet", element: i, action: e });
                 }
             }
-            (F.defaultProps = { displayMode: P.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: k, signupLabel: A, onlyShowOnce: !1 }), (F.displayMode = P.BH), (F.contextType = h.rC);
-            const B = S(F);
+            (L.defaultProps = { displayMode: P.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: k, signupLabel: A, onlyShowOnce: !1 }), (L.displayMode = P.BH), (L.contextType = h.rC);
+            const F = S(L);
         },
         56851: (e, t, o) => {
             o.d(t, { Z: () => _ });
@@ -1223,20 +1223,22 @@
             const w = c.default.create((e) => ({ fill: { flex: 1 } })),
                 y = g;
         },
-        748138: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
+        836397: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => c });
             var n = o(202784),
                 i = o(890601),
                 s = o(783427),
-                r = o(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                r = o(717683),
+                a = o(347101);
+            const l = (e = {}) => {
+                const t = n.useContext(r.Z),
+                    { direction: o } = (0, s.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.04 2.54l1.42 1.42L5.41 12l8.05 8.04-1.42 1.42L2.59 12l9.45-9.46zm7 0l1.42 1.42L12.41 12l8.05 8.04-1.42 1.42L9.59 12l9.45-9.46z" })) }, { writingDirection: o });
             };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
         },
-        452693: (e, t, o) => {
+        517747: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 i = o(890601),
@@ -1244,7 +1246,7 @@
                 r = o(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -1267,4 +1269,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.96abc9ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.0c9856ca.js.map

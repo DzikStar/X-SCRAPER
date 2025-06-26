@@ -1316,6 +1316,11 @@
                 i("a02d1657", function (a) {
                     return "Melaksanakan kod" + a.ttc_tool_usage_card;
                 }),
+                i("aa9d42c0", "Searching the web"),
+                i("dce1817a", "Searching on 𝕏"),
+                i("f7151564", "Searching users on 𝕏"),
+                i("c43ef93e", "Browsing web page"),
+                i("jb097f6e", "Executing code"),
                 i("ead81122", "Ada sesuatu yang tidak kena. Segar semula untuk menyambung semula atau cuba lagi."),
                 i("f808a13a", "Had kadar dilebihi. Sila tunggu selama beberapa ketika kemudian cuba lagi."),
                 i("e0481e5a", "Grok tidak disokong di negara anda pada masa sekarang."),
@@ -1909,10 +1914,10 @@
                 i("aefd89c8", "Navigasi"),
                 i("cafdefb2", "Tindakan"),
                 i("dda42cf2", "Lajur & Dek"),
-                i("e8a12604", "Sediakan kapsyen (pilihan)"),
-                i("eabf2209", function (a) {
-                    return "GIF disediakan oleh " + a.providerName;
-                }),
+                i("e8a12604", "Sediakan kapsyen (pilihan)");
+            i("eabf2209", function (a) {
+                return "GIF disediakan oleh " + a.providerName;
+            }),
                 i("a613e720", "Salin pautan ke GIF"),
                 i("aeca1239", function (a) {
                     return "Tebal" + a.ttc_rich_text_composer;
@@ -1922,8 +1927,8 @@
                 }),
                 i("ad89b831", function (a) {
                     return "aktif" + a.ttc_rich_text_composer;
-                });
-            i("jcd5ee8a", "Edit blok"),
+                }),
+                i("jcd5ee8a", "Edit blok"),
                 i("a8f09fb8", "Padam blok"),
                 i("i89195ea", "Pembahagi"),
                 i("da8ac57c", "Edit Kapsyen"),
@@ -2969,13 +2974,13 @@
                 i("a078ff70", "Ingin melihat lebih banyak kandungan daripada orang yang berinteraksi dengan anda dalam thread ini? Mula meneroka kandungan daripada akaun baharu."),
                 i("cb80300e", "Langkau ke garis masa laman utama"),
                 i("ea5cd098", "Langkau ke sedang trend"),
-                i("c67e3fc2", "Garis Masa Laman Utama"),
-                i("d601fc20", "Terkini"),
+                i("c67e3fc2", "Garis Masa Laman Utama");
+            i("d601fc20", "Terkini"),
                 i("j43f99be", "Keberkaitan"),
                 i("ad6e11ac", "Isih balasan mengikut"),
                 i("b2311b70", "Ini tidak tersedia untuk anda"),
-                i("j88f27d8", "Orang yang berkaitan");
-            i("i31dcd22", "Artikel"),
+                i("j88f27d8", "Orang yang berkaitan"),
+                i("i31dcd22", "Artikel"),
                 i("e3de2f6f", function (a) {
                     return a.entity + " telah ditambahkan pada Bookmark anda";
                 }),
@@ -3891,10 +3896,10 @@
                 }),
                 i("fc56c8b1", function (a) {
                     return "hos lain";
-                }),
-                i("iba0f45d", function (a) {
-                    return "pembicara";
-                }),
+                });
+            i("iba0f45d", function (a) {
+                return "pembicara";
+            }),
                 i("dc066955", function (a) {
                     return "pendengar";
                 }),
@@ -3904,8 +3909,8 @@
                 i("c3b5b829", function (a) {
                     return a.count + " permintaan";
                 }),
-                i("fe7a1910", "Hantar jemputan");
-            i("ic3c757e", "Cari pengguna"),
+                i("fe7a1910", "Hantar jemputan"),
+                i("ic3c757e", "Cari pengguna"),
                 i("cd133486", "Jemput"),
                 i("f2333850", "Kongsi dengan orang di luar X"),
                 i("cddb8097", "Ketahui lebih lanjut"),
@@ -4337,7 +4342,6 @@
                 i("db832e38", "Sila dayakan pemberitahuan dalam tetapan pelayar"),
                 i("a910cac6", "Terdapat isu semasa mendayakan pemberitahuan"),
                 i("be30b6ee", "Sambungan tidak stabil"),
-                i("ge15b488", "Tunjukkan fikiran"),
                 i("aa7c96bb", function (a) {
                     return "Lihat " + a.numResults + " lagi";
                 }),
@@ -4353,6 +4357,10 @@
                 }),
                 i("a15d62db", function (a) {
                     return "Difikirkan selama " + a.seconds + "s";
+                }),
+                i("f26fc748", "Script"),
+                i("h26fa43f", function (a) {
+                    return a.count + " more";
                 }),
                 i("ha8fbe22", "Jana lebih banyak imej dengan Premium"),
                 i("d95c232a", "Anda telah mencapai had anda. Naik taraf sekarang untuk menjana lebih banyak lagi."),
@@ -4922,14 +4930,14 @@
                 i("ff95a9cc", "ID Video"),
                 i("a97e358e", "Pautan Video"),
                 i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu."),
-                i("ba37f6da", "Gambaran keseluruhan video"),
-                i("f19846b2", "Lakaran kecil video"),
+                i("ba37f6da", "Gambaran keseluruhan video");
+            i("f19846b2", "Lakaran kecil video"),
                 i("ccd6f4a8", "Tajuk video"),
                 i("c8410542", "Bilangan kali video anda ditonton."),
                 i("a532072a", "Penonton"),
                 i("d9508ab0", "tontonan"),
-                i("d9f9dec0", "Lihat Space");
-            i("h0c1f37a", "Lihat Analitis Space"),
+                i("d9f9dec0", "Lihat Space"),
+                i("h0c1f37a", "Lihat Analitis Space"),
                 i("e41fffbc", "Jumlah masa tontonan video anda."),
                 i("if2909ba", "Masa Tontonan"),
                 i("i0e5bf4c", "Video anda"),
@@ -5874,16 +5882,16 @@
                 i("af781666", "Apakah pandangan orang ramai?"),
                 i("a1f414ee", "Kongsi fikiran"),
                 i("ed88e742", "Salin pautan kepada Topik"),
-                i("h92fe1be", "Malangnya, Nota Komuniti tidak tersedia untuk anda pada masa ini."),
-                i("f0dc1434", "Nota Komuniti hanya tersedia di A.S. pada masa ini."),
+                i("h92fe1be", "Malangnya, Nota Komuniti tidak tersedia untuk anda pada masa ini.");
+            i("f0dc1434", "Nota Komuniti hanya tersedia di A.S. pada masa ini."),
                 i("f8fc0b48", "Cipta Folder"),
                 i("c14bcdde", "Cari Bookmark"),
                 i("e9c65c4a", "Carian Bookmark"),
                 i("b92a21d9", function (a) {
                     return "Tiada hasil untuk " + a.query;
                 }),
-                i("f191a2ba", "Tetapan carian");
-            i("a068008a", "Folder tidak dimuatkan pada masa sekarang"),
+                i("f191a2ba", "Tetapan carian"),
+                i("a068008a", "Folder tidak dimuatkan pada masa sekarang"),
                 i("f075b0e8", "Edit Folder"),
                 i("beba2a0e", "Cipta Folder Bookmark baharu"),
                 i("e41c9b4f", function (a) {
@@ -6880,18 +6888,18 @@
                 i("b8cbb51a", "Ringkasan Pekerjaan"),
                 i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai."),
                 i("b075c68a", "Edit pekerjaan"),
-                i("d4b6a6e0", "Sorotan Profil"),
-                i("j2dd3686", "Serlahkan pekerjaan yang ditampilkan di atas siaran saya."),
+                i("d4b6a6e0", "Sorotan Profil");
+            i("j2dd3686", "Serlahkan pekerjaan yang ditampilkan di atas siaran saya."),
                 i("af1cfd46", "Penyepaduan ATS"),
                 i("d6fa2944", "Tindakan memadamkan penyepaduan anda tidak akan memadamkan pekerjaan diimport anda."),
                 i("h99f11fa", "Padamkan penyepaduan"),
                 i("eef1ae76", "Sedang disambungkan"),
                 i("a915f5c1", function (a) {
                     return a.ats + " disambungkan";
-                });
-            i("af7286b7", function (a) {
-                return "Diskaun " + a.percentage + "% untuk Premium selama setahun";
-            }),
+                }),
+                i("af7286b7", function (a) {
+                    return "Diskaun " + a.percentage + "% untuk Premium selama setahun";
+                }),
                 i("c924ad84", "Terus memainkan video"),
                 i("de750a3c", "Nikmati siaran walaupun semasa telefon anda dikunci"),
                 i("he5e87c4", "Tingkatkan balasan anda"),
@@ -7862,15 +7870,7 @@
                 i("b74ff5fc", "Jika anda membuat pembatalan, Langganan anda akan tamat tempoh secara automatik pada penghujung kitaran pengebilan."),
                 i("ee9efbc8", "Teruskan ke pembatalan"),
                 i("c5d9c77a", "Nampaknya terdapat sedikit masalah. Jangan bimbang, ini bukan salah anda. Tutup tetingkap ini dan cuba lagi."),
-                i("jda53c24", "Anda boleh membatalkan Langganan anda melalui Apple App Store."),
-                i("g0a7a53e", "Anda boleh membatalkan Langganan anda melalui Google Play Store."),
-                i("i5f14be7", function (a) {
-                    return "Selamat kembali, " + a.displayName;
-                }),
-                i("a76d58ba", "Analitis Iklan"),
-                i("eccd0e1a", "Analitis Organisasi"),
-                i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
-                i("eb603ffc", "Naik taraf untuk menggabungkan rangkaian anda dan melihat analitis yang diagregatkan.");
+                i("jda53c24", "Anda boleh membatalkan Langganan anda melalui Apple App Store.");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7909,7 +7909,15 @@
                     d(a, n)
                 );
             }
-            i("gf67aae4", "Naik taraf kepada Akses Penuh"),
+            i("g0a7a53e", "Anda boleh membatalkan Langganan anda melalui Google Play Store."),
+                i("i5f14be7", function (a) {
+                    return "Selamat kembali, " + a.displayName;
+                }),
+                i("a76d58ba", "Analitis Iklan"),
+                i("eccd0e1a", "Analitis Organisasi"),
+                i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
+                i("eb603ffc", "Naik taraf untuk menggabungkan rangkaian anda dan melihat analitis yang diagregatkan."),
+                i("gf67aae4", "Naik taraf kepada Akses Penuh"),
                 i("h75e3618", "Sertakan organisasi"),
                 i("h24a8862", "Perihal kotak pilihan ini"),
                 i("c29e3a88", "Pilih ahli gabungan"),
@@ -8902,16 +8910,16 @@
                     return "Lawati " + a.advertiserName;
                 }),
                 i("c67e71aa", "Tonton sekarang"),
-                i("a6ada13e", "Beli sekarang"),
-                i("j0f12222", "Lihat lagi"),
+                i("a6ada13e", "Beli sekarang");
+            i("j0f12222", "Lihat lagi"),
                 i("f569f7c8", "Pergi ke laman web"),
                 i("j0c6772a", "Lawati laman web"),
                 i("f73003aa", "Video akan dimainkan selepas iklan"),
                 i("b3112b8a", "Langkau"),
-                i("h6333ad0", "Langkau Iklan");
-            i("c59da417", function (a) {
-                return "Langkau Iklan dalam masa " + a.seconds;
-            }),
+                i("h6333ad0", "Langkau Iklan"),
+                i("c59da417", function (a) {
+                    return "Langkau Iklan dalam masa " + a.seconds;
+                }),
                 i("c3c147cf", function (a) {
                     return "Langkau " + a.seconds;
                 }),
@@ -13347,4 +13355,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.1ef6260a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.25f0d60a.js.map

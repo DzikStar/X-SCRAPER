@@ -181,7 +181,7 @@
                 y = (e) => (0, i.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(o.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: r.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         16800: (e, n, a) => {
-            a.r(n), a.d(n, { ExploreScreen: () => v, default: () => L });
+            a.r(n), a.d(n, { ExploreScreen: () => G, default: () => L });
             var d = a(202784),
                 o = a(457311),
                 t = a(688715),
@@ -198,14 +198,15 @@
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                            a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -268,7 +269,7 @@
                 A = a(668214),
                 k = a(558369);
             const I = (e, n) => n.match?.params?.tabId || void 0,
-                _ = () => {
+                x = () => {
                     const e = (0, E.Z)((e) => (0, f.fy)(e)),
                         n = (0, E.Z)((e, n) => (0, f.fy)(e, n));
                     return (0, y.P1)(
@@ -278,8 +279,8 @@
                         (e, a, d) => n(e, d ? d?.tabs?.initialTabId : a),
                     );
                 },
-                x = (0, A.Z)()
-                    .propsFromState(() => ({ initialTabModule: _(), selectedTabId: I }))
+                _ = (0, A.Z)()
+                    .propsFromState(() => ({ initialTabModule: x(), selectedTabId: I }))
                     .withAnalytics({ page: "guide", section: "main" });
             const P = { ...(0, a(335632).G)({ withThirdPartyCards: !0, errorContext: "EXPLORE_SCREEN" }) },
                 Z = l().fcf3e54c,
@@ -287,10 +288,10 @@
                 T = l().a19ce060,
                 S = () => d.createElement(D.Z, null),
                 N = () => d.createElement(o.Z, { message: T }),
-                B = 600,
-                R = 315,
-                G = "https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg";
-            class v extends d.Component {
+                v = 600,
+                B = 315,
+                R = "https://abs.twimg.com/a/1602199131/img/moments/moments-card.jpg";
+            class G extends d.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getTabLink = (e) => ({ pathname: `/explore/tabs/${e}` })),
@@ -314,14 +315,14 @@
                         A = E && !!r && "news" !== r && "for_you" !== r,
                         k = E && "news" === r,
                         I = E && "news" === r,
-                        _ = d.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, d.createElement(d.Fragment, null, k && d.createElement(h, null), I && d.createElement(m, null))),
-                        x = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
+                        x = d.createElement(i.Z, { withNews: A, withSearchBox: !1, withTrends: !1 }, d.createElement(d.Fragment, null, k && d.createElement(h, null), I && d.createElement(m, null))),
+                        _ = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
                         T = e.contextualScribeNamespace;
-                    return d.createElement(d.Fragment, null, d.createElement(c.Z, { description: C, includeOpenGraphMeta: !1, title: Z }), d.createElement(u.Z, { canonical: (0, t.ju)("https://x.com/explore"), description: C, image: G, imageH: R, imageW: B, title: Z, type: "article" }), d.createElement(g.Z, { entryConfiguration: P, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: M.Nw.OTHER, renderEmptyState: S, renderUnavailable: N, rightControl: D, selectedTabId: r, sidebarContent: _, timelinePrefix: f.uI, title: Z, withBottomLoginSignupBar: !0, withSearchBox: x }), !1);
+                    return d.createElement(d.Fragment, null, d.createElement(c.Z, { description: C, includeOpenGraphMeta: !1, title: Z }), d.createElement(u.Z, { canonical: (0, t.ju)("https://x.com/explore"), description: C, image: R, imageH: B, imageW: v, title: Z, type: "article" }), d.createElement(g.Z, { entryConfiguration: P, fab: b, getTabLink: this._getTabLink, history: n, initialPageNamespace: T, module: a, onBackClick: y ? this._handleBackClick : void 0, prerollDisplayLocation: M.Nw.OTHER, renderEmptyState: S, renderUnavailable: N, rightControl: D, selectedTabId: r, sidebarContent: x, timelinePrefix: f.uI, title: Z, withBottomLoginSignupBar: !0, withSearchBox: _ }), !1);
                 }
             }
-            v.contextType = p.rC;
-            const L = x(v);
+            G.contextType = p.rC;
+            const L = _(G);
         },
         392027: (e, n, a) => {
             a.d(n, { Z: () => s });
@@ -339,6 +340,19 @@
             const l = t.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 s = r;
         },
+        76388: (e, n, a) => {
+            a.r(n), a.d(n, { default: () => s });
+            var d = a(202784),
+                o = a(890601),
+                t = a(783427),
+                r = a(347101);
+            const l = (e = {}) => {
+                const { direction: n } = (0, t.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: d.createElement("g", null, d.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: n });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.a0a19c4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.0598c37a.js.map

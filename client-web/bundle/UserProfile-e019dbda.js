@@ -42,7 +42,7 @@
                             if (e.metrics.length > 1)
                                 return r.createElement(
                                     d.Z,
-                                    { style: S.tiles },
+                                    { style: Z.tiles },
                                     e.metrics.map((e) => {
                                         const n = t?.find((t) => t.metric_type === e.metricType);
                                         return n?.metric_value ? r.createElement(_, { key: e.metricType, metric: e.metricType, metricResult: n }) : null;
@@ -61,7 +61,7 @@
                         i = r.useCallback(() => {
                             o.scribe({ action: "dismiss" }), n();
                         }, [n, o]);
-                    return r.createElement(d.Z, { style: S.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: S.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: S.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: S.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: S.unlockButton, type: "primaryFilled" }, E)));
+                    return r.createElement(d.Z, { style: Z.container, testID: "analytics-preview" }, r.createElement(d.Z, { style: Z.heading }, e.metrics.length > 1 ? r.createElement(c.ZP, { size: "headline2", weight: "bold" }, D({ days: e.periodInDays })) : null, r.createElement(c.ZP, { color: "gray700", size: "subtext3" }, M), r.createElement(u.ZP, { icon: r.createElement(f.default, null), onClick: i, style: Z.dismissButton, testID: "dismiss-button", type: "primaryText" })), r.createElement(d.Z, { style: Z.content }, s, r.createElement(u.ZP, { icon: r.createElement(b.default, null), link: { pathname: "/i/premium_sign_up", state: { referring_page: "account_analytics" } }, size: "xSmall", style: Z.unlockButton, type: "primaryFilled" }, E)));
                 },
                 I = (e) => {
                     const t = (0, w.Z)({ metrics: e.config.metrics, periodInDays: e.config.periodInDays }),
@@ -77,8 +77,8 @@
                     );
                 },
                 k = r.memo(I),
-                S = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
-                Z = { showForMsec: a.fz, reappearAfterMsec: a.Ho, dismissForMsec: a.dV },
+                Z = m.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, backgroundColor: e.colors.unreadCellBackground, borderRadius: e.borderRadii.large, padding: e.spaces.space16 }, content: { justifyContent: "space-between", flexDirection: "row", flexWrap: "wrap" }, tiles: { flexDirection: "row", gap: e.spaces.space48 }, heading: { flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, unlockButton: { alignSelf: "flex-end", marginTop: e.spaces.space12 }, dismissButton: { marginStart: "auto" } })),
+                S = { showForMsec: a.fz, reappearAfterMsec: a.Ho, dismissForMsec: a.dV },
                 v = { showForMsec: a.Tg, reappearAfterMsec: a.Vv, dismissForMsec: a.IZ },
                 A = {
                     DemoMultipleMetrics: {
@@ -88,9 +88,9 @@
                             { metricType: "Likes", threshold: 1 },
                         ],
                         periodInDays: 7,
-                        fatigueConfig: { key: "AnalyticsPreview_DemoMultipleMetrics", ...Z },
+                        fatigueConfig: { key: "AnalyticsPreview_DemoMultipleMetrics", ...S },
                     },
-                    DemoSingleMetric: { metrics: [{ metricType: "ProfileVisits", threshold: 1 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_DemoSingleMetric", ...Z } },
+                    DemoSingleMetric: { metrics: [{ metricType: "ProfileVisits", threshold: 1 }], periodInDays: 7, fatigueConfig: { key: "AnalyticsPreview_DemoSingleMetric", ...S } },
                     MultipleMetrics: {
                         metrics: [
                             { metricType: "Impressions", threshold: 1e3 },
@@ -249,7 +249,7 @@
             n(202784);
             const r = (0, n(523561).Z)({
                 loader: () =>
-                    Promise.all([n.e("icons.20"), n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)),
+                    Promise.all([n.e("icons.15"), n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-dba52705"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-6f94db39"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), n.e("ondemand.IntentPrompt")]).then(n.bind(n, 958679)),
             });
         },
         170371: (e, t, n) => {
@@ -298,23 +298,27 @@
             const r = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.0"),
                         n.e("icons.5"),
-                        n.e("icons.12"),
+                        n.e("icons.25"),
+                        n.e("icons.22"),
+                        n.e("icons.6"),
+                        n.e("icons.4"),
+                        n.e("icons.9"),
+                        n.e("icons.15"),
+                        n.e("icons.7"),
+                        n.e("icons.3"),
                         n.e("icons.20"),
                         n.e("icons.2"),
-                        n.e("icons.21"),
-                        n.e("icons.28"),
-                        n.e("icons.10"),
-                        n.e("icons.17"),
-                        n.e("icons.9"),
-                        n.e("icons.23"),
+                        n.e("icons.18"),
+                        n.e("icons.27"),
+                        n.e("icons.13"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
+                        n.e("icons.0"),
                         n.e("icons.24"),
-                        n.e("icons.14"),
-                        n.e("icons.25"),
+                        n.e("icons.17"),
+                        n.e("icons.12"),
+                        n.e("icons.11"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -325,21 +329,20 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.6"),
-                        n.e("icons.3"),
+                        n.e("icons.10"),
                         n.e("icons.8"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -357,19 +360,20 @@
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                         n.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         n.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
                         n.e("shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat"),
                         n.e("shared~bundle.Payments~bundle.TV"),
-                        n.e("shared~bundle.Payments~bundle.PaymentShared"),
                         n.e("bundle.Payments-bc6ccf4c"),
                         n.e("bundle.Payments-27545368"),
                         n.e("bundle.Payments-960914ab"),
                         n.e("bundle.Payments-17a1c92a"),
                         n.e("bundle.Payments-39d0705d"),
+                        n.e("bundle.Payments-fd087ba8"),
                         n.e("bundle.Payments-7e6638bc"),
                         n.e("bundle.Payments-9f4db315"),
-                        n.e("bundle.Payments-63cb1cc4"),
+                        n.e("bundle.Payments-6cc66b21"),
                         n.e("bundle.Payments-b8e4b837"),
                         n.e("bundle.Payments-49827288"),
                         n.e("bundle.Payments-25e67f1f"),
@@ -531,18 +535,18 @@
                             },
                             [t, M, d, y],
                         ),
-                        S = r.useCallback(
+                        Z = r.useCallback(
                             (e) => {
                                 _ && (k({ element: "super_follow_subscribe_button", action: "unfollow" }), g(_, { promotedContent: d }).catch(n(p.X))), e();
                             },
                             [n, d, g, _, k],
                         ),
-                        Z = r.useCallback(
+                        S = r.useCallback(
                             (e) => {
-                                const t = [{ Icon: m.default, text: T({ screenName: P }), onClick: S }];
+                                const t = [{ Icon: m.default, text: T({ screenName: P }), onClick: Z }];
                                 return r.createElement(o.Z, { isFixed: !0, items: t, onCloseRequested: e });
                             },
-                            [S, P],
+                            [Z, P],
                         ),
                         v = i ? T({ screenName: P }) : D({ screenName: P });
                     return r.createElement(s.ZP, {
@@ -553,7 +557,7 @@
                         onPress: () => {
                             !P || i || l || (k({ element: "super_follow_subscribe_button", action: "click" }), w.push(`/${P}/creator-subscriptions/subscribe`, { referring_page: "profile_intent" }));
                         },
-                        renderMenu: i ? Z : void 0,
+                        renderMenu: i ? S : void 0,
                         style: b,
                         type: l && i ? "primaryOutlined" : void 0,
                     });
@@ -588,8 +592,8 @@
             const P = u().ia5e7488,
                 I = { label: P },
                 k = u().j33d8902,
-                S = { label: k },
-                Z = u().a8ab3d08,
+                Z = { label: k },
+                S = u().a8ab3d08,
                 v = u().d740d2d9,
                 A = { bandcamp_handle: { icon: r.createElement(m.default, null), label: u().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(p.default, null), label: u().d876e67e }, cash_app_handle: { icon: r.createElement(h.default, null), label: u().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(f.default, null), label: u().a32a7c06 }, gofundme_handle: { icon: r.createElement(b.default, null), label: u().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(g.default, null), label: u().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(y.default, null), label: u().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: u().h1198dcc, url: "https://venmo.com/" } };
             function C({ style: e, userId: t }) {
@@ -609,7 +613,7 @@
                     null,
                     r.createElement(s.ZP, {
                         "aria-label": k,
-                        hoverLabel: S,
+                        hoverLabel: Z,
                         icon: r.createElement(w.default, null),
                         onPress: function () {
                             c((e) => !e);
@@ -621,7 +625,7 @@
                               i.Z,
                               { onMaskClick: f, style: F.sheet, type: "bottom", withMask: !0 },
                               r.createElement(s.ZP, { "aria-label": P, hoverLabel: I, icon: r.createElement(D.default, null), onPress: f, style: F.close, type: "primaryText" }),
-                              r.createElement(o.Z, { style: F.header }, r.createElement(l.ZP, { weight: "bold" }, Z), r.createElement(l.ZP, null, `@${u.screen_name}`)),
+                              r.createElement(o.Z, { style: F.header }, r.createElement(l.ZP, { weight: "bold" }, S), r.createElement(l.ZP, null, `@${u.screen_name}`)),
                               Object.entries(h)
                                   .filter(([e, t]) => t)
                                   .map(([e, t]) => {
@@ -711,10 +715,10 @@
                     return { entities: { translationsProfiles: (0, _.Z)(t, (e) => e.profileUserId) } };
                 },
                 k = M.Z.register(P),
-                S = (e, t) => k.select(e, t.userId),
-                Z = (e, t) => k.selectFetchStatus(e, t.userId),
+                Z = (e, t) => k.select(e, t.userId),
+                S = (e, t) => k.selectFetchStatus(e, t.userId),
                 v = (0, b.Z)()
-                    .propsFromState(() => ({ translation: S, translationFetchStatus: Z, userLanguage: g.VT }))
+                    .propsFromState(() => ({ translation: Z, translationFetchStatus: S, userLanguage: g.VT }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("TRANSLATE_USER_BIO"), fetchTranslation: k.fetchOneIfNeeded, fetchStreamedGrokTranslation: k.fetchStreamedGrokTranslation }))
                     .withAnalytics(),
                 A = i().ad7a451e;
@@ -773,7 +777,7 @@
         507986: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.0"), n.e("icons.20"), n.e("icons.10"), n.e("icons.9"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("icons.6"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.5"), n.e("icons.7"), n.e("icons.3"), n.e("icons.13"), n.e("modules.common-e907d115"), n.e("modules.common-e019dbda"), n.e("icons.12"), n.e("loader.ProfileClusterFollow")]).then(n.bind(n, 751154)) });
         },
         103335: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -1135,4 +1139,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.29ea3e7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.f602581a.js.map

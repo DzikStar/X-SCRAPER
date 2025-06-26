@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DMRichTextCompose", "ondemand.RichText"],
+    ["bundle.DMRichTextCompose", "ondemand.RichText", "icons/IconTicket-js"],
     {
         468032: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -76,13 +76,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: m, secondaryBar: f, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: v, titleIconCellSize: x, withBackground: w, withWideContainer: _ } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: m, secondaryBar: f, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: w, withWideContainer: _ } = this.props,
                         { isModal: S } = this.context,
                         k = i ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         T = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!w, S, !!f);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: k, middleControl: u, position: h(p, S, r), rightControl: m, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: v, titleIconCellSize: x, withBackground: T, withWideContainer: _ }), f || null);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: k, middleControl: u, position: h(p, S, r), rightControl: m, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: T, withWideContainer: _ }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -128,15 +128,15 @@
                     return o.createElement(o.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: c, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, screenType: C, searchBoxOptions: b, secondaryBar: v, showBackButtonOnRoot: x, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, showTitleOnRoot: S, subtitle: k, title: T, titleIconCell: E, titleIconCellSize: Z, withDetailOpen: B, withSearchBox: I, withTweetButton: F, withWideContainer: P } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: c, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, screenType: C, searchBoxOptions: b, secondaryBar: x, showBackButtonOnRoot: v, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, showTitleOnRoot: S, subtitle: k, title: T, titleIconCell: E, titleIconCellSize: Z, withDetailOpen: B, withSearchBox: I, withTweetButton: F, withWideContainer: P } = this.props,
                         L = "root" === C,
                         D = "secondaryRoot" === C,
                         R = "primaryDetail" === C,
                         O = (R && _) || (L && w),
-                        M = (L && !x) || (R && e),
+                        M = (L && !v) || (R && e),
                         W = (L && !S) || (R && e && !S),
                         z = L ? l.ey : R ? l.vX : void 0,
-                        A = o.createElement(r.Z, { style: f.appBarContainer }, o.createElement(d.ZP, { backLocation: s, fixed: !1, hideBackButton: M, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, secondaryBar: v, style: i, subtitle: O ? k : void 0, title: W ? void 0 : T, titleDomId: z, titleIconCell: E, titleIconCellSize: Z, withWideContainer: P })),
+                        A = o.createElement(r.Z, { style: f.appBarContainer }, o.createElement(d.ZP, { backLocation: s, fixed: !1, hideBackButton: M, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, secondaryBar: x, style: i, subtitle: O ? k : void 0, title: W ? void 0 : T, titleDomId: z, titleIconCell: E, titleIconCellSize: Z, withWideContainer: P })),
                         K = L || (D && B) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: c, middleControl: m, onBackClick: g, rightControl: y, searchBoxOptions: b, subtitle: k, title: T, withSearchBox: I, withTweetButton: F });
                     return o.createElement(o.Fragment, null, K, A);
                 }
@@ -240,11 +240,11 @@
                 y = n(919022),
                 C = n(593953);
             const b = (e, t) => t.match.params.conversationId,
-                v = (e, t) => u.selectConversation(e, b(0, t)),
-                x = (e, t) => p.q9(e, b(0, t)),
+                x = (e, t) => u.selectConversation(e, b(0, t)),
+                v = (e, t) => p.q9(e, b(0, t)),
                 w = (e, t) => p.W8(e, b(0, t)),
                 _ = (0, h.Z)()
-                    .propsFromState(() => ({ conversation: v, entries: u.selectEntries, conversationId: b, isNewGroupConversation: C.rR, perspective: f._h, newConversationParticipants: C.bZ, tweetAttachment: C.Ss, users: y.ZP.selectAll, isUploading: x, media: w }))
+                    .propsFromState(() => ({ conversation: x, entries: u.selectEntries, conversationId: b, isNewGroupConversation: C.rR, perspective: f._h, newConversationParticipants: C.bZ, tweetAttachment: C.Ss, users: y.ZP.selectAll, isUploading: v, media: w }))
                     .adjustStateProps(({ conversation: e, conversationId: t, entries: n, isNewGroupConversation: o, isUploading: r, media: i, newConversationParticipants: s, perspective: a, tweetAttachment: l, users: c }) => {
                         const h = e?.data;
                         return { conversation: (h && (0, d.lk)(h, n, c)) || void 0, conversationId: t, isNewGroupConversation: o, isUploading: r, media: i, newConversationParticipants: s, perspective: a };
@@ -324,12 +324,12 @@
             function Y({ conversationId: e, history: t, location: n, isNewGroupConversation: d = !1, conversation: h, newConversationParticipants: u, perspective: p, richTextInputContext: m, setLastViewedDmInboxPath: f, typeaheadWrapper: g = i.Z }) {
                 const y = (0, a.Z)(e),
                     [C, b] = o.useState(!1),
-                    v = (0, l.N)();
+                    x = (0, l.N)();
                 e || d || n.pathname !== window.location.pathname || t.replace({ pathname: "/messages" });
                 o.useEffect(() => {
                     e !== y && f(n.pathname);
                 }, [e, n.pathname, y, f]);
-                const x = "string" == typeof n.query.text ? n.query.text : void 0,
+                const v = "string" == typeof n.query.text ? n.query.text : void 0,
                     w = (0, r.Y4)();
                 return o.createElement(
                     s.Z,
@@ -345,10 +345,10 @@
                             onConversationProfileVisibilityChange: (e) => {
                                 C !== e && b(e);
                             },
-                            prefillText: x,
+                            prefillText: v,
                             richTextInputContext: m,
                             typeaheadWrapper: g,
-                            typingNotifier: v,
+                            typingNotifier: x,
                         }),
                     ),
                 );
@@ -426,10 +426,10 @@
                     const l = o.useCallback(() => {
                         n(t.id);
                     }, [n, t.id]);
-                    return t ? o.createElement(r.Z, { role: "listitem" }, o.createElement(i.Z, { onClick: l, style: x.root }, o.createElement(C.Z, { checked: e }), o.createElement(s.ZP, { size: "subtext2" }, t.name))) : null;
+                    return t ? o.createElement(r.Z, { role: "listitem" }, o.createElement(i.Z, { onClick: l, style: v.root }, o.createElement(C.Z, { checked: e }), o.createElement(s.ZP, { size: "subtext2" }, t.name))) : null;
                 },
-                v = o.memo(b),
-                x = l.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12, gap: e.spaces.space4 } })),
+                x = o.memo(b),
+                v = l.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12, gap: e.spaces.space4 } })),
                 w = { buttonLink: "/setting/labels", buttonText: "Manage Labels", buttonType: "brandOutlined" },
                 _ = c.Z;
             function S(e) {
@@ -449,7 +449,7 @@
                         },
                         [e, a],
                     ),
-                    d = o.useCallback((e) => o.createElement(v, { checked: !1, label: e, onToggleCheck: c, refetch: s }), [s, c]);
+                    d = o.useCallback((e) => o.createElement(x, { checked: !1, label: e, onToggleCheck: c, refetch: s }), [s, c]);
                 if ("User" !== l.__typename) return null;
                 const p = l.labeled_conversation_collection_slice?.items;
                 return p ? (p.length ? o.createElement(m.Z, { assumedItemHeight: 64, cacheKey: "dmLabelsList", footer: t, identityFunction: S, items: p, onNearEnd: i, renderer: d, withoutHeadroom: !0 }) : o.createElement(u.Z, w)) : null;
@@ -522,8 +522,8 @@
                                         const t = o.index,
                                             i = n.lastIndex,
                                             s = e.text.substring(t, i),
-                                            a = x(s, w.start_newline),
-                                            l = x(s, w.end_newline);
+                                            a = v(s, w.start_newline),
+                                            l = v(s, w.end_newline);
                                         r.push([a, l]);
                                     }
                                     const s = [];
@@ -583,14 +583,14 @@
             function y(e, t) {
                 const n = t.inlineStyleRanges || [],
                     o = [],
-                    r = e.longformRichTextTransform ? v : b;
+                    r = e.longformRichTextTransform ? x : b;
                 for (const t of n) !e.stripPastedStyles && r.has(t.style) && o.push(t);
                 return (t.inlineStyleRanges = o), t;
             }
             const C = [m.DraftJS.Bold, m.DraftJS.Italic],
                 b = (0, u.Z)(C),
-                v = (0, u.Z)([...b, m.DraftJS.Strikethrough]);
-            function x(e, t) {
+                x = (0, u.Z)([...b, m.DraftJS.Strikethrough]);
+            function v(e, t) {
                 const n = e.match(t);
                 if (!n) return 0;
                 const [o] = n;
@@ -725,7 +725,7 @@
                     ),
                 );
         },
-        452693: (e, t, n) => {
+        913313: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -733,7 +733,7 @@
                 s = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M19.77 6.34l-.7.71c-.59.59-1.54.59-2.12 0-.59-.59-.59-1.54 0-2.12l.7-.71L13.76.33.33 13.77l3.89 3.89.7-.71c.59-.59 1.54-.59 2.13 0 .58.59.58 1.54 0 2.12l-.71.71 3.89 3.89 13.43-13.44-3.89-3.89zM6.34 9.88l1.42-1.41 1.76 1.76-1.41 1.42-1.77-1.77zm3 3l1.42-1.41 1.77 1.77-1.42 1.41-1.77-1.77zm4.78 4.78l-1.77-1.77 1.42-1.41 1.76 1.77-1.41 1.41z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -756,4 +756,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.dda307da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.96c4335a.js.map

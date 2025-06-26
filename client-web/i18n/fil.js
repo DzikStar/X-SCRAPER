@@ -1317,6 +1317,11 @@
                 i("a02d1657", function (a) {
                     return "Executing code" + a.ttc_tool_usage_card;
                 }),
+                i("aa9d42c0", "Searching the web"),
+                i("dce1817a", "Searching on 𝕏"),
+                i("f7151564", "Searching users on 𝕏"),
+                i("c43ef93e", "Browsing web page"),
+                i("jb097f6e", "Executing code"),
                 i("ead81122", "Nagkaproblema, paki-refresh para kumonekta ulit o subukan ulit."),
                 i("f808a13a", "Lumampas na sa limitasyon ng rate. Maghintay ng ilang sandali at subukan ulit."),
                 i("e0481e5a", "Hindi sinusuportahan ang Grok sa bansa mo sa ngayon."),
@@ -1910,10 +1915,10 @@
                 i("aefd89c8", "Navigation"),
                 i("cafdefb2", "Mga Pagkilos"),
                 i("dda42cf2", "Mga Column at Deck"),
-                i("e8a12604", "Magbigay ng caption (opsyonal)"),
-                i("eabf2209", function (a) {
-                    return "Hango ni " + a.providerName + " ang GIF";
-                }),
+                i("e8a12604", "Magbigay ng caption (opsyonal)");
+            i("eabf2209", function (a) {
+                return "Hango ni " + a.providerName + " ang GIF";
+            }),
                 i("a613e720", "Kopyahin ang link ng GIF"),
                 i("aeca1239", function (a) {
                     return "Bold" + a.ttc_rich_text_composer;
@@ -1923,8 +1928,8 @@
                 }),
                 i("ad89b831", function (a) {
                     return "aktibo" + a.ttc_rich_text_composer;
-                });
-            i("jcd5ee8a", "I-edit ang block"),
+                }),
+                i("jcd5ee8a", "I-edit ang block"),
                 i("a8f09fb8", "I-delete ang block"),
                 i("i89195ea", "Divider"),
                 i("da8ac57c", "I-edit ang Caption"),
@@ -2970,13 +2975,13 @@
                 i("a078ff70", "Gusto mo bang makakita ng ilan pang content mula sa mga taong nakausap mo sa thread na ito? Simulang mag-explore ng content mula sa mga bagong account."),
                 i("cb80300e", "Lumaktaw papuntang home timeline"),
                 i("ea5cd098", "Lumaktaw papuntang trending"),
-                i("c67e3fc2", "Home timeline"),
-                i("d601fc20", "Pinakabago"),
+                i("c67e3fc2", "Home timeline");
+            i("d601fc20", "Pinakabago"),
                 i("j43f99be", "Kaugnayan"),
                 i("ad6e11ac", "I-sort ang mga reply batay sa"),
                 i("b2311b70", "Hindi ito available sa iyo"),
-                i("j88f27d8", "Mga may kaugnayang tao");
-            i("i31dcd22", "Artikulo"),
+                i("j88f27d8", "Mga may kaugnayang tao"),
+                i("i31dcd22", "Artikulo"),
                 i("e3de2f6f", function (a) {
                     return "Idinagdag ang " + a.entity + " sa Mga Bookmark mo";
                 }),
@@ -3892,10 +3897,10 @@
                 }),
                 i("fc56c8b1", function (a) {
                     return e(a.count, "", "(na) ") + "co-host";
-                }),
-                i("iba0f45d", function (a) {
-                    return "tagapagsalita";
-                }),
+                });
+            i("iba0f45d", function (a) {
+                return "tagapagsalita";
+            }),
                 i("dc066955", function (a) {
                     return "tagapakinig";
                 }),
@@ -3905,8 +3910,8 @@
                 i("c3b5b829", function (a) {
                     return a.count + " " + e(a.count, "", "(na) ") + "kahilingan";
                 }),
-                i("fe7a1910", "Magpadala ng mga imbitasyon ");
-            i("ic3c757e", "Maghanap ng mga user"),
+                i("fe7a1910", "Magpadala ng mga imbitasyon "),
+                i("ic3c757e", "Maghanap ng mga user"),
                 i("cd133486", "Imbitahan"),
                 i("f2333850", "Ibahagi sa mga tao sa labas ng X"),
                 i("cddb8097", "Matuto pa"),
@@ -4338,7 +4343,6 @@
                 i("db832e38", "I-enable ang mga notification sa mga setting ng browser"),
                 i("a910cac6", "May isyu sa pag-enable ng mga notification"),
                 i("be30b6ee", "Hindi stable na koneksyon"),
-                i("ge15b488", "Ipakita ang mga pananaw"),
                 i("aa7c96bb", function (a) {
                     return "Tingnan ang " + a.numResults + " pa";
                 }),
@@ -4354,6 +4358,10 @@
                 }),
                 i("a15d62db", function (a) {
                     return "Nag-isip sa loob ng " + a.seconds + "s";
+                }),
+                i("f26fc748", "Script"),
+                i("h26fa43f", function (a) {
+                    return a.count + " more";
                 }),
                 i("ha8fbe22", "Gumawa ng mas maraming larawan sa Premium"),
                 i("d95c232a", "Naabot mo na ang limitasyon mo. Mag-upgrade na para makagawa ng mas marami pa."),
@@ -4923,14 +4931,14 @@
                 i("ff95a9cc", "Video ID"),
                 i("a97e358e", "Link ng Video"),
                 i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw."),
-                i("ba37f6da", "Overview ng video"),
-                i("f19846b2", "Thumbnail ng video"),
+                i("ba37f6da", "Overview ng video");
+            i("f19846b2", "Thumbnail ng video"),
                 i("ccd6f4a8", "Title ng Video"),
                 i("c8410542", "Ang dami ng beses na pinanood ang video mo."),
                 i("a532072a", "Mga Viewer"),
                 i("d9508ab0", "(na) view"),
-                i("d9f9dec0", "Tingnan ang Space");
-            i("h0c1f37a", "Tingnan ang Analytics ng Space"),
+                i("d9f9dec0", "Tingnan ang Space"),
+                i("h0c1f37a", "Tingnan ang Analytics ng Space"),
                 i("e41fffbc", "Ang kabuuang tagal ng panonood ng mga video mo."),
                 i("if2909ba", "Tagal ng Panonood"),
                 i("i0e5bf4c", "Mga video mo"),
@@ -5875,16 +5883,16 @@
                 i("af781666", "Ano ang palagay ng mga tao?"),
                 i("a1f414ee", "Ibahagi ang mga naiisip"),
                 i("ed88e742", "Kopyahin ang link sa Paksa"),
-                i("h92fe1be", "Sa kasamaang-palad, hindi available sa iyo ang Mga Note ng Komunidad sa ngayon."),
-                i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan."),
+                i("h92fe1be", "Sa kasamaang-palad, hindi available sa iyo ang Mga Note ng Komunidad sa ngayon.");
+            i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan."),
                 i("f8fc0b48", "Gumawa ng Folder"),
                 i("c14bcdde", "Maghanap ng Mga Bookmark"),
                 i("e9c65c4a", "Paghahanap ng mga Bookmark"),
                 i("b92a21d9", function (a) {
                     return "Walang resulta para sa " + a.query;
                 }),
-                i("f191a2ba", "mga setting ng Paghahanap");
-            i("a068008a", "Hindi naglo-load ang mga folder sa ngayon"),
+                i("f191a2ba", "mga setting ng Paghahanap"),
+                i("a068008a", "Hindi naglo-load ang mga folder sa ngayon"),
                 i("f075b0e8", "I-edit ang Folder"),
                 i("beba2a0e", "Gumawa ng bagong Folder ng Bookmark"),
                 i("e41c9b4f", function (a) {
@@ -6881,18 +6889,18 @@
                 i("b8cbb51a", "Buod ng Trabaho"),
                 i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin."),
                 i("b075c68a", "I-edit ang trabaho"),
-                i("d4b6a6e0", "Spotlight ng Profile"),
-                i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko."),
+                i("d4b6a6e0", "Spotlight ng Profile");
+            i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko."),
                 i("af1cfd46", "ATS integration"),
                 i("d6fa2944", "Sa pag-delete ng integration mo, made-delete din ang mga naka-import na trabaho."),
                 i("h99f11fa", "I-delete ang integration"),
                 i("eef1ae76", "Kasalukuyang nakakonekta"),
                 i("a915f5c1", function (a) {
                     return "nakakonekta ang " + a.ats;
-                });
-            i("af7286b7", function (a) {
-                return a.percentage + "% diskuwento sa isang taon ng Premium";
-            }),
+                }),
+                i("af7286b7", function (a) {
+                    return a.percentage + "% diskuwento sa isang taon ng Premium";
+                }),
                 i("c924ad84", "Panatilihing nagpe-play ang mga video"),
                 i("de750a3c", "Ma-enjoy ang mga ito kahit pa naka-lock ang telepono mo"),
                 i("he5e87c4", "I-boost ang mga reply mo"),
@@ -7863,15 +7871,7 @@
                 i("b74ff5fc", "Kung magkakansela ka, awtomatikong mag-e-expire ang Subscription sa katapusan ng cycle ng pagsingil."),
                 i("ee9efbc8", "Magpatuloy sa pagkansela"),
                 i("c5d9c77a", "Mukhang nagkaroon ng kaunting problema. Huwag mag-alala, hindi ikaw ang may kasalanan. Isara ang window na ito at subukan ulit."),
-                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store."),
-                i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store."),
-                i("i5f14be7", function (a) {
-                    return "Welcome back, " + a.displayName;
-                }),
-                i("a76d58ba", "Analytics ng Ads"),
-                i("eccd0e1a", "Analytics ng Organisasyon"),
-                i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
-                i("eb603ffc", "Mag-upgrade para i-affiliate ang network mo at tingnan ang pinagsama-samang analytics.");
+                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store.");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7910,7 +7910,15 @@
                     o(a, n)
                 );
             }
-            i("gf67aae4", "Mag-upgrade sa Buong Access"),
+            i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store."),
+                i("i5f14be7", function (a) {
+                    return "Welcome back, " + a.displayName;
+                }),
+                i("a76d58ba", "Analytics ng Ads"),
+                i("eccd0e1a", "Analytics ng Organisasyon"),
+                i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
+                i("eb603ffc", "Mag-upgrade para i-affiliate ang network mo at tingnan ang pinagsama-samang analytics."),
+                i("gf67aae4", "Mag-upgrade sa Buong Access"),
                 i("h75e3618", "Isama ang organisasyon"),
                 i("h24a8862", "Tungkol sa checkbox na ito"),
                 i("c29e3a88", "Pumili ng mga affiliate"),
@@ -8903,16 +8911,16 @@
                     return "Bisitahin ang " + a.advertiserName;
                 }),
                 i("c67e71aa", "Panoorin ngayon"),
-                i("a6ada13e", "Mamili ngayon"),
-                i("j0f12222", "Tumingin pa"),
+                i("a6ada13e", "Mamili ngayon");
+            i("j0f12222", "Tumingin pa"),
                 i("f569f7c8", "Pumunta sa website"),
                 i("j0c6772a", "Bisitahin ang website"),
                 i("f73003aa", "Magpe-play ang video pagkatapos ng ad"),
                 i("b3112b8a", "Laktawan"),
-                i("h6333ad0", "Laktawan ang Ad");
-            i("c59da417", function (a) {
-                return "Laktawan ang Ad sa Loob ng " + a.seconds;
-            }),
+                i("h6333ad0", "Laktawan ang Ad"),
+                i("c59da417", function (a) {
+                    return "Laktawan ang Ad sa Loob ng " + a.seconds;
+                }),
                 i("c3c147cf", function (a) {
                     return "Laktawan " + a.seconds;
                 }),
@@ -13361,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.2dd317ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b395905a.js.map

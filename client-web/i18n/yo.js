@@ -1320,6 +1320,11 @@
                 a("a02d1657", function (e) {
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
+                a("aa9d42c0", "Searching the web"),
+                a("dce1817a", "Searching on 𝕏"),
+                a("f7151564", "Searching users on 𝕏"),
+                a("c43ef93e", "Browsing web page"),
+                a("jb097f6e", "Executing code"),
                 a("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
                 a("e0481e5a", "Grok is not supported in your country at this time."),
@@ -1913,10 +1918,10 @@
                 a("aefd89c8", "Yíyípò"),
                 a("cafdefb2", "Àwọn ìṣe"),
                 a("dda42cf2", "Columns & Decks"),
-                a("e8a12604", "Pèsè àkọ́lé (kò pọn dandan)"),
-                a("eabf2209", function (e) {
-                    return "GIF tí " + e.providerName + " pèsè";
-                }),
+                a("e8a12604", "Pèsè àkọ́lé (kò pọn dandan)");
+            a("eabf2209", function (e) {
+                return "GIF tí " + e.providerName + " pèsè";
+            }),
                 a("a613e720", "Ṣe àdàkọ ojú òpó sí GIF"),
                 a("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -1926,8 +1931,8 @@
                 }),
                 a("ad89b831", function (e) {
                     return "active" + e.ttc_rich_text_composer;
-                });
-            a("jcd5ee8a", "Edit block"),
+                }),
+                a("jcd5ee8a", "Edit block"),
                 a("a8f09fb8", "Delete block"),
                 a("i89195ea", "Divider"),
                 a("da8ac57c", "Edit Caption"),
@@ -2973,13 +2978,13 @@
                 a("a078ff70", "O fẹ́ rí àwọn àkóónú síi láti ọ̀dọ̀ àwọn ènìyàn tí o tàkùrọ̀sọ pẹ̀lú bi? ́Bèrẹ̀ ìwákiri àkóónú láti inú àwọn àkáǹtì tuntun."),
                 a("cb80300e", "Fò lọ sí ojúlé ìròyìn tuntun"),
                 a("ea5cd098", "Fò lọ sí ohun tó ń gbalégboko"),
-                a("c67e3fc2", "Ojúlé Ìròyìn Tuntun"),
-                a("d601fc20", "Tuntun"),
+                a("c67e3fc2", "Ojúlé Ìròyìn Tuntun");
+            a("d601fc20", "Tuntun"),
                 a("j43f99be", "Relevancy"),
                 a("ad6e11ac", "Sort replies by"),
                 a("b2311b70", "Èyí kò sí nílẹ̀ fún ọ"),
-                a("j88f27d8", "Àwọn ènìyàn tó ṣe kókó");
-            a("i31dcd22", "Àpilẹ̀kọ"),
+                a("j88f27d8", "Àwọn ènìyàn tó ṣe kókó"),
+                a("i31dcd22", "Àpilẹ̀kọ"),
                 a("e3de2f6f", function (e) {
                     return e.entity + " was added to your Bookmarks";
                 }),
@@ -3895,10 +3900,10 @@
                 }),
                 a("fc56c8b1", function (e) {
                     return "co-host" + i(e.count, "", "s");
-                }),
-                a("iba0f45d", function (e) {
-                    return "speaker" + i(e.count, "", "s");
-                }),
+                });
+            a("iba0f45d", function (e) {
+                return "speaker" + i(e.count, "", "s");
+            }),
                 a("dc066955", function (e) {
                     return "listener" + i(e.count, "", "s");
                 }),
@@ -3908,8 +3913,8 @@
                 a("c3b5b829", function (e) {
                     return e.count + " request" + i(e.count, "", "s");
                 }),
-                a("fe7a1910", "Send invites");
-            a("ic3c757e", "Search for users"),
+                a("fe7a1910", "Send invites"),
+                a("ic3c757e", "Search for users"),
                 a("cd133486", "Pè"),
                 a("f2333850", "Share with people outside of X"),
                 a("cddb8097", "Learn more"),
@@ -4341,7 +4346,6 @@
                 a("db832e38", "Please enable notifications in browser settings"),
                 a("a910cac6", "There was an issue enabling notifications"),
                 a("be30b6ee", "Unstable connection"),
-                a("ge15b488", "Show thoughts"),
                 a("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
@@ -4357,6 +4361,10 @@
                 }),
                 a("a15d62db", function (e) {
                     return "Thought for " + e.seconds + "s";
+                }),
+                a("f26fc748", "Script"),
+                a("h26fa43f", function (e) {
+                    return e.count + " more";
                 }),
                 a("ha8fbe22", "Generate more images with Premium"),
                 a("d95c232a", "You’ve reached your limit. Upgrade now to generate more."),
@@ -4926,14 +4934,14 @@
                 a("ff95a9cc", "Video ID"),
                 a("a97e358e", "Video Link"),
                 a("e10e8b46", "Only showing the videos from the last 100 days."),
-                a("ba37f6da", "Video overview"),
-                a("f19846b2", "Video thumbnail"),
+                a("ba37f6da", "Video overview");
+            a("f19846b2", "Video thumbnail"),
                 a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
                 a("a532072a", "Viewers"),
                 a("d9508ab0", "views"),
-                a("d9f9dec0", "View Space");
-            a("h0c1f37a", "View Space Analytics"),
+                a("d9f9dec0", "View Space"),
+                a("h0c1f37a", "View Space Analytics"),
                 a("e41fffbc", "The total watch time of your videos."),
                 a("if2909ba", "Watch Time"),
                 a("i0e5bf4c", "Your videos"),
@@ -5878,16 +5886,16 @@
                 a("af781666", "What do people think?"),
                 a("a1f414ee", "Share thoughts"),
                 a("ed88e742", "Ṣe àdàkọ ojú òpó sí Àkọ́lé"),
-                a("h92fe1be", "Ó ṣeni láàánú, Àwọn Àkọsílẹ̀ Àwùjọ kò sí nílẹ̀ fún ọ ní àsìkò yìí."),
-                a("f0dc1434", "Orílẹ̀-èdè U.S nìkan ni Àwọn Àkọsílẹ̀ Àwùjọ wà nílẹ̀ fún báyìí"),
+                a("h92fe1be", "Ó ṣeni láàánú, Àwọn Àkọsílẹ̀ Àwùjọ kò sí nílẹ̀ fún ọ ní àsìkò yìí.");
+            a("f0dc1434", "Orílẹ̀-èdè U.S nìkan ni Àwọn Àkọsílẹ̀ Àwùjọ wà nílẹ̀ fún báyìí"),
                 a("f8fc0b48", "Ṣèdásílẹ̀ Fódà kan"),
                 a("c14bcdde", "Search Bookmarks"),
                 a("e9c65c4a", "Bookmarks search"),
                 a("b92a21d9", function (e) {
                     return "Kò si àbájáde mọ́ fún " + e.query;
                 }),
-                a("f191a2ba", " wò ");
-            a("a068008a", "Folders aren`t loading right now"),
+                a("f191a2ba", " wò "),
+                a("a068008a", "Folders aren`t loading right now"),
                 a("f075b0e8", "Ṣàtúnse Fódà"),
                 a("beba2a0e", "Ṣẹe ìdásílẹ̀ Fódà Búkúmaakì tuntun kan"),
                 a("e41c9b4f", function (e) {
@@ -6884,18 +6892,18 @@
                 a("b8cbb51a", "Job Summary"),
                 a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "Edit job"),
-                a("d4b6a6e0", "Ojútáyé Prófaìlì"),
-                a("j2dd3686", "Highlight featured jobs above my posts."),
+                a("d4b6a6e0", "Ojútáyé Prófaìlì");
+            a("j2dd3686", "Highlight featured jobs above my posts."),
                 a("af1cfd46", "ATS integration"),
                 a("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 a("h99f11fa", "Delete integration"),
                 a("eef1ae76", "Currently connected"),
                 a("a915f5c1", function (e) {
                     return e.ats + " connected";
-                });
-            a("af7286b7", function (e) {
-                return e.percentage + "% off a year of Premium";
-            }),
+                }),
+                a("af7286b7", function (e) {
+                    return e.percentage + "% off a year of Premium";
+                }),
                 a("c924ad84", "Keep videos playing"),
                 a("de750a3c", "Enjoy them even when your phone is locked"),
                 a("he5e87c4", "Boost your replies"),
@@ -7866,15 +7874,7 @@
                 a("b74ff5fc", "Bí o bá wọ́gilé e ìforúkọsílẹ̀ rẹ yóò wá sópin láìfowóyí lópin àsìkò ìdíyelé náà."),
                 a("ee9efbc8", "Tẹ̀síwájú pẹ̀lú ìwọ́gilé"),
                 a("c5d9c77a", "Ó dà bí ẹni wípé ìdíwọ́ kékéré kan fẹ́ wá. Má dààmú, kì í se ẹ̀bi rẹ. Tẹ ìsàlẹ̀ yií láti gbìyànjú sí i."),
-                a("jda53c24", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Apple App Store."),
-                a("g0a7a53e", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
-                a("a76d58ba", "Ads Analytics"),
-                a("eccd0e1a", "Organization Analytics"),
-                a("deea1708", "Want to view analytics across all your X accounts?"),
-                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                a("jda53c24", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Apple App Store.");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7913,7 +7913,15 @@
                     s(e, n)
                 );
             }
-            a("gf67aae4", "Upgrade to Full Access"),
+            a("g0a7a53e", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
+                a("a76d58ba", "Ads Analytics"),
+                a("eccd0e1a", "Organization Analytics"),
+                a("deea1708", "Want to view analytics across all your X accounts?"),
+                a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                a("gf67aae4", "Upgrade to Full Access"),
                 a("h75e3618", "Include organization"),
                 a("h24a8862", "About this checkbox"),
                 a("c29e3a88", "Select affiliates"),
@@ -8906,16 +8914,16 @@
                     return "Visit " + e.advertiserName;
                 }),
                 a("c67e71aa", "Watch now"),
-                a("a6ada13e", "Shop now"),
-                a("j0f12222", "Wò sì i"),
+                a("a6ada13e", "Shop now");
+            a("j0f12222", "Wò sì i"),
                 a("f569f7c8", "Go to website"),
                 a("j0c6772a", "Visit website"),
                 a("f73003aa", "Video will play after ad"),
                 a("b3112b8a", "Fò ó"),
-                a("h6333ad0", "Skip Ad");
-            a("c59da417", function (e) {
-                return "Skip Ad in " + e.seconds;
-            }),
+                a("h6333ad0", "Skip Ad"),
+                a("c59da417", function (e) {
+                    return "Skip Ad in " + e.seconds;
+                }),
                 a("c3c147cf", function (e) {
                     return "Skip " + e.seconds;
                 }),
@@ -13351,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.7cd6f50a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.39efafda.js.map

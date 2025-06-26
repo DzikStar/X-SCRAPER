@@ -227,8 +227,8 @@
                 return n ? l.createElement(w.Z, { resizeMode: "cover", source: n, style: [E.banner, { opacity: t }, { filter: `blur(${e || 0}px)` }, a] }) : null;
             }
             const E = r.default.create((e) => ({ banner: { width: "100%", height: 400, borderRadius: e.borderRadii.large, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationIterationCount: 1 } }));
-            var v = n(790167),
-                S = n(530732);
+            var S = n(790167),
+                v = n(530732);
             function T({ postId: e, style: t }) {
                 const n = l.useMemo(() => d.Z.createHydratorForTweet(e), [e]),
                     i = (0, c.v9)(n);
@@ -238,7 +238,7 @@
                     a.Z,
                     { style: [Z.attributionContainer, t] },
                     l.createElement(
-                        S.Z,
+                        v.Z,
                         {
                             onClick: () => {
                                 window.open(`https://x.com${i.permalink}`, "_blank");
@@ -258,20 +258,20 @@
                 return l.createElement(a.Z, { style: K.bulletpoint }, l.createElement(a.Z, { style: K.circle }), l.createElement(u.ZP, { style: K.text }, e));
             }
             const K = r.default.create((e) => ({ keypointsHeader: { marginBottom: e.spaces.space16 }, bulletPointsWithLineContainer: { width: "100%", position: "relative" }, lineContainer: { position: "absolute", start: 0, top: 0, display: "flex", flexDirection: "column", alignItems: "center", width: e.spaces.space16, height: "100%" }, line: { width: e.spaces.space2, height: "100%", backgroundColor: e.colors.gray300 }, bulletpointGap: { height: e.spaces.space24 }, bulletpoint: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, circle: { width: e.spaces.space16, height: e.spaces.space16, borderRadius: e.spaces.space16, borderWidth: 2, borderStyle: "solid", borderColor: e.colors.gray300, backgroundColor: e.colors.navigationBackground }, text: { ..._ } }));
-            function z({ style: e, text: t }) {
-                return l.createElement(u.ZP, { style: [L.subheader, e], weight: "bold" }, t);
+            function L({ style: e, text: t }) {
+                return l.createElement(u.ZP, { style: [z.subheader, e], weight: "bold" }, t);
             }
-            const L = r.default.create((e) => ({ subheader: { fontSize: e.fontSizes.headline1 } })),
+            const z = r.default.create((e) => ({ subheader: { fontSize: e.fontSizes.headline1 } })),
                 P = "Key Points";
             function R({ keyPoints: e, style: t }) {
-                return e.length ? l.createElement(a.Z, { style: [D.container, t] }, l.createElement(z, { style: D.keypointsHeader, text: P }), l.createElement(C, { bulletpoints: e })) : null;
+                return e.length ? l.createElement(a.Z, { style: [D.container, t] }, l.createElement(L, { style: D.keypointsHeader, text: P }), l.createElement(C, { bulletpoints: e })) : null;
             }
             const D = r.default.create((e) => ({ container: { width: "100%" }, keypointsHeader: { marginBottom: e.spaces.space16 } }));
             var A = n(477575),
                 N = n(274234),
                 H = n(194504),
-                M = n(287627),
-                B = n(823161),
+                B = n(287627),
+                M = n(823161),
                 V = n(366635),
                 W = n(966886),
                 O = n(650028),
@@ -283,7 +283,7 @@
                 if (!p) return null;
                 const { created_at: g, text: y, user: h } = p;
                 return l.createElement(
-                    S.Z,
+                    v.Z,
                     {
                         onClick: () => {
                             i && i(), window.open(`https://x.com${p.permalink}`, "_blank");
@@ -295,7 +295,7 @@
                         l.createElement(
                             a.Z,
                             { style: [q.container, e ? q.hoveredContainer : void 0, o] },
-                            l.createElement(a.Z, { style: q.headerContainer }, l.createElement(a.Z, { style: q.nameContainer }, l.createElement(B.default, { "aria-label": h.name, borderColor: "gray700", borderWidth: "small", screenName: h.screen_name, size: t ? "medium" : "large", uri: h.profile_image_url_https, withHoverCard: !0, withLink: !0 }), l.createElement(V.Z, { affiliateBadgeInfo: h.highlightedLabel, isBlueVerified: h.is_blue_verified, isVerified: h.verified, name: h.name, nameSize: t ? "subtext2" : "subtext1", screenName: h.screen_name, screenNameSize: t ? "subtext3" : "subtext2", screenNameStyle: q.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: h.verified_type, withHoverCard: !0, withLink: !0, withStackedLayout: !0 })), l.createElement(W.Z, { humanReadable: !1, style: [q.timestamp, { fontSize: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2, lineHeight: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2 }], timestamp: g })),
+                            l.createElement(a.Z, { style: q.headerContainer }, l.createElement(a.Z, { style: q.nameContainer }, l.createElement(M.default, { "aria-label": h.name, borderColor: "gray700", borderWidth: "small", screenName: h.screen_name, size: t ? "medium" : "large", uri: h.profile_image_url_https, withHoverCard: !0, withLink: !0 }), l.createElement(V.Z, { affiliateBadgeInfo: h.highlightedLabel, isBlueVerified: h.is_blue_verified, isVerified: h.verified, name: h.name, nameSize: t ? "subtext2" : "subtext1", screenName: h.screen_name, screenNameSize: t ? "subtext3" : "subtext2", screenNameStyle: q.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: h.verified_type, withHoverCard: !0, withLink: !0, withStackedLayout: !0 })), l.createElement(W.Z, { humanReadable: !1, style: [q.timestamp, { fontSize: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2, lineHeight: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2 }], timestamp: g })),
                             p.in_reply_to_screen_name && l.createElement(O.ZP, { displayTextRange: p.display_text_range, inReplyToName: p.in_reply_to_name, inReplyToScreenName: p.in_reply_to_screen_name, inReplyToUserIdStr: p.in_reply_to_user_id_str, linkType: O.ZP.ReplyContextLinkTypes.none, size: t ? "subtext2" : "subtext1", tweetPermalink: p.permalink }),
                             l.createElement(U.Z, { displayTextRange: p.display_text_range, entities: p.entities, isCondensed: t, numberOfLines: n, style: [q.tweetText, u], text: y }),
                             (!t || !y) &&
@@ -340,7 +340,7 @@
                             }),
                         ),
                     ),
-                    l.createElement(a.Z, { style: X.commentsOuterContainer }, l.createElement(M.Z, { containerStyle: n, disableClick: !0, numPosts: s, postIds: t, style: [X.commentsPill, i], textStyle: X.commentsPillText, variant: "outline" }), l.createElement(Q.Z, { articleId: e, borderColor: "gray100", iconStyle: X.shareIcon, size: "smallCompact", style: X.shareBtn })),
+                    l.createElement(a.Z, { style: X.commentsOuterContainer }, l.createElement(B.Z, { containerStyle: n, disableClick: !0, numPosts: s, postIds: t, style: [X.commentsPill, i], textStyle: X.commentsPillText, variant: "outline" }), l.createElement(Q.Z, { articleId: e, borderColor: "gray100", iconStyle: X.shareIcon, size: "smallCompact", style: X.shareBtn })),
                 );
             }
             const X = r.default.create((e) => ({ container: { width: "100%" }, carousel: { width: "100%", flex: 1 }, carouselContent: { display: "flex", flexDirection: "row", flex: 1 }, postContainer: { width: 250, flex: "unset", marginEnd: e.spaces.space12 }, post: { animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, postText: { fontSize: e.fontSizes.subtext1 }, commentsOuterContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space12, marginTop: e.spaces.space12 }, commentsPill: {}, commentsPillText: { fontSize: e.fontSizes.subtext2 }, shareBtn: { width: e.spaces.space32, height: e.spaces.space32, padding: 0 }, shareIcon: { width: e.spaces.space16, height: e.spaces.space16 } }));
@@ -353,7 +353,7 @@
                 const { isCompactLayout: n } = (0, f.Z)();
                 if (!e.post_timelines || 0 === e.post_timelines.length) return null;
                 const i = e.post_timelines[0].post_timeline.id;
-                return l.createElement(a.Z, { style: [se.container, t || n ? { paddingHorizontal: "0%" } : { paddingHorizontal: "27%" }] }, l.createElement(z, { style: se.header, text: ne }), i && l.createElement(ae, { timelineId: i }));
+                return l.createElement(a.Z, { style: [se.container, t || n ? { paddingHorizontal: "0%" } : { paddingHorizontal: "27%" }] }, l.createElement(L, { style: se.header, text: ne }), i && l.createElement(ae, { timelineId: i }));
             }
             function ae({ timelineId: e }) {
                 const t = ie(e);
@@ -386,7 +386,7 @@
             var me = n(282279);
             function pe({ isExplore: e = !1, onSectionVisible: t, section: n, sources: i, style: s }) {
                 const { isCompactLayout: r } = (0, f.Z)();
-                return l.createElement(a.Z, { style: [ge.section, s] }, l.createElement(oe.D, { id: "news_article_section", onFullyVisible: t, position: "top", testID: "news_article_section" }), !!n.title && l.createElement(z, { text: n.title }), !!n.content.text && l.createElement(v.Z, { sources: i, style: ge.body, text: n.content.text }), n.content.bullets && l.createElement(C, { bulletpoints: n.content.bullets }), !!n.content.image_url && l.createElement(de, { image_caption: n.content.image_caption, image_size: n.content.image_size, image_url: n.content.image_url }), n.content.website && l.createElement(me.Z, { website: n.content.website }), n.content.post && l.createElement(a.Z, { style: [ge.outerTweetContainer, r || e ? ge.compactOuterTweetContainer : void 0] }, l.createElement(a.Z, { style: ge.tweetContainer }, l.createElement(re.ZP, { displayPromotedContent: !0, isCompact: r, tweetId: n.content.post.post_results.rest_id, withActions: !0 }))));
+                return l.createElement(a.Z, { style: [ge.section, s] }, l.createElement(oe.D, { id: "news_article_section", onFullyVisible: t, position: "top", testID: "news_article_section" }), !!n.title && l.createElement(L, { text: n.title }), !!n.content.text && l.createElement(S.Z, { sources: i, style: ge.body, text: n.content.text }), n.content.bullets && l.createElement(C, { bulletpoints: n.content.bullets }), !!n.content.image_url && l.createElement(de, { image_caption: n.content.image_caption, image_size: n.content.image_size, image_url: n.content.image_url }), n.content.website && l.createElement(me.Z, { website: n.content.website }), n.content.post && l.createElement(a.Z, { style: [ge.outerTweetContainer, r || e ? ge.compactOuterTweetContainer : void 0] }, l.createElement(a.Z, { style: ge.tweetContainer }, l.createElement(re.ZP, { displayPromotedContent: !0, isCompact: r, tweetId: n.content.post.post_results.rest_id, withActions: !0 }))));
             }
             const ge = r.default.create((e) => ({ section: { display: "flex", flexDirection: "column", gap: e.spaces.space16 }, outerTweetContainer: { width: "100%", display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: "15%" }, compactOuterTweetContainer: { paddingHorizontal: "unset" }, tweetContainer: { borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, borderRadius: e.borderRadii.large, overflow: "hidden", width: "100%" }, body: { ..._ } }));
             var ye = n(858496),
@@ -410,7 +410,7 @@
                             t
                         );
                     }, [e]),
-                    S = l.useMemo(() => {
+                    v = l.useMemo(() => {
                         if (!e) return [];
                         const t = [...E];
                         return (
@@ -422,8 +422,8 @@
                         );
                     }, [e, E]);
                 l.useEffect(() => {
-                    r(d.Z.fetchMultiple(S));
-                }, [r, S]);
+                    r(d.Z.fetchMultiple(v));
+                }, [r, v]);
                 const Z = l.useCallback(
                         (t) => {
                             e && (0, k.xi)(n, { articleId: e.id, sectionIdx: t, totalNumSections: e.sections.length });
@@ -449,7 +449,7 @@
                                   l.createElement(
                                       a.Z,
                                       { style: [_e.centerComponents, m && _e.compactCenterComponents] },
-                                      l.createElement(a.Z, { style: _e.headerContainer }, l.createElement(he.Z, { text: e.title, textStyle: _e.title }), l.createElement(A.Z, { textStyle: _e.lastUpdatedAt, timestamp: e.last_updated_at }), !!e.summary && l.createElement(v.Z, { sources: [], style: _e.summary, text: e.summary })),
+                                      l.createElement(a.Z, { style: _e.headerContainer }, l.createElement(he.Z, { text: e.title, textStyle: _e.title }), l.createElement(A.Z, { textStyle: _e.lastUpdatedAt, timestamp: e.last_updated_at }), !!e.summary && l.createElement(S.Z, { sources: [], style: _e.summary, text: e.summary })),
                                       l.createElement(a.Z, { style: _e.postsContainer }, w && l.createElement(N.Z, { article: e, hideTitle: !0, isInline: !0 }), e.posts && e.posts.length > 0 && l.createElement(j, { articleId: e.id, commentPostIds: E, numComments: Number(e.total_trend_posts), posts: e.posts })),
                                       e.key_points && e.key_points.length > 0 && l.createElement(R, { keyPoints: e.key_points }),
                                       e.sections.map((n, a) =>
@@ -571,24 +571,24 @@
                 w,
                 x,
                 E,
-                v,
                 S,
+                v,
                 T,
                 Z,
                 F,
                 C,
                 I,
                 K,
-                z,
                 L,
+                z,
                 P,
                 R,
                 D,
                 A,
                 N,
                 H,
-                M,
                 B,
+                M,
                 V,
                 W,
                 O,
@@ -699,21 +699,21 @@
                                                                             }),
                                                                             (k = { kind: "InlineFragment", selections: [{ alias: "inline_header", args: null, kind: "ScalarField", name: "content", storageKey: null }], type: "InlineHeader", abstractKey: null }),
                                                                             (w = { kind: "InlineFragment", selections: [{ alias: "text", args: null, kind: "ScalarField", name: "content", storageKey: null }], type: "TextBlock", abstractKey: null }),
-                                                                            (A = { kind: "InlineFragment", selections: [{ alias: "website", args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "content", plural: !1, selections: [(x = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }), (E = { alias: null, args: null, kind: "ScalarField", name: "cached_page_url", storageKey: null }), (v = { alias: null, args: null, kind: "ScalarField", name: "creator", storageKey: null }), (S = { alias: null, args: null, kind: "ScalarField", name: "date_last_crawled", storageKey: null }), (T = { alias: null, args: null, kind: "ScalarField", name: "date_published", storageKey: null }), (Z = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "favicon", storageKey: null }), (C = { alias: null, args: null, kind: "ScalarField", name: "favicon_base64", storageKey: null }), (I = { alias: null, args: null, kind: "ScalarField", name: "image", storageKey: null }), (K = { alias: null, args: null, kind: "ScalarField", name: "language", storageKey: null }), (z = { alias: null, args: null, kind: "ScalarField", name: "parsed_text", storageKey: null }), (L = { alias: null, args: null, kind: "ScalarField", name: "site_name", storageKey: null }), (P = { alias: null, args: null, kind: "ScalarField", name: "snippet", storageKey: null }), (R = { alias: null, args: null, kind: "ScalarField", name: "time_accessed", storageKey: null }), u, (D = { alias: null, args: null, kind: "ScalarField", name: "media_name", storageKey: null }), m], storageKey: null }], type: "WebsiteBlock", abstractKey: null }),
+                                                                            (A = { kind: "InlineFragment", selections: [{ alias: "website", args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "content", plural: !1, selections: [(x = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }), (E = { alias: null, args: null, kind: "ScalarField", name: "cached_page_url", storageKey: null }), (S = { alias: null, args: null, kind: "ScalarField", name: "creator", storageKey: null }), (v = { alias: null, args: null, kind: "ScalarField", name: "date_last_crawled", storageKey: null }), (T = { alias: null, args: null, kind: "ScalarField", name: "date_published", storageKey: null }), (Z = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (F = { alias: null, args: null, kind: "ScalarField", name: "favicon", storageKey: null }), (C = { alias: null, args: null, kind: "ScalarField", name: "favicon_base64", storageKey: null }), (I = { alias: null, args: null, kind: "ScalarField", name: "image", storageKey: null }), (K = { alias: null, args: null, kind: "ScalarField", name: "language", storageKey: null }), (L = { alias: null, args: null, kind: "ScalarField", name: "parsed_text", storageKey: null }), (z = { alias: null, args: null, kind: "ScalarField", name: "site_name", storageKey: null }), (P = { alias: null, args: null, kind: "ScalarField", name: "snippet", storageKey: null }), (R = { alias: null, args: null, kind: "ScalarField", name: "time_accessed", storageKey: null }), u, (D = { alias: null, args: null, kind: "ScalarField", name: "media_name", storageKey: null }), m], storageKey: null }], type: "WebsiteBlock", abstractKey: null }),
                                                                             (N = { kind: "InlineFragment", selections: [{ alias: "post", args: null, concreteType: "Post", kind: "LinkedField", name: "content", plural: !1, selections: o, storageKey: null }], type: "PostBlock", abstractKey: null }),
-                                                                            ($ = { kind: "InlineFragment", selections: [(H = { alias: null, args: null, kind: "ScalarField", name: "last_time_updated", storageKey: null }), (M = { alias: null, args: null, kind: "ScalarField", name: "question", storageKey: null }), { alias: null, args: null, concreteType: "SentimentScore", kind: "LinkedField", name: "sentiment_scores", plural: !0, selections: [(B = { alias: null, args: null, kind: "ScalarField", name: "num_posts", storageKey: null }), (V = { alias: null, args: null, kind: "ScalarField", name: "sentiment_type", storageKey: null }), (W = { alias: null, args: null, kind: "ScalarField", name: "sentiment_value", storageKey: null }), h], storageKey: null }, (O = { alias: null, args: null, kind: "ScalarField", name: "sentiment_types", storageKey: null }), (U = { alias: null, args: null, kind: "ScalarField", name: "trend_id", storageKey: null })], type: "TrendSentiment", abstractKey: null }),
+                                                                            ($ = { kind: "InlineFragment", selections: [(H = { alias: null, args: null, kind: "ScalarField", name: "last_time_updated", storageKey: null }), (B = { alias: null, args: null, kind: "ScalarField", name: "question", storageKey: null }), { alias: null, args: null, concreteType: "SentimentScore", kind: "LinkedField", name: "sentiment_scores", plural: !0, selections: [(M = { alias: null, args: null, kind: "ScalarField", name: "num_posts", storageKey: null }), (V = { alias: null, args: null, kind: "ScalarField", name: "sentiment_type", storageKey: null }), (W = { alias: null, args: null, kind: "ScalarField", name: "sentiment_value", storageKey: null }), h], storageKey: null }, (O = { alias: null, args: null, kind: "ScalarField", name: "sentiment_types", storageKey: null }), (U = { alias: null, args: null, kind: "ScalarField", name: "trend_id", storageKey: null })], type: "TrendSentiment", abstractKey: null }),
                                                                         ],
                                                                         storageKey: null,
                                                                     },
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            (G = { alias: null, args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "sources", plural: !0, selections: [x, E, v, S, T, Z, F, C, I, K, z, L, P, R, u, m, D], storageKey: null }),
+                                                            (G = { alias: null, args: null, concreteType: "GrokBraveSearch", kind: "LinkedField", name: "sources", plural: !0, selections: [x, E, S, v, T, Z, F, C, I, K, L, z, P, R, u, m, D], storageKey: null }),
                                                             (q = { alias: null, args: null, concreteType: "Post", kind: "LinkedField", name: "posts", plural: !0, selections: o, storageKey: null }),
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    (Q = { alias: null, args: null, concreteType: "TrendSentiment", kind: "LinkedField", name: "sentiment_data", plural: !1, selections: [U, M, H, O, { alias: null, args: null, concreteType: "SentimentScore", kind: "LinkedField", name: "sentiment_scores", plural: !0, selections: [V, W, B, h], storageKey: null }], storageKey: null }),
+                                                    (Q = { alias: null, args: null, concreteType: "TrendSentiment", kind: "LinkedField", name: "sentiment_data", plural: !1, selections: [U, B, H, O, { alias: null, args: null, concreteType: "SentimentScore", kind: "LinkedField", name: "sentiment_scores", plural: !0, selections: [V, W, M, h], storageKey: null }], storageKey: null }),
                                                 ],
                                                 type: "AiTrend",
                                                 abstractKey: null,
@@ -747,19 +747,6 @@
                 return { ...n.deepsearch_news_articles, sentiment: n.sentiment_data ?? void 0, post_timelines: l } || null;
             };
         },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
-            var l = n(202784),
-                a = n(890601),
-                i = n(783427),
-                s = n(347101);
-            const r = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            r.metadata = { width: 24, height: 24 };
-            const o = r;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.5b11b4aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.8fb622aa.js.map

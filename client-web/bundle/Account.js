@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Account", "icons/IconCameraVideoStroke-js", "icons/IconDraw-js", "shared~loader.DashMenu~loader.DashModal"],
+    ["bundle.Account", "icons/IconCameraVideoStroke-js"],
     {
         395337: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -142,23 +142,23 @@
                 P = n(68290),
                 T = n(707570),
                 F = n(839),
-                I = n(593875),
-                S = n(829110),
-                M = n(720930),
-                A = n(516951),
+                S = n(593875),
+                I = n(829110),
+                A = n(720930),
+                M = n(516951),
                 D = n(450681),
                 L = n(400915),
                 V = n(420182),
-                z = n(997657),
-                N = n(306114),
+                N = n(997657),
+                z = n(306114),
                 O = n(279918),
-                B = n(722517),
-                U = n(880647),
+                U = n(722517),
+                B = n(880647),
                 R = n(655352),
                 j = n(125363),
                 $ = n(466036),
-                H = n(390387),
-                K = n(76920),
+                K = n(390387),
+                H = n(76920),
                 W = n(477403),
                 G = n(104119),
                 q = n(484633),
@@ -190,36 +190,36 @@
                 we = c().h5e38204,
                 ke = c().h7d5d9fa,
                 Ee = "rweb.navItemDecorations",
-                Ce = ({ analytics: e, featureSwitches: t, onClose: n = A.Z, userClaims: s, viewerUser: c, acceptedFollowerCount: Ce, pendingFollowerCount: Ze }) => {
+                Ce = ({ analytics: e, featureSwitches: t, onClose: n = M.Z, userClaims: s, viewerUser: c, acceptedFollowerCount: Ce, pendingFollowerCount: Ze }) => {
                     let xe = [],
                         Pe = [];
-                    const Te = (0, B.Z)("PremiumNav"),
+                    const Te = (0, U.Z)("PremiumNav"),
                         Fe = t.isTrue("subscriptions_branding_checkmark_logo_enabled"),
-                        Ie = (0, r.Dv)(V.lZ),
-                        [Se, Me] = i.useState(!1),
-                        [Ae, De] = i.useState(!1),
+                        Se = (0, r.Dv)(V.lZ),
+                        [Ie, Ae] = i.useState(!1),
+                        [Me, De] = i.useState(!1),
                         Le = t.isTrue("subscriptions_upsells_vo_nav_decoration_enabled"),
                         Ve = t.getStringValue("subscriptions_upsells_vo_nav_decoration_variant"),
-                        ze = (0, G.Md)(Ve);
+                        Ne = (0, G.Md)(Ve);
                     i.useEffect(() => {
-                        ze &&
-                            Ie.get(Ee).then((e) => {
-                                Me(!e?.analyticsClickedV2), De(!e?.[ze?.key]);
+                        Ne &&
+                            Se.get(Ee).then((e) => {
+                                Ae(!e?.analyticsClickedV2), De(!e?.[Ne?.key]);
                             });
-                    }, [Ie, ze]);
-                    const Ne = (0, j.I0)();
+                    }, [Se, Ne]);
+                    const ze = (0, j.I0)();
                     i.useEffect(() => {
-                        c?.protected && Ne($.GE());
-                    }, [Ne, c]);
-                    const Oe = (0, K.Zy)();
+                        c?.protected && ze($.GE());
+                    }, [ze, c]);
+                    const Oe = (0, H.Zy)();
                     Oe.size > 0 && Oe.add("/settings");
-                    const Be = (0, j.v9)(H.Lz),
-                        Ue = ({ link: e }) => !(Be && (("string" == typeof e && ((e.startsWith("/settings") && !Oe.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.startsWith("/i/chat") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
+                    const Ue = (0, j.v9)(K.Lz),
+                        Be = ({ link: e }) => !(Ue && (("string" == typeof e && ((e.startsWith("/settings") && !Oe.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.startsWith("/i/chat") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
                         Re = c?.screen_name || "",
                         je = (0, l.iv)().width,
-                        $e = U.Z.isOneColumnLayout(je) || U.Z.isOneColumnSquishedLayout(je),
-                        He = t.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Be,
-                        Ke = t.isTrue("branded_like_preview_enabled"),
+                        $e = B.Z.isOneColumnLayout(je) || B.Z.isOneColumnSquishedLayout(je),
+                        Ke = t.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Ue,
+                        He = t.isTrue("branded_like_preview_enabled"),
                         We = t.isTrue("subscriptions_sign_up_enabled"),
                         Ge = t.isTrue("dash_region_specific_de_media_transparency_items_enabled"),
                         qe = t.isTrue("blue_business_vo_nav_for_legacy_verified"),
@@ -238,7 +238,7 @@
                         st = t.isTrue("recruiting_global_jobs_search_enabled"),
                         ct = (0, W.vC)(),
                         dt = t.isTrue("c9s_enabled") && !!c,
-                        ut = (0, N.Z)(),
+                        ut = (0, z.Z)(),
                         mt = i.useMemo(() => !(Xe || !ut) && t.isTrue("subscriptions_upsells_app_tab_bar_analytics_upsell_enabled"), [Xe, t, ut]),
                         pt = (t) => () => {
                             t && e.scribe({ section: "overflow_menu", element: t, action: "click", data: { message: "VDL redesign dash menu item" } }), n && n();
@@ -259,12 +259,12 @@
                             label: ye,
                             link: { pathname: "/i/account_analytics", state: { cameFromUpsell: !0, referring_page: "analytics_dash_menu" } },
                             onClick:
-                                (Ie.get(Ee).then((e) => {
+                                (Se.get(Ee).then((e) => {
                                     const t = { ...e, analyticsClicked: !0, analyticsClickedV2: !0 };
-                                    Ie.set(Ee, t);
+                                    Se.set(Ee, t);
                                 }),
                                 pt("analytics")),
-                            decoration: Se ? i.createElement(o.ZP, { background: "blue500" }, he) : null,
+                            decoration: Ie ? i.createElement(o.ZP, { background: "blue500" }, he) : null,
                         }),
                         xt = () => {
                             const e = t.isTrue("subscriptions_upsells_premium_nav_migration_enabled"),
@@ -276,39 +276,39 @@
                         Pt = { icon: Fe ? w.default : k.default, label: ge, link: "/i/premium", onClick: pt("premium_hub") },
                         Tt = { label: re, link: "/logout", icon: E.default, onClick: pt("logout_overflow_item"), testID: X.Z.logout },
                         Ft = { icon: C.default, label: ce, link: (0, a.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), onClick: pt("twitter_ads_item") },
-                        It = t.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
-                        St = { icon: Z.default, label: le, link: It ? "/i/monetization" : "/settings/monetization", onClick: pt("monetization") },
-                        Mt = { icon: x.default, label: oe, link: "/settings", onClick: pt("settings_overflow_item"), testID: X.Z.settings },
-                        At = () => ({
+                        St = t.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
+                        It = { icon: Z.default, label: le, link: St ? "/i/monetization" : "/settings/monetization", onClick: pt("monetization") },
+                        At = { icon: x.default, label: oe, link: "/settings", onClick: pt("settings_overflow_item"), testID: X.Z.settings },
+                        Mt = () => ({
                             label: Le ? ve : ue,
                             onClick: () => (
                                 Le &&
-                                    ze &&
-                                    Ie.get(Ee).then((e) => {
-                                        const t = { ...e, [ze?.key]: !0 };
-                                        Ie.set(Ee, t);
+                                    Ne &&
+                                    Se.get(Ee).then((e) => {
+                                        const t = { ...e, [Ne?.key]: !0 };
+                                        Se.set(Ee, t);
                                     }),
                                 pt("verified_organization_signup_item")()
                             ),
                             link: { pathname: "/i/verified-orgs-signup", state: { referring_page: "dash_menu" } },
                             icon: P.default,
-                            decoration: Ae && Le && ze ? i.createElement(o.ZP, { background: "blue500" }, ze.label) : null,
+                            decoration: Me && Le && Ne ? i.createElement(o.ZP, { background: "blue500" }, Ne.label) : null,
                         }),
                         Dt = { label: ue, onClick: pt("verified_organization_dashboard_item"), link: "/i/verified", icon: P.default },
                         Lt = { label: me, onClick: pt("create_space_item"), link: "/i/spaces/start", icon: T.default },
                         Vt = { label: pe, onClick: pt("go_live_item"), link: "/i/go-live", icon: F.default },
-                        zt = c ? { label: fe, onClick: pt("communities_item"), link: `/${c.screen_name}/communities`, icon: I.default } : void 0,
-                        Nt = Qe && c ? { label: we, onClick: pt("chat_item"), link: "/i/chat", icon: S.default, decoration: i.createElement(o.ZP, { background: "blue500" }, ke) } : void 0,
+                        Nt = c ? { label: fe, onClick: pt("communities_item"), link: `/${c.screen_name}/communities`, icon: S.default } : void 0,
+                        zt = Qe && c ? { label: we, onClick: pt("chat_item"), link: "/i/chat", icon: I.default, decoration: i.createElement(o.ZP, { background: "blue500" }, ke) } : void 0,
                         Ot = t.isTrue("spaces_conference_enabled") || !!ct,
-                        Bt = { label: "Conferences", onClick: pt("conferences_item"), link: "/i/conferences", icon: F.default },
-                        Ut = { label: _e, onClick: pt("jobs_item"), link: "/jobs", icon: M.default },
+                        Ut = { label: "Conferences", onClick: pt("conferences_item"), link: "/i/conferences", icon: F.default },
+                        Bt = { label: _e, onClick: pt("jobs_item"), link: "/jobs", icon: A.default },
                         Rt = [gt, bt],
                         jt = We && !Xe,
                         $t = qe,
-                        Ht = (0, D.Z)([Nt, kt, et ? Pt : void 0, ot ? Et : void 0, jt ? xt() : void 0, dt ? zt : void 0, Re ? vt : void 0, yt, tt ? ft : void 0, $t ? (Ye ? Dt : At()) : void 0, at ? Ct : void 0, He ? _t : void 0, Ze || Ce ? wt : void 0, mt ? Zt() : void 0, St, Ft, st ? Ut : void 0, Ot ? Bt : void 0, Mt, Tt]).filter(Ue),
-                        Kt = i.useContext(z.hC),
-                        Wt = (0, D.Z)([Nt, O.yw.Lists > Kt && Re ? vt : void 0, O.yw.Premium > Kt && et ? Pt : void 0, O.yw.PremiumSignup > Kt && jt ? xt() : void 0, O.yw.Bookmarks > Kt ? yt : void 0, O.yw.Payments > Kt && ot ? Et : void 0, O.yw.Communities > Kt && dt ? zt : void 0, O.yw.Articles > Kt && Je ? ft : void 0, O.yw.CommunityNotes > Kt && He ? _t : void 0, O.yw.Analytics > Kt && mt ? Zt() : void 0, St, O.yw.VerifiedOrgDash > Kt && $t && Ye ? Dt : void 0, (((!Ye || s.isLegacyVerifiedOrg()) && O.yw.VerifiedOrgSignup > Kt) || (s.isVerifiedOrgAffiliate() && !s.isVerifiedOrg())) && t.isTrue("blue_business_vo_nav_for_legacy_verified") ? At() : void 0, at ? Ct : void 0, Ke ? ht : void 0, Ze || Ce ? wt : void 0, Ft, O.yw.Jobs > Kt && st ? Ut : void 0, void 0, rt ? Lt : void 0, lt ? Vt : void 0, Ot ? Bt : void 0, Mt]).filter(Ue);
-                    return (0, R.ZP)() ? ((xe = xe.concat(Wt)), Ge && $e && (Pe = Rt)) : ((xe = xe.concat(Ht)), Ge && (Pe = Rt)), { coreItems: xe, countrySpecificItems: Pe };
+                        Kt = (0, D.Z)([zt, kt, et ? Pt : void 0, ot ? Et : void 0, jt ? xt() : void 0, dt ? Nt : void 0, Re ? vt : void 0, yt, tt ? ft : void 0, $t ? (Ye ? Dt : Mt()) : void 0, at ? Ct : void 0, Ke ? _t : void 0, Ze || Ce ? wt : void 0, mt ? Zt() : void 0, It, Ft, st ? Bt : void 0, Ot ? Ut : void 0, At, Tt]).filter(Be),
+                        Ht = i.useContext(N.hC),
+                        Wt = (0, D.Z)([zt, O.yw.Lists > Ht && Re ? vt : void 0, O.yw.Premium > Ht && et ? Pt : void 0, O.yw.PremiumSignup > Ht && jt ? xt() : void 0, O.yw.Bookmarks > Ht ? yt : void 0, O.yw.Payments > Ht && ot ? Et : void 0, O.yw.Communities > Ht && dt ? Nt : void 0, O.yw.Articles > Ht && Je ? ft : void 0, O.yw.CommunityNotes > Ht && Ke ? _t : void 0, O.yw.Analytics > Ht && mt ? Zt() : void 0, It, O.yw.VerifiedOrgDash > Ht && $t && Ye ? Dt : void 0, (((!Ye || s.isLegacyVerifiedOrg()) && O.yw.VerifiedOrgSignup > Ht) || (s.isVerifiedOrgAffiliate() && !s.isVerifiedOrg())) && t.isTrue("blue_business_vo_nav_for_legacy_verified") ? Mt() : void 0, at ? Ct : void 0, He ? ht : void 0, Ze || Ce ? wt : void 0, Ft, O.yw.Jobs > Ht && st ? Bt : void 0, void 0, rt ? Lt : void 0, lt ? Vt : void 0, Ot ? Ut : void 0, At]).filter(Be);
+                    return (0, R.ZP)() ? ((xe = xe.concat(Wt)), Ge && $e && (Pe = Rt)) : ((xe = xe.concat(Kt)), Ge && (Pe = Rt)), { coreItems: xe, countrySpecificItems: Pe };
                 };
         },
         206962: (e, t, n) => {
@@ -427,35 +427,35 @@
                 P = n(575626),
                 T = n(752475),
                 F = n(334113),
-                I = n(873930),
-                S = n(125363),
-                M = n(919022),
-                A = n(312771),
+                S = n(873930),
+                I = n(125363),
+                A = n(919022),
+                M = n(312771),
                 D = n(673932),
                 L = n(87063),
                 V = n(668214),
-                z = n(903558),
-                N = n(682461);
+                N = n(903558),
+                z = n(682461);
             const O = (e, t) => {
                     const { match: n } = t,
                         i = n.params.screenName,
                         r = e.tv?.profile?.[i?.toLowerCase() || ""];
                     return r;
                 },
-                B = (e) => e.tv?.player,
-                U = (e, t) => {
+                U = (e) => e.tv?.player,
+                B = (e, t) => {
                     const { match: n } = t,
                         i = n.params.screenName;
                     return e.tv?.profile?.[i?.toLowerCase() || ""]?.cursor;
                 },
                 R = (e) => e.tv?.profileFetchStatus === L.Z.LOADING,
                 j = (0, V.Z)()
-                    .propsFromState(() => ({ tvProfile: O, tvPlayer: B, cursor: U, isLoading: R }))
-                    .propsFromActions(() => ({ playerOpen: z.eX.playerOpen, fetchUserProfileAndVideos: N.Sn }))
+                    .propsFromState(() => ({ tvProfile: O, tvPlayer: U, cursor: B, isLoading: R }))
+                    .propsFromActions(() => ({ playerOpen: N.eX.playerOpen, fetchUserProfileAndVideos: z.Sn }))
                     .withAnalytics({ page: "profile" });
             var $ = n(708411),
-                H = n(154003),
-                K = n(524483),
+                K = n(154003),
+                H = n(524483),
                 W = n(467537),
                 G = n(725516);
             const q = "tv-follow-button",
@@ -466,8 +466,8 @@
                 ee = p().ja66a2b5,
                 te = p().e4c91b70,
                 ne = ({ style: e, user: t }) => {
-                    const { closeModal: n, openModal: r } = (0, K.N)(),
-                        l = (0, S.I0)(),
+                    const { closeModal: n, openModal: r } = (0, H.N)(),
+                        l = (0, I.I0)(),
                         a = (0, G.z)(),
                         o = i.useCallback(() => {
                             t?.following
@@ -478,7 +478,7 @@
                                       primaryAction: {
                                           buttonText: Y,
                                           onClick: () => {
-                                              l(N.fv({ userId: t.id_str, screenName: t?.screen_name })), n();
+                                              l(z.fv({ userId: t.id_str, screenName: t?.screen_name })), n();
                                           },
                                       },
                                       secondaryAction: {
@@ -491,11 +491,11 @@
                                           n();
                                       },
                                   }))
-                                : (a.scribe({ element: "follow-button", action: "click", data: { profile_id: t.id_str } }), l(N.ZN({ userId: t.id_str, screenName: t?.screen_name })));
+                                : (a.scribe({ element: "follow-button", action: "click", data: { profile_id: t.id_str } }), l(z.ZN({ userId: t.id_str, screenName: t?.screen_name })));
                         }, [a, n, l, r, t?.following, t.id_str, t.screen_name]);
                     return i.createElement(W.C, { "aria-label": t?.following ? Y : Q, focusedStyle: t?.following ? ie.interactiveViewUnfollowFocused : void 0, name: q, onPress: o, role: "button", style: [ie.interactiveView, e] }, ({ hasFocus: e }) => {
                         const n = t?.following ? (e ? Y : X) : Q;
-                        return i.createElement(H.ZP, { "aria-label": n, size: "small", style: ie.button, type: t?.following ? (e ? "destructiveOutlined" : "primaryOutlined") : "primaryFilled" }, n);
+                        return i.createElement(K.ZP, { "aria-label": n, size: "small", style: ie.button, type: t?.following ? (e ? "destructiveOutlined" : "primaryOutlined") : "primaryFilled" }, n);
                     });
                 },
                 ie = u.default.create((e) => ({ interactiveView: { borderRadius: e.borderRadii.infinite }, interactiveViewUnfollowFocused: { borderColor: e.colors.red500 }, button: { width: 128 * e.scaleMultiplier } }));
@@ -504,12 +504,12 @@
             const ae = p().j87c21f4,
                 oe = p().iebc30ca,
                 se = ({ style: e, user: t }) => {
-                    const n = (0, S.I0)(),
+                    const n = (0, I.I0)(),
                         r = (0, G.z)(),
                         l = i.useCallback(() => {
-                            r.scribe({ element: "notify-button", action: "click", data: { profile_id: t.id_str } }), n(N.BX({ userId: t.id_str, notificationsEnabled: !t.notifications, screenName: t?.screen_name }));
+                            r.scribe({ element: "notify-button", action: "click", data: { profile_id: t.id_str } }), n(z.BX({ userId: t.id_str, notificationsEnabled: !t.notifications, screenName: t?.screen_name }));
                         }, [r, n, t.id_str, t.notifications, t?.screen_name]);
-                    return i.createElement(W.C, { "aria-label": t?.notifications ? oe : ae, name: "tv-notify-button", onPress: l, role: "button", style: [ce.interactiveView, e] }, i.createElement(H.ZP, { icon: t?.notifications ? i.createElement(re.default, null) : i.createElement(le.default, null), size: "small", type: "primaryOutlined" }));
+                    return i.createElement(W.C, { "aria-label": t?.notifications ? oe : ae, name: "tv-notify-button", onPress: l, role: "button", style: [ce.interactiveView, e] }, i.createElement(K.ZP, { icon: t?.notifications ? i.createElement(re.default, null) : i.createElement(le.default, null), size: "small", type: "primaryOutlined" }));
                 },
                 ce = u.default.create((e) => ({ interactiveView: { borderRadius: e.borderRadii.infinite } })),
                 de = "profile-grid",
@@ -547,33 +547,33 @@
                         _ = m?.user,
                         v = m?.modules,
                         L = m?.videos,
-                        V = (0, S.v9)(M.ZP.selectViewerUser),
-                        z = V && _ && V.id_str === _.id_str,
-                        N = (v?.length || 0) + 1,
+                        V = (0, I.v9)(A.ZP.selectViewerUser),
+                        N = V && _ && V.id_str === _.id_str,
+                        z = (v?.length || 0) + 1,
                         O = i.useRef(null),
-                        B = i.useRef(Array(N).fill(null));
+                        U = i.useRef(Array(z).fill(null));
                     (0, g.q)(() => {
                         ((p && !_) || !L) && t({ screenName: p });
                     });
-                    const { clearVoiceHandlers: U, registerVoiceHandlers: R } = (0, y.B)();
+                    const { clearVoiceHandlers: B, registerVoiceHandlers: R } = (0, y.B)();
                     i.useEffect(
                         () => (
                             R({ onupdatestate: () => h.E.List }),
                             function () {
-                                U();
+                                B();
                             }
                         ),
-                        [U, R],
+                        [B, R],
                     );
                     const j = i.useCallback(() => {
                             p && !s && t({ screenName: p, cursor: e });
                         }, [p, s, t, e]),
-                        H = (0, S.I0)(),
-                        K = i.useCallback(
+                        K = (0, I.I0)(),
+                        H = i.useCallback(
                             (e) => {
-                                H(u(e)), n.push((0, D.X5)(e));
+                                K(u(e)), n.push((0, D.X5)(e));
                             },
-                            [H, n, u],
+                            [K, n, u],
                         ),
                         W = ((e) => ("https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" === e ? $.jz : e ? e.replace($.KB, "_400x400.jpg") : $.jz))(_?.profile_image_url_https),
                         G = i.useCallback(() => !1, []),
@@ -585,8 +585,8 @@
                             [v],
                         ),
                         X = i.useCallback(() => {
-                            O.current?.positionRef.current !== N - 1 && O.current?.setPosition(N - 1);
-                        }, [N]),
+                            O.current?.positionRef.current !== z - 1 && O.current?.setPosition(z - 1);
+                        }, [z]),
                         Y = i.useMemo(
                             () =>
                                 v?.map((e, t) =>
@@ -595,13 +595,13 @@
                                         {
                                             key: t,
                                             ref: (e) => {
-                                                B.current[t] = e;
+                                                U.current[t] = e;
                                             },
                                         },
-                                        i.createElement(w.Z, { content: e.content, displayType: (0, F.qU)(e.displayType), handleNoriginArrowPress: G, name: `carousel-${t.toString()}`, onFocus: Q?.[t], onSelectVideo: K, title: e.title }),
+                                        i.createElement(w.Z, { content: e.content, displayType: (0, F.qU)(e.displayType), handleNoriginArrowPress: G, name: `carousel-${t.toString()}`, onFocus: Q?.[t], onSelectVideo: H, title: e.title }),
                                     ),
                                 ),
-                            [G, v, Q, K],
+                            [G, v, Q, H],
                         ),
                         J = i.useMemo(() => {
                             const e = v && v.length > 0;
@@ -610,12 +610,12 @@
                                     a.Z,
                                     {
                                         ref: (e) => {
-                                            B.current[N - 1] = e;
+                                            U.current[z - 1] = e;
                                         },
                                     },
-                                    i.createElement(Z.Z, { autoFocus: !e, content: L, handleNoriginArrowPress: G, name: ue, onFocus: X, onNearEnd: j, onSelectVideo: K, returnToFirstElementOnEscape: !0, style: Ee.content, title: e ? _e : void 0, width: 4 }),
+                                    i.createElement(Z.Z, { autoFocus: !e, content: L, handleNoriginArrowPress: G, name: ue, onFocus: X, onNearEnd: j, onSelectVideo: H, returnToFirstElementOnEscape: !0, style: Ee.content, title: e ? _e : void 0, width: 4 }),
                                 );
-                        }, [j, G, v, X, K, N, L]),
+                        }, [j, G, v, X, H, z, L]),
                         ee = i.useCallback((e) => {
                             O.current = e;
                         }, []),
@@ -630,24 +630,24 @@
                                         (n = Math.max(t - 1, 0)), (0, r.setFocus)(ve(n));
                                         break;
                                     case "ArrowDown":
-                                        if (((n = Math.min(t + 1, N)), n === N)) return !1;
-                                        if (n === N - 1) return (0, r.setFocus)(we(0)), !0;
+                                        if (((n = Math.min(t + 1, z)), n === z)) return !1;
+                                        if (n === z - 1) return (0, r.setFocus)(we(0)), !0;
                                         break;
                                     case "ArrowLeft":
                                         (0, r.setFocus)(`${P.sN}.${P.TZ}`);
                                 }
                                 return !0;
                             },
-                            [N],
+                            [z],
                         ),
-                        ie = (0, I.Z)(),
-                        re = i.useMemo(() => (ie ? i.createElement(a.Z, null, Y, J) : i.createElement(C.k, { getGPUScrollerApi: ee, renderedItemRefs: B, scrollX: !1, scrollY: !0 }, Y, J)), [ee, Y, J, ie]),
+                        ie = (0, S.Z)(),
+                        re = i.useMemo(() => (ie ? i.createElement(a.Z, null, Y, J) : i.createElement(C.k, { getGPUScrollerApi: ee, renderedItemRefs: U, scrollX: !1, scrollY: !0 }, Y, J)), [ee, Y, J, ie]),
                         le = (0, r.getCurrentFocusKey)(),
                         ae = i.useCallback((e) => (v?.length ? le !== ve(0) && ((0, r.setFocus)(ve(0)), !0) : !!L?.length && le !== we(0) && ((0, r.setFocus)(we(0)), !0)), [le, v?.length, L?.length]),
-                        oe = i.useMemo(() => (L?.length || v?.length ? i.createElement(E.Z, { "aria-label": void 0, autoFocus: !0, name: de, onArrowPress: te, onEscapeOrBack: ae, role: "grid", saveLastFocusedChild: !0, trackChildren: !0 }, re) : i.createElement(a.Z, { style: Ee.noVideosContainer }, i.createElement(o.ZP, { size: "headline1", weight: "bold" }, z ? ge : be({ name: `@${_?.screen_name || ""}` })))), [te, ae, z, v?.length, re, _?.screen_name, L?.length]),
+                        oe = i.useMemo(() => (L?.length || v?.length ? i.createElement(E.Z, { "aria-label": void 0, autoFocus: !0, name: de, onArrowPress: te, onEscapeOrBack: ae, role: "grid", saveLastFocusedChild: !0, trackChildren: !0 }, re) : i.createElement(a.Z, { style: Ee.noVideosContainer }, i.createElement(o.ZP, { size: "headline1", weight: "bold" }, N ? ge : be({ name: `@${_?.screen_name || ""}` })))), [te, ae, N, v?.length, re, _?.screen_name, L?.length]),
                         ce = i.useCallback(() => (V ? oe : i.createElement(ye, { history: n, user: _ })), [n, oe, _, V]),
-                        me = i.useMemo(() => i.createElement(b.Z, { fetchStatus: _ && L ? A.ZP.LOADED : A.ZP.LOADING, onRequestRetry: f.Z, render: ce, retryable: !1 }), [ce, _, L]);
-                    return i.createElement(i.Fragment, null, i.createElement(x.Z, null, i.createElement(a.Z, { style: Ee.header }, _ ? i.createElement(a.Z, { style: Ee.profileInfo }, i.createElement(T.Z, { source: W, style: [Ee.userAvatar, Ee.marginEnd16], verifiedType: _.verified_type, withOuterBorder: !0 }), i.createElement(a.Z, { style: [Ee.profileDetails, z && Ee.ownProfileDetails, Ee.marginEnd16] }, i.createElement(d.Z, { affiliateBadgeInfo: _.highlightedLabel, badgeContext: "content", isBlueVerified: _.is_blue_verified, isProtected: _.protected, isVerified: _.verified, name: _.name, nameSize: "headline1", screenName: _.screen_name, screenNameSize: "body", style: Ee.marginBottom6, verifiedType: _.verified_type, withLink: !1, withNameWrap: !0 }), _.description ? i.createElement(o.ZP, { style: [Ee.profileDescription, Ee.marginBottom6] }, i.createElement(k.x, { text: _.description })) : null, i.createElement(he, { user: _ }), V && !z ? i.createElement(a.Z, { style: [Ee.buttonSection, Ee.marginBottom6] }, i.createElement(ne, { style: Ee.marginEnd8, user: _ }), i.createElement(se, { style: Ee.marginEnd8, user: _ })) : null)) : null), ie ? i.createElement(l.Z, null, me) : i.createElement(a.Z, { style: ie ? void 0 : Ee.overflowHidden }, me)));
+                        me = i.useMemo(() => i.createElement(b.Z, { fetchStatus: _ && L ? M.ZP.LOADED : M.ZP.LOADING, onRequestRetry: f.Z, render: ce, retryable: !1 }), [ce, _, L]);
+                    return i.createElement(i.Fragment, null, i.createElement(x.Z, null, i.createElement(a.Z, { style: Ee.header }, _ ? i.createElement(a.Z, { style: Ee.profileInfo }, i.createElement(T.Z, { source: W, style: [Ee.userAvatar, Ee.marginEnd16], verifiedType: _.verified_type, withOuterBorder: !0 }), i.createElement(a.Z, { style: [Ee.profileDetails, N && Ee.ownProfileDetails, Ee.marginEnd16] }, i.createElement(d.Z, { affiliateBadgeInfo: _.highlightedLabel, badgeContext: "content", isBlueVerified: _.is_blue_verified, isProtected: _.protected, isVerified: _.verified, name: _.name, nameSize: "headline1", screenName: _.screen_name, screenNameSize: "body", style: Ee.marginBottom6, verifiedType: _.verified_type, withLink: !1, withNameWrap: !0 }), _.description ? i.createElement(o.ZP, { style: [Ee.profileDescription, Ee.marginBottom6] }, i.createElement(k.x, { text: _.description })) : null, i.createElement(he, { user: _ }), V && !N ? i.createElement(a.Z, { style: [Ee.buttonSection, Ee.marginBottom6] }, i.createElement(ne, { style: Ee.marginEnd8, user: _ }), i.createElement(se, { style: Ee.marginEnd8, user: _ })) : null)) : null), ie ? i.createElement(l.Z, null, me) : i.createElement(a.Z, { style: ie ? void 0 : Ee.overflowHidden }, me)));
                 },
                 Ee = u.default.create((e) => ({ header: { minHeight: 128 * e.scaleMultiplier, paddingHorizontal: e.spaces.space24, paddingTop: 60 * e.scaleMultiplier, paddingBottom: e.spaces.space32 }, userAvatar: { minHeight: 128 * e.scaleMultiplier, width: 128 * e.scaleMultiplier }, overflowHidden: { overflow: "hidden" }, marginBottom6: { marginBottom: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, marginEnd4: { marginEnd: e.spaces.space4 }, marginEnd8: { marginEnd: e.spaces.space8 }, marginEnd16: { marginEnd: e.spaces.space16 }, marginBottom16: { marginBottom: e.spaces.space16 }, profileInfo: { flexDirection: "row" }, profileDetails: { justifyContent: "end" }, ownProfileDetails: { justifyContent: "center" }, profileDescription: { marginBottom: e.spaces.space4 }, profileStats: { marginBottom: e.spaces.space4, flexDirection: "row" }, profileStatsItem: { flexDirection: "row" }, buttonSection: { bottom: -e.borderWidthsPx.medium, flexDirection: "row", marginTop: e.spaces.space2, start: -e.borderWidthsPx.medium }, contentWrapper: { flex: 1 }, content: { paddingHorizontal: e.spaces.space24 }, loggedOutProfilePrompt: { display: "flex", flexDirection: "column", alignItems: "center", paddingTop: e.spaces.space64 }, noVideosContainer: { width: "100%", height: "100%", display: "flex", alignItems: "center", paddingTop: e.spaces.space64 } })),
                 Ce = j(ke);
@@ -812,32 +812,6 @@
             o.metadata = { width: 24, height: 24 };
             const s = o;
         },
-        197318: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var i = n(202784),
-                r = n(890601),
-                l = n(783427),
-                a = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M8.7 2.4c.7-.6 1.5-1 2.3-1.4.5-.2 1.1-.3 1.7-.3.4 0 .8.1 1.1.3s.7.4.9.7c.2.3.3.6.4 1 .1.4.1.7 0 1.1-.1.5-.2 1-.4 1.4-.4.8-.8 1.5-1.3 2.2-1.8 2.8-3.9 5.1-5.7 7.7-.4.6-.9 1.3-1.3 1.9-.2.3-.4.6-.6 1.1-.3.6.2.8.8.5 2.3-1.1 10.3-11.2 12.8-9 .3.3 1.7 1.5-1.3 5.8-.4.6-.7 1.1-1.1 1.6-.5.7-1.1 1.5-1.6 2.3-.4.6-.7 1.2-1 1.9-.1.2-.2.6 0 .8.4.4 1.9-.7 3.7-2.4l3.2-3.2c.5-.5 1.2.1.7.7-1.6 1.9-5.5 6.4-7.5 6.3-.4 0-.7-.1-1-.3s-.5-.5-.6-.8c-.1-.2-.2-.7.1-1.5.3-.8.6-1.6 1.1-2.3.5-.8 1-1.7 1.5-2.4.3-.5.7-1.1 1-1.6.3-.5.8-1.4 1.2-2 .2-.3.6-.9.2-1.2-.2-.2-.5-.2-1.3.6 0 0-6.6 6.7-9 8.4-1.3.9-2.8 1.2-3.6.4-1-.9-1.6-2.5 1.5-6.4 3.1-3.8 6.5-8.7 6.8-9.6.1-.2.1-.4.1-.5.1-.5-.5-.9-1-.7-.3.2-.8.5-1.6 1.2-2.3 2-4.3 4.3-6.1 6.8-.1.2-.3.3-.5.4s-.4.2-.6.2c-.4.1-.8-.1-1.2-.3-.3-.2-.5-.6-.6-1v-.6c.1-.2.1-.4.3-.5 2.7-2.9 5-5.2 7.5-7.3z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
-        74514: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var i = n(202784),
-                r = n(890601),
-                l = n(783427),
-                a = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.b6f1dfba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.50a7d1fa.js.map

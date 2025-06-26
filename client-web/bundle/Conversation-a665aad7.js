@@ -36,8 +36,8 @@
                     .propsFromState(() => ({ paymentMethods: x, selectedPaymentMethod: D.DY }))
                     .propsFromActions(() => ({ setSelectedPaymentMethod: D.$L, deletePaymentMethod: D.gp }))
                     .withAnalytics(v.EP),
-                T = P().de43b660,
-                q = P().hb4773a0,
+                q = P().de43b660,
+                T = P().hb4773a0,
                 A = P().aa2a3dd4,
                 M = P().b1c5b63c,
                 B = P().affb5878,
@@ -110,9 +110,9 @@
                                 o.Z,
                                 { style: O.qpContainer, testID: _.Z.paymentMethodSelect },
                                 E ? r.createElement(a.Z, { indeterminate: !0 }) : null,
-                                r.createElement(k.ZP, null, r.createElement(w.Y, { title: T })),
-                                (0, k.$_)((e) => r.createElement(s.Z, { disabled: E, name: T, onChange: D, options: F(p, y, (e) => S(e), e), value: y })),
-                                (0, k.$_)((e) => r.createElement(o.Z, { style: O.addPaymentMethodContainer }, r.createElement(c.Z, { disabled: E, interactive: E, interactiveStyles: L, onPress: () => l.push(`${(0, v.WS)(u, m, d, v.MN.Payment)}?isAddingPayment=true`), style: [O.addPaymentMethodInteractiveContainer, e] }, r.createElement(b.default, { style: O.plusIcon }), r.createElement(i.ZP, { align: "left", color: "primary" }, q)))),
+                                r.createElement(k.ZP, null, r.createElement(w.Y, { title: q })),
+                                (0, k.$_)((e) => r.createElement(s.Z, { disabled: E, name: q, onChange: D, options: F(p, y, (e) => S(e), e), value: y })),
+                                (0, k.$_)((e) => r.createElement(o.Z, { style: O.addPaymentMethodContainer }, r.createElement(c.Z, { disabled: E, interactive: E, interactiveStyles: L, onPress: () => l.push(`${(0, v.WS)(u, m, d, v.MN.Payment)}?isAddingPayment=true`), style: [O.addPaymentMethodInteractiveContainer, e] }, r.createElement(b.default, { style: O.plusIcon }), r.createElement(i.ZP, { align: "left", color: "primary" }, T)))),
                                 f &&
                                     r.createElement(H, {
                                         cancelDeletePaymentMethodHandler: () => S(null),
@@ -159,7 +159,7 @@
                 };
         },
         430996: (e, t, n) => {
-            n.d(t, { Y: () => x, Z: () => T });
+            n.d(t, { Y: () => x, Z: () => q });
             var r = n(202784),
                 o = n(200904),
                 a = n(202205),
@@ -241,7 +241,7 @@
             }
             const x = d(D),
                 I = g.default.create((e) => ({ selectionGroupContainer: { paddingTop: e.spaces.space16 }, row: { alignContent: "flex-start", flexDirection: "row", flexWrap: "wrap", minHeight: "150px", overflowX: "auto" }, noSpacing: { paddingHorizontal: "0" } }));
-            const T = l(function (e) {
+            const q = l(function (e) {
                 const { analytics: t, contextualKeywords: n, history: s, location: c, match: i, setTargetedContextualKeywords: l } = e,
                     d = r.useCallback(() => {
                         const { quickPromotePlatform: e, quickPromoteScreenName: t, screenName: n, statusId: r } = i.params;
@@ -251,7 +251,7 @@
                 return r.createElement(y, { onBack: d }, r.createElement(o.ZP, null, r.createElement(D, u)));
             });
         },
-        409195: (e, t, n) => {
+        929175: (e, t, n) => {
             n.r(t), n.d(t, { QuickPromoteScreen: () => Pn, default: () => fn });
             n(571372);
             var r = n(202784),
@@ -282,13 +282,13 @@
                 D = n(836255),
                 x = n(202205);
             const I = (e, t) => t.match.params.statusId,
-                T = (e, t) => D.Z.selectHydrated(e, I(0, t)),
-                q = (e, t) => (0, w.h1)(D.Z.selectFetchStatus(e, I(0, t)), e.quickPromote.budget.availableBudgetsFetchStatus, e.quickPromote.targeting.initialTargetedLocationsFetchStatus, e.quickPromote.account.accountDataFetchStatus, e.quickPromote.couponsFetchStatus),
+                q = (e, t) => D.Z.selectHydrated(e, I(0, t)),
+                T = (e, t) => (0, w.h1)(D.Z.selectFetchStatus(e, I(0, t)), e.quickPromote.budget.availableBudgetsFetchStatus, e.quickPromote.targeting.initialTargetedLocationsFetchStatus, e.quickPromote.account.accountDataFetchStatus, e.quickPromote.couponsFetchStatus),
                 A = (e, t) => e.quickPromote.promoteStatus,
                 M = (e, t) => e.quickPromote.promoteErrorCode,
                 B = (e, t) => e.quickPromote.account.campaigns,
                 N = (0, v.Z)()
-                    .propsFromState(() => ({ statusId: I, fetchStatus: q, tweet: T, campaigns: B, promoteFetchStatus: A, promoteErrorCode: M }))
+                    .propsFromState(() => ({ statusId: I, fetchStatus: T, tweet: q, campaigns: B, promoteFetchStatus: A, promoteErrorCode: M }))
                     .propsFromActions((e) => ({
                         clearPersistedRedirectBackState: () => (0, S.oE)(),
                         createLocalApiErrorHandler: (0, _.zr)("QUICK_PROMOTE_SCREEN"),
@@ -310,7 +310,7 @@
                     }))
                     .withAnalytics(x.EP);
             var F = n(581505),
-                R = n(372612),
+                R = n(661345),
                 H = n(107456),
                 L = n(782947),
                 O = n(40610),
@@ -325,12 +325,12 @@
                     .propsFromState(() => ({ selectedObjective: G, tweet: $ }))
                     .propsFromActions(() => ({ setObjective: S.mS }))
                     .withAnalytics(x.EP);
-            var Y = n(992942);
-            const Q = n.p + "engagements_icon.14baf75a.png";
-            function X() {
-                return r.createElement(Y.Z, { "aria-label": "", source: Q, style: u.default.absoluteFill });
+            var Y = n(772750),
+                Q = n(992942);
+            const X = n.p + "website_clicks_icon.82f641fa.png";
+            function J() {
+                return r.createElement(Q.Z, { "aria-label": "", source: X, style: u.default.absoluteFill });
             }
-            var J = n(835152);
             const ee = p().fcc839b6,
                 te = (p().b679a538, p().cb19a2f0),
                 ne = p().a2d37164,
@@ -338,8 +338,8 @@
                 oe = p().b614fad0,
                 ae = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
                 [se, ce] = [
-                    { label: (0, W.WF)(C.CH.Engagements), value: C.CH.Engagements, description: te, illustration: r.createElement(X, null), testID: K.Z.getObjective(C.CH.Engagements) },
-                    { label: (0, W.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ne, illustration: r.createElement(J.T, null), testID: K.Z.getObjective(C.CH.WebsiteClicks) },
+                    { label: (0, W.WF)(C.CH.Engagements), value: C.CH.Engagements, description: te, illustration: r.createElement(Y.i, null), testID: K.Z.getObjective(C.CH.Engagements) },
+                    { label: (0, W.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ne, illustration: r.createElement(J, null), testID: K.Z.getObjective(C.CH.WebsiteClicks) },
                 ];
             const ie = V((e) => {
                     const { analytics: t, selectedObjective: n, setObjective: a, tweet: c } = e,
@@ -365,14 +365,14 @@
                         );
                     return r.createElement(o.Z, { style: ae.qpContainer, testID: K.Z.objectiveScreen }, r.createElement(z.O, { screenType: x.MN.Objective }), r.createElement(j.ZP, null, r.createElement(U.Y, { style: ae.titleContainer, title: ee }), r.createElement(L.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
                 }),
-                le = ie,
-                de = n.p + "followers_icon.80e5851a.png";
-            var ue = n(6885);
+                le = ie;
+            var de = n(653970);
+            const ue = n.p + "followers_icon.80e5851a.png";
             function me(e) {
                 new Image().src = e;
             }
             function pe() {
-                return me(Q), me(de), me(ue), r.createElement(r.Fragment, null);
+                return me(de), me(ue), me(X), r.createElement(r.Fragment, null);
             }
             n(136728), n(543673), n(240753), n(128399);
             var ge = n(614983),
@@ -454,8 +454,8 @@
             Se.contextType = E.rC;
             const xe = u.default.create((e) => ({ iframe: { flexGrow: 1, paddingTop: 0 } })),
                 Ie = ve(Se);
-            var Te = n(896449),
-                qe = n(834324),
+            var qe = n(896449),
+                Te = n(834324),
                 Ae = n(224162),
                 Me = n(779610),
                 Be = n(731708),
@@ -574,9 +574,9 @@
                         Z = (0, W.n9)(C.gT[t]),
                         k = (0, W.WF)(y),
                         _ = m.length ? (0, W.R9)({ locations: b.map(({ localized_name: e }) => e), formattedAge: Z, gender: (0, W.nW)(u), keywords: m }) : (0, W.HB)({ locations: b.map(({ localized_name: e }) => e), formattedAge: Z, gender: (0, W.nW)(u) }),
-                        { couponErrorMessage: v, couponType: D, existingCouponBalance: I, hasCouponCredit: T, isEligibleForCoupon: q, showCouponTerms: A } = this._getCouponVariables({ coupons: a, currency: s, lang: g }),
+                        { couponErrorMessage: v, couponType: D, existingCouponBalance: I, hasCouponCredit: q, isEligibleForCoupon: T, showCouponTerms: A } = this._getCouponVariables({ coupons: a, currency: s, lang: g }),
                         M = (0, W.Wl)({ dailyBudgetNum: c, durationDays: i, lang: g, currency: s }),
-                        B = T ? "" : (0, W.Sy)({ amount: c * i, lang: g, currency: s }),
+                        B = q ? "" : (0, W.Sy)({ amount: c * i, lang: g, currency: s }),
                         { quickPromotePlatform: N, screenName: F, statusId: R } = h.params,
                         H = this._getPromoteErrorMessage(),
                         L = !!l,
@@ -591,14 +591,14 @@
                             r.createElement(
                                 j.ZP,
                                 null,
-                                H && r.createElement(o.Z, { style: Zt.gutter }, r.createElement(qe.Z, { text: H, type: "danger" })),
-                                v && r.createElement(o.Z, { style: Zt.gutter }, r.createElement(qe.Z, { text: v, type: "warning" })),
+                                H && r.createElement(o.Z, { style: Zt.gutter }, r.createElement(Te.Z, { text: H, type: "danger" })),
+                                v && r.createElement(o.Z, { style: Zt.gutter }, r.createElement(Te.Z, { text: v, type: "warning" })),
                                 r.createElement(U.Y, { title: tt }),
                                 r.createElement(Fe.t, { description: k, descriptionTestID: K.Z.reviewObjectiveDescription, label: nt, withBottomBorder: !1 }),
                                 r.createElement(Fe.t, { description: _, descriptionTestID: K.Z.reviewTargetingDescription, label: rt, withBottomBorder: !1 }),
-                                r.createElement(Ae.RD.Consumer, null, ({ direction: e }) => r.createElement(Fe.t, { children: G && r.createElement(qe.Z, { style: Zt.couponCallout, text: O }), description: M, descriptionDir: e, descriptionTestID: K.Z.reviewBudgetAndDurationDescription, label: ot, withBottomBorder: !1 })),
+                                r.createElement(Ae.RD.Consumer, null, ({ direction: e }) => r.createElement(Fe.t, { children: G && r.createElement(Te.Z, { style: Zt.couponCallout, text: O }), description: M, descriptionDir: e, descriptionTestID: K.Z.reviewBudgetAndDurationDescription, label: ot, withBottomBorder: !1 })),
                             ),
-                            (0, j.FR)((e) => r.createElement(Me.Z, { description: w && "CREDIT_CARD" === l?.type && P && !f ? r.createElement(Te.XL, { id: P.id, imgSrcUrl: P.imgSrcUrl, lastFourDigits: P.lastFourDigits, paymentDescriptionStyle: Zt.paymentDescription, status: P.cardStatus }) : l && !f ? l.description : r.createElement(Be.ZP, { color: "primary", size: "subtext2" }, this._getPaymentDescription(L, q)), label: r.createElement(Be.ZP, { weight: "bold" }, at), link: w ? (!l || f ? (0, x.WS)(F, R, N, x.MN.Payment) : "CREDIT_CARD" === l?.type ? (0, x.WS)(F, R, N, x.MN.PaymentSelect) : void 0) : void 0, paddingHorizontal: e, testID: K.Z.reviewPaymentPivot })),
+                            (0, j.FR)((e) => r.createElement(Me.Z, { description: w && "CREDIT_CARD" === l?.type && P && !f ? r.createElement(qe.XL, { id: P.id, imgSrcUrl: P.imgSrcUrl, lastFourDigits: P.lastFourDigits, paymentDescriptionStyle: Zt.paymentDescription, status: P.cardStatus }) : l && !f ? l.description : r.createElement(Be.ZP, { color: "primary", size: "subtext2" }, this._getPaymentDescription(L, T)), label: r.createElement(Be.ZP, { weight: "bold" }, at), link: w ? (!l || f ? (0, x.WS)(F, R, N, x.MN.Payment) : "CREDIT_CARD" === l?.type ? (0, x.WS)(F, R, N, x.MN.PaymentSelect) : void 0) : void 0, paddingHorizontal: e, testID: K.Z.reviewPaymentPivot })),
                         ),
                         r.createElement(
                             o.Z,
@@ -609,7 +609,7 @@
                                 r.createElement(
                                     Fe.t,
                                     { description: B, descriptionTestID: K.Z.reviewPromotionTotalDescription, label: st, withBottomBorder: !1 },
-                                    T
+                                    q
                                         ? (function ({ balance: e, currency: t, lang: n, subtotal: a }) {
                                               const s = (0, W.Sy)({ amount: a, currency: t, lang: n }),
                                                   c = (0, W.Sy)({ amount: Math.min(a, e), currency: t, lang: n }),
@@ -641,14 +641,14 @@
                 Dt = n(161821),
                 xt = n(908478);
             const It = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
-                Tt = (e, t) => e.quickPromote.targeting.targetedLocations,
-                qt = (e, t) => e.quickPromote.targeting.gender,
+                qt = (e, t) => e.quickPromote.targeting.targetedLocations,
+                Tt = (e, t) => e.quickPromote.targeting.gender,
                 At = (e, t) => e.quickPromote.targeting.ageBucket,
                 Mt = (e, t) => e.quickPromote.targeting.keywords,
                 Bt = (e, t) => e.quickPromote.objective,
                 Nt = (e, t) => D.Z.selectHydrated(e, ((e, t) => t.match.params.statusId)(0, t)),
                 Ft = (0, v.Z)()
-                    .propsFromState(() => ({ lang: Re.VT, isHousingAndUrbanDevelopmentLimitations: It, targetedLocations: Tt, selectedGender: qt, selectedAgeBucket: At, selectedKeywords: Mt, objective: Bt, tweet: Nt }))
+                    .propsFromState(() => ({ lang: Re.VT, isHousingAndUrbanDevelopmentLimitations: It, targetedLocations: qt, selectedGender: Tt, selectedAgeBucket: At, selectedKeywords: Mt, objective: Bt, tweet: Nt }))
                     .propsFromActions(() => ({ setObjective: S.mS, setTargetedAgeBucket: S.l$ }))
                     .withAnalytics(x.EP),
                 Rt = p().c672105a,
@@ -759,7 +759,7 @@
             function Xt({ lang: e }) {
                 const t = (0, x.C0)(e),
                     n = r.useMemo(() => ({ termsLink: r.createElement(Be.ZP, { link: t }) }), [t]);
-                return r.createElement(qe.Z, { text: r.createElement(p().I18NFormatMessage, { $i18n: "f54ad505" }, r.cloneElement(n.termsLink, null, p().d4e01892)) });
+                return r.createElement(Te.Z, { text: r.createElement(p().I18NFormatMessage, { $i18n: "f54ad505" }, r.cloneElement(n.termsLink, null, p().d4e01892)) });
             }
             Vt.contextType = E.rC;
             const Jt = u.default.create((e) => ({ qpContainer: { flex: 1, overflowY: "visible" }, titleContainer: { paddingBottom: e.spaces.space16 }, targetingContainer: { flexDirection: "column", gap: e.spaces.space16 } })),
@@ -886,7 +886,7 @@
                                 case "payment":
                                     return r.createElement(a.Route, { component: Ie });
                                 case "payment_select":
-                                    return r.createElement(a.Route, { component: Te.ZP });
+                                    return r.createElement(a.Route, { component: qe.ZP });
                                 case "done":
                                     return r.createElement(a.Route, { component: F.ZP });
                                 default:
@@ -942,9 +942,9 @@
             const bn = u.default.create((e) => ({ noScrollView: { overflowX: "hidden", flex: 1 }, nextButton: { marginBottom: e.spaces.space48, marginTop: e.spaces.space12 } })),
                 fn = N(Pn);
         },
-        6885: (e, t, n) => {
-            e.exports = n.p + "website_clicks_icon.82f641fa.png";
+        653970: (e, t, n) => {
+            e.exports = n.p + "engagements_icon.14baf75a.png";
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.db01666a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.a8b14e0a.js.map

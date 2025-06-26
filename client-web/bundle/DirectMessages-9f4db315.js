@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DirectMessages-9f4db315", "loader.MediaPickerWithPreview"],
+    ["bundle.DirectMessages-9f4db315"],
     {
         155074: (e) => {
             e.exports = { queryId: "83Gg0lfI-47Z3-ZOxyUjiQ", operationName: "ClearGrokConversations", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -69,10 +69,10 @@
                 k = o.n(v),
                 x = o(985289),
                 Z = o.n(x),
-                B = o(524816),
-                I = o.n(B),
-                S = o(917665),
-                E = o.n(S),
+                S = o(524816),
+                B = o.n(S),
+                I = o(917665),
+                E = o.n(I),
                 T = o(587068),
                 L = o.n(T);
             function P({ apiClient: e }) {
@@ -89,7 +89,7 @@
                     deleteMessage: ({ chat_item_id: t, conversation_id: o }) => e.graphQL(d(), { conversation_id: o, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: o, object_id: n }) => e.graphQL(E(), { group_id: o, object_id: n, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(f(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(I(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(B(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: o }) => {
                         const n = new FormData();
                         return n.append("image", o), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": r().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
@@ -164,10 +164,10 @@
                     const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: _, secondaryBar: m, style: g, subtitle: b, title: y, titleDomId: f, titleIconCell: w, titleIconCellSize: C, withBackground: v, withWideContainer: k } = this.props,
                         { isModal: x } = this.context,
                         Z = i ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        B = (function (e, t, o) {
+                        S = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!v, x, !!m);
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: Z, middleControl: h, position: p(u, x, r), rightControl: _, style: g, subtitle: b, title: y, titleDomId: f, titleIconCell: w, titleIconCellSize: C, withBackground: B, withWideContainer: k }), m || null);
+                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: Z, middleControl: h, position: p(u, x, r), rightControl: _, style: g, subtitle: b, title: y, titleDomId: f, titleIconCell: w, titleIconCellSize: C, withBackground: S, withWideContainer: k }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -298,7 +298,7 @@
             const n = function (e, t = {}) {
                 const o = { listUnicodeChar: t.listUnicodeChar ?? void 0, stripListLeaders: t.stripListLeaders ?? !0, gfm: t.gfm ?? !0, useImgAltText: t.useImgAltText ?? !0, abbr: t.abbr ?? !1, replaceLinksWithURL: t.replaceLinksWithURL ?? !1, htmlTagsToSkip: t.htmlTagsToSkip ?? [], throwError: t.throwError ?? !1 };
                 let n = e || "";
-                n = n.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, "");
+                (n = n.replace(/<grok:render[^>]*>[\s\S]*?<\/grok:render>/gi, "")), (n = n.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, ""));
                 try {
                     o.stripListLeaders && (n = o.listUnicodeChar ? n.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, `${o.listUnicodeChar} $1`) : n.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, "$1")),
                         o.gfm &&
@@ -396,9 +396,9 @@
             var k = o(992942),
                 x = o(7022),
                 Z = o(309854),
-                B = o(351686),
-                I = o(822399);
-            const S = y().b327c12a,
+                S = o(351686),
+                B = o(822399);
+            const I = y().b327c12a,
                 E = y().gff1f69e;
             class T extends n.PureComponent {
                 constructor(...e) {
@@ -415,21 +415,21 @@
                         { loadingVariant: h } = this.state,
                         u = (e && h && Math.max(h.width, h.height) >= 680 ? h.uri : null) || T._selectSource(l);
                     if (!u || null === h) return null;
-                    const _ = n.createElement(k.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : S, defaultSource: h && h.uri, draggable: !0, onError: h ? void 0 : o, onLoad: i, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: u, style: [L.img, t] });
+                    const _ = n.createElement(k.Z, { "aria-label": l.ext_alt_text ? l.ext_alt_text : I, defaultSource: h && h.uri, draggable: !0, onError: h ? void 0 : o, onLoad: i, onLoadEnd: this._handleLoadEnd, onLoadStart: this._handleLoadStart, resizeMode: "contain", source: u, style: [L.img, t] });
                     return n.createElement(r.Z, { style: c }, this.state.imageLoading ? P : null, p ? n.createElement(x.Z, { onTap: a, onZoomed: s, resetZoom: d }, _) : _);
                 }
                 static _selectCachedVariant(e) {
                     const t = Z.Z.getOriginalImage(e);
-                    return t ? B.Z.selectLargestCachedVariant(t) : Promise.resolve();
+                    return t ? S.Z.selectLargestCachedVariant(t) : Promise.resolve();
                 }
                 static _selectSource(e) {
                     const t = Z.Z.getOriginalImage(e);
-                    return t && B.Z.selectLargestUrl(t);
+                    return t && S.Z.selectLargestUrl(t);
                 }
             }
             T.defaultProps = { zoomable: !1 };
             const L = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
-                P = n.createElement(I.Z, { ariaValueText: E, indeterminate: !0, style: L.progressBar }),
+                P = n.createElement(B.Z, { ariaValueText: E, indeterminate: !0, style: L.progressBar }),
                 D = T;
             var R = o(310453);
             class M extends n.PureComponent {
@@ -466,8 +466,8 @@
                         [y, w] = n.useState({ width: 0, height: 0 }),
                         { isModal: C } = n.useContext(m.Z),
                         { height: k, width: x } = s.original_info || {},
-                        { height: Z, width: B } = y,
-                        I = C || o ? (0, f.I5)({ mediaWidth: x, mediaHeight: k, containerWidth: B, containerHeight: Z }, o) : V.mediaItem;
+                        { height: Z, width: S } = y,
+                        B = C || o ? (0, f.I5)({ mediaWidth: x, mediaHeight: k, containerWidth: S, containerHeight: Z }, o) : V.mediaItem;
                     return n.createElement(
                         v,
                         {
@@ -503,7 +503,7 @@
                                       onClick: (e) => {
                                           e.stopPropagation();
                                       },
-                                      style: I,
+                                      style: B,
                                   },
                                   "photo" === s.type
                                       ? n.createElement(
@@ -635,15 +635,15 @@
                         k = { backgroundColor: e.rgba, ..._.nk },
                         x = { backgroundColor: e.rgb, ..._.nk },
                         Z = [f.root, v ? k : x, { position: v || d ? "relative" : "fixed" }],
-                        B = p,
-                        I = B?.media_results?.result?.grok_image_annotation;
+                        S = p,
+                        B = S?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
                         n.Fragment,
                         null,
                         n.createElement(r.Z, { onClick: this._handleBackgroundPress, style: Z }, t, o ? n.createElement(r.Z, { pointerEvents: c ? "none" : void 0, style: [f.footerButtons, y && k, y && f.footerButtonsAbsolute, c && f.fadeOut] }, n.createElement(i.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(a.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: c ? "none" : void 0, role: "none", style: [f.buttonWrapper, f.buttonWrapperLeft, _.nk, c && f.fadeOut] }, (t) => n.createElement(s.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(h.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: p || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
                         C ? n.createElement(r.Z, { pointerEvents: c ? "none" : void 0, style: [f.buttonWrapper, f.buttonWrapperRight, _.nk, c && f.fadeOut] }, C) : null,
-                        I
+                        B
                             ? n.createElement(
                                   r.Z,
                                   { style: [f.buttonWrapperBottomCenter, _.nk, c && f.fadeOut] },
@@ -652,7 +652,7 @@
                                       {
                                           icon: n.createElement(u.default, null),
                                           onClick: () => {
-                                              this._openGrok({ text: I.prompt, autoSubmit: !0, source: "post_image_annotation" });
+                                              this._openGrok({ text: B.prompt, autoSubmit: !0, source: "post_image_annotation" });
                                           },
                                           size: "small",
                                           type: "brandFilled",
@@ -717,7 +717,7 @@
                     return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: o, appBarStyle: i, backLocation: a, documentTitle: s, headerless: d, history: h, leftControl: u, middleControl: _, onBackClick: g, rightControl: b, screenType: y, searchBoxOptions: f, secondaryBar: w, showBackButtonOnRoot: C, showSubtitleOnRoot: v, showSubtitleOnWideDetail: k, showTitleOnRoot: x, subtitle: Z, title: B, titleIconCell: I, titleIconCellSize: S, withDetailOpen: E, withSearchBox: T, withTweetButton: L, withWideContainer: P } = this.props,
+                    const { SideNavButton: t, TabBar: o, appBarStyle: i, backLocation: a, documentTitle: s, headerless: d, history: h, leftControl: u, middleControl: _, onBackClick: g, rightControl: b, screenType: y, searchBoxOptions: f, secondaryBar: w, showBackButtonOnRoot: C, showSubtitleOnRoot: v, showSubtitleOnWideDetail: k, showTitleOnRoot: x, subtitle: Z, title: S, titleIconCell: B, titleIconCellSize: I, withDetailOpen: E, withSearchBox: T, withTweetButton: L, withWideContainer: P } = this.props,
                         D = "root" === y,
                         R = "secondaryRoot" === y,
                         M = "primaryDetail" === y,
@@ -725,8 +725,8 @@
                         F = (D && !C) || (M && e),
                         G = (D && !x) || (M && e && !x),
                         W = D ? l.ey : M ? l.vX : void 0,
-                        V = n.createElement(r.Z, { style: m.appBarContainer }, n.createElement(c.ZP, { backLocation: a, fixed: !1, hideBackButton: F, history: h, leftControl: u, middleControl: _, onBackClick: g, rightControl: b, secondaryBar: w, style: i, subtitle: A ? Z : void 0, title: G ? void 0 : B, titleDomId: W, titleIconCell: I, titleIconCellSize: S, withWideContainer: P })),
-                        q = D || (R && E) ? null : n.createElement(p.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: a, documentTitle: s, headerless: d, middleControl: _, onBackClick: g, rightControl: b, searchBoxOptions: f, subtitle: Z, title: B, withSearchBox: T, withTweetButton: L });
+                        V = n.createElement(r.Z, { style: m.appBarContainer }, n.createElement(c.ZP, { backLocation: a, fixed: !1, hideBackButton: F, history: h, leftControl: u, middleControl: _, onBackClick: g, rightControl: b, secondaryBar: w, style: i, subtitle: A ? Z : void 0, title: G ? void 0 : S, titleDomId: W, titleIconCell: B, titleIconCellSize: I, withWideContainer: P })),
+                        q = D || (R && E) ? null : n.createElement(p.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: a, documentTitle: s, headerless: d, middleControl: _, onBackClick: g, rightControl: b, searchBoxOptions: f, subtitle: Z, title: S, withSearchBox: T, withTweetButton: L });
                     return n.createElement(n.Fragment, null, q, V);
                 }
             }
@@ -816,4 +816,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.819b6dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.eae2a2da.js.map

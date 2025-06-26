@@ -1320,6 +1320,11 @@
                 t("a02d1657", function (a) {
                     return "Executing code" + a.ttc_tool_usage_card;
                 }),
+                t("aa9d42c0", "Searching the web"),
+                t("dce1817a", "Searching on 𝕏"),
+                t("f7151564", "Searching users on 𝕏"),
+                t("c43ef93e", "Browsing web page"),
+                t("jb097f6e", "Executing code"),
                 t("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 t("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
                 t("e0481e5a", "Grok is not supported in your country at this time."),
@@ -1913,10 +1918,10 @@
                 t("aefd89c8", "Kewayawa"),
                 t("cafdefb2", "Matakai"),
                 t("dda42cf2", "Columns & Decks"),
-                t("e8a12604", "Samar da wani kan rubutu (na ganin dama)"),
-                t("eabf2209", function (a) {
-                    return "Samar da GIF daga " + a.providerName;
-                }),
+                t("e8a12604", "Samar da wani kan rubutu (na ganin dama)");
+            t("eabf2209", function (a) {
+                return "Samar da GIF daga " + a.providerName;
+            }),
                 t("a613e720", "Kwafi hanya zuwa GIF"),
                 t("aeca1239", function (a) {
                     return "Bold" + a.ttc_rich_text_composer;
@@ -1926,8 +1931,8 @@
                 }),
                 t("ad89b831", function (a) {
                     return "active" + a.ttc_rich_text_composer;
-                });
-            t("jcd5ee8a", "Edit block"),
+                }),
+                t("jcd5ee8a", "Edit block"),
                 t("a8f09fb8", "Delete block"),
                 t("i89195ea", "Divider"),
                 t("da8ac57c", "Edit Caption"),
@@ -2973,13 +2978,13 @@
                 t("a078ff70", "Ana son ganin wasu ƙarin ƙunshiya daga mutanen da kake yi hulɗa da su a cikin wannan zaren magana ne? Fara bincika ƙunshiya daga sabon asusu."),
                 t("cb80300e", "Tsallake zuwa tsarin lokaci na hom"),
                 t("ea5cd098", "Tsallake zuwa na yayi"),
-                t("c67e3fc2", "Tsarin Lokaci na Gida"),
-                t("d601fc20", "Sabo"),
+                t("c67e3fc2", "Tsarin Lokaci na Gida");
+            t("d601fc20", "Sabo"),
                 t("j43f99be", "Relevancy"),
                 t("ad6e11ac", "Sort replies by"),
                 t("b2311b70", "Wannan ba ya samuwa gare ka"),
-                t("j88f27d8", "Mutane da suka dace");
-            t("i31dcd22", "Maƙala"),
+                t("j88f27d8", "Mutane da suka dace"),
+                t("i31dcd22", "Maƙala"),
                 t("e3de2f6f", function (a) {
                     return a.entity + " was added to your Bookmarks";
                 }),
@@ -3895,10 +3900,10 @@
                 }),
                 t("fc56c8b1", function (a) {
                     return "co-host" + o(a.count, "", "s");
-                }),
-                t("iba0f45d", function (a) {
-                    return "speaker" + o(a.count, "", "s");
-                }),
+                });
+            t("iba0f45d", function (a) {
+                return "speaker" + o(a.count, "", "s");
+            }),
                 t("dc066955", function (a) {
                     return "listener" + o(a.count, "", "s");
                 }),
@@ -3908,8 +3913,8 @@
                 t("c3b5b829", function (a) {
                     return a.count + " request" + o(a.count, "", "s");
                 }),
-                t("fe7a1910", "Send invites");
-            t("ic3c757e", "Search for users"),
+                t("fe7a1910", "Send invites"),
+                t("ic3c757e", "Search for users"),
                 t("cd133486", "Gayyaci"),
                 t("f2333850", "Share with people outside of X"),
                 t("cddb8097", "Learn more"),
@@ -4341,7 +4346,6 @@
                 t("db832e38", "Please enable notifications in browser settings"),
                 t("a910cac6", "There was an issue enabling notifications"),
                 t("be30b6ee", "Unstable connection"),
-                t("ge15b488", "Show thoughts"),
                 t("aa7c96bb", function (a) {
                     return "See " + a.numResults + " more";
                 }),
@@ -4357,6 +4361,10 @@
                 }),
                 t("a15d62db", function (a) {
                     return "Thought for " + a.seconds + "s";
+                }),
+                t("f26fc748", "Script"),
+                t("h26fa43f", function (a) {
+                    return a.count + " more";
                 }),
                 t("ha8fbe22", "Generate more images with Premium"),
                 t("d95c232a", "You’ve reached your limit. Upgrade now to generate more."),
@@ -4926,14 +4934,14 @@
                 t("ff95a9cc", "Video ID"),
                 t("a97e358e", "Video Link"),
                 t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview"),
-                t("f19846b2", "Video thumbnail"),
+                t("ba37f6da", "Video overview");
+            t("f19846b2", "Video thumbnail"),
                 t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
-                t("d9f9dec0", "View Space");
-            t("h0c1f37a", "View Space Analytics"),
+                t("d9f9dec0", "View Space"),
+                t("h0c1f37a", "View Space Analytics"),
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
@@ -5878,16 +5886,16 @@
                 t("af781666", "What do people think?"),
                 t("a1f414ee", "Share thoughts"),
                 t("ed88e742", "Kwafi hanyar zuwa Batu"),
-                t("h92fe1be", "Abin takaici, Rubutun Al'umma ba ya samuwa a gare ku a wannan lokacin."),
-                t("f0dc1434", "Rubutun Al'umma a halin yanzu yana samuwa a cikin Amurka kawai."),
+                t("h92fe1be", "Abin takaici, Rubutun Al'umma ba ya samuwa a gare ku a wannan lokacin.");
+            t("f0dc1434", "Rubutun Al'umma a halin yanzu yana samuwa a cikin Amurka kawai."),
                 t("f8fc0b48", "Ƙirƙiri Folda"),
                 t("c14bcdde", "Search Bookmarks"),
                 t("e9c65c4a", "Bookmarks search"),
                 t("b92a21d9", function (a) {
                     return "Babu sakamako na " + a.query;
                 }),
-                t("f191a2ba", " Saitunan bincikenka");
-            t("a068008a", "Folders aren`t loading right now"),
+                t("f191a2ba", " Saitunan bincikenka"),
+                t("a068008a", "Folders aren`t loading right now"),
                 t("f075b0e8", "Gyara Folda"),
                 t("beba2a0e", "Ƙirƙiri sabuwar Foldar Alama"),
                 t("e41c9b4f", function (a) {
@@ -6884,18 +6892,18 @@
                 t("b8cbb51a", "Job Summary"),
                 t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
-                t("d4b6a6e0", "Hasken Furofayil"),
-                t("j2dd3686", "Highlight featured jobs above my posts."),
+                t("d4b6a6e0", "Hasken Furofayil");
+            t("j2dd3686", "Highlight featured jobs above my posts."),
                 t("af1cfd46", "ATS integration"),
                 t("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 t("h99f11fa", "Delete integration"),
                 t("eef1ae76", "Currently connected"),
                 t("a915f5c1", function (a) {
                     return a.ats + " connected";
-                });
-            t("af7286b7", function (a) {
-                return a.percentage + "% off a year of Premium";
-            }),
+                }),
+                t("af7286b7", function (a) {
+                    return a.percentage + "% off a year of Premium";
+                }),
                 t("c924ad84", "Keep videos playing"),
                 t("de750a3c", "Enjoy them even when your phone is locked"),
                 t("he5e87c4", "Boost your replies"),
@@ -7866,15 +7874,7 @@
                 t("b74ff5fc", "Idan ka soke, Rijistarka za ta ƙare kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
                 t("ee9efbc8", "Ci gaba da sokewa"),
                 t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
-                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store."),
-                t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store."),
-                t("i5f14be7", function (a) {
-                    return "Welcome back, " + a.displayName;
-                }),
-                t("a76d58ba", "Ads Analytics"),
-                t("eccd0e1a", "Organization Analytics"),
-                t("deea1708", "Want to view analytics across all your X accounts?"),
-                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics.");
+                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store.");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7913,7 +7913,15 @@
                     u(a, e)
                 );
             }
-            t("gf67aae4", "Upgrade to Full Access"),
+            t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store."),
+                t("i5f14be7", function (a) {
+                    return "Welcome back, " + a.displayName;
+                }),
+                t("a76d58ba", "Ads Analytics"),
+                t("eccd0e1a", "Organization Analytics"),
+                t("deea1708", "Want to view analytics across all your X accounts?"),
+                t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
+                t("gf67aae4", "Upgrade to Full Access"),
                 t("h75e3618", "Include organization"),
                 t("h24a8862", "About this checkbox"),
                 t("c29e3a88", "Select affiliates"),
@@ -8906,16 +8914,16 @@
                     return "Visit " + a.advertiserName;
                 }),
                 t("c67e71aa", "Watch now"),
-                t("a6ada13e", "Shop now"),
-                t("j0f12222", "Ga ƙari"),
+                t("a6ada13e", "Shop now");
+            t("j0f12222", "Ga ƙari"),
                 t("f569f7c8", "Go to website"),
                 t("j0c6772a", "Visit website"),
                 t("f73003aa", "Video will play after ad"),
                 t("b3112b8a", "Tsallake"),
-                t("h6333ad0", "Skip Ad");
-            t("c59da417", function (a) {
-                return "Skip Ad in " + a.seconds;
-            }),
+                t("h6333ad0", "Skip Ad"),
+                t("c59da417", function (a) {
+                    return "Skip Ad in " + a.seconds;
+                }),
                 t("c3c147cf", function (a) {
                     return "Skip " + a.seconds;
                 }),
@@ -13351,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.775d133a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.ed607d3a.js.map
