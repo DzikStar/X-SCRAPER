@@ -200,7 +200,7 @@
             }
         },
         841198: (e, t, n) => {
-            n.d(t, { Be: () => _, Er: () => g, Ev: () => f, WC: () => O, Yf: () => u, t5: () => I });
+            n.d(t, { Be: () => _, Er: () => I, Ev: () => f, WC: () => O, Yf: () => u, t5: () => g });
             n(571372);
             var s = n(166852),
                 r = n(370751),
@@ -242,8 +242,8 @@
                 w = "rweb/slices/INJECT_ITEMS_SLICE",
                 O = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: w, meta: { sliceKey: n, identityFunction: e }, payload: t }),
                 S = "rweb/slices/REMOVE_ITEMS_SLICE",
-                g = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: S, meta: { sliceKey: n, identityFunction: e }, payload: t }),
-                I = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
+                I = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: S, meta: { sliceKey: n, identityFunction: e }, payload: t }),
+                g = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
             i.Z.register({
                 [u]: function (e = d, t) {
                     if (!t) return e;
@@ -342,8 +342,8 @@
                             await T();
                         };
                         await T(!0);
-                    } catch (s) {
-                        (o.translationState = p.H.ERROR), (o.streamedTranslationFetchStatus = d.iF.FAILED), n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), c.abort(), (0, a.ZP)(`Failed to translate tweet:${e} to ${t.userLanguage} - ${String(s)}`);
+                    } catch (t) {
+                        (o.translationState = p.H.ERROR), (o.streamedTranslationFetchStatus = d.iF.FAILED), n(E.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), c.abort(), (0, a.ZP)(`Failed to translate tweet:${e} - ${String(t)}`);
                     }
                 };
             const T = new c.W(2),
@@ -466,4 +466,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.17ec92da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.11f239da.js.map

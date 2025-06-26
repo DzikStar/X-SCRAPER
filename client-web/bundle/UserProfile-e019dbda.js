@@ -702,8 +702,8 @@
                             await m();
                         };
                         await m(!0);
-                    } catch (r) {
-                        (s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(P.updateOrAddOne(e, (0, y.Z)(s))), i.abort(), (0, D.ZP)(`Failed to translate profile:${e} to ${t.userLanguage} - ${String(r)}`);
+                    } catch (t) {
+                        (s.profileTranslation.translationState = u.H.ERROR), (s.profileTranslation.streamedTranslationFetchStatus = p.iF.FAILED), n(P.updateOrAddOne(e, (0, y.Z)(s))), i.abort(), (0, D.ZP)(`Failed to translate profile:${e} - ${String(t)}`);
                     }
                 };
             const I = (e) => {
@@ -1135,4 +1135,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.29ea3e7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e019dbda.1e08525a.js.map
