@@ -226,7 +226,7 @@
                     return e.tier + " " + e.plan + " પર " + e.percentage + "%ની છૂટ";
                 }),
                 n("b28602eb", function (e) {
-                    return "આ ઉનાળામાં  " + e.percentage + "% ની છૂટ મેળવો";
+                    return "આ ઉનાળામાં " + e.percentage + "% ની છૂટ મેળવો";
                 }),
                 n("he77d8e6", "મર્યાદિત સમયની ઓફર"),
                 n("adf3410a", "નવી સુવિધાઓને અનલૉક કરવા માટે સબ્સ્ક્રાઇબ કરો અને જો યોગ્યતા હોય, તો આવકનો હિસ્સો મેળવો."),
@@ -13364,4 +13364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.536abb6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.b39abaca.js.map
