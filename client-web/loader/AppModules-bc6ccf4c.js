@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.AppModules-bc6ccf4c"],
+    ["loader.AppModules-bc6ccf4c", "icons/IconXHeart-js"],
     {
         661810: (t, e, i) => {
             i.d(e, { Z: () => r });
@@ -27,8 +27,8 @@
                 p = i(108362),
                 m = i(661810),
                 g = i(365023),
-                _ = i(292627),
-                f = i(537392),
+                f = i(292627),
+                _ = i(537392),
                 S = i(392237);
             const E = h().af8fa2ae,
                 T = n.createElement(c.default, null);
@@ -117,7 +117,7 @@
                 }
                 render() {
                     const { ariaOnly: t, withoutLayer: e } = this.props;
-                    return t ? this._renderAriaOnly() : n.createElement(f.ZP, null, e ? this._renderContentWithoutLayer : this._renderContentWithLayer);
+                    return t ? this._renderAriaOnly() : n.createElement(_.ZP, null, e ? this._renderContentWithoutLayer : this._renderContentWithLayer);
                 }
                 _renderActionLabel(t) {
                     const { label: e, link: i } = t;
@@ -131,9 +131,22 @@
                     clearTimeout(this._timerId);
                 }
             }
-            y.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: _.Z.ModalToasts };
+            y.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: f.Z.ModalToasts };
             const I = S.default.create((t) => ({ root: { alignItems: "center", backgroundColor: t.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: t.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: t.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: t.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: t.spaces.space12, backgroundColor: t.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: t.borderRadii.small, marginBottom: t.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: t.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: t.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: t.spaces.space12 }, closeButton: { marginStart: t.spaces.space12, paddingHorizontal: t.spaces.space4 } })),
                 w = y;
+        },
+        540820: (t, e, i) => {
+            i.r(e), i.d(e, { default: () => h });
+            var s = i(202784),
+                n = i(890601),
+                o = i(783427),
+                r = i(347101);
+            const a = (t = {}) => {
+                const { direction: e } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [r.Z.root, t.style], viewBox: "0 0 50 50", children: s.createElement("g", null, s.createElement("path", { d: "M25.23 12.24l-2.1-2.1c-4.54-4.54-11.9-4.54-16.45 0h0c-4.54 4.54-4.54 11.9 0 16.45l18.55 18.55 16.45-16.45 2.1-2.1c4.54-4.54 4.54-11.9 0-16.45h0c-4.54-4.54-11.9-4.54-16.45 0l-2.1 2.1h0z", fill: "none", stroke: "#fff", strokeMiterlimit: "10" }), s.createElement("path", { d: "M26.86 23.19l6.39-7.29h-1.51l-5.55 6.33-4.43-6.33h-5.11l6.7 9.57-6.7 7.64h1.51l5.86-6.68 4.68 6.68h5.11l-6.95-9.92zm-2.07 2.37l-.68-.95-5.4-7.58h2.33l4.36 6.12.68.95 5.67 7.95h-2.33l-4.62-6.49z", fill: "#fff" })) }, { writingDirection: e });
+            };
+            a.metadata = { width: 50, height: 50 };
+            const h = a;
         },
         19697: (t, e, i) => {
             i.d(e, { q8: () => c, $i: () => o });
@@ -535,16 +548,16 @@
                     const { height: s, size: n, width: o } = t;
                     return o > i || s > i || n > e;
                 },
-                _ = (t, e) => e || { top: 0, left: 0, width: t.width, height: t.height },
-                f = (t, e) => {
-                    const { height: i, left: s, top: n, width: o } = _(t, e);
+                f = (t, e) => e || { top: 0, left: 0, width: t.width, height: t.height },
+                _ = (t, e) => {
+                    const { height: i, left: s, top: n, width: o } = f(t, e);
                     return !(0 === n && 0 === s && o === t.width && i === t.height);
                 };
             function S(t, e) {
                 const { maxFileSize: i = l, maxDimension: s = d, cropData: n, jpgPixelsPerByteForResize: o } = e || {},
                     r = "image/jpeg" === t.type,
                     a = (t.width * t.height) / t.size;
-                return m(t) || g(t, i, s) || f(t, n) || (r && !!o && a < o);
+                return m(t) || g(t, i, s) || _(t, n) || (r && !!o && a < o);
             }
             const E = (t, e) => {
                     const { height: i, width: s } = t;
@@ -553,7 +566,7 @@
                 T = (t) => ("function" == typeof t.decode ? t.decode() : Promise.resolve());
             function y(t, e) {
                 const { maxFileSize: i = l, maxDimension: n = d, targetQuality: a = u, cropData: c } = e || {},
-                    m = _(t, c);
+                    m = f(t, c);
                 if (!S(t, e)) return Promise.resolve(t.fileHandle);
                 if (!(0, r.DS)(t)) {
                     const t = new o.Z("The provided file is not a valid image", p.FILE_IS_NOT_AN_IMAGE);
@@ -1045,7 +1058,7 @@
                                 const o = [d, r].join("-");
                                 this.timeoutIdMap[o] = setTimeout(() => {
                                     this._sendXhr(t, e, i, s, n, r - 1, a, c, l);
-                                }, f);
+                                }, _);
                             } else E(o);
                         },
                         E = (t) => {
@@ -1070,7 +1083,7 @@
                         y ? t.loaded === t.total && this._bitrateMonitor?.uploadFinish(d, t.total) : ((y = !0), this._bitrateMonitor?.uploadStart(d, t.loaded));
                         const e = t.loaded,
                             i = ((this.uploadedBytes + e) / this.totalBytes) * 100;
-                        if ((this._notifyProgress(i, this.mediaId), e / t.total > _ && !u && ((u = !0), a))) {
+                        if ((this._notifyProgress(i, this.mediaId), e / t.total > f && !u && ((u = !0), a))) {
                             const t = Math.max(1, new Date().getTime() - m.getTime()),
                                 i = this.minSegmentBytes,
                                 s = this.sruParameterOverrides?.maxSegmentBytes;
@@ -1091,8 +1104,8 @@
                 p = 45e3,
                 m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 g = 2,
-                _ = 0.95,
-                f = 1e3,
+                f = 0.95,
+                _ = 1e3,
                 S = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
                 E = Object.freeze({ 0: S.INTERNAL_ERROR, 1: S.INVALID_MEDIA, 2: S.FILE_TOO_LARGE, 3: S.UNSUPPORTED_MEDIA, 4: S.TIMEOUT }),
                 T = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
@@ -1107,4 +1120,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.0421828a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.fa19598a.js.map

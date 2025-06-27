@@ -1374,7 +1374,7 @@
                     return "Automatically translate " + a.language;
                 }),
                 t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("c6ad999b", "languages settings"),
+                t("f9317b98", "language settings"),
                 t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (a) {
                     return "Post from " + a.fullName + " (@" + a.screenName + ")";
@@ -4362,7 +4362,6 @@
                 t("a15d62db", function (a) {
                     return "Thought for " + a.seconds + "s";
                 }),
-                t("f26fc748", "Script"),
                 t("h26fa43f", function (a) {
                     return a.count + " more";
                 }),
@@ -4934,9 +4933,9 @@
                 t("ff95a9cc", "Video ID"),
                 t("a97e358e", "Video Link"),
                 t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview");
-            t("f19846b2", "Video thumbnail"),
-                t("ccd6f4a8", "Video title"),
+                t("ba37f6da", "Video overview"),
+                t("f19846b2", "Video thumbnail");
+            t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
@@ -5886,9 +5885,9 @@
                 t("af781666", "What do people think?"),
                 t("a1f414ee", "Share thoughts"),
                 t("ed88e742", "Kwafi hanyar zuwa Batu"),
-                t("h92fe1be", "Abin takaici, Rubutun Al'umma ba ya samuwa a gare ku a wannan lokacin.");
-            t("f0dc1434", "Rubutun Al'umma a halin yanzu yana samuwa a cikin Amurka kawai."),
-                t("f8fc0b48", "Ƙirƙiri Folda"),
+                t("h92fe1be", "Abin takaici, Rubutun Al'umma ba ya samuwa a gare ku a wannan lokacin."),
+                t("f0dc1434", "Rubutun Al'umma a halin yanzu yana samuwa a cikin Amurka kawai.");
+            t("f8fc0b48", "Ƙirƙiri Folda"),
                 t("c14bcdde", "Search Bookmarks"),
                 t("e9c65c4a", "Bookmarks search"),
                 t("b92a21d9", function (a) {
@@ -6892,9 +6891,9 @@
                 t("b8cbb51a", "Job Summary"),
                 t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 t("b075c68a", "Edit job"),
-                t("d4b6a6e0", "Hasken Furofayil");
-            t("j2dd3686", "Highlight featured jobs above my posts."),
-                t("af1cfd46", "ATS integration"),
+                t("d4b6a6e0", "Hasken Furofayil"),
+                t("j2dd3686", "Highlight featured jobs above my posts.");
+            t("af1cfd46", "ATS integration"),
                 t("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 t("h99f11fa", "Delete integration"),
                 t("eef1ae76", "Currently connected"),
@@ -7874,7 +7873,8 @@
                 t("b74ff5fc", "Idan ka soke, Rijistarka za ta ƙare kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
                 t("ee9efbc8", "Ci gaba da sokewa"),
                 t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
-                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store.");
+                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store."),
+                t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store.");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7913,10 +7913,9 @@
                     u(a, e)
                 );
             }
-            t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store."),
-                t("i5f14be7", function (a) {
-                    return "Welcome back, " + a.displayName;
-                }),
+            t("i5f14be7", function (a) {
+                return "Welcome back, " + a.displayName;
+            }),
                 t("a76d58ba", "Ads Analytics"),
                 t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8914,9 +8913,9 @@
                     return "Visit " + a.advertiserName;
                 }),
                 t("c67e71aa", "Watch now"),
-                t("a6ada13e", "Shop now");
-            t("j0f12222", "Ga ƙari"),
-                t("f569f7c8", "Go to website"),
+                t("a6ada13e", "Shop now"),
+                t("j0f12222", "Ga ƙari");
+            t("f569f7c8", "Go to website"),
                 t("j0c6772a", "Visit website"),
                 t("f73003aa", "Video will play after ad"),
                 t("b3112b8a", "Tsallake"),
@@ -10157,7 +10156,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13359,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.ed607d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.7275e40a.js.map

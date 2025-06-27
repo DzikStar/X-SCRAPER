@@ -162,7 +162,7 @@
                                       className: "fixed z-50 w-full h-[95vh] max-w-[100vw] outline-none border-none bg-transparent flex items-center justify-center",
                                       onClick: c,
                                       children: [
-                                          (0, a.jsx)("div", { className: "w-full h-full max-w-[90vw] max-h-[90vh] flex items-center justify-center bg-transparent", onClick: c, children: "video" === o.type ? (0, a.jsx)("div", { className: "relative w-full h-auto max-w-[800px] max-h-[80vh]", onClick: (e) => e.stopPropagation(), children: (0, a.jsx)("div", { className: "w-full h-full aspect-video", children: (0, a.jsx)(T.q, { src: o.variants?.[0]?.url || o.url, poster: o.previewImage, previewImage: o.variants?.[0]?.contentType || "video/mp4" }) }) }) : "animated_gif" === o.type ? (0, a.jsx)("div", { className: "relative flex items-center justify-center max-h-[85vh]", onClick: (e) => e.stopPropagation(), children: (0, a.jsx)("video", { src: o.url, autoPlay: !0, loop: !0, muted: !0, playsInline: !0, className: "max-w-full max-h-full object-contain", poster: o.previewImage }) }) : (0, a.jsx)("div", { className: "relative flex items-center justify-center max-h-[85vh]", onClick: (e) => e.stopPropagation(), children: (0, a.jsx)("img", { src: o.url, alt: "", className: "max-w-full max-h-full object-contain" }) }) }),
+                                          (0, a.jsx)("div", { className: "w-full h-full max-w-[90vw] max-h-[90vh] flex items-center justify-center bg-transparent", onClick: c, children: "video" === o.type ? (0, a.jsx)("div", { className: "relative w-full h-auto max-w-[800px] max-h-[80vh]", onClick: (e) => e.stopPropagation(), children: (0, a.jsx)("div", { className: "w-full h-full aspect-video", children: (0, a.jsx)(T.q, { src: o.variants?.[0]?.url || o.url, poster: o.previewImage, type: o.variants?.[0]?.contentType || "video/mp4" }) }) }) : "animated_gif" === o.type ? (0, a.jsx)("div", { className: "relative flex items-center justify-center max-h-[85vh]", onClick: (e) => e.stopPropagation(), children: (0, a.jsx)("video", { src: o.url, autoPlay: !0, loop: !0, muted: !0, playsInline: !0, className: "max-w-full max-h-full object-contain", poster: o.previewImage }) }) : (0, a.jsx)("div", { className: "relative flex items-center justify-center max-h-[85vh]", onClick: (e) => e.stopPropagation(), children: (0, a.jsx)("img", { src: o.url, alt: "", className: "max-w-full max-h-full object-contain" }) }) }),
                                           e.length > 1 &&
                                               (0, a.jsxs)(a.Fragment, {
                                                   children: [
@@ -338,12 +338,12 @@
                                 className: "flex items-center gap-3",
                                 children: [
                                     (0, a.jsx)(f.z, {
+                                        "aria-label": P.backToContent,
                                         icon: (0, a.jsx)(u.Z, {}),
                                         onClick: () => {
                                             L.push(e || s);
                                         },
                                         variant: "primaryText",
-                                        "aria-label": P.backToContent,
                                     }),
                                     (0, a.jsx)(p.x, { size: "headline1", weight: "bold", children: P.postAnalytics }),
                                 ],
@@ -406,4 +406,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-07ecdc0a.221d981a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-07ecdc0a.fa0aae4a.js.map

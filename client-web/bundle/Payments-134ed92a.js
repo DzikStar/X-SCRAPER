@@ -419,12 +419,13 @@
                         J = (0, f.lD)({ status: T, reasonCode: F, isViewerSender: L }),
                         X = (0, f.qK)({ transactionType: R, description: v, productCode: N, accountName: O ? (O.accountType ? `${O.accountType} ${O.accountName.name}` : `${O.accountName.name}`) : "", createdAt: w, statusLabel: J }),
                         Y = (0, f._T)({ status: T }),
-                        B = (0, f.Gl)({ status: T }),
-                        G = M?.core?.screen_name,
-                        j = H?.core?.screen_name,
-                        Q = (0, f.DK)({ isViewerSender: L, status: T, transactionType: R }),
-                        ee = (0, f.pQ)({ productCode: N, transactionType: R, account: O });
-                    return s.createElement(i.Z, { key: _, link: `${y.bR}/${_}`, style: [E.dE.listItem, { justifyContent: "space-between" }] }, ee ? s.createElement(Z.KR, { size: "xxLarge", type: ee.iconType, uri: ee.uri }) : V ? s.createElement(I.Z, { size: "xxLarge", user: V }) : W ? (D && "User" === D.__typename ? s.createElement(I.Z, { size: "xxLarge", user: D }) : s.createElement(Z.G7, { size: "xxLarge", type: W.type, uri: W.logo })) : s.createElement(l.default, { size: "xxLarge" }), s.createElement(a.Z, { style: E.dE.listItemFlex, testID: `transaction-item-${_}` }, s.createElement(a.Z, { style: E.dE.listItemContent }, s.createElement(a.Z, { style: E.dE.listItemFlex }, ee ? s.createElement(C.Z, { title: ee.title }) : V ? s.createElement(g.Z, { user: V, weight: "medium" }) : W ? (D && "User" === D.__typename ? s.createElement(g.Z, { user: D, weight: "medium" }) : s.createElement(k.Z, { name: W.name, website: W.website })) : O ? s.createElement(b.Z, { account: O }) : s.createElement(m.ZP, null, "This account is unavailable"), Q && r ? s.createElement(m.ZP, { color: "gray700" }, (0, f.lw)({ status: T, description: v, amount: r, currency: x })) : B ? s.createElement(m.ZP, { color: "gray700" }, J) : X ? s.createElement(m.ZP, { color: "gray700" }, X) : null), Q ? s.createElement(z.Z, { amount: r, challengeId: c, currency: x, isViewerSender: L, receiverScreenName: j, recordId: n, senderScreenName: G, status: T, transactionId: _, transactionType: R, withPrimaryOnly: !0 }) : s.createElement(a.Z, { style: E.dE.alignEnd }, s.createElement(P.Z, { amount: r, currency: x, hasCompleted: Y, size: "body", type: U, weight: "normal" }), s.createElement(d.Z, { style: E.dE.alignEnd, timestamp: parseInt(w, 10) })))));
+                        B = (0, f.Bl)({ status: T }),
+                        G = (0, f.Gl)({ status: T }),
+                        j = M?.core?.screen_name,
+                        Q = H?.core?.screen_name,
+                        ee = (0, f.DK)({ isViewerSender: L, status: T, transactionType: R }),
+                        te = (0, f.pQ)({ productCode: N, transactionType: R, account: O });
+                    return s.createElement(i.Z, { key: _, link: `${y.bR}/${_}`, style: [E.dE.listItem, { justifyContent: "space-between" }] }, te ? s.createElement(Z.KR, { size: "xxLarge", type: te.iconType, uri: te.uri }) : V ? s.createElement(I.Z, { size: "xxLarge", user: V }) : W ? (D && "User" === D.__typename ? s.createElement(I.Z, { size: "xxLarge", user: D }) : s.createElement(Z.G7, { size: "xxLarge", type: W.type, uri: W.logo })) : s.createElement(l.default, { size: "xxLarge" }), s.createElement(a.Z, { style: E.dE.listItemFlex, testID: `transaction-item-${_}` }, s.createElement(a.Z, { style: E.dE.listItemContent }, s.createElement(a.Z, { style: E.dE.listItemFlex }, te ? s.createElement(C.Z, { title: te.title }) : V ? s.createElement(g.Z, { user: V, weight: "medium" }) : W ? (D && "User" === D.__typename ? s.createElement(g.Z, { user: D, weight: "medium" }) : s.createElement(k.Z, { name: W.name, website: W.website })) : O ? s.createElement(b.Z, { account: O }) : s.createElement(m.ZP, null, "This account is unavailable"), ee && r ? s.createElement(m.ZP, { color: "gray700" }, (0, f.lw)({ status: T, description: v, amount: r, currency: x })) : G ? s.createElement(m.ZP, { color: "gray700" }, J) : X ? s.createElement(m.ZP, { color: "gray700" }, X) : null), ee ? s.createElement(z.Z, { amount: r, challengeId: c, currency: x, isViewerSender: L, receiverScreenName: Q, recordId: n, senderScreenName: j, status: T, transactionId: _, transactionType: R, withPrimaryOnly: !0 }) : s.createElement(a.Z, { style: E.dE.alignEnd }, s.createElement(P.Z, { amount: r, currency: x, hasCompleted: Y, hasFailed: B, size: "body", type: U, weight: "normal" }), s.createElement(d.Z, { style: E.dE.alignEnd, timestamp: parseInt(w, 10) })))));
                 },
                 x = s.memo(w);
         },
@@ -512,4 +513,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-134ed92a.3a6de34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-134ed92a.ac23400a.js.map

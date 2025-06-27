@@ -3,13 +3,13 @@
     ["ondemand.XChat-14817e23"],
     {
         125691: (e, t, s) => {
-            s.d(t, { a: () => U });
+            s.d(t, { a: () => z });
             var o = s(552322),
                 n = s(159603),
                 r = s(436995),
                 a = s(887491),
-                l = s(25457),
-                c = s(14313),
+                c = s(25457),
+                l = s(14313),
                 i = s(332161),
                 m = s(993165),
                 d = s(437712),
@@ -22,12 +22,12 @@
                 g = s(607499),
                 C = s(455091),
                 w = s(189599),
-                y = s(731814),
-                E = s(466285),
+                E = s(731814),
+                y = s(466285),
                 j = s(193686),
-                b = s(556160),
-                k = s(517922),
-                R = s(83083),
+                b = s(83083),
+                k = s(556160),
+                R = s(517922),
                 N = s(289752);
             function A({ media: e, showAsStatic: t }) {
                 const { t: s } = (0, C.$G)(),
@@ -47,22 +47,22 @@
                 let s = null;
                 if (e === n.com.x.models.dm.ChatComposerAttachment.Loading) s = (0, o.jsx)("div", { className: "flex items-center justify-center bg-gray-100 rounded-2xl px-4 py-3", children: (0, o.jsx)(j.P, {}) });
                 else if (e instanceof n.com.x.models.dm.ChatComposerAttachment.Media) s = (0, o.jsx)(A, { showAsStatic: !0, media: e });
-                else if (e instanceof n.com.x.models.dm.ChatComposerAttachment.Post) s = e.post ? (0, o.jsx)(b.K, { post: e.post, url: e.url, className: "rounded-2xl" }) : (0, o.jsx)(k.C, {});
+                else if (e instanceof n.com.x.models.dm.ChatComposerAttachment.Post) s = e.post ? (0, o.jsx)(k.K, { post: e.post, url: e.url, className: "rounded-2xl max-w-[300px]" }) : (0, o.jsx)(R.C, {});
                 else {
                     if (e instanceof n.com.x.models.dm.ChatComposerAttachment.UrlCard) return null;
-                    e instanceof n.com.x.models.dm.ChatComposerAttachment.File && (s = (0, o.jsx)(R.Q, { className: "rounded-2xl max-w-[300px]", filename: e.file.originalFilename, fileSize: e.file.fileSize }));
+                    e instanceof n.com.x.models.dm.ChatComposerAttachment.File && (s = (0, o.jsx)(b.Q, { className: "rounded-2xl max-w-[300px]", filename: e.file.originalFilename, fileSize: e.file.fileSize }));
                 }
-                return null === s ? null : (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)("div", { className: "flex flex-col gap-2 pb-2", children: (0, o.jsxs)("div", { className: "relative self-start", children: [s, e.showRemoveButton && (0, o.jsx)("div", { className: "absolute -top-2 -right-2", children: (0, o.jsx)(m.z, { variant: "primaryFilled", size: "xSmall", icon: (0, o.jsx)(a.Z, {}), onClick: t }) })] }) }), (0, o.jsx)("div", { className: "w-full h-px bg-gray-200 mb-2" })] });
+                return null === s ? null : (0, o.jsxs)(o.Fragment, { children: [(0, o.jsx)("div", { className: "flex flex-col gap-2 p-2 overflow-auto max-h-[200px] scrollbar-thin-custom", children: (0, o.jsxs)("div", { className: "relative self-start", children: [s, e.showRemoveButton && (0, o.jsx)("div", { className: "absolute -top-2 -right-2", children: (0, o.jsx)(m.z, { variant: "primaryFilled", size: "xSmall", icon: (0, o.jsx)(a.Z, {}), onClick: t }) })] }) }), (0, o.jsx)("div", { className: "w-full h-px bg-gray-200 ml-2" })] });
             }
             function D({ replyingTo: e, onRemoveReply: t }) {
                 const { t: s } = (0, C.$G)();
                 return (0, o.jsxs)("div", { className: "flex px-2.5 w-full items-center justify-between", children: [(0, o.jsxs)("div", { className: "flex gap-1", children: [e.senderInfo?.user?.displayName ? (0, o.jsx)(i.x, { size: "subtext2", weight: "medium", color: "gray900", children: s("Replying to {name}", { name: e.senderInfo.user.displayName }) }) : null, (0, o.jsx)(i.x, { size: "subtext2", color: "gray500", children: e.textContent })] }), (0, o.jsx)(m.z, { variant: "primaryFilled", size: "xSmall", icon: (0, o.jsx)(a.Z, {}), onClick: t })] });
             }
-            const z = n.com.x.dms.composer.composer.RightButtonState,
-                T = n.com.x.dms.composer.composer.ChatComposerEvent;
-            function U({ component: e, showingMentionPicker: t }) {
+            const T = n.com.x.dms.composer.composer.RightButtonState,
+                U = n.com.x.dms.composer.composer.ChatComposerEvent;
+            function z({ component: e, showingMentionPicker: t }) {
                 const { t: s } = (0, C.$G)(),
-                    [y, E] = (0, p.useState)(!1),
+                    [E, y] = (0, p.useState)(!1),
                     j = (0, x._)(e.composer.state),
                     b = (0, p.useRef)(null),
                     k = (0, p.useRef)(null);
@@ -79,14 +79,20 @@
                         null == j.attachment && k.current && (k.current.value = "");
                     }, [j.attachment]);
                 const A = () => {
-                        j.rightButton === z.SendActive && e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.RightButtonClicked(j.rightButton));
+                        j.rightButton === T.SendActive && e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.RightButtonClicked(j.rightButton));
                     },
-                    U = (0, p.useCallback)(
+                    z = (0, p.useRef)(null),
+                    B = (0, p.useCallback)(() => {
+                        const t = b.current,
+                            s = t?.selectionStart;
+                        s && z.current !== s && ((z.current = s), e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.UserChangedText(t.value, s)));
+                    }, [e.composer]),
+                    O = (0, p.useCallback)(
                         async (t) => {
                             await (0, v.$)(
                                 t,
-                                () => e.composer.onEvent(T.OnFileAttachmentStarted),
-                                (t) => e.composer.onEvent(new T.OnFileAttached(t)),
+                                () => e.composer.onEvent(U.OnFileAttachmentStarted),
+                                (t) => e.composer.onEvent(new U.OnFileAttached(t)),
                             );
                         },
                         [e.composer],
@@ -107,7 +113,7 @@
                                             ref: k,
                                             onChange: async (e) => {
                                                 const t = e.target.files?.[0];
-                                                t && (await U(t));
+                                                t && (await O(t));
                                             },
                                             className: "hidden",
                                             accept: "image/*,video/*,audio/*,.pdf,.doc,.docx,.xls,.xlsx,.txt",
@@ -115,7 +121,7 @@
                                         (0, o.jsx)(m.z, {
                                             size: "large",
                                             disabled: !j.canAddAttachment,
-                                            icon: (0, o.jsx)(l.Z, {}),
+                                            icon: (0, o.jsx)(c.Z, {}),
                                             onClick: () => {
                                                 k.current?.click();
                                             },
@@ -134,7 +140,7 @@
                                                             e.preventDefault();
                                                             const t = s.getAsFile();
                                                             if (!t) continue;
-                                                            await U(t);
+                                                            await O(t);
                                                             break;
                                                         }
                                             },
@@ -145,45 +151,49 @@
                                                     className: "flex items-end gap-2 w-full px-1 overflow-hidden placeholder:text-gray-800 rounded-3xl border border-solid border-gray-200 bg-background/50",
                                                     children: [
                                                         (0, o.jsxs)("div", {
-                                                            className: "flex flex-col justify-end grow py-2",
+                                                            className: "flex flex-col justify-end grow",
                                                             children: [
                                                                 j.attachment ? (0, o.jsx)(S, { attachment: j.attachment, onRemoveAttachment: () => e.composer.onEvent(n.com.x.dms.composer.composer.ChatComposerEvent.DiscardAttachmentClicked) }) : null,
-                                                                (0, o.jsx)(w.o, {
-                                                                    className: "max-h-60 px-2 scrollbar-thin-custom",
-                                                                    multiline: !0,
-                                                                    value: j.currentText,
-                                                                    onKeyDown: (s) => {
-                                                                        if ("ArrowUp" === s.key && !j.hasEnteredAnyText) {
-                                                                            s.preventDefault();
-                                                                            const t = e.state.state.chatItems.items.asJsReadonlyArrayView()[0];
-                                                                            t && t instanceof n.com.x.dms.model.MessageItemSent && e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.StartEditingMessage(t));
-                                                                        }
-                                                                        if (("Escape" === s.key && j.isEditing && (s.preventDefault(), e.composer.onEvent(n.com.x.dms.composer.composer.ChatComposerEvent.DiscardEditDraft)), (!t || ("Enter" !== s.key && "ArrowDown" !== s.key && "ArrowUp" !== s.key)) && ("Enter" !== s.key || s.shiftKey || (s.preventDefault(), A()), ":" === s.key))) {
-                                                                            const t = b.current;
-                                                                            if (t) {
-                                                                                const s = t.selectionStart ?? 0;
-                                                                                (t.value = `${t.value.slice(0, s)}:`), t.setSelectionRange(s + 1, s + 1), e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.UserChangedText(t.value, s + 1));
+                                                                (0, o.jsx)("div", {
+                                                                    className: "py-2 flex items-center",
+                                                                    children: (0, o.jsx)(w.o, {
+                                                                        className: "max-h-60 px-2 scrollbar-thin-custom",
+                                                                        multiline: !0,
+                                                                        value: j.currentText,
+                                                                        onKeyDown: (s) => {
+                                                                            if ("ArrowUp" === s.key && !j.hasEnteredAnyText) {
+                                                                                s.preventDefault();
+                                                                                const t = e.state.state.chatItems.items.asJsReadonlyArrayView()[0];
+                                                                                t && t instanceof n.com.x.dms.model.MessageItemSent && e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.StartEditingMessage(t));
                                                                             }
-                                                                            s.preventDefault(), E(!0);
-                                                                        }
-                                                                    },
-                                                                    onChange: (t) => {
-                                                                        e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.UserChangedText(t.target.value, t.target.selectionStart));
-                                                                    },
-                                                                    placeholder: s("Message"),
-                                                                    ref: b,
+                                                                            if (("Escape" === s.key && j.isEditing && (s.preventDefault(), e.composer.onEvent(n.com.x.dms.composer.composer.ChatComposerEvent.DiscardEditDraft)), (!t || ("Enter" !== s.key && "ArrowDown" !== s.key && "ArrowUp" !== s.key)) && ("Enter" !== s.key || s.shiftKey || (s.preventDefault(), A()), ":" === s.key))) {
+                                                                                const t = b.current;
+                                                                                if (t) {
+                                                                                    const s = t.selectionStart ?? 0;
+                                                                                    (t.value = `${t.value.slice(0, s)}:`), t.setSelectionRange(s + 1, s + 1), e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.UserChangedText(t.value, s + 1));
+                                                                                }
+                                                                                s.preventDefault(), y(!0);
+                                                                            }
+                                                                        },
+                                                                        onChange: (t) => {
+                                                                            e.composer.onEvent(new n.com.x.dms.composer.composer.ChatComposerEvent.UserChangedText(t.target.value, t.target.selectionStart));
+                                                                        },
+                                                                        onSelect: B,
+                                                                        placeholder: s("Message"),
+                                                                        ref: b,
+                                                                    }),
                                                                 }),
                                                             ],
                                                         }),
-                                                        j.rightButton !== z.SendInactive ? (0, o.jsx)(m.z, { className: "mb-1", onClick: A, icon: (0, o.jsx)(c.Z, {}), size: "small", variant: "brandFilled" }) : void 0,
+                                                        j.rightButton !== T.SendInactive ? (0, o.jsx)(m.z, { className: "mb-1", icon: (0, o.jsx)(l.Z, {}), onClick: A, size: "small", variant: "brandFilled" }) : void 0,
                                                         (0, o.jsx)(d.J, {
                                                             borderRadius: "2xLarge",
-                                                            open: y,
+                                                            open: E,
                                                             side: "top",
                                                             align: "start",
                                                             className: "p-0",
                                                             onOpenChange: (e) => {
-                                                                E(e), e || b.current?.focus();
+                                                                y(e), e || b.current?.focus();
                                                             },
                                                             trigger: (0, o.jsx)("div", { className: "absolute w-0 h-0 top-0" }),
                                                             children: (0, o.jsx)(u.h, {
@@ -212,92 +222,70 @@
             }
             function F({ component: e, showingMentionPicker: t, anchor: s }) {
                 const [r, a] = (0, p.useState)(!!t),
-                    [l, c] = (0, p.useState)(0),
+                    [c, l] = (0, p.useState)(0),
                     i = (0, p.useRef)(null);
                 (0, p.useEffect)(() => {
-                    a(!!t), c(0);
-                }, [t]),
-                    (0, p.useEffect)(() => {
-                        if (!r || !s) return;
-                        const o = (s) => {
-                            if (!t) return;
-                            const o = t.asJsReadonlyArrayView();
-                            switch (s.key) {
-                                case "ArrowDown":
-                                    s.preventDefault(), c((e) => Math.min(e + 1, o.length - 1));
-                                    break;
-                                case "ArrowUp":
-                                    s.preventDefault(), c((e) => Math.max(e - 1, 0));
-                                    break;
-                                case "Enter": {
-                                    s.preventDefault();
-                                    const t = o[l];
-                                    t &&
-                                        setTimeout(() => {
-                                            e.onEvent(new n.com.x.dms.chat.DmEvent.MentionPickerUserClicked(t)), a(!1);
-                                        }, 0);
-                                    break;
-                                }
+                    a(!!t), l(0);
+                }, [t]);
+                const m = (0, p.useCallback)(
+                    (t) => {
+                        e.onEvent(new n.com.x.dms.chat.DmEvent.MentionPickerUserClicked(t)), a(!1);
+                    },
+                    [e],
+                );
+                (0, p.useEffect)(() => {
+                    if (!r || !s) return;
+                    const e = (e) => {
+                        if (!t) return;
+                        const s = t.asJsReadonlyArrayView();
+                        switch (e.key) {
+                            case "ArrowDown":
+                                e.preventDefault(), l((e) => Math.min(e + 1, s.length - 1));
+                                break;
+                            case "ArrowUp":
+                                e.preventDefault(), l((e) => Math.max(e - 1, 0));
+                                break;
+                            case "Enter": {
+                                e.preventDefault();
+                                const t = s[c];
+                                t &&
+                                    setTimeout(() => {
+                                        m(t);
+                                    }, 0);
+                                break;
                             }
-                        };
-                        return s.addEventListener("keydown", o), () => s.removeEventListener("keydown", o);
-                    }, [r, s, t, l, e]),
+                        }
+                    };
+                    return s.addEventListener("keydown", e), () => s.removeEventListener("keydown", e);
+                }, [r, s, t, c, m]),
                     (0, p.useEffect)(() => {
                         if (!i.current) return;
                         const e = i.current,
-                            t = e.children[l];
+                            t = e.children[c];
                         if (t) {
                             const s = e.getBoundingClientRect(),
                                 o = t.getBoundingClientRect(),
                                 n = 16;
                             o.top < s.top + n ? (e.scrollTop = t.offsetTop - n) : o.bottom > s.bottom - n && (e.scrollTop = t.offsetTop - s.height + t.offsetHeight + n);
                         }
-                    }, [l]);
-                const m = t?.asJsReadonlyArrayView();
-                return s?.parentElement && m && 0 !== m.length
-                    ? (0, o.jsx)(y.Z, {
-                          node: s.parentElement,
-                          defaultOpen: !0,
-                          onClose: () => a(!1),
-                          closeOnOutsideClick: !0,
-                          closeOnEsc: !0,
-                          children: ({ portal: e }) =>
-                              e(
-                                  (0, o.jsx)("div", {
-                                      ref: i,
-                                      className: "absolute bottom-[calc(100%+1.5rem)] shadow-lg left-8 w-[380px] max-h-[450px] overflow-y-auto scrollbar-thin-custom bg-background rounded-2xl flex flex-col px-3 py-4 border",
-                                      children: m.map((e, t) =>
-                                          (0, o.jsx)(
-                                              E.a,
-                                              {
-                                                  user: e,
-                                                  onClick: () => {
-                                                      a(!1);
-                                                  },
-                                                  className: t === l ? "bg-gray-50" : "",
-                                              },
-                                              e.id.userId,
-                                          ),
-                                      ),
-                                  }),
-                              ),
-                      })
-                    : null;
+                    }, [c]);
+                const d = t?.asJsReadonlyArrayView();
+                return s?.parentElement && d && 0 !== d.length ? (0, o.jsx)(E.Z, { node: s.parentElement, defaultOpen: !0, onClose: () => a(!1), closeOnOutsideClick: !0, closeOnEsc: !0, children: ({ portal: e }) => e((0, o.jsx)("div", { ref: i, className: "absolute bottom-[calc(100%+1.5rem)] shadow-lg left-8 w-[380px] max-h-[450px] overflow-y-auto scrollbar-thin-custom bg-background rounded-2xl flex flex-col px-3 py-4 border", children: d.map((e, t) => (0, o.jsx)(y.a, { user: e, onClick: () => m(e), className: t === c ? "bg-gray-50" : "" }, e.id.userId)) })) }) : null;
             }
         },
         264531: (e, t, s) => {
-            s.d(t, { B$: () => r, BH: () => m, XE: () => i, mp: () => c, tc: () => u, xq: () => d });
+            s.d(t, { B$: () => r, BH: () => m, XE: () => i, mp: () => l, tc: () => u, xq: () => d });
             var o = s(552322),
                 n = s(202784);
             const r = { DEBUG: "DEBUG", INFO: "INFO", WARN: "WARN", ERROR: "ERROR" },
                 a = { path: "/dms", showDebugOptions: !1, logLevel: r.ERROR, bottomBarHeight: 0, rwebElements: void 0 },
-                l = (0, n.createContext)(null),
-                c = ({ children: e, settings: t }) => {
+                c = (0, n.createContext)(null),
+                l = ({ children: e, settings: t }) => {
                     const s = { ...a, ...t };
-                    return (0, o.jsx)(l.Provider, { value: s, children: e });
+                    return (0, o.jsx)(c.Provider, { value: s, children: e });
                 },
                 i = () => {
-                    const e = (0, n.useContext)(l);
+                    const e = (0, n.useContext)(c);
                     if (null === e) throw new Error("useXChatContext must be used within an XChatContextProvider");
                     return e;
                 };
@@ -314,4 +302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.b45c4f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.d82d740a.js.map

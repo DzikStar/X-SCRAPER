@@ -48,17 +48,17 @@
                 i = t(455091),
                 r = t(193686),
                 l = t(993165),
-                o = t(917317),
-                c = t(202784),
+                c = t(917317),
+                o = t(202784),
                 d = t(155369),
                 m = t(379342),
                 u = t(533476);
             const x = ({ groupId: e, token: s }) => {
-                    const [t, i] = (0, c.useState)(null),
+                    const [t, i] = (0, o.useState)(null),
                         l = (0, d.n4)(),
-                        o = (0, m.s)();
+                        c = (0, m.s)();
                     return (
-                        (0, c.useEffect)(() => {
+                        (0, o.useEffect)(() => {
                             const t = new a.com.x.export.CancellationSignal(),
                                 n = l.acceptGroupInviteComponent(
                                     t,
@@ -66,10 +66,10 @@
                                     s,
                                     new a.com.x.dms.acceptinvite.AcceptGroupInviteCallbacks(
                                         () => {
-                                            o.toInbox();
+                                            c.toInbox();
                                         },
                                         () => {
-                                            o.toPinScreen("new");
+                                            c.toPinScreen("new");
                                         },
                                     ),
                                 );
@@ -79,8 +79,8 @@
                                     t.cancel();
                                 }
                             );
-                        }, [l, e, s, o]),
-                        (0, n.jsx)("div", { className: "flex flex-1 w-full h-full transition-colors", children: t ? (0, n.jsx)(p, { component: t, navigate: o }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(r.P, {}) }) })
+                        }, [l, e, s, c]),
+                        (0, n.jsx)("div", { className: "flex flex-1 w-full h-full transition-colors", children: t ? (0, n.jsx)(p, { component: t, navigate: c }) : (0, n.jsx)("div", { className: "h-full flex items-center", children: (0, n.jsx)(r.P, {}) }) })
                     );
                 },
                 p = ({ component: e, navigate: s }) => {
@@ -88,13 +88,13 @@
                         r = (0, u._)(e.state);
                     return (0, n.jsx)("div", {
                         className: "flex flex-1 flex-col items-center justify-center p-4",
-                        children: (0, n.jsxs)(o.Zb, {
+                        children: (0, n.jsxs)(c.Zb, {
                             className: "w-full max-w-md",
                             children: [
-                                (0, n.jsxs)(o.Ol, {
+                                (0, n.jsxs)(c.Ol, {
                                     children: [
-                                        (0, n.jsx)(o.ll, { children: t("Group Invite") }),
-                                        (0, n.jsx)(o.SZ, {
+                                        (0, n.jsx)(c.ll, { children: t("Group Invite") }),
+                                        (0, n.jsx)(c.SZ, {
                                             children: ((e) => {
                                                 switch (e) {
                                                     case a.com.x.dms.acceptinvite.AcceptInviteRequestStatus.Requesting:
@@ -112,7 +112,7 @@
                                         }),
                                     ],
                                 }),
-                                (0, n.jsxs)(o.eW, {
+                                (0, n.jsxs)(c.eW, {
                                     className: "flex flex-col gap-2",
                                     children: [
                                         (0, n.jsx)(l.z, {
@@ -148,8 +148,8 @@
                 i = t(447742),
                 r = t(332161),
                 l = t(993165),
-                o = t(687521),
-                c = t(193686),
+                c = t(687521),
+                o = t(193686),
                 d = t(983706),
                 m = t(202784),
                 u = t(155369),
@@ -210,7 +210,7 @@
                                 }),
                             }),
                             (0, n.jsx)("div", {
-                                children: (0, n.jsx)(o._, {
+                                children: (0, n.jsx)(c._, {
                                     autoFocus: !0,
                                     placeholder: t("Search name or username"),
                                     value: s.query,
@@ -228,7 +228,7 @@
                                 children: [
                                     (0, n.jsx)("div", { className: "flex flex-row flex-wrap gap-1 p-1", children: u.length > 0 && u.map((e) => (0, n.jsx)(p.w, { avatarUrl: e.profileImageUrl, name: e.displayName, onRemove: j(e.id) }, e.id.userIdString)) }),
                                     s.isCallingApi
-                                        ? (0, n.jsx)(c.P, {})
+                                        ? (0, n.jsx)(o.P, {})
                                         : (0, n.jsx)(d.T, {
                                               className: "max-h-[24rem] scrollbar-thin-custom",
                                               items: s.suggestions?.asJsReadonlyArrayView() ?? [],
@@ -258,12 +258,12 @@
                 i = t(289752),
                 r = t(89195),
                 l = t(322506),
-                o = t(332161),
-                c = t(517922),
+                c = t(332161),
+                o = t(517922),
                 d = t(556160);
             const m = a.com.x.models.dm.PostLoadingState;
             function u({ post: e, className: s }) {
-                return e.postState instanceof m.NeedsResolution ? (0, n.jsx)(c.C, {}) : e.postState instanceof m.ResolvedPost ? (0, n.jsx)(d.K, { post: e.postState, url: e.url, className: s }) : (0, n.jsxs)(l.r, { href: e.url, url: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, n.jsx)(o.x, { children: "x.com" }), (0, n.jsx)("div", { className: "text-headline1", children: (0, n.jsx)(r.Z, {}) })] });
+                return e.postState instanceof m.NeedsResolution ? (0, n.jsx)(o.C, {}) : e.postState instanceof m.ResolvedPost ? (0, n.jsx)(d.K, { post: e.postState, url: e.url, className: s }) : (0, n.jsxs)(l.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, n.jsx)(c.x, { children: "x.com" }), (0, n.jsx)("div", { className: "text-headline1", children: (0, n.jsx)(r.Z, {}) })] });
             }
             var x = t(193686),
                 p = t(530361),
@@ -274,14 +274,14 @@
                 let a = null;
                 e instanceof f.UrlCard.Resolved && !s && (a = e.bannerImage && (0, n.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "w-full h-full object-cover", onError: () => t(!0) })), e instanceof f.UrlCard.Loading && (a = (0, n.jsx)("div", { className: "flex items-center justify-center h-32 pt-2 w-full", children: (0, n.jsx)(x.P, {}) }));
                 const i = (0, p.decode)(e.displayTitle || "");
-                return (0, n.jsxs)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm hover:bg-gray-50/50", onClick: () => window.open(e.urlToOpen, "_blank"), children: [a, (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 px-8 py-4", children: [i && (0, n.jsx)(o.x, { weight: "medium", children: i }), (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(o.x, { color: "gray900", size: "subtext2", numberOfLines: 1, children: e.displayHostname }), (0, n.jsx)(r.Z, { className: "text-gray-500 size-4" })] })] })] });
+                return (0, n.jsxs)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm hover:bg-gray-50/50", onClick: () => window.open(e.urlToOpen, "_blank"), children: [a, (0, n.jsxs)("div", { className: "flex flex-col gap-0.5 px-8 py-4", children: [i && (0, n.jsx)(c.x, { weight: "medium", children: i }), (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(c.x, { color: "gray900", size: "subtext2", numberOfLines: 1, children: e.displayHostname }), (0, n.jsx)(r.Z, { className: "text-gray-500 size-4" })] })] })] });
             }
             var v = t(83083),
                 j = t(455091);
             function y({ unifiedCard: e }) {
                 const { t: s } = (0, j.$G)(),
                     t = e.url.startsWith("https://x.com/i/grok/share/") || e.url.startsWith("https://grok.com/share/") ? s("Grok share card") : e.url;
-                return (0, n.jsx)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm hover:bg-gray-50/50", onClick: () => window.open(e.url, "_blank"), children: (0, n.jsx)("div", { className: "flex flex-col gap-0.5 px-8 py-4", children: (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(o.x, { color: "gray900", size: "subtext2", numberOfLines: 1, children: t }), (0, n.jsx)(r.Z, { className: "text-gray-500 size-4" })] }) }) });
+                return (0, n.jsx)("div", { className: "flex flex-col items-center gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100 max-w-sm hover:bg-gray-50/50", onClick: () => window.open(e.url, "_blank"), children: (0, n.jsx)("div", { className: "flex flex-col gap-0.5 px-8 py-4", children: (0, n.jsxs)("div", { className: "flex items-center gap-1", children: [(0, n.jsx)(c.x, { color: "gray900", size: "subtext2", numberOfLines: 1, children: t }), (0, n.jsx)(r.Z, { className: "text-gray-500 size-4" })] }) }) });
             }
             const w = a.com.x.dms.model.MessageItemAttachment,
                 b = a.com.x.dms.chat.DmEvent,
@@ -293,7 +293,7 @@
                 if (e instanceof w.UnifiedCard) return (0, n.jsx)(y, { unifiedCard: e });
                 if (e instanceof w.Media) {
                     if (e instanceof w.Media.FromServer) {
-                        if ((e.uriState instanceof N.AttachmentNeedsResolving && l && t(new b.ResolveAttachment(e.uriState)), e.uriState instanceof N.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, uri: e.type, dimensions: e.dimensions, className: r });
+                        if ((e.uriState instanceof N.AttachmentNeedsResolving && l && t(new b.ResolveAttachment(e.uriState)), e.uriState instanceof N.ResolvedMedia)) return e.type === a.com.x.models.dm.DmMediaType.File ? (0, n.jsx)(v.Q, { filename: e.filename, fileSize: e.fileSize, uriToLoad: e.uriState.uri, className: r }) : (0, n.jsx)(i.Et, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions, className: r });
                         if (e.uriState instanceof N.Resolving) return (0, n.jsx)(i._9, { dimensions: e.dimensions });
                         if (e.uriState === N.FailedToLoad) return (0, n.jsx)(i.DM, { dimensions: e.dimensions });
                     }
@@ -309,25 +309,25 @@
                 i = t(42630),
                 r = t(1357),
                 l = t(455091),
-                o = t(31674),
-                c = t(509597);
+                c = t(31674),
+                o = t(509597);
             function d({ filename: e, fileType: s, fileSize: t, uriToLoad: d, className: m }) {
                 const { t: u } = (0, l.$G)(),
                     x = s || u("Document"),
-                    p = (0, n.jsxs)("div", { className: (0, o.cn)("flex items-center gap-3 bg-gray-100 px-6 py-3 transition-colors", d && "cursor-pointer hover:bg-gray-200", m), children: [(0, n.jsx)("div", { className: "flex-shrink-0", children: (0, n.jsx)(r.Z, { className: "text-gray-500 size-5" }) }), (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(a.x, { weight: "medium", numberOfLines: 1, style: { wordBreak: "break-all" }, children: e }), (0, n.jsxs)(i.S, { children: [(0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: d ? u("Tap to download") : x }), t?.fileSizeMb && (0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: (0, c.s)(t.fileSizeMb) })] })] })] });
+                    p = (0, n.jsxs)("div", { className: (0, c.cn)("flex items-center gap-3 bg-gray-100 px-6 py-3 transition-colors", d && "cursor-pointer hover:bg-gray-200", m), children: [(0, n.jsx)("div", { className: "flex-shrink-0", children: (0, n.jsx)(r.Z, { className: "text-gray-500 size-5" }) }), (0, n.jsxs)("div", { className: "flex flex-col", children: [(0, n.jsx)(a.x, { weight: "medium", numberOfLines: 1, breakText: "all", children: e }), (0, n.jsxs)(i.S, { children: [(0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: d ? u("Tap to download") : x }), t?.fileSizeMb && (0, n.jsx)(a.x, { size: "subtext2", color: "gray700", children: (0, o.s)(t.fileSizeMb) })] })] })] });
                 return d ? (0, n.jsx)("a", { href: d, download: e, target: "_blank", rel: "noopener noreferrer", style: { textDecoration: "none" }, children: p }) : p;
             }
         },
         617092: (e, s, t) => {
-            t.d(s, { K: () => o });
+            t.d(s, { K: () => c });
             var n = t(552322),
                 a = t(332161),
                 i = t(1357),
                 r = t(31674),
                 l = t(509597);
-            function o({ filename: e, fileSize: s, className: t }) {
-                const o = (0, l.s)(s?.fileSizeMb ?? 0);
-                return (0, n.jsxs)("div", { className: (0, r.cn)("flex items-center gap-2 rounded-2xl p-2 border border-gray-200", t), children: [(0, n.jsx)(i.Z, { className: "text-gray-500 size-4" }), (0, n.jsxs)(a.x, { size: "subtext2", numberOfLines: 1, children: [e, s && (0, n.jsxs)("span", { className: "text-gray-700 ml-1", children: ["(", o, ")"] })] })] });
+            function c({ filename: e, fileSize: s, className: t }) {
+                const c = (0, l.s)(s?.fileSizeMb ?? 0);
+                return (0, n.jsxs)("div", { className: (0, r.cn)("flex items-center gap-2 rounded-2xl p-2 border border-gray-200", t), children: [(0, n.jsx)(i.Z, { className: "text-gray-500 size-4" }), (0, n.jsxs)(a.x, { size: "subtext2", numberOfLines: 1, children: [e, s && (0, n.jsxs)("span", { className: "text-gray-700 ml-1", children: ["(", c, ")"] })] })] });
             }
         },
         289752: (e, s, t) => {
@@ -337,18 +337,18 @@
                 i = t(59463),
                 r = t(472275),
                 l = t(193686),
-                o = t(332161),
-                c = t(31674),
+                c = t(332161),
+                o = t(31674),
                 d = t(202784),
                 m = t(17849),
                 u = t(455091);
             function x({ src: e, type: s, dimensions: t, className: i, showAsStatic: l = !1 }) {
-                const { width: o, height: u } = f(t),
+                const { width: c, height: u } = f(t),
                     [x, p] = (0, d.useState)(!1),
                     h = [{ type: "Video" === s.name ? "video" : "Gif" === s.name ? "animated_gif" : "image", src: e, previewImage: e }];
                 return (0, n.jsxs)(n.Fragment, {
                     children: [
-                        "Video" === s.name && l ? (0, n.jsxs)("div", { className: "flex items-center justify-center", onClick: () => p(!0), children: [(0, n.jsx)(a.Z, { className: "absolute" }), (0, n.jsx)("video", { src: e, preload: "metadata", width: `${o}px`, height: `${u}px`, className: i })] }) : "Video" === s.name ? (0, n.jsx)("div", { style: { width: `${o}px`, height: `${u}px` }, className: i, children: (0, n.jsx)(m.q, { src: e, poster: e, type: "video/mp4", autoPlay: !0, muted: !0, loop: !0, playsInline: !0 }) }) : (0, n.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: (0, c.cn)("max-w-[300px] max-h-[400px] cursor-pointer bg-gray-50", i), style: { width: `${o}px`, height: `${u}px` }, onClick: () => p(!0) }),
+                        "Video" === s.name && l ? (0, n.jsxs)("div", { className: "flex items-center justify-center", onClick: () => p(!0), children: [(0, n.jsx)(a.Z, { className: "absolute" }), (0, n.jsx)("video", { src: e, preload: "metadata", width: `${c}px`, height: `${u}px`, className: i })] }) : "Video" === s.name ? (0, n.jsx)("div", { style: { width: `${c}px`, height: `${u}px` }, className: i, children: (0, n.jsx)(m.q, { src: e, poster: e, type: "video/mp4", autoPlay: !0, muted: !0, loop: !0, playsInline: !0 }) }) : (0, n.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: (0, o.cn)("max-w-[300px] max-h-[400px] cursor-pointer bg-gray-50", i), style: { width: `${c}px`, height: `${u}px` }, onClick: () => p(!0) }),
                         (0, n.jsx)(r.e, {
                             mediaItems: h,
                             initialIndex: 0,
@@ -367,7 +367,7 @@
             function h({ dimensions: e }) {
                 const { width: s, height: t } = f(e),
                     { t: a } = (0, u.$G)();
-                return (0, n.jsxs)("div", { className: "bg-gray-50 flex flex-col gap-1.5 items-center justify-center text-gray-700", style: { width: `${s}px`, height: `${t}px` }, children: [(0, n.jsx)(i.Z, {}), (0, n.jsx)(o.x, { color: "gray700", children: a("Failed to load") })] });
+                return (0, n.jsxs)("div", { className: "bg-gray-50 flex flex-col gap-1.5 items-center justify-center text-gray-700", style: { width: `${s}px`, height: `${t}px` }, children: [(0, n.jsx)(i.Z, {}), (0, n.jsx)(c.x, { color: "gray700", children: a("Failed to load") })] });
             }
             function f(e) {
                 const s = e ? e.width / e.height : 1;
@@ -377,17 +377,17 @@
             }
         },
         791266: (e, s, t) => {
-            t.d(s, { C: () => o });
+            t.d(s, { C: () => c });
             var n = t(552322),
                 a = t(159603),
                 i = t(332161),
                 r = t(89195);
             const l = a.com.x.dms.model.MessageItemAttachment;
-            function o({ urlCard: e }) {
+            function c({ urlCard: e }) {
                 let s = null;
                 return e instanceof l.UrlCard.Resolved && (s = e.bannerImage && (0, n.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "max-w-[160px] max-h-[200px] rounded-xl object-cover" })), (0, n.jsxs)("div", { className: "flex flex-row gap-2 cursor-pointer bg-gray-100 transition-colors duration-100 hover:bg-gray-100/50 p-2 rounded-2xl items-center border border-gray-200", onClick: () => window.open(e.urlToOpen, "_blank"), children: [s, (0, n.jsx)(i.x, { weight: s ? "medium" : "normal", size: "subtext1", className: "truncate", children: e.displayHostname || e.urlToOpen }), (0, n.jsx)(r.Z, { className: "text-gray-500 size-3" })] });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.b9ff3f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.1f8de02a.js.map

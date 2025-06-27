@@ -136,7 +136,7 @@
                 const t = (0, r.d)(),
                     { business: a } = (0, o.M1)(),
                     d = (0, u.nO)();
-                return (0, n.jsx)(i.z, { onClick: () => t.push(`${d}/new`), size: "xSmallCompact", variant: "insightsSecondary", icon: (0, n.jsx)(s.Z, { className: "text-gray-700" }), children: (0, n.jsx)("div", { className: (0, l.Z)("text-subtext2 md:text-subtext3 font-normal", { "hidden md:block": !e }), children: a.radar.newQuery }) });
+                return (0, n.jsx)(i.z, { icon: (0, n.jsx)(s.Z, { className: "text-gray-700" }), onClick: () => t.push(`${d}/new`), size: "xSmallCompact", variant: "insightsSecondary", children: (0, n.jsx)("div", { className: (0, l.Z)("text-subtext2 md:text-subtext3 font-normal", { "hidden md:block": !e }), children: a.radar.newQuery }) });
             };
         },
         959638: (e, t, a) => {
@@ -745,4 +745,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-c43041c1.fd9798ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-c43041c1.e089beda.js.map

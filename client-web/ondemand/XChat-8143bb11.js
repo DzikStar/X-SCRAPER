@@ -174,21 +174,21 @@
         780361: (e, t, n) => {
             n.d(t, { V: () => V });
             var s = n(552322),
-                i = n(202784),
-                a = n(159603),
-                o = n(607334),
-                r = n(129558),
-                l = n(666200),
-                c = n(515790),
-                d = n(89195),
-                m = n(25457),
-                x = n(193686),
-                u = n(332161),
-                h = n(959992),
-                v = n(993165),
-                p = n(589259),
-                f = n(351417),
-                g = n(31674),
+                i = n(159603),
+                a = n(607334),
+                o = n(129558),
+                r = n(666200),
+                l = n(515790),
+                c = n(89195),
+                d = n(25457),
+                m = n(193686),
+                x = n(332161),
+                u = n(959992),
+                h = n(993165),
+                v = n(589259),
+                p = n(351417),
+                f = n(31674),
+                g = n(202784),
                 j = n(155369),
                 w = n(379342),
                 C = n(455091),
@@ -206,8 +206,8 @@
                 G = n(951671),
                 T = n(630086),
                 z = n(344851);
-            const B = a.com.x.dms.convinfo,
-                L = a.com.x.dms.ConversationInfoBottomButton;
+            const B = i.com.x.dms.convinfo,
+                L = i.com.x.dms.ConversationInfoBottomButton;
             function Z({ button: e, onEvent: t, buttonStyleSheet: n }) {
                 const i = (function (e, t) {
                         const { t: n } = (0, C.$G)();
@@ -235,44 +235,44 @@
                       })
                     : null;
             }
-            const O = a.com.x.dms.convinfo,
+            const O = i.com.x.dms.convinfo,
                 D = ({ className: e }) => {
                     const { t } = (0, C.$G)();
-                    return (0, s.jsxs)("div", { className: (0, g.cn)("flex flex-col items-center justify-center h-full gap-4", e), children: [(0, s.jsx)(x.P, {}), (0, s.jsx)(u.x, { children: t("Sync is in progress …") })] });
+                    return (0, s.jsxs)("div", { className: (0, f.cn)("flex flex-col items-center justify-center h-full gap-4", e), children: [(0, s.jsx)(m.P, {}), (0, s.jsx)(x.x, { children: t("Sync is in progress …") })] });
                 };
             function V({ id: e }) {
-                const [t, n] = (0, i.useState)(null),
-                    o = (0, j.n4)(),
-                    r = (0, w.s)(),
-                    [l, c] = (0, i.useState)(!1);
+                const [t, n] = (0, g.useState)(null),
+                    a = (0, j.n4)(),
+                    o = (0, w.s)(),
+                    [r, l] = (0, g.useState)(!1);
                 return (
-                    (0, i.useEffect)(() => {
-                        const t = new a.com.x.export.CancellationSignal(),
-                            s = o.convInfoComponent(
+                    (0, g.useEffect)(() => {
+                        const t = new i.com.x.export.CancellationSignal(),
+                            s = a.convInfoComponent(
                                 t,
-                                a.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
+                                i.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
                                 new O.ConversationInfoCallbacks(
                                     () => {
-                                        r.toConversation(e);
+                                        o.toConversation(e);
                                     },
                                     () => {
-                                        r.toInbox();
+                                        o.toInbox();
                                     },
                                     () => {
-                                        r.toEditGroup(e);
+                                        o.toEditGroup(e);
                                     },
                                     () => {},
                                     () => {
-                                        c(!0);
+                                        l(!0);
                                     },
                                     () => {
-                                        r.toParticipants(e);
+                                        o.toParticipants(e);
                                     },
                                     () => {
-                                        r.toVanishingMode(e);
+                                        o.toVanishingMode(e);
                                     },
                                     () => {
-                                        r.toGroupInvite(e);
+                                        o.toGroupInvite(e);
                                     },
                                     () => {},
                                     () => {},
@@ -285,40 +285,40 @@
                                 t.cancel();
                             }
                         );
-                    }, [o, e, r]),
-                    t ? (0, s.jsx)(U, { component: t, showAddGroupParticipants: l, setShowAddGroupParticipants: c }) : null
+                    }, [a, e, o]),
+                    t ? (0, s.jsx)(U, { component: t, showAddGroupParticipants: r, setShowAddGroupParticipants: l }) : null
                 );
             }
             function U({ component: e, setShowAddGroupParticipants: t, showAddGroupParticipants: n }) {
-                const { t: x } = (0, C.$G)(),
-                    g = (0, E._)(e.state);
+                const { t: m } = (0, C.$G)(),
+                    f = (0, E._)(e.state);
                 (0, M.e)(e.toasts);
-                const j = (0, i.useCallback)(
+                const j = (0, g.useCallback)(
                         (t, n) => {
                             e.onEvent(new O.ConversationInfoEvent.ParticipantClicked(t)), window.open(`https://x.com/${n}`, "_blank");
                         },
                         [e],
                     ),
-                    w = (0, i.useCallback)(
+                    w = (0, g.useCallback)(
                         (t, n) => {
                             e.onEvent(new O.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
                         },
                         [e],
                     );
-                if (g.contents === O.ConversationInfoContents.Loading) return (0, s.jsx)(I.g, { className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto", children: (0, s.jsx)(D, {}) });
-                if (!(g.contents instanceof O.ConversationInfoContents.Loaded)) return null;
-                const A = g.contents.convId,
-                    R = A instanceof a.com.x.models.dm.XConversationId.Group,
-                    G = g.contents.metadata.title instanceof a.com.x.dms.model.DmTitleState.OneToOne,
-                    z = g.contents.peopleSection,
-                    B = g.contents.memberRequestSize,
+                if (f.contents === O.ConversationInfoContents.Loading) return (0, s.jsx)(I.g, { className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto", children: (0, s.jsx)(D, {}) });
+                if (!(f.contents instanceof O.ConversationInfoContents.Loaded)) return null;
+                const A = f.contents.convId,
+                    R = A instanceof i.com.x.models.dm.XConversationId.Group,
+                    G = f.contents.metadata.title instanceof i.com.x.dms.model.DmTitleState.OneToOne,
+                    z = f.contents.peopleSection,
+                    B = f.contents.memberRequestSize,
                     L = (t) => {
                         e.onEvent(t);
                     },
-                    V = g.contents.metadata.areNotificationsDisabled,
-                    U = V ? o.Z : r.Z,
-                    $ = x(G ? (V ? "Unmute conversation" : "Mute conversation") : V ? "Unmute group" : "Mute group"),
-                    q = g.contents.metadata.attributes?.defaultTtl?.inWholeMilliseconds;
+                    V = f.contents.metadata.areNotificationsDisabled,
+                    U = V ? a.Z : o.Z,
+                    $ = m(G ? (V ? "Unmute conversation" : "Mute conversation") : V ? "Unmute group" : "Mute group"),
+                    q = f.contents.metadata.attributes?.defaultTtl?.inWholeMilliseconds;
                 return (0, s.jsxs)(I.g, {
                     className: "flex flex-col w-full items-center self-center min-h-dvh md:h-dvh relative overflow-y-auto",
                     children: [
@@ -327,14 +327,14 @@
                         (0, s.jsxs)("div", {
                             className: "w-full sticky left-0 top-0 py-4 px-2 z-10",
                             children: [
-                                (0, s.jsx)(h.r, { className: "-z-[1]", to: "top" }),
+                                (0, s.jsx)(u.r, { className: "-z-[1]", to: "top" }),
                                 (0, s.jsxs)("div", {
                                     className: "flex flex-row justify-between w-full relative",
                                     children: [
                                         (0, s.jsx)("div", {
                                             className: "w-20 shrink-0",
-                                            children: (0, s.jsx)(v.z, {
-                                                icon: (0, s.jsx)(l.Z, {}),
+                                            children: (0, s.jsx)(h.z, {
+                                                icon: (0, s.jsx)(r.Z, {}),
                                                 onClick: (t) => {
                                                     t.stopPropagation(), e.onEvent(O.ConversationInfoEvent.BackButtonClicked);
                                                 },
@@ -349,27 +349,27 @@
                                                     className: "w-16 h-16",
                                                     children: (0, s.jsx)(k.x, {
                                                         avatarSize: "fill",
-                                                        titleState: g.contents.metadata.title,
+                                                        titleState: f.contents.metadata.title,
                                                         onCustomAvatarNeedsResolving: (t) => {
-                                                            e.onEvent(new a.com.x.dms.convinfo.ConversationInfoEvent.ResolveCustomAvatar(t));
+                                                            e.onEvent(new i.com.x.dms.convinfo.ConversationInfoEvent.ResolveCustomAvatar(t));
                                                         },
                                                         isInlineFacepile: !0,
                                                     }),
                                                 }),
-                                                (0, s.jsxs)("div", { className: "flex flex-col items-center", children: [(0, s.jsx)(p.R, { name: g.contents.metadata.title.title, badges: G ? (0, P.r)(g.contents.metadata.title.otherParticipant?.user) : void 0 }), G && g.contents.metadata.title.otherParticipant && (0, s.jsx)(f.Q, { screenName: g.contents.metadata.title.otherParticipant?.user?.screenName ?? "" })] }),
+                                                (0, s.jsxs)("div", { className: "flex flex-col items-center", children: [(0, s.jsx)(v.R, { name: f.contents.metadata.title.title, badges: G ? (0, P.r)(f.contents.metadata.title.otherParticipant?.user) : void 0 }), G && f.contents.metadata.title.otherParticipant && (0, s.jsx)(p.Q, { screenName: f.contents.metadata.title.otherParticipant?.user?.screenName ?? "" })] }),
                                             ],
                                         }),
                                         (0, s.jsx)("div", {
                                             className: "w-20 shrink-0",
                                             children:
-                                                g.contents.showEditGroupAction &&
+                                                f.contents.showEditGroupAction &&
                                                 R &&
-                                                (0, s.jsx)(v.z, {
+                                                (0, s.jsx)(h.z, {
                                                     variant: "brandText",
                                                     onClick: () => {
-                                                        e.onEvent(new a.com.x.dms.convinfo.ConversationInfoEvent.EditGroupClicked(A));
+                                                        e.onEvent(new i.com.x.dms.convinfo.ConversationInfoEvent.EditGroupClicked(A));
                                                     },
-                                                    children: (0, s.jsx)(u.x, { weight: "medium", color: "inherit", numberOfLines: 1, children: x("Edit") }),
+                                                    children: (0, s.jsx)(x.x, { weight: "medium", color: "inherit", numberOfLines: 1, children: m("Edit") }),
                                                 }),
                                         }),
                                     ],
@@ -388,36 +388,36 @@
                                             onClick: () => {
                                                 e.onEvent(V ? O.ConversationInfoEvent.OnUnMuteClicked : O.ConversationInfoEvent.OnMuteClicked);
                                             },
-                                            children: [(0, s.jsx)(U, { className: "w-6 h-6" }), (0, s.jsx)(u.x, { size: "subtext2", weight: "medium", color: "gray700", children: $ })],
+                                            children: [(0, s.jsx)(U, { className: "w-6 h-6" }), (0, s.jsx)(x.x, { size: "subtext2", weight: "medium", color: "gray700", children: $ })],
                                         }),
                                     }),
                                     (0, s.jsxs)("div", {
                                         className: "w-full",
                                         children: [
-                                            (0, s.jsx)(u.x, { weight: "bold", className: "px-4 pb-2", children: x(R ? "Group settings" : "Chat settings") }),
+                                            (0, s.jsx)(x.x, { weight: "bold", className: "px-4 pb-2", children: m(R ? "Group settings" : "Chat settings") }),
                                             (0, s.jsxs)(T.I, {
                                                 children: [
-                                                    !g.contents.metadata.isReadOnly &&
+                                                    !f.contents.metadata.isReadOnly &&
                                                         (0, s.jsx)(T.R, {
-                                                            icon: (0, s.jsx)(c.Z, { className: "h-5 w-5" }),
-                                                            title: x("Disappearing messages"),
+                                                            icon: (0, s.jsx)(l.Z, { className: "h-5 w-5" }),
+                                                            title: m("Disappearing messages"),
                                                             showChevron: !0,
-                                                            value: q ? (0, S.L)(q) : x("Off"),
+                                                            value: q ? (0, S.L)(q) : m("Off"),
                                                             onClick: () => {
                                                                 e.onEvent(O.ConversationInfoEvent.DisappearingMessagesClicked);
                                                             },
                                                         }),
                                                     z?.canAddPeople &&
                                                         (0, s.jsx)(T.R, {
-                                                            icon: (0, s.jsx)(d.Z, { className: "h-5 w-5" }),
+                                                            icon: (0, s.jsx)(c.Z, { className: "h-5 w-5" }),
                                                             onClick: () => {
                                                                 e.onEvent(O.ConversationInfoEvent.GroupInviteClicked);
                                                             },
-                                                            title: x("Group invite link"),
-                                                            value: B ? (0, s.jsx)("div", { className: "flex items-center justify-center w-6 h-6 rounded-full bg-blue-500", children: (0, s.jsx)(u.x, { size: "subtext2", color: "white", weight: "medium", children: B }) }) : g.contents.metadata.attributes?.inviteUrl ? x("On") : x("Off"),
+                                                            title: m("Group invite link"),
+                                                            value: B ? (0, s.jsx)("div", { className: "flex items-center justify-center w-6 h-6 rounded-full bg-blue-500", children: (0, s.jsx)(x.x, { size: "subtext2", color: "white", weight: "medium", children: B }) }) : f.contents.metadata.attributes?.inviteUrl ? m("On") : m("Off"),
                                                             showChevron: !0,
                                                         }),
-                                                    g.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(Z, { button: e, onEvent: L, buttonStyleSheet: "h-5 w-5" }, e.name)),
+                                                    f.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(Z, { button: e, onEvent: L, buttonStyleSheet: "h-5 w-5" }, e.name)),
                                                 ],
                                             }),
                                         ],
@@ -431,26 +431,26 @@
                                                       (0, s.jsxs)("div", {
                                                           className: "flex flex-row items-center justify-between px-4 pb-2",
                                                           children: [
-                                                              (0, s.jsx)(u.x, { weight: "bold", children: x("Members") }),
+                                                              (0, s.jsx)(x.x, { weight: "bold", children: m("Members") }),
                                                               z.showMoreUsersLink &&
                                                                   (0, s.jsx)("button", {
                                                                       type: "button",
                                                                       onClick: () => {
                                                                           e.onEvent(O.ConversationInfoEvent.TotalNumMembersClicked);
                                                                       },
-                                                                      children: (0, s.jsx)(u.x, { color: "primary", children: x("See all ({number})", { number: z.showMoreUsersLink + z.participants.asJsReadonlyArrayView().length }) }),
+                                                                      children: (0, s.jsx)(x.x, { color: "primary", children: m("See all ({number})", { number: z.showMoreUsersLink + z.participants.asJsReadonlyArrayView().length }) }),
                                                                   }),
                                                           ],
                                                       }),
                                                       (0, s.jsxs)(T.I, {
                                                           children: [
-                                                              g.contents.peopleSection.canAddPeople &&
+                                                              f.contents.peopleSection.canAddPeople &&
                                                                   (0, s.jsx)(T.R, {
-                                                                      icon: (0, s.jsx)(m.Z, { className: "h-5 w-5" }),
+                                                                      icon: (0, s.jsx)(d.Z, { className: "h-5 w-5" }),
                                                                       onClick: () => {
                                                                           e.onEvent(O.ConversationInfoEvent.AddPeopleClicked);
                                                                       },
-                                                                      title: x("Add members"),
+                                                                      title: m("Add members"),
                                                                   }),
                                                               (0, s.jsx)(y.b, { handleParticipantClicked: j, handleParticipantMenuButtonClicked: w, participants: z.participants.asJsReadonlyArrayView(), menuItemsMap: z.menuItems.asJsReadonlyMapView() }),
                                                           ],
@@ -459,7 +459,7 @@
                                               }),
                                           })
                                         : null,
-                                    g.isLoading && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(h.r, { to: "bottom", strength: 1 }), (0, s.jsx)(D, { className: "z-10" })] }),
+                                    f.isLoading && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)(u.r, { to: "bottom", strength: 1 }), (0, s.jsx)(D, { className: "z-10" })] }),
                                 ],
                             }),
                         }),
@@ -656,7 +656,7 @@
                                 style: { transitionTimingFunction: "cubic-bezier(0,0.5,0,0.5)" },
                                 children: [
                                     t.isUnreadByMe && !r ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(c.Z, { width: "14", height: "14", className: "text-blue-500" }) }) : (0, s.jsx)("div", { className: "w-[14px] flex-shrink-0" }),
-                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(p.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (o ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(h.R, { name: t.metadata.title.title, badges: b ? (0, j.r)(t.metadata.title.otherParticipant?.user) : void 0, screenName: b ? (t.metadata.title.otherParticipant?.user?.screenName ?? "") : void 0 }), y ? (0, s.jsx)(G.y, { typingIndicatorItem: y, showAvatar: !1, className: "px-0 min-h-10" }) : (0, s.jsx)(v.x, { color: t.isUnreadByMe ? "text" : "gray700", weight: t.isUnreadByMe ? "medium" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(R, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsx)("div", { className: "flex flex-row gap-1 items-center h-5", children: (0, s.jsx)(v.x, { size: "subtext1", color: "gray700", children: C && (0, s.jsx)(f.Q, { timestamp: C }) }) }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(d.Z, { width: "14", height: "14", className: "text-gray-300" }), l && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === T.Read && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === T.Unread && (0, s.jsx)(u.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
+                                    (0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: "flex items-center grow gap-3 rounded-lg  transition-colors duration-100", children: [(0, s.jsx)(p.x, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new i.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 flex-row flex self-stretch py-2 pb-3 border-b " + (o ? "border-gray-50" : "border-transparent"), children: [(0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(h.R, { name: t.metadata.title.title, badges: b ? (0, j.r)(t.metadata.title.otherParticipant?.user) : void 0, screenName: b ? (t.metadata.title.otherParticipant?.user?.screenName ?? "") : void 0 }), y && !a ? (0, s.jsx)(G.y, { typingIndicatorItem: y, showAvatar: !1, className: "px-0 min-h-10" }) : (0, s.jsx)(v.x, { color: t.isUnreadByMe ? "text" : "gray700", weight: t.isUnreadByMe ? "medium" : "normal", numberOfLines: 2, className: "break-all min-h-[2.5rem]", children: (0, s.jsx)(R, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsx)("div", { className: "flex flex-row gap-1 items-center h-5", children: (0, s.jsx)(v.x, { size: "subtext1", color: "gray700", children: C && (0, s.jsx)(f.Q, { timestamp: C }) }) }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.isMuted && (0, s.jsx)(d.Z, { width: "14", height: "14", className: "text-gray-300" }), l && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === T.Read && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-300" }), t.showReadByOthersIndicator === T.Unread && (0, s.jsx)(u.Z, { width: "14", height: "14", className: "text-gray-300" })] })] })] })] }),
                                 ],
                             }),
                         });
@@ -669,27 +669,25 @@
                         [m, x] = (0, r.useState)(!0),
                         u = (0, r.useRef)(null),
                         h = (0, r.useRef)({ start: 0, end: 0 }),
-                        v = (0, r.useMemo)(() => [...n].sort((e) => (e.isPinned ? -1 : 1)), [n]),
-                        p = (0, r.useCallback)((e) => (i?.convId.id === e ? i : null), [i]),
-                        f = (0, r.useCallback)(() => {
+                        v = (0, r.useCallback)((e) => (i?.convId.id === e ? i : null), [i]),
+                        p = (0, r.useCallback)(() => {
                             const t = u.current;
                             if (!t) return;
-                            const { start: n, end: s } = h.current,
-                                i = t.findStartIndex(),
-                                a = t.findEndIndex();
-                            if (n !== i || s !== a) {
-                                const t = L.fromJsArray(v.slice(i, a + 1).map((e) => e.conversationId));
-                                e(new B.VisibleConversationIdsChanged(t)), (h.current = { start: i, end: a });
+                            const { start: s, end: i } = h.current,
+                                a = t.findStartIndex(),
+                                o = t.findEndIndex();
+                            if (s !== a || i !== o) {
+                                const t = L.fromJsArray(n.slice(a, o + 1).map((e) => e.conversationId));
+                                e(new B.VisibleConversationIdsChanged(t)), (h.current = { start: a, end: o });
                             }
-                        }, [e, v.slice]),
-                        g = (0, r.useCallback)(
-                            (n, i) => {
-                                const a = n.conversationId.id === d,
-                                    r = i + 1 < v.length && v[i + 1]?.conversationId.id === d;
+                        }, [e, n.slice]),
+                        f = (0, r.useCallback)(
+                            (i, a) => {
+                                const r = i.conversationId.id === d,
+                                    l = a + 1 < n.length && n[a + 1]?.conversationId.id === d;
                                 return (0, s.jsx)(
                                     o.E.div,
                                     {
-                                        whileHover: { scale: 1.01, transition: { ease: "easeInOut" } },
                                         whileTap: { scale: 0.99, transition: { ease: "easeInOut" } },
                                         onViewportEnter: () => {
                                             x(!0);
@@ -699,17 +697,17 @@
                                         },
                                         layout: m,
                                         onClick: () => {
-                                            const t = new B.RowClicked(n.conversationId, n.preview?.lastReadSequenceNumber);
+                                            const t = new B.RowClicked(i.conversationId, i.preview?.lastReadSequenceNumber);
                                             e(t);
                                         },
-                                        children: (0, s.jsx)(z, { previewWithMetadata: n, actionsDialog: p(n.preview?.conversationId.id || ""), typingIndicatorItemState: c(n.conversationId), onEvent: e, isSelected: a && !t, withSeparator: !r && !a, isSearch: t, isPinned: n.isPinned }),
+                                        children: (0, s.jsx)(z, { previewWithMetadata: i, actionsDialog: v(i.preview?.conversationId.id || ""), typingIndicatorItemState: c(i.conversationId), onEvent: e, isSelected: r && !t, withSeparator: !l && !r, isSearch: t, isPinned: i.isPinned }),
                                     },
-                                    t ? n.conversationId.id + n.preview?.latestMessagePreview.sequenceNumber : n.conversationId.id,
+                                    t ? i.conversationId.id + i.preview?.latestMessagePreview.sequenceNumber : i.conversationId.id,
                                 );
                             },
-                            [d, e, v, p, t, c, m],
+                            [d, e, n, v, t, c, m],
                         );
-                    return (0, s.jsx)(a.T, { api: u, onScroll: f, items: v, renderItem: g, className: "!h-full scrollbar-thin-custom pb-1", ssrCount: 10 });
+                    return (0, s.jsx)(a.T, { api: u, onScroll: p, items: n, renderItem: f, className: "!h-full scrollbar-thin-custom pb-1", ssrCount: 10 });
                 };
         },
         450683: (e, t, n) => {
@@ -729,31 +727,31 @@
         897995: (e, t, n) => {
             n.d(t, { Y: () => l });
             var s = n(552322),
-                i = n(993165),
-                a = n(332161),
-                o = n(887491),
-                r = n(159603);
+                i = n(159603),
+                a = n(887491),
+                o = n(993165),
+                r = n(332161);
             const l = ({ component: e, dialogParams: t }) =>
                 (0, s.jsxs)("div", {
                     className: "p-5 rounded-2xl border-2 border-gray-100 bg-gray-0 absolute bottom-4 left-4 right-4 flex flex-col gap-2 z-10",
                     children: [
-                        (0, s.jsx)(i.z, {
+                        (0, s.jsx)(o.z, {
                             className: "absolute top-2.5 right-2.5",
                             variant: "primaryText",
-                            icon: (0, s.jsx)(o.Z, {}),
+                            icon: (0, s.jsx)(a.Z, {}),
                             onClick: () => {
-                                e.onEvent(r.com.x.dms.convlist.ConversationListEvent.DismissBottomDialog);
+                                e.onEvent(i.com.x.dms.convlist.ConversationListEvent.DismissBottomDialog);
                             },
                         }),
-                        (0, s.jsx)(a.x, { size: "body", weight: "bold", children: "Daily Verification" }),
-                        (0, s.jsx)(a.x, { size: "body", children: "Enter your 4-digit PIN so we can keep things secure and make sure you remember it." }),
-                        (0, s.jsx)(i.z, {
+                        (0, s.jsx)(r.x, { size: "body", weight: "bold", children: "Daily Verification" }),
+                        (0, s.jsx)(r.x, { size: "body", children: "Enter your 4-digit PIN so we can keep things secure and make sure you remember it." }),
+                        (0, s.jsx)(o.z, {
                             className: "h-11",
                             variant: "primaryFilled",
                             onClick: () => {
-                                e.onEvent(new r.com.x.dms.convlist.ConversationListEvent.ClickPinReminderDialog(t));
+                                e.onEvent(new i.com.x.dms.convlist.ConversationListEvent.ClickPinReminderDialog(t));
                             },
-                            children: (0, s.jsx)(a.x, { size: "body", weight: "bold", color: "background", children: "Enter PIN" }),
+                            children: (0, s.jsx)(r.x, { size: "body", weight: "bold", color: "background", children: "Enter PIN" }),
                         }),
                     ],
                 });
@@ -834,44 +832,44 @@
         996016: (e, t, n) => {
             n.d(t, { b: () => f });
             var s = n(552322),
-                i = n(589259),
-                a = n(332161),
-                o = n(350311),
-                r = n(336984),
-                l = n(318063),
-                c = n(993165),
-                d = n(429804),
-                m = n(951671),
-                x = n(384226),
-                u = n(421018),
-                h = n(159603),
-                v = n(455091);
+                i = n(455091),
+                a = n(589259),
+                o = n(332161),
+                r = n(350311),
+                l = n(336984),
+                c = n(318063),
+                d = n(993165),
+                m = n(429804),
+                x = n(951671),
+                u = n(384226),
+                h = n(421018),
+                v = n(159603);
             const p = ({ handleParticipantMenuButtonClicked: e, menuItems: t, participant: n }) => {
                     if (!t || 0 === t.length) return null;
-                    const i = t
+                    const a = t
                         .map((t) =>
                             ((e, t, n) => {
-                                const i = () => {
+                                const a = () => {
                                         n(e, t);
                                     },
-                                    { t: a } = (0, v.$G)();
+                                    { t: o } = (0, i.$G)();
                                 switch (e) {
-                                    case h.com.x.dms.ParticipantMenuItem.AddAsAdmin:
-                                        return { text: a("Add as admin"), icon: (0, s.jsx)(d.Z, {}), onClick: i };
-                                    case h.com.x.dms.ParticipantMenuItem.RemoveAsAdmin:
-                                        return { text: a("Remove as admin"), icon: (0, s.jsx)(m.Z, {}), destructive: !0, onClick: i };
-                                    case h.com.x.dms.ParticipantMenuItem.RemoveFromGroup:
-                                        return { text: a("Remove from group"), icon: (0, s.jsx)(x.Z, {}), destructive: !0, onClick: i };
+                                    case v.com.x.dms.ParticipantMenuItem.AddAsAdmin:
+                                        return { text: o("Add as admin"), icon: (0, s.jsx)(m.Z, {}), onClick: a };
+                                    case v.com.x.dms.ParticipantMenuItem.RemoveAsAdmin:
+                                        return { text: o("Remove as admin"), icon: (0, s.jsx)(x.Z, {}), destructive: !0, onClick: a };
+                                    case v.com.x.dms.ParticipantMenuItem.RemoveFromGroup:
+                                        return { text: o("Remove from group"), icon: (0, s.jsx)(u.Z, {}), destructive: !0, onClick: a };
                                 }
                                 return null;
                             })(t, n, e),
                         )
                         .filter((e) => !!e);
-                    return (0, s.jsx)(l.P, {
-                        items: i,
-                        trigger: (0, s.jsx)(c.z, {
+                    return (0, s.jsx)(c.P, {
+                        items: a,
+                        trigger: (0, s.jsx)(d.z, {
                             className: "justify-self-end",
-                            icon: (0, s.jsx)(u.Z, { className: "text-gray-700" }),
+                            icon: (0, s.jsx)(h.Z, { className: "text-gray-700" }),
                             variant: "primaryText",
                             color: "gray700",
                             backgroundColor: "gray700",
@@ -881,12 +879,12 @@
                         }),
                     });
                 },
-                f = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, participants: n, menuItemsMap: l, isOneToOne: c }) => {
-                    const { t: d } = (0, v.$G)();
+                f = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, participants: n, menuItemsMap: c, isOneToOne: d }) => {
+                    const { t: m } = (0, i.$G)();
                     return (0, s.jsx)(s.Fragment, {
                         children: n.map((n) => {
-                            const m = l.get(n.userId)?.asJsReadonlyArrayView();
-                            return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-3 px-4 items-center rounded-xl bg-gray-0 hover:bg-gray-50 cursor-pointer", onClick: () => e(n.userId, n.user?.screenName ?? ""), children: [(0, s.jsxs)("div", { className: "flex-1 flex gap-3 items-center py-3", children: [(0, s.jsx)(o.s, { url: n.user?.profileImageUrl, size: "medium" }), (0, s.jsx)(i.R, { name: n.user?.displayName || "", badges: (0, r.r)(n.user), weight: "normal" }), n.isAdmin && !c && (0, s.jsx)("div", { className: "p-1 rounded-sm bg-gray-200", children: (0, s.jsx)(a.x, { size: "subtext3", children: d("Admin") }) })] }), (0, s.jsx)(p, { participant: n, menuItems: m, handleParticipantMenuButtonClicked: t })] }, n.userId.userIdString);
+                            const i = c.get(n.userId)?.asJsReadonlyArrayView();
+                            return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-3 px-4 items-center rounded-xl bg-gray-0 hover:bg-gray-50 cursor-pointer", onClick: () => e(n.userId, n.user?.screenName ?? ""), children: [(0, s.jsxs)("div", { className: "flex-1 flex gap-3 items-center py-3", children: [(0, s.jsx)(r.s, { url: n.user?.profileImageUrl, size: "medium" }), (0, s.jsx)(a.R, { name: n.user?.displayName || "", badges: (0, l.r)(n.user), weight: "normal" }), n.isAdmin && !d && (0, s.jsx)("div", { className: "p-1 rounded-sm bg-gray-200", children: (0, s.jsx)(o.x, { size: "subtext3", children: m("Admin") }) })] }), (0, s.jsx)(p, { participant: n, menuItems: i, handleParticipantMenuButtonClicked: t })] }, n.userId.userIdString);
                         }),
                     });
                 };
@@ -975,4 +973,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-8143bb11.ede04e5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-8143bb11.af9ae01a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Display", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
+    ["bundle.Display", "loader.AudioDock", "bundle.Live", "loader.AudioContextVoiceMedia"],
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => p });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: h, secondaryBar: g, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: Z, withWideContainer: x } = this.props,
-                        { isModal: E } = this.context,
-                        v = n ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: h, secondaryBar: g, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: v, withWideContainer: Z } = this.props,
+                        { isModal: x } = this.context,
+                        E = n ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         T = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!Z, E, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: v, middleControl: p, position: u(m, E, a), rightControl: h, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: T, withWideContainer: x }), g || null);
+                        })(!!v, x, !!g);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: E, middleControl: p, position: u(m, x, a), rightControl: h, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: T, withWideContainer: Z }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -71,12 +71,12 @@
                     const k = () => {
                             m.scribe({ component: f, action: "click", element: "card" });
                         },
-                        { backgroundcolor: C, buttonSize: w, cardWidth: Z, marginbottom: x, textcolor: E } = u ?? {},
-                        v = C ? n.default.theme.colors[C] : n.default.theme.colors.gray0,
-                        T = E ? n.default.theme.colors[E] : n.default.theme.colors.gray900,
-                        B = x ? n.default.theme.spaces[x] : n.default.theme.spaces.space16,
+                        { backgroundcolor: C, buttonSize: w, cardWidth: v, marginbottom: Z, textcolor: x } = u ?? {},
+                        E = C ? n.default.theme.colors[C] : n.default.theme.colors.gray0,
+                        T = x ? n.default.theme.colors[x] : n.default.theme.colors.gray900,
+                        B = Z ? n.default.theme.spaces[Z] : n.default.theme.spaces.space16,
                         _ = { [b.MarchMadness]: { header: g.header, description: g.description, legalDisclaimer: g.legalDisclaimer, buttonText: g.buttonText, image: g.image } }[o];
-                    return p ? r.createElement(i.Z, { interactiveStyles: null, link: t, onPress: k, style: y.bannerContainer }, r.createElement(s.Z, { resizeMode: "contain", source: { uri: "light" === n.default.theme.paletteName ? _.image.lightMode : _.image.darkMode }, style: { height: 85 } })) : r.createElement(a.Z, { style: [y.card, { backgroundColor: v }, { maxWidth: Z }, { marginBottom: B }], testID: "popupCard" }, r.createElement(a.Z, { style: e ? y.horizontalContent : y.verticalContent }, r.createElement(a.Z, { style: e ? y.textContainer : null }, r.createElement(l.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, _.header), r.createElement(l.ZP, { size: "subtext1", style: [y.popupDescription, { color: T }] }, _.description, " ", e ? null : _.legalDisclaimer)), r.createElement(a.Z, { style: y.buttonContainer }, r.createElement(c.ZP, { backgroundColor: "light" === n.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: k, size: "medium", style: [y.popupButton, { width: w }] }, _.buttonText), e && r.createElement(l.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: T }] }, _.legalDisclaimer))));
+                    return p ? r.createElement(i.Z, { interactiveStyles: null, link: t, onPress: k, style: y.bannerContainer }, r.createElement(s.Z, { resizeMode: "contain", source: { uri: "light" === n.default.theme.paletteName ? _.image.lightMode : _.image.darkMode }, style: { height: 85 } })) : r.createElement(a.Z, { style: [y.card, { backgroundColor: E }, { maxWidth: v }, { marginBottom: B }], testID: "popupCard" }, r.createElement(a.Z, { style: e ? y.horizontalContent : y.verticalContent }, r.createElement(a.Z, { style: e ? y.textContainer : null }, r.createElement(l.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, _.header), r.createElement(l.ZP, { size: "subtext1", style: [y.popupDescription, { color: T }] }, _.description, " ", e ? null : _.legalDisclaimer)), r.createElement(a.Z, { style: y.buttonContainer }, r.createElement(c.ZP, { backgroundColor: "light" === n.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: k, size: "medium", style: [y.popupButton, { width: w }] }, _.buttonText), e && r.createElement(l.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: T }] }, _.legalDisclaimer))));
                 },
                 y = n.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -199,10 +199,10 @@
                 k = d().d8680056,
                 C = d().eed02406,
                 w = d().j59f0b94,
-                Z = d().b81aaad8,
-                x = d().c7044880,
-                E = { [b.xSmall]: k, [b.small]: C, [b.normal]: w, [b.large]: Z, [b.xLarge]: x },
-                v = [k, C, w, Z, x],
+                v = d().b81aaad8,
+                Z = d().c7044880,
+                x = { [b.xSmall]: k, [b.small]: C, [b.normal]: w, [b.large]: v, [b.xLarge]: Z },
+                E = [k, C, w, v, Z],
                 T = d().e46dffa0,
                 B = i.default.create((e) => ({ sliderContainer: { alignItems: "center", flexDirection: "row", padding: e.spaces.space16 }, slider: { flexGrow: 1, marginHorizontal: e.spaces.space20 } })),
                 _ = g((e) => {
@@ -214,7 +214,7 @@
                             },
                             [t, o, n],
                         );
-                    return r.createElement(u.Z, { themeItem: "textSize" }, (e) => r.createElement(a.Z, { style: B.sliderContainer }, r.createElement(s.ZP, { size: "subtext2" }, "Aa"), r.createElement(a.Z, { style: B.slider }, r.createElement(l.Z, { accessibilityLabelValueText: E[i.default.theme.scale], "aria-label": T, autoFocus: e, hoverLabels: v, max: y, min: 0, onChange: c, value: f.indexOf(i.default.theme.scale), withMarkers: !0 })), r.createElement(s.ZP, { size: "headline1" }, "Aa")));
+                    return r.createElement(u.Z, { themeItem: "textSize" }, (e) => r.createElement(a.Z, { style: B.sliderContainer }, r.createElement(s.ZP, { size: "subtext2" }, "Aa"), r.createElement(a.Z, { style: B.slider }, r.createElement(l.Z, { accessibilityLabelValueText: x[i.default.theme.scale], "aria-label": T, autoFocus: e, hoverLabels: E, max: y, min: 0, onChange: c, value: f.indexOf(i.default.theme.scale), withMarkers: !0 })), r.createElement(s.ZP, { size: "headline1" }, "Aa")));
                 });
         },
         564297: (e, t, o) => {
@@ -350,7 +350,7 @@
                 f = p(g);
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => Z, KV: () => b, LI: () => B, SC: () => w, Vt: () => k, ed: () => _, op: () => x });
+            o.d(t, { $f: () => v, KV: () => b, LI: () => B, SC: () => w, Vt: () => k, ed: () => _, op: () => Z });
             var r = o(202784),
                 a = o(190286),
                 n = o(111677),
@@ -370,8 +370,8 @@
                 k = i().e133be4e,
                 C = i().f5f01af6,
                 w = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                Z = (e) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: g({ screenName: e }) }),
-                x = ({ blockAction: e, blockSubtext: t, source: o, testID: r, unblockAction: a, unblockSubtext: n, user: i }) => {
+                v = (e) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: g({ screenName: e }) }),
+                Z = ({ blockAction: e, blockSubtext: t, source: o, testID: r, unblockAction: a, unblockSubtext: n, user: i }) => {
                     let s,
                         l = c.Z;
                     const u = B(i);
@@ -391,13 +391,13 @@
                                     i.blocking ? a(u) : e(u);
                                 });
                     }
-                    return { confirmation: u, onClick: l, testID: r, shortcutKey: s, Icon: E(i.blocking), text: T(i), subText: v({ user: i, blockSubtext: t, unblockSubtext: n }) };
+                    return { confirmation: u, onClick: l, testID: r, shortcutKey: s, Icon: x(i.blocking), text: T(i), subText: E({ user: i, blockSubtext: t, unblockSubtext: n }) };
                 },
-                E = (e) => (e ? l.default : s.default),
-                v = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                x = (e) => (e ? l.default : s.default),
+                E = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
                 T = (e) => (e.blocking ? y({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
                 B = (e) => {
-                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: f({ screenName: t }), label: k, text: C }) : Z(e.screen_name);
+                    return e.blocking ? ((t = e.screen_name), { confirmButtonType: "primary", headline: f({ screenName: t }), label: k, text: C }) : v(e.screen_name);
                     var t;
                 },
                 _ = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
@@ -520,10 +520,10 @@
                 k = d().ec5880e6,
                 C = d().babfa32c,
                 w = d().a2a2f98e,
-                Z = d().b4a361c0,
-                x = d().ce494bb4,
-                E = d().c783d45e,
-                v = d().h306a358;
+                v = d().b4a361c0,
+                Z = d().ce494bb4,
+                x = d().c783d45e,
+                E = d().h306a358;
             class T extends r.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -537,7 +537,7 @@
                 render() {
                     const { isModal: e } = this.context,
                         { history: t } = this.props;
-                    return r.createElement(u.Z, { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? C : f }, r.createElement(a.Z, { style: _.root }, r.createElement(n.ZP, { align: "center", color: "gray700", style: [_.description, !e && _.descriptionMarginTop] }, this._isWelcomeFlow ? Z : k), r.createElement(a.Z, { style: [_.tweetExample, e && _.tweetExampleMarginHorizontal] }, r.createElement(g.Z, { withTweetBorder: !0 })), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, x), r.createElement(a.Z, { style: _.component }, r.createElement(p.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, E), r.createElement(a.Z, { style: [_.component, _.colorPicker] }, r.createElement(h.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, v), r.createElement(a.Z, { style: [_.component, _.backgroundPicker] }, r.createElement(m.Z, null)), r.createElement(a.Z, { style: _.buttonContainer }, r.createElement(i.ZP, { onPress: this._handleBackClick, type: "brandFilled" }, this._isWelcomeFlow ? w : y))));
+                    return r.createElement(u.Z, { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? C : f }, r.createElement(a.Z, { style: _.root }, r.createElement(n.ZP, { align: "center", color: "gray700", style: [_.description, !e && _.descriptionMarginTop] }, this._isWelcomeFlow ? v : k), r.createElement(a.Z, { style: [_.tweetExample, e && _.tweetExampleMarginHorizontal] }, r.createElement(g.Z, { withTweetBorder: !0 })), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, Z), r.createElement(a.Z, { style: _.component }, r.createElement(p.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, x), r.createElement(a.Z, { style: [_.component, _.colorPicker] }, r.createElement(h.Z, null)), r.createElement(n.ZP, { color: "gray700", style: _.componentTitle, weight: "bold" }, E), r.createElement(a.Z, { style: [_.component, _.backgroundPicker] }, r.createElement(m.Z, null)), r.createElement(a.Z, { style: _.buttonContainer }, r.createElement(i.ZP, { onPress: this._handleBackClick, type: "brandFilled" }, this._isWelcomeFlow ? w : y))));
                 }
             }
             T.contextType = s.Z;
@@ -639,10 +639,10 @@
                             d.Z.generate({ backgroundColor: n.default.theme.colors.transparent, color: n.default.theme.colors.gray700, withFocusWithinFocusRing: !0 });
                         }, []),
                         w = r.useMemo(() => (o === p.CV.dark ? s.Vi : o === p.CV.darker ? s.SR : s.vh), [o]),
-                        Z = r.useMemo(() => ({ backgroundColor: w.cellBackground, borderColor: h ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: h ? "2px" : "1px" }), [h, w.cellBackground]),
-                        x = r.useMemo(() => ({ backgroundColor: h ? n.default.theme.colors.primary : n.default.theme.colors.transparent, borderColor: h ? n.default.theme.colors.primary : w.gray300 }), [h, w.gray300]),
-                        E = r.useMemo(() => (h ? k : C), [h, k, C]),
-                        v = r.useMemo(() => ({ color: w.text }), [w.text]);
+                        v = r.useMemo(() => ({ backgroundColor: w.cellBackground, borderColor: h ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: h ? "2px" : "1px" }), [h, w.cellBackground]),
+                        Z = r.useMemo(() => ({ backgroundColor: h ? n.default.theme.colors.primary : n.default.theme.colors.transparent, borderColor: h ? n.default.theme.colors.primary : w.gray300 }), [h, w.gray300]),
+                        x = r.useMemo(() => (h ? k : C), [h, k, C]),
+                        E = r.useMemo(() => ({ color: w.text }), [w.text]);
                     function T(e) {
                         f && !h && f(o);
                     }
@@ -650,7 +650,7 @@
                         r.useEffect(() => {
                             t && y.current && y.current.focus();
                         }, [t, y]),
-                        r.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [m.root, Z] }, (t) => r.createElement(r.Fragment, null, r.createElement(u.Z, { focusable: !1, interactiveStyles: E, interactivityState: t, role: "radio", style: m.radioOuterCircle }, r.createElement(a.Z, { style: [m.radioInnerCircle, x] }, h ? r.createElement(i.default, { style: m.checkMark }) : null)), r.createElement(a.Z, { "aria-hidden": !0, style: m.text }, r.createElement(l.ZP, { numberOfLines: 1, style: v, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: h, name: b, style: m.nativeControl, type: "radio", onChange: T, ref: y })))
+                        r.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [m.root, v] }, (t) => r.createElement(r.Fragment, null, r.createElement(u.Z, { focusable: !1, interactiveStyles: x, interactivityState: t, role: "radio", style: m.radioOuterCircle }, r.createElement(a.Z, { style: [m.radioInnerCircle, Z] }, h ? r.createElement(i.default, { style: m.checkMark }) : null)), r.createElement(a.Z, { "aria-hidden": !0, style: m.text }, r.createElement(l.ZP, { numberOfLines: 1, style: E, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: h, name: b, style: m.nativeControl, type: "radio", onChange: T, ref: y })))
                     );
                 };
             function g({ "aria-label": e, autoFocus: t, layout: o, onChange: n, options: i, value: s }) {
@@ -730,7 +730,7 @@
             const b = n.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-around" }, flexWrap: { flexWrap: "wrap" } })),
                 f = g;
         },
-        76388: (e, t, o) => {
+        648539: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var r = o(202784),
                 a = o(890601),
@@ -738,7 +738,7 @@
                 i = o(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -761,4 +761,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.751868ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.aa8fe15a.js.map

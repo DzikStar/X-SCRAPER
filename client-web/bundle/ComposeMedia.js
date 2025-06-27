@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.ComposeMedia", "icons/IconCropSquare-js", "icons/IconDraggable-js"],
+    ["bundle.ComposeMedia", "icons/IconFilm-js", "icons/IconSearchPlusStroke-js"],
     {
         625661: (e, t, i) => {
             i.d(t, { ZP: () => h });
@@ -184,18 +184,18 @@
                 x = i(195560);
             const S = (0, k.Z)({
                     loader: () =>
-                        Promise.all([i.e("icons.25"), i.e("icons.22"), i.e("icons.6"), i.e("icons.2"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.0"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([i.e("icons.21"), i.e("icons.16"), i.e("icons.10"), i.e("icons.4"), i.e("modules.common-e907d115"), i.e("modules.common-e019dbda"), i.e("icons.28"), i.e("modules.audio-6107ac1a"), i.e("modules.audio-b953418a"), i.e("modules.audio-7c51e6a7"), i.e("modules.audio-04db59e9"), i.e("modules.audio-76583d6c"), i.e("modules.audio-b7a8a5fb"), i.e("modules.audio-51f6e793"), i.e("modules.audio-e019dbda"), i.e("modules.audio-262c94d4"), i.e("modules.audio-c6fe4ea4"), i.e("icons.24"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), i.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), i.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), i.e("loader.MediaPreviewVideoPlayer")])
                             .then(i.bind(i, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
                     renderPlaceholder: (e, t) => a.createElement(x.Z, { hasError: e, onRetry: t }),
                 }),
                 T = h().gd80afba,
                 F = h().j322caee,
-                R = h().abd845fe,
-                D = h().df1b0708,
-                L = h().cd959e5c,
-                V = h().e68b09b4,
-                z = h().add55c98,
+                V = h().abd845fe,
+                R = h().df1b0708,
+                D = h().cd959e5c,
+                z = h().e68b09b4,
+                L = h().add55c98,
                 A = h().f350cf46;
             class G extends a.Component {
                 constructor(...e) {
@@ -249,7 +249,7 @@
                         S = !!i.mediaFile?.isVideo;
                     return a.createElement(r.ZP, null, ({ windowWidth: t }) => {
                         const i = void 0 !== E ? E : !v.Z.isTwoColumnLayout(t);
-                        return a.createElement(o.Z, { "aria-label": e || z, onLayout: this._handleMediaPreviewLayout, role: h, style: [y, W.cursor, k && W.gifPlayButton, B] }, this._renderPreview(), k && !Z && a.createElement(n.Z, { "aria-label": D, onPress: this._handleGifClick, size: "small" }), x ? a.createElement(I.ZP, { type: I.AM }) : null, C && !S ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(o.Z, { style: W.editMedia }, w ? a.createElement(l.ZP, { "aria-label": A, hoverLabel: { label: A }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && M ? a.createElement(l.ZP, { "aria-label": F, icon: a.createElement(m.default, { style: W.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? a.createElement(l.ZP, { "aria-label": T, icon: i ? a.createElement(b.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : R) : null), _ ? a.createElement(l.ZP, { "aria-label": L, hoverLabel: { label: V }, icon: a.createElement(g.default, null), onPress: u, size: "small", style: W.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return a.createElement(o.Z, { "aria-label": e || L, onLayout: this._handleMediaPreviewLayout, role: h, style: [y, W.cursor, k && W.gifPlayButton, B] }, this._renderPreview(), k && !Z && a.createElement(n.Z, { "aria-label": R, onPress: this._handleGifClick, size: "small" }), x ? a.createElement(I.ZP, { type: I.AM }) : null, C && !S ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(o.Z, { style: W.editMedia }, w ? a.createElement(l.ZP, { "aria-label": A, hoverLabel: { label: A }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && M ? a.createElement(l.ZP, { "aria-label": F, icon: a.createElement(m.default, { style: W.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? a.createElement(l.ZP, { "aria-label": T, icon: i ? a.createElement(b.default, null) : void 0, onPress: d, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : V) : null), _ ? a.createElement(l.ZP, { "aria-label": D, hoverLabel: { label: z }, icon: a.createElement(g.default, null), onPress: u, size: "small", style: W.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -572,7 +572,7 @@
             i.d(t, { Z: () => a });
             const a = i(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        390587: (e, t, i) => {
+        926981: (e, t, i) => {
             i.r(t), i.d(t, { default: () => l });
             var a = i(202784),
                 o = i(890601),
@@ -580,12 +580,12 @@
                 n = i(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M18.5 2h-13C4.12 2 3 3.12 3 4.5v15C3 20.88 4.12 22 5.5 22h13c1.38 0 2.5-1.12 2.5-2.5v-15C21 3.12 19.88 2 18.5 2zM7 20H5.5c-.28 0-.5-.22-.5-.5v-2h2V20zm0-4.5H5V13h2v2.5zM7 11H5V8.5h2V11zm0-4.5H5v-2c0-.28.22-.5.5-.5H7v2.5zM15 20H9v-7h6v7zm0-9H9V4h6v7zm4 8.5c0 .28-.22.5-.5.5H17v-2.5h2v2zm0-4h-2V13h2v2.5zm0-4.5h-2V8.5h2V11zm0-4.5h-2V4h1.5c.28 0 .5.22.5.5v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        678773: (e, t, i) => {
+        158910: (e, t, i) => {
             i.r(t), i.d(t, { default: () => l });
             var a = i(202784),
                 o = i(890601),
@@ -593,11 +593,11 @@
                 n = i(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm8-1V7.5h2V10h2.5v2H12v2.5h-2V12H7.5v-2H10z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ComposeMedia.a2da026a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ComposeMedia.fd9b49ea.js.map

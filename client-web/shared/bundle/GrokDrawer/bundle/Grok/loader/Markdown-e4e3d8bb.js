@@ -8,34 +8,32 @@
             const n = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.5"),
-                        a.e("icons.25"),
-                        a.e("icons.22"),
-                        a.e("icons.6"),
-                        a.e("icons.4"),
-                        a.e("icons.9"),
-                        a.e("icons.15"),
-                        a.e("icons.7"),
-                        a.e("icons.3"),
-                        a.e("icons.20"),
+                        a.e("icons.21"),
+                        a.e("icons.16"),
+                        a.e("icons.10"),
+                        a.e("icons.19"),
+                        a.e("icons.1"),
+                        a.e("icons.0"),
+                        a.e("icons.8"),
                         a.e("icons.2"),
-                        a.e("icons.27"),
-                        a.e("icons.13"),
+                        a.e("icons.23"),
+                        a.e("icons.3"),
+                        a.e("icons.15"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.0"),
+                        a.e("icons.9"),
+                        a.e("icons.7"),
                         a.e("icons.24"),
-                        a.e("icons.17"),
-                        a.e("icons.12"),
-                        a.e("icons.11"),
-                        a.e("icons.26"),
+                        a.e("icons.29"),
+                        a.e("icons.13"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -57,8 +55,8 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         a.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                        a.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
                         a.e("loader.WideLayout-6107ac1a"),
-                        a.e("loader.WideLayout-2e365fe7"),
                         a.e("loader.WideLayout-9f4db315"),
                     ]).then(a.bind(a, 616753)),
             });
@@ -106,7 +104,7 @@
                 l = a(250781);
             const s =
                 ({ analytics: e, conversationKey: t }) =>
-                ({ analysisEntityId: a, editingMessageId: s, fileAttachments: d, mode: c, onStart: m, returnCitations: u, returnSearchResults: p = !0, features: h = { eagerTweets: !0, serverHistory: !0 }, text: g, trendPromptIdStr: y, imageGenerationCount: f, isReasoning: b, isDeepsearch: w, personalityId: D }) =>
+                ({ analysisEntityId: a, editingMessageId: s, fileAttachments: d, mode: c, onStart: m, returnCitations: u, returnSearchResults: p = !0, features: h = { eagerTweets: !0, serverHistory: !0 }, text: g, trendPromptIdStr: y, imageGenerationCount: b, isReasoning: f, isDeepsearch: w, personalityId: D }) =>
                 async (c, y, { api: M, featureSwitches: I }) => {
                     const v = !n.ZP.isTwitterApp() && I.isTrue("responsive_web_grok_api_enable_grok_host"),
                         k = (0, o.bD)(t),
@@ -123,13 +121,13 @@
                     const U = Z[x];
                     let L = { promptSource: "NATURAL", action: "EDIT" };
                     "IMAGE_EDIT" === U?.promptMetadata?.promptSource ? (L = { ...U.promptMetadata, action: "EDIT" }) : "FOLLOW_UP" === U?.promptMetadata?.promptSource && "IMAGE_GEN" === U?.promptMetadata?.properties?.messageType && (L = { promptSource: "FOLLOW_UP", action: "INPUT", properties: { followUpType: "MODIFY", messageType: "IMAGE_GEN" } });
-                    const S = [...Z.slice(0, x).map((e) => ({ message: e.message, fileAttachments: e.fileAttachments, sender: e.sender, isDeepsearch: e.isDeepsearch, isReasoning: e.isReasoning })), { sender: U.sender, fileAttachments: d, message: g, isDeepsearch: w, isReasoning: b }],
+                    const S = [...Z.slice(0, x).map((e) => ({ message: e.message, fileAttachments: e.fileAttachments, sender: e.sender, isDeepsearch: e.isDeepsearch, isReasoning: e.isReasoning })), { sender: U.sender, fileAttachments: d, message: g, isDeepsearch: w, isReasoning: f }],
                         T = (0, o.en)(y());
                     let z = {};
                     T && T.toolOverrides && (z = T.toolOverrides);
-                    const F = { responses: S, systemPromptName: A, conversationId: E, grokModelOptionId: _, resampleResponseId: U.userChatItemId, returnSearchResults: p, returnCitations: u, requestFeatures: h, ...(a && 1 === S.length ? { analysisEntityId: a } : void 0), promptMetadata: L, imageGenerationCount: f, enableSideBySide: !P && !C, isDeepsearch: w, isReasoning: b, personalityId: D, toolOverrides: z, deepsearchArgs: w ? T?.deepsearchArgs : void 0 };
+                    const F = { responses: S, systemPromptName: A, conversationId: E, grokModelOptionId: _, resampleResponseId: U.userChatItemId, returnSearchResults: p, returnCitations: u, requestFeatures: h, ...(a && 1 === S.length ? { analysisEntityId: a } : void 0), promptMetadata: L, imageGenerationCount: b, enableSideBySide: !P && !C, isDeepsearch: w, isReasoning: f, personalityId: D, toolOverrides: z, deepsearchArgs: w ? T?.deepsearchArgs : void 0 };
                     null != k.selectCurrentResponseMessage(y()) && (await c((0, i.I)({ analytics: e, conversationKey: t }))), g && c(k.commitEditChanges(s, g, d)), (0, r.dd)(e, { conversationLength: S.length, isDeepsearch: F.isDeepsearch || void 0, isReasoning: F.isReasoning || void 0 }), m?.();
-                    const O = I.isTrue("responsive_web_grok_enable_add_response_keepalive") && (w || b),
+                    const O = I.isTrue("responsive_web_grok_enable_add_response_keepalive") && (w || f),
                         j = I.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
                     (0, l.D)({ grokModule: k, requestBody: F, analytics: e, dispatch: c, api: M, eventTag: "rewrite", flags: { enableGrokApiHost: v, enableKeepalive: O, numRetries: j }, featureSwitches: I });
                 };
@@ -184,8 +182,8 @@
                 h = a(111677),
                 g = a.n(h),
                 y = a(47086),
-                f = a(161335),
-                b = a(149170),
+                b = a(161335),
+                f = a(149170),
                 w = a(837020),
                 D = a(189700),
                 M = a(839090),
@@ -194,8 +192,8 @@
                 k = a(457566),
                 E = a(774038);
             const P = ({ status: e, expectedChunks: t = [0.25, 0.5, 0.75, 1], intermediateResults: a = [], url: n, aspectRatio: r, isModerated: l, withActionRow: s, openMediaToEdit: c, onImageSize: m, mediaId: u, mediaUrl: p, allMediaIds: h, allMediaUrls: g }) => {
-                    const [y, f] = o.useState(0),
-                        b = A({ expectedChunks: t, progress: y }),
+                    const [y, b] = o.useState(0),
+                        f = A({ expectedChunks: t, progress: y }),
                         w = o.useMemo(
                             () =>
                                 [...a]
@@ -208,7 +206,7 @@
                                             : o.createElement(d.Z, {
                                                   key: `progress_${e.progress}`,
                                                   onLoad: () => {
-                                                      f((t) => Math.max(t, e.progress));
+                                                      b((t) => Math.max(t, e.progress));
                                                   },
                                                   resizeMode: "cover",
                                                   source: e.imageUrl,
@@ -218,8 +216,8 @@
                             [a, y, r],
                         ),
                         D = a.length > 0 && y > 0,
-                        M = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transitionProperty: "height, mask", transitionDuration: `${b}ms`, transitionTimingFunction: 1 === y ? "ease-in" : "linear", zIndex: 50, mask: y < 1 ? "linear-gradient(\n        to bottom,\n        rgba(0, 0, 0, 1) 0%,\n        rgba(0, 0, 0, 1) calc(100% - 5px),\n        rgba(0, 0, 0, 0) 100%\n      )" : void 0 }), [y, b]),
-                        I = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transform: "translate3d(0,0,0)", transitionProperty: "height", transitionDuration: b / 1.5 + "ms", transitionTimingFunction: "linear", filter: "blur(70px) contrast(2)", zIndex: 10 }), [y, b]),
+                        M = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transitionProperty: "height, mask", transitionDuration: `${f}ms`, transitionTimingFunction: 1 === y ? "ease-in" : "linear", zIndex: 50, mask: y < 1 ? "linear-gradient(\n        to bottom,\n        rgba(0, 0, 0, 1) 0%,\n        rgba(0, 0, 0, 1) calc(100% - 5px),\n        rgba(0, 0, 0, 0) 100%\n      )" : void 0 }), [y, f]),
+                        I = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transform: "translate3d(0,0,0)", transitionProperty: "height", transitionDuration: f / 1.5 + "ms", transitionTimingFunction: "linear", filter: "blur(70px) contrast(2)", zIndex: 10 }), [y, f]),
                         [P, R] = o.useState(0);
                     return (
                         o.useEffect(() => {
@@ -294,8 +292,8 @@
                             style: [h && { justifyContent: "center" }, ue, A || re || ie ? z.noClick : void 0, J],
                         }),
                         C ? (!V || V.startsWith("blob:") ? o.createElement(i.Z, { style: [z.inputAttachmentPreview, z.inputAttachmentPreviewPlaceholder, { width: X ?? le, height: k ?? le }] }) : o.createElement(d.Z, { resizeMode: "cover", source: H || V, style: [z.inputAttachmentPreview, { width: X ?? le, height: k ?? le }] })) : o.createElement(P, { allMediaIds: e, allMediaUrls: t, aspectRatio: a, intermediateResults: E, isModerated: A, mediaId: T, mediaUrl: F, onImageSize: B, openMediaToEdit: W, resizeMode: "cover", status: K, url: H || V, withActionRow: $ && q.isHovered }),
-                        re ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(y.default, { color: c.default.theme.colors.gray600, style: z.errorIcon }), me ? o.createElement(m.ZP, { size: "body", style: z.errorMessage }, x) : null) : A || ie ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(f.default, { color: c.default.theme.colors.text, style: z.errorIconLarge })) : null,
-                        o.createElement(i.Z, { style: z.imageButtonContainer }, l ? o.createElement(u.ZP, { "aria-label": U, hoverLabel: L, icon: o.createElement(b.default, null), onClick: de, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, ae && ee ? o.createElement(M.Z, { onDismiss: ce }, o.createElement(r.Z, { onPress: ce }, O)) : null, G && (Q || (!Q && ne)) ? o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(w.default, null), onClick: pe, size: "xSmall", style: z.removeBtn, type: "onMediaDominantColorFilled" }) : null),
+                        re ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(y.default, { color: c.default.theme.colors.gray600, style: z.errorIcon }), me ? o.createElement(m.ZP, { size: "body", style: z.errorMessage }, x) : null) : A || ie ? o.createElement(i.Z, { style: z.errorContainer }, o.createElement(b.default, { color: c.default.theme.colors.text, style: z.errorIconLarge })) : null,
+                        o.createElement(i.Z, { style: z.imageButtonContainer }, l ? o.createElement(u.ZP, { "aria-label": U, hoverLabel: L, icon: o.createElement(f.default, null), onClick: de, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, ae && ee ? o.createElement(M.Z, { onDismiss: ce }, o.createElement(r.Z, { onPress: ce }, O)) : null, G && (Q || (!Q && ne)) ? o.createElement(u.ZP, { "aria-label": R, hoverLabel: _, icon: o.createElement(w.default, null), onClick: pe, size: "xSmall", style: z.removeBtn, type: "onMediaDominantColorFilled" }) : null),
                     );
                 }
                 if (C) {
@@ -400,8 +398,8 @@
                 h = a(952793),
                 g = a(128225),
                 y = a(725516),
-                f = a(125363),
-                b = a(270172),
+                b = a(125363),
+                f = a(270172),
                 w = a(601576),
                 D = a(654917),
                 M = a(246277);
@@ -413,7 +411,7 @@
                 C = l().d1d3a41a,
                 A = ["ton.x.com", "ton.twitter.com", "pbs.twimg.com"];
             function R({ allFileAttachments: e, allIntermediateImageResults: t, aspectRatio: a, centerJustify: i, extraMenuItems: l, file: R, height: Z, index: _, intermediateResults: x, isAborted: U, isImageActionsEnabled: L = !0, isInputAttachmentPreview: S, isLoading: T, messageId: z, onClick: F, onImageSize: O, onRemove: j, onViewed: N, preloadedImageUrl: B, style: G, useActionRowButtons: W, width: H, withMediaCarousel: K }) {
-                const J = (0, f.I0)(),
+                const J = (0, b.I0)(),
                     V = (0, o.useHistory)(),
                     $ = (0, y.z)(),
                     [X, Y] = n.useState(!1),
@@ -428,7 +426,7 @@
                     if (!R.url || R.isPublic || !u.v5.includes(R.mimeType) || oe) return;
                     const e = R.url;
                     Y(!0),
-                        J((0, b.X)(e))
+                        J((0, f.X)(e))
                             .then((e) => {
                                 Q(e ?? void 0);
                             })
@@ -539,8 +537,8 @@
                 h = a(186444),
                 g = a(254944),
                 y = a(276259),
-                f = a(323265),
-                b = a(952793),
+                b = a(323265),
+                f = a(952793),
                 w = a(128225),
                 D = a(725405),
                 M = a(125363),
@@ -552,8 +550,8 @@
                 C = a(988290),
                 A = a(737368),
                 R = a(305442);
-            const Z = f.ZP.isTwitterApp(),
-                _ = f.ZP.isTwitterApp() ? (f.ZP.isAndroid() ? "grok_android" : "grok_ios") : "grok",
+            const Z = b.ZP.isTwitterApp(),
+                _ = b.ZP.isTwitterApp() ? (b.ZP.isAndroid() ? "grok_android" : "grok_ios") : "grok",
                 x = m().j826e722,
                 U = m().a9325f10,
                 L = m().f88553c8,
@@ -582,12 +580,12 @@
                     l
                 );
             }
-            function B({ allMediaIds: e, allMediaUrls: t, buttonSize: a = "xLarge", buttonType: s = "alwaysBlack", contentUrl: d, isLoading: c, mediaId: m, mediaUrl: f, setEditMode: I, withStartAlignment: v }) {
+            function B({ allMediaIds: e, allMediaUrls: t, buttonSize: a = "xLarge", buttonType: s = "alwaysBlack", contentUrl: d, isLoading: c, mediaId: m, mediaUrl: b, setEditMode: I, withStartAlignment: v }) {
                 const E = (0, M.I0)(),
                     P = (0, D.Z)(),
                     A = (0, o.useHistory)(),
                     { isGrokDrawer: R } = (0, C.ZP)(),
-                    O = (0, b.hC)("responsive_web_grok_image_edit");
+                    O = (0, f.hC)("responsive_web_grok_image_edit");
                 return n.createElement(
                     r.Z,
                     { onClick: (e) => e.stopPropagation(), style: v ? W.containerCorner : W.container, withGutter: !0 },
@@ -602,7 +600,7 @@
                                 key: "saveImage",
                                 onClick: (a) => {
                                     (async () => {
-                                        if ((P.scribe({ page: _, element: "save_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: f, allMediaIds: e, allMediaUrls: t }) } }), d)) {
+                                        if ((P.scribe({ page: _, element: "save_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: b, allMediaIds: e, allMediaUrls: t }) } }), d)) {
                                             const e = await (0, w.f)(d, !0, !0),
                                                 t = URL.createObjectURL(e);
                                             (0, y.uv)(t, "image.jpg");
@@ -620,7 +618,7 @@
                                 key: "copyImage",
                                 onClick: (a) => {
                                     (async () => {
-                                        if ((P.scribe({ page: _, element: "copy_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: f, allMediaIds: e, allMediaUrls: t }) } }), d)) {
+                                        if ((P.scribe({ page: _, element: "copy_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: b, allMediaIds: e, allMediaUrls: t }) } }), d)) {
                                             const e = await (0, w.f)(d, !0, !0),
                                                 t = URL.createObjectURL(e);
                                             (0, y.VJ)(t)
@@ -644,7 +642,7 @@
                                 key: "postImage",
                                 onClick: (a) => {
                                     (async () => {
-                                        if ((P.scribe({ page: _, element: "post_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: f, allMediaIds: e, allMediaUrls: t }) } }), !d)) return;
+                                        if ((P.scribe({ page: _, element: "post_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: b, allMediaIds: e, allMediaUrls: t }) } }), !d)) return;
                                         const a = await (0, w.f)(d, !0, !0),
                                             n = URL.createObjectURL(a);
                                         A.push({ pathname: "/compose/post", state: { externalMedia: [n], positionCursorAtBeginning: !0 } });
@@ -665,7 +663,7 @@
                                   key: "editImage",
                                   onClick: (a) => {
                                       (async () => {
-                                          P.scribe({ page: _, element: "edit_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: f, allMediaIds: e, allMediaUrls: t }) } }), I && I(!0);
+                                          P.scribe({ page: _, element: "edit_image_button", action: "click", data: { event_info: JSON.stringify({ mediaId: m, mediaUrl: b, allMediaIds: e, allMediaUrls: t }) } }), I && I(!0);
                                       })();
                                   },
                                   size: a,
@@ -710,4 +708,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb.0c8d1dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb.bb58bd8a.js.map

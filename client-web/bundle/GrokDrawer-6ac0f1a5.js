@@ -173,8 +173,8 @@
             var S = n(731708),
                 E = n(111677),
                 C = n.n(E),
-                P = n(952793),
-                G = n(389071),
+                G = n(952793),
+                P = n(389071),
                 I = n(189953);
             function N({ children: e, size: a, weight: n }) {
                 return o.createElement(d.Z, { style: T.container }, o.createElement(S.ZP, { size: a, style: T.label, weight: n || "normal" }, o.createElement("span", null, e)));
@@ -184,9 +184,9 @@
                 Z = C().ed93de0c,
                 B = C().d1d92e40;
             function X() {
-                const e = (0, P.hC)("responsive_web_grok_analyze_animation"),
-                    a = (0, b.v9)(G.Es),
-                    n = (0, G.f)({ conversationKey: a }),
+                const e = (0, G.hC)("responsive_web_grok_analyze_animation"),
+                    a = (0, b.v9)(P.Es),
+                    n = (0, P.f)({ conversationKey: a }),
                     r = -1 !== (0, b.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
                     t = (0, b.v9)(n.selectStatus),
                     l = t === I.Q_.TYPING || t === I.Q_.WAITING;
@@ -253,27 +253,23 @@
             const de = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.25"),
-                        n.e("icons.22"),
-                        n.e("icons.6"),
-                        n.e("icons.4"),
-                        n.e("icons.9"),
-                        n.e("icons.15"),
-                        n.e("icons.7"),
-                        n.e("icons.3"),
-                        n.e("icons.20"),
+                        n.e("icons.21"),
+                        n.e("icons.16"),
+                        n.e("icons.10"),
+                        n.e("icons.19"),
+                        n.e("icons.1"),
+                        n.e("icons.0"),
+                        n.e("icons.8"),
                         n.e("icons.2"),
-                        n.e("icons.18"),
-                        n.e("icons.27"),
-                        n.e("icons.13"),
+                        n.e("icons.23"),
+                        n.e("icons.3"),
+                        n.e("icons.4"),
+                        n.e("icons.15"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.0"),
-                        n.e("icons.24"),
-                        n.e("icons.17"),
-                        n.e("icons.12"),
-                        n.e("icons.11"),
+                        n.e("icons.9"),
+                        n.e("icons.7"),
+                        n.e("icons.28"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -284,17 +280,21 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.10"),
-                        n.e("icons.8"),
                         n.e("icons.26"),
-                        n.e("icons.19"),
+                        n.e("icons.24"),
+                        n.e("icons.29"),
+                        n.e("icons.18"),
+                        n.e("icons.13"),
+                        n.e("icons.27"),
+                        n.e("icons.25"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
+                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -369,6 +369,7 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.Explor-380ace89"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
@@ -678,7 +679,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => b, G$: () => l, HO: () => A, HR: () => P, JO: () => w, Jm: () => x, NH: () => G, RC: () => f, S7: () => C, UV: () => N, Uk: () => M, YI: () => c, YW: () => E, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => m, eS: () => _, eV: () => v, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => S, y6: () => u, zC: () => I, zX: () => T });
+            n.d(a, { DE: () => b, G$: () => l, HO: () => A, HR: () => G, JO: () => w, Jm: () => x, NH: () => P, RC: () => f, S7: () => C, UV: () => N, Uk: () => M, YI: () => c, YW: () => E, ZY: () => p, az: () => s, c3: () => t, dP: () => g, dd: () => m, eS: () => _, eV: () => v, hf: () => D, hq: () => i, kl: () => y, mm: () => h, op: () => k, pv: () => d, qQ: () => R, u1: () => S, y6: () => u, zC: () => I, zX: () => T });
             var r = n(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -758,10 +759,10 @@
             function C(e, a) {
                 Z(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant }) } });
             }
-            function P(e, a, n) {
+            function G(e, a, n) {
                 Z(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant, followUpText: n }) } });
             }
-            function G(e) {
+            function P(e) {
                 Z(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
             }
             function I(e, a) {
@@ -782,4 +783,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.def8faea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.fc12727a.js.map

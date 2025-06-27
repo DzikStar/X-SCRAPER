@@ -65,44 +65,44 @@
             });
             var _ = r(731708),
                 E = r(279046),
-                Z = r(124964);
-            function w(e) {
-                return a.createElement(u.Z, { style: x.pillTextContent }, a.createElement(_.ZP, { align: "left", color: "white", numberOfLines: 1, size: "subtext2", style: x.pillTextContent_title }, e.count ? a.createElement(_.ZP, { weight: "bold" }, a.createElement(E.Z.ParticipantsCount, { count: e.count, labelType: "plusCount" })) : null, a.createElement(Z.Z, { color: "white" }), e.title));
+                P = r(124964);
+            function Z(e) {
+                return a.createElement(u.Z, { style: x.pillTextContent }, a.createElement(_.ZP, { align: "left", color: "white", numberOfLines: 1, size: "subtext2", style: x.pillTextContent_title }, e.count ? a.createElement(_.ZP, { weight: "bold" }, a.createElement(E.Z.ParticipantsCount, { count: e.count, labelType: "plusCount" })) : null, a.createElement(P.Z, { color: "white" }), e.title));
             }
             const x = n.default.create((e) => ({ pillTextContent: { flex: 1, marginStart: e.spaces.space4, marginEnd: e.spaces.space8 }, pillTextContent_title: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: "100%", display: "inline-block" } }));
             r(136728);
-            var P = r(400752),
+            var w = r(400752),
                 k = r(107267),
                 S = r(910626);
             const I = Object.freeze({ host: "host", cohost: "cohost", speaker: "speaker", listener: "listener" });
             var B = r(976145),
                 M = r(111677),
-                z = r.n(M),
-                R = r(292484),
-                T = r(952793),
-                D = r(479506),
-                A = r(582129),
+                R = r.n(M),
+                T = r(292484),
+                z = r(952793),
+                A = r(479506),
+                D = r(582129),
                 V = r(725516),
-                L = r(125363),
-                N = r(390387),
-                H = r(919022),
+                N = r(125363),
+                H = r(390387),
+                L = r(919022),
                 O = r(905710),
                 W = r(427478),
                 $ = r(823180),
                 F = r(449998);
             const U = "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png",
-                j = { Broadcast: z().e39b368e, Space: z().ab4fc8bc, EmployeeSpace: z().b6de83a0, PrivateBroadcast: z().g3f251f2, PrivateSpace: z().d08666ba, BeFirstJoin: z().eadb5a46, HostsBroadcast: z().f9629a8f, HostsSpace: z().ia3c0ab7, HostedBy: z().hd552761, RelativePosition: z().c3ea19a5, WithParticipants: z().a5235305, socialProof: { isListening: z().df9f8243, isSpeaking: z().g2445c2f, isHosting: z().fcfd5a67, isCohosting: z().f7882829 } };
+                j = { Broadcast: R().e39b368e, Space: R().ab4fc8bc, EmployeeSpace: R().b6de83a0, PrivateBroadcast: R().g3f251f2, PrivateSpace: R().d08666ba, BeFirstJoin: R().eadb5a46, HostsBroadcast: R().f9629a8f, HostsSpace: R().ia3c0ab7, HostedBy: R().hd552761, RelativePosition: R().c3ea19a5, WithParticipants: R().a5235305, socialProof: { isListening: R().df9f8243, isSpeaking: R().g2445c2f, isHosting: R().fcfd5a67, isCohosting: R().f7882829 } };
             function G(e) {
                 const t = (0, V.z)(),
-                    r = (0, L.I0)(),
+                    r = (0, N.I0)(),
                     o = (0, k.useHistory)(),
-                    n = (0, L.v9)(N.Qb),
-                    s = (0, T.hC)("rweb_live_dock_enabled"),
-                    i = (0, R.cm)() && s,
-                    l = (0, P.b9)(A.dq),
+                    n = (0, N.v9)(H.Qb),
+                    s = (0, z.hC)("rweb_live_dock_enabled"),
+                    i = (0, T.cm)() && s,
+                    l = (0, w.b9)(D.dq),
                     c = (function () {
-                        const e = (0, L.I0)(),
-                            t = (0, P.b9)(F.wQ);
+                        const e = (0, N.I0)(),
+                            t = (0, w.b9)(F.wQ);
                         return a.useCallback(
                             (r, a) => {
                                 t({ videoId: r, isLiveVideo: a }), e(W.bi($.N.EXPANDED));
@@ -110,7 +110,7 @@
                             [e, t],
                         );
                     })(),
-                    d = (0, P.Dv)(F.Tc),
+                    d = (0, w.Dv)(F.Tc),
                     { participants_str: u, user_id: p, user_id_str: m } = e,
                     f = e.live_content.audiospace,
                     h = e.live_content.livevideo,
@@ -121,30 +121,30 @@
                     C = f?.total_participating ?? h?.n_total_watching ?? 0,
                     _ = a.useMemo(() => (f ? "audiospace" : h ? "livevideo" : void 0), [f, h]),
                     E = a.useMemo(() => (u ? u.slice(0, 3) : []), [u]),
-                    Z = a.useMemo(() => (f?.social_proof?.length ? f.social_proof[0] : h ? { role: I.host, user_id: p, user_id_str: m } : void 0), [f, h, p, m]);
+                    P = a.useMemo(() => (f?.social_proof?.length ? f.social_proof[0] : h ? { role: I.host, user_id: p, user_id_str: m } : void 0), [f, h, p, m]);
                 a.useEffect(() => {
                     if (E.length) {
                         const e = [m, ...E];
-                        Z && e.push(Z.user_id_str), r(H.ZP.fetchManyIfNeeded(E));
+                        P && e.push(P.user_id_str), r(L.ZP.fetchManyIfNeeded(E));
                     }
-                }, [r, Z, E, m]);
-                const w = Math.max(0, C - E.length),
-                    x = (0, L.v9)((e) => H.ZP.selectMany(e, E)),
+                }, [r, P, E, m]);
+                const Z = Math.max(0, C - E.length),
+                    x = (0, N.v9)((e) => L.ZP.selectMany(e, E)),
                     M = a.useMemo(() => (x.length ? x.map((e) => e.profile_image_url_https ?? U) : Array(E.length).fill(U)), [E, x]),
-                    z = a.useMemo(() => (x.length && "Square" === x[0].profile_image_shape ? "xSmall" : "infinite"), [x]),
-                    G = (0, L.v9)((e) => (Z ? H.ZP.select(e, Z?.user_id_str) : void 0)),
+                    R = a.useMemo(() => (x.length && "Square" === x[0].profile_image_shape ? "xSmall" : "infinite"), [x]),
+                    G = (0, N.v9)((e) => (P ? L.ZP.select(e, P?.user_id_str) : void 0)),
                     K = a.useMemo(() => {
-                        if (Z && G) {
-                            if (Z.role === I.host) return j.socialProof.isHosting({ name: G.name });
-                            if (Z.role === I.cohost) return j.socialProof.isCohosting({ name: G.name });
-                            if (Z.role === I.speaker) return j.socialProof.isSpeaking({ name: G.name });
-                            if (Z.role === I.listener) return j.socialProof.isListening({ name: G.name });
+                        if (P && G) {
+                            if (P.role === I.host) return j.socialProof.isHosting({ name: G.name });
+                            if (P.role === I.cohost) return j.socialProof.isCohosting({ name: G.name });
+                            if (P.role === I.speaker) return j.socialProof.isSpeaking({ name: G.name });
+                            if (P.role === I.listener) return j.socialProof.isListening({ name: G.name });
                         }
-                    }, [Z, G]),
+                    }, [P, G]),
                     q = a.useMemo(() => {
-                        if (Z && G && K) return { label: K, role: Z.role, user: G };
-                    }, [Z, K, G]),
-                    Q = (0, L.v9)((e) => H.ZP.select(e, m));
+                        if (P && G && K) return { label: K, role: P.role, user: G };
+                    }, [P, K, G]),
+                    Q = (0, N.v9)((e) => L.ZP.select(e, m));
                 let J = "";
                 y ? (J = y) : Q && (f && (J = j.HostsSpace({ hostName: Q.name })), h && (J = j.HostsBroadcast({ hostName: Q.name })));
                 const Y = [];
@@ -153,12 +153,12 @@
                         t = (0, B.Z)(e);
                     Y.push(j.WithParticipants({ listOfPeople: t }));
                 }
-                x.length || w || Y.push(j.BeFirstJoin);
+                x.length || Z || Y.push(j.BeFirstJoin);
                 const X = (0, B.Z)(Y, !0),
-                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? D.Z.ItemType.PERISCOPE_BROADCAST : D.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
+                    ee = a.useMemo(() => ({ items: [{ audio_space_details: { broadcast_id: b, is_logged_in: n }, item_type: h ? A.Z.ItemType.PERISCOPE_BROADCAST : A.Z.ItemType.AUDIO_SPACE }] }), [b, n, h]);
                 return {
                     "aria-label": X,
-                    borderRadius: z,
+                    borderRadius: R,
                     onImpression: a.useCallback(() => {
                         t.scribe({ action: "impression", data: ee, element: "audiospace_fleet" });
                     }, [t, ee]),
@@ -170,7 +170,7 @@
                         },
                         [t, f, i, d, o, b, l, h, c, ee],
                     ),
-                    otherParticipantsCount: w,
+                    otherParticipantsCount: Z,
                     socialProof: q,
                     title: J,
                     type: _,
@@ -195,8 +195,8 @@
                         v(K.start);
                     }, [v]),
                     E = a.useMemo(() => [Q.animatedViewPress, { transform: [{ scale: g }] }], [g]),
-                    Z = a.useMemo(() => [{ borderRadius: n.default.theme.borderRadiiPx[c] }, e && { paddingStart: n.default.theme.spaces.space16 }, Q.rootContainer], [c, e]);
-                return a.createElement(i.Z, { onImpression: u }, a.createElement(s.Z, { "aria-label": r, onPress: p, onPressIn: C, onPressOut: _, style: Z }, a.createElement(o.Z.View, { style: E }, a.createElement(y, { borderRadius: c, type: h, userAvatarUrls: b }, a.createElement(w, { count: m, title: f }), a.createElement(d, null), a.createElement(l.L, { size: "space8" })))));
+                    P = a.useMemo(() => [{ borderRadius: n.default.theme.borderRadiiPx[c] }, e && { paddingStart: n.default.theme.spaces.space16 }, Q.rootContainer], [c, e]);
+                return a.createElement(i.Z, { onImpression: u }, a.createElement(s.Z, { "aria-label": r, onPress: p, onPressIn: C, onPressOut: _, style: P }, a.createElement(o.Z.View, { style: E }, a.createElement(y, { borderRadius: c, type: h, userAvatarUrls: b }, a.createElement(Z, { count: m, title: f }), a.createElement(d, null), a.createElement(l.L, { size: "space8" })))));
             }
             const Q = n.default.create((e) => ({ rootContainer: { display: "flex", flexDirection: "row", alignItems: "center", width: "100%", userSelect: "none" }, animatedViewPress: { width: "100%" } }));
             var J = r(952428),
@@ -206,7 +206,7 @@
                 te = r(443781);
             function re({ socialProof: e }) {
                 const t = a.useMemo(() => a.createElement(X.Z, { affiliateBadgeInfo: e.user.highlightedLabel, avatarSize: "small", isBlueVerified: e.user.is_blue_verified, isVerified: e.user.verified, name: e.user.name, nameSize: "subtext2", profileImageUrl: e.user.profile_image_url_https, verifiedType: e.user.verified_type }), [e]),
-                    r = a.useMemo(() => (e.role === I.host ? a.createElement(z().I18NFormatMessage, { $i18n: "d80a7547" }, t) : e.role === I.cohost ? a.createElement(z().I18NFormatMessage, { $i18n: "j7293d6b" }, t) : e.role === I.speaker ? a.createElement(z().I18NFormatMessage, { $i18n: "df79977f" }, t) : e.role === I.listener ? a.createElement(z().I18NFormatMessage, { $i18n: "ad960f39" }, t) : void 0), [t, e]);
+                    r = a.useMemo(() => (e.role === I.host ? a.createElement(R().I18NFormatMessage, { $i18n: "d80a7547" }, t) : e.role === I.cohost ? a.createElement(R().I18NFormatMessage, { $i18n: "j7293d6b" }, t) : e.role === I.speaker ? a.createElement(R().I18NFormatMessage, { $i18n: "df79977f" }, t) : e.role === I.listener ? a.createElement(R().I18NFormatMessage, { $i18n: "ad960f39" }, t) : void 0), [t, e]);
                 return a.createElement(_.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2", style: ae.socialProof }, r);
             }
             const ae = n.default.create((e) => ({ socialProof: { alignItems: "center", display: "flex", flexDirection: "row", marginBottom: e.spaces.space8, marginEnd: e.spaces.space8, whiteSpace: "pre" } }));
@@ -279,17 +279,17 @@
                         clearInterval(r);
                     };
                 }),
-                Z = (0, f.W)((e, t) => {
+                P = (0, f.W)((e, t) => {
                     const r = (0, g._h)(e(c.qc).getState());
                     if (!r) return i.Z;
                     const a = `/live_content/${r}`;
                     return (0, d.Cg)({ topic: a, featureSwitches: e(c.f0), onTopic: () => t(_) });
                 }),
-                w = (0, o.cn)((e) => (e(v), e(v.resolved)));
+                Z = (0, o.cn)((e) => (e(v), e(v.resolved)));
             function x() {
-                const e = (0, n.Dv)(w),
+                const e = (0, n.Dv)(Z),
                     t = (0, n.b9)(E);
-                (0, m.N)(Z);
+                (0, m.N)(P);
                 const r = (0, u.mr)();
                 return (
                     a.useEffect(() => {
@@ -330,19 +330,6 @@
             const l = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = i;
         },
-        76388: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var a = r(202784),
-                o = r(890601),
-                n = r(783427),
-                s = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.2030abca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Spacebar~loader.SidebarSpacebar.d961566a.js.map

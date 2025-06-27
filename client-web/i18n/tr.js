@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("c6ad999b", "languages settings"),
+                n("f9317b98", "language settings"),
                 n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return e.fullName + " (@" + e.screenName + ") adlı kullanıcıdan gönderi";
@@ -4358,7 +4358,6 @@
                 n("a15d62db", function (e) {
                     return e.seconds + " saniye düşünüldü";
                 }),
-                n("f26fc748", "Script"),
                 n("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 n("ff95a9cc", "Video kimliği"),
                 n("a97e358e", "Video Bağlantısı"),
                 n("e10e8b46", "Yalnızca son 100 günde yayınlanan videolar gösteriliyor."),
-                n("ba37f6da", "Videoya genel bakış");
-            n("f19846b2", "Video küçük resmi"),
-                n("ccd6f4a8", "Video başlığı"),
+                n("ba37f6da", "Videoya genel bakış"),
+                n("f19846b2", "Video küçük resmi");
+            n("ccd6f4a8", "Video başlığı"),
                 n("c8410542", "Videonun görüntülenme sayısı."),
                 n("a532072a", "İzleyiciler"),
                 n("d9508ab0", "görüntülenme"),
@@ -5882,9 +5881,9 @@
                 n("af781666", "İnsanlar ne düşünüyor?"),
                 n("a1f414ee", "Düşüncelerini paylaş"),
                 n("ed88e742", "Konu bağlantısını kopyala"),
-                n("h92fe1be", "Maalesef Topluluk Notları şu anda senin için kullanılabilir değil.");
-            n("f0dc1434", "Topluluk Notları şu anda yalnızca ABD'de kullanılabilir"),
-                n("f8fc0b48", "Bir Klasör oluştur"),
+                n("h92fe1be", "Maalesef Topluluk Notları şu anda senin için kullanılabilir değil."),
+                n("f0dc1434", "Topluluk Notları şu anda yalnızca ABD'de kullanılabilir");
+            n("f8fc0b48", "Bir Klasör oluştur"),
                 n("c14bcdde", "Yer İşaretlerinde Ara"),
                 n("e9c65c4a", "Yer işaretleri araması"),
                 n("b92a21d9", function (e) {
@@ -6888,9 +6887,9 @@
                 n("b8cbb51a", "İş Özeti"),
                 n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma."),
                 n("b075c68a", "İlanı düzenle"),
-                n("d4b6a6e0", "Profil Spotlight'ı");
-            n("j2dd3686", "Öne çıkan iş ilanlarını gönderilerimin üzerinde vurgula."),
-                n("af1cfd46", "ATS entegrasyonu"),
+                n("d4b6a6e0", "Profil Spotlight'ı"),
+                n("j2dd3686", "Öne çıkan iş ilanlarını gönderilerimin üzerinde vurgula.");
+            n("af1cfd46", "ATS entegrasyonu"),
                 n("d6fa2944", "Entegrasyonu sildiğinde içe aktarılan iş ilanların silinmez."),
                 n("h99f11fa", "Entegrasyonu sil"),
                 n("eef1ae76", "Şu anda bağlı"),
@@ -7870,7 +7869,8 @@
                 n("b74ff5fc", "İptal edersen Aboneliğinin süresi faturalandırma döneminin sonunda otomatik olarak dolacak."),
                 n("ee9efbc8", "İptal işlemine devam et"),
                 n("c5d9c77a", "Küçük bir kesinti yaşandı. Endişelenmene gerek yok, senden kaynaklanmıyor. Bu pencereyi kapatıp tekrar dene."),
-                n("jda53c24", "Aboneliğini Apple App Store üzerinden iptal edebilirsin.");
+                n("jda53c24", "Aboneliğini Apple App Store üzerinden iptal edebilirsin."),
+                n("g0a7a53e", "Aboneliğini Google Play Store üzerinden iptal edebilirsin.");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7909,10 +7909,9 @@
                     t(e, a)
                 );
             }
-            n("g0a7a53e", "Aboneliğini Google Play Store üzerinden iptal edebilirsin."),
-                n("i5f14be7", function (e) {
-                    return "Tekrar hoş geldin, " + e.displayName;
-                }),
+            n("i5f14be7", function (e) {
+                return "Tekrar hoş geldin, " + e.displayName;
+            }),
                 n("a76d58ba", "Reklam İstatistikleri"),
                 n("eccd0e1a", "Kuruluş İstatistikleri"),
                 n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
@@ -8910,9 +8909,9 @@
                     return e.advertiserName + " adresini ziyaret et";
                 }),
                 n("c67e71aa", "Şimdi izle"),
-                n("a6ada13e", "Alışverişe başla");
-            n("j0f12222", "Daha fazlasını gör"),
-                n("f569f7c8", "İnternet sitesine git"),
+                n("a6ada13e", "Alışverişe başla"),
+                n("j0f12222", "Daha fazlasını gör");
+            n("f569f7c8", "İnternet sitesine git"),
                 n("j0c6772a", "İnternet sitesini ziyaret et"),
                 n("f73003aa", "Video reklamdan sonra oynatılacak"),
                 n("b3112b8a", "Atla"),
@@ -10163,7 +10162,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13365,4 +13364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.f8dfddaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.f09d107a.js.map

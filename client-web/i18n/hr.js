@@ -1378,7 +1378,7 @@
                     return "Automatically translate " + a.language;
                 }),
                 o("c60b9e5c", "Changes will take effect for newly loaded content."),
-                o("c6ad999b", "languages settings"),
+                o("f9317b98", "language settings"),
                 o("hba0547a", "Unable to update settings. Please try again later."),
                 o("d4c339b9", function (a) {
                     return "Objava korisnika/ce " + a.fullName + " (@" + a.screenName + ")";
@@ -4366,7 +4366,6 @@
                 o("a15d62db", function (a) {
                     return "Razmišljanje je trajalo " + a.seconds + " s";
                 }),
-                o("f26fc748", "Script"),
                 o("h26fa43f", function (a) {
                     return a.count + " more";
                 }),
@@ -4938,9 +4937,9 @@
                 o("ff95a9cc", "ID videozapisa"),
                 o("a97e358e", "Veza na videozapis"),
                 o("e10e8b46", "Prikazuju se samo videozapisi od proteklih 100 dana."),
-                o("ba37f6da", "Pregled videozapisa");
-            o("f19846b2", "Sličica videozapisa"),
-                o("ccd6f4a8", "Naslov videozapisa"),
+                o("ba37f6da", "Pregled videozapisa"),
+                o("f19846b2", "Sličica videozapisa");
+            o("ccd6f4a8", "Naslov videozapisa"),
                 o("c8410542", "Broj pregleda vašeg videozapisa"),
                 o("a532072a", "Gledatelji"),
                 o("d9508ab0", "prikaza"),
@@ -5890,9 +5889,9 @@
                 o("af781666", "Što ljudi misle?"),
                 o("a1f414ee", "Recite što mislite"),
                 o("ed88e742", "Kopiraj poveznicu na temu"),
-                o("h92fe1be", "Nažalost, Zabilješke zajednice trenutno vam nisu dostupne.");
-            o("f0dc1434", "Bilješke zajednice zasad su dostupne samo u SAD-u"),
-                o("f8fc0b48", "Stvaranje mape"),
+                o("h92fe1be", "Nažalost, Zabilješke zajednice trenutno vam nisu dostupne."),
+                o("f0dc1434", "Bilješke zajednice zasad su dostupne samo u SAD-u");
+            o("f8fc0b48", "Stvaranje mape"),
                 o("c14bcdde", "Pretraživanje knjižnih oznaka"),
                 o("e9c65c4a", "Pretraživanje knjižnih oznaka"),
                 o("b92a21d9", function (a) {
@@ -6896,9 +6895,9 @@
                 o("b8cbb51a", "Sažetak posla"),
                 o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti."),
                 o("b075c68a", "Uredi posao"),
-                o("d4b6a6e0", "Pojedinosti o profilu");
-            o("j2dd3686", "Istakni izdvojene poslove iznad mojih objava."),
-                o("af1cfd46", "Integracija ATS-a"),
+                o("d4b6a6e0", "Pojedinosti o profilu"),
+                o("j2dd3686", "Istakni izdvojene poslove iznad mojih objava.");
+            o("af1cfd46", "Integracija ATS-a"),
                 o("d6fa2944", "Brisanjem integracije neće se izbrisati uvezeni poslovi."),
                 o("h99f11fa", "Izbriši integraciju"),
                 o("eef1ae76", "Trenutačno povezano"),
@@ -7878,7 +7877,8 @@
                 o("b74ff5fc", "Ako otkažete pretplatu, ona će automatski isteći po završetku ciklusa naplate."),
                 o("ee9efbc8", "Nastavi na otkazivanje"),
                 o("c5d9c77a", "Izgleda da je došlo do manjih poteškoća u radu. Ne brinite, nije vaša greška. Zatvorite taj prozor i pokušajte ponovno."),
-                o("jda53c24", "Pretplatu možete otkazati putem servisa Apple App Store.");
+                o("jda53c24", "Pretplatu možete otkazati putem servisa Apple App Store."),
+                o("g0a7a53e", "Pretplatu možete otkazati putem servisa Google Play Store.");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7917,10 +7917,9 @@
                     r(a, e)
                 );
             }
-            o("g0a7a53e", "Pretplatu možete otkazati putem servisa Google Play Store."),
-                o("i5f14be7", function (a) {
-                    return "Dobro došli natrag, " + a.displayName;
-                }),
+            o("i5f14be7", function (a) {
+                return "Dobro došli natrag, " + a.displayName;
+            }),
                 o("a76d58ba", "Analitika oglasa"),
                 o("eccd0e1a", "Analitika organizacije"),
                 o("deea1708", "Želite li pregledati analitiku za sve vaše račune za X?"),
@@ -8918,9 +8917,9 @@
                     return "Posjetite " + a.advertiserName;
                 }),
                 o("c67e71aa", "Gledajte odmah"),
-                o("a6ada13e", "Odmah kupujte");
-            o("j0f12222", "Pogledajte više"),
-                o("f569f7c8", "Idi na web-mjesto"),
+                o("a6ada13e", "Odmah kupujte"),
+                o("j0f12222", "Pogledajte više");
+            o("f569f7c8", "Idi na web-mjesto"),
                 o("j0c6772a", "Posjetite web-mjesto"),
                 o("f73003aa", "Videozapis će se reproducirati nakon oglasa"),
                 o("b3112b8a", "Preskoči"),
@@ -10168,7 +10167,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13378,4 +13377,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.f74195ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.e771d2aa.js.map

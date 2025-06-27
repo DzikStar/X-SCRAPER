@@ -327,12 +327,12 @@
                             className: "flex items-center gap-3 mb-4",
                             children: [
                                 (0, s.jsx)(c.z, {
+                                    "aria-label": j.backToLiveOverviewAria,
                                     icon: (0, s.jsx)(t.Z, {}),
                                     onClick: () => {
                                         _.push(d || l);
                                     },
                                     variant: "primaryText",
-                                    "aria-label": j.backToLiveOverviewAria,
                                 }),
                                 (0, s.jsx)(o.x, { size: "headline1", weight: "bold", children: j.livestreamAnalytics }),
                             ],
@@ -388,4 +388,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e8e70de4.694018ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e8e70de4.8dcfe3da.js.map

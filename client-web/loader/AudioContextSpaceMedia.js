@@ -5,8 +5,8 @@
         668371: (e, l, n) => {
             n.d(l, { Z: () => o });
             var a,
-                t,
                 r,
+                t,
                 s = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "restId" }]),
@@ -16,7 +16,7 @@
                         selections: [
                             {
                                 alias: "user",
-                                args: (t = [
+                                args: (r = [
                                     { kind: "Variable", name: "rest_id", variableName: "restId" },
                                     { kind: "Literal", name: "s", value: "2e2a" },
                                 ]),
@@ -39,7 +39,7 @@
                         selections: [
                             {
                                 alias: "user",
-                                args: t,
+                                args: r,
                                 concreteType: "UserResults",
                                 kind: "LinkedField",
                                 name: "user_result_by_rest_id",
@@ -72,7 +72,7 @@
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, concreteType: "UserRelationshipPerspectives", kind: "LinkedField", name: "relationship_perspectives", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }], storageKey: null },
-                                                    (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                    (t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                 ],
                                                 type: "User",
                                                 abstractKey: null,
@@ -80,7 +80,7 @@
                                         ],
                                         storageKey: null,
                                     },
-                                    r,
+                                    t,
                                 ],
                                 storageKey: null,
                             },
@@ -92,7 +92,7 @@
             const o = s;
         },
         813323: (e, l, n) => {
-            n.d(l, { Z: () => t });
+            n.d(l, { Z: () => r });
             var a = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -119,63 +119,50 @@
                 abstractKey: null,
                 hash: "96cdf1de6cd036d1367ad367e572a535",
             };
-            const t = a;
+            const r = a;
         },
         420412: (e, l, n) => {
             n.d(l, { Z: () => i });
             var a = n(202784),
-                t = n(325686),
-                r = n(235902),
+                r = n(325686),
+                t = n(235902),
                 s = n(885015),
                 o = n(392237);
             function i({ borderColor: e = "borderColor", isSlim: l = !1, label: n }) {
-                const { isWebRedesign: i } = r.ZP.useProps(),
+                const { isWebRedesign: i } = t.ZP.useProps(),
                     d = "borderColor" === e || "nestedBorderColor" === e ? u[e] : { backgroundColor: o.default.theme.colors[e] ?? o.default.theme.colors.borderColor };
-                return n ? a.createElement(s.Z, { style: !l && u.root, withGutter: !0 }, a.createElement(t.Z, { style: u.gapColumn }, a.createElement(t.Z, { style: [u.gap, d] })), a.createElement(t.Z, { style: u.gapText }, n), a.createElement(t.Z, { style: u.gapColumn }, a.createElement(t.Z, { style: [u.gap, d] }))) : a.createElement(t.Z, { style: [!l && u.root, i() && u.rootRedesign, u.gap, d] });
+                return n ? a.createElement(s.Z, { style: !l && u.root, withGutter: !0 }, a.createElement(r.Z, { style: u.gapColumn }, a.createElement(r.Z, { style: [u.gap, d] })), a.createElement(r.Z, { style: u.gapText }, n), a.createElement(r.Z, { style: u.gapColumn }, a.createElement(r.Z, { style: [u.gap, d] }))) : a.createElement(r.Z, { style: [!l && u.root, i() && u.rootRedesign, u.gap, d] });
             }
             const u = o.default.create((e) => ({ borderColor: { backgroundColor: o.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: o.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, l, n) => {
             n.d(l, { Z: () => u });
             var a = n(807896),
-                t = n(202784),
-                r = n(325686),
+                r = n(202784),
+                t = n(325686),
                 s = n(392237);
-            class o extends t.Component {
+            class o extends r.Component {
                 render() {
                     const { children: e, style: l, withGutter: n, ...s } = this.props,
-                        o = t.Children.map(e, (e) => e && t.cloneElement(e, { style: [e.props.style, i.column, n && i.withGutterColumn] }));
-                    return t.createElement(r.Z, (0, a.Z)({ style: [l, i.root, n && i.withGutter] }, s), o);
+                        o = r.Children.map(e, (e) => e && r.cloneElement(e, { style: [e.props.style, i.column, n && i.withGutterColumn] }));
+                    return r.createElement(t.Z, (0, a.Z)({ style: [l, i.root, n && i.withGutter] }, s), o);
                 }
             }
             o.defaultProps = { withGutter: !1 };
             const i = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 u = o;
         },
-        76388: (e, l, n) => {
-            n.r(l), n.d(l, { default: () => i });
-            var a = n(202784),
-                t = n(890601),
-                r = n(783427),
-                s = n(347101);
-            const o = (e = {}) => {
-                const { direction: l } = (0, r.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: l });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const i = o;
-        },
         662678: (e, l, n) => {
-            n.d(l, { G: () => t, Z: () => a });
+            n.d(l, { G: () => r, Z: () => a });
             n(136728);
             const a = function (e, l) {
-                return t(e, l);
+                return r(e, l);
             };
-            function t(e, l) {
+            function r(e, l) {
                 return e.reduce(
-                    (n, a, t) => {
-                        const r = l ? l(a, t, e) : !!a;
-                        return r && n[0].push(a), !r && n[1].push(a), n;
+                    (n, a, r) => {
+                        const t = l ? l(a, r, e) : !!a;
+                        return t && n[0].push(a), !t && n[1].push(a), n;
                     },
                     [[], []],
                 );
@@ -183,4 +170,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceMedia.01efd5fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceMedia.158bac2a.js.map

@@ -17,7 +17,7 @@
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         374709: (e) => {
-            e.exports = { queryId: "IGHBZzBjkQ0I7TA4WKv32A", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
+            e.exports = { queryId: "-AfHqb3yk7aKm0kf6HGb5A", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         709401: (e) => {
             e.exports = { queryId: "azn3Sg0APPjb2Jtd7gqxsw", operationName: "GrokMediaHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -65,8 +65,8 @@
                 S = s.n(w),
                 T = s(416024),
                 f = s.n(T),
-                I = s(716442),
-                y = s.n(I),
+                y = s(716442),
+                I = s.n(y),
                 C = s(985289),
                 k = s.n(C),
                 v = s(524816),
@@ -85,7 +85,7 @@
                     fetchHistory: ({ cursor: t }) => e.graphQL(u(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(f(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(b(), { cursor: t }).then((e) => e),
-                    searchConversations: ({ keyword: t }) => e.graphQL(y(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
+                    searchConversations: ({ keyword: t }) => e.graphQL(I(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
                     deleteMessage: ({ chat_item_id: t, conversation_id: s }) => e.graphQL(l(), { conversation_id: s, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: s, object_id: a }) => e.graphQL(x(), { group_id: s, object_id: a, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
@@ -445,4 +445,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.34cfe56a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.3089beea.js.map

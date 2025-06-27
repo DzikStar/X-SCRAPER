@@ -1375,7 +1375,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("c6ad999b", "languages settings"),
+                n("f9317b98", "language settings"),
                 n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
@@ -4363,7 +4363,6 @@
                 n("a15d62db", function (e) {
                     return "Réflexion d'une durée de " + e.seconds + " s";
                 }),
-                n("f26fc748", "Script"),
                 n("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4935,9 +4934,9 @@
                 n("ff95a9cc", "Identifiant de la vidéo"),
                 n("a97e358e", "Lien de la vidéo"),
                 n("e10e8b46", "Affichage des vidéos des 100 derniers jours uniquement."),
-                n("ba37f6da", "Vue d'ensemble des vidéos");
-            n("f19846b2", "Miniature de la vidéo"),
-                n("ccd6f4a8", "Titre de la vidéo"),
+                n("ba37f6da", "Vue d'ensemble des vidéos"),
+                n("f19846b2", "Miniature de la vidéo");
+            n("ccd6f4a8", "Titre de la vidéo"),
                 n("c8410542", "Le nombre de fois que votre vidéo a été vue."),
                 n("a532072a", "Spectateurs"),
                 n("d9508ab0", "vues"),
@@ -5887,9 +5886,9 @@
                 n("af781666", "Quelles sont les opinions à ce sujet ?"),
                 n("a1f414ee", "Partager mon avis"),
                 n("ed88e742", "Copier le lien de ce sujet"),
-                n("h92fe1be", "Malheureusement, vous ne pouvez pas accéder à la fonctionnalité Notes de la Communauté pour le moment.");
-            n("f0dc1434", "La fonctionnalité Notes de la Communauté n'est pour le moment disponible qu'aux États‑Unis."),
-                n("f8fc0b48", "Créer un dossier"),
+                n("h92fe1be", "Malheureusement, vous ne pouvez pas accéder à la fonctionnalité Notes de la Communauté pour le moment."),
+                n("f0dc1434", "La fonctionnalité Notes de la Communauté n'est pour le moment disponible qu'aux États‑Unis.");
+            n("f8fc0b48", "Créer un dossier"),
                 n("c14bcdde", "Rechercher dans les signets"),
                 n("e9c65c4a", "Recherche dans les signets"),
                 n("b92a21d9", function (e) {
@@ -6893,9 +6892,9 @@
                 n("b8cbb51a", "Résumé du poste"),
                 n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
                 n("b075c68a", "Modifier l'offre d'emploi"),
-                n("d4b6a6e0", "Spotlight sur le profil");
-            n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts."),
-                n("af1cfd46", "Intégration ATS"),
+                n("d4b6a6e0", "Spotlight sur le profil"),
+                n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts.");
+            n("af1cfd46", "Intégration ATS"),
                 n("d6fa2944", "La suppression de votre intégration ne supprimera pas vos offres importées."),
                 n("h99f11fa", "Supprimer l'intégration"),
                 n("eef1ae76", "Actuellement connecté"),
@@ -7875,7 +7874,8 @@
                 n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation."),
                 n("ee9efbc8", "Continuer pour annuler"),
                 n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
-                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple.");
+                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
+                n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7914,10 +7914,9 @@
                     i(e, t)
                 );
             }
-            n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
-                n("i5f14be7", function (e) {
-                    return "Heureux de vous retrouver, " + e.displayName;
-                }),
+            n("i5f14be7", function (e) {
+                return "Heureux de vous retrouver, " + e.displayName;
+            }),
                 n("a76d58ba", "Statistiques des publicités"),
                 n("eccd0e1a", "Statistiques de l'organisation "),
                 n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
@@ -8915,9 +8914,9 @@
                     return "Rendez-vous sur " + e.advertiserName;
                 }),
                 n("c67e71aa", "Regarder maintenant"),
-                n("a6ada13e", "Acheter maintenant");
-            n("j0f12222", "Voir plus"),
-                n("f569f7c8", "Accéder au site Web"),
+                n("a6ada13e", "Acheter maintenant"),
+                n("j0f12222", "Voir plus");
+            n("f569f7c8", "Accéder au site Web"),
                 n("j0c6772a", "Visiter le site Web"),
                 n("f73003aa", "La vidéo sera lue après la publicité."),
                 n("b3112b8a", "Passer"),
@@ -10158,7 +10157,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13360,4 +13359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.5ebaab2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.1be163aa.js.map

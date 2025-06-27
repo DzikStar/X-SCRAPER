@@ -625,11 +625,17 @@
                                                             if ((d && (d.imageAttachmentUpdate && s(S.imageIntermediateResult({ ...d.imageAttachmentUpdate, progress: d.imageAttachmentUpdate.progress / 100, imageUrl: d.imageAttachmentUpdate.imageUrl })), d.imageAttachmentRemoval && (F.setAttachmentAsModerated(d.imageAttachmentRemoval.imageIdStr), s(S.grokResponseFileAttachments(F.generateAttachmentList())))), g?.enableLocation && t.result?.doLocationRequest && !h.geoLocation && s(S.grokResponseCardAttachment({ cardType: "geo_location_request" })), t.result?.cardAttachment)) {
                                                                 const r = (0, l.dj)(t.result.cardAttachment, e);
                                                                 if (r) {
-                                                                    if ((s(S.grokResponseCardAttachment(r)), "x_posts_card" === r.cardType)) {
-                                                                        const e = r.post_ids;
-                                                                        s(i.Z.fetchMultiple(e));
+                                                                    if ("x_posts_card" === r.cardType) {
+                                                                        const e = r.post_ids,
+                                                                            t = [...new Set(e)];
+                                                                        (r.post_ids = t), s(i.Z.fetchMultiple(t));
                                                                     }
-                                                                    "x_users_card" === r.cardType && s(c.ZP.fetchManyByScreenNames(r.user_handles));
+                                                                    if ("x_users_card" === r.cardType) {
+                                                                        const e = r.user_handles,
+                                                                            t = [...new Set(e)];
+                                                                        (r.user_handles = t), s(c.ZP.fetchManyByScreenNames(t));
+                                                                    }
+                                                                    s(S.grokResponseCardAttachment(r));
                                                                 }
                                                             }
                                                             if ((t.result?.memoryReferences && s(S.grokResponseMemoryReferences(t.result.memoryReferences)), t.result?.messageTag && (t.result?.message || void 0 !== t.result?.messageStepId))) {
@@ -787,7 +793,18 @@
                                 if (n.card_attachments)
                                     for (const e of n.card_attachments) {
                                         const r = (0, p.dj)(e);
-                                        r && (t.push(r), "x_posts_card" === r.cardType ? s(l.Z.fetchMultipleIfNeeded(r.post_ids)) : "x_users_card" === r.cardType && s(u.ZP.fetchManyByScreenNames(r.user_handles)));
+                                        if (r) {
+                                            if ("x_posts_card" === r.cardType) {
+                                                const e = r.post_ids,
+                                                    t = [...new Set(e)];
+                                                (r.post_ids = t), s(l.Z.fetchMultiple(t));
+                                            } else if ("x_users_card" === r.cardType) {
+                                                const e = r.user_handles,
+                                                    t = [...new Set(e)];
+                                                (r.user_handles = t), s(u.ZP.fetchManyByScreenNames(t));
+                                            }
+                                            t.push(r);
+                                        }
                                     }
                                 t.length && s(g.grokResponseCardAttachments(t));
                                 let r = [],
@@ -851,23 +868,26 @@
                     }
                     const K = E ?? F.selectMode(y()),
                         x = (0, o.F9)(y()),
-                        H = F.selectConversationForAPI(y()),
-                        B = (0, o.en)(y()),
-                        Z = { ...w };
-                    if ((b && (Z.imageGen = !0), B && B.toolOverrides)) {
-                        const e = B.toolOverrides;
+                        H = (0, o.vf)(y()),
+                        B = H.find((e) => e.isAnalyzeEnabled)?.id,
+                        Z = "GROK_ANALYZE" === m.promptSource ? B : null,
+                        j = F.selectConversationForAPI(y()),
+                        Q = (0, o.en)(y()),
+                        V = { ...w };
+                    if ((b && (V.imageGen = !0), Q && Q.toolOverrides)) {
+                        const e = Q.toolOverrides;
                         Object.keys(e).forEach((t) => {
-                            Z[t] = e[t];
+                            V[t] = e[t];
                         });
                     }
                     if (!(R || (u && 0 !== u.length))) return Promise.resolve();
-                    const j = { message: R ?? "", sender: i.CI.HUMAN, promptSource: f ?? "", ...(s ? { postIds: [s] } : void 0) };
-                    u && (j.fileAttachments = u), O && (j.isDeepsearch = O), A && (j.isReasoning = A);
-                    const Q = { responses: H.concat(j), systemPromptName: K, grokModelOptionId: x, conversationId: P, returnSearchResults: g, returnCitations: _, promptMetadata: m, imageGenerationCount: I, requestFeatures: S, ...(s ? { analysisEntityId: s } : void 0), geoLocation: L, enableSideBySide: !("GROK_ANALYZE" === m.promptSource || h || D || v || O || A), toolOverrides: Z, isDeepsearch: O, isReasoning: A, personalityId: C, deepsearchArgs: k ?? (O ? B?.deepsearchArgs : void 0) };
-                    T(F.setPromptSource(f || "")), T(F.setUsingExperiment(!1)), T(F.userSendMessage(j, m)), (0, n.pv)(e, { conversationLength: H.length, isFileAttached: Boolean(j.fileAttachments?.length), isDeepsearch: Q.isDeepsearch || void 0, isReasoning: Q.isReasoning || void 0 }), p?.();
-                    const V = N.isTrue("responsive_web_grok_enable_add_response_keepalive") && (O || A),
-                        W = N.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
-                    return (0, d.D)({ grokModule: F, requestBody: Q, dispatch: T, analytics: e, api: U, flags: { enableLocation: G, enableGrokApiHost: M, numRetries: W, enableKeepalive: V }, featureSwitches: N });
+                    const W = { message: R ?? "", sender: i.CI.HUMAN, promptSource: f ?? "", ...(s ? { postIds: [s] } : void 0) };
+                    u && (W.fileAttachments = u), O && (W.isDeepsearch = O), A && (W.isReasoning = A);
+                    const q = { responses: j.concat(W), systemPromptName: K, grokModelOptionId: Z ?? x, conversationId: P, returnSearchResults: g, returnCitations: _, promptMetadata: m, imageGenerationCount: I, requestFeatures: S, ...(s ? { analysisEntityId: s } : void 0), geoLocation: L, enableSideBySide: !("GROK_ANALYZE" === m.promptSource || h || D || v || O || A), toolOverrides: V, isDeepsearch: O, isReasoning: A, personalityId: C, deepsearchArgs: k ?? (O ? Q?.deepsearchArgs : void 0) };
+                    T(F.setPromptSource(f || "")), T(F.setUsingExperiment(!1)), T(F.userSendMessage(W, m)), (0, n.pv)(e, { conversationLength: j.length, isFileAttached: Boolean(W.fileAttachments?.length), isDeepsearch: q.isDeepsearch || void 0, isReasoning: q.isReasoning || void 0 }), p?.();
+                    const Y = N.isTrue("responsive_web_grok_enable_add_response_keepalive") && (O || A),
+                        z = N.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
+                    return (0, d.D)({ grokModule: F, requestBody: q, dispatch: T, analytics: e, api: U, flags: { enableLocation: G, enableGrokApiHost: M, numRetries: z, enableKeepalive: Y }, featureSwitches: N });
                 };
         },
         63538: (e, t, s) => {
@@ -996,4 +1016,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f.3227e7da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f.138dbb1a.js.map

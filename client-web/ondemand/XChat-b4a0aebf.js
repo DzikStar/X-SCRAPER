@@ -16,7 +16,7 @@
                 u = a(761312),
                 x = a(842296),
                 p = a(155369),
-                v = a(889184),
+                v = a(864464),
                 h = a(463341),
                 f = a(110241),
                 g = a(617588),
@@ -389,4 +389,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.1d5b9d1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.fc982f9a.js.map

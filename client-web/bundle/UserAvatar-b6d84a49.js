@@ -114,7 +114,7 @@
                 g = async ({ analytics: e, api: t, dispatch: s, eventTag: g, featureSwitches: p, flags: S, grokModule: m, method: R = "POST", requestBody: h, requestParams: T }) => {
                     const I = p.isTrue("responsive_web_grok_download_favicons"),
                         f = g ? ` (${g})` : "",
-                        O = (function () {
+                        w = (function () {
                             const e = `grok-${r.ZP.isTwitterApp() ? (r.ZP.isAndroid() ? "android" : "ios") : "web"}:api-handler`,
                                 t = a.P_();
                             function s(s) {
@@ -126,8 +126,8 @@
                             }
                             return { record: s, recordOnce: n };
                         })(),
-                        w = Date.now();
-                    let A = !1,
+                        A = Date.now();
+                    let O = !1,
                         b = new AbortController();
                     s(m.setAbortController(b));
                     let C = !1;
@@ -190,7 +190,7 @@
                                 .then(async (t) => {
                                     const a = t.headers.get("x-transaction-id");
                                     if ((a && s(m.updatePerformanceMetrics({ traceId: a })), !t.ok)) {
-                                        O.record(`http-${t.status}`);
+                                        w.record(`http-${t.status}`);
                                         const r = (0, d.bY)(t.status);
                                         return s(m.grokResponseError(r)), void (0, n.Uk)(e, `add-response failed with status ${t.status}${f}`);
                                     }
@@ -209,9 +209,9 @@
                                                 H = !1;
                                                 if ((!N.length || N.every((e) => "" === e)) && !D) {
                                                     const t = `add-response failed to reach the network${f}`;
-                                                    return v.isDeepsearch && _({ messageStepAccumulator: v, analytics: e, dispatch: s, errorMessage: t, grokModule: m, resumabilityQueue: k, method: r }), s(m.grokResponseError(d.NE)), (0, n.Uk)(e, t), void O.record("network-error");
+                                                    return v.isDeepsearch && _({ messageStepAccumulator: v, analytics: e, dispatch: s, errorMessage: t, grokModule: m, resumabilityQueue: k, method: r }), s(m.grokResponseError(d.NE)), (0, n.Uk)(e, t), void w.record("network-error");
                                                 }
-                                                O.record("time-to-last-chunk"),
+                                                w.record("time-to-last-chunk"),
                                                     (function ({ analytics: e, dispatch: t, grokModule: s, isUnifiedReasoningLayout: r, messageStepAccumulator: o, method: a, resumabilityQueue: i }) {
                                                         o.isDeepsearch &&
                                                             (function ({ analytics: e, dispatch: t, grokModule: s, isUnifiedReasoningLayout: r, messageStepAccumulator: o }) {
@@ -222,7 +222,7 @@
                                                     })({ messageStepAccumulator: v, analytics: e, dispatch: s, grokModule: m, method: r, resumabilityQueue: k, isUnifiedReasoningLayout: x });
                                             }
                                             if (p) {
-                                                O.recordOnce("time-to-first-chunk"), A || ((A = !0), s(m.updatePerformanceMetrics({ timeToFirstChunkMs: Date.now() - w })));
+                                                w.recordOnce("time-to-first-chunk"), O || ((O = !0), s(m.updatePerformanceMetrics({ timeToFirstChunkMs: Date.now() - A })));
                                                 const a = g.decode(p);
                                                 if (((E += a), E.includes("\n"))) {
                                                     const t = E.split("\n");
@@ -242,7 +242,7 @@
                                                             if (t.result?.postIds) s(m.grokResponsePosts(t.result.postIds, n));
                                                             else if (t.result?.message && (!t.result?.messageTag || t.result?.messageTag === o.iS.FINAL)) {
                                                                 const e = !N[n];
-                                                                t.result?.isThinking ? (U[n] += t.result.message) : (N[n] += t.result.message), e && s(m.updatePerformanceMetrics({ timeToFirstTextMs: Date.now() - w }));
+                                                                t.result?.isThinking ? (U[n] += t.result.message) : (N[n] += t.result.message), e && s(m.updatePerformanceMetrics({ timeToFirstTextMs: Date.now() - A }));
                                                                 const a = t.result?.isThinking ? U[n] : N[n],
                                                                     i = t.result?.isThinking ? "thinkingTrace" : "message";
                                                                 "thinkingTrace" === i && y && (y = !1), "message" === i && U[0].length > 0 && !y && ((y = !0), "GET" === r ? k.resumingDispatch(() => s(m.updatePerformanceMetrics({ thinkingTraceEnd: Date.now() }))) : s(m.updatePerformanceMetrics({ thinkingTraceEnd: Date.now() }))), "GET" === r ? k.resumingDispatch(() => s(m.grokResponseTyping(a, i, n))) : s(m.grokResponseTyping(a, i, n)), (t.result?.messageTag === o.iS.FINAL || (t.result?.message && "STARTED" === v.state)) && (v.updateFinalAnswer({ messageTag: o.iS.FINAL, message: t.result?.message || "" }), v.complete(!x), "GET" === r ? (k.resumingDispatch(() => s(m.updatePerformanceMetrics({ thinkingTraceEnd: Date.now() }))), k.resumingDispatch(() => s(m.grokResponseMessageStepAccumulatorUpdate(v)))) : (s(m.updatePerformanceMetrics({ thinkingTraceEnd: Date.now() })), s(m.grokResponseMessageStepAccumulatorUpdate(v))));
@@ -276,11 +276,17 @@
                                                             if ((d && (d.imageAttachmentUpdate && s(m.imageIntermediateResult({ ...d.imageAttachmentUpdate, progress: d.imageAttachmentUpdate.progress / 100, imageUrl: d.imageAttachmentUpdate.imageUrl })), d.imageAttachmentRemoval && (P.setAttachmentAsModerated(d.imageAttachmentRemoval.imageIdStr), s(m.grokResponseFileAttachments(P.generateAttachmentList())))), S?.enableLocation && t.result?.doLocationRequest && !h.geoLocation && s(m.grokResponseCardAttachment({ cardType: "geo_location_request" })), t.result?.cardAttachment)) {
                                                                 const r = (0, u.dj)(t.result.cardAttachment, e);
                                                                 if (r) {
-                                                                    if ((s(m.grokResponseCardAttachment(r)), "x_posts_card" === r.cardType)) {
-                                                                        const e = r.post_ids;
-                                                                        s(i.Z.fetchMultiple(e));
+                                                                    if ("x_posts_card" === r.cardType) {
+                                                                        const e = r.post_ids,
+                                                                            t = [...new Set(e)];
+                                                                        (r.post_ids = t), s(i.Z.fetchMultiple(t));
                                                                     }
-                                                                    "x_users_card" === r.cardType && s(c.ZP.fetchManyByScreenNames(r.user_handles));
+                                                                    if ("x_users_card" === r.cardType) {
+                                                                        const e = r.user_handles,
+                                                                            t = [...new Set(e)];
+                                                                        (r.user_handles = t), s(c.ZP.fetchManyByScreenNames(t));
+                                                                    }
+                                                                    s(m.grokResponseCardAttachment(r));
                                                                 }
                                                             }
                                                             if ((t.result?.memoryReferences && s(m.grokResponseMemoryReferences(t.result.memoryReferences)), t.result?.messageTag && (t.result?.message || void 0 !== t.result?.messageStepId))) {
@@ -321,10 +327,10 @@
                                 })
                                 .catch(async (t) => {
                                     H = !1;
-                                    if (t instanceof window.DOMException && "AbortError" === t.name) "STARTED" === v.state && v.isDeepsearch && (0, n.YI)(e, { durationMs: v.getStreamDuration(), messageTagCounts: v.debugMessageTagCount }), k.abortQueue(), O.record("abort");
+                                    if (t instanceof window.DOMException && "AbortError" === t.name) "STARTED" === v.state && v.isDeepsearch && (0, n.YI)(e, { durationMs: v.getStreamDuration(), messageTagCounts: v.debugMessageTagCount }), k.abortQueue(), w.record("abort");
                                     else {
                                         if (j()) return void (await V(t.message));
-                                        v.isDeepsearch && _({ messageStepAccumulator: v, analytics: e, dispatch: s, grokModule: m, resumabilityQueue: k, method: r, errorMessage: t ? t.message : void 0 }), s(m.grokResponseError(d.NE)), (0, n.kl)(e, t), O.record("error");
+                                        v.isDeepsearch && _({ messageStepAccumulator: v, analytics: e, dispatch: s, grokModule: m, resumabilityQueue: k, method: r, errorMessage: t ? t.message : void 0 }), s(m.grokResponseError(d.NE)), (0, n.kl)(e, t), w.record("error");
                                     }
                                     s(m.updatePerformanceMetrics({ endStreamTime: Date.now() })), U[0].length > 0 && s(m.updatePerformanceMetrics({ thinkingTraceEnd: Date.now() }));
                                 });
@@ -438,7 +444,18 @@
                                 if (a.card_attachments)
                                     for (const e of a.card_attachments) {
                                         const r = (0, E.dj)(e);
-                                        r && (t.push(r), "x_posts_card" === r.cardType ? s(u.Z.fetchMultipleIfNeeded(r.post_ids)) : "x_users_card" === r.cardType && s(l.ZP.fetchManyByScreenNames(r.user_handles)));
+                                        if (r) {
+                                            if ("x_posts_card" === r.cardType) {
+                                                const e = r.post_ids,
+                                                    t = [...new Set(e)];
+                                                (r.post_ids = t), s(u.Z.fetchMultiple(t));
+                                            } else if ("x_users_card" === r.cardType) {
+                                                const e = r.user_handles,
+                                                    t = [...new Set(e)];
+                                                (r.user_handles = t), s(l.ZP.fetchManyByScreenNames(t));
+                                            }
+                                            t.push(r);
+                                        }
                                     }
                                 t.length && s(S.grokResponseCardAttachments(t));
                                 let r = [],
@@ -486,7 +503,7 @@
                 u = s(100326);
             const l =
                 ({ analytics: e, conversationKey: t }) =>
-                ({ analysisEntityId: s, attachments: l, mode: g, onStart: E, returnCitations: _, promptMetadata: p = { promptSource: "NATURAL", action: "INPUT" }, returnSearchResults: S = !0, features: m = { eagerTweets: !0, serverHistory: !0 }, text: R, isGrokDrawer: h = !1, trendPromptIdStr: T, imageGenerationCount: I, source: f, toolOverrides: O, isReasoning: w, isDeepsearch: A, isImageGen: b, deepsearchArgsOverride: C, personalityId: k }) =>
+                ({ analysisEntityId: s, attachments: l, mode: g, onStart: E, returnCitations: _, promptMetadata: p = { promptSource: "NATURAL", action: "INPUT" }, returnSearchResults: S = !0, features: m = { eagerTweets: !0, serverHistory: !0 }, text: R, isGrokDrawer: h = !1, trendPromptIdStr: T, imageGenerationCount: I, source: f, toolOverrides: w, isReasoning: A, isDeepsearch: O, isImageGen: b, deepsearchArgsOverride: C, personalityId: k }) =>
                 async (T, N, { api: U, featureSwitches: y }) => {
                     const M = !r.ZP.isTwitterApp() && y.isTrue("responsive_web_grok_api_enable_grok_host"),
                         P = (0, o.bD)(t);
@@ -502,23 +519,26 @@
                     }
                     const K = g ?? P.selectMode(N()),
                         H = (0, o.F9)(N()),
-                        x = P.selectConversationForAPI(N()),
-                        Q = (0, o.en)(N()),
-                        j = { ...O };
-                    if ((b && (j.imageGen = !0), Q && Q.toolOverrides)) {
-                        const e = Q.toolOverrides;
+                        x = (0, o.vf)(N()),
+                        Q = x.find((e) => e.isAnalyzeEnabled)?.id,
+                        j = "GROK_ANALYZE" === p.promptSource ? Q : null,
+                        V = P.selectConversationForAPI(N()),
+                        Y = (0, o.en)(N()),
+                        B = { ...w };
+                    if ((b && (B.imageGen = !0), Y && Y.toolOverrides)) {
+                        const e = Y.toolOverrides;
                         Object.keys(e).forEach((t) => {
-                            j[t] = e[t];
+                            B[t] = e[t];
                         });
                     }
                     if (!(R || (l && 0 !== l.length))) return Promise.resolve();
-                    const V = { message: R ?? "", sender: i.CI.HUMAN, promptSource: f ?? "", ...(s ? { postIds: [s] } : void 0) };
-                    l && (V.fileAttachments = l), A && (V.isDeepsearch = A), w && (V.isReasoning = w);
-                    const Y = { responses: x.concat(V), systemPromptName: K, grokModelOptionId: H, conversationId: v, returnSearchResults: S, returnCitations: _, promptMetadata: p, imageGenerationCount: I, requestFeatures: m, ...(s ? { analysisEntityId: s } : void 0), geoLocation: F, enableSideBySide: !("GROK_ANALYZE" === p.promptSource || h || L || G || A || w), toolOverrides: j, isDeepsearch: A, isReasoning: w, personalityId: k, deepsearchArgs: C ?? (A ? Q?.deepsearchArgs : void 0) };
-                    T(P.setPromptSource(f || "")), T(P.setUsingExperiment(!1)), T(P.userSendMessage(V, p)), (0, a.pv)(e, { conversationLength: x.length, isFileAttached: Boolean(V.fileAttachments?.length), isDeepsearch: Y.isDeepsearch || void 0, isReasoning: Y.isReasoning || void 0 }), E?.();
-                    const B = y.isTrue("responsive_web_grok_enable_add_response_keepalive") && (A || w),
-                        Z = y.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
-                    return (0, d.D)({ grokModule: P, requestBody: Y, dispatch: T, analytics: e, api: U, flags: { enableLocation: D, enableGrokApiHost: M, numRetries: Z, enableKeepalive: B }, featureSwitches: y });
+                    const Z = { message: R ?? "", sender: i.CI.HUMAN, promptSource: f ?? "", ...(s ? { postIds: [s] } : void 0) };
+                    l && (Z.fileAttachments = l), O && (Z.isDeepsearch = O), A && (Z.isReasoning = A);
+                    const W = { responses: V.concat(Z), systemPromptName: K, grokModelOptionId: j ?? H, conversationId: v, returnSearchResults: S, returnCitations: _, promptMetadata: p, imageGenerationCount: I, requestFeatures: m, ...(s ? { analysisEntityId: s } : void 0), geoLocation: F, enableSideBySide: !("GROK_ANALYZE" === p.promptSource || h || L || G || O || A), toolOverrides: B, isDeepsearch: O, isReasoning: A, personalityId: k, deepsearchArgs: C ?? (O ? Y?.deepsearchArgs : void 0) };
+                    T(P.setPromptSource(f || "")), T(P.setUsingExperiment(!1)), T(P.userSendMessage(Z, p)), (0, a.pv)(e, { conversationLength: V.length, isFileAttached: Boolean(Z.fileAttachments?.length), isDeepsearch: W.isDeepsearch || void 0, isReasoning: W.isReasoning || void 0 }), E?.();
+                    const q = y.isTrue("responsive_web_grok_enable_add_response_keepalive") && (O || A),
+                        z = y.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
+                    return (0, d.D)({ grokModule: P, requestBody: W, dispatch: T, analytics: e, api: U, flags: { enableLocation: D, enableGrokApiHost: M, numRetries: z, enableKeepalive: q }, featureSwitches: y });
                 };
         },
         63538: (e, t, s) => {
@@ -548,7 +568,7 @@
                         });
         },
         189953: (e, t, s) => {
-            s.d(t, { $t: () => ne, A0: () => pe, BA: () => se, BS: () => y, CH: () => P, CR: () => q, Cr: () => f, DX: () => Z, Dh: () => m, Dn: () => M, En: () => d, FF: () => x, FV: () => N, Gy: () => k, HF: () => _, IK: () => o, JO: () => Y, Jt: () => re, KH: () => I, L0: () => $, Lc: () => n, OW: () => U, Oj: () => b, P9: () => V, Q_: () => a, Qg: () => F, Qh: () => X, Sv: () => i, TY: () => L, Tv: () => W, UN: () => A, VK: () => c, WK: () => te, Ws: () => u, Xg: () => z, Xi: () => D, Y8: () => l, Yb: () => h, Yf: () => r, Yx: () => g, ZN: () => B, _i: () => ce, ar: () => Q, cA: () => _e, cw: () => ae, dK: () => E, dO: () => R, dZ: () => G, dw: () => ge, f1: () => le, fH: () => Re, ip: () => H, j$: () => Se, lQ: () => ee, lh: () => p, lm: () => S, mq: () => me, my: () => w, nK: () => C, o$: () => v, px: () => ie, qd: () => j, ru: () => Ee, ub: () => O, vc: () => K, vi: () => T, wG: () => oe, x5: () => J, yB: () => ue, z2: () => de });
+            s.d(t, { $t: () => ne, A0: () => pe, BA: () => se, BS: () => y, CH: () => P, CR: () => q, Cr: () => f, DX: () => Z, Dh: () => m, Dn: () => M, En: () => d, FF: () => x, FV: () => N, Gy: () => k, HF: () => _, IK: () => o, JO: () => Y, Jt: () => re, KH: () => I, L0: () => $, Lc: () => n, OW: () => U, Oj: () => b, P9: () => V, Q_: () => a, Qg: () => F, Qh: () => X, Sv: () => i, TY: () => L, Tv: () => W, UN: () => O, VK: () => c, WK: () => te, Ws: () => u, Xg: () => z, Xi: () => D, Y8: () => l, Yb: () => h, Yf: () => r, Yx: () => g, ZN: () => B, _i: () => ce, ar: () => Q, cA: () => _e, cw: () => ae, dK: () => E, dO: () => R, dZ: () => G, dw: () => ge, f1: () => le, fH: () => Re, ip: () => H, j$: () => Se, lQ: () => ee, lh: () => p, lm: () => S, mq: () => me, my: () => A, nK: () => C, o$: () => v, px: () => ie, qd: () => j, ru: () => Ee, ub: () => w, vc: () => K, vi: () => T, wG: () => oe, x5: () => J, yB: () => ue, z2: () => de });
             const r = "grok",
                 o = Object.freeze({ FUN: "fun", REGULAR: "" }),
                 a = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
@@ -569,9 +589,9 @@
                 T = "rweb/grok/RENAME_CONVERSATION",
                 I = "rweb/grok/SET_ABORT_CONTROLLER",
                 f = "rweb/grok/CLEAR_CONVERSATION",
-                O = "rweb/grok/USER_SEND_MESSAGE",
-                w = "rweb/grok/REGENERATE_RESPONSE",
-                A = "rweb/grok/GROK_RESPONSE_TYPING",
+                w = "rweb/grok/USER_SEND_MESSAGE",
+                A = "rweb/grok/REGENERATE_RESPONSE",
+                O = "rweb/grok/GROK_RESPONSE_TYPING",
                 b = "rweb/grok/GROK_RESPONSE_POSTS",
                 C = "rweb/grok/GROK_RESPONSE_MEDIA_POSTS",
                 k = "rweb/grok/GROK_RESPONSE_COMPLETE",
@@ -647,4 +667,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-b6d84a49.6003882a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-b6d84a49.d573c25a.js.map

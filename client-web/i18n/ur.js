@@ -1375,7 +1375,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 o("c60b9e5c", "Changes will take effect for newly loaded content."),
-                o("c6ad999b", "languages settings"),
+                o("f9317b98", "language settings"),
                 o("hba0547a", "Unable to update settings. Please try again later."),
                 o("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
@@ -4363,7 +4363,6 @@
                 o("a15d62db", function (e) {
                     return "Thought for " + e.seconds + "s";
                 }),
-                o("f26fc748", "Script"),
                 o("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4935,9 +4934,9 @@
                 o("ff95a9cc", "Video ID"),
                 o("a97e358e", "Video Link"),
                 o("e10e8b46", "Only showing the videos from the last 100 days."),
-                o("ba37f6da", "Video overview");
-            o("f19846b2", "Video thumbnail"),
-                o("ccd6f4a8", "Video title"),
+                o("ba37f6da", "Video overview"),
+                o("f19846b2", "Video thumbnail");
+            o("ccd6f4a8", "Video title"),
                 o("c8410542", "The number of times your video was viewed."),
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
@@ -5887,9 +5886,9 @@
                 o("af781666", "What do people think?"),
                 o("a1f414ee", "Share thoughts"),
                 o("ed88e742", "موضوع ی لنک کو کاپی کریں"),
-                o("h92fe1be", "بدقسمتی سے، اس وقت کمیونٹی نوٹس آپ کیلئے دستیاب نہیں ہیں۔");
-            o("f0dc1434", "کمیونٹٰی نوٹس فی الحال صرف امریکہ میں دستیاب ہیں"),
-                o("f8fc0b48", "فولڈر بنائیں"),
+                o("h92fe1be", "بدقسمتی سے، اس وقت کمیونٹی نوٹس آپ کیلئے دستیاب نہیں ہیں۔"),
+                o("f0dc1434", "کمیونٹٰی نوٹس فی الحال صرف امریکہ میں دستیاب ہیں");
+            o("f8fc0b48", "فولڈر بنائیں"),
                 o("c14bcdde", "بک مارکس تلاش کریں"),
                 o("e9c65c4a", "Bookmarks search"),
                 o("b92a21d9", function (e) {
@@ -6893,9 +6892,9 @@
                 o("b8cbb51a", "Job Summary"),
                 o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
-                o("d4b6a6e0", "پروفائل اسپاٹ لائٹ");
-            o("j2dd3686", "Highlight featured jobs above my posts."),
-                o("af1cfd46", "ATS integration"),
+                o("d4b6a6e0", "پروفائل اسپاٹ لائٹ"),
+                o("j2dd3686", "Highlight featured jobs above my posts.");
+            o("af1cfd46", "ATS integration"),
                 o("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 o("h99f11fa", "Delete integration"),
                 o("eef1ae76", "Currently connected"),
@@ -7875,7 +7874,8 @@
                 o("b74ff5fc", "اگر آپ منسوخ کرتے ہیں، تو آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔"),
                 o("ee9efbc8", "کینسلیشن جاری رکھیں"),
                 o("c5d9c77a", "لگتا ہے ہلکی سی آواڑ آئی ہے۔ پریشان نہ ہوں، یہ آپ کی غلطی نہیں ہے۔ اس ونڈو کو بند کریں اور دوبارہ کوشش کریں۔"),
-                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔");
+                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
+                o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7914,10 +7914,9 @@
                     c(e, t)
                 );
             }
-            o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
-                o("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
+            o("i5f14be7", function (e) {
+                return "Welcome back, " + e.displayName;
+            }),
                 o("a76d58ba", "Ads Analytics"),
                 o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8915,9 +8914,9 @@
                     return e.advertiserName + " ملاحظہ کریں";
                 }),
                 o("c67e71aa", "ابھی دیکھیں"),
-                o("a6ada13e", "Shop now");
-            o("j0f12222", "مزید دیکھیں"),
-                o("f569f7c8", "ویب سائٹ پر جائیں"),
+                o("a6ada13e", "Shop now"),
+                o("j0f12222", "مزید دیکھیں");
+            o("f569f7c8", "ویب سائٹ پر جائیں"),
                 o("j0c6772a", "ویب سائٹ ملاحظہ کریں"),
                 o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
                 o("b3112b8a", "چھوڑ دیں"),
@@ -10162,7 +10161,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13365,4 +13364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.6b55e6fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.52fde0ca.js.map

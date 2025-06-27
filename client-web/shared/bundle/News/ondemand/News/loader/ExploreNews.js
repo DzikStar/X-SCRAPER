@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.News~ondemand.News~loader.ExploreNews", "icons/IconChevronLeft-js"],
+    ["shared~bundle.News~ondemand.News~loader.ExploreNews"],
     {
         193285: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -368,39 +368,39 @@
                     E = a.useCallback(() => {
                         (0, b.XB)(u, { articleId: e });
                     }, [e, u]);
-                return a.createElement(g.Z, { onClick: s, style: [v.outerContainer, d], withoutInteractiveStyles: !0 }, ({ isHovered: e }) =>
+                return a.createElement(g.Z, { onClick: s, style: [k.outerContainer, d], withoutInteractiveStyles: !0 }, ({ isHovered: e }) =>
                     a.createElement(
                         a.Fragment,
                         null,
                         a.createElement(f.D, { id: "news_article_sentiment", onFullyVisible: E, position: "top", testID: "news_article_sentiment" }),
                         a.createElement(
                             o.Z,
-                            { style: [v.container, e && s ? v.hoveredContainer : void 0, n, e && s && r] },
-                            a.createElement(o.Z, { style: v.headerContainer }, a.createElement(i.ZP, { style: v.question }, l), a.createElement(i.ZP, { style: v.totalPosts, weight: "normal" }, `${y} posts`)),
+                            { style: [k.container, e && s ? k.hoveredContainer : void 0, n, e && s && r] },
+                            a.createElement(o.Z, { style: k.headerContainer }, a.createElement(i.ZP, { style: k.question }, l), a.createElement(i.ZP, { style: k.totalPosts, weight: "normal" }, `${y} posts`)),
                             a.createElement(
                                 o.Z,
-                                { style: v.barContainer },
-                                a.createElement(o.Z, { style: v.baseBar }),
+                                { style: k.barContainer },
+                                a.createElement(o.Z, { style: k.baseBar }),
                                 a.createElement(
                                     o.Z,
-                                    { style: v.scoreBarsContainer },
+                                    { style: k.scoreBarsContainer },
                                     h.map((e, t) => {
                                         const n = t === h.length - 1;
-                                        return a.createElement(o.Z, { key: `sentiment-bar-score-${e.type}`, style: [v.scoreBar, { flex: n ? 1 : void 0, width: n ? void 0 : `${e.value}%`, borderTopEndRadius: n ? x : 0, borderBottomEndRadius: n ? x : 0 }] }, a.createElement(o.Z, { style: [v.scoreBarBackground, { backgroundColor: e.color }] }), e.value > w && a.createElement(i.ZP, { numberOfLines: 1, style: v.scoreBarText }, `${e.value}%`));
+                                        return a.createElement(o.Z, { key: `sentiment-bar-score-${e.type}`, style: [k.scoreBar, { flex: n ? 1 : void 0, width: n ? void 0 : `${e.value}%`, borderTopEndRadius: n ? x : 0, borderBottomEndRadius: n ? x : 0 }] }, a.createElement(o.Z, { style: [k.scoreBarBackground, { backgroundColor: e.color }] }), e.value > w && a.createElement(i.ZP, { numberOfLines: 1, style: k.scoreBarText }, `${e.value}%`));
                                     }),
                                 ),
                             ),
                             a.createElement(
                                 o.Z,
-                                { style: v.legendContainer },
-                                h.map((e) => a.createElement(o.Z, { style: v.legendItem }, a.createElement(i.ZP, { style: v.legendItemType }, e.type), a.createElement(o.Z, { style: [v.legendItemColor, { backgroundColor: e.color }] }))),
+                                { style: k.legendContainer },
+                                h.map((e) => a.createElement(o.Z, { style: k.legendItem }, a.createElement(i.ZP, { style: k.legendItemType }, e.type), a.createElement(o.Z, { style: [k.legendItemColor, { backgroundColor: e.color }] }))),
                             ),
                         ),
                     ),
                 );
             }
-            const v = l.default.create((e) => ({ outerContainer: { flex: 1 }, container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space12, padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, transition: "background-color 0.2s ease" }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4 }, question: {}, totalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, barContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, baseBar: { backgroundColor: e.colors.gray100, width: e.spaces.space2, height: 45 }, scoreBarsContainer: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, scoreBar: { height: 35, display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }, scoreBarBackground: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { width: "0%" }, "100%": { width: "100%" } }], animationFillMode: "both" }, scoreBarText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, legendContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space16 }, legendItem: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, legendItemType: { fontSize: e.fontSizes.subtext1, color: e.colors.gray1000 }, legendItemColor: { width: e.spaces.space12, height: e.spaces.space12, borderRadius: e.borderRadii.small } }));
-            var k = n(807896),
+            const k = l.default.create((e) => ({ outerContainer: { flex: 1 }, container: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space12, padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, transition: "background-color 0.2s ease" }, hoveredContainer: { backgroundColor: e.colors.gray50 }, headerContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4 }, question: {}, totalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, barContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center" }, baseBar: { backgroundColor: e.colors.gray100, width: e.spaces.space2, height: 45 }, scoreBarsContainer: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, scoreBar: { height: 35, display: "flex", flexDirection: "column", justifyContent: "center", position: "relative", overflow: "hidden" }, scoreBarBackground: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { width: "0%" }, "100%": { width: "100%" } }], animationFillMode: "both" }, scoreBarText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, legendContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space16 }, legendItem: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, legendItemType: { fontSize: e.fontSizes.subtext1, color: e.colors.gray1000 }, legendItemColor: { width: e.spaces.space12, height: e.spaces.space12, borderRadius: e.borderRadii.small } }));
+            var v = n(807896),
                 Z = n(18205),
                 _ = n(632908),
                 S = n(755484),
@@ -443,13 +443,13 @@
                 return null;
             }
             const N = l.default.create((e) => ({ tooltip: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, percentages: { display: " flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8 }, tooltipType: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, tooltipTypeColor: { width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8 }, tooltipTypeLabel: { fontSize: "inherit", lineHeight: "inherit" }, tooltipValue: { fontSize: "inherit", lineHeight: "inherit" }, tooltipDate: { color: e.colors.gray700, fontSize: "inherit", lineHeight: "inherit" } }));
-            function L({ color: e, cx: t, cy: n }) {
+            function H({ color: e, cx: t, cy: n }) {
                 const r = 16;
-                return a.createElement("g", null, a.createElement("foreignObject", { height: r, width: r, x: t - 8, y: n - 8 }, a.createElement(o.Z, { style: [H.dotContainer, { width: r, height: r }] }, a.createElement(o.Z, { style: [H.dot, { backgroundColor: e, width: 8, height: 8 }] }), a.createElement(o.Z, { style: H.pulseContainer }, a.createElement(o.Z, { style: [H.pulse, { backgroundColor: c.Z.hexToCss(e, 0.5) }] })))));
+                return a.createElement("g", null, a.createElement("foreignObject", { height: r, width: r, x: t - 8, y: n - 8 }, a.createElement(o.Z, { style: [L.dotContainer, { width: r, height: r }] }, a.createElement(o.Z, { style: [L.dot, { backgroundColor: e, width: 8, height: 8 }] }), a.createElement(o.Z, { style: L.pulseContainer }, a.createElement(o.Z, { style: [L.pulse, { backgroundColor: c.Z.hexToCss(e, 0.5) }] })))));
             }
-            const H = l.default.create((e) => ({ dotContainer: { position: "relative", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, dot: { borderRadius: e.borderRadii.infinite }, pulseContainer: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, borderRadius: e.borderRadii.infinite, display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, pulse: { borderRadius: e.borderRadii.infinite, animationDuration: "1s", animationTimingFunction: "linear", animationIterationCount: "infinite", animationFillMode: "forwards", animationDelay: "0s", width: "100%", height: "100%", animationKeyframes: [{ "0%": { transform: "scale(0)", opacity: 1 } }, { "95%": { transform: "scale(1)", opacity: 1 } }, { "100%": { transform: "scale(1)", opacity: 0 } }] } })),
+            const L = l.default.create((e) => ({ dotContainer: { position: "relative", display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, dot: { borderRadius: e.borderRadii.infinite }, pulseContainer: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0, borderRadius: e.borderRadii.infinite, display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }, pulse: { borderRadius: e.borderRadii.infinite, animationDuration: "1s", animationTimingFunction: "linear", animationIterationCount: "infinite", animationFillMode: "forwards", animationDelay: "0s", width: "100%", height: "100%", animationKeyframes: [{ "0%": { transform: "scale(0)", opacity: 1 } }, { "95%": { transform: "scale(1)", opacity: 1 } }, { "100%": { transform: "scale(1)", opacity: 0 } }] } })),
                 O = "news-sentiment-recharts";
-            function j({ chartData: e, isBlurred: t, question: n, typeMetadata: r }) {
+            function W({ chartData: e, isBlurred: t, question: n, typeMetadata: r }) {
                 const s = (0, p.Z)(),
                     { sentimentScores: d } = C({ chartData: e, typeMetadata: r }),
                     [m, u] = a.useState({}),
@@ -479,18 +479,18 @@
                     x = Object.keys(m);
                 return a.createElement(
                     o.Z,
-                    { style: [W.container, t ? W.blur : void 0] },
+                    { style: [j.container, t ? j.blur : void 0] },
                     a.createElement(
                         T.Z,
-                        { buttonsContainerStyle: W.typesContent, style: W.types },
+                        { buttonsContainerStyle: j.typesContent, style: j.types },
                         Object.keys(r).map((e) => {
                             const t = r[e];
-                            return a.createElement(g.Z, { key: `${e}-toggle`, onClick: () => f(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [W.typeContainer, { backgroundColor: c.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: c.Z.hexToCss(t.color, 0.3) } : void 0, x.length > 0 && !x.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(i.ZP, { style: W.type }, t.label)));
+                            return a.createElement(g.Z, { key: `${e}-toggle`, onClick: () => f(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [j.typeContainer, { backgroundColor: c.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: c.Z.hexToCss(t.color, 0.3) } : void 0, x.length > 0 && !x.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(i.ZP, { style: j.type }, t.label)));
                         }),
                     ),
                     a.createElement(
                         o.Z,
-                        { style: W.lineChart },
+                        { style: j.lineChart },
                         a.createElement(
                             B.Z,
                             { className: O },
@@ -501,18 +501,18 @@
                                     _.w,
                                     { data: e, height: y, key: h },
                                     a.createElement(S.q, { fillOpacity: 0.6, horizontal: !0, stroke: l.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
-                                    a.createElement(D.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: W.tick, tickFormatter: b, tickLine: !1, type: "number" }),
-                                    a.createElement(P.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: W.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
+                                    a.createElement(D.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: j.tick, tickFormatter: b, tickLine: !1, type: "number" }),
+                                    a.createElement(P.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: j.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
                                     a.createElement(I.u, { content: a.createElement(F, null), cursor: { stroke: l.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
                                     Object.keys(r).map((e) => (m[e] || 0 === x.length ? a.createElement(M.x, { activeDot: !0, connectNulls: !0, dataKey: `${r[e].idx}-value`, dot: !1, key: `line-chart-${e}`, stroke: r[e].color, strokeWidth: 2.5, type: "monotone" }) : null)),
-                                    d.map((e) => (m[e.type] || 0 === x.length ? a.createElement(z.q, { alwaysShow: !0, isFront: !0, key: `sentiment-score-${e.type}`, shape: (t) => a.createElement(L, (0, k.Z)({}, t, { color: e.color })), x: e.timestamp, y: e.value }) : null)),
+                                    d.map((e) => (m[e.type] || 0 === x.length ? a.createElement(z.q, { alwaysShow: !0, isFront: !0, key: `sentiment-score-${e.type}`, shape: (t) => a.createElement(H, (0, v.Z)({}, t, { color: e.color })), x: e.timestamp, y: e.value }) : null)),
                                 ),
                             ),
                         ),
                     ),
                 );
             }
-            const W = l.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
+            const j = l.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
                 q = [l.default.theme.colors.blue300, l.default.theme.colors.yellow300, l.default.theme.colors.orange300, l.default.theme.colors.green300, l.default.theme.colors.magenta300, l.default.theme.colors.plum300, l.default.theme.colors.red300, l.default.theme.colors.purple300, l.default.theme.colors.teal300];
             const A = m().af781666,
                 K = m().a1f414ee;
@@ -537,11 +537,11 @@
                             );
                         }, [e]);
                     })({ sentiment: c }),
-                    v = a.useCallback(() => {
+                    k = a.useCallback(() => {
                         const t = `https://x.com/i/news/article/${e}`;
                         u.ZP.isTwitterApp() ? (window.location.href = `https://x.com/compose/tweet?text=${t}`) : b.push({ pathname: "/compose/post", query: { text: t } }), f.scribe({ element: "share_news_article_sentiment", action: "click", data: { event_info: e } });
                     }, [f, e, b]);
-                return x.length ? (d ? a.createElement(E, { articleId: e, chartData: x, containerStyle: t, hoveredStyle: n, onClick: l, question: c.question, size: m, style: g, typeMetadata: w }) : a.createElement(o.Z, { style: [G.container, g] }, a.createElement(o.Z, { style: G.headerContainer }, a.createElement(o.Z, { style: G.questionContainer }, a.createElement(o.Z, { style: G.titleContainer }, a.createElement(i.ZP, { style: G.title, weight: "bold" }, A), a.createElement(s.ZP, { onClick: v, size: "small", type: "primaryFilled" }, K)), a.createElement(i.ZP, { style: G.question }, c.question))), a.createElement(o.Z, { style: G.visibilityContainer }, a.createElement(j, { chartData: x, isBlurred: !C, question: c.question, typeMetadata: w }), !C && a.createElement(o.Z, { style: G.loggedOutContainer }, a.createElement(s.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
+                return x.length ? (d ? a.createElement(E, { articleId: e, chartData: x, containerStyle: t, hoveredStyle: n, onClick: l, question: c.question, size: m, style: g, typeMetadata: w }) : a.createElement(o.Z, { style: [G.container, g] }, a.createElement(o.Z, { style: G.headerContainer }, a.createElement(o.Z, { style: G.questionContainer }, a.createElement(o.Z, { style: G.titleContainer }, a.createElement(i.ZP, { style: G.title, weight: "bold" }, A), a.createElement(s.ZP, { onClick: k, size: "small", type: "primaryFilled" }, K)), a.createElement(i.ZP, { style: G.question }, c.question))), a.createElement(o.Z, { style: G.visibilityContainer }, a.createElement(W, { chartData: x, isBlurred: !C, question: c.question, typeMetadata: w }), !C && a.createElement(o.Z, { style: G.loggedOutContainer }, a.createElement(s.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))))) : null;
             }
             const G = l.default.create((e) => ({ container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, titleContainer: { display: "flex", flexDirection: "row", flex: 1, justifyContent: "space-between", alignItems: "center" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: c.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
         },
@@ -637,12 +637,12 @@
                     const { additionalControl: e, align: t, buttonType: n, children: r, style: i, subtitle: s, title: d, topBarStyle: g, withBackgroundBlur: f, withTopBar: b, withTransparentMask: C } = this.props,
                         { isVisible: E } = this.state;
                     return a.createElement(y.ZP.Consumer, null, ({ direction: y }) => {
-                        const v = "rtl" === y,
-                            k = E ? w.visibleDrawer : ("left" === t) === v ? w.offscreenRightDrawer : w.offscreenLeftDrawer,
+                        const k = "rtl" === y,
+                            v = E ? w.visibleDrawer : ("left" === t) === k ? w.offscreenRightDrawer : w.offscreenLeftDrawer,
                             Z = E && !C ? w.maskWithBg : w.maskTransparent,
                             _ = E ? w.animateOpen : w.animateClose,
                             S = l.Z.reducedMotionEnabled ? null : _;
-                        return a.createElement(h.Z.Modal, null, a.createElement(p.Z, null, a.createElement(u.Z, null, a.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, Z, S, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, m.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: x, style: [w.root, f ? w.backgroundRootBlur : null, k, S, i], children: a.createElement(a.Fragment, null, b ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: g, subtitle: s, title: d }) : null, a.createElement(o.Z, { style: w.contentContainer }, r)) })))));
+                        return a.createElement(h.Z.Modal, null, a.createElement(p.Z, null, a.createElement(u.Z, null, a.createElement(o.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [w.mask, Z, S, f ? w.backgroundBlur : null, "left" === t ? w.alignLeft : w.alignRight] }, (0, m.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: x, style: [w.root, f ? w.backgroundRootBlur : null, v, S, i], children: a.createElement(a.Fragment, null, b ? a.createElement(c.Z, { leftControl: "left" === t ? e : "right" === t ? this._renderCloseButton(n) : null, rightControl: "left" === t ? this._renderCloseButton(n) : "right" === t ? e : null, style: g, subtitle: s, title: d }) : null, a.createElement(o.Z, { style: w.contentContainer }, r)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -687,21 +687,6 @@
             const l = i.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = s;
         },
-        97301: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var a = n(202784),
-                o = n(890601),
-                r = n(783427),
-                i = n(717683),
-                s = n(347101);
-            const l = (e = {}) => {
-                const t = a.useContext(i.Z),
-                    { direction: n } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15.043 3.54l1.414 1.42L9.414 12l7.043 7.04-1.414 1.42L6.586 12l8.457-8.46z" })) }, { writingDirection: n });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.287d1fda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.bb70d29a.js.map

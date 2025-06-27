@@ -466,11 +466,6 @@
                             (e) => {
                                 const { errors: t, message: a, url: n } = e.data;
                                 switch (a) {
-                                    case k.initPorts: {
-                                        const t = e.ports?.[0];
-                                        t && (C?.(t), u && t.postMessage(u), (t.onmessage = d));
-                                        break;
-                                    }
                                     case k.changePhone:
                                         Z.push("/settings/phone");
                                         break;
@@ -494,10 +489,24 @@
                                 }
                                 d?.(e);
                             },
-                            [d, Z, D, x, N, l, q, C, u, s],
+                            [d, Z, D, x, N, l, q, s],
+                        ),
+                        O = n.useCallback(
+                            (e) => {
+                                const { message: t } = e.data;
+                                switch (t) {
+                                    case k.initPorts: {
+                                        const t = e.ports?.[0];
+                                        t && (C?.(t), u && t.postMessage(u), (t.onmessage = d ?? L));
+                                        break;
+                                    }
+                                }
+                                L(e);
+                            },
+                            [L, d, u, C],
                         );
-                    P({ allowedOrigin: E, handler: L, linkType: a });
-                    const O = n.useMemo(() => {
+                    P({ allowedOrigin: E, handler: O, linkType: a });
+                    const U = n.useMemo(() => {
                         if (!S || !E || !T) return;
                         const e = new Map();
                         return (
@@ -515,7 +524,7 @@
                             (0, v.uG)({ basePath: `/${H}`, xPaymentsSession: S, theme: A, paymentsOrigin: E, moreSearchParams: e, providerToken: T })
                         );
                     }, [S, E, T, t, H, A, b, p]);
-                    return F ? n.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: a, redirectPath: r, redirectState: i }) : n.createElement(I, { allowClipboardWrite: M, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: z, isNonModalScreen: m });
+                    return F ? n.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: a, redirectPath: r, redirectState: i }) : n.createElement(I, { allowClipboardWrite: M, iframeUrl: U, isBackgroundHidden: h, isInlineFrame: z, isNonModalScreen: m });
                 },
                 E = (e) => {
                     const t = n.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
@@ -1229,4 +1238,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.1704a06a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.34d62a5a.js.map

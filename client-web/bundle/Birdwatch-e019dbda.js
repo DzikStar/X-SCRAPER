@@ -55,8 +55,8 @@
                 u = o(789831),
                 E = o(252021),
                 _ = o(293115),
-                b = o(87063),
-                h = o(652904),
+                h = o(87063),
+                b = o(652904),
                 p = o(507651),
                 S = o(3138),
                 m = o(655352),
@@ -120,7 +120,7 @@
                 }
                 render() {
                     const { initialFetchStatus: e } = this.props;
-                    return e === b.Z.LOADED ? this._render() : null;
+                    return e === h.Z.LOADED ? this._render() : null;
                 }
                 _buildTabNamespace(e, t) {
                     let o;
@@ -141,27 +141,23 @@
             const M = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.5"),
-                        o.e("icons.25"),
-                        o.e("icons.22"),
-                        o.e("icons.6"),
-                        o.e("icons.4"),
-                        o.e("icons.9"),
-                        o.e("icons.15"),
-                        o.e("icons.7"),
-                        o.e("icons.3"),
-                        o.e("icons.20"),
+                        o.e("icons.21"),
+                        o.e("icons.16"),
+                        o.e("icons.10"),
+                        o.e("icons.19"),
+                        o.e("icons.1"),
+                        o.e("icons.0"),
+                        o.e("icons.8"),
                         o.e("icons.2"),
-                        o.e("icons.18"),
-                        o.e("icons.27"),
-                        o.e("icons.13"),
+                        o.e("icons.23"),
+                        o.e("icons.3"),
+                        o.e("icons.4"),
+                        o.e("icons.15"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.0"),
-                        o.e("icons.24"),
-                        o.e("icons.17"),
-                        o.e("icons.12"),
-                        o.e("icons.11"),
+                        o.e("icons.9"),
+                        o.e("icons.7"),
+                        o.e("icons.28"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -172,17 +168,20 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.10"),
-                        o.e("icons.8"),
                         o.e("icons.26"),
-                        o.e("icons.19"),
+                        o.e("icons.24"),
+                        o.e("icons.29"),
+                        o.e("icons.18"),
+                        o.e("icons.13"),
+                        o.e("icons.25"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -298,9 +297,9 @@
                     const { entryConfiguration: e, initialModule: t, pageConfiguration: o, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, selectedTab: i, timelinePrefix: l, title: c, withoutHeadroom: u } = this.props;
                     if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return n.createElement(M, null);
                     const E = this._getModule(i, o?.tabs?.initialTabId, t, l),
-                        b = this._getRefreshIntervalSecForCurrentTab(),
-                        h = b ? 1e3 * b : void 0;
-                    return n.createElement(_.nO, { namespace: this._getTimelineNamespace() }, n.createElement(y.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: h, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, title: c, withoutHeadroom: u }));
+                        h = this._getRefreshIntervalSecForCurrentTab(),
+                        b = h ? 1e3 * h : void 0;
+                    return n.createElement(_.nO, { namespace: this._getTimelineNamespace() }, n.createElement(y.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: b, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, title: c, withoutHeadroom: u }));
                 }
             }
             Z.contextType = L.rC;
@@ -336,7 +335,7 @@
             var Y = o(24949);
             const $ = (e, t) => t.module.selectPageConfiguration(e),
                 J = (e, t) => t.module.selectInitialFetchStatus(e),
-                X = (0, Y.P1)($, J, (e, t) => t !== b.Z.LOADED || (!!e && !!e.tabs)),
+                X = (0, Y.P1)($, J, (e, t) => t !== h.Z.LOADED || (!!e && !!e.tabs)),
                 ee = (0, C.Z)()
                     .propsFromState(() => ({ hasTabNavigation: X, pageConfiguration: $, initialFetchStatus: J }))
                     .withAnalytics();
@@ -356,8 +355,8 @@
                 ue = (e) => (0, te.ju)(`https://x.com/i/topics/${e}`),
                 Ee = (e) => `twitter://topics_timeline?id=${e}`,
                 _e = i().ed88e742;
-            const be = G.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
-                he = ce(function (e) {
+            const he = G.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
+                be = ce(function (e) {
                     const t = e.navBar.topicId ? e.navBar.topicId : "",
                         {
                             isHeaderOffscreen: o,
@@ -369,9 +368,9 @@
                         } = e,
                         { featureSwitches: c } = n.useContext(L.rC),
                         u = c.isTrue("topic_landing_page_share_enabled"),
-                        { data: E, namespace: b } = z(t, a),
-                        h = (0, l.Z)({}, r, b);
-                    return s ? n.createElement(_.nO, { data: E, namespace: h }, n.createElement(n.Fragment, null, i ? n.createElement(ae.Z, { canonical: ue(t), description: s.description, title: s.name, type: "article" }) : null, d ? n.createElement(ne.Z, { deepLink: Ee(t) }) : null, n.createElement(x.Z, { style: be.rightControl }, n.createElement(x.Z, { style: be.followButtonContainer }, n.createElement(oe.Z, { animateMount: !0, show: o, type: "fade" }, n.createElement(re.ZP, { size: "medium", textMode: se.q.FollowTopic, topic: s }))), u ? n.createElement(de.ZP, { copyLinkShareLabel: _e, scribeNamespace: h, url: ue(t) }) : null))) : null;
+                        { data: E, namespace: h } = z(t, a),
+                        b = (0, l.Z)({}, r, h);
+                    return s ? n.createElement(_.nO, { data: E, namespace: b }, n.createElement(n.Fragment, null, i ? n.createElement(ae.Z, { canonical: ue(t), description: s.description, title: s.name, type: "article" }) : null, d ? n.createElement(ne.Z, { deepLink: Ee(t) }) : null, n.createElement(x.Z, { style: he.rightControl }, n.createElement(x.Z, { style: he.followButtonContainer }, n.createElement(oe.Z, { animateMount: !0, show: o, type: "fade" }, n.createElement(re.ZP, { size: "medium", textMode: se.q.FollowTopic, topic: s }))), u ? n.createElement(de.ZP, { copyLinkShareLabel: _e, scribeNamespace: b, url: ue(t) }) : null))) : null;
                 }),
                 pe = i().e9f1fbcc,
                 Se = n.createElement(c.Z, null),
@@ -381,7 +380,7 @@
                         x = n.useMemo(() => ({ ...d, ...(0, H.Z)({ isLegacy: !0, isWide: k }) }), [d, k]),
                         [G, Q] = n.useState(!0),
                         { header: W, navBar: q, subtitle: j, title: z } = A || {},
-                        K = m === b.Z.LOADED ? z || M : "",
+                        K = m === h.Z.LOADED ? z || M : "",
                         Y = ((e, t, o) => {
                             const n = t?.scribeConfig,
                                 { entityToken: a, ...r } = n || {},
@@ -392,11 +391,11 @@
                             return (0, l.Z)({}, o, r, u);
                         })(g, A, w),
                         $ = W ? n.createElement(V, { header: W, onHeaderVisible: Q }) : null,
-                        J = q ? n.createElement(he, { isHeaderOffscreen: !G, navBar: q, pageNamespace: Y, withAppLinks: y, withOpenGraphMeta: P }) : null,
+                        J = q ? n.createElement(be, { isHeaderOffscreen: !G, navBar: q, pageNamespace: Y, withAppLinks: y, withOpenGraphMeta: P }) : null,
                         X = n.createElement(n.Fragment, null, $, n.createElement(v, { entryConfiguration: x, initialModule: C, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, selectedTabId: g, timelinePrefix: L, title: M, withoutHeadroom: !0 })),
                         ee = i ? n.createElement(u.Z, { component: s.Z, fab: i }, X) : X,
                         te = c && p ? n.createElement(R, { getTabLink: c, module: C, selectedTabId: g }) : void 0;
-                    return n.createElement(_.nO, { namespace: Y }, n.createElement(h.Z, null, n.createElement(E.Z, { TabBar: t, backLocation: o, documentTitle: a, history: S, logoButton: T, onBackClick: I, primaryContent: ee, rightControl: J || O, secondaryBar: te, sidebarContent: U, subtitle: j, title: $ && G ? M : K, withBottomLoginSignupBar: F, withSearchBox: B, withTweetButton: Z })));
+                    return n.createElement(_.nO, { namespace: Y }, n.createElement(b.Z, null, n.createElement(E.Z, { TabBar: t, backLocation: o, documentTitle: a, history: S, logoButton: T, onBackClick: I, primaryContent: ee, rightControl: J || O, secondaryBar: te, sidebarContent: U, subtitle: j, title: $ && G ? M : K, withBottomLoginSignupBar: F, withSearchBox: B, withTweetButton: Z })));
                 };
             me.defaultProps = { entryConfiguration: (0, k.G)({}), renderEmptyState: () => n.createElement(a.Z, { header: pe }), sidebarContent: Se, withAppLinks: !1, withOpenGraphMeta: !1 };
             const we = ee(me);
@@ -422,15 +421,15 @@
                 _ = (0, c.Z)()
                     .propsFromState((e) => ({ fetchStatus: u, items: E }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, l.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
-                b = s().i9028824,
-                h = (e) => e,
+                h = s().i9028824,
+                b = (e) => e,
                 p = (e) => (t) => e(t.item);
             class S extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
                             const { footer: e, items: t, noItemsRenderer: o, numColumns: r, onScrollEnd: s, renderer: d, withoutHeadroom: l } = this.props;
-                            return !t || r < 1 ? null : 1 === r ? n.createElement(i.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: h, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: s, renderer: d, withoutHeadroom: l }) : n.createElement(a.Z, { ListEmptyComponent: o, data: t, keyExtractor: h, numColumns: r, renderItem: p(d) });
+                            return !t || r < 1 ? null : 1 === r ? n.createElement(i.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: b, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: s, renderer: d, withoutHeadroom: l }) : n.createElement(a.Z, { ListEmptyComponent: o, data: t, keyExtractor: b, numColumns: r, renderItem: p(d) });
                         }),
                         (this._handleNearEnd = () => {
                             const { createLocalApiErrorHandler: e, fetchBottom: t } = this.props;
@@ -450,7 +449,7 @@
                 }
                 render() {
                     const { fetchStatus: e, module: t, retryMessage: o } = this.props;
-                    return t ? n.createElement(d.Z, { "aria-label": b, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render, retryMessage: o, retryable: !0 }) : null;
+                    return t ? n.createElement(d.Z, { "aria-label": h, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render, retryMessage: o, retryable: !0 }) : null;
                 }
             }
             S.defaultProps = { numColumns: 1, alwaysFetch: !1 };
@@ -510,7 +509,7 @@
             const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
         979090: (e, t, o) => {
-            o.d(t, { $e: () => Oe, BG: () => re, Bb: () => ve, Bs: () => de, C7: () => fe, EW: () => De, HO: () => he, JL: () => ue, Jn: () => me, Kc: () => Me, Ld: () => Ze, Lt: () => te, Ly: () => J, OV: () => ae, PL: () => ie, Pi: () => Te, Qg: () => j, SZ: () => xe, V0: () => Pe, Wk: () => oe, X3: () => ye, _T: () => qe, _b: () => ke, aZ: () => Ue, ap: () => ce, cS: () => se, dw: () => X, eD: () => le, eY: () => Ie, et: () => Y, f3: () => pe, f_: () => Fe, gH: () => be, gP: () => Qe, jm: () => V, kT: () => Be, kX: () => Ge, lC: () => ge, lW: () => Ee, lw: () => Re, mZ: () => We, mv: () => Ce, oV: () => je, pN: () => Ne, qm: () => Le, r9: () => z, sz: () => ee, tk: () => $, vF: () => we, w6: () => _e, wK: () => He, wd: () => Se, ww: () => Ae });
+            o.d(t, { $e: () => Oe, BG: () => re, Bb: () => ve, Bs: () => de, C7: () => fe, EW: () => De, HO: () => be, JL: () => ue, Jn: () => me, Kc: () => Me, Ld: () => Ze, Lt: () => te, Ly: () => J, OV: () => ae, PL: () => ie, Pi: () => Te, Qg: () => j, SZ: () => xe, V0: () => Pe, Wk: () => oe, X3: () => ye, _T: () => qe, _b: () => ke, aZ: () => Ue, ap: () => ce, cS: () => se, dw: () => X, eD: () => le, eY: () => Ie, et: () => Y, f3: () => pe, f_: () => Fe, gH: () => he, gP: () => Qe, jm: () => V, kT: () => Be, kX: () => Ge, lC: () => ge, lW: () => Ee, lw: () => Re, mZ: () => We, mv: () => Ce, oV: () => je, pN: () => Ne, qm: () => Le, r9: () => z, sz: () => ee, tk: () => $, vF: () => we, w6: () => _e, wK: () => He, wd: () => Se, ww: () => Ae });
             o(571372), o(136728);
             var n = o(744531),
                 a = o(401388),
@@ -523,9 +522,9 @@
                 u = o(312771),
                 E = o(56519),
                 _ = o(3693),
-                b = o(298219);
-            const h = "birdwatchNotes",
-                p = `rweb/${h}`,
+                h = o(298219);
+            const b = "birdwatchNotes",
+                p = `rweb/${b}`,
                 S = (0, c.dg)(p, "DELETE_NOTE"),
                 m = (0, c.dg)(p, "CREATE_RATING"),
                 w = (0, c.dg)(p, "DELETE_RATING"),
@@ -555,7 +554,7 @@
                 Q = "rweb/birdwatchNotes/SAVE_BIRDWATCH_PATH",
                 W = { drafts: {}, notes: {}, noteRequests: {}, tweetNotes: {}, contributor: {}, publicData: {}, matchData: { fetchStatus: u.ZP.LOADING }, sourceLinks: {}, sources: {}, paths: {} };
             l.Z.register({
-                [h]: function (e = W, t) {
+                [b]: function (e = W, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case P.SUCCESS: {
@@ -756,22 +755,22 @@
                 },
             });
             const q = [],
-                j = (e, t) => e[h].notes[t],
-                z = (e, t) => e[h].noteRequests[t],
-                V = (e) => e[h].paths,
-                K = (e, t) => e[h].tweetNotes[t]?.misleadingIds,
-                Y = (e) => e[h].matchData,
-                $ = (e, t) => e[h].sourceLinks[t],
+                j = (e, t) => e[b].notes[t],
+                z = (e, t) => e[b].noteRequests[t],
+                V = (e) => e[b].paths,
+                K = (e, t) => e[b].tweetNotes[t]?.misleadingIds,
+                Y = (e) => e[b].matchData,
+                $ = (e, t) => e[b].sourceLinks[t],
                 J = (e, t) => {
-                    const o = e[h].tweetNotes[t];
+                    const o = e[b].tweetNotes[t];
                     return o ? o.canUserWriteNotesOnPost : void 0;
                 },
                 X = (e, t) => {
                     if (!t) return null;
-                    const o = ((e, t) => e[h].tweetNotes[t]?.ownNoteId)(e, t);
+                    const o = ((e, t) => e[b].tweetNotes[t]?.ownNoteId)(e, t);
                     return o ? j(e, o) : null;
                 },
-                ee = (e) => e[h].publicData,
+                ee = (e) => e[b].publicData,
                 te = (e, t) => {
                     const o = t ? K(e, t) : void 0;
                     if (o) {
@@ -780,74 +779,74 @@
                     return q;
                 },
                 oe = (e, t) => {
-                    const o = t ? ((e, t) => e[h].tweetNotes[t]?.notMisleadingIds)(e, t) : void 0;
+                    const o = t ? ((e, t) => e[b].tweetNotes[t]?.notMisleadingIds)(e, t) : void 0;
                     if (o) {
                         return o.map((t) => j(e, t)).filter(Boolean);
                     }
                     return q;
                 },
                 ne = (e, t) => {
-                    const o = e[h].contributor[t];
+                    const o = e[b].contributor[t];
                     return o ? o.notes : void 0;
                 },
                 ae = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.ownAlias : void 0;
                 },
                 re = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.showAliasSelfSelect : void 0;
                 },
                 se = (e) => {
-                    const t = e[h]?.contributor?.ownAlias;
+                    const t = e[b]?.contributor?.ownAlias;
                     if (!t) return !1;
                     const o = `birdwatchContributorNotesSlice-${t}`,
                         n = e.slices[o];
                     return n?.items?.length > 0 || !1;
                 },
                 de = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.aliasSelfSelectOptions : void 0;
                 },
                 ie = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.enrollmentStatus : void 0;
                 },
-                le = (e, t) => !!(e[h].contributor[t]?.isTopWriter || e[h].contributor?.isTopWriter),
-                ce = (e, t) => e[h].contributor[t]?.isTopWriter || !1,
+                le = (e, t) => !!(e[b].contributor[t]?.isTopWriter || e[b].contributor?.isTopWriter),
+                ce = (e, t) => e[b].contributor[t]?.isTopWriter || !1,
                 ue = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.notificationSettings : void 0;
                 },
                 Ee = (e) => {
-                    const t = e[h].contributor;
+                    const t = e[b].contributor;
                     return t ? t.canWriteNotes : void 0;
                 },
                 _e = (e, t) => {
                     if (!t) return;
-                    const o = e[h].contributor[t];
+                    const o = e[b].contributor[t];
                     return o ? o.ratingsCount : void 0;
                 },
-                be = (e, t) => {
+                he = (e, t) => {
                     if (!t) return;
-                    const o = e[h].contributor[t];
+                    const o = e[b].contributor[t];
                     return o ? o.notesCount : void 0;
                 },
-                he = (e, t) => {
-                    const o = e[h].contributor[t];
+                be = (e, t) => {
+                    const o = e[b].contributor[t];
                     return o ? o.deletedNotesCount : void 0;
                 },
                 pe = (e, t) => {
-                    const o = e[h].tweetNotes[t];
+                    const o = e[b].tweetNotes[t];
                     return o ? o.fetchStatus : u.ZP.NONE;
                 },
                 Se = (e, t) => {
-                    const o = e[h].notes[t];
+                    const o = e[b].notes[t];
                     return o ? o.fetchStatus : u.ZP.NONE;
                 },
                 me = (e, t) => {
                     if (!t) return;
-                    const o = e[h].drafts;
+                    const o = e[b].drafts;
                     return o ? o[t] : void 0;
                 },
                 we =
@@ -880,7 +879,7 @@
                         const a = !!e && !!ne(o(), e),
                             s =
                                 ((e, t) => {
-                                    const o = e[h].contributor[t];
+                                    const o = e[b].contributor[t];
                                     return o ? o.fetchStatus : u.ZP.NONE;
                                 })(o(), e) === u.ZP.LOADING;
                         return a || s
@@ -946,8 +945,8 @@
                             const s = new TextDecoder();
                             let d = "";
                             const i = async (t) => {
-                                const n = t ? b.T9 : b.UG,
-                                    { done: a, value: c } = await (0, b.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => o.read(), n, t ? "timeout to first chunk" : "timeout between chunks");
+                                const n = t ? h.T9 : h.UG,
+                                    { done: a, value: c } = await (0, h.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => o.read(), n, t ? "timeout to first chunk" : "timeout between chunks");
                                 if (a) {
                                     if (0 === (r.result?.text.length ?? 0)) throw new Error("empty string when done");
                                     return (r.state = _.H.SUCCESS), (r.fetchStatus = u.ZP.LOADED), void l(e, r);
@@ -1060,7 +1059,7 @@
             const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_SOURCE_LINKS_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchSourceLinkSlice, getEndpointParams: (t) => ({ ...t, tweet_id: e }), sliceKey: `birdwatchSourceLinkSlice-${e}` });
         },
         245422: (e, t, o) => {
-            o.d(t, { K2: () => h, Sl: () => _, aC: () => b, oI: () => E });
+            o.d(t, { K2: () => b, Sl: () => _, aC: () => h, oI: () => E });
             var n = o(717193),
                 a = o(499627),
                 r = o(917799),
@@ -1114,11 +1113,11 @@
                     (e, t) =>
                     (o, a, { api: s }) =>
                         (0, r._O)(o, { request: s.withEndpoint(n.Z).deleteBoostRating, params: { boost_id: t } })({ actionTypes: c, context: "DELETE_COMMUNITYBOOST_PIVOT_RATING", meta: { post_id: e } }),
-                b =
+                h =
                     (e) =>
                     (t, o, { api: a }) =>
                         (0, r._O)(t, { request: a.withEndpoint(n.Z).fetchCommunityBoostPivot, params: e })({ actionTypes: i, context: "FETCH_COMMUNITYBOOST_PIVOT", meta: { tweet_id: e } }),
-                h = (e, t) => e[d].pivots[t];
+                b = (e, t) => e[d].pivots[t];
         },
         371184: (e, t, o) => {
             o.d(t, { Z: () => s });
@@ -1138,4 +1137,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.eca402da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.f454ab8a.js.map

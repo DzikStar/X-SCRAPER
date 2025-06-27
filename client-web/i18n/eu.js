@@ -1374,7 +1374,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 o("c60b9e5c", "Changes will take effect for newly loaded content."),
-                o("c6ad999b", "languages settings"),
+                o("f9317b98", "language settings"),
                 o("hba0547a", "Unable to update settings. Please try again later."),
                 o("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
@@ -4362,7 +4362,6 @@
                 o("a15d62db", function (e) {
                     return "Thought for " + e.seconds + "s";
                 }),
-                o("f26fc748", "Script"),
                 o("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4934,9 +4933,9 @@
                 o("ff95a9cc", "Video ID"),
                 o("a97e358e", "Video Link"),
                 o("e10e8b46", "Only showing the videos from the last 100 days."),
-                o("ba37f6da", "Video overview");
-            o("f19846b2", "Video thumbnail"),
-                o("ccd6f4a8", "Video title"),
+                o("ba37f6da", "Video overview"),
+                o("f19846b2", "Video thumbnail");
+            o("ccd6f4a8", "Video title"),
                 o("c8410542", "The number of times your video was viewed."),
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
@@ -5886,9 +5885,9 @@
                 o("af781666", "What do people think?"),
                 o("a1f414ee", "Share thoughts"),
                 o("ed88e742", "Kopiatu gairako esteka"),
-                o("h92fe1be", "Unfortunately, Community Notes is not available to you at this time.");
-            o("f0dc1434", "Community Notes is currently only available in the U.S."),
-                o("f8fc0b48", "Sortu karpeta bat"),
+                o("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
+                o("f0dc1434", "Community Notes is currently only available in the U.S.");
+            o("f8fc0b48", "Sortu karpeta bat"),
                 o("c14bcdde", "Bilatu laster-markak"),
                 o("e9c65c4a", "Bookmarks search"),
                 o("b92a21d9", function (e) {
@@ -6892,9 +6891,9 @@
                 o("b8cbb51a", "Job Summary"),
                 o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 o("b075c68a", "Edit job"),
-                o("d4b6a6e0", "Profilaren fokua");
-            o("j2dd3686", "Highlight featured jobs above my posts."),
-                o("af1cfd46", "ATS integration"),
+                o("d4b6a6e0", "Profilaren fokua"),
+                o("j2dd3686", "Highlight featured jobs above my posts.");
+            o("af1cfd46", "ATS integration"),
                 o("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 o("h99f11fa", "Delete integration"),
                 o("eef1ae76", "Currently connected"),
@@ -7874,7 +7873,8 @@
                 o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 o("ee9efbc8", "Jarraitu uzteko"),
                 o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
-                o("jda53c24", "You can cancel your Subscription through the Apple App Store.");
+                o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
+                o("g0a7a53e", "You can cancel your Subscription through the Google Play Store.");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7913,10 +7913,9 @@
                     u(e, a)
                 );
             }
-            o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
+            o("i5f14be7", function (e) {
+                return "Welcome back, " + e.displayName;
+            }),
                 o("a76d58ba", "Ads Analytics"),
                 o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8914,9 +8913,9 @@
                     return "Bisitatu " + e.advertiserName;
                 }),
                 o("c67e71aa", "Ikusi orain"),
-                o("a6ada13e", "Erosi orain");
-            o("j0f12222", "Ikusi gehiago"),
-                o("f569f7c8", "Joan webgunera"),
+                o("a6ada13e", "Erosi orain"),
+                o("j0f12222", "Ikusi gehiago");
+            o("f569f7c8", "Joan webgunera"),
                 o("j0c6772a", "Bisitatu webgunea"),
                 o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da"),
                 o("b3112b8a", "Pasatu"),
@@ -10161,7 +10160,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13363,4 +13362,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.148bff4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.0df3aaaa.js.map

@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("c6ad999b", "languages settings"),
+                t("f9317b98", "language settings"),
                 t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (e) {
                     return "Innlegg fra " + e.fullName + " (@" + e.screenName + ")";
@@ -4358,7 +4358,6 @@
                 t("a15d62db", function (e) {
                     return "Tenkte i " + e.seconds + " s";
                 }),
-                t("f26fc748", "Script"),
                 t("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 t("ff95a9cc", "Video-ID"),
                 t("a97e358e", "Videolenke"),
                 t("e10e8b46", "Viser bare videoene fra de siste 100 dagene."),
-                t("ba37f6da", "Videooversikt");
-            t("f19846b2", "Videominiatyrbilde"),
-                t("ccd6f4a8", "Videotittel"),
+                t("ba37f6da", "Videooversikt"),
+                t("f19846b2", "Videominiatyrbilde");
+            t("ccd6f4a8", "Videotittel"),
                 t("c8410542", "Antall ganger videoen din har blitt vist."),
                 t("a532072a", "Seere"),
                 t("d9508ab0", "visninger"),
@@ -5882,9 +5881,9 @@
                 t("af781666", "Hva tenker brukerne?"),
                 t("a1f414ee", "Din mening"),
                 t("ed88e742", "Kopier lenke til emnet"),
-                t("h92fe1be", "Fellesskapsmerknader er dessverre ikke tilgjengelig for deg ennå.");
-            t("f0dc1434", "Fellesskapsmerknader er for øyeblikket bare tilgjengelig i USA"),
-                t("f8fc0b48", "Opprett en mappe"),
+                t("h92fe1be", "Fellesskapsmerknader er dessverre ikke tilgjengelig for deg ennå."),
+                t("f0dc1434", "Fellesskapsmerknader er for øyeblikket bare tilgjengelig i USA");
+            t("f8fc0b48", "Opprett en mappe"),
                 t("c14bcdde", "Søk i bokmerker"),
                 t("e9c65c4a", "Bokmerkesøk"),
                 t("b92a21d9", function (e) {
@@ -6888,9 +6887,9 @@
                 t("b8cbb51a", "Jobbsammendrag"),
                 t("bda6881e", "Denne jobben er importert fra kandidatsystemet ditt. Vær obs på at bare visse felt kan endres."),
                 t("b075c68a", "Rediger jobb"),
-                t("d4b6a6e0", "Profilfremheving");
-            t("j2dd3686", "Fremhev viste jobber over innleggene mine."),
-                t("af1cfd46", "Integrasjon med kandidatsystem"),
+                t("d4b6a6e0", "Profilfremheving"),
+                t("j2dd3686", "Fremhev viste jobber over innleggene mine.");
+            t("af1cfd46", "Integrasjon med kandidatsystem"),
                 t("d6fa2944", "Importerte jobber slettes ikke hvis du sletter integrasjonen."),
                 t("h99f11fa", "Slett integrasjon"),
                 t("eef1ae76", "Tilkoblet for øyeblikket"),
@@ -7870,7 +7869,8 @@
                 t("b74ff5fc", "Hvis du kansellerer, utløper abonnementet automatisk på slutten av faktureringssyklusen."),
                 t("ee9efbc8", "Fortsett til kansellering"),
                 t("c5d9c77a", "Det ser ut til at det oppstod et lite problem. Men slapp av, det er ikke din feil. Lukk dette vinduet og prøv på nytt."),
-                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store.");
+                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store."),
+                t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk.");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7909,10 +7909,9 @@
                     d(e, n)
                 );
             }
-            t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk."),
-                t("i5f14be7", function (e) {
-                    return "Velkommen tilbake, " + e.displayName;
-                }),
+            t("i5f14be7", function (e) {
+                return "Velkommen tilbake, " + e.displayName;
+            }),
                 t("a76d58ba", "Annonsestatistikk"),
                 t("eccd0e1a", "Organisasjonsstatistikk"),
                 t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
@@ -8910,9 +8909,9 @@
                     return "Besøk " + e.advertiserName;
                 }),
                 t("c67e71aa", "Se nå"),
-                t("a6ada13e", "Handle nå");
-            t("j0f12222", "Se mer"),
-                t("f569f7c8", "Gå til nettstedet"),
+                t("a6ada13e", "Handle nå"),
+                t("j0f12222", "Se mer");
+            t("f569f7c8", "Gå til nettstedet"),
                 t("j0c6772a", "Besøk nettstedet"),
                 t("f73003aa", "Videoen spilles av etter annonsen"),
                 t("b3112b8a", "Hopp over"),
@@ -10153,7 +10152,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13355,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.706d483a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.e63a81ea.js.map

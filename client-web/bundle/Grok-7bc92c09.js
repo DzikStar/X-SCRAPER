@@ -28,8 +28,8 @@
                 S = a(305442),
                 v = a(246277),
                 k = a(523253),
-                I = a(86657),
-                Z = a(928831),
+                Z = a(86657),
+                I = a(928831),
                 _ = a(492010),
                 z = a(207683),
                 R = a(988290),
@@ -39,27 +39,27 @@
                 H = p().cfd2f35e,
                 W = p().e3275464,
                 B = p().fb3b9776;
-            function L({ bannerMessages: e, conversationKey: t, fileAttachments: a, hasCustomization: l, hideAttachments: d, id: p, isDeepsearch: T, isReasoning: L, mode: M, text: F, user: O }) {
+            function L({ bannerMessages: e, conversationKey: t, fileAttachments: a, hasCustomization: l, hideAttachments: d, id: p, isDeepsearch: T, isReasoning: L, mode: F, text: M, user: O }) {
                 const $ = (0, C.I0)(),
                     V = (0, E.bD)(t),
                     [G, K] = n.useState(!1),
                     [j, U] = n.useState(!1),
-                    [q, J] = n.useState(F),
-                    { clearFilterKey: Y, filterKey: X, isReasoningEnabled: Q, isResearchEnabled: ee, selectDeepsearchFilterKey: te, selectReasoningFilterKey: ae } = (0, Z.w)(),
+                    [q, J] = n.useState(M),
+                    { clearFilterKey: Y, filterKey: X, isReasoningEnabled: Q, isResearchEnabled: ee, selectDeepsearchFilterKey: te, selectReasoningFilterKey: ae } = (0, I.w)(),
                     [ne, se] = n.useState(!1),
                     { isEditingEnabled: oe, isGrokShare: re } = (0, R.ZP)(),
                     ie = (0, y.hC)("responsive_web_grok_prompt_edit_enabled"),
                     ce = (0, y.hC)("responsive_web_grok_show_citations"),
                     le = !(0, y.hC)("responsive_web_grok_url_trim_disable"),
-                    { isInputCompact: de } = (0, Z.w)(),
+                    { isInputCompact: de } = (0, I.w)(),
                     pe = (0, b.z)();
                 let me,
                     ue,
-                    ge = F;
+                    ge = M;
                 if (ge) {
-                    const e = P.exec(F ?? "");
+                    const e = P.exec(M ?? "");
                     me = e?.[1];
-                    const t = A.exec(F ?? "");
+                    const t = A.exec(M ?? "");
                     ue = t?.[1];
                     const a = e?.[0],
                         n = a && ge.trim().endsWith(a);
@@ -75,12 +75,12 @@
                         ie && null != p && ($(V.setEditingMessage(p)), he && U(!0), T && !X ? (te(), se(!0)) : L && !X && (ae(), se(!0)));
                     }, [ie, p, $, V, he, T, L, te, ae, X]),
                     Ce = n.useCallback(() => {
-                        $(V.clearEditing()), U(!1), J(F), ne && (Y(), se(!1));
-                    }, [$, V, F, ne, Y]),
+                        $(V.clearEditing()), U(!1), J(M), ne && (Y(), se(!1));
+                    }, [$, V, M, ne, Y]),
                     Ee = (0, S.Z)("chatbox_edit"),
                     we = n.useCallback(async () => {
-                        p && q && q.trim().length > 0 && (await $((0, w.X)({ analytics: pe, conversationKey: t })({ editingMessageId: p, text: q, fileAttachments: a ?? [], returnCitations: ce, mode: M, imageGenerationCount: Ee, isReasoning: Q, isDeepsearch: ee })), U(!1), se(!1));
-                    }, [p, q, $, pe, t, a, ce, M, Ee, Q, ee]),
+                        p && q && q.trim().length > 0 && (await $((0, w.X)({ analytics: pe, conversationKey: t })({ editingMessageId: p, text: q, fileAttachments: a ?? [], returnCitations: ce, mode: F, imageGenerationCount: Ee, isReasoning: Q, isDeepsearch: ee })), U(!1), se(!1));
+                    }, [p, q, $, pe, t, a, ce, F, Ee, Q, ee]),
                     xe = n.createElement(
                         s.Z,
                         { style: N.wrapper },
@@ -126,10 +126,10 @@
                         !d && a
                             ? a.map((e, t) => {
                                   if (e instanceof File);
-                                  else if (!v.$.includes(e.mimeType)) return n.createElement(I.Z, { allFiles: a, file: e, isLoading: !1, key: `${e.fileName}_${t}`, messageId: p, width: 200 });
+                                  else if (!v.$.includes(e.mimeType)) return n.createElement(Z.Z, { allFiles: a, file: e, isLoading: !1, key: `${e.fileName}_${t}`, messageId: p, width: 200 });
                               })
                             : [],
-                    Se = !d && a ? a.map((e, t) => (e instanceof File ? n.createElement(k.Z, { file: e, key: `${e.name}_${t}`, width: 180 }) : v.$.includes(e.mimeType) ? n.createElement(I.Z, { file: e, index: t, isImageActionsEnabled: !re, isLoading: !1, key: `${e.fileName}_${t}`, messageId: p, width: 180, withMediaCarousel: !re }) : void 0)) : [];
+                    Se = !d && a ? a.map((e, t) => (e instanceof File ? n.createElement(k.Z, { file: e, key: `${e.name}_${t}`, width: 180 }) : v.$.includes(e.mimeType) ? n.createElement(Z.Z, { allFileAttachments: a, file: e, index: t, isImageActionsEnabled: !re, isLoading: !1, key: `${e.fileName}_${t}`, messageId: p, width: 180, withMediaCarousel: !re }) : void 0)) : [];
                 return n.createElement(
                     s.Z,
                     { onMouseEnter: fe, onMouseLeave: ye, style: N.wrapper },
@@ -170,7 +170,7 @@
                 editButtonContainer: { paddingTop: e.spaces.space4 },
                 EditIcon: { height: 18, width: 18 },
                 editBubble: { paddingHorizontal: 0, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space4, borderRadius: e.spaces.space16, backgroundColor: e.colors.gray50, alignItems: "center", width: "100%", maxWidth: "100%", gap: e.spaces.space4 },
-                chatBubble: { paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, borderRadius: e.spaces.space16, borderWidth: 1, borderColor: e.colors.borderColor, borderStyle: "solid", backgroundColor: e.colors.gray50, maxWidth: "70%", alignItems: "center", gap: e.spaces.space12 },
+                chatBubble: { paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, borderRadius: e.spaces.space24, borderWidth: 1, borderColor: e.colors.borderColor, borderStyle: "solid", backgroundColor: e.colors.gray50, maxWidth: "70%", alignItems: "center", gap: e.spaces.space12 },
                 textContent: { maxWidth: "100%", lineHeight: 27 },
                 editInput: { backgroundColor: "transparent", borderColor: "transparent", width: "100%", lineHeight: 27 },
                 fileAttachmentContainer: { maxWidth: "100%", marginBottom: e.spaces.space4, flexDirection: "row", alignItems: "flex-start", flexWrap: "wrap", gap: e.spaces.space8, justifyContent: "end" },
@@ -319,28 +319,28 @@
                 s = a(325686),
                 o = a(731708),
                 r = a(815858),
-                i = a(392237),
-                c = a(111677),
-                l = a.n(c),
-                d = a(711223),
-                p = a(323265),
-                m = a(952793),
-                u = a(125363),
-                g = a(919022),
-                h = a(464023),
-                f = a(207683),
-                y = a(603416),
-                b = a(583429),
-                C = a(983650),
-                E = a(530732),
-                w = a(721266),
+                i = a(721266),
+                c = a(392237),
+                l = a(111677),
+                d = a.n(l),
+                p = a(711223),
+                m = a(323265),
+                u = a(952793),
+                g = a(125363),
+                h = a(919022),
+                f = a(464023),
+                y = a(207683),
+                b = a(603416),
+                C = a(583429),
+                E = a(983650),
+                w = a(530732),
                 x = a(58399),
                 T = a(187669),
                 S = a(246851),
                 v = a(725516),
                 k = a(988290),
-                I = a(767075),
-                Z = a(194167),
+                Z = a(767075),
+                I = a(194167),
                 _ = a(235493),
                 z = a(757483),
                 R = a(215337),
@@ -349,16 +349,16 @@
                 A = a(214997),
                 H = a(525271),
                 W = a(465086);
-            const B = l().a4d9dbfa;
+            const B = d().a4d9dbfa;
             function L({ completed: e, gradientColor: t, onDismissed: a, style: o, trace: r }) {
-                const [c, l] = n.useState(null),
-                    [d] = (0, W.h)({ scrollingFrame: c?.getScrollableNode(), enabled: !0, autoStart: !0 });
+                const [i, l] = n.useState(null),
+                    [d] = (0, W.h)({ scrollingFrame: i?.getScrollableNode(), enabled: !0, autoStart: !0 });
                 return (
                     (0, T.q)(() => {
                         const e = "deep-search-summary-card-sub-step";
                         if (document.getElementById(e)) return;
                         const t = document.createElement("style");
-                        t.setAttribute("id", e), (t.textContent = `\n    .deep-search-summary-card-sub-step-markdown-text li {\n      margin-top: 0px !important;\n    }\n\n    .deep-search-summary-card-sub-step-markdown-text ul {\n      margin-bottom: 0px !important;\n    }\n\n    .deep-search-summary-card-sub-step-markdown-text span {\n      font-size: ${i.default.theme.fontSizes.subtext2} !important;\n      color: ${i.default.theme.colors.gray900} !important;\n      line-height: 24px;\n    }\n\n    .deep-search-summary-card-trace-preview-markdown-text span {\n      font-size: ${i.default.theme.fontSizes.subtext2} !important;\n      color: ${i.default.theme.colors.gray900} !important;\n      line-height: 24px;\n    }\n  `);
+                        t.setAttribute("id", e), (t.textContent = `\n    .deep-search-summary-card-sub-step-markdown-text li {\n      margin-top: 0px !important;\n    }\n\n    .deep-search-summary-card-sub-step-markdown-text ul {\n      margin-bottom: 0px !important;\n    }\n\n    .deep-search-summary-card-sub-step-markdown-text span {\n      font-size: ${c.default.theme.fontSizes.subtext2} !important;\n      color: ${c.default.theme.colors.gray900} !important;\n      line-height: 24px;\n    }\n\n    .deep-search-summary-card-trace-preview-markdown-text span {\n      font-size: ${c.default.theme.fontSizes.subtext2} !important;\n      color: ${c.default.theme.colors.gray900} !important;\n      line-height: 24px;\n    }\n  `);
                         const a = document.head;
                         return (
                             a && a.appendChild(t),
@@ -368,46 +368,46 @@
                             }
                         );
                     }),
-                    n.createElement(H.Z, { align: "right", buttonType: "primaryText", onDismissed: a, title: B }, n.createElement(s.Z, { style: N.traceScrollViewContainer }, n.createElement(A.Z, { automaticallyAdjustKeyboardInsets: !0, contentContainerStyle: N.traceScrollViewContentContainer, ref: l, style: N.traceScrollView }, n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(f.default, { disableLinks: p.ZP.isWebView(), isAnimated: !1, markdownText: r })), n.createElement(s.Z, { ref: d, style: { position: "relative", top: -250, width: 100, height: 1 } }), n.createElement(s.Z, { style: { position: "relative", width: 100, height: 300 } }))))
+                    n.createElement(H.Z, { align: "right", buttonType: "primaryText", onDismissed: a, title: B }, n.createElement(s.Z, { style: N.traceScrollViewContainer }, n.createElement(A.Z, { automaticallyAdjustKeyboardInsets: !0, contentContainerStyle: N.traceScrollViewContentContainer, ref: l, style: N.traceScrollView }, n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(y.default, { disableLinks: m.ZP.isWebView(), isAnimated: !1, markdownText: r })), n.createElement(s.Z, { ref: d, style: { position: "relative", top: -250, width: 100, height: 1 } }), n.createElement(s.Z, { style: { position: "relative", width: 100, height: 300 } }))))
                 );
             }
-            const N = i.default.create((e) => ({ thinkingTraceLabel: { color: e.colors.gray800, fontSize: e.fontSizes.subtext3 }, markdownText: { position: "relative", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, traceScrollViewContainer: { flex: 1, width: "100%", maxWidth: 500, position: "relative" }, traceScrollView: { flex: 1, width: "100%" }, traceScrollViewContentContainer: { flexGrow: 1, padding: e.spaces.space16 }, traceGradientBottom: { position: "absolute", width: "100%", height: "20%", bottom: 0 }, interactivePinButton: { backgroundColor: "transparent" }, pinButtonContainer: { position: "absolute", bottom: e.spaces.space16, start: "50%", transform: "translateX(-50%)" }, pinButton: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, borderRadius: e.borderRadii.xLarge, backgroundColor: "transparent", transition: "background-color 0.2s ease", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12 }, hoveredPinButton: { backgroundColor: e.colors.gray0 }, pinIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, pinText: { fontSize: e.fontSizes.subtext1, color: e.colors.gray900 } })),
-                M = n.memo(L);
-            function F({ disableExpand: e, gradientColor: t, previewHeight: a, style: o, trace: r }) {
-                const c = n.useRef(null),
+            const N = c.default.create((e) => ({ thinkingTraceLabel: { color: e.colors.gray800, fontSize: e.fontSizes.subtext3 }, markdownText: { position: "relative", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, traceScrollViewContainer: { flex: 1, width: "100%", maxWidth: 500, position: "relative" }, traceScrollView: { flex: 1, width: "100%" }, traceScrollViewContentContainer: { flexGrow: 1, padding: e.spaces.space16 }, traceGradientBottom: { position: "absolute", width: "100%", height: "20%", bottom: 0 }, interactivePinButton: { backgroundColor: "transparent" }, pinButtonContainer: { position: "absolute", bottom: e.spaces.space16, start: "50%", transform: "translateX(-50%)" }, pinButton: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, borderRadius: e.borderRadii.xLarge, backgroundColor: "transparent", transition: "background-color 0.2s ease", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12 }, hoveredPinButton: { backgroundColor: e.colors.gray0 }, pinIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, pinText: { fontSize: e.fontSizes.subtext1, color: e.colors.gray900 } })),
+                F = n.memo(L);
+            function M({ disableExpand: e, gradientColor: t, previewHeight: a, style: o, trace: r }) {
+                const i = n.useRef(null),
                     [l, d] = n.useState(!1);
                 n.useEffect(() => {
-                    c.current && !l && c.current.scrollToEnd({ animated: !1 });
+                    i.current && !l && i.current.scrollToEnd({ animated: !1 });
                 }, [r, l]);
-                const p = n.useCallback(() => [z.Z.hexToCss(t || i.default.theme.colors.gray50, 0), z.Z.hexToCss(t || i.default.theme.colors.gray50, 0.8), z.Z.hexToCss(t || i.default.theme.colors.gray50, 1)], [t]);
+                const p = n.useCallback(() => [z.Z.hexToCss(t || c.default.theme.colors.gray50, 0), z.Z.hexToCss(t || c.default.theme.colors.gray50, 0.8), z.Z.hexToCss(t || c.default.theme.colors.gray50, 1)], [t]);
                 return n.createElement(
                     s.Z,
                     { style: [O.tracePreviewContainer, o] },
                     n.createElement(
                         s.Z,
                         { style: [O.collapsedTracePreviewTextGradientContainer, O.expandedTracePreviewTextGradientContainer, a ? { height: a } : void 0] },
-                        n.createElement(E.Z, { disabled: e, interactiveStyles: O.interactiveTracePreviewHeaderContainer, onClick: () => d(!0) }, ({ isHovered: t }) => n.createElement(s.Z, { style: O.tracePreviewTextGradientContainer }, n.createElement(s.Z, { style: O.tracePreviewScrollerContainer }, n.createElement(P.w, { charLimit: 1500, text: r })), n.createElement(R.Z, { angle: 0, colors: p(), style: O.traceGradientTop }), n.createElement(R.Z, { colors: p(), style: O.traceGradientBottom }), !e && n.createElement(D.default, { style: [O.expandThinkingTraceIcon, t ? O.hoveredExpandThinkingTraceIcon : void 0] }))),
+                        n.createElement(w.Z, { disabled: e, interactiveStyles: O.interactiveTracePreviewHeaderContainer, onClick: () => d(!0) }, ({ isHovered: t }) => n.createElement(s.Z, { style: O.tracePreviewTextGradientContainer }, n.createElement(s.Z, { style: O.tracePreviewScrollerContainer }, n.createElement(P.w, { charLimit: 1500, text: r })), n.createElement(R.Z, { angle: 0, colors: p(), style: O.traceGradientTop }), n.createElement(R.Z, { colors: p(), style: O.traceGradientBottom }), !e && n.createElement(D.default, { style: [O.expandThinkingTraceIcon, t ? O.hoveredExpandThinkingTraceIcon : void 0] }))),
                     ),
-                    l && n.createElement(M, { onDismissed: () => d(!1), trace: r }),
+                    l && n.createElement(F, { onDismissed: () => d(!1), trace: r }),
                 );
             }
-            const O = i.default.create((e) => ({ tracePreviewContainer: { backgroundColor: e.colors.gray50, display: "flex", flexDirection: "column", overflow: "hidden", borderRadius: e.borderRadii.medium }, tracePreviewHeaderContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space12, cursor: "pointer", transition: "background-color 0.2s ease", backgroundColor: e.colors.gray50 }, interactiveTracePreviewHeaderContainer: { backgroundColor: "transparent" }, hoveredTracePreviewHeaderContainer: { backgroundColor: e.colors.gray100 }, thinkingTraceLabel: { color: e.colors.gray800, fontSize: e.fontSizes.subtext3 }, expandThinkingTraceIcon: { position: "absolute", top: e.spaces.space12, end: e.spaces.space12, color: e.colors.gray800, width: 14, height: 14, transition: "transform 0.2s ease" }, hoveredExpandThinkingTraceIcon: { transform: "scale(1.2)" }, collapsedTracePreviewTextGradientContainer: { display: "grid", gridTemplateRows: "0fr", transition: "250ms grid-template-rows ease" }, expandedTracePreviewTextGradientContainer: { gridTemplateRows: "1fr" }, tracePreviewTextGradientContainer: { height: 150, positon: "relative" }, tracePreviewScrollerContainer: { paddingHorizontal: e.spaces.space16, width: "100%", height: "100%" }, markdownText: { position: "relative", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, tracePreviewText: { color: e.colors.gray800 }, traceGradientTop: { position: "absolute", width: "100%", height: "20%", top: 0 }, traceGradientBottom: { position: "absolute", width: "100%", height: "20%", bottom: 0 } })),
-                $ = n.memo(F),
-                V = l().j1ab5f40,
-                G = l().ee000b0d;
-            function K({ aborted: e, completed: t, completedTimestamp: a, expanded: r, fromTimestamp: c, isDeeperMode: l, isPastSummary: d, numSources: p, onClick: m, showTrace: u, style: g, trace: h }) {
+            const O = c.default.create((e) => ({ tracePreviewContainer: { backgroundColor: e.colors.gray50, display: "flex", flexDirection: "column", overflow: "hidden", borderRadius: e.borderRadii.medium }, tracePreviewHeaderContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space12, cursor: "pointer", transition: "background-color 0.2s ease", backgroundColor: e.colors.gray50 }, interactiveTracePreviewHeaderContainer: { backgroundColor: "transparent" }, hoveredTracePreviewHeaderContainer: { backgroundColor: e.colors.gray100 }, thinkingTraceLabel: { color: e.colors.gray800, fontSize: e.fontSizes.subtext3 }, expandThinkingTraceIcon: { position: "absolute", top: e.spaces.space12, end: e.spaces.space12, color: e.colors.gray800, width: 14, height: 14, transition: "transform 0.2s ease" }, hoveredExpandThinkingTraceIcon: { transform: "scale(1.2)" }, collapsedTracePreviewTextGradientContainer: { display: "grid", gridTemplateRows: "0fr", transition: "250ms grid-template-rows ease" }, expandedTracePreviewTextGradientContainer: { gridTemplateRows: "1fr" }, tracePreviewTextGradientContainer: { height: 150, positon: "relative" }, tracePreviewScrollerContainer: { paddingHorizontal: e.spaces.space16, width: "100%", height: "100%" }, markdownText: { position: "relative", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, tracePreviewText: { color: e.colors.gray800 }, traceGradientTop: { position: "absolute", width: "100%", height: "20%", top: 0 }, traceGradientBottom: { position: "absolute", width: "100%", height: "20%", bottom: 0 } })),
+                $ = n.memo(M),
+                V = d().j1ab5f40,
+                G = d().ee000b0d;
+            function K({ aborted: e, completed: t, completedTimestamp: a, expanded: r, fromTimestamp: i, isDeeperMode: l, isPastSummary: d, numSources: p, onClick: m, showTrace: u, style: g, trace: h }) {
                 const { isCompactLayout: f } = (0, k.ZP)(),
-                    y = 0 !== c,
-                    b = n.useCallback(() => n.createElement(s.Z, { style: j.researchLabelContainer }, n.createElement(o.ZP, { style: j.researchLabel, weight: "bold" }, (0, Z.YM)(t, !0, l)), !d && !r && y && n.createElement(_.Z, { aborted: e, completed: t, completedTimestamp: a, fromTimestamp: c })), [r, d, t, e, c, a, y, l]),
-                    C = n.useCallback(() => (r ? n.createElement(s.Z, { style: j.subHeaderContainer }, !d && y ? n.createElement(n.Fragment, null, n.createElement(_.Z, { aborted: e, completed: t, completedTimestamp: a, fromTimestamp: c, style: j.subheaderElapsedSeconds }), n.createElement(s.Z, { style: j.dot }), n.createElement(o.ZP, { style: j.sourcesText }, G({ numSources: p }))) : p > 0 && n.createElement(o.ZP, { style: j.sourcesText }, G({ numSources: p }))) : n.createElement(s.Z, { style: j.subHeaderContainer }, n.createElement(o.ZP, { style: j.subHeaderText }, V), p > 0 && n.createElement(n.Fragment, null, n.createElement(s.Z, { style: j.dot }), n.createElement(o.ZP, { style: j.sourcesText }, G({ numSources: p }))))), [r, d, t, e, p, c, a, y]);
+                    y = 0 !== i,
+                    b = n.useCallback(() => n.createElement(s.Z, { style: j.researchLabelContainer }, n.createElement(o.ZP, { style: j.researchLabel, weight: "bold" }, (0, I.YM)(t, !0, l)), !d && !r && y && n.createElement(_.Z, { aborted: e, completed: t, completedTimestamp: a, fromTimestamp: i })), [r, d, t, e, i, a, y, l]),
+                    C = n.useCallback(() => (r ? n.createElement(s.Z, { style: j.subHeaderContainer }, !d && y ? n.createElement(n.Fragment, null, n.createElement(_.Z, { aborted: e, completed: t, completedTimestamp: a, fromTimestamp: i, style: j.subheaderElapsedSeconds }), n.createElement(s.Z, { style: j.dot }), n.createElement(o.ZP, { style: j.sourcesText }, G({ numSources: p }))) : p > 0 && n.createElement(o.ZP, { style: j.sourcesText }, G({ numSources: p }))) : n.createElement(s.Z, { style: j.subHeaderContainer }, n.createElement(o.ZP, { style: j.subHeaderText }, V), p > 0 && n.createElement(n.Fragment, null, n.createElement(s.Z, { style: j.dot }), n.createElement(o.ZP, { style: j.sourcesText }, G({ numSources: p }))))), [r, d, t, e, p, i, a, y]);
                 return n.createElement(
                     s.Z,
                     { style: j.container },
-                    n.createElement(E.Z, { interactiveStyles: j.interactiveHeaderContainer, onClick: m }, ({ isHovered: e }) => n.createElement(s.Z, { style: [j.headerContainer, f ? j.compactHeaderContainer : void 0, !r && e ? j.hoveredHeaderContainer : void 0] }, n.createElement(s.Z, { style: j.infoContainer }, b(), C()), n.createElement(x.default, { style: [j.caretIcon, r ? j.expandedCaretIcon : void 0] }))),
-                    !r && !t && !e && u && n.createElement($, { disableExpand: !0, gradientColor: i.default.theme.colors.gray0, previewHeight: 50, style: j.tracePreview, trace: h }),
+                    n.createElement(w.Z, { interactiveStyles: j.interactiveHeaderContainer, onClick: m }, ({ isHovered: e }) => n.createElement(s.Z, { style: [j.headerContainer, f ? j.compactHeaderContainer : void 0, !r && e ? j.hoveredHeaderContainer : void 0] }, n.createElement(s.Z, { style: j.infoContainer }, b(), C()), n.createElement(x.default, { style: [j.caretIcon, r ? j.expandedCaretIcon : void 0] }))),
+                    !r && !t && !e && u && n.createElement($, { disableExpand: !0, gradientColor: c.default.theme.colors.gray0, previewHeight: 50, style: j.tracePreview, trace: h }),
                 );
             }
-            const j = i.default.create((e) => ({ container: { width: "100%" }, interactiveHeaderContainer: { backgroundColor: "transparent", cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", width: "100%" }, compactHeaderContainer: { paddingHorizontal: e.spaces.space12 }, hoveredHeaderContainer: { backgroundColor: e.colors.gray100 }, infoContainer: { display: "flex", flexDirection: "column" }, subHeaderContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, subHeaderText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext2 }, dot: { width: e.spaces.space4, height: e.spaces.space4, borderRadius: e.spaces.space4, backgroundColor: e.colors.gray800 }, subheaderElapsedSeconds: { color: e.colors.gray900, fontSize: e.fontSizes.subtext2 }, sourcesText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext2 }, researchLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, researchLabel: {}, caretIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray800, transform: "rotate(0deg)", transition: "transform 0.2s ease" }, expandedCaretIcon: { transform: "rotate(90deg)" }, tracePreview: { backgroundColor: e.colors.gray0 } }));
+            const j = c.default.create((e) => ({ container: { width: "100%" }, interactiveHeaderContainer: { backgroundColor: "transparent", cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", width: "100%" }, compactHeaderContainer: { paddingHorizontal: e.spaces.space12 }, hoveredHeaderContainer: { backgroundColor: e.colors.gray100 }, infoContainer: { display: "flex", flexDirection: "column" }, subHeaderContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, subHeaderText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext2 }, dot: { width: e.spaces.space4, height: e.spaces.space4, borderRadius: e.spaces.space4, backgroundColor: e.colors.gray800 }, subheaderElapsedSeconds: { color: e.colors.gray900, fontSize: e.fontSizes.subtext2 }, sourcesText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext2 }, researchLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, researchLabel: {}, caretIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray800, transform: "rotate(0deg)", transition: "transform 0.2s ease" }, expandedCaretIcon: { transform: "rotate(90deg)" }, tracePreview: { backgroundColor: e.colors.gray0 } }));
             var U = a(25825),
                 q = a(293723),
                 J = a(227674),
@@ -419,11 +419,11 @@
                 ae = a(916559);
             function ne({ subStep: e }) {
                 const [t, a] = n.useState(null),
-                    o = (0, m.hC)("responsive_web_grok_animated_text_enabled"),
+                    o = (0, u.hC)("responsive_web_grok_animated_text_enabled"),
                     r = n.useCallback(() => {
                         if (e.summary) {
                             const t = e.summary;
-                            return n.createElement(s.Z, { style: [se.section, se.summarySection] }, n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(f.default, { disableLinks: p.ZP.isWebView(), isAnimated: o, markdownText: t })));
+                            return n.createElement(s.Z, { style: [se.section, se.summarySection] }, n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(y.default, { disableLinks: m.ZP.isWebView(), isAnimated: o, markdownText: t })));
                         }
                         return null;
                     }, [o, e.summary]),
@@ -432,54 +432,54 @@
                         if (r) {
                             const i = e.actionIcon,
                                 c = (i && (0, Q.wG)(i)) || X.default;
-                            return n.createElement(s.Z, null, n.createElement(s.Z, { style: se.actionContainer }, n.createElement(c, { style: se.actionIcon }), n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(f.default, { disableLinks: p.ZP.isWebView(), isAnimated: o, markdownText: r }))), e.webResults && e.webResults.length > 0 && n.createElement(s.Z, { style: se.actionContainer }, n.createElement(s.Z, { style: se.actionIcon }), n.createElement(ee.Z, { style: se.results, webResults: e.webResults })), e.xPostIds && e.xPostIds.length > 0 && n.createElement(s.Z, { style: se.actionContainer }, n.createElement(s.Z, { style: se.actionIcon }), n.createElement(te.Z, { style: se.results, xPostIds: e.xPostIds })), t ? n.createElement(ae.E, { onDrawerDismiss: () => a(null), webResults: [t] }) : null);
+                            return n.createElement(s.Z, null, n.createElement(s.Z, { style: se.actionContainer }, n.createElement(c, { style: se.actionIcon }), n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(y.default, { disableLinks: m.ZP.isWebView(), isAnimated: o, markdownText: r }))), e.webResults && e.webResults.length > 0 && n.createElement(s.Z, { style: se.actionContainer }, n.createElement(s.Z, { style: se.actionIcon }), n.createElement(ee.Z, { style: se.results, webResults: e.webResults })), e.xPostIds && e.xPostIds.length > 0 && n.createElement(s.Z, { style: se.actionContainer }, n.createElement(s.Z, { style: se.actionIcon }), n.createElement(te.Z, { style: se.results, xPostIds: e.xPostIds })), t ? n.createElement(ae.E, { onDrawerDismiss: () => a(null), webResults: [t] }) : null);
                         }
                     }, [e.actionSummary, e.webResults, e.xPostIds, e.actionIcon, t, o]);
                 return e.messageTag === Y.iS.SUMMARY ? r() : e.messageTag === Y.iS.DECISION || e.messageTag === Y.iS.RAW_FUNCTION_RESULT ? i() : null;
             }
-            const se = i.default.create((e) => ({ section: { display: "flex", flexDirection: "column" }, summarySection: { position: "relative", start: -11 }, results: { marginTop: e.spaces.space8, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, actionContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space8, alignItems: "center" }, actionWebResultInteractiveContainer: { backgroundColor: "transparent", height: "100%" }, actionWebResultContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space8, backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium, cursor: "pointer", transition: "background-color 0.2s ease", height: "100%" }, hoveredActionWebResultContainer: { backgroundColor: e.colors.gray100 }, acitonSummaryContainer: { backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, display: "flex", flexDirection: "row", alignItems: "center", borderRadius: e.borderRadii.medium, gap: e.spaces.space8, flex: 1 }, actionIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, actionWebResultFavicon: { width: e.spaces.space12, height: e.spaces.space12, borderRadii: e.borderRadii.medium }, actionWebResultUrl: { fontSize: e.fontSizes.subtext2, color: e.colors.gray700 }, loader: { opacity: 0, display: "none", transition: "opacity 0.2s ease", position: "absolute", top: "50%", start: "50%", transform: "translate(-50%, -50%)" }, startedLoader: { opacity: 1, display: "visible" } })),
+            const se = c.default.create((e) => ({ section: { display: "flex", flexDirection: "column" }, summarySection: { position: "relative", start: -11 }, results: { marginTop: e.spaces.space8, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, actionContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space8, alignItems: "center" }, actionWebResultInteractiveContainer: { backgroundColor: "transparent", height: "100%" }, actionWebResultContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: e.spaces.space8, backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium, cursor: "pointer", transition: "background-color 0.2s ease", height: "100%" }, hoveredActionWebResultContainer: { backgroundColor: e.colors.gray100 }, acitonSummaryContainer: { backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, display: "flex", flexDirection: "row", alignItems: "center", borderRadius: e.borderRadii.medium, gap: e.spaces.space8, flex: 1 }, actionIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, actionWebResultFavicon: { width: e.spaces.space12, height: e.spaces.space12, borderRadii: e.borderRadii.medium }, actionWebResultUrl: { fontSize: e.fontSizes.subtext2, color: e.colors.gray700 }, loader: { opacity: 0, display: "none", transition: "opacity 0.2s ease", position: "absolute", top: "50%", start: "50%", transform: "translate(-50%, -50%)" }, startedLoader: { opacity: 1, display: "visible" } })),
                 oe = n.memo(ne),
-                re = l().c2745fa4;
-            function ie({ completed: e, isFirstStep: t, isLastStep: a, statusIconBackgroundColor: r, step: c }) {
+                re = d().c2745fa4;
+            function ie({ completed: e, isFirstStep: t, isLastStep: a, statusIconBackgroundColor: r, step: i }) {
                 const l = (0, v.z)(),
                     [d, p] = n.useState(!1),
                     [m, u] = n.useState(!0),
                     g = (0, S.Z)(e),
-                    h = (0, S.Z)(c.state),
-                    f = c.state === Y.Fi.IN_PROGRESS,
-                    y = c.state === Y.Fi.COMPLETED,
-                    b = c.state === Y.Fi.FAILED;
+                    h = (0, S.Z)(i.state),
+                    f = i.state === Y.Fi.IN_PROGRESS,
+                    y = i.state === Y.Fi.COMPLETED,
+                    b = i.state === Y.Fi.FAILED;
                 return (
                     n.useEffect(() => {
                         (h === Y.Fi.IN_PROGRESS && y) || (b && !d) ? u(!1) : e && !g && u(!0);
                     }, [e, g, h, y, b, d]),
                     n.createElement(
                         s.Z,
-                        { key: c.id, style: ce.container },
+                        { key: i.id, style: ce.container },
                         n.createElement(
-                            E.Z,
+                            w.Z,
                             {
                                 interactiveStyles: ce.interactiveTitleContainer,
                                 onClick: () => {
-                                    u(!m), p(!0), l.scribe({ component: `${Z.nJ}-header-click`, action: "click", element: c.header || "" });
+                                    u(!m), p(!0), l.scribe({ component: `${I.nJ}-header-click`, action: "click", element: i.header || "" });
                                 },
                                 style: [ce.titleContainer, t ? { paddingTop: 0 } : void 0],
                             },
-                            ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(s.Z, { style: ce.statusTitleContainer }, n.createElement(s.Z, { style: [ce.statusIconContainer, r ? { backgroundColor: r } : void 0] }, n.createElement(U.Z, { color: i.default.theme.colors.gray900, size: "small", style: [ce.statusIcon, f ? ce.statusIconVisible : void 0, f ? void 0 : ce.statusIconHide] }), n.createElement(q.default, { style: [ce.statusIcon, ce.completeFailedIcon, y ? ce.completeFailedIconVisible : void 0] }), n.createElement(J.default, { style: [ce.statusIcon, ce.completeFailedIcon, b ? ce.completeFailedIconVisible : void 0] })), b ? n.createElement(o.ZP, { style: ce.title }, re) : n.createElement(o.ZP, { style: [ce.title, e ? ce.hoveredTitle : void 0] }, c.header)), c.subSteps.length > 0 && n.createElement(x.default, { style: [ce.caret, m ? ce.expandedCaret : void 0] })),
+                            ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(s.Z, { style: ce.statusTitleContainer }, n.createElement(s.Z, { style: [ce.statusIconContainer, r ? { backgroundColor: r } : void 0] }, n.createElement(U.Z, { color: c.default.theme.colors.gray900, size: "small", style: [ce.statusIcon, f ? ce.statusIconVisible : void 0, f ? void 0 : ce.statusIconHide] }), n.createElement(q.default, { style: [ce.statusIcon, ce.completeFailedIcon, y ? ce.completeFailedIconVisible : void 0] }), n.createElement(J.default, { style: [ce.statusIcon, ce.completeFailedIcon, b ? ce.completeFailedIconVisible : void 0] })), b ? n.createElement(o.ZP, { style: ce.title }, re) : n.createElement(o.ZP, { style: [ce.title, e ? ce.hoveredTitle : void 0] }, i.header)), i.subSteps.length > 0 && n.createElement(x.default, { style: [ce.caret, m ? ce.expandedCaret : void 0] })),
                         ),
                         n.createElement(
                             s.Z,
-                            { style: [ce.outerContentContainer, m && c.subSteps.length > 0 ? ce.expandedOuterContentContainer : void 0] },
+                            { style: [ce.outerContentContainer, m && i.subSteps.length > 0 ? ce.expandedOuterContentContainer : void 0] },
                             n.createElement(
                                 s.Z,
                                 { style: ce.contentContainer },
-                                c.subSteps.map((e, t) => n.createElement(oe, { key: `step-${c.id}-substep-${t}`, subStep: e })),
+                                i.subSteps.map((e, t) => n.createElement(oe, { key: `step-${i.id}-substep-${t}`, subStep: e })),
                             ),
                         ),
                     )
                 );
             }
-            const ce = i.default.create((e) => ({
+            const ce = c.default.create((e) => ({
                     container: { position: "relative" },
                     interactiveTitleContainer: { backgroundColor: "transparent" },
                     titleContainer: { display: "flex", flexDirection: "row", alignItems: "center", paddingVertical: e.spaces.space8, cursor: "pointer", gap: e.spaces.space8 },
@@ -500,23 +500,23 @@
                 })),
                 le = (e, t) => e.step.id === t.step.id && e.step.header === t.step.header && e.step.subSteps === t.step.subSteps && e.step.state === t.step.state && e.isFirstStep === t.isFirstStep && e.isLastStep === t.isLastStep && e.completed === t.completed,
                 de = n.memo(ie, le),
-                pe = l().eaf55eb4;
+                pe = d().eaf55eb4;
             function me({ completedTimestamp: e, fromTimestamp: t, messageStepAccumulator: a }) {
                 const r = (0, v.z)(),
-                    { isCompactLayout: c } = (0, k.ZP)(),
-                    { accumulatedTrace: l, deepsearchArgs: d, isPastSummary: p, state: m, steps: u, traceEnabled: g } = a,
-                    h = "COMPLETED" === m,
-                    f = "ABORTED" === m,
-                    [y, b] = n.useState(!1),
-                    [C, _] = n.useState(!h),
-                    z = (0, S.Z)(h),
-                    R = !!d && "deeper" === d.mode;
+                    { isCompactLayout: l } = (0, k.ZP)(),
+                    { accumulatedTrace: d, deepsearchArgs: p, isPastSummary: m, state: u, steps: g, traceEnabled: h } = a,
+                    f = "COMPLETED" === u,
+                    y = "ABORTED" === u,
+                    [b, C] = n.useState(!1),
+                    [E, _] = n.useState(!f),
+                    z = (0, S.Z)(f),
+                    R = !!p && "deeper" === p.mode;
                 return (
                     (0, T.q)(() => {
                         const e = "deep-search-summary-card-sub-step";
                         if (document.getElementById(e)) return;
                         const t = document.createElement("style");
-                        t.setAttribute("id", e), (t.textContent = `\n      .deep-search-summary-card-sub-step-markdown-text {\n        flex: 1;\n      }\n\n      .deep-search-summary-card-sub-step-markdown-text li {\n        margin-top: 0px !important;\n        padding-left: 5px !important;\n      }\n\n      .deep-search-summary-card-sub-step-markdown-text ul {\n        margin-bottom: 0px !important;\n      }\n\n      .deep-search-summary-card-sub-step-markdown-text span {\n        font-size: ${i.default.theme.fontSizes.subtext2} !important;\n        color: ${i.default.theme.colors.gray900} !important;\n        line-height: 24px;\n      }\n\n      .deep-search-summary-card-trace-preview-markdown-text span {\n        font-size: ${i.default.theme.fontSizes.subtext2} !important;\n        color: ${i.default.theme.colors.gray900} !important;\n        line-height: 24px;\n      }\n    `);
+                        t.setAttribute("id", e), (t.textContent = `\n      .deep-search-summary-card-sub-step-markdown-text {\n        flex: 1;\n      }\n\n      .deep-search-summary-card-sub-step-markdown-text li {\n        margin-top: 0px !important;\n        padding-left: 5px !important;\n      }\n\n      .deep-search-summary-card-sub-step-markdown-text ul {\n        margin-bottom: 0px !important;\n      }\n\n      .deep-search-summary-card-sub-step-markdown-text span {\n        font-size: ${c.default.theme.fontSizes.subtext2} !important;\n        color: ${c.default.theme.colors.gray900} !important;\n        line-height: 24px;\n      }\n\n      .deep-search-summary-card-trace-preview-markdown-text span {\n        font-size: ${c.default.theme.fontSizes.subtext2} !important;\n        color: ${c.default.theme.colors.gray900} !important;\n        line-height: 24px;\n      }\n    `);
                         const a = document.head;
                         return (
                             a && a.appendChild(t),
@@ -527,40 +527,40 @@
                         );
                     }),
                     n.useEffect(() => {
-                        !z && h && _(!1);
-                    }, [h, z]),
+                        !z && f && _(!1);
+                    }, [f, z]),
                     n.createElement(
                         s.Z,
-                        { style: [ue.container, c ? ue.compactContainer : void 0] },
+                        { style: [ue.container, l ? ue.compactContainer : void 0] },
                         n.createElement(K, {
-                            aborted: f,
-                            completed: h,
+                            aborted: y,
+                            completed: f,
                             completedTimestamp: e,
-                            expanded: C,
+                            expanded: E,
                             fromTimestamp: t,
                             isDeeperMode: R,
-                            isPastSummary: p,
+                            isPastSummary: m,
                             numSources: a.getNumSources(),
                             onClick: () => {
-                                r.scribe({ element: `${Z.nJ}-compact-card-${C ? "collapse" : "expand"}`, action: "click" }), _(!C);
+                                r.scribe({ element: `${I.nJ}-compact-card-${E ? "collapse" : "expand"}`, action: "click" }), _(!E);
                             },
-                            showTrace: g && !p,
-                            trace: l,
+                            showTrace: h && !m,
+                            trace: d,
                         }),
-                        u.length > 0 &&
+                        g.length > 0 &&
                             n.createElement(
                                 s.Z,
-                                { style: [ue.collapsedStepsContainer, c ? ue.compactCollapsedStepsContainer : void 0, C ? ue.expandedStepsContainer : void 0] },
+                                { style: [ue.collapsedStepsContainer, l ? ue.compactCollapsedStepsContainer : void 0, E ? ue.expandedStepsContainer : void 0] },
                                 n.createElement(
                                     s.Z,
                                     { style: ue.stepsOuterContainer },
-                                    g &&
+                                    h &&
                                         n.createElement(
-                                            E.Z,
+                                            w.Z,
                                             {
                                                 interactiveStyles: ue.interactiveShowThinkingContainer,
                                                 onPress: () => {
-                                                    b(!0), r.scribe({ element: `${Z.nJ}-open-trace`, action: "click" });
+                                                    C(!0), r.scribe({ element: `${I.nJ}-open-trace`, action: "click" });
                                                 },
                                                 style: ue.showThinkingContainer,
                                             },
@@ -573,25 +573,25 @@
                                         n.createElement(
                                             s.Z,
                                             { style: ue.stepsContainer },
-                                            u.map((e, t) => n.createElement(de, { completed: h, isFirstStep: 0 === t, isLastStep: t === u.length - 1, key: e.id, statusIconBackgroundColor: i.default.theme.colors.gray0, step: e })),
+                                            g.map((e, t) => n.createElement(de, { completed: f, isFirstStep: 0 === t, isLastStep: t === g.length - 1, key: e.id, statusIconBackgroundColor: c.default.theme.colors.gray0, step: e })),
                                         ),
                                     ),
-                                    n.createElement(w.Z, { size: c ? "space12" : "space16" }),
+                                    n.createElement(i.Z, { size: l ? "space12" : "space16" }),
                                 ),
                             ),
-                        y &&
-                            n.createElement(M, {
-                                completed: h,
+                        b &&
+                            n.createElement(F, {
+                                completed: f,
                                 onDismissed: () => {
-                                    b(!1), r.scribe({ element: `${Z.nJ}-close-trace`, action: "click" });
+                                    C(!1), r.scribe({ element: `${I.nJ}-close-trace`, action: "click" });
                                 },
-                                trace: l,
+                                trace: d,
                             }),
-                        n.createElement(I.Z, { analyticsMetricPrefix: Z.nJ, completedTimestamp: e, fromTimestamp: t, messageStepAccumulator: a }),
+                        n.createElement(Z.Z, { analyticsMetricPrefix: I.nJ, completedTimestamp: e, fromTimestamp: t, messageStepAccumulator: a }),
                     )
                 );
             }
-            const ue = i.default.create((e) => ({ container: { backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space12, marginBottom: e.spaces.space16, borderRadius: e.borderRadii.medium, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], overflow: "hidden" }, compactContainer: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, collapsedStepsContainer: { flex: 1, display: "grid", gridTemplateRows: "0fr", transition: "250ms grid-template-rows ease", marginHorizontal: e.spaces.space16, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, compactCollapsedStepsContainer: { marginHorizontal: e.spaces.space12 }, expandedStepsContainer: { gridTemplateRows: "1fr" }, stepsOuterContainer: { display: "flex", flexDirection: "column", flex: 1, height: "100%", position: "relative" }, lineContainer: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: e.spaces.space20, position: "absolute", start: 0, top: 0, height: "100%" }, line: { width: 1, height: `calc(100% - ${e.spaces.space16})`, backgroundColor: e.colors.gray200 }, stepsContainer: { display: "flex", flexDirection: "column", flex: 1, overflow: "hidden" }, showThinkingContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, cursor: "pointer", paddingBottom: e.spaces.space16, width: "max-content", opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, interactiveShowThinkingContainer: { backgroundColor: "transparent" }, showThinkingText: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1, lineHeight: e.fontSizes.subtext1, transition: "all 0.2s ease" }, hoveredShowThinkingText: { color: e.colors.gray900 }, showThinkingCaret: { color: e.colors.gray700, width: e.spaces.space16, height: e.spaces.space16 } }));
+            const ue = c.default.create((e) => ({ container: { backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space12, marginBottom: e.spaces.space16, borderRadius: e.borderRadii.medium, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], overflow: "hidden" }, compactContainer: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 }, collapsedStepsContainer: { flex: 1, display: "grid", gridTemplateRows: "0fr", transition: "250ms grid-template-rows ease", marginHorizontal: e.spaces.space16, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, compactCollapsedStepsContainer: { marginHorizontal: e.spaces.space12 }, expandedStepsContainer: { gridTemplateRows: "1fr" }, stepsOuterContainer: { display: "flex", flexDirection: "column", flex: 1, height: "100%", position: "relative" }, lineContainer: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: e.spaces.space20, position: "absolute", start: 0, top: 0, height: "100%" }, line: { width: 1, height: `calc(100% - ${e.spaces.space16})`, backgroundColor: e.colors.gray200 }, stepsContainer: { display: "flex", flexDirection: "column", flex: 1, overflow: "hidden" }, showThinkingContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, cursor: "pointer", paddingBottom: e.spaces.space16, width: "max-content", opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, interactiveShowThinkingContainer: { backgroundColor: "transparent" }, showThinkingText: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1, lineHeight: e.fontSizes.subtext1, transition: "all 0.2s ease" }, hoveredShowThinkingText: { color: e.colors.gray900 }, showThinkingCaret: { color: e.colors.gray700, width: e.spaces.space16, height: e.spaces.space16 } }));
             var ge = a(819102),
                 he = a(694456),
                 fe = a(299399),
@@ -605,108 +605,109 @@
                 Se = a(618770),
                 ve = a(917118),
                 ke = a(674756);
-            const Ie = l().b327c12a,
-                Ze = l().ca93f2ee;
-            function _e({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: i, id: c, isDeleted: l, isLoading: E, isAborted: w, query: x, sender: T, text: S, trace: v, tweetIds: I = [], upsell: _, webResults: z = [], citedWebResults: R = [], intermediateImageResults: D = [], promptSource: P, cardAttachments: A, followUpSuggestedMode: H, performanceMetrics: W, userChatItemId: B, mediaTweetIds: L, chatResponseAnnotations: N, isLastResponse: M, messageStepAccumulator: F, isPastThinkingTrace: O, disclaimer: $, chatItemId: V, expectedImageAspectRatio: G, memoryReferences: K, reasoningLayout: j }) {
-                const U = (0, m.hC)("responsive_web_grok_animated_text_enabled"),
-                    q = (0, m.hC)("responsive_web_grok_analyze_helpful_feedback"),
-                    J = (0, m.hC)("responsive_web_grok_show_grok_performance_metrics"),
-                    Y = (0, m.hC)("responsive_web_grok_show_grok_tweet_media"),
-                    X = (0, m.hC)("responsive_web_grok_use_collapsed_preview"),
-                    { isCompactLayout: Q, isShowButtons: ee } = (0, k.ZP)(),
-                    [te, ae] = n.useState(!1),
-                    ne = U && !!E,
-                    se = (0, ge.u)((0, we.M)(S || ""), ne),
-                    oe = (0, ge.u)(v || "", ne),
-                    re = (0, u.v9)((e) => g.ZP.select(e, h.c0)),
-                    ie = "UNIFIED" === j,
-                    { completedTimestamp: ce, fromTimestamp: le } = (0, ye.V)(a, V ?? "", W),
-                    de = n.useRef(null),
-                    pe = q && "analyze_post" === P,
-                    ue = n.useMemo(() => [...z, ...R], [z, R]),
-                    _e = n.useMemo(() => (A || []).filter((e) => !e.id), [A]);
-                if (!re) return null;
-                const Re = i && i.length > 0 && i[0].mimeType.startsWith("image"),
-                    De = $ ? [...t, $] : t,
-                    Pe = I.length > 0 || z.length > 0;
+            const Ze = d().b327c12a,
+                Ie = d().ca93f2ee;
+            function _e({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: c, id: l, isDeleted: d, isLoading: w, isAborted: x, query: T, sender: S, text: v, trace: Z, tweetIds: _ = [], upsell: z, webResults: R = [], citedWebResults: D = [], intermediateImageResults: P = [], promptSource: A, cardAttachments: H, followUpSuggestedMode: W, performanceMetrics: B, userChatItemId: L, mediaTweetIds: N, chatResponseAnnotations: F, isLastResponse: M, messageStepAccumulator: O, isPastThinkingTrace: $, disclaimer: V, chatItemId: G, expectedImageAspectRatio: K, memoryReferences: j, reasoningLayout: U }) {
+                const q = (0, u.hC)("responsive_web_grok_animated_text_enabled"),
+                    J = (0, u.hC)("responsive_web_grok_analyze_helpful_feedback"),
+                    Y = (0, u.hC)("responsive_web_grok_show_grok_performance_metrics"),
+                    X = (0, u.hC)("responsive_web_grok_show_grok_tweet_media"),
+                    Q = (0, u.hC)("responsive_web_grok_use_collapsed_preview"),
+                    { isCompactLayout: ee, isShowButtons: te } = (0, k.ZP)(),
+                    [ae, ne] = n.useState(!1),
+                    se = q && !!w,
+                    oe = (0, ge.u)((0, we.T)(v || "", H || []), se),
+                    re = (0, ge.u)(Z || "", se),
+                    ie = (0, g.v9)((e) => h.ZP.select(e, f.c0)),
+                    ce = "UNIFIED" === U,
+                    { completedTimestamp: le, fromTimestamp: de } = (0, ye.V)(a, G ?? "", B),
+                    pe = n.useRef(null),
+                    ue = J && "analyze_post" === A,
+                    _e = n.useMemo(() => [...R, ...D], [R, D]),
+                    Re = n.useMemo(() => (H || []).filter((e) => !e.id), [H]);
+                if (!ie) return null;
+                const De = c && c.length > 0 && c[0].mimeType.startsWith("image"),
+                    Pe = V ? [...t, V] : t,
+                    Ae = _.length > 0 || R.length > 0;
                 return n.createElement(
                     s.Z,
-                    { style: [ze.container, Q ? ze.compactContainer : void 0] },
+                    { style: [ze.container, ee ? ze.compactContainer : void 0] },
                     n.createElement(
                         s.Z,
                         { style: ze.content },
                         n.createElement(be.ZP, {
-                            completedTimestamp: ce,
-                            expanded: te,
-                            fromTimestamp: le,
-                            hasCardAttachments: A && A.length > 0,
-                            isImageResponse: Re,
-                            isLoading: E,
-                            messageStepAccumulator: F,
+                            completedTimestamp: le,
+                            expanded: ae,
+                            fromTimestamp: de,
+                            hasCardAttachments: H && H.length > 0,
+                            isImageResponse: De,
+                            isLoading: w,
+                            messageStepAccumulator: O,
                             onClick: () => {
-                                ae(!te);
+                                ne(!ae);
                             },
-                            onComplete: () => ae(!1),
-                            reasoningLayout: j,
-                            searchQuery: x,
-                            shownText: se,
-                            shownTrace: oe,
+                            onComplete: () => ne(!1),
+                            reasoningLayout: U,
+                            searchQuery: T,
+                            shownText: oe,
+                            shownTrace: re,
                             style: ze.status,
-                            useTypingStatus: !X,
+                            useTypingStatus: !Q,
                         }),
-                        F && n.createElement(n.Fragment, null, ie && (X ? n.createElement(Ce.Z, { completedTimestamp: ce, expanded: te, fromTimestamp: le, isLoading: E, isStatusExpanded: te, messageStepAccumulator: F }) : n.createElement(r.Z, { show: te, type: "slide" }, n.createElement(he.Z, { completedTimestamp: ce, fromTimestamp: le, hideSidePanel: !0, isLoading: E, messageStepAccumulator: F }))), !ie && "PENDING" !== F.state && (Q ? n.createElement(me, { completedTimestamp: ce, fromTimestamp: le, messageStepAccumulator: F }) : n.createElement(Z.ZP, { completedTimestamp: ce, fromTimestamp: le, isLoading: E, messageStepAccumulator: F }))),
-                        "" !== oe && !ie && n.createElement(fe.Z, { completed: !("" !== oe && "" === se && E), endStreamTimestamp: ce, fromTimestamp: le, hasResponseText: !!S, id: c ?? "", isPastThinkingTrace: O, performanceMetrics: W ?? {}, shownTrace: oe }),
-                        Re ? n.createElement(s.Z, { style: [ze.textContainer, ne ? ze.animation : null] }, n.createElement(o.ZP, { color: "gray700", size: "subtext1" }, Ie)) : null,
-                        n.createElement(Se.K, { expectedImageAspectRatio: G, fileAttachments: i, intermediateImageResults: D, isAborted: w, isLoading: E, messageId: c }),
-                        _e.length > 0 &&
+                        O && n.createElement(n.Fragment, null, ce && (Q ? n.createElement(Ce.Z, { completedTimestamp: le, expanded: ae, fromTimestamp: de, isLoading: w, isStatusExpanded: ae, messageStepAccumulator: O }) : n.createElement(r.Z, { show: ae, type: "slide" }, n.createElement(he.Z, { completedTimestamp: le, fromTimestamp: de, hideSidePanel: !0, isLoading: w, messageStepAccumulator: O }))), !ce && "PENDING" !== O.state && (ee ? n.createElement(me, { completedTimestamp: le, fromTimestamp: de, messageStepAccumulator: O }) : n.createElement(I.ZP, { completedTimestamp: le, fromTimestamp: de, isLoading: w, messageStepAccumulator: O }))),
+                        "" !== re && !ce && n.createElement(fe.Z, { completed: !("" !== re && "" === oe && w), endStreamTimestamp: le, fromTimestamp: de, hasResponseText: !!v, id: l ?? "", isPastThinkingTrace: $, performanceMetrics: B ?? {}, shownTrace: re }),
+                        ce && n.createElement(i.Z, { axis: "y", size: "space32" }),
+                        De ? n.createElement(s.Z, { style: [ze.textContainer, se ? ze.animation : null] }, n.createElement(o.ZP, { color: "gray700", size: "subtext1" }, Ze)) : null,
+                        n.createElement(Se.K, { expectedImageAspectRatio: K, fileAttachments: c, intermediateImageResults: P, isAborted: x, isLoading: w, messageId: l }),
+                        Re.length > 0 &&
                             n.createElement(
                                 s.Z,
                                 { style: ze.cards },
-                                _e.map((t) => n.createElement(C.Z, { analysisEntityId: e, cardAttachment: t, conversationKey: a, isAnimated: ne, key: `${t.cardType}-${t.variant || ""}-${t.created_at || ""}`, userChatItemId: B })),
+                                Re.map((t) => n.createElement(E.Z, { analysisEntityId: e, cardAttachment: t, conversationKey: a, isAnimated: se, key: `${t.cardType}-${t.variant || ""}-${t.created_at || ""}`, userChatItemId: L })),
                             ),
-                        De.length > 0
+                        Pe.length > 0
                             ? n.createElement(
                                   s.Z,
                                   { style: ze.bannerMessages },
-                                  De.map((e) => n.createElement(s.Z, { key: e, style: ze.banner }, n.createElement(d.default, { style: ze.bannerIcon }), n.createElement(o.ZP, { style: ze.bannerText }, e))),
+                                  Pe.map((e) => n.createElement(s.Z, { key: e, style: ze.banner }, n.createElement(p.default, { style: ze.bannerIcon }), n.createElement(o.ZP, { style: ze.bannerText }, e))),
                               )
                             : null,
-                        L?.length && Y ? n.createElement(ve.e, { isAnimated: ne, mediaIds: L }) : null,
-                        n.createElement(s.Z, { ref: de, style: ze.textContainer }, Re ? null : l ? n.createElement(o.ZP, { style: ze.deletedText }, Ze) : n.createElement(f.default, { cardAttachments: A, chatResponseAnnotations: N, citations: ue, disableLinks: p.ZP.isWebView(), isAborted: w, isAnimated: ne, isStreaming: E, key: "normal-answer", markdownText: se, messageId: c || "" })),
+                        N?.length && X ? n.createElement(ve.e, { isAnimated: se, mediaIds: N }) : null,
+                        n.createElement(s.Z, { ref: pe, style: ze.textContainer }, De ? null : d ? n.createElement(o.ZP, { style: ze.deletedText }, Ie) : n.createElement(y.default, { cardAttachments: H, chatResponseAnnotations: F, citations: _e, disableLinks: m.ZP.isWebView(), isAborted: x, isAnimated: se, isStreaming: w, key: "normal-answer", markdownText: oe, messageId: l || "" })),
                     ),
-                    !E && n.createElement(Te.U, { postIds: I ?? [], response: se, style: ze.embeddedContent, webResults: z ?? [] }),
-                    Pe && !E ? n.createElement(s.Z, { style: ze.searchButtonsContainer }, n.createElement(ke.R, { isAnimated: !0, postIds: I ?? [], webResults: z ?? [] })) : null,
-                    ee && !_ ? n.createElement(s.Z, { style: pe ? ze.helpfulFooterContainer : ze.footerContainer }, n.createElement(s.Z, { style: ze.messageButtonsContainer }, pe ? n.createElement(b.W, { conversationKey: a, messageId: c }) : n.createElement(y.Z, { analysisEntityId: e, conversationKey: a, customLeftContent: !E && J && W ? n.createElement(xe.E, { performanceMetrics: W, userChatItemId: B }) : null, messageId: c, promptSource: P, showPostButton: M, textContainer: de }))) : null,
-                    _ ? n.createElement(s.Z, { style: ze.upsellContainer }, n.createElement(Ee.w, { upsell: _ })) : null,
+                    !w && n.createElement(Te.U, { postIds: _ ?? [], response: oe, style: ze.embeddedContent, webResults: R ?? [] }),
+                    Ae && !w ? n.createElement(s.Z, { style: ze.searchButtonsContainer }, n.createElement(ke.R, { isAnimated: !0, postIds: _ ?? [], webResults: R ?? [] })) : null,
+                    te && !z ? n.createElement(s.Z, { style: ue ? ze.helpfulFooterContainer : ze.footerContainer }, n.createElement(s.Z, { style: ze.messageButtonsContainer }, ue ? n.createElement(C.W, { conversationKey: a, messageId: l }) : n.createElement(b.Z, { analysisEntityId: e, conversationKey: a, customLeftContent: !w && Y && B ? n.createElement(xe.E, { performanceMetrics: B, userChatItemId: L }) : null, messageId: l, promptSource: A, showPostButton: M, textContainer: pe }))) : null,
+                    z ? n.createElement(s.Z, { style: ze.upsellContainer }, n.createElement(Ee.w, { upsell: z })) : null,
                 );
             }
-            const ze = i.default.create((e) => ({
+            const ze = c.default.create((e) => ({
                 container: { width: "100%", alignItems: "center", marginBottom: e.spaces.space48 },
                 compactContainer: {},
                 textContainer: { paddingHorizontal: e.spaces.space16 },
-                searchButtonsContainer: { width: "100%", maxWidth: h.vf, marginTop: e.spaces.space16, paddingHorizontal: e.spaces.space16, display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 },
-                bannerMessages: { flexShrink: 1, width: "100%", maxWidth: h.vf, gap: e.spaces.space12, paddingHorizontal: e.spaces.space12, marginBottom: e.spaces.space8 },
+                searchButtonsContainer: { width: "100%", maxWidth: f.vf, marginTop: e.spaces.space16, paddingHorizontal: e.spaces.space16, display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 },
+                bannerMessages: { flexShrink: 1, width: "100%", maxWidth: f.vf, gap: e.spaces.space12, paddingHorizontal: e.spaces.space12, marginBottom: e.spaces.space8 },
                 animation: { opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] },
                 banner: { width: "100%", gap: e.spaces.space12, flexDirection: "row", justifyContent: "flex-start", alignItems: "center", position: "relative" },
                 bannerIcon: { color: e.colors.gray900, fontSize: e.fontSizes.headline2 },
                 bannerText: { flex: 1, maxWidth: "100%", fontSize: e.fontSizes.subtext1, color: e.colors.gray900 },
                 deletedText: { fontStyle: "italic" },
-                content: { flexShrink: 1, width: "100%", maxWidth: h.vf, position: "relative" },
-                status: { width: "100%", maxWidth: h.vf, paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 },
+                content: { flexShrink: 1, width: "100%", maxWidth: f.vf, position: "relative" },
+                status: { width: "100%", maxWidth: f.vf, paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 },
                 preventPointerEvents: { pointerEvents: "none" },
                 tweets: { marginTop: e.spaces.space12 },
                 tweet: { width: `calc(100% - ${e.spaces.space72} - ${e.spaces.space32})` },
                 userNameRow: { flexDirection: "row", justifyContent: "space-between", width: "100%" },
                 upsellContainer: { marginTop: e.spaces.space12, width: "100%", maxWidth: 620, paddingHorizontal: e.spaces.space16 },
-                footerContainer: { width: "100%", maxWidth: h.vf, marginTop: e.spaces.space12, paddingHorizontal: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", position: "relative", overflow: "hidden" },
-                helpfulFooterContainer: { width: "100%", maxWidth: h.vf, marginTop: e.spaces.space8, paddingHorizontal: e.spaces.space16, justifyContent: "space-between", overflow: "hidden" },
+                footerContainer: { width: "100%", maxWidth: f.vf, marginTop: e.spaces.space12, paddingHorizontal: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", position: "relative", overflow: "hidden" },
+                helpfulFooterContainer: { width: "100%", maxWidth: f.vf, marginTop: e.spaces.space8, paddingHorizontal: e.spaces.space16, justifyContent: "space-between", overflow: "hidden" },
                 messageButtonsContainer: { alignItems: "flex-start", justifyContent: "flex-start" },
                 followUpSuggestionModeContainer: { width: "10%", height: 50, backgroundColor: e.colors.gray0 },
                 debugText: { color: e.colors.gray500, width: "100%", alignSelf: "flex-start" },
                 cards: { display: "flex", flexDirection: "column", gap: e.spaces.space12, width: "100%" },
-                embeddedContent: { width: "100%", maxWidth: h.vf, marginTop: e.spaces.space12, paddingHorizontal: e.spaces.space16 },
+                embeddedContent: { width: "100%", maxWidth: f.vf, marginTop: e.spaces.space12, paddingHorizontal: e.spaces.space16 },
             }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.2f8d6d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.bd3d852a.js.map

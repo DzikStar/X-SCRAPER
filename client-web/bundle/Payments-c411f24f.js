@@ -82,7 +82,7 @@
                             n.createElement("ellipse", { cx: "73.510002", cy: "16.941", rx: ".24", ry: ".256" }),
                         ),
                     }),
-                m = () => n.createElement(c.Z, { style: u.contentWrapper }, n.createElement(l.Z, { spacing: "space8" }), n.createElement(c.Z, { style: u.row }, n.createElement(d, { style: u.logo }), n.createElement(c.Z, { style: u.column }, n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "Your deposits are eligible for pass through FDIC insurance up to $250,000."), n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "X is a financial services company and not a bank. Banking services and FDIC insurance is provided by Cross River Bank, Member FDIC.")))),
+                m = () => n.createElement(c.Z, { style: u.contentWrapper }, n.createElement(l.Z, { spacing: "space8" }), n.createElement(c.Z, { style: u.row }, n.createElement(d, { style: u.logo }), n.createElement(c.Z, { style: u.column }, n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "Your deposits are eligible for pass through FDIC insurance up to $250,000."), n.createElement(r.ZP, { color: "gray500", size: "subtext3" }, "X Payments LLC is a financial technology company, and not a bank. Funds are held at Cross River Bank, Member FDIC, and are eligible for pass through FDIC insurance if certain conditions are satisfied.")))),
                 u = o.default.create((e) => ({ logo: { width: e.spaces.space64, color: e.colors.gray500 }, row: { flexDirection: "row", gap: e.spaces.space24 }, column: { flexDirection: "column", gap: e.spaces.space12, flex: 1 } })),
                 p = n.memo(m);
         },
@@ -146,8 +146,8 @@
                         },
                         [t, e, u],
                     ),
-                    v = u && e ? ((e) => `Note cannot exceed ${e} characters.`)(e) : null;
-                return c.createElement(l.Z, null, c.createElement(l.Z, { style: [m.noteInputContainer, u ? m.noteInputContainerError : null] }, c.createElement(r.Z, (0, n.Z)({}, d, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: i ?? m.placeholder.color, style: [m.noteInput, h && m.noteInputFocused], testID: "note-input", value: s }))), c.createElement(l.Z, { style: m.errorContainer }, v && c.createElement(o.ZP, { style: m.errorText }, v)));
+                    b = u && e ? ((e) => `Note cannot exceed ${e} characters.`)(e) : null;
+                return c.createElement(l.Z, null, c.createElement(l.Z, { style: [m.noteInputContainer, u ? m.noteInputContainerError : null] }, c.createElement(r.Z, (0, n.Z)({}, d, { maxLength: e, onBlur: E, onChange: f, onFocus: g, placeholder: a, placeholderTextColor: i ?? m.placeholder.color, style: [m.noteInput, h && m.noteInputFocused], testID: "note-input", value: s }))), c.createElement(l.Z, { style: m.errorContainer }, b && c.createElement(o.ZP, { style: m.errorText }, b)));
             }
             const d = c.memo(s),
                 m = i.default.create((e) => ({ noteInput: { padding: e.spaces.space16, width: "100%", height: e.spaces.space48, textAlign: "start", fontSize: e.fontSizes.body, color: e.colors.text, backgroundColor: "transparent", border: "none" }, placeholder: { color: e.colors.gray400 }, noteInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, noteInputContainerError: { borderColor: e.colors.red500 }, errorContainer: { justifyContent: "flex-start", marginTop: e.spaces.space8 }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, noteInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
@@ -170,19 +170,19 @@
                 g = a(14284),
                 E = a(58399),
                 f = a(976352),
-                v = a(988291),
-                b = a(829464),
+                b = a(988291),
+                v = a(829464),
                 k = a(727828),
                 x = a(514639);
-            const Z = n.Z,
-                C = Object.freeze({ [v.S.Alert]: "danger", [v.S.Info]: "primary", [v.S.Warning]: "warning" }),
-                z = Object.freeze({ [v.S.Alert]: u.default, [v.S.Info]: p.default, [v.S.Warning]: u.default }),
+            const C = n.Z,
+                Z = Object.freeze({ [b.S.Alert]: "danger", [b.S.Info]: "primary", [b.S.Warning]: "warning" }),
+                z = Object.freeze({ [b.S.Alert]: u.default, [b.S.Info]: p.default, [b.S.Warning]: u.default }),
                 w = ({ itemRef: e, supportLink: t }) => {
-                    const a = o()(Z, e),
-                        n = a.topics?.includes(b.h.Premium),
-                        r = a.topics?.includes(b.h.Interest),
-                        m = a.topics?.includes(b.h.Geography),
-                        u = a.level === v.S.Info,
+                    const a = o()(C, e),
+                        n = a.topics?.includes(v.h.Premium),
+                        r = a.topics?.includes(v.h.Interest),
+                        m = a.topics?.includes(v.h.Geography),
+                        u = a.level === b.S.Info,
                         p = (({ action: e, supportLink: t, url: a }) => {
                             switch (e) {
                                 case f.C.ContactSupport:
@@ -205,7 +205,7 @@
                                     return;
                             }
                         })({ action: a.call_to_action, supportLink: t, url: a.call_to_action_url }),
-                        w = (u ? (n ? "primary" : r ? "success" : void 0) : void 0) ?? C[a.level],
+                        w = (u ? (n ? "primary" : r ? "success" : void 0) : void 0) ?? Z[a.level],
                         I = n ? h.default : r ? y.default : m ? g.default : z[a.level];
                     return c.createElement(i.Z, { key: a.title, link: !n && p ? p.link : void 0, style: [P.noticeListItem, !n && p && P.pointer], withInteractiveStyling: !1 }, c.createElement(l.Z, { style: P.contentContainer }, c.createElement(l.Z, { style: P.noticeContainer }, c.createElement(s.Z, { Icon: I, color: w, size: "xLarge" }), c.createElement(l.Z, { style: P.noticeTextContainer }, c.createElement(d.ZP, { color: "text", size: "subtext2", weight: "medium" }, a.title), c.createElement(d.ZP, { color: "gray800", size: "subtext2", weight: "normal" }, a.subtitle))), n ? c.createElement(k.Z, { variant: "MoneyInterest" }) : p ? c.createElement(E.default, { style: P.icon }) : null));
                 },
@@ -393,4 +393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.f9776f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c411f24f.03b2e15a.js.map

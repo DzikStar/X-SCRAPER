@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.UserLists-6107ac1a", "icons/IconDraggable-js"],
+    ["bundle.UserLists-6107ac1a", "icons/IconCameraPlusStroke-js", "icons/IconConnectArrows-js"],
     {
         966722: (e, l, n) => {
             n.d(l, { Z: () => i });
@@ -1038,10 +1038,10 @@
                 y,
                 _,
                 k,
-                b,
-                F = n(897455),
+                F,
+                b = n(897455),
                 f =
-                    ((b = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                    ((F = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                     {
                         fragment: {
                             argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (i = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (r = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (s = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (t = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (d = { defaultValue: null, kind: "LocalArgument", name: "userId" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (g = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (p = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
@@ -1112,7 +1112,7 @@
                             abstractKey: null,
                         },
                         kind: "Request",
-                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, p, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: y, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [_, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: F.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, b], storageKey: null }, b], type: "User", abstractKey: null }], storageKey: null }, b], storageKey: null }] },
+                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, p, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: y, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [_, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: b.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, F], storageKey: null }, F], type: "User", abstractKey: null }], storageKey: null }, F], storageKey: null }] },
                         params: { id: "YVuA8uETVvEat4jB0fP2Gg", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "payments_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "combinedListsPageTimelineQuery", operationKind: "query", text: null },
                     });
             f.hash = "48ea11d8565f9095001c26f5e505d825";
@@ -1223,13 +1223,13 @@
                 d = n(952428),
                 u = n(392237);
             const o = (e) => {
-                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: _, renderRightContent: k, role: b = "tab", styleOverride: F, testID: f = "pivot", thumbnail: h, thumbnailSize: K, withoutArrow: v = !1 } = e,
-                        T = [c.thumbnailContainer, "medium" === K && c.thumbnailContainerMedium],
-                        L = "string" == typeof g ? a.createElement(t.ZP, null, g) : g,
+                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: _, renderRightContent: k, role: F = "tab", styleOverride: b, testID: f = "pivot", thumbnail: h, thumbnailSize: K, withoutArrow: v = !1 } = e,
+                        L = [c.thumbnailContainer, "medium" === K && c.thumbnailContainerMedium],
+                        T = "string" == typeof g ? a.createElement(t.ZP, null, g) : g,
                         S = "object" == typeof p && p.external && !p.openInSameFrame,
                         w = n ? ("string" == typeof n ? a.createElement(t.ZP, { color: "gray700", size: "subtext2", testID: `${f}-description` }, n) : n) : null,
                         I = a.useMemo(() => ("space0" === _ ? { paddingHorizontal: 0 } : { paddingHorizontal: _ ? u.default.theme.spaces[_] : u.default.theme.componentDimensions.gutterHorizontal }), [_]);
-                    return a.createElement(d.Z, { "aria-selected": "tab" === b ? m : null, disabled: o, link: o ? void 0 : p, onPress: y, role: b, style: [c.root, I, o && c.disabled, F], testID: f, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, h ? a.createElement(i.Z, { style: T }, h) : null, a.createElement(i.Z, { style: c.content }, L, w), k ? k() : null, (!p && !y) || o || v ? null : S ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
+                    return a.createElement(d.Z, { "aria-selected": "tab" === F ? m : null, disabled: o, link: o ? void 0 : p, onPress: y, role: F, style: [c.root, I, o && c.disabled, b], testID: f, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, h ? a.createElement(i.Z, { style: L }, h) : null, a.createElement(i.Z, { style: c.content }, T, w), k ? k() : null, (!p && !y) || o || v ? null : S ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
                 },
                 c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -1356,7 +1356,7 @@
             n.d(l, { Z: () => a });
             const a = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        678773: (e, l, n) => {
+        293615: (e, l, n) => {
             n.r(l), n.d(l, { default: () => d });
             var a = n(202784),
                 i = n(890601),
@@ -1364,12 +1364,12 @@
                 s = n(347101);
             const t = (e = {}) => {
                 const { direction: l } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: l });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: l });
             };
             t.metadata = { width: 24, height: 24 };
             const d = t;
         },
-        76388: (e, l, n) => {
+        170397: (e, l, n) => {
             n.r(l), n.d(l, { default: () => d });
             var a = n(202784),
                 i = n(890601),
@@ -1377,11 +1377,11 @@
                 s = n(347101);
             const t = (e = {}) => {
                 const { direction: l } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: l });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15.96 1.54L21.41 7l-5.45 5.46-1.42-1.42L17.59 8H3V6h14.59l-3.05-3.04 1.42-1.42zM6.41 18l3.05 3.04-1.42 1.42L2.59 17l5.45-5.46 1.42 1.42L6.41 16H21v2H6.41z" })) }, { writingDirection: l });
             };
             t.metadata = { width: 24, height: 24 };
             const d = t;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.2ae9107a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.0fbc215a.js.map

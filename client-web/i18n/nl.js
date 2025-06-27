@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 a("c60b9e5c", "Changes will take effect for newly loaded content."),
-                a("c6ad999b", "languages settings"),
+                a("f9317b98", "language settings"),
                 a("hba0547a", "Unable to update settings. Please try again later."),
                 a("d4c339b9", function (e) {
                     return "Post van " + e.fullName + " (@" + e.screenName + ")";
@@ -4359,7 +4359,6 @@
                 a("a15d62db", function (e) {
                     return e.seconds + "s nagedacht";
                 }),
-                a("f26fc748", "Script"),
                 a("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 a("ff95a9cc", "Video-ID"),
                 a("a97e358e", "Videolink"),
                 a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond."),
-                a("ba37f6da", "Video-overzicht");
-            a("f19846b2", "Videominiatuur"),
-                a("ccd6f4a8", "Videotitel"),
+                a("ba37f6da", "Video-overzicht"),
+                a("f19846b2", "Videominiatuur");
+            a("ccd6f4a8", "Videotitel"),
                 a("c8410542", "Het aantal keer dat je video is bekeken"),
                 a("a532072a", "Kijkers"),
                 a("d9508ab0", "weergaven"),
@@ -5883,9 +5882,9 @@
                 a("af781666", "Wat vinden mensen?"),
                 a("a1f414ee", "Gedachten delen"),
                 a("ed88e742", "Link naar Onderwerp kopiëren"),
-                a("h92fe1be", "Helaas is Community Notes momenteel niet voor jou beschikbaar");
-            a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten"),
-                a("f8fc0b48", "Map maken"),
+                a("h92fe1be", "Helaas is Community Notes momenteel niet voor jou beschikbaar"),
+                a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten");
+            a("f8fc0b48", "Map maken"),
                 a("c14bcdde", "Bladwijzers doorzoeken"),
                 a("e9c65c4a", "Bladwijzers doorzoeken"),
                 a("b92a21d9", function (e) {
@@ -6889,9 +6888,9 @@
                 a("b8cbb51a", "Samenvatting vacature"),
                 a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
                 a("b075c68a", "Vacature bewerken"),
-                a("d4b6a6e0", "Profielspotlight");
-            a("j2dd3686", "Licht vacatures uit boven mijn posts."),
-                a("af1cfd46", "ATS-integratie"),
+                a("d4b6a6e0", "Profielspotlight"),
+                a("j2dd3686", "Licht vacatures uit boven mijn posts.");
+            a("af1cfd46", "ATS-integratie"),
                 a("d6fa2944", "Als je je integratie verwijdert, worden je geïmporteerde vacatures niet verwijderd."),
                 a("h99f11fa", "Integratie verwijderen"),
                 a("eef1ae76", "Momenteel verbonden"),
@@ -7871,7 +7870,8 @@
                 a("b74ff5fc", "Als je opzegt, wordt je Abonnement automatisch beëindigd aan het einde van de factureringsperiode."),
                 a("ee9efbc8", "Doorgaan naar opzeggen"),
                 a("c5d9c77a", "Het lijkt erop dat er even iets misging. Maak je geen zorgen, dat ligt niet aan jou. Sluit dit venster en probeer het opnieuw."),
-                a("jda53c24", "Je kan je Abonnement opzeggen via de Apple App Store.");
+                a("jda53c24", "Je kan je Abonnement opzeggen via de Apple App Store."),
+                a("g0a7a53e", "Je kan je Abonnement opzeggen via de Google Play Store.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7910,10 +7910,9 @@
                     o(e, n)
                 );
             }
-            a("g0a7a53e", "Je kan je Abonnement opzeggen via de Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "Welkom terug, " + e.displayName;
-                }),
+            a("i5f14be7", function (e) {
+                return "Welkom terug, " + e.displayName;
+            }),
                 a("a76d58ba", "Advertentie-analyses"),
                 a("eccd0e1a", "Organisatie-analyses"),
                 a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
@@ -8911,9 +8910,9 @@
                     return e.advertiserName + " bezoeken";
                 }),
                 a("c67e71aa", "Nu bekijken"),
-                a("a6ada13e", "Winkel nu");
-            a("j0f12222", "Meer bekijken"),
-                a("f569f7c8", "Naar website gaan"),
+                a("a6ada13e", "Winkel nu"),
+                a("j0f12222", "Meer bekijken");
+            a("f569f7c8", "Naar website gaan"),
                 a("j0c6772a", "Website bekijken"),
                 a("f73003aa", "Video wordt afgespeeld na de advertentie"),
                 a("b3112b8a", "Overslaan"),
@@ -10167,7 +10166,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13370,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.52146e7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.4479169a.js.map

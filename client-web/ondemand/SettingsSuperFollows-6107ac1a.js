@@ -1602,6 +1602,32 @@
                 },
                 S = (e) => r.createElement(i.Z, (0, l.Z)({}, e, { renderSelector: (e) => r.createElement(_, (0, l.Z)({}, e, { key: e.value })) }));
         },
+        215337: (e, a, n) => {
+            n.d(a, { Z: () => s });
+            var l = n(202784),
+                r = n(325686);
+            class i extends l.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.getColors = () => {
+                            const { colors: e, locations: a } = this.props;
+                            return e
+                                .map((e, n) => {
+                                    const l = a[n];
+                                    let r = "";
+                                    return l && (r = ` ${100 * l}%`), e + r;
+                                })
+                                .join(",");
+                        });
+                }
+                render() {
+                    const { angle: e, angleUnit: a, children: n, style: i } = this.props;
+                    return l.createElement(r.Z, { style: [i, { backgroundImage: `linear-gradient(${e}${a},${this.getColors()})` }] }, n);
+                }
+            }
+            i.defaultProps = { angle: 180, angleUnit: "deg", locations: [] };
+            const s = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.ad7717ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.fbc673ba.js.map

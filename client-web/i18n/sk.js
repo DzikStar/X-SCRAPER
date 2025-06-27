@@ -1380,7 +1380,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("c6ad999b", "languages settings"),
+                n("f9317b98", "language settings"),
                 n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return "Príspevok z " + e.fullName + " (@" + e.screenName + ")";
@@ -4368,7 +4368,6 @@
                 n("a15d62db", function (e) {
                     return "Premýšľal " + e.seconds + " s";
                 }),
-                n("f26fc748", "Script"),
                 n("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4940,9 +4939,9 @@
                 n("ff95a9cc", "Video – ID"),
                 n("a97e358e", "Video – odkaz"),
                 n("e10e8b46", "Zobrazujú sa iba videá za posledných 100 dní"),
-                n("ba37f6da", "Prehľad pre video");
-            n("f19846b2", "Miniatúra videa"),
-                n("ccd6f4a8", "Video – názov"),
+                n("ba37f6da", "Prehľad pre video"),
+                n("f19846b2", "Miniatúra videa");
+            n("ccd6f4a8", "Video – názov"),
                 n("c8410542", "Počet zobrazení videa."),
                 n("a532072a", "Diváci"),
                 n("d9508ab0", "zobr."),
@@ -5892,9 +5891,9 @@
                 n("af781666", "Čo si myslia ľudia?"),
                 n("a1f414ee", "Zdieľať názory"),
                 n("ed88e742", "Skopírovať odkaz na tému"),
-                n("h92fe1be", "Poznámky komunity, žiaľ, momentálne nie sú pre vás k dispozícii.");
-            n("f0dc1434", "Poznámky komunity sú momentálne k dispozícii len v USA"),
-                n("f8fc0b48", "Vytvoriť priečinok"),
+                n("h92fe1be", "Poznámky komunity, žiaľ, momentálne nie sú pre vás k dispozícii."),
+                n("f0dc1434", "Poznámky komunity sú momentálne k dispozícii len v USA");
+            n("f8fc0b48", "Vytvoriť priečinok"),
                 n("c14bcdde", "Prehľadať záložky"),
                 n("e9c65c4a", "Vyhľadávanie v záložkách"),
                 n("b92a21d9", function (e) {
@@ -6898,9 +6897,9 @@
                 n("b8cbb51a", "Zhrnutie pracovnej pozície"),
                 n("bda6881e", "Toto pracovné miesto bolo importované zo systému sledovania uchádzačov (ATS). Vezmite prosím na vedomie, že je možné upravovať iba určité polia."),
                 n("b075c68a", "Upraviť pracovnú pozíciu"),
-                n("d4b6a6e0", "Zvýraznenie v profile");
-            n("j2dd3686", "Zvýrazniť zobrazované pracovné ponuky nad mojimi príspevkami"),
-                n("af1cfd46", "Integrácia systému sledovania uchádzačov (ATS)"),
+                n("d4b6a6e0", "Zvýraznenie v profile"),
+                n("j2dd3686", "Zvýrazniť zobrazované pracovné ponuky nad mojimi príspevkami");
+            n("af1cfd46", "Integrácia systému sledovania uchádzačov (ATS)"),
                 n("d6fa2944", "Ak odstránite integráciu, importované pracovné ponuky sa neodstránia."),
                 n("h99f11fa", "Odstrániť integráciu"),
                 n("eef1ae76", "Momentálne prepojené"),
@@ -7880,7 +7879,8 @@
                 n("b74ff5fc", "Ak Predplatné zrušíte, jeho platnosť automaticky uplynie na konci fakturačného cyklu."),
                 n("ee9efbc8", "Pokračovať na zrušenie"),
                 n("c5d9c77a", "Zdá sa, že sa vyskytla menšia chyba. Žiadne obavy, nie je to vaša vina. Zavrite toto okno a skúste to znova."),
-                n("jda53c24", "Predplatné môžete zrušiť prostredníctvom obchodu Apple App Store.");
+                n("jda53c24", "Predplatné môžete zrušiť prostredníctvom obchodu Apple App Store."),
+                n("g0a7a53e", "Predplatné môžete zrušiť prostredníctvom Obchodu Google Play.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7919,10 +7919,9 @@
                     r(e, a)
                 );
             }
-            n("g0a7a53e", "Predplatné môžete zrušiť prostredníctvom Obchodu Google Play."),
-                n("i5f14be7", function (e) {
-                    return "Vitajte späť, " + e.displayName;
-                }),
+            n("i5f14be7", function (e) {
+                return "Vitajte späť, " + e.displayName;
+            }),
                 n("a76d58ba", "Štatistika reklám"),
                 n("eccd0e1a", "Štatistika organizácie"),
                 n("deea1708", "Chcete si pozrieť štatistiky všetkých svojich účtov X?"),
@@ -8920,9 +8919,9 @@
                     return "Prejsť na: " + e.advertiserName;
                 }),
                 n("c67e71aa", "Pozerať"),
-                n("a6ada13e", "Nakupovať teraz");
-            n("j0f12222", "Zobraziť viac"),
-                n("f569f7c8", "Prejsť na webstránku"),
+                n("a6ada13e", "Nakupovať teraz"),
+                n("j0f12222", "Zobraziť viac");
+            n("f569f7c8", "Prejsť na webstránku"),
                 n("j0c6772a", "Navštíviť webstránku"),
                 n("f73003aa", "Video sa spustí po reklame"),
                 n("b3112b8a", "Preskočiť"),
@@ -10167,7 +10166,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13372,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.869bec0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.2a86f0da.js.map

@@ -235,9 +235,9 @@
                     return "הנחה של ‎" + e.percentage + "%‎ על " + e.tier + " " + e.plan;
                 }),
                 n("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "קבלת ‎" + e.percentage + "%‎ הנחה במהלך עונת הקיץ הקרובה";
                 }),
-                n("he77d8e6", "Limited-time offer"),
+                n("he77d8e6", "הצעה לפרק זמן מוגבל"),
                 n("adf3410a", "רכוש מינוי כדי לקבל גישה לתכונות חדשות. ואם אתה זכאי, תוכל ליהנות מנתח מההכנסות."),
                 n("a84a736e", "קבלת נקודות אשראי למודעות פרסום בחינם"),
                 n("a0713d76", "שדרג לארגונים מאומתים כדי לקבל נקודות אשראי למודעות פרסום בחינם וערכת כלים להגדלת הפעילות העסקית."),
@@ -1303,7 +1303,7 @@
                     return "חיפוש אחר " + e.query + " ב-𝕏";
                 }),
                 n("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return "חיפוש אחר " + e.query + " בקרב המשתמשים של 𝕏";
                 }),
                 n("g008d475", function (e) {
                     return "עיון ב-" + e.url;
@@ -1324,7 +1324,7 @@
                     return "חיפוש של ‎@" + e.username + "‎ אחר **" + e.query + "** ב-𝕏";
                 }),
                 n("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "ביצוע קוד" + e.ttc_tool_usage_card;
                 }),
                 n("aa9d42c0", "Searching the web"),
                 n("dce1817a", "Searching on 𝕏"),
@@ -1363,12 +1363,12 @@
                 n("deaf5b16", "נסה שוב"),
                 n("a66d80d0", "תרגם את הפוסט"),
                 n("be9b9fb8", "תרגום של Grok"),
-                n("ba10dab6", "Auto-translated by Grok"),
+                n("ba10dab6", "תרגום אוטומטי של Grok"),
                 n("he9c9634", "לא ניתן לאחזר את התרגום"),
                 n("j2198c98", "הסתרת פוסט מתורגם"),
                 n("d4d35bea", "מתרגם..."),
-                n("f4f69be8", "Show original"),
-                n("e3097a5c", "Show auto-translated post"),
+                n("f4f69be8", "הצגת טקסט מקורי"),
+                n("e3097a5c", "הצגת תרגום אוטומטי של פוסט"),
                 n("e0f81ff3", "תרגום:"),
                 n("j2862695", function (e) {
                     return "תורגם מ" + e.originLanguage + " על-ידי";
@@ -1380,7 +1380,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("c6ad999b", "languages settings"),
+                n("f9317b98", "language settings"),
                 n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return "פוסט מאת " + e.fullName + " (@" + e.screenName + ")";
@@ -4282,7 +4282,7 @@
                     return "הצגת הכול (" + e.count + ")";
                 }),
                 n("df601d92", "משתמשים רלוונטיים"),
-                n("a4cfb8a8", "Browsing"),
+                n("a4cfb8a8", "עיון"),
                 n("d7cb5408", "דפי אינטרנט רלוונטיים"),
                 n("ca93f2ee", "מסר זה נמחק."),
                 n("b8c06820", "העתקת טקסט"),
@@ -4368,7 +4368,6 @@
                 n("a15d62db", function (e) {
                     return "מחשבות למשך " + e.seconds + " שניות";
                 }),
-                n("f26fc748", "Script"),
                 n("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4940,9 +4939,9 @@
                 n("ff95a9cc", "מזהה סרטון"),
                 n("a97e358e", "קישור לסרטון"),
                 n("e10e8b46", "מציג רק את הסרטונים מ-100 הימים האחרונים."),
-                n("ba37f6da", "סרטונים − סקירה כללית");
-            n("f19846b2", "תמונה ממוזערת של סרטון"),
-                n("ccd6f4a8", "כותרת סרטון"),
+                n("ba37f6da", "סרטונים − סקירה כללית"),
+                n("f19846b2", "תמונה ממוזערת של סרטון");
+            n("ccd6f4a8", "כותרת סרטון"),
                 n("c8410542", "מספר הפעמים שצפו בסרטונים."),
                 n("a532072a", "צופים"),
                 n("d9508ab0", "צפיות"),
@@ -5892,9 +5891,9 @@
                 n("af781666", "מה אנשים חושבים?"),
                 n("a1f414ee", "שיתוף מחשבות"),
                 n("ed88e742", "העתק קישור לנושא"),
-                n("h92fe1be", "Unfortunately, Community Notes is not available to you at this time.");
-            n("f0dc1434", "בשלב זה, 'הערות מהקהילה' זמינות בארצות הברית בלבד."),
-                n("f8fc0b48", "צור תיקייה"),
+                n("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
+                n("f0dc1434", "בשלב זה, 'הערות מהקהילה' זמינות בארצות הברית בלבד.");
+            n("f8fc0b48", "צור תיקייה"),
                 n("c14bcdde", "חפש בסימניות"),
                 n("e9c65c4a", "חיפוש בסימניות"),
                 n("b92a21d9", function (e) {
@@ -6520,7 +6519,7 @@
                 n("f7cf3d36", "Grok הוא עוזר בינה מלאכותית חינמי שפותח על ידי xAI ונועד למקסם תוצאות אמת אובייקטיביות. Grok מציע אפשרות לחיפושים בזמן אמת, להפקת תמונות, לניתוח מגמות ועוד."),
                 n("hc965308", "כיף"),
                 n("eb78b77e", "מצב 'כיף'"),
-                n("ac164552", "Go to grok.com"),
+                n("ac164552", "מעבר אל grok.com"),
                 n("gb5fb7d0", "מצב 'מיקוד'"),
                 n("g5665caa", "יצירה ממצב 'מיקוד'"),
                 n("a372681e", "העתקת קישור לשיתוף"),
@@ -6898,9 +6897,9 @@
                 n("b8cbb51a", "סיכום התפקיד"),
                 n("bda6881e", "תפקיד זה יובא מהמערכת למעקב אחרי מועמדים (ATS). שים לב שאפשר לשנות שדות ספציפיים בלבד."),
                 n("b075c68a", "עריכת עבודה"),
-                n("d4b6a6e0", "זרקור על פרופיל");
-            n("j2dd3686", "משרות שמוצגות באופן מודגש מעל הפוסטים שלך."),
-                n("af1cfd46", "אינטגרציה עם ATS"),
+                n("d4b6a6e0", "זרקור על פרופיל"),
+                n("j2dd3686", "משרות שמוצגות באופן מודגש מעל הפוסטים שלך.");
+            n("af1cfd46", "אינטגרציה עם ATS"),
                 n("d6fa2944", "מחיקת האינטגרציה תגרום למחיקת כל המשרות שיובאו."),
                 n("h99f11fa", "מחיקת אינטגרציה"),
                 n("eef1ae76", "מחובר כעת"),
@@ -7011,9 +7010,9 @@
                 n("gd573390", "והכל במינוי בסיסי..."),
                 n("ef94bbd4", "קבלת מינוי ‎Premium+‎"),
                 n("dcd830ce", "והכל במינוי Premium..."),
-                n("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                n("dde0dbe0", "כעת אפשר ליהנות מהצעה לעונת הקיץ, מסתיימת בתאריך:"),
                 n("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "ההצעה לעונת הקיץ מסתיימת בתאריך " + e.date + ".";
                 }),
                 n("b7dde622", "חג הודיה שמח! ההצעה מסתיימת בתאריך:"),
                 n("i0180ca1", function (e) {
@@ -7409,10 +7408,10 @@
                 n("bd05add8", "'לא בוט"),
                 n("d94f12b6", "נסה לחפש הודעות, פרטיות וכדומה."),
                 n("ba8f6f82", "הגדרות חיפוש"),
-                n("ibf92e4a", "Payment Successful"),
+                n("ibf92e4a", "התשלום בוצע בהצלחה"),
                 n("bdf0fb06", "Your subscription has been activated."),
                 n("ddfd6718", "התשלום נכשל"),
-                n("d42fa852", "There was an issue processing your payment. Please try again."),
+                n("d42fa852", "הייתה בעיה בעת עיבוד התשלום. נסה שוב."),
                 n("g055a9ce", "Open 𝕏 App"),
                 n("g931a6e5", function (e) {
                     return "אתה עוקב אחרי " + e.topic;
@@ -7880,7 +7879,8 @@
                 n("b74ff5fc", "אם תבטל, תוקף המינוי שלך יפוג באופן אוטומטי בתום מחזור החיוב."),
                 n("ee9efbc8", "המשך לביטול"),
                 n("c5d9c77a", "נראה שהייתה בעיה קטנה. אל דאגה, זו לא אשמתך. סגור את החלון הזה ונסה שוב."),
-                n("jda53c24", "ניתן לבטל את המינוי דרך חנות App Store של Apple.");
+                n("jda53c24", "ניתן לבטל את המינוי דרך חנות App Store של Apple."),
+                n("g0a7a53e", "ניתן לבטל את המינוי דרך חנות Google Play.");
             function f(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var n = a[c];
@@ -7919,10 +7919,9 @@
                     r(e, a)
                 );
             }
-            n("g0a7a53e", "ניתן לבטל את המינוי דרך חנות Google Play."),
-                n("i5f14be7", function (e) {
-                    return "ברוך שובך, " + e.displayName;
-                }),
+            n("i5f14be7", function (e) {
+                return "ברוך שובך, " + e.displayName;
+            }),
                 n("a76d58ba", "ניתוח מודעות"),
                 n("eccd0e1a", "ניתוח נתונים ארגוני"),
                 n("deea1708", "רוצה להציג ניתוח נתונים בכל חשבונות X שלך?"),
@@ -8920,9 +8919,9 @@
                     return "בקר ב־" + e.advertiserName;
                 }),
                 n("c67e71aa", "צפה עכשיו"),
-                n("a6ada13e", "קנה עכשיו");
-            n("j0f12222", "ראה עוד"),
-                n("f569f7c8", "עבור לאתר"),
+                n("a6ada13e", "קנה עכשיו"),
+                n("j0f12222", "ראה עוד");
+            n("f569f7c8", "עבור לאתר"),
                 n("j0c6772a", "בקר באתר"),
                 n("f73003aa", "הסרטון יוצג לאחר המודעה"),
                 n("b3112b8a", "דלג"),
@@ -10163,7 +10162,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13370,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.104a2d1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.62c09b0a.js.map

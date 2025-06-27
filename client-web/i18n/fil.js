@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + a.language;
                 }),
                 i("c60b9e5c", "Changes will take effect for newly loaded content."),
-                i("c6ad999b", "languages settings"),
+                i("f9317b98", "language settings"),
                 i("hba0547a", "Unable to update settings. Please try again later."),
                 i("d4c339b9", function (a) {
                     return "Post mula kay " + a.fullName + " (@" + a.screenName + ")";
@@ -4359,7 +4359,6 @@
                 i("a15d62db", function (a) {
                     return "Nag-isip sa loob ng " + a.seconds + "s";
                 }),
-                i("f26fc748", "Script"),
                 i("h26fa43f", function (a) {
                     return a.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 i("ff95a9cc", "Video ID"),
                 i("a97e358e", "Link ng Video"),
                 i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw."),
-                i("ba37f6da", "Overview ng video");
-            i("f19846b2", "Thumbnail ng video"),
-                i("ccd6f4a8", "Title ng Video"),
+                i("ba37f6da", "Overview ng video"),
+                i("f19846b2", "Thumbnail ng video");
+            i("ccd6f4a8", "Title ng Video"),
                 i("c8410542", "Ang dami ng beses na pinanood ang video mo."),
                 i("a532072a", "Mga Viewer"),
                 i("d9508ab0", "(na) view"),
@@ -5883,9 +5882,9 @@
                 i("af781666", "Ano ang palagay ng mga tao?"),
                 i("a1f414ee", "Ibahagi ang mga naiisip"),
                 i("ed88e742", "Kopyahin ang link sa Paksa"),
-                i("h92fe1be", "Sa kasamaang-palad, hindi available sa iyo ang Mga Note ng Komunidad sa ngayon.");
-            i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan."),
-                i("f8fc0b48", "Gumawa ng Folder"),
+                i("h92fe1be", "Sa kasamaang-palad, hindi available sa iyo ang Mga Note ng Komunidad sa ngayon."),
+                i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan.");
+            i("f8fc0b48", "Gumawa ng Folder"),
                 i("c14bcdde", "Maghanap ng Mga Bookmark"),
                 i("e9c65c4a", "Paghahanap ng mga Bookmark"),
                 i("b92a21d9", function (a) {
@@ -6889,9 +6888,9 @@
                 i("b8cbb51a", "Buod ng Trabaho"),
                 i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin."),
                 i("b075c68a", "I-edit ang trabaho"),
-                i("d4b6a6e0", "Spotlight ng Profile");
-            i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko."),
-                i("af1cfd46", "ATS integration"),
+                i("d4b6a6e0", "Spotlight ng Profile"),
+                i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko.");
+            i("af1cfd46", "ATS integration"),
                 i("d6fa2944", "Sa pag-delete ng integration mo, made-delete din ang mga naka-import na trabaho."),
                 i("h99f11fa", "I-delete ang integration"),
                 i("eef1ae76", "Kasalukuyang nakakonekta"),
@@ -7871,7 +7870,8 @@
                 i("b74ff5fc", "Kung magkakansela ka, awtomatikong mag-e-expire ang Subscription sa katapusan ng cycle ng pagsingil."),
                 i("ee9efbc8", "Magpatuloy sa pagkansela"),
                 i("c5d9c77a", "Mukhang nagkaroon ng kaunting problema. Huwag mag-alala, hindi ikaw ang may kasalanan. Isara ang window na ito at subukan ulit."),
-                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store.");
+                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store."),
+                i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store.");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7910,10 +7910,9 @@
                     o(a, n)
                 );
             }
-            i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store."),
-                i("i5f14be7", function (a) {
-                    return "Welcome back, " + a.displayName;
-                }),
+            i("i5f14be7", function (a) {
+                return "Welcome back, " + a.displayName;
+            }),
                 i("a76d58ba", "Analytics ng Ads"),
                 i("eccd0e1a", "Analytics ng Organisasyon"),
                 i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
@@ -8911,9 +8910,9 @@
                     return "Bisitahin ang " + a.advertiserName;
                 }),
                 i("c67e71aa", "Panoorin ngayon"),
-                i("a6ada13e", "Mamili ngayon");
-            i("j0f12222", "Tumingin pa"),
-                i("f569f7c8", "Pumunta sa website"),
+                i("a6ada13e", "Mamili ngayon"),
+                i("j0f12222", "Tumingin pa");
+            i("f569f7c8", "Pumunta sa website"),
                 i("j0c6772a", "Bisitahin ang website"),
                 i("f73003aa", "Magpe-play ang video pagkatapos ng ad"),
                 i("b3112b8a", "Laktawan"),
@@ -10161,7 +10160,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13369,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b395905a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b3ebc31a.js.map

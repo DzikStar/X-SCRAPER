@@ -31,10 +31,10 @@
                     const { backButtonType: e, centerTitle: a, centeredLogo: l, fixed: r, hideBackButton: t, isFullWidth: s, isLarge: c, leftControl: u, middleControl: m, position: p, rightControl: g, secondaryBar: y, style: _, subtitle: k, title: b, titleDomId: f, titleIconCell: h, titleIconCellSize: S, withBackground: F, withWideContainer: v } = this.props,
                         { isModal: w } = this.context,
                         K = t ? u : n.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        E = (function (e, a, l) {
+                        C = (function (e, a, l) {
                             return e && !(a && l);
                         })(!!F, w, !!y);
-                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: a, centeredLogo: l, isFullWidth: s, isLarge: c, leftControl: K, middleControl: m, position: d(p, w, r), rightControl: g, style: _, subtitle: k, title: b, titleDomId: f, titleIconCell: h, titleIconCellSize: S, withBackground: E, withWideContainer: v }), y || null);
+                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: a, centeredLogo: l, isFullWidth: s, isLarge: c, leftControl: K, middleControl: m, position: d(p, w, r), rightControl: g, style: _, subtitle: k, title: b, titleDomId: f, titleIconCell: h, titleIconCellSize: S, withBackground: C, withWideContainer: v }), y || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -288,8 +288,8 @@
                 v = l.n(F),
                 w = l(980407),
                 K = l(724345),
-                E = l(783373),
-                C = l(883229),
+                C = l(783373),
+                E = l(883229),
                 L = l(943914),
                 Z = l(293115),
                 T = l(28557),
@@ -360,8 +360,8 @@
                 M = l(277660),
                 D = l.n(M),
                 R = l(811176),
-                z = l(167630),
-                $ = l(708852),
+                $ = l(167630),
+                z = l(708852),
                 j = l(630715),
                 H = l(786272),
                 W = l(73664),
@@ -571,8 +571,8 @@
                 return { fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "useSuperFollowsCreateStripeSubscriptionUrlMutation", selections: a, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: e, kind: "Operation", name: "useSuperFollowsCreateStripeSubscriptionUrlMutation", selections: a }, params: { id: "1nNykZ_aQohdxHKoykBVmg", metadata: {}, name: "useSuperFollowsCreateStripeSubscriptionUrlMutation", operationKind: "mutation", text: null } };
             })();
             Ke.hash = "759d9c15b4318f3e6cf9204063fd8da0";
-            const Ee = Ke,
-                Ce = v().d2613123,
+            const Ce = Ke,
+                Ee = v().d2613123,
                 Le = v().ef4602ec,
                 Ze = v().c4640fc0,
                 Te = v().a72064a8,
@@ -599,14 +599,14 @@
                             let r = e;
                             return l && n && (r += a), r;
                         })(_.super_follow_creator_product_metadata?.amount ?? 0, _.super_follow_creator_product_metadata?.tax_amount ?? 0, r, t),
-                        E = _.super_follow_creator_product_metadata?.currency_code ?? void 0,
-                        C = _.super_follow_creator_product_metadata?.product_id ?? void 0,
+                        C = _.super_follow_creator_product_metadata?.currency_code ?? void 0,
+                        E = _.super_follow_creator_product_metadata?.product_id ?? void 0,
                         L = k.legacy?.id_str ?? void 0,
                         { href: Z, origin: T } = q.ZP.get(),
                         x = v ? `${T}/${v}/creator-subscriptions/subscribe/success` : T,
                         B = v ? `${T}/${v}/creator-subscriptions/subscribe/failure` : T,
                         [U, P] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
-                            const [n, r] = ve()(Ee);
+                            const [n, r] = ve()(Ce);
                             return [
                                 y.useCallback(
                                     () =>
@@ -626,7 +626,7 @@
                                 ),
                                 r,
                             ];
-                        })({ productId: C, successUrl: x, cancelUrl: B }),
+                        })({ productId: E, successUrl: x, cancelUrl: B }),
                         [N] = (() => {
                             const [e, a] = ve()(we);
                             return [
@@ -692,13 +692,13 @@
                             },
                             [p, re, se, I],
                         ),
-                        oe = E && K ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, K) : void 0,
-                        ue = { disabled: (F && L && F === L) || P || !C || ee, onPress: te },
-                        de = y.createElement(h.ZP, (0, g.Z)({}, ue, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Ne.bigSubscribeButton }), P ? y.createElement(z.Z, null) : Ce({ price: oe })),
-                        me = y.createElement(h.ZP, (0, g.Z)({}, ue, { disabled: ue.disabled && !m, size: "small", style: [Ne.transitionOpacity, m ? Ne.opacityNone : void 0], type: "primaryFilled" }), P ? y.createElement(z.Z, { size: "small" }) : Ce({ price: oe })),
+                        oe = C && K ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(C, K) : void 0,
+                        ue = { disabled: (F && L && F === L) || P || !E || ee, onPress: te },
+                        de = y.createElement(h.ZP, (0, g.Z)({}, ue, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Ne.bigSubscribeButton }), P ? y.createElement($.Z, null) : Ee({ price: oe })),
+                        me = y.createElement(h.ZP, (0, g.Z)({}, ue, { disabled: ue.disabled && !m, size: "small", style: [Ne.transitionOpacity, m ? Ne.opacityNone : void 0], type: "primaryFilled" }), P ? y.createElement($.Z, { size: "small" }) : Ee({ price: oe })),
                         pe = y.createElement(h.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: y.createElement(H.default, null), renderMenu: ie, size: "small", style: Ne.shareButton, type: "primaryText" }),
                         ge = y.createElement(A.Z, { style: Ne.rightControl }, me, pe),
-                        ye = (0, $.$u)();
+                        ye = (0, z.$u)();
                     return y.createElement(w.Z, { backButtonType: "back", backLocation: `/${a}/superfollows`, children: y.createElement(be, { children: de, emailShareElement: le, isWide: ye, user: _, viewer: k }), history: b, rightControl: ge });
                 },
                 Ne = S.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
@@ -708,29 +708,29 @@
                 Me = b,
                 De = { context: "SuperFollowsSubscribe" },
                 Re = { page: "super_follows_marketing" },
-                ze = ({ screenName: e }) => {
+                $e = ({ screenName: e }) => {
                     const a = { screenName: (0, T.Z)(e) },
                         l = (0, x.p)(Me, a),
                         n = l?.user?.result,
                         r = l?.viewer?.user_results?.result;
                     return n && r ? (n.super_following ? y.createElement(B.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? y.createElement(Z.nO, { namespace: Re }, y.createElement(Pe, { screenName: e, user: n, viewer: r })) : y.createElement(B.Z, { to: `/${e}` })) : null;
                 },
-                $e = () => {
+                ze = () => {
                     const e = (0, f.useHistory)(),
                         a = (0, f.useParams)().screenName || "",
                         l = y.useMemo(
                             () => ({
                                 type: "CustomRetry",
                                 content: (l) => {
-                                    const n = y.createElement(K.Z, { style: He.error }, y.createElement(E.Z, { description: Ve, title: Ie }), y.createElement(h.ZP, { onPress: l, style: He.errorButton, type: "brandFilled" }, Ae));
+                                    const n = y.createElement(K.Z, { style: He.error }, y.createElement(C.Z, { description: Ve, title: Ie }), y.createElement(h.ZP, { onPress: l, style: He.errorButton, type: "brandFilled" }, Ae));
                                     return y.createElement(w.Z, { backButtonType: "close", backLocation: `/${a}`, children: n, history: e });
                                 },
                             }),
                             [e, a],
                         );
-                    return y.createElement(C.N, { errorConfig: De, fallback: l }, y.createElement(L.B, null, y.createElement(ze, { screenName: a })));
+                    return y.createElement(E.N, { errorConfig: De, fallback: l }, y.createElement(L.B, null, y.createElement($e, { screenName: a })));
                 },
-                je = y.memo($e),
+                je = y.memo(ze),
                 He = S.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
                 We = (e) => y.createElement(_.Z, (0, g.Z)({}, e, { component: je }));
         },
@@ -778,6 +778,32 @@
                 }),
                 p = s.default.create((e) => ({ modalContainerStyle: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", alignItems: "center", justifyContent: "center" }, wrapper: { alignItems: "center", justifyContent: "center" } }));
         },
+        215337: (e, a, l) => {
+            l.d(a, { Z: () => s });
+            var n = l(202784),
+                r = l(325686);
+            class t extends n.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.getColors = () => {
+                            const { colors: e, locations: a } = this.props;
+                            return e
+                                .map((e, l) => {
+                                    const n = a[l];
+                                    let r = "";
+                                    return n && (r = ` ${100 * n}%`), e + r;
+                                })
+                                .join(",");
+                        });
+                }
+                render() {
+                    const { angle: e, angleUnit: a, children: l, style: t } = this.props;
+                    return n.createElement(r.Z, { style: [t, { backgroundImage: `linear-gradient(${e}${a},${this.getColors()})` }] }, l);
+                }
+            }
+            t.defaultProps = { angle: 180, angleUnit: "deg", locations: [] };
+            const s = t;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.356ef70a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.1169c76a.js.map

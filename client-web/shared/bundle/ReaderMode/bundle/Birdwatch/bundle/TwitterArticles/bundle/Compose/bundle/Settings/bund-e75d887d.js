@@ -168,7 +168,7 @@
                 v = d().c60b9e5c,
                 D = (0, _.ju)("https://x.com/settings/languages"),
                 B = { link: n.createElement(o.ZP, { color: "text", link: D, weight: "bold", withUnderline: !0 }) },
-                M = () => n.createElement(d().I18NFormatMessage, { $i18n: "g545a661" }, n.cloneElement(B.link, null, d().c6ad999b)),
+                M = () => n.createElement(d().I18NFormatMessage, { $i18n: "c4c230bf" }, n.cloneElement(B.link, null, d().f9317b98)),
                 O = { context: "GrokAutoTranslationInfoToggle" };
             function N({ close: e, sourceLanguage: t, sourceLanguageDisplayName: a }) {
                 const r = n.createElement(M, null),
@@ -450,4 +450,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.1439b50a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.fc03088a.js.map

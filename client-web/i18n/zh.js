@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 f("c60b9e5c", "Changes will take effect for newly loaded content."),
-                f("c6ad999b", "languages settings"),
+                f("f9317b98", "language settings"),
                 f("hba0547a", "Unable to update settings. Please try again later."),
                 f("d4c339b9", function (e) {
                     return "来自 " + e.fullName + " (@" + e.screenName + ") 的帖子";
@@ -4358,7 +4358,6 @@
                 f("a15d62db", function (e) {
                     return "已经思考 " + e.seconds + " 秒";
                 }),
-                f("f26fc748", "Script"),
                 f("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 f("ff95a9cc", "视频 ID"),
                 f("a97e358e", "视频链接"),
                 f("e10e8b46", "只显示最近 100 天的视频。"),
-                f("ba37f6da", "视频概览");
-            f("f19846b2", "视频缩略图"),
-                f("ccd6f4a8", "视频标题"),
+                f("ba37f6da", "视频概览"),
+                f("f19846b2", "视频缩略图");
+            f("ccd6f4a8", "视频标题"),
                 f("c8410542", "你的视频被观看的次数。"),
                 f("a532072a", "观众"),
                 f("d9508ab0", "次观看"),
@@ -5882,9 +5881,9 @@
                 f("af781666", "人们怎么看？"),
                 f("a1f414ee", "分享想法"),
                 f("ed88e742", "复制话题链接"),
-                f("h92fe1be", "很遗憾，你目前还无法使用社群笔记。");
-            f("f0dc1434", "社群附注目前仅在美国推出"),
-                f("f8fc0b48", "创建文件夹"),
+                f("h92fe1be", "很遗憾，你目前还无法使用社群笔记。"),
+                f("f0dc1434", "社群附注目前仅在美国推出");
+            f("f8fc0b48", "创建文件夹"),
                 f("c14bcdde", "搜索书签"),
                 f("e9c65c4a", "书签搜索"),
                 f("b92a21d9", function (e) {
@@ -6888,9 +6887,9 @@
                 f("b8cbb51a", "工作摘要"),
                 f("bda6881e", "这个工作机会已从你的申请人跟踪系统 (ATS) 导入。请注意，只有特定字段可修改。"),
                 f("b075c68a", "编辑工作机会"),
-                f("d4b6a6e0", "个人资料聚焦");
-            f("j2dd3686", "在我的帖子上方突出显示精选工作机会。"),
-                f("af1cfd46", "ATS 集成"),
+                f("d4b6a6e0", "个人资料聚焦"),
+                f("j2dd3686", "在我的帖子上方突出显示精选工作机会。");
+            f("af1cfd46", "ATS 集成"),
                 f("d6fa2944", "删除集成不会删除导入的工作机会。"),
                 f("h99f11fa", "删除集成"),
                 f("eef1ae76", "当前已连接"),
@@ -7870,7 +7869,8 @@
                 f("b74ff5fc", "如果取消，你的订阅将在账单周期结束时自动失效。"),
                 f("ee9efbc8", "继续取消"),
                 f("c5d9c77a", "看起来有点小插曲。不过别担心，这不是你的错。关闭这个窗口并重试。"),
-                f("jda53c24", "你可以通过 Apple App Store 来取消订阅。");
+                f("jda53c24", "你可以通过 Apple App Store 来取消订阅。"),
+                f("g0a7a53e", "你可以通过 Google Play Store 来取消订阅。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7909,10 +7909,9 @@
                     r(e, c)
                 );
             }
-            f("g0a7a53e", "你可以通过 Google Play Store 来取消订阅。"),
-                f("i5f14be7", function (e) {
-                    return "欢迎回来，" + e.displayName;
-                }),
+            f("i5f14be7", function (e) {
+                return "欢迎回来，" + e.displayName;
+            }),
                 f("a76d58ba", "广告分析"),
                 f("eccd0e1a", "组织分析"),
                 f("deea1708", "想要查看所有 X 账号的分析？"),
@@ -8910,9 +8909,9 @@
                     return "访问 " + e.advertiserName;
                 }),
                 f("c67e71aa", "立即观看"),
-                f("a6ada13e", "立即选购");
-            f("j0f12222", "查看更多"),
-                f("f569f7c8", "访问网站"),
+                f("a6ada13e", "立即选购"),
+                f("j0f12222", "查看更多");
+            f("f569f7c8", "访问网站"),
                 f("j0c6772a", "访问网站"),
                 f("f73003aa", "视频将在广告后播放"),
                 f("b3112b8a", "跳过"),
@@ -10169,7 +10168,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13371,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.c812357a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.ae37575a.js.map

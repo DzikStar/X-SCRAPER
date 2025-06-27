@@ -162,14 +162,14 @@
                 const { api: e, state: t } = d();
                 return (0, s.jsx)("div", { className: "absolute bottom-0 end-0 start-0 top-0 cursor-pointer", onClick: t.paused ? e.play : e.pause });
             }
-            var h = r(993165),
-                v = r(58124);
-            const f = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" }) });
+            var h = r(58124);
+            const v = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" }) });
+            var f = r(993165);
             function x(e) {
                 const { api: t, state: r } = d(),
-                    n = r.isFullscreen ? (0, s.jsx)(v.Z, {}) : (0, s.jsx)(f, {}),
+                    n = r.isFullscreen ? (0, s.jsx)(h.Z, {}) : (0, s.jsx)(v, {}),
                     a = "Full screen";
-                return (0, s.jsx)(h.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: t.toggleFullscreen, variant: "onMediaText", ...e });
+                return (0, s.jsx)(f.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: t.toggleFullscreen, variant: "onMediaText", ...e });
             }
             const p = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3.457 2.04L9 7.59V3h2v8H3V9h4.586L2.043 3.46l1.414-1.42zM19.5 8H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) }),
                 g = (e) => (0, s.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, s.jsx)("path", { d: "M3 3h8v2H6.414l5.543 5.54-1.414 1.42L5 6.41V11H3V3zm16.5 5H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" }) });
@@ -178,7 +178,7 @@
                     n = "undefined" == typeof window || !document.pictureInPictureEnabled,
                     a = r.isPictureInPicture ? (0, s.jsx)(p, {}) : (0, s.jsx)(g, {}),
                     l = "Picture-in-Picture";
-                return (0, s.jsx)(h.z, { "aria-label": l, disabled: n, hoverLabel: l, icon: a, onClick: t.togglePictureInPicture, variant: "onMediaText", ...e });
+                return (0, s.jsx)(f.z, { "aria-label": l, disabled: n, hoverLabel: l, icon: a, onClick: t.togglePictureInPicture, variant: "onMediaText", ...e });
             }
             var E = r(611105),
                 y = r(992796);
@@ -187,7 +187,7 @@
                 const { api: t, state: r } = d(),
                     n = r.ended ? (0, s.jsx)(E.Z, {}) : r.paused ? (0, s.jsx)(y.Z, {}) : (0, s.jsx)(j, {}),
                     a = r.ended ? "Replay" : r.paused ? "Play" : "Pause";
-                return (0, s.jsx)(h.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: r.ended || r.paused ? t.play : t.pause, variant: "onMediaText", ...e });
+                return (0, s.jsx)(f.z, { "aria-label": a, hoverLabel: a, icon: n, onClick: r.ended || r.paused ? t.play : t.pause, variant: "onMediaText", ...e });
             }
             var S = r(840489),
                 T = r(258246),
@@ -250,7 +250,7 @@
                 const { api: t, state: r } = d(),
                     n = r.muted ? (0, s.jsx)(V, {}) : (0, s.jsx)(U, {}),
                     a = r.muted ? "Unmute" : "Mute";
-                return (0, s.jsx)(h.z, {
+                return (0, s.jsx)(f.z, {
                     "aria-label": a,
                     hoverLabel: a,
                     icon: n,
@@ -443,4 +443,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.1bdb1fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-8eba0336.75dea2fa.js.map

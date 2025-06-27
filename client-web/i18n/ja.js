@@ -225,9 +225,9 @@
                     return e.tier + " " + e.plan + "が" + e.percentage + "%オフ";
                 }),
                 f("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "この夏は" + e.percentage + "%割引";
                 }),
-                f("he77d8e6", "Limited-time offer"),
+                f("he77d8e6", "期間限定プロモーション"),
                 f("adf3410a", "サブスクライブして新機能を利用しましょう。資格を満たしている場合、収益配分を受け取れます。"),
                 f("a84a736e", "無料の広告クレジット"),
                 f("a0713d76", "認証済み組織にアップグレードすると、無料の広告クレジットを獲得し、ビジネスの成長に役立つツールを利用できます。"),
@@ -1293,7 +1293,7 @@
                     return " 𝕏で「" + e.query + "」を検索中";
                 }),
                 f("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return "𝕏ユーザーから「" + e.query + "」を検索中";
                 }),
                 f("g008d475", function (e) {
                     return e.url + "でブラウジング中";
@@ -1314,7 +1314,7 @@
                     return "@" + e.username + "さんの𝕏ポストで**「" + e.query + "」**を検索中";
                 }),
                 f("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "実行コード" + e.ttc_tool_usage_card;
                 }),
                 f("aa9d42c0", "Searching the web"),
                 f("dce1817a", "Searching on 𝕏"),
@@ -1353,12 +1353,12 @@
                 f("deaf5b16", "やりなおす"),
                 f("a66d80d0", "ポストを翻訳"),
                 f("be9b9fb8", "Grokによる翻訳"),
-                f("ba10dab6", "Auto-translated by Grok"),
+                f("ba10dab6", "Grokによる自動翻訳"),
                 f("he9c9634", "翻訳を取得できません"),
                 f("j2198c98", "翻訳済みポストを非表示"),
                 f("d4d35bea", "翻訳中..."),
-                f("f4f69be8", "Show original"),
-                f("e3097a5c", "Show auto-translated post"),
+                f("f4f69be8", "オリジナルを表示"),
+                f("e3097a5c", "自動翻訳されたポストを表示"),
                 f("e0f81ff3", "翻訳:"),
                 f("j2862695", function (e) {
                     return "による" + e.originLanguage + "からの翻訳";
@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 f("c60b9e5c", "Changes will take effect for newly loaded content."),
-                f("c6ad999b", "languages settings"),
+                f("f9317b98", "language settings"),
                 f("hba0547a", "Unable to update settings. Please try again later."),
                 f("d4c339b9", function (e) {
                     return e.fullName + "さん（@" + e.screenName + "）からのポスト";
@@ -4272,7 +4272,7 @@
                     return "すべて表示（" + e.count + "）";
                 }),
                 f("df601d92", "関連ユーザー"),
-                f("a4cfb8a8", "Browsing"),
+                f("a4cfb8a8", "ブラウジング中の場所:"),
                 f("d7cb5408", "関連するウェブページ"),
                 f("ca93f2ee", "このメッセージは削除されました。"),
                 f("b8c06820", "テキストをコピー"),
@@ -4358,7 +4358,6 @@
                 f("a15d62db", function (e) {
                     return e.seconds + "秒間シンキングしました";
                 }),
-                f("f26fc748", "Script"),
                 f("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 f("ff95a9cc", "動画ID"),
                 f("a97e358e", "動画のリンク"),
                 f("e10e8b46", "過去100日間の動画のみ表示されています。"),
-                f("ba37f6da", "動画の概要");
-            f("f19846b2", "動画のサムネイル"),
-                f("ccd6f4a8", "動画のタイトル"),
+                f("ba37f6da", "動画の概要"),
+                f("f19846b2", "動画のサムネイル");
+            f("ccd6f4a8", "動画のタイトル"),
                 f("c8410542", "動画が再生された回数です。"),
                 f("a532072a", "視聴者"),
                 f("d9508ab0", "件の表示"),
@@ -5882,9 +5881,9 @@
                 f("af781666", "人々はどう思っているのでしょうか？"),
                 f("a1f414ee", "意見をポストする"),
                 f("ed88e742", "トピックのリンクをコピー"),
-                f("h92fe1be", "現在のところ、コミュニティノートをご利用いただけません");
-            f("f0dc1434", "コミュニティノートは現在、米国でのみご利用いただけます。"),
-                f("f8fc0b48", "フォルダを作成"),
+                f("h92fe1be", "現在のところ、コミュニティノートをご利用いただけません"),
+                f("f0dc1434", "コミュニティノートは現在、米国でのみご利用いただけます。");
+            f("f8fc0b48", "フォルダを作成"),
                 f("c14bcdde", "ブックマークを検索"),
                 f("e9c65c4a", "ブックマークの検索"),
                 f("b92a21d9", function (e) {
@@ -6510,7 +6509,7 @@
                 f("f7cf3d36", "Grokは、真実性と客観性を最大限に高めるためにxAIが開発した無料のAIアシスタントです。Grokには、リアルタイム検索、画像生成、トレンド分析などの機能が備わっています。"),
                 f("hc965308", "ユーモア"),
                 f("eb78b77e", "ユーモアモード"),
-                f("ac164552", "Go to grok.com"),
+                f("ac164552", "grok.comに移動"),
                 f("gb5fb7d0", "フォーカスモード"),
                 f("g5665caa", "フォーカスモードを修了"),
                 f("a372681e", "共有リンクをコピー"),
@@ -6888,9 +6887,9 @@
                 f("b8cbb51a", "求人の概要"),
                 f("bda6881e", "この求人は、採用管理システム（ATS）からインポートされました。特定の項目のみ変更できます。"),
                 f("b075c68a", "求人を編集"),
-                f("d4b6a6e0", "プロフィールスポットライト");
-            f("j2dd3686", "注目の求人をポストの上でハイライトします。"),
-                f("af1cfd46", "ATS統合"),
+                f("d4b6a6e0", "プロフィールスポットライト"),
+                f("j2dd3686", "注目の求人をポストの上でハイライトします。");
+            f("af1cfd46", "ATS統合"),
                 f("d6fa2944", "統合を削除しても、インポートされた求人は削除されません。"),
                 f("h99f11fa", "統合を削除"),
                 f("eef1ae76", "現在連携中"),
@@ -7001,9 +7000,9 @@
                 f("gd573390", "ベーシックの全特典も利用できます..."),
                 f("ef94bbd4", "プレミアムプラスを入手"),
                 f("dcd830ce", "プレミアムの全特典も利用できます..."),
-                f("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                f("dde0dbe0", "サマープロモーションの残り日数:"),
                 f("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "サマープロモーションは" + e.date + "までです。";
                 }),
                 f("b7dde622", "感謝祭プロモーションの残り時間:"),
                 f("i0180ca1", function (e) {
@@ -7399,10 +7398,10 @@
                 f("bd05add8", "スターター"),
                 f("d94f12b6", "通知、プライバシーなどを検索してみてください。"),
                 f("ba8f6f82", "検索設定"),
-                f("ibf92e4a", "Payment Successful"),
+                f("ibf92e4a", "お支払いが完了しました"),
                 f("bdf0fb06", "Your subscription has been activated."),
                 f("ddfd6718", "お支払いに失敗しました"),
-                f("d42fa852", "There was an issue processing your payment. Please try again."),
+                f("d42fa852", "お支払いの処理中に問題が発生しました。やりなおしてください。"),
                 f("g055a9ce", "Open 𝕏 App"),
                 f("g931a6e5", function (e) {
                     return e.topic + "をフォローしています";
@@ -7870,7 +7869,8 @@
                 f("b74ff5fc", "キャンセルした場合、有効期間が終了するとサブスクリプションは自動的に期限切れになります。"),
                 f("ee9efbc8", "続行してキャンセル"),
                 f("c5d9c77a", "一時的な問題が発生したようです。申し訳ありません。このウィンドウを閉じてやりなおしてください。"),
-                f("jda53c24", "サブスクリプションは、Apple App Storeからキャンセルできます。");
+                f("jda53c24", "サブスクリプションは、Apple App Storeからキャンセルできます。"),
+                f("g0a7a53e", "サブスクリプションは、Google Playストアからキャンセルできます。");
             function t(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var f = a[c];
@@ -7909,10 +7909,9 @@
                     r(e, a)
                 );
             }
-            f("g0a7a53e", "サブスクリプションは、Google Playストアからキャンセルできます。"),
-                f("i5f14be7", function (e) {
-                    return "おかえりなさい、" + e.displayName + "さん";
-                }),
+            f("i5f14be7", function (e) {
+                return "おかえりなさい、" + e.displayName + "さん";
+            }),
                 f("a76d58ba", "広告のアナリティクス"),
                 f("eccd0e1a", "組織のアナリティクス"),
                 f("deea1708", "ご利用のすべてのXアカウントのアナリティクスを表示しますか？"),
@@ -8910,9 +8909,9 @@
                     return e.advertiserName + "に移動";
                 }),
                 f("c67e71aa", "今すぐ見る"),
-                f("a6ada13e", "今すぐ購入");
-            f("j0f12222", "さらに表示"),
-                f("f569f7c8", "ウェブサイトに移動"),
+                f("a6ada13e", "今すぐ購入"),
+                f("j0f12222", "さらに表示");
+            f("f569f7c8", "ウェブサイトに移動"),
                 f("j0c6772a", "ウェブサイトに移動"),
                 f("f73003aa", "動画は広告の後に再生されます"),
                 f("b3112b8a", "スキップ"),
@@ -10160,7 +10159,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13362,4 +13361,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.e45de45a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.62d2671a.js.map

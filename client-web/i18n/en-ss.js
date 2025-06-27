@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 a("c60b9e5c", "Changes will take effect for newly loaded content."),
-                a("c6ad999b", "languages settings"),
+                a("f9317b98", "language settings"),
                 a("hba0547a", "Unable to update settings. Please try again later."),
                 a("d4c339b9", function (e) {
                     return "[[281741]] Post from " + e.fullName + " (@" + e.screenName + ")";
@@ -4359,7 +4359,6 @@
                 a("a15d62db", function (e) {
                     return "[[294826]] Thought for " + e.seconds + "s";
                 }),
-                a("f26fc748", "Script"),
                 a("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 a("ff95a9cc", "[[293572]] Video ID"),
                 a("a97e358e", "[[293570]] Video Link"),
                 a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
-                a("ba37f6da", "[[292001]] Video overview");
-            a("f19846b2", "[[293573]] Video thumbnail"),
-                a("ccd6f4a8", "[[293571]] Video title"),
+                a("ba37f6da", "[[292001]] Video overview"),
+                a("f19846b2", "[[293573]] Video thumbnail");
+            a("ccd6f4a8", "[[293571]] Video title"),
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
                 a("a532072a", "[[294256]] Viewers"),
                 a("d9508ab0", "[[293196]] views"),
@@ -5883,9 +5882,9 @@
                 a("af781666", "[[294695]] What do people think?"),
                 a("a1f414ee", "[[295480]] Share thoughts"),
                 a("ed88e742", "[[224922]] Copy link to Topic"),
-                a("h92fe1be", "[[273025]] Unfortunately, Community Notes is not available to you at this time.");
-            a("f0dc1434", "[[272991]] Community Notes is currently only available in the U.S."),
-                a("f8fc0b48", "[[240892]] Create a Folder"),
+                a("h92fe1be", "[[273025]] Unfortunately, Community Notes is not available to you at this time."),
+                a("f0dc1434", "[[272991]] Community Notes is currently only available in the U.S.");
+            a("f8fc0b48", "[[240892]] Create a Folder"),
                 a("c14bcdde", "[[220245]] Search Bookmarks"),
                 a("e9c65c4a", "[[288250]] Bookmarks search"),
                 a("b92a21d9", function (e) {
@@ -6889,9 +6888,9 @@
                 a("b8cbb51a", "[[282457]] Job Summary"),
                 a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "[[276392]] Edit job"),
-                a("d4b6a6e0", "[[249571]] Profile Spotlight");
-            a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
-                a("af1cfd46", "[[285940]] ATS integration"),
+                a("d4b6a6e0", "[[249571]] Profile Spotlight"),
+                a("j2dd3686", "[[285949]] Highlight featured jobs above my posts.");
+            a("af1cfd46", "[[285940]] ATS integration"),
                 a("d6fa2944", "[[285945]] Deleting your integration will not delete your imported jobs."),
                 a("h99f11fa", "[[285943]] Delete integration"),
                 a("eef1ae76", "[[285947]] Currently connected"),
@@ -7871,7 +7870,8 @@
                 a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
                 a("ee9efbc8", "[[265375]] Continue to cancellation"),
                 a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
-                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store.");
+                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
+                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7910,10 +7910,9 @@
                     r(e, t)
                 );
             }
-            a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "[[288006]] Welcome back, " + e.displayName;
-                }),
+            a("i5f14be7", function (e) {
+                return "[[288006]] Welcome back, " + e.displayName;
+            }),
                 a("a76d58ba", "[[288167]] Ads Analytics"),
                 a("eccd0e1a", "[[288001]] Organization Analytics"),
                 a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
@@ -8911,9 +8910,9 @@
                     return "[[223889]] Visit " + e.advertiserName;
                 }),
                 a("c67e71aa", "[[223887]] Watch now"),
-                a("a6ada13e", "[[142677]] Shop now");
-            a("j0f12222", "[[223888]] See more"),
-                a("f569f7c8", "[[223884]] Go to website"),
+                a("a6ada13e", "[[142677]] Shop now"),
+                a("j0f12222", "[[223888]] See more");
+            a("f569f7c8", "[[223884]] Go to website"),
                 a("j0c6772a", "[[223886]] Visit website"),
                 a("f73003aa", "[[225566]] Video will play after ad"),
                 a("b3112b8a", "[[153003]] Skip"),
@@ -10154,7 +10153,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13357,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.62ffac4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.98ea832a.js.map

@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("c6ad999b", "languages settings"),
+                t("f9317b98", "language settings"),
                 t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (e) {
                     return "Post fra " + e.fullName + " (@" + e.screenName + ")";
@@ -4359,7 +4359,6 @@
                 t("a15d62db", function (e) {
                     return "Tanke for " + e.seconds + "s";
                 }),
-                t("f26fc748", "Script"),
                 t("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 t("ff95a9cc", "Video-id"),
                 t("a97e358e", "Video-link"),
                 t("e10e8b46", "Viser kun videoer fra de sidste 100 dage."),
-                t("ba37f6da", "Videooversigt");
-            t("f19846b2", "Videominiaturebillede"),
-                t("ccd6f4a8", "Video-titel"),
+                t("ba37f6da", "Videooversigt"),
+                t("f19846b2", "Videominiaturebillede");
+            t("ccd6f4a8", "Video-titel"),
                 t("c8410542", "Antallet af gange, din video er blevet vist."),
                 t("a532072a", "Seere"),
                 t("d9508ab0", "visninger"),
@@ -5883,9 +5882,9 @@
                 t("af781666", "Hvad synes folk?"),
                 t("a1f414ee", "Del tanker"),
                 t("ed88e742", "Kopiér link til emne"),
-                t("h92fe1be", "Notater i Fællesskaber er desværre ikke tilgængelig for dig i øjeblikket.");
-            t("f0dc1434", "Fællesskabsnoter er i øjeblikket kun tilgængeligt i USA."),
-                t("f8fc0b48", "Opret en mappe"),
+                t("h92fe1be", "Notater i Fællesskaber er desværre ikke tilgængelig for dig i øjeblikket."),
+                t("f0dc1434", "Fællesskabsnoter er i øjeblikket kun tilgængeligt i USA.");
+            t("f8fc0b48", "Opret en mappe"),
                 t("c14bcdde", "Søg i bogmærker"),
                 t("e9c65c4a", "Søg i bogmærker"),
                 t("b92a21d9", function (e) {
@@ -6889,9 +6888,9 @@
                 t("b8cbb51a", "Stillingsoversigt"),
                 t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres."),
                 t("b075c68a", "Rediger stilling"),
-                t("d4b6a6e0", "Profil-spotlight");
-            t("j2dd3686", "Giv mere fokus til fremhævede stillinger end til mine poster."),
-                t("af1cfd46", "ATS-integration"),
+                t("d4b6a6e0", "Profil-spotlight"),
+                t("j2dd3686", "Giv mere fokus til fremhævede stillinger end til mine poster.");
+            t("af1cfd46", "ATS-integration"),
                 t("d6fa2944", "Hvis du sletter din integration, vil dine importerede stillinger ikke blive slettet."),
                 t("h99f11fa", "Slet integration"),
                 t("eef1ae76", "I øjeblikket tilsluttet"),
@@ -7871,7 +7870,8 @@
                 t("b74ff5fc", "Hvis du annullerer, udløber dit abonnement automatisk ved afslutningen af faktureringsperioden."),
                 t("ee9efbc8", "Fortsæt til annullering"),
                 t("c5d9c77a", "Det ser ud til, at der var en lille forstyrrelse. Bare rolig, det er ikke din skyld. Luk dette vindue, og prøv igen."),
-                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store.");
+                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store."),
+                t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store.");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7910,10 +7910,9 @@
                     a(e, r)
                 );
             }
-            t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store."),
-                t("i5f14be7", function (e) {
-                    return "Velkommen tilbage " + e.displayName;
-                }),
+            t("i5f14be7", function (e) {
+                return "Velkommen tilbage " + e.displayName;
+            }),
                 t("a76d58ba", "Annoncestatistik"),
                 t("eccd0e1a", "Statistik for organisation"),
                 t("deea1708", "Vil du se statistik på tværs af alle dine X-konti?"),
@@ -8911,9 +8910,9 @@
                     return "Besøg " + e.advertiserName;
                 }),
                 t("c67e71aa", "Se nu"),
-                t("a6ada13e", "Køb nu");
-            t("j0f12222", "Se mere"),
-                t("f569f7c8", "Gå til webstedet"),
+                t("a6ada13e", "Køb nu"),
+                t("j0f12222", "Se mere");
+            t("f569f7c8", "Gå til webstedet"),
                 t("j0c6772a", "Besøg webstedet"),
                 t("f73003aa", "Videoen afspilles efter annoncen"),
                 t("b3112b8a", "Spring over"),
@@ -10154,7 +10153,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13359,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.654c7a1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.17312f5a.js.map

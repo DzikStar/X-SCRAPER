@@ -30,13 +30,13 @@
                 C = a(836255);
             const x = "CONVERSATION_ANALYTICS_SCREEN",
                 S = (e, t) => t.match.params.statusId,
-                T = (e, t) => C.Z.selectHydrated(e, S(0, t)),
-                k = (e, t) => (0, Z.oo)(e, S(0, t)),
+                k = (e, t) => C.Z.selectHydrated(e, S(0, t)),
+                T = (e, t) => (0, Z.oo)(e, S(0, t)),
                 V = (e, t) => C.Z.selectFetchStatus(e, S(0, t)),
                 B = (e, t) => (0, Z.XJ)(e, S(0, t)),
                 A = (e, t) => (0, I.Yt)(e, S(0, t)),
                 D = (0, v.Z)()
-                    .propsFromState(() => ({ fetchStatus: V, liveCounts: A, quickPromoteEligibilityFetchStatus: k, statusId: S, tweet: T, quickPromoteEligibility: B, isOwnerOrAdminAllowed: P.Js }))
+                    .propsFromState(() => ({ fetchStatus: V, liveCounts: A, quickPromoteEligibilityFetchStatus: T, statusId: S, tweet: k, quickPromoteEligibility: B, isOwnerOrAdminAllowed: P.Js }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, E.zr)(x), fetchTweetIfNeeded: C.Z.fetchOneIfNeeded, fetchQuickPromoteEligibilityIfNeeded: Z.E6 }))
                     .withAnalytics({ page: "tweet", section: "analytics", component: "ConversationAnalytics" });
             a(571372);
@@ -110,8 +110,8 @@
                 Ce = u().j6daea86,
                 xe = u().jade381b,
                 Se = u().d725a289,
-                Te = u().hf9ed10f,
-                ke = u().f42a198d;
+                ke = u().hf9ed10f,
+                Te = u().f42a198d;
             function Ve(e) {
                 const { currency: t, endTime: a, isIosCampaign: i, isPaused: o, remainingBudget: s, startTime: l, totalBudget: c } = e,
                     d = a ? new Date(a) : null,
@@ -121,7 +121,7 @@
                     g = a && u ? _e.Z.getTimeLeftLabelTwoUnits(a) : null,
                     f = d ? Se(d) : "",
                     w = d ? xe(d) : "",
-                    b = Te({ endTimeString: f, endDateString: w }),
+                    b = ke({ endTimeString: f, endDateString: w }),
                     h = (function (e, t, a, r) {
                         const n = t ?? e;
                         if (!e || !a || !n || n > e) return null;
@@ -129,7 +129,7 @@
                         try {
                             const t = i((e - n) / 1e6),
                                 a = i(e / 1e6);
-                            return ke({ spentBudget: t, totalBudget: a });
+                            return Te({ spentBudget: t, totalBudget: a });
                         } catch {
                             return null;
                         }
@@ -329,7 +329,7 @@
                             const o = i ? f?.total_value : h?.total_value,
                                 s = ((l = e?.total_value), (c = o ?? 1), l ? Math.min(1, Math.round((l / c) * 100) / 100) : 0);
                             var l, c;
-                            return { value: s, label: i && u ? u[n] : t, color: "blue900", popover: i && u ? r.createElement(kt, { label: It({ timeLabel: u[n] }), metric: s }) : r.createElement(Tt, { label: a, metric: e, showPromotionPercentages: p }) };
+                            return { value: s, label: i && u ? u[n] : t, color: "blue900", popover: i && u ? r.createElement(Tt, { label: It({ timeLabel: u[n] }), metric: s }) : r.createElement(kt, { label: a, metric: e, showPromotionPercentages: p }) };
                         });
                     return r.createElement(
                         n.Z,
@@ -363,13 +363,13 @@
                     );
                 };
             const St = (e) => r.createElement(o.ZP, { align: "center", color: "gray700", size: "subtext2", weight: "medium" }, Zt(e.value)),
-                Tt = (e) => {
+                kt = (e) => {
                     const { featureSwitches: t } = r.useContext(w.rC),
                         a = e.metric?.promoted_value && e.metric?.total_value ? e.metric?.promoted_value / e.metric?.total_value : 0,
                         i = [e.showPromotionPercentages && (0, Q.O$)(a, !0, t)];
                     return r.createElement(n.Z, { style: Vt.popoverDataPoint, testID: `${e.label} bar details` }, r.createElement(ot.ZP, { label: e.label, size: "title3", subTextList: i, value: Pt(e.metric?.total_value ?? 0) }));
                 },
-                kt = (e) => r.createElement(n.Z, { style: Vt.popoverDataPoint, testID: `${e.label} bar details` }, r.createElement(ot.ZP, { label: e.label, size: "title3", value: Zt(e.metric) })),
+                Tt = (e) => r.createElement(n.Z, { style: Vt.popoverDataPoint, testID: `${e.label} bar details` }, r.createElement(ot.ZP, { label: e.label, size: "title3", value: Zt(e.metric) })),
                 Vt = d.default.create((e) => ({ smallSpacing: { marginBottom: e.spaces.space20, marginTop: e.spaces.space12, marginHorizontal: e.spaces.space16 }, normalSpacing: { marginBottom: e.spaces.space40, marginTop: e.spaces.space12, marginHorizontal: e.spaces.space32 }, subtitle: { marginTop: e.spaces.space2, marginBottom: e.spaces.space32 }, mobileGrid: { display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gridTemplateRows: "repeat(2, min-content)" }, mobileChart: { gridColumn: "1 / 3", gridRow: 2 }, modalGrid: { display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "repeat(2, min-content)" }, modalChart: { gridColumn: "1 / 4", gridRow: 2 }, popoverDataPoint: { margin: e.spaces.space16 } })),
                 Bt = r.memo(xt),
                 At = u().fc2a5c92,
@@ -514,7 +514,7 @@
                         }),
                         (this._handleGoBack = () => {
                             const { history: e } = this.props;
-                            e.goBackThroughModals();
+                            e.goBack();
                         }),
                         (this._scribeEligibility = () => {
                             const { analytics: e, quickPromoteEligibility: t } = this.props;
@@ -545,7 +545,7 @@
                             t = n?.views?.state,
                             a = n?.promoted_content;
                         let i = ra;
-                        return a ? (i = na) : 0 === e && "EnabledWithCount" === t ? (i = aa) : "EnabledWithCount" === t && (i = ta), r.createElement(c.Z, { actionLabel: ia, graphicDisplayMode: "none", headline: Yt, isFullHeightOnMobile: !0, onAction: this._handleGoBack, onClose: this._handleGoBack, subtext: i });
+                        return a ? (i = na) : 0 === e && "EnabledWithCount" === t ? (i = aa) : "EnabledWithCount" === t && (i = ta), r.createElement(c.Z, { actionLabel: ia, allowBackNavigation: !0, graphicDisplayMode: "none", headline: Yt, isFullHeightOnMobile: !0, onAction: this._handleGoBack, onClose: this._handleGoBack, subtext: i });
                     }
                 }
             }
@@ -581,4 +581,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-e96ca76f.11fa76da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-e96ca76f.6f31720a.js.map

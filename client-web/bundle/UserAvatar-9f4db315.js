@@ -17,7 +17,7 @@
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         374709: (e) => {
-            e.exports = { queryId: "IGHBZzBjkQ0I7TA4WKv32A", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
+            e.exports = { queryId: "-AfHqb3yk7aKm0kf6HGb5A", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         709401: (e) => {
             e.exports = { queryId: "azn3Sg0APPjb2Jtd7gqxsw", operationName: "GrokMediaHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -268,7 +268,7 @@
                 }
                 render() {
                     const { style: e } = this.props;
-                    return n.createElement(a.Z, { style: e }, n.createElement(a.Z, { style: B.root }, this._renderVideo()));
+                    return n.createElement(a.Z, { style: e }, n.createElement(a.Z, { style: M.root }, this._renderVideo()));
                 }
                 componentDidUpdate(e) {
                     const { isCurrentlyDisplayed: t } = this.props;
@@ -281,8 +281,8 @@
                     return (s.aspectRatio = a / i), n.createElement(G.Z, (0, u.Z)({}, s, { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: e, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
-            const B = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                M = q,
+            const M = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
+                B = q,
                 $ = f().ac85c6b2,
                 V = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: i, mediaDetail: s, onDismiss: l, onTap: d, promotedContent: p, videoId: _, ...c } = e,
@@ -347,14 +347,14 @@
                                             }),
                                         )
                                       : r.Z.isVideo(s) && _
-                                        ? n.createElement(M, { isCurrentlyDisplayed: i, promotedContent: p, style: U.container, video: s, videoId: _ })
+                                        ? n.createElement(B, { isCurrentlyDisplayed: i, promotedContent: p, style: U.container, video: s, videoId: _ })
                                         : null,
                               ),
                     );
                 },
                 U = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
                 W = n.memo(V, (e, t) => (0, d.Z)(e, t));
-            class z extends n.Component {
+            class R extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -407,18 +407,18 @@
                                 u = o === _;
                             return c && !h ? null : n.createElement(W, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: u, key: _, mediaDetail: i[_], onDismiss: p ? void 0 : s, onTap: l, onZoomed: u ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== _, videoId: h });
                         });
-                    return n.createElement(a.Z, { style: R.root }, i.length > 1 ? this._renderCarousel(_) : _);
+                    return n.createElement(a.Z, { style: z.root }, i.length > 1 ? this._renderCarousel(_) : _);
                 }
                 _renderCarousel(e) {
                     const { dominantColor: t, mediaIndex: o, mediaItems: a, onMediaItemChanged: l } = this.props,
                         { isZoomed: d } = this.state,
                         p = r.Z.isVideo(a[o]);
-                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(i.Z, { childrenStyle: [R.dimensions, R.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: R.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !p, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
+                    return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(i.Z, { childrenStyle: [z.dimensions, z.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: z.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !p, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(s.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (z.contextType = c.rC), (z.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: p.Z, onMediaItemChanged: p.Z });
-            const R = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                N = h(z);
+            (R.contextType = c.rC), (R.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: p.Z, onMediaItemChanged: p.Z });
+            const z = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
+                N = h(R);
         },
         827094: (e, t, o) => {
             "use strict";
@@ -507,4 +507,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-9f4db315.dbd7e43a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-9f4db315.86441b6a.js.map

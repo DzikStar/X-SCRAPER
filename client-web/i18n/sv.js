@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("c6ad999b", "languages settings"),
+                t("f9317b98", "language settings"),
                 t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (e) {
                     return "Inlägg av " + e.fullName + " (@" + e.screenName + ")";
@@ -4359,7 +4359,6 @@
                 t("a15d62db", function (e) {
                     return "Funderade i " + e.seconds + " s";
                 }),
-                t("f26fc748", "Script"),
                 t("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 t("ff95a9cc", "Video-id"),
                 t("a97e358e", "Videolänk"),
                 t("e10e8b46", "Visa bara videorna från de senaste 100 dagarna."),
-                t("ba37f6da", "Videoöversikt");
-            t("f19846b2", "Videominiatyr"),
-                t("ccd6f4a8", "Videotitel"),
+                t("ba37f6da", "Videoöversikt"),
+                t("f19846b2", "Videominiatyr");
+            t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Antalet gånger din video har setts."),
                 t("a532072a", "Tittare"),
                 t("d9508ab0", "visningar"),
@@ -5883,9 +5882,9 @@
                 t("af781666", "Vad tänker folk?"),
                 t("a1f414ee", "Berätta vad du tänker"),
                 t("ed88e742", "Kopiera länken till ämnet"),
-                t("h92fe1be", "Du kan tyvärr inte använda Gruppanmärkningar nu.");
-            t("f0dc1434", "Gruppanmärkningar är nu bara tillgängligt i USA"),
-                t("f8fc0b48", "Skapa en mapp"),
+                t("h92fe1be", "Du kan tyvärr inte använda Gruppanmärkningar nu."),
+                t("f0dc1434", "Gruppanmärkningar är nu bara tillgängligt i USA");
+            t("f8fc0b48", "Skapa en mapp"),
                 t("c14bcdde", "Sök bokmärken"),
                 t("e9c65c4a", "Bokmärkessökning"),
                 t("b92a21d9", function (e) {
@@ -6889,9 +6888,9 @@
                 t("b8cbb51a", "Jobböversikt"),
                 t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra."),
                 t("b075c68a", "Redigera jobbet"),
-                t("d4b6a6e0", "Profilspotlight");
-            t("j2dd3686", "Visa upp vissa jobb ovanför mina inlägg"),
-                t("af1cfd46", "ATS-integration"),
+                t("d4b6a6e0", "Profilspotlight"),
+                t("j2dd3686", "Visa upp vissa jobb ovanför mina inlägg");
+            t("af1cfd46", "ATS-integration"),
                 t("d6fa2944", "Om du raderar integrationen raderas inte de importerade jobben."),
                 t("h99f11fa", "Radera integrationen"),
                 t("eef1ae76", "Nu anslutna"),
@@ -7871,7 +7870,8 @@
                 t("b74ff5fc", "Om du säger upp prenumerationen kommer den att upphöra automatiskt i slutet av faktureringscykeln."),
                 t("ee9efbc8", "Fortsätt till uppsägningen"),
                 t("c5d9c77a", "Något verkar ha gått lite på tok. Men oroa dig inte, det är inte ditt fel. Stäng det här fönstret och försök igen."),
-                t("jda53c24", "Du kan säga upp prenumerationen via Apple App Store.");
+                t("jda53c24", "Du kan säga upp prenumerationen via Apple App Store."),
+                t("g0a7a53e", "Du kan säga upp prenumerationen via Google Play Butik.");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7910,10 +7910,9 @@
                     d(e, a)
                 );
             }
-            t("g0a7a53e", "Du kan säga upp prenumerationen via Google Play Butik."),
-                t("i5f14be7", function (e) {
-                    return "Välkommen tillbaka, " + e.displayName;
-                }),
+            t("i5f14be7", function (e) {
+                return "Välkommen tillbaka, " + e.displayName;
+            }),
                 t("a76d58ba", "Annonsanalys"),
                 t("eccd0e1a", "Organisationsanalys"),
                 t("deea1708", "Vill du se analys för alla din konton på X?"),
@@ -8911,9 +8910,9 @@
                     return "Besök " + e.advertiserName;
                 }),
                 t("c67e71aa", "Titta nu"),
-                t("a6ada13e", "Handla nu");
-            t("j0f12222", "Se mer"),
-                t("f569f7c8", "Besök webbplatsen"),
+                t("a6ada13e", "Handla nu"),
+                t("j0f12222", "Se mer");
+            t("f569f7c8", "Besök webbplatsen"),
                 t("j0c6772a", "Besök webbplatsen"),
                 t("f73003aa", "Videon spelas efter annonsen"),
                 t("b3112b8a", "Hoppa över"),
@@ -10154,7 +10153,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13357,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.8de03e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.21030c8a.js.map

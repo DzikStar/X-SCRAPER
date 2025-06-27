@@ -3,7 +3,7 @@
     ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73", "bundle.GrokDrawer-8486177b", "bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => K, Es: () => E, F0: () => te, F9: () => $, JE: () => x, JU: () => T, Ki: () => V, NV: () => N, OR: () => H, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => w, X4: () => X, YJ: () => W, bD: () => b, bv: () => U, en: () => ee, f: () => S, hi: () => D, j1: () => q, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => J, vf: () => B, zO: () => M });
+            s.d(t, { BU: () => K, Es: () => k, F0: () => te, F9: () => $, JE: () => x, JU: () => T, Ki: () => z, NV: () => N, OR: () => H, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => E, Uo: () => ae, V$: () => w, X4: () => X, YJ: () => W, bD: () => b, bv: () => U, en: () => ee, f: () => S, hi: () => D, j1: () => q, lo: () => ne, ni: () => V, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => J, vf: () => B, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -505,10 +505,10 @@
                 return n && n.sender === e.sender ? ((0, u.Hj)(new Error("Grok: Incorrect ordering for new message"), { tags: { userVisible: !0 } }), { ...e, localOnly: !0 }) : n || e.sender === l.CI.HUMAN ? e : ((0, u.Hj)(new Error("Grok: Grok speaking first"), { tags: { userVisible: !0 } }), { ...e, localOnly: !0 });
             }
             const b = (0, o.Z)((e) => S({ conversationKey: e }));
-            function k(e, t) {
+            function E(e, t) {
                 return e.entities.grokShare.entities[t];
             }
-            function E(e) {
+            function k(e) {
                 return e[m.Yf].currentConversation;
             }
             function M(e) {
@@ -593,10 +593,10 @@
             function j(e) {
                 return { type: m.Jt, payload: e };
             }
-            function V(e) {
+            function z(e) {
                 return { type: m.$t, payload: e };
             }
-            function z(e) {
+            function V(e) {
                 return { type: m._i, payload: e };
             }
             function X(e) {
@@ -711,7 +711,7 @@
                             case m.Yx.FAILURE:
                                 return { ...e, fetchHomeStatus: p.ZP.FAILED };
                             case m.Yx.SUCCESS:
-                                return { ...e, fetchHomeStatus: p.ZP.LOADED, version: t.payload?.grok_home?.grok_version ?? "", modelOptions: t.payload?.grok_home?.grok_model_options?.map((e) => ({ id: e.id, description: e.description, isEnabled: e.is_enabled, name: e.name })) ?? [], layout: t.payload?.grok_home?.layout ? { name: t.payload?.grok_home?.layout.name, sections: t.payload?.grok_home?.layout.sections.map((e) => ({ title: e.title, section_type: e.section_type, subtitle: e.subtitle, prompts: e.prompts ? e.prompts.map((e) => ({ display_label: e.display_label, icon_name: e.icon_name, image_url: e.image_url, prompt: e.prompt, prompt_id: e.prompt_id, display_body: e.display_body, action: e.action, filter_key: e.filter_key, tool_overrides: { imageGen: e.tool_overrides?.image_gen, webSearch: e.tool_overrides?.web_search, xSearch: e.tool_overrides?.x_search, xMediaSearch: e.tool_overrides?.x_media_search, xPostAnalyze: e.tool_overrides?.x_post_analyze, trendsSearch: e.tool_overrides?.trends_search } })) : [] })), mode_buttons: [...(t.payload?.grok_home?.layout?.mode_buttons || []).map((e) => ({ filter_key: e.filter_key, free_status: e.free_status, icon_name: e.icon_name, label: e.label, premium_status: e.premium_status, premium_plus_status: e.premium_plus_status, supported_models: (e.supported_models || []).map((e) => e) }))] } : null };
+                                return { ...e, fetchHomeStatus: p.ZP.LOADED, version: t.payload?.grok_home?.grok_version ?? "", modelOptions: t.payload?.grok_home?.grok_model_options?.map((e) => ({ id: e.id, description: e.description, isEnabled: e.is_enabled, name: e.name, isAnalyzeEnabled: e.is_analyze_enabled })) ?? [], layout: t.payload?.grok_home?.layout ? { name: t.payload?.grok_home?.layout.name, sections: t.payload?.grok_home?.layout.sections.map((e) => ({ title: e.title, section_type: e.section_type, subtitle: e.subtitle, prompts: e.prompts ? e.prompts.map((e) => ({ display_label: e.display_label, icon_name: e.icon_name, image_url: e.image_url, prompt: e.prompt, prompt_id: e.prompt_id, display_body: e.display_body, action: e.action, filter_key: e.filter_key, tool_overrides: { imageGen: e.tool_overrides?.image_gen, webSearch: e.tool_overrides?.web_search, xSearch: e.tool_overrides?.x_search, xMediaSearch: e.tool_overrides?.x_media_search, xPostAnalyze: e.tool_overrides?.x_post_analyze, trendsSearch: e.tool_overrides?.trends_search } })) : [] })), mode_buttons: [...(t.payload?.grok_home?.layout?.mode_buttons || []).map((e) => ({ filter_key: e.filter_key, free_status: e.free_status, icon_name: e.icon_name, label: e.label, premium_status: e.premium_status, premium_plus_status: e.premium_plus_status, supported_models: (e.supported_models || []).map((e) => e) }))] } : null };
                             case m.Lc.REQUEST:
                                 return { ...e, fetchConversationStatus: p.ZP.LOADING };
                             case m.Lc.FAILURE:
@@ -789,4 +789,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73.05d91e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73.15b5c97a.js.map

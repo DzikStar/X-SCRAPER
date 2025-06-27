@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + n.language;
                 }),
                 t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("c6ad999b", "languages settings"),
+                t("f9317b98", "language settings"),
                 t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (n) {
                     return "Bài đăng từ " + n.fullName + " (@" + n.screenName + ")";
@@ -4358,7 +4358,6 @@
                 t("a15d62db", function (n) {
                     return "Đã suy nghĩ trong " + n.seconds + " giây";
                 }),
-                t("f26fc748", "Script"),
                 t("h26fa43f", function (n) {
                     return n.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 t("ff95a9cc", "ID video"),
                 t("a97e358e", "Liên kết đến video"),
                 t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua."),
-                t("ba37f6da", "Thông tin tổng quan về video");
-            t("f19846b2", "Hình thu nhỏ video"),
-                t("ccd6f4a8", "Tiêu đề video"),
+                t("ba37f6da", "Thông tin tổng quan về video"),
+                t("f19846b2", "Hình thu nhỏ video");
+            t("ccd6f4a8", "Tiêu đề video"),
                 t("c8410542", "Số lượt xem video của bạn."),
                 t("a532072a", "Người xem"),
                 t("d9508ab0", "lượt xem"),
@@ -5882,9 +5881,9 @@
                 t("af781666", "Moi người nghĩ gì?"),
                 t("a1f414ee", "Chia sẻ suy nghĩ"),
                 t("ed88e742", "Sao chép liên kết vào Chủ đề"),
-                t("h92fe1be", "Rất tiếc, Ghi chép cho cộng đồng không khả dụng cho bạn vào lúc này.");
-            t("f0dc1434", "Ghi chép cho cộng đồng hiện chỉ có sẵn ở Hoa Kỳ"),
-                t("f8fc0b48", "Tạo Thư mục"),
+                t("h92fe1be", "Rất tiếc, Ghi chép cho cộng đồng không khả dụng cho bạn vào lúc này."),
+                t("f0dc1434", "Ghi chép cho cộng đồng hiện chỉ có sẵn ở Hoa Kỳ");
+            t("f8fc0b48", "Tạo Thư mục"),
                 t("c14bcdde", "Tìm kiếm dấu trang"),
                 t("e9c65c4a", "Tìm kiếm dấu trang"),
                 t("b92a21d9", function (n) {
@@ -6888,9 +6887,9 @@
                 t("b8cbb51a", "Tóm tắt công việc"),
                 t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
                 t("b075c68a", "Chỉnh sửa việc làm"),
-                t("d4b6a6e0", "Tiêu điểm hồ sơ");
-            t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi."),
-                t("af1cfd46", "Tích hợp với ATS"),
+                t("d4b6a6e0", "Tiêu điểm hồ sơ"),
+                t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi.");
+            t("af1cfd46", "Tích hợp với ATS"),
                 t("d6fa2944", "Xóa phần tích hợp này sẽ không xóa các việc làm bạn đã nhập."),
                 t("h99f11fa", "Xóa phần tích hợp"),
                 t("eef1ae76", "Hiện đã kết nối"),
@@ -7870,7 +7869,8 @@
                 t("b74ff5fc", "Nếu bạn hủy, Thuê bao của bạn sẽ tự động hết hạn vào cuối chu kỳ thanh toán."),
                 t("ee9efbc8", "Tiếp tục hủy"),
                 t("c5d9c77a", "Có vẻ như đã gặp phải một ít trục trặc. Tuy nhiên, đừng lo lắng, đó không phải là lỗi của bạn. Hãy đóng cửa sổ này. rồi thử lại."),
-                t("jda53c24", "Bạn có thể hủy Thuê bao của mình thông qua Apple App Store.");
+                t("jda53c24", "Bạn có thể hủy Thuê bao của mình thông qua Apple App Store."),
+                t("g0a7a53e", "Bạn có thể hủy Thuê bao của mình thông qua Google Play Store.");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7909,10 +7909,9 @@
                     a(n, h)
                 );
             }
-            t("g0a7a53e", "Bạn có thể hủy Thuê bao của mình thông qua Google Play Store."),
-                t("i5f14be7", function (n) {
-                    return "Chào mừng quay trở lại, " + n.displayName;
-                }),
+            t("i5f14be7", function (n) {
+                return "Chào mừng quay trở lại, " + n.displayName;
+            }),
                 t("a76d58ba", "Số liệu phân tích quảng cáo"),
                 t("eccd0e1a", "Số liệu phân tích về tổ chức"),
                 t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
@@ -8910,9 +8909,9 @@
                     return "Truy cập " + n.advertiserName;
                 }),
                 t("c67e71aa", "Xem ngay"),
-                t("a6ada13e", "Mua ngay");
-            t("j0f12222", "Xem thêm"),
-                t("f569f7c8", "Đi đến trang web"),
+                t("a6ada13e", "Mua ngay"),
+                t("j0f12222", "Xem thêm");
+            t("f569f7c8", "Đi đến trang web"),
                 t("j0c6772a", "Truy cập website"),
                 t("f73003aa", "Video sẽ phát sau quảng cáo"),
                 t("b3112b8a", "Bỏ qua"),
@@ -10153,7 +10152,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13355,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.e77fa5ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.a5f18aea.js.map

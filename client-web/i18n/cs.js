@@ -1380,7 +1380,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 a("c60b9e5c", "Changes will take effect for newly loaded content."),
-                a("c6ad999b", "languages settings"),
+                a("f9317b98", "language settings"),
                 a("hba0547a", "Unable to update settings. Please try again later."),
                 a("d4c339b9", function (e) {
                     return "Post od uživatele " + e.fullName + " (@" + e.screenName + ")";
@@ -4368,7 +4368,6 @@
                 a("a15d62db", function (e) {
                     return "Promýšleno po dobu " + e.seconds + " s";
                 }),
-                a("f26fc748", "Script"),
                 a("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4940,9 +4939,9 @@
                 a("ff95a9cc", "ID videa"),
                 a("a97e358e", "Odkaz na video"),
                 a("e10e8b46", "Zobrazují se pouze videa za posledních 100 dní."),
-                a("ba37f6da", "Souhrn videa");
-            a("f19846b2", "Miniatura videa"),
-                a("ccd6f4a8", "Název videa"),
+                a("ba37f6da", "Souhrn videa"),
+                a("f19846b2", "Miniatura videa");
+            a("ccd6f4a8", "Název videa"),
                 a("c8410542", "Počet zobrazení vašeho videa."),
                 a("a532072a", "Diváci"),
                 a("d9508ab0", "zobrazení"),
@@ -5892,9 +5891,9 @@
                 a("af781666", "Co si lidé myslí?"),
                 a("a1f414ee", "Sdílejte své myšlenky"),
                 a("ed88e742", "Zkopírovat odkaz na téma"),
-                a("h92fe1be", "Do programu Komunitní poznámky se bohužel prozatím nemůžete zapojit.");
-            a("f0dc1434", "Program Komunitní poznámky je prozatím dostupný jenom v USA."),
-                a("f8fc0b48", "Vytvořit složku"),
+                a("h92fe1be", "Do programu Komunitní poznámky se bohužel prozatím nemůžete zapojit."),
+                a("f0dc1434", "Program Komunitní poznámky je prozatím dostupný jenom v USA.");
+            a("f8fc0b48", "Vytvořit složku"),
                 a("c14bcdde", "Prohledat záložky"),
                 a("e9c65c4a", "Hledat záložky"),
                 a("b92a21d9", function (e) {
@@ -6898,9 +6897,9 @@
                 a("b8cbb51a", "Shrnutí pracovní pozice"),
                 a("bda6881e", "Toto pracovní místo bylo importováno ze systému sledování uchazečů (ATS). Vezměte prosím na vědomí, že lze upravovat pouze určitá pole."),
                 a("b075c68a", "Upravit pracovní pozici"),
-                a("d4b6a6e0", "Zvýraznění v profilu");
-            a("j2dd3686", "Zvýrazněte propagované pracovní pozice nad svými posty."),
-                a("af1cfd46", "Integrace ATS"),
+                a("d4b6a6e0", "Zvýraznění v profilu"),
+                a("j2dd3686", "Zvýrazněte propagované pracovní pozice nad svými posty.");
+            a("af1cfd46", "Integrace ATS"),
                 a("d6fa2944", "Smazáním integrace nesmažete importované pracovní pozice."),
                 a("h99f11fa", "Smazat integraci"),
                 a("eef1ae76", "Aktuálně připojeno"),
@@ -7880,7 +7879,8 @@
                 a("b74ff5fc", "Pokud Předplatné zrušíte, jeho platnost automaticky vyprší na konci fakturačního období."),
                 a("ee9efbc8", "Pokračovat ke zrušení"),
                 a("c5d9c77a", "Vypadá to, že se vyskytl drobný zádrhel. Nemějte ale obavy, není to vaše chyba. Zavřete toto okno a zkuste to znovu."),
-                a("jda53c24", "Své Předplatné můžete zrušit v obchodu Apple App Store.");
+                a("jda53c24", "Své Předplatné můžete zrušit v obchodu Apple App Store."),
+                a("g0a7a53e", "Své Předplatné můžete zrušit v obchodu Google Play.");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7919,10 +7919,9 @@
                     i(e, o)
                 );
             }
-            a("g0a7a53e", "Své Předplatné můžete zrušit v obchodu Google Play."),
-                a("i5f14be7", function (e) {
-                    return "Vítejte zpět, " + e.displayName;
-                }),
+            a("i5f14be7", function (e) {
+                return "Vítejte zpět, " + e.displayName;
+            }),
                 a("a76d58ba", "Analýza reklam"),
                 a("eccd0e1a", "Analytika organizace"),
                 a("deea1708", "Chcete zobrazit analytiku pro všechny své účty X?"),
@@ -8920,9 +8919,9 @@
                     return "Navštívit " + e.advertiserName;
                 }),
                 a("c67e71aa", "Sledovat hned teď"),
-                a("a6ada13e", "Nakupovat");
-            a("j0f12222", "Zobrazit víc"),
-                a("f569f7c8", "Přejít na webovou stránku"),
+                a("a6ada13e", "Nakupovat"),
+                a("j0f12222", "Zobrazit víc");
+            a("f569f7c8", "Přejít na webovou stránku"),
                 a("j0c6772a", "Navštívit web"),
                 a("f73003aa", "Video se přehraje po reklamě"),
                 a("b3112b8a", "Přeskočit"),
@@ -10163,7 +10162,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13368,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.708046ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.f2a4f10a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.LiveEvent-6107ac1a"],
+    ["bundle.LiveEvent-6107ac1a", "icons/IconBadgeStroke-js", "icons/IconHistory-js"],
     {
         782274: (e, t, l) => {
             l.d(t, { Z: () => p });
@@ -208,64 +208,6 @@
             u.hash = "2b67291281a91999442af9f50b54540d";
             const p = u;
         },
-        978053: (e, t, l) => {
-            l.d(t, { default: () => g });
-            var a = l(111677),
-                n = l.n(a);
-            const i = n().e3098e07,
-                s = n().fea16a51,
-                r = n().a4f2d94d,
-                o = n().hf9bc787,
-                c = n().efcd5885,
-                d = n().c37228b5,
-                u = 2592e3,
-                p = 604800,
-                h = 86400,
-                m = 3600,
-                g = {
-                    formatTimeSinceDate: (e, t) => {
-                        const l = ((t || new Date()).getTime() - e.getTime()) / 1e3;
-                        if (l >= 31104e3) {
-                            const e = Math.max(1, Math.round(l / 31536e3));
-                            return d({ years: e });
-                        }
-                        if (l >= u) {
-                            const e = Math.max(1, Math.floor(l / u));
-                            return c({ months: e });
-                        }
-                        if (l >= 561600) {
-                            const e = Math.max(1, Math.round(l / p));
-                            return o({ weeks: e });
-                        }
-                        if (l >= 84600) {
-                            const e = Math.max(1, Math.round(l / h));
-                            return r({ days: e });
-                        }
-                        if (l >= 3570) {
-                            const e = Math.max(1, Math.round(l / m));
-                            return s({ hours: e });
-                        }
-                        {
-                            const e = Math.max(1, Math.round(l / 60));
-                            return i({ minutes: e });
-                        }
-                    },
-                    formatWeekRange: (e) => {
-                        const t = new Date(Date.UTC(e.getFullYear(), e.getMonth(), e.getDate())),
-                            l = t.getUTCDay(),
-                            a = new Date(t);
-                        a.setUTCDate(a.getUTCDate() - l);
-                        const n = new Date(a);
-                        n.setUTCDate(n.getUTCDate() + 6);
-                        const i = new Date(Date.UTC(a.getUTCFullYear(), 0, 4)),
-                            s = Math.floor((a.getTime() - i.getTime()) / 6048e5 + 1),
-                            r = new Date(),
-                            o = n > r ? r : n,
-                            c = `${a.toLocaleString("en-US", { month: "short", day: "numeric" })} - ${o.toLocaleString("en-US", { month: "short", day: "numeric", year: "numeric" })}`;
-                        return [a.getUTCFullYear(), s, c];
-                    },
-                };
-        },
         392027: (e, t, l) => {
             l.d(t, { Z: () => o });
             var a = l(202784),
@@ -442,7 +384,7 @@
                 };
         },
         403556: (e, t, l) => {
-            l.d(t, { Z: () => T });
+            l.d(t, { Z: () => w });
             var a = l(807896),
                 n = l(202784),
                 i = l(194504),
@@ -496,13 +438,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: l, badgePip: a, children: i, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: k, style: C, to: P } = this.props,
-                        { location: T } = this.state,
-                        w = P ? this._getMemoizedLink(P, k) : void 0,
-                        x = c ? c(P) : T?.pathname === w?.pathname,
-                        E = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? S.pillHoverStyle.backgroundColor : void 0 }),
-                        L = g ? "medium" : x ? "bold" : "medium";
-                    return n.createElement(f.Z, { "aria-label": t, "aria-selected": x, focusable: !!x, interactiveStyles: E, link: w, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && x ? [S.pillActiveStyle] : []), d ? (u ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, C], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => n.createElement(o.Z, { style: u && S.flexGrow }, n.createElement(h.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(x, c, g, u) }, d && S.compactText, g && t && S.focusedText, u && S.pillTextStyle, u && x && S.pillActiveTextStyle, u && c && S.pillHoverTextStyle], weight: L }, e && n.createElement(e, { style: S.icon }), i, g || u ? null : n.createElement(o.Z, { style: x && [S.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? n.createElement(m.Z, { count: l, standalone: !0, style: [S.badge, l >= 10 && S.multiDigitBadge, l >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: b, withBorder: !1 }) : a ? n.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": t, badgeCount: l, badgePip: a, children: i, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: k, style: P, to: C } = this.props,
+                        { location: w } = this.state,
+                        E = C ? this._getMemoizedLink(C, k) : void 0,
+                        T = c ? c(C) : w?.pathname === E?.pathname,
+                        x = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? S.pillHoverStyle.backgroundColor : void 0 }),
+                        L = g ? "medium" : T ? "bold" : "medium";
+                    return n.createElement(f.Z, { "aria-label": t, "aria-selected": T, focusable: !!T, interactiveStyles: x, link: E, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [S.pillStyle] : [S.link]), ...(u && T ? [S.pillActiveStyle] : []), d ? (u ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, P], withoutInteractiveStyles: g }, ({ isFocused: t, isHovered: c }) => n.createElement(o.Z, { style: u && S.flexGrow }, n.createElement(h.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(T, c, g, u) }, d && S.compactText, g && t && S.focusedText, u && S.pillTextStyle, u && T && S.pillActiveTextStyle, u && c && S.pillHoverTextStyle], weight: L }, e && n.createElement(e, { style: S.icon }), i, g || u ? null : n.createElement(o.Z, { style: T && [S.border, { backgroundColor: r.default.theme.colors[s] }] })), l ? n.createElement(m.Z, { count: l, standalone: !0, style: [S.badge, l >= 10 && S.multiDigitBadge, l >= 20 && S.truncatedCountBadge], truncatedCountFormatter: _, unreadCountLabel: b, withBorder: !1 }) : a ? n.createElement(m.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: v, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = g.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -529,9 +471,9 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                C = k,
-                P = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                T = ({ alignFirstItem: e, "aria-label": t, isCompact: l, isPillLink: r, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
+                P = k,
+                C = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                w = ({ alignFirstItem: e, "aria-label": t, isCompact: l, isPillLink: r, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
                     const p = c
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -541,12 +483,12 @@
                         g = n.useMemo(
                             () =>
                                 c.filter(Boolean).map(({ label: t, viewType: i, ...s }, c) => {
-                                    const d = m ? [P.linkRedesign, 0 === c && P.firstLinkRedesign, e && 0 === c && P.withNoPaddingStart] : void 0;
-                                    return n.createElement(C, (0, a.Z)({ viewType: i }, s, { isCompact: l, isPillLink: r, isRoundedRect: o, isWebRedesign: m, style: d }), t);
+                                    const d = m ? [C.linkRedesign, 0 === c && C.firstLinkRedesign, e && 0 === c && C.withNoPaddingStart] : void 0;
+                                    return n.createElement(P, (0, a.Z)({ viewType: i }, s, { isCompact: l, isPillLink: r, isRoundedRect: o, isWebRedesign: m, style: d }), t);
                                 }),
                             [e, l, r, o, m, c],
                         );
-                    return n.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: r && P.gap, childrenStyle: !m && P.flexGrow, key: p, style: [r ? null : P.segmentedControl, m && P.leftAligned, d], visibleItemIndex: u }, g);
+                    return n.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: r && C.gap, childrenStyle: !m && C.flexGrow, key: p, style: [r ? null : C.segmentedControl, m && C.leftAligned, d], visibleItemIndex: u }, g);
                 };
         },
         165822: (e, t, l) => {
@@ -586,9 +528,9 @@
         874090: (e, t, l) => {
             l.d(t, { Z: () => n });
             var a = l(202784);
-            const n = (0, l(523561).Z)({ loader: () => Promise.all([l.e("icons.6"), l.e("icons.4"), l.e("icons.12"), l.e("modules.audio-6107ac1a"), l.e("modules.audio-b953418a"), l.e("modules.audio-7c51e6a7"), l.e("modules.audio-04db59e9"), l.e("modules.audio-76583d6c"), l.e("modules.audio-b7a8a5fb"), l.e("modules.audio-51f6e793"), l.e("modules.audio-e019dbda"), l.e("modules.audio-262c94d4"), l.e("modules.audio-c6fe4ea4"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI"), l.e("loaders.video.VideoPlayerEventsUI")]).then(l.bind(l, 374749)), renderPlaceholder: () => a.createElement("div", null) });
+            const n = (0, l(523561).Z)({ loader: () => Promise.all([l.e("icons.21"), l.e("icons.2"), l.e("icons.4"), l.e("icons.28"), l.e("modules.audio-6107ac1a"), l.e("modules.audio-b953418a"), l.e("modules.audio-7c51e6a7"), l.e("modules.audio-04db59e9"), l.e("modules.audio-76583d6c"), l.e("modules.audio-b7a8a5fb"), l.e("modules.audio-51f6e793"), l.e("modules.audio-e019dbda"), l.e("modules.audio-262c94d4"), l.e("modules.audio-c6fe4ea4"), l.e("icons.24"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), l.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI"), l.e("loaders.video.VideoPlayerEventsUI")]).then(l.bind(l, 374749)), renderPlaceholder: () => a.createElement("div", null) });
         },
-        76388: (e, t, l) => {
+        215380: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var a = l(202784),
                 n = l(890601),
@@ -596,12 +538,12 @@
                 s = l(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M18.5 2h-13A2.5 2.5 0 003 4.5v15A2.5 2.5 0 005.5 22h13a2.5 2.5 0 002.5-2.5v-15A2.5 2.5 0 0018.5 2zm.5 17.5c0 .28-.22.5-.5.5h-13c-.28 0-.5-.22-.5-.5v-15c0-.28.22-.5.5-.5h13c.28 0 .5.22.5.5v15zM9 5h6v2H9V5zm3 4.555a2.092 2.092 0 11-.001 4.185A2.092 2.092 0 0112 9.555zM16.141 18H7.859c.237-.763.586-1.431 1.074-1.949 1.036-1.105 2.31-1.277 3.067-1.277s2.031.172 3.067 1.277c.489.518.837 1.186 1.074 1.949z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
         },
-        668430: (e, t, l) => {
+        715614: (e, t, l) => {
             l.r(t), l.d(t, { default: () => o });
             var a = l(202784),
                 n = l(890601),
@@ -609,7 +551,7 @@
                 s = l(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M13 3v13.59l5.043-5.05 1.414 1.42L12 20.41l-7.457-7.45 1.414-1.42L11 16.59V3h2z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 4C9.25 4 6.83 5.39 5.38 7.5H8v2H2v-6h2V6c1.82-2.43 4.73-4 8-4 5.52 0 10 4.48 10 10s-4.48 10-10 10c-4.76 0-8.74-3.33-9.75-7.78l1.95-.44C5.01 17.34 8.19 20 12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8zm-1 4h2v3.59l3.21 3.2-1.42 1.42-3.79-3.8V8z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
@@ -644,4 +586,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.3c5b1c0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-6107ac1a.ffaa0d9a.js.map

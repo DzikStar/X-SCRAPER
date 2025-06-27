@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.TimelineCardHandler", "icons/IconBoldCompact-js", "icons/IconQuoteStroke-js", "icons/IconStrikethrough-js"],
+    ["loader.TimelineCardHandler", "icons/IconBookmarkPlusStroke-js", "icons/IconNumberedList-js"],
     {
         721879: (e) => {
             e.exports = { queryId: "YmRc-eYvY6VDG26g5zMgsA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
@@ -30,7 +30,7 @@
         },
         403911: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => z });
+            n.d(t, { Z: () => I });
             var o = n(506899),
                 r = n(163889),
                 a = n(414742),
@@ -44,8 +44,8 @@
                 _ = n.n(u),
                 p = n(295904),
                 f = n.n(p),
-                h = n(769948),
-                b = n.n(h),
+                b = n(769948),
+                h = n.n(b),
                 g = n(871585),
                 w = n.n(g),
                 k = n(418631),
@@ -56,22 +56,22 @@
                 T = n.n(D),
                 S = n(934309);
             const $ = { result: [], entities: {}, slice_info: {} },
-                x = (e, t) => {
+                F = (e, t) => {
                     const n = t?.bookmark_all_delete,
                         o = "Done" === n;
                     return o || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, a.jB)(e) || !o;
                 },
-                F = (0, a.kj)((e) => {
+                x = (0, a.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         n = "User" === t?.__typename ? t : void 0,
                         o = n?.bookmark_collections_slice?.items;
                     return !o;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                I = (0, a.kj)((e) => {
+                P = (0, a.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                z = ({ apiClient: e, featureSwitches: t }) => ({
+                I = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
                             f(),
@@ -80,11 +80,11 @@
                         ),
                     createBookmarkFolder: (t) =>
                         e.graphQL(
-                            b(),
+                            h(),
                             { ...t },
                             (0, a.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(w(), {}, x).then((e) => e),
+                    deleteAll: () => e.graphQL(w(), {}, F).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: n } = t;
                         return e.graphQL(y(), { bookmark_collection_id: n });
@@ -98,10 +98,10 @@
                         return e.graphQL(T(), { bookmark_collection_id: n, tweet_id: o });
                     },
                     fetchBookmarksTimeline: ({ count: n, cursor: o }) => e.graphQL(_(), { count: n, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || S.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: o }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, I).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: o }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: o, includePromotedContent: !0, ...(0, i.d)(t) }, P).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(d(), t, F).then((e) => {
+                            ? e.graphQL(d(), t, x).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       n = "User" === t?.__typename ? t : void 0,
                                       r = n?.bookmark_collections_slice;
@@ -151,7 +151,7 @@
         },
         694180: (e, t, n) => {
             "use strict";
-            n.d(t, { cM: () => h, dS: () => f, iY: () => b });
+            n.d(t, { cM: () => b, dS: () => f, iY: () => h });
             var o = n(370751),
                 r = n(399896),
                 a = n(663550),
@@ -175,19 +175,19 @@
                             if (!t && u.has(a)) return [_(c)];
                         });
                     },
-                h =
+                b =
                     ({ disclosureType: e, itemId: t, itemType: n, params: o }) =>
                     (a, i, { api: s }) => {
                         const { event: c, impression_id: u } = o,
                             f = `${n}-${t ?? "undefined"}-${u ?? "undefined"}-${c ?? "undefined"}`;
                         if (m.has(c) && p(i(), f)) return Promise.resolve();
-                        const h = e && "earned" === e.toLowerCase() ? "1" : null,
-                            b = { ...o, earned: h, epoch_ms: Date.now() };
-                        return (0, l._O)(a, { params: b, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: b }, (e, t) => {
+                        const b = e && "earned" === e.toLowerCase() ? "1" : null,
+                            h = { ...o, earned: b, epoch_ms: Date.now() };
+                        return (0, l._O)(a, { params: h, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: h }, (e, t) => {
                             if (!t && m.has(c)) return [_(f)];
                         });
                     },
-                b =
+                h =
                     (e) =>
                     (t, n, { api: o }) =>
                         (0, l._O)(t, { params: e, request: o.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
@@ -253,7 +253,7 @@
                 render() {
                     const { displayFacepileInline: e, knownFollowersAvatarUrls: t, knownFollowersCount: n, textStyle: a, userScreenName: i, withFacepile: m } = this.props,
                         _ = this._renderMessage();
-                    return o.createElement(l.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? o.createElement(c.Z, { "aria-label": u, interactiveStyles: null, link: i ? ((p = i), `/${p}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: l }) => o.createElement(r.Z, { style: h.content }, !e && m ? o.createElement(d.Z, { userAvatarUrls: t }) : null, o.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && h.message, (n || l) && !!i && h.underline, a] }, e && m ? o.createElement(d.Z, { style: h.inlineFacepile, userAvatarUrls: t }) : null, _))) : o.createElement(r.Z, { style: h.content }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, _)));
+                    return o.createElement(l.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? o.createElement(c.Z, { "aria-label": u, interactiveStyles: null, link: i ? ((p = i), `/${p}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: l }) => o.createElement(r.Z, { style: b.content }, !e && m ? o.createElement(d.Z, { userAvatarUrls: t }) : null, o.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && b.message, (n || l) && !!i && b.underline, a] }, e && m ? o.createElement(d.Z, { style: b.inlineFacepile, userAvatarUrls: t }) : null, _))) : o.createElement(r.Z, { style: b.content }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, _)));
                     var p;
                 }
                 _renderMessage() {
@@ -275,7 +275,7 @@
                 }
             }
             f.defaultProps = { displayFacepileInline: !1, withFacepile: !0 };
-            const h = m.default.create((e) => ({ content: { flexDirection: "row" }, message: { flexShrink: 1, marginStart: e.spaces.space12 }, underline: { textDecorationLine: "underline" }, inlineFacepile: { verticalAlign: "middle", marginEnd: e.spaces.space4 } }));
+            const b = m.default.create((e) => ({ content: { flexDirection: "row" }, message: { flexShrink: 1, marginStart: e.spaces.space12 }, underline: { textDecorationLine: "underline" }, inlineFacepile: { verticalAlign: "middle", marginEnd: e.spaces.space4 } }));
         },
         135904: (e, t, n) => {
             "use strict";
@@ -301,18 +301,18 @@
                 _ = n(202253),
                 p = n(786475),
                 f = n(392237),
-                h = n(135904);
-            const b = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: o.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: o.createElement(s.ZP, null) } },
-                g = (0, i.Z)(b).reduce((e, [t, n]) => e.set(t, n), r.DefaultDraftBlockRenderMap);
+                b = n(135904);
+            const h = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: o.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: o.createElement(s.ZP, null) } },
+                g = (0, i.Z)(h).reduce((e, [t, n]) => e.set(t, n), r.DefaultDraftBlockRenderMap);
             let w = !1;
             const k = o.memo(function (e) {
                     const { componentByType: t, contentState: n, onScribeEvent: i, paragraphFontSizeOverride: s } = e;
                     o.useEffect(() => {
-                        w || (m.fH(h.c, h.n), (w = !0));
+                        w || (m.fH(b.c, b.n), (w = !0));
                     }, []);
                     const f = [(0, _.ez)(i, s), _.aF, _.RU];
                     e.disable_entityLinkDecorator || f.push((0, _.NA)(i, s));
-                    const b = u.Z.initEditorState(n, { decorators: f });
+                    const h = u.Z.initEditorState(n, { decorators: f });
                     let k = l.Z;
                     return (
                         t &&
@@ -320,14 +320,14 @@
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(a.Z, { style: y.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(p.Z.isNarrowScreenWidth(e)), editorState: b, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(a.Z, { style: y.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(p.Z.isNarrowScreenWidth(e)), editorState: h, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
                 y = f.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
             "use strict";
-            n.d(t, { $u: () => D, Ak: () => F, KJ: () => k, LI: () => T, P7: () => h, PW: () => E, QF: () => b, Qm: () => w, Tr: () => S, b$: () => f, db: () => z, et: () => v, fR: () => p, iH: () => $, lD: () => g, su: () => y, u4: () => I, wX: () => x });
+            n.d(t, { $u: () => D, Ak: () => x, KJ: () => k, LI: () => T, P7: () => b, PW: () => E, QF: () => h, Qm: () => w, Tr: () => S, b$: () => f, db: () => I, et: () => v, fR: () => p, iH: () => $, lD: () => g, su: () => y, u4: () => P, wX: () => F });
             var o = n(202784),
                 r = n(111677),
                 a = n.n(r),
@@ -345,28 +345,28 @@
                     { buttonTestId: "btn-italic", Icon: l.default, key: p.italic, onPress: e(p.italic) },
                     { buttonTestId: "btn-strikethrough", Icon: s.default, key: p.strikethrough, onPress: e(p.strikethrough) },
                 ],
-                h = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
-                b = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: h.blockquote, onPress: e(h.blockquote) }],
+                b = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
+                h = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: b.blockquote, onPress: e(b.blockquote) }],
                 g = (e) => [
-                    { buttonTestId: "btn-ul", Icon: c.default, key: h.bulleted, onPress: e(h.bulleted) },
-                    { buttonTestId: "btn-ol", Icon: m.default, key: h.numbered, onPress: e(h.numbered) },
+                    { buttonTestId: "btn-ul", Icon: c.default, key: b.bulleted, onPress: e(b.bulleted) },
+                    { buttonTestId: "btn-ol", Icon: m.default, key: b.numbered, onPress: e(b.numbered) },
                 ],
                 w = "LINK",
                 k = (e) => [{ buttonTestId: "btn-link", Icon: u.default, key: w, onPress: e }],
                 y = (e, t) => (n) => {
                     const o = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
-                        case h.bulleted:
+                        case b.bulleted:
                             return o("longform-unordered-list-item");
-                        case h.blockquote:
+                        case b.blockquote:
                             return o("longform-blockquote");
-                        case h.header1:
+                        case b.header1:
                             return o("longform-header-one");
-                        case h.header2:
+                        case b.header2:
                             return o("longform-header-two");
-                        case h.numbered:
+                        case b.numbered:
                             return o("longform-ordered-list-item");
-                        case h.paragraph:
+                        case b.paragraph:
                             return o("longform-unstyled");
                         default:
                             return t?.(n) || "";
@@ -376,12 +376,12 @@
                 E = a().b92b6156,
                 D = a().ec5ed598,
                 T = ({ children: e, extendedWidth: t, size: n, weight: r }) => o.createElement(_.ZP, { extendedWidth: t, size: n, weight: r }, e),
-                S = { blockType: h.paragraph, label: D, component: T({ size: "body", children: D }) },
-                $ = [{ blockType: h.header1, label: v, component: T({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: h.header2, label: E, component: T({ size: "title3", weight: "heavy", children: E }) }, S],
-                x = ["backspace", "backspace-word", "backspace-to-start-of-line"],
-                F = ["delete", "delete-word", "delete-to-start-of-line"],
-                I = "increase-text-size",
-                z = "decrease-text-size";
+                S = { blockType: b.paragraph, label: D, component: T({ size: "body", children: D }) },
+                $ = [{ blockType: b.header1, label: v, component: T({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: b.header2, label: E, component: T({ size: "title3", weight: "heavy", children: E }) }, S],
+                F = ["backspace", "backspace-word", "backspace-to-start-of-line"],
+                x = ["delete", "delete-word", "delete-to-start-of-line"],
+                P = "increase-text-size",
+                I = "decrease-text-size";
         },
         989272: (e, t, n) => {
             "use strict";
@@ -436,7 +436,7 @@
             }
             const d = [];
         },
-        394123: (e, t, n) => {
+        818088: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var o = n(202784),
@@ -445,12 +445,12 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        474761: (e, t, n) => {
+        89085: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var o = n(202784),
@@ -459,25 +459,11 @@
                 i = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M10.883 4H2v8.5h2.255c-.643 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.139-2 5.335-4.63 6.084-8.37.444-2.21.405-4.55.154-6.81L10.883 4zM4 10.5V6h5.081c.151 1.84.121 3.64-.213 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.662-3.14 2.662-5.07H4zM21.876 4h-8.882v8.5h2.255c-.644 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.138-2 5.334-4.63 6.083-8.37.444-2.21.406-4.55.154-6.81L21.876 4zm-6.883 6.5V6h5.082c.151 1.84.121 3.64-.214 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.663-3.14 2.663-5.07h-2.911z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        69893: (e, t, n) => {
-            "use strict";
-            n.r(t), n.d(t, { default: () => s });
-            var o = n(202784),
-                r = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineCardHandler.6097d35a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineCardHandler.25d65a0a.js.map

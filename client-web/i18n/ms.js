@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + a.language;
                 }),
                 i("c60b9e5c", "Changes will take effect for newly loaded content."),
-                i("c6ad999b", "languages settings"),
+                i("f9317b98", "language settings"),
                 i("hba0547a", "Unable to update settings. Please try again later."),
                 i("d4c339b9", function (a) {
                     return "Siaran daripada " + a.fullName + " (@" + a.screenName + ")";
@@ -4358,7 +4358,6 @@
                 i("a15d62db", function (a) {
                     return "Difikirkan selama " + a.seconds + "s";
                 }),
-                i("f26fc748", "Script"),
                 i("h26fa43f", function (a) {
                     return a.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 i("ff95a9cc", "ID Video"),
                 i("a97e358e", "Pautan Video"),
                 i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu."),
-                i("ba37f6da", "Gambaran keseluruhan video");
-            i("f19846b2", "Lakaran kecil video"),
-                i("ccd6f4a8", "Tajuk video"),
+                i("ba37f6da", "Gambaran keseluruhan video"),
+                i("f19846b2", "Lakaran kecil video");
+            i("ccd6f4a8", "Tajuk video"),
                 i("c8410542", "Bilangan kali video anda ditonton."),
                 i("a532072a", "Penonton"),
                 i("d9508ab0", "tontonan"),
@@ -5882,9 +5881,9 @@
                 i("af781666", "Apakah pandangan orang ramai?"),
                 i("a1f414ee", "Kongsi fikiran"),
                 i("ed88e742", "Salin pautan kepada Topik"),
-                i("h92fe1be", "Malangnya, Nota Komuniti tidak tersedia untuk anda pada masa ini.");
-            i("f0dc1434", "Nota Komuniti hanya tersedia di A.S. pada masa ini."),
-                i("f8fc0b48", "Cipta Folder"),
+                i("h92fe1be", "Malangnya, Nota Komuniti tidak tersedia untuk anda pada masa ini."),
+                i("f0dc1434", "Nota Komuniti hanya tersedia di A.S. pada masa ini.");
+            i("f8fc0b48", "Cipta Folder"),
                 i("c14bcdde", "Cari Bookmark"),
                 i("e9c65c4a", "Carian Bookmark"),
                 i("b92a21d9", function (a) {
@@ -6888,9 +6887,9 @@
                 i("b8cbb51a", "Ringkasan Pekerjaan"),
                 i("bda6881e", "Pekerjaan ini telah diimport daripada Sistem Penjejakan Pemohon (ATS) anda. Harap maklum bahawa hanya medan yang tertentu boleh diubah suai."),
                 i("b075c68a", "Edit pekerjaan"),
-                i("d4b6a6e0", "Sorotan Profil");
-            i("j2dd3686", "Serlahkan pekerjaan yang ditampilkan di atas siaran saya."),
-                i("af1cfd46", "Penyepaduan ATS"),
+                i("d4b6a6e0", "Sorotan Profil"),
+                i("j2dd3686", "Serlahkan pekerjaan yang ditampilkan di atas siaran saya.");
+            i("af1cfd46", "Penyepaduan ATS"),
                 i("d6fa2944", "Tindakan memadamkan penyepaduan anda tidak akan memadamkan pekerjaan diimport anda."),
                 i("h99f11fa", "Padamkan penyepaduan"),
                 i("eef1ae76", "Sedang disambungkan"),
@@ -7870,7 +7869,8 @@
                 i("b74ff5fc", "Jika anda membuat pembatalan, Langganan anda akan tamat tempoh secara automatik pada penghujung kitaran pengebilan."),
                 i("ee9efbc8", "Teruskan ke pembatalan"),
                 i("c5d9c77a", "Nampaknya terdapat sedikit masalah. Jangan bimbang, ini bukan salah anda. Tutup tetingkap ini dan cuba lagi."),
-                i("jda53c24", "Anda boleh membatalkan Langganan anda melalui Apple App Store.");
+                i("jda53c24", "Anda boleh membatalkan Langganan anda melalui Apple App Store."),
+                i("g0a7a53e", "Anda boleh membatalkan Langganan anda melalui Google Play Store.");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7909,10 +7909,9 @@
                     d(a, n)
                 );
             }
-            i("g0a7a53e", "Anda boleh membatalkan Langganan anda melalui Google Play Store."),
-                i("i5f14be7", function (a) {
-                    return "Selamat kembali, " + a.displayName;
-                }),
+            i("i5f14be7", function (a) {
+                return "Selamat kembali, " + a.displayName;
+            }),
                 i("a76d58ba", "Analitis Iklan"),
                 i("eccd0e1a", "Analitis Organisasi"),
                 i("deea1708", "Ingin melihat analitis pada semua akaun X anda?"),
@@ -8910,9 +8909,9 @@
                     return "Lawati " + a.advertiserName;
                 }),
                 i("c67e71aa", "Tonton sekarang"),
-                i("a6ada13e", "Beli sekarang");
-            i("j0f12222", "Lihat lagi"),
-                i("f569f7c8", "Pergi ke laman web"),
+                i("a6ada13e", "Beli sekarang"),
+                i("j0f12222", "Lihat lagi");
+            i("f569f7c8", "Pergi ke laman web"),
                 i("j0c6772a", "Lawati laman web"),
                 i("f73003aa", "Video akan dimainkan selepas iklan"),
                 i("b3112b8a", "Langkau"),
@@ -10153,7 +10152,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13355,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.25f0d60a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.6927845a.js.map

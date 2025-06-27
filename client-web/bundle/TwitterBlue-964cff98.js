@@ -268,7 +268,7 @@
                 I = a.memo(_),
                 S = o.default.create((e) => {
                     const t = "light" === e.paletteName ? "linear-gradient(rgb(52 147 239 / 50%) 0%, rgb(255, 255, 255) 100%)" : "dark" === e.paletteName ? "linear-gradient(rgb(52 147 239 / 50%) 0%, rgb(21 32 44) 100%)" : void 0;
-                    return { shadow: { position: "absolute", minHeight: 150 * e.scaleMultiplier, width: "100%", backgroundImage: t, left: 0, top: 0 }, root: { padding: e.spaces.space48 }, header: { flexGrow: 1, justifyContent: "start", alignItems: "center" }, title: { marginBottom: e.spaces.space16 }, bullets: { marginHorizontal: e.spaces.space16, marginTop: e.spaces.space16 }, logo: { width: "155px", height: "44px", marginBottom: e.spaces.space36, marginTop: 100 }, headerImage: { width: "100%", position: "absolute", start: 0, top: -20, height: 180 }, dismissButton: { position: "absolute", start: 0, zIndex: 1 }, list: { padding: 0, gap: e.spaces.space16, display: "flex", flexDirection: "column" } };
+                    return { shadow: { position: "absolute", minHeight: 150 * e.scaleMultiplier, width: "100%", backgroundImage: t, left: 0, top: 0 }, root: { padding: e.spaces.space48 }, header: { flexGrow: 1, justifyContent: "start", alignItems: "center" }, title: { marginBottom: e.spaces.space16 }, bullets: { marginHorizontal: e.spaces.space16, marginTop: e.spaces.space16 }, logo: { width: "155px", height: "44px", marginBottom: e.spaces.space36, marginTop: 100 }, headerImage: { width: "100%", position: "absolute", start: 0, top: -20, height: 180 }, dismissButton: { position: "absolute", start: 0, top: 100, zIndex: 1 }, list: { padding: 0, gap: e.spaces.space16, display: "flex", flexDirection: "column" } };
                 });
         },
         313511: (e, t, r) => {
@@ -781,4 +781,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.8524736a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.0dcb851a.js.map

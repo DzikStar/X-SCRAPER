@@ -1374,7 +1374,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 a("c60b9e5c", "Changes will take effect for newly loaded content."),
-                a("c6ad999b", "languages settings"),
+                a("f9317b98", "language settings"),
                 a("hba0547a", "Unable to update settings. Please try again later."),
                 a("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
@@ -4362,7 +4362,6 @@
                 a("a15d62db", function (e) {
                     return "Thought for " + e.seconds + "s";
                 }),
-                a("f26fc748", "Script"),
                 a("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4934,9 +4933,9 @@
                 a("ff95a9cc", "Video ID"),
                 a("a97e358e", "Video Link"),
                 a("e10e8b46", "Only showing the videos from the last 100 days."),
-                a("ba37f6da", "Video overview");
-            a("f19846b2", "Video thumbnail"),
-                a("ccd6f4a8", "Video title"),
+                a("ba37f6da", "Video overview"),
+                a("f19846b2", "Video thumbnail");
+            a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
                 a("a532072a", "Viewers"),
                 a("d9508ab0", "views"),
@@ -5886,9 +5885,9 @@
                 a("af781666", "What do people think?"),
                 a("a1f414ee", "Share thoughts"),
                 a("ed88e742", "Ṣe àdàkọ ojú òpó sí Àkọ́lé"),
-                a("h92fe1be", "Ó ṣeni láàánú, Àwọn Àkọsílẹ̀ Àwùjọ kò sí nílẹ̀ fún ọ ní àsìkò yìí.");
-            a("f0dc1434", "Orílẹ̀-èdè U.S nìkan ni Àwọn Àkọsílẹ̀ Àwùjọ wà nílẹ̀ fún báyìí"),
-                a("f8fc0b48", "Ṣèdásílẹ̀ Fódà kan"),
+                a("h92fe1be", "Ó ṣeni láàánú, Àwọn Àkọsílẹ̀ Àwùjọ kò sí nílẹ̀ fún ọ ní àsìkò yìí."),
+                a("f0dc1434", "Orílẹ̀-èdè U.S nìkan ni Àwọn Àkọsílẹ̀ Àwùjọ wà nílẹ̀ fún báyìí");
+            a("f8fc0b48", "Ṣèdásílẹ̀ Fódà kan"),
                 a("c14bcdde", "Search Bookmarks"),
                 a("e9c65c4a", "Bookmarks search"),
                 a("b92a21d9", function (e) {
@@ -6892,9 +6891,9 @@
                 a("b8cbb51a", "Job Summary"),
                 a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
                 a("b075c68a", "Edit job"),
-                a("d4b6a6e0", "Ojútáyé Prófaìlì");
-            a("j2dd3686", "Highlight featured jobs above my posts."),
-                a("af1cfd46", "ATS integration"),
+                a("d4b6a6e0", "Ojútáyé Prófaìlì"),
+                a("j2dd3686", "Highlight featured jobs above my posts.");
+            a("af1cfd46", "ATS integration"),
                 a("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 a("h99f11fa", "Delete integration"),
                 a("eef1ae76", "Currently connected"),
@@ -7874,7 +7873,8 @@
                 a("b74ff5fc", "Bí o bá wọ́gilé e ìforúkọsílẹ̀ rẹ yóò wá sópin láìfowóyí lópin àsìkò ìdíyelé náà."),
                 a("ee9efbc8", "Tẹ̀síwájú pẹ̀lú ìwọ́gilé"),
                 a("c5d9c77a", "Ó dà bí ẹni wípé ìdíwọ́ kékéré kan fẹ́ wá. Má dààmú, kì í se ẹ̀bi rẹ. Tẹ ìsàlẹ̀ yií láti gbìyànjú sí i."),
-                a("jda53c24", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Apple App Store.");
+                a("jda53c24", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Apple App Store."),
+                a("g0a7a53e", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Google Play Store.");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7913,10 +7913,9 @@
                     s(e, n)
                 );
             }
-            a("g0a7a53e", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Google Play Store."),
-                a("i5f14be7", function (e) {
-                    return "Welcome back, " + e.displayName;
-                }),
+            a("i5f14be7", function (e) {
+                return "Welcome back, " + e.displayName;
+            }),
                 a("a76d58ba", "Ads Analytics"),
                 a("eccd0e1a", "Organization Analytics"),
                 a("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8914,9 +8913,9 @@
                     return "Visit " + e.advertiserName;
                 }),
                 a("c67e71aa", "Watch now"),
-                a("a6ada13e", "Shop now");
-            a("j0f12222", "Wò sì i"),
-                a("f569f7c8", "Go to website"),
+                a("a6ada13e", "Shop now"),
+                a("j0f12222", "Wò sì i");
+            a("f569f7c8", "Go to website"),
                 a("j0c6772a", "Visit website"),
                 a("f73003aa", "Video will play after ad"),
                 a("b3112b8a", "Fò ó"),
@@ -10157,7 +10156,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13359,4 +13358,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.39efafda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.c961c15a.js.map

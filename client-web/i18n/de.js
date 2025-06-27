@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("c6ad999b", "languages settings"),
+                t("f9317b98", "language settings"),
                 t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
@@ -4359,7 +4359,6 @@
                 t("a15d62db", function (e) {
                     return "Denkprozess dauerte " + e.seconds + " Sek.";
                 }),
-                t("f26fc748", "Script"),
                 t("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 t("ff95a9cc", "Video-ID"),
                 t("a97e358e", "Video-Link"),
                 t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
-                t("ba37f6da", "Videoübersicht");
-            t("f19846b2", "Video-Miniaturbild"),
-                t("ccd6f4a8", "Videotitel"),
+                t("ba37f6da", "Videoübersicht"),
+                t("f19846b2", "Video-Miniaturbild");
+            t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Wie oft dein Video angezeigt wurde."),
                 t("a532072a", "Zuschauer*innen"),
                 t("d9508ab0", "Mal angezeigt"),
@@ -5883,9 +5882,9 @@
                 t("af781666", "Was halten Leute davon?"),
                 t("a1f414ee", "Meinung teilen"),
                 t("ed88e742", "Link zum Thema kopieren"),
-                t("h92fe1be", "Leider ist Kollektive Anmerkungen zurzeit für dich nicht verfügbar.");
-            t("f0dc1434", "Kollektive Anmerkungen ist derzeit nur in den USA verfügbar"),
-                t("f8fc0b48", "Ordner erstellen"),
+                t("h92fe1be", "Leider ist Kollektive Anmerkungen zurzeit für dich nicht verfügbar."),
+                t("f0dc1434", "Kollektive Anmerkungen ist derzeit nur in den USA verfügbar");
+            t("f8fc0b48", "Ordner erstellen"),
                 t("c14bcdde", "Lesezeichen durchsuchen"),
                 t("e9c65c4a", "Lesezeichensuche"),
                 t("b92a21d9", function (e) {
@@ -6889,9 +6888,9 @@
                 t("b8cbb51a", "Jobzusammenfassung"),
                 t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können."),
                 t("b075c68a", "Job bearbeiten"),
-                t("d4b6a6e0", "Profil-Spotlight");
-            t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen."),
-                t("af1cfd46", "ATS-Integration"),
+                t("d4b6a6e0", "Profil-Spotlight"),
+                t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen.");
+            t("af1cfd46", "ATS-Integration"),
                 t("d6fa2944", "Wenn du deine Integration löschst, werden deine importierten Jobs dadurch nicht gelöscht."),
                 t("h99f11fa", "Integration löschen"),
                 t("eef1ae76", "Derzeit verbunden"),
@@ -7871,7 +7870,8 @@
                 t("b74ff5fc", "Wenn du kündigst, läuft dein Abonnement automatisch am Ende des Abrechnungszeitraums aus."),
                 t("ee9efbc8", "Weiter zur Kündigung"),
                 t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
-                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen.");
+                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen."),
+                t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen.");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7910,10 +7910,9 @@
                     d(e, n)
                 );
             }
-            t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
-                t("i5f14be7", function (e) {
-                    return "Willkommen zurück, " + e.displayName;
-                }),
+            t("i5f14be7", function (e) {
+                return "Willkommen zurück, " + e.displayName;
+            }),
                 t("a76d58ba", "Statistiken zur Werbung"),
                 t("eccd0e1a", "Statistiken für die Organisation"),
                 t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
@@ -8911,9 +8910,9 @@
                     return e.advertiserName + " besuchen";
                 }),
                 t("c67e71aa", "Jetzt ansehen"),
-                t("a6ada13e", "Jetzt kaufen");
-            t("j0f12222", "Mehr anzeigen"),
-                t("f569f7c8", "Zu Website wechseln"),
+                t("a6ada13e", "Jetzt kaufen"),
+                t("j0f12222", "Mehr anzeigen");
+            t("f569f7c8", "Zu Website wechseln"),
                 t("j0c6772a", "Website besuchen"),
                 t("f73003aa", "Video wird nach der Anzeige abgespielt"),
                 t("b3112b8a", "Überspringen"),
@@ -10167,7 +10166,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13370,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.050eebba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.04cb7d5a.js.map

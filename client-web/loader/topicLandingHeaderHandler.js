@@ -22,7 +22,7 @@
                 p = i.iH({ component: c, getScribeDataItem: ({ content: { topicId: e }, itemMetadata: { clientEventInfo: t } }) => o.Z.forTopic(e, t) }).getHandler();
         },
         217179: (e, t, n) => {
-            n.r(t), n.d(t, { TopicHeader: () => M, default: () => z });
+            n.r(t), n.d(t, { TopicHeader: () => L, default: () => P });
             var o = n(202784),
                 i = n(325686),
                 r = n(646496),
@@ -45,23 +45,23 @@
                 C = n(177371),
                 E = n(459679),
                 Z = n(71620),
-                S = n(668214),
-                T = n(466380),
-                v = n(919022);
-            const F = (e, t) => T.Z.select(e, t.topicId),
-                I = (e, t) => v.ZP.selectMany(e, t.facepile?.userIds || []),
-                k = (e, t) => {
-                    const n = I(e, t);
+                T = n(668214),
+                S = n(466380),
+                F = n(919022);
+            const I = (e, t) => S.Z.select(e, t.topicId),
+                k = (e, t) => F.ZP.selectMany(e, t.facepile?.userIds || []),
+                B = (e, t) => {
+                    const n = k(e, t);
                     return (0, E.Z)(n, (e) => (!e || e.blocking || e.muting ? void 0 : e));
                 },
-                B = (0, S.Z)()
-                    .propsFromState(() => ({ topic: F, users: k }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("TOPIC_HEADER"), follow: T.Z.follow, unfollow: T.Z.unfollow, undoTopicNotInterested: T.Z.undoNotInterested }))
+                v = (0, T.Z)()
+                    .propsFromState(() => ({ topic: I, users: B }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, Z.zr)("TOPIC_HEADER"), follow: S.Z.follow, unfollow: S.Z.unfollow, undoTopicNotInterested: S.Z.undoNotInterested }))
                     .withAnalytics(),
                 A = p().b1850062,
                 H = p().d69b2d90,
-                L = p().gf5e9ea6;
-            class M extends o.Component {
+                V = p().gf5e9ea6;
+            class L extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._additionalControlsEnabled = this.context.featureSwitches.isTrue("topic_landing_page_clearer_controls_enabled")),
@@ -87,7 +87,7 @@
                     return a && !g
                         ? o.createElement(
                               i.Z,
-                              { style: V.root },
+                              { style: M.root },
                               o.createElement(_.Z, { customText: p, displayMode: x.BH.topic }, () => o.createElement(m.Z, { onOffscreenChange: n }, o.createElement(r.Z, { children: this._renderTopicActions(), context: l, knownFollowers: w, onFacepilesClick: this._handleOnClickFacepiles, onFacepilesImpression: this._handleFacepilesImpression, subtitle: c, title: p, withAdditionalControls: this._additionalControlsEnabled }))),
                           )
                         : null;
@@ -96,24 +96,24 @@
                     const { displayType: e, showRelationshipChangeConfirmation: t, topic: n } = this.props;
                     return n
                         ? o.createElement(a.ZP, { key: "topic-header-actions" }, ({ containerWidth: r }) => {
-                              const a = l.Z.isNarrowScreenWidth(r) ? V.mainViewSmall : V.mainView,
-                                  s = this._additionalControlsEnabled ? (l.Z.isNarrowScreenWidth(r) ? V.followButtonSmall : V.followButton) : null,
-                                  c = l.Z.isNarrowScreenWidth(r) ? V.notInterestButtonSmall : V.notInterestButton;
+                              const a = l.Z.isNarrowScreenWidth(r) ? M.mainViewSmall : M.mainView,
+                                  s = this._additionalControlsEnabled ? (l.Z.isNarrowScreenWidth(r) ? M.followButtonSmall : M.followButton) : null,
+                                  c = l.Z.isNarrowScreenWidth(r) ? M.notInterestButtonSmall : M.notInterestButton;
                               return o.createElement(o.Fragment, null, n.not_interested && this._additionalControlsEnabled ? this._renderTopicContextTombstone() : e === h.el.Basic ? o.createElement(i.Z, { style: a }, !this._additionalControlsEnabled || n.following || n.not_interested ? null : o.createElement(y.Z, { size: "medium", style: c, text: A, topicId: n.id, type: "primaryOutlined", withIconOnly: !1 }), o.createElement(b.ZP, { showRelationshipChangeConfirmation: t, size: "medium", style: s, textMode: this._followButtonTextVariant, topic: n })) : null);
                           })
                         : null;
                 }
                 _renderTopicContextTombstone() {
-                    return o.createElement(C.Z, { actionText: L, children: H, inline: !0, onClick: this._handleUndoTopicNotInterested });
+                    return o.createElement(C.Z, { actionText: V, children: H, inline: !0, onClick: this._handleUndoTopicNotInterested });
                 }
                 _scribeAction(e) {
                     const { analytics: t } = this.props;
                     t.scribe(e);
                 }
             }
-            (M.contextType = w.rC), (M.defaultProps = { displayType: h.el.Basic });
-            const V = s.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical }, mainView: { flexDirection: "row", flexGrow: 1 }, mainViewSmall: { flexWrap: "wrap" }, notInterestButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginEnd: e.spaces.space4 }, followButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginStart: e.spaces.space4, minWidth: "inherit" }, followButtonSmall: { marginTop: e.spaces.space8, marginStart: 0, width: "100%" }, notInterestButtonSmall: { width: "100%" } })),
-                z = (0, g.ZP)(B(M));
+            (L.contextType = w.rC), (L.defaultProps = { displayType: h.el.Basic });
+            const M = s.default.create((e) => ({ root: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical }, mainView: { flexDirection: "row", flexGrow: 1 }, mainViewSmall: { flexWrap: "wrap" }, notInterestButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginEnd: e.spaces.space4 }, followButton: { justifyContent: "center", flexBasis: 1, flexGrow: 1, marginStart: e.spaces.space4, minWidth: "inherit" }, followButtonSmall: { marginTop: e.spaces.space8, marginStart: 0, width: "100%" }, notInterestButtonSmall: { width: "100%" } })),
+                P = (0, g.ZP)(v(L));
         },
         646496: (e, t, n) => {
             n.d(t, { Z: () => h });
@@ -135,9 +135,9 @@
                     o.useEffect(() => {
                         Z && g && g();
                     }, [Z, g]);
-                    const S = n ? o.createElement(c.Z, { source: n, style: f.iconCustom }) : null,
-                        T = t ? o.createElement(i.Z, { style: x ? f.condensedContextV2 : f.condensedContext }, o.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), o.createElement(i.Z, { style: x ? f.buttonTopMargin : [f.buttonBottomMargin, f.buttonLeftMargin] }, e)) : null,
-                        v = o.createElement(d.ZP, null, ({ containerWidth: n }) => {
+                    const T = n ? o.createElement(c.Z, { source: n, style: f.iconCustom }) : null,
+                        S = t ? o.createElement(i.Z, { style: x ? f.condensedContextV2 : f.condensedContext }, o.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), o.createElement(i.Z, { style: x ? f.buttonTopMargin : [f.buttonBottomMargin, f.buttonLeftMargin] }, e)) : null,
+                        F = o.createElement(d.ZP, null, ({ containerWidth: n }) => {
                             const r = m.Z.isNarrowScreenWidth(n) ? "xLarge" : "xxLarge",
                                 c = n < u.default.theme.breakpoints.xSmall ? f.buttonWrap : void 0,
                                 d = x ? f.facepileV2 : null;
@@ -151,23 +151,10 @@
                                 })(n),
                             );
                         }),
-                        F = r && Z ? v : T;
-                    return o.createElement(o.Fragment, null, S, o.createElement(l.ZP, { size: "title2", weight: "heavy" }, b), w ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, w) : null, F);
+                        I = r && Z ? F : S;
+                    return o.createElement(o.Fragment, null, T, o.createElement(l.ZP, { size: "title2", weight: "heavy" }, b), w ? o.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, w) : null, I);
                 };
-        },
-        76388: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var o = n(202784),
-                i = n(890601),
-                r = n(783427),
-                a = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicLandingHeaderHandler.295b57fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicLandingHeaderHandler.1d1e2f7a.js.map

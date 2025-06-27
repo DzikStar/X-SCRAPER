@@ -479,7 +479,7 @@
                         u === e ? p((e) => ("asc" === e ? "desc" : "asc")) : (x(e), p("desc"));
                     },
                     S = (e) => Intl.NumberFormat("en-US", { notation: e > 9999 ? "compact" : "standard", style: "decimal" }).format(e),
-                    D = ({ children: e, video: a, className: i }) => (t ? (0, s.jsx)(B.r, { href: `${d}/${encodeURIComponent(a.id)}`, className: i, children: e }) : (0, s.jsx)("a", { href: a.mediaUrl, mediaUrl: "_blank", rel: "noreferrer", className: i, children: e }));
+                    D = ({ children: e, video: a, className: i }) => (t ? (0, s.jsx)(B.r, { href: `${d}/${encodeURIComponent(a.id)}`, className: i, children: e }) : (0, s.jsx)("a", { href: a.mediaUrl, target: "_blank", rel: "noreferrer", className: i, children: e }));
                 return (0, s.jsxs)(s.Fragment, {
                     children: [
                         (0, s.jsxs)("div", { className: "flex flex-col gap-4 md:hidden w-full", children: [(0, s.jsx)("span", { className: "text-headline1 font-bold text-gray-900", children: m.YourVideos }), w.map((e) => (0, s.jsxs)(D, { className: "flex gap-4", video: e, children: [(0, s.jsxs)("div", { className: "relative shrink-0 aspect-video w-2/5 block overflow-hidden rounded-lg", children: [(0, s.jsx)("img", { src: e.previewImage, alt: e.name, style: { objectFit: "cover", width: "100%" } }), (0, s.jsx)("div", { className: "text-subtext2 rounded-md absolute bottom-2 right-2 bg-black/75 py-0.5 px-1.5 text-white", children: (0, g.pI)(e.duration) })] }), (0, s.jsxs)("div", { className: "flex flex-col gap-2 pt-0.5", children: [(0, s.jsx)("span", { className: "text-subtext1 line-clamp-2", children: e.name || m.untitledVideo }), (0, s.jsxs)("div", { className: "flex items-center gap-1 text-subtext2 text-gray-600", children: [(0, s.jsxs)("span", { children: [S(e.viewCount), " ", m.views] }), (0, s.jsx)("div", { className: "bg-gray-600 rounded-full size-[3px]" }), (0, s.jsx)("span", { children: new Date(e.createdAt).toLocaleDateString() })] }), e.monetized && (0, s.jsxs)("div", { className: "flex items-center gap-1 text-subtext2 text-green-600", children: [(0, s.jsx)(y.Z, { className: "size-4" }), (0, s.jsx)("span", { children: (0, g.xy)(e.estimatedRevenue) })] })] })] }, e.mediaKey))] }),
@@ -602,4 +602,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.7323eeaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.b1c7aa9a.js.map

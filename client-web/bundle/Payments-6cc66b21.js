@@ -22,8 +22,8 @@
                 b = a(978167),
                 E = a(634455),
                 C = a(934265),
-                Z = a(24568),
-                P = a(743080),
+                P = a(24568),
+                Z = a(743080),
                 k = a(727384);
             const _ = { page: "money", section: "account" },
                 x = "Unlock Full Account",
@@ -31,10 +31,10 @@
                 I = (e) => {
                     const { permissions: t, roles: a } = (0, h.Z)({ fetchKey: "Payments" }),
                         { balance: m, interest: g } = (0, C.Z)(),
-                        f = (0, P.jh)(),
+                        f = (0, Z.jh)(),
                         _ = (0, n.useHistory)(),
                         I = (0, k.Gs)(t),
-                        { handlePreferencesChange: v, isInProgress: T, preferences: D, refetch: z } = (0, Z.Z)(),
+                        { handlePreferencesChange: v, isInProgress: T, preferences: D, refetch: z } = (0, P.Z)(),
                         S = l.useMemo(() => D.enable_bill_pay, [D]),
                         A = l.useMemo(() => t?.includes(u.d.CreateWithdrawal) || t?.includes(u.d.CreateDeposit), [t]),
                         N = l.useCallback(() => {
@@ -73,18 +73,18 @@
                 b = a(43429),
                 E = a(743080),
                 C = a(727384);
-            const Z = "Verifying your identity",
-                P = "This may take a few seconds.",
+            const P = "Verifying your identity",
+                Z = "This may take a few seconds.",
                 k = "Something went wrong. Please try again later.",
                 _ = "Updating your profile",
-                x = { [p.P_.onboarding]: { headline: "Setting up your account" }, [p.P_.upgradeToKycVerified]: { headline: Z, targetRole: m.N.KycVerified, challengeCompleteMessage: b.q9.completeKyc }, [p.P_.upgradeToKycDocumentsVerified]: { headline: Z, targetRole: m.N.KycDocumentsVerified, challengeCompleteMessage: b.q9.completeDocv }, [p.P_.selfieVerification]: { headline: Z, targetRole: m.N.SelfieVerified, challengeCompleteMessage: b.q9.completeSelfie }, [p.P_.autoclaim]: { headline: "Processing your transactions", errorMessage: "We're still processing your transactions. We'll notify you once they are complete.", subtext: "It may take up to 3 business days for the funds to be settled" }, [p.P_.checkPendingTransactions]: { headline: "Processing your transactions", errorMessage: "We're still processing your transactions. We'll notify you once they are complete.", subtext: "It may take up to 3 business days for the funds to be settled" }, [p.P_.updateName]: { headline: _ }, [p.P_.updateAddress]: { headline: _ } },
-                w = ({ challengeId: e, challengeInitiator: t, errorRedirectPath: a, linkType: n, redirectPath: m, redirectState: d, targetRole: Z }) => {
+                x = { [p.P_.onboarding]: { headline: "Setting up your account" }, [p.P_.upgradeToKycVerified]: { headline: P, targetRole: m.N.KycVerified, challengeCompleteMessage: b.q9.completeKyc }, [p.P_.upgradeToKycDocumentsVerified]: { headline: P, targetRole: m.N.KycDocumentsVerified, challengeCompleteMessage: b.q9.completeDocv }, [p.P_.selfieVerification]: { headline: P, targetRole: m.N.SelfieVerified, challengeCompleteMessage: b.q9.completeSelfie }, [p.P_.autoclaim]: { headline: "Processing your transactions", errorMessage: "We're still processing your transactions. We'll notify you once they are complete.", subtext: "It may take up to 3 business days for the funds to be settled" }, [p.P_.checkPendingTransactions]: { headline: "Processing your transactions", errorMessage: "We're still processing your transactions. We'll notify you once they are complete.", subtext: "It may take up to 3 business days for the funds to be settled" }, [p.P_.updateName]: { headline: _ }, [p.P_.updateAddress]: { headline: _ }, [p.P_.questions]: { headline: "Checking your account status" } },
+                w = ({ challengeId: e, challengeInitiator: t, errorRedirectPath: a, linkType: n, redirectPath: m, redirectState: d, targetRole: P }) => {
                     const _ = (0, o.useHistory)(),
                         w = c()(),
                         I = (0, h.z)(),
                         v = (0, u.p)(),
-                        { headline: T, errorMessage: W = k, targetRole: D, subtext: z = P, challengeCompleteMessage: S } = x[n],
-                        A = Z ?? D,
+                        { headline: T, errorMessage: W = k, targetRole: D, subtext: z = Z, challengeCompleteMessage: S } = x[n],
+                        A = P ?? D,
                         N = l.useMemo(() => l.createElement(r.Z, { style: { width: "100%" } }, l.createElement(s.ZP, null, z), l.createElement(i.Z, { style: E.ZP.poller })), [z]);
                     l.useEffect(() => {
                         I.scribe({ page: "payments-poller", section: "polling", action: "impression" });
@@ -131,6 +131,9 @@
                                                   case p.P_.updateName:
                                                   case p.P_.updateAddress:
                                                       l && c && (clearInterval(r), (0, C.J$)(w), _.replace(s ? p.Xy : (m ?? p.iE.personal), d));
+                                                      break;
+                                                  case p.P_.questions:
+                                                      clearInterval(r), (0, C.J$)(w), _.replace(m ?? p.gp, d);
                                               }
                                           })
                                           .catch(() => {
@@ -168,8 +171,8 @@
                 b = a(684008),
                 E = a(488746),
                 C = a(41065),
-                Z = a(311687),
-                P = a(671830),
+                P = a(311687),
+                Z = a(671830),
                 k = a(507651),
                 _ = a(847347),
                 x = a(578719),
@@ -177,7 +180,7 @@
                 I = a(412100),
                 v = a(825941);
             const T = p.Z,
-                W = { [P.W.CreditCardBack]: b.default, [P.W.FollowArrows]: E.default, [P.W.PeopleStroke]: C.default, [P.W.Clock]: Z.default },
+                W = { [Z.W.CreditCardBack]: b.default, [Z.W.FollowArrows]: E.default, [Z.W.PeopleStroke]: C.default, [Z.W.Clock]: P.default },
                 D = (e) => {
                     const { selectedFilter: t, withHeader: a } = e,
                         { data: r, fetchNext: n } = (0, v.Z)({ searchFilterId: t }),
@@ -222,4 +225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.5d9fdb4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.cf51e41a.js.map

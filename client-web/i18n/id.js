@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + a.language;
                 }),
                 i("c60b9e5c", "Changes will take effect for newly loaded content."),
-                i("c6ad999b", "languages settings"),
+                i("f9317b98", "language settings"),
                 i("hba0547a", "Unable to update settings. Please try again later."),
                 i("d4c339b9", function (a) {
                     return "Postingan dari " + a.fullName + " (@" + a.screenName + ")";
@@ -4358,7 +4358,6 @@
                 i("a15d62db", function (a) {
                     return "Berpikir selama " + a.seconds + " dtk";
                 }),
-                i("f26fc748", "Script"),
                 i("h26fa43f", function (a) {
                     return a.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 i("ff95a9cc", "ID video"),
                 i("a97e358e", "Tautan Video"),
                 i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
-                i("ba37f6da", "Ikhtisar video");
-            i("f19846b2", "Thumbnail video"),
-                i("ccd6f4a8", "Judul video"),
+                i("ba37f6da", "Ikhtisar video"),
+                i("f19846b2", "Thumbnail video");
+            i("ccd6f4a8", "Judul video"),
                 i("c8410542", "Berapa kali video Anda dilihat."),
                 i("a532072a", "Penonton"),
                 i("d9508ab0", "tayangan"),
@@ -5882,9 +5881,9 @@
                 i("af781666", "Apa pendapat orang-orang?"),
                 i("a1f414ee", "Sampaikan pendapat"),
                 i("ed88e742", "Salin tautan ke Topik"),
-                i("h92fe1be", "Maaf, Catatan Komunitas belum tersedia untuk Anda saat ini.");
-            i("f0dc1434", "Catatan Komunitas saat ini hanya tersedia di AS."),
-                i("f8fc0b48", "Buat Folder"),
+                i("h92fe1be", "Maaf, Catatan Komunitas belum tersedia untuk Anda saat ini."),
+                i("f0dc1434", "Catatan Komunitas saat ini hanya tersedia di AS.");
+            i("f8fc0b48", "Buat Folder"),
                 i("c14bcdde", "Cari Markah"),
                 i("e9c65c4a", "Pencarian Markah"),
                 i("b92a21d9", function (a) {
@@ -6888,9 +6887,9 @@
                 i("b8cbb51a", "Ringkasan Pekerjaan"),
                 i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
                 i("b075c68a", "Edit lowongan kerja"),
-                i("d4b6a6e0", "Spotlight Profil");
-            i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda."),
-                i("af1cfd46", "Integrasi ATS"),
+                i("d4b6a6e0", "Spotlight Profil"),
+                i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda.");
+            i("af1cfd46", "Integrasi ATS"),
                 i("d6fa2944", "Menghapus integrasi tidak akan menghapus lowongan yang diimpor."),
                 i("h99f11fa", "Hapus integrasi"),
                 i("eef1ae76", "Saat ini terhubung"),
@@ -7870,7 +7869,8 @@
                 i("b74ff5fc", "Jika Anda membatalkan, Langganan Anda akan otomatis berakhir pada akhir siklus penagihan."),
                 i("ee9efbc8", "Lanjutkan ke pembatalan"),
                 i("c5d9c77a", "Tampaknya ada sedikit gangguan. Jangan khawatir, kami sedang mengatasinya. Tutup jendela ini lalu coba lagi."),
-                i("jda53c24", "Anda bisa membatalkan Langganan melalui Apple App Store.");
+                i("jda53c24", "Anda bisa membatalkan Langganan melalui Apple App Store."),
+                i("g0a7a53e", "Anda bisa membatalkan Langganan melalui Google Play Store.");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7909,10 +7909,9 @@
                     d(a, n)
                 );
             }
-            i("g0a7a53e", "Anda bisa membatalkan Langganan melalui Google Play Store."),
-                i("i5f14be7", function (a) {
-                    return "Selamat datang, " + a.displayName;
-                }),
+            i("i5f14be7", function (a) {
+                return "Selamat datang, " + a.displayName;
+            }),
                 i("a76d58ba", "Analitik Iklan"),
                 i("eccd0e1a", "Analitik Organisasi"),
                 i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
@@ -8910,9 +8909,9 @@
                     return "Kunjungi " + a.advertiserName;
                 }),
                 i("c67e71aa", "Tonton sekarang"),
-                i("a6ada13e", "Belanja sekarang");
-            i("j0f12222", "Lihat selengkapnya"),
-                i("f569f7c8", "Kunjungi situs web"),
+                i("a6ada13e", "Belanja sekarang"),
+                i("j0f12222", "Lihat selengkapnya");
+            i("f569f7c8", "Kunjungi situs web"),
                 i("j0c6772a", "Kunjungi situs web"),
                 i("f73003aa", "Video akan diputar setelah iklan"),
                 i("b3112b8a", "Lewati"),
@@ -10153,7 +10152,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13355,4 +13354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.94aafe0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.7d89bb3a.js.map

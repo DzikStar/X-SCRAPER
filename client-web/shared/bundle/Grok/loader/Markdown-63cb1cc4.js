@@ -910,7 +910,6 @@
                         },
                         [v, Z, l, c, x],
                     );
-                if (C && C.startsWith(O) && !E) return null;
                 let I;
                 try {
                     C && (I = new URL(C));
@@ -962,7 +961,7 @@
                     },
                     (e, t) => e.text === t.text,
                 ),
-                m = r.default.create((e) => ({ text: { lineHeight: s.Y }, animation: { animationDuration: "0.3s", transitionTimingFunction: "ease-out", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" } }));
+                m = r.default.create((e) => ({ text: { lineHeight: s.Y }, animation: { animationDuration: "0.5s", transitionTimingFunction: "ease-out", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" } }));
         },
         5741: (e, t, n) => {
             n.d(t, { Y: () => o });
@@ -1066,4 +1065,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-63cb1cc4.e83b98ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-63cb1cc4.fa49099a.js.map

@@ -368,7 +368,18 @@
                                             if (e.card_attachments)
                                                 for (const t of e.card_attachments) {
                                                     const e = (0, O.dj)(t);
-                                                    e && (m.push(e), "x_posts_card" === e.cardType ? s(H.Z.fetchMultipleIfNeeded(e.post_ids)) : "x_users_card" === e.cardType && s(W.ZP.fetchManyByScreenNames(e.user_handles)));
+                                                    if (e) {
+                                                        if ("x_posts_card" === e.cardType) {
+                                                            const t = e.post_ids,
+                                                                a = [...new Set(t)];
+                                                            (e.post_ids = a), s(H.Z.fetchMultipleIfNeeded(a));
+                                                        } else if ("x_users_card" === e.cardType) {
+                                                            const t = e.user_handles,
+                                                                a = [...new Set(t)];
+                                                            (e.user_handles = a), s(W.ZP.fetchManyByScreenNames(a));
+                                                        }
+                                                        m.push(e);
+                                                    }
                                                 }
                                             else if (e.card_attachment) {
                                                 const t = (0, O.dj)(e.card_attachment);
@@ -655,4 +666,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-c69e90f3.7e89745a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-c69e90f3.cf2c06ea.js.map

@@ -213,7 +213,7 @@
                 }
             }
             const se = Object.freeze({ [T.g.Cancelled]: "Cancelled", [T.g.Failed]: "Failed", [T.g.Expired]: "Expired", [T.g.Pending]: "Pending", [T.g.Hold]: "Pending", [T.g.AuthorizationOpen]: "Pending", [T.g.AwaitingUnrecognizedConfirmation]: "Awaiting approval", [T.g.PendingReview]: "Under review", [T.g.PendingRecipientAction]: "Pending", [T.g.PendingRecipientOnboarding]: "Pending", [T.g.AwaitingRequestAcceptance]: "Pending", [T.g.PendingRecipientAcceptance]: "Pending", [T.g.PinVerificationRequired]: "Pending", [T.g.RequestVerificationRequired]: "Pending", [T.g.VerificationRequired]: "Pending", [T.g.RejectedByRecipient]: "Rejected", [T.g.RequestRejected]: "Rejected", [T.g.Settled]: "Completed", [T.g.SoftSettled]: "Completed", [T.g.AuthorizationClosed]: "Completed", [T.g.PendingFundingTransactionSettlement]: "Pending", [T.g.CreditedAwaitingSettlement]: "Pending" }),
-                ie = Object.freeze({ [D.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [D.P.InReview]: "Under review", [D.P.RejectedByUnsupportedRegion]: "Unsupported region", [D.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [D.P.RejectedCardPaymentsDisabled]: "Flagged as suspicious", [D.P.UnrecognizedActivityConfirmed]: "Declined", [D.P.UnrecognizedActivityRejected]: "Flagged as suspicious", [D.P.RejectedCardInactive]: "Declined due to inactive card" }),
+                ie = Object.freeze({ [D.P.RejectedLimitsExceeded]: "Declined due to exceeded limits", [D.P.InReview]: "Under review", [D.P.RejectedByUnsupportedRegion]: "Unsupported region", [D.P.RejectedNotSufficientFunds]: "Declined due to insufficient funds", [D.P.RejectedCardPaymentsDisabled]: "Declined due to locked card", [D.P.UnrecognizedActivityConfirmed]: "Declined", [D.P.UnrecognizedActivityRejected]: "Flagged as suspicious", [D.P.RejectedCardInactive]: "Declined due to inactive card" }),
                 oe = Object.freeze({ [T.g.PendingRecipientAcceptance]: F, [T.g.PendingRecipientOnboarding]: F, [T.g.PendingRecipientAction]: F }),
                 ce = Object.freeze({ [T.g.AwaitingRequestAcceptance]: F, [T.g.PendingRequestAcceptance]: F, [T.g.RequestVerificationRequired]: F });
             function de({ isViewerSender: e, reasonCode: t, status: n }) {
@@ -407,9 +407,13 @@
                             Le(e, t);
                         })(e),
                             Xe(e),
-                            et(e),
-                            Je(e);
-                    });
+                            et(e);
+                    }),
+                        setTimeout(() => {
+                            i()(e, (e) => {
+                                Je(e);
+                            });
+                        }, 1e3);
                 },
                 rt = (e) => {
                     const t = (0, o.getStorageKey)(U.Z.fragment.selections[0], {});
@@ -478,4 +482,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.3fb71f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.6ee826fa.js.map

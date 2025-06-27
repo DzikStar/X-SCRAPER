@@ -27,8 +27,8 @@
             const k = "Remove linked account",
                 w = ({ account: e, balance: t, calculatedFee: a, handleExpand: p, handleRemove: w, isDisabled: P, isSelected: I, onClick: D, transferDirection: T, withChevron: S, withInteractiveStyling: _ }) => {
                     const R = e.id,
-                        M = e.config,
-                        { Icon: L, fees: z, settleTimeMessage: X } = M ?? {},
+                        L = e.config,
+                        { Icon: M, fees: z, settleTimeMessage: X } = L ?? {},
                         N = !P && (_ ?? !(!D && !p)),
                         F = r.useCallback(() => {
                             p ? p() : R && !P && D?.(R);
@@ -39,7 +39,7 @@
                             },
                             [w],
                         );
-                    return r.createElement(l.Z, { onClick: N ? F : void 0, withInteractiveStyling: N && !p }, r.createElement(o.Z, { style: x.mR.container }, e.type === b.dX.x ? r.createElement(c.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(E.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: x.mR.middle }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== b.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === b.dX.x ? (T && "credit" !== T && t ? r.createElement(C.Z, { amount: t.available_amount_local_micro, colorOverride: "gray700", currency: t.currency, size: "body", weight: "normal" }) : r.createElement(d.Z, (0, n.Z)({ color: "gray700", weight: "normal", withName: !1 }, e.accountName))) : M ? r.createElement(o.Z, { style: x.mR.row }, r.createElement(i.ZP, { color: "gray700" }, L ? r.createElement(L, { style: x.mR.icon }) : null, X), z ? r.createElement(Z.Z, { calculatedFee: a, fees: z }) : null) : e.type === b.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === b.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(u.ZP, { style: v.decoration, type: "warning" }, e.label) : null, I ? r.createElement(h.default, { style: [v.decoration, v.selected] }) : null, p ? r.createElement(g.default, { style: v.decoration }) : w ? r.createElement(m.ZP, { "aria-label": k, hoverLabel: { label: k }, icon: r.createElement(y.default, null), onClick: A, size: "small", style: v.decoration, testID: "btn-remove", type: "destructiveText" }) : null, S ? r.createElement(f.default, { style: v.decoration }) : null));
+                    return r.createElement(l.Z, { onClick: N ? F : void 0, withInteractiveStyling: N && !p }, r.createElement(o.Z, { style: x.mR.container }, e.type === b.dX.x ? r.createElement(c.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(E.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: x.mR.middle }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== b.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === b.dX.x ? (T && "credit" !== T && t ? r.createElement(C.Z, { amount: t.available_amount_local_micro, colorOverride: "gray700", currency: t.currency, size: "body", weight: "normal" }) : r.createElement(d.Z, (0, n.Z)({ color: "gray700", weight: "normal", withName: !1 }, e.accountName))) : L ? r.createElement(o.Z, { style: x.mR.row }, r.createElement(i.ZP, { color: "gray700" }, M ? r.createElement(M, { style: x.mR.icon }) : null, X), z ? r.createElement(Z.Z, { calculatedFee: a, fees: z }) : null) : e.type === b.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === b.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(u.ZP, { style: v.decoration, type: "warning" }, e.label) : null, I ? r.createElement(h.default, { style: [v.decoration, v.selected] }) : null, p ? r.createElement(g.default, { style: v.decoration }) : w ? r.createElement(m.ZP, { "aria-label": k, hoverLabel: { label: k }, icon: r.createElement(y.default, null), onClick: A, size: "small", style: v.decoration, testID: "btn-remove", type: "destructiveText" }) : null, S ? r.createElement(f.default, { style: v.decoration }) : null));
                 },
                 v = p.default.create((e) => ({ account: { flexDirection: "row", gap: e.spaces.space16, display: "flex" }, row: { gap: e.spaces.space4, flexDirection: "row" }, accountName: { flexDirection: "column", gap: e.spaces.space4, justifyContent: "center", flex: 1 }, decoration: { alignSelf: "center", marginStart: "auto", marginEnd: e.spaces.space4, flexShrink: 0 }, selected: { color: e.colors.green500 } })),
                 P = r.memo(w);
@@ -181,9 +181,9 @@
                 l = a(392237),
                 c = a(43429),
                 s = a(727384);
-            function i({ amount: e, type: t = c.NU.balance, shouldCenterAlign: a = !1, currency: l, size: i = "title1", weight: d = "bold", hasCompleted: m = !1, style: p, colorOverride: h }) {
-                const g = parseFloat(e),
-                    y = n.useMemo(
+            function i({ amount: e, type: t = c.NU.balance, shouldCenterAlign: a = !1, currency: l, size: i = "title1", weight: d = "bold", hasCompleted: m = !1, style: p, colorOverride: h, hasFailed: g }) {
+                const y = parseFloat(e),
+                    f = n.useMemo(
                         () =>
                             (({ amount: e, hasCompleted: t, type: a }) => {
                                 const n = e < 0;
@@ -194,15 +194,15 @@
                                     default:
                                         return n ? "red500" : "text";
                                 }
-                            })({ type: t, amount: g, hasCompleted: m }),
-                        [t, g, m],
+                            })({ type: t, amount: y, hasCompleted: m }),
+                        [t, y, m],
                     ),
-                    f = n.useMemo(() => ((e) => (e === c.NU.credit ? "+" : ""))(t), [t]),
-                    b = n.useMemo(() => (0, s.vw)({ amount: e, currency: l }), [e, l]);
-                return n.createElement(r.Z, { style: [a ? u.alignCenter : void 0, ...([p] ?? 0)] }, n.createElement(o.ZP, { color: h || y, size: "title0" === i ? void 0 : i, style: "title0" === i ? { fontSize: "48px" } : {}, weight: d }, `${f}${b}`));
+                    b = n.useMemo(() => ((e) => (e === c.NU.credit ? "+" : ""))(t), [t]),
+                    x = n.useMemo(() => (0, s.vw)({ amount: e, currency: l }), [e, l]);
+                return n.createElement(r.Z, { style: [a ? u.alignCenter : void 0, ...([p] ?? 0)] }, n.createElement(o.ZP, { color: h || f, size: "title0" === i ? void 0 : i, style: ["title0" === i ? { fontSize: "48px" } : {}, g && u.strike], weight: d }, `${b}${x}`));
             }
             const d = n.memo(i),
-                u = l.default.create((e) => ({ alignCenter: { alignItems: "center" } }));
+                u = l.default.create((e) => ({ alignCenter: { alignItems: "center" }, strike: { textDecorationLine: "line-through" } }));
         },
         984067: (e, t, a) => {
             a.d(t, { Z: () => h });
@@ -492,4 +492,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d26971c7.771831da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d26971c7.b82745ea.js.map

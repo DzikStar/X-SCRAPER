@@ -226,9 +226,9 @@
                     return e.percentage + "% in meno su " + e.tier + " " + e.plan;
                 }),
                 o("b28602eb", function (e) {
-                    return "Get " + e.percentage + "% off this summer";
+                    return "Ottieni un " + e.percentage + "% di sconto questa estate";
                 }),
-                o("he77d8e6", "Limited-time offer"),
+                o("he77d8e6", "Offerta a tempo limitato"),
                 o("adf3410a", "Abbonati per usufruire di nuove funzioni e, se disponi dell'idoneità, per ottenere una parte del ricavato."),
                 o("a84a736e", "Ottieni un credito pubblicitario in regalo"),
                 o("a0713d76", "Esegui l'upgrade a Organizzazioni verificate per ottenere crediti pubblicitari in regalo e una suite di strumenti per la crescita business."),
@@ -1294,7 +1294,7 @@
                     return 'Ricerca su 𝕏 di "' + e.query + '" in corso';
                 }),
                 o("ad342369", function (e) {
-                    return 'Searching 𝕏 users for "' + e.query + '"';
+                    return 'Ricerca di "' + e.query + '" tra gli utenti di 𝕏 in corso';
                 }),
                 o("g008d475", function (e) {
                     return "Consultazione di " + e.url + " in corso";
@@ -1315,7 +1315,7 @@
                     return "Ricerca post su 𝕏 di @" + e.username + ' per **"' + e.query + '"** in corso';
                 }),
                 o("a02d1657", function (e) {
-                    return "Executing code" + e.ttc_tool_usage_card;
+                    return "Esecuzione codice in corso" + e.ttc_tool_usage_card;
                 }),
                 o("aa9d42c0", "Searching the web"),
                 o("dce1817a", "Searching on 𝕏"),
@@ -1354,12 +1354,12 @@
                 o("deaf5b16", "Riprova"),
                 o("a66d80d0", "Traduci post"),
                 o("be9b9fb8", "Traduzione di Grok"),
-                o("ba10dab6", "Auto-translated by Grok"),
+                o("ba10dab6", "Traduzione automatica di Grok"),
                 o("he9c9634", "Impossibile recuperare la traduzione"),
                 o("j2198c98", "Nascondi post tradotto"),
                 o("d4d35bea", "Traduzione in corso..."),
-                o("f4f69be8", "Show original"),
-                o("e3097a5c", "Show auto-translated post"),
+                o("f4f69be8", "Mostra originale"),
+                o("e3097a5c", "Mostra post tradotto automaticamente"),
                 o("e0f81ff3", "Traduzione:"),
                 o("j2862695", function (e) {
                     return "Lingua originale: " + e.originLanguage + ". Traduzione di";
@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 o("c60b9e5c", "Changes will take effect for newly loaded content."),
-                o("c6ad999b", "languages settings"),
+                o("f9317b98", "language settings"),
                 o("hba0547a", "Unable to update settings. Please try again later."),
                 o("d4c339b9", function (e) {
                     return "Post di " + e.fullName + " (@" + e.screenName + ")";
@@ -4273,7 +4273,7 @@
                     return "Mostra tutto (" + e.count + ")";
                 }),
                 o("df601d92", "Utenti pertinenti"),
-                o("a4cfb8a8", "Browsing"),
+                o("a4cfb8a8", "Consultazione in corso"),
                 o("d7cb5408", "Pagine Web rilevanti"),
                 o("ca93f2ee", "Questo messaggio è stato eliminato."),
                 o("b8c06820", "Copia testo"),
@@ -4359,7 +4359,6 @@
                 o("a15d62db", function (e) {
                     return "Ragionamento elaborato in " + e.seconds + " sec.";
                 }),
-                o("f26fc748", "Script"),
                 o("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 o("ff95a9cc", "ID video"),
                 o("a97e358e", "Link video"),
                 o("e10e8b46", "Vengono mostrati solo i video degli ultimi 100 giorni."),
-                o("ba37f6da", "Riepilogo video");
-            o("f19846b2", "Miniatura video"),
-                o("ccd6f4a8", "Titolo video"),
+                o("ba37f6da", "Riepilogo video"),
+                o("f19846b2", "Miniatura video");
+            o("ccd6f4a8", "Titolo video"),
                 o("c8410542", "Il numero di volte in cui il tuo video è stato visualizzato."),
                 o("a532072a", "Spettatori"),
                 o("d9508ab0", "visualizzazioni"),
@@ -5883,9 +5882,9 @@
                 o("af781666", "Cosa pensano gli altri?"),
                 o("a1f414ee", "Condividi la tua opinione"),
                 o("ed88e742", "Copia link dell'argomento"),
-                o("h92fe1be", "Purtroppo, al momento, Note della collettività non è disponibile per te.");
-            o("f0dc1434", "Attualmente Note della collettività è disponibile solo negli Stati Uniti"),
-                o("f8fc0b48", "Crea una cartella"),
+                o("h92fe1be", "Purtroppo, al momento, Note della collettività non è disponibile per te."),
+                o("f0dc1434", "Attualmente Note della collettività è disponibile solo negli Stati Uniti");
+            o("f8fc0b48", "Crea una cartella"),
                 o("c14bcdde", "Cerca nei segnalibri"),
                 o("e9c65c4a", "Ricerca nei segnalibri"),
                 o("b92a21d9", function (e) {
@@ -6511,7 +6510,7 @@
                 o("f7cf3d36", "Grok è un assistente IA gratuito progettato da xAI per essere il più veritiero e obiettivo possibile. Grok può eseguire ricerche in tempo reale, generare immagini, analizzare tendenze e molto altro."),
                 o("hc965308", "Divertente"),
                 o("eb78b77e", "Modalità divertente"),
-                o("ac164552", "Go to grok.com"),
+                o("ac164552", "Apri grok.com"),
                 o("gb5fb7d0", "Modalità Focus"),
                 o("g5665caa", "Esci dalla modalità Focus"),
                 o("a372681e", "Copia link di condivisione"),
@@ -6889,9 +6888,9 @@
                 o("b8cbb51a", "Riepilogo offerta"),
                 o("bda6881e", "Questa offerta di lavoro è stata importata dal tuo sistema di monitoraggio dei candidati (ATS). Ricorda che solo determinati campi possono essere modificati."),
                 o("b075c68a", "Modifica offerta"),
-                o("d4b6a6e0", "Profile Spotlight");
-            o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post."),
-                o("af1cfd46", "Integrazione ATS"),
+                o("d4b6a6e0", "Profile Spotlight"),
+                o("j2dd3686", "Metti in primo piano le offerte in evidenza sopra i miei post.");
+            o("af1cfd46", "Integrazione ATS"),
                 o("d6fa2944", "L'eliminazione dell'integrazione non comporterà l'eliminazione delle offerte di lavoro importate."),
                 o("h99f11fa", "Elimina integrazione"),
                 o("eef1ae76", "Collegamento attivo"),
@@ -7002,9 +7001,9 @@
                 o("gd573390", "Inoltre, tutto ciò che trovi in Basic..."),
                 o("ef94bbd4", "Ottieni Premium+"),
                 o("dcd830ce", "Inoltre, tutto ciò che trovi in Premium..."),
-                o("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                o("dde0dbe0", "Approfitta dell'offerta estiva, scade tra:"),
                 o("f8a50ba7", function (e) {
-                    return "Summer offer ending on " + e.date + ".";
+                    return "L'offerta estiva scade il giorno " + e.date + ".";
                 }),
                 o("b7dde622", "Felice giorno del Ringraziamento! L'offerta scade tra:"),
                 o("i0180ca1", function (e) {
@@ -7400,10 +7399,10 @@
                 o("bd05add8", "Non sono un bot"),
                 o("d94f12b6", "Prova a cercare notifiche, privacy, ecc."),
                 o("ba8f6f82", "Cerca nelle impostazioni"),
-                o("ibf92e4a", "Payment Successful"),
+                o("ibf92e4a", "Pagamento completato"),
                 o("bdf0fb06", "Your subscription has been activated."),
                 o("ddfd6718", "Pagamento non riuscito"),
-                o("d42fa852", "There was an issue processing your payment. Please try again."),
+                o("d42fa852", "Si è verificato un problema durante l'elaborazione del pagamento. Riprova."),
                 o("g055a9ce", "Open 𝕏 App"),
                 o("g931a6e5", function (e) {
                     return "Stai seguendo " + e.topic;
@@ -7871,7 +7870,8 @@
                 o("b74ff5fc", "Se disdici, il tuo abbonamento scadrà automaticamente al termine del ciclo di fatturazione."),
                 o("ee9efbc8", "Procedi con la disdetta"),
                 o("c5d9c77a", "Sembra ci sia un problemino, ma non preoccuparti perché non è colpa tua. Chiudi questa finestra e riprova."),
-                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple.");
+                o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple."),
+                o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store.");
             function n(e, i) {
                 for (var a = 0; a < i.length; a++) {
                     var o = i[a];
@@ -7910,10 +7910,9 @@
                     r(e, i)
                 );
             }
-            o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return "È bello rivederti, " + e.displayName;
-                }),
+            o("i5f14be7", function (e) {
+                return "È bello rivederti, " + e.displayName;
+            }),
                 o("a76d58ba", "Statistiche annunci"),
                 o("eccd0e1a", "Statistiche dell'organizzazione"),
                 o("deea1708", "Vuoi vedere le statistiche per tutti i tuoi account X?"),
@@ -8911,9 +8910,9 @@
                     return "Visita " + e.advertiserName;
                 }),
                 o("c67e71aa", "Guarda ora"),
-                o("a6ada13e", "Compra ora");
-            o("j0f12222", "Approfondisci"),
-                o("f569f7c8", "Passa al sito Web"),
+                o("a6ada13e", "Compra ora"),
+                o("j0f12222", "Approfondisci");
+            o("f569f7c8", "Passa al sito Web"),
                 o("j0c6772a", "Visita il sito Web"),
                 o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
                 o("b3112b8a", "Salta"),
@@ -10154,7 +10153,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13357,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.524ec43a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.c552104a.js.map

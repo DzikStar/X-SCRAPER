@@ -1374,7 +1374,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("c6ad999b", "languages settings"),
+                n("f9317b98", "language settings"),
                 n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return e.fullName + "(@" + e.screenName + ") 님이 게시";
@@ -4362,7 +4362,6 @@
                 n("a15d62db", function (e) {
                     return e.seconds + "초 동안 생각 ";
                 }),
-                n("f26fc748", "Script"),
                 n("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4934,9 +4933,9 @@
                 n("ff95a9cc", "동영상 ID"),
                 n("a97e358e", "동영상 링크"),
                 n("e10e8b46", "최근 100일 동안의 동영상만 표시됩니다."),
-                n("ba37f6da", "동영상 개요");
-            n("f19846b2", "동영상 미리보기 이미지"),
-                n("ccd6f4a8", "동영상 제목"),
+                n("ba37f6da", "동영상 개요"),
+                n("f19846b2", "동영상 미리보기 이미지");
+            n("ccd6f4a8", "동영상 제목"),
                 n("c8410542", "동영상을 시청한 횟수입니다."),
                 n("a532072a", "조회자"),
                 n("d9508ab0", "조회수"),
@@ -5886,9 +5885,9 @@
                 n("af781666", "다른 사람들은 어떻게 생각할까요?"),
                 n("a1f414ee", "의견 공유하기"),
                 n("ed88e742", "토픽에 링크 복사하기"),
-                n("h92fe1be", "지금은 그룹 노트를 이용하실 수 없습니다.");
-            n("f0dc1434", "그룹 노트는 현재 미국에서만 이용할 수 있습니다."),
-                n("f8fc0b48", "폴더 만들기"),
+                n("h92fe1be", "지금은 그룹 노트를 이용하실 수 없습니다."),
+                n("f0dc1434", "그룹 노트는 현재 미국에서만 이용할 수 있습니다.");
+            n("f8fc0b48", "폴더 만들기"),
                 n("c14bcdde", "북마크 검색"),
                 n("e9c65c4a", "북마크 검색"),
                 n("b92a21d9", function (e) {
@@ -6892,9 +6891,9 @@
                 n("b8cbb51a", "직무 요약"),
                 n("bda6881e", "이 채용공고는 지원자 추적 시스템(ATS)에서 가져온 것입니다. 특정 필드만 수정할 수 있다는 점에 유의하시기 바랍니다."),
                 n("b075c68a", "채용 공고 수정"),
-                n("d4b6a6e0", "프로필 스포트라이트");
-            n("j2dd3686", "추천 공고는 눈에 잘 띄도록 게시물 위에 게재됩니다. "),
-                n("af1cfd46", "ATS 통합"),
+                n("d4b6a6e0", "프로필 스포트라이트"),
+                n("j2dd3686", "추천 공고는 눈에 잘 띄도록 게시물 위에 게재됩니다. ");
+            n("af1cfd46", "ATS 통합"),
                 n("d6fa2944", "통합을 삭제해도 가져온 채용 공고는 삭제되지 않습니다."),
                 n("h99f11fa", "통합 삭제"),
                 n("eef1ae76", "현재 연결됨"),
@@ -7874,7 +7873,8 @@
                 n("b74ff5fc", "취소 시, 결제 주기가 끝나면 구독이 자동으로 만료됩니다."),
                 n("ee9efbc8", "계속 취소합니다"),
                 n("c5d9c77a", "문제가 발생한 것 같습니다. 여러분의 잘못이 아니니 걱정하지 마세요. 이 창을 닫고 다시 시도해 주세요."),
-                n("jda53c24", "Apple App Store에서 구독을 취소할 수 있습니다.");
+                n("jda53c24", "Apple App Store에서 구독을 취소할 수 있습니다."),
+                n("g0a7a53e", "Google Play Store에서 구독을 취소할 수 있습니다.");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7913,10 +7913,9 @@
                     d(e, c)
                 );
             }
-            n("g0a7a53e", "Google Play Store에서 구독을 취소할 수 있습니다."),
-                n("i5f14be7", function (e) {
-                    return e.displayName + " 님, 다시 만나서 반가워요!";
-                }),
+            n("i5f14be7", function (e) {
+                return e.displayName + " 님, 다시 만나서 반가워요!";
+            }),
                 n("a76d58ba", "광고 애널리틱스"),
                 n("eccd0e1a", "조직 애널리틱스"),
                 n("deea1708", "모든 X 계정에 대한 애널리틱스를 보고 싶으신가요?"),
@@ -8914,9 +8913,9 @@
                     return e.advertiserName + " 방문하기";
                 }),
                 n("c67e71aa", "지금 시청하기"),
-                n("a6ada13e", "지금 쇼핑하기");
-            n("j0f12222", "더 보기"),
-                n("f569f7c8", "웹사이트로 이동"),
+                n("a6ada13e", "지금 쇼핑하기"),
+                n("j0f12222", "더 보기");
+            n("f569f7c8", "웹사이트로 이동"),
                 n("j0c6772a", "웹사이트 방문하기"),
                 n("f73003aa", "광고 후 동영상이 재생됩니다"),
                 n("b3112b8a", "건너뛰기"),
@@ -10173,7 +10172,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13375,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.42aaa3fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.16c80aba.js.map

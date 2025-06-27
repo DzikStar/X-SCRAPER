@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: i, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: w, withWideContainer: A } = this.props,
+                    const { backButtonType: e, centerTitle: a, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: i, leftControl: c, middleControl: h, position: D, rightControl: p, secondaryBar: m, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: A, withWideContainer: w } = this.props,
                         { isModal: S } = this.context,
                         x = l ? c : d.createElement(t.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         C = (function (e, a, o) {
                             return e && !(a && o);
-                        })(!!w, S, !!m);
-                    return d.createElement(d.Fragment, null, d.createElement(s.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: i, leftControl: x, middleControl: h, position: u(D, S, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: C, withWideContainer: A }), m || null);
+                        })(!!A, S, !!m);
+                    return d.createElement(d.Fragment, null, d.createElement(s.Z, { centerTitle: a, centeredLogo: o, isFullWidth: n, isLarge: i, leftControl: x, middleControl: h, position: u(D, S, r), rightControl: p, style: b, subtitle: M, title: f, titleDomId: y, titleIconCell: g, titleIconCellSize: k, withBackground: C, withWideContainer: w }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -197,7 +197,7 @@
                 k = (0, b.Z)(y, { page: "not_found" });
         },
         273945: (e, a, o) => {
-            o.r(a), o.d(a, { TRUSTED_FRIENDS_LEARN_MORE_URL: () => M, TrustedFriendsManagementScreen: () => k, default: () => w });
+            o.r(a), o.d(a, { TRUSTED_FRIENDS_LEARN_MORE_URL: () => M, TrustedFriendsManagementScreen: () => k, default: () => A });
             var d = o(202784),
                 r = o(107267),
                 l = o(688715),
@@ -217,27 +217,23 @@
                 y = (0, h.p)(
                     () =>
                         Promise.all([
-                            o.e("icons.5"),
-                            o.e("icons.25"),
-                            o.e("icons.22"),
-                            o.e("icons.6"),
-                            o.e("icons.4"),
-                            o.e("icons.9"),
-                            o.e("icons.15"),
-                            o.e("icons.7"),
-                            o.e("icons.3"),
-                            o.e("icons.20"),
+                            o.e("icons.21"),
+                            o.e("icons.16"),
+                            o.e("icons.10"),
+                            o.e("icons.19"),
+                            o.e("icons.1"),
+                            o.e("icons.0"),
+                            o.e("icons.8"),
                             o.e("icons.2"),
-                            o.e("icons.18"),
-                            o.e("icons.27"),
-                            o.e("icons.13"),
+                            o.e("icons.23"),
+                            o.e("icons.3"),
+                            o.e("icons.4"),
+                            o.e("icons.15"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.0"),
-                            o.e("icons.24"),
-                            o.e("icons.17"),
-                            o.e("icons.12"),
-                            o.e("icons.11"),
+                            o.e("icons.9"),
+                            o.e("icons.7"),
+                            o.e("icons.28"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -248,15 +244,18 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.8"),
-                            o.e("icons.19"),
+                            o.e("icons.26"),
+                            o.e("icons.29"),
+                            o.e("icons.18"),
+                            o.e("icons.27"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -305,27 +304,23 @@
                 g = (0, h.p)(
                     () =>
                         Promise.all([
-                            o.e("icons.5"),
-                            o.e("icons.25"),
-                            o.e("icons.22"),
-                            o.e("icons.6"),
-                            o.e("icons.4"),
-                            o.e("icons.9"),
-                            o.e("icons.15"),
-                            o.e("icons.7"),
-                            o.e("icons.3"),
-                            o.e("icons.20"),
+                            o.e("icons.21"),
+                            o.e("icons.16"),
+                            o.e("icons.10"),
+                            o.e("icons.19"),
+                            o.e("icons.1"),
+                            o.e("icons.0"),
+                            o.e("icons.8"),
                             o.e("icons.2"),
-                            o.e("icons.18"),
-                            o.e("icons.27"),
-                            o.e("icons.13"),
+                            o.e("icons.23"),
+                            o.e("icons.3"),
+                            o.e("icons.4"),
+                            o.e("icons.15"),
                             o.e("modules.common-e907d115"),
                             o.e("modules.common-e019dbda"),
-                            o.e("icons.0"),
-                            o.e("icons.24"),
-                            o.e("icons.17"),
-                            o.e("icons.12"),
-                            o.e("icons.11"),
+                            o.e("icons.9"),
+                            o.e("icons.7"),
+                            o.e("icons.28"),
                             o.e("modules.audio-6107ac1a"),
                             o.e("modules.audio-b953418a"),
                             o.e("modules.audio-7c51e6a7"),
@@ -336,15 +331,18 @@
                             o.e("modules.audio-e019dbda"),
                             o.e("modules.audio-262c94d4"),
                             o.e("modules.audio-c6fe4ea4"),
-                            o.e("icons.8"),
-                            o.e("icons.19"),
+                            o.e("icons.26"),
+                            o.e("icons.29"),
+                            o.e("icons.18"),
+                            o.e("icons.27"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
+                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -420,7 +418,7 @@
                         ),
                     );
                 },
-                w = k;
+                A = k;
         },
         403556: (e, a, o) => {
             o.d(a, { Z: () => x });
@@ -477,17 +475,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: i, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: k, style: A, to: S } = this.props,
+                    const { Icon: e, "aria-label": a, badgeCount: o, badgePip: d, children: l, color: n, isActive: i, isCompact: c, isPillLink: u, isRoundedRect: h, isWebRedesign: m, retainScrollPosition: k, style: w, to: S } = this.props,
                         { location: x } = this.state,
                         C = S ? this._getMemoizedLink(S, k) : void 0,
                         P = i ? i(S) : x?.pathname === C?.pathname,
-                        I = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? w.pillHoverStyle.backgroundColor : void 0 }),
-                        v = m ? "medium" : P ? "bold" : "medium";
-                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": P, focusable: !!P, interactiveStyles: I, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [w.pillStyle] : [w.link]), ...(u && P ? [w.pillActiveStyle] : []), c ? (u ? w.compactPill : w.compactLink) : null, h ? w.roundedRect : null, A], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: i }) => r.createElement(s.Z, { style: u && w.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [w.text, { color: this._getTextColor(P, i, m, u) }, c && w.compactText, m && a && w.focusedText, u && w.pillTextStyle, u && P && w.pillActiveTextStyle, u && i && w.pillHoverTextStyle], weight: v }, e && r.createElement(e, { style: w.icon }), l, m || u ? null : r.createElement(s.Z, { style: P && [w.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [w.badge, o >= 10 && w.multiDigitBadge, o >= 20 && w.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: w.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
+                        v = b.Z.generate({ backgroundColor: "transparent", color: t.default.theme.colors.text, insetFocusRing: !0, customHoverBackgroundColor: u ? A.pillHoverStyle.backgroundColor : void 0 }),
+                        I = m ? "medium" : P ? "bold" : "medium";
+                    return r.createElement(M.Z, { "aria-label": a, "aria-selected": P, focusable: !!P, interactiveStyles: v, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [...(u ? [A.pillStyle] : [A.link]), ...(u && P ? [A.pillActiveStyle] : []), c ? (u ? A.compactPill : A.compactLink) : null, h ? A.roundedRect : null, w], withoutInteractiveStyles: m }, ({ isFocused: a, isHovered: i }) => r.createElement(s.Z, { style: u && A.flexGrow }, r.createElement(D.ZP, { size: m ? "headline2" : void 0, style: [A.text, { color: this._getTextColor(P, i, m, u) }, c && A.compactText, m && a && A.focusedText, u && A.pillTextStyle, u && P && A.pillActiveTextStyle, u && i && A.pillHoverTextStyle], weight: I }, e && r.createElement(e, { style: A.icon }), l, m || u ? null : r.createElement(s.Z, { style: P && [A.border, { backgroundColor: t.default.theme.colors[n] }] })), o ? r.createElement(p.Z, { count: o, standalone: !0, style: [A.badge, o >= 10 && A.multiDigitBadge, o >= 20 && A.truncatedCountBadge], truncatedCountFormatter: g, unreadCountLabel: f, withBorder: !1 }) : d ? r.createElement(p.Z, { pip: !0, standalone: !0, style: A.badgePip, textColor: "red500", unreadCountLabel: y, withBorder: !1 }) : null));
                 }
             }
             (k.contextType = m.Z), (k.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const w = t.default.create((e) => ({
+            const A = t.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -510,7 +508,7 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                A = k,
+                w = k,
                 S = t.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
                 x = ({ alignFirstItem: e, "aria-label": a, isCompact: o, isPillLink: t, isRoundedRect: s, links: i, style: c, visibleItemIndex: u }) => {
                     const h = i
@@ -523,7 +521,7 @@
                             () =>
                                 i.filter(Boolean).map(({ label: a, viewType: l, ...n }, i) => {
                                     const c = p ? [S.linkRedesign, 0 === i && S.firstLinkRedesign, e && 0 === i && S.withNoPaddingStart] : void 0;
-                                    return r.createElement(A, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: s, isWebRedesign: p, style: c }), a);
+                                    return r.createElement(w, (0, d.Z)({ viewType: l }, n, { isCompact: o, isPillLink: t, isRoundedRect: s, isWebRedesign: p, style: c }), a);
                                 }),
                             [e, o, t, s, p, i],
                         );
@@ -532,4 +530,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.3b5f92aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.d8f02d0a.js.map

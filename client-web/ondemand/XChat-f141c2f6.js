@@ -6,26 +6,26 @@
             n.d(t, { c: () => u });
             var a = n(552322),
                 r = n(159603),
-                s = n(256958),
-                l = n(332161),
-                i = n(466285),
-                o = n(759746),
-                c = n(455091);
+                s = n(455091),
+                l = n(256958),
+                i = n(332161),
+                o = n(466285),
+                c = n(759746);
             const u = ({ onClick: e, isSelected: t, suggestion: n }) => {
-                    const { t: u } = (0, c.$G)();
+                    const { t: u } = (0, s.$G)();
                     return n instanceof r.com.x.dms.NewDmSuggestion.User || n instanceof r.com.x.dms.addparticipants.AddParticipantSuggestion
-                        ? (0, a.jsx)(i.a, {
+                        ? (0, a.jsx)(o.a, {
                               onClick: () => {
                                   e();
                                   const t = d(n.user.cannotMessageReason);
-                                  t && (0, s.Am)(u(t));
+                                  t && (0, l.Am)(u(t));
                               },
                               isSelected: t,
                               user: n.user,
                               disabled: (n instanceof r.com.x.dms.addparticipants.AddParticipantSuggestion && n.alreadyParticipant) || !!n.user.cannotMessageReason,
                           })
                         : n instanceof r.com.x.dms.NewDmSuggestion.ExistingGroup
-                          ? (0, a.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, a.jsx)(o.M, { avatarSize: "large", users: n.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, a.jsxs)("div", { className: "flex-1 flex-col", children: [(0, a.jsx)(l.x, { children: n.title }), (0, a.jsx)(l.x, { size: "subtext2", color: "gray700", children: u("{count} {count, plural, one {person} other {people}}", { count: n.numParticipants }) })] })] }, n.id)
+                          ? (0, a.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer rounded-lg", onClick: e, children: [(0, a.jsx)(c.M, { avatarSize: "large", users: n.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, a.jsxs)("div", { className: "flex-1 flex-col", children: [(0, a.jsx)(i.x, { children: n.title }), (0, a.jsx)(i.x, { size: "subtext2", color: "gray700", children: u("{count} {count, plural, one {person} other {people}}", { count: n.numParticipants }) })] })] }, n.id)
                           : (0, a.jsx)(a.Fragment, {});
                 },
                 d = (e) => {
@@ -51,10 +51,10 @@
         620134: (e, t, n) => {
             n.d(t, { w: () => i });
             var a = n(552322),
-                r = n(350311),
+                r = n(887491),
                 s = n(589259),
-                l = n(887491);
-            const i = ({ name: e, avatarUrl: t, onRemove: n }) => (0, a.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: n, children: [(0, a.jsx)(r.s, { url: t, size: "small" }), (0, a.jsx)(s.R, { name: e, size: "subtext1" }), (0, a.jsx)(l.Z, { className: "size-4" })] });
+                l = n(350311);
+            const i = ({ name: e, avatarUrl: t, onRemove: n }) => (0, a.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: n, children: [(0, a.jsx)(l.s, { url: t, size: "small" }), (0, a.jsx)(s.R, { name: e, size: "subtext1" }), (0, a.jsx)(r.Z, { className: "size-4" })] });
         },
         517922: (e, t, n) => {
             n.d(t, { C: () => s });
@@ -148,6 +148,7 @@
                             })
                             .catch((e) => {});
                     },
+                    variant: "brandOutlined",
                     children: "Reset",
                 });
             function h() {
@@ -1122,4 +1123,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.fecee17a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.1d21a76a.js.map

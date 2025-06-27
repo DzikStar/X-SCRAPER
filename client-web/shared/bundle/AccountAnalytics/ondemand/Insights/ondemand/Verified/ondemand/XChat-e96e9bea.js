@@ -10,14 +10,14 @@
             var l = a(322506);
             const o = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png";
             function d({ resolution: e, screenName: t, shape: a = "circle", size: d = "xLarge", url: s, withLink: b, className: c }) {
-                const g = s
+                const u = s
                         ? (function (e, t) {
                               return t ? e.replace(/(_[a-z0-9]+)?\.(?=jpeg|png|jpg$)/, `_${t}.`) : e;
                           })(s, e)
                         : void 0,
-                    u = t && b,
-                    m = u ? l.r : "div",
-                    [p, f] = (0, i.useState)(!1),
+                    g = t && b,
+                    m = g ? l.r : "div",
+                    [f, p] = (0, i.useState)(!1),
                     x = (function (e) {
                         const t = (0, i.useRef)();
                         return (
@@ -29,23 +29,23 @@
                     })(s);
                 return (
                     (0, i.useEffect)(() => {
-                        x !== s && f(!1);
+                        x !== s && p(!1);
                     }, [x, s]),
                     (0, r.jsx)(m, {
                         className: (0, n.Z)("min-size flex overflow-hidden bg-gray-300", "circle" === a && "rounded-full", "square" === a && "rounded-sm", "fill" === d && "size-full", "jumbo" === d && "min-h-16 min-w-16 size-16", "large" === d && "min-h-8 min-w-8 size-8", "medium" === d && "min-h-6 min-w-6 size-6", "small" === d && "min-h-4 min-w-4 size-4", "xLarge" === d && "min-h-10 min-w-10 size-10", "xxLarge" === d && "min-h-12 min-w-12 size-12", "xxxLarge" === d && "min-h-14 min-w-14 size-14", b && "transition duration-200 hover:brightness-90", c),
-                        ...(u && { href: `https://x.com/${t}`, target: "external" === b ? "_blank" : void 0 }),
-                        ...(g && {
+                        ...(g && { href: `https://x.com/${t}`, target: "external" === b ? "_blank" : void 0 }),
+                        ...(u && {
                             children: (0, r.jsx)("img", {
                                 alt: "user avatar",
                                 className: "size-full",
                                 loading: "lazy",
                                 onError: (e) => {
-                                    e.target.src === g && f(!0);
+                                    e.target.src === u && p(!0);
                                 },
                                 onLoad: (e) => {
-                                    e.target.src === g && f(!1);
+                                    e.target.src === u && p(!1);
                                 },
-                                src: p ? o : g,
+                                src: f ? o : u,
                             }),
                         }),
                     })
@@ -53,7 +53,7 @@
             }
         },
         993165: (e, t, a) => {
-            a.d(t, { z: () => u });
+            a.d(t, { z: () => g });
             var r = a(552322),
                 n = a(549815),
                 i = a(110929),
@@ -63,7 +63,7 @@
                 s = a(287326);
             const b = (0, i.j)("", { variants: { size: { large: "size-[22px]", medium: "size-5", small: "size-[18px]", xLarge: "size-6", xxLargeCompact: "size-4", xSmall: "size-4", xSmallCompact: "size-4" } } }),
                 c = { large: "body", medium: "body", small: "subtext1", xLarge: "headline2", xxLargeCompact: "body", xSmall: "subtext1", xSmallCompact: "body" },
-                g = (0, i.j)("inline-flex items-center justify-center gap-1 border border-solid transition focus-visible:outline disabled:pointer-events-none disabled:opacity-50", {
+                u = (0, i.j)("inline-flex items-center justify-center gap-1 border border-solid transition focus-visible:outline disabled:pointer-events-none disabled:opacity-50", {
                     variants: {
                         backgroundColor: d.z7,
                         borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" },
@@ -93,9 +93,9 @@
                         },
                     },
                 }),
-                u = (0, l.forwardRef)(function ({ asChild: e, backgroundColor: t = "background", borderRadius: a = "full", children: d, className: u, color: m = "text", hoverLabel: p, icon: f, size: x = "medium", variant: h, ...y }, w) {
+                g = (0, l.forwardRef)(function ({ asChild: e, backgroundColor: t = "background", borderRadius: a = "full", children: d, className: g, color: m = "text", hoverLabel: f, icon: p, size: x = "medium", variant: h, ...y }, w) {
                     const v = e ? n.g7 : "button";
-                    return (0, r.jsx)(s.O, { label: p, children: (0, r.jsx)(v, { className: g({ className: (0, i.cx)(!h && "outline-primary hover:brightness-90 focus:brightness-90 active:brightness-75", u), size: x, variant: h, ...(d && { padding: x }), ...(!h && { backgroundColor: t, borderRadius: a, color: m }) }), ref: w, ...y, children: (0, r.jsxs)(l.Fragment, { children: [f && (0, l.cloneElement)(f, { className: b({ size: x }) }), "string" == typeof d ? (0, r.jsx)(o.x, { color: "inherit", numberOfLines: 1, size: x && c[x], weight: "bold", children: d }) : d] }) }) });
+                    return (0, r.jsx)(s.O, { label: f, children: (0, r.jsx)(v, { className: u({ className: (0, i.cx)(!h && "outline-primary hover:brightness-90 focus:brightness-90 active:brightness-75", g), size: x, variant: h, ...(d && { padding: x }), ...(!h && { backgroundColor: t, borderRadius: a, color: m }) }), ref: w, ...y, children: (0, r.jsxs)(l.Fragment, { children: [p && (0, l.cloneElement)(p, { className: b({ size: x }) }), "string" == typeof d ? (0, r.jsx)(o.x, { color: "inherit", numberOfLines: 1, size: x && c[x], weight: "bold", children: d }) : d] }) }) });
                 });
         },
         287326: (e, t, a) => {
@@ -122,7 +122,7 @@
             var r = a(552322),
                 n = a(202784),
                 i = a(905394);
-            const l = (0, n.forwardRef)(({ asChild: e, children: t, href: a, onClick: l, ...o }, d) => {
+            const l = (0, n.forwardRef)(function ({ asChild: e, children: t, href: a, onClick: l, ...o }, d) {
                 const s = (0, i.d)(),
                     b = (0, n.useCallback)(
                         (e) => {
@@ -136,8 +136,8 @@
                         },
                         [s, l, a],
                     ),
-                    c = { ...o, href: a, onClick: b };
-                return e && (0, n.isValidElement)(t) ? (0, n.cloneElement)(t, { ...t.props, ...c, ref: d }) : (0, r.jsx)("a", { ...c, ref: d, children: t });
+                    c = { ...o, href: a, onClick: b, ref: d };
+                return e && (0, n.isValidElement)(t) ? (0, n.cloneElement)(t, { ...t.props, ...c }) : (0, r.jsx)("a", { ...c, children: t });
             });
         },
         332161: (e, t, a) => {
@@ -148,23 +148,29 @@
                 l = a(322506);
             const o = "div",
                 d = (0, n.j)("font-chirp max-w-full whitespace-pre-wrap", { variants: { color: i.eR, numberOfLines: { 1: "line-clamp-1", 2: "line-clamp-2", 3: "line-clamp-3", 4: "line-clamp-4", 5: "line-clamp-5" }, size: { body: "text-body", headline1: "text-headline1", headline2: "text-headline2", inherit: "text-[length:inherit]", subtext1: "text-subtext1", subtext2: "text-subtext2", subtext3: "text-subtext3", title1: "text-title1", title2: "text-title2", title3: "text-title3", title4: "text-title4" }, underline: { false: "no-underline", true: "underline" }, weight: { bold: "font-bold", extrabold: "font-extrabold", inherit: "font-inherit", light: "font-light", medium: "font-medium", normal: "font-normal" }, breakText: { all: "break-all", words: "text-break-words" } } });
-            function s({ as: e, className: t, color: a, numberOfLines: i, size: s = "body", underline: b, weight: c = "normal", wordBreak: g = "normal", ...u }) {
+            function s({ as: e, className: t, color: a, numberOfLines: i, size: s = "body", underline: b, weight: c = "normal", breakText: u = "words", ...g }) {
                 const m = "a" === e,
-                    p = m ? l.r : (e ?? o),
-                    f = { ...("all" === g ? { wordBreak: "break-all" } : {}) };
-                return (0, r.jsx)(p, { ...u, className: d({ className: (0, n.cx)(m && !1 !== b && "hover:underline", t), color: a ?? (m ? "primary" : "text"), numberOfLines: i, size: s, underline: b, weight: c }), style: f });
+                    f = m ? l.r : (e ?? o);
+                return (0, r.jsx)(f, { ...g, className: d({ className: (0, n.cx)(m && !1 !== b && "hover:underline", t), color: a ?? (m ? "primary" : "text"), numberOfLines: i, size: s, underline: b, weight: c, breakText: u }) });
             }
         },
-        19745: (e, t, a) => {
-            a.d(t, { x: () => o });
+        379651: (e, t, a) => {
+            a.d(t, { x: () => d });
             var r = a(552322),
                 n = a(928316),
-                i = a(256958);
-            function l({ ...e }) {
-                return (0, r.jsx)(i.x7, { className: "toaster group w-[600px] flex flex-row justify-center right-1/2 translate-x-1/2", visibleToasts: 1, toastOptions: { classNames: { actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground", cancelButton: "group-[.toast]:bg-gray-50 group-[.toast]:text-gray-700", description: "group-[.toast]:text-gray-700", toast: "group toast group-[.toaster]:bg-primary group-[.toaster]:text-white group-[.toaster]:text-body group-[.toaster]:rounded-md w-auto" } }, ...e });
+                i = a(256958),
+                l = a(202784);
+            function o() {
+                return () => {};
             }
-            function o({ ...e }) {
-                return (0, n.createPortal)((0, r.jsx)(l, { ...e }), document.body);
+            function d({ ...e }) {
+                return (0, l.useSyncExternalStore)(
+                    o,
+                    () => !0,
+                    () => !1,
+                )
+                    ? (0, n.createPortal)((0, r.jsx)(i.x7, { className: "toaster group w-[600px] flex flex-row justify-center left-1/2 -translate-x-1/2", visibleToasts: 1, toastOptions: { classNames: { actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground", cancelButton: "group-[.toast]:bg-gray-50 group-[.toast]:text-gray-700", description: "group-[.toast]:text-gray-700", toast: "!bg-primary !text-white !border-none !w-auto" } }, ...e }), document.body)
+                    : null;
             }
         },
         351417: (e, t, a) => {
@@ -184,14 +190,14 @@
                 s = a(907934),
                 b = a(89596);
             function c({ affiliation: e, isProtected: t, isSubscriber: a, isTranslator: n, verifiedType: c }) {
-                const g = [];
-                return "business" === c && g.push((0, r.jsx)(i.Z, {}, "business")), "government" === c && g.push((0, r.jsx)(l.Z, {}, "government")), "user" === c && g.push((0, r.jsx)(o.Z, { className: "fill-badge" }, "User")), a && g.push((0, r.jsx)(d.Z, { className: "fill-plum-500" }, "subscriber")), n && g.push((0, r.jsx)(s.Z, { className: "fill-yellow-500" }, "translator")), t && g.push((0, r.jsx)(b.Z, {}, "protected")), e && g.push((0, r.jsx)("img", { alt: e.label, className: "rounded-sm h-[1em] w-[1em]", loading: "lazy", src: e.url }, "affiliation")), g.length ? (0, r.jsx)("div", { className: "flex gap-1", children: g }) : null;
+                const u = [];
+                return "business" === c && u.push((0, r.jsx)(i.Z, {}, "business")), "government" === c && u.push((0, r.jsx)(l.Z, {}, "government")), "user" === c && u.push((0, r.jsx)(o.Z, { className: "fill-badge" }, "User")), a && u.push((0, r.jsx)(d.Z, { className: "fill-plum-500" }, "subscriber")), n && u.push((0, r.jsx)(s.Z, { className: "fill-yellow-500" }, "translator")), t && u.push((0, r.jsx)(b.Z, {}, "protected")), e && u.push((0, r.jsx)("img", { alt: e.label, className: "rounded-sm h-[1em] w-[1em]", loading: "lazy", src: e.url }, "affiliation")), u.length ? (0, r.jsx)("div", { className: "flex gap-1", children: u }) : null;
             }
-            var g = a(332161),
-                u = a(351417);
+            var u = a(332161),
+                g = a(351417);
             function m({ badges: e, color: t = "text", isStacked: a, name: i, screenName: l, size: o = "body", weight: d = "bold", withLink: s, screenNameColor: b = "gray700", screenNameSize: m }) {
-                const p = l && s;
-                return (0, r.jsxs)("div", { className: (0, n.Z)("overflow-hidden", a ? "flex-col items-start gap-0" : "flex items-center gap-1"), style: { wordBreak: "break-all" }, children: [(0, r.jsxs)("div", { className: "flex items-center gap-0.5 shrink-0 max-w-full", children: [(0, r.jsx)(g.x, { color: t, numberOfLines: 1, size: o, weight: d, ...(p && { as: "a", href: `https://x.com/${l}`, target: "external" === s ? "_blank" : void 0 }), children: i }), e && Object.keys(e).length && (0, r.jsx)("div", { className: "shrink-0", children: (0, r.jsx)(g.x, { size: o, children: (0, r.jsx)(c, { ...e }) }) })] }), l && (0, r.jsx)(u.Q, { screenName: l, size: m || o, withLink: s, color: b })] });
+                const f = l && s;
+                return (0, r.jsxs)("div", { className: (0, n.Z)("overflow-hidden", a ? "flex-col items-start gap-0" : "flex items-center gap-1"), children: [(0, r.jsxs)("div", { className: "flex items-center gap-0.5 shrink-0 max-w-full", children: [(0, r.jsx)(u.x, { color: t, numberOfLines: 1, size: o, breakText: "all", weight: d, ...(f && { as: "a", href: `https://x.com/${l}`, target: "external" === s ? "_blank" : void 0 }), children: i }), e && Object.keys(e).length && (0, r.jsx)("div", { className: "shrink-0", children: (0, r.jsx)(u.x, { size: o, children: (0, r.jsx)(c, { ...e }) }) })] }), l && (0, r.jsx)(g.Q, { screenName: l, size: m || o, withLink: s, color: b })] });
             }
         },
         171774: (e, t, a) => {
@@ -588,7 +594,7 @@
         234622: (e, t, a) => {
             a.d(t, { i: () => s });
             var r = a(202784),
-                n = a(642783),
+                n = a(268786),
                 i = a(111677),
                 l = a.n(i),
                 o = a(725516);
@@ -936,4 +942,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-e96e9bea.40ebfe0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-e96e9bea.f5c45cfa.js.map

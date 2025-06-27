@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DirectMessages-6107ac1a", "icons/IconTicket-js"],
+    ["bundle.DirectMessages-6107ac1a", "icons/IconCameraPlusStroke-js", "icons/IconUnlock-js"],
     {
         371706: (e, t, n) => {
-            n.d(t, { Z: () => u });
+            n.d(t, { Z: () => h });
             var i,
                 o,
                 a,
@@ -44,7 +44,7 @@
                     params: { id: "oBwyQ0_xVbAQ8FAyG0pCRA", metadata: {}, name: "AddParticipantsMutation", operationKind: "mutation", text: null },
                 };
             d.hash = "4e360bb90b3056d85e6c1492f83ce249";
-            const u = d;
+            const h = d;
         },
         468032: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -91,8 +91,8 @@
                 l = n(154003),
                 c = n(392237),
                 d = n(444178);
-            const u = "inlinePrompt",
-                h = "inlinePrompt-primaryAction",
+            const h = "inlinePrompt",
+                u = "inlinePrompt-primaryAction",
                 m = "inlinePrompt-secondaryAction",
                 p = "inlinePrompt-centeredImageContainer";
             class g extends i.Component {
@@ -112,23 +112,23 @@
                         }),
                         (this._renderAction = ({ action: e, buttonSize: t, buttonType: n, style: a, testID: s }) => {
                             const { secondaryAction: r } = this.props,
-                                { link: c, onClick: d, text: u } = e;
-                            return i.createElement(o.Z, { style: [this.styles.actionContainer, a, { justifyContent: "flex-start" }], testID: s }, i.createElement(l.ZP, { link: c, onPress: d, size: t, style: { width: r ? "100%" : "auto" }, type: n }, u));
+                                { link: c, onClick: d, text: h } = e;
+                            return i.createElement(o.Z, { style: [this.styles.actionContainer, a, { justifyContent: "flex-start" }], testID: s }, i.createElement(l.ZP, { link: c, onPress: d, size: t, style: { width: r ? "100%" : "auto" }, type: n }, h));
                         });
                 }
                 render() {
                     const { headline: e, image: t, imageActionUrl: n, imageVariants: a, primaryAction: s, rightControl: r, secondaryAction: l, shouldRenderBorder: c, subtext: d } = this.props;
-                    return i.createElement(o.Z, { style: c ? [_.root, _.rootMargin] : y.root }, i.createElement(i.Fragment, null, t ? this._renderImage(t, a, n) : null, e || d || s || l ? i.createElement(o.Z, { style: this.styles.rootPadding, testID: u }, this._renderTitle(), this._renderBodyText(), s ? this._renderAction({ action: s, buttonType: "primaryFilled", style: this.styles.primaryAction, buttonSize: "large", testID: h }) : null, l ? this._renderAction({ action: l, buttonType: "primaryOutlined", style: this.styles.secondaryAction, buttonSize: "large", testID: m }) : null) : null), r ? i.createElement(o.Z, { style: y.rightControl }, r) : null);
+                    return i.createElement(o.Z, { style: c ? [_.root, _.rootMargin] : y.root }, i.createElement(i.Fragment, null, t ? this._renderImage(t, a, n) : null, e || d || s || l ? i.createElement(o.Z, { style: this.styles.rootPadding, testID: h }, this._renderTitle(), this._renderBodyText(), s ? this._renderAction({ action: s, buttonType: "primaryFilled", style: this.styles.primaryAction, buttonSize: "large", testID: u }) : null, l ? this._renderAction({ action: l, buttonType: "primaryOutlined", style: this.styles.secondaryAction, buttonSize: "large", testID: m }) : null) : null), r ? i.createElement(o.Z, { style: y.rightControl }, r) : null);
                 }
                 get styles() {
-                    return this.props.isCompact ? f : b;
+                    return this.props.isCompact ? v : b;
                 }
             }
             g.defaultProps = { shouldRenderBorder: !1 };
             const y = c.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground }, flexGrow: { flexGrow: 1 }, centeredImage: { display: "flex", flexDirection: "row", justifyContent: "center" }, rightControl: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, position: "absolute", end: 0, top: 0 } })),
                 _ = c.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, rootMargin: { marginStart: e.spaces.space16, marginEnd: e.spaces.space16 } })),
                 b = c.default.create((e) => ({ rootPadding: { padding: e.spaces.space32 }, body: { marginTop: e.spaces.space8 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space28 }, secondaryAction: { marginTop: e.spaces.space16 } })),
-                f = c.default.create((e) => ({ rootPadding: { padding: e.spaces.space16 }, body: { marginTop: e.spaces.space2 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space4 }, secondaryAction: { marginTop: e.spaces.space2 } }));
+                v = c.default.create((e) => ({ rootPadding: { padding: e.spaces.space16 }, body: { marginTop: e.spaces.space2 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space4 }, secondaryAction: { marginTop: e.spaces.space2 } }));
         },
         499162: (e, t, n) => {
             n.d(t, { Z: () => m });
@@ -140,14 +140,14 @@
                 l = n(352924),
                 c = n(392237);
             const d = c.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.elevatedBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium, borderRadius: e.borderRadii.infinite, cursor: "pointer" }, padding4: { padding: e.spaces.space4 }, iconHiddenStyle: { visibility: "hidden" }, checked: { borderColor: e.colors.primary } })),
-                u = { ...c.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                h = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": n, checked: i, disabled: s, icon: c, name: h, onChange: m, testID: p }) => {
+                h = { ...c.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
+                u = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": n, checked: i, disabled: s, icon: c, name: u, onChange: m, testID: p }) => {
                     const g = (0, l.b)(),
                         y = (0, l.b)();
-                    return o.createElement(a.Z, { disabled: s, style: [d.root, i && d.backgroundDefault], testID: p }, o.createElement(a.Z, { style: [d.padding4, !i && d.iconHiddenStyle] }, c), o.createElement("input", { "aria-describedby": y, "aria-label": e, "aria-labelledby": g, "aria-posinset": t, "aria-setsize": n, checked: i, disabled: s, name: h, onChange: r.Z, onClick: m, style: u, type: "radio" }));
+                    return o.createElement(a.Z, { disabled: s, style: [d.root, i && d.backgroundDefault], testID: p }, o.createElement(a.Z, { style: [d.padding4, !i && d.iconHiddenStyle] }, c), o.createElement("input", { "aria-describedby": y, "aria-label": e, "aria-labelledby": g, "aria-posinset": t, "aria-setsize": n, checked: i, disabled: s, name: u, onChange: r.Z, onClick: m, style: h, type: "radio" }));
                 };
             function m(e) {
-                const t = o.useCallback(({ value: e, ...t }) => o.createElement(h, (0, i.Z)({}, t, { key: e })), []);
+                const t = o.useCallback(({ value: e, ...t }) => o.createElement(u, (0, i.Z)({}, t, { key: e })), []);
                 return o.createElement(a.Z, { style: p.root }, o.createElement(s.Z, (0, i.Z)({}, e, { horizontal: !0, renderSelector: t, switchStyle: !0 })));
             }
             const p = c.default.create((e) => ({ root: { width: "fit-content" } }));
@@ -162,15 +162,15 @@
                 l = n(933895),
                 c = n(392237);
             const d = n(401339).Z.isTouchSupported(),
-                u = { zoom: 1, lastX: 0, lastY: 0, zoomCenter: { x: 0, y: 0 } },
-                h = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
+                h = { zoom: 1, lastX: 0, lastY: 0, zoomCenter: { x: 0, y: 0 } },
+                u = { height: 0, width: 0, left: 0, right: 0, top: 0, bottom: 0 },
                 m = (e, t, n) => Math.min(t, Math.max(e, n)),
                 p = (e, t) => Math.sqrt(Math.pow(e.clientY - t.clientY, 2) + Math.pow(e.clientX - t.clientX, 2)),
                 g = (e, t) => ({ x: (e.clientX + t.clientX) / 2, y: (e.clientY + t.clientY) / 2 });
             class y extends i.Component {
                 constructor(e) {
                     super(e),
-                        (this._itemDimensions = h),
+                        (this._itemDimensions = u),
                         (this._ref = i.createRef()),
                         (this._setTouchableNode = (e) => {
                             this._touchableNode !== e && ((this._touchableNode = e), this._removeTouchListener && this._removeTouchListener(), this._touchableNode && (this._removeTouchListener = (0, l.O)(this._touchableNode, this._handleTouchMove, !1)));
@@ -191,10 +191,10 @@
                                 { zoom: a } = this.state;
                             a !== o && 1 === o ? this.resetZoom() : this.setState({ lastX: 0, lastY: 0, zoom: o }), 0 === e.touches.length ? ((this._isTouching = !1), this._lastTouchTime && this._lastTouchTime + 300 > e.timeStamp ? (this._clickTimer && clearTimeout(this._clickTimer), this._handleDoubleTap(e)) : a <= 1 && !this._moved && (this._clickTimer = setTimeout(i, 300)), (this._lastTouchTime = e.timeStamp)) : e.preventDefault();
                         }),
-                        (this.state = { ...u });
+                        (this.state = { ...h });
                 }
                 static getDerivedStateFromProps(e, t) {
-                    return d && e.resetZoom ? (e.onZoomed(!1), { ...u }) : t;
+                    return d && e.resetZoom ? (e.onZoomed(!1), { ...h }) : t;
                 }
                 render() {
                     if (!d) return this.props.children;
@@ -214,7 +214,7 @@
                     this._removeTouchListener && this._removeTouchListener();
                 }
                 resetZoom() {
-                    this.props.onZoomed(!1), this.setState({ zoom: u.zoom });
+                    this.props.onZoomed(!1), this.setState({ zoom: h.zoom });
                 }
                 _handlePanMove(e) {
                     if (this.state.zoom <= 1 || !this._zoomedDimensions || !this._windowDimensions) return;
@@ -226,10 +226,10 @@
                             zoomCenter: { x: a, y: r },
                         } = this.state,
                         { height: l, width: c } = this._windowDimensions,
-                        { height: d, width: u } = this._zoomedDimensions;
-                    let h = 0,
+                        { height: d, width: h } = this._zoomedDimensions;
+                    let u = 0,
                         m = 0;
-                    u - c > 0 && (h = t - i), d - l > 0 && (m = n - o), this.setState({ lastX: t, lastY: n, zoomCenter: { x: (0, s.Z)(a - h, 0, c), y: (0, s.Z)(r - m, 0, l) } });
+                    h - c > 0 && (u = t - i), d - l > 0 && (m = n - o), this.setState({ lastX: t, lastY: n, zoomCenter: { x: (0, s.Z)(a - u, 0, c), y: (0, s.Z)(r - m, 0, l) } });
                 }
                 _handlePinchStart(e) {
                     const { touches: t } = e;
@@ -243,16 +243,16 @@
                         { lastX: n, lastY: i, zoom: o, zoomCenter: a } = this.state,
                         { maxZoom: r, maxZoomBounce: l, minZoom: c, minZoomBounce: d } = this.props;
                     if (0 === a.x && 0 === a.y) return void (2 === e.touches.length && this._handlePinchStart(e));
-                    const u = p(t[0], t[1]),
-                        h = this._lastDistance ? u / this._lastDistance : 1,
-                        y = m(c - d, r + l, o * h),
+                    const h = p(t[0], t[1]),
+                        u = this._lastDistance ? h / this._lastDistance : 1,
+                        y = m(c - d, r + l, o * u),
                         _ = g(t[0], t[1]),
                         b = (() => {
                             if (!this._windowDimensions || !n) return a;
                             const { height: e, width: t } = this._windowDimensions;
                             return { x: (0, s.Z)(a.x - (_.x - n), 0, t), y: (0, s.Z)(a.y - (_.y - i), 0, e) };
                         })();
-                    (this._lastDistance = u), this.setState({ lastX: _.x, lastY: _.y, zoom: y, zoomCenter: b });
+                    (this._lastDistance = h), this.setState({ lastX: _.x, lastY: _.y, zoom: y, zoomCenter: b });
                 }
                 _handleTapStart(e) {
                     const { touches: t } = e;
@@ -260,7 +260,7 @@
                 }
                 _handleDoubleTap(e) {
                     const { maxZoom: t, onZoomed: n } = this.props;
-                    1 !== this.state.zoom ? this.resetZoom() : (this._updateWindowDimensions(), this.setState({ zoom: t, zoomCenter: this._tapCenter || u.zoomCenter }), n(!0));
+                    1 !== this.state.zoom ? this.resetZoom() : (this._updateWindowDimensions(), this.setState({ zoom: t, zoomCenter: this._tapCenter || h.zoomCenter }), n(!0));
                 }
                 _getZoomCenter(e, t) {
                     this._ref.current && (this._itemDimensions = this._ref.current.getBoundingClientRect());
@@ -279,7 +279,7 @@
             n.d(t, { Z: () => i });
             const i = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        355586: (e, t, n) => {
+        293615: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var i = n(202784),
                 o = n(890601),
@@ -287,12 +287,12 @@
                 s = n(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { clipRule: "evenodd", d: "M2.062 9h2.876C4.77 7.643 4.261 6.393 3.5 5.335 2.74 6.393 2.231 7.644 2.062 9zm2.823-5.151C6.017 5.298 6.759 7.069 6.95 9H9V2.062c-1.554.194-2.97.833-4.115 1.787zM11 2.062V9h2.05c.191-1.931.933-3.702 2.065-5.151-1.145-.954-2.56-1.593-4.115-1.787zm5.5 3.273C15.74 6.393 15.23 7.643 15.062 9h2.876c-.169-1.356-.678-2.607-1.438-3.665zM17.938 11h-2.876c.169 1.357.677 2.607 1.438 3.665.76-1.058 1.269-2.309 1.438-3.665zm-2.823 5.151c-1.132-1.449-1.874-3.22-2.066-5.151H11v6.938c1.554-.194 2.97-.833 4.115-1.787zM9 17.938V11H6.95c-.191 1.931-.933 3.702-2.065 5.151 1.145.954 2.56 1.593 4.115 1.787zm-5.5-3.273c.76-1.058 1.27-2.308 1.438-3.665H2.062c.169 1.356.678 2.607 1.438 3.665zM0 10C0 4.477 4.477 0 10 0s10 4.477 10 10-4.477 10-10 10S0 15.523 0 10z", fillRule: "evenodd" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const l = r;
         },
-        913313: (e, t, n) => {
+        913315: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var i = n(202784),
                 o = n(890601),
@@ -300,7 +300,20 @@
                 s = n(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M19.77 6.34l-.7.71c-.59.59-1.54.59-2.12 0-.59-.59-.59-1.54 0-2.12l.7-.71L13.76.33.33 13.77l3.89 3.89.7-.71c.59-.59 1.54-.59 2.13 0 .58.59.58 1.54 0 2.12l-.71.71 3.89 3.89 13.43-13.44-3.89-3.89zM6.34 9.88l1.42-1.41 1.76 1.76-1.41 1.42-1.77-1.77zm3 3l1.42-1.41 1.77 1.77-1.42 1.41-1.77-1.77zm4.78 4.78l-1.77-1.77 1.42-1.41 1.76 1.77-1.41 1.41z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M5 13h3.414l3.783-3.783 4.079 2.039 4.505-5.631-1.562-1.25-3.495 4.369-3.921-1.961L7.586 11H5V3H3v18h18v-2H5z" })) }, { writingDirection: t });
+            };
+            r.metadata = { width: 24, height: 24 };
+            const l = r;
+        },
+        416955: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
+            var i = n(202784),
+                o = n(890601),
+                a = n(783427),
+                s = n(347101);
+            const r = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M9 7.75a3 3 0 015.179-2.062l1.452-1.376A5 5 0 007 7.75V8h-.499a2.5 2.5 0 00-2.5 2.5v9a2.5 2.5 0 002.5 2.5h11a2.5 2.5 0 002.5-2.5v-9a2.5 2.5 0 00-2.5-2.5H9zM10.002 14a2 2 0 113 1.732V18h-2v-2.268a2 2 0 01-1-1.732z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const l = r;
@@ -314,4 +327,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6107ac1a.e7485bfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6107ac1a.7776a8ea.js.map

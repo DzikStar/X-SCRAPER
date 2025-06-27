@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 o("c60b9e5c", "Changes will take effect for newly loaded content."),
-                o("c6ad999b", "languages settings"),
+                o("f9317b98", "language settings"),
                 o("hba0547a", "Unable to update settings. Please try again later."),
                 o("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
@@ -4358,7 +4358,6 @@
                 o("a15d62db", function (e) {
                     return "Se ejecutó Pensar durante " + e.seconds + "s";
                 }),
-                o("f26fc748", "Script"),
                 o("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 o("ff95a9cc", "ID del video"),
                 o("a97e358e", "Enlace del video"),
                 o("e10e8b46", "Mostrando solo los videos de los últimos 100 días."),
-                o("ba37f6da", "Información general del video");
-            o("f19846b2", "Miniatura del video"),
-                o("ccd6f4a8", "Título del video"),
+                o("ba37f6da", "Información general del video"),
+                o("f19846b2", "Miniatura del video");
+            o("ccd6f4a8", "Título del video"),
                 o("c8410542", "El número de veces que se vio tu video."),
                 o("a532072a", "Espectadores"),
                 o("d9508ab0", "visualizaciones"),
@@ -5882,9 +5881,9 @@
                 o("af781666", "¿Qué piensa la gente?"),
                 o("a1f414ee", "Compartir opinión "),
                 o("ed88e742", "Copiar enlace a Tema"),
-                o("h92fe1be", "Lamentablemente, Notas de la comunidad no está disponible para ti en este momento.");
-            o("f0dc1434", "Actualmente, Notas de la comunidad solo está disponible en Estados Unidos"),
-                o("f8fc0b48", "Crea una carpeta"),
+                o("h92fe1be", "Lamentablemente, Notas de la comunidad no está disponible para ti en este momento."),
+                o("f0dc1434", "Actualmente, Notas de la comunidad solo está disponible en Estados Unidos");
+            o("f8fc0b48", "Crea una carpeta"),
                 o("c14bcdde", "Buscar elementos guardados"),
                 o("e9c65c4a", "Búsqueda de elementos guardados"),
                 o("b92a21d9", function (e) {
@@ -6888,9 +6887,9 @@
                 o("b8cbb51a", "Resumen del empleo"),
                 o("bda6881e", "Este empleo se importó desde tu sistema de gestión del proceso de selección (ATS, por sus siglas en inglés). Solo se pueden modificar campos específicos."),
                 o("b075c68a", "Editar empleo"),
-                o("d4b6a6e0", "Spotlight de perfil");
-            o("j2dd3686", "Empleos destacados sobre mis posts."),
-                o("af1cfd46", "Integración con ATS"),
+                o("d4b6a6e0", "Spotlight de perfil"),
+                o("j2dd3686", "Empleos destacados sobre mis posts.");
+            o("af1cfd46", "Integración con ATS"),
                 o("d6fa2944", "La eliminación de tu integración no eliminará tus empleos importados."),
                 o("h99f11fa", "Eliminar integración"),
                 o("eef1ae76", "Conectado actualmente"),
@@ -7870,7 +7869,8 @@
                 o("b74ff5fc", "Si cancelas, tu Suscripción caducará automáticamente al final del ciclo de facturación."),
                 o("ee9efbc8", "Continuar para cancelar"),
                 o("c5d9c77a", "Parece que hubo un pequeño problema. Pero no te preocupes, no es tu culpa. Cierra esta ventana e inténtalo de nuevo."),
-                o("jda53c24", "Puedes cancelar tu Suscripción a través de la App Store de Apple.");
+                o("jda53c24", "Puedes cancelar tu Suscripción a través de la App Store de Apple."),
+                o("g0a7a53e", "Puedes cancelar tu Suscripción a través de Google Play Store.");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7909,10 +7909,9 @@
                     i(e, a)
                 );
             }
-            o("g0a7a53e", "Puedes cancelar tu Suscripción a través de Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return e.displayName + ", te damos la bienvenida otra vez";
-                }),
+            o("i5f14be7", function (e) {
+                return e.displayName + ", te damos la bienvenida otra vez";
+            }),
                 o("a76d58ba", "Estadísticas de anuncios"),
                 o("eccd0e1a", "Estadísticas de la organización"),
                 o("deea1708", "¿Quieres ver las estadísticas de todas tus cuentas de X?"),
@@ -8910,9 +8909,9 @@
                     return "Visitar " + e.advertiserName;
                 }),
                 o("c67e71aa", "Ver ahora"),
-                o("a6ada13e", "Comprar");
-            o("j0f12222", "Ver más"),
-                o("f569f7c8", "Ir al sitio web"),
+                o("a6ada13e", "Comprar"),
+                o("j0f12222", "Ver más");
+            o("f569f7c8", "Ir al sitio web"),
                 o("j0c6772a", "Visitar sitio web"),
                 o("f73003aa", "El video se reproducirá después del anuncio"),
                 o("b3112b8a", "Omitir"),
@@ -10166,7 +10165,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13368,4 +13367,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.19aeb12a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.2378115a.js.map

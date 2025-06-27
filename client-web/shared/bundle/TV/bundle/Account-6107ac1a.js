@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TV~bundle.Account-6107ac1a", "icons/IconChevronLeft-js"],
+    ["shared~bundle.TV~bundle.Account-6107ac1a"],
     {
         396342: function (e, t, o) {
             var n, s, r, i, a, u, c, l, d, f, h, p;
@@ -798,8 +798,8 @@
                                         j = U[0],
                                         H = U[1],
                                         I = (0, s.useState)(!1),
-                                        Z = I[0],
-                                        Y = I[1],
+                                        Y = I[0],
+                                        Z = I[1],
                                         W = (0, u.useFocusContext)(),
                                         G = (0, s.useMemo)(
                                             function () {
@@ -831,7 +831,7 @@
                                                         return void 0 === e && (e = !1), H(e);
                                                     },
                                                     onUpdateHasFocusedChild: function (e) {
-                                                        return void 0 === e && (e = !1), Y(e);
+                                                        return void 0 === e && (e = !1), Z(e);
                                                     },
                                                     saveLastFocusedChild: l,
                                                     trackChildren: f,
@@ -853,7 +853,7 @@
                                             },
                                             [G, m, n, b, C, _, O, B, k, S],
                                         ),
-                                        { ref: A, focusSelf: $, focused: j, hasFocusedChild: Z, focusKey: G }
+                                        { ref: A, focusSelf: $, focused: j, hasFocusedChild: Y, focusKey: G }
                                     );
                                 };
                             },
@@ -996,22 +996,6 @@
                 }
             }
             h.defaultProps = { renderFailure: i.Z, retryable: !0 };
-        },
-        97301: (e, t, o) => {
-            "use strict";
-            o.r(t), o.d(t, { default: () => c });
-            var n = o(202784),
-                s = o(890601),
-                r = o(783427),
-                i = o(717683),
-                a = o(347101);
-            const u = (e = {}) => {
-                const t = n.useContext(i.Z),
-                    { direction: o } = (0, r.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15.043 3.54l1.414 1.42L9.414 12l7.043 7.04-1.414 1.42L6.586 12l8.457-8.46z" })) }, { writingDirection: o });
-            };
-            u.metadata = { width: 24, height: 24 };
-            const c = u;
         },
         614425: (e, t, o) => {
             "use strict";
@@ -1608,4 +1592,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.8f91179a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.e47463fa.js.map

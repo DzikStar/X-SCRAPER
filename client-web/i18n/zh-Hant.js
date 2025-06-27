@@ -1370,7 +1370,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("c6ad999b", "languages settings"),
+                n("f9317b98", "language settings"),
                 n("hba0547a", "Unable to update settings. Please try again later."),
                 n("d4c339b9", function (e) {
                     return "來自 " + e.fullName + " (@" + e.screenName + ") 的貼文";
@@ -4358,7 +4358,6 @@
                 n("a15d62db", function (e) {
                     return "思考了 " + e.seconds + " 秒";
                 }),
-                n("f26fc748", "Script"),
                 n("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4930,9 +4929,9 @@
                 n("ff95a9cc", "影片 ID"),
                 n("a97e358e", "影片連結"),
                 n("e10e8b46", "僅顯示過去 100 天內的影片。"),
-                n("ba37f6da", "影片總覽");
-            n("f19846b2", "影片縮圖"),
-                n("ccd6f4a8", "影片標題"),
+                n("ba37f6da", "影片總覽"),
+                n("f19846b2", "影片縮圖");
+            n("ccd6f4a8", "影片標題"),
                 n("c8410542", "你影片獲得觀看的次數。"),
                 n("a532072a", "觀眾"),
                 n("d9508ab0", "次觀看"),
@@ -5882,9 +5881,9 @@
                 n("af781666", "人們有什麼看法？"),
                 n("a1f414ee", "分享想法"),
                 n("ed88e742", "複製主題的連結"),
-                n("h92fe1be", "很遺憾，你目前無法使用社群備註。");
-            n("f0dc1434", "社群備註目前僅可在美國使用。"),
-                n("f8fc0b48", "建立資料夾"),
+                n("h92fe1be", "很遺憾，你目前無法使用社群備註。"),
+                n("f0dc1434", "社群備註目前僅可在美國使用。");
+            n("f8fc0b48", "建立資料夾"),
                 n("c14bcdde", "搜尋書籤"),
                 n("e9c65c4a", "書籤搜尋"),
                 n("b92a21d9", function (e) {
@@ -6888,9 +6887,9 @@
                 n("b8cbb51a", "工作摘要"),
                 n("bda6881e", "此工作已從你的應徵者追蹤系統 (ATS) 匯入。請注意，只能修改特定欄位。"),
                 n("b075c68a", "編輯工作"),
-                n("d4b6a6e0", "用戶檔案焦點");
-            n("j2dd3686", "在我的貼文上方重點展示精選工作。"),
-                n("af1cfd46", "ATS 整合"),
+                n("d4b6a6e0", "用戶檔案焦點"),
+                n("j2dd3686", "在我的貼文上方重點展示精選工作。");
+            n("af1cfd46", "ATS 整合"),
                 n("d6fa2944", "刪除整合不會刪除你已匯入的工作。"),
                 n("h99f11fa", "刪除整合"),
                 n("eef1ae76", "目前已連線"),
@@ -7870,7 +7869,8 @@
                 n("b74ff5fc", "如果你取消，你的訂閱將在計費周期結束時自動到期。"),
                 n("ee9efbc8", "繼續取消"),
                 n("c5d9c77a", "似乎發生一個小問題。但別擔心，這不是你的錯。請關閉此視窗，然後再試一次。"),
-                n("jda53c24", "你可以透過 Apple App Store 取消訂閱。");
+                n("jda53c24", "你可以透過 Apple App Store 取消訂閱。"),
+                n("g0a7a53e", "你可以透過 Google Play 商店取消訂閱。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7909,10 +7909,9 @@
                     r(e, c)
                 );
             }
-            n("g0a7a53e", "你可以透過 Google Play 商店取消訂閱。"),
-                n("i5f14be7", function (e) {
-                    return e.displayName + "，歡迎回來";
-                }),
+            n("i5f14be7", function (e) {
+                return e.displayName + "，歡迎回來";
+            }),
                 n("a76d58ba", "廣告分析"),
                 n("eccd0e1a", "組織分析"),
                 n("deea1708", "想要查看你的所有 X 帳戶的分析嗎？"),
@@ -8910,9 +8909,9 @@
                     return "造訪 " + e.advertiserName;
                 }),
                 n("c67e71aa", "立即觀看"),
-                n("a6ada13e", "立即購買");
-            n("j0f12222", "查看更多"),
-                n("f569f7c8", "前往網站"),
+                n("a6ada13e", "立即購買"),
+                n("j0f12222", "查看更多");
+            n("f569f7c8", "前往網站"),
                 n("j0c6772a", "造訪網站"),
                 n("f73003aa", "影片將在廣告之後播放"),
                 n("b3112b8a", "略過"),
@@ -10163,7 +10162,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13365,4 +13364,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.14438f9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.3025312a.js.map

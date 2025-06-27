@@ -72,7 +72,7 @@
                 i = n(457311),
                 l = n(108362),
                 p = n(392237),
-                s = n(776342),
+                s = n(668260),
                 u = n(111677),
                 m = n.n(u),
                 d = n(774654),
@@ -197,4 +197,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacebarScreen.4bde041a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacebarScreen.0866854a.js.map

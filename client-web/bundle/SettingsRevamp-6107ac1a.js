@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsRevamp-6107ac1a", "icons/IconFilter-js", "icons/IconHeartBrokenStroke-js"],
+    ["bundle.SettingsRevamp-6107ac1a", "icons/IconDeviceNotification-js", "icons/IconFilter-js"],
     {
         728055: (e, a, t) => {
             t.d(a, { Z: () => d });
@@ -131,8 +131,8 @@
                     const { "aria-posinset": e, "aria-setsize": a, checked: t, disabled: u, helpText: p, label: g, name: h, testID: y } = this.props,
                         f = d.Z.generate({ backgroundColor: m.default.theme.colors.transparent, color: m.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
                         k = d.Z.generate({ backgroundColor: m.default.theme.colors.transparent, color: m.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
-                        _ = t ? f : k;
-                    return r.createElement(s.Z, { disabled: u }, (s) => r.createElement(l.Z, { role: "label", style: [b.root, !u && b.interactive], testID: y }, r.createElement(l.Z, { style: b.topContainer }, r.createElement(n.ZP, { id: this.labelId }, g), r.createElement(l.Z, { style: b.radioContainer }, r.createElement(c.Z, { interactiveStyles: _, interactivityState: s, style: b.radioBackground }, r.createElement(l.Z, { style: [b.circle, t && b.circleActive, u && b.circleDisabled, t && u && b.circleCheckedAndDisabled] }, t ? r.createElement(o.default, { style: b.checkMark }) : null)), (0, i.Z)("input", { "aria-posinset": e, "aria-setsize": a, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: t, disabled: u, name: h, onChange: this._handleChange, ref: this._setRef, style: [b.nativeControl], type: "radio" }))), p ? r.createElement(n.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: b.helpText }, p) : null));
+                        v = t ? f : k;
+                    return r.createElement(s.Z, { disabled: u }, (s) => r.createElement(l.Z, { role: "label", style: [b.root, !u && b.interactive], testID: y }, r.createElement(l.Z, { style: b.topContainer }, r.createElement(n.ZP, { id: this.labelId }, g), r.createElement(l.Z, { style: b.radioContainer }, r.createElement(c.Z, { interactiveStyles: v, interactivityState: s, style: b.radioBackground }, r.createElement(l.Z, { style: [b.circle, t && b.circleActive, u && b.circleDisabled, t && u && b.circleCheckedAndDisabled] }, t ? r.createElement(o.default, { style: b.checkMark }) : null)), (0, i.Z)("input", { "aria-posinset": e, "aria-setsize": a, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: t, disabled: u, name: h, onChange: this._handleChange, ref: this._setRef, style: [b.nativeControl], type: "radio" }))), p ? r.createElement(n.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: b.helpText }, p) : null));
                 }
                 focus() {
                     this._ref && this._ref.focus();
@@ -215,6 +215,19 @@
             t.d(a, { Z: () => r });
             const r = t(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        744649: (e, a, t) => {
+            t.r(a), t.d(a, { default: () => s });
+            var r = t(202784),
+                l = t(890601),
+                o = t(783427),
+                n = t(347101);
+            const i = (e = {}) => {
+                const { direction: a } = (0, o.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M7 17h6v2H7v-2zm7.5-15C15.88 2 17 3.12 17 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-9C4.12 22 3 20.88 3 19.5v-15C3 3.12 4.12 2 5.5 2h9zM5 19.5c0 .28.22.5.5.5h9c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-9c-.28 0-.5.22-.5.5v15zm15.74-3.49l1.64 1.15C23.4 15.7 24 13.92 24 12s-.6-3.7-1.62-5.16l-1.64 1.15C21.53 9.13 22 10.51 22 12s-.47 2.87-1.26 4.01zm-.82-7.45l-1.64 1.15c.45.65.72 1.43.72 2.29 0 .85-.27 1.64-.72 2.29l1.64 1.15C20.6 14.47 21 13.28 21 12s-.4-2.47-1.08-3.44z" })) }, { writingDirection: a });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const s = i;
+        },
         517747: (e, a, t) => {
             t.r(a), t.d(a, { default: () => s });
             var r = t(202784),
@@ -224,19 +237,6 @@
             const i = (e = {}) => {
                 const { direction: a } = (0, o.Z)();
                 return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        247520: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => s });
-            var r = t(202784),
-                l = t(890601),
-                o = t(783427),
-                n = t(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, o.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21.398 6.52c-.887-1.79-2.647-2.91-4.601-3.01-1.65-.09-3.367.56-4.796 2.01-1.43-1.45-3.147-2.1-4.798-2.01-1.954.1-3.714 1.22-4.601 3.01-.896 1.81-.846 4.17.514 6.67 1.353 2.48 4.003 5.12 8.382 7.67l.504.3.503-.3c4.378-2.55 7.028-5.19 8.379-7.67 1.36-2.5 1.41-4.86.514-6.67zm-2.27 5.71c-1.074 1.97-3.256 4.27-7.126 6.61-3.872-2.34-6.055-4.64-7.129-6.61-1.112-2.04-1.031-3.7-.479-4.82.561-1.13 1.667-1.84 2.91-1.91 1.077-.05 2.338.38 3.452 1.61L8.588 10.3l4.009 2.5-1.428 2.15 1.665 1.1 2.569-3.85-3.991-2.5 1.405-2.06c1.21-1.63 2.662-2.2 3.88-2.14 1.242.07 2.347.78 2.908 1.91.553 1.12.634 2.78-.477 4.82z" })) }, { writingDirection: a });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
@@ -260,4 +260,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp-6107ac1a.2b354f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsRevamp-6107ac1a.d40e4c5a.js.map

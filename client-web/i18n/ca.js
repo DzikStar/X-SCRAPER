@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("c6ad999b", "languages settings"),
+                t("f9317b98", "language settings"),
                 t("hba0547a", "Unable to update settings. Please try again later."),
                 t("d4c339b9", function (e) {
                     return "Publicació de " + e.fullName + " (@" + e.screenName + ")";
@@ -4359,7 +4359,6 @@
                 t("a15d62db", function (e) {
                     return "Raonat durant " + e.seconds + " s";
                 }),
-                t("f26fc748", "Script"),
                 t("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 t("ff95a9cc", "Identificador del vídeo"),
                 t("a97e358e", "Enllaç del vídeo"),
                 t("e10e8b46", "Només es mostren els vídeos dels últims 100 dies."),
-                t("ba37f6da", "Informació general sobre el vídeo");
-            t("f19846b2", "Miniatura del vídeo"),
-                t("ccd6f4a8", "Títol del vídeo"),
+                t("ba37f6da", "Informació general sobre el vídeo"),
+                t("f19846b2", "Miniatura del vídeo");
+            t("ccd6f4a8", "Títol del vídeo"),
                 t("c8410542", "Nombre de vegades que s'ha vist el vídeo."),
                 t("a532072a", "Espectadors"),
                 t("d9508ab0", "visualitzacions"),
@@ -5883,9 +5882,9 @@
                 t("af781666", "Què pensa la gent?"),
                 t("a1f414ee", "Comparteix el que penses"),
                 t("ed88e742", "Copia l'enllaç al tema"),
-                t("h92fe1be", "Malauradament, les Anotacions de la Comunitat no estan disponibles per a tu ara mateix.");
-            t("f0dc1434", "Actualment, les Notes de la Comunitat només estan disponibles als Estats Units"),
-                t("f8fc0b48", "Crea una carpeta"),
+                t("h92fe1be", "Malauradament, les Anotacions de la Comunitat no estan disponibles per a tu ara mateix."),
+                t("f0dc1434", "Actualment, les Notes de la Comunitat només estan disponibles als Estats Units");
+            t("f8fc0b48", "Crea una carpeta"),
                 t("c14bcdde", "Cerca preferits"),
                 t("e9c65c4a", "Carca de preferits"),
                 t("b92a21d9", function (e) {
@@ -6889,9 +6888,9 @@
                 t("b8cbb51a", "Resum de la feina"),
                 t("bda6881e", "Aquesta feina s'ha importat del teu sistema de seguiment d'aspirants (ATS). Tingues en compte que només es poden modificar camps concrets."),
                 t("b075c68a", "Edita la feina"),
-                t("d4b6a6e0", "Spotlight de perfil");
-            t("j2dd3686", "Mostra les feines destacades a sobre de les meves publicacions."),
-                t("af1cfd46", "Integració amb ATS"),
+                t("d4b6a6e0", "Spotlight de perfil"),
+                t("j2dd3686", "Mostra les feines destacades a sobre de les meves publicacions.");
+            t("af1cfd46", "Integració amb ATS"),
                 t("d6fa2944", "En suprimir la integració no se suprimiran les feines importades."),
                 t("h99f11fa", "Suprimeix la integració"),
                 t("eef1ae76", "Connectat actualment"),
@@ -7871,7 +7870,8 @@
                 t("b74ff5fc", "Si cancel·les la Subscripció, aquesta caducarà de manera automàtica en finalitzar el cicle de facturació."),
                 t("ee9efbc8", "Segueix cancel·lant"),
                 t("c5d9c77a", "Sembla que s'ha produït un petit problema, però no et preocupis, no és culpa teva. Tanca la finestra i torna-ho a provar."),
-                t("jda53c24", "Pots cancel·lar la Subscripció des de l'Apple App Store.");
+                t("jda53c24", "Pots cancel·lar la Subscripció des de l'Apple App Store."),
+                t("g0a7a53e", "Pots cancel·lar la Subscripció des de la Google Play Store.");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7910,10 +7910,9 @@
                     n(e, a)
                 );
             }
-            t("g0a7a53e", "Pots cancel·lar la Subscripció des de la Google Play Store."),
-                t("i5f14be7", function (e) {
-                    return "Et donem la benvinguda, " + e.displayName;
-                }),
+            t("i5f14be7", function (e) {
+                return "Et donem la benvinguda, " + e.displayName;
+            }),
                 t("a76d58ba", "Analítiques d'anuncis"),
                 t("eccd0e1a", "Analítiques de l'organització"),
                 t("deea1708", "Vols veure les analítiques de tots els teus comptes de X?"),
@@ -8911,9 +8910,9 @@
                     return "Visita " + e.advertiserName;
                 }),
                 t("c67e71aa", "Mira-ho ara"),
-                t("a6ada13e", "Compra ara");
-            t("j0f12222", "Mostra'n més"),
-                t("f569f7c8", "Ves al lloc web"),
+                t("a6ada13e", "Compra ara"),
+                t("j0f12222", "Mostra'n més");
+            t("f569f7c8", "Ves al lloc web"),
                 t("j0c6772a", "Visita el lloc web"),
                 t("f73003aa", "El vídeo es reproduirà després de l'anunci"),
                 t("b3112b8a", "Omet"),
@@ -10154,7 +10153,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13357,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.514eab8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.5e7831ea.js.map

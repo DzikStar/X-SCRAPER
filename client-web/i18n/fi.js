@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + a.language;
                 }),
                 e("c60b9e5c", "Changes will take effect for newly loaded content."),
-                e("c6ad999b", "languages settings"),
+                e("f9317b98", "language settings"),
                 e("hba0547a", "Unable to update settings. Please try again later."),
                 e("d4c339b9", function (a) {
                     return "Julkaisu käyttäjältä " + a.fullName + " (@" + a.screenName + ")";
@@ -4359,7 +4359,6 @@
                 e("a15d62db", function (a) {
                     return "Mietti " + a.seconds + " s";
                 }),
-                e("f26fc748", "Script"),
                 e("h26fa43f", function (a) {
                     return a.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 e("ff95a9cc", "Videon tunnus"),
                 e("a97e358e", "Videon linkki"),
                 e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
-                e("ba37f6da", "Yhteenveto videoista");
-            e("f19846b2", "Videon esikatselukuva"),
-                e("ccd6f4a8", "Videon nimi"),
+                e("ba37f6da", "Yhteenveto videoista"),
+                e("f19846b2", "Videon esikatselukuva");
+            e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
                 e("a532072a", "Katsojat"),
                 e("d9508ab0", "näyttöä"),
@@ -5883,9 +5882,9 @@
                 e("af781666", "Mitä ihmiset miettivät?"),
                 e("a1f414ee", "Kerro mielipiteesi"),
                 e("ed88e742", "Kopioi linkki aiheeseen"),
-                e("h92fe1be", "Valitettavasti Yhteisöhuomautukset ei vielä ole käytettävissäsi.");
-            e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa."),
-                e("f8fc0b48", "Luo kansio"),
+                e("h92fe1be", "Valitettavasti Yhteisöhuomautukset ei vielä ole käytettävissäsi."),
+                e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa.");
+            e("f8fc0b48", "Luo kansio"),
                 e("c14bcdde", "Hae kirjanmerkeistä"),
                 e("e9c65c4a", "Haku kirjanmerkeistä"),
                 e("b92a21d9", function (a) {
@@ -6889,9 +6888,9 @@
                 e("b8cbb51a", "Tehtävän yhteenveto"),
                 e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata."),
                 e("b075c68a", "Muokkaa työpaikkaa"),
-                e("d4b6a6e0", "Profiilivalokeila");
-            e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella."),
-                e("af1cfd46", "ATS-integraatio"),
+                e("d4b6a6e0", "Profiilivalokeila"),
+                e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella.");
+            e("af1cfd46", "ATS-integraatio"),
                 e("d6fa2944", "Integroinnin poistaminen ei poista jo tuotuja työpaikkoja."),
                 e("h99f11fa", "Poista integraatio"),
                 e("eef1ae76", "Yhdistetty nyt"),
@@ -7871,7 +7870,8 @@
                 e("b74ff5fc", "Jos perut, Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
                 e("ee9efbc8", "Jatka perumaan"),
                 e("c5d9c77a", "Jossain oli jotain häikkää. Älä huoli, vika ei ole sinun. Sulje tämä ikkuna ja yritä uudelleen."),
-                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta.");
+                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta."),
+                e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta.");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7910,10 +7910,9 @@
                     u(a, t)
                 );
             }
-            e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta."),
-                e("i5f14be7", function (a) {
-                    return "Tervetuloa takaisin, " + a.displayName;
-                }),
+            e("i5f14be7", function (a) {
+                return "Tervetuloa takaisin, " + a.displayName;
+            }),
                 e("a76d58ba", "Mainostilastot"),
                 e("eccd0e1a", "Organisaation analytiikka"),
                 e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
@@ -8911,9 +8910,9 @@
                     return "Käy paikassa " + a.advertiserName;
                 }),
                 e("c67e71aa", "Katso nyt"),
-                e("a6ada13e", "Osta nyt");
-            e("j0f12222", "Näe lisää"),
-                e("f569f7c8", "Siirry sivustolle"),
+                e("a6ada13e", "Osta nyt"),
+                e("j0f12222", "Näe lisää");
+            e("f569f7c8", "Siirry sivustolle"),
                 e("j0c6772a", "Käy sivustolla"),
                 e("f73003aa", "Video näytetään mainoksen jälkeen"),
                 e("b3112b8a", "Ohita"),
@@ -10167,7 +10166,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13370,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.9eeabc5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.e2aaf87a.js.map

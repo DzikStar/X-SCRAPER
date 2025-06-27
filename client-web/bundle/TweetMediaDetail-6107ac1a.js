@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.TweetMediaDetail-6107ac1a", "loader.AudioContextVoiceMedia", "icons/IconDoubleChevronLeft-js", "icons/IconFilter-js"],
+    ["bundle.TweetMediaDetail-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia", "icons/IconDoubleChevronRight-js", "icons/IconFilter-js"],
     {
         300234: (e, t, o) => {
             o.d(t, { Z: () => U });
@@ -1223,7 +1223,7 @@
             const w = c.default.create((e) => ({ fill: { flex: 1 } })),
                 y = g;
         },
-        836397: (e, t, o) => {
+        610357: (e, t, o) => {
             o.r(t), o.d(t, { default: () => c });
             var n = o(202784),
                 i = o(890601),
@@ -1233,7 +1233,7 @@
             const l = (e = {}) => {
                 const t = n.useContext(r.Z),
                     { direction: o } = (0, s.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.04 2.54l1.42 1.42L5.41 12l8.05 8.04-1.42 1.42L2.59 12l9.45-9.46zm7 0l1.42 1.42L12.41 12l8.05 8.04-1.42 1.42L9.59 12l9.45-9.46z" })) }, { writingDirection: o });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M11.59 12L3.54 3.96l1.42-1.42L14.41 12l-9.45 9.46-1.42-1.42L11.59 12zm7 0l-8.05-8.04 1.42-1.42L21.41 12l-9.45 9.46-1.42-1.42L18.59 12z" })) }, { writingDirection: o });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
@@ -1269,4 +1269,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.0c9856ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaDetail-6107ac1a.56db521a.js.map

@@ -1371,7 +1371,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 s("c60b9e5c", "Changes will take effect for newly loaded content."),
-                s("c6ad999b", "languages settings"),
+                s("f9317b98", "language settings"),
                 s("hba0547a", "Unable to update settings. Please try again later."),
                 s("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
@@ -4359,7 +4359,6 @@
                 s("a15d62db", function (e) {
                     return "Pensamento por " + e.seconds + " s";
                 }),
-                s("f26fc748", "Script"),
                 s("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4931,9 +4930,9 @@
                 s("ff95a9cc", "ID do vídeo"),
                 s("a97e358e", "Link do vídeo"),
                 s("e10e8b46", "Exibindo apenas os vídeos dos últimos 100 dias."),
-                s("ba37f6da", "Visão geral do vídeo");
-            s("f19846b2", "Miniatura do vídeo"),
-                s("ccd6f4a8", "Título do vídeo"),
+                s("ba37f6da", "Visão geral do vídeo"),
+                s("f19846b2", "Miniatura do vídeo");
+            s("ccd6f4a8", "Título do vídeo"),
                 s("c8410542", "O número de vezes que seu vídeo foi visualizado."),
                 s("a532072a", "Espectadores"),
                 s("d9508ab0", "visualizações"),
@@ -5883,9 +5882,9 @@
                 s("af781666", "O que as pessoas acham?"),
                 s("a1f414ee", "Compartilhar pensamentos"),
                 s("ed88e742", "Copiar link para o Tópico"),
-                s("h92fe1be", "Infelizmente, as Notas da Comunidade ainda não estão disponíveis para você.");
-            s("f0dc1434", "No momento, as Notas da Comunidade só estão disponíveis nos EUA."),
-                s("f8fc0b48", "Criar uma pasta"),
+                s("h92fe1be", "Infelizmente, as Notas da Comunidade ainda não estão disponíveis para você."),
+                s("f0dc1434", "No momento, as Notas da Comunidade só estão disponíveis nos EUA.");
+            s("f8fc0b48", "Criar uma pasta"),
                 s("c14bcdde", "Buscar Itens salvos"),
                 s("e9c65c4a", "Busca de itens salvos"),
                 s("b92a21d9", function (e) {
@@ -6889,9 +6888,9 @@
                 s("b8cbb51a", "Resumo da vaga"),
                 s("bda6881e", "Esta vaga foi importada de seu Sistema de Rastreamento de Candidatos (ATS). Observe que somente campos específicos podem ser modificados."),
                 s("b075c68a", "Editar vaga"),
-                s("d4b6a6e0", "Destaque do Perfil");
-            s("j2dd3686", "Mostrar as vagas em destaque acima dos meus posts."),
-                s("af1cfd46", "Integração com ATS"),
+                s("d4b6a6e0", "Destaque do Perfil"),
+                s("j2dd3686", "Mostrar as vagas em destaque acima dos meus posts.");
+            s("af1cfd46", "Integração com ATS"),
                 s("d6fa2944", "Excluir sua integração não excluirá as vagas importadas."),
                 s("h99f11fa", "Excluir integração"),
                 s("eef1ae76", "Atualmente conectado"),
@@ -7871,7 +7870,8 @@
                 s("b74ff5fc", "Se você cancelar, sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
                 s("ee9efbc8", "Continue para fazer o cancelamento"),
                 s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
-                s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store.");
+                s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store."),
+                s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7910,10 +7910,9 @@
                     n(e, a)
                 );
             }
-            s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store."),
-                s("i5f14be7", function (e) {
-                    return "Bem-vindo novamente, " + e.displayName;
-                }),
+            s("i5f14be7", function (e) {
+                return "Bem-vindo novamente, " + e.displayName;
+            }),
                 s("a76d58ba", "Estatísticas de anúncios"),
                 s("eccd0e1a", "Estatísticas da organização"),
                 s("deea1708", "Quer ver estatísticas de todas as suas contas do X?"),
@@ -8911,9 +8910,9 @@
                     return "Visite " + e.advertiserName;
                 }),
                 s("c67e71aa", "Assista agora"),
-                s("a6ada13e", "Comprar agora");
-            s("j0f12222", "Ver mais"),
-                s("f569f7c8", "Vá para o website"),
+                s("a6ada13e", "Comprar agora"),
+                s("j0f12222", "Ver mais");
+            s("f569f7c8", "Vá para o website"),
                 s("j0c6772a", "Visite o website"),
                 s("f73003aa", "O vídeo será reproduzido após o anúncio"),
                 s("b3112b8a", "Ignorar"),
@@ -10154,7 +10153,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13357,4 +13356,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.638f01fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.cee3053a.js.map

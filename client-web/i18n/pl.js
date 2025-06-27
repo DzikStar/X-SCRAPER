@@ -1380,7 +1380,7 @@
                     return "Automatically translate " + e.language;
                 }),
                 i("c60b9e5c", "Changes will take effect for newly loaded content."),
-                i("c6ad999b", "languages settings"),
+                i("f9317b98", "language settings"),
                 i("hba0547a", "Unable to update settings. Please try again later."),
                 i("d4c339b9", function (e) {
                     return "Wpis użytkownika " + e.fullName + " (@" + e.screenName + ")";
@@ -4368,7 +4368,6 @@
                 i("a15d62db", function (e) {
                     return "Myślenie trwało " + e.seconds + " s";
                 }),
-                i("f26fc748", "Script"),
                 i("h26fa43f", function (e) {
                     return e.count + " more";
                 }),
@@ -4940,9 +4939,9 @@
                 i("ff95a9cc", "Identyfikator filmu"),
                 i("a97e358e", "Link do filmu"),
                 i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni."),
-                i("ba37f6da", "Przegląd filmu");
-            i("f19846b2", "Miniatura filmu"),
-                i("ccd6f4a8", "Tytuł filmu"),
+                i("ba37f6da", "Przegląd filmu"),
+                i("f19846b2", "Miniatura filmu");
+            i("ccd6f4a8", "Tytuł filmu"),
                 i("c8410542", "Liczba wyświetleń Twojego filmu."),
                 i("a532072a", "Oglądający"),
                 i("d9508ab0", "wyświetl."),
@@ -5892,9 +5891,9 @@
                 i("af781666", "Co myślą ludzie?"),
                 i("a1f414ee", "Napisz, co myślisz"),
                 i("ed88e742", "Kopiuj link do tematu"),
-                i("h92fe1be", "Niestety program Uwagi Społeczności nie jest dla Ciebie w tej chwili dostępny.");
-            i("f0dc1434", "Program Uwagi Społeczności jest obecnie dostępny tylko w Stanach Zjednoczonych"),
-                i("f8fc0b48", "Utwórz folder"),
+                i("h92fe1be", "Niestety program Uwagi Społeczności nie jest dla Ciebie w tej chwili dostępny."),
+                i("f0dc1434", "Program Uwagi Społeczności jest obecnie dostępny tylko w Stanach Zjednoczonych");
+            i("f8fc0b48", "Utwórz folder"),
                 i("c14bcdde", "Szukaj zakładek"),
                 i("e9c65c4a", "Wyszukiwanie w Zakładkach"),
                 i("b92a21d9", function (e) {
@@ -6898,9 +6897,9 @@
                 i("b8cbb51a", "Podsumowanie oferty pracy"),
                 i("bda6881e", "Ta oferta pracy została zaimportowana z Twojego systemu śledzenia osób aplikujących (ATS). Pamiętaj, że można modyfikować tylko określone pola."),
                 i("b075c68a", "Edytuj ofertę pracy"),
-                i("d4b6a6e0", "Wyróżnione treści na profilu");
-            i("j2dd3686", "Wyróżniaj promowane oferty pracy nad moimi wpisami."),
-                i("af1cfd46", "Integracja z systemem ATS"),
+                i("d4b6a6e0", "Wyróżnione treści na profilu"),
+                i("j2dd3686", "Wyróżniaj promowane oferty pracy nad moimi wpisami.");
+            i("af1cfd46", "Integracja z systemem ATS"),
                 i("d6fa2944", "Usunięcie integracji nie spowoduje usunięcia zaimportowanych ofert pracy."),
                 i("h99f11fa", "Usuń integrację"),
                 i("eef1ae76", "Aktualnie połączono"),
@@ -7880,7 +7879,8 @@
                 i("b74ff5fc", "Jeśli anulujesz subskrypcję, wygaśnie ona automatycznie po zakończeniu okresu rozliczeniowego."),
                 i("ee9efbc8", "Przejdź dalej, by anulować"),
                 i("c5d9c77a", "Wystąpił chwilowy problem. Nie martw się, to nie Twoje wina. Zamknij to okno i spróbuj ponownie."),
-                i("jda53c24", "Możesz anulować subskrypcję w sklepie Apple App Store.");
+                i("jda53c24", "Możesz anulować subskrypcję w sklepie Apple App Store."),
+                i("g0a7a53e", "Możesz anulować subskrypcję w sklepie Google Play.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7919,10 +7919,9 @@
                     c(e, a)
                 );
             }
-            i("g0a7a53e", "Możesz anulować subskrypcję w sklepie Google Play."),
-                i("i5f14be7", function (e) {
-                    return "Witaj ponownie, " + e.displayName;
-                }),
+            i("i5f14be7", function (e) {
+                return "Witaj ponownie, " + e.displayName;
+            }),
                 i("a76d58ba", "Analizy reklam"),
                 i("eccd0e1a", "Analizy organizacji"),
                 i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
@@ -8920,9 +8919,9 @@
                     return "Odwiedź " + e.advertiserName;
                 }),
                 i("c67e71aa", "Oglądaj teraz"),
-                i("a6ada13e", "Zrób zakupy");
-            i("j0f12222", "Zobacz więcej"),
-                i("f569f7c8", "Przejdź do strony"),
+                i("a6ada13e", "Zrób zakupy"),
+                i("j0f12222", "Zobacz więcej");
+            i("f569f7c8", "Przejdź do strony"),
                 i("j0c6772a", "Odwiedź stronę"),
                 i("f73003aa", "Film rozpocznie się po reklamie"),
                 i("b3112b8a", "Pomiń"),
@@ -10163,7 +10162,7 @@
                             },
                         },
                         {
-                            key: "g545a661",
+                            key: "c4c230bf",
                             get: function () {
                                 return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
@@ -13370,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.b5638e8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.4d4dac9a.js.map

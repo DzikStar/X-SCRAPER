@@ -19,8 +19,8 @@
             o(571372);
             var r = o(163889),
                 t = o(703710),
-                n = (o(136728), o(614983)),
-                i = o.n(n),
+                i = (o(136728), o(614983)),
+                n = o.n(i),
                 s = o(392237),
                 d = o(870358),
                 l = o(557281),
@@ -28,29 +28,29 @@
                 _ = o(877905),
                 u = o(44527);
             function h(e) {
-                i()(e, "audioSpace is required");
+                n()(e, "audioSpace is required");
                 const { metadata: a, participants: o, sharings: r, ...t } = e;
-                i()(a, "metadata is required");
-                const { rest_id: n, state: d } = a;
-                i()(n, "rest_id is required"), i()(d, "state is required");
+                n()(a, "metadata is required");
+                const { rest_id: i, state: d } = a;
+                n()(i, "rest_id is required"), n()(d, "state is required");
                 const u = (function (e) {
                         if (e && e.result && "Community" === e.result.__typename) {
                             const { __typename: a, rest_id: o, ...r } = e.result,
                                 { name: t } = r,
-                                n = s.default.theme.colors.gray500,
-                                i = (0, c.Wb)(r),
+                                i = s.default.theme.colors.gray500,
+                                n = (0, c.Wb)(r),
                                 d = (0, c.TB)(r),
-                                l = i || d,
+                                l = n || d,
                                 _ = l?.url;
-                            return { rest_id: o, color: n, name: t, image_url: _ };
+                            return { rest_id: o, color: i, name: t, image_url: _ };
                         }
                     })(a.community_results),
                     h = (function (e, a) {
                         const o = e?.total,
                             r = m(e?.admins, a),
                             t = m(e?.speakers, a),
-                            n = m(e?.listeners, a);
-                        return { total: o, admins: r, speakers: t, listeners: n };
+                            i = m(e?.listeners, a);
+                        return { total: o, admins: r, speakers: t, listeners: i };
                     })(o, u),
                     b = (function (e) {
                         if (!e) return [];
@@ -61,10 +61,10 @@
                                 if ("AudioSpaceSharedTweet" === o.__typename) {
                                     if ("Tweet" === o.tweet_results?.result?.__typename) {
                                         const { __typename: r, ...t } = o.tweet_results?.result || {},
-                                            n = (0, _.y9)(t);
-                                        if (n) {
-                                            const { cards: o, publishedArticles: r, tweets: t, users: i } = n.entities,
-                                                s = (0, l.F)(t, o, i, r, n.result);
+                                            i = (0, _.y9)(t);
+                                        if (i) {
+                                            const { cards: o, publishedArticles: r, tweets: t, users: n } = i.entities,
+                                                s = (0, l.F)(t, o, n, r, i.result);
                                             if (s) return { id: e.sharing_id, user: a, tweet: s };
                                         }
                                     }
@@ -88,7 +88,7 @@
                             : (o = e.admins[0]);
                         return { host: o, cohosts: r };
                     })(h, D);
-                return i()(g, "host is required"), { ...t, ...a, rest_id: n, state: d, host: g, hostPalette: f, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
+                return n()(g, "host is required"), { ...t, ...a, rest_id: i, state: d, host: g, hostPalette: f, cohosts: y, participants: h, sharings: b, ended_at: a.ended_at ? parseInt(a.ended_at, 10) : void 0, total_live_listeners: a.total_live_listeners ?? 0, total_replay_watched: a.total_replay_watched ?? 0, followed_by_host: a.creator_results?.result?.relationship_perspectives?.followed_by, community: u };
             }
             function m(e, a) {
                 return e
@@ -123,47 +123,44 @@
                 T = o.n(A),
                 k = o(433261),
                 I = o.n(k),
-                P = o(359215),
-                S = o.n(P),
+                S = o(359215),
+                P = o.n(S),
                 N = o(389073),
                 x = o(615656);
             const E = ({ apiClient: e, featureSwitches: a, jotaiStore: r }) => ({
                     spacebar: () => e.getUnversioned("/fleets/v1/fleetline", { only_spaces: !0 }, {}),
-                    byId(n, i = {}) {
+                    byId(i, n = {}) {
                         const s = "byId",
-                            d = i.isMetatagsQuery || !1;
+                            d = n.isMetatagsQuery || !1;
                         return e
                             .graphQL(
                                 f(),
-                                { id: n, isMetatagsQuery: d, ...(0, t.d)(a), withReplays: !0, withListeners: !0 },
+                                { id: i, isMetatagsQuery: d, ...(0, t.d)(a), withReplays: !0, withListeners: !0 },
                                 L(
                                     s,
-                                    n,
+                                    i,
                                     (e, a) => (
                                         e.forEach((e) => {
                                             const { code: a } = e;
                                             a === x.ZP.GenericAccessDenied &&
                                                 Promise.all([
-                                                    o.e("icons.5"),
-                                                    o.e("icons.25"),
-                                                    o.e("icons.22"),
-                                                    o.e("icons.6"),
-                                                    o.e("icons.4"),
-                                                    o.e("icons.9"),
-                                                    o.e("icons.7"),
-                                                    o.e("icons.3"),
-                                                    o.e("icons.20"),
+                                                    o.e("icons.21"),
+                                                    o.e("icons.16"),
+                                                    o.e("icons.10"),
+                                                    o.e("icons.19"),
+                                                    o.e("icons.1"),
+                                                    o.e("icons.0"),
+                                                    o.e("icons.8"),
                                                     o.e("icons.2"),
-                                                    o.e("icons.18"),
-                                                    o.e("icons.27"),
-                                                    o.e("icons.13"),
+                                                    o.e("icons.23"),
+                                                    o.e("icons.3"),
+                                                    o.e("icons.4"),
+                                                    o.e("icons.15"),
                                                     o.e("modules.common-e907d115"),
                                                     o.e("modules.common-e019dbda"),
-                                                    o.e("icons.0"),
-                                                    o.e("icons.24"),
-                                                    o.e("icons.17"),
-                                                    o.e("icons.12"),
-                                                    o.e("icons.11"),
+                                                    o.e("icons.9"),
+                                                    o.e("icons.7"),
+                                                    o.e("icons.28"),
                                                     o.e("modules.audio-6107ac1a"),
                                                     o.e("modules.audio-b953418a"),
                                                     o.e("modules.audio-7c51e6a7"),
@@ -174,14 +171,19 @@
                                                     o.e("modules.audio-e019dbda"),
                                                     o.e("modules.audio-262c94d4"),
                                                     o.e("modules.audio-c6fe4ea4"),
-                                                    o.e("icons.10"),
+                                                    o.e("icons.26"),
+                                                    o.e("icons.24"),
+                                                    o.e("icons.18"),
+                                                    o.e("icons.13"),
+                                                    o.e("icons.25"),
+                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bd26965e"),
-                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
+                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
+                                                    o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
@@ -240,7 +242,7 @@
                     },
                     unsubscribeFromScheduledSpaceById(a) {
                         const o = "unsubscribeFromScheduledSpaceById";
-                        return e.graphQL(S(), { id: a }, L(o, a)).catch(C(o)).then(z(o));
+                        return e.graphQL(P(), { id: a }, L(o, a)).catch(C(o)).then(z(o));
                     },
                     fetchTopics: () => e.graphQL(T(), {}),
                     search(a, o) {
@@ -287,43 +289,43 @@
             }
             const R = (e, a) => !1;
             function L(e, a, o = R) {
-                return function (t, n) {
-                    let i = !1;
+                return function (t, i) {
+                    let n = !1;
                     if (t.length) {
                         const [o] = t,
-                            { code: n, message: s, path: d } = o;
+                            { code: i, message: s, path: d } = o;
                         let l;
                         const c = V.find(({ matches: e }) => e(s));
                         if (c?.message) l = q(e, c.message);
                         else if (Array.isArray(d)) {
-                            const a = d.map(U).join(".");
+                            const a = d.map(Z).join(".");
                             l = q(e, a);
                         } else l = q(e, s || "isFatalError");
-                        (0, r.ZP)(l, { extra: { code: n, id: a, message: s, path: d } }), (i = !0);
+                        (0, r.ZP)(l, { extra: { code: i, id: a, message: s, path: d } }), (n = !0);
                     }
-                    return !o(t, n) && i;
+                    return !o(t, i) && n;
                 };
             }
-            function U(e) {
+            function Z(e) {
                 return "number" == typeof e ? "#" : e;
             }
             const V = ["Overcapacity: Unspecified", "Timeout: Unspecified"].map((e) => ({ matches: (a) => a && e.toLowerCase() === a.toLowerCase(), message: e }));
         },
         787210: (e, a, o) => {
             "use strict";
-            o.d(a, { Z: () => n });
+            o.d(a, { Z: () => i });
             var r = o(716406),
                 t = o(624479);
-            const n = ({ apiClient: e, featureSwitches: a }) => ({
+            const i = ({ apiClient: e, featureSwitches: a }) => ({
                 fetchPresence: (a, o = {}) => {
-                    const { only_spaces: n, userIds: i } = a,
-                        s = { user_ids: i.join(","), only_spaces: n };
+                    const { only_spaces: i, userIds: n } = a,
+                        s = { user_ids: n.join(","), only_spaces: i };
                     return e.getUnversioned("/fleets/v1/avatar_content", s, o).then((e) => {
                         const { users: a, refresh_delay_secs: o = t.vj } = e,
-                            n = 0 === o ? t.vj : o,
-                            s = Date.now() + 1e3 * n,
-                            d = Object.fromEntries(i.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: n }])),
-                            l = a && (0, r.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: n }));
+                            i = 0 === o ? t.vj : o,
+                            s = Date.now() + 1e3 * i,
+                            d = Object.fromEntries(n.map((e) => [e, { expiry: s, spaces: void 0, refresh_delay_secs: i }])),
+                            l = a && (0, r.Z)(a, (e, a) => ({ ...e, expiry: s, refresh_delay_secs: i }));
                         return (l || d) && { entities: { userPresence: { ...d, ...l } } };
                     });
                 },
@@ -347,9 +349,9 @@
                     e.forEach((e) => {
                         (r = Math.min(e, r)), (t = Math.max(e, t));
                     });
-                    const n = o - a,
-                        i = t - r;
-                    return 0 === i ? e.map((e) => (a + o) / 2) : e.map((e) => ((e - r) / i) * n + a);
+                    const i = o - a,
+                        n = t - r;
+                    return 0 === n ? e.map((e) => (a + o) / 2) : e.map((e) => ((e - r) / n) * i + a);
                 }
                 playTone(e) {
                     this.initialized || this.initialize();
@@ -371,74 +373,74 @@
                         t = this.audioCtx.currentTime;
                     this.gainNode.gain.setValueAtTime(0, t);
                     for (let e = 0; e < r.length; e++) {
-                        const n = a * e + o * e;
-                        this.playFrequencyAsTone(r[e], a, o, t, n);
+                        const i = a * e + o * e;
+                        this.playFrequencyAsTone(r[e], a, o, t, i);
                     }
                 }
                 playFrequencyAsTone(e, a, o, r, t = 0) {
                     this.initialized || this.initialize();
-                    const n = (r ?? this.audioCtx.currentTime) + t;
-                    this.gainNode.gain.setValueAtTime(0, n), this.gainNode.gain.linearRampToValueAtTime(1, n + 0.1), this.oscillatorNode.frequency.setValueAtTime(e, n), this.gainNode.gain.setValueAtTime(1, n + a - 0.1), this.gainNode.gain.exponentialRampToValueAtTime(0.001, n + a - 0.001), this.gainNode.gain.setValueAtTime(0, n + a);
+                    const i = (r ?? this.audioCtx.currentTime) + t;
+                    this.gainNode.gain.setValueAtTime(0, i), this.gainNode.gain.linearRampToValueAtTime(1, i + 0.1), this.oscillatorNode.frequency.setValueAtTime(e, i), this.gainNode.gain.setValueAtTime(1, i + a - 0.1), this.gainNode.gain.exponentialRampToValueAtTime(0.001, i + a - 0.001), this.gainNode.gain.setValueAtTime(0, i + a);
                 }
             };
         },
         675498: (e, a, o) => {
             "use strict";
-            o.d(a, { W: () => n, x: () => i });
+            o.d(a, { W: () => i, x: () => n });
             var r = o(85375),
                 t = o(94909);
-            const n = (e) => !0,
-                i = ({ cardId: e, cardType: a, converterOptions: o, data: n }) => ({ cardState: r.uW.DEFAULT, layout: { [r.uW.DEFAULT]: { size: "large" }, [r.uW.CONDENSED]: { size: "large" }, [r.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [r.uW.DEFAULT]: [r.Fw.SPACE], [r.uW.STATIC]: [r.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [r.Fw.SPACE]: { type: "space", data: { id: (0, t.SI)(n, "string_value", "id"), clip_metadata: (0, t.SI)(n, "string_value", "clip_metadata") } } } } });
+            const i = (e) => !0,
+                n = ({ cardId: e, cardType: a, converterOptions: o, data: i }) => ({ cardState: r.uW.DEFAULT, layout: { [r.uW.DEFAULT]: { size: "large" }, [r.uW.CONDENSED]: { size: "large" }, [r.uW.STATIC]: { size: "large" } }, card: { card_name: a, on_visibility: { scribe: "show" }, id: e, components: { [r.uW.DEFAULT]: [r.Fw.SPACE], [r.uW.STATIC]: [r.Fw.SPACE] }, destinations: {}, media_entities: {}, components_data: { [r.Fw.SPACE]: { type: "space", data: { id: (0, t.SI)(i, "string_value", "id"), clip_metadata: (0, t.SI)(i, "string_value", "clip_metadata") } } } } });
         },
         213836: (e, a, o) => {
             "use strict";
             o.d(a, { Z: () => d });
             var r = o(202784),
                 t = o(325686),
-                n = o(392237),
-                i = o(707816),
+                i = o(392237),
+                n = o(707816),
                 s = o(794294);
-            function d({ color: e = n.default.theme.colors.white, opacity: a = 0.15, scale: o, size: d, translate: c }) {
-                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: o }], opacity: a, ...(0, i.M8)(d) };
+            function d({ color: e = i.default.theme.colors.white, opacity: a = 0.15, scale: o, size: d, translate: c }) {
+                const _ = { backgroundColor: e, transform: [{ translate3d: `${c.x}px, ${c.y}px, 0` }, { scale: o }], opacity: a, ...(0, n.M8)(d) };
                 return r.createElement(t.Z, { style: [_, s.Z.transitionTransform, l.audioCircle] });
             }
-            const l = n.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
+            const l = i.default.create((e) => ({ audioCircle: { position: "absolute", borderRadius: e.borderRadii.infinite, pointerEvents: "none" } }));
         },
         230966: (e, a, o) => {
             "use strict";
             o.d(a, { Z: () => l });
             var r = o(202784),
                 t = o(7632),
-                n = o(707816),
-                i = o(213836),
+                i = o(707816),
+                n = o(213836),
                 s = o(840940),
                 d = o(822682);
             function l(e) {
                 const { size: a } = e,
                     o = a * c,
-                    n = e.paused ? 0 : e.audioLevel,
+                    i = e.paused ? 0 : e.audioLevel,
                     l = (0, t.X)(e.participantIndex);
-                return r.createElement(r.Fragment, null, r.createElement(s.Z, { color: l }), r.createElement(i.Z, { scale: _(n), size: o, translate: h(n, a) }), r.createElement(i.Z, { scale: _(n), size: o, translate: h(n, a) }), r.createElement(i.Z, { scale: _(n), size: o, translate: h(n, a) }), r.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(n), size: o }));
+                return r.createElement(r.Fragment, null, r.createElement(s.Z, { color: l }), r.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), r.createElement(n.Z, { scale: _(i), size: o, translate: h(i, a) }), r.createElement(d.Z, { profileImageUrl: e.profileImageUrl, scale: u(i), size: o }));
             }
             const c = 0.692,
-                _ = (e) => 0.95 + (0.2 + (0, n.TN)(0.5)) * e,
+                _ = (e) => 0.95 + (0.2 + (0, i.TN)(0.5)) * e,
                 u = (e) => 1 + 0.05 * e,
-                h = (e, a) => ({ x: (0, n.EO)() * e * (0, n.TN)(0.05 * a), y: (0, n.EO)() * e * (0, n.TN)(0.05 * a) });
+                h = (e, a) => ({ x: (0, i.EO)() * e * (0, i.TN)(0.05 * a), y: (0, i.EO)() * e * (0, i.TN)(0.05 * a) });
         },
         272594: (e, a, o) => {
             "use strict";
             o.d(a, { Z: () => l });
             var r = o(202784),
                 t = o(822240),
-                n = o(707816),
-                i = o(213836);
+                i = o(707816),
+                n = o(213836);
             const s = (0, t.Z)(0, 20),
                 d = 0.05;
             function l(e) {
                 const { color: a, size: o } = e,
                     t = r.useRef({ scales: s.map(() => u(0)) }),
                     l = e.paused ? 0 : e.audioLevel,
-                    _ = Math.floor((0, n.TN)(5, 2));
+                    _ = Math.floor((0, i.TN)(5, 2));
                 return (
                     t.current.scales.forEach((e, a) => {
                         if (a % _ != 0) return e;
@@ -447,25 +449,39 @@
                     r.createElement(
                         r.Fragment,
                         null,
-                        s.map((e) => r.createElement(i.Z, { color: a, key: e, opacity: d, scale: t.current.scales[e], size: o, translate: c })),
+                        s.map((e) => r.createElement(n.Z, { color: a, key: e, opacity: d, scale: t.current.scales[e], size: o, translate: c })),
                     )
                 );
             }
             const c = { x: 0, y: 0 },
                 _ = { circleMinimumScale: 0.05, circleMaximumScale: 0.5, circlePositionOffset: 10, circleRandomNoise: 0.2, circleScaleRandomProportion: 0.1 };
             function u(e, a = _) {
-                const o = (e + (0, n.TN)(a.circleRandomNoise)) / (1 + a.circleRandomNoise),
-                    r = (0, n.TN)(1) * a.circleScaleRandomProportion + o * (1 - a.circleScaleRandomProportion);
+                const o = (e + (0, i.TN)(a.circleRandomNoise)) / (1 + a.circleRandomNoise),
+                    r = (0, i.TN)(1) * a.circleScaleRandomProportion + o * (1 - a.circleScaleRandomProportion);
                 return 1 + a.circleMinimumScale + r * (a.circleMaximumScale - a.circleMinimumScale);
             }
         },
+        503195: (e, a, o) => {
+            "use strict";
+            o.r(a), o.d(a, { default: () => d });
+            var r = o(202784),
+                t = o(890601),
+                i = o(783427),
+                n = o(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, i.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M20.998 15.5V1.66l-12 3.6v10.21c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5V6.74l8-2.4v8.13c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5z" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const d = s;
+        },
         447486: (e, a, o) => {
             "use strict";
-            o.d(a, { Z: () => i });
+            o.d(a, { Z: () => n });
             var r = o(22525),
                 t = o(789403),
-                n = o(123751);
-            class i {
+                i = o(123751);
+            class n {
                 constructor(e) {
                     this.httpClient = e;
                 }
@@ -486,8 +502,8 @@
                         : Promise.reject(t.Z.MEDIA_TEARDOWN_ERROR);
                 }
             }
-            const s = (e) => e.source && e.source.type === n.P.AUDIO_SPACE;
+            const s = (e) => e.source && e.source.type === i.P.AUDIO_SPACE;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.50c2f30a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.39fe373a.js.map

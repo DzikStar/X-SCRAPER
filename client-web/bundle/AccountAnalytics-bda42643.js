@@ -145,12 +145,12 @@
                             className: "flex items-center gap-3 mb-4",
                             children: [
                                 (0, a.jsx)(n.z, {
+                                    "aria-label": d.backToSpaces,
                                     icon: (0, a.jsx)(r.Z, {}),
                                     onClick: () => {
                                         t.push(s || e);
                                     },
                                     variant: "primaryText",
-                                    "aria-label": d.backToSpaces,
                                 }),
                                 (0, a.jsx)(l.x, { size: "headline1", weight: "bold", children: d.spaceAnalytics }),
                             ],
@@ -410,4 +410,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.45d5529a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.42dfbe1a.js.map

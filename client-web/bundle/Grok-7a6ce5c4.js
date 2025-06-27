@@ -691,10 +691,10 @@
             };
         },
         997041: (e, t, n) => {
-            function a(e) {
-                return e.replace(/<grok:render\s+card_id="([^"]*)"\s+card_type="citation_card"\s+type="render_inline_citation">[\s\S]*?<\/grok:render>/g, (e, t) => `[](grok:render:card_id=${t})`);
+            function a(e, t) {
+                return e.replace(/<grok:render\s+card_id="([^"]*)"\s+card_type="citation_card"\s+type="render_inline_citation">[\s\S]*?<\/grok:render>/g, (e, n) => (t.find((e) => e.id === n) ? `[](grok:render:card_id=${n})` : ""));
             }
-            n.d(t, { M: () => a });
+            n.d(t, { T: () => a });
         },
         413145: (e, t, n) => {
             n.d(t, { y: () => C });
@@ -797,4 +797,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.16db1aaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.b68da43a.js.map

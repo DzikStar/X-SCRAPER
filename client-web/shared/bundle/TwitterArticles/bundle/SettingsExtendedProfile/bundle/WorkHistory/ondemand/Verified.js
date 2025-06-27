@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified", "icons/IconChevronDown-js"],
+    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified"],
     {
         385264: (e, t, n) => {
             n.d(t, { Q: () => o });
@@ -87,7 +87,7 @@
                 m = p;
         },
         874111: (e, t, n) => {
-            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => L, Sc: () => w, Ve: () => _, Vn: () => D, WE: () => M, WF: () => b, c6: () => x, ci: () => S, eE: () => k, iT: () => C, ii: () => F, jB: () => P, k: () => V, mA: () => v, r_: () => B, wq: () => R });
+            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => L, Sc: () => w, Ve: () => _, Vn: () => D, WE: () => P, WF: () => b, c6: () => x, ci: () => S, eE: () => k, iT: () => C, ii: () => F, jB: () => M, k: () => V, mA: () => v, r_: () => B, wq: () => R });
             n(136728);
             var o = n(301503),
                 r = n(111677),
@@ -211,11 +211,11 @@
                         s = o.SelectionState.createEmpty(m(e).getKey());
                     return o.EditorState.forceSelection(i, s);
                 },
-                M = (e, t, n) => {
+                P = (e, t, n) => {
                     const o = n.map((e) => t[e.mediaId]).map((t) => e.find((e) => e.id === t) ?? null);
                     return o.some((e) => !e) ? n.map((t) => e.find((e) => e.id === t.localMediaId) ?? null) : o;
                 },
-                P = (e, t) => {
+                M = (e, t) => {
                     const n = e.getCurrentContent().createEntity(u.DC.MARKDOWN, u.pc.MUTABLE, { markdown: t }),
                         r = n.getLastCreatedEntityKey(),
                         i = o.EditorState.set(e, { currentContent: n });
@@ -373,8 +373,8 @@
                 I = n(215337),
                 F = n(135904),
                 L = n(989272),
-                M = n(855125),
-                P = n(202253),
+                P = n(855125),
+                M = n(202253),
                 Z = n(392237),
                 R = n(779802);
             const D = Z.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
@@ -647,7 +647,7 @@
                                 s.Z,
                                 { style: q.linkPopoverContent },
                                 r.createElement(f.ZP, { numberOfLines: 2, style: q.bottomMargin, weight: "bold" }, e),
-                                r.createElement(M.Z, { link: o, style: q.bottomMargin }, t),
+                                r.createElement(P.Z, { link: o, style: q.bottomMargin }, t),
                                 r.createElement(
                                     s.Z,
                                     { style: q.linkPopoverButtons },
@@ -709,7 +709,7 @@
                         }),
                         (this.state = { showLinkSheet: !1, showTextSizeMenu: !1 });
                     const t = [];
-                    e.limitedRichText || (t.push((0, P.U_)(this._renderLinkPopoverContent, this._handleLinkPopoverOpen, this._handleLinkPopoverClose)), t.push((0, P.NA)(p.Z, e.paragraphFontSizeOverride))), t.push(P.aF), t.push(P.RU), (this.decorator = new i.CompositeDecorator(t));
+                    e.limitedRichText || (t.push((0, M.U_)(this._renderLinkPopoverContent, this._handleLinkPopoverOpen, this._handleLinkPopoverClose)), t.push((0, M.NA)(p.Z, e.paragraphFontSizeOverride))), t.push(M.aF), t.push(M.RU), (this.decorator = new i.CompositeDecorator(t));
                 }
                 componentDidMount() {
                     this._setDecorator(), L.fH(F.c, F.n);
@@ -723,13 +723,13 @@
                 render() {
                     const { additionalToolbarButtonConfigs: e, emojiPickerButton: t, errorText: n, inputStyle: a, isInputFullWidth: l, keyCommandHandlers: c, limitedRichText: d, middleControl: h, onChange: u, paragraphFontSizeOverride: p, placeholder: g, richTextInputContext: m, showError: b, textSizesOverride: x, toolbarRightControl: k, toolbarStyle: _, withAppBar: E, ...T } = this.props,
                         { showLinkSheet: F, showTextSizeMenu: L } = this.state,
-                        M = (0, R.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
-                        P = (0, R.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
+                        P = (0, R.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
+                        M = (0, R.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
                         D = (0, R.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
                         A = (0, R.KJ)(this._handleToggleLinkSheet),
                         K = this._getSelectedTextSize(),
                         z = { ...m, blockStyleFn: (0, R.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
-                        W = Object.fromEntries([...M, ...(d ? [] : A), ...D, ...(d ? [] : P)].map((e) => [e.key.toLowerCase(), e.onPress])),
+                        W = Object.fromEntries([...P, ...(d ? [] : A), ...D, ...(d ? [] : M)].map((e) => [e.key.toLowerCase(), e.onPress])),
                         U = { [R.u4]: this._handleIncreaseTextSize, [R.db]: this._handleDecreaseTextSize },
                         H = { ...W, ...(d ? {} : U), ...this._getBackspaceAndDeleteCommandHandlers() },
                         V = c ? { ...H, ...c } : H,
@@ -752,7 +752,7 @@
                                 r.createElement(
                                     s.Z,
                                     { id: "toolbar-styling-buttons", style: q.toolbar_styling_buttons },
-                                    this._renderToolbarButtonGroup(M, !0),
+                                    this._renderToolbarButtonGroup(P, !0),
                                     d
                                         ? null
                                         : r.createElement(
@@ -761,7 +761,7 @@
                                               r.createElement(O, { style: q.separatorMargin }),
                                               r.createElement(v.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, K.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), L ? this._renderTextSizeMenu() : null)),
                                           ),
-                                    d ? null : this._renderToolbarButtonGroup(P),
+                                    d ? null : this._renderToolbarButtonGroup(M),
                                     this._renderToolbarButtonGroup(D),
                                     d ? null : this._renderToolbarButtonGroup(A),
                                     t ? t() : null,
@@ -1102,19 +1102,6 @@
             n.d(t, { Z: () => o });
             const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var o = n(202784),
-                r = n(890601),
-                i = n(783427),
-                s = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.444400ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.0b355bba.js.map

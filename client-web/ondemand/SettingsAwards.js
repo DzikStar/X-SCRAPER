@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.SettingsAwards", "icons/IconIllustrationPassiveIncome-js"],
+    ["ondemand.SettingsAwards", "icons/IconIllustrationReceiveCoins-js"],
     {
         625661: (e, t, a) => {
             a.d(t, { ZP: () => m });
@@ -204,20 +204,20 @@
                 return { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivateMutation", selections: e, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useAwardsActivateMutation", selections: e }, params: { id: "ql0nbxLYZcgEQyw5Z0PlWw", metadata: {}, name: "useAwardsActivateMutation", operationKind: "mutation", text: null } };
             })();
             A.hash = "aaaa1c71aa5e6b2e3a109a5b37594b3f";
-            const z = A;
-            var L = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "eaa526ce3924dce881ea12c7b2d29239" };
-            const P = L;
+            const L = A;
+            var P = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useAwardsActivate_user", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null, hash: "eaa526ce3924dce881ea12c7b2d29239" };
+            const z = P;
             var D = a(614983),
-                H = a.n(D),
-                M = a(277660),
-                W = a.n(M),
-                q = a(351743),
-                U = a.n(q);
-            const N = P,
-                Q = z,
-                V = (e) => {
-                    const t = W()(N, e),
-                        [a, n] = U()(Q);
+                M = a.n(D),
+                W = a(277660),
+                q = a.n(W),
+                U = a(351743),
+                H = a.n(U);
+            const N = z,
+                Q = L,
+                j = (e) => {
+                    const t = q()(N, e),
+                        [a, n] = H()(Q);
                     return [
                         c.useCallback(
                             () =>
@@ -228,9 +228,9 @@
                                         onError: n,
                                         updater: (e, a) => {
                                             const n = t.__id;
-                                            H()(n, "userId must be specified");
+                                            M()(n, "userId must be specified");
                                             const l = e.get(n);
-                                            H()(l, "userRecord must be specified"), l.invalidateRecord();
+                                            M()(l, "userRecord must be specified"), l.invalidateRecord();
                                         },
                                     });
                                 }),
@@ -239,8 +239,8 @@
                         n,
                     ];
                 },
-                j = E().ecdbece0,
-                O = E().ef4602ec,
+                O = E().ecdbece0,
+                V = E().ef4602ec,
                 G = E().j087774e,
                 Y = E().db3f0bbe,
                 X = E().a1f40cf8,
@@ -254,14 +254,14 @@
                                     t.push(R);
                                 }, [t]),
                                 n = (0, F.p)(),
-                                [l, i] = V(e),
+                                [l, i] = j(e),
                                 s = c.useCallback(() => {
                                     l()
                                         .then(() => {
-                                            n({ text: j }), t.push("/settings/monetization/awards/dashboard");
+                                            n({ text: O }), t.push("/settings/monetization/awards/dashboard");
                                         })
                                         .catch(() => {
-                                            n({ text: O });
+                                            n({ text: V });
                                         });
                                 }, [n, l, t]),
                                 r = c.useMemo(() => ({ link: c.createElement(b.ZP, { link: $, weight: "bold" }) }), []),
@@ -286,7 +286,7 @@
                 le = { type: "CustomRetry", content: () => null },
                 ie = c.memo((0, p.Z)(() => c.createElement(m.N, { errorConfig: ne, fallback: le }, c.createElement(ae, null)), { page: "settings", section: "awards" }));
         },
-        87908: (e, t, a) => {
+        892541: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var n = a(202784),
                 l = a(890601),
@@ -294,11 +294,11 @@
                 s = a(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 50 50", children: n.createElement("g", null, n.createElement("circle", { cx: "25", cy: "25", fill: "#0f1419", r: "25" }), n.createElement("path", { d: "M36 16v14h-2V18H18v-2zm-22 4h18v14H14zm13.5 2c0 .328.065.653.19.957.126.303.31.579.542.81.47.47 1.105.733 1.768.733V22zm0 10H30v-2.5c-.663 0-1.299.263-1.768.732-.469.47-.732 1.105-.732 1.768zM21 27c0 1.66.9 3 2 3s2-1.34 2-3-.9-3-2-3-2 1.34-2 3zm-5-2.5c.328 0 .653-.065.957-.19.303-.126.579-.31.81-.542.233-.232.417-.508.543-.811.125-.304.19-.629.19-.957H16zm0 7.5h2.5c0-.663-.263-1.299-.732-1.768-.47-.469-1.105-.732-1.768-.732z", fill: "#fff" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 50 50", children: n.createElement("g", null, n.createElement("circle", { cx: "25", cy: "25", fill: "#0f1419", r: "25" }), n.createElement("path", { d: "M29.81 14.11l1.39 4.78 4.73 1.57-4.11 2.8-.03 4.98-3.94-3.05-4.74 1.52 1.68-4.69-2.91-4.04 4.98.15zm-9.76 8.43l-4.5 4.5 1.41 1.42 4.5-4.5zm1 5l-5.5 5.5 1.41 1.42 5.5-5.5zm5 1l-4.5 4.5 1.41 1.42 4.5-4.5z", fill: "#fff" })) }, { writingDirection: t });
             };
             r.metadata = { width: 50, height: 50 };
             const o = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.7ab5d7ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.21b0c12a.js.map

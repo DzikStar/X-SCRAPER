@@ -16,7 +16,7 @@
             a.r(l), a.d(l, { default: () => R });
             const n = {
                 fragment: {
-                    argumentDefinitions: [(s = { defaultValue: null, kind: "LocalArgument", name: "end_time_ms" }), (i = { defaultValue: null, kind: "LocalArgument", name: "granularity" }), (t = { defaultValue: null, kind: "LocalArgument", name: "id" }), (r = { defaultValue: null, kind: "LocalArgument", name: "start_time_ms" })],
+                    argumentDefinitions: [(s = { defaultValue: null, kind: "LocalArgument", name: "end_time_ms" }), (t = { defaultValue: null, kind: "LocalArgument", name: "granularity" }), (i = { defaultValue: null, kind: "LocalArgument", name: "id" }), (r = { defaultValue: null, kind: "LocalArgument", name: "start_time_ms" })],
                     kind: "Fragment",
                     metadata: null,
                     name: "VideoDetailsQuery",
@@ -164,7 +164,7 @@
                 },
                 kind: "Request",
                 operation: {
-                    argumentDefinitions: [t, r, s, i],
+                    argumentDefinitions: [i, r, s, t],
                     kind: "Operation",
                     name: "VideoDetailsQuery",
                     selections: [
@@ -174,7 +174,7 @@
                 },
                 params: { id: "KhqMBaG77PNyb4zk99tgvQ", metadata: {}, name: "VideoDetailsQuery", operationKind: "query", text: null },
             };
-            var s, i, t, r, d, u, o, c, m, g, y, p, x, v, b, h, k, f, _, j, F, K, w, T, N, L, V, S;
+            var s, t, i, r, d, u, o, c, m, g, y, p, x, v, b, h, k, f, _, j, F, K, w, T, N, L, V, S;
             n.hash = "dca7800c6ca4f8e246d9564caddcc1f3";
             const R = n;
         },
@@ -189,7 +189,7 @@
                     selections: [
                         {
                             alias: null,
-                            args: (i = [
+                            args: (t = [
                                 { kind: "Variable", name: "id", variableName: "id" },
                                 { kind: "Literal", name: "safety_level", value: "TweetDetail" },
                             ]),
@@ -198,7 +198,7 @@
                             name: "api_media_v2",
                             plural: !1,
                             selections: [
-                                (t = { alias: null, args: null, kind: "ScalarField", name: "media_key", storageKey: null }),
+                                (i = { alias: null, args: null, kind: "ScalarField", name: "media_key", storageKey: null }),
                                 {
                                     alias: null,
                                     args: null,
@@ -339,10 +339,10 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: s, kind: "Operation", name: "VideoMediaPostsQuery", selections: [{ alias: null, args: i, concreteType: "ApiMedia", kind: "LinkedField", name: "api_media_v2", plural: !1, selections: [t, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "get_media_posts_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [r, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [r, d, u, o, (y = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, y], storageKey: null }], storageKey: null }, c, m, y], type: "Tweet", abstractKey: null }], storageKey: null }, y], storageKey: null }, y], storageKey: null }] },
+                operation: { argumentDefinitions: s, kind: "Operation", name: "VideoMediaPostsQuery", selections: [{ alias: null, args: t, concreteType: "ApiMedia", kind: "LinkedField", name: "api_media_v2", plural: !1, selections: [i, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "get_media_posts_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [r, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [r, d, u, o, (y = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, y], storageKey: null }], storageKey: null }, c, m, y], type: "Tweet", abstractKey: null }], storageKey: null }, y], storageKey: null }, y], storageKey: null }] },
                 params: { id: "JVRgy2L7ZBq7RCZytKFyaA", metadata: {}, name: "VideoMediaPostsQuery", operationKind: "query", text: null },
             };
-            var s, i, t, r, d, u, o, c, m, g, y;
+            var s, t, i, r, d, u, o, c, m, g, y;
             n.hash = "9871a712f383367564253893bce75f2f";
             const p = n;
         },
@@ -350,8 +350,8 @@
             a.d(l, { J: () => I });
             var n = a(552322),
                 s = a(458872),
-                i = a(993165),
-                t = a(905394),
+                t = a(993165),
+                i = a(905394),
                 r = a(739219),
                 d = a(202784),
                 u = a(430962),
@@ -377,8 +377,8 @@
                     a = l?.get_client_distribution_for_video || [],
                     s = Number(l?.total_views?.total || 0);
                 if (0 === a.length) return null;
-                const i = (0, d.useMemo)(() => (0 === a.length ? [] : a.map((e) => ({ name: e.name, value: e.value, count: Math.round((e.value / 100) * s), formattedCount: (0, y.uf)(Math.round((e.value / 100) * s)), tooltip: `${e.name}: ${(0, y.rl)(e.value)}` }))), [a, s]);
-                return (0, n.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 border border-gray-200", children: [(0, n.jsx)("h2", { className: "font-medium text-gray-900 mb-4 md:text-headline2 md:font-bold", children: e.deviceTitle }), (0, n.jsx)(b.Z, { data: i })] });
+                const t = (0, d.useMemo)(() => (0 === a.length ? [] : a.map((e) => ({ name: e.name, value: e.value, count: Math.round((e.value / 100) * s), formattedCount: (0, y.uf)(Math.round((e.value / 100) * s)), tooltip: `${e.name}: ${(0, y.rl)(e.value)}` }))), [a, s]);
+                return (0, n.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 border border-gray-200", children: [(0, n.jsx)("h2", { className: "font-medium text-gray-900 mb-4 md:text-headline2 md:font-bold", children: e.deviceTitle }), (0, n.jsx)(b.Z, { data: t })] });
             }
             var k = a(66412);
             function f() {
@@ -394,10 +394,10 @@
             function K({ estimatedRevenueVideoDetails: e = !1 }) {
                 const { analytics: l } = (0, u.M1)(),
                     { formattedVideo: a } = (0, g.Mh)(),
-                    { name: s, views: i, completionRate: t, averageWatchTime: r, monetized: d, publishedDate: o, allTimeRevenue: c } = a,
+                    { name: s, views: t, completionRate: i, averageWatchTime: r, monetized: d, publishedDate: o, allTimeRevenue: c } = a,
                     m = null !== c ? (0, y.xy)(Math.round(c), !0) : "-",
                     p = null !== c ? (0, y.xy)(c, !1) : "-";
-                return (0, n.jsxs)(_.Zb, { className: "w-full lg:w-[400px] bg-card text-card-foreground", children: [(0, n.jsxs)(_.Ol, { className: "space-y-2", children: [(0, n.jsx)(_.ll, { className: "text-headline2 font-normal line-clamp-2 max-h-[3em] break-words", children: s || l.untitledVideo }), o && (0, n.jsxs)("p", { className: "text-body2 text-muted-foreground", children: [l.UploadedOn, " ", o.toLocaleDateString()] })] }), (0, n.jsxs)(_.aY, { className: "space-y-4", children: [(0, n.jsxs)("div", { className: "flex justify-between items-center", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.VideoViewLabel }), (0, n.jsx)("span", { className: "text-headline2 text-foreground", children: void 0 !== i ? (0, y.uf)(i) : "-" })] }), (0, n.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.VideoCompletionRateLabel }), (0, n.jsx)("span", { className: "text-headline2 text-foreground", children: void 0 !== t ? (0, y.rl)(t) : "-" })] }), (0, n.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.AverageWatchTimeLabel }), (0, n.jsx)("span", { className: "text-headline2 text-foreground", children: r ?? "-" })] }), d && e && (0, n.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.EstimatedRevenue }), (0, n.jsx)(j.O, { label: p, delay: 300, offset: 8, children: (0, n.jsxs)("span", { className: "text-headline2 text-green-600 flex items-center gap-1 cursor-help", children: [m, (0, n.jsx)(F.Z, { className: "h-4 w-4 text-green-600" })] }) })] })] })] });
+                return (0, n.jsxs)(_.Zb, { className: "w-full lg:w-[400px] bg-card text-card-foreground", children: [(0, n.jsxs)(_.Ol, { className: "space-y-2", children: [(0, n.jsx)(_.ll, { className: "text-headline2 font-normal line-clamp-2 max-h-[3em] break-words", children: s || l.untitledVideo }), o && (0, n.jsxs)("p", { className: "text-body2 text-muted-foreground", children: [l.UploadedOn, " ", o.toLocaleDateString()] })] }), (0, n.jsxs)(_.aY, { className: "space-y-4", children: [(0, n.jsxs)("div", { className: "flex justify-between items-center", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.VideoViewLabel }), (0, n.jsx)("span", { className: "text-headline2 text-foreground", children: void 0 !== t ? (0, y.uf)(t) : "-" })] }), (0, n.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.VideoCompletionRateLabel }), (0, n.jsx)("span", { className: "text-headline2 text-foreground", children: void 0 !== i ? (0, y.rl)(i) : "-" })] }), (0, n.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.AverageWatchTimeLabel }), (0, n.jsx)("span", { className: "text-headline2 text-foreground", children: r ?? "-" })] }), d && e && (0, n.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, n.jsx)("span", { className: "text-body2 text-foreground", children: l.EstimatedRevenue }), (0, n.jsx)(j.O, { label: p, delay: 300, offset: 8, children: (0, n.jsxs)("span", { className: "text-headline2 text-green-600 flex items-center gap-1 cursor-help", children: [m, (0, n.jsx)(F.Z, { className: "h-4 w-4 text-green-600" })] }) })] })] })] });
             }
             var w = a(86982),
                 T = a(707326),
@@ -408,16 +408,16 @@
                 R = a(970430);
             function M({ estimatedRevenueVideoDetails: e = !1 }) {
                 const { analytics: l } = (0, u.M1)(),
-                    { timeSeriesData: a, viewMetrics: s, isFetching: i, timeRange: t, formattedVideo: o } = (0, g.Mh)(),
+                    { timeSeriesData: a, viewMetrics: s, isFetching: t, timeRange: i, formattedVideo: o } = (0, g.Mh)(),
                     [c, m] = (0, d.useState)(!1),
                     p = (0, d.useRef)(!1),
-                    x = (0, d.useRef)(t),
+                    x = (0, d.useRef)(i),
                     v = (0, d.useRef)(!1),
-                    [b, h] = (0, d.useState)((0, y.pw)(t) ? "area" : "timeseries"),
+                    [b, h] = (0, d.useState)((0, y.pw)(i) ? "area" : "timeseries"),
                     [k, f] = (0, d.useState)(a),
                     [_, j] = (0, d.useState)(s),
                     [K, M] = (0, d.useState)("daily"),
-                    D = (0, d.useMemo)(() => (0, y.pw)(t), [t]),
+                    D = (0, d.useMemo)(() => (0, y.pw)(i), [i]),
                     C = (0, d.useMemo)(() => {
                         if (!D) return "daily";
                         if (o.publishedDate) {
@@ -426,15 +426,15 @@
                             if ((0, r.w)(e, l) < 14) return "hourly";
                         }
                         return "daily";
-                    }, [D, t, o.publishedDate]);
+                    }, [D, i, o.publishedDate]);
                 (0, d.useEffect)(() => {
                     const e = p.current !== D,
-                        l = x.current.from.getTime() !== t.from.getTime() || x.current.to.getTime() !== t.to.getTime();
-                    (e || l) && v.current && m(!0), (p.current = D), (x.current = t);
-                }, [D, t]),
+                        l = x.current.from.getTime() !== i.from.getTime() || x.current.to.getTime() !== i.to.getTime();
+                    (e || l) && v.current && m(!0), (p.current = D), (x.current = i);
+                }, [D, i]),
                     (0, d.useEffect)(() => {
-                        i || (c ? (h(D ? "area" : "timeseries"), f(a), j(s), M(C), m(!1)) : v.current || (h(D ? "area" : "timeseries"), f(a), j(s), M(C), (v.current = !0)));
-                    }, [i, c, D, a, s, C]);
+                        t || (c ? (h(D ? "area" : "timeseries"), f(a), j(s), M(C), m(!1)) : v.current || (h(D ? "area" : "timeseries"), f(a), j(s), M(C), (v.current = !0)));
+                    }, [t, c, D, a, s, C]);
                 const A = (0, d.useMemo)(() => Boolean(o.monetized && e), [o.monetized, e]),
                     I = (0, d.useMemo)(() => {
                         const e = [
@@ -454,14 +454,14 @@
                     { analytics: l } = (0, u.M1)(),
                     a = Number(e?.videoResult?.video_quartile_views?.[0]?.total ?? 0),
                     s = e.viewMetrics.views,
-                    i = s && a ? (s / a) * 100 : 0,
-                    t = e.formattedVideo.averageWatchTime,
+                    t = s && a ? (s / a) * 100 : 0,
+                    i = e.formattedVideo.averageWatchTime,
                     r = e.viewMetrics.watchTime / 1e3 / 60 / 60,
                     o = [
                         { label: l.ImpressionsLabel, value: (0, y.uf)(a) },
-                        { label: l.ImpressionToViewsLabel, value: (0, y.rl)(i) },
+                        { label: l.ImpressionToViewsLabel, value: (0, y.rl)(t) },
                         { label: l.Views, value: (0, y.uf)(s) },
-                        { label: l.AverageWatchTimeLabel, value: t },
+                        { label: l.AverageWatchTimeLabel, value: i },
                         { label: `${l.WatchTimeLabel} (${l.hours})`, value: (0, y.uf)(r) },
                     ],
                     c = [1, 3],
@@ -471,8 +471,8 @@
                             a = 100 / (o.length - c.length * (1 - 0.85));
                         let n = 0;
                         for (let s = 0; s < o.length; s++) {
-                            const i = c.includes(s) ? 0.85 * a : a;
-                            e.push(i), s < o.length - 1 && ((n += i), l.push(n));
+                            const t = c.includes(s) ? 0.85 * a : a;
+                            e.push(t), s < o.length - 1 && ((n += t), l.push(n));
                         }
                         return { stepHeights: e, positions: l };
                     })();
@@ -485,13 +485,13 @@
                             children: o.map((e, l) => {
                                 const a = p[l] || 0,
                                     s = m[l] || 0,
-                                    i = a + (l > 0 ? 0.5 : 0),
-                                    t = a + s - (l < o.length - 1 ? 0.2 : 0),
-                                    r = 100 - 0.6 * i,
-                                    u = 100 - 0.6 * t,
+                                    t = a + (l > 0 ? 0.5 : 0),
+                                    i = a + s - (l < o.length - 1 ? 0.2 : 0),
+                                    r = 100 - 0.6 * t,
+                                    u = 100 - 0.6 * i,
                                     g = (100 - r) / 2,
                                     y = (100 - u) / 2,
-                                    x = `polygon(\n            ${g}% ${i}%, \n            ${g + r}% ${i}%, \n            ${y + u}% ${t}%, \n            ${y}% ${t}%\n          )`,
+                                    x = `polygon(\n            ${g}% ${t}%, \n            ${g + r}% ${t}%, \n            ${y + u}% ${i}%, \n            ${y}% ${i}%\n          )`,
                                     v = (0, d.useRef)(null);
                                 return (
                                     (0, d.useEffect)(() => {
@@ -522,19 +522,19 @@
             function A() {
                 const { analytics: e } = (0, u.M1)(),
                     { posts: l, currentUserId: a } = (0, g.Mh)(),
-                    [s, i] = (0, d.useState)("all"),
-                    t = (0, d.useMemo)(() => ("all" !== s && l ? (a ? l.filter((e) => e.author.id === a) : []) : l || []), [l, s, a]),
+                    [s, t] = (0, d.useState)("all"),
+                    i = (0, d.useMemo)(() => ("all" !== s && l ? (a ? l.filter((e) => e.author.id === a) : []) : l || []), [l, s, a]),
                     r = l?.length || 0;
-                return (0, n.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, n.jsxs)("div", { className: "flex items-center justify-between pb-2.5", children: [(0, n.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.CreatePostLabel, " ", (0, n.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, y.uf)(r), ")"] })] }), (0, n.jsxs)("div", { className: "flex shrink-0", children: [(0, n.jsx)("button", { type: "button", className: "px-3 pb-1 font-medium text-subtext1 border-b-2 " + ("all" === s ? "text-text border-primary" : "text-gray-700 border-transparent"), onClick: () => i("all"), children: e.allContentTypes || "All Posts" }), (0, n.jsx)("button", { type: "button", className: "px-3 pb-1 font-medium text-subtext1 border-b-2 " + ("yours" === s ? "text-text border-primary" : "text-gray-700 border-transparent"), onClick: () => i("yours"), children: e.YourVideos?.replace("videos", "posts") || "Your Posts" })] })] }), (0, n.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, n.jsx)("p", { className: "text-gray-600 mt-2", children: e.noDataAvailable }) : (0, n.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-0 md:space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e, l) => (0, n.jsx)(C, { post: e, isLast: l === t.length - 1 }, e.id)) }) })] });
+                return (0, n.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, n.jsxs)("div", { className: "flex items-center justify-between pb-2.5", children: [(0, n.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.CreatePostLabel, " ", (0, n.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, y.uf)(r), ")"] })] }), (0, n.jsxs)("div", { className: "flex shrink-0", children: [(0, n.jsx)("button", { type: "button", className: "px-3 pb-1 font-medium text-subtext1 border-b-2 " + ("all" === s ? "text-text border-primary" : "text-gray-700 border-transparent"), onClick: () => t("all"), children: e.allContentTypes || "All Posts" }), (0, n.jsx)("button", { type: "button", className: "px-3 pb-1 font-medium text-subtext1 border-b-2 " + ("yours" === s ? "text-text border-primary" : "text-gray-700 border-transparent"), onClick: () => t("yours"), children: e.YourVideos?.replace("videos", "posts") || "Your Posts" })] })] }), (0, n.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === i.length ? (0, n.jsx)("p", { className: "text-gray-600 mt-2", children: e.noDataAvailable }) : (0, n.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-0 md:space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: i.map((e, l) => (0, n.jsx)(C, { post: e, isLast: l === i.length - 1 }, e.id)) }) })] });
             }
-            function I({ mediaKey: e, isMockData: l = !1, estimatedRevenueVideoDetails: a = !1, videoOverviewUrl: s = "/analytics/media-tab", showWatchTimeFunnel: i = !1 }) {
-                const [t, r] = (0, d.useState)(() => (0, m.X)(-1));
-                return (0, n.jsx)(g.lT, { mediaKey: e, timeRange: t, isMockData: l, estimatedRevenueVideoDetails: a, children: (0, n.jsx)(U, { timeRange: t, setTimeRange: r, estimatedRevenueVideoDetails: a, videoOverviewUrl: s, showWatchTimeFunnel: i }) });
+            function I({ mediaKey: e, isMockData: l = !1, estimatedRevenueVideoDetails: a = !1, videoOverviewUrl: s = "/analytics/media-tab", showWatchTimeFunnel: t = !1 }) {
+                const [i, r] = (0, d.useState)(() => (0, m.X)(-1));
+                return (0, n.jsx)(g.lT, { mediaKey: e, timeRange: i, isMockData: l, estimatedRevenueVideoDetails: a, children: (0, n.jsx)(U, { timeRange: i, setTimeRange: r, estimatedRevenueVideoDetails: a, videoOverviewUrl: s, showWatchTimeFunnel: t }) });
             }
             function U({ timeRange: e, setTimeRange: l, estimatedRevenueVideoDetails: a = !1, videoOverviewUrl: o = "/analytics/media-tab", showWatchTimeFunnel: y = !1 }) {
                 const { analytics: p } = (0, u.M1)(),
                     { formattedVideo: x } = (0, g.Mh)(),
-                    b = (0, t.d)(),
+                    b = (0, i.d)(),
                     k = (0, d.useMemo)(() => {
                         const e = x?.publishedDate,
                             l = e ? (0, r.w)(new Date(), e) : Number.POSITIVE_INFINITY;
@@ -549,10 +549,10 @@
                     }, [p.allTime, x?.publishedDate]);
                 return (0, n.jsxs)("div", {
                     className: "text-text px-4 pt-4 flex-col gap-4",
-                    children: [(0, n.jsx)("div", { children: (0, n.jsx)(i.z, { icon: (0, n.jsx)(s.Z, {}), onClick: () => b.push(o), variant: "primaryText", "aria-label": "Back to videos" }) }), (0, n.jsxs)("div", { className: "flex flex-col min-[988px]:flex-row gap-6 pb-4", children: [(0, n.jsx)("div", { className: "flex-1", children: (0, n.jsx)("div", { className: "relative aspect-video overflow-hidden rounded-lg", children: x.url ? (0, n.jsx)(c.q, { poster: x.previewImage, src: x.url, url: x.contentType }) : (0, n.jsx)("div", { className: "w-full h-full bg-gray-100 flex items-center justify-center", children: (0, n.jsx)("span", { className: "text-gray-500", children: p.untitledVideo }) }) }) }), (0, n.jsx)("div", { className: "min-[988px]:w-[400px]", children: (0, n.jsx)(K, { estimatedRevenueVideoDetails: a }) })] }), (0, n.jsxs)("div", { className: "flex flex-col gap-4", children: [(0, n.jsxs)("div", { className: "w-full", children: [(0, n.jsx)("hr", { className: "border-t border-gray-100 my-3" }), (0, n.jsx)("div", { className: "flex justify-start md:justify-end overflow-x-auto scrollbar-hide", children: (0, n.jsx)(m.W, { timeRange: e, onChange: l, timeRangeOptions: k, showCalendar: !1 }) })] }), (0, n.jsx)("div", { className: "grid grid-cols-1 gap-4", children: (0, n.jsx)(M, { estimatedRevenueVideoDetails: a }) })] }), (0, n.jsx)("hr", { className: "border-t border-gray-100 my-6" }), (0, n.jsxs)("div", { className: "flex flex-col gap-6", children: [(0, n.jsxs)("div", { className: "grid grid-cols-1 min-[988px]:grid-cols-2 gap-6 items-start", children: [(0, n.jsx)(f, {}), (0, n.jsx)(A, {})] }), (0, n.jsxs)("div", { className: "grid grid-cols-1 gap-6 min-[988px]:grid-cols-2", children: [(0, n.jsx)("div", { children: y ? (0, n.jsx)(D, {}) : (0, n.jsx)(v, {}) }), (0, n.jsxs)("div", { className: "flex flex-col gap-6", children: [y && (0, n.jsx)("div", { children: (0, n.jsx)(v, {}) }), (0, n.jsx)("div", { children: (0, n.jsx)(h, {}) })] })] })] })],
+                    children: [(0, n.jsx)("div", { children: (0, n.jsx)(t.z, { "aria-label": "Back to videos", icon: (0, n.jsx)(s.Z, {}), onClick: () => b.push(o), variant: "primaryText" }) }), (0, n.jsxs)("div", { className: "flex flex-col min-[988px]:flex-row gap-6 pb-4", children: [(0, n.jsx)("div", { className: "flex-1", children: (0, n.jsx)("div", { className: "relative aspect-video overflow-hidden rounded-lg", children: x.url ? (0, n.jsx)(c.q, { poster: x.previewImage, src: x.url, type: x.contentType }) : (0, n.jsx)("div", { className: "w-full h-full bg-gray-100 flex items-center justify-center", children: (0, n.jsx)("span", { className: "text-gray-500", children: p.untitledVideo }) }) }) }), (0, n.jsx)("div", { className: "min-[988px]:w-[400px]", children: (0, n.jsx)(K, { estimatedRevenueVideoDetails: a }) })] }), (0, n.jsxs)("div", { className: "flex flex-col gap-4", children: [(0, n.jsxs)("div", { className: "w-full", children: [(0, n.jsx)("hr", { className: "border-t border-gray-100 my-3" }), (0, n.jsx)("div", { className: "flex justify-start md:justify-end overflow-x-auto scrollbar-hide", children: (0, n.jsx)(m.W, { timeRange: e, onChange: l, timeRangeOptions: k, showCalendar: !1 }) })] }), (0, n.jsx)("div", { className: "grid grid-cols-1 gap-4", children: (0, n.jsx)(M, { estimatedRevenueVideoDetails: a }) })] }), (0, n.jsx)("hr", { className: "border-t border-gray-100 my-6" }), (0, n.jsxs)("div", { className: "flex flex-col gap-6", children: [(0, n.jsxs)("div", { className: "grid grid-cols-1 min-[988px]:grid-cols-2 gap-6 items-start", children: [(0, n.jsx)(f, {}), (0, n.jsx)(A, {})] }), (0, n.jsxs)("div", { className: "grid grid-cols-1 gap-6 min-[988px]:grid-cols-2", children: [(0, n.jsx)("div", { children: y ? (0, n.jsx)(D, {}) : (0, n.jsx)(v, {}) }), (0, n.jsxs)("div", { className: "flex flex-col gap-6", children: [y && (0, n.jsx)("div", { children: (0, n.jsx)(v, {}) }), (0, n.jsx)("div", { children: (0, n.jsx)(h, {}) })] })] })] })],
                 });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5d4eba90.745473aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5d4eba90.8de7bcaa.js.map
