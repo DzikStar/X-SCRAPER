@@ -3,31 +3,32 @@
     ["bundle.Grok-3c20ad5c"],
     {
         730372: (e, t, n) => {
-            n.d(t, { $E: () => m, DL: () => d, OR: () => u });
+            n.d(t, { $E: () => h, DL: () => u, OR: () => m });
             var o = n(202784),
-                a = n(576648);
-            let r = !1;
-            function s(e) {
+                a = n(576648),
+                r = n(997041);
+            let s = !1;
+            function c(e) {
                 if (e instanceof HTMLElement)
-                    if ("A" !== e.tagName || e.dataset.copyPreserve) Array.from(e.children).forEach(s);
+                    if ("A" !== e.tagName || e.dataset.copyPreserve) Array.from(e.children).forEach(c);
                     else {
                         const t = document.createDocumentFragment();
                         for (; e.firstChild; ) t.appendChild(e.firstChild);
                         e.parentNode?.replaceChild(t, e);
                     }
             }
-            function c(e, t) {
+            function l(e, t) {
                 const n = window.getComputedStyle(e).fontFamily.toLowerCase(),
                     o = n.includes("mono") || n.includes("courier") || t;
-                (e.style.color = "black"), (e.style.backgroundColor = "transparent"), (e.style.fontFamily = o ? "monospace" : "sans-serif"), o && (e.style.fontSize = "10pt"), Array.from(e.children).forEach((e) => c(e, t));
+                (e.style.color = "black"), (e.style.backgroundColor = "transparent"), (e.style.fontFamily = o ? "monospace" : "sans-serif"), o && (e.style.fontSize = "10pt"), Array.from(e.children).forEach((e) => l(e, t));
             }
-            function l(e, t, n) {
+            function i(e, t, n) {
                 const o = e.getElementsByClassName(t);
                 Array.from(o).forEach((e) => {
                     e.style.display = n;
                 });
             }
-            function i(e) {
+            function d(e) {
                 let t = !0,
                     n = e?.cloneNode(!0);
                 const o = window.getSelection();
@@ -37,53 +38,51 @@
                     t.appendChild(e), (n = t);
                 }
                 if (!n) return [!1, "", ""];
-                l(n, "katex", "none"), l(n, "raw_katex", "inline"), l(n, "raw_katex_block", "block"), l(n, "omit-from-copy", "none");
+                i(n, "katex", "none"), i(n, "raw_katex", "inline"), i(n, "raw_katex_block", "block"), i(n, "omit-from-copy", "none");
                 const a = document.createElement("div");
-                (a.style.backgroundColor = "white"), a.appendChild(n), document.body.appendChild(a), s(n), c(n);
+                (a.style.backgroundColor = "white"), a.appendChild(n), document.body.appendChild(a), c(n), l(n);
                 const r = document.createRange();
                 r.selectNodeContents(n);
-                const i = window.getSelection(),
-                    d = i.rangeCount ? i.getRangeAt(0) : null;
-                i.removeAllRanges(), i.addRange(r);
+                const s = window.getSelection(),
+                    d = s.rangeCount ? s.getRangeAt(0) : null;
+                s.removeAllRanges(), s.addRange(r);
                 try {
                     document.execCommand("copy");
                 } catch (e) {
                     t = !1;
                 }
-                const u = h(a).replace(/(\r\n|\n){3,}/g, (e) => e.slice(0, e.indexOf("\n", e.indexOf("\n") + 1)));
+                const u = g(a).replace(/(\r\n|\n){3,}/g, (e) => e.slice(0, e.indexOf("\n", e.indexOf("\n") + 1)));
                 const m = a.innerHTML;
-                return document.body.removeChild(a), d && (i.removeAllRanges(), i.addRange(d)), [t, m, u];
+                return document.body.removeChild(a), d && (s.removeAllRanges(), s.addRange(d)), [t, m, u];
             }
-            function d(e, t) {
-                r = !0;
+            function u(e, t) {
+                s = !0;
                 const n = document.createElement("div");
                 n.style.backgroundColor = "white";
                 const o = document.createElement("div");
                 var a;
-                (o.innerHTML = `<pre><code class="language-${t}">${((a = e), a.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"))}</code></pre>`), c(o, !0), n.appendChild(o), document.body.appendChild(n);
-                const s = document.createRange();
-                s.selectNodeContents(n);
-                const l = window.getSelection(),
-                    i = l.rangeCount ? l.getRangeAt(0) : null;
-                l.removeAllRanges(), l.addRange(s);
+                (o.innerHTML = `<pre><code class="language-${t}">${((a = e), a.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"))}</code></pre>`), l(o, !0), n.appendChild(o), document.body.appendChild(n);
+                const r = document.createRange();
+                r.selectNodeContents(n);
+                const c = window.getSelection(),
+                    i = c.rangeCount ? c.getRangeAt(0) : null;
+                c.removeAllRanges(), c.addRange(r);
                 try {
                     document.execCommand("copy");
                 } catch (e) {}
-                document.body.removeChild(n), i && (l.removeAllRanges(), l.addRange(i)), (r = !1);
+                document.body.removeChild(n), i && (c.removeAllRanges(), c.addRange(i)), (s = !1);
             }
-            function u(e, t) {
-                r = !0;
-                const [n] = i(e);
-                !n && t && a.Z.setString(t), (r = !1);
+            function m(e, t) {
+                (s = !0), a.Z.setString((0, r.p)(t ?? "")), (s = !1);
             }
-            function m() {
+            function h() {
                 o.useEffect(() => {
                     const e = (e) => {
                         const t = window.getSelection().rangeCount > 0;
                         if (
                             (e.target instanceof HTMLElement && ("INPUT" === e.target.tagName || "TEXTAREA" === e.target.tagName)) ||
                             !t ||
-                            r ||
+                            s ||
                             (function () {
                                 const e = window.getSelection().getRangeAt(0).commonAncestorContainer;
                                 let t = e.nodeType === Node.TEXT_NODE ? e.parentElement : e;
@@ -104,7 +103,7 @@
                             })()
                         )
                             return;
-                        const [n, o, a] = i(null);
+                        const [n, o, a] = d(null);
                         if (n) {
                             e.preventDefault();
                             const t = document.getElementById("react-native-stylesheet"),
@@ -120,12 +119,12 @@
                     );
                 }, []);
             }
-            function h(e) {
+            function g(e) {
                 if (null === e || (e.nodeType !== Node.TEXT_NODE && e.nodeType !== Node.ELEMENT_NODE)) return "";
                 if (e.nodeType === Node.TEXT_NODE) return e.textContent.replace(/\t/g, "\t");
                 let t = "";
                 const n = Array.from(e.childNodes);
-                for (const e of n) e && (t += h(e));
+                for (const e of n) e && (t += g(e));
                 switch (e.nodeName.toLowerCase()) {
                     case "br":
                     case "div":
@@ -503,4 +502,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-3c20ad5c.5834625a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-3c20ad5c.528b3f0a.js.map

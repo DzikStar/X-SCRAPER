@@ -1330,7 +1330,7 @@
                 i("dce1817a", "Searching on 𝕏"),
                 i("f7151564", "Searching users on 𝕏"),
                 i("c43ef93e", "Browsing web page"),
-                i("jb097f6e", "Executing code"),
+                i("jb097f6e", "Wykonywanie kodu"),
                 i("ead81122", "Coś poszło nie tak. Odśwież, aby ponownie nawiązać połączenie lub spróbuj ponownie."),
                 i("f808a13a", "Przekroczono limit częstotliwości. Zaczekaj chwilę i spróbuj ponownie."),
                 i("e0481e5a", "Aktualnie Grok nie jest obsługiwany w Twoim kraju."),
@@ -4369,7 +4369,7 @@
                     return "Myślenie trwało " + e.seconds + " s";
                 }),
                 i("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "I jeszcze " + e.count;
                 }),
                 i("ha8fbe22", "Generuj więcej obrazów w ramach subskrypcji Premium"),
                 i("d95c232a", "Osiągnięto limit. Podnieś poziom konta, aby wygenerować więcej treści."),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " min " + this.props.seconds + " s"];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return ["Usunięte Notatki: " + this.props.num];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Usunięte Notatki"];
                             },
                         },
                         {
@@ -13369,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.4d4dac9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.d9c5717a.js.map

@@ -58,8 +58,8 @@
                 N = n(654917),
                 P = n(354851),
                 R = n(222656),
-                B = n(305442),
-                G = n(107267),
+                G = n(305442),
+                B = n(107267),
                 T = n(154003),
                 _ = n(731708),
                 z = n(837020),
@@ -87,7 +87,7 @@
                 ae = c.default.create((e) => ({ container: { overflowY: "auto", maxHeight: "100vh", position: "relative" }, prompts: { flexDirection: "row", flexWrap: "wrap" }, header: { flexDirection: "column", justifyContent: "center", alignItems: "center", paddingHorizontal: e.spaces.space36, marginBottom: e.spaces.space24 }, closeButton: { start: e.spaces.space16, top: e.spaces.space16, width: "fit-content", zIndex: 100, backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.infinite, position: "sticky" } })),
                 oe = () => {
                     const e = (0, k.I0)(),
-                        t = (0, G.useHistory)(),
+                        t = (0, B.useHistory)(),
                         n = () => {
                             e((0, E.pj)(E.Qn));
                         };
@@ -123,7 +123,7 @@
                         { isCompactLayout: d } = (0, le.ZP)(),
                         l = (0, k.I0)(),
                         s = (0, w.hC)("responsive_web_grok_show_citations"),
-                        i = (0, B.Z)("followup"),
+                        i = (0, G.Z)("followup"),
                         { isReasoningEnabled: c, isResearchEnabled: u } = (0, re.w)(),
                         b = (0, k.v9)(n.selectLastHumanMessage),
                         p = a.useCallback(
@@ -149,7 +149,7 @@
                 Ce = 9e5,
                 Ze = (0, o.cn)(0);
             function xe({ containerStyle: e = {}, containerRef: t, conversationId: n, initialPrompt: o, mode: l, disableStartScreen: c = !1, disableEducation: u = !1, contentPadding: b }) {
-                const G = (0, y.z)(),
+                const B = (0, y.z)(),
                     T = (0, k.I0)();
                 (0, R.Z)();
                 const { access: _, conversationKey: z, fetchConversationIdError: H, fetchConversationIdStatus: W, messageIds: L, status: O, ...K } = (0, N.ZP)(),
@@ -161,7 +161,7 @@
                     $ = U === D.ZP.LOADED;
                 (0, p.q)(() => {
                     const e = new Date().getTime();
-                    (!$ || Q + Ce < e) && (q(e), T((0, Z.C)({ analytics: G })()));
+                    (!$ || Q + Ce < e) && (q(e), T((0, Z.C)({ analytics: B })()));
                 });
                 const X = (0, k.v9)((e) => (0, E.t5)(e, E.Qn)),
                     J = (0, w.hC)("subscriptions_inapp_grok_nux_enabled"),
@@ -175,10 +175,10 @@
                     a.useEffect(() => {
                         H && T((0, A.fz)({ text: H }));
                     }, [T, H]);
-                const ae = (0, B.Z)("content");
+                const ae = (0, G.Z)("content");
                 a.useEffect(() => {
                     if (!Y && o?.text) {
-                        T((0, x.u)({ analytics: G, conversationKey: z })({ text: o.text, returnCitations: ee, analysisEntityId: o.analysisEntityId, mode: l, imageGenerationCount: ae, isReasoning: o?.isReasoning, isDeepsearch: o?.isDeepsearch }));
+                        T((0, x.u)({ analytics: B, conversationKey: z })({ text: o.text, returnCitations: ee, analysisEntityId: o.analysisEntityId, mode: l, imageGenerationCount: ae, isReasoning: o?.isReasoning, isDeepsearch: o?.isDeepsearch }));
                         const e = new URL(window.location);
                         e.searchParams.delete("text"), e.searchParams.delete("deepsearch"), e.searchParams.delete("think"), history.replaceState(null, "", e.toString());
                     }
@@ -216,7 +216,7 @@
                 d = n(731708),
                 l = n(371344),
                 s = n(661810),
-                i = n(451566),
+                i = n(401705),
                 c = n(167630),
                 u = n(154003),
                 b = n(392237),
@@ -241,8 +241,8 @@
                 N = {},
                 P = (0, Z.cn)(!1);
             const R = m().j95bac7a,
-                B = m().c5665922,
-                G = m().ff625c40,
+                G = m().c5665922,
+                B = m().ff625c40,
                 T = m().e5c7d602,
                 _ = m().dbd5d400,
                 z = m().i2209530,
@@ -317,7 +317,7 @@
                             a.createElement(
                                 o.Z,
                                 { style: O.section },
-                                a.createElement(d.ZP, null, B),
+                                a.createElement(d.ZP, null, G),
                                 a.createElement(
                                     o.Z,
                                     { style: O.textInputBox },
@@ -338,7 +338,7 @@
                             a.createElement(
                                 o.Z,
                                 { style: O.section },
-                                a.createElement(d.ZP, null, G),
+                                a.createElement(d.ZP, null, B),
                                 a.createElement(
                                     o.Z,
                                     { style: O.textInputBox },
@@ -415,23 +415,24 @@
             const a = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.21"),
-                        n.e("icons.16"),
-                        n.e("icons.10"),
-                        n.e("icons.19"),
-                        n.e("icons.1"),
                         n.e("icons.0"),
-                        n.e("icons.8"),
+                        n.e("icons.5"),
+                        n.e("icons.12"),
+                        n.e("icons.20"),
                         n.e("icons.2"),
+                        n.e("icons.21"),
+                        n.e("icons.28"),
+                        n.e("icons.10"),
+                        n.e("icons.17"),
+                        n.e("icons.9"),
                         n.e("icons.23"),
-                        n.e("icons.3"),
-                        n.e("icons.4"),
-                        n.e("icons.15"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.9"),
-                        n.e("icons.7"),
-                        n.e("icons.28"),
+                        n.e("icons.22"),
+                        n.e("icons.24"),
+                        n.e("icons.14"),
+                        n.e("icons.25"),
+                        n.e("icons.13"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -442,13 +443,12 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.26"),
-                        n.e("icons.24"),
-                        n.e("icons.29"),
+                        n.e("icons.6"),
+                        n.e("icons.3"),
+                        n.e("icons.4"),
+                        n.e("icons.1"),
+                        n.e("icons.8"),
                         n.e("icons.18"),
-                        n.e("icons.13"),
-                        n.e("icons.27"),
-                        n.e("icons.25"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
@@ -502,8 +502,9 @@
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
-                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-54234235"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e96e9bea"),
+                        n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-fc794e30"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
                         n.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6ac0f1a5"),
                         n.e("shared~bundle.Grok~loader.Markdown-6107ac1a"),
@@ -541,4 +542,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.291ed2ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.187f12aa.js.map

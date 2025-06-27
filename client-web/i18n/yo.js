@@ -10942,6 +10942,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + "s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "m" + this.props.seconds + "s"];
@@ -11881,6 +11887,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " pa àwọn àtòkọ rẹ́"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return [" Pa àwọn àtòkọ rẹ́"];
                             },
                         },
                         {
@@ -13358,4 +13370,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.c961c15a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.d3e6c42a.js.map

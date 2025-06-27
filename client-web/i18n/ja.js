@@ -225,7 +225,7 @@
                     return e.tier + " " + e.plan + "が" + e.percentage + "%オフ";
                 }),
                 f("b28602eb", function (e) {
-                    return "この夏は" + e.percentage + "%割引";
+                    return "夏季限定" + e.percentage + "%割引";
                 }),
                 f("he77d8e6", "期間限定プロモーション"),
                 f("adf3410a", "サブスクライブして新機能を利用しましょう。資格を満たしている場合、収益配分を受け取れます。"),
@@ -1320,7 +1320,7 @@
                 f("dce1817a", "Searching on 𝕏"),
                 f("f7151564", "Searching users on 𝕏"),
                 f("c43ef93e", "Browsing web page"),
-                f("jb097f6e", "Executing code"),
+                f("jb097f6e", "実行コード"),
                 f("ead81122", "問題が発生しました。やりなおすか、再接続するために更新してください。"),
                 f("f808a13a", "レート制限を超えました。しばらくしてからやりなおしてください。"),
                 f("e0481e5a", "お住まいの国では現在のところ、Grokはサポートされていません。"),
@@ -4359,7 +4359,7 @@
                     return e.seconds + "秒間シンキングしました";
                 }),
                 f("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "他" + e.count + "件";
                 }),
                 f("ha8fbe22", "プレミアムで画像をさらに生成する"),
                 f("d95c232a", "上限に達しました。さらに生成するにはアップグレードしてください。"),
@@ -10945,6 +10945,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + "秒"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "分" + this.props.seconds + "秒"];
@@ -11884,6 +11890,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + "件の削除済みノート"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["削除済みノート"];
                             },
                         },
                         {
@@ -13361,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.62d2671a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.a49f434a.js.map

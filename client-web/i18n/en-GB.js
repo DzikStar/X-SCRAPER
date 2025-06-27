@@ -10956,6 +10956,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + "s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "m" + this.props.seconds + "s"];
@@ -11895,6 +11901,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " deleted notes"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Deleted notes"];
                             },
                         },
                         {
@@ -13373,4 +13385,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.79a2cfaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.5d1a5cfa.js.map

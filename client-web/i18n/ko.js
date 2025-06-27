@@ -1324,7 +1324,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "코드 실행"),
                 n("ead81122", "문제가 발생했습니다. 새로고침하여 다시 연결하거나 다시 시도해 주세요."),
                 n("f808a13a", "요청 한도를 초과했습니다. 잠시 기다린 후 다시 시도해주세요."),
                 n("e0481e5a", "Grok은 현재 거주 국가에서 지원되지 않습니다."),
@@ -4363,7 +4363,7 @@
                     return e.seconds + "초 동안 생각 ";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " 등";
                 }),
                 n("ha8fbe22", "Premium으로 더 많은 이미지를 만드세요"),
                 n("d95c232a", "한도에 도달했습니다. 더 많이 생성하려면 지금 업그레이드하세요."),
@@ -10958,6 +10958,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + "초"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "분 " + this.props.seconds + "초"];
@@ -11897,6 +11903,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + "개의 삭제된 노트"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["삭제된 노트"];
                             },
                         },
                         {
@@ -13374,4 +13386,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.16c80aba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.f24d97aa.js.map

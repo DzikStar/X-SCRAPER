@@ -1321,7 +1321,7 @@
                 a("dce1817a", "Searching on 𝕏"),
                 a("f7151564", "Searching users on 𝕏"),
                 a("c43ef93e", "Browsing web page"),
-                a("jb097f6e", "Executing code"),
+                a("jb097f6e", "Code uitvoeren"),
                 a("ead81122", "Er is iets misgegaan. Vernieuw om opnieuw verbinding te maken of probeer het opnieuw."),
                 a("f808a13a", "De limiet is overschreden. Wacht een paar minuten en probeer het opnieuw."),
                 a("e0481e5a", "Grok wordt in jouw land momenteel niet ondersteund."),
@@ -4360,7 +4360,7 @@
                     return e.seconds + "s nagedacht";
                 }),
                 a("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " meer";
                 }),
                 a("ha8fbe22", "Genereer meer afbeeldingen met Premium"),
                 a("d95c232a", "Je hebt je limiet bereikt. Upgrade nu om meer te genereren."),
@@ -10952,6 +10952,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "m " + this.props.seconds + "s"];
@@ -11891,6 +11897,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " verwijderde Opmerkingen"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Verwijderde Opmerkingen"];
                             },
                         },
                         {
@@ -13369,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.4479169a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.857bd8ba.js.map

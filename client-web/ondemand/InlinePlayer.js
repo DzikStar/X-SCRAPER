@@ -265,10 +265,10 @@
                 C = r(870976),
                 A = r(992720),
                 T = r(325686);
-            const S = (e) => {
+            const w = (e) => {
                     e.stopPropagation();
                 },
-                w = ({ children: e, testID: t }) => a.createElement(T.Z, { onClick: S, style: y.default.absoluteFill, testID: t }, e);
+                S = ({ children: e, testID: t }) => a.createElement(T.Z, { onClick: w, style: y.default.absoluteFill, testID: t }, e);
             var k = r(90890),
                 R = r(97837);
             const L = "videoPlayer",
@@ -302,13 +302,13 @@
                                     twitterAuthedHttpClient: C,
                                     uiStack: A,
                                     videoEl: T,
-                                    videoPlayer: S,
-                                    viewCount: w,
+                                    videoPlayer: w,
+                                    viewCount: S,
                                     viewCountGraphData: k,
                                 } = this.props,
                                 R = this.context.featureSwitches.isTrue("rweb_video_pip_enabled"),
                                 L = this.context.featureSwitches.isTrue("rweb_live_broadcast_rewind_enabled");
-                            return a.createElement(P.R.Consumer, null, ({ prerollDisplayLocation: P }) => a.createElement(p.Z, (0, i.Z)({ adProvider: this._tweetAdProvider(P), additionalBadges: t, analytics: r, "aria-label": o, aspectRatio: n, basePlayerClass: S, configType: "static", contentId: f, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: b, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: _, includeBroadcastEventAssociation: d, intentToPlayTime: u, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: y, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: g, requestedTimecode: E, twitterAuthedHttpClient: C, videoEl: T, videoId: v, viewCount: w, viewCountGraphData: k, vmapUrl: I }, e), A));
+                            return a.createElement(P.R.Consumer, null, ({ prerollDisplayLocation: P }) => a.createElement(p.Z, (0, i.Z)({ adProvider: this._tweetAdProvider(P), additionalBadges: t, analytics: r, "aria-label": o, aspectRatio: n, basePlayerClass: w, configType: "static", contentId: f, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: b, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: _, includeBroadcastEventAssociation: d, intentToPlayTime: u, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: y, objectFitVideo: s && s.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: v.id, playerId: m, precache: this._shouldAutoplay, publisherId: g, requestedTimecode: E, twitterAuthedHttpClient: C, videoEl: T, videoId: v, viewCount: S, viewCountGraphData: k, vmapUrl: I }, e), A));
                         }),
                         (this._setPlayerApi = (e) => {
                             const { customOverlay: t, onMuteChange: r, onSetPlayerApi: i } = this.props;
@@ -459,7 +459,7 @@
                         p = l && l.length ? (d ? "gif" : "media_entity") : "vmap";
                     this._isLooping = !!(i || d || u || (r && r <= this._getLoopingThreshold()));
                     const h = { contentType: p, loop: this._isLooping, maxLoopCount: this._isLooping ? o : void 0, maxLoopingThresholdSec: e ? 6 : void 0, poster: n && n.url, promotedContext: s && (s.impression_id || s.disclosure_type) ? { impressionId: s.impression_id, disclosureType: s.disclosure_type } : void 0, shouldCapBitrate: t, variants: l ? (0, E.rD)(l) : [] };
-                    return a.createElement(w, { testID: L }, this._renderHorizonPlayer(h));
+                    return a.createElement(S, { testID: L }, this._renderHorizonPlayer(h));
                 }
                 _submitInitialPlacement() {
                     const { heightsReady: e } = this.props,
@@ -601,7 +601,7 @@
                 o = Object.freeze({ TIMELINE_HOME: "TIMELINE_HOME", SEARCH_TWEETS: "SEARCH_TWEETS", PROFILE_TWEETS: "PROFILE_TWEETS", OTHER: "OTHER" });
         },
         109223: (e, t, r) => {
-            r.d(t, { jc: () => A, Q3: () => k, C: () => w });
+            r.d(t, { jc: () => A, Q3: () => k, C: () => S });
             r(571372), r(136728);
             var i = r(329491),
                 a = r(962741),
@@ -722,8 +722,8 @@
                     return e;
                 },
             });
-            const S = (e, t) => e[l.Yf][t] || I;
-            function w(e, t = l.Nw.OTHER) {
+            const w = (e, t) => e[l.Yf][t] || I;
+            function S(e, t = l.Nw.OTHER) {
                 return (r, i, { api: o, featureSwitches: n }) => {
                     if (!Array.isArray(e)) throw new Error("unable to fetch prerolls without timeline entries");
                     if (e.length < 1) return Promise.resolve();
@@ -760,7 +760,7 @@
             function k(e, t = l.Nw.OTHER) {
                 return (r, a, { api: o, featureSwitches: n }) => {
                     if (e) {
-                        const n = S(a(), t),
+                        const n = w(a(), t),
                             { dynamicIVCollection: s, eligibleTweets: l, prerollEligibilityCollection: c, prerollMetadataCollection: d, promotedMetadataCollection: u } = n,
                             p = s[e],
                             h = u[e],
@@ -923,6 +923,19 @@
                 return i.createElement(a.Z, { style: [u.default.absoluteFill, t ? null : y.blankOverlay] }, t ? i.createElement(i.Fragment, null, i.createElement(a.Z, { style: y.backgroundImage }, n && i.createElement(d.Z, { resizeMode: "cover", source: n, style: u.default.absoluteFill })), i.createElement(a.Z, { style: y.overlay })) : null, i.createElement(a.Z, { style: y.errorContainer }, i.createElement(a.Z, null, o ? i.createElement(s.default, { style: y.playErrorIcon }) : null), i.createElement(a.Z, { focusable: !0 }, i.createElement(l.ZP, { style: t ? y.errorMsgTextWhite : y.errorMsgTextGray }, r)), h ? i.createElement(c.ZP, { onPress: h, style: y.buttonContainer, type: "brandFilled" }, p) : null));
             }
             const y = u.default.create((e) => ({ backgroundImage: { ...u.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...u.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
+        },
+        452693: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var i = r(202784),
+                a = r(890601),
+                o = r(783427),
+                n = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
         411240: (e, t, r) => {
             r.d(t, { Z: () => i });
@@ -1314,8 +1327,8 @@
                 C = I.prototype,
                 A = n.TypeError,
                 T = l("".slice),
-                S = l("".charCodeAt),
-                w = function (e) {
+                w = l("".charCodeAt),
+                S = function (e) {
                     var t,
                         r,
                         i,
@@ -1327,10 +1340,10 @@
                         c = y(e, "number");
                     if (h(c)) throw new A("Cannot convert a Symbol value to a number");
                     if ("string" == typeof c && c.length > 2)
-                        if (((c = P(c)), 43 === (t = S(c, 0)) || 45 === t)) {
-                            if (88 === (r = S(c, 2)) || 120 === r) return NaN;
+                        if (((c = P(c)), 43 === (t = w(c, 0)) || 45 === t)) {
+                            if (88 === (r = w(c, 2)) || 120 === r) return NaN;
                         } else if (48 === t) {
-                            switch (S(c, 1)) {
+                            switch (w(c, 1)) {
                                 case 66:
                                 case 98:
                                     (i = 2), (a = 49);
@@ -1342,7 +1355,7 @@
                                 default:
                                     return +c;
                             }
-                            for (n = (o = T(c, 2)).length, s = 0; s < n; s++) if ((l = S(o, s)) < 48 || l > a) return NaN;
+                            for (n = (o = T(c, 2)).length, s = 0; s < n; s++) if ((l = w(o, s)) < 48 || l > a) return NaN;
                             return parseInt(o, i);
                         }
                     return +c;
@@ -1356,7 +1369,7 @@
                                 : I(
                                       (function (e) {
                                           var t = y(e, "number");
-                                          return "bigint" == typeof t ? t : w(t);
+                                          return "bigint" == typeof t ? t : S(t);
                                       })(e),
                                   );
                     return p(C, (t = this)) &&
@@ -1398,4 +1411,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.915fb69a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer.29ea0d6a.js.map

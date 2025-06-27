@@ -1320,7 +1320,7 @@
                 f("dce1817a", "Searching on 𝕏"),
                 f("f7151564", "Searching users on 𝕏"),
                 f("c43ef93e", "Browsing web page"),
-                f("jb097f6e", "Executing code"),
+                f("jb097f6e", "正在执行代码"),
                 f("ead81122", "出错了，请刷新以重新连接或重试。"),
                 f("f808a13a", "超过频率限制。请稍后再试。"),
                 f("e0481e5a", "你所在的国家/地区暂时不支持 Grok。"),
@@ -4359,7 +4359,7 @@
                     return "已经思考 " + e.seconds + " 秒";
                 }),
                 f("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "其他 " + e.count + " 个";
                 }),
                 f("ha8fbe22", "升级 Premium 以生成更多图片"),
                 f("d95c232a", "你已达到限额。立即升级以生成更多内容。"),
@@ -10954,6 +10954,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " 秒"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "分" + this.props.seconds + "秒"];
@@ -11893,6 +11899,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " 删除了附注"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["删除附注"];
                             },
                         },
                         {
@@ -13370,4 +13382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.ae37575a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.8f08407a.js.map

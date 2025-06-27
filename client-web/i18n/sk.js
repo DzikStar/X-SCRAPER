@@ -1330,7 +1330,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "Spúšťa kód"),
                 n("ead81122", "Došlo k chybe. Obnovte stránku, aby ste sa znova pripojili, alebo skúste operáciu zopakovať."),
                 n("f808a13a", "Bol prekročený limit. Chvíľu počkajte a potom to skúste znova."),
                 n("e0481e5a", "Grok nie je v súčasnosti vo vašej krajine podporovaný."),
@@ -4369,7 +4369,7 @@
                     return "Premýšľal " + e.seconds + " s";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "ešte " + e.count;
                 }),
                 n("ha8fbe22", "Generujte viac obrázkov s predplatným Premium"),
                 n("d95c232a", "Dosiahli ste limit. Ak toho chcete vygenerovať viac, aktivujte si predplatné."),
@@ -10952,6 +10952,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " min. " + this.props.seconds + " s"];
@@ -11891,6 +11897,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return ["Odstránené poznámky: " + this.props.num];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Odstránené poznámky"];
                             },
                         },
                         {
@@ -13371,4 +13383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.2a86f0da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.f1cfd2da.js.map

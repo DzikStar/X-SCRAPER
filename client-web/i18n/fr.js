@@ -1325,7 +1325,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "Exécution du code"),
                 n("ead81122", "Une erreur est survenue. Veuillez rafraîchir la page pour vous reconnecter ou réessayer."),
                 n("f808a13a", "Vous avez atteint la limite. Veuillez patienter quelques instants et réessayer."),
                 n("e0481e5a", "Grok n'est pas pris en charge dans votre pays pour le moment."),
@@ -4364,7 +4364,7 @@
                     return "Réflexion d'une durée de " + e.seconds + " s";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " autres";
                 }),
                 n("ha8fbe22", "Générez plus d'images avec Premium"),
                 n("d95c232a", "Vous avez atteint votre limite. Effectuez une mise à niveau pour en générer plus."),
@@ -10943,6 +10943,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " m " + this.props.seconds + " s"];
@@ -11882,6 +11888,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " notes supprimées"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Notes supprimées"];
                             },
                         },
                         {
@@ -13359,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.1be163aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.efbd8d0a.js.map

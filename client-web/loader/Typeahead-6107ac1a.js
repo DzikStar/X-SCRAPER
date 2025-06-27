@@ -1,32 +1,51 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.Typeahead-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
+    ["loader.Typeahead-6107ac1a", "loader.AudioDock", "loader.AudioContextVoiceMedia", "icons/IconPlus-js"],
     {
-        879113: (e, t, i) => {
+        642153: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => m });
-            var s = i(202784),
-                r = i(476984),
-                o = i.n(r),
-                n = i(143778),
-                a = i(750410),
-                l = i(682830);
-            const d = "failed",
-                h = "loaded",
-                c = "loading",
+            r.d(t, { Z: () => a });
+            var i = r(202784),
+                o = r(325686),
+                s = r(392237),
+                n = r(823161);
+            const a = (e) => {
+                    const { borderColor: t = "cellBackground", borderWidth: r = "small", style: a, userAvatarSize: c = "medium", userAvatarUrls: d, withIncreasedSpacing: h } = e,
+                        u = d.length,
+                        m = "transparent" === t;
+                    return i.createElement(
+                        o.Z,
+                        { style: [l.root, a, { height: n.default.getSizeStyle(c)?.height }] },
+                        d.map((e, o) => i.createElement(n.default, { backgroundColor: t, borderColor: t, borderWidth: m ? "none" : r, key: o, size: c, style: [0 !== o && { marginStart: -1 * s.default.theme.spacesPx[h ? "space4" : "space12"] }, { zIndex: u - o }], uri: e })),
+                    );
+                },
+                l = s.default.create((e) => ({ root: { flexDirection: "row", flexShrink: 0, overflow: "hidden", flexWrap: "wrap", justifyContent: "center" } }));
+        },
+        879113: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => m });
+            var i = r(202784),
+                o = r(476984),
+                s = r.n(o),
+                n = r(143778),
+                a = r(750410),
+                l = r(682830);
+            const c = "failed",
+                d = "loaded",
+                h = "loading",
                 u = "none";
-            class m extends s.Component {
+            class m extends i.Component {
                 shouldComponentUpdate(e) {
-                    const t = e.fetchStatus === h,
-                        i = this.props.fetchStatus !== e.fetchStatus;
-                    return !(!t && !i) || !o()(e, this.props);
+                    const t = e.fetchStatus === d,
+                        r = this.props.fetchStatus !== e.fetchStatus;
+                    return !(!t && !r) || !s()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: i, fetchStatus: r, icon: o, loadingMessage: n, onRequestRetry: h, render: m, renderFailure: p, retryMessage: g, retryable: f } = this.props;
-                    switch (r) {
-                        case d:
-                            return f ? s.createElement(a.Z, { icon: o, onRequestRetry: h, retryMessage: g }) : i ? s.createElement(l.m, { failureMessage: i }) : p();
+                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: o, icon: s, loadingMessage: n, onRequestRetry: d, render: m, renderFailure: p, retryMessage: g, retryable: f } = this.props;
+                    switch (o) {
                         case c:
-                            return s.createElement(l.J, { "aria-label": e, color: t, loadingMessage: n });
+                            return f ? i.createElement(a.Z, { icon: s, onRequestRetry: d, retryMessage: g }) : r ? i.createElement(l.m, { failureMessage: r }) : p();
+                        case h:
+                            return i.createElement(l.J, { "aria-label": e, color: t, loadingMessage: n });
                         case u:
                             return null;
                         default:
@@ -36,76 +55,140 @@
             }
             m.defaultProps = { renderFailure: n.Z, retryable: !0 };
         },
-        420412: (e, t, i) => {
+        420412: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => l });
-            var s = i(202784),
-                r = i(325686),
-                o = i(235902),
-                n = i(885015),
-                a = i(392237);
-            function l({ borderColor: e = "borderColor", isSlim: t = !1, label: i }) {
-                const { isWebRedesign: l } = o.ZP.useProps(),
-                    h = "borderColor" === e || "nestedBorderColor" === e ? d[e] : { backgroundColor: a.default.theme.colors[e] ?? a.default.theme.colors.borderColor };
-                return i ? s.createElement(n.Z, { style: !t && d.root, withGutter: !0 }, s.createElement(r.Z, { style: d.gapColumn }, s.createElement(r.Z, { style: [d.gap, h] })), s.createElement(r.Z, { style: d.gapText }, i), s.createElement(r.Z, { style: d.gapColumn }, s.createElement(r.Z, { style: [d.gap, h] }))) : s.createElement(r.Z, { style: [!t && d.root, l() && d.rootRedesign, d.gap, h] });
+            r.d(t, { Z: () => l });
+            var i = r(202784),
+                o = r(325686),
+                s = r(235902),
+                n = r(885015),
+                a = r(392237);
+            function l({ borderColor: e = "borderColor", isSlim: t = !1, label: r }) {
+                const { isWebRedesign: l } = s.ZP.useProps(),
+                    d = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: a.default.theme.colors[e] ?? a.default.theme.colors.borderColor };
+                return r ? i.createElement(n.Z, { style: !t && c.root, withGutter: !0 }, i.createElement(o.Z, { style: c.gapColumn }, i.createElement(o.Z, { style: [c.gap, d] })), i.createElement(o.Z, { style: c.gapText }, r), i.createElement(o.Z, { style: c.gapColumn }, i.createElement(o.Z, { style: [c.gap, d] }))) : i.createElement(o.Z, { style: [!t && c.root, l() && c.rootRedesign, c.gap, d] });
             }
-            const d = a.default.create((e) => ({ borderColor: { backgroundColor: a.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: a.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const c = a.default.create((e) => ({ borderColor: { backgroundColor: a.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: a.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
-        885015: (e, t, i) => {
+        885015: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => d });
-            var s = i(807896),
-                r = i(202784),
-                o = i(325686),
-                n = i(392237);
-            class a extends r.Component {
+            r.d(t, { Z: () => c });
+            var i = r(807896),
+                o = r(202784),
+                s = r(325686),
+                n = r(392237);
+            class a extends o.Component {
                 render() {
-                    const { children: e, style: t, withGutter: i, ...n } = this.props,
-                        a = r.Children.map(e, (e) => e && r.cloneElement(e, { style: [e.props.style, l.column, i && l.withGutterColumn] }));
-                    return r.createElement(o.Z, (0, s.Z)({ style: [t, l.root, i && l.withGutter] }, n), a);
+                    const { children: e, style: t, withGutter: r, ...n } = this.props,
+                        a = o.Children.map(e, (e) => e && o.cloneElement(e, { style: [e.props.style, l.column, r && l.withGutterColumn] }));
+                    return o.createElement(s.Z, (0, i.Z)({ style: [t, l.root, r && l.withGutter] }, n), a);
                 }
             }
             a.defaultProps = { withGutter: !1 };
             const l = n.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
-                d = a;
+                c = a;
         },
-        470397: (e, t, i) => {
+        215337: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => a });
-            i(136728);
-            var s = i(202784),
-                r = i(325686),
-                o = i(124964),
-                n = i(392237);
-            const a = ({ children: e, color: t = "gray700", size: i, style: n }) => {
+            r.d(t, { Z: () => n });
+            var i = r(202784),
+                o = r(325686);
+            class s extends i.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.getColors = () => {
+                            const { colors: e, locations: t } = this.props;
+                            return e
+                                .map((e, r) => {
+                                    const i = t[r];
+                                    let o = "";
+                                    return i && (o = ` ${100 * i}%`), e + o;
+                                })
+                                .join(",");
+                        });
+                }
+                render() {
+                    const { angle: e, angleUnit: t, children: r, style: s } = this.props;
+                    return i.createElement(o.Z, { style: [s, { backgroundImage: `linear-gradient(${e}${t},${this.getColors()})` }] }, r);
+                }
+            }
+            s.defaultProps = { angle: 180, angleUnit: "deg", locations: [] };
+            const n = s;
+        },
+        470397: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => a });
+            r(136728);
+            var i = r(202784),
+                o = r(325686),
+                s = r(124964),
+                n = r(392237);
+            const a = ({ children: e, color: t = "gray700", size: r, style: n }) => {
                     const a = [];
                     return (
-                        s.Children.forEach(e, (e) => {
-                            const r = a.length;
-                            e && (r > 0 && a.push(s.createElement(o.Z, { color: t, key: `middot-${r}`, size: i })), a.push(e));
+                        i.Children.forEach(e, (e) => {
+                            const o = a.length;
+                            e && (o > 0 && a.push(i.createElement(s.Z, { color: t, key: `middot-${o}`, size: r })), a.push(e));
                         }),
-                        a.length ? s.createElement(r.Z, { style: [l.middotGroup, n] }, a) : null
+                        a.length ? i.createElement(o.Z, { style: [l.middotGroup, n] }, a) : null
                     );
                 },
                 l = n.default.create((e) => ({ middotGroup: { alignItems: "baseline", flexDirection: "row", flexShrink: 1 } }));
         },
-        973014: (e, t, i) => {
+        378729: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => y });
-            var s = i(202784),
-                r = i(325686),
-                o = i(111677),
-                n = i.n(o),
-                a = i(837020),
-                l = i(379327),
-                d = i(913973),
-                h = i(731708),
-                c = i(58881),
-                u = i(530732),
-                m = i(392237),
-                p = i(599190);
+            r.d(t, { Z: () => f });
+            var i = r(202784),
+                o = r(325686),
+                s = r(111677),
+                n = r.n(s),
+                a = r(283379),
+                l = r(731708),
+                c = r(392237);
+            const d = n().f1a1b791,
+                h = n().if2bf8b4,
+                u = n().f3624b5c,
+                m = n().b4b3b113,
+                p = n().be222050,
+                g = n().hcbbe447;
+            class f extends i.Component {
+                render() {
+                    const { color: e, id: t, style: r } = this.props;
+                    return i.createElement(o.Z, { style: [y.root, r] }, i.createElement(a.default, { style: [y.icon, e && y[e]] }), i.createElement(l.ZP, { color: e, id: t, size: "subtext2" }, this._getPromotedLabel()));
+                }
+                _getPromotedLabel() {
+                    const { contentAuthorId: e, label: t, promotedContent: r } = this.props,
+                        { adMetadataContainer: i, advertiser: o, advertiser_name: s, disclosure_type: n } = r,
+                        a = e && o && e === o.id_str,
+                        l = "string" == typeof n && "political" === n.toLowerCase(),
+                        c = "string" == typeof n && "issue" === n.toLowerCase(),
+                        f = !(!i || "POLITICAL" !== i.disclaimerType) || l,
+                        y = !(!i || "ISSUE" !== i.disclaimerType) || c,
+                        { removePromotedAttributionForPreroll: w } = i || {};
+                    let E;
+                    return (E = t || (!s || a || w ? (f ? u : y ? p : h) : f ? m({ fullName: s }) : y ? g({ fullName: s }) : d({ fullName: s }))), E;
+                }
+            }
+            f.defaultProps = { color: "gray700" };
+            const y = c.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row" }, icon: { color: e.colors.gray700, height: "1em", marginEnd: e.spaces.space4, flexShrink: 0 }, gray700: { color: e.colors.gray700 }, white: { color: e.colors.white } }));
+        },
+        973014: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => w });
+            var i = r(202784),
+                o = r(325686),
+                s = r(111677),
+                n = r.n(s),
+                a = r(837020),
+                l = r(379327),
+                c = r(913973),
+                d = r(731708),
+                h = r(58881),
+                u = r(530732),
+                m = r(392237),
+                p = r(599190);
             const g = { active: n().e557ad8e, expand: n().e3a58c28, remove: n().h517e8d8 };
-            class f extends s.PureComponent {
+            class f extends i.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handleSecondaryClick = () => {
@@ -114,91 +197,508 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, avatar: t, compact: i, disabled: o, link: n, mode: a, onClick: l, secondaryAction: d, selected: p, style: f, testID: y, text: w } = this.props,
-                        E = this._renderIcon(!0, a),
-                        I = d && this._renderIcon(!1, d.mode),
-                        S = [_.root, i && _.compact, o && _.disabled, p && _.selected, f],
-                        T = [_.content, !!E && _.withIcon, !!t && ((i && _.withAvatarImageCompact) || _.withAvatarImage)],
-                        O = c.Z.generate({ backgroundColor: p ? m.default.theme.colors.primary : "transparent", color: p ? m.default.theme.colors.white : m.default.theme.colors.primary });
-                    return s.createElement(r.Z, { style: S, testID: y }, s.createElement(u.Z, { "aria-label": e || (a ? g[a] : ""), disabled: o, interactiveStyles: O, link: n, onPress: l, style: T }, this._renderAvatar(), s.createElement(h.ZP, { color: p ? "whiteOnColor" : "text", numberOfLines: 1, selectable: !1, style: _.text, weight: "bold" }, w), E), d ? s.createElement(u.Z, { "aria-label": d["aria-label"] || (d.mode ? g[d.mode] : ""), disabled: o || d.disabled, hoverLabel: { label: d.hoverLabel || (d.mode ? g[d.mode] : "") }, interactiveStyles: O, onPress: this._handleSecondaryClick, style: _.secondaryControl }, s.createElement(r.Z, { style: _.secondaryBorder }, I)) : null);
+                    const { "aria-label": e, avatar: t, compact: r, disabled: s, link: n, mode: a, onClick: l, secondaryAction: c, selected: p, style: f, testID: w, text: E } = this.props,
+                        b = this._renderIcon(!0, a),
+                        _ = c && this._renderIcon(!1, c.mode),
+                        v = [y.root, r && y.compact, s && y.disabled, p && y.selected, f],
+                        I = [y.content, !!b && y.withIcon, !!t && ((r && y.withAvatarImageCompact) || y.withAvatarImage)],
+                        S = h.Z.generate({ backgroundColor: p ? m.default.theme.colors.primary : "transparent", color: p ? m.default.theme.colors.white : m.default.theme.colors.primary });
+                    return i.createElement(o.Z, { style: v, testID: w }, i.createElement(u.Z, { "aria-label": e || (a ? g[a] : ""), disabled: s, interactiveStyles: S, link: n, onPress: l, style: I }, this._renderAvatar(), i.createElement(d.ZP, { color: p ? "whiteOnColor" : "text", numberOfLines: 1, selectable: !1, style: y.text, weight: "bold" }, E), b), c ? i.createElement(u.Z, { "aria-label": c["aria-label"] || (c.mode ? g[c.mode] : ""), disabled: s || c.disabled, hoverLabel: { label: c.hoverLabel || (c.mode ? g[c.mode] : "") }, interactiveStyles: S, onPress: this._handleSecondaryClick, style: y.secondaryControl }, i.createElement(o.Z, { style: y.secondaryBorder }, _)) : null);
                 }
                 _renderIcon(e = !0, t) {
-                    const { selected: i } = this.props,
-                        r = [_.icon, i && _.iconSelected],
-                        o = [_.icon];
+                    const { selected: r } = this.props,
+                        o = [y.icon, r && y.iconSelected],
+                        s = [y.icon];
                     switch (t) {
                         case p.D.Remove:
-                            return s.createElement(a.default, { style: [_.dismissIcon, e && r] });
+                            return i.createElement(a.default, { style: [y.dismissIcon, e && o] });
                         case p.D.Expand:
-                            return s.createElement(l.default, { style: e ? r : o });
+                            return i.createElement(l.default, { style: e ? o : s });
                         case p.D.Active:
-                            return s.createElement(d.default, { style: r });
+                            return i.createElement(c.default, { style: o });
                         default:
                             return null;
                     }
                 }
                 _renderAvatar() {
                     const { avatar: e, compact: t } = this.props;
-                    return e ? s.createElement(r.Z, { style: [_.avatarContainer, t ? _.avatarCompact : _.avatar] }, e) : null;
+                    return e ? i.createElement(o.Z, { style: [y.avatarContainer, t ? y.avatarCompact : y.avatar] }, e) : null;
                 }
             }
             f.defaultProps = { compact: !1, disabled: !1, selected: !1 };
-            const _ = m.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray200, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: "1px", flexDirection: "row", minHeight: e.spaces.space40, overflow: "hidden" }, content: { alignItems: "center", flexDirection: "row", flexGrow: 1, flexShrink: 1, paddingHorizontal: e.spaces.space16 }, text: { width: "100%" }, compact: { minHeight: e.spaces.space32 }, disabled: { borderColor: e.colors.gray50 }, selected: { backgroundColor: e.colors.primary, borderColor: e.colors.primary }, avatar: { height: e.spaces.space32, width: e.spaces.space32 }, avatarCompact: { height: e.spaces.space24, width: e.spaces.space24 }, avatarContainer: { justifyContent: "center", marginEnd: e.spaces.space8 }, withAvatarImage: { paddingStart: `calc(${e.spaces.space2} * 2)` }, withAvatarImageCompact: { paddingStart: `calc(${e.spaces.space1} * 3)` }, icon: { color: e.colors.primary, flexShrink: 0, marginStart: e.spaces.space12 }, iconSelected: { color: e.colors.whiteOnColor }, withIcon: { paddingEnd: e.spaces.space12 }, dismissIcon: { color: e.colors.gray300 }, secondaryControl: { flexShrink: 0, justifyContent: "center" }, secondaryBorder: { borderStartColor: e.colors.borderColor, borderStartWidth: e.borderWidths.small, paddingHorizontal: e.spaces.space12 } })),
-                y = f;
+            const y = m.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray200, borderRadius: e.borderRadii.infinite, borderStyle: "solid", borderWidth: "1px", flexDirection: "row", minHeight: e.spaces.space40, overflow: "hidden" }, content: { alignItems: "center", flexDirection: "row", flexGrow: 1, flexShrink: 1, paddingHorizontal: e.spaces.space16 }, text: { width: "100%" }, compact: { minHeight: e.spaces.space32 }, disabled: { borderColor: e.colors.gray50 }, selected: { backgroundColor: e.colors.primary, borderColor: e.colors.primary }, avatar: { height: e.spaces.space32, width: e.spaces.space32 }, avatarCompact: { height: e.spaces.space24, width: e.spaces.space24 }, avatarContainer: { justifyContent: "center", marginEnd: e.spaces.space8 }, withAvatarImage: { paddingStart: `calc(${e.spaces.space2} * 2)` }, withAvatarImageCompact: { paddingStart: `calc(${e.spaces.space1} * 3)` }, icon: { color: e.colors.primary, flexShrink: 0, marginStart: e.spaces.space12 }, iconSelected: { color: e.colors.whiteOnColor }, withIcon: { paddingEnd: e.spaces.space12 }, dismissIcon: { color: e.colors.gray300 }, secondaryControl: { flexShrink: 0, justifyContent: "center" }, secondaryBorder: { borderStartColor: e.colors.borderColor, borderStartWidth: e.borderWidths.small, paddingHorizontal: e.spaces.space12 } })),
+                w = f;
         },
-        599190: (e, t, i) => {
+        599190: (e, t, r) => {
             "use strict";
-            i.d(t, { D: () => s });
-            const s = Object.freeze({ Active: "active", Expand: "expand", Remove: "remove" });
+            r.d(t, { D: () => i });
+            const i = Object.freeze({ Active: "active", Expand: "expand", Remove: "remove" });
         },
-        19697: (e, t, i) => {
+        537439: (e, t, r) => {
             "use strict";
-            i.d(t, { q8: () => d, $i: () => o });
-            i(571372);
-            var s = i(790187);
-            const r = (e, t) => {
-                const i = document.createElement("canvas");
-                (i.width = e), (i.height = t);
-                const s = i.getContext("2d");
-                return (s.fillStyle = "#FFFFFF"), s.fillRect(0, 0, e, t), i;
+            r.d(t, { Z: () => L });
+            var i = r(202784),
+                o = r(111677),
+                s = r.n(o),
+                n = r(492140),
+                a = r(720600),
+                l = r(761744),
+                c = r(25001),
+                d = r(453333),
+                h = r(136483),
+                u = r(98440),
+                m = r(790093),
+                p = r(452693),
+                g = r(544367),
+                f = r(264171),
+                y = r(159340),
+                w = r(404971),
+                E = r(262009),
+                b = r(76388),
+                _ = r(488746),
+                v = r(246492),
+                I = r(520913),
+                S = r(731708),
+                x = r(642153),
+                C = r(879891),
+                T = r(392237),
+                O = r(54606);
+            const P = s().ae408b76,
+                R = s().j355f008,
+                D = s().habf9678,
+                F = s().db0798ed,
+                A = s().dc716ec9,
+                Z = ({ text: e }) => {
+                    const { direction: t } = (0, C.Z)();
+                    return i.createElement(S.ZP, { dir: t, withHashflags: !0 }, e);
+                },
+                M = (e, t) =>
+                    t
+                        ? P
+                        : ((e) => {
+                              const t = i.createElement(Z, { text: e });
+                              return i.createElement(s().I18NFormatMessage, { $i18n: "fcd931ed" }, t);
+                          })(e),
+                B = T.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
+                N = T.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
+                L = ({ contextType: e, iconColor: t, iconSize: r, link: o, retweetData: s, text: S, topicData: C, userAvatarUrls: P }) => {
+                    const { isSelfRetweet: L, name: k, screenName: z } = s || {},
+                        H = ((e, t, r, o = []) => {
+                            const s = B[t],
+                                S = [r ? { color: T.default.theme.colors[r] } : N.colorDeepGray, s],
+                                C = i.createElement(n.default, { style: S }),
+                                P = i.createElement(a.default, { style: S }),
+                                R = i.createElement(l.default, { style: S }),
+                                D = i.createElement(c.default, { style: S }),
+                                F = i.createElement(d.default, { style: S }),
+                                A = i.createElement(h.default, { style: N.circle }),
+                                Z = i.createElement(u.default, { style: S }),
+                                M = i.createElement(m.default, { style: S }),
+                                L = i.createElement(p.default, { style: S }),
+                                k = i.createElement(g.default, { style: S }),
+                                z = i.createElement(f.default, { style: S }),
+                                H = i.createElement(y.default, { style: S }),
+                                G = i.createElement(w.default, { style: S }),
+                                U = i.createElement(E.default, { style: S }),
+                                j = i.createElement(b.default, { style: S }),
+                                Q = i.createElement(_.default, { style: S }),
+                                W = i.createElement(v.default, { style: S }),
+                                $ = i.createElement(x.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: o }),
+                                V = i.createElement(I.default, { style: S });
+                            switch (e) {
+                                case O.Q.Pin:
+                                case O.Q.ReplyPin:
+                                    return C;
+                                case O.Q.Retweet:
+                                    return P;
+                                case O.Q.Like:
+                                    return R;
+                                case O.Q.Follow:
+                                    return D;
+                                case O.Q.Moment:
+                                    return F;
+                                case O.Q.NewTweets:
+                                    return A;
+                                case O.Q.Reply:
+                                case O.Q.Conversation:
+                                    return Z;
+                                case O.Q.Feedback:
+                                    return M;
+                                case O.Q.Topic:
+                                    return L;
+                                case O.Q.List:
+                                    return k;
+                                case O.Q.Location:
+                                    return z;
+                                case O.Q.Community:
+                                    return H;
+                                case O.Q.Spaces:
+                                    return G;
+                                case O.Q.Sparkle:
+                                    return U;
+                                case O.Q.SocialProof:
+                                case O.Q.FollowFollowed:
+                                    return W;
+                                case O.Q.FollowMutual:
+                                    return Q;
+                                case O.Q.FollowFollowing:
+                                    return j;
+                                case O.Q.Facepile:
+                                    return $;
+                                case O.Q.Bird:
+                                    return V;
+                                case O.Q.TextOnly:
+                                default:
+                                    return null;
+                            }
+                        })(e, r, t, P);
+                    switch (e) {
+                        case O.Q.Retweet:
+                            return { Icon: H, text: S || M(k, L), link: z ? `https://twitter.com/${z}` : void 0 };
+                        case O.Q.Pin:
+                            return { Icon: H, text: S || R };
+                        case O.Q.ReplyPin:
+                            return { Icon: H, text: D };
+                        case O.Q.Topic:
+                            return { Icon: H, "aria-label": "Recommendation" === C?.functionalityType || "RecWithEducation" === C?.functionalityType ? A({ topicName: S }) : F({ topicName: S }), text: S ? i.createElement(Z, { text: S }) : null, link: o };
+                        default:
+                            return { Icon: H, text: S ? i.createElement(Z, { text: S }) : null, link: o };
+                    }
+                };
+        },
+        126962: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => g });
+            r(136728);
+            var i = r(202784),
+                o = r(325686),
+                s = r(731708),
+                n = r(872405),
+                a = r(235902),
+                l = r(392237),
+                c = r(139052),
+                d = r(488684),
+                h = r(537439),
+                u = r(54606);
+            class m extends i.PureComponent {
+                render() {
+                    const { avatarSize: e, bottomControl: t, iconStyle: r, id: l, onLayout: c, rightControl: d, style: u, testID: m, textColor: g, textSize: f, topControl: y, weight: w, withBottomBorder: E, withLeftPadding: b, withTextCentered: _, ...v } = this.props,
+                        { Icon: I, "aria-label": S, link: x, text: C } = (0, h.Z)(v),
+                        T = i.createElement(s.ZP, { "aria-label": S, color: g, id: l, numberOfLines: 2, size: f, testID: m, weight: w, withoutTwemojiAndHashflags: !0 }, C),
+                        { cellStyle: O, viewStyle: P } = this._getStyles();
+                    return C ? i.createElement(a.ZP.UseProps, null, (s) => i.createElement(i.Fragment, null, y || null, i.createElement(o.Z, { onLayout: c, style: [u, P, s.socialContextRefreshEnabled() && !b && p.socialContextRefresh] }, i.createElement(n.Z, { avatarCell: I || (b ? null : void 0), avatarCellStyle: [r, p.socialContextIconColumn, !b && p.unsetIconWidth, s.socialContextRefreshEnabled() && !b && p.socialContextRefreshIcon], avatarSize: e, cellStyle: O }, i.createElement(o.Z, { style: p.cellWrapper }, i.createElement(o.Z, { style: [p.socialContextTextColumn, s.socialContextRefreshEnabled() && !b && p.socialContextRefreshTextColumn] }, x ? this._renderLink(x, T) : T), d || null)), t || null))) : null;
+                }
+                _renderLink(e, t) {
+                    const { contextType: r, id: o, onClick: n, retweetData: a, textColor: l, topicData: h } = this.props,
+                        { screenName: m } = a || {},
+                        p = i.createElement(s.ZP, { color: l, id: o, link: e, onClick: n, withoutTwemojiAndHashflags: !0 }, t);
+                    return r === u.Q.Topic && h ? i.createElement(c.Z, { topicId: h.topicId }, p) : r === u.Q.Retweet && m ? i.createElement(d.Z, { screenName: m }, p) : p;
+                }
+                _getStyles() {
+                    const { bottomControl: e, contextType: t, withBottomBorder: r, withTextCentered: i } = this.props,
+                        o = t === u.Q.TextOnly,
+                        s = r ? [p.bottomBorderMargin, !!e && p.bottomBorder] : [],
+                        n = r && !e ? [p.bottomBorder] : [];
+                    return o && n.push(p.topicContext), i && n.push(p.socialContextTextCentered), { viewStyle: s, cellStyle: n };
+                }
+            }
+            m.defaultProps = { iconSize: "small", textColor: "gray700", textSize: "subtext2", withBottomBorder: !1, withLeftPadding: !0, withTextCentered: !1 };
+            const p = l.default.create((e) => ({ socialContextIconColumn: { alignItems: "flex-end", justifyContent: "center" }, bottomBorderMargin: { marginBottom: e.componentDimensions.gutterVertical }, cellWrapper: { flexDirection: "row" }, bottomBorder: { paddingBottom: e.spaces.space4, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor }, topicContext: { paddingBottom: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, socialContextTextColumn: { alignItems: "flex-start", flexShrink: 1, justifyContent: "center" }, unsetIconWidth: { flexBasis: "unset" }, socialContextRefreshIcon: { marginEnd: e.spaces.space8 }, socialContextRefresh: { marginBottom: e.spaces.space8 }, socialContextRefreshTextColumn: { minHeight: e.spaces.space32 }, socialContextTextCentered: { justifyContent: "center" } })),
+                g = m;
+        },
+        54606: (e, t, r) => {
+            "use strict";
+            r.d(t, { Q: () => i });
+            r(202784);
+            const i = Object.freeze({ FacepileGroup: "FacepileGroup", Bird: "Bird", Community: "Community", Conversation: "Conversation", Facepile: "Facepile", Feedback: "Feedback", Follow: "Follow", FollowFollowed: "FollowFollowed", FollowFollowing: "FollowFollowing", FollowMutual: "FollowMutual", Like: "Like", List: "List", Location: "Location", Megaphone: "Megaphone", Moment: "Moment", NewTweets: "NewTweets", NewUser: "NewUser", Pin: "Pin", Reply: "Reply", RelatedTweets: "RelatedTweets", ReplyPin: "ReplyPin", Retweet: "Retweet", SmartBlockExpiration: "SmartBlockExpiration", SocialProof: "SocialProof", Spaces: "Spaces", Sparkle: "Sparkle", TextOnly: "TextOnly", Topic: "Topic", Trending: "Trending" });
+        },
+        181054: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => p });
+            var i = r(807896),
+                o = r(202784),
+                s = r(325686),
+                n = r(215337),
+                a = r(392237),
+                l = r(977220);
+            const c = (e) => `${e}%`,
+                d = a.default.create((e) => ({ container: { height: "100%", overflow: "hidden" }, animate: { height: "100%", width: c(500), transform: [{ translateX: "0%" }], animationDuration: "10000ms", animationIterationCount: "infinite", animationDirection: "alternate", animationTimingFunction: "linear", animationKeyframes: { "0%": { transform: [{ translateX: "0%" }] }, "100%": { transform: [{ translateX: c(-80) }] } } } }));
+            function h() {
+                const e = (0, l.ai)();
+                return o.createElement("defs", null, o.createElement("linearGradient", { gradientUnits: "userSpaceOnUse", id: u, x1: "-9.62%", x2: "109.62%", y1: "82.19%", y2: "17.81%" }, o.createElement("stop", { stopColor: e.primary }), o.createElement("stop", { offset: "1.05", stopColor: e.secondary })));
+            }
+            const u = "space-gradient";
+            h.fill = `url(#${u})`;
+            const m = {
+                    Default: function ({ children: e, style: t, type: r = "audiospace" }) {
+                        return o.createElement(
+                            n.Z,
+                            (0, i.Z)(
+                                {},
+                                (function (e) {
+                                    const t = (0, l.ai)(e);
+                                    return { ...(0, l.Cs)(), colors: [t.primary, t.secondary], locations: [-0.1505, 1.0496] };
+                                })(r),
+                                { style: t },
+                            ),
+                            e,
+                        );
+                    },
+                    Animated: function (e) {
+                        return o.createElement(
+                            s.Z,
+                            { style: [d.container, e.style] },
+                            o.createElement(
+                                n.Z,
+                                (0, i.Z)(
+                                    {},
+                                    (function () {
+                                        const e = (0, l.ai)();
+                                        return { ...(0, l.Cs)(), colors: [e.primary, e.secondary, e.primary, e.secondary, e.primary], locations: [0.16, 0.24, 0.54, 0.62, 0.88] };
+                                    })(),
+                                    { style: d.animate },
+                                ),
+                                e.children,
+                            ),
+                        );
+                    },
+                    SVGLinearGradient: h,
+                    getColors: l.ai,
+                    getDarkModeColors: l.K,
+                },
+                p = Object.freeze(m);
+        },
+        977220: (e, t, r) => {
+            "use strict";
+            r.d(t, { Cs: () => d, K: () => a, ai: () => l });
+            var i = r(465233),
+                o = r(483054),
+                s = r(295559),
+                n = r(392237);
+            function a(e = "audiospace") {
+                return n.default.theme.highContrastEnabled ? u(h.HighContrast[e]) : u(h.Default[e]);
+            }
+            function l(e = "audiospace") {
+                return n.default.theme.highContrastEnabled ? h.HighContrast[e] : h.Default[e];
+            }
+            const c = { angle: 61.63, angleUnit: "deg" };
+            function d() {
+                return (0, i.Z)(c);
+            }
+            const h = { Default: { audiospace: { primary: "#2D42FF", secondary: "#9C63FA" }, livevideo: { primary: "#F91880", secondary: "#F91880" } }, HighContrast: { audiospace: { primary: "#2C3CEF", secondary: "#8439FF" }, livevideo: { primary: "#890A46", secondary: "#890A46" } } };
+            function u(e) {
+                return { primary: m(e.primary), secondary: m(e.secondary) };
+            }
+            function m(e) {
+                const t = s.xO(e),
+                    r = o.$n({ color: t, coefficient: 0.5 });
+                return s.vq(s.rb(r)).slice(0, -2);
+            }
+        },
+        433460: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => p });
+            var i = r(807896),
+                o = r(202784),
+                s = r(325686),
+                n = r(111677),
+                a = r.n(n),
+                l = r(404971),
+                c = r(868634),
+                d = r(336373),
+                h = r(181054),
+                u = r(392237),
+                m = r(823161);
+            const p = function (e) {
+                const t = d.Z.useAnalytics(),
+                    [r, s] = o.useState(),
+                    n = !!(r && r > 70),
+                    { "aria-label": a, presenceRingType: l, spaceId: c, ...u } = e,
+                    p =
+                        a ||
+                        (function (e, t) {
+                            switch (e) {
+                                case "audiospace":
+                                    return w.activeAudioSpace({ screenName: t });
+                                case "livevideo":
+                                    return w.activeLiveVideo({ screenName: t });
+                                default:
+                                    return;
+                            }
+                        })(l, e.screenName);
+                o.useEffect(() => {
+                    switch (l) {
+                        case "audiospace":
+                            t.scribe({ action: "impression", element: "audiospace_ring" });
+                            break;
+                        case "livevideo":
+                            t.scribe({ action: "impression", element: "livevideo_ring" });
+                    }
+                }, [t, l]);
+                const f = o.useCallback((e) => o.createElement(h.Z.Default, (0, i.Z)({}, e, { type: l })), [l]);
+                return o.createElement(
+                    m.default,
+                    (0, i.Z)({}, u, {
+                        BorderComponent: f,
+                        "aria-label": p,
+                        avatarRef: function (e) {
+                            if (e) {
+                                const t = e.getBoundingClientRect();
+                                t.width !== r && s(t.width);
+                            }
+                        },
+                        borderWidth: n ? "large" : "medium",
+                        decoration: o.createElement(g, { isWide: n, type: l }),
+                        gapWidth: n ? "space4" : "space2",
+                        onClick: function () {
+                            switch (l) {
+                                case "audiospace":
+                                    t.scribe({ action: "click", element: "audiospace_ring" });
+                                    break;
+                                case "livevideo":
+                                    t.scribe({ action: "click", element: "livevideo_ring" });
+                            }
+                        },
+                        withLink: !0,
+                    }),
+                );
             };
-            function o(e, t, i, r, o) {
-                return l(t, i).then(
+            function g(e) {
+                switch (e.type) {
+                    case "audiospace":
+                    case "livevideo":
+                        return o.createElement(f, e);
+                    default:
+                        return null;
+                }
+            }
+            function f(e) {
+                return "livevideo" === e.type ? o.createElement(c.ZP, { fontSize: e.isWide ? "subtext2" : "subtext3", style: [y.liveVideoLabelContainer, y.borderNarrow, e.isWide ? y.liveVideoLabel : y.liveVideoLabelNarrow], type: "live" }) : o.createElement(s.Z, { style: [y.root, e.isWide ? y.rootWide : y.rootNarrow] }, o.createElement(h.Z.Default, { style: [y.spaceGradient, e.isWide ? y.borderWide : y.borderNarrow] }, o.createElement(l.default, { style: y.spaceIcon })));
+            }
+            const y = u.default.create((e) => {
+                    const t = e.spacesPx.space16 + e.spacesPx.space2,
+                        r = "100%",
+                        i = e.spacesPx.space4,
+                        o = e.spacesPx.space2;
+                    return { root: { borderRadius: e.borderRadii.infinite, bottom: 0, end: 0, height: "30%", minHeight: t, minWidth: t, pointerEvents: "none", position: "absolute", width: "30%" }, liveVideoLabelContainer: { maxWidth: "120%" }, liveVideoLabel: { borderColor: e.colors.cellBackground, bottom: 0, start: "50%", position: "absolute", transform: [{ translateX: "-50%" }, { translateY: "25%" }] }, liveVideoLabelNarrow: { borderColor: e.colors.cellBackground, bottom: 0, start: "50%", position: "absolute", transform: [{ translateX: "-50%" }, { translateY: "30%" }], paddingHorizontal: e.spaces.space2, paddingVertical: 0 }, rootWide: { end: -1 * i, bottom: -1 * i }, rootNarrow: { end: -1 * o, bottom: -1 * o }, borderWide: { borderWidth: i }, borderNarrow: { borderWidth: o }, spaceGradient: { justifyContent: "center", width: r, height: r, borderRadius: e.borderRadii.infinite, borderColor: e.colors.cellBackground }, spaceIcon: { padding: e.spaces.space2, color: e.colors.white } };
+                }),
+                w = { withoutUsernameFallback: a().b3688156, activeAudioSpace: a().c0eb8825, activeLiveVideo: a().d068dc6d };
+        },
+        238406: (e, t, r) => {
+            "use strict";
+            r.d(t, { Z: () => l });
+            var i = r(202784),
+                o = r(731708),
+                s = r(354149),
+                n = r(310452),
+                a = r(720283);
+            const l = ({ animateIn: e, description: t, entities: r, isConcise: l, style: c, testID: d, userId: h, withheldDescription: u, withheldEntities: m }) => {
+                const { description: p, entities: g } = (0, a.H)({ description: t, entities: r, withheldDescription: u, withheldEntities: m }),
+                    f = n.ZP.descriptionTextParts(p, g);
+                return f.length
+                    ? i.createElement(
+                          o.ZP,
+                          { dir: "auto", numberOfLines: l ? 2 : void 0, style: c, testID: d },
+                          f.map((t, r) => i.createElement(s.ZP, { animateIn: e, key: `user_${h}_textpart_${r}`, linkify: !0, part: t })),
+                      )
+                    : null;
+            };
+        },
+        720283: (e, t, r) => {
+            "use strict";
+            r.d(t, { H: () => i });
+            const i = ({ description: e, entities: t, withheldDescription: r, withheldEntities: i }) => (r ? { description: r, entities: i } : { description: e, entities: t });
+        },
+        748138: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => l });
+            var i = r(202784),
+                o = r(890601),
+                s = r(783427),
+                n = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        379327: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => l });
+            var i = r(202784),
+                o = r(890601),
+                s = r(783427),
+                n = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        452693: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => l });
+            var i = r(202784),
+                o = r(890601),
+                s = r(783427),
+                n = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        19697: (e, t, r) => {
+            "use strict";
+            r.d(t, { q8: () => c, $i: () => s });
+            r(571372);
+            var i = r(790187);
+            const o = (e, t) => {
+                const r = document.createElement("canvas");
+                (r.width = e), (r.height = t);
+                const i = r.getContext("2d");
+                return (i.fillStyle = "#FFFFFF"), i.fillRect(0, 0, e, t), r;
+            };
+            function s(e, t, r, o, s) {
+                return l(t, r).then(
                     (t) => (
-                        (function (e, t, i, r, o, n) {
+                        (function (e, t, r, o, s, n) {
                             const a = n || { top: 0, left: 0, width: t.width, height: t.height };
                             let l = a.left,
-                                d = a.top,
-                                h = a.width,
-                                c = a.height,
+                                c = a.top,
+                                d = a.width,
+                                h = a.height,
                                 u = 0,
                                 m = 0,
-                                p = i,
-                                g = r;
-                            switch ((e.save(), o)) {
-                                case s.Z.TOP_RIGHT:
-                                    e.scale(-1, 1), (l = t.width - a.width - a.left), (u = -i);
+                                p = r,
+                                g = o;
+                            switch ((e.save(), s)) {
+                                case i.Z.TOP_RIGHT:
+                                    e.scale(-1, 1), (l = t.width - a.width - a.left), (u = -r);
                                     break;
-                                case s.Z.BOTTOM_RIGHT:
-                                    e.rotate(Math.PI), (l = t.width - a.width - a.left), (d = t.height - a.height - a.top), (u = -i), (m = -r);
+                                case i.Z.BOTTOM_RIGHT:
+                                    e.rotate(Math.PI), (l = t.width - a.width - a.left), (c = t.height - a.height - a.top), (u = -r), (m = -o);
                                     break;
-                                case s.Z.BOTTOM_LEFT:
-                                    e.scale(1, -1), (d = t.height - a.height - a.top), (m = -r);
+                                case i.Z.BOTTOM_LEFT:
+                                    e.scale(1, -1), (c = t.height - a.height - a.top), (m = -o);
                                     break;
-                                case s.Z.LEFT_TOP:
-                                    e.translate(i / 2, r / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (l = a.top), (d = a.left), (h = a.height), (c = a.width), (u = -r / 2), (m = -i / 2), (p = r), (g = i);
+                                case i.Z.LEFT_TOP:
+                                    e.translate(r / 2, o / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (l = a.top), (c = a.left), (d = a.height), (h = a.width), (u = -o / 2), (m = -r / 2), (p = o), (g = r);
                                     break;
-                                case s.Z.LEFT_BOTTOM:
-                                    e.translate(i / 2, r / 2), e.rotate(Math.PI / 2), (l = a.top), (d = t.height - a.width - a.left), (h = a.height), (c = a.width), (u = -r / 2), (m = -i / 2), (p = r), (g = i);
+                                case i.Z.LEFT_BOTTOM:
+                                    e.translate(r / 2, o / 2), e.rotate(Math.PI / 2), (l = a.top), (c = t.height - a.width - a.left), (d = a.height), (h = a.width), (u = -o / 2), (m = -r / 2), (p = o), (g = r);
                                     break;
-                                case s.Z.RIGHT_BOTTOM:
-                                    e.translate(i / 2, r / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (l = t.width - a.height - a.top), (d = t.height - a.width - a.left), (h = a.height), (c = a.width), (u = -r / 2), (m = -i / 2), (p = r), (g = i);
+                                case i.Z.RIGHT_BOTTOM:
+                                    e.translate(r / 2, o / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (l = t.width - a.height - a.top), (c = t.height - a.width - a.left), (d = a.height), (h = a.width), (u = -o / 2), (m = -r / 2), (p = o), (g = r);
                                     break;
-                                case s.Z.RIGHT_TOP:
-                                    e.translate(i / 2, r / 2), e.rotate(-Math.PI / 2), (l = t.width - a.height - a.top), (d = a.left), (h = a.height), (c = a.width), (u = -r / 2), (m = -i / 2), (p = r), (g = i);
+                                case i.Z.RIGHT_TOP:
+                                    e.translate(r / 2, o / 2), e.rotate(-Math.PI / 2), (l = t.width - a.height - a.top), (c = a.left), (d = a.height), (h = a.width), (u = -o / 2), (m = -r / 2), (p = o), (g = r);
                             }
-                            e.drawImage(t, l, d, h, c, u, m, p, g), e.restore();
-                        })(t.getContext("2d"), e, t.width, t.height, r, o),
+                            e.drawImage(t, l, c, d, h, u, m, p, g), e.restore();
+                        })(t.getContext("2d"), e, t.width, t.height, o, s),
                         t
                     ),
                 );
@@ -207,271 +707,271 @@
                 a = 5242880;
             function l(e, t) {
                 if (window.CanvasRenderingContext2D) {
-                    const i = r(e, t);
-                    return d(i)
-                        .then(() => i)
+                    const r = o(e, t);
+                    return c(r)
+                        .then(() => r)
                         .catch(() => {
-                            const i = e * t;
-                            if (i > a) {
-                                const i = h(a, e, t);
-                                return l(i.width, i.height);
+                            const r = e * t;
+                            if (r > a) {
+                                const r = d(a, e, t);
+                                return l(r.width, r.height);
                             }
-                            if (i > n) {
-                                const i = h(n, e, t);
-                                return l(i.width, i.height);
+                            if (r > n) {
+                                const r = d(n, e, t);
+                                return l(r.width, r.height);
                             }
                             throw Error("Could not create valid canvas for resizing");
                         });
                 }
                 return Promise.reject(Error("Canvas is not supported in this browser"));
             }
-            function d(e) {
-                return new Promise((t, i) => {
-                    const s = e.toDataURL("image/jpeg");
-                    s && "data:," !== s ? t(s) : i(new Error("Malformed canvas"));
+            function c(e) {
+                return new Promise((t, r) => {
+                    const i = e.toDataURL("image/jpeg");
+                    i && "data:," !== i ? t(i) : r(new Error("Malformed canvas"));
                 });
             }
-            function h(e, t, i) {
-                const s = Math.sqrt((e * i) / t),
-                    r = (t * s) / i;
-                return { height: Math.floor(s), width: Math.floor(r) };
+            function d(e, t, r) {
+                const i = Math.sqrt((e * r) / t),
+                    o = (t * i) / r;
+                return { height: Math.floor(i), width: Math.floor(o) };
             }
         },
-        790187: (e, t, i) => {
+        790187: (e, t, r) => {
             "use strict";
-            i.d(t, { C: () => o, Z: () => s });
-            i(694898), i(38857), i(540171), i(157093), i(265688), i(270315), i(592529), i(86943), i(691157);
-            const s = Object.freeze({ UNKNOWN: 0, TOP_LEFT: 1, TOP_RIGHT: 2, BOTTOM_RIGHT: 3, BOTTOM_LEFT: 4, LEFT_TOP: 5, LEFT_BOTTOM: 6, RIGHT_BOTTOM: 7, RIGHT_TOP: 8 }),
-                r = (e, t, i = 65536) => {
-                    let s = new Uint8Array([]),
-                        r = 0;
-                    function o(o, n, a) {
-                        const l = o - r,
-                            d = l + n;
-                        if (l >= 0 && d <= s.length) a(s.subarray(l, d), o);
+            r.d(t, { C: () => s, Z: () => i });
+            r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157);
+            const i = Object.freeze({ UNKNOWN: 0, TOP_LEFT: 1, TOP_RIGHT: 2, BOTTOM_RIGHT: 3, BOTTOM_LEFT: 4, LEFT_TOP: 5, LEFT_BOTTOM: 6, RIGHT_BOTTOM: 7, RIGHT_TOP: 8 }),
+                o = (e, t, r = 65536) => {
+                    let i = new Uint8Array([]),
+                        o = 0;
+                    function s(s, n, a) {
+                        const l = s - o,
+                            c = l + n;
+                        if (l >= 0 && c <= i.length) a(i.subarray(l, c), s);
                         else {
                             const l = new FileReader();
                             (l.onload = function () {
-                                (s = new Uint8Array(this.result)), (r = o), a(s.subarray(0, n), o);
+                                (i = new Uint8Array(this.result)), (o = s), a(i.subarray(0, n), s);
                             }),
                                 (l.onerror = t.bind(null, 0)),
-                                null !== e && l.readAsArrayBuffer(e.slice(o, o + Math.max(i, n)));
+                                null !== e && l.readAsArrayBuffer(e.slice(s, s + Math.max(r, n)));
                         }
                     }
                     function n(e) {
-                        const i = { "MM\0*": !0, "II*\0": !1 }[String.fromCharCode.apply(null, e.subarray(0, 4))];
-                        if (void 0 === i) return void t(0);
-                        function s(t, s) {
-                            let r = 0;
-                            for (let o = 0; o < s; o++) r = (r << 8) + e[t + (i ? o : s - 1 - o)];
-                            return r;
+                        const r = { "MM\0*": !0, "II*\0": !1 }[String.fromCharCode.apply(null, e.subarray(0, 4))];
+                        if (void 0 === r) return void t(0);
+                        function i(t, i) {
+                            let o = 0;
+                            for (let s = 0; s < i; s++) o = (o << 8) + e[t + (r ? s : i - 1 - s)];
+                            return o;
                         }
-                        const r = e.length > 8 && s(4, 4);
-                        if (!r || r + 2 > e.length) return void t(0);
-                        let o = s(r, 2);
-                        if (r + 12 * o + 6 > e.length) return void t(0);
-                        let n = r + 2;
-                        for (; o > 0; ) {
-                            if (((o -= 1), 274 === s(n, 2) && 3 === s(n + 2, 2) && 1 === s(n + 4, 4))) return void t(s(n + 8, 2));
+                        const o = e.length > 8 && i(4, 4);
+                        if (!o || o + 2 > e.length) return void t(0);
+                        let s = i(o, 2);
+                        if (o + 12 * s + 6 > e.length) return void t(0);
+                        let n = o + 2;
+                        for (; s > 0; ) {
+                            if (((s -= 1), 274 === i(n, 2) && 3 === i(n + 2, 2) && 1 === i(n + 4, 4))) return void t(i(n + 8, 2));
                             n += 12;
                         }
                         t(0);
                     }
                     e instanceof Blob
-                        ? o(0, 10, function e(i, s) {
-                              const r = i[1];
-                              if (i.length < 4 || 255 !== i[0] || 217 === r) return void t(0);
-                              const a = r < 208 || r > 217 ? (i[2] << 8) + i[3] : 0;
-                              225 === r && a > 8 && "Exif\0\0" === String.fromCharCode.apply(null, i.subarray(4, 10)) ? o(s + 10, a - 8, n) : o(s + 2 + a, 10, e);
+                        ? s(0, 10, function e(r, i) {
+                              const o = r[1];
+                              if (r.length < 4 || 255 !== r[0] || 217 === o) return void t(0);
+                              const a = o < 208 || o > 217 ? (r[2] << 8) + r[3] : 0;
+                              225 === o && a > 8 && "Exif\0\0" === String.fromCharCode.apply(null, r.subarray(4, 10)) ? s(i + 10, a - 8, n) : s(i + 2 + a, 10, e);
                           })
                         : t(0);
                 },
-                o = (e, t) => {
-                    const i = document.documentElement && "from-image" === getComputedStyle(document.documentElement).imageOrientation;
-                    return new Promise((o) => {
-                        i
-                            ? o(s.TOP_LEFT)
-                            : r(
+                s = (e, t) => {
+                    const r = document.documentElement && "from-image" === getComputedStyle(document.documentElement).imageOrientation;
+                    return new Promise((s) => {
+                        r
+                            ? s(i.TOP_LEFT)
+                            : o(
                                   e,
                                   (e) => {
-                                      o(e);
+                                      s(e);
                                   },
                                   t,
                               );
                     });
                 };
         },
-        276259: (e, t, i) => {
+        276259: (e, t, r) => {
             "use strict";
-            i.d(t, { Lw: () => r, Re: () => c, VJ: () => a, ZF: () => u, hv: () => l, ku: () => s, qp: () => o, uv: () => n, v5: () => h });
-            i(571372), i(875640), i(694898), i(38857), i(540171), i(157093), i(265688), i(270315), i(592529), i(86943), i(691157), i(543673), i(240753), i(128399);
-            function s(e) {
+            r.d(t, { Lw: () => o, Re: () => h, VJ: () => a, ZF: () => u, hv: () => l, ku: () => i, qp: () => s, uv: () => n, v5: () => d });
+            r(571372), r(875640), r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(543673), r(240753), r(128399);
+            function i(e) {
                 const t = e.match(/=*$/);
                 return t ? Math.floor(0.75 * (e.length - t[0].length)) : 0.75 * e.length;
             }
-            function r(e) {
-                return new Promise((t, i) => {
-                    const s = e.split(/data:|;base64,/);
+            function o(e) {
+                return new Promise((t, r) => {
+                    const i = e.split(/data:|;base64,/);
                     if (Blob)
-                        if (3 !== s.length) i(Error("Invalid dataUri"));
+                        if (3 !== i.length) r(Error("Invalid dataUri"));
                         else if (atob)
                             if (Uint8Array) {
-                                const [, e, i] = s,
-                                    r = atob(i),
-                                    o = r.length,
-                                    n = Array(o);
-                                for (let e = 0; e < o; e++) n[e] = r.charCodeAt(e);
+                                const [, e, r] = i,
+                                    o = atob(r),
+                                    s = o.length,
+                                    n = Array(s);
+                                for (let e = 0; e < s; e++) n[e] = o.charCodeAt(e);
                                 t(new Blob([new Uint8Array(n)], { type: e }));
-                            } else i(Error("The Uint8Array type is not available"));
-                        else i(Error("The atob API is not available"));
-                    else i(Error("The Blob API is not available"));
+                            } else r(Error("The Uint8Array type is not available"));
+                        else r(Error("The atob API is not available"));
+                    else r(Error("The Blob API is not available"));
                 });
             }
-            const o = (e, t) =>
-                    new Promise((i, s) => {
-                        const r = new FileReader();
+            const s = (e, t) =>
+                    new Promise((r, i) => {
+                        const o = new FileReader();
                         t &&
                             (t.signal.onabort = () => {
-                                r.abort?.(), s(Error(u));
+                                o.abort?.(), i(Error(u));
                             }),
-                            (r.onload = (e) => {
-                                e.target instanceof FileReader && e.target.result instanceof ArrayBuffer ? i(e.target.result) : s(Error("The FileReader result was not of type ArrayBuffer"));
+                            (o.onload = (e) => {
+                                e.target instanceof FileReader && e.target.result instanceof ArrayBuffer ? r(e.target.result) : i(Error("The FileReader result was not of type ArrayBuffer"));
                             }),
-                            (r.onerror = (e) => {
-                                s(e);
+                            (o.onerror = (e) => {
+                                i(e);
                             }),
-                            r.readAsArrayBuffer(e);
+                            o.readAsArrayBuffer(e);
                     }),
                 n = (e, t) => {
-                    const i = document.createElement("a");
-                    (i.href = e), (i.download = t), (i.target = "_blank"), i.click(), i.remove();
+                    const r = document.createElement("a");
+                    (r.href = e), (r.download = t), (r.target = "_blank"), r.click(), r.remove();
                 },
                 a = (e) =>
                     ((e) =>
                         new Promise((t) => {
-                            const i = new Image();
-                            (i.onload = function () {
+                            const r = new Image();
+                            (r.onload = function () {
                                 const e = document.createElement("canvas");
-                                (e.width = i.width), (e.height = i.height), e.getContext("2d").drawImage(i, 0, 0), e.toBlob((e) => t(e), "image/png");
+                                (e.width = r.width), (e.height = r.height), e.getContext("2d").drawImage(r, 0, 0), e.toBlob((e) => t(e), "image/png");
                             }),
-                                (i.crossOrigin = "anonymous"),
-                                (i.src = e);
+                                (r.crossOrigin = "anonymous"),
+                                (r.src = e);
                         }))(e).then((e) => navigator.clipboard.write([new ClipboardItem({ "image/png": e })])),
                 l = async (e, t) => {
                     if (e.size <= t) return e;
-                    let i = e,
-                        s = 1;
-                    for (; i && i.size > t; )
+                    let r = e,
+                        i = 1;
+                    for (; r && r.size > t; )
                         try {
-                            s > 0.2 ? ((s *= 0.7), (i = await d(i, 1, s))) : (i = await d(i, 0.7, s));
+                            i > 0.2 ? ((i *= 0.7), (r = await c(r, 1, i))) : (r = await c(r, 0.7, i));
                         } catch (e) {
-                            i = void 0;
+                            r = void 0;
                         }
-                    return i;
+                    return r;
                 },
-                d = (e, t, i) =>
-                    new Promise((s, r) => {
-                        const o = new Image();
-                        (o.onload = () => {
+                c = (e, t, r) =>
+                    new Promise((i, o) => {
+                        const s = new Image();
+                        (s.onload = () => {
                             const e = document.createElement("canvas"),
-                                r = e.getContext("2d"),
-                                n = o.width * t,
-                                a = o.height * t;
+                                o = e.getContext("2d"),
+                                n = s.width * t,
+                                a = s.height * t;
                             (e.width = n),
                                 (e.height = a),
-                                r.drawImage(o, 0, 0, n, a),
+                                o.drawImage(s, 0, 0, n, a),
                                 e.toBlob(
                                     (e) => {
-                                        s(new File([e], "image.jpeg", { type: "image/jpeg" }));
+                                        i(new File([e], "image.jpeg", { type: "image/jpeg" }));
                                     },
                                     "image/jpeg",
-                                    i,
+                                    r,
                                 );
                         }),
-                            (o.onerror = () => r(new Error("Failed to load image while resizing"))),
-                            (o.src = URL.createObjectURL(e));
+                            (s.onerror = () => o(new Error("Failed to load image while resizing"))),
+                            (s.src = URL.createObjectURL(e));
                     }),
-                h = ["image/jpeg", "image/png", "image/webp"],
-                c = "image/gif",
+                d = ["image/jpeg", "image/png", "image/webp"],
+                h = "image/gif",
                 u = "Reading aborted";
         },
-        364837: (e, t, i) => {
+        364837: (e, t, r) => {
             "use strict";
-            i.d(t, { R: () => d });
-            var s = i(19697),
-                r = i(549755),
-                o = i(205074);
+            r.d(t, { R: () => c });
+            var i = r(19697),
+                o = r(549755),
+                s = r(205074);
             const n = 1,
                 a = 2,
                 l = 3,
-                d = (e) => {
-                    if ((0, o.DS)(e)) {
+                c = (e) => {
+                    if ((0, s.DS)(e)) {
                         if (e.isGif) {
-                            const { height: t, img: i, orientation: o, width: n } = e;
-                            return (0, s.$i)(i, n, t, o).then(
-                                (e) => (0, s.q8)(e),
+                            const { height: t, img: r, orientation: s, width: n } = e;
+                            return (0, i.$i)(r, n, t, s).then(
+                                (e) => (0, i.q8)(e),
                                 (e) => {
-                                    throw new r.Z("Gif preview could not be generated", l);
+                                    throw new o.Z("Gif preview could not be generated", l);
                                 },
                             );
                         }
                         {
-                            const e = new r.Z("The provided image must be a gif", a);
+                            const e = new o.Z("The provided image must be a gif", a);
                             return Promise.reject(e);
                         }
                     }
                     {
-                        const e = new r.Z("The provided file is not a valid image", n);
+                        const e = new o.Z("The provided file is not a valid image", n);
                         return Promise.reject(e);
                     }
                 };
         },
-        549755: (e, t, i) => {
+        549755: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => s });
-            i(571372);
-            class s extends Error {
-                constructor(e, t, i) {
-                    super(e), (this.code = t), (this.type = i || null);
+            r.d(t, { Z: () => i });
+            r(571372);
+            class i extends Error {
+                constructor(e, t, r) {
+                    super(e), (this.code = t), (this.type = r || null);
                 }
             }
         },
-        205074: (e, t, i) => {
+        205074: (e, t, r) => {
             "use strict";
-            i.d(t, { DS: () => a, ZP: () => l });
-            i(543673), i(240753), i(128399);
-            var s = i(790187),
-                r = i(276259),
-                o = i(122123);
+            r.d(t, { DS: () => a, ZP: () => l });
+            r(543673), r(240753), r(128399);
+            var i = r(790187),
+                o = r(276259),
+                s = r(122123);
             function n(e, t) {
-                const i = (function (e) {
-                        return [s.Z.LEFT_BOTTOM, s.Z.LEFT_TOP, s.Z.RIGHT_BOTTOM, s.Z.RIGHT_TOP].indexOf(e) >= 0;
+                const r = (function (e) {
+                        return [i.Z.LEFT_BOTTOM, i.Z.LEFT_TOP, i.Z.RIGHT_BOTTOM, i.Z.RIGHT_TOP].indexOf(e) >= 0;
                     })(t),
-                    [r, o] = i ? [e.height, e.width] : [e.width, e.height];
-                return { width: r, height: o };
+                    [o, s] = r ? [e.height, e.width] : [e.width, e.height];
+                return { width: o, height: s };
             }
             const a = (e) => {
                 const t = e instanceof l,
-                    i = e.isImage || e.isGif,
-                    s = e.orientation,
-                    r = e.width && e.height,
-                    o = e.img;
-                return !!(t && i && s && r && o);
+                    r = e.isImage || e.isGif,
+                    i = e.orientation,
+                    o = e.width && e.height,
+                    s = e.img;
+                return !!(t && r && i && o && s);
             };
             class l {
                 constructor(e) {
-                    (this.fileHandle = e), e instanceof File && (this.name = e.name), (this.size = e.size), (this.type = e.type), (this.url = window.URL.createObjectURL(this.fileHandle)), (this.isGif = this.type === r.Re), (this.isImage = r.v5.some((e) => e === this.type)), (this.isVideo = !1), (this.isSubtitles = !1);
+                    (this.fileHandle = e), e instanceof File && (this.name = e.name), (this.size = e.size), (this.type = e.type), (this.url = window.URL.createObjectURL(this.fileHandle)), (this.isGif = this.type === o.Re), (this.isImage = o.v5.some((e) => e === this.type)), (this.isVideo = !1), (this.isSubtitles = !1);
                 }
                 withDimensionsAndOrientation() {
                     return this.isGif || this.isImage
-                        ? (0, o.po)(this.url).then((e) => {
+                        ? (0, s.po)(this.url).then((e) => {
                               const t = (t) => {
-                                  const { height: i, width: s } = n(e, t);
-                                  return (this.img = e), (this.width = s), (this.height = i), (this.orientation = t), this;
+                                  const { height: r, width: i } = n(e, t);
+                                  return (this.img = e), (this.width = i), (this.height = r), (this.orientation = t), this;
                               };
-                              return (0, s.C)(this.fileHandle)
-                                  .then((e) => t(e === s.Z.UNKNOWN ? s.Z.TOP_LEFT : e))
-                                  .catch(() => t(s.Z.TOP_LEFT));
+                              return (0, i.C)(this.fileHandle)
+                                  .then((e) => t(e === i.Z.UNKNOWN ? i.Z.TOP_LEFT : e))
+                                  .catch(() => t(i.Z.TOP_LEFT));
                           })
                         : Promise.resolve(this);
                 }
@@ -480,257 +980,265 @@
                 }
             }
         },
-        122123: (e, t, i) => {
+        122123: (e, t, r) => {
             "use strict";
-            i.d(t, { gK: () => r, o2: () => n, po: () => o });
-            var s = i(549755);
-            const r = { type: "image-load", NO_DIMENSIONS: 1, LOAD_FAILED: 2 };
-            function o(e) {
-                return new Promise((t, i) => {
-                    const o = (e, t) => {
-                            const o = new s.Z(e, t, r.type);
-                            i(o);
+            r.d(t, { gK: () => o, o2: () => n, po: () => s });
+            var i = r(549755);
+            const o = { type: "image-load", NO_DIMENSIONS: 1, LOAD_FAILED: 2 };
+            function s(e) {
+                return new Promise((t, r) => {
+                    const s = (e, t) => {
+                            const s = new i.Z(e, t, o.type);
+                            r(s);
                         },
                         n = new Image();
                     (n.onload = () => {
-                        n.width && n.height ? t(n) : o("Image lacks height or width", r.NO_DIMENSIONS);
+                        n.width && n.height ? t(n) : s("Image lacks height or width", o.NO_DIMENSIONS);
                     }),
                         (n.onerror = () => {
-                            o("Error loading image", r.LOAD_FAILED);
+                            s("Error loading image", o.LOAD_FAILED);
                         }),
                         (n.src = e);
                 });
             }
             function n(e) {
-                return new Promise((t, i) => {
-                    const o = (e, t) => {
-                            const o = new s.Z(e, t, r.type);
-                            i(o);
+                return new Promise((t, r) => {
+                    const s = (e, t) => {
+                            const s = new i.Z(e, t, o.type);
+                            r(s);
                         },
                         n = new Image();
                     n.setAttribute("crossorigin", "anonymous"),
                         (n.onload = () => {
                             if (n.width && n.height) {
                                 const e = document.createElement("canvas"),
-                                    i = e.getContext("2d");
+                                    r = e.getContext("2d");
                                 (e.width = n.width),
                                     (e.height = n.height),
-                                    i.drawImage(n, 0, 0),
+                                    r.drawImage(n, 0, 0),
                                     e.toBlob((e) => {
                                         if (e) {
-                                            const i = new File([e], "file.jpg", { type: "image/jpeg" });
-                                            t(i);
-                                        } else o("Failed to convert image to blob", r.LOAD_FAILED);
+                                            const r = new File([e], "file.jpg", { type: "image/jpeg" });
+                                            t(r);
+                                        } else s("Failed to convert image to blob", o.LOAD_FAILED);
                                     }, "image/jpeg");
-                            } else o("Image lacks height or width", r.NO_DIMENSIONS);
+                            } else s("Image lacks height or width", o.NO_DIMENSIONS);
                         }),
                         (n.onerror = () => {
-                            o("Error loading image", r.LOAD_FAILED);
+                            s("Error loading image", o.LOAD_FAILED);
                         }),
                         (n.src = e);
                 });
             }
         },
-        514354: (e, t, i) => {
+        514354: (e, t, r) => {
             "use strict";
-            i.d(t, { Q: () => l, S: () => a });
-            var s = i(332775),
-                r = i.n(s),
-                o = i(276259),
-                n = i(549755);
+            r.d(t, { Q: () => l, S: () => a });
+            var i = r(332775),
+                o = r.n(i),
+                s = r(276259),
+                n = r(549755);
             const a = { ERROR_READING_IMAGE_FILE: 0, HASHING_ABORTED: 1, INVALID_HASH: 2 },
                 l = (e, t) =>
-                    (0, o.qp)(e, t)
+                    (0, s.qp)(e, t)
                         .catch((e) => {
-                            throw new n.Z(`An error occurred while reading the image file: ${e}`, e.message === o.ZF ? a.HASHING_ABORTED : a.ERROR_READING_IMAGE_FILE);
+                            throw new n.Z(`An error occurred while reading the image file: ${e}`, e.message === s.ZF ? a.HASHING_ABORTED : a.ERROR_READING_IMAGE_FILE);
                         })
                         .then((e) => {
-                            const t = r()(e);
+                            const t = o()(e);
                             if (t && "string" == typeof t) return t;
                             throw new n.Z("Hash is not a non-empty string", a.INVALID_HASH);
                         });
         },
-        653843: (e, t, i) => {
+        653843: (e, t, r) => {
             "use strict";
-            i.d(t, { Y7: () => m, ZP: () => I, m2: () => y });
-            var s = i(19697),
-                r = i(790187),
-                o = i(549755),
-                n = i(205074),
-                a = i(276259);
-            function l(e, { maxDimension: t, maxFileSize: i, targetQuality: s }) {
-                return (function (e, t, i, s) {
-                    function r(o, n) {
-                        return d(e, e.width, e.height, o, n).then((e) => {
-                            const l = e.width > i || e.height > i,
-                                d = e.toDataURL("image/jpeg", s),
-                                h = d.split(";base64,")[1],
-                                c = (0, a.ku)(h);
-                            if (l || c > t) {
+            r.d(t, { Y7: () => m, ZP: () => _, m2: () => w });
+            var i = r(19697),
+                o = r(790187),
+                s = r(549755),
+                n = r(205074),
+                a = r(276259);
+            function l(e, { maxDimension: t, maxFileSize: r, targetQuality: i }) {
+                return (function (e, t, r, i) {
+                    function o(s, n) {
+                        return c(e, e.width, e.height, s, n).then((e) => {
+                            const l = e.width > r || e.height > r,
+                                c = e.toDataURL("image/jpeg", i),
+                                d = c.split(";base64,")[1],
+                                h = (0, a.ku)(d);
+                            if (l || h > t) {
                                 let e = 0.8;
-                                return l && (e = o > n ? i / o : i / n), r(o * e, n * e);
+                                return l && (e = s > n ? r / s : r / n), o(s * e, n * e);
                             }
-                            return d;
+                            return c;
                         });
                     }
-                    return r(e.width, e.height);
-                })(e, i, t, s).then(a.Lw);
+                    return o(e.width, e.height);
+                })(e, r, t, i).then(a.Lw);
             }
-            function d(e, t, i, r, o) {
+            function c(e, t, r, o, s) {
                 const n = t / 2,
-                    a = i / 2;
-                return e instanceof HTMLCanvasElement && t <= r && i <= o ? Promise.resolve(e) : n <= r && a <= o ? (0, s.$i)(e, r, o) : (0, s.$i)(e, n, a).then((e) => d(e, e.width, e.height, r, o));
+                    a = r / 2;
+                return e instanceof HTMLCanvasElement && t <= o && r <= s ? Promise.resolve(e) : n <= o && a <= s ? (0, i.$i)(e, o, s) : (0, i.$i)(e, n, a).then((e) => c(e, e.width, e.height, o, s));
             }
-            const h = 5242880,
-                c = 4096,
+            const d = 5242880,
+                h = 4096,
                 u = 0.85,
                 m = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
-                p = (e) => e.orientation !== r.Z.TOP_LEFT && e.orientation !== r.Z.UNKNOWN,
-                g = (e, t = h, i = c) => {
-                    const { height: s, size: r, width: o } = e;
-                    return o > i || s > i || r > t;
+                p = (e) => e.orientation !== o.Z.TOP_LEFT && e.orientation !== o.Z.UNKNOWN,
+                g = (e, t = d, r = h) => {
+                    const { height: i, size: o, width: s } = e;
+                    return s > r || i > r || o > t;
                 },
                 f = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
-                _ = (e, t) => {
-                    const { height: i, left: s, top: r, width: o } = f(e, t);
-                    return !(0 === r && 0 === s && o === e.width && i === e.height);
+                y = (e, t) => {
+                    const { height: r, left: i, top: o, width: s } = f(e, t);
+                    return !(0 === o && 0 === i && s === e.width && r === e.height);
                 };
-            function y(e, t) {
-                const { maxFileSize: i = h, maxDimension: s = c, cropData: r, jpgPixelsPerByteForResize: o } = t || {},
+            function w(e, t) {
+                const { maxFileSize: r = d, maxDimension: i = h, cropData: o, jpgPixelsPerByteForResize: s } = t || {},
                     n = "image/jpeg" === e.type,
                     a = (e.width * e.height) / e.size;
-                return p(e) || g(e, i, s) || _(e, r) || (n && !!o && a < o);
+                return p(e) || g(e, r, i) || y(e, o) || (n && !!s && a < s);
             }
-            const w = (e, t) => {
-                    const { height: i, width: s } = e;
-                    return s <= t && i <= t ? { width: s, height: i } : s > i ? { width: t, height: Math.round(i / (s / t)) } : { width: Math.round(s / (i / t)), height: t };
+            const E = (e, t) => {
+                    const { height: r, width: i } = e;
+                    return i <= t && r <= t ? { width: i, height: r } : i > r ? { width: t, height: Math.round(r / (i / t)) } : { width: Math.round(i / (r / t)), height: t };
                 },
-                E = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
-            function I(e, t) {
-                const { maxFileSize: i = h, maxDimension: r = c, targetQuality: a = u, cropData: d } = t || {},
-                    p = f(e, d);
-                if (!y(e, t)) return Promise.resolve(e.fileHandle);
+                b = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
+            function _(e, t) {
+                const { maxFileSize: r = d, maxDimension: o = h, targetQuality: a = u, cropData: c } = t || {},
+                    p = f(e, c);
+                if (!w(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, n.DS)(e)) {
-                    const e = new o.Z("The provided file is not a valid image", m.FILE_IS_NOT_AN_IMAGE);
+                    const e = new s.Z("The provided file is not a valid image", m.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
                 }
                 if (e.isGif) {
-                    const e = new o.Z("Gifs cannot be processed.", m.GIF_IS_TOO_LARGE);
+                    const e = new s.Z("Gifs cannot be processed.", m.GIF_IS_TOO_LARGE);
                     return Promise.reject(e);
                 }
-                const g = (e) => l(e, { maxFileSize: i, maxDimension: r, targetQuality: a });
+                const g = (e) => l(e, { maxFileSize: r, maxDimension: o, targetQuality: a });
                 return e
                     .withDimensionsAndOrientation()
                     .then(({ img: e, orientation: t }) => {
-                        const i = ({ height: i, width: r }) => (0, s.$i)(e, r, i, t, p);
-                        return E(e)
-                            .then(() => ((e) => e(w(p, r)))(i))
+                        const r = ({ height: r, width: o }) => (0, i.$i)(e, o, r, t, p);
+                        return b(e)
+                            .then(() => ((e) => e(E(p, o)))(r))
                             .then(g);
                     })
                     .catch(() => {
-                        const e = new o.Z("Image cannot be processed", m.CANNOT_BE_PROCESSED);
+                        const e = new s.Z("Image cannot be processed", m.CANNOT_BE_PROCESSED);
                         return Promise.reject(e);
                     });
             }
         },
-        459643: (e, t, i) => {
+        465233: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => s });
-            const s = (e) => () => e;
+            r.d(t, { Z: () => o });
+            var i = r(716406);
+            function o(e) {
+                return "object" != typeof e || null === e ? e : Array.isArray(e) ? e.map(o) : (0, i.Z)(e, (e) => o(e));
+            }
         },
-        666536: (e, t, i) => {
+        459643: (e, t, r) => {
             "use strict";
-            i.d(t, { Z: () => o });
-            var s = i(936386),
-                r = i.n(s);
-            const o = (e, t, i) => r()(e, t, i);
+            r.d(t, { Z: () => i });
+            const i = (e) => () => e;
         },
-        662678: (e, t, i) => {
+        666536: (e, t, r) => {
             "use strict";
-            i.d(t, { G: () => r, Z: () => s });
-            i(136728);
-            const s = function (e, t) {
-                return r(e, t);
+            r.d(t, { Z: () => s });
+            var i = r(936386),
+                o = r.n(i);
+            const s = (e, t, r) => o()(e, t, r);
+        },
+        662678: (e, t, r) => {
+            "use strict";
+            r.d(t, { G: () => o, Z: () => i });
+            r(136728);
+            const i = function (e, t) {
+                return o(e, t);
             };
-            function r(e, t) {
+            function o(e, t) {
                 return e.reduce(
-                    (i, s, r) => {
-                        const o = t ? t(s, r, e) : !!s;
-                        return o && i[0].push(s), !o && i[1].push(s), i;
+                    (r, i, o) => {
+                        const s = t ? t(i, o, e) : !!i;
+                        return s && r[0].push(i), !s && r[1].push(i), r;
                     },
                     [[], []],
                 );
             }
         },
-        417144: (e, t, i) => {
+        417144: (e, t, r) => {
             "use strict";
-            function s(e, t = 1) {
-                let i = t;
-                const s = new Map();
-                let r = 0,
-                    o = 0,
+            function i(e, t = 1) {
+                let r = t;
+                const i = new Map();
+                let o = 0,
+                    s = 0,
                     n = 0,
                     a = null;
                 function l() {
-                    s.clear(), (r = 0), (o = 0), (n = 0);
+                    i.clear(), (o = 0), (s = 0), (n = 0);
                 }
                 return {
                     uploadStart: function (e, t) {
-                        s.set(e, { time: Date.now(), bytes: t }), o || (o = Date.now());
+                        i.set(e, { time: Date.now(), bytes: t }), s || (s = Date.now());
                     },
-                    uploadFinish: function (d, h) {
-                        const c = s.get(d);
-                        c &&
-                            ((r += h - c.bytes),
-                            s.delete(d),
-                            ++n === i &&
+                    uploadFinish: function (c, d) {
+                        const h = i.get(c);
+                        h &&
+                            ((o += d - h.bytes),
+                            i.delete(c),
+                            ++n === r &&
                                 (function () {
-                                    if (!o) return;
-                                    const s = Date.now() - o;
-                                    if (s <= 0) return;
+                                    if (!s) return;
+                                    const i = Date.now() - s;
+                                    if (i <= 0) return;
                                     if (1 !== t) return;
-                                    const n = r / s;
-                                    if (n < 5e3 && 1 === i) return;
-                                    !a || a.byterate < n ? ((i += 1), e(), (a = { byterate: n, poolSize: i })) : ((i -= 2), (i = Math.max(i, 1)), (a = null));
+                                    const n = o / i;
+                                    if (n < 5e3 && 1 === r) return;
+                                    !a || a.byterate < n ? ((r += 1), e(), (a = { byterate: n, poolSize: r })) : ((r -= 2), (r = Math.max(r, 1)), (a = null));
                                     l();
                                 })());
                     },
                     reset: l,
-                    getPoolSize: () => i,
+                    getPoolSize: () => r,
                     start: function () {
-                        for (let t = 0; t < i; ++t) e();
+                        for (let t = 0; t < r; ++t) e();
                     },
                 };
             }
-            i.d(t, { Z: () => h, d: () => y });
-            i(543673), i(240753), i(128399);
-            function r(e) {
+            r.d(t, { Z: () => d, d: () => w });
+            r(543673), r(240753), r(128399);
+            function o(e) {
                 const t = new URLSearchParams();
-                for (const i of Object.keys(e)) {
-                    const s = e[i];
-                    s && t.set(i, s);
+                for (const r of Object.keys(e)) {
+                    const i = e[r];
+                    i && t.set(r, i);
                 }
                 return `&${String(t)}`;
             }
-            function o(e, t = a, i = n) {
-                const s = Math.max(e, t);
-                return Math.min(s, i);
+            function s(e, t = a, r = n) {
+                const i = Math.max(e, t);
+                return Math.min(i, r);
             }
             const n = 5242880,
                 a = 65536,
                 l = 2e3,
-                d = 1e4;
-            class h {
-                constructor(e, t = I) {
-                    var i;
-                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || p), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((i = this.totalBytes), o(Math.ceil(i / d)))), this._clearState();
+                c = 1e4;
+            class d {
+                constructor(e, t = _) {
+                    var r;
+                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || p), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((r = this.totalBytes), s(Math.ceil(r / c)))), this._clearState();
                 }
                 upload(e) {
                     ((this.hasAttemptedFinalize && (this.uploadOptions.trimRanges !== e.trimRanges || this.uploadOptions.extraFinalizeParams !== e.extraFinalizeParams)) || this.uploadOptions.extraInitParams !== e.extraInitParams) && this._clearState(),
                         (this.uploadOptions = e),
-                        this.state !== E.SUCCEEDED && this.state !== E.PENDING && ((this.state = E.PENDING), this.hasAttemptedFinalize ? this._postFinalize() : this.mediaId ? this._startNextAppendSegment() : this._postInit()),
+                        this.state !== b.SUCCEEDED && this.state !== b.PENDING && ((this.state = b.PENDING), this.hasAttemptedFinalize ? this._postFinalize() : this.mediaId ? this._startNextAppendSegment() : this._postInit()),
                         (this._bitrateMonitor = e.withMultiRequests
-                            ? s(() => {
+                            ? i(() => {
                                   this._startNextAppendSegment();
                               }, e.withMultiRequestsDefaultPoolSize)
                             : void 0),
@@ -738,27 +1246,27 @@
                         this._notifyProgress(this._uploadProgress());
                 }
                 cancel() {
-                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: y.CANCELED }), this._clearState();
+                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: w.CANCELED }), this._clearState();
                 }
                 pollStatusOfExistingMediaId(e, t) {
-                    (this.mediaId = e), (this.uploadOptions = t || I), (this.state = E.PENDING), this._getStatus();
+                    (this.mediaId = e), (this.uploadOptions = t || _), (this.state = b.PENDING), this._getStatus();
                 }
                 _clearState() {
                     for (const e of Object.keys(this.timeoutIdMap)) clearTimeout(this.timeoutIdMap[e]), delete this.timeoutIdMap[e];
-                    (this.state = E.RESET),
+                    (this.state = b.RESET),
                         (this.mediaId = ""),
                         (this.mediaKey = ""),
-                        (this.uploadOptions = I),
+                        (this.uploadOptions = _),
                         (this.nextSegmentBytes =
                             this.sruParameterOverrides?.minSegmentBytes ||
                             (function () {
                                 const e = window.navigator.connection;
                                 if (e) {
                                     const t = e.type || e.effectiveType;
-                                    if (e.downlink) return o(((1e3 * e.downlink) / 8 / 2) * l);
-                                    if ("wifi" === t) return o(5 * a);
+                                    if (e.downlink) return s(((1e3 * e.downlink) / 8 / 2) * l);
+                                    if ("wifi" === t) return s(5 * a);
                                 }
-                                return o(2 * a);
+                                return s(2 * a);
                             })()),
                         (this.segmentIndex = 0),
                         (this.totalUploadDuration = 0),
@@ -768,14 +1276,14 @@
                         (this.inflightSegments = new Map()),
                         this._bitrateMonitor?.reset();
                 }
-                uploadExternalMedia(e, t, i, s = I) {
-                    (this.uploadOptions = s), (this.state = E.PENDING), (this.progressMode = "uploading");
-                    let o = r({ source_url: e, media_type: t, media_category: i });
-                    (o += this.uploadOptions.extraInitParams || ""), (o += this.uploadOptions.extraFinalizeParams || "");
+                uploadExternalMedia(e, t, r, i = _) {
+                    (this.uploadOptions = i), (this.state = b.PENDING), (this.progressMode = "uploading");
+                    let s = o({ source_url: e, media_type: t, media_category: r });
+                    (s += this.uploadOptions.extraInitParams || ""), (s += this.uploadOptions.extraFinalizeParams || "");
                     this._sendXhr(
                         "POST",
                         "INIT",
-                        o,
+                        s,
                         (e) => {
                             (this.mediaId = e.media_id_string), this._getStatus();
                         },
@@ -790,29 +1298,29 @@
                         this.uploadOptions.enable_1080p_variant && (e.enable_1080p_variant = String(!0));
                         const { mediaItem: t } = this.uploadOptions;
                         if (t?.mediaFile?.duration) {
-                            const i = 1e3 * t.mediaFile.duration;
-                            e.video_duration_ms = String(i);
+                            const r = 1e3 * t.mediaFile.duration;
+                            e.video_duration_ms = String(r);
                         }
-                        let i = r(e);
-                        this.uploadOptions.extraInitParams && (i += this.uploadOptions.extraInitParams),
+                        let r = o(e);
+                        this.uploadOptions.extraInitParams && (r += this.uploadOptions.extraInitParams),
                             this._sendXhr(
                                 "POST",
                                 "INIT",
-                                i,
+                                r,
                                 (...e) => this._initSuccess(...e),
                                 (...e) => this._uploadError(...e),
                                 u,
                             );
-                    } else this._uploadError({ code: y.ZERO_FILE_LENGTH });
+                    } else this._uploadError({ code: w.ZERO_FILE_LENGTH });
                 }
                 _initSuccess(e) {
-                    this.state === E.PENDING && ((this.mediaId = e.media_id_string), (this.mediaKey = e.media_key), this._setSessionTimeout(e.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
+                    this.state === b.PENDING && ((this.mediaId = e.media_id_string), (this.mediaKey = e.media_key), this._setSessionTimeout(e.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
                 }
                 _setSessionTimeout(e) {
                     if ((this.timeoutIdMap.session && (clearTimeout(this.timeoutIdMap.session), delete this.timeoutIdMap.session), e)) {
-                        const t = Math.min(c, 1e3 * e);
+                        const t = Math.min(h, 1e3 * e);
                         this.timeoutIdMap.session = setTimeout(() => {
-                            this._uploadError({ code: y.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
+                            this._uploadError({ code: w.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
                         }, t);
                     }
                 }
@@ -823,41 +1331,41 @@
                     let e = 0;
                     this.inflightSegments.forEach(({ bytes: t }) => (e += t));
                     const t = e + this.uploadedBytes,
-                        i = Math.min(this.nextSegmentBytes, this.totalBytes - t);
-                    if (i <= 0) return;
-                    const s = new FormData();
+                        r = Math.min(this.nextSegmentBytes, this.totalBytes - t);
+                    if (r <= 0) return;
+                    const i = new FormData();
                     if (this.fileHandle) {
-                        const e = this.fileHandle.slice(t, t + i);
-                        s.append("media", e);
+                        const e = this.fileHandle.slice(t, t + r);
+                        i.append("media", e);
                     }
-                    const o = this.segmentIndex;
+                    const s = this.segmentIndex;
                     this.segmentIndex += 1;
-                    const n = r({ media_id: this.mediaId, segment_index: String(o) }),
+                    const n = o({ media_id: this.mediaId, segment_index: String(s) }),
                         a = this._sendXhr(
                             "POST",
                             "APPEND",
                             n,
                             () => {
-                                if (this.state === E.PENDING) {
-                                    const e = this.inflightSegments.get(o);
-                                    e && (this.inflightSegments.delete(o), (this.uploadedBytes += e.bytes)), this._notifyProgress(this._uploadProgress(), this.mediaId), 0 === this.inflightSegments.size && this._startNextAppendSegment();
+                                if (this.state === b.PENDING) {
+                                    const e = this.inflightSegments.get(s);
+                                    e && (this.inflightSegments.delete(s), (this.uploadedBytes += e.bytes)), this._notifyProgress(this._uploadProgress(), this.mediaId), 0 === this.inflightSegments.size && this._startNextAppendSegment();
                                 }
                             },
                             (...e) => this._uploadError(...e),
                             5,
-                            s,
-                            () => this._startNextAppendSegment(),
                             i,
+                            () => this._startNextAppendSegment(),
+                            r,
                         );
-                    this.inflightSegments.set(o, { bytes: i, request: a });
+                    this.inflightSegments.set(s, { bytes: r, request: a });
                 }
                 _postFinalize() {
-                    if (this.uploadOptions.pauseBeforeFinalize) (this.state = E.PAUSED), this.uploadOptions.pause && this.uploadOptions.pause();
+                    if (this.uploadOptions.pauseBeforeFinalize) (this.state = b.PAUSED), this.uploadOptions.pause && this.uploadOptions.pause();
                     else {
                         this.hasAttemptedFinalize = !0;
                         const e = { media_id: this.mediaId };
                         this.uploadOptions.trimRanges && (e.trim_ranges = this.uploadOptions.trimRanges), this.mediaType && /^video\//.test(this.mediaType) && (e.allow_async = String(!0)), this.retainMediaForever && (e.ttl = "infinite");
-                        let t = r(e);
+                        let t = o(e);
                         (t += this.uploadOptions.extraFinalizeParams || ""),
                             this._sendXhr(
                                 "POST",
@@ -873,31 +1381,31 @@
                     this._setSessionTimeout(e.expires_after_secs);
                     const t = e.processing_info;
                     if (!t) return void this._finalizeSuccess(e);
-                    let i = 0;
+                    let r = 0;
                     switch (t.state) {
                         case "pending":
                             this.progressMode = "waiting";
                             break;
                         case "in_progress":
-                            (this.progressMode = "processing"), "number" == typeof t.progress_percent && (i = t.progress_percent), i >= 100 && (i = 99);
+                            (this.progressMode = "processing"), "number" == typeof t.progress_percent && (r = t.progress_percent), r >= 100 && (r = 99);
                             break;
                         case "succeeded":
                             return void this._finalizeSuccess(e);
                         case "failed": {
                             const e = t.error;
-                            let i;
-                            return (i = e?.code ? w[String(e.code)] : y.INTERNAL_ERROR), void this._uploadError({ ...e, code: i });
+                            let r;
+                            return (r = e?.code ? E[String(e.code)] : w.INTERNAL_ERROR), void this._uploadError({ ...e, code: r });
                         }
                         default:
                             return void this._uploadError();
                     }
-                    this._notifyProgress(i, this.mediaId, this.mediaKey);
-                    const s = t.check_after_secs || 10;
-                    setTimeout((...e) => this._getStatus(...e), 1e3 * s);
+                    this._notifyProgress(r, this.mediaId, this.mediaKey);
+                    const i = t.check_after_secs || 10;
+                    setTimeout((...e) => this._getStatus(...e), 1e3 * i);
                 }
                 _getStatus() {
-                    if (this.state === E.PENDING) {
-                        const e = r({ media_id: this.mediaId });
+                    if (this.state === b.PENDING) {
+                        const e = o({ media_id: this.mediaId });
                         this._sendXhr(
                             "GET",
                             "STATUS",
@@ -909,16 +1417,16 @@
                     }
                 }
                 _finalizeSuccess(e) {
-                    this.state === E.PENDING && ((this.state = E.SUCCEEDED), this._notifyResult());
+                    this.state === b.PENDING && ((this.state = b.SUCCEEDED), this._notifyResult());
                 }
                 _uploadError(e) {
-                    if (this.state !== E.PENDING) return;
+                    if (this.state !== b.PENDING) return;
                     const t = e.error?.match(/{ "message": "maxFileSizeExceeded", "maxFileSizeBytes": \d+ }/);
                     if (t) {
                         const e = JSON.parse(t[0]);
-                        this.error = { code: y.FILE_TOO_LARGE, message: e.message, maxSizeBytes: e.maxFileSizeBytes };
-                    } else e && e.code ? (this.error = e) : (this.error = { code: y.INTERNAL_ERROR, message: e?.error });
-                    (this.state = E.FAILED), this._notifyResult();
+                        this.error = { code: w.FILE_TOO_LARGE, message: e.message, maxSizeBytes: e.maxFileSizeBytes };
+                    } else e && e.code ? (this.error = e) : (this.error = { code: w.INTERNAL_ERROR, message: e?.error });
+                    (this.state = b.FAILED), this._notifyResult();
                 }
                 _uploadProgress() {
                     if (this.totalBytes) {
@@ -926,82 +1434,82 @@
                     }
                     return 0;
                 }
-                _notifyProgress(e, t, i) {
-                    this.state !== E.FAILED && this.uploadOptions.progress && this.uploadOptions.progress(e, this.progressMode, t, i);
+                _notifyProgress(e, t, r) {
+                    this.state !== b.FAILED && this.uploadOptions.progress && this.uploadOptions.progress(e, this.progressMode, t, r);
                 }
                 _notifyResult() {
-                    this.state === E.SUCCEEDED && this.uploadOptions.success && this.uploadOptions.success(this.mediaId, this.mediaKey), this.state === E.FAILED && this.uploadOptions.error && this.uploadOptions.error(this.error);
+                    this.state === b.SUCCEEDED && this.uploadOptions.success && this.uploadOptions.success(this.mediaId, this.mediaKey), this.state === b.FAILED && this.uploadOptions.error && this.uploadOptions.error(this.error);
                 }
-                _stats(e, t, i = {}) {
-                    const s = i.requestStartTime || this.initStartTime,
-                        r = new Date().getTime() - s.getTime();
-                    if (((this.totalUploadDuration += r), this.uploadOptions.stats)) {
-                        const s = { mediaType: this.mediaType || "", command: e, status: t, duration: r, totalByteSize: this.totalBytes, totalDuration: this.totalUploadDuration };
-                        i.segmentBytes && (s.appendByteSize = i.segmentBytes), this.uploadOptions.stats(s);
+                _stats(e, t, r = {}) {
+                    const i = r.requestStartTime || this.initStartTime,
+                        o = new Date().getTime() - i.getTime();
+                    if (((this.totalUploadDuration += o), this.uploadOptions.stats)) {
+                        const i = { mediaType: this.mediaType || "", command: e, status: t, duration: o, totalByteSize: this.totalBytes, totalDuration: this.totalUploadDuration };
+                        r.segmentBytes && (i.appendByteSize = r.segmentBytes), this.uploadOptions.stats(i);
                     }
                 }
-                _sendXhr(e, t, i, s, r, n, a, d, h = 0) {
-                    const c = `${this.uploadUrl}?command=${t}${i}`;
+                _sendXhr(e, t, r, i, o, n, a, c, d = 0) {
+                    const h = `${this.uploadUrl}?command=${t}${r}`;
                     let u = !1;
                     const p = new Date(),
-                        g = (o) => {
+                        g = (s) => {
                             if (n) {
-                                const o = [c, n].join("-");
-                                this.timeoutIdMap[o] = setTimeout(() => {
-                                    this._sendXhr(e, t, i, s, r, n - 1, a, d, h);
-                                }, _);
-                            } else w(o);
+                                const s = [h, n].join("-");
+                                this.timeoutIdMap[s] = setTimeout(() => {
+                                    this._sendXhr(e, t, r, i, o, n - 1, a, c, d);
+                                }, y);
+                            } else E(s);
                         },
-                        w = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: p, segmentBytes: h }), "function" == typeof r && r(S(E) || { code: y.INVALID_RES_STATUS, mediaId: this.mediaId });
+                        E = (e) => {
+                            this._stats(t, e || "unknown-error", { requestStartTime: p, segmentBytes: d }), "function" == typeof o && o(v(b) || { code: w.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
-                        E = new XMLHttpRequest();
-                    E.open(e, c, !0),
-                        (E.withCredentials = !0),
-                        (E.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || m),
-                        (E.onload = () => {
-                            if (E.status >= 200 && E.status < 400) {
-                                const e = S(E);
-                                204 === E.status || e ? (this._stats(t, "success", { requestStartTime: p, segmentBytes: h }), s(e || {}), !u && d && d()) : g("parsererror");
-                            } else E.status && 503 !== E.status ? w("invalid-response") : g("503");
+                        b = new XMLHttpRequest();
+                    b.open(e, h, !0),
+                        (b.withCredentials = !0),
+                        (b.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || m),
+                        (b.onload = () => {
+                            if (b.status >= 200 && b.status < 400) {
+                                const e = v(b);
+                                204 === b.status || e ? (this._stats(t, "success", { requestStartTime: p, segmentBytes: d }), i(e || {}), !u && c && c()) : g("parsererror");
+                            } else b.status && 503 !== b.status ? E("invalid-response") : g("503");
                         }),
-                        (E.onerror = () => g("error")),
-                        (E.ontimeout = () => {
+                        (b.onerror = () => g("error")),
+                        (b.ontimeout = () => {
                             (this.nextSegmentBytes = this.minSegmentBytes), g("timeout");
                         });
-                    let I = !1;
-                    E.upload.onprogress = (e) => {
-                        I ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(c, e.total) : ((I = !0), this._bitrateMonitor?.uploadStart(c, e.loaded));
+                    let _ = !1;
+                    b.upload.onprogress = (e) => {
+                        _ ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(h, e.total) : ((_ = !0), this._bitrateMonitor?.uploadStart(h, e.loaded));
                         const t = e.loaded,
-                            i = ((this.uploadedBytes + t) / this.totalBytes) * 100;
-                        if ((this._notifyProgress(i, this.mediaId), t / e.total > f && !u && ((u = !0), a))) {
+                            r = ((this.uploadedBytes + t) / this.totalBytes) * 100;
+                        if ((this._notifyProgress(r, this.mediaId), t / e.total > f && !u && ((u = !0), a))) {
                             const e = Math.max(1, new Date().getTime() - p.getTime()),
-                                i = this.minSegmentBytes,
-                                s = this.sruParameterOverrides?.maxSegmentBytes;
+                                r = this.minSegmentBytes,
+                                i = this.sruParameterOverrides?.maxSegmentBytes;
                             (this.nextSegmentBytes = (function (e) {
                                 const t = e.idealUploadTimeMs || l,
-                                    i = e.sentBytes / e.uploadTimeMs;
-                                return o(Math.round(t * i), e.minSegmentBytes, e.maxSegmentBytes);
-                            })({ minSegmentBytes: i, sentBytes: t, uploadTimeMs: e, maxSegmentBytes: s, idealUploadTimeMs: this.sruParameterOverrides?.idealUploadTimeMs })),
-                                "function" == typeof d && d();
+                                    r = e.sentBytes / e.uploadTimeMs;
+                                return s(Math.round(t * r), e.minSegmentBytes, e.maxSegmentBytes);
+                            })({ minSegmentBytes: r, sentBytes: t, uploadTimeMs: e, maxSegmentBytes: i, idealUploadTimeMs: this.sruParameterOverrides?.idealUploadTimeMs })),
+                                "function" == typeof c && c();
                         }
                     };
-                    for (const e in this.sruHeaders) E.setRequestHeader(e, this.sruHeaders[e]);
-                    return a ? E.send(a) : E.send(), E;
+                    for (const e in this.sruHeaders) b.setRequestHeader(e, this.sruHeaders[e]);
+                    return a ? b.send(a) : b.send(), b;
                 }
             }
-            const c = 2147483647,
+            const h = 2147483647,
                 u = 1,
                 m = 45e3,
                 p = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 g = 2,
                 f = 0.95,
-                _ = 1e3,
-                y = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
-                w = Object.freeze({ 0: y.INTERNAL_ERROR, 1: y.INVALID_MEDIA, 2: y.FILE_TOO_LARGE, 3: y.UNSUPPORTED_MEDIA, 4: y.TIMEOUT }),
-                E = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
-                I = {};
-            function S(e) {
+                y = 1e3,
+                w = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
+                E = Object.freeze({ 0: w.INTERNAL_ERROR, 1: w.INVALID_MEDIA, 2: w.FILE_TOO_LARGE, 3: w.UNSUPPORTED_MEDIA, 4: w.TIMEOUT }),
+                b = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
+                _ = {};
+            function v(e) {
                 try {
                     return JSON.parse(e.responseText);
                 } catch (e) {
@@ -1010,30 +1518,30 @@
             }
         },
         936386: (e) => {
-            function t(e, t, i) {
-                var s, r, o, n, a;
+            function t(e, t, r) {
+                var i, o, s, n, a;
                 function l() {
-                    var d = Date.now() - n;
-                    d < t && d >= 0 ? (s = setTimeout(l, t - d)) : ((s = null), i || ((a = e.apply(o, r)), (o = r = null)));
+                    var c = Date.now() - n;
+                    c < t && c >= 0 ? (i = setTimeout(l, t - c)) : ((i = null), r || ((a = e.apply(s, o)), (s = o = null)));
                 }
                 null == t && (t = 100);
-                var d = function () {
-                    (o = this), (r = arguments), (n = Date.now());
-                    var d = i && !s;
-                    return s || (s = setTimeout(l, t)), d && ((a = e.apply(o, r)), (o = r = null)), a;
+                var c = function () {
+                    (s = this), (o = arguments), (n = Date.now());
+                    var c = r && !i;
+                    return i || (i = setTimeout(l, t)), c && ((a = e.apply(s, o)), (s = o = null)), a;
                 };
                 return (
-                    (d.clear = function () {
-                        s && (clearTimeout(s), (s = null));
+                    (c.clear = function () {
+                        i && (clearTimeout(i), (i = null));
                     }),
-                    (d.flush = function () {
-                        s && ((a = e.apply(o, r)), (o = r = null), clearTimeout(s), (s = null));
+                    (c.flush = function () {
+                        i && ((a = e.apply(s, o)), (s = o = null), clearTimeout(i), (i = null));
                     }),
-                    d
+                    c
                 );
             }
             (t.debounce = t), (e.exports = t);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-6107ac1a.9ede309a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-6107ac1a.6808cc8a.js.map

@@ -1320,7 +1320,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "Kod yürütülüyor"),
                 n("ead81122", "Bir sorun oluştu. Yeniden bağlanmak için yenile veya tekrar dene."),
                 n("f808a13a", "Kullanım limiti aşıldı. Lütfen biraz bekleyip tekrar dene."),
                 n("e0481e5a", "Grok şu anda ülkende desteklenmiyor."),
@@ -4359,7 +4359,7 @@
                     return e.seconds + " saniye düşünüldü";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " tane daha";
                 }),
                 n("ha8fbe22", "Premium ile daha fazla görüntü oluştur"),
                 n("d95c232a", "Limite ulaştın. Daha fazlasını oluşturmak için hemen hesabını yükselt."),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " sn"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "dk " + this.props.seconds + " sn"];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " silinen not"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Silinen notlar"];
                             },
                         },
                         {
@@ -13364,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.f09d107a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.5fc96a3a.js.map

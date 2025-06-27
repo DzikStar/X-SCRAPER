@@ -1320,7 +1320,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "正在執行程式碼"),
                 n("ead81122", "發生錯誤，請重新整理以重新連線或再試一次。"),
                 n("f808a13a", "已超出使用頻率限制。請稍後再試。"),
                 n("e0481e5a", "你所在的國家/地區目前不支援 Grok。"),
@@ -4359,7 +4359,7 @@
                     return "思考了 " + e.seconds + " 秒";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "另外 " + e.count + " 人";
                 }),
                 n("ha8fbe22", "透過 Premium 產生更多圖片"),
                 n("d95c232a", "你已達到限制。立即升級以產生更多。"),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " 秒"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " 分 " + this.props.seconds + " 秒"];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " 則已刪除的備註"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["已刪除的備註"];
                             },
                         },
                         {
@@ -13364,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.3025312a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.0ce6523a.js.map

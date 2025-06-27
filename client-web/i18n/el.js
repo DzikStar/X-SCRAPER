@@ -1320,7 +1320,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "Εκτέλεση κώδικα"),
                 n("ead81122", "Κάτι πήγε στραβά, κάντε ανανέωση για να επανασυνδεθείτε ή δοκιμάστε ξανά."),
                 n("f808a13a", "Υπέρβαση του ορίου χρήσης. Παρακαλώ περιμένετε λίγα λεπτά και προσπαθήστε ξανά."),
                 n("e0481e5a", "Το Grok δεν υποστηρίζεται στη χώρα σας αυτή τη στιγμή."),
@@ -4359,7 +4359,7 @@
                     return "Σκέψη για " + e.seconds + " δευτερόλεπτα";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " ακόμη";
                 }),
                 n("ha8fbe22", "Δημιουργήστε περισσότερες εικόνες με το Premium"),
                 n("d95c232a", "Έχετε φτάσει το όριό σας. Αναβαθμίστε τώρα για να δημιουργήσετε περισσότερα."),
@@ -10938,6 +10938,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " δ"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " λ " + this.props.seconds + " δ"];
@@ -11877,6 +11883,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " διαγραμμένες σημειώσεις"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Διαγραμμένες σημειώσεις"];
                             },
                         },
                         {
@@ -13354,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.559b1bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.8f135e1a.js.map

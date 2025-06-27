@@ -1321,7 +1321,7 @@
                 t("dce1817a", "Searching on 𝕏"),
                 t("f7151564", "Searching users on 𝕏"),
                 t("c43ef93e", "Browsing web page"),
-                t("jb097f6e", "Executing code"),
+                t("jb097f6e", "Code wird ausgeführt"),
                 t("ead81122", "Etwas ist schief gegangen. Bitte stelle die Verbindung durch eine Aktualisierung wieder her oder versuche es erneut."),
                 t("f808a13a", "Das Zugriffslimit ist erreicht. Bitte versuche es in ein paar Minuten erneut."),
                 t("e0481e5a", "Grok wird in deinem Land zurzeit nicht unterstützt."),
@@ -4360,7 +4360,7 @@
                     return "Denkprozess dauerte " + e.seconds + " Sek.";
                 }),
                 t("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " mehr";
                 }),
                 t("ha8fbe22", "Mehr Bilder generieren mit Premium"),
                 t("d95c232a", "Du hast dein Limit erreicht. Führe jetzt ein Upgrade durch, wenn du mehr generieren möchtest."),
@@ -10952,6 +10952,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " Sek."];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " Min. " + this.props.seconds + " Sek."];
@@ -11891,6 +11897,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " gelöschte Notizen"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Gelöschte Notizen"];
                             },
                         },
                         {
@@ -13369,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.04cb7d5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.5ad4f84a.js.map

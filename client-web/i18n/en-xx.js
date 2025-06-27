@@ -1317,11 +1317,11 @@
                 s("a02d1657", function (t) {
                     return "[Exéêcütïíng cöødéê" + t.ttc_tool_usage_card + "]";
                 }),
-                s("aa9d42c0", "Searching the web"),
-                s("dce1817a", "Searching on 𝕏"),
-                s("f7151564", "Searching users on 𝕏"),
-                s("c43ef93e", "Browsing web page"),
-                s("jb097f6e", "Executing code"),
+                s("aa9d42c0", "[Séêåärchïíng théê wéêb]"),
+                s("dce1817a", "[Séêåärchïíng öøn 𝕏]"),
+                s("f7151564", "[Séêåärchïíng üséêrs öøn 𝕏]"),
+                s("c43ef93e", "[Bröøwsïíng wéêb påägéê]"),
+                s("jb097f6e", "[Exéêcütïíng cöødéê]"),
                 s("ead81122", "[Söøméêthïíng wéênt wröøng, pléêåäséê réêfréêsh töø réêcöønnéêct öør try åägåäïín.]"),
                 s("f808a13a", "[Råätéê lïímïít éêxcéêéêdéêd. Pléêåäséê wåäïít åä féêw möøméênts théên try åägåäïín.]"),
                 s("e0481e5a", "[Gröøk ïís nöøt süppöørtéêd ïín yöøür cöøüntry åät thïís tïíméê.]"),
@@ -1368,11 +1368,11 @@
                 s("e0bffbf8", "[Aböøüt åäütöømåätïíc tråänslåätïíöøn]"),
                 s("e839db3a", "[Dïísmïíss]"),
                 s("e7a86c77", function (t) {
-                    return "Automatically translate " + t.language;
+                    return "[Aütöømåätïícåälly tråänslåätéê " + t.language + "]";
                 }),
-                s("c60b9e5c", "Changes will take effect for newly loaded content."),
-                s("f9317b98", "language settings"),
-                s("hba0547a", "Unable to update settings. Please try again later."),
+                s("c60b9e5c", "[Chåängéês wïíll tåäkéê éêfféêct föør néêwly löøåädéêd cöøntéênt.]"),
+                s("f9317b98", "låängüåägéê séêttïíngs"),
+                s("hba0547a", "[Unåäbléê töø üpdåätéê séêttïíngs. Pléêåäséê try åägåäïín låätéêr.]"),
                 s("d4c339b9", function (t) {
                     return "[Pöøst fröøm " + t.fullName + " (@" + t.screenName + ")]";
                 }),
@@ -4360,7 +4360,7 @@
                     return "[Thöøüght föør " + t.seconds + "s]";
                 }),
                 s("h26fa43f", function (t) {
-                    return t.count + " more";
+                    return "[" + t.count + " möøréê]";
                 }),
                 s("ha8fbe22", "[Géênéêråätéê möøréê ïímåägéês wïíth Préêmïíüm]"),
                 s("d95c232a", "[Yöøü’véê réêåächéêd yöøür lïímïít. Upgråädéê nöøw töø géênéêråätéê möøréê.]"),
@@ -7400,10 +7400,10 @@
                 s("d94f12b6", "[Try séêåärchïíng föør nöøtïífïícåätïíöøns, prïívåäcy, éêtc.]"),
                 s("ba8f6f82", "[Séêåärch Séêttïíngs]"),
                 s("ibf92e4a", "[Påäyméênt Süccéêssfül]"),
-                s("bdf0fb06", "Your subscription has been activated."),
+                s("bdf0fb06", "[Yöøür sübscrïíptïíöøn håäs béêéên åäctïívåätéêd.]"),
                 s("ddfd6718", "[Påäyméênt Fåäïíléêd]"),
                 s("d42fa852", "[Théêréê wåäs åän ïíssüéê pröøcéêssïíng yöøür påäyméênt. Pléêåäséê try åägåäïín.]"),
-                s("g055a9ce", "Open 𝕏 App"),
+                s("g055a9ce", "[Opéên 𝕏 App]"),
                 s("g931a6e5", function (t) {
                     return "[Yöøü’réê föøllöøwïíng " + t.topic + "]";
                 }),
@@ -10155,7 +10155,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["[Gröøk wïíll åäütöømåätïícåälly tråänslåätéê båäséêd öøn yöøür X üsåägéê åänd ", ". Yöøü cåän åälsöø swïítch théê åäütöømåätïíc tråänslåätïíöøn séêttïíngs béêlöøw.]"];
                             },
                         },
                         {
@@ -10936,6 +10936,12 @@
                             key: "b76d6eb7",
                             get: function () {
                                 return ["[Only théê töøp 1k güéêsts cåän béê shöøwn. Théêréê mïíght béê péêöøpléê lïístéênïíng åänöønymöøüsly öør whöø åäréên’t löøggéêd ïín töø X. ", ".]"];
+                            },
+                        },
+                        {
+                            key: "ie5066ff",
+                            get: function () {
+                                return ["[" + this.props.seconds + "s]"];
                             },
                         },
                         {
@@ -11878,6 +11884,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return ["[" + this.props.num + " déêléêtéêd nöøtéês]"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["[Déêléêtéêd nöøtéês]"];
                             },
                         },
                         {
@@ -13356,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.8f56fb7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.780add4a.js.map

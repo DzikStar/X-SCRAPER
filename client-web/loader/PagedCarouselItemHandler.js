@@ -13,71 +13,71 @@
             var o = r(807896),
                 n = r(202784),
                 s = r(235902),
-                c = r(521288),
-                a = r(401388),
+                a = r(521288),
+                c = r(401388),
                 i = r(988566),
                 l = r(725516),
                 d = r(443781),
                 u = r(71620),
-                p = r(668214),
-                m = r(491963),
-                C = r(836255);
-            const w = (e, t) => t.tweetId,
+                m = r(668214),
+                p = r(491963),
+                w = r(836255);
+            const C = (e, t) => t.tweetId,
                 h = (e, t) => {
                     const r = t.tweetId,
-                        o = r && C.Z.select(e, r);
-                    return o ? (0, m.z0)(e, o) : void 0;
+                        o = r && w.Z.select(e, r);
+                    return o ? (0, p.z0)(e, o) : void 0;
                 },
-                b = (0, p.Z)()
-                    .propsFromState(() => ({ community: h, hydratedTweet: C.Z.createHydratedTweetSelector(w) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: m.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: p, onMediaClick: m, onPress: C, onScreenNameClick: w, tweetId: h, withBirdwatchPivot: b = !0, ..._ }) => {
+                b = (0, m.Z)()
+                    .propsFromState(() => ({ community: h, hydratedTweet: w.Z.createHydratedTweetSelector(C) }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: p.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: t, fetchCommunityIfNeeded: r, hydratedTweet: u, onAvatarClick: m, onMediaClick: p, onPress: w, onScreenNameClick: C, tweetId: h, withBirdwatchPivot: b = !0, ..._ }) => {
                     const { featureSwitches: y, viewerUserId: E } = n.useContext(d.rC),
                         x = (0, l.z)(),
-                        k = u?.community_id_str;
+                        g = u?.community_id_str;
                     n.useEffect(() => {
-                        k && (0, a.Z)(e) && r(k).catch(t());
-                    }, [e, k, t, r]);
-                    const T = n.useCallback(
+                        g && (0, c.Z)(e) && r(g).catch(t());
+                    }, [e, g, t, r]);
+                    const v = n.useCallback(
                             (e) => {
-                                x.scribeAction("click"), C && C(e);
+                                x.scribeAction("click"), w && w(e);
                             },
-                            [C, x],
+                            [w, x],
                         ),
-                        g = !!b,
-                        f = u && (0, i.D$)(u, E, e),
-                        I = f && (0, i.rl)(f);
-                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(c.Z, (0, o.Z)({}, _, { loggedInUserId: E, onAvatarClick: p, onMediaClick: m, onPress: T, onScreenNameClick: w, shouldShowAltLabelAlways: !0, socialContextProps: I, tweet: u, withBirdwatchPivot: g })));
+                        k = !!b,
+                        T = u && (0, i.D$)(u, E, e),
+                        Z = T && (0, i.rl)(T);
+                    return n.createElement(s.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => y.isTrue("responsive_web_edit_tweet_enabled") || y.isTrue("subscriptions_feature_labs_1004") } }, n.createElement(a.Z, (0, o.Z)({}, _, { loggedInUserId: E, onAvatarClick: m, onMediaClick: p, onPress: v, onScreenNameClick: C, shouldShowAltLabelAlways: !0, socialContextProps: Z, tweet: u, withBirdwatchPivot: k })));
                 });
         },
         562154: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => T });
+            r.r(t), r.d(t, { default: () => v });
             var o = r(459643),
                 n = r(942893),
                 s = r(351322),
-                c = r(202784),
-                a = r(325686),
+                a = r(202784),
+                c = r(325686),
                 i = r(154003),
                 l = r(392237),
                 d = r(725516),
                 u = r(64899);
-            const p = l.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden", marginStart: e.spaces.space16, marginEnd: e.spaces.space16 }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between" }, button: { flexGrow: 1, marginTop: e.spaces.space12, marginBottom: e.spaces.space12 }, leftControl: { marginStart: e.spaces.space12, marginEnd: e.spaces.space4 }, rightControl: { marginEnd: e.spaces.space12, marginStart: e.spaces.space4 } })),
-                m = (e) => {
+            const m = l.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden", marginStart: e.spaces.space16, marginEnd: e.spaces.space16 }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between" }, button: { flexGrow: 1, marginTop: e.spaces.space12, marginBottom: e.spaces.space12 }, leftControl: { marginStart: e.spaces.space12, marginEnd: e.spaces.space4 }, rightControl: { marginEnd: e.spaces.space12, marginStart: e.spaces.space4 } })),
+                p = (e) => {
                     const { content: t, showLessOnClick: r, showLessText: o, showMoreOnClick: n, showMoreText: s } = e,
-                        l = c.useRef(),
-                        m = (0, d.z)(),
-                        C = (e) => (t) => {
-                            m.scribeAction("show_more"), n(), l.current?.blur(), e(t);
-                        },
+                        l = a.useRef(),
+                        p = (0, d.z)(),
                         w = (e) => (t) => {
-                            m.scribeAction("show_less"), r(), l.current?.focus(), l.current?.blur(), e(t);
+                            p.scribeAction("show_more"), n(), l.current?.blur(), e(t);
+                        },
+                        C = (e) => (t) => {
+                            p.scribeAction("show_less"), r(), l.current?.focus(), l.current?.blur(), e(t);
                         },
                         h = () => {
-                            m.scribeAction("click");
+                            p.scribeAction("click");
                         };
-                    return c.createElement(u.H.Consumer, null, ({ handleNextSlide: e }) => c.createElement(a.Z, { style: p.root }, c.createElement(a.Z, { onClick: h }, t), c.createElement(a.Z, { style: p.buttonsContainer }, c.createElement(i.ZP, { onPress: w(e), size: "medium", style: [p.button, p.leftControl], type: "primaryOutlined" }, o), c.createElement(i.ZP, { onPress: C(e), ref: l, size: "medium", style: [p.button, p.rightControl], type: "primaryFilled" }, s))));
+                    return a.createElement(u.H.Consumer, null, ({ handleNextSlide: e }) => a.createElement(c.Z, { style: m.root }, a.createElement(c.Z, { onClick: h }, t), a.createElement(c.Z, { style: m.buttonsContainer }, a.createElement(i.ZP, { onPress: C(e), size: "medium", style: [m.button, m.leftControl], type: "primaryOutlined" }, o), a.createElement(i.ZP, { onPress: w(e), ref: l, size: "medium", style: [m.button, m.rightControl], type: "primaryFilled" }, s))));
                 };
-            var C = r(23679),
-                w = r(301758),
+            var w = r(23679),
+                C = r(301758),
                 h = r(71620),
                 b = r(668214),
                 _ = r(836255),
@@ -89,37 +89,37 @@
                 },
                 x = (e) => {
                     const { applyReactionInstructions: t, createLocalApiErrorHandler: r, entry: o, processCallback: n, tweet: s } = e,
-                        a = s?.id_str,
+                        c = s?.id_str,
                         i = o.content.content.pagedCarouselFeedbackItem ? o.content.content.pagedCarouselFeedbackItem : void 0,
-                        l = c.useCallback(() => {
-                            i && (n(i.showMoreCallback).catch(r()), t({ entry: o, triggerName: C.K.ON_SHOW_MORE }));
+                        l = a.useCallback(() => {
+                            i && (n(i.showMoreCallback).catch(r()), t({ entry: o, triggerName: w.K.ON_SHOW_MORE }));
                         }, [r, t, o, n, i]),
-                        d = c.useCallback(() => {
+                        d = a.useCallback(() => {
                             i && n(i.showLessCallback).catch(r());
                         }, [r, n, i]),
-                        u = c.useMemo(() => (a ? c.createElement(w.Z, { shouldShowBorder: !1, tweetId: a }) : null), [a]);
-                    return i && s ? c.createElement(m, { content: u, showLessOnClick: d, showLessText: i.showLessText, showMoreOnClick: l, showMoreText: i.showMoreText }) : null;
+                        u = a.useMemo(() => (c ? a.createElement(C.Z, { shouldShowBorder: !1, tweetId: c }) : null), [c]);
+                    return i && s ? a.createElement(p, { content: u, showLessOnClick: d, showLessText: i.showLessText, showMoreOnClick: l, showMoreText: i.showMoreText }) : null;
                 },
-                k = (0, b.Z)()
+                g = (0, b.Z)()
                     .propsFromState(() => ({ tweet: E }))
-                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, h.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(c.memo(x)),
-                T = s.iH({ component: k, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
+                    .propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, h.zr)("PAGED_CAROUSEL_FEEDBACK_ITEM"), processCallback: y.Z }))(a.memo(x)),
+                v = s.iH({ component: g, getScribeDataItem: (e) => n.Z.getPagedCarouselTweetURTEntryItem(e), shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
         },
         988566: (e, t, r) => {
-            r.d(t, { D$: () => a, Du: () => d, GK: () => l, Iv: () => p, pz: () => m, rl: () => u });
+            r.d(t, { D$: () => c, Du: () => d, GK: () => l, Iv: () => m, pz: () => p, rl: () => u });
             var o = r(202784),
                 n = r(688715),
                 s = r(946409),
-                c = r(788993);
-            const a = (e, t, r) => (e.retweeted_status ? i(e, t) : e.community_id_str && r ? l(e, r) : void 0),
+                a = r(788993);
+            const c = (e, t, r) => (e.retweeted_status ? i(e, t) : e.community_id_str && r ? l(e, r) : void 0),
                 i = (e, t) => {
-                    if (e.retweeted_status) return { contextType: c.Z.Retweet, isSelfRetweet: e.user.id_str === t, name: e.user.name, screenName: e.user.screen_name };
+                    if (e.retweeted_status) return { contextType: a.Z.Retweet, isSelfRetweet: e.user.id_str === t, name: e.user.name, screenName: e.user.screen_name };
                 },
-                l = (e, t) => ({ contextType: c.Z.Community, landingUrl: { url: (0, n.ju)(`https://x.com/i/communities/${t.id_str}`), urlType: "ExternalUrl" }, text: t.name }),
+                l = (e, t) => ({ contextType: a.Z.Community, landingUrl: { url: (0, n.ju)(`https://x.com/i/communities/${t.id_str}`), urlType: "ExternalUrl" }, text: t.name }),
                 d = ({ isCellWithProminentSocialContext: e, socialContext: t, topic: r }) => {
                     if (t?.topicContext) {
                         const o = t.topicContext;
-                        return { contextType: e ? c.Z.TextOnly : c.Z.Topic, landingUrl: { url: `twitter://topics_timeline?id=${o.topicId}`, urlType: "DeepLink" }, text: r?.name, topicContext: o };
+                        return { contextType: e ? a.Z.TextOnly : a.Z.Topic, landingUrl: { url: `twitter://topics_timeline?id=${o.topicId}`, urlType: "DeepLink" }, text: r?.name, topicContext: o };
                     }
                     if (t?.generalContext) return { ...t.generalContext };
                 },
@@ -127,13 +127,26 @@
                     const { contextType: t, landingUrl: r, text: o } = e;
                     return { link: r ? (0, s.s9)(r) : void 0, text: o, contextType: t };
                 },
-                p = { contextType: c.Z.Pin, text: "" },
-                m = o.createContext(void 0);
+                m = { contextType: a.Z.Pin, text: "" },
+                p = o.createContext(void 0);
         },
         23679: (e, t, r) => {
             r.d(t, { K: () => o });
             const o = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
+        452693: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => i });
+            var o = r(202784),
+                n = r(890601),
+                s = r(783427),
+                a = r(347101);
+            const c = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+            };
+            c.metadata = { width: 24, height: 24 };
+            const i = c;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.533f893a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.PagedCarouselItemHandler.2fe8902a.js.map

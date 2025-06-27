@@ -462,11 +462,11 @@
                     if (!(_ || (u && 0 !== u.length))) return Promise.resolve();
                     const z = { message: _ ?? "", sender: i.CI.HUMAN, promptSource: O ?? "", ...(s ? { postIds: [s] } : void 0) };
                     u && (z.fileAttachments = u), b && (z.isDeepsearch = b), w && (z.isReasoning = w);
-                    const W = { responses: Y.concat(z), systemPromptName: K, grokModelOptionId: x ?? H, conversationId: D, returnSearchResults: R, returnCitations: g, promptMetadata: p, imageGenerationCount: h, requestFeatures: m, ...(s ? { analysisEntityId: s } : void 0), geoLocation: v, enableSideBySide: !("GROK_ANALYZE" === p.promptSource || T || G || L || b || w), toolOverrides: B, isDeepsearch: b, isReasoning: w, personalityId: N, deepsearchArgs: f ?? (b ? j?.deepsearchArgs : void 0) };
-                    I(M.setPromptSource(O || "")), I(M.setUsingExperiment(!1)), I(M.userSendMessage(z, p)), (0, a.pv)(e, { conversationLength: Y.length, isFileAttached: Boolean(z.fileAttachments?.length), isDeepsearch: W.isDeepsearch || void 0, isReasoning: W.isReasoning || void 0 }), S?.();
-                    const Z = y.isTrue("responsive_web_grok_enable_add_response_keepalive") && (b || w),
-                        q = y.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
-                    return (0, E.D)({ grokModule: M, requestBody: W, dispatch: I, analytics: e, api: U, flags: { enableLocation: F, enableGrokApiHost: P, numRetries: q, enableKeepalive: Z }, featureSwitches: y });
+                    const q = { responses: Y.concat(z), systemPromptName: K, grokModelOptionId: x ?? H, conversationId: D, returnSearchResults: R, returnCitations: g, promptMetadata: p, imageGenerationCount: h, requestFeatures: m, ...(s ? { analysisEntityId: s } : void 0), geoLocation: v, enableSideBySide: !("GROK_ANALYZE" === p.promptSource || T || G || L || b || w), toolOverrides: B, isDeepsearch: b, isReasoning: w, personalityId: N, deepsearchArgs: f ?? (b ? j?.deepsearchArgs : void 0) };
+                    I(M.setPromptSource(O || "")), I(M.setUsingExperiment(!1)), I(M.userSendMessage(z, p)), (0, a.pv)(e, { conversationLength: Y.length, isFileAttached: Boolean(z.fileAttachments?.length), isDeepsearch: q.isDeepsearch || void 0, isReasoning: q.isReasoning || void 0 }), S?.();
+                    const W = y.isTrue("responsive_web_grok_enable_add_response_keepalive") && (b || w),
+                        Z = y.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
+                    return (0, E.D)({ grokModule: M, requestBody: q, dispatch: I, analytics: e, api: U, flags: { enableLocation: F, enableGrokApiHost: P, numRetries: Z, enableKeepalive: W }, featureSwitches: y });
                 };
         },
         63538: (e, t, s) => {
@@ -496,7 +496,7 @@
                         });
         },
         189953: (e, t, s) => {
-            s.d(t, { $t: () => ne, A0: () => pe, BA: () => se, BS: () => y, CH: () => M, CR: () => Z, Cr: () => O, DX: () => z, Dh: () => m, Dn: () => P, En: () => E, FF: () => Q, FV: () => k, Gy: () => N, HF: () => g, IK: () => o, JO: () => j, Jt: () => re, KH: () => h, L0: () => $, Lc: () => n, OW: () => U, Oj: () => C, P9: () => Y, Q_: () => a, Qg: () => v, Qh: () => J, Sv: () => i, TY: () => G, Tv: () => W, UN: () => b, VK: () => c, WK: () => te, Ws: () => d, Xg: () => q, Xi: () => F, Y8: () => u, Yb: () => T, Yf: () => r, Yx: () => l, ZN: () => B, _i: () => ce, ar: () => V, cA: () => ge, cw: () => ae, dK: () => S, dO: () => _, dZ: () => L, dw: () => le, f1: () => ue, fH: () => _e, ip: () => H, j$: () => Re, lQ: () => ee, lh: () => p, lm: () => R, mq: () => me, my: () => w, nK: () => f, o$: () => D, px: () => ie, qd: () => x, ru: () => Se, ub: () => A, vc: () => K, vi: () => I, wG: () => oe, x5: () => X, yB: () => de, z2: () => Ee });
+            s.d(t, { $t: () => ne, A0: () => pe, BA: () => se, BS: () => y, CH: () => M, CR: () => W, Cr: () => O, DX: () => z, Dh: () => m, Dn: () => P, En: () => E, FF: () => Q, FV: () => k, Gy: () => N, HF: () => g, IK: () => o, JO: () => j, Jt: () => re, KH: () => h, L0: () => $, Lc: () => n, OW: () => U, Oj: () => C, P9: () => Y, Q_: () => a, Qg: () => v, Qh: () => J, Sv: () => i, TY: () => G, Tv: () => q, UN: () => b, VK: () => c, WK: () => te, Ws: () => d, Xg: () => Z, Xi: () => F, Y8: () => u, Yb: () => T, Yf: () => r, Yx: () => l, ZN: () => B, _i: () => ce, ar: () => V, cA: () => ge, cw: () => ae, dK: () => S, dO: () => _, dZ: () => L, dw: () => le, f1: () => ue, fH: () => _e, ip: () => H, j$: () => Re, lQ: () => ee, lh: () => p, lm: () => R, mq: () => me, my: () => w, nK: () => f, o$: () => D, px: () => ie, qd: () => x, ru: () => Se, ub: () => A, vc: () => K, vi: () => I, wG: () => oe, x5: () => X, yB: () => de, z2: () => Ee });
             const r = "grok",
                 o = Object.freeze({ FUN: "fun", REGULAR: "" }),
                 a = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
@@ -542,11 +542,11 @@
                 j = "rweb/grok/SET_EXPECTED_IMAGE_ASPECT_RATIO",
                 B = "rweb/grok/FETCH_CONVERSATION_ID_START",
                 z = "rweb/grok/FETCH_CONVERSATION_ID_SUCCESS",
-                W = "rweb/grok/FETCH_CONVERSATION_ID_FAILED",
-                Z = "rweb/grok/EDITING_SET_ID",
-                q = "rweb/grok/EDITING_CLEAR",
+                q = "rweb/grok/FETCH_CONVERSATION_ID_FAILED",
+                W = "rweb/grok/EDITING_SET_ID",
+                Z = "rweb/grok/EDITING_CLEAR",
                 $ = "rweb/grok/EDITING_COMMIT",
-                X = "rweb/grok/RETRY_MESSAGE",
+                X = "rweb/gqrok/RETRY_MESSAGE",
                 J = "rweb/grok/SET_INPUT_PREFILL",
                 ee = "rweb/grok/MODE_CHANGE",
                 te = "rweb/grok/MODEL_CHANGE",
@@ -595,4 +595,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.35c29c5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.785a2bea.js.map

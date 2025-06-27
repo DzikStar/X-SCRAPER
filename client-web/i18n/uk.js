@@ -1330,7 +1330,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "Виконання коду"),
                 n("ead81122", "Щось пішло не так. Оновіть сторінку, щоб відновити з’єднання, або повторіть спробу."),
                 n("f808a13a", "Ліміт запитів вичерпано. Зачекайте деякий час і повторіть спробу."),
                 n("e0481e5a", "Наразі Grok не підтримується у вашій країні."),
@@ -4369,7 +4369,7 @@
                     return "Обдумування виконувалося " + e.seconds + " с";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "ще " + e.count;
                 }),
                 n("ha8fbe22", "Генеруйте більше зображень із Premium"),
                 n("d95c232a", "Ви досягли ліміту. Щоб продовжити, оформте передплату."),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " cек."];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " хв. " + this.props.seconds + " сек."];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return ["Видалених Заміток: " + this.props.num];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Видалені Замітки"];
                             },
                         },
                         {
@@ -13369,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.87f1d97a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.48e9856a.js.map

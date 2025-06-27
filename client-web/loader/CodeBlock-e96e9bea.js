@@ -271,32 +271,42 @@
             const C = d.default.create((e) => ({ headerBlock: { borderTopEndRadius: e.borderRadii.medium, borderTopStartRadius: e.borderRadii.medium, backgroundColor: e.colors.gray0, display: "grid", gridTemplateColumns: "1fr 1fr", paddingTop: e.spaces.space2, paddingBottom: e.spaces.space2, paddingStart: e.spaces.space12, paddingEnd: e.spaces.space8, alignItems: "center", width: "100%" }, headerText: { fontFamily: "monospace", fontSize: e.fontSizesPx.subtext2 }, headerRight: { alignItems: "end" }, copyButton: { borderRadius: e.borderRadii.xLarge } })),
                 x = v;
         },
+        997041: (e, o, r) => {
+            function n(e, o) {
+                return e.replace(/<grok:render\s+card_id="([^"]*)"\s+card_type="citation_card"\s+type="render_inline_citation">[\s\S]*?<\/grok:render>/g, (e, r) => (o.find((e) => e.id === r) ? `[](grok:render:card_id=${r})` : ""));
+            }
+            function t(e) {
+                return e.replace(/<grok:render\s+card_id="([^"]*)"\s+card_type="([^"]*)"\s+type="([^"]*)">[\s\S]*?<\/grok:render>/g, (e, o) => "");
+            }
+            r.d(o, { T: () => n, p: () => t });
+        },
         730372: (e, o, r) => {
-            r.d(o, { $E: () => u, DL: () => d, OR: () => g });
+            r.d(o, { $E: () => p, DL: () => g, OR: () => u });
             var n = r(202784),
-                t = r(576648);
-            let l = !1;
-            function a(e) {
+                t = r(576648),
+                l = r(997041);
+            let a = !1;
+            function c(e) {
                 if (e instanceof HTMLElement)
-                    if ("A" !== e.tagName || e.dataset.copyPreserve) Array.from(e.children).forEach(a);
+                    if ("A" !== e.tagName || e.dataset.copyPreserve) Array.from(e.children).forEach(c);
                     else {
                         const o = document.createDocumentFragment();
                         for (; e.firstChild; ) o.appendChild(e.firstChild);
                         e.parentNode?.replaceChild(o, e);
                     }
             }
-            function c(e, o) {
+            function i(e, o) {
                 const r = window.getComputedStyle(e).fontFamily.toLowerCase(),
                     n = r.includes("mono") || r.includes("courier") || o;
-                (e.style.color = "black"), (e.style.backgroundColor = "transparent"), (e.style.fontFamily = n ? "monospace" : "sans-serif"), n && (e.style.fontSize = "10pt"), Array.from(e.children).forEach((e) => c(e, o));
+                (e.style.color = "black"), (e.style.backgroundColor = "transparent"), (e.style.fontFamily = n ? "monospace" : "sans-serif"), n && (e.style.fontSize = "10pt"), Array.from(e.children).forEach((e) => i(e, o));
             }
-            function i(e, o, r) {
+            function s(e, o, r) {
                 const n = e.getElementsByClassName(o);
                 Array.from(n).forEach((e) => {
                     e.style.display = r;
                 });
             }
-            function s(e) {
+            function d(e) {
                 let o = !0,
                     r = e?.cloneNode(!0);
                 const n = window.getSelection();
@@ -306,53 +316,51 @@
                     o.appendChild(e), (r = o);
                 }
                 if (!r) return [!1, "", ""];
-                i(r, "katex", "none"), i(r, "raw_katex", "inline"), i(r, "raw_katex_block", "block"), i(r, "omit-from-copy", "none");
+                s(r, "katex", "none"), s(r, "raw_katex", "inline"), s(r, "raw_katex_block", "block"), s(r, "omit-from-copy", "none");
                 const t = document.createElement("div");
-                (t.style.backgroundColor = "white"), t.appendChild(r), document.body.appendChild(t), a(r), c(r);
+                (t.style.backgroundColor = "white"), t.appendChild(r), document.body.appendChild(t), c(r), i(r);
                 const l = document.createRange();
                 l.selectNodeContents(r);
-                const s = window.getSelection(),
-                    d = s.rangeCount ? s.getRangeAt(0) : null;
-                s.removeAllRanges(), s.addRange(l);
+                const a = window.getSelection(),
+                    d = a.rangeCount ? a.getRangeAt(0) : null;
+                a.removeAllRanges(), a.addRange(l);
                 try {
                     document.execCommand("copy");
                 } catch (e) {
                     o = !1;
                 }
-                const g = p(t).replace(/(\r\n|\n){3,}/g, (e) => e.slice(0, e.indexOf("\n", e.indexOf("\n") + 1)));
+                const g = h(t).replace(/(\r\n|\n){3,}/g, (e) => e.slice(0, e.indexOf("\n", e.indexOf("\n") + 1)));
                 const u = t.innerHTML;
-                return document.body.removeChild(t), d && (s.removeAllRanges(), s.addRange(d)), [o, u, g];
+                return document.body.removeChild(t), d && (a.removeAllRanges(), a.addRange(d)), [o, u, g];
             }
-            function d(e, o) {
-                l = !0;
+            function g(e, o) {
+                a = !0;
                 const r = document.createElement("div");
                 r.style.backgroundColor = "white";
                 const n = document.createElement("div");
                 var t;
-                (n.innerHTML = `<pre><code class="language-${o}">${((t = e), t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"))}</code></pre>`), c(n, !0), r.appendChild(n), document.body.appendChild(r);
-                const a = document.createRange();
-                a.selectNodeContents(r);
-                const i = window.getSelection(),
-                    s = i.rangeCount ? i.getRangeAt(0) : null;
-                i.removeAllRanges(), i.addRange(a);
+                (n.innerHTML = `<pre><code class="language-${o}">${((t = e), t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;"))}</code></pre>`), i(n, !0), r.appendChild(n), document.body.appendChild(r);
+                const l = document.createRange();
+                l.selectNodeContents(r);
+                const c = window.getSelection(),
+                    s = c.rangeCount ? c.getRangeAt(0) : null;
+                c.removeAllRanges(), c.addRange(l);
                 try {
                     document.execCommand("copy");
                 } catch (e) {}
-                document.body.removeChild(r), s && (i.removeAllRanges(), i.addRange(s)), (l = !1);
+                document.body.removeChild(r), s && (c.removeAllRanges(), c.addRange(s)), (a = !1);
             }
-            function g(e, o) {
-                l = !0;
-                const [r] = s(e);
-                !r && o && t.Z.setString(o), (l = !1);
+            function u(e, o) {
+                (a = !0), t.Z.setString((0, l.p)(o ?? "")), (a = !1);
             }
-            function u() {
+            function p() {
                 n.useEffect(() => {
                     const e = (e) => {
                         const o = window.getSelection().rangeCount > 0;
                         if (
                             (e.target instanceof HTMLElement && ("INPUT" === e.target.tagName || "TEXTAREA" === e.target.tagName)) ||
                             !o ||
-                            l ||
+                            a ||
                             (function () {
                                 const e = window.getSelection().getRangeAt(0).commonAncestorContainer;
                                 let o = e.nodeType === Node.TEXT_NODE ? e.parentElement : e;
@@ -373,7 +381,7 @@
                             })()
                         )
                             return;
-                        const [r, n, t] = s(null);
+                        const [r, n, t] = d(null);
                         if (r) {
                             e.preventDefault();
                             const o = document.getElementById("react-native-stylesheet"),
@@ -389,12 +397,12 @@
                     );
                 }, []);
             }
-            function p(e) {
+            function h(e) {
                 if (null === e || (e.nodeType !== Node.TEXT_NODE && e.nodeType !== Node.ELEMENT_NODE)) return "";
                 if (e.nodeType === Node.TEXT_NODE) return e.textContent.replace(/\t/g, "\t");
                 let o = "";
                 const r = Array.from(e.childNodes);
-                for (const e of r) e && (o += p(e));
+                for (const e of r) e && (o += h(e));
                 switch (e.nodeName.toLowerCase()) {
                     case "br":
                     case "div":
@@ -411,4 +419,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CodeBlock-e96e9bea.7879690a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CodeBlock-e96e9bea.6dbe75ea.js.map

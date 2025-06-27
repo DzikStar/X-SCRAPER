@@ -1320,7 +1320,7 @@
                 i("dce1817a", "Searching on 𝕏"),
                 i("f7151564", "Searching users on 𝕏"),
                 i("c43ef93e", "Browsing web page"),
-                i("jb097f6e", "Executing code"),
+                i("jb097f6e", "Melaksanakan kod"),
                 i("ead81122", "Ada sesuatu yang tidak kena. Segar semula untuk menyambung semula atau cuba lagi."),
                 i("f808a13a", "Had kadar dilebihi. Sila tunggu selama beberapa ketika kemudian cuba lagi."),
                 i("e0481e5a", "Grok tidak disokong di negara anda pada masa sekarang."),
@@ -4359,7 +4359,7 @@
                     return "Difikirkan selama " + a.seconds + "s";
                 }),
                 i("h26fa43f", function (a) {
-                    return a.count + " more";
+                    return a.count + " lagi";
                 }),
                 i("ha8fbe22", "Jana lebih banyak imej dengan Premium"),
                 i("d95c232a", "Anda telah mencapai had anda. Naik taraf sekarang untuk menjana lebih banyak lagi."),
@@ -10938,6 +10938,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + "s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "m" + this.props.seconds + "s"];
@@ -11877,6 +11883,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " nota yang dipadam"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Nota yang dipadam"];
                             },
                         },
                         {
@@ -13354,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.6927845a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.6f39a38a.js.map

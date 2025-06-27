@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountVerification-6107ac1a", "icons/IconCameraPlusStroke-js"],
+    ["bundle.AccountVerification-6107ac1a", "icons/IconEye-js"],
     {
         625661: (e, t, o) => {
             o.d(t, { ZP: () => p });
@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: b, secondaryBar: m, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: x, withWideContainer: Z } = this.props,
-                        { isModal: v } = this.context,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: u, rightControl: b, secondaryBar: m, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: v, withWideContainer: x } = this.props,
+                        { isModal: Z } = this.context,
                         w = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         _ = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!x, v, !!m);
-                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: w, middleControl: p, position: h(u, v, a), rightControl: b, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: _, withWideContainer: Z }), m || null);
+                        })(!!v, Z, !!m);
+                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { centerTitle: t, centeredLogo: o, isFullWidth: l, isLarge: c, leftControl: w, middleControl: p, position: h(u, Z, a), rightControl: b, style: g, subtitle: y, title: f, titleDomId: C, titleIconCell: k, titleIconCellSize: B, withBackground: _, withWideContainer: x }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -217,7 +217,7 @@
             o.d(t, { Z: () => r });
             const r = o(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        293615: (e, t, o) => {
+        988227: (e, t, o) => {
             o.r(t), o.d(t, { default: () => n });
             var r = o(202784),
                 a = o(890601),
@@ -225,11 +225,24 @@
                 l = o(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M9.697 3H11v2h-.697l-3 2H5c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h14c.276 0 .5-.224.5-.5V10h2v8.5c0 1.381-1.119 2.5-2.5 2.5H5c-1.381 0-2.5-1.119-2.5-2.5v-11C2.5 6.119 3.619 5 5 5h1.697l3-2zM12 10.5c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.895-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4zM17 2c0 1.657-1.343 3-3 3v1c1.657 0 3 1.343 3 3h1c0-1.657 1.343-3 3-3V5c-1.657 0-3-1.343-3-3h-1z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const n = s;
+        },
+        748138: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => n });
+            var r = o(202784),
+                a = o(890601),
+                i = o(783427),
+                l = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const n = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.75c0860a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountVerification-6107ac1a.114d272a.js.map

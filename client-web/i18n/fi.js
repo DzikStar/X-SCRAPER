@@ -1321,7 +1321,7 @@
                 e("dce1817a", "Searching on 𝕏"),
                 e("f7151564", "Searching users on 𝕏"),
                 e("c43ef93e", "Browsing web page"),
-                e("jb097f6e", "Executing code"),
+                e("jb097f6e", "Suoritetaan koodia"),
                 e("ead81122", "Jokin meni pieleen. Muodosta yhteys uudelleen päivittämällä tai yritä uudelleen."),
                 e("f808a13a", "Toimintojen määrää on rajoitettu. Odota muutama hetki ja yritä sitten uudelleen."),
                 e("e0481e5a", "Grok ei tällä hetkellä ole tuettu ominaisuus maassasi."),
@@ -4360,7 +4360,7 @@
                     return "Mietti " + a.seconds + " s";
                 }),
                 e("h26fa43f", function (a) {
-                    return a.count + " more";
+                    return a.count + " muuta";
                 }),
                 e("ha8fbe22", "Premium-tilaajana voit muodostaa enemmän kuvia"),
                 e("d95c232a", "Raja tuli täyteen. Päivitä tilaus saadaksesi muodostaa lisää."),
@@ -10952,6 +10952,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " min " + this.props.seconds + " s"];
@@ -11891,6 +11897,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " poistettua huomautusta"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Poistetut huomautukset"];
                             },
                         },
                         {
@@ -13369,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.e2aaf87a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.10a2d0fa.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.SettingsSuperFollows-6107ac1a"],
+    ["ondemand.SettingsSuperFollows-6107ac1a", "icons/IconEye-js"],
     {
         515140: (e, a, n) => {
             n.d(a, { Z: () => r });
@@ -1602,32 +1602,19 @@
                 },
                 S = (e) => r.createElement(i.Z, (0, l.Z)({}, e, { renderSelector: (e) => r.createElement(_, (0, l.Z)({}, e, { key: e.value })) }));
         },
-        215337: (e, a, n) => {
-            n.d(a, { Z: () => s });
+        988227: (e, a, n) => {
+            n.r(a), n.d(a, { default: () => o });
             var l = n(202784),
-                r = n(325686);
-            class i extends l.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this.getColors = () => {
-                            const { colors: e, locations: a } = this.props;
-                            return e
-                                .map((e, n) => {
-                                    const l = a[n];
-                                    let r = "";
-                                    return l && (r = ` ${100 * l}%`), e + r;
-                                })
-                                .join(",");
-                        });
-                }
-                render() {
-                    const { angle: e, angleUnit: a, children: n, style: i } = this.props;
-                    return l.createElement(r.Z, { style: [i, { backgroundImage: `linear-gradient(${e}${a},${this.getColors()})` }] }, n);
-                }
-            }
-            i.defaultProps = { angle: 180, angleUnit: "deg", locations: [] };
-            const s = i;
+                r = n(890601),
+                i = n(783427),
+                s = n(347101);
+            const t = (e = {}) => {
+                const { direction: a } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: a });
+            };
+            t.metadata = { width: 24, height: 24 };
+            const o = t;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.fbc673ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.fd31734a.js.map

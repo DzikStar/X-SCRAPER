@@ -301,7 +301,7 @@
         },
         365265: (e, t, r) => {
             "use strict";
-            r.d(t, { $B: () => _, F$: () => g, Ne: () => C, RC: () => P, VR: () => S, dF: () => y, h9: () => b, hu: () => k, pC: () => E, qB: () => T, tF: () => f, v1: () => I, xN: () => B });
+            r.d(t, { $B: () => _, F$: () => g, Ne: () => C, RC: () => P, VR: () => S, dF: () => y, h9: () => b, hu: () => k, pC: () => E, qB: () => T, tF: () => f, v1: () => I, xN: () => w });
             var a = r(372551),
                 o = r(147595),
                 i = r(499627),
@@ -368,7 +368,7 @@
                             i = S(t());
                         return i !== s.ZP.NONE && i !== s.ZP.FAILED ? Promise.resolve() : o({ actionTypes: p, context: "FETCH_PRODUCT_SUBSCRIPTIONS", meta: {} });
                     },
-                B =
+                w =
                     (e) =>
                     (t, r, { api: o }) => {
                         const i = (0, n._O)(t, { params: { price_id: e }, request: o.withEndpoint(a.Z).switchTier }),
@@ -474,7 +474,7 @@
             var T = r(668214);
             const k = (0, T.Z)().withAnalytics({ page: "not_a_bot", section: "marketing" }),
                 I = "webviewOneDollarEventMessageHandler",
-                B = k((e) => {
+                w = k((e) => {
                     const [t, r] = a.useState(!1),
                         [o, i] = a.useState(""),
                         { onClick: n, webviewMessageHandler: s } = e,
@@ -508,20 +508,20 @@
                     );
                 });
             r(136728);
-            var w = r(290402),
+            var B = r(290402),
                 U = r(952793),
                 Z = r(97882),
-                R = r(685731),
-                x = r(365265);
-            const v = (0, T.Z)()
-                    .propsFromState(() => ({ productDetailsFetchStatus: (e, t) => (0, x.tF)(e, t.stripeProductId), productDetails: (e, t) => (0, x.h9)(e, t.stripeProductId), checkoutUrlFetchStatus: (e, t) => (0, x.$B)(e, t.stripeProductId), checkoutUrl: (e, t) => (0, x.F$)(e, t.stripeProductId) }))
-                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: x.Ne, fetchNotABotCheckoutUrl: x.hu }))
+                v = r(685731),
+                R = r(365265);
+            const x = (0, T.Z)()
+                    .propsFromState(() => ({ productDetailsFetchStatus: (e, t) => (0, R.tF)(e, t.stripeProductId), productDetails: (e, t) => (0, R.h9)(e, t.stripeProductId), checkoutUrlFetchStatus: (e, t) => (0, R.$B)(e, t.stripeProductId), checkoutUrl: (e, t) => (0, R.F$)(e, t.stripeProductId) }))
+                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: R.Ne, fetchNotABotCheckoutUrl: R.hu }))
                     .withAnalytics({ page: "not_a_bot", section: "marketing" }),
                 D = `https://${window.location.host}`,
                 L = `${D}/i/not_a_bot`,
                 F = `${L}/successful`,
                 N = u().c41e1023,
-                A = v((e) => {
+                M = x((e) => {
                     const { analytics: t, checkoutUrl: r, checkoutUrlFetchStatus: o, fetchNotABotCheckoutUrl: i, fetchSubscriptionProductDetails: s, isMobile: c, onClick: l, productDetails: d, productDetailsFetchStatus: u, stripeProductId: p, stripeProductIdUnhashed: m } = e,
                         h = (0, U.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         f = (0, n.useHistory)(),
@@ -557,7 +557,7 @@
                         y = () => {
                             const e = S();
                             if (e) {
-                                const t = (0, Z.x)({ amount: (0, R.aU)(e, h), currencyCode: e.currency_code.toUpperCase() });
+                                const t = (0, Z.x)({ amount: (0, v.aU)(e, h), currencyCode: e.currency_code.toUpperCase() });
                                 return N({ price: t });
                             }
                             return "";
@@ -565,7 +565,7 @@
                     return a.createElement(
                         a.Fragment,
                         null,
-                        a.createElement(w.Z, {
+                        a.createElement(B.Z, {
                             fetchStatus: u,
                             onRequestRetry: () => {
                                 _();
@@ -573,16 +573,16 @@
                             render: () => a.createElement(C, { disabled: !d || "loading" === o, isMobile: c || !1, onSubscribe: E, price: y() }),
                             retryable: !0,
                         }),
-                        r && a.createElement(w.Z, { fetchStatus: o, onRequestRetry: E, render: () => (r && (window.location.href = r), null), retryable: !0 }),
+                        r && a.createElement(B.Z, { fetchStatus: o, onRequestRetry: E, render: () => (r && (window.location.href = r), null), retryable: !0 }),
                     );
                 }),
-                M = (0, T.Z)()
-                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: x.Ne, fetchSubscriptionProductCheckoutUrl: x.qB }))
+                A = (0, T.Z)()
+                    .propsFromActions(() => ({ fetchSubscriptionProductDetails: R.Ne, fetchSubscriptionProductCheckoutUrl: R.qB }))
                     .withAnalytics({ page: "not_a_bot", section: "marketing" }),
                 O = u().cea1c00e,
                 H = u().f8e6a280,
                 W = u().h968efc6,
-                V = M((e) => {
+                V = A((e) => {
                     const t = (0, n.useHistory)(),
                         r = (0, n.useLocation)(),
                         { isModal: l } = a.useContext(s.Z),
@@ -609,9 +609,9 @@
                         C = !!p.ZP.isWebView(),
                         T = C ? W : H,
                         k = C && window.webkit?.messageHandlers && window.webkit.messageHandlers[I];
-                    return a.createElement(m.Z, { backButtonType: "close", hideBackButton: C, history: t }, a.createElement(i.Z, { style: Q.page }, a.createElement(c.ZP, { "aria-level": 2, role: "heading", size: "title2", style: Q.headline, weight: "heavy" }, O), a.createElement(c.ZP, { color: "gray700", style: Q.subtext }, T), k ? a.createElement(B, { onClick: y, webviewMessageHandler: k }) : a.createElement(A, { isMobile: P, onClick: y, stripeProductId: S, stripeProductIdUnhashed: E })));
+                    return a.createElement(m.Z, { backButtonType: "close", hideBackButton: C, history: t }, a.createElement(i.Z, { style: z.page }, a.createElement(c.ZP, { "aria-level": 2, role: "heading", size: "title2", style: z.headline, weight: "heavy" }, O), a.createElement(c.ZP, { color: "gray700", style: z.subtext }, T), k ? a.createElement(w, { onClick: y, webviewMessageHandler: k }) : a.createElement(M, { isMobile: P, onClick: y, stripeProductId: S, stripeProductIdUnhashed: E })));
                 }),
-                Q = l.default.create((e) => ({ page: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "left", paddingEnd: e.spaces.space36, paddingStart: e.spaces.space36 }, headline: { marginTop: e.spaces.space8 }, itemBackground: { backgroundColor: e.colors.gray100 }, learnMoreButton: { paddingBottom: e.spaces.space32 }, learnMoreLink: { color: e.colors.link, marginTop: e.spaces.space4 }, learnMoreLinkRedesign: { color: e.colors.gray800, marginTop: e.spaces.space4, textDecorationLine: "underline" }, learnMoreTitleStyles: { fontWeight: "normal", color: e.colors.gray800, textDecorationLine: "underline" }, marginTop8: { marginTop: e.spaces.space8 }, maxWidth: { maxWidth: "80%" }, maxWidthExtraSmall: { maxWidth: "70%" }, positionRelative: { position: "relative" }, productSelector: { marginBottom: e.spaces.space12 }, sectionSpacing: { paddingBottom: e.spaces.space12 }, subtext: { marginTop: e.spaces.space12, marginBottom: e.spaces.space32, alignItems: "center", justifyContent: "center" } }));
+                z = l.default.create((e) => ({ page: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "left", paddingEnd: e.spaces.space36, paddingStart: e.spaces.space36 }, headline: { marginTop: e.spaces.space8 }, itemBackground: { backgroundColor: e.colors.gray100 }, learnMoreButton: { paddingBottom: e.spaces.space32 }, learnMoreLink: { color: e.colors.link, marginTop: e.spaces.space4 }, learnMoreLinkRedesign: { color: e.colors.gray800, marginTop: e.spaces.space4, textDecorationLine: "underline" }, learnMoreTitleStyles: { fontWeight: "normal", color: e.colors.gray800, textDecorationLine: "underline" }, marginTop8: { marginTop: e.spaces.space8 }, maxWidth: { maxWidth: "80%" }, maxWidthExtraSmall: { maxWidth: "70%" }, positionRelative: { position: "relative" }, productSelector: { marginBottom: e.spaces.space12 }, sectionSpacing: { paddingBottom: e.spaces.space12 }, subtext: { marginTop: e.spaces.space12, marginBottom: e.spaces.space32, alignItems: "center", justifyContent: "center" } }));
         },
         877895: (e, t, r) => {
             "use strict";
@@ -731,6 +731,20 @@
             }
             m.defaultProps = { renderFailure: n.Z, retryable: !0 };
         },
+        748138: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => c });
+            var a = r(202784),
+                o = r(890601),
+                i = r(783427),
+                n = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotABot.f09a117a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotABot.6801027a.js.map

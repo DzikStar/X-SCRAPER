@@ -1320,7 +1320,7 @@
                 i("dce1817a", "Searching on 𝕏"),
                 i("f7151564", "Searching users on 𝕏"),
                 i("c43ef93e", "Browsing web page"),
-                i("jb097f6e", "Executing code"),
+                i("jb097f6e", "Kode eksekusi"),
                 i("ead81122", "Ada kesalahan teknis, silakan refresh untuk menyambungkan kembali atau coba lagi."),
                 i("f808a13a", "Batas maksimal tercapai. Silakan tunggu beberapa saat, lalu coba lagi."),
                 i("e0481e5a", "Grok belum didukung di negara Anda saat ini."),
@@ -4359,7 +4359,7 @@
                     return "Berpikir selama " + a.seconds + " dtk";
                 }),
                 i("h26fa43f", function (a) {
-                    return a.count + " more";
+                    return a.count + " lainnya";
                 }),
                 i("ha8fbe22", "Buat lebih banyak gambar dengan Premium"),
                 i("d95c232a", "Batas maksimal sudah tercapai. Tingkatkan sekarang untuk membuat lebih banyak."),
@@ -10938,6 +10938,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " dtk"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "mnt" + this.props.seconds + "dtk"];
@@ -11877,6 +11883,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " catatan yang dihapus"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Catatan yang dihapus"];
                             },
                         },
                         {
@@ -13354,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.7d89bb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.812187ca.js.map

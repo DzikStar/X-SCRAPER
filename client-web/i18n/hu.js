@@ -1320,7 +1320,7 @@
                 s("dce1817a", "Searching on 𝕏"),
                 s("f7151564", "Searching users on 𝕏"),
                 s("c43ef93e", "Browsing web page"),
-                s("jb097f6e", "Executing code"),
+                s("jb097f6e", "Kód végrehajtása"),
                 s("ead81122", "Valami hiba történt; frissíts az újracsatlakozáshoz, hogy próbálkozz újra!"),
                 s("f808a13a", "Túllépted az értékelési korlátot. Várj pár pillanatot, és próbálkozz újra!"),
                 s("e0481e5a", "A Grok jelenleg nem támogatott az országodban."),
@@ -4359,7 +4359,7 @@
                     return "Gondolkodás " + e.seconds + " mp-ig";
                 }),
                 s("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " további";
                 }),
                 s("ha8fbe22", "Generálj több képet Premium előfizetéssel"),
                 s("d95c232a", "Elérted a korlátot. Válts magasabb csomagra, hogy többet generálhass!"),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " mp"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " p " + this.props.seconds + " mp"];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " törölt megjegyzés"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Megjegyzések törölve"];
                             },
                         },
                         {
@@ -13364,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.2606be9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.85852afa.js.map

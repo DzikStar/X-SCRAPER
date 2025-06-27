@@ -1317,11 +1317,11 @@
                 a("a02d1657", function (e) {
                     return "[[296690]] Executing code" + e.ttc_tool_usage_card;
                 }),
-                a("aa9d42c0", "Searching the web"),
-                a("dce1817a", "Searching on 𝕏"),
-                a("f7151564", "Searching users on 𝕏"),
-                a("c43ef93e", "Browsing web page"),
-                a("jb097f6e", "Executing code"),
+                a("aa9d42c0", "[[296891]] Searching the web"),
+                a("dce1817a", "[[296889]] Searching on 𝕏"),
+                a("f7151564", "[[296892]] Searching users on 𝕏"),
+                a("c43ef93e", "[[296887]] Browsing web page"),
+                a("jb097f6e", "[[296888]] Executing code"),
                 a("ead81122", "[[294249]] Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "[[285363]] Rate limit exceeded. Please wait a few moments then try again."),
                 a("e0481e5a", "[[285414]] Grok is not supported in your country at this time."),
@@ -1368,11 +1368,11 @@
                 a("e0bffbf8", "[[296322]] About automatic translation"),
                 a("e839db3a", "[[192595]] Dismiss"),
                 a("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "[[296802]] Automatically translate " + e.language;
                 }),
-                a("c60b9e5c", "Changes will take effect for newly loaded content."),
+                a("c60b9e5c", "[[296806]] Changes will take effect for newly loaded content."),
                 a("f9317b98", "language settings"),
-                a("hba0547a", "Unable to update settings. Please try again later."),
+                a("hba0547a", "[[296805]] Unable to update settings. Please try again later."),
                 a("d4c339b9", function (e) {
                     return "[[281741]] Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -4360,7 +4360,7 @@
                     return "[[294826]] Thought for " + e.seconds + "s";
                 }),
                 a("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "[[296886]] " + e.count + " more";
                 }),
                 a("ha8fbe22", "[[290824]] Generate more images with Premium"),
                 a("d95c232a", "[[291591]] You’ve reached your limit. Upgrade now to generate more."),
@@ -7400,10 +7400,10 @@
                 a("d94f12b6", "[[258378]] Try searching for notifications, privacy, etc."),
                 a("ba8f6f82", "[[245100]] Search Settings"),
                 a("ibf92e4a", "[[296677]] Payment Successful"),
-                a("bdf0fb06", "Your subscription has been activated."),
+                a("bdf0fb06", "[[296800]] Your subscription has been activated."),
                 a("ddfd6718", "[[293516]] Payment Failed"),
                 a("d42fa852", "[[296679]] There was an issue processing your payment. Please try again."),
-                a("g055a9ce", "Open 𝕏 App"),
+                a("g055a9ce", "[[296799]] Open 𝕏 App"),
                 a("g931a6e5", function (e) {
                     return "[[213579]] You’re following " + e.topic;
                 }),
@@ -10155,7 +10155,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["[[296907]] Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
                             },
                         },
                         {
@@ -10936,6 +10936,12 @@
                             key: "b76d6eb7",
                             get: function () {
                                 return ["[[285570]] Only the top 1k guests can be shown. There might be people listening anonymously or who aren’t logged in to X. ", "."];
+                            },
+                        },
+                        {
+                            key: "ie5066ff",
+                            get: function () {
+                                return ["[[284056]] " + this.props.seconds + "s"];
                             },
                         },
                         {
@@ -11878,6 +11884,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return ["[[264916]] " + this.props.num + " deleted notes"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["[[264918]] Deleted notes"];
                             },
                         },
                         {
@@ -13356,4 +13368,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.98ea832a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.4247ad7a.js.map

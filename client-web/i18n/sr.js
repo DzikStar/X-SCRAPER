@@ -1328,7 +1328,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "Извршавање кода"),
                 n("ead81122", "Нешто није у реду, освежи за поновно повезивање или покушај поново."),
                 n("f808a13a", "Ограничење оцена је прекорачено. Сачекај неколико тренутка, па покушај поново."),
                 n("e0481e5a", "Функција Grok тренутно није подржана у вашој земљи."),
@@ -4367,7 +4367,7 @@
                     return "Размишљало се " + e.seconds + " сек.";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "Још " + e.count;
                 }),
                 n("ha8fbe22", "Генерисање више слика уз Premium"),
                 n("d95c232a", "Достигнуто је ограничење. Надогради одмах и генериши више."),
@@ -10946,6 +10946,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " сек."];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "мин." + this.props.seconds + "сек."];
@@ -11885,6 +11891,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return ["Избрисаних бележака: " + this.props.num];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Избрисане белешке"];
                             },
                         },
                         {
@@ -13370,4 +13382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.973528ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.585cde0a.js.map

@@ -1330,7 +1330,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "ביצוע קוד"),
                 n("ead81122", "משהו השתבש, כדאי לרענן כדי להתחבר מחדש או לנסות שוב."),
                 n("f808a13a", "חרגת ממגבלת מכסה. המתן מספר רגעים ונסה שוב."),
                 n("e0481e5a", "אין תמיכה ב-Grok במדינה שלך כרגע."),
@@ -4369,7 +4369,7 @@
                     return "מחשבות למשך " + e.seconds + " שניות";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "עוד " + e.count;
                 }),
                 n("ha8fbe22", "הפקת יותר תמונות עם מינוי Premium"),
                 n("d95c232a", "הגעת למגבלה. שדרג עכשיו כדי להפיק יותר."),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " שנ'"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "דק'" + this.props.seconds + "שנ'"];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " הערות שנמחקו"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["הערות שנמחקו"];
                             },
                         },
                         {
@@ -13369,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.62c09b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.c47df7da.js.map

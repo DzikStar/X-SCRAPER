@@ -226,9 +226,9 @@
                     return a.percentage + "% na diskuwento sa " + a.tier + " na " + a.plan;
                 }),
                 i("b28602eb", function (a) {
-                    return "Get " + a.percentage + "% off this summer";
+                    return "Makakuha ng " + a.percentage + "% diskuwento ngayong tag-init";
                 }),
-                i("he77d8e6", "Limited-time offer"),
+                i("he77d8e6", "Alok sa loob ng limitadong panahon"),
                 i("adf3410a", "Mag-subscribe para ma-unlock ang mga bagong feature at kung kuwalipikado, makatanggap ng share sa revenue."),
                 i("a84a736e", "Makakuha ng Libreng Ad Credit"),
                 i("a0713d76", "Mag-upgrade sa Mga Beripikadong Organisasyon para makakuha ng libreng ad credit at suite ng mga tool sa pagpapalago ng negosyo."),
@@ -1294,7 +1294,7 @@
                     return 'Naghahanap sa X ng "' + a.query + '"';
                 }),
                 i("ad342369", function (a) {
-                    return 'Searching 𝕏 users for "' + a.query + '"';
+                    return 'Naghahanap sa mga user ng 𝕏 ng "' + a.query + '"';
                 }),
                 i("g008d475", function (a) {
                     return "Nagba-browse sa " + a.url;
@@ -1315,7 +1315,7 @@
                     return "Naghahanap sa mga post sa X ni @" + a.username + ' ng **"' + a.query + '"**';
                 }),
                 i("a02d1657", function (a) {
-                    return "Executing code" + a.ttc_tool_usage_card;
+                    return "Ine-execute ang code" + a.ttc_tool_usage_card;
                 }),
                 i("aa9d42c0", "Searching the web"),
                 i("dce1817a", "Searching on 𝕏"),
@@ -1354,12 +1354,12 @@
                 i("deaf5b16", "Subukan muli"),
                 i("a66d80d0", "Isalin ang post"),
                 i("be9b9fb8", "Isinalin ng Grok"),
-                i("ba10dab6", "Auto-translated by Grok"),
+                i("ba10dab6", "Awtomatikong isinalin ng Grok"),
                 i("he9c9634", "Hindi nakuha ang pagsasalin"),
                 i("j2198c98", "Itago ang isinaling post"),
                 i("d4d35bea", "Isinasalin..."),
-                i("f4f69be8", "Show original"),
-                i("e3097a5c", "Show auto-translated post"),
+                i("f4f69be8", "Ipakita ang Orihinal"),
+                i("e3097a5c", "Ipakita ang awtomatikong pagsasalin"),
                 i("e0f81ff3", "Pagsasalin:"),
                 i("j2862695", function (a) {
                     return "Isinalin mula sa " + a.originLanguage + " ng";
@@ -4273,7 +4273,7 @@
                     return "Ipakita lahat (" + a.count + ")";
                 }),
                 i("df601d92", "Mga Nauugnay na User"),
-                i("a4cfb8a8", "Browsing"),
+                i("a4cfb8a8", "Nagba-browse"),
                 i("d7cb5408", "Mga nauugnay na Web Page"),
                 i("ca93f2ee", "Na-delete na ang message na ito."),
                 i("b8c06820", "Kopyahin ang text"),
@@ -4360,7 +4360,7 @@
                     return "Nag-isip sa loob ng " + a.seconds + "s";
                 }),
                 i("h26fa43f", function (a) {
-                    return a.count + " more";
+                    return a.count + " pa";
                 }),
                 i("ha8fbe22", "Gumawa ng mas maraming larawan sa Premium"),
                 i("d95c232a", "Naabot mo na ang limitasyon mo. Mag-upgrade na para makagawa ng mas marami pa."),
@@ -6510,7 +6510,7 @@
                 i("f7cf3d36", "Ang Grok ay isang libreng AI assistant na idinisenyo ng xAI para ma-maximize ang katotohan at pagiging objectve. Nag-aalok ang Grok ng real-time na paghahanap, pag-generate ng image, trend analysis, at marami pang iba."),
                 i("hc965308", "Fun"),
                 i("eb78b77e", "Fun mode"),
-                i("ac164552", "Go to grok.com"),
+                i("ac164552", "Pumunta sa grok.com"),
                 i("gb5fb7d0", "Focus Mode"),
                 i("g5665caa", "Lumabas sa Focus Mode"),
                 i("a372681e", "Kopyahin ang share link"),
@@ -7001,9 +7001,9 @@
                 i("gd573390", "At lahat ng nasa Basic..."),
                 i("ef94bbd4", "Kumuha ng Premium+"),
                 i("dcd830ce", "At lahat ng nasa Premium..."),
-                i("dde0dbe0", "Enjoy our Summer offer, ending in:"),
+                i("dde0dbe0", "Ma-enjoy ang alok ngayong Tag-init, na matatapos sa:"),
                 i("f8a50ba7", function (a) {
-                    return "Summer offer ending on " + a.date + ".";
+                    return "Alok ngayong summer na matatapos sa " + a.date + ".";
                 }),
                 i("b7dde622", "Happy Thanksgiving! Matatapos ang alok pagkalipas ng:"),
                 i("i0180ca1", function (a) {
@@ -7399,10 +7399,10 @@
                 i("bd05add8", "Hindi isang Bot"),
                 i("d94f12b6", "Sumubok na maghanap ng mga abiso, privacy, atbp."),
                 i("ba8f6f82", "Maghanap sa Mga Setting"),
-                i("ibf92e4a", "Payment Successful"),
+                i("ibf92e4a", "Naproseso na ang pagbabauad"),
                 i("bdf0fb06", "Your subscription has been activated."),
                 i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
-                i("d42fa852", "There was an issue processing your payment. Please try again."),
+                i("d42fa852", "Nagkaisyu sa pagproseso ng pagbabayad mo. Pakisubukan ulit."),
                 i("g055a9ce", "Open 𝕏 App"),
                 i("g931a6e5", function (a) {
                     return "Sinusundan mo ang " + a.topic;
@@ -10946,6 +10946,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + "s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + "m" + this.props.seconds + "s"];
@@ -11885,6 +11891,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " (na) na-delete na note"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Mga na-delete na note"];
                             },
                         },
                         {
@@ -13368,4 +13380,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b3ebc31a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b96ce34a.js.map

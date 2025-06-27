@@ -1330,7 +1330,7 @@
                 n("dce1817a", "Searching on 𝕏"),
                 n("f7151564", "Searching users on 𝕏"),
                 n("c43ef93e", "Browsing web page"),
-                n("jb097f6e", "Executing code"),
+                n("jb097f6e", "Выполнение кода"),
                 n("ead81122", "Что-то пошло не так. Обновите страницу, чтобы возобновить подключение, или повторите попытку."),
                 n("f808a13a", "Превышен допустимый лимит. Повторите попытку через некоторое время."),
                 n("e0481e5a", "В настоящее время Grok не поддерживается в вашей стране."),
@@ -4369,7 +4369,7 @@
                     return "Обдумывание выполнялось " + e.seconds + " с";
                 }),
                 n("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return "Еще " + e.count;
                 }),
                 n("ha8fbe22", "Генерируйте больше изображений с Premium"),
                 n("d95c232a", "Вы достигли лимита. Чтобы продолжить, оформите подписку."),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " сек."];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " мин. " + this.props.seconds + " сек."];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return [this.props.num + " удаленных примечаний"];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return [" Удаленные примечания"];
                             },
                         },
                         {
@@ -13369,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.f05f350a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.1931c5ba.js.map

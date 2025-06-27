@@ -1330,7 +1330,7 @@
                 a("dce1817a", "Searching on 𝕏"),
                 a("f7151564", "Searching users on 𝕏"),
                 a("c43ef93e", "Browsing web page"),
-                a("jb097f6e", "Executing code"),
+                a("jb097f6e", "Spuštění kódu"),
                 a("ead81122", "Něco se pokazilo, obnovte stránku pro opětovné připojení nebo to zkuste znovu."),
                 a("f808a13a", "Překročili jste maximální počet pokusů. Chvíli počkejte a zkuste to znovu."),
                 a("e0481e5a", "Funkce Grok není v tuto chvíli ve vaší zemi podporována."),
@@ -4369,7 +4369,7 @@
                     return "Promýšleno po dobu " + e.seconds + " s";
                 }),
                 a("h26fa43f", function (e) {
-                    return e.count + " more";
+                    return e.count + " další(ch)";
                 }),
                 a("ha8fbe22", "Generujte více obrázků s Premium"),
                 a("d95c232a", "Dosáhli jste svého limitu. Upgradujte nyní a generujte další."),
@@ -10948,6 +10948,12 @@
                             },
                         },
                         {
+                            key: "ie5066ff",
+                            get: function () {
+                                return [this.props.seconds + " s"];
+                            },
+                        },
+                        {
                             key: "idcd199b",
                             get: function () {
                                 return [this.props.minutes + " m " + this.props.seconds + " s"];
@@ -11887,6 +11893,12 @@
                             key: "f52f0cbd",
                             get: function () {
                                 return ["Počet smazaných poznámek: " + this.props.num];
+                            },
+                        },
+                        {
+                            key: "c5260711",
+                            get: function () {
+                                return ["Smazané poznámky"];
                             },
                         },
                         {
@@ -13367,4 +13379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.f2a4f10a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.f89676da.js.map
