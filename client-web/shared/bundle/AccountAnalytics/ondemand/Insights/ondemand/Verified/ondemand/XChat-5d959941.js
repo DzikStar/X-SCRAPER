@@ -290,56 +290,50 @@
                 return a;
             };
         },
-        109871: (e, t, r) => {
-            r.d(t, { L: () => h });
-            var n = r(552322),
-                s = r(379651),
-                i = r(905394),
-                o = r(171774),
-                l = r(202784),
-                c = r(107267),
-                a = r(727071);
-            function u({ children: e }) {
-                const t = (0, c.useLocation)(),
-                    r = (0, c.useHistory)(),
-                    s = (0, l.useMemo)(() => ({ getServerSnapshot: () => ({ pathname: t.pathname, search: t.search }), getSnapshot: () => ({ pathname: t.pathname, search: t.search }), subscribe: (e) => r.listen(e) }), [r, t]);
-                return (0, n.jsx)(o.v, { ...s, children: e });
-            }
-            function d({ children: e }) {
-                const t = (0, c.useHistory)(),
-                    r = (0, l.useMemo)(() => ({ goBack: t.goBack, push: t.push, replace: t.replace }), [t]);
-                return (0, n.jsx)(i.s, { navigate: r, children: e });
-            }
-            function f({ children: e }) {
-                const t = (0, c.useParams)();
-                return (0, n.jsx)(a.d, { useParams: () => t, children: e });
-            }
-            function h({ children: e }) {
-                return (0, n.jsx)(d, { children: (0, n.jsx)(f, { children: (0, n.jsxs)(u, { children: [e, (0, n.jsx)(s.x, {})] }) }) });
-            }
-        },
-        268786: (e, t, r) => {
-            r.d(t, { f: () => m });
+        808744: (e, t, r) => {
+            r.d(t, { f: () => j });
             var n = r(552322),
                 s = r(446368),
                 i = r(379651),
-                o = r(109871),
-                l = r(430962),
+                o = r(905394),
+                l = r(171774),
                 c = r(202784),
-                a = r(625067);
-            const u = "night_mode";
-            const d = { 0: "light", 1: "dim", 2: "dark" },
-                f = (Object.fromEntries(Object.entries(d).map(([e, t]) => [t, Number(e)])), () => (0, a.Qc)(document.cookie)[u]),
-                h = (e) => {
+                a = r(107267),
+                u = r(727071);
+            function d({ children: e }) {
+                const t = (0, a.useLocation)(),
+                    r = (0, a.useHistory)(),
+                    s = (0, c.useMemo)(() => ({ pathname: t.pathname, search: t.search }), [t.pathname, t.search]),
+                    i = (0, c.useMemo)(() => ({ getServerSnapshot: () => s, getSnapshot: () => s, subscribe: (e) => r.listen(e) }), [s, r]);
+                return (0, n.jsx)(l.v, { ...i, children: e });
+            }
+            function f({ children: e }) {
+                const t = (0, a.useHistory)(),
+                    r = (0, c.useMemo)(() => ({ goBack: t.goBack, push: t.push, replace: t.replace }), [t]);
+                return (0, n.jsx)(o.s, { navigate: r, children: e });
+            }
+            function h({ children: e }) {
+                const t = (0, a.useParams)();
+                return (0, n.jsx)(u.d, { useParams: () => t, children: e });
+            }
+            function p({ children: e }) {
+                return (0, n.jsx)(f, { children: (0, n.jsx)(h, { children: (0, n.jsxs)(d, { children: [e, (0, n.jsx)(i.x, {})] }) }) });
+            }
+            var m = r(430962),
+                g = r(625067);
+            const v = "night_mode";
+            const w = { 0: "light", 1: "dim", 2: "dark" },
+                b = (Object.fromEntries(Object.entries(w).map(([e, t]) => [t, Number(e)])), () => (0, g.Qc)(document.cookie)[v]),
+                x = (e) => {
                     const t = Number(e);
-                    return d[t] ?? p();
+                    return w[t] ?? y();
                 },
-                p = () => ("undefined" != typeof window && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-            function m({ analytics: e, children: t, i18nInput: r }) {
+                y = () => ("undefined" != typeof window && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            function j({ analytics: e, children: t, i18nInput: r }) {
                 return (
                     (0, c.useLayoutEffect)(() => {
                         const e = () => {
-                            const e = h(f());
+                            const e = x(b());
                             document.documentElement.dataset.theme = e;
                         };
                         e();
@@ -351,7 +345,7 @@
                             }
                         );
                     }, []),
-                    (0, n.jsx)(o.L, { children: (0, n.jsx)(l.TM, { i18nInput: r, children: (0, n.jsxs)(s.UH, { analytics: e, children: [t, (0, n.jsx)(i.x, {})] }) }) })
+                    (0, n.jsx)(p, { children: (0, n.jsx)(m.TM, { i18nInput: r, children: (0, n.jsxs)(s.UH, { analytics: e, children: [t, (0, n.jsx)(i.x, {})] }) }) })
                 );
             }
         },
@@ -787,4 +781,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.a7e25a0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.d2d4f61a.js.map

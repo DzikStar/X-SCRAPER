@@ -16,8 +16,8 @@
                 m = a(154003),
                 p = a(392237),
                 h = a(293723),
-                g = a(58399),
-                y = a(607127),
+                y = a(58399),
+                g = a(607127),
                 f = a(487552),
                 b = a(43429),
                 x = a(743080),
@@ -25,12 +25,12 @@
                 E = a(477922),
                 Z = a(770585);
             const k = "Remove linked account",
-                w = ({ account: e, balance: t, calculatedFee: a, handleExpand: p, handleRemove: w, isDisabled: P, isSelected: I, onClick: D, transferDirection: T, withChevron: S, withInteractiveStyling: _ }) => {
+                w = ({ account: e, balance: t, calculatedFee: a, handleExpand: p, handleRemove: w, isDisabled: P, isSelected: I, onClick: D, transferDirection: T, withChevron: _, withInteractiveStyling: S }) => {
                     const R = e.id,
                         L = e.config,
                         { Icon: M, fees: z, settleTimeMessage: X } = L ?? {},
-                        N = !P && (_ ?? !(!D && !p)),
-                        F = r.useCallback(() => {
+                        F = !P && (S ?? !(!D && !p)),
+                        N = r.useCallback(() => {
                             p ? p() : R && !P && D?.(R);
                         }, [R, D, p, P]),
                         A = r.useCallback(
@@ -39,7 +39,7 @@
                             },
                             [w],
                         );
-                    return r.createElement(l.Z, { onClick: N ? F : void 0, withInteractiveStyling: N && !p }, r.createElement(o.Z, { style: x.mR.container }, e.type === b.dX.x ? r.createElement(c.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(E.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: x.mR.middle }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== b.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === b.dX.x ? (T && "credit" !== T && t ? r.createElement(C.Z, { amount: t.available_amount_local_micro, colorOverride: "gray700", currency: t.currency, size: "body", weight: "normal" }) : r.createElement(d.Z, (0, n.Z)({ color: "gray700", weight: "normal", withName: !1 }, e.accountName))) : L ? r.createElement(o.Z, { style: x.mR.row }, r.createElement(i.ZP, { color: "gray700" }, M ? r.createElement(M, { style: x.mR.icon }) : null, X), z ? r.createElement(Z.Z, { calculatedFee: a, fees: z }) : null) : e.type === b.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === b.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(u.ZP, { style: v.decoration, type: "warning" }, e.label) : null, I ? r.createElement(h.default, { style: [v.decoration, v.selected] }) : null, p ? r.createElement(g.default, { style: v.decoration }) : w ? r.createElement(m.ZP, { "aria-label": k, hoverLabel: { label: k }, icon: r.createElement(y.default, null), onClick: A, size: "small", style: v.decoration, testID: "btn-remove", type: "destructiveText" }) : null, S ? r.createElement(f.default, { style: v.decoration }) : null));
+                    return r.createElement(l.Z, { onClick: F ? N : void 0, withInteractiveStyling: F && !p }, r.createElement(o.Z, { style: x.mR.container }, e.type === b.dX.x ? r.createElement(c.default, (0, n.Z)({ size: "xxxLarge" }, e.avatar)) : r.createElement(E.qn, { size: "xxxLarge", type: e.type, uri: e.avatar?.uri }), r.createElement(o.Z, { style: x.mR.middle }, r.createElement(s.Z, null, r.createElement(i.ZP, null, e.accountType ?? e.brandName), e.type !== b.dX.x ? r.createElement(i.ZP, null, e.accountName.name) : null), e.type === b.dX.x ? (T && "credit" !== T && t ? r.createElement(C.Z, { amount: t.available_amount_local_micro, colorOverride: "gray700", currency: t.currency, size: "body", weight: "normal" }) : r.createElement(d.Z, (0, n.Z)({ color: "gray700", weight: "normal", withName: !1 }, e.accountName))) : L ? r.createElement(o.Z, { style: x.mR.row }, r.createElement(i.ZP, { color: "gray700" }, M ? r.createElement(M, { style: x.mR.icon }) : null, X), z ? r.createElement(Z.Z, { calculatedFee: a, fees: z }) : null) : e.type === b.dX.card ? r.createElement(i.ZP, { color: "gray700" }, "Debit Card") : e.type === b.dX.bank ? r.createElement(i.ZP, { color: "gray700" }, "Bank Account") : null), e.label ? r.createElement(u.ZP, { style: v.decoration, type: "warning" }, e.label) : null, I ? r.createElement(h.default, { style: [v.decoration, v.selected] }) : null, p ? r.createElement(y.default, { style: v.decoration }) : w ? r.createElement(m.ZP, { "aria-label": k, hoverLabel: { label: k }, icon: r.createElement(g.default, null), onClick: A, size: "small", style: v.decoration, testID: "btn-remove", type: "destructiveText" }) : null, _ ? r.createElement(f.default, { style: v.decoration }) : null));
                 },
                 v = p.default.create((e) => ({ account: { flexDirection: "row", gap: e.spaces.space16, display: "flex" }, row: { gap: e.spaces.space4, flexDirection: "row" }, accountName: { flexDirection: "column", gap: e.spaces.space4, justifyContent: "center", flex: 1 }, decoration: { alignSelf: "center", marginStart: "auto", marginEnd: e.spaces.space4, flexShrink: 0 }, selected: { color: e.colors.green500 } })),
                 P = r.memo(w);
@@ -52,7 +52,7 @@
                 l = a(154003),
                 c = a(392237),
                 s = a(392046);
-            const i = ({ account: e, onDone: t, onRemove: a }) => n.createElement(o.Z, { onMaskClick: t, type: "bottom", withMask: !0 }, n.createElement(r.Z, { style: d.container }, n.createElement(r.Z, { style: d.accountContainer }, n.createElement(s.Z, { account: e, withInteractiveStyling: !1 })), n.createElement(r.Z, { style: d.buttonContainer }, a ? n.createElement(l.ZP, { onPress: a, size: "large", style: d.button, type: "destructiveFilled" }, "Unlink account") : null, n.createElement(l.ZP, { onPress: t, size: "large", style: d.button, type: "primaryOutlined" }, "Done")))),
+            const i = ({ account: e, onDone: t, onRemove: a, onVerify: c }) => n.createElement(o.Z, { onMaskClick: t, type: "bottom", withMask: !0 }, n.createElement(r.Z, { style: d.container }, n.createElement(r.Z, { style: d.accountContainer }, n.createElement(s.Z, { account: e, withInteractiveStyling: !1 })), n.createElement(r.Z, { style: d.buttonContainer }, c ? n.createElement(l.ZP, { onPress: c, size: "large", style: d.button, type: "primaryFilled" }, "Verify account") : null, a ? n.createElement(l.ZP, { onPress: a, size: "large", style: d.button, type: "destructiveFilled" }, "Unlink account") : null, n.createElement(l.ZP, { onPress: t, size: "large", style: d.button, type: "primaryOutlined" }, "Done")))),
                 d = c.default.create((e) => ({ container: { padding: e.spaces.space16, gap: e.spaces.space24 }, accountContainer: { paddingVertical: e.spaces.space16 }, buttonContainer: { gap: e.spaces.space12 }, button: { width: "100%" } })),
                 u = n.memo(i);
         },
@@ -100,14 +100,14 @@
                 m = a(137882),
                 p = a(743080),
                 h = a(743250),
-                g = a(519901);
-            const y = n.Z,
+                y = a(519901);
+            const g = n.Z,
                 f = "Action required",
                 b = ({ __id: e }) => e,
                 x = ({ data: e, fetchNext: t, type: a }) => {
-                    const n = (({ supportLink: e, type: t }) => r.useCallback((a) => ("transaction" === t && "XPaymentsTransaction" === a.__typename ? r.createElement(g.Z, { itemRef: a, key: a.__id }) : "notice" === t && "XPaymentsCustomerNotice" === a.__typename ? r.createElement(s.Z, { "aria-label": f, containerStyle: C.noticeTile, stackLayoutUpperStyle: p.ZP.upper, upper: r.createElement(h.Z, { itemRef: a, key: a.__id, supportLink: e }), withInteractiveStyling: !1 }) : null), [e, t]))({ supportLink: (0, m.bR)({}), type: a }),
+                    const n = (({ supportLink: e, type: t }) => r.useCallback((a) => ("transaction" === t && "XPaymentsTransaction" === a.__typename ? r.createElement(y.Z, { itemRef: a, key: a.__id }) : "notice" === t && "XPaymentsCustomerNotice" === a.__typename ? r.createElement(s.Z, { "aria-label": f, containerStyle: C.noticeTile, stackLayoutUpperStyle: p.ZP.upper, upper: r.createElement(h.Z, { itemRef: a, key: a.__id, supportLink: e }), withInteractiveStyling: !1 }) : null), [e, t]))({ supportLink: (0, m.bR)({}), type: a }),
                         l = e?.get_payments_customer_actions,
-                        { items: d } = c()(y, l) ?? { items: [] },
+                        { items: d } = c()(g, l) ?? { items: [] },
                         x = r.createElement(u.Z, { assumedItemHeight: 64, cacheKey: "actionNeededList", footer: null, identityFunction: b, items: d, onNearEnd: t, renderer: n, role: "list", withoutHeadroom: !0 });
                     return d.length > 0 ? r.createElement(o.Z, { style: "notice" === a ? C.noticeContainer : void 0 }, "transaction" === a ? r.createElement(o.Z, { style: p.ZP.header }, r.createElement(i.ZP, { size: "headline2", weight: "bold" }, f)) : null, x) : null;
                 },
@@ -163,12 +163,12 @@
                 m = a(727384),
                 p = a(477922),
                 h = a(442880),
-                g = a(19804),
-                y = a(770585);
+                y = a(19804),
+                g = a(770585);
             const f = ({ MethodIcon: e, creditMethod: t, debitMethod: a, disabled: c = !1, label: f, link: x, methodConfigs: C, name: E, transferDirection: Z, variant: k }) => {
                     const w = Z && C ? (0, m.NG)({ transferDirection: Z, methodConfigs: C, debitMethod: a, creditMethod: t }) : void 0,
                         { Icon: v, fees: P, processingTime: I, settleTimeMessage: D } = w ?? {};
-                    return "tile" === k ? n.createElement(g.Z, { Icon: e, decoration: n.createElement(h.Z, { processingTime: I }), link: x, subtitle: Z === d.Rz.debit && P ? n.createElement(y.C, { fees: P }) : null, title: f }) : "row" === k ? n.createElement(o.Z, { disabled: c, link: x, style: b.addPaymentMethodButtonContainer, withInteractiveStyling: !1 }, n.createElement(r.Z, { style: b.addPaymentMethodIconTextContainer }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(l.ZP, { size: "subtext1", weight: "medium" }, f)), n.createElement(i.default, { style: b.addPaymentMethodButtonChevron })) : n.createElement(o.Z, { "aria-label": f, key: E, link: x, withInteractiveStyling: !0 }, n.createElement(r.Z, { style: u.mR.container }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(r.Z, { style: u.mR.middle }, n.createElement(l.ZP, null, f), w ? n.createElement(r.Z, { style: u.mR.row }, n.createElement(l.ZP, { color: "gray700" }, v ? n.createElement(v, { style: u.mR.icon }) : null, D), P ? n.createElement(y.Z, { fees: P }) : null) : null)));
+                    return "tile" === k ? n.createElement(y.Z, { Icon: e, decoration: n.createElement(h.Z, { processingTime: I }), link: x, subtitle: Z === d.Rz.debit && P ? n.createElement(g.C, { fees: P }) : null, title: f }) : "row" === k ? n.createElement(o.Z, { disabled: c, link: x, style: b.addPaymentMethodButtonContainer, withInteractiveStyling: !1 }, n.createElement(r.Z, { style: b.addPaymentMethodIconTextContainer }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(l.ZP, { size: "subtext1", weight: "medium" }, f)), n.createElement(i.default, { style: b.addPaymentMethodButtonChevron })) : n.createElement(o.Z, { "aria-label": f, key: E, link: x, withInteractiveStyling: !0 }, n.createElement(r.Z, { style: u.mR.container }, n.createElement(p.zU, { Icon: s.default, size: "xxxLarge" }), n.createElement(r.Z, { style: u.mR.middle }, n.createElement(l.ZP, null, f), w ? n.createElement(r.Z, { style: u.mR.row }, n.createElement(l.ZP, { color: "gray700" }, v ? n.createElement(v, { style: u.mR.icon }) : null, D), P ? n.createElement(g.Z, { fees: P }) : null) : null)));
                 },
                 b = c.default.create((e) => ({ addPaymentMethodButtonContainer: { flex: 1, flexDirection: "row", justifyContent: "space-between", alignItems: "center", borderRadius: e.spaces.space16 }, addPaymentMethodIconTextContainer: { flex: 1, flexDirection: "row", alignItems: "center", gap: e.spaces.space16 }, addPaymentMethodButtonChevron: { width: e.spaces.space24, height: e.spaces.space24, fill: e.colors.gray700 } })),
                 x = n.memo(f);
@@ -181,8 +181,8 @@
                 l = a(392237),
                 c = a(43429),
                 s = a(727384);
-            function i({ amount: e, type: t = c.NU.balance, shouldCenterAlign: a = !1, currency: l, size: i = "title1", weight: d = "bold", hasCompleted: m = !1, style: p, colorOverride: h, hasFailed: g }) {
-                const y = parseFloat(e),
+            function i({ amount: e, type: t = c.NU.balance, shouldCenterAlign: a = !1, currency: l, size: i = "title1", weight: d = "bold", hasCompleted: m = !1, style: p, colorOverride: h, hasFailed: y }) {
+                const g = parseFloat(e),
                     f = n.useMemo(
                         () =>
                             (({ amount: e, hasCompleted: t, type: a }) => {
@@ -194,12 +194,12 @@
                                     default:
                                         return n ? "red500" : "text";
                                 }
-                            })({ type: t, amount: y, hasCompleted: m }),
-                        [t, y, m],
+                            })({ type: t, amount: g, hasCompleted: m }),
+                        [t, g, m],
                     ),
                     b = n.useMemo(() => ((e) => (e === c.NU.credit ? "+" : ""))(t), [t]),
                     x = n.useMemo(() => (0, s.vw)({ amount: e, currency: l }), [e, l]);
-                return n.createElement(r.Z, { style: [a ? u.alignCenter : void 0, ...([p] ?? 0)] }, n.createElement(o.ZP, { color: h || f, size: "title0" === i ? void 0 : i, style: ["title0" === i ? { fontSize: "48px" } : {}, g && u.strike], weight: d }, `${b}${x}`));
+                return n.createElement(r.Z, { style: [a ? u.alignCenter : void 0, ...([p] ?? 0)] }, n.createElement(o.ZP, { color: h || f, size: i, style: y && u.strike, weight: d }, `${b}${x}`));
             }
             const d = n.memo(i),
                 u = l.default.create((e) => ({ alignCenter: { alignItems: "center" }, strike: { textDecorationLine: "line-through" } }));
@@ -223,7 +223,7 @@
                     const t = u();
                     return e.replace(new RegExp(`[${t},]`, "g"), "");
                 };
-            function p({ amount: e, balance: t, isValid: a, max: c = "9999999", min: s = "0", setAmount: p, setIsValid: h, validateBalance: y, ...f }) {
+            function p({ amount: e, balance: t, isValid: a, max: c = "9999999", min: s = "0", setAmount: p, setIsValid: h, validateBalance: g, ...f }) {
                 const [b, x] = n.useState(!1),
                     { available_amount_local_micro: C, currency: E } = t ?? {},
                     Z = parseFloat(C),
@@ -234,9 +234,9 @@
                                 a = parseFloat(t),
                                 n = parseFloat(s),
                                 r = parseFloat(c);
-                            return /^\d*(\.\d{1,2})?$/.test(t) && a > 0 && a >= n && a <= r && !(y && a > k);
+                            return /^\d*(\.\d{1,2})?$/.test(t) && a > 0 && a >= n && a <= r && !(g && a > k);
                         },
-                        [c, s, y, k],
+                        [c, s, g, k],
                     ),
                     v = n.useCallback(
                         (e) => {
@@ -274,7 +274,7 @@
                     T = n.useCallback(() => {
                         x(!1);
                     }, []),
-                    S = n.useCallback(
+                    _ = n.useCallback(
                         () =>
                             !a && e
                                 ? (function (e, t, a, n, r) {
@@ -283,11 +283,11 @@
                                           c = parseFloat(t),
                                           s = parseFloat(a);
                                       return l <= 0 ? "Amount must be greater than $0" : l < c ? `Amount must be at least $${d(t)}` : l > s ? `Amount cannot exceed $${d(a)}` : n && l > r ? "Your balance is insufficient for this transfer." : null;
-                                  })(e, s, c, y, k)
+                                  })(e, s, c, g, k)
                                 : null,
-                        [a, e, s, c, y, k],
+                        [a, e, s, c, g, k],
                     )(),
-                    _ = ((e) => {
+                    S = ((e) => {
                         if (!e || "" === e) return "";
                         const t = m(e);
                         return "" === t ? "" : `${u()}${d(t)}`;
@@ -297,7 +297,7 @@
                     null,
                     n.createElement(
                         r.Z,
-                        { style: [g.amountInputContainer, S ? g.amountInputContainerError : null] },
+                        { style: [y.amountInputContainer, _ ? y.amountInputContainerError : null] },
                         n.createElement(o.Z, {
                             autoFocus: !0,
                             invalid: !a,
@@ -311,18 +311,18 @@
                             },
                             onPaste: I,
                             placeholder: `${u()}0`,
-                            placeholderTextColor: g.placeholder.color,
-                            style: [g.amountInput, b && g.amountInputFocused],
+                            placeholderTextColor: y.placeholder.color,
+                            style: [y.amountInput, b && y.amountInputFocused],
                             testID: "amount-input",
                             type: "text",
-                            value: _,
+                            value: S,
                         }),
                     ),
-                    n.createElement(r.Z, { style: g.errorContainer }, S && n.createElement(l.ZP, { style: g.errorText }, S)),
+                    n.createElement(r.Z, { style: y.errorContainer }, _ && n.createElement(l.ZP, { style: y.errorText }, _)),
                 );
             }
             const h = n.memo(p),
-                g = c.default.create((e) => ({ currency: { marginEnd: e.spaces.space4 }, amountInput: { padding: e.spaces.space24, width: "100%", height: "120px", textAlign: "center", fontSize: "64px", fontWeight: e.fontWeights.bold, color: e.colors.text, backgroundColor: "transparent", border: "none", letterSpacing: "-0.05px" }, amountInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, amountInputContainerError: { borderColor: e.colors.red500 }, placeholder: { color: e.colors.gray400 }, errorContainer: { justifyContent: "flex-start" }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, amountInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
+                y = c.default.create((e) => ({ currency: { marginEnd: e.spaces.space4 }, amountInput: { padding: e.spaces.space24, width: "100%", height: "120px", textAlign: "center", fontSize: "64px", fontWeight: e.fontWeights.bold, color: e.colors.text, backgroundColor: "transparent", border: "none", letterSpacing: "-0.05px" }, amountInputContainer: { borderWidth: e.spaces.space1, borderColor: e.colors.gray200, borderRadius: e.spaces.space12 }, amountInputContainerError: { borderColor: e.colors.red500 }, placeholder: { color: e.colors.gray400 }, errorContainer: { justifyContent: "flex-start" }, errorText: { color: e.colors.red500, fontSize: e.fontSizes.subtext3 }, amountInputFocused: { outlineColor: e.colors.gray200, borderRadius: e.spaces.space12 } }));
         },
         477922: (e, t, a) => {
             a.d(t, { G7: () => k, KR: () => w, qn: () => P, zU: () => x });
@@ -338,21 +338,21 @@
                 m = a(913315),
                 p = a(734767),
                 h = a(286555),
-                g = a(43429);
-            const y = Object.freeze({ small: "small", xLarge: "xLarge", xxLarge: "xxLarge", xxxLarge: "xxxLarge", xJumbo: "xJumbo" }),
-                f = { [y.small]: { width: c.default.theme.spacesPx.space16, height: c.default.theme.spacesPx.space16 }, [y.xLarge]: { width: c.default.theme.spacesPx.space40, height: c.default.theme.spacesPx.space40 }, [y.xxLarge]: { width: c.default.theme.spacesPx.space48, height: c.default.theme.spacesPx.space48 }, [y.xxxLarge]: { width: c.default.theme.spaces.space56, height: c.default.theme.spaces.space56 }, [y.xJumbo]: { width: c.default.theme.spaces.space80, height: c.default.theme.spaces.space80 } },
-                b = { [y.small]: { width: c.default.theme.spacesPx.space8, height: c.default.theme.spacesPx.space8 }, [y.xLarge]: { width: c.default.theme.spacesPx.space20, height: c.default.theme.spacesPx.space20 }, [y.xxLarge]: { width: c.default.theme.spacesPx.space24, height: c.default.theme.spacesPx.space24 }, [y.xxxLarge]: { width: c.default.theme.spaces.space28, height: c.default.theme.spaces.space28 }, [y.xJumbo]: { width: c.default.theme.spaces.space40, height: c.default.theme.spaces.space40 } },
+                y = a(43429);
+            const g = Object.freeze({ small: "small", xLarge: "xLarge", xxLarge: "xxLarge", xxxLarge: "xxxLarge", xJumbo: "xJumbo" }),
+                f = { [g.small]: { width: c.default.theme.spacesPx.space16, height: c.default.theme.spacesPx.space16 }, [g.xLarge]: { width: c.default.theme.spacesPx.space40, height: c.default.theme.spacesPx.space40 }, [g.xxLarge]: { width: c.default.theme.spacesPx.space48, height: c.default.theme.spacesPx.space48 }, [g.xxxLarge]: { width: c.default.theme.spaces.space56, height: c.default.theme.spaces.space56 }, [g.xJumbo]: { width: c.default.theme.spaces.space80, height: c.default.theme.spaces.space80 } },
+                b = { [g.small]: { width: c.default.theme.spacesPx.space8, height: c.default.theme.spacesPx.space8 }, [g.xLarge]: { width: c.default.theme.spacesPx.space20, height: c.default.theme.spacesPx.space20 }, [g.xxLarge]: { width: c.default.theme.spacesPx.space24, height: c.default.theme.spacesPx.space24 }, [g.xxxLarge]: { width: c.default.theme.spaces.space28, height: c.default.theme.spaces.space28 }, [g.xJumbo]: { width: c.default.theme.spaces.space40, height: c.default.theme.spaces.space40 } },
                 x = ({ Icon: e, size: t, uri: a }) => (a ? r.createElement(o.Z, { source: { uri: a }, style: [I.rounded, I.logo, f[t]] }) : r.createElement(l.Z, { style: [f[t], I.rounded, I.iconContainer] }, r.createElement(e, { style: [I.logo, b[t]] }))),
                 C = (e) => r.createElement(x, (0, n.Z)({}, e, { Icon: s.default })),
-                E = { [g.wC.bankDeposit]: i.default, [g.wC.bankWithdraw]: d.default, [g.wC.card]: s.default, [g.wC.atm]: u.default },
-                Z = { [g.Ms.atm]: u.default, [g.Ms.deposit]: i.default, [g.Ms.withdraw]: d.default, [g.Ms.interest]: m.default, [g.Ms.cashback]: p.default },
+                E = { [y.wC.bankDeposit]: i.default, [y.wC.bankWithdraw]: d.default, [y.wC.card]: s.default, [y.wC.atm]: u.default },
+                Z = { [y.Ms.atm]: u.default, [y.Ms.deposit]: i.default, [y.Ms.withdraw]: d.default, [y.Ms.interest]: m.default, [y.Ms.cashback]: p.default },
                 k = (e) => {
                     const { type: t, ...a } = e;
                     return r.createElement(x, (0, n.Z)({}, a, { Icon: E[t] }));
                 },
                 w = ({ type: e, ...t }) => r.createElement(x, (0, n.Z)({}, t, { Icon: Z[e] })),
                 v = (e) => r.createElement(x, (0, n.Z)({}, e, { Icon: h.default })),
-                P = ({ type: e, ...t }) => (e === g.dX.bank ? r.createElement(v, t) : e === g.dX.card ? r.createElement(C, t) : null),
+                P = ({ type: e, ...t }) => (e === y.dX.bank ? r.createElement(v, t) : e === y.dX.card ? r.createElement(C, t) : null),
                 I = c.default.create((e) => ({ logo: { color: e.colors.text, flexShrink: 0 }, rounded: { borderRadius: e.borderRadii.infinite }, iconContainer: { borderColor: e.colors.gray200, borderStyle: "solid", borderWidth: e.spaces.space1, justifyContent: "center", alignItems: "center" } }));
         },
         819404: (e, t, a) => {
@@ -369,8 +369,8 @@
                 m = a(856228),
                 p = a(727384),
                 h = a(952428),
-                g = a(154003),
-                y = a(530525),
+                y = a(154003),
+                g = a(530525),
                 f = a(439592),
                 b = a(823406),
                 x = a(656805),
@@ -427,17 +427,17 @@
                                 }
                             return "XPaymentsCustomerTaskRemoteImageIcon" === e.__typename && e.image_url ? e.image_url : null;
                         })(t);
-                    return r.createElement(h.Z, { link: v(e), style: [I.container, c && I.dismissing] }, r.createElement(o.Z, { style: I.contentWrapper }, r.createElement(g.ZP, { borderColor: "transparent", icon: r.createElement(b.default, { style: I.closeButtonIcon }), onClick: u, size: "smallCompact", style: I.closeButton }), r.createElement(o.Z, { style: I.content }, m && r.createElement(o.Z, { style: I.icon32 }, r.createElement(y.Z, { "aria-label": d, aspectMode: f.Z.SQUARE, image: m })), r.createElement(o.Z, { style: I.textContainer }, r.createElement(s.ZP, { align: "left", color: "text", size: "subtext1", style: { overflow: "hidden" }, weight: "medium" }, l), r.createElement(s.ZP, { align: "left", color: "gray800", size: "subtext1", weight: "normal" }, n)))));
+                    return r.createElement(h.Z, { link: v(e), style: [I.container, c && I.dismissing] }, r.createElement(o.Z, { style: I.contentWrapper }, r.createElement(y.ZP, { borderColor: "transparent", icon: r.createElement(b.default, { style: I.closeButtonIcon }), onClick: u, size: "smallCompact", style: I.closeButton }), r.createElement(o.Z, { style: I.content }, m && r.createElement(o.Z, { style: I.icon32 }, r.createElement(g.Z, { "aria-label": d, aspectMode: f.Z.SQUARE, image: m })), r.createElement(o.Z, { style: I.textContainer }, r.createElement(s.ZP, { align: "left", color: "text", size: "subtext1", style: { overflow: "hidden" }, weight: "medium" }, l), r.createElement(s.ZP, { align: "left", color: "gray800", size: "subtext1", weight: "normal" }, n)))));
                 },
                 I = u.default.create((e) => ({ icon32: { height: e.spaces.space32, width: e.spaces.space32 }, container: { borderRadius: e.borderRadii.xLarge, paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space16, backgroundColor: e.colors.gray0, display: "flex", flexDirection: "column", alignItems: "flex-start", cursor: "pointer", flexGrow: 1, width: "280px", maxHeight: "fit-content", overflow: "hidden", transition: "transform 300ms ease, opacity 300ms ease, width 300ms ease, margin 300ms ease" }, contentWrapper: { position: "relative", width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "flex-start" }, closeButton: { position: "absolute", top: "-12px", end: "-8px" }, closeButtonIcon: { fill: e.colors.gray900, height: e.spaces.space20, width: e.spaces.space20 }, content: { display: "flex", flexDirection: "column", gap: e.spaces.space16, width: "100%", height: "100%" }, icon: { width: e.spaces.space32, height: e.spaces.space32, borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray0, backgroundSize: "cover", backgroundPosition: "center" }, textContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space4, overflow: "hidden" }, dismissing: { transform: "translateX(-100%)", opacity: 0, width: 0, marginEnd: 0, paddingHorizontal: 0, height: 0 } })),
                 D = r.memo(P),
                 T = n.Z,
-                S = () => {
+                _ = () => {
                     const [e, t] = r.useState(0),
                         [a, n] = r.useState(!1),
                         { customerTasks: l, setCustomerTasks: u } = (0, m.Z)(),
                         [h] = c()(T);
-                    const g = r.useCallback(
+                    const y = r.useCallback(
                         (e) => {
                             const t = 1 === l.length;
                             t && n(!0),
@@ -458,19 +458,19 @@
                     return 0 !== l.length || a
                         ? r.createElement(
                               o.Z,
-                              { style: [_.carouselContainer, a && _.carouselDismissing] },
+                              { style: [S.carouselContainer, a && S.carouselDismissing] },
                               r.createElement(s.ZP, null, "Things you should know"),
                               r.createElement(
                                   o.Z,
-                                  { style: _.carouselOuterWrapper },
+                                  { style: S.carouselOuterWrapper },
                                   r.createElement(
                                       o.Z,
-                                      { style: _.carouselInnerWrapper },
+                                      { style: S.carouselInnerWrapper },
                                       r.createElement(
                                           i.Z,
                                           {
                                               "aria-label": "Customer tasks carousel",
-                                              childrenStyle: _.carouselChildrenStyle,
+                                              childrenStyle: S.carouselChildrenStyle,
                                               onVisibleRangeChange: ({ index: e, intersectionRatio: a }) => {
                                                   return (n = e), void (1 === a && t(n));
                                                   var n;
@@ -479,7 +479,7 @@
                                               updateObserverWithChildren: !0,
                                               withShadow: !0,
                                           },
-                                          l.map((e) => r.createElement(D, { destination: e.destination, icon: e.icon, id: e.id, key: e.id, onClose: () => g(e.id), subtitle: e.subtitle, title: e.title })),
+                                          l.map((e) => r.createElement(D, { destination: e.destination, icon: e.icon, id: e.id, key: e.id, onClose: () => y(e.id), subtitle: e.subtitle, title: e.title })),
                                       ),
                                   ),
                                   r.createElement(d.ZP, { count: l.length, max: 10, selectedIndex: e }),
@@ -487,9 +487,9 @@
                           )
                         : null;
                 },
-                _ = u.default.create((e) => ({ carouselChildrenStyle: { marginEnd: e.spaces.space8 }, carouselContainer: { gap: e.spaces.space16, transition: "opacity 350ms ease, margin 350ms ease, gap 350ms ease, height 350ms ease" }, carouselDismissing: { opacity: 0, height: 0 }, carouselOuterWrapper: { width: "100%" }, carouselInnerWrapper: { position: "relative", width: "100%", maxHeight: "fit-content" } })),
-                R = r.memo(S);
+                S = u.default.create((e) => ({ carouselChildrenStyle: { marginEnd: e.spaces.space8 }, carouselContainer: { gap: e.spaces.space16, transition: "opacity 350ms ease, margin 350ms ease, gap 350ms ease, height 350ms ease" }, carouselDismissing: { opacity: 0, height: 0 }, carouselOuterWrapper: { width: "100%" }, carouselInnerWrapper: { position: "relative", width: "100%", maxHeight: "fit-content" } })),
+                R = r.memo(_);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d26971c7.b82745ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d26971c7.711d906a.js.map

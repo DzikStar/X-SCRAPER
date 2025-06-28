@@ -55,7 +55,7 @@
                     return a.createElement(a.Fragment, null, a.createElement(l.Z, { "aria-label": H, containerStyle: E.tile, stackLayoutUpperStyle: M.ZP.upper, upper: L, withInteractiveStyling: !1 }), T ? a.createElement(I.Z, { data: C, fetchNext: B, type: "notice" }) : null, a.createElement(r.Z, { style: E.pivotTileContainer }, a.createElement(w.Z, { disabled: !N, icon: p.default, link: N ? Z.HM : void 0, text: "Send" }), a.createElement(w.Z, { disabled: !N, icon: y.default, link: N ? Z.Jv : void 0, text: "Request" }), a.createElement(w.Z, { disabled: !U, icon: h.default, link: U ? Z.IN : void 0, text: "Deposit" }), a.createElement(w.Z, { disabled: !F, icon: g.default, link: F ? Z.r0 : void 0, text: "Withdraw" })), m && a.createElement(S.Z, null), a.createElement(z.Z, null));
                 },
                 F = { context: "ACCOUNT_BALANCE" },
-                O = u.default.create((e) => ({ balanceLoader: { minHeight: e.spaces.space72 }, padding: { padding: e.spaces.space8 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space8, flexShrink: 0, height: e.spaces.space16, width: e.spaces.space16 }, centeredRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, veritcalPadding: { paddingVertical: e.spaces.space16 } })),
+                O = u.default.create((e) => ({ balanceLoader: { minHeight: e.spaces.space72 }, padding: { padding: e.spaces.space8 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space8, flexShrink: 0, height: e.spaces.space16, width: e.spaces.space16 }, centeredRow: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space12 }, veritcalPadding: { paddingVertical: e.spaces.space2 } })),
                 L = (e) => {
                     const { history: t } = e,
                         n = (0, M.jh)(),
@@ -424,7 +424,7 @@
                 h = n(980407),
                 g = n(514639),
                 b = n(445664),
-                E = n(351990),
+                E = n(715246),
                 f = n(535338),
                 P = n(615027),
                 Z = n(281838),
@@ -902,4 +902,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.ca659d9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.fb5bd44a.js.map

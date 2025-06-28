@@ -67,7 +67,7 @@
                 }
                 const a = t[0];
                 let i;
-                return (i = e.sender?.displayName ? (a?.displayName ? s("{addedName} was added by {addedBy}", { addedName: a.displayName, addedBy: e.sender.displayName }) : s("Unknown was added by {addedBy}", { addedBy: e.sender.displayName })) : a?.displayName ? s("{addedName} was added", { addedName: a.displayName }) : s("Unknown was added")), (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: a?.profileImageUrl, screenName: e.sender?.screenName }), (0, n.jsx)(f, { message: i })] });
+                return (i = e.sender?.displayName ? (a?.displayName ? s("{addedName} was added by {addedBy}", { addedName: a.displayName, addedBy: e.sender.displayName }) : s("Unknown was added by {addedBy}", { addedBy: e.sender.displayName })) : a?.displayName ? s("{addedName} was added", { addedName: a.displayName }) : s("Unknown was added")), (0, n.jsxs)("div", { className: "flex gap-1", children: [(0, n.jsx)(p, { avatarUrl: a?.profileImageUrl, screenName: a?.screenName }), (0, n.jsx)(f, { message: i })] });
             }
             function w({ contents: e }) {
                 const { t: s } = (0, u.$G)(),
@@ -237,7 +237,7 @@
                 if (!e || !e.profileImageUrl || "None" === s.name) return null;
                 if ("AsPadding" === s.name) return (0, n.jsx)("div", { className: "px-4", children: " " });
                 const t = (0, x.F)();
-                return (0, n.jsx)("div", { children: (0, n.jsx)(c.q, { url: e.profileImageUrl, size: "large", screenName: e.screenName, withLink: !t || "external" }) });
+                return (0, n.jsx)("div", { children: (0, n.jsx)(c.q, { url: e.profileImageUrl, size: "large", screenName: e.screenName, withLink: !t || "external", resolution: "400x400" }) });
             }
             var H = t(607499),
                 K = t(205116),
@@ -328,25 +328,10 @@
             function ge({ messageDetailsState: e, onDismiss: s, isOneToOne: t }) {
                 const { t: a } = (0, u.$G)(),
                     i = (0, l._)(e),
-                    [r, c] = (0, o.useState)(!1),
-                    m = i?.details?.readBy?.asJsReadonlyArrayView() || [],
-                    x = i?.details?.item.messageInfo?.showTimestampValue?.epochSeconds,
-                    h = i?.details?.item.messageInfo?.timeToLive?.timeToLive,
-                    g = (0, o.useRef)(r);
-                return (
-                    (0, o.useEffect)(() => {
-                        c(!!i);
-                    }, [i]),
-                    (0, n.jsx)(ae.h, {
-                        open: r,
-                        onOpenChange: (e) => {
-                            c(e), g.current && !e && s(), (g.current = !0);
-                        },
-                        trigger: (0, n.jsx)("div", {}),
-                        borderRadius: "large",
-                        children: (0, n.jsx)("div", { className: "p-4 max-w-[750px] min-w-[300px] mx-auto border border-gray-200 rounded-lg", children: i?.details && (0, n.jsxs)("div", { className: "flex flex-col gap-2 mt-2", children: [m.length > 0 && (0, n.jsx)(ue, { participants: m, isOneToOne: t }), (0, n.jsx)("div", { className: "flex flex-row gap-2", children: (0, n.jsx)(d.x, { size: "subtext1", weight: "medium", children: a("Sent by") }) }), (0, n.jsx)("div", { className: "px-4 rounded-xl bg-gray-0", children: (0, n.jsx)(he, { participant: i.details.sentBy }) }), (0, n.jsx)(xe, { timestamp: x, ttl: h })] }) }),
-                    })
-                );
+                    r = i?.details?.readBy?.asJsReadonlyArrayView() || [],
+                    o = i?.details?.item.messageInfo?.showTimestampValue?.epochSeconds,
+                    c = i?.details?.item.messageInfo?.timeToLive?.timeToLive;
+                return (0, n.jsx)(ae.h, { open: !!i?.details, onOpenChange: s, trigger: (0, n.jsx)("div", {}), borderRadius: "large", children: (0, n.jsx)("div", { className: "p-4 max-w-[750px] min-w-[300px] mx-auto border border-gray-200 rounded-lg", children: i?.details && (0, n.jsxs)("div", { className: "flex flex-col gap-2 mt-2", children: [r.length > 0 && (0, n.jsx)(ue, { participants: r, isOneToOne: t }), (0, n.jsx)("div", { className: "flex flex-row gap-2", children: (0, n.jsx)(d.x, { size: "subtext1", weight: "medium", children: a("Sent by") }) }), (0, n.jsx)("div", { className: "px-4 rounded-xl bg-gray-0", children: (0, n.jsx)(he, { participant: i.details.sentBy }) }), (0, n.jsx)(xe, { timestamp: o, ttl: c })] }) }) });
             }
             var pe = t(242782);
             const fe = ({ isReceived: e, timestamp: s, hasTTL: t, participants: a, showDetails: i, readStatus: r, setShowDetails: o, isOneToOne: l, iconColor: c, color: m }) => (0, n.jsxs)("div", { className: "flex items-center ml-auto shrink-0 gap-1", children: [(0, n.jsx)(d.x, { size: "subtext3", color: m || (e ? "gray700" : "white"), children: (0, le.H)(s) }), t && (0, n.jsx)(se.Z, { className: `w-3.5 h-3.5 ${m || (e ? "text-text/60" : "text-white/60")}` }), !e && (a.length > 0 ? (0, n.jsx)(ae.h, { open: i, onOpenChange: o, trigger: (0, n.jsx)("div", { className: "z-20 -ms-[2px] cursor-pointer", children: (0, n.jsx)(pe.Z, { className: `w-4 h-4 ${c || "text-white"}` }) }), children: (0, n.jsx)("div", { className: "p-4 max-w-[500px] min-w-[300px] mx-auto border border-gray-200 rounded-lg", children: (0, n.jsx)(ue, { participants: a, isOneToOne: l }) }) }) : "Read" === r ? (0, n.jsx)(pe.Z, { className: `w-4 h-4 ${c || "text-white"}` }) : null)] });
@@ -956,4 +941,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.c63712fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.1621558a.js.map

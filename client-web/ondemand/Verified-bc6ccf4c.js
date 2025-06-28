@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["ondemand.Verified-bc6ccf4c", "loader.AudioDock", "loader.AudioContextVoiceMedia", "icons/IconCropSquare-js"],
+    ["ondemand.Verified-bc6ccf4c", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
     {
         13720: (e, t, r) => {
             r.d(t, { Z: () => s });
@@ -85,14 +85,14 @@
                 d = r(392237);
             const u = d.default.create((e) => ({ header: { flexGrow: 1, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, chevronMargin: { marginStart: e.spaces.space12 }, chevronExpanded: { color: e.colors.primary, transform: "rotate(-180deg)" }, chevronAnimation: { transitionDuration: "100ms" }, title: { flexDirection: "row" }, iconBefore: { marginEnd: e.spaces.space8 }, iconAfter: { marginStart: e.spaces.space8 } })),
                 p = ({ accordionItemId: e = "", children: t, headerStyles: r, icon: p, iconColor: m, iconImage: h, iconSide: g, isExpanded: b = !1, onClick: f, onToggle: y, testID: C, title: E, titleColor: Z, titleStyles: w }) => {
-                    const v = s.Z.generate({ backgroundColor: "transparent", color: d.default.theme.colors.primary, customFocusBackgroundColor: d.default.theme.colors.gray0, customHoverBackgroundColor: d.default.theme.colors.gray0, customPressedBackgroundColor: d.default.theme.colors.gray0, insetFocusRing: !0 }),
-                        k = g || "AfterTitle",
+                    const k = s.Z.generate({ backgroundColor: "transparent", color: d.default.theme.colors.primary, customFocusBackgroundColor: d.default.theme.colors.gray0, customHoverBackgroundColor: d.default.theme.colors.gray0, customPressedBackgroundColor: d.default.theme.colors.gray0, insetFocusRing: !0 }),
+                        v = g || "AfterTitle",
                         x = () =>
                             p
                                 ? ((e, t) => {
                                       const r = "BeforeTitle" === t ? u.iconBefore : u.iconAfter;
                                       return o.createElement(e, { style: m ? [r, { color: m }] : [r, { color: d.default.theme.colors.text }], testID: "icon" });
-                                  })(p, k)
+                                  })(p, v)
                                 : h || void 0;
                     return o.createElement(
                         o.Fragment,
@@ -103,14 +103,14 @@
                                 "aria-controls": `${e}_content`,
                                 "aria-expanded": b,
                                 id: `${e}_header`,
-                                interactiveStyles: v,
+                                interactiveStyles: k,
                                 onClick: () => {
                                     f && f(), y && y(e);
                                 },
                                 style: r || u.header,
                                 testID: C,
                             },
-                            o.createElement(a.Z, { style: u.title }, "BeforeTitle" === k ? x() : null, o.createElement(i.ZP, { color: Z && Z, style: w, testID: "title", weight: "bold" }, E), "AfterTitle" === k ? x() : null),
+                            o.createElement(a.Z, { style: u.title }, "BeforeTitle" === v ? x() : null, o.createElement(i.ZP, { color: Z && Z, style: w, testID: "title", weight: "bold" }, E), "AfterTitle" === v ? x() : null),
                             (() => {
                                 const e = [u.chevronMargin, b && u.chevronExpanded, !l.Z.reducedMotionEnabled && u.chevronAnimation];
                                 return Z && !b ? e.push({ color: d.default.theme.colors[Z] }) : Z || b || e.push({ color: d.default.theme.colors.text }), o.createElement(n.default, { style: e, testID: "accordion-chevron" });
@@ -344,25 +344,25 @@
                 m = r(392237);
             const h = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 g = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: o, dedicatedPillRow: n, description: m, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: C, illustration: E, infoLabel: Z, infoLabelType: w, inlineCallout: v, label: k, name: x, onChange: D, pillText: I, pillType: R, reverseLabels: S, secondaryContent: T, secondaryDescription: _, switchStyle: P, testID: z }) => {
+                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": r, checked: o, dedicatedPillRow: n, description: m, disabled: b, disabledInlineCallout: f, endContent: y, horizontal: C, illustration: E, infoLabel: Z, infoLabelType: w, inlineCallout: k, label: v, name: x, onChange: D, pillText: I, pillType: R, reverseLabels: S, secondaryContent: T, secondaryDescription: _, switchStyle: P, testID: z }) => {
                     const B = (0, p.b)(),
-                        M = (0, p.b)(),
                         F = (0, p.b)(),
-                        A = a.createElement(c.ZP, { color: P ? (o ? "text" : "gray800") : "text", id: B, role: "label", size: P ? "body" : "headline2", testID: "headline-label", weight: P ? "normal" : "bold" }, k),
-                        G = !!m && a.createElement(c.ZP, { color: "gray700", id: M, size: "subtext1", style: I ? h.descriptionWithPill : h.description, testID: "description-label" }, m),
+                        M = (0, p.b)(),
+                        A = a.createElement(c.ZP, { color: P ? (o ? "text" : "gray800") : "text", id: B, role: "label", size: P ? "body" : "headline2", testID: "headline-label", weight: P ? "normal" : "bold" }, v),
+                        G = !!m && a.createElement(c.ZP, { color: "gray700", id: F, size: "subtext1", style: I ? h.descriptionWithPill : h.description, testID: "description-label" }, m),
                         W = a.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: h.description }, _),
                         $ = I ? a.createElement(d.ZP, { style: n ? h.pill : h.inlinePill, type: R }, I) : null,
                         j = a.createElement(a.Fragment, null, n ? $ : null, a.createElement(l.Z, { style: [h.row, Z && h.marginBottom8] }, S ? G : A, n ? null : $), a.createElement(l.Z, { style: [h.row, S && h.marginTop4] }, S ? A : G), T || (_ ? W : void 0)),
                         H = P ? "unset" : (r ? 100 / r : 100) + "%",
-                        V = P ? [h.padding8, h.borderRadiusLarge, o ? h.backgroundDefault : h.backgroundTransparent] : [h.padding16, h.boxShadow, h.borderRadiusLarge, o ? h.checked : null, h.backgroundDefault];
-                    return a.createElement(a.Fragment, null, a.createElement(u.Z, { disabled: b, style: [h.root, ...V, C ? { maxWidth: H, ...h.grow } : null, 1 === t || C ? null : h.withMarginTop, t !== r && C && !P && h.withMarginEnd, !b && h.interactive], testID: z, withInteractiveStyling: !P }, !!E && a.createElement(l.Z, { style: h.iconContainer, testID: "illustration" }, E), a.createElement(l.Z, { style: [h.labelContainer, P && h.alignCenter] }, !!Z && a.createElement(l.Z, { style: h.info }, a.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, a.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, Z)), "red" !== w && "yellow" !== w && a.createElement(i.default, { style: h.infoIcon, testID: "infoIcon" })), j, o && !!v && a.createElement(l.Z, { style: h.inlineCalloutContainer, testID: "inlineCallout" }, v)), !!y && a.createElement(l.Z, { style: h.endContentContainer, testID: "endContent" }, a.createElement(c.ZP, { id: F, size: "subtext1", weight: "bold" }, y)), a.createElement("input", { "aria-describedby": `${M} ${F}`, "aria-label": e, "aria-labelledby": B, "aria-posinset": t, "aria-setsize": r, checked: o, disabled: b, name: x, onChange: o ? s.Z : D, style: g, type: "radio" })), b && f ? f : null);
+                        L = P ? [h.padding8, h.borderRadiusLarge, o ? h.backgroundDefault : h.backgroundTransparent] : [h.padding16, h.boxShadow, h.borderRadiusLarge, o ? h.checked : null, h.backgroundDefault];
+                    return a.createElement(a.Fragment, null, a.createElement(u.Z, { disabled: b, style: [h.root, ...L, C ? { maxWidth: H, ...h.grow } : null, 1 === t || C ? null : h.withMarginTop, t !== r && C && !P && h.withMarginEnd, !b && h.interactive], testID: z, withInteractiveStyling: !P }, !!E && a.createElement(l.Z, { style: h.iconContainer, testID: "illustration" }, E), a.createElement(l.Z, { style: [h.labelContainer, P && h.alignCenter] }, !!Z && a.createElement(l.Z, { style: h.info }, a.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, a.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, Z)), "red" !== w && "yellow" !== w && a.createElement(i.default, { style: h.infoIcon, testID: "infoIcon" })), j, o && !!k && a.createElement(l.Z, { style: h.inlineCalloutContainer, testID: "inlineCallout" }, k)), !!y && a.createElement(l.Z, { style: h.endContentContainer, testID: "endContent" }, a.createElement(c.ZP, { id: M, size: "subtext1", weight: "bold" }, y)), a.createElement("input", { "aria-describedby": `${F} ${M}`, "aria-label": e, "aria-labelledby": B, "aria-posinset": t, "aria-setsize": r, checked: o, disabled: b, name: x, onChange: o ? s.Z : D, style: g, type: "radio" })), b && f ? f : null);
                 },
                 f = (e) => {
                     const t = a.useCallback(({ value: e, ...t }) => a.createElement(b, (0, o.Z)({}, t, { key: e })), []);
                     return a.createElement(n.Z, (0, o.Z)({}, e, { renderSelector: t }));
                 };
         },
-        390587: (e, t, r) => {
+        98440: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var o = r(202784),
                 a = r(890601),
@@ -370,20 +370,7 @@
                 l = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        452693: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => s });
-            var o = r(202784),
-                a = r(890601),
-                n = r(783427),
-                l = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
@@ -406,4 +393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-bc6ccf4c.45e5adda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-bc6ccf4c.3a7f036a.js.map

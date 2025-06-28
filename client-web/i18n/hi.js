@@ -2725,7 +2725,7 @@
                     return "पहले " + f(e.duration, "महीने", e.duration + " महीनों") + " के लिए, फिर " + e.standardPrice + " मासिक बिल भेजा गया";
                 }),
                 n("ae3e3723", function (e) {
-                    return f(e.duration, "", "पहले " + e.duration + " वर्षों के लिए") + "फिर " + e.standardPrice + " वार्षिक बिल भेजा गया";
+                    return "पहले " + f(e.duration, "वर्ष", e.duration + " वर्षों") + " के लिए, फिर " + e.standardPrice + " वार्षिक बिल भेजा गया";
                 }),
                 n("ade4c757", function (e) {
                     return "फिर " + e.price + " / माह";
@@ -13371,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.1aaec29a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.9c74d7ea.js.map

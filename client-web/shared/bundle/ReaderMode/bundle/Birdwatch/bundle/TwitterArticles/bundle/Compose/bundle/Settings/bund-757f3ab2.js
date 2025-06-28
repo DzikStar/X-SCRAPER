@@ -462,10 +462,11 @@
                                 s = t.grok_analysis_button;
                             if (this.state.width < 290) return [];
                             const a = e.isTrue("responsive_web_grok_analysis_button_from_backend"),
-                                l = (e.isTrue("responsive_web_grok_post_understanding_button_on_all_posts") || (e.isTrue("responsive_web_grok_analyze_focal_post_enabled") && this.props.isFocal) || (e.isTrue("responsive_web_grok_analyze_button_fetch_trends_enabled") && t.trend_id)) && !(0, Le.wV)(n) && !(0, Le.mn)(n) && (!n.entities?.urls || 0 === n.entities.urls.length);
+                                l = (e.isTrue("responsive_web_grok_post_understanding_button_on_all_posts") || (e.isTrue("responsive_web_grok_analyze_focal_post_enabled") && this.props.isFocal) || (e.isTrue("responsive_web_grok_analyze_button_fetch_trends_enabled") && t.trend_id)) && !(0, Le.wV)(n) && !(0, Le.mn)(n) && (!n.entities?.urls || 0 === n.entities.urls.length),
+                                h = e.isTrue("responsive_web_grok_show_button_on_ads");
                             if (
-                                (!o &&
-                                    ((a && s) || (!a && l)) &&
+                                ((o && !h) ||
+                                    !((a && s) || (!a && l)) ||
                                     i.push({
                                         text: Tt,
                                         Icon: te.x1,
@@ -477,19 +478,19 @@
                                 0 === i.length)
                             )
                                 return null;
-                            const h = i.length > 1,
-                                u = this.props.isFocal ? "text" : "gray700";
+                            const u = i.length > 1,
+                                p = this.props.isFocal ? "text" : "gray700";
                             return r.createElement(P.ZP, {
-                                Icon: h ? Q.default : (i[0].Icon ?? Q.default),
+                                Icon: u ? Q.default : (i[0].Icon ?? Q.default),
                                 activeColor: "primary",
                                 "aria-label": It,
-                                color: u,
-                                hoverLabel: { label: h ? It : i[0].text },
+                                color: p,
+                                hoverLabel: { label: u ? It : i[0].text },
                                 iconSize: "normal",
                                 onPress: () => {
-                                    h || i[0]?.onClick?.(() => {});
+                                    u || i[0]?.onClick?.(() => {});
                                 },
-                                renderMenu: h ? (e) => r.createElement(A.Z, { items: i, onCloseRequested: e, shouldCloseOnClick: !0 }) : void 0,
+                                renderMenu: u ? (e) => r.createElement(A.Z, { items: i, onCloseRequested: e, shouldCloseOnClick: !0 }) : void 0,
                             });
                         }),
                         (this._getPrerollActionMenuRenderer = ({ promotedContentA11yId: e, withViews: t }) => {
@@ -940,4 +941,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.fff5e75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.85284bea.js.map

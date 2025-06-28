@@ -378,20 +378,20 @@
             S.hash = "e9eed8d592e76b49f0c5ac5b9791f86b";
             const L = S;
             var x = a(202784),
-                v = a(325686),
+                B = a(325686),
                 Z = (a(585488), a(107267)),
-                B = a(731708),
-                R = a(593866),
+                R = a(731708),
+                v = a(593866),
                 I = a(868634),
                 P = a(470397),
                 C = a(386802),
                 U = a(392237),
                 M = a(111677),
-                z = a.n(M),
-                V = a(189700),
-                D = a(200112),
-                H = a(450681),
-                A = a(143778),
+                V = a.n(M),
+                D = a(189700),
+                A = a(200112),
+                z = a(450681),
+                H = a(143778),
                 W = a(323265),
                 N = a(980407),
                 O = a(430759),
@@ -400,27 +400,27 @@
                 Q = a(725516),
                 $ = a(535338),
                 j = a(17164);
-            const X = z().e37836f8,
-                Y = z().ccf2f24e,
-                J = z().fb35e52a,
-                ee = z().e238c590,
-                le = z().if218e60,
-                ae = z().b6dc1984,
-                ne = z().b0a16894,
-                te = [z().d4716820, z().e899a534, z().d9c4e7ae],
-                re = z().afb51066,
+            const X = V().e37836f8,
+                Y = V().ccf2f24e,
+                J = V().fb35e52a,
+                ee = V().e238c590,
+                le = V().if218e60,
+                ae = V().b6dc1984,
+                ne = V().b0a16894,
+                te = [V().d4716820, V().e899a534, V().d9c4e7ae],
+                re = V().afb51066,
                 ie = "gray700",
-                se = z().b7ba712a,
-                oe = z().d90b8c04,
-                ce = z().c2d0494a,
-                ue = z().be46e000,
-                de = z().e846ae32,
-                pe = z().e3647d08,
-                me = z().gad89c4a,
-                ge = z().h7fa9240,
-                ye = z().fb2ff552,
-                ke = z().bb57e8c0,
-                he = z().b9ce59ba,
+                se = V().b7ba712a,
+                oe = V().d90b8c04,
+                ce = V().c2d0494a,
+                ue = V().be46e000,
+                de = V().e846ae32,
+                pe = V().e3647d08,
+                me = V().gad89c4a,
+                ge = V().h7fa9240,
+                ye = V().fb2ff552,
+                ke = V().bb57e8c0,
+                he = V().b9ce59ba,
                 be = L,
                 Fe = (e) => {
                     const l = e?.verdict,
@@ -428,8 +428,8 @@
                         n = a ? a.replace(/\\n/g, "\n") : "",
                         t = e?.actioned_report_type,
                         r = [
-                            { decoration: x.createElement(V.default, { style: fe.icon }), label: ue, description: de },
-                            { decoration: x.createElement(D.default, { style: fe.icon }), label: pe, description: me },
+                            { decoration: x.createElement(D.default, { style: fe.icon }), label: ue, description: de },
+                            { decoration: x.createElement(A.default, { style: fe.icon }), label: pe, description: me },
                         ];
                     return x.createElement(
                         x.Fragment,
@@ -439,7 +439,7 @@
                                   I.ZP,
                                   { style: fe.label },
                                   x.createElement(
-                                      B.ZP,
+                                      R.ZP,
                                       { style: fe.labelText },
                                       ((e) => {
                                           switch (e) {
@@ -454,11 +454,11 @@
                                   ),
                               )
                             : null,
-                        x.createElement(B.ZP, { color: ie }, n),
+                        x.createElement(R.ZP, { color: ie }, n),
                         (() => {
                             if ("EncouragingSelfHarm" === t)
                                 return x.createElement(
-                                    B.ZP,
+                                    R.ZP,
                                     { color: ie },
                                     "\n",
                                     x.createElement("strong", null, ge, " "),
@@ -467,15 +467,15 @@
                                     "\n\n",
                                     x.createElement("strong", null, ke, " "),
                                     (() => {
-                                        const e = () => x.createElement(z().I18NFormatMessage, { $i18n: "ef72b01b" }, x.createElement(B.ZP, { link: "https://findahelpline.com/i/iasp" }, z().d42899ad));
-                                        return x.createElement(B.ZP, { style: fe.selfHarmLabel }, x.createElement(e, null));
+                                        const e = () => x.createElement(V().I18NFormatMessage, { $i18n: "ef72b01b" }, x.createElement(R.ZP, { link: "https://findahelpline.com/i/iasp" }, V().d42899ad));
+                                        return x.createElement(R.ZP, { style: fe.selfHarmLabel }, x.createElement(e, null));
                                     })(),
                                     "\n\n",
                                     he,
                                 );
                         })(),
                         (() => {
-                            if ("NonConsensualNudity" === t || "PrivateInfo" === t) return x.createElement(x.Fragment, null, x.createElement(B.ZP, { role: "heading", size: "headline1", style: fe.headline, weight: "heavy" }, ce), x.createElement(R.Z, { items: r }));
+                            if ("NonConsensualNudity" === t || "PrivateInfo" === t) return x.createElement(x.Fragment, null, x.createElement(R.ZP, { role: "heading", size: "headline1", style: fe.headline, weight: "heavy" }, ce), x.createElement(v.Z, { items: r }));
                         })(),
                     );
                 },
@@ -485,16 +485,16 @@
                             return x.createElement(
                                 x.Fragment,
                                 null,
-                                x.createElement(B.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ee),
-                                x.createElement(B.ZP, { color: ie, size: "body", weight: "normal" }, le),
-                                x.createElement(B.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ae),
-                                x.createElement(B.ZP, { color: ie, size: "body", weight: "normal" }, ne),
+                                x.createElement(R.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ee),
+                                x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, le),
+                                x.createElement(R.ZP, { size: "headline1", style: fe.headline, weight: "heavy" }, ae),
+                                x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, ne),
                                 x.createElement(
                                     "ul",
                                     null,
-                                    te.map((e, l) => x.createElement("li", { key: l }, x.createElement(B.ZP, { color: ie, size: "body", weight: "normal" }, e))),
+                                    te.map((e, l) => x.createElement("li", { key: l }, x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, e))),
                                 ),
-                                x.createElement(B.ZP, { color: ie, size: "body", weight: "normal" }, re),
+                                x.createElement(R.ZP, { color: ie, size: "body", weight: "normal" }, re),
                             );
                         case "Reviewed":
                             return Fe(e);
@@ -509,7 +509,7 @@
                     const a = l?.viewer_v2?.user_results?.result?.report_detail,
                         n = a?.last_update_time
                             ? ((e) => {
-                                  const l = z().ba2e82a1,
+                                  const l = V().ba2e82a1,
                                       a = parseInt(e, 10);
                                   return l(new Date(a));
                               })(a?.last_update_time)
@@ -517,37 +517,24 @@
                         t = a?.header,
                         r = a?.report_entities_results,
                         i = a?.rule_link;
-                    return x.createElement(x.Fragment, null, x.createElement(P.Z, { color: ie }, x.createElement(B.ZP, { color: ie, weight: "bold" }, Y), x.createElement(B.ZP, { color: ie }, n)), x.createElement(B.ZP, { size: "title4", style: fe.header, weight: "heavy" }, t), x.createElement(B.ZP, { link: i }, J), r ? x.createElement(O.Z, { report: (0, H.Z)(r) }) : null, Ke(a));
+                    return x.createElement(x.Fragment, null, x.createElement(P.Z, { color: ie }, x.createElement(R.ZP, { color: ie, weight: "bold" }, Y), x.createElement(R.ZP, { color: ie }, n)), x.createElement(R.ZP, { size: "title4", style: fe.header, weight: "heavy" }, t), x.createElement(R.ZP, { link: i }, J), r ? x.createElement(O.Z, { report: (0, z.Z)(r) }) : null, Ke(a));
                 },
                 _e = (0, Q.Z)(
                     () => {
                         const e = (0, Z.useHistory)(),
                             { isModal: l } = x.useContext(C.Z),
-                            a = A.Z,
+                            a = H.Z,
                             n = W.ZP.isTwitterApp(),
                             t = (0, Z.useParams)(),
                             { featureSwitches: r } = x.useContext(q.rC),
                             i = r.isTrue("sc_r4_enabled"),
                             s = x.useMemo(() => (n ? a : void 0), [n, a]);
-                        return i && t.reportId ? x.createElement(j.Z, { to: `/i/safety_center/reports/${t.reportId}` }) : x.createElement(N.Z, { backButtonType: "close", containerStyle: fe.root, documentTitle: X, history: e, renderHeader: s }, x.createElement(v.Z, { style: [fe.contentBody, l ? fe.wideScreen : fe.narrowScreen] }, x.createElement(G.H, { errorConfig: { context: "REPORT_DETAIL" } }, x.createElement(Te, null))));
+                        return i && t.reportId ? x.createElement(j.Z, { to: `/i/safety_center/reports/${t.reportId}` }) : x.createElement(N.Z, { backButtonType: "close", containerStyle: fe.root, documentTitle: X, history: e, renderHeader: s }, x.createElement(B.Z, { style: [fe.contentBody, l ? fe.wideScreen : fe.narrowScreen] }, x.createElement(G.H, { errorConfig: { context: "REPORT_DETAIL" } }, x.createElement(Te, null))));
                     },
                     { page: "report_center", component: "report_detail" },
                 ),
                 fe = U.default.create((e) => ({ contentBody: { alignItems: "left", marginTop: e.spaces.space20 }, header: { marginVertical: e.spaces.space8 }, headline: { marginBottom: e.spaces.space8, marginTop: e.spaces.space20 }, iconTwitter: { color: e.colors.primary, flexGrow: 1, height: "1.75rem" }, narrowScreen: { marginBottom: `calc(${e.spaces.space20} + ${U.default.iPhoneOffsetBottom})`, marginHorizontal: e.spaces.space32 }, root: { flexShrink: 1, flexGrow: 1, paddingBottom: e.spaces.space32 }, tombstone: { border: "none", marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space20 }, wideScreen: { marginBottom: e.spaces.space20, marginHorizontal: e.spaces.space72 }, icon: { color: e.colors.primary, height: "1.5rem", marginEnd: e.spaces.space20, marginTop: e.spaces.space2 }, label: { backgroundColor: e.colors.blue50, marginBottom: e.spaces.space12, marginTop: e.spaces.space20 }, labelText: { color: e.colors.blue900 }, selfHarmLabel: { whiteSpace: "pre-line" } }));
         },
-        748138: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => o });
-            var n = a(202784),
-                t = a(890601),
-                r = a(783427),
-                i = a(347101);
-            const s = (e = {}) => {
-                const { direction: l } = (0, r.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: l });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReportCenter.db0a7dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReportCenter.dc2367ca.js.map

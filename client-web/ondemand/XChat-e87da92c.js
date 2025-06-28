@@ -8,17 +8,17 @@
                 var i = n.$_$.g,
                     r = n.$_$.df;
                 function e(t) {
-                    (t = t === i ? localStorage : t), (this.nd0_1 = t);
+                    (t = t === i ? localStorage : t), (this.jd2_1 = t);
                 }
                 (0, n.$_$.ae)(e, "StorageSettings", e),
-                    (r(e).od0 = function (t) {
-                        return this.nd0_1.removeItem(t);
+                    (r(e).kd2 = function (t) {
+                        return this.jd2_1.removeItem(t);
                     }),
-                    (r(e).pd0 = function (t, n) {
-                        this.nd0_1.setItem(t, n);
+                    (r(e).ld2 = function (t, n) {
+                        this.jd2_1.setItem(t, n);
                     }),
-                    (r(e).qd0 = function (t) {
-                        return this.nd0_1.getItem(t);
+                    (r(e).md2 = function (t) {
+                        return this.jd2_1.getItem(t);
                     }),
                     (t.$_$ = t.$_$ || {}),
                     (t.$_$.a = e);
@@ -41,8 +41,8 @@
                     y = e.$_$.m,
                     z = e.$_$.q,
                     g = i.$_$.cl,
-                    k = i.$_$.df,
-                    b = i.$_$.ae,
+                    b = i.$_$.df,
+                    k = i.$_$.ae,
                     j = i.$_$.eg,
                     q = i.$_$.xd,
                     C = i.$_$.ff,
@@ -95,8 +95,8 @@
                     yt = o.$_$.g6,
                     zt = o.$_$.n5,
                     gt = o.$_$.f5,
-                    kt = o.$_$.o5,
-                    bt = o.$_$.m5,
+                    bt = o.$_$.o5,
+                    kt = o.$_$.m5,
                     jt = e.$_$.w,
                     qt = i.$_$.ni,
                     Ct = e.$_$.d,
@@ -179,16 +179,16 @@
                 function Tt() {
                     (f = this), Dt.call(this);
                 }
-                b(Et, "ApolloClientServiceImpl"),
-                    b(Qt),
+                k(Et, "ApolloClientServiceImpl"),
+                    k(Qt),
                     A(Lt, "RequestComposer"),
                     J(Gt, M, m, [1]),
                     J(Rt, M, m, [3]),
                     A(Ut, "RetryErrors"),
                     A(Pt, "XCacheKeyGenerator"),
-                    b(At, "OptInStalenessCacheControlCacheResolver"),
+                    k(At, "OptInStalenessCacheControlCacheResolver"),
                     A(Tt, "XCacheKeyResolver", m, Dt),
-                    (k(Et).jao = function () {
+                    (b(Et).jao = function () {
                         var t = this.hao_1;
                         return (
                             q(
@@ -203,16 +203,16 @@
                             t.o2()
                         );
                     }),
-                    (k(Qt).r15 = function () {
+                    (b(Qt).r15 = function () {
                         return this.kao_1;
                     }),
-                    (k(Qt).s15 = function () {
+                    (b(Qt).s15 = function () {
                         return this.lao_1;
                     }),
-                    (k(Qt).u15 = function (t) {
+                    (b(Qt).u15 = function (t) {
                         t.rv(this.mao_1);
                     }),
-                    (k(Lt).o16 = function (t) {
+                    (b(Lt).o16 = function (t) {
                         var n,
                             i = "https://api.x.com/graphql/" + t.vz_1.operationId() + "/" + t.vz_1.operationName(),
                             r = t.vz_1,
@@ -242,14 +242,14 @@
                         }
                         return n;
                     }),
-                    (k(Gt).n46 = function (t, n) {
+                    (b(Gt).n46 = function (t, n) {
                         var i = this.o46(t, n);
                         return (i.y9_1 = w), (i.z9_1 = null), i.oa();
                     }),
-                    (k(Gt).cb = function (t, n) {
+                    (b(Gt).cb = function (t, n) {
                         return this.n46(t instanceof V ? t : W(), n);
                     }),
-                    (k(Gt).oa = function () {
+                    (b(Gt).oa = function () {
                         for (this.y9_1; ; )
                             try {
                                 var t = this.w9_1;
@@ -274,20 +274,20 @@
                                 throw t;
                             }
                     }),
-                    (k(Gt).o46 = function (t, n) {
+                    (b(Gt).o46 = function (t, n) {
                         var i = new Gt(n);
                         return (i.xao_1 = t), i;
                     }),
-                    (k(Rt).l4f = function (t, n, i, r) {
+                    (b(Rt).l4f = function (t, n, i, r) {
                         var e = this.m4f(t, n, i, r);
                         return (e.y9_1 = w), (e.z9_1 = null), e.oa();
                     }),
-                    (k(Rt).n4f = function (t, n, i, r) {
+                    (b(Rt).n4f = function (t, n, i, r) {
                         var e = null != t && I(t, Y) ? t : W(),
                             a = n instanceof Error ? n : W();
                         return this.l4f(e, a, i instanceof Z ? i : W(), r);
                     }),
-                    (k(Rt).oa = function () {
+                    (b(Rt).oa = function () {
                         var t = this.y9_1;
                         t: for (;;)
                             try {
@@ -310,11 +310,11 @@
                                 (this.w9_1 = this.x9_1), (this.z9_1 = r);
                             }
                     }),
-                    (k(Rt).m4f = function (t, n, i, r) {
+                    (b(Rt).m4f = function (t, n, i, r) {
                         var e = new Rt(r);
                         return (e.gap_1 = t), (e.hap_1 = n), (e.iap_1 = i), e;
                     }),
-                    (k(Ut).j4b = function (t, n) {
+                    (b(Ut).j4b = function (t, n) {
                         var i,
                             r,
                             e = t
@@ -346,16 +346,16 @@
                             );
                         return h;
                     }),
-                    (k(Ut).toString = function () {
+                    (b(Ut).toString = function () {
                         return "RetryErrors";
                     }),
-                    (k(Ut).hashCode = function () {
+                    (b(Ut).hashCode = function () {
                         return -1546425599;
                     }),
-                    (k(Ut).equals = function (t) {
+                    (b(Ut).equals = function (t) {
                         return this === t || (t instanceof Ut && (t instanceof Ut || W(), !0));
                     }),
-                    (k(Pt).s5a = function (t, n) {
+                    (b(Pt).s5a = function (t, n) {
                         var i,
                             r,
                             e = t.r2("__typename"),
@@ -363,10 +363,10 @@
                             u = t.r2("id"),
                             s = t.r2("rest_id"),
                             _ = wt(n.q5a_1.a12_1.w11());
-                        if (a === bt().j8n_1.v11_1) {
+                        if (a === kt().j8n_1.v11_1) {
                             var o = Xt(n, 0, u);
                             i = xt(a, [o]);
-                        } else if (a === kt().j8z_1.v11_1) {
+                        } else if (a === bt().j8z_1.v11_1) {
                             var h = t.r2("entry_id"),
                                 c = t.r2("sort_index"),
                                 $ = Xt(n, 0, u);
@@ -390,7 +390,7 @@
                         }
                         return i;
                     }),
-                    (k(At).v5a = function (t) {
+                    (b(At).v5a = function (t) {
                         var n = !1,
                             i = t.y5a_1,
                             r = t.b5b_1.j5a("apollo-max-stale"),
@@ -403,7 +403,7 @@
                         var s = this.kap_1.v5a(t);
                         return n ? new Kt(s, new Nt().u16("apollo-stale", "true").uz()) : s;
                     }),
-                    (k(Tt).t5a = function (t) {
+                    (b(Tt).t5a = function (t) {
                         var n = t.w5a_1.a12_1.w11().v11_1,
                             i = t.w5a_1.u12("id", t.x5a_1).q15(),
                             r = t.w5a_1.u12("rest_id", t.x5a_1).q15();
@@ -436,11 +436,11 @@
                     e = n.$_$.j1,
                     a = i.$_$.df;
                 function u() {
-                    (r = this), (this.vbi_1 = e(!0));
+                    (r = this), (this.bbj_1 = e(!0));
                 }
                 (0, i.$_$.ge)(u, "NoOpAppLifecycle"),
-                    (a(u).wbi = function () {
-                        return this.vbi_1;
+                    (a(u).cbj = function () {
+                        return this.bbj_1;
                     }),
                     (t.$_$ = t.$_$ || {}),
                     (t.$_$.a = function () {
@@ -485,23 +485,23 @@
                     l = i.$_$.ae,
                     w = i.$_$.g;
                 function v(t) {
-                    this.jcz_1 = t;
+                    this.fd1_1 = t;
                 }
                 l(v, w, w, w, [f]),
-                    (s(v).tbf = function () {
+                    (s(v).zbf = function () {
                         var t;
-                        (t = this.jcz_1), u(t);
+                        (t = this.fd1_1), u(t);
                     }),
-                    (s(v).ccw = _),
+                    (s(v).ycx = _),
                     (s(v).i1c = o),
-                    (s(v).dcw = h),
-                    (s(v).ecw = c),
-                    (s(v).fcw = $),
+                    (s(v).zcx = h),
+                    (s(v).acy = c),
+                    (s(v).bcy = $),
                     (t.$_$ = t.$_$ || {}),
                     (t.$_$.a = function (t, n) {
                         var i = e(n),
-                            r = t.ecy();
-                        return r.ea().equals(a()) ? u(i) : r.gcw(new v(i)), i;
+                            r = t.ad0();
+                        return r.ea().equals(a()) ? u(i) : r.ccy(new v(i)), i;
                     });
             })(t.exports, i(115754), i(519039), i(54279));
         },
@@ -528,8 +528,8 @@
                     y = n.$_$.fe,
                     z = i.$_$.p2,
                     g = i.$_$.w2,
-                    k = (i.$_$.c1, i.$_$.u),
-                    b = i.$_$.t,
+                    b = (i.$_$.c1, i.$_$.u),
+                    k = i.$_$.t,
                     j = i.$_$.f1,
                     q = i.$_$.z,
                     C = n.$_$.de,
@@ -1061,8 +1061,8 @@
                         var n = t instanceof dt ? t : p();
                         return !!this.h9e_1.equals(n.h9e_1);
                     }),
-                    (u(it).d1w = k),
-                    (u(it).e1w = b),
+                    (u(it).d1w = b),
+                    (u(it).e1w = k),
                     D(u(ht), "state", u(ht).ea),
                     (u(ft).p3k = P),
                     D(u(wt), "inWholeSeconds", u(wt).a9e),
@@ -1415,8 +1415,8 @@
                     y = n.$_$.rf,
                     z = n.$_$.pf,
                     g = n.$_$.g,
-                    k = n.$_$.be,
-                    b = n.$_$.ck,
+                    b = n.$_$.be,
+                    k = n.$_$.ck,
                     j = n.$_$.bd,
                     q = n.$_$.oj,
                     C = n.$_$.od,
@@ -1455,7 +1455,7 @@
                         case "Great":
                             return V();
                         default:
-                            P(), b("No enum constant value.");
+                            P(), k("No enum constant value.");
                     }
                 }
                 function P() {
@@ -1501,9 +1501,9 @@
                 d(Q, "Segment"),
                     d(L, "DynamicSegmentsTracker"),
                     d(G, "NetworkInfo"),
-                    k(R),
+                    b(R),
                     d(A, "NetworkQuality", g, q),
-                    k(B),
+                    b(B),
                     d(J, "SegmentSizesDecider"),
                     E(Y, "WebNetworkInfoProvider"),
                     (w(Q).toString = function () {
@@ -1647,4 +1647,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e87da92c.332283da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e87da92c.6731356a.js.map

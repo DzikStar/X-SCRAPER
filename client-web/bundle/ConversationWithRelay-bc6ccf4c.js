@@ -46,20 +46,20 @@
                 C = c.default.create((e) => ({ popover: { padding: e.spaces.space32 }, popoverTitle: { marginBottom: e.spaces.space8 }, popoverText: { marginBottom: e.spaces.space24 }, audioChartButton: { marginBottom: e.spaces.space8 }, audioChartIcon: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, cursor: "pointer", marginStart: e.spaces.space4 } })),
                 D = { borderRadii: "xSmall", layout: "fixedSpacing", spacing: "space2", width: "space56" };
             Object.freeze({ fixedBarWidth: "fixedBarWidth", fixedSpacing: "fixedSpacing" });
-            var V = a(614983),
-                B = a.n(V);
-            const z = (e, t, a) => (100 * (e - a)) / (t - a),
-                P = (e) => [].concat(...e.map((e) => (void 0 !== e.value ? e.value : e.values.map((e) => e.value)))),
-                T = (e) => e.map((e) => e.values.map((e) => e.value).reduce((e, t) => e + t)),
-                k = (e) => (t) => e.popover ?? null,
-                I = o().dec1d7ef,
-                $ = o().f765bead,
+            var B = a(614983),
+                V = a.n(B);
+            const P = (e, t, a) => (100 * (e - a)) / (t - a),
+                T = (e) => [].concat(...e.map((e) => (void 0 !== e.value ? e.value : e.values.map((e) => e.value)))),
+                k = (e) => e.map((e) => e.values.map((e) => e.value).reduce((e, t) => e + t)),
+                I = (e) => (t) => e.popover ?? null,
+                $ = o().dec1d7ef,
+                z = o().f765bead,
                 A = ({ barConfig: e, data: t, maxValue: a, minValue: n }) => {
                     const o = r.useRef([]),
                         i = { ...D, ...e },
                         s = "fixedBarWidth" === i.layout,
                         [u, d] = r.useState(null),
-                        p = (e, t, a) => c.default.create(() => ({ style: { flex: s ? null : 1, height: `${z(t.value, a, n)}%`, width: s ? `calc(${c.default.theme.spaces[i.width]} / ${e.values.length})` : 100 / e.values.length + "%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[i.borderRadii], marginHorizontal: c.default.theme.spaces.space2, ...(!!e.popover && { cursor: "pointer" }) } })).style,
+                        p = (e, t, a) => c.default.create(() => ({ style: { flex: s ? null : 1, height: `${P(t.value, a, n)}%`, width: s ? `calc(${c.default.theme.spaces[i.width]} / ${e.values.length})` : 100 / e.values.length + "%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[i.borderRadii], marginHorizontal: c.default.theme.spaces.space2, ...(!!e.popover && { cursor: "pointer" }) } })).style,
                         m = { height: "100%", display: "flex", flex: 1, justifyContent: "space-around", flexDirection: "row", alignItems: "flex-end", marginHorizontal: c.default.theme.spaces[i.spacing] },
                         g = (e) => {
                             u === e && d(null);
@@ -73,9 +73,9 @@
                             { key: `barGroup${i}`, style: [m, ((y = i), null !== u ? (y === u ? { opacity: 1 } : { opacity: 0.5 }) : { opacity: 1 })], testID: `barGroup${i}` },
                             r.createElement(
                                 h.Z,
-                                { contentStyle: { minWidth: 0 }, disabled: !f, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", key: `barGroup${i}`, onDismiss: () => g(i), onHoverCardUnmount: () => g(i), onOpen: () => d(i), preferredVerticalOrientation: "up", renderContent: k(e), withArrow: !0, wrapperStyle: { flex: s ? null : 1, flexDirection: "row", alignItems: "flex-end", width: "100%", height: `${z(c, a, n)}%` } },
+                                { contentStyle: { minWidth: 0 }, disabled: !f, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", key: `barGroup${i}`, onDismiss: () => g(i), onHoverCardUnmount: () => g(i), onOpen: () => d(i), preferredVerticalOrientation: "up", renderContent: I(e), withArrow: !0, wrapperStyle: { flex: s ? null : 1, flexDirection: "row", alignItems: "flex-end", width: "100%", height: `${P(c, a, n)}%` } },
                                 e.values.map((a, n) => {
-                                    const s = e.label ? I({ label: e.label?.props.children, group: a.group, value: a.value }) : $({ group: a.group, value: a.value });
+                                    const s = e.label ? $({ label: e.label?.props.children, group: a.group, value: a.value }) : z({ group: a.group, value: a.value });
                                     return r.createElement(l.Z, {
                                         "aria-label": s,
                                         focusable: !0,
@@ -97,7 +97,7 @@
                 S = o().idea1817,
                 W = o().fe94be6b,
                 R = c.default.create((e) => ({ normalBarWrapper: { height: "100%", flex: 1, flexDirection: "row", alignItems: "flex-end", justifyContent: "space-around" } })),
-                M = ({ audioChartGenerator: e, barConfig: t, data: a, frequencies: n, maxValue: o, minValue: i }) => {
+                G = ({ audioChartGenerator: e, barConfig: t, data: a, frequencies: n, maxValue: o, minValue: i }) => {
                     const s = r.useRef(Array.from({ length: a.length }, () => null)),
                         u = (e) => (t) => {
                             const a = s?.current;
@@ -106,7 +106,7 @@
                         [d, p] = r.useState(null),
                         m = { ...D, ...t },
                         g = "fixedBarWidth" === m.layout,
-                        f = (e) => ({ flex: g ? null : 1, height: `${z(e.value, o, i)}%`, width: g ? c.default.theme.spaces[m.width] : "auto", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: e.color ? c.default.theme.colors[e.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[m.borderRadii], marginHorizontal: c.default.theme.spaces[m.spacing], ...(!!e.popover && { cursor: "pointer" }) }),
+                        f = (e) => ({ flex: g ? null : 1, height: `${P(e.value, o, i)}%`, width: g ? c.default.theme.spaces[m.width] : "auto", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: e.color ? c.default.theme.colors[e.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[m.borderRadii], marginHorizontal: c.default.theme.spaces[m.spacing], ...(!!e.popover && { cursor: "pointer" }) }),
                         y = (e) => {
                             d === e && p(null);
                         };
@@ -118,7 +118,7 @@
                             { key: `normalBarWrapper${o}`, style: [R.normalBarWrapper, ((m = o), null !== d ? (m === d ? { opacity: 1 } : { opacity: 0.5 }) : { opacity: 1 })] },
                             r.createElement(
                                 h.Z,
-                                { contentStyle: { minWidth: 0 }, disabled: !c, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => y(o), onHoverCardUnmount: () => y(o), onOpen: () => p(o), preferredVerticalOrientation: "up", renderContent: k(t), withArrow: !0, wrapperStyle: f(t) },
+                                { contentStyle: { minWidth: 0 }, disabled: !c, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => y(o), onHoverCardUnmount: () => y(o), onOpen: () => p(o), preferredVerticalOrientation: "up", renderContent: I(t), withArrow: !0, wrapperStyle: f(t) },
                                 r.createElement(l.Z, {
                                     "aria-label": i,
                                     focusable: 0 === o,
@@ -148,9 +148,9 @@
                         var m;
                     });
                 },
-                G = o().dec1d7ef,
-                H = o().f765bead,
-                O = ({ barConfig: e, data: t, maxValue: a, minValue: n }) => {
+                M = o().dec1d7ef,
+                O = o().f765bead,
+                H = ({ barConfig: e, data: t, maxValue: a, minValue: n }) => {
                     const o = r.useRef(Array.from({ length: t.length }, () => [])),
                         i = (e, t) => (a) => {
                             const r = o?.current;
@@ -159,7 +159,7 @@
                         s = { ...D, ...e },
                         u = "fixedBarWidth" === s.layout,
                         [d, p] = r.useState(null),
-                        m = (e, t) => ({ height: `${z(t.value, a, n)}%`, width: u ? c.default.theme.spaces[s.width] : "100%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[s.borderRadii], marginTop: c.default.theme.spaces.space2 }),
+                        m = (e, t) => ({ height: `${P(t.value, a, n)}%`, width: u ? c.default.theme.spaces[s.width] : "100%", minWidth: c.default.theme.spaces.space1, maxWidth: "100%", backgroundColor: t.color ? c.default.theme.colors[t.color] : c.default.theme.colors.blue500, borderRadius: c.default.theme.borderRadii[s.borderRadii], marginTop: c.default.theme.spaces.space2 }),
                         g = (e) => {
                             d === e && p(null);
                         };
@@ -171,9 +171,9 @@
                             { key: `barGroup${a}`, style: { height: "100%", display: "flex", flex: 1, justifyContent: "flex-start", flexDirection: "column-reverse", alignItems: "center", marginHorizontal: c.default.theme.spaces[s.spacing], ...((u = a), null !== d ? (u === d ? { opacity: 1 } : { opacity: 0.5 }) : { opacity: 1 }), ...(n && { cursor: "pointer" }) }, testID: `barGroup${a}` },
                             r.createElement(
                                 h.Z,
-                                { contentStyle: { minWidth: 0 }, disabled: !n, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => g(a), onHoverCardUnmount: () => g(a), onOpen: () => p(a), preferredVerticalOrientation: "up", renderContent: k(e), withArrow: !0, wrapperStyle: { height: "100%", display: "flex", flex: 1, justifyContent: "flex-start", flexDirection: "column-reverse", alignItems: "center" } },
+                                { contentStyle: { minWidth: 0 }, disabled: !n, enableEnterKeyToggle: !0, enableHover: !0, hoverDelay: "short", onDismiss: () => g(a), onHoverCardUnmount: () => g(a), onOpen: () => p(a), preferredVerticalOrientation: "up", renderContent: I(e), withArrow: !0, wrapperStyle: { height: "100%", display: "flex", flex: 1, justifyContent: "flex-start", flexDirection: "column-reverse", alignItems: "center" } },
                                 e.values.map((n, s) => {
-                                    const c = e.label ? G({ label: e.label?.props.children, group: n.group, value: n.value }) : H({ group: n.group, value: n.value });
+                                    const c = e.label ? M({ label: e.label?.props.children, group: n.group, value: n.value }) : O({ group: n.group, value: n.value });
                                     return r.createElement(l.Z, {
                                         "aria-label": c,
                                         focusable: !0,
@@ -192,11 +192,11 @@
                         var u;
                     });
                 },
-                K = o().ef8b2f54,
-                L = o().d567ceda,
+                L = o().ef8b2f54,
+                K = o().d567ceda,
                 q = o().f7b30768,
                 _ = o().hcd54328,
-                j = ({ gridlines: e, maxValue: t, minValue: a }) => (e ? e.map((e, n) => r.createElement(l.Z, { key: `gridline${n}`, style: [N.gridLine, { bottom: `${z(e, t, a)}%` }], testID: `gridline${n}` })) : null),
+                j = ({ gridlines: e, maxValue: t, minValue: a }) => (e ? e.map((e, n) => r.createElement(l.Z, { key: `gridline${n}`, style: [N.gridLine, { bottom: `${P(e, t, a)}%` }], testID: `gridline${n}` })) : null),
                 F = ({ data: e, labelStyle: t }) => (e ? e.map((e, a) => ("string" == typeof e.label ? r.createElement(l.Z, { "aria-hidden": !0, key: `label${a}`, style: N.label }, r.createElement(i.ZP, { align: "center", color: "gray700", size: "subtext2", style: [{ marginTop: c.default.theme.spaces.space8 }, t], weight: "medium" }, e.label)) : r.createElement(l.Z, { "aria-hidden": !0, key: `label${a}`, style: N.label }, e.label))) : null),
                 U = ({ maxValue: e, minValue: t, ticks: a }) => {
                     const n =
@@ -211,7 +211,7 @@
                             })(e, t),
                         o = n.sort((e, t) => e.value - t.value);
                     return o.map((a, n) => {
-                        const i = 0 === n ? z(a.value, e, t) : (100 * (a.value - o[n - 1].value)) / (e - t);
+                        const i = 0 === n ? P(a.value, e, t) : (100 * (a.value - o[n - 1].value)) / (e - t);
                         return r.createElement(l.Z, { "aria-hidden": !0, key: `tick${n}`, style: { position: "relative", height: `${i}%`, paddingBottom: "0.75em" } }, a.label);
                     });
                 },
@@ -222,24 +222,24 @@
                     const C = r.useRef();
                     C.current || (C.current = new u.Z());
                     const D = h ? h.map((e) => e.value) : [],
-                        V = ((e, t, a) => (void 0 !== e ? P(e) : void 0 !== t ? (a ? T(t) : P(t)) : void B()(e || t, "Either data or groupedData props must be passed")))(a, n, p);
-                    if (!V) return null;
-                    const z = Math.max(...V, ...D),
-                        k = Math.min(...V, ...D);
+                        B = ((e, t, a) => (void 0 !== e ? T(e) : void 0 !== t ? (a ? k(t) : T(t)) : void V()(e || t, "Either data or groupedData props must be passed")))(a, n, p);
+                    if (!B) return null;
+                    const P = Math.max(...B, ...D),
+                        I = Math.min(...B, ...D);
                     if (void 0 !== a)
-                        (v = L),
+                        (v = K),
                             (E = a.length),
                             e &&
-                                ((x = C.current?.mapDataPointsToFrequencies([...V, ...D])),
+                                ((x = C.current?.mapDataPointsToFrequencies([...B, ...D])),
                                 (w = () => {
                                     C?.current?.playDisconnectedDataPointsAsTone(a, 0.7, 0.3);
                                 })),
-                            (b = r.createElement(M, { audioChartGenerator: C, barConfig: t, data: a, frequencies: x, maxValue: z, minValue: k }));
+                            (b = r.createElement(G, { audioChartGenerator: C, barConfig: t, data: a, frequencies: x, maxValue: P, minValue: I }));
                     else {
                         if (void 0 === n) return null;
-                        (w = void 0), (E = n.length), p ? ((b = r.createElement(O, { barConfig: t, data: n, maxValue: z, minValue: k })), (v = q)) : ((b = r.createElement(A, { barConfig: t, data: n, maxValue: z, minValue: k })), (v = _));
+                        (w = void 0), (E = n.length), p ? ((b = r.createElement(H, { barConfig: t, data: n, maxValue: P, minValue: I })), (v = q)) : ((b = r.createElement(A, { barConfig: t, data: n, maxValue: P, minValue: I })), (v = _));
                     }
-                    return r.createElement(l.Z, { "aria-labelledby": y, role: "figure" }, g && r.createElement(l.Z, { style: N.titleBar }, r.createElement(i.ZP, { focusable: !1, id: y, role: "heading", size: "subtext2", style: N.title, weight: "medium" }, g), f ? r.createElement(d.Z, { label: g, popover: f }) : null, r.createElement(Z, { chartTitle: g, chartType: v, maxValue: z, minValue: k, noOfCategories: E, playAudioChart: w })), r.createElement(l.Z, { style: [N.grid, m] }, r.createElement(l.Z, { "aria-label": K, focusable: !1, key: "chartArea", role: "application", style: N.chartArea }, r.createElement(j, { gridlines: o, maxValue: z, minValue: k }), b), r.createElement(l.Z, { key: "yAxis", style: N.yAxis }, r.createElement(U, { maxValue: z, minValue: k, ticks: h })), r.createElement(l.Z, { key: "xAxis", style: N.xAxis }, r.createElement(F, { data: a || n, labelStyle: c }))));
+                    return r.createElement(l.Z, { "aria-labelledby": y, role: "figure" }, g && r.createElement(l.Z, { style: N.titleBar }, r.createElement(i.ZP, { focusable: !1, id: y, role: "heading", size: "subtext2", style: N.title, weight: "medium" }, g), f ? r.createElement(d.Z, { label: g, popover: f }) : null, r.createElement(Z, { chartTitle: g, chartType: v, maxValue: P, minValue: I, noOfCategories: E, playAudioChart: w })), r.createElement(l.Z, { style: [N.grid, m] }, r.createElement(l.Z, { "aria-label": L, focusable: !1, key: "chartArea", role: "application", style: N.chartArea }, r.createElement(j, { gridlines: o, maxValue: P, minValue: I }), b), r.createElement(l.Z, { key: "yAxis", style: N.yAxis }, r.createElement(U, { maxValue: P, minValue: I, ticks: h })), r.createElement(l.Z, { key: "xAxis", style: N.xAxis }, r.createElement(F, { data: a || n, labelStyle: c }))));
                 };
         },
         738545: (e, t, a) => {
@@ -362,7 +362,7 @@
             const s = o.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
                 c = i;
         },
-        748138: (e, t, a) => {
+        123588: (e, t, a) => {
             a.r(t), a.d(t, { default: () => s });
             var r = a(202784),
                 l = a(890601),
@@ -370,12 +370,12 @@
                 o = a(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 3.59l7.457 7.45-1.414 1.42L13 7.41V21h-2V7.41l-5.043 5.05-1.414-1.42L12 3.59z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
-        452693: (e, t, a) => {
+        98440: (e, t, a) => {
             a.r(t), a.d(t, { default: () => s });
             var r = a(202784),
                 l = a(890601),
@@ -383,11 +383,11 @@
                 o = a(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-bc6ccf4c.0a86d96a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-bc6ccf4c.ed3319ba.js.map

@@ -287,7 +287,7 @@
                         if ("light" === o.default.theme.paletteName || !w) return;
                         const e = setTimeout(() => {
                             I(!0);
-                        }, 1e4);
+                        }, 5e3);
                         return () => clearTimeout(e);
                     }, [w]);
                     const F = n.useMemo(() => (a ? n.createElement(m.Z, null) : k ? n.createElement(g.Z, { access: e, conversationKey: t }) : n.createElement(u.Z, { access: e, conversationKey: t })), [a, k, e, t]);
@@ -304,4 +304,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-29bebf45.a4dce55a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-29bebf45.22d69bba.js.map

@@ -23,10 +23,10 @@
         (a.O = (r, s, t, o) => {
             if (!s) {
                 var i = 1 / 0;
-                for (d = 0; d < e.length; d++) {
-                    for (var [s, t, o] = e[d], n = !0, l = 0; l < s.length; l++) (!1 & o || i >= o) && Object.keys(a.O).every((e) => a.O[e](s[l])) ? s.splice(l--, 1) : ((n = !1), o < i && (i = o));
+                for (b = 0; b < e.length; b++) {
+                    for (var [s, t, o] = e[b], n = !0, l = 0; l < s.length; l++) (!1 & o || i >= o) && Object.keys(a.O).every((e) => a.O[e](s[l])) ? s.splice(l--, 1) : ((n = !1), o < i && (i = o));
                     if (n) {
-                        e.splice(d--, 1);
+                        e.splice(b--, 1);
                         var p = t();
                         void 0 !== p && (r = p);
                     }
@@ -34,15 +34,15 @@
                 return r;
             }
             o = o || 0;
-            for (var d = e.length; d > 0 && e[d - 1][2] > o; d--) e[d] = e[d - 1];
-            e[d] = [s, t, o];
+            for (var b = e.length; b > 0 && e[b - 1][2] > o; b--) e[b] = e[b - 1];
+            e[b] = [s, t, o];
         }),
         (a.d = (e, r) => {
             for (var s in r) a.o(r, s) && !a.o(e, s) && Object.defineProperty(e, s, { enumerable: !0, get: r[s] });
         }),
         (a.f = {}),
         (a.e = (e) => Promise.all(Object.keys(a.f).reduce((r, s) => (a.f[s](e, r), r), []))),
-        (a.u = (e) => e + "." + { "shared~~-5a94f17d": "147e5ba", "shared~~-ab3eb430": "cfd6d73", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde" }[e] + "a.js"),
+        (a.u = (e) => e + "." + { "shared~~-5a94f17d": "147e5ba", "shared~~-ab3eb430": "d55091b", "node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-opfs-async-proxy_js": "ee5cbde" }[e] + "a.js"),
         (a.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r)),
         (a.p = "https://abs.twimg.com/responsive-web/client-web/"),
         (() => {
@@ -64,4 +64,4 @@
         (a.x = () => Promise.all([a.e("shared~~-5a94f17d"), a.e("shared~~-ab3eb430")]).then(r));
     a.x();
 })();
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs.ffa5d54a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_sqlite_org_sqlite-wasm_sqlite-wasm_jswasm_sqlite3-worker1-bundler-friendly_mjs.1faaf42a.js.map

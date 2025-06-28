@@ -996,8 +996,8 @@
                         o.createElement(r.Z, { style: l.container }, o.createElement("div", { ref: t, style: l.outerCanvasContainer }, o.createElement("canvas", { ref: e, style: l.canvas })))
                     );
                 },
-                l = i.default.create((e) => ({ container: { position: "fixed", top: 0, start: 0, width: "100%", height: "100%", zIndex: -1, animationDuration: "5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 0.5 } }], animationTimingFunction: "ease", animationFillMode: "both", pointerEvents: "none", userSelect: "none", maxHeight: "100vh" }, outerCanvasContainer: { width: "100%", height: "100%" }, canvas: { width: "100%", height: "100%" } }));
+                l = i.default.create((e) => ({ container: { position: "fixed", top: 0, start: 0, width: "100%", height: "100%", zIndex: -1, animationDuration: "5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both", pointerEvents: "none", userSelect: "none", maxHeight: "100vh" }, outerCanvasContainer: { width: "100%", height: "100%" }, canvas: { width: "100%", height: "100%" } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.3830dbea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.d482232a.js.map

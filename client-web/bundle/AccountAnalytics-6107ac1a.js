@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.AccountAnalytics-6107ac1a"],
+    ["bundle.AccountAnalytics-6107ac1a", "icons/IconChevronDown-js"],
     {
         98538: (e, t, r) => {
             "use strict";
@@ -9,8 +9,8 @@
                 l = r(731708),
                 s = r(891198),
                 a = r(280278),
-                c = r(392237);
-            const i = "subtext1",
+                i = r(392237);
+            const c = "subtext1",
                 u = n.createContext({ onMedia: !1 });
             class d extends n.Component {
                 constructor(...e) {
@@ -34,9 +34,9 @@
                         .filter(Boolean)
                         .map((e, t, r) => n.createElement(o.Z, { key: t, style: t < r.length - 1 && h.groupItemNonLast }, e)),
                 )),
-                (d.Label = ({ children: e, style: t }) => n.createElement(u.Consumer, null, ({ onMedia: r }) => n.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: i, style: t }))),
-                (d.Value = ({ animated: e, children: t, count: r, style: o, weight: s = "bold" }) => n.createElement(u.Consumer, null, ({ onMedia: c }) => (e ? n.createElement(a.ZP, { children: t, count: r, size: i, style: o, weight: s }) : n.createElement(l.ZP, { children: t, color: c ? "white" : "text", size: i, style: o, weight: s }))));
-            const h = c.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
+                (d.Label = ({ children: e, style: t }) => n.createElement(u.Consumer, null, ({ onMedia: r }) => n.createElement(l.ZP, { children: e, color: r ? "white" : "gray700", size: c, style: t }))),
+                (d.Value = ({ animated: e, children: t, count: r, style: o, weight: s = "bold" }) => n.createElement(u.Consumer, null, ({ onMedia: i }) => (e ? n.createElement(a.ZP, { children: t, count: r, size: c, style: o, weight: s }) : n.createElement(l.ZP, { children: t, color: i ? "white" : "text", size: c, style: o, weight: s }))));
+            const h = i.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
                 f = d;
         },
         819483: (e, t, r) => {
@@ -47,14 +47,14 @@
                 l = r(123588),
                 s = r(212145),
                 a = r(382880),
-                c = r(516951),
-                i = r(731708),
+                i = r(516951),
+                c = r(731708),
                 u = r(392237);
             const d = (e) => {
                     const { columns: t, onNearEnd: r, onRowClick: u, rows: d, setSortOptions: f, sortOptions: g } = e,
-                        m = n.useRef(null),
-                        v = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
-                        b = n.useMemo(() => (0, a.Z)(r || c.Z), [r]);
+                        v = n.useRef(null),
+                        m = n.useMemo(() => t.reduce((e, t) => e + t.width, 0), [t]),
+                        b = n.useMemo(() => (0, a.Z)(r || i.Z), [r]);
                     n.useEffect(() => {
                         if (d.length) {
                             const e = new IntersectionObserver(
@@ -63,7 +63,7 @@
                                     },
                                     { threshold: 1 },
                                 ),
-                                { current: t } = m || {};
+                                { current: t } = v || {};
                             return (
                                 t && e.observe(t),
                                 () => {
@@ -71,7 +71,7 @@
                                 }
                             );
                         }
-                    }, [m, b, d.length]);
+                    }, [v, b, d.length]);
                     return n.createElement(
                         o.Z,
                         { style: h.tableContainer },
@@ -94,9 +94,9 @@
                                                         if (!t || !f) return;
                                                         f({ sortField: e, sortOrder: e === g?.sortField ? ("ASCENDING" === g?.sortOrder ? "DESCENDING" : "ASCENDING") : "DESCENDING" });
                                                     })(e.field, e.sortable),
-                                                style: { width: `${Math.floor((100 * e.width) / v)}%`, ...h.tableHeading },
+                                                style: { width: `${Math.floor((100 * e.width) / m)}%`, ...h.tableHeading },
                                             },
-                                            n.createElement(i.ZP, { weight: "bold" }, e.label),
+                                            n.createElement(c.ZP, { weight: "bold" }, e.label),
                                             e.field === g?.sortField && ("ASCENDING" === g?.sortOrder ? n.createElement(l.default, null) : n.createElement(s.default, null)),
                                         ),
                                     ),
@@ -108,8 +108,8 @@
                                 d.map((e, r) =>
                                     n.createElement(
                                         "tr",
-                                        { key: r, onClick: () => u(e), ref: r === d.length - 5 ? m : null, style: { ...h.row, ...(u && { cursor: "pointer" }) } },
-                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(i.ZP, null, e[t.field]))),
+                                        { key: r, onClick: () => u(e), ref: r === d.length - 5 ? v : null, style: { ...h.row, ...(u && { cursor: "pointer" }) } },
+                                        t.map((t, o) => n.createElement("td", { key: `${r}-${o}`, style: h.cell }, n.createElement(c.ZP, null, e[t.field]))),
                                     ),
                                 ),
                             ),
@@ -123,9 +123,23 @@
             r.d(t, { Z: () => n });
             const n = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        487552: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => i });
+            var n = r(202784),
+                o = r(890601),
+                l = r(783427),
+                s = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const i = a;
+        },
         155353: (e, t, r) => {
             "use strict";
-            r.r(t), r.d(t, { default: () => c });
+            r.r(t), r.d(t, { default: () => i });
             var n = r(202784),
                 o = r(890601),
                 l = r(783427),
@@ -135,7 +149,7 @@
                 return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
-            const c = a;
+            const i = a;
         },
         666536: (e, t, r) => {
             "use strict";
@@ -147,24 +161,24 @@
         936386: (e) => {
             function t(e, t, r) {
                 var n, o, l, s, a;
-                function c() {
-                    var i = Date.now() - s;
-                    i < t && i >= 0 ? (n = setTimeout(c, t - i)) : ((n = null), r || ((a = e.apply(l, o)), (l = o = null)));
+                function i() {
+                    var c = Date.now() - s;
+                    c < t && c >= 0 ? (n = setTimeout(i, t - c)) : ((n = null), r || ((a = e.apply(l, o)), (l = o = null)));
                 }
                 null == t && (t = 100);
-                var i = function () {
+                var c = function () {
                     (l = this), (o = arguments), (s = Date.now());
-                    var i = r && !n;
-                    return n || (n = setTimeout(c, t)), i && ((a = e.apply(l, o)), (l = o = null)), a;
+                    var c = r && !n;
+                    return n || (n = setTimeout(i, t)), c && ((a = e.apply(l, o)), (l = o = null)), a;
                 };
                 return (
-                    (i.clear = function () {
+                    (c.clear = function () {
                         n && (clearTimeout(n), (n = null));
                     }),
-                    (i.flush = function () {
+                    (c.flush = function () {
                         n && ((a = e.apply(l, o)), (l = o = null), clearTimeout(n), (n = null));
                     }),
-                    i
+                    c
                 );
             }
             (t.debounce = t), (e.exports = t);
@@ -262,8 +276,8 @@
                     l = t?.weekStartsOn ?? t?.locale?.options?.weekStartsOn ?? r.weekStartsOn ?? r.locale?.options?.weekStartsOn ?? 0,
                     s = (0, n.Q)(e),
                     a = s.getDay(),
-                    c = 6 + (a < l ? -7 : 0) - (a - l);
-                return s.setDate(s.getDate() + c), s.setHours(23, 59, 59, 999), s;
+                    i = 6 + (a < l ? -7 : 0) - (a - l);
+                return s.setDate(s.getDate() + i), s.setHours(23, 59, 59, 999), s;
             }
         },
         889957: (e, t, r) => {
@@ -291,19 +305,19 @@
             function s(e, t, r) {
                 const s = (0, o.z)(e, r),
                     a = (0, o.z)(t, r),
-                    c = +s - (0, l.D)(s),
-                    i = +a - (0, l.D)(a);
-                return Math.round((c - i) / n.jE);
+                    i = +s - (0, l.D)(s),
+                    c = +a - (0, l.D)(a);
+                return Math.round((i - c) / n.jE);
             }
             var a = r(150729);
-            function c(e) {
+            function i(e) {
                 const t = (0, a.Q)(e),
                     r = t.getMonth();
                 return t.setFullYear(t.getFullYear(), r + 1, 0), t.setHours(0, 0, 0, 0), t;
             }
-            var i = r(200210);
+            var c = r(200210);
             function u(e, t) {
-                return s(c(e), (0, i.N)(e), t) + 1;
+                return s(i(e), (0, c.N)(e), t) + 1;
             }
         },
         251461: (e, t, r) => {
@@ -422,10 +436,10 @@
                 const r = (0, o.Q)(e),
                     s = r.getFullYear(),
                     a = r.getDate(),
-                    c = (0, n.L)(e, 0);
-                c.setFullYear(s, t, 15), c.setHours(0, 0, 0, 0);
-                const i = l(c);
-                return r.setMonth(t, Math.min(a, i)), r;
+                    i = (0, n.L)(e, 0);
+                i.setFullYear(s, t, 15), i.setHours(0, 0, 0, 0);
+                const c = l(i);
+                return r.setMonth(t, Math.min(a, c)), r;
             }
         },
         876346: (e, t, r) => {
@@ -457,13 +471,13 @@
             }
             var s = r(595873);
             function a(e, t) {
-                const { years: r = 0, months: o = 0, weeks: a = 0, days: c = 0, hours: i = 0, minutes: u = 0, seconds: d = 0 } = t,
+                const { years: r = 0, months: o = 0, weeks: a = 0, days: i = 0, hours: c = 0, minutes: u = 0, seconds: d = 0 } = t,
                     h = l(e, o + 12 * r),
-                    f = (0, n.k)(h, c + 7 * a),
-                    g = 1e3 * (d + 60 * (u + 60 * i));
+                    f = (0, n.k)(h, i + 7 * a),
+                    g = 1e3 * (d + 60 * (u + 60 * c));
                 return (0, s.L)(e, f.getTime() - g);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.42b6b33a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-6107ac1a.63b0d3fa.js.map

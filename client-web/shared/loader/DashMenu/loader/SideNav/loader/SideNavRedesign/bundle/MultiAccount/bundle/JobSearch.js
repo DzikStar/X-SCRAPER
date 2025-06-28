@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch", "icons/IconExiting-js"],
+    ["shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch", "icons/IconChevronDown-js", "icons/IconExiting-js"],
     {
         110512: (e, l, a) => {
-            a.d(l, { ZP: () => z, V7: () => W });
+            a.d(l, { ZP: () => B, V7: () => W });
             a(136728);
             var n,
                 i,
@@ -253,8 +253,8 @@
                     params: { id: "vPrfbpPK7KoeIHlqqoHLbA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
                 };
             p.hash = "1e0a77d9768f003fab71a100e8291dbc";
-            const m = p;
-            var y = a(202784),
+            const y = p;
+            var m = a(202784),
                 k = a(325686),
                 _ = (a(585488), a(712696)),
                 v = a.n(_),
@@ -274,10 +274,10 @@
                 I = a(390387),
                 D = a(114084),
                 R = a(736063);
-            const H = (0, a(668214).Z)()
+            const Z = (0, a(668214).Z)()
                     .propsFromActions(() => ({ setDelegateUser: I.vU }))
                     .withAnalytics({ component: "delegated_account_list" }),
-                Z = m,
+                H = y,
                 q = L().daffabde,
                 P = L().eccbfa26,
                 x = L().a1b7a904,
@@ -286,9 +286,9 @@
                     const r = (0, C.I0)(),
                         s = (0, h.useHistory)(),
                         [o] = (0, E.m)(A.s7),
-                        [d, c] = y.useState(!0),
-                        u = v()(Z, {}),
-                        g = y.useMemo(() => {
+                        [d, c] = m.useState(!0),
+                        u = v()(H, {}),
+                        g = m.useMemo(() => {
                             const l = [];
                             return (
                                 u.viewer_v2?.list_delegation_groups?.forEach((a) => {
@@ -298,14 +298,14 @@
                                 l
                             );
                         }, [e, u.viewer_v2?.list_delegation_groups]),
-                        p = y.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
-                        m = y.useCallback(() => {
+                        p = m.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
+                        y = m.useCallback(() => {
                             c(!d);
                         }, [d]);
-                    y.useEffect(() => {
+                    m.useEffect(() => {
                         r(I.po(g.length));
                     }, [g, r]);
-                    const _ = y.useCallback(
+                    const _ = m.useCallback(
                         (e) => () => {
                             o ? s.push("/i/delegate/switch", { delegateUser: e }) : t && t(e), n();
                         },
@@ -313,25 +313,25 @@
                     );
                     return g.length < 1
                         ? null
-                        : y.createElement(
-                              y.Fragment,
+                        : m.createElement(
+                              m.Fragment,
                               null,
-                              a ? y.createElement(k.Z, { style: V.updatedDelegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, P)) : y.createElement(k.Z, { onClick: m, style: V.delegateAccountsLabel }, y.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : P), !p && (d ? y.createElement(T.default, { style: V.IconChevronUp }) : y.createElement(S.default, { style: V.IconChevronDown }))),
+                              a ? m.createElement(k.Z, { style: V.updatedDelegateAccountsLabel }, m.createElement(F.ZP, { color: "gray700", weight: "bold" }, P)) : m.createElement(k.Z, { onClick: y, style: V.delegateAccountsLabel }, m.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : P), !p && (d ? m.createElement(T.default, { style: V.IconChevronUp }) : m.createElement(S.default, { style: V.IconChevronDown }))),
                               a || d || p
                                   ? g.map((e) => {
                                         const { id_str: n } = e.legacy,
                                             t = n === l?.userId,
                                             r = i ? i({ withBadges: !1, isActiveUser: t }) : void 0,
                                             s = _({ userId: n });
-                                        return y.createElement(y.Fragment, { key: e.rest_id }, y.createElement(D.Z, { "aria-label": x, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: t ? U.Z : s, user: e, withInteractiveStyling: !t, withLink: !1 }), a && y.createElement(b.Z, { style: V.accountDivider }));
+                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(D.Z, { "aria-label": x, badgeContext: "account", decoration: r, displayMode: "UserCompact", onCellClick: t ? U.Z : s, user: e, withInteractiveStyling: !t, withLink: !1 }), a && m.createElement(b.Z, { style: V.accountDivider }));
                                     })
-                                  : y.createElement(k.Z, { style: V.facePileContainer }, y.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
+                                  : m.createElement(k.Z, { style: V.facePileContainer }, m.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.avatar?.image_url) || "") })),
                           );
                 };
             function W() {
-                const e = v()(Z, {}),
+                const e = v()(H, {}),
                     l = (0, C.v9)(I.x0);
-                return y.useMemo(() => {
+                return m.useMemo(() => {
                     const a = [];
                     return (
                         e.viewer_v2?.list_delegation_groups?.forEach((e) => {
@@ -343,7 +343,7 @@
                 }, [e.viewer_v2?.list_delegation_groups, l]);
             }
             const V = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                z = H((e) => y.createElement(R.H, { errorConfig: M }, y.createElement(O, e)));
+                B = Z((e) => m.createElement(R.H, { errorConfig: M }, m.createElement(O, e)));
         },
         621416: (e, l, a) => {
             a.d(l, { m: () => t });
@@ -399,6 +399,19 @@
             }
             const s = t.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
+        487552: (e, l, a) => {
+            a.r(l), a.d(l, { default: () => o });
+            var n = a(202784),
+                i = a(890601),
+                t = a(783427),
+                r = a(347101);
+            const s = (e = {}) => {
+                const { direction: l } = (0, t.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: l });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
         297896: (e, l, a) => {
             a.r(l), a.d(l, { default: () => o });
             var n = a(202784),
@@ -412,19 +425,6 @@
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
-        452693: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => o });
-            var n = a(202784),
-                i = a(890601),
-                t = a(783427),
-                r = a(347101);
-            const s = (e = {}) => {
-                const { direction: l } = (0, t.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: l });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.a28d213a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.3eac2a1a.js.map

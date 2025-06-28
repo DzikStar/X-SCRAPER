@@ -103,7 +103,7 @@
                         h = n?.includes(P.d.CreatePaymentMethod),
                         E = a.useCallback(
                             (e) => () => {
-                                l.push(o.VN, { redirectPath: o.iE.bankAccounts, paymentMethodId: e });
+                                m(null), l.push(o.VN, { redirectPath: o.iE.bankAccounts, paymentMethodId: e });
                             },
                             [l],
                         ),
@@ -142,12 +142,12 @@
                                 (e || []).map((e) => {
                                     const t = (0, M.Ou)(e),
                                         n = t?.id;
-                                    return t && n ? a.createElement(S.Z, { account: t, handleExpand: Z(t), key: n, onClick: e?.core?.details?.status === k.D.LoginRequired && h ? E(n) : void 0 }) : null;
+                                    return t && n ? a.createElement(S.Z, { account: t, handleExpand: Z(t), key: n }) : null;
                                 }),
                                 a.createElement(D.Z, { disabled: !h, label: "XPaymentsBankAccountPaymentMethod" === n ? X : U, link: "XPaymentsBankAccountPaymentMethod" === n ? V : $, name: "XPaymentsBankAccountPaymentMethod" === n ? X : U, variant: "row" }),
                             ),
                         N = a.createElement(b.Z, { style: W.accountSection }, H({ accounts: z, type: "XPaymentsBankAccountPaymentMethod", sectionTitle: "Bank Accounts" }), H({ accounts: O, type: "XPaymentsCreditCardPaymentMethod", sectionTitle: "Debit Cards" }));
-                    return a.createElement(I.Z, { title: "Linked accounts" }, a.createElement(b.Z, { style: B.ZP.settingsScreenContainer }, t === T.iF.LOADING ? a.createElement(_.Z, null) : a.createElement(b.Z, { style: B.ZP.settingsScreenContainer }, N), s ? a.createElement(A.Z, { account: s, onDone: x, onRemove: y && s.id ? C(s.id) : void 0 }) : null, i ? a.createElement(f.Z, { confirmButtonDisabled: p, confirmButtonLabel: "Remove", confirmButtonType: "destructiveFilled", headline: "Remove linked account?", onCancel: () => c(null), onConfirm: R, text: "Your account will be removed from X" }) : null));
+                    return a.createElement(I.Z, { title: "Linked accounts" }, a.createElement(b.Z, { style: B.ZP.settingsScreenContainer }, t === T.iF.LOADING ? a.createElement(_.Z, null) : a.createElement(b.Z, { style: B.ZP.settingsScreenContainer }, N), s ? a.createElement(A.Z, { account: s, onDone: x, onRemove: y && s.id ? C(s.id) : void 0, onVerify: s.id && s?.status === k.D.LoginRequired && h ? E(s.id) : void 0 }) : null, i ? a.createElement(f.Z, { confirmButtonDisabled: p, confirmButtonLabel: "Remove", confirmButtonType: "destructiveFilled", headline: "Remove linked account?", onCancel: () => c(null), onConfirm: R, text: "Your account will be removed from X" }) : null));
                 },
                 Y = { context: "PaymentsSettingsExternalAccounts" },
                 W = Z.default.create((e) => ({ container: { backgroundColor: e.colors.transparent }, accountSection: { gap: e.spaces.space24 } }));
@@ -615,4 +615,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-be74d874.97e0f26a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-be74d874.00d4481a.js.map

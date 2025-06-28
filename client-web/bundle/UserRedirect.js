@@ -3,7 +3,7 @@
     ["bundle.UserRedirect"],
     {
         290402: (e, t, r) => {
-            r.d(t, { Z: () => m });
+            r.d(t, { Z: () => f });
             var s = r(807896),
                 a = r(202784),
                 n = r(182056),
@@ -12,13 +12,13 @@
                 i = r(111677),
                 d = r.n(i),
                 l = r(968478);
-            const h = d().aa6e3300,
+            const p = d().aa6e3300,
                 u = ({ retryMessage: e, ...t }, r) => {
                     const c = n.Z.isOnline();
-                    return a.createElement(o.Z, (0, s.Z)({}, t, { icon: c ? void 0 : a.createElement(l.default, { style: p.icon }), retryMessage: c ? e : h }));
+                    return a.createElement(o.Z, (0, s.Z)({}, t, { icon: c ? void 0 : a.createElement(l.default, { style: h.icon }), retryMessage: c ? e : p }));
                 },
-                p = c.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
-                m = a.forwardRef(u);
+                h = c.default.create((e) => ({ icon: { color: e.colors.gray700, fontSize: e.spaces.space32 } })),
+                f = a.forwardRef(u);
         },
         652904: (e, t, r) => {
             r.d(t, { Z: () => l });
@@ -61,7 +61,7 @@
             const l = (0, a.ZP)(i(d));
         },
         604989: (e, t, r) => {
-            r.r(t), r.d(t, { UserRedirectScreen: () => b, default: () => N });
+            r.r(t), r.d(t, { UserRedirectScreen: () => N, default: () => P });
             var s = r(202784),
                 a = r(111677),
                 n = r.n(a),
@@ -70,27 +70,27 @@
                 i = r(325686),
                 d = r(108362),
                 l = r(392237),
-                h = r(652904),
+                p = r(652904),
                 u = r(725516),
-                p = r(449067);
-            const m = l.default.create((e) => ({ flexGrow: { flexGrow: 1 } })),
-                f = s.memo((0, u.Z)(({ children: e, containerStyle: t, title: r }) => s.createElement(h.Z, null, s.createElement(i.Z, { style: m.flexGrow }, s.createElement(p.Z.Configure, { backLocation: "/", title: r }), s.createElement(d.Z, { style: [m.flexGrow, t] }, e)))));
-            var v = r(615656),
+                h = r(449067);
+            const f = l.default.create((e) => ({ flexGrow: { flexGrow: 1 } })),
+                m = s.memo((0, u.Z)(({ children: e, containerStyle: t, title: r }) => s.createElement(p.Z, null, s.createElement(i.Z, { style: f.flexGrow }, s.createElement(h.Z.Configure, { backLocation: "/", title: r }), s.createElement(d.Z, { style: [f.flexGrow, t] }, e)))));
+            var _ = r(615656),
                 y = r(51525);
-            const Z = { [v.ZP.AddressBookLookupNotFound]: { customAction: y.vv }, [v.ZP.GenericUserNotFound]: { customAction: y.vv }, [v.ZP.OtherUserSuspended]: { customAction: y.vv }, showToast: !0 };
-            var _ = r(71620),
-                g = r(668214),
-                S = r(919022);
-            const I = (e, t) => t.match?.params.userId,
-                w = (e, t) => S.ZP.select(e, I(0, t)),
-                E = (e, t) => S.ZP.selectFetchStatus(e, I(0, t)),
-                R = (0, g.Z)()
-                    .propsFromState(() => ({ fetchStatus: E, user: w, userId: I }))
+            const Z = { [_.ZP.AddressBookLookupNotFound]: { customAction: y.vv }, [_.ZP.GenericUserNotFound]: { customAction: y.vv }, [_.ZP.OtherUserSuspended]: { customAction: y.vv }, showToast: !0 };
+            var S = r(71620),
+                I = r(668214),
+                g = r(919022);
+            const E = (e, t) => t.match?.params.userId,
+                R = (e, t) => g.ZP.select(e, E(0, t)),
+                U = (e, t) => g.ZP.selectFetchStatus(e, E(0, t)),
+                v = (0, I.Z)()
+                    .propsFromState(() => ({ fetchStatus: U, user: R, userId: E }))
                     .adjustStateProps(({ fetchStatus: e, user: t, userId: r }) => ({ fetchStatus: e, screenName: t?.screen_name, userId: r }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("USER_REDIRECT_SCREEN"), fetchUserIfNeeded: S.ZP.fetchOneIfNeeded }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, S.zr)("USER_REDIRECT_SCREEN"), fetchUserIfNeeded: g.ZP.fetchOneIfNeeded }))
                     .withAnalytics({ page: "user_redirect" }),
-                U = n().fa98627a;
-            class b extends s.Component {
+                w = n().fa98627a;
+            class N extends s.Component {
                 constructor(...e) {
                     super(...e),
                         (this.fetchAndRedirectIfNeeded = (e = !0) => {
@@ -117,7 +117,7 @@
                 }
                 render() {
                     const { fetchStatus: e } = this.props;
-                    return s.createElement(f, { title: U }, s.createElement(c.Z, { fetchStatus: e, onRequestRetry: this._handleRetry, render: o.Z }));
+                    return s.createElement(m, { title: w }, s.createElement(c.Z, { fetchStatus: e, onRequestRetry: this._handleRetry, render: o.Z }));
                 }
                 _redirectToProfileScreen(e, t) {
                     this.props.history.replace(`/${e}`, { userId: t });
@@ -126,10 +126,10 @@
                     this.props.history.replace(`/intent/user?screen_name=${e}`);
                 }
             }
-            const N = R(b);
+            const P = v(N);
         },
         879113: (e, t, r) => {
-            r.d(t, { Z: () => p });
+            r.d(t, { Z: () => h });
             var s = r(202784),
                 a = r(476984),
                 n = r.n(a),
@@ -138,43 +138,30 @@
                 i = r(682830);
             const d = "failed",
                 l = "loaded",
-                h = "loading",
+                p = "loading",
                 u = "none";
-            class p extends s.Component {
+            class h extends s.Component {
                 shouldComponentUpdate(e) {
                     const t = e.fetchStatus === l,
                         r = this.props.fetchStatus !== e.fetchStatus;
                     return !(!t && !r) || !n()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: a, icon: n, loadingMessage: o, onRequestRetry: l, render: p, renderFailure: m, retryMessage: f, retryable: v } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: r, fetchStatus: a, icon: n, loadingMessage: o, onRequestRetry: l, render: h, renderFailure: f, retryMessage: m, retryable: _ } = this.props;
                     switch (a) {
                         case d:
-                            return v ? s.createElement(c.Z, { icon: n, onRequestRetry: l, retryMessage: f }) : r ? s.createElement(i.m, { failureMessage: r }) : m();
-                        case h:
+                            return _ ? s.createElement(c.Z, { icon: n, onRequestRetry: l, retryMessage: m }) : r ? s.createElement(i.m, { failureMessage: r }) : f();
+                        case p:
                             return s.createElement(i.J, { "aria-label": e, color: t, loadingMessage: o });
                         case u:
                             return null;
                         default:
-                            return p();
+                            return h();
                     }
                 }
             }
-            p.defaultProps = { renderFailure: o.Z, retryable: !0 };
-        },
-        748138: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => i });
-            var s = r(202784),
-                a = r(890601),
-                n = r(783427),
-                o = r(347101);
-            const c = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const i = c;
+            h.defaultProps = { renderFailure: o.Z, retryable: !0 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserRedirect.7a94212a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserRedirect.6c56849a.js.map

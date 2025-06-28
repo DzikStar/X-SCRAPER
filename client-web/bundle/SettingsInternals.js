@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.SettingsInternals"],
+    ["bundle.SettingsInternals", "icons/IconChevronDown-js"],
     {
         290402: (e, t, n) => {
             n.d(t, { Z: () => m });
@@ -9,10 +9,10 @@
                 o = n(182056),
                 s = n(879113),
                 i = n(392237),
-                c = n(111677),
-                l = n.n(c),
+                l = n(111677),
+                c = n.n(l),
                 d = n(968478);
-            const u = l().aa6e3300,
+            const u = c().aa6e3300,
                 h = ({ retryMessage: e, ...t }, n) => {
                     const i = o.Z.isOnline();
                     return a.createElement(s.Z, (0, r.Z)({}, t, { icon: i ? void 0 : a.createElement(d.default, { style: p.icon }), retryMessage: i ? e : u }));
@@ -44,8 +44,8 @@
                 o = n(499627),
                 s = n(917799),
                 i = n(312771),
-                c = n(390387);
-            const l = "availableLanguages",
+                l = n(390387);
+            const c = "availableLanguages",
                 d = Object.freeze({ REQUEST: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_REQUEST", SUCCESS: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_SUCCESS", FAILURE: "rweb/availableLanguages/FETCH_AVAILABLE_LANGUAGES_FAILURE" }),
                 u = { fetchStatus: i.ZP.NONE, languages: [] };
             function h(e = u, t) {
@@ -66,28 +66,28 @@
                         return e;
                 }
             }
-            o.Z.register({ [l]: h });
-            const p = (e) => e[l].languages,
+            o.Z.register({ [c]: h });
+            const p = (e) => e[c].languages,
                 m = (e, t) => {
                     const n = (0, a.o)(t).toLowerCase(),
-                        r = e[l].languages.find((e) => e.code === n);
+                        r = e[c].languages.find((e) => e.code === n);
                     return r?.name;
                 },
-                g = () => (e, t) => (t()[l].fetchStatus === i.ZP.LOADED ? Promise.resolve() : e(b())),
+                g = () => (e, t) => (t()[c].fetchStatus === i.ZP.LOADED ? Promise.resolve() : e(b())),
                 b =
                     () =>
                     (e, t, { api: n }) =>
-                        s._O(e, { request: n.withEndpoint(r.Z).fetchSupportedLanguages })({ actionTypes: d, context: "FETCH_AVAILABLE_LANGUAGES", meta: { lang: (0, c.VT)(t()) } });
+                        s._O(e, { request: n.withEndpoint(r.Z).fetchSupportedLanguages })({ actionTypes: d, context: "FETCH_AVAILABLE_LANGUAGES", meta: { lang: (0, l.VT)(t()) } });
         },
         576025: (e, t, n) => {
-            n.d(t, { Lf: () => l, Po: () => u, _t: () => d });
+            n.d(t, { Lf: () => c, Po: () => u, _t: () => d });
             n(571372);
             var r = n(499627),
                 a = n(312771);
             const o = "countryNames",
                 s = { fetchStatus: a.ZP.NONE, countries: {} },
                 i = { REQUEST: `${o}_REQUEST`, FAILURE: `${o}_FAILURE`, SUCCESS: `${o}_SUCCESS` },
-                c = (e = s, t) => {
+                l = (e = s, t) => {
                     if (!t) return e;
                     switch (t.type) {
                         case i.REQUEST:
@@ -100,8 +100,8 @@
                             return e;
                     }
                 };
-            r.Z.register({ [o]: c });
-            const l = (e) => e[o].countries,
+            r.Z.register({ [o]: l });
+            const c = (e) => e[o].countries,
                 d = (e, t) => {
                     const n = t && t.toUpperCase();
                     return e[o].countries[n];
@@ -229,9 +229,9 @@
                 o = n(688715),
                 s = n(731708),
                 i = n(466818),
-                c = n(392237),
-                l = n(111677),
-                d = n.n(l),
+                l = n(392237),
+                c = n(111677),
+                d = n.n(c),
                 u = n(652904),
                 h = n(804027),
                 p = n(264922),
@@ -249,11 +249,11 @@
                     return Array.isArray(t) ? (0, g.t)(t, n) : S;
                 },
                 Z = (e, t) => t.location?.query?.flow_status,
-                v = (0, b.Z)()
+                L = (0, b.Z)()
                     .propsFromState(() => ({ countryCode: C.eV, countryList: _, changeCountryFlowStatus: Z, lang: y.VT }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("SETTINGS_COUNTRY_SCREEN"), fetchCountryNamesIfNeeded: f.Po, updateSettings: C.VP, fetchSettings: C.wv }))
                     .withAnalytics({ page: "settings", section: "country" }),
-                L = "Settings_Country_Selector",
+                v = "Settings_Country_Selector",
                 w = d().c21037d0,
                 A = d().i2209530,
                 T = d().j924d222,
@@ -277,21 +277,21 @@
                 render() {
                     const { countryCode: e, countryList: t, location: n } = this.props,
                         o = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: I }, d().e9310157));
-                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: A, title: T }, r.createElement(a.Z, { style: F.countrySelector }, r.createElement(i.ZP, { helperText: o, label: w, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
+                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: A, title: T }, r.createElement(a.Z, { style: F.countrySelector }, r.createElement(i.ZP, { helperText: o, label: w, onChange: this._handleCountryChange, options: t, testID: v, value: e || "" }))));
                 }
             }
-            const F = c.default.create((e) => ({ countrySelector: { margin: e.spaces.space20 } })),
-                x = v(R);
+            const F = l.default.create((e) => ({ countrySelector: { margin: e.spaces.space20 } })),
+                x = L(R);
         },
         539863: (e, t, n) => {
-            n.r(t), n.d(t, { LanguageScreen: () => Z, default: () => L });
+            n.r(t), n.d(t, { LanguageScreen: () => Z, default: () => v });
             var r = n(202784),
                 a = n(325686),
                 o = n(466818),
                 s = n(392237),
                 i = n(111677),
-                c = n.n(i),
-                l = n(652904),
+                l = n.n(i),
+                c = n(652904),
                 d = n(264922),
                 u = n(689048),
                 h = n(71620),
@@ -299,7 +299,7 @@
                 m = n(661461),
                 g = n(390387),
                 b = n(38562);
-            const f = c().cef33711,
+            const f = l().cef33711,
                 E = (0, p.Z)()
                     .propsFromState(() => ({ languageCode: g.VT, languageList: m.Nr }))
                     .adjustStateProps(({ languageCode: e, languageList: t }) => ({
@@ -312,24 +312,24 @@
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("SETTINGS_LANGUAGE_SCREEN"), fetchAvailableLanguagesIfNeeded: m.yt, updateSettings: b.VP }))
                     .withAnalytics({ page: "settings", section: "language" }),
-                y = c().a4b69cbc,
-                C = c().i2209530,
-                S = c().f953f53a,
-                _ = c().bd5ac12e,
+                y = l().a4b69cbc,
+                C = l().i2209530,
+                S = l().f953f53a,
+                _ = l().bd5ac12e,
                 Z = (e) => {
-                    const { createLocalApiErrorHandler: t, fetchAvailableLanguagesIfNeeded: n, languageCode: s, languageList: i, location: c } = e,
+                    const { createLocalApiErrorHandler: t, fetchAvailableLanguagesIfNeeded: n, languageCode: s, languageList: i, location: l } = e,
                         [u, h] = r.useState(s);
                     r.useEffect(() => {
                         n().catch(t({ showToast: !0 }));
                     }, [t, n]);
                     const p = r.useCallback((e) => h(e), []);
                     return r.createElement(
-                        l.Z,
+                        c.Z,
                         null,
                         r.createElement(
                             d.Z,
                             {
-                                location: c,
+                                location: l,
                                 onSubmit: () => {
                                     const { analytics: t, createLocalApiErrorHandler: n, updateSettings: r } = e;
                                     t.scribe({ action: "edit" }),
@@ -343,12 +343,12 @@
                                 submitLabel: C,
                                 title: S,
                             },
-                            r.createElement(a.Z, { style: v.languageSelector }, r.createElement(o.ZP, { helperText: _, label: y, onChange: p, options: i, value: u })),
+                            r.createElement(a.Z, { style: L.languageSelector }, r.createElement(o.ZP, { helperText: _, label: y, onChange: p, options: i, value: u })),
                         ),
                     );
                 },
-                v = s.default.create((e) => ({ languageSelector: { margin: e.spaces.space20 } })),
-                L = E(Z);
+                L = s.default.create((e) => ({ languageSelector: { margin: e.spaces.space20 } })),
+                v = E(Z);
         },
         879113: (e, t, n) => {
             n.d(t, { Z: () => p });
@@ -357,8 +357,8 @@
                 o = n.n(a),
                 s = n(143778),
                 i = n(750410),
-                c = n(682830);
-            const l = "failed",
+                l = n(682830);
+            const c = "failed",
                 d = "loaded",
                 u = "loading",
                 h = "none";
@@ -371,10 +371,10 @@
                 render() {
                     const { "aria-label": e, color: t, failureMessage: n, fetchStatus: a, icon: o, loadingMessage: s, onRequestRetry: d, render: p, renderFailure: m, retryMessage: g, retryable: b } = this.props;
                     switch (a) {
-                        case l:
-                            return b ? r.createElement(i.Z, { icon: o, onRequestRetry: d, retryMessage: g }) : n ? r.createElement(c.m, { failureMessage: n }) : m();
+                        case c:
+                            return b ? r.createElement(i.Z, { icon: o, onRequestRetry: d, retryMessage: g }) : n ? r.createElement(l.m, { failureMessage: n }) : m();
                         case u:
-                            return r.createElement(c.J, { "aria-label": e, color: t, loadingMessage: s });
+                            return r.createElement(l.J, { "aria-label": e, color: t, loadingMessage: s });
                         case h:
                             return null;
                         default:
@@ -385,21 +385,21 @@
             p.defaultProps = { renderFailure: s.Z, retryable: !0 };
         },
         420412: (e, t, n) => {
-            n.d(t, { Z: () => c });
+            n.d(t, { Z: () => l });
             var r = n(202784),
                 a = n(325686),
                 o = n(235902),
                 s = n(885015),
                 i = n(392237);
-            function c({ borderColor: e = "borderColor", isSlim: t = !1, label: n }) {
-                const { isWebRedesign: c } = o.ZP.useProps(),
-                    d = "borderColor" === e || "nestedBorderColor" === e ? l[e] : { backgroundColor: i.default.theme.colors[e] ?? i.default.theme.colors.borderColor };
-                return n ? r.createElement(s.Z, { style: !t && l.root, withGutter: !0 }, r.createElement(a.Z, { style: l.gapColumn }, r.createElement(a.Z, { style: [l.gap, d] })), r.createElement(a.Z, { style: l.gapText }, n), r.createElement(a.Z, { style: l.gapColumn }, r.createElement(a.Z, { style: [l.gap, d] }))) : r.createElement(a.Z, { style: [!t && l.root, c() && l.rootRedesign, l.gap, d] });
+            function l({ borderColor: e = "borderColor", isSlim: t = !1, label: n }) {
+                const { isWebRedesign: l } = o.ZP.useProps(),
+                    d = "borderColor" === e || "nestedBorderColor" === e ? c[e] : { backgroundColor: i.default.theme.colors[e] ?? i.default.theme.colors.borderColor };
+                return n ? r.createElement(s.Z, { style: !t && c.root, withGutter: !0 }, r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] })), r.createElement(a.Z, { style: c.gapText }, n), r.createElement(a.Z, { style: c.gapColumn }, r.createElement(a.Z, { style: [c.gap, d] }))) : r.createElement(a.Z, { style: [!t && c.root, l() && c.rootRedesign, c.gap, d] });
             }
-            const l = i.default.create((e) => ({ borderColor: { backgroundColor: i.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: i.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const c = i.default.create((e) => ({ borderColor: { backgroundColor: i.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: i.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
         },
         885015: (e, t, n) => {
-            n.d(t, { Z: () => l });
+            n.d(t, { Z: () => c });
             var r = n(807896),
                 a = n(202784),
                 o = n(325686),
@@ -407,13 +407,13 @@
             class i extends a.Component {
                 render() {
                     const { children: e, style: t, withGutter: n, ...s } = this.props,
-                        i = a.Children.map(e, (e) => e && a.cloneElement(e, { style: [e.props.style, c.column, n && c.withGutterColumn] }));
-                    return a.createElement(o.Z, (0, r.Z)({ style: [t, c.root, n && c.withGutter] }, s), i);
+                        i = a.Children.map(e, (e) => e && a.cloneElement(e, { style: [e.props.style, l.column, n && l.withGutterColumn] }));
+                    return a.createElement(o.Z, (0, r.Z)({ style: [t, l.root, n && l.withGutter] }, s), i);
                 }
             }
             i.defaultProps = { withGutter: !1 };
-            const c = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
-                l = i;
+            const l = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
+                c = i;
         },
         466818: (e, t, n) => {
             n.d(t, { ZP: () => f });
@@ -422,12 +422,12 @@
                 o = n(487552),
                 s = n(302752),
                 i = n(183806),
-                c = n(731708),
-                l = n(950822),
+                l = n(731708),
+                c = n(950822),
                 d = n(224162),
                 u = n(392237);
-            const h = r.forwardRef((e, t) => (0, l.Z)("select", { ...e, ref: t })),
-                p = (e) => (0, l.Z)("option", e);
+            const h = r.forwardRef((e, t) => (0, c.Z)("select", { ...e, ref: t })),
+                p = (e) => (0, c.Z)("option", e);
             let m = 1;
             class g extends r.PureComponent {
                 constructor(e) {
@@ -457,32 +457,32 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: l, helperText: m, options: g, style: f, testID: E, value: y, withEmptyOption: C } = this.props,
+                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: m, options: g, style: f, testID: E, value: y, withEmptyOption: C } = this.props,
                         { isFocused: S } = this.state,
-                        _ = c.ZP.getLanguage(),
-                        Z = void 0 === l ? !!n : l,
-                        v = new Set();
-                    n && v.add(this._errorID), e && v.add(e), m && v.add(this._helperID);
-                    const L = v.size ? [...v].join(" ") : void 0;
+                        _ = l.ZP.getLanguage(),
+                        Z = void 0 === c ? !!n : c,
+                        L = new Set();
+                    n && L.add(this._errorID), e && L.add(e), m && L.add(this._helperID);
+                    const v = L.size ? [...L].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
                         null,
                         r.createElement(d.ZP.Consumer, null, ({ direction: e }) => {
-                            const c = "ja" === _ ? u.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(_) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
+                            const l = "ja" === _ ? u.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(_) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 a.Z,
                                 { style: [i.Z.border, b.container, t && i.Z.disabled, S && i.Z.focusedBorderValid, Z && i.Z.invalidBorderColor, S && Z && i.Z.focusedBorderInvalid, f] },
                                 this._renderLabel(),
                                 r.createElement(
                                     h,
-                                    { "aria-describedby": L, "aria-invalid": Z, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: c }, t && i.Z.disabled], testID: E || "", value: y },
+                                    { "aria-describedby": v, "aria-invalid": Z, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: l }, t && i.Z.disabled], testID: E || "", value: y },
                                     C ? r.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
                                     g.map((e) => {
                                         const { disabled: t, label: n, value: a } = e;
                                         return r.createElement(p, { disabled: t, key: `${n}-${a}`, style: b.option, value: a }, n);
                                     }),
                                 ),
-                                r.createElement(o.default, { style: [b.dropdownCaret, S && i.Z.validColor, !(!l && !n) && i.Z.invalidColor] }),
+                                r.createElement(o.default, { style: [b.dropdownCaret, S && i.Z.validColor, !(!c && !n) && i.Z.invalidColor] }),
                             );
                         }),
                         m ? this._renderHelperText() : null,
@@ -492,13 +492,13 @@
                 _renderLabel() {
                     const { errorText: e, hasError: t, label: n } = this.props,
                         { isFocused: a } = this.state;
-                    return r.createElement(c.ZP, { color: t || e ? "red500" : a ? "primary" : "gray700", id: this._labelID, role: "label", style: b.label }, n);
+                    return r.createElement(l.ZP, { color: t || e ? "red500" : a ? "primary" : "gray700", id: this._labelID, role: "label", style: b.label }, n);
                 }
                 _renderHelperText() {
-                    return r.createElement(a.Z, { "aria-live": "polite" }, r.createElement(c.ZP, { color: "gray700", id: this._helperID, style: b.helperText }, this.props.helperText));
+                    return r.createElement(a.Z, { "aria-live": "polite" }, r.createElement(l.ZP, { color: "gray700", id: this._helperID, style: b.helperText }, this.props.helperText));
                 }
                 _renderErrorText() {
-                    return r.createElement(a.Z, { "aria-live": "polite" }, r.createElement(c.ZP, { color: "red500", id: this._errorID, style: b.helperText }, this.props.errorText));
+                    return r.createElement(a.Z, { "aria-live": "polite" }, r.createElement(l.ZP, { color: "red500", id: this._errorID, style: b.helperText }, this.props.errorText));
                 }
             }
             g.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
@@ -509,19 +509,19 @@
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
+        487552: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => l });
             var r = n(202784),
                 a = n(890601),
                 o = n(783427),
                 s = n(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
-            const c = i;
+            const l = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.6530af3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.dc695eea.js.map

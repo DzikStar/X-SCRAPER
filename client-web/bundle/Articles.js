@@ -137,8 +137,8 @@
                         O = (L && !v) || (D && e && !v),
                         z = L ? s.ey : D ? s.vX : void 0,
                         N = i.createElement(r.Z, { style: h.appBarContainer }, i.createElement(d.ZP, { backLocation: a, fixed: !1, hideBackButton: W, history: p, leftControl: m, middleControl: _, onBackClick: g, rightControl: b, secondaryBar: w, style: o, subtitle: A ? x : void 0, title: O ? void 0 : S, titleDomId: z, titleIconCell: Z, titleIconCellSize: T, withWideContainer: P })),
-                        M = L || (R && F) ? null : i.createElement(u.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: l, headerless: c, middleControl: _, onBackClick: g, rightControl: b, searchBoxOptions: f, subtitle: x, title: S, withSearchBox: I, withTweetButton: B });
-                    return i.createElement(i.Fragment, null, M, N);
+                        $ = L || (R && F) ? null : i.createElement(u.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: l, headerless: c, middleControl: _, onBackClick: g, rightControl: b, searchBoxOptions: f, subtitle: x, title: S, withSearchBox: I, withTweetButton: B });
+                    return i.createElement(i.Fragment, null, $, N);
                 }
             }
             (g.contextType = p.Z), (g.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
@@ -311,8 +311,8 @@
                             !e)
                         )
                             return null;
-                        const { contextImageUrls: z, landingUrl: N, text: M } = f || {},
-                            $ = I ? { url: I, height: 750, width: 1250 } : void 0,
+                        const { contextImageUrls: z, landingUrl: N, text: $ } = f || {},
+                            M = I ? { url: I, height: 750, width: 1250 } : void 0,
                             H = { pathname: Z, external: !0 },
                             q = (e) => {
                                 x.scribe({ element: v ? "read_article" : "article_header", action: "open_link", data: W });
@@ -331,7 +331,7 @@
                                       })()}`,
                                   }
                                 : void 0,
-                            G = i.createElement(i.Fragment, null, i.createElement(r.Z, { style: R.horizontalContainer }, i.createElement(r.Z, { style: R.textContainer }, i.createElement(l.Z, { style: R.middotGroup }, F && i.createElement(s.ZP, { color: "gray700", id: D.domain, size: "subtext2", weight: "bold" }, F), B && i.createElement(s.ZP, { color: "gray700", id: D.timestamp, size: "subtext2" }, i.createElement(c.Z, { timestamp: B }))), i.createElement(s.ZP, { color: "text", id: D.title, link: U, numberOfLines: 3, size: "headline2", style: R.text, weight: "bold", withInteractiveStyling: !1 }, P), T ? i.createElement(s.ZP, { id: D.description, numberOfLines: 2 }, T) : null, v ? i.createElement(r.Z, { style: R.buttonContainer }, i.createElement(d.ZP, { link: H, onClick: q, size: "xSmall", type: "primaryOutlined" }, L)) : null), $ ? i.createElement(r.Z, { style: R.imageContainer }, i.createElement(u.Z, { ratio: p.default.theme.aspectRatios.square }, i.createElement(m.Z, { "aria-label": "", aspectMode: _.Z.SQUARE, image: $ }))) : null), i.createElement(h.Z, { contextType: "Facepile", iconSize: "large", id: D.socialContext, text: M, textSize: "subtext2", userAvatarUrls: z, withLeftPadding: !1, withTextCentered: !0 }));
+                            G = i.createElement(i.Fragment, null, i.createElement(r.Z, { style: R.horizontalContainer }, i.createElement(r.Z, { style: R.textContainer }, i.createElement(l.Z, { style: R.middotGroup }, F && i.createElement(s.ZP, { color: "gray700", id: D.domain, size: "subtext2", weight: "bold" }, F), B && i.createElement(s.ZP, { color: "gray700", id: D.timestamp, size: "subtext2" }, i.createElement(c.Z, { timestamp: B }))), i.createElement(s.ZP, { color: "text", id: D.title, link: U, numberOfLines: 3, size: "headline2", style: R.text, weight: "bold", withInteractiveStyling: !1 }, P), T ? i.createElement(s.ZP, { id: D.description, numberOfLines: 2 }, T) : null, v ? i.createElement(r.Z, { style: R.buttonContainer }, i.createElement(d.ZP, { link: H, onClick: q, size: "xSmall", type: "primaryOutlined" }, L)) : null), M ? i.createElement(r.Z, { style: R.imageContainer }, i.createElement(u.Z, { ratio: p.default.theme.aspectRatios.square }, i.createElement(m.Z, { "aria-label": "", aspectMode: _.Z.SQUARE, image: M }))) : null), i.createElement(h.Z, { contextType: "Facepile", iconSize: "large", id: D.socialContext, text: $, textSize: "subtext2", userAvatarUrls: z, withLeftPadding: !1, withTextCentered: !0 }));
                         return v ? i.createElement(k.Z, { exact: !1, path: U?.pathname || "" }, (e) => i.createElement(g.Z, { "aria-labelledby": A.join(" "), "aria-selected": e, link: U, onClick: K, role: "article", style: R.container }, G)) : i.createElement(b.Z, { link: H, onClick: q, style: [R.container, R.bottomBorder] }, G);
                     }),
                 );
@@ -385,8 +385,8 @@
                 O = I(i.memo(A));
             var z = n(2430),
                 N = n(506063);
-            const M = (e, t) => (0, f.t5)(e, f.q4),
-                $ = (e, t) => {
+            const $ = (e, t) => (0, f.t5)(e, f.q4),
+                M = (e, t) => {
                     const {
                         location: n,
                         match: { params: i },
@@ -400,7 +400,7 @@
                     return Number(i) || 24;
                 },
                 q = (0, T.Z)()
-                    .propsFromState(() => ({ seedType: $, showFriendsOfFriendsNUX: M, timeWindowQuery: H }))
+                    .propsFromState(() => ({ seedType: M, showFriendsOfFriendsNUX: $, timeWindowQuery: H }))
                     .propsFromActions(() => ({ addFlag: f.pj }))
                     .withAnalytics({ page: "top_articles", section: "top_articles" }),
                 K = s().b7fa0cfe,
@@ -455,8 +455,8 @@
                             { text: G({ count: 8 }), onClick: W(8) },
                             { text: G({ count: 24 }), onClick: W(24) },
                         ],
-                        M = i.createElement(o.Z, { Icon: c.default, label: Q, renderActionMenu: (e) => i.createElement(r.Z, { items: z, onCloseRequested: e, shouldCloseOnClick: !0 }) }),
-                        $ = (e) => e === E,
+                        $ = i.createElement(o.Z, { Icon: c.default, label: Q, renderActionMenu: (e) => i.createElement(r.Z, { items: z, onCloseRequested: e, shouldCloseOnClick: !0 }) }),
+                        M = (e) => e === E,
                         H = (e) => `/i/articles/${e}${P(x)}`,
                         q = () => {
                             e(f.q4), B(!1);
@@ -468,8 +468,8 @@
                         U = (e) => i.createElement(a.Z, { actionPrimary: { text: J, onClick: V }, actionSecondary: { text: ee, onClick: q }, headline: Y, icon: d.default, iconColor: "primary", onDismiss: q, shouldDisplay: I, text: X, withMask: !0 }, ie[e]),
                         oe = ne.map((e) => ({
                             key: e,
-                            label: e === N.v.FRIENDS_OF_FRIENDS && I && !$(e) ? U(e) : ie[e],
-                            isActive: () => $(e),
+                            label: e === N.v.FRIENDS_OF_FRIENDS && I && !M(e) ? U(e) : ie[e],
+                            isActive: () => M(e),
                             to: { pathname: H(e) },
                             onClick: () => {
                                 t.scribe({ action: "click", element: "tab", section: `top_articles${R}` });
@@ -480,7 +480,7 @@
                             return t > -1 ? t : 0;
                         })(E),
                         le = i.useMemo(() => ((e, t = 864e5) => (0, k.Z)({ timelineId: `articlesTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(w.ZP).fetchArticleTimeline, getEndpointParams: ({ count: n, cursor: i }) => ({ count: n, cursor: "string" == typeof i ? i : void 0, articleListSeedType: e, timeWindowMillis: t }) }, context: "FETCH_TOP_ARTICLES_TIMELINE", perfKey: "articlesTimeline", formatResponse: C.Z }))(E, te(x || 24)), [E, x]);
-                    return i.createElement(i.Fragment, null, i.createElement(g.Z, { title: K }), i.createElement(p.Z, { rightControl: T ? M : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: j({ count: x || 24 }), title: i.createElement(_.Z, { text: K }) }, F ? i.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, i.createElement(O, { module: le, onEntriesChanged: A })));
+                    return i.createElement(i.Fragment, null, i.createElement(g.Z, { title: K }), i.createElement(p.Z, { rightControl: T ? $ : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: j({ count: x || 24 }), title: i.createElement(_.Z, { text: K }) }, F ? i.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, i.createElement(O, { module: le, onEntriesChanged: A })));
                 },
                 ae = q(oe);
         },
@@ -1197,7 +1197,7 @@
             }
             const a = new o();
         },
-        452693: (e, t, n) => {
+        98440: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var i = n(202784),
@@ -1206,7 +1206,7 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -1218,4 +1218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles.97e4ae7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles.ac2c7aea.js.map

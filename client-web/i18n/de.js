@@ -1317,10 +1317,10 @@
                 t("a02d1657", function (e) {
                     return "Code wird ausgeführt" + e.ttc_tool_usage_card;
                 }),
-                t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
-                t("c43ef93e", "Browsing web page"),
+                t("aa9d42c0", "Das Web wird durchsucht"),
+                t("dce1817a", "𝕏 wird durchsucht"),
+                t("f7151564", "Nutzer*innen auf 𝕏 werden durchsucht"),
+                t("c43ef93e", "Webseite wird durchsucht"),
                 t("jb097f6e", "Code wird ausgeführt"),
                 t("ead81122", "Etwas ist schief gegangen. Bitte stelle die Verbindung durch eine Aktualisierung wieder her oder versuche es erneut."),
                 t("f808a13a", "Das Zugriffslimit ist erreicht. Bitte versuche es in ein paar Minuten erneut."),
@@ -1368,11 +1368,11 @@
                 t("e0bffbf8", "Über die automatische Übersetzung"),
                 t("e839db3a", "Verwerfen"),
                 t("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return e.language + " automatisch übersetzen";
                 }),
-                t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("f9317b98", "language settings"),
-                t("hba0547a", "Unable to update settings. Please try again later."),
+                t("c60b9e5c", "Änderungen treten für neu geladene Inhalte in Kraft."),
+                t("f9317b98", "Spracheinstellungen"),
+                t("hba0547a", "Einstellungen konnten nicht aktualisiert werden. Bitte versuche es später erneut."),
                 t("d4c339b9", function (e) {
                     return "Post from " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -7400,10 +7400,10 @@
                 t("d94f12b6", "Probiere, nach Mitteilungen, Datenschutz usw. zu suchen."),
                 t("ba8f6f82", "Einstellungen suchen"),
                 t("ibf92e4a", "Zahlung erfolgreich"),
-                t("bdf0fb06", "Your subscription has been activated."),
+                t("bdf0fb06", "Dein Abonnement wurde aktiviert."),
                 t("ddfd6718", "Zahlung fehlgeschlagen"),
                 t("d42fa852", "Bei der Verarbeitung deiner Zahlung ist ein Problem aufgetreten. Bitte versuche es erneut."),
-                t("g055a9ce", "Open 𝕏 App"),
+                t("g055a9ce", "𝕏 App öffnen"),
                 t("g931a6e5", function (e) {
                     return "Du folgst " + e.topic;
                 }),
@@ -10168,7 +10168,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok übersetzt automatisch basierened auf deiner X Nutzung und deinen ", ". Du kannst die Einstellungen für die automatisch Übersetzung auch unten ändern."];
                             },
                         },
                         {
@@ -13381,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.5ad4f84a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.023e33ba.js.map

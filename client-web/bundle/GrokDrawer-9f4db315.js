@@ -67,8 +67,8 @@
                 f = s.n(T),
                 y = s(716442),
                 I = s.n(y),
-                C = s(985289),
-                k = s.n(C),
+                k = s(985289),
+                C = s.n(k),
                 v = s(524816),
                 R = s.n(v),
                 E = s(917665),
@@ -80,7 +80,7 @@
                     clearConversations: (t, s) => e.graphQL(i(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, o.ZP)("GraphQL clear grok conversations failed."), e)),
                     setPreferences: ({ grokMode: t, grokModelOptionId: s }) => e.graphQL(U(), { grokMode: t, grokModelOptionId: s }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(_(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(k(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(C(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(h(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(u(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(f(), { cursor: t }).then((e) => e),
@@ -103,7 +103,7 @@
             const a = function (e, t = {}) {
                 const s = { listUnicodeChar: t.listUnicodeChar ?? void 0, stripListLeaders: t.stripListLeaders ?? !0, gfm: t.gfm ?? !0, useImgAltText: t.useImgAltText ?? !0, abbr: t.abbr ?? !1, replaceLinksWithURL: t.replaceLinksWithURL ?? !1, htmlTagsToSkip: t.htmlTagsToSkip ?? [], throwError: t.throwError ?? !1 };
                 let a = e || "";
-                (a = a.replace(/<grok:render[^>]*>[\s\S]*?<\/grok:render>/gi, "")), (a = a.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, ""));
+                (a = a.replace(/<grok:render[^>]*>[\s\S]*?<\/grok:render>/gi, "")), (a = a.replace(/<grok:richcontent[^>]*>[\s\S]*?<\/grok:richcontent>/gi, "")), (a = a.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, ""));
                 try {
                     s.stripListLeaders && (a = s.listUnicodeChar ? a.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, `${s.listUnicodeChar} $1`) : a.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, "$1")),
                         s.gfm &&
@@ -445,4 +445,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.3089beea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.5f80239a.js.map

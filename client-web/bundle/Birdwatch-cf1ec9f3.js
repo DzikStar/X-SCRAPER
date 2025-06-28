@@ -8,8 +8,8 @@
                 l = n(457311),
                 o = n(111677),
                 r = n.n(o),
-                i = n(443781);
-            const s = { external: !0, pathname: "https://twitter.github.io/communitynotes/writing-notes" },
+                s = n(443781);
+            const i = { external: !0, pathname: "https://twitter.github.io/communitynotes/writing-notes" },
                 c = r().i859a9d4,
                 d = r().f893c3b8,
                 u = r().a701795c,
@@ -17,9 +17,9 @@
                 p = r().ha275800,
                 g = r().ce0a213a,
                 f = () => {
-                    const { featureSwitches: e } = a.useContext(i.rC),
+                    const { featureSwitches: e } = a.useContext(s.rC),
                         t = e.isTrue("responsive_web_birdwatch_note_writing_enabled");
-                    return a.createElement(l.Z, { buttonLink: t ? s : "/i/flow/join-birdwatch", buttonText: t ? c : d, header: t ? u : m, message: t ? g : p });
+                    return a.createElement(l.Z, { buttonLink: t ? i : "/i/flow/join-birdwatch", buttonText: t ? c : d, header: t ? u : m, message: t ? g : p });
                 };
         },
         721455: (e, t, n) => {
@@ -28,8 +28,8 @@
                 l = (n(136728), n(202784)),
                 o = n(325686),
                 r = n(731708),
-                i = n(420412),
-                s = n(154003),
+                s = n(420412),
+                i = n(154003),
                 c = n(909377),
                 d = n(721266),
                 u = n(688715),
@@ -50,8 +50,8 @@
                 S = n(323265),
                 P = n(959848),
                 I = n(553894),
-                N = n(81327),
-                T = n(980407),
+                T = n(81327),
+                N = n(980407),
                 v = n(252021),
                 B = n(443781),
                 H = n(652904),
@@ -82,10 +82,10 @@
                 le = (e, t) => G.BG(e),
                 oe = (e, t) => G.PL(e),
                 re = (e, t) => G.ap(e, X(0, t)),
-                ie = (0, q.Z)()
+                se = (0, q.Z)()
                     .propsFromState(() => ({ alias: X, notesCount: ne, deletedNotesCount: ee, deletedNotesSlice: (0, V.P1)(X, (e) => (e ? (0, Q.E)(e) : void 0)), enrollmentStatus: oe, notesSlice: (0, V.P1)(X, (e) => (e ? (0, J._)(e) : void 0)), userHasNotes: ae, showAliasSelfSelect: le, ratingsCount: te, userAlias: G.OV, isTopWriter: re, loggedInUser: K.ZP.selectLoggedInUser }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, W.zr)("BIRDWATCH_SCREEN"), fetchBirdwatchProfile: G.mv, fetchShowAliasSelfSelect: G.aZ, fetchAuthenticatedUserProfileIfNeeded: G.eY, admitUser: G.SZ }));
-            var se = n(457311),
+            var ie = n(457311),
                 ce = n(786998),
                 de = n(370006),
                 ue = n(138099);
@@ -93,17 +93,21 @@
                 pe = y().efb9a9e0,
                 ge = l.createElement(r.ZP, { link: "https://twitter.github.io/communitynotes/writing-notes/#deleting-notes", withInteractiveStyling: !0 }),
                 fe = l.createElement(y().I18NFormatMessage, { $i18n: "d458f69d" }, l.cloneElement(ge, null, y().a1529ce7)),
-                he = () => l.createElement(se.Z, { header: pe }),
+                he = () => l.createElement(ie.Z, { header: pe }),
                 Ee = E.default.create((e) => ({ footer: { paddingHorizontal: e.spaces.space28, paddingVertical: e.spaces.space16 } })),
                 be = (e) => {
                     const { deletedNotesSlice: t, onClose: n } = e,
-                        a = l.createElement(o.Z, null, l.createElement(ce.Z, { leftControl: l.createElement(de.Z, { backButtonType: "close", onClick: n }), title: me }), t ? l.createElement(R.Z, { footer: null, module: t, noItemsRenderer: he, renderer: (e) => l.createElement(o.Z, { key: e }, l.createElement(F.Z, { noteId: e, showRating: !1, showTweet: !0 }), l.createElement(i.Z, null)), withoutHeadroom: !0 }) : null, l.createElement(r.ZP, { color: "gray700", style: Ee.footer }, fe));
+                        a = l.createElement(o.Z, null, l.createElement(ce.Z, { leftControl: l.createElement(de.Z, { backButtonType: "close", onClick: n }), title: me }), t ? l.createElement(R.Z, { footer: null, module: t, noItemsRenderer: he, renderer: (e) => l.createElement(o.Z, { key: e }, l.createElement(F.Z, { noteId: e, showRating: !1, showTweet: !0 }), l.createElement(s.Z, null)), withoutHeadroom: !0 }) : null, l.createElement(r.ZP, { color: "gray700", style: Ee.footer }, fe));
                     return l.createElement(ue.Z, { allowBackNavigation: !0, children: a, onMaskClick: n, type: "full", withMask: !0 });
                 };
             var ye = n(283369);
             const we = ({ enrollmentStatus: e, isOwnProfile: t, ratingImpact: n }) => {
                     let a = null;
-                    return t ? ("EarnedIn" === e?.enrollment_state ? (a = l.createElement(ye.Uu, null)) : "NewUser" === e?.enrollment_state && ((a = l.createElement(ye.wy, null)), n < 0 ? (a = l.createElement(ye.UB, null)) : 0 === n && (a = l.createElement(ye.tF, null)))) : (a = l.createElement(ye.Bk, null)), a ? l.createElement(l.Fragment, null, a, l.createElement(g.Z, { spacing: "space2" })) : null;
+                    if (t) {
+                        if ("ApiTestUser" === e?.enrollment_state) return null;
+                        "EarnedIn" === e?.enrollment_state || "ApiEarnedIn" === e?.enrollment_state ? (a = l.createElement(ye.Uu, null)) : "NewUser" === e?.enrollment_state && ((a = l.createElement(ye.wy, null)), n < 0 ? (a = l.createElement(ye.UB, null)) : 0 === n && (a = l.createElement(ye.tF, null)));
+                    } else a = l.createElement(ye.Bk, null);
+                    return a ? l.createElement(l.Fragment, null, a, l.createElement(g.Z, { spacing: "space2" })) : null;
                 },
                 _e = y().ff692d64,
                 Ze = y().ab28945c,
@@ -113,8 +117,8 @@
                 Se = y().j5f112b4,
                 Pe = y().fa9a644a,
                 Ie = y().i4014342,
-                Ne = y().j9897a7c,
-                Te = y().ee7b8050,
+                Te = y().j9897a7c,
+                Ne = y().ee7b8050,
                 ve = y().fd02e290,
                 Be = y().b8cc2e9a,
                 He = y().f6c8613e,
@@ -130,7 +134,7 @@
                 je = y().gea6cc1a,
                 Ye = y().h837a96c,
                 $e = y().a4d4bcb9,
-                Ve = Object.freeze({ closed: { shouldShow: !1 }, openSuccessful: { shouldShow: !0, badgeType: N.n.Ratings }, openHelpful: { shouldShow: !0, badgeType: N.n.Notes } });
+                Ve = Object.freeze({ closed: { shouldShow: !1 }, openSuccessful: { shouldShow: !0, badgeType: T.n.Ratings }, openHelpful: { shouldShow: !0, badgeType: T.n.Notes } });
             function We(e) {
                 const { screenProps: t, ...n } = e,
                     a = t.userAlias === t.alias,
@@ -142,9 +146,9 @@
                 const { featureSwitches: t } = l.useContext(B.rC),
                     { admitUser: n, alias: E, createLocalApiErrorHandler: b, deletedNotesCount: V, deletedNotesSlice: W, enrollmentStatus: q, fetchAuthenticatedUserProfileIfNeeded: G, fetchBirdwatchProfile: Q, fetchShowAliasSelfSelect: J, history: K, isTopWriter: X, loggedInUser: ee, notesCount: te, notesSlice: ne, ratingsCount: ae, showAliasSelfSelect: le, userAlias: oe } = e,
                     re = (0, I.v)(ae),
-                    ie = (0, I.u)(te),
-                    se = { ratingImpact: re, ratingsHelpful: ae?.successful?.helpful_count, ratingsNotHelpful: ae?.successful?.not_helpful_count, contrastingNotHelpfulRatingsOnHelpfulNotes: ae?.unsuccessful?.helpful_count, contrastingHelpfulRatingsOnNotHelpfulNotes: ae?.unsuccessful?.not_helpful_count, pending: ae?.awaiting_more_ratings, ratingsAfterStatusReached: ae?.rated_after_decision, updatedTime: ae?.last_updated_at },
-                    ce = { writingImpact: ie, ratingsHelpful: te?.currently_rated_helpful, ratingsNotHelpful: te?.currently_rated_not_helpful, pending: te?.awaiting_more_ratings, updatedTime: te?.last_updated_at },
+                    se = (0, I.u)(te),
+                    ie = { ratingImpact: re, ratingsHelpful: ae?.successful?.helpful_count, ratingsNotHelpful: ae?.successful?.not_helpful_count, contrastingNotHelpfulRatingsOnHelpfulNotes: ae?.unsuccessful?.helpful_count, contrastingHelpfulRatingsOnNotHelpfulNotes: ae?.unsuccessful?.not_helpful_count, pending: ae?.awaiting_more_ratings, ratingsAfterStatusReached: ae?.rated_after_decision, updatedTime: ae?.last_updated_at },
+                    ce = { writingImpact: se, ratingsHelpful: te?.currently_rated_helpful, ratingsNotHelpful: te?.currently_rated_not_helpful, pending: te?.awaiting_more_ratings, updatedTime: te?.last_updated_at },
                     de = void 0 !== ae,
                     [ue, me] = l.useState(le),
                     [pe, ge] = l.useState(!1),
@@ -173,9 +177,9 @@
                     at = t.isTrue("responsive_web_birdwatch_self_remove_enabled"),
                     lt = V && V > 0 && W,
                     ot = l.useMemo(() => ({ page: "birdwatch", section: tt ? "user_notes_participant" : "user_notes" }), [tt]),
-                    rt = (e) => l.createElement(o.Z, { key: e }, l.createElement(F.Z, { noteId: e, showPivot: et, showRating: !1, showTweet: !0 }), l.createElement(i.Z, null)),
-                    it = "Removed" === q?.enrollment_state ? null : l.createElement(s.ZP, { "aria-label": Le, hoverLabel: { label: Le }, icon: l.createElement(w.default, null), link: "/i/communitynotes/notification_settings", pullRight: !0, type: "primaryText" }),
-                    st = et ? _e : Ze,
+                    rt = (e) => l.createElement(o.Z, { key: e }, l.createElement(F.Z, { noteId: e, showPivot: et, showRating: !1, showTweet: !0 }), l.createElement(s.Z, null)),
+                    st = "Removed" === q?.enrollment_state ? null : l.createElement(i.ZP, { "aria-label": Le, hoverLabel: { label: Le }, icon: l.createElement(w.default, null), link: "/i/communitynotes/notification_settings", pullRight: !0, type: "primaryText" }),
+                    it = et ? _e : Ze,
                     ct = () => {
                         const t = void 0 !== e.notesCount?.awaiting_more_ratings && void 0 !== e.notesCount?.currently_rated_helpful && void 0 !== e.notesCount?.currently_rated_not_helpful,
                             n = et && "NewUser" === q?.enrollment_state && t;
@@ -185,22 +189,22 @@
                             l.createElement(c.Z, { Icon: C.default, color: "neutral", size: "xxxLarge", style: Qe.genericBirdwatchProfileIcon }),
                             l.createElement(m.Z, { style: Qe.profileText, text: (0, A.Q)(E) }),
                             l.createElement(r.ZP, { color: "gray700", style: Qe.birdwatchAliasDisclaimerText }, xe),
-                            de && l.createElement(o.Z, { style: Qe.badgeContainer }, l.createElement(l.Fragment, null, l.createElement(P.Z, { badgeScore: re, badgeType: N.n.Ratings, interactive: !0, onClick: Je }), l.createElement(We, { badgeScore: ie, badgeType: N.n.Notes, interactive: !0, onClick: qe, screenProps: e }), X && nt && l.createElement(P.Z, { badgeType: N.n.TopContributor, interactive: !0, onClick: Ke }))),
+                            de && l.createElement(o.Z, { style: Qe.badgeContainer }, l.createElement(l.Fragment, null, l.createElement(P.Z, { badgeScore: re, badgeType: T.n.Ratings, interactive: !0, onClick: Je }), l.createElement(We, { badgeScore: se, badgeType: T.n.Notes, interactive: !0, onClick: qe, screenProps: e }), X && nt && l.createElement(P.Z, { badgeType: T.n.TopContributor, interactive: !0, onClick: Ke }))),
                             n && l.createElement(o.Z, { style: Qe.statusChangeContainer }, l.createElement(p.Z.Custom, { Icon: Z.default, action: { label: Me, link: "https://twitter.github.io/communitynotes/writing-ability/" }, backgroundColor: "blue0", headline: Oe, text: ze, withColoredIcon: !0 })),
                             (() => {
                                 const e = "AtRisk" === q?.enrollment_state && et,
                                     t = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(_.default, { style: Qe.icon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Se), l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, Pe))),
                                     n = l.createElement(o.Z, { style: Qe.feedbackContainer }, q?.top_not_helpful_tags && q.top_not_helpful_tags.length > 0 ? l.createElement(l.Fragment, null, l.createElement(r.ZP, { weight: "bold" }, Ie), l.createElement(r.ZP, { color: "gray700" }, l.createElement(U.Z, { tags: q.top_not_helpful_tags }))) : null);
-                                return e ? l.createElement(o.Z, null, l.createElement(i.Z, null), t, n, l.createElement(o.Z, { style: Qe.atRiskButtonContainer }, l.createElement(s.ZP, { link: De, type: "primaryOutlined" }, Ne))) : null;
+                                return e ? l.createElement(o.Z, null, l.createElement(s.Z, null), t, n, l.createElement(o.Z, { style: Qe.atRiskButtonContainer }, l.createElement(i.ZP, { link: De, type: "primaryOutlined" }, Te))) : null;
                             })(),
                             (() => {
                                 if ("EarnedOutAcknowledged" !== q?.enrollment_state || !et) return null;
-                                const e = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(Z.default, { style: Qe.innerIconColor }), size: "medium", style: Qe.thumbnailIcon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Te), l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, Be), l.createElement(d.Z, { size: "space12" }), l.createElement(r.ZP, { link: (0, u.ju)("https://communitynotes.x.com/guide/en/contributing/writing-ability"), size: "subtext1", style: Qe.text, weight: "medium", withUnderline: !0 }, ve))),
-                                    t = l.createElement(o.Z, { style: Qe.feedbackContainer }, q?.top_not_helpful_tags && q.top_not_helpful_tags.length > 0 ? l.createElement(l.Fragment, null, l.createElement(r.ZP, { weight: "bold" }, He), l.createElement(r.ZP, { color: "gray700" }, l.createElement(U.Z, { tags: q.top_not_helpful_tags }))) : null, l.createElement(r.ZP, { link: De, style: Qe.text, weight: "medium", withUnderline: !0 }, Ne)),
+                                const e = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(Z.default, { style: Qe.innerIconColor }), size: "medium", style: Qe.thumbnailIcon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Ne), l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, Be), l.createElement(d.Z, { size: "space12" }), l.createElement(r.ZP, { link: (0, u.ju)("https://communitynotes.x.com/guide/en/contributing/writing-ability"), size: "subtext1", style: Qe.text, weight: "medium", withUnderline: !0 }, ve))),
+                                    t = l.createElement(o.Z, { style: Qe.feedbackContainer }, q?.top_not_helpful_tags && q.top_not_helpful_tags.length > 0 ? l.createElement(l.Fragment, null, l.createElement(r.ZP, { weight: "bold" }, He), l.createElement(r.ZP, { color: "gray700" }, l.createElement(U.Z, { tags: q.top_not_helpful_tags }))) : null, l.createElement(r.ZP, { link: De, style: Qe.text, weight: "medium", withUnderline: !0 }, Te)),
                                     n = q?.survey_url ? l.createElement(r.ZP, { color: "gray700", size: "subtext3", withInteractiveStyling: !1 }, l.createElement(y().I18NFormatMessage, { $i18n: "f49cbf83" }, l.createElement(r.ZP, { color: "gray700", link: q?.survey_url, withUnderline: !0 }, y().c94ad3e8))) : null,
                                     a = q?.successful_rating_needed_to_earn_in && de ? l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, l.createElement(y().I18NFormatMessage, { $i18n: "a94c6db7", requiredRatingImpact: q?.successful_rating_needed_to_earn_in, currentRatingImpact: re })) : null,
-                                    s = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(k.default, { style: Qe.innerIconColor }), size: "medium", style: Qe.thumbnailIcon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Re), a, l.createElement(r.ZP, { link: "/i/birdwatch", style: [Qe.text, Qe.rateNotesThatNeedHelpText], weight: "medium", withUnderline: !0 }, Ae), n));
-                                return l.createElement(o.Z, null, l.createElement(i.Z, null), e, t, s);
+                                    i = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(k.default, { style: Qe.innerIconColor }), size: "medium", style: Qe.thumbnailIcon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Re), a, l.createElement(r.ZP, { link: "/i/birdwatch", style: [Qe.text, Qe.rateNotesThatNeedHelpText], weight: "medium", withUnderline: !0 }, Ae), n));
+                                return l.createElement(o.Z, null, l.createElement(s.Z, null), e, t, i);
                             })(),
                             (() => {
                                 if (!at || "Removed" !== q?.enrollment_state || !et) return null;
@@ -227,11 +231,11 @@
                         H.Z,
                         null,
                         (() => {
-                            const e = { title: st, history: K, rightControl: et && it };
-                            return S.ZP.isTwitterApp() ? l.createElement(T.Z, (0, a.Z)({ children: pt(), hideBackButton: !0 }, e)) : l.createElement(v.Z, (0, a.Z)({ TabBar: Y.Z, backLocation: "/i/communitynotes", primaryContent: pt(), sidebarContent: l.createElement(j.Z, null), withTweetButton: !1 }, e));
+                            const e = { title: it, history: K, rightControl: et && st };
+                            return S.ZP.isTwitterApp() ? l.createElement(N.Z, (0, a.Z)({ children: pt(), hideBackButton: !0 }, e)) : l.createElement(v.Z, (0, a.Z)({ TabBar: Y.Z, backLocation: "/i/communitynotes", primaryContent: pt(), sidebarContent: l.createElement(j.Z, null), withTweetButton: !1 }, e));
                         })(),
                         pe ? l.createElement(be, { deletedNotesSlice: W, onClose: () => ge(!1) }) : null,
-                        Ee.shouldShow ? l.createElement(M.x, { badgeType: Ee.badgeType, enrollmentState: q?.enrollment_state, isOwnProfile: et, onClose: () => ye(Ve.closed), ratingScores: se, successfulRatingsNeededToEarnIn: q?.successful_rating_needed_to_earn_in, writingScores: ce }) : null,
+                        Ee.shouldShow ? l.createElement(M.x, { badgeType: Ee.badgeType, enrollmentState: q?.enrollment_state, isOwnProfile: et, onClose: () => ye(Ve.closed), ratingScores: ie, successfulRatingsNeededToEarnIn: q?.successful_rating_needed_to_earn_in, writingScores: ce }) : null,
                         fe && l.createElement($.Y, { closeTopContributorModal: () => he(!1), isOwnProfile: et }),
                         ke
                             ? l.createElement(h.Z, {
@@ -282,7 +286,7 @@
                     thumbnailIcon: { backgroundColor: e.colors.gray700, marginEnd: e.spaces.space8 },
                     dividerContainer: { marginTop: e.spaces.space12 },
                 })),
-                Je = ie(qe);
+                Je = se(qe);
         },
         531187: (e, t, n) => {
             n.d(t, { VE: () => a });
@@ -299,8 +303,8 @@
                 l = n(325686),
                 o = n(731708),
                 r = n(96083),
-                i = n(844685),
-                s = n(154003),
+                s = n(844685),
+                i = n(154003),
                 c = n(420412),
                 d = n(247056),
                 u = n(392237),
@@ -324,8 +328,8 @@
                 S = p().jcdf97d4,
                 P = p().d4d7b67e,
                 I = p().ed5156fa,
-                N = p().d0ed3636,
-                T = p().abd845fe,
+                T = p().d0ed3636,
+                N = p().abd845fe,
                 v = p().d96cf7ce,
                 B = p().j6aa6172,
                 H = p().i4112750,
@@ -377,8 +381,8 @@
                         ? a.createElement(
                               l.Z,
                               null,
-                              a.createElement(i.Z, {
-                                  rightControl: a.createElement(s.ZP, {
+                              a.createElement(s.Z, {
+                                  rightControl: a.createElement(i.ZP, {
                                       icon: a.createElement(h.default, null),
                                       onPress: () => {
                                           window.location.href = "https://communitynotes.x.com/guide/en/beyond-notes/got-likes";
@@ -430,7 +434,7 @@
                                             })(),
                                             a.createElement(o.ZP, { color: "gray700" }, ee),
                                             a.createElement(
-                                                s.ZP,
+                                                i.ZP,
                                                 {
                                                     disabled: Z,
                                                     onClick: () => {
@@ -452,13 +456,13 @@
                                             a.createElement(
                                                 l.Z,
                                                 { style: G.ratingContainer },
-                                                a.createElement(l.Z, { style: G.ratingRow }, a.createElement(E.default, { style: G.ratingIcon }), a.createElement(o.ZP, null, N)),
+                                                a.createElement(l.Z, { style: G.ratingRow }, a.createElement(E.default, { style: G.ratingIcon }), a.createElement(o.ZP, null, T)),
                                                 a.createElement(d.Z, {
                                                     renderActionMenu: (e) =>
                                                         a.createElement(y.default, {
                                                             actionItems: [
                                                                 { confirmation: { label: v, headline: B, text: H, confirmButtonType: "destructiveFilled" }, isEmphasized: !0, text: v, Icon: g.default, onClick: ne },
-                                                                { text: T, Icon: f.default, onClick: te },
+                                                                { text: N, Icon: f.default, onClick: te },
                                                             ],
                                                             onClose: e,
                                                         }),
@@ -478,10 +482,10 @@
                 l = n(383675);
             const o = ({ timelinePrefix: e = "generic-timeline-", urtUrl: t }) => {
                 const { url: n, urtEndpointOptions: o } = t,
-                    { cacheId: r, requestParams: i, timeline: s } = o || {};
-                return s?.id ? (0, l.R)(s.id) : (0, l.Z)({ timelineId: r || `${e}${(0, a.Sz)(t)}`, endpointUrl: n, endpointParams: i || {} });
+                    { cacheId: r, requestParams: s, timeline: i } = o || {};
+                return i?.id ? (0, l.R)(i.id) : (0, l.Z)({ timelineId: r || `${e}${(0, a.Sz)(t)}`, endpointUrl: n, endpointParams: s || {} });
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.ad8cd30a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.f962c90a.js.map

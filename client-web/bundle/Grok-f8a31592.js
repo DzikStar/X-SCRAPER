@@ -509,7 +509,7 @@
                 x = s.default.theme.spacesPx.space12,
                 E = s.default.theme.spacesPx.space16,
                 v = s.default.create((e) => ({
-                    step: { display: "flex", flexDirection: "column", gap: e.spaces.space12 },
+                    step: { display: "flex", flexDirection: "column" },
                     subStepContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingHorizontal: S },
                     decisionSubStepContainer: { paddingHorizontal: e.spaces.space28 },
                     resultsSubStepContainer: { paddingHorizontal: e.spaces.space28 },
@@ -520,7 +520,7 @@
                     showDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(1)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(1.1)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(1)" } }] },
                     showActivityDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(0.8)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" } }] },
                     hideActivityDecisionIcon: { opacity: 0, transform: "translate(-50%, -50%) scale(0)", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" }, "100%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" } }] },
-                    resultsContainer: { marginTop: e.spaces.space12 },
+                    resultsContainer: { marginTop: e.spaces.space8 },
                     xPostsScrollViewContentContainer: { paddingHorizontal: S + E + e.spacesPx.space8 },
                     compactXPostsScrollViewContentContainer: { paddingHorizontal: x + E + e.spacesPx.space8 },
                     xPostsSeeMoreButton: { marginStart: S + E + e.spacesPx.space8 },
@@ -562,7 +562,7 @@
                             n.Fragment,
                             null,
                             C.flatMap((s, l) => [n.createElement(o.Z, { key: `${s.id}-header`, style: [Z.headerContainer, { zIndex: l + 1 }] }, n.createElement(i.ZP, { style: Z.header, weight: "bold" }, s.header)), n.createElement(T, { analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: E, isCompactLayout: w, isLoading: a, key: `${s.id}-step`, step: s }), n.createElement(r.Z, { key: `${s.id}-spacer`, size: "space20" })]),
-                            n.createElement(r.Z, { size: "space48" }),
+                            n.createElement(r.Z, { size: "space8" }),
                         ),
                     ),
                 );
@@ -1100,4 +1100,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.1331f3aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.3d35dcda.js.map

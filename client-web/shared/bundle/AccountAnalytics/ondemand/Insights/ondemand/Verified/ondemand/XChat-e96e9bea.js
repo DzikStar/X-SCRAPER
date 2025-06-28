@@ -594,7 +594,7 @@
         234622: (e, t, a) => {
             a.d(t, { i: () => s });
             var r = a(202784),
-                n = a(268786),
+                n = a(808744),
                 i = a(111677),
                 l = a.n(i),
                 o = a(725516);
@@ -942,4 +942,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-e96e9bea.f5c45cfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-e96e9bea.582dbd3a.js.map

@@ -298,7 +298,7 @@
             const n = function (e, t = {}) {
                 const o = { listUnicodeChar: t.listUnicodeChar ?? void 0, stripListLeaders: t.stripListLeaders ?? !0, gfm: t.gfm ?? !0, useImgAltText: t.useImgAltText ?? !0, abbr: t.abbr ?? !1, replaceLinksWithURL: t.replaceLinksWithURL ?? !1, htmlTagsToSkip: t.htmlTagsToSkip ?? [], throwError: t.throwError ?? !1 };
                 let n = e || "";
-                (n = n.replace(/<grok:render[^>]*>[\s\S]*?<\/grok:render>/gi, "")), (n = n.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, ""));
+                (n = n.replace(/<grok:render[^>]*>[\s\S]*?<\/grok:render>/gi, "")), (n = n.replace(/<grok:richcontent[^>]*>[\s\S]*?<\/grok:richcontent>/gi, "")), (n = n.replace(/^(-\s*?|\*\s*?|_\s*?){3,}\s*/gm, ""));
                 try {
                     o.stripListLeaders && (n = o.listUnicodeChar ? n.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, `${o.listUnicodeChar} $1`) : n.replace(/^([\s\t]*)([\*\-\+]|\d+\.)\s+/gm, "$1")),
                         o.gfm &&
@@ -816,4 +816,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.b376acea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.6fd6448a.js.map

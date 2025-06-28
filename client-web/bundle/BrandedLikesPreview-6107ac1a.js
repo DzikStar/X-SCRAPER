@@ -18,12 +18,12 @@
                 w = r(279849);
             const f = l().ae58026a,
                 h = l().fd00a76a;
-            function _({ error: e, onChange: t }) {
+            function g({ error: e, onChange: t }) {
                 return n.createElement(
                     o.Z,
-                    { style: g.container },
-                    n.createElement(m.ZP, { align: "center", style: g.message }, f),
-                    e && n.createElement(m.ZP, { align: "center", color: "red500", size: "subtext1", style: g.error }, e),
+                    { style: _.container },
+                    n.createElement(m.ZP, { align: "center", style: _.message }, f),
+                    e && n.createElement(m.ZP, { align: "center", color: "red500", size: "subtext1", style: _.error }, e),
                     n.createElement(
                         p.Z,
                         {
@@ -32,7 +32,7 @@
                                 const r = e[0];
                                 t(r);
                             },
-                            style: g.button,
+                            style: _.button,
                             type: "primaryFilled",
                         },
                         n.createElement(w.default, null),
@@ -41,7 +41,7 @@
                     ),
                 );
             }
-            const g = i.default.create((e) => ({ container: { paddingVertical: e.spaces.space56, alignSelf: "center" }, message: { paddingVertical: e.spaces.space12 }, error: { maxWidth: `calc(5 * ${e.spaces.space80})`, paddingBottom: e.spaces.space12 }, button: { marginTop: 0, marginHorizontal: 0, alignSelf: "center" } }));
+            const _ = i.default.create((e) => ({ container: { paddingVertical: e.spaces.space56, alignSelf: "center" }, message: { paddingVertical: e.spaces.space12 }, error: { maxWidth: `calc(5 * ${e.spaces.space80})`, paddingBottom: e.spaces.space12 }, button: { marginTop: 0, marginHorizontal: 0, alignSelf: "center" } }));
             r(571372);
             const v = function (e) {
                 return new Promise((t, r) => {
@@ -120,7 +120,7 @@
                           ),
                           n.createElement(N, { animationJSON: e }),
                       )
-                    : n.createElement(_, {
+                    : n.createElement(g, {
                           error: r,
                           onChange: function (e) {
                               v(e)
@@ -202,8 +202,8 @@
                 }
                 _renderUserName() {
                     const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: o, onScreenNameClick: s, profileLink: i, promotedContent: a, userHighlightedLabel: l, userName: c, userScreenName: u, userTranslatorType: d, userVerifiedType: p, userWithFollowsYou: w, withNameWrap: f } = this.props,
-                        { badges: h, followIndicator: _, fullName: g } = e;
-                    return n.createElement(m.Z, { affiliateBadgeInfo: l, badgeContext: "account", isBlueVerified: h ? t : void 0, isProtected: h ? r : void 0, isVerified: h ? o : void 0, link: i, name: g ? c : u, nameSize: "headline2", onLinkClick: s, promotedContent: a, screenName: u, translatorType: h ? d : void 0, verifiedType: h ? p : void 0, withFollowsYou: _ && w, withLink: !0, withNameWrap: f, withStackedLayout: !0 });
+                        { badges: h, followIndicator: g, fullName: _ } = e;
+                    return n.createElement(m.Z, { affiliateBadgeInfo: l, badgeContext: "account", isBlueVerified: h ? t : void 0, isProtected: h ? r : void 0, isVerified: h ? o : void 0, link: i, name: _ ? c : u, nameSize: "headline2", onLinkClick: s, promotedContent: a, screenName: u, translatorType: h ? d : void 0, verifiedType: h ? p : void 0, withFollowsYou: g && w, withLink: !0, withNameWrap: f, withStackedLayout: !0 });
                 }
                 _renderHighlightedUserLabel() {
                     const { userHighlightedLabel: e } = this.props;
@@ -226,9 +226,9 @@
             }
             f.defaultProps = { userAvatarSize: "jumbo", withUserAvatar: !0 };
             const h = c.default.create((e) => ({ root: { padding: e.spaces.space16 }, row: { flexDirection: "row", justifyContent: "space-between" }, marginTop12: { marginTop: e.spaces.space12 }, marginTop8: { marginTop: e.spaces.space8 }, marginTop4: { marginTop: e.spaces.space4 }, minHeight: { minHeight: e.spaces.space20 }, followButtonAtBottom: { justifyContent: "center", marginTop: e.spaces.space12 }, grokButton: { justifyContent: "center", marginTop: e.spaces.space16 } }));
-            var _ = r(807896);
-            var g = r(111677);
-            const v = r.n(g)().ef633578;
+            var g = r(807896);
+            var _ = r(111677);
+            const v = r.n(_)().ef633578;
             class E extends n.PureComponent {
                 render() {
                     return n.createElement(f, this.props);
@@ -237,7 +237,7 @@
             (E.Promoted = (e) => {
                 const { followButton: t, isUserProtected: r, isUserVerified: o, knownFollowers: s, onAvatarClick: i, onScreenNameClick: a, promotedContent: l, userDescription: c, userId: u, userName: d, userScreenName: m, ...p } = e,
                     w = { protected: !1, isUserStatsWithLink: !1, verified: !1, profile_image_url_https: "", entities: {}, followers_count: 0, friends_count: 0, id_str: "", followed_by: !1 };
-                return n.createElement(f, (0, _.Z)({}, p, { followButton: t, isAllowedToViewOptions: { avatar: !1, badges: !0, description: !0, followButton: !0, followIndicator: !0, followersYouKnow: !0, fullName: !0, label: !0, stats: !1, subscriptionsCount: !1 }, isLoggedIn: !0, isUserProtected: r, isUserStatsWithLink: w.isUserStatsWithLink, isUserVerified: o, knownFollowers: s, onAvatarClick: i, onScreenNameClick: a, promotedContent: l, userAvatarUri: w.profile_image_url_https, userDescription: c, userEntities: w.entities, userFollowersCount: w.followers_count, userFriendsCount: w.friends_count, userId: u, userName: d, userScreenName: m, userWithFollowsYou: w.followed_by, userWithheldDescription: void 0, userWithheldEntities: void 0, withUserAvatar: !1 }));
+                return n.createElement(f, (0, g.Z)({}, p, { followButton: t, isAllowedToViewOptions: { avatar: !1, badges: !0, description: !0, followButton: !0, followIndicator: !0, followersYouKnow: !0, fullName: !0, label: !0, stats: !1, subscriptionsCount: !1 }, isLoggedIn: !0, isUserProtected: r, isUserStatsWithLink: w.isUserStatsWithLink, isUserVerified: o, knownFollowers: s, onAvatarClick: i, onScreenNameClick: a, promotedContent: l, userAvatarUri: w.profile_image_url_https, userDescription: c, userEntities: w.entities, userFollowersCount: w.followers_count, userFriendsCount: w.friends_count, userId: u, userName: d, userScreenName: m, userWithFollowsYou: w.followed_by, userWithheldDescription: void 0, userWithheldEntities: void 0, withUserAvatar: !1 }));
             }),
                 (E.Suspended = function ({ onAvatarClick: e, onScreenNameClick: t, userScreenName: r }) {
                     const o = { protected: !1, isUserStatsWithLink: !1, verified: !1, profile_image_url_https: "", description: "", entities: {}, followers_count: 0, friends_count: 0, id_str: "", followed_by: !1 };
@@ -259,6 +259,19 @@
                 }
             }
             l.defaultProps = { withLink: !0, withSubscribersCount: !0 };
+        },
+        98440: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var n = r(202784),
+                o = r(890601),
+                s = r(783427),
+                i = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
         },
         155353: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
@@ -289,4 +302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-6107ac1a.a8749b9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-6107ac1a.9a280a9a.js.map

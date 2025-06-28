@@ -122,7 +122,7 @@
             const x = o.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, summaryContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, divider: { width: "100%", height: 1, backgroundColor: e.colors.gray300 }, createdAtText: {} }));
         },
         670178: (e, t, r) => {
-            r.d(t, { G5: () => S, L6: () => E, Ot: () => Z, Sb: () => F, bL: () => v, qp: () => M, v0: () => D });
+            r.d(t, { G5: () => S, L6: () => D, Ot: () => F, Sb: () => M, bL: () => v, qp: () => Z, v0: () => E });
             r(571372), r(202784);
             var a = r(209725),
                 n = r(111677),
@@ -149,25 +149,25 @@
                 if ("C" === t && "F" === r) return (9 * e) / 5 + 32;
                 throw new Error("Invalid unit combination for temperature conversion.");
             }
-            function D(e = new Date()) {
+            function E(e = new Date()) {
                 return e.setMinutes(0, 0, 0), e;
             }
-            function E(e = new Date()) {
+            function D(e = new Date()) {
                 return e.setHours(0, 0, 0, 0), e;
             }
-            function Z(e, t) {
+            function F(e, t) {
                 const r = new Date();
                 if (e.toDateString() === r.toDateString()) return i;
                 return (t ? [f, g, y, w, b, C, x] : [c, l, u, p, d, m, h])[e.getDay()];
             }
-            function F(e) {
+            function M(e) {
                 const t = new Date();
                 if (e.toDateString() === t.toDateString() && e.getHours() === t.getHours()) return s;
                 let r = e.getHours();
                 const a = r >= 12 ? "PM" : "AM";
                 return (r %= 12), (r = r || 12), `${r}${a}`;
             }
-            function M(e) {
+            function Z(e) {
                 switch (e) {
                     case "BlowingDust":
                     case "Breezy":
@@ -237,24 +237,43 @@
             }
         },
         598476: (e, t, r) => {
-            r.d(t, { Z: () => m });
+            r.d(t, { Z: () => f });
             var a = r(202784),
                 n = r(325686),
                 o = r(154003),
                 s = r(392237),
                 i = r(111677),
                 c = r.n(i),
-                l = r(988290),
-                u = r(520595),
-                p = r(299631);
-            const d = c().db6c20cf;
-            function m({ cardAttachment: e }) {
+                l = r(125363),
+                u = r(836255),
+                p = r(988290),
+                d = r(520595),
+                m = r(299631);
+            const h = c().db6c20cf;
+            function f({ cardAttachment: e }) {
                 const [t, r] = a.useState(!1),
-                    { isCompactLayout: s, isGrokDrawer: i } = (0, l.ZP)(),
-                    c = s || i ? 1 : 2;
-                return a.createElement(n.Z, { style: h.container }, a.createElement(p.V, { dynamicLayoutEnabled: !0, postIds: e.post_ids.slice(0, c) }), e.post_ids.length > c && a.createElement(o.ZP, { backgroundColor: "transparent", borderColor: "gray200", color: "gray900", fontWeight: "normal", onClick: () => r(!0), style: h.seeAllPostsButton, textSizeOverride: "subtext1" }, d({ count: e.post_ids.length })), t && a.createElement(u.a, { onDrawerDismiss: () => r(!1), postIds: e.post_ids }));
+                    { isCompactLayout: s, isGrokDrawer: i } = (0, p.ZP)(),
+                    c = s || i ? 1 : 2,
+                    [l, u] = a.useState({}),
+                    f = a.useMemo(() => e.post_ids.filter((e) => l[e]).map((e) => e), [e.post_ids, l]);
+                return a.createElement(
+                    a.Fragment,
+                    null,
+                    e.post_ids.map((e) => a.createElement(g, { key: e, onPostExists: () => u((t) => ({ ...t, [e]: !0 })), postId: e })),
+                    f.length > 0 && a.createElement(n.Z, { style: y.container }, f.length > 0 && a.createElement(m.V, { dynamicLayoutEnabled: !0, postIds: f.slice(0, c) }), f.length > c && a.createElement(o.ZP, { backgroundColor: "transparent", borderColor: "gray200", color: "gray900", fontWeight: "normal", onClick: () => r(!0), style: y.seeAllPostsButton, textSizeOverride: "subtext1" }, h({ count: f.length })), t && a.createElement(d.a, { onDrawerDismiss: () => r(!1), postIds: f })),
+                );
             }
-            const h = s.default.create((e) => ({ container: { marginTop: e.spaces.space12, marginBottom: e.spaces.space16, display: "flex", flexDirection: "column", gap: e.spaces.space12 }, seeAllPostsButton: { width: "fit-content" } }));
+            function g({ onPostExists: e, postId: t }) {
+                const r = a.useMemo(() => u.Z.createHydratorForTweet(t), [t]),
+                    n = (0, l.v9)(r);
+                return (
+                    a.useEffect(() => {
+                        n && e();
+                    }, [n, e]),
+                    null
+                );
+            }
+            const y = s.default.create((e) => ({ container: { marginTop: e.spaces.space12, marginBottom: e.spaces.space16, display: "flex", flexDirection: "column", gap: e.spaces.space12 }, seeAllPostsButton: { width: "fit-content" } }));
         },
         353880: (e, t, r) => {
             r.d(t, { Z: () => b });
@@ -312,4 +331,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-f29574de.6dc946ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-f29574de.b4061a8a.js.map

@@ -1,11 +1,11 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown", "icons/IconCropSquare-js", "icons/IconMediaExpand-js"],
+    ["shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown", "icons/IconDraggable-js", "icons/IconMediaCollapse-js", "icons/IconSearchMinusStroke-js"],
     {
         65469: (e, t, n) => {
             n.d(t, { Z: () => s });
             n(202784);
-            const s = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), n.e("loader.CodeBlock-6107ac1a"), n.e("loader.CodeBlock-354a642d"), n.e("loader.CodeBlock-e96e9bea")]).then(n.bind(n, 896867)) });
+            const s = (0, n(523561).Z)({ loader: () => Promise.all([n.e("icons.24"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), n.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), n.e("loader.CodeBlock-49d0a293"), n.e("loader.CodeBlock-354a642d"), n.e("loader.CodeBlock-e96e9bea")]).then(n.bind(n, 896867)) });
         },
         169576: (e, t, n) => {
             n.d(t, { c: () => f, Z: () => m });
@@ -37,8 +37,8 @@
                         T = w ? i.default.theme.colors[w] : i.default.theme.colors.gray0,
                         S = z ? i.default.theme.colors[z] : i.default.theme.colors.gray900,
                         R = $ ? i.default.theme.spaces[$] : i.default.theme.spaces.space16,
-                        A = { [f.MarchMadness]: { header: k.header, description: k.description, legalDisclaimer: k.legalDisclaimer, buttonText: k.buttonText, image: k.image } }[n];
-                    return u ? s.createElement(l.Z, { interactiveStyles: null, link: t, onPress: b, style: x.bannerContainer }, s.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? A.image.lightMode : A.image.darkMode }, style: { height: 85 } })) : s.createElement(r.Z, { style: [x.card, { backgroundColor: T }, { maxWidth: _ }, { marginBottom: R }], testID: "popupCard" }, s.createElement(r.Z, { style: e ? x.horizontalContent : x.verticalContent }, s.createElement(r.Z, { style: e ? x.textContainer : null }, s.createElement(o.ZP, { size: "headline2", style: [x.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, A.header), s.createElement(o.ZP, { size: "subtext1", style: [x.popupDescription, { color: S }] }, A.description, " ", e ? null : A.legalDisclaimer)), s.createElement(r.Z, { style: x.buttonContainer }, s.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [x.popupButton, { width: y }] }, A.buttonText), e && s.createElement(o.ZP, { size: "subtext3", style: [x.legalDisclaimer, { color: S }] }, A.legalDisclaimer))));
+                        v = { [f.MarchMadness]: { header: k.header, description: k.description, legalDisclaimer: k.legalDisclaimer, buttonText: k.buttonText, image: k.image } }[n];
+                    return u ? s.createElement(l.Z, { interactiveStyles: null, link: t, onPress: b, style: x.bannerContainer }, s.createElement(a.Z, { resizeMode: "contain", source: { uri: "light" === i.default.theme.paletteName ? v.image.lightMode : v.image.darkMode }, style: { height: 85 } })) : s.createElement(r.Z, { style: [x.card, { backgroundColor: T }, { maxWidth: _ }, { marginBottom: R }], testID: "popupCard" }, s.createElement(r.Z, { style: e ? x.horizontalContent : x.verticalContent }, s.createElement(r.Z, { style: e ? x.textContainer : null }, s.createElement(o.ZP, { size: "headline2", style: [x.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, v.header), s.createElement(o.ZP, { size: "subtext1", style: [x.popupDescription, { color: S }] }, v.description, " ", e ? null : v.legalDisclaimer)), s.createElement(r.Z, { style: x.buttonContainer }, s.createElement(c.ZP, { backgroundColor: "light" === i.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: b, size: "medium", style: [x.popupButton, { width: y }] }, v.buttonText), e && s.createElement(o.ZP, { size: "subtext3", style: [x.legalDisclaimer, { color: S }] }, v.legalDisclaimer))));
                 },
                 x = i.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -99,7 +99,7 @@
             const d = c.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
                 g = u;
         },
-        390587: (e, t, n) => {
+        678773: (e, t, n) => {
             n.r(t), n.d(t, { default: () => o });
             var s = n(202784),
                 r = n(890601),
@@ -107,12 +107,12 @@
                 l = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v13c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5h-13z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const o = a;
         },
-        841972: (e, t, n) => {
+        647174: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var s = n(202784),
                 r = n(890601),
@@ -122,16 +122,29 @@
             const o = (e = {}) => {
                 const t = s.useContext(l.Z),
                     { direction: n } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M13 3h8v8h-2V6.41l-5.043 5.05-1.414-1.42L17.586 5H13V3zm-1.543 10.96L6.414 19H11v2H3v-8h2v4.59l5.043-5.05 1.414 1.42z" })) }, { writingDirection: n });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" })) }, { writingDirection: n });
             };
             o.metadata = { width: 24, height: 24 };
             const c = o;
+        },
+        614991: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => o });
+            var s = n(202784),
+                r = n(890601),
+                i = n(783427),
+                l = n(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: s.createElement("g", null, s.createElement("path", { d: "M11 4c-3.87 0-7 3.13-7 7s3.13 7 7 7c1.93 0 3.68-.78 4.95-2.05C17.21 14.68 18 12.93 18 11c0-3.87-3.14-7-7-7zm-9 7c0-4.97 4.03-9 9-9s9 4.03 9 9c0 2.12-.74 4.08-1.97 5.62l3.68 3.67-1.42 1.42-3.67-3.68C15.08 19.26 13.12 20 11 20c-4.97 0-9-4.03-9-9zm12.5 1h-7v-2h7v2z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const o = a;
         },
         719870: (e, t, n) => {
             function s() {
                 return { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             }
-            n.d(t, { TU: () => v });
+            n.d(t, { TU: () => I });
             let r = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             function i(e) {
                 r = e;
@@ -981,7 +994,7 @@
                     return n;
                 }
             }
-            class A {
+            class v {
                 options;
                 constructor(e) {
                     this.options = e || r;
@@ -994,7 +1007,7 @@
                     return e;
                 }
             }
-            const I = new (class {
+            const A = new (class {
                 defaults = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
                 options = this.setOptions;
                 parse = this.#e(z.lex, R.parse);
@@ -1004,7 +1017,7 @@
                 TextRenderer = S;
                 Lexer = z;
                 Tokenizer = y;
-                Hooks = A;
+                Hooks = v;
                 constructor(...e) {
                     this.use(...e);
                 }
@@ -1089,12 +1102,12 @@
                                 n.tokenizer = t;
                             }
                             if (e.hooks) {
-                                const t = this.defaults.hooks || new A();
+                                const t = this.defaults.hooks || new v();
                                 for (const n in e.hooks) {
                                     const s = e.hooks[n],
                                         r = n,
                                         i = t[r];
-                                    A.passThroughHooks.has(n)
+                                    v.passThroughHooks.has(n)
                                         ? (t[r] = (e) => {
                                               if (this.defaults.async) return Promise.resolve(s.call(t, e)).then((e) => i.call(t, e));
                                               const n = s.call(t, e);
@@ -1166,33 +1179,33 @@
                     };
                 }
             })();
-            function v(e, t) {
-                return I.parse(e, t);
+            function I(e, t) {
+                return A.parse(e, t);
             }
-            (v.options = v.setOptions =
+            (I.options = I.setOptions =
                 function (e) {
-                    return I.setOptions(e), (v.defaults = I.defaults), i(v.defaults), v;
+                    return A.setOptions(e), (I.defaults = A.defaults), i(I.defaults), I;
                 }),
-                (v.getDefaults = s),
-                (v.defaults = r),
-                (v.use = function (...e) {
-                    return I.use(...e), (v.defaults = I.defaults), i(v.defaults), v;
+                (I.getDefaults = s),
+                (I.defaults = r),
+                (I.use = function (...e) {
+                    return A.use(...e), (I.defaults = A.defaults), i(I.defaults), I;
                 }),
-                (v.walkTokens = function (e, t) {
-                    return I.walkTokens(e, t);
+                (I.walkTokens = function (e, t) {
+                    return A.walkTokens(e, t);
                 }),
-                (v.parseInline = I.parseInline),
-                (v.Parser = R),
-                (v.parser = R.parse),
-                (v.Renderer = T),
-                (v.TextRenderer = S),
-                (v.Lexer = z),
-                (v.lexer = z.lex),
-                (v.Tokenizer = y),
-                (v.Hooks = A),
-                (v.parse = v);
-            v.options, v.setOptions, v.use, v.walkTokens, v.parseInline, R.parse, z.lex;
+                (I.parseInline = A.parseInline),
+                (I.Parser = R),
+                (I.parser = R.parse),
+                (I.Renderer = T),
+                (I.TextRenderer = S),
+                (I.Lexer = z),
+                (I.lexer = z.lex),
+                (I.Tokenizer = y),
+                (I.Hooks = v),
+                (I.parse = I);
+            I.options, I.setOptions, I.use, I.walkTokens, I.parseInline, R.parse, z.lex;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.807fb17a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.b5592e4a.js.map

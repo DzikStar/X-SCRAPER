@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: y, subtitle: w, title: g, titleDomId: b, titleIconCell: D, titleIconCellSize: T, withBackground: C, withWideContainer: P } = this.props,
-                        { isModal: M } = this.context,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: y, subtitle: w, title: g, titleDomId: b, titleIconCell: D, titleIconCellSize: T, withBackground: C, withWideContainer: M } = this.props,
+                        { isModal: P } = this.context,
                         Z = i ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         _ = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!C, M, !!f);
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: Z, middleControl: h, position: p(u, M, r), rightControl: m, style: y, subtitle: w, title: g, titleDomId: b, titleIconCell: D, titleIconCellSize: T, withBackground: _, withWideContainer: P }), f || null);
+                        })(!!C, P, !!f);
+                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: d, leftControl: Z, middleControl: h, position: p(u, P, r), rightControl: m, style: y, subtitle: w, title: g, titleDomId: b, titleIconCell: D, titleIconCellSize: T, withBackground: _, withWideContainer: M }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -67,8 +67,8 @@
                 D = { label: b },
                 T = p().efe6ef9e,
                 C = { label: T },
-                P = n.createElement(h.default, null),
-                M = n.createElement(u.default, null);
+                M = n.createElement(h.default, null),
+                P = n.createElement(u.default, null);
             function Z() {
                 const e = n.useMemo(() => n.createElement(_, null), []),
                     t = n.useMemo(() => n.createElement(v, null), []);
@@ -76,11 +76,11 @@
             }
             function _() {
                 const e = (0, w.RQ)();
-                return n.createElement(d.ZP, { "aria-label": b, hoverLabel: D, icon: P, onPress: e, pullLeft: !0, type: "primaryText" });
+                return n.createElement(d.ZP, { "aria-label": b, hoverLabel: D, icon: M, onPress: e, pullLeft: !0, type: "primaryText" });
             }
             function v() {
                 const e = (0, w.VD)();
-                return n.createElement(d.ZP, { "aria-label": T, hoverLabel: C, icon: M, onPress: e, type: "primaryText" });
+                return n.createElement(d.ZP, { "aria-label": T, hoverLabel: C, icon: P, onPress: e, type: "primaryText" });
             }
             const I = function () {
                     (0, f.useStickyViewNotify)(), (0, w.Jf)();
@@ -510,8 +510,8 @@
                 D = o(801184),
                 T = o(335632);
             const C = "FocalTweetInlineTombstone",
-                P = "More Replies";
-            let M;
+                M = "More Replies";
+            let P;
             const Z = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
                 _ = { ...(0, T.G)({}), [l.ZP.Tweet]: (0, b.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
                 v = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: i, replyDropdownSelection: a, rootTweetAuthorId: s, tweetTextSize: c, withFocalTweetMedia: b, withRuxInjections: T }) =>
@@ -579,7 +579,7 @@
                             },
                         },
                         [l.ZP.Tombstone]: { handlers: { [C]: (0, g._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [p.Z.Inline]: (0, g._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? d.qt : void 0, withHideReply: o }) } },
-                        [l.ZP.Label]: u.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === P ? Z.TransparentCursor : Z.Default))(e, i), handlers: { [Z.TransparentCursor]: f.L, [Z.Default]: f.k } }),
+                        [l.ZP.Label]: u.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === M ? Z.TransparentCursor : Z.Default))(e, i), handlers: { [Z.TransparentCursor]: f.L, [Z.Default]: f.k } }),
                         [l.ZP.TimelineCursor]: (0, m.Z)({ withRuxInjections: T }),
                         [l.ZP.ThreadHeader]: w.Z,
                     }),
@@ -595,10 +595,10 @@
                         let w;
                         return (0, a.Z)(y, (o, n) => {
                             const i = o.type === l.ZP.TimelineCursor && (o.content.cursorType === s.CursorType.ShowMoreThreads || o.content.cursorType === s.CursorType.ShowMoreThreadsPrompt),
-                                a = o.type === l.ZP.Label && o.content.text === P;
-                            if (d && (i || a)) return void 0 === w && o.content.cursorType === s.CursorType.ShowMoreThreadsPrompt ? (M = n) : void 0 === w && (w = n), !1;
+                                a = o.type === l.ZP.Label && o.content.text === M;
+                            if (d && (i || a)) return void 0 === w && o.content.cursorType === s.CursorType.ShowMoreThreadsPrompt ? (P = n) : void 0 === w && (w = n), !1;
                             if (d && void 0 !== w && n >= w) return !1;
-                            if (d && void 0 === w && n >= M) return !1;
+                            if (d && void 0 === w && n >= P) return !1;
                             const u = n > m;
                             if ((o.type !== l.ZP.Tweet && o.type !== l.ZP.Tombstone) || u) return o.type !== l.ZP.SelfThreadTweetComposer && o;
                             {
@@ -648,8 +648,8 @@
                 D = (e, t) => t.location.state && t.location.state.contextualClientEventInfo,
                 T = (0, g.Z)().propsFromState(() => ({ isTimelineTerminatedAtTop: b, contextualClientEventInfo: D }));
             var C = o(519125);
-            const P = i().d35d74e4,
-                M = (e) => {
+            const M = i().d35d74e4,
+                P = (e) => {
                     switch (e) {
                         case h.Z.NOT_FOUND:
                             return n.createElement(f.Z, null);
@@ -689,7 +689,7 @@
                 }
                 render() {
                     const { apiErrorHandlerMap: e, fetchOptions: t, module: o, onEntriesRendered: r } = this.props;
-                    return n.createElement(y.Z, { anchoring: d.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: u.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: Z, renderUnavailable: M, title: P });
+                    return n.createElement(y.Z, { anchoring: d.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: u.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: Z, renderUnavailable: P, title: M });
                 }
                 _previewEntries() {
                     const { focalTweet: e } = this.props,
@@ -751,17 +751,17 @@
                         return !!n && o(n);
                     });
                 },
-                P = (e, t) => {
+                M = (e, t) => {
                     const { userIds: o } = t;
                     return o.reduce((t, o) => {
                         const n = D.ZP.selectFetchStatus(e, o);
                         return n && (t[o] = n === y.ZP.NONE ? y.ZP.LOADING : n), t;
                     }, {});
                 },
-                M = (0, b.Z)()
+                P = (0, b.Z)()
                     .propsFromState(() => ({
                         availableUserIds: (0, g.Z)(C, (e) => e),
-                        fetchStatus: (0, g.Z)(C, P, T, (e, t, o) => {
+                        fetchStatus: (0, g.Z)(C, M, T, (e, t, o) => {
                             let n = y.ZP.LOADED;
                             for (let r = 0; r < o.length; r++) {
                                 const i = o[r];
@@ -818,7 +818,7 @@
                     );
                 }
             }
-            const v = M(_);
+            const v = P(_);
         },
         26193: (e, t, o) => {
             o.d(t, { Z: () => n });
@@ -826,34 +826,34 @@
             const n = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
+                        o.e("icons.23"),
                         o.e("icons.0"),
-                        o.e("icons.5"),
-                        o.e("icons.12"),
-                        o.e("icons.20"),
                         o.e("icons.2"),
-                        o.e("icons.21"),
-                        o.e("icons.28"),
+                        o.e("icons.16"),
+                        o.e("icons.19"),
                         o.e("icons.10"),
+                        o.e("icons.13"),
+                        o.e("icons.24"),
+                        o.e("icons.7"),
+                        o.e("icons.22"),
+                        o.e("icons.27"),
                         o.e("icons.17"),
-                        o.e("icons.9"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.22"),
-                        o.e("icons.14"),
-                        o.e("icons.25"),
-                        o.e("icons.6"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
+                        o.e("icons.21"),
+                        o.e("icons.18"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -869,6 +869,7 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         o.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
                         o.e("loader.WideLayout-6107ac1a"),
@@ -1004,4 +1005,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.73979faa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.76537d4a.js.map

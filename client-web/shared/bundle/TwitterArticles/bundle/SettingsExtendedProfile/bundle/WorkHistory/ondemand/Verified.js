@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified", "icons/IconDrafts-js", "icons/IconEye-js"],
+    ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified", "icons/IconChevronDown-js", "icons/IconGifPillStroke-js"],
     {
         385264: (e, t, n) => {
             n.d(t, { Q: () => o });
@@ -44,7 +44,7 @@
                 m = p;
         },
         874111: (e, t, n) => {
-            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => M, Sc: () => B, Ve: () => k, Vn: () => D, WE: () => L, WF: () => b, c6: () => x, ci: () => C, eE: () => _, iT: () => S, ii: () => F, jB: () => P, k: () => V, mA: () => w, r_: () => v, wq: () => R });
+            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => L, Sc: () => B, Ve: () => k, Vn: () => D, WE: () => M, WF: () => b, c6: () => x, ci: () => C, eE: () => _, iT: () => S, ii: () => F, jB: () => P, k: () => V, mA: () => w, r_: () => v, wq: () => R });
             n(136728);
             var o = n(301503),
                 r = n(111677),
@@ -162,13 +162,13 @@
                         n
                     );
                 },
-                M = (e, t, n) => {
+                L = (e, t, n) => {
                     const r = e.getCurrentContent().mergeEntityData(t, n),
                         i = o.EditorState.push(e, r, "change-block-data"),
                         s = o.SelectionState.createEmpty(m(e).getKey());
                     return o.EditorState.forceSelection(i, s);
                 },
-                L = (e, t, n) => {
+                M = (e, t, n) => {
                     const o = n.map((e) => t[e.mediaId]).map((t) => e.find((e) => e.id === t) ?? null);
                     return o.some((e) => !e) ? n.map((t) => e.find((e) => e.id === t.localMediaId) ?? null) : o;
                 },
@@ -201,18 +201,18 @@
                         h = o.Modifier.applyEntity(c, d, a);
                     return o.EditorState.set(e, { currentContent: h });
                 },
-                z = i().add55c98,
-                O = i().i0db46e6,
-                A = i().fa4e68ca,
-                K = i().c80940f4,
+                O = i().add55c98,
+                A = i().i0db46e6,
+                K = i().fa4e68ca,
+                z = i().c80940f4,
                 W = i().i89195ea,
                 H = i().cfeb3f86,
                 U = i().ad9e175c,
                 V = [
-                    { id: p.Q.Media, text: z, Icon: s.default },
-                    { id: p.Q.GIFs, text: O, Icon: a.default },
-                    { id: p.Q.Posts, text: A, Icon: l.default },
-                    { id: p.Q.Markdown, text: K, Icon: c.default },
+                    { id: p.Q.Media, text: O, Icon: s.default },
+                    { id: p.Q.GIFs, text: A, Icon: a.default },
+                    { id: p.Q.Posts, text: K, Icon: l.default },
+                    { id: p.Q.Markdown, text: z, Icon: c.default },
                     { id: p.Q.Divider, text: W, Icon: d.default },
                     { id: p.Q.Code, text: H, Icon: c.default },
                     { id: p.Q.LaTeX, text: U, Icon: h.default },
@@ -289,16 +289,16 @@
                 w = n(530732),
                 I = n(215337),
                 F = n(135904),
-                M = n(989272),
-                L = n(855125),
+                L = n(989272),
+                M = n(855125),
                 P = n(202253),
                 Z = n(392237),
                 R = n(779802);
             const D = Z.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
-                z = ({ style: e }) => r.createElement(s.Z, { style: [D.separator, e] }),
-                O = l().a6a3d496,
-                A = l().acce6978,
-                K = l().f5e8f526,
+                O = ({ style: e }) => r.createElement(s.Z, { style: [D.separator, e] }),
+                A = l().a6a3d496,
+                K = l().acce6978,
+                z = l().f5e8f526,
                 W = l().h517e8d8,
                 H = l().a30ae58e,
                 U = l().da38c958,
@@ -539,7 +539,7 @@
                             return r.createElement(
                                 s.Z,
                                 { style: q.buttonGroup },
-                                t ? null : r.createElement(z, { style: q.separatorMargin }),
+                                t ? null : r.createElement(O, { style: q.separatorMargin }),
                                 e.map((e, t) => {
                                     const { Icon: n, buttonTestId: i, key: s, renderActionMenu: c, ...d } = e,
                                         h = this._isEditorFocused() && a?.contains(s),
@@ -564,7 +564,7 @@
                                 s.Z,
                                 { style: q.linkPopoverContent },
                                 r.createElement(f.ZP, { numberOfLines: 2, style: q.bottomMargin, weight: "bold" }, e),
-                                r.createElement(L.Z, { link: o, style: q.bottomMargin }, t),
+                                r.createElement(M.Z, { link: o, style: q.bottomMargin }, t),
                                 r.createElement(
                                     s.Z,
                                     { style: q.linkPopoverButtons },
@@ -576,7 +576,7 @@
                                             },
                                             type: "primaryFilled",
                                         },
-                                        K,
+                                        z,
                                     ),
                                     r.createElement(
                                         y.ZP,
@@ -598,7 +598,7 @@
                             if (e) {
                                 const { editorStateWithLinkSelected: t, entityUrl: n } = this._getEditorStateWithLinkSelected(e),
                                     o = this._getSelectedText(t);
-                                return r.createElement(T, { buttonLabelOverride: n ? V : G, fields: { source: { label: U, initialValue: n || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== o ? { text: { label: H, initialValue: o } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== o), sheetTitle: n ? A : O });
+                                return r.createElement(T, { buttonLabelOverride: n ? V : G, fields: { source: { label: U, initialValue: n || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== o ? { text: { label: H, initialValue: o } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== o), sheetTitle: n ? K : A });
                             }
                         }),
                         (this._handleInTextShortcut = (e) => (t, n, o) => {
@@ -629,7 +629,7 @@
                     e.limitedRichText || (t.push((0, P.U_)(this._renderLinkPopoverContent, this._handleLinkPopoverOpen, this._handleLinkPopoverClose)), t.push((0, P.NA)(p.Z, e.paragraphFontSizeOverride))), t.push(P.aF), t.push(P.RU), (this.decorator = new i.CompositeDecorator(t));
                 }
                 componentDidMount() {
-                    this._setDecorator(), M.fH(F.c, F.n);
+                    this._setDecorator(), L.fH(F.c, F.n);
                 }
                 componentDidUpdate() {
                     const {
@@ -639,14 +639,14 @@
                 }
                 render() {
                     const { additionalToolbarButtonConfigs: e, emojiPickerButton: t, errorText: n, inputStyle: a, isInputFullWidth: l, keyCommandHandlers: c, limitedRichText: d, middleControl: h, onChange: u, paragraphFontSizeOverride: p, placeholder: g, richTextInputContext: m, showError: b, textSizesOverride: x, toolbarRightControl: _, toolbarStyle: k, withAppBar: E, ...T } = this.props,
-                        { showLinkSheet: F, showTextSizeMenu: M } = this.state,
-                        L = (0, R.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
+                        { showLinkSheet: F, showTextSizeMenu: L } = this.state,
+                        M = (0, R.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
                         P = (0, R.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
                         D = (0, R.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
-                        O = (0, R.KJ)(this._handleToggleLinkSheet),
-                        A = this._getSelectedTextSize(),
-                        K = { ...m, blockStyleFn: (0, R.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
-                        W = Object.fromEntries([...L, ...(d ? [] : O), ...D, ...(d ? [] : P)].map((e) => [e.key.toLowerCase(), e.onPress])),
+                        A = (0, R.KJ)(this._handleToggleLinkSheet),
+                        K = this._getSelectedTextSize(),
+                        z = { ...m, blockStyleFn: (0, R.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
+                        W = Object.fromEntries([...M, ...(d ? [] : A), ...D, ...(d ? [] : P)].map((e) => [e.key.toLowerCase(), e.onPress])),
                         H = { [R.u4]: this._handleIncreaseTextSize, [R.db]: this._handleDecreaseTextSize },
                         U = { ...W, ...(d ? {} : H), ...this._getBackspaceAndDeleteCommandHandlers() },
                         V = c ? { ...U, ...c } : U,
@@ -669,18 +669,18 @@
                                 r.createElement(
                                     s.Z,
                                     { id: "toolbar-styling-buttons", style: q.toolbar_styling_buttons },
-                                    this._renderToolbarButtonGroup(L, !0),
+                                    this._renderToolbarButtonGroup(M, !0),
                                     d
                                         ? null
                                         : r.createElement(
                                               r.Fragment,
                                               null,
-                                              r.createElement(z, { style: q.separatorMargin }),
-                                              r.createElement(w.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, A.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), M ? this._renderTextSizeMenu() : null)),
+                                              r.createElement(O, { style: q.separatorMargin }),
+                                              r.createElement(w.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, K.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), L ? this._renderTextSizeMenu() : null)),
                                           ),
                                     d ? null : this._renderToolbarButtonGroup(P),
                                     this._renderToolbarButtonGroup(D),
-                                    d ? null : this._renderToolbarButtonGroup(O),
+                                    d ? null : this._renderToolbarButtonGroup(A),
                                     t ? t() : null,
                                     e ? this._renderToolbarButtonGroup(e) : null,
                                 ),
@@ -688,7 +688,7 @@
                             ),
                             r.createElement(I.Z, { angle: 270, angleUnit: "deg", colors: [j, N, N], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_left }),
                         ),
-                        r.createElement(C.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(v.Z, (0, o.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, a], keyBindingFn: this._keyBindingFn, keyCommandHandlers: V, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: K }, T))),
+                        r.createElement(C.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(v.Z, (0, o.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, a], keyBindingFn: this._keyBindingFn, keyCommandHandlers: V, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: z }, T))),
                     );
                 }
                 focus() {
@@ -1019,7 +1019,7 @@
             n.d(t, { Z: () => o });
             const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        266151: (e, t, n) => {
+        487552: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -1027,12 +1027,12 @@
                 s = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M10 5H2V3h8v2zM7 7H2v2h5V7zm12.94 4.946C19.48 15.918 16.1 19 12 19H8.19c-.12.988-.19 1.993-.19 3H6c0-4.669 1.29-9.39 3.95-12.97C12.62 5.421 16.38 2.9 23 3c.17 3.359-.21 7.147-3.06 8.946zM21 5.033c-4.16.276-7.29 2.275-9.45 5.187-1.43 1.929-2.43 4.268-3 6.78H12c2.68 0 4.95-1.76 5.72-4.188-.52.108-1.09.172-1.72.188h-1.5v-2H16c3.9 0 4.95-2.921 5-5.967z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
-        988227: (e, t, n) => {
+        937450: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var o = n(202784),
                 r = n(890601),
@@ -1040,24 +1040,11 @@
                 s = n(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
-        },
-        748138: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var o = n(202784),
-                r = n(890601),
-                i = n(783427),
-                s = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.8868c5aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.5826173a.js.map

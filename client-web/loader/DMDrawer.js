@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.DMDrawer"],
+    ["loader.DMDrawer", "icons/IconDoubleChevronUp-js"],
     {
         761693: (e, t, r) => {
             r.r(t), r.d(t, { default: () => it });
@@ -30,17 +30,17 @@
                 H = r(443781),
                 S = r(740633);
             const T = (0, r(523561).Z)({ loader: () => r.e("ondemand.RichText").then(r.bind(r, 687184)) });
-            var P = r(111311),
-                I = r(198506),
+            var I = r(111311),
+                P = r(198506),
                 R = r(768572),
-                M = r(275365),
-                _ = r(255534),
+                _ = r(275365),
+                M = r(255534),
                 U = r(164383),
                 A = r(587521),
                 k = r(806960),
                 O = r(786998),
-                N = r(516951),
-                L = r(933794),
+                L = r(516951),
+                N = r(933794),
                 W = r(163390),
                 F = r(725516);
             const B = { header: "DMDrawerHeader", headerHighlighted: "DMDrawerHeaderHighlighted", root: "DMDrawer" };
@@ -50,7 +50,7 @@
                 G = r.n(z),
                 V = r(894966);
             const K = G().b08821f4;
-            function Y({ buttonType: e, hasNewMessages: t, inboxUnreadCount: r }) {
+            function j({ buttonType: e, hasNewMessages: t, inboxUnreadCount: r }) {
                 const a = (0, l.I0)(),
                     i = t || (void 0 !== r && r > 0);
                 return n.createElement(
@@ -64,10 +64,10 @@
                         },
                         type: e,
                     }),
-                    i ? n.createElement(X.Z, { pip: !0, style: j.newMessagePip, truncatedCountFormatter: () => "", unreadCountLabel: () => "" }) : null,
+                    i ? n.createElement(X.Z, { pip: !0, style: Y.newMessagePip, truncatedCountFormatter: () => "", unreadCountLabel: () => "" }) : null,
                 );
             }
-            const j = x.default.create((e) => ({ newMessagePip: { end: e.spaces.space4, top: e.spaces.space4 } }));
+            const Y = x.default.create((e) => ({ newMessagePip: { end: e.spaces.space4, top: e.spaces.space4 } }));
             r(136728);
             var Q = r(324922),
                 $ = r(867492),
@@ -125,17 +125,17 @@
                     },
                     b = 0 === r ? [] : i ? [ge.headerHighlighted] : [ge.headerActive];
                 return n.createElement(
-                    L.Z,
+                    N.Z,
                     {
                         enabled: !0,
                         handlers: {
-                            [W.uq.goLists]: N.Z,
+                            [W.uq.goLists]: L.Z,
                             [W.uq.toggleDMDrawer]: () => {
                                 f(), c && c.current && c.current.focus();
                             },
                         },
                     },
-                    n.createElement(h.Z, { ref: c, style: [ge.headerRoot, !v && ge.headerBorderClosed, ...b, ge.cursor], testID: i ? B.headerHighlighted : B.header }, n.createElement(O.Z, { leftControl: t && v ? n.createElement(Y, { buttonType: m, hasNewMessages: r > 0, inboxUnreadCount: r }) : null, onMiddleControlClick: f, rightControl: n.createElement(ae, { analytics: u, buttonType: m, conversationTitle: t, handleToggleVisibility: f, isExpanded: v }), style: ge.roundedAppBarCorners, subtitle: e, title: n.createElement(de, { conversationTitle: t, hasNewMessages: r > 0, isConversationUnread: a, isHighlighted: i }), withBackground: !i })),
+                    n.createElement(h.Z, { ref: c, style: [ge.headerRoot, !v && ge.headerBorderClosed, ...b, ge.cursor], testID: i ? B.headerHighlighted : B.header }, n.createElement(O.Z, { leftControl: t && v ? n.createElement(j, { buttonType: m, hasNewMessages: r > 0, inboxUnreadCount: r }) : null, onMiddleControlClick: f, rightControl: n.createElement(ae, { analytics: u, buttonType: m, conversationTitle: t, handleToggleVisibility: f, isExpanded: v }), style: ge.roundedAppBarCorners, subtitle: e, title: n.createElement(de, { conversationTitle: t, hasNewMessages: r > 0, isConversationUnread: a, isHighlighted: i }), withBackground: !i })),
                 );
             }
             const pe = (e, t) => (e && t ? "onMediaText" : "primaryText"),
@@ -162,18 +162,18 @@
                     (e, t) => (t ? (0, Ze.y9)(e, t) : void 0),
                 ),
                 Te = (e) => (t) => be.De(e, t),
-                Pe = (e) => (t, r) => be.rA(e, t, r),
-                Ie = { conversation: (e, t) => c.selectConversation(e, He(0, t)), entries: c.selectEntries, perspective: b._h, users: xe.ZP.selectAll, dataSaverMode: De.IX, dtabBarInfo: we.U6, quickReplyOptions: Se, visibility: d.kX, inboxUnreadCount: k.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, He(0, t)), isDmReceiptSettingEnabled: ye.cn },
+                Ie = (e) => (t, r) => be.rA(e, t, r),
+                Pe = { conversation: (e, t) => c.selectConversation(e, He(0, t)), entries: c.selectEntries, perspective: b._h, users: xe.ZP.selectAll, dataSaverMode: De.IX, dtabBarInfo: we.U6, quickReplyOptions: Se, visibility: d.kX, inboxUnreadCount: k.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, He(0, t)), isDmReceiptSettingEnabled: ye.cn },
                 Re = { draftText: (e, t) => be.vb(e, He(0, t)), gifMetadata: (e, t) => be.Tu(e, He(0, t)), isUploading: (e, t) => be.q9(e, He(0, t)), media: (e, t) => be.W8(e, He(0, t)), mediaUploadProgress: (e, t) => be.Ah(e, He(0, t)) },
-                Me = (0, fe.Z)()
-                    .propsFromState(() => ({ ...Ie, ...Re }))
+                _e = (0, fe.Z)()
+                    .propsFromState(() => ({ ...Pe, ...Re }))
                     .adjustStateProps(({ conversation: e, dataSaverMode: t, draftText: r, dtabBarInfo: n, entries: a, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUnread: l, isUploading: c, media: d, mediaUploadProgress: u, perspective: h, quickReplyOptions: p, users: g, visibility: m }) => {
                         const v = e?.data;
                         return { conversation: v && (0, Ee.lk)(v, a, g), perspective: h, dataSaverMode: t, draftText: r, dtabBarInfo: n, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUploading: c, isUnread: l, media: d, mediaUploadProgress: u, quickReplyOptions: p, visibility: m };
                     })
-                    .propsFromActions(({ conversationId: e }) => ({ addMedia: Pe(e), addToast: Ce.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: be.E4, sendMessage: be.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
+                    .propsFromActions(({ conversationId: e }) => ({ addMedia: Ie(e), addToast: Ce.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: be.E4, sendMessage: be.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
                     .withAnalytics({ page: "messages", section: "thread_drawer" });
-            class _e extends n.Component {
+            class Me extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._composer = n.createRef()),
@@ -205,21 +205,21 @@
                     const { conversation: e, conversationId: t, inboxUnreadCount: r, isHeaderHighlighted: a, isUnread: i, onDrawerOpen: o, perspective: s, triggerHeaderHighlight: l } = this.props,
                         c = a ? "white" : "text",
                         d = a ? "white" : "gray700",
-                        u = e && (e.type === M.eD.ONE_TO_ONE || e.type === M.eD.SECRET_ONE_TO_ONE) && s && (0, I.Z)(e, s).map(({ user: e }) => e.screen_name),
+                        u = e && (e.type === _.eD.ONE_TO_ONE || e.type === _.eD.SECRET_ONE_TO_ONE) && s && (0, P.Z)(e, s).map(({ user: e }) => e.screen_name),
                         p = u ? n.createElement(C.Z, { color: d, screenName: u[0] }) : void 0;
-                    return n.createElement(h.Z, { style: Ue.headerRoot }, n.createElement(U._g.Provider, { value: t }, n.createElement(me, { conversationSubtitle: p, conversationTitle: n.createElement(_.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: a, onDrawerOpen: o, triggerHighlight: l })));
+                    return n.createElement(h.Z, { style: Ue.headerRoot }, n.createElement(U._g.Provider, { value: t }, n.createElement(me, { conversationSubtitle: p, conversationTitle: n.createElement(M.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: a, onDrawerOpen: o, triggerHighlight: l })));
                 }
                 _updatePolling() {
-                    this._pollingTimer && this._pollingTimer.stop(), this.props.visibility === w.S.COLLAPSED && ((this._pollingTimer = new P.Z(this._fetchUpdatesIfNeeded, { interval: 3e3 })), this._pollingTimer.start());
+                    this._pollingTimer && this._pollingTimer.stop(), this.props.visibility === w.S.COLLAPSED && ((this._pollingTimer = new I.Z(this._fetchUpdatesIfNeeded, { interval: 3e3 })), this._pollingTimer.start());
                 }
             }
-            _e.contextType = H.rC;
+            Me.contextType = H.rC;
             const Ue = x.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
-                Ae = Me(_e);
+                Ae = _e(Me);
             var ke = r(293115),
                 Oe = r(715601),
-                Ne = r(602920),
-                Le = r(161821),
+                Le = r(602920),
+                Ne = r(161821),
                 We = r(973572),
                 Fe = r(234296),
                 Be = r(288331),
@@ -232,7 +232,7 @@
                     a = (0, l.I0)(),
                     i = (0, l.v9)(c.selectConversations),
                     o = [];
-                for (const e of (0, Le.Z)(i)) !e.isDeleted && e.data?.trusted && o.push(e.data);
+                for (const e of (0, Ne.Z)(i)) !e.isDeleted && e.data?.trusted && o.push(e.data);
                 o.sort(Fe.Z);
                 const s = o.map((e) => e.conversation_id),
                     d = (0, l.v9)(De.Kp),
@@ -249,17 +249,17 @@
                 return n.createElement(Be.Z, { accessibilityTitle: Ge, analytics: r, conversationIds: s, customCellClick: e, fetchInboxHistory: () => a(c.fetchTrustedInboxHistory()), isDrawer: !0, renderEmptyDMInbox: () => n.createElement(qe.Z, { messageRequestPivot: m() }), renderStickyContent: m, updateLastSeenEventId: () => a(c.updateTrustedLastSeenEventId()), virtualScrollerCacheKey: t, withPinnedInbox: !0 });
             }
             const Ke = "dmDrawerInbox";
-            function Ye({ renderHeader: e }) {
+            function je({ renderHeader: e }) {
                 const t = (0, l.I0)();
                 return n.createElement(
                     h.Z,
-                    { style: je.fill },
+                    { style: Ye.fill },
                     n.createElement(
                         h.Z,
-                        { style: [je.viewportView, Ne.Z.drawerHeaderRadius] },
+                        { style: [Ye.viewportView, Le.Z.drawerHeaderRadius] },
                         n.createElement(
                             Oe.Z,
-                            { style: [je.viewportView, Ne.Z.drawerHeaderRadius] },
+                            { style: [Ye.viewportView, Le.Z.drawerHeaderRadius] },
                             e(),
                             n.createElement(Ve, {
                                 dmDrawerOnClick: (e, r) => {
@@ -271,7 +271,7 @@
                     ),
                 );
             }
-            const je = x.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...x.default.absoluteFillObject, overflowY: "auto" } })),
+            const Ye = x.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...x.default.absoluteFillObject, overflowY: "auto" } })),
                 Qe = { page: "messages", section: "inbox_drawer" };
             function $e({ isHeaderHighlighted: e, onDrawerOpen: t, triggerHeaderHighlight: r }) {
                 const a = (0, l.v9)(d.kX) === w.S.EXPANDED;
@@ -279,7 +279,7 @@
                     a && (0, S.Z)();
                 }, [a]);
                 const i = () => n.createElement(h.Z, { style: Je.headerRoot }, n.createElement(me, { isHighlighted: e, onDrawerOpen: t, triggerHighlight: r }));
-                return n.createElement(ke.nO, { namespace: Qe }, n.createElement(n.Fragment, null, !a && i(), a && n.createElement(Ye, { renderHeader: i })));
+                return n.createElement(ke.nO, { namespace: Qe }, n.createElement(n.Fragment, null, !a && i(), a && n.createElement(je, { renderHeader: i })));
             }
             const Je = x.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
                 et = 3e3,
@@ -294,28 +294,28 @@
                     x = (0, l.v9)((e) => d.kX(e)),
                     Z = (0, D.N)(),
                     [H, S] = n.useState(!1),
-                    [T, P] = n.useState(void 0),
-                    I = x === w.S.EXPANDED,
+                    [T, I] = n.useState(void 0),
+                    P = x === w.S.EXPANDED,
                     R = () => {
                         H && (S(!1), clearTimeout(i.current));
                     },
-                    M = (e) => {
+                    _ = (e) => {
                         const {
                             nativeEvent: {
                                 layout: { height: t },
                             },
                         } = e;
-                        I || void 0 !== T || P(t);
+                        P || void 0 !== T || I(t);
                     },
-                    _ = n.useCallback(() => {
-                        I ||
+                    M = n.useCallback(() => {
+                        P ||
                             H ||
                             i.current ||
                             (S(!0),
                             (i.current = setTimeout(() => {
                                 S(!1), (i.current = null);
                             }, et)));
-                    }, [I, H]);
+                    }, [P, H]);
                 n.useEffect(
                     () => () => {
                         clearTimeout(i.current);
@@ -343,9 +343,9 @@
                             return !0;
                         e && !t && r(e);
                         return !1;
-                    })(I),
+                    })(P),
                     A = n.useRef(),
-                    k = I ? { transform: [{ translateY: 0 }] } : U ? { transition: "none", transform: [{ translateY: `calc(100% - ${A.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${T ?? 0}px` }] },
+                    k = P ? { transform: [{ translateY: 0 }] } : U ? { transition: "none", transform: [{ translateY: `calc(100% - ${A.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${T ?? 0}px` }] },
                     O = (function (e) {
                         const [t, r] = n.useState(!1);
                         return (
@@ -372,7 +372,7 @@
                     ? n.createElement(
                           p.Z.Drawer,
                           null,
-                          n.createElement(g.Z, { id: "DMDrawer" }, (e, t) => n.createElement(y.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Ne.Z.root, O && Ne.Z.expandable, !I && T && { height: T, maxHeight: T }, { width: r }, k, v.Z.reducedMotionEnabled && Ne.Z.reducedMotion], testID: B.root })), n.createElement(h.Z, { onLayout: T ? void 0 : M, ref: A, style: [I ? Ne.Z.expanded : null, Ne.Z.main] }, C ? n.createElement(E.Z.Provider, { value: rt }, n.createElement(Ae, { conversationId: C, history: o, isHeaderHighlighted: H, location: s, onDrawerOpen: R, perspective: c, triggerHeaderHighlight: _, typingNotifier: Z })) : n.createElement(E.Z.Provider, { value: tt }, n.createElement($e, { isHeaderHighlighted: H, onDrawerOpen: R, triggerHeaderHighlight: _ }))))))),
+                          n.createElement(g.Z, { id: "DMDrawer" }, (e, t) => n.createElement(y.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Le.Z.root, O && Le.Z.expandable, !P && T && { height: T, maxHeight: T }, { width: r }, k, v.Z.reducedMotionEnabled && Le.Z.reducedMotion], testID: B.root })), n.createElement(h.Z, { onLayout: T ? void 0 : _, ref: A, style: [P ? Le.Z.expanded : null, Le.Z.main] }, C ? n.createElement(E.Z.Provider, { value: rt }, n.createElement(Ae, { conversationId: C, history: o, isHeaderHighlighted: H, location: s, onDrawerOpen: R, perspective: c, triggerHeaderHighlight: M, typingNotifier: Z })) : n.createElement(E.Z.Provider, { value: tt }, n.createElement($e, { isHeaderHighlighted: H, onDrawerOpen: R, triggerHeaderHighlight: M }))))))),
                       )
                     : null;
             }
@@ -399,7 +399,7 @@
                 return n.createElement(at, { isHideDMDrawerPath: o, width: e });
             }
         },
-        452693: (e, t, r) => {
+        377782: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 a = r(890601),
@@ -407,7 +407,7 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2.59l9.46 9.45-1.42 1.42L12 5.41l-8.04 8.05-1.42-1.42L12 2.59zm0 7l9.46 9.45-1.42 1.42L12 12.41l-8.04 8.05-1.42-1.42L12 9.59z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -430,4 +430,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.c066153a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.2f1bb4ea.js.map

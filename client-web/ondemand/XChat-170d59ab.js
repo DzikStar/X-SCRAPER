@@ -9,9 +9,9 @@
                     t,
                     o,
                     i,
+                    c,
                     l,
                     s,
-                    c,
                     n = Math.imul,
                     u = r.$_$.w7,
                     p = r.$_$.t6,
@@ -45,8 +45,8 @@
                     G = r.$_$.gb,
                     H = r.$_$.t3,
                     P = r.$_$.i2,
-                    z = r.$_$.mi,
-                    j = r.$_$.xj,
+                    j = r.$_$.mi,
+                    z = r.$_$.xj,
                     F = r.$_$.ye,
                     M = r.$_$.we,
                     Y = r.$_$.pi,
@@ -55,28 +55,28 @@
                     K = r.$_$.id;
                 function Q(k) {
                     return (function (k, r) {
-                        return W.call(r), u(r.dda_1, k), r;
+                        return W.call(r), u(r.adc_1, k), r;
                     })(k, g(d(W)));
                 }
                 function W() {
                     tk.call(this);
-                    this.dda_1 = m();
+                    this.adc_1 = m();
                 }
                 function X(k, r) {
                     for (var e = b(f(r, 10)), a = r.p(); a.q(); ) {
                         var t = a.r(),
                             o = t.ph(),
                             i = t.qh(),
-                            l = q(i, o);
-                        e.k(l);
+                            c = q(i, o);
+                        e.k(c);
                     }
                     return e;
                 }
                 function kk() {
                     (e = this),
-                        (this.gda_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
-                        (this.hda_1 = X(0, this.gda_1)),
-                        (this.ida_1 = v([
+                        (this.ddc_1 = v([q("<", "&gt;"), q(">", "&lt;"), q('"', "&quot;"), q("'", "&apos;"), q("&", "&amp;")])),
+                        (this.edc_1 = X(0, this.ddc_1)),
+                        (this.fdc_1 = v([
                             q("'", "&apos;"),
                             q(" ", "&nbsp"),
                             q(" ", "&nbsp;"),
@@ -431,7 +431,7 @@
                             q("♥", "&hearts;"),
                             q("♦", "&diams;"),
                         ])),
-                        (this.jda_1 = X(0, this.ida_1));
+                        (this.gdc_1 = X(0, this.fdc_1));
                     var k = m();
                     k.k(q("Æ", "&AElig")),
                         k.k(q("Æ", "&AElig;")),
@@ -2664,8 +2664,8 @@
                         k.k(q("𝓏", "&zscr;")),
                         k.k(q("‍", "&zwj;")),
                         k.k(q("‌", "&zwnj;")),
-                        (this.kda_1 = w(k)),
-                        (this.lda_1 = X(0, this.kda_1));
+                        (this.hdc_1 = w(k)),
+                        (this.idc_1 = X(0, this.hdc_1));
                 }
                 function rk() {
                     return null == e && new kk(), e;
@@ -2673,25 +2673,25 @@
                 function ek() {
                     a = this;
                     var k = v([q("\0", ""), q("\v", "&#11;"), q("\f", "&#12;"), q("￾", ""), q("￿", "")]);
-                    (this.nda_1 = Q([new ak(rk().gda_1), new ak(k), s.mda(1, 8), s.mda(14, 31), s.mda(127, 132), s.mda(134, 159), new mk()])), (this.oda_1 = Q([new ak(rk().ida_1)])), (this.pda_1 = Q([new ak(rk().kda_1), s.mda(1, 8), s.mda(14, 31), s.mda(127, 132), s.mda(134, 159)])), (this.qda_1 = Q([new ak(rk().jda_1), new pk([])])), (this.rda_1 = Q([new ak(rk().lda_1), new pk([])])), (this.sda_1 = Q([new ak(rk().hda_1), new pk([])]));
+                    (this.kdc_1 = Q([new ak(rk().ddc_1), new ak(k), l.jdc(1, 8), l.jdc(14, 31), l.jdc(127, 132), l.jdc(134, 159), new mk()])), (this.ldc_1 = Q([new ak(rk().fdc_1)])), (this.mdc_1 = Q([new ak(rk().hdc_1), l.jdc(1, 8), l.jdc(14, 31), l.jdc(127, 132), l.jdc(134, 159)])), (this.ndc_1 = Q([new ak(rk().gdc_1), new pk([])])), (this.odc_1 = Q([new ak(rk().idc_1), new pk([])])), (this.pdc_1 = Q([new ak(rk().edc_1), new pk([])]));
                 }
                 function ak(k) {
                     tk.call(this);
-                    this.vda_1 = E();
-                    this.wda_1 = A();
+                    this.sdc_1 = E();
+                    this.tdc_1 = A();
                     for (var r = 2147483647, e = 0, a = k.p(); a.q(); ) {
                         var t = a.r(),
                             o = t.ph(),
                             i = t.qh();
-                        this.vda_1.u2(o, i);
-                        var l = D(o, 0),
-                            s = L(l),
-                            c = S(x(s));
-                        this.wda_1.k(new _(c));
+                        this.sdc_1.u2(o, i);
+                        var c = D(o, 0),
+                            l = L(c),
+                            s = S(x(l));
+                        this.tdc_1.k(new _(s));
                         var n = o.length;
                         n < r && (r = n), n > e && (e = n);
                     }
-                    (this.xda_1 = r), (this.yda_1 = e);
+                    (this.udc_1 = r), (this.vdc_1 = e);
                 }
                 function tk() {}
                 function ok() {
@@ -2699,19 +2699,19 @@
                 }
                 function ik() {
                     if (i) return p;
-                    (i = !0), (t = new lk("SemiColonRequired", 0)), new lk("SemiColonOptional", 1), (o = new lk("ErrorIfNoSemiColon", 2));
+                    (i = !0), (t = new ck("SemiColonRequired", 0)), new ck("SemiColonOptional", 1), (o = new ck("ErrorIfNoSemiColon", 2));
                 }
-                function lk(k, r) {
+                function ck(k, r) {
                     O.call(this, k, r);
                 }
-                function sk(k, r) {
-                    return k.adb_1.w(r);
+                function lk(k, r) {
+                    return k.xdc_1.w(r);
                 }
-                function ck() {
-                    (l = this), (this.bdb_1 = B(uk()));
+                function sk() {
+                    (c = this), (this.ydc_1 = B(uk()));
                 }
                 function nk() {
-                    return null == l && new ck(), l;
+                    return null == c && new sk(), c;
                 }
                 function uk() {
                     return ik(), t;
@@ -2719,11 +2719,11 @@
                 function pk(k) {
                     nk(), tk.call(this);
                     var r;
-                    (r = 0 === k.length ? nk().bdb_1 : G(k.slice())), (this.adb_1 = r);
+                    (r = 0 === k.length ? nk().ydc_1 : G(k.slice())), (this.xdc_1 = r);
                 }
                 function dk() {}
                 function gk(k, r) {
-                    ok.call(this), (this.fdb_1 = k), (this.gdb_1 = r);
+                    ok.call(this), (this.cdd_1 = k), (this.ddd_1 = r);
                 }
                 function mk() {
                     ok.call(this);
@@ -2740,7 +2740,7 @@
                         })(0, r));
                 }
                 function fk() {
-                    (this.cdb_1 = 65536), (this.ddb_1 = 1114111);
+                    (this.zdc_1 = 65536), (this.add_1 = 1114111);
                 }
                 h(tk, "StringTranslator"),
                     h(W, "AggregateTranslator", W, tk),
@@ -2748,8 +2748,8 @@
                     y(ek, "KsoupEntities"),
                     h(ak, "LookupTranslator", R, tk),
                     h(ok, "CodePointTranslator", R, tk),
-                    h(lk, "Option", R, O),
-                    I(ck),
+                    h(ck, "Option", R, O),
+                    I(sk),
                     h(pk, "NumericEntityDecoder", R, tk),
                     I(dk),
                     h(
@@ -2763,45 +2763,45 @@
                     ),
                     h(mk, "UnicodeUnpairedSurrogateRemover", mk, ok),
                     y(fk, "CharsUtils"),
-                    (d(W).eda = function (k, r, e) {
-                        for (var a = this.dda_1.p(); a.q(); ) {
-                            var t = a.r().eda(k, r, e);
+                    (d(W).bdc = function (k, r, e) {
+                        for (var a = this.adc_1.p(); a.q(); ) {
+                            var t = a.r().bdc(k, r, e);
                             if (0 !== t) return t;
                         }
                         return 0;
                     }),
-                    (d(ek).tda = function (k) {
-                        return this.rda_1.fda(k);
+                    (d(ek).qdc = function (k) {
+                        return this.odc_1.cdc(k);
                     }),
-                    (d(ek).uda = function (k) {
-                        return this.tda(k);
+                    (d(ek).rdc = function (k) {
+                        return this.qdc(k);
                     }),
-                    (d(ak).eda = function (k, r, e) {
+                    (d(ak).bdc = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a),
                             o = S(x(t));
-                        if (this.wda_1.w(new _(o))) {
-                            var i = this.yda_1;
-                            ((r + this.yda_1) | 0) > k.length && (i = (k.length - r) | 0);
-                            var l = i,
-                                s = this.xda_1;
-                            if (s <= l)
+                        if (this.tdc_1.w(new _(o))) {
+                            var i = this.vdc_1;
+                            ((r + this.vdc_1) | 0) > k.length && (i = (k.length - r) | 0);
+                            var c = i,
+                                l = this.udc_1;
+                            if (l <= c)
                                 do {
-                                    var c = l;
-                                    l = (l + -1) | 0;
-                                    var n = T(k, r, (r + c) | 0),
-                                        u = this.vda_1.r2($(n));
+                                    var s = c;
+                                    c = (c + -1) | 0;
+                                    var n = T(k, r, (r + s) | 0),
+                                        u = this.sdc_1.r2($(n));
                                     if (null != u) return e.f9(u), N(n);
-                                } while (c !== s);
+                                } while (s !== l);
                         }
                         return 0;
                     }),
-                    (d(tk).fda = function (k) {
+                    (d(tk).cdc = function (k) {
                         var r = V(n(k.length, 2));
                         return (
                             (function (k, r, e) {
                                 for (var a = 0, t = r.length; a < t; ) {
-                                    var o = k.eda(r, a, e);
+                                    var o = k.bdc(r, a, e);
                                     if (0 !== o) {
                                         var i = 0;
                                         if (i < o)
@@ -2809,10 +2809,10 @@
                                                 (i = (i + 1) | 0), (a = (a + 1) | 0);
                                             } while (i < o);
                                     } else {
-                                        var l = D(r, a);
-                                        if ((e.g9(l), (a = (a + 1) | 0), C(l) && a < t)) {
-                                            var s = D(r, a);
-                                            U(s) && (e.g9(s), (a = (a + 1) | 0));
+                                        var c = D(r, a);
+                                        if ((e.g9(c), (a = (a + 1) | 0), C(c) && a < t)) {
+                                            var l = D(r, a);
+                                            U(l) && (e.g9(l), (a = (a + 1) | 0));
                                         }
                                     }
                                 }
@@ -2820,57 +2820,57 @@
                             r.toString()
                         );
                     }),
-                    (d(ok).eda = function (k, r, e) {
+                    (d(ok).bdc = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a);
-                        return this.zda(t, e) ? 1 : 0;
+                        return this.wdc(t, e) ? 1 : 0;
                     }),
-                    (d(pk).eda = function (k, r, e) {
+                    (d(pk).bdc = function (k, r, e) {
                         var a = k.length;
                         if (D(k, r) === H(38) && r < ((a - 2) | 0) && D(k, (r + 1) | 0) === H(35)) {
                             var t = (r + 2) | 0,
                                 i = !1,
-                                l = D(k, t);
-                            if ((l === H(120) || l === H(88)) && ((i = !0), (t = (t + 1) | 0) === a)) return 0;
-                            var s = t;
+                                c = D(k, t);
+                            if ((c === H(120) || c === H(88)) && ((i = !0), (t = (t + 1) | 0) === a)) return 0;
+                            var l = t;
                             k: for (;;) {
                                 var n;
-                                if (s < a) {
+                                if (l < a) {
                                     var u,
                                         p,
-                                        d = D(k, s);
+                                        d = D(k, l);
                                     if (H(48) <= d && d <= H(57)) p = !0;
                                     else {
-                                        var g = D(k, s);
+                                        var g = D(k, l);
                                         p = H(97) <= g && g <= H(102);
                                     }
                                     if (p) u = !0;
                                     else {
-                                        var m = D(k, s);
+                                        var m = D(k, l);
                                         u = H(65) <= m && m <= H(70);
                                     }
                                     n = u;
                                 } else n = !1;
                                 if (!n) break k;
-                                s = (s + 1) | 0;
+                                l = (l + 1) | 0;
                             }
                             var h,
-                                f = !(s === a) && D(k, s) === H(59);
+                                f = !(l === a) && D(k, l) === H(59);
                             if (!f) {
-                                if (sk(this, uk())) return 0;
-                                if (sk(this, (ik(), o))) throw P("Semi-colon required at end of numeric entity");
+                                if (lk(this, uk())) return 0;
+                                if (lk(this, (ik(), o))) throw P("Semi-colon required at end of numeric entity");
                             }
                             try {
-                                h = z($(T(k, t, s)), i ? 16 : 10);
+                                h = j($(T(k, t, l)), i ? 16 : 10);
                             } catch (k) {
-                                if (k instanceof j) {
+                                if (k instanceof z) {
                                     return 0;
                                 }
                                 throw k;
                             }
                             var b = h;
                             if (b > 65535)
-                                for (var q = c.edb(b), v = 0, w = q.length; v < w; ) {
+                                for (var q = s.bdd(b), v = 0, w = q.length; v < w; ) {
                                     var y = q[v];
                                     (v = (v + 1) | 0), e.g9(y);
                                 }
@@ -2886,17 +2886,17 @@
                                 var S = F(b);
                                 e.g9(S);
                             }
-                            return (((((((2 + s) | 0) - t) | 0) + (i ? 1 : 0)) | 0) + (f ? 1 : 0)) | 0;
+                            return (((((((2 + l) | 0) - t) | 0) + (i ? 1 : 0)) | 0) + (f ? 1 : 0)) | 0;
                         }
                         return 0;
                     }),
-                    (d(dk).mda = function (k, r) {
+                    (d(dk).jdc = function (k, r) {
                         return new gk(M(k, r), !0);
                     }),
-                    (d(gk).zda = function (k, r) {
-                        return this.gdb_1 === this.fdb_1.jm(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
+                    (d(gk).wdc = function (k, r) {
+                        return this.ddd_1 === this.cdd_1.jm(k) && (r.f9("&#"), r.f9(Y(k, 10)), r.g9(H(59)), !0);
                     }),
-                    (d(mk).zda = function (k, r) {
+                    (d(mk).wdc = function (k, r) {
                         var e,
                             a = H(55296);
                         if (k >= L(a)) {
@@ -2905,7 +2905,7 @@
                         } else e = !1;
                         return e;
                     }),
-                    (d(fk).edb = function (k) {
+                    (d(fk).bdd = function (k) {
                         var r;
                         if (
                             (function (k, r) {
@@ -2925,8 +2925,8 @@
                         }
                         return r;
                     }),
-                    (s = new dk()),
-                    (c = new fk()),
+                    (l = new dk()),
+                    (s = new fk()),
                     (k.$_$ = k.$_$ || {}),
                     (k.$_$.a = function () {
                         return null == a && new ek(), a;
@@ -2935,4 +2935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.557e3b6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.14cababa.js.map
