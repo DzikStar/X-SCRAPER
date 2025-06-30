@@ -152,7 +152,7 @@
                 h = a.x8,
                 f = i.forwardRef(({ className: e, ...t }, r) => (0, n.jsx)(a.aV, { ref: r, className: (0, l.cn)("data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/80", e), ...t }));
             f.displayName = a.aV.displayName;
-            const m = i.forwardRef(({ children: e, className: t, withCloseButton: r = !0, ...s }, i) => (0, n.jsxs)(u, { children: [(0, n.jsx)(f, {}), (0, n.jsxs)(a.VY, { ref: i, className: (0, l.cn)("bg-background data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:fade-out data-[state=open]:fade-in fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-gray-100 px-6 pt-6 shadow-lg duration-200 rounded-xl", t), ...s, children: [e, r && (0, n.jsxs)(a.x8, { tabIndex: -1, className: "ring-offset-background focus:ring-ring absolute right-4 top-4 rounded opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-gray-200 data-[state=open]:text-gray-700", children: [(0, n.jsx)(o.Z, { className: "h-4 w-4 text-gray-900" }), (0, n.jsx)("span", { className: "sr-only", children: "Close" })] })] })] }));
+            const m = i.forwardRef(({ children: e, className: t, withCloseButton: r = !0, ...s }, i) => (0, n.jsxs)(u, { children: [(0, n.jsx)(f, {}), (0, n.jsxs)(a.VY, { ref: i, className: (0, l.cn)("bg-background data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:fade-out data-[state=open]:fade-in fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border border-gray-100 p-6 shadow-lg duration-200 rounded-xl", t), ...s, children: [e, r && (0, n.jsxs)(a.x8, { tabIndex: -1, className: "ring-offset-background focus:ring-ring absolute right-4 top-4 rounded opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-gray-200 data-[state=open]:text-gray-700", children: [(0, n.jsx)(o.Z, { className: "h-4 w-4 text-gray-900" }), (0, n.jsx)("span", { className: "sr-only", children: "Close" })] })] })] }));
             m.displayName = a.VY.displayName;
             const p = ({ className: e, ...t }) => (0, n.jsx)("div", { className: (0, l.cn)("flex flex-col space-y-1.5 text-center sm:text-left", e), ...t });
             p.displayName = "DialogHeader";
@@ -341,4 +341,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.XChat-866ab763.2ba9baba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.XChat-866ab763.d4cfd1fa.js.map

@@ -1316,10 +1316,10 @@
                 n("a02d1657", function (e) {
                     return "正在執行程式碼" + e.ttc_tool_usage_card;
                 }),
-                n("aa9d42c0", "Searching the web"),
-                n("dce1817a", "Searching on 𝕏"),
-                n("f7151564", "Searching users on 𝕏"),
-                n("c43ef93e", "Browsing web page"),
+                n("aa9d42c0", "正在搜尋網路"),
+                n("dce1817a", "正在 𝕏 上搜尋"),
+                n("f7151564", "正在 𝕏 上搜尋使用者"),
+                n("c43ef93e", "正在瀏覽網頁"),
                 n("jb097f6e", "正在執行程式碼"),
                 n("ead81122", "發生錯誤，請重新整理以重新連線或再試一次。"),
                 n("f808a13a", "已超出使用頻率限制。請稍後再試。"),
@@ -1367,11 +1367,11 @@
                 n("e0bffbf8", "關於自動翻譯"),
                 n("e839db3a", "關閉"),
                 n("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "自動翻譯" + e.language;
                 }),
-                n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("f9317b98", "language settings"),
-                n("hba0547a", "Unable to update settings. Please try again later."),
+                n("c60b9e5c", "變更將對新載入的內容生效。"),
+                n("f9317b98", "語言設定"),
+                n("hba0547a", "無法更新設定。請稍後再試。"),
                 n("d4c339b9", function (e) {
                     return "來自 " + e.fullName + " (@" + e.screenName + ") 的貼文";
                 }),
@@ -7399,10 +7399,10 @@
                 n("d94f12b6", "嘗試搜尋通知、隱私等。"),
                 n("ba8f6f82", "搜尋設定"),
                 n("ibf92e4a", "付款成功"),
-                n("bdf0fb06", "Your subscription has been activated."),
+                n("bdf0fb06", "你的訂閱已啟用。"),
                 n("ddfd6718", "付款失敗"),
                 n("d42fa852", "處理你的付款時出現問題。請再試一次。"),
-                n("g055a9ce", "Open 𝕏 App"),
+                n("g055a9ce", "開啟 𝕏 應用程式"),
                 n("g931a6e5", function (e) {
                     return "你正在跟隨 " + e.topic;
                 }),
@@ -10164,7 +10164,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok 將根據你的 X 使用情況和", "自動翻譯。你也可以在下方切換自動翻譯設定。"];
                             },
                         },
                         {
@@ -13035,8 +13035,8 @@
                 y = (m._currencyNameFormat, m._currencyFormatterFn),
                 k = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 p = (m._dateFormat, m._dateFormatterFn),
-                l = m._relativeTimeFormatterFn,
-                j = m._unitFormatterFn;
+                j = m._relativeTimeFormatterFn,
+                l = m._unitFormatterFn;
             (m.a1844743793 = h(["", , 1, 0, 1, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("truncate"), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { other: "0" }, 4: { other: "0萬" }, 5: { other: "00萬" }, 6: { other: "000萬" }, 7: { other: "0000萬" }, 8: { other: "0億" }, 9: { other: "00億" }, 10: { other: "000億" }, 11: { other: "0000億" }, 12: { other: "0兆" }, 13: { other: "00兆" }, 14: { other: "000兆" }, maxExponent: 14 }], m("zh-Hant").pluralGenerator({}))),
                 (m.a1393757629 = h(["", , 1, 0, 3, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g(), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
                 (m.a917643357 = h(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", g("round"), "∞", "非數值", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
@@ -13235,23 +13235,23 @@
                 (m.a2136887717 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b166302607 = p(m("zh-Hant").dateToPartsFormatter({ date: "medium" }))),
                 (m.a883642277 = p(m("zh-Hant").dateToPartsFormatter({ skeleton: "MMMM" }))),
-                (m.a913265705 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
-                (m.a1728784644 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "每秒 {0}" } })),
-                (m.b158178652 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "每分鐘 {0}" } })),
-                (m.b1120716236 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "每小時 {0}" } })),
-                (m.a901064517 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
-                (m.a5535973 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
-                (m.b1575113611 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
-                (m.b313558257 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "{0}/天" } })),
-                (m.a266069838 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "每天 {0}" } })),
-                (m.b1088937037 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "{0}/月" } })),
-                (m.a1883138290 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "每月 {0}" } })),
-                (m.b170551218 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "{0}/年" } })),
-                (m.a360073293 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "每年 {0}" } })),
-                (m.b508927224 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
-                (m.a1124752744 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
-                (m.a1350858712 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
-                (m.b197980252 = j(m("zh-Hant").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a913265705 = j(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-other": "{0} 天後" }, "relativeTime-type-past": { "relativeTimePattern-count-other": "{0} 天前" }, "relative-type--2": "前天", "relative-type--1": "昨天", "relative-type-0": "今天", "relative-type-1": "明天", "relative-type-2": "後天" })),
+                (m.a1728784644 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "每秒 {0}" } })),
+                (m.b158178652 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "每分鐘 {0}" } })),
+                (m.b1120716236 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "每小時 {0}" } })),
+                (m.a901064517 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a5535973 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
+                (m.b1575113611 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
+                (m.b313558257 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "{0}/天" } })),
+                (m.a266069838 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "天", other: "{0} 天", perUnitPattern: "每天 {0}" } })),
+                (m.b1088937037 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "{0}/月" } })),
+                (m.a1883138290 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "月", other: "{0} 個月", perUnitPattern: "每月 {0}" } })),
+                (m.b170551218 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "{0}/年" } })),
+                (m.a360073293 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "每{1} {0}", unitProperties: { displayName: "年", other: "{0} 年", perUnitPattern: "每年 {0}" } })),
+                (m.b508927224 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
+                (m.a1124752744 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "分鐘", other: "{0} 分鐘", perUnitPattern: "{0}/分鐘" } })),
+                (m.a1350858712 = l(m("zh-Hant").numberFormatter({}), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "小時", other: "{0} 小時", perUnitPattern: "{0}/小時" } })),
+                (m.b197980252 = l(m("zh-Hant").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("zh-Hant").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "秒", other: "{0} 秒", perUnitPattern: "{0}/秒" } })),
                 n("d58baa7f", m.a1844743793),
                 n("ia24dc8d", m.a1393757629),
                 n("iab73d4b", m.a917643357),
@@ -13376,4 +13376,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.0ce6523a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.7d3f9a8a.js.map

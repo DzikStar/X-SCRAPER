@@ -2,10 +2,10 @@
     ["bundle.Articles"],
     {
         879604: (e) => {
-            e.exports = { queryId: "F24lPM94Kv10u0lh3rgM6Q", operationName: "ArticleTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "oivb3xsC67bJEDfUn4zm3w", operationName: "ArticleTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         103508: (e) => {
-            e.exports = { queryId: "NWyC1xhVsxzBBI_-l_atIA", operationName: "ArticleTweetsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "v5h370SIxb6EftkjduXpPg", operationName: "ArticleTweetsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         4691: (e, t, n) => {
             "use strict";
@@ -317,11 +317,11 @@
                             q = (e) => {
                                 x.scribe({ element: v ? "read_article" : "article_header", action: "open_link", data: W });
                             },
-                            K = () => {
+                            j = () => {
                                 x.scribe({ element: "conversation_view", action: "click", data: W });
                             },
-                            j = N ? S.getLinkFromUrtUrl(N) : void 0,
-                            V = j ? S.withAnchorless(j) : void 0,
+                            K = N ? S.getLinkFromUrtUrl(N) : void 0,
+                            V = K ? S.withAnchorless(K) : void 0,
                             U = V
                                 ? {
                                       ...V,
@@ -332,7 +332,7 @@
                                   }
                                 : void 0,
                             G = i.createElement(i.Fragment, null, i.createElement(r.Z, { style: R.horizontalContainer }, i.createElement(r.Z, { style: R.textContainer }, i.createElement(l.Z, { style: R.middotGroup }, F && i.createElement(s.ZP, { color: "gray700", id: D.domain, size: "subtext2", weight: "bold" }, F), B && i.createElement(s.ZP, { color: "gray700", id: D.timestamp, size: "subtext2" }, i.createElement(c.Z, { timestamp: B }))), i.createElement(s.ZP, { color: "text", id: D.title, link: U, numberOfLines: 3, size: "headline2", style: R.text, weight: "bold", withInteractiveStyling: !1 }, P), T ? i.createElement(s.ZP, { id: D.description, numberOfLines: 2 }, T) : null, v ? i.createElement(r.Z, { style: R.buttonContainer }, i.createElement(d.ZP, { link: H, onClick: q, size: "xSmall", type: "primaryOutlined" }, L)) : null), M ? i.createElement(r.Z, { style: R.imageContainer }, i.createElement(u.Z, { ratio: p.default.theme.aspectRatios.square }, i.createElement(m.Z, { "aria-label": "", aspectMode: _.Z.SQUARE, image: M }))) : null), i.createElement(h.Z, { contextType: "Facepile", iconSize: "large", id: D.socialContext, text: $, textSize: "subtext2", userAvatarUrls: z, withLeftPadding: !1, withTextCentered: !0 }));
-                        return v ? i.createElement(k.Z, { exact: !1, path: U?.pathname || "" }, (e) => i.createElement(g.Z, { "aria-labelledby": A.join(" "), "aria-selected": e, link: U, onClick: K, role: "article", style: R.container }, G)) : i.createElement(b.Z, { link: H, onClick: q, style: [R.container, R.bottomBorder] }, G);
+                        return v ? i.createElement(k.Z, { exact: !1, path: U?.pathname || "" }, (e) => i.createElement(g.Z, { "aria-labelledby": A.join(" "), "aria-selected": e, link: U, onClick: j, role: "article", style: R.container }, G)) : i.createElement(b.Z, { link: H, onClick: q, style: [R.container, R.bottomBorder] }, G);
                     }),
                 );
         },
@@ -403,8 +403,8 @@
                     .propsFromState(() => ({ seedType: M, showFriendsOfFriendsNUX: $, timeWindowQuery: H }))
                     .propsFromActions(() => ({ addFlag: f.pj }))
                     .withAnalytics({ page: "top_articles", section: "top_articles" }),
-                K = s().b7fa0cfe,
-                j = s().e15e5637,
+                j = s().b7fa0cfe,
+                K = s().e15e5637,
                 V = s().af293dc2,
                 U = s().h5ab8b0e,
                 G = s().e15e5637,
@@ -480,7 +480,7 @@
                             return t > -1 ? t : 0;
                         })(E),
                         le = i.useMemo(() => ((e, t = 864e5) => (0, k.Z)({ timelineId: `articlesTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(w.ZP).fetchArticleTimeline, getEndpointParams: ({ count: n, cursor: i }) => ({ count: n, cursor: "string" == typeof i ? i : void 0, articleListSeedType: e, timeWindowMillis: t }) }, context: "FETCH_TOP_ARTICLES_TIMELINE", perfKey: "articlesTimeline", formatResponse: C.Z }))(E, te(x || 24)), [E, x]);
-                    return i.createElement(i.Fragment, null, i.createElement(g.Z, { title: K }), i.createElement(p.Z, { rightControl: T ? $ : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: j({ count: x || 24 }), title: i.createElement(_.Z, { text: K }) }, F ? i.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, i.createElement(O, { module: le, onEntriesChanged: A })));
+                    return i.createElement(i.Fragment, null, i.createElement(g.Z, { title: j }), i.createElement(p.Z, { rightControl: T ? $ : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: K({ count: x || 24 }), title: i.createElement(_.Z, { text: j }) }, F ? i.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, i.createElement(O, { module: le, onEntriesChanged: A })));
                 },
                 ae = q(oe);
         },
@@ -1197,7 +1197,7 @@
             }
             const a = new o();
         },
-        98440: (e, t, n) => {
+        452693: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var i = n(202784),
@@ -1206,7 +1206,7 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -1218,4 +1218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles.ac2c7aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles.ad9a4e8a.js.map

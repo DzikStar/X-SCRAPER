@@ -83,19 +83,20 @@
                         }),
                         (this._fetchNoteTranslation = () => {
                             const {
-                                    createLocalApiErrorHandler: e,
-                                    fetchNoteTranslation: t,
-                                    fetchStreamedGrokNoteTranslation: a,
-                                    note: n,
-                                    note: { rest_id: i },
+                                    analytics: e,
+                                    createLocalApiErrorHandler: t,
+                                    fetchNoteTranslation: a,
+                                    fetchStreamedGrokNoteTranslation: n,
+                                    note: i,
+                                    note: { rest_id: o },
                                 } = this.props,
-                                { featureSwitches: o } = this.context,
-                                l = this._isGrokTranslationEnabledForCommunityNote(),
-                                r = o.isTrue("responsive_web_grok_community_note_translation_is_enabled");
-                            if ((this._scribeOnClick("translate")(), l && r)) {
-                                const e = n?.streamedNoteTranslation;
-                                e || a(i);
-                            } else t(i).catch(e());
+                                { featureSwitches: l } = this.context,
+                                r = this._isGrokTranslationEnabledForCommunityNote(),
+                                s = l.isTrue("responsive_web_grok_community_note_translation_is_enabled");
+                            if ((this._scribeOnClick("translate")(), r && s)) {
+                                const t = i?.streamedNoteTranslation;
+                                t || n(o, e);
+                            } else a(o).catch(t());
                         }),
                         (this._onNoteDetailsClick = () => {
                             this.setState({ noteDetailsOpen: !0 }), this._scribeOnClick("note_details")();
@@ -951,4 +952,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.ea6d37aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-018b0723.d486ed9a.js.map

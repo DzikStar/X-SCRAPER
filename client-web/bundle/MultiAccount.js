@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.MultiAccount", "icons/IconFeedback-js"],
+    ["bundle.MultiAccount"],
     {
         929446: (e, t, r) => {
             r.d(t, { Z: () => n });
@@ -306,12 +306,12 @@
                         },
                         [z],
                     ),
-                    K = a.useCallback(({ badgeCount: e, isActiveUser: t, withBadges: r }) => (t ? (E ? a.createElement(h.default, { style: [N.IconCheckmarkCircleFill, N.userDecoration] }) : a.createElement(f.default, { style: [N.iconCheckMark, N.userDecoration] })) : e && r ? a.createElement(l.Z, { count: e, standalone: !0, style: N.userDecoration, truncatedCountFormatter: W, unreadCountLabel: H }) : void 0), [E]),
-                    V = a.useMemo(() => (x ? Q : K), [x, K, Q]),
-                    G = a.useMemo(() => a.createElement(B.ZP, { activeUserId: d.id_str, delegateUser: k, isUpdatedManageAccounts: x, key: 0, onDelegateSwitch: _ ?? y.Z, renderUserDecoration: V }), [d.id_str, k, x, _, V]),
-                    j = a.useMemo(() => a.createElement(M, { accountUsers: r, activeUser: d, handleMultiAccountSwitch: I, isUpdatedManageAccounts: !!x, key: 1, renderUserDecoration: V, userTestId: Z, withBadges: A }), [r, d, I, x, V, Z, A]),
-                    O = [];
-                return !x && E && O.push(G), O.push(j), x && E && O.push(G), a.createElement(a.Fragment, null, x && E && a.createElement(n.Z, { style: N.personalAccountsLabel }, a.createElement(i.ZP, { color: "gray700", weight: "bold" }, R)), F ? a.createElement(a.Fragment, null, a.createElement(s.ZP, { affiliateBadgeInfo: d.highlightedLabel, avatarDecoration: x && a.createElement(v, { notificationCount: U + P }), avatarUri: d.profile_image_url_https, badgeContext: "account", decoration: V({ withBadges: A, isActiveUser: !k, isLoggedInUser: !0 }), displayMode: "UserCompact", isBlueVerified: d.is_blue_verified, isProtected: d.protected, isVerified: d.verified, name: d.name, onCellClick: L ? T : void 0, screenName: d.screen_name, testID: Z, userId: d.id_str, verifiedType: d.verified_type, withLink: !1 }), x && a.createElement(c.Z, { style: N.accountDivider })) : null, O, !x && (F || p || r.length) ? a.createElement(c.Z, { spacing: "space12" }) : null);
+                    V = a.useCallback(({ badgeCount: e, isActiveUser: t, withBadges: r }) => (t ? (E ? a.createElement(h.default, { style: [N.IconCheckmarkCircleFill, N.userDecoration] }) : a.createElement(f.default, { style: [N.iconCheckMark, N.userDecoration] })) : e && r ? a.createElement(l.Z, { count: e, standalone: !0, style: N.userDecoration, truncatedCountFormatter: W, unreadCountLabel: H }) : void 0), [E]),
+                    K = a.useMemo(() => (x ? Q : V), [x, V, Q]),
+                    G = a.useMemo(() => a.createElement(B.ZP, { activeUserId: d.id_str, delegateUser: k, isUpdatedManageAccounts: x, key: 0, onDelegateSwitch: _ ?? y.Z, renderUserDecoration: K }), [d.id_str, k, x, _, K]),
+                    O = a.useMemo(() => a.createElement(M, { accountUsers: r, activeUser: d, handleMultiAccountSwitch: I, isUpdatedManageAccounts: !!x, key: 1, renderUserDecoration: K, userTestId: Z, withBadges: A }), [r, d, I, x, K, Z, A]),
+                    j = [];
+                return !x && E && j.push(G), j.push(O), x && E && j.push(G), a.createElement(a.Fragment, null, x && E && a.createElement(n.Z, { style: N.personalAccountsLabel }, a.createElement(i.ZP, { color: "gray700", weight: "bold" }, R)), F ? a.createElement(a.Fragment, null, a.createElement(s.ZP, { affiliateBadgeInfo: d.highlightedLabel, avatarDecoration: x && a.createElement(v, { notificationCount: U + P }), avatarUri: d.profile_image_url_https, badgeContext: "account", decoration: K({ withBadges: A, isActiveUser: !k, isLoggedInUser: !0 }), displayMode: "UserCompact", isBlueVerified: d.is_blue_verified, isProtected: d.protected, isVerified: d.verified, name: d.name, onCellClick: L ? T : void 0, screenName: d.screen_name, testID: Z, userId: d.id_str, verifiedType: d.verified_type, withLink: !1 }), x && a.createElement(c.Z, { style: N.accountDivider })) : null, j, !x && (F || p || r.length) ? a.createElement(c.Z, { spacing: "space12" }) : null);
             }
             const N = d.default.create((e) => ({ iconCheckMark: { color: e.colors.primary, flexShrink: 0 }, IconCheckmarkCircleFill: { color: e.colors.green500, flexShrink: 0, marginEnd: e.spaces.space8 }, updatedIconCheckmarkCircleFill: { color: e.colors.green500, flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, IconExiting: { color: e.colors.red500, flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, IconChevronRight: { color: "inherit", flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, decorationsContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space12 }, accountDivider: { marginHorizontal: e.spaces.space16 }, userDecoration: { marginStart: e.spaces.space12 }, personalAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 } }));
         },
@@ -406,11 +406,11 @@
                 z = m().i859a9d4,
                 N = (0, o.ju)("https://help.x.com/managing-your-account/managing-multiple-twitter-accounts"),
                 Q = m().ae1bbb26,
-                K = m().bade139e,
-                V = m().ae33b982,
+                V = m().bade139e,
+                K = m().ae33b982,
                 G = m().fa07bf68,
-                j = m().d86bbf0f,
-                O = m().h6beb5fb;
+                O = m().d86bbf0f,
+                j = m().h6beb5fb;
             class $ extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -420,13 +420,13 @@
                             const e = this.context.featureSwitches.getNumberValue("responsive_web_multiple_account_limit", 5),
                                 { delegateAccountCount: t, users: r } = this.props,
                                 o = r.length >= e;
-                            return a.createElement(a.Fragment, null, o ? a.createElement(n.Z, { style: [q.whiteBackground, q.infoText, q.updatedAccountLimitText] }, a.createElement(l.ZP, { align: "center", color: "gray700" }, (t ? W : H)({ maxAccounts: e }), " ")) : a.createElement(i.ZP, { onPress: this._handleAddAccount, style: q.updatedAddAccountButton, testID: F }, a.createElement(l.ZP, { color: "buttonBlack", weight: "normal" }, P)), a.createElement(n.Z, { style: q.updatedLogoutAllButtonWrapper }, a.createElement(g.Z, { color: "red500", confirmationSheetConfirmButtonLabel: Q, confirmationSheetConfirmButtonType: "primary", confirmationSheetHeadline: V, confirmationSheetText: G, key: "logoutAllButton", label: K, onConfirmationSheetConfirm: this._handleLogoutAll, withBottomBorder: !1 })));
+                            return a.createElement(a.Fragment, null, o ? a.createElement(n.Z, { style: [q.whiteBackground, q.infoText, q.updatedAccountLimitText] }, a.createElement(l.ZP, { align: "center", color: "gray700" }, (t ? W : H)({ maxAccounts: e }), " ")) : a.createElement(i.ZP, { onPress: this._handleAddAccount, style: q.updatedAddAccountButton, testID: F }, a.createElement(l.ZP, { color: "buttonBlack", weight: "normal" }, P)), a.createElement(n.Z, { style: q.updatedLogoutAllButtonWrapper }, a.createElement(g.Z, { color: "red500", confirmationSheetConfirmButtonLabel: Q, confirmationSheetConfirmButtonType: "primary", confirmationSheetHeadline: K, confirmationSheetText: G, key: "logoutAllButton", label: V, onConfirmationSheetConfirm: this._handleLogoutAll, withBottomBorder: !1 })));
                         }),
                         (this._renderActions = () => {
                             const e = this.context.featureSwitches.getNumberValue("responsive_web_multiple_account_limit", 5),
                                 { users: t } = this.props,
                                 r = t.length >= e;
-                            return a.createElement(a.Fragment, null, a.createElement(s.Z, { align: "left", color: "primary", disabled: r, label: P, onPress: this._handleAddAccount, testID: F }), a.createElement(n.Z, { style: [q.whiteBackground, q.infoText] }, a.createElement(l.ZP, { color: "gray700" }, (r ? R : D)({ maxAccounts: e }), " ", a.createElement(l.ZP, { link: N }, z))), a.createElement(c.Z, null), a.createElement(g.Z, { color: "red500", confirmationSheetConfirmButtonLabel: Q, confirmationSheetConfirmButtonType: "primary", confirmationSheetHeadline: V, confirmationSheetText: G, key: "logoutAllButton", label: K, onConfirmationSheetConfirm: this._handleLogoutAll, withBottomBorder: !1 }));
+                            return a.createElement(a.Fragment, null, a.createElement(s.Z, { align: "left", color: "primary", disabled: r, label: P, onPress: this._handleAddAccount, testID: F }), a.createElement(n.Z, { style: [q.whiteBackground, q.infoText] }, a.createElement(l.ZP, { color: "gray700" }, (r ? R : D)({ maxAccounts: e }), " ", a.createElement(l.ZP, { link: N }, z))), a.createElement(c.Z, null), a.createElement(g.Z, { color: "red500", confirmationSheetConfirmButtonLabel: Q, confirmationSheetConfirmButtonType: "primary", confirmationSheetHeadline: K, confirmationSheetText: G, key: "logoutAllButton", label: V, onConfirmationSheetConfirm: this._handleLogoutAll, withBottomBorder: !1 }));
                         }),
                         (this._renderUsers = () => {
                             const { clearDelegateUser: e, delegateAccountCount: t, delegateUser: r, loggedInUser: n, users: o, withBadges: l = !1 } = this.props;
@@ -435,7 +435,7 @@
                             return a.createElement(b.a, i);
                         }),
                         (this._renderCurrentUserCheckmark = () => a.createElement(h.default, { "aria-label": M, style: q.iconCheckMark })),
-                        (this._renderBadge = (e) => (e ? a.createElement(n.Z, null, a.createElement(d.Z, { count: e, standalone: !0, truncatedCountFormatter: O, unreadCountLabel: j })) : null)),
+                        (this._renderBadge = (e) => (e ? a.createElement(n.Z, null, a.createElement(d.Z, { count: e, standalone: !0, truncatedCountFormatter: j, unreadCountLabel: O })) : null)),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchMultiAccountListIfNeeded: t } = this.props;
                             t().catch(e());
@@ -697,11 +697,11 @@
                                 z = a.createElement(y.default, { style: v }),
                                 N = a.createElement(b.default, { style: v }),
                                 Q = a.createElement(C.default, { style: v }),
-                                K = a.createElement(w.default, { style: v }),
-                                V = a.createElement(k.default, { style: v }),
+                                V = a.createElement(w.default, { style: v }),
+                                K = a.createElement(k.default, { style: v }),
                                 G = a.createElement(E.default, { style: v }),
-                                j = a.createElement(B.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: n }),
-                                O = a.createElement(x.default, { style: v });
+                                O = a.createElement(B.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: n }),
+                                j = a.createElement(x.default, { style: v });
                             switch (e) {
                                 case Z.Q.Pin:
                                 case Z.Q.ReplyPin:
@@ -737,13 +737,13 @@
                                 case Z.Q.FollowFollowed:
                                     return G;
                                 case Z.Q.FollowMutual:
-                                    return V;
-                                case Z.Q.FollowFollowing:
                                     return K;
+                                case Z.Q.FollowFollowing:
+                                    return V;
                                 case Z.Q.Facepile:
-                                    return j;
-                                case Z.Q.Bird:
                                     return O;
+                                case Z.Q.Bird:
+                                    return j;
                                 case Z.Q.TextOnly:
                                 default:
                                     return null;
@@ -999,7 +999,7 @@
             r.d(t, { H: () => a });
             const a = ({ description: e, entities: t, withheldDescription: r, withheldEntities: a }) => (r ? { description: r, entities: a } : { description: e, entities: t });
         },
-        790093: (e, t, r) => {
+        748138: (e, t, r) => {
             r.r(t), r.d(t, { default: () => s });
             var a = r(202784),
                 n = r(890601),
@@ -1007,20 +1007,7 @@
                 l = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        98440: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => s });
-            var a = r(202784),
-                n = r(890601),
-                o = r(783427),
-                l = r(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
@@ -1034,4 +1021,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MultiAccount.6841b13a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MultiAccount.7695264a.js.map

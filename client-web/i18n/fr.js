@@ -1372,7 +1372,7 @@
                 n("e0bffbf8", "À propos de la traduction automatique"),
                 n("e839db3a", "Ignorer"),
                 n("e7a86c77", function (e) {
-                    return e.language + " : traduire automatiquement ";
+                    return e.language + " : traduire automatiquement";
                 }),
                 n("c60b9e5c", "Les modifications seront effectives pour les nouveaux contenus chargés."),
                 n("f9317b98", "Paramètres de langue"),
@@ -13371,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.91c1b2fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.b4c3ae5a.js.map

@@ -2,60 +2,60 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"],
     {
-        549116: (e, t, n) => {
-            n.d(t, { NR: () => l, Yt: () => c });
+        549116: (t, e, n) => {
+            n.d(e, { NR: () => l, Yt: () => c });
             var s = n(499627),
                 r = n(56519);
             const i = "liveTweetCounts",
                 o = "rweb/liveTweetCounts/UPDATE",
                 a = {};
-            function c(e, t) {
-                return e[i][t];
+            function c(t, e) {
+                return t[i][e];
             }
-            function l(e) {
-                return (t, n) => t({ payload: e, type: o });
+            function l(t) {
+                return (e, n) => e({ payload: t, type: o });
             }
             s.Z.register({
-                [i]: function (e = a, t) {
-                    if (!t) return e;
-                    switch (t.type) {
+                [i]: function (t = a, e) {
+                    if (!e) return t;
+                    switch (e.type) {
                         case r.ud: {
-                            const n = t.payload?.tweets;
+                            const n = e.payload?.tweets;
                             if (n) {
-                                const t = { ...e };
+                                const e = { ...t };
                                 return (
-                                    Object.keys(n).forEach((e) => {
-                                        t[e] && delete t[e];
+                                    Object.keys(n).forEach((t) => {
+                                        e[t] && delete e[t];
                                     }),
-                                    t
+                                    e
                                 );
                             }
-                            return e;
+                            return t;
                         }
                         case o:
-                            return { ...e, [t.payload.tweetId]: { ...e[t.payload.tweetId], ...t.payload.liveCounts } };
+                            return { ...t, [e.payload.tweetId]: { ...t[e.payload.tweetId], ...e.payload.liveCounts } };
                         default:
-                            return e;
+                            return t;
                     }
                 },
             });
         },
-        137855: (e, t, n) => {
-            n.d(t, { HP: () => a, NR: () => c });
+        137855: (t, e, n) => {
+            n.d(e, { HP: () => a, NR: () => c });
             var s = n(499627);
             const r = "nudges",
                 i = { actioned_tweets: {} },
                 o = "rweb/nudges/SET_TWEET_NUDGE_ACTION_TAKEN";
             s.Z.register({
-                [r]: function (e = i, t) {
-                    return t && t.type === o && t.payload ? { ...e, actioned_tweets: { ...e.actioned_tweets, [t.payload]: !0 } } : e;
+                [r]: function (t = i, e) {
+                    return e && e.type === o && e.payload ? { ...t, actioned_tweets: { ...t.actioned_tweets, [e.payload]: !0 } } : t;
                 },
             });
-            const a = (e, t) => !!e[r].actioned_tweets[t],
-                c = (e) => ({ type: o, payload: e });
+            const a = (t, e) => !!t[r].actioned_tweets[e],
+                c = (t) => ({ type: o, payload: t });
         },
-        694180: (e, t, n) => {
-            n.d(t, { cM: () => T, dS: () => f, iY: () => _ });
+        694180: (t, e, n) => {
+            n.d(e, { cM: () => f, dS: () => E, iY: () => y });
             var s = n(370751),
                 r = n(399896),
                 i = n(663550),
@@ -66,49 +66,49 @@
                 d = "rweb/promotedContent/LOG_UNIQUE_EVENT",
                 u = (0, s.Z)([i.dx.IMPRESSION, i.dx.DWELL]),
                 p = (0, s.Z)([i.AJ.TREND_VIEW, i.AJ.SPOTLIGHT_IMPRESSION]),
-                m = (e) => ({ payload: { eventKey: e }, type: d });
-            const E = (e, t) => !!e.promotedContent[t],
-                f =
-                    (e) =>
-                    (t, n, { api: s }) => {
-                        const { event: i, impression_id: o, promoted_trend_id: c } = e,
+                m = (t) => ({ payload: { eventKey: t }, type: d });
+            const _ = (t, e) => !!t.promotedContent[e],
+                E =
+                    (t) =>
+                    (e, n, { api: s }) => {
+                        const { event: i, impression_id: o, promoted_trend_id: c } = t,
                             d = `trend-${c}-${i}`;
-                        if (p.has(i) && E(n(), d)) return Promise.resolve();
+                        if (p.has(i) && _(n(), d)) return Promise.resolve();
                         const u = { promoted_trend_id: c, event: i, impression_id: o };
-                        return (0, a._O)(t, { params: u, request: s.withEndpoint(r.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, t) => {
-                            if (!t && p.has(i)) return [m(d)];
+                        return (0, a._O)(e, { params: u, request: s.withEndpoint(r.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (t, e) => {
+                            if (!e && p.has(i)) return [m(d)];
                         });
                     },
-                T =
-                    ({ disclosureType: e, itemId: t, itemType: n, params: s }) =>
+                f =
+                    ({ disclosureType: t, itemId: e, itemType: n, params: s }) =>
                     (i, o, { api: c }) => {
                         const { event: d, impression_id: p } = s,
-                            f = `${n}-${t ?? "undefined"}-${p ?? "undefined"}-${d ?? "undefined"}`;
-                        if (u.has(d) && E(o(), f)) return Promise.resolve();
-                        const T = e && "earned" === e.toLowerCase() ? "1" : null,
-                            _ = { ...s, earned: T, epoch_ms: Date.now() };
-                        return (0, a._O)(i, { params: _, request: c.withEndpoint(r.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: _ }, (e, t) => {
-                            if (!t && u.has(d)) return [m(f)];
+                            E = `${n}-${e ?? "undefined"}-${p ?? "undefined"}-${d ?? "undefined"}`;
+                        if (u.has(d) && _(o(), E)) return Promise.resolve();
+                        const f = t && "earned" === t.toLowerCase() ? "1" : null,
+                            y = { ...s, earned: f, epoch_ms: Date.now() };
+                        return (0, a._O)(i, { params: y, request: c.withEndpoint(r.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: y }, (t, e) => {
+                            if (!e && u.has(d)) return [m(E)];
                         });
                     },
-                _ =
-                    (e) =>
-                    (t, n, { api: s }) =>
-                        (0, a._O)(t, { params: e, request: s.withEndpoint(r.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
+                y =
+                    (t) =>
+                    (e, n, { api: s }) =>
+                        (0, a._O)(e, { params: t, request: s.withEndpoint(r.Z).log })({ actionTypes: l, context: "APP_PROMOTED_CONTENT_LOG", meta: t });
             o.Z.register({
-                promotedContent: function (e = c, t) {
-                    if (!t) return e;
-                    if (t.type === d) {
-                        if (!t.payload) return e;
-                        const { eventKey: n } = t.payload;
-                        return { ...e, [n]: !0 };
+                promotedContent: function (t = c, e) {
+                    if (!e) return t;
+                    if (e.type === d) {
+                        if (!e.payload) return t;
+                        const { eventKey: n } = e.payload;
+                        return { ...t, [n]: !0 };
                     }
-                    return e;
+                    return t;
                 },
             });
         },
-        629196: (e, t, n) => {
-            n.d(t, { r: () => l });
+        629196: (t, e, n) => {
+            n.d(e, { r: () => l });
             n(136728);
             var s = n(161821),
                 r = n(390387),
@@ -117,31 +117,31 @@
                 a = n(166506),
                 c = n(919022);
             const l =
-                (e, t) =>
+                (t, e) =>
                 (n, l, { api: d, featureSwitches: u }) =>
-                    n(c.ZP.mute(e, t)).then(() => {
-                        const t = l(),
-                            c = (0, s.Z)(i.Z.selectAll(t)).reduce((n, s) => {
+                    n(c.ZP.mute(t, e)).then(() => {
+                        const e = l(),
+                            c = (0, s.Z)(i.Z.selectAll(e)).reduce((n, s) => {
                                 if (null != s)
-                                    if (s.user === e) n[s.id_str] = !0;
+                                    if (s.user === t) n[s.id_str] = !0;
                                     else if (s.retweeted_status) {
-                                        const r = i.Z.select(t, s.retweeted_status);
-                                        r?.user === e && (n[s.id_str] = !0);
+                                        const r = i.Z.select(e, s.retweeted_status);
+                                        r?.user === t && (n[s.id_str] = !0);
                                     }
                                 return n;
                             }, {}),
                             d = (0, r._h)(l()),
                             u = d ? [(0, o.ZP)({ useLatest: !1, userId: d }).removeTweets(c), (0, o.ZP)({ useLatest: !0, userId: d }).removeTweets(c)] : [],
                             p = (0, a.k9)();
-                        if (p.selectInitialFetchStatus(t) && !p.selectCanRefresh(t)) {
-                            const n = (0, a.f8)(e, t, p);
+                        if (p.selectInitialFetchStatus(e) && !p.selectCanRefresh(e)) {
+                            const n = (0, a.f8)(t, e, p);
                             n && u.push(n);
                         }
                         return n(u);
                     });
         },
-        545521: (e, t, n) => {
-            n.d(t, { Z: () => u });
+        545521: (t, e, n) => {
+            n.d(e, { Z: () => u });
             var s = n(99107),
                 r = n(166852),
                 i = n(841198),
@@ -149,58 +149,58 @@
                 a = n(312771),
                 c = n(56519),
                 l = n(877848);
-            const d = (e) => [(0, c.dP)(e)];
-            function u({ contextSuffix: e, getEndpointParams: t, getFetchApiEndpoint: n, mapEntitiesToActions: c = d, sliceKey: u, injectionOptions: { identityFunction: p } = {} }) {
+            const d = (t) => [(0, c.dP)(t)];
+            function u({ contextSuffix: t, getEndpointParams: e, getFetchApiEndpoint: n, mapEntitiesToActions: c = d, sliceKey: u, injectionOptions: { identityFunction: p } = {} }) {
                 const m = [],
-                    E = (e) => e[i.Yf]?.[u],
-                    f = (e) => {
-                        const t = E(e);
-                        if (!t) return m;
-                        const n = t.items || m,
-                            s = t.injections;
+                    _ = (t) => t[i.Yf]?.[u],
+                    E = (t) => {
+                        const e = _(t);
+                        if (!e) return m;
+                        const n = e.items || m,
+                            s = e.injections;
                         return s?.length > 0 ? (0, r.Z)(s.concat(n), p) : n;
                     },
-                    T = (e) => {
-                        const t = E(e),
-                            n = f(e),
+                    f = (t) => {
+                        const e = _(t),
+                            n = E(t),
                             s = n?.length > 0;
-                        return t ? (0, a.ke)(t.fetchStatus, s) : a.ZP.NONE;
+                        return e ? (0, a.ke)(e.fetchStatus, s) : a.ZP.NONE;
                     },
-                    _ =
+                    y =
                         (s) =>
                         (r, a, { api: l }) => {
-                            const d = t(s);
-                            return (0, o._O)(r, { params: d, request: n(l) })(i.t5({ contextSuffix: e, params: s, sliceKey: u }), (e) => {
-                                if (e) return c(e.entities);
+                            const d = e(s);
+                            return (0, o._O)(r, { params: d, request: n(l) })(i.t5({ contextSuffix: t, params: s, sliceKey: u }), (t) => {
+                                if (t) return c(t.entities);
                             });
                         };
                 return {
-                    select: E,
-                    selectItems: f,
-                    selectFetchStatus: T,
-                    fetch: _,
-                    fetchIfNeeded: (e) => (t, n) => {
+                    select: _,
+                    selectItems: E,
+                    selectFetchStatus: f,
+                    fetch: y,
+                    fetchIfNeeded: (t) => (e, n) => {
                         const r = n(),
-                            i = E(r),
-                            o = T(r);
-                        return !i || (o !== a.ZP.LOADING && o !== a.ZP.LOADED) ? t(_(e)) : s.O4.resolve();
+                            i = _(r),
+                            o = f(r);
+                        return !i || (o !== a.ZP.LOADING && o !== a.ZP.LOADED) ? e(y(t)) : s.O4.resolve();
                     },
-                    fetchBottom: (e) => (t, n) => {
+                    fetchBottom: (t) => (e, n) => {
                         const r = n(),
-                            i = E(r),
-                            o = ((e) => {
-                                const t = E(e);
-                                return t?.cursors?.next_cursor;
+                            i = _(r),
+                            o = ((t) => {
+                                const e = _(t);
+                                return e?.cursors?.next_cursor;
                             })(r);
-                        return i.fetchStatus[l.Yj.BOTTOM] !== a.ZP.LOADING && o ? t(_({ ...e, cursor: o })) : s.O4.resolve();
+                        return i.fetchStatus[l.Yj.BOTTOM] !== a.ZP.LOADING && o ? e(y({ ...t, cursor: o })) : s.O4.resolve();
                     },
-                    injectItems: (e) => i.WC({ items: e, sliceKey: u, identityFunction: p }),
-                    removeItems: (e) => i.Er({ items: e, sliceKey: u, identityFunction: p }),
+                    injectItems: (t) => i.WC({ items: t, sliceKey: u, identityFunction: p }),
+                    removeItems: (t) => i.Er({ items: t, sliceKey: u, identityFunction: p }),
                 };
             }
         },
-        841198: (e, t, n) => {
-            n.d(t, { Be: () => y, Er: () => g, Ev: () => T, WC: () => O, Yf: () => u, t5: () => I });
+        841198: (t, e, n) => {
+            n.d(e, { Be: () => T, Er: () => g, Ev: () => f, WC: () => S, Yf: () => u, t5: () => I });
             n(571372);
             var s = n(166852),
                 r = n(370751),
@@ -213,82 +213,82 @@
                 u = "slices",
                 p = () => ({ cursors: {}, fetchStatus: { top: a.ZP.NONE, bottom: a.ZP.NONE }, items: d, injections: d }),
                 m = (0, o.dg)("rweb/slices", "FETCH");
-            const E = (e, t) => {
-                    if (!t) return e;
-                    switch (t.type) {
+            const _ = (t, e) => {
+                    if (!e) return t;
+                    switch (e.type) {
                         case m.REQUEST: {
-                            const { direction: n } = t.meta;
-                            return n ? { ...e, fetchStatus: { ...e.fetchStatus, [n]: a.ZP.LOADING } } : e;
+                            const { direction: n } = e.meta;
+                            return n ? { ...t, fetchStatus: { ...t.fetchStatus, [n]: a.ZP.LOADING } } : t;
                         }
                         case m.SUCCESS: {
-                            const { direction: n } = t.meta,
-                                r = t.payload,
-                                i = e.items;
-                            return !n || r instanceof Error ? e : { ...e, items: (0, s.Z)(i.concat(r?.result)), cursors: { ...r?.slice_info }, error: null, fetchStatus: { ...e.fetchStatus, [n]: a.ZP.LOADED } };
+                            const { direction: n } = e.meta,
+                                r = e.payload,
+                                i = t.items;
+                            return !n || r instanceof Error ? t : { ...t, items: (0, s.Z)(i.concat(r?.result)), cursors: { ...r?.slice_info }, error: null, fetchStatus: { ...t.fetchStatus, [n]: a.ZP.LOADED } };
                         }
                         case m.FAILURE: {
-                            const { direction: n } = t.meta;
-                            return n ? { ...e, error: t.payload, fetchStatus: { ...e.fetchStatus, [n]: a.ZP.FAILED } } : e;
+                            const { direction: n } = e.meta;
+                            return n ? { ...t, error: e.payload, fetchStatus: { ...t.fetchStatus, [n]: a.ZP.FAILED } } : t;
                         }
                         default:
-                            return e;
+                            return t;
                     }
                 },
-                f = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
-                T = (e) => ({ type: f, meta: { sliceKey: e } }),
-                _ = "rweb/slices/DELETE_SLICE",
-                y = (e) => ({ type: _, meta: { sliceKey: e } }),
+                E = "rweb/slices/CLEAR_PARTIAL_SLICES_CACHE",
+                f = (t) => ({ type: E, meta: { sliceKey: t } }),
+                y = "rweb/slices/DELETE_SLICE",
+                T = (t) => ({ type: y, meta: { sliceKey: t } }),
                 h = "rweb/slices/RESTORE_SLICE",
                 w = "rweb/slices/INJECT_ITEMS_SLICE",
-                O = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: w, meta: { sliceKey: n, identityFunction: e }, payload: t }),
-                S = "rweb/slices/REMOVE_ITEMS_SLICE",
-                g = ({ identityFunction: e, items: t, sliceKey: n }) => ({ type: S, meta: { sliceKey: n, identityFunction: e }, payload: t }),
-                I = ({ contextSuffix: e, params: t, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${e}`, meta: { sliceKey: n, direction: t?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
+                S = ({ identityFunction: t, items: e, sliceKey: n }) => ({ type: w, meta: { sliceKey: n, identityFunction: t }, payload: e }),
+                O = "rweb/slices/REMOVE_ITEMS_SLICE",
+                g = ({ identityFunction: t, items: e, sliceKey: n }) => ({ type: O, meta: { sliceKey: n, identityFunction: t }, payload: e }),
+                I = ({ contextSuffix: t, params: e, sliceKey: n }) => ({ actionTypes: m, context: `FETCH_${t}`, meta: { sliceKey: n, direction: e?.cursor ? c.Yj.BOTTOM : c.Yj.TOP } });
             i.Z.register({
-                [u]: function (e = l, t) {
-                    if (!t) return e;
-                    const { sliceKey: n } = t.meta || {};
-                    if (!n) return e;
-                    switch (t.type) {
-                        case _: {
-                            const t = { ...e };
-                            return delete t[n], t;
+                [u]: function (t = l, e) {
+                    if (!e) return t;
+                    const { sliceKey: n } = e.meta || {};
+                    if (!n) return t;
+                    switch (e.type) {
+                        case y: {
+                            const e = { ...t };
+                            return delete e[n], e;
                         }
                         case h:
-                            return { ...e, [n]: t.payload };
-                        case f: {
-                            const t = { ...e };
+                            return { ...t, [n]: e.payload };
+                        case E: {
+                            const e = { ...t };
                             return (
-                                Object.keys(t).forEach((e) => {
-                                    e.includes(n) && delete t[e];
+                                Object.keys(e).forEach((t) => {
+                                    t.includes(n) && delete e[t];
                                 }),
-                                t
+                                e
                             );
                         }
                         case w: {
-                            const r = e[n] || p(),
-                                i = t.meta.identityFunction ? t.meta.identityFunction : void 0,
-                                o = Array.isArray(t.payload) ? t.payload : void 0;
-                            return o?.length ? { ...e, [n]: { ...r, injections: (0, s.Z)(o.concat(r.injections), i) } } : e;
+                            const r = t[n] || p(),
+                                i = e.meta.identityFunction ? e.meta.identityFunction : void 0,
+                                o = Array.isArray(e.payload) ? e.payload : void 0;
+                            return o?.length ? { ...t, [n]: { ...r, injections: (0, s.Z)(o.concat(r.injections), i) } } : t;
                         }
-                        case S: {
-                            const s = e[n] || p(),
-                                i = t.meta.identityFunction ? t.meta.identityFunction : void 0,
-                                o = Array.isArray(t.payload) ? (0, r.Z)(i ? t.payload.map(i) : t.payload) : void 0,
-                                a = (e, t) => !o?.has(i ? i(e, t, s.injections) : e);
-                            return o?.size ? { ...e, [n]: { ...s, injections: s.injections.filter(a), items: s.items.filter(a) } } : e;
+                        case O: {
+                            const s = t[n] || p(),
+                                i = e.meta.identityFunction ? e.meta.identityFunction : void 0,
+                                o = Array.isArray(e.payload) ? (0, r.Z)(i ? e.payload.map(i) : e.payload) : void 0,
+                                a = (t, e) => !o?.has(i ? i(t, e, s.injections) : t);
+                            return o?.size ? { ...t, [n]: { ...s, injections: s.injections.filter(a), items: s.items.filter(a) } } : t;
                         }
                         default: {
-                            const s = e[n] || p(),
-                                r = E(s, t);
-                            return { ...e, [n]: { ...r } };
+                            const s = t[n] || p(),
+                                r = _(s, e);
+                            return { ...t, [n]: { ...r } };
                         }
                     }
                 },
             });
         },
-        251441: (e, t, n) => {
-            n.d(t, { Z: () => w });
+        251441: (t, e, n) => {
+            n.d(e, { Z: () => w });
             n(571372);
             var s = n(506899),
                 r = n(697926),
@@ -301,206 +301,207 @@
                 u = n(600823),
                 p = n(3693),
                 m = n(926597),
-                E = n(298219);
-            const f = (0, d.ZP)({ namespace: "translationsTweets", fetchOneContext: "FETCH_TWEET_TRANSLATION", fetchOneEndpoint: (e) => (t, n) => e.withEndpoint(i.ZP).fetchTranslation(t, n).then(h), fetchOneParams: (e, t) => ({ id: e, ...t }) });
-            f.fetchStreamedGrokTranslation =
-                (e, t, n) =>
+                _ = n(298219);
+            const E = (0, d.ZP)({ namespace: "translationsTweets", fetchOneContext: "FETCH_TWEET_TRANSLATION", fetchOneEndpoint: (t) => (e, n) => t.withEndpoint(i.ZP).fetchTranslation(e, n).then(h), fetchOneParams: (t, e) => ({ id: t, ...e }) });
+            E.fetchStreamedGrokTranslation =
+                (t, e, n) =>
                 async (n, s, { api: r }) => {
-                    const i = { content_type: "POST", id: e, dst_lang: t.userLanguage, include_polls: t.includePolls },
-                        o = { id: e, id_str: e, entities: { symbols: [], hashtags: [], user_mentions: [], urls: [], media: [], timestamps: [] }, streamedTranslationFetchStatus: l.iF.LOADING, sourceLanguage: t.lang, destinationLanguage: t.userLanguage, translationSource: "Grok", text: "", pollTranslations: [] };
-                    n(f.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
-                    const c = new AbortController();
+                    const i = Date.now(),
+                        o = { content_type: "POST", id: t, dst_lang: e.userLanguage, include_polls: e.includePolls },
+                        c = { id: t, id_str: t, entities: { symbols: [], hashtags: [], user_mentions: [], urls: [], media: [], timestamps: [] }, streamedTranslationFetchStatus: l.iF.LOADING, sourceLanguage: e.lang, destinationLanguage: e.userLanguage, translationSource: "Grok", text: "", pollTranslations: [] };
+                    n(E.updateOrAddOne(t, T({ tweetId: t, translatedTweet: c })));
+                    const d = new AbortController();
                     try {
-                        const t = await r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(i), signal: c.signal });
-                        if (!t.ok) throw ((o.translationState = p.H.ERROR), (o.streamedTranslationFetchStatus = l.iF.FAILED), n(f.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), new Error(`invalid response ${t.status}`));
-                        const s = t.body?.getReader();
-                        if (!s) throw ((o.translationState = p.H.ERROR), (o.streamedTranslationFetchStatus = l.iF.FAILED), n(f.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), new Error("reader not present"));
-                        const d = new TextDecoder();
-                        let u = "",
-                            T = "";
-                        const _ = async (t) => {
-                            const r = t ? E.T9 : E.UG,
-                                { done: i, value: c } = await (0, E.yE)("POST_TIMEOUT_BETWEEN_CHUNKS", () => s.read(), r, t ? "timeout to first chunk" : "timeout between chunks");
-                            if (i || !c) {
-                                if (0 === u.length) throw new Error("empty string when done");
-                                return (o.translationState = p.H.SUCCESS), (o.streamedTranslationFetchStatus = l.iF.LOADED), (o.text = u), void n(f.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
+                        const s = await r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(o), signal: d.signal });
+                        if (!s.ok) throw ((c.translationState = p.H.ERROR), (c.streamedTranslationFetchStatus = l.iF.FAILED), n(E.updateOrAddOne(t, T({ tweetId: t, translatedTweet: c }))), new Error(`invalid response ${s.status}`));
+                        const u = s.body?.getReader();
+                        if (!u) throw ((c.translationState = p.H.ERROR), (c.streamedTranslationFetchStatus = l.iF.FAILED), n(E.updateOrAddOne(t, T({ tweetId: t, translatedTweet: c }))), new Error("reader not present"));
+                        const f = new TextDecoder();
+                        let y = "",
+                            h = "";
+                        const w = async (s) => {
+                            const { done: r, value: o } = await (0, _.yE)("POST_TIMEOUT_BETWEEN_CHUNKS", () => u.read(), s ? "FIRST_CHUNK" : "BETWEEN_CHUNKS");
+                            if (r || !o) {
+                                if ((e.analytics.scribe({ component: "grok_button_translation", element: "time_to_last_token_post", action: "complete", data: { duration_ms: Date.now() - i } }), 0 === y.length)) throw new Error("empty string when done");
+                                return (c.translationState = p.H.SUCCESS), (c.streamedTranslationFetchStatus = l.iF.LOADED), (c.text = y), void n(E.updateOrAddOne(t, T({ tweetId: t, translatedTweet: c })));
                             }
-                            const h = d.decode(c);
-                            if (((T += h), T.includes("\n"))) {
-                                const t = T.split("\n");
-                                T = t.pop();
-                                for (const s of t) {
-                                    const t = JSON.parse(s);
-                                    if (t.error) throw new Error(JSON.stringify(t.error));
-                                    if (t.result && "POST" === t.result.content_type) {
-                                        t.result.text && ((u += t.result.text), (o.text = u));
-                                        const n = t.result.entities;
+                            s && e.analytics.scribe({ component: "grok_button_translation", element: "time_to_first_token_post", action: "complete", data: { duration_ms: Date.now() - i } });
+                            const d = f.decode(o);
+                            if (((h += d), h.includes("\n"))) {
+                                const e = h.split("\n");
+                                h = e.pop();
+                                for (const s of e) {
+                                    const e = JSON.parse(s);
+                                    if (e.error) throw new Error(JSON.stringify(e.error));
+                                    if (e.result && "POST" === e.result.content_type) {
+                                        e.result.text && ((y += e.result.text), (c.text = y));
+                                        const n = e.result.entities;
                                         if (n) {
                                             if (n.urls) {
-                                                const { errors: t, result: s } = (0, m.b)(n.urls);
-                                                t.length > 0 && (0, a.ZP)(`invalid url entities in translating tweet:${e} - ${t.join(",")}`), (o.entities.urls = [...(o.entities.urls ?? []), ...s]);
+                                                const { errors: e, result: s } = (0, m.b)(n.urls);
+                                                e.length > 0 && (0, a.ZP)(`invalid url entities in translating tweet:${t} - ${e.join(",")}`), (c.entities.urls = [...(c.entities.urls ?? []), ...s]);
                                             }
                                             if (n.user_mentions) {
-                                                const { errors: t, result: s } = (0, m.l)(n.user_mentions);
-                                                t.length > 0 && (0, a.ZP)(`invalid user menetion entities in translating tweet:${e} - ${t.join(",")}`), (o.entities.user_mentions = [...(o.entities.user_mentions ?? []), ...s]);
+                                                const { errors: e, result: s } = (0, m.l)(n.user_mentions);
+                                                e.length > 0 && (0, a.ZP)(`invalid user mention entities in translating tweet:${t} - ${e.join(",")}`), (c.entities.user_mentions = [...(c.entities.user_mentions ?? []), ...s]);
                                             }
-                                            n.hashtags && (o.entities.hashtags = [...(o.entities.hashtags ?? []), ...n.hashtags]), n.symbols && (o.entities.symbols = [...(o.entities.symbols ?? []), ...n.symbols]);
+                                            n.hashtags && (c.entities.hashtags = [...(c.entities.hashtags ?? []), ...n.hashtags]), n.symbols && (c.entities.symbols = [...(c.entities.symbols ?? []), ...n.symbols]);
                                         }
                                     }
-                                    if (t.result && "POLL" === t.result.content_type) {
-                                        const { index: e, text: n } = t.result;
-                                        if (null != e && e > 0 && null != n) {
-                                            const t = e - 1;
-                                            null == o.pollTranslations && (o.pollTranslations = []), null == o.pollTranslations[t] ? (o.pollTranslations[t] = n) : (o.pollTranslations[t] += n);
+                                    if (e.result && "POLL" === e.result.content_type) {
+                                        const { index: t, text: n } = e.result;
+                                        if (null != t && t > 0 && null != n) {
+                                            const e = t - 1;
+                                            null == c.pollTranslations && (c.pollTranslations = []), null == c.pollTranslations[e] ? (c.pollTranslations[e] = n) : (c.pollTranslations[e] += n);
                                         }
                                     }
-                                    n(f.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o })));
+                                    n(E.updateOrAddOne(t, T({ tweetId: t, translatedTweet: c })));
                                 }
                             }
-                            await _();
+                            await w();
                         };
-                        await _(!0);
+                        await w(!0);
                     } catch (s) {
-                        (o.translationState = p.H.ERROR), (o.streamedTranslationFetchStatus = l.iF.FAILED), n(f.updateOrAddOne(e, y({ tweetId: e, translatedTweet: o }))), c.abort(), (0, a.ZP)(`Failed to translate tweet:${e} to ${t.userLanguage} - ${String(s)}`);
+                        (c.translationState = p.H.ERROR), (c.streamedTranslationFetchStatus = l.iF.FAILED), n(E.updateOrAddOne(t, T({ tweetId: t, translatedTweet: c }))), d.abort(), (0, a.ZP)(`Failed to translate tweet:${t} to ${e.userLanguage} - ${String(s)}`), s instanceof _.mn ? e.analytics.scribe({ component: "grok_button_translation", element: "FIRST_CHUNK" === s.type ? "error_timeout_first_token_post" : "error_timeout_within_tokens_post", action: "error" }) : e.analytics.scribe({ component: "grok_button_translation", element: "error_post", action: "error" });
                     }
                 };
-            const T = new c.W(2),
-                _ = new Set([]);
-            f.fetchGrokTranslationAndForget =
-                (e, t, n) =>
+            const f = new c.W(2),
+                y = new Set([]);
+            E.fetchGrokTranslationAndForget =
+                (t, e, n) =>
                 (n, s, { api: r }) => {
-                    _.has(e) ||
-                        (_.add(e),
-                        T.addTask(() => {
-                            const n = { content_type: "POST", id: e, dst_lang: t.userLanguage, include_polls: t.includePolls };
-                            return r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(n) }).then((e) => e.text());
+                    y.has(t) ||
+                        (y.add(t),
+                        f.addTask(() => {
+                            const n = { content_type: "POST", id: t, dst_lang: e.userLanguage, include_polls: e.includePolls };
+                            return r.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(n) }).then((t) => t.text());
                         }));
                 };
-            const y = ({ translatedTweet: e, tweetId: t }) => (0, s.Fv)(e, o.Z).entities.tweets[`${t}`],
-                h = (e) => {
-                    const t = Array.isArray(e) ? e : [e];
-                    return { entities: { translationsTweets: (0, r.Z)(t, (e) => e.id_str) } };
+            const T = ({ translatedTweet: t, tweetId: e }) => (0, s.Fv)(t, o.Z).entities.tweets[`${e}`],
+                h = (t) => {
+                    const e = Array.isArray(t) ? t : [t];
+                    return { entities: { translationsTweets: (0, r.Z)(e, (t) => t.id_str) } };
                 },
-                w = u.Z.register(f);
+                w = u.Z.register(E);
         },
-        3693: (e, t, n) => {
-            n.d(t, { H: () => s });
+        3693: (t, e, n) => {
+            n.d(e, { H: () => s });
             const s = Object.freeze({ SUCCESS: "Success", ERROR: "Error", TIMEOUT: "Timeout", DISABLED: "Disabled", MISSING: "Missing", NOT_TRANSLATABLE: "NotTranslatable", NOT_CACHED: "NotCached", VISIBILITY_FILTERED: "VisibilityFiltered" });
         },
-        556303: (e, t, n) => {
-            function s(e, t) {
-                const n = e.isTrue("responsive_web_grok_tweet_translation"),
-                    s = e.getNumberValue("responsive_web_grok_tweet_translation_limit", 180);
-                return n && t.length <= s;
+        556303: (t, e, n) => {
+            function s(t, e) {
+                const n = t.isTrue("responsive_web_grok_tweet_translation"),
+                    s = t.getNumberValue("responsive_web_grok_tweet_translation_limit", 180);
+                return n && e.length <= s;
             }
-            n.d(t, { F: () => s });
+            n.d(e, { F: () => s });
         },
-        926597: (e, t, n) => {
-            n.d(t, { b: () => s, l: () => r });
+        926597: (t, e, n) => {
+            n.d(e, { b: () => s, l: () => r });
             n(136728);
-            function s(e) {
-                const t = [];
-                return { result: e.map((e) => ((null != e.display_url && null != e.expanded_url) || t.push(`invalid url entity: ${JSON.stringify(e)}`), { ...e, display_url: e.display_url ?? e.url, expanded_url: e.expanded_url ?? e.url })), errors: t };
+            function s(t) {
+                const e = [];
+                return { result: t.map((t) => ((null != t.display_url && null != t.expanded_url) || e.push(`invalid url entity: ${JSON.stringify(t)}`), { ...t, display_url: t.display_url ?? t.url, expanded_url: t.expanded_url ?? t.url })), errors: e };
             }
-            function r(e) {
-                const t = [],
-                    n = e
-                        .map((e) => {
-                            const { id_str: n, indices: s, name: r, screen_name: i } = e;
+            function r(t) {
+                const e = [],
+                    n = t
+                        .map((t) => {
+                            const { id_str: n, indices: s, name: r, screen_name: i } = t;
                             if (null != n && null != r && null != i) return { id_str: n, name: r, screen_name: i, indices: s };
-                            t.push(`invalid user mention:${JSON.stringify(e)}`);
+                            e.push(`invalid user mention:${JSON.stringify(t)}`);
                         })
                         .filter(Boolean);
-                return { errors: t, result: n };
+                return { errors: e, result: n };
             }
         },
-        298219: (e, t, n) => {
-            n.d(t, { T9: () => r, UG: () => s, yE: () => a });
+        298219: (t, e, n) => {
+            n.d(e, { mn: () => s, yE: () => i });
             n(571372);
-            const s = 5e3,
-                r = 1e4;
-            class i extends Error {
-                constructor(e) {
-                    super(e), (this.name = "StreamingTimeoutError"), (this.message = e);
+            class s extends Error {
+                constructor(t) {
+                    const e = "FIRST_CHUNK" === t ? "timeout to first chunk" : "timeout between chunks";
+                    super(e), (this.name = "StreamingTimeoutError"), (this.message = e), (this.type = t);
                 }
             }
-            const o = {},
-                a = (e, t, n, s) => {
-                    o[e] && clearTimeout(o[e]);
-                    const r = new Promise((t, r) => {
-                        const a = setTimeout(() => {
-                            r(new i(s)), delete o[e];
-                        }, n);
-                        o[e] = a;
-                    });
-                    return Promise.race([t(), r]);
+            const r = {},
+                i = (t, e, n) => {
+                    r[t] && clearTimeout(r[t]);
+                    const i = "FIRST_CHUNK" === n ? 1e4 : 5e3,
+                        o = new Promise((e, o) => {
+                            const a = setTimeout(() => {
+                                o(new s(n)), delete r[t];
+                            }, i);
+                            r[t] = a;
+                        });
+                    return Promise.race([e(), o]);
                 };
         },
-        268617: (e, t, n) => {
-            n.d(t, { Z: () => o });
+        268617: (t, e, n) => {
+            n.d(e, { Z: () => o });
             var s = n(836255),
                 r = n(390387),
                 i = n(195250);
             const o =
-                (e, t) =>
+                (t, e) =>
                 (n, o, { api: a, featureSwitches: c }) =>
-                    n(s.Z.unretweet(e, t)).then(() => {
-                        const t = (0, r._h)(o()),
-                            a = s.Z.select(o(), e),
+                    n(s.Z.unretweet(t, e)).then(() => {
+                        const e = (0, r._h)(o()),
+                            a = s.Z.select(o(), t),
                             l = a?.retweeted_status,
                             d = a && (l ? s.Z.select(o(), l) : a);
-                        if (t && d && (d.user !== t || d.id_str !== e)) return n([(0, i.ZP)(c, t, "default").removeTweets({ [e]: !0 }), (0, i.ZP)(c, t, "with_replies").removeTweets({ [e]: !0 })]);
+                        if (e && d && (d.user !== e || d.id_str !== t)) return n([(0, i.ZP)(c, e, "default").removeTweets({ [t]: !0 }), (0, i.ZP)(c, e, "with_replies").removeTweets({ [t]: !0 })]);
                     });
         },
-        977154: (e, t, n) => {
-            n.d(t, { H$: () => u, ZP: () => l, m: () => d, qk: () => p });
+        977154: (t, e, n) => {
+            n.d(e, { H$: () => u, ZP: () => l, m: () => d, qk: () => p });
             var s = n(403911),
                 r = n(750085),
                 i = n(555875),
                 o = n(218951);
             const a = "bookmarks",
-                c = (0, o.Z)({ timelineId: a, network: { getEndpoint: (e) => e.withEndpoint(s.Z).fetchBookmarksTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, formatResponse: r.Z, context: "FETCH_BOOKMARKS_TIMELINE", perfKey: "bookmarksGraphQL" }),
+                c = (0, o.Z)({ timelineId: a, network: { getEndpoint: (t) => t.withEndpoint(s.Z).fetchBookmarksTimeline, getEndpointParams: ({ count: t, cursor: e }) => ({ count: t, cursor: "string" == typeof e ? e : void 0 }) }, formatResponse: r.Z, context: "FETCH_BOOKMARKS_TIMELINE", perfKey: "bookmarksGraphQL" }),
                 l = c,
-                d = (e) => (0, o.Z)({ timelineId: `bookmarkFolder-${e}`, network: { getEndpoint: (e) => e.withEndpoint(s.Z).fetchBookmarkFolderTimeline, getEndpointParams: ({ cursor: t }) => ({ cursor: "string" == typeof t ? t : void 0, bookmark_collection_id: e }) }, formatResponse: r.Z, context: "FETCH_BOOKMARK_FOLDER_TIMELINE", perfKey: "bookmarkFolderGraphQL" }),
+                d = (t) => (0, o.Z)({ timelineId: `bookmarkFolder-${t}`, network: { getEndpoint: (t) => t.withEndpoint(s.Z).fetchBookmarkFolderTimeline, getEndpointParams: ({ cursor: e }) => ({ cursor: "string" == typeof e ? e : void 0, bookmark_collection_id: t }) }, formatResponse: r.Z, context: "FETCH_BOOKMARK_FOLDER_TIMELINE", perfKey: "bookmarkFolderGraphQL" }),
                 u =
                     () =>
-                    (e, t, { api: n, featureSwitches: r }) =>
+                    (t, e, { api: n, featureSwitches: r }) =>
                         n
                             .withEndpoint(s.Z)
                             .deleteAll()
-                            .then(() => e(c.deleteTimeline())),
+                            .then(() => t(c.deleteTimeline())),
                 p = i.CG.bind(null, a);
         },
-        166506: (e, t, n) => {
-            n.d(t, { du: () => d, f8: () => u, k9: () => l });
+        166506: (t, e, n) => {
+            n.d(e, { du: () => d, f8: () => u, k9: () => l });
             var s = n(503768),
                 r = n(750085),
                 i = n(962741),
                 o = n(466015),
                 a = n(919022),
                 c = n(218951);
-            const l = () => (0, c.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(s.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: r.Z }),
-                d = (e) => (t, n) => {
+            const l = () => (0, c.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (t) => t.withEndpoint(s.ZP).fetchMutedAccounts, getEndpointParams: ({ count: t, cursor: e }) => ({ count: t, cursor: "string" == typeof e ? e : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: r.Z }),
+                d = (t) => (e, n) => {
                     const s = n();
-                    t(
-                        e
+                    e(
+                        t
                             .selectEntries(s)
-                            .filter((e) => {
-                                const t = e.type === i.ZP.User ? e.content.id : "",
-                                    n = a.ZP.select(s, t);
+                            .filter((t) => {
+                                const e = t.type === i.ZP.User ? t.content.id : "",
+                                    n = a.ZP.select(s, e);
                                 return n && !n.muting;
                             })
-                            .map((t) => e.removeEntry(t.entryId)),
+                            .map((e) => t.removeEntry(e.entryId)),
                     );
                 },
-                u = (e, t, n) => {
-                    if (!n.selectEntries(t).find((t) => t.type === i.ZP.User && t.content.id === e)) {
-                        const t = (0, o.OD)(e),
-                            s = (0, o.$0)({ entryId: t, id: e, sortIndex: Date.now().toString() });
+                u = (t, e, n) => {
+                    if (!n.selectEntries(e).find((e) => e.type === i.ZP.User && e.content.id === t)) {
+                        const e = (0, o.OD)(t),
+                            s = (0, o.$0)({ entryId: e, id: t, sortIndex: Date.now().toString() });
                         return n.injectEntry(s);
                     }
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.8f30493a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad.592c36ea.js.map

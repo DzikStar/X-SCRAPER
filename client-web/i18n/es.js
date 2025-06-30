@@ -1316,11 +1316,11 @@
                 o("a02d1657", function (e) {
                     return "Ejecutando código" + e.ttc_tool_usage_card;
                 }),
-                o("aa9d42c0", "Searching the web"),
-                o("dce1817a", "Searching on 𝕏"),
-                o("f7151564", "Searching users on 𝕏"),
-                o("c43ef93e", "Browsing web page"),
-                o("jb097f6e", "Ejecutando código"),
+                o("aa9d42c0", "Buscar en la web"),
+                o("dce1817a", "Buscar en 𝕏"),
+                o("f7151564", "Buscar usuarios en 𝕏"),
+                o("c43ef93e", "Navegar por una página web"),
+                o("jb097f6e", "Ejecutar código"),
                 o("ead81122", "Algo salió mal. Actualiza para reconectarte o inténtalo de nuevo."),
                 o("f808a13a", "Se superó el límite de velocidad. Espera unos minutos e inténtalo de nuevo."),
                 o("e0481e5a", "Grok no se admite en tu país en este momento."),
@@ -1367,11 +1367,11 @@
                 o("e0bffbf8", "Acerca de la traducción automática"),
                 o("e839db3a", "Descartar"),
                 o("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "Traducir " + e.language + " automáticamente";
                 }),
-                o("c60b9e5c", "Changes will take effect for newly loaded content."),
-                o("f9317b98", "language settings"),
-                o("hba0547a", "Unable to update settings. Please try again later."),
+                o("c60b9e5c", "Los cambios se aplicarán a los nuevos contenidos cargados."),
+                o("f9317b98", "configuración de idioma"),
+                o("hba0547a", "No se puede actualizar la configuración. Inténtalo de nuevo más tarde."),
                 o("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -7399,10 +7399,10 @@
                 o("d94f12b6", "Intenta buscar notificaciones, privacidad, etc."),
                 o("ba8f6f82", "Configuración de búsqueda"),
                 o("ibf92e4a", "Pago correcto"),
-                o("bdf0fb06", "Your subscription has been activated."),
+                o("bdf0fb06", "Se activó tu suscripción."),
                 o("ddfd6718", "Error en el pago"),
                 o("d42fa852", "Ocurrió un error al procesar tu pago. Inténtalo de nuevo."),
-                o("g055a9ce", "Open 𝕏 App"),
+                o("g055a9ce", "Abrir la app de 𝕏"),
                 o("g931a6e5", function (e) {
                     return "Sigues a " + e.topic;
                 }),
@@ -10167,7 +10167,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok traducirá automáticamente basándose en tu ", " en X y el uso que haces de la plataforma. También puedes cambiar la configuración de traducción automática a continuación."];
                             },
                         },
                         {
@@ -13379,4 +13379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.deb4d58a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.ca5cb50a.js.map

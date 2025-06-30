@@ -1320,10 +1320,10 @@
                 n("a02d1657", function (e) {
                     return "코드 실행" + e.ttc_tool_usage_card;
                 }),
-                n("aa9d42c0", "Searching the web"),
-                n("dce1817a", "Searching on 𝕏"),
-                n("f7151564", "Searching users on 𝕏"),
-                n("c43ef93e", "Browsing web page"),
+                n("aa9d42c0", "웹에서 검색"),
+                n("dce1817a", "𝕏 검색"),
+                n("f7151564", "𝕏에서 사용자 검색"),
+                n("c43ef93e", "웹페이지 탐색"),
                 n("jb097f6e", "코드 실행"),
                 n("ead81122", "문제가 발생했습니다. 새로고침하여 다시 연결하거나 다시 시도해 주세요."),
                 n("f808a13a", "요청 한도를 초과했습니다. 잠시 기다린 후 다시 시도해주세요."),
@@ -1371,11 +1371,11 @@
                 n("e0bffbf8", "자동 번역에 관해"),
                 n("e839db3a", "숨기기"),
                 n("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return e.language + " 자동 번역";
                 }),
-                n("c60b9e5c", "Changes will take effect for newly loaded content."),
-                n("f9317b98", "language settings"),
-                n("hba0547a", "Unable to update settings. Please try again later."),
+                n("c60b9e5c", "새로 로드된 콘텐츠에 변경사항이 적용됩니다."),
+                n("f9317b98", "언어 설정"),
+                n("hba0547a", "설정을 업데이트할 수 없습니다. 나중에 다시 시도해 주세요."),
                 n("d4c339b9", function (e) {
                     return e.fullName + "(@" + e.screenName + ") 님이 게시";
                 }),
@@ -7403,10 +7403,10 @@
                 n("d94f12b6", "알림과 개인정보 보호 등에 대해 검색해 보세요."),
                 n("ba8f6f82", "설정 검색하기"),
                 n("ibf92e4a", "결제 완료"),
-                n("bdf0fb06", "Your subscription has been activated."),
+                n("bdf0fb06", "구독이 활성화되었습니다."),
                 n("ddfd6718", "결제 실패"),
                 n("d42fa852", "결제 처리 중 문제가 발생했습니다. 다시 시도해 주세요."),
-                n("g055a9ce", "Open 𝕏 App"),
+                n("g055a9ce", "𝕏 앱 열기"),
                 n("g931a6e5", function (e) {
                     return e.topic + "을(를) 팔로우하고 있습니다";
                 }),
@@ -10174,7 +10174,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok은 내 X 사용 내역과 ", "에 따라 콘텐츠를 자동으로 번역합니다. 아래에서 자동 번역 설정을 변경할 수 있습니다."];
                             },
                         },
                         {
@@ -13386,4 +13386,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.f24d97aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.f41ebdea.js.map

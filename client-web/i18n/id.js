@@ -1316,10 +1316,10 @@
                 i("a02d1657", function (a) {
                     return "Kode eksekusi" + a.ttc_tool_usage_card;
                 }),
-                i("aa9d42c0", "Searching the web"),
-                i("dce1817a", "Searching on 𝕏"),
-                i("f7151564", "Searching users on 𝕏"),
-                i("c43ef93e", "Browsing web page"),
+                i("aa9d42c0", "Mencari di web"),
+                i("dce1817a", "Mencari di 𝕏"),
+                i("f7151564", "Mencari pengguna di 𝕏"),
+                i("c43ef93e", "Menelusuri halaman web"),
                 i("jb097f6e", "Kode eksekusi"),
                 i("ead81122", "Ada kesalahan teknis, silakan refresh untuk menyambungkan kembali atau coba lagi."),
                 i("f808a13a", "Batas maksimal tercapai. Silakan tunggu beberapa saat, lalu coba lagi."),
@@ -1367,11 +1367,11 @@
                 i("e0bffbf8", "Tentang terjemahan otomatis"),
                 i("e839db3a", "Tutup"),
                 i("e7a86c77", function (a) {
-                    return "Automatically translate " + a.language;
+                    return "Otomatis terjemahkan " + a.language;
                 }),
-                i("c60b9e5c", "Changes will take effect for newly loaded content."),
-                i("f9317b98", "language settings"),
-                i("hba0547a", "Unable to update settings. Please try again later."),
+                i("c60b9e5c", "Perubahan akan diterapkan pada konten yang baru dimuat."),
+                i("f9317b98", "pengaturan bahasa"),
+                i("hba0547a", "Tidak dapat mengubah pengaturan. Silakan coba lagi nanti."),
                 i("d4c339b9", function (a) {
                     return "Postingan dari " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -7399,10 +7399,10 @@
                 i("d94f12b6", "Coba cari notifikasi, privasi, dll."),
                 i("ba8f6f82", "Pengaturan Pencarian"),
                 i("ibf92e4a", "Pembayaran Berhasil"),
-                i("bdf0fb06", "Your subscription has been activated."),
+                i("bdf0fb06", "Langganan Anda sudah diaktifkan."),
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("d42fa852", "Ada masalah saat memproses pembayaran Anda. Silakan coba lagi."),
-                i("g055a9ce", "Open 𝕏 App"),
+                i("g055a9ce", "Buka Aplikasi 𝕏"),
                 i("g931a6e5", function (a) {
                     return "Anda mengikuti " + a.topic;
                 }),
@@ -9533,11 +9533,11 @@
             var u = e(202784),
                 k = [],
                 m = {};
-            function s(a) {
+            function g(a) {
                 return a;
             }
-            var g = (function (a) {
-                var n, e, i, t, g;
+            var s = (function (a) {
+                var n, e, i, t, s;
                 function b() {
                     return a.apply(this, arguments) || this;
                 }
@@ -10154,7 +10154,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok akan menerjemahkan secara otomatis berdasarkan penggunaan X dan ", " Anda. Anda juga dapat mengubah pengaturan terjemahan otomatis di bawah ini."];
                             },
                         },
                         {
@@ -13000,21 +13000,21 @@
                             get: function () {
                                 var a,
                                     n = u.Children.toArray(this.props.children),
-                                    e = ((a = this.props.$i18n), k[m[a]] || s);
+                                    e = ((a = this.props.$i18n), k[m[a]] || g);
                                 return function (a, i, t) {
                                     return a.concat(i, n[e(t)]);
                                 };
                             },
                         },
                     ]) && r(i.prototype, t),
-                    g && r(i, g),
+                    s && r(i, s),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     b
                 );
             })(e(111677)._ActualI18NFormatMessage || u.Component);
-            i("_ActualI18NFormatMessage", g),
+            i("_ActualI18NFormatMessage", s),
                 i("I18NFormatMessage", function (a) {
-                    return u.createElement(g, a);
+                    return u.createElement(s, a);
                 });
             var b = e(495075);
             e(800694), e(556829), e(530152), e(658610), e(492344), e(663823);
@@ -13366,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.812187ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.3de2631a.js.map

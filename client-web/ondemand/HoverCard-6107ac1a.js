@@ -266,38 +266,38 @@
                 l = i(731708),
                 o = i(642153),
                 d = i(992942),
-                u = i(530732),
-                c = i(537392),
+                c = i(530732),
+                u = i(537392),
                 h = i(786475),
                 g = i(392237);
             const m = g.default.create((e) => ({ buttonBottomMargin: { marginBottom: e.spaces.space16 }, buttonLeftMargin: { marginStart: e.spaces.space20 }, buttonTopMargin: { marginTop: e.spaces.space20 }, buttonWrap: { flexWrap: "wrap-reverse" }, condensedContext: { marginTop: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, condensedContextV2: { marginTop: e.spaces.space16 }, iconCustom: { alignSelf: "flex-start", borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32, marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, facepile: { marginBottom: e.spaces.space16, alignSelf: "flex-start" }, facepileV2: { marginEnd: e.spaces.space8, marginTop: e.spaces.space16 }, interactiveStyle: { flexShrink: 1 }, interactiveStyleV2: { flexDirection: "row", alignItems: "center" }, knownFollowersContainer: { marginTop: e.spaces.space16, marginBottom: e.spaces.space16, flexDirection: "row", justifyContent: "space-between", flexGrow: 1, flexShrink: 1 }, underline: { textDecorationLine: "underline" } })),
                 p = ({ children: e, context: t, imageSrc: i, knownFollowers: a, onFacepilesClick: p, onFacepilesImpression: f, subtitle: y, title: _, withAdditionalControls: w = !1 }) => {
                     const { firstUsername: S, knownFollowersAvatarUrls: E, trendingFollowersUrl: T, usersCount: I } = a || {},
-                        O = a && a.knownFollowersAvatarUrls.length > 3;
+                        v = a && a.knownFollowersAvatarUrls.length > 3;
                     n.useEffect(() => {
-                        O && f && f();
-                    }, [O, f]);
-                    const F = i ? n.createElement(d.Z, { source: i, style: m.iconCustom }) : null,
-                        v = t ? n.createElement(s.Z, { style: w ? m.condensedContextV2 : m.condensedContext }, n.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: w ? m.buttonTopMargin : [m.buttonBottomMargin, m.buttonLeftMargin] }, e)) : null,
-                        b = n.createElement(c.ZP, null, ({ containerWidth: i }) => {
+                        v && f && f();
+                    }, [v, f]);
+                    const O = i ? n.createElement(d.Z, { source: i, style: m.iconCustom }) : null,
+                        F = t ? n.createElement(s.Z, { style: w ? m.condensedContextV2 : m.condensedContext }, n.createElement(l.ZP, { align: "left", color: "gray700", numberOfLines: 3, size: "subtext2" }, t), n.createElement(s.Z, { style: w ? m.buttonTopMargin : [m.buttonBottomMargin, m.buttonLeftMargin] }, e)) : null,
+                        b = n.createElement(u.ZP, null, ({ containerWidth: i }) => {
                             const a = h.Z.isNarrowScreenWidth(i) ? "xLarge" : "xxLarge",
                                 d = i < g.default.theme.breakpoints.xSmall ? m.buttonWrap : void 0,
-                                c = w ? m.facepileV2 : null;
+                                u = w ? m.facepileV2 : null;
                             return n.createElement(
                                 s.Z,
                                 { style: w ? null : [m.knownFollowersContainer, d] },
-                                n.createElement(u.Z, { interactiveStyles: null, link: T, onPress: p, style: w ? m.interactiveStyleV2 : m.interactiveStyle }, ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(o.Z, { style: [m.facepile, c], userAvatarSize: a, userAvatarUrls: E }), n.createElement(l.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && m.underline }, t || ((e, t) => n.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(S, I)))),
+                                n.createElement(c.Z, { interactiveStyles: null, link: T, onPress: p, style: w ? m.interactiveStyleV2 : m.interactiveStyle }, ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(o.Z, { style: [m.facepile, u], userAvatarSize: a, userAvatarUrls: E }), n.createElement(l.ZP, { color: "gray700", dir: "ltr", numberOfLines: 2, size: "subtext2", style: e && m.underline }, t || ((e, t) => n.createElement(r().I18NFormatMessage, { $i18n: "bb2cd6d3" }, e, t))(S, I)))),
                                 ((t) => {
                                     const i = t < g.default.theme.breakpoints.xSmall ? m.buttonBottomMargin : [m.buttonBottomMargin, m.buttonLeftMargin];
                                     return w ? [e] : n.createElement(s.Z, { style: i }, e);
                                 })(i),
                             );
                         }),
-                        k = a && O ? b : v;
-                    return n.createElement(n.Fragment, null, F, n.createElement(l.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, k);
+                        k = a && v ? b : F;
+                    return n.createElement(n.Fragment, null, O, n.createElement(l.ZP, { size: "title2", weight: "heavy" }, _), y ? n.createElement(l.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, y) : null, k);
                 };
         },
-        98440: (e, t, i) => {
+        748138: (e, t, i) => {
             i.r(t), i.d(t, { default: () => o });
             var n = i(202784),
                 s = i(890601),
@@ -305,7 +305,20 @@
                 r = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const o = l;
+        },
+        452693: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => o });
+            var n = i(202784),
+                s = i(890601),
+                a = i(783427),
+                r = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const o = l;
@@ -327,8 +340,8 @@
                             const l = r || { top: 0, left: 0, width: t.width, height: t.height };
                             let o = l.left,
                                 d = l.top,
-                                u = l.width,
-                                c = l.height,
+                                c = l.width,
+                                u = l.height,
                                 h = 0,
                                 g = 0,
                                 m = i,
@@ -344,18 +357,18 @@
                                     e.scale(1, -1), (d = t.height - l.height - l.top), (g = -s);
                                     break;
                                 case n.Z.LEFT_TOP:
-                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (o = l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (o = l.top), (d = l.left), (c = l.height), (u = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                                     break;
                                 case n.Z.LEFT_BOTTOM:
-                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), (o = l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), (o = l.top), (d = t.height - l.width - l.left), (c = l.height), (u = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                                     break;
                                 case n.Z.RIGHT_BOTTOM:
-                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (o = t.width - l.height - l.top), (d = t.height - l.width - l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (o = t.width - l.height - l.top), (d = t.height - l.width - l.left), (c = l.height), (u = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                                     break;
                                 case n.Z.RIGHT_TOP:
-                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), (o = t.width - l.height - l.top), (d = l.left), (u = l.height), (c = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
+                                    e.translate(i / 2, s / 2), e.rotate(-Math.PI / 2), (o = t.width - l.height - l.top), (d = l.left), (c = l.height), (u = l.width), (h = -s / 2), (g = -i / 2), (m = s), (p = i);
                             }
-                            e.drawImage(t, o, d, u, c, h, g, m, p), e.restore();
+                            e.drawImage(t, o, d, c, u, h, g, m, p), e.restore();
                         })(t.getContext("2d"), e, t.width, t.height, s, a),
                         t
                     ),
@@ -371,11 +384,11 @@
                         .catch(() => {
                             const i = e * t;
                             if (i > l) {
-                                const i = u(l, e, t);
+                                const i = c(l, e, t);
                                 return o(i.width, i.height);
                             }
                             if (i > r) {
-                                const i = u(r, e, t);
+                                const i = c(r, e, t);
                                 return o(i.width, i.height);
                             }
                             throw Error("Could not create valid canvas for resizing");
@@ -389,7 +402,7 @@
                     n && "data:," !== n ? t(n) : i(new Error("Malformed canvas"));
                 });
             }
-            function u(e, t, i) {
+            function c(e, t, i) {
                 const n = Math.sqrt((e * i) / t),
                     s = (t * n) / i;
                 return { height: Math.floor(n), width: Math.floor(s) };
@@ -459,7 +472,7 @@
                 };
         },
         276259: (e, t, i) => {
-            i.d(t, { Lw: () => s, Re: () => c, VJ: () => l, ZF: () => h, hv: () => o, ku: () => n, qp: () => a, uv: () => r, v5: () => u });
+            i.d(t, { Lw: () => s, Re: () => u, VJ: () => l, ZF: () => h, hv: () => o, ku: () => n, qp: () => a, uv: () => r, v5: () => c });
             i(571372), i(875640), i(694898), i(38857), i(540171), i(157093), i(265688), i(270315), i(592529), i(86943), i(691157), i(543673), i(240753), i(128399);
             function n(e) {
                 const t = e.match(/=*$/);
@@ -547,8 +560,8 @@
                             (a.onerror = () => s(new Error("Failed to load image while resizing"))),
                             (a.src = URL.createObjectURL(e));
                     }),
-                u = ["image/jpeg", "image/png", "image/webp"],
-                c = "image/gif",
+                c = ["image/jpeg", "image/png", "image/webp"],
+                u = "image/gif",
                 h = "Reading aborted";
         },
         549755: (e, t, i) => {
@@ -684,9 +697,9 @@
                         return d(e, e.width, e.height, a, r).then((e) => {
                             const o = e.width > i || e.height > i,
                                 d = e.toDataURL("image/jpeg", n),
-                                u = d.split(";base64,")[1],
-                                c = (0, l.ku)(u);
-                            if (o || c > t) {
+                                c = d.split(";base64,")[1],
+                                u = (0, l.ku)(c);
+                            if (o || u > t) {
                                 let e = 0.8;
                                 return o && (e = a > r ? i / a : i / r), s(a * e, r * e);
                             }
@@ -701,12 +714,12 @@
                     l = i / 2;
                 return e instanceof HTMLCanvasElement && t <= s && i <= a ? Promise.resolve(e) : r <= s && l <= a ? (0, n.$i)(e, s, a) : (0, n.$i)(e, r, l).then((e) => d(e, e.width, e.height, s, a));
             }
-            const u = 5242880,
-                c = 4096,
+            const c = 5242880,
+                u = 4096,
                 h = 0.85,
                 g = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
                 m = (e) => e.orientation !== s.Z.TOP_LEFT && e.orientation !== s.Z.UNKNOWN,
-                p = (e, t = u, i = c) => {
+                p = (e, t = c, i = u) => {
                     const { height: n, size: s, width: a } = e;
                     return a > i || n > i || s > t;
                 },
@@ -716,7 +729,7 @@
                     return !(0 === s && 0 === n && a === e.width && i === e.height);
                 };
             function _(e, t) {
-                const { maxFileSize: i = u, maxDimension: n = c, cropData: s, jpgPixelsPerByteForResize: a } = t || {},
+                const { maxFileSize: i = c, maxDimension: n = u, cropData: s, jpgPixelsPerByteForResize: a } = t || {},
                     r = "image/jpeg" === e.type,
                     l = (e.width * e.height) / e.size;
                 return m(e) || p(e, i, n) || y(e, s) || (r && !!a && l < a);
@@ -727,7 +740,7 @@
                 },
                 S = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
             function E(e, t) {
-                const { maxFileSize: i = u, maxDimension: s = c, targetQuality: l = h, cropData: d } = t || {},
+                const { maxFileSize: i = c, maxDimension: s = u, targetQuality: l = h, cropData: d } = t || {},
                     m = f(e, d);
                 if (!_(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, r.DS)(e)) {
@@ -768,10 +781,10 @@
                     uploadStart: function (e, t) {
                         n.set(e, { time: Date.now(), bytes: t }), a || (a = Date.now());
                     },
-                    uploadFinish: function (d, u) {
-                        const c = n.get(d);
-                        c &&
-                            ((s += u - c.bytes),
+                    uploadFinish: function (d, c) {
+                        const u = n.get(d);
+                        u &&
+                            ((s += c - u.bytes),
                             n.delete(d),
                             ++r === i &&
                                 (function () {
@@ -792,7 +805,7 @@
                     },
                 };
             }
-            i.d(t, { Z: () => u, d: () => _ });
+            i.d(t, { Z: () => c, d: () => _ });
             i(543673), i(240753), i(128399);
             function s(e) {
                 const t = new URLSearchParams();
@@ -810,7 +823,7 @@
                 l = 65536,
                 o = 2e3,
                 d = 1e4;
-            class u {
+            class c {
                 constructor(e, t = E) {
                     var i;
                     (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || m), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((i = this.totalBytes), a(Math.ceil(i / d)))), this._clearState();
@@ -900,7 +913,7 @@
                 }
                 _setSessionTimeout(e) {
                     if ((this.timeoutIdMap.session && (clearTimeout(this.timeoutIdMap.session), delete this.timeoutIdMap.session), e)) {
-                        const t = Math.min(c, 1e3 * e);
+                        const t = Math.min(u, 1e3 * e);
                         this.timeoutIdMap.session = setTimeout(() => {
                             this._uploadError({ code: _.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
                         }, t);
@@ -1030,29 +1043,29 @@
                         i.segmentBytes && (n.appendByteSize = i.segmentBytes), this.uploadOptions.stats(n);
                     }
                 }
-                _sendXhr(e, t, i, n, s, r, l, d, u = 0) {
-                    const c = `${this.uploadUrl}?command=${t}${i}`;
+                _sendXhr(e, t, i, n, s, r, l, d, c = 0) {
+                    const u = `${this.uploadUrl}?command=${t}${i}`;
                     let h = !1;
                     const m = new Date(),
                         p = (a) => {
                             if (r) {
-                                const a = [c, r].join("-");
+                                const a = [u, r].join("-");
                                 this.timeoutIdMap[a] = setTimeout(() => {
-                                    this._sendXhr(e, t, i, n, s, r - 1, l, d, u);
+                                    this._sendXhr(e, t, i, n, s, r - 1, l, d, c);
                                 }, y);
                             } else w(a);
                         },
                         w = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof s && s(T(S) || { code: _.INVALID_RES_STATUS, mediaId: this.mediaId });
+                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: c }), "function" == typeof s && s(T(S) || { code: _.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         S = new XMLHttpRequest();
-                    S.open(e, c, !0),
+                    S.open(e, u, !0),
                         (S.withCredentials = !0),
                         (S.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || g),
                         (S.onload = () => {
                             if (S.status >= 200 && S.status < 400) {
                                 const e = T(S);
-                                204 === S.status || e ? (this._stats(t, "success", { requestStartTime: m, segmentBytes: u }), n(e || {}), !h && d && d()) : p("parsererror");
+                                204 === S.status || e ? (this._stats(t, "success", { requestStartTime: m, segmentBytes: c }), n(e || {}), !h && d && d()) : p("parsererror");
                             } else S.status && 503 !== S.status ? w("invalid-response") : p("503");
                         }),
                         (S.onerror = () => p("error")),
@@ -1061,7 +1074,7 @@
                         });
                     let E = !1;
                     S.upload.onprogress = (e) => {
-                        E ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(c, e.total) : ((E = !0), this._bitrateMonitor?.uploadStart(c, e.loaded));
+                        E ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(u, e.total) : ((E = !0), this._bitrateMonitor?.uploadStart(u, e.loaded));
                         const t = e.loaded,
                             i = ((this.uploadedBytes + t) / this.totalBytes) * 100;
                         if ((this._notifyProgress(i, this.mediaId), t / e.total > f && !h && ((h = !0), l))) {
@@ -1080,7 +1093,7 @@
                     return l ? S.send(l) : S.send(), S;
                 }
             }
-            const c = 2147483647,
+            const u = 2147483647,
                 h = 1,
                 g = 45e3,
                 m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
@@ -1141,4 +1154,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.cdda09ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-6107ac1a.c3d3eaea.js.map

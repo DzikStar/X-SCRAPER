@@ -680,35 +680,38 @@
                                 const t = L.fromJsArray(n.slice(a, o + 1).map((e) => e.conversationId));
                                 e(new B.VisibleConversationIdsChanged(t)), (h.current = { start: a, end: o });
                             }
-                        }, [e, n.slice]),
-                        f = (0, r.useCallback)(
-                            (i, a) => {
-                                const r = i.conversationId.id === d,
-                                    l = a + 1 < n.length && n[a + 1]?.conversationId.id === d,
-                                    u = a === n.length - 1;
-                                return (0, s.jsx)(
-                                    o.E.div,
-                                    {
-                                        "aria-description": i.accessibilityDescription,
-                                        whileTap: { scale: 0.99, transition: { ease: "easeInOut" } },
-                                        onViewportEnter: () => {
-                                            x(!0);
-                                        },
-                                        onViewportLeave: () => {
-                                            x(!1);
-                                        },
-                                        layout: m,
-                                        onClick: () => {
-                                            const t = new B.RowClicked(i.conversationId, i.preview?.lastReadSequenceNumber);
-                                            e(t);
-                                        },
-                                        children: (0, s.jsx)(z, { previewWithMetadata: i, actionsDialog: v(i.preview?.conversationId.id || ""), typingIndicatorItemState: c(i.conversationId), onEvent: e, isSelected: r && !t, withSeparator: !l && !r && !u, isSearch: t, isPinned: i.isPinned }),
+                        }, [e, n.slice]);
+                    (0, r.useEffect)(() => {
+                        p();
+                    }, [p]);
+                    const f = (0, r.useCallback)(
+                        (i, a) => {
+                            const r = i.conversationId.id === d,
+                                l = a + 1 < n.length && n[a + 1]?.conversationId.id === d,
+                                u = a === n.length - 1;
+                            return (0, s.jsx)(
+                                o.E.div,
+                                {
+                                    "aria-description": i.accessibilityDescription,
+                                    whileTap: { scale: 0.99, transition: { ease: "easeInOut" } },
+                                    onViewportEnter: () => {
+                                        x(!0);
                                     },
-                                    t ? i.conversationId.id + i.preview?.latestMessagePreview.sequenceNumber : i.conversationId.id,
-                                );
-                            },
-                            [d, e, n, v, t, c, m],
-                        );
+                                    onViewportLeave: () => {
+                                        x(!1);
+                                    },
+                                    layout: m,
+                                    onClick: () => {
+                                        const t = new B.RowClicked(i.conversationId, i.preview?.lastReadSequenceNumber);
+                                        e(t);
+                                    },
+                                    children: (0, s.jsx)(z, { previewWithMetadata: i, actionsDialog: v(i.preview?.conversationId.id || ""), typingIndicatorItemState: c(i.conversationId), onEvent: e, isSelected: r && !t, withSeparator: !l && !r && !u, isSearch: t, isPinned: i.isPinned }),
+                                },
+                                t ? i.conversationId.id + i.preview?.latestMessagePreview.sequenceNumber : i.conversationId.id,
+                            );
+                        },
+                        [d, e, n, v, t, c, m],
+                    );
                     return (0, s.jsx)(a.T, { api: u, onScroll: p, items: n, renderItem: f, className: "!h-full scrollbar-thin-custom pb-1", ssrCount: 10 });
                 };
         },
@@ -828,7 +831,7 @@
                             },
                             [e],
                         );
-                    return t.participants ? (0, s.jsx)("div", { className: "w-full px-8 py-4 overflow-y-auto max-w-3xl", children: (0, s.jsx)(c.I, { children: (0, s.jsx)(v.b, { participants: t.participants.asJsReadonlyArrayView(), menuItemsMap: t.menuItems.asJsReadonlyMapView(), handleParticipantClicked: n, handleParticipantMenuButtonClicked: i }) }) }) : null;
+                    return t.participants ? (0, s.jsx)("div", { className: "w-full px-8 py-4 overflow-y-auto max-w-3xl scrollbar-thin-custom", children: (0, s.jsx)(c.I, { children: (0, s.jsx)(v.b, { participants: t.participants.asJsReadonlyArrayView(), menuItemsMap: t.menuItems.asJsReadonlyMapView(), handleParticipantClicked: n, handleParticipantMenuButtonClicked: i }) }) }) : null;
                 };
         },
         996016: (e, t, n) => {
@@ -975,4 +978,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-8143bb11.fe421cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-8143bb11.a028c29a.js.map

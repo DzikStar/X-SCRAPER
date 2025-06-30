@@ -22,8 +22,8 @@
                 b = a(725516),
                 C = a(125363),
                 E = a(389071),
-                w = a(309373),
-                x = a(836255),
+                x = a(309373),
+                w = a(836255),
                 T = a(464023),
                 S = a(305442),
                 v = a(246277),
@@ -67,7 +67,7 @@
                 }
                 const { showChatBubbleEdit: he } = (0, _.u)();
                 n.useEffect(() => {
-                    me && $(x.Z.fetchOneIfNeeded(me));
+                    me && $(w.Z.fetchOneIfNeeded(me));
                 }, [me, $]);
                 const fe = n.useCallback(() => K(!0), []),
                     ye = n.useCallback(() => K(!1), []),
@@ -78,10 +78,10 @@
                         $(V.clearEditing()), U(!1), J(M), ne && (Y(), se(!1));
                     }, [$, V, M, ne, Y]),
                     Ee = (0, S.Z)("chatbox_edit"),
-                    we = n.useCallback(async () => {
-                        p && q && q.trim().length > 0 && (await $((0, w.X)({ analytics: pe, conversationKey: t })({ editingMessageId: p, text: q, fileAttachments: a ?? [], returnCitations: ce, mode: F, imageGenerationCount: Ee, isReasoning: Q, isDeepsearch: ee })), U(!1), se(!1));
+                    xe = n.useCallback(async () => {
+                        p && q && q.trim().length > 0 && (await $((0, x.X)({ analytics: pe, conversationKey: t })({ editingMessageId: p, text: q, fileAttachments: a ?? [], returnCitations: ce, mode: F, imageGenerationCount: Ee, isReasoning: Q, isDeepsearch: ee })), U(!1), se(!1));
                     }, [p, q, $, pe, t, a, ce, F, Ee, Q, ee]),
-                    xe = n.createElement(
+                    we = n.createElement(
                         s.Z,
                         { style: N.wrapper },
                         n.createElement(
@@ -95,7 +95,7 @@
                                 numberOfLines: 1,
                                 onChange: (e) => J(e.target.value),
                                 onKeyDown: (e) => {
-                                    "Enter" !== e.key || e.shiftKey || (e.preventDefault(), we());
+                                    "Enter" !== e.key || e.shiftKey || (e.preventDefault(), xe());
                                 },
                                 positionCursorAtEnd: !0,
                                 style: N.editInput,
@@ -110,7 +110,7 @@
                                     {
                                         borderColor: "transparent",
                                         onClick: () => {
-                                            we();
+                                            xe();
                                         },
                                         size: "small",
                                         style: N.editButtons,
@@ -153,7 +153,7 @@
                           )
                         : null,
                     ue ? n.createElement(s.Z, { style: N.userCardContainer }, n.createElement(D.I, { screenName: ue })) : null,
-                    j ? xe : ge ? n.createElement(s.Z, { style: N.container }, n.createElement(i.Z, { duration: "long", show: G && ie && oe, type: "fade" }, n.createElement(s.Z, { style: N.editButtonContainer }, n.createElement(r.ZP, { borderColor: "transparent", icon: n.createElement(m.default, { style: N.editIcon }), onClick: be, size: "small", style: { borderRadius: 16 } }))), n.createElement(s.Z, { style: N.chatBubble }, n.createElement(c.ZP, { style: N.textContent }, n.createElement(z.default, { allowedTokenTypes: ["code", "codespan", "list", "text", "space", "paragraph"], disableLinks: g.ZP.isWebView(), isAnimated: !1, markdownText: ge })))) : null,
+                    j ? we : ge ? n.createElement(s.Z, { style: N.container }, n.createElement(i.Z, { duration: "long", show: G && ie && oe, type: "fade" }, n.createElement(s.Z, { style: N.editButtonContainer }, n.createElement(r.ZP, { borderColor: "transparent", icon: n.createElement(m.default, { style: N.editIcon }), onClick: be, size: "small", style: { borderRadius: 16 } }))), n.createElement(s.Z, { style: N.chatBubble }, n.createElement(c.ZP, { style: N.textContent }, n.createElement(z.default, { allowedTokenTypes: ["code", "codespan", "list", "text", "space", "paragraph"], disableLinks: g.ZP.isWebView(), isAnimated: !1, markdownText: ge })))) : null,
                     l && n.createElement(c.ZP, { color: "gray700", size: "subtext2" }, B),
                     e && e.length > 0
                         ? n.createElement(
@@ -171,7 +171,7 @@
                 EditIcon: { height: 18, width: 18 },
                 editBubble: { paddingHorizontal: 0, paddingBottom: e.spaces.space16, paddingTop: e.spaces.space4, borderRadius: e.spaces.space16, backgroundColor: e.colors.gray50, alignItems: "center", width: "100%", maxWidth: "100%", gap: e.spaces.space4 },
                 chatBubble: { paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, borderRadius: e.spaces.space24, borderWidth: 1, borderColor: e.colors.borderColor, borderStyle: "solid", backgroundColor: e.colors.gray50, maxWidth: "70%", alignItems: "center", gap: e.spaces.space12 },
-                textContent: { maxWidth: "100%", lineHeight: 27 },
+                textContent: { maxWidth: "100%", lineHeight: 27, fontSize: "1.05em" },
                 editInput: { backgroundColor: "transparent", borderColor: "transparent", width: "100%", lineHeight: 27 },
                 fileAttachmentContainer: { maxWidth: "100%", marginBottom: e.spaces.space4, flexDirection: "row", alignItems: "flex-start", flexWrap: "wrap", gap: e.spaces.space8, justifyContent: "end" },
                 quoteTweetContainer: { marginTop: e.spaces.space8, flexShrink: 1 },
@@ -190,7 +190,7 @@
             }));
         },
         908118: (e, t, a) => {
-            a.d(t, { Z: () => w });
+            a.d(t, { Z: () => x });
             var n = a(202784),
                 s = a(811176),
                 o = a(111677),
@@ -209,7 +209,7 @@
             const b = { id: "TELL_US_MORE", labelEn: "Tell us more", icon: "reply" },
                 C = { DIDNT_WANT_IMAGE: r().ja8d189e, WANTED_IMAGE: r().e951f04e, WANTED_DIFFERENT_IMAGE: r().c503b35e, CODE_INCORRECT: r().d4371c92, WANTED_DIFFERENT_CODE: r().dbe8586e, DIDNT_WANT_CODE: r().e360eb4a, MATH_INCORRECT: r().a18657ca, DIDNT_WANT_MATH: r().b8b86300, INCORRECT_ANSWER: r().e4c34788, WANTED_SOMETHING_ELSE: r().b220a8c8, BIASED_ANSWER: r().b115fd18, BAD_STYLE_TONE: r().dc637214, WANTED_POST_SEARCH: r().f02e6d42, BAD_POST_RESULTS: r().bbec6bba, DIDNT_WANT_POSTS: r().b494d088, DOESNT_UNDERSTAND_IMAGE: r().a44974f2, [b.id]: r().bd44a8a8 },
                 E = { image: i.default, code: c.default, search: l.default, math: d.default, style: p.default, bias: m.default, incorrect: u.default, generic: g.default, reply: h.default };
-            function w({ feedbackLabels: e, onClose: t, onSelect: a, onSelectOtherOption: o }) {
+            function x({ feedbackLabels: e, onClose: t, onSelect: a, onSelectOtherOption: o }) {
                 const r = (0, f.v9)(y.VT).startsWith("en"),
                     i = e ? [...e, b] : [b],
                     c = n.useCallback(
@@ -242,8 +242,8 @@
             const b = u().fcdbe764,
                 C = u().bb6adb22,
                 E = u().a91bb144,
-                w = u().ia5e7488,
-                x = { label: w };
+                x = u().ia5e7488,
+                w = { label: x };
             function T({ conversationId: e, conversationItemId: t, modelVersion: a, onClose: o }) {
                 const [p, m] = n.useState(""),
                     u = n.useCallback((e) => {
@@ -260,7 +260,7 @@
                                 },
                             });
                     }, [p, e, t, a, T, v, o]);
-                return n.createElement(i.Z, { onMaskClick: o, style: S.sheet, type: "bottom", withMask: !0 }, n.createElement(s.Z, { style: S.header }, n.createElement(c.ZP, { size: "headline1" }, b)), n.createElement(l.ZP, { "aria-label": w, hoverLabel: x, icon: n.createElement(g.default, null), onPress: o, style: S.close, type: "primaryText" }), n.createElement(d.Z, { autoComplete: "off", autoFocus: !0, label: C, name: "grokFeedback", onChange: u, onSubmitEditing: k, value: p }), n.createElement(l.ZP, { disabled: "" === p, onPress: k, size: "large", style: S.button, type: "primaryFilled" }, E));
+                return n.createElement(i.Z, { onMaskClick: o, style: S.sheet, type: "bottom", withMask: !0 }, n.createElement(s.Z, { style: S.header }, n.createElement(c.ZP, { size: "headline1" }, b)), n.createElement(l.ZP, { "aria-label": x, hoverLabel: w, icon: n.createElement(g.default, null), onPress: o, style: S.close, type: "primaryText" }), n.createElement(d.Z, { autoComplete: "off", autoFocus: !0, label: C, name: "grokFeedback", onChange: u, onSubmitEditing: k, value: p }), n.createElement(l.ZP, { disabled: "" === p, onPress: k, size: "large", style: S.button, type: "primaryFilled" }, E));
             }
             const S = p.default.create((e) => ({ close: { position: "absolute", end: e.spaces.space16, top: e.spaces.space16 }, button: { marginHorizontal: e.spaces.space8, marginBottom: e.spaces.space16 }, sheet: { padding: e.spaces.space16 }, header: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" } }));
         },
@@ -308,8 +308,8 @@
                     E = n.useCallback(() => {
                         h(!0), d?.();
                     }, [h, d]),
-                    w = !g && m && !t;
-                return n.createElement(s.Z, { style: p.container }, n.createElement(s.Z, { style: C }, n.createElement(s.Z, { onLayout: b, style: p.contentWrapper }, e), w ? n.createElement(s.Z, { style: p.seeMoreContainer }, n.createElement(o.Z, { colors: [r.default.theme.colors.transparent, r.default.theme.colors.cellBackground], style: p.foldShadow }), n.createElement(i.ZP, { color: "link", onPress: E, style: p.seeMoreLabel, withInteractiveStyling: !0 }, l)) : null));
+                    x = !g && m && !t;
+                return n.createElement(s.Z, { style: p.container }, n.createElement(s.Z, { style: C }, n.createElement(s.Z, { onLayout: b, style: p.contentWrapper }, e), x ? n.createElement(s.Z, { style: p.seeMoreContainer }, n.createElement(o.Z, { colors: [r.default.theme.colors.transparent, r.default.theme.colors.cellBackground], style: p.foldShadow }), n.createElement(i.ZP, { color: "link", onPress: E, style: p.seeMoreLabel, withInteractiveStyling: !0 }, l)) : null));
             }
             const p = r.default.create((e) => ({ container: { width: "100%", maxWidth: "100%" }, contentContainer: { width: "100%", maxWidth: "100%", overflow: "hidden" }, contentWrapper: { width: "100%", maxWidth: "100%", position: "relative" }, foldShadow: { position: "absolute", zIndex: 100, bottom: "100%", start: 0, width: "100%", maxWidth: "100%", height: e.spaces.space36 }, seeMoreLabel: { marginTop: e.spaces.space8, marginBottom: e.spaces.space12, cursor: "pointer" }, seeMoreContainer: { position: "absolute", width: "100%", bottom: 0, backgroundColor: e.colors.cellBackground, overflow: "visible", zIndex: 100 } }));
         },
@@ -333,8 +333,8 @@
                 b = a(603416),
                 C = a(583429),
                 E = a(983650),
-                w = a(530732),
-                x = a(58399),
+                x = a(530732),
+                w = a(58399),
                 T = a(187669),
                 S = a(246851),
                 v = a(725516),
@@ -386,7 +386,7 @@
                     n.createElement(
                         s.Z,
                         { style: [O.collapsedTracePreviewTextGradientContainer, O.expandedTracePreviewTextGradientContainer, a ? { height: a } : void 0] },
-                        n.createElement(w.Z, { disabled: e, interactiveStyles: O.interactiveTracePreviewHeaderContainer, onClick: () => d(!0) }, ({ isHovered: t }) => n.createElement(s.Z, { style: O.tracePreviewTextGradientContainer }, n.createElement(s.Z, { style: O.tracePreviewScrollerContainer }, n.createElement(P.w, { charLimit: 1500, text: r })), n.createElement(R.Z, { angle: 0, colors: p(), style: O.traceGradientTop }), n.createElement(R.Z, { colors: p(), style: O.traceGradientBottom }), !e && n.createElement(D.default, { style: [O.expandThinkingTraceIcon, t ? O.hoveredExpandThinkingTraceIcon : void 0] }))),
+                        n.createElement(x.Z, { disabled: e, interactiveStyles: O.interactiveTracePreviewHeaderContainer, onClick: () => d(!0) }, ({ isHovered: t }) => n.createElement(s.Z, { style: O.tracePreviewTextGradientContainer }, n.createElement(s.Z, { style: O.tracePreviewScrollerContainer }, n.createElement(P.w, { charLimit: 1500, text: r })), n.createElement(R.Z, { angle: 0, colors: p(), style: O.traceGradientTop }), n.createElement(R.Z, { colors: p(), style: O.traceGradientBottom }), !e && n.createElement(D.default, { style: [O.expandThinkingTraceIcon, t ? O.hoveredExpandThinkingTraceIcon : void 0] }))),
                     ),
                     l && n.createElement(F, { onDismissed: () => d(!1), trace: r }),
                 );
@@ -403,7 +403,7 @@
                 return n.createElement(
                     s.Z,
                     { style: j.container },
-                    n.createElement(w.Z, { interactiveStyles: j.interactiveHeaderContainer, onClick: m }, ({ isHovered: e }) => n.createElement(s.Z, { style: [j.headerContainer, f ? j.compactHeaderContainer : void 0, !r && e ? j.hoveredHeaderContainer : void 0] }, n.createElement(s.Z, { style: j.infoContainer }, b(), C()), n.createElement(x.default, { style: [j.caretIcon, r ? j.expandedCaretIcon : void 0] }))),
+                    n.createElement(x.Z, { interactiveStyles: j.interactiveHeaderContainer, onClick: m }, ({ isHovered: e }) => n.createElement(s.Z, { style: [j.headerContainer, f ? j.compactHeaderContainer : void 0, !r && e ? j.hoveredHeaderContainer : void 0] }, n.createElement(s.Z, { style: j.infoContainer }, b(), C()), n.createElement(w.default, { style: [j.caretIcon, r ? j.expandedCaretIcon : void 0] }))),
                     !r && !t && !e && u && n.createElement($, { disableExpand: !0, gradientColor: c.default.theme.colors.gray0, previewHeight: 50, style: j.tracePreview, trace: h }),
                 );
             }
@@ -457,7 +457,7 @@
                         s.Z,
                         { key: i.id, style: ce.container },
                         n.createElement(
-                            w.Z,
+                            x.Z,
                             {
                                 interactiveStyles: ce.interactiveTitleContainer,
                                 onClick: () => {
@@ -465,7 +465,7 @@
                                 },
                                 style: [ce.titleContainer, t ? { paddingTop: 0 } : void 0],
                             },
-                            ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(s.Z, { style: ce.statusTitleContainer }, n.createElement(s.Z, { style: [ce.statusIconContainer, r ? { backgroundColor: r } : void 0] }, n.createElement(U.Z, { color: c.default.theme.colors.gray900, size: "small", style: [ce.statusIcon, f ? ce.statusIconVisible : void 0, f ? void 0 : ce.statusIconHide] }), n.createElement(q.default, { style: [ce.statusIcon, ce.completeFailedIcon, y ? ce.completeFailedIconVisible : void 0] }), n.createElement(J.default, { style: [ce.statusIcon, ce.completeFailedIcon, b ? ce.completeFailedIconVisible : void 0] })), b ? n.createElement(o.ZP, { style: ce.title }, re) : n.createElement(o.ZP, { style: [ce.title, e ? ce.hoveredTitle : void 0] }, i.header)), i.subSteps.length > 0 && n.createElement(x.default, { style: [ce.caret, m ? ce.expandedCaret : void 0] })),
+                            ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(s.Z, { style: ce.statusTitleContainer }, n.createElement(s.Z, { style: [ce.statusIconContainer, r ? { backgroundColor: r } : void 0] }, n.createElement(U.Z, { color: c.default.theme.colors.gray900, size: "small", style: [ce.statusIcon, f ? ce.statusIconVisible : void 0, f ? void 0 : ce.statusIconHide] }), n.createElement(q.default, { style: [ce.statusIcon, ce.completeFailedIcon, y ? ce.completeFailedIconVisible : void 0] }), n.createElement(J.default, { style: [ce.statusIcon, ce.completeFailedIcon, b ? ce.completeFailedIconVisible : void 0] })), b ? n.createElement(o.ZP, { style: ce.title }, re) : n.createElement(o.ZP, { style: [ce.title, e ? ce.hoveredTitle : void 0] }, i.header)), i.subSteps.length > 0 && n.createElement(w.default, { style: [ce.caret, m ? ce.expandedCaret : void 0] })),
                         ),
                         n.createElement(
                             s.Z,
@@ -556,7 +556,7 @@
                                     { style: ue.stepsOuterContainer },
                                     h &&
                                         n.createElement(
-                                            w.Z,
+                                            x.Z,
                                             {
                                                 interactiveStyles: ue.interactiveShowThinkingContainer,
                                                 onPress: () => {
@@ -564,7 +564,7 @@
                                                 },
                                                 style: ue.showThinkingContainer,
                                             },
-                                            ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(o.ZP, { style: [ue.showThinkingText, e ? ue.hoveredShowThinkingText : void 0] }, pe), n.createElement(x.default, { style: ue.showThinkingCaret })),
+                                            ({ isHovered: e }) => n.createElement(n.Fragment, null, n.createElement(o.ZP, { style: [ue.showThinkingText, e ? ue.hoveredShowThinkingText : void 0] }, pe), n.createElement(w.default, { style: ue.showThinkingCaret })),
                                         ),
                                     n.createElement(
                                         s.Z,
@@ -599,15 +599,15 @@
                 be = a(468603),
                 Ce = a(159210),
                 Ee = a(567778),
-                we = a(997041),
-                xe = a(986274),
+                xe = a(997041),
+                we = a(986274),
                 Te = a(915066),
                 Se = a(618770),
                 ve = a(917118),
                 ke = a(674756);
             const Ze = d().b327c12a,
                 Ie = d().ca93f2ee;
-            function _e({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: c, id: l, isDeleted: d, isLoading: w, isAborted: x, query: T, sender: S, text: v, trace: Z, tweetIds: _ = [], upsell: z, webResults: R = [], citedWebResults: D = [], intermediateImageResults: P = [], promptSource: A, cardAttachments: H, followUpSuggestedMode: W, performanceMetrics: B, userChatItemId: L, mediaTweetIds: N, chatResponseAnnotations: F, isLastResponse: M, messageStepAccumulator: O, isPastThinkingTrace: $, disclaimer: V, chatItemId: G, expectedImageAspectRatio: K, memoryReferences: j, reasoningLayout: U }) {
+            function _e({ analysisEntityId: e, bannerMessages: t, conversationKey: a, fileAttachments: c, id: l, isDeleted: d, isLoading: x, isAborted: w, query: T, sender: S, text: v, trace: Z, tweetIds: _ = [], upsell: z, webResults: R = [], citedWebResults: D = [], intermediateImageResults: P = [], promptSource: A, cardAttachments: H, followUpSuggestedMode: W, performanceMetrics: B, userChatItemId: L, mediaTweetIds: N, chatResponseAnnotations: F, isLastResponse: M, messageStepAccumulator: O, isPastThinkingTrace: $, disclaimer: V, chatItemId: G, expectedImageAspectRatio: K, memoryReferences: j, reasoningLayout: U }) {
                 const q = (0, u.hC)("responsive_web_grok_animated_text_enabled"),
                     J = (0, u.hC)("responsive_web_grok_analyze_helpful_feedback"),
                     Y = (0, u.hC)("responsive_web_grok_show_grok_performance_metrics"),
@@ -615,8 +615,8 @@
                     Q = (0, u.hC)("responsive_web_grok_use_collapsed_preview"),
                     { isCompactLayout: ee, isShowButtons: te } = (0, k.ZP)(),
                     [ae, ne] = n.useState(!1),
-                    se = q && !!w,
-                    oe = (0, ge.u)((0, we.T)(v || "", H || []), se),
+                    se = q && !!x,
+                    oe = (0, ge.u)((0, xe.T)(v || "", H || []), se),
                     re = (0, ge.u)(Z || "", se),
                     ie = (0, g.v9)((e) => h.ZP.select(e, f.c0)),
                     ce = "UNIFIED" === U,
@@ -641,7 +641,7 @@
                             fromTimestamp: de,
                             hasCardAttachments: H && H.length > 0,
                             isImageResponse: De,
-                            isLoading: w,
+                            isLoading: x,
                             messageStepAccumulator: O,
                             onClick: () => {
                                 ne(!ae);
@@ -654,11 +654,11 @@
                             style: ze.status,
                             useTypingStatus: !Q,
                         }),
-                        O && n.createElement(n.Fragment, null, ce && (Q ? n.createElement(Ce.Z, { completedTimestamp: le, expanded: ae, fromTimestamp: de, isLoading: w, isStatusExpanded: ae, messageStepAccumulator: O }) : n.createElement(r.Z, { show: ae, type: "slide" }, n.createElement(he.Z, { completedTimestamp: le, fromTimestamp: de, hideSidePanel: !0, isLoading: w, messageStepAccumulator: O }))), !ce && "PENDING" !== O.state && (ee ? n.createElement(me, { completedTimestamp: le, fromTimestamp: de, messageStepAccumulator: O }) : n.createElement(I.ZP, { completedTimestamp: le, fromTimestamp: de, isLoading: w, messageStepAccumulator: O }))),
-                        "" !== re && !ce && n.createElement(fe.Z, { completed: !("" !== re && "" === oe && w), endStreamTimestamp: le, fromTimestamp: de, hasResponseText: !!v, id: l ?? "", isPastThinkingTrace: $, performanceMetrics: B ?? {}, shownTrace: re }),
+                        O && n.createElement(n.Fragment, null, ce && (Q ? n.createElement(Ce.Z, { completedTimestamp: le, expanded: ae, fromTimestamp: de, isLoading: x, isStatusExpanded: ae, messageStepAccumulator: O }) : n.createElement(r.Z, { show: ae, type: "slide" }, n.createElement(he.Z, { completedTimestamp: le, fromTimestamp: de, hideSidePanel: !0, isLoading: x, messageStepAccumulator: O }))), !ce && "PENDING" !== O.state && (ee ? n.createElement(me, { completedTimestamp: le, fromTimestamp: de, messageStepAccumulator: O }) : n.createElement(I.ZP, { completedTimestamp: le, fromTimestamp: de, isLoading: x, messageStepAccumulator: O }))),
+                        "" !== re && !ce && n.createElement(fe.Z, { completed: !("" !== re && "" === oe && x), endStreamTimestamp: le, fromTimestamp: de, hasResponseText: !!v, id: l ?? "", isPastThinkingTrace: $, performanceMetrics: B ?? {}, shownTrace: re }),
                         ce && n.createElement(i.Z, { axis: "y", size: "space32" }),
                         De ? n.createElement(s.Z, { style: [ze.textContainer, se ? ze.animation : null] }, n.createElement(o.ZP, { color: "gray700", size: "subtext1" }, Ze)) : null,
-                        n.createElement(Se.K, { expectedImageAspectRatio: K, fileAttachments: c, intermediateImageResults: P, isAborted: x, isLoading: w, messageId: l }),
+                        n.createElement(Se.K, { expectedImageAspectRatio: K, fileAttachments: c, intermediateImageResults: P, isAborted: w, isLoading: x, messageId: l }),
                         Re.length > 0 &&
                             n.createElement(
                                 s.Z,
@@ -673,11 +673,11 @@
                               )
                             : null,
                         N?.length && X ? n.createElement(ve.e, { isAnimated: se, mediaIds: N }) : null,
-                        n.createElement(s.Z, { ref: pe, style: ze.textContainer }, De ? null : d ? n.createElement(o.ZP, { style: ze.deletedText }, Ie) : n.createElement(y.default, { cardAttachments: H, chatResponseAnnotations: F, citations: _e, disableLinks: m.ZP.isWebView(), isAborted: x, isAnimated: se, isStreaming: w, key: "normal-answer", markdownText: oe, messageId: l || "" })),
+                        n.createElement(s.Z, { ref: pe, style: ze.textContainer }, De ? null : d ? n.createElement(o.ZP, { style: ze.deletedText }, Ie) : n.createElement(o.ZP, { style: ze.text }, n.createElement(y.default, { cardAttachments: H, chatResponseAnnotations: F, citations: _e, disableLinks: m.ZP.isWebView(), isAborted: w, isAnimated: se, isStreaming: x, key: "normal-answer", markdownText: oe, messageId: l || "" }))),
                     ),
-                    !w && n.createElement(Te.U, { postIds: _ ?? [], response: oe, style: ze.embeddedContent, webResults: R ?? [] }),
-                    Ae && !w ? n.createElement(s.Z, { style: ze.searchButtonsContainer }, n.createElement(ke.R, { isAnimated: !0, postIds: _ ?? [], webResults: R ?? [] })) : null,
-                    te && !z ? n.createElement(s.Z, { style: ue ? ze.helpfulFooterContainer : ze.footerContainer }, n.createElement(s.Z, { style: ze.messageButtonsContainer }, ue ? n.createElement(C.W, { conversationKey: a, messageId: l }) : n.createElement(b.Z, { analysisEntityId: e, conversationKey: a, customLeftContent: !w && Y && B ? n.createElement(xe.E, { performanceMetrics: B, userChatItemId: L }) : null, messageId: l, promptSource: A, showPostButton: M, textContainer: pe }))) : null,
+                    !x && n.createElement(Te.U, { postIds: _ ?? [], response: oe, style: ze.embeddedContent, webResults: R ?? [] }),
+                    Ae && !x ? n.createElement(s.Z, { style: ze.searchButtonsContainer }, n.createElement(ke.R, { isAnimated: !0, postIds: _ ?? [], webResults: R ?? [] })) : null,
+                    te && !z ? n.createElement(s.Z, { style: ue ? ze.helpfulFooterContainer : ze.footerContainer }, n.createElement(s.Z, { style: ze.messageButtonsContainer }, ue ? n.createElement(C.W, { conversationKey: a, messageId: l }) : n.createElement(b.Z, { analysisEntityId: e, conversationKey: a, customLeftContent: !x && Y && B ? n.createElement(we.E, { performanceMetrics: B, userChatItemId: L }) : null, messageId: l, promptSource: A, showPostButton: M, textContainer: pe }))) : null,
                     z ? n.createElement(s.Z, { style: ze.upsellContainer }, n.createElement(Ee.w, { upsell: z })) : null,
                 );
             }
@@ -706,8 +706,9 @@
                 debugText: { color: e.colors.gray500, width: "100%", alignSelf: "flex-start" },
                 cards: { display: "flex", flexDirection: "column", gap: e.spaces.space12, width: "100%" },
                 embeddedContent: { width: "100%", maxWidth: f.vf, marginTop: e.spaces.space12, paddingHorizontal: e.spaces.space16 },
+                text: { fontSize: "1.05em" },
             }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.c80d983a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.7be6fe7a.js.map

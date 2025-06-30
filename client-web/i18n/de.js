@@ -10168,7 +10168,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok übersetzt automatisch basierened auf deiner X Nutzung und deinen ", ". Du kannst die Einstellungen für die automatisch Übersetzung auch unten ändern."];
+                                return ["Grok übersetzt automatisch basierend auf deiner X Nutzung und deinen ", ". Du kannst die Einstellungen für die automatische Übersetzung auch unten ändern."];
                             },
                         },
                         {
@@ -13381,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.023e33ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.ddd2882a.js.map

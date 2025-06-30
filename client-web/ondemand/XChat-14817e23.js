@@ -119,7 +119,7 @@
                                             accept: "image/*,video/*,audio/*,.pdf,.doc,.docx,.xls,.xlsx,.txt",
                                         }),
                                         (0, o.jsx)(m.z, {
-                                            size: "large",
+                                            size: "small",
                                             disabled: !j.canAddAttachment,
                                             icon: (0, o.jsx)(c.Z, {}),
                                             onClick: () => {
@@ -302,4 +302,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.d82d740a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-14817e23.d1a5dc4a.js.map

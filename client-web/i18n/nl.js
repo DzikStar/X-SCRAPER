@@ -1317,10 +1317,10 @@
                 a("a02d1657", function (e) {
                     return "Code uitvoeren" + e.ttc_tool_usage_card;
                 }),
-                a("aa9d42c0", "Searching the web"),
-                a("dce1817a", "Searching on 𝕏"),
-                a("f7151564", "Searching users on 𝕏"),
-                a("c43ef93e", "Browsing web page"),
+                a("aa9d42c0", "Zoeken op het web"),
+                a("dce1817a", "Zoeken op X"),
+                a("f7151564", "Gebruikers zoeken op X"),
+                a("c43ef93e", "Webpagina doorzoeken"),
                 a("jb097f6e", "Code uitvoeren"),
                 a("ead81122", "Er is iets misgegaan. Vernieuw om opnieuw verbinding te maken of probeer het opnieuw."),
                 a("f808a13a", "De limiet is overschreden. Wacht een paar minuten en probeer het opnieuw."),
@@ -1368,11 +1368,11 @@
                 a("e0bffbf8", "Over automatische vertaling"),
                 a("e839db3a", "Afwijzen"),
                 a("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return e.language + " automatisch vertalen";
                 }),
-                a("c60b9e5c", "Changes will take effect for newly loaded content."),
-                a("f9317b98", "language settings"),
-                a("hba0547a", "Unable to update settings. Please try again later."),
+                a("c60b9e5c", "Wijzigingen worden van kracht voor nieuw geladen content."),
+                a("f9317b98", "je taalinstellingen"),
+                a("hba0547a", "Bijwerken instellingen mislukt. Probeer het later opnieuw."),
                 a("d4c339b9", function (e) {
                     return "Post van " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -7400,10 +7400,10 @@
                 a("d94f12b6", "Probeer te zoeken op meldingen, privacy etc."),
                 a("ba8f6f82", "Zoeken in Instellingen"),
                 a("ibf92e4a", "Betaling gelukt"),
-                a("bdf0fb06", "Your subscription has been activated."),
+                a("bdf0fb06", "Je abonnement is geactiveerd."),
                 a("ddfd6718", "Betaling mislukt"),
                 a("d42fa852", "Er is een probleem opgetreden bij het verwerken van je betaling. Probeer het opnieuw."),
-                a("g055a9ce", "Open 𝕏 App"),
+                a("g055a9ce", "App van X openen"),
                 a("g931a6e5", function (e) {
                     return "Je volgt " + e.topic;
                 }),
@@ -10168,7 +10168,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok vertaalt automatisch op basis van je gebruik van X en ", ". Je kan ook de automatische vertaalinstellingen hieronder wijzigen."];
                             },
                         },
                         {
@@ -13381,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.857bd8ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.f92708ea.js.map

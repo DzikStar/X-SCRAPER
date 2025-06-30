@@ -1316,10 +1316,10 @@
                 f("a02d1657", function (e) {
                     return "正在执行代码" + e.ttc_tool_usage_card;
                 }),
-                f("aa9d42c0", "Searching the web"),
-                f("dce1817a", "Searching on 𝕏"),
-                f("f7151564", "Searching users on 𝕏"),
-                f("c43ef93e", "Browsing web page"),
+                f("aa9d42c0", "正在网上搜索"),
+                f("dce1817a", "在 𝕏 上搜索"),
+                f("f7151564", "正在 𝕏 上搜索用户"),
+                f("c43ef93e", "浏览网页"),
                 f("jb097f6e", "正在执行代码"),
                 f("ead81122", "出错了，请刷新以重新连接或重试。"),
                 f("f808a13a", "超过频率限制。请稍后再试。"),
@@ -1367,11 +1367,11 @@
                 f("e0bffbf8", "关于自动翻译"),
                 f("e839db3a", "忽略"),
                 f("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "自动翻译" + e.language;
                 }),
-                f("c60b9e5c", "Changes will take effect for newly loaded content."),
-                f("f9317b98", "language settings"),
-                f("hba0547a", "Unable to update settings. Please try again later."),
+                f("c60b9e5c", "更改将对新加载的内容生效。"),
+                f("f9317b98", "语言设置"),
+                f("hba0547a", "无法更新设置。请稍后重试。"),
                 f("d4c339b9", function (e) {
                     return "来自 " + e.fullName + " (@" + e.screenName + ") 的帖子";
                 }),
@@ -7399,10 +7399,10 @@
                 f("d94f12b6", "尝试搜索通知、隐私等"),
                 f("ba8f6f82", "搜索设置"),
                 f("ibf92e4a", "支付成功"),
-                f("bdf0fb06", "Your subscription has been activated."),
+                f("bdf0fb06", "你的订阅已被激活。"),
                 f("ddfd6718", "付款失败"),
                 f("d42fa852", "处理你的支付时出现问题。请稍后重试。"),
-                f("g055a9ce", "Open 𝕏 App"),
+                f("g055a9ce", "打开 𝕏 应用"),
                 f("g931a6e5", function (e) {
                     return "你正在关注 " + e.topic;
                 }),
@@ -10170,7 +10170,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok 将根据你的 X 使用情况和", "自动进行翻译。你还可以通过以下设置切换自动翻译选项。"];
                             },
                         },
                         {
@@ -13382,4 +13382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.8f08407a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.f6fc3b1a.js.map

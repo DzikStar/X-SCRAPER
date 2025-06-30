@@ -354,7 +354,7 @@
                     if (!t && !s?.quickReactions) return null;
                     const x = s?.quickReactions?.asJsReadonlyArrayView().map((e) => e.asJsReadonlyArrayView());
                     return (0, n.jsx)(Ce.J, {
-                        borderRadius: "2xLarge",
+                        borderRadius: "xLarge",
                         trigger: (0, n.jsx)("div", {
                             className: "flex items-center gap-2",
                             children: (0, n.jsx)(B.z, {
@@ -388,24 +388,24 @@
                                 : (0, n.jsxs)(n.Fragment, {
                                       children: [
                                           (0, n.jsx)("div", {
-                                              className: "flex flex-col rounded-2xl border",
+                                              className: "flex flex-col p-0.5 rounded-xl border",
                                               children: x?.map((s, t) =>
                                                   (0, n.jsx)(
                                                       "div",
                                                       {
                                                           className: "flex",
-                                                          children: s.map((i, r) =>
+                                                          children: s.map((s) =>
                                                               (0, n.jsx)(
                                                                   "button",
                                                                   {
                                                                       type: "button",
-                                                                      className: (0, De.Z)("w-8 h-8 flex items-center justify-center hover:bg-gray-100", { "bg-gray-50": i.isSelected }, { "rounded-r": i.isSelected && r < s.length - 1 && !s[r + 1]?.isSelected }, { "!rounded-t-none": i.isSelected && t === x.length - 1 }),
+                                                                      className: (0, De.Z)("w-8 h-8 rounded-lg flex items-center justify-center hover:bg-gray-100 m-[1px]", { "bg-gray-50": s.isSelected }),
                                                                       onClick: () => {
-                                                                          a(new ke.ReactionPickerItemClick(i, e));
+                                                                          a(new ke.ReactionPickerItemClick(s, e));
                                                                       },
-                                                                      children: (0, n.jsx)(A.c, { emoji: i.emoji }),
+                                                                      children: (0, n.jsx)(A.c, { emoji: s.emoji }),
                                                                   },
-                                                                  i.emoji,
+                                                                  s.emoji,
                                                               ),
                                                           ),
                                                       },
@@ -414,10 +414,10 @@
                                               ),
                                           }),
                                           (0, n.jsx)("div", {
-                                              className: "absolute bottom-0 right-0 bg-background",
+                                              className: "absolute bottom-0.5 right-0.5 bg-background",
                                               children: (0, n.jsx)("button", {
                                                   type: "button",
-                                                  className: "w-8 h-8 rounded flex items-center justify-center hover:bg-gray-100",
+                                                  className: "w-8 h-8 rounded-lg flex items-center justify-center hover:bg-gray-100",
                                                   onClick: () => {
                                                       a(ke.MessageReactionsClicked), d(!0);
                                                   },
@@ -579,14 +579,14 @@
                     j = (0, o.useCallback)(() => {
                         if (g.current && d) {
                             const s = g.current.findStartIndex(),
-                                t = g.current.findEndIndex(),
-                                n = c
-                                    .slice(s, t + 1)
+                                n = g.current.findEndIndex(),
+                                a = c
+                                    .slice(s, n + 1)
                                     .filter((e) => e instanceof es || e instanceof Qe)
                                     .map((e) => e.sequenceNumber);
-                            m.current.clear(), n.forEach((e) => m.current.set(e, !0)), e.onEvent(new r.com.x.dms.chat.DmEvent.VisibleMessagesChanged(t === c.length - 1, ss.fromJsArray(n)));
+                            m.current.clear(), a.forEach((e) => m.current.set(e, !0)), e.onEvent(new r.com.x.dms.chat.DmEvent.VisibleMessagesChanged(n === c.length - 1, ss.fromJsArray(a))), s < 10 && t.chatItems.olderItemsInfo && N(new r.com.x.dms.chat.DmEvent.ScrolledToTop(t.chatItems.olderItemsInfo));
                         }
-                    }, [e, c, g.current, d]),
+                    }, [e, c, g.current, d, t.chatItems.olderItemsInfo]),
                     w = (0, o.useRef)(!1),
                     y = (0, Xe.E)((e) => {
                         (w.current = !0),
@@ -612,8 +612,9 @@
                     (0, o.useEffect)(() => {
                         if (t.requestScrollTo && g.current) {
                             const e = { align: "center", smooth: !0 };
-                            g.current?.scrollToIndex?.(c.length - t.requestScrollTo.index, e), (f.current = !1), j();
+                            g.current?.scrollToIndex?.(c.length - t.requestScrollTo.index, e), (f.current = !1);
                         }
+                        j();
                     }, [t.requestScrollTo, c, g.current, j]),
                     (0, n.jsxs)(n.Fragment, {
                         children: [
@@ -649,9 +650,6 @@
                                                     },
                                                     onNearEnd: () => {
                                                         f.current = !1;
-                                                    },
-                                                    onAtStart: () => {
-                                                        t.chatItems.olderItemsInfo && N(new r.com.x.dms.chat.DmEvent.ScrolledToTop(t.chatItems.olderItemsInfo));
                                                     },
                                                     renderItem: (e) => {
                                                         return (0, n.jsx)(Ze, { chatItem: e, onEvent: N, messageFocusedDialog: ((s = e.id), t.showingMessageFocusedDialog?.message.id === s ? t.showingMessageFocusedDialog : null), showMessageInfoDialog: h === e.id, messageInfoDialog: v, messageInfoDialogDismissed: C, isVisible: I(e), isOneToOne: t.convId instanceof r.com.x.models.dm.XConversationId.OneOnOne }, e.uniqueKey);
@@ -885,6 +883,7 @@
                     return (0, n.jsx)(n.Fragment, {
                         children: (0, n.jsxs)(j.cZ, {
                             withCloseButton: !1,
+                            className: "pb-0",
                             children: [
                                 (0, n.jsxs)(j.fK, {
                                     children: [
@@ -941,4 +940,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.1621558a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.b8f5769a.js.map

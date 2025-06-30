@@ -1368,7 +1368,7 @@
                 n("e0bffbf8", "ಸ್ವಯಂಚಾಲಿತ ಅನುವಾದದ ಬಗ್ಗೆ"),
                 n("e839db3a", "ವಜಾಗೊಳಿಸಿ"),
                 n("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return e.language + " ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನುವಾದಿಸಿ";
                 }),
                 n("c60b9e5c", "Changes will take effect for newly loaded content."),
                 n("f9317b98", "language settings"),
@@ -13380,4 +13380,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.ae2668ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.eb4ac04a.js.map

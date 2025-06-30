@@ -2,7 +2,7 @@
     ["shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315"],
     {
         721879: (e) => {
-            e.exports = { queryId: "YmRc-eYvY6VDG26g5zMgsA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "U453yX796t4tk3Man6AngA", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         218276: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -11,7 +11,7 @@
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         549186: (e) => {
-            e.exports = { queryId: "NXvZJ8hM8goI1KXIMlSavA", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "iEHLoWav3lKYBx4lduV09A", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "payments_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         769948: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -54,8 +54,8 @@
                 P = o.n(k),
                 I = o(630986),
                 F = o.n(I),
-                Z = o(934309);
-            const C = { result: [], entities: {}, slice_info: {} },
+                C = o(934309);
+            const Z = { result: [], entities: {}, slice_info: {} },
                 E = (e, t) => {
                     const o = t?.bookmark_all_delete,
                         r = "Done" === o;
@@ -97,8 +97,8 @@
                         const { bookmarkFolderId: o, tweetId: r } = t;
                         return e.graphQL(F(), { bookmark_collection_id: o, tweet_id: r });
                     },
-                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(m(), { count: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || Z.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, T).then((e) => e?.bookmark_collection_timeline?.timeline || Z.cY),
+                    fetchBookmarksTimeline: ({ count: o, cursor: r }) => e.graphQL(m(), { count: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || C.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: r }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: r, includePromotedContent: !0, ...(0, s.d)(t) }, T).then((e) => e?.bookmark_collection_timeline?.timeline || C.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
                             ? e.graphQL(d(), t, S).then((e) => {
@@ -109,9 +109,9 @@
                                       const { entities: e, result: t } = (0, r.Fv)(a.items, [n]);
                                       return { entities: e, result: t, slice_info: a.slice_info };
                                   }
-                                  return C;
+                                  return Z;
                               })
-                            : Promise.resolve(C),
+                            : Promise.resolve(Z),
                 });
         },
         290402: (e, t, o) => {
@@ -158,7 +158,7 @@
                 y = (0, m.M)((e) => {
                     const { onBlock: t, onClose: o, onMute: s, onRemoveFollower: n, onReportUser: m, onShare: y, onUnblock: k, onUnmute: P, user: I } = e,
                         F = [],
-                        Z = (t, o) => {
+                        C = (t, o) => {
                             const { confirm: r, onClose: a } = e;
                             if (t) {
                                 const { label: e, ...i } = t;
@@ -196,13 +196,13 @@
                         F.push({
                             ...(0, u.l)({
                                 removeFollowerAction: (e) => {
-                                    Z(e, n);
+                                    C(e, n);
                                 },
                                 user: I,
                             }),
                             testID: b,
                         }),
-                        F.push((0, c.op)({ blockAction: (e) => Z(e, t), source: c.SC.FOLLOWERS_LIST, testID: _, unblockAction: (e) => Z(e, k), user: I })),
+                        F.push((0, c.op)({ blockAction: (e) => C(e, t), source: c.SC.FOLLOWERS_LIST, testID: _, unblockAction: (e) => C(e, k), user: I })),
                         F.push({
                             Icon: l.default,
                             onClick: () => {
@@ -211,8 +211,8 @@
                             testID: f,
                             text: w({ screenName: I.screen_name }),
                         });
-                    const C = F.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
-                    return r.createElement(i.Z, { items: C, onCloseRequested: o });
+                    const Z = F.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(i.Z, { items: Z, onCloseRequested: o });
                 });
         },
         113392: (e, t, o) => {
@@ -342,7 +342,7 @@
                 P = o(950822),
                 I = o(303186),
                 F = o(954300);
-            class Z extends r.Component {
+            class C extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -356,14 +356,14 @@
                     return (0, P.Z)("video", { ...s, children: [n.map((e) => r.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: a });
                 }
             }
-            Z.defaultProps = { dataSaverMode: !1, variants: [] };
-            var C = o(959587),
+            C.defaultProps = { dataSaverMode: !1, variants: [] };
+            var Z = o(959587),
                 E = o(751170),
                 S = o(523561),
                 T = o(195560);
             const D = (0, S.Z)({
                     loader: () =>
-                        Promise.all([o.e("icons.0"), o.e("icons.16"), o.e("icons.10"), o.e("icons.13"), o.e("icons.22"), o.e("modules.common-e907d115"), o.e("modules.common-e019dbda"), o.e("icons.26"), o.e("modules.audio-6107ac1a"), o.e("modules.audio-b953418a"), o.e("modules.audio-7c51e6a7"), o.e("modules.audio-04db59e9"), o.e("modules.audio-76583d6c"), o.e("modules.audio-b7a8a5fb"), o.e("modules.audio-51f6e793"), o.e("modules.audio-e019dbda"), o.e("modules.audio-262c94d4"), o.e("modules.audio-c6fe4ea4"), o.e("icons.4"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), o.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), o.e("loader.MediaPreviewVideoPlayer")])
+                        Promise.all([o.e("icons.5"), o.e("icons.28"), o.e("icons.17"), o.e("modules.common-e907d115"), o.e("modules.common-e019dbda"), o.e("icons.25"), o.e("icons.13"), o.e("modules.audio-6107ac1a"), o.e("modules.audio-b953418a"), o.e("modules.audio-7c51e6a7"), o.e("modules.audio-04db59e9"), o.e("modules.audio-76583d6c"), o.e("modules.audio-b7a8a5fb"), o.e("modules.audio-51f6e793"), o.e("modules.audio-e019dbda"), o.e("modules.audio-262c94d4"), o.e("modules.audio-c6fe4ea4"), o.e("icons.4"), o.e("icons.1"), o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-169fd384"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-43dc6c10"), o.e("shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-3275b397"), o.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerMiniUI~loaders.video.VideoPlayerHashtagHig"), o.e("loader.MediaPreviewVideoPlayer")])
                             .then(o.bind(o, 298607))
                             .then((e) => ({ default: e.__DANGEROUS_IMPORT_VIDEOPLAYER__ })),
                     renderPlaceholder: (e, t) => r.createElement(T.Z, { hasError: e, onRetry: t }),
@@ -422,13 +422,13 @@
                 }
                 render() {
                     const { "aria-label": e, enableGif: t, mediaItem: o, onEdit: d, onEditSensitiveWarning: c, onRemove: p, role: u, style: g, withAltTextLabel: v, withCloseButton: y, withDragAndDropIndicator: k, withEditButton: P, withEditIcon: I, withEditSensitiveWarningButton: F } = this.props,
-                        { mediaContainerSizeStyle: Z, playGif: E } = this.state,
+                        { mediaContainerSizeStyle: C, playGif: E } = this.state,
                         S = o.externalMediaDetails && o.externalMediaDetails.mediaType === f.Re,
                         T = S || (t && o.mediaFile && o.mediaFile.isGif),
                         D = !!o.mediaFile?.isVideo;
                     return r.createElement(i.ZP, null, ({ windowWidth: t }) => {
                         const o = void 0 !== I ? I : !w.Z.isTwoColumnLayout(t);
-                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [g, z.cursor, S && z.gifPlayButton, Z] }, this._renderPreview(), S && !E && r.createElement(s.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), T ? r.createElement(C.ZP, { type: C.AM }) : null, v && !D ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && F ? r.createElement(l.ZP, { "aria-label": M, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": A, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : L) : null), y ? r.createElement(l.ZP, { "aria-label": N, hoverLabel: { label: U }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return r.createElement(a.Z, { "aria-label": e || B, onLayout: this._handleMediaPreviewLayout, role: u, style: [g, z.cursor, S && z.gifPlayButton, C] }, this._renderPreview(), S && !E && r.createElement(s.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), T ? r.createElement(Z.ZP, { type: Z.AM }) : null, v && !D ? r.createElement(n.Z, { align: "left", altLabel: e }) : null, r.createElement(a.Z, { style: z.editMedia }, k ? r.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: R }, icon: r.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, P && F ? r.createElement(l.ZP, { "aria-label": M, icon: r.createElement(_.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, P ? r.createElement(l.ZP, { "aria-label": A, icon: o ? r.createElement(h.default, null) : void 0, onPress: d, size: o ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, o ? void 0 : L) : null), y ? r.createElement(l.ZP, { "aria-label": N, hoverLabel: { label: U }, icon: r.createElement(b.default, null), onPress: p, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -461,7 +461,7 @@
                     }
                     {
                         const o = (0, v.TO)(a.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return r.createElement(Z, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: a instanceof k.ZP ? a.thumbnail : "", style: z.video, variants: o }, s?.upload?.mediaFile instanceof y.ZP ? r.createElement("track", { default: !0, kind: "subtitles", label: s.displayName, src: s.upload.mediaFile.vtt, srcLang: s.lang }) : null);
+                        return r.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: a instanceof k.ZP ? a.thumbnail : "", style: z.video, variants: o }, s?.upload?.mediaFile instanceof y.ZP ? r.createElement("track", { default: !0, kind: "subtitles", label: s.displayName, src: s.upload.mediaFile.vtt, srcLang: s.lang }) : null);
                     }
                 }
             }
@@ -641,11 +641,11 @@
                 F = (0, f.Z)()
                     .propsFromState(() => ({ card: P, legacyAndUnifiedCard: I }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("COMPOSER_CARD_PREVIEW"), fetchCardPreviewIfNeeded: g.Z.fetchCardPreviewIfNeeded, updateDMComposer: w.G6, updateTweetComposer: y.zi })),
-                Z = d().f6fec9f6,
-                C = /^https?:\/\//i,
+                C = d().f6fec9f6,
+                Z = /^https?:\/\//i,
                 E = (e) => {
                     const t = (0, m.Z)(e);
-                    if (t.length) return t.map((e) => (!C.test(e) && `http://${e}`) || e);
+                    if (t.length) return t.map((e) => (!Z.test(e) && `http://${e}`) || e);
                 };
             class S extends r.Component {
                 constructor(e, t) {
@@ -680,7 +680,7 @@
                         { viewerUserId: o } = this.context;
                     if (e || !o) return null;
                     const a = this._getCards();
-                    return a ? r.createElement(i.Z, { style: t }, r.createElement(h.default, { card: a.legacyCard, cardContext: { tweetUserId: o, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: a.unifiedCard }), r.createElement(s.ZP, { "aria-label": Z, icon: r.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: T.closeButton, type: "onMediaDominantColorFilled" })) : null;
+                    return a ? r.createElement(i.Z, { style: t }, r.createElement(h.default, { card: a.legacyCard, cardContext: { tweetUserId: o, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: a.unifiedCard }), r.createElement(s.ZP, { "aria-label": C, icon: r.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: T.closeButton, type: "onMediaDominantColorFilled" })) : null;
                 }
                 _getCards() {
                     const { card: e, legacyAndUnifiedCard: t } = this.props,
@@ -862,17 +862,17 @@
                         { gifUrl: t, provider: o } = this.props,
                         { display_name: a, name: i } = o,
                         n = I[i];
-                    return n ? r.createElement(r.Fragment, null, e ? r.createElement(w, { description: y({ providerName: a }), headerText: v, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, r.createElement(s.ZP, { align: "center", color: "gray700", style: [Z.root, Z.verticalAlign] }, r.createElement(p().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(a, n)))) : null;
+                    return n ? r.createElement(r.Fragment, null, e ? r.createElement(w, { description: y({ providerName: a }), headerText: v, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, r.createElement(s.ZP, { align: "center", color: "gray700", style: [C.root, C.verticalAlign] }, r.createElement(p().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(a, n)))) : null;
                 }
                 _renderAttribution(e, t) {
-                    return r.createElement(n.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, r.createElement(s.ZP, { style: Z.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, r.createElement(l.Z, { source: { uri: t }, style: Z.image }), r.createElement(s.ZP, null, e.toUpperCase())));
+                    return r.createElement(n.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, r.createElement(s.ZP, { style: C.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, r.createElement(l.Z, { source: { uri: t }, style: C.image }), r.createElement(s.ZP, null, e.toUpperCase())));
                 }
             }
-            const Z = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
-                C = F;
+            const C = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
+                Z = F;
             var E = o(668214),
                 S = o(601576);
-            const T = (0, E.Z)().propsFromActions(() => ({ addToast: S.fz }))(({ addToast: e, gifUrl: t, provider: o }) => r.createElement(C, { addToast: e, gifUrl: t, provider: o }));
+            const T = (0, E.Z)().propsFromActions(() => ({ addToast: S.fz }))(({ addToast: e, gifUrl: t, provider: o }) => r.createElement(Z, { addToast: e, gifUrl: t, provider: o }));
         },
         170371: (e, t, o) => {
             "use strict";
@@ -959,7 +959,7 @@
         },
         62857: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => C });
+            o.d(t, { Z: () => Z });
             var r = o(807896),
                 a = o(202784),
                 i = o(476984),
@@ -1016,7 +1016,7 @@
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: v.ZP.fetchManyIfNeeded })),
                 F = l().f5b426c2;
-            class Z extends a.Component {
+            class C extends a.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -1058,7 +1058,7 @@
                     );
                 }
             }
-            const C = I(Z);
+            const Z = I(C);
         },
         246851: (e, t, o) => {
             "use strict";
@@ -1076,4 +1076,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.95568a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-9f4db315.1b5528fa.js.map

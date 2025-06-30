@@ -489,7 +489,7 @@
             const i = a;
         },
         642797: (e, l, n) => {
-            n.d(l, { Z: () => f });
+            n.d(l, { Z: () => L });
             var a,
                 i,
                 t,
@@ -510,7 +510,7 @@
                 b,
                 S,
                 T = n(897455),
-                L =
+                f =
                     ((S = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                     {
                         fragment: {
@@ -587,10 +587,10 @@
                         },
                         kind: "Request",
                         operation: { argumentDefinitions: [i, t, u, a, m, s, o, d, g, c, _, r, y, k], kind: "Operation", name: "CommunityTweetSearchModuleQuery", selections: [{ alias: "communityResults", args: p, concreteType: "CommunityResults", kind: "LinkedField", name: "community_results_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [F, { kind: "InlineFragment", selections: [{ alias: null, args: K, concreteType: "Timeline", kind: "LinkedField", name: "community_filtered_timeline", plural: !1, selections: [{ alias: null, args: b, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: T.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: b, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, S], storageKey: null }, S], type: "Community", abstractKey: null }], storageKey: null }, S], storageKey: null }] },
-                        params: { id: "Zxhl0i24eLMHETMeiaBzhw", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "payments_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "CommunityTweetSearchModuleQuery", operationKind: "query", text: null },
+                        params: { id: "QguYMbgu5EvrPUrOHQcf1A", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "payments_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "CommunityTweetSearchModuleQuery", operationKind: "query", text: null },
                     });
-            L.hash = "f4c451ac3e8ab72e403a6ea5929e8cbf";
-            const f = L;
+            f.hash = "f4c451ac3e8ab72e403a6ea5929e8cbf";
+            const L = f;
         },
         629665: (e, l, n) => {
             n.d(l, { Z: () => c });
@@ -643,4 +643,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-fd196509.a0e6e25a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-fd196509.be397d9a.js.map

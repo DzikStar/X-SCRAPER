@@ -1368,11 +1368,11 @@
                 n("e0bffbf8", "درباره ترجمه خودکار"),
                 n("e839db3a", "رد کردن"),
                 n("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "ترجمه خودکار " + e.language;
                 }),
-                n("c60b9e5c", "Changes will take effect for newly loaded content."),
+                n("c60b9e5c", "تغییرات بر محتوایی که به‌تازگی بار شده است اعمال خواهد شد."),
                 n("f9317b98", "language settings"),
-                n("hba0547a", "Unable to update settings. Please try again later."),
+                n("hba0547a", "تنظیمات به‌روز نشد. لطفا بعدا امتحان کنید."),
                 n("d4c339b9", function (e) {
                     return "پستی از " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -7400,10 +7400,10 @@
                 n("d94f12b6", "آگاه‌سازی‌ها، حریم خصوصی، و غیره را جستجو کنید"),
                 n("ba8f6f82", "جستجو در تنظیمات"),
                 n("ibf92e4a", "پرداخت موفقیت‌آمیز بود"),
-                n("bdf0fb06", "Your subscription has been activated."),
+                n("bdf0fb06", "اشتراک شما فعال شده است."),
                 n("ddfd6718", "پرداخت انجام نشد"),
                 n("d42fa852", "پردازش پرداخت شما با مشکلی روبه‌رو شد. لطفاً دوباره امتحان کنید."),
-                n("g055a9ce", "Open 𝕏 App"),
+                n("g055a9ce", "برنامه 𝕏 را باز کنید"),
                 n("g931a6e5", function (e) {
                     return e.topic + " را دنبال می‌کنید";
                 }),
@@ -13374,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.096767fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.baa9f4fa.js.map

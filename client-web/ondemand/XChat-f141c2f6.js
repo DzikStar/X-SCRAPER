@@ -152,7 +152,7 @@
                     children: "Reset",
                 });
             function h() {
-                return (0, a.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, a.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, a.jsx)(f, {}), (0, a.jsx)(m.o, {})] }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(g.i, {}) })] });
+                return (0, a.jsxs)("div", { className: "flex flex-col gap-1 w-full", children: [(0, a.jsxs)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: [(0, a.jsx)(f, {}), (0, a.jsx)(m.o, {})] }), (0, a.jsx)("div", { className: "flex flex-row px-3 py-1.5 gap-2", children: (0, a.jsx)(g.im, {}) })] });
             }
             const y = () => {
                 const [e, t] = (0, u.useState)(!1),
@@ -360,7 +360,7 @@
                                   className: "flex flex-col gap-3 " + (n ? "items-start" : "items-center"),
                                   children: [
                                       l.title === y.ForgotWarning
-                                          ? (0, a.jsxs)("div", { className: "flex flex-col gap-3", children: [(0, a.jsx)(c.z, { variant: "destructiveFilled", onClick: () => e.handleEvent(s.com.x.dms.pin.DmPinEntryEvent.WarningClick), children: t("Yes, reset passcode") }), (0, a.jsx)(c.z, { variant: "insightsGhost", onClick: () => e.handleEvent(s.com.x.dms.pin.DmPinEntryEvent.WarningClick), children: t("No, Cancel") })] })
+                                          ? (0, a.jsxs)("div", { className: "flex flex-col gap-3", children: [(0, a.jsx)(c.z, { variant: "destructiveFilled", onClick: () => e.handleEvent(s.com.x.dms.pin.DmPinEntryEvent.WarningClick), children: t("Yes, reset passcode") }), (0, a.jsx)(c.z, { variant: "insightsGhost", onClick: () => e.handleEvent(s.com.x.dms.pin.DmPinEntryEvent.ForgotWarningCancelClicked), children: t("No, Cancel") })] })
                                           : (0, a.jsx)(
                                                 h,
                                                 {
@@ -574,27 +574,30 @@
             };
         },
         664147: (e, t, n) => {
-            n.d(t, { e: () => i, i: () => o });
+            n.d(t, { Tr: () => o, im: () => c });
             var a = n(552322),
                 s = n(332161),
                 r = n(261012),
                 l = n(202784);
-            const i = "top_cursor",
-                o = () => {
-                    const [e, t] = (0, l.useState)("true" === localStorage.getItem(i) || !1);
-                    return (0, a.jsxs)("div", {
-                        className: "flex flex-row items-center gap-1 border border-solid rounded-lg p-2",
-                        children: [
-                            (0, a.jsx)(s.x, { weight: "bold", color: "gray700", children: "Top cursor" }),
-                            (0, a.jsx)(r.r, {
-                                checked: e,
-                                onCheckedChange: (e) => {
-                                    t(e), localStorage.setItem(i, e ? "true" : "false");
-                                },
-                            }),
-                        ],
-                    });
-                };
+            const i = "top_cursor";
+            function o() {
+                return "true" === localStorage.getItem(i) || !1;
+            }
+            const c = () => {
+                const [e, t] = (0, l.useState)(o());
+                return (0, a.jsxs)("div", {
+                    className: "flex flex-row items-center gap-1 border border-solid rounded-lg p-2",
+                    children: [
+                        (0, a.jsx)(s.x, { weight: "bold", color: "gray700", children: "Top cursor" }),
+                        (0, a.jsx)(r.r, {
+                            checked: e,
+                            onCheckedChange: (e) => {
+                                t(e), localStorage.setItem(i, e ? "true" : "false");
+                            },
+                        }),
+                    ],
+                });
+            };
         },
         686524: (e, t, n) => {
             n.r(t), n.d(t, { default: () => f });
@@ -1156,4 +1159,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.ea09a46a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.672c7f4a.js.map

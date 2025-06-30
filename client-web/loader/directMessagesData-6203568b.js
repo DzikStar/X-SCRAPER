@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loader.directMessagesData-6203568b", "bundle.Report-99fe8a98"],
+    ["loader.directMessagesData-6203568b"],
     {
         275365: (e, t, s) => {
             s.d(t, { BU: () => c, Cr: () => r, To: () => a, UN: () => d, eD: () => n, td: () => i, v1: () => o });
@@ -13,7 +13,7 @@
                 c = Object.freeze({ UNINITIATED: "UNINITIATED", EXISTING: "EXISTING", DEVICE_NOT_A_MEMBER: "DEVICE_NOT_A_MEMBER" });
         },
         613195: (e, t, s) => {
-            s.d(t, { $S: () => be, Ae: () => Pe, Ap: () => Ze, BW: () => xe, Be: () => Ae, Ek: () => je, FI: () => Ve, FS: () => te, GP: () => Oe, Ke: () => Fe, OF: () => ie, OW: () => le, PZ: () => we, Pr: () => X, Qe: () => Xe, S9: () => Ne, SF: () => fe, UA: () => ce, Um: () => ue, W: () => de, X5: () => ze, Xw: () => Ge, ZP: () => K, Zg: () => ne, _D: () => qe, aG: () => oe, ax: () => se, ck: () => _e, d0: () => De, dq: () => Le, gQ: () => J, gq: () => ae, jT: () => re, lT: () => Be, nI: () => Ke, qH: () => me, qg: () => pe, sA: () => Ie, sS: () => Ee, sj: () => Te, tF: () => ve, tw: () => ye, v3: () => ge, wm: () => Se, xu: () => z });
+            s.d(t, { $S: () => be, Ae: () => Pe, Ap: () => Ze, BW: () => xe, Be: () => Ae, Ek: () => je, FI: () => Ve, FS: () => te, GP: () => Oe, Ke: () => Fe, OF: () => ie, OW: () => le, PZ: () => we, Pr: () => X, Qe: () => Xe, S9: () => Ne, SF: () => fe, UA: () => ce, Um: () => ue, W: () => de, X5: () => ze, Xw: () => Ge, ZP: () => K, Zg: () => ne, _D: () => qe, aG: () => oe, ax: () => se, ck: () => _e, d0: () => De, dq: () => Le, gQ: () => J, gq: () => ae, jT: () => re, lT: () => Be, nI: () => Ke, qH: () => me, qg: () => ve, sA: () => Ie, sS: () => Ee, sj: () => pe, tF: () => Te, tw: () => ye, v3: () => ge, wm: () => Se, xu: () => z });
             var n = s(24949),
                 a = s(111677),
                 r = s.n(a),
@@ -28,9 +28,9 @@
                 l = s(497294),
                 A = s(390387),
                 S = s(877848),
-                p = s(601576),
-                v = s(919022),
-                T = s(275365),
+                v = s(601576),
+                T = s(919022),
+                p = s(275365),
                 O = s(627279),
                 R = s(720277),
                 m = s(849585),
@@ -322,7 +322,7 @@
                             { min_entry_id: d, min_search_entry_id: c, status: _ } = o || {};
                         e?.isSearch ? ((a = "FETCH_DM_CONVERSATION_RELATIVE_HISTORY"), (n = c)) : ((a = "FETCH_DM_CONVERSATION_HISTORY"), (n = d));
                         const u = ee(r, i);
-                        return _ !== T.To.HAS_MORE || u ? Promise.resolve() : t(ue({ ...e, max_id: n, context: a }));
+                        return _ !== p.To.HAS_MORE || u ? Promise.resolve() : t(ue({ ...e, max_id: n, context: a }));
                     },
                 Se =
                     (e = {}) =>
@@ -331,25 +331,25 @@
                             { conversationId: a, entryId: r } = e;
                         return !$(n, a) && r ? t(ue({ conversationId: a, min_id: r, min_buffer: 15, context: D, min_position: r })) : Promise.resolve();
                     },
-                pe =
+                ve =
                     (e) =>
                     (t, s, { api: n }) =>
                         n
                             .withEndpoint(o.Z)
                             .fetchPermissions({ recipient_ids: e.join(",") })
                             .then(({ permissions: { id_keys: e } }) => e),
-                ve =
+                Te =
                     (e) =>
                     (t, s, { api: n }) =>
                         u._O(t, { params: { conversationId: e }, request: n.withEndpoint(o.Z).acceptConversation })({ actionTypes: M, meta: { conversationId: e } }),
-                Te = (e, t) => Re(e, t, !0),
+                pe = (e, t) => Re(e, t, !0),
                 Oe = (e, t) => Re(e, t, !1),
                 Re =
                     (e, t, s) =>
                     (n, a, { api: r }) =>
                         u
                             ._O(n, { params: { userId: e, relationshipAction: s ? "mute" : "unmute", conversationId: t }, request: r.withEndpoint(o.Z).muteDMUser })({ actionTypes: P, meta: { userId: e, conversationId: t, mute: s } })
-                            .then(n(v.ZP.patchUser(e, { dm_muting: s }))),
+                            .then(n(T.ZP.patchUser(e, { dm_muting: s }))),
                 me =
                     (e = {}) =>
                     (t, s, { api: n }) => {
@@ -361,7 +361,7 @@
                     (t, s, { api: n }) => {
                         const a = e.join(",");
                         return u._O(t, { params: { conversationIds: a }, request: n.withEndpoint(o.Z).deleteConversations })({ actionTypes: x, context: "LEAVE_CONVERSATIONS", meta: { conversationIds: e } }, (e) => {
-                            if (!e.error) return [(0, p.fz)({ text: C })];
+                            if (!e.error) return [(0, v.fz)({ text: C })];
                         });
                     },
                 Ce = "rweb/directMessages/ADD_CONVERSATIONS",
@@ -469,9 +469,9 @@
                 l = s(275365),
                 A = s(849585),
                 S = s(147143);
-            const p = (0, I.dg)(S.A7, "DELETE_MESSAGE"),
-                v = (0, I.dg)(S.A7, "MARK_ENTRIES_AS_SPAM"),
-                T = (0, I.dg)(S.A7, "MARK_ENTRIES_AS_NOT_SPAM"),
+            const v = (0, I.dg)(S.A7, "DELETE_MESSAGE"),
+                T = (0, I.dg)(S.A7, "MARK_ENTRIES_AS_SPAM"),
+                p = (0, I.dg)(S.A7, "MARK_ENTRIES_AS_NOT_SPAM"),
                 O = { entries: {}, entryIdsByConversationId: {}, reactionsByMessageId: {} };
             function R(e = O, t) {
                 if (!t) return e;
@@ -516,16 +516,16 @@
                             }, {});
                         return { ...e, entries: n, entryIdsByConversationId: { ...e.entryIdsByConversationId, ...o }, reactionsByMessageId: { ...e.reactionsByMessageId, ...s.embeddedReactionsByMessageId } };
                     }
-                    case v.REQUEST:
-                    case T.REQUEST: {
-                        const s = t.type === v.REQUEST,
+                    case T.REQUEST:
+                    case p.REQUEST: {
+                        const s = t.type === T.REQUEST,
                             n = t.payload.reduce((t, n) => {
                                 const a = e.entries[n] && e.entries[n].data;
                                 return { ...t, [n]: { ...e.entries[n], data: { ...a, marked_as_spam: s } } };
                             }, {});
                         return { ...e, entries: { ...e.entries, ...n } };
                     }
-                    case p.REQUEST:
+                    case v.REQUEST:
                     case M: {
                         const n = t.type === M && !Array.isArray(t.payload),
                             a = e.entryIdsByConversationId[s] || [],
@@ -597,11 +597,11 @@
                     },
                 M = "rweb/dm/REMOVE_CONVERSATION_ENTRIES",
                 P = (e, t) => ({ meta: { conversationId: e }, payload: t, type: M }),
-                U = (e, t) => ({ payload: e, type: t ? v.REQUEST : T.REQUEST }),
+                U = (e, t) => ({ payload: e, type: t ? T.REQUEST : p.REQUEST }),
                 b =
                     ({ conversationId: e, dmId: t, markSpam: s }) =>
                     (n, a, { api: r }) =>
-                        (0, I.AB)(n, { params: { dm_id: t, report_as: s ? "spam" : "not_spam" }, request: r.withEndpoint(_.Z).reportSpam })({ actionTypes: s ? p : T, payload: s ? t : [t], meta: { conversationId: e } }),
+                        (0, I.AB)(n, { params: { dm_id: t, report_as: s ? "spam" : "not_spam" }, request: r.withEndpoint(_.Z).reportSpam })({ actionTypes: s ? v : p, payload: s ? t : [t], meta: { conversationId: e } }),
                 L = "rweb/directMessages/ADD_ENTRY",
                 w = (e, t, s) => ({ meta: { conversationId: e, requestId: t }, payload: s, type: L }),
                 x = "rweb/directMessages/EDIT_ENTRY",
@@ -641,28 +641,28 @@
                 l = s(627279),
                 A = s(849585),
                 S = s(923965),
-                p = s(147143);
-            const v = d.dg(p.A7, "FETCH_INBOX"),
-                T = d.dg(p.A7, "UPDATE_LAST_SEEN_EVENT_ID"),
-                O = { cursors: { [p.xR.Inbox]: { fetchStatus: c.ZP.NONE }, [p.xR.Trusted]: { fetchStatus: c.ZP.NONE }, [p.xR.Untrusted]: { fetchStatus: c.ZP.NONE }, [p.xR.UntrustedLowQuality]: { fetchStatus: c.ZP.NONE } }, lastSeenEventIds: {} };
+                v = s(147143);
+            const T = d.dg(v.A7, "FETCH_INBOX"),
+                p = d.dg(v.A7, "UPDATE_LAST_SEEN_EVENT_ID"),
+                O = { cursors: { [v.xR.Inbox]: { fetchStatus: c.ZP.NONE }, [v.xR.Trusted]: { fetchStatus: c.ZP.NONE }, [v.xR.Untrusted]: { fetchStatus: c.ZP.NONE }, [v.xR.UntrustedLowQuality]: { fetchStatus: c.ZP.NONE } }, lastSeenEventIds: {} };
             function R(e = O, t) {
                 if (!t) return e;
                 switch (t.type) {
-                    case v.REQUEST: {
+                    case T.REQUEST: {
                         const { timelineType: s } = t.meta;
                         return { ...e, cursors: { ...e.cursors, [s]: { ...e.cursors[s], fetchStatus: c.ZP.LOADING } } };
                     }
-                    case v.FAILURE: {
+                    case T.FAILURE: {
                         const { timelineType: s } = t.meta;
                         return { ...e, cursors: { ...e.cursors, [s]: { ...e.cursors[s], error: t.payload, fetchStatus: c.ZP.FAILED } } };
                     }
-                    case v.SUCCESS: {
+                    case T.SUCCESS: {
                         const { timelineType: s } = t.meta;
                         return { ...e, cursors: { ...e.cursors, [s]: { ...e.cursors[s], error: void 0, fetchStatus: c.ZP.LOADED } } };
                     }
                     case $:
                         return { ...e, cursors: { ...e.cursors, ...t.payload.cursors }, lastSeenEventIds: m(e.lastSeenEventIds, t.payload.lastSeenEventIds) };
-                    case T.REQUEST:
+                    case p.REQUEST:
                         return { ...e, lastSeenEventIds: { ...e.lastSeenEventIds, ...t.meta.lastSeenEventIds } };
                     case A.t:
                         return { ...O, cursors: { ...O.cursors, inbox: e.cursors.inbox } };
@@ -677,16 +677,16 @@
                         a = (0, u.Rh)(t);
                     return n ? { ...e, filter_low_quality: a, include_quality: s } : e;
                 },
-                y = (e) => e[p.Yf].inbox,
+                y = (e) => e[v.Yf].inbox,
                 h = (e) => y(e).cursors,
                 f = (e) => y(e).lastSeenEventIds,
-                g = (e) => h(e)[p.xR.Inbox],
-                D = (e) => h(e)[p.xR.Untrusted],
-                M = (e) => h(e)[p.xR.UntrustedLowQuality],
+                g = (e) => h(e)[v.xR.Inbox],
+                D = (e) => h(e)[v.xR.Untrusted],
+                M = (e) => h(e)[v.xR.UntrustedLowQuality],
                 P = (e) => g(e).fetchStatus,
                 U = (e) => P(e) === c.ZP.LOADING,
                 b = (e) => P(e) === c.ZP.LOADED,
-                L = { [p._2.PRIMARY]: (e) => e.trusted, [p._2.SECONDARY]: (e, t, s) => (t ? !(e.trusted || e.muted || (s && e.nsfw) || e.low_quality) : !(e.trusted || e.muted || (s && e.nsfw))), [p._2.TERTIARY]: (e, t, s) => (t ? !e.trusted && (e.muted || e.low_quality || (s && e.nsfw)) : !e.trusted && (e.muted || (s && e.nsfw))) },
+                L = { [v._2.PRIMARY]: (e) => e.trusted, [v._2.SECONDARY]: (e, t, s) => (t ? !(e.trusted || e.muted || (s && e.nsfw) || e.low_quality) : !(e.trusted || e.muted || (s && e.nsfw))), [v._2.TERTIARY]: (e, t, s) => (t ? !e.trusted && (e.muted || e.low_quality || (s && e.nsfw)) : !e.trusted && (e.muted || (s && e.nsfw))) },
                 w = (e, t) => {
                     const s = (0, u.Rh)(e),
                         a = (0, u.a5)(e);
@@ -698,23 +698,23 @@
                         .sort(o.Z)
                         .map((e) => e.conversation_id),
                 Z = (e) =>
-                    w(e, p._2.PRIMARY)
-                        .filter((e) => e?.data?.labels && e?.data?.labels?.find((e) => e.label_type === p.w1.PINNED))
+                    w(e, v._2.PRIMARY)
+                        .filter((e) => e?.data?.labels && e?.data?.labels?.find((e) => e.label_type === v.w1.PINNED))
                         .sort(o.l)
                         .map((e) => e?.data?.conversation_id),
                 B = (e, { tag: t }) =>
-                    w(e, p._2.PRIMARY)
+                    w(e, v._2.PRIMARY)
                         .filter((e) => e?.data?.tag?.value && e.data.tag.value === t?.value)
                         .map((e) => e?.data?.conversation_id),
                 V = (e) => {
-                    const t = w(e, p._2.PRIMARY),
-                        s = w(e, p._2.SECONDARY),
+                    const t = w(e, v._2.PRIMARY),
+                        s = w(e, v._2.SECONDARY),
                         n = t.concat(s),
                         { last_seen_event_id: a } = f(e);
                     return q(e, n, a);
                 },
                 F = (e) => {
-                    const t = w(e, p._2.SECONDARY),
+                    const t = w(e, v._2.SECONDARY),
                         { untrusted_last_seen_event_id: s } = f(e);
                     return q(e, t, s);
                 },
@@ -723,7 +723,7 @@
                         s = 0,
                         n = 0,
                         a = 0;
-                    const r = w(e, p._2.SECONDARY),
+                    const r = w(e, v._2.SECONDARY),
                         { untrusted_last_seen_event_id: i } = f(e);
                     return (
                         r.forEach((r) => {
@@ -736,11 +736,11 @@
                     );
                 },
                 j = (e) => {
-                    const t = w(e, p._2.SECONDARY),
-                        s = w(e, p._2.TERTIARY);
+                    const t = w(e, v._2.SECONDARY),
+                        s = w(e, v._2.TERTIARY);
                     return t.length + s.length;
                 },
-                H = (e) => w(e, p._2.TERTIARY).length,
+                H = (e) => w(e, v._2.TERTIARY).length,
                 q = (e, t, s) => (s ? t.reduce((t, { data: { conversation_id: n } }) => (k(e, n, s) ? t + 1 : t), 0) : 0),
                 k = (e, t, s) => {
                     const n = (0, I.gq)(e, t),
@@ -758,7 +758,7 @@
                         const i = s(),
                             o = (0, u.a5)(i),
                             c = C({ nsfw_filtering_enabled: o, ...e }, s());
-                        return d._O(t, { params: c, request: n.withEndpoint(r.Z).fetchUserInbox })({ actionTypes: v, context: "FETCH_DM_INBOX", meta: { timelineType: p.xR.Inbox } }, (e) => {
+                        return d._O(t, { params: c, request: n.withEndpoint(r.Z).fetchUserInbox })({ actionTypes: T, context: "FETCH_DM_INBOX", meta: { timelineType: v.xR.Inbox } }, (e) => {
                             if (e) {
                                 const { cards: t, entries: s, publishedArticles: n, tweets: a, users: r } = e.entities;
                                 return te({ ...e.result.inbox_initial_state, entries: s, users: r, tweets: a, cards: t, publishedArticles: n });
@@ -778,11 +778,11 @@
                         const o = a(),
                             c = (0, u.a5)(o),
                             { min_entry_id: _, status: I } = h(o)[e],
-                            l = e === p.xR.UntrustedLowQuality ? p.xR.Untrusted : e,
+                            l = e === v.xR.UntrustedLowQuality ? v.xR.Untrusted : e,
                             A = { ...t, max_id: _, timelineType: l, nsfw_filtering_enabled: c };
                         if (I !== E.To.HAS_MORE) return Promise.resolve();
                         return d
-                            ._O(n, { params: A, request: i.withEndpoint(r.Z).fetchInboxHistory })({ actionTypes: v, context: "FETCH_DM_INBOX_HISTORY", meta: { timelineType: e } }, (t) => {
+                            ._O(n, { params: A, request: i.withEndpoint(r.Z).fetchInboxHistory })({ actionTypes: T, context: "FETCH_DM_INBOX_HISTORY", meta: { timelineType: e } }, (t) => {
                                 if (t) {
                                     const { cards: s, entries: n, publishedArticles: a, tweets: r, users: i } = t.entities,
                                         { inbox_timeline: o } = t.result;
@@ -796,15 +796,15 @@
                     },
                 z = (e) => (t, s) => {
                     const n = C(e, s(), "high");
-                    return t(W(p.xR.Untrusted, n));
+                    return t(W(v.xR.Untrusted, n));
                 },
                 X = (e) => (t, s) => {
                     const n = C(e, s(), "low");
-                    return t(W(p.xR.UntrustedLowQuality, n));
+                    return t(W(v.xR.UntrustedLowQuality, n));
                 },
                 J = (e) => (t, s) => {
                     const n = C(e, s());
-                    return t(W(p.xR.Trusted, n));
+                    return t(W(v.xR.Trusted, n));
                 },
                 $ = "rweb/directMessages/UPDATE_INBOX",
                 ee = (e) => {
@@ -827,7 +827,7 @@
                             A = Object.values(c).reduce((e, { data: { sort_event_id: t, trusted: s } }) => ((e.last_seen_event_id = N(e.last_seen_event_id, t)), (e.trusted_last_seen_event_id = s ? N(e.trusted_last_seen_event_id, t) : e.trusted_last_seen_event_id), (e.untrusted_last_seen_event_id = s ? e.untrusted_last_seen_event_id : N(e.untrusted_last_seen_event_id, t)), e), { ..._ });
                         if ((0, i.T1)(A.last_seen_event_id, u) || (e && (0, i.T1)(A.trusted_last_seen_event_id, E)) || (t && (0, i.T1)(A.untrusted_last_seen_event_id, l))) {
                             e || delete A.trusted_last_seen_event_id, t || delete A.untrusted_last_seen_event_id;
-                            return d.AB(s, { params: A, request: a.withEndpoint(r.Z).updateLastSeenEventId })({ actionTypes: T, context: "APP_DM_UPDATE_LAST_SEEN", meta: { lastSeenEventIds: A } });
+                            return d.AB(s, { params: A, request: a.withEndpoint(r.Z).updateLastSeenEventId })({ actionTypes: p, context: "APP_DM_UPDATE_LAST_SEEN", meta: { lastSeenEventIds: A } });
                         }
                         return Promise.resolve();
                     };
@@ -931,9 +931,9 @@
                 l = s(849585),
                 A = s(147143);
             const S = "rweb.recentDMSearches",
-                p = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
-                v = "rweb/directMessages/ADD_RECENT_SEARCHES",
-                T = (e) => ({ payload: e, type: v }),
+                v = Object.freeze({ REQUEST: "rweb/directMessages/SEARCH_REQUEST", SUCCESS: "rweb/directMessages/SEARCH_SUCCESS", FAILURE: "rweb/directMessages/SEARCH_FAILURE" }),
+                T = "rweb/directMessages/ADD_RECENT_SEARCHES",
+                p = (e) => ({ payload: e, type: T }),
                 O = "rweb/directMessages/CLEAR_SEARCH_CACHE",
                 R = () => ({ type: O }),
                 m = "rweb/directMessages/CLEAR_RECENT_SEARCH",
@@ -942,24 +942,24 @@
             function y(e = C, t) {
                 if (!t) return e;
                 switch (t.type) {
-                    case v:
+                    case T:
                     case m:
                         return { ...e, recentSearches: t.payload || [] };
                     case N:
                         return { ...e, recentSearches: [] };
-                    case p.REQUEST: {
+                    case v.REQUEST: {
                         const { fetchNextPage: s, preserveResults: n, query: a } = t.meta || {},
                             r = e.searchResults ? e.searchResults[a] : {},
                             i = { ...e.searchResults, [a]: { ...r, fetchStatus: n || s ? r?.fetchStatus : E.ZP.LOADING } };
                         return { ...e, searchResults: i };
                     }
-                    case p.FAILURE: {
+                    case v.FAILURE: {
                         const { fetchNextPage: s, preserveResults: n, query: a } = t.meta || {},
                             r = e.searchResults ? e.searchResults[a] : {},
                             i = { ...e.searchResults, [a]: { ...r, fetchStatus: n || s ? r?.fetchStatus : E.ZP.FAILED, error: t.payload } };
                         return { ...e, searchResults: i };
                     }
-                    case p.SUCCESS: {
+                    case v.SUCCESS: {
                         const { query: s } = t.meta || {},
                             n = t.payload && t.payload.result ? t.payload.result : null,
                             { conversations: a, error: r } = n || {},
@@ -1002,9 +1002,9 @@
                             })(a, d),
                             l = ((e) => e[A.Yf].search?.searchResults)(a),
                             S = l ? l[d] : void 0,
-                            v = !!I;
+                            T = !!I;
                         I && d && r && (E.cursor = I);
-                        const T = u._O(t, { params: E, request: n.withEndpoint(_.Z).search }),
+                        const p = u._O(t, { params: E, request: n.withEndpoint(_.Z).search }),
                             O = (e) => {
                                 if (e && e.result) {
                                     const { conversations: t } = e.result,
@@ -1012,7 +1012,7 @@
                                     return t && Object.values(t).forEach((e) => (e.isSearchResult = !0)), t ? (0, o.s0)({ conversations: t, users: s }) : null;
                                 }
                             };
-                        return !S || S?.error || i || (r && v) ? T({ actionTypes: p, context: "SEARCH", meta: { query: E.query, cursor: E.cursor, preserveResults: i, fetchNextPage: r } }, O) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: S }, meta: { query: d, cursor: I } }), Promise.resolve());
+                        return !S || S?.error || i || (r && T) ? p({ actionTypes: v, context: "SEARCH", meta: { query: E.query, cursor: E.cursor, preserveResults: i, fetchNextPage: r } }, O) : (t({ type: "rweb/directMessages/SEARCH_SUCCESS", payload: { result: S }, meta: { query: d, cursor: I } }), Promise.resolve());
                     },
                 M =
                     (e) =>
@@ -1020,7 +1020,7 @@
                         const r = n.getNumberValue("dm_inbox_search_max_recent_searches_stored");
                         return a.get(S).then((s) => {
                             const n = s?.recentSearches || [];
-                            return !n.includes(e) && n.push(e), n.length > r && n.shift(), t(T(n)), a.set(S, { recentSearches: n });
+                            return !n.includes(e) && n.push(e), n.length > r && n.shift(), t(p(n)), a.set(S, { recentSearches: n });
                         });
                     },
                 P =
@@ -1041,7 +1041,7 @@
                             ? Promise.resolve(
                                   s.get(S).then((t) => {
                                       const s = t?.recentSearches;
-                                      s && e(T(s));
+                                      s && e(p(s));
                                   }),
                               ).then(() => {})
                             : Promise.resolve(),
@@ -1057,7 +1057,7 @@
                 a = () => ({ type: n });
         },
         923965: (e, t, s) => {
-            s.d(t, { H_: () => l, NJ: () => O, ZP: () => S, f9: () => p, hd: () => v, o8: () => C });
+            s.d(t, { H_: () => l, NJ: () => O, ZP: () => S, f9: () => v, hd: () => T, o8: () => C });
             var n = s(948322),
                 a = s(917799),
                 r = s(390387),
@@ -1082,7 +1082,7 @@
                         const { error: t, ...s } = e;
                         return { ...s, isLoaded: !0, isLoading: !1 };
                     }
-                    case T:
+                    case p:
                         return { ...e, cursor: t.payload };
                     case R:
                         return { ...e, tertiaryInboxStatus: t.payload };
@@ -1092,32 +1092,32 @@
                         return e;
                 }
             }
-            const p =
+            const v =
                     (e) =>
                     (t, s, { api: d }) => {
                         const c = s(),
                             { directMessages: _ = {} } = c;
                         let { cursor: I } = _.updates || {};
                         const { polling: A, ...S } = e || {},
-                            { tertiaryInboxStatus: p } = _.updates || {};
-                        let v = !1;
-                        const T = A ? { "x-twitter-polling": "true" } : {},
+                            { tertiaryInboxStatus: v } = _.updates || {};
+                        let T = !1;
+                        const p = A ? { "x-twitter-polling": "true" } : {},
                             O = (0, i.a5)(c);
                         if (window.location.pathname.startsWith("/i/report")) return Promise.resolve();
                         const R = [(0, i.Kp)(s()) ? "on" : "off", O ? "on" : "off"].join();
-                        p ? p !== R && ((I = null), (v = !0)) : (v = !0);
+                        v ? v !== R && ((I = null), (T = !0)) : (T = !0);
                         const C = (0, u.gN)({ ...S, nsfw_filtering_enabled: O, cursor: I }, s());
-                        return a._O(t, { params: C, headers: T, request: d.withEndpoint(n.Z).fetchUserUpdates })({ actionTypes: l, context: "FETCH_DM_USER_UPDATES", meta: { direction: (0, o.Sj)(e) } }, (e) => {
+                        return a._O(t, { params: C, headers: p, request: d.withEndpoint(n.Z).fetchUserUpdates })({ actionTypes: l, context: "FETCH_DM_USER_UPDATES", meta: { direction: (0, o.Sj)(e) } }, (e) => {
                             if (e) {
                                 const { cards: t, entries: s, publishedArticles: n, tweets: a, users: i } = e.entities,
                                     { inbox_initial_state: o, user_events: d } = e.result;
-                                return [o && (0, E.m)(), ...(0, u.s0)({ ...(d || o), entries: s, users: i, tweets: a, cards: t, publishedArticles: n }), ...(d ? N(Object.values(s || []), r._h(c)) : []), v && m(R)];
+                                return [o && (0, E.m)(), ...(0, u.s0)({ ...(d || o), entries: s, users: i, tweets: a, cards: t, publishedArticles: n }), ...(d ? N(Object.values(s || []), r._h(c)) : []), T && m(R)];
                             }
                         });
                     },
-                v = (e) => (t, s) => (y(s()) ? Promise.resolve() : t(p(e))),
-                T = "rweb/directMessages/UPDATE_CURSOR",
-                O = (e) => ({ payload: e, type: T }),
+                T = (e) => (t, s) => (y(s()) ? Promise.resolve() : t(v(e))),
+                p = "rweb/directMessages/UPDATE_CURSOR",
+                O = (e) => ({ payload: e, type: p }),
                 R = "rweb/directMessages/UPDATE_TERTIARY_INBOX_STATUS",
                 m = (e) => ({ payload: e, type: R }),
                 N = (e = [], t) =>
@@ -1189,4 +1189,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6203568b.e0efdcea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6203568b.1edf1a8a.js.map

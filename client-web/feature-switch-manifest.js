@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "9ed09abe45575a35366371890d62b1b5668d78d9",
+    feature_set_token: "c8363b203b52643e300ab942b78200d5267c3e26",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -515,6 +515,7 @@ var manifest = {
         responsive_web_grok_share_attachment_enabled: { value: !0 },
         responsive_web_grok_share_rendering_enabled: { value: !0 },
         responsive_web_grok_show_android_promo_banner: { value: !0 },
+        responsive_web_grok_show_button_on_ads: { value: !1 },
         responsive_web_grok_show_citations: { value: !0 },
         responsive_web_grok_show_grok_performance_metrics: { value: !1 },
         responsive_web_grok_show_grok_translated_post: { value: !1 },
@@ -2200,6 +2201,7 @@ var manifest = {
         responsive_web_grok_use_collapsed_preview: { name: "responsive_web_grok_use_collapsed_preview", type: "boolean", defaultValue: !1 },
         responsive_web_grok_home_dark_enabled: { name: "responsive_web_grok_home_dark_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_grok_api_enable_grok_host: { name: "responsive_web_grok_api_enable_grok_host", type: "boolean", defaultValue: !0 },
+        responsive_web_grok_show_button_on_ads: { name: "responsive_web_grok_show_button_on_ads", type: "boolean", defaultValue: !1 },
         responsive_web_hashtag_highlight_is_enabled: { name: "responsive_web_hashtag_highlight_is_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_hashtag_highlight_show_avatar: { name: "responsive_web_hashtag_highlight_show_avatar", type: "boolean", defaultValue: !1 },
         responsive_web_hashtag_highlight_use_small_font: { name: "responsive_web_hashtag_highlight_use_small_font", type: "boolean", defaultValue: !1 },

@@ -1326,10 +1326,10 @@
                 i("a02d1657", function (e) {
                     return "Wykonywanie kodu" + e.ttc_tool_usage_card;
                 }),
-                i("aa9d42c0", "Searching the web"),
-                i("dce1817a", "Searching on 𝕏"),
-                i("f7151564", "Searching users on 𝕏"),
-                i("c43ef93e", "Browsing web page"),
+                i("aa9d42c0", "Wyszukiwanie w Internecie"),
+                i("dce1817a", "Wyszukiwanie w serwisie 𝕏"),
+                i("f7151564", "Wyszukiwanie użytkowników w serwisie 𝕏"),
+                i("c43ef93e", "Przeglądanie strony internetowej"),
                 i("jb097f6e", "Wykonywanie kodu"),
                 i("ead81122", "Coś poszło nie tak. Odśwież, aby ponownie nawiązać połączenie lub spróbuj ponownie."),
                 i("f808a13a", "Przekroczono limit częstotliwości. Zaczekaj chwilę i spróbuj ponownie."),
@@ -1377,11 +1377,11 @@
                 i("e0bffbf8", "Automatyczne tłumaczenie — informacje"),
                 i("e839db3a", "Odrzuć"),
                 i("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "Automatycznie tłumacz język " + e.language;
                 }),
-                i("c60b9e5c", "Changes will take effect for newly loaded content."),
-                i("f9317b98", "language settings"),
-                i("hba0547a", "Unable to update settings. Please try again later."),
+                i("c60b9e5c", "Zmiany będą stosowane do nowo załadowanych treści."),
+                i("f9317b98", "ustawień języka"),
+                i("hba0547a", "Nie można zaktualizować ustawień. Spróbuj ponownie później."),
                 i("d4c339b9", function (e) {
                     return "Wpis użytkownika " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -7409,10 +7409,10 @@
                 i("d94f12b6", "Spróbuj wyszukać powiadomienia, ustawienia prywatności itd."),
                 i("ba8f6f82", "Ustawienia wyszukiwania"),
                 i("ibf92e4a", "Realizacja płatności zakończyła się pomyślnie"),
-                i("bdf0fb06", "Your subscription has been activated."),
+                i("bdf0fb06", "Twoja subskrypcja została aktywowana."),
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
                 i("d42fa852", "Wystąpił problem podczas przetwarzania Twojej płatności. Spróbuj ponownie."),
-                i("g055a9ce", "Open 𝕏 App"),
+                i("g055a9ce", "Otwórz aplikację 𝕏"),
                 i("g931a6e5", function (e) {
                     return "Obserwujesz " + e.topic;
                 }),
@@ -10164,7 +10164,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok będzie tłumaczył automatycznie na podstawie sposobu, w jaki używasz serwisu X oraz ", ". Możesz także przełączyć ustawienia automatycznego tłumaczenia poniżej."];
                             },
                         },
                         {
@@ -13381,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.d9c5717a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.35984faa.js.map

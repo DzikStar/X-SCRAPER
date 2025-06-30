@@ -1317,10 +1317,10 @@
                 e("a02d1657", function (a) {
                     return "Suoritetaan koodia" + a.ttc_tool_usage_card;
                 }),
-                e("aa9d42c0", "Searching the web"),
-                e("dce1817a", "Searching on 𝕏"),
-                e("f7151564", "Searching users on 𝕏"),
-                e("c43ef93e", "Browsing web page"),
+                e("aa9d42c0", "Haetaan verkosta"),
+                e("dce1817a", "Haetaan 𝕏:stä"),
+                e("f7151564", "Haetaan 𝕏:n käyttäjistä"),
+                e("c43ef93e", "Selataan verkkosivua"),
                 e("jb097f6e", "Suoritetaan koodia"),
                 e("ead81122", "Jokin meni pieleen. Muodosta yhteys uudelleen päivittämällä tai yritä uudelleen."),
                 e("f808a13a", "Toimintojen määrää on rajoitettu. Odota muutama hetki ja yritä sitten uudelleen."),
@@ -1368,11 +1368,11 @@
                 e("e0bffbf8", "Tietoja automatisoidusta kääntämisestä"),
                 e("e839db3a", "Hylkää"),
                 e("e7a86c77", function (a) {
-                    return "Automatically translate " + a.language;
+                    return "Käännä automaattisesti kielestä " + a.language;
                 }),
-                e("c60b9e5c", "Changes will take effect for newly loaded content."),
-                e("f9317b98", "language settings"),
-                e("hba0547a", "Unable to update settings. Please try again later."),
+                e("c60b9e5c", "Muutoksia sovelletaan ladattaessa uutta sisältöä."),
+                e("f9317b98", "kieliasetusten"),
+                e("hba0547a", "Asetusten päivitys ei onnistu. Yritä myöhemmin uudelleen."),
                 e("d4c339b9", function (a) {
                     return "Julkaisu käyttäjältä " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -7400,10 +7400,10 @@
                 e("d94f12b6", "Kokeile hakea ilmoituksista, tietosuojasta jne."),
                 e("ba8f6f82", "Hae asetuksista"),
                 e("ibf92e4a", "Maksu onnistui"),
-                e("bdf0fb06", "Your subscription has been activated."),
+                e("bdf0fb06", "Tilauksesi on aktivoitu."),
                 e("ddfd6718", "Maksu epäonnistui"),
                 e("d42fa852", "Maksun käsittelyssä oli ongelmia. Yritä uudelleen."),
-                e("g055a9ce", "Open 𝕏 App"),
+                e("g055a9ce", "Avaa 𝕏-sovellus"),
                 e("g931a6e5", function (a) {
                     return "Seuraat aihetta " + a.topic;
                 }),
@@ -10168,7 +10168,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok kääntää automaattisesti X:n käyttösi ja ", " perusteella. Voit myös muuttaa automaattikäännösasetuksia alla."];
                             },
                         },
                         {
@@ -13381,4 +13381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.10a2d0fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.c90b861a.js.map

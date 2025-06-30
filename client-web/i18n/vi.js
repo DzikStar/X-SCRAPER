@@ -1316,10 +1316,10 @@
                 t("a02d1657", function (n) {
                     return "Đang thực thi mã" + n.ttc_tool_usage_card;
                 }),
-                t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
-                t("c43ef93e", "Browsing web page"),
+                t("aa9d42c0", "Đang tìm kiếm trên web"),
+                t("dce1817a", "Đang tìm kiếm trên 𝕏"),
+                t("f7151564", "Đang tìm kiếm người dùng trên 𝕏"),
+                t("c43ef93e", "Đang duyệt trang web"),
                 t("jb097f6e", "Đang thực thi mã"),
                 t("ead81122", "Đã xảy ra lỗi, vui lòng làm mới để kết nối lại hoặc thử lại."),
                 t("f808a13a", "Bạn đã vượt quá giới hạn số lượng. Vui lòng chờ giây lát rồi thử lại."),
@@ -1367,11 +1367,11 @@
                 t("e0bffbf8", "Giới thiệu về bản dịch tự động"),
                 t("e839db3a", "Hủy bỏ"),
                 t("e7a86c77", function (n) {
-                    return "Automatically translate " + n.language;
+                    return "Tự động dịch " + n.language;
                 }),
-                t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("f9317b98", "language settings"),
-                t("hba0547a", "Unable to update settings. Please try again later."),
+                t("c60b9e5c", "Thay đổi sẽ có hiệu lực với nội dung mới tải."),
+                t("f9317b98", "cài đặt ngôn ngữ"),
+                t("hba0547a", "Không cập nhật được chế độ cài đặt. Hãy thử lại sau."),
                 t("d4c339b9", function (n) {
                     return "Bài đăng từ " + n.fullName + " (@" + n.screenName + ")";
                 }),
@@ -4359,7 +4359,7 @@
                     return "Đã suy nghĩ trong " + n.seconds + " giây";
                 }),
                 t("h26fa43f", function (n) {
-                    return n.count + " nhiều hơn";
+                    return n.count + " mục nữa";
                 }),
                 t("ha8fbe22", "Tạo nhiều hình ảnh hơn với gói Premium"),
                 t("d95c232a", "Bạn đã đạt đến giới hạn. Hãy nâng cấp ngay để tạo thêm."),
@@ -7399,10 +7399,10 @@
                 t("d94f12b6", "Thử tìm kiếm thông báo, quyền riêng tư, v.v."),
                 t("ba8f6f82", "Tìm kiếm Cài đặt"),
                 t("ibf92e4a", "Thanh toán thành công"),
-                t("bdf0fb06", "Your subscription has been activated."),
+                t("bdf0fb06", "Thuê bao của bạn đã được kích hoạt."),
                 t("ddfd6718", "Thanh toán không thành công"),
                 t("d42fa852", "Đã xảy ra sự cố khi xử lý khoản thanh toán của bạn. Vui lòng thử lại."),
-                t("g055a9ce", "Open 𝕏 App"),
+                t("g055a9ce", "Mở ứng dụng 𝕏"),
                 t("g931a6e5", function (n) {
                     return "Bạn đang theo dõi " + n.topic;
                 }),
@@ -10154,7 +10154,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok sẽ tự động dịch dựa trên ", " và hoạt động sử dụng X của bạn. Bạn cũng có thể chuyển đổi chế độ cài đặt dịch tự động bên dưới."];
                             },
                         },
                         {
@@ -13366,4 +13366,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.db1cbc0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.edb4185a.js.map

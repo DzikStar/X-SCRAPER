@@ -8,9 +8,9 @@
                 a = o(500002),
                 r = o(668214),
                 s = o(997174),
-                d = o(118823);
-            const i = (0, r.Z)()
-                .propsFromActions(() => ({ updateLocation: d.YF, updateTweetDetailNav: s.NH }))
+                i = o(118823);
+            const d = (0, r.Z)()
+                .propsFromActions(() => ({ updateLocation: i.YF, updateTweetDetailNav: s.NH }))
                 .withAnalytics();
             class l extends n.Component {
                 componentDidMount() {
@@ -24,12 +24,12 @@
                         } = this.props,
                         {
                             location: { pathname: r, search: s },
-                            locationKey: d,
+                            locationKey: i,
                         } = e;
-                    let i = !1;
-                    t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (i = !0));
-                    const l = a || d;
-                    ((l && a !== d) || (!l && o !== r) || n !== s || i) && this._performPageUpdates(this.props);
+                    let d = !1;
+                    t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (d = !0));
+                    const l = a || i;
+                    ((l && a !== i) || (!l && o !== r) || n !== s || d) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -40,7 +40,7 @@
                 }
             }
             l.defaultProps = { children: null };
-            const c = (0, a.ZP)(i(l));
+            const c = (0, a.ZP)(d(l));
         },
         337523: (e, t, o) => {
             o.d(t, { Z: () => we });
@@ -48,8 +48,8 @@
                 a = o(457311),
                 r = o(708852),
                 s = o(108362),
-                d = o(111677),
-                i = o.n(d),
+                i = o(111677),
+                d = o.n(i),
                 l = o(769471),
                 c = o(718e3),
                 u = o(789831),
@@ -89,25 +89,25 @@
                                 r = o?.tabs;
                             if (r && r.tabs) {
                                 const s = (a && a.id) || r.initialTabId,
-                                    d = o ? o.scribeConfig : void 0;
-                                let i;
+                                    i = o ? o.scribeConfig : void 0;
+                                let d;
                                 const l = r.tabs.map((o, n) => {
                                     const a = o.id === s;
                                     return (
-                                        a && (i = n),
+                                        a && (d = n),
                                         {
                                             isActive: () => a,
                                             key: o.labelText,
                                             label: o.labelText,
                                             onClick: () => {
-                                                e.scribe(this._buildTabNamespace(this._getScribeNamespace(d), this._getScribeNamespace(o.scribeConfig)));
+                                                e.scribe(this._buildTabNamespace(this._getScribeNamespace(i), this._getScribeNamespace(o.scribeConfig)));
                                             },
                                             to: t(o.id),
                                             token: o.scribeConfig?.entityToken,
                                         }
                                     );
                                 });
-                                return n.createElement(n.Fragment, null, n.createElement(p.Z, { alignFirstItem: (0, m.ZP)(), links: l, visibleItemIndex: i }));
+                                return n.createElement(n.Fragment, null, n.createElement(p.Z, { alignFirstItem: (0, m.ZP)(), links: l, visibleItemIndex: d }));
                             }
                             return null;
                         });
@@ -138,25 +138,26 @@
                 g = o(383675),
                 U = o(611423),
                 L = o(443781);
-            const M = (0, o(523561).Z)({
+            const y = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.23"),
                         o.e("icons.0"),
+                        o.e("icons.5"),
+                        o.e("icons.12"),
+                        o.e("icons.20"),
                         o.e("icons.2"),
-                        o.e("icons.16"),
-                        o.e("icons.19"),
+                        o.e("icons.21"),
+                        o.e("icons.28"),
                         o.e("icons.10"),
-                        o.e("icons.13"),
-                        o.e("icons.24"),
-                        o.e("icons.7"),
-                        o.e("icons.22"),
-                        o.e("icons.27"),
                         o.e("icons.17"),
+                        o.e("icons.9"),
+                        o.e("icons.23"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.11"),
-                        o.e("icons.26"),
+                        o.e("icons.22"),
+                        o.e("icons.14"),
+                        o.e("icons.25"),
+                        o.e("icons.13"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -167,26 +168,24 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.8"),
-                        o.e("icons.4"),
-                        o.e("icons.14"),
-                        o.e("icons.28"),
-                        o.e("icons.21"),
+                        o.e("icons.6"),
                         o.e("icons.3"),
+                        o.e("icons.4"),
                         o.e("icons.1"),
+                        o.e("icons.8"),
                         o.e("icons.18"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
+                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -203,7 +202,6 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                         o.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         o.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -253,7 +251,7 @@
                         o.e("loader.ExploreNews"),
                     ]).then(o.bind(o, 568527)),
             });
-            var y = o(810641);
+            var M = o(810641);
             const F = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
                 P = (e, t) => {
                     const o = t.selectedTabId,
@@ -294,12 +292,12 @@
                         });
                 }
                 render() {
-                    const { entryConfiguration: e, initialModule: t, pageConfiguration: o, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, selectedTab: i, timelinePrefix: l, title: c, withoutHeadroom: u } = this.props;
-                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === i?.id) return n.createElement(M, null);
-                    const E = this._getModule(i, o?.tabs?.initialTabId, t, l),
+                    const { entryConfiguration: e, initialModule: t, pageConfiguration: o, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: i, selectedTab: d, timelinePrefix: l, title: c, withoutHeadroom: u } = this.props;
+                    if (this.context.featureSwitches.isTrue("responsive_web_grok_05221996") && "news" === d?.id) return n.createElement(y, null);
+                    const E = this._getModule(d, o?.tabs?.initialTabId, t, l),
                         b = this._getRefreshIntervalSecForCurrentTab(),
                         h = b ? 1e3 * b : void 0;
-                    return n.createElement(_.nO, { namespace: this._getTimelineNamespace() }, n.createElement(y.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: h, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: d, title: c, withoutHeadroom: u }));
+                    return n.createElement(_.nO, { namespace: this._getTimelineNamespace() }, n.createElement(M.Z, { entryConfiguration: e, module: E, pollingIntervalMsOverride: h, prerollDisplayLocation: a, refreshControl: r, renderEmptyState: s, renderUnavailable: i, title: c, withoutHeadroom: u }));
                 }
             }
             Z.contextType = L.rC;
@@ -323,15 +321,15 @@
                     { namespace: { component: a, element: r }, data: s }
                 );
             };
-            function V(e) {
+            function K(e) {
                 const {
                         header: { clientEventInfo: t, displayType: o, facepile: a, landingContext: r, topicId: s },
-                        onHeaderVisible: d,
+                        onHeaderVisible: i,
                     } = e,
-                    { data: i, namespace: l } = z(s, t);
-                return n.createElement(x.Z, { style: K.root }, n.createElement(_.nO, { data: i, namespace: l }, n.createElement(Q.Z, { displayType: o, facepile: a, onFollowHeaderOffscreen: ({ isOffscreen: e }) => d(!e), topicId: s, topicLandingContext: r, withDivider: !0 })));
+                    { data: d, namespace: l } = z(s, t);
+                return n.createElement(x.Z, { style: V.root }, n.createElement(_.nO, { data: d, namespace: l }, n.createElement(Q.Z, { displayType: o, facepile: a, onFollowHeaderOffscreen: ({ isOffscreen: e }) => i(!e), topicId: s, topicLandingContext: r, withDivider: !0 })));
             }
-            const K = G.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
+            const V = G.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
             var Y = o(24949);
             const $ = (e, t) => t.module.selectPageConfiguration(e),
                 J = (e, t) => t.module.selectInitialFetchStatus(e),
@@ -345,16 +343,16 @@
                 ae = o(572067),
                 re = o(265196),
                 se = o(421575),
-                de = o(907552),
-                ie = o(466380);
+                ie = o(907552),
+                de = o(466380);
             const le = (e, t) => {
                     const o = t.navBar.topicId ? t.navBar.topicId : "";
-                    return ie.Z.select(e, o);
+                    return de.Z.select(e, o);
                 },
                 ce = (0, C.Z)().propsFromState(() => ({ topic: le })),
                 ue = (e) => (0, te.ju)(`https://x.com/i/topics/${e}`),
                 Ee = (e) => `twitter://topics_timeline?id=${e}`,
-                _e = i().ed88e742;
+                _e = d().ed88e742;
             const be = G.default.create((e) => ({ rightControl: { flexDirection: "row" }, followButtonContainer: { justifyContent: "center", paddingEnd: e.spaces.space4 } })),
                 he = ce(function (e) {
                     const t = e.navBar.topicId ? e.navBar.topicId : "",
@@ -363,39 +361,39 @@
                             navBar: { clientEventInfo: a },
                             pageNamespace: r,
                             topic: s,
-                            withAppLinks: d,
-                            withOpenGraphMeta: i,
+                            withAppLinks: i,
+                            withOpenGraphMeta: d,
                         } = e,
                         { featureSwitches: c } = n.useContext(L.rC),
                         u = c.isTrue("topic_landing_page_share_enabled"),
                         { data: E, namespace: b } = z(t, a),
                         h = (0, l.Z)({}, r, b);
-                    return s ? n.createElement(_.nO, { data: E, namespace: h }, n.createElement(n.Fragment, null, i ? n.createElement(ae.Z, { canonical: ue(t), description: s.description, title: s.name, type: "article" }) : null, d ? n.createElement(ne.Z, { deepLink: Ee(t) }) : null, n.createElement(x.Z, { style: be.rightControl }, n.createElement(x.Z, { style: be.followButtonContainer }, n.createElement(oe.Z, { animateMount: !0, show: o, type: "fade" }, n.createElement(re.ZP, { size: "medium", textMode: se.q.FollowTopic, topic: s }))), u ? n.createElement(de.ZP, { copyLinkShareLabel: _e, scribeNamespace: h, url: ue(t) }) : null))) : null;
+                    return s ? n.createElement(_.nO, { data: E, namespace: h }, n.createElement(n.Fragment, null, d ? n.createElement(ae.Z, { canonical: ue(t), description: s.description, title: s.name, type: "article" }) : null, i ? n.createElement(ne.Z, { deepLink: Ee(t) }) : null, n.createElement(x.Z, { style: be.rightControl }, n.createElement(x.Z, { style: be.followButtonContainer }, n.createElement(oe.Z, { animateMount: !0, show: o, type: "fade" }, n.createElement(re.ZP, { size: "medium", textMode: se.q.FollowTopic, topic: s }))), u ? n.createElement(ie.ZP, { copyLinkShareLabel: _e, scribeNamespace: h, url: ue(t) }) : null))) : null;
                 }),
-                pe = i().e9f1fbcc,
+                pe = d().e9f1fbcc,
                 Se = n.createElement(c.Z, null),
                 me = (e) => {
-                    const { TabBar: t, backLocation: o, documentTitle: a, entryConfiguration: d, fab: i, getTabLink: c, hasTabNavigation: p, history: S, initialFetchStatus: m, initialPageNamespace: w, logoButton: T, module: C, onBackClick: I, pageConfiguration: A, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, rightControl: O, selectedTabId: g, sidebarContent: U, timelinePrefix: L, title: M, withAppLinks: y, withBottomLoginSignupBar: F, withOpenGraphMeta: P, withSearchBox: B, withTweetButton: Z } = e,
+                    const { TabBar: t, backLocation: o, documentTitle: a, entryConfiguration: i, fab: d, getTabLink: c, hasTabNavigation: p, history: S, initialFetchStatus: m, initialPageNamespace: w, logoButton: T, module: C, onBackClick: I, pageConfiguration: A, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, rightControl: O, selectedTabId: g, sidebarContent: U, timelinePrefix: L, title: y, withAppLinks: M, withBottomLoginSignupBar: F, withOpenGraphMeta: P, withSearchBox: B, withTweetButton: Z } = e,
                         k = (0, r.tj)(),
-                        x = n.useMemo(() => ({ ...d, ...(0, H.Z)({ isLegacy: !0, isWide: k }) }), [d, k]),
+                        x = n.useMemo(() => ({ ...i, ...(0, H.Z)({ isLegacy: !0, isWide: k }) }), [i, k]),
                         [G, Q] = n.useState(!0),
                         { header: W, navBar: q, subtitle: j, title: z } = A || {},
-                        K = m === b.Z.LOADED ? z || M : "",
+                        V = m === b.Z.LOADED ? z || y : "",
                         Y = ((e, t, o) => {
                             const n = t?.scribeConfig,
                                 { entityToken: a, ...r } = n || {},
                                 s = t?.tabs,
-                                d = e || s?.initialTabId,
-                                i = s?.tabs.find((e) => e.id === d),
-                                { entityToken: c, ...u } = i?.scribeConfig || {};
+                                i = e || s?.initialTabId,
+                                d = s?.tabs.find((e) => e.id === i),
+                                { entityToken: c, ...u } = d?.scribeConfig || {};
                             return (0, l.Z)({}, o, r, u);
                         })(g, A, w),
-                        $ = W ? n.createElement(V, { header: W, onHeaderVisible: Q }) : null,
-                        J = q ? n.createElement(he, { isHeaderOffscreen: !G, navBar: q, pageNamespace: Y, withAppLinks: y, withOpenGraphMeta: P }) : null,
-                        X = n.createElement(n.Fragment, null, $, n.createElement(v, { entryConfiguration: x, initialModule: C, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, selectedTabId: g, timelinePrefix: L, title: M, withoutHeadroom: !0 })),
-                        ee = i ? n.createElement(u.Z, { component: s.Z, fab: i }, X) : X,
+                        $ = W ? n.createElement(K, { header: W, onHeaderVisible: Q }) : null,
+                        J = q ? n.createElement(he, { isHeaderOffscreen: !G, navBar: q, pageNamespace: Y, withAppLinks: M, withOpenGraphMeta: P }) : null,
+                        X = n.createElement(n.Fragment, null, $, n.createElement(v, { entryConfiguration: x, initialModule: C, prerollDisplayLocation: N, renderEmptyState: D, renderUnavailable: f, selectedTabId: g, timelinePrefix: L, title: y, withoutHeadroom: !0 })),
+                        ee = d ? n.createElement(u.Z, { component: s.Z, fab: d }, X) : X,
                         te = c && p ? n.createElement(R, { getTabLink: c, module: C, selectedTabId: g }) : void 0;
-                    return n.createElement(_.nO, { namespace: Y }, n.createElement(h.Z, null, n.createElement(E.Z, { TabBar: t, backLocation: o, documentTitle: a, history: S, logoButton: T, onBackClick: I, primaryContent: ee, rightControl: J || O, secondaryBar: te, sidebarContent: U, subtitle: j, title: $ && G ? M : K, withBottomLoginSignupBar: F, withSearchBox: B, withTweetButton: Z })));
+                    return n.createElement(_.nO, { namespace: Y }, n.createElement(h.Z, null, n.createElement(E.Z, { TabBar: t, backLocation: o, documentTitle: a, history: S, logoButton: T, onBackClick: I, primaryContent: ee, rightControl: J || O, secondaryBar: te, sidebarContent: U, subtitle: j, title: $ && G ? y : V, withBottomLoginSignupBar: F, withSearchBox: B, withTweetButton: Z })));
                 };
             me.defaultProps = { entryConfiguration: (0, k.G)({}), renderEmptyState: () => n.createElement(a.Z, { header: pe }), sidebarContent: Se, withAppLinks: !1, withOpenGraphMeta: !1 };
             const we = ee(me);
@@ -412,8 +410,8 @@
                 a = o(555874),
                 r = o(111677),
                 s = o.n(r),
-                d = o(290402),
-                i = o(965245),
+                i = o(290402),
+                d = o(965245),
                 l = o(71620),
                 c = o(668214);
             const u = (e, t) => t.module.selectFetchStatus(e),
@@ -428,8 +426,8 @@
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
-                            const { footer: e, items: t, noItemsRenderer: o, numColumns: r, onScrollEnd: s, renderer: d, withoutHeadroom: l } = this.props;
-                            return !t || r < 1 ? null : 1 === r ? n.createElement(i.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: h, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: s, renderer: d, withoutHeadroom: l }) : n.createElement(a.Z, { ListEmptyComponent: o, data: t, keyExtractor: h, numColumns: r, renderItem: p(d) });
+                            const { footer: e, items: t, noItemsRenderer: o, numColumns: r, onScrollEnd: s, renderer: i, withoutHeadroom: l } = this.props;
+                            return !t || r < 1 ? null : 1 === r ? n.createElement(d.Z, { cacheKey: "sliceTimeline", footer: e, identityFunction: h, items: t, noItemsRenderer: o, onNearEnd: this._handleNearEnd, onScrollEnd: s, renderer: i, withoutHeadroom: l }) : n.createElement(a.Z, { ListEmptyComponent: o, data: t, keyExtractor: h, numColumns: r, renderItem: p(i) });
                         }),
                         (this._handleNearEnd = () => {
                             const { createLocalApiErrorHandler: e, fetchBottom: t } = this.props;
@@ -449,7 +447,7 @@
                 }
                 render() {
                     const { fetchStatus: e, module: t, retryMessage: o } = this.props;
-                    return t ? n.createElement(d.Z, { "aria-label": b, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render, retryMessage: o, retryable: !0 }) : null;
+                    return t ? n.createElement(i.Z, { "aria-label": b, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render, retryMessage: o, retryable: !0 }) : null;
                 }
             }
             S.defaultProps = { numColumns: 1, alwaysFetch: !1 };
@@ -492,15 +490,15 @@
                 a = o(106067),
                 r = o(917799),
                 s = o(502909),
-                d = o(600823);
-            const i = (0, s.ZP)({ namespace: "birdwatchContributorNotes" }),
+                i = o(600823);
+            const d = (0, s.ZP)({ namespace: "birdwatchContributorNotes" }),
                 l =
                     (e) =>
                     (t, o, { api: s }) =>
-                        r._O(t, { request: s.withEndpoint(a.Z).deleteNote, params: { note_id: e } })({ actionTypes: i.actionTypes.OPTIMISTIC_UPDATE, context: "DELETE_NOTE" }, (t) => {
-                            if (t) return [i.deleteOne(e), (0, n.f_)(e)];
+                        r._O(t, { request: s.withEndpoint(a.Z).deleteNote, params: { note_id: e } })({ actionTypes: d.actionTypes.OPTIMISTIC_UPDATE, context: "DELETE_NOTE" }, (t) => {
+                            if (t) return [d.deleteOne(e), (0, n.f_)(e)];
                         }),
-                c = d.Z.register(i);
+                c = i.Z.register(d);
         },
         78014: (e, t, o) => {
             o.d(t, { _: () => r });
@@ -509,14 +507,14 @@
             const r = (e) => (0, a.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
         979090: (e, t, o) => {
-            o.d(t, { $e: () => Oe, BG: () => re, Bb: () => ve, Bs: () => de, C7: () => fe, EW: () => De, HO: () => he, JL: () => ue, Jn: () => me, Kc: () => Me, Ld: () => Ze, Lt: () => te, Ly: () => J, OV: () => ae, PL: () => ie, Pi: () => Te, Qg: () => j, SZ: () => xe, V0: () => Pe, Wk: () => oe, X3: () => ye, _T: () => qe, _b: () => ke, aZ: () => Ue, ap: () => ce, cS: () => se, dw: () => X, eD: () => le, eY: () => Ie, et: () => Y, f3: () => pe, f_: () => Fe, gH: () => be, gP: () => Qe, jm: () => V, kT: () => Be, kX: () => Ge, lC: () => ge, lW: () => Ee, lw: () => Re, mZ: () => We, mv: () => Ce, oV: () => je, pN: () => Ne, qm: () => Le, r9: () => z, sz: () => ee, tk: () => $, vF: () => we, w6: () => _e, wK: () => He, wd: () => Se, ww: () => Ae });
+            o.d(t, { $e: () => Oe, BG: () => re, Bb: () => ve, Bs: () => ie, C7: () => fe, EW: () => De, HO: () => he, JL: () => ue, Jn: () => me, Kc: () => ye, Ld: () => Ze, Lt: () => te, Ly: () => J, OV: () => ae, PL: () => de, Pi: () => Te, Qg: () => j, SZ: () => xe, V0: () => Pe, Wk: () => oe, X3: () => Me, _T: () => qe, _b: () => ke, aZ: () => Ue, ap: () => ce, cS: () => se, dw: () => X, eD: () => le, eY: () => Ie, et: () => Y, f3: () => pe, f_: () => Fe, gH: () => be, gP: () => Qe, jm: () => K, kT: () => Be, kX: () => Ge, lC: () => ge, lW: () => Ee, lw: () => Re, mZ: () => We, mv: () => Ce, oV: () => je, pN: () => Ne, qm: () => Le, r9: () => z, sz: () => ee, tk: () => $, vF: () => we, w6: () => _e, wK: () => He, wd: () => Se, ww: () => Ae });
             o(571372), o(136728);
             var n = o(744531),
                 a = o(401388),
                 r = o(106067),
                 s = o(256563),
-                d = o(497461),
-                i = o(163889),
+                i = o(497461),
+                d = o(163889),
                 l = o(499627),
                 c = o(917799),
                 u = o(312771),
@@ -540,8 +538,8 @@
                 g = Object.freeze({ REQUEST: "rweb/birdwatchNotes/ADMIT_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/ADMIT_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/ADMIT_USER_FAILURE" }),
                 U = Object.freeze({ REQUEST: "rweb/birdwatchNotes/REMOVE_USER_REQUEST", SUCCESS: "rweb/birdwatchNotes/REMOVE_USER_SUCCESS", FAILURE: "rweb/birdwatchNotes/REMOVE_USER_FAILURE" }),
                 L = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_FAILURE" }),
-                M = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_FAILURE" }),
-                y = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_FAILURE" }),
+                y = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SIGNUP_ELIGIBILITY_FAILURE" }),
+                M = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SOURCE_LINK_TWEET_FAILURE" }),
                 F = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_ALIAS_SELECT_OPTIONS_FAILURE" }),
                 P = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_NOTE_FAILURE" }),
                 B = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_FAILURE" }),
@@ -591,7 +589,7 @@
                             const o = t.meta?.note_id;
                             if (o) {
                                 const n = t.payload.birdwatch_note_by_rest_id.translated_summary;
-                                return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { result: n && (0, s.Z)((0, d.$)(), n), fetchStatus: u.ZP.LOADED } } } };
+                                return { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { result: n && (0, s.Z)((0, i.$)(), n), fetchStatus: u.ZP.LOADED } } } };
                             }
                             return e;
                         }
@@ -599,7 +597,7 @@
                             const o = t.meta?.noteId;
                             return o ? { ...e, notes: { ...e.notes, [o]: { ...e.notes[o], noteTranslation: { fetchStatus: u.ZP.FAILED } } } } : e;
                         }
-                        case M.SUCCESS: {
+                        case y.SUCCESS: {
                             const o = t.payload;
                             return { ...e, signupEligibility: o?.birdwatch_sign_up_eligibility?.eligible };
                         }
@@ -649,10 +647,10 @@
                                 const a = t.payload?.entities?.birdwatchNotes[o],
                                     r = a?.misleading_ids || [],
                                     s = r.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
-                                    d = r.map((e) => e.rest_id),
-                                    i = a?.not_misleading_ids || [],
-                                    l = i.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
-                                    c = { misleadingIds: d, notMisleadingIds: i.map((e) => e.rest_id), fetchStatus: u.ZP.LOADED };
+                                    i = r.map((e) => e.rest_id),
+                                    d = a?.not_misleading_ids || [],
+                                    l = d.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
+                                    c = { misleadingIds: i, notMisleadingIds: d.map((e) => e.rest_id), fetchStatus: u.ZP.LOADED };
                                 return a?.ownNoteId && (c.ownNoteId = a?.ownNoteId), (c.canUserWriteNotesOnPost = a?.canUserWriteNotesOnPost), t.meta ? { ...e, notes: { ...e.notes, ...s, ...l }, tweetNotes: { ...e.tweetNotes, [n]: c } } : e;
                             }
                             return n ? { ...e, tweetNotes: { ...e.tweetNotes, [n]: { fetchStatus: u.ZP.LOADED } } } : e;
@@ -673,10 +671,10 @@
                                     a = o?.notes || [],
                                     r = a.reduce((e, t) => ((e[t.rest_id] = t), e), {}),
                                     s = a.map((e) => e.rest_id),
-                                    d = o?.ratings_count,
-                                    i = o?.notes_count,
+                                    i = o?.ratings_count,
+                                    d = o?.notes_count,
                                     l = o?.is_top_writer;
-                                return { ...e, notes: { ...e.notes, ...r }, contributor: { ...e.contributor, [n]: { ratingsCount: d, notesCount: i, isTopWriter: l, deletedNotesCount: o?.deleted_notes_count, notes: s, fetchStatus: u.ZP.LOADED } } };
+                                return { ...e, notes: { ...e.notes, ...r }, contributor: { ...e.contributor, [n]: { ratingsCount: i, notesCount: d, isTopWriter: l, deletedNotesCount: o?.deleted_notes_count, notes: s, fetchStatus: u.ZP.LOADED } } };
                             }
                             return o ? { ...e, contributor: { ...e.contributor, [o]: { ...e.contributor[o], fetchStatus: u.ZP.FAILED } } } : e;
                         }
@@ -733,15 +731,15 @@
                         }
                         case k.SUCCESS:
                             return { ...e, contributor: { ...e.contributor, enrollmentStatus: { ...e.contributor.enrollmentStatus, enrollment_state: "EarnedOutAcknowledged" } } };
-                        case y.REQUEST: {
+                        case M.REQUEST: {
                             const o = t.meta?.tweetId;
                             return o ? { ...e, matchData: { fetchStatus: u.ZP.LOADING } } : e;
                         }
-                        case y.FAILURE: {
+                        case M.FAILURE: {
                             const o = t.meta?.tweet_id;
                             return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { fetchStatus: u.ZP.FAILED } } } : e;
                         }
-                        case y.SUCCESS: {
+                        case M.SUCCESS: {
                             const o = t.meta?.tweet_id;
                             return o ? { ...e, sourceLinks: { ...e.sourceLinks, [o]: { source_preview_tweet_for_notes: t.payload.tweet_result_by_rest_id.result.source_preview_tweet_for_notes, source_tweet_count_for_notes: t.payload.tweet_result_by_rest_id.result.source_tweet_count_for_notes, has_note_request: t.payload.tweet_result_by_rest_id.result.has_note_request, fetchStatus: u.ZP.LOADED } } } : e;
                         }
@@ -757,8 +755,8 @@
             const q = [],
                 j = (e, t) => e[h].notes[t],
                 z = (e, t) => e[h].noteRequests[t],
-                V = (e) => e[h].paths,
-                K = (e, t) => e[h].tweetNotes[t]?.misleadingIds,
+                K = (e) => e[h].paths,
+                V = (e, t) => e[h].tweetNotes[t]?.misleadingIds,
                 Y = (e) => e[h].matchData,
                 $ = (e, t) => e[h].sourceLinks[t],
                 J = (e, t) => {
@@ -772,7 +770,7 @@
                 },
                 ee = (e) => e[h].publicData,
                 te = (e, t) => {
-                    const o = t ? K(e, t) : void 0;
+                    const o = t ? V(e, t) : void 0;
                     if (o) {
                         return o.map((t) => j(e, t)).filter(Boolean);
                     }
@@ -804,11 +802,11 @@
                         n = e.slices[o];
                     return n?.items?.length > 0 || !1;
                 },
-                de = (e) => {
+                ie = (e) => {
                     const t = e[h].contributor;
                     return t ? t.aliasSelfSelectOptions : void 0;
                 },
-                ie = (e) => {
+                de = (e) => {
                     const t = e[h].contributor;
                     return t ? t.enrollmentStatus : void 0;
                 },
@@ -856,7 +854,7 @@
                 Te =
                     (e) =>
                     (t, o, { api: n }) => {
-                        const a = !!K(o(), e),
+                        const a = !!V(o(), e),
                             s = pe(o(), e) === u.ZP.LOADING;
                         return a || s
                             ? Promise.resolve()
@@ -902,7 +900,7 @@
                 Ie =
                     () =>
                     (e, t, { api: o }) =>
-                        !!ie(t()) ? Promise.resolve() : e(ge()),
+                        !!de(t()) ? Promise.resolve() : e(ge()),
                 Ae =
                     (e) =>
                     (t, o, { api: n }) => {
@@ -927,57 +925,59 @@
                     (t, o, { api: n }) =>
                         (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchNoteTranslation, params: e })({ actionTypes: O, context: "FETCH_NOTE_TRANSLATION", meta: { note_id: e } }),
                 fe =
-                    (e) =>
-                    async (t, o, { api: n }) => {
-                        const a = { content_type: "COMMUNITY_NOTE", id: e },
-                            r = { fetchStatus: u.ZP.LOADING, result: { text: "", entities: [] } },
-                            l = (e, o) => {
+                    (e, t) =>
+                    async (o, n, { api: a }) => {
+                        const r = Date.now(),
+                            l = { content_type: "COMMUNITY_NOTE", id: e },
+                            c = { fetchStatus: u.ZP.LOADING, result: { text: "", entities: [] } },
+                            E = (e, t) => {
                                 var n;
-                                t(((n = { note_id: e, translation: { ...o, result: o.result ? (0, s.Z)((0, d.$)(), o.result) : void 0 } }), { type: x, payload: n }));
+                                o(((n = { note_id: e, translation: { ...t, result: t.result ? (0, s.Z)((0, i.$)(), t.result) : void 0 } }), { type: x, payload: n }));
                             };
-                        l(e, r);
-                        const c = new AbortController();
+                        E(e, c);
+                        const h = new AbortController();
                         try {
-                            const t = await n.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(a), signal: c.signal });
-                            if (!t.ok) throw ((r.state = _.H.ERROR), (r.fetchStatus = u.ZP.FAILED), l(e, r), new Error(`invalid response ${t.status}`));
-                            const o = t.body?.getReader();
-                            if (!o) throw ((r.state = _.H.ERROR), (r.fetchStatus = u.ZP.FAILED), l(e, r), new Error("reader not present"));
+                            const o = await a.fetchClient.dispatch("/2/grok/translation.json", { method: "POST", credentials: "include", body: JSON.stringify(l), signal: h.signal });
+                            if (!o.ok) throw ((c.state = _.H.ERROR), (c.fetchStatus = u.ZP.FAILED), E(e, c), new Error(`invalid response ${o.status}`));
+                            const n = o.body?.getReader();
+                            if (!n) throw ((c.state = _.H.ERROR), (c.fetchStatus = u.ZP.FAILED), E(e, c), new Error("reader not present"));
                             const s = new TextDecoder();
-                            let d = "";
-                            const i = async (t) => {
-                                const n = t ? b.T9 : b.UG,
-                                    { done: a, value: c } = await (0, b.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => o.read(), n, t ? "timeout to first chunk" : "timeout between chunks");
+                            let i = "";
+                            const d = async (o) => {
+                                const { done: a, value: l } = await (0, b.yE)("COMMUNITY_NOTE_TIMEOUT_BETWEEN_CHUNKS", () => n.read(), o ? "FIRST_CHUNK" : "BETWEEN_CHUNKS");
                                 if (a) {
-                                    if (0 === (r.result?.text.length ?? 0)) throw new Error("empty string when done");
-                                    return (r.state = _.H.SUCCESS), (r.fetchStatus = u.ZP.LOADED), void l(e, r);
+                                    t.scribe({ component: "grok_button_translation", element: "time_to_last_token_community_note", action: "complete", data: { duration_ms: Date.now() - r } });
+                                    if (0 === (c.result?.text.length ?? 0)) throw new Error("empty string when done");
+                                    return (c.state = _.H.SUCCESS), (c.fetchStatus = u.ZP.LOADED), void E(e, c);
                                 }
-                                if (c) {
-                                    const t = s.decode(c);
-                                    if (((d += t), d.includes("\n"))) {
-                                        const t = d.split("\n");
-                                        d = t.pop();
+                                if (l) {
+                                    o && t.scribe({ component: "grok_button_translation", element: "time_to_first_token_community_note", action: "complete", data: { duration_ms: Date.now() - r } });
+                                    const n = s.decode(l);
+                                    if (((i += n), i.includes("\n"))) {
+                                        const t = i.split("\n");
+                                        i = t.pop();
                                         for (const o of t) {
                                             const t = JSON.parse(o);
                                             if (t.error) throw new Error(t.error);
-                                            t.result && r.result && (t.result.text && (r.result.text += t.result.text), t.result.rich_text_entities && r.result.entities.push(...t.result.rich_text_entities)), l(e, r);
+                                            t.result && c.result && (t.result.text && (c.result.text += t.result.text), t.result.rich_text_entities && c.result.entities.push(...t.result.rich_text_entities)), E(e, c);
                                         }
                                     }
                                 }
-                                await i();
+                                await d();
                             };
-                            await i(!0);
-                        } catch (t) {
-                            (r.state = _.H.ERROR), (r.fetchStatus = u.ZP.FAILED), l(e, r), (0, i.ZP)(`Failed to translate community note:${e} - ${String(t)}`), c.abort();
+                            await d(!0);
+                        } catch (o) {
+                            (c.state = _.H.ERROR), (c.fetchStatus = u.ZP.FAILED), E(e, c), (0, d.ZP)(`Failed to translate community note:${e} - ${String(o)}`), h.abort(), o instanceof b.mn ? t.scribe({ component: "grok_button_translation", element: "FIRST_CHUNK" === o.type ? "error_timeout_first_token_community_note" : "error_timeout_within_tokens_community_note", action: "error" }) : t.scribe({ component: "grok_button_translation", element: "error_community_note", action: "error" });
                         }
                     },
                 Re =
                     (e) =>
                     (t, o, { api: n }) =>
-                        (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchTweetSourceLink, params: e })({ actionTypes: y, context: "FETCH_SOURCE_LINK_TWEET", meta: { tweet_id: e } }),
+                        (0, c._O)(t, { request: n.withEndpoint(r.Z).fetchTweetSourceLink, params: e })({ actionTypes: M, context: "FETCH_SOURCE_LINK_TWEET", meta: { tweet_id: e } }),
                 Oe =
                     () =>
                     (e, t, { api: o }) =>
-                        (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: M, context: "FETCH_SIGNUP_ELIGIBILITY" }),
+                        (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchSignUpEligiblity })({ actionTypes: y, context: "FETCH_SIGNUP_ELIGIBILITY" }),
                 ge =
                     () =>
                     (e, t, { api: o }) =>
@@ -990,11 +990,11 @@
                     () =>
                     (e, t, { api: o }) =>
                         (0, c._O)(e, { request: o.withEndpoint(r.Z).fetchAliasSelfSelectOptions, params: {} })({ actionTypes: F, context: "FETCH_ALIAS_SELECT_OPTIONS", meta: {} }),
-                Me =
+                ye =
                     (e) =>
                     (t, o, { api: n }) =>
                         (0, c._O)(t, { request: n.withEndpoint(r.Z).selectAlias, params: { alias: e } })({ actionTypes: T, context: "SELECT_ALIAS", meta: { alias: e } }),
-                ye =
+                Me =
                     () =>
                     (e, t, { api: o }) =>
                         (0, c._O)(e, { request: o.withEndpoint(r.Z).acknowledgeEarnOut, params: {} })({ actionTypes: k, context: "PROFILE_ACKNOWLEDGE_EARN_OUT", meta: {} }),
@@ -1005,8 +1005,8 @@
                         (0, c._O)(t, { request: n.withEndpoint(r.Z).deleteBirdwatchBatSignal, params: { tweet_id: e } })({ actionTypes: N, context: "DELETE_BIRDWATCH_BATSIGNAL", meta: { tweet_id: e } }),
                 Be =
                     (e, t, o, n) =>
-                    (a, s, { api: d }) =>
-                        (0, c._O)(a, { request: d.withEndpoint(r.Z).createNote, params: { tweet_id: e, is_media_note: o, is_helpful_for_all_posts: n, data: t } })({ actionTypes: P, context: "CREATE_NOTE" }),
+                    (a, s, { api: i }) =>
+                        (0, c._O)(a, { request: i.withEndpoint(r.Z).createNote, params: { tweet_id: e, is_media_note: o, is_helpful_for_all_posts: n, data: t } })({ actionTypes: P, context: "CREATE_NOTE" }),
                 Ze = (e) => (t) => {
                     t(((e) => ({ type: G, payload: e }))(e));
                 },
@@ -1015,8 +1015,8 @@
                 },
                 He =
                     (e, t, o, n, a) =>
-                    (s, d, { api: i }) =>
-                        (0, c._O)(s, { request: i.withEndpoint(r.Z).createRating, params: { note_id: e, tweet_id: o, data: t, rating_source: n, source_platform: a } })({ actionTypes: m, context: "CREATE_RATING", meta: { note_id: e } }),
+                    (s, i, { api: d }) =>
+                        (0, c._O)(s, { request: d.withEndpoint(r.Z).createRating, params: { note_id: e, tweet_id: o, data: t, rating_source: n, source_platform: a } })({ actionTypes: m, context: "CREATE_RATING", meta: { note_id: e } }),
                 ke =
                     (e) =>
                     (t, o, { api: n }) =>
@@ -1064,32 +1064,32 @@
                 a = o(499627),
                 r = o(917799),
                 s = o(312771);
-            const d = "communityBoost",
-                i = Object.freeze({ REQUEST: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_REQUEST", SUCCESS: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_SUCCESS", FAILURE: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_FAILURE" }),
+            const i = "communityBoost",
+                d = Object.freeze({ REQUEST: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_REQUEST", SUCCESS: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_SUCCESS", FAILURE: "rweb/communityBoost/FETCH_COMMUNITYBOOST_PIVOT_FAILURE" }),
                 l = Object.freeze({ REQUEST: "rweb/communityBoost/CREATE_COMMUNITYBOOST_PIVOT_RATING_REQUEST", SUCCESS: "rweb/communityBoost/CREATE_COMMUNITYBOOST_PIVOT_RATING_SUCCESS", FAILURE: "rweb/communityBoost/CREATE_COMMUNITYBOOST_PIVOT_RATING_FAILURE" }),
                 c = Object.freeze({ REQUEST: "rweb/communityBoost/DELETE_COMMUNITYBOOST_PIVOT_RATING_REQUEST", SUCCESS: "rweb/communityBoost/DELETE_COMMUNITYBOOST_PIVOT_RATING_SUCCESS", FAILURE: "rweb/communityBoost/DELETE_COMMUNITYBOOST_PIVOT_RATING_FAILURE" }),
                 u = { pivots: {} };
             a.Z.register({
-                [d]: function (e = u, t) {
+                [i]: function (e = u, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case i.REQUEST: {
+                        case d.REQUEST: {
                             const o = t.meta?.tweet_id;
                             return o ? { ...e, pivots: { ...e.pivots, [o]: { fetchStatus: s.ZP.LOADING } } } : e;
                         }
-                        case i.FAILURE: {
+                        case d.FAILURE: {
                             const o = t.meta?.tweet_id;
                             return o ? { ...e, pivots: { ...e.pivots, [o]: { fetchStatus: s.ZP.FAILED } } } : e;
                         }
-                        case i.SUCCESS: {
+                        case d.SUCCESS: {
                             const o = t.meta?.tweet_id,
                                 n = t.payload?.community_boost_pivot_by_rest_id,
                                 a = n?.like_tags,
                                 r = n?.has_pivot,
-                                d = n?.dislike_tags,
-                                i = n?.boost_id,
+                                i = n?.dislike_tags,
+                                d = n?.boost_id,
                                 l = n?.rating;
-                            return o ? { ...e, pivots: { ...e.pivots, [o]: { like_tags: a, dislike_tags: d, has_pivot: r, boost_id: i, rating: l, fetchStatus: s.ZP.LOADED } } } : e;
+                            return o ? { ...e, pivots: { ...e.pivots, [o]: { like_tags: a, dislike_tags: i, has_pivot: r, boost_id: d, rating: l, fetchStatus: s.ZP.LOADED } } } : e;
                         }
                         case l.SUCCESS: {
                             const o = t.meta?.post_id,
@@ -1107,8 +1107,8 @@
             });
             const E =
                     (e, t, o) =>
-                    (a, s, { api: d }) =>
-                        (0, r._O)(a, { request: d.withEndpoint(n.Z).createBoostRating, params: { postId: e, boostId: t, data: o } })({ actionTypes: l, context: "CREATE_COMMUNITYBOOST_PIVOT_RATING", meta: { post_id: e } }),
+                    (a, s, { api: i }) =>
+                        (0, r._O)(a, { request: i.withEndpoint(n.Z).createBoostRating, params: { postId: e, boostId: t, data: o } })({ actionTypes: l, context: "CREATE_COMMUNITYBOOST_PIVOT_RATING", meta: { post_id: e } }),
                 _ =
                     (e, t) =>
                     (o, a, { api: s }) =>
@@ -1116,8 +1116,8 @@
                 b =
                     (e) =>
                     (t, o, { api: a }) =>
-                        (0, r._O)(t, { request: a.withEndpoint(n.Z).fetchCommunityBoostPivot, params: e })({ actionTypes: i, context: "FETCH_COMMUNITYBOOST_PIVOT", meta: { tweet_id: e } }),
-                h = (e, t) => e[d].pivots[t];
+                        (0, r._O)(t, { request: a.withEndpoint(n.Z).fetchCommunityBoostPivot, params: e })({ actionTypes: d, context: "FETCH_COMMUNITYBOOST_PIVOT", meta: { tweet_id: e } }),
+                h = (e, t) => e[i].pivots[t];
         },
         371184: (e, t, o) => {
             o.d(t, { Z: () => s });
@@ -1127,14 +1127,14 @@
             const s = (e) => (0, r.Z)({ timelineId: "birdwatch-global-timeline", network: { getEndpoint: (e) => e.withEndpoint(n.Z).fetchGlobalTimeline, getEndpointParams: () => ({ tabId: e }) }, context: "FETCH_BIRDWATCH_GLOBAL_TIMELINE", perfKey: "birdwatch-global-timeline", formatResponse: a.Z });
         },
         383675: (e, t, o) => {
-            o.d(t, { R: () => i, Z: () => d });
+            o.d(t, { R: () => d, Z: () => i });
             var n = o(503768),
                 a = o(644829),
                 r = o(750085),
                 s = o(218951);
-            const d = ({ endpointParams: e, endpointUrl: t, isUserRefreshable: o, timelineId: n }) => (0, s.Z)({ timelineId: n, isUserRefreshable: o, network: { getEndpoint: (e) => e.withEndpoint(a.Z).fetchGeneric, getEndpointParams: ({ count: o, cursor: n }) => ({ ...e, cursor: "string" == typeof n ? n : void 0, count: o, endpointUrl: t }) }, context: "FETCH_TIMELINE", perfKey: "generic" }),
-                i = (e, t) => (0, s.Z)({ timelineId: `generic-graphql-timeline-${e}`, isUserRefreshable: t, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchGenericTimelineById, getEndpointParams: ({ count: t, cursor: o }) => ({ cursor: "string" == typeof o ? o : void 0, count: t, timelineId: e }) }, formatResponse: r.Z, context: "FETCH_GENERIC_TIMELINE_GQL", perfKey: "genericGQL" });
+            const i = ({ endpointParams: e, endpointUrl: t, isUserRefreshable: o, timelineId: n }) => (0, s.Z)({ timelineId: n, isUserRefreshable: o, network: { getEndpoint: (e) => e.withEndpoint(a.Z).fetchGeneric, getEndpointParams: ({ count: o, cursor: n }) => ({ ...e, cursor: "string" == typeof n ? n : void 0, count: o, endpointUrl: t }) }, context: "FETCH_TIMELINE", perfKey: "generic" }),
+                d = (e, t) => (0, s.Z)({ timelineId: `generic-graphql-timeline-${e}`, isUserRefreshable: t, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchGenericTimelineById, getEndpointParams: ({ count: t, cursor: o }) => ({ cursor: "string" == typeof o ? o : void 0, count: t, timelineId: e }) }, formatResponse: r.Z, context: "FETCH_GENERIC_TIMELINE_GQL", perfKey: "genericGQL" });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.5826bfba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.60fb851a.js.map

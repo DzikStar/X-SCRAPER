@@ -197,7 +197,7 @@
                 v = { ios: { label: r().h201c4c2, color: "blue500" }, android: { label: r().i8385a2c, color: "plum500" }, web: { label: r().g33f3050, color: "orange500" }, other: { label: r().c365dcc6, color: "purple500" } };
         },
         44988: (e, t, a) => {
-            a.d(t, { iX: () => P, yw: () => E, o: () => _, a: () => C, VS: () => Z, Tb: () => D, t_: () => B, MA: () => S, Yg: () => x, FZ: () => k, Hk: () => R });
+            a.d(t, { iX: () => P, yw: () => E, o: () => Z, a: () => C, VS: () => _, Tb: () => D, t_: () => B, MA: () => S, Yg: () => x, FZ: () => k, Hk: () => R });
             a(136728), a(130724);
             var l,
                 r,
@@ -336,12 +336,12 @@
                     const t = new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), e.getUTCDate()));
                     return t.setUTCDate(t.getUTCDate() + 1), t.setUTCMilliseconds(t.getUTCMilliseconds() - 1), t;
                 },
-                Z = (e, t) => {
+                _ = (e, t) => {
                     const a = Math.abs(t.getTime() - e.getTime());
                     return Math.ceil(a / 864e5);
                 },
-                _ = (e, t) => {
-                    const a = Z(new Date(t.getTime() + 1), e),
+                Z = (e, t) => {
+                    const a = _(new Date(t.getTime() + 1), e),
                         l = new Date(e);
                     return l.setDate(e.getDate() - a), l;
                 },
@@ -531,19 +531,6 @@
                     return l.createElement(o.Z, { "aria-label": e, disabled: a, interactive: y, interactiveStyles: y ? v : void 0, link: u, onClick: m, style: [s.root, t] }, w);
                 };
         },
-        123588: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => s });
-            var l = a(202784),
-                r = a(890601),
-                n = a(783427),
-                o = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M12 3.59l7.457 7.45-1.414 1.42L13 7.41V21h-2V7.41l-5.043 5.05-1.414-1.42L12 3.59z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
         130724: (e, t, a) => {
             var l = a(23103),
                 r = a(492991),
@@ -593,4 +580,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified.155ebbaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.UserProfile~ondemand.Verified.bfc5b8aa.js.map

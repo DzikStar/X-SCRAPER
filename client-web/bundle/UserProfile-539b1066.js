@@ -344,8 +344,9 @@
             const Dt = i.default.create((e) => ({ description: { display: "block", marginBottom: e.spaces.space12 } })),
                 Ft = function (e) {
                     if (e.user) {
-                        const { user: t } = e;
-                        return n.createElement(Ut, { description: t?.description || "", entities: t.entities, grokTranslatedBio: t.grok_translated_bio, isProfileTranslatable: Boolean(t.is_profile_translatable), userId: t.id_str, withheldDescription: t.withheld_description, withheldEntities: t.withheld_entities });
+                        const { user: t } = e,
+                            r = !0 === t.grok_translated_bio?.translation_available ? t.grok_translated_bio : void 0;
+                        return n.createElement(Ut, { description: t?.description || "", entities: t.entities, grokTranslatedBio: r, isProfileTranslatable: Boolean(t.is_profile_translatable), userId: t.id_str, withheldDescription: t.withheld_description, withheldEntities: t.withheld_entities });
                     }
                     return e.userRef ? n.createElement(Tt, { user: e.userRef }) : null;
                 };
@@ -997,4 +998,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-539b1066.280246fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-539b1066.37df8f4a.js.map

@@ -193,6 +193,7 @@
                         };
                     return (0, n.jsxs)(v.cZ, {
                         withCloseButton: !1,
+                        className: "pb-0",
                         children: [
                             (0, n.jsx)(v.fK, {
                                 children: (0, n.jsxs)("div", {
@@ -390,4 +391,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.1f8de02a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-cbcead99.6d24662a.js.map
