@@ -20,10 +20,18 @@
                 var n, t, r, j, u, d, s, v;
             }
             o("c39b0e24", "X"),
+                o("bcd6bb0e", "Član"),
+                o("hd8c22d2", "Mod."),
+                o("c3153100", "Admin"),
                 o("jb38600c", "Nema"),
                 o("f07eac34", "Račun za parodije"),
                 o("a41b5c2e", "Račun za obožavatelje"),
                 o("i428ea62", "Račun za komentare"),
+                o("jd859c9c", "Uklonjeni ste iz tog Prostora."),
+                o("cfbea177", function (a) {
+                    return "Prostor korisnika/ce " + a.name;
+                }),
+                o("ab4fc8bc", "Prostor"),
                 o("ac0d27be", "Nažalost, taj je račun privremeno blokiran."),
                 o("bcee7444", "Ažuriranje računa nije uspjelo."),
                 o("e0cbf77a", "Dodavanje telefona"),
@@ -64,9 +72,6 @@
                 o("h1cbdd30", "Osvježite stranicu pa pokušajte ponovno."),
                 o("a5077d3e", "Osvježi"),
                 o("b2648ba4", "Izvršavanje te radnje možda nije dopušteno s vašeg računa. Osvježite stranicu i pokušajte ponovno."),
-                o("bcd6bb0e", "Član"),
-                o("hd8c22d2", "Mod."),
-                o("c3153100", "Admin"),
                 o("fa9adac1", function (a) {
                     return 'Pretraži "' + a.query + '"';
                 }),
@@ -79,19 +84,12 @@
                 o("c64e46f8", "Taj je član uklonjen iz Zajednice, stoga su njegove/njezine objave skrivene."),
                 o("b3f1cb42", "Moderator je sakrio tu objavu jer krši pravilo Zajednice."),
                 o("cbd2dc9c", "Tu ste objavu prijavili."),
-                o("cfbea177", function (a) {
-                    return "Prostor korisnika/ce " + a.name;
-                }),
-                o("ab4fc8bc", "Prostor"),
-                o("jd859c9c", "Uklonjeni ste iz tog Prostora."),
                 o("c60ed9b0", "Nemate ovlaštenje za pridruživanje tom Prostoru."),
                 o("d8227e16", "Nemate ovlaštenje za izradu tog Prostora"),
                 o("f027fed8", "Slika-u-slici"),
                 o("hd50e064", "Ne sada"),
                 o("i76d640e", "Trebamo vašu dozvolu"),
                 o("fdaa0be8", "Da biste govorili u ovom prostoru, morate platformi X dodijeliti dozvolu za pristup mikrofonu. Provjerite postavke preglednika. "),
-                o("gea6cc1a", "Jeste li sigurni?"),
-                o("hb568af4", "Onemogućite korisnika/cu"),
                 o("f7c8617a", "Što su audioisječci?"),
                 o("ecc7d2ec", "Audioisječci su snimljeni trenuci koje mogu izrađivati i dijeliti svi sudionici Prostora. Svi isječci istječu nakon 30 dana."),
                 o("d575ee02", "Tko može stvoriti audioisječak?"),
@@ -109,16 +107,6 @@
                 o("jf03b37c", "Snimku poslušajte bilo kada. Možete je i podijeliti u objavi."),
                 o("fd05976b", "Saznajte više"),
                 o("b4f91a8a", "Snimanje je uključeno"),
-                o("gb418012", "Dobro došli u Prostore"),
-                o("fec3c1e0", "Mjesto gdje se održavaju audiorazgovori uživo"),
-                o("j32eb4f8", "Dodajte najviše 10 govornika"),
-                o("j4f133a6", "Bilo koga na platformi X možete pozvati kao govornika."),
-                o("ed434ac6", "Prostori su javni – svi se mogu uključiti"),
-                o("e0025688", "Vaš Prostor, vaša pravila"),
-                o("c1bc6f86", "Kao voditelj kontrolirate kome je dopušteno govoriti. Osim toga, možete i ukloniti osobe koje ne želite u svom Prostoru."),
-                o("b0bc8330", "Osobe u Prostoru možete blokirati i prijaviti."),
-                o("cb17a0f3", "Saznajte više"),
-                o("dcd77941", "Saznajte više"),
                 o("cc724cb0", "Stvaranje audioisječka"),
                 o("cfd2f35e", "Odustani"),
                 o("c1df579e", "Sljedeće"),
@@ -132,6 +120,16 @@
                 o("a9ba3e28", "Osobni podaci"),
                 o("d5519f4a", "Zlonamjerno ponašanje"),
                 o("eb55363c", "Taj je Prostor prijavljen"),
+                o("gb418012", "Dobro došli u Prostore"),
+                o("fec3c1e0", "Mjesto gdje se održavaju audiorazgovori uživo"),
+                o("j32eb4f8", "Dodajte najviše 10 govornika"),
+                o("j4f133a6", "Bilo koga na platformi X možete pozvati kao govornika."),
+                o("ed434ac6", "Prostori su javni – svi se mogu uključiti"),
+                o("e0025688", "Vaš Prostor, vaša pravila"),
+                o("c1bc6f86", "Kao voditelj kontrolirate kome je dopušteno govoriti. Osim toga, možete i ukloniti osobe koje ne želite u svom Prostoru."),
+                o("b0bc8330", "Osobe u Prostoru možete blokirati i prijaviti."),
+                o("cb17a0f3", "Saznajte više"),
+                o("dcd77941", "Saznajte više"),
                 o("i65de934", "Slušate anonimno"),
                 o("b1037050", "Upravljajte Prostorom"),
                 o("ic107434", "Uključi kameru"),
@@ -910,10 +908,10 @@
                 o("bf9e181b", "Saznajte više"),
                 o("e8e39f95", "Saznajte više"),
                 o("e126dd3f", "Saznajte više"),
-                o("i821844f", "Saznajte više");
-            o("b0abbb17", "Saznajte više"),
-                o("e7e0d88b", "Saznajte više"),
-                o("i560665f", "Saznajte više"),
+                o("i821844f", "Saznajte više"),
+                o("b0abbb17", "Saznajte više"),
+                o("e7e0d88b", "Saznajte više");
+            o("i560665f", "Saznajte više"),
                 o("f6e774d9", "Saznajte više"),
                 o("h486f755", "Saznajte više"),
                 o("bab41dab", "Saznajte više"),
@@ -1129,6 +1127,7 @@
                 o("dbb51952", "Želite li zaštititi svoje objave?"),
                 o("de735de6", "Moći će ih vidjeti samo osobe koje vas prate na platformi X."),
                 o("c5d4192a", "Zaštiti"),
+                o("gea6cc1a", "Jeste li sigurni?"),
                 o("d9ddba70", "Zajednice su javne, stoga ćete zaštićenim računom sakriti prethodne objave. Dok vam račun opet ne bude javan, nećete moći ni objavljivati u toj Zajednici."),
                 o("f527b322", "Zaštiti moj račun"),
                 o("d165c992", "Svi vas mogu označiti"),
@@ -1324,10 +1323,11 @@
                 o("a02d1657", function (a) {
                     return "Izvršavanje koda" + a.ttc_tool_usage_card;
                 }),
-                o("aa9d42c0", "Searching the web"),
-                o("dce1817a", "Searching on 𝕏"),
-                o("f7151564", "Searching users on 𝕏"),
-                o("c43ef93e", "Browsing web page"),
+                o("aa9d42c0", "Traženje na webu"),
+                o("c731d702", "Searching on X"),
+                o("d0e02476", "Searching users on X"),
+                o("c43ef93e", "Pregledavanje web-stranice"),
+                o("dab166ec", "Searching user posts on X"),
                 o("jb097f6e", "Izvršavanje koda"),
                 o("ead81122", "Nešto nije u redu. Osvježite za ponovno povezivanje ili pokušajte ponovno."),
                 o("f808a13a", "Prekoračeno je ograničenje brzine. Pričekajte nekoliko minuta pa pokušajte ponovno."),
@@ -1375,11 +1375,11 @@
                 o("e0bffbf8", "O automatskom prijevodu"),
                 o("e839db3a", "Odbaci"),
                 o("e7a86c77", function (a) {
-                    return "Automatically translate " + a.language;
+                    return "Automatski prijevod na " + a.language;
                 }),
-                o("c60b9e5c", "Changes will take effect for newly loaded content."),
-                o("f9317b98", "language settings"),
-                o("hba0547a", "Unable to update settings. Please try again later."),
+                o("c60b9e5c", "Promjene će se primijeniti za novi učitani sadržaj."),
+                o("f9317b98", "postavkama jezika"),
+                o("hba0547a", "Ažuriranje postavki nije uspjelo. Pokušajte ponovno kasnije."),
                 o("d4c339b9", function (a) {
                     return "Objava korisnika/ce " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -1821,6 +1821,7 @@
                 o("g00b4c55", function (a) {
                     return "Podijeli @" + a.screenName + " putem...";
                 }),
+                o("hb568af4", "Onemogućite korisnika/cu"),
                 o("bb1cbeb6", "Omogući prikaz tweetova"),
                 o("h2f62206", "Onemogućivanje korisnika"),
                 o("h59f52ee", "Uspješno onemogućen prikaz tweetova."),
@@ -1921,11 +1922,11 @@
                 o("ef1649e2", "X – tipkovni prečaci"),
                 o("aefd89c8", "Navigacija"),
                 o("cafdefb2", "Akcije"),
-                o("dda42cf2", "Stupci i ploče"),
-                o("e8a12604", "Navedite naslov (neobavezno)");
-            o("eabf2209", function (a) {
-                return "GIF omogućuje " + a.providerName;
-            }),
+                o("dda42cf2", "Stupci i ploče");
+            o("e8a12604", "Navedite naslov (neobavezno)"),
+                o("eabf2209", function (a) {
+                    return "GIF omogućuje " + a.providerName;
+                }),
                 o("a613e720", "Kopiraj vezu na GIF"),
                 o("aeca1239", function (a) {
                     return "Podebljano" + a.ttc_rich_text_composer;
@@ -2981,9 +2982,9 @@
                 o("e06b864c", "Izgleda da vam se sviđa taj razgovor"),
                 o("a078ff70", "Želite vidjeti još sadržaja korisnika s kojima ste razgovarali u toj niti? Otkrijte sadržaj na novim računima."),
                 o("cb80300e", "Prijeđi na vremensku crtu naslovnice"),
-                o("ea5cd098", "Prijeđi na aktualne teme"),
-                o("c67e3fc2", "Vremenska crta na naslovnici");
-            o("d601fc20", "Najnovije"),
+                o("ea5cd098", "Prijeđi na aktualne teme");
+            o("c67e3fc2", "Vremenska crta na naslovnici"),
+                o("d601fc20", "Najnovije"),
                 o("j43f99be", "Važnost"),
                 o("ad6e11ac", "Sortiraj odgovore"),
                 o("b2311b70", "Ovaj vam sadržaj nije dostupan"),
@@ -3901,13 +3902,13 @@
                 }),
                 o("f5c7aaa7", function (a) {
                     return "voditelj" + n(a.count, "a", "", "a");
-                }),
-                o("fc56c8b1", function (a) {
-                    return "suvoditelj" + n(a.count, "a", "", "a");
                 });
-            o("iba0f45d", function (a) {
-                return "govornik" + n(a.count, "a", "", "a");
+            o("fc56c8b1", function (a) {
+                return "suvoditelj" + n(a.count, "a", "", "a");
             }),
+                o("iba0f45d", function (a) {
+                    return "govornik" + n(a.count, "a", "", "a");
+                }),
                 o("dc066955", function (a) {
                     return "slušatelj" + n(a.count, "a", "", "a");
                 }),
@@ -4937,9 +4938,9 @@
                 o("ff95a9cc", "ID videozapisa"),
                 o("a97e358e", "Veza na videozapis"),
                 o("e10e8b46", "Prikazuju se samo videozapisi od proteklih 100 dana."),
-                o("ba37f6da", "Pregled videozapisa"),
-                o("f19846b2", "Sličica videozapisa");
-            o("ccd6f4a8", "Naslov videozapisa"),
+                o("ba37f6da", "Pregled videozapisa");
+            o("f19846b2", "Sličica videozapisa"),
+                o("ccd6f4a8", "Naslov videozapisa"),
                 o("c8410542", "Broj pregleda vašeg videozapisa"),
                 o("a532072a", "Gledatelji"),
                 o("d9508ab0", "prikaza"),
@@ -5557,6 +5558,7 @@
                 o("bd7eb888", "Pogledajte sve bilješke o ovoj objavi"),
                 o("i97b83f6", "Pri slanju žalbe došlo je do pogreške. Pokušajte ponovno."),
                 o("a038ab9a", "Prevedi zabilješku"),
+                o("icdb6d74", "Predložio eksperimentalni AI suradnik kao odgovor na zahtjev za zabilješku. Kao i svi suradnici, AI može pogriješiti — provjerite točnost."),
                 o("i606fc4c", "Žalbe u Bilješkama zajednice"),
                 o("b664c554", "Zatraži da napomenu pregleda veći broj suradnika"),
                 o("ab66e1f2", "Način funkcioniranja:"),
@@ -5572,6 +5574,7 @@
                 o("ge25848a", "Trenutačni status"),
                 o("d6db34cc", "Potrebno je još ocjena"),
                 o("ce8b505e", "Nije korisno"),
+                o("j42c88b6", "Eksperimentalni AI alat za pisanje bilješki"),
                 o("e5be8156", "Status napomene izračunat je s pomoću algoritma otvorenog koda"),
                 o("fca23c42", "Dovoljno suradnika različitih perspektiva usuglasilo se da je ta bilješka korisna, pa se prikazuje kao kontekst za objavu."),
                 o("hef420c2", "Napomenu još nije ocijenilo dovoljno suradnika različitih perspektiva."),
@@ -5887,11 +5890,11 @@
                 o("ab1b3d38", "Podaci o zahtjevu za zabilješku još nisu dostupni"),
                 o("c43fb933", "X-ov ugovor i pravilnik za razvojne programere"),
                 o("af781666", "Što ljudi misle?"),
-                o("a1f414ee", "Recite što mislite"),
-                o("ed88e742", "Kopiraj poveznicu na temu"),
+                o("a1f414ee", "Recite što mislite");
+            o("ed88e742", "Kopiraj poveznicu na temu"),
                 o("h92fe1be", "Nažalost, Zabilješke zajednice trenutno vam nisu dostupne."),
-                o("f0dc1434", "Bilješke zajednice zasad su dostupne samo u SAD-u");
-            o("f8fc0b48", "Stvaranje mape"),
+                o("f0dc1434", "Bilješke zajednice zasad su dostupne samo u SAD-u"),
+                o("f8fc0b48", "Stvaranje mape"),
                 o("c14bcdde", "Pretraživanje knjižnih oznaka"),
                 o("e9c65c4a", "Pretraživanje knjižnih oznaka"),
                 o("b92a21d9", function (a) {
@@ -6893,11 +6896,11 @@
                 o("j3d242ce", "Raspon nije valjan"),
                 o("f4d07bd2", "Uključite neobavezne podatke kako biste kandidatima olakšali otkrivanje vaših radnih mjesta putem pretraživanja."),
                 o("b8cbb51a", "Sažetak posla"),
-                o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti."),
-                o("b075c68a", "Uredi posao"),
+                o("bda6881e", "Taj je posao uvezen iz vašeg sustava za praćenje kandidata (ATS). Imajte na umu da se samo određena polja mogu izmijeniti.");
+            o("b075c68a", "Uredi posao"),
                 o("d4b6a6e0", "Pojedinosti o profilu"),
-                o("j2dd3686", "Istakni izdvojene poslove iznad mojih objava.");
-            o("af1cfd46", "Integracija ATS-a"),
+                o("j2dd3686", "Istakni izdvojene poslove iznad mojih objava."),
+                o("af1cfd46", "Integracija ATS-a"),
                 o("d6fa2944", "Brisanjem integracije neće se izbrisati uvezeni poslovi."),
                 o("h99f11fa", "Izbriši integraciju"),
                 o("eef1ae76", "Trenutačno povezano"),
@@ -7407,10 +7410,10 @@
                 o("d94f12b6", "Pokušajte pretražiti obavijesti, pravila o privatnosti itd."),
                 o("ba8f6f82", "Pretražite postavke"),
                 o("ibf92e4a", "Uspješno plaćanje"),
-                o("bdf0fb06", "Your subscription has been activated."),
+                o("bdf0fb06", "Vaša pretplata je aktivirana."),
                 o("ddfd6718", "Plaćanje nije uspjelo"),
                 o("d42fa852", "Došlo je do problema s obradom plaćanja. Pokušajte ponovno."),
-                o("g055a9ce", "Open 𝕏 App"),
+                o("g055a9ce", "Otvorite aplikaciju 𝕏"),
                 o("g931a6e5", function (a) {
                     return "Pratite temu " + a.topic;
                 }),
@@ -7875,10 +7878,7 @@
                 o("d7b8387e", "Ako ste već otkazali pretplatu, više ništa ne morate učiniti. Ona će automatski isteći po završetku ciklusa naplate."),
                 o("f4166d9a", "Želite otkazati pretplatu?"),
                 o("b74ff5fc", "Ako otkažete pretplatu, ona će automatski isteći po završetku ciklusa naplate."),
-                o("ee9efbc8", "Nastavi na otkazivanje"),
-                o("c5d9c77a", "Izgleda da je došlo do manjih poteškoća u radu. Ne brinite, nije vaša greška. Zatvorite taj prozor i pokušajte ponovno."),
-                o("jda53c24", "Pretplatu možete otkazati putem servisa Apple App Store."),
-                o("g0a7a53e", "Pretplatu možete otkazati putem servisa Google Play Store.");
+                o("ee9efbc8", "Nastavi na otkazivanje");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7917,9 +7917,12 @@
                     r(a, e)
                 );
             }
-            o("i5f14be7", function (a) {
-                return "Dobro došli natrag, " + a.displayName;
-            }),
+            o("c5d9c77a", "Izgleda da je došlo do manjih poteškoća u radu. Ne brinite, nije vaša greška. Zatvorite taj prozor i pokušajte ponovno."),
+                o("jda53c24", "Pretplatu možete otkazati putem servisa Apple App Store."),
+                o("g0a7a53e", "Pretplatu možete otkazati putem servisa Google Play Store."),
+                o("i5f14be7", function (a) {
+                    return "Dobro došli natrag, " + a.displayName;
+                }),
                 o("a76d58ba", "Analitika oglasa"),
                 o("eccd0e1a", "Analitika organizacije"),
                 o("deea1708", "Želite li pregledati analitiku za sve vaše račune za X?"),
@@ -8915,11 +8918,11 @@
                 }),
                 o("b0b22805", function (a) {
                     return "Posjetite " + a.advertiserName;
-                }),
-                o("c67e71aa", "Gledajte odmah"),
+                });
+            o("c67e71aa", "Gledajte odmah"),
                 o("a6ada13e", "Odmah kupujte"),
-                o("j0f12222", "Pogledajte više");
-            o("f569f7c8", "Idi na web-mjesto"),
+                o("j0f12222", "Pogledajte više"),
+                o("f569f7c8", "Idi na web-mjesto"),
                 o("j0c6772a", "Posjetite web-mjesto"),
                 o("f73003aa", "Videozapis će se reproducirati nakon oglasa"),
                 o("b3112b8a", "Preskoči"),
@@ -10169,7 +10172,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok će automatski prevoditi ovisno o vašoj upotrebi platforme X i ", ". U nastavku možete uključiti i postavke automatskog prijevoda."];
                             },
                         },
                         {
@@ -13389,4 +13392,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.be8ee65a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.52dca7da.js.map

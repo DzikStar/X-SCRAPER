@@ -375,7 +375,7 @@
                 c = (0, r.cn)((e) => e(o) || e(s));
         },
         838859: (e, t, n) => {
-            n.d(t, { AE: () => R, CN: () => D, Kn: () => F, az: () => Z, c: () => C });
+            n.d(t, { AE: () => R, CN: () => D, Kn: () => q, az: () => Z, c: () => C });
             n(136728);
             var r = n(202784),
                 s = n(565058),
@@ -405,7 +405,7 @@
                 k.useLayoutEffect(r.useCallback(() => (e && u.ZP.isChromeOS() ? t() : a.Z), [e, t]));
             }
             const I = (0, f.v)((e, t) => {
-                    const n = [t(E), t(M), t(j), t(P), t(L), t(T), t(O), t(Y), t(B), t(q), t(K), t(N)];
+                    const n = [t(E), t(M), t(j), t(P), t(L), t(T), t(O), t(Y), t(K), t(B), t(F), t(N)];
                     return () => {
                         n.forEach((e) => e());
                     };
@@ -507,21 +507,21 @@
                     const n = e(v.fx)?.deviceId;
                     return n && e(y).postMessage("mic", n), a.Z;
                 }),
-                B = (0, f.v)((e, t) => {
+                K = (0, f.v)((e, t) => {
                     if (!e(S.lY)) return a.Z;
                     const n = e(b.Dy);
                     return e(y).postMessage("micMuted", n), a.Z;
                 }),
-                q = (0, f.v)((e, t) => {
+                B = (0, f.v)((e, t) => {
                     if (!e(S.p_)) return a.Z;
                     return e(y).sub("reload", () => {
                         location.reload();
                     });
                 }),
-                F = (0, s.cn)(null, (e, t, n) => {
+                q = (0, s.cn)(null, (e, t, n) => {
                     e(S.lY) && e(y).postMessage("reload", { ttsToken: n });
                 }),
-                K = (0, f.v)((e, t) => {
+                F = (0, f.v)((e, t) => {
                     if (e(S.lY)) {
                         const t = e(w.lV);
                         return e(y).postMessage("volume", t), a.Z;
@@ -701,7 +701,7 @@
                 });
         },
         509599: (e, t, n) => {
-            n.d(t, { C: () => T, CP: () => J, F$: () => K, FG: () => $, Go: () => B, Ix: () => C, PO: () => A, RS: () => F, Xn: () => G, ZO: () => O, cS: () => N, d3: () => E, jQ: () => W, jm: () => H, lw: () => D, of: () => V, p5: () => U, qH: () => X, qx: () => R, sJ: () => Y, tq: () => k, zX: () => Z });
+            n.d(t, { C: () => T, CP: () => J, F$: () => F, FG: () => $, Go: () => K, Ix: () => C, KK: () => Q, PO: () => A, RS: () => q, Xn: () => G, ZO: () => O, cS: () => N, d3: () => E, jQ: () => W, jm: () => H, lw: () => D, of: () => V, p5: () => U, qH: () => X, qx: () => R, sJ: () => Y, tq: () => k, zX: () => Z });
             n(571372);
             var r = n(202784),
                 s = n(961111),
@@ -709,7 +709,7 @@
                 c = n(400752),
                 i = n(565058),
                 a = n(987809),
-                u = n(776342),
+                u = n(668260),
                 d = n(459679),
                 l = n(176340),
                 f = n(877293),
@@ -814,7 +814,7 @@
                             .then((e) => e.chatToken);
                     }),
                 ),
-                B = (0, a.xu)((e) =>
+                K = (0, a.xu)((e) =>
                     (0, _.O)(async (t) => {
                         const n = t(S.yj);
                         if (t(x.MG)) {
@@ -827,16 +827,16 @@
                         return n;
                     }),
                 ),
-                q = (0, a.xu)((e) => (0, w.K9)((t) => t(B(e)).then((n) => n.getCallStatus(e, t(m.fU))))),
-                F = (0, i.cn)((e) => {
+                B = (0, a.xu)((e) => (0, w.K9)((t) => t(K(e)).then((n) => n.getCallStatus(e, t(m.fU))))),
+                q = (0, i.cn)((e) => {
                     const t = e(m.rm);
-                    return t ? (e(q(t).resolved)?.guest_sessions ?? []) : [];
+                    return t ? (e(B(t).resolved)?.guest_sessions ?? []) : [];
                 }),
-                K = (0, i.cn)((e) => new Set(e(F).map(({ twitter_user_id: e }) => e))),
+                F = (0, i.cn)((e) => new Set(e(q).map(({ twitter_user_id: e }) => e))),
                 N = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
-                        e(F).forEach((e) => {
+                        e(q).forEach((e) => {
                             void 0 !== e.guest_participant_id && t.set(e.guest_participant_id, e);
                         }),
                         t
@@ -845,7 +845,7 @@
                 $ = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
-                        e(F).forEach((e) => {
+                        e(q).forEach((e) => {
                             void 0 !== e.guest_user_id && t.set(e.guest_user_id, e);
                         }),
                         t
@@ -854,7 +854,7 @@
                 z = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
-                        e(F).forEach((e) => {
+                        e(q).forEach((e) => {
                             t.set(e.session_uuid, e);
                         }),
                         t
@@ -862,12 +862,12 @@
                 }),
                 A = (0, a.xu)((e) => (0, i.cn)((t) => t(z).get(e)?.guest_participant_id)),
                 U = (0, i.cn)((e) => {
-                    const t = e(F).find((t) => t.guest_user_id === e(S.t9));
+                    const t = e(q).find((t) => t.guest_user_id === e(S.t9));
                     return t?.is_employee ?? !1;
                 }),
                 J = (0, a.xu)((e) =>
                     (0, w.K9)((t) =>
-                        t(q(e)).then(({ guest_sessions: e }) => {
+                        t(B(e)).then(({ guest_sessions: e }) => {
                             const n = (0, h._h)(t(v.qc).getState());
                             if (e) return (0, d.Z)(e, ({ session_uuid: e, twitter_user_id: t }) => (t === n ? e : void 0));
                         }),
@@ -880,7 +880,7 @@
                 }),
                 V = (e) => {
                     const t = (0, c.Dv)(m.lR),
-                        n = (0, c.b9)(q(e)),
+                        n = (0, c.b9)(B(e)),
                         s = !!(0, c.Dv)(k(e)),
                         o = (0, c.oR)();
                     r.useEffect(() => {
@@ -906,6 +906,12 @@
                     return () => {
                         clearInterval(n);
                     };
+                }),
+                Q = (0, i.cn)((e) => {
+                    const t = e(m.rm);
+                    if (!t) return;
+                    const n = e(k(t).resolved);
+                    return n ? n.host?.user_id : void 0;
                 });
         },
         622388: (e, t, n) => {
@@ -1102,4 +1108,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1.b8c1652a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-fd0b2cf1.cd91ea4a.js.map

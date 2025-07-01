@@ -16,10 +16,18 @@
                 var t, o;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Onyeòtù"),
+                t("hd8c22d2", "O.nhz"),
+                t("c3153100", "O.nch"),
                 t("jb38600c", "O nweghi"),
                 t("f07eac34", "Parody account"),
                 t("a41b5c2e", "Fan account"),
                 t("i428ea62", "Commentary account"),
+                t("jd859c9c", "Ewepụla gị na Ohere a."),
+                t("cfbea177", function (e) {
+                    return e.name + "’s Space";
+                }),
+                t("ab4fc8bc", "Ohere"),
                 t("ac0d27be", "Ndọ, a kwụsịtụrụ akaụntụ a."),
                 t("bcee7444", "Mmelite akaụntụ dara."),
                 t("e0cbf77a", "Tinye ekwentị"),
@@ -60,9 +68,6 @@
                 t("h1cbdd30", "Biko mee ka ihe ndị etinyere na peeji weebụ a pụta i were nwe ike inwaa ọzọ."),
                 t("a5077d3e", "Imegharị peeji weebụ"),
                 t("b2648ba4", "E nwere ike a ghara ikwe ka akaụntụ gị mee ihe a. Biko megharịa peeji weebu a ma nwaa ọzọ."),
-                t("bcd6bb0e", "Onyeòtù"),
-                t("hd8c22d2", "O.nhz"),
-                t("c3153100", "O.nch"),
                 t("fa9adac1", function (e) {
                     return 'Chọọ maka "' + e.query + '"';
                 }),
@@ -75,19 +80,12 @@
                 t("c64e46f8", "This member was removed from the Community, so their posts are hidden."),
                 t("b3f1cb42", "A moderator hid this post for breaking a Community rule."),
                 t("cbd2dc9c", "You reported this post."),
-                t("cfbea177", function (e) {
-                    return e.name + "’s Space";
-                }),
-                t("ab4fc8bc", "Ohere"),
-                t("jd859c9c", "Ewepụla gị na Ohere a."),
                 t("c60ed9b0", "You are not authorized to join this Space."),
                 t("d8227e16", "You are not authorized to create this Space"),
                 t("f027fed8", "Picture-in-Picture"),
                 t("hd50e064", "Ọbụghị ugbu a"),
                 t("i76d640e", "We need your permission"),
                 t("fdaa0be8", "To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                t("gea6cc1a", "O doro gị anya?"),
-                t("hb568af4", "Mee ogbi"),
                 t("f7c8617a", "Gịnị bụ obere odiyo gasị?"),
                 t("ecc7d2ec", "Obere odiyo gasị bụ ogenta ndị e jidere nke onye ọ bụla nọ n'ime Ohere gị nwere ike imepụta ma kèrịta. Ohere gasị niile na-ekubi ume mgbe ụbọchị 30 gachara."),
                 t("d575ee02", "Onye nwere ike imepụta otu obere odiyo?"),
@@ -105,16 +103,6 @@
                 t("jf03b37c", "Listen to the recording anytime. You can also share it with a post."),
                 t("fd05976b", "Learn more"),
                 t("b4f91a8a", "Ndekọ na-arụ ọrụ"),
-                t("gb418012", "Welcome to Spaces"),
-                t("fec3c1e0", "Ebe mkparịta ụka ọdịyo dị ndụ na-eme"),
-                t("j32eb4f8", "Add up to 10 speakers"),
-                t("j4f133a6", "You can invite anyone on X to speak."),
-                t("ed434ac6", "Spaces are public — anyone can join"),
-                t("e0025688", "Your Space, your rules"),
-                t("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                t("b0bc8330", "Ị nwekwara ike igbochi ma kọọ ndị mmadụ na Ohere."),
-                t("cb17a0f3", "Learn more"),
-                t("dcd77941", "Learn more"),
                 t("cc724cb0", "Mepụta Obere odiyo"),
                 t("cfd2f35e", "Kagbuo"),
                 t("c1df579e", "Osote"),
@@ -128,6 +116,16 @@
                 t("a9ba3e28", "Ozi Nkeonwe"),
                 t("d5519f4a", "Omume nke Nkọ́tọ̀"),
                 t("eb55363c", "A kọpụtala Ohere a"),
+                t("gb418012", "Welcome to Spaces"),
+                t("fec3c1e0", "Ebe mkparịta ụka ọdịyo dị ndụ na-eme"),
+                t("j32eb4f8", "Add up to 10 speakers"),
+                t("j4f133a6", "You can invite anyone on X to speak."),
+                t("ed434ac6", "Spaces are public — anyone can join"),
+                t("e0025688", "Your Space, your rules"),
+                t("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                t("b0bc8330", "Ị nwekwara ike igbochi ma kọọ ndị mmadụ na Ohere."),
+                t("cb17a0f3", "Learn more"),
+                t("dcd77941", "Learn more"),
                 t("i65de934", "You are listening anonymously"),
                 t("b1037050", "Manage Space"),
                 t("ic107434", "Turn on camera"),
@@ -906,10 +904,10 @@
                 t("bf9e181b", "Mụtakwuo"),
                 t("e8e39f95", "Mụtakwuo"),
                 t("e126dd3f", "Mụtakwuo"),
-                t("i821844f", "Mụtakwuo");
-            t("b0abbb17", "Mụtakwuo"),
-                t("e7e0d88b", "Mụtakwuo"),
-                t("i560665f", "Mụtakwuo"),
+                t("i821844f", "Mụtakwuo"),
+                t("b0abbb17", "Mụtakwuo"),
+                t("e7e0d88b", "Mụtakwuo");
+            t("i560665f", "Mụtakwuo"),
                 t("f6e774d9", "Mụtakwuo"),
                 t("h486f755", "Mụtakwuo"),
                 t("bab41dab", "Mụtakwuo"),
@@ -1125,6 +1123,7 @@
                 t("dbb51952", "Protect your posts?"),
                 t("de735de6", "This will make them visible only to your X followers."),
                 t("c5d4192a", "Chedo"),
+                t("gea6cc1a", "O doro gị anya?"),
                 t("d9ddba70", "Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 t("f527b322", "Chedo akaụntụ m"),
                 t("d165c992", "Onye ọ bụla nwere ike itinye aha nrịbama gị"),
@@ -1321,9 +1320,10 @@
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
                 t("c43ef93e", "Browsing web page"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Executing code"),
                 t("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 t("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1817,6 +1817,7 @@
                 t("g00b4c55", function (e) {
                     return "Share @" + e.screenName + " via...";
                 }),
+                t("hb568af4", "Mee ogbi"),
                 t("bb1cbeb6", "Wepụ ogbi"),
                 t("h2f62206", "Na-eme ojìarụ ogbi"),
                 t("h59f52ee", "Emechiri ogbi nke ọma."),
@@ -1917,11 +1918,11 @@
                 t("ef1649e2", "X - Keyboard shortcuts"),
                 t("aefd89c8", "Nsoroụzọ"),
                 t("cafdefb2", "Ihe Omume"),
-                t("dda42cf2", "Columns & Decks"),
-                t("e8a12604", "Weta ndepụta isiokwu (ọ bụghị iwu)");
-            t("eabf2209", function (e) {
-                return "GIF sitere n'aka " + e.providerName;
-            }),
+                t("dda42cf2", "Columns & Decks");
+            t("e8a12604", "Weta ndepụta isiokwu (ọ bụghị iwu)"),
+                t("eabf2209", function (e) {
+                    return "GIF sitere n'aka " + e.providerName;
+                }),
                 t("a613e720", "Ṅomie njikọ GIF"),
                 t("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -2977,9 +2978,9 @@
                 t("e06b864c", "Ọ dị ka mkparịtauka a na-enye gị obi añụrị"),
                 t("a078ff70", "Ị chọrọ ịhụkwu ndịna ọzọ nke si na ndị gị na ha kparịkọtara ụka na treèd a? Bido chọgharịwa ndịna nke si na akaụntụ ọhụru."),
                 t("cb80300e", "Mafee gaa n'ahịrịogè bé"),
-                t("ea5cd098", "Mafee gaa na nke na-ewu ewu"),
-                t("c67e3fc2", "Ahịrịoge Ụlọ");
-            t("d601fc20", "Nke ugbu a"),
+                t("ea5cd098", "Mafee gaa na nke na-ewu ewu");
+            t("c67e3fc2", "Ahịrịoge Ụlọ"),
+                t("d601fc20", "Nke ugbu a"),
                 t("j43f99be", "Relevancy"),
                 t("ad6e11ac", "Sort replies by"),
                 t("b2311b70", "Nke a adịghị maka gị"),
@@ -3897,13 +3898,13 @@
                 }),
                 t("f5c7aaa7", function (e) {
                     return "host" + i(e.count, "", "s");
-                }),
-                t("fc56c8b1", function (e) {
-                    return "co-host" + i(e.count, "", "s");
                 });
-            t("iba0f45d", function (e) {
-                return "speaker" + i(e.count, "", "s");
+            t("fc56c8b1", function (e) {
+                return "co-host" + i(e.count, "", "s");
             }),
+                t("iba0f45d", function (e) {
+                    return "speaker" + i(e.count, "", "s");
+                }),
                 t("dc066955", function (e) {
                     return "listener" + i(e.count, "", "s");
                 }),
@@ -4933,9 +4934,9 @@
                 t("ff95a9cc", "Video ID"),
                 t("a97e358e", "Video Link"),
                 t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview"),
-                t("f19846b2", "Video thumbnail");
-            t("ccd6f4a8", "Video title"),
+                t("ba37f6da", "Video overview");
+            t("f19846b2", "Video thumbnail"),
+                t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
@@ -5553,6 +5554,7 @@
                 t("bd7eb888", "See all notes on this post"),
                 t("i97b83f6", "Enwere mperi ịtinye akwụkwọ mkpesa gị, biko nwaa ọzọ."),
                 t("a038ab9a", "Translate note"),
+                t("icdb6d74", "Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 t("i606fc4c", "Banyere ntinye akwụkwọ mkpesa nke Ndetu Ọgbakọ"),
                 t("b664c554", "Rịọ nyocha ọzọ nke site n'aka onye ọtụnyeīhe"),
                 t("ab66e1f2", "Nke a bụ ka o si arụ ọrụ:"),
@@ -5568,6 +5570,7 @@
                 t("ge25848a", "Ọnọdụ dị Ugbu a"),
                 t("d6db34cc", "Chọrọ ogo ndị ọzọ"),
                 t("ce8b505e", "Ọ naghị enye aka"),
+                t("j42c88b6", "Experimental AI Note Writer"),
                 t("e5be8156", "Note status computed by open-source algorithm"),
                 t("fca23c42", "Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 t("hef420c2", "Ndị ntinye aka zuru oke site n'echiche dị iche iche enwetabeghị akara ndetu a."),
@@ -5883,11 +5886,11 @@
                 t("ab1b3d38", "Note request data isn’t available yet"),
                 t("c43fb933", "X Developer Agreement and Policy"),
                 t("af781666", "What do people think?"),
-                t("a1f414ee", "Share thoughts"),
-                t("ed88e742", "Detuo njikọ Isiokwu"),
+                t("a1f414ee", "Share thoughts");
+            t("ed88e742", "Detuo njikọ Isiokwu"),
                 t("h92fe1be", "Ọ dị m nwute, ị gaghị enweta Ndetu Ogbe n'ọge a."),
-                t("f0dc1434", "Ndetu Ọgbakọ dị adị ugbu a na naanị U.S.");
-            t("f8fc0b48", "Mepụta Foldà"),
+                t("f0dc1434", "Ndetu Ọgbakọ dị adị ugbu a na naanị U.S."),
+                t("f8fc0b48", "Mepụta Foldà"),
                 t("c14bcdde", "Search Bookmarks"),
                 t("e9c65c4a", "Bookmarks search"),
                 t("b92a21d9", function (e) {
@@ -6889,11 +6892,11 @@
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 t("b8cbb51a", "Job Summary"),
-                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                t("b075c68a", "Edit job"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Ihuọha Profaịlụ"),
-                t("j2dd3686", "Highlight featured jobs above my posts.");
-            t("af1cfd46", "ATS integration"),
+                t("j2dd3686", "Highlight featured jobs above my posts."),
+                t("af1cfd46", "ATS integration"),
                 t("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 t("h99f11fa", "Delete integration"),
                 t("eef1ae76", "Currently connected"),
@@ -7871,10 +7874,7 @@
                 t("d7b8387e", "Ikàgbuolaarị ya, e nweghịzị fọdụrụnụ aga-eme. Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
                 t("f4166d9a", "I chọrọ ikàgbu Ndebanye aha gị?"),
                 t("b74ff5fc", "Ọ bụrụ na ị kàgbuo, Ndebanye aha gị ga-eji mmereonwe mee nkwụsịoge mgbe akwụmụgwọ gachara."),
-                t("ee9efbc8", "Gaa n'ihu na nkàgbu"),
-                t("c5d9c77a", "Ọ dịka e nwetere obere ihe ọdachi. Esogbula onwe gị n'agbanyeghị, na o sighị gị n'aka. Mechie window ahụ ma nwàa ọzọ."),
-                t("jda53c24", "I nwere ike kagbuo Ndebanye aha gị site n'Ụlọahịa Ngwa Apple."),
-                t("g0a7a53e", "I nwere ike kagbuo Ndebanyeaha gị site n'Ụlọahịa Google Play.");
+                t("ee9efbc8", "Gaa n'ihu na nkàgbu");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7913,9 +7913,12 @@
                     c(e, a)
                 );
             }
-            t("i5f14be7", function (e) {
-                return "Welcome back, " + e.displayName;
-            }),
+            t("c5d9c77a", "Ọ dịka e nwetere obere ihe ọdachi. Esogbula onwe gị n'agbanyeghị, na o sighị gị n'aka. Mechie window ahụ ma nwàa ọzọ."),
+                t("jda53c24", "I nwere ike kagbuo Ndebanye aha gị site n'Ụlọahịa Ngwa Apple."),
+                t("g0a7a53e", "I nwere ike kagbuo Ndebanyeaha gị site n'Ụlọahịa Google Play."),
+                t("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
                 t("a76d58ba", "Ads Analytics"),
                 t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8911,11 +8914,11 @@
                 }),
                 t("b0b22805", function (e) {
                     return "Visit " + e.advertiserName;
-                }),
-                t("c67e71aa", "Watch now"),
+                });
+            t("c67e71aa", "Watch now"),
                 t("a6ada13e", "Shop now"),
-                t("j0f12222", "Hụ ọzọ");
-            t("f569f7c8", "Go to website"),
+                t("j0f12222", "Hụ ọzọ"),
+                t("f569f7c8", "Go to website"),
                 t("j0c6772a", "Visit website"),
                 t("f73003aa", "Video will play after ad"),
                 t("b3112b8a", "Gaba"),
@@ -13383,4 +13386,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.095385ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.53ecb3da.js.map

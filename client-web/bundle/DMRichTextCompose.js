@@ -76,13 +76,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: m, secondaryBar: f, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: v, titleIconCellSize: x, withBackground: w, withWideContainer: _ } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: m, secondaryBar: f, style: y, subtitle: g, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: w, withWideContainer: _ } = this.props,
                         { isModal: S } = this.context,
                         k = i ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         T = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!w, S, !!f);
-                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: k, middleControl: u, position: h(p, S, r), rightControl: m, style: g, subtitle: y, title: C, titleDomId: b, titleIconCell: v, titleIconCellSize: x, withBackground: T, withWideContainer: _ }), f || null);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: k, middleControl: u, position: h(p, S, r), rightControl: m, style: y, subtitle: g, title: C, titleDomId: b, titleIconCell: x, titleIconCellSize: v, withBackground: T, withWideContainer: _ }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -94,7 +94,7 @@
             (u.contextType = d.Z), (u.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         222718: (e, t, n) => {
-            n.d(t, { Z: () => y });
+            n.d(t, { Z: () => g });
             var o = n(202784),
                 r = n(325686),
                 i = n(537392),
@@ -108,7 +108,7 @@
                 p = n(715601),
                 m = n(392237);
             const f = m.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...m.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class g extends o.Component {
+            class y extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
@@ -128,21 +128,21 @@
                     return o.createElement(o.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: c, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, screenType: C, searchBoxOptions: b, secondaryBar: v, showBackButtonOnRoot: x, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, showTitleOnRoot: S, subtitle: k, title: T, titleIconCell: E, titleIconCellSize: Z, withDetailOpen: B, withSearchBox: I, withTweetButton: F, withWideContainer: P } = this.props,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: i, backLocation: s, documentTitle: a, headerless: c, history: u, leftControl: p, middleControl: m, onBackClick: y, rightControl: g, screenType: C, searchBoxOptions: b, secondaryBar: x, showBackButtonOnRoot: v, showSubtitleOnRoot: w, showSubtitleOnWideDetail: _, showTitleOnRoot: S, subtitle: k, title: T, titleIconCell: E, titleIconCellSize: Z, withDetailOpen: B, withSearchBox: I, withTweetButton: F, withWideContainer: P } = this.props,
                         L = "root" === C,
                         D = "secondaryRoot" === C,
                         R = "primaryDetail" === C,
                         O = (R && _) || (L && w),
-                        M = (L && !x) || (R && e),
+                        M = (L && !v) || (R && e),
                         W = (L && !S) || (R && e && !S),
-                        z = L ? l.ey : R ? l.vX : void 0,
-                        A = o.createElement(r.Z, { style: f.appBarContainer }, o.createElement(d.ZP, { backLocation: s, fixed: !1, hideBackButton: M, history: u, leftControl: p, middleControl: m, onBackClick: g, rightControl: y, secondaryBar: v, style: i, subtitle: O ? k : void 0, title: W ? void 0 : T, titleDomId: z, titleIconCell: E, titleIconCellSize: Z, withWideContainer: P })),
-                        K = L || (D && B) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: c, middleControl: m, onBackClick: g, rightControl: y, searchBoxOptions: b, subtitle: k, title: T, withSearchBox: I, withTweetButton: F });
-                    return o.createElement(o.Fragment, null, K, A);
+                        A = L ? l.ey : R ? l.vX : void 0,
+                        K = o.createElement(r.Z, { style: f.appBarContainer }, o.createElement(d.ZP, { backLocation: s, fixed: !1, hideBackButton: M, history: u, leftControl: p, middleControl: m, onBackClick: y, rightControl: g, secondaryBar: x, style: i, subtitle: O ? k : void 0, title: W ? void 0 : T, titleDomId: A, titleIconCell: E, titleIconCellSize: Z, withWideContainer: P })),
+                        N = L || (D && B) ? null : o.createElement(h.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: s, documentTitle: a, headerless: c, middleControl: m, onBackClick: y, rightControl: g, searchBoxOptions: b, subtitle: k, title: T, withSearchBox: I, withTweetButton: F });
+                    return o.createElement(o.Fragment, null, N, K);
                 }
             }
-            (g.contextType = u.Z), (g.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
-            const y = (0, c.ZP)(g);
+            (y.contextType = u.Z), (y.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0, showBackButtonOnRoot: !1, showTitleOnRoot: !0 });
+            const g = (0, c.ZP)(y);
         },
         496364: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -236,15 +236,15 @@
                 p = n(798538),
                 m = n(997174),
                 f = n(390387),
-                g = n(5849),
-                y = n(919022),
+                y = n(5849),
+                g = n(919022),
                 C = n(593953);
             const b = (e, t) => t.match.params.conversationId,
-                v = (e, t) => u.selectConversation(e, b(0, t)),
-                x = (e, t) => p.q9(e, b(0, t)),
+                x = (e, t) => u.selectConversation(e, b(0, t)),
+                v = (e, t) => p.q9(e, b(0, t)),
                 w = (e, t) => p.W8(e, b(0, t)),
                 _ = (0, h.Z)()
-                    .propsFromState(() => ({ conversation: v, entries: u.selectEntries, conversationId: b, isNewGroupConversation: C.rR, perspective: f._h, newConversationParticipants: C.bZ, tweetAttachment: C.Ss, users: y.ZP.selectAll, isUploading: x, media: w }))
+                    .propsFromState(() => ({ conversation: x, entries: u.selectEntries, conversationId: b, isNewGroupConversation: C.rR, perspective: f._h, newConversationParticipants: C.bZ, tweetAttachment: C.Ss, users: g.ZP.selectAll, isUploading: v, media: w }))
                     .adjustStateProps(({ conversation: e, conversationId: t, entries: n, isNewGroupConversation: o, isUploading: r, media: i, newConversationParticipants: s, perspective: a, tweetAttachment: l, users: c }) => {
                         const h = e?.data;
                         return { conversation: (h && (0, d.lk)(h, n, c)) || void 0, conversationId: t, isNewGroupConversation: o, isUploading: r, media: i, newConversationParticipants: s, perspective: a };
@@ -254,7 +254,7 @@
                             match: {
                                 params: { conversationId: e },
                             },
-                        }) => ({ cancelUpload: (0, C.Ly)(e), removeMedia: (0, C.Xx)(e), setLastViewedDmInboxPath: g.EA, updateTweetDetailNav: m.NH }),
+                        }) => ({ cancelUpload: (0, C.Ly)(e), removeMedia: (0, C.Xx)(e), setLastViewedDmInboxPath: y.EA, updateTweetDetailNav: m.NH }),
                     )
                     .withAnalytics({ page: "messages", section: "thread" });
             n(136728);
@@ -273,10 +273,10 @@
                 O = n(952793),
                 M = n(10656),
                 W = n(198506),
-                z = n(275365),
-                A = n(503115),
-                K = n(356738),
-                N = n(255534),
+                A = n(275365),
+                K = n(503115),
+                N = n(356738),
+                z = n(255534),
                 H = n(276032),
                 V = n(164383);
             const U = P().d4986f86,
@@ -298,16 +298,16 @@
                         return o.createElement(S.Z, { style: X.facePile }, o.createElement(T.Z, { userAvatarSize: "large", userAvatarUrls: n }));
                     },
                     h = (e) => {
-                        const t = i && i.participants.length ? (0, N.E)({ conversation: i, perspective: l }) : a ? (0, N.E)({ newConversationParticipants: a, perspective: l }) : U,
-                            n = i?.participants.length ? o.createElement(N.Z, { conversation: i, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(N.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, U),
+                        const t = i && i.participants.length ? (0, z.E)({ conversation: i, perspective: l }) : a ? (0, z.E)({ newConversationParticipants: a, perspective: l }) : U,
+                            n = i?.participants.length ? o.createElement(z.Z, { conversation: i, perspective: l, textSize: "headline2", withScreenName: !1 }) : a ? o.createElement(z.Z, { newConversationParticipants: a, perspective: l, textSize: "headline2", withScreenName: !1 }) : o.createElement(Z.ZP, { size: "headline2" }, U),
                             r = i && l ? (0, W.Z)(i, l) : void 0,
                             c = (0, C.NL)(s);
                         let h = "large",
-                            u = l ? o.createElement(A.Z, { conversation: i, perspective: l, size: h, withLock: c }) : void 0;
-                        return r && i?.type === z.eD.GROUP && void 0 === i?.avatar && ((u = ((e) => o.createElement(E.ZP, null, ({ containerWidth: t }) => (M.Z.isTwoColumnLayout(t) ? d(e, G) : d(e, Q))))(r)), (h = "custom")), { ...(e && { titleIconCell: u, titleIconCellSize: h }), title: n, documentTitle: t };
+                            u = l ? o.createElement(K.Z, { conversation: i, perspective: l, size: h, withLock: c }) : void 0;
+                        return r && i?.type === A.eD.GROUP && void 0 === i?.avatar && ((u = ((e) => o.createElement(E.ZP, null, ({ containerWidth: t }) => (M.Z.isTwoColumnLayout(t) ? d(e, G) : d(e, Q))))(r)), (h = "custom")), { ...(e && { titleIconCell: u, titleIconCellSize: h }), title: n, documentTitle: t };
                     },
                     u = () => {
-                        const e = i?.type === z.eD.GROUP,
+                        const e = i?.type === A.eD.GROUP,
                             t = n?.state?.position || 0;
                         return s ? o.createElement(S.Z, { style: X.rightControlStyles }, o.createElement(V.fK, { conversationId: s }), r && o.createElement(H.Z, { conversationId: s }, o.createElement(B.ZP, { "aria-haspopup": "menu", "aria-label": J, hoverLabel: { label: J }, icon: o.createElement(L.default, null), size: "small", style: X.infoButton, type: "primaryText" })), o.createElement(D.Z, { "aria-label": e ? j : q, conversationId: s, link: { pathname: `/messages/${s}/info`, state: { position: t } }, style: X.infoButton })) : void 0;
                     };
@@ -315,21 +315,21 @@
                     R.Z,
                     (() => {
                         const t = h(e.showTitle);
-                        return { backLocation: "/messages", onBackClick: c, rightControl: u(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(K.Z, null) : void 0, ...t };
+                        return { backLocation: "/messages", onBackClick: c, rightControl: u(), screenType: "primaryDetail", withBottomTabBar: !1, headerless: !1, secondaryBar: r ? o.createElement(N.Z, null) : void 0, ...t };
                     })(),
                     e.children,
                 );
             }
             const X = I.default.create((e) => ({ infoButton: { marginEnd: e.spaces.space4 }, rightControlStyles: { flexDirection: "row" }, facePile: { display: "flex", flexDirection: "row" } }));
-            function Y({ conversationId: e, history: t, location: n, isNewGroupConversation: d = !1, conversation: h, newConversationParticipants: u, perspective: p, richTextInputContext: m, setLastViewedDmInboxPath: f, typeaheadWrapper: g = i.Z }) {
-                const y = (0, a.Z)(e),
+            function Y({ conversationId: e, history: t, location: n, isNewGroupConversation: d = !1, conversation: h, newConversationParticipants: u, perspective: p, richTextInputContext: m, setLastViewedDmInboxPath: f, typeaheadWrapper: y = i.Z }) {
+                const g = (0, a.Z)(e),
                     [C, b] = o.useState(!1),
-                    v = (0, l.N)();
+                    x = (0, l.N)();
                 e || d || n.pathname !== window.location.pathname || t.replace({ pathname: "/messages" });
                 o.useEffect(() => {
-                    e !== y && f(n.pathname);
-                }, [e, n.pathname, y, f]);
-                const x = "string" == typeof n.query.text ? n.query.text : void 0,
+                    e !== g && f(n.pathname);
+                }, [e, n.pathname, g, f]);
+                const v = "string" == typeof n.query.text ? n.query.text : void 0,
                     w = (0, r.Y4)();
                 return o.createElement(
                     s.Z,
@@ -345,10 +345,10 @@
                             onConversationProfileVisibilityChange: (e) => {
                                 C !== e && b(e);
                             },
-                            prefillText: x,
+                            prefillText: v,
                             richTextInputContext: m,
-                            typeaheadWrapper: g,
-                            typingNotifier: v,
+                            typeaheadWrapper: y,
+                            typingNotifier: x,
                         }),
                     ),
                 );
@@ -419,28 +419,28 @@
                 p = n(682830),
                 m = n(965245),
                 f = n(736063),
-                g = n(725516),
-                y = n(792098),
+                y = n(725516),
+                g = n(792098),
                 C = n(96083);
             const b = ({ checked: e, label: t, onToggleCheck: n, refetch: a }) => {
                     const l = o.useCallback(() => {
                         n(t.id);
                     }, [n, t.id]);
-                    return t ? o.createElement(r.Z, { role: "listitem" }, o.createElement(i.Z, { onClick: l, style: x.root }, o.createElement(C.Z, { checked: e }), o.createElement(s.ZP, { size: "subtext2" }, t.name))) : null;
+                    return t ? o.createElement(r.Z, { role: "listitem" }, o.createElement(i.Z, { onClick: l, style: v.root }, o.createElement(C.Z, { checked: e }), o.createElement(s.ZP, { size: "subtext2" }, t.name))) : null;
                 },
-                v = o.memo(b),
-                x = l.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12, gap: e.spaces.space4 } })),
+                x = o.memo(b),
+                v = l.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12, gap: e.spaces.space4 } })),
                 w = { buttonLink: "/setting/labels", buttonText: "Manage Labels", buttonType: "brandOutlined" },
                 _ = c.Z;
             function S(e) {
                 return e.id;
             }
             function k({ conversationId: e, footer: t }) {
-                const n = (0, g.z)();
+                const n = (0, y.z)();
                 o.useEffect(() => {
                     n.scribe({ action: "impression" });
                 }, [n]);
-                const [r, i, s] = (0, y.Z)(),
+                const [r, i, s] = (0, g.Z)(),
                     [a] = h()(_),
                     l = r.viewer.user_results.result,
                     c = o.useCallback(
@@ -449,7 +449,7 @@
                         },
                         [e, a],
                     ),
-                    d = o.useCallback((e) => o.createElement(v, { checked: !1, label: e, onToggleCheck: c, refetch: s }), [s, c]);
+                    d = o.useCallback((e) => o.createElement(x, { checked: !1, label: e, onToggleCheck: c, refetch: s }), [s, c]);
                 if ("User" !== l.__typename) return null;
                 const p = l.labeled_conversation_collection_slice?.items;
                 return p ? (p.length ? o.createElement(m.Z, { assumedItemHeight: 64, cacheKey: "dmLabelsList", footer: t, identityFunction: S, items: p, onNearEnd: i, renderer: d, withoutHeadroom: !0 }) : o.createElement(u.Z, w)) : null;
@@ -484,7 +484,7 @@
                 p = n(122375),
                 m = n(835305),
                 f = n(899492);
-            function g(e) {
+            function y(e) {
                 let t;
                 if (e.html)
                     try {
@@ -522,8 +522,8 @@
                                         const t = o.index,
                                             i = n.lastIndex,
                                             s = e.text.substring(t, i),
-                                            a = x(s, w.start_newline),
-                                            l = x(s, w.end_newline);
+                                            a = v(s, w.start_newline),
+                                            l = v(s, w.end_newline);
                                         r.push([a, l]);
                                     }
                                     const s = [];
@@ -549,22 +549,22 @@
                                 for (const o of t.blocks)
                                     switch (o.type) {
                                         case p.Wo:
-                                            n.push(y(e, o));
+                                            n.push(g(e, o));
                                             break;
                                         case p.p8:
                                         case p.r$:
                                         case p.Mm:
                                         case p.Z4:
                                         case p.Re:
-                                            if (e.allowExtendedPasteStyles) n.push(y(e, o));
+                                            if (e.allowExtendedPasteStyles) n.push(g(e, o));
                                             else {
                                                 const t = { ...o, type: p.Wo };
-                                                n.push(y(e, t));
+                                                n.push(g(e, t));
                                             }
                                             break;
                                         default: {
                                             const t = { ...o, type: p.Wo };
-                                            n.push(y(e, t));
+                                            n.push(g(e, t));
                                         }
                                     }
                                 return { blocks: n, entityMap: e.longformRichTextTransform ? t.entityMap : {} };
@@ -580,17 +580,17 @@
                     }
                 return !t && e.text && (t = i.ContentState.createFromText(e.text)), t || null;
             }
-            function y(e, t) {
+            function g(e, t) {
                 const n = t.inlineStyleRanges || [],
                     o = [],
-                    r = e.longformRichTextTransform ? v : b;
+                    r = e.longformRichTextTransform ? x : b;
                 for (const t of n) !e.stripPastedStyles && r.has(t.style) && o.push(t);
                 return (t.inlineStyleRanges = o), t;
             }
             const C = [m.DraftJS.Bold, m.DraftJS.Italic],
                 b = (0, u.Z)(C),
-                v = (0, u.Z)([...b, m.DraftJS.Strikethrough]);
-            function x(e, t) {
+                x = (0, u.Z)([...b, m.DraftJS.Strikethrough]);
+            function v(e, t) {
                 const n = e.match(t);
                 if (!n) return 0;
                 const [o] = n;
@@ -658,7 +658,7 @@
                             const { multiline: o, onChange: r } = this.props;
                             if (!r) return "not-handled";
                             const { allowExtendedPasteStyles: s, longformRichTextTransform: a, stripPastedStyles: l } = this.props;
-                            let c = g({ text: e, html: t, editorState: n, stripPastedStyles: l, allowExtendedPasteStyles: s, longformRichTextTransform: a });
+                            let c = y({ text: e, html: t, editorState: n, stripPastedStyles: l, allowExtendedPasteStyles: s, longformRichTextTransform: a });
                             if (!c) return "not-handled";
                             if (!o) {
                                 const e = (function (e) {
@@ -725,19 +725,6 @@
                     ),
                 );
         },
-        452693: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var o = n(202784),
-                r = n(890601),
-                i = n(783427),
-                s = n(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const l = a;
-        },
         662678: (e, t, n) => {
             n.d(t, { G: () => r, Z: () => o });
             n(136728);
@@ -756,4 +743,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.dda307da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.0c68360a.js.map

@@ -393,93 +393,94 @@
             n.r(t), n.d(t, { default: () => G });
             var o = n(202784),
                 r = n(856642),
-                a = n(325686),
-                i = n(107267),
-                s = n(537392),
-                c = n(392237),
-                l = n(688715),
-                d = n(111677),
-                u = n.n(d),
-                m = n(323265),
-                f = n(791632),
-                h = n(572067),
-                p = n(252021),
-                g = n(38293),
-                v = n(652904),
-                E = n(292546),
-                w = n(655352),
-                C = n(15334),
-                b = n(293115),
-                k = n(246020),
-                y = n(609013),
-                S = n(205634),
-                _ = n(764512),
-                Z = n(579711),
-                P = n(988290),
-                L = n(15038),
-                T = n(952793),
-                I = n(725405),
-                R = n(928831),
-                x = n(620988),
-                F = n(623494);
-            function B({ children: e }) {
-                const { isFileInputDisabled: t } = (0, R.w)(),
-                    { onFileSelected: n } = (0, x.ZP)(),
-                    r = (0, I.Z)(),
-                    a = (0, T.hC)("responsive_web_grok_file_upload_enabled"),
+                a = n(272175),
+                i = n(325686),
+                s = n(107267),
+                c = n(537392),
+                l = n(392237),
+                d = n(688715),
+                u = n(111677),
+                m = n.n(u),
+                f = n(323265),
+                h = n(791632),
+                p = n(572067),
+                g = n(252021),
+                v = n(38293),
+                E = n(652904),
+                w = n(292546),
+                C = n(655352),
+                b = n(15334),
+                k = n(293115),
+                y = n(246020),
+                S = n(609013),
+                _ = n(205634),
+                Z = n(764512),
+                P = n(579711),
+                L = n(988290),
+                T = n(15038),
+                I = n(952793),
+                R = n(725405),
+                x = n(928831),
+                F = n(620988),
+                B = n(623494);
+            function A({ children: e }) {
+                const { isFileInputDisabled: t } = (0, x.w)(),
+                    { onFileSelected: n } = (0, F.ZP)(),
+                    r = (0, R.Z)(),
+                    a = (0, I.hC)("responsive_web_grok_file_upload_enabled"),
                     i = o.useCallback(
                         (e) => {
-                            t || (e.forEach((e) => n(e)), (0, F.dP)(r, "dragDrop"));
+                            t || (e.forEach((e) => n(e)), (0, B.dP)(r, "dragDrop"));
                         },
                         [n, r, t],
                     );
-                return a ? o.createElement(L.ZP, { activeStyle: A.activeDropzone, onFilesAdded: i, style: A.dropzone }, e) : e;
+                return a ? o.createElement(T.ZP, { activeStyle: z.activeDropzone, onFilesAdded: i, style: z.dropzone }, e) : e;
             }
-            const A = c.default.create((e) => ({ dropzone: { width: "100%", height: "100%" }, activeDropzone: { borderWidth: e.borderWidths.none, outlineWidth: e.borderWidths.medium, outlineStyle: "dashed", outlineColor: e.colors.primary, outlineOffset: `-${e.spaces.space2}` } }));
-            var z = n(807901),
-                M = n(428880),
-                U = n(654917),
-                D = n(991985);
-            const H = { page: m.ZP.isTwitterApp() ? (m.ZP.isAndroid() ? "grok_android" : "grok_ios") : "grok" },
-                K = u().h5860a68,
-                O = u().f7cf3d36;
-            function W() {
-                const [e] = (0, E.Z)(),
+            const z = l.default.create((e) => ({ dropzone: { width: "100%", height: "100%" }, activeDropzone: { borderWidth: e.borderWidths.none, outlineWidth: e.borderWidths.medium, outlineStyle: "dashed", outlineColor: e.colors.primary, outlineOffset: `-${e.spaces.space2}` } }));
+            var M = n(807901),
+                U = n(428880),
+                D = n(654917),
+                H = n(991985);
+            const O = { page: f.ZP.isTwitterApp() ? (f.ZP.isAndroid() ? "grok_android" : "grok_ios") : "grok" },
+                K = m().h5860a68,
+                W = m().f7cf3d36;
+            function q() {
+                const [e] = (0, w.Z)(),
                     t = e.get("conversation") ?? void 0,
                     n = e.get("text") ?? "",
                     r = Boolean(e.get("deepsearch")) ?? !1,
                     a = Boolean(e.get("think")) ?? !1,
                     i = e.get("analysisEntityId") ?? void 0,
                     s = o.useMemo(() => ({ text: n, analysisEntityId: i, autoSubmit: !0, isDeepsearch: r, isReasoning: a }), [n, i, r, a]);
-                return o.createElement(B, null, o.createElement(k.Z, { contentPadding: 208, conversationId: t, initialPrompt: s }));
+                return o.createElement(A, null, o.createElement(y.Z, { contentPadding: 208, conversationId: t, initialPrompt: s }));
             }
             function G() {
-                (0, D.n)(!0);
-                const e = (0, i.useHistory)(),
-                    t = !(0, w.ZP)(),
-                    { conversationId: n, mode: d, model: u } = (0, U.ZP)(),
-                    E = (0, C.u)(),
-                    { canClearConversation: k, handleBackClick: S, handleClearConversationClick: Z, isEligible: L } = (0, z.Z)();
+                (0, H.n)(!0);
+                const e = (0, s.useHistory)(),
+                    t = !(0, C.ZP)(),
+                    { conversationId: n, mode: u, model: m } = (0, D.ZP)(),
+                    w = (0, b.u)(),
+                    { canClearConversation: y, handleBackClick: _, handleClearConversationClick: P, isEligible: T } = (0, M.Z)();
                 !(function (e) {
-                    const t = (0, i.useHistory)();
+                    const t = (0, s.useHistory)();
                     o.useEffect(() => {
-                        if (!(0, f.HD)(t) || !e) return;
+                        if (!(0, h.HD)(t) || !e) return;
                         if (t.location.query.conversation) return;
                         const n = r.stringify({ ...t.location.query, conversation: e });
                         t.replace({ ...t.location, search: n });
                     }, [e, t]);
                 })(n);
-                const T = (0, s.Zx)(({ containerWidth: e }) => e <= c.default.theme.breakpoints.xLarge),
-                    I = k ? S : void 0,
-                    R = o.useMemo(() => ({ subscription_level: E, grok_details: { grok_mode: d || "regular", grok_model: u, conversation_id: n ?? void 0 } }), [E, d, u, n]),
-                    [F] = (0, M.ZP)();
-                return o.createElement(o.Fragment, null, o.createElement(g.Z, { title: K }), o.createElement(h.Z, { canonical: (0, l.ju)("https://x.com/i/grok"), description: O, title: K, type: "website" }), o.createElement(b.nO, { data: R, namespace: H }, o.createElement(v.Z, null, o.createElement(x.ZH, null, o.createElement(P.BQ, { isCompactLayout: T, isEditingEnabled: !0, isPagedScroll: !0, isShowButtons: !0, isShowCarousel: !0, scrollable: window }, m.ZP.isTwitterApp() ? o.createElement(W, null) : t ? o.createElement(p.Z, { centeredLogo: L ? j : void 0, documentTitle: K, history: e, onBackClick: I, primaryContent: N, primaryContentLabel: K, rightControl: Y, sidebarContent: null, withBackButton: k }) : o.createElement(o.Fragment, null, o.createElement(p.Z, { documentTitle: K, headerless: F, history: e, isFullWidth: !0, middleControl: q, onTabRefresh: Z, primaryContent: N, primaryContentLabel: K, sidebarContent: null, withBackButton: !1, withBorderLessLayout: F }), F && o.createElement(o.Fragment, null, o.createElement(y.T, null), o.createElement(a.Z, { style: { position: "fixed", start: 0, end: 0, paddingStart: c.default.theme.spaces.space16, paddingEnd: c.default.theme.spaces.space16 } }, o.createElement(_.q, null)))))))));
+                const I = (0, c.Zx)(({ containerWidth: e }) => e <= l.default.theme.breakpoints.xLarge),
+                    R = y ? _ : void 0,
+                    x = o.useMemo(() => ({ subscription_level: w, grok_details: { grok_mode: u || "regular", grok_model: m, conversation_id: n ?? void 0 } }), [w, u, m, n]),
+                    [B] = (0, U.ZP)();
+                return o.createElement(o.Fragment, null, o.createElement(v.Z, { title: K }), o.createElement(p.Z, { canonical: (0, d.ju)("https://x.com/i/grok"), description: W, title: K, type: "website" }), o.createElement(a.ql, null, o.createElement("meta", { content: "NOODP", name: "robots" }), o.createElement("meta", { content: W, name: "description" })), o.createElement(k.nO, { data: x, namespace: O }, o.createElement(E.Z, null, o.createElement(F.ZH, null, o.createElement(L.BQ, { isCompactLayout: I, isEditingEnabled: !0, isPagedScroll: !0, isShowButtons: !0, isShowCarousel: !0, scrollable: window }, f.ZP.isTwitterApp() ? o.createElement(q, null) : t ? o.createElement(g.Z, { centeredLogo: T ? Q : void 0, documentTitle: K, history: e, onBackClick: R, primaryContent: Y, primaryContentLabel: K, rightControl: j, sidebarContent: null, withBackButton: y }) : o.createElement(o.Fragment, null, o.createElement(g.Z, { documentTitle: K, headerless: B, history: e, isFullWidth: !0, middleControl: N, onTabRefresh: P, primaryContent: Y, primaryContentLabel: K, sidebarContent: null, withBackButton: !1, withBorderLessLayout: B }), B && o.createElement(o.Fragment, null, o.createElement(S.T, null), o.createElement(i.Z, { style: { position: "fixed", start: 0, end: 0, paddingStart: l.default.theme.spaces.space16, paddingEnd: l.default.theme.spaces.space16 } }, o.createElement(Z.q, null)))))))));
             }
-            const q = o.createElement(M.fc, null, o.createElement(_.q, null)),
-                N = o.createElement(W, null),
-                Y = o.createElement(Z.Z, { isVerbose: !1, withHistory: !0 }),
-                j = o.createElement(S.V, null);
+            const N = o.createElement(U.fc, null, o.createElement(Z.q, null)),
+                Y = o.createElement(q, null),
+                j = o.createElement(P.Z, { isVerbose: !1, withHistory: !0 }),
+                Q = o.createElement(_.V, null);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-6ac0f1a5.24c6a46a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-6ac0f1a5.c7f36fea.js.map

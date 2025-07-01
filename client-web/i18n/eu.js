@@ -16,10 +16,18 @@
                 var o, i;
             }
             o("c39b0e24", "X"),
+                o("bcd6bb0e", "Kidea"),
+                o("hd8c22d2", "Moderatzailea"),
+                o("c3153100", "Administratzailea"),
                 o("jb38600c", "Bat ere ez"),
                 o("f07eac34", "Parody account"),
                 o("a41b5c2e", "Fan account"),
                 o("i428ea62", "Commentary account"),
+                o("jd859c9c", "Espazio honetatik kendu zaituzte."),
+                o("cfbea177", function (e) {
+                    return e.name + " erabiltzailearen espazioa";
+                }),
+                o("ab4fc8bc", "Espazioa"),
                 o("ac0d27be", "Barkatu, kontu hau ezgaitua izan da."),
                 o("bcee7444", "Kontuaren eguneratzeak huts egin du."),
                 o("e0cbf77a", "Telefonoa gehitu"),
@@ -60,9 +68,6 @@
                 o("h1cbdd30", "Mesedez freskatu orria eta saiatu berriro."),
                 o("a5077d3e", "Freskatu"),
                 o("b2648ba4", "Agian zure kontua ez dago baimendua ekintza hau egiteko. Mesedez freskatu orria eta saiatu berriro."),
-                o("bcd6bb0e", "Kidea"),
-                o("hd8c22d2", "Moderatzailea"),
-                o("c3153100", "Administratzailea"),
                 o("fa9adac1", function (e) {
                     return 'Bilatu "' + e.query + '"';
                 }),
@@ -75,19 +80,12 @@
                 o("c64e46f8", "This member was removed from the Community, so their posts are hidden."),
                 o("b3f1cb42", "A moderator hid this post for breaking a Community rule."),
                 o("cbd2dc9c", "You reported this post."),
-                o("cfbea177", function (e) {
-                    return e.name + " erabiltzailearen espazioa";
-                }),
-                o("ab4fc8bc", "Espazioa"),
-                o("jd859c9c", "Espazio honetatik kendu zaituzte."),
                 o("c60ed9b0", "You are not authorized to join this Space."),
                 o("d8227e16", "You are not authorized to create this Space"),
                 o("f027fed8", "Picture-in-Picture"),
                 o("hd50e064", "Orain ez"),
                 o("i76d640e", "We need your permission"),
                 o("fdaa0be8", "To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                o("gea6cc1a", "Ziur zaude hori egin nahi duzula?"),
-                o("hb568af4", "Isilarazi"),
                 o("f7c8617a", "Zer dira klipak?"),
                 o("ecc7d2ec", "Klipak zure espazioko edonork egin eta parteka ditzakeen uneak dira. Klip guztiak 30 egun igaro ondoren iraungiko dira."),
                 o("d575ee02", "Nork egin dezake klip bat?"),
@@ -105,16 +103,6 @@
                 o("jf03b37c", "Listen to the recording anytime. You can also share it with a post."),
                 o("fd05976b", "Learn more"),
                 o("b4f91a8a", "Grabaketa aktiboa"),
-                o("gb418012", "Welcome to Spaces"),
-                o("fec3c1e0", "Zuzeneko audio bidezko elkarrizketak gertatzen diren tokia"),
-                o("j32eb4f8", "Add up to 10 speakers"),
-                o("j4f133a6", "You can invite anyone on X to speak."),
-                o("ed434ac6", "Spaces are public — anyone can join"),
-                o("e0025688", "Your Space, your rules"),
-                o("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                o("b0bc8330", "Gainera, espazio batean dauden pertsonak blokeatu eta sala ditzakezu."),
-                o("cb17a0f3", "Learn more"),
-                o("dcd77941", "Learn more"),
                 o("cc724cb0", "Sortu klipa"),
                 o("cfd2f35e", "Ezeztatu"),
                 o("c1df579e", "Hurrengoa"),
@@ -128,6 +116,16 @@
                 o("a9ba3e28", "Informazio pribatua"),
                 o("d5519f4a", "Abusuzko jokabidea"),
                 o("eb55363c", "Espazio hau salatu da"),
+                o("gb418012", "Welcome to Spaces"),
+                o("fec3c1e0", "Zuzeneko audio bidezko elkarrizketak gertatzen diren tokia"),
+                o("j32eb4f8", "Add up to 10 speakers"),
+                o("j4f133a6", "You can invite anyone on X to speak."),
+                o("ed434ac6", "Spaces are public — anyone can join"),
+                o("e0025688", "Your Space, your rules"),
+                o("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                o("b0bc8330", "Gainera, espazio batean dauden pertsonak blokeatu eta sala ditzakezu."),
+                o("cb17a0f3", "Learn more"),
+                o("dcd77941", "Learn more"),
                 o("i65de934", "You are listening anonymously"),
                 o("b1037050", "Manage Space"),
                 o("ic107434", "Turn on camera"),
@@ -906,10 +904,10 @@
                 o("bf9e181b", "Gehiago jakin"),
                 o("e8e39f95", "Gehiago ikasi"),
                 o("e126dd3f", "Gehiago ikasi"),
-                o("i821844f", "Gehiago ikasi");
-            o("b0abbb17", "Gehiago ikasi"),
-                o("e7e0d88b", "Gehiago ikasi"),
-                o("i560665f", "Gehiago ikasi"),
+                o("i821844f", "Gehiago ikasi"),
+                o("b0abbb17", "Gehiago ikasi"),
+                o("e7e0d88b", "Gehiago ikasi");
+            o("i560665f", "Gehiago ikasi"),
                 o("f6e774d9", "Gehiago ikasi"),
                 o("h486f755", "Gehiago ikasi"),
                 o("bab41dab", "Gehiago ikasi"),
@@ -1125,6 +1123,7 @@
                 o("dbb51952", "Protect your posts?"),
                 o("de735de6", "This will make them visible only to your X followers."),
                 o("c5d4192a", "Babestu"),
+                o("gea6cc1a", "Ziur zaude hori egin nahi duzula?"),
                 o("d9ddba70", "Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 o("f527b322", "Protect my account"),
                 o("d165c992", "Edonork etiketa zaitzake"),
@@ -1321,9 +1320,10 @@
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 o("aa9d42c0", "Searching the web"),
-                o("dce1817a", "Searching on 𝕏"),
-                o("f7151564", "Searching users on 𝕏"),
+                o("c731d702", "Searching on X"),
+                o("d0e02476", "Searching users on X"),
                 o("c43ef93e", "Browsing web page"),
+                o("dab166ec", "Searching user posts on X"),
                 o("jb097f6e", "Executing code"),
                 o("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 o("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1817,6 +1817,7 @@
                 o("g00b4c55", function (e) {
                     return "Share @" + e.screenName + " via...";
                 }),
+                o("hb568af4", "Isilarazi"),
                 o("bb1cbeb6", "Desisilarazi"),
                 o("h2f62206", "Erabiltzailea isilarazten"),
                 o("h59f52ee", "Arrakastaz isilarazia"),
@@ -1917,11 +1918,11 @@
                 o("ef1649e2", "X - Keyboard shortcuts"),
                 o("aefd89c8", "Nabigazioa"),
                 o("cafdefb2", "Ekintzak"),
-                o("dda42cf2", "Zutabeak eta Deck bildumak"),
-                o("e8a12604", "Provide a caption (optional)");
-            o("eabf2209", function (e) {
-                return e.providerName + " hornitzaileak emandako GIF fitxategia";
-            }),
+                o("dda42cf2", "Zutabeak eta Deck bildumak");
+            o("e8a12604", "Provide a caption (optional)"),
+                o("eabf2209", function (e) {
+                    return e.providerName + " hornitzaileak emandako GIF fitxategia";
+                }),
                 o("a613e720", "Kopiatu GIF fitxategirako esteka"),
                 o("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -2977,9 +2978,9 @@
                 o("e06b864c", "It looks like you’re enjoying this conversation"),
                 o("a078ff70", "Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts."),
                 o("cb80300e", "Saltatu hasierako denbora-lerrora"),
-                o("ea5cd098", "Saltatu joeran dagoenera"),
-                o("c67e3fc2", "Hasierako denbora lerroa");
-            o("d601fc20", "Azkenak"),
+                o("ea5cd098", "Saltatu joeran dagoenera");
+            o("c67e3fc2", "Hasierako denbora lerroa"),
+                o("d601fc20", "Azkenak"),
                 o("j43f99be", "Relevancy"),
                 o("ad6e11ac", "Sort replies by"),
                 o("b2311b70", "Ez duzu erabilgarri"),
@@ -3897,13 +3898,13 @@
                 }),
                 o("f5c7aaa7", function (e) {
                     return "host" + r(e.count, "", "s");
-                }),
-                o("fc56c8b1", function (e) {
-                    return "co-host" + r(e.count, "", "s");
                 });
-            o("iba0f45d", function (e) {
-                return "speaker" + r(e.count, "", "s");
+            o("fc56c8b1", function (e) {
+                return "co-host" + r(e.count, "", "s");
             }),
+                o("iba0f45d", function (e) {
+                    return "speaker" + r(e.count, "", "s");
+                }),
                 o("dc066955", function (e) {
                     return "listener" + r(e.count, "", "s");
                 }),
@@ -4933,9 +4934,9 @@
                 o("ff95a9cc", "Video ID"),
                 o("a97e358e", "Video Link"),
                 o("e10e8b46", "Only showing the videos from the last 100 days."),
-                o("ba37f6da", "Video overview"),
-                o("f19846b2", "Video thumbnail");
-            o("ccd6f4a8", "Video title"),
+                o("ba37f6da", "Video overview");
+            o("f19846b2", "Video thumbnail"),
+                o("ccd6f4a8", "Video title"),
                 o("c8410542", "The number of times your video was viewed."),
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
@@ -5553,6 +5554,7 @@
                 o("bd7eb888", "See all notes on this post"),
                 o("i97b83f6", "Errore bat gertatu da zure apelazioa bidaltzean. Saiatu berriro."),
                 o("a038ab9a", "Translate note"),
+                o("icdb6d74", "Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 o("i606fc4c", "About Community Notes appeals"),
                 o("b664c554", "Eskatu kolaboratzaileen berrikuspen gehigarria"),
                 o("ab66e1f2", "Hona hemen nola funtzionatzen duen:"),
@@ -5568,6 +5570,7 @@
                 o("ge25848a", "Uneko egoera"),
                 o("d6db34cc", "Balorazio gehiago behar ditu"),
                 o("ce8b505e", "Ez da lagungarria"),
+                o("j42c88b6", "Experimental AI Note Writer"),
                 o("e5be8156", "Note status computed by open-source algorithm"),
                 o("fca23c42", "Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 o("hef420c2", "Ohar hau ez dute oraindik ikuspuntu ezberdinetako kolaboratzaile nahikorik baloratu."),
@@ -5883,11 +5886,11 @@
                 o("ab1b3d38", "Note request data isn’t available yet"),
                 o("c43fb933", "X Developer Agreement and Policy"),
                 o("af781666", "What do people think?"),
-                o("a1f414ee", "Share thoughts"),
-                o("ed88e742", "Kopiatu gairako esteka"),
+                o("a1f414ee", "Share thoughts");
+            o("ed88e742", "Kopiatu gairako esteka"),
                 o("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
-                o("f0dc1434", "Community Notes is currently only available in the U.S.");
-            o("f8fc0b48", "Sortu karpeta bat"),
+                o("f0dc1434", "Community Notes is currently only available in the U.S."),
+                o("f8fc0b48", "Sortu karpeta bat"),
                 o("c14bcdde", "Bilatu laster-markak"),
                 o("e9c65c4a", "Bookmarks search"),
                 o("b92a21d9", function (e) {
@@ -6889,11 +6892,11 @@
                 o("j3d242ce", "Invalid range"),
                 o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 o("b8cbb51a", "Job Summary"),
-                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                o("b075c68a", "Edit job"),
+                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "Profilaren fokua"),
-                o("j2dd3686", "Highlight featured jobs above my posts.");
-            o("af1cfd46", "ATS integration"),
+                o("j2dd3686", "Highlight featured jobs above my posts."),
+                o("af1cfd46", "ATS integration"),
                 o("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 o("h99f11fa", "Delete integration"),
                 o("eef1ae76", "Currently connected"),
@@ -7871,10 +7874,7 @@
                 o("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 o("f4166d9a", "Want to cancel your Subscription?"),
                 o("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                o("ee9efbc8", "Jarraitu uzteko"),
-                o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
-                o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                o("g0a7a53e", "You can cancel your Subscription through the Google Play Store.");
+                o("ee9efbc8", "Jarraitu uzteko");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7913,9 +7913,12 @@
                     u(e, a)
                 );
             }
-            o("i5f14be7", function (e) {
-                return "Welcome back, " + e.displayName;
-            }),
+            o("c5d9c77a", "Itxura txiki bat egon zela dirudi. Ez kezkatu ordea, ez da zure errua. Itxi leiho hau eta saiatu berriro."),
+                o("jda53c24", "You can cancel your Subscription through the Apple App Store."),
+                o("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                o("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
                 o("a76d58ba", "Ads Analytics"),
                 o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8911,11 +8914,11 @@
                 }),
                 o("b0b22805", function (e) {
                     return "Bisitatu " + e.advertiserName;
-                }),
-                o("c67e71aa", "Ikusi orain"),
+                });
+            o("c67e71aa", "Ikusi orain"),
                 o("a6ada13e", "Erosi orain"),
-                o("j0f12222", "Ikusi gehiago");
-            o("f569f7c8", "Joan webgunera"),
+                o("j0f12222", "Ikusi gehiago"),
+                o("f569f7c8", "Joan webgunera"),
                 o("j0c6772a", "Bisitatu webgunea"),
                 o("f73003aa", "Bideoa iragarkiaren ondoren erreproduzituko da"),
                 o("b3112b8a", "Pasatu"),
@@ -13374,4 +13377,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.2bc672ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.4afe557a.js.map

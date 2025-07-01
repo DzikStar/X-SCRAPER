@@ -47,7 +47,7 @@
                 b = n(952793),
                 Z = n(4452),
                 y = n(312771),
-                _ = n(22730),
+                _ = n(962128),
                 S = n(333577),
                 A = n(531187),
                 v = n(71620),
@@ -145,7 +145,7 @@
                 l = n.n(o),
                 c = n(252021),
                 i = n(615027),
-                s = n(22730),
+                s = n(962128),
                 d = n(249777),
                 p = n(486361),
                 m = n(910148),
@@ -206,7 +206,7 @@
                 I = n(293115),
                 N = n(312771),
                 T = n(109411),
-                B = n(22730),
+                B = n(962128),
                 H = n(333577),
                 k = n(249777),
                 x = n(983235),
@@ -416,4 +416,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-9ec2f64d.9f5dcc7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-9ec2f64d.ec290c0a.js.map

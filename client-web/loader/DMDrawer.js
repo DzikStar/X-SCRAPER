@@ -23,18 +23,18 @@
                 w = r(511582),
                 b = r(390387),
                 D = r(441790),
-                y = r(715913),
-                C = r(601413),
+                C = r(715913),
+                y = r(601413),
                 x = r(392237),
-                Z = r(323265),
-                H = r(443781),
+                H = r(323265),
+                Z = r(443781),
                 S = r(740633);
             const T = (0, r(523561).Z)({ loader: () => r.e("ondemand.RichText").then(r.bind(r, 687184)) });
             var P = r(111311),
                 I = r(198506),
                 R = r(768572),
-                M = r(275365),
-                _ = r(255534),
+                _ = r(275365),
+                M = r(255534),
                 U = r(164383),
                 A = r(587521),
                 k = r(806960),
@@ -46,10 +46,10 @@
             const B = { header: "DMDrawerHeader", headerHighlighted: "DMDrawerHeaderHighlighted", root: "DMDrawer" };
             var q = r(154003),
                 X = r(310088),
-                z = r(111677),
-                G = r.n(z),
+                G = r(111677),
+                z = r.n(G),
                 V = r(894966);
-            const K = G().b08821f4;
+            const K = z().b08821f4;
             function Y({ buttonType: e, hasNewMessages: t, inboxUnreadCount: r }) {
                 const a = (0, l.I0)(),
                     i = t || (void 0 !== r && r > 0);
@@ -72,10 +72,10 @@
             var Q = r(324922),
                 $ = r(867492),
                 J = r(377782);
-            const ee = G().d227d19e,
-                te = G().c64c1884,
-                re = G().j7d0e836,
-                ne = G().cdcebd22;
+            const ee = z().d227d19e,
+                te = z().c64c1884,
+                re = z().j7d0e836,
+                ne = z().cdcebd22;
             function ae({ analytics: e, buttonType: t, conversationTitle: r, handleToggleVisibility: i, isExpanded: o }) {
                 const s = (0, a.useHistory)();
                 return n.createElement(
@@ -99,8 +99,8 @@
             const ie = x.default.create((e) => ({ rightControls: { flexDirection: "row" } }));
             var oe = r(731708),
                 se = r(136483);
-            const le = G().a2f81050,
-                ce = G().e736990a;
+            const le = z().a2f81050,
+                ce = z().e736990a;
             function de({ conversationTitle: e, hasNewMessages: t, isConversationUnread: r, isHighlighted: a }) {
                 const i = e || n.createElement(oe.ZP, null, le),
                     o = r || (!e && t);
@@ -151,29 +151,29 @@
                 we = r(289405),
                 be = r(798538),
                 De = r(38562),
-                ye = r(131290),
-                Ce = r(601576),
+                Ce = r(131290),
+                ye = r(601576),
                 xe = r(919022),
-                Ze = r(593953);
-            const He = (e, t) => t.conversationId,
+                He = r(593953);
+            const Ze = (e, t) => t.conversationId,
                 Se = (0, ve.P1)(
-                    (e, t) => c.selectEntriesForConversation(e, He(0, t)),
+                    (e, t) => c.selectEntriesForConversation(e, Ze(0, t)),
                     b._h,
-                    (e, t) => (t ? (0, Ze.y9)(e, t) : void 0),
+                    (e, t) => (t ? (0, He.y9)(e, t) : void 0),
                 ),
                 Te = (e) => (t) => be.De(e, t),
                 Pe = (e) => (t, r) => be.rA(e, t, r),
-                Ie = { conversation: (e, t) => c.selectConversation(e, He(0, t)), entries: c.selectEntries, perspective: b._h, users: xe.ZP.selectAll, dataSaverMode: De.IX, dtabBarInfo: we.U6, quickReplyOptions: Se, visibility: d.kX, inboxUnreadCount: k.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, He(0, t)), isDmReceiptSettingEnabled: ye.cn },
-                Re = { draftText: (e, t) => be.vb(e, He(0, t)), gifMetadata: (e, t) => be.Tu(e, He(0, t)), isUploading: (e, t) => be.q9(e, He(0, t)), media: (e, t) => be.W8(e, He(0, t)), mediaUploadProgress: (e, t) => be.Ah(e, He(0, t)) },
-                Me = (0, fe.Z)()
+                Ie = { conversation: (e, t) => c.selectConversation(e, Ze(0, t)), entries: c.selectEntries, perspective: b._h, users: xe.ZP.selectAll, dataSaverMode: De.IX, dtabBarInfo: we.U6, quickReplyOptions: Se, visibility: d.kX, inboxUnreadCount: k.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, Ze(0, t)), isDmReceiptSettingEnabled: Ce.cn },
+                Re = { draftText: (e, t) => be.vb(e, Ze(0, t)), gifMetadata: (e, t) => be.Tu(e, Ze(0, t)), isUploading: (e, t) => be.q9(e, Ze(0, t)), media: (e, t) => be.W8(e, Ze(0, t)), mediaUploadProgress: (e, t) => be.Ah(e, Ze(0, t)) },
+                _e = (0, fe.Z)()
                     .propsFromState(() => ({ ...Ie, ...Re }))
                     .adjustStateProps(({ conversation: e, dataSaverMode: t, draftText: r, dtabBarInfo: n, entries: a, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUnread: l, isUploading: c, media: d, mediaUploadProgress: u, perspective: h, quickReplyOptions: p, users: g, visibility: m }) => {
                         const v = e?.data;
                         return { conversation: v && (0, Ee.lk)(v, a, g), perspective: h, dataSaverMode: t, draftText: r, dtabBarInfo: n, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUploading: c, isUnread: l, media: d, mediaUploadProgress: u, quickReplyOptions: p, visibility: m };
                     })
-                    .propsFromActions(({ conversationId: e }) => ({ addMedia: Pe(e), addToast: Ce.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: be.E4, sendMessage: be.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
+                    .propsFromActions(({ conversationId: e }) => ({ addMedia: Pe(e), addToast: ye.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: be.E4, sendMessage: be.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
                     .withAnalytics({ page: "messages", section: "thread_drawer" });
-            class _e extends n.Component {
+            class Me extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._composer = n.createRef()),
@@ -199,23 +199,23 @@
                 }
                 render() {
                     const e = this._isExpanded();
-                    return n.createElement(R.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (Z.ZP.isDesktopOS() ? n.createElement(T, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
+                    return n.createElement(R.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (H.ZP.isDesktopOS() ? n.createElement(T, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
                 }
                 _renderHeader() {
                     const { conversation: e, conversationId: t, inboxUnreadCount: r, isHeaderHighlighted: a, isUnread: i, onDrawerOpen: o, perspective: s, triggerHeaderHighlight: l } = this.props,
                         c = a ? "white" : "text",
                         d = a ? "white" : "gray700",
-                        u = e && (e.type === M.eD.ONE_TO_ONE || e.type === M.eD.SECRET_ONE_TO_ONE) && s && (0, I.Z)(e, s).map(({ user: e }) => e.screen_name),
-                        p = u ? n.createElement(C.Z, { color: d, screenName: u[0] }) : void 0;
-                    return n.createElement(h.Z, { style: Ue.headerRoot }, n.createElement(U._g.Provider, { value: t }, n.createElement(me, { conversationSubtitle: p, conversationTitle: n.createElement(_.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: a, onDrawerOpen: o, triggerHighlight: l })));
+                        u = e && (e.type === _.eD.ONE_TO_ONE || e.type === _.eD.SECRET_ONE_TO_ONE) && s && (0, I.Z)(e, s).map(({ user: e }) => e.screen_name),
+                        p = u ? n.createElement(y.Z, { color: d, screenName: u[0] }) : void 0;
+                    return n.createElement(h.Z, { style: Ue.headerRoot }, n.createElement(U._g.Provider, { value: t }, n.createElement(me, { conversationSubtitle: p, conversationTitle: n.createElement(M.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: a, onDrawerOpen: o, triggerHighlight: l })));
                 }
                 _updatePolling() {
                     this._pollingTimer && this._pollingTimer.stop(), this.props.visibility === w.S.COLLAPSED && ((this._pollingTimer = new P.Z(this._fetchUpdatesIfNeeded, { interval: 3e3 })), this._pollingTimer.start());
                 }
             }
-            _e.contextType = H.rC;
+            Me.contextType = Z.rC;
             const Ue = x.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
-                Ae = Me(_e);
+                Ae = _e(Me);
             var ke = r(293115),
                 Oe = r(715601),
                 Ne = r(602920),
@@ -225,8 +225,8 @@
                 Be = r(288331),
                 qe = r(826760),
                 Xe = r(149290),
-                ze = r(763526);
-            const Ge = G().a2f81050;
+                Ge = r(763526);
+            const ze = z().a2f81050;
             function Ve({ dmDrawerOnClick: e, drawerCacheKey: t }) {
                 const r = (0, F.z)(),
                     a = (0, l.I0)(),
@@ -245,8 +245,8 @@
                     ),
                     p = h.newUntrustedWithSocialProof + h.oldUntrustedWithSocialProof + h.newUntrustedWithoutSocialProof + h.oldUntrustedWithoutSocialProof,
                     g = d && (p > 0 || u > 0),
-                    m = () => n.createElement(n.Fragment, null, n.createElement(ze.J, null), n.createElement(Xe.Z, { allowUntrustedInbox: g, secondaryInboxCounts: h }));
-                return n.createElement(Be.Z, { accessibilityTitle: Ge, analytics: r, conversationIds: s, customCellClick: e, fetchInboxHistory: () => a(c.fetchTrustedInboxHistory()), isDrawer: !0, renderEmptyDMInbox: () => n.createElement(qe.Z, { messageRequestPivot: m() }), renderStickyContent: m, updateLastSeenEventId: () => a(c.updateTrustedLastSeenEventId()), virtualScrollerCacheKey: t, withPinnedInbox: !0 });
+                    m = () => n.createElement(n.Fragment, null, n.createElement(Ge.J, null), n.createElement(Xe.Z, { allowUntrustedInbox: g, secondaryInboxCounts: h }));
+                return n.createElement(Be.Z, { accessibilityTitle: ze, analytics: r, conversationIds: s, customCellClick: e, fetchInboxHistory: () => a(c.fetchTrustedInboxHistory()), isDrawer: !0, renderEmptyDMInbox: () => n.createElement(qe.Z, { messageRequestPivot: m() }), renderStickyContent: m, updateLastSeenEventId: () => a(c.updateTrustedLastSeenEventId()), virtualScrollerCacheKey: t, withPinnedInbox: !0 });
             }
             const Ke = "dmDrawerInbox";
             function Ye({ renderHeader: e }) {
@@ -290,16 +290,16 @@
                     o = (0, a.useHistory)(),
                     s = (0, a.useLocation)(),
                     c = (0, l.v9)(b._h),
-                    C = (0, l.v9)(d.gw),
+                    y = (0, l.v9)(d.gw),
                     x = (0, l.v9)((e) => d.kX(e)),
-                    Z = (0, D.N)(),
-                    [H, S] = n.useState(!1),
+                    H = (0, D.N)(),
+                    [Z, S] = n.useState(!1),
                     [T, P] = n.useState(void 0),
                     I = x === w.S.EXPANDED,
                     R = () => {
-                        H && (S(!1), clearTimeout(i.current));
+                        Z && (S(!1), clearTimeout(i.current));
                     },
-                    M = (e) => {
+                    _ = (e) => {
                         const {
                             nativeEvent: {
                                 layout: { height: t },
@@ -307,15 +307,15 @@
                         } = e;
                         I || void 0 !== T || P(t);
                     },
-                    _ = n.useCallback(() => {
+                    M = n.useCallback(() => {
                         I ||
-                            H ||
+                            Z ||
                             i.current ||
                             (S(!0),
                             (i.current = setTimeout(() => {
                                 S(!1), (i.current = null);
                             }, et)));
-                    }, [I, H]);
+                    }, [I, Z]);
                 n.useEffect(
                     () => () => {
                         clearTimeout(i.current);
@@ -372,7 +372,7 @@
                     ? n.createElement(
                           p.Z.Drawer,
                           null,
-                          n.createElement(g.Z, { id: "DMDrawer" }, (e, t) => n.createElement(y.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Ne.Z.root, O && Ne.Z.expandable, !I && T && { height: T, maxHeight: T }, { width: r }, k, v.Z.reducedMotionEnabled && Ne.Z.reducedMotion], testID: B.root })), n.createElement(h.Z, { onLayout: T ? void 0 : M, ref: A, style: [I ? Ne.Z.expanded : null, Ne.Z.main] }, C ? n.createElement(E.Z.Provider, { value: rt }, n.createElement(Ae, { conversationId: C, history: o, isHeaderHighlighted: H, location: s, onDrawerOpen: R, perspective: c, triggerHeaderHighlight: _, typingNotifier: Z })) : n.createElement(E.Z.Provider, { value: tt }, n.createElement($e, { isHeaderHighlighted: H, onDrawerOpen: R, triggerHeaderHighlight: _ }))))))),
+                          n.createElement(g.Z, { id: "DMDrawer" }, (e, t) => n.createElement(C.Z.Provider, { value: { isDrawer: !0 } }, n.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, n.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Ne.Z.root, O && Ne.Z.expandable, !I && T && { height: T, maxHeight: T }, { width: r }, k, v.Z.reducedMotionEnabled && Ne.Z.reducedMotion], testID: B.root })), n.createElement(h.Z, { onLayout: T ? void 0 : _, ref: A, style: [I ? Ne.Z.expanded : null, Ne.Z.main] }, y ? n.createElement(E.Z.Provider, { value: rt }, n.createElement(Ae, { conversationId: y, history: o, isHeaderHighlighted: Z, location: s, onDrawerOpen: R, perspective: c, triggerHeaderHighlight: M, typingNotifier: H })) : n.createElement(E.Z.Provider, { value: tt }, n.createElement($e, { isHeaderHighlighted: Z, onDrawerOpen: R, triggerHeaderHighlight: M }))))))),
                       )
                     : null;
             }
@@ -399,19 +399,6 @@
                 return n.createElement(at, { isHideDMDrawerPath: o, width: e });
             }
         },
-        452693: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                a = r(890601),
-                i = r(783427),
-                o = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
         662678: (e, t, r) => {
             r.d(t, { G: () => a, Z: () => n });
             r(136728);
@@ -430,4 +417,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.c066153a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.7494971a.js.map

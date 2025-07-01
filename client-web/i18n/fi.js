@@ -13,10 +13,18 @@
                 var e, n;
             }
             e("c39b0e24", "X"),
+                e("bcd6bb0e", "Jäsen"),
+                e("hd8c22d2", "Mod"),
+                e("c3153100", "Järj.valv."),
                 e("jb38600c", "Ei mitään"),
                 e("f07eac34", "Parodiatili"),
                 e("a41b5c2e", "Fanitili"),
                 e("i428ea62", "Kommentaaritili"),
+                e("jd859c9c", "Sinut on poistettu tästä Huoneesta."),
+                e("cfbea177", function (a) {
+                    return "Käyttäjän " + a.name + " huone";
+                }),
+                e("ab4fc8bc", "Tila"),
                 e("ac0d27be", "Valitettavasti tämä tili on jäädytetty."),
                 e("bcee7444", "Tilin päivitys epäonnistui."),
                 e("e0cbf77a", "Lisää puhelin"),
@@ -57,9 +65,6 @@
                 e("h1cbdd30", "Päivitä sivu ja yritä uudelleen."),
                 e("a5077d3e", "Päivitä"),
                 e("b2648ba4", "Tililläsi ei ehkä saa suorittaa tätä toimintoa. Päivitä sivu ja yritä uudelleen."),
-                e("bcd6bb0e", "Jäsen"),
-                e("hd8c22d2", "Mod"),
-                e("c3153100", "Järj.valv."),
                 e("fa9adac1", function (a) {
                     return 'Hae hakusanalla "' + a.query + '"';
                 }),
@@ -72,19 +77,12 @@
                 e("c64e46f8", "Tämä jäsen poistettiin Yhteisöstä, joten hänen julkaisunsa on piilotettu."),
                 e("b3f1cb42", "Moderaattori piilotti tämän julkaisun, koska se rikkoo Yhteisön sääntöä."),
                 e("cbd2dc9c", "Ilmiannoit tämän julkaisun."),
-                e("cfbea177", function (a) {
-                    return "Käyttäjän " + a.name + " huone";
-                }),
-                e("ab4fc8bc", "Tila"),
-                e("jd859c9c", "Sinut on poistettu tästä Huoneesta."),
                 e("c60ed9b0", "Sinulla ei ole valtuuksia liittyä tähän Huoneeseen."),
                 e("d8227e16", "Sinulla ei ole valtuuksia tämän Huoneen luomiseen"),
                 e("f027fed8", "Kuva kuvassa"),
                 e("hd50e064", "Ei nyt"),
                 e("i76d640e", "Tarvitsemme lupasi"),
                 e("fdaa0be8", "Tässä Huoneessa puhuaksesi sinun on myönnettävä X:lle oikeus mikrofonisi käyttöön. Tarkista selaimesi asetukset. "),
-                e("gea6cc1a", "Oletko varma?"),
-                e("hb568af4", "Hiljennä"),
                 e("f7c8617a", "Mitä klipit ovat?"),
                 e("ecc7d2ec", "Klipit ovat hetkiä, joita kuka tahansa Huoneessasi voi luoda ja jakaa. Kaikki klipit vanhenevat 30 päivässä."),
                 e("d575ee02", "Kuka voi luoda klipin?"),
@@ -102,16 +100,6 @@
                 e("jf03b37c", "Kuuntele tallenne milloin tahansa. Voit myös jakaa sen julkaisuna."),
                 e("fd05976b", "Lue lisää"),
                 e("b4f91a8a", "Tallennus käynnissä"),
-                e("gb418012", "Tervetuloa Huoneisiin"),
-                e("fec3c1e0", "Areena live-keskusteluille"),
-                e("j32eb4f8", "Lisää jopa 10 puhujaa"),
-                e("j4f133a6", "Voit kutsua kenet tahansa X:ssä puhumaan."),
-                e("ed434ac6", "Huoneet ovat julkisia — kuka tahansa voi liittyä mukaan"),
-                e("e0025688", "Huoneessasi sinä määräät"),
-                e("c1bc6f86", "Hostina sinä määräät. Sinulla on myös oikeus poistaa ihmisiä, joita et halua huoneeseesi."),
-                e("b0bc8330", "Voit myös estää ja ilmiantaa ihmisiä Huoneessa."),
-                e("cb17a0f3", "Lue lisää"),
-                e("dcd77941", "Lue lisää"),
                 e("cc724cb0", "Luo klippi"),
                 e("cfd2f35e", "Peruuta"),
                 e("c1df579e", "Seuraava"),
@@ -125,6 +113,16 @@
                 e("a9ba3e28", "Yksityiset tiedot"),
                 e("d5519f4a", "Häirintä"),
                 e("eb55363c", "Tämä Huone on ilmiannettu."),
+                e("gb418012", "Tervetuloa Huoneisiin"),
+                e("fec3c1e0", "Areena live-keskusteluille"),
+                e("j32eb4f8", "Lisää jopa 10 puhujaa"),
+                e("j4f133a6", "Voit kutsua kenet tahansa X:ssä puhumaan."),
+                e("ed434ac6", "Huoneet ovat julkisia — kuka tahansa voi liittyä mukaan"),
+                e("e0025688", "Huoneessasi sinä määräät"),
+                e("c1bc6f86", "Hostina sinä määräät. Sinulla on myös oikeus poistaa ihmisiä, joita et halua huoneeseesi."),
+                e("b0bc8330", "Voit myös estää ja ilmiantaa ihmisiä Huoneessa."),
+                e("cb17a0f3", "Lue lisää"),
+                e("dcd77941", "Lue lisää"),
                 e("i65de934", "Kuuntelet anonyymina"),
                 e("b1037050", "Hallitse Huonetta"),
                 e("ic107434", "Avaa kamera"),
@@ -903,10 +901,10 @@
                 e("bf9e181b", "Lue lisää"),
                 e("e8e39f95", "Lue lisää"),
                 e("e126dd3f", "Lue lisää"),
-                e("i821844f", "Lue lisää");
-            e("b0abbb17", "Lue lisää"),
-                e("e7e0d88b", "Lue lisää"),
-                e("i560665f", "Lue lisää"),
+                e("i821844f", "Lue lisää"),
+                e("b0abbb17", "Lue lisää"),
+                e("e7e0d88b", "Lue lisää");
+            e("i560665f", "Lue lisää"),
                 e("f6e774d9", "Lue lisää"),
                 e("h486f755", "Lue lisää"),
                 e("bab41dab", "Lue lisää"),
@@ -1122,6 +1120,7 @@
                 e("dbb51952", "Suojataanko julkaisusi?"),
                 e("de735de6", "Tämä saa ne näkymään vain X-seuraajillesi."),
                 e("c5d4192a", "Suojaa"),
+                e("gea6cc1a", "Oletko varma?"),
                 e("d9ddba70", "Yhteisöt ovat julkisia, joten suojaamalla tilisi piilotat aiemmat julkaisusi. Et myöskään voit julkaista Yhteisössä, ennen kuin tilisi on jälleen julkinen."),
                 e("f527b322", "Suojaa tilini"),
                 e("d165c992", "Kuka tahansa voi merkitä sinut"),
@@ -1318,9 +1317,10 @@
                     return "Suoritetaan koodia" + a.ttc_tool_usage_card;
                 }),
                 e("aa9d42c0", "Haetaan verkosta"),
-                e("dce1817a", "Haetaan 𝕏:stä"),
-                e("f7151564", "Haetaan 𝕏:n käyttäjistä"),
+                e("c731d702", "Searching on X"),
+                e("d0e02476", "Searching users on X"),
                 e("c43ef93e", "Selataan verkkosivua"),
+                e("dab166ec", "Searching user posts on X"),
                 e("jb097f6e", "Suoritetaan koodia"),
                 e("ead81122", "Jokin meni pieleen. Muodosta yhteys uudelleen päivittämällä tai yritä uudelleen."),
                 e("f808a13a", "Toimintojen määrää on rajoitettu. Odota muutama hetki ja yritä sitten uudelleen."),
@@ -1814,6 +1814,7 @@
                 e("g00b4c55", function (a) {
                     return "Jaa @" + a.screenName + " käyttäen...";
                 }),
+                e("hb568af4", "Hiljennä"),
                 e("bb1cbeb6", "Poista hiljennys"),
                 e("h2f62206", "Käyttäjä hiljennetään"),
                 e("h59f52ee", "Hiljennys onnistui."),
@@ -1914,11 +1915,11 @@
                 e("ef1649e2", "X - Pikanäppäimet"),
                 e("aefd89c8", "Navigointi"),
                 e("cafdefb2", "Toiminnot"),
-                e("dda42cf2", "Sarakkeet ja dekit"),
-                e("e8a12604", "Lisää kuvateksti (valinnainen)");
-            e("eabf2209", function (a) {
-                return "GIF lähteestä " + a.providerName;
-            }),
+                e("dda42cf2", "Sarakkeet ja dekit");
+            e("e8a12604", "Lisää kuvateksti (valinnainen)"),
+                e("eabf2209", function (a) {
+                    return "GIF lähteestä " + a.providerName;
+                }),
                 e("a613e720", "Kopioi GIFin linkki"),
                 e("aeca1239", function (a) {
                     return "Lihavointi" + a.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 e("e06b864c", "Tämä keskustelu näyttää olevan mieleesi"),
                 e("a078ff70", "Haluatko nähdä enemmän sisältöä niiltä ihmisiltä, joiden kanssa keskustelit tässä ketjussa? Ala lukea sisältöä uusilta tileiltä."),
                 e("cb80300e", "Siirry etusivun aikajanalle"),
-                e("ea5cd098", "Siirry suosittuihin puheenaiheisiin"),
-                e("c67e3fc2", "Etusivun aikajana");
-            e("d601fc20", "Uusimmat"),
+                e("ea5cd098", "Siirry suosittuihin puheenaiheisiin");
+            e("c67e3fc2", "Etusivun aikajana"),
+                e("d601fc20", "Uusimmat"),
                 e("j43f99be", "Relevanssi"),
                 e("ad6e11ac", "Vastausten lajittelutapa"),
                 e("b2311b70", "Tätä sisältöä ei näytetä sinulle"),
@@ -3894,13 +3895,13 @@
                 }),
                 e("f5c7aaa7", function (a) {
                     return "host" + n(a.count, "", "ia");
-                }),
-                e("fc56c8b1", function (a) {
-                    return "co-host" + n(a.count, "", "ia");
                 });
-            e("iba0f45d", function (a) {
-                return "puhuja" + n(a.count, "", "a");
+            e("fc56c8b1", function (a) {
+                return "co-host" + n(a.count, "", "ia");
             }),
+                e("iba0f45d", function (a) {
+                    return "puhuja" + n(a.count, "", "a");
+                }),
                 e("dc066955", function (a) {
                     return "kuuntelija" + n(a.count, "", "a");
                 }),
@@ -4930,9 +4931,9 @@
                 e("ff95a9cc", "Videon tunnus"),
                 e("a97e358e", "Videon linkki"),
                 e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
-                e("ba37f6da", "Yhteenveto videoista"),
-                e("f19846b2", "Videon esikatselukuva");
-            e("ccd6f4a8", "Videon nimi"),
+                e("ba37f6da", "Yhteenveto videoista");
+            e("f19846b2", "Videon esikatselukuva"),
+                e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
                 e("a532072a", "Katsojat"),
                 e("d9508ab0", "näyttöä"),
@@ -5550,6 +5551,7 @@
                 e("bd7eb888", "Näytä kaikki tämän julkaisun huomautukset"),
                 e("i97b83f6", "Muutoshakemustasi lähetettäessä tapahtui virhe. Yritä uudelleen."),
                 e("a038ab9a", "Käännä huomautus"),
+                e("icdb6d74", "Ehdottanut kokeellinen tekoälyapuri, joka vastaa huomautuspyyntöihin. Kuten huomautuksia kirjoittavat käyttäjät, myös tekoäly tekee virheitä. Tarkista teksti."),
                 e("i606fc4c", "Yhteisöhuomautusten muutoksenhausta"),
                 e("b664c554", "Pyydä lisäarvioita"),
                 e("ab66e1f2", "Näin se toimii:"),
@@ -5565,6 +5567,7 @@
                 e("ge25848a", "Nykytila"),
                 e("d6db34cc", "Lisää arvioita kaivataan"),
                 e("ce8b505e", "Ei hyödyllinen"),
+                e("j42c88b6", "Kokeellinen huomautusbotti"),
                 e("e5be8156", "Huomautuksen tilan määritti avoimen lähdekoodin algoritmi"),
                 e("fca23c42", "Riittävä lukumäärä eri näkökantoja edustavia tekijöitä on todennut tämän huomautuksen hyödylliseksi, joten se näytetään julkaisun kontekstina."),
                 e("hef420c2", "Tällä huomautuksella ei vielä ole riittävää määrää arviointeja eri näkökantoja edustajilta käyttäjiltä."),
@@ -5880,11 +5883,11 @@
                 e("ab1b3d38", "Huomautuspyyntödataa ei vielä ole saatavana"),
                 e("c43fb933", "kehittäjäsopimusta ja -käytäntöä"),
                 e("af781666", "Mitä ihmiset miettivät?"),
-                e("a1f414ee", "Kerro mielipiteesi"),
-                e("ed88e742", "Kopioi linkki aiheeseen"),
+                e("a1f414ee", "Kerro mielipiteesi");
+            e("ed88e742", "Kopioi linkki aiheeseen"),
                 e("h92fe1be", "Valitettavasti Yhteisöhuomautukset ei vielä ole käytettävissäsi."),
-                e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa.");
-            e("f8fc0b48", "Luo kansio"),
+                e("f0dc1434", "Yhteisöhuomautukset on toistaiseksi käytettävissä vain Yhdysvalloissa."),
+                e("f8fc0b48", "Luo kansio"),
                 e("c14bcdde", "Hae kirjanmerkeistä"),
                 e("e9c65c4a", "Haku kirjanmerkeistä"),
                 e("b92a21d9", function (a) {
@@ -6886,11 +6889,11 @@
                 e("j3d242ce", "Virheellinen väli"),
                 e("f4d07bd2", "Lisää halutessasi yksityiskohtia, jotta hakijat löytävät helpommin avoimet paikkasi hakutoiminnolla."),
                 e("b8cbb51a", "Tehtävän yhteenveto"),
-                e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata."),
-                e("b075c68a", "Muokkaa työpaikkaa"),
+                e("bda6881e", "Tämä työpaikka on tuotu hakijaseurantajärjestelmästäsi (Applicant Tracking System, ATS). Huomaathan, että vain osaa kentistä voi muokata.");
+            e("b075c68a", "Muokkaa työpaikkaa"),
                 e("d4b6a6e0", "Profiilivalokeila"),
-                e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella.");
-            e("af1cfd46", "ATS-integraatio"),
+                e("j2dd3686", "Esittele työpaikkoja julkaisujeni yläpuolella."),
+                e("af1cfd46", "ATS-integraatio"),
                 e("d6fa2944", "Integroinnin poistaminen ei poista jo tuotuja työpaikkoja."),
                 e("h99f11fa", "Poista integraatio"),
                 e("eef1ae76", "Yhdistetty nyt"),
@@ -7868,10 +7871,7 @@
                 e("d7b8387e", "Jos olet jo perunut, sinun ei tarvitse tehdä muuta. Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
                 e("f4166d9a", "Haluatko perua Tilauksesi?"),
                 e("b74ff5fc", "Jos perut, Tilauksesi päättyy automaattisesti laskutuskauden päättyessä."),
-                e("ee9efbc8", "Jatka perumaan"),
-                e("c5d9c77a", "Jossain oli jotain häikkää. Älä huoli, vika ei ole sinun. Sulje tämä ikkuna ja yritä uudelleen."),
-                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta."),
-                e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta.");
+                e("ee9efbc8", "Jatka perumaan");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7910,9 +7910,12 @@
                     u(a, t)
                 );
             }
-            e("i5f14be7", function (a) {
-                return "Tervetuloa takaisin, " + a.displayName;
-            }),
+            e("c5d9c77a", "Jossain oli jotain häikkää. Älä huoli, vika ei ole sinun. Sulje tämä ikkuna ja yritä uudelleen."),
+                e("jda53c24", "Voit perua Tilauksesi Applen App Storen kautta."),
+                e("g0a7a53e", "Voit perua Tilauksesi Googlen Play -kaupan kautta."),
+                e("i5f14be7", function (a) {
+                    return "Tervetuloa takaisin, " + a.displayName;
+                }),
                 e("a76d58ba", "Mainostilastot"),
                 e("eccd0e1a", "Organisaation analytiikka"),
                 e("deea1708", "Haluatko tarkastella tilastoja kaikista X-tileistäsi?"),
@@ -8908,11 +8911,11 @@
                 }),
                 e("b0b22805", function (a) {
                     return "Käy paikassa " + a.advertiserName;
-                }),
-                e("c67e71aa", "Katso nyt"),
+                });
+            e("c67e71aa", "Katso nyt"),
                 e("a6ada13e", "Osta nyt"),
-                e("j0f12222", "Näe lisää");
-            e("f569f7c8", "Siirry sivustolle"),
+                e("j0f12222", "Näe lisää"),
+                e("f569f7c8", "Siirry sivustolle"),
                 e("j0c6772a", "Käy sivustolla"),
                 e("f73003aa", "Video näytetään mainoksen jälkeen"),
                 e("b3112b8a", "Ohita"),
@@ -13381,4 +13384,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.c90b861a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.69b0c89a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Account", "icons/IconCameraVideoStroke-js", "icons/IconDraw-js", "shared~loader.DashMenu~loader.DashModal"],
+    ["bundle.Account"],
     {
         395337: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -86,10 +86,10 @@
                 .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("DASH_MENU_CONTAINER"), fetchPendingFollowersIfNeeded: g.GE }))
                 .withAnalytics();
             var h = n(906433),
-                v = n(879526);
-            const w = ({ acceptedFollowerCount: e, analytics: t, pendingFollowerCount: n, viewerUser: s, onClose: d = c.Z }) => {
+                w = n(879526);
+            const v = ({ acceptedFollowerCount: e, analytics: t, pendingFollowerCount: n, viewerUser: s, onClose: d = c.Z }) => {
                     const { featureSwitches: m, userClaims: p } = (0, u.QZ)(),
-                        { coreItems: f, countrySpecificItems: g } = (0, v.O)({ analytics: t, featureSwitches: m, onClose: d, userClaims: p, viewerUser: s, acceptedFollowerCount: e, pendingFollowerCount: n });
+                        { coreItems: f, countrySpecificItems: g } = (0, w.O)({ analytics: t, featureSwitches: m, onClose: d, userClaims: p, viewerUser: s, acceptedFollowerCount: e, pendingFollowerCount: n });
                     return i.createElement(
                         i.Fragment,
                         null,
@@ -110,7 +110,7 @@
                     );
                     var b;
                 },
-                k = (0, d.ZP)(y(i.memo(w))),
+                k = (0, d.ZP)(y(i.memo(v))),
                 E = s.default.create((e) => ({ redesignDivider: { width: "89%", alignSelf: "center" }, countrySpecificItem: { flexGrow: 1, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, divider: { width: "89%", margin: "auto" } }));
         },
         879526: (e, t, n) => {
@@ -132,8 +132,8 @@
                 _ = n(511323),
                 y = n(80361),
                 h = n(856151),
-                v = n(53674),
-                w = n(792618),
+                w = n(53674),
+                v = n(792618),
                 k = n(520913),
                 E = n(297896),
                 C = n(175564),
@@ -142,23 +142,23 @@
                 P = n(68290),
                 T = n(707570),
                 F = n(839),
-                I = n(593875),
-                S = n(829110),
-                M = n(720930),
-                A = n(516951),
-                D = n(450681),
-                L = n(400915),
+                S = n(593875),
+                I = n(829110),
+                A = n(720930),
+                M = n(516951),
+                L = n(450681),
+                D = n(400915),
                 V = n(420182),
-                z = n(997657),
-                N = n(306114),
-                O = n(279918),
+                N = n(997657),
+                O = n(306114),
+                U = n(279918),
                 B = n(722517),
-                U = n(880647),
+                z = n(880647),
                 R = n(655352),
-                j = n(125363),
-                $ = n(466036),
-                H = n(390387),
-                K = n(76920),
+                $ = n(125363),
+                j = n(466036),
+                K = n(390387),
+                H = n(76920),
                 W = n(477403),
                 G = n(104119),
                 q = n(484633),
@@ -186,40 +186,40 @@
                 _e = c().b007440a,
                 ye = c().a5cbc19a,
                 he = c().d13d697c,
-                ve = c().j0e2cfa8,
-                we = c().h5e38204,
+                we = c().j0e2cfa8,
+                ve = c().h5e38204,
                 ke = c().h7d5d9fa,
                 Ee = "rweb.navItemDecorations",
-                Ce = ({ analytics: e, featureSwitches: t, onClose: n = A.Z, userClaims: s, viewerUser: c, acceptedFollowerCount: Ce, pendingFollowerCount: Ze }) => {
+                Ce = ({ analytics: e, featureSwitches: t, onClose: n = M.Z, userClaims: s, viewerUser: c, acceptedFollowerCount: Ce, pendingFollowerCount: Ze }) => {
                     let xe = [],
                         Pe = [];
                     const Te = (0, B.Z)("PremiumNav"),
                         Fe = t.isTrue("subscriptions_branding_checkmark_logo_enabled"),
-                        Ie = (0, r.Dv)(V.lZ),
-                        [Se, Me] = i.useState(!1),
-                        [Ae, De] = i.useState(!1),
-                        Le = t.isTrue("subscriptions_upsells_vo_nav_decoration_enabled"),
+                        Se = (0, r.Dv)(V.lZ),
+                        [Ie, Ae] = i.useState(!1),
+                        [Me, Le] = i.useState(!1),
+                        De = t.isTrue("subscriptions_upsells_vo_nav_decoration_enabled"),
                         Ve = t.getStringValue("subscriptions_upsells_vo_nav_decoration_variant"),
-                        ze = (0, G.Md)(Ve);
+                        Ne = (0, G.Md)(Ve);
                     i.useEffect(() => {
-                        ze &&
-                            Ie.get(Ee).then((e) => {
-                                Me(!e?.analyticsClickedV2), De(!e?.[ze?.key]);
+                        Ne &&
+                            Se.get(Ee).then((e) => {
+                                Ae(!e?.analyticsClickedV2), Le(!e?.[Ne?.key]);
                             });
-                    }, [Ie, ze]);
-                    const Ne = (0, j.I0)();
+                    }, [Se, Ne]);
+                    const Oe = (0, $.I0)();
                     i.useEffect(() => {
-                        c?.protected && Ne($.GE());
-                    }, [Ne, c]);
-                    const Oe = (0, K.Zy)();
-                    Oe.size > 0 && Oe.add("/settings");
-                    const Be = (0, j.v9)(H.Lz),
-                        Ue = ({ link: e }) => !(Be && (("string" == typeof e && ((e.startsWith("/settings") && !Oe.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.startsWith("/i/chat") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
+                        c?.protected && Oe(j.GE());
+                    }, [Oe, c]);
+                    const Ue = (0, H.Zy)();
+                    Ue.size > 0 && Ue.add("/settings");
+                    const Be = (0, $.v9)(K.Lz),
+                        ze = ({ link: e }) => !(Be && (("string" == typeof e && ((e.startsWith("/settings") && !Ue.has(e)) || e.includes("ads.twitter.com") || e.includes("studio.twitter.com") || e.includes("analytics.twitter.com") || e.includes("ads.x.com") || e.startsWith("/i/chat") || e.includes("studio.x.com") || e.includes("analytics.x.com"))) || ("object" == typeof e && e.pathname.startsWith("/i/flow")))),
                         Re = c?.screen_name || "",
-                        je = (0, l.iv)().width,
-                        $e = U.Z.isOneColumnLayout(je) || U.Z.isOneColumnSquishedLayout(je),
-                        He = t.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Be,
-                        Ke = t.isTrue("branded_like_preview_enabled"),
+                        $e = (0, l.iv)().width,
+                        je = z.Z.isOneColumnLayout($e) || z.Z.isOneColumnSquishedLayout($e),
+                        Ke = t.isTrue("responsive_web_birdwatch_note_writing_enabled") && !Be,
+                        He = t.isTrue("branded_like_preview_enabled"),
                         We = t.isTrue("subscriptions_sign_up_enabled"),
                         Ge = t.isTrue("dash_region_specific_de_media_transparency_items_enabled"),
                         qe = t.isTrue("blue_business_vo_nav_for_legacy_verified"),
@@ -229,7 +229,7 @@
                         Je = s.isTrueAndEnabled("subscriptions_feature_article_composer"),
                         et = Xe,
                         tt = s.isTrueAndEnabled("subscriptions_feature_article_composer") && !(0, R.ZP)(),
-                        { role: nt } = (0, L.l7)(),
+                        { role: nt } = (0, D.l7)(),
                         { activeItem: it } = (0, Q.Y)(),
                         rt = t.isTrue("voice_rooms_web_space_creation") && nt !== q.Q.host && it?.type !== q.W.space,
                         lt = t.isTrue("rweb_go_live_enabled"),
@@ -238,7 +238,7 @@
                         st = t.isTrue("recruiting_global_jobs_search_enabled"),
                         ct = (0, W.vC)(),
                         dt = t.isTrue("c9s_enabled") && !!c,
-                        ut = (0, N.Z)(),
+                        ut = (0, O.Z)(),
                         mt = i.useMemo(() => !(Xe || !ut) && t.isTrue("subscriptions_upsells_app_tab_bar_analytics_upsell_enabled"), [Xe, t, ut]),
                         pt = (t) => () => {
                             t && e.scribe({ section: "overflow_menu", element: t, action: "click", data: { message: "VDL redesign dash menu item" } }), n && n();
@@ -249,66 +249,66 @@
                         _t = { icon: u.default, label: Y, link: "/i/communitynotes", onClick: pt("birdwatch") },
                         yt = { icon: m.default, label: J, link: "/i/bookmarks", onClick: pt("bookmarks_overflow_item") },
                         ht = { icon: p.default, label: ee, link: "/i/branded_likes_preview", onClick: pt("branded_likes_preview_overflow_item") },
-                        vt = (f.default, pt("labs_item"), { icon: g.default, label: ie, link: `/${Re}/lists`, onClick: pt("lists_overflow_item") }),
-                        wt = { badgeCount: Ze, icon: b.default, label: te, link: "/follower_requests", onClick: pt("follower_requests_overflow_item") },
+                        wt = (f.default, pt("labs_item"), { icon: g.default, label: ie, link: `/${Re}/lists`, onClick: pt("lists_overflow_item") }),
+                        vt = { badgeCount: Ze, icon: b.default, label: te, link: "/follower_requests", onClick: pt("follower_requests_overflow_item") },
                         kt = { icon: _.default, label: ae, link: `/${Re}`, onClick: pt("profile_overflow_item") },
                         Et = { icon: y.default, label: "Money", link: "/i/money", onClick: pt("payments_overflow_item") },
                         Ct = { icon: h.default, label: de, link: "/i/coins", onClick: pt("twitter_coins") },
                         Zt = () => ({
-                            icon: v.default,
+                            icon: w.default,
                             label: ye,
                             link: { pathname: "/i/account_analytics", state: { cameFromUpsell: !0, referring_page: "analytics_dash_menu" } },
                             onClick:
-                                (Ie.get(Ee).then((e) => {
+                                (Se.get(Ee).then((e) => {
                                     const t = { ...e, analyticsClicked: !0, analyticsClickedV2: !0 };
-                                    Ie.set(Ee, t);
+                                    Se.set(Ee, t);
                                 }),
                                 pt("analytics")),
-                            decoration: Se ? i.createElement(o.ZP, { background: "blue500" }, he) : null,
+                            decoration: Ie ? i.createElement(o.ZP, { background: "blue500" }, he) : null,
                         }),
                         xt = () => {
                             const e = t.isTrue("subscriptions_upsells_premium_nav_migration_enabled"),
                                 { upsellContent: n } = e ? Te : {},
                                 r = "UpsellButtonRenderProperties" === n?.render_properties.__typename && n.render_properties.action_label ? n.render_properties.action_label : ge,
                                 l = "UpsellButtonRenderProperties" === Te?.upsellContent?.render_properties.__typename ? Te.upsellContent.render_properties.decoration_label : null;
-                            return { icon: Fe ? w.default : k.default, label: r, link: { pathname: "/i/premium_sign_up", state: { referring_page: "dash_menu" } }, onClick: pt("verified_overflow_item"), decoration: l ? i.createElement(o.ZP, { background: "blue500" }, l) : null };
+                            return { icon: Fe ? v.default : k.default, label: r, link: { pathname: "/i/premium_sign_up", state: { referring_page: "dash_menu" } }, onClick: pt("verified_overflow_item"), decoration: l ? i.createElement(o.ZP, { background: "blue500" }, l) : null };
                         },
-                        Pt = { icon: Fe ? w.default : k.default, label: ge, link: "/i/premium", onClick: pt("premium_hub") },
+                        Pt = { icon: Fe ? v.default : k.default, label: ge, link: "/i/premium", onClick: pt("premium_hub") },
                         Tt = { label: re, link: "/logout", icon: E.default, onClick: pt("logout_overflow_item"), testID: X.Z.logout },
                         Ft = { icon: C.default, label: ce, link: (0, a.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), onClick: pt("twitter_ads_item") },
-                        It = t.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
-                        St = { icon: Z.default, label: le, link: It ? "/i/monetization" : "/settings/monetization", onClick: pt("monetization") },
-                        Mt = { icon: x.default, label: oe, link: "/settings", onClick: pt("settings_overflow_item"), testID: X.Z.settings },
-                        At = () => ({
-                            label: Le ? ve : ue,
+                        St = t.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
+                        It = { icon: Z.default, label: le, link: St ? "/i/monetization" : "/settings/monetization", onClick: pt("monetization") },
+                        At = { icon: x.default, label: oe, link: "/settings", onClick: pt("settings_overflow_item"), testID: X.Z.settings },
+                        Mt = () => ({
+                            label: De ? we : ue,
                             onClick: () => (
-                                Le &&
-                                    ze &&
-                                    Ie.get(Ee).then((e) => {
-                                        const t = { ...e, [ze?.key]: !0 };
-                                        Ie.set(Ee, t);
+                                De &&
+                                    Ne &&
+                                    Se.get(Ee).then((e) => {
+                                        const t = { ...e, [Ne?.key]: !0 };
+                                        Se.set(Ee, t);
                                     }),
                                 pt("verified_organization_signup_item")()
                             ),
                             link: { pathname: "/i/verified-orgs-signup", state: { referring_page: "dash_menu" } },
                             icon: P.default,
-                            decoration: Ae && Le && ze ? i.createElement(o.ZP, { background: "blue500" }, ze.label) : null,
+                            decoration: Me && De && Ne ? i.createElement(o.ZP, { background: "blue500" }, Ne.label) : null,
                         }),
-                        Dt = { label: ue, onClick: pt("verified_organization_dashboard_item"), link: "/i/verified", icon: P.default },
-                        Lt = { label: me, onClick: pt("create_space_item"), link: "/i/spaces/start", icon: T.default },
+                        Lt = { label: ue, onClick: pt("verified_organization_dashboard_item"), link: "/i/verified", icon: P.default },
+                        Dt = { label: me, onClick: pt("create_space_item"), link: "/i/spaces/start", icon: T.default },
                         Vt = { label: pe, onClick: pt("go_live_item"), link: "/i/go-live", icon: F.default },
-                        zt = c ? { label: fe, onClick: pt("communities_item"), link: `/${c.screen_name}/communities`, icon: I.default } : void 0,
-                        Nt = Qe && c ? { label: we, onClick: pt("chat_item"), link: "/i/chat", icon: S.default, decoration: i.createElement(o.ZP, { background: "blue500" }, ke) } : void 0,
-                        Ot = t.isTrue("spaces_conference_enabled") || !!ct,
+                        Nt = c ? { label: fe, onClick: pt("communities_item"), link: `/${c.screen_name}/communities`, icon: S.default } : void 0,
+                        Ot = Qe && c ? { label: ve, onClick: pt("chat_item"), link: "/i/chat", icon: I.default, decoration: i.createElement(o.ZP, { background: "blue500" }, ke) } : void 0,
+                        Ut = t.isTrue("spaces_conference_enabled") || !!ct,
                         Bt = { label: "Conferences", onClick: pt("conferences_item"), link: "/i/conferences", icon: F.default },
-                        Ut = { label: _e, onClick: pt("jobs_item"), link: "/jobs", icon: M.default },
+                        zt = { label: _e, onClick: pt("jobs_item"), link: "/jobs", icon: A.default },
                         Rt = [gt, bt],
-                        jt = We && !Xe,
-                        $t = qe,
-                        Ht = (0, D.Z)([Nt, kt, et ? Pt : void 0, ot ? Et : void 0, jt ? xt() : void 0, dt ? zt : void 0, Re ? vt : void 0, yt, tt ? ft : void 0, $t ? (Ye ? Dt : At()) : void 0, at ? Ct : void 0, He ? _t : void 0, Ze || Ce ? wt : void 0, mt ? Zt() : void 0, St, Ft, st ? Ut : void 0, Ot ? Bt : void 0, Mt, Tt]).filter(Ue),
-                        Kt = i.useContext(z.hC),
-                        Wt = (0, D.Z)([Nt, O.yw.Lists > Kt && Re ? vt : void 0, O.yw.Premium > Kt && et ? Pt : void 0, O.yw.PremiumSignup > Kt && jt ? xt() : void 0, O.yw.Bookmarks > Kt ? yt : void 0, O.yw.Payments > Kt && ot ? Et : void 0, O.yw.Communities > Kt && dt ? zt : void 0, O.yw.Articles > Kt && Je ? ft : void 0, O.yw.CommunityNotes > Kt && He ? _t : void 0, O.yw.Analytics > Kt && mt ? Zt() : void 0, St, O.yw.VerifiedOrgDash > Kt && $t && Ye ? Dt : void 0, (((!Ye || s.isLegacyVerifiedOrg()) && O.yw.VerifiedOrgSignup > Kt) || (s.isVerifiedOrgAffiliate() && !s.isVerifiedOrg())) && t.isTrue("blue_business_vo_nav_for_legacy_verified") ? At() : void 0, at ? Ct : void 0, Ke ? ht : void 0, Ze || Ce ? wt : void 0, Ft, O.yw.Jobs > Kt && st ? Ut : void 0, void 0, rt ? Lt : void 0, lt ? Vt : void 0, Ot ? Bt : void 0, Mt]).filter(Ue);
-                    return (0, R.ZP)() ? ((xe = xe.concat(Wt)), Ge && $e && (Pe = Rt)) : ((xe = xe.concat(Ht)), Ge && (Pe = Rt)), { coreItems: xe, countrySpecificItems: Pe };
+                        $t = We && !Xe,
+                        jt = qe,
+                        Kt = (0, L.Z)([Ot, kt, et ? Pt : void 0, ot ? Et : void 0, $t ? xt() : void 0, dt ? Nt : void 0, Re ? wt : void 0, yt, tt ? ft : void 0, jt ? (Ye ? Lt : Mt()) : void 0, at ? Ct : void 0, Ke ? _t : void 0, Ze || Ce ? vt : void 0, mt ? Zt() : void 0, It, Ft, st ? zt : void 0, Ut ? Bt : void 0, At, Tt]).filter(ze),
+                        Ht = i.useContext(N.hC),
+                        Wt = (0, L.Z)([Ot, U.yw.Lists > Ht && Re ? wt : void 0, U.yw.Premium > Ht && et ? Pt : void 0, U.yw.PremiumSignup > Ht && $t ? xt() : void 0, U.yw.Bookmarks > Ht ? yt : void 0, U.yw.Payments > Ht && ot ? Et : void 0, U.yw.Communities > Ht && dt ? Nt : void 0, U.yw.Articles > Ht && Je ? ft : void 0, U.yw.CommunityNotes > Ht && Ke ? _t : void 0, U.yw.Analytics > Ht && mt ? Zt() : void 0, It, U.yw.VerifiedOrgDash > Ht && jt && Ye ? Lt : void 0, (((!Ye || s.isLegacyVerifiedOrg()) && U.yw.VerifiedOrgSignup > Ht) || (s.isVerifiedOrgAffiliate() && !s.isVerifiedOrg())) && t.isTrue("blue_business_vo_nav_for_legacy_verified") ? Mt() : void 0, at ? Ct : void 0, He ? ht : void 0, Ze || Ce ? vt : void 0, Ft, U.yw.Jobs > Ht && st ? zt : void 0, void 0, rt ? Dt : void 0, lt ? Vt : void 0, Ut ? Bt : void 0, At]).filter(ze);
+                    return (0, R.ZP)() ? ((xe = xe.concat(Wt)), Ge && je && (Pe = Rt)) : ((xe = xe.concat(Kt)), Ge && (Pe = Rt)), { coreItems: xe, countrySpecificItems: Pe };
                 };
         },
         206962: (e, t, n) => {
@@ -417,8 +417,8 @@
                 _ = n(363047),
                 y = n(902641),
                 h = n(273413),
-                v = n(602737),
-                w = n(905346),
+                w = n(602737),
+                v = n(905346),
                 k = n(269653),
                 E = n(686010),
                 C = n(291394),
@@ -427,35 +427,35 @@
                 P = n(575626),
                 T = n(752475),
                 F = n(334113),
-                I = n(873930),
-                S = n(125363),
-                M = n(919022),
-                A = n(312771),
-                D = n(673932),
-                L = n(87063),
+                S = n(873930),
+                I = n(125363),
+                A = n(919022),
+                M = n(312771),
+                L = n(673932),
+                D = n(87063),
                 V = n(668214),
-                z = n(903558),
-                N = n(682461);
-            const O = (e, t) => {
+                N = n(903558),
+                O = n(682461);
+            const U = (e, t) => {
                     const { match: n } = t,
                         i = n.params.screenName,
                         r = e.tv?.profile?.[i?.toLowerCase() || ""];
                     return r;
                 },
                 B = (e) => e.tv?.player,
-                U = (e, t) => {
+                z = (e, t) => {
                     const { match: n } = t,
                         i = n.params.screenName;
                     return e.tv?.profile?.[i?.toLowerCase() || ""]?.cursor;
                 },
-                R = (e) => e.tv?.profileFetchStatus === L.Z.LOADING,
-                j = (0, V.Z)()
-                    .propsFromState(() => ({ tvProfile: O, tvPlayer: B, cursor: U, isLoading: R }))
-                    .propsFromActions(() => ({ playerOpen: z.eX.playerOpen, fetchUserProfileAndVideos: N.Sn }))
+                R = (e) => e.tv?.profileFetchStatus === D.Z.LOADING,
+                $ = (0, V.Z)()
+                    .propsFromState(() => ({ tvProfile: U, tvPlayer: B, cursor: z, isLoading: R }))
+                    .propsFromActions(() => ({ playerOpen: N.eX.playerOpen, fetchUserProfileAndVideos: O.Sn }))
                     .withAnalytics({ page: "profile" });
-            var $ = n(708411),
-                H = n(154003),
-                K = n(524483),
+            var j = n(708411),
+                K = n(154003),
+                H = n(524483),
                 W = n(467537),
                 G = n(725516);
             const q = "tv-follow-button",
@@ -466,8 +466,8 @@
                 ee = p().ja66a2b5,
                 te = p().e4c91b70,
                 ne = ({ style: e, user: t }) => {
-                    const { closeModal: n, openModal: r } = (0, K.N)(),
-                        l = (0, S.I0)(),
+                    const { closeModal: n, openModal: r } = (0, H.N)(),
+                        l = (0, I.I0)(),
                         a = (0, G.z)(),
                         o = i.useCallback(() => {
                             t?.following
@@ -478,7 +478,7 @@
                                       primaryAction: {
                                           buttonText: Y,
                                           onClick: () => {
-                                              l(N.fv({ userId: t.id_str, screenName: t?.screen_name })), n();
+                                              l(O.fv({ userId: t.id_str, screenName: t?.screen_name })), n();
                                           },
                                       },
                                       secondaryAction: {
@@ -491,11 +491,11 @@
                                           n();
                                       },
                                   }))
-                                : (a.scribe({ element: "follow-button", action: "click", data: { profile_id: t.id_str } }), l(N.ZN({ userId: t.id_str, screenName: t?.screen_name })));
+                                : (a.scribe({ element: "follow-button", action: "click", data: { profile_id: t.id_str } }), l(O.ZN({ userId: t.id_str, screenName: t?.screen_name })));
                         }, [a, n, l, r, t?.following, t.id_str, t.screen_name]);
                     return i.createElement(W.C, { "aria-label": t?.following ? Y : Q, focusedStyle: t?.following ? ie.interactiveViewUnfollowFocused : void 0, name: q, onPress: o, role: "button", style: [ie.interactiveView, e] }, ({ hasFocus: e }) => {
                         const n = t?.following ? (e ? Y : X) : Q;
-                        return i.createElement(H.ZP, { "aria-label": n, size: "small", style: ie.button, type: t?.following ? (e ? "destructiveOutlined" : "primaryOutlined") : "primaryFilled" }, n);
+                        return i.createElement(K.ZP, { "aria-label": n, size: "small", style: ie.button, type: t?.following ? (e ? "destructiveOutlined" : "primaryOutlined") : "primaryFilled" }, n);
                     });
                 },
                 ie = u.default.create((e) => ({ interactiveView: { borderRadius: e.borderRadii.infinite }, interactiveViewUnfollowFocused: { borderColor: e.colors.red500 }, button: { width: 128 * e.scaleMultiplier } }));
@@ -504,12 +504,12 @@
             const ae = p().j87c21f4,
                 oe = p().iebc30ca,
                 se = ({ style: e, user: t }) => {
-                    const n = (0, S.I0)(),
+                    const n = (0, I.I0)(),
                         r = (0, G.z)(),
                         l = i.useCallback(() => {
-                            r.scribe({ element: "notify-button", action: "click", data: { profile_id: t.id_str } }), n(N.BX({ userId: t.id_str, notificationsEnabled: !t.notifications, screenName: t?.screen_name }));
+                            r.scribe({ element: "notify-button", action: "click", data: { profile_id: t.id_str } }), n(O.BX({ userId: t.id_str, notificationsEnabled: !t.notifications, screenName: t?.screen_name }));
                         }, [r, n, t.id_str, t.notifications, t?.screen_name]);
-                    return i.createElement(W.C, { "aria-label": t?.notifications ? oe : ae, name: "tv-notify-button", onPress: l, role: "button", style: [ce.interactiveView, e] }, i.createElement(H.ZP, { icon: t?.notifications ? i.createElement(re.default, null) : i.createElement(le.default, null), size: "small", type: "primaryOutlined" }));
+                    return i.createElement(W.C, { "aria-label": t?.notifications ? oe : ae, name: "tv-notify-button", onPress: l, role: "button", style: [ce.interactiveView, e] }, i.createElement(K.ZP, { icon: t?.notifications ? i.createElement(re.default, null) : i.createElement(le.default, null), size: "small", type: "primaryOutlined" }));
                 },
                 ce = u.default.create((e) => ({ interactiveView: { borderRadius: e.borderRadii.infinite } })),
                 de = "profile-grid",
@@ -527,7 +527,7 @@
                         { style: Ee.loggedOutProfilePrompt },
                         i.createElement(o.ZP, { size: "headline2", style: Ee.marginBottom16 }, n),
                         i.createElement(
-                            v.K,
+                            w.K,
                             {
                                 autoFocus: !0,
                                 name: "search-login-button",
@@ -540,56 +540,56 @@
                     );
                 },
                 he = ({ user: e }) => i.createElement(a.Z, { style: [Ee.profileStats, Ee.marginBottom6] }, i.createElement(a.Z, { style: [Ee.profileStatsItem, Ee.marginEnd8] }, i.createElement(p().I18NFormatMessage, { $i18n: "d2924acb" }, i.createElement(s.Z.Value, { style: Ee.marginEnd4 }, p().ec08efe4({ formattedCount: c.ZP.getTruncatedCount(e?.followers_count || 0) })), i.createElement(s.Z.Label, { style: Ee.marginEnd4 }, p().h9f711f0({ count: e?.followers_count || 0 })))), i.createElement(a.Z, { style: [Ee.profileStatsItem, Ee.marginEnd8] }, i.createElement(p().I18NFormatMessage, { $i18n: "a8f9642d" }, i.createElement(s.Z.Value, { style: Ee.marginEnd4 }, p().bef78294({ formattedCount: c.ZP.getTruncatedCount(e?.friends_count || 0) })), i.createElement(s.Z.Label, { style: Ee.marginEnd4 }, p().hda3bb87({ count: e?.friends_count || 0 }))))),
-                ve = (e) => `${P.sN}.${D.rQ}.${de}.carousel-${e}`,
-                we = (e) => `${P.sN}.${D.rQ}.${de}.${ue}.video-${e}`,
+                we = (e) => `${P.sN}.${L.rQ}.${de}.carousel-${e}`,
+                ve = (e) => `${P.sN}.${L.rQ}.${de}.${ue}.video-${e}`,
                 ke = ({ cursor: e, fetchUserProfileAndVideos: t, history: n, isLoading: s, match: c, playerOpen: u, tvProfile: m }) => {
                     const p = c.params.screenName,
                         _ = m?.user,
-                        v = m?.modules,
-                        L = m?.videos,
-                        V = (0, S.v9)(M.ZP.selectViewerUser),
-                        z = V && _ && V.id_str === _.id_str,
-                        N = (v?.length || 0) + 1,
-                        O = i.useRef(null),
-                        B = i.useRef(Array(N).fill(null));
+                        w = m?.modules,
+                        D = m?.videos,
+                        V = (0, I.v9)(A.ZP.selectViewerUser),
+                        N = V && _ && V.id_str === _.id_str,
+                        O = (w?.length || 0) + 1,
+                        U = i.useRef(null),
+                        B = i.useRef(Array(O).fill(null));
                     (0, g.q)(() => {
-                        ((p && !_) || !L) && t({ screenName: p });
+                        ((p && !_) || !D) && t({ screenName: p });
                     });
-                    const { clearVoiceHandlers: U, registerVoiceHandlers: R } = (0, y.B)();
+                    const { clearVoiceHandlers: z, registerVoiceHandlers: R } = (0, y.B)();
                     i.useEffect(
                         () => (
                             R({ onupdatestate: () => h.E.List }),
                             function () {
-                                U();
+                                z();
                             }
                         ),
-                        [U, R],
+                        [z, R],
                     );
-                    const j = i.useCallback(() => {
+                    const $ = i.useCallback(() => {
                             p && !s && t({ screenName: p, cursor: e });
                         }, [p, s, t, e]),
-                        H = (0, S.I0)(),
-                        K = i.useCallback(
+                        K = (0, I.I0)(),
+                        H = i.useCallback(
                             (e) => {
-                                H(u(e)), n.push((0, D.X5)(e));
+                                K(u(e)), n.push((0, L.X5)(e));
                             },
-                            [H, n, u],
+                            [K, n, u],
                         ),
-                        W = ((e) => ("https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" === e ? $.jz : e ? e.replace($.KB, "_400x400.jpg") : $.jz))(_?.profile_image_url_https),
+                        W = ((e) => ("https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png" === e ? j.jz : e ? e.replace(j.KB, "_400x400.jpg") : j.jz))(_?.profile_image_url_https),
                         G = i.useCallback(() => !1, []),
                         Q = i.useMemo(
                             () =>
-                                v?.map((e, t) => () => {
-                                    O.current?.positionRef.current !== t && O.current?.setPosition(t);
+                                w?.map((e, t) => () => {
+                                    U.current?.positionRef.current !== t && U.current?.setPosition(t);
                                 }),
-                            [v],
+                            [w],
                         ),
                         X = i.useCallback(() => {
-                            O.current?.positionRef.current !== N - 1 && O.current?.setPosition(N - 1);
-                        }, [N]),
+                            U.current?.positionRef.current !== O - 1 && U.current?.setPosition(O - 1);
+                        }, [O]),
                         Y = i.useMemo(
                             () =>
-                                v?.map((e, t) =>
+                                w?.map((e, t) =>
                                     i.createElement(
                                         a.Z,
                                         {
@@ -598,59 +598,59 @@
                                                 B.current[t] = e;
                                             },
                                         },
-                                        i.createElement(w.Z, { content: e.content, displayType: (0, F.qU)(e.displayType), handleNoriginArrowPress: G, name: `carousel-${t.toString()}`, onFocus: Q?.[t], onSelectVideo: K, title: e.title }),
+                                        i.createElement(v.Z, { content: e.content, displayType: (0, F.qU)(e.displayType), handleNoriginArrowPress: G, name: `carousel-${t.toString()}`, onFocus: Q?.[t], onSelectVideo: H, title: e.title }),
                                     ),
                                 ),
-                            [G, v, Q, K],
+                            [G, w, Q, H],
                         ),
                         J = i.useMemo(() => {
-                            const e = v && v.length > 0;
-                            if (L && L?.length > 0)
+                            const e = w && w.length > 0;
+                            if (D && D?.length > 0)
                                 return i.createElement(
                                     a.Z,
                                     {
                                         ref: (e) => {
-                                            B.current[N - 1] = e;
+                                            B.current[O - 1] = e;
                                         },
                                     },
-                                    i.createElement(Z.Z, { autoFocus: !e, content: L, handleNoriginArrowPress: G, name: ue, onFocus: X, onNearEnd: j, onSelectVideo: K, returnToFirstElementOnEscape: !0, style: Ee.content, title: e ? _e : void 0, width: 4 }),
+                                    i.createElement(Z.Z, { autoFocus: !e, content: D, handleNoriginArrowPress: G, name: ue, onFocus: X, onNearEnd: $, onSelectVideo: H, returnToFirstElementOnEscape: !0, style: Ee.content, title: e ? _e : void 0, width: 4 }),
                                 );
-                        }, [j, G, v, X, K, N, L]),
+                        }, [$, G, w, X, H, O, D]),
                         ee = i.useCallback((e) => {
-                            O.current = e;
+                            U.current = e;
                         }, []),
                         te = i.useCallback(
                             (e) => {
-                                if (O.current?.isAnimating.current) return !0;
-                                const t = O.current?.positionRef.current || 0;
+                                if (U.current?.isAnimating.current) return !0;
+                                const t = U.current?.positionRef.current || 0;
                                 let n = 0;
                                 switch (e.key) {
                                     case "ArrowUp":
-                                        if (0 === t) return (0, r.setFocus)(`${P.sN}.${D.rQ}.${q}`), !0;
-                                        (n = Math.max(t - 1, 0)), (0, r.setFocus)(ve(n));
+                                        if (0 === t) return (0, r.setFocus)(`${P.sN}.${L.rQ}.${q}`), !0;
+                                        (n = Math.max(t - 1, 0)), (0, r.setFocus)(we(n));
                                         break;
                                     case "ArrowDown":
-                                        if (((n = Math.min(t + 1, N)), n === N)) return !1;
-                                        if (n === N - 1) return (0, r.setFocus)(we(0)), !0;
+                                        if (((n = Math.min(t + 1, O)), n === O)) return !1;
+                                        if (n === O - 1) return (0, r.setFocus)(ve(0)), !0;
                                         break;
                                     case "ArrowLeft":
                                         (0, r.setFocus)(`${P.sN}.${P.TZ}`);
                                 }
                                 return !0;
                             },
-                            [N],
+                            [O],
                         ),
-                        ie = (0, I.Z)(),
+                        ie = (0, S.Z)(),
                         re = i.useMemo(() => (ie ? i.createElement(a.Z, null, Y, J) : i.createElement(C.k, { getGPUScrollerApi: ee, renderedItemRefs: B, scrollX: !1, scrollY: !0 }, Y, J)), [ee, Y, J, ie]),
                         le = (0, r.getCurrentFocusKey)(),
-                        ae = i.useCallback((e) => (v?.length ? le !== ve(0) && ((0, r.setFocus)(ve(0)), !0) : !!L?.length && le !== we(0) && ((0, r.setFocus)(we(0)), !0)), [le, v?.length, L?.length]),
-                        oe = i.useMemo(() => (L?.length || v?.length ? i.createElement(E.Z, { "aria-label": void 0, autoFocus: !0, name: de, onArrowPress: te, onEscapeOrBack: ae, role: "grid", saveLastFocusedChild: !0, trackChildren: !0 }, re) : i.createElement(a.Z, { style: Ee.noVideosContainer }, i.createElement(o.ZP, { size: "headline1", weight: "bold" }, z ? ge : be({ name: `@${_?.screen_name || ""}` })))), [te, ae, z, v?.length, re, _?.screen_name, L?.length]),
+                        ae = i.useCallback((e) => (w?.length ? le !== we(0) && ((0, r.setFocus)(we(0)), !0) : !!D?.length && le !== ve(0) && ((0, r.setFocus)(ve(0)), !0)), [le, w?.length, D?.length]),
+                        oe = i.useMemo(() => (D?.length || w?.length ? i.createElement(E.Z, { "aria-label": void 0, autoFocus: !0, name: de, onArrowPress: te, onEscapeOrBack: ae, role: "grid", saveLastFocusedChild: !0, trackChildren: !0 }, re) : i.createElement(a.Z, { style: Ee.noVideosContainer }, i.createElement(o.ZP, { size: "headline1", weight: "bold" }, N ? ge : be({ name: `@${_?.screen_name || ""}` })))), [te, ae, N, w?.length, re, _?.screen_name, D?.length]),
                         ce = i.useCallback(() => (V ? oe : i.createElement(ye, { history: n, user: _ })), [n, oe, _, V]),
-                        me = i.useMemo(() => i.createElement(b.Z, { fetchStatus: _ && L ? A.ZP.LOADED : A.ZP.LOADING, onRequestRetry: f.Z, render: ce, retryable: !1 }), [ce, _, L]);
-                    return i.createElement(i.Fragment, null, i.createElement(x.Z, null, i.createElement(a.Z, { style: Ee.header }, _ ? i.createElement(a.Z, { style: Ee.profileInfo }, i.createElement(T.Z, { source: W, style: [Ee.userAvatar, Ee.marginEnd16], verifiedType: _.verified_type, withOuterBorder: !0 }), i.createElement(a.Z, { style: [Ee.profileDetails, z && Ee.ownProfileDetails, Ee.marginEnd16] }, i.createElement(d.Z, { affiliateBadgeInfo: _.highlightedLabel, badgeContext: "content", isBlueVerified: _.is_blue_verified, isProtected: _.protected, isVerified: _.verified, name: _.name, nameSize: "headline1", screenName: _.screen_name, screenNameSize: "body", style: Ee.marginBottom6, verifiedType: _.verified_type, withLink: !1, withNameWrap: !0 }), _.description ? i.createElement(o.ZP, { style: [Ee.profileDescription, Ee.marginBottom6] }, i.createElement(k.x, { text: _.description })) : null, i.createElement(he, { user: _ }), V && !z ? i.createElement(a.Z, { style: [Ee.buttonSection, Ee.marginBottom6] }, i.createElement(ne, { style: Ee.marginEnd8, user: _ }), i.createElement(se, { style: Ee.marginEnd8, user: _ })) : null)) : null), ie ? i.createElement(l.Z, null, me) : i.createElement(a.Z, { style: ie ? void 0 : Ee.overflowHidden }, me)));
+                        me = i.useMemo(() => i.createElement(b.Z, { fetchStatus: _ && D ? M.ZP.LOADED : M.ZP.LOADING, onRequestRetry: f.Z, render: ce, retryable: !1 }), [ce, _, D]);
+                    return i.createElement(i.Fragment, null, i.createElement(x.Z, null, i.createElement(a.Z, { style: Ee.header }, _ ? i.createElement(a.Z, { style: Ee.profileInfo }, i.createElement(T.Z, { source: W, style: [Ee.userAvatar, Ee.marginEnd16], verifiedType: _.verified_type, withOuterBorder: !0 }), i.createElement(a.Z, { style: [Ee.profileDetails, N && Ee.ownProfileDetails, Ee.marginEnd16] }, i.createElement(d.Z, { affiliateBadgeInfo: _.highlightedLabel, badgeContext: "content", isBlueVerified: _.is_blue_verified, isProtected: _.protected, isVerified: _.verified, name: _.name, nameSize: "headline1", screenName: _.screen_name, screenNameSize: "body", style: Ee.marginBottom6, verifiedType: _.verified_type, withLink: !1, withNameWrap: !0 }), _.description ? i.createElement(o.ZP, { style: [Ee.profileDescription, Ee.marginBottom6] }, i.createElement(k.x, { text: _.description })) : null, i.createElement(he, { user: _ }), V && !N ? i.createElement(a.Z, { style: [Ee.buttonSection, Ee.marginBottom6] }, i.createElement(ne, { style: Ee.marginEnd8, user: _ }), i.createElement(se, { style: Ee.marginEnd8, user: _ })) : null)) : null), ie ? i.createElement(l.Z, null, me) : i.createElement(a.Z, { style: ie ? void 0 : Ee.overflowHidden }, me)));
                 },
                 Ee = u.default.create((e) => ({ header: { minHeight: 128 * e.scaleMultiplier, paddingHorizontal: e.spaces.space24, paddingTop: 60 * e.scaleMultiplier, paddingBottom: e.spaces.space32 }, userAvatar: { minHeight: 128 * e.scaleMultiplier, width: 128 * e.scaleMultiplier }, overflowHidden: { overflow: "hidden" }, marginBottom6: { marginBottom: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, marginEnd4: { marginEnd: e.spaces.space4 }, marginEnd8: { marginEnd: e.spaces.space8 }, marginEnd16: { marginEnd: e.spaces.space16 }, marginBottom16: { marginBottom: e.spaces.space16 }, profileInfo: { flexDirection: "row" }, profileDetails: { justifyContent: "end" }, ownProfileDetails: { justifyContent: "center" }, profileDescription: { marginBottom: e.spaces.space4 }, profileStats: { marginBottom: e.spaces.space4, flexDirection: "row" }, profileStatsItem: { flexDirection: "row" }, buttonSection: { bottom: -e.borderWidthsPx.medium, flexDirection: "row", marginTop: e.spaces.space2, start: -e.borderWidthsPx.medium }, contentWrapper: { flex: 1 }, content: { paddingHorizontal: e.spaces.space24 }, loggedOutProfilePrompt: { display: "flex", flexDirection: "column", alignItems: "center", paddingTop: e.spaces.space64 }, noVideosContainer: { width: "100%", height: "100%", display: "flex", alignItems: "center", paddingTop: e.spaces.space64 } })),
-                Ce = j(ke);
+                Ce = $(ke);
         },
         661810: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -799,45 +799,6 @@
             }
             const f = u.default.create((e) => ({ backgroundImage: { ...u.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...u.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
         },
-        839: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var i = n(202784),
-                r = n(890601),
-                l = n(783427),
-                a = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M2.008 6.5c0-1.381 1.119-2.5 2.5-2.5h11c1.381 0 2.5 1.119 2.5 2.5v1.882l4-2v11.236l-4-2V17.5c0 1.381-1.119 2.5-2.5 2.5h-11c-1.381 0-2.5-1.119-2.5-2.5v-11zm16 6.882l2 1V9.618l-2 1v2.764zM4.508 6c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h11c.276 0 .5-.224.5-.5v-11c0-.276-.224-.5-.5-.5h-11zm5.5 4c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.896-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
-        197318: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var i = n(202784),
-                r = n(890601),
-                l = n(783427),
-                a = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M8.7 2.4c.7-.6 1.5-1 2.3-1.4.5-.2 1.1-.3 1.7-.3.4 0 .8.1 1.1.3s.7.4.9.7c.2.3.3.6.4 1 .1.4.1.7 0 1.1-.1.5-.2 1-.4 1.4-.4.8-.8 1.5-1.3 2.2-1.8 2.8-3.9 5.1-5.7 7.7-.4.6-.9 1.3-1.3 1.9-.2.3-.4.6-.6 1.1-.3.6.2.8.8.5 2.3-1.1 10.3-11.2 12.8-9 .3.3 1.7 1.5-1.3 5.8-.4.6-.7 1.1-1.1 1.6-.5.7-1.1 1.5-1.6 2.3-.4.6-.7 1.2-1 1.9-.1.2-.2.6 0 .8.4.4 1.9-.7 3.7-2.4l3.2-3.2c.5-.5 1.2.1.7.7-1.6 1.9-5.5 6.4-7.5 6.3-.4 0-.7-.1-1-.3s-.5-.5-.6-.8c-.1-.2-.2-.7.1-1.5.3-.8.6-1.6 1.1-2.3.5-.8 1-1.7 1.5-2.4.3-.5.7-1.1 1-1.6.3-.5.8-1.4 1.2-2 .2-.3.6-.9.2-1.2-.2-.2-.5-.2-1.3.6 0 0-6.6 6.7-9 8.4-1.3.9-2.8 1.2-3.6.4-1-.9-1.6-2.5 1.5-6.4 3.1-3.8 6.5-8.7 6.8-9.6.1-.2.1-.4.1-.5.1-.5-.5-.9-1-.7-.3.2-.8.5-1.6 1.2-2.3 2-4.3 4.3-6.1 6.8-.1.2-.3.3-.5.4s-.4.2-.6.2c-.4.1-.8-.1-1.2-.3-.3-.2-.5-.6-.6-1v-.6c.1-.2.1-.4.3-.5 2.7-2.9 5-5.2 7.5-7.3z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
-        74514: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var i = n(202784),
-                r = n(890601),
-                l = n(783427),
-                a = n(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.b6f1dfba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Account.29eab12a.js.map

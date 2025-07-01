@@ -17,10 +17,18 @@
                 var o, n;
             }
             o("c39b0e24", "X"),
+                o("bcd6bb0e", "رکن"),
+                o("hd8c22d2", "موڈ"),
+                o("c3153100", "ایڈمن"),
                 o("jb38600c", "کوئی نہیں"),
                 o("f07eac34", "Parody account"),
                 o("a41b5c2e", "Fan account"),
                 o("i428ea62", "Commentary account"),
+                o("jd859c9c", "آپ کو اس Space سے ہٹا دیا گیا ہے۔"),
+                o("cfbea177", function (e) {
+                    return e.name + " کا Space";
+                }),
+                o("ab4fc8bc", "Space"),
                 o("ac0d27be", "معذرت، یہ اکاؤنٹ معطل کر دیا گیا ہے۔"),
                 o("bcee7444", "اکاؤنٹ اپ ڈیٹ ناکام۔"),
                 o("e0cbf77a", "فون شامل کریں"),
@@ -61,9 +69,6 @@
                 o("h1cbdd30", "براہ مہربانی صفحے کو ریفریش کر کے دوبارہ کوشش کریں۔"),
                 o("a5077d3e", "ریفریش"),
                 o("b2648ba4", "ممکن ہے آپ کے اکاؤنٹ کو اس کارروائی کو انجام دینے کی اجازت نہ ہو۔ براہ مہربانی صفحے کو ریفریش کر کے دوبارہ کوشش کریں۔"),
-                o("bcd6bb0e", "رکن"),
-                o("hd8c22d2", "موڈ"),
-                o("c3153100", "ایڈمن"),
                 o("fa9adac1", function (e) {
                     return '"' + e.query + '" تلاش کریں';
                 }),
@@ -76,19 +81,12 @@
                 o("c64e46f8", "This member was removed from the Community, so their posts are hidden."),
                 o("b3f1cb42", "A moderator hid this post for breaking a Community rule."),
                 o("cbd2dc9c", "You reported this post."),
-                o("cfbea177", function (e) {
-                    return e.name + " کا Space";
-                }),
-                o("ab4fc8bc", "Space"),
-                o("jd859c9c", "آپ کو اس Space سے ہٹا دیا گیا ہے۔"),
                 o("c60ed9b0", "You are not authorized to join this Space."),
                 o("d8227e16", "You are not authorized to create this Space"),
                 o("f027fed8", "Picture-in-Picture"),
                 o("hd50e064", "ابھی نہیں"),
                 o("i76d640e", "We need your permission"),
                 o("fdaa0be8", "To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                o("gea6cc1a", "کیا واقعی؟"),
-                o("hb568af4", "میوٹ کریں"),
                 o("f7c8617a", "کلپس کیا ہیں؟"),
                 o("ecc7d2ec", "کلپس محفوظ کیے گئے لمحات ہیں جنہیں آپ کی Space میں سے کوئی بھی بنا اور شیئر کر سکتا ہے۔ تمام کلپس کی میعاد 30 دنوں بعد ختم ہو جاتی ہے۔"),
                 o("d575ee02", "کلپ کون بنا سکتا ہے؟"),
@@ -106,16 +104,6 @@
                 o("jf03b37c", "Listen to the recording anytime. You can also share it with a post."),
                 o("fd05976b", "Learn more"),
                 o("b4f91a8a", "ریکارڈنگ فعال ہے"),
-                o("gb418012", "Welcome to Spaces"),
-                o("fec3c1e0", "جہاں لائیو آڈیو گفتگو واقع ہوتی ہیں"),
-                o("j32eb4f8", "Add up to 10 speakers"),
-                o("j4f133a6", "You can invite anyone on X to speak."),
-                o("ed434ac6", "Spaces are public — anyone can join"),
-                o("e0025688", "Your Space, your rules"),
-                o("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                o("b0bc8330", "آپ کسی Space میں لوگوں کو بلاک اور رپورٹ بھی کر سکتے ہیں۔"),
-                o("cb17a0f3", "Learn more"),
-                o("dcd77941", "Learn more"),
                 o("cc724cb0", "کلپ بنائیں"),
                 o("cfd2f35e", "منسوخ کریں"),
                 o("c1df579e", "اگلا"),
@@ -129,6 +117,16 @@
                 o("a9ba3e28", "نجی معلومات"),
                 o("d5519f4a", "غیر مہذب سلوک"),
                 o("eb55363c", "اس اسپیس کی اطلاع دے دی گئی ہے"),
+                o("gb418012", "Welcome to Spaces"),
+                o("fec3c1e0", "جہاں لائیو آڈیو گفتگو واقع ہوتی ہیں"),
+                o("j32eb4f8", "Add up to 10 speakers"),
+                o("j4f133a6", "You can invite anyone on X to speak."),
+                o("ed434ac6", "Spaces are public — anyone can join"),
+                o("e0025688", "Your Space, your rules"),
+                o("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                o("b0bc8330", "آپ کسی Space میں لوگوں کو بلاک اور رپورٹ بھی کر سکتے ہیں۔"),
+                o("cb17a0f3", "Learn more"),
+                o("dcd77941", "Learn more"),
                 o("i65de934", "You are listening anonymously"),
                 o("b1037050", "Manage Space"),
                 o("ic107434", "Turn on camera"),
@@ -907,10 +905,10 @@
                 o("bf9e181b", "مزید جانیے"),
                 o("e8e39f95", "Lمزید جانیے"),
                 o("e126dd3f", "مزید جانیے"),
-                o("i821844f", "مزید جانیے");
-            o("b0abbb17", "مزید جانیے"),
-                o("e7e0d88b", "مزید جانیے"),
-                o("i560665f", "Lمزید جانیے"),
+                o("i821844f", "مزید جانیے"),
+                o("b0abbb17", "مزید جانیے"),
+                o("e7e0d88b", "مزید جانیے");
+            o("i560665f", "Lمزید جانیے"),
                 o("f6e774d9", "مزید جانیے"),
                 o("h486f755", "مزید جانیے"),
                 o("bab41dab", "مزید جانیے"),
@@ -1126,6 +1124,7 @@
                 o("dbb51952", "Protect your posts?"),
                 o("de735de6", "This will make them visible only to your X followers."),
                 o("c5d4192a", "حفاظت کریں"),
+                o("gea6cc1a", "کیا واقعی؟"),
                 o("d9ddba70", "Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 o("f527b322", "میرے اکاؤنٹ کو محفوظ بنائیں"),
                 o("d165c992", "کوئی بھی آپ کو ٹیگ کر سکتا ہے"),
@@ -1322,9 +1321,10 @@
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 o("aa9d42c0", "Searching the web"),
-                o("dce1817a", "Searching on 𝕏"),
-                o("f7151564", "Searching users on 𝕏"),
+                o("c731d702", "Searching on X"),
+                o("d0e02476", "Searching users on X"),
                 o("c43ef93e", "Browsing web page"),
+                o("dab166ec", "Searching user posts on X"),
                 o("jb097f6e", "Executing code"),
                 o("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 o("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1818,6 +1818,7 @@
                 o("g00b4c55", function (e) {
                     return "Share @" + e.screenName + " via...";
                 }),
+                o("hb568af4", "میوٹ کریں"),
                 o("bb1cbeb6", "ان میوٹ کریں"),
                 o("h2f62206", "آواز بند کرنے والے صارف"),
                 o("h59f52ee", "کامیابی سے میوٹ کر دیا گیا۔"),
@@ -1918,11 +1919,11 @@
                 o("ef1649e2", "X - Keyboard shortcuts"),
                 o("aefd89c8", "نیویگیشن"),
                 o("cafdefb2", "کارروائیاں"),
-                o("dda42cf2", "کالمز اور Decks"),
-                o("e8a12604", "کیپشن فراہم کریں (اختیاری)");
-            o("eabf2209", function (e) {
-                return e.providerName + " کا فراہم کردہ GIF";
-            }),
+                o("dda42cf2", "کالمز اور Decks");
+            o("e8a12604", "کیپشن فراہم کریں (اختیاری)"),
+                o("eabf2209", function (e) {
+                    return e.providerName + " کا فراہم کردہ GIF";
+                }),
                 o("a613e720", "GIF کا لنک کاپی کریں"),
                 o("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -2978,9 +2979,9 @@
                 o("e06b864c", "ایسا لگتا ہے آپ کو اس گفتگو میں مزہ آرہا ہے"),
                 o("a078ff70", "اس تھریڈ میں آپ نے جن سے تعامل کیا ہے کیا آپ ان کا مزید مواد دیکھنا چاہتے ہیں؟ نئے اکاؤنٹس سے مواد تلاش کرنا شروع کریں۔"),
                 o("cb80300e", "ہوم ٹائم لائن پر جائیں"),
-                o("ea5cd098", "ٹرینڈنگ پر جائیں"),
-                o("c67e3fc2", "ہوم ٹائم لائن");
-            o("d601fc20", "تازہ ترین"),
+                o("ea5cd098", "ٹرینڈنگ پر جائیں");
+            o("c67e3fc2", "ہوم ٹائم لائن"),
+                o("d601fc20", "تازہ ترین"),
                 o("j43f99be", "Relevancy"),
                 o("ad6e11ac", "Sort replies by"),
                 o("b2311b70", "یہ آپ کے لیے دستیاب نہیں ہے"),
@@ -3898,13 +3899,13 @@
                 }),
                 o("f5c7aaa7", function (e) {
                     return "host" + r(e.count, "", "s");
-                }),
-                o("fc56c8b1", function (e) {
-                    return "co-host" + r(e.count, "", "s");
                 });
-            o("iba0f45d", function (e) {
-                return "speaker" + r(e.count, "", "s");
+            o("fc56c8b1", function (e) {
+                return "co-host" + r(e.count, "", "s");
             }),
+                o("iba0f45d", function (e) {
+                    return "speaker" + r(e.count, "", "s");
+                }),
                 o("dc066955", function (e) {
                     return "listener" + r(e.count, "", "s");
                 }),
@@ -4934,9 +4935,9 @@
                 o("ff95a9cc", "Video ID"),
                 o("a97e358e", "Video Link"),
                 o("e10e8b46", "Only showing the videos from the last 100 days."),
-                o("ba37f6da", "Video overview"),
-                o("f19846b2", "Video thumbnail");
-            o("ccd6f4a8", "Video title"),
+                o("ba37f6da", "Video overview");
+            o("f19846b2", "Video thumbnail"),
+                o("ccd6f4a8", "Video title"),
                 o("c8410542", "The number of times your video was viewed."),
                 o("a532072a", "Viewers"),
                 o("d9508ab0", "views"),
@@ -5554,6 +5555,7 @@
                 o("bd7eb888", "See all notes on this post"),
                 o("i97b83f6", "آپ کی اپیل جمع کرانے میں کوئی مسئلہ ہوا، براہ کرم دوبارہ کوشش کریں۔"),
                 o("a038ab9a", "Translate note"),
+                o("icdb6d74", "Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 o("i606fc4c", "کمیونٹی نوٹس کی اپیلوں کے متعلق"),
                 o("b664c554", "اضافی شریک کار کے جائزے کی درخواست کریں"),
                 o("ab66e1f2", "یہ اس طرح کام کرتا ہے:"),
@@ -5569,6 +5571,7 @@
                 o("ge25848a", "موجودہ صورت حال"),
                 o("d6db34cc", "مزید درجہ بندیوں کی ضرورت ہے"),
                 o("ce8b505e", "مددگار نہیں"),
+                o("j42c88b6", "Experimental AI Note Writer"),
                 o("e5be8156", "Note status computed by open-source algorithm"),
                 o("fca23c42", "Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 o("hef420c2", "اس نوٹ کو ابھی تک کافی شراکت داروں نے مختلف نقطہ نظر سے درجہ بندی نہیں کی ہے۔"),
@@ -5884,11 +5887,11 @@
                 o("ab1b3d38", "Note request data isn’t available yet"),
                 o("c43fb933", "X Developer Agreement and Policy"),
                 o("af781666", "What do people think?"),
-                o("a1f414ee", "Share thoughts"),
-                o("ed88e742", "موضوع ی لنک کو کاپی کریں"),
+                o("a1f414ee", "Share thoughts");
+            o("ed88e742", "موضوع ی لنک کو کاپی کریں"),
                 o("h92fe1be", "بدقسمتی سے، اس وقت کمیونٹی نوٹس آپ کیلئے دستیاب نہیں ہیں۔"),
-                o("f0dc1434", "کمیونٹٰی نوٹس فی الحال صرف امریکہ میں دستیاب ہیں");
-            o("f8fc0b48", "فولڈر بنائیں"),
+                o("f0dc1434", "کمیونٹٰی نوٹس فی الحال صرف امریکہ میں دستیاب ہیں"),
+                o("f8fc0b48", "فولڈر بنائیں"),
                 o("c14bcdde", "بک مارکس تلاش کریں"),
                 o("e9c65c4a", "Bookmarks search"),
                 o("b92a21d9", function (e) {
@@ -6890,11 +6893,11 @@
                 o("j3d242ce", "Invalid range"),
                 o("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 o("b8cbb51a", "Job Summary"),
-                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                o("b075c68a", "Edit job"),
+                o("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            o("b075c68a", "Edit job"),
                 o("d4b6a6e0", "پروفائل اسپاٹ لائٹ"),
-                o("j2dd3686", "Highlight featured jobs above my posts.");
-            o("af1cfd46", "ATS integration"),
+                o("j2dd3686", "Highlight featured jobs above my posts."),
+                o("af1cfd46", "ATS integration"),
                 o("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 o("h99f11fa", "Delete integration"),
                 o("eef1ae76", "Currently connected"),
@@ -7872,10 +7875,7 @@
                 o("d7b8387e", "اگر آپ نے پہلے ہی منسوخ کر دیا ہے، تو مزید کچھ نہیں کرنا ہے۔ آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔"),
                 o("f4166d9a", "اپنا سبسکرپشن مسوخ کرنا چاہتے ہیں؟"),
                 o("b74ff5fc", "اگر آپ منسوخ کرتے ہیں، تو آپ کا سبسکرپشن خود بخود بلنگ سائیکل کے اختتام پر ختم ہو جائے گا۔"),
-                o("ee9efbc8", "کینسلیشن جاری رکھیں"),
-                o("c5d9c77a", "لگتا ہے ہلکی سی آواڑ آئی ہے۔ پریشان نہ ہوں، یہ آپ کی غلطی نہیں ہے۔ اس ونڈو کو بند کریں اور دوبارہ کوشش کریں۔"),
-                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
-                o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔");
+                o("ee9efbc8", "کینسلیشن جاری رکھیں");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7914,9 +7914,12 @@
                     c(e, t)
                 );
             }
-            o("i5f14be7", function (e) {
-                return "Welcome back, " + e.displayName;
-            }),
+            o("c5d9c77a", "لگتا ہے ہلکی سی آواڑ آئی ہے۔ پریشان نہ ہوں، یہ آپ کی غلطی نہیں ہے۔ اس ونڈو کو بند کریں اور دوبارہ کوشش کریں۔"),
+                o("jda53c24", "آپ Apple App Store کے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
+                o("g0a7a53e", "آپ Google Play Storeکے ذریعہ اپنا سبسکرپشن منسوخ کرسکتے ہیں۔"),
+                o("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
                 o("a76d58ba", "Ads Analytics"),
                 o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8912,11 +8915,11 @@
                 }),
                 o("b0b22805", function (e) {
                     return e.advertiserName + " ملاحظہ کریں";
-                }),
-                o("c67e71aa", "ابھی دیکھیں"),
+                });
+            o("c67e71aa", "ابھی دیکھیں"),
                 o("a6ada13e", "Shop now"),
-                o("j0f12222", "مزید دیکھیں");
-            o("f569f7c8", "ویب سائٹ پر جائیں"),
+                o("j0f12222", "مزید دیکھیں"),
+                o("f569f7c8", "ویب سائٹ پر جائیں"),
                 o("j0c6772a", "ویب سائٹ ملاحظہ کریں"),
                 o("f73003aa", "اشتہار کے بعد ویڈیو چلے گی"),
                 o("b3112b8a", "چھوڑ دیں"),
@@ -13376,4 +13379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.d73d8f3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.6967e01a.js.map

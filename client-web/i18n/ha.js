@@ -16,10 +16,18 @@
                 var t, i;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Mamba"),
+                t("hd8c22d2", "M ddt"),
+                t("c3153100", "J ddl"),
                 t("jb38600c", "Babu"),
                 t("f07eac34", "Parody account"),
                 t("a41b5c2e", "Fan account"),
                 t("i428ea62", "Commentary account"),
+                t("jd859c9c", "An cire ka daga wannan Sarari."),
+                t("cfbea177", function (a) {
+                    return a.name + "’s Space";
+                }),
+                t("ab4fc8bc", "Sarari"),
                 t("ac0d27be", "Yi haƙuri, an dakatar da wannan asusu."),
                 t("bcee7444", "An gaza sabunta asusu."),
                 t("e0cbf77a", "Ƙara waya"),
@@ -60,9 +68,6 @@
                 t("h1cbdd30", "A wartsake shafin a kuma sake gwadawa."),
                 t("a5077d3e", "Wartsake"),
                 t("b2648ba4", "Ƙila ba za a bar asusunka ya yi wannan aikin ba. Da fatan za a sabunta shafin kuma a sake gwadawa."),
-                t("bcd6bb0e", "Mamba"),
-                t("hd8c22d2", "M ddt"),
-                t("c3153100", "J ddl"),
                 t("fa9adac1", function (a) {
                     return 'Nema "' + a.query + '"';
                 }),
@@ -75,19 +80,12 @@
                 t("c64e46f8", "This member was removed from the Community, so their posts are hidden."),
                 t("b3f1cb42", "A moderator hid this post for breaking a Community rule."),
                 t("cbd2dc9c", "You reported this post."),
-                t("cfbea177", function (a) {
-                    return a.name + "’s Space";
-                }),
-                t("ab4fc8bc", "Sarari"),
-                t("jd859c9c", "An cire ka daga wannan Sarari."),
                 t("c60ed9b0", "You are not authorized to join this Space."),
                 t("d8227e16", "You are not authorized to create this Space"),
                 t("f027fed8", "Picture-in-Picture"),
                 t("hd50e064", "Ba yanzu ba"),
                 t("i76d640e", "We need your permission"),
                 t("fdaa0be8", "To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                t("gea6cc1a", "Ka tabbata?"),
-                t("hb568af4", "Tsit"),
                 t("f7c8617a", "Mene ne shirye-shiryen bidiyo?"),
                 t("ecc7d2ec", "Ana ɗaukar bidiyon lokuta da duk wanda yake cikin Sararinka zai iya yi kuma ya raba. Duk shirye-shiryen bidiyo za su ƙare aiki bayan kwanaki 30."),
                 t("d575ee02", "Wane ne zai iya ɗaukar shirin bidiyo?"),
@@ -105,16 +103,6 @@
                 t("jf03b37c", "Listen to the recording anytime. You can also share it with a post."),
                 t("fd05976b", "Learn more"),
                 t("b4f91a8a", "Naɗa yana aiki"),
-                t("gb418012", "Welcome to Spaces"),
-                t("fec3c1e0", "Inda tattaunawar sauti kai-tsaye take faruwa"),
-                t("j32eb4f8", "Add up to 10 speakers"),
-                t("j4f133a6", "You can invite anyone on X to speak."),
-                t("ed434ac6", "Spaces are public — anyone can join"),
-                t("e0025688", "Your Space, your rules"),
-                t("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                t("b0bc8330", "Haka nan kana iya toshe da kai rahoton mutane a cikin Sarari."),
-                t("cb17a0f3", "Learn more"),
-                t("dcd77941", "Learn more"),
                 t("cc724cb0", "Ƙirƙiri Shirin Bidiyo"),
                 t("cfd2f35e", "Soke"),
                 t("c1df579e", "Na gaba"),
@@ -128,6 +116,16 @@
                 t("a9ba3e28", "Bayanin Sirri"),
                 t("d5519f4a", "Halin Zagi"),
                 t("eb55363c", "An yi rahoton wannan Sarari"),
+                t("gb418012", "Welcome to Spaces"),
+                t("fec3c1e0", "Inda tattaunawar sauti kai-tsaye take faruwa"),
+                t("j32eb4f8", "Add up to 10 speakers"),
+                t("j4f133a6", "You can invite anyone on X to speak."),
+                t("ed434ac6", "Spaces are public — anyone can join"),
+                t("e0025688", "Your Space, your rules"),
+                t("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                t("b0bc8330", "Haka nan kana iya toshe da kai rahoton mutane a cikin Sarari."),
+                t("cb17a0f3", "Learn more"),
+                t("dcd77941", "Learn more"),
                 t("i65de934", "You are listening anonymously"),
                 t("b1037050", "Manage Space"),
                 t("ic107434", "Turn on camera"),
@@ -906,10 +904,10 @@
                 t("bf9e181b", "Ƙara koyo"),
                 t("e8e39f95", "Ƙara koyo"),
                 t("e126dd3f", "Ƙara koyo"),
-                t("i821844f", "Ƙara koyo");
-            t("b0abbb17", "Ƙara koyo"),
-                t("e7e0d88b", "Ƙara koyo"),
-                t("i560665f", "Ƙara koyo"),
+                t("i821844f", "Ƙara koyo"),
+                t("b0abbb17", "Ƙara koyo"),
+                t("e7e0d88b", "Ƙara koyo");
+            t("i560665f", "Ƙara koyo"),
                 t("f6e774d9", "Ƙara koyo"),
                 t("h486f755", "Ƙara koyo"),
                 t("bab41dab", "Ƙara koyo"),
@@ -1125,6 +1123,7 @@
                 t("dbb51952", "Protect your posts?"),
                 t("de735de6", "This will make them visible only to your X followers."),
                 t("c5d4192a", "Kare"),
+                t("gea6cc1a", "Ka tabbata?"),
                 t("d9ddba70", "Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 t("f527b322", "Kare asusun"),
                 t("d165c992", "Kowa na iya sa maka alama"),
@@ -1321,9 +1320,10 @@
                     return "Executing code" + a.ttc_tool_usage_card;
                 }),
                 t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
                 t("c43ef93e", "Browsing web page"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Executing code"),
                 t("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 t("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1817,6 +1817,7 @@
                 t("g00b4c55", function (a) {
                     return "Share @" + a.screenName + " via...";
                 }),
+                t("hb568af4", "Tsit"),
                 t("bb1cbeb6", "Cire tsit"),
                 t("h2f62206", "Ana sa mai amfani tsit"),
                 t("h59f52ee", "An yi nasarar sa tsit."),
@@ -1917,11 +1918,11 @@
                 t("ef1649e2", "X - Keyboard shortcuts"),
                 t("aefd89c8", "Kewayawa"),
                 t("cafdefb2", "Matakai"),
-                t("dda42cf2", "Columns & Decks"),
-                t("e8a12604", "Samar da wani kan rubutu (na ganin dama)");
-            t("eabf2209", function (a) {
-                return "Samar da GIF daga " + a.providerName;
-            }),
+                t("dda42cf2", "Columns & Decks");
+            t("e8a12604", "Samar da wani kan rubutu (na ganin dama)"),
+                t("eabf2209", function (a) {
+                    return "Samar da GIF daga " + a.providerName;
+                }),
                 t("a613e720", "Kwafi hanya zuwa GIF"),
                 t("aeca1239", function (a) {
                     return "Bold" + a.ttc_rich_text_composer;
@@ -2977,9 +2978,9 @@
                 t("e06b864c", "Da alama kana jin daɗin wannan tattaunawa"),
                 t("a078ff70", "Ana son ganin wasu ƙarin ƙunshiya daga mutanen da kake yi hulɗa da su a cikin wannan zaren magana ne? Fara bincika ƙunshiya daga sabon asusu."),
                 t("cb80300e", "Tsallake zuwa tsarin lokaci na hom"),
-                t("ea5cd098", "Tsallake zuwa na yayi"),
-                t("c67e3fc2", "Tsarin Lokaci na Gida");
-            t("d601fc20", "Sabo"),
+                t("ea5cd098", "Tsallake zuwa na yayi");
+            t("c67e3fc2", "Tsarin Lokaci na Gida"),
+                t("d601fc20", "Sabo"),
                 t("j43f99be", "Relevancy"),
                 t("ad6e11ac", "Sort replies by"),
                 t("b2311b70", "Wannan ba ya samuwa gare ka"),
@@ -3897,13 +3898,13 @@
                 }),
                 t("f5c7aaa7", function (a) {
                     return "host" + o(a.count, "", "s");
-                }),
-                t("fc56c8b1", function (a) {
-                    return "co-host" + o(a.count, "", "s");
                 });
-            t("iba0f45d", function (a) {
-                return "speaker" + o(a.count, "", "s");
+            t("fc56c8b1", function (a) {
+                return "co-host" + o(a.count, "", "s");
             }),
+                t("iba0f45d", function (a) {
+                    return "speaker" + o(a.count, "", "s");
+                }),
                 t("dc066955", function (a) {
                     return "listener" + o(a.count, "", "s");
                 }),
@@ -4933,9 +4934,9 @@
                 t("ff95a9cc", "Video ID"),
                 t("a97e358e", "Video Link"),
                 t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview"),
-                t("f19846b2", "Video thumbnail");
-            t("ccd6f4a8", "Video title"),
+                t("ba37f6da", "Video overview");
+            t("f19846b2", "Video thumbnail"),
+                t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
@@ -5553,6 +5554,7 @@
                 t("bd7eb888", "See all notes on this post"),
                 t("i97b83f6", "An sami kuskure wajen miƙa kukanka, sake gwadawa daga baya."),
                 t("a038ab9a", "Translate note"),
+                t("icdb6d74", "Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 t("i606fc4c", "Game da ƙarar Rubutun Al'umma"),
                 t("b664c554", "Buƙacin ƙarin bitar mai bayar da gudummuwa"),
                 t("ab66e1f2", "Ga yadda yake aiki:"),
@@ -5568,6 +5570,7 @@
                 t("ge25848a", "Matsayi na Yanzu"),
                 t("d6db34cc", "Kana son ƙarin kimantawa"),
                 t("ce8b505e", "Ba shi da amfani"),
+                t("j42c88b6", "Experimental AI Note Writer"),
                 t("e5be8156", "Note status computed by open-source algorithm"),
                 t("fca23c42", "Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 t("hef420c2", "Ba a ƙimanta wannan rubutu ba tukuna ta wajen isassun mataimaka daga mahanga daban-daban."),
@@ -5883,11 +5886,11 @@
                 t("ab1b3d38", "Note request data isn’t available yet"),
                 t("c43fb933", "X Developer Agreement and Policy"),
                 t("af781666", "What do people think?"),
-                t("a1f414ee", "Share thoughts"),
-                t("ed88e742", "Kwafi hanyar zuwa Batu"),
+                t("a1f414ee", "Share thoughts");
+            t("ed88e742", "Kwafi hanyar zuwa Batu"),
                 t("h92fe1be", "Abin takaici, Rubutun Al'umma ba ya samuwa a gare ku a wannan lokacin."),
-                t("f0dc1434", "Rubutun Al'umma a halin yanzu yana samuwa a cikin Amurka kawai.");
-            t("f8fc0b48", "Ƙirƙiri Folda"),
+                t("f0dc1434", "Rubutun Al'umma a halin yanzu yana samuwa a cikin Amurka kawai."),
+                t("f8fc0b48", "Ƙirƙiri Folda"),
                 t("c14bcdde", "Search Bookmarks"),
                 t("e9c65c4a", "Bookmarks search"),
                 t("b92a21d9", function (a) {
@@ -6889,11 +6892,11 @@
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 t("b8cbb51a", "Job Summary"),
-                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                t("b075c68a", "Edit job"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Hasken Furofayil"),
-                t("j2dd3686", "Highlight featured jobs above my posts.");
-            t("af1cfd46", "ATS integration"),
+                t("j2dd3686", "Highlight featured jobs above my posts."),
+                t("af1cfd46", "ATS integration"),
                 t("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 t("h99f11fa", "Delete integration"),
                 t("eef1ae76", "Currently connected"),
@@ -7871,10 +7874,7 @@
                 t("d7b8387e", "Idan ka riga ka soke, babu komai da za a yi kuma. Rijistarka za ta ƙare ta kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
                 t("f4166d9a", "Kana son ka soke Rijistarka ne?"),
                 t("b74ff5fc", "Idan ka soke, Rijistarka za ta ƙare kai tsaye a ƙarshen lokacin lissafin caji kuɗi."),
-                t("ee9efbc8", "Ci gaba da sokewa"),
-                t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
-                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store."),
-                t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store.");
+                t("ee9efbc8", "Ci gaba da sokewa");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7913,9 +7913,12 @@
                     u(a, e)
                 );
             }
-            t("i5f14be7", function (a) {
-                return "Welcome back, " + a.displayName;
-            }),
+            t("c5d9c77a", "Da alama an samu ɗan matsala. Kada ka damu amma, ba laifinka ba ne. Rufe wannan taga sai ka sake gwadawa."),
+                t("jda53c24", "Za ka iya soke Rijistarka ta hanyar Apple App Store."),
+                t("g0a7a53e", "Za ka iya soke Rijistarka ta hanyar Google Play Store."),
+                t("i5f14be7", function (a) {
+                    return "Welcome back, " + a.displayName;
+                }),
                 t("a76d58ba", "Ads Analytics"),
                 t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8911,11 +8914,11 @@
                 }),
                 t("b0b22805", function (a) {
                     return "Visit " + a.advertiserName;
-                }),
-                t("c67e71aa", "Watch now"),
+                });
+            t("c67e71aa", "Watch now"),
                 t("a6ada13e", "Shop now"),
-                t("j0f12222", "Ga ƙari");
-            t("f569f7c8", "Go to website"),
+                t("j0f12222", "Ga ƙari"),
+                t("f569f7c8", "Go to website"),
                 t("j0c6772a", "Visit website"),
                 t("f73003aa", "Video will play after ad"),
                 t("b3112b8a", "Tsallake"),
@@ -13370,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.0a7bd85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.35dc6d4a.js.map

@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.TV~bundle.Account-6107ac1a", "icons/IconExiting-js"],
+    ["shared~bundle.TV~bundle.Account-6107ac1a"],
     {
         396342: function (e, t, o) {
             var n, s, r, i, a, u, c, l, d, f, h, p;
@@ -87,18 +87,18 @@
                                     g = u(o(67)),
                                     b = u(o(35)),
                                     C = u(o(119)),
-                                    m = a(o(964)),
-                                    F = "left",
+                                    F = a(o(964)),
+                                    m = "left",
                                     x = "right",
                                     K = "up",
                                     w = "down",
-                                    E = "enter",
-                                    D = (((n = {}).left = [37, "ArrowLeft"]), (n.up = [38, "ArrowUp"]), (n.right = [39, "ArrowRight"]), (n.down = [40, "ArrowDown"]), (n.enter = [13, "Enter"]), n);
+                                    D = "enter",
+                                    E = (((n = {}).left = [37, "ArrowLeft"]), (n.up = [38, "ArrowUp"]), (n.right = [39, "ArrowRight"]), (n.down = [40, "ArrowDown"]), (n.enter = [13, "Enter"]), n);
                                 t.ROOT_FOCUS_KEY = "SN:ROOT";
                                 var P = { leading: !0, trailing: !1 },
                                     M = (function () {
                                         function e() {
-                                            (this.focusableComponents = {}), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.useGetBoundingClientRect = !1), (this.shouldFocusDOMNode = !1), (this.shouldUseNativeEvents = !1), (this.writingDirection = C.default.LTR), (this.pressedKeys = {}), (this.paused = !1), (this.keyDownEventListener = null), (this.keyUpEventListener = null), (this.keyMap = D), (this.onKeyEvent = this.onKeyEvent.bind(this)), (this.pause = this.pause.bind(this)), (this.resume = this.resume.bind(this)), (this.setFocus = this.setFocus.bind(this)), (this.updateAllLayouts = this.updateAllLayouts.bind(this)), (this.navigateByDirection = this.navigateByDirection.bind(this)), (this.init = this.init.bind(this)), (this.setThrottle = this.setThrottle.bind(this)), (this.destroy = this.destroy.bind(this)), (this.setKeyMap = this.setKeyMap.bind(this)), (this.getCurrentFocusKey = this.getCurrentFocusKey.bind(this)), (this.doesFocusableExist = this.doesFocusableExist.bind(this)), (this.setFocusDebounced = (0, c.default)(this.setFocus, 300, { leading: !1, trailing: !0 })), (this.debug = !1), (this.visualDebugger = null), (this.logIndex = 0);
+                                            (this.focusableComponents = {}), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.useGetBoundingClientRect = !1), (this.shouldFocusDOMNode = !1), (this.shouldUseNativeEvents = !1), (this.writingDirection = C.default.LTR), (this.pressedKeys = {}), (this.paused = !1), (this.keyDownEventListener = null), (this.keyUpEventListener = null), (this.keyMap = E), (this.onKeyEvent = this.onKeyEvent.bind(this)), (this.pause = this.pause.bind(this)), (this.resume = this.resume.bind(this)), (this.setFocus = this.setFocus.bind(this)), (this.updateAllLayouts = this.updateAllLayouts.bind(this)), (this.navigateByDirection = this.navigateByDirection.bind(this)), (this.init = this.init.bind(this)), (this.setThrottle = this.setThrottle.bind(this)), (this.destroy = this.destroy.bind(this)), (this.setKeyMap = this.setKeyMap.bind(this)), (this.getCurrentFocusKey = this.getCurrentFocusKey.bind(this)), (this.doesFocusableExist = this.doesFocusableExist.bind(this)), (this.setFocusDebounced = (0, c.default)(this.setFocus, 300, { leading: !1, trailing: !0 })), (this.debug = !1), (this.visualDebugger = null), (this.logIndex = 0);
                                         }
                                         return (
                                             (e.getCutoffCoordinate = function (e, t, o, n, s) {
@@ -116,7 +116,7 @@
                                                     case w:
                                                         (s = t ? o.top : o.bottom), (n.a = { x: o.left, y: s }), (n.b = { x: o.right, y: s });
                                                         break;
-                                                    case F:
+                                                    case m:
                                                         var r = t ? o.right : o.left;
                                                         (n.a = { x: r, y: o.top }), (n.b = { x: r, y: o.bottom });
                                                         break;
@@ -191,9 +191,9 @@
                                                     y = void 0 !== p && p,
                                                     v = t.shouldUseNativeEvents,
                                                     g = void 0 !== v && v,
-                                                    m = t.rtl,
-                                                    F = void 0 !== m && m;
-                                                this.enabled || ((this.enabled = !0), (this.nativeMode = a), (this.throttleKeypresses = d), (this.useGetBoundingClientRect = h), (this.shouldFocusDOMNode = y && !a), (this.shouldUseNativeEvents = g), (this.writingDirection = F ? C.default.RTL : C.default.LTR), (this.debug = n), this.nativeMode || (Number.isInteger(c) && c > 0 && (this.throttle = c), this.bindEventHandlers(), r && ((this.visualDebugger = new b.default(this.writingDirection)), this.startDrawLayouts())));
+                                                    F = t.rtl,
+                                                    m = void 0 !== F && F;
+                                                this.enabled || ((this.enabled = !0), (this.nativeMode = a), (this.throttleKeypresses = d), (this.useGetBoundingClientRect = h), (this.shouldFocusDOMNode = y && !a), (this.shouldUseNativeEvents = g), (this.writingDirection = m ? C.default.RTL : C.default.LTR), (this.debug = n), this.nativeMode || (Number.isInteger(c) && c > 0 && (this.throttle = c), this.bindEventHandlers(), r && ((this.visualDebugger = new b.default(this.writingDirection)), this.startDrawLayouts())));
                                             }),
                                             (e.prototype.setThrottle = function (e) {
                                                 var t = void 0 === e ? {} : e,
@@ -217,7 +217,7 @@
                                                 t();
                                             }),
                                             (e.prototype.destroy = function () {
-                                                this.enabled && ((this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.focusableComponents = {}), (this.paused = !1), (this.keyMap = D), this.unbindEventHandlers());
+                                                this.enabled && ((this.enabled = !1), (this.nativeMode = !1), (this.throttle = 0), (this.throttleKeypresses = !1), (this.focusKey = null), (this.parentsHavingFocusedChild = []), (this.focusableComponents = {}), (this.paused = !1), (this.keyMap = E), this.unbindEventHandlers());
                                             }),
                                             (e.prototype.getEventType = function (e) {
                                                 return (0, f.default)(this.getKeyMap(), function (t) {
@@ -239,7 +239,7 @@
                                                             if (s) {
                                                                 (t.pressedKeys[s] = t.pressedKeys[s] ? t.pressedKeys[s] + 1 : 1), t.shouldUseNativeEvents || (o.preventDefault(), o.stopPropagation());
                                                                 var r = { pressedKeys: t.pressedKeys };
-                                                                s === E && t.focusKey ? t.onEnterPress(r) : !1 === t.onArrowPress(s, r) ? (t.log("keyDownEventListener", "default navigation prevented"), t.visualDebugger && t.visualDebugger.clear()) : t.onKeyEvent(o);
+                                                                s === D && t.focusKey ? t.onEnterPress(r) : !1 === t.onArrowPress(s, r) ? (t.log("keyDownEventListener", "default navigation prevented"), t.visualDebugger && t.visualDebugger.clear()) : t.onKeyEvent(o);
                                                             }
                                                         }
                                                     }),
@@ -247,7 +247,7 @@
                                                     (this.keyUpEventListener = function (o) {
                                                         var n = e.getKeyCode(o),
                                                             s = t.getEventType(n);
-                                                        delete t.pressedKeys[s], t.throttle && !t.throttleKeypresses && t.keyDownEventListenerThrottled.cancel(), s === E && t.focusKey && t.onEnterRelease();
+                                                        delete t.pressedKeys[s], t.throttle && !t.throttleKeypresses && t.keyDownEventListenerThrottled.cancel(), s === D && t.focusKey && t.onEnterRelease();
                                                     }),
                                                     window.addEventListener("keyup", this.keyUpEventListener),
                                                     window.addEventListener("keydown", this.throttle ? this.keyDownEventListenerThrottled : this.keyDownEventListener));
@@ -274,7 +274,7 @@
                                             }),
                                             (e.prototype.navigateByDirection = function (e, t) {
                                                 if (!0 !== this.paused && this.enabled && !this.nativeMode) {
-                                                    var o = [w, K, F, x];
+                                                    var o = [w, K, m, x];
                                                     o.includes(e) ? (this.log("navigateByDirection", "direction", e), this.smartNavigate(e, null, t)) : this.log("navigateByDirection", "Invalid direction. You passed: `".concat(e, "`, but you can use only these: "), o);
                                                 }
                                             }),
@@ -290,7 +290,7 @@
                                                 var s = this;
                                                 if (!this.nativeMode) {
                                                     var r = t === w || t === K,
-                                                        i = t === w || (this.writingDirection === C.default.LTR ? t === x : t === F);
+                                                        i = t === w || (this.writingDirection === C.default.LTR ? t === x : t === m);
                                                     this.log("smartNavigate", "direction", t),
                                                         this.log("smartNavigate", "fromParentFocusKey", o),
                                                         this.log("smartNavigate", "this.focusKey", this.focusKey),
@@ -342,9 +342,9 @@
                                                                 b = (0, h.default)(g);
                                                             if ((this.log("smartNavigate", "nextComponent", b ? b.focusKey : void 0, b ? b.node : void 0, b), b)) this.setFocus(b.focusKey, n);
                                                             else {
-                                                                var m = this.focusableComponents[u],
-                                                                    E = (null == m ? void 0 : m.isFocusBoundary) ? m.focusBoundaryDirections || [t] : [];
-                                                                (m && E.includes(t)) || this.smartNavigate(t, u, n);
+                                                                var F = this.focusableComponents[u],
+                                                                    D = (null == F ? void 0 : F.isFocusBoundary) ? F.focusBoundaryDirections || [t] : [];
+                                                                (F && D.includes(t)) || this.smartNavigate(t, u, n);
                                                             }
                                                         }
                                                     } else this.setFocus(this.getForcedFocusKey());
@@ -546,7 +546,7 @@
                                                 var t = this.focusableComponents[e];
                                                 if (t && !this.nativeMode && !t.layoutUpdated) {
                                                     var o = t.node,
-                                                        n = this.useGetBoundingClientRect ? (0, m.getBoundingClientRect)(o) : (0, m.default)(o);
+                                                        n = this.useGetBoundingClientRect ? (0, F.getBoundingClientRect)(o) : (0, F.default)(o);
                                                     t.layout = s(s({}, n), { node: o });
                                                 }
                                             }),
@@ -745,19 +745,19 @@
                                         g = t.isFocusBoundary,
                                         b = void 0 !== g && g,
                                         C = t.focusBoundaryDirections,
-                                        m = t.focusKey,
-                                        F = t.preferredChildFocusKey,
+                                        F = t.focusKey,
+                                        m = t.preferredChildFocusKey,
                                         x = t.onEnterPress,
                                         K = void 0 === x ? r.default : x,
                                         w = t.onEnterRelease,
-                                        E = void 0 === w ? r.default : w,
-                                        D = t.onArrowPress,
+                                        D = void 0 === w ? r.default : w,
+                                        E = t.onArrowPress,
                                         P =
-                                            void 0 === D
+                                            void 0 === E
                                                 ? function () {
                                                       return !0;
                                                   }
-                                                : D,
+                                                : E,
                                         M = t.onFocus,
                                         L = void 0 === M ? r.default : M,
                                         N = t.onBlur,
@@ -771,9 +771,9 @@
                                         ),
                                         O = (0, s.useCallback)(
                                             function () {
-                                                E(R);
+                                                D(R);
                                             },
-                                            [E, R],
+                                            [D, R],
                                         ),
                                         B = (0, s.useCallback)(
                                             function (e, t) {
@@ -798,14 +798,14 @@
                                         j = U[0],
                                         H = U[1],
                                         I = (0, s.useState)(!1),
-                                        Z = I[0],
-                                        Y = I[1],
+                                        Y = I[0],
+                                        Z = I[1],
                                         W = (0, u.useFocusContext)(),
                                         G = (0, s.useMemo)(
                                             function () {
-                                                return m || (0, i.default)("sn:focusable-item-");
+                                                return F || (0, i.default)("sn:focusable-item-");
                                             },
-                                            [m],
+                                            [F],
                                         ),
                                         $ = (0, s.useCallback)(
                                             function (e) {
@@ -821,7 +821,7 @@
                                                     focusKey: G,
                                                     node: e,
                                                     parentFocusKey: W,
-                                                    preferredChildFocusKey: F,
+                                                    preferredChildFocusKey: m,
                                                     onEnterPress: _,
                                                     onEnterRelease: O,
                                                     onArrowPress: B,
@@ -831,7 +831,7 @@
                                                         return void 0 === e && (e = !1), H(e);
                                                     },
                                                     onUpdateHasFocusedChild: function (e) {
-                                                        return void 0 === e && (e = !1), Y(e);
+                                                        return void 0 === e && (e = !1), Z(e);
                                                     },
                                                     saveLastFocusedChild: l,
                                                     trackChildren: f,
@@ -849,11 +849,11 @@
                                         (0, s.useEffect)(
                                             function () {
                                                 var e = A.current;
-                                                a.SpatialNavigation.updateFocusable(G, { node: e, preferredChildFocusKey: F, focusable: n, isFocusBoundary: b, focusBoundaryDirections: C, onEnterPress: _, onEnterRelease: O, onArrowPress: B, onFocus: k, onBlur: S });
+                                                a.SpatialNavigation.updateFocusable(G, { node: e, preferredChildFocusKey: m, focusable: n, isFocusBoundary: b, focusBoundaryDirections: C, onEnterPress: _, onEnterRelease: O, onArrowPress: B, onFocus: k, onBlur: S });
                                             },
-                                            [G, F, n, b, C, _, O, B, k, S],
+                                            [G, m, n, b, C, _, O, B, k, S],
                                         ),
-                                        { ref: A, focusSelf: $, focused: j, hasFocusedChild: Z, focusKey: G }
+                                        { ref: A, focusSelf: $, focused: j, hasFocusedChild: Y, focusKey: G }
                                     );
                                 };
                             },
@@ -996,20 +996,6 @@
                 }
             }
             h.defaultProps = { renderFailure: i.Z, retryable: !0 };
-        },
-        297896: (e, t, o) => {
-            "use strict";
-            o.r(t), o.d(t, { default: () => u });
-            var n = o(202784),
-                s = o(890601),
-                r = o(783427),
-                i = o(347101);
-            const a = (e = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, s.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: t });
-            };
-            a.metadata = { width: 24, height: 24 };
-            const u = a;
         },
         614425: (e, t, o) => {
             "use strict";
@@ -1370,18 +1356,18 @@
                     var o = e - h;
                     return void 0 === h || o >= t || o < 0 || (v && e - p >= l);
                 }
-                function m() {
+                function F() {
                     var e = s();
-                    if (C(e)) return F(e);
+                    if (C(e)) return m(e);
                     f = setTimeout(
-                        m,
+                        F,
                         (function (e) {
                             var o = t - (e - h);
                             return v ? a(o, l - (e - p)) : o;
                         })(e),
                     );
                 }
-                function F(e) {
+                function m(e) {
                     return (f = void 0), g && u ? b(e) : ((u = c = void 0), d);
                 }
                 function x() {
@@ -1390,11 +1376,11 @@
                     if (((u = arguments), (c = this), (h = e), o)) {
                         if (void 0 === f)
                             return (function (e) {
-                                return (p = e), (f = setTimeout(m, t)), y ? b(e) : d;
+                                return (p = e), (f = setTimeout(F, t)), y ? b(e) : d;
                             })(h);
-                        if (v) return clearTimeout(f), (f = setTimeout(m, t)), b(h);
+                        if (v) return clearTimeout(f), (f = setTimeout(F, t)), b(h);
                     }
-                    return void 0 === f && (f = setTimeout(m, t)), d;
+                    return void 0 === f && (f = setTimeout(F, t)), d;
                 }
                 return (
                     (t = r(t) || 0),
@@ -1403,7 +1389,7 @@
                         void 0 !== f && clearTimeout(f), (p = 0), (u = h = c = f = void 0);
                     }),
                     (x.flush = function () {
-                        return void 0 === f ? d : F(s());
+                        return void 0 === f ? d : m(s());
                     }),
                     x
                 );
@@ -1547,15 +1533,15 @@
                     g = e.onLongPress,
                     b = e.onPress,
                     C = e.onPressIn,
-                    m = e.onPressOut,
-                    F = e.rejectResponderTermination,
+                    F = e.onPressOut,
+                    m = e.rejectResponderTermination,
                     x = e.style,
                     K = (0, s.Z)(e, d),
                     w = (0, r.useRef)(null),
-                    E = (0, i.Z)(t, w),
-                    D = (0, r.useState)("0s"),
-                    P = D[0],
-                    M = D[1],
+                    D = (0, i.Z)(t, w),
+                    E = (0, r.useState)("0s"),
+                    P = E[0],
+                    M = E[1],
                     L = (0, r.useState)(null),
                     N = L[0],
                     T = L[1],
@@ -1579,7 +1565,7 @@
                     ),
                     B = (0, r.useMemo)(
                         () => ({
-                            cancelable: !F,
+                            cancelable: !m,
                             disabled: y,
                             delayLongPress: p,
                             delayPressStart: u,
@@ -1591,13 +1577,13 @@
                                 _(t ? 0 : 150), null != C && C(e);
                             },
                             onPressEnd(e) {
-                                O(250), null != m && m(e);
+                                O(250), null != F && F(e);
                             },
                         }),
-                        [p, u, f, y, g, b, C, m, F, _, O],
+                        [p, u, f, y, g, b, C, F, m, _, O],
                     ),
                     k = (0, a.Z)(w, B);
-                return r.createElement(c.Z, (0, n.Z)({}, K, k, { accessibilityDisabled: y, focusable: !y && !1 !== v, pointerEvents: y ? "box-none" : void 0, ref: E, style: [h.root, !y && h.actionable, x, null != N && { opacity: N }, { transitionDuration: P }] }));
+                return r.createElement(c.Z, (0, n.Z)({}, K, k, { accessibilityDisabled: y, focusable: !y && !1 !== v, pointerEvents: y ? "box-none" : void 0, ref: D, style: [h.root, !y && h.actionable, x, null != N && { opacity: N }, { transitionDuration: P }] }));
             }
             var h = u.Z.create({ root: { transitionProperty: "opacity", transitionDuration: "0.15s", userSelect: "none" }, actionable: { cursor: "pointer", touchAction: "manipulation" } }),
                 p = r.memo(r.forwardRef(f));
@@ -1606,4 +1592,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.071024fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-6107ac1a.e47463fa.js.map

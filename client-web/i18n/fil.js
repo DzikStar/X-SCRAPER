@@ -13,10 +13,18 @@
                 var i, e, t, o, s, r;
             }
             i("c39b0e24", "X"),
+                i("bcd6bb0e", "Miyembro"),
+                i("hd8c22d2", "Mod"),
+                i("c3153100", "Admin"),
                 i("jb38600c", "Wala"),
                 i("f07eac34", "Parody account"),
                 i("a41b5c2e", "Account para sa fan"),
                 i("i428ea62", "Account para sa komentaryo"),
+                i("jd859c9c", "Inalis ka na sa Space na ito."),
+                i("cfbea177", function (a) {
+                    return "Space ni " + a.name;
+                }),
+                i("ab4fc8bc", "Space"),
                 i("ac0d27be", "Paumanhin, nasuspinde ang account na ito."),
                 i("bcee7444", "Hindi na-update ang account."),
                 i("e0cbf77a", "Idagdag"),
@@ -57,9 +65,6 @@
                 i("h1cbdd30", "Mangyaring i-refresh ang pahina at subukang muli."),
                 i("a5077d3e", "I-refresh"),
                 i("b2648ba4", "Maaaring hindi pinapayagan ang account mo na gawin ang pagkilos na ito. Paki-refresh ang pahina at subukang muli."),
-                i("bcd6bb0e", "Miyembro"),
-                i("hd8c22d2", "Mod"),
-                i("c3153100", "Admin"),
                 i("fa9adac1", function (a) {
                     return 'Hanapin ang "' + a.query + '"';
                 }),
@@ -72,19 +77,12 @@
                 i("c64e46f8", "Inalis ang member na ito sa Komunidad, kaya nakatago na ang kanyang mga post."),
                 i("b3f1cb42", "Itinago ng moderator ang post na ito dahil sa paglabag sa alituntunin ng Komunidad."),
                 i("cbd2dc9c", "Ni-report mo ang post na ito."),
-                i("cfbea177", function (a) {
-                    return "Space ni " + a.name;
-                }),
-                i("ab4fc8bc", "Space"),
-                i("jd859c9c", "Inalis ka na sa Space na ito."),
                 i("c60ed9b0", "Hindi ka awtorisadong sumali sa Space na ito."),
                 i("d8227e16", "Hindi ka awtorisadong gumawa ng Space na ito"),
                 i("f027fed8", "Picture-in-Picture"),
                 i("hd50e064", "Hindi ngayon"),
                 i("i76d640e", "Kailangan namin ang pahintulot mo"),
                 i("fdaa0be8", "Para magsalita sa Space na ito, kakailanganin mong magbigay sa X ng access sa microphone mo. Pakitingnan ang mga setting ng browser mo. "),
-                i("gea6cc1a", "Sigurado ka ba?"),
-                i("hb568af4", "I-mute"),
                 i("f7c8617a", "Ano ang mga clip?"),
                 i("ecc7d2ec", "Ang mga clip ay mga nakunang sandali na puwedeng gawin at ibahagi ng sinuman sa iyong Space. Nag-e-expire ang lahat ng clip pagkalipas ng 30 araw."),
                 i("d575ee02", "Sino ang puwedeng gumawa ng clip?"),
@@ -102,16 +100,6 @@
                 i("jf03b37c", "Pakinggan ang recording kahit kailan. Puwede mo rin itong ibahagi sa pamamagitan ng isang post."),
                 i("fd05976b", "Matuto pa"),
                 i("b4f91a8a", "Aktibo ang recording"),
-                i("gb418012", "Welcome sa Spaces"),
-                i("fec3c1e0", "Kung saan nagaganap ang mga live na audio na usapan"),
-                i("j32eb4f8", "Magdagdag ng hanggang 10 tagapagsalita"),
-                i("j4f133a6", "Puwede mong imbitahang magsalita sa X ang kahit sino."),
-                i("ed434ac6", "Pampubliko ang mga Space—puwedeng sumali ang kahit na sino"),
-                i("e0025688", "Space mo, patakaran mo"),
-                i("c1bc6f86", "Bilang host, kinokontrol mo kung sino ang puwedeng magsalita. Puwede mo ring alisin ang mga taong ayaw mong nasa Space mo."),
-                i("b0bc8330", "Puwede ka ring mag-block at mag-ulat ng mga tao sa isang Space."),
-                i("cb17a0f3", "Matuto pa"),
-                i("dcd77941", "Matuto pa"),
                 i("cc724cb0", "Gumawa ng Clip"),
                 i("cfd2f35e", "Kanselahin"),
                 i("c1df579e", "Susunod"),
@@ -125,6 +113,16 @@
                 i("a9ba3e28", "Pribadong Impormasyon"),
                 i("d5519f4a", "Mapang-abusong Gawi"),
                 i("eb55363c", "Naiulat na ang Space na ito"),
+                i("gb418012", "Welcome sa Spaces"),
+                i("fec3c1e0", "Kung saan nagaganap ang mga live na audio na usapan"),
+                i("j32eb4f8", "Magdagdag ng hanggang 10 tagapagsalita"),
+                i("j4f133a6", "Puwede mong imbitahang magsalita sa X ang kahit sino."),
+                i("ed434ac6", "Pampubliko ang mga Space—puwedeng sumali ang kahit na sino"),
+                i("e0025688", "Space mo, patakaran mo"),
+                i("c1bc6f86", "Bilang host, kinokontrol mo kung sino ang puwedeng magsalita. Puwede mo ring alisin ang mga taong ayaw mong nasa Space mo."),
+                i("b0bc8330", "Puwede ka ring mag-block at mag-ulat ng mga tao sa isang Space."),
+                i("cb17a0f3", "Matuto pa"),
+                i("dcd77941", "Matuto pa"),
                 i("i65de934", "Anonymous kang nakikinig"),
                 i("b1037050", "Pamahalaan ang Space"),
                 i("ic107434", "I-on ang camera"),
@@ -903,10 +901,10 @@
                 i("bf9e181b", "Matuto pa"),
                 i("e8e39f95", "Matuto pa"),
                 i("e126dd3f", "Matuto pa"),
-                i("i821844f", "Matuto pa");
-            i("b0abbb17", "Matuto pa"),
-                i("e7e0d88b", "Matuto pa"),
-                i("i560665f", "Matuto pa"),
+                i("i821844f", "Matuto pa"),
+                i("b0abbb17", "Matuto pa"),
+                i("e7e0d88b", "Matuto pa");
+            i("i560665f", "Matuto pa"),
                 i("f6e774d9", "Matuto pa"),
                 i("h486f755", "Matuto pa"),
                 i("bab41dab", "Matuto pa"),
@@ -1122,6 +1120,7 @@
                 i("dbb51952", "Protektahan ang mga post mo?"),
                 i("de735de6", "Kung gagawin ito, mga follower mo lang sa X ang makakakita sa mga ito."),
                 i("c5d4192a", "Protektahan"),
+                i("gea6cc1a", "Sigurado ka ba?"),
                 i("d9ddba70", "Pampubliko ang Mga Komunidad, kaya itatago ang mga dati mong post kung gagawin mong protektado ang account mo. Hindi ka rin makakapag-post sa Komunidad hangga't hindi nagiging pampubliko ulit ang account mo."),
                 i("f527b322", "Gawing protektado ang aking account"),
                 i("d165c992", "Maaari kang i-tag ninuman"),
@@ -1317,11 +1316,12 @@
                 i("a02d1657", function (a) {
                     return "Ine-execute ang code" + a.ttc_tool_usage_card;
                 }),
-                i("aa9d42c0", "Searching the web"),
-                i("dce1817a", "Searching on 𝕏"),
-                i("f7151564", "Searching users on 𝕏"),
-                i("c43ef93e", "Browsing web page"),
-                i("jb097f6e", "Executing code"),
+                i("aa9d42c0", "Naghahanap sa web"),
+                i("c731d702", "Searching on X"),
+                i("d0e02476", "Searching users on X"),
+                i("c43ef93e", "Bina-browse ang web page"),
+                i("dab166ec", "Searching user posts on X"),
+                i("jb097f6e", "Ine-execute ang code"),
                 i("ead81122", "Nagkaproblema, paki-refresh para kumonekta ulit o subukan ulit."),
                 i("f808a13a", "Lumampas na sa limitasyon ng rate. Maghintay ng ilang sandali at subukan ulit."),
                 i("e0481e5a", "Hindi sinusuportahan ang Grok sa bansa mo sa ngayon."),
@@ -1368,11 +1368,11 @@
                 i("e0bffbf8", "Tungkol sa awtomatikong pagsasalin"),
                 i("e839db3a", "I-dismiss"),
                 i("e7a86c77", function (a) {
-                    return "Automatically translate " + a.language;
+                    return "Awtomatikong isalin ang " + a.language;
                 }),
-                i("c60b9e5c", "Changes will take effect for newly loaded content."),
-                i("f9317b98", "language settings"),
-                i("hba0547a", "Unable to update settings. Please try again later."),
+                i("c60b9e5c", "Magkakabisa ang mga pagbabago sa mga bagong ni-load na content."),
+                i("f9317b98", "mga setting ng wika"),
+                i("hba0547a", "Hindi na-update ang mga setting. Pakisubukan ulit sa ibang pagkakataon."),
                 i("d4c339b9", function (a) {
                     return "Post mula kay " + a.fullName + " (@" + a.screenName + ")";
                 }),
@@ -1814,6 +1814,7 @@
                 i("g00b4c55", function (a) {
                     return "Ibahagi si @" + a.screenName + " sa pamamagitan ng...";
                 }),
+                i("hb568af4", "I-mute"),
                 i("bb1cbeb6", "I-unmute"),
                 i("h2f62206", "Pag-mute ng user"),
                 i("h59f52ee", "Tagumpay na nai-mute."),
@@ -1914,11 +1915,11 @@
                 i("ef1649e2", "X - Mga Shortcut sa Keyboard"),
                 i("aefd89c8", "Navigation"),
                 i("cafdefb2", "Mga Pagkilos"),
-                i("dda42cf2", "Mga Column at Deck"),
-                i("e8a12604", "Magbigay ng caption (opsyonal)");
-            i("eabf2209", function (a) {
-                return "Hango ni " + a.providerName + " ang GIF";
-            }),
+                i("dda42cf2", "Mga Column at Deck");
+            i("e8a12604", "Magbigay ng caption (opsyonal)"),
+                i("eabf2209", function (a) {
+                    return "Hango ni " + a.providerName + " ang GIF";
+                }),
                 i("a613e720", "Kopyahin ang link ng GIF"),
                 i("aeca1239", function (a) {
                     return "Bold" + a.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 i("e06b864c", "Mukhang natutuwa ka sa usapang ito"),
                 i("a078ff70", "Gusto mo bang makakita ng ilan pang content mula sa mga taong nakausap mo sa thread na ito? Simulang mag-explore ng content mula sa mga bagong account."),
                 i("cb80300e", "Lumaktaw papuntang home timeline"),
-                i("ea5cd098", "Lumaktaw papuntang trending"),
-                i("c67e3fc2", "Home timeline");
-            i("d601fc20", "Pinakabago"),
+                i("ea5cd098", "Lumaktaw papuntang trending");
+            i("c67e3fc2", "Home timeline"),
+                i("d601fc20", "Pinakabago"),
                 i("j43f99be", "Kaugnayan"),
                 i("ad6e11ac", "I-sort ang mga reply batay sa"),
                 i("b2311b70", "Hindi ito available sa iyo"),
@@ -3894,13 +3895,13 @@
                 }),
                 i("f5c7aaa7", function (a) {
                     return e(a.count, "H", "h") + "ost";
-                }),
-                i("fc56c8b1", function (a) {
-                    return e(a.count, "", "(na) ") + "co-host";
                 });
-            i("iba0f45d", function (a) {
-                return "tagapagsalita";
+            i("fc56c8b1", function (a) {
+                return e(a.count, "", "(na) ") + "co-host";
             }),
+                i("iba0f45d", function (a) {
+                    return "tagapagsalita";
+                }),
                 i("dc066955", function (a) {
                     return "tagapakinig";
                 }),
@@ -4930,9 +4931,9 @@
                 i("ff95a9cc", "Video ID"),
                 i("a97e358e", "Link ng Video"),
                 i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw."),
-                i("ba37f6da", "Overview ng video"),
-                i("f19846b2", "Thumbnail ng video");
-            i("ccd6f4a8", "Title ng Video"),
+                i("ba37f6da", "Overview ng video");
+            i("f19846b2", "Thumbnail ng video"),
+                i("ccd6f4a8", "Title ng Video"),
                 i("c8410542", "Ang dami ng beses na pinanood ang video mo."),
                 i("a532072a", "Mga Viewer"),
                 i("d9508ab0", "(na) view"),
@@ -5550,6 +5551,7 @@
                 i("bd7eb888", "Tingnan ang lahat ng note sa post na ito"),
                 i("i97b83f6", "Nagkaroon ng error sa pagsusumite ng iyong apela, pakisubukan ulit."),
                 i("a038ab9a", "Isalin ang note"),
+                i("icdb6d74", "Iminungkahi ng isang experimental AI contributor na tumutugon sa mga request para sa isang not. Gaya ng lahat ng contributor, puwedeng magkami ang AI—i-very ang katumpakan."),
                 i("i606fc4c", "Tungkol sa mga apela sa Mga Note ng Komunidad"),
                 i("b664c554", "Humiling ng karagdagang pagsusuri ng contributor"),
                 i("ab66e1f2", "Paano ito gumagana:"),
@@ -5565,6 +5567,7 @@
                 i("ge25848a", "Kasalukuyang Status"),
                 i("d6db34cc", "Nangangailangan pa ng mga rating"),
                 i("ce8b505e", "Hindi kapaki-pakinabang"),
+                i("j42c88b6", "Experimental AI Note Writer"),
                 i("e5be8156", "Tandaan kinalkula ang status ng open-source algorithm"),
                 i("fca23c42", "Nagkasundo ang sapat na dami ng mga contributor na may iba't ibang pananaw na kapaki-pakinabang ang note na ito, kaya ipinapakita ito bilang konteksto sa post."),
                 i("hef420c2", "Hindi pa nare-rate ng sapat na dami ng mga contributor na may iba't ibang pananaw ang note na ito."),
@@ -5880,11 +5883,11 @@
                 i("ab1b3d38", "Hindi pa available ang pag-request ng data ng note"),
                 i("c43fb933", "Kasunduan at Patakaran ng Developer ng X"),
                 i("af781666", "Ano ang palagay ng mga tao?"),
-                i("a1f414ee", "Ibahagi ang mga naiisip"),
-                i("ed88e742", "Kopyahin ang link sa Paksa"),
+                i("a1f414ee", "Ibahagi ang mga naiisip");
+            i("ed88e742", "Kopyahin ang link sa Paksa"),
                 i("h92fe1be", "Sa kasamaang-palad, hindi available sa iyo ang Mga Note ng Komunidad sa ngayon."),
-                i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan.");
-            i("f8fc0b48", "Gumawa ng Folder"),
+                i("f0dc1434", "Sa U.S. lang available ang Mga Note ng Komunidad sa kasalukuyan."),
+                i("f8fc0b48", "Gumawa ng Folder"),
                 i("c14bcdde", "Maghanap ng Mga Bookmark"),
                 i("e9c65c4a", "Paghahanap ng mga Bookmark"),
                 i("b92a21d9", function (a) {
@@ -6886,11 +6889,11 @@
                 i("j3d242ce", "Invalid na range"),
                 i("f4d07bd2", "Magsama ng mga opsyonal na detalye para maging mas madali sa mga candidate na mahanap ang mga trabaho mo gamit ang paghahanap."),
                 i("b8cbb51a", "Buod ng Trabaho"),
-                i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin."),
-                i("b075c68a", "I-edit ang trabaho"),
+                i("bda6881e", "Na-import ang trabahong ito mula sa Applicant ztracking System (ATS). Pakitandaan na mga partikular na field lang ang puwedeng baguhin.");
+            i("b075c68a", "I-edit ang trabaho"),
                 i("d4b6a6e0", "Spotlight ng Profile"),
-                i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko.");
-            i("af1cfd46", "ATS integration"),
+                i("j2dd3686", "I-highlight ang mga naka-feature na trabaho sa itaas ng mga post ko."),
+                i("af1cfd46", "ATS integration"),
                 i("d6fa2944", "Sa pag-delete ng integration mo, made-delete din ang mga naka-import na trabaho."),
                 i("h99f11fa", "I-delete ang integration"),
                 i("eef1ae76", "Kasalukuyang nakakonekta"),
@@ -7400,10 +7403,10 @@
                 i("d94f12b6", "Sumubok na maghanap ng mga abiso, privacy, atbp."),
                 i("ba8f6f82", "Maghanap sa Mga Setting"),
                 i("ibf92e4a", "Naproseso na ang pagbabauad"),
-                i("bdf0fb06", "Your subscription has been activated."),
+                i("bdf0fb06", "Naka-activate na ang subscription mo."),
                 i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
                 i("d42fa852", "Nagkaisyu sa pagproseso ng pagbabayad mo. Pakisubukan ulit."),
-                i("g055a9ce", "Open 𝕏 App"),
+                i("g055a9ce", "Buksan ang X App"),
                 i("g931a6e5", function (a) {
                     return "Sinusundan mo ang " + a.topic;
                 }),
@@ -7868,10 +7871,7 @@
                 i("d7b8387e", "Kung nagkansela ka na, wala ka nang dapat pang gawin. Awtomatikong mag-e-expire ang iyong Subscription sa katapusan ng cycle ng pagsingil."),
                 i("f4166d9a", "Gusto mo bang kanselahin ang iyong Subscription?"),
                 i("b74ff5fc", "Kung magkakansela ka, awtomatikong mag-e-expire ang Subscription sa katapusan ng cycle ng pagsingil."),
-                i("ee9efbc8", "Magpatuloy sa pagkansela"),
-                i("c5d9c77a", "Mukhang nagkaroon ng kaunting problema. Huwag mag-alala, hindi ikaw ang may kasalanan. Isara ang window na ito at subukan ulit."),
-                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store."),
-                i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store.");
+                i("ee9efbc8", "Magpatuloy sa pagkansela");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7910,9 +7910,12 @@
                     o(a, n)
                 );
             }
-            i("i5f14be7", function (a) {
-                return "Welcome back, " + a.displayName;
-            }),
+            i("c5d9c77a", "Mukhang nagkaroon ng kaunting problema. Huwag mag-alala, hindi ikaw ang may kasalanan. Isara ang window na ito at subukan ulit."),
+                i("jda53c24", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Apple App Store."),
+                i("g0a7a53e", "Puwede mong kanselahin ang iyong Subscription sa pamamagitan ng Google Play Store."),
+                i("i5f14be7", function (a) {
+                    return "Welcome back, " + a.displayName;
+                }),
                 i("a76d58ba", "Analytics ng Ads"),
                 i("eccd0e1a", "Analytics ng Organisasyon"),
                 i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
@@ -8908,11 +8911,11 @@
                 }),
                 i("b0b22805", function (a) {
                     return "Bisitahin ang " + a.advertiserName;
-                }),
-                i("c67e71aa", "Panoorin ngayon"),
+                });
+            i("c67e71aa", "Panoorin ngayon"),
                 i("a6ada13e", "Mamili ngayon"),
-                i("j0f12222", "Tumingin pa");
-            i("f569f7c8", "Pumunta sa website"),
+                i("j0f12222", "Tumingin pa"),
+                i("f569f7c8", "Pumunta sa website"),
                 i("j0c6772a", "Bisitahin ang website"),
                 i("f73003aa", "Magpe-play ang video pagkatapos ng ad"),
                 i("b3112b8a", "Laktawan"),
@@ -10162,7 +10165,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Awtomatikong magsasalin ang Grok batay sa X usage at ", " mo. Puwede mo ring palitan ang mga setting ng awtomatikong pagsasalin sa ibaba."];
                             },
                         },
                         {
@@ -13380,4 +13383,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.b96ce34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.5f7a2c1a.js.map

@@ -67,8 +67,8 @@
                 f = s.n(T),
                 y = s(716442),
                 I = s.n(y),
-                k = s(985289),
-                C = s.n(k),
+                C = s(985289),
+                k = s.n(C),
                 R = s(524816),
                 v = s.n(R),
                 E = s(917665),
@@ -80,7 +80,7 @@
                     clearConversations: (t, s) => e.graphQL(i(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, o.ZP)("GraphQL clear grok conversations failed."), e)),
                     setPreferences: ({ grokMode: t, grokModelOptionId: s }) => e.graphQL(U(), { grokMode: t, grokModelOptionId: s }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
                     fetchConversation: ({ restId: t }) => e.graphQL(_(), { restId: t }).then((e) => e),
-                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(C(), { grok_share_id: t }).then((e) => e),
+                    fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(k(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(h(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(u(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(f(), { cursor: t }).then((e) => e),
@@ -201,7 +201,7 @@
                 _ = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 p = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
                 u = { GenericSearchQueryFormatter: n().ie2bbeed, GenericSearchQueryMarkdownFormatter: n().b0d1e205, WebSearchQueryFormatter: n().ie2bbeed, XSearchQueryFormatter: n().bf970edd, XUserSearchFormatter: n().ad342369, BrowsePageFormatter: n().g008d475, GenericURLQueryFormatter: n().c91e3971, GenericURLQueryMarkdownFormatter: n().acb9b845, XUsernameSearchFormatter: n().j9006405, XUsernameQuerySearchFormatter: n().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: n().e99fb7a3, CodeExecutionFormatter: n().a02d1657 },
-                m = { WebSearchQueryFormatter: n().aa9d42c0, XSearchQueryFormatter: n().dce1817a, XUserSearchFormatter: n().f7151564, BrowsePageFormatter: n().c43ef93e, XUsernameSearchFormatter: n().dce1817a, XUsernameQuerySearchFormatter: n().dce1817a, XUsernameQuerySearchMarkdownFormatter: n().dce1817a, CodeExecutionFormatter: n().jb097f6e };
+                m = { WebSearchQueryFormatter: n().aa9d42c0, XSearchQueryFormatter: n().c731d702, XUserSearchFormatter: n().d0e02476, BrowsePageFormatter: n().c43ef93e, XUsernameSearchFormatter: n().dab166ec, XUsernameQuerySearchFormatter: n().dab166ec, CodeExecutionFormatter: n().jb097f6e };
             class h {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, t = !1) => {
@@ -311,7 +311,8 @@
                                             l = [];
                                         if (s) {
                                             const e = (0, d.j)(s);
-                                            e && ((r = [e]), (l = [{ header: e, toolUsageCard: s, type: "TOOL_USAGE" }]));
+                                            e && (r = [e]);
+                                            (0, d.jU)(s) && (l = [{ header: e, toolUsageCard: s, type: "TOOL_USAGE" }]);
                                         } else {
                                             const t = (0, i.K)(e.message);
                                             t.trim() && ((r = [(0, i.K)(e.message)]), (n = [...(n || []), t]), (l = [{ header: o.header, summary: t, type: "SUMMARY" }]));
@@ -445,4 +446,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.a384476a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-9f4db315.63e2584a.js.map

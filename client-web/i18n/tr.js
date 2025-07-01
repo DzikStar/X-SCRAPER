@@ -12,10 +12,18 @@
                 return "one" == (1 == e ? "one" : "other") ? a : i;
             }
             n("c39b0e24", "X"),
+                n("bcd6bb0e", "Üye"),
+                n("hd8c22d2", "Mod"),
+                n("c3153100", "Yntc."),
                 n("jb38600c", "Yok"),
                 n("f07eac34", "Parodi hesabı"),
                 n("a41b5c2e", "Hayran hesabı"),
                 n("i428ea62", "Yorum hesabı"),
+                n("jd859c9c", "Bu Sohbet Odasından çıkarıldın."),
+                n("cfbea177", function (e) {
+                    return e.name + " adlı kullanıcının Sohbet Odası";
+                }),
+                n("ab4fc8bc", "Sohbet odası"),
                 n("ac0d27be", "Üzgünüz, bu hesap askıya alındı."),
                 n("bcee7444", "Hesap güncellenemedi."),
                 n("e0cbf77a", "Telefon ekle"),
@@ -56,9 +64,6 @@
                 n("h1cbdd30", "Lütfen sayfayı yenile ve yeniden dene."),
                 n("a5077d3e", "Yenile"),
                 n("b2648ba4", "Hesabının bu eylemi gerçekleştirmek için izni olmayabilir. Lütfen sayfayı yenile ve tekrar dene."),
-                n("bcd6bb0e", "Üye"),
-                n("hd8c22d2", "Mod"),
-                n("c3153100", "Yntc."),
                 n("fa9adac1", function (e) {
                     return '"' + e.query + '" ara';
                 }),
@@ -71,19 +76,12 @@
                 n("c64e46f8", "Bu üye Topluluktan çıkarıldığı için gönderileri gizlendi."),
                 n("b3f1cb42", "Bir moderatör, Topluluk kurallarını ihlal ettiği için bu gönderiyi gizledi."),
                 n("cbd2dc9c", "Bu gönderiyi bildirdin."),
-                n("cfbea177", function (e) {
-                    return e.name + " adlı kullanıcının Sohbet Odası";
-                }),
-                n("ab4fc8bc", "Sohbet odası"),
-                n("jd859c9c", "Bu Sohbet Odasından çıkarıldın."),
                 n("c60ed9b0", "Bu Sohbet Odasına katılma yetkin yok."),
                 n("d8227e16", "Bu Sohbet Odasını oluşturma yetkin yok"),
                 n("f027fed8", "Resim İçinde Resim"),
                 n("hd50e064", "Şimdi değil"),
                 n("i76d640e", "İznin gerekiyor"),
                 n("fdaa0be8", "Bu Sohbet Odasında konuşmak için X'in mikrofonuna erişmesine izin vermen gerekir. Lütfen tarayıcı ayarlarını kontrol et. "),
-                n("gea6cc1a", "Emin misin?"),
-                n("hb568af4", "Sessize al"),
                 n("f7c8617a", "Klip nedir?"),
                 n("ecc7d2ec", "Klipler, Sohbet Odandaki kişilerin oluşturup paylaşabileceği anlardır. Tüm klipler 30 gün sonra silinir."),
                 n("d575ee02", "Kimler klip oluşturabilir?"),
@@ -101,16 +99,6 @@
                 n("jf03b37c", "Dilediğin zaman kaydı dinle. Gönderiyle de paylaşabilirsin."),
                 n("fd05976b", "Daha fazla bilgi al"),
                 n("b4f91a8a", "Kayıt aktif"),
-                n("gb418012", "Sohbet Odalarına Hoş Geldin"),
-                n("fec3c1e0", "Canlı sesli görüşmelerin gerçekleştiği yer"),
-                n("j32eb4f8", "10 kişiye kadar konuşmacı ekle"),
-                n("j4f133a6", "X'teki herkesi konuşmaya davet edebilirsin."),
-                n("ed434ac6", "Sohbet Odaları herkese açıktır ve isteyen katılabilir"),
-                n("e0025688", "Senin Sohbet Odan, senin kuralların"),
-                n("c1bc6f86", "Yönetici olarak kimin konuşmasına izin verileceğini kontrol edebilirsin. Ayrıca, Sohbet Odanda istemediğin kişileri kaldırma yetkin de bulunur."),
-                n("b0bc8330", "Ayrıca, Sohbet Odasındaki kişileri engelleyebilir ve bildirebilirsin."),
-                n("cb17a0f3", "Daha fazla bilgi al"),
-                n("dcd77941", "Daha fazla bilgi al"),
                 n("cc724cb0", "Klip oluştur"),
                 n("cfd2f35e", "İptal"),
                 n("c1df579e", "Sonraki"),
@@ -124,6 +112,16 @@
                 n("a9ba3e28", "Gizli Bilgi"),
                 n("d5519f4a", "Taciz İçeren Davranış"),
                 n("eb55363c", "Bu Sohbet Odasını bildirdin."),
+                n("gb418012", "Sohbet Odalarına Hoş Geldin"),
+                n("fec3c1e0", "Canlı sesli görüşmelerin gerçekleştiği yer"),
+                n("j32eb4f8", "10 kişiye kadar konuşmacı ekle"),
+                n("j4f133a6", "X'teki herkesi konuşmaya davet edebilirsin."),
+                n("ed434ac6", "Sohbet Odaları herkese açıktır ve isteyen katılabilir"),
+                n("e0025688", "Senin Sohbet Odan, senin kuralların"),
+                n("c1bc6f86", "Yönetici olarak kimin konuşmasına izin verileceğini kontrol edebilirsin. Ayrıca, Sohbet Odanda istemediğin kişileri kaldırma yetkin de bulunur."),
+                n("b0bc8330", "Ayrıca, Sohbet Odasındaki kişileri engelleyebilir ve bildirebilirsin."),
+                n("cb17a0f3", "Daha fazla bilgi al"),
+                n("dcd77941", "Daha fazla bilgi al"),
                 n("i65de934", "Anonim olarak dinliyorsun"),
                 n("b1037050", "Sohbet Odasını Yönet"),
                 n("ic107434", "Kamerayı aç"),
@@ -902,10 +900,10 @@
                 n("bf9e181b", "Daha fazla bilgi al"),
                 n("e8e39f95", "Learn more"),
                 n("e126dd3f", "Learn more"),
-                n("i821844f", "Learn more");
-            n("b0abbb17", "Learn more"),
-                n("e7e0d88b", "Learn more"),
-                n("i560665f", "Learn more"),
+                n("i821844f", "Learn more"),
+                n("b0abbb17", "Learn more"),
+                n("e7e0d88b", "Learn more");
+            n("i560665f", "Learn more"),
                 n("f6e774d9", "Learn more"),
                 n("h486f755", "Learn more"),
                 n("bab41dab", "Learn more"),
@@ -1121,6 +1119,7 @@
                 n("dbb51952", "Gönderilerin korumaya alınsın mı?"),
                 n("de735de6", "Bu işlem sonucunda onları yalnızca X takipçilerin görebilir."),
                 n("c5d4192a", "Korumaya al"),
+                n("gea6cc1a", "Emin misin?"),
                 n("d9ddba70", "Topluluklar herkese açık olduğu için hesabını korumalı hâle getirmek, önceki gönderilerinin gizlenmesine neden olur. Ayrıca hesabını tekrar herkese açık hâle getirene kadar Topluluk içinde gönderi yayınlayamazsın."),
                 n("f527b322", "Hesabımı korumalı hale getir"),
                 n("d165c992", "Herhangi biri seni etiketleyebilir"),
@@ -1317,9 +1316,10 @@
                     return "Kod yürütülüyor" + e.ttc_tool_usage_card;
                 }),
                 n("aa9d42c0", "Web'de arama yapılıyor"),
-                n("dce1817a", "𝕏'te arama yapılıyor"),
-                n("f7151564", "𝕏'te kullanıcılar aranıyor"),
+                n("c731d702", "Searching on X"),
+                n("d0e02476", "Searching users on X"),
                 n("c43ef93e", "Web sayfasına göz atılıyor"),
+                n("dab166ec", "Searching user posts on X"),
                 n("jb097f6e", "Kod yürütülüyor"),
                 n("ead81122", "Bir sorun oluştu. Yeniden bağlanmak için yenile veya tekrar dene."),
                 n("f808a13a", "Kullanım limiti aşıldı. Lütfen biraz bekleyip tekrar dene."),
@@ -1813,6 +1813,7 @@
                 n("g00b4c55", function (e) {
                     return "@" + e.screenName + " kullanıcısını paylaşma yolu...";
                 }),
+                n("hb568af4", "Sessize al"),
                 n("bb1cbeb6", "Sesi aç"),
                 n("h2f62206", "Kullanıcı sessize alınıyor"),
                 n("h59f52ee", "Başarıyla sessize alındı."),
@@ -1913,11 +1914,11 @@
                 n("ef1649e2", "X - Klavye kısayolları"),
                 n("aefd89c8", "Gezinme"),
                 n("cafdefb2", "Eylemler"),
-                n("dda42cf2", "Sütunlar ve Desteler"),
-                n("e8a12604", "Alt yazı ekle (isteğe bağlı)");
-            n("eabf2209", function (e) {
-                return "GIF " + e.providerName + " tarafından sağlanmaktadır";
-            }),
+                n("dda42cf2", "Sütunlar ve Desteler");
+            n("e8a12604", "Alt yazı ekle (isteğe bağlı)"),
+                n("eabf2209", function (e) {
+                    return "GIF " + e.providerName + " tarafından sağlanmaktadır";
+                }),
                 n("a613e720", "GIF bağlantısını kopyala"),
                 n("aeca1239", function (e) {
                     return "Kalın" + e.ttc_rich_text_composer;
@@ -2973,9 +2974,9 @@
                 n("e06b864c", "Bu sohbetten keyif alıyorsun gibi görünüyor"),
                 n("a078ff70", "Bu Tweet dizisinde etkileşime girdiğin kullanıcılardan daha fazla içerik görmek ister misin? Yeni hesaplardan içerikler keşfetmeye başla."),
                 n("cb80300e", "Anasayfa zaman akışına geç"),
-                n("ea5cd098", "Gündemdekilere geç"),
-                n("c67e3fc2", "Anasayfa zaman akışı");
-            n("d601fc20", "En Son"),
+                n("ea5cd098", "Gündemdekilere geç");
+            n("c67e3fc2", "Anasayfa zaman akışı"),
+                n("d601fc20", "En Son"),
                 n("j43f99be", "Alaka düzeyi"),
                 n("ad6e11ac", "Yanıtları sıralama ölçütü"),
                 n("b2311b70", "Bu içerik senin erişimine açık değil"),
@@ -3893,13 +3894,13 @@
                 }),
                 n("f5c7aaa7", function (e) {
                     return "yönetici";
-                }),
-                n("fc56c8b1", function (e) {
-                    return "yardımcı";
                 });
-            n("iba0f45d", function (e) {
-                return "konuşmacı";
+            n("fc56c8b1", function (e) {
+                return "yardımcı";
             }),
+                n("iba0f45d", function (e) {
+                    return "konuşmacı";
+                }),
                 n("dc066955", function (e) {
                     return "dinleyici";
                 }),
@@ -4929,9 +4930,9 @@
                 n("ff95a9cc", "Video kimliği"),
                 n("a97e358e", "Video Bağlantısı"),
                 n("e10e8b46", "Yalnızca son 100 günde yayınlanan videolar gösteriliyor."),
-                n("ba37f6da", "Videoya genel bakış"),
-                n("f19846b2", "Video küçük resmi");
-            n("ccd6f4a8", "Video başlığı"),
+                n("ba37f6da", "Videoya genel bakış");
+            n("f19846b2", "Video küçük resmi"),
+                n("ccd6f4a8", "Video başlığı"),
                 n("c8410542", "Videonun görüntülenme sayısı."),
                 n("a532072a", "İzleyiciler"),
                 n("d9508ab0", "görüntülenme"),
@@ -5549,6 +5550,7 @@
                 n("bd7eb888", "Bu gönderideki tüm notları gör"),
                 n("i97b83f6", "İtirazın gönderilirken bir sorun oluştu. Lütfen tekrar dene."),
                 n("a038ab9a", "Notu çevir"),
+                n("icdb6d74", "Not isteklerine yanıt olarak deneysel bir yapay zeka katkıda bulunan tarafından öneriliyor. Tüm katkıda bulunanlar gibi yapay zeka sistemleri de hata yapabilir. Doğruluğunu teyit et."),
                 n("i606fc4c", "Topluluk Notları itirazları hakkında"),
                 n("b664c554", "Ek katkıda bulunan incelemesi iste"),
                 n("ab66e1f2", "Sistem şu şekilde işler:"),
@@ -5564,6 +5566,7 @@
                 n("ge25848a", "Mevcut Durum"),
                 n("d6db34cc", "Daha fazla değerlendirme gerekiyor"),
                 n("ce8b505e", "Yardımcı olmadı"),
+                n("j42c88b6", "Deneysel Yapay Zeka Not Yazarı"),
                 n("e5be8156", "Not durumu açık kaynaklı algoritma tarafından işlenmiştir"),
                 n("fca23c42", 'Farklı bakış açılarına sahip yeterli sayıda katkıda bulunan, bu notu "yardımcı oldu" olarak değerlendirdiği için not gönderide bağlam olarak gösteriliyor.'),
                 n("hef420c2", "Bu not, henüz farklı bakış açısına sahip yeterli sayıda katkıda bulunan tarafından değerlendirilmedi."),
@@ -5879,11 +5882,11 @@
                 n("ab1b3d38", "Not isteği verileri henüz mevcut değil"),
                 n("c43fb933", "X Geliştirici Sözleşmesi ve Politikası"),
                 n("af781666", "İnsanlar ne düşünüyor?"),
-                n("a1f414ee", "Düşüncelerini paylaş"),
-                n("ed88e742", "Konu bağlantısını kopyala"),
+                n("a1f414ee", "Düşüncelerini paylaş");
+            n("ed88e742", "Konu bağlantısını kopyala"),
                 n("h92fe1be", "Maalesef Topluluk Notları şu anda senin için kullanılabilir değil."),
-                n("f0dc1434", "Topluluk Notları şu anda yalnızca ABD'de kullanılabilir");
-            n("f8fc0b48", "Bir Klasör oluştur"),
+                n("f0dc1434", "Topluluk Notları şu anda yalnızca ABD'de kullanılabilir"),
+                n("f8fc0b48", "Bir Klasör oluştur"),
                 n("c14bcdde", "Yer İşaretlerinde Ara"),
                 n("e9c65c4a", "Yer işaretleri araması"),
                 n("b92a21d9", function (e) {
@@ -6885,11 +6888,11 @@
                 n("j3d242ce", "Geçersiz aralık"),
                 n("f4d07bd2", "Adayların rollerini aramayla daha kolay bulmasını sağlamak için isteğe bağlı ayrıntılar ekle."),
                 n("b8cbb51a", "İş Özeti"),
-                n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma."),
-                n("b075c68a", "İlanı düzenle"),
+                n("bda6881e", "Bu ilan, senin Başvuru Takip Sisteminden (ATS) içe aktarıldı. Yalnızca belirli alanların değiştirilebileceğini lütfen unutma.");
+            n("b075c68a", "İlanı düzenle"),
                 n("d4b6a6e0", "Profil Spotlight'ı"),
-                n("j2dd3686", "Öne çıkan iş ilanlarını gönderilerimin üzerinde vurgula.");
-            n("af1cfd46", "ATS entegrasyonu"),
+                n("j2dd3686", "Öne çıkan iş ilanlarını gönderilerimin üzerinde vurgula."),
+                n("af1cfd46", "ATS entegrasyonu"),
                 n("d6fa2944", "Entegrasyonu sildiğinde içe aktarılan iş ilanların silinmez."),
                 n("h99f11fa", "Entegrasyonu sil"),
                 n("eef1ae76", "Şu anda bağlı"),
@@ -7867,10 +7870,7 @@
                 n("d7b8387e", "Aboneliğini zaten iptal ettiysen yapacağın başka bir işlem yok. Aboneliğinin süresi, faturalandırma döneminin sonunda otomatik olarak dolacak."),
                 n("f4166d9a", "Aboneliğini iptal etmek mi istiyorsun?"),
                 n("b74ff5fc", "İptal edersen Aboneliğinin süresi faturalandırma döneminin sonunda otomatik olarak dolacak."),
-                n("ee9efbc8", "İptal işlemine devam et"),
-                n("c5d9c77a", "Küçük bir kesinti yaşandı. Endişelenmene gerek yok, senden kaynaklanmıyor. Bu pencereyi kapatıp tekrar dene."),
-                n("jda53c24", "Aboneliğini Apple App Store üzerinden iptal edebilirsin."),
-                n("g0a7a53e", "Aboneliğini Google Play Store üzerinden iptal edebilirsin.");
+                n("ee9efbc8", "İptal işlemine devam et");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7909,9 +7909,12 @@
                     t(e, a)
                 );
             }
-            n("i5f14be7", function (e) {
-                return "Tekrar hoş geldin, " + e.displayName;
-            }),
+            n("c5d9c77a", "Küçük bir kesinti yaşandı. Endişelenmene gerek yok, senden kaynaklanmıyor. Bu pencereyi kapatıp tekrar dene."),
+                n("jda53c24", "Aboneliğini Apple App Store üzerinden iptal edebilirsin."),
+                n("g0a7a53e", "Aboneliğini Google Play Store üzerinden iptal edebilirsin."),
+                n("i5f14be7", function (e) {
+                    return "Tekrar hoş geldin, " + e.displayName;
+                }),
                 n("a76d58ba", "Reklam İstatistikleri"),
                 n("eccd0e1a", "Kuruluş İstatistikleri"),
                 n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
@@ -8907,11 +8910,11 @@
                 }),
                 n("b0b22805", function (e) {
                     return e.advertiserName + " adresini ziyaret et";
-                }),
-                n("c67e71aa", "Şimdi izle"),
+                });
+            n("c67e71aa", "Şimdi izle"),
                 n("a6ada13e", "Alışverişe başla"),
-                n("j0f12222", "Daha fazlasını gör");
-            n("f569f7c8", "İnternet sitesine git"),
+                n("j0f12222", "Daha fazlasını gör"),
+                n("f569f7c8", "İnternet sitesine git"),
                 n("j0c6772a", "İnternet sitesini ziyaret et"),
                 n("f73003aa", "Video reklamdan sonra oynatılacak"),
                 n("b3112b8a", "Atla"),
@@ -13376,4 +13379,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.5f1c4c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.21ea84ca.js.map

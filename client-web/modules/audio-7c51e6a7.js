@@ -43,10 +43,10 @@
                                 (function (e) {
                                     return (t) => (
                                         (function (e, t) {
-                                            t.filter(I).forEach((t) => {
+                                            t.filter(C).forEach((t) => {
                                                 const n = t.body.body,
                                                     o = t.data.sender.twitter_id,
-                                                    s = C(e, o);
+                                                    s = I(e, o);
                                                 -1 === s
                                                     ? S(e, t)
                                                     : (function (e, t) {
@@ -84,9 +84,9 @@
                                 (function (e) {
                                     return (t) => (
                                         (function (e, t) {
-                                            t.filter(I).forEach((t) => {
+                                            t.filter(C).forEach((t) => {
                                                 const n = t.data.sender.twitter_id,
-                                                    o = C(e, n);
+                                                    o = I(e, n);
                                                 t.body.final
                                                     ? (function (e, t, n) {
                                                           const o = t.data.sender.twitter_id;
@@ -157,10 +157,10 @@
                 const r = S(e, t);
                 return T(e, o, t.timestamp), r;
             }
-            function C(e, t) {
+            function I(e, t) {
                 return e.get(p).findIndex((e) => e.speaker.id_str === t);
             }
-            function I(e) {
+            function C(e) {
                 const {
                     body: { body: t },
                 } = e;
@@ -740,7 +740,7 @@
             }
         },
         42134: (e, t, n) => {
-            n.d(t, { K$: () => b, rm: () => w, fU: () => I, lR: () => C, Ud: () => E, cI: () => P, rx: () => T, JD: () => A });
+            n.d(t, { K$: () => b, rm: () => w, fU: () => C, lR: () => I, Ud: () => E, cI: () => P, rx: () => T, JD: () => A });
             var o = n(565058),
                 s = n(400752),
                 r = n(202784),
@@ -780,11 +780,11 @@
                         "space" === o?.type && (n !== o.role && t(b, { ...o, role: n }), e(p.Lg));
                     },
                 ),
-                C = (0, o.cn)((e) => {
+                I = (0, o.cn)((e) => {
                     const t = e(P);
                     return [d.Q.host, d.Q.cohost, d.Q.speaker].includes(t);
                 }),
-                I = (0, o.cn)((e) => {
+                C = (0, o.cn)((e) => {
                     const t = e(P);
                     return [d.Q.host, d.Q.cohost].includes(t);
                 }),
@@ -890,8 +890,8 @@
                     );
                 return r.createElement(r.Fragment, null, t ? r.createElement(T, o) : r.createElement(_.D, o), r.createElement(v.SpaceBehaviors, { audioSpaceId: e.audioSpaceId, isSideNavLayout: e.isSideNavLayout }), r.createElement(S.B, { audioSpaceId: e.audioSpaceId }), r.createElement(w.R, { audioSpaceId: e.audioSpaceId }));
             }
-            var C = n(869508),
-                I = n(142202),
+            var I = n(869508),
+                C = n(142202),
                 E = n(877506);
             function A(e) {
                 const [t] = e.activeItem;
@@ -917,7 +917,7 @@
                             },
                             onPlayerState: function (e, o) {
                                 t(i.id, e, o, (e) => {
-                                    (0, C.aF)(e, n), (0, f.H3)(e), I.Z.subscribeNtpTime(n);
+                                    (0, I.aF)(e, n), (0, f.H3)(e), C.Z.subscribeNtpTime(n);
                                 });
                             },
                         };
@@ -1136,7 +1136,7 @@
             n(571372);
             var o = n(202784),
                 s = n(400752),
-                r = n(776342),
+                r = n(668260),
                 i = n(111677),
                 a = n.n(i),
                 c = n(316118),
@@ -1255,7 +1255,7 @@
                 function K() {
                     const e = x?.title?.trim(),
                         t = x?.host?.display_name;
-                    return e || (t ? I.title({ name: t }) : I.titleFallback);
+                    return e || (t ? C.title({ name: t }) : C.titleFallback);
                 }
                 const q = {
                         is: N,
@@ -1291,7 +1291,7 @@
                 const { isUserSpeakingRole: B } = (0, l.l7)();
                 o.useEffect(() => {
                     let e;
-                    const t = B ? C : P;
+                    const t = B ? I : P;
                     return (
                         Q &&
                             (function n() {
@@ -1325,8 +1325,8 @@
                 return t.data && (n.data = t.data), t.error && (n.error = t.error), n;
             }
             const P = 15,
-                C = 5,
-                I = { title: a().cfbea177, titleFallback: a().ab4fc8bc };
+                I = 5,
+                C = { title: a().cfbea177, titleFallback: a().ab4fc8bc };
         },
         87682: (e, t, n) => {
             n.d(t, { R: () => i });
@@ -1476,24 +1476,27 @@
             }
         },
         763126: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => m, listenerVideoPortalNodeAtom: () => p });
-            var o = n(202784),
-                s = n(565058),
-                r = n(400752),
-                i = n(702239),
-                a = n(381904),
-                c = n(447735),
-                u = n(135328),
-                l = n(610214),
-                d = n(837759);
-            const p = (0, s.cn)(() => (0, i.oD)());
-            function f(e) {
-                (0, c.b)();
-                const { config: t } = (0, a.Y)(),
-                    n = (0, r.Dv)(p);
-                return (0, r.Dv)(l.gc) ? null : o.createElement(o.Fragment, null, t.dock(e), o.createElement(d.G3, null), o.createElement(i.Nq, { node: n }, o.createElement(u.Z, t.player())));
+            n.r(t), n.d(t, { default: () => y, listenerVideoPortalNodeAtom: () => m });
+            var o = n(807896),
+                s = n(202784),
+                r = n(565058),
+                i = n(400752),
+                a = n(702239),
+                c = n(509599),
+                u = n(381904),
+                l = n(447735),
+                d = n(135328),
+                p = n(610214),
+                f = n(837759);
+            const m = (0, r.cn)(() => (0, a.oD)());
+            function h(e) {
+                (0, l.b)();
+                const { config: t } = (0, u.Y)(),
+                    n = (0, i.Dv)(m),
+                    r = (0, i.Dv)(c.KK);
+                return (0, i.Dv)(p.gc) ? null : s.createElement(s.Fragment, null, t.dock(e), s.createElement(f.G3, null), s.createElement(a.Nq, { node: n }, s.createElement(d.Z, (0, o.Z)({}, t.player(), { publisherId: r }))));
             }
-            const m = o.memo(f);
+            const y = s.memo(h);
         },
         744130: (e, t, n) => {
             n.r(t), n.d(t, { __DANGEROUS_IMPORT_VIDEOPLAYER_BASE__: () => b, __DANGEROUS_IMPORT__: () => k });
@@ -1517,28 +1520,28 @@
                 h = n(58255);
             function y(e) {
                 const { featureSwitches: t } = o.useContext(l.rC),
-                    { acquisitionParams: n, broadcastId: r, isLive: i, isLooping: d, media: p, mediaKey: f, onEnded: y, onPlaybackEmitterCreated: b, onPlayerApi: k, onPlayerState: S, requestedTimecode: w, shouldAutoplayMuted: T } = e,
-                    [P, C] = o.useState(null),
-                    I = o.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
-                    E = p || (r && f);
+                    { acquisitionParams: n, broadcastId: r, isLive: i, isLooping: d, media: p, mediaKey: f, onEnded: y, onPlaybackEmitterCreated: b, onPlayerApi: k, onPlayerState: S, publisherId: w, requestedTimecode: T, shouldAutoplayMuted: P } = e,
+                    [I, C] = o.useState(null),
+                    E = o.useRef({ playbackCoordinationEmitter: null, previousPlayerState: null }),
+                    A = p || (r && f);
                 if (
                     (o.useEffect(() => {
-                        null === P && E && (0, c.ij)({ showControls: !1, source: {} }, t).then((e) => C(() => e));
-                    }, [P, E, t]),
+                        null === I && A && (0, c.ij)({ showControls: !1, source: {} }, t).then((e) => C(() => e));
+                    }, [I, A, t]),
                     o.useEffect(() => {
-                        const e = I.current;
+                        const e = E.current;
                         return function () {
                             const { playbackCoordinationEmitter: t } = e;
                             t && t.unregister();
                         };
                     }, []),
-                    null === P || !E)
+                    null === I || !A)
                 )
                     return null;
-                const A = Boolean(i && r && f),
-                    Z = !A && T,
-                    D = A ? s.W.SPACE : s.W.NORMAL;
-                const L = (function (e, t) {
+                const Z = Boolean(i && r && f),
+                    D = !Z && P,
+                    L = Z ? s.W.SPACE : s.W.NORMAL;
+                const M = (function (e, t) {
                         const n = e.analytics.contextualScribeNamespace,
                             o = { isAnonymous: e.isAnonymous, enableShortFormCompleteLogging: t.isTrue("responsive_web_video_pcomplete_enabled"), periscopeAuthToken: h.w.proxsee.authToken(), scribeContext: { ...n }, userType: h.w.proxsee.userType() },
                             s = {
@@ -1549,51 +1552,51 @@
                             };
                         return new m.Z(s, { log: () => {} }, e.getTwitterAuthedHttpClient(), o);
                     })(e, t),
-                    M = {
-                        analytics: L,
-                        basePlayerClass: P,
+                    x = {
+                        analytics: M,
+                        basePlayerClass: I,
                         httpClient: _,
                         onApiReady: function (t) {
-                            Z || t.play(), "function" == typeof k && k(t);
+                            D || t.play(), "function" == typeof k && k(t);
                             const n = p?.video_info?.duration_millis;
-                            "number" == typeof n && "number" == typeof w && t.scrubToFraction(w / n);
+                            "number" == typeof n && "number" == typeof T && t.scrubToFraction(T / n);
                             const o = {
                                 onAutoPlayRequest: function () {
-                                    Z && t.playPreview();
+                                    D && t.playPreview();
                                 },
                                 onPauseRequest: function () {
                                     e.disablePlaybackCoordination || t.pause();
                                 },
-                                playbackPriority: D,
-                                canAutoplay: Boolean(T),
+                                playbackPriority: L,
+                                canAutoplay: Boolean(P),
                                 isLooping: Boolean(d),
                             };
-                            (I.current.playbackCoordinationEmitter = u.Tc.register(o)), b && b(I.current.playbackCoordinationEmitter);
+                            (E.current.playbackCoordinationEmitter = u.Tc.register(o)), b && b(E.current.playbackCoordinationEmitter);
                         },
                         onStateUpdate: function (e, t) {
                             "function" == typeof S && S(e, t),
                                 (function (e) {
                                     const t = v(e);
-                                    e.isPlaying && t && t.durationMs === t.currentTimeMs && "function" == typeof y && (y(), I.current.playbackCoordinationEmitter && I.current.playbackCoordinationEmitter.signalPlaybackFinish());
+                                    e.isPlaying && t && t.durationMs === t.currentTimeMs && "function" == typeof y && (y(), E.current.playbackCoordinationEmitter && E.current.playbackCoordinationEmitter.signalPlaybackFinish());
                                 })(e),
                                 (function (e) {
-                                    const { playbackCoordinationEmitter: t, previousPlayerState: n } = I.current,
+                                    const { playbackCoordinationEmitter: t, previousPlayerState: n } = E.current,
                                         o = null === n,
                                         s = n?.isPlaying,
                                         r = e.isPlaying,
                                         i = !o && s && !r;
                                     (!o && s) || !r ? i && t && t.signalPause() : t && t.signalPlay();
                                 })(e),
-                                (I.current.previousPlayerState = e);
+                                (E.current.previousPlayerState = e);
                         },
                         twitterAuthedHttpClient: e.getTwitterAuthedHttpClient(),
                     };
                 if (r && f) {
-                    const e = { ...M, configType: "static", contentId: f, contentType: "broadcast", featureProvider: t, variants: [], videoId: a.Z.forAudioSpace(r, f, i, n) };
+                    const e = { ...x, configType: "static", contentId: f, contentType: "broadcast", featureProvider: t, variants: [], publisherId: w, videoId: a.Z.forAudioSpace(r, f, i, n) };
                     return o.createElement(g, { key: r, playerConfig: e });
                 }
                 if (p) {
-                    const e = { ...M, configType: "static", contentId: p.id_str, loop: !1, contentType: "media_entity", featureProvider: t, durationMs: p.video_info.duration_millis, variants: p.video_info.variants.map(({ bitrate: e, content_type: t, url: n }) => ({ type: t, src: n })) };
+                    const e = { ...x, configType: "static", contentId: p.id_str, loop: !1, contentType: "media_entity", featureProvider: t, durationMs: p.video_info.duration_millis, variants: p.video_info.variants.map(({ bitrate: e, content_type: t, url: n }) => ({ type: t, src: n })) };
                     return o.createElement(g, { key: p.id_str, playerConfig: e });
                 }
                 return null;
@@ -1611,7 +1614,7 @@
             n(202784);
             const o = (0, n(523561).Z)({
                 loader: () =>
-                    Promise.all([n.e("icons.13"), n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-9749c7d2"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-87e5a2e7"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-44a55f38"), n.e("loader.AudioOnlyVideoPlayer")])
+                    Promise.all([n.e("icons.4"), n.e("modules.audio-6107ac1a"), n.e("modules.audio-b953418a"), n.e("modules.audio-7c51e6a7"), n.e("modules.audio-04db59e9"), n.e("modules.audio-76583d6c"), n.e("modules.audio-b7a8a5fb"), n.e("modules.audio-51f6e793"), n.e("modules.audio-e019dbda"), n.e("modules.audio-262c94d4"), n.e("modules.audio-c6fe4ea4"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-9749c7d2"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-87e5a2e7"), n.e("shared~ondemand.InlinePlayer~loader.AudioOnlyVideoPlayer~loader.immersiveTweetHandler~bundle.TV~bund-44a55f38"), n.e("loader.AudioOnlyVideoPlayer")])
                         .then(n.bind(n, 744130))
                         .then((e) => ({ default: e.__DANGEROUS_IMPORT__ })),
             });
@@ -1689,8 +1692,8 @@
                 w = n(601576),
                 T = n(919022);
             const P = (0, S.Z)().propsFromActions(() => ({ addToast: w.fz, createLocalApiErrorHandler: (0, _.zr)("FOLLOW_HOST_BUTTON"), follow: T.ZP.follow })),
-                C = u.Z;
-            function I({ scribe: e, spaceId: t }) {
+                I = u.Z;
+            function C({ scribe: e, spaceId: t }) {
                 const n = t ? `/i/spaces/${t}/peek` : void 0;
                 return s.createElement(
                     f.ZP,
@@ -1727,11 +1730,11 @@
                 D = { followHostClick: ":audiospace:audiospace_card:speaker_list:button:click", toastImpression: ":audiospace::follow_host:toast:impression", viewProfileClick: ":audiospace::follow_host:toast:click", viewDetailsClick: ":audiospace:audiospace_card:speaker_list:button:click" },
                 L = P(function (e) {
                     const { scribe: t, spaceId: n, user: o } = e,
-                        r = d()(C, o),
+                        r = d()(I, o),
                         i = r?.relationship_perspectives?.following,
                         { viewerUserId: a } = s.useContext(b.rC);
                     return !r || i || a === r.rest_id
-                        ? s.createElement(I, { scribe: t, spaceId: n })
+                        ? s.createElement(C, { scribe: t, spaceId: n })
                         : s.createElement(
                               s.Fragment,
                               null,
@@ -1773,4 +1776,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.1192fdea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-7c51e6a7.1341c27a.js.map

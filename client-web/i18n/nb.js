@@ -12,10 +12,18 @@
                 return "one" == (1 == e ? "one" : "other") ? n : r;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Medlem"),
+                t("hd8c22d2", "Mod."),
+                t("c3153100", "Admin"),
                 t("jb38600c", "Ingen"),
                 t("f07eac34", "Parodikonto"),
                 t("a41b5c2e", "Fankonto"),
                 t("i428ea62", "Kommentarkonto"),
+                t("jd859c9c", "Du har blitt fjernet fra dette Området."),
+                t("cfbea177", function (e) {
+                    return e.name + " sitt område";
+                }),
+                t("ab4fc8bc", "Plass"),
                 t("ac0d27be", "Beklager, denne kontoen er suspendert."),
                 t("bcee7444", "Konto-oppdateringen feilet."),
                 t("e0cbf77a", "Legg til telefon"),
@@ -56,9 +64,6 @@
                 t("h1cbdd30", "Last siden på nytt og prøv igjen."),
                 t("a5077d3e", "Oppdater"),
                 t("b2648ba4", "Kontoen din kan kanskje ikke utføre denne handlingen. Oppdater siden og prøv igjen."),
-                t("bcd6bb0e", "Medlem"),
-                t("hd8c22d2", "Mod."),
-                t("c3153100", "Admin"),
                 t("fa9adac1", function (e) {
                     return "Søk etter «" + e.query + "»";
                 }),
@@ -71,19 +76,12 @@
                 t("c64e46f8", "Dette medlemmet ble fjernet fra fellesskapet, så innleggene hens er skjult."),
                 t("b3f1cb42", "Dette innlegget ble skjult av en moderator fordi det bryter en av fellesskapets regler."),
                 t("cbd2dc9c", "Du har rapportert dette innlegget."),
-                t("cfbea177", function (e) {
-                    return e.name + " sitt område";
-                }),
-                t("ab4fc8bc", "Plass"),
-                t("jd859c9c", "Du har blitt fjernet fra dette Området."),
                 t("c60ed9b0", "Du har ikke tillatelse til å bli med i dette området."),
                 t("d8227e16", "Du har ikke tillatelse til å opprette dette området"),
                 t("f027fed8", "Bilde i bilde"),
                 t("hd50e064", "Ikke nå"),
                 t("i76d640e", "Vi må ha tillatelse fra deg"),
                 t("fdaa0be8", "For å snakke i dette området må du gi X tilgang til mikrofonen din. Sjekk nettleserinnstillingene. "),
-                t("gea6cc1a", "Er du sikker?"),
-                t("hb568af4", "Skjul"),
                 t("f7c8617a", "Hva er klipp?"),
                 t("ecc7d2ec", "Klipp er innspilte øyeblikk som alle i området ditt kan lage og dele. Alle klipp utløper etter 30 dager."),
                 t("d575ee02", "Hvem kan lage klipp?"),
@@ -101,16 +99,6 @@
                 t("jf03b37c", "Lytt til opptaket når du selv vil. Du kan også dele det i et innlegg."),
                 t("fd05976b", "Les mer"),
                 t("b4f91a8a", "Aktivt opptak"),
-                t("gb418012", "Velkommen til Områder"),
-                t("fec3c1e0", "Der lydsamtaler skjer direktesendt"),
-                t("j32eb4f8", "Legg til opptil ti talere"),
-                t("j4f133a6", "Du kan invitere hvem som helst på X til å snakke."),
-                t("ed434ac6", "Områder er offentlige – alle kan bli med"),
-                t("e0025688", "Ditt område, dine regler"),
-                t("c1bc6f86", "Som vert bestemmer du hvem som får snakke. Du kan også fjerne uønskede deltakere fra området ditt."),
-                t("b0bc8330", "Du kan også blokkere og rapportere folk i et Område."),
-                t("cb17a0f3", "Les mer"),
-                t("dcd77941", "Les mer"),
                 t("cc724cb0", "Opprett klipp"),
                 t("cfd2f35e", "Avbryt"),
                 t("c1df579e", "Neste"),
@@ -124,6 +112,16 @@
                 t("a9ba3e28", "Privat informasjon"),
                 t("d5519f4a", "Støtende oppførsel"),
                 t("eb55363c", "Dette Området er rapportert"),
+                t("gb418012", "Velkommen til Områder"),
+                t("fec3c1e0", "Der lydsamtaler skjer direktesendt"),
+                t("j32eb4f8", "Legg til opptil ti talere"),
+                t("j4f133a6", "Du kan invitere hvem som helst på X til å snakke."),
+                t("ed434ac6", "Områder er offentlige – alle kan bli med"),
+                t("e0025688", "Ditt område, dine regler"),
+                t("c1bc6f86", "Som vert bestemmer du hvem som får snakke. Du kan også fjerne uønskede deltakere fra området ditt."),
+                t("b0bc8330", "Du kan også blokkere og rapportere folk i et Område."),
+                t("cb17a0f3", "Les mer"),
+                t("dcd77941", "Les mer"),
                 t("i65de934", "Du lytter anonymt"),
                 t("b1037050", "Administrer område"),
                 t("ic107434", "Slå på kameraet"),
@@ -902,10 +900,10 @@
                 t("bf9e181b", "Les mer"),
                 t("e8e39f95", "Les mer"),
                 t("e126dd3f", "Les mer"),
-                t("i821844f", "Les mer");
-            t("b0abbb17", "Les mer"),
-                t("e7e0d88b", "Les mer"),
-                t("i560665f", "Les mer"),
+                t("i821844f", "Les mer"),
+                t("b0abbb17", "Les mer"),
+                t("e7e0d88b", "Les mer");
+            t("i560665f", "Les mer"),
                 t("f6e774d9", "Les mer"),
                 t("h486f755", "Les mer"),
                 t("bab41dab", "Les mer"),
@@ -1121,6 +1119,7 @@
                 t("dbb51952", "Vil du beskytte innleggene dine?"),
                 t("de735de6", "Dette gjør dem synlige for kun X-følgerne dine."),
                 t("c5d4192a", "Beskytt"),
+                t("gea6cc1a", "Er du sikker?"),
                 t("d9ddba70", "Fellesskaper er offentlige, så når du beskytter kontoen, skjules tidligere innlegg. Du kan heller ikke publisere noe i fellesskapet før kontoen din er offentlig igjen."),
                 t("f527b322", "Beskytt kontoen min"),
                 t("d165c992", "Hvem som helst kan tagge deg"),
@@ -1316,10 +1315,11 @@
                 t("a02d1657", function (e) {
                     return "Utfører kode" + e.ttc_tool_usage_card;
                 }),
-                t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
-                t("c43ef93e", "Browsing web page"),
+                t("aa9d42c0", "Søker på nettet"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
+                t("c43ef93e", "Leser på nettside"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Utfører kode"),
                 t("ead81122", "Det oppstod en feil. Oppdater for å koble til på nytt, eller prøv igjen."),
                 t("f808a13a", "Du har nådd maksgrensen. Vent litt og prøv deretter på nytt."),
@@ -1367,11 +1367,11 @@
                 t("e0bffbf8", "Om automatisk oversettelse"),
                 t("e839db3a", "Forkast"),
                 t("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "Oversett automatisk " + e.language;
                 }),
-                t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("f9317b98", "language settings"),
-                t("hba0547a", "Unable to update settings. Please try again later."),
+                t("c60b9e5c", "Endringer trer i kraft for nylig innlastet innhold."),
+                t("f9317b98", "språkinnstillingene"),
+                t("hba0547a", "Får ikke oppdatert innstillingene. Prøv igjen senere."),
                 t("d4c339b9", function (e) {
                     return "Innlegg fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1813,6 +1813,7 @@
                 t("g00b4c55", function (e) {
                     return "Del @" + e.screenName + " via …";
                 }),
+                t("hb568af4", "Skjul"),
                 t("bb1cbeb6", "Vis"),
                 t("h2f62206", "Skjuler brukeren"),
                 t("h59f52ee", "Brukeren er skjult."),
@@ -1913,11 +1914,11 @@
                 t("ef1649e2", "X sine hurtigtaster"),
                 t("aefd89c8", "Navigering"),
                 t("cafdefb2", "Handlinger"),
-                t("dda42cf2", "Kolonner og paneler"),
-                t("e8a12604", "Legg til en bildetekst (valgfritt)");
-            t("eabf2209", function (e) {
-                return "GIF-en kommer fra " + e.providerName;
-            }),
+                t("dda42cf2", "Kolonner og paneler");
+            t("e8a12604", "Legg til en bildetekst (valgfritt)"),
+                t("eabf2209", function (e) {
+                    return "GIF-en kommer fra " + e.providerName;
+                }),
                 t("a613e720", "Kopier lenken til GIF-en"),
                 t("aeca1239", function (e) {
                     return "Fet" + e.ttc_rich_text_composer;
@@ -2973,9 +2974,9 @@
                 t("e06b864c", "Det ser ut til at du liker denne samtalen"),
                 t("a078ff70", "Vil du se mer innhold fra dem du har kommunisert med i denne tråden? Begynn å utforske innhold fra nye kontoer."),
                 t("cb80300e", "Gå til Hjem-tidslinjen"),
-                t("ea5cd098", "Gå til Populært"),
-                t("c67e3fc2", "Hjemtidslinjen");
-            t("d601fc20", "Siste"),
+                t("ea5cd098", "Gå til Populært");
+            t("c67e3fc2", "Hjemtidslinjen"),
+                t("d601fc20", "Siste"),
                 t("j43f99be", "Relevans"),
                 t("ad6e11ac", "Sorter svar etter"),
                 t("b2311b70", "Dette er ikke tilgjengelig for deg."),
@@ -3893,13 +3894,13 @@
                 }),
                 t("f5c7aaa7", function (e) {
                     return "vert" + i(e.count, "", "er");
-                }),
-                t("fc56c8b1", function (e) {
-                    return "medvert" + i(e.count, "", "er");
                 });
-            t("iba0f45d", function (e) {
-                return "taler" + i(e.count, "", "e");
+            t("fc56c8b1", function (e) {
+                return "medvert" + i(e.count, "", "er");
             }),
+                t("iba0f45d", function (e) {
+                    return "taler" + i(e.count, "", "e");
+                }),
                 t("dc066955", function (e) {
                     return "lytter" + i(e.count, "", "e");
                 }),
@@ -4929,9 +4930,9 @@
                 t("ff95a9cc", "Video-ID"),
                 t("a97e358e", "Videolenke"),
                 t("e10e8b46", "Viser bare videoene fra de siste 100 dagene."),
-                t("ba37f6da", "Videooversikt"),
-                t("f19846b2", "Videominiatyrbilde");
-            t("ccd6f4a8", "Videotittel"),
+                t("ba37f6da", "Videooversikt");
+            t("f19846b2", "Videominiatyrbilde"),
+                t("ccd6f4a8", "Videotittel"),
                 t("c8410542", "Antall ganger videoen din har blitt vist."),
                 t("a532072a", "Seere"),
                 t("d9508ab0", "visninger"),
@@ -5549,6 +5550,7 @@
                 t("bd7eb888", "Se alle merknader til dette innlegget"),
                 t("i97b83f6", "Det oppstod en feil under innsending av klagen, så prøv på nytt."),
                 t("a038ab9a", "Oversett merknad"),
+                t("icdb6d74", "Foreslått av en eksperimentell KI-basert bidragsyter som svarer på forespørsler om en merknad. På samme  måte som alle bedragsytere kan kunstig intelligens gjøre feil. Du bør kontrollere nøyaktigheten."),
                 t("i606fc4c", "Om klagefunksjonen til Fellesskapsmerknader"),
                 t("b664c554", "Be om å få en ny gjennomgang"),
                 t("ab66e1f2", "Slik fungerer det:"),
@@ -5564,6 +5566,7 @@
                 t("ge25848a", "Nåværende status"),
                 t("d6db34cc", "Trenger flere vurderinger"),
                 t("ce8b505e", "Ikke nyttig"),
+                t("j42c88b6", "Merknadsskriving med kunstig intelligens (eksperimentelt)"),
                 t("e5be8156", "Merknadsstatus beregnet av åpen-kildekode-algoritme"),
                 t("fca23c42", "Tilstrekkelig mange bidragsytere med forskjellige synspunkter er enige om at denne merknaden er nyttig, så den vises som kontekst i innlegget."),
                 t("hef420c2", "Denne merknaden er ennå ikke evaluert av tilstrekkelig mange bidragsytere med forskjellige synspunkter."),
@@ -5879,11 +5882,11 @@
                 t("ab1b3d38", "Merknadsforespørselsdata er ikke tilgjengelig ennå"),
                 t("c43fb933", "X’ avtale og regler for utviklere"),
                 t("af781666", "Hva tenker brukerne?"),
-                t("a1f414ee", "Din mening"),
-                t("ed88e742", "Kopier lenke til emnet"),
+                t("a1f414ee", "Din mening");
+            t("ed88e742", "Kopier lenke til emnet"),
                 t("h92fe1be", "Fellesskapsmerknader er dessverre ikke tilgjengelig for deg ennå."),
-                t("f0dc1434", "Fellesskapsmerknader er for øyeblikket bare tilgjengelig i USA");
-            t("f8fc0b48", "Opprett en mappe"),
+                t("f0dc1434", "Fellesskapsmerknader er for øyeblikket bare tilgjengelig i USA"),
+                t("f8fc0b48", "Opprett en mappe"),
                 t("c14bcdde", "Søk i bokmerker"),
                 t("e9c65c4a", "Bokmerkesøk"),
                 t("b92a21d9", function (e) {
@@ -6885,11 +6888,11 @@
                 t("j3d242ce", "Ugyldig intervall"),
                 t("f4d07bd2", "Legg til valgfrie detaljer for å gjøre det enklere for kandidater å finne jobbene dine i søk."),
                 t("b8cbb51a", "Jobbsammendrag"),
-                t("bda6881e", "Denne jobben er importert fra kandidatsystemet ditt. Vær obs på at bare visse felt kan endres."),
-                t("b075c68a", "Rediger jobb"),
+                t("bda6881e", "Denne jobben er importert fra kandidatsystemet ditt. Vær obs på at bare visse felt kan endres.");
+            t("b075c68a", "Rediger jobb"),
                 t("d4b6a6e0", "Profilfremheving"),
-                t("j2dd3686", "Fremhev viste jobber over innleggene mine.");
-            t("af1cfd46", "Integrasjon med kandidatsystem"),
+                t("j2dd3686", "Fremhev viste jobber over innleggene mine."),
+                t("af1cfd46", "Integrasjon med kandidatsystem"),
                 t("d6fa2944", "Importerte jobber slettes ikke hvis du sletter integrasjonen."),
                 t("h99f11fa", "Slett integrasjon"),
                 t("eef1ae76", "Tilkoblet for øyeblikket"),
@@ -7399,10 +7402,10 @@
                 t("d94f12b6", "Prøv å søke etter varsler, personvern osv."),
                 t("ba8f6f82", "Søk i innstillinger"),
                 t("ibf92e4a", "Betaling gjennomført"),
-                t("bdf0fb06", "Your subscription has been activated."),
+                t("bdf0fb06", "Abonnementet er aktivert."),
                 t("ddfd6718", "Betalingen mislyktes"),
                 t("d42fa852", "Det oppstod et problem ved behandling av betalingen. Prøv på nytt."),
-                t("g055a9ce", "Open 𝕏 App"),
+                t("g055a9ce", "Åpne 𝕏-appen"),
                 t("g931a6e5", function (e) {
                     return "Du følger " + e.topic;
                 }),
@@ -7867,10 +7870,7 @@
                 t("d7b8387e", "Har du allerede kansellert, trenger du ikke gjøre noe mer. Abonnementet utløper automatisk på slutten av faktureringssyklusen."),
                 t("f4166d9a", "Vil du kansellere abonnementet ditt?"),
                 t("b74ff5fc", "Hvis du kansellerer, utløper abonnementet automatisk på slutten av faktureringssyklusen."),
-                t("ee9efbc8", "Fortsett til kansellering"),
-                t("c5d9c77a", "Det ser ut til at det oppstod et lite problem. Men slapp av, det er ikke din feil. Lukk dette vinduet og prøv på nytt."),
-                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store."),
-                t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk.");
+                t("ee9efbc8", "Fortsett til kansellering");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7909,9 +7909,12 @@
                     d(e, n)
                 );
             }
-            t("i5f14be7", function (e) {
-                return "Velkommen tilbake, " + e.displayName;
-            }),
+            t("c5d9c77a", "Det ser ut til at det oppstod et lite problem. Men slapp av, det er ikke din feil. Lukk dette vinduet og prøv på nytt."),
+                t("jda53c24", "Abonnementet kan kanselleres via Apple App Store."),
+                t("g0a7a53e", "Abonnementet kan kanselleres via Google Play Butikk."),
+                t("i5f14be7", function (e) {
+                    return "Velkommen tilbake, " + e.displayName;
+                }),
                 t("a76d58ba", "Annonsestatistikk"),
                 t("eccd0e1a", "Organisasjonsstatistikk"),
                 t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
@@ -8907,11 +8910,11 @@
                 }),
                 t("b0b22805", function (e) {
                     return "Besøk " + e.advertiserName;
-                }),
-                t("c67e71aa", "Se nå"),
+                });
+            t("c67e71aa", "Se nå"),
                 t("a6ada13e", "Handle nå"),
-                t("j0f12222", "Se mer");
-            t("f569f7c8", "Gå til nettstedet"),
+                t("j0f12222", "Se mer"),
+                t("f569f7c8", "Gå til nettstedet"),
                 t("j0c6772a", "Besøk nettstedet"),
                 t("f73003aa", "Videoen spilles av etter annonsen"),
                 t("b3112b8a", "Hopp over"),
@@ -9108,10 +9111,10 @@
                 t("f8e8e32e", "Du"),
                 t("df6703d3", "Du"),
                 t("c20f7e9f", function (e) {
-                    return i(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
+                    return i(e.otherUsersCount, s.createElement(s.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
                 }),
                 t("he26f627", function (e) {
-                    return i(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
+                    return i(e.otherUsersCount, s.createElement(s.Fragment, null, "", e.secondName), e.otherUsersCount + " andre");
                 }),
                 t("gea7aa3c", "Neste"),
                 t("b6462b32", "Forrige"),
@@ -9530,8 +9533,8 @@
                 t("acddd4d4", "Rød"),
                 t("cef9b062", "Blågrønn"),
                 t("d9daefca", "Mørk grå");
-            var l = r(202784),
-                s = [],
+            var s = r(202784),
+                l = [],
                 o = {};
             function g(e) {
                 return e;
@@ -9547,7 +9550,7 @@
                     (n.prototype.constructor = n),
                     d(n, r),
                     (u.prototype.render = function () {
-                        return l.createElement.apply(l, this[this.props.$i18n].reduce(this.templateReducer, [l.Fragment, null]));
+                        return s.createElement.apply(s, this[this.props.$i18n].reduce(this.templateReducer, [s.Fragment, null]));
                     }),
                     (t = u),
                     (k = [
@@ -10154,7 +10157,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok oversetter automatisk basert på X-bruken din og ", ". Du kan også endre innstillingene for automatisk oversettelse nedenfor."];
                             },
                         },
                         {
@@ -12999,8 +13002,8 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    n = l.Children.toArray(this.props.children),
-                                    r = ((e = this.props.$i18n), s[o[e]] || g);
+                                    n = s.Children.toArray(this.props.children),
+                                    r = ((e = this.props.$i18n), l[o[e]] || g);
                                 return function (e, t, i) {
                                     return e.concat(t, n[r(i)]);
                                 };
@@ -13011,10 +13014,10 @@
                     Object.defineProperty(t, "prototype", { writable: !1 }),
                     u
                 );
-            })(r(111677)._ActualI18NFormatMessage || l.Component);
+            })(r(111677)._ActualI18NFormatMessage || s.Component);
             t("_ActualI18NFormatMessage", k),
                 t("I18NFormatMessage", function (e) {
-                    return l.createElement(k, e);
+                    return s.createElement(k, e);
                 });
             var f = r(495075);
             r(800694), r(556829), r(530152), r(658610), r(492344), r(663823);
@@ -13366,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.35c4fb1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.520499aa.js.map

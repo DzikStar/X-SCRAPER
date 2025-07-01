@@ -28,10 +28,18 @@
                 var n, i;
             }
             n("c39b0e24", "X"),
+                n("bcd6bb0e", "Ball"),
+                n("hd8c22d2", "Modhnóir"),
+                n("c3153100", "Riarachán"),
                 n("jb38600c", "Dada"),
                 n("f07eac34", "Parody account"),
                 n("a41b5c2e", "Fan account"),
                 n("i428ea62", "Commentary account"),
+                n("jd859c9c", "Baineadh as an Spás seo thú."),
+                n("cfbea177", function (e) {
+                    return "Spás de chuid" + e.name;
+                }),
+                n("ab4fc8bc", "Spás"),
                 n("ac0d27be", "Ár leithscéali. Cuireadh an cuntas seo ar fionraí."),
                 n("bcee7444", "Theip ar nuashonrú an chuntais."),
                 n("e0cbf77a", "Cuir fóin leis"),
@@ -72,9 +80,6 @@
                 n("h1cbdd30", "Athnuaigh an leathanach agus bain triail as arís."),
                 n("a5077d3e", "Athnuaigh"),
                 n("b2648ba4", "B'fhéidir nach bhfuil cead ag do chuntas an gníomh seo a dhéanamh. Athnuaigh an leathanach agus bain triail as arís."),
-                n("bcd6bb0e", "Ball"),
-                n("hd8c22d2", "Modhnóir"),
-                n("c3153100", "Riarachán"),
                 n("fa9adac1", function (e) {
                     return 'Cuardaigh i gcomhair "' + e.query + '"';
                 }),
@@ -87,19 +92,12 @@
                 n("c64e46f8", "This member was removed from the Community, so their posts are hidden."),
                 n("b3f1cb42", "A moderator hid this post for breaking a Community rule."),
                 n("cbd2dc9c", "You reported this post."),
-                n("cfbea177", function (e) {
-                    return "Spás de chuid" + e.name;
-                }),
-                n("ab4fc8bc", "Spás"),
-                n("jd859c9c", "Baineadh as an Spás seo thú."),
                 n("c60ed9b0", "You are not authorized to join this Space."),
                 n("d8227e16", "You are not authorized to create this Space"),
                 n("f027fed8", "Picture-in-Picture"),
                 n("hd50e064", "Ní faoi láthair"),
                 n("i76d640e", "We need your permission"),
                 n("fdaa0be8", "To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                n("gea6cc1a", "An bhfuil tú cinnte?"),
-                n("hb568af4", "Balbhaigh"),
                 n("f7c8617a", "Cad is gearrthóg ann?"),
                 n("ecc7d2ec", "Is cuimhneacháin iad gearrthóga ar féidir le haon duine i do Spás a dhéanamh agus a roinnt. Téann gach gearrthóg in éag tar éis 30 lá."),
                 n("d575ee02", "Cé atá in ann gearrthóg a dhéanamh?"),
@@ -117,16 +115,6 @@
                 n("jf03b37c", "Listen to the recording anytime. You can also share it with a post."),
                 n("fd05976b", "Learn more"),
                 n("b4f91a8a", "Tá an fheidhm taifeadta gníomhach"),
-                n("gb418012", "Welcome to Spaces"),
-                n("fec3c1e0", "An áit a dtarlaíonn comhráite beo"),
-                n("j32eb4f8", "Add up to 10 speakers"),
-                n("j4f133a6", "You can invite anyone on X to speak."),
-                n("ed434ac6", "Spaces are public — anyone can join"),
-                n("e0025688", "Your Space, your rules"),
-                n("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                n("b0bc8330", "Is féidir leat daoine i Spás a chosc agus a thuairisciú freisin."),
-                n("cb17a0f3", "Learn more"),
-                n("dcd77941", "Learn more"),
                 n("cc724cb0", "Cruthaigh gearrthóg"),
                 n("cfd2f35e", "Cealaigh"),
                 n("c1df579e", "Ar aghaidh"),
@@ -140,6 +128,16 @@
                 n("a9ba3e28", "Eolas pearsanta"),
                 n("d5519f4a", "Iompar Maslach"),
                 n("eb55363c", "Rinneadh an Spás seo a thuairisciú"),
+                n("gb418012", "Welcome to Spaces"),
+                n("fec3c1e0", "An áit a dtarlaíonn comhráite beo"),
+                n("j32eb4f8", "Add up to 10 speakers"),
+                n("j4f133a6", "You can invite anyone on X to speak."),
+                n("ed434ac6", "Spaces are public — anyone can join"),
+                n("e0025688", "Your Space, your rules"),
+                n("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                n("b0bc8330", "Is féidir leat daoine i Spás a chosc agus a thuairisciú freisin."),
+                n("cb17a0f3", "Learn more"),
+                n("dcd77941", "Learn more"),
                 n("i65de934", "You are listening anonymously"),
                 n("b1037050", "Manage Space"),
                 n("ic107434", "Turn on camera"),
@@ -918,10 +916,10 @@
                 n("bf9e181b", "Tuilleadh faisnéise"),
                 n("e8e39f95", "Tuilleadh eolais"),
                 n("e126dd3f", "Tuilleadh eolais"),
-                n("i821844f", "Tuilleadh eolais");
-            n("b0abbb17", "Tuilleadh eolais"),
-                n("e7e0d88b", "Tuilleadh eolais"),
-                n("i560665f", "Tuilleadh eolais"),
+                n("i821844f", "Tuilleadh eolais"),
+                n("b0abbb17", "Tuilleadh eolais"),
+                n("e7e0d88b", "Tuilleadh eolais");
+            n("i560665f", "Tuilleadh eolais"),
                 n("f6e774d9", "Tuilleadh eolais"),
                 n("h486f755", "Tuilleadh eolais"),
                 n("bab41dab", "Tuilleadh eolais"),
@@ -1137,6 +1135,7 @@
                 n("dbb51952", "Protect your posts?"),
                 n("de735de6", "This will make them visible only to your X followers."),
                 n("c5d4192a", "Cosain"),
+                n("gea6cc1a", "An bhfuil tú cinnte?"),
                 n("d9ddba70", "Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 n("f527b322", "Protect my account"),
                 n("d165c992", "Is féidir le duine ar bith tú a chlibeáil"),
@@ -1333,9 +1332,10 @@
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 n("aa9d42c0", "Searching the web"),
-                n("dce1817a", "Searching on 𝕏"),
-                n("f7151564", "Searching users on 𝕏"),
+                n("c731d702", "Searching on X"),
+                n("d0e02476", "Searching users on X"),
                 n("c43ef93e", "Browsing web page"),
+                n("dab166ec", "Searching user posts on X"),
                 n("jb097f6e", "Executing code"),
                 n("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 n("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1829,6 +1829,7 @@
                 n("g00b4c55", function (e) {
                     return "Share @" + e.screenName + " via...";
                 }),
+                n("hb568af4", "Balbhaigh"),
                 n("bb1cbeb6", "Díbhalbhaigh"),
                 n("h2f62206", "Úsáideoir á bhalbhú"),
                 n("h59f52ee", "D'éirigh leat é a bhalbhú."),
@@ -1929,11 +1930,11 @@
                 n("ef1649e2", "X - Keyboard shortcuts"),
                 n("aefd89c8", "Nascleanúint"),
                 n("cafdefb2", "Gníomhartha"),
-                n("dda42cf2", "Colúin agus Deiceanna"),
-                n("e8a12604", "Provide a caption (optional)");
-            n("eabf2209", function (e) {
-                return "GIF curtha ar fáil ag " + e.providerName;
-            }),
+                n("dda42cf2", "Colúin agus Deiceanna");
+            n("e8a12604", "Provide a caption (optional)"),
+                n("eabf2209", function (e) {
+                    return "GIF curtha ar fáil ag " + e.providerName;
+                }),
                 n("a613e720", "Cóipeáil an nasc le GIF"),
                 n("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -2989,9 +2990,9 @@
                 n("e06b864c", "It looks like you’re enjoying this conversation"),
                 n("a078ff70", "Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts."),
                 n("cb80300e", "Léim go dtí Amlíne bhaile "),
-                n("ea5cd098", "scipeáil chuig treochtáil"),
-                n("c67e3fc2", "Amlíne bhaile");
-            n("d601fc20", "Na scéalta is déanaí"),
+                n("ea5cd098", "scipeáil chuig treochtáil");
+            n("c67e3fc2", "Amlíne bhaile"),
+                n("d601fc20", "Na scéalta is déanaí"),
                 n("j43f99be", "Relevancy"),
                 n("ad6e11ac", "Sort replies by"),
                 n("b2311b70", "Níl fáil agat air"),
@@ -3909,13 +3910,13 @@
                 }),
                 n("f5c7aaa7", function (e) {
                     return "host" + o(e.count, "", "s");
-                }),
-                n("fc56c8b1", function (e) {
-                    return "co-host" + o(e.count, "", "s");
                 });
-            n("iba0f45d", function (e) {
-                return "speaker" + o(e.count, "", "s");
+            n("fc56c8b1", function (e) {
+                return "co-host" + o(e.count, "", "s");
             }),
+                n("iba0f45d", function (e) {
+                    return "speaker" + o(e.count, "", "s");
+                }),
                 n("dc066955", function (e) {
                     return "listener" + o(e.count, "", "s");
                 }),
@@ -4945,9 +4946,9 @@
                 n("ff95a9cc", "Video ID"),
                 n("a97e358e", "Video Link"),
                 n("e10e8b46", "Only showing the videos from the last 100 days."),
-                n("ba37f6da", "Video overview"),
-                n("f19846b2", "Video thumbnail");
-            n("ccd6f4a8", "Video title"),
+                n("ba37f6da", "Video overview");
+            n("f19846b2", "Video thumbnail"),
+                n("ccd6f4a8", "Video title"),
                 n("c8410542", "The number of times your video was viewed."),
                 n("a532072a", "Viewers"),
                 n("d9508ab0", "views"),
@@ -5565,6 +5566,7 @@
                 n("bd7eb888", "See all notes on this post"),
                 n("i97b83f6", "Tharla earráid agus d'achomharc á chur isteach, bain triail eile as."),
                 n("a038ab9a", "Translate note"),
+                n("icdb6d74", "Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 n("i606fc4c", "About Community Notes appeals"),
                 n("b664c554", "Déan iarrtas le haghaidh athbhreithnithe eile ó rannpháirtithe"),
                 n("ab66e1f2", "Seo mar a oibríonn sé:"),
@@ -5580,6 +5582,7 @@
                 n("ge25848a", " Staid Reatha"),
                 n("d6db34cc", "Tuilleadh rátálacha de dhíth"),
                 n("ce8b505e", "Ní haon chabhair é"),
+                n("j42c88b6", "Experimental AI Note Writer"),
                 n("e5be8156", "Note status computed by open-source algorithm"),
                 n("fca23c42", "Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 n("hef420c2", "Níl cuiditheoirí go leor ó dhearctaí éagsúla ann gur rátáil siad an nóta seo fós."),
@@ -5895,11 +5898,11 @@
                 n("ab1b3d38", "Note request data isn’t available yet"),
                 n("c43fb933", "X Developer Agreement and Policy"),
                 n("af781666", "What do people think?"),
-                n("a1f414ee", "Share thoughts"),
-                n("ed88e742", "Cóipeáil nasc chuig Topaic"),
+                n("a1f414ee", "Share thoughts");
+            n("ed88e742", "Cóipeáil nasc chuig Topaic"),
                 n("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
-                n("f0dc1434", "Community Notes is currently only available in the U.S.");
-            n("f8fc0b48", "Cruthaigh fillteán"),
+                n("f0dc1434", "Community Notes is currently only available in the U.S."),
+                n("f8fc0b48", "Cruthaigh fillteán"),
                 n("c14bcdde", "Cuardaigh Leabharmharcanna"),
                 n("e9c65c4a", "Bookmarks search"),
                 n("b92a21d9", function (e) {
@@ -6901,11 +6904,11 @@
                 n("j3d242ce", "Invalid range"),
                 n("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 n("b8cbb51a", "Job Summary"),
-                n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                n("b075c68a", "Edit job"),
+                n("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            n("b075c68a", "Edit job"),
                 n("d4b6a6e0", "Profile Spotlight"),
-                n("j2dd3686", "Highlight featured jobs above my posts.");
-            n("af1cfd46", "ATS integration"),
+                n("j2dd3686", "Highlight featured jobs above my posts."),
+                n("af1cfd46", "ATS integration"),
                 n("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 n("h99f11fa", "Delete integration"),
                 n("eef1ae76", "Currently connected"),
@@ -7883,10 +7886,7 @@
                 n("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 n("f4166d9a", "Want to cancel your Subscription?"),
                 n("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                n("ee9efbc8", "Lean ar aghaidh chuig an gcealú"),
-                n("c5d9c77a", "is cosúil go raibh beagán bacainn ann. Ná bíodh imní ort, áfach, ní ortsa atá an locht. Dún an fhuinneog seo agus bain triail eile as"),
-                n("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                n("g0a7a53e", "You can cancel your Subscription through the Google Play Store.");
+                n("ee9efbc8", "Lean ar aghaidh chuig an gcealú");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7925,9 +7925,12 @@
                     c(e, a)
                 );
             }
-            n("i5f14be7", function (e) {
-                return "Welcome back, " + e.displayName;
-            }),
+            n("c5d9c77a", "is cosúil go raibh beagán bacainn ann. Ná bíodh imní ort, áfach, ní ortsa atá an locht. Dún an fhuinneog seo agus bain triail eile as"),
+                n("jda53c24", "You can cancel your Subscription through the Apple App Store."),
+                n("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                n("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
                 n("a76d58ba", "Ads Analytics"),
                 n("eccd0e1a", "Organization Analytics"),
                 n("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8923,11 +8926,11 @@
                 }),
                 n("b0b22805", function (e) {
                     return "Tabhair cuairt ar " + e.advertiserName;
-                }),
-                n("c67e71aa", "Breathnaigh air anois"),
+                });
+            n("c67e71aa", "Breathnaigh air anois"),
                 n("a6ada13e", "Shop now"),
-                n("j0f12222", "Féach ar a thuilleadh");
-            n("f569f7c8", "Téigh chuig an suíomh gréasáin"),
+                n("j0f12222", "Féach ar a thuilleadh"),
+                n("f569f7c8", "Téigh chuig an suíomh gréasáin"),
                 n("j0c6772a", "Tabhair cuairt ar an suíomh gréasáin"),
                 n("f73003aa", "Seinnfear an físeán i ndiaidh an fhógra"),
                 n("b3112b8a", "Scipeáil"),
@@ -13384,4 +13387,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.061495aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.80738ffa.js.map

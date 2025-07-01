@@ -8,8 +8,8 @@
                 l = n(457311),
                 o = n(111677),
                 r = n.n(o),
-                s = n(443781);
-            const i = { external: !0, pathname: "https://twitter.github.io/communitynotes/writing-notes" },
+                i = n(443781);
+            const s = { external: !0, pathname: "https://twitter.github.io/communitynotes/writing-notes" },
                 c = r().i859a9d4,
                 d = r().f893c3b8,
                 u = r().a701795c,
@@ -17,19 +17,19 @@
                 p = r().ha275800,
                 g = r().ce0a213a,
                 f = () => {
-                    const { featureSwitches: e } = a.useContext(s.rC),
+                    const { featureSwitches: e } = a.useContext(i.rC),
                         t = e.isTrue("responsive_web_birdwatch_note_writing_enabled");
-                    return a.createElement(l.Z, { buttonLink: t ? i : "/i/flow/join-birdwatch", buttonText: t ? c : d, header: t ? u : m, message: t ? g : p });
+                    return a.createElement(l.Z, { buttonLink: t ? s : "/i/flow/join-birdwatch", buttonText: t ? c : d, header: t ? u : m, message: t ? g : p });
                 };
         },
         721455: (e, t, n) => {
-            n.r(t), n.d(t, { BirdwatchNotesUserScreen: () => qe, default: () => Je });
+            n.r(t), n.d(t, { BirdwatchNotesUserScreen: () => Qe, default: () => Xe });
             var a = n(807896),
                 l = (n(136728), n(202784)),
                 o = n(325686),
                 r = n(731708),
-                s = n(420412),
-                i = n(154003),
+                i = n(420412),
+                s = n(154003),
                 c = n(909377),
                 d = n(721266),
                 u = n(688715),
@@ -45,219 +45,222 @@
                 _ = n(47086),
                 Z = n(121791),
                 k = n(775042),
-                C = n(281312),
-                x = n(607127),
-                S = n(323265),
+                C = n(265518),
+                S = n(281312),
+                I = n(607127),
+                x = n(323265),
                 P = n(959848),
-                I = n(553894),
-                T = n(81327),
-                N = n(980407),
+                T = n(553894),
+                N = n(81327),
+                B = n(980407),
                 v = n(252021),
-                B = n(443781),
-                H = n(652904),
-                R = n(26232),
-                A = n(890655),
-                z = n(293115),
-                O = n(620482),
-                D = n(916616),
-                L = n(22730),
-                M = n(89620),
-                U = n(169584),
-                F = n(129086),
-                j = n(249777),
-                Y = n(486361),
-                $ = n(304093),
-                V = n(24949),
-                W = n(71620),
-                q = n(668214),
-                G = n(979090),
-                Q = n(68738),
-                J = n(78014),
-                K = n(919022);
-            const X = (e, t) => t.match.params.alias,
-                ee = (e, t) => G.HO(e, X(0, t)),
-                te = (e, t) => G.w6(e, X(0, t)),
-                ne = (e, t) => G.gH(e, X(0, t)),
-                ae = (e, t) => G.cS(e),
-                le = (e, t) => G.BG(e),
-                oe = (e, t) => G.PL(e),
-                re = (e, t) => G.ap(e, X(0, t)),
-                se = (0, q.Z)()
-                    .propsFromState(() => ({ alias: X, notesCount: ne, deletedNotesCount: ee, deletedNotesSlice: (0, V.P1)(X, (e) => (e ? (0, Q.E)(e) : void 0)), enrollmentStatus: oe, notesSlice: (0, V.P1)(X, (e) => (e ? (0, J._)(e) : void 0)), userHasNotes: ae, showAliasSelfSelect: le, ratingsCount: te, userAlias: G.OV, isTopWriter: re, loggedInUser: K.ZP.selectLoggedInUser }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, W.zr)("BIRDWATCH_SCREEN"), fetchBirdwatchProfile: G.mv, fetchShowAliasSelfSelect: G.aZ, fetchAuthenticatedUserProfileIfNeeded: G.eY, admitUser: G.SZ }));
-            var ie = n(457311),
-                ce = n(786998),
-                de = n(370006),
-                ue = n(138099);
-            const me = y().ee160790,
-                pe = y().efb9a9e0,
-                ge = l.createElement(r.ZP, { link: "https://twitter.github.io/communitynotes/writing-notes/#deleting-notes", withInteractiveStyling: !0 }),
-                fe = l.createElement(y().I18NFormatMessage, { $i18n: "d458f69d" }, l.cloneElement(ge, null, y().a1529ce7)),
-                he = () => l.createElement(ie.Z, { header: pe }),
-                Ee = E.default.create((e) => ({ footer: { paddingHorizontal: e.spaces.space28, paddingVertical: e.spaces.space16 } })),
-                be = (e) => {
+                H = n(443781),
+                R = n(652904),
+                A = n(26232),
+                z = n(890655),
+                O = n(293115),
+                D = n(620482),
+                L = n(916616),
+                M = n(962128),
+                U = n(89620),
+                F = n(169584),
+                j = n(129086),
+                Y = n(249777),
+                $ = n(486361),
+                V = n(304093),
+                W = n(24949),
+                q = n(71620),
+                G = n(668214),
+                Q = n(979090),
+                J = n(68738),
+                K = n(78014),
+                X = n(919022);
+            const ee = (e, t) => t.match.params.alias,
+                te = (e, t) => Q.HO(e, ee(0, t)),
+                ne = (e, t) => Q.w6(e, ee(0, t)),
+                ae = (e, t) => Q.gH(e, ee(0, t)),
+                le = (e, t) => Q.cS(e),
+                oe = (e, t) => Q.BG(e),
+                re = (e, t) => Q.PL(e),
+                ie = (e, t) => Q.ap(e, ee(0, t)),
+                se = (e, t) => Q.$z(e, ee(0, t)),
+                ce = (0, G.Z)()
+                    .propsFromState(() => ({ alias: ee, notesCount: ae, deletedNotesCount: te, deletedNotesSlice: (0, W.P1)(ee, (e) => (e ? (0, J.E)(e) : void 0)), enrollmentStatus: re, notesSlice: (0, W.P1)(ee, (e) => (e ? (0, K._)(e) : void 0)), userHasNotes: le, showAliasSelfSelect: oe, ratingsCount: ne, userAlias: Q.OV, isApiContributor: se, isTopWriter: ie, loggedInUser: X.ZP.selectLoggedInUser }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, q.zr)("BIRDWATCH_SCREEN"), fetchBirdwatchProfile: Q.mv, fetchShowAliasSelfSelect: Q.aZ, fetchAuthenticatedUserProfileIfNeeded: Q.eY, admitUser: Q.SZ }));
+            var de = n(457311),
+                ue = n(786998),
+                me = n(370006),
+                pe = n(138099);
+            const ge = y().ee160790,
+                fe = y().efb9a9e0,
+                he = l.createElement(r.ZP, { link: "https://twitter.github.io/communitynotes/writing-notes/#deleting-notes", withInteractiveStyling: !0 }),
+                Ee = l.createElement(y().I18NFormatMessage, { $i18n: "d458f69d" }, l.cloneElement(he, null, y().a1529ce7)),
+                be = () => l.createElement(de.Z, { header: fe }),
+                ye = E.default.create((e) => ({ footer: { paddingHorizontal: e.spaces.space28, paddingVertical: e.spaces.space16 } })),
+                we = (e) => {
                     const { deletedNotesSlice: t, onClose: n } = e,
-                        a = l.createElement(o.Z, null, l.createElement(ce.Z, { leftControl: l.createElement(de.Z, { backButtonType: "close", onClick: n }), title: me }), t ? l.createElement(R.Z, { footer: null, module: t, noItemsRenderer: he, renderer: (e) => l.createElement(o.Z, { key: e }, l.createElement(F.Z, { noteId: e, showRating: !1, showTweet: !0 }), l.createElement(s.Z, null)), withoutHeadroom: !0 }) : null, l.createElement(r.ZP, { color: "gray700", style: Ee.footer }, fe));
-                    return l.createElement(ue.Z, { allowBackNavigation: !0, children: a, onMaskClick: n, type: "full", withMask: !0 });
+                        a = l.createElement(o.Z, null, l.createElement(ue.Z, { leftControl: l.createElement(me.Z, { backButtonType: "close", onClick: n }), title: ge }), t ? l.createElement(A.Z, { footer: null, module: t, noItemsRenderer: be, renderer: (e) => l.createElement(o.Z, { key: e }, l.createElement(j.Z, { noteId: e, showRating: !1, showTweet: !0 }), l.createElement(i.Z, null)), withoutHeadroom: !0 }) : null, l.createElement(r.ZP, { color: "gray700", style: ye.footer }, Ee));
+                    return l.createElement(pe.Z, { allowBackNavigation: !0, children: a, onMaskClick: n, type: "full", withMask: !0 });
                 };
-            var ye = n(283369);
-            const we = ({ enrollmentStatus: e, isOwnProfile: t, ratingImpact: n }) => {
+            var _e = n(283369);
+            const Ze = ({ enrollmentStatus: e, isOwnProfile: t, ratingImpact: n }) => {
                     let a = null;
                     if (t) {
                         if ("ApiTestUser" === e?.enrollment_state) return null;
-                        "EarnedIn" === e?.enrollment_state || "ApiEarnedIn" === e?.enrollment_state ? (a = l.createElement(ye.Uu, null)) : "NewUser" === e?.enrollment_state && ((a = l.createElement(ye.wy, null)), n < 0 ? (a = l.createElement(ye.UB, null)) : 0 === n && (a = l.createElement(ye.tF, null)));
-                    } else a = l.createElement(ye.Bk, null);
+                        "EarnedIn" === e?.enrollment_state || "ApiEarnedIn" === e?.enrollment_state ? (a = l.createElement(_e.Uu, null)) : "NewUser" === e?.enrollment_state && ((a = l.createElement(_e.wy, null)), n < 0 ? (a = l.createElement(_e.UB, null)) : 0 === n && (a = l.createElement(_e.tF, null)));
+                    } else a = l.createElement(_e.Bk, null);
                     return a ? l.createElement(l.Fragment, null, a, l.createElement(g.Z, { spacing: "space2" })) : null;
                 },
-                _e = y().ff692d64,
-                Ze = y().ab28945c,
-                ke = y().jaf0d42c,
-                Ce = y().fe27c1e2,
+                ke = y().ff692d64,
+                Ce = y().ab28945c,
+                Se = y().jaf0d42c,
+                Ie = y().fe27c1e2,
                 xe = l.createElement(y().I18NFormatMessage, { $i18n: "if0d6dd7" }, l.createElement(r.ZP, { link: "https://twitter.github.io/communitynotes/aliases/" }, y().a490bc51)),
-                Se = y().j5f112b4,
-                Pe = y().fa9a644a,
-                Ie = y().i4014342,
-                Te = y().j9897a7c,
-                Ne = y().ee7b8050,
-                ve = y().fd02e290,
-                Be = y().b8cc2e9a,
-                He = y().f6c8613e,
-                Re = y().c23e67ea,
-                Ae = y().ac71a5a0,
-                ze = y().h544e3c8,
-                Oe = y().d88c63f6,
-                De = "https://twitter.github.io/communitynotes/examples/",
-                Le = y().bb081ea2,
-                Me = y().i859a9d4,
-                Ue = y().bd31adde,
-                Fe = y().a796c19c,
-                je = y().gea6cc1a,
-                Ye = y().h837a96c,
-                $e = y().a4d4bcb9,
-                Ve = Object.freeze({ closed: { shouldShow: !1 }, openSuccessful: { shouldShow: !0, badgeType: T.n.Ratings }, openHelpful: { shouldShow: !0, badgeType: T.n.Notes } });
-            function We(e) {
+                Pe = y().j5f112b4,
+                Te = y().fa9a644a,
+                Ne = y().i4014342,
+                Be = y().j9897a7c,
+                ve = y().ee7b8050,
+                He = y().fd02e290,
+                Re = y().b8cc2e9a,
+                Ae = y().f6c8613e,
+                ze = y().c23e67ea,
+                Oe = y().ac71a5a0,
+                De = y().h544e3c8,
+                Le = y().d88c63f6,
+                Me = "https://twitter.github.io/communitynotes/examples/",
+                Ue = y().bb081ea2,
+                Fe = y().i859a9d4,
+                je = y().bd31adde,
+                Ye = y().a796c19c,
+                $e = y().gea6cc1a,
+                Ve = y().h837a96c,
+                We = y().a4d4bcb9,
+                qe = Object.freeze({ closed: { shouldShow: !1 }, openSuccessful: { shouldShow: !0, badgeType: N.n.Ratings }, openHelpful: { shouldShow: !0, badgeType: N.n.Notes } });
+            function Ge(e) {
                 const { screenProps: t, ...n } = e,
                     a = t.userAlias === t.alias,
                     o = "NewUser" === t.enrollmentStatus?.enrollment_state,
                     r = void 0 !== t.notesCount?.awaiting_more_ratings && void 0 !== t.notesCount?.currently_rated_helpful && void 0 !== t.notesCount?.currently_rated_not_helpful;
                 return o && a && !r ? null : l.createElement(P.Z, n);
             }
-            const qe = (e) => {
-                const { featureSwitches: t } = l.useContext(B.rC),
-                    { admitUser: n, alias: E, createLocalApiErrorHandler: b, deletedNotesCount: V, deletedNotesSlice: W, enrollmentStatus: q, fetchAuthenticatedUserProfileIfNeeded: G, fetchBirdwatchProfile: Q, fetchShowAliasSelfSelect: J, history: K, isTopWriter: X, loggedInUser: ee, notesCount: te, notesSlice: ne, ratingsCount: ae, showAliasSelfSelect: le, userAlias: oe } = e,
-                    re = (0, I.v)(ae),
-                    se = (0, I.u)(te),
-                    ie = { ratingImpact: re, ratingsHelpful: ae?.successful?.helpful_count, ratingsNotHelpful: ae?.successful?.not_helpful_count, contrastingNotHelpfulRatingsOnHelpfulNotes: ae?.unsuccessful?.helpful_count, contrastingHelpfulRatingsOnNotHelpfulNotes: ae?.unsuccessful?.not_helpful_count, pending: ae?.awaiting_more_ratings, ratingsAfterStatusReached: ae?.rated_after_decision, updatedTime: ae?.last_updated_at },
-                    ce = { writingImpact: se, ratingsHelpful: te?.currently_rated_helpful, ratingsNotHelpful: te?.currently_rated_not_helpful, pending: te?.awaiting_more_ratings, updatedTime: te?.last_updated_at },
-                    de = void 0 !== ae,
-                    [ue, me] = l.useState(le),
-                    [pe, ge] = l.useState(!1),
+            const Qe = (e) => {
+                const { featureSwitches: t } = l.useContext(H.rC),
+                    { admitUser: n, alias: E, createLocalApiErrorHandler: b, deletedNotesCount: W, deletedNotesSlice: q, enrollmentStatus: G, fetchAuthenticatedUserProfileIfNeeded: Q, fetchBirdwatchProfile: J, fetchShowAliasSelfSelect: K, history: X, isApiContributor: ee, isTopWriter: te, loggedInUser: ne, notesCount: ae, notesSlice: le, ratingsCount: oe, showAliasSelfSelect: re, userAlias: ie } = e,
+                    se = (0, T.v)(oe),
+                    ce = (0, T.u)(ae),
+                    de = { ratingImpact: se, ratingsHelpful: oe?.successful?.helpful_count, ratingsNotHelpful: oe?.successful?.not_helpful_count, contrastingNotHelpfulRatingsOnHelpfulNotes: oe?.unsuccessful?.helpful_count, contrastingHelpfulRatingsOnNotHelpfulNotes: oe?.unsuccessful?.not_helpful_count, pending: oe?.awaiting_more_ratings, ratingsAfterStatusReached: oe?.rated_after_decision, updatedTime: oe?.last_updated_at },
+                    ue = { writingImpact: ce, ratingsHelpful: ae?.currently_rated_helpful, ratingsNotHelpful: ae?.currently_rated_not_helpful, pending: ae?.awaiting_more_ratings, updatedTime: ae?.last_updated_at },
+                    me = void 0 !== oe,
+                    [pe, ge] = l.useState(re),
                     [fe, he] = l.useState(!1),
-                    [Ee, ye] = l.useState(Ve.closed),
-                    [ke, Ce] = l.useState(!1),
-                    qe = () => ye(Ve.openHelpful),
-                    Je = () => ye(Ve.openSuccessful),
-                    Ke = () => he(!0),
-                    Xe = () => Ce(!0),
-                    et = oe === E;
+                    [Ee, be] = l.useState(!1),
+                    [ye, _e] = l.useState(qe.closed),
+                    [Se, Ie] = l.useState(!1),
+                    Qe = () => _e(qe.openHelpful),
+                    Xe = () => _e(qe.openSuccessful),
+                    et = () => be(!0),
+                    tt = () => Ie(!0),
+                    nt = ie === E;
                 l.useEffect(() => {
-                    J().catch(b());
-                }, [b, J]),
+                    K().catch(b());
+                }, [b, K]),
                     l.useEffect(() => {
-                        E && Q(E).catch(b());
-                    }, [b, Q, E]),
+                        E && J(E).catch(b());
+                    }, [b, J, E]),
                     l.useEffect(() => {
-                        G().catch(b());
-                    }, [b, G]),
+                        Q().catch(b());
+                    }, [b, Q]),
                     l.useEffect(() => {
-                        me(le);
-                    }, [le]);
-                const tt = t.isTrue("responsive_web_birdwatch_note_writing_enabled"),
-                    nt = t.isTrue("responsive_web_birdwatch_top_contributor_enabled"),
-                    at = t.isTrue("responsive_web_birdwatch_self_remove_enabled"),
-                    lt = V && V > 0 && W,
-                    ot = l.useMemo(() => ({ page: "birdwatch", section: tt ? "user_notes_participant" : "user_notes" }), [tt]),
-                    rt = (e) => l.createElement(o.Z, { key: e }, l.createElement(F.Z, { noteId: e, showPivot: et, showRating: !1, showTweet: !0 }), l.createElement(s.Z, null)),
-                    st = "Removed" === q?.enrollment_state ? null : l.createElement(i.ZP, { "aria-label": Le, hoverLabel: { label: Le }, icon: l.createElement(w.default, null), link: "/i/communitynotes/notification_settings", pullRight: !0, type: "primaryText" }),
-                    it = et ? _e : Ze,
-                    ct = () => {
+                        ge(re);
+                    }, [re]);
+                const at = t.isTrue("responsive_web_birdwatch_note_writing_enabled"),
+                    lt = t.isTrue("responsive_web_birdwatch_top_contributor_enabled"),
+                    ot = t.isTrue("responsive_web_birdwatch_self_remove_enabled"),
+                    rt = W && W > 0 && q,
+                    it = l.useMemo(() => ({ page: "birdwatch", section: at ? "user_notes_participant" : "user_notes" }), [at]),
+                    st = (e) => l.createElement(o.Z, { key: e }, l.createElement(j.Z, { noteId: e, showPivot: nt, showRating: !1, showTweet: !0 }), l.createElement(i.Z, null)),
+                    ct = "Removed" === G?.enrollment_state ? null : l.createElement(s.ZP, { "aria-label": Ue, hoverLabel: { label: Ue }, icon: l.createElement(w.default, null), link: "/i/communitynotes/notification_settings", pullRight: !0, type: "primaryText" }),
+                    dt = nt ? ke : Ce,
+                    ut = () => {
                         const t = void 0 !== e.notesCount?.awaiting_more_ratings && void 0 !== e.notesCount?.currently_rated_helpful && void 0 !== e.notesCount?.currently_rated_not_helpful,
-                            n = et && "NewUser" === q?.enrollment_state && t;
+                            n = nt && "NewUser" === G?.enrollment_state && t,
+                            { profileColor: a, profileIcon: h, profileStyle: b } = ee ? { profileIcon: C.default, profileStyle: Ke.apiBirdwatchProfileIcon } : { profileIcon: S.default, profileStyle: Ke.genericBirdwatchProfileIcon, profileColor: "neutral" };
                         return l.createElement(
                             o.Z,
-                            { style: Qe.container },
-                            l.createElement(c.Z, { Icon: C.default, color: "neutral", size: "xxxLarge", style: Qe.genericBirdwatchProfileIcon }),
-                            l.createElement(m.Z, { style: Qe.profileText, text: (0, A.Q)(E) }),
-                            l.createElement(r.ZP, { color: "gray700", style: Qe.birdwatchAliasDisclaimerText }, xe),
-                            de && l.createElement(o.Z, { style: Qe.badgeContainer }, l.createElement(l.Fragment, null, l.createElement(P.Z, { badgeScore: re, badgeType: T.n.Ratings, interactive: !0, onClick: Je }), l.createElement(We, { badgeScore: se, badgeType: T.n.Notes, interactive: !0, onClick: qe, screenProps: e }), X && nt && l.createElement(P.Z, { badgeType: T.n.TopContributor, interactive: !0, onClick: Ke }))),
-                            n && l.createElement(o.Z, { style: Qe.statusChangeContainer }, l.createElement(p.Z.Custom, { Icon: Z.default, action: { label: Me, link: "https://twitter.github.io/communitynotes/writing-ability/" }, backgroundColor: "blue0", headline: Oe, text: ze, withColoredIcon: !0 })),
+                            { style: Ke.container },
+                            l.createElement(c.Z, { Icon: h, color: a, size: "xxxLarge", style: b }),
+                            l.createElement(m.Z, { style: Ke.profileText, text: (0, z.Q)(E) }),
+                            l.createElement(r.ZP, { color: "gray700", style: Ke.birdwatchAliasDisclaimerText }, xe),
+                            me && l.createElement(o.Z, { style: Ke.badgeContainer }, l.createElement(l.Fragment, null, ee ? l.createElement(P.Z, { badgeType: N.n.ApiContributor }) : l.createElement(P.Z, { badgeScore: se, badgeType: N.n.Ratings, interactive: !0, onClick: Xe }), l.createElement(Ge, { badgeScore: ce, badgeType: N.n.Notes, interactive: !0, onClick: Qe, screenProps: e }), te && lt && l.createElement(P.Z, { badgeType: N.n.TopContributor, interactive: !0, onClick: et }))),
+                            n && l.createElement(o.Z, { style: Ke.statusChangeContainer }, l.createElement(p.Z.Custom, { Icon: Z.default, action: { label: Fe, link: "https://twitter.github.io/communitynotes/writing-ability/" }, backgroundColor: "blue0", headline: Le, text: De, withColoredIcon: !0 })),
                             (() => {
-                                const e = "AtRisk" === q?.enrollment_state && et,
-                                    t = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(_.default, { style: Qe.icon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Se), l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, Pe))),
-                                    n = l.createElement(o.Z, { style: Qe.feedbackContainer }, q?.top_not_helpful_tags && q.top_not_helpful_tags.length > 0 ? l.createElement(l.Fragment, null, l.createElement(r.ZP, { weight: "bold" }, Ie), l.createElement(r.ZP, { color: "gray700" }, l.createElement(U.Z, { tags: q.top_not_helpful_tags }))) : null);
-                                return e ? l.createElement(o.Z, null, l.createElement(s.Z, null), t, n, l.createElement(o.Z, { style: Qe.atRiskButtonContainer }, l.createElement(i.ZP, { link: De, type: "primaryOutlined" }, Te))) : null;
+                                const e = "AtRisk" === G?.enrollment_state && nt,
+                                    t = l.createElement(o.Z, { style: Ke.enrollmentStatusInfoContainer }, l.createElement(_.default, { style: Ke.icon }), l.createElement(o.Z, { style: Ke.enrollmentStatusText }, l.createElement(r.ZP, { style: Ke.text, weight: "bold" }, Pe), l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, Te))),
+                                    n = l.createElement(o.Z, { style: Ke.feedbackContainer }, G?.top_not_helpful_tags && G.top_not_helpful_tags.length > 0 ? l.createElement(l.Fragment, null, l.createElement(r.ZP, { weight: "bold" }, Ne), l.createElement(r.ZP, { color: "gray700" }, l.createElement(F.Z, { tags: G.top_not_helpful_tags }))) : null);
+                                return e ? l.createElement(o.Z, null, l.createElement(i.Z, null), t, n, l.createElement(o.Z, { style: Ke.atRiskButtonContainer }, l.createElement(s.ZP, { link: Me, type: "primaryOutlined" }, Be))) : null;
                             })(),
                             (() => {
-                                if ("EarnedOutAcknowledged" !== q?.enrollment_state || !et) return null;
-                                const e = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(Z.default, { style: Qe.innerIconColor }), size: "medium", style: Qe.thumbnailIcon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Ne), l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, Be), l.createElement(d.Z, { size: "space12" }), l.createElement(r.ZP, { link: (0, u.ju)("https://communitynotes.x.com/guide/en/contributing/writing-ability"), size: "subtext1", style: Qe.text, weight: "medium", withUnderline: !0 }, ve))),
-                                    t = l.createElement(o.Z, { style: Qe.feedbackContainer }, q?.top_not_helpful_tags && q.top_not_helpful_tags.length > 0 ? l.createElement(l.Fragment, null, l.createElement(r.ZP, { weight: "bold" }, He), l.createElement(r.ZP, { color: "gray700" }, l.createElement(U.Z, { tags: q.top_not_helpful_tags }))) : null, l.createElement(r.ZP, { link: De, style: Qe.text, weight: "medium", withUnderline: !0 }, Te)),
-                                    n = q?.survey_url ? l.createElement(r.ZP, { color: "gray700", size: "subtext3", withInteractiveStyling: !1 }, l.createElement(y().I18NFormatMessage, { $i18n: "f49cbf83" }, l.createElement(r.ZP, { color: "gray700", link: q?.survey_url, withUnderline: !0 }, y().c94ad3e8))) : null,
-                                    a = q?.successful_rating_needed_to_earn_in && de ? l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, l.createElement(y().I18NFormatMessage, { $i18n: "a94c6db7", requiredRatingImpact: q?.successful_rating_needed_to_earn_in, currentRatingImpact: re })) : null,
-                                    i = l.createElement(o.Z, { style: Qe.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(k.default, { style: Qe.innerIconColor }), size: "medium", style: Qe.thumbnailIcon }), l.createElement(o.Z, { style: Qe.enrollmentStatusText }, l.createElement(r.ZP, { style: Qe.text, weight: "bold" }, Re), a, l.createElement(r.ZP, { link: "/i/birdwatch", style: [Qe.text, Qe.rateNotesThatNeedHelpText], weight: "medium", withUnderline: !0 }, Ae), n));
-                                return l.createElement(o.Z, null, l.createElement(s.Z, null), e, t, i);
+                                if ("EarnedOutAcknowledged" !== G?.enrollment_state || !nt) return null;
+                                const e = l.createElement(o.Z, { style: Ke.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(Z.default, { style: Ke.innerIconColor }), size: "medium", style: Ke.thumbnailIcon }), l.createElement(o.Z, { style: Ke.enrollmentStatusText }, l.createElement(r.ZP, { style: Ke.text, weight: "bold" }, ve), l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, Re), l.createElement(d.Z, { size: "space12" }), l.createElement(r.ZP, { link: (0, u.ju)("https://communitynotes.x.com/guide/en/contributing/writing-ability"), size: "subtext1", style: Ke.text, weight: "medium", withUnderline: !0 }, He))),
+                                    t = l.createElement(o.Z, { style: Ke.feedbackContainer }, G?.top_not_helpful_tags && G.top_not_helpful_tags.length > 0 ? l.createElement(l.Fragment, null, l.createElement(r.ZP, { weight: "bold" }, Ae), l.createElement(r.ZP, { color: "gray700" }, l.createElement(F.Z, { tags: G.top_not_helpful_tags }))) : null, l.createElement(r.ZP, { link: Me, style: Ke.text, weight: "medium", withUnderline: !0 }, Be)),
+                                    n = G?.survey_url ? l.createElement(r.ZP, { color: "gray700", size: "subtext3", withInteractiveStyling: !1 }, l.createElement(y().I18NFormatMessage, { $i18n: "f49cbf83" }, l.createElement(r.ZP, { color: "gray700", link: G?.survey_url, withUnderline: !0 }, y().c94ad3e8))) : null,
+                                    a = G?.successful_rating_needed_to_earn_in && me ? l.createElement(r.ZP, { color: "gray700", size: "subtext1" }, l.createElement(y().I18NFormatMessage, { $i18n: "a94c6db7", requiredRatingImpact: G?.successful_rating_needed_to_earn_in, currentRatingImpact: se })) : null,
+                                    s = l.createElement(o.Z, { style: Ke.enrollmentStatusInfoContainer }, l.createElement(c.Z, { Icon: () => l.createElement(k.default, { style: Ke.innerIconColor }), size: "medium", style: Ke.thumbnailIcon }), l.createElement(o.Z, { style: Ke.enrollmentStatusText }, l.createElement(r.ZP, { style: Ke.text, weight: "bold" }, ze), a, l.createElement(r.ZP, { link: "/i/birdwatch", style: [Ke.text, Ke.rateNotesThatNeedHelpText], weight: "medium", withUnderline: !0 }, Oe), n));
+                                return l.createElement(o.Z, null, l.createElement(i.Z, null), e, t, s);
                             })(),
                             (() => {
-                                if (!at || "Removed" !== q?.enrollment_state || !et) return null;
-                                const e = q?.timestamp_of_last_state_change,
+                                if (!ot || "Removed" !== G?.enrollment_state || !nt) return null;
+                                const e = G?.timestamp_of_last_state_change,
                                     t = e ? Math.ceil(90 - (Date.now() - e) / 1e3 / 3600 / 24) : 0,
-                                    n = $e({ numDaysToRejoin: t });
-                                return l.createElement(o.Z, { style: Qe.selfRemoveInfoContainer }, l.createElement(o.Z, { style: Qe.selfRemoveInfoText }, l.createElement(r.ZP, { color: "gray700" }, Ue), t <= 0 ? l.createElement(r.ZP, { onClick: Xe, style: Qe.rejoinText, weight: "medium", withInteractiveStyling: !0, withUnderline: !0 }, Fe) : l.createElement(r.ZP, { color: "gray700" }, n)));
+                                    n = We({ numDaysToRejoin: t });
+                                return l.createElement(o.Z, { style: Ke.selfRemoveInfoContainer }, l.createElement(o.Z, { style: Ke.selfRemoveInfoText }, l.createElement(r.ZP, { color: "gray700" }, je), t <= 0 ? l.createElement(r.ZP, { onClick: tt, style: Ke.rejoinText, weight: "medium", withInteractiveStyling: !0, withUnderline: !0 }, Ye) : l.createElement(r.ZP, { color: "gray700" }, n)));
                             })(),
-                            l.createElement(o.Z, { style: Qe.dividerContainer }, l.createElement(g.Z, null)),
-                            ne ? l.createElement(l.Fragment, null, l.createElement(Ge, e), l.createElement(R.Z, { footer: null, module: ne, noItemsRenderer: () => l.createElement(we, { enrollmentStatus: q, isOwnProfile: et, ratingImpact: re }), renderer: rt, withoutHeadroom: !0 })) : null,
-                            lt ? l.createElement(f.Z, { onPress: () => ge(!0), style: [Qe.sectionContainer, Qe.deletedNotes] }, l.createElement(x.default, { style: Qe.deletedIcon }), l.createElement(r.ZP, { style: Qe.ratingsReceived }, V ? l.createElement(y().I18NFormatMessage, { $i18n: "f52f0cbd", num: V }) : l.createElement(y().I18NFormatMessage, { $i18n: "c5260711" }))) : null,
+                            l.createElement(o.Z, { style: Ke.dividerContainer }, l.createElement(g.Z, null)),
+                            le ? l.createElement(l.Fragment, null, l.createElement(Je, e), l.createElement(A.Z, { footer: null, module: le, noItemsRenderer: () => l.createElement(Ze, { enrollmentStatus: G, isOwnProfile: nt, ratingImpact: se }), renderer: st, withoutHeadroom: !0 })) : null,
+                            rt ? l.createElement(f.Z, { onPress: () => he(!0), style: [Ke.sectionContainer, Ke.deletedNotes] }, l.createElement(I.default, { style: Ke.deletedIcon }), l.createElement(r.ZP, { style: Ke.ratingsReceived }, W ? l.createElement(y().I18NFormatMessage, { $i18n: "f52f0cbd", num: W }) : l.createElement(y().I18NFormatMessage, { $i18n: "c5260711" }))) : null,
                         );
                     },
-                    dt = (e) => {
-                        et && K.push("/i/communitynotes/u/me");
+                    mt = (e) => {
+                        nt && X.push("/i/communitynotes/u/me");
                     },
-                    ut = ue,
-                    mt = "EarnedOutNoAcknowledge" === q?.enrollment_state,
-                    pt = () => (ut ? l.createElement(L.Z, { onAliasSelected: dt }) : mt ? l.createElement(D.Z, { history: K }) : ct());
+                    pt = pe,
+                    gt = "EarnedOutNoAcknowledge" === G?.enrollment_state,
+                    ft = () => (pt ? l.createElement(M.Z, { onAliasSelected: mt }) : gt ? l.createElement(L.Z, { history: X }) : ut());
                 return l.createElement(
-                    z.nO,
-                    { namespace: ot },
+                    O.nO,
+                    { namespace: it },
                     l.createElement(
-                        H.Z,
+                        R.Z,
                         null,
                         (() => {
-                            const e = { title: it, history: K, rightControl: et && st };
-                            return S.ZP.isTwitterApp() ? l.createElement(N.Z, (0, a.Z)({ children: pt(), hideBackButton: !0 }, e)) : l.createElement(v.Z, (0, a.Z)({ TabBar: Y.Z, backLocation: "/i/communitynotes", primaryContent: pt(), sidebarContent: l.createElement(j.Z, null), withTweetButton: !1 }, e));
+                            const e = { title: dt, history: X, rightControl: nt && ct };
+                            return x.ZP.isTwitterApp() ? l.createElement(B.Z, (0, a.Z)({ children: ft(), hideBackButton: !0 }, e)) : l.createElement(v.Z, (0, a.Z)({ TabBar: $.Z, backLocation: "/i/communitynotes", primaryContent: ft(), sidebarContent: l.createElement(Y.Z, null), withTweetButton: !1 }, e));
                         })(),
-                        pe ? l.createElement(be, { deletedNotesSlice: W, onClose: () => ge(!1) }) : null,
-                        Ee.shouldShow ? l.createElement(M.x, { badgeType: Ee.badgeType, enrollmentState: q?.enrollment_state, isOwnProfile: et, onClose: () => ye(Ve.closed), ratingScores: ie, successfulRatingsNeededToEarnIn: q?.successful_rating_needed_to_earn_in, writingScores: ce }) : null,
-                        fe && l.createElement($.Y, { closeTopContributorModal: () => he(!1), isOwnProfile: et }),
-                        ke
+                        fe ? l.createElement(we, { deletedNotesSlice: q, onClose: () => he(!1) }) : null,
+                        ye.shouldShow ? l.createElement(U.x, { badgeType: ye.badgeType, enrollmentState: G?.enrollment_state, isOwnProfile: nt, onClose: () => _e(qe.closed), ratingScores: de, successfulRatingsNeededToEarnIn: G?.successful_rating_needed_to_earn_in, writingScores: ue }) : null,
+                        Ee && l.createElement(V.Y, { closeTopContributorModal: () => be(!1), isOwnProfile: nt }),
+                        Se
                             ? l.createElement(h.Z, {
-                                  confirmButtonLabel: Fe,
-                                  headline: je,
+                                  confirmButtonLabel: Ye,
+                                  headline: $e,
                                   onCancel: () => {
-                                      Ce(!1);
+                                      Ie(!1);
                                   },
                                   onConfirm: () => {
-                                      void 0 !== ee?.id_str && n(Math.floor(Date.now() / 1e3 / 3600 / 24), ee.id_str).catch(b()), Ce(!1), K.push("/i/communitynotes/u/me"), O.Z.flushHTMLCache(), window.location.reload(!0);
+                                      void 0 !== ne?.id_str && n(Math.floor(Date.now() / 1e3 / 3600 / 24), ne.id_str).catch(b()), Ie(!1), X.push("/i/communitynotes/u/me"), D.Z.flushHTMLCache(), window.location.reload(!0);
                                   },
-                                  text: Ye,
+                                  text: Ve,
                               })
                             : null,
                     ),
                 );
             };
-            function Ge(e) {
+            function Je(e) {
                 const { alias: t, userAlias: n, userHasNotes: a } = e;
-                return a ? (n === t ? l.createElement(m.Z, { text: ke }) : l.createElement(m.Z, { text: Ce })) : null;
+                return a ? (n === t ? l.createElement(m.Z, { text: Se }) : l.createElement(m.Z, { text: Ie })) : null;
             }
-            const Qe = E.default.create((e) => ({
+            const Ke = E.default.create((e) => ({
                     atRiskButtonContainer: { paddingBottom: e.spaces.space16, paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space8 },
                     enrollmentStatusInfoContainer: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8 },
                     selfRemoveInfoContainer: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space8, borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, backgroundColor: e.colors.gray0, margin: e.spaces.space12 },
@@ -273,6 +276,7 @@
                     feedbackContainer: { paddingHorizontal: "44px" },
                     icon: { color: e.colors.primary, height: e.spaces.space20, width: e.spaces.space20, marginEnd: e.spaces.space8 },
                     genericBirdwatchProfileIcon: { color: e.colors.gray600, backgroundColor: e.colors.gray100, marginStart: e.componentDimensions.gutterHorizontal },
+                    apiBirdwatchProfileIcon: { color: e.colors.whiteOnColor, backgroundColor: e.colors.purple700, marginStart: e.componentDimensions.gutterHorizontal },
                     profileText: { textTransform: "capitalize", marginTop: e.spaces.space4 },
                     ratingAward: { marginEnd: e.spaces.space8 },
                     ratingNumbers: { flexDirection: "row" },
@@ -286,7 +290,7 @@
                     thumbnailIcon: { backgroundColor: e.colors.gray700, marginEnd: e.spaces.space8 },
                     dividerContainer: { marginTop: e.spaces.space12 },
                 })),
-                Je = se(qe);
+                Xe = ce(Qe);
         },
         531187: (e, t, n) => {
             n.d(t, { VE: () => a });
@@ -303,8 +307,8 @@
                 l = n(325686),
                 o = n(731708),
                 r = n(96083),
-                s = n(844685),
-                i = n(154003),
+                i = n(844685),
+                s = n(154003),
                 c = n(420412),
                 d = n(247056),
                 u = n(392237),
@@ -324,14 +328,14 @@
                     .propsFromState(() => ({}))
                     .propsFromActions(() => ({ createCommunityBoostRating: k.oI, createLocalApiErrorHandler: (0, _.zr)("COMMUNITYBOOST_Pivot"), deleteCommunityBoostRating: k.Sl }))
                     .withAnalytics({ page: "birdwatch", section: "community_boost_pivot", component: "values" }),
-                x = p().b8719c22,
-                S = p().jcdf97d4,
-                P = p().d4d7b67e,
-                I = p().ed5156fa,
+                S = p().b8719c22,
+                I = p().jcdf97d4,
+                x = p().d4d7b67e,
+                P = p().ed5156fa,
                 T = p().d0ed3636,
                 N = p().abd845fe,
-                v = p().d96cf7ce,
-                B = p().j6aa6172,
+                B = p().d96cf7ce,
+                v = p().j6aa6172,
                 H = p().i4112750,
                 R = p().i6f6191a,
                 A = p().h5575012,
@@ -381,8 +385,8 @@
                         ? a.createElement(
                               l.Z,
                               null,
-                              a.createElement(s.Z, {
-                                  rightControl: a.createElement(i.ZP, {
+                              a.createElement(i.Z, {
+                                  rightControl: a.createElement(s.ZP, {
                                       icon: a.createElement(h.default, null),
                                       onPress: () => {
                                           window.location.href = "https://communitynotes.x.com/guide/en/beyond-notes/got-likes";
@@ -391,7 +395,7 @@
                                       type: "primaryText",
                                   }),
                                   style: G.header,
-                                  text: x,
+                                  text: S,
                               }),
                               a.createElement(c.Z, null),
                               a.createElement(o.ZP, { color: "gray700", style: G.gotLikesSection }, z),
@@ -412,8 +416,8 @@
                                                     { style: G.questionSection },
                                                     a.createElement(
                                                         l.Z,
-                                                        { "aria-label": S, role: "group" },
-                                                        a.createElement(o.ZP, { weight: "bold" }, S, " "),
+                                                        { "aria-label": I, role: "group" },
+                                                        a.createElement(o.ZP, { weight: "bold" }, I, " "),
                                                         e.map((e) => a.createElement(r.Z, { checked: n.includes(e), key: e, label: a.createElement(o.ZP, null, W[e]), onChange: X("like_tags")(e), style: G.checkbox })),
                                                     ),
                                                 );
@@ -426,21 +430,21 @@
                                                     { style: G.questionSection },
                                                     a.createElement(
                                                         l.Z,
-                                                        { "aria-label": P, role: "group" },
-                                                        a.createElement(o.ZP, { weight: "bold" }, P, " "),
+                                                        { "aria-label": x, role: "group" },
+                                                        a.createElement(o.ZP, { weight: "bold" }, x, " "),
                                                         e.map((e) => a.createElement(r.Z, { checked: n.includes(e), key: e, label: a.createElement(o.ZP, null, q[e]), onChange: X("dislike_tags")(e), style: G.checkbox })),
                                                     ),
                                                 );
                                             })(),
                                             a.createElement(o.ZP, { color: "gray700" }, ee),
                                             a.createElement(
-                                                i.ZP,
+                                                s.ZP,
                                                 {
                                                     disabled: Z,
                                                     onClick: () => {
                                                         if (J) {
                                                             const e = { like_tags: J.like_tags.map((e) => j[e]), dislike_tags: J.dislike_tags.map((e) => $[e]) };
-                                                            n(_, t?.boost_id || "", e).catch(u({ defaultToast: { text: I, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }));
+                                                            n(_, t?.boost_id || "", e).catch(u({ defaultToast: { text: P, withAutoDismiss: !1, withClearButton: !0 }, showToast: !0 }));
                                                         }
                                                     },
                                                     style: G.submitButton,
@@ -461,7 +465,7 @@
                                                     renderActionMenu: (e) =>
                                                         a.createElement(y.default, {
                                                             actionItems: [
-                                                                { confirmation: { label: v, headline: B, text: H, confirmButtonType: "destructiveFilled" }, isEmphasized: !0, text: v, Icon: g.default, onClick: ne },
+                                                                { confirmation: { label: B, headline: v, text: H, confirmButtonType: "destructiveFilled" }, isEmphasized: !0, text: B, Icon: g.default, onClick: ne },
                                                                 { text: N, Icon: f.default, onClick: te },
                                                             ],
                                                             onClose: e,
@@ -482,10 +486,10 @@
                 l = n(383675);
             const o = ({ timelinePrefix: e = "generic-timeline-", urtUrl: t }) => {
                 const { url: n, urtEndpointOptions: o } = t,
-                    { cacheId: r, requestParams: s, timeline: i } = o || {};
-                return i?.id ? (0, l.R)(i.id) : (0, l.Z)({ timelineId: r || `${e}${(0, a.Sz)(t)}`, endpointUrl: n, endpointParams: s || {} });
+                    { cacheId: r, requestParams: i, timeline: s } = o || {};
+                return s?.id ? (0, l.R)(s.id) : (0, l.Z)({ timelineId: r || `${e}${(0, a.Sz)(t)}`, endpointUrl: n, endpointParams: i || {} });
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.f962c90a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-cf1ec9f3.f704fb4a.js.map

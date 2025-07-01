@@ -17,10 +17,18 @@
                 var t, n;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Membro"),
+                t("hd8c22d2", "Moderador"),
+                t("c3153100", "Administrador"),
                 t("jb38600c", "Ningún"),
                 t("f07eac34", "Parody account"),
                 t("a41b5c2e", "Fan account"),
                 t("i428ea62", "Commentary account"),
+                t("jd859c9c", "Elimináronte deste Espazo."),
+                t("cfbea177", function (e) {
+                    return "Espazo de " + e.name;
+                }),
+                t("ab4fc8bc", "Sala"),
                 t("ac0d27be", "Sentímolo pero  esta conta suspendeuse."),
                 t("bcee7444", "Produciuse un fallo actualizando a conta."),
                 t("e0cbf77a", "Engadir teléfono"),
@@ -61,9 +69,6 @@
                 t("h1cbdd30", "Por favor, actualiza a páxina e téntao de novo."),
                 t("a5077d3e", "Actualizar"),
                 t("b2648ba4", "Pode que a túa conta non teña permiso para realizar esa acción. Recarga a páxina e proba outra vez."),
-                t("bcd6bb0e", "Membro"),
-                t("hd8c22d2", "Moderador"),
-                t("c3153100", "Administrador"),
                 t("fa9adac1", function (e) {
                     return 'Procurar "' + e.query + '"';
                 }),
@@ -76,19 +81,12 @@
                 t("c64e46f8", "This member was removed from the Community, so their posts are hidden."),
                 t("b3f1cb42", "A moderator hid this post for breaking a Community rule."),
                 t("cbd2dc9c", "You reported this post."),
-                t("cfbea177", function (e) {
-                    return "Espazo de " + e.name;
-                }),
-                t("ab4fc8bc", "Sala"),
-                t("jd859c9c", "Elimináronte deste Espazo."),
                 t("c60ed9b0", "You are not authorized to join this Space."),
                 t("d8227e16", "You are not authorized to create this Space"),
                 t("f027fed8", "Picture-in-Picture"),
                 t("hd50e064", "Agora non"),
                 t("i76d640e", "We need your permission"),
                 t("fdaa0be8", "To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                t("gea6cc1a", "Estás seguro?"),
-                t("hb568af4", "Silenciar"),
                 t("f7c8617a", "Que son os clips?"),
                 t("ecc7d2ec", "Os clips son momentos capturados que calquera persoa do Espazo pode facer e compartir. Todos os clips caducan aos 30 días."),
                 t("d575ee02", "Quen pode facer un clip?"),
@@ -106,16 +104,6 @@
                 t("jf03b37c", "Listen to the recording anytime. You can also share it with a post."),
                 t("fd05976b", "Learn more"),
                 t("b4f91a8a", "Gravación activa"),
-                t("gb418012", "Welcome to Spaces"),
-                t("fec3c1e0", "Onde acontecen as conversas de audio en vivo"),
-                t("j32eb4f8", "Add up to 10 speakers"),
-                t("j4f133a6", "You can invite anyone on X to speak."),
-                t("ed434ac6", "Spaces are public — anyone can join"),
-                t("e0025688", "Your Space, your rules"),
-                t("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                t("b0bc8330", "Tamén podes bloquear e denunciar persoas nun Espazo."),
-                t("cb17a0f3", "Learn more"),
-                t("dcd77941", "Learn more"),
                 t("cc724cb0", "Crear clip"),
                 t("cfd2f35e", "Cancelar"),
                 t("c1df579e", "Seguinte"),
@@ -129,6 +117,16 @@
                 t("a9ba3e28", "Información privada"),
                 t("d5519f4a", "Comportamento abusivo"),
                 t("eb55363c", "Denunciouse este Espazo"),
+                t("gb418012", "Welcome to Spaces"),
+                t("fec3c1e0", "Onde acontecen as conversas de audio en vivo"),
+                t("j32eb4f8", "Add up to 10 speakers"),
+                t("j4f133a6", "You can invite anyone on X to speak."),
+                t("ed434ac6", "Spaces are public — anyone can join"),
+                t("e0025688", "Your Space, your rules"),
+                t("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                t("b0bc8330", "Tamén podes bloquear e denunciar persoas nun Espazo."),
+                t("cb17a0f3", "Learn more"),
+                t("dcd77941", "Learn more"),
                 t("i65de934", "You are listening anonymously"),
                 t("b1037050", "Manage Space"),
                 t("ic107434", "Turn on camera"),
@@ -907,10 +905,10 @@
                 t("bf9e181b", "Saber máis"),
                 t("e8e39f95", "Saber máis"),
                 t("e126dd3f", "Saber máis"),
-                t("i821844f", "Saber máis");
-            t("b0abbb17", "Saber máis"),
-                t("e7e0d88b", "Saber máis"),
-                t("i560665f", "Saber máis"),
+                t("i821844f", "Saber máis"),
+                t("b0abbb17", "Saber máis"),
+                t("e7e0d88b", "Saber máis");
+            t("i560665f", "Saber máis"),
                 t("f6e774d9", "Saber máis"),
                 t("h486f755", "Saber máis"),
                 t("bab41dab", "Saber máis"),
@@ -1126,6 +1124,7 @@
                 t("dbb51952", "Protect your posts?"),
                 t("de735de6", "This will make them visible only to your X followers."),
                 t("c5d4192a", "Protexer"),
+                t("gea6cc1a", "Estás seguro?"),
                 t("d9ddba70", "Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 t("f527b322", "Protect my account"),
                 t("d165c992", "Calquera persoa pode etiquetarte"),
@@ -1322,9 +1321,10 @@
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
                 t("c43ef93e", "Browsing web page"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Executing code"),
                 t("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 t("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1818,6 +1818,7 @@
                 t("g00b4c55", function (e) {
                     return "Share @" + e.screenName + " via...";
                 }),
+                t("hb568af4", "Silenciar"),
                 t("bb1cbeb6", "Non silenciar"),
                 t("h2f62206", "Silenciando usuario"),
                 t("h59f52ee", "Silenciado correctamente."),
@@ -1918,11 +1919,11 @@
                 t("ef1649e2", "X - Keyboard shortcuts"),
                 t("aefd89c8", "Navegación"),
                 t("cafdefb2", "Accións"),
-                t("dda42cf2", "Columnas e paneis"),
-                t("e8a12604", "Provide a caption (optional)");
-            t("eabf2209", function (e) {
-                return "GIF fornecido por " + e.providerName;
-            }),
+                t("dda42cf2", "Columnas e paneis");
+            t("e8a12604", "Provide a caption (optional)"),
+                t("eabf2209", function (e) {
+                    return "GIF fornecido por " + e.providerName;
+                }),
                 t("a613e720", "Copiar ligazón ao GIF"),
                 t("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -2978,9 +2979,9 @@
                 t("e06b864c", "It looks like you’re enjoying this conversation"),
                 t("a078ff70", "Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts."),
                 t("cb80300e", "Ir á cronoloxía do Inicio"),
-                t("ea5cd098", "Ir ás tendencias"),
-                t("c67e3fc2", "Cronoloxía de Inicio");
-            t("d601fc20", "Máis recente"),
+                t("ea5cd098", "Ir ás tendencias");
+            t("c67e3fc2", "Cronoloxía de Inicio"),
+                t("d601fc20", "Máis recente"),
                 t("j43f99be", "Relevancy"),
                 t("ad6e11ac", "Sort replies by"),
                 t("b2311b70", "Non podes ver este contido"),
@@ -3898,13 +3899,13 @@
                 }),
                 t("f5c7aaa7", function (e) {
                     return "host" + i(e.count, "", "s");
-                }),
-                t("fc56c8b1", function (e) {
-                    return "co-host" + i(e.count, "", "s");
                 });
-            t("iba0f45d", function (e) {
-                return "speaker" + i(e.count, "", "s");
+            t("fc56c8b1", function (e) {
+                return "co-host" + i(e.count, "", "s");
             }),
+                t("iba0f45d", function (e) {
+                    return "speaker" + i(e.count, "", "s");
+                }),
                 t("dc066955", function (e) {
                     return "listener" + i(e.count, "", "s");
                 }),
@@ -4934,9 +4935,9 @@
                 t("ff95a9cc", "Video ID"),
                 t("a97e358e", "Video Link"),
                 t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview"),
-                t("f19846b2", "Video thumbnail");
-            t("ccd6f4a8", "Video title"),
+                t("ba37f6da", "Video overview");
+            t("f19846b2", "Video thumbnail"),
+                t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
                 t("d9508ab0", "views"),
@@ -5554,6 +5555,7 @@
                 t("bd7eb888", "See all notes on this post"),
                 t("i97b83f6", "Houbo un erro ao enviar a apelación. Téntao de novo."),
                 t("a038ab9a", "Translate note"),
+                t("icdb6d74", "Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 t("i606fc4c", "About Community Notes appeals"),
                 t("b664c554", "Solicitar a revisión de máis colaboradores"),
                 t("ab66e1f2", "Así funciona:"),
@@ -5569,6 +5571,7 @@
                 t("ge25848a", "Estado actual"),
                 t("d6db34cc", "Precisa máis cualificacións"),
                 t("ce8b505e", "Non útil"),
+                t("j42c88b6", "Experimental AI Note Writer"),
                 t("e5be8156", "Note status computed by open-source algorithm"),
                 t("fca23c42", "Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 t("hef420c2", "Esta nota aínda non recibiu as suficientes cualificacións de colaboradores con diferentes opinións."),
@@ -5884,11 +5887,11 @@
                 t("ab1b3d38", "Note request data isn’t available yet"),
                 t("c43fb933", "X Developer Agreement and Policy"),
                 t("af781666", "What do people think?"),
-                t("a1f414ee", "Share thoughts"),
-                t("ed88e742", "Copiar ligazón ao tema"),
+                t("a1f414ee", "Share thoughts");
+            t("ed88e742", "Copiar ligazón ao tema"),
                 t("h92fe1be", "Unfortunately, Community Notes is not available to you at this time."),
-                t("f0dc1434", "Community Notes is currently only available in the U.S.");
-            t("f8fc0b48", "Crear un cartafol"),
+                t("f0dc1434", "Community Notes is currently only available in the U.S."),
+                t("f8fc0b48", "Crear un cartafol"),
                 t("c14bcdde", "Procurar marcadores"),
                 t("e9c65c4a", "Bookmarks search"),
                 t("b92a21d9", function (e) {
@@ -6890,11 +6893,11 @@
                 t("j3d242ce", "Invalid range"),
                 t("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 t("b8cbb51a", "Job Summary"),
-                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                t("b075c68a", "Edit job"),
+                t("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            t("b075c68a", "Edit job"),
                 t("d4b6a6e0", "Detalles principais do perfil"),
-                t("j2dd3686", "Highlight featured jobs above my posts.");
-            t("af1cfd46", "ATS integration"),
+                t("j2dd3686", "Highlight featured jobs above my posts."),
+                t("af1cfd46", "ATS integration"),
                 t("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 t("h99f11fa", "Delete integration"),
                 t("eef1ae76", "Currently connected"),
@@ -7872,10 +7875,7 @@
                 t("d7b8387e", "If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 t("f4166d9a", "Want to cancel your Subscription?"),
                 t("b74ff5fc", "If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                t("ee9efbc8", "Continuar coa cancelación"),
-                t("c5d9c77a", "Semella que houbo algún problemiña. Non te preocupes, non foi culta túa. Pecha esta ventá e téntao de novo."),
-                t("jda53c24", "You can cancel your Subscription through the Apple App Store."),
-                t("g0a7a53e", "You can cancel your Subscription through the Google Play Store.");
+                t("ee9efbc8", "Continuar coa cancelación");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7914,9 +7914,12 @@
                     s(e, a)
                 );
             }
-            t("i5f14be7", function (e) {
-                return "Welcome back, " + e.displayName;
-            }),
+            t("c5d9c77a", "Semella que houbo algún problemiña. Non te preocupes, non foi culta túa. Pecha esta ventá e téntao de novo."),
+                t("jda53c24", "You can cancel your Subscription through the Apple App Store."),
+                t("g0a7a53e", "You can cancel your Subscription through the Google Play Store."),
+                t("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
                 t("a76d58ba", "Ads Analytics"),
                 t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8912,11 +8915,11 @@
                 }),
                 t("b0b22805", function (e) {
                     return "Visitar " + e.advertiserName;
-                }),
-                t("c67e71aa", "Ver agora"),
+                });
+            t("c67e71aa", "Ver agora"),
                 t("a6ada13e", "Mercar agora"),
-                t("j0f12222", "Ver máis");
-            t("f569f7c8", "Ir ao sitio web"),
+                t("j0f12222", "Ver máis"),
+                t("f569f7c8", "Ir ao sitio web"),
                 t("j0c6772a", "Visitar sitio web"),
                 t("f73003aa", "O vídeo reproducirase despois do anuncio"),
                 t("b3112b8a", "Omitir"),
@@ -13372,4 +13375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.ba4655ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.43337d4a.js.map

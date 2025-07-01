@@ -97,7 +97,7 @@
                 m = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 l = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
                 h = { GenericSearchQueryFormatter: o().ie2bbeed, GenericSearchQueryMarkdownFormatter: o().b0d1e205, WebSearchQueryFormatter: o().ie2bbeed, XSearchQueryFormatter: o().bf970edd, XUserSearchFormatter: o().ad342369, BrowsePageFormatter: o().g008d475, GenericURLQueryFormatter: o().c91e3971, GenericURLQueryMarkdownFormatter: o().acb9b845, XUsernameSearchFormatter: o().j9006405, XUsernameQuerySearchFormatter: o().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: o().e99fb7a3, CodeExecutionFormatter: o().a02d1657 },
-                g = { WebSearchQueryFormatter: o().aa9d42c0, XSearchQueryFormatter: o().dce1817a, XUserSearchFormatter: o().f7151564, BrowsePageFormatter: o().c43ef93e, XUsernameSearchFormatter: o().dce1817a, XUsernameQuerySearchFormatter: o().dce1817a, XUsernameQuerySearchMarkdownFormatter: o().dce1817a, CodeExecutionFormatter: o().jb097f6e };
+                g = { WebSearchQueryFormatter: o().aa9d42c0, XSearchQueryFormatter: o().c731d702, XUserSearchFormatter: o().d0e02476, BrowsePageFormatter: o().c43ef93e, XUsernameSearchFormatter: o().dab166ec, XUsernameQuerySearchFormatter: o().dab166ec, CodeExecutionFormatter: o().jb097f6e };
             class p {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, t = !1) => {
@@ -207,7 +207,8 @@
                                             u = [];
                                         if (s) {
                                             const e = (0, d.j)(s);
-                                            e && ((r = [e]), (u = [{ header: e, toolUsageCard: s, type: "TOOL_USAGE" }]));
+                                            e && (r = [e]);
+                                            (0, d.jU)(s) && (u = [{ header: e, toolUsageCard: s, type: "TOOL_USAGE" }]);
                                         } else {
                                             const t = (0, i.K)(e.message);
                                             t.trim() && ((r = [(0, i.K)(e.message)]), (o = [...(o || []), t]), (u = [{ header: n.header, summary: t, type: "SUMMARY" }]));
@@ -392,4 +393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.ca978d6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-fb4ffec0.f8b7b75a.js.map

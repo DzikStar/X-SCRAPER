@@ -8,24 +8,23 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.0"),
-                        d.e("icons.5"),
-                        d.e("icons.12"),
-                        d.e("icons.20"),
-                        d.e("icons.2"),
                         d.e("icons.21"),
-                        d.e("icons.28"),
+                        d.e("icons.16"),
                         d.e("icons.10"),
-                        d.e("icons.17"),
-                        d.e("icons.9"),
+                        d.e("icons.19"),
+                        d.e("icons.1"),
+                        d.e("icons.0"),
+                        d.e("icons.8"),
+                        d.e("icons.2"),
                         d.e("icons.23"),
+                        d.e("icons.3"),
+                        d.e("icons.4"),
+                        d.e("icons.15"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.22"),
-                        d.e("icons.24"),
-                        d.e("icons.14"),
-                        d.e("icons.25"),
-                        d.e("icons.13"),
+                        d.e("icons.9"),
+                        d.e("icons.7"),
+                        d.e("icons.28"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -36,24 +35,26 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.6"),
-                        d.e("icons.3"),
-                        d.e("icons.4"),
-                        d.e("icons.1"),
-                        d.e("icons.8"),
+                        d.e("icons.26"),
+                        d.e("icons.24"),
+                        d.e("icons.29"),
                         d.e("icons.18"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
+                        d.e("icons.13"),
+                        d.e("icons.27"),
+                        d.e("icons.25"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.SideNav~loader.SideNavRedesign~loader.Typeahe"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -71,6 +72,7 @@
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-62fc6e53"),
                         d.e("shared~loader.AudioDock~loader.Dock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.Inline-f2c8af9d"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"),
                         d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"),
@@ -123,9 +125,8 @@
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         d.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bc6ccf4c"),
-                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-54234235"),
-                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e96e9bea"),
-                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-fc794e30"),
+                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6107ac1a"),
+                        d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-e4e3d8bb"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-bf286bb5"),
                         d.e("shared~bundle.GrokDrawer~bundle.Grok~loader.Markdown-6ac0f1a5"),
                         d.e("shared~bundle.Grok~loader.Markdown-6107ac1a"),
@@ -172,13 +173,11 @@
             const o = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.0"),
                         d.e("icons.21"),
-                        d.e("icons.28"),
-                        d.e("icons.10"),
-                        d.e("icons.23"),
-                        d.e("icons.14"),
-                        d.e("icons.13"),
+                        d.e("icons.16"),
+                        d.e("icons.8"),
+                        d.e("icons.2"),
+                        d.e("icons.4"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -189,6 +188,8 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
+                        d.e("icons.29"),
+                        d.e("icons.27"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-bbc41769"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3ec0edf6"),
                         d.e("shared~loader.Dock~bundle.Articles~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSp-3fd5f349"),
@@ -229,16 +230,17 @@
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -436,7 +438,7 @@
                 c = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 m = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
                 h = { GenericSearchQueryFormatter: s().ie2bbeed, GenericSearchQueryMarkdownFormatter: s().b0d1e205, WebSearchQueryFormatter: s().ie2bbeed, XSearchQueryFormatter: s().bf970edd, XUserSearchFormatter: s().ad342369, BrowsePageFormatter: s().g008d475, GenericURLQueryFormatter: s().c91e3971, GenericURLQueryMarkdownFormatter: s().acb9b845, XUsernameSearchFormatter: s().j9006405, XUsernameQuerySearchFormatter: s().a2dd07e5, XUsernameQuerySearchMarkdownFormatter: s().e99fb7a3, CodeExecutionFormatter: s().a02d1657 },
-                b = { WebSearchQueryFormatter: s().aa9d42c0, XSearchQueryFormatter: s().dce1817a, XUserSearchFormatter: s().f7151564, BrowsePageFormatter: s().c43ef93e, XUsernameSearchFormatter: s().dce1817a, XUsernameQuerySearchFormatter: s().dce1817a, XUsernameQuerySearchMarkdownFormatter: s().dce1817a, CodeExecutionFormatter: s().jb097f6e };
+                b = { WebSearchQueryFormatter: s().aa9d42c0, XSearchQueryFormatter: s().c731d702, XUserSearchFormatter: s().d0e02476, BrowsePageFormatter: s().c43ef93e, XUsernameSearchFormatter: s().dab166ec, XUsernameQuerySearchFormatter: s().dab166ec, CodeExecutionFormatter: s().jb097f6e };
             class D {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, a = !1) => {
@@ -546,7 +548,8 @@
                                             i = [];
                                         if (d) {
                                             const e = (0, l.j)(d);
-                                            e && ((r = [e]), (i = [{ header: e, toolUsageCard: d, type: "TOOL_USAGE" }]));
+                                            e && (r = [e]);
+                                            (0, l.jU)(d) && (i = [{ header: e, toolUsageCard: d, type: "TOOL_USAGE" }]);
                                         } else {
                                             const a = (0, t.K)(e.message);
                                             a.trim() && ((r = [(0, t.K)(e.message)]), (s = [...(s || []), a]), (i = [{ header: n.header, summary: a, type: "SUMMARY" }]));
@@ -792,4 +795,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.c32b56ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.b52b456a.js.map

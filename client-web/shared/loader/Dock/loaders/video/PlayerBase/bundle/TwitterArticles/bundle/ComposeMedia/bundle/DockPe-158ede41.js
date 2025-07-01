@@ -173,7 +173,7 @@
                     return (r ? Promise.resolve(r) : i).then(({ features: e, translations: t }) => ({ ...o, features: e, translations: t }));
                 }
                 loadDynamicConfigState(e, t, r) {
-                    if ((e.type === l.P.BROADCAST && t && !t.shouldLoadTranslations) || e.type === l.P.AUDIO_SPACE) return Promise.resolve({ ...p, ...E });
+                    if ((e.type === l.P.BROADCAST && t && !t.shouldLoadTranslations) || e.type === l.P.AUDIO_SPACE) return Promise.resolve({ ...p, ...E, track: { publisherId: t?.publisherId } });
                     try {
                         return this.httpClient.dispatch({ method: "GET", path: this.getApiEndpointForPlayerSource(e), host: "https://api.twitter.com", params: { bitrate_cap: r.shouldCapBitrate ? c.qJ : void 0 } }).then(
                             (e) => {
@@ -425,4 +425,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41.287eb53a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.Dock~loaders.video.PlayerBase~bundle.TwitterArticles~bundle.ComposeMedia~bundle.DockPe-158ede41.33bdd5fa.js.map

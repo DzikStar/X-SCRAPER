@@ -136,33 +136,35 @@
                 V = x(E);
         },
         347882: (t, e, s) => {
-            s.d(e, { Z: () => y });
+            s.d(e, { Z: () => w });
             var i = s(807896),
                 a = s(202784),
                 n = s(855488),
                 o = s(392237),
                 r = s(511473),
-                l = s(227991),
-                d = s(663951),
-                h = s(280947),
-                u = s(975364),
-                c = s(305784),
-                p = s(153925),
-                _ = s(71620),
-                m = s(668214),
-                k = s(118823);
-            const g = (0, m.Z)()
-                    .propsFromState(() => ({ navigationContext: k.b, verificationSendFailureMessage: k.aR }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("OCF_FLOW_EMAIL_VERIFICATION"), getVerificationStatus: k.Ai, verifyIdentifier: k.if })),
-                b = "email";
-            class v extends a.Component {
+                l = s(697888),
+                d = s(227991),
+                h = s(663951),
+                u = s(280947),
+                c = s(975364),
+                p = s(305784),
+                _ = s(153925),
+                m = s(71620),
+                k = s(668214),
+                g = s(118823);
+            const b = (0, k.Z)()
+                    .propsFromState(() => ({ navigationContext: g.b, verificationSendFailureMessage: g.aR }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("OCF_FLOW_EMAIL_VERIFICATION"), getVerificationStatus: g.Ai, verifyIdentifier: g.if })),
+                v = "email";
+            class f extends a.Component {
                 constructor(t) {
                     super(t),
                         (this._sendEmailVerificationRequest = () => {
                             const { createLocalApiErrorHandler: t, onNavigate: e, subtask: s, subtaskInputs: i, verifyIdentifier: a } = this.props,
-                                n = (s.email && (0, p.Ds)(i, s.email)) || void 0,
-                                o = (s.name && (0, p.Ds)(i, s.name)) || void 0;
-                            return a({ email: n, display_name: o })
+                                n = (s.email && (0, _.Ds)(i, s.email)) || void 0,
+                                o = (s.name && (0, _.Ds)(i, s.name)) || void 0;
+                            return (0, l.Ym)()
+                                .then((t) => a({ email: n, display_name: o, castle_token: t }))
                                 .then((t) => {
                                     this.setState({ email: n });
                                 })
@@ -197,7 +199,7 @@
                             a(i, { code: t.pinCode ?? this.state.pinCode, email: n, link: s.next_link.link_id }), e(s.next_link);
                         });
                     const { subtaskId: e, subtaskInputs: s } = t,
-                        i = (0, p.OG)(s, { key: b, subtask_id: e }, "") || "";
+                        i = (0, _.OG)(s, { key: v, subtask_id: e }, "") || "";
                     this.state = { email: i, pinCode: "" };
                 }
                 componentDidMount() {
@@ -211,13 +213,13 @@
                 }
                 render() {
                     const { onNavigate: t, passthroughOcfScreenProps: e, subtask: s, subtaskInputs: o } = this.props,
-                        { next_link: r, primary_text: p, secondary_text: _ } = s,
-                        m = a.createElement(u.Z, (0, i.Z)({}, s.detail_text, { color: "link", onNavigate: t, style: f.detailLink, subtaskInputs: o }));
-                    return a.createElement(h.Z, (0, i.Z)({}, e, { footer: a.createElement(l.ZP, { actionDisabled: !this.state.pinCode, actionLabel: r?.label, onAction: this._handleDoneButtonClick }), header: a.createElement(d.Z, { onNavigate: t, primaryTextProp: p, secondaryTextProp: _, subtaskInputs: o, withHeaderImage: !0 }), providePadding: !0 }), a.createElement(n.Z, { autoFocus: !0, helperText: s.detail_text && m, label: s.hint_text, name: "verfication_code", onChange: this._handleCodeUpdated, style: c.Z.formTextInput, value: this.state.pinCode }), this.props.errorDialog);
+                        { next_link: r, primary_text: l, secondary_text: _ } = s,
+                        m = a.createElement(c.Z, (0, i.Z)({}, s.detail_text, { color: "link", onNavigate: t, style: y.detailLink, subtaskInputs: o }));
+                    return a.createElement(u.Z, (0, i.Z)({}, e, { footer: a.createElement(d.ZP, { actionDisabled: !this.state.pinCode, actionLabel: r?.label, onAction: this._handleDoneButtonClick }), header: a.createElement(h.Z, { onNavigate: t, primaryTextProp: l, secondaryTextProp: _, subtaskInputs: o, withHeaderImage: !0 }), providePadding: !0 }), a.createElement(n.Z, { autoFocus: !0, helperText: s.detail_text && m, label: s.hint_text, name: "verfication_code", onChange: this._handleCodeUpdated, style: p.Z.formTextInput, value: this.state.pinCode }), this.props.errorDialog);
                 }
             }
-            const f = o.default.create((t) => ({ detailLink: { marginTop: t.spaces.space16 } })),
-                y = g(v);
+            const y = o.default.create((t) => ({ detailLink: { marginTop: t.spaces.space16 } })),
+                w = b(f);
         },
         709969: (t, e, s) => {
             s.d(e, { Z: () => m });
@@ -376,7 +378,7 @@
             const k = o.default.create((t) => ({ textFieldArea: { marginTop: t.spaces.space20 }, emailTextField: { paddingHorizontal: 0, paddingVertical: t.spaces.space16 } }));
         },
         349590: (t, e, s) => {
-            s.d(e, { Z: () => O });
+            s.d(e, { Z: () => M });
             var i = s(807896),
                 a = s(202784),
                 n = s(325686),
@@ -389,30 +391,31 @@
                 c = s(516951),
                 p = s(443781),
                 _ = s(911318),
-                m = s(804027),
-                k = s(380020),
-                g = s(227991),
-                b = s(663951),
-                v = s(495161),
-                f = s(280947),
-                y = s(975364),
-                w = s(738374),
-                C = s(900069),
-                I = s(305784),
-                x = s(153925),
-                S = s(668214),
-                E = s(24546);
-            const P = (0, S.Z)()
-                    .propsFromActions(() => ({ sendAllPreviews: E.MH }))
+                m = s(697888),
+                k = s(804027),
+                g = s(380020),
+                b = s(227991),
+                v = s(663951),
+                f = s(495161),
+                y = s(280947),
+                w = s(975364),
+                C = s(738374),
+                I = s(900069),
+                x = s(305784),
+                S = s(153925),
+                E = s(668214),
+                P = s(24546);
+            const V = (0, E.Z)()
+                    .propsFromActions(() => ({ sendAllPreviews: P.MH }))
                     .withAnalytics(),
-                V = "LoginForm_Login_Button",
-                Z = "LoginForm_Skip_Button",
-                T = "LoginForm_Footer_Container",
-                A = u().d1f6d336,
-                F = u().a3841918,
-                N = u().f70cd5ee,
-                D = u().ca86b62c;
-            class L extends a.Component {
+                Z = "LoginForm_Login_Button",
+                T = "LoginForm_Skip_Button",
+                A = "LoginForm_Footer_Container",
+                F = u().d1f6d336,
+                N = u().a3841918,
+                D = u().f70cd5ee,
+                L = u().ca86b62c;
+            class B extends a.Component {
                 constructor(...t) {
                     super(...t),
                         (this._passwordlessSsoEnabled = this.context.featureSwitches.isTrue("responsive_web_passwordless_sso_enabled")),
@@ -421,7 +424,7 @@
                             const { subtask: t } = this.props,
                                 { email: e, phone_number: s, user_identifier_display_type: i, username: n } = t;
                             let r, l;
-                            return "phone_number" === i ? ((r = s), (l = N)) : "username" === i ? ((r = n), (l = A)) : "email" === i && ((r = e), (l = F)), r && l && i ? a.createElement(o.Z, { editable: !1, label: l, name: i, onChange: c.Z, style: I.Z.formTextInput, value: r }) : null;
+                            return "phone_number" === i ? ((r = s), (l = D)) : "username" === i ? ((r = n), (l = F)) : "email" === i && ((r = e), (l = N)), r && l && i ? a.createElement(o.Z, { editable: !1, label: l, name: i, onChange: c.Z, style: x.Z.formTextInput, value: r }) : null;
                         }),
                         (this._renderPasswordFields = () => {
                             const { onNavigate: t, subtask: e, subtaskInputs: s } = this.props,
@@ -429,23 +432,23 @@
                             if (e.password_field || e.new_password_field || e.confirm_password_field) {
                                 const n = { onNavigate: t, onSubmitEditing: this._handleTextSubmit, subtaskInputs: s },
                                     o = e.password_field ?? e.new_password_field;
-                                return a.createElement(a.Fragment, null, o ? a.createElement(w.Z, (0, i.Z)({}, n, { autoFocus: !0, onChange: this._handlePasswordChange, passwordProps: { onPasswordValidated: this._handleValidationChange, skipPasswordValidation: e.skip_password_validation }, textField: o })) : null, e.confirm_password_field ? a.createElement(w.Z, (0, i.Z)({}, n, { onChange: this._handlePasswordConfirmationChange, passwordProps: { onPasswordValidated: this._handleValidationChange, customValidator: this._validatePasswordConfirmation }, textField: e.confirm_password_field })) : null);
+                                return a.createElement(a.Fragment, null, o ? a.createElement(C.Z, (0, i.Z)({}, n, { autoFocus: !0, onChange: this._handlePasswordChange, passwordProps: { onPasswordValidated: this._handleValidationChange, skipPasswordValidation: e.skip_password_validation }, textField: o })) : null, e.confirm_password_field ? a.createElement(C.Z, (0, i.Z)({}, n, { onChange: this._handlePasswordConfirmationChange, passwordProps: { onPasswordValidated: this._handleValidationChange, customValidator: this._validatePasswordConfirmation }, textField: e.confirm_password_field })) : null);
                             }
-                            return a.createElement(a.Fragment, null, a.createElement(v.Z, { autoComplete: this._getPasswordAutoCompleteValue(), autoFocus: !0, label: e.hint, onPasswordChange: this._handlePasswordChange, onPasswordValidated: this._handleValidationChange, onSubmitEditing: this._handleTextSubmit, skipPasswordValidation: e.skip_password_validation, userIdentifier: e.username }), n ? a.createElement(v.Z, { autoComplete: this._getPasswordAutoCompleteValue(), customValidator: this._validatePasswordConfirmation, label: e.password_confirmation_hint, onPasswordChange: this._handlePasswordConfirmationChange, onPasswordValidated: this._handleValidationChange, onSubmitEditing: this._handleTextSubmit, userIdentifier: e.username }) : null);
+                            return a.createElement(a.Fragment, null, a.createElement(f.Z, { autoComplete: this._getPasswordAutoCompleteValue(), autoFocus: !0, label: e.hint, onPasswordChange: this._handlePasswordChange, onPasswordValidated: this._handleValidationChange, onSubmitEditing: this._handleTextSubmit, skipPasswordValidation: e.skip_password_validation, userIdentifier: e.username }), n ? a.createElement(f.Z, { autoComplete: this._getPasswordAutoCompleteValue(), customValidator: this._validatePasswordConfirmation, label: e.password_confirmation_hint, onPasswordChange: this._handlePasswordConfirmationChange, onPasswordValidated: this._handleValidationChange, onSubmitEditing: this._handleTextSubmit, userIdentifier: e.username }) : null);
                         }),
                         (this._renderFooter = () => {
                             const { onNavigate: t, subtask: e, subtaskInputs: s } = this.props,
                                 { footer: o, next_link: d, skip_link: h } = e,
                                 u = this._isPasswordValid(),
-                                c = this._passwordlessSsoEnabled ? e.action_buttons?.map((e, i) => a.createElement(k.Z, { button: e, displayType: (0, x.sI)(e.navigation_link.link_id), key: i, onNavigate: t, subtaskInputs: s })) : [],
-                                p = e.footer?.footnote_text ? a.createElement(y.Z, (0, i.Z)({}, e.footer.footnote_text, { color: "gray700", onNavigate: t, style: B.footnoteText, subtaskInputs: s })) : null,
-                                _ = a.createElement(g.ZP, { actionDisabled: !u, actionLabel: u || !h ? d?.label : void 0, actionTestID: V, buttonSize: o?.style === m.$b.Floating ? "medium" : void 0, detailText: o?.detail_text, onAction: this._handleDoneButtonClick, onNavigate: t, onSecondaryAction: this._handleSkipButtonClick, secondaryActionLabel: u ? void 0 : h?.label, secondaryActionTestID: Z, subtaskInputs: s });
-                            return a.createElement(n.Z, { testID: T }, _, c?.length ? a.createElement(r.Z, { label: a.createElement(l.ZP, null, D) }) : null, c, p);
+                                c = this._passwordlessSsoEnabled ? e.action_buttons?.map((e, i) => a.createElement(g.Z, { button: e, displayType: (0, S.sI)(e.navigation_link.link_id), key: i, onNavigate: t, subtaskInputs: s })) : [],
+                                p = e.footer?.footnote_text ? a.createElement(w.Z, (0, i.Z)({}, e.footer.footnote_text, { color: "gray700", onNavigate: t, style: O.footnoteText, subtaskInputs: s })) : null,
+                                _ = a.createElement(b.ZP, { actionDisabled: !u, actionLabel: u || !h ? d?.label : void 0, actionTestID: Z, buttonSize: o?.style === k.$b.Floating ? "medium" : void 0, detailText: o?.detail_text, onAction: this._handleDoneButtonClick, onNavigate: t, onSecondaryAction: this._handleSkipButtonClick, secondaryActionLabel: u ? void 0 : h?.label, secondaryActionTestID: T, subtaskInputs: s });
+                            return a.createElement(n.Z, { testID: A }, _, c?.length ? a.createElement(r.Z, { label: a.createElement(l.ZP, null, L) }) : null, c, p);
                         }),
                         (this._validatePasswordConfirmation = () => {
                             const { subtask: t } = this.props,
                                 { password_confirmation_mismatch_message: e } = t,
-                                s = t.confirm_password_field?.validation_messages?.find((t) => t.message_type === m.IN.Mismatch);
+                                s = t.confirm_password_field?.validation_messages?.find((t) => t.message_type === k.IN.Mismatch);
                             let i;
                             if ((s ? (i = s.text.text) : e?.text && (i = e?.text), i)) {
                                 const { password: t, passwordConfirmation: e } = this.state;
@@ -456,9 +459,9 @@
                         (this._handleDoneButtonClick = () => {
                             const { onNavigate: t, sendAllPreviews: e, subtask: s, subtaskId: i, updateFlow: a } = this.props;
                             e().finally(() => {
-                                this._saveCredentialsIfNeeded()
-                                    .then(() => {
-                                        a(i, { password: this.state.password, link: s.next_link.link_id }), t(s.next_link);
+                                Promise.all([(0, m.Ym)(), this._saveCredentialsIfNeeded()])
+                                    .then(([e]) => {
+                                        a(i, { password: this.state.password, link: s.next_link.link_id, castle_token: e }), t(s.next_link);
                                     })
                                     .catch(() => {
                                         a(i, { password: this.state.password, link: s.next_link.link_id }), t(s.next_link);
@@ -508,9 +511,9 @@
                         (this._getPasswordAutoCompleteValue = () => {
                             const { subtask: t } = this.props;
                             switch (t.os_content_type) {
-                                case m.Dk.Password:
+                                case k.Dk.Password:
                                     return "current-password";
-                                case m.Dk.NewPassword:
+                                case k.Dk.NewPassword:
                                     return "new-password";
                                 default:
                                     return "on";
@@ -519,21 +522,21 @@
                         (this._hasSSOButtons = () => {
                             const { subtask: t } = this.props;
                             return !!t.action_buttons?.find((t) => {
-                                const e = (0, x.sI)(t.navigation_link.link_id);
-                                return e === m.GN.GoogleSSO || e === m.GN.AppleSSO;
+                                const e = (0, S.sI)(t.navigation_link.link_id);
+                                return e === k.GN.GoogleSSO || e === k.GN.AppleSSO;
                             });
                         });
                 }
                 render() {
                     const { errorDialog: t, onNavigate: e, passthroughOcfScreenProps: s, subtask: o, subtaskInputs: r } = this.props,
-                        l = o.footer?.style ?? m.$b.Fixed,
+                        l = o.footer?.style ?? k.$b.Fixed,
                         d = this._passwordlessSsoEnabled && o.action_buttons?.length;
-                    return a.createElement(f.Z, (0, i.Z)({}, s, { footer: l === m.$b.Fixed ? this._renderFooter() : null, providePadding: !0 }), a.createElement(n.Z, { style: !!d && B.compact }, a.createElement(b.Z, { header: o.header, onNavigate: e, primaryTextProp: o.primary_text, secondaryTextProp: o.secondary_text, subtaskInputs: r, userInfo: this._passwordlessSsoEnabled ? a.createElement(C.Z, { displayType: m.CE.compact, onNavigate: e, subtaskInputs: r, user: o.header?.user, userCaption: o.header?.user_caption }) : void 0 }), this._renderIdentifier(), this._renderPasswordFields(), l === m.$b.Floating || l === m.$b.FloatingLarge ? this._renderFooter() : null), t);
+                    return a.createElement(y.Z, (0, i.Z)({}, s, { footer: l === k.$b.Fixed ? this._renderFooter() : null, providePadding: !0 }), a.createElement(n.Z, { style: !!d && O.compact }, a.createElement(v.Z, { header: o.header, onNavigate: e, primaryTextProp: o.primary_text, secondaryTextProp: o.secondary_text, subtaskInputs: r, userInfo: this._passwordlessSsoEnabled ? a.createElement(I.Z, { displayType: k.CE.compact, onNavigate: e, subtaskInputs: r, user: o.header?.user, userCaption: o.header?.user_caption }) : void 0 }), this._renderIdentifier(), this._renderPasswordFields(), l === k.$b.Floating || l === k.$b.FloatingLarge ? this._renderFooter() : null), t);
                 }
             }
-            L.contextType = p.rC;
-            const B = d.default.create((t) => ({ footnoteText: { marginBottom: t.spaces.space24 }, detailText: { marginBottom: t.spaces.space40 }, compact: { margin: "auto", minWidth: _.fI + 64, maxWidth: _.fI + 64 } })),
-                O = P(L);
+            B.contextType = p.rC;
+            const O = d.default.create((t) => ({ footnoteText: { marginBottom: t.spaces.space24 }, detailText: { marginBottom: t.spaces.space40 }, compact: { margin: "auto", minWidth: _.fI + 64, maxWidth: _.fI + 64 } })),
+                M = V(B);
         },
         957457: (t, e, s) => {
             s.d(e, { Z: () => v });
@@ -628,4 +631,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-14131f0c.d756617a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-14131f0c.5dc84e4a.js.map

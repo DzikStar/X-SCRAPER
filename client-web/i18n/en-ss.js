@@ -13,10 +13,18 @@
                 var a, n;
             }
             a("c39b0e24", "[[279541]] X"),
+                a("bcd6bb0e", "[[153909]] Member"),
+                a("hd8c22d2", "[[249579]] Mod"),
+                a("c3153100", "[[230207]] Admin"),
                 a("jb38600c", "[[262541]] None"),
                 a("f07eac34", "[[291254]] Parody account"),
                 a("a41b5c2e", "[[292425]] Fan account"),
                 a("i428ea62", "[[292424]] Commentary account"),
+                a("jd859c9c", "[[241793]] You have been removed from this Space."),
+                a("cfbea177", function (e) {
+                    return "[[232200]] " + e.name + "’s Space";
+                }),
+                a("ab4fc8bc", "[[228709]] Space"),
                 a("ac0d27be", "[[142392]] Sorry, this account has been suspended."),
                 a("bcee7444", "[[156508]] Account update failed."),
                 a("e0cbf77a", "[[142291]] Add phone"),
@@ -57,9 +65,6 @@
                 a("h1cbdd30", "[[142370]] Please refresh the page and try again."),
                 a("a5077d3e", "[[142377]] Refresh"),
                 a("b2648ba4", "[[142474]] Your account may not be allowed to perform this action. Please refresh the page and try again."),
-                a("bcd6bb0e", "[[153909]] Member"),
-                a("hd8c22d2", "[[249579]] Mod"),
-                a("c3153100", "[[230207]] Admin"),
                 a("fa9adac1", function (e) {
                     return '[[189916]] Search for "' + e.query + '"';
                 }),
@@ -72,19 +77,12 @@
                 a("c64e46f8", "[[282231]] This member was removed from the Community, so their posts are hidden."),
                 a("b3f1cb42", "[[282198]] A moderator hid this post for breaking a Community rule."),
                 a("cbd2dc9c", "[[282242]] You reported this post."),
-                a("cfbea177", function (e) {
-                    return "[[232200]] " + e.name + "’s Space";
-                }),
-                a("ab4fc8bc", "[[228709]] Space"),
-                a("jd859c9c", "[[241793]] You have been removed from this Space."),
                 a("c60ed9b0", "[[287350]] You are not authorized to join this Space."),
                 a("d8227e16", "[[287327]] You are not authorized to create this Space"),
                 a("f027fed8", "[[280688]] Picture-in-Picture"),
                 a("hd50e064", "[[172876]] Not now"),
                 a("i76d640e", "[[276627]] We need your permission"),
                 a("fdaa0be8", "[[283639]] To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                a("gea6cc1a", "[[174733]] Are you sure?"),
-                a("hb568af4", "[[142349]] Mute"),
                 a("f7c8617a", "[[258883]] What are clips?"),
                 a("ecc7d2ec", "[[258879]] Clips are captured moments that anyone in your Space can make and share. All clips expire after 30 days."),
                 a("d575ee02", "[[258882]] Who can make a clip?"),
@@ -102,16 +100,6 @@
                 a("jf03b37c", "[[283749]] Listen to the recording anytime. You can also share it with a post."),
                 a("fd05976b", "Learn more"),
                 a("b4f91a8a", "[[240894]] Recording active"),
-                a("gb418012", "[[286608]] Welcome to Spaces"),
-                a("fec3c1e0", "[[235603]] Where live audio conversations happen"),
-                a("j32eb4f8", "[[286604]] Add up to 10 speakers"),
-                a("j4f133a6", "[[286611]] You can invite anyone on X to speak."),
-                a("ed434ac6", "[[286607]] Spaces are public — anyone can join"),
-                a("e0025688", "[[286610]] Your Space, your rules"),
-                a("c1bc6f86", "[[286606]] As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                a("b0bc8330", "[[243189]] You can also block and report people in a Space."),
-                a("cb17a0f3", "Learn more"),
-                a("dcd77941", "Learn more"),
                 a("cc724cb0", "[[259617]] Create Clip"),
                 a("cfd2f35e", "[[142298]] Cancel"),
                 a("c1df579e", "[[213250]] Next"),
@@ -125,6 +113,16 @@
                 a("a9ba3e28", "[[232873]] Private Information"),
                 a("d5519f4a", "[[232868]] Abusive Behavior"),
                 a("eb55363c", "[[244467]] This Space has been reported"),
+                a("gb418012", "[[286608]] Welcome to Spaces"),
+                a("fec3c1e0", "[[235603]] Where live audio conversations happen"),
+                a("j32eb4f8", "[[286604]] Add up to 10 speakers"),
+                a("j4f133a6", "[[286611]] You can invite anyone on X to speak."),
+                a("ed434ac6", "[[286607]] Spaces are public — anyone can join"),
+                a("e0025688", "[[286610]] Your Space, your rules"),
+                a("c1bc6f86", "[[286606]] As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                a("b0bc8330", "[[243189]] You can also block and report people in a Space."),
+                a("cb17a0f3", "Learn more"),
+                a("dcd77941", "Learn more"),
                 a("i65de934", "[[285437]] You are listening anonymously"),
                 a("b1037050", "[[280489]] Manage Space"),
                 a("ic107434", "[[287964]] Turn on camera"),
@@ -903,10 +901,10 @@
                 a("bf9e181b", "Learn more"),
                 a("e8e39f95", "Learn more"),
                 a("e126dd3f", "Learn more"),
-                a("i821844f", "Learn more");
-            a("b0abbb17", "Learn more"),
-                a("e7e0d88b", "Learn more"),
-                a("i560665f", "Learn more"),
+                a("i821844f", "Learn more"),
+                a("b0abbb17", "Learn more"),
+                a("e7e0d88b", "Learn more");
+            a("i560665f", "Learn more"),
                 a("f6e774d9", "Learn more"),
                 a("h486f755", "Learn more"),
                 a("bab41dab", "Learn more"),
@@ -1122,6 +1120,7 @@
                 a("dbb51952", "[[280869]] Protect your posts?"),
                 a("de735de6", "[[280915]] This will make them visible only to your X followers."),
                 a("c5d4192a", "[[197340]] Protect"),
+                a("gea6cc1a", "[[174733]] Are you sure?"),
                 a("d9ddba70", "[[280779]] Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 a("f527b322", "[[239436]] Protect my account"),
                 a("d165c992", "[[180487]] Anyone can tag you"),
@@ -1318,9 +1317,10 @@
                     return "[[296690]] Executing code" + e.ttc_tool_usage_card;
                 }),
                 a("aa9d42c0", "[[296891]] Searching the web"),
-                a("dce1817a", "[[296889]] Searching on 𝕏"),
-                a("f7151564", "[[296892]] Searching users on 𝕏"),
+                a("c731d702", "Searching on X"),
+                a("d0e02476", "Searching users on X"),
                 a("c43ef93e", "[[296887]] Browsing web page"),
+                a("dab166ec", "Searching user posts on X"),
                 a("jb097f6e", "[[296888]] Executing code"),
                 a("ead81122", "[[294249]] Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "[[285363]] Rate limit exceeded. Please wait a few moments then try again."),
@@ -1814,6 +1814,7 @@
                 a("g00b4c55", function (e) {
                     return "[[296583]] Share @" + e.screenName + " via...";
                 }),
+                a("hb568af4", "[[142349]] Mute"),
                 a("bb1cbeb6", "[[142439]] Unmute"),
                 a("h2f62206", "[[226319]] Muting user"),
                 a("h59f52ee", "[[142400]] Successfully muted."),
@@ -1914,11 +1915,11 @@
                 a("ef1649e2", "[[282298]] X - Keyboard shortcuts"),
                 a("aefd89c8", "[[190618]] Navigation"),
                 a("cafdefb2", "[[190614]] Actions"),
-                a("dda42cf2", "[[244267]] Columns & Decks"),
-                a("e8a12604", "[[268857]] Provide a caption (optional)");
-            a("eabf2209", function (e) {
-                return "[[178885]] GIF provided by " + e.providerName;
-            }),
+                a("dda42cf2", "[[244267]] Columns & Decks");
+            a("e8a12604", "[[268857]] Provide a caption (optional)"),
+                a("eabf2209", function (e) {
+                    return "[[178885]] GIF provided by " + e.providerName;
+                }),
                 a("a613e720", "[[178734]] Copy link to GIF"),
                 a("aeca1239", function (e) {
                     return "[[275273]] Bold" + e.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 a("e06b864c", "[[267426]] It looks like you’re enjoying this conversation"),
                 a("a078ff70", "[[267427]] Want to see some more content from the people you interacted with in this thread? Start exploring content from new accounts."),
                 a("cb80300e", "[[264540]] Skip to home timeline"),
-                a("ea5cd098", "[[262681]] Skip to trending"),
-                a("c67e3fc2", "[[142317]] Home timeline");
-            a("d601fc20", "[[171086]] Latest"),
+                a("ea5cd098", "[[262681]] Skip to trending");
+            a("c67e3fc2", "[[142317]] Home timeline"),
+                a("d601fc20", "[[171086]] Latest"),
                 a("j43f99be", "[[288862]] Relevancy"),
                 a("ad6e11ac", "[[289697]] Sort replies by"),
                 a("b2311b70", "[[187546]] This is not available to you"),
@@ -3894,13 +3895,13 @@
                 }),
                 a("f5c7aaa7", function (e) {
                     return "[[281000]] host" + n(e.count, "", "s");
-                }),
-                a("fc56c8b1", function (e) {
-                    return "[[281001]] co-host" + n(e.count, "", "s");
                 });
-            a("iba0f45d", function (e) {
-                return "[[281003]] speaker" + n(e.count, "", "s");
+            a("fc56c8b1", function (e) {
+                return "[[281001]] co-host" + n(e.count, "", "s");
             }),
+                a("iba0f45d", function (e) {
+                    return "[[281003]] speaker" + n(e.count, "", "s");
+                }),
                 a("dc066955", function (e) {
                     return "[[281002]] listener" + n(e.count, "", "s");
                 }),
@@ -4930,9 +4931,9 @@
                 a("ff95a9cc", "[[293572]] Video ID"),
                 a("a97e358e", "[[293570]] Video Link"),
                 a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
-                a("ba37f6da", "[[292001]] Video overview"),
-                a("f19846b2", "[[293573]] Video thumbnail");
-            a("ccd6f4a8", "[[293571]] Video title"),
+                a("ba37f6da", "[[292001]] Video overview");
+            a("f19846b2", "[[293573]] Video thumbnail"),
+                a("ccd6f4a8", "[[293571]] Video title"),
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
                 a("a532072a", "[[294256]] Viewers"),
                 a("d9508ab0", "[[293196]] views"),
@@ -5550,6 +5551,7 @@
                 a("bd7eb888", "[[280596]] See all notes on this post"),
                 a("i97b83f6", "[[247826]] There was an error submitting your appeal, please try again."),
                 a("a038ab9a", "[[287584]] Translate note"),
+                a("icdb6d74", "[[296579]] Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 a("i606fc4c", "[[272981]] About Community Notes appeals"),
                 a("b664c554", "[[246889]] Request additional contributor review"),
                 a("ab66e1f2", "[[246887]] Here’s how it works:"),
@@ -5565,6 +5567,7 @@
                 a("ge25848a", "[[260988]] Current Status"),
                 a("d6db34cc", "[[230393]] Needs more ratings"),
                 a("ce8b505e", "[[260993]] Not helpful"),
+                a("j42c88b6", "[[296507]] Experimental AI Note Writer"),
                 a("e5be8156", "[[275113]] Note status computed by open-source algorithm"),
                 a("fca23c42", "[[280570]] Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 a("hef420c2", "[[260995]] This note hasn’t yet been rated by enough contributors from different perspectives."),
@@ -5880,11 +5883,11 @@
                 a("ab1b3d38", "[[293110]] Note request data isn’t available yet"),
                 a("c43fb933", "X Developer Agreement and Policy"),
                 a("af781666", "[[294695]] What do people think?"),
-                a("a1f414ee", "[[295480]] Share thoughts"),
-                a("ed88e742", "[[224922]] Copy link to Topic"),
+                a("a1f414ee", "[[295480]] Share thoughts");
+            a("ed88e742", "[[224922]] Copy link to Topic"),
                 a("h92fe1be", "[[273025]] Unfortunately, Community Notes is not available to you at this time."),
-                a("f0dc1434", "[[272991]] Community Notes is currently only available in the U.S.");
-            a("f8fc0b48", "[[240892]] Create a Folder"),
+                a("f0dc1434", "[[272991]] Community Notes is currently only available in the U.S."),
+                a("f8fc0b48", "[[240892]] Create a Folder"),
                 a("c14bcdde", "[[220245]] Search Bookmarks"),
                 a("e9c65c4a", "[[288250]] Bookmarks search"),
                 a("b92a21d9", function (e) {
@@ -6886,11 +6889,11 @@
                 a("j3d242ce", "[[276541]] Invalid range"),
                 a("f4d07bd2", "[[282456]] Include optional details to make it easier for candidates to discover your roles with search."),
                 a("b8cbb51a", "[[282457]] Job Summary"),
-                a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                a("b075c68a", "[[276392]] Edit job"),
+                a("bda6881e", "[[282745]] This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            a("b075c68a", "[[276392]] Edit job"),
                 a("d4b6a6e0", "[[249571]] Profile Spotlight"),
-                a("j2dd3686", "[[285949]] Highlight featured jobs above my posts.");
-            a("af1cfd46", "[[285940]] ATS integration"),
+                a("j2dd3686", "[[285949]] Highlight featured jobs above my posts."),
+                a("af1cfd46", "[[285940]] ATS integration"),
                 a("d6fa2944", "[[285945]] Deleting your integration will not delete your imported jobs."),
                 a("h99f11fa", "[[285943]] Delete integration"),
                 a("eef1ae76", "[[285947]] Currently connected"),
@@ -7868,10 +7871,7 @@
                 a("d7b8387e", "[[272796]] If you’ve already canceled, there’s nothing more to do. Your Subscription will automatically expire at the end of the billing cycle."),
                 a("f4166d9a", "[[272806]] Want to cancel your Subscription?"),
                 a("b74ff5fc", "[[272795]] If you cancel, your Subscription will automatically expire at the end of the billing cycle."),
-                a("ee9efbc8", "[[265375]] Continue to cancellation"),
-                a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
-                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
-                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store.");
+                a("ee9efbc8", "[[265375]] Continue to cancellation");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7910,9 +7910,12 @@
                     r(e, t)
                 );
             }
-            a("i5f14be7", function (e) {
-                return "[[288006]] Welcome back, " + e.displayName;
-            }),
+            a("c5d9c77a", "[[265380]] Looks like there was a slight hiccup. Don’t worry though, it’s not your fault. Close this window and try again."),
+                a("jda53c24", "[[272809]] You can cancel your Subscription through the Apple App Store."),
+                a("g0a7a53e", "[[272807]] You can cancel your Subscription through the Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "[[288006]] Welcome back, " + e.displayName;
+                }),
                 a("a76d58ba", "[[288167]] Ads Analytics"),
                 a("eccd0e1a", "[[288001]] Organization Analytics"),
                 a("deea1708", "[[288004]] Want to view analytics across all your X accounts?"),
@@ -8908,11 +8911,11 @@
                 }),
                 a("b0b22805", function (e) {
                     return "[[223889]] Visit " + e.advertiserName;
-                }),
-                a("c67e71aa", "[[223887]] Watch now"),
+                });
+            a("c67e71aa", "[[223887]] Watch now"),
                 a("a6ada13e", "[[142677]] Shop now"),
-                a("j0f12222", "[[223888]] See more");
-            a("f569f7c8", "[[223884]] Go to website"),
+                a("j0f12222", "[[223888]] See more"),
+                a("f569f7c8", "[[223884]] Go to website"),
                 a("j0c6772a", "[[223886]] Visit website"),
                 a("f73003aa", "[[225566]] Video will play after ad"),
                 a("b3112b8a", "[[153003]] Skip"),
@@ -13368,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.4247ad7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.3fe6941a.js.map

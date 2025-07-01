@@ -13,10 +13,18 @@
                 var t, r;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Mitglied"),
+                t("hd8c22d2", "Mod"),
+                t("c3153100", "Admin"),
                 t("jb38600c", "Keine"),
                 t("f07eac34", "Parodie-Account"),
                 t("a41b5c2e", "Fan-Account"),
                 t("i428ea62", "Kommentar-Account"),
+                t("jd859c9c", "Du wurdest aus diesem Space entfernt."),
+                t("cfbea177", function (e) {
+                    return "Space von " + e.name;
+                }),
+                t("ab4fc8bc", "Space"),
                 t("ac0d27be", "Sorry, dieser Account wurde gesperrt."),
                 t("bcee7444", "Account-Aktualisierung fehlgeschlagen."),
                 t("e0cbf77a", "Telefon hinzufügen"),
@@ -57,9 +65,6 @@
                 t("h1cbdd30", "Bitte aktualisiere die Seite und versuche es erneut."),
                 t("a5077d3e", "Aktualisieren"),
                 t("b2648ba4", "Dein Account darf diese Aktion möglicherweise nicht durchführen. Bitte aktualisiere die Seite und versuche es erneut."),
-                t("bcd6bb0e", "Mitglied"),
-                t("hd8c22d2", "Mod"),
-                t("c3153100", "Admin"),
                 t("fa9adac1", function (e) {
                     return "Nach „" + e.query + "“ suchen";
                 }),
@@ -72,19 +77,12 @@
                 t("c64e46f8", "Dieses Mitglied wurde aus der Community entfernt, deshalb sind seine Posts ausgeblendet."),
                 t("b3f1cb42", "Dieser Post wurde bei der Moderation ausgeblendet, weil er gegen eine Community-Regel verstößt"),
                 t("cbd2dc9c", "Du hast diesen Post gemeldet."),
-                t("cfbea177", function (e) {
-                    return "Space von " + e.name;
-                }),
-                t("ab4fc8bc", "Space"),
-                t("jd859c9c", "Du wurdest aus diesem Space entfernt."),
                 t("c60ed9b0", "Du bist nicht berechtigt, diesem Space beizutreten."),
                 t("d8227e16", "Du bist nicht berechtigt, diesen Space zu erstellen."),
                 t("f027fed8", "Bild-im-Bild"),
                 t("hd50e064", "Nicht jetzt"),
                 t("i76d640e", "Wir brauchen dein Einverständnis"),
                 t("fdaa0be8", "Damit du in diesem Space sprechen kannst, muss du X erlauben, auf dein Mikrofon zuzugreifen. Überprüfe dazu die Einstellungen in deinem Browser. "),
-                t("gea6cc1a", "Bist du sicher?"),
-                t("hb568af4", "Stummschalten"),
                 t("f7c8617a", "Was sind Clips?"),
                 t("ecc7d2ec", "Clips sind ausgeschnittene Momente, die jeder in deinem Space erstellen und teilen kann. Alle Clips laufen nach 30 Tagen ab."),
                 t("d575ee02", "Wer kann einen Clip erstellen?"),
@@ -102,16 +100,6 @@
                 t("jf03b37c", "Hör dir die Aufzeichnung jederzeit an. Du kannst sie auch mit einem Post teilen."),
                 t("fd05976b", "Mehr erfahren"),
                 t("b4f91a8a", "Aufzeichnung aktiv"),
-                t("gb418012", "Willkommen bei Spaces"),
-                t("fec3c1e0", "Der Ort für Live-Konversationen"),
-                t("j32eb4f8", "Bis zu 10 Sprecher hinzufügen"),
-                t("j4f133a6", "Du kannst alle auf X zum Sprechen einladen."),
-                t("ed434ac6", "Spaces sind öffentlich – alle können beitreten"),
-                t("e0025688", "Dein Space, deine Regeln"),
-                t("c1bc6f86", "Als Host kontrollierst du, wer das Wort ergreifen darf. Und du kannst Leute entfernen, die du nicht in deinem Space haben willst."),
-                t("b0bc8330", "Du kannst Leute in einem Space blockieren und melden."),
-                t("cb17a0f3", "Mehr erfahren"),
-                t("dcd77941", "Mehr erfahren"),
                 t("cc724cb0", "Clip erstellen"),
                 t("cfd2f35e", "Abbrechen"),
                 t("c1df579e", "Weiter"),
@@ -125,6 +113,16 @@
                 t("a9ba3e28", "Private Informationen"),
                 t("d5519f4a", "Missbräuchliches Verhalten"),
                 t("eb55363c", "Dieser Space wurde gemeldet"),
+                t("gb418012", "Willkommen bei Spaces"),
+                t("fec3c1e0", "Der Ort für Live-Konversationen"),
+                t("j32eb4f8", "Bis zu 10 Sprecher hinzufügen"),
+                t("j4f133a6", "Du kannst alle auf X zum Sprechen einladen."),
+                t("ed434ac6", "Spaces sind öffentlich – alle können beitreten"),
+                t("e0025688", "Dein Space, deine Regeln"),
+                t("c1bc6f86", "Als Host kontrollierst du, wer das Wort ergreifen darf. Und du kannst Leute entfernen, die du nicht in deinem Space haben willst."),
+                t("b0bc8330", "Du kannst Leute in einem Space blockieren und melden."),
+                t("cb17a0f3", "Mehr erfahren"),
+                t("dcd77941", "Mehr erfahren"),
                 t("i65de934", "Du hörst anonym zu"),
                 t("b1037050", "Space verwalten"),
                 t("ic107434", "Kamera einschalten"),
@@ -903,10 +901,10 @@
                 t("bf9e181b", "Mehr erfahren"),
                 t("e8e39f95", "Mehr erfahren"),
                 t("e126dd3f", "Mehr erfahren"),
-                t("i821844f", "Mehr erfahren");
-            t("b0abbb17", "Mehr erfahren"),
-                t("e7e0d88b", "Mehr erfahren"),
-                t("i560665f", "Mehr erfahren"),
+                t("i821844f", "Mehr erfahren"),
+                t("b0abbb17", "Mehr erfahren"),
+                t("e7e0d88b", "Mehr erfahren");
+            t("i560665f", "Mehr erfahren"),
                 t("f6e774d9", "Mehr erfahren"),
                 t("h486f755", "Mehr erfahren"),
                 t("bab41dab", "Mehr erfahren"),
@@ -1122,6 +1120,7 @@
                 t("dbb51952", "Deine Posts schützen?"),
                 t("de735de6", "Dadurch werden sie nur für deine X Follower*innen sichtbar."),
                 t("c5d4192a", "Schützen"),
+                t("gea6cc1a", "Bist du sicher?"),
                 t("d9ddba70", "Communities sind öffentlich. Wenn du also deinen Account schützt, werden deine vorherigen Posts verborgen. Du kannst außerdem erst wieder in der Community posten, wenn du deinen Account wieder öffentlich machst."),
                 t("f527b322", "Meinen Account schützen"),
                 t("d165c992", "Jeder kann dich markieren"),
@@ -1318,9 +1317,10 @@
                     return "Code wird ausgeführt" + e.ttc_tool_usage_card;
                 }),
                 t("aa9d42c0", "Das Web wird durchsucht"),
-                t("dce1817a", "𝕏 wird durchsucht"),
-                t("f7151564", "Nutzer*innen auf 𝕏 werden durchsucht"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
                 t("c43ef93e", "Webseite wird durchsucht"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Code wird ausgeführt"),
                 t("ead81122", "Etwas ist schief gegangen. Bitte stelle die Verbindung durch eine Aktualisierung wieder her oder versuche es erneut."),
                 t("f808a13a", "Das Zugriffslimit ist erreicht. Bitte versuche es in ein paar Minuten erneut."),
@@ -1814,6 +1814,7 @@
                 t("g00b4c55", function (e) {
                     return "@" + e.screenName + " teilen via...";
                 }),
+                t("hb568af4", "Stummschalten"),
                 t("bb1cbeb6", "Stummschaltung aufheben"),
                 t("h2f62206", "Nutzer wird stummgeschaltet"),
                 t("h59f52ee", "Erfolgreich stummgeschaltet."),
@@ -1914,11 +1915,11 @@
                 t("ef1649e2", "X – Tastaturkürzel"),
                 t("aefd89c8", "Navigation"),
                 t("cafdefb2", "Aktionen"),
-                t("dda42cf2", "Spalten und Decks"),
-                t("e8a12604", "Gib eine Beschriftung an (optional)");
-            t("eabf2209", function (e) {
-                return "GIF bereitgestellt von " + e.providerName;
-            }),
+                t("dda42cf2", "Spalten und Decks");
+            t("e8a12604", "Gib eine Beschriftung an (optional)"),
+                t("eabf2209", function (e) {
+                    return "GIF bereitgestellt von " + e.providerName;
+                }),
                 t("a613e720", "Link zum GIF kopieren"),
                 t("aeca1239", function (e) {
                     return "Fett" + e.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 t("e06b864c", "Es sieht so aus, als würdest du diese Konversation genießen"),
                 t("a078ff70", "Möchtest du noch mehr Inhalte von den Leuten sehen, mit denen du in diesem Thread interagiert hast? Erkunde die Inhalte von neuen Accounts."),
                 t("cb80300e", "Direkt zur Startseiten-Timeline"),
-                t("ea5cd098", "Direkt zu Trends"),
-                t("c67e3fc2", "Home-Timeline");
-            t("d601fc20", "Neueste"),
+                t("ea5cd098", "Direkt zu Trends");
+            t("c67e3fc2", "Home-Timeline"),
+                t("d601fc20", "Neueste"),
                 t("j43f99be", "Relevanz"),
                 t("ad6e11ac", "Antworten sortieren nach"),
                 t("b2311b70", "Dieser Inhalt ist für dich nicht verfügbar."),
@@ -3894,13 +3895,13 @@
                 }),
                 t("f5c7aaa7", function (e) {
                     return "Host" + r(e.count, "", "s");
-                }),
-                t("fc56c8b1", function (e) {
-                    return "Co-Host" + r(e.count, "", "s");
                 });
-            t("iba0f45d", function (e) {
-                return "Sprecher*in" + r(e.count, "", "nen");
+            t("fc56c8b1", function (e) {
+                return "Co-Host" + r(e.count, "", "s");
             }),
+                t("iba0f45d", function (e) {
+                    return "Sprecher*in" + r(e.count, "", "nen");
+                }),
                 t("dc066955", function (e) {
                     return "Zuhörer*in" + r(e.count, "", "nen");
                 }),
@@ -4930,9 +4931,9 @@
                 t("ff95a9cc", "Video-ID"),
                 t("a97e358e", "Video-Link"),
                 t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
-                t("ba37f6da", "Videoübersicht"),
-                t("f19846b2", "Video-Miniaturbild");
-            t("ccd6f4a8", "Videotitel"),
+                t("ba37f6da", "Videoübersicht");
+            t("f19846b2", "Video-Miniaturbild"),
+                t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Wie oft dein Video angezeigt wurde."),
                 t("a532072a", "Zuschauer*innen"),
                 t("d9508ab0", "Mal angezeigt"),
@@ -5550,6 +5551,7 @@
                 t("bd7eb888", "Alle Anmerkungen zu diesem Post ansehen"),
                 t("i97b83f6", "Beim Übermitteln deines Einspruchs ist ein Fehler aufgetreten. Bitte versuche es erneut."),
                 t("a038ab9a", "Text übersetzen"),
+                t("icdb6d74", "Vorgeschlagen von einem experimentellen KI-Mitwirkenden, der auf die Bitte um eine Anmerkung reagiert. Wie alle Mitwirkenden kann KI Fehler machen – muss auf Korrektheit überprüft werden."),
                 t("i606fc4c", "Über den Einspruch bei Kollektive Anmerkungen"),
                 t("b664c554", "Um zusätzliche Überprüfung bitten"),
                 t("ab66e1f2", "So funktioniert es:"),
@@ -5565,6 +5567,7 @@
                 t("ge25848a", "Aktueller Status"),
                 t("d6db34cc", "Benötigt mehr Bewertungen"),
                 t("ce8b505e", "Nicht hilfreich"),
+                t("j42c88b6", "Experimenteller KI-Anmerkungsverfasser"),
                 t("e5be8156", "Status der Anmerkungen durch Open-Source-Algorithmus berechnet"),
                 t("fca23c42", "Genügend Mitwirkende mit unterschiedlichen Sichtweisen sind sich einig, dass diese Anmerkung hilfreich ist, deshalb wird sie als Kontext zu diesem Post angezeigt."),
                 t("hef420c2", "Diese Notiz wurde noch nicht von genügend Mitwirkenden mit unterschiedlichen Sichtweisen bewertet."),
@@ -5880,11 +5883,11 @@
                 t("ab1b3d38", "Anfragedaten für Anmerkungen sind noch nicht verfügbar"),
                 t("c43fb933", "Vereinbarungen und Richtlinien von X für Entwickler"),
                 t("af781666", "Was halten Leute davon?"),
-                t("a1f414ee", "Meinung teilen"),
-                t("ed88e742", "Link zum Thema kopieren"),
+                t("a1f414ee", "Meinung teilen");
+            t("ed88e742", "Link zum Thema kopieren"),
                 t("h92fe1be", "Leider ist Kollektive Anmerkungen zurzeit für dich nicht verfügbar."),
-                t("f0dc1434", "Kollektive Anmerkungen ist derzeit nur in den USA verfügbar");
-            t("f8fc0b48", "Ordner erstellen"),
+                t("f0dc1434", "Kollektive Anmerkungen ist derzeit nur in den USA verfügbar"),
+                t("f8fc0b48", "Ordner erstellen"),
                 t("c14bcdde", "Lesezeichen durchsuchen"),
                 t("e9c65c4a", "Lesezeichensuche"),
                 t("b92a21d9", function (e) {
@@ -6886,11 +6889,11 @@
                 t("j3d242ce", "Ungültiger Bereich"),
                 t("f4d07bd2", "Nimm optionale Details auf, damit Kandidat*innen ihre Rollen mit der Suche leichter entdecken können."),
                 t("b8cbb51a", "Jobzusammenfassung"),
-                t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können."),
-                t("b075c68a", "Job bearbeiten"),
+                t("bda6881e", "Dieser Job wurde aus deinem Applicant Tracking System (ATS) importiert. Beachte bitte, dass nur bestimmte Felder geändert werden können.");
+            t("b075c68a", "Job bearbeiten"),
                 t("d4b6a6e0", "Profil-Spotlight"),
-                t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen.");
-            t("af1cfd46", "ATS-Integration"),
+                t("j2dd3686", "Bestimmte Jobs über meinen Posts anzeigen."),
+                t("af1cfd46", "ATS-Integration"),
                 t("d6fa2944", "Wenn du deine Integration löschst, werden deine importierten Jobs dadurch nicht gelöscht."),
                 t("h99f11fa", "Integration löschen"),
                 t("eef1ae76", "Derzeit verbunden"),
@@ -7868,10 +7871,7 @@
                 t("d7b8387e", "Wenn du bereits gekündigt hast, gibt es nichts mehr zu tun. Dein Abonnement läuft am Ende des Abrechnungszeitraums automatisch aus."),
                 t("f4166d9a", "Du möchtest dein Abonnement kündigen?"),
                 t("b74ff5fc", "Wenn du kündigst, läuft dein Abonnement automatisch am Ende des Abrechnungszeitraums aus."),
-                t("ee9efbc8", "Weiter zur Kündigung"),
-                t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
-                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen."),
-                t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen.");
+                t("ee9efbc8", "Weiter zur Kündigung");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7910,9 +7910,12 @@
                     d(e, n)
                 );
             }
-            t("i5f14be7", function (e) {
-                return "Willkommen zurück, " + e.displayName;
-            }),
+            t("c5d9c77a", "Es sieht so aus, als ob es einen kleinen Fehler gab. Aber keine Sorge, es ist nicht deine Schuld. Schließe dieses Fenster und versuche es noch einmal."),
+                t("jda53c24", "Du kannst dein Abonnement über den Apple App Store kündigen."),
+                t("g0a7a53e", "Du kannst dein Abonnement über den Google Play Store kündigen."),
+                t("i5f14be7", function (e) {
+                    return "Willkommen zurück, " + e.displayName;
+                }),
                 t("a76d58ba", "Statistiken zur Werbung"),
                 t("eccd0e1a", "Statistiken für die Organisation"),
                 t("deea1708", "Möchtest du Statistiken für alle deine X Accounts anzeigen?"),
@@ -8908,11 +8911,11 @@
                 }),
                 t("b0b22805", function (e) {
                     return e.advertiserName + " besuchen";
-                }),
-                t("c67e71aa", "Jetzt ansehen"),
+                });
+            t("c67e71aa", "Jetzt ansehen"),
                 t("a6ada13e", "Jetzt kaufen"),
-                t("j0f12222", "Mehr anzeigen");
-            t("f569f7c8", "Zu Website wechseln"),
+                t("j0f12222", "Mehr anzeigen"),
+                t("f569f7c8", "Zu Website wechseln"),
                 t("j0c6772a", "Website besuchen"),
                 t("f73003aa", "Video wird nach der Anzeige abgespielt"),
                 t("b3112b8a", "Überspringen"),
@@ -13381,4 +13384,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.ddd2882a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.8a97370a.js.map

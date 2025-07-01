@@ -128,7 +128,7 @@
                 E = a(794966),
                 w = (a(585488), a(351743)),
                 L = a.n(w),
-                S = a(401705),
+                S = a(451566),
                 Z = a(782642),
                 F = a(535338);
             const G = d().hba0547a,
@@ -451,4 +451,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.7e981fba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.fee07afa.js.map

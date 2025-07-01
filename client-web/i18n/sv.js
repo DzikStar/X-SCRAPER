@@ -13,10 +13,18 @@
                 var t, r;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Medlem"),
+                t("hd8c22d2", "Mod."),
+                t("c3153100", "Admin"),
                 t("jb38600c", "Inget"),
                 t("f07eac34", "Parodikonto"),
                 t("a41b5c2e", "Fankonto"),
                 t("i428ea62", "Kommentarskonto"),
+                t("jd859c9c", "Du har tagits bort från detta område."),
+                t("cfbea177", function (e) {
+                    return "Område som tillhör " + e.name;
+                }),
+                t("ab4fc8bc", "Område"),
                 t("ac0d27be", "Det här kontot har stängts av tillfälligt."),
                 t("bcee7444", "Kontouppdateringen misslyckades."),
                 t("e0cbf77a", "Lägg till telefon"),
@@ -57,9 +65,6 @@
                 t("h1cbdd30", "Uppdatera sidan och försök igen."),
                 t("a5077d3e", "Uppdatera"),
                 t("b2648ba4", "Ditt konto kanske inte får göra detta. Uppdatera sidan och försök igen."),
-                t("bcd6bb0e", "Medlem"),
-                t("hd8c22d2", "Mod."),
-                t("c3153100", "Admin"),
                 t("fa9adac1", function (e) {
                     return "Sök efter ”" + e.query + "”";
                 }),
@@ -72,19 +77,12 @@
                 t("c64e46f8", "Den här medlemmen togs bort från gruppen, så hens inlägg har dolts."),
                 t("b3f1cb42", "En moderator har dolt detta inlägg eftersom det bryter mot en gruppregel."),
                 t("cbd2dc9c", "Du rapporterade detta inlägg."),
-                t("cfbea177", function (e) {
-                    return "Område som tillhör " + e.name;
-                }),
-                t("ab4fc8bc", "Område"),
-                t("jd859c9c", "Du har tagits bort från detta område."),
                 t("c60ed9b0", "Du är inte behörig att delta i detta område."),
                 t("d8227e16", "Du är inte behörig att skapa detta område"),
                 t("f027fed8", "Bild i bild"),
                 t("hd50e064", "Inte nu"),
                 t("i76d640e", "Vi behöver ditt tillstånd"),
                 t("fdaa0be8", "Om du vill prata i det här området måste du ge X tillgång till din mikrofon. Kolla webbläsarens inställningar. "),
-                t("gea6cc1a", "Vill du verkligen göra detta?"),
-                t("hb568af4", "Ignorera"),
                 t("f7c8617a", "Vad är klipp?"),
                 t("ecc7d2ec", "Klipp är sparade ögonblick som alla i området kan skapa och dela med sig av. Alla klipp upphör att gälla efter 30 dagar."),
                 t("d575ee02", "Vilka kan tillverka klipp?"),
@@ -102,16 +100,6 @@
                 t("jf03b37c", "Lyssna på inspelningen när du vill. Du kan även dela den med ett inlägg."),
                 t("fd05976b", "Läs mer"),
                 t("b4f91a8a", "Inspelning pågår"),
-                t("gb418012", "Välkommen till Områden"),
-                t("fec3c1e0", "Där livesamtal med ljud sker"),
-                t("j32eb4f8", "Lägg till upp till tio talare"),
-                t("j4f133a6", "Du kan bjuda in vem som helst på X att tala."),
-                t("ed434ac6", "Områden är offentliga – alla kan delta"),
-                t("e0025688", "Ditt Område, dina regler"),
-                t("c1bc6f86", "Värden bestämmer vilka som får prata. Du kan även ta bort personer som du inte vill ha i ditt Område."),
-                t("b0bc8330", "Du kan även blockera och anmäla folk i ett område."),
-                t("cb17a0f3", "Läs mer"),
-                t("dcd77941", "Läs mer"),
                 t("cc724cb0", "Skapa klipp"),
                 t("cfd2f35e", "Avbryt"),
                 t("c1df579e", "Nästa"),
@@ -125,6 +113,16 @@
                 t("a9ba3e28", "Privat information"),
                 t("d5519f4a", "Kränkande beteende"),
                 t("eb55363c", "Detta område har anmälts"),
+                t("gb418012", "Välkommen till Områden"),
+                t("fec3c1e0", "Där livesamtal med ljud sker"),
+                t("j32eb4f8", "Lägg till upp till tio talare"),
+                t("j4f133a6", "Du kan bjuda in vem som helst på X att tala."),
+                t("ed434ac6", "Områden är offentliga – alla kan delta"),
+                t("e0025688", "Ditt Område, dina regler"),
+                t("c1bc6f86", "Värden bestämmer vilka som får prata. Du kan även ta bort personer som du inte vill ha i ditt Område."),
+                t("b0bc8330", "Du kan även blockera och anmäla folk i ett område."),
+                t("cb17a0f3", "Läs mer"),
+                t("dcd77941", "Läs mer"),
                 t("i65de934", "Du lyssnar anonymt"),
                 t("b1037050", "Hantera område"),
                 t("ic107434", "Slå på kameran"),
@@ -903,10 +901,10 @@
                 t("bf9e181b", "Läs mer"),
                 t("e8e39f95", "Läs mer"),
                 t("e126dd3f", "Läs mer"),
-                t("i821844f", "Läs mer");
-            t("b0abbb17", "Läs mer"),
-                t("e7e0d88b", "Läs mer"),
-                t("i560665f", "Läs mer"),
+                t("i821844f", "Läs mer"),
+                t("b0abbb17", "Läs mer"),
+                t("e7e0d88b", "Läs mer");
+            t("i560665f", "Läs mer"),
                 t("f6e774d9", "Läs mer"),
                 t("h486f755", "Läs mer"),
                 t("bab41dab", "Läs mer"),
@@ -1122,6 +1120,7 @@
                 t("dbb51952", "Vill du skydda dina inlägg"),
                 t("de735de6", "Detta gör att enbart dina följare på X ser dem."),
                 t("c5d4192a", "Skydda"),
+                t("gea6cc1a", "Vill du verkligen göra detta?"),
                 t("d9ddba70", "Grupper är offentliga, så om du skyddar ditt konto döljs dina tidigare inlägg. Du kommer även inte att kunna göra inlägg i gruppen förrän ditt konto blir offentligt igen."),
                 t("f527b322", "Skydda mitt konto"),
                 t("d165c992", "Alla kan tagga dig"),
@@ -1317,10 +1316,11 @@
                 t("a02d1657", function (e) {
                     return "Kör kod" + e.ttc_tool_usage_card;
                 }),
-                t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
-                t("c43ef93e", "Browsing web page"),
+                t("aa9d42c0", "Söker på webben"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
+                t("c43ef93e", "Tittar på webbsidan"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Kör kod"),
                 t("ead81122", "Något gick fel. Uppdatera för att återansluta eller försök igen."),
                 t("f808a13a", "Gränsen har överskridits. Försök igen om en liten stund."),
@@ -1368,11 +1368,11 @@
                 t("e0bffbf8", "Om automatisk översättning"),
                 t("e839db3a", "Avfärda"),
                 t("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "Översätt " + e.language + " automatiskt";
                 }),
-                t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("f9317b98", "language settings"),
-                t("hba0547a", "Unable to update settings. Please try again later."),
+                t("c60b9e5c", "Ändringar träder i kraft för nyinläst material."),
+                t("f9317b98", "språkinställningar"),
+                t("hba0547a", "Det går inte att uppdatera inställningarna. Försök igen senare."),
                 t("d4c339b9", function (e) {
                     return "Inlägg av " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1814,6 +1814,7 @@
                 t("g00b4c55", function (e) {
                     return "Dela @" + e.screenName + " via …";
                 }),
+                t("hb568af4", "Ignorera"),
                 t("bb1cbeb6", "Sluta ignorera"),
                 t("h2f62206", "Ignorerar användaren"),
                 t("h59f52ee", "Ignorerad."),
@@ -1914,11 +1915,11 @@
                 t("ef1649e2", "X – Kortkommandon"),
                 t("aefd89c8", "Navigering"),
                 t("cafdefb2", "Åtgärder"),
-                t("dda42cf2", "Kolumner och lekar"),
-                t("e8a12604", "Ange en bildtext (valfritt)");
-            t("eabf2209", function (e) {
-                return "GIF-filen kommer från " + e.providerName;
-            }),
+                t("dda42cf2", "Kolumner och lekar");
+            t("e8a12604", "Ange en bildtext (valfritt)"),
+                t("eabf2209", function (e) {
+                    return "GIF-filen kommer från " + e.providerName;
+                }),
                 t("a613e720", "Kopiera länken till en GIF"),
                 t("aeca1239", function (e) {
                     return "Fet" + e.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 t("e06b864c", "Du verkar gilla det här samtalet"),
                 t("a078ff70", "Vill du se mer innehåll från personerna du pratade med i den här tråden? Börja utforska innehåll från nya konton."),
                 t("cb80300e", "Gå till hemtidslinjen"),
-                t("ea5cd098", "Gå till trendande"),
-                t("c67e3fc2", "Hemtidslinje");
-            t("d601fc20", "Senaste"),
+                t("ea5cd098", "Gå till trendande");
+            t("c67e3fc2", "Hemtidslinje"),
+                t("d601fc20", "Senaste"),
                 t("j43f99be", "Relevans"),
                 t("ad6e11ac", "Sortera svar på"),
                 t("b2311b70", "Du kan inte välja detta"),
@@ -3894,13 +3895,13 @@
                 }),
                 t("f5c7aaa7", function (e) {
                     return "värd" + r(e.count, "", "ar");
-                }),
-                t("fc56c8b1", function (e) {
-                    return "medvärd" + r(e.count, "", "ar");
                 });
-            t("iba0f45d", function (e) {
-                return "talare";
+            t("fc56c8b1", function (e) {
+                return "medvärd" + r(e.count, "", "ar");
             }),
+                t("iba0f45d", function (e) {
+                    return "talare";
+                }),
                 t("dc066955", function (e) {
                     return "lyssnare";
                 }),
@@ -4930,9 +4931,9 @@
                 t("ff95a9cc", "Video-id"),
                 t("a97e358e", "Videolänk"),
                 t("e10e8b46", "Visa bara videorna från de senaste 100 dagarna."),
-                t("ba37f6da", "Videoöversikt"),
-                t("f19846b2", "Videominiatyr");
-            t("ccd6f4a8", "Videotitel"),
+                t("ba37f6da", "Videoöversikt");
+            t("f19846b2", "Videominiatyr"),
+                t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Antalet gånger din video har setts."),
                 t("a532072a", "Tittare"),
                 t("d9508ab0", "visningar"),
@@ -5550,6 +5551,7 @@
                 t("bd7eb888", "Se alla anmärkningar om detta inlägg"),
                 t("i97b83f6", "Det gick inte att skicka in din överklagan, försök igen."),
                 t("a038ab9a", "Översätt anmärkningen"),
+                t("icdb6d74", "Föreslaget av en experimentell AI-medarbetare som svarar på förfrågningar om en anmärkning. Likt alla andra medarbetare kan AI begå misstag. Verifiera att det den säger är korrekt."),
                 t("i606fc4c", "Om överklaganden i Gruppanmärkningar"),
                 t("b664c554", "Begär ytterligare granskning av bidragsgivare"),
                 t("ab66e1f2", "Så här fungerar det:"),
@@ -5565,6 +5567,7 @@
                 t("ge25848a", "Aktuell status"),
                 t("d6db34cc", "Behöver fler omdömen"),
                 t("ce8b505e", "Inte till hjälp"),
+                t("j42c88b6", "Experimentell AI-anmärkningsskribent"),
                 t("e5be8156", "Anmärkningsstatusen har beräknats av en algoritm med öppen källkod"),
                 t("fca23c42", "Tillräckligt många medarbetare med olika perspektiv höll med om att denna anmärkning är till hjälp, så den visas som sammanhang vid inlägget."),
                 t("hef420c2", "Den här anteckningen har ännu inte bedömts av tillräckligt många medverkande med olika perspektiv."),
@@ -5880,11 +5883,11 @@
                 t("ab1b3d38", "Det finns inga data om anmärkningsförfrågningar än"),
                 t("c43fb933", "avtalet och policyn för X-utvecklare"),
                 t("af781666", "Vad tänker folk?"),
-                t("a1f414ee", "Berätta vad du tänker"),
-                t("ed88e742", "Kopiera länken till ämnet"),
+                t("a1f414ee", "Berätta vad du tänker");
+            t("ed88e742", "Kopiera länken till ämnet"),
                 t("h92fe1be", "Du kan tyvärr inte använda Gruppanmärkningar nu."),
-                t("f0dc1434", "Gruppanmärkningar är nu bara tillgängligt i USA");
-            t("f8fc0b48", "Skapa en mapp"),
+                t("f0dc1434", "Gruppanmärkningar är nu bara tillgängligt i USA"),
+                t("f8fc0b48", "Skapa en mapp"),
                 t("c14bcdde", "Sök bokmärken"),
                 t("e9c65c4a", "Bokmärkessökning"),
                 t("b92a21d9", function (e) {
@@ -6886,11 +6889,11 @@
                 t("j3d242ce", "Ogiltigt intervall"),
                 t("f4d07bd2", "Ta med valfria detaljer för att göra det enklare för sökande att upptäcka dina roller genom att söka."),
                 t("b8cbb51a", "Jobböversikt"),
-                t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra."),
-                t("b075c68a", "Redigera jobbet"),
+                t("bda6881e", "Detta jobb har importerats från ditt jobbansökningssystem. Observera att enbart specifika fält går att ändra.");
+            t("b075c68a", "Redigera jobbet"),
                 t("d4b6a6e0", "Profilspotlight"),
-                t("j2dd3686", "Visa upp vissa jobb ovanför mina inlägg");
-            t("af1cfd46", "ATS-integration"),
+                t("j2dd3686", "Visa upp vissa jobb ovanför mina inlägg"),
+                t("af1cfd46", "ATS-integration"),
                 t("d6fa2944", "Om du raderar integrationen raderas inte de importerade jobben."),
                 t("h99f11fa", "Radera integrationen"),
                 t("eef1ae76", "Nu anslutna"),
@@ -7400,10 +7403,10 @@
                 t("d94f12b6", "Försök söka efter notiser, integritet och annat."),
                 t("ba8f6f82", "Sökinställningar"),
                 t("ibf92e4a", "Betalningen lyckades"),
-                t("bdf0fb06", "Your subscription has been activated."),
+                t("bdf0fb06", "Din prenumeration har aktiverats."),
                 t("ddfd6718", "Betalningen misslyckades"),
                 t("d42fa852", "Det gick inte att bearbeta betalningen. Försök igen."),
-                t("g055a9ce", "Open 𝕏 App"),
+                t("g055a9ce", "Öppna 𝕏-appen"),
                 t("g931a6e5", function (e) {
                     return "Du följer " + e.topic;
                 }),
@@ -7868,10 +7871,7 @@
                 t("d7b8387e", "Om du redan har sagt upp prenumerationen behöver du inte göra mer. Prenumerationen löper ut automatiskt i slutet av faktureringscykeln."),
                 t("f4166d9a", "Vill du säga upp prenumerationen?"),
                 t("b74ff5fc", "Om du säger upp prenumerationen kommer den att upphöra automatiskt i slutet av faktureringscykeln."),
-                t("ee9efbc8", "Fortsätt till uppsägningen"),
-                t("c5d9c77a", "Något verkar ha gått lite på tok. Men oroa dig inte, det är inte ditt fel. Stäng det här fönstret och försök igen."),
-                t("jda53c24", "Du kan säga upp prenumerationen via Apple App Store."),
-                t("g0a7a53e", "Du kan säga upp prenumerationen via Google Play Butik.");
+                t("ee9efbc8", "Fortsätt till uppsägningen");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7910,9 +7910,12 @@
                     d(e, a)
                 );
             }
-            t("i5f14be7", function (e) {
-                return "Välkommen tillbaka, " + e.displayName;
-            }),
+            t("c5d9c77a", "Något verkar ha gått lite på tok. Men oroa dig inte, det är inte ditt fel. Stäng det här fönstret och försök igen."),
+                t("jda53c24", "Du kan säga upp prenumerationen via Apple App Store."),
+                t("g0a7a53e", "Du kan säga upp prenumerationen via Google Play Butik."),
+                t("i5f14be7", function (e) {
+                    return "Välkommen tillbaka, " + e.displayName;
+                }),
                 t("a76d58ba", "Annonsanalys"),
                 t("eccd0e1a", "Organisationsanalys"),
                 t("deea1708", "Vill du se analys för alla din konton på X?"),
@@ -8908,11 +8911,11 @@
                 }),
                 t("b0b22805", function (e) {
                     return "Besök " + e.advertiserName;
-                }),
-                t("c67e71aa", "Titta nu"),
+                });
+            t("c67e71aa", "Titta nu"),
                 t("a6ada13e", "Handla nu"),
-                t("j0f12222", "Se mer");
-            t("f569f7c8", "Besök webbplatsen"),
+                t("j0f12222", "Se mer"),
+                t("f569f7c8", "Besök webbplatsen"),
                 t("j0c6772a", "Besök webbplatsen"),
                 t("f73003aa", "Videon spelas efter annonsen"),
                 t("b3112b8a", "Hoppa över"),
@@ -10155,7 +10158,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok översätter automatiskt utifrån hur du använder X och ", ". Du kan även växla inställningarna för automatisk översättning nedan."];
                             },
                         },
                         {
@@ -13368,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.aa8c4c8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.f2b5e40a.js.map

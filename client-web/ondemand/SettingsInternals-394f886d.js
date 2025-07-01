@@ -16,8 +16,8 @@
                 p = n(111677),
                 u = n.n(p),
                 m = n(516951),
-                _ = n(290402),
-                g = n(443781),
+                g = n(290402),
+                _ = n(443781),
                 f = n(652904),
                 b = n(503229),
                 S = n(829824),
@@ -37,8 +37,8 @@
             const v = u().e8f57e08,
                 A = u().f1768324,
                 D = u().ja94f34e,
-                I = u().e8f57e08,
-                F = u().bd73f7e6,
+                F = u().e8f57e08,
+                I = u().bd73f7e6,
                 B = u().a55db872,
                 H = u().ddbc3288,
                 R = u().ae5339a0,
@@ -47,9 +47,9 @@
                 N = u().f1d46fd6,
                 V = u().cfd2f35e,
                 W = u().ib3357a6,
-                j = u().f2f9628e,
+                M = u().f2f9628e,
                 O = u().f6c8ccc8,
-                M = u().ed012c88,
+                j = u().ed012c88,
                 q = u().aa023546,
                 G = u().af7d89e6,
                 Q = u().ced77194,
@@ -63,7 +63,7 @@
                         (this._render = () => {
                             const { allowDeviceAccess: e, allowLocationHistoryUse: t, allowPartnerships: n, allowPersonalization: p } = this.props.settings,
                                 { showDisableEUConfirmation: u, showSwitchAllConfirmation: m } = this.state;
-                            return r.createElement(s.Z, null, r.createElement(s.Z, null, r.createElement(a.ZP, { color: "gray700", size: "subtext2", style: [w.Z.infoText, w.Z.bottomBorder] }, this._isLoggedIn ? A : D)), r.createElement(o.Z, { checked: this._getSwitchAllValue(), helpText: F, key: "switchAll", label: I, name: "switchAll", onChange: this._handleSwitchAllChanged, type: "switch" }), r.createElement(i.Z, null), r.createElement(c.Z, { text: B }), r.createElement(o.Z, { checked: p, helpText: j, key: "allowPersonalization", label: W, learnMoreLink: (0, l.ju)("https://support.x.com/articles/20170405"), name: "allowPersonalization", onChange: this._handleBooleanChanged }), r.createElement(o.Z, { checked: e, helpText: M, key: "allowDeviceAccess", label: O, learnMoreLink: (0, l.ju)("https://support.x.com/articles/20175257"), name: "allowDeviceAccess", onChange: this._handleBooleanChanged }), this._isLoggedIn && r.createElement(o.Z, { checked: t, helpText: G, key: "allowLocationHistoryUse", label: q, name: "allowLocationHistoryUse", onChange: this._handleBooleanChanged }), r.createElement(i.Z, null), r.createElement(c.Z, { text: H }), !this.context.featureSwitches.isTrue("ucpd_enabled") && this._renderCookiePersonalizationSetting(), r.createElement(o.Z, { checked: n, helpText: K, key: "allowPartnerships", label: J, learnMoreLink: (0, l.ju)("https://support.x.com/articles/20175379"), name: "allowPartnerships", onChange: this._handleBooleanChanged }), this._isLoggedIn && r.createElement(d.Z, { label: R, link: "/settings/your_twitter_data" }), u && r.createElement(h.Z, { cancelButtonLabel: V, confirmButtonLabel: N, onCancel: this._handleCancelDisableEU, onConfirm: this._handleDisableEUCookies, text: U }), m && r.createElement(h.Z, { confirmButtonLabel: z.confirmButtonLabel, headline: z.headline, onCancel: this._handleCancelSwitchAll, onConfirm: this._handleConfirmSwitchAll, text: z.text }));
+                            return r.createElement(s.Z, null, r.createElement(s.Z, null, r.createElement(a.ZP, { color: "gray700", size: "subtext2", style: [w.Z.infoText, w.Z.bottomBorder] }, this._isLoggedIn ? A : D)), r.createElement(o.Z, { checked: this._getSwitchAllValue(), helpText: I, key: "switchAll", label: F, name: "switchAll", onChange: this._handleSwitchAllChanged, type: "switch" }), r.createElement(i.Z, null), r.createElement(c.Z, { text: B }), r.createElement(o.Z, { checked: p, helpText: M, key: "allowPersonalization", label: W, learnMoreLink: (0, l.ju)("https://support.x.com/articles/20170405"), name: "allowPersonalization", onChange: this._handleBooleanChanged }), r.createElement(o.Z, { checked: e, helpText: j, key: "allowDeviceAccess", label: O, learnMoreLink: (0, l.ju)("https://support.x.com/articles/20175257"), name: "allowDeviceAccess", onChange: this._handleBooleanChanged }), this._isLoggedIn && r.createElement(o.Z, { checked: t, helpText: G, key: "allowLocationHistoryUse", label: q, name: "allowLocationHistoryUse", onChange: this._handleBooleanChanged }), r.createElement(i.Z, null), r.createElement(c.Z, { text: H }), !this.context.featureSwitches.isTrue("ucpd_enabled") && this._renderCookiePersonalizationSetting(), r.createElement(o.Z, { checked: n, helpText: K, key: "allowPartnerships", label: J, learnMoreLink: (0, l.ju)("https://support.x.com/articles/20175379"), name: "allowPartnerships", onChange: this._handleBooleanChanged }), this._isLoggedIn && r.createElement(d.Z, { label: R, link: "/settings/your_twitter_data" }), u && r.createElement(h.Z, { cancelButtonLabel: V, confirmButtonLabel: N, onCancel: this._handleCancelDisableEU, onConfirm: this._handleDisableEUCookies, text: U }), m && r.createElement(h.Z, { confirmButtonLabel: z.confirmButtonLabel, headline: z.headline, onCancel: this._handleCancelSwitchAll, onConfirm: this._handleConfirmSwitchAll, text: z.text }));
                         }),
                         (this._handleCancelSwitchAll = () => {
                             this.setState({ showSwitchAllConfirmation: !1 });
@@ -115,7 +115,7 @@
                 }
                 render() {
                     const { fetchStatus: e, location: t } = this.props;
-                    return r.createElement(f.Z, null, r.createElement(E.Z, { location: t, title: v }, r.createElement(S.Z, null, r.createElement(_.Z, { fetchStatus: e, onRequestRetry: this._handleFetchPreferences, render: this._render }))));
+                    return r.createElement(f.Z, null, r.createElement(E.Z, { location: t, title: v }, r.createElement(S.Z, null, r.createElement(g.Z, { fetchStatus: e, onRequestRetry: this._handleFetchPreferences, render: this._render }))));
                 }
                 _renderCookiePersonalizationSetting() {
                     const { isEUUser: e } = this.props,
@@ -133,7 +133,7 @@
                     return "some" === t || "all" === t;
                 }
             }
-            X.contextType = g.rC;
+            X.contextType = _.rC;
             const ee = k((0, b.Z)(X));
         },
         754393: (e, t, n) => {
@@ -170,15 +170,15 @@
                 p = n(443781),
                 u = n(652904),
                 m = n(264922),
-                _ = n(71620),
-                g = n(668214),
+                g = n(71620),
+                _ = n(668214),
                 f = n(257166),
                 b = n(38562),
                 S = n(446418),
                 E = n(601576);
-            const w = (0, g.Z)()
+            const w = (0, _.Z)()
                     .propsFromState(() => ({ fetchStatus: f.selectFetchStatus, phones: f.selectPhoneNumbers, loginVerificationSettings: S.vi }))
-                    .propsFromActions(() => ({ addToast: E.fz, createLocalApiErrorHandler: (0, _.zr)("SETTINGS_PHONE_SCREEN"), fetchDevices: f.fetchDevices, fetchSettings: b.wv, removeDevice: f.removeDevice, fetchLoginVerificationSettings: S.zl }))
+                    .propsFromActions(() => ({ addToast: E.fz, createLocalApiErrorHandler: (0, g.zr)("SETTINGS_PHONE_SCREEN"), fetchDevices: f.fetchDevices, fetchSettings: b.wv, removeDevice: f.removeDevice, fetchLoginVerificationSettings: S.zl }))
                     .withAnalytics({ page: "settings", section: "phone" }),
                 C = l().cb841d56,
                 Z = l().dc013356,
@@ -191,8 +191,8 @@
                 v = l().f0977f52,
                 A = l().fe8b565a,
                 D = l().hf45b8d4,
-                I = { headline: x, text: A, confirmButtonLabel: v },
-                F = { headline: x, text: D, confirmButtonLabel: v };
+                F = { headline: x, text: A, confirmButtonLabel: v },
+                I = { headline: x, text: D, confirmButtonLabel: v };
             class B extends r.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -247,7 +247,7 @@
                         loginVerificationSettings: { methods: e, twoFactorAuthEnabled: t },
                     } = this.props;
                     let n = P;
-                    return t && "Sms" in e && (n = "Totp" in e || "U2fSecurityKey" in e ? F : I), r.createElement(d.Z, { confirmationSheetConfirmButtonLabel: n.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: n.headline, confirmationSheetText: n.text, label: T, onConfirmationSheetConfirm: this._handleRemove, withBottomBorder: !1 });
+                    return t && "Sms" in e && (n = "Totp" in e || "U2fSecurityKey" in e ? I : F), r.createElement(d.Z, { confirmationSheetConfirmButtonLabel: n.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: n.headline, confirmationSheetText: n.text, label: T, onConfirmationSheetConfirm: this._handleRemove, withBottomBorder: !1 });
                 }
             }
             B.contextType = p.rC;
@@ -267,9 +267,9 @@
                 p = n(668214),
                 u = n(38562),
                 m = n(395042),
-                _ = n(919022);
-            const g = (0, p.Z)()
-                    .propsFromState(() => ({ viewerUser: _.ZP.selectViewerUser }))
+                g = n(919022);
+            const _ = (0, p.Z)()
+                    .propsFromState(() => ({ viewerUser: g.ZP.selectViewerUser }))
                     .propsFromActions(() => ({ clearUsernameAvailability: m.Zc, createLocalApiErrorHandler: (0, h.zr)("SETTINGS_SCREEN_NAME_SCREEN"), updateSettings: u.VP }))
                     .withAnalytics({ page: "settings", section: "screen_name" }),
                 f = o().je506a60,
@@ -277,8 +277,8 @@
                 S = o().c0fcb08a,
                 E = ({ clearUsernameAvailability: e, createLocalApiErrorHandler: t, history: n, location: a, updateSettings: o, viewerUser: h }) => {
                     const { featureSwitches: p, userClaims: u } = r.useContext(i.rC),
-                        [m, _] = r.useState(void 0),
-                        [g, E] = r.useState(!1),
+                        [m, g] = r.useState(void 0),
+                        [_, E] = r.useState(!1),
                         w = r.useCallback(() => {
                             n.goBack({ backLocation: "/settings" });
                         }, [n]),
@@ -298,12 +298,12 @@
                             e && t ? E(!0) : C();
                         }, [p, u, C]),
                         y = r.useCallback((e) => {
-                            _(e);
+                            g(e);
                         }, []),
                         L = m && h && m !== h.screen_name;
-                    return r.createElement(c.Z, null, g ? r.createElement(s.Z, { headline: b, onCancel: w, onConfirm: C, testID: "screenNameConfirmationSheet", text: S }) : null, r.createElement(d.Z, { location: a, onSubmit: Z, submitDisabled: !L, title: f }, r.createElement(l.Z, { onScreenNameChanged: y })));
+                    return r.createElement(c.Z, null, _ ? r.createElement(s.Z, { headline: b, onCancel: w, onConfirm: C, testID: "screenNameConfirmationSheet", text: S }) : null, r.createElement(d.Z, { location: a, onSubmit: Z, submitDisabled: !L, title: f }, r.createElement(l.Z, { onScreenNameChanged: y })));
                 },
-                w = g(E);
+                w = _(E);
         },
         650667: (e, t, n) => {
             n.r(t), n.d(t, { SearchSettingsPage: () => x, default: () => v });
@@ -319,12 +319,12 @@
                 p = n(71620),
                 u = n(668214),
                 m = n(204744),
-                _ = n(123072),
-                g = n(601576),
+                g = n(123072),
+                _ = n(601576),
                 f = n(774006);
             const b = (0, u.Z)()
-                    .propsFromState(() => ({ fetchStatus: _.UD, lastSearchQuery: m.YB, settings: _.xN }))
-                    .propsFromActions(() => ({ addToast: g.fz, clearAllSearchResults: f.u, createLocalApiErrorHandler: (0, p.zr)("SAFE_SEARCH_SCREEN"), fetchSettings: _.bP, updateSettings: _.AW }))
+                    .propsFromState(() => ({ fetchStatus: g.UD, lastSearchQuery: m.YB, settings: g.xN }))
+                    .propsFromActions(() => ({ addToast: _.fz, clearAllSearchResults: f.u, createLocalApiErrorHandler: (0, p.zr)("SAFE_SEARCH_SCREEN"), fetchSettings: g.bP, updateSettings: g.AW }))
                     .withAnalytics({ page: "settings", section: "search" }),
                 S = "searchSettings-hideSensitiveContent",
                 E = "searchSettings-hideMutedOrBlockedAccounts",
@@ -376,7 +376,7 @@
             const v = b(x);
         },
         80697: (e, t, n) => {
-            n.r(t), n.d(t, { SettingsSecurityScreen: () => F, default: () => B, loginVerificationLabel: () => w, passwordResetProtectLabel: () => y });
+            n.r(t), n.d(t, { SettingsSecurityScreen: () => I, default: () => B, loginVerificationLabel: () => w, passwordResetProtectLabel: () => y });
             var r = n(202784),
                 s = n(943401),
                 a = n(420412),
@@ -389,13 +389,13 @@
                 p = n(652904),
                 u = n(293115),
                 m = n(472039),
-                _ = n(71620),
-                g = n(668214),
+                g = n(71620),
+                _ = n(668214),
                 f = n(38562);
-            const b = (0, g.Z)()
+            const b = (0, _.Z)()
                     .propsFromState(() => ({ settings: f.l4 }))
                     .adjustStateProps(({ settings: e }) => ({ protectPasswordReset: e.protect_password_reset }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("SETTINGS_SECURITY_SCREEN"), updateSettings: f.VP })),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("SETTINGS_SECURITY_SCREEN"), updateSettings: f.VP })),
                 S = d().j95edf76,
                 E = d().a2197726,
                 w = d().dd703318,
@@ -410,8 +410,8 @@
                 v = d().dc096238,
                 A = d().i859a9d4,
                 D = { page: "settings", section: "security" },
-                I = Object.freeze({});
-            class F extends r.Component {
+                F = Object.freeze({});
+            class I extends r.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._handleProtectPasswordResetChanged = (e, t) => {
@@ -422,12 +422,12 @@
                                 { data: r } = this.state;
                             n({ ...r, current_password: e }).then(
                                 () => {
-                                    this.setState({ showPasswordDialog: !1, data: I });
+                                    this.setState({ showPasswordDialog: !1, data: F });
                                 },
                                 t({ showToast: !0 }),
                             );
                         }),
-                        (this.state = { showPasswordDialog: !1, data: I });
+                        (this.state = { showPasswordDialog: !1, data: F });
                 }
                 render() {
                     const { location: e } = this.props,
@@ -448,11 +448,11 @@
                     return this.context.featureSwitches.isTrue("identity_verification_passkey_settings_enabled") ? r.createElement(r.Fragment, null, r.createElement(o.Z, { text: T }), r.createElement(i.Z, { label: P, link: "/settings/account/passkey" }), r.createElement(s.Z, { description: k, learnMoreLabel: A, learnMoreLink: "https://help.x.com/managing-your-account/how-to-use-passkey" })) : null;
                 }
             }
-            F.contextType = h.rC;
-            const B = b(F);
+            I.contextType = h.rC;
+            const B = b(I);
         },
         996703: (e, t, n) => {
-            n.r(t), n.d(t, { SessionDetailPage: () => D, default: () => I });
+            n.r(t), n.d(t, { SessionDetailPage: () => D, default: () => F });
             var r = n(202784),
                 s = n(325686),
                 a = n(457311),
@@ -465,8 +465,8 @@
                 p = n(947135),
                 u = n(290402),
                 m = n(652904),
-                _ = n(264922),
-                g = n(972934),
+                g = n(264922),
+                _ = n(972934),
                 f = n(71620),
                 b = n(668214),
                 S = n(715684),
@@ -508,7 +508,7 @@
                         }),
                         (this._render = () => {
                             const { session: e } = this.props;
-                            return e ? r.createElement(s.Z, null, r.createElement(g.Z, { session: e, withBottomBorder: !1, withSummary: !0 }), this._renderDateAndTime(e), this._renderLocation(e)) : r.createElement(a.Z, { header: A });
+                            return e ? r.createElement(s.Z, null, r.createElement(_.Z, { session: e, withBottomBorder: !1, withSummary: !0 }), this._renderDateAndTime(e), this._renderLocation(e)) : r.createElement(a.Z, { header: A });
                         });
                 }
                 componentDidMount() {
@@ -530,7 +530,7 @@
                 render() {
                     const { fetchStatus: e, location: t, session: n } = this.props,
                         s = n ? n.name : "";
-                    return r.createElement(m.Z, null, r.createElement(_.Z, { location: t, title: s }, r.createElement(u.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._render })));
+                    return r.createElement(m.Z, null, r.createElement(g.Z, { location: t, title: s }, r.createElement(u.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._render })));
                 }
                 _renderDateLabel(e) {
                     if (e.is_current_session) return r.createElement(o.ZP, null, Z);
@@ -540,15 +540,15 @@
                     }
                 }
                 _renderDateAndTime(e) {
-                    return r.createElement(s.Z, null, e?.last_seen_time_ms ? r.createElement(s.Z, null, r.createElement(i.Z, null), r.createElement(c.Z, { text: T }), r.createElement(s.Z, { style: [F.labelContainer, !e?.is_current_session && F.bottomBorder] }, r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, this._renderDateLabel(e)))) : null, e?.is_current_session ? null : r.createElement(p.Z, { confirmationSheetConfirmButtonLabel: L.confirmButtonLabel, confirmationSheetConfirmButtonType: "primary", confirmationSheetHeadline: L.headline, confirmationSheetText: L.text, label: y, onConfirmationSheetConfirm: this._handleLogOut, withBottomBorder: !1 }));
+                    return r.createElement(s.Z, null, e?.last_seen_time_ms ? r.createElement(s.Z, null, r.createElement(i.Z, null), r.createElement(c.Z, { text: T }), r.createElement(s.Z, { style: [I.labelContainer, !e?.is_current_session && I.bottomBorder] }, r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, this._renderDateLabel(e)))) : null, e?.is_current_session ? null : r.createElement(p.Z, { confirmationSheetConfirmButtonLabel: L.confirmButtonLabel, confirmationSheetConfirmButtonType: "primary", confirmationSheetHeadline: L.headline, confirmationSheetText: L.text, label: y, onConfirmationSheetConfirm: this._handleLogOut, withBottomBorder: !1 }));
                 }
                 _renderLocation(e) {
                     const t = e.location;
-                    return t ? r.createElement(s.Z, null, r.createElement(i.Z, null), r.createElement(c.Z, { text: k }), r.createElement(s.Z, { style: F.labelContainer }, r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, t))) : null;
+                    return t ? r.createElement(s.Z, null, r.createElement(i.Z, null), r.createElement(c.Z, { text: k }), r.createElement(s.Z, { style: I.labelContainer }, r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, t))) : null;
                 }
             }
-            const I = C(D),
-                F = l.default.create((e) => ({ labelContainer: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, width: "100%" }, bottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } }));
+            const F = C(D),
+                I = l.default.create((e) => ({ labelContainer: { alignItems: "center", flexDirection: "row", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, width: "100%" }, bottomBorder: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor } }));
         },
         467604: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -652,8 +652,8 @@
                 p = n(262754),
                 u = n(191796),
                 m = n(652904),
-                _ = n(883229),
-                g = n(177210),
+                g = n(883229),
+                _ = n(177210),
                 f = n(782642),
                 b = n(782826),
                 S = n(725516),
@@ -671,7 +671,7 @@
                 const { origin: t } = b.ZP.get(),
                     n = (0, S.z)(),
                     a = (0, f.p)(),
-                    l = (0, g.Z)({ returnUrl: `${t}/settings/manage_subscriptions`, originProduct: "SuperFollows" }),
+                    l = (0, _.Z)({ returnUrl: `${t}/settings/manage_subscriptions`, originProduct: "SuperFollows" }),
                     d = !l,
                     h = r.useCallback(() => {
                         n.scribe({ ...x, element: "manage_creator_subscriptions", action: "click" }), e ? l && l() : a({ text: P });
@@ -682,7 +682,7 @@
                 D = r.memo(
                     Z(function ({ isSubscriber: e }) {
                         const t = (0, a.useLocation)();
-                        return r.createElement(m.Z, null, r.createElement(E.Z, { location: t, screenType: "primaryDetail", title: y }, r.createElement(_.N, { errorConfig: k }, r.createElement(v, { isSubscriber: e }))));
+                        return r.createElement(m.Z, null, r.createElement(E.Z, { location: t, screenType: "primaryDetail", title: y }, r.createElement(g.N, { errorConfig: k }, r.createElement(v, { isSubscriber: e }))));
                     }),
                 );
         },
@@ -704,8 +704,8 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, d.zr)("SETTINGS_TAGGING_SCREEN"), updateSettings: p.VP }))
                     .withAnalytics({ page: "settings", section: "tagging" }),
                 m = i().f56d108e,
-                _ = i().f56d108e,
-                g = i().gd758534,
+                g = i().f56d108e,
+                _ = i().gd758534,
                 f = [
                     { label: i().d165c992, value: "all" },
                     { label: i().ea339390, value: "following" },
@@ -720,13 +720,13 @@
                 }
                 render() {
                     const { location: e, mediaTaggingOption: t } = this.props;
-                    return r.createElement(c.Z, null, r.createElement(l.Z, { location: e, title: m }, r.createElement(s.Z, null, r.createElement(a.Z, { description: g, label: _, name: "allow_media_tagging", offValue: "none", onChange: this._handleItemChanged, options: f, value: t }))));
+                    return r.createElement(c.Z, null, r.createElement(l.Z, { location: e, title: m }, r.createElement(s.Z, null, r.createElement(a.Z, { description: _, label: g, name: "allow_media_tagging", offValue: "none", onChange: this._handleItemChanged, options: f, value: t }))));
                 }
             }
             const S = u(b);
         },
         703178: (e, t, n) => {
-            n.r(t), n.d(t, { TrendsLocationsScreen: () => I, default: () => B, styles: () => F });
+            n.r(t), n.d(t, { TrendsLocationsScreen: () => F, default: () => B, styles: () => I });
             var r = n(202784),
                 s = n(325686),
                 a = n(371344),
@@ -739,8 +739,8 @@
                 p = n(290402),
                 u = n(980407),
                 m = n(334346),
-                _ = n(443781),
-                g = n(554997),
+                g = n(443781),
+                _ = n(554997),
                 f = n(71620),
                 b = n(668214),
                 S = n(38562),
@@ -760,7 +760,7 @@
                 v = c().b3aab6d4,
                 A = c().e53e05e4,
                 D = c().be6cc44e;
-            class I extends r.Component {
+            class F extends r.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._usePlaceTrendLocations = this.context.featureSwitches.isTrue("responsive_web_trends_setting_new_endpoints")),
@@ -781,7 +781,7 @@
                             return r.createElement(
                                 s.Z,
                                 null,
-                                r.createElement(s.Z, { style: F.searchBox }, r.createElement(a.Z, { Icon: l.default, autoFocus: !1, onChange: this._handleInputChange, onClear: this._handleInputClear, placeholder: D, value: this.state.query, withClearButton: !0 })),
+                                r.createElement(s.Z, { style: I.searchBox }, r.createElement(a.Z, { Icon: l.default, autoFocus: !1, onChange: this._handleInputChange, onClear: this._handleInputClear, placeholder: D, value: this.state.query, withClearButton: !0 })),
                                 r.createElement(
                                     s.Z,
                                     null,
@@ -799,7 +799,7 @@
                             const { woeTrendsLocations: e } = this.props;
                             return this._getMemoizedTopLevelWoeLocations(e);
                         }),
-                        (this._getMemoizedTopLevelWoeLocations = (0, d.Z)((e) => e.filter((e) => (0, g.r)(e)))),
+                        (this._getMemoizedTopLevelWoeLocations = (0, d.Z)((e) => e.filter((e) => (0, _.r)(e)))),
                         (this._handleInputClear = () => {
                             this._updateQuery("");
                         }),
@@ -812,7 +812,7 @@
                         (this._renderWoeLocation = (e) => {
                             const { woeTrendsLocationSettings: t } = this.props,
                                 n = !!e.woeid && e.woeid === (t && t[0] && t[0].woeid);
-                            return r.createElement(x, { country: (0, g.r)(e) ? void 0 : e.country, isSelected: n, key: e.woeid, name: e.name, onClick: this._handleWoeLocationClick(e.woeid) });
+                            return r.createElement(x, { country: (0, _.r)(e) ? void 0 : e.country, isSelected: n, key: e.woeid, name: e.name, onClick: this._handleWoeLocationClick(e.woeid) });
                         }),
                         (this._renderPlaceLocation = (e) => {
                             const { placeTrendsSettings: t } = this.props,
@@ -841,12 +841,12 @@
                 }
                 render() {
                     const { history: e, placeTrendsLocationsFetchStatus: t, woeTrendsLocationsFetchStatus: n } = this.props;
-                    return r.createElement(u.Z, { backButtonType: "back", backLocation: "/settings/trends", history: e, title: v }, this._usePlaceTrendLocations ? r.createElement(r.Fragment, null, r.createElement(a.Z, { Icon: l.default, autoFocus: !1, onChange: this._handleInputChange, onClear: this._handleInputClear, placeholder: D, style: F.searchBox, testID: Z, value: this.state.query, withClearButton: !0 }), r.createElement(p.Z, { "aria-label": A, fetchStatus: t, onRequestRetry: this._handleRetry, render: this._renderScroller })) : r.createElement(p.Z, { "aria-label": A, fetchStatus: n, onRequestRetry: this._handleRetry, render: this._renderWoeLocations }));
+                    return r.createElement(u.Z, { backButtonType: "back", backLocation: "/settings/trends", history: e, title: v }, this._usePlaceTrendLocations ? r.createElement(r.Fragment, null, r.createElement(a.Z, { Icon: l.default, autoFocus: !1, onChange: this._handleInputChange, onClear: this._handleInputClear, placeholder: D, style: I.searchBox, testID: Z, value: this.state.query, withClearButton: !0 }), r.createElement(p.Z, { "aria-label": A, fetchStatus: t, onRequestRetry: this._handleRetry, render: this._renderScroller })) : r.createElement(p.Z, { "aria-label": A, fetchStatus: n, onRequestRetry: this._handleRetry, render: this._renderWoeLocations }));
                 }
             }
-            I.contextType = _.rC;
-            const F = o.default.create((e) => ({ searchBox: { flexGrow: 0, flexShrink: 0, margin: e.spaces.space12 } })),
-                B = C(I);
+            F.contextType = g.rC;
+            const I = o.default.create((e) => ({ searchBox: { flexGrow: 0, flexShrink: 0, margin: e.spaces.space12 } })),
+                B = C(F);
         },
         451735: (e, t, n) => {
             n.r(t), n.d(t, { SettingsTrendsScreen: () => G, default: () => Q });
@@ -862,8 +862,8 @@
                 p = n(290402),
                 u = n(980407),
                 m = n(534763),
-                _ = n(443781),
-                g = n(51525),
+                g = n(443781),
+                _ = n(51525),
                 f = n(71620),
                 b = n(668214),
                 S = n(38562),
@@ -884,8 +884,8 @@
                 v = d().jaaa8984,
                 A = d().i4d54b0e,
                 D = d().ad431584,
-                I = d().df9f03c8,
-                F = d().c6cf5c7e,
+                F = d().df9f03c8,
+                I = d().c6cf5c7e,
                 B = d().e09358ba,
                 H = d().a55db872,
                 R = d().a58170fc,
@@ -894,9 +894,9 @@
                 N = d().ac854308,
                 V = d().d429c942,
                 W = "use_current_location",
-                j = "use_personalized_trends",
+                M = "use_personalized_trends",
                 O = "use_fun_mode_stories",
-                M = "/settings/trends/location",
+                j = "/settings/trends/location",
                 q = "/settings/explore";
             class G extends r.Component {
                 constructor(...e) {
@@ -913,13 +913,13 @@
                         (this._handleItemChanged = (e, t) => {
                             const { analytics: n, createLocalApiErrorHandler: r, updatePlaceTrendSettings: s, updateWoeTrendSettings: a } = this.props,
                                 o = { [e]: t },
-                                i = { [h.ZP.AppInReadOnlyMode]: { customAction: g.w1 }, showToast: !0 };
+                                i = { [h.ZP.AppInReadOnlyMode]: { customAction: _.w1 }, showToast: !0 };
                             this._usePlaceTrendSettings ? s(o).catch(r(i)) : a(o).catch(r(i)), n.scribe({ element: "personalized_trends", action: "toggle" });
                         }),
                         (this._renderWoeContent = () => {
                             const { personalizedTrends: e, trendLocation: t } = this.props,
                                 n = (t && t[0] && t[0].name) || "Worldwide";
-                            return r.createElement(s.Z, null, r.createElement(a.Z, { checked: e, helpText: I, label: A, name: "personalized_trends", onChange: this._handleItemChanged }), !e && r.createElement(s.Z, null, r.createElement(o.Z, null), r.createElement(i.Z, { description: n, label: z, link: M })));
+                            return r.createElement(s.Z, null, r.createElement(a.Z, { checked: e, helpText: F, label: A, name: "personalized_trends", onChange: this._handleItemChanged }), !e && r.createElement(s.Z, null, r.createElement(o.Z, null), r.createElement(i.Z, { description: n, label: z, link: j })));
                         }),
                         (this._renderPlaceLoader = () => {
                             const { placeTrendSettingsFetchStatus: e } = this.props;
@@ -931,8 +931,8 @@
                                 l = t.places && t.places[0] && t.places[0].name,
                                 d = !n || !t.is_unified_trends,
                                 h = t.is_stories_available,
-                                p = n ? "/settings/explore/location" : M;
-                            return r.createElement(s.Z, null, h && r.createElement(r.Fragment, null, r.createElement(o.Z, null), r.createElement(c.Z, { text: R }), r.createElement(a.Z, { checked: t[O], helpText: B, label: D, name: O, onChange: this._handleItemChanged })), r.createElement(c.Z, { text: v }), r.createElement(a.Z, { checked: t[W], helpText: x, label: k, name: W, onChange: this._handleItemChanged, testID: Z }), !t[W] && r.createElement(s.Z, null, r.createElement(i.Z, { description: l, label: U, link: p, testID: y })), d && r.createElement(r.Fragment, null, r.createElement(o.Z, null), r.createElement(c.Z, { text: H }), r.createElement(a.Z, { checked: t[j], helpText: F, label: A, name: j, onChange: this._handleItemChanged })));
+                                p = n ? "/settings/explore/location" : j;
+                            return r.createElement(s.Z, null, h && r.createElement(r.Fragment, null, r.createElement(o.Z, null), r.createElement(c.Z, { text: R }), r.createElement(a.Z, { checked: t[O], helpText: B, label: D, name: O, onChange: this._handleItemChanged })), r.createElement(c.Z, { text: v }), r.createElement(a.Z, { checked: t[W], helpText: x, label: k, name: W, onChange: this._handleItemChanged, testID: Z }), !t[W] && r.createElement(s.Z, null, r.createElement(i.Z, { description: l, label: U, link: p, testID: y })), d && r.createElement(r.Fragment, null, r.createElement(o.Z, null), r.createElement(c.Z, { text: H }), r.createElement(a.Z, { checked: t[M], helpText: I, label: A, name: M, onChange: this._handleItemChanged })));
                         });
                 }
                 componentDidMount() {
@@ -948,7 +948,7 @@
                     return r.createElement(s.Z, null, r.createElement(o.Z, null), r.createElement(c.Z, { text: N }), r.createElement(m.b, { label: V, link: this._policySectionUrl }));
                 }
             }
-            G.contextType = _.rC;
+            G.contextType = g.rC;
             const Q = C(G);
         },
         829824: (e, t, n) => {
@@ -965,25 +965,25 @@
                 p = n(125363),
                 u = n(390387);
             const m = c().ffeb836a,
-                _ = c().f2fb9746;
-            function g() {
+                g = c().f2fb9746;
+            function _() {
                 const e = (0, h.Z)();
                 return (
                     r.useEffect(() => {
                         e.scribe({ element: "error_page", action: "show" });
                     }, [e]),
-                    r.createElement(a.Z, { title: m }, r.createElement(o.ZP, null, _))
+                    r.createElement(a.Z, { title: m }, r.createElement(o.ZP, null, g))
                 );
             }
             function f(e) {
                 const { featureSwitches: t } = r.useContext(l.rC),
                     n = (0, p.v9)(u.Qb),
                     a = (0, d.Xh)(s.b7, t);
-                return n || a ? e.children : r.createElement(g, null);
+                return n || a ? e.children : r.createElement(_, null);
             }
         },
         902339: (e, t, n) => {
-            n.d(t, { Z: () => _ });
+            n.d(t, { Z: () => g });
             var r = n(202784),
                 s = n(325686),
                 a = n(154003),
@@ -996,7 +996,7 @@
                 p = c().bb1cbeb6,
                 u = c().ba4aaa9e,
                 m = c().f837ed7e;
-            class _ extends r.Component {
+            class g extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { showUnmuteConfirmation: !1 }),
@@ -1021,7 +1021,7 @@
                     return r.createElement(s.Z, null, r.createElement(a.ZP, { "aria-label": p, color: e, hoverLabel: { label: p }, icon: r.createElement(l.default, null), onPress: this._handlePress }), this.state.showUnmuteConfirmation ? r.createElement(o.Z, { cancelButtonLabel: h, confirmButtonLabel: p, headline: u, onCancel: this._handleCancel, onConfirm: this._handleConfirm, text: m }) : null);
                 }
             }
-            _.defaultProps = { color: "red500" };
+            g.defaultProps = { color: "red500" };
         },
         170069: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -1033,7 +1033,7 @@
                 c = o.default.create((e) => ({ contentContainer: { alignItems: "center", flex: 1, flexDirection: "row", justifyContent: "space-between" }, labelContainer: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, minHeight: `calc(${o.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})` }, appText: { flexShrink: 1, width: "100%" } }));
         },
         609848: (e, t, n) => {
-            n.d(t, { Z: () => F });
+            n.d(t, { Z: () => I });
             var r = n(202784),
                 s = n(325686),
                 a = n(731708),
@@ -1046,8 +1046,8 @@
                 p = n(111677),
                 u = n.n(p),
                 m = n(615656),
-                _ = n(290402),
-                g = n(443781),
+                g = n(290402),
+                _ = n(443781),
                 f = n(500002),
                 b = n(312771),
                 S = n(615027),
@@ -1117,13 +1117,13 @@
                     const { fetchStatus: e, location: t, render: n } = this.props,
                         { verificationRequired: s } = this.state,
                         a = e === b.ZP.FAILED && s;
-                    return r.createElement(r.Fragment, null, a ? (this._passwordlessSsoEnabled ? r.createElement(S.Z, { to: { pathname: "/i/flow/verify_account_ownership", state: { input: { requested_variant: t.pathname } } } }) : this._renderPasswordPrompt()) : r.createElement(_.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: n }));
+                    return r.createElement(r.Fragment, null, a ? (this._passwordlessSsoEnabled ? r.createElement(S.Z, { to: { pathname: "/i/flow/verify_account_ownership", state: { input: { requested_variant: t.pathname } } } }) : this._renderPasswordPrompt()) : r.createElement(g.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: n }));
                 }
             }
-            (A.contextType = g.rC), (A.defaultProps = { titleHeader: L });
+            (A.contextType = _.rC), (A.defaultProps = { titleHeader: L });
             const D = h.default.create((e) => ({ buttonContainer: { flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingBottom: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.componentDimensions.gutterHorizontal } })),
-                I = y(A),
-                F = (0, f.ZP)(I);
+                F = y(A),
+                I = (0, f.ZP)(F);
         },
         472039: (e, t, n) => {
             n.d(t, { Z: () => b });
@@ -1139,8 +1139,8 @@
                 p = n(264922);
             const u = d().a999cb72,
                 m = d().dec3c9b8,
-                _ = d().b929aa74,
-                g = d().d1091f50,
+                g = d().b929aa74,
+                _ = d().d1091f50,
                 f = d().i2209530;
             class b extends r.Component {
                 constructor(e, t) {
@@ -1157,7 +1157,7 @@
                 }
                 _renderPasswordPrompt() {
                     const { location: e, reenterPasswordLabel: t, saveChangesHeaderLabel: n, submitLabel: l, submitType: d } = this.props,
-                        u = r.createElement(a.ZP, { link: { pathname: (0, o.ju)("https://x.com/i/flow/password_reset"), external: !0, openInSameFrame: !0 } }, g);
+                        u = r.createElement(a.ZP, { link: { pathname: (0, o.ju)("https://x.com/i/flow/password_reset"), external: !0, openInSameFrame: !0 } }, _);
                     return r.createElement(p.Z, { location: e, onSubmit: this._handleSubmit, submitLabel: l, submitType: d, title: n }, r.createElement(i.Z, { text: n }), r.createElement(s.Z, { style: [h.Z.viewItem, h.Z.bottomBorder] }, r.createElement(a.ZP, { color: "gray700", size: "subtext2" }, t)), r.createElement(c.Z, { helperText: u, label: m, name: "current_password", onChange: this._handleChange, type: "password", value: this.state.current_password }));
                 }
                 render() {
@@ -1165,7 +1165,62 @@
                     return n ? this._renderPasswordPrompt() : r.createElement(p.Z, { location: t, title: s }, e || null);
                 }
             }
-            b.defaultProps = { children: null, promptForPassword: !1, reenterPasswordLabel: _, saveChangesHeaderLabel: u, submitLabel: f };
+            b.defaultProps = { children: null, promptForPassword: !1, reenterPasswordLabel: g, saveChangesHeaderLabel: u, submitLabel: f };
+        },
+        264922: (e, t, n) => {
+            n.d(t, { Z: () => w });
+            var r = n(202784),
+                s = n(108362),
+                a = n(420412),
+                o = n(154003),
+                i = n(392237),
+                c = n(111677),
+                l = n.n(c),
+                d = n(290402),
+                h = n(496364),
+                p = n(71620),
+                u = n(668214),
+                m = n(38562),
+                g = n(919022);
+            const _ = (0, u.Z)()
+                    .propsFromState(() => ({ fetchStatus: m.UD, viewerUser: g.ZP.selectViewerUser }))
+                    .propsFromActions(() => ({ fetchSettingsIfNeeded: m.Sb, createLocalApiErrorHandler: (0, p.zr)("SETTINGS_LOADER") })),
+                f = "settingsDetailSave",
+                b = l().i2209530;
+            class S extends r.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._renderWithFetchSettings = () => {
+                            const { fetchStatus: e } = this.props;
+                            return r.createElement(d.Z, { fetchStatus: e, onRequestRetry: this._handleFetch, render: this._render });
+                        }),
+                        (this._render = () => {
+                            const { children: e, onSubmit: t, submitDisabled: n, submitLabel: i, submitType: c, withMarginBottom: l } = this.props;
+                            return r.createElement(s.Z, { style: [E.contentRoot, l && E.withMarginBottom] }, e, t ? r.createElement(r.Fragment, null, r.createElement(a.Z, null), r.createElement(s.Z, { style: E.buttonContainer }, r.createElement(o.ZP, { disabled: n, onPress: t, style: E.button, testID: f, type: c }, i))) : null);
+                        }),
+                        (this._handleFetch = () => {
+                            const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
+                            t().catch(e());
+                        });
+                }
+                componentDidMount() {
+                    this._handleFetch();
+                }
+                getBackLocation() {
+                    const { location: e, viewerUser: t } = this.props,
+                        n = t ? "/settings" : "/settings/account/personalization";
+                    return e && e.pathname === n ? "/" : n;
+                }
+                render() {
+                    const { onBackClick: e, rightControl: t, screenType: n, secondaryBar: s, title: a, viewerUser: o, withBottomBorder: i } = this.props,
+                        c = this.getBackLocation(),
+                        l = o ? `@${o.screen_name}` : void 0;
+                    return r.createElement(h.Z, { backLocation: c, onBackClick: e, rightControl: t, screenType: n, secondaryBar: s, showSubtitleOnWideDetail: !1, subtitle: l, title: a, withBottomBorder: i }, o ? this._renderWithFetchSettings() : this._render());
+                }
+            }
+            S.defaultProps = { submitLabel: b, submitType: "brandFilled", withMarginBottom: !0 };
+            const E = i.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${i.default.iPhoneOffsetBottom})` } })),
+                w = _(S);
         },
         267966: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -1175,4 +1230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-394f886d.95d8a8da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-394f886d.a3a8ceba.js.map

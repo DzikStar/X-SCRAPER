@@ -17,11 +17,11 @@
                 i = _(270422),
                 a = _.n(i),
                 r = _(607959),
-                o = _.n(r),
-                s = _(348271),
-                l = _.n(s),
+                s = _.n(r),
+                o = _(348271),
+                l = _.n(o),
                 d = _(934309);
-            const p = ({ apiClient: e, featureSwitches: t }) => ({ fetchLikedBy: ({ count: _, cursor: i, tweetId: r }) => e.graphQL(a(), { tweetId: r, count: _, cursor: i, includePromotedContent: !0, ...(0, n.d)(t) }, (e, t) => !t?.favoriters_timeline?.timeline).then((e) => e?.favoriters_timeline?.timeline || d.cY), fetchRetweetedBy: ({ count: _, cursor: i, tweetId: a }) => e.graphQL(o(), { tweetId: a, count: _, cursor: i, includePromotedContent: !0, ...(0, n.d)(t) }, (e, t) => !t?.retweeters_timeline?.timeline).then((e) => e?.retweeters_timeline?.timeline || d.cY), fetchEditHistory: ({ tweetId: _ }) => e.graphQL(l(), { tweetId: _, ...(0, n.d)(t), withQuickPromoteEligibilityTweetFields: !0 }, (e, t) => !t?.tweet_result_by_rest_id?.result).then((e) => (e?.tweet_result_by_rest_id?.result && e.tweet_result_by_rest_id.result.edit_history_timeline && e.tweet_result_by_rest_id.result.edit_history_timeline?.timeline) || d.cY) });
+            const p = ({ apiClient: e, featureSwitches: t }) => ({ fetchLikedBy: ({ count: _, cursor: i, tweetId: r }) => e.graphQL(a(), { tweetId: r, count: _, cursor: i, includePromotedContent: !0, ...(0, n.d)(t) }, (e, t) => !t?.favoriters_timeline?.timeline).then((e) => e?.favoriters_timeline?.timeline || d.cY), fetchRetweetedBy: ({ count: _, cursor: i, tweetId: a }) => e.graphQL(s(), { tweetId: a, count: _, cursor: i, includePromotedContent: !0, ...(0, n.d)(t) }, (e, t) => !t?.retweeters_timeline?.timeline).then((e) => e?.retweeters_timeline?.timeline || d.cY), fetchEditHistory: ({ tweetId: _ }) => e.graphQL(l(), { tweetId: _, ...(0, n.d)(t), withQuickPromoteEligibilityTweetFields: !0 }, (e, t) => !t?.tweet_result_by_rest_id?.result).then((e) => (e?.tweet_result_by_rest_id?.result && e.tweet_result_by_rest_id.result.edit_history_timeline && e.tweet_result_by_rest_id.result.edit_history_timeline?.timeline) || d.cY) });
         },
         652904: (e, t, _) => {
             "use strict";
@@ -30,9 +30,9 @@
                 i = _(500002),
                 a = _(668214),
                 r = _(997174),
-                o = _(118823);
-            const s = (0, a.Z)()
-                .propsFromActions(() => ({ updateLocation: o.YF, updateTweetDetailNav: r.NH }))
+                s = _(118823);
+            const o = (0, a.Z)()
+                .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: r.NH }))
                 .withAnalytics();
             class l extends n.Component {
                 componentDidMount() {
@@ -46,12 +46,12 @@
                         } = this.props,
                         {
                             location: { pathname: a, search: r },
-                            locationKey: o,
+                            locationKey: s,
                         } = e;
-                    let s = !1;
-                    t.pathname !== _ ? (this._isInBackground = !0) : this._isInBackground && t.pathname === _ && ((this._isInBackground = !1), (s = !0));
-                    const l = i || o;
-                    ((l && i !== o) || (!l && _ !== a) || n !== r || s) && this._performPageUpdates(this.props);
+                    let o = !1;
+                    t.pathname !== _ ? (this._isInBackground = !0) : this._isInBackground && t.pathname === _ && ((this._isInBackground = !1), (o = !0));
+                    const l = i || s;
+                    ((l && i !== s) || (!l && _ !== a) || n !== r || o) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -62,62 +62,48 @@
                 }
             }
             l.defaultProps = { children: null };
-            const d = (0, i.ZP)(s(l));
+            const d = (0, i.ZP)(o(l));
         },
         119260: (e, t, _) => {
             "use strict";
-            _.r(t), _.d(t, { TweetEditHistoryScreen: () => Z, default: () => L });
+            _.r(t), _.d(t, { TweetEditHistoryScreen: () => A, default: () => C });
             var n = _(202784),
                 i = _(325686),
                 a = _(457311),
                 r = _(392237),
-                o = _(111677),
-                s = _.n(o),
+                s = _(111677),
+                o = _.n(s),
                 l = _(718e3),
                 d = _(252021),
                 p = _(652904),
-                c = _(810641),
-                b = _(24949),
+                b = _(810641),
+                c = _(24949),
                 w = _(782261),
                 m = _(668214),
-                h = _(836255),
-                u = _(912021),
+                u = _(836255),
+                h = _(912021),
                 g = _(413798),
-                v = _(750085),
-                f = _(218951);
-            const y = (0, u.Z)((e) => (0, f.Z)({ timelineId: `tweet-edit-history-${e}`, network: { getEndpoint: (e) => e.withEndpoint(g.Z).fetchEditHistory, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: v.Z, context: "FETCH_EDIT_HISTORY_TIMELINE", perfKey: "editHistoryGraphQL" })),
+                f = _(750085),
+                v = _(218951);
+            const y = (0, h.Z)((e) => (0, v.Z)({ timelineId: `tweet-edit-history-${e}`, network: { getEndpoint: (e) => e.withEndpoint(g.Z).fetchEditHistory, getEndpointParams: () => ({ tweetId: e }) }, formatResponse: f.Z, context: "FETCH_EDIT_HISTORY_TIMELINE", perfKey: "editHistoryGraphQL" })),
                 k = (e, t) => t.match.params.statusId,
-                E = (0, m.Z)()
-                    .propsFromState(() => ({ tweetLatestEditVersionId: (0, b.P1)(h.Z.createHydratedTweetSelector(k), k, (e, t) => (e ? w.Z.getTweetLatestVersionId(e) : t)) }))
+                I = (0, m.Z)()
+                    .propsFromState(() => ({ tweetLatestEditVersionId: (0, c.P1)(u.Z.createHydratedTweetSelector(k), k, (e, t) => (e ? w.Z.getTweetLatestVersionId(e) : t)) }))
                     .adjustStateProps(({ tweetLatestEditVersionId: e }) => ({ urtModule: y(e) }))
                     .withAnalytics({ page: "edit_history" }),
-                I = s().f345dcda,
-                q = s().h2fcc532,
-                T = s().e9f1fbcc,
+                q = o().f345dcda,
+                T = o().h2fcc532,
+                E = o().e9f1fbcc,
                 x = n.createElement(l.Z, null),
-                z = () => n.createElement(a.Z, { header: T });
-            function Z(e) {
+                Z = () => n.createElement(a.Z, { header: E });
+            function A(e) {
                 const { history: t, urtModule: _ } = e,
-                    a = n.createElement(i.Z, { style: A.root }, n.createElement(c.Z, { loadingAccessibilityLabel: q, module: _, renderEmptyState: z, title: I }));
-                return n.createElement(p.Z, null, n.createElement(d.Z, { backLocation: "/", history: t, primaryContent: a, sidebarContent: x, title: I }));
+                    a = n.createElement(i.Z, { style: L.root }, n.createElement(b.Z, { loadingAccessibilityLabel: T, module: _, renderEmptyState: Z, title: q }));
+                return n.createElement(p.Z, null, n.createElement(d.Z, { backLocation: "/", history: t, primaryContent: a, sidebarContent: x, title: q }));
             }
-            const A = r.default.create((e) => ({ root: { paddingVertical: e.componentDimensions.gutterVertical } })),
-                L = E(Z);
-        },
-        748138: (e, t, _) => {
-            "use strict";
-            _.r(t), _.d(t, { default: () => s });
-            var n = _(202784),
-                i = _(890601),
-                a = _(783427),
-                r = _(347101);
-            const o = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
+            const L = r.default.create((e) => ({ root: { paddingVertical: e.componentDimensions.gutterVertical } })),
+                C = I(A);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetEditHistory.c5b113da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetEditHistory.56ec213a.js.map

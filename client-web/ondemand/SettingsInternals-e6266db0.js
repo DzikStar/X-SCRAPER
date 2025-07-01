@@ -64,16 +64,17 @@
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-167f1698"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5f6a80e1"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-f0be4555"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-8c4bd381"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9bd28fed"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-84815b2f"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-b600c04d"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-e64ba3d4"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-760bf32a"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c85e798b"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-63e1b11c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-9b130c11"),
@@ -301,7 +302,7 @@
                     addWelcomeMessageToConversation: () => n.Qe,
                     clearRecentSearch: () => U,
                     clearRecentSearches: () => L,
-                    clearSearchCache: () => C,
+                    clearSearchCache: () => A,
                     default: () => b,
                     deleteConversations: () => n.S9,
                     disableMentionNotifications: () => n.BW,
@@ -393,15 +394,15 @@
                 f = "rweb/directMessages/ADD_RECENT_SEARCHES",
                 I = (e) => ({ payload: e, type: f }),
                 D = "rweb/directMessages/CLEAR_SEARCH_CACHE",
-                C = () => ({ type: D }),
-                A = "rweb/directMessages/CLEAR_RECENT_SEARCH",
+                A = () => ({ type: D }),
+                C = "rweb/directMessages/CLEAR_RECENT_SEARCH",
                 T = "rweb/directMessages/CLEAR_RECENT_SEARCHES",
                 y = { searchResults: {}, recentSearches: [] };
             function O(e = y, t) {
                 if (!t) return e;
                 switch (t.type) {
                     case f:
-                    case A:
+                    case C:
                         return { ...e, recentSearches: t.payload || [] };
                     case T:
                         return { ...e, recentSearches: [] };
@@ -486,7 +487,7 @@
                     (t, r, { userPersistence: s }) =>
                         s.get(p).then((r) => {
                             const a = r?.recentSearches || [];
-                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: A }), s.set(p, { recentSearches: a });
+                            return a.splice(a.indexOf(e), 1), t({ payload: a, type: C }), s.set(p, { recentSearches: a });
                         }),
                 L =
                     () =>
@@ -553,7 +554,7 @@
                 a = Object.freeze({ PERMISSION_DENIED: 1, POSITION_UNAVAILABLE: 2, TIMEOUT: 3 });
         },
         642721: (e, t, r) => {
-            r.d(t, { $o: () => w, AE: () => F, Lk: () => A, R_: () => b, UD: () => D, UK: () => T, WW: () => I, ck: () => Z, fd: () => f, kM: () => N, mz: () => C, xZ: () => L });
+            r.d(t, { $o: () => w, AE: () => F, Lk: () => C, R_: () => b, UD: () => D, UK: () => T, WW: () => I, ck: () => M, fd: () => f, kM: () => N, mz: () => A, xZ: () => L });
             var s = r(745978),
                 a = r(499627),
                 n = r(917799),
@@ -595,8 +596,8 @@
             const f = (e) => e[i].discouragedKeywords,
                 I = (e) => e[i].mutedKeywords,
                 D = (e) => e[i].fetchStatus,
-                C = (e, t) => e[i].mutedKeywords.find((e) => e.id === t),
-                A = (e, t) => e[i].defaultOptions,
+                A = (e, t) => e[i].mutedKeywords.find((e) => e.id === t),
+                C = (e, t) => e[i].defaultOptions,
                 T =
                     () =>
                     (e, t, { userPersistence: r }) =>
@@ -645,7 +646,7 @@
                         const o = { ids: e.join(",") };
                         return n._O(t, { params: o, request: a.withEndpoint(s.Z).deleteMutedKeyword })({ actionTypes: _, context: "ACTION_DELETE_MUTED_KEYWORD", meta: { ids: e } });
                     },
-                Z =
+                M =
                     (e) =>
                     (t, r, { api: a }) =>
                         n._O(t, { params: e, request: a.withEndpoint(s.Z).updateMutedKeyword })({ actionTypes: h, context: "ACTION_UPDATE_MUTED_KEYWORD", meta: { params: e } });
@@ -765,7 +766,7 @@
             });
         },
         204744: (e, t, r) => {
-            r.d(t, { DI: () => D, H$: () => E, OB: () => C, Ww: () => l, YB: () => u, hj: () => p, qF: () => f });
+            r.d(t, { DI: () => D, H$: () => E, OB: () => A, Ww: () => l, YB: () => u, hj: () => p, qF: () => f });
             r(901951);
             var s = r(499627),
                 a = r(390387);
@@ -830,7 +831,7 @@
                             o = l(n);
                         return (0, a.Qb)(n) ? t(i(o)) : Promise.resolve();
                     },
-                C =
+                A =
                     () =>
                     (e, t, { userPersistence: r }) => {
                         const s = t();
@@ -963,7 +964,7 @@
             const s = Object.freeze({ Filtering: "optInFiltering", Blocking: "optInBlocking" });
         },
         715684: (e, t, r) => {
-            r.d(t, { Fm: () => g, TG: () => D, UD: () => A, _1: () => O, dj: () => T, kz: () => C });
+            r.d(t, { Fm: () => g, TG: () => D, UD: () => C, _1: () => O, dj: () => T, kz: () => A });
             var s = r(24949),
                 a = r(697926),
                 n = r(744531),
@@ -999,9 +1000,9 @@
             const f = (e) => (e?.viewer?.user_results?.result?.sessions_list ? e.viewer.user_results.result.sessions_list : e.viewer?.user?.sessions_list ? e.viewer.user.sessions_list : e.sessions ? e.sessions.map(m) : []),
                 I = (e) => e[l].sessions,
                 D = (0, s.P1)(I, (e) => Object.values(e)),
-                C = (e, t) => I(e)[t],
-                A = (e) => e[l].fetchStatus,
-                T = (e) => (t, r) => (A(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
+                A = (e, t) => I(e)[t],
+                C = (e) => e[l].fetchStatus,
+                T = (e) => (t, r) => (C(r()) === d.ZP.LOADED ? Promise.resolve() : t(y(e))),
                 y =
                     (e) =>
                     (t, r, { api: s }) =>
@@ -1020,7 +1021,7 @@
                             .then(() => y()(t, r, { api: s }));
         },
         948985: (e, t, r) => {
-            r.d(t, { $q: () => I, UD: () => D, wz: () => C, zw: () => A });
+            r.d(t, { $q: () => I, UD: () => D, wz: () => A, zw: () => C });
             var s = r(24949),
                 a = r(166852),
                 n = r(226395),
@@ -1088,8 +1089,8 @@
                 ));
             const I = u.Z.register(f),
                 D = (e) => e[E].fetchStatus,
-                C = (e) => (t, r) => (D(r()) === c.ZP.LOADED ? Promise.resolve() : t(T(e))),
-                A =
+                A = (e) => (t, r) => (D(r()) === c.ZP.LOADED ? Promise.resolve() : t(T(e))),
+                C =
                     (e, t, r) =>
                     (r, s, { api: a }) => {
                         const n = s();
@@ -1246,7 +1247,7 @@
                     };
         },
         446418: (e, t, r) => {
-            r.d(t, { DG: () => D, DY: () => f, J2: () => I, UD: () => p, aX: () => C, vi: () => h, zl: () => m });
+            r.d(t, { DG: () => D, DY: () => f, J2: () => I, UD: () => p, aX: () => A, vi: () => h, zl: () => m });
             var s = r(226395),
                 a = r(499627),
                 n = r(917799),
@@ -1325,7 +1326,7 @@
                     () =>
                     (e, t, { api: r }) =>
                         (0, n.AB)(e, { request: r.withEndpoint(s.Z).disable2FA })({ actionTypes: E, context: "DISABLE_LOGIN_VERIFICATION" }),
-                C =
+                A =
                     ({ method: e }) =>
                     (t, r, { api: a }) => {
                         const o = h(r()).methods[e];
@@ -1461,4 +1462,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.0f247d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-e6266db0.55f9882a.js.map

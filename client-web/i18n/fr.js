@@ -17,10 +17,18 @@
                 var n, r;
             }
             n("c39b0e24", "X"),
+                n("bcd6bb0e", "Membre"),
+                n("hd8c22d2", "Modo"),
+                n("c3153100", "Admin"),
                 n("jb38600c", "Aucun"),
                 n("f07eac34", "Compte parodique"),
                 n("a41b5c2e", "Compte de fan"),
                 n("i428ea62", "Compte de commentaires"),
+                n("jd859c9c", "Vous avez été supprimé de cet Espace."),
+                n("cfbea177", function (e) {
+                    return "Espace de " + e.name;
+                }),
+                n("ab4fc8bc", "Espace"),
                 n("ac0d27be", "Désolé, ce compte a été suspendu."),
                 n("bcee7444", "Échec de la mise à jour du compte."),
                 n("e0cbf77a", "Ajouter un téléphone"),
@@ -61,9 +69,6 @@
                 n("h1cbdd30", "Veuillez actualiser la page et essayer à nouveau."),
                 n("a5077d3e", "Actualiser"),
                 n("b2648ba4", "Votre compte n'est peut-être pas autorisé à effectuer cette action. Veuillez actualiser la page et essayer à nouveau."),
-                n("bcd6bb0e", "Membre"),
-                n("hd8c22d2", "Modo"),
-                n("c3153100", "Admin"),
                 n("fa9adac1", function (e) {
                     return 'Rechercher "' + e.query + '"';
                 }),
@@ -76,19 +81,12 @@
                 n("c64e46f8", "Ce membre a été supprimé de la Communauté et ses posts sont donc masqués."),
                 n("b3f1cb42", "Un modérateur a masqué ce post en raison d'une infraction à une règle de la Communauté."),
                 n("cbd2dc9c", "Vous avez signalé ce post."),
-                n("cfbea177", function (e) {
-                    return "Espace de " + e.name;
-                }),
-                n("ab4fc8bc", "Espace"),
-                n("jd859c9c", "Vous avez été supprimé de cet Espace."),
                 n("c60ed9b0", "Vous n'avez pas l'autorisation de rejoindre cet Espace."),
                 n("d8227e16", "Vous n'avez pas l'autorisation de créer cet Espace."),
                 n("f027fed8", "Image dans l'image"),
                 n("hd50e064", "Plus tard"),
                 n("i76d640e", "Nous avons besoin de votre autorisation."),
                 n("fdaa0be8", "Pour parler dans cet Espace, vous devrez accorder à X l'accès à votre micro. Veuillez vérifier les paramètres de votre navigateur. "),
-                n("gea6cc1a", "Voulez-vous vraiment effectuer cette opération ?"),
-                n("hb568af4", "Masquer"),
                 n("f7c8617a", "Que sont les clips ?"),
                 n("ecc7d2ec", "Les clips capturent des moments. Ils peuvent être créés et partagés par toute personne présente dans votre Espace. Tous les clips expirent au bout de 30 jours."),
                 n("d575ee02", "Qui peut faire un clip ?"),
@@ -106,16 +104,6 @@
                 n("jf03b37c", "Écoutez l'enregistrement à tout moment. Vous pouvez aussi le partager dans un post."),
                 n("fd05976b", "En savoir plus"),
                 n("b4f91a8a", "Enregistrement actif"),
-                n("gb418012", "Bienvenue dans Spaces"),
-                n("fec3c1e0", "Les Espaces sont des lieux de conversations audio en direct."),
-                n("j32eb4f8", "Ajoutez jusqu'à 10 intervenants"),
-                n("j4f133a6", "Vous pouvez inviter n'importe quel utilisateur de X à prendre la parole."),
-                n("ed434ac6", "Les Espaces sont publics : tout le monde peut y participer"),
-                n("e0025688", "Votre Espace, vos règles"),
-                n("c1bc6f86", "En tant qu'hôte, vous pouvez gérer qui prend la parole. Vous pouvez également supprimer les personnes que vous ne souhaitez pas voir dans votre Espace."),
-                n("b0bc8330", "Vous pouvez bloquer et signaler des personnes dans un Espace."),
-                n("cb17a0f3", "En savoir plus"),
-                n("dcd77941", "En savoir plus"),
                 n("cc724cb0", "Créer un clip"),
                 n("cfd2f35e", "Annuler"),
                 n("c1df579e", "Suivant"),
@@ -129,6 +117,16 @@
                 n("a9ba3e28", "Informations privées"),
                 n("d5519f4a", "Comportement inapproprié"),
                 n("eb55363c", "Cet Espace a été signalé."),
+                n("gb418012", "Bienvenue dans Spaces"),
+                n("fec3c1e0", "Les Espaces sont des lieux de conversations audio en direct."),
+                n("j32eb4f8", "Ajoutez jusqu'à 10 intervenants"),
+                n("j4f133a6", "Vous pouvez inviter n'importe quel utilisateur de X à prendre la parole."),
+                n("ed434ac6", "Les Espaces sont publics : tout le monde peut y participer"),
+                n("e0025688", "Votre Espace, vos règles"),
+                n("c1bc6f86", "En tant qu'hôte, vous pouvez gérer qui prend la parole. Vous pouvez également supprimer les personnes que vous ne souhaitez pas voir dans votre Espace."),
+                n("b0bc8330", "Vous pouvez bloquer et signaler des personnes dans un Espace."),
+                n("cb17a0f3", "En savoir plus"),
+                n("dcd77941", "En savoir plus"),
                 n("i65de934", "Vous écoutez anonymement."),
                 n("b1037050", "Gérer l'Espace"),
                 n("ic107434", "Activer la caméra"),
@@ -907,10 +905,10 @@
                 n("bf9e181b", "En savoir plus"),
                 n("e8e39f95", "En savoir plus"),
                 n("e126dd3f", "En savoir plus"),
-                n("i821844f", "En savoir plus");
-            n("b0abbb17", "En savoir plus"),
-                n("e7e0d88b", "En savoir plus"),
-                n("i560665f", "En savoir plus"),
+                n("i821844f", "En savoir plus"),
+                n("b0abbb17", "En savoir plus"),
+                n("e7e0d88b", "En savoir plus");
+            n("i560665f", "En savoir plus"),
                 n("f6e774d9", "En savoir plus"),
                 n("h486f755", "En savoir plus"),
                 n("bab41dab", "En savoir plus"),
@@ -1126,6 +1124,7 @@
                 n("dbb51952", "Protéger vos posts ?"),
                 n("de735de6", "Seuls vos abonnés X pourront les voir."),
                 n("c5d4192a", "Protéger"),
+                n("gea6cc1a", "Voulez-vous vraiment effectuer cette opération ?"),
                 n("d9ddba70", "Les Communautés étant publiques, le fait de protéger votre compte masquera vos posts précédents. Vous ne pourrez plus poster au sein de la Communauté tant que votre compte n'est pas de nouveau public."),
                 n("f527b322", "Protéger mon compte"),
                 n("d165c992", "Tout le monde peut vous identifier"),
@@ -1322,9 +1321,10 @@
                     return "Exécution du code" + e.ttc_tool_usage_card;
                 }),
                 n("aa9d42c0", "Recherche sur le Web"),
-                n("dce1817a", "Recherche sur 𝕏"),
-                n("f7151564", "Recherche d'utilisateurs sur 𝕏"),
+                n("c731d702", "Searching on X"),
+                n("d0e02476", "Searching users on X"),
                 n("c43ef93e", "Navigation sur la page Web"),
+                n("dab166ec", "Searching user posts on X"),
                 n("jb097f6e", "Exécution du code"),
                 n("ead81122", "Une erreur est survenue. Veuillez rafraîchir la page pour vous reconnecter ou réessayer."),
                 n("f808a13a", "Vous avez atteint la limite. Veuillez patienter quelques instants et réessayer."),
@@ -1818,6 +1818,7 @@
                 n("g00b4c55", function (e) {
                     return "Partager @" + e.screenName + " via…";
                 }),
+                n("hb568af4", "Masquer"),
                 n("bb1cbeb6", "Réafficher"),
                 n("h2f62206", "Masquage de l'utilisateur"),
                 n("h59f52ee", "Masqué avec succès."),
@@ -1918,11 +1919,11 @@
                 n("ef1649e2", "X - Raccourcis clavier"),
                 n("aefd89c8", "Navigation"),
                 n("cafdefb2", "Actions"),
-                n("dda42cf2", "Colonnes et decks"),
-                n("e8a12604", "Fournissez un sous‑titre (facultatif).");
-            n("eabf2209", function (e) {
-                return "GIF fourni par " + e.providerName;
-            }),
+                n("dda42cf2", "Colonnes et decks");
+            n("e8a12604", "Fournissez un sous‑titre (facultatif)."),
+                n("eabf2209", function (e) {
+                    return "GIF fourni par " + e.providerName;
+                }),
                 n("a613e720", "Copier le lien du GIF"),
                 n("aeca1239", function (e) {
                     return "Gras" + e.ttc_rich_text_composer;
@@ -2978,9 +2979,9 @@
                 n("e06b864c", "Il semble que vous appréciez cette conversation."),
                 n("a078ff70", "Vous voulez voir plus de contenus des personnes avec lesquelles vous avez interagi pendant cette discussion ? Découvrez les contenus de nouveaux comptes."),
                 n("cb80300e", "Aller au fil d'actualités"),
-                n("ea5cd098", "Aller aux tendances"),
-                n("c67e3fc2", "Fil d'actualités");
-            n("d601fc20", "Récent"),
+                n("ea5cd098", "Aller aux tendances");
+            n("c67e3fc2", "Fil d'actualités"),
+                n("d601fc20", "Récent"),
                 n("j43f99be", "Pertinence"),
                 n("ad6e11ac", "Trier les réponses par"),
                 n("b2311b70", "Vous ne pouvez pas accéder à ceci."),
@@ -3898,13 +3899,13 @@
                 }),
                 n("f5c7aaa7", function (e) {
                     return "hôte" + r(e.count, "", "s");
-                }),
-                n("fc56c8b1", function (e) {
-                    return "cohôte" + r(e.count, "", "s");
                 });
-            n("iba0f45d", function (e) {
-                return "intervenant" + r(e.count, "", "s");
+            n("fc56c8b1", function (e) {
+                return "cohôte" + r(e.count, "", "s");
             }),
+                n("iba0f45d", function (e) {
+                    return "intervenant" + r(e.count, "", "s");
+                }),
                 n("dc066955", function (e) {
                     return "auditeur" + r(e.count, "", "s");
                 }),
@@ -4934,9 +4935,9 @@
                 n("ff95a9cc", "Identifiant de la vidéo"),
                 n("a97e358e", "Lien de la vidéo"),
                 n("e10e8b46", "Affichage des vidéos des 100 derniers jours uniquement."),
-                n("ba37f6da", "Vue d'ensemble des vidéos"),
-                n("f19846b2", "Miniature de la vidéo");
-            n("ccd6f4a8", "Titre de la vidéo"),
+                n("ba37f6da", "Vue d'ensemble des vidéos");
+            n("f19846b2", "Miniature de la vidéo"),
+                n("ccd6f4a8", "Titre de la vidéo"),
                 n("c8410542", "Le nombre de fois que votre vidéo a été vue."),
                 n("a532072a", "Spectateurs"),
                 n("d9508ab0", "vues"),
@@ -5554,6 +5555,7 @@
                 n("bd7eb888", "Voir toutes les notes sur ce post"),
                 n("i97b83f6", "Une erreur est survenue lors de l'envoi de votre appel. Veuillez réessayer."),
                 n("a038ab9a", "Traduire la Note"),
+                n("icdb6d74", "Proposée par un contributeur IA expérimental répondant à des demandes de note. Comme tous les contributeurs, les intelligences artificielles peuvent faire des erreurs. Vérifiez l'exactitude des contributions."),
                 n("i606fc4c", "À propos des appels sur les Notes de la Communauté"),
                 n("b664c554", "Demander un examen complémentaire"),
                 n("ab66e1f2", "Voici comment ça marche :"),
@@ -5569,6 +5571,7 @@
                 n("ge25848a", "Statut actuel"),
                 n("d6db34cc", "D'autres évaluations sont nécessaires"),
                 n("ce8b505e", "Pas utile"),
+                n("j42c88b6", "Rédacteur de notes IA expérimental"),
                 n("e5be8156", "Statut de la note déterminé par un algorithme open source"),
                 n("fca23c42", "Suffisamment de contributeurs ayant des points de vue différents sont d'accord pour affirmer que cette note est utile. Elle est donc affichée en tant que contexte sur le post."),
                 n("hef420c2", "Cette note n'a pas encore été évaluée par suffisamment de contributeurs ayant des points de vue différents."),
@@ -5884,11 +5887,11 @@
                 n("ab1b3d38", "Les données de demandes de notes ne sont pas encore disponibles."),
                 n("c43fb933", "Accord et la Politique Développeur de X"),
                 n("af781666", "Quelles sont les opinions à ce sujet ?"),
-                n("a1f414ee", "Partager mon avis"),
-                n("ed88e742", "Copier le lien de ce sujet"),
+                n("a1f414ee", "Partager mon avis");
+            n("ed88e742", "Copier le lien de ce sujet"),
                 n("h92fe1be", "Malheureusement, vous ne pouvez pas accéder à la fonctionnalité Notes de la Communauté pour le moment."),
-                n("f0dc1434", "La fonctionnalité Notes de la Communauté n'est pour le moment disponible qu'aux États‑Unis.");
-            n("f8fc0b48", "Créer un dossier"),
+                n("f0dc1434", "La fonctionnalité Notes de la Communauté n'est pour le moment disponible qu'aux États‑Unis."),
+                n("f8fc0b48", "Créer un dossier"),
                 n("c14bcdde", "Rechercher dans les signets"),
                 n("e9c65c4a", "Recherche dans les signets"),
                 n("b92a21d9", function (e) {
@@ -6890,11 +6893,11 @@
                 n("j3d242ce", "Plage non valide"),
                 n("f4d07bd2", "Indiquez des détails facultatifs qui permettront aux candidats de découvrir plus facilement vos offres en effectuant une recherche."),
                 n("b8cbb51a", "Résumé du poste"),
-                n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés."),
-                n("b075c68a", "Modifier l'offre d'emploi"),
+                n("bda6881e", "Cette offre d'emploi a été importée depuis votre système de suivi des candidats (Applicant Tracking System, ou ATS). Veuillez noter que seuls des champs spécifiques peuvent être modifiés.");
+            n("b075c68a", "Modifier l'offre d'emploi"),
                 n("d4b6a6e0", "Spotlight sur le profil"),
-                n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts.");
-            n("af1cfd46", "Intégration ATS"),
+                n("j2dd3686", "Les offres mises en avant apparaissent au‑dessus de mes posts."),
+                n("af1cfd46", "Intégration ATS"),
                 n("d6fa2944", "La suppression de votre intégration ne supprimera pas vos offres importées."),
                 n("h99f11fa", "Supprimer l'intégration"),
                 n("eef1ae76", "Actuellement connecté"),
@@ -7872,10 +7875,7 @@
                 n("d7b8387e", "Si vous avez déjà annulé, vous n'avez rien d'autre à faire. Votre Souscription expirera automatiquement à la fin du cycle de facturation."),
                 n("f4166d9a", "Vous voulez annuler votre Souscription ?"),
                 n("b74ff5fc", "Si vous annulez, votre Souscription expirera automatiquement à la fin du cycle de facturation."),
-                n("ee9efbc8", "Continuer pour annuler"),
-                n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
-                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
-                n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play.");
+                n("ee9efbc8", "Continuer pour annuler");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7914,9 +7914,12 @@
                     i(e, t)
                 );
             }
-            n("i5f14be7", function (e) {
-                return "Heureux de vous retrouver, " + e.displayName;
-            }),
+            n("c5d9c77a", "Il semble qu'un petit problème s'est produit. Mais ne vous inquiétez pas, ce n'est pas de votre faute. Fermez cette fenêtre et réessayez."),
+                n("jda53c24", "Vous pouvez annuler votre Souscription via l'App Store Apple."),
+                n("g0a7a53e", "Vous pouvez annuler votre Souscription via la boutique Google Play."),
+                n("i5f14be7", function (e) {
+                    return "Heureux de vous retrouver, " + e.displayName;
+                }),
                 n("a76d58ba", "Statistiques des publicités"),
                 n("eccd0e1a", "Statistiques de l'organisation "),
                 n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
@@ -8912,11 +8915,11 @@
                 }),
                 n("b0b22805", function (e) {
                     return "Rendez-vous sur " + e.advertiserName;
-                }),
-                n("c67e71aa", "Regarder maintenant"),
+                });
+            n("c67e71aa", "Regarder maintenant"),
                 n("a6ada13e", "Acheter maintenant"),
-                n("j0f12222", "Voir plus");
-            n("f569f7c8", "Accéder au site Web"),
+                n("j0f12222", "Voir plus"),
+                n("f569f7c8", "Accéder au site Web"),
                 n("j0c6772a", "Visiter le site Web"),
                 n("f73003aa", "La vidéo sera lue après la publicité."),
                 n("b3112b8a", "Passer"),
@@ -13371,4 +13374,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.b4c3ae5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.4c5827ca.js.map

@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: a, isFullWidth: n, isLarge: c, leftControl: d, middleControl: h, position: m, rightControl: u, secondaryBar: g, style: B, subtitle: b, title: y, titleDomId: k, titleIconCell: f, titleIconCellSize: x, withBackground: C, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: a, isFullWidth: n, isLarge: c, leftControl: d, middleControl: h, position: m, rightControl: u, secondaryBar: g, style: B, subtitle: b, title: k, titleDomId: y, titleIconCell: f, titleIconCellSize: x, withBackground: C, withWideContainer: w } = this.props,
                         { isModal: Z } = this.context,
-                        v = a ? d : i.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        L = (function (e, t, o) {
+                        L = a ? d : i.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        _ = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!C, Z, !!g);
-                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: c, leftControl: v, middleControl: h, position: p(m, Z, r), rightControl: u, style: B, subtitle: b, title: y, titleDomId: k, titleIconCell: f, titleIconCellSize: x, withBackground: L, withWideContainer: w }), g || null);
+                    return i.createElement(i.Fragment, null, i.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: c, leftControl: L, middleControl: h, position: p(m, Z, r), rightControl: u, style: B, subtitle: b, title: k, titleDomId: y, titleIconCell: f, titleIconCellSize: x, withBackground: _, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -61,9 +61,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, rightControl: B, secondaryBar: b, subtitle: y, title: k } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, rightControl: B, secondaryBar: b, subtitle: k, title: y } = this.props,
                                 { isModal: f } = this.context;
-                            return i.createElement(r.Z, { style: f ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, i.createElement(d.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !f, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, ref: e, rightControl: B, secondaryBar: b, style: [f && u.appBarModal, t], subtitle: y, title: k, titleDomId: c.Q_ }));
+                            return i.createElement(r.Z, { style: f ? [u.childViewAppBarRoot, u.appBarZindex] : u.appBarZindex }, i.createElement(d.ZP, { backButtonType: o || (f ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !f, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: m, onBackClick: g, ref: e, rightControl: B, secondaryBar: b, style: [f && u.appBarModal, t], subtitle: k, title: y, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -74,8 +74,8 @@
                 render() {
                     const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: s, isFullWidth: c, isLarge: d, renderHeader: m, title: g, withoutBottomBarMobile: B } = this.props,
                         { isModal: b } = this.context,
-                        y = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return i.createElement(l.Z, null, i.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: g }), i.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, b && u.rootModal] }, !b && y, i.createElement(a.Z, { isFullWidth: c, isLarge: d, style: [u.container, b && u.containerModal, n] }, b ? i.createElement(h.Z, { style: u.viewport }, y, o) : o), t ? i.createElement(r.Z, { style: [u.bottomBarModal, !b && !B && u.bottomBarMobile] }, i.createElement(a.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                        k = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return i.createElement(l.Z, null, i.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: g }), i.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [u.root, b && u.rootModal] }, !b && k, i.createElement(a.Z, { isFullWidth: c, isLarge: d, style: [u.container, b && u.containerModal, n] }, b ? i.createElement(h.Z, { style: u.viewport }, k, o) : o), t ? i.createElement(r.Z, { style: [u.bottomBarModal, !b && !B && u.bottomBarMobile] }, i.createElement(a.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = n.Z);
@@ -158,19 +158,6 @@
             const B = c.default.create((e) => ({ container: { alignItems: "center", marginBottom: e.spaces.space32 }, imageWrapper: { width: "100%" }, image: { height: "100%", width: "100%" }, message: { marginHorizontal: e.spaces.space20, marginVertical: e.spaces.space32 } })),
                 b = u(g);
         },
-        748138: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var i = o(202784),
-                r = o(890601),
-                a = o(783427),
-                n = o(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Twitterversary.b36bd89a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Twitterversary.6e9dc93a.js.map

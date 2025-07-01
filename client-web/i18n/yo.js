@@ -16,10 +16,18 @@
                 var a, o;
             }
             a("c39b0e24", "X"),
+                a("bcd6bb0e", "Omọ-ẹgbẹ́"),
+                a("hd8c22d2", "Apẹ̀tù"),
+                a("c3153100", "Olú"),
                 a("jb38600c", "Kòsí"),
                 a("f07eac34", "Parody account"),
                 a("a41b5c2e", "Fan account"),
                 a("i428ea62", "Commentary account"),
+                a("jd859c9c", "A ti yọ ọ́ kúro ní Ààyè yìí."),
+                a("cfbea177", function (e) {
+                    return e.name + "’s Space";
+                }),
+                a("ab4fc8bc", "Àyè "),
                 a("ac0d27be", "Má bínú, a ti dá àkántì yìí dúró díẹ̀."),
                 a("bcee7444", "Sísọ àkántì dọ̀tun kùnà."),
                 a("e0cbf77a", "Fi fóònù kun u"),
@@ -60,9 +68,6 @@
                 a("h1cbdd30", "Jọ̀wọ́ ṣe ìsọdọ̀tun ojú ìwé náà kí o sì gbìyànjú lẹ́ẹ̀kan si."),
                 a("a5077d3e", "Ṣe ìsọdọ̀tun"),
                 a("b2648ba4", "Àkántì rẹ lè ma lè ṣe ìṣe yìí. Jọ̀wọ́ ṣe ìsọdọ̀tun ojú ìwé rẹ kí o sì gbìyànjú lẹ́ẹ̀kan si."),
-                a("bcd6bb0e", "Omọ-ẹgbẹ́"),
-                a("hd8c22d2", "Apẹ̀tù"),
-                a("c3153100", "Olú"),
                 a("fa9adac1", function (e) {
                     return 'Ṣàwárí "' + e.query + '"';
                 }),
@@ -75,19 +80,12 @@
                 a("c64e46f8", "This member was removed from the Community, so their posts are hidden."),
                 a("b3f1cb42", "A moderator hid this post for breaking a Community rule."),
                 a("cbd2dc9c", "You reported this post."),
-                a("cfbea177", function (e) {
-                    return e.name + "’s Space";
-                }),
-                a("ab4fc8bc", "Àyè "),
-                a("jd859c9c", "A ti yọ ọ́ kúro ní Ààyè yìí."),
                 a("c60ed9b0", "You are not authorized to join this Space."),
                 a("d8227e16", "You are not authorized to create this Space"),
                 a("f027fed8", "Picture-in-Picture"),
                 a("hd50e064", "Kìí ṣe nísìnyí "),
                 a("i76d640e", "We need your permission"),
                 a("fdaa0be8", "To speak in this Space, you’ll need to grant X access to your microphone. Please check your browser settings. "),
-                a("gea6cc1a", "Ǹ jẹ́ ó dá ọ lójú?"),
-                a("hb568af4", "Múdákẹ́"),
                 a("f7c8617a", "Kínni àwọn fọ̀nrán ohùn kúkurú?"),
                 a("ecc7d2ec", "Àwọn fọ̀nrán ohùn kúkurú jẹ́ àwọn àkókò tí ẹnikẹ́ni nínú Ààyè rẹ lè se kí wọ́n sì pín. Gbogbo àwọn fọ̀nrán ohùn kúkurú ma ń di ògbó lẹ́yìn ọgbọ̀n ọjọ́."),
                 a("d575ee02", "Ta ni ó lè se fọ̀nrán ohùn kúkurú?"),
@@ -105,16 +103,6 @@
                 a("jf03b37c", "Listen to the recording anytime. You can also share it with a post."),
                 a("fd05976b", "Learn more"),
                 a("b4f91a8a", "Ìkáhùnsílẹ̀ ń siṣẹ́"),
-                a("gb418012", "Welcome to Spaces"),
-                a("fec3c1e0", "Níbi tí àwọn ìtàkurọ̀sọ ohùn ti ń ṣẹlẹ̀ lọ́wọ́ ti nwáyé"),
-                a("j32eb4f8", "Add up to 10 speakers"),
-                a("j4f133a6", "You can invite anyone on X to speak."),
-                a("ed434ac6", "Spaces are public — anyone can join"),
-                a("e0025688", "Your Space, your rules"),
-                a("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
-                a("b0bc8330", "O tún lè dínà kí o sì fi àwọn ènìyàn sùn lórí Àyè."),
-                a("cb17a0f3", "Learn more"),
-                a("dcd77941", "Learn more"),
                 a("cc724cb0", "Sèdásílẹ̀ Fọ̀nrán Ohùn Kúkurú"),
                 a("cfd2f35e", "Fagile"),
                 a("c1df579e", "Tó kàn"),
@@ -128,6 +116,16 @@
                 a("a9ba3e28", "Àlàyé Aláàdáni"),
                 a("d5519f4a", "Ìwà Eléèébú"),
                 a("eb55363c", "Wọn ti fi Àyè yìí sùn"),
+                a("gb418012", "Welcome to Spaces"),
+                a("fec3c1e0", "Níbi tí àwọn ìtàkurọ̀sọ ohùn ti ń ṣẹlẹ̀ lọ́wọ́ ti nwáyé"),
+                a("j32eb4f8", "Add up to 10 speakers"),
+                a("j4f133a6", "You can invite anyone on X to speak."),
+                a("ed434ac6", "Spaces are public — anyone can join"),
+                a("e0025688", "Your Space, your rules"),
+                a("c1bc6f86", "As host, you control who’s allowed to speak. You also have the power to remove people you don’t want in your Space."),
+                a("b0bc8330", "O tún lè dínà kí o sì fi àwọn ènìyàn sùn lórí Àyè."),
+                a("cb17a0f3", "Learn more"),
+                a("dcd77941", "Learn more"),
                 a("i65de934", "You are listening anonymously"),
                 a("b1037050", "Manage Space"),
                 a("ic107434", "Turn on camera"),
@@ -906,10 +904,10 @@
                 a("bf9e181b", "Kọ́ sí i"),
                 a("e8e39f95", "Kọ́ sí i"),
                 a("e126dd3f", "Kọ́ sí i"),
-                a("i821844f", "Kọ́ sí i");
-            a("b0abbb17", "Kọ́ sí i"),
-                a("e7e0d88b", "Kọ́ sí i"),
-                a("i560665f", "Kọ́ sí i"),
+                a("i821844f", "Kọ́ sí i"),
+                a("b0abbb17", "Kọ́ sí i"),
+                a("e7e0d88b", "Kọ́ sí i");
+            a("i560665f", "Kọ́ sí i"),
                 a("f6e774d9", "Kọ́ sí i"),
                 a("h486f755", "Kọ́ sí i"),
                 a("bab41dab", "Kọ́ sí i"),
@@ -1125,6 +1123,7 @@
                 a("dbb51952", "Protect your posts?"),
                 a("de735de6", "This will make them visible only to your X followers."),
                 a("c5d4192a", "Dáàbòbò"),
+                a("gea6cc1a", "Ǹ jẹ́ ó dá ọ lójú?"),
                 a("d9ddba70", "Communities are public, so protecting your account will hide your previous posts. You also won’t be able to post in the Community until your account is public again."),
                 a("f527b322", "Dáàbòbò àkáǹtì mi"),
                 a("d165c992", "Ẹnikẹni lò lè táàgì rẹ"),
@@ -1321,9 +1320,10 @@
                     return "Executing code" + e.ttc_tool_usage_card;
                 }),
                 a("aa9d42c0", "Searching the web"),
-                a("dce1817a", "Searching on 𝕏"),
-                a("f7151564", "Searching users on 𝕏"),
+                a("c731d702", "Searching on X"),
+                a("d0e02476", "Searching users on X"),
                 a("c43ef93e", "Browsing web page"),
+                a("dab166ec", "Searching user posts on X"),
                 a("jb097f6e", "Executing code"),
                 a("ead81122", "Something went wrong, please refresh to reconnect or try again."),
                 a("f808a13a", "Rate limit exceeded. Please wait a few moments then try again."),
@@ -1817,6 +1817,7 @@
                 a("g00b4c55", function (e) {
                     return "Share @" + e.screenName + " via...";
                 }),
+                a("hb568af4", "Múdákẹ́"),
                 a("bb1cbeb6", "Yọ Ìdákẹ́ kúrò"),
                 a("h2f62206", "Ń mú aṣàmúlò dákẹ́"),
                 a("h59f52ee", "A ti ṣe áṣeyorí láti mú u dákẹ́."),
@@ -1917,11 +1918,11 @@
                 a("ef1649e2", "X - Keyboard shortcuts"),
                 a("aefd89c8", "Yíyípò"),
                 a("cafdefb2", "Àwọn ìṣe"),
-                a("dda42cf2", "Columns & Decks"),
-                a("e8a12604", "Pèsè àkọ́lé (kò pọn dandan)");
-            a("eabf2209", function (e) {
-                return "GIF tí " + e.providerName + " pèsè";
-            }),
+                a("dda42cf2", "Columns & Decks");
+            a("e8a12604", "Pèsè àkọ́lé (kò pọn dandan)"),
+                a("eabf2209", function (e) {
+                    return "GIF tí " + e.providerName + " pèsè";
+                }),
                 a("a613e720", "Ṣe àdàkọ ojú òpó sí GIF"),
                 a("aeca1239", function (e) {
                     return "Bold" + e.ttc_rich_text_composer;
@@ -2977,9 +2978,9 @@
                 a("e06b864c", "Ó dà bí ẹni pé ò ń gbádùn ìtàkùrọ̀sọ yìí"),
                 a("a078ff70", "O fẹ́ rí àwọn àkóónú síi láti ọ̀dọ̀ àwọn ènìyàn tí o tàkùrọ̀sọ pẹ̀lú bi? ́Bèrẹ̀ ìwákiri àkóónú láti inú àwọn àkáǹtì tuntun."),
                 a("cb80300e", "Fò lọ sí ojúlé ìròyìn tuntun"),
-                a("ea5cd098", "Fò lọ sí ohun tó ń gbalégboko"),
-                a("c67e3fc2", "Ojúlé Ìròyìn Tuntun");
-            a("d601fc20", "Tuntun"),
+                a("ea5cd098", "Fò lọ sí ohun tó ń gbalégboko");
+            a("c67e3fc2", "Ojúlé Ìròyìn Tuntun"),
+                a("d601fc20", "Tuntun"),
                 a("j43f99be", "Relevancy"),
                 a("ad6e11ac", "Sort replies by"),
                 a("b2311b70", "Èyí kò sí nílẹ̀ fún ọ"),
@@ -3897,13 +3898,13 @@
                 }),
                 a("f5c7aaa7", function (e) {
                     return "host" + i(e.count, "", "s");
-                }),
-                a("fc56c8b1", function (e) {
-                    return "co-host" + i(e.count, "", "s");
                 });
-            a("iba0f45d", function (e) {
-                return "speaker" + i(e.count, "", "s");
+            a("fc56c8b1", function (e) {
+                return "co-host" + i(e.count, "", "s");
             }),
+                a("iba0f45d", function (e) {
+                    return "speaker" + i(e.count, "", "s");
+                }),
                 a("dc066955", function (e) {
                     return "listener" + i(e.count, "", "s");
                 }),
@@ -4933,9 +4934,9 @@
                 a("ff95a9cc", "Video ID"),
                 a("a97e358e", "Video Link"),
                 a("e10e8b46", "Only showing the videos from the last 100 days."),
-                a("ba37f6da", "Video overview"),
-                a("f19846b2", "Video thumbnail");
-            a("ccd6f4a8", "Video title"),
+                a("ba37f6da", "Video overview");
+            a("f19846b2", "Video thumbnail"),
+                a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
                 a("a532072a", "Viewers"),
                 a("d9508ab0", "views"),
@@ -5553,6 +5554,7 @@
                 a("bd7eb888", "See all notes on this post"),
                 a("i97b83f6", "Àṣíṣe kan wáyé nínú ìsàkóólẹ̀ ẹ̀bẹ̀ rẹ, jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan síi bó bá yá."),
                 a("a038ab9a", "Translate note"),
+                a("icdb6d74", "Proposed by an experimental AI contributor responding to requests for a note. Like all contributors, AIs can make mistakes — verify accuracy."),
                 a("i606fc4c", "Nípa àwọn ẹ̀bẹ̀ Àwọn Àkọsílẹ̀ Àwùjọ"),
                 a("b664c554", "Béèrè àlékún ìsàtúnyẹ̀wò olùdásí"),
                 a("ab66e1f2", "Báyìí ni ó sé ń siṣẹ́:"),
@@ -5568,6 +5570,7 @@
                 a("ge25848a", "Ipò tó wà lọ́wọ́lọ́wọ́"),
                 a("d6db34cc", "Nílò ìgbéléwọ̀n síi"),
                 a("ce8b505e", "Kò ṣe ìrànwọ́"),
+                a("j42c88b6", "Experimental AI Note Writer"),
                 a("e5be8156", "Note status computed by open-source algorithm"),
                 a("fca23c42", "Enough contributors from different perspectives agreed that this note is helpful, so it’s being shown as context on the post."),
                 a("hef420c2", "Ìwé àkọsílẹ̀ yìí kò tí ṣe ìgbéwọ̀n nípasẹ̀ àwọn olùdásí láti oríṣiríṣi èrò."),
@@ -5883,11 +5886,11 @@
                 a("ab1b3d38", "Note request data isn’t available yet"),
                 a("c43fb933", "X Developer Agreement and Policy"),
                 a("af781666", "What do people think?"),
-                a("a1f414ee", "Share thoughts"),
-                a("ed88e742", "Ṣe àdàkọ ojú òpó sí Àkọ́lé"),
+                a("a1f414ee", "Share thoughts");
+            a("ed88e742", "Ṣe àdàkọ ojú òpó sí Àkọ́lé"),
                 a("h92fe1be", "Ó ṣeni láàánú, Àwọn Àkọsílẹ̀ Àwùjọ kò sí nílẹ̀ fún ọ ní àsìkò yìí."),
-                a("f0dc1434", "Orílẹ̀-èdè U.S nìkan ni Àwọn Àkọsílẹ̀ Àwùjọ wà nílẹ̀ fún báyìí");
-            a("f8fc0b48", "Ṣèdásílẹ̀ Fódà kan"),
+                a("f0dc1434", "Orílẹ̀-èdè U.S nìkan ni Àwọn Àkọsílẹ̀ Àwùjọ wà nílẹ̀ fún báyìí"),
+                a("f8fc0b48", "Ṣèdásílẹ̀ Fódà kan"),
                 a("c14bcdde", "Search Bookmarks"),
                 a("e9c65c4a", "Bookmarks search"),
                 a("b92a21d9", function (e) {
@@ -6889,11 +6892,11 @@
                 a("j3d242ce", "Invalid range"),
                 a("f4d07bd2", "Include optional details to make it easier for candidates to discover your roles with search."),
                 a("b8cbb51a", "Job Summary"),
-                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified."),
-                a("b075c68a", "Edit job"),
+                a("bda6881e", "This job has been imported from your Applicant Tracking System (ATS). Please note that only specific fields can be modified.");
+            a("b075c68a", "Edit job"),
                 a("d4b6a6e0", "Ojútáyé Prófaìlì"),
-                a("j2dd3686", "Highlight featured jobs above my posts.");
-            a("af1cfd46", "ATS integration"),
+                a("j2dd3686", "Highlight featured jobs above my posts."),
+                a("af1cfd46", "ATS integration"),
                 a("d6fa2944", "Deleting your integration will not delete your imported jobs."),
                 a("h99f11fa", "Delete integration"),
                 a("eef1ae76", "Currently connected"),
@@ -7871,10 +7874,7 @@
                 a("d7b8387e", "Bí o bá ti wọ́gilé ìforúkọsílẹ̀ rẹ tẹ́lẹ̀, kò sí ohun mìíràn láti ṣe. Ìforúkọsílẹ̀ rẹ yóó wá sópin láìfowóyí lópin àsìkò ìdíyelé náà."),
                 a("f4166d9a", "O fẹ́ wọ́gi lé Ìforúkọsílẹ̀ rẹ bí?"),
                 a("b74ff5fc", "Bí o bá wọ́gilé e ìforúkọsílẹ̀ rẹ yóò wá sópin láìfowóyí lópin àsìkò ìdíyelé náà."),
-                a("ee9efbc8", "Tẹ̀síwájú pẹ̀lú ìwọ́gilé"),
-                a("c5d9c77a", "Ó dà bí ẹni wípé ìdíwọ́ kékéré kan fẹ́ wá. Má dààmú, kì í se ẹ̀bi rẹ. Tẹ ìsàlẹ̀ yií láti gbìyànjú sí i."),
-                a("jda53c24", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Apple App Store."),
-                a("g0a7a53e", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Google Play Store.");
+                a("ee9efbc8", "Tẹ̀síwájú pẹ̀lú ìwọ́gilé");
             function r(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7913,9 +7913,12 @@
                     s(e, n)
                 );
             }
-            a("i5f14be7", function (e) {
-                return "Welcome back, " + e.displayName;
-            }),
+            a("c5d9c77a", "Ó dà bí ẹni wípé ìdíwọ́ kékéré kan fẹ́ wá. Má dààmú, kì í se ẹ̀bi rẹ. Tẹ ìsàlẹ̀ yií láti gbìyànjú sí i."),
+                a("jda53c24", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Apple App Store."),
+                a("g0a7a53e", "O lè wọgi lé Ìforúkọsílẹ̀ rẹ̀ Láti inú Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "Welcome back, " + e.displayName;
+                }),
                 a("a76d58ba", "Ads Analytics"),
                 a("eccd0e1a", "Organization Analytics"),
                 a("deea1708", "Want to view analytics across all your X accounts?"),
@@ -8911,11 +8914,11 @@
                 }),
                 a("b0b22805", function (e) {
                     return "Visit " + e.advertiserName;
-                }),
-                a("c67e71aa", "Watch now"),
+                });
+            a("c67e71aa", "Watch now"),
                 a("a6ada13e", "Shop now"),
-                a("j0f12222", "Wò sì i");
-            a("f569f7c8", "Go to website"),
+                a("j0f12222", "Wò sì i"),
+                a("f569f7c8", "Go to website"),
                 a("j0c6772a", "Visit website"),
                 a("f73003aa", "Video will play after ad"),
                 a("b3112b8a", "Fò ó"),
@@ -13370,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.d3e6c42a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.cffb8f2a.js.map

@@ -13,10 +13,18 @@
                 var a, r;
             }
             a("c39b0e24", "X"),
+                a("bcd6bb0e", "Lid"),
+                a("hd8c22d2", "Mod."),
+                a("c3153100", "Beh."),
                 a("jb38600c", "Geen"),
                 a("f07eac34", "Parodie-account"),
                 a("a41b5c2e", "Fanaccount"),
                 a("i428ea62", "Commentaaraccount"),
+                a("jd859c9c", "Je bent uit deze Space verwijderd."),
+                a("cfbea177", function (e) {
+                    return "Space van " + e.name;
+                }),
+                a("ab4fc8bc", "Space"),
                 a("ac0d27be", "Sorry! Dit account is opgeschort."),
                 a("bcee7444", "Accountupdate mislukt."),
                 a("e0cbf77a", "Telefoonnummer toevoegen"),
@@ -57,9 +65,6 @@
                 a("h1cbdd30", "Vernieuw de pagina en probeer het opnieuw."),
                 a("a5077d3e", "Vernieuwen"),
                 a("b2648ba4", "Mogelijk is je account niet bevoegd om deze actie uit te voeren. Ververs de pagina en probeer het opnieuw."),
-                a("bcd6bb0e", "Lid"),
-                a("hd8c22d2", "Mod."),
-                a("c3153100", "Beh."),
                 a("fa9adac1", function (e) {
                     return "Zoeken naar '" + e.query + "'";
                 }),
@@ -72,19 +77,12 @@
                 a("c64e46f8", "Dit lid is verwijderd uit de Community, dus zijn of haar posts zijn verborgen."),
                 a("b3f1cb42", "Een moderator heeft deze post verborgen vanwege het overtreden van een Community-regel."),
                 a("cbd2dc9c", "Je hebt deze post gerapporteerd."),
-                a("cfbea177", function (e) {
-                    return "Space van " + e.name;
-                }),
-                a("ab4fc8bc", "Space"),
-                a("jd859c9c", "Je bent uit deze Space verwijderd."),
                 a("c60ed9b0", "Je bent niet gemachtigd om deel te nemen aan deze Space."),
                 a("d8227e16", "Je bent niet gemachtigd om deze Space te maken"),
                 a("f027fed8", "Beeld-in-beeld"),
                 a("hd50e064", "Niet nu"),
                 a("i76d640e", "We hebben je toestemming nodig"),
                 a("fdaa0be8", "Om mee te kunnen praten in deze Space, moet je X toegang geven tot je microfoon. Controleer je browser-instellingen. "),
-                a("gea6cc1a", "Weet je het zeker?"),
-                a("hb568af4", "Negeren"),
                 a("f7c8617a", "Wat zijn clips?"),
                 a("ecc7d2ec", "Clips zijn opnames van momenten in een Space die iedereen kan maken en delen. Alle clips verlopen na 30 dagen."),
                 a("d575ee02", "Wie kan een clip maken?"),
@@ -102,16 +100,6 @@
                 a("jf03b37c", "Luister op elk moment naar de opname. Je kan deze ook delen via een post."),
                 a("fd05976b", "Meer informatie"),
                 a("b4f91a8a", "Opname actief"),
-                a("gb418012", "Welkom bij Spaces"),
-                a("fec3c1e0", "Waar live-audiogesprekken plaatsvinden"),
-                a("j32eb4f8", "Voeg tot 10 mensen toe die meepraten"),
-                a("j4f133a6", "Je kan iedereen op X uitnodigen om mee te praten."),
-                a("ed434ac6", "Spaces zijn openbaar en iedereen kan deelnemen"),
-                a("e0025688", "Jouw space, jouw regels"),
-                a("c1bc6f86", "Als host bepaal jij wie mag meepraten. Je kan ook mensen verwijderen die je niet in je Space wil hebben."),
-                a("b0bc8330", "Je kan mensen in een Space ook blokkeren en rapporteren."),
-                a("cb17a0f3", "Meer informatie"),
-                a("dcd77941", "Meer informatie"),
                 a("cc724cb0", "Clip maken"),
                 a("cfd2f35e", "Annuleren"),
                 a("c1df579e", "Volgende"),
@@ -125,6 +113,16 @@
                 a("a9ba3e28", "Privégegevens"),
                 a("d5519f4a", "Beledigend gedrag"),
                 a("eb55363c", "Deze Space is gerapporteerd"),
+                a("gb418012", "Welkom bij Spaces"),
+                a("fec3c1e0", "Waar live-audiogesprekken plaatsvinden"),
+                a("j32eb4f8", "Voeg tot 10 mensen toe die meepraten"),
+                a("j4f133a6", "Je kan iedereen op X uitnodigen om mee te praten."),
+                a("ed434ac6", "Spaces zijn openbaar en iedereen kan deelnemen"),
+                a("e0025688", "Jouw space, jouw regels"),
+                a("c1bc6f86", "Als host bepaal jij wie mag meepraten. Je kan ook mensen verwijderen die je niet in je Space wil hebben."),
+                a("b0bc8330", "Je kan mensen in een Space ook blokkeren en rapporteren."),
+                a("cb17a0f3", "Meer informatie"),
+                a("dcd77941", "Meer informatie"),
                 a("i65de934", "Je luistert anoniem"),
                 a("b1037050", "Space beheren"),
                 a("ic107434", "Camera inschakelen"),
@@ -903,10 +901,10 @@
                 a("bf9e181b", "Meer informatie"),
                 a("e8e39f95", "Meer informatie"),
                 a("e126dd3f", "Meer informatie"),
-                a("i821844f", "Meer informatie");
-            a("b0abbb17", "Meer informatie"),
-                a("e7e0d88b", "Meer informatie"),
-                a("i560665f", "Meer informatie"),
+                a("i821844f", "Meer informatie"),
+                a("b0abbb17", "Meer informatie"),
+                a("e7e0d88b", "Meer informatie");
+            a("i560665f", "Meer informatie"),
                 a("f6e774d9", "Meer informatie"),
                 a("h486f755", "Meer informatie"),
                 a("bab41dab", "Meer informatie"),
@@ -1122,6 +1120,7 @@
                 a("dbb51952", "Je posts beschermen?"),
                 a("de735de6", "Hierdoor kunnen alleen je volgers op X dit zien."),
                 a("c5d4192a", "Afschermen"),
+                a("gea6cc1a", "Weet je het zeker?"),
                 a("d9ddba70", "Community's zijn openbaar, dus het afschermen van je account verbergt je eerdere posts. Je kan ook niet posten in de Community totdat je account weer openbaar is."),
                 a("f527b322", "Mijn account afschermen"),
                 a("d165c992", "Iedereen kan jou taggen"),
@@ -1318,9 +1317,10 @@
                     return "Code uitvoeren" + e.ttc_tool_usage_card;
                 }),
                 a("aa9d42c0", "Zoeken op het web"),
-                a("dce1817a", "Zoeken op X"),
-                a("f7151564", "Gebruikers zoeken op X"),
+                a("c731d702", "Searching on X"),
+                a("d0e02476", "Searching users on X"),
                 a("c43ef93e", "Webpagina doorzoeken"),
+                a("dab166ec", "Searching user posts on X"),
                 a("jb097f6e", "Code uitvoeren"),
                 a("ead81122", "Er is iets misgegaan. Vernieuw om opnieuw verbinding te maken of probeer het opnieuw."),
                 a("f808a13a", "De limiet is overschreden. Wacht een paar minuten en probeer het opnieuw."),
@@ -1814,6 +1814,7 @@
                 a("g00b4c55", function (e) {
                     return "@" + e.screenName + " delen via ...";
                 }),
+                a("hb568af4", "Negeren"),
                 a("bb1cbeb6", "Niet meer negeren"),
                 a("h2f62206", "Gebruiker wordt genegeerd"),
                 a("h59f52ee", "Genegeerd."),
@@ -1914,11 +1915,11 @@
                 a("ef1649e2", "X - Sneltoetsen"),
                 a("aefd89c8", "Navigatie"),
                 a("cafdefb2", "Acties"),
-                a("dda42cf2", "Kolommen en Decks"),
-                a("e8a12604", "Een onderschrift toevoegen (optioneel)");
-            a("eabf2209", function (e) {
-                return "GIF verzorgd door " + e.providerName;
-            }),
+                a("dda42cf2", "Kolommen en Decks");
+            a("e8a12604", "Een onderschrift toevoegen (optioneel)"),
+                a("eabf2209", function (e) {
+                    return "GIF verzorgd door " + e.providerName;
+                }),
                 a("a613e720", "GIF-URL kopiëren"),
                 a("aeca1239", function (e) {
                     return "Vet" + e.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 a("e06b864c", "Het lijkt erop dat je dit gesprek leuk vindt"),
                 a("a078ff70", "Wil je meer content bekijken van de mensen die een interactie zijn aangegaan met deze collectie? Ga content ontdekken van nieuwe accounts."),
                 a("cb80300e", "Doorgaan naar tijdlijn startpagina"),
-                a("ea5cd098", "Doorgaan naar Trending"),
-                a("c67e3fc2", "Startpaginatijdlijn");
-            a("d601fc20", "Nieuwste"),
+                a("ea5cd098", "Doorgaan naar Trending");
+            a("c67e3fc2", "Startpaginatijdlijn"),
+                a("d601fc20", "Nieuwste"),
                 a("j43f99be", "Relevantie"),
                 a("ad6e11ac", "Antwoorden sorteren op"),
                 a("b2311b70", "Dit is niet beschikbaar voor jou"),
@@ -3894,13 +3895,13 @@
                 }),
                 a("f5c7aaa7", function (e) {
                     return "host" + r(e.count, "", "s");
-                }),
-                a("fc56c8b1", function (e) {
-                    return "co-host" + r(e.count, "", "s");
                 });
-            a("iba0f45d", function (e) {
-                return "spreker" + r(e.count, "", "s");
+            a("fc56c8b1", function (e) {
+                return "co-host" + r(e.count, "", "s");
             }),
+                a("iba0f45d", function (e) {
+                    return "spreker" + r(e.count, "", "s");
+                }),
                 a("dc066955", function (e) {
                     return "luisteraar" + r(e.count, "", "s");
                 }),
@@ -4930,9 +4931,9 @@
                 a("ff95a9cc", "Video-ID"),
                 a("a97e358e", "Videolink"),
                 a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond."),
-                a("ba37f6da", "Video-overzicht"),
-                a("f19846b2", "Videominiatuur");
-            a("ccd6f4a8", "Videotitel"),
+                a("ba37f6da", "Video-overzicht");
+            a("f19846b2", "Videominiatuur"),
+                a("ccd6f4a8", "Videotitel"),
                 a("c8410542", "Het aantal keer dat je video is bekeken"),
                 a("a532072a", "Kijkers"),
                 a("d9508ab0", "weergaven"),
@@ -5550,6 +5551,7 @@
                 a("bd7eb888", "Bekijk alle Notes op deze post"),
                 a("i97b83f6", "Er is een fout opgetreden bij het versturen van je bezwaar. Probeer het opnieuw."),
                 a("a038ab9a", "Opmerking vertalen"),
+                a("icdb6d74", "Voorgesteld door een experimentele AI-bijdrager die reageert op verzoeken voor een opmerking. Net als alle bijdragers kunnen AI's fouten maken, dus controleer de opmerking op nauwkeurigheid."),
                 a("i606fc4c", "Over bezwaren tegen Community-opmerkingen"),
                 a("b664c554", "Extra bijdragersbeoordelingen aanvragen"),
                 a("ab66e1f2", "Hoe het werkt:"),
@@ -5565,6 +5567,7 @@
                 a("ge25848a", "Huidige status"),
                 a("d6db34cc", "Heeft meer beoordelingen nodig"),
                 a("ce8b505e", "Niet nuttig"),
+                a("j42c88b6", "Experimentele schrijver van AI-opmerkingen"),
                 a("e5be8156", "Status berekend door open-source algoritme"),
                 a("fca23c42", "Voldoende bijdragers met verschillende gezichtspunten zijn het erover eens dat deze Note nuttig is, vandaar dat deze wordt getoond als context in de post."),
                 a("hef420c2", "Deze opmerking is nog niet vaak genoeg beoordeeld door bijdragers met verschillende gezichtspunten."),
@@ -5880,11 +5883,11 @@
                 a("ab1b3d38", "Gegevens over verzoeken om opmerkingen zijn nog niet beschikbaar"),
                 a("c43fb933", "de Ontwikkelaarsovereenkomst en het Ontwikkelaarsbeleid van X"),
                 a("af781666", "Wat vinden mensen?"),
-                a("a1f414ee", "Gedachten delen"),
-                a("ed88e742", "Link naar Onderwerp kopiëren"),
+                a("a1f414ee", "Gedachten delen");
+            a("ed88e742", "Link naar Onderwerp kopiëren"),
                 a("h92fe1be", "Helaas is Community Notes momenteel niet voor jou beschikbaar"),
-                a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten");
-            a("f8fc0b48", "Map maken"),
+                a("f0dc1434", "Community-opmerkingen is momenteel alleen beschikbaar in de Verenigde Staten"),
+                a("f8fc0b48", "Map maken"),
                 a("c14bcdde", "Bladwijzers doorzoeken"),
                 a("e9c65c4a", "Bladwijzers doorzoeken"),
                 a("b92a21d9", function (e) {
@@ -6886,11 +6889,11 @@
                 a("j3d242ce", "Ongeldig bereik"),
                 a("f4d07bd2", "Voeg optionele details toe om het makkelijker te maken voor kandidaten om je vacatures te ontdekken met zoekopdrachten."),
                 a("b8cbb51a", "Samenvatting vacature"),
-                a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd."),
-                a("b075c68a", "Vacature bewerken"),
+                a("bda6881e", "Deze functie is geïmporteerd uit je Applicant Tracking System (ATS). Houd er rekening mee dat alleen specifieke velden kunnen worden gewijzigd.");
+            a("b075c68a", "Vacature bewerken"),
                 a("d4b6a6e0", "Profielspotlight"),
-                a("j2dd3686", "Licht vacatures uit boven mijn posts.");
-            a("af1cfd46", "ATS-integratie"),
+                a("j2dd3686", "Licht vacatures uit boven mijn posts."),
+                a("af1cfd46", "ATS-integratie"),
                 a("d6fa2944", "Als je je integratie verwijdert, worden je geïmporteerde vacatures niet verwijderd."),
                 a("h99f11fa", "Integratie verwijderen"),
                 a("eef1ae76", "Momenteel verbonden"),
@@ -7868,10 +7871,7 @@
                 a("d7b8387e", "Als je jouw Abonnement al hebt opgezegd, hoef je verder niets te doen. Je Abonnement wordt automatisch beëindigd aan het einde van de factureringsperiode."),
                 a("f4166d9a", "Wil je je Abonnement opzeggen?"),
                 a("b74ff5fc", "Als je opzegt, wordt je Abonnement automatisch beëindigd aan het einde van de factureringsperiode."),
-                a("ee9efbc8", "Doorgaan naar opzeggen"),
-                a("c5d9c77a", "Het lijkt erop dat er even iets misging. Maak je geen zorgen, dat ligt niet aan jou. Sluit dit venster en probeer het opnieuw."),
-                a("jda53c24", "Je kan je Abonnement opzeggen via de Apple App Store."),
-                a("g0a7a53e", "Je kan je Abonnement opzeggen via de Google Play Store.");
+                a("ee9efbc8", "Doorgaan naar opzeggen");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7910,9 +7910,12 @@
                     o(e, n)
                 );
             }
-            a("i5f14be7", function (e) {
-                return "Welkom terug, " + e.displayName;
-            }),
+            a("c5d9c77a", "Het lijkt erop dat er even iets misging. Maak je geen zorgen, dat ligt niet aan jou. Sluit dit venster en probeer het opnieuw."),
+                a("jda53c24", "Je kan je Abonnement opzeggen via de Apple App Store."),
+                a("g0a7a53e", "Je kan je Abonnement opzeggen via de Google Play Store."),
+                a("i5f14be7", function (e) {
+                    return "Welkom terug, " + e.displayName;
+                }),
                 a("a76d58ba", "Advertentie-analyses"),
                 a("eccd0e1a", "Organisatie-analyses"),
                 a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
@@ -8908,11 +8911,11 @@
                 }),
                 a("b0b22805", function (e) {
                     return e.advertiserName + " bezoeken";
-                }),
-                a("c67e71aa", "Nu bekijken"),
+                });
+            a("c67e71aa", "Nu bekijken"),
                 a("a6ada13e", "Winkel nu"),
-                a("j0f12222", "Meer bekijken");
-            a("f569f7c8", "Naar website gaan"),
+                a("j0f12222", "Meer bekijken"),
+                a("f569f7c8", "Naar website gaan"),
                 a("j0c6772a", "Website bekijken"),
                 a("f73003aa", "Video wordt afgespeeld na de advertentie"),
                 a("b3112b8a", "Overslaan"),
@@ -13381,4 +13384,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.f92708ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.0b3ee03a.js.map

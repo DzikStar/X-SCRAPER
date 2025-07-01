@@ -12,10 +12,18 @@
                 return h;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Thành viên"),
+                t("hd8c22d2", "NKD"),
+                t("c3153100", "QTV"),
                 t("jb38600c", "Không có"),
                 t("f07eac34", "Tài khoản giễu nhại"),
                 t("a41b5c2e", "Tài khoản người hâm mộ"),
                 t("i428ea62", "Tài khoản bình luận"),
+                t("jd859c9c", "Bạn đã bị loại khỏi Phòng này."),
+                t("cfbea177", function (n) {
+                    return "Phòng của " + n.name;
+                }),
+                t("ab4fc8bc", "Phòng"),
                 t("ac0d27be", "Rất tiếc, tài khoản này đã bị tạm ngưng."),
                 t("bcee7444", "Cập nhật tài khoản thất bại."),
                 t("e0cbf77a", "Thêm điện thoại"),
@@ -56,9 +64,6 @@
                 t("h1cbdd30", "Vui lòng làm mới trang và thử lại."),
                 t("a5077d3e", "Làm mới"),
                 t("b2648ba4", "Tài khoản của bạn có thể không được cho phép thực hiện hành động này. Vui lòng làm mới trang và thử lại."),
-                t("bcd6bb0e", "Thành viên"),
-                t("hd8c22d2", "NKD"),
-                t("c3153100", "QTV"),
                 t("fa9adac1", function (n) {
                     return 'Tìm kiếm "' + n.query + '"';
                 }),
@@ -71,19 +76,12 @@
                 t("c64e46f8", "Thành viên này đã bị xóa khỏi Cộng đồng, vì vậy bài đăng của họ bị ẩn."),
                 t("b3f1cb42", "Người kiểm duyệt đã ẩn bài đăng này vì vi phạm quy tắc Cộng đồng."),
                 t("cbd2dc9c", "Bạn đã báo cáo bài đăng này."),
-                t("cfbea177", function (n) {
-                    return "Phòng của " + n.name;
-                }),
-                t("ab4fc8bc", "Phòng"),
-                t("jd859c9c", "Bạn đã bị loại khỏi Phòng này."),
                 t("c60ed9b0", "Bạn không có quyền tham gia Phòng này."),
                 t("d8227e16", "Bạn không có quyền tạo Phòng này"),
                 t("f027fed8", "Hình trong hình"),
                 t("hd50e064", "Không phải bây giờ"),
                 t("i76d640e", "Chúng tôi cần bạn cho phép"),
                 t("fdaa0be8", "Để lên tiếng trong Phòng này, bạn cần cấp cho X quyền truy cập vào micrô của mình. Vui lòng kiểm tra cài đặt trình duyệt của bạn. "),
-                t("gea6cc1a", "Bạn có chắc không?"),
-                t("hb568af4", "Tắt tiếng"),
                 t("f7c8617a", "Đoạn clip là gì?"),
                 t("ecc7d2ec", "Đoạn clip là những khoảnh khắc được ghi lại mà bất kỳ ai trong Phòng cũng có thể tạo và chia sẻ. Tất cả các đoạn clip hết hạn sau 30 ngày."),
                 t("d575ee02", "Ai có thể tạo đoạn clip?"),
@@ -101,16 +99,6 @@
                 t("jf03b37c", "Nghe bản ghi mọi lúc. Bạn cũng có thể chia sẻ bản ghi bằng một bài đăng."),
                 t("fd05976b", "Tìm hiểu thêm"),
                 t("b4f91a8a", "Ghi đang hiện hoạt"),
-                t("gb418012", "Chào mừng bạn đến với Spaces"),
-                t("fec3c1e0", "Khi có trò chuyện âm thanh trực tiếp"),
-                t("j32eb4f8", "Thêm tối đa 10 người nói"),
-                t("j4f133a6", "Bạn có thể mời bất kỳ ai trên X phát biểu."),
-                t("ed434ac6", "Spaces ở chế độ công khai — ai cũng có thể tham gia"),
-                t("e0025688", "Phòng của bạn, quy tắc của bạn"),
-                t("c1bc6f86", "Là chủ phòng, bạn kiểm soát ai được phép nói. Bạn cũng có quyền xóa những người bạn không muốn ở trong Phòng của bạn ra khỏi Phòng."),
-                t("b0bc8330", "Bạn cũng có thể chặn và báo cáo mọi người trong Phòng."),
-                t("cb17a0f3", "Tìm hiểu thêm"),
-                t("dcd77941", "Tìm hiểu thêm"),
                 t("cc724cb0", "Tạo đoạn clip"),
                 t("cfd2f35e", "Hủy"),
                 t("c1df579e", "Kế tiếp"),
@@ -124,6 +112,16 @@
                 t("a9ba3e28", "Thông tin cá nhân"),
                 t("d5519f4a", "Hành vi lạm dụng"),
                 t("eb55363c", "Phòng này đã được báo cáo"),
+                t("gb418012", "Chào mừng bạn đến với Spaces"),
+                t("fec3c1e0", "Khi có trò chuyện âm thanh trực tiếp"),
+                t("j32eb4f8", "Thêm tối đa 10 người nói"),
+                t("j4f133a6", "Bạn có thể mời bất kỳ ai trên X phát biểu."),
+                t("ed434ac6", "Spaces ở chế độ công khai — ai cũng có thể tham gia"),
+                t("e0025688", "Phòng của bạn, quy tắc của bạn"),
+                t("c1bc6f86", "Là chủ phòng, bạn kiểm soát ai được phép nói. Bạn cũng có quyền xóa những người bạn không muốn ở trong Phòng của bạn ra khỏi Phòng."),
+                t("b0bc8330", "Bạn cũng có thể chặn và báo cáo mọi người trong Phòng."),
+                t("cb17a0f3", "Tìm hiểu thêm"),
+                t("dcd77941", "Tìm hiểu thêm"),
                 t("i65de934", "Bạn đang nghe ẩn danh"),
                 t("b1037050", "Quản lý phòng"),
                 t("ic107434", "Bật camera"),
@@ -902,10 +900,10 @@
                 t("bf9e181b", "Tìm hiểu thêm"),
                 t("e8e39f95", "Learn more"),
                 t("e126dd3f", "Learn more"),
-                t("i821844f", "Learn more");
-            t("b0abbb17", "Learn more"),
-                t("e7e0d88b", "Learn more"),
-                t("i560665f", "Learn more"),
+                t("i821844f", "Learn more"),
+                t("b0abbb17", "Learn more"),
+                t("e7e0d88b", "Learn more");
+            t("i560665f", "Learn more"),
                 t("f6e774d9", "Learn more"),
                 t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
@@ -1121,6 +1119,7 @@
                 t("dbb51952", "Bảo vệ bài đăng của bạn?"),
                 t("de735de6", "Tùy chọn này sẽ chỉ hiển thị nội dung cho những người theo dõi bạn trên X."),
                 t("c5d4192a", "Bảo vệ"),
+                t("gea6cc1a", "Bạn có chắc không?"),
                 t("d9ddba70", "Cộng đồng luôn ở chế độ công khai, vì vậy việc bảo vệ tài khoản sẽ ẩn các bài đăng trước đó của bạn. Bạn cũng sẽ không thể đăng trong Cộng đồng cho đến khi tài khoản của bạn được công khai trở lại."),
                 t("f527b322", "Bảo vệ tài khoản của tôi"),
                 t("d165c992", "Bất kỳ ai cũng có thể gắn thẻ bạn"),
@@ -1317,9 +1316,10 @@
                     return "Đang thực thi mã" + n.ttc_tool_usage_card;
                 }),
                 t("aa9d42c0", "Đang tìm kiếm trên web"),
-                t("dce1817a", "Đang tìm kiếm trên 𝕏"),
-                t("f7151564", "Đang tìm kiếm người dùng trên 𝕏"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
                 t("c43ef93e", "Đang duyệt trang web"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Đang thực thi mã"),
                 t("ead81122", "Đã xảy ra lỗi, vui lòng làm mới để kết nối lại hoặc thử lại."),
                 t("f808a13a", "Bạn đã vượt quá giới hạn số lượng. Vui lòng chờ giây lát rồi thử lại."),
@@ -1813,6 +1813,7 @@
                 t("g00b4c55", function (n) {
                     return "Chia sẻ @" + n.screenName + " qua...";
                 }),
+                t("hb568af4", "Tắt tiếng"),
                 t("bb1cbeb6", "Bỏ tắt tiếng"),
                 t("h2f62206", "Tắt tiếng người dùng"),
                 t("h59f52ee", "Tắt tiếng thành công."),
@@ -1913,11 +1914,11 @@
                 t("ef1649e2", "Phím tắt trên X"),
                 t("aefd89c8", "Điều hướng"),
                 t("cafdefb2", "Hành động"),
-                t("dda42cf2", "Các cột & bảng điều khiển"),
-                t("e8a12604", "Thêm phụ đề (không bắt buộc)");
-            t("eabf2209", function (n) {
-                return "Ảnh GIF được cung cấp bởi " + n.providerName;
-            }),
+                t("dda42cf2", "Các cột & bảng điều khiển");
+            t("e8a12604", "Thêm phụ đề (không bắt buộc)"),
+                t("eabf2209", function (n) {
+                    return "Ảnh GIF được cung cấp bởi " + n.providerName;
+                }),
                 t("a613e720", "Sao chép liên kết đến ảnh GIF"),
                 t("aeca1239", function (n) {
                     return "In đậm" + n.ttc_rich_text_composer;
@@ -2973,9 +2974,9 @@
                 t("e06b864c", "Có vẻ như bạn đang thích cuộc trò chuyện này"),
                 t("a078ff70", "Bạn muốn xem thêm nội dung từ những người bạn đã tương tác trong chuỗi hội thoại này? Bắt đầu khám phá nội dung từ những tài khoản mới."),
                 t("cb80300e", "Chuyển tới dòng thời gian trang chủ"),
-                t("ea5cd098", "Chuyển tới mục đang là xu hướng"),
-                t("c67e3fc2", "Dòng thời gian trang chủ");
-            t("d601fc20", "Mới nhất"),
+                t("ea5cd098", "Chuyển tới mục đang là xu hướng");
+            t("c67e3fc2", "Dòng thời gian trang chủ"),
+                t("d601fc20", "Mới nhất"),
                 t("j43f99be", "Mức độ liên quan"),
                 t("ad6e11ac", "Sắp xếp câu trả lời theo"),
                 t("b2311b70", "Điều này không khả dụng với bạn"),
@@ -3893,13 +3894,13 @@
                 }),
                 t("f5c7aaa7", function (n) {
                     return "chủ phòng";
-                }),
-                t("fc56c8b1", function (n) {
-                    return "đ.chủ phòng";
                 });
-            t("iba0f45d", function (n) {
-                return "người nói";
+            t("fc56c8b1", function (n) {
+                return "đ.chủ phòng";
             }),
+                t("iba0f45d", function (n) {
+                    return "người nói";
+                }),
                 t("dc066955", function (n) {
                     return "người nghe";
                 }),
@@ -4929,9 +4930,9 @@
                 t("ff95a9cc", "ID video"),
                 t("a97e358e", "Liên kết đến video"),
                 t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua."),
-                t("ba37f6da", "Thông tin tổng quan về video"),
-                t("f19846b2", "Hình thu nhỏ video");
-            t("ccd6f4a8", "Tiêu đề video"),
+                t("ba37f6da", "Thông tin tổng quan về video");
+            t("f19846b2", "Hình thu nhỏ video"),
+                t("ccd6f4a8", "Tiêu đề video"),
                 t("c8410542", "Số lượt xem video của bạn."),
                 t("a532072a", "Người xem"),
                 t("d9508ab0", "lượt xem"),
@@ -5549,6 +5550,7 @@
                 t("bd7eb888", "Xem tất cả ghi chép trên bài đăng này"),
                 t("i97b83f6", "Đã xảy ra lỗi khi gửi kháng nghị của bạn, vui lòng thử lại."),
                 t("a038ab9a", "Dịch ghi chép"),
+                t("icdb6d74", "Được đề xuất bởi một người cộng tác AI thử nghiệm chuyên đáp ứng yêu cầu ghi chép. Giống như tất cả những người cộng tác khác, AI có thể mắc lỗi — hãy xác minh độ chính xác."),
                 t("i606fc4c", "Giới thiệu về các kháng nghị Ghi chép cho cộng đồng"),
                 t("b664c554", "Yêu cầu thêm đánh giá của người đóng góp"),
                 t("ab66e1f2", "Cách áp dụng như sau:"),
@@ -5564,6 +5566,7 @@
                 t("ge25848a", "Trạng thái hiện tại"),
                 t("d6db34cc", "Cần thêm đánh giá"),
                 t("ce8b505e", "Không hữu ích"),
+                t("j42c88b6", "Người viết ghi chép AI thử nghiệm"),
                 t("e5be8156", "Trạng thái ghi chú được tính toán bằng thuật toán mã nguồn mở"),
                 t("fca23c42", "Có nhiều người cộng tác với các quan điểm khác nhau đã đồng ý rằng ghi chép này hữu ích, vì vậy ghi chép đang được hiển thị dưới dạng ngữ cảnh trên bài đăng."),
                 t("hef420c2", "Ghi chú này vẫn chưa được đánh giá bởi đủ người cộng tác có các quan điểm khác nhau."),
@@ -5879,11 +5882,11 @@
                 t("ab1b3d38", "Chưa có dữ liệu về yêu cầu ghi chép"),
                 t("c43fb933", "Chính sách và Thỏa thuận dành cho nhà phát triển X"),
                 t("af781666", "Moi người nghĩ gì?"),
-                t("a1f414ee", "Chia sẻ suy nghĩ"),
-                t("ed88e742", "Sao chép liên kết vào Chủ đề"),
+                t("a1f414ee", "Chia sẻ suy nghĩ");
+            t("ed88e742", "Sao chép liên kết vào Chủ đề"),
                 t("h92fe1be", "Rất tiếc, Ghi chép cho cộng đồng không khả dụng cho bạn vào lúc này."),
-                t("f0dc1434", "Ghi chép cho cộng đồng hiện chỉ có sẵn ở Hoa Kỳ");
-            t("f8fc0b48", "Tạo Thư mục"),
+                t("f0dc1434", "Ghi chép cho cộng đồng hiện chỉ có sẵn ở Hoa Kỳ"),
+                t("f8fc0b48", "Tạo Thư mục"),
                 t("c14bcdde", "Tìm kiếm dấu trang"),
                 t("e9c65c4a", "Tìm kiếm dấu trang"),
                 t("b92a21d9", function (n) {
@@ -6885,11 +6888,11 @@
                 t("j3d242ce", "Khoảng không hợp lệ"),
                 t("f4d07bd2", "Bao gồm các chi tiết không bắt buộc để giúp ứng viên dễ dàng khám phá vai trò của bạn hơn khi tìm kiếm."),
                 t("b8cbb51a", "Tóm tắt công việc"),
-                t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể."),
-                t("b075c68a", "Chỉnh sửa việc làm"),
+                t("bda6881e", "Công việc này đã được nhập từ Hệ thống theo dõi ứng viên (ATS) của bạn. Xin lưu ý rằng chỉ có thể sửa đổi các trường cụ thể.");
+            t("b075c68a", "Chỉnh sửa việc làm"),
                 t("d4b6a6e0", "Tiêu điểm hồ sơ"),
-                t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi.");
-            t("af1cfd46", "Tích hợp với ATS"),
+                t("j2dd3686", "Quảng bá việc làm nổi bật bên trên bài đăng của tôi."),
+                t("af1cfd46", "Tích hợp với ATS"),
                 t("d6fa2944", "Xóa phần tích hợp này sẽ không xóa các việc làm bạn đã nhập."),
                 t("h99f11fa", "Xóa phần tích hợp"),
                 t("eef1ae76", "Hiện đã kết nối"),
@@ -7867,10 +7870,7 @@
                 t("d7b8387e", "Nếu bạn đã hủy, bạn không cần phải làm gì nữa. Thuê bao của bạn sẽ tự động hết hạn vào cuối chu kỳ thanh toán."),
                 t("f4166d9a", "Bạn muốn hủy Thuê bao?"),
                 t("b74ff5fc", "Nếu bạn hủy, Thuê bao của bạn sẽ tự động hết hạn vào cuối chu kỳ thanh toán."),
-                t("ee9efbc8", "Tiếp tục hủy"),
-                t("c5d9c77a", "Có vẻ như đã gặp phải một ít trục trặc. Tuy nhiên, đừng lo lắng, đó không phải là lỗi của bạn. Hãy đóng cửa sổ này. rồi thử lại."),
-                t("jda53c24", "Bạn có thể hủy Thuê bao của mình thông qua Apple App Store."),
-                t("g0a7a53e", "Bạn có thể hủy Thuê bao của mình thông qua Google Play Store.");
+                t("ee9efbc8", "Tiếp tục hủy");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7909,9 +7909,12 @@
                     a(n, h)
                 );
             }
-            t("i5f14be7", function (n) {
-                return "Chào mừng quay trở lại, " + n.displayName;
-            }),
+            t("c5d9c77a", "Có vẻ như đã gặp phải một ít trục trặc. Tuy nhiên, đừng lo lắng, đó không phải là lỗi của bạn. Hãy đóng cửa sổ này. rồi thử lại."),
+                t("jda53c24", "Bạn có thể hủy Thuê bao của mình thông qua Apple App Store."),
+                t("g0a7a53e", "Bạn có thể hủy Thuê bao của mình thông qua Google Play Store."),
+                t("i5f14be7", function (n) {
+                    return "Chào mừng quay trở lại, " + n.displayName;
+                }),
                 t("a76d58ba", "Số liệu phân tích quảng cáo"),
                 t("eccd0e1a", "Số liệu phân tích về tổ chức"),
                 t("deea1708", "Bạn muốn xem số liệu phân tích trên tất cả tài khoản X của mình?"),
@@ -8907,11 +8910,11 @@
                 }),
                 t("b0b22805", function (n) {
                     return "Truy cập " + n.advertiserName;
-                }),
-                t("c67e71aa", "Xem ngay"),
+                });
+            t("c67e71aa", "Xem ngay"),
                 t("a6ada13e", "Mua ngay"),
-                t("j0f12222", "Xem thêm");
-            t("f569f7c8", "Đi đến trang web"),
+                t("j0f12222", "Xem thêm"),
+                t("f569f7c8", "Đi đến trang web"),
                 t("j0c6772a", "Truy cập website"),
                 t("f73003aa", "Video sẽ phát sau quảng cáo"),
                 t("b3112b8a", "Bỏ qua"),
@@ -13366,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.edb4185a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.42c577ba.js.map

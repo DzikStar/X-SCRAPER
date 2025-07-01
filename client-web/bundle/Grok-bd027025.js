@@ -2,7 +2,39 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Grok-bd027025"],
     {
-        468603: (e, t, n) => {
+        861589: (e, t, n) => {
+            n.d(t, { Z: () => l });
+            var a = n(202784),
+                r = n(731708);
+            function l({ delay: e = 500, duration: t = 30, endElement: n, holdout: l = 0, style: s, text: o }) {
+                const [i, c] = a.useState(""),
+                    [u, p] = a.useState(""),
+                    m = a.useRef(0);
+                a.useEffect(() => {
+                    let n,
+                        a = u;
+                    const r = (e) => {
+                        i !== a && (i.startsWith(a) ? ((a = i.substring(0, e)), (n = setTimeout(() => r(e + 1), t))) : ((a = a.substring(0, Math.max(0, a.length - 2))), (n = setTimeout(() => r(e), t))), p(a));
+                    };
+                    return (n = setTimeout(() => r(1), e)), () => clearTimeout(n);
+                }, [i, t, e]),
+                    a.useEffect(() => {
+                        const e = Math.max(0, m.current + l - Date.now()),
+                            t = setTimeout(() => {
+                                (m.current = Date.now()), c(o);
+                            }, e);
+                        return () => clearTimeout(t);
+                    }, [o]);
+                let d = u,
+                    g = "";
+                if (i === u) {
+                    const e = u.split(" ");
+                    e.length > 0 && ((g = e[e.length - 1]), (d = e.slice(void 0, -1).join(" ")));
+                }
+                return a.createElement(r.ZP, { style: s }, a.createElement("span", null, a.createElement("span", null, d), g ? a.createElement("span", { style: { whiteSpace: "nowrap" } }, `${d ? " " : ""}${g}`, " ", n) : void 0));
+            }
+        },
+        136202: (e, t, n) => {
             n.d(t, { ZP: () => Z, N$: () => w });
             n(136728);
             var a = n(202784),
@@ -16,34 +48,8 @@
                 p = n(487552),
                 m = n(246851),
                 d = n(397159),
-                g = n(970205);
-            function y({ delay: e = 500, duration: t = 30, endElement: n, holdout: r = 0, style: s, text: o }) {
-                const [i, c] = a.useState(""),
-                    [u, p] = a.useState(""),
-                    m = a.useRef(0);
-                a.useEffect(() => {
-                    let n,
-                        a = u;
-                    const r = (e) => {
-                        i !== a && (i.startsWith(a) ? ((a = i.substring(0, e)), (n = setTimeout(() => r(e + 1), t))) : ((a = a.substring(0, Math.max(0, a.length - 2))), (n = setTimeout(() => r(e), t))), p(a));
-                    };
-                    return (n = setTimeout(() => r(1), e)), () => clearTimeout(n);
-                }, [i, t, e]),
-                    a.useEffect(() => {
-                        const e = Math.max(0, m.current + r - Date.now()),
-                            t = setTimeout(() => {
-                                (m.current = Date.now()), c(o);
-                            }, e);
-                        return () => clearTimeout(t);
-                    }, [o]);
-                let d = u,
-                    g = "";
-                if (i === u) {
-                    const e = u.split(" ");
-                    e.length > 0 && ((g = e[e.length - 1]), (d = e.slice(void 0, -1).join(" ")));
-                }
-                return a.createElement(l.ZP, { style: s }, a.createElement("span", null, a.createElement("span", null, d), g ? a.createElement("span", { style: { whiteSpace: "nowrap" } }, `${d ? " " : ""}${g}`, " ", n) : void 0));
-            }
+                g = n(970205),
+                y = n(861589);
             const f = c().ib1c5475,
                 h = c().a15d62db,
                 E = (e, t) =>
@@ -55,15 +61,15 @@
                 C = c().e6d51c62,
                 w = c().c3f04d9c,
                 b = c().a4d9dbfa;
-            function Z({ completedTimestamp: e, expanded: t, fromTimestamp: n, hasCardAttachments: s, isCompactLayout: o, isImageResponse: i, isLoading: c, messageStepAccumulator: f, onClick: h, onComplete: Z, reasoningLayout: x, searchQuery: k, shownText: S, shownTrace: P, style: T, useTypingStatus: I }) {
+            function Z({ completedTimestamp: e, expanded: t, fromTimestamp: n, hasCardAttachments: s, isCompactLayout: o, isImageResponse: i, isLoading: c, messageStepAccumulator: f, onClick: h, onComplete: Z, reasoningLayout: x, searchQuery: S, shownText: k, shownTrace: T, style: P, useTypingStatus: I }) {
                 const M = "UNIFIED" === x,
                     D = (0, m.Z)(f?.state),
                     R = "COMPLETED" === f?.state,
                     L = "ABORTED" === f?.state,
                     O = f?.isPastSummary,
                     A = E(n ?? 0, e ?? 0),
-                    V = S && S.length > 0,
-                    z = a.useMemo(() => (M ? !((!f && !c) || i) && !(f && !R && !L && c && f.accumulatedSummary.length > 0 && !I) : c && !i && !V && !f && !P && !s), [M, c, i, V, f, f?.debugMessageTagCount, P, s, R, L]);
+                    U = k && k.length > 0,
+                    z = a.useMemo(() => (M ? !((!f && !c) || i) && !(f && !R && !L && c && !I) : c && !i && !U && !f && !T && !s), [M, c, i, U, f, T, s, R, L]);
                 a.useEffect(() => {
                     "COMPLETED" !== D && R && Z?.();
                 }, [D, R, Z]);
@@ -77,17 +83,17 @@
                         }
                         return e;
                     }, [f?.debugMessageTagCount]),
-                    F = B[B.length - 1],
-                    H = a.useMemo(() => {
+                    V = B[B.length - 1],
+                    F = a.useMemo(() => {
                         if (M) {
                             if (I) {
                                 if (t) return w;
-                                if (F) return F;
+                                if (V) return V;
                             }
-                            return w;
+                            return "";
                         }
-                        return k ? C : "";
-                    }, [M, k, t, F, I]);
+                        return S ? C : "";
+                    }, [M, S, t, V, I]);
                 return a.createElement(
                     r.Z,
                     { style: [v.statusContainer, z && { opacity: 1, pointerEvents: "auto" }] },
@@ -96,9 +102,9 @@
                         if (M) {
                             const e = f && f.steps.length > 0;
                             if (R || L) return a.createElement(_, { completed: !0, expanded: t, onClick: h, showExpand: e }, a.createElement(r.Z, { style: v.statusLabelContainer }, a.createElement(l.ZP, { style: v.statusLabel }, O || L ? b : A)), e && a.createElement(p.default, { style: [v.chevron, R || L ? v.completedChevron : void 0, t ? v.expandedChevron : void 0] }));
-                            if (I) return a.createElement(_, { completed: !1, expanded: t, onClick: h, showExpand: e }, a.createElement(y, { duration: 5, endElement: e ? a.createElement(p.default, { style: [v.chevron, v.typingAnimationChevron, t ? v.expandedChevron : void 0] }) : null, holdout: 45 * H.length, style: v.typingAnimation, text: H }));
+                            if (I) return a.createElement(_, { completed: !1, expanded: t, onClick: h, showExpand: e }, a.createElement(y.Z, { duration: 5, endElement: e ? a.createElement(p.default, { style: [v.chevron, v.typingAnimationChevron, t ? v.expandedChevron : void 0] }) : null, holdout: 45 * F.length, style: v.typingAnimation, text: F }));
                         }
-                        return a.createElement(r.Z, { style: v.statusLabelContainer }, a.createElement(y, { duration: 15, holdout: 0, style: v.typingAnimation, text: H }));
+                        return a.createElement(r.Z, { style: v.statusLabelContainer }, a.createElement(y.Z, { duration: 15, holdout: 0, style: v.typingAnimation, text: F }));
                     })(),
                 );
             }
@@ -118,7 +124,7 @@
             const v = o.default.create((e) => ({ statusContainer: { display: "flex", flexDirection: "row", color: "light" === e.paletteName ? e.colors.gray700 : e.colors.gray900, opacity: 0, pointerEvents: "none", transition: "opacity 0.2s ease", marginHorizontal: e.spaces.space12, gap: e.spaces.space4, position: "absolute", top: 0, start: 0 }, loadingIcon: { position: "relative", top: 1 }, thinkIcon: { color: "inherit" }, statusLabelContainer: { position: "relative", width: "fit-content", animationDuration: "0.2s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, statusLabel: { color: "inherit" }, expandableStatusContainer: { display: "flex", flexDirection: "row", marginStart: e.spaces.space4, flex: 1 }, chevron: { transition: "all 0.2s ease", transform: "rotate(0deg)", color: "inherit", width: e.spaces.space16, height: e.spaces.space16, animationDuration: "0.2s", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, completedChevron: { color: "inherit", top: e.spaces.space2, marginStart: e.spaces.space4 }, expandedChevron: { transform: "rotate(-180deg)" }, typingAnimation: { color: "inherit", flex: 1, display: "flex", paddingTop: 3 }, typingAnimationChevron: { top: -1 } }));
         },
         159210: (e, t, n) => {
-            n.d(t, { Z: () => N });
+            n.d(t, { Z: () => G });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(202784),
                 r = n(137937),
@@ -143,135 +149,144 @@
                 _ = n(725516),
                 v = n(125363),
                 x = n(836255),
-                k = n(970205),
-                S = n(988290),
-                P = n(673787),
-                T = n(767075),
+                S = n(970205),
+                k = n(988290),
+                T = n(673787),
+                P = n(767075),
                 I = n(39831),
-                M = n(468603),
+                M = n(136202),
                 D = n(187268),
                 R = n(916559),
                 L = n(520595),
                 O = n(809311),
                 A = n(744610);
-            const V = n(297689).Z.create({ carousel: { overflow: "hidden", position: "relative" }, carouselItem: { position: "absolute", top: 0, start: 0, end: 0, justifyContent: "center", alignItems: "center" } }),
+            const U = n(297689).Z.create({ carousel: { overflow: "hidden", position: "relative" }, carouselItem: { position: "absolute", top: 0, start: 0, end: 0, justifyContent: "center", alignItems: "center" } }),
                 z = ({ content: e, easing: t, itemHeight: n, scrollDuration: s = 500 }) => {
                     const o = a.useRef(new A.Z.Value(0)).current,
                         i = a.useRef(new A.Z.Value(1)).current,
-                        c = a.useRef(new A.Z.Value(n)).current,
-                        [u, p] = a.useState(e),
-                        [m, d] = a.useState(null),
-                        [g, y] = a.useState(!1),
-                        f = a.useRef(e);
+                        c = a.useRef(new A.Z.Value(0)).current,
+                        u = a.useRef(new A.Z.Value(1)).current,
+                        [p, m] = a.useState("A"),
+                        [d, g] = a.useState(e),
+                        [y, f] = a.useState(null),
+                        [h, E] = a.useState(!1),
+                        C = a.useRef(e);
                     return (
                         a.useEffect(() => {
-                            e === f.current ||
-                                g ||
-                                (y(!0),
-                                d(e),
-                                c.setValue(n),
-                                A.Z.parallel([A.Z.timing(o, { toValue: -n, duration: s, useNativeDriver: !1, easing: t }), A.Z.timing(i, { toValue: 0, duration: Math.floor(s / 2), useNativeDriver: !1, easing: r.Z.linear }), A.Z.timing(c, { toValue: 0, duration: s, useNativeDriver: !1, easing: t })]).start(() => {
-                                    p(e), d(null), y(!1), o.setValue(0), i.setValue(1), c.setValue(n), (f.current = e);
-                                }));
-                        }, [e, s, g]),
-                        a.createElement(l.Z, { style: { ...V.carousel, height: n } }, a.createElement(A.Z.View, { style: [V.carouselItem, { height: n, transform: [{ translateY: o }], opacity: i }] }, u), m && a.createElement(A.Z.View, { style: [V.carouselItem, { height: n, transform: [{ translateY: c }] }] }, m))
+                            if (e !== C.current && !h) {
+                                E(!0);
+                                const a = "A" === p ? "B" : "A";
+                                "B" === a ? f(e) : g(e);
+                                const l = "A" === a ? o : c,
+                                    d = "A" === a ? i : u;
+                                l.setValue(n), d.setValue(1);
+                                const y = "A" === p ? o : c,
+                                    h = "A" === p ? i : u;
+                                A.Z.parallel([A.Z.timing(y, { toValue: -n, duration: s, useNativeDriver: !1, easing: t }), A.Z.timing(h, { toValue: 0, duration: Math.floor(s / 2), useNativeDriver: !1, easing: r.Z.linear }), A.Z.timing(l, { toValue: 0, duration: s, useNativeDriver: !1, easing: t })]).start(() => {
+                                    E(!1), m(a), (C.current = e);
+                                });
+                            }
+                        }, [e, s, h, p]),
+                        a.createElement(l.Z, { style: { ...U.carousel, height: n } }, a.createElement(A.Z.View, { style: [U.carouselItem, { height: n, transform: [{ translateY: o }], opacity: i }] }, d), a.createElement(A.Z.View, { style: [U.carouselItem, { height: n, transform: [{ translateY: c }], opacity: u }] }, y))
                     );
                 };
-            const B = m.default.create((e) => ({ container: { flex: 1, position: "relative", height: 25 }, content: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0 }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, opacity: 1, transition: "opacity 0.2s ease" }, hoveredHeaderContainer: { opacity: 0.8 } })),
+            var B = n(861589);
+            const V = m.default.create((e) => ({ container: { flex: 1, position: "relative", height: 25 }, content: { position: "absolute", top: 0, start: 0, end: 0, bottom: 0 }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, opacity: 1, transition: "opacity 0.2s ease" }, hoveredHeaderContainer: { opacity: 0.8 }, typingAnimation: { flex: 1, display: "flex", fontWeight: e.fontWeights.medium, marginStart: e.spaces.space28, paddingTop: 1 } })),
                 F = function ({ header: e, hovered: t, icon: n, transitionDurationMS: r }) {
-                    const o = a.useRef({ header: e, icon: n, hovered: t }),
-                        i = a.useRef(!1),
-                        [c, u] = a.useState("a"),
-                        p = a.useRef(new A.Z.Value(1)).current,
-                        m = a.useRef(new A.Z.Value(0)).current,
-                        d = a.useCallback(() => a.createElement(l.Z, { style: [B.headerContainer, t && B.hoveredHeaderContainer] }, n, a.createElement(s.ZP, null, e)), [e, t, n]),
-                        [g, y] = a.useState(d),
-                        [f, h] = a.useState(null);
+                    const s = a.useRef({ header: e, icon: n, hovered: t }),
+                        o = a.useRef(!1),
+                        [i, c] = a.useState("a"),
+                        u = a.useRef(new A.Z.Value(1)).current,
+                        p = a.useRef(new A.Z.Value(0)).current,
+                        m = a.useCallback(() => a.createElement(l.Z, { style: [V.headerContainer, t && V.hoveredHeaderContainer] }, n), [t, n]),
+                        [d, g] = a.useState(m),
+                        [y, f] = a.useState(null);
                     return (
                         a.useEffect(() => {
-                            if (!i.current) return (i.current = !0), void (o.current = { header: e, icon: n, hovered: t });
-                            const a = e !== o.current.header,
-                                l = t !== o.current.hovered;
-                            if (((o.current = { header: e, icon: n, hovered: t }), !a && !l)) return;
-                            const s = d();
-                            if (!a && l) return void ("a" === c ? y(s) : h(s));
-                            let g, f, E;
-                            const C = "a" === c ? "b" : "a";
-                            "a" === c ? ((g = p), (f = m), (E = h)) : ((g = m), (f = p), (E = y)),
-                                E(s),
-                                u(C),
-                                f.setValue(0),
-                                g.setValue(1),
-                                A.Z.parallel([A.Z.timing(g, { toValue: 0, duration: r, useNativeDriver: !0 }), A.Z.timing(f, { toValue: 1, duration: r, useNativeDriver: !0 })]).start(() => {
-                                    "b" === C ? y(null) : h(null);
+                            if (!o.current) return (o.current = !0), void (s.current = { header: e, icon: n, hovered: t });
+                            const a = e !== s.current.header,
+                                l = t !== s.current.hovered;
+                            if (((s.current = { header: e, icon: n, hovered: t }), !a && !l)) return;
+                            const d = m();
+                            if (!a && l) return void ("a" === i ? g(d) : f(d));
+                            let y, h, E;
+                            const C = "a" === i ? "b" : "a";
+                            "a" === i ? ((y = u), (h = p), (E = f)) : ((y = p), (h = u), (E = g)),
+                                E(d),
+                                c(C),
+                                h.setValue(0),
+                                y.setValue(1),
+                                A.Z.parallel([A.Z.timing(y, { toValue: 0, duration: r, useNativeDriver: !0 }), A.Z.timing(h, { toValue: 1, duration: r, useNativeDriver: !0 })]).start(() => {
+                                    "b" === C ? g(null) : f(null);
                                 });
-                        }, [c, d, e, t, n, r]),
-                        a.createElement(l.Z, { style: B.container }, g && a.createElement(A.Z.View, { style: [B.content, { opacity: p }] }, g), f && a.createElement(A.Z.View, { style: [B.content, { opacity: m }] }, f))
+                        }, [i, m, e, t, n, r]),
+                        a.createElement(l.Z, { style: V.container }, d && a.createElement(A.Z.View, { style: [V.content, { opacity: u }] }, d), y && a.createElement(A.Z.View, { style: [V.content, { opacity: p }] }, y), a.createElement(B.Z, { duration: 10, style: V.typingAnimation, text: e }))
                     );
                 },
                 H = g().h26fa43f,
                 $ = !1,
-                U = 40,
+                W = 40,
                 q = 1500,
-                W = 500;
-            function N({ completedTimestamp: e, fromTimestamp: t, isLoading: n, isStatusExpanded: p, messageStepAccumulator: m, onComplete: d }) {
-                const { isCompactLayout: g, isGrokDrawer: w } = (0, S.ZP)(),
+                N = 500;
+            function G({ completedTimestamp: e, fromTimestamp: t, isLoading: n, isStatusExpanded: p, messageStepAccumulator: m, onComplete: d }) {
+                const { isCompactLayout: g, isGrokDrawer: w } = (0, k.ZP)(),
                     b = g || w,
                     v = (0, Z.Z)(m?.state),
                     x = (0, _.z)(),
                     O = a.useRef(null),
-                    [A, V] = a.useState(!1),
-                    [B, N] = a.useState(!1),
-                    [Y, Q] = a.useState(!1),
-                    J = (0, Z.Z)(Y),
+                    [A, U] = a.useState(!1),
+                    [B, V] = a.useState(!1),
+                    [G, Q] = a.useState(!1),
+                    J = (0, Z.Z)(G),
                     [ee, te] = a.useState(!1),
                     [ne, ae] = a.useState(null),
                     [re, le] = a.useState(null),
                     [se, oe] = a.useState(null),
-                    ie = a.useRef(0),
-                    ce = a.useRef(null),
-                    { accumulatedTrace: ue, isPastSummary: pe, state: me } = m,
-                    de = "COMPLETED" === me,
-                    ge = "ABORTED" === me,
-                    ye = de || ge,
-                    fe = ye && p,
-                    [he, Ee] = a.useState(0);
+                    [ie, ce] = a.useState({}),
+                    ue = a.useRef(0),
+                    pe = a.useRef(null),
+                    { accumulatedTrace: me, isPastSummary: de, state: ge } = m,
+                    ye = "COMPLETED" === ge,
+                    fe = "ABORTED" === ge,
+                    he = ye || fe,
+                    Ee = he && p,
+                    [Ce, we] = a.useState(0);
                 a.useEffect(() => {
-                    (("COMPLETED" !== v && de) || ("ABORTED" !== v && ge)) && (te(!1), d?.());
-                }, [v, de, ge, d]),
+                    (("COMPLETED" !== v && ye) || ("ABORTED" !== v && fe)) && (te(!1), d?.());
+                }, [v, ye, fe, d]),
                     a.useEffect(() => {
-                        de && (p && !ee ? te(!0) : !p && ee && te(!1));
-                    }, [p, ee, de]);
-                const Ce = a.useRef(null);
+                        ye && (p && !ee ? te(!0) : !p && ee && te(!1));
+                    }, [p, ee, ye]);
+                const be = a.useRef(null);
                 a.useEffect(() => {
                     const e = () => {
                         O.current && !A && O.current.scrollToEnd({ animated: !0 });
                     };
-                    return pe || (Ce.current = window.setInterval(e, 1e3)), () => window.clearInterval(Ce.current);
-                }, [A, pe]),
+                    return de || (be.current = window.setInterval(e, 1e3)), () => window.clearInterval(be.current);
+                }, [A, de]),
                     a.useEffect(() => {
-                        de && !pe && window.clearInterval(Ce.current);
-                    }, [de, A, pe]);
-                const we = a.useCallback((e) => a.createElement(l.Z, { style: [G.collapsedContent, { height: U }] }, a.createElement(s.ZP, { numberOfLines: 2, style: [G.summary, b && G.summaryCompact] }, e)), [b]),
-                    be = a.useCallback(
+                        ye && !de && window.clearInterval(be.current);
+                    }, [ye, A, de]);
+                const Ze = a.useCallback((e) => a.createElement(l.Z, { style: [Y.collapsedContent, { height: W }] }, a.createElement(s.ZP, { numberOfLines: 2, style: [Y.summary, b && Y.summaryCompact] }, e)), [b]),
+                    _e = a.useCallback(
                         (e) => {
                             if (!e) return null;
                             let t = null;
                             const n = { ...e.args };
-                            if ((delete n.query, e.name === D.ky.WebSearch || e.name === D.ky.WebSearchWithSnippets)) e.args.query && (t = a.createElement(a.Fragment, null, a.createElement(l.Z, { style: G.pill }, a.createElement(y.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, e.args.query))));
+                            if ((delete n.query, e.name === D.ky.WebSearch || e.name === D.ky.WebSearchWithSnippets)) e.args.query && (t = a.createElement(a.Fragment, null, a.createElement(l.Z, { style: Y.pill }, a.createElement(y.default, { style: Y.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText }, e.args.query))));
                             else if (e.name === D.ky.XSearch || e.name === D.ky.XKeywordSearch || e.name === D.ky.XSemanticSearch || e.name === D.ky.XUserSearch || e.name === D.ky.GetXUserTimeline) {
                                 const r = Object.entries(n);
                                 (e.args.query || r.length > 0) &&
                                     (t = a.createElement(
                                         a.Fragment,
                                         null,
-                                        e.args.query && a.createElement(l.Z, { style: G.pill }, a.createElement(y.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, e.args.query)),
+                                        e.args.query && a.createElement(l.Z, { style: Y.pill }, a.createElement(y.default, { style: Y.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText }, e.args.query)),
                                         r.length > 0 &&
                                             !b &&
                                             a.createElement(
                                                 l.Z,
-                                                { style: G.argsPillsContainer },
-                                                r.map(([e, t]) => a.createElement(l.Z, { key: e, style: G.pill }, a.createElement(s.ZP, { style: G.pillArgKey }, e, ":"), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, t))),
+                                                { style: Y.argsPillsContainer },
+                                                r.map(([e, t]) => a.createElement(l.Z, { key: e, style: Y.pill }, a.createElement(s.ZP, { style: Y.pillArgKey }, e, ":"), a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText }, t))),
                                             ),
                                     ));
                             } else if (e.name === D.ky.BrowsePage) {
@@ -279,7 +294,7 @@
                                 try {
                                     n = new URL(n).hostname.replace("www.", "");
                                 } catch (e) {}
-                                (e.args.query || n) && (t = a.createElement(a.Fragment, null, e.args.query && a.createElement(l.Z, { style: G.pill }, a.createElement(y.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, e.args.query)), n && !b && a.createElement(l.Z, { style: G.argsPillsContainer }, a.createElement(l.Z, { style: G.pill }, a.createElement(f.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, n)))));
+                                (e.args.query || n) && (t = a.createElement(a.Fragment, null, e.args.query && a.createElement(l.Z, { style: Y.pill }, a.createElement(y.default, { style: Y.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText }, e.args.query)), n && !b && a.createElement(l.Z, { style: Y.argsPillsContainer }, a.createElement(l.Z, { style: Y.pill }, a.createElement(f.default, { style: Y.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText }, n)))));
                             } else if (e.name === D.ky.CodeExecution) {
                                 const n = { ...e.args };
                                 delete n.language;
@@ -292,73 +307,33 @@
                                             !b &&
                                             a.createElement(
                                                 l.Z,
-                                                { style: G.argsPillsContainer },
-                                                r.map(([e, t]) => a.createElement(l.Z, { key: e, style: G.pill }, a.createElement(s.ZP, { style: G.pillArgKey }, e, ":"), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, t))),
+                                                { style: Y.argsPillsContainer },
+                                                r.map(([e, t]) => a.createElement(l.Z, { key: e, style: Y.pill }, a.createElement(s.ZP, { style: Y.pillArgKey }, e, ":"), a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText }, t))),
                                             ),
                                     ));
                             }
-                            return t ? a.createElement(l.Z, { style: [G.collapsedContent, { height: U }] }, t) : null;
+                            return t ? a.createElement(l.Z, { style: [Y.collapsedContent, { height: W }] }, t) : null;
                         },
                         [b],
                     ),
-                    Ze = a.useCallback(
+                    ve = a.useCallback(
                         (e, t) => {
                             if (!t || !e) return null;
                             let n = null;
                             const r = e.name;
                             if ((r === D.ky.WebSearch || r === D.ky.WebSearchWithSnippets) && t.webResults && t.webResults.length > 0) {
-                                const r = t.webResults,
-                                    c = 2,
-                                    u = r.slice(0, c),
-                                    p = r.slice(c),
-                                    m = 3;
-                                n = a.createElement(
-                                    a.Fragment,
-                                    null,
-                                    !b && a.createElement(l.Z, { style: G.pill }, a.createElement(y.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, e.args.query)),
-                                    a.createElement(
-                                        l.Z,
-                                        { style: G.argsPillsContainer },
-                                        u.map((e) => a.createElement(j, { key: e.url, webResult: e })),
-                                        p.length > 0 &&
-                                            a.createElement(
-                                                o.ZP,
-                                                {
-                                                    backgroundColor: "gray50",
-                                                    borderColor: "gray200",
-                                                    onPress: () => {
-                                                        le(r);
-                                                    },
-                                                    size: "small",
-                                                    style: [G.pill, G.pillButton],
-                                                },
-                                                a.createElement(
-                                                    l.Z,
-                                                    { style: G.pillButtonContent },
-                                                    a.createElement(
-                                                        l.Z,
-                                                        { style: G.stackedPillIcons },
-                                                        p.slice(0, m).map((e) => (e.favicon ? a.createElement(i.Z, { key: e.url, source: { uri: e.favicon }, style: [G.pillIcon, G.stackedPillIcon] }) : a.createElement(h.default, { key: e.url, style: [G.pillIcon, G.stackedPillIcon] }))),
-                                                    ),
-                                                    a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText, weight: "normal" }, H({ count: r.length - u.length })),
-                                                ),
-                                            ),
-                                    ),
-                                );
-                            } else if ((r === D.ky.XSearch || r === D.ky.XKeywordSearch || r === D.ky.XSemanticSearch) && t.xPostIds && t.xPostIds.length > 0) {
-                                const r = t.xPostIds,
-                                    i = 2,
-                                    c = r.slice(0, i),
-                                    u = r.slice(i),
+                                const e = t.webResults,
+                                    r = b ? 2 : 4,
+                                    c = e.slice(0, r),
+                                    u = e.slice(r),
                                     p = 3;
                                 n = a.createElement(
                                     a.Fragment,
                                     null,
-                                    !b && a.createElement(l.Z, { style: G.pill }, a.createElement(y.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, e.args.query)),
                                     a.createElement(
                                         l.Z,
-                                        { style: G.argsPillsContainer },
-                                        c.map((e) => a.createElement(K, { key: `x-post-${e}`, xPostId: e })),
+                                        { style: Y.argsPillsContainer },
+                                        c.map((e) => a.createElement(j, { key: e.url, webResult: e })),
                                         u.length > 0 &&
                                             a.createElement(
                                                 o.ZP,
@@ -366,30 +341,68 @@
                                                     backgroundColor: "gray50",
                                                     borderColor: "gray200",
                                                     onPress: () => {
-                                                        oe(r);
+                                                        le(e);
                                                     },
                                                     size: "small",
-                                                    style: [G.pill, G.pillButton],
+                                                    style: [Y.pill, Y.pillButton],
                                                 },
                                                 a.createElement(
                                                     l.Z,
-                                                    { style: G.pillButtonContent },
+                                                    { style: Y.pillButtonContent },
                                                     a.createElement(
                                                         l.Z,
-                                                        { style: G.stackedPillIcons },
-                                                        u.slice(0, p).map((e) => a.createElement(X, { key: `x-post-${e}`, style: G.stackedPillIcon, xPostId: e })),
+                                                        { style: Y.stackedPillIcons },
+                                                        u.slice(0, p).map((e) => (e.favicon ? a.createElement(i.Z, { key: e.url, source: { uri: e.favicon }, style: [Y.pillIcon, Y.stackedPillIcon] }) : a.createElement(h.default, { key: e.url, style: [Y.pillIcon, Y.stackedPillIcon] }))),
                                                     ),
-                                                    a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText, weight: "normal" }, H({ count: r.length - c.length })),
+                                                    a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText, weight: "normal" }, H({ count: e.length - c.length })),
                                                 ),
                                             ),
                                     ),
                                 );
-                            } else r === D.ky.BrowsePage && (n = a.createElement(a.Fragment, null, e.args.query && !b && a.createElement(l.Z, { style: G.pill }, a.createElement(y.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, e.args.query)), e.args.url && a.createElement(l.Z, { style: G.pill }, a.createElement(f.default, { style: G.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText }, new URL(e.args.url).hostname.replace("www.", "")))));
-                            return n ? a.createElement(l.Z, { style: [G.collapsedContent, { height: U }] }, n) : null;
+                            } else if ((r === D.ky.XSearch || r === D.ky.XKeywordSearch || r === D.ky.XSemanticSearch) && t.xPostIds && t.xPostIds.length > 0) {
+                                const e = t.xPostIds,
+                                    r = b ? 2 : 4,
+                                    i = e.slice(0, r),
+                                    c = e.slice(r),
+                                    u = 3;
+                                n = a.createElement(
+                                    a.Fragment,
+                                    null,
+                                    a.createElement(
+                                        l.Z,
+                                        { style: Y.argsPillsContainer },
+                                        i.map((e) => a.createElement(K, { key: `x-post-${e}`, xPostId: e })),
+                                        c.length > 0 &&
+                                            a.createElement(
+                                                o.ZP,
+                                                {
+                                                    backgroundColor: "gray50",
+                                                    borderColor: "gray200",
+                                                    onPress: () => {
+                                                        oe(e);
+                                                    },
+                                                    size: "small",
+                                                    style: [Y.pill, Y.pillButton],
+                                                },
+                                                a.createElement(
+                                                    l.Z,
+                                                    { style: Y.pillButtonContent },
+                                                    a.createElement(
+                                                        l.Z,
+                                                        { style: Y.stackedPillIcons },
+                                                        c.slice(0, u).map((e) => a.createElement(X, { key: `x-post-${e}`, style: Y.stackedPillIcon, xPostId: e })),
+                                                    ),
+                                                    a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText, weight: "normal" }, H({ count: e.length - i.length })),
+                                                ),
+                                            ),
+                                    ),
+                                );
+                            } else r === D.ky.BrowsePage && (n = a.createElement(a.Fragment, null, e.args.url && a.createElement(l.Z, { style: Y.pill }, a.createElement(f.default, { style: Y.pillIcon }), a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText }, new URL(e.args.url).hostname.replace("www.", "")))));
+                            return n ? a.createElement(l.Z, { style: [Y.collapsedContent, { height: W }] }, n) : null;
                         },
                         [b],
                     ),
-                    _e = a.useMemo(() => {
+                    xe = a.useMemo(() => {
                         const e = [],
                             t = m?.steps || [];
                         for (let n = 0; n < t.length; n++) {
@@ -399,129 +412,139 @@
                                 for (let r = 0; r < s.length; r++) {
                                     const o = s[r];
                                     if ("TOOL_USAGE" === o.type) {
-                                        const s = be(o.toolUsageCard);
-                                        s && e.push({ id: `${n}-${t}-${r}`, header: o.header, icon: a.createElement(l.Z, { style: G.iconContainer }, (0, D.w$)(o.toolUsageCard?.name || "")), previewContent: s });
+                                        const s = _e(o.toolUsageCard);
+                                        if (s) {
+                                            const i = `${n}-${t}-${r}`;
+                                            if ((e.push({ id: i, header: o.header, icon: a.createElement(l.Z, { style: Y.iconContainer }, (0, D.w$)(o.toolUsageCard?.name || "")), previewContent: s, type: "TOOL_USAGE" }), !ie[i])) return e;
+                                        }
                                     } else if ("TOOL_USAGE_RESULT" === o.type) {
                                         const s = o.toolUsageCard,
                                             i = o.toolUsageCardResult,
-                                            c = Ze(s, i);
-                                        c && e.push({ id: `${n}-${t}-${r}`, header: o.header, icon: a.createElement(l.Z, { style: G.iconContainer }, (0, D.w$)(o.toolUsageCard?.name || "")), previewContent: c });
+                                            c = ve(s, i);
+                                        if (c) {
+                                            const s = `${n}-${t}-${r}`;
+                                            if ((e.push({ id: s, header: o.header, icon: a.createElement(l.Z, { style: Y.iconContainer }, (0, D.w$)(o.toolUsageCard?.name || "")), previewContent: c, type: "TOOL_USAGE_RESULT" }), !ie[s])) return e;
+                                        }
                                     } else if ("SUMMARY" === o.type) {
-                                        const s = we(o.summary || "");
-                                        s && e.push({ id: `${n}-${t}-${r}`, header: o.header, icon: a.createElement(l.Z, { style: G.iconContainer }, a.createElement(k.Z, null)), previewContent: s });
+                                        const s = Ze(o.summary || "");
+                                        s && e.push({ id: `${n}-${t}-${r}`, header: o.header, icon: a.createElement(l.Z, { style: Y.iconContainer }, a.createElement(S.Z, null)), previewContent: s, type: "SUMMARY" });
                                     }
                                 }
                             }
                         }
                         return e;
                     }, [m?.debugMessageTagCount]),
-                    ve = a.useMemo(() => {
-                        const e = { id: "empty-id", header: M.N$, icon: a.createElement(k.Z, null), previewContent: null };
-                        if (_e.length <= 0 || Y) return e;
-                        const t = _e[_e.length - 1];
-                        return { id: t.id, header: t.header, icon: t.icon, previewContent: t.previewContent };
-                    }, [_e, Y]);
+                    Se = a.useMemo(() => {
+                        const e = { id: "empty-id", header: M.N$, icon: a.createElement(S.Z, null), previewContent: null, type: "SUMMARY" };
+                        if (xe.length <= 0 || G) return e;
+                        const t = xe[xe.length - 1];
+                        return { id: t.id, header: t.header, icon: t.icon, previewContent: t.previewContent, type: t.type };
+                    }, [xe, G]),
+                    ke = a.useMemo(() => !!ne && "empty-id" !== ne.id, [ne]);
                 a.useEffect(() => {
                     if (!ee) return;
-                    if (!ne) return void ae({ id: ve.id, header: ve.header, icon: ve.icon, previewContent: ve.previewContent });
-                    if (J !== Y) return ae({ id: ve.id, header: ve.header, icon: ve.icon, previewContent: ve.previewContent }), void (ce.current && clearTimeout(ce.current));
-                    const e = Math.max(0, ie.current + q - Date.now());
+                    if (!ne) return void ae({ id: Se.id, header: Se.header, icon: Se.icon, previewContent: Se.previewContent, type: Se.type });
+                    if (J !== G) return ae({ id: Se.id, header: Se.header, icon: Se.icon, previewContent: Se.previewContent, type: Se.type }), void (pe.current && clearTimeout(pe.current));
+                    const e = Math.max(0, ue.current + q - Date.now());
                     return (
-                        (ce.current = setTimeout(() => {
-                            (ie.current = Date.now()), ne?.id !== ve.id && ae({ id: ve.id, header: ve.header, icon: ve.icon, previewContent: ve.previewContent });
+                        (pe.current = setTimeout(() => {
+                            (ue.current = Date.now()), ne?.id !== Se.id && ae({ id: Se.id, header: Se.header, icon: Se.icon, previewContent: Se.previewContent, type: Se.type });
                         }, e)),
-                        () => clearTimeout(ce.current)
+                        () => clearTimeout(pe.current)
                     );
-                }, [ve, ee, ne, Y, J]),
+                }, [Se, ee, ne, G, J]),
                     a.useEffect(() => {
-                        !de && n && !ee && _e.length > 0 && te(!0);
-                    }, [n, ee, de, _e]);
-                const xe = a.useCallback(
+                        !ne || ("TOOL_USAGE" !== ne.type && "TOOL_USAGE_RESULT" !== ne.type) || ce((e) => ({ ...e, [ne.id]: !0 }));
+                    }, [ne]),
+                    a.useEffect(() => {
+                        ye || !n || ee || te(!0);
+                    }, [n, ee, ye]);
+                const Te = a.useCallback(
                         () =>
                             a.createElement(
                                 c.Z,
                                 {
                                     onPress: () => {
-                                        Q(!Y);
+                                        Q(!G);
                                     },
-                                    style: G.headerContainer,
+                                    style: [Y.headerContainer, ke && Y.headerContainerWithContent],
                                     withoutInteractiveStyles: !0,
                                 },
-                                ({ isHovered: e }) => a.createElement(a.Fragment, null, a.createElement(F, { header: ne?.header || "", hovered: e, icon: ne?.icon, transitionDurationMS: W }), a.createElement(E.default, { style: [G.chevronIcon, Y && G.openChevronIcon] })),
+                                ({ isHovered: e }) => a.createElement(a.Fragment, null, a.createElement(F, { header: ne?.header || "", hovered: e, icon: ne?.icon, transitionDurationMS: N }), a.createElement(E.default, { style: [Y.chevronIcon, G && Y.openChevronIcon] })),
                             ),
-                        [ne, Y, Q],
+                        [ne, G, Q, ke],
                     ),
-                    ke = a.useCallback(() => a.createElement(u.Z, { childrenOuterStyle: G.collapsedContentContainer, show: !Y, type: "slide" }, a.createElement(z, { content: ne?.previewContent, easing: r.Z.bezier(0.25, 0.46, 0.45, 0.94), itemHeight: U, scrollDuration: W })), [Y, ne]),
-                    Se = a.useCallback(
+                    Pe = a.useCallback(() => a.createElement(u.Z, { childrenOuterStyle: Y.collapsedContentContainer, show: !G && ke, type: "slide" }, a.createElement(z, { content: ne?.previewContent, easing: r.Z.bezier(0.25, 0.46, 0.45, 0.94), itemHeight: W, scrollDuration: N })), [G, ne, ke]),
+                    Ie = a.useCallback(
                         () =>
                             a.createElement(
                                 u.Z,
-                                { childrenOuterStyle: { ...G.messageStepsContentPanelContainer, ...(w ? G.messageStepsDrawerExpandedContainer : g ? G.messageStepsMobileExpandedContainer : {}) }, show: fe || Y, type: "slide" },
-                                a.createElement(P.Z, {
+                                { childrenOuterStyle: { ...Y.messageStepsContentPanelContainer, ...(w ? Y.messageStepsDrawerExpandedContainer : g ? Y.messageStepsMobileExpandedContainer : {}) }, show: Ee || G, type: "slide" },
+                                a.createElement(T.Z, {
                                     isLoading: n,
                                     messageStepAccumulator: m,
                                     onCancelAutoScroll: () => {
-                                        V(!0);
+                                        U(!0);
                                     },
                                     onRestartAutoScroll: () => {
-                                        V(!1);
+                                        U(!1);
                                     },
-                                    onShowTrace: () => N(!0),
+                                    onShowTrace: () => V(!0),
                                     scrollViewRef: O,
                                 }),
                             ),
-                        [n, m, w, g, fe, Y],
+                        [n, m, w, g, Ee, G],
                     );
                 a.useCallback(
                     () =>
                         a.createElement(
                             l.Z,
-                            { style: G.debugContainer },
+                            { style: Y.debugContainer },
                             a.createElement(o.ZP, {
-                                disabled: he <= 0,
+                                disabled: Ce <= 0,
                                 icon: a.createElement(C.default, null),
                                 onPress: () => {
-                                    if (he > 0) {
-                                        const e = he - 1;
-                                        Ee(e), ae({ id: _e[e].id, header: _e[e].header, icon: _e[e].icon, previewContent: _e[e].previewContent });
+                                    if (Ce > 0) {
+                                        const e = Ce - 1;
+                                        we(e), ae({ id: xe[e].id, header: xe[e].header, icon: xe[e].icon, previewContent: xe[e].previewContent, type: xe[e].type });
                                     }
                                 },
                                 size: "small",
-                                style: G.debugButton,
+                                style: Y.debugButton,
                             }),
                             a.createElement(o.ZP, {
-                                disabled: he >= _e.length - 1,
+                                disabled: Ce >= xe.length - 1,
                                 icon: a.createElement(E.default, null),
                                 onPress: () => {
-                                    if (he < _e.length - 1) {
-                                        const e = he + 1;
-                                        Ee(e), ae({ id: _e[e].id, header: _e[e].header, icon: _e[e].icon, previewContent: _e[e].previewContent });
+                                    if (Ce < xe.length - 1) {
+                                        const e = Ce + 1;
+                                        we(e), ae({ id: xe[e].id, header: xe[e].header, icon: xe[e].icon, previewContent: xe[e].previewContent, type: xe[e].type });
                                     }
                                 },
                                 size: "small",
-                                style: G.debugButton,
+                                style: Y.debugButton,
                             }),
                         ),
-                    [_e, he],
+                    [xe, Ce],
                 );
                 return a.createElement(
                     a.Fragment,
                     null,
                     a.createElement(
                         u.Z,
-                        { childrenOuterStyle: [G.container, ye && G.finishedContainer], show: ee || $, type: "slide" },
-                        (!fe || $) && a.createElement(a.Fragment, null, xe(), ke()),
-                        Se(),
+                        { childrenOuterStyle: [Y.container, he && Y.finishedContainer], show: ee || $, type: "slide" },
+                        (!Ee || $) && a.createElement(a.Fragment, null, Te(), Pe()),
+                        Ie(),
                         B &&
                             a.createElement(I.Z, {
-                                completed: de,
-                                isPastSummary: pe,
+                                completed: ye,
+                                isPastSummary: de,
                                 onDismissed: () => {
-                                    N(!1), x.scribe({ element: "message-steps-close-trace", action: "click" });
+                                    V(!1), x.scribe({ element: "message-steps-close-trace", action: "click" });
                                 },
-                                trace: ue,
+                                trace: me,
                             }),
-                        a.createElement(T.Z, { completedTimestamp: e, fromTimestamp: t, messageStepAccumulator: m }),
+                        a.createElement(P.Z, { completedTimestamp: e, fromTimestamp: t, messageStepAccumulator: m }),
                     ),
                     re ? a.createElement(R.E, { onDrawerDismiss: () => le(null), paginationOptions: { numResultsPerPage: 25 }, webResults: re }) : null,
                     se ? a.createElement(L.a, { onDrawerDismiss: () => oe(null), paginationOptions: { numResultsPerPage: 25 }, postIds: se }) : null,
@@ -531,7 +554,7 @@
             const j = a.memo(({ webResult: e }) => {
                     const [t, n] = a.useState(!1),
                         r = e.favicon_base64 || e.favicon,
-                        c = a.useCallback(() => a.createElement(l.Z, { style: G.hoverCardContainer }, a.createElement(O.p, { item: e })), [e]);
+                        c = a.useCallback(() => a.createElement(l.Z, { style: Y.hoverCardContainer }, a.createElement(O.p, { item: e })), [e]);
                     return a.createElement(
                         p.Z,
                         { renderContent: c },
@@ -544,9 +567,9 @@
                                     window.open(e.url, "_blank");
                                 },
                                 size: "small",
-                                style: [G.pill, G.pillButton],
+                                style: [Y.pill, Y.pillButton],
                             },
-                            a.createElement(l.Z, { style: G.pillButtonContent }, r && !t ? a.createElement(i.Z, { onError: () => n(!0), source: r, style: G.pillIcon }) : a.createElement(h.default, { style: G.pillIcon }), a.createElement(l.Z, null, a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText, weight: "normal" }, new URL(e.url).hostname.replace("www.", "")))),
+                            a.createElement(l.Z, { style: Y.pillButtonContent }, r && !t ? a.createElement(i.Z, { onError: () => n(!0), source: r, style: Y.pillIcon }) : a.createElement(h.default, { style: Y.pillIcon }), a.createElement(l.Z, null, a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText, weight: "normal" }, new URL(e.url).hostname.replace("www.", "")))),
                         ),
                     );
                 }),
@@ -556,7 +579,7 @@
                             () =>
                                 a.createElement(
                                     l.Z,
-                                    { style: G.hoverCardContainer },
+                                    { style: Y.hoverCardContainer },
                                     a.createElement(b.Z, {
                                         isCondensed: !0,
                                         onPress: (e) => {
@@ -584,9 +607,9 @@
                                           window.open(r.permalink, "_blank");
                                       },
                                       size: "small",
-                                      style: [G.pill, G.pillButton],
+                                      style: [Y.pill, Y.pillButton],
                                   },
-                                  a.createElement(l.Z, { style: G.pillButtonContent }, a.createElement(i.Z, { source: { uri: r.user.profile_image_url_https }, style: G.pillIcon }), a.createElement(l.Z, null, a.createElement(s.ZP, { numberOfLines: 1, style: G.pillMonospaceText, weight: "normal" }, `@${r.user.screen_name}`))),
+                                  a.createElement(l.Z, { style: Y.pillButtonContent }, r.user.profile_image_url_https && a.createElement(i.Z, { resizeMode: "cover", source: r.user.profile_image_url_https, style: Y.pillIcon }), a.createElement(l.Z, null, a.createElement(s.ZP, { numberOfLines: 1, style: Y.pillMonospaceText, weight: "normal" }, `@${r.user.screen_name}`))),
                               ),
                           )
                         : null;
@@ -594,14 +617,15 @@
                 X = a.memo(({ style: e, xPostId: t }) => {
                     const n = a.useMemo(() => x.Z.createHydratorForTweet(t), [t]),
                         r = (0, v.v9)(n);
-                    return r ? a.createElement(i.Z, { source: { uri: r.user.profile_image_url_https }, style: [G.pillIcon, e] }) : null;
+                    return r && r.user.profile_image_url_https ? a.createElement(i.Z, { resizeMode: "cover", source: r.user.profile_image_url_https, style: [Y.pillIcon, e] }) : null;
                 }),
-                G = m.default.create((e) => ({
+                Y = m.default.create((e) => ({
                     container: { animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both", overflow: "hidden", borderWidth: 1, borderStyle: "solid", borderColor: e.colors.gray300, borderRadius: e.spaces.space24, marginHorizontal: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "all 0.2s ease" },
                     finishedContainer: { marginTop: e.spaces.space32 },
                     collapsedContentContainer: { paddingHorizontal: e.spaces.space16, paddingBottom: e.spaces.space16 },
                     collapsedContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, width: "100%", overflow: "hidden" },
-                    headerContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space16, paddingBottom: e.spaces.space8 },
+                    headerContainer: { width: "100%", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: e.spaces.space16 },
+                    headerContainerWithContent: { paddingBottom: e.spaces.space8 },
                     leftHeaderContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, transition: "opacity 0.2s ease" },
                     leftHeaderContainerHovered: { opacity: 0.8 },
                     chevronIcon: { width: e.spaces.space16, height: e.spaces.space16, transform: [{ rotate: "0deg" }], transition: "transform 0.2s ease", color: e.colors.gray900 },
@@ -653,9 +677,9 @@
                 x = ({ upsell: e }) => {
                     (0, u.z)().scribe({ action: "impression", component: "upsell_banner", element: e.upsellType });
                     const t = (0, c.hC)("responsive_web_grok_upsell_free_to_premium");
-                    return "free_grok_2_mini_feature" === e.upsellType || "free_grok_2_feature" === e.upsellType || "free_grok_3_feature" === e.upsellType || "free_grok_3_mini_feature" === e.upsellType || "free_grok_3_reasoning_feature" === e.upsellType || "free_grok_3_deepsearch_feature" === e.upsellType || "free_grok_3_mini_reasoning_feature" === e.upsellType || "free_grok_3_mini_deepsearch_feature" === e.upsellType ? (t ? a.createElement(p.e, { button: a.createElement(k, null), text: w, title: E }) : a.createElement(p.e, { button: a.createElement(k, { referringPage: y }), text: b, title: C })) : "premium_grok_2_feature" === e.upsellType || "premium_grok_3_feature" === e.upsellType || "premium_grok_3_mini_feature" === e.upsellType || "premium_grok_3_reasoning_feature" === e.upsellType || "premium_grok_3_deepsearch_feature" === e.upsellType || "premium_grok_3_mini_reasoning_feature" === e.upsellType || "premium_grok_3_mini_deepsearch_feature" === e.upsellType ? a.createElement(p.e, { button: a.createElement(k, { referringPage: y }), text: b, title: C }) : "free_image_understanding_feature" === e.upsellType ? a.createElement(p.e, { button: a.createElement(k, null), image: a.createElement(r.Z, { source: { uri: d }, style: { width: 102, height: 85 } }), text: _, title: Z }) : "free_image_generation_feature" === e.upsellType ? a.createElement(p.e, { button: a.createElement(k, null), image: a.createElement(r.Z, { source: { uri: m }, style: { width: 132, height: 115 } }), text: h, title: f }) : null;
+                    return "free_grok_2_mini_feature" === e.upsellType || "free_grok_2_feature" === e.upsellType || "free_grok_3_feature" === e.upsellType || "free_grok_3_mini_feature" === e.upsellType || "free_grok_3_reasoning_feature" === e.upsellType || "free_grok_3_deepsearch_feature" === e.upsellType || "free_grok_3_mini_reasoning_feature" === e.upsellType || "free_grok_3_mini_deepsearch_feature" === e.upsellType ? (t ? a.createElement(p.e, { button: a.createElement(S, null), text: w, title: E }) : a.createElement(p.e, { button: a.createElement(S, { referringPage: y }), text: b, title: C })) : "premium_grok_2_feature" === e.upsellType || "premium_grok_3_feature" === e.upsellType || "premium_grok_3_mini_feature" === e.upsellType || "premium_grok_3_reasoning_feature" === e.upsellType || "premium_grok_3_deepsearch_feature" === e.upsellType || "premium_grok_3_mini_reasoning_feature" === e.upsellType || "premium_grok_3_mini_deepsearch_feature" === e.upsellType ? a.createElement(p.e, { button: a.createElement(S, { referringPage: y }), text: b, title: C }) : "free_image_understanding_feature" === e.upsellType ? a.createElement(p.e, { button: a.createElement(S, null), image: a.createElement(r.Z, { source: { uri: d }, style: { width: 102, height: 85 } }), text: _, title: Z }) : "free_image_generation_feature" === e.upsellType ? a.createElement(p.e, { button: a.createElement(S, null), image: a.createElement(r.Z, { source: { uri: m }, style: { width: 132, height: 115 } }), text: h, title: f }) : null;
                 },
-                k = ({ referringPage: e }) => {
+                S = ({ referringPage: e }) => {
                     const t = !!i.ZP.isWebView(),
                         n = (0, u.z)(),
                         r = a.useCallback(() => n.scribe({ action: "click", component: "upsell_banner", element: "upgrade-button" }), [n]);
@@ -664,4 +688,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bd027025.2f9a992a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bd027025.8dff880a.js.map

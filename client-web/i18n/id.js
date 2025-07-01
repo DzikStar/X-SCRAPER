@@ -12,10 +12,18 @@
                 return n;
             }
             i("c39b0e24", "X"),
+                i("bcd6bb0e", "Anggota"),
+                i("hd8c22d2", "Mod"),
+                i("c3153100", "Admin"),
                 i("jb38600c", "Tidak ada"),
                 i("f07eac34", "Akun parodi"),
                 i("a41b5c2e", "Akun penggemar"),
                 i("i428ea62", "Akun komentar"),
+                i("jd859c9c", "Anda telah dihapus dari Space ini."),
+                i("cfbea177", function (a) {
+                    return "Space " + a.name;
+                }),
+                i("ab4fc8bc", "Space"),
                 i("ac0d27be", "Maaf, akun ini telah ditangguhkan."),
                 i("bcee7444", "Pembaruan akun gagal."),
                 i("e0cbf77a", "Tambahkan telepon"),
@@ -56,9 +64,6 @@
                 i("h1cbdd30", "Segarkan halaman dan coba lagi."),
                 i("a5077d3e", "Segarkan"),
                 i("b2648ba4", "Akun Anda mungkin tidak diizinkan untuk melakukan tindakan ini. Silakan segarkan halaman dan coba lagi."),
-                i("bcd6bb0e", "Anggota"),
-                i("hd8c22d2", "Mod"),
-                i("c3153100", "Admin"),
                 i("fa9adac1", function (a) {
                     return 'Cari "' + a.query + '"';
                 }),
@@ -71,19 +76,12 @@
                 i("c64e46f8", "Anggota ini telah dikeluarkan dari Komunitas, sehingga postingannya disembunyikan."),
                 i("b3f1cb42", "Seorang moderator menyembunyikan postingan ini karena melanggar peraturan Komunitas."),
                 i("cbd2dc9c", "Anda telah melaporkan postingan ini."),
-                i("cfbea177", function (a) {
-                    return "Space " + a.name;
-                }),
-                i("ab4fc8bc", "Space"),
-                i("jd859c9c", "Anda telah dihapus dari Space ini."),
                 i("c60ed9b0", "Anda tidak berwewenang untuk bergabung dengan Space ini."),
                 i("d8227e16", "Anda tidak berwenang untuk membuat Space ini"),
                 i("f027fed8", "Gambar-dalam-Gambar"),
                 i("hd50e064", "Nanti saja"),
                 i("i76d640e", "Kami memerlukan izin Anda"),
                 i("fdaa0be8", "Untuk berbicara di Space ini, Anda harus mengizinkan X untuk mengakses mikrofon Anda. Periksa pengaturan browser Anda. "),
-                i("gea6cc1a", "Anda yakin?"),
-                i("hb568af4", "Bisukan"),
                 i("f7c8617a", "Apa itu klip?"),
                 i("ecc7d2ec", "Klip adalah rekaman momen yang bisa dibuat dan dibagikan oleh siapa pun di Space Anda. Semua klip akan habis berlaku setelah 30 hari."),
                 i("d575ee02", "Siapa yang dapat membuat klip?"),
@@ -101,16 +99,6 @@
                 i("jf03b37c", "Dengarkan rekaman kapan saja. Anda juga dapat membagikannya melalui postingan."),
                 i("fd05976b", "Pelajari lebih lanjut"),
                 i("b4f91a8a", "Perekaman aktif"),
-                i("gb418012", "Selamat datang di Spaces"),
-                i("fec3c1e0", "Tempat untuk menyelenggarakan percakapan audio."),
-                i("j32eb4f8", "Tambahkan hingga 10 pembicara"),
-                i("j4f133a6", "Anda dapat mengundang siapa saja di X untuk berbicara."),
-                i("ed434ac6", "Spaces bersifat publik—siapa pun dapat bergabung"),
-                i("e0025688", "Space Anda, aturan Anda"),
-                i("c1bc6f86", "Sebagai host, Anda mengontrol siapa yang diperbolehkan berbicara. Anda juga memiliki kuasa untuk mengeluarkan orang yang tidak Anda inginkan di Space Anda."),
-                i("b0bc8330", "Anda juga dapat memblokir dan melaporkan orang lain di Space."),
-                i("cb17a0f3", "Pelajari lebih lanjut"),
-                i("dcd77941", "Pelajari lebih lanjut"),
                 i("cc724cb0", "Buat Klip"),
                 i("cfd2f35e", "Batalkan"),
                 i("c1df579e", "Selanjutnya"),
@@ -124,6 +112,16 @@
                 i("a9ba3e28", "Informasi Pribadi"),
                 i("d5519f4a", "Perilaku Menghina"),
                 i("eb55363c", "Space ini sudah dilaporkan"),
+                i("gb418012", "Selamat datang di Spaces"),
+                i("fec3c1e0", "Tempat untuk menyelenggarakan percakapan audio."),
+                i("j32eb4f8", "Tambahkan hingga 10 pembicara"),
+                i("j4f133a6", "Anda dapat mengundang siapa saja di X untuk berbicara."),
+                i("ed434ac6", "Spaces bersifat publik—siapa pun dapat bergabung"),
+                i("e0025688", "Space Anda, aturan Anda"),
+                i("c1bc6f86", "Sebagai host, Anda mengontrol siapa yang diperbolehkan berbicara. Anda juga memiliki kuasa untuk mengeluarkan orang yang tidak Anda inginkan di Space Anda."),
+                i("b0bc8330", "Anda juga dapat memblokir dan melaporkan orang lain di Space."),
+                i("cb17a0f3", "Pelajari lebih lanjut"),
+                i("dcd77941", "Pelajari lebih lanjut"),
                 i("i65de934", "Anda mendengarkan secara anonim"),
                 i("b1037050", "Kelola Space"),
                 i("ic107434", "Aktifkan kamera"),
@@ -902,10 +900,10 @@
                 i("bf9e181b", "Pelajari lebih lanjut"),
                 i("e8e39f95", "Pelajari lebih lanjut"),
                 i("e126dd3f", "Pelajari lebih lanjut"),
-                i("i821844f", "Pelajari lebih lanjut");
-            i("b0abbb17", "Pelajari lebih lanjut"),
-                i("e7e0d88b", "Pelajari lebih lanjut"),
-                i("i560665f", "Pelajari lebih lanjut"),
+                i("i821844f", "Pelajari lebih lanjut"),
+                i("b0abbb17", "Pelajari lebih lanjut"),
+                i("e7e0d88b", "Pelajari lebih lanjut");
+            i("i560665f", "Pelajari lebih lanjut"),
                 i("f6e774d9", "Pelajari lebih lanjut"),
                 i("h486f755", "Pelajari lebih lanjut"),
                 i("bab41dab", "Pelajari lebih lanjut"),
@@ -1121,6 +1119,7 @@
                 i("dbb51952", "Lindungi postingan Anda?"),
                 i("de735de6", "Ini akan membuatnya hanya dapat dilihat oleh pengikut Anda di X."),
                 i("c5d4192a", "Dilindungi"),
+                i("gea6cc1a", "Anda yakin?"),
                 i("d9ddba70", "Komunitas bersifat publik, jadi jika akun Anda dilindungi, semua postingan Anda sebelumnya akan disembunyikan. Anda juga tidak akan dapat memposting di Komunitas sebelum akun Anda diubah menjadi publik."),
                 i("f527b322", "Lindungi akun saya"),
                 i("d165c992", "Siapa pun dapat menandai Anda"),
@@ -1317,9 +1316,10 @@
                     return "Kode eksekusi" + a.ttc_tool_usage_card;
                 }),
                 i("aa9d42c0", "Mencari di web"),
-                i("dce1817a", "Mencari di 𝕏"),
-                i("f7151564", "Mencari pengguna di 𝕏"),
+                i("c731d702", "Searching on X"),
+                i("d0e02476", "Searching users on X"),
                 i("c43ef93e", "Menelusuri halaman web"),
+                i("dab166ec", "Searching user posts on X"),
                 i("jb097f6e", "Kode eksekusi"),
                 i("ead81122", "Ada kesalahan teknis, silakan refresh untuk menyambungkan kembali atau coba lagi."),
                 i("f808a13a", "Batas maksimal tercapai. Silakan tunggu beberapa saat, lalu coba lagi."),
@@ -1813,6 +1813,7 @@
                 i("g00b4c55", function (a) {
                     return "Sebarkan @" + a.screenName + " lewat...";
                 }),
+                i("hb568af4", "Bisukan"),
                 i("bb1cbeb6", "Bunyikan"),
                 i("h2f62206", "Membisukan pengguna"),
                 i("h59f52ee", "Berhasil dibisukan."),
@@ -1913,11 +1914,11 @@
                 i("ef1649e2", "X - Pintasan Papan Ketik"),
                 i("aefd89c8", "Navigasi"),
                 i("cafdefb2", "Tindakan"),
-                i("dda42cf2", "Kolom & Deck"),
-                i("e8a12604", "Berikan keterangan (opsional)");
-            i("eabf2209", function (a) {
-                return "GIF disediakan oleh " + a.providerName;
-            }),
+                i("dda42cf2", "Kolom & Deck");
+            i("e8a12604", "Berikan keterangan (opsional)"),
+                i("eabf2209", function (a) {
+                    return "GIF disediakan oleh " + a.providerName;
+                }),
                 i("a613e720", "Salin tautan ke GIF"),
                 i("aeca1239", function (a) {
                     return "Tebal" + a.ttc_rich_text_composer;
@@ -2973,9 +2974,9 @@
                 i("e06b864c", "Sepertinya Anda menikmati percakapan ini"),
                 i("a078ff70", "Ingin melihat lebih banyak konten dari orang yang berinteraksi dengan Anda dalam utas ini? Mulai jelajahi konten dari akun baru."),
                 i("cb80300e", "Langsung ke timeline Beranda"),
-                i("ea5cd098", "Langsung ke bagian sedang tren"),
-                i("c67e3fc2", "Timeline beranda");
-            i("d601fc20", "Terbaru"),
+                i("ea5cd098", "Langsung ke bagian sedang tren");
+            i("c67e3fc2", "Timeline beranda"),
+                i("d601fc20", "Terbaru"),
                 i("j43f99be", "Relevansi"),
                 i("ad6e11ac", "Urutkan balasan berdasarkan"),
                 i("b2311b70", "Halaman ini tidak tersedia untuk Anda"),
@@ -3893,13 +3894,13 @@
                 }),
                 i("f5c7aaa7", function (a) {
                     return "host";
-                }),
-                i("fc56c8b1", function (a) {
-                    return "co-host";
                 });
-            i("iba0f45d", function (a) {
-                return "pembicara";
+            i("fc56c8b1", function (a) {
+                return "co-host";
             }),
+                i("iba0f45d", function (a) {
+                    return "pembicara";
+                }),
                 i("dc066955", function (a) {
                     return "pendengar";
                 }),
@@ -4929,9 +4930,9 @@
                 i("ff95a9cc", "ID video"),
                 i("a97e358e", "Tautan Video"),
                 i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
-                i("ba37f6da", "Ikhtisar video"),
-                i("f19846b2", "Thumbnail video");
-            i("ccd6f4a8", "Judul video"),
+                i("ba37f6da", "Ikhtisar video");
+            i("f19846b2", "Thumbnail video"),
+                i("ccd6f4a8", "Judul video"),
                 i("c8410542", "Berapa kali video Anda dilihat."),
                 i("a532072a", "Penonton"),
                 i("d9508ab0", "tayangan"),
@@ -5549,6 +5550,7 @@
                 i("bd7eb888", "Lihat semua catatan pada postingan ini"),
                 i("i97b83f6", "Ada gangguan saat mengirimkan banding Anda, silakan coba lagi."),
                 i("a038ab9a", "Terjemahkan catatan"),
+                i("icdb6d74", "Diusulkan oleh kontributor AI eksperimental sebagai respons atas permintaan untuk catatan. Seperti semua kontributor, AI bisa melakukan kesalahan — verifikasi keakuratannya."),
                 i("i606fc4c", "Tentang pengajuan banding di Catatan Komunitas"),
                 i("b664c554", "Minta peninjauan kontributor lainnya"),
                 i("ab66e1f2", "Berikut cara kerjanya:"),
@@ -5564,6 +5566,7 @@
                 i("ge25848a", "Status Saat Ini"),
                 i("d6db34cc", "Perlu lebih banyak penilaian"),
                 i("ce8b505e", "Tidak membantu"),
+                i("j42c88b6", "Penulis Catatan AI Eksperimental"),
                 i("e5be8156", "Status catatan dihitung oleh algoritma sumber terbuka"),
                 i("fca23c42", "Cukup banyak kontributor dari berbagai sudut pandang yang sepakat bahwa catatan ini membantu, sehingga catatan ini ditampilkan sebagai konteks di postingan."),
                 i("hef420c2", "Kontributor dari beragam sudut pandang yang menilai catatan ini belum cukup jumlahnya."),
@@ -5879,11 +5882,11 @@
                 i("ab1b3d38", "Data permintaan catatan belum tersedia"),
                 i("c43fb933", "Kebijakan dan Perjanjian Pengembang X"),
                 i("af781666", "Apa pendapat orang-orang?"),
-                i("a1f414ee", "Sampaikan pendapat"),
-                i("ed88e742", "Salin tautan ke Topik"),
+                i("a1f414ee", "Sampaikan pendapat");
+            i("ed88e742", "Salin tautan ke Topik"),
                 i("h92fe1be", "Maaf, Catatan Komunitas belum tersedia untuk Anda saat ini."),
-                i("f0dc1434", "Catatan Komunitas saat ini hanya tersedia di AS.");
-            i("f8fc0b48", "Buat Folder"),
+                i("f0dc1434", "Catatan Komunitas saat ini hanya tersedia di AS."),
+                i("f8fc0b48", "Buat Folder"),
                 i("c14bcdde", "Cari Markah"),
                 i("e9c65c4a", "Pencarian Markah"),
                 i("b92a21d9", function (a) {
@@ -6885,11 +6888,11 @@
                 i("j3d242ce", "Rentang tidak valid"),
                 i("f4d07bd2", "Cantumkan detail opsional untuk memudahkan kandidat menemukan posisi Anda melalui pencarian."),
                 i("b8cbb51a", "Ringkasan Pekerjaan"),
-                i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah."),
-                i("b075c68a", "Edit lowongan kerja"),
+                i("bda6881e", "Lowongan ini telah diimpor dari Sistem Pelacakan Pelamar (ATS) Anda. Harap diketahui bahwa hanya bidang tertentu yang dapat diubah.");
+            i("b075c68a", "Edit lowongan kerja"),
                 i("d4b6a6e0", "Spotlight Profil"),
-                i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda.");
-            i("af1cfd46", "Integrasi ATS"),
+                i("j2dd3686", "Sorot lowongan unggulan di atas postingan Anda."),
+                i("af1cfd46", "Integrasi ATS"),
                 i("d6fa2944", "Menghapus integrasi tidak akan menghapus lowongan yang diimpor."),
                 i("h99f11fa", "Hapus integrasi"),
                 i("eef1ae76", "Saat ini terhubung"),
@@ -7867,10 +7870,7 @@
                 i("d7b8387e", "Jika sudah membatalkan, Anda tidak perlu melakukan apa pun. Langganan Anda akan otomatis berakhir pada akhir siklus penagihan."),
                 i("f4166d9a", "Ingin membatalkan Langganan?"),
                 i("b74ff5fc", "Jika Anda membatalkan, Langganan Anda akan otomatis berakhir pada akhir siklus penagihan."),
-                i("ee9efbc8", "Lanjutkan ke pembatalan"),
-                i("c5d9c77a", "Tampaknya ada sedikit gangguan. Jangan khawatir, kami sedang mengatasinya. Tutup jendela ini lalu coba lagi."),
-                i("jda53c24", "Anda bisa membatalkan Langganan melalui Apple App Store."),
-                i("g0a7a53e", "Anda bisa membatalkan Langganan melalui Google Play Store.");
+                i("ee9efbc8", "Lanjutkan ke pembatalan");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7909,9 +7909,12 @@
                     d(a, n)
                 );
             }
-            i("i5f14be7", function (a) {
-                return "Selamat datang, " + a.displayName;
-            }),
+            i("c5d9c77a", "Tampaknya ada sedikit gangguan. Jangan khawatir, kami sedang mengatasinya. Tutup jendela ini lalu coba lagi."),
+                i("jda53c24", "Anda bisa membatalkan Langganan melalui Apple App Store."),
+                i("g0a7a53e", "Anda bisa membatalkan Langganan melalui Google Play Store."),
+                i("i5f14be7", function (a) {
+                    return "Selamat datang, " + a.displayName;
+                }),
                 i("a76d58ba", "Analitik Iklan"),
                 i("eccd0e1a", "Analitik Organisasi"),
                 i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
@@ -8907,11 +8910,11 @@
                 }),
                 i("b0b22805", function (a) {
                     return "Kunjungi " + a.advertiserName;
-                }),
-                i("c67e71aa", "Tonton sekarang"),
+                });
+            i("c67e71aa", "Tonton sekarang"),
                 i("a6ada13e", "Belanja sekarang"),
-                i("j0f12222", "Lihat selengkapnya");
-            i("f569f7c8", "Kunjungi situs web"),
+                i("j0f12222", "Lihat selengkapnya"),
+                i("f569f7c8", "Kunjungi situs web"),
                 i("j0c6772a", "Kunjungi situs web"),
                 i("f73003aa", "Video akan diputar setelah iklan"),
                 i("b3112b8a", "Lewati"),
@@ -9533,11 +9536,11 @@
             var u = e(202784),
                 k = [],
                 m = {};
-            function g(a) {
+            function s(a) {
                 return a;
             }
-            var s = (function (a) {
-                var n, e, i, t, s;
+            var g = (function (a) {
+                var n, e, i, t, g;
                 function b() {
                     return a.apply(this, arguments) || this;
                 }
@@ -13000,21 +13003,21 @@
                             get: function () {
                                 var a,
                                     n = u.Children.toArray(this.props.children),
-                                    e = ((a = this.props.$i18n), k[m[a]] || g);
+                                    e = ((a = this.props.$i18n), k[m[a]] || s);
                                 return function (a, i, t) {
                                     return a.concat(i, n[e(t)]);
                                 };
                             },
                         },
                     ]) && r(i.prototype, t),
-                    s && r(i, s),
+                    g && r(i, g),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     b
                 );
             })(e(111677)._ActualI18NFormatMessage || u.Component);
-            i("_ActualI18NFormatMessage", s),
+            i("_ActualI18NFormatMessage", g),
                 i("I18NFormatMessage", function (a) {
-                    return u.createElement(s, a);
+                    return u.createElement(g, a);
                 });
             var b = e(495075);
             e(800694), e(556829), e(530152), e(658610), e(492344), e(663823);
@@ -13366,4 +13369,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.3de2631a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.5d69714a.js.map

@@ -13,10 +13,18 @@
                 var t, i, d, a;
             }
             t("c39b0e24", "X"),
+                t("bcd6bb0e", "Medlem"),
+                t("hd8c22d2", "Mod."),
+                t("c3153100", "Admin"),
                 t("jb38600c", "Ingen"),
                 t("f07eac34", "Parodi-konto"),
                 t("a41b5c2e", "Fan-konto"),
                 t("i428ea62", "Kommentar-konto"),
+                t("jd859c9c", "Du er blevet fjernet fra dette Rum."),
+                t("cfbea177", function (e) {
+                    return e.name + "s Rum";
+                }),
+                t("ab4fc8bc", "Rum"),
                 t("ac0d27be", "Beklager, denne konto er blevet suspenderet."),
                 t("bcee7444", "Kontoopdatering fejlede."),
                 t("e0cbf77a", "Tilføj telefon"),
@@ -57,9 +65,6 @@
                 t("h1cbdd30", "Opdater venligst siden og prøv igen."),
                 t("a5077d3e", "Opdater"),
                 t("b2648ba4", "Din konto har muligvis ikke den nødvendige tilladelse til at udføre denne handling. Opdater siden, og prøv igen."),
-                t("bcd6bb0e", "Medlem"),
-                t("hd8c22d2", "Mod."),
-                t("c3153100", "Admin"),
                 t("fa9adac1", function (e) {
                     return 'Søg efter "' + e.query + '"';
                 }),
@@ -72,19 +77,12 @@
                 t("c64e46f8", "Dette medlem blev fjernet fra Fællesskabet, så vedkommendes posts er skjult."),
                 t("b3f1cb42", "En moderator skjulte denne post, fordi den overtræder en Fællesskabsregel."),
                 t("cbd2dc9c", "Du indberettede denne post."),
-                t("cfbea177", function (e) {
-                    return e.name + "s Rum";
-                }),
-                t("ab4fc8bc", "Rum"),
-                t("jd859c9c", "Du er blevet fjernet fra dette Rum."),
                 t("c60ed9b0", "Du har ikke tilladelse til at deltage i dette Rum."),
                 t("d8227e16", "Du har ikke tilladelse til at oprette dette Rum"),
                 t("f027fed8", "Billede-i-billede"),
                 t("hd50e064", "Ikke nu"),
                 t("i76d640e", "Vi har brug for din tilladelse"),
                 t("fdaa0be8", "Hvis du vil tale i dette Rum, skal du give X adgang til din mikrofon. Tjek dine browserindstillinger. "),
-                t("gea6cc1a", "Er du sikker?"),
-                t("hb568af4", "Skjul"),
                 t("f7c8617a", "Hvad er klip?"),
                 t("ecc7d2ec", "Klip er optagne øjeblikke, som alle i dit Rum kan oprette og dele. Alle klip udløber efter 30 dage."),
                 t("d575ee02", "Hvem kan oprette et klip?"),
@@ -102,16 +100,6 @@
                 t("jf03b37c", "Lyt til optagelsen, når du ønsker det. Du kan også dele den i en post."),
                 t("fd05976b", "Læs mere"),
                 t("b4f91a8a", "Optagelse aktiv"),
-                t("gb418012", "Velkommen til Rum"),
-                t("fec3c1e0", "Stedet til direkte lydsamtaler"),
-                t("j32eb4f8", "Tilføj op til 10 talere"),
-                t("j4f133a6", "Du kan invitere alle på X til at tale."),
-                t("ed434ac6", "Rum er offentlige – alle kan deltage"),
-                t("e0025688", "Dit Rum, dine regler"),
-                t("c1bc6f86", "Som vært styrer du, hvem der må tale. Du kan også fjerne personer, som du ikke ønsker i dit Rum."),
-                t("b0bc8330", "Du kan også blokere og indberette folk i et Rum."),
-                t("cb17a0f3", "Læs mere"),
-                t("dcd77941", "Læs mere"),
                 t("cc724cb0", "Opret klip"),
                 t("cfd2f35e", "Annuller"),
                 t("c1df579e", "Næste"),
@@ -125,6 +113,16 @@
                 t("a9ba3e28", "Private oplysninger"),
                 t("d5519f4a", "Krænkende adfærd"),
                 t("eb55363c", "Dette Rum er blevet indberettet"),
+                t("gb418012", "Velkommen til Rum"),
+                t("fec3c1e0", "Stedet til direkte lydsamtaler"),
+                t("j32eb4f8", "Tilføj op til 10 talere"),
+                t("j4f133a6", "Du kan invitere alle på X til at tale."),
+                t("ed434ac6", "Rum er offentlige – alle kan deltage"),
+                t("e0025688", "Dit Rum, dine regler"),
+                t("c1bc6f86", "Som vært styrer du, hvem der må tale. Du kan også fjerne personer, som du ikke ønsker i dit Rum."),
+                t("b0bc8330", "Du kan også blokere og indberette folk i et Rum."),
+                t("cb17a0f3", "Læs mere"),
+                t("dcd77941", "Læs mere"),
                 t("i65de934", "Du lytter anonymt"),
                 t("b1037050", "Administrer Rum"),
                 t("ic107434", "Tænd kameraet"),
@@ -903,10 +901,10 @@
                 t("bf9e181b", "Lær mere"),
                 t("e8e39f95", "Learn more"),
                 t("e126dd3f", "Learn more"),
-                t("i821844f", "Learn more");
-            t("b0abbb17", "Learn more"),
-                t("e7e0d88b", "Learn more"),
-                t("i560665f", "Learn more"),
+                t("i821844f", "Learn more"),
+                t("b0abbb17", "Learn more"),
+                t("e7e0d88b", "Learn more");
+            t("i560665f", "Learn more"),
                 t("f6e774d9", "Learn more"),
                 t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
@@ -1122,6 +1120,7 @@
                 t("dbb51952", "Beskyt dine posts?"),
                 t("de735de6", "Dette gør, at de kun kan ses af dine X-følgere."),
                 t("c5d4192a", "Beskyt"),
+                t("gea6cc1a", "Er du sikker?"),
                 t("d9ddba70", "Fællesskaber er offentlige, så hvis du beskytter din konto, skjuler du dine tidligere posts. Du kan heller ikke poste i Fællesskabet, før din konto er offentlig igen."),
                 t("f527b322", "Beskyt min konto"),
                 t("d165c992", "Alle kan tagge dig"),
@@ -1317,10 +1316,11 @@
                 t("a02d1657", function (e) {
                     return "Eksekverer kode" + e.ttc_tool_usage_card;
                 }),
-                t("aa9d42c0", "Searching the web"),
-                t("dce1817a", "Searching on 𝕏"),
-                t("f7151564", "Searching users on 𝕏"),
-                t("c43ef93e", "Browsing web page"),
+                t("aa9d42c0", "Søger på nettet"),
+                t("c731d702", "Searching on X"),
+                t("d0e02476", "Searching users on X"),
+                t("c43ef93e", "Gennemser websiden"),
+                t("dab166ec", "Searching user posts on X"),
                 t("jb097f6e", "Eksekverer kode"),
                 t("ead81122", "Noget gik galt, opdater venligst for at genoprette forbindelsen eller prøv igen. "),
                 t("f808a13a", "Begrænsning overskredet. Vent et øjeblik, og prøv igen."),
@@ -1368,11 +1368,11 @@
                 t("e0bffbf8", "Om automatisk oversættelse"),
                 t("e839db3a", "Afvis"),
                 t("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "Oversæt automatisk " + e.language;
                 }),
-                t("c60b9e5c", "Changes will take effect for newly loaded content."),
-                t("f9317b98", "language settings"),
-                t("hba0547a", "Unable to update settings. Please try again later."),
+                t("c60b9e5c", "Ændringer vil gælde for nyligt indlæst indhold."),
+                t("f9317b98", "Sprogindstillinger"),
+                t("hba0547a", "Indstillingerne kan ikke opdateres. Prøv igen senere."),
                 t("d4c339b9", function (e) {
                     return "Post fra " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1814,6 +1814,7 @@
                 t("g00b4c55", function (e) {
                     return "Del @" + e.screenName + " via ...";
                 }),
+                t("hb568af4", "Skjul"),
                 t("bb1cbeb6", "Vis"),
                 t("h2f62206", "Skjul bruger"),
                 t("h59f52ee", "Skjult."),
@@ -1914,11 +1915,11 @@
                 t("ef1649e2", "X – tastaturgenveje"),
                 t("aefd89c8", "Navigation"),
                 t("cafdefb2", "Handlinger"),
-                t("dda42cf2", "Kolonner og Dæk"),
-                t("e8a12604", "Angiv en billedtekst (valgfrit)");
-            t("eabf2209", function (e) {
-                return "GIF leveret af " + e.providerName;
-            }),
+                t("dda42cf2", "Kolonner og Dæk");
+            t("e8a12604", "Angiv en billedtekst (valgfrit)"),
+                t("eabf2209", function (e) {
+                    return "GIF leveret af " + e.providerName;
+                }),
                 t("a613e720", "Kopier link til GIF"),
                 t("aeca1239", function (e) {
                     return "Fed" + e.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 t("e06b864c", "Det ser ud til, at du synes om denne samtale"),
                 t("a078ff70", "Har du lyst til at se mere indhold fra de folk, du snakkede i denne tråd? Gå på opdagelse i indhold fra nye kontoer."),
                 t("cb80300e", "Spring til forsidetidslinje"),
-                t("ea5cd098", "Spring til Trender"),
-                t("c67e3fc2", "Forsidetidslinje");
-            t("d601fc20", "Seneste"),
+                t("ea5cd098", "Spring til Trender");
+            t("c67e3fc2", "Forsidetidslinje"),
+                t("d601fc20", "Seneste"),
                 t("j43f99be", "Relevans"),
                 t("ad6e11ac", "Sortér svar efter"),
                 t("b2311b70", "Dette er ikke tilgængeligt for dig"),
@@ -3894,13 +3895,13 @@
                 }),
                 t("f5c7aaa7", function (e) {
                     return "vært" + i(e.count, "", "er");
-                }),
-                t("fc56c8b1", function (e) {
-                    return "medvært" + i(e.count, "", "er");
                 });
-            t("iba0f45d", function (e) {
-                return "taler" + i(e.count, "", "e");
+            t("fc56c8b1", function (e) {
+                return "medvært" + i(e.count, "", "er");
             }),
+                t("iba0f45d", function (e) {
+                    return "taler" + i(e.count, "", "e");
+                }),
                 t("dc066955", function (e) {
                     return "lytter" + i(e.count, "", "e");
                 }),
@@ -4930,9 +4931,9 @@
                 t("ff95a9cc", "Video-id"),
                 t("a97e358e", "Video-link"),
                 t("e10e8b46", "Viser kun videoer fra de sidste 100 dage."),
-                t("ba37f6da", "Videooversigt"),
-                t("f19846b2", "Videominiaturebillede");
-            t("ccd6f4a8", "Video-titel"),
+                t("ba37f6da", "Videooversigt");
+            t("f19846b2", "Videominiaturebillede"),
+                t("ccd6f4a8", "Video-titel"),
                 t("c8410542", "Antallet af gange, din video er blevet vist."),
                 t("a532072a", "Seere"),
                 t("d9508ab0", "visninger"),
@@ -5550,6 +5551,7 @@
                 t("bd7eb888", "Se alle notater i denne post"),
                 t("i97b83f6", "Der opstod en fejl under afsendelse af din appel. Prøv igen."),
                 t("a038ab9a", "Oversæt notat"),
+                t("icdb6d74", "Foreslået af en eksperimentel AI-bidragyder som svar på anmodninger om en bemærkning, Ligesom alle bidragydere kan AI'er også begå fejl — tjek nøjagtigheden."),
                 t("i606fc4c", "Om appeller i Fællesskabsnoter"),
                 t("b664c554", "Anmod om yderligere bidragydergennemgang"),
                 t("ab66e1f2", "Sådan virker det:"),
@@ -5565,6 +5567,7 @@
                 t("ge25848a", "Aktuel status"),
                 t("d6db34cc", "Kræver flere bedømmelser"),
                 t("ce8b505e", "Ikke nyttig"),
+                t("j42c88b6", "Eksperimentel AI Note Writer"),
                 t("e5be8156", "Notatets status beregnet ved hjælp af en algoritme med åben kildekode"),
                 t("fca23c42", "Nok bidragydere med forskellige synspunkter var enige om, at dette notat er nyttigt, så det bliver vist som kontekst i posten."),
                 t("hef420c2", "Denne note er endnu ikke blevet bedømt af nok bidragydere med forskellige synspunkter."),
@@ -5880,11 +5883,11 @@
                 t("ab1b3d38", "Data om notatanmodning er ikke tilgængelige endnu"),
                 t("c43fb933", "X's udvikleraftale og -politik"),
                 t("af781666", "Hvad synes folk?"),
-                t("a1f414ee", "Del tanker"),
-                t("ed88e742", "Kopiér link til emne"),
+                t("a1f414ee", "Del tanker");
+            t("ed88e742", "Kopiér link til emne"),
                 t("h92fe1be", "Notater i Fællesskaber er desværre ikke tilgængelig for dig i øjeblikket."),
-                t("f0dc1434", "Fællesskabsnoter er i øjeblikket kun tilgængeligt i USA.");
-            t("f8fc0b48", "Opret en mappe"),
+                t("f0dc1434", "Fællesskabsnoter er i øjeblikket kun tilgængeligt i USA."),
+                t("f8fc0b48", "Opret en mappe"),
                 t("c14bcdde", "Søg i bogmærker"),
                 t("e9c65c4a", "Søg i bogmærker"),
                 t("b92a21d9", function (e) {
@@ -6886,11 +6889,11 @@
                 t("j3d242ce", "Ugyldigt interval"),
                 t("f4d07bd2", "Inkluder valgfrie oplysninger for at gøre det lettere for ansøgere at finde dine stillinger med søgning."),
                 t("b8cbb51a", "Stillingsoversigt"),
-                t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres."),
-                t("b075c68a", "Rediger stilling"),
+                t("bda6881e", "Denne stilling er blevet importeret fra dit ansøgersporingssystem (ATS). Bemærk, at kun specifikke felter kan ændres.");
+            t("b075c68a", "Rediger stilling"),
                 t("d4b6a6e0", "Profil-spotlight"),
-                t("j2dd3686", "Giv mere fokus til fremhævede stillinger end til mine poster.");
-            t("af1cfd46", "ATS-integration"),
+                t("j2dd3686", "Giv mere fokus til fremhævede stillinger end til mine poster."),
+                t("af1cfd46", "ATS-integration"),
                 t("d6fa2944", "Hvis du sletter din integration, vil dine importerede stillinger ikke blive slettet."),
                 t("h99f11fa", "Slet integration"),
                 t("eef1ae76", "I øjeblikket tilsluttet"),
@@ -7400,10 +7403,10 @@
                 t("d94f12b6", "Prøv at søge efter meddelelser, privatliv osv."),
                 t("ba8f6f82", "Søg efter indstillinger"),
                 t("ibf92e4a", "Betaling gennemført"),
-                t("bdf0fb06", "Your subscription has been activated."),
+                t("bdf0fb06", "Dit abonnement blev aktiveret."),
                 t("ddfd6718", "Betalingen mislykkedes"),
                 t("d42fa852", "Der opstod et problem under behandlingen af din betaling. Prøv igen."),
-                t("g055a9ce", "Open 𝕏 App"),
+                t("g055a9ce", "Åbn 𝕏 appen"),
                 t("g931a6e5", function (e) {
                     return "Du følger " + e.topic;
                 }),
@@ -7868,10 +7871,7 @@
                 t("d7b8387e", "Hvis du allerede har annulleret, er der ikke mere, du skal gøre. Dit abonnement udløber automatisk ved afslutningen af faktureringsperioden."),
                 t("f4166d9a", "Vil du annullere dit abonnement?"),
                 t("b74ff5fc", "Hvis du annullerer, udløber dit abonnement automatisk ved afslutningen af faktureringsperioden."),
-                t("ee9efbc8", "Fortsæt til annullering"),
-                t("c5d9c77a", "Det ser ud til, at der var en lille forstyrrelse. Bare rolig, det er ikke din skyld. Luk dette vindue, og prøv igen."),
-                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store."),
-                t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store.");
+                t("ee9efbc8", "Fortsæt til annullering");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7910,9 +7910,12 @@
                     a(e, r)
                 );
             }
-            t("i5f14be7", function (e) {
-                return "Velkommen tilbage " + e.displayName;
-            }),
+            t("c5d9c77a", "Det ser ud til, at der var en lille forstyrrelse. Bare rolig, det er ikke din skyld. Luk dette vindue, og prøv igen."),
+                t("jda53c24", "Du kan annullere dit abonnement via Apple App Store."),
+                t("g0a7a53e", "Du kan annullere dit abonnement via Google Play Store."),
+                t("i5f14be7", function (e) {
+                    return "Velkommen tilbage " + e.displayName;
+                }),
                 t("a76d58ba", "Annoncestatistik"),
                 t("eccd0e1a", "Statistik for organisation"),
                 t("deea1708", "Vil du se statistik på tværs af alle dine X-konti?"),
@@ -8908,11 +8911,11 @@
                 }),
                 t("b0b22805", function (e) {
                     return "Besøg " + e.advertiserName;
-                }),
-                t("c67e71aa", "Se nu"),
+                });
+            t("c67e71aa", "Se nu"),
                 t("a6ada13e", "Køb nu"),
-                t("j0f12222", "Se mere");
-            t("f569f7c8", "Gå til webstedet"),
+                t("j0f12222", "Se mere"),
+                t("f569f7c8", "Gå til webstedet"),
                 t("j0c6772a", "Besøg webstedet"),
                 t("f73003aa", "Videoen afspilles efter annoncen"),
                 t("b3112b8a", "Spring over"),
@@ -10155,7 +10158,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["Grok oversætter automatisk baseret på dine ", ". Du kan også ændre indstillingerne for automatisk oversættelse nedenfor."];
                             },
                         },
                         {
@@ -13370,4 +13373,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.394affca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.d3af40aa.js.map

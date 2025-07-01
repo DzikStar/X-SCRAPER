@@ -19,7 +19,7 @@
             const l = s.default.create((e) => ({ container: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, temperature: { fontSize: e.fontSizes.subtext1, lineHeight: e.fontSizes.subtext1 }, low: { color: e.colors.gray600 }, bar: { display: "flex", flex: 1, height: e.spaces.space4, borderRadius: e.spaces.space4, backgroundColor: e.colors.gray50, position: "relative" }, innerBar: { height: "100%", borderRadius: e.spaces.space4, position: "absolute" }, currentTemperatureIndicator: { position: "absolute", height: e.spaces.space8, width: e.spaces.space8, borderRadius: e.spaces.space8, borderStyle: "solid", top: "50%", transform: [{ translateY: "-50%", translateX: "-50%" }], borderColor: e.colors.gray50, borderWidth: e.spaces.space2, backgroundColor: e.colors.white } }));
         },
         3644: (e, t, r) => {
-            r.d(t, { Z: () => C });
+            r.d(t, { Z: () => b });
             r(136728);
             var a = r(202784),
                 n = r(325686),
@@ -65,10 +65,10 @@
             }
             const y = o.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, temperatureContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, temperature: { fontSize: e.fontSizes.title1, lineHeight: e.fontSizes.title1 }, temperatureOptions: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, temperatureOption: { fontSize: "inherit", lineHeight: "inherit", color: e.colors.gray700 }, selectedTemperatureOption: { color: e.colors.brandColor }, hoveredTemperatureOption: { cursor: "pointer", color: e.colors.brandColor }, divider: { height: e.spaces.space12, width: 1, backgroundColor: e.colors.gray700 }, location: { fontSize: e.fontSizes.subtext1, lineHeight: e.fontSizes.subtext1 } }));
             function w({ high: e, low: t }) {
-                return a.createElement(n.Z, { style: b.container }, void 0 !== e && void 0 !== t && a.createElement(n.Z, { style: b.highLowContainer }, a.createElement(p.ZP, { style: b.highLowText, weight: "bold" }, `H:${Math.round(e)}°`), a.createElement(n.Z, { style: b.divider }), a.createElement(p.ZP, { style: b.highLowText, weight: "bold" }, `L:${Math.round(t)}°`)));
+                return a.createElement(n.Z, { style: C.container }, void 0 !== e && void 0 !== t && a.createElement(n.Z, { style: C.highLowContainer }, a.createElement(p.ZP, { style: C.highLowText, weight: "bold" }, `H:${Math.round(e)}°`), a.createElement(n.Z, { style: C.divider }), a.createElement(p.ZP, { style: C.highLowText, weight: "bold" }, `L:${Math.round(t)}°`)));
             }
-            const b = o.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12, fontSize: e.fontSizes.subtext1, lineHeight: e.fontSizes.subtext1 }, highLowContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, fontSize: "inherit", lineHeight: "inherit" }, highLowText: { fontSize: "inherit", lineHeight: "inherit" }, divider: { height: e.spaces.space12, width: 1, backgroundColor: e.colors.gray700 } }));
-            function C({ cardAttachment: e, isAnimated: t, isInline: r, isPreview: o }) {
+            const C = o.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12, fontSize: e.fontSizes.subtext1, lineHeight: e.fontSizes.subtext1 }, highLowContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, fontSize: "inherit", lineHeight: "inherit" }, highLowText: { fontSize: "inherit", lineHeight: "inherit" }, divider: { height: e.spaces.space12, width: 1, backgroundColor: e.colors.gray700 } }));
+            function b({ cardAttachment: e, isAnimated: t, isInline: r, isPreview: o }) {
                 const [l, u] = a.useState("F"),
                     p = a.useMemo(() => {
                         const t = { ...e.weather_data.currentWeather };
@@ -122,7 +122,7 @@
             const x = o.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, summaryContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, divider: { width: "100%", height: 1, backgroundColor: e.colors.gray300 }, createdAtText: {} }));
         },
         670178: (e, t, r) => {
-            r.d(t, { G5: () => S, L6: () => D, Ot: () => F, Sb: () => M, bL: () => v, qp: () => Z, v0: () => E });
+            r.d(t, { G5: () => S, L6: () => D, Ot: () => Z, Sb: () => F, bL: () => v, qp: () => M, v0: () => E });
             r(571372), r(202784);
             var a = r(209725),
                 n = r(111677),
@@ -140,8 +140,8 @@
                 g = o().j92274b0,
                 y = o().ja482160,
                 w = o().f4ad4cb0,
-                b = o().d66bf142,
-                C = o().dc17968a,
+                C = o().d66bf142,
+                b = o().dc17968a,
                 x = o().j310a2d6;
             function S(e, t, r) {
                 if (t === r) return e;
@@ -155,19 +155,19 @@
             function D(e = new Date()) {
                 return e.setHours(0, 0, 0, 0), e;
             }
-            function F(e, t) {
+            function Z(e, t) {
                 const r = new Date();
                 if (e.toDateString() === r.toDateString()) return i;
-                return (t ? [f, g, y, w, b, C, x] : [c, l, u, p, d, m, h])[e.getDay()];
+                return (t ? [f, g, y, w, C, b, x] : [c, l, u, p, d, m, h])[e.getDay()];
             }
-            function M(e) {
+            function F(e) {
                 const t = new Date();
                 if (e.toDateString() === t.toDateString() && e.getHours() === t.getHours()) return s;
                 let r = e.getHours();
                 const a = r >= 12 ? "PM" : "AM";
                 return (r %= 12), (r = r || 12), `${r}${a}`;
             }
-            function Z(e) {
+            function M(e) {
                 switch (e) {
                     case "BlowingDust":
                     case "Breezy":
@@ -264,19 +264,20 @@
                 );
             }
             function g({ onPostExists: e, postId: t }) {
-                const r = a.useMemo(() => u.Z.createHydratorForTweet(t), [t]),
-                    n = (0, l.v9)(r);
+                const [r, n] = a.useState(!0),
+                    o = a.useMemo(() => u.Z.createHydratorForTweet(t), [t]),
+                    s = (0, l.v9)(o);
                 return (
                     a.useEffect(() => {
-                        n && e();
-                    }, [n, e]),
+                        s && r && (e(), n(!1));
+                    }, [s, e, r]),
                     null
                 );
             }
             const y = s.default.create((e) => ({ container: { marginTop: e.spaces.space12, marginBottom: e.spaces.space16, display: "flex", flexDirection: "column", gap: e.spaces.space12 }, seeAllPostsButton: { width: "fit-content" } }));
         },
         353880: (e, t, r) => {
-            r.d(t, { Z: () => b });
+            r.d(t, { Z: () => C });
             var a = r(202784),
                 n = r(325686),
                 o = r(488684),
@@ -293,7 +294,7 @@
                 g = r(988290),
                 y = r(486557);
             const w = m().db6c20cf;
-            function b({ cardAttachment: e }) {
+            function C({ cardAttachment: e }) {
                 const { isCompactLayout: t, isGrokDrawer: r } = (0, g.ZP)(),
                     [i, c] = a.useState(!1),
                     l = t || r ? 2 : 3,
@@ -301,17 +302,17 @@
                     p = a.useMemo(
                         () =>
                             1 === u.length
-                                ? a.createElement(o.Z, { screenName: u[0], wrapperStyle: [x.singleUserCardContainer, t && x.compactSingleUserCardContainer] }, a.createElement(C, { useConciseDescription: !1, userHandle: u[0] }))
+                                ? a.createElement(n.Z, { style: x.singleUserCardOuterContainer }, a.createElement(o.Z, { screenName: u[0], wrapperStyle: [x.singleUserCardContainer, t && x.compactSingleUserCardContainer] }, a.createElement(b, { useConciseDescription: !1, userHandle: u[0] })))
                                 : a.createElement(
                                       n.Z,
                                       { style: x.userCards },
-                                      u.map((e, r) => a.createElement(o.Z, { screenName: e, wrapperStyle: x.userCardWrapper }, a.createElement(C, { key: e, showPreview: !0, style: { animationDelay: 0.1 * r + "s" }, useConciseDescription: u.length > 1, userHandle: e, withStackedUserNameLayout: t }))),
+                                      u.map((e, r) => a.createElement(o.Z, { screenName: e, wrapperStyle: x.userCardWrapper }, a.createElement(b, { key: e, showPreview: !0, style: { animationDelay: 0.1 * r + "s" }, useConciseDescription: u.length > 1, userHandle: e, withStackedUserNameLayout: t }))),
                                   ),
                         [u, t],
                     );
                 return a.createElement(n.Z, { style: x.container }, p, e.user_handles.length > l && a.createElement(s.ZP, { backgroundColor: "transparent", borderColor: "gray200", color: "gray900", fontWeight: "normal", onClick: () => c(!0), style: x.seeAllUsersButton, textSizeOverride: "subtext1" }, w({ count: e.user_handles.length })), i && a.createElement(y.S, { onDrawerDismiss: () => c(!1), userHandles: e.user_handles }));
             }
-            function C({ showPreview: e = !1, style: t, useConciseDescription: r, userHandle: o, withStackedUserNameLayout: s = !1 }) {
+            function b({ showPreview: e = !1, style: t, useConciseDescription: r, userHandle: o, withStackedUserNameLayout: s = !1 }) {
                 const p = (0, h.v9)((e) => f.ZP.selectByScreenName(e, o));
                 if (!p) return null;
                 const d = `https://x.com/${p.screen_name}`;
@@ -327,8 +328,8 @@
                     ({ isHovered: e }) => a.createElement(n.Z, { style: [x.userCard, e && x.hoveredUserCard] }, a.createElement(c.Z, { isVerified: p.is_blue_verified, name: p.name, profileImageUrl: p.profile_image_url_https, screenName: p.screen_name, withStackedLayout: s }), p.description ? a.createElement(l.Z, { description: p.description, entities: {}, isConcise: r, style: x.userDescription, userId: p.id_str }) : a.createElement(n.Z, { style: x.userDescription }), a.createElement(u.Z, { followersCount: p.followers_count, friendsCount: p.friends_count, screenName: p.screen_name, style: x.userStats, withLink: !1, withSubscribersCount: !1, withSubscriptionsCount: !1 })),
                 );
             }
-            const x = p.default.create((e) => ({ container: { marginTop: e.spaces.space12, marginBottom: e.spaces.space16, display: "flex", flexDirection: "column", width: "100%" }, singleUserCardContainer: { width: "70%" }, compactSingleUserCardContainer: { width: "100%" }, userCards: { width: "100%", flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space12, marginBottom: e.spaces.space12 }, userCardWrapper: { flex: 1 }, outerUserCard: { flex: 1 }, userCard: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space8, backgroundColor: "transparent", borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, borderRadius: e.borderRadii.large, padding: e.spaces.space12, textOverflow: "ellipsis", cursor: "pointer", animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both", transition: "background-color 0.2s ease" }, hoveredUserCard: { backgroundColor: e.colors.gray50 }, userDescription: { flex: 1 }, seeAllUsersButton: { width: "fit-content", animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, userStats: { flex: "unset" } }));
+            const x = p.default.create((e) => ({ container: { marginTop: e.spaces.space12, marginBottom: e.spaces.space16, display: "flex", flexDirection: "column", width: "100%" }, singleUserCardOuterContainer: { width: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }, singleUserCardContainer: { width: "50%" }, compactSingleUserCardContainer: { width: "100%" }, userCards: { width: "100%", flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space12, marginBottom: e.spaces.space12 }, userCardWrapper: { flex: 1 }, outerUserCard: { flex: 1 }, userCard: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space8, backgroundColor: "transparent", borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200, borderRadius: e.borderRadii.large, padding: e.spaces.space12, textOverflow: "ellipsis", cursor: "pointer", animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both", transition: "background-color 0.2s ease" }, hoveredUserCard: { backgroundColor: e.colors.gray50 }, userDescription: { flex: 1 }, seeAllUsersButton: { width: "fit-content", animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, userStats: { flex: "unset" } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-f29574de.b4061a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Grok~loader.Markdown-f29574de.2c7a572a.js.map

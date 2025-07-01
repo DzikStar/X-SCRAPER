@@ -178,7 +178,7 @@
             }
         },
         202527: (e, t, s) => {
-            s.d(t, { Z: () => I });
+            s.d(t, { Z: () => E });
             var n = s(807896),
                 o = s(202784),
                 i = s(855488),
@@ -186,32 +186,35 @@
                 r = s(912021),
                 c = s(443781),
                 l = s(511473),
-                d = s(804027),
-                p = s(227991),
-                u = s(663951),
-                _ = s(280947),
-                h = s(975364),
-                m = s(305784),
-                b = s(153925),
-                k = s(71620),
-                f = s(668214),
-                g = s(118823);
-            const v = (0, f.Z)()
-                    .propsFromState(() => ({ navigationContext: g.b, verificationSendFailureMessage: g.aR }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("OCF_FLOW_PHONE_VERIFICATION"), verifyIdentifier: g.if }))
+                d = s(697888),
+                p = s(804027),
+                u = s(227991),
+                _ = s(663951),
+                h = s(280947),
+                m = s(975364),
+                b = s(305784),
+                k = s(153925),
+                f = s(71620),
+                g = s(668214),
+                v = s(118823);
+            const y = (0, g.Z)()
+                    .propsFromState(() => ({ navigationContext: v.b, verificationSendFailureMessage: v.aR }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("OCF_FLOW_PHONE_VERIFICATION"), verifyIdentifier: v.if }))
                     .withAnalytics({ component: "phone_verification" }),
-                y = "ocfPhoneVerificationNextLink",
-                S = "normalized_phone";
-            class Z extends o.Component {
+                S = "ocfPhoneVerificationNextLink",
+                Z = "normalized_phone";
+            class P extends o.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._sendSmsVerificationRequest = () => {
                             const { createLocalApiErrorHandler: e, navigationContext: t, onNavigate: s, subtask: n, subtaskInputs: o, verifyIdentifier: i } = this.props,
-                                a = n.phone_number && (0, b.Ds)(o, n.phone_number),
-                                r = n.phone_country_code && (0, b.Ds)(o, n.phone_country_code),
-                                c = t && t.action ? t.action === d.vY.ResendVoice : !!n.send_via_voice;
+                                a = n.phone_number && (0, k.Ds)(o, n.phone_number),
+                                r = n.phone_country_code && (0, k.Ds)(o, n.phone_country_code),
+                                c = t && t.action ? t.action === p.vY.ResendVoice : !!n.send_via_voice;
                             this._isSmsAutoVerifyEnabled && this._autoVerifySmsCode();
-                            return i({ phone: a, use_voice: c, sim_country_code: r, send_auto_verify_hash: this._isSmsAutoVerifyEnabled || (this._isSmsAutoVerifySupported && this.context.featureSwitches.isTrue("responsive_web_ocf_sms_autoverify_darkwrite")) })
+                            const u = this._isSmsAutoVerifyEnabled || (this._isSmsAutoVerifySupported && this.context.featureSwitches.isTrue("responsive_web_ocf_sms_autoverify_darkwrite"));
+                            return (0, d.Ym)()
+                                .then((e) => i({ phone: a, use_voice: c, sim_country_code: r, send_auto_verify_hash: u, castle_token: e }))
                                 .then((e) => {
                                     const t = e.normalized_phone_number;
                                     t && this.setState({ normalized_phone: t });
@@ -248,7 +251,7 @@
                             n(s, { code: o, link: t.next_link.link_id, normalized_phone: i, by_voice: !!t.send_via_voice }), e(t.next_link);
                         });
                     const { subtaskId: s, subtaskInputs: n } = e,
-                        o = (0, b.OG)(n, { key: S, subtask_id: s }, "") || "";
+                        o = (0, k.OG)(n, { key: Z, subtask_id: s }, "") || "";
                     (this.state = { code: "", normalized_phone: o, showSmsResendDialog: !1 }), (this._isSmsAutoVerifySupported = "OTPCredential" in window), (this._isSmsAutoVerifyEnabled = this._isSmsAutoVerifySupported && this.context.featureSwitches.isTrue("responsive_web_ocf_sms_autoverify_enabled")), this._isSmsAutoVerifyEnabled && (this._smsAutoVerifyAbortController = new AbortController());
                 }
                 componentDidMount() {
@@ -260,14 +263,14 @@
                 render() {
                     const { onNavigate: e, passthroughOcfScreenProps: t, subtask: s, subtaskInputs: a } = this.props,
                         { code_length: r, next_link: c, primary_text: l, secondary_text: d } = s,
-                        { code: b } = this.state,
-                        k = o.createElement(h.Z, (0, n.Z)({}, s.detail_text, { color: "link", onNavigate: e, style: P.detailLink, subtaskInputs: a }));
-                    return o.createElement(_.Z, (0, n.Z)({}, t, { footer: o.createElement(p.ZP, { actionDisabled: 0 === b.length, actionLabel: c?.label, actionTestID: y, onAction: this._handleDoneButtonClick }), header: o.createElement(u.Z, { onNavigate: e, primaryTextProp: l, secondaryTextProp: d, subtaskInputs: a, withHeaderImage: !0 }), providePadding: !0 }), o.createElement(i.Z, { autoComplete: "one-time-code", autoFocus: !0, helperText: k, inputMode: "numeric", label: s.hint_text, name: "verfication_code", onChange: this._handleCodeUpdated, pattern: this._getCodePattern(r).source, style: m.Z.formTextInput, value: b }), this.props.errorDialog);
+                        { code: p } = this.state,
+                        k = o.createElement(m.Z, (0, n.Z)({}, s.detail_text, { color: "link", onNavigate: e, style: I.detailLink, subtaskInputs: a }));
+                    return o.createElement(h.Z, (0, n.Z)({}, t, { footer: o.createElement(u.ZP, { actionDisabled: 0 === p.length, actionLabel: c?.label, actionTestID: S, onAction: this._handleDoneButtonClick }), header: o.createElement(_.Z, { onNavigate: e, primaryTextProp: l, secondaryTextProp: d, subtaskInputs: a, withHeaderImage: !0 }), providePadding: !0 }), o.createElement(i.Z, { autoComplete: "one-time-code", autoFocus: !0, helperText: k, inputMode: "numeric", label: s.hint_text, name: "verfication_code", onChange: this._handleCodeUpdated, pattern: this._getCodePattern(r).source, style: b.Z.formTextInput, value: p }), this.props.errorDialog);
                 }
             }
-            Z.contextType = c.rC;
-            const P = a.default.create((e) => ({ detailLink: { marginTop: e.spaces.space16 } })),
-                I = v(Z);
+            P.contextType = c.rC;
+            const I = a.default.create((e) => ({ detailLink: { marginTop: e.spaces.space16 } })),
+                E = y(P);
         },
         367003: (e, t, s) => {
             s.d(t, { Z: () => b });
@@ -369,4 +372,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5fa231a1.cf2b2ffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Ocf-5fa231a1.04afbb3a.js.map

@@ -1,13 +1,13 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["loaders.video.VideoPlayerMiniUI"],
+    ["loaders.video.VideoPlayerMiniUI", "icons/IconClosedcaptioningStroke-js"],
     {
         738584: (e, t, a) => {
             a.d(t, { o: () => y, Z: () => b });
             var r = a(807896),
                 n = a(202784),
-                l = a(928316),
-                i = a(682474),
+                i = a(928316),
+                l = a(682474),
                 s = a(392237),
                 o = a(893164),
                 c = a(395367),
@@ -27,8 +27,8 @@
             function y({ children: e, periodic: t }) {
                 const a = t ? h.PeriodicContext.Consumer : h.Context.Consumer;
                 return n.createElement(a, null, (t) => {
-                    const { aspectRatio: a, containerRef: r, guestsState: n, playerApi: l, playerState: i } = t;
-                    return l && r && i ? e({ aspectRatio: a, guestsState: n, playerApi: l, playerState: i, containerRef: r }) : null;
+                    const { aspectRatio: a, containerRef: r, guestsState: n, playerApi: i, playerState: l } = t;
+                    return i && r && l ? e({ aspectRatio: a, guestsState: n, playerApi: i, playerState: l, containerRef: r }) : null;
                 });
             }
             class h extends n.Component {
@@ -58,7 +58,7 @@
                 }
                 componentDidUpdate() {
                     if (!this._containerRef) {
-                        const e = l.findDOMNode(this);
+                        const e = i.findDOMNode(this);
                         e && e instanceof HTMLElement && (this._containerRef = e);
                     }
                 }
@@ -67,13 +67,13 @@
                     this.setState(() => ({ hasError: a }));
                 }
                 render() {
-                    const { guestsState: e, playerApi: t, playerState: a, stablePlayerState: l } = this.state,
-                        { additionalBadges: s, aspectRatio: p, basePlayerClass: d, children: u, includeDisputeLinkInCopyrightErrorMessage: y, isFullScreen: b, objectFitVideo: f, onApiReady: g, onScroll: S, onStateUpdate: E, playerId: P, size: v, ...C } = this.props,
+                    const { guestsState: e, playerApi: t, playerState: a, stablePlayerState: i } = this.state,
+                        { additionalBadges: s, aspectRatio: p, basePlayerClass: d, children: u, includeDisputeLinkInCopyrightErrorMessage: y, isFullScreen: b, objectFitVideo: f, onApiReady: g, onScroll: S, onStateUpdate: v, playerId: E, size: P, ...C } = this.props,
                         _ = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: a, containerRef: this._containerRef },
-                        A = { ..._, playerState: l };
+                        A = { ..._, playerState: i };
                     return n.createElement(
-                        i.Z,
-                        { isFullScreen: b, onScroll: S, ratio: p, style: [m.root, m[v]] },
+                        l.Z,
+                        { isFullScreen: b, onScroll: S, ratio: p, style: [m.root, m[P]] },
                         this.state.hasError
                             ? n.createElement(o.Z, { onReloadPress: this._handleReload })
                             : n.createElement(
@@ -93,10 +93,10 @@
                 b = h;
         },
         395367: (e, t, a) => {
-            a.d(t, { Z: () => i });
+            a.d(t, { Z: () => l });
             var r,
                 n = a(202784);
-            class l extends n.Component {
+            class i extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { playerApi: void 0, playerState: void 0, guestsState: void 0 }),
@@ -115,7 +115,7 @@
                     return this.props.children(this.state);
                 }
             }
-            class i extends n.Component {
+            class l extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { players: {} }),
@@ -146,17 +146,17 @@
                     this._mounted = !1;
                 }
                 render() {
-                    return n.createElement(i.RegistrationContext.Provider, { value: this._registrationContext }, n.createElement(i.ProviderContext.Provider, { value: this.state }, this.props.children));
+                    return n.createElement(l.RegistrationContext.Provider, { value: this._registrationContext }, n.createElement(l.ProviderContext.Provider, { value: this.state }, this.props.children));
                 }
             }
-            (r = i), (i.MetadataSubscriber = ({ children: e, playerId: t }) => n.createElement(r.ProviderContext.Consumer, null, ({ players: a }) => n.createElement(l, { playerApi: a && a[t] }, e))), (i.RegistrationContext = n.createContext({ registerPlayer: void 0 })), (i.ProviderContext = n.createContext({ players: {} }));
+            (r = l), (l.MetadataSubscriber = ({ children: e, playerId: t }) => n.createElement(r.ProviderContext.Consumer, null, ({ players: a }) => n.createElement(i, { playerApi: a && a[t] }, e))), (l.RegistrationContext = n.createContext({ registerPlayer: void 0 })), (l.ProviderContext = n.createContext({ players: {} }));
         },
         986460: (e, t, a) => {
-            a.d(t, { GS: () => c, Js: () => i, M2: () => s, Nj: () => d, cm: () => p, gF: () => l, iG: () => y, kA: () => o, lO: () => u });
+            a.d(t, { GS: () => c, Js: () => l, M2: () => s, Nj: () => d, cm: () => p, gF: () => i, iG: () => y, kA: () => o, lO: () => u });
             var r = a(111677),
                 n = a.n(r);
-            const l = n().fb236728,
-                i = n().e9bd453e,
+            const i = n().fb236728,
+                l = n().e9bd453e,
                 s = n().f17dfdb6,
                 o = n().d46b00b0,
                 c = n().ec8ab8b4,
@@ -169,11 +169,11 @@
             a.d(t, { Z: () => p });
             var r = a(202784),
                 n = a(325686),
-                l = a(111677),
-                i = a.n(l),
+                i = a(111677),
+                l = a.n(i),
                 s = a(154003),
                 o = a(392237);
-            const c = i().f2d4e6f2;
+            const c = l().f2d4e6f2;
             class p extends r.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -195,27 +195,27 @@
             a.d(t, { Z: () => b });
             var r = a(807896),
                 n = a(202784),
-                l = a(111677),
-                i = a.n(l),
+                i = a(111677),
+                l = a.n(i),
                 s = a(731708),
                 o = a(392237),
                 c = a(738584),
                 p = a(424713),
                 d = a(251478);
-            const u = i().f1ad0df1,
-                y = i().ef16ab2b,
+            const u = l().f1ad0df1,
+                y = l().ef16ab2b,
                 h = n.memo(
                     ({ playerState: e, style: t }) => {
                         const a = n.useMemo(() => [m.label, t], [t]),
                             r = ((e) => {
                                 const t = (0, p.Ci)(e);
                                 if (!t) return null;
-                                const { advertiserName: a, currentTimeMs: r, displayType: n, durationMs: l } = t;
-                                if (l && (e.isPlaying || r < l)) {
-                                    const e = (0, p.mr)((l - r) / 1e3);
+                                const { advertiserName: a, currentTimeMs: r, displayType: n, durationMs: i } = t;
+                                if (i && (e.isPlaying || r < i)) {
+                                    const e = (0, p.mr)((i - r) / 1e3);
                                     return n === d.ak.AD ? (a ? y({ advertiserName: a, timeRemaining: e }) : u({ timeRemaining: e })) : e;
                                 }
-                                return l ? (0, p.mr)(l / 1e3) : null;
+                                return i ? (0, p.mr)(i / 1e3) : null;
                             })(e);
                         return r ? n.createElement(s.ZP, { style: a }, r) : null;
                     },
@@ -235,8 +235,8 @@
             a.d(t, { Z: () => g });
             var r = a(807896),
                 n = a(202784),
-                l = a(643442),
-                i = a(737691),
+                i = a(643442),
+                l = a(737691),
                 s = a(466445),
                 o = a(530732),
                 c = a(392237),
@@ -250,12 +250,12 @@
                     const g = n.useMemo(() => [f.playButton, u], [u]),
                         S = n.useMemo(() => [f.playIcon, e], [e]);
                     if (!c || !a) return null;
-                    const { controls: E, isPlaying: P } = c,
-                        { pause: v, play: C, replay: _ } = a,
+                    const { controls: v, isPlaying: E } = c,
+                        { pause: P, play: C, replay: _ } = a,
                         A = (0, d.Ci)(c);
                     if (!A || (A.isLive && !t)) return null;
                     let R;
-                    return (R = P || (E && "PLAY_REQUESTED" === E.playState) ? { "aria-label": p.gF, children: n.createElement(l.default, { style: S }), hoverLabel: h, onPress: v } : E.isReplayButtonShown ? { "aria-label": p.Js, children: n.createElement(i.default, { style: S }), hoverLabel: m, onPress: _ } : { "aria-label": p.M2, children: n.createElement(s.default, { style: S }), hoverLabel: y, onPress: C }), n.createElement(o.Z, (0, r.Z)({}, b, R, { style: g }));
+                    return (R = E || (v && "PLAY_REQUESTED" === v.playState) ? { "aria-label": p.gF, children: n.createElement(i.default, { style: S }), hoverLabel: h, onPress: P } : v.isReplayButtonShown ? { "aria-label": p.Js, children: n.createElement(l.default, { style: S }), hoverLabel: m, onPress: _ } : { "aria-label": p.M2, children: n.createElement(s.default, { style: S }), hoverLabel: y, onPress: C }), n.createElement(o.Z, (0, r.Z)({}, b, R, { style: g }));
                 },
                 f = c.default.create((e) => ({ playButton: { padding: e.spaces.space4 }, playIcon: { height: e.spaces.space12, width: e.spaces.space12 } })),
                 g = n.memo(b);
@@ -264,8 +264,8 @@
             a.r(t), a.d(t, { default: () => L });
             var r = a(202784),
                 n = a(325686),
-                l = a(908629),
-                i = a(392237),
+                i = a(908629),
+                l = a(392237),
                 s = a(364779),
                 o = a(535814),
                 c = a(424713),
@@ -279,32 +279,32 @@
                 f = a(819329),
                 g = a(506707),
                 S = a(197765);
-            const E = u().j25d7cca,
-                P = u().a858b25c,
-                v = { preferredVerticalOrientation: "up", preferredHorizontalOrientation: "end", withLayer: !1, withExtraSpace: !1, label: E },
-                C = { ...v, label: P },
-                _ = ({ liveBroadcastRewindEnabled: e, mediaAccessibilityLabel: t, playerApi: a, playerDisplayOptions: l, playerState: i }) => {
-                    const s = i ? (0, c.Ci)(i) : void 0,
-                        o = i
+            const v = u().j25d7cca,
+                E = u().a858b25c,
+                P = { preferredVerticalOrientation: "up", preferredHorizontalOrientation: "end", withLayer: !1, withExtraSpace: !1, label: v },
+                C = { ...P, label: E },
+                _ = ({ liveBroadcastRewindEnabled: e, mediaAccessibilityLabel: t, playerApi: a, playerDisplayOptions: i, playerState: l }) => {
+                    const s = l ? (0, c.Ci)(l) : void 0,
+                        o = l
                             ? [
                                   ((t) => {
-                                      const i = s?.contentType !== p.wF.GIF && !l?.badgeConfiguration?.hideDuration;
-                                      return r.createElement(b.ZP, { key: "time-badge", style: w.durationBadge }, r.createElement(n.Z, { style: w.combinedLabel }, r.createElement(g.Z, { liveBroadcastRewindEnabled: e, playerApi: a, playerState: t, style: w.playButton }), i && r.createElement(S.Z, { key: "time-badge-time", style: w.timeRemaining })));
-                                  })(i),
+                                      const l = s?.contentType !== p.wF.GIF && !i?.badgeConfiguration?.hideDuration;
+                                      return r.createElement(b.ZP, { key: "time-badge", style: w.durationBadge }, r.createElement(n.Z, { style: w.combinedLabel }, r.createElement(g.Z, { liveBroadcastRewindEnabled: e, playerApi: a, playerState: t, style: w.playButton }), l && r.createElement(S.Z, { key: "time-badge-time", style: w.timeRemaining })));
+                                  })(l),
                                   s?.contentType === p.wF.GIF ? r.createElement(b.ZP, { bold: !0, key: "gif", type: "gif" }) : null,
                                   t ? r.createElement(b.ZP, { altLabel: t, bold: !0, key: "alt" }) : null,
                                   ((e, t) => {
                                       if (!s?.hasCaptions) return null;
                                       const { areCaptionsShown: a } = t,
-                                          { toggleCaptions: l } = e;
-                                      return r.createElement(b.ZP, { key: "captions-badge" }, r.createElement(n.Z, { style: w.captionsLabel }, r.createElement(m.Z, { "aria-label": a ? E : P, hoverLabel: a ? v : C, onPress: l, style: w.captionsButton }, a ? r.createElement(y.default, { style: w.captionsIcon }) : r.createElement(h.default, { style: w.captionsIcon }))));
-                                  })(a, i),
+                                          { toggleCaptions: i } = e;
+                                      return r.createElement(b.ZP, { key: "captions-badge" }, r.createElement(n.Z, { style: w.captionsLabel }, r.createElement(m.Z, { "aria-label": a ? v : E, hoverLabel: a ? P : C, onPress: i, style: w.captionsButton }, a ? r.createElement(y.default, { style: w.captionsIcon }) : r.createElement(h.default, { style: w.captionsIcon }))));
+                                  })(a, l),
                                   ((e) => {
-                                      if (l?.badgeConfiguration?.hideViewCount) return null;
+                                      if (i?.badgeConfiguration?.hideViewCount) return null;
                                       const t = (0, c.xB)(e),
                                           a = t && (0, c.XE)(t);
                                       return a ? r.createElement(b.ZP, { key: "viewer-count-badge" }, a) : null;
-                                  })(i),
+                                  })(l),
                               ]
                             : [],
                         d = o.filter(Boolean).length >= 1;
@@ -315,29 +315,29 @@
                         d ? r.createElement(f.Z, { align: "left" }, o) : null
                     );
                 },
-                A = i.default.theme.spacesPx.space12,
-                R = i.default.theme.spacesPx.space40,
-                w = i.default.create((e) => ({ playButton: { pointerEvents: "auto" }, captionsButton: { pointerEvents: "auto" }, captionsIcon: { height: e.spaces.space16, width: e.spaces.space16 }, captionsLabel: { display: "flex", alignItems: "center" }, combinedLabel: { display: "flex", flexDirection: "row", alignItems: "center" }, durationBadge: { flexDirection: "row", paddingHorizontal: 0, paddingVertical: 0, pointerEvents: "auto" }, timeRemaining: { paddingHorizontal: e.spaces.space4 } })),
+                A = l.default.theme.spacesPx.space12,
+                R = l.default.theme.spacesPx.space40,
+                w = l.default.create((e) => ({ playButton: { pointerEvents: "auto" }, captionsButton: { pointerEvents: "auto" }, captionsIcon: { height: e.spaces.space16, width: e.spaces.space16 }, captionsLabel: { display: "flex", alignItems: "center" }, combinedLabel: { display: "flex", flexDirection: "row", alignItems: "center" }, durationBadge: { flexDirection: "row", paddingHorizontal: 0, paddingVertical: 0, pointerEvents: "auto" }, timeRemaining: { paddingHorizontal: e.spaces.space4 } })),
                 Z = r.memo(_);
             var x = a(523319),
                 k = a(38660),
                 D = a(804455),
                 I = a(472238);
-            const M = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.2"), a.e("icons.28"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.25"), a.e("icons.4"), a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~bundle.GrokDrawer~ondemand.InlinePla"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
-                O = ({ "aria-label": e, containerRef: t, id: a, includeDisputeLinkInCopyrightErrorMessage: i, liveBroadcastRewindEnabled: d, onClick: u, onScribeEvent: y, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, shouldShowAltLabel: g, showWatchAgain: S, useKeyboardShortcuts: E }) => {
-                    const P = r.useCallback(() => {
+            const M = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.21"), a.e("icons.16"), a.e("icons.19"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.24"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
+                O = ({ "aria-label": e, containerRef: t, id: a, includeDisputeLinkInCopyrightErrorMessage: l, liveBroadcastRewindEnabled: d, onClick: u, onScribeEvent: y, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, shouldShowAltLabel: g, showWatchAgain: S, useKeyboardShortcuts: v }) => {
+                    const E = r.useCallback(() => {
                         u?.({ playerState: b, playerApi: h });
                     }, [u, h, b]);
                     if (!h || !b) return null;
-                    const v = (0, c.Ci)(b);
-                    if (v?.displayType === p.ak.AD && v?.useRedesignedPrerollUx) return r.createElement(M, { containerRef: t, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, showWatchAgain: S });
+                    const P = (0, c.Ci)(b);
+                    if (P?.displayType === p.ak.AD && P?.useRedesignedPrerollUx) return r.createElement(M, { containerRef: t, playerApi: h, playerDisplayOptions: m, playerState: b, poster: f, showWatchAgain: S });
                     const C = !!b.error,
-                        _ = v?.contentType === p.wF.GIF,
+                        _ = P?.contentType === p.wF.GIF,
                         A = S && b.tracksFinished,
                         R = g ? e : void 0;
                     return r.createElement(
                         o.Z,
-                        { enabled: !!E, playerApi: h, playerState: b },
+                        { enabled: !!v, playerApi: h, playerState: b },
                         r.createElement(
                             s.Z,
                             { playerState: b },
@@ -345,15 +345,28 @@
                                 (function () {
                                     const e = !m?.hidePosterImage && !A,
                                         t = S && !_;
-                                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { onClick: P, style: B.base, testID: `video-player-mini-ui-${a || ""}` }), e && r.createElement(D.Z, { imageSrc: f, playerApi: h, playerState: b, withPlayButton: !1 }), r.createElement(x.Z, { playerState: b }), t && r.createElement(I.Z, { onScribeEvent: y, playerApi: h, playerState: b }), r.createElement(Z, { liveBroadcastRewindEnabled: d, mediaAccessibilityLabel: R, playerApi: h, playerDisplayOptions: m, playerState: b }));
+                                    return r.createElement(r.Fragment, null, r.createElement(n.Z, { onClick: E, style: B.base, testID: `video-player-mini-ui-${a || ""}` }), e && r.createElement(D.Z, { imageSrc: f, playerApi: h, playerState: b, withPlayButton: !1 }), r.createElement(x.Z, { playerState: b }), t && r.createElement(I.Z, { onScribeEvent: y, playerApi: h, playerState: b }), r.createElement(Z, { liveBroadcastRewindEnabled: d, mediaAccessibilityLabel: R, playerApi: h, playerDisplayOptions: m, playerState: b }));
                                 })(),
-                            r.createElement(l.Z, { show: C }, C && r.createElement(k.Z, { imageSrc: f, includeDisputeLinkInCopyrightErrorMessage: i, playerApi: h, playerState: b })),
+                            r.createElement(i.Z, { show: C }, C && r.createElement(k.Z, { imageSrc: f, includeDisputeLinkInCopyrightErrorMessage: l, playerApi: h, playerState: b })),
                         ),
                     );
                 },
-                B = i.default.create((e) => ({ base: { ...i.default.absoluteFillObject, cursor: "pointer" } })),
+                B = l.default.create((e) => ({ base: { ...l.default.absoluteFillObject, cursor: "pointer" } })),
                 L = r.memo(O);
+        },
+        804579: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => o });
+            var r = a(202784),
+                n = a(890601),
+                i = a(783427),
+                l = a(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M5.747 12c0-1.8 1.388-3.22 3.26-3.22 1.26 0 2.075.53 2.62 1.29l-1.207.94c-.306-.42-.798-.7-1.357-.7-.93 0-1.684.76-1.684 1.69s.755 1.68 1.685 1.68c.578 0 1.087-.29 1.39-.73l1.22.87c-.583.8-1.368 1.39-2.737 1.39h-.003c-1.766 0-3.187-1.35-3.187-3.19V12zm6.584.02c0 1.84 1.421 3.19 3.185 3.19 1.368 0 2.154-.59 2.738-1.39l-1.22-.87c-.304.44-.813.73-1.39.73-.93 0-1.684-.75-1.684-1.68s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.94c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.42-3.258 3.22v.02zM18.5 3C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13C3 4.12 4.119 3 5.5 3h13zM5 18.5c0 .28.224.5.5.5h13c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-13c-.276 0-.5.22-.5.5v13z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.1941853a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.207b2f0a.js.map

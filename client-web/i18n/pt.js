@@ -13,10 +13,18 @@
                 var s;
             }
             s("c39b0e24", "X"),
+                s("bcd6bb0e", "Membro"),
+                s("hd8c22d2", "Mod"),
+                s("c3153100", "Admin"),
                 s("jb38600c", "Nenhum"),
                 s("f07eac34", "Conta de paródias"),
                 s("a41b5c2e", "Conta de fã"),
                 s("i428ea62", "Conta de comentários"),
+                s("jd859c9c", "Você foi removido deste Espaço."),
+                s("cfbea177", function (e) {
+                    return "Espaço de " + e.name;
+                }),
+                s("ab4fc8bc", "Espaço"),
                 s("ac0d27be", "Desculpe, esta conta foi suspensa."),
                 s("bcee7444", "A atualização da conta falhou."),
                 s("e0cbf77a", "Adicionar celular"),
@@ -57,9 +65,6 @@
                 s("h1cbdd30", "Atualize a página e tente novamente."),
                 s("a5077d3e", "Atualizar"),
                 s("b2648ba4", "Sua conta pode não estar autorizada a executar esta ação. Atualize a página e tente novamente."),
-                s("bcd6bb0e", "Membro"),
-                s("hd8c22d2", "Mod"),
-                s("c3153100", "Admin"),
                 s("fa9adac1", function (e) {
                     return 'Buscar por "' + e.query + '"';
                 }),
@@ -72,19 +77,12 @@
                 s("c64e46f8", "Este membro foi removido da Comunidade, por isso os posts dele foram ocultados."),
                 s("b3f1cb42", "Este post foi oculto por um moderador por violar uma regra da Comunidade."),
                 s("cbd2dc9c", "Você denunciou este post."),
-                s("cfbea177", function (e) {
-                    return "Espaço de " + e.name;
-                }),
-                s("ab4fc8bc", "Espaço"),
-                s("jd859c9c", "Você foi removido deste Espaço."),
                 s("c60ed9b0", "Você não tem autorização para entrar neste Espaço."),
                 s("d8227e16", "Você não tem autorização para criar este Espaço"),
                 s("f027fed8", "Picture-in-Picture"),
                 s("hd50e064", "Agora não"),
                 s("i76d640e", "Precisamos da sua permissão"),
                 s("fdaa0be8", "Para falar neste Espaço, você precisa permitir que o X acesse o seu microfone. Verifique as configurações do seu navegador. "),
-                s("gea6cc1a", "Tem certeza?"),
-                s("hb568af4", "Silenciar"),
                 s("f7c8617a", "O que são cortes?"),
                 s("ecc7d2ec", "Cortes são momentos capturados que qualquer pessoa do Espaço pode fazer e compartilhar. Todos os cortes expiram após 30 dias."),
                 s("d575ee02", "Quem pode fazer cortes?"),
@@ -102,16 +100,6 @@
                 s("jf03b37c", "Ouça a gravação sempre que você quiser. Compartilhe-a também com um post."),
                 s("fd05976b", "Saiba mais"),
                 s("b4f91a8a", "Gravação ativa"),
-                s("gb418012", "Bem-vindo ao Espaços"),
-                s("fec3c1e0", "Onde acontecem as conversas por áudio ao vivo"),
-                s("j32eb4f8", "Adicione até 10 oradores"),
-                s("j4f133a6", "Você pode convidar qualquer pessoa no X para falar."),
-                s("ed434ac6", "Os Espaços são públicos – qualquer pessoa pode participar"),
-                s("e0025688", "Seu Espaço, suas regras"),
-                s("c1bc6f86", "Como host, você controla quem pode falar. Você também tem o poder de remover as pessoas que não quer no seu Espaço."),
-                s("b0bc8330", "Você também pode bloquear e denunciar pessoas em um Espaço."),
-                s("cb17a0f3", "Saiba mais"),
-                s("dcd77941", "Saiba mais"),
                 s("cc724cb0", "Criar corte"),
                 s("cfd2f35e", "Cancelar"),
                 s("c1df579e", "Próxima"),
@@ -125,6 +113,16 @@
                 s("a9ba3e28", "Informações privadas"),
                 s("d5519f4a", "Comportamento abusivo"),
                 s("eb55363c", "Este Espaço foi denunciado"),
+                s("gb418012", "Bem-vindo ao Espaços"),
+                s("fec3c1e0", "Onde acontecem as conversas por áudio ao vivo"),
+                s("j32eb4f8", "Adicione até 10 oradores"),
+                s("j4f133a6", "Você pode convidar qualquer pessoa no X para falar."),
+                s("ed434ac6", "Os Espaços são públicos – qualquer pessoa pode participar"),
+                s("e0025688", "Seu Espaço, suas regras"),
+                s("c1bc6f86", "Como host, você controla quem pode falar. Você também tem o poder de remover as pessoas que não quer no seu Espaço."),
+                s("b0bc8330", "Você também pode bloquear e denunciar pessoas em um Espaço."),
+                s("cb17a0f3", "Saiba mais"),
+                s("dcd77941", "Saiba mais"),
                 s("i65de934", "Você está ouvindo anonimamente"),
                 s("b1037050", "Gerenciar Espaço"),
                 s("ic107434", "Ligar câmera"),
@@ -903,10 +901,10 @@
                 s("bf9e181b", "Saiba mais"),
                 s("e8e39f95", "Learn more"),
                 s("e126dd3f", "Learn more"),
-                s("i821844f", "Learn more");
-            s("b0abbb17", "Learn more"),
-                s("e7e0d88b", "Learn more"),
-                s("i560665f", "Learn more"),
+                s("i821844f", "Learn more"),
+                s("b0abbb17", "Learn more"),
+                s("e7e0d88b", "Learn more");
+            s("i560665f", "Learn more"),
                 s("f6e774d9", "Learn more"),
                 s("h486f755", "Learn more"),
                 s("bab41dab", "Learn more"),
@@ -1122,6 +1120,7 @@
                 s("dbb51952", "Proteger suas publicações?"),
                 s("de735de6", "Assim, eles ficarão visíveis somente para seus seguidores do X."),
                 s("c5d4192a", "Proteger"),
+                s("gea6cc1a", "Tem certeza?"),
                 s("d9ddba70", "Como as Comunidades são públicas, proteger sua conta ocultará os posts anteriores. Você também não conseguirá postar na Comunidade até sua conta voltar a ser pública."),
                 s("f527b322", "Proteger a minha conta"),
                 s("d165c992", "Qualquer pessoa pode marcar você"),
@@ -1317,10 +1316,11 @@
                 s("a02d1657", function (e) {
                     return "Executando código" + e.ttc_tool_usage_card;
                 }),
-                s("aa9d42c0", "Searching the web"),
-                s("dce1817a", "Searching on 𝕏"),
-                s("f7151564", "Searching users on 𝕏"),
-                s("c43ef93e", "Browsing web page"),
+                s("aa9d42c0", "Buscando na Web"),
+                s("c731d702", "Searching on X"),
+                s("d0e02476", "Searching users on X"),
+                s("c43ef93e", "Navegando na página da web"),
+                s("dab166ec", "Searching user posts on X"),
                 s("jb097f6e", "Executando código"),
                 s("ead81122", "Algo deu errado. Atualize para reconectar ou tente novamente."),
                 s("f808a13a", "Limite de taxa excedido. Aguarde alguns instantes e tente novamente."),
@@ -1368,11 +1368,11 @@
                 s("e0bffbf8", "Sobre a tradução automática"),
                 s("e839db3a", "Dispensar"),
                 s("e7a86c77", function (e) {
-                    return "Automatically translate " + e.language;
+                    return "Traduzir automaticamente " + e.language;
                 }),
-                s("c60b9e5c", "Changes will take effect for newly loaded content."),
-                s("f9317b98", "language settings"),
-                s("hba0547a", "Unable to update settings. Please try again later."),
+                s("c60b9e5c", "As alterações serão aplicadas ao conteúdo carregado a partir de agora."),
+                s("f9317b98", "configurações de idioma"),
+                s("hba0547a", "Não foi possível atualizar as alterações. Tente novamente mais tarde."),
                 s("d4c339b9", function (e) {
                     return "Post de " + e.fullName + " (@" + e.screenName + ")";
                 }),
@@ -1814,6 +1814,7 @@
                 s("g00b4c55", function (e) {
                     return "Compartilhar @" + e.screenName + " por...";
                 }),
+                s("hb568af4", "Silenciar"),
                 s("bb1cbeb6", "Desativar silêncio"),
                 s("h2f62206", "Silenciar usuário"),
                 s("h59f52ee", "Silenciado com sucesso."),
@@ -1914,11 +1915,11 @@
                 s("ef1649e2", "X - Teclas de atalho"),
                 s("aefd89c8", "Navegação"),
                 s("cafdefb2", "Ações"),
-                s("dda42cf2", "Colunas e Painéis"),
-                s("e8a12604", "Escreva uma legenda (opcional)");
-            s("eabf2209", function (e) {
-                return "GIF fornecido por " + e.providerName;
-            }),
+                s("dda42cf2", "Colunas e Painéis");
+            s("e8a12604", "Escreva uma legenda (opcional)"),
+                s("eabf2209", function (e) {
+                    return "GIF fornecido por " + e.providerName;
+                }),
                 s("a613e720", "Copiar o link para o GIF"),
                 s("aeca1239", function (e) {
                     return "Negrito" + e.ttc_rich_text_composer;
@@ -2974,9 +2975,9 @@
                 s("e06b864c", "Você parece estar curtindo esta conversa"),
                 s("a078ff70", "Deseja ver mais conteúdo das pessoas com quem interagiu nesta sequência? Comece a explorar conteúdo de novas contas."),
                 s("cb80300e", "Pular para a timeline da página inicial"),
-                s("ea5cd098", "Pular para Assuntos do Momento"),
-                s("c67e3fc2", "Timeline da página inicial");
-            s("d601fc20", "Mais recentes"),
+                s("ea5cd098", "Pular para Assuntos do Momento");
+            s("c67e3fc2", "Timeline da página inicial"),
+                s("d601fc20", "Mais recentes"),
                 s("j43f99be", "Relevância"),
                 s("ad6e11ac", "Ordenar respostas por"),
                 s("b2311b70", "Isto não está disponível para você"),
@@ -3894,13 +3895,13 @@
                 }),
                 s("f5c7aaa7", function (e) {
                     return "host" + r(e.count, "", "s");
-                }),
-                s("fc56c8b1", function (e) {
-                    return "co-host" + r(e.count, "", "s");
                 });
-            s("iba0f45d", function (e) {
-                return "orador" + r(e.count, "", "es");
+            s("fc56c8b1", function (e) {
+                return "co-host" + r(e.count, "", "s");
             }),
+                s("iba0f45d", function (e) {
+                    return "orador" + r(e.count, "", "es");
+                }),
                 s("dc066955", function (e) {
                     return "ouvinte" + r(e.count, "", "s");
                 }),
@@ -4930,9 +4931,9 @@
                 s("ff95a9cc", "ID do vídeo"),
                 s("a97e358e", "Link do vídeo"),
                 s("e10e8b46", "Exibindo apenas os vídeos dos últimos 100 dias."),
-                s("ba37f6da", "Visão geral do vídeo"),
-                s("f19846b2", "Miniatura do vídeo");
-            s("ccd6f4a8", "Título do vídeo"),
+                s("ba37f6da", "Visão geral do vídeo");
+            s("f19846b2", "Miniatura do vídeo"),
+                s("ccd6f4a8", "Título do vídeo"),
                 s("c8410542", "O número de vezes que seu vídeo foi visualizado."),
                 s("a532072a", "Espectadores"),
                 s("d9508ab0", "visualizações"),
@@ -5550,6 +5551,7 @@
                 s("bd7eb888", "Ver todas as notas neste post"),
                 s("i97b83f6", "Ocorreu um erro ao enviar seu recurso. Tente novamente."),
                 s("a038ab9a", "Traduzir nota"),
+                s("icdb6d74", "Proposto por um colaborador de IA experimental em resposta a solicitações de uma nota. Como todos os colaboradores, as IAs podem cometer erros. Verifique a precisão."),
                 s("i606fc4c", "Sobre recursos das Notas da Comunidade"),
                 s("b664c554", "Solicitar análise adicional do colaborador"),
                 s("ab66e1f2", "Funciona assim:"),
@@ -5565,6 +5567,7 @@
                 s("ge25848a", "Status atual"),
                 s("d6db34cc", "Precisa de mais avaliações"),
                 s("ce8b505e", "Não é útil"),
+                s("j42c88b6", "Escritor de notas de IA experimental"),
                 s("e5be8156", "Status da nota calculado pelo algoritmo de código aberto"),
                 s("fca23c42", "Um número suficiente de colaboradores de diferentes perspectivas concordaram que esta nota é útil, pois isso ela está sendo exibida como contexto no post."),
                 s("hef420c2", "Esta nota ainda não foi classificada por um número suficiente de colaboradores de diferentes perspectivas."),
@@ -5880,11 +5883,11 @@
                 s("ab1b3d38", "Os dados de solicitação de nota ainda não estão disponíveis"),
                 s("c43fb933", "Contrato e Política para Desenvolvedores do X"),
                 s("af781666", "O que as pessoas acham?"),
-                s("a1f414ee", "Compartilhar pensamentos"),
-                s("ed88e742", "Copiar link para o Tópico"),
+                s("a1f414ee", "Compartilhar pensamentos");
+            s("ed88e742", "Copiar link para o Tópico"),
                 s("h92fe1be", "Infelizmente, as Notas da Comunidade ainda não estão disponíveis para você."),
-                s("f0dc1434", "No momento, as Notas da Comunidade só estão disponíveis nos EUA.");
-            s("f8fc0b48", "Criar uma pasta"),
+                s("f0dc1434", "No momento, as Notas da Comunidade só estão disponíveis nos EUA."),
+                s("f8fc0b48", "Criar uma pasta"),
                 s("c14bcdde", "Buscar Itens salvos"),
                 s("e9c65c4a", "Busca de itens salvos"),
                 s("b92a21d9", function (e) {
@@ -6886,11 +6889,11 @@
                 s("j3d242ce", "Faixa inválida"),
                 s("f4d07bd2", "Inclua detalhes opcionais para facilitar que os candidatos visualizem suas vagas mediante busca."),
                 s("b8cbb51a", "Resumo da vaga"),
-                s("bda6881e", "Esta vaga foi importada de seu Sistema de Rastreamento de Candidatos (ATS). Observe que somente campos específicos podem ser modificados."),
-                s("b075c68a", "Editar vaga"),
+                s("bda6881e", "Esta vaga foi importada de seu Sistema de Rastreamento de Candidatos (ATS). Observe que somente campos específicos podem ser modificados.");
+            s("b075c68a", "Editar vaga"),
                 s("d4b6a6e0", "Destaque do Perfil"),
-                s("j2dd3686", "Mostrar as vagas em destaque acima dos meus posts.");
-            s("af1cfd46", "Integração com ATS"),
+                s("j2dd3686", "Mostrar as vagas em destaque acima dos meus posts."),
+                s("af1cfd46", "Integração com ATS"),
                 s("d6fa2944", "Excluir sua integração não excluirá as vagas importadas."),
                 s("h99f11fa", "Excluir integração"),
                 s("eef1ae76", "Atualmente conectado"),
@@ -7400,10 +7403,10 @@
                 s("d94f12b6", "Procure pesquisar por notificações, privacidade etc."),
                 s("ba8f6f82", "Buscar configuração"),
                 s("ibf92e4a", "Pagamento realizado"),
-                s("bdf0fb06", "Your subscription has been activated."),
+                s("bdf0fb06", "Sua assinatura foi ativada."),
                 s("ddfd6718", "O pagamento falhou"),
                 s("d42fa852", "Ocorreu um problema ao processar seu pagamento. Tente novamente."),
-                s("g055a9ce", "Open 𝕏 App"),
+                s("g055a9ce", "Abrir o aplicativo do 𝕏"),
                 s("g931a6e5", function (e) {
                     return "Você está seguindo " + e.topic;
                 }),
@@ -7868,10 +7871,7 @@
                 s("d7b8387e", "Se você já tiver cancelado, não há mais nada a fazer. Sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
                 s("f4166d9a", "Deseja cancelar a Assinatura?"),
                 s("b74ff5fc", "Se você cancelar, sua Assinatura vai expirar automaticamente ao final do ciclo de faturamento."),
-                s("ee9efbc8", "Continue para fazer o cancelamento"),
-                s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
-                s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store."),
-                s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store.");
+                s("ee9efbc8", "Continue para fazer o cancelamento");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7910,9 +7910,12 @@
                     n(e, a)
                 );
             }
-            s("i5f14be7", function (e) {
-                return "Bem-vindo novamente, " + e.displayName;
-            }),
+            s("c5d9c77a", "Parece que houve algum problema. Mas não se preocupe, não é sua culpa. Feche esta janela e tente novamente."),
+                s("jda53c24", "Você pode cancelar a Assinatura pela Apple App Store."),
+                s("g0a7a53e", "Você pode cancelar a Assinatura pela Google Play Store."),
+                s("i5f14be7", function (e) {
+                    return "Bem-vindo novamente, " + e.displayName;
+                }),
                 s("a76d58ba", "Estatísticas de anúncios"),
                 s("eccd0e1a", "Estatísticas da organização"),
                 s("deea1708", "Quer ver estatísticas de todas as suas contas do X?"),
@@ -8908,11 +8911,11 @@
                 }),
                 s("b0b22805", function (e) {
                     return "Visite " + e.advertiserName;
-                }),
-                s("c67e71aa", "Assista agora"),
+                });
+            s("c67e71aa", "Assista agora"),
                 s("a6ada13e", "Comprar agora"),
-                s("j0f12222", "Ver mais");
-            s("f569f7c8", "Vá para o website"),
+                s("j0f12222", "Ver mais"),
+                s("f569f7c8", "Vá para o website"),
                 s("j0c6772a", "Visite o website"),
                 s("f73003aa", "O vídeo será reproduzido após o anúncio"),
                 s("b3112b8a", "Ignorar"),
@@ -10155,7 +10158,7 @@
                         {
                             key: "c4c230bf",
                             get: function () {
-                                return ["Grok will automatically translate based on your X usage and ", ". You can also switch the automatic translation settings below."];
+                                return ["O Grok traduzirá automaticamente com base no seu uso do X e nas suas ", ". Você também pode ajustar as configurações de tradução automática abaixo."];
                             },
                         },
                         {
@@ -13368,4 +13371,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.e4aeedaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.bcf28b0a.js.map
